@@ -1,0 +1,22 @@
+# Path to the binary, at Carmen
+binary:${SOURCE_PATH}/texttest.py
+
+interpreter:python
+
+# Default settings. You need to set these if you want multiple checkouts of TextTest!
+checkout_location:none
+default_checkout:none
+
+# Checkout depends on the local machine, and the architecture
+output:checkout
+errors:\.py
+
+# Might as well have nice print-outs
+full_name:TextTest
+
+# These tests cannot be run in parallel using LSF, but let's use UNIX features
+# like batch mode, anyway.
+config_module:unixConfig
+
+log_file:output
+
