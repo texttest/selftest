@@ -14,6 +14,8 @@ DoubleVersionConfigOverride
 # Check that when an exception is thrown in a test, its environment is cleaned
 RemoveVarOnException
 
+# Make sure subtests update variables that depend on other variables that have been changed
+UpdateReferenceVars
+
 # Make sure that checkout expansions are only used with real relative paths
 CheckoutExpansionNoPath
-
