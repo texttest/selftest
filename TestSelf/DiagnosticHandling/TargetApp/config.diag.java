@@ -1,6 +1,6 @@
 # Path to the binary
 binary:${TEXTTEST_CHECKOUT}/source/writediags.jar
-interpreter:java
+interpreter:java -jar
 
 use_case_recorder:jusecase
 
