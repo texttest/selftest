@@ -7,6 +7,7 @@ default_checkout:master
 
 # Checkout depends on the local machine, and the architecture
 output:checkout
+output:BadApplication
 catalogue:TargetApp
 errors:RENDER
 errors:\.py
@@ -26,6 +27,7 @@ log_file:output
 copy_test_path:TargetApp
 copy_test_path:wibble.py
 copy_test_path:gui_script
+copy_test_path:config
 create_catalogues:true
 
 # ---------------- Values needed to run in batch mode -------------------
