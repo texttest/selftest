@@ -16,6 +16,9 @@ ReconnectFastNoState
 # Check that full reconnection works together with linking test paths
 ReconnectLinkTestPath
 
+# Make sure fast reconnect doesn't leak directories with link_test_path
+ReconnectFastLinkPath
+
 # Test we can predict and report internal errors correctly
 InternalErrors
 
