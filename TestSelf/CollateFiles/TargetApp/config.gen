@@ -1,13 +1,10 @@
 # Path to the binary
 binary:${TEXTTEST_CHECKOUT}/generate.py
 
-config_module:unixConfig
+[run_dependent_text]
+generated_*:Today is{WORD -1}
+created_[1-9]:Today is
 
 [collate_file]
 generated_*:generated*.dump
-created[1-9]:created_[1-9].dump
-[end]
-
-# Make sure batch files are collectable...
-#[batch_use_collection]
-#self_test:true
+created_[1-9]:created_[1-9].dump
