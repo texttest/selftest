@@ -1,0 +1,21 @@
+# Checkout depends on the local machine, and the architecture
+[run_dependent_text]
+output:executing on
+output:batch system daemon
+output:Removing previous write
+gui_log:batch system daemon
+gui_log:Second column.*yellow{WORD 4}
+catalogue:subdirectory TargetApp/static_gui
+catalogue:subdirectory TargetApp/sleep{LINES 20}
+targetReport:batch system daemon
+
+[unordered_text]
+output:Failed to submit to LSF
+output:differences for
+gui_log:Waiting for application event.*killing to start{->}Expected application event.*2
+gui_log:Waiting for application event{->}Expected application event
+usecase:wait for test
+[end]
+
+extra_version:none
+
