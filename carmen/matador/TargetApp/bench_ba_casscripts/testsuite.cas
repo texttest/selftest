@@ -1,0 +1,101 @@
+# Small fast test with just 16 trips not in the environment. All rosters
+# should be legal.
+16trip_plan
+
+# Test for gibberish in the optimizer resource
+bad_optimizer_resource
+
+# Test for non unit capabilities of resources 
+non_unit_crew_cap
+
+#Test for free crew position
+fcp_3crew
+
+# Test that locked trips don't block the free crew position
+fcp_3crew_locks
+
+# This one has a trip assigned to one guy and locke to another, both
+in fcp, and the trip doesn't require other assignments
+fcp_3crew_locks_empty
+
+# Tests for route instructions. Most just have a couple of crew routed
+# together for the whole period. 
+route_2crew_s0
+route_2crew_s0_touch
+route_2_pre_1
+route_3_a
+route_3_pre_1
+route_conflicting_preasg
+
+# New test to check fix of bug for route instruction generation with empty rosters
+route_5_empty
+
+# More complex route instruction tests: lots of crew routed in various overlapping combinations.
+route_5_complex
+route_5_complex_2FO
+route_complex_strategy_0
+
+# Plan with a ratio of 1:2 between crew and trips, runs only cas_initial method
+one2two_crew_trip
+
+# Small test 1 crew / 2 trips for 'month outside range' bug in 
+# MatadorStandard.py on sparc.
+month_outside_range
+
+# Tests for checking stop conditions
+#cpu_time_limit
+
+# Plan for benchmarking APC runs, runs MatcherAssign, currently APC is about 4 times faster
+10crew_plan
+
+# Plan for benchmarking improve method, takes input as APC's cas initial solution 
+improve_10crew_plan
+
+# Same as above but with a soft equality constraint
+improve_soft_equality_constraint
+
+# Test for time_window_touch parameter
+improve10crew_tw_touch
+
+# Tests for leg qualifications
+leg_quals_soft
+leg_quals_big
+
+# Leg qualifications old style
+leg_quals_only
+
+# Tests for different definitions (in different modules) of the same qualification
+leg_quals_in_2_modules
+
+# plan for Fly Below Rank: it contains 45 captains
+fbr_45CP_90trips
+
+# Plan with no unassigned trips, solution from APC's cas-initial as input
+# Both initial and improve roster method are run, 
+# but initial method does not do anything(due to no unassigend trips)
+no_unassigned_trips
+
+# Large route instruction test
+route_large
+
+# Larger plans for benchmarking improve methods
+# Corresponding APC runs in BA_Matador_<n>CREW_SI
+improve_100crew
+improve_200crew
+
+# Larger plans for benchmarking APC's cas initial and Matador's initial roster methods
+# Corresponding APC runs in BA_Matador_<n>CREW
+200crew_plan
+
+# Plan for dfs complex search width
+100crew_complex_search
+
+# Original test for BA, fairly large plan, runs MatcherAssign, 
+# which takes a long time.
+large_plan_1
+
+#Extension of the above plan, runs both MatcherAssign and Improve method 
+large_plan_2
+
+# Shift improve test for large R.I. plan. APC crashes after 7 iterations, so cannot compare currently
+improve_route_large
