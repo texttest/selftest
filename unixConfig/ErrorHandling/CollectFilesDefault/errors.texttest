@@ -1,13 +1,14 @@
 Description of exception thrown :
 Traceback (most recent call last):
-  File "/users/geoff/work/master/Testing/TextTest/texttest.py", line 1161, in setUpApplications
+  File "/carm/master/Testing/TextTest/texttest.py", line 1265, in setUpApplications
     action.setUpApplication(self.testSuite.app)
-  File "/users/geoff/work/master/Testing/TextTest/batch.py", line 291, in setUpApplication
+  File "/carm/master/Testing/TextTest/batch.py", line 334, in setUpApplication
     app.addConfigEntry("collection", self.getCollectionSetting(), "batch_use_collection")
-  File "/users/geoff/work/master/Testing/TextTest/texttest.py", line 747, in addConfigEntry
+  File "/carm/master/Testing/TextTest/texttest.py", line 843, in addConfigEntry
     self.configDir.addEntry(key, value, sectionName)
-  File "/users/geoff/work/master/Testing/TextTest/texttest.py", line 1003, in addEntry
+  File "/carm/master/Testing/TextTest/texttest.py", line 1089, in addEntry
     self.currDict = self[sectionName]
-  File "/users/geoff/work/master/Testing/TextTest/ndict.py", line 57, in __getitem__
+  File "/carm/master/Testing/PyUseCase/ndict.py", line 57, in __getitem__
     return self.dict[key]
 KeyError: batch_use_collection
+Error in set-up of application DIP - exceptions.KeyError: batch_use_collection
