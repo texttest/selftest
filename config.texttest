@@ -18,10 +18,12 @@ targetReport:{LINE 1}
 catalogue:.nfs
 catalogue:subdirectory TargetApp/dip
 catalogue:subdirectory TargetApp/core
+catalogue:subdirectory TargetApp/cas
 errors:RENDER
 errors:\.py
 errors:CountTest.__del__
 errors:.carmen.se:
+gnuplot:plot{WORD 2}
 
 # Might as well have nice print-outs
 full_name:TextTest
@@ -48,6 +50,8 @@ create_catalogues:true
 # Things to collate
 collate_file:TargetApp/Failures/memory.mem->targetMem
 collate_file:TargetApp/batchreport*->targetReport
+collate_file:gnuplot.input->gnuplot
+collate_file:TargetApp/*/ArtificialUser/generate_in_subperiod/plot-std-result->plotstd
 
 # Programs for viewing files
 view_program:emacs
