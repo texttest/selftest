@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-import string, sys
+import string, sys, time
 class Order:
     def __init__(self, string):
         self.location = string[:3]
@@ -242,6 +242,7 @@ def display(power, orders, results, provinceOrders):
     print ""
 
 def runJudge():
+    print "Running Diplomacy Judge at", time.strftime("%y-%m-%dT%H:%M", time.localtime())
     orders = readin(sys.stdin)
     powers = orders.keys()
     powers.sort()
