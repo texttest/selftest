@@ -2,6 +2,9 @@ binary:/bin/grep
 
 config_module:unixConfig
 
+# Pick up the fake version of bugcli
+link_test_path:FakeBugcli
+
 # Use collection for self tests, so we can compare reports
 [batch_use_collection]
 default:true
