@@ -15,8 +15,11 @@ FailuresNoAction
 # Test for failures, save every test with "s"
 FailuresSave
 
-# Test for overwrite mode, to undo the effects of the previous test...
+# Test for overwrite mode
 Overwrite
+
+# Test for bug 1492, where overwriting several versions writes to the same file...
+OverwriteDoubleVersion
 
 # Test for testsuite filter
 TestSuiteFilter
