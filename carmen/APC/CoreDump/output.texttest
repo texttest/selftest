@@ -1,0 +1,20 @@
+Using Application APC, version crash, checkout /users/johani/work/master
+Compiling rules for APC test-suite TargetApp
+  Compiling rules for APC test-suite sk_test9scripts
+Submitting APC test-suite TargetApp to LSF queue short_i386_linux_RHEL
+  Submitting APC test-suite sk_test9scripts to LSF queue short_i386_linux_RHEL
+    Submitting APC test-case no_dh_single_base_cg to LSF queue short_i386_linux_RHEL
+    Fetching crash for APC test-case no_dh_single_base_cg from tamchackett
+Comparing differences for APC test-suite TargetApp
+  Comparing differences for APC test-suite sk_test9scripts
+    Comparing differences for APC test-case no_dh_single_base_cg (on memory.apc,performance.apc,script_errors.apc,solution.apc,status.apc,warnings.apc)
+    APC test-case no_dh_single_base_cg FAILED on tamchackett : new results in script_errors, differences in solution,status,warnings
+Program terminated with signal 11, Segmentation fault.
+Stack trace from gdb :
+_dl_sysinfo_int80 
+raise 
+apc_pac_setup() 
+apc_setup(int, char**) 
+main 
+
+    View details(v), Save Version crash(1), Save(s) or continue(any other key)?
