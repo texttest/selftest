@@ -1,0 +1,59 @@
+Mapping tests in tree view...
+-> Added MEM test-suite TargetApp to test tree view.
+->   Added MEM test-case NoMemFile    to test tree view.
+->   Added MEM test-case NoOutputFile to test tree view.
+
+Viewing test MEM test-suite TargetApp
+Adding file testsuite.mem under heading 'Definition Files', coloured white
+Adding file testsuite.mem.nomemfile under heading 'Definition Files', coloured white
+
+Waiting for application event 'completion of test actions' to occur.
+Redrawing test NoMemFile coloured turquoise
+Redrawing test NoMemFile coloured pale green
+(Second column 'memory new' coloured orange)
+Redrawing test NoOutputFile coloured turquoise
+Redrawing test NoOutputFile coloured orange
+(Second column 'output new(+)' coloured orange)
+Expected application event 'completion of test actions' occurred, proceeding.
+
+'select test' event created with arguments 'NoOutputFile'
+Viewing test MEM test-case NoOutputFile
+Adding file memory.mem under heading 'Comparison Files', coloured red
+(Second column '13% larger' coloured red)
+Adding file output.mem under heading 'New Files', coloured red
+
+Creating notebook page for 'Viewing'
+Creating check button for switch 'Include Run-dependent Text' (checked)
+Creating check button for switch 'Show differences where present' (checked)
+
+Creating notebook page for 'Saving'
+Creating entry for option 'Version to save' (set to '2') (drop-down list containing ['2', '4', 'nomemfile', ''])
+Creating entry for option 'Save single file' (drop-down list containing ['', 'memory', 'output'])
+Creating check button for switch 'Replace successfully compared files also'
+Creating radio button for switch 'Exact Performance/Average Performance' (checked)
+
+'view options for' event created with arguments 'Saving'
+
+'enter save single file =' event created with arguments 'output'
+
+'save all' event created with arguments ''
+Saving MEM test-case NoMemFile    - version 2, exactness 1, only file with stem output
+Redrawing test NoMemFile coloured pale green
+(Second column 'memory new' coloured orange)
+Saving MEM test-case NoOutputFile - version 2, exactness 1, only file with stem output
+Redrawing test NoOutputFile coloured pale green
+(Second column '13% larger' coloured orange)
+Adding file memory.mem under heading 'Comparison Files', coloured red
+(Second column '13% larger' coloured red)
+Adding file output.mem.2 under heading 'Comparison Files', coloured green
+
+Creating notebook page for 'Viewing'
+Creating check button for switch 'Include Run-dependent Text' (checked)
+Creating check button for switch 'Show differences where present' (checked)
+
+Creating notebook page for 'Saving'
+Creating entry for option 'Version to save' (set to '2') (drop-down list containing ['2', '4', 'nomemfile', ''])
+Creating check button for switch 'Replace successfully compared files also'
+Creating radio button for switch 'Exact Performance/Average Performance' (checked)
+
+'quit' event created with arguments ''
