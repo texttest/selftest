@@ -71,6 +71,7 @@ unsaveable_version:rave
 # Text to be regarded as an internal error if it occurs in the log_file
 internal_error_text:No MIP solution exists
 internal_error_text:Cannot execute script
+internal_error_text:not built
 
 # Collect the solution
 [collate_file]
@@ -114,6 +115,9 @@ minimum_cputime_for_test:10
 
 # What needs to be built by the rule compiler
 rave_name:matador
+
+# The library it should link with, need to check dates on this
+rave_static_library:${CARMSYS}/data/crc/MATADOR/${ARCHITECTURE}/matador.o
 
 # The architecture that runs without a version ID. If you run on other architecture, you will
 # get given version ${ARCH}$v, where $v was the version specified, if any...

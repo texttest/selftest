@@ -94,6 +94,9 @@ minimum_cputime_for_test:5
 # What needs to be built by the rule compiler
 rave_name:apc
 
+# The library it should link with, need to check dates on this
+rave_static_library:${CARMSYS}/data/apc/${ARCHITECTURE}/libapc.a
+
 # The architecture that runs without a version ID. If you run on other architecture, you will
 # get given version ${ARCH}$v, where $v was the version specified, if any...
 default_architecture:i386_linux
