@@ -139,5 +139,6 @@ kpi_cost_margin:0.1
 [extract_logs]
 default:grep "Solving" apclog
 subgrad:grep -E "Solving|LBD|OBJ" apclog
+test:grep "OBJ" apclog
 all:cat apclog
 
