@@ -1,8 +1,8 @@
 geoff
-0,0,0,9,2,0,0,0,0,0,0
+unrunnable=9,FAILED=2
 040902 DIP reconnectrun.unix : 11 tests : 9 unrunnable, 2 FAILED
 
-The following tests were unrunnable : 
+The following tests could not be run : 
 In DIP test-suite TargetApp:
   In DIP test-suite Game9952:
     - DIP test-case S01.99
@@ -20,49 +20,49 @@ In DIP test-suite TargetApp:
 The following tests FAILED : 
 In DIP test-suite TargetApp:
   In DIP test-suite Game9952:
-    - DIP test-case A03   
-    - DIP test-case A04   
+    - DIP test-case A03    : output different
+    - DIP test-case A04    : output different
 
 
-Exception information for the tests that did not run follows...
+Detailed information for the tests that could not be run follows...
 --------------------------------------------------------
-TEST UNRUNNABLE -> DIP test-case S01.99(under Game9952/S01.99)
+TEST could not be run : DIP test-case S01.99 (under Game9952/S01.99)
 No test results found to reconnect to
 --------------------------------------------------------
-TEST UNRUNNABLE -> DIP test-case A01   (under Game9952/A01)
+TEST could not be run : DIP test-case A01    (under Game9952/A01)
 No test results found to reconnect to
 --------------------------------------------------------
-TEST UNRUNNABLE -> DIP test-case S02   (under Game9952/S02)
+TEST could not be run : DIP test-case S02    (under Game9952/S02)
 No test results found to reconnect to
 --------------------------------------------------------
-TEST UNRUNNABLE -> DIP test-case A02   (under Game9952/A02)
+TEST could not be run : DIP test-case A02    (under Game9952/A02)
 No output files at all produced, presuming problems running test
 --------------------------------------------------------
-TEST UNRUNNABLE -> DIP test-case S03   (under Game9952/S03)
+TEST could not be run : DIP test-case S03    (under Game9952/S03)
 No test results found to reconnect to
 --------------------------------------------------------
-TEST UNRUNNABLE -> DIP test-case S04   (under Game9952/S04)
+TEST could not be run : DIP test-case S04    (under Game9952/S04)
 No test results found to reconnect to
 --------------------------------------------------------
-TEST UNRUNNABLE -> DIP test-case S05   (under Game9952/S05)
+TEST could not be run : DIP test-case S05    (under Game9952/S05)
 No test results found to reconnect to
 --------------------------------------------------------
-TEST UNRUNNABLE -> DIP test-case A05   (under Game9952/A05)
+TEST could not be run : DIP test-case A05    (under Game9952/A05)
 No test results found to reconnect to
 --------------------------------------------------------
-TEST UNRUNNABLE -> DIP test-case S01(under npstIII/Game47/S01)
+TEST could not be run : DIP test-case S01 (under npstIII/Game47/S01)
 No test results found to reconnect to
 
-Failure information for the tests that failed follows...
+Detailed information for the tests that FAILED follows...
 --------------------------------------------------------
-TEST FAILED : -> DIP test-case A03   (under Game9952/A03)
+TEST FAILED : DIP test-case A03    (under Game9952/A03)
 ------------------ Differences in output --------------------
 28c28
 < Italy:   Tyn CONVOY Tun -> Rom     (*dislodged*)
 ---
 > Italy:   Tyn CONVOY Tun -> Rom     (*was dislodged*)
 --------------------------------------------------------
-TEST FAILED : -> DIP test-case A04   (under Game9952/A04)
+TEST FAILED : DIP test-case A04    (under Game9952/A04)
 ------------------ Differences in output --------------------
 1,21c1,19
 < Austria: Eas -> Smy                (*bounce*)
