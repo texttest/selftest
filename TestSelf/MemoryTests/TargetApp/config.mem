@@ -10,11 +10,13 @@ output:Memory usage
 # ------ Memory settings -------
 
 # String to look for to check for memory
-string_before_memory:usage now
+[performance_logfile_extractor]
+memory:usage now
 
 # How much variation in memory do we allow, in percentage of total memory used? 
-memory_variation_%:5
+[performance_variation_%]
+memory:5
 
 # How much memory (in MB) must be used before we consider it worthwhile to check memory?
-minimum_memory_for_test:15
-
+[performance_test_minimum]
+memory:15
