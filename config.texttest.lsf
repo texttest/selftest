@@ -1,0 +1,28 @@
+# Checkout depends on the local machine, and the architecture
+[run_dependent_text]
+output:Build Rave program
+output:executing on
+output:batch system daemon
+gui_log:batch system daemon
+gui_log:Build Rave program
+catalogue:subdirectory TargetApp/cas
+catalogue:subdirectory TargetApp/apc
+catalogue:subdirectory TargetApp/sleep
+gnuplot:plot{WORD 2}
+
+[unordered_text]
+output:differences for SLEEP test-case{LINES 3}
+gui_log:Waiting for application event{->}Expected application event
+[end]
+
+# List of (generally directories) to copy from the test directory to the write directory
+# because we want to write there.
+copy_test_path:test_tmp
+
+# Things to collate
+[collate_file]
+gnuplot:TargetApp/*/gnuplot.input
+plotstd:TargetApp/*/ArtificialUser/generate_in_subperiod/plot-std-result
+[end]
+
+extra_version:none

@@ -7,37 +7,22 @@ default_checkout:master
 
 # Checkout depends on the local machine, and the architecture
 [run_dependent_text]
-output:checkout
-output:BadApplication
-output:wait for
-output:Reconnecting to test
+output:checkout{WORD -1}
+output:BadApplication{WORD -1}
+output:Reconnecting to test results{WORD -1}
 output:Faking start
-output:FAILED on
-output:Waiting for completion
-output:Build Rave program
-output:executing on
-output:still in use
 output:not a core dump{WORD 1}
-output:batch system daemon
-gui_log:batch system daemon
-gui_log:Build Rave program
-# This should really be unordered text
-gui_log:peach puff
-gui_log:Executing on
+output:FAILED on{WORD 6}
+output:still in use
 targetReport:FAILED on{WORD 4}
 targetReport:tests ran{WORD 1}
 targetReport:{LINE 1}
 catalogue:.nfs
 catalogue:subdirectory TargetApp/dip
 catalogue:subdirectory TargetApp/core
-catalogue:subdirectory TargetApp/cas
-catalogue:subdirectory TargetApp/apc
-catalogue:subdirectory TargetApp/sleep
 errors:RENDER
 errors:\.py
 errors:CountTest.__del__
-errors:.carmen.se:
-gnuplot:plot{WORD 2}
 [end]
 
 # Might as well have nice print-outs
@@ -50,7 +35,6 @@ config_module:carmen
 # List of (generally directories) to copy from the test directory to the write directory
 # because we want to write there.
 copy_test_path:TargetApp
-copy_test_path:test_tmp
 
 # List of constant input files to create links to. Will copy them on Windows as symbolic links
 # don't exist.
@@ -70,9 +54,10 @@ use_standard_input:1
 [collate_file]
 targetMem:TargetApp/Failures/memory.mem
 targetReport:TargetApp/batchreport*
-gnuplot:TargetApp/*/gnuplot.input
-plotstd:TargetApp/*/ArtificialUser/generate_in_subperiod/plot-std-result
 [end]
+
+# Run the LSF tests too...
+extra_version:lsf
 
 # ---------------- Values needed to run in batch mode -------------------
 
@@ -83,6 +68,7 @@ virtual_display_machine:singleton
 
 unsaveable_version:master
 unsaveable_version:i386_linux
+unsaveable_version:lsf
 
 # For each "special batch" run, specify recipients, time limit, architectures and versions 
 # Not present means $USER as recipient, no time limit, all versions and all architectures accepted
@@ -95,6 +81,7 @@ default:master
 default:i386_linux
 default:sparc
 default:parisc_2_0
+default:lsf
 
 [batch_use_collection]
 default:true
