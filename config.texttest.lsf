@@ -29,6 +29,8 @@ slavelog:TextTest will write diagnostics
 gnuplot:plot{WORD 2}
 targetReport:Build Rave program
 targetReport:batch system daemon
+graph:CreationDate
+graph:Lshow
 
 [unordered_text]
 output:Failed to submit to LSF
@@ -45,6 +47,7 @@ copy_test_path:test_tmp
 # Things to collate
 [collate_file]
 gnuplot:TargetApp/*/gnuplot.input
+graph:TargetApp/*/graph.ps
 plotstd:TargetApp/*/ArtificialUser/generate_in_subperiod/framework_tmp/plot-std-result
 slavelog:TargetApp/*/ArtificialUser/generate_in_subperiod/framework_tmp/slavelog
 slavedirs:TargetApp/*/ArtificialUser/generate_in_subperiod/directories.texttest
