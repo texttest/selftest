@@ -1,0 +1,69 @@
+geoff
+5,0,0,1,0,0,0,0,5,0
+031128 DIP Test Suite (version unix.interr) : 11 tests ran : 5 had internal errors, 1 FAILED
+
+The following tests had internal errors : 
+In DIP test-suite TargetApp:
+  In DIP test-suite Game9952:
+    - DIP test-case S02    : Internal ERROR (Aeg SUPPORT)
+    - DIP test-case A03    : Internal ERROR (Aeg SUPPORT)
+    - DIP test-case A04    : ERROR : Compulsory message missing (Spa)
+    - DIP test-case S05    : ERROR : Compulsory message missing (Spa)
+    - DIP test-case A05    : ERROR : Compulsory message missing (Spa)
+  In DIP test-suite npstIII:
+
+The following tests FAILED : 
+In DIP test-suite TargetApp:
+  In DIP test-suite Game9952:
+    - DIP test-case A02   
+  In DIP test-suite npstIII:
+
+The following tests succeeded : 
+In DIP test-suite TargetApp:
+  In DIP test-suite Game9952:
+    - DIP test-case S01.99
+    - DIP test-case A01   
+    - DIP test-case S03   
+    - DIP test-case S04   
+  In DIP test-suite npstIII:
+    In DIP test-suite Game47:
+      - DIP test-case S01
+
+
+Failure information for the tests that failed follows...
+--------------------------------------------------------
+TEST FAILED on tilin : -> DIP test-case S02   (under Game9952/S02)
+------------------ Differences in output --------------------
+35c35
+< Turkey:  Aeg SUPPORT Bul -> Gre    (*dislodged*)
+---
+> Turkey:  Aeg SUPPORT Bul -> Gre    (*was dislodged*)
+--------------------------------------------------------
+TEST FAILED on tilin : -> DIP test-case A02   (under Game9952/A02)
+------------------ Differences in output --------------------
+18c18
+< Germany: Hol HOLD                  (*dislodged*)
+---
+> Germany: Hol HOLD                  (*was dislodged*)
+--------------------------------------------------------
+TEST FAILED on tilin : -> DIP test-case A03   (under Game9952/A03)
+------------------ Differences in output --------------------
+28c28
+< Italy:   Tyn CONVOY Tun -> Rom     (*dislodged*)
+---
+> Italy:   Tyn CONVOY Tun -> Rom     (*was dislodged*)
+--------------------------------------------------------
+TEST FAILED on tilin : -> DIP test-case A04   (under Game9952/A04)
+------------------ Differences in output --------------------
+18c18
+< France:  Mun SUPPORT Ber HOLD      (*dislodged*)
+---
+> France:  Mun SUPPORT Ber HOLD      (*was dislodged*)
+--------------------------------------------------------
+TEST FAILED on tilin : -> DIP test-case S05   (under Game9952/S05)
+------------------ Differences in output --------------------
+21c21
+< France:  Ber SUPPORT Ruh -> Mun    (*dislodged*)
+---
+> France:  Ber SUPPORT Ruh -> Mun    (*was dislodged*)
+
