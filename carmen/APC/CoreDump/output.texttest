@@ -1,12 +1,12 @@
-TextTest will write diagnostics in /users/geoff/texttesttmp/texttest.lsfgeoff19Oct11:04:27/carmen/APC/CoreDump based on file at /users/geoff/work/master/Testing/Automatic/texttest/log4py.conf
-Using Application APC, version crash, checkout /users/geoff/work/master
+TextTest will write diagnostics in /users/johani/texttesttmp/texttest.lsfjohani02Nov15:16:48/carmen/APC/CoreDump based on file at /users/johani/work/master_clean/Testing/Automatic/texttest/log4py.conf
+Using Application APC, version crash, checkout /users/johani/work/master
 Compiling rules for APC test-suite TargetApp
   Compiling rules for APC test-suite sk_test9scripts
 Submitting APC test-suite TargetApp to LSF queue short_i386_linux_RHEL
   Submitting APC test-suite sk_test9scripts to LSF queue short_i386_linux_RHEL
     Submitting APC test-case no_dh_single_base_cg to LSF queue short_i386_linux_RHEL
-    Reading slave results for APC test-case no_dh_single_base_cg (on extract.apc,solution.apc,status.apc,warnings.apc)
-    APC test-case no_dh_single_base_cg CRASHED : new results in extract, differences in solution,status,warnings
+    Reading slave results for APC test-case no_dh_single_base_cg (on all.apc,solution.apc,status.apc,warnings.apc)
+    APC test-case no_dh_single_base_cg CRASHED : new results in all, differences in solution,status,warnings
 Program terminated with signal 11, Segmentation fault.
 Stack trace from gdb :
 raise 
@@ -108,5 +108,35 @@ main
 < 
 < ==================================
 < Cost element values for subchain :
------------------- New result in extract --------------------
+------------------ New result in all --------------------
+Time:  0 s real  20 ms cpu  0 ms cpu_child  memory:   4.5 Mb
+Delta: 0 s real  0 ms cpu  0 ms cpu_child  memory:   4.5 Mb
+/carm/proj/texttest/selftest_data/CARMSYS/sk_test9scripts_tmp.apc/crc/rule_set/APC/i386_linux/.APC_fd54_DC9_no_reference.johani.25597
+-s /carm/carmen_paros_deliver/user_and_tmp/sk_test9_user//LOCAL_PLAN/F36/MCS_W01/V1112_0122/APC_ji_single_base_CPH_spl.apc.crashjohani02Nov15:17:13/APC_FILES
+-v 1
+-R /nfs/local/apc_temp/APC_ji_single_base_CPH_spl.apc.crashjohani02Nov15:17:13_25597/APC_rot
+-I /carm/carmen_paros_deliver/user_and_tmp/sk_test9_user//LOCAL_PLAN/F36/MCS_W01/V1112_0122/APC_ji_single_base_CPH_spl.apc.crashjohani02Nov15:17:13/APC_FILES/run_status
+-U johani
+executable name is [/carm/proj/texttest/selftest_data/CARMSYS/sk_test9scripts_tmp.apc/crc/rule_set/APC/i386_linux/.APC_fd54_DC9_no_reference.johani.25597]
+carmsys: /carm/proj/texttest/selftest_data/CARMSYS
+carmusr: /carm/carmen_paros_deliver/user_and_tmp/sk_test9_user/
+carmtmp: /carm/proj/texttest/selftest_data/CARMSYS/sk_test9scripts_tmp.apc
+lp_etab_dir:  /carm/carmen_paros_deliver/user_and_tmp/sk_test9_user//LOCAL_PLAN/F36/MCS_W01/V1112_0122/etable
+sp_etab_dir:  /carm/carmen_paros_deliver/user_and_tmp/sk_test9_user//LOCAL_PLAN/F36/MCS_W01/V1112_0122/APC_ji_single_base_CPH_spl/etable
+airport file: /carm/carmen_paros_deliver/user_and_tmp/sk_test9_user//Airports/bin/AirportFile
+
+ APC JOB IDENTIFICATION
+
+ CARMSYS..............: /carm/proj/texttest/selftest_data/CARMSYS
+ CARMUSR..............: /carm/carmen_paros_deliver/user_and_tmp/sk_test9_user/
+ APC library version..: master.current
+ APC library date.....: 08 March 2004 15:52:20
+canonicalize called
+_init_segment_duty_types: Cannot retrive resource CREW_DUTY_TYPE_ETAB_NAME
+
+Error! Pid:25720  Tue Nov  2 15:17:29 2004  User:johani
+Error! File:/carm/master/Data/duty_type/DutyType.cc  Line:202
+Error! _register_segment_duty_type: Registering new duty type  in category 1.
+
+crew category file: /carm/carmen_paros_deliver/user_and_tmp/sk_test9_user//data/config/crew_categories
     Save Version crash(1), Save(s) or continue(any other key)?
