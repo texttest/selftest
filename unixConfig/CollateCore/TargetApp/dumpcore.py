@@ -12,4 +12,4 @@ if len(sys.argv) == 1:
         os.system("kill -11 " + str(processId))
 else:
     # Produce fake core
-    os.system("which python > core")
+    os.system("which grep > core")
