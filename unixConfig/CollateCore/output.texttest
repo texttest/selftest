@@ -1,4 +1,4 @@
-Using Application CORE, checkout /users/geoff/work/master/Testing/Automatic/texttest/unixConfig/CollateCore/texttestgeoff08Sep18:20:54/TargetApp/./
+Using Application CORE, checkout /users/geoff/texttesttmp/texttestgeoff25Nov16:40:27/unixConfig/CollateCore/TargetApp/./
 Running CORE test-suite TargetApp
   Running CORE test-case DumpCore
 Comparing differences for CORE test-suite TargetApp
@@ -6,18 +6,18 @@ Comparing differences for CORE test-suite TargetApp
   CORE test-case DumpCore FAILED :
 Program terminated with signal 11, Segmentation fault.
 Stack trace from gdb :
-select 
-__JCR_LIST__ 
+_dl_sysinfo_int80 
+___newselect_nocancel 
+floatsleep 
 time_sleep 
 PyCFunction_Call 
-eval_frame 
+PyEval_EvalCode 
 PyEval_EvalCodeEx 
 PyEval_EvalCode 
-run_node 
+PyRun_FileExFlags 
 PyRun_SimpleFileExFlags 
 PyRun_AnyFileExFlags 
 Py_Main 
 main 
-__libc_start_main 
 
   View details(v), Save(s) or continue(any other key)?
