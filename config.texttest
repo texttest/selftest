@@ -7,6 +7,7 @@ default_checkout:master
 
 # Checkout depends on the local machine, and the architecture
 output:checkout
+errors:RENDER
 errors:\.py
 errors:CountTest.__del__
 
@@ -22,6 +23,9 @@ log_file:output
 # ---------------- Values needed to run in batch mode -------------------
 
 default_architecture:i386_linux
+
+# To test the GUI we need this to exist
+display_module:carmen
 
 # For each "special batch" run, specify recipients, time limit, architectures and versions 
 # Not present means $USER as recipient, no time limit, all versions and all architectures accepted
