@@ -1,0 +1,31 @@
+# Path to the binary, at Carmen
+binary:Testing/TextTest/texttest.py
+
+# Settings for Carmen
+checkout_location:~/work
+default_checkout:master
+
+# Checkout depends on the local machine, and the architecture
+output:checkout
+
+# Might as well have nice print-outs
+full_name:TextTest
+
+# These tests cannot be run in parallel using LSF, but let's use UNIX features
+# like batch mode, anyway.
+config_module:unix
+
+log_file:output
+
+# ---------------- Values needed to run in batch mode -------------------
+
+# For each "special batch" run, specify recipients, time limit, architectures and versions 
+# Not present means $USER as recipient, no time limit, all versions and all architectures accepted
+nightjob_recipients:geoff,johana
+nightjob_architecture:i386_linux
+nightjob_version:master
+
+wkendjob_recipients:geoff,johana
+wkendjob_architecture:i386_linux
+wkendjob_version:master
+
