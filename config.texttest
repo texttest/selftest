@@ -15,6 +15,7 @@ output:FAILED on{WORD 6}
 output:still in use
 output:creating batch report{WORD 2}
 output:Killing running test{WORD -1}
+output:TextTest will write diagnostics
 # Sometimes needed under heavy machine load
 output:signal 15
 output:signal 9
@@ -25,6 +26,9 @@ targetReport:{LINE 1}
 catalogue:.nfs
 catalogue:subdirectory TargetApp/dip
 catalogue:subdirectory TargetApp/core
+catalogue:unixperf
+catalogue:cmd
+catalogue:lsfreport
 errors:RENDER
 errors:\.py
 errors:CountTest.__del__
@@ -37,6 +41,12 @@ gui_log:1
 targetReport:1
 targetMem:1
 shortcut:1
+[end]
+
+[diagnostics]
+input_directory_variable:TEXTTEST_DIAGNOSTICS
+write_directory_variable:TEXTTEST_DIAGDIR
+configuration_file:log4py.conf
 [end]
 
 # Might as well have nice print-outs
