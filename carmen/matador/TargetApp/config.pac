@@ -6,6 +6,7 @@
 # Python configuration module to use. The configuration "default" is always available
 # Otherwise, provide any module you like that implements a getConfig(optionMap) method
 config_module:matador
+queue_system_module:${QUEUE_SYSTEM}
 
 # Binary (relative to checkout) to be used
 binary:${CARMSYS}/bin/PICADORbatch.sh

@@ -6,6 +6,7 @@
 # Python configuration module to use. The configuration "default" is always available
 # Otherwise, provide any module you like that implements a getConfig(optionMap) method
 config_module:matador
+queue_system_module:${QUEUE_SYSTEM}
 
 # Binary (relative to checkout) to be used
 binary:${CARMSYS}/bin/MATADORbatch.sh
@@ -92,7 +93,7 @@ use_standard_input:0
 # ---------------- Values required by the performance module -------------------
 
 # Performance machines/groups. Performance is only compared if these machines are used for test execution
-performance_test_machine:hgrp_rd_xeon5600
+performance_test_resource:model=Opteron250
 
 # How much variation in performance do we allow, in percentage of total runtime? 
 cputime_variation_%:10
