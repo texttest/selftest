@@ -15,6 +15,9 @@ output:FAILED on{WORD 6}
 output:still in use
 output:Killing running test{WORD -1}
 output:Killed process{WORD 3}
+# These are sometimes needed when machines are very slow
+output:signal 15
+output:signal 9
 targetReport:FAILED on{WORD 4}
 targetReport:tests ran{WORD 1}
 targetReport:{LINE 1}
@@ -24,6 +27,8 @@ catalogue:subdirectory TargetApp/core
 errors:RENDER
 errors:\.py
 errors:CountTest.__del__
+# Hard to rely on exactly how much faster things are...
+gui_log:% faster{WORD 3}
 [end]
 
 # Might as well have nice print-outs
