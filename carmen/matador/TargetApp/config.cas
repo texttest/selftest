@@ -21,6 +21,7 @@ default_checkout:master
 # Please add text to remove from comparison files
 # separated from the file concerned by a semicolon
 # The last is a test that differs in master and carmen_9 due to leg output changing for Picador
+[run_dependent_text]
 errors:Error! Pid
 errors:locale
 errors:cpu time
@@ -54,14 +55,12 @@ output:Subplan
 output:ARGS
 output:Written Solution to
 output:PERSONAL_AZ_CONFIG
+[end]
 
 # Full name. If not present, capitalised extension is used. Must be one word.
 full_name:Matador
 
-log_file:output
-
 # Version to start as well as this one
-# Not for these tests, this is generic functionality...
 #extra_version:parallel
 
 # Versions which exist for environmental or other purposes and should not be offered as save options
@@ -75,11 +74,14 @@ internal_error_text:No MIP solution exists
 internal_error_text:Cannot execute script
 
 # Collect the solution
-collate_file:best_solution->solution
+[collate_file]
+solution:best_solution
+[end]
 
 link_test_path:secret_parameters.etab
 
-write_tmp_files:TargetApp
+# Values for adding tests
+use_standard_input:0
 
 # ---------------- Values required by the performance module -------------------
 
@@ -109,46 +111,41 @@ minimum_cputime_for_test:10
 # How to find the memory usage...
 #string_before_memory:Memory consumption:
 
-# Values for adding tests
-use_standard_input:0
-
 # ---------------- Values required by the Carmen module -------------------
 
 # What needs to be built by the rule compiler
 rave_name:matador
 
-# Things to build
-build_link:Optimization/Matador/Program
-build_product:Optimization/Matador
-build_codebase:Optimization
-
 # The architecture that runs without a version ID. If you run on other architecture, you will
 # get given version ${ARCH}$v, where $v was the version specified, if any...
 default_architecture:i386_linux
+
+# Things to build
+[build_targets]
+link:Optimization/Matador/Program
+product:Optimization/Matador
+codebase:Optimization
 
 # ---------------- Values needed to run in batch mode -------------------
 
 # For each "special batch" run, specify recipients, time limit, architectures and versions 
 # Not present means $USER as recipient, no time limit, all versions and all architectures accepted
-nightjob_recipients:carmen.matadortests,johana
-nightjob_timelimit:180
-nightjob_version:parallel
-nightjob_version:master
-nightjob_version:9
-nightjob_version:10
-nightjob_version:sparc
-nightjob_version:i386_linux
-nightjob_version:parisc_2_0
-nightjob_version:powerpc
-nightjob_use_collection:true
+[batch_recipients]
+default:carmen.matadortests
+local:$USER
 
-wkendjob_recipients:carmen.matadortests,johana
-wkendjob_version:master
-wkendjob_version:parallel
-wkendjob_version:9
-wkendjob_version:10
-wkendjob_version:sparc
-wkendjob_version:i386_linux
-wkendjob_version:parisc_2_0
-wkendjob_version:powerpc
-wkendjob_use_collection:true
+[batch_version]
+default:master
+default:10
+default:9
+default:i386_linux
+default:sparc
+default:parisc_2_0
+default:powerpc
+default:parallel
+
+[batch_use_collection]
+default:true
+
+[batch_timelimit]
+nightjob:180

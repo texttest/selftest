@@ -19,6 +19,7 @@ default_checkout:master
 # run-dependent text for each file produced
 # Please add text to remove from comparison files
 # separated from the file concerned by a semicolon
+[run_dependent_text]
 status:cpu_child
 status:Date
 status:library date
@@ -36,6 +37,7 @@ status:Costing time (sec)
 status:Conn fixing time (sec)
 status:OC to DH time (sec)
 status:Subplan
+[end]
 
 # Determines file to be used for information extraction, and presentation by tkdiff instead of diff
 log_file:status
@@ -45,12 +47,13 @@ unsaveable_version:i386_linux
 unsaveable_version:master
 
 # Collect the solution, and some other stuff
-collate_file:best_solution->solution
-collate_file:status->status
-collate_file:run_status_script_error->error
-collate_file:run_status_warning->warnings
-
-write_tmp_files:TargetApp
+[collate_file]
+solution:best_solution
+status:status
+script_errors:run_status_script_error
+warnings:run_status_warning
+error:run_status_error
+[end]
 
 # ---------------- Values required by the performance module -------------------
 
@@ -58,7 +61,7 @@ write_tmp_files:TargetApp
 string_before_memory:memory:
 
 # How much variation in memory do we allow, in percentage of total memory used? 
-memory_variation_%:1
+memory_variation_%:2
 
 # How much memory (in MB) must be used before we consider it worthwhile to check memory?
 minimum_memory_for_test:15
@@ -96,27 +99,29 @@ rave_name:apc
 default_architecture:i386_linux
 
 # Things to build
-build_:Optimization/APC
-build_sc:Optimization/SCSolver
-build_sc:Optimization/APC
-build_rave:Rules_and_Reports
-build_rave:Optimization/APC
+[build_targets]
+:Optimization/APC
+sc:Optimization/SCSolver
+sc:Optimization/APC
+rave:Rules_and_Reports
+rave:Optimization/APC
 
-# For each "special batch" run, specify recipients and time limit. 
-# Not present means $USER as recipients and no time limit
-nightjob_recipients:carmen.apctests,johani
-nightjob_timelimit:90
-nightjob_version:master
-nightjob_version:10
-nightjob_version:9
-nightjob_version:i386_linux
+# For each "special batch" run, specify recipients, time limit, architectures and versions 
+# Not present means $USER as recipient, no time limit, all versions and all architectures accepted
+[batch_recipients]
+nightjob:carmen.apctests,johani
+wkendjob:carmen.apctests,henrike,jorgen,fredrik,johani,lennart,curt,rastjo
+default:$USER
 
-wkendjob_recipients:carmen.apctests,henrike,jorgen,fredrik,johani,lennart,curt,rastjo
-wkendjob_timelimit:90
-wkendjob_version:master
-wkendjob_version:10
-wkendjob_version:9
-wkendjob_version:i386_linux
+[batch_version]
+default:master
+default:10
+default:9
+default:i386_linux
+
+[batch_timelimit]
+default:90
+[end]
 
 # ---------------- Values used by the APC module -------------------
 link_libs:-L$CARMSYS/lib/i386_linux -lxprs -lxprl -lm -ldl -L$CARMSYS/data/crc/i386_linux -lrave_rts -lrave_private -lBasics_STACK  `xml2-config --libs`
@@ -130,11 +135,9 @@ link_libs:-L$CARMSYS/lib/i386_linux -lxprs -lxprl -lm -ldl -L$CARMSYS/data/crc/i
 #
 kpi_cost_margin:0.1
 
-# RAVE parameters exported to the test.
-# It seems like we need to turn off this feature in order to provide reliable testing.
-rave_parameter:apc_pac.column_generation_stop_without_enough_improvements FALSE #D> FALSE
-
 # Extract logs
-extract_logs_default:grep "Solving" apclog
-extract_logs_subgrad:grep -E "Solving|LBD|OBJ" apclog
-extract_logs_all:cat apclog
+[extract_logs]
+default:grep "Solving" apclog
+subgrad:grep -E "Solving|LBD|OBJ" apclog
+all:cat apclog
+

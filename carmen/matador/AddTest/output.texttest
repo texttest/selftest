@@ -1,13 +1,56 @@
 Using Application Matador, checkout /users/geoff/work/master
 Using Application Picador, checkout /users/geoff/work/master
+Viewing test Matador
+Adding file config.cas under heading 'Configuration Files', coloured purple
+Adding file config.cas.rave under heading 'Configuration Files', coloured purple
+Adding file config.pac under heading 'Configuration Files', coloured purple
+
+Creating notebook page for 'Select Tests'
+Creating entry for option 'Test names containing'
+Creating entry for option 'Tests listed in file'
+Creating entry for option 'Suite names containing'
+Creating entry for option 'Log files containing'
+Creating entry for option 'Execution time <min, max>'
+Creating entry for option 'CARMUSRs containing'
+
+Creating notebook page for 'What to run'
+Creating entry for option 'Use checkout'
+Creating entry for option 'Run this script'
+Creating entry for option 'Run this version'
+Creating entry for option 'Reconnect to previous run'
+Creating check button for switch 'Build rulesets only'
+
+Creating notebook page for 'How to run'
+Creating entry for option 'Run batch mode session'
+Creating entry for option 'Request LSF resource'
+Creating entry for option 'Request LSF queue'
+Creating check button for switch 'Interactive mode'
+Creating check button for switch 'Overwrite all failures'
+Creating check button for switch 'Create new results files (overwrite everything)'
+Creating check button for switch 'Run tests locally (not LSF)'
+Creating check button for switch 'Run on performance machines only'
+Creating check button for switch 'Use debug rulesets'
+Creating check button for switch 'Run with RAVE Explorer'
+Creating check button for switch 'Run with LProf profiler'
+Creating check button for switch 'Use Matador Codebase diagnostics'
+
+Creating notebook page for 'Side effects'
+Creating entry for option 'Build application target'
+Creating entry for option 'Build application target locally'
+Creating check button for switch 'Write TextTest diagnostics'
+Creating check button for switch 'Keep write-directories on success'
 
 'select test' event created with arguments 'ArtificialUser'
 Viewing test Matador test-suite ArtificialUser
+Adding file environment under heading 'Definition Files', coloured pale green
+Adding file environment.local under heading 'Definition Files', coloured pale green
+Adding file testsuite.cas under heading 'Definition Files', coloured pale green
 
 Creating notebook page for 'Adding Test'
 Creating entry for option 'Test Name'
 Creating entry for option 'Test Description'
 Creating entry for option 'Subplan name'
+Creating check button for switch 'Collect standard results immediately'
 Creating check button for switch 'Change system behaviour (edit log file)'
 
 Creating notebook page for 'Adding Suite'
@@ -26,31 +69,25 @@ Creating entry for option 'CARMUSR'
 'add test' event created with arguments ''
 Adding Test flight_back_in_time under test suite Matador test-suite ArtificialUser
 Using option string : -s S01MCS/MCS_APR01/MCS_FDDH4_CAS/flight_back_in_time
+Adding file environment under heading 'Definition Files', coloured pale green
+Adding file environment.local under heading 'Definition Files', coloured pale green
+Adding file testsuite.cas under heading 'Definition Files', coloured pale green
 
 Creating notebook page for 'Adding Test'
 Creating entry for option 'Test Name'
 Creating entry for option 'Test Description'
 Creating entry for option 'Subplan name'
+Creating check button for switch 'Collect standard results immediately'
 Creating check button for switch 'Change system behaviour (edit log file)'
 
 Creating notebook page for 'Adding Suite'
 Creating entry for option 'Suite Name'
 Creating entry for option 'Suite Description'
 Creating entry for option 'CARMUSR'
-Running test Matador test-case flight_back_in_time to get standard behaviour...
-> Using Application Matador, checkout /users/geoff/work/master
-> Compiling rules for Matador test-suite TargetApp
-> Submitting Matador test-suite TargetApp to LSF queue short_i386_linux_RHEL
->   Submitting Matador test-suite ArtificialUser to LSF queue short_i386_linux_RHEL
->     Submitting Matador test-case flight_back_in_time to LSF queue short_i386_linux_RHEL
-> Comparing differences for Matador test-suite TargetApp
->   Comparing differences for Matador test-suite ArtificialUser
->     Waiting for completion of Matador test-case flight_back_in_time...
->     Comparing differences for Matador test-case flight_back_in_time (on errors.cas,output.cas,performance.cas)
->     Matador test-case flight_back_in_time - overwriting new results in errors,output,performance
 
 'select test' event created with arguments 'flight_back_in_time'
 Viewing test Matador test-case flight_back_in_time
+Adding file options.cas under heading 'Definition Files', coloured pale green
 
 Creating notebook page for 'Graph'
 Creating entry for option 'Time range in minutes'

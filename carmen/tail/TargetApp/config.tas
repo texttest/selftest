@@ -16,11 +16,10 @@ binary:${CARMSYS}/bin/TAILbatch.sh
 checkout_location:~/work/
 default_checkout:master
 
-log_file:output
-
 # run-dependent text for each file produced
 # Please add text to remove from comparison files
 # separated from the file concerned by a semicolon
+[run_dependent_text]
 errors:memory
 errors:/\.##
 errors:tmp/RRL-AAA
@@ -80,6 +79,7 @@ output:October
 output:November
 output:December
 input:loadsp
+[end]
 
 # Full name. If not present, capitalised extension is used. Must be one word.
 full_name:Tail
@@ -88,9 +88,10 @@ full_name:Tail
 link_test_path:commands.tas
 
 # Collect the solution
-collate_file:best_solution->solution
-
-write_tmp_files:TargetApp
+# Collect the solution
+[collate_file]
+solution:best_solution
+[end]
 
 # ---------------- Values required by the performance module -------------------
 
@@ -127,21 +128,27 @@ rave_name:afc
 default_architecture:i386_linux
 
 # Things to build
-build_link:Optimization/Tail/Program
-build_product:Optimization/Tail
-build_codebase:Optimization
+[build_targets]
+link:Optimization/Tail/Program
+product:Optimization/Tail
+codebase:Optimization
 
 # ---------------- Values needed to run in batch mode -------------------
 
 # For each "special batch" run, specify recipients, time limit, architectures and versions 
 # Not present means $USER as recipient, no time limit, all versions and all architectures accepted
-nightjob_recipients:carmen.matadortests
-nightjob_timelimit:30
-nightjob_version:9
-nightjob_version:master	
-nightjob_version:i386_linux
+[batch_recipients]
+default:carmen.matadortests
+local:$USER
 
-wkendjob_recipients:carmen.matadortests
-wkendjob_version:9
-wkendjob_version:master
-wkendjob_version:i386_linux
+[batch_version]
+default:master
+default:9
+default:i386_linux
+default:sparc
+
+[batch_use_collection]
+default:true
+
+[batch_timelimit]
+nightjob:30

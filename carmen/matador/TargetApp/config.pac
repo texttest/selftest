@@ -19,6 +19,7 @@ default_checkout:master
 # run-dependent text for each file produced
 # Please add text to remove from comparison files
 # separated from the file concerned by a semicolon
+[run_dependent_text]
 errors:Error! Pid
 errors:locale
 errors:cpu time
@@ -40,8 +41,7 @@ output:SUBPLAN
 output:Subplan
 output:ARGS
 output:Written Solution to
-
-write_tmp_files:TargetApp
+[end]
 
 # Full name. If not present, capitalised extension is used
 full_name:Picador
@@ -57,7 +57,12 @@ unsaveable_version:master
 link_test_path:secret_parameters.etab
 
 # Collect the solution
-collate_file:best_solution->solution
+[collate_file]
+solution:best_solution
+[end]
+
+# Values for adding tests
+use_standard_input:0
 
 # ---------------- Values required by the performance module -------------------
 
@@ -94,18 +99,21 @@ rave_name:picador
 default_architecture:i386_linux
 
 # Things to build
-build_link:Optimization/Picador/Program
-build_product:Optimization/Picador
-build_codebase:Optimization
+[build_targets]
+link:Optimization/Picador/Program
+product:Optimization/Picador
+codebase:Optimization
 
 # ---------------- Values needed to run in batch mode -------------------
 
 # For each "special batch" run, specify recipients, time limit, architectures and versions 
 # Not present means $USER as recipient, no time limit, all versions and all architectures accepted
-nightjob_recipients:carmen.matadortests
-nightjob_version:master
-nightjob_version:i386_linux
+[batch_recipients]
+default:carmen.matadortests
+local:$USER
 
-wkendjob_recipients:carmen.matadortests
-wkendjob_version:master
-wkendjob_version:i386_linux
+[batch_version]
+default:master
+default:i386_linux
+
+

@@ -1,2 +1,10 @@
 config_module:unixConfig
 
+# Don't use standard error, dipjudge doesn't write it anyway
+# and we want tests to work on windows
+collect_standard_error:0
+
+# Use collection for self tests, so we can compare reports
+[batch_use_collection]
+self_test:true
+

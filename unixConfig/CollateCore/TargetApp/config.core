@@ -1,15 +1,8 @@
 # Path to the binary
 binary:dumpcore.py
 
-checkout_location:.
-default_checkout:
-
 config_module:unixConfig
 
-log_file:output
-
-# Write locally to avoid collisions
-write_tmp_files:TargetApp
-
 # Make sure batch files are collectable...
-self_test_use_collection:true
+[batch_use_collection]
+self_test:true

@@ -6,6 +6,7 @@ checkout_location:~/work
 default_checkout:master
 
 # Checkout depends on the local machine, and the architecture
+[run_dependent_text]
 output:checkout
 output:BadApplication
 output:wait for
@@ -26,6 +27,7 @@ errors:\.py
 errors:CountTest.__del__
 errors:.carmen.se:
 gnuplot:plot{WORD 2}
+[end]
 
 # Might as well have nice print-outs
 full_name:TextTest
@@ -33,8 +35,6 @@ full_name:TextTest
 # These tests cannot be run in parallel using LSF, but let's use UNIX features
 # like batch mode, anyway.
 config_module:carmen
-
-log_file:output
 
 # List of (generally directories) to copy from the test directory to the write directory
 # because we want to write there.
@@ -49,42 +49,37 @@ link_test_path:config
 # Tell it that we want to track what files are created
 create_catalogues:true
 
-# Things to collate
-collate_file:TargetApp/Failures/memory.mem->targetMem
-collate_file:TargetApp/batchreport*->targetReport
-collate_file:gnuplot.input->gnuplot
-collate_file:TargetApp/*/ArtificialUser/generate_in_subperiod/plot-std-result->plotstd
+# And here's where to find interactive action overrides...
+interactive_action_module:texttestgui
 
-# Programs for viewing files
-view_program:emacs
-follow_program:tail -f
-diff_program:tkdiff
+# Settings for creation of test cases
+use_standard_input:1
+
+# Things to collate
+[collate_file]
+targetMem:TargetApp/Failures/memory.mem
+targetReport:TargetApp/batchreport*
+gnuplot:gnuplot.input
+plotstd:TargetApp/*/ArtificialUser/generate_in_subperiod/plot-std-result
+[end]
 
 # ---------------- Values needed to run in batch mode -------------------
-
-default_architecture:i386_linux
 
 # To test the GUI we need this to exist
 display_module:carmen
 
 # For each "special batch" run, specify recipients, time limit, architectures and versions 
 # Not present means $USER as recipient, no time limit, all versions and all architectures accepted
-nightjob_recipients:carmen.matadortests
-nightjob_version:master
-nightjob_version:i386_linux
-nightjob_version:sparc
-nightjob_version:parisc_2_0
-nightjob_use_collection:true
+[batch_recipients]
+default:carmen.matadortests
+local:$USER
 
-wkendjob_recipients:carmen.matadortests
-wkendjob_version:master
-wkendjob_version:i386_linux
-wkendjob_version:sparc
-wkendjob_version:parisc_2_0
-wkendjob_use_collection:true
+[batch_version]
+default:master
+default:i386_linux
+default:sparc
+default:parisc_2_0
 
-# And here's where to find interactive action overrides...
-interactive_action_module:texttestgui
+[batch_use_collection]
+default:true
 
-# Settings for creation of test cases
-use_standard_input:1

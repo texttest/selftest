@@ -1,0 +1,24 @@
+# This file is used by runtests, and specifies the binary, 
+# default checkout, users, and run-dependent text for Crew Assignment (CAS) 
+
+# ---------------- Values required by the framework -------------------
+
+# Python configuration module to use. The configuration "default" is always available
+# Otherwise, provide any module you like that implements a getConfig(optionMap) method
+config_module:rave
+
+# Disable the automatic start of the parallel version present by default
+extra_version:none
+
+# This is primarily for selecting the tests. We also
+# always want local rulesets
+base_version:small
+base_version:local
+
+# Things to build
+[build_targets]
+rave:Rules_and_Reports
+rave:Optimization/Matador/Program
+# Remote builds are made on codebase (hardcoded)
+codebase:Rules_and_Reports
+codebase:Optimization/Matador/Program

@@ -17,18 +17,14 @@ default_architecture:i386_linux
 checkout_location:/carm
 default_checkout:dev/flamenco
 
-write_tmp_files:TargetApp
-#copy_test_path:TargetApp
-
 # run-dependent text for each file produced
 # Please add text to remove from comparison files
+[run_dependent_text]
 output:registerImplementation
 output:Root.etab
 output:load CRS Root file
 errors:dbdriver
-
-# Determines file to be used for information extraction, and presentation by tkdiff instead of diff
-log_file:output
+[end]
 
 #text to generate extra warnings:
 #cppunit test completely failed
@@ -47,34 +43,29 @@ lsfres:master
 # For each "special batch" run, specify recipients and time limit. 
 # Not present means $USER as recipients and no time limit
 # nightjob : daily after build, just verify connect
-nightjob_recipients:thekla
-#nightjob_recipients:none
-#run on versions
-nightjob_version:master
-nightjob_version:DESCARTES.sparc
-#run on architectures
-nightjob_version:sparc
-nightjob_version:parisc_2_0
-nightjob_version:i386_linux
+[batch_recipients]
+nightjob:thekla
+default:$USER
 
-#wkendjob_recipients:thekla
-wkendjob_recipients:none
-wkendjob_version:master
-wkendjob_version:DESCARTES.sparc
-#run on architectures
-wkendjob_version:sparc
-wkendjob_version:parisc_2_0
-wkendjob_version:i386_linux
-
+[batch_version]
+nightjob:DESCARTES.sparc
+nightjob:master
+nightjob:sparc
+nightjob:parisc_2_0
+nightjob:i386_linux
 #run tests before checkin
-checkin_version:master
-checkin_version:DESCARTES.sparc
+checkin:master
+checkin:DESCARTES.sparc
 #DEV_FLAMENCO with std-CARMSYS and flm-CARMSYS
-checkin_version:flmstd
-checkin_version:flmflm
+checkin:flmstd
+checkin:flmflm
 #run on architectures
-checkin_version:sparc
-checkin_version:parisc_2_0
-checkin_version:i386_linux
+checkin:sparc
+checkin:parisc_2_0
+checkin:i386_linux
+
+[batch_use_collection]
+nightjob:true
+[end]
 
 
