@@ -8,8 +8,8 @@ Adding file testsuite.perf under heading 'Definition Files', coloured white
 
 Waiting for application event 'completion of test actions' to occur.
 Redrawing test Success coloured green
-Redrawing test Failures coloured red
-...should have second column with info here...
+Redrawing test Failures coloured green
+(Second column '96% faster' coloured red)
 Expected application event 'completion of test actions' occurred, proceeding.
 
 'select test' event created with arguments 'Failures'
@@ -17,15 +17,15 @@ Viewing test PERF test-case Failures
 Adding file errors.perf under heading 'Comparison Files', coloured green
 Adding file output.perf under heading 'Comparison Files', coloured green
 Adding file performance.perf under heading 'Comparison Files', coloured red
-(Second column '100% faster' coloured red)
+(Second column '96% faster' coloured red)
 ---------- Text Info Window ----------
 ------------------ Differences in performance(faster) --------------------
 1,2c1,2
 < CPU time   :       10.0 sec. on sedom
 < Real time  :       18.2 sec.
 ---
-> CPU time   :       5.0 sec. on elfincove
-> Real time  :       5.2 sec.
+> CPU time   :       5.1 sec. on frankfort
+> Real time  :       7.4 sec.
 --------------------------------------
 
 Creating notebook page for 'Viewing'
@@ -37,20 +37,24 @@ Creating entry for option 'Version to save'
 Creating check button for switch 'Replace successfully compared files also'
 Creating radio button for switch 'Exact Performance/Average Performance'
 
+'view options for' event created with arguments 'Saving'
+
+'enter version to save =' event created with arguments '2'
+
 'save' event created with arguments ''
-Saving PERF test-case Failures - version , exactness 0
+Saving PERF test-case Failures - version 2, exactness 0
 Redrawing test Failures coloured green
 Adding file errors.perf under heading 'Comparison Files', coloured green
 Adding file output.perf under heading 'Comparison Files', coloured green
-Adding file performance.perf under heading 'Comparison Files', coloured green
+Adding file performance.perf.2 under heading 'Comparison Files', coloured green
 ---------- Text Info Window ----------
 ------------------ Differences in performance(faster) --------------------
 1,2c1,2
 < CPU time   :       10.0 sec. on sedom
 < Real time  :       18.2 sec.
 ---
-> CPU time   :       5.0 sec. on elfincove
-> Real time  :       5.2 sec.
+> CPU time   :       5.1 sec. on frankfort
+> Real time  :       7.4 sec.
 --------------------------------------
 
 Creating notebook page for 'Viewing'

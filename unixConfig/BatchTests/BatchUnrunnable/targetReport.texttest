@@ -1,6 +1,6 @@
 geoff
-unrunnable=9,FAILED=1,strange behaviour=1
-040910 DIP reconnectrun.unix : 11 tests : 9 unrunnable, 1 FAILED, 1 strange behaviour
+unrunnable=9,strange behaviour=1,FAILED=1
+040916 DIP reconnectrun.unix : 11 tests : 9 unrunnable, 1 strange behaviour, 1 FAILED
 
 Summary of all Unsuccessful tests follows...
 ---------------------------------------------------------------------------------
@@ -19,15 +19,15 @@ In DIP test-suite TargetApp:
     In DIP test-suite Game47:
       - DIP test-case S01
 
-The following tests FAILED : 
-In DIP test-suite TargetApp:
-  In DIP test-suite Game9952:
-    - DIP test-case A03    : output different
-
 The following tests strange behaviour : 
 In DIP test-suite TargetApp:
   In DIP test-suite Game9952:
     - DIP test-case A04    : don't get it
+
+The following tests FAILED : 
+In DIP test-suite TargetApp:
+  In DIP test-suite Game9952:
+    - DIP test-case A03    : output different
 
 
 Details of all Unsuccessful tests follows...
@@ -63,6 +63,12 @@ No test results found to reconnect to
 TEST could not be run : DIP test-case S01 (under npstIII/Game47/S01)
 No test results found to reconnect to
 
+Detailed information for the tests that strange behaviour follows...
+--------------------------------------------------------
+TEST strange behaviour : DIP test-case A04    (under Game9952/A04)
+Lots of junk appeared.
+And then we died.
+
 Detailed information for the tests that FAILED follows...
 --------------------------------------------------------
 TEST FAILED : DIP test-case A03    (under Game9952/A03)
@@ -71,10 +77,4 @@ TEST FAILED : DIP test-case A03    (under Game9952/A03)
 < Italy:   Tyn CONVOY Tun -> Rom     (*dislodged*)
 ---
 > Italy:   Tyn CONVOY Tun -> Rom     (*was dislodged*)
-
-Detailed information for the tests that strange behaviour follows...
---------------------------------------------------------
-TEST strange behaviour : DIP test-case A04    (under Game9952/A04)
-Lots of junk appeared.
-And then we died.
 
