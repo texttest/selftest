@@ -25,11 +25,10 @@ targetReport:^[0-9][0-9][0-9][0-9][0-9][0-9]{WORD 1}
 targetReport:{LINE 1}
 targetReport:^>
 targetReport:% faster{WORD -2}
+collectReport:{LINE 1}
+collectReport:^[0-9][0-9][0-9][0-9][0-9][0-9]{WORD 1}
 catalogue:.nfs
-catalogue:subdirectory TargetApp/dip
-catalogue:subdirectory TargetApp/core
-catalogue:subdirectory TargetApp/perf
-catalogue:subdirectory TargetApp/grep
+catalogue:[0-9][0-9][A-Z][a-z][a-z][0-9][0-9][0-9][0-9][0-9][0-9]
 errors:RENDER
 errors:File .* line .* in
 errors:CountTest.__del__
@@ -80,7 +79,8 @@ slow_motion_replay_speed:2
 # Things to collate
 [collate_file]
 targetMem:TargetApp/Failures/memory.mem
-targetReport:TargetApp/batchreport*
+targetReport:TargetApp/*/batchreport*
+collectReport:TargetApp/batchreport*
 shortcut:TargetApp/*.shortcut
 [end]
 
