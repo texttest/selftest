@@ -1,6 +1,6 @@
 geoff
-unrunnable=9,FAILED=2
-040908 DIP reconnectrun.unix : 11 tests : 9 unrunnable, 2 FAILED
+unrunnable=9,FAILED=1,strange behaviour=1
+040909 DIP reconnectrun.unix : 11 tests : 9 unrunnable, 1 FAILED, 1 strange behaviour
 
 Summary of all Unsuccessful tests follows...
 ---------------------------------------------------------------------------------
@@ -23,7 +23,11 @@ The following tests FAILED :
 In DIP test-suite TargetApp:
   In DIP test-suite Game9952:
     - DIP test-case A03    : output different
-    - DIP test-case A04    : output different
+
+The following tests strange behaviour : 
+In DIP test-suite TargetApp:
+  In DIP test-suite Game9952:
+    - DIP test-case A04    : don't get it
 
 
 Details of all Unsuccessful tests follows...
@@ -66,37 +70,10 @@ TEST FAILED : DIP test-case A03    (under Game9952/A03)
 < Italy:   Tyn CONVOY Tun -> Rom     (*dislodged*)
 ---
 > Italy:   Tyn CONVOY Tun -> Rom     (*was dislodged*)
+
+Detailed information for the tests that strange behaviour follows...
 --------------------------------------------------------
-TEST FAILED : DIP test-case A04    (under Game9952/A04)
------------------- Differences in output --------------------
-1,21c1,19
-< Austria: Eas -> Smy                (*bounce*)
-< Austria: Bul -> Con                (*works*)
-< Austria: Ser -> Rum                (*works*)
-< Austria: Alb -> Gre                (*works*)
-< Austria: Adr -> Alb                (*works*)
-< Austria: Tri -> Vie                (*works*)
-< Austria: Tyr -> Mun                (*works*)
-< 
-< England: Nwy -> StP                (*bounce*)
-< England: Nth HOLD                  (*works*)
-< England: Den SUPPORT Kie HOLD      (*works*)
-< England: Swe HOLD                  (*works*)
-< England: Ska SUPPORT Swe HOLD      (*works*)
-< England: Nrg -> Bar                (*works*)
-< England: Kie SUPPORT Ber HOLD      (*works*)
-< 
-< France:  Ber SUPPORT Mun HOLD      (*cut*)
-< France:  Mun SUPPORT Ber HOLD      (*dislodged*)
-< France:  Bur SUPPORT Mun HOLD      (*works*)
-< France:  Mar -> Pie                (*works*)
-< France:  Ion -> Adr                (*works*)
----
-> Austria: Tri -> Tyr                (*works*)
-> Austria: Vie SUPPORT Tri -> Tyr    (*works*)
-> Austria: Adr -> Ven                (*bounce*)
-> Austria: Gre SUPPORT Bul HOLD      (*works*)
-> Austria: Bul SUPPORT Con HOLD      (*works*)
-> Austria: Smy SUPPORT Con HOLD      (*cut*)
-> 
+TEST strange behaviour : DIP test-case A04    (under Game9952/A04)
+Lots of junk appeared.
+And then we died.
 
