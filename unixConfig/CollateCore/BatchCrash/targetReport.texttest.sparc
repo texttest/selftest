@@ -1,12 +1,12 @@
 nightjob
 CRASHED=1
-040910 CORE : 1 tests : 1 CRASHED
+050217 CORE : 1 tests : 1 CRASHED
 
 Summary of all Unsuccessful tests follows...
 ---------------------------------------------------------------------------------
 The following tests CRASHED : 
 In CORE test-suite TargetApp:
-  - CORE test-case DumpCore
+  - CORE test-case DumpCore : Killed in _poll
 
 
 Details of all Unsuccessful tests follows...
@@ -14,7 +14,7 @@ Details of all Unsuccessful tests follows...
 
 Detailed information for the tests that CRASHED follows...
 --------------------------------------------------------
-TEST CRASHED on kurwina : CORE test-case DumpCore (under DumpCore)
+TEST CRASHED (Killed in _poll) on devilslake : CORE test-case DumpCore (under DumpCore)
 Program terminated with signal 9, Killed.
 Stack trace from gdb :
 _poll 
@@ -27,4 +27,6 @@ PyEval_EvalCode
 run_node 
 PyRun_SimpleFileExFlags 
 Py_Main 
+
+
 
