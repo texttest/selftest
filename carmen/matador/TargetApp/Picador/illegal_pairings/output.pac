@@ -1,5 +1,5 @@
 CARMSYS: /users/hamid/work/master/Products/standard_gpc/CARMSYS
-CARMUSR: /carm/user_and_tmp/carmen_10/users_for_RD/UsersPicador/Spiel_user
+CARMUSR: /carm/proj/texttest/selftest_data/CARMUSRs/Spiel_user
 CARMTMP: /carm/user_and_tmp/carmen_10/tmps_for_RD/Picador/Spiel_tmp
 SUBPLAN: Spiel/spiel/Dated/Test_02.pachamid20Oct19:41:36
 RULESET: PIC_umlauf_spiel
