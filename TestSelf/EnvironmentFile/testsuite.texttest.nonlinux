@@ -1,0 +1,14 @@
+# Ordered list of tests in test suite. Add as appropriate
+
+
+# Check that variables are correctly removed from the environment
+RemoveSuiteVars
+
+# Make sure that environment.a.b overrides environment.a
+DoubleVersionOverride
+
+# Check that when an exception is thrown in a test, its environment is cleaned
+RemoveVarOnException
+
+# Make sure that checkout expansions are only used with real relative paths
+CheckoutExpansionNoPath
