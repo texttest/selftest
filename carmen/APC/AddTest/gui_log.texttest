@@ -1,0 +1,148 @@
+Mapping tests in tree view...
+-> Added APC to test tree view.
+-> Added APC test-suite TargetApp to test tree view.
+->   Added APC test-suite lh_bascripts to test tree view.
+->     Added APC test-case large_gap_daily to test tree view.
+->   Added APC test-suite sk_test9scripts to test tree view.
+->     Added APC test-case FC4_bas_col_1_paphos_aan to test tree view.
+->     Added APC test-case FC4_bas_col_1_paphos_aat to test tree view.
+->     Added APC test-case FC4_bas_col_1_paphos_adn to test tree view.
+->     Added APC test-case FC4_bas_col_1_paphos_adt to test tree view.
+->     Added APC test-case FC4_bas_col_1_paphos_dan to test tree view.
+->     Added APC test-case FC4_bas_col_1_paphos_dat to test tree view.
+->     Added APC test-case FC4_bas_col_1_paphos_ddn to test tree view.
+->     Added APC test-case FC4_bas_col_1_paphos_ddt to test tree view.
+->     Added APC test-case no_dh_single_base_cg     to test tree view.
+->   Added APC test-suite Spielscripts to test tree view.
+->     Added APC test-case umlauf_spiel to test tree view.
+->   Added APC test-suite RD_lh_pac to test tree view.
+->     Added APC test-case A320_COC_aan to test tree view.
+->     Added APC test-case A320_COC_aat to test tree view.
+->     Added APC test-case A320_COC_adn to test tree view.
+->     Added APC test-case A320_COC_adt to test tree view.
+->     Added APC test-case A320_COC_dan to test tree view.
+->     Added APC test-case A320_COC_dat to test tree view.
+->     Added APC test-case A320_COC_ddt to test tree view.
+->     Added APC test-case A320_COC_ddn to test tree view.
+
+Viewing test APC
+Adding file config.apc under heading 'Configuration Files', coloured purple
+
+Creating notebook page for 'Select Tests'
+Creating entry for option 'Test names containing'
+Creating entry for option 'Tests listed in file'
+Creating entry for option 'Suite names containing'
+Creating entry for option 'Log files containing'
+Creating entry for option 'Execution time <min, max>'
+Creating entry for option 'CARMUSRs containing'
+
+Creating notebook page for 'What to run'
+Creating entry for option 'Use checkout'
+Creating entry for option 'Run this version'
+Creating entry for option 'Reconnect to previous run'
+Creating check button for switch 'Recompute file filters when reconnecting'
+Creating check button for switch 'Build all rulesets'
+Creating check button for switch 'Build no rulesets'
+
+Creating notebook page for 'How to run'
+Creating entry for option 'Run batch mode session'
+Creating entry for option 'Run debugger'
+Creating entry for option 'Extract Apc Logs'
+Creating check button for switch 'Disable any performance testing'
+Creating check button for switch 'Run with LProf profiler'
+Creating check button for switch 'Use debug rulesets'
+Creating check button for switch 'Run with RAVE Explorer'
+
+Creating notebook page for 'LSF'
+Creating entry for option 'Request LSF resource'
+Creating entry for option 'Request LSF queue'
+Creating radio button for switch 'Run tests locally/Submit tests to LSF'
+Creating check button for switch 'Run on performance machines only'
+
+Creating notebook page for 'Side effects'
+Creating entry for option 'Build application target'
+Creating entry for option 'Build application target locally'
+Creating check button for switch 'Write TextTest diagnostics'
+Creating check button for switch 'Keep temporary write-directories'
+
+'select test' event created with arguments 'TargetApp'
+Viewing test APC test-suite TargetApp
+Adding file environment under heading 'Definition Files', coloured pale green
+Adding file raveparameters.apc.crash under heading 'Definition Files', coloured pale green
+Adding file testsuite.apc under heading 'Definition Files', coloured pale green
+Adding file apc under heading 'RAVE module', coloured pale green
+
+Creating notebook page for 'Adding Test'
+Creating entry for option 'Test Name'
+Creating entry for option 'Test Description'
+Creating entry for option 'Subplan name'
+
+Creating notebook page for 'Adding Suite'
+Creating entry for option 'Suite Name'
+Creating entry for option 'Suite Description'
+Creating entry for option 'CARMUSR'
+
+'view options for' event created with arguments 'Adding Suite'
+
+'enter suite name =' event created with arguments 'lh_ba_new'
+
+'enter carmusr =' event created with arguments '/carm/proj/apc/carmen_10/pic_user'
+
+'add suite' event created with arguments ''
+Adding Suitelh_ba_new under test suite APC test-suite TargetApp
+Writing file environment
+CARMUSR:/carm/proj/apc/carmen_10/pic_user
+CARMTMP:$CARMSYS/pic_tmp.apc
+Viewing new test lh_ba_new
+Adding file environment under heading 'Definition Files', coloured pale green
+Adding file testsuite.apc under heading 'Definition Files', coloured pale green
+Adding file Customer.etab under heading 'Resource', coloured pale green
+
+Creating notebook page for 'Adding Test'
+Creating entry for option 'Test Name'
+Creating entry for option 'Test Description'
+Creating entry for option 'Subplan name'
+
+Creating notebook page for 'Adding Suite'
+Creating entry for option 'Suite Name'
+Creating entry for option 'Suite Description'
+Creating entry for option 'CARMUSR'
+
+'view options for' event created with arguments 'Adding Test'
+
+'enter test name =' event created with arguments 'small1'
+
+'enter subplan name =' event created with arguments 'adv_apc_pairing/daily/Delta/small1'
+
+'add test' event created with arguments ''
+Adding Testsmall1 under test suite APC test-suite lh_ba_new
+Using option string : $CARMUSR/LOCAL_PLAN/adv_apc_pairing/daily/Delta/small1/APC_FILES $CARMUSR/LOCAL_PLAN/adv_apc_pairing/daily/Delta/small1/APC_FILES/run_status ${CARMSYS} ${CARMTMP}/crc/rule_set/APC/PUTS_ARCH_HERE/STD+EXP+JAR_no_reference ${USER}
+Setting test env: SP_ETAB_DIR = /carm/proj/apc/carmen_10/pic_user/LOCAL_PLAN/adv_apc_pairing/daily/Delta/small1/etable
+Setting test env: LP_ETAB_DIR = /carm/proj/apc/carmen_10/pic_user/LOCAL_PLAN/adv_apc_pairing/daily/Delta/etable
+Viewing new test small1
+Adding file environment.apc under heading 'Definition Files', coloured pale green
+Adding file options.apc under heading 'Definition Files', coloured pale green
+Adding file performance.apc under heading 'Standard Files', coloured pale green
+Adding file status.apc under heading 'Standard Files', coloured pale green
+Adding file rules under heading 'Subplan', coloured pale green
+Adding file STD+EXP+JAR_no_reference under heading 'Ruleset', coloured pale green
+
+Creating notebook page for 'Recording'
+Creating check button for switch 'Hold record shell after recording'
+
+Creating notebook page for 'Graph'
+Creating entry for option 'Horizontal range' (set to '0:')
+Creating entry for option 'Vertical range'
+Creating entry for option 'Time scale to use' (set to 'minutes')
+Creating entry for option 'Absolute file to print to'
+Creating entry for option 'Log file item to plot' (set to 'cost of plan')
+Creating entry for option 'Extra versions to plot'
+Creating entry for option 'Title of the plot'
+Creating entry for option 'Search for temporary files in user'
+Creating check button for switch 'Print in colour'
+Creating check button for switch 'Plot against solution number rather than time'
+Creating check button for switch 'Plot also average'
+Creating check button for switch 'Plot only average'
+Creating check button for switch 'Don't search for temporary files'
+
+'quit' event created with arguments ''
