@@ -1,0 +1,26 @@
+# Path to the binary
+binary:fakememory.py
+
+checkout_location:.
+default_checkout:
+
+config_module:default
+
+log_file:output
+
+output:Memory usage
+
+# Write locally to avoid collisions
+write_tmp_files:TargetApp
+
+# ------ Memory settings -------
+
+# String to look for to check for memory
+string_before_memory:usage now
+
+# How much variation in memory do we allow, in percentage of total memory used? 
+memory_variation_%:5
+
+# How much memory (in MB) must be used before we consider it worthwhile to check memory?
+minimum_memory_for_test:15
+
