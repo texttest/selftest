@@ -27,14 +27,23 @@ config_module:carmen
 
 log_file:output
 
-# File comparison details. Relative paths are copied from the application
+# List of (generally directories) to copy from the test directory to the write directory
+# because we want to write there.
 copy_test_path:TargetApp
-copy_test_path:wibble.py
-copy_test_path:gui_script
-copy_test_path:config
+
+# List of constant input files to create links to. Will copy them on Windows as symbolic links
+# don't exist.
+link_test_path:wibble.py
+link_test_path:gui_script
+link_test_path:config
 
 # Tell it that we want to track what files are created
 create_catalogues:true
+
+# Programs for viewing files
+view_program:emacs
+follow_program:tail -f
+diff_program:tkdiff
 
 # ---------------- Values needed to run in batch mode -------------------
 

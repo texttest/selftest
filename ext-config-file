@@ -26,14 +26,23 @@ errors:.carmen.se:
 # Official name of the application
 full_name:TextTest
 
-# List of files to copy from the test directory to the write directory
+# List of (generally directories) to copy from the test directory to the write directory
+# because we want to write there.
 copy_test_path:TargetApp
-copy_test_path:wibble.py
-copy_test_path:gui_script
-copy_test_path:config
+
+# List of constant input files to create links to. Will copy them on Windows as symbolic links
+# don't exist.
+link_test_path:wibble.py
+link_test_path:gui_script
+link_test_path:config
 
 # Tell it that we want to track what files are created
 create_catalogues:true
+
+# Programs for viewing files
+view_program:emacs
+follow_program:tail -f
+diff_program:tkdiff
 
 # Which configuration to use. 3 are provided: any number can be written by the user.
 # Corresponds to the name of a python module containing a configuration to be loaded.
