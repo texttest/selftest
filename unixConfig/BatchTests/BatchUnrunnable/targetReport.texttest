@@ -1,0 +1,97 @@
+geoff
+0,0,0,9,2,0,0,0,0,0,0
+040902 DIP reconnectrun.unix : 11 tests : 9 unrunnable, 2 FAILED
+
+The following tests were unrunnable : 
+In DIP test-suite TargetApp:
+  In DIP test-suite Game9952:
+    - DIP test-case S01.99
+    - DIP test-case A01   
+    - DIP test-case S02   
+    - DIP test-case A02   
+    - DIP test-case S03   
+    - DIP test-case S04   
+    - DIP test-case S05   
+    - DIP test-case A05   
+  In DIP test-suite npstIII:
+    In DIP test-suite Game47:
+      - DIP test-case S01
+
+The following tests FAILED : 
+In DIP test-suite TargetApp:
+  In DIP test-suite Game9952:
+    - DIP test-case A03   
+    - DIP test-case A04   
+
+
+Exception information for the tests that did not run follows...
+--------------------------------------------------------
+TEST UNRUNNABLE -> DIP test-case S01.99(under Game9952/S01.99)
+No test results found to reconnect to
+--------------------------------------------------------
+TEST UNRUNNABLE -> DIP test-case A01   (under Game9952/A01)
+No test results found to reconnect to
+--------------------------------------------------------
+TEST UNRUNNABLE -> DIP test-case S02   (under Game9952/S02)
+No test results found to reconnect to
+--------------------------------------------------------
+TEST UNRUNNABLE -> DIP test-case A02   (under Game9952/A02)
+No output files at all produced, presuming problems running test
+--------------------------------------------------------
+TEST UNRUNNABLE -> DIP test-case S03   (under Game9952/S03)
+No test results found to reconnect to
+--------------------------------------------------------
+TEST UNRUNNABLE -> DIP test-case S04   (under Game9952/S04)
+No test results found to reconnect to
+--------------------------------------------------------
+TEST UNRUNNABLE -> DIP test-case S05   (under Game9952/S05)
+No test results found to reconnect to
+--------------------------------------------------------
+TEST UNRUNNABLE -> DIP test-case A05   (under Game9952/A05)
+No test results found to reconnect to
+--------------------------------------------------------
+TEST UNRUNNABLE -> DIP test-case S01(under npstIII/Game47/S01)
+No test results found to reconnect to
+
+Failure information for the tests that failed follows...
+--------------------------------------------------------
+TEST FAILED : -> DIP test-case A03   (under Game9952/A03)
+------------------ Differences in output --------------------
+28c28
+< Italy:   Tyn CONVOY Tun -> Rom     (*dislodged*)
+---
+> Italy:   Tyn CONVOY Tun -> Rom     (*was dislodged*)
+--------------------------------------------------------
+TEST FAILED : -> DIP test-case A04   (under Game9952/A04)
+------------------ Differences in output --------------------
+1,21c1,19
+< Austria: Eas -> Smy                (*bounce*)
+< Austria: Bul -> Con                (*works*)
+< Austria: Ser -> Rum                (*works*)
+< Austria: Alb -> Gre                (*works*)
+< Austria: Adr -> Alb                (*works*)
+< Austria: Tri -> Vie                (*works*)
+< Austria: Tyr -> Mun                (*works*)
+< 
+< England: Nwy -> StP                (*bounce*)
+< England: Nth HOLD                  (*works*)
+< England: Den SUPPORT Kie HOLD      (*works*)
+< England: Swe HOLD                  (*works*)
+< England: Ska SUPPORT Swe HOLD      (*works*)
+< England: Nrg -> Bar                (*works*)
+< England: Kie SUPPORT Ber HOLD      (*works*)
+< 
+< France:  Ber SUPPORT Mun HOLD      (*cut*)
+< France:  Mun SUPPORT Ber HOLD      (*dislodged*)
+< France:  Bur SUPPORT Mun HOLD      (*works*)
+< France:  Mar -> Pie                (*works*)
+< France:  Ion -> Adr                (*works*)
+---
+> Austria: Tri -> Tyr                (*works*)
+> Austria: Vie SUPPORT Tri -> Tyr    (*works*)
+> Austria: Adr -> Ven                (*bounce*)
+> Austria: Gre SUPPORT Bul HOLD      (*works*)
+> Austria: Bul SUPPORT Con HOLD      (*works*)
+> Austria: Smy SUPPORT Con HOLD      (*cut*)
+> 
+
