@@ -1,0 +1,77 @@
+ Rule _builtin.MasterRule left as default on
+ Rule min_connection_time_rule left as default on
+ Rule max_block_time left as default on
+ Parameter crew_table_name set to CREW_F_010219
+ Parameter sc_treat_ap_as_ah left as default TRUE
+ Parameter break_cost_2 set to 1001
+ Parameter break_cost_3 set to 101
+ Parameter break_cost_unit left as default 1
+Unknown parameter: map_parameter_set_name: ignored!
+Unknown parameter: map_parameter_set_manual_changes: ignored!
+Unknown parameter: map_filter_crr_block_time: ignored!
+Unknown parameter: map_filter_rtd_block_time: ignored!
+Unknown parameter: map_filter_crr_num_of_all_legs: ignored!
+Unknown parameter: map_filter_rtd_num_of_all_legs: ignored!
+Unknown parameter: map_filter_crr_num_of_od_legs: ignored!
+Unknown parameter: map_filter_rtd_num_of_od_legs: ignored!
+Unknown parameter: map_filter_crr_num_of_ac_changes: ignored!
+Unknown parameter: map_filter_rtd_num_of_ac_changes: ignored!
+Unknown parameter: map_show_leg_info_1: ignored!
+Unknown parameter: map_show_leg_info_2: ignored!
+Unknown parameter: map_show_leg_info_3: ignored!
+Unknown parameter: map_show_leg_info_4: ignored!
+Unknown parameter: map_show_leg_info_5: ignored!
+Unknown parameter: map_show_crr_info_1: ignored!
+Unknown parameter: map_show_crr_info_2: ignored!
+Unknown parameter: map_show_crr_info_3: ignored!
+Unknown parameter: map_show_crr_info_4: ignored!
+Unknown parameter: map_show_crr_info_5: ignored!
+Unknown parameter: n_fp: ignored!
+Unknown parameter: n_fc: ignored!
+Unknown parameter: n_fs: ignored!
+Unknown parameter: n_tr: ignored!
+Unknown parameter: n_fi: ignored!
+Unknown parameter: n_ap: ignored!
+Unknown parameter: n_ai: ignored!
+Unknown parameter: n_ah: ignored!
+ Parameter cost_of_unassigned_trip set to 100
+ Parameter cost_weight left as default 1
+ Parameter switch_pos_date left as default 10APR01 0:00
+ Parameter max_block_time_roster set to 80:00
+ Parameter max_block_time_solution set to 800:00
+ Parameter i left as default 1
+ Parameter j set to 10:00
+ Parameter k left as default 02JAN01 0:00
+ Parameter min_connection_time left as default 0:01
+ Parameter matador.map_cost_of_roster left as default matador_cost_of_roster
+ Parameter matador.target_generated_rosters_per_crew set to 10000
+ Parameter matador.unassigned_crew_cost_default left as default 1000
+ Parameter matador.map_crew_assigned_position left as default crew_assigned_position
+ Parameter matador.free_crew_position left as default 6
+ Parameter matador.use_roster_initial_method left as default TRUE
+ Parameter matador.roster_initial_algorithm set to 3
+Unknown parameter: matador.roster_initial_solve_crew_individually: ignored!
+ Parameter matador.use_shift_improve_method set to TRUE
+ Parameter matador.shift_improve_number_of_sweeps set to 1
+ Parameter matador.shift_improve_only_assign_in_time_window set to TRUE
+ Parameter matador.generator_search_wop_gap left as default 2
+ Parameter matador.generator_search_same_wop_connections set to 2
+ Parameter matador.generator_search_next_wop_connections set to 0
+ Parameter matador.dfs_generator_search_follow_solution set to FALSE
+ Parameter matador.permit_violation_of_hard_qualifications_on_locked_input left as default TRUE
+ Parameter matador.map_trip_qualification_1 left as default lhs_1 < rhs_1
+ Parameter matador.map_trip_qualification_2 set to lhs_2 < rhs_2 break_cost_2
+ Parameter matador.map_trip_qualification_3 set to lhs_3 < rhs_3
+Unknown parameter: matador.map_trip_qualification_4: ignored!
+Unknown parameter: matador.map_trip_qualification_5: ignored!
+ Parameter matador.map_leg_qualification_1 set to 
+ Parameter matador.map_leg_qualification_2 set to 
+ Parameter matador.map_leg_qualification_3 set to 
+Unknown parameter: matador.map_leg_qualification_4: ignored!
+Unknown parameter: matador.map_leg_qualification_5: ignored!
+ Parameter matador.ip_solver set to 1
+ Parameter quals.map_global_constraint_1 set to block_time_roster < max_block_time_solution
+ Parameter quals.map_global_constraint_2 set to block_time_total < max_block_time_solution break_cost_2 j
+ Set special_airport_set_1 switched to TXL
+ Set special_airport_set_2 switched to KSD
+ Set special_airport_set_3 switched to AAR

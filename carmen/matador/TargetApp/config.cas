@@ -1,0 +1,149 @@
+# This file is used by runtests, and specifies the binary, 
+# default checkout, users, and run-dependent text for Crew Assignment (CAS) 
+
+# ---------------- Values required by the framework -------------------
+
+# Python configuration module to use. The configuration "default" is always available
+# Otherwise, provide any module you like that implements a getConfig(optionMap) method
+config_module:matador
+display_module:carmen
+
+# Binary (relative to checkout) to be used
+binary:${CARMSYS}/bin/MATADORbatch.sh
+
+# Check-out to use if no -c option is specified.
+# This will look globally if it starts with a /, locally 
+# under the same root as the Testing directory otherwise
+checkout_location:~/work/
+default_checkout:master
+
+# run-dependent text for each file produced
+# Please add text to remove from comparison files
+# separated from the file concerned by a semicolon
+# The last is a test that differs in master and carmen_9 due to leg output changing for Picador
+errors:Error! Pid
+errors:locale
+errors:cpu time
+errors:ap_getinfo_util
+errors:No recorder available
+errors:TERM environment variable
+errors:File "/users
+errors:ImportError: from module
+errors:CARMSYS
+errors:is submitted to queue
+output:Cpu time
+output:cpu time
+output:Date/Time
+output:Host machine
+output:Time to solve
+output:Time spent
+output:clock time
+output:locale
+output:Matador library date
+output:Generation time
+output:Generation speed
+output:Optimization time
+output:library version
+output:rule-set at
+output:CARMSYS
+output:CARMTMP
+output:CARMUSR
+output:Using Filer to load SubPlan
+output:SUBPLAN
+output:Subplan
+output:ARGS
+output:Written Solution to
+output:PERSONAL_AZ_CONFIG
+
+# Full name. If not present, capitalised extension is used. Must be one word.
+full_name:Matador
+
+log_file:output
+
+# Version to start as well as this one
+# Not for these tests, this is generic functionality...
+#extra_version:parallel
+
+# Versions which exist for environmental or other purposes and should not be offered as save options
+unsaveable_version:small
+unsaveable_version:i386_linux
+unsaveable_version:master
+unsaveable_version:rave
+
+# Text to be regarded as an internal error if it occurs in the log_file
+internal_error_text:No MIP solution exists
+internal_error_text:Cannot execute script
+
+# Collect the solution
+collate_file:best_solution->solution
+
+link_test_path:secret_parameters.etab
+
+# ---------------- Values required by the performance module -------------------
+
+# Performance machines. Performance is only compared if these machines are used for test execution
+performance_test_machine:onepusu
+performance_test_machine:morafenobe
+performance_test_machine:tireeis
+performance_test_machine:fougamou
+performance_test_machine:fivefinger
+performance_test_machine:singleton
+performance_test_machine:severodoneck
+performance_test_machine:easthartford
+performance_test_machine:ninilchik
+performance_test_machine:tilin
+performance_test_machine:elfincove
+performance_test_machine:taylor
+performance_test_machine:tamchackett
+performance_test_machine:forster
+performance_test_machine:frankfort
+
+# How much variation in performance do we allow, in percentage of total runtime? 
+cputime_variation_%:10
+
+# How long (in seconds) must a test be before performance comparison is used?
+minimum_cputime_for_test:10
+
+# How to find the memory usage...
+#string_before_memory:Memory consumption:
+
+# ---------------- Values required by the Carmen module -------------------
+
+# What needs to be built by the rule compiler
+rave_name:matador
+
+# Things to build
+build_link:Optimization/Matador/Program
+build_product:Optimization/Matador
+build_codebase:Optimization
+
+# The architecture that runs without a version ID. If you run on other architecture, you will
+# get given version ${ARCH}$v, where $v was the version specified, if any...
+default_architecture:i386_linux
+
+# ---------------- Values needed to run in batch mode -------------------
+
+# For each "special batch" run, specify recipients, time limit, architectures and versions 
+# Not present means $USER as recipient, no time limit, all versions and all architectures accepted
+nightjob_recipients:carmen.matadortests,johana
+nightjob_timelimit:180
+nightjob_version:parallel
+nightjob_version:master
+nightjob_version:9
+nightjob_version:10
+nightjob_version:sparc
+nightjob_version:i386_linux
+nightjob_version:parisc_2_0
+nightjob_version:powerpc
+nightjob_use_collection:true
+
+wkendjob_recipients:carmen.matadortests,johana
+wkendjob_version:master
+wkendjob_version:parallel
+wkendjob_version:9
+wkendjob_version:10
+wkendjob_version:sparc
+wkendjob_version:i386_linux
+wkendjob_version:parisc_2_0
+wkendjob_version:powerpc
+wkendjob_use_collection:true
