@@ -109,7 +109,7 @@ codebase:Optimization
 # For each "special batch" run, specify recipients, time limit, architectures and versions 
 # Not present means $USER as recipient, no time limit, all versions and all architectures accepted
 [batch_recipients]
-default:carmen.matadortests
+default:carmen.raveopt_tests
 local:$USER
 
 [batch_version]
