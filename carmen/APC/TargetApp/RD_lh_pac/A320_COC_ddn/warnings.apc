@@ -1,0 +1,53 @@
+
+--- WARNING MESSAGES ---
+Illegal rotations in input: 24 illegal rotations.
+--- First 2 illegal rotations ---
+Abbreviations: OD on duty, DH deadhead, AC-CH aircraft change.
+
+------------  rotation number 108 --------------
+block time 6:50, 2 days, block time per day 3:25
+total duty 14:40, apc-cost 4585, homebase airport: MUC,  Incomplete,  1/0/1/0/0/0/0/0/0
+duty period 1: duty length 7:05, block time 3:35
+OD       [LH1295] MUC 14.00 Mon 20021223 15.10 Mon 20021223 TXL block 70 fid 54147 sp0  
+OD       [LH1632] TXL 15.50 Mon 20021223 17.00 Mon 20021223 MUC block 70 fid 54148 sp0  
+OD       [LH 914] MUC 18.10 Mon 20021223 19.25 Mon 20021223 HAJ block 75 fid 54149 sp0  
+Rest time 15:45
+duty period 2: duty length 7:35, block time 3:15
+OD       [LH4638] FRA 12.40 Tue 20021224 14.20 Tue 20021224 LHR block 100 fid 54150 sp0  
+OD       [LH4637] LHR 17.10 Tue 20021224 18.45 Tue 20021224 FRA block 95 fid 54151 sp0  
+Rule: PLAUS  5. : Schicht Verbindung City ( ohne CoTerminal )
+last(_topmodule.leg(_topmodule.rtd))[HAJ] =
+next(_topmodule.rtd(_topmodule.crr))[FRA]
+Actual: HAJ  Limit: FRA Overshoot: 0
+
+------------  rotation number 169 --------------
+block time 15:15, 5 days, block time per day 3:03
+total duty 31:35, apc-cost 17100, homebase airport: MUC,  Incomplete,  1/0/1/0/0/0/0/0/0
+duty period 1: duty length 7:35, block time 3:55
+OD       [LH 961] MUC  8.00 Sun 20021229  9.20 Sun 20021229 HAM block 80 fid 54381 sp0  
+OD       [LH1010] HAM 10.20 Sun 20021229 11.35 Sun 20021229 MUC block 75 fid 54382 sp0  
+OD       [LH 937] MUC 12.35 Sun 20021229 13.55 Sun 20021229 HAM block 80 fid 54383 sp0  
+Rest time 14:40
+duty period 2: duty length 4:45, block time 2:30
+OD       [LH 964] HAM  6.05 Mon 20021230  7.20 Mon 20021230 MUC block 75 fid 54384 sp0  
+OD AC-CH [LH 897] MUC  8.05 Mon 20021230  9.20 Mon 20021230 DUS block 75 fid 54385 sp0  
+Rest time 18:30
+duty period 3: duty length 9:20, block time 4:15
+OD       [LH  69] DUS  5.20 Tue 20021231  6.20 Tue 20021231 FRA block 60 fid 54386 sp0  
+OD       [LH3630] FRA  8.00 Tue 20021231  8.55 Tue 20021231 ZRH block 55 fid 54387 sp0  
+OD       [LH3633] ZRH  9.45 Tue 20021231 10.55 Tue 20021231 FRA block 70 fid 54388 sp0  
+OD AC-CH [LH4114] FRA 12.00 Tue 20021231 13.10 Tue 20021231 CDG block 70 fid 54389 sp0  
+Rest time 15:10
+duty period 4: duty length 4:50, block time 2:10
+OD       [LH4077] CDG  5.50 Wed 20030101  7.20 Wed 20030101 FRA block 90 fid 54390 sp0  
+OD AC-CH [LH  14] FRA  8.30 Wed 20030101  9.10 Wed 20030101 STR block 40 fid 54391 sp0  
+Rest time 18:45
+duty period 5: duty length 5:05, block time 2:25
+OD       [LH  25] STR  5.25 Thu 20030102  6.20 Thu 20030102 FRA block 55 fid 54392 sp0 L
+OD       [LH 623] FRA  8.00 Thu 20030102  9.30 Thu 20030102 FRA block 90 fid 54392 sp0  
+Rule: QLT S/R  10.P: max Umlauflaenge (ET)
+%Einsatztage CAB, COC oder Kombination%[5] <=
+_topmodule.%max_calendar_days_sr_qlt%[4]
+Actual: 5  Limit: 4 Overshoot: 1
+--- End illegal rotations ---
+Total run time limit (360 minutes) for column generator exceeded

@@ -1,0 +1,44 @@
+
+--- WARNING MESSAGES ---
+Illegal rotations in input: 24 illegal rotations.
+--- First 2 illegal rotations ---
+Abbreviations: OD on duty, DH deadhead, AC-CH aircraft change.
+
+------------  rotation number 13 --------------
+block time 5:50, 2 days, block time per day 2:55
+total duty 12:00, apc-cost 5435, homebase airport: FRA,  Complete,  1/0/1/0/0/0/0/0/0
+duty period 1: duty length 9:45, block time 5:50
+OD       [LH4284] FRA 12.10 Wed 20030108 14.05 Wed 20030108 BCN block 115 fid 53748 sp0  
+OD       [LH4261] BCN 14.55 Wed 20030108 17.10 Wed 20030108 FRA block 135 fid 53749 sp0  
+OD       [LH4510] FRA 18.35 Wed 20030108 20.15 Wed 20030108 LHR block 100 fid 53750 sp0  
+Rest time 11:45
+duty period 2: duty length 2:15, block time 0:00
+DH       [LH4615] LHR  9.10 Thu 20030109 10.45 Thu 20030109 FRA block 95 fid 8619 sp0  
+Rule: MTV-COC: RZ nach Schicht (unterwegs)
+%RZ Cockpit%[11:45] >= %Minimum%[12:00]
+Actual: 11:45  Limit: 12:00 Overshoot: 0:15
+
+------------  rotation number 54 --------------
+block time 8:25, 3 days, block time per day 2:48
+total duty 21:30, apc-cost 8740, homebase airport: FRA,  Complete,  1/0/1/0/0/0/0/0/0
+duty period 1: duty length 7:20, block time 3:50
+OD       [LH3798] FRA 16.10 Tue 20030107 17.20 Tue 20030107 LIN block 70 fid 53872 sp0  
+OD       [LH3823] LIN 18.05 Tue 20030107 19.35 Tue 20030107 FRA block 90 fid 53873 sp0  
+OD AC-CH [LH4074] FRA 20.40 Tue 20030107 21.50 Tue 20030107 CDG block 70 fid 53874 sp0  
+Rest time 13:45
+duty period 2: duty length 11:10, block time 4:35
+DH       [LH4083] CDG 12.45 Wed 20030108 14.15 Wed 20030108 FRA block 90 fid 26380 sp0  
+OD       [LH3748] FRA 15.40 Wed 20030108 16.45 Wed 20030108 GVA block 65 fid 53875 sp0  
+OD       [LH3719] GVA 17.30 Wed 20030108 18.55 Wed 20030108 FRA block 85 fid 53876 sp0  
+OD AC-CH [LH3058] FRA 20.40 Wed 20030108 22.45 Wed 20030108 ARN block 125 fid 53877 sp0  
+Rest time 11:55
+duty period 3: duty length 3:00, block time 0:00
+DH       [LH3063] ARN 11.50 Thu 20030109 14.10 Thu 20030109 FRA block 140 fid 21198 sp0  
+Rule: QLT MTV 17.P:   wenn AZ >= 'para n1', dann muss nachfolgende RZ > 'para n2' sein
+%QLT MTV: gewaehrte RZ%[11:55] > _topmodule.%wt_rt_special_qlt_mtv%[11:59]
+Actual: 11:55  Limit: 11:59 Overshoot: 0:04
+Rule: MTV-COC: RZ nach Schicht (unterwegs)
+%RZ Cockpit%[11:55] >= %Minimum%[12:00]
+Actual: 11:55  Limit: 12:00 Overshoot: 0:05
+--- End illegal rotations ---
+Total run time limit (360 minutes) for column generator exceeded
