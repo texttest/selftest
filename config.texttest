@@ -7,6 +7,7 @@ default_checkout:master
 
 # Checkout depends on the local machine, and the architecture
 output:checkout
+catalogue:TargetApp
 errors:RENDER
 errors:\.py
 errors:CountTest.__del__
@@ -16,9 +17,15 @@ full_name:TextTest
 
 # These tests cannot be run in parallel using LSF, but let's use UNIX features
 # like batch mode, anyway.
-config_module:unixConfig
+config_module:carmen
 
 log_file:output
+
+# File comparison details. Relative paths are copied from the application
+copy_test_path:TargetApp
+copy_test_path:wibble.py
+copy_test_path:gui_script
+create_catalogues:true
 
 # ---------------- Values needed to run in batch mode -------------------
 
