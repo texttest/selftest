@@ -1,0 +1,80 @@
+# ---------------- Values required by the framework -------------------
+
+config_module:flamenco
+
+# Binary (relative to checkout) to be used
+# script will replace ARCHITECTURE with the contents of the actual arch (sparc etc) 
+# and invoke $CARMSYS/CONFIG
+binary:Data/Foundation/internal/ARCHITECTURE/TestFlmConnect
+
+# test architecture
+# all other architectures are searched for versions
+default_architecture:i386_linux
+
+# Check-out to use if no -c option is specified.
+# This will look globally if it starts with a /, locally 
+# under the same root as the Testing directory otherwise
+checkout_location:/carm
+default_checkout:dev/flamenco
+
+write_tmp_files:TargetApp
+#copy_test_path:TargetApp
+
+# run-dependent text for each file produced
+# Please add text to remove from comparison files
+output:registerImplementation
+output:Root.etab
+output:load CRS Root file
+errors:dbdriver
+
+# Determines file to be used for information extraction, and presentation by tkdiff instead of diff
+log_file:output
+
+#text to generate extra warnings:
+#cppunit test completely failed
+internal_error_text:!!!FAILURES!!!
+#script messages: couldnt find config file or binary
+internal_error_text:binary not found
+internal_error_text:config script not found
+
+performance_test_machine:none
+# default lsf requirements: running in master
+lsfres:master
+
+# ---------------- Values required by the Carmen module -------------------
+
+
+# For each "special batch" run, specify recipients and time limit. 
+# Not present means $USER as recipients and no time limit
+# nightjob : daily after build, just verify connect
+nightjob_recipients:thekla
+#nightjob_recipients:none
+#run on versions
+nightjob_version:master
+nightjob_version:DESCARTES.sparc
+#run on architectures
+nightjob_version:sparc
+nightjob_version:parisc_2_0
+nightjob_version:i386_linux
+
+#wkendjob_recipients:thekla
+wkendjob_recipients:none
+wkendjob_version:master
+wkendjob_version:DESCARTES.sparc
+#run on architectures
+wkendjob_version:sparc
+wkendjob_version:parisc_2_0
+wkendjob_version:i386_linux
+
+#run tests before checkin
+checkin_version:master
+checkin_version:DESCARTES.sparc
+#DEV_FLAMENCO with std-CARMSYS and flm-CARMSYS
+checkin_version:flmstd
+checkin_version:flmflm
+#run on architectures
+checkin_version:sparc
+checkin_version:parisc_2_0
+checkin_version:i386_linux
+
+

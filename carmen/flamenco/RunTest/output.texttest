@@ -1,0 +1,31 @@
+Using Application RUNTEST, checkout /users/thekla/work/master
+Submitting RUNTEST test-suite TargetApp to LSF queue short_i386_linux_RHEL
+  Submitting RUNTEST test-suite RunTest_tests to LSF queue short_i386_linux_RHEL
+    Submitting RUNTEST test-suite good_user to LSF queue short_i386_linux_RHEL
+      Submitting RUNTEST test-case GoodApp  to LSF queue short_i386_linux_RHEL
+      Submitting RUNTEST test-case NoConfig to LSF queue short_i386_linux_RHEL
+      Submitting RUNTEST test-case BadApp   to LSF queue short_i386_linux_RHEL
+      Submitting RUNTEST test-case Failure  to LSF queue short_i386_linux_RHEL
+    Submitting RUNTEST test-suite bad_user to LSF queue short_i386_linux_RHEL
+      Submitting RUNTEST test-case Default to LSF queue short_i386_linux_RHEL
+Comparing differences for RUNTEST test-suite TargetApp
+  Comparing differences for RUNTEST test-suite RunTest_tests
+    Comparing differences for RUNTEST test-suite good_user
+      Waiting for completion of RUNTEST test-case GoodApp ...
+      Comparing differences for RUNTEST test-case GoodApp  (on errors.RunTest,output.RunTest)
+      RUNTEST test-case GoodApp  FAILED on mbahiakro : differences in errors,output
+      View details(v), Save(s) or continue(any other key)?
+      Waiting for completion of RUNTEST test-case NoConfig...
+      Comparing differences for RUNTEST test-case NoConfig (on errors.RunTest,output.RunTest)
+      RUNTEST test-case NoConfig FAILED on mangalore : differences in errors,output
+      View details(v), Save(s) or continue(any other key)?
+      Comparing differences for RUNTEST test-case BadApp   (on errors.RunTest,output.RunTest)
+      RUNTEST test-case BadApp   FAILED on bigbell : differences in errors,output
+      View details(v), Save(s) or continue(any other key)?
+      Comparing differences for RUNTEST test-case Failure  (on errors.RunTest,output.RunTest)
+      RUNTEST test-case Failure  FAILED on burlington : differences in errors,output
+      View details(v), Save(s) or continue(any other key)?
+    Comparing differences for RUNTEST test-suite bad_user
+      Comparing differences for RUNTEST test-case Default (on errors.RunTest,output.RunTest)
+      RUNTEST test-case Default FAILED on butaritari : differences in errors,output
+      View details(v), Save(s) or continue(any other key)?

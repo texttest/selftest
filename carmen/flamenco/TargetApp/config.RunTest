@@ -1,0 +1,39 @@
+# ---------------- Values required by the framework -------------------
+
+# Python configuration module to use. The configuration "default" is always available
+# Otherwise, provide any module you like that implements a getConfig(optionMap) method
+config_module:flamenco
+
+write_tmp_files:TargetApp
+#copy_test_path:TargetApp
+
+# Binary (relative to checkout) to be used
+binary:Testing/Automatic/texttest/carmen/flamenco/TargetApp/RunTest
+
+# test architecture
+# all other architectures are searched for versions
+default_architecture:i386_linux
+
+# Check-out to use if no -c option is specified.
+# This will look globally if it starts with a /, locally 
+# under the same root as the Testing directory otherwise
+checkout_location:~/work/
+default_checkout:master
+
+# run-dependent text for each file produced
+# Please add text to remove from comparison files
+#output:
+#errors:.*
+
+# Determines file to be used for information extraction, and presentation by tkdiff instead of diff
+log_file:output
+
+#text to generate extra warnings:
+#cppunit test completely failed
+internal_error_text:!!!FAILURES!!!
+#script messages: couldnt find config file or binary
+internal_error_text:binary not found
+internal_error_text:binary not found
+internal_error_text:config script not found
+internal_error_text:Serious error in CONFIG
+
