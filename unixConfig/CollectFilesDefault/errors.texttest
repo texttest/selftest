@@ -1,0 +1,13 @@
+Description of exception thrown :
+Traceback (most recent call last):
+  File "/users/geoff/work/master/Testing/TextTest/texttest.py", line 1118, in setUpApplications
+    action.setUpApplication(self.testSuite.app)
+  File "/users/geoff/work/master/Testing/TextTest/batch.py", line 297, in setUpApplication
+    app.addConfigEntry("collection", "false", "batch_use_collection")
+  File "/users/geoff/work/master/Testing/TextTest/texttest.py", line 723, in addConfigEntry
+    self.configDir.addEntry(key, value, sectionName)
+  File "/users/geoff/work/master/Testing/TextTest/texttest.py", line 977, in addEntry
+    self.currDict = self[sectionName]
+  File "/users/geoff/work/master/Testing/TextTest/ndict.py", line 57, in __getitem__
+    return self.dict[key]
+KeyError: batch_use_collection
