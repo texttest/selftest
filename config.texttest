@@ -10,6 +10,7 @@ output:checkout
 output:BadApplication
 output:wait for
 output:Reconnecting to test
+output:Faking start
 catalogue:.nfs
 catalogue:subdirectory TargetApp/dip
 errors:RENDER
@@ -31,6 +32,8 @@ copy_test_path:TargetApp
 copy_test_path:wibble.py
 copy_test_path:gui_script
 copy_test_path:config
+
+# Tell it that we want to track what files are created
 create_catalogues:true
 
 # ---------------- Values needed to run in batch mode -------------------
