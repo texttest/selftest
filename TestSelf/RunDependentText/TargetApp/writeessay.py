@@ -12,8 +12,8 @@ print "Repeating     3     3     3     3" + os.linesep
 
 print "Sometimes between markers, starting section"
 print "Rant"
-print "Rave"
-print "Gibber"
+print "Rave Horribly"
+print "Gibber Horribly"
 print "End Section Here" + os.linesep
 
 print "This should always go"
