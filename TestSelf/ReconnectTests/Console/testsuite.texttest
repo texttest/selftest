@@ -1,0 +1,15 @@
+# Test for reconnect functionality
+SuccessTest
+
+# Check we can reconnect and recalculate the temporary files
+RecomputeFileFilters
+
+# Test that reconnecting to non-found tests and tests with strange result files works
+StrangeResultFiles
+
+# Check we give sensible errors if we try to reconnect fast when there isn't enough info to do so
+NoStateFile
+
+# Check that reconnection works together with linking test paths, without leaking directories
+LinkTestPath
+LinkTestPathRecompute
