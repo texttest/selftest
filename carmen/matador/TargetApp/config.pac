@@ -100,11 +100,11 @@ default_architecture:i386_linux
 
 # Things to build
 [build_targets]
-link:Optimization/Picador/Program
-product:Optimization/Picador
-codebase:Optimization
-rave:Rules_and_Reports
-rave:Optimization/Picador/Program
+link:${TEXTTEST_CHECKOUT}/Optimization/Picador/Program
+product:${TEXTTEST_CHECKOUT}/Optimization/Picador
+codebase:${TEXTTEST_CHECKOUT}/Optimization
+rave:${TEXTTEST_CHECKOUT}/Rules_and_Reports
+rave:${TEXTTEST_CHECKOUT}/Optimization/Picador/Program
 
 # ---------------- Values needed to run in batch mode -------------------
 

@@ -103,11 +103,11 @@ default_architecture:i386_linux
 
 # Things to build
 [build_targets]
-:Optimization/APC
-sc:Optimization/SCSolver
-sc:Optimization/APC
-rave:Rules_and_Reports
-rave:Optimization/APC
+:${TEXTTEST_CHECKOUT}/Optimization/APC
+sc:${TEXTTEST_CHECKOUT}/Optimization/SCSolver
+sc:${TEXTTEST_CHECKOUT}/Optimization/APC
+rave:${TEXTTEST_CHECKOUT}/Rules_and_Reports
+rave:${TEXTTEST_CHECKOUT}/Optimization/APC
 
 # For each "special batch" run, specify recipients, time limit, architectures and versions 
 # Not present means $USER as recipient, no time limit, all versions and all architectures accepted
