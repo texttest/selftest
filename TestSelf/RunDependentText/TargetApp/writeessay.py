@@ -14,6 +14,6 @@ print "Sometimes between markers, starting section"
 print "Rant"
 print "Rave"
 print "Gibber"
-print "End Section" + os.linesep
+print "End Section Here" + os.linesep
 
 print "This should always go"
