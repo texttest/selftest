@@ -26,6 +26,9 @@ BadRaveRun
 BuildCode
 BuildFails
 
+# Check that failures in one application cancel others
+RaveBuildFails
+
 # Check that the raveparameters file works correctly
 RaveParameterOverride
 # Test to make sure we can run 2 suites without crashing...
@@ -42,3 +45,4 @@ KillRuleCompilation
 
 # Check that sensible things happen if the nightjob is terminated while rave compilation is happening
 NightjobTerminateRave
+

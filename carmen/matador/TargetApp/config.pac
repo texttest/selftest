@@ -103,6 +103,8 @@ default_architecture:i386_linux
 link:Optimization/Picador/Program
 product:Optimization/Picador
 codebase:Optimization
+rave:Rules_and_Reports
+rave:Optimization/Picador/Program
 
 # ---------------- Values needed to run in batch mode -------------------
 
