@@ -10,6 +10,7 @@ if len(sys.argv) == 1:
         time.sleep(1)
         print "Killing child process with signal 11"
         os.system("kill -11 " + str(processId))
+        os.waitpid(processId, 0)
 else:
     # Produce fake core
     os.system("which grep > core")
