@@ -1,18 +1,16 @@
 # Path to the binary under test
 binary:${SOURCE_PATH}/texttest.py
 
-# Run-dependent text. TextTest talks about its checkout, which 
-# depends on the local machine and path, so remove this. Also remove Python
-# errors which talk about absolute filenames to source code. etc.
 [run_dependent_text]
-output:checkout
-output:BadApplication
-output:wait for
-output:Reconnecting to test
+output:checkout{WORD -1}
+output:BadApplication{WORD -1}
+output:Reconnecting to test results{WORD -1}
 output:Faking start
-output:FAILED on
-targetReport:FAILED on
-targetReport:tests ran
+output:not a core dump{WORD 1}
+output:FAILED on{WORD 6}
+output:still in use
+targetReport:FAILED on{WORD 4}
+targetReport:tests ran{WORD 1}
 targetReport:{LINE 1}
 catalogue:.nfs
 catalogue:subdirectory TargetApp/dip
@@ -20,7 +18,6 @@ catalogue:subdirectory TargetApp/core
 errors:RENDER
 errors:\.py
 errors:CountTest.__del__
-errors:.carmen.se:
 [end]
 
 # Official name of the application
@@ -46,6 +43,12 @@ targetReport:TargetApp/batchreport*
 
 # Programs for viewing files
 view_program:emacs
+
+# Run the LSF tests too...
+extra_version:lsf
+
+# But don't save them as a separate version
+unsaveable_version:lsf
 
 # Which configuration to use. 3 are provided: any number can be written by the user.
 # Corresponds to the name of a python module containing a configuration to be loaded.
