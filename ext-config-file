@@ -10,12 +10,29 @@ default_checkout:.
 
 # Run-dependent text. TextTest talks about its checkout, which 
 # depends on the local machine and path, so remove this. Also remove Python
-# errors which talk about absolute filenames to source code
+# errors which talk about absolute filenames to source code. etc.
 output:checkout
+output:BadApplication
+output:wait for
+output:Reconnecting to test
+catalogue:.nfs
+catalogue:subdirectory TargetApp/dip
+errors:RENDER
 errors:\.py
+errors:CountTest.__del__
+errors:.carmen.se:
 
 # Official name of the application
 full_name:TextTest
+
+# List of files to copy from the test directory to the write directory
+copy_test_path:TargetApp
+copy_test_path:wibble.py
+copy_test_path:gui_script
+copy_test_path:config
+
+# Tell it that we want to track what files are created
+create_catalogues:true
 
 # Which configuration to use. 3 are provided: any number can be written by the user.
 # Corresponds to the name of a python module containing a configuration to be loaded.
