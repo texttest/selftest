@@ -31,3 +31,9 @@ BadResourceUsage
 
 # Check that ^C kills LSF jobs
 KillTest
+
+# Make sure we can test applications that need more than one CPU...
+ParallelTestApp
+
+# Make sure we don't compare performance when only one parallel machine is a performance machine
+ParallelNoPerfMatch

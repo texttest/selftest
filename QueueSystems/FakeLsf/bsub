@@ -1,0 +1,8 @@
+#!/usr/bin/env python
+
+import os, getopt, sys, string
+os.environ["LSB_HOSTS"] = "fake_machine1.carmen.se:fake_machine2.carmen.se"
+print "Called fake LSF with arguments", string.join(sys.argv[1:-1])
+print "Job <1> is submitted to queue <fake_machine_queue>."
+# Run the slave locally, but pretend we're in parallel...
+os.system(sys.argv[-1])
