@@ -1,0 +1,12 @@
+--> CRASHES : bad!
+Description of exception thrown :
+Traceback (most recent call last):
+  File "/users/geoff/work/master/Testing/TextTest/texttest.py", line 1028, in performActions
+    suite.tearDownFor(action)
+  File "/users/geoff/work/master/Testing/TextTest/texttest.py", line 321, in tearDownFor
+    action.tearDownSuite(self)
+  File "/users/geoff/work/master/Testing/TextTest/optimization.py", line 183, in tearDownSuite
+    self.unreadRaveParameters()
+  File "/users/geoff/work/master/Testing/TextTest/optimization.py", line 234, in unreadRaveParameters
+    self.raveParameters.pop()
+IndexError: pop from empty list
