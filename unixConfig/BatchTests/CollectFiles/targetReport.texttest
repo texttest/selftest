@@ -1,10 +1,38 @@
 geoff
 0,0,0,0,0,0,0,0,0,0
-040204 FAKE Test Suite : 23 tests ran : 5 had internal errors, 1 CRASHED, 6 FAILED
+040206 FAKE Test Suite : 23 tests ran : 5 had internal errors, 1 CRASHED, 6 FAILED
 
+040107 CORE Test Suite : 1 tests ran : 1 CRASHED
 040128 DIP Test Suite (version unix) : 11 tests ran : 5 FAILED
 040128 DIP Test Suite (version unix.interr) : 11 tests ran : 5 had internal errors, 1 FAILED
+
+================================================================================
+
 040107 CORE Test Suite : 1 tests ran : 1 CRASHED
+
+The following tests CRASHED : 
+In CORE test-suite TargetApp:
+  - CORE test-case DumpCore
+
+
+Crash information for the tests that crashed follows...
+--------------------------------------------------------
+TEST CRASHED -> CORE test-case DumpCore(under DumpCore)
+Program terminated with signal 11, Segmentation fault.
+Stack trace from gdb :
+_dl_sysinfo_int80 
+___newselect_nocancel 
+floatsleep 
+time_sleep 
+PyCFunction_Call 
+PyEval_EvalCode 
+PyEval_EvalCodeEx 
+PyEval_EvalCode 
+PyRun_FileExFlags 
+PyRun_SimpleFileExFlags 
+PyRun_AnyFileExFlags 
+Py_Main 
+main 
 
 ================================================================================
 
@@ -135,32 +163,4 @@ TEST FAILED on mangalore : -> DIP test-case S05   (under Game9952/S05)
 < France:  Ber SUPPORT Ruh -> Mun    (*dislodged*)
 ---
 > France:  Ber SUPPORT Ruh -> Mun    (*was dislodged*)
-
-================================================================================
-
-040107 CORE Test Suite : 1 tests ran : 1 CRASHED
-
-The following tests CRASHED : 
-In CORE test-suite TargetApp:
-  - CORE test-case DumpCore
-
-
-Crash information for the tests that crashed follows...
---------------------------------------------------------
-TEST CRASHED -> CORE test-case DumpCore(under DumpCore)
-Program terminated with signal 11, Segmentation fault.
-Stack trace from gdb :
-_dl_sysinfo_int80 
-___newselect_nocancel 
-floatsleep 
-time_sleep 
-PyCFunction_Call 
-PyEval_EvalCode 
-PyEval_EvalCodeEx 
-PyEval_EvalCode 
-PyRun_FileExFlags 
-PyRun_SimpleFileExFlags 
-PyRun_AnyFileExFlags 
-Py_Main 
-main 
 
