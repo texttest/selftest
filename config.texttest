@@ -11,6 +11,8 @@ output:BadApplication
 output:wait for
 output:Reconnecting to test
 output:Faking start
+output:FAILED on
+targetReport:FAILED on
 catalogue:.nfs
 catalogue:subdirectory TargetApp/dip
 errors:RENDER
@@ -42,6 +44,7 @@ create_catalogues:true
 
 # Things to collate
 collate_file:TargetApp/Failures/memory.mem->targetMem
+collate_file:TargetApp/batchreport*->targetReport
 
 # Programs for viewing files
 view_program:emacs
