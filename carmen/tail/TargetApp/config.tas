@@ -1,0 +1,147 @@
+# This file is used by runtests, and specifies the binary, 
+# default checkout, users, and run-dependent text for Tail Assignment (TAS) 
+
+# ---------------- Values required by the framework -------------------
+
+# Python configuration module to use. The configuration "default" is always available
+# Otherwise, provide any module you like that implements a getConfig(optionMap) method
+config_module:fleet
+
+# Binary (relative to checkout) to be used
+binary:${CARMSYS}/bin/TAILbatch.sh
+
+# Check-out to use if no -c option is specified.
+# This will look globally if it starts with a /, locally 
+# under the same root as the Testing directory otherwise
+checkout_location:~/work/
+default_checkout:master
+
+log_file:output
+
+# run-dependent text for each file produced
+# Please add text to remove from comparison files
+# separated from the file concerned by a semicolon
+errors:memory
+errors:/\.##
+errors:tmp/RRL-AAA
+errors:Error! Pid:
+errors:SpShadow
+errors:CARMSYS
+errors:Failed to find out default UMASK and group
+errors:CARMTMP
+errors:ap_getinfo_util
+errors:running_time_seconds
+errors:read_po_file
+output:CARMUSR
+output:CARMTMP
+output:Fixing time
+output:Feasibility Check Time
+output:Pricing Time
+output:RMP Time
+output:SUBPLAN
+output:ARGS
+output:library date
+output:Date/Time
+output:Host machine
+output:Subplan
+output:Total search time
+output:Propagation time
+output:nodes/second
+output:Max memory used
+output:Integer time:
+output:LP time
+output:Pricing time
+output:Time to solve
+output:solution time
+output:fixing time
+output:Total time
+output:CPU time
+output:RMP time
+output:wallclock time
+output:timestamp
+output:Running time
+output:ime spent
+output:Copyright
+output:CARMSYS
+output:Memory consumption
+output:Tail Assignment Optimizer{LINES:3}
+output:Using Filer to load SubPlan
+output:Written Solution to
+output:subplan rule parameters have been set.
+output:January
+output:February
+output:March
+output:April
+output:June
+output:July
+output:August
+output:September
+output:October
+output:November
+output:December
+input:loadsp
+
+# Full name. If not present, capitalised extension is used. Must be one word.
+full_name:Tail
+
+# Files to be treated as input, if present
+link_test_path:commands.tas
+
+# Collect the solution
+collate_file:best_solution->solution
+
+write_tmp_files:TargetApp
+
+# ---------------- Values required by the performance module -------------------
+
+# Performance machines. Performance is only compared if these machines are used for test execution
+performance_test_machine:onepusu
+performance_test_machine:morafenobe
+performance_test_machine:tireeis
+performance_test_machine:fougamou
+performance_test_machine:fivefinger
+performance_test_machine:singleton
+performance_test_machine:severodoneck
+performance_test_machine:easthartford
+performance_test_machine:ninilchik
+performance_test_machine:tilin
+performance_test_machine:elfincove
+performance_test_machine:taylor
+performance_test_machine:tamchackett
+performance_test_machine:forster
+performance_test_machine:frankfort
+
+# How much variation in performance do we allow, in percentage of total runtime? 
+cputime_variation_%:10
+
+# How long (in seconds) must a test be before performance comparison is used?
+minimum_cputime_for_test:10
+
+# ---------------- Values required by the Carmen module -------------------
+
+# What needs to be built by the rule compiler
+rave_name:afc
+
+# The architecture that runs without a version ID. If you run on other architecture, you will
+# get given version ${ARCH}$v, where $v was the version specified, if any...
+default_architecture:i386_linux
+
+# Things to build
+build_link:Optimization/Tail/Program
+build_product:Optimization/Tail
+build_codebase:Optimization
+
+# ---------------- Values needed to run in batch mode -------------------
+
+# For each "special batch" run, specify recipients, time limit, architectures and versions 
+# Not present means $USER as recipient, no time limit, all versions and all architectures accepted
+nightjob_recipients:carmen.matadortests
+nightjob_timelimit:30
+nightjob_version:9
+nightjob_version:master	
+nightjob_version:i386_linux
+
+wkendjob_recipients:carmen.matadortests
+wkendjob_version:9
+wkendjob_version:master
+wkendjob_version:i386_linux
