@@ -1,7 +1,23 @@
-Using Application CORE, checkout /users/geoff/texttesttmp/texttestgeoff16Jun12:01:04/unixConfig/CollateCore/BatchCrash/TargetApp/./
+TextTest will write diagnostics in /users/geoff/work/master/Testing/Automatic/texttest
+Using Application CORE, checkout /users/geoff/texttesttmp/texttestgeoff02Sep11:33:29/unixConfig/CollateCore/BatchCrash/./TargetApp/./
 Running CORE test-suite TargetApp
   Running CORE test-case DumpCore
 Comparing differences for CORE test-suite TargetApp
   Comparing differences for CORE test-case DumpCore - SUCCESS! (on errors.core,output.core)
-  CORE test-case DumpCore FAILED :
-At 12:01 creating batch report for application CORE ...done.
+  CORE test-case DumpCore CRASHED on easthartford :
+Program terminated with signal 11, Segmentation fault.
+Stack trace from gdb :
+___newselect_nocancel 
+floatsleep 
+time_sleep 
+PyCFunction_Call 
+PyEval_EvalCode 
+PyEval_EvalCodeEx 
+PyEval_EvalCode 
+PyRun_FileExFlags 
+PyRun_SimpleFileExFlags 
+PyRun_AnyFileExFlags 
+Py_Main 
+main 
+
+At 11:34 creating batch report for application CORE ...done.
