@@ -15,7 +15,7 @@ default_architecture:i386_linux
 # This will look globally if it starts with a /, locally 
 # under the same root as the Testing directory otherwise
 checkout_location:/carm
-default_checkout:dev/flamenco
+default_checkout:master
 
 # run-dependent text for each file produced
 # Please add text to remove from comparison files
@@ -36,36 +36,3 @@ internal_error_text:config script not found
 performance_test_machine:none
 # default lsf requirements: running in master
 lsfres:master
-
-# ---------------- Values required by the Carmen module -------------------
-
-
-# For each "special batch" run, specify recipients and time limit. 
-# Not present means $USER as recipients and no time limit
-# nightjob : daily after build, just verify connect
-[batch_recipients]
-nightjob:thekla
-default:$USER
-
-[batch_version]
-nightjob:DESCARTES.sparc
-nightjob:master
-nightjob:sparc
-nightjob:parisc_2_0
-nightjob:i386_linux
-#run tests before checkin
-checkin:master
-checkin:DESCARTES.sparc
-#DEV_FLAMENCO with std-CARMSYS and flm-CARMSYS
-checkin:flmstd
-checkin:flmflm
-#run on architectures
-checkin:sparc
-checkin:parisc_2_0
-checkin:i386_linux
-
-[batch_use_collection]
-nightjob:true
-[end]
-
-
