@@ -48,6 +48,8 @@ Creating entry for option 'Build application target locally'
 Creating check button for switch 'Write TextTest diagnostics'
 Creating check button for switch 'Keep write-directories on success'
 
+'add to test selection' event created with arguments 'ArtificialUser'
+
 'select test' event created with arguments 'ArtificialUser'
 Viewing test Matador test-suite ArtificialUser
 Adding file environment under heading 'Definition Files', coloured pale green
@@ -60,8 +62,6 @@ Creating notebook page for 'Adding Test'
 Creating entry for option 'Test Name'
 Creating entry for option 'Test Description'
 Creating entry for option 'Subplan name'
-Creating check button for switch 'Collect standard results immediately'
-Creating check button for switch 'Change system behaviour (edit log file)'
 
 Creating notebook page for 'Adding Suite'
 Creating entry for option 'Suite Name'
@@ -78,26 +78,8 @@ Creating entry for option 'CARMUSR'
 
 'add test' event created with arguments ''
 Adding Testflight_back_in_time under test suite Matador test-suite ArtificialUser
-Adding file environment under heading 'Definition Files', coloured pale green
-Adding file environment.local under heading 'Definition Files', coloured pale green
-Adding file environment.personalrule under heading 'Definition Files', coloured pale green
-Adding file testsuite.cas under heading 'Definition Files', coloured pale green
-Adding file Customer.etab under heading 'Resource Files', coloured pale green
-
-Creating notebook page for 'Adding Test'
-Creating entry for option 'Test Name'
-Creating entry for option 'Test Description'
-Creating entry for option 'Subplan name'
-Creating check button for switch 'Collect standard results immediately'
-Creating check button for switch 'Change system behaviour (edit log file)'
-
-Creating notebook page for 'Adding Suite'
-Creating entry for option 'Suite Name'
-Creating entry for option 'Suite Description'
-Creating entry for option 'CARMUSR'
-
-'select test' event created with arguments 'flight_back_in_time'
-Viewing test Matador test-case flight_back_in_time
+Using option string : -s S01MCS/MCS_APR01/MCS_FDDH4_CAS/flight_back_in_time
+Viewing new test flight_back_in_time
 Adding file options.cas under heading 'Definition Files', coloured pale green
 Adding file rules under heading 'Subplan Files', coloured pale green
 Adding file Matador_5 under heading 'Ruleset Files', coloured pale green
@@ -109,5 +91,47 @@ Creating entry for option 'Log file item to plot'
 Creating entry for option 'Extra versions to plot'
 Creating check button for switch 'Print in colour'
 Creating check button for switch 'Plot against solution number rather than time'
+
+'view app' event created with arguments ''
+Viewing app Matador
+Adding file config.cas under heading 'Configuration Files', coloured purple
+Adding file config.cas.rave under heading 'Configuration Files', coloured purple
+
+Creating notebook page for 'Select Tests'
+Creating entry for option 'Test names containing'
+Creating entry for option 'Tests listed in file'
+Creating entry for option 'Suite names containing'
+Creating entry for option 'Log files containing'
+Creating entry for option 'Execution time <min, max>'
+Creating entry for option 'CARMUSRs containing'
+
+Creating notebook page for 'What to run'
+Creating entry for option 'Use checkout'
+Creating entry for option 'Run this script'
+Creating entry for option 'Run this version'
+Creating entry for option 'Reconnect to previous run'
+Creating check button for switch 'Build all rulesets'
+Creating check button for switch 'Build no rulesets'
+
+Creating notebook page for 'How to run'
+Creating entry for option 'Run batch mode session'
+Creating entry for option 'Request LSF resource'
+Creating entry for option 'Request LSF queue'
+Creating check button for switch 'Overwrite all failures'
+Creating check button for switch 'Create new results files (overwrite everything)'
+Creating check button for switch 'Run tests locally (not LSF)'
+Creating check button for switch 'Run on performance machines only'
+Creating check button for switch 'Use debug rulesets'
+Creating check button for switch 'Run with RAVE Explorer'
+Creating check button for switch 'Run with LProf profiler'
+Creating check button for switch 'Use Matador Codebase diagnostics'
+
+Creating notebook page for 'Side effects'
+Creating entry for option 'Build application target'
+Creating entry for option 'Build application target locally'
+Creating check button for switch 'Write TextTest diagnostics'
+Creating check button for switch 'Keep write-directories on success'
+
+'run selected tests' event created with arguments ''
 
 'quit' event created with arguments ''
