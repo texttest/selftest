@@ -1,0 +1,15 @@
+Description of exception thrown :
+Traceback (most recent call last):
+  File "/users/perb/work/master/Testing/TextTest/texttest.py", line 1292, in handleExceptions
+    return method(*args)
+  File "/users/perb/work/master/Testing/TextTest/texttest.py", line 302, in callAction
+    return action(self)
+  File "/users/perb/work/master/Testing/TextTest/default.py", line 305, in __call__
+    self.extract(fullpath, targetFile)
+  File "/users/perb/work/master/Testing/TextTest/default.py", line 334, in extract
+    shutil.copyfile(sourcePath, targetFile)
+  File "/usr/lib/python2.2/shutil.py", line 30, in copyfile
+    copyfileobj(fsrc, fdst)
+  File "/usr/lib/python2.2/shutil.py", line 17, in copyfileobj
+    buf = fsrc.read(length)
+IOError: [Errno 21] Is a directory
