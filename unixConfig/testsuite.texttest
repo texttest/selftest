@@ -7,8 +7,12 @@ BatchInternalErrors
 # Should reject as the batch session is undefined and a version is provided
 BatchRejectVersion
 
+# Check that -r does not remove everything without a performance file
+PerfFilterNoPerf
+
 # Tests related to picking up core files
 CollateCore
 
 # Test that it's possible to measure and compare performance
 PerformanceTests
+
