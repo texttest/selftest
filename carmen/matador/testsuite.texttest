@@ -51,3 +51,12 @@ KillRuleCompilation
 
 # Check that sensible things happen if the nightjob is terminated while rave compilation is happening
 NightjobTerminateRave
+
+# Check that rule compilations with parallel test suite are handled correctly
+BadRaveRunParallel
+
+# Test what happens when a machine is not mounted correctly (uses fake LSF to simulate this!)
+BadMachine
+
+# Check we don't hang if we try to build rules on a dead machine
+RuleBuildBadMachine

@@ -1,0 +1,50 @@
+carmen.raveopt_tests
+unrunnable=3
+040907 Matador master.badrule.extraversion : 3 tests : 3 unrunnable
+
+040907 Matador master.badrule.extraversion : 2 tests : 2 unrunnable
+040907 Matador master.badrule.extraversion.parallel : 1 tests : 1 unrunnable
+
+---------------------------------------------------------------------------------
+040907 Matador master.badrule.extraversion : 2 tests : 2 unrunnable
+
+The following tests could not be run : 
+In Matador test-suite TargetApp:
+  In Matador test-suite ArtificialUser:
+    - Matador test-case matador_2            
+    - Matador test-case generate_in_subperiod
+
+
+Detailed information for the tests that could not be run follows...
+--------------------------------------------------------
+TEST could not be run : Matador test-case matador_2             (under ArtificialUser/matador_2)
+Failed to build ruleset Matador_5_bad
+Build Rave program Matador_5_bad started on severodoneck, 07 September 16:55
+Generating code... 
+*** Trouble report (2 errors, 0 warnings):
+
+"source/Matador_5_bad", line 18.22:
+      16: %cost_weight% = parameter 1;
+      17: 
+      18: %cost_of_a_roster% = sum(leg(roser),%cost_weight%);
+                               ^^^
+   ERROR: Missing parent level in traverser
+   ERROR: Undefined level _topmodule.roser in traverser
+
+--------------------------------------------------------
+TEST could not be run : Matador test-case generate_in_subperiod (under ArtificialUser/generate_in_subperiod)
+Trying to use ruleset 'Matador_5_bad' that failed to build.
+
+---------------------------------------------------------------------------------
+040907 Matador master.badrule.extraversion.parallel : 1 tests : 1 unrunnable
+
+The following tests could not be run : 
+In Matador test-suite TargetApp:
+  In Matador test-suite ArtificialUser:
+    - Matador test-case generate_in_subperiod
+
+
+Detailed information for the tests that could not be run follows...
+--------------------------------------------------------
+TEST could not be run : Matador test-case generate_in_subperiod (under ArtificialUser/generate_in_subperiod)
+Trying to use ruleset 'Matador_5_bad' that failed to build.

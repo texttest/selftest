@@ -1,0 +1,40 @@
+TextTest will write diagnostics in /users/geoff/work/master/Testing/Automatic/texttest
+Using Application Matador, version master.badrule.extraversion, checkout /users/geoff/work/master
+Using Application Matador, version master.badrule.extraversion.parallel, checkout /users/geoff/work/master
+Compiling rules for Matador test-suite TargetApp
+  Compiling rules for Matador test-suite ArtificialUser
+    Compiling rules for Matador test-case matador_2             - ruleset Matador_5_bad
+    Submitting matador.ArtificialUser.Matador_5_bad to LSF queue short_i386_linux_RHEL
+    Compiling rules for Matador test-case generate_in_subperiod - ruleset Matador_5_bad already being compiled
+Compiling rules for Matador test-suite TargetApp
+  Compiling rules for Matador test-suite ArtificialUser
+    Compiling rules for Matador test-case generate_in_subperiod - ruleset Matador_5_bad already being compiled
+Failed to build ruleset Matador_5_bad
+Build Rave program Matador_5_bad started on severodoneck, 07 September 16:53
+Generating code... 
+*** Trouble report (2 errors, 0 warnings):
+
+"source/Matador_5_bad", line 18.22:
+      16: %cost_weight% = parameter 1;
+      17: 
+      18: %cost_of_a_roster% = sum(leg(roser),%cost_weight%);
+                               ^^^
+   ERROR: Missing parent level in traverser
+   ERROR: Undefined level _topmodule.roser in traverser
+
+
+Removing previous write directory /carm/user_and_tmp/master/Matador_user/LOCAL_PLAN/S01MCS/MCS_APR01/MCS_FDDH4_CAS/Plan_2_Ruleset_5.cas.master.badrule.extraversiongeoff07Sep12:19:33
+Submitting Matador test-suite TargetApp to LSF queue short_i386_linux_RHEL
+  Submitting Matador test-suite ArtificialUser to LSF queue short_i386_linux_RHEL
+Comparing differences for Matador test-suite TargetApp
+  Comparing differences for Matador test-suite ArtificialUser
+    Matador test-case matador_2             not compared:  Failed to build ruleset Matador_5_bad
+Removing previous write directory /carm/user_and_tmp/master/Matador_user/LOCAL_PLAN/S01MCS/MCS_APR01/MCS_FDDH4_CAS/Plan_18d.cas.master.badrule.extraversiongeoff07Sep12:19:33
+    Matador test-case generate_in_subperiod not compared:  Trying to use ruleset 'Matador_5_bad' that failed to build.
+Removing previous write directory /carm/user_and_tmp/master/Matador_user/LOCAL_PLAN/S01MCS/MCS_APR01/MCS_FDDH4_CAS/Plan_18d.cas.master.badrule.extraversion.parallelgeoff07Sep12:19:33
+Submitting Matador test-suite TargetApp to LSF queue short_i386_linux_RHEL
+  Submitting Matador test-suite ArtificialUser to LSF queue short_i386_linux_RHEL
+Comparing differences for Matador test-suite TargetApp
+  Comparing differences for Matador test-suite ArtificialUser
+    Matador test-case generate_in_subperiod not compared:  No output files at all produced, presuming problems running test
+At 16:53 creating batch report for application Matador ...done.
