@@ -1,4 +1,4 @@
-Using Application RUNTEST, checkout /users/thekla/work/master
+Using Application RUNTEST, checkout /users/geoff/work/master
 Submitting RUNTEST test-suite TargetApp to LSF queue short_i386_linux_RHEL
   Submitting RUNTEST test-suite RunTest_tests to LSF queue short_i386_linux_RHEL
     Submitting RUNTEST test-suite good_user to LSF queue short_i386_linux_RHEL
@@ -12,20 +12,23 @@ Comparing differences for RUNTEST test-suite TargetApp
   Comparing differences for RUNTEST test-suite RunTest_tests
     Comparing differences for RUNTEST test-suite good_user
       Waiting for completion of RUNTEST test-case GoodApp ...
-      Comparing differences for RUNTEST test-case GoodApp  (on errors.RunTest,output.RunTest)
-      RUNTEST test-case GoodApp  FAILED on mbahiakro : differences in errors,output
+      Comparing differences for RUNTEST test-case GoodApp  - SUCCESS! (on errors.RunTest,output.RunTest)
+      Comparing differences for RUNTEST test-case NoConfig - SUCCESS! (on errors.RunTest,output.RunTest)
+      RUNTEST test-case NoConfig FAILED :
+Internal ERROR (config script not found)
       View details(v), Save(s) or continue(any other key)?
-      Waiting for completion of RUNTEST test-case NoConfig...
-      Comparing differences for RUNTEST test-case NoConfig (on errors.RunTest,output.RunTest)
-      RUNTEST test-case NoConfig FAILED on mangalore : differences in errors,output
+      Comparing differences for RUNTEST test-case BadApp   - SUCCESS! (on errors.RunTest,output.RunTest)
+      RUNTEST test-case BadApp   FAILED :
+Internal ERROR (binary not found)
       View details(v), Save(s) or continue(any other key)?
-      Comparing differences for RUNTEST test-case BadApp   (on errors.RunTest,output.RunTest)
-      RUNTEST test-case BadApp   FAILED on bigbell : differences in errors,output
-      View details(v), Save(s) or continue(any other key)?
-      Comparing differences for RUNTEST test-case Failure  (on errors.RunTest,output.RunTest)
-      RUNTEST test-case Failure  FAILED on burlington : differences in errors,output
+      Waiting for completion of RUNTEST test-case Failure ...
+      Comparing differences for RUNTEST test-case Failure  - SUCCESS! (on errors.RunTest,output.RunTest)
+      RUNTEST test-case Failure  FAILED :
+Internal ERROR (!!!FAILURES!!!)
       View details(v), Save(s) or continue(any other key)?
     Comparing differences for RUNTEST test-suite bad_user
-      Comparing differences for RUNTEST test-case Default (on errors.RunTest,output.RunTest)
-      RUNTEST test-case Default FAILED on butaritari : differences in errors,output
+      Waiting for completion of RUNTEST test-case Default...
+      Comparing differences for RUNTEST test-case Default - SUCCESS! (on errors.RunTest,output.RunTest)
+      RUNTEST test-case Default FAILED :
+Internal ERROR (Serious error in CONFIG)
       View details(v), Save(s) or continue(any other key)?
