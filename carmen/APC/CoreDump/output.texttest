@@ -1,4 +1,4 @@
-TextTest will write diagnostics in /users/geoff/texttesttmp/texttest.lsfgeoff12Oct18:07:29/carmen/APC/CoreDump based on file at /users/geoff/work/master/Testing/Automatic/texttest/log4py.conf
+TextTest will write diagnostics in /users/geoff/texttesttmp/texttest.lsfgeoff19Oct11:04:27/carmen/APC/CoreDump based on file at /users/geoff/work/master/Testing/Automatic/texttest/log4py.conf
 Using Application APC, version crash, checkout /users/geoff/work/master
 Compiling rules for APC test-suite TargetApp
   Compiling rules for APC test-suite sk_test9scripts
@@ -15,3 +15,98 @@ apc_setup
 main 
 
     View details(v), Save Version crash(1), Save(s) or continue(any other key)?
+------------------ Differences in solution --------------------
+1,170c1
+< SECTION apc_oags Solution_3
+< 147;APC_SEGMENT_KEY_1;APC_SEGMENT;APC_SEGMENT_TYPE;FLIGHT_CARRIER;FLIGHT_NUMBER;FLIGHT_DEP_AIRP;FLIGHT_ARR_AIRP;FLIGHT_DATE;FLIGHT_DEP_TIME;FLIGHT_BLOCK_TIME;FLIGHT_IATA;CUSTOM_AC_TYPE;FLIGHT_SUFFIX;FLIGHT_LEG_NO;TASK_SUB_CODE;ONWARD_SEGMENT_KEY;FLIGHT_SERVICE_TYPE;BOOKED_CREW_VECTOR_LENGTH;BOOKED_CREW_VECTOR;AC_OWNER;FLIGHT_ONW_FLIGHT_NUM;PASSENGER_TERMINAL_DEPARTURE_STATION;PASSENGER_TERMINAL_ARRIVAL_STATION;FIRST_CLASS_CAP;BUSINESS_CLASS_CAP;ECONOMY_CLASS_CAP;FOURTH_CLASS_CAP;COCKPIT_CREW_EMPLOYER;FLIGHT_GDOR;
+< SECTION ground_transport Solution_3
+< 147;APC_SEGMENT_KEY_1;APC_SEGMENT;APC_SEGMENT_TYPE;FLIGHT_CARRIER;FLIGHT_NUMBER;FLIGHT_DEP_AIRP;FLIGHT_ARR_AIRP;FLIGHT_DATE;FLIGHT_DEP_TIME;FLIGHT_BLOCK_TIME;FLIGHT_IATA;CUSTOM_AC_TYPE;FLIGHT_SUFFIX;FLIGHT_LEG_NO;TASK_SUB_CODE;ONWARD_SEGMENT_KEY;FLIGHT_SERVICE_TYPE;BOOKED_CREW_VECTOR_LENGTH;BOOKED_CREW_VECTOR;AC_OWNER;FLIGHT_ONW_FLIGHT_NUM;PASSENGER_TERMINAL_DEPARTURE_STATION;PASSENGER_TERMINAL_ARRIVAL_STATION;FIRST_CLASS_CAP;BUSINESS_CLASS_CAP;ECONOMY_CLASS_CAP;FOURTH_CLASS_CAP;COCKPIT_CREW_EMPLOYER;FLIGHT_GDOR;
+< SECTION apc_chains Solution_3
+< 142;APC_CHAIN_NUMBER;APC_CHAIN_LEG_COUNT;APC_CHAIN_LRC_FLAG;APC_CHAIN_CREW_VECTOR_LEN;APC_CHAIN_CREW_VECTOR;APC_CHAIN_CREW_ID;APC_CHAIN_CREW_POS;APC_CHAIN_HOMEBASE;APC_CHAIN_CATEGORY;APC_CHAIN_MAIN_VARIANT;
+< 144;APC_SEGMENT_PTR;APC_SEGMENT_OFFFSET;APC_SEGMENT_START_OFFSET;APC_SEGMENT_END_OFFSET;APC_SEGMENT_DUTY_DESIGNATOR;APC_SEGMENT_DUTY_TYPE;APC_SEGMENT_BASE;APC_SEGMENT_BIT_FIELD;APC_SEGMENT_CUSTOMER_INDEX;
+< 143;10515;6;C;7;1,0,0,0,0,0,0,;;-1;CPH;;-1;
+< 145;23729;0;0;0;A;;;0x40;0;
+< 145;23760;0;0;0;A;;;0x40;0;
+< 145;20651;0;0;0;A;;;0x40;0;
+< 145;16088;0;0;0;A;;;0x40;0;
+< 145;19202;0;0;0;A;;;0x40;0;
+< 145;10208;0;0;0;A;;;0x40;0;
+< 143;10516;4;C;7;1,0,0,0,0,0,0,;;-1;CPH;;-1;
+< 145;20578;0;0;0;A;;;0x40;0;
+< 145;20613;0;0;0;A;;;0x40;0;
+< 145;23347;0;0;0;A;;;0x40;0;
+< 145;23373;0;0;0;A;;;0x40;0;
+< 143;10517;4;C;7;1,0,0,0,0,0,0,;;-1;CPH;;-1;
+< 145;19731;0;0;0;A;;;0x40;0;
+< 145;19755;0;0;0;A;;;0x40;0;
+< 145;20650;0;0;0;A;;;0x40;0;
+< 145;20721;0;0;0;A;;;0x40;0;
+< 143;10518;5;C;7;1,0,0,0,0,0,0,;;-1;CPH;;-1;
+< 145;13686;0;0;0;A;;;0x62;0;
+< 145;13715;0;0;0;A;;;0x40;0;
+< 145;6784;0;0;0;A;;;0x40;0;
+< 145;12991;0;0;0;A;;;0x62;0;
+------------------ Differences in status --------------------
+98,949d97
+< SECTION apc_status Solution_warning_1
+< --- APC runtime status report ---
+< 
+< APC producing solution number: 1
+< Active method: column generator
+< Active module: pricing (with reduced set of RTDs)
+< Generated rotations: 13 this loop
+< 
+< This "solution" contains the problematic chains that were printed
+< in the warning section (visible from the batch viewer)
+< SECTION apc_status Solution_warning_1
+< --- APC runtime status report ---
+< 
+< APC producing solution number: 1
+< Active method: column generator
+< Active module: pricing (with reduced set of RTDs)
+< Generated rotations: 13 this loop
+< 
+< This "solution" contains the problematic chains that were printed
+< in the warning section (visible from the batch viewer)
+< SECTION apc_status Solution_warning_1
+< --- APC runtime status report ---
+< 
+< APC producing solution number: 1
+< Active method: column generator
+< Active module: pricing (with reduced set of RTDs)
+< Generated rotations: 13 this loop
+< 
+< This "solution" contains the problematic chains that were printed
+------------------ Differences in warnings --------------------
+6,1344d5
+< Cannot find map_calendar_day_start value 'start_calday'.
+< APC will use internal calculation based on check_in_time.
+< 
+< 
+< Overestimate of CRR cost (can cause quality problems), overestimated by 299
+< block time 8:15, 2 days, block time per day 4:07
+< total duty 14:55, apc-cost 18732, homebase airport: CPH,  Complete,  1/0/0/0/0/0/0
+< duty period 1: duty length 7:35, block time 4:20
+< OD       [SK 406] CPH  9.25 Sat 20020323 10.40 Sat 20020323 ARN block 75 fid 4623 sp1  
+< OD AC-CH [SK1040] ARN 12.00 Sat 20020323 13.35 Sat 20020323 KRN block 95 fid 4627 sp1 L
+< OD       [SK1041] KRN 14.15 Sat 20020323 15.45 Sat 20020323 ARN block 90 fid 4627 sp1  
+< Rest time 18:00
+< duty period 2: duty length 7:20, block time 3:55
+< OD       [SK   8] ARN 11.00 Sun 20020324 12.20 Sun 20020324 LLA block 80 fid 4655 sp1  
+< OD       [SK   9] LLA 12.50 Sun 20020324 14.10 Sun 20020324 ARN block 80 fid 4659 sp1  
+< OD AC-CH [SK1407] ARN 15.50 Sun 20020324 17.05 Sun 20020324 CPH block 75 fid 4664 sp1  
+< 
+< =================================================
+< Cost of the chain : 18732
+< Cost elements values for complete chain
+< The nonadditive part is : 0
+< 
+<  Element                                Val    Sum
+<  -------------------------------------------------
+<  *cost_of_crr_zero_rule_violation     18732  19031
+<  -------------------------------------------------
+< 
+< ==================================
+< Cost element values for subchain :
+------------------ New result in extract --------------------
+    Save Version crash(1), Save(s) or continue(any other key)?
