@@ -1,9 +1,10 @@
 Mapping tests in tree view...
--> Added MEM test-suite TargetApp to test tree view.
-->   Added MEM test-case Failures to test tree view.
+-> Added PERF test-suite TargetApp to test tree view.
+->   Added PERF test-case Success  to test tree view.
+->   Added PERF test-case Failures to test tree view.
 
-Viewing test MEM test-suite TargetApp
-Adding file testsuite.mem under heading 'Definition Files', coloured white
+Viewing test PERF test-suite TargetApp
+Adding file testsuite.perf under heading 'Definition Files', coloured white
 
 Creating notebook page for 'Adding Test'
 Creating entry for option 'Test Name'
@@ -19,16 +20,21 @@ Creating entry for option 'Suite Description'
 Creating check button for switch 'Add environment file'
 
 Waiting for non-gui event 'completion of test actions' to occur.
+Redrawing test Success coloured yellow
+(Second column '' coloured yellow)
+Redrawing test Success coloured green
+(Second column '' coloured green)
 Redrawing test Failures coloured yellow
 (Second column '' coloured yellow)
 Redrawing test Failures coloured green
-(Second column '13% larger' coloured red)
+(Second column '100% faster' coloured red)
 Expected non-gui event 'completion of test actions' occurred, proceeding.
 
 'select test' event created with arguments 'Failures'
-Viewing test MEM test-case Failures
-Adding file memory.mem under heading 'Comparison Files', coloured red
-Adding file output.mem under heading 'Comparison Files', coloured green
+Viewing test PERF test-case Failures
+Adding file errors.perf under heading 'Comparison Files', coloured green
+Adding file output.perf under heading 'Comparison Files', coloured green
+Adding file performance.perf under heading 'Comparison Files', coloured red
 
 Creating notebook page for 'Viewing'
 Creating check button for switch 'Include Run-dependent Text'
@@ -38,12 +44,22 @@ Creating notebook page for 'Saving'
 Creating entry for option 'Version to save'
 Creating check button for switch 'Exact Performance'
 
+'select file' event created with arguments 'performance.perf'
+Comparing file performance.perfwith previous version using 'tkdiff'
+
+'page notebook to' event created with arguments 'Saving'
+
+'check exact performance' event created with arguments ''
+
+'uncheck exact performance' event created with arguments ''
+
 'save' event created with arguments ''
-Saving MEM test-case Failures - version , exactness 0
+Saving PERF test-case Failures - version , exactness 0
 Redrawing test Failures coloured green
 (Second column '' coloured green)
-Adding file memory.mem under heading 'Comparison Files', coloured green
-Adding file output.mem under heading 'Comparison Files', coloured green
+Adding file errors.perf under heading 'Comparison Files', coloured green
+Adding file output.perf under heading 'Comparison Files', coloured green
+Adding file performance.perf under heading 'Comparison Files', coloured green
 
 Creating notebook page for 'Viewing'
 Creating check button for switch 'Include Run-dependent Text'
