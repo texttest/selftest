@@ -4,7 +4,6 @@ Compiling rules for Matador test-suite TargetApp
 Running Matador test-suite TargetApp
   Running Matador test-suite ArtificialUser
     Running Matador test-case matador_2            
-    Running Matador test-case generate_in_subperiod
 Comparing differences for Matador test-suite TargetApp
   Comparing differences for Matador test-suite ArtificialUser
     Comparing differences for Matador test-case matador_2             (on crewmembers.diag,inputlegs.diag,inputrosters.diag,inputtrips.diag,outputrosters.diag,parameters.diag,rulefailures.diag,errors.cas,output.cas,solution.cas)
@@ -171,14 +170,10 @@ Comparing differences for Matador test-suite TargetApp
 > 
 > [   37C 2001-03-19T23:00  CPH  CPH 2001-06-04T21:59 BOSERUP 85215 C ]
     Save Version badoverride(1), Save(s) or continue(any other key)?
+    Running Matador test-case generate_in_subperiod
     Comparing differences for Matador test-case generate_in_subperiod (on assignedposition.diag,crewmembers.diag,inputlegs.diag,inputrosters.diag,inputtrips.diag,outputrosters.diag,parameters.diag,errors.cas,output.cas,solution.cas)
-    Matador test-case generate_in_subperiod FAILED : new results in assignedposition,outputrosters, differences in parameters
+    Matador test-case generate_in_subperiod : new results in assignedposition,outputrosters
     View details(v), Save Version badoverride(1), Save(s) or continue(any other key)?
------------------- Differences in parameters --------------------
-74a75
-Correct answer would be no differences in parameters.
-The raveparameters files is under the matador_2 test (run previously), 
-but is still trying to override parameters in this test... 
 ------------------ New result in assignedposition --------------------
 0a1,13
 > map_crew_assigned_position : crew_assigned_position NOT trip-dependent
