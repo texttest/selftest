@@ -6,6 +6,5 @@ set xtics border nomirror norotate
 set ytics border nomirror norotate
 set border 3
 set xrange [0:];
-plot '/users/geoff/texttesttmp/texttest.lsfgeoff28Sep11:28:39/carmen/matador/PlotGraphReconnect/TargetApp/cas.10fakeuser28Sep09:31:12/ArtificialUser/generate_in_subperiod/framework_tmp/plot-this-run'  title "this run"  with linespoints lt 2 pt 1
-replot '/users/geoff/texttesttmp/texttest.lsfgeoff28Sep11:28:39/carmen/matador/PlotGraphReconnect/TargetApp/cas.10fakeuser28Sep09:31:12/ArtificialUser/generate_in_subperiod/framework_tmp/plot-std-result'  title "std result"  with linespoints lt 3 pt 1
+plot './ArtificialUser/generate_in_subperiod/framework_tmp/plot-this-run'  title "this run"  with linespoints lt 2 pt 1, './ArtificialUser/generate_in_subperiod/framework_tmp/plot-std-result'  title "std result"  with linespoints lt 3 pt 1
 quit
