@@ -1,12 +1,12 @@
 # Path to the binary under test
-binary:${SOURCE_PATH}/texttest.py
+binary:texttest.py
 
 # Best to have this: it's needed on windows
 interpreter:python
 
 # Default settings. You need to set these if you want multiple checkouts of TextTest!
-checkout_location:none
-default_checkout:none
+checkout_location:${SOURCE_PATH}
+default_checkout:.
 
 # Run-dependent text. TextTest talks about its checkout, which 
 # depends on the local machine and path, so remove this. Also remove Python
