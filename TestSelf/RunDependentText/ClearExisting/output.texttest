@@ -1,0 +1,40 @@
+Using Application RDT, version clear, checkout /users/geoff/texttesttmp/texttestgeoff26Apr16:51:11/TestSelf/RunDependentText/ClearExisting/TargetApp/./
+Running RDT test-suite TargetApp
+  Running RDT test-case Test
+Comparing differences for RDT test-suite TargetApp
+  Comparing differences for RDT test-case Test (on output.rdt)
+  RDT test-case Test FAILED : differences in output
+  View details(v), Save Version clear(1), Save(s) or continue(any other key)?
+------------------ Differences in output --------------------
+- Sometimes we remove the second line...
++ Sometimes we remove line number 2...
+  
+- And other times we like to remove things like today's date, 2003-11-28T10:46
++ Sometimes we remove today's date, 2003-12-01T23:24
+  
+- Sometimes several lines must go:
+- Here
+- There
+- Everywhere
++ Or even several lines at once, like in this table:
++    Here     are     some     columns
++    That    have    spacing   between
++ Repeating     3     3     3     3
+  
+- Other times between markers, starting section:
+? ^^^ --                                       - 
++ Sometimes between markers, starting section
+? ^^^                                         
+- Tom
+- Dick
+- Harry
++ Rant
++ Rave
++ Gibber
+- End Section
++ End Section Here
+?            +++++ 
+  
+- We always remove this...
++ This should always go
+  Save Version clear(1), Save(s) or continue(any other key)?
