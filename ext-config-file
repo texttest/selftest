@@ -31,12 +31,13 @@ catalogue:subdirectory TargetApp/core
 catalogue:subdirectory TargetApp/perf
 catalogue:subdirectory TargetApp/grep
 errors:RENDER
-errors:\.py
+errors:File .* line .* in
 errors:CountTest.__del__
 errors:fakeuser under{WORD -1}
 # Hard to rely on exactly how much faster things are...
 gui_log:% faster{WORD 3}
 gui_log:Running on{WORD -1}
+gui_log:time.*:.*sec.
 [end]
 
 [failure_severity]
@@ -86,7 +87,8 @@ shortcut:TargetApp/*.shortcut
 # Programs for viewing files
 view_program:emacs
 
-# Run the LSF tests too...
+# Run the LSF and SGE tests too...
+extra_version:sge
 extra_version:lsf
 
 # But don't save them as a separate version

@@ -6,16 +6,14 @@ output:Removing previous write
 gui_log:batch system daemon
 gui_log:Second column.*yellow{WORD 4}
 catalogue:subdirectory TargetApp/static_gui
-catalogue:subdirectory TargetApp/sleep{LINES 20}
+catalogue:subdirectory TargetApp/sleep{LINES 25}
 targetReport:batch system daemon
 
 [unordered_text]
-output:Failed to submit to LSF
+output:Failed to submit to
 output:Reading slave results for
 gui_log:Waiting for application event.*killing to start{->}Expected application event.*2
 gui_log:Waiting for application event{->}Expected application event
 usecase:wait for test
 [end]
-
-extra_version:none
 
