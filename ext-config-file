@@ -1,22 +1,30 @@
-# Path to the binary, at Carmen
+# Path to the binary under test
 binary:${SOURCE_PATH}/texttest.py
 
+# Best to have this: it's needed on windows
 interpreter:python
 
 # Default settings. You need to set these if you want multiple checkouts of TextTest!
 checkout_location:none
 default_checkout:none
 
-# Checkout depends on the local machine, and the architecture
+# Run-dependent text. TextTest talks about its checkout, which 
+# depends on the local machine and path, so remove this. Also remove Python
+# errors which talk about absolute filenames to source code
 output:checkout
 errors:\.py
 
-# Might as well have nice print-outs
+# Official name of the application
 full_name:TextTest
 
-# These tests cannot be run in parallel using LSF, but let's use UNIX features
-# like batch mode, anyway.
+# Which configuration to use. 3 are provided: any number can be written by the user.
+# Corresponds to the name of a python module containing a configuration to be loaded.
+# Provided are:
+
+# default    - works anywhere, in theory
+# unixConfig - works anywhere on UNIX (uses UNIX tools such as tkdiff and sendmail)
+# lsf        - works on UNIX with Platform's LSF installed for load-balanced running
+# across a network. 
 config_module:unixConfig
 
-log_file:output
 
