@@ -1,0 +1,44 @@
+Mapping tests in tree view...
+-> Added CORE test-suite TargetApp to test tree view.
+->   Added CORE test-case DumpCore to test tree view.
+
+Viewing test CORE test-suite TargetApp
+Adding file testsuite.core under heading 'Definition Files', coloured white
+
+Waiting for application event 'completion of test actions' to occur.
+Redrawing test DumpCore coloured yellow
+Redrawing test DumpCore coloured red
+Expected application event 'completion of test actions' occurred, proceeding.
+
+'add to test selection' event created with arguments 'TargetApp (core)'
+
+'select test' event created with arguments 'DumpCore'
+Viewing test CORE test-case DumpCore
+Adding file errors.core under heading 'Comparison Files', coloured green
+Adding file output.core under heading 'Comparison Files', coloured green
+---------- Text Info Window ----------
+Program terminated with signal 11, Segmentation fault.
+Stack trace from gdb :
+_dl_sysinfo_int80 
+___newselect_nocancel 
+floatsleep 
+time_sleep 
+PyCFunction_Call 
+PyEval_EvalCode 
+PyEval_EvalCodeEx 
+PyEval_EvalCode 
+PyRun_FileExFlags 
+PyRun_SimpleFileExFlags 
+PyRun_AnyFileExFlags 
+Py_Main 
+main
+--------------------------------------
+
+Creating notebook page for 'Viewing'
+Creating check button for switch 'Include Run-dependent Text'
+Creating check button for switch 'Show differences where present'
+
+Creating notebook page for 'Saving'
+Creating entry for option 'Version to save'
+
+'quit' event created with arguments ''
