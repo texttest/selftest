@@ -11,3 +11,7 @@ default:true
 [batch_version]
 default:unix
 self_test:interr
+
+# Add a recognised section with no end marker last, to catch config file bug...
+[gui_entry_overrides]
+add_environment_file:0
