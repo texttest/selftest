@@ -12,7 +12,7 @@ output:still in use
 output:Killing running test{WORD -1}
 output:Killed process{WORD 3}
 targetReport:FAILED on{WORD 4}
-targetReport:tests ran{WORD 1}
+targetReport:^[0-9][0-9][0-9][0-9][0-9][0-9]{WORD 1}
 targetReport:{LINE 1}
 catalogue:.nfs
 catalogue:subdirectory TargetApp/dip
@@ -41,6 +41,7 @@ create_catalogues:true
 [collate_file]
 targetMem:TargetApp/Failures/memory.mem
 targetReport:TargetApp/batchreport*
+shortcut:TargetApp/*.shortcut
 [end]
 
 # Programs for viewing files
