@@ -1,10 +1,10 @@
 SECTION apc_status input
 --- Analysis of solution (input) ---
- User..................: johani
- Date..................: 02/25/2004, 17:35
+ User..................: geoff
+ Date..................: 03/08/2004, 14:53
 
- APC program (rule set): .APC_fd54_DC9_no_reference.johani.8946
- Subplan...............: F36  MCS_W01  V1112_0122  APC_ji_single_base_CPH_spl.apcjohani25Feb17:31:25
+ APC program (rule set): .APC_fd54_DC9_no_reference.geoff.7809
+ Subplan...............: F36  MCS_W01  V1112_0122  APC_ji_single_base_CPH_spl.apcgeoff08Mar14:53:35
  Period................: 20020323 - 20020329
  Parameter set.........: V1112_0122/FC4_bas_col_1_v9_cost_anal   with  75  manual changes.
  Machine...............: singleton
@@ -99,18 +99,30 @@ SECTION apc_status input
 
  CARMSYS..............: /carm/proj/matador/test_texttest/CARMSYS
  CARMUSR..............: /carm/carmen_paros_deliver/user_and_tmp/sk_test9_user/
- APC library version..: master.alpha-0.12
- APC library date.....: 19 December 2003 22:27:36
+ APC library version..: master.alpha-1.7
+ APC library date.....: 05 March 2004 22:25:17
 
 --- end of analysis ---
-Time:  1 s real  420 ms cpu  50 ms cpu_child  memory:  14.1 Mb
+Time:  0 s real  420 ms cpu  20 ms cpu_child  memory:  15.0 Mb
 Delta: 0 s real  20 ms cpu  0 ms cpu_child  memory:   0.2 Mb
 
 SECTION apc_status Solution_warning_1
 --- APC runtime status report ---
 
-Total time:  0:00:02   cpu time:  0:00:01
-APC program (rule set): .APC_fd54_DC9_no_reference.johani.8946
+Total time:  0:00:01   cpu time:  0:00:01
+APC program (rule set): .APC_fd54_DC9_no_reference.geoff.7809
+APC producing solution number: 1
+Active method: column generator
+Active module: pricing (with reduced set of RTDs)
+Generated rotations: 13 this loop
+
+This "solution" contains the problematic chains that were printed
+in the warning section (visible from the batch viewer)
+SECTION apc_status Solution_warning_1
+--- APC runtime status report ---
+
+Total time:  0:00:01   cpu time:  0:00:01
+APC program (rule set): .APC_fd54_DC9_no_reference.geoff.7809
 APC producing solution number: 1
 Active method: column generator
 Active module: pricing (with reduced set of RTDs)
@@ -122,7 +134,7 @@ SECTION apc_status Solution_warning_1
 --- APC runtime status report ---
 
 Total time:  0:00:02   cpu time:  0:00:01
-APC program (rule set): .APC_fd54_DC9_no_reference.johani.8946
+APC program (rule set): .APC_fd54_DC9_no_reference.geoff.7809
 APC producing solution number: 1
 Active method: column generator
 Active module: pricing (with reduced set of RTDs)
@@ -134,19 +146,7 @@ SECTION apc_status Solution_warning_1
 --- APC runtime status report ---
 
 Total time:  0:00:02   cpu time:  0:00:01
-APC program (rule set): .APC_fd54_DC9_no_reference.johani.8946
-APC producing solution number: 1
-Active method: column generator
-Active module: pricing (with reduced set of RTDs)
-Generated rotations: 13 this loop
-
-This "solution" contains the problematic chains that were printed
-in the warning section (visible from the batch viewer)
-SECTION apc_status Solution_warning_1
---- APC runtime status report ---
-
-Total time:  0:00:02   cpu time:  0:00:01
-APC program (rule set): .APC_fd54_DC9_no_reference.johani.8946
+APC program (rule set): .APC_fd54_DC9_no_reference.geoff.7809
 APC producing solution number: 1
 Active method: column generator
 Active module: pricing (with reduced set of RTDs)
@@ -158,7 +158,7 @@ SECTION apc_status Solution_warning_1
 --- APC runtime status report ---
 
 Total time:  0:00:02   cpu time:  0:00:01
-APC program (rule set): .APC_fd54_DC9_no_reference.johani.8946
+APC program (rule set): .APC_fd54_DC9_no_reference.geoff.7809
 APC producing solution number: 1
 Active method: column generator
 Active module: pricing (with reduced set of RTDs)
@@ -169,25 +169,25 @@ in the warning section (visible from the batch viewer)
 SECTION apc_status Solution_1
 --- APC runtime status report ---
 
-Total time:  0:00:03   cpu time:  0:00:01
-APC program (rule set): .APC_fd54_DC9_no_reference.johani.8946
+Total time:  0:00:02   cpu time:  0:00:01
+APC program (rule set): .APC_fd54_DC9_no_reference.geoff.7809
 APC producing solution number: 1
 Active method: column generator
 Active module: pricing (with reduced set of RTDs)
 Generated rotations: 125 this loop
 
 --- Analysis of solution (column generation) ---
- User..................: johani
- Date..................: 02/25/2004, 17:35
+ User..................: geoff
+ Date..................: 03/08/2004, 14:53
 
- APC program (rule set): .APC_fd54_DC9_no_reference.johani.8946
- Subplan...............: F36  MCS_W01  V1112_0122  APC_ji_single_base_CPH_spl.apcjohani25Feb17:31:25
+ APC program (rule set): .APC_fd54_DC9_no_reference.geoff.7809
+ Subplan...............: F36  MCS_W01  V1112_0122  APC_ji_single_base_CPH_spl.apcgeoff08Mar14:53:35
  Period................: 20020323 - 20020329
  Parameter set.........: V1112_0122/FC4_bas_col_1_v9_cost_anal   with  75  manual changes.
  Machine...............: singleton
  Method................: column generator
  Optimizer.............: opt_paqs
- Costing optimizer.....: paqs
+ Coordination optimizer: paqs
 
  APC COST ANALYSIS 
 
@@ -294,7 +294,7 @@ Generated rotations: 125 this loop
    Failed due to incomplete rotation......: 0
    Failed due to rule violation...........: 25
    Failed due to duplicate legs...........: 0
-  Cost overestimates......................: 70
+  Cost overestimates......................: 93
   Cost underestimates.....................: 13
   Legal rotations with cost overestimate..: 70
   Unattractive legal rotations............: 0
@@ -326,35 +326,35 @@ Generated rotations: 125 this loop
 
  CARMSYS..............: /carm/proj/matador/test_texttest/CARMSYS
  CARMUSR..............: /carm/carmen_paros_deliver/user_and_tmp/sk_test9_user/
- APC library version..: master.alpha-0.12
- APC library date.....: 19 December 2003 22:27:36
+ APC library version..: master.alpha-1.7
+ APC library date.....: 05 March 2004 22:25:17
 
 --- end of analysis ---
-Time:  3 s real  1560 ms cpu  60 ms cpu_child  memory:  32.8 Mb
-Delta: 0 s real  10 ms cpu  0 ms cpu_child  memory:   0.0 Mb
+Time:  2 s real  1570 ms cpu  20 ms cpu_child  memory:  34.0 Mb
+Delta: 0 s real  20 ms cpu  0 ms cpu_child  memory:   0.0 Mb
 
 SECTION apc_status Solution_2
 --- APC runtime status report ---
 
 Total time:  0:00:03   cpu time:  0:00:02
-APC program (rule set): .APC_fd54_DC9_no_reference.johani.8946
+APC program (rule set): .APC_fd54_DC9_no_reference.geoff.7809
 APC producing solution number: 2
 Active method: column generator
 Active module: pricing (with all RTDs)
 Generated rotations: 138 this loop
 
 --- Analysis of solution (column generation) ---
- User..................: johani
- Date..................: 02/25/2004, 17:35
+ User..................: geoff
+ Date..................: 03/08/2004, 14:53
 
- APC program (rule set): .APC_fd54_DC9_no_reference.johani.8946
- Subplan...............: F36  MCS_W01  V1112_0122  APC_ji_single_base_CPH_spl.apcjohani25Feb17:31:25
+ APC program (rule set): .APC_fd54_DC9_no_reference.geoff.7809
+ Subplan...............: F36  MCS_W01  V1112_0122  APC_ji_single_base_CPH_spl.apcgeoff08Mar14:53:35
  Period................: 20020323 - 20020329
  Parameter set.........: V1112_0122/FC4_bas_col_1_v9_cost_anal   with  75  manual changes.
  Machine...............: singleton
  Method................: column generator
  Optimizer.............: opt_paqs
- Costing optimizer.....: paqs
+ Coordination optimizer: paqs
 
  APC COST ANALYSIS 
 
@@ -461,7 +461,7 @@ Generated rotations: 138 this loop
    Failed due to incomplete rotation......: 0
    Failed due to rule violation...........: 34
    Failed due to duplicate legs...........: 0
-  Cost overestimates......................: 81
+  Cost overestimates......................: 111
   Cost underestimates.....................: 18
   Legal rotations with cost overestimate..: 81
   Unattractive legal rotations............: 0
@@ -493,35 +493,35 @@ Generated rotations: 138 this loop
 
  CARMSYS..............: /carm/proj/matador/test_texttest/CARMSYS
  CARMUSR..............: /carm/carmen_paros_deliver/user_and_tmp/sk_test9_user/
- APC library version..: master.alpha-0.12
- APC library date.....: 19 December 2003 22:27:36
+ APC library version..: master.alpha-1.7
+ APC library date.....: 05 March 2004 22:25:17
 
 --- end of analysis ---
-Time:  3 s real  1980 ms cpu  60 ms cpu_child  memory:  32.9 Mb
+Time:  3 s real  2010 ms cpu  20 ms cpu_child  memory:  34.0 Mb
 Delta: 0 s real  10 ms cpu  0 ms cpu_child  memory:   0.0 Mb
 
 SECTION apc_status Solution_3
 --- APC runtime status report ---
 
-Total time:  0:00:04   cpu time:  0:00:02
-APC program (rule set): .APC_fd54_DC9_no_reference.johani.8946
+Total time:  0:00:03   cpu time:  0:00:02
+APC program (rule set): .APC_fd54_DC9_no_reference.geoff.7809
 APC producing solution number: 3
 Active method: column generator
 Active module: pricing (with all RTDs)
 Generated rotations: 158 this loop
 
 --- Analysis of solution (column generation) ---
- User..................: johani
- Date..................: 02/25/2004, 17:35
+ User..................: geoff
+ Date..................: 03/08/2004, 14:53
 
- APC program (rule set): .APC_fd54_DC9_no_reference.johani.8946
- Subplan...............: F36  MCS_W01  V1112_0122  APC_ji_single_base_CPH_spl.apcjohani25Feb17:31:25
+ APC program (rule set): .APC_fd54_DC9_no_reference.geoff.7809
+ Subplan...............: F36  MCS_W01  V1112_0122  APC_ji_single_base_CPH_spl.apcgeoff08Mar14:53:35
  Period................: 20020323 - 20020329
  Parameter set.........: V1112_0122/FC4_bas_col_1_v9_cost_anal   with  75  manual changes.
  Machine...............: singleton
  Method................: column generator
  Optimizer.............: opt_paqs
- Costing optimizer.....: paqs
+ Coordination optimizer: paqs
 
  APC COST ANALYSIS 
 
@@ -628,7 +628,7 @@ Generated rotations: 158 this loop
    Failed due to incomplete rotation......: 0
    Failed due to rule violation...........: 57
    Failed due to duplicate legs...........: 0
-  Cost overestimates......................: 100
+  Cost overestimates......................: 150
   Cost underestimates.....................: 33
   Legal rotations with cost overestimate..: 100
   Unattractive legal rotations............: 2
@@ -660,18 +660,18 @@ Generated rotations: 158 this loop
 
  CARMSYS..............: /carm/proj/matador/test_texttest/CARMSYS
  CARMUSR..............: /carm/carmen_paros_deliver/user_and_tmp/sk_test9_user/
- APC library version..: master.alpha-0.12
- APC library date.....: 19 December 2003 22:27:36
+ APC library version..: master.alpha-1.7
+ APC library date.....: 05 March 2004 22:25:17
 
 --- end of analysis ---
-Time:  4 s real  2110 ms cpu  60 ms cpu_child  memory:  32.9 Mb
-Delta: 0 s real  10 ms cpu  0 ms cpu_child  memory:   0.0 Mb
+Time:  3 s real  2130 ms cpu  20 ms cpu_child  memory:  34.0 Mb
+Delta: 0 s real  0 ms cpu  0 ms cpu_child  memory:   0.0 Mb
 
 SECTION apc_status Solution_warning_4
 --- APC runtime status report ---
 
-Total time:  0:00:04   cpu time:  0:00:02
-APC program (rule set): .APC_fd54_DC9_no_reference.johani.8946
+Total time:  0:00:03   cpu time:  0:00:02
+APC program (rule set): .APC_fd54_DC9_no_reference.geoff.7809
 APC producing solution number: 4
 Active method: column generator
 Active module: pricing (with all RTDs)
@@ -682,8 +682,8 @@ in the warning section (visible from the batch viewer)
 SECTION apc_status Solution_warning_4
 --- APC runtime status report ---
 
-Total time:  0:00:05   cpu time:  0:00:02
-APC program (rule set): .APC_fd54_DC9_no_reference.johani.8946
+Total time:  0:00:04   cpu time:  0:00:02
+APC program (rule set): .APC_fd54_DC9_no_reference.geoff.7809
 APC producing solution number: 4
 Active method: column generator
 Active module: pricing (with all RTDs)
@@ -694,8 +694,8 @@ in the warning section (visible from the batch viewer)
 SECTION apc_status Solution_warning_4
 --- APC runtime status report ---
 
-Total time:  0:00:05   cpu time:  0:00:03
-APC program (rule set): .APC_fd54_DC9_no_reference.johani.8946
+Total time:  0:00:04   cpu time:  0:00:02
+APC program (rule set): .APC_fd54_DC9_no_reference.geoff.7809
 APC producing solution number: 4
 Active method: column generator
 Active module: pricing (with all RTDs)
@@ -706,25 +706,25 @@ in the warning section (visible from the batch viewer)
 SECTION apc_status Solution_4
 --- APC runtime status report ---
 
-Total time:  0:00:05   cpu time:  0:00:03
-APC program (rule set): .APC_fd54_DC9_no_reference.johani.8946
+Total time:  0:00:04   cpu time:  0:00:03
+APC program (rule set): .APC_fd54_DC9_no_reference.geoff.7809
 APC producing solution number: 4
 Active method: column generator
 Active module: pricing (with all RTDs)
 Generated rotations: 189 this loop
 
 --- Analysis of solution (column generation) ---
- User..................: johani
- Date..................: 02/25/2004, 17:35
+ User..................: geoff
+ Date..................: 03/08/2004, 14:53
 
- APC program (rule set): .APC_fd54_DC9_no_reference.johani.8946
- Subplan...............: F36  MCS_W01  V1112_0122  APC_ji_single_base_CPH_spl.apcjohani25Feb17:31:25
+ APC program (rule set): .APC_fd54_DC9_no_reference.geoff.7809
+ Subplan...............: F36  MCS_W01  V1112_0122  APC_ji_single_base_CPH_spl.apcgeoff08Mar14:53:35
  Period................: 20020323 - 20020329
  Parameter set.........: V1112_0122/FC4_bas_col_1_v9_cost_anal   with  75  manual changes.
  Machine...............: singleton
  Method................: column generator
  Optimizer.............: opt_paqs
- Costing optimizer.....: paqs
+ Coordination optimizer: paqs
 
  APC COST ANALYSIS 
 
@@ -825,14 +825,14 @@ Generated rotations: 189 this loop
  Colgen iterations.........: 68
  Legality (pass)...........: 12578
  Legality (fail)...........: 1502
- Costing time (sec)........: 1
+ Coordination time (sec)...: 1
 
  column generator specific statistics (applies to pricing phase)
   Rule checks.............................: 289
    Failed due to incomplete rotation......: 0
    Failed due to rule violation...........: 58
    Failed due to duplicate legs...........: 0
-  Cost overestimates......................: 128
+  Cost overestimates......................: 179
   Cost underestimates.....................: 45
   Legal rotations with cost overestimate..: 128
   Unattractive legal rotations............: 8
@@ -865,35 +865,35 @@ Generated rotations: 189 this loop
 
  CARMSYS..............: /carm/proj/matador/test_texttest/CARMSYS
  CARMUSR..............: /carm/carmen_paros_deliver/user_and_tmp/sk_test9_user/
- APC library version..: master.alpha-0.12
- APC library date.....: 19 December 2003 22:27:36
+ APC library version..: master.alpha-1.7
+ APC library date.....: 05 March 2004 22:25:17
 
 --- end of analysis ---
-Time:  5 s real  3210 ms cpu  70 ms cpu_child  memory:  32.9 Mb
+Time:  4 s real  3120 ms cpu  40 ms cpu_child  memory:  34.1 Mb
 Delta: 0 s real  10 ms cpu  0 ms cpu_child  memory:   0.0 Mb
 
 SECTION apc_status Solution_5
 --- APC runtime status report ---
 
 Total time:  0:00:05   cpu time:  0:00:03
-APC program (rule set): .APC_fd54_DC9_no_reference.johani.8946
+APC program (rule set): .APC_fd54_DC9_no_reference.geoff.7809
 APC producing solution number: 5
 Active method: column generator
 Active module: overcover to deadhead
 Generated rotations: 189 this loop
 
 --- Analysis of solution (column-generation) ---
- User..................: johani
- Date..................: 02/25/2004, 17:35
+ User..................: geoff
+ Date..................: 03/08/2004, 14:53
 
- APC program (rule set): .APC_fd54_DC9_no_reference.johani.8946
- Subplan...............: F36  MCS_W01  V1112_0122  APC_ji_single_base_CPH_spl.apcjohani25Feb17:31:25
+ APC program (rule set): .APC_fd54_DC9_no_reference.geoff.7809
+ Subplan...............: F36  MCS_W01  V1112_0122  APC_ji_single_base_CPH_spl.apcgeoff08Mar14:53:35
  Period................: 20020323 - 20020329
  Parameter set.........: V1112_0122/FC4_bas_col_1_v9_cost_anal   with  75  manual changes.
  Machine...............: singleton
  Method................: column generator
  Optimizer.............: opt_paqs
- Costing optimizer.....: paqs
+ Coordination optimizer: paqs
 
  APC COST ANALYSIS 
 
@@ -994,14 +994,14 @@ Generated rotations: 189 this loop
  Colgen iterations.........: 68
  Legality (pass)...........: 12578
  Legality (fail)...........: 1502
- Costing time (sec)........: 1
+ Coordination time (sec)...: 1
 
  column generator specific statistics (applies to pricing phase)
   Rule checks.............................: 289
    Failed due to incomplete rotation......: 0
    Failed due to rule violation...........: 58
    Failed due to duplicate legs...........: 0
-  Cost overestimates......................: 128
+  Cost overestimates......................: 179
   Cost underestimates.....................: 45
   Legal rotations with cost overestimate..: 128
   Unattractive legal rotations............: 8
@@ -1034,10 +1034,10 @@ Generated rotations: 189 this loop
 
  CARMSYS..............: /carm/proj/matador/test_texttest/CARMSYS
  CARMUSR..............: /carm/carmen_paros_deliver/user_and_tmp/sk_test9_user/
- APC library version..: master.alpha-0.12
- APC library date.....: 19 December 2003 22:27:36
+ APC library version..: master.alpha-1.7
+ APC library date.....: 05 March 2004 22:25:17
 
 --- end of analysis ---
-Time:  5 s real  3230 ms cpu  70 ms cpu_child  memory:  23.4 Mb
+Time:  5 s real  3150 ms cpu  40 ms cpu_child  memory:  24.4 Mb
 Delta: 0 s real  10 ms cpu  0 ms cpu_child  memory:   0.0 Mb
 
