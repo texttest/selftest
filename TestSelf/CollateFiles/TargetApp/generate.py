@@ -4,7 +4,7 @@ import os
 
 def generateFile(name):
     print "Generating",name
-    print >>file(name, "w"), name + os.linesep + "Today is Sunday"
+    print >>file(name, "w"), name + "\nToday is Sunday"
 
 generateFile("generated_first.dump")
 generateFile("generated_second.dump")
