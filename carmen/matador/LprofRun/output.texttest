@@ -1,13 +1,86 @@
-Note: Running with Diagnostics on, so performance checking is disabled!
+TextTest will write diagnostics in /users/geoff/texttesttmp/texttest.lsfgeoff11Oct11:00:39/carmen/matador/LprofRun based on file at /users/geoff/work/master/Testing/Automatic/texttest/log4py.conf
 Using Application Matador, checkout /users/geoff/work/master
 Compiling rules for Matador test-suite TargetApp
 Submitting Matador test-suite TargetApp to LSF queue short_i386_linux_RHEL
   Submitting Matador test-suite ArtificialUser to LSF queue short_i386_linux_RHEL
     Submitting Matador test-case generate_in_subperiod to LSF queue short_i386_linux_RHEL
-    Waiting for dispatch of Matador test-case generate_in_subperiod...
-    Attaching lprof on Matador test-case generate_in_subperiod, executing on balmaceda, pid 8551
-Comparing differences for Matador test-suite TargetApp
-  Comparing differences for Matador test-suite ArtificialUser
-    Comparing differences for Matador test-case generate_in_subperiod (on assignedposition.cas,crewmembers.cas,inputlegs.cas,inputrosters.cas,inputtrips.cas,outputrosters.cas,parameters.cas,errors.cas,lprof.cas,output.cas,prof.cas,solution.cas)
-    Matador test-case generate_in_subperiod : new results in assignedposition,outputrosters,lprof,prof
+    Reading slave results for Matador test-case generate_in_subperiod (on assignedposition.cas,crewmembers.cas,inputlegs.cas,inputrosters.cas,inputtrips.cas,outputrosters.cas,parameters.cas,errors.cas,lprof.cas,output.cas,solution.cas)
+    Matador test-case generate_in_subperiod : new results in assignedposition,outputrosters,lprof
     View details(v), Save(s) or continue(any other key)?
+------------------ New result in assignedposition --------------------
+map_crew_assigned_position : crew_assigned_position NOT trip-dependent
+Regular position For all trips, crew ARKE 85868 in pos P
+Regular position For all trips, crew ASKELAND 85503 in pos P
+Regular position For all trips, crew BAASTRUP 85544 in pos P
+Regular position For all trips, crew BAKKEN 86193 in pos C
+Regular position For all trips, crew BENBERG 86122 in pos C
+Regular position For all trips, crew BENTZEN 86189 in pos C
+Regular position For all trips, crew BERG 17613 in pos C
+Regular position For all trips, crew BERTHELS 85111 in pos C
+Regular position For all trips, crew BLICHFEL 85367 in pos P
+Regular position For all trips, crew BOJSEN 85120 in pos C
+Regular position For all trips, crew BOSERUP 85215 in pos C
+Regular position For all trips, crew LOHSE 85119 in pos C
+------------------ New result in outputrosters --------------------
+Rotation output, requirement : ARKE 85868 P
+<< (P)[  750  1C 2001-04-04T07:00  CPH  CPH 2001-04-04T14:00 ARKE 85868 P ]
+(P)[  284 14C 2001-04-11T11:10  ARN  ARN 2001-04-13T13:25 C/P¦TQ2<2 ]
+(P)[  751  1C 2001-04-16T07:00  CPH  CPH 2001-04-16T14:00 ARKE 85868 P ]
+(P)[  443  4C 2001-04-18T08:40  ARN  ARN 2001-04-19T05:20 C/P/I¦TQ2<2 ] ARKE 85868 P >>
+
+Rotation output, requirement : BENBERG 86122 C
+<< (C)[  752  1C 2001-04-03T07:00  CPH  CPH 2001-04-03T14:00 BENBERG 86122 C ]
+(C)[  145 10C 2001-04-05T16:45  CPH  CPH 2001-04-07T11:50 C/P¦TQ2<2/TQ3<2 ]
+(C)[  284 14C 2001-04-11T11:10  ARN  ARN 2001-04-13T13:25 C/P¦TQ2<2 ]
+(C)[  753  1C 2001-04-16T07:00  CPH  CPH 2001-04-16T14:00 BENBERG 86122 C ]
+(C)[  443  4C 2001-04-18T08:40  ARN  ARN 2001-04-19T05:20 C/P/I¦TQ2<2 ]
+(C)[  497 14C 2001-04-20T06:20  CPH  CPH 2001-04-23T06:05 C¦TQ2<2 ]
+(C)[  568 13C 2001-04-23T10:25  OSL  OSL 2001-04-27T08:25 C¦TQ3<2 ] BENBERG 86122 C >>
+
+Rotation output, requirement : BOSERUP 85215 C
+<< (C)[   35  6C 2001-04-02T04:45  ARN  ARN 2001-04-03T10:35 C/P/I ]
+(C)[   81  4C 2001-04-03T12:20  ARN  ARN 2001-04-03T20:05 C/P¦TQ1<2 ]
+(C)[  754  1C 2001-04-04T07:00  CPH  CPH 2001-04-04T14:00 BOSERUP 85215 C ]
+(C)[  140  6C 2001-04-05T13:00  CPH  CPH 2001-04-07T08:25 C/P¦TQ3<2 ]
+(C)[  185  4C 2001-04-07T12:55  CPH  CPH 2001-04-08T07:45 C/P/I ]
+(C)[  197  5C 2001-04-08T08:25  CPH  CPH 2001-04-08T16:25 C/P¦TQ2<2 ]
+(C)[  227  8C 2001-04-09T11:10  ARN  ARN 2001-04-10T20:05 C/P ]
+(C)[  286  4C 2001-04-11T11:40  ARN  ARN 2001-04-11T20:05 C/P¦TQ1<2 ]
+(C)[  299  2C 2001-04-12T04:45  ARN  ARN 2001-04-12T08:45 C/P ]
+(C)[  311  4C 2001-04-12T13:15  CPH  CPH 2001-04-12T20:50 C/P ]
+(C)[  323  2C 2001-04-13T07:15  CPH  CPH 2001-04-13T11:25 C/P ]
+(C)[  755  1C 2001-04-16T07:00  CPH  CPH 2001-04-16T14:00 BOSERUP 85215 C ]
+(C)[  444  6C 2001-04-18T10:25  OSL  OSL 2001-04-19T09:55 C¦TQ3<2 ]
+(C)[  756  1C 2001-04-19T11:25  CPH  CPH 2001-04-19T14:00 BOSERUP 85215 C ] BOSERUP 85215 C >>
+------------------ New result in lprof --------------------
+Flat profile, 43 samples in total
+
+ 23.3   23.3   __GI___munmap
+ 16.3   39.5   __i686.get_pc_thunk.cx
+ 14.0   53.5   __mmap
+  7.0   60.5   __GI_times
+  7.0   67.4   __libc_lseek
+  4.7   72.1   ConcreteTask::inqExternalId const
+  4.7   76.7   __waitpid_nocancel
+  4.7   81.4   __write_nocancel
+  2.3   83.7   std::_Rb_tree<Resource const*, std::pair<Resource const* const, std::pair<Task const*, std::map<int, int, std::less<int>, std::allocator<std::pair<int const, int> > > > >, std::_Select1st<std::pair<Resource const* const, std::pair<Task const*, std::map<int, int, std::less<int>, std::allocator<std::pair<int const, int> > > > > >, less_resource, std::allocator<std::pair<Resource const* const, std::pair<Task const*, std::map<int, int, std::less<int>, std::allocator<std::pair<int const, int> > > > > > >::_M_create_node
+  2.3   86.0   __close_nocancel
+  2.3   88.4   _int_malloc
+  2.3   90.7   ConcreteTask::getRequirement const
+  2.3   93.0   _fini
+  2.3   95.3   __open_nocancel
+  2.3   97.7   __pthread_mutex_lock_internal
+  2.3  100.0   __static_initialization_and_destruction_0
+  0.0  100.0   CompositeTaskBuilder::createRotation
+  0.0  100.0   TaskHandle::inqExternalId const
+  0.0  100.0   RRLParser::~RRLParser
+  0.0  100.0   RRLParser::RRLParser
+  0.0  100.0   RRLParser::readNextRecordLine
+  0.0  100.0   RRLParser::getNextRecord
+  0.0  100.0   Matador::run
+  0.0  100.0   Matador::runMethods
+  0.0  100.0   Parser::readNextLine
+  0.0  100.0   ImproveMethodGenerator::runGenerator
+  0.0  100.0   ImproveMethodGenerator::generate
+  0.0  100.0   Filer::saveFile
+    Save(s) or continue(any other key)?
