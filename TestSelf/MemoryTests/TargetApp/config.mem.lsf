@@ -1,0 +1,14 @@
+# Test for LSF module...
+config_module:queuesystem
+queue_system_module:${QUEUE_SYSTEM}
+
+collect_standard_error:0
+
+login_shell:/bin/tcsh
+
+# Make sure this isn't checked when it shouldn't be...
+[performance_test_resource]
+memory:cpuf>0
+
+[performance_test_machine]
+memory:{CLEAR LIST}
