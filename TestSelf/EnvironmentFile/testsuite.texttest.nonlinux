@@ -7,8 +7,13 @@ RemoveSuiteVars
 # Make sure that environment.a.b overrides environment.a
 DoubleVersionOverride
 
+# Make sure we can override config file settings as well as environment files (config.a.b overrides config.a). 
+# This is more complex as it happens in two parts
+DoubleVersionConfigOverride
+
 # Check that when an exception is thrown in a test, its environment is cleaned
 RemoveVarOnException
 
 # Make sure that checkout expansions are only used with real relative paths
 CheckoutExpansionNoPath
+
