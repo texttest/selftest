@@ -22,6 +22,16 @@ Description:
 Geoff Rules OK!
 ******************************************************"""
 
+unknownBug = """******************************************************
+BugId: 450000          Assigned: 
+Severity:   Status: 
+Priority:      Created: 
+Component: 
+Summary: 
+Description:
+
+******************************************************"""
+
 import sys
 from getopt import getopt
 
@@ -31,7 +41,7 @@ def printBug(number):
     elif number == 479:
         print openBug
     else:
-        print "Unknown bug", number
+        print unknownBug
 
 args, remainder = getopt(sys.argv[1:], "b:")
 for opt, value in args:
