@@ -1,10 +1,20 @@
-TextTest will write diagnostics in /users/geoff/work/master/Testing/Automatic/texttest
-Using Application ENV, version refvar, checkout /users/geoff/texttesttmp/texttestgeoff28Sep12:03:13/TestSelf/EnvironmentFile/UpdateReferenceVars/TargetApp/./
+TextTest will write diagnostics in /users/geoff/work/master/Testing/Automatic/texttest/TestSelf/EnvironmentFile/UpdateReferenceVars/Diagnostics
+Using Application ENV, version refvar, checkout /users/geoff/texttesttmp/texttestgeoff28Sep15:02:21/TestSelf/EnvironmentFile/UpdateReferenceVars/TargetApp/./
 Running ENV test-suite TargetApp
-  Running ENV test-case Test2
+  Running ENV test-suite Suite1
+    Running ENV test-case Test1
 Comparing differences for ENV test-suite TargetApp
-  Comparing differences for ENV test-case Test2 (on output.env.refvar)
-  ENV test-case Test2 FAILED : differences in output
+  Comparing differences for ENV test-suite Suite1
+    Comparing differences for ENV test-case Test1 (on output.env)
+    ENV test-case Test1 FAILED : differences in output
+    View details(v), Save Version refvar(1), Save(s) or continue(any other key)?
+------------------ Differences in output --------------------
+- VAR1 = value1
++ VAR1 = default_extended
+    Save Version refvar(1), Save(s) or continue(any other key)?
+  Running ENV test-case Test2 
+  Comparing differences for ENV test-case Test2  (on output.env.refvar)
+  ENV test-case Test2  FAILED : differences in output
   View details(v), Save Version refvar(1), Save(s) or continue(any other key)?
 ------------------ Differences in output --------------------
 - VAR2  NOT DEFINED
