@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-import os
+import os, sys
 
 def printEnv(name):
     if os.environ.has_key(name):
@@ -9,3 +9,5 @@ def printEnv(name):
 
 printEnv("VAR1")
 printEnv("VAR2")
+if len(sys.argv) > 1:
+    print "Got argument '" + sys.argv[1] + "'"
