@@ -1,0 +1,534 @@
+Flat profile, 28948 samples in total
+
+ 16.8   16.8   LP::calc_reduced_costs_and_gradient
+ 15.3   32.1   cost_node
+ 10.9   42.9   bound_node
+  6.3   49.2   minInd2Indirect
+  5.3   54.5   ab::update
+  4.8   59.3   problem::update_c_bar_subgrad
+  3.9   63.3   compute_sp_bounds
+  3.7   66.9   CGSUB::price_blocks
+  3.2   70.1   ab::get_grad
+  2.5   72.6   a1b1_row::iterate
+  2.1   74.7   ab::iterate
+  1.4   76.1   problem::update_y_gradient
+  1.3   77.4   addIndirect
+  1.2   78.6   init_nodes
+  1.2   79.8   problem::compute_lb_subgrad
+  1.1   80.9   reset_node_costs
+  1.0   81.9   lex_lt_conn
+  1.0   82.8   cost_sp_network
+  0.9   83.7   __GI___mremap
+  0.8   84.5   deallocate_KSP_heaps
+  0.8   85.3   create_label_queue
+  0.7   86.0   Solver::iterateAllConstraints
+  0.6   86.6   problem::compute_red_costs
+  0.6   87.2   Fixed_Connection::cost_out_variables
+  0.5   87.7   LP::do_subgrad_iter
+  0.5   88.3   innerLoopPassive
+  0.5   88.8   apc_segment_next_item
+  0.5   89.2   AbPartialSort
+  0.2   89.4   problem::do_n_subgrad_iter
+  0.1   89.5   iterate_rule
+  0.1   89.7   apc_segment_next_unit
+  0.1   89.8   _fini
+  0.1   89.9   find_attractive_legal_rotation
+  0.1   90.0   ParActProblem::findMinLocal
+  0.1   90.1   CGSUB::fix_variables
+  0.1   90.2   exchange_connection
+  0.1   90.2   execute_all_rules
+  0.0   90.3   S__topmoduleMgsk_aircraft_qualification_fd
+  0.0   90.3   get_dict_ix_value
+  0.0   90.3   CO_PAQS::addVar
+  0.0   90.3   crc_compute_value
+  0.0   90.3   legal
+  0.0   90.4   S__topmoduleMcheck_in_time_fd_k96
+  0.0   90.4   S__topmoduleMfdca54_max_duty_incl_transfer_night_1x24_hrs_fwd
+  0.0   90.4   S__topmoduleMduty_period_start_Dict_agg_first0
+  0.0   90.4   __realloc
+  0.0   90.4   crc_execute_all_rules
+  0.0   90.4   CRCComputeValue
+  0.0   90.4   D__topmoduleMcheck_in_time
+  0.0   90.4   MB_WorkSpace::mb_legal
+  0.0   90.4   ParActProblem::updateProblem
+  0.0   90.4   do_delayed_refinements
+  0.0   90.4   problem::add_passive_set_column
+  0.0   90.4   CO_PAQS::optimize
+  0.0   90.4   D__topmoduleMcheck_in_time_fd
+  0.0   90.4   find_xday_rotations_in_block_network
+  0.0   90.4   RightLeafNodeSplitter::finishStrongRefinement
+  0.0   90.4   CRCExecuteAllRules
+  0.0   90.4   S__topmoduleMagreement_fd_table
+  0.0   90.4   D__topmoduleMaircraft_qualification
+  0.0   90.4   problem::do_dualstuff
+  0.0   90.4   problem::restart_subgrad
+  0.0   90.4   CGSUB::pricing
+  0.0   90.4   Control::dualbla
+  0.0   90.4   Control::iterateActiveStrategy
+  0.0   90.4   Control::subgrad_lb
+  0.0   90.4   Control::first_scan
+  0.0   90.4   __libc_start_main
+  0.0   90.4   D__topmoduleMaircraft_qualification_fd
+  0.0   90.4   D__topmoduleMagreement_fd
+  0.0   90.4   D__topmoduleMagreement
+  0.0   90.4   main
+  0.0   90.4   D__topmoduleMcost_of_crr_linear
+  0.0   90.4   D__topmoduleMcheck_in_time_fd_k96
+  0.0   90.4   CG_MASTER::add_cg_var
+  0.0   90.4   CO_MASTER::optimize_paqs
+  0.0   90.4   CO_MASTER::optimize_with_conn_fixing
+  0.0   90.4   CO_MASTER::addVar
+  0.0   90.4   realloc_test
+  0.0   90.4   add_rotation_to_lp
+  0.0   90.4   generate_Blocks
+  0.0   90.4   generate_blocks
+  0.0   90.4   find_rotations_in_ksp_network
+  0.0   90.4   find_rotations_in_block_network
+  0.0   90.4   RefinementProcess::refine
+  0.0   90.4   RefinementProcess::search
+  0.0   90.4   ParActProblem::scanGlobal
+  0.0   90.4   ParActProblem::addNewColumn
+  0.0   90.4   generate_block_network
+  0.0   90.4   apc_dfs_generate_blocks
+  0.0   90.4   apc_col_gen_method
+  0.0   90.4   apc_col_gen_method2
+  0.0   90.4   add_block_array_if_ok
+  0.0   90.4   apc_legal_subsequence
+  0.0   90.4   find_xday_rotations_for_base
+  0.0   90.4   apc_find_illegal_subsequences
+  0.0   90.4   start_column_generation
+  0.0   90.4   apc_run_solution_methods
+
+Call graph
+
+             100.0  -root-  -0-
+-  1-  100.0   0.0  __libc_start_main
+             100.0  main  -2-
+--------
+             100.0  __libc_start_main  -1-
+-  2-  100.0   0.0  main
+              99.5  apc_run_solution_methods  -3-
+--------
+              99.5  main  -2-
+-  3-   99.5   0.0  apc_run_solution_methods
+              99.5  apc_col_gen_method  -4-
+--------
+              99.5  apc_run_solution_methods  -3-
+-  4-   99.5   0.0  apc_col_gen_method
+              99.5  apc_col_gen_method2  -5-
+--------
+              99.5  apc_col_gen_method  -4-
+-  5-   99.5   0.0  apc_col_gen_method2
+              99.4  start_column_generation  -6-
+               0.1  generate_block_network  -48-
+--------
+              99.4  apc_col_gen_method2  -5-
+-  6-   99.4   0.0  start_column_generation
+              99.4  CO_MASTER::optimize_paqs  -7-
+--------
+              99.4  start_column_generation  -6-
+-  7-   99.4   0.0  CO_MASTER::optimize_paqs
+              99.4  CO_MASTER::optimize_with_conn_fixing  -8-
+--------
+              99.4  CO_MASTER::optimize_paqs  -7-
+-  8-   99.4   0.0  CO_MASTER::optimize_with_conn_fixing
+              46.6  CGSUB::pricing  -9-
+              32.5  CO_PAQS::optimize  -12-
+              19.8  CGSUB::fix_variables  -14-
+--------
+              46.6  CO_MASTER::optimize_with_conn_fixing  -8-
+-  9-   46.6   0.0  CGSUB::pricing
+              44.5  find_rotations_in_block_network  -10-
+               1.2  generate_block_network  -48-
+               0.9  CGSUB::price_blocks  -33-
+--------
+              44.5  CGSUB::pricing  -9-
+- 10-   44.5   0.0  find_rotations_in_block_network
+              44.4  find_xday_rotations_in_block_network  -11-
+--------
+              44.4  find_rotations_in_block_network  -10-
+- 11-   44.4   0.0  find_xday_rotations_in_block_network
+              23.6  find_rotations_in_ksp_network  -13-
+              16.9  find_xday_rotations_for_base  -16-
+               2.8  CGSUB::price_blocks  -33-
+               1.1  reset_node_costs  -53-
+               0.0  do_delayed_refinements  -45-
+--------
+              32.5  CO_MASTER::optimize_with_conn_fixing  -8-
+- 12-   32.5   0.0  CO_PAQS::optimize
+              15.5  Control::subgrad_lb  -21-
+              11.0  Control::iterateActiveStrategy  -24-
+               4.0  Control::first_scan  -32-
+               0.9  Control::dualbla  -68-
+               0.5  ParActProblem::updateProblem  -76-
+               0.0  _fini  -55-
+--------
+              23.6  find_xday_rotations_in_block_network  -11-
+- 13-   23.6   0.0  find_rotations_in_ksp_network
+              19.1  find_attractive_legal_rotation  -15-
+               1.3  find_xday_rotations_for_base  -16-
+               1.2  init_nodes  -50-
+               1.1  do_delayed_refinements  -45-
+               0.9  deallocate_KSP_heaps  -72-
+--------
+              19.8  CO_MASTER::optimize_with_conn_fixing  -8-
+- 14-   19.8   0.1  CGSUB::fix_variables
+              17.4  LP::do_subgrad_iter  -18-
+               1.7  Fixed_Connection::cost_out_variables  -43-
+               0.0  _fini  -55-
+--------
+              19.1  find_rotations_in_ksp_network  -13-
+- 15-   19.1   0.1  find_attractive_legal_rotation
+              14.8  compute_sp_bounds  -23-
+               2.7  add_block_array_if_ok  -36-
+               1.0  exchange_connection  -60-
+--------
+              16.9  find_xday_rotations_in_block_network  -11-
+               1.3  find_rotations_in_ksp_network  -13-
+- 16-   18.2   0.0  find_xday_rotations_for_base
+              17.5  cost_sp_network  -17-
+               0.4  add_block_array_if_ok  -36-
+               0.3  do_delayed_refinements  -45-
+--------
+              17.5  find_xday_rotations_for_base  -16-
+- 17-   17.5   1.0  cost_sp_network
+              16.5  cost_node  -20-
+--------
+              17.4  CGSUB::fix_variables  -14-
+- 18-   17.4   0.5  LP::do_subgrad_iter
+              16.8  LP::calc_reduced_costs_and_gradient  -19-
+--------
+              16.8  LP::do_subgrad_iter  -18-
+- 19-   16.8  16.8  LP::calc_reduced_costs_and_gradient
+--------
+              16.5  cost_sp_network  -17-
+- 20-   16.5  15.3  cost_node
+               1.0  lex_lt_conn  -59-
+--------
+              15.5  CO_PAQS::optimize  -12-
+- 21-   15.5   0.0  Control::subgrad_lb
+              14.0  problem::do_n_subgrad_iter  -22-
+               1.5  problem::restart_subgrad  -47-
+--------
+              14.0  Control::subgrad_lb  -21-
+               1.5  problem::restart_subgrad  -47-
+- 22-   15.5   0.2  problem::do_n_subgrad_iter
+               9.6  problem::update_c_bar_subgrad  -28-
+               4.6  problem::update_y_gradient  -31-
+               1.2  problem::compute_lb_subgrad  -51-
+               0.0  _fini  -55-
+--------
+              14.8  find_attractive_legal_rotation  -15-
+- 23-   14.8   3.9  compute_sp_bounds
+              10.9  bound_node  -26-
+--------
+              11.0  CO_PAQS::optimize  -12-
+               3.5  Control::first_scan  -32-
+- 24-   14.5   0.0  Control::iterateActiveStrategy
+              13.4  Solver::iterateAllConstraints  -25-
+               0.0  Control::dualbla  -68-
+--------
+              13.4  Control::iterateActiveStrategy  -24-
+- 25-   13.4   0.7  Solver::iterateAllConstraints
+              10.0  a1b1_row::iterate  -27-
+               2.7  ab::iterate  -41-
+--------
+              10.9  compute_sp_bounds  -23-
+- 26-   10.9  10.9  bound_node
+--------
+              10.0  Solver::iterateAllConstraints  -25-
+- 27-   10.0   2.5  a1b1_row::iterate
+               6.3  minInd2Indirect  -29-
+               1.1  addIndirect  -49-
+--------
+               9.6  problem::do_n_subgrad_iter  -22-
+- 28-    9.6   4.8  problem::update_c_bar_subgrad
+               4.8  ab::update  -30-
+--------
+               6.3  a1b1_row::iterate  -27-
+- 29-    6.3   6.3  minInd2Indirect
+--------
+               4.8  problem::update_c_bar_subgrad  -28-
+               0.3  problem::compute_red_costs  -64-
+- 30-    5.3   5.3  ab::update
+--------
+               4.6  problem::do_n_subgrad_iter  -22-
+- 31-    4.6   1.4  problem::update_y_gradient
+               3.2  ab::get_grad  -35-
+--------
+               4.0  CO_PAQS::optimize  -12-
+- 32-    4.0   0.0  Control::first_scan
+               3.5  Control::iterateActiveStrategy  -24-
+               0.3  ParActProblem::updateProblem  -76-
+               0.0  Control::dualbla  -68-
+--------
+               2.8  find_xday_rotations_in_block_network  -11-
+               0.9  CGSUB::pricing  -9-
+- 33-    3.7   3.7  CGSUB::price_blocks
+--------
+               1.7  MB_WorkSpace::mb_legal  -44-
+               0.7  apc_legal_subsequence  -75-
+               0.3  add_block_array_if_ok  -36-
+- 34-    3.3   0.0  legal
+               3.1  CRCExecuteAllRules  -38-
+--------
+               3.2  problem::update_y_gradient  -31-
+- 35-    3.2   3.2  ab::get_grad
+--------
+               2.7  find_attractive_legal_rotation  -15-
+               0.4  find_xday_rotations_for_base  -16-
+- 36-    3.2   0.0  add_block_array_if_ok
+               1.0  add_rotation_to_lp  -57-
+               0.8  apc_find_illegal_subsequences  -74-
+               0.3  legal  -34-
+--------
+               3.0  execute_all_rules  -40-
+- 37-    3.1   0.1  iterate_rule
+               0.7  S__topmoduleMfdca54_max_duty_incl_transfer_night_1x24_hrs_fwd  -81-
+--------
+               3.1  legal  -34-
+- 38-    3.1   0.0  CRCExecuteAllRules
+               3.1  crc_execute_all_rules  -39-
+--------
+               3.1  CRCExecuteAllRules  -38-
+- 39-    3.1   0.0  crc_execute_all_rules
+               3.1  execute_all_rules  -40-
+--------
+               3.1  crc_execute_all_rules  -39-
+- 40-    3.1   0.1  execute_all_rules
+               3.0  iterate_rule  -37-
+--------
+               2.7  Solver::iterateAllConstraints  -25-
+- 41-    2.7   2.1  ab::iterate
+               0.5  AbPartialSort  -89-
+--------
+               1.7  apc_dfs_generate_blocks  -42-
+               0.9  generate_blocks  -66-
+- 42-    2.6   0.0  apc_dfs_generate_blocks
+               1.7  apc_dfs_generate_blocks  -42-
+               0.5  MB_WorkSpace::mb_legal  -44-
+--------
+               1.7  CGSUB::fix_variables  -14-
+- 43-    1.8   0.6  Fixed_Connection::cost_out_variables
+               0.6  apc_segment_next_unit  -85-
+               0.0  _fini  -55-
+--------
+               0.9  RightLeafNodeSplitter::finishStrongRefinement  -54-
+               0.5  apc_dfs_generate_blocks  -42-
+               0.0  generate_blocks  -66-
+- 44-    1.7   0.0  MB_WorkSpace::mb_legal
+               1.7  legal  -34-
+--------
+               1.1  find_rotations_in_ksp_network  -13-
+               0.3  find_xday_rotations_for_base  -16-
+               0.0  find_xday_rotations_in_block_network  -11-
+- 45-    1.5   0.0  do_delayed_refinements
+               1.5  RefinementProcess::refine  -46-
+--------
+               1.5  do_delayed_refinements  -45-
+- 46-    1.5   0.0  RefinementProcess::refine
+               1.2  RefinementProcess::search  -52-
+--------
+               1.5  Control::subgrad_lb  -21-
+- 47-    1.5   0.0  problem::restart_subgrad
+               1.5  problem::do_n_subgrad_iter  -22-
+--------
+               1.2  CGSUB::pricing  -9-
+               0.1  apc_col_gen_method2  -5-
+- 48-    1.3   0.0  generate_block_network
+               0.9  generate_Blocks  -65-
+--------
+               1.1  a1b1_row::iterate  -27-
+- 49-    1.3   1.3  addIndirect
+--------
+               1.2  find_rotations_in_ksp_network  -13-
+- 50-    1.2   1.2  init_nodes
+--------
+               1.2  problem::do_n_subgrad_iter  -22-
+- 51-    1.2   1.2  problem::compute_lb_subgrad
+--------
+               1.2  RefinementProcess::refine  -46-
+- 52-    1.2   0.0  RefinementProcess::search
+               1.1  RightLeafNodeSplitter::finishStrongRefinement  -54-
+--------
+               1.1  find_xday_rotations_in_block_network  -11-
+- 53-    1.1   1.1  reset_node_costs
+--------
+               1.1  RefinementProcess::search  -52-
+- 54-    1.1   0.0  RightLeafNodeSplitter::finishStrongRefinement
+               0.9  MB_WorkSpace::mb_legal  -44-
+--------
+               0.7  _fini  -55-
+               0.0  Fixed_Connection::cost_out_variables  -43-
+               0.0  problem::do_n_subgrad_iter  -22-
+               0.0  CO_PAQS::optimize  -12-
+               0.0  CGSUB::fix_variables  -14-
+- 55-    1.1   0.1  _fini
+               0.7  _fini  -55-
+--------
+               0.9  Control::dualbla  -68-
+- 56-    1.0   0.0  problem::do_dualstuff
+               1.0  problem::compute_red_costs  -64-
+--------
+               1.0  add_block_array_if_ok  -36-
+- 57-    1.0   0.0  add_rotation_to_lp
+               1.0  CG_MASTER::add_cg_var  -61-
+--------
+               0.9  realloc_test  -71-
+               0.1  create_label_queue  -67-
+- 58-    1.0   0.0  __realloc
+               0.9  __GI___mremap  -73-
+--------
+               1.0  cost_node  -20-
+- 59-    1.0   1.0  lex_lt_conn
+--------
+               1.0  find_attractive_legal_rotation  -15-
+- 60-    1.0   0.1  exchange_connection
+               0.9  create_label_queue  -67-
+--------
+               1.0  add_rotation_to_lp  -57-
+- 61-    1.0   0.0  CG_MASTER::add_cg_var
+               1.0  CO_MASTER::addVar  -62-
+--------
+               1.0  CG_MASTER::add_cg_var  -61-
+- 62-    1.0   0.0  CO_MASTER::addVar
+               1.0  CO_PAQS::addVar  -63-
+--------
+               1.0  CO_MASTER::addVar  -62-
+- 63-    1.0   0.0  CO_PAQS::addVar
+               0.9  ParActProblem::addNewColumn  -69-
+--------
+               1.0  problem::do_dualstuff  -56-
+- 64-    1.0   0.6  problem::compute_red_costs
+               0.3  ab::update  -30-
+--------
+               0.9  generate_block_network  -48-
+- 65-    0.9   0.0  generate_Blocks
+               0.9  generate_blocks  -66-
+--------
+               0.9  generate_Blocks  -65-
+- 66-    0.9   0.0  generate_blocks
+               0.9  apc_dfs_generate_blocks  -42-
+               0.0  MB_WorkSpace::mb_legal  -44-
+--------
+               0.9  exchange_connection  -60-
+- 67-    0.9   0.8  create_label_queue
+               0.1  __realloc  -58-
+--------
+               0.9  CO_PAQS::optimize  -12-
+               0.0  Control::iterateActiveStrategy  -24-
+               0.0  Control::first_scan  -32-
+- 68-    0.9   0.0  Control::dualbla
+               0.9  problem::do_dualstuff  -56-
+--------
+               0.9  CO_PAQS::addVar  -63-
+- 69-    0.9   0.0  ParActProblem::addNewColumn
+               0.9  problem::add_passive_set_column  -70-
+--------
+               0.9  ParActProblem::addNewColumn  -69-
+- 70-    0.9   0.0  problem::add_passive_set_column
+               0.9  realloc_test  -71-
+--------
+               0.9  problem::add_passive_set_column  -70-
+- 71-    0.9   0.0  realloc_test
+               0.9  __realloc  -58-
+--------
+               0.9  find_rotations_in_ksp_network  -13-
+- 72-    0.9   0.8  deallocate_KSP_heaps
+--------
+               0.9  __realloc  -58-
+- 73-    0.9   0.9  __GI___mremap
+--------
+               0.8  add_block_array_if_ok  -36-
+- 74-    0.8   0.0  apc_find_illegal_subsequences
+               0.2  apc_legal_subsequence  -75-
+--------
+               0.2  apc_find_illegal_subsequences  -74-
+- 75-    0.8   0.0  apc_legal_subsequence
+               0.7  legal  -34-
+               0.0  apc_segment_next_item  -96-
+               0.0  apc_segment_next_unit  -85-
+--------
+               0.5  CO_PAQS::optimize  -12-
+               0.3  Control::first_scan  -32-
+- 76-    0.8   0.0  ParActProblem::updateProblem
+               0.8  ParActProblem::scanGlobal  -77-
+--------
+               0.8  ParActProblem::updateProblem  -76-
+- 77-    0.8   0.0  ParActProblem::scanGlobal
+               0.8  ParActProblem::findMinLocal  -78-
+--------
+               0.8  ParActProblem::scanGlobal  -77-
+- 78-    0.8   0.1  ParActProblem::findMinLocal
+               0.5  innerLoopPassive  -88-
+--------
+- 79-    0.8   0.0  CRCComputeValue
+               0.7  crc_compute_value  -82-
+--------
+               0.7  S__topmoduleMduty_period_start_Dict_agg_first0  -83-
+- 80-    0.8   0.0  D__topmoduleMcheck_in_time
+               0.5  D__topmoduleMcheck_in_time_fd  -87-
+--------
+               0.7  iterate_rule  -37-
+- 81-    0.7   0.0  S__topmoduleMfdca54_max_duty_incl_transfer_night_1x24_hrs_fwd
+--------
+               0.7  CRCComputeValue  -79-
+- 82-    0.7   0.0  crc_compute_value
+               0.7  get_dict_ix_value  -84-
+--------
+- 83-    0.7   0.0  S__topmoduleMduty_period_start_Dict_agg_first0
+               0.7  D__topmoduleMcheck_in_time  -80-
+--------
+               0.7  crc_compute_value  -82-
+- 84-    0.7   0.0  get_dict_ix_value
+--------
+               0.6  Fixed_Connection::cost_out_variables  -43-
+               0.0  apc_legal_subsequence  -75-
+- 85-    0.6   0.1  apc_segment_next_unit
+               0.5  apc_segment_next_item  -96-
+--------
+- 86-    0.5   0.0  D__topmoduleMcost_of_crr_linear
+--------
+               0.5  D__topmoduleMcheck_in_time  -80-
+- 87-    0.5   0.0  D__topmoduleMcheck_in_time_fd
+               0.5  D__topmoduleMcheck_in_time_fd_k96  -97-
+--------
+               0.5  ParActProblem::findMinLocal  -78-
+- 88-    0.5   0.5  innerLoopPassive
+--------
+               0.5  ab::iterate  -41-
+- 89-    0.5   0.5  AbPartialSort
+--------
+- 90-    0.5   0.0  D__topmoduleMagreement
+               0.5  D__topmoduleMagreement_fd  -91-
+--------
+               0.5  D__topmoduleMagreement  -90-
+- 91-    0.5   0.0  D__topmoduleMagreement_fd
+               0.5  S__topmoduleMagreement_fd_table  -92-
+--------
+               0.5  D__topmoduleMagreement_fd  -91-
+- 92-    0.5   0.0  S__topmoduleMagreement_fd_table
+               0.5  D__topmoduleMaircraft_qualification  -93-
+--------
+               0.5  S__topmoduleMagreement_fd_table  -92-
+- 93-    0.5   0.0  D__topmoduleMaircraft_qualification
+               0.5  D__topmoduleMaircraft_qualification_fd  -94-
+--------
+               0.5  D__topmoduleMaircraft_qualification  -93-
+- 94-    0.5   0.0  D__topmoduleMaircraft_qualification_fd
+               0.5  S__topmoduleMgsk_aircraft_qualification_fd  -95-
+--------
+               0.5  D__topmoduleMaircraft_qualification_fd  -94-
+- 95-    0.5   0.0  S__topmoduleMgsk_aircraft_qualification_fd
+--------
+               0.5  apc_segment_next_unit  -85-
+               0.0  apc_legal_subsequence  -75-
+- 96-    0.5   0.5  apc_segment_next_item
+--------
+               0.5  D__topmoduleMcheck_in_time_fd  -87-
+- 97-    0.5   0.0  D__topmoduleMcheck_in_time_fd_k96
+               0.5  S__topmoduleMcheck_in_time_fd_k96  -98-
+--------
+               0.5  D__topmoduleMcheck_in_time_fd_k96  -97-
+- 98-    0.5   0.0  S__topmoduleMcheck_in_time_fd_k96
+--------
