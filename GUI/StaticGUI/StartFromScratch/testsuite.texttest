@@ -3,3 +3,12 @@
 
 # Check that adding a suite to an empty test suite works
 AddSuite
+
+# Make sure an existing directory doesn't trip us up
+AddToExistingTest
+
+# Try to create a test that clashes with an existing file name
+FileNameClash
+
+# Try to re-add an existing test - should fail
+AddDuplicateTest
