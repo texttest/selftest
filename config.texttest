@@ -23,9 +23,12 @@ output:Killed process{WORD 3}
 targetReport:FAILED on{WORD 4}
 targetReport:^[0-9][0-9][0-9][0-9][0-9][0-9]{WORD 1}
 targetReport:{LINE 1}
+targetReport:^>
+targetReport:% faster{WORD -2}
 catalogue:.nfs
 catalogue:subdirectory TargetApp/dip
 catalogue:subdirectory TargetApp/core
+catalogue:subdirectory TargetApp/perf
 errors:RENDER
 errors:\.py
 errors:CountTest.__del__
