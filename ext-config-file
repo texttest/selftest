@@ -20,13 +20,16 @@ output:signal 15
 output:signal 9
 output:Killed process{WORD 3}
 output:Bug file at{WORD 4}
+output:Sending mail from{WORD -1}
+output:Could not send mail{WORD -6}
 targetReport: on .*test-case.*under{WORD -7}
 targetReport:^[0-9][0-9][0-9][0-9][0-9][0-9]{WORD 1}
 targetReport:{LINE 1}
 targetReport:^>
 targetReport:% faster{WORD -2}
-collectReport:{LINE 1}
-collectReport:^[0-9][0-9][0-9][0-9][0-9][0-9]{WORD 1}
+collectReport:^From:{WORD 2}
+collectReport:^To:{WORD 2}
+collectReport:^Subject:{WORD 2}
 catalogue:.nfs
 catalogue:[0-9][0-9][A-Z][a-z][a-z][0-9][0-9][0-9][0-9][0-9][0-9]
 errors:RENDER
