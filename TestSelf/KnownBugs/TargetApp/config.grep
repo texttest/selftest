@@ -1,9 +1,11 @@
-binary:/bin/grep
-
-config_module:unixConfig
+# Write a fake grep so that these tests can also work on windows...
+binary:$TEXTTEST_CHECKOUT/grep.py
 
 # Pick up the fake version of bugcli
 link_test_path:FakeBugcli
+
+# Force regeneration
+home_operating_system:posix
 
 # Use collection for self tests, so we can compare reports
 [batch_use_collection]
