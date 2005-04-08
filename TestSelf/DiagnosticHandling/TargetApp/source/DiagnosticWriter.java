@@ -1,5 +1,6 @@
 
 // javac -classpath /usr/share/java/log4j.jar DiagnosticWriter.java
+// jar cmf manifest writediags.jar *.class
   
 import org.apache.log4j.*;
 import java.io.*;
@@ -21,6 +22,8 @@ class DiagnosticWriter
       File config = new File(log4jconfigfile);
       if (config.exists())
         PropertyConfigurator.configure(log4jconfigfile);
+      else
+        System.out.println("Failed to find property file");
       return true;
     }
     catch (FileNotFoundException exc)
