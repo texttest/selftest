@@ -1,11 +1,11 @@
-TextTest will write diagnostics in /users/geoff/texttesttmp/texttest.lsfgeoff20Jan13:43:27/carmen/matador/LprofRun based on file at /users/geoff/work/master/Testing/Automatic/texttest/log4py.conf
+TextTest will write diagnostics in /users/geoff/texttesttmp/texttest.lsfgeoff11Apr171107/carmen/matador/LprofRun based on file at /users/geoff/work/master/Testing/Automatic/texttest/log4py.conf
 Using Application Matador, checkout /carm/proj/texttest/selftest_data
 Compiling rules for Matador test-suite TargetApp
 Submitting Matador test-suite TargetApp to LSF queues
   Submitting Matador test-suite ArtificialUser to LSF queues
     Submitting Matador test-case generate_in_subperiod to LSF queue short_i386_linux_RHEL
     Reading slave results for Matador test-case generate_in_subperiod (on assignedposition.cas,crewmembers.cas,inputlegs.cas,inputrosters.cas,inputtrips.cas,outputrosters.cas,parameters.cas,errors.cas,lprof.cas,output.cas,solution.cas)
-    Matador test-case generate_in_subperiod FAILED : new results in assignedposition,outputrosters,lprof, differences in parameters
+    Matador test-case generate_in_subperiod FAILED on centreville : new results in assignedposition,outputrosters,lprof, differences in parameters
     View details(v), Save(s) or continue(any other key)?
 ------------------ Differences in parameters --------------------
 8c8
@@ -58,34 +58,34 @@ Rotation output, requirement : BOSERUP 85215 C
 (C)[  444  6C 2001-04-18T10:25  OSL  OSL 2001-04-19T09:55 C¦TQ3<2 ]
 (C)[  756  1C 2001-04-19T11:25  CPH  CPH 2001-04-19T14:00 BOSERUP 85215 C ] BOSERUP 85215 C >>
 ------------------ New result in lprof --------------------
-Flat profile, 22 samples in total
+Flat profile, 33 samples in total
 
- 36.4   36.4   __i686.get_pc_thunk.cx
- 18.2   54.5   __write_nocancel
-  9.1   63.6   __open_nocancel
-  9.1   72.7   __mmap
-  4.5   77.3   __waitpid_nocancel
-  4.5   81.8   __symlink
-  4.5   86.4   __pthread_mutex_lock_internal
-  4.5   90.9   __libc_lseek
-  4.5   95.5   __GI___munmap
-  4.5  100.0   std::_Rb_tree<Task const*, Task const*, std::_Identity<Task const*>, less_task_dep, std::allocator<Task const*> >::insert_unique
+ 33.3   33.3   __i686.get_pc_thunk.cx
+ 21.2   54.5   __open_nocancel
+ 12.1   66.7   __read_nocancel
+  9.1   75.8   __write_nocancel
+  6.1   81.8   _fini
+  3.0   84.8   __close_nocancel
+  3.0   87.9   __waitpid_nocancel
+  3.0   90.9   __GI___strtol_internal
+  3.0   93.9   _dl_relocate_object_internal
+  3.0   97.0   __GI___isnan
+  3.0  100.0   ConcreteTask::getRequirement const
+  0.0  100.0   RRLParser::getNextRecord
+  0.0  100.0   RRLParser::readNextRecordLine
+  0.0  100.0   RRLParser::RRLParser
   0.0  100.0   RRLParser::~RRLParser
   0.0  100.0   Matador::run
+  0.0  100.0   RRLString::RRLString
   0.0  100.0   Matador::runMethods
+  0.0  100.0   Parser::readNextLine
   0.0  100.0   Filer::saveFile
+  0.0  100.0   Filer::loadFile
+  0.0  100.0   rave::Program::Program
   0.0  100.0   ImproveMethodGenerator::runMaster
   0.0  100.0   ImproveMethodGenerator::generate
   0.0  100.0   ImproveMethodGenerator::generate
   0.0  100.0   ImproveMethodGenerator::runGenerator
   0.0  100.0   RosteringDepthGuide::tryAddTask
-  0.0  100.0   SimpleTaskIterator::SimpleTaskIterator
-  0.0  100.0   KeywordTask::getNextKeywordTask const
-  0.0  100.0   CompositeTask::registerSelf const
-  0.0  100.0   DataModelFiler::linkBest const
-  0.0  100.0   RAVEEvaluationTask::insertPendingTasks const
-  0.0  100.0   RAVEEvaluationTask::isLegal const
-  0.0  100.0   std::_List_base<ConcreteTask const*, std::allocator<ConcreteTask const*> >::~_List_base
-  0.0  100.0   __libc_start_main
-  0.0  100.0   _fini
+  0.0  100.0   RAVEEvaluationTask::remove
     Save(s) or continue(any other key)?
