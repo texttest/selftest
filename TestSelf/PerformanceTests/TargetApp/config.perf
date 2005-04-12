@@ -1,12 +1,12 @@
 # Path to the binary
 binary:${TEXTTEST_CHECKOUT}/busywait.py
 
-config_module:unixConfig
-
 # ------ Performance settings -------
 
 # Do we include the system time in our measurements of CPU time (default 0)
+# Note this has no effect on windows.
 cputime_include_system_time:1
+text_diff_program:ndiff
 
 # Which machine to check performance on
 [performance_test_machine]
@@ -14,7 +14,7 @@ default:any
 
 # How much variation in cpu time do we allow, in percentage of total cpu time used? 
 [performance_variation_%]
-default:5
+default:12
 
 # How long (in seconds) a test must be before we consider it worthwhile to check performance?
 [performance_test_minimum]

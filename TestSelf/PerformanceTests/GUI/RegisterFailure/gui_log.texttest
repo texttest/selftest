@@ -13,22 +13,25 @@ Redrawing test Success coloured green
 Redrawing test Failures coloured white
 Redrawing test Failures coloured yellow
 Redrawing test Failures coloured green
-(Second column '100% smaller-logperf' coloured red)
+(Second column '100% faster' coloured red)
 Expected application event 'completion of test actions' occurred, proceeding.
 
 'select test' event created with arguments 'Failures'
 Viewing test PERF test-case Failures
 Adding file errors.perf under heading 'Comparison Files', coloured green
-Adding file logperf.perf.logfile under heading 'Comparison Files', coloured red
-(Second column '100% smaller-logperf' coloured red)
 Adding file output.perf under heading 'Comparison Files', coloured green
-Adding file performance.perf under heading 'Comparison Files', coloured green
+Adding file performance.perf under heading 'Comparison Files', coloured red
+(Second column '100% faster' coloured red)
 ---------- Text Info Window ----------
------------------- Differences in logperf(smaller-logperf) --------------------
-1c1
-< Total Logperf :       10.0 seconds
----
-> Total Logperf  :      5.0 seconds
+------------------ Differences in performance(faster) --------------------
+- CPU time   :       10.0 sec. on sedom
+?                    ^^           ^^^ - 
++ CPU time   :       5.0 sec. on mbahiakro
+?                    ^           ^^^^^^^^  
+- Real time  :       18.2 sec.
+?                    ^^ ^      
++ Real time  :       5.3 sec.
+?                    ^ ^
 --------------------------------------
 
 Creating notebook page for 'Viewing'
@@ -36,12 +39,12 @@ Creating check button for switch 'Include Run-dependent Text'
 Creating check button for switch 'Show differences where present' (checked)
 
 Creating notebook page for 'Saving'
-Creating entry for option 'Version to save' (set to 'logfile') (drop-down list containing ['logfile', ''])
+Creating entry for option 'Version to save'
 Creating check button for switch 'Replace successfully compared files also'
 Creating radio button for switch 'Exact Performance/Average Performance'
 
-'select file' event created with arguments 'logperf.perf.logfile'
-Comparing file logperf.perf.logfile with previous version using 'tkdiff'
+'select file' event created with arguments 'performance.perf'
+Comparing file performance.perf with previous version using 'tkdiff'
 
 'view options for' event created with arguments 'Saving'
 
@@ -50,10 +53,9 @@ Comparing file logperf.perf.logfile with previous version using 'tkdiff'
 'choose average performance' event created with arguments ''
 
 'save' event created with arguments ''
-Saving PERF test-case Failures - version logfile, exactness 0
+Saving PERF test-case Failures - version , exactness 0
 Redrawing test Failures coloured green
 Adding file errors.perf under heading 'Comparison Files', coloured green
-Adding file logperf.perf.logfile under heading 'Comparison Files', coloured green
 Adding file output.perf under heading 'Comparison Files', coloured green
 Adding file performance.perf under heading 'Comparison Files', coloured green
 

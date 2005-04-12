@@ -25,13 +25,17 @@ output:Could not send mail{WORD -6}
 targetReport: on .*test-case.*under{WORD -7}
 targetReport:^[0-9][0-9][0-9][0-9][0-9][0-9]{WORD 1}
 targetReport:{LINE 1}
-targetReport:^>
+targetReport:^\+
+targetReport:^\?
 targetReport:% faster{WORD -2}
 collectReport:^From:{WORD 2}
 collectReport:^To:{WORD 2}
 collectReport:^Subject:{WORD 2}
 catalogue:.nfs
 catalogue:[0-9][0-9][A-Z][a-z][a-z][0-9][0-9][0-9][0-9][0-9][0-9]
+# Files that shouldn't mean anything...
+catalogue:cmd
+catalogue:unixperf
 errors:RENDER
 errors:File .* line .* in
 errors:dipjudge.py has not been{WORD -5}
@@ -42,6 +46,7 @@ errors:fakeuser under{WORD -1}
 gui_log:% faster{WORD 3}
 gui_log:Running on{WORD -1}
 gui_log:time.*:.*sec.
+gui_log:^\?
 [end]
 
 [failure_severity]
