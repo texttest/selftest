@@ -1,4 +1,4 @@
-TextTest will write diagnostics in /users/geoff/texttesttmp/texttest.lsfgeoff04Mar174057/carmen/APC/CoreDump based on file at /users/geoff/work/master/Testing/Automatic/texttest/log4py.conf
+TextTest will write diagnostics in /users/geoff/texttesttmp/texttest.lsfgeoff18Apr174430/carmen/APC/CoreDump based on file at /users/geoff/work/master/Testing/Automatic/texttest/log4py.conf
 Using Application APC, version crash, checkout /users/geoff/work/master
 Compiling rules for APC test-suite TargetApp
   Compiling rules for APC test-suite sk_test9scripts
@@ -6,7 +6,7 @@ Submitting APC test-suite TargetApp to LSF queues
   Submitting APC test-suite sk_test9scripts to LSF queues
     Submitting APC test-case no_dh_single_base_cg to LSF queue short_i386_linux_RHEL
     Reading slave results for APC test-case no_dh_single_base_cg (on all.apc,solution.apc,status.apc,warnings.apc)
-    APC test-case no_dh_single_base_cg CRASHED (Segmentation fault in raise) : new results in all, differences in solution,status,warnings
+    APC test-case no_dh_single_base_cg CRASHED (Segmentation fault in raise) on gatesville : new results in all, differences in solution,status,warnings
     View details(v), Save Version crash(1), Save(s) or continue(any other key)?
 Program terminated with signal 11, Segmentation fault.
 Stack trace from gdb :
@@ -14,8 +14,6 @@ raise
 apc_pac_setup 
 apc_setup 
 main 
-
-
 ------------------ Differences in solution --------------------
 1,170c1
 < SECTION apc_oags Solution_3
@@ -110,15 +108,15 @@ main
 < ==================================
 < Cost element values for subchain :
 ------------------ New result in all --------------------
-Time:  0 s real  10 ms cpu  0 ms cpu_child  memory:   4.5 Mb
+Time:  0 s real  0 ms cpu  0 ms cpu_child  memory:   4.5 Mb
 Delta: 0 s real  0 ms cpu  0 ms cpu_child  memory:   4.5 Mb
-/carm/proj/texttest/selftest_data/CARMSYS/sk_test9scripts_tmp.apc/crc/rule_set/APC/i386_linux/.APC_fd54_DC9_no_reference.geoff.1834
--s /carm/carmen_paros_deliver/user_and_tmp/sk_test9_user//LOCAL_PLAN/F36/MCS_W01/V1112_0122/APC_ji_single_base_CPH_spl.apc.crashgeoff04Mar17:43:58/APC_FILES
+/carm/proj/texttest/selftest_data/CARMSYS/sk_test9scripts_tmp.apc/crc/rule_set/APC/i386_linux/.APC_fd54_DC9_no_reference.geoff.29023
+-s /carm/carmen_paros_deliver/user_and_tmp/sk_test9_user//LOCAL_PLAN/F36/MCS_W01/V1112_0122/APC_ji_single_base_CPH_spl.apc.crashgeoff18Apr17:44:51/APC_FILES
 -v 1
--R /nfs/local/apc_temp/APC_ji_single_base_CPH_spl.apc.crashgeoff04Mar17:43:58_1834/APC_rot
--I /carm/carmen_paros_deliver/user_and_tmp/sk_test9_user//LOCAL_PLAN/F36/MCS_W01/V1112_0122/APC_ji_single_base_CPH_spl.apc.crashgeoff04Mar17:43:58/APC_FILES/run_status
+-R /nfs/local/apc_temp/APC_ji_single_base_CPH_spl.apc.crashgeoff18Apr17:44:51_29023/APC_rot
+-I /carm/carmen_paros_deliver/user_and_tmp/sk_test9_user//LOCAL_PLAN/F36/MCS_W01/V1112_0122/APC_ji_single_base_CPH_spl.apc.crashgeoff18Apr17:44:51/APC_FILES/run_status
 -U geoff
-executable name is [/carm/proj/texttest/selftest_data/CARMSYS/sk_test9scripts_tmp.apc/crc/rule_set/APC/i386_linux/.APC_fd54_DC9_no_reference.geoff.1834]
+executable name is [/carm/proj/texttest/selftest_data/CARMSYS/sk_test9scripts_tmp.apc/crc/rule_set/APC/i386_linux/.APC_fd54_DC9_no_reference.geoff.29023]
 carmsys: /carm/proj/texttest/selftest_data/CARMSYS
 carmusr: /carm/carmen_paros_deliver/user_and_tmp/sk_test9_user/
 carmtmp: /carm/proj/texttest/selftest_data/CARMSYS/sk_test9scripts_tmp.apc
@@ -135,11 +133,11 @@ airport file: /carm/carmen_paros_deliver/user_and_tmp/sk_test9_user//Airports/bi
 canonicalize called
 _init_segment_duty_types: Cannot retrive resource CREW_DUTY_TYPE_ETAB_NAME
 
-Error! Pid:1893  Fri Mar  4 17:44:12 2005  User:geoff
+Error! Pid:29076  Mon Apr 18 17:45:03 2005  User:geoff
 Error! File:/carm/master/Data/duty_type/DutyType.cc  Line:202
 Error! _register_segment_duty_type: Registering new duty type  in category 1.
 
 crew category file: /carm/carmen_paros_deliver/user_and_tmp/sk_test9_user//data/config/crew_categories
 <See also tkdiff window for details of status>
-Faking start of external progam: 'tkdiff /nfs/vm/texttest/central_texttesttmp/texttest.lsfgeoff04Mar174057/carmen/APC/CoreDump/TargetApp/apc.crashgeoff04Mar174358/sk_test9scripts/no_dh_single_base_cg/framework_tmp/status.apcorigcmp /nfs/vm/texttest/central_texttesttmp/texttest.lsfgeoff04Mar174057/carmen/APC/CoreDump/TargetApp/apc.crashgeoff04Mar174358/sk_test9scripts/no_dh_single_base_cg/framework_tmp/status.apccmp'
+Faking start of external progam: 'tkdiff /nfs/vm/texttest/central_texttesttmp/texttest.lsfgeoff18Apr174430/carmen/APC/CoreDump/TargetApp/apc.crashgeoff18Apr174451/sk_test9scripts/no_dh_single_base_cg/framework_tmp/status.apcorigcmp /nfs/vm/texttest/central_texttesttmp/texttest.lsfgeoff18Apr174430/carmen/APC/CoreDump/TargetApp/apc.crashgeoff18Apr174451/sk_test9scripts/no_dh_single_base_cg/framework_tmp/status.apccmp'
     Save Version crash(1), Save(s) or continue(any other key)?
