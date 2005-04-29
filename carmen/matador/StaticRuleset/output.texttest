@@ -1,22 +1,22 @@
-TextTest will write diagnostics in /users/geoff/texttesttmp/texttest.lsfgeoff11Apr171107/carmen/matador/StaticRuleset based on file at /users/geoff/work/master/Testing/Automatic/texttest/log4py.conf
+TextTest will write diagnostics in /users/geoff/texttesttmp/texttest.sgegeoff27Apr164139/carmen/matador/StaticRuleset based on file at /users/geoff/work/master/Testing/Automatic/texttest/log4py.conf
 Using Application Matador, checkout /carm/proj/texttest/selftest_data
 Using Application Picador, version badqueue, checkout /carm/proj/texttest/selftest_data
 Compiling rules for Matador test-suite TargetApp
-Submitting Matador test-suite TargetApp to LSF queues
-  Submitting Matador test-suite ArtificialUser to LSF queues
-    Submitting Matador test-case matador_2 to LSF queue short_rd_testing_chunked
+Submitting Matador test-suite TargetApp to SGE queues
+  Submitting Matador test-suite ArtificialUser to SGE queues
+    Submitting Matador test-case matador_2 to SGE queue short, requesting model=Opteron*,carmarch="*i386_linux*"
   Compiling rules for Matador test-suite StaticLinkUser
     Compiling rules for Matador test-case all_1crew - ruleset Matador_CO
-    Submitting matador.StaticLinkUser.Matador_CO to LSF queue short_i386_linux_RHEL
+    Submitting matador.StaticLinkUser.Matador_CO to SGE queue short, requesting model=Opteron*,carmarch="*i386_linux*"
 Compiling rules for Picador test-suite TargetApp
-Submitting Picador test-suite TargetApp to LSF queues
-  Submitting Picador test-suite Picador to LSF queues
-    Submitting Picador test-case illegal_pairings to LSF queue non_existent
-    Picador test-case illegal_pairings not compared:  Failed to submit to LSF (non_existent: No such queue. Job not submitted.)
+Submitting Picador test-suite TargetApp to SGE queues
+  Submitting Picador test-suite Picador to SGE queues
+    Submitting Picador test-case illegal_pairings to SGE queue non_existent, requesting model=Opteron*,carmarch="*i386_linux*"
+    Picador test-case illegal_pairings not compared:  Failed to submit to SGE (Unable to run job: unknown resource "non_existent".)
     Reading slave results for Matador test-case matador_2 - SUCCESS! (on errors.cas,output.cas,solution.cas)
-Submitting Matador test-suite TargetApp to LSF queues
-  Submitting Matador test-suite StaticLinkUser to LSF queues
-    Submitting Matador test-case all_1crew to LSF queue short_i386_linux_RHEL
+Submitting Matador test-suite TargetApp to SGE queues
+  Submitting Matador test-suite StaticLinkUser to SGE queues
+    Submitting Matador test-case all_1crew to SGE queue short, requesting model=Opteron*,carmarch="*i386_linux*"
     Reading slave results for Matador test-case all_1crew (on errors.cas,output.cas,solution.cas)
-    Matador test-case all_1crew FAILED on tiptonville : differences in output
+    Matador test-case all_1crew FAILED on knoxville : differences in output
     View details(v), Save(s) or continue(any other key)?

@@ -1,11 +1,11 @@
-TextTest will write diagnostics in /users/geoff/texttesttmp/texttest.lsfgeoff11Apr171107/carmen/matador/LprofRun based on file at /users/geoff/work/master/Testing/Automatic/texttest/log4py.conf
+TextTest will write diagnostics in /users/geoff/texttesttmp/texttest.sgegeoff27Apr164139/carmen/matador/LprofRun based on file at /users/geoff/work/master/Testing/Automatic/texttest/log4py.conf
 Using Application Matador, checkout /carm/proj/texttest/selftest_data
 Compiling rules for Matador test-suite TargetApp
-Submitting Matador test-suite TargetApp to LSF queues
-  Submitting Matador test-suite ArtificialUser to LSF queues
-    Submitting Matador test-case generate_in_subperiod to LSF queue short_i386_linux_RHEL
+Submitting Matador test-suite TargetApp to SGE queues
+  Submitting Matador test-suite ArtificialUser to SGE queues
+    Submitting Matador test-case generate_in_subperiod to SGE queue short, requesting model=Opteron*,carmarch="*i386_linux*"
     Reading slave results for Matador test-case generate_in_subperiod (on assignedposition.cas,crewmembers.cas,inputlegs.cas,inputrosters.cas,inputtrips.cas,outputrosters.cas,parameters.cas,errors.cas,lprof.cas,output.cas,solution.cas)
-    Matador test-case generate_in_subperiod FAILED on centreville : new results in assignedposition,outputrosters,lprof, differences in parameters
+    Matador test-case generate_in_subperiod FAILED on pennsville : new results in assignedposition,outputrosters,lprof, differences in parameters
     View details(v), Save(s) or continue(any other key)?
 ------------------ Differences in parameters --------------------
 8c8
@@ -58,34 +58,34 @@ Rotation output, requirement : BOSERUP 85215 C
 (C)[  444  6C 2001-04-18T10:25  OSL  OSL 2001-04-19T09:55 C¦TQ3<2 ]
 (C)[  756  1C 2001-04-19T11:25  CPH  CPH 2001-04-19T14:00 BOSERUP 85215 C ] BOSERUP 85215 C >>
 ------------------ New result in lprof --------------------
-Flat profile, 33 samples in total
+Flat profile, 45 samples in total
 
- 33.3   33.3   __i686.get_pc_thunk.cx
- 21.2   54.5   __open_nocancel
- 12.1   66.7   __read_nocancel
-  9.1   75.8   __write_nocancel
-  6.1   81.8   _fini
-  3.0   84.8   __close_nocancel
-  3.0   87.9   __waitpid_nocancel
-  3.0   90.9   __GI___strtol_internal
-  3.0   93.9   _dl_relocate_object_internal
-  3.0   97.0   __GI___isnan
-  3.0  100.0   ConcreteTask::getRequirement const
-  0.0  100.0   RRLParser::getNextRecord
-  0.0  100.0   RRLParser::readNextRecordLine
-  0.0  100.0   RRLParser::RRLParser
-  0.0  100.0   RRLParser::~RRLParser
-  0.0  100.0   Matador::run
-  0.0  100.0   RRLString::RRLString
-  0.0  100.0   Matador::runMethods
-  0.0  100.0   Parser::readNextLine
+ 15.6   15.6   __GI___munmap
+ 15.6   31.1   __i686.get_pc_thunk.cx
+ 13.3   44.4   __mmap
+  6.7   51.1   _int_malloc
+  6.7   57.8   __write_nocancel
+  6.7   64.4   __libc_lseek
+  4.4   68.9   ConcreteTask::getRequirement const
+  4.4   73.3   __waitpid_nocancel
+  4.4   77.8   __open_nocancel
+  2.2   80.0   std::list<ConcreteTask const*, std::allocator<ConcreteTask const*> >::_M_create_node
+  2.2   82.2   __GI___unlink
+  2.2   84.4   __GI_times
+  2.2   86.7   __close_nocancel
+  2.2   88.9   RAVEEvaluationTask::createKeywordTask
+  2.2   91.1   __ieee754_log
+  2.2   93.3   std::_Rb_tree<Resource const*, std::pair<Resource const* const, std::pair<Task const*, std::map<int, int, std::less<int>, std::allocator<std::pair<int const, int> > > > >, std::_Select1st<std::pair<Resource const* const, std::pair<Task const*, std::map<int, int, std::less<int>, std::allocator<std::pair<int const, int> > > > > >, less_resource, std::allocator<std::pair<Resource const* const, std::pair<Task const*, std::map<int, int, std::less<int>, std::allocator<std::pair<int const, int> > > > > > >::_M_create_node
+  2.2   95.6   ConcreteTask::inqExternalId const
+  2.2   97.8   S__topmoduleMblock_time_roster_Dict_agg_sum0
+  2.2  100.0   SimpleTaskIterator::findNextTask
   0.0  100.0   Filer::saveFile
   0.0  100.0   Filer::loadFile
-  0.0  100.0   rave::Program::Program
-  0.0  100.0   ImproveMethodGenerator::runMaster
-  0.0  100.0   ImproveMethodGenerator::generate
-  0.0  100.0   ImproveMethodGenerator::generate
-  0.0  100.0   ImproveMethodGenerator::runGenerator
-  0.0  100.0   RosteringDepthGuide::tryAddTask
-  0.0  100.0   RAVEEvaluationTask::remove
+  0.0  100.0   GeneratedRosterContainer::addRoster
+  0.0  100.0   LPData::LPData
+  0.0  100.0   Matador::runMethods
+  0.0  100.0   Matador::run
+  0.0  100.0   RRLParser::~RRLParser
+  0.0  100.0   TaskHandle::inqExternalId const
+  0.0  100.0   TaskHandle::clone const
     Save(s) or continue(any other key)?
