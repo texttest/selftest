@@ -62,9 +62,6 @@ link_test_path:secret_parameters.etab
 solution:best_solution
 [end]
 
-# Values for adding tests
-use_standard_input:0
-
 # ---------------- Values required by the performance module -------------------
 
 # Performance machines/groups. Performance is only compared if these machines are used for test execution

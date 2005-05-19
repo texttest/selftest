@@ -16,11 +16,13 @@ output:Time.*real{LINES 9}
 output:Unexpected output from{WORD 12}
 output:Real time
 output:CPU time{WORD 4}
+output:gnuplot window{WORD -1}
 errors:Error! Pid
-gui_log:batch system daemon
-gui_log:Build Rave program
-gui_log:Second column.*yellow{WORD 4}
-gui_log:No LSF installation
+dynamic_gui_log:batch system daemon
+dynamic_gui_log:Build Rave program
+dynamic_gui_log:Second column.*PEND{WORD 4}
+dynamic_gui_log:Second column.*RUN{WORD 4}
+dynamic_gui_log:No LSF installation
 catalogue:sleep.killing{LINES 20}
 catalogue:ravecompile
 catalogue:lsfreportmatador
@@ -42,8 +44,9 @@ testpage:Generated
 output:Failed to submit to
 output:Reading slave results for
 output:Submitting Picador
-gui_log:Waiting for application event.*killing to start{->}Expected application event.*2
-gui_log:Waiting for application event{->}Expected application event
+gui_log:process that records
+dynamic_gui_log:Waiting for application event.*killing to start{->}Expected application event.*2
+dynamic_gui_log:Waiting for application event{->}Expected application event
 usecase:wait for test
 directories:Removing
 [end]
@@ -51,13 +54,15 @@ directories:Removing
 # Fake queue system directory...
 link_test_path:FakeLsf
 
+# Used for retrieving gnuplot processes...
+catalogue_process_string:Created process
+
 # List of (generally directories) to copy from the test directory to the write directory
 # because we want to write there.
 copy_test_path:test_tmp
 
 # Things to collate
 [collate_file]
-gnuplot:TargetApp/*/gnuplot.input
 graph:TargetApp/*/graph.ps
 userpage:sk_test9scripts.html
 testpage:testindex.html

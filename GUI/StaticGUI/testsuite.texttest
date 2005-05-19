@@ -38,6 +38,9 @@ ErrorMessages
 # Make sure correct refreshes take place on editing testsuite files
 RefreshTestSuite
 
+# Make sure refreshing on quit doesn't cause crashes
+RefreshAfterQuit
+
 # Make sure when we press select and an extra version is present, everything is highlighted
 SelectExtraVersion
 
@@ -47,6 +50,9 @@ ResetRunFlag
 
 # Make sure we can handle selecting tests that the static GUI doesn't know about...
 SelectUnknownTest
+
+# Check we get a correct popup if we start a test which doesn't exist for the given version
+StartIncompatibleTest
 
 # Tests for starting with no tests
 StartFromScratch

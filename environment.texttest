@@ -1,9 +1,9 @@
 # Won't work with LSF...
 TEXTTEST_HOME:.
+USECASE_HOME:./usecases
 TEXTTEST_TMP:TargetApp
 TEXTTEST_PERSONAL_CONFIG:TargetApp
 PYTHONPATH:${TEXTTEST_CHECKOUT}/Testing/TextTest:${TEXTTEST_CHECKOUT}/Testing/PyUseCase:.:${PYTHONPATH}
-TEXTTEST_NO_SPAWN:true
 # Exclude Opterons because of PyUseCase bug 4051
 # Exclude RH7 machines because they run Python 1.5, which we don't support
 QUEUE_SYSTEM_RESOURCE:model="Xeon*|Pentium*",osversion="RHEL*"
