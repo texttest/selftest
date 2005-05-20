@@ -6,7 +6,7 @@ checkout_location:~/work
 default_checkout:master
 
 [run_dependent_text]
-output:checkout{WORD -1}
+output*:checkout{WORD -1}
 output:BadApplication{WORD -1}
 output:Reconnecting to test results{WORD -1}
 output:Faking start
@@ -18,7 +18,7 @@ output:test-case.* on .*:${WORD -2}
 output:still in use
 output:creating batch report{WORD 2}
 output:Killing running test{WORD -1}
-output:TextTest will write diagnostics
+output*:TextTest will write diagnostics
 output:matching applications{WORD -1}
 # Sometimes needed under heavy machine load
 output:signal 15
@@ -52,6 +52,7 @@ dynamic_gui_log:Running on{WORD -1}
 dynamic_gui_log:succeeded on{WORD -1}
 dynamic_gui_log:time.*:.*sec.
 dynamic_gui_log:^\?
+jusecaseprops:record{WORD -1}
 [end]
 
 [unordered_text]
@@ -108,6 +109,10 @@ targetMem:TargetApp/Failures/memory.mem
 targetReport:TargetApp/*/batchreport*
 collectReport:TargetApp/batchreport*
 shortcut:TargetApp/*.shortcut
+outputrep:TargetApp/*/replaylog
+jusecaseprops:TargetApp/*/*/jusecase.properties
+#useful for debugging...
+#recerrors:TargetApp/*/record_errors.log
 [end]
 
 # Run the LSF and SGE tests too...
@@ -156,3 +161,4 @@ request_lsf_queue:waiting
 [end]
 
 definition_file_stems:dynamic_usecase
+definition_file_stems:replay_usecase
