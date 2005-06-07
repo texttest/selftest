@@ -2,7 +2,7 @@
 binary:${SOURCE_PATH}/texttest.py
 
 [run_dependent_text]
-output:checkout{WORD -1}
+output*:checkout{WORD -1}
 output:BadApplication{WORD -1}
 output:Reconnecting to test results{WORD -1}
 output:Faking start
@@ -14,7 +14,7 @@ output:test-case.* on .*:${WORD -2}
 output:still in use
 output:creating batch report{WORD 2}
 output:Killing running test{WORD -1}
-output:TextTest will write diagnostics
+output*:TextTest will write diagnostics
 output:matching applications{WORD -1}
 # Sometimes needed under heavy machine load
 output:signal 15
@@ -22,7 +22,6 @@ output:signal 9
 output:Killed process{WORD 3}
 output:Bug file at{WORD 4}
 output:Sending mail from{WORD -1}
-output:Could not send mail{WORD -6}
 targetReport: on .*test-case.*under{WORD -7}
 targetReport:^[0-9][0-9][0-9][0-9][0-9][0-9]{WORD 1}
 targetReport:{LINE 1}
@@ -44,16 +43,21 @@ errors:root directory does{WORD -1}
 errors:CountTest.__del__
 errors:fakeuser under{WORD -1}
 # Hard to rely on exactly how much faster things are...
-gui_log:% faster{WORD 3}
-gui_log:Running on{WORD -1}
-gui_log:time.*:.*sec.
-gui_log:^\?
+dynamic_gui_log:% faster{WORD 3}
+dynamic_gui_log:Running on{WORD -1}
+dynamic_gui_log:succeeded on{WORD -1}
+dynamic_gui_log:time.*:.*sec.
+dynamic_gui_log:^\?
+jusecaseprops:record{WORD -1}
+[end]
+
+[unordered_text]
+gui_log:Dynamic run failed{LINES 3}
 [end]
 
 [failure_severity]
-gui_log:1
-targetReport:1
-targetMem:1
+*gui_log:1
+target*:1
 shortcut:1
 [end]
 
@@ -85,7 +89,7 @@ create_catalogues:true
 interactive_action_module:texttestgui
 
 # Settings for creation of test cases
-use_standard_input:1
+use_case_record_mode:console
 
 # Want to slow-motion replay the GUI tests
 slow_motion_replay_speed:2
@@ -96,6 +100,10 @@ targetMem:TargetApp/Failures/memory.mem
 targetReport:TargetApp/*/batchreport*
 collectReport:TargetApp/batchreport*
 shortcut:TargetApp/*.shortcut
+outputrep:TargetApp/*/replaylog
+jusecaseprops:TargetApp/*/*/jusecase.properties
+#useful for debugging...
+#recerrors:TargetApp/*/record_errors.log
 [end]
 
 # Programs for viewing files
@@ -108,3 +116,4 @@ extra_version:lsf
 
 # But don't save them as a separate version
 unsaveable_version:lsf
+unsaveable_version:sge

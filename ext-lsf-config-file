@@ -6,15 +6,20 @@ link_test_path:FakeLsf
 output:executing on
 output:batch system daemon
 output:Removing previous write
-gui_log:batch system daemon
-gui_log:Second column.*yellow{WORD 4}
+dynamic_gui_log:batch system daemon
+dynamic_gui_log:Second column.*PEND{WORD 4}
+dynamic_gui_log:Second column.*RUN{WORD 4}
+dynamic_gui_log:No LSF installation
 catalogue:sleep.killing{LINES 20}
 targetReport:batch system daemon
+targetReport:No LSF installation
 
 [unordered_text]
 output:Failed to submit to
 output:Reading slave results for
-gui_log:Waiting for application event.*killing to start{->}Expected application event.*2
-gui_log:Waiting for application event{->}Expected application event
+gui_log:did not produce any results
+gui_log:process that records
+dynamic_gui_log:Waiting for application event.*killing to start{->}Expected application event.*2
+dynamic_gui_log:Waiting for application event{->}Expected application event
 usecase:wait for test
 [end]
