@@ -25,9 +25,6 @@ SelectBaseVersion
 # After selecting it should clear again when you press select next time
 ClearTestSelection
 
-# Static GUI should run even when no tests are present
-StartNoTests
-
 # Test that the View App button works
 ViewApp
 ViewAppNameClash
@@ -47,7 +44,6 @@ RefreshAfterQuit
 # Make sure when we press select and an extra version is present, everything is highlighted
 SelectExtraVersion
 
-
 # Make sure the check boxes reset correctly
 ResetRunFlag
 
@@ -59,6 +55,12 @@ StartIncompatibleTest
 
 # Crash on trying to run an application as if it were a test
 RunAppAsTest
+
+# Static GUI should run even when no tests are present
+StartNoTests
+
+# Make sure we don't stack trace if no apps are started
+StartNoApps
 
 # Tests for starting with no tests
 StartFromScratch
