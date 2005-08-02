@@ -21,8 +21,8 @@ class VideoStore:
         return win
     def createWindowContents(self):
         vbox = gtk.VBox()
-        vbox.pack_start(self.getTaskBar(), expand=gtk.FALSE, fill=gtk.FALSE)
-        vbox.pack_start(self.getVideoView(), expand=gtk.TRUE, fill=gtk.TRUE)
+        vbox.pack_start(self.getTaskBar(), expand=False, fill=False)
+        vbox.pack_start(self.getVideoView(), expand=True, fill=True)
         vbox.show()
         return vbox
     def getTaskBar(self):
@@ -34,9 +34,9 @@ class VideoStore:
         button.set_label("Add")
         # button.connect("clicked", self.addMovie, nameEntry)
         self.scriptEngine.connect("add movie", "clicked", button, self.addMovie, None, nameEntry)
-        taskBar.pack_start(label, expand=gtk.FALSE, fill=gtk.TRUE)
-        taskBar.pack_start(nameEntry, expand=gtk.TRUE, fill=gtk.TRUE)
-        taskBar.pack_start(button, expand=gtk.FALSE, fill=gtk.FALSE)
+        taskBar.pack_start(label, expand=False, fill=True)
+        taskBar.pack_start(nameEntry, expand=True, fill=True)
+        taskBar.pack_start(button, expand=False, fill=False)
         label.show()
         nameEntry.show()
         button.show()
