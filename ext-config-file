@@ -1,6 +1,14 @@
 # Path to the binary under test
 binary:${SOURCE_PATH}/texttest.py
 
+# Programs for viewing files
+view_program:wordpad
+view_program:emacs
+
+# But don't save them as a separate version
+unsaveable_version:lsf
+unsaveable_version:sge
+
 [run_dependent_text]
 output*:checkout{WORD -1}
 output:BadApplication{WORD -1}
@@ -44,6 +52,7 @@ errors:root directory does{WORD -1}
 errors:CountTest.__del__
 errors:fakeuser under{WORD -1}
 errors:TransSocketUNIX
+errors:gtk.Combo
 # Hard to rely on exactly how much faster things are...
 dynamic_gui_log:% faster{WORD 3}
 dynamic_gui_log:Running on{WORD -1}
@@ -108,14 +117,9 @@ jusecaseprops:TargetApp/*/*/jusecase.properties
 #recerrors:TargetApp/*/record_errors.log
 [end]
 
-# Programs for viewing files
-view_program:wordpad
-view_program:emacs
+definition_file_stems:dynamic_usecase
+definition_file_stems:replay_usecase
 
 # Run the LSF and SGE tests too...
 extra_version:sge
 extra_version:lsf
-
-# But don't save them as a separate version
-unsaveable_version:lsf
-unsaveable_version:sge

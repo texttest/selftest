@@ -5,6 +5,51 @@ binary:${TEXTTEST_CHECKOUT}/Testing/TextTest/texttest.py
 checkout_location:~/work
 default_checkout:master
 
+# Run with SGE at Carmen
+config_module:carmen
+queue_system_module:SGE
+
+# ---------------- Values needed to run in batch mode at Carmen -------------------
+
+# Machines where we can start Xvfb
+#virtual_display_machine:reedsville
+virtual_display_machine:fougamou
+virtual_display_machine:singleton
+
+unsaveable_version:master
+unsaveable_version:i386_linux
+unsaveable_version:lsf
+unsaveable_version:sge
+
+# For each "special batch" run, specify recipients, time limit, architectures and versions 
+# Not present means $USER as recipient, no time limit, all versions and all architectures accepted
+[batch_recipients]
+default:carmen.testtool_tests
+local:$USER
+
+[batch_version]
+default:master
+default:i386_linux
+default:sparc
+default:parisc_2_0
+default:lsf
+default:sge
+
+[batch_use_collection]
+default:true
+local:false
+
+# ---------------- Values for the static GUI -------------------
+
+# GUI configuration, drop-down lists to appear in static gui...
+[gui_entry_options]
+use_checkout:/carm/master
+run_this_version:sparc
+run_this_version:parisc_2_0
+reconnect_to_previous_run:nightjob
+request_lsf_queue:waiting
+[end]
+
 [run_dependent_text]
 output*:checkout{WORD -1}
 output:BadApplication{WORD -1}
@@ -48,6 +93,7 @@ errors:root directory does{WORD -1}
 errors:CountTest.__del__
 errors:fakeuser under{WORD -1}
 errors:TransSocketUNIX
+errors:gtk.Combo
 # Hard to rely on exactly how much faster things are...
 dynamic_gui_log:% faster{WORD 3}
 dynamic_gui_log:Running on{WORD -1}
@@ -76,13 +122,8 @@ configuration_file:log4py.conf
 # Force recomputation of files on non-UNIX archs
 home_operating_system:posix
 
-# Might as well have nice print-outs
+# Official name of the application
 full_name:TextTest
-
-# These tests cannot be run in parallel using LSF, but let's use UNIX features
-# like batch mode, anyway.
-config_module:carmen
-queue_system_module:SGE
 
 # List of (generally directories) to copy from the test directory to the write directory
 # because we want to write there.
@@ -117,50 +158,9 @@ jusecaseprops:TargetApp/*/*/jusecase.properties
 #recerrors:TargetApp/*/record_errors.log
 [end]
 
+definition_file_stems:dynamic_usecase
+definition_file_stems:replay_usecase
+
 # Run the LSF and SGE tests too...
 extra_version:sge
 extra_version:lsf
-
-# ---------------- Values needed to run in batch mode -------------------
-
-# Machines where we can start Xvfb
-#virtual_display_machine:reedsville
-virtual_display_machine:fougamou
-virtual_display_machine:singleton
-
-unsaveable_version:master
-unsaveable_version:i386_linux
-unsaveable_version:lsf
-unsaveable_version:sge
-
-# For each "special batch" run, specify recipients, time limit, architectures and versions 
-# Not present means $USER as recipient, no time limit, all versions and all architectures accepted
-[batch_recipients]
-default:carmen.testtool_tests
-local:$USER
-
-[batch_version]
-default:master
-default:i386_linux
-default:sparc
-default:parisc_2_0
-default:lsf
-default:sge
-
-[batch_use_collection]
-default:true
-local:false
-
-# ---------------- Values for the static GUI -------------------
-
-# GUI configuration, drop-down lists to appear in static gui...
-[gui_entry_options]
-use_checkout:/carm/master
-run_this_version:sparc
-run_this_version:parisc_2_0
-reconnect_to_previous_run:nightjob
-request_lsf_queue:waiting
-[end]
-
-definition_file_stems:dynamic_usecase
-definition_file_stems:replay_usecase
