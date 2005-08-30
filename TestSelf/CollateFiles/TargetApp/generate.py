@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-import os
+import os, sys
 
 def generateFile(name):
     print "Generating",name
@@ -9,5 +9,6 @@ def generateFile(name):
 generateFile("generated_first.dump")
 generateFile("generated_second.dump")
 generateFile("generated_third.dump")
-generateFile("created_1.dump")
-generateFile("created_2.dump")
+if len(sys.argv) == 1:
+    generateFile("created_1.dump")
+    generateFile("created_2.dump")
