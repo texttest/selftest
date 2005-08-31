@@ -1,0 +1,896 @@
+CARMSYS: /users/mattias/work/master3/Products/fleet_gpc/CARMSYS
+CARMUSR: /carm/tail/tas_test_suit_user
+CARMTMP: /carm/tail/tas_test_suite_master_tmp/
+SUBPLAN: Tail_CP02/25feb_06abr/D93/D93_restdest_4days_master.tasmattias06Dec16:12:35
+RULESET:
+TAIL...: /users/mattias/work/master3/Products/fleet_gpc/CARMSYS/bin/i386_linux/opt_tail
+ARGS...: -s Tail_CP02/25feb_06abr/D93/D93_restdest_4days_master.tasmattias06Dec16:12:35
+
+Running /users/mattias/work/master3/Products/fleet_gpc/CARMSYS/bin/i386_linux/opt_tail -s Tail_CP02/25feb_06abr/D93/D93_restdest_4days_master.tasmattias06Dec16:12:35 
+
+-- Tail::run --
+
+Using Filer to load SubPlan : Tail_CP02/25feb_06abr/D93/D93_restdest_4days_master.tasmattias06Dec16:12:35
+
+
+Filer: Loading subplan-specific files
+Parser: Reading file /APC_FILES/problems
+Set period of problem to 2002-02-25T12:00 -> 2002-04-07T11:59
+
+Parser: Reading file /APC_FILES/rules, section headed by 'SECTION rules'
+Parser: Reading file /APC_FILES/rules, section headed by '<PARAMETERS>'
+Parser: Reading file /APC_FILES/rules, section headed by '<SETS>'
+Parser: Reading file /APC_FILES/bases
+Parser: Reading file /APC_FILES/flights
+Parser: Reading file /APC_FILES/trips
+Parser: Reading file /APC_FILES/assignments
+12 subplan rule parameters have been set.
+0 subplan rules have been switched.
+
+RUN INFO
+  Active module............: Tail
+  Tail library version.....: .current
+  Tail library date........: 04 December 2003 10:49:12
+  Date/Time................: 12/06/03, 16:14
+  Host machine.............: elfincove
+  Subplan..................: Tail_CP02/25feb_06abr/D93/D93_restdest_4days_master.tasmattias06Dec16:12:35
+  Rule Set.................: amtail
+  Planning period..........: [ 2002-02-25T12:00, 2002-04-07T11:59 ]
+  Number of Input trips....: 245
+  Number of Input legs.....: 12948
+
+Changed tail.infeas_stop_on_illegality from default 1 to RAVE value 0
+Changed tail.fixing_method from default 3 to RAVE value 2
+Changed tail.max_colgen_iter from default 100 to RAVE value 200
+Changed tail.heuristic_inner_iterations from default 5 to RAVE value 150
+Changed tail.max_rosters_per_vehicle from default 60 to RAVE value 2000
+Changed tail.max_rosters_sink from default 10000 to RAVE value 50000
+Changed tail.heuristic_max_rosters_veh from default 120 to RAVE value 2000
+Changed tail.red_cost_eliminate_val from default 1e+06 to RAVE value 100000
+Changed tail.reeval_factor from default 8 to RAVE value 30
+Changed tail.del_non_base_cols from default 0 to RAVE value 1
+
+Running script AM_4days_subdiv_allPreproc_restDest_tightCxn_D93.py
+
+  Number of active unassigned tasks   :   230
+  Number of active pre-assigned tasks :    13
+
+Extracted cumulative rules:
+ + Z rule
+
+Checking problem balance.
+  The problem is balanced.
+Solving problem in interval [ 2002-02-25T12:00, 2002-02-28T12:00 ]
+  Number of active unassigned tasks   :     0
+  Number of active pre-assigned tasks :    13
+Solving problem in interval [ 2002-02-27T12:00, 2002-03-02T12:00 ]
+  Number of active unassigned tasks   :    57
+  Number of active pre-assigned tasks :    13
+
+Applying Vehicle Counter
+  Found 33 points at 17 stations with no inactive vehicles.
+
+Generating connections
+
+            0%       25%       50%       75%      100%
+            |         |         |         |         |
+Progress:   *****************************************
+
+Possible connections:      227
+Legal connections   :      211
+Created connections :      211
+
+Applying Propagation Filter
+  Removed 19 connections.
+  192 connections left.
+  13 possible end tasks left.
+
+Sequencing tasks
+  Number of active unassigned tasks   :    30
+  Number of active pre-assigned tasks :    13
+  165 connections left.
+  13 possible end tasks left.
+
+Computing lower bound
+  Lower bound.................7996611.000000
+  Unassigned tasks.........................0
+
+*** Starting Column Generator ***
+
+Max number of iterations : 200
+
+
+>> Iteration 0
+
+Objective value.............696076110.000000
+
+Relative change.....................0.0000 %
+Gap to lower bound...............8604.6389 %
+
+Unassigned tasks...................69.000000
+
+
+>> Iteration 1
+
+Objective value..............87546210.000000
+
+Relative change...................-87.4229 %
+Gap to lower bound................994.7914 %
+
+Unassigned tasks....................8.000000
+
+
+>> Iteration 2
+
+Objective value..............37819410.000000
+
+Relative change...................-56.8006 %
+Gap to lower bound................372.9430 %
+
+Unassigned tasks....................3.000000
+
+
+>> Iteration 3
+
+Objective value...............8098713.000000
+
+Relative change...................-78.5858 %
+Gap to lower bound..................1.2768 %
+
+Unassigned tasks....................0.000000
+
+
+>> Iteration 4
+
+Objective value...............8098662.500000
+
+Relative change....................-0.0006 %
+Gap to lower bound..................1.2762 %
+
+Unassigned tasks....................0.000000
+
+
+>> Iteration 5
+
+Objective value...............7996811.000000
+
+Relative change....................-1.2576 %
+Gap to lower bound..................0.0025 %
+
+Unassigned tasks....................0.000000
+
+
+>> Iteration 6
+
+Objective value...............7996611.000000
+
+Relative change....................-0.0025 %
+Gap to lower bound..................0.0000 %
+
+Unassigned tasks....................0.000000
+
+Objective within 0% of lower bound - exiting column generation.
+
+End criterion fulfilled - skipping fixing heuristic.
+
+*** Starting MIP Optimizer ***
+
+  MIP optimizer was successful.
+
+  Objective value.............7996611.000000
+  Gap to lower bound................0.0000 %
+
+  Time to solve MIP: 0.0000 s
+
+Solution statistics : 
+
+  Created roster : [    1C 2002-02-18T06:01  GDL  GDL 2002-03-15T05:59 XA-DEK D93 ]
+  Created roster : [    1C 2002-02-25T06:01  MEX  MEX 2002-04-07T05:59 XA-JEB D93 ]
+  Created roster : [    5C 2002-02-25T12:35  MEX  CUL 2002-03-02T04:50 N1003P D93 ]
+  Created roster : [    3C 2002-02-25T13:30  HMO  HMO 2002-03-02T05:40 XA-AMB D93 ]
+  Created roster : [    2C 2002-02-25T13:05  MEX  MEX 2002-03-02T04:40 XA-AMF D93 ]
+  Created roster : [    4C 2002-02-25T13:00  GDL  MEX 2002-03-02T05:40 XA-DEL D93 ]
+  Created roster : [    3C 2002-02-25T13:00  VER  MEX 2002-03-02T05:00 XA-DEI D93 ]
+  Created roster : [    3C 2002-02-25T14:00  CUL  CUL 2002-03-02T04:20 XA-DEM D93 ]
+  Created roster : [    4C 2002-02-25T14:15  BJX  CUU 2002-03-02T05:15 XA-AMA D93 ]
+  Created roster : [    4C 2002-02-25T13:00  MTY  MTY 2002-03-02T02:50 XA-AME D93 ]
+  Created roster : [    4C 2002-02-25T14:45  CUL  MEX 2002-03-02T03:25 XA-TFO D93 ]
+  Created roster : [    5C 2002-02-25T12:45  MEX  VER 2002-03-02T04:20 XA-AMC D93 ]
+  Created roster : [    4C 2002-02-25T12:50  MEX  MEX 2002-03-02T04:40 XA-AMD D93 ]
+
+  Rosters (13):
+    Cost......................7996611.000000
+    Gap to lower bound..............0.0000 %
+
+  Tasks:
+    Unassigned.............................0 (0.0000 %)
+    Overcovered............................0 (0.0000 %)
+
+----------------------- Cost Analysis -----------------------
+
+  Improved period..........: [ 2002-02-27T12:00, 2002-03-02T12:00 ]
+
+--------------------------------------------------------------
+
+  Optimizer cost......................................: 7996611
+  Gap to lower bound (in millionths)..................:       0
+
+---------------------- End of Analysis ----------------------
+
+--------------- Matador runtime status report ---------------
+  Current Solution...................:        1
+  Memory consumption.................:    16 MB
+  Total time.........................: 00:00:01
+  CPU time...........................: 00:00:01
+   |-> Fixing time...................: 00:00:00
+   |-> Pricing time..................: 00:00:00
+   |-> RMP time......................: 00:00:00
+
+Solving problem in interval [ 2002-03-01T12:00, 2002-03-04T12:00 ]
+  Number of active unassigned tasks   :   170
+  Number of active pre-assigned tasks :    13
+
+Applying Vehicle Counter
+  Found 93 points at 21 stations with no inactive vehicles.
+
+Generating connections
+
+            0%       25%       50%       75%      100%
+            |         |         |         |         |
+Progress:   *****************************************
+
+Possible connections:      751
+Legal connections   :      690
+Created connections :      690
+
+Applying Propagation Filter
+  Removed 258 connections.
+  432 connections left.
+  13 possible end tasks left.
+
+Sequencing tasks
+  Number of active unassigned tasks   :    77
+  Number of active pre-assigned tasks :    13
+  339 connections left.
+  13 possible end tasks left.
+
+Computing lower bound
+  Lower bound................11602817.000000
+  Unassigned tasks.........................0
+
+*** Starting Column Generator ***
+
+Max number of iterations : 200
+
+
+>> Iteration 0
+
+Objective value............2126076110.000000
+
+Relative change.................26487.2144 %
+Gap to lower bound..............18223.7925 %
+
+Unassigned tasks..................212.000000
+
+
+>> Iteration 1
+
+Objective value.............400302326.000000
+
+Relative change...................-81.1718 %
+Gap to lower bound...............3350.0443 %
+
+Unassigned tasks...................39.000000
+
+
+>> Iteration 2
+
+Objective value.............230959517.583333
+
+Relative change...................-42.3037 %
+Gap to lower bound...............1890.5469 %
+
+Unassigned tasks...................22.000000
+
+
+>> Iteration 3
+
+Objective value.............161668156.800000
+
+Relative change...................-30.0015 %
+Gap to lower bound...............1293.3526 %
+
+Unassigned tasks...................15.050000
+
+
+>> Iteration 4
+
+Objective value.............112709449.190184
+
+Relative change...................-30.2835 %
+Gap to lower bound................871.3973 %
+
+Unassigned tasks...................10.128834
+
+
+>> Iteration 5
+
+Objective value..............38973244.578662
+
+Relative change...................-65.4215 %
+Gap to lower bound................235.8947 %
+
+Unassigned tasks....................2.724231
+
+
+>> Iteration 6
+
+Objective value..............13423267.320000
+
+Relative change...................-65.5577 %
+Gap to lower bound.................15.6897 %
+
+Unassigned tasks....................0.160000
+
+
+>> Iteration 7
+
+Objective value..............12814495.664596
+
+Relative change....................-4.5352 %
+Gap to lower bound.................10.4430 %
+
+Unassigned tasks....................0.099379
+
+
+>> Iteration 8
+
+Objective value..............12461366.035197
+
+Relative change....................-2.7557 %
+Gap to lower bound..................7.3995 %
+
+Unassigned tasks....................0.064182
+
+
+>> Iteration 9
+
+Objective value..............11815920.584862
+
+Relative change....................-5.1796 %
+Gap to lower bound..................1.8367 %
+
+Unassigned tasks....................0.000000
+
+
+>> Iteration 10
+
+Objective value..............11815920.584862
+
+Relative change.....................0.0000 %
+Gap to lower bound..................1.8367 %
+
+Unassigned tasks....................0.000000
+
+
+>> Iteration 11
+
+Objective value..............11764574.388664
+
+Relative change....................-0.4346 %
+Gap to lower bound..................1.3941 %
+
+Unassigned tasks....................0.000000
+
+
+>> Iteration 12
+
+Objective value..............11719008.308642
+
+Relative change....................-0.3873 %
+Gap to lower bound..................1.0014 %
+
+Unassigned tasks....................0.000000
+
+
+>> Iteration 13
+
+Objective value..............11678466.176282
+
+Relative change....................-0.3460 %
+Gap to lower bound..................0.6520 %
+
+Unassigned tasks....................0.000000
+
+
+>> Iteration 14
+
+Objective value..............11658201.595745
+
+Relative change....................-0.1735 %
+Gap to lower bound..................0.4773 %
+
+Unassigned tasks....................0.000000
+
+
+>> Iteration 15
+
+Objective value..............11633284.666667
+
+Relative change....................-0.2137 %
+Gap to lower bound..................0.2626 %
+
+Unassigned tasks....................0.000000
+
+
+>> Iteration 16
+
+Objective value..............11630818.000000
+
+Relative change....................-0.0212 %
+Gap to lower bound..................0.2413 %
+
+Unassigned tasks....................0.000000
+
+
+>> Iteration 17
+
+Objective value..............11626992.750000
+
+Relative change....................-0.0329 %
+Gap to lower bound..................0.2084 %
+
+Unassigned tasks....................0.000000
+
+
+>> Iteration 18
+
+Objective value..............11618417.000000
+
+Relative change....................-0.0738 %
+Gap to lower bound..................0.1345 %
+
+Unassigned tasks....................0.000000
+
+
+>> Iteration 19
+
+Objective value..............11618217.000000
+
+Relative change....................-0.0017 %
+Gap to lower bound..................0.1327 %
+
+Unassigned tasks....................0.000000
+
+
+>> Iteration 20
+
+Objective value..............11618017.000000
+
+Relative change....................-0.0017 %
+Gap to lower bound..................0.1310 %
+
+Unassigned tasks....................0.000000
+
+
+>> Iteration 21
+
+Objective value..............11618017.000000
+
+Relative change.....................0.0000 %
+Gap to lower bound..................0.1310 %
+
+Unassigned tasks....................0.000000
+
+
+>> Iteration 22
+
+Objective value..............11618017.000000
+
+Relative change.....................0.0000 %
+Gap to lower bound..................0.1310 %
+
+Unassigned tasks....................0.000000
+
+
+>> Iteration 23
+
+Objective value..............11617917.000000
+
+Relative change....................-0.0009 %
+Gap to lower bound..................0.1301 %
+
+Unassigned tasks....................0.000000
+
+No columns generated - exiting column generation.
+
+New lower bound..............11617917.000000
+
+*** Starting Connection Fixing Heuristic ***
+
+
+>> Heuristic Iteration 0
+
+Fixed 66 connections. (Total 66)
+  Removed 0 incompatible columns.
+
+Generating new columns ...
+
+
+>>>> Inner iteration 0
+
+Objective value..............11617917.000000
+
+Relative change.....................0.0000 %
+Gap to lower bound..................0.0000 %
+
+Unassigned tasks....................0.000000
+
+Objective within 0% of local lower bound - exiting column generation.
+
+    0 columns added.
+    Total: 110 columns.
+
+
+>> Heuristic Iteration 1
+
+Fixed 0 connections. (Total 66)
+Adjusted limit to 0.855
+
+Fixed 0 connections. (Total 66)
+Adjusted limit to 0.7695
+
+Fixed 0 connections. (Total 66)
+Adjusted limit to 0.69255
+
+Fixed 0 connections. (Total 66)
+Adjusted limit to 0.623295
+
+Fixed 0 connections. (Total 66)
+Adjusted limit to 0.560966
+
+Fixed 0 connections. (Total 66)
+Adjusted limit to 0.504869
+
+Fixed 0 connections. (Total 66)
+Adjusted limit to 0.454382
+
+Fixed 1 connections. (Total 67)
+  Removed 0 incompatible columns.
+
+Generating new columns ...
+
+
+>>>> Inner iteration 0
+
+Objective value..............11617917.000000
+
+Relative change.....................0.0000 %
+Gap to lower bound..................0.0000 %
+
+Unassigned tasks....................0.000000
+
+End criterion fulfilled - exiting heuristic.
+
+*** Starting MIP Optimizer ***
+
+  MIP optimizer was successful.
+
+  Objective value............11617917.000000
+  Gap to lower bound................0.0000 %
+
+  Time to solve MIP: 0.0000 s
+
+Solution statistics : 
+
+  Created roster : [    1C 2002-02-18T06:01  GDL  GDL 2002-03-15T05:59 XA-DEK D93 ]
+  Created roster : [    1C 2002-02-25T06:01  MEX  MEX 2002-04-07T05:59 XA-JEB D93 ]
+  Created roster : [    6C 2002-02-25T13:00  GDL  MEX 2002-03-04T05:40 XA-DEL D93 ]
+  Created roster : [    7C 2002-02-25T13:05  MEX  CUL 2002-03-04T04:15 XA-AMF D93 ]
+  Created roster : [    8C 2002-02-25T13:30  HMO  VER 2002-03-04T04:20 XA-AMB D93 ]
+  Created roster : [    8C 2002-02-25T13:00  MTY  MEX 2002-03-04T05:00 XA-AME D93 ]
+  Created roster : [    9C 2002-02-25T13:00  VER  MEX 2002-03-04T03:20 XA-DEI D93 ]
+  Created roster : [    7C 2002-02-25T14:45  CUL  MEX 2002-03-04T03:25 XA-TFO D93 ]
+  Created roster : [    7C 2002-02-25T14:15  BJX  HMO 2002-03-04T05:40 XA-AMA D93 ]
+  Created roster : [   11C 2002-02-25T12:45  MEX  CUL 2002-03-04T04:50 XA-AMC D93 ]
+  Created roster : [    9C 2002-02-25T12:35  MEX  GDL 2002-03-04T04:10 N1003P D93 ]
+  Created roster : [    8C 2002-02-25T12:50  MEX  CUU 2002-03-04T05:15 XA-AMD D93 ]
+  Created roster : [    8C 2002-02-25T14:00  CUL  MTY 2002-03-04T04:45 XA-DEM D93 ]
+
+  Rosters (13):
+    Cost.....................11617917.000000
+    Gap to lower bound..............0.0000 %
+
+  Tasks:
+    Unassigned.............................0 (0.0000 %)
+    Overcovered............................0 (0.0000 %)
+
+----------------------- Cost Analysis -----------------------
+
+  Improved period..........: [ 2002-03-01T12:00, 2002-03-04T12:00 ]
+
+--------------------------------------------------------------
+
+  Optimizer cost......................................: 11617917
+  Gap to lower bound (in millionths)..................:        0
+
+---------------------- End of Analysis ----------------------
+
+--------------- Matador runtime status report ---------------
+  Current Solution...................:        1
+  Memory consumption.................:    17 MB
+  Total time.........................: 00:00:01
+  CPU time...........................: 00:00:01
+   |-> Fixing time...................: 00:00:00
+   |-> Pricing time..................: 00:00:00
+   |-> RMP time......................: 00:00:00
+
+Solving problem in interval [ 2002-03-03T12:00, 2002-03-06T12:00 ]
+  Number of active unassigned tasks   :   103
+  Number of active pre-assigned tasks :    13
+
+Applying Vehicle Counter
+  Found 52 points at 21 stations with no inactive vehicles.
+
+Generating connections
+
+            0%       25%       50%       75%      100%
+            |         |         |         |         |
+Progress:   *****************************************
+
+Possible connections:      491
+Legal connections   :      439
+Created connections :      439
+
+Applying Propagation Filter
+  Removed 235 connections.
+  204 connections left.
+  14 possible end tasks left.
+
+Sequencing tasks
+  Number of active unassigned tasks   :    47
+  Number of active pre-assigned tasks :    13
+  148 connections left.
+  14 possible end tasks left.
+
+Computing lower bound
+  Lower bound................13375721.000000
+  Unassigned tasks.........................0
+
+*** Starting Column Generator ***
+
+Max number of iterations : 200
+
+
+>> Iteration 0
+
+Objective value............1330361717.000000
+
+Relative change.................11350.9487 %
+Gap to lower bound...............9846.0935 %
+
+Unassigned tasks..................132.000000
+
+
+>> Iteration 1
+
+Objective value.............182995971.500000
+
+Relative change...................-86.2446 %
+Gap to lower bound...............1268.1204 %
+
+Unassigned tasks...................17.000000
+
+
+>> Iteration 2
+
+Objective value.............123073521.000000
+
+Relative change...................-32.7452 %
+Gap to lower bound................820.1263 %
+
+Unassigned tasks...................11.000000
+
+
+>> Iteration 3
+
+Objective value..............33367926.166667
+
+Relative change...................-72.8878 %
+Gap to lower bound................149.4664 %
+
+Unassigned tasks....................2.000000
+
+
+>> Iteration 4
+
+Objective value..............13414826.600000
+
+Relative change...................-59.7972 %
+Gap to lower bound..................0.2924 %
+
+Unassigned tasks....................0.000000
+
+
+>> Iteration 5
+
+Objective value..............13390623.000000
+
+Relative change....................-0.1804 %
+Gap to lower bound..................0.1114 %
+
+Unassigned tasks....................0.000000
+
+
+>> Iteration 6
+
+Objective value..............13375721.000000
+
+Relative change....................-0.1113 %
+Gap to lower bound..................0.0000 %
+
+Unassigned tasks....................0.000000
+
+Objective within 0% of lower bound - exiting column generation.
+
+End criterion fulfilled - skipping fixing heuristic.
+
+*** Starting MIP Optimizer ***
+
+  MIP optimizer was successful.
+
+  Objective value............13375721.000000
+  Gap to lower bound................0.0000 %
+
+  Time to solve MIP: 0.0000 s
+
+Solution statistics : 
+
+  Created roster : [    1C 2002-02-18T06:01  GDL  GDL 2002-03-15T05:59 XA-DEK D93 ]
+  Created roster : [    1C 2002-02-25T06:01  MEX  MEX 2002-04-07T05:59 XA-JEB D93 ]
+  Created roster : [    5C 2002-02-25T12:35  MEX  MEX 2002-03-05T05:00 N1003P D93 ]
+  Created roster : [    3C 2002-02-25T13:00  MTY  MEX 2002-03-05T04:40 XA-AME D93 ]
+  Created roster : [    5C 2002-02-25T13:00  VER  MEX 2002-03-05T02:40 XA-DEI D93 ]
+  Created roster : [    4C 2002-02-25T14:00  CUL  CUL 2002-03-05T04:15 XA-DEM D93 ]
+  Created roster : [    5C 2002-02-25T14:45  CUL  HMO 2002-03-05T05:40 XA-TFO D93 ]
+  Created roster : [    6C 2002-02-25T13:05  MEX  BJX 2002-03-05T04:10 XA-AMF D93 ]
+  Created roster : [    7C 2002-02-25T13:30  HMO  GDL 2002-03-05T03:05 XA-AMB D93 ]
+  Created roster : [    6C 2002-02-25T12:45  MEX  CUL 2002-03-05T04:50 XA-AMC D93 ]
+  Created roster : [    5C 2002-02-25T12:50  MEX  TRC 2002-03-05T04:45 XA-AMD D93 ]
+  Created roster : [    5C 2002-02-25T14:15  BJX  GDL 2002-03-05T03:35 XA-AMA D93 ]
+  Created roster : [    7C 2002-02-25T13:00  GDL  VER 2002-03-05T04:30 XA-DEL D93 ]
+
+  Rosters (13):
+    Cost.....................13375721.000000
+    Gap to lower bound..............0.0000 %
+
+  Tasks:
+    Unassigned.............................0 (0.0000 %)
+    Overcovered............................0 (0.0000 %)
+
+----------------------- Cost Analysis -----------------------
+
+  Improved period..........: [ 2002-03-03T12:00, 2002-03-06T12:00 ]
+
+--------------------------------------------------------------
+
+  Optimizer cost......................................: 13375721
+  Gap to lower bound (in millionths)..................:        0
+
+---------------------- End of Analysis ----------------------
+
+--------------- Matador runtime status report ---------------
+  Current Solution...................:        1
+  Memory consumption.................:    17 MB
+  Total time.........................: 00:00:02
+  CPU time...........................: 00:00:01
+   |-> Fixing time...................: 00:00:00
+   |-> Pricing time..................: 00:00:00
+   |-> RMP time......................: 00:00:00
+
+Solving problem in interval [ 2002-03-05T12:00, 2002-03-08T12:00 ]
+  Number of active unassigned tasks   :     0
+  Number of active pre-assigned tasks :    13
+Solving problem in interval [ 2002-03-07T12:00, 2002-03-10T12:00 ]
+  Number of active unassigned tasks   :     0
+  Number of active pre-assigned tasks :    13
+Solving problem in interval [ 2002-03-09T12:00, 2002-03-12T12:00 ]
+  Number of active unassigned tasks   :     0
+  Number of active pre-assigned tasks :    13
+Solving problem in interval [ 2002-03-11T12:00, 2002-03-14T12:00 ]
+  Number of active unassigned tasks   :     0
+  Number of active pre-assigned tasks :    13
+Solving problem in interval [ 2002-03-13T12:00, 2002-03-16T12:00 ]
+  Number of active unassigned tasks   :     0
+  Number of active pre-assigned tasks :    13
+Solving problem in interval [ 2002-03-15T12:00, 2002-03-18T12:00 ]
+  Number of active unassigned tasks   :     0
+  Number of active pre-assigned tasks :    13
+Solving problem in interval [ 2002-03-17T12:00, 2002-03-20T12:00 ]
+  Number of active unassigned tasks   :     0
+  Number of active pre-assigned tasks :    13
+Solving problem in interval [ 2002-03-19T12:00, 2002-03-22T12:00 ]
+  Number of active unassigned tasks   :     0
+  Number of active pre-assigned tasks :    13
+Solving problem in interval [ 2002-03-21T12:00, 2002-03-24T12:00 ]
+  Number of active unassigned tasks   :     0
+  Number of active pre-assigned tasks :    13
+Solving problem in interval [ 2002-03-23T12:00, 2002-03-26T12:00 ]
+  Number of active unassigned tasks   :     0
+  Number of active pre-assigned tasks :    13
+Solving problem in interval [ 2002-03-25T12:00, 2002-03-28T12:00 ]
+  Number of active unassigned tasks   :     0
+  Number of active pre-assigned tasks :    13
+Solving problem in interval [ 2002-03-27T12:00, 2002-03-30T12:00 ]
+  Number of active unassigned tasks   :     0
+  Number of active pre-assigned tasks :    13
+Solving problem in interval [ 2002-03-29T12:00, 2002-04-01T12:00 ]
+  Number of active unassigned tasks   :     0
+  Number of active pre-assigned tasks :    13
+Solving problem in interval [ 2002-03-31T12:00, 2002-04-03T12:00 ]
+  Number of active unassigned tasks   :     0
+  Number of active pre-assigned tasks :    13
+Solving problem in interval [ 2002-04-02T12:00, 2002-04-05T12:00 ]
+  Number of active unassigned tasks   :     0
+  Number of active pre-assigned tasks :    13
+Solving problem in interval [ 2002-04-04T12:00, 2002-04-07T11:59 ]
+  Number of active unassigned tasks   :     0
+  Number of active pre-assigned tasks :    13
+
+Solution statistics : 
+
+  Created roster : [    1C 2002-02-25T12:35  MEX  MEX 2002-03-05T05:00 N1003P D93 ]
+  Created roster : [    1C 2002-02-25T14:15  BJX  GDL 2002-03-05T03:35 XA-AMA D93 ]
+  Created roster : [    1C 2002-02-25T13:30  HMO  GDL 2002-03-05T03:05 XA-AMB D93 ]
+  Created roster : [    1C 2002-02-25T12:45  MEX  CUL 2002-03-05T04:50 XA-AMC D93 ]
+  Created roster : [    1C 2002-02-25T12:50  MEX  TRC 2002-03-05T04:45 XA-AMD D93 ]
+  Created roster : [    1C 2002-02-25T13:00  MTY  MEX 2002-03-05T04:40 XA-AME D93 ]
+  Created roster : [    1C 2002-02-25T13:05  MEX  BJX 2002-03-05T04:10 XA-AMF D93 ]
+  Created roster : [    1C 2002-02-25T13:00  VER  MEX 2002-03-05T02:40 XA-DEI D93 ]
+  Created roster : [    1C 2002-02-18T06:01  GDL  GDL 2002-03-15T05:59 XA-DEK D93 ]
+  Created roster : [    1C 2002-02-25T13:00  GDL  VER 2002-03-05T04:30 XA-DEL D93 ]
+  Created roster : [    1C 2002-02-25T14:00  CUL  CUL 2002-03-05T04:15 XA-DEM D93 ]
+  Created roster : [    1C 2002-02-25T06:01  MEX  MEX 2002-04-07T05:59 XA-JEB D93 ]
+  Created roster : [    1C 2002-02-25T14:45  CUL  HMO 2002-03-05T05:40 XA-TFO D93 ]
+
+  Rosters (13):
+    Cost.....................13375721.000000
+    Gap to lower bound..............0.0000 %
+
+  Tasks:
+    Unassigned.............................0 (0.0000 %)
+    Overcovered............................0 (0.0000 %)
+
+----------------------- Cost Analysis -----------------------
+
+  Improved period..........: [ 2002-02-25T12:00, 2002-04-07T11:59 ]
+
+--------------------------------------------------------------
+
+  Optimizer cost......................................: 13375721
+  Gap to lower bound (in millionths)..................:        0
+
+---------------------- End of Analysis ----------------------
+
+--------------- Matador runtime status report ---------------
+  Current Solution...................:        1
+  Memory consumption.................:    17 MB
+  Total time.........................: 00:00:02
+  CPU time...........................: 00:00:02
+   |-> Fixing time...................: 00:00:00
+   |-> Pricing time..................: 00:00:00
+   |-> RMP time......................: 00:00:00
+
+Written Solution to : /carm/tail/tas_test_suit_user/LOCAL_PLAN/Tail_CP02/25feb_06abr/D93/D93_restdest_4days_master.tasmattias06Dec16:12:35/APC_FILES/Solution_1
+
+
+ERRORS & WARNINGS FROM TAIL
+---------------------------
+
+
+Tail Warning (16): Problem with rosters.
+Cannot support input roster evaluation and problem subdivision : 
+Input rosters will therefore be ignored
+
+
+-- End --
