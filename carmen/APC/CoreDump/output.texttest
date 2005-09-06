@@ -1,12 +1,12 @@
-TextTest will write diagnostics in /users/johani/texttesttmp/texttest.sgejohani30Jun093828/carmen/APC/CoreDump based on file at /users/johani/work/master_clean/Testing/Automatic/texttest/log4py.conf
-Using Application APC, version crash, checkout /users/johani/work/master
+TextTest will write diagnostics in /users/geoff/texttesttmp/texttest.sgegeoff06Sep134221/carmen/APC/CoreDump based on file at /users/geoff/work/master/Testing/Automatic/texttest/log4py.conf
+Using Application APC, version crash, checkout /users/geoff/work/master
 Compiling rules for APC test-suite TargetApp
   Compiling rules for APC test-suite sk_test9scripts
 Submitting APC test-suite TargetApp to SGE queues
   Submitting APC test-suite sk_test9scripts to SGE queues
-    Submitting APC test-case no_dh_single_base_cg to SGE queue short, requesting carmarch="*i386_linux*"
+    Submitting APC test-case no_dh_single_base_cg to SGE queue short, requesting osversion=RHEL3,carmarch="*i386_linux*"
     Reading slave results for APC test-case no_dh_single_base_cg (on all.apc,script_errors.apc,solution.apc,status.apc,warnings.apc)
-    APC test-case no_dh_single_base_cg CRASHED (Segmentation fault in raise) on tiptonville : new results in all,script_errors, differences in solution,status,warnings
+    APC test-case no_dh_single_base_cg CRASHED (Segmentation fault in raise) on circleville : new results in all,script_errors, differences in solution,status,warnings
     View details(v), Save Version crash(1), Save(s) or continue(any other key)?
 Program terminated with signal 11, Segmentation fault.
 Stack trace from gdb :
@@ -112,13 +112,13 @@ MPLOYER;FLIGHT_GDOR;
 ------------------ New result in all --------------------
 Time:  0 s real  10 ms cpu  0 ms cpu_child  memory:   4.5 Mb
 Delta: 0 s real  0 ms cpu  0 ms cpu_child  memory:   4.5 Mb
-/carm/proj/texttest/selftest_data/CARMSYS/sk_test9scripts_tmp.apc/crc/rule_set/APC/i386_linux/.APC_fd54_DC9_no_reference.johani.14431
--s /carm/carmen_paros_deliver/user_and_tmp/sk_test9_user//LOCAL_PLAN/F36/MCS_W01/V1112_0122/APC_ji_single_base_CPH_spl.apc.crashjohani30Jun09:38:46/APC_FILES
+/carm/proj/texttest/selftest_data/CARMSYS/sk_test9scripts_tmp.apc/crc/rule_set/APC/i386_linux/.APC_fd54_DC9_no_reference.geoff.27224
+-s /carm/carmen_paros_deliver/user_and_tmp/sk_test9_user//LOCAL_PLAN/F36/MCS_W01/V1112_0122/APC_ji_single_base_CPH_spl.apc.crashgeoff06Sep13:48:02/APC_FILES
 -v 1
--R /nfs/local/apc_temp/APC_ji_single_base_CPH_spl.apc.crashjohani30Jun09:38:46_14431/APC_rot
--I /carm/carmen_paros_deliver/user_and_tmp/sk_test9_user//LOCAL_PLAN/F36/MCS_W01/V1112_0122/APC_ji_single_base_CPH_spl.apc.crashjohani30Jun09:38:46/APC_FILES/run_status
--U johani
-executable name is [/carm/proj/texttest/selftest_data/CARMSYS/sk_test9scripts_tmp.apc/crc/rule_set/APC/i386_linux/.APC_fd54_DC9_no_reference.johani.14431]
+-R /nfs/local/apc_temp/APC_ji_single_base_CPH_spl.apc.crashgeoff06Sep13:48:02_27224/APC_rot
+-I /carm/carmen_paros_deliver/user_and_tmp/sk_test9_user//LOCAL_PLAN/F36/MCS_W01/V1112_0122/APC_ji_single_base_CPH_spl.apc.crashgeoff06Sep13:48:02/APC_FILES/run_status
+-U geoff
+executable name is [/carm/proj/texttest/selftest_data/CARMSYS/sk_test9scripts_tmp.apc/crc/rule_set/APC/i386_linux/.APC_fd54_DC9_no_reference.geoff.27224]
 carmsys: /carm/proj/texttest/selftest_data/CARMSYS
 carmusr: /carm/carmen_paros_deliver/user_and_tmp/sk_test9_user/
 carmtmp: /carm/proj/texttest/selftest_data/CARMSYS/sk_test9scripts_tmp.apc
@@ -135,7 +135,7 @@ airport file: /carm/carmen_paros_deliver/user_and_tmp/sk_test9_user//Airports/bi
 canonicalize called
 _init_segment_duty_types: Cannot retrive resource CREW_DUTY_TYPE_ETAB_NAME
 
-Error! Pid:14485  Thu Jun 30 09:38:54 2005  User:johani
+Error! Pid:27273  Tue Sep  6 13:48:21 2005  User:geoff
 Error! File:/carm/master/Data/duty_type/DutyType.cc  Line:202
 Error! _register_segment_duty_type: Registering new duty type  in category 1.
 
@@ -147,15 +147,15 @@ APC exited with error code 139 <segmentation fault>
 *** Keeping the logfiles in $APC_TEMP_DIR ***
 *** disk space available for temporary files ***
 Filesystem           1K-blocks      Used Available Use% Mounted on
-/dev/sda2             16513960    169928  15505172   2% /tmp
-/dev/sda2             16513960    169928  15505172   2% /tmp
-/dev/sda6              1032072    555696    423948  57% /var
+/dev/sda2             16513960     97732  15577368   1% /tmp
+/dev/sda2             16513960     97732  15577368   1% /tmp
+/dev/sda6              1032072    147752    831892  16% /var
 *** Saving the APC executable ***
 *** disk space available for temporary files ***
 Filesystem           1K-blocks      Used Available Use% Mounted on
-/dev/sda2             16513960    177040  15498060   2% /tmp
-/dev/sda2             16513960    177040  15498060   2% /tmp
-/dev/sda6              1032072    555696    423948  57% /var
+/dev/sda2             16513960    104844  15570256   1% /tmp
+/dev/sda2             16513960    104844  15570256   1% /tmp
+/dev/sda6              1032072    147752    831892  16% /var
 <See also tkdiff window for details of status>
     Save Version crash(1), Save(s) or continue(any other key)?
-Killed process 29460 with signal 2
+Killed process 1602 with signal 2
