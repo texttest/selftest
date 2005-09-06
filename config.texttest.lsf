@@ -20,6 +20,7 @@ output:CPU time{WORD 4}
 output:gnuplot window{WORD -1}
 output:Emergency finish{WORD -1}
 output:/dev/sda
+output:killed explicitly at{WORD -1}
 errors:Error! Pid
 dynamic_gui_log:batch system daemon
 dynamic_gui_log:Build Rave program
@@ -30,6 +31,8 @@ dynamic_gui_log:File .* line .* in
 catalogue:sleep.killing{LINES 20}
 catalogue:ravecompile
 catalogue:lsfreportmatador
+catalogue:slaveerrs
+catalogue:slavelog
 directories:Created{WORD -1}
 slavedirs:Created{WORD -1}
 slavelog:TextTest will write diagnostics
@@ -38,6 +41,7 @@ gnuplot:plot{WORD 2}
 targetReport:Build Rave program
 targetReport:batch system daemon
 targetReport:No LSF installation
+targetReport:killed.*at{WORD -1}
 graph:CreationDate
 graph:Lshow
 userpage:Comments to author
