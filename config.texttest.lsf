@@ -20,7 +20,7 @@ output:CPU time{WORD 4}
 output:gnuplot window{WORD -1}
 output:Emergency finish{WORD -1}
 output:/dev/sda
-output:killed explicitly at{WORD -1}
+output:terminated before completion{WORD 10}
 output:GenTestOverview{WORD -1}
 errors:Error! Pid
 dynamic_gui_log:batch system daemon
@@ -43,6 +43,7 @@ targetReport:Build Rave program
 targetReport:batch system daemon
 targetReport:No LSF installation
 targetReport:killed.*at{WORD -1}
+targetReport:terminated before completion{WORD 8}
 graph:CreationDate
 graph:Lshow
 userpage:Comments to author
