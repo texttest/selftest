@@ -74,20 +74,11 @@ NightjobTerminateRave
 # Check that rule compilations with parallel test suite are handled correctly
 BadRaveRunParallel
 
-# Test what happens when a machine is not mounted correctly (uses fake LSF to simulate this!)
-BadMachine
-
-# Check we don't hang if we try to build rules on a dead machine
-RuleBuildBadMachine
-
 # Calculates a KPI using two testcases.
 CalculateKPI
 
-# Make sure we handle losing actual SGE test jobs OK
-LoseTestJob
-
-# Copy of RaveRun with a dud qacct
-LoseRaveJob
-
 # Killing matador test - should clean up tmp directories
 KillTest
+
+# Tests for trouble with machines (SACM) and SGE (CM)
+ExternalErrors

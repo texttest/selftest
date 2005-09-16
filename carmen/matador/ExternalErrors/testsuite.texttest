@@ -1,0 +1,14 @@
+# Test what happens when a machine is not mounted correctly (uses fake LSF to simulate this!)
+BadMachine
+
+# Check we don't hang if we try to build rules on a dead machine
+RuleBuildBadMachine
+
+# Make sure we handle losing actual SGE test jobs OK
+SGELosesTestJob
+
+# Copy of RaveRun with a dud qacct
+SGELosesRaveJob
+
+# Make sure we don't hang if qdel doesn't work
+SGEJobDeletionFails
