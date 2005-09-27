@@ -8,7 +8,7 @@ def getConfig(optionMap):
 
 class Config(QueueSystemConfig):
     def getTestRunner(self):
-        if self.optionMap.slaveRun():
+        if self.slaveRun():
             return RunTestInSlave()
         else:
             return QueueSystemConfig.getTestRunner(self)
