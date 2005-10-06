@@ -1,0 +1,27 @@
+TextTest will write diagnostics in /users/geoff/texttesttmp/texttest.sgegeoff06Oct135037/QueueSystems/Console/ExternalErrors/SlaveCrashNoReport based on file at /users/geoff/work/master/Testing/Automatic/texttest/log4py.conf
+Using Application SLEEP, version killing.badslavestart, checkout /users/geoff/texttesttmp/texttest.sgegeoff06Oct135037/QueueSystems/Console/ExternalErrors/SlaveCrashNoReport/TargetApp/./
+Submitting SLEEP test-suite TargetApp to SGE queues
+  Submitting SLEEP test-case Basic to default SGE queue
+Received signal for termination, killing all remaining tests...
+  Cancelling SLEEP test-case Basic in SGE (Emergency finish of job 1345689)
+  SLEEP test-case Basic not compared:  Slave exited
+Description of exception thrown :
+Traceback (most recent call last):
+  File "/users/geoff/work/master/Testing/TextTest/testmodel.py", line 619, in getActionSequence
+    actionSequenceFromConfig = self.target.getActionSequence()
+  File "/users/geoff/work/master/Testing/TextTest/default.py", line 36, in getActionSequence
+    return self._getActionSequence(makeDirs=1)
+  File "/users/geoff/work/master/Testing/TextTest/default.py", line 38, in _getActionSequence
+    actions = [ self.getTestProcessor(), self.getTestPostProcessor() ]
+  File "/users/geoff/work/master/Testing/TextTest/queuesystem.py", line 96, in getTestProcessor
+    baseProcessor = default.Config.getTestProcessor(self)
+  File "/users/geoff/work/master/Testing/TextTest/default.py", line 44, in getTestProcessor
+    return [ self.getWriteDirectoryPreparer(), catalogueCreator, \
+  File "/users/geoff/work/master/Testing/TextTest/default.py", line 97, in tryGetTestRunner
+    return self.getTestRunner()
+  File "/users/geoff/work/master/Testing/Automatic/texttest/error_config_modules/slaveerrstart.py", line 12, in getTestRunner
+    wibble
+NameError: global name 'wibble' is not defined
+Error in set-up of application SLEEP - Exception thrown by 'slaveerrstart' configuration, while requesting 'action sequence'
+
+At 13:51 creating batch report for application SLEEP ...file written

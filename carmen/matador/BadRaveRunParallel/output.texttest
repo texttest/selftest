@@ -1,18 +1,22 @@
-TextTest will write diagnostics in /users/geoff/texttesttmp/texttest.sgegeoff27Apr164139/carmen/matador/BadRaveRunParallel based on file at /users/geoff/work/master/Testing/Automatic/texttest/log4py.conf
+TextTest will write diagnostics in /users/geoff/texttesttmp/texttest.sgegeoff05Oct102015/carmen/matador/BadRaveRunParallel based on file at /users/geoff/work/master/Testing/Automatic/texttest/log4py.conf
 Using Application Matador, version badrule.extraversion, checkout /carm/proj/texttest/selftest_data
 Using Application Matador, version badrule.extraversion.parallel, checkout /carm/proj/texttest/selftest_data
-Compiling rules for Matador test-suite TargetApp
-  Compiling rules for Matador test-suite ArtificialUser
-    Compiling rules for Matador test-case matador_2             - ruleset Matador_5_bad
-    Submitting matador.ArtificialUser.Matador_5_bad to SGE queue short, requesting model=Opteron*,carmarch="*i386_linux*"
-    Compiling rules for Matador test-case generate_in_subperiod - ruleset Matador_5_bad already being compiled
-Compiling rules for Matador test-suite TargetApp
-  Compiling rules for Matador test-suite ArtificialUser
-    Compiling rules for Matador test-case generate_in_subperiod - ruleset Matador_5_bad already being compiled
+Submitting Rule Builds for Matador test-suite TargetApp to SGE queues
+  Submitting Rule Builds for Matador test-suite ArtificialUser to SGE queues
+    Submitting Rule Builds for Matador test-case matador_2             (Matador_5_bad ruleset) to SGE queue short, requesting model=Opteron*,carmarch="*i386_linux*"
+Submitting Rule Builds for Matador test-suite TargetApp to SGE queues
+  Submitting Rule Builds for Matador test-suite ArtificialUser to SGE queues
 Submitting Matador test-suite TargetApp to SGE queues
   Submitting Matador test-suite ArtificialUser to SGE queues
+    Evaluating Matador test-case generate_in_subperiod (unrunnable)
+    Matador test-case generate_in_subperiod not compared:  Trying to use ruleset 'Matador_5_bad' that failed to build.
+    Evaluating compilation of ruleset Matador_5_bad - FAILED!
+Submitting Matador test-suite TargetApp to SGE queues
+  Submitting Matador test-suite ArtificialUser to SGE queues
+    Evaluating Matador test-case matador_2             (unrunnable)
     Matador test-case matador_2             not compared:  Failed to build ruleset Matador_5_bad
-Build Rave program Matador_5_bad started on bellville, 27 April 16:43
+Build Rave program Matador_5_bad started on granville, 05 October 10:23
+Warning: No LSF installation found; reverting to old compilation scheme.
 Generating code... 
 *** Trouble report (2 errors, 0 warnings):
 
@@ -25,8 +29,6 @@ Generating code...
    ERROR: Undefined level _topmodule.roser in traverser
 
 
+    Evaluating Matador test-case generate_in_subperiod (unrunnable)
     Matador test-case generate_in_subperiod not compared:  Trying to use ruleset 'Matador_5_bad' that failed to build.
-Submitting Matador test-suite TargetApp to SGE queues
-  Submitting Matador test-suite ArtificialUser to SGE queues
-    Matador test-case generate_in_subperiod not compared:  Trying to use ruleset 'Matador_5_bad' that failed to build.
-At 16:43 creating batch report for application Matador ...file written
+At 10:23 creating batch report for application Matador ...file written

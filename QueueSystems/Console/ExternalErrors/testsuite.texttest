@@ -1,0 +1,12 @@
+# All of these tests are copies of NightjobTerminate: we need to make
+# sure we report queue system errors intelligently here.
+# Interactive queue system errors are not really handled right now.
+
+# What happens when nightjob cannot delete long-running jobs?
+JobDeletionFails
+
+# What happens if the job never reports in?
+JobSubmissionFails
+
+# What happens if the slave crashes before it has set up its communication to master?
+SlaveCrashNoReport

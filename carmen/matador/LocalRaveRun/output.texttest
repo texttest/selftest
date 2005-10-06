@@ -1,15 +1,26 @@
-TextTest will write diagnostics in /users/geoff/work/master/Testing/Automatic/texttest
-Using Application Matador, version rave.badrule, checkout /users/geoff/work/master
+TextTest will write diagnostics in /users/geoff/texttesttmp/texttest.sgegeoff03Oct120605/carmen/matador/LocalRaveRun based on file at /users/geoff/work/master/Testing/Automatic/texttest/log4py.conf
+Using Application Matador, version rave.badrule, checkout /carm/proj/texttest/selftest_data
+CARMTMP /users/geoff/texttesttmp/texttest.sgegeoff03Oct120605/carmen/matador/LocalRaveRun/test_tmp did not exist, attempting to create it
 Compiling rules for Matador test-suite TargetApp
   Compiling rules for Matador test-suite ArtificialUser
-    Compiling rules for Matador test-case matador_2 - ruleset Matador_5_bad
-    Running matador.ArtificialUser.Matador_5_bad locally
-Local build fails, but we don't notice...
+    Compiling rules for Matador test-case matador_2             - ruleset Matador_5_bad
 Running Matador test-suite TargetApp
   Running Matador test-suite ArtificialUser
-    Running Matador test-case matador_2
 Comparing differences for Matador test-suite TargetApp
   Comparing differences for Matador test-suite ArtificialUser
-    Comparing differences for Matador test-case matador_2 (on errors.cas,output.cas,solution.cas)
-    Matador test-case matador_2 FAILED : differences in errors,output
-    View details(v), Save Version badrule.local(1), Save Version badrule(2), Save Version local(3), Save(s) or continue(any other key)?
+    Matador test-case matador_2             not compared:  Failed to build ruleset Matador_5_bad
+Build Rave program Matador_5_bad started on elfincove, 03 October 12:06
+Warning: No LSF installation found; reverting to old compilation scheme.
+Generating code... 
+*** Trouble report (2 errors, 0 warnings):
+
+"source/Matador_5_bad", line 18.22:
+      16: %cost_weight% = parameter 1;
+      17: 
+      18: %cost_of_a_roster% = sum(leg(roser),%cost_weight%);
+                               ^^^
+   ERROR: Missing parent level in traverser
+   ERROR: Undefined level _topmodule.roser in traverser
+
+
+    Matador test-case generate_in_subperiod not compared:  Trying to use ruleset 'Matador_5_bad' that failed to build.
