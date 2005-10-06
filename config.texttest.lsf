@@ -18,17 +18,20 @@ output:Unexpected output from{WORD 12}
 output:Real time
 output:CPU time{WORD 4}
 output:gnuplot window{WORD -1}
-output:Emergency finish{WORD -1}
+output:Cancelling{WORD -1}
 output:/dev/sda
 output:terminated before completion{WORD 10}
+output:compilation killed explicitly{WORD -1}
 output:GenTestOverview{WORD -1}
+output:Submitting Matador test-suite
 errors:Error! Pid
 dynamic_gui_log:batch system daemon
 dynamic_gui_log:Build Rave program
 dynamic_gui_log:Second column.*PEND{WORD 4}
-dynamic_gui_log:Second column.*RUN{WORD 4}
+dynamic_gui_log:Second column.*RU{WORD 4}
 dynamic_gui_log:No LSF installation
 dynamic_gui_log:File .* line .* in
+dynamic_gui_log:APC program{WORD -1}
 catalogue:sleep.killing{LINES 20}
 catalogue:ravecompile
 catalogue:lsfreportmatador
@@ -54,8 +57,9 @@ testpage:Generated
 
 [unordered_text]
 output:Failed to submit to
-output:Reading slave results for
+output:Evaluating
 output:Submitting Picador
+output:Trying to use ruleset
 gui_log:did not produce any results
 gui_log:process that records
 dynamic_gui_log:Waiting for application event.*killing to start{->}Expected application event.*2
@@ -64,8 +68,11 @@ usecase:wait for test
 directories:Removing
 [end]
 
-# Fake queue system directory...
-link_test_path:FakeLsf
+# Faked versions of LSF commands...
+link_test_path:bsub
+link_test_path:bhosts
+link_test_path:bkill
+link_test_path:bjobs
 
 # Used for retrieving gnuplot processes...
 catalogue_process_string:Created process
