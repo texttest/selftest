@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-import os, sys, string
+import os, sys, string, time
 
 def getQsubs():
     qsubs = []
@@ -20,3 +20,5 @@ def getRealQsub():
 print "Calling SGE with synchronise mode on..."
 # Run the slave locally, to avoid delays
 os.system(getRealQsub() + " -sync y " + string.join(sys.argv[1:-1]) + " '" + sys.argv[-1] + "'")
+# Wait for files to propagate in NFS...
+time.sleep(1)
