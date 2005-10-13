@@ -1,5 +1,6 @@
 # Checkout depends on the local machine, and the architecture
 [run_dependent_text]
+output:File .* line .* in
 output:Build Rave program
 output:lost the job{WORD -1}
 output:executing on
@@ -47,6 +48,7 @@ targetReport:batch system daemon
 targetReport:No LSF installation
 targetReport:killed.*at{WORD -1}
 targetReport:terminated before completion{WORD 8}
+targetReport:File .* line .* in
 graph:CreationDate
 graph:Lshow
 userpage:Comments to author
