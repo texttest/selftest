@@ -1,0 +1,11 @@
+set ylabel ''
+set xlabel 'CPU time (hours)'
+set time
+set title "My new title"
+set xtics border nomirror norotate
+set ytics border nomirror norotate
+set border 3
+set xrange [0:];
+set yrange [:3];
+set ylabel "\n% above 14315879"
+plot './RD_lh_pac/A320_COC_aan/framework_tmp/plot-std-result'  title "std result"  with linespoints lt 2 pt 1, './RD_lh_pac/A320_COC_aan/framework_tmp/plot-std-result-rule-cost'  title "std result.rule cost"  with linespoints lt 3 pt 1, './RD_lh_pac/A320_COC_aan/framework_tmp/plot-9'  title "9"  with linespoints lt 4 pt 1, './RD_lh_pac/A320_COC_aan/framework_tmp/plot-9-rule-cost'  title "9.rule cost"  with linespoints lt 5 pt 1
