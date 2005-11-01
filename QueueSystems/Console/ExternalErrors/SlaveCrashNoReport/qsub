@@ -17,8 +17,14 @@ def getRealQsub():
     else:
         return qsubs[0]
 
+def getQuotedArgs():
+    quotedArgs = []
+    for arg in sys.argv[1:]:
+        quotedArgs.append("'" + arg + "'")
+    return string.join(quotedArgs)
+
 print "Calling SGE with synchronise mode on..."
 # Run the slave locally, to avoid delays
-os.system(getRealQsub() + " -sync y " + string.join(sys.argv[1:-1]) + " '" + sys.argv[-1] + "'")
+os.system(getRealQsub() + " -sync y " + getQuotedArgs())
 # Wait for files to propagate in NFS...
 time.sleep(1)
