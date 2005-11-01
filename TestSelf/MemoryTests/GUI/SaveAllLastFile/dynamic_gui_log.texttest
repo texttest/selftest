@@ -1,0 +1,90 @@
+Mapping tests in tree view...
+-> Added MEM test-suite TargetApp to test tree view.
+->   Added MEM test-case NoMemFile    to test tree view.
+->   Added MEM test-case NoOutputFile to test tree view.
+
+Viewing test MEM test-suite TargetApp
+Adding file environment.lsf under heading 'Definition Files', coloured white
+Adding file testsuite.mem under heading 'Definition Files', coloured white
+Adding file testsuite.mem.nomemfile under heading 'Definition Files', coloured white
+Top Window title set to TextTest dynamic GUI (tests started at 01Nov09:16:19)
+
+Waiting for application event 'completion of test actions' to occur.
+Redrawing test NoMemFile coloured white
+Redrawing test NoMemFile coloured turquoise
+Redrawing test NoMemFile coloured pale green
+(Second column 'memory new' coloured orange)
+Redrawing test NoOutputFile coloured white
+Redrawing test NoOutputFile coloured turquoise
+Redrawing test NoOutputFile coloured orange
+(Second column 'output new(+)' coloured orange)
+Expected application event 'completion of test actions' occurred, proceeding.
+
+'select test' event created with arguments 'NoOutputFile'
+Viewing test MEM test-case NoOutputFile
+Adding file memory.mem under heading 'Comparison Files', coloured red
+(Second column '13% larger' coloured red)
+Adding file output.mem under heading 'New Files', coloured red
+---------- Text Info Window ----------
+Test FAILED :
+------------------ Differences in memory(larger) --------------------
+- Max Memory  :      42.3 MB
+?                     ^ ^    
++ Max Memory  :      47.8 MB
+?                     ^ ^    
+------------------ New result in output --------------------
+Running Fake Memory Program...
+Memory usage now 35.6 MB
+Memory usage now 47.2 MB
+Memory usage now 47.8 MB
+Memory usage now 42.3 MB
+Memory usage now 38.4 MB
+--------------------------------------
+
+Creating notebook page for 'Viewing'
+Creating check button for switch 'Include Run-dependent Text' (checked)
+Creating check button for switch 'Show differences where present' (checked)
+
+Creating notebook page for 'Saving'
+Creating entry for option 'Version to save' (set to '2') (drop-down list containing ['2', '4', 'nomemfile', ''])
+Creating entry for option 'Save single file' (drop-down list containing ['', 'memory', 'output'])
+Creating check button for switch 'Replace successfully compared files also'
+Creating radio button for switch 'Exact Performance/Average Performance' (checked)
+
+'view options for' event created with arguments 'Saving'
+
+'enter save single file =' event created with arguments 'memory'
+
+'save all' event created with arguments ''
+Saving MEM test-case NoMemFile    - version 2, exactness 1, only file with stem memory
+Redrawing test NoMemFile coloured pale green
+Saving MEM test-case NoOutputFile - version 2, exactness 1, only file with stem memory
+Redrawing test NoOutputFile coloured orange
+(Second column 'output new' coloured orange)
+Adding file memory.mem.2 under heading 'Comparison Files', coloured green
+Adding file output.mem under heading 'New Files', coloured red
+---------- Text Info Window ----------
+Test FAILED :
+------------------ Differences in memory(larger) --------------------
+- Max Memory  :      42.3 MB
+?                     ^ ^    
++ Max Memory  :      47.8 MB
+?                     ^ ^    
+------------------ New result in output --------------------
+Running Fake Memory Program...
+Memory usage now 35.6 MB
+Memory usage now 47.2 MB
+Memory usage now 47.8 MB
+Memory usage now 42.3 MB
+Memory usage now 38.4 MB
+--------------------------------------
+
+Creating notebook page for 'Viewing'
+Creating check button for switch 'Include Run-dependent Text' (checked)
+Creating check button for switch 'Show differences where present' (checked)
+
+Creating notebook page for 'Saving'
+Creating entry for option 'Version to save' (set to '2') (drop-down list containing ['2', '4', 'nomemfile', ''])
+Creating check button for switch 'Replace successfully compared files also'
+
+'quit' event created with arguments ''
