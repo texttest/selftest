@@ -8,6 +8,12 @@ BatchUnrunnable
 # Should reject as the batch session is undefined and a version is provided
 BatchRejectVersion
 
+# See that we don't get batch reports when an application has no tests
+OneAppNoTests
+
 # Test for collecting batch files
 CollectFiles
 
+
+# Make sure that when there isn't anything to collect, we don't send spurious stuff
+CollectNothing
