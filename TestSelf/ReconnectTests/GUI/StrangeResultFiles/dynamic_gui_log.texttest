@@ -17,7 +17,7 @@ Mapping tests in tree view...
 
 Viewing test DIP test-suite TargetApp
 Adding file testsuite.dip under heading 'Definition Files', coloured white
-Top Window title set to TextTest dynamic GUI (tests started at 04Oct15:14:32)
+Top Window title set to TextTest dynamic GUI (tests started at 11Nov15:13:59)
 
 Waiting for application event 'completion of test actions' to occur.
 Redrawing test S01.99 coloured red
@@ -36,6 +36,8 @@ Redrawing test S04 coloured red
 (Second column 'no results' coloured red)
 Redrawing test A04 coloured red
 (Second column 'don't get it' coloured red)
+Redrawing test A04 coloured red
+(Second column 'output different' coloured red)
 Redrawing test S05 coloured red
 (Second column 'no results' coloured red)
 Redrawing test A05 coloured red
@@ -69,18 +71,62 @@ Creating check button for switch 'Show differences where present' (checked)
 
 'select test' event created with arguments 'A04'
 Viewing test DIP test-case A04
+Adding file output.dip under heading 'Comparison Files', coloured red
 ---------- Text Info Window ----------
-Test strange behaviour :
-Lots of junk appeared.
-And then we died.
+Test FAILED :
+------------------ Differences in output --------------------
+- Austria: Eas -> Smy                (*bounce*)
+- Austria: Bul -> Con                (*works*)
+- Austria: Ser -> Rum                (*works*)
+- Austria: Alb -> Gre                (*works*)
+- Austria: Adr -> Alb                (*works*)
+- Austria: Tri -> Vie                (*works*)
+?                 ^^^                          
++ Austria: Tri -> Tyr                (*works*)
+?                 ^^^                          
+- Austria: Tyr -> Mun                (*works*)
++ Austria: Vie SUPPORT Tri -> Tyr    (*works*)
++ Austria: Adr -> Ven                (*bounce*)
++ Austria: Gre SUPPORT Bul HOLD      (*works*)
++ Austria: Bul SUPPORT Con HOLD      (*works*)
++ Austria: Smy SUPPORT Con HOLD      (*cut*)
+  
+- England: Nwy -> StP                (*bounce*)
+- England: Nth HOLD                  (*works*)
+?          ^^^                                 
++ England: Yor HOLD                  (*works*)
+?          ^^^                                 
+- England: Den SUPPORT Kie HOLD      (*works*)
+- England: Swe HOLD                  (*works*)
+- England: Ska SUPPORT Swe HOLD      (*works*)
+- England: Nrg -> Bar                (*works*)
+?           ^^    ^^^                          
++ England: Nth -> Den                (*works*)
+?           ^^    ^^^                          
++ England: Ska SUPPORT Nth -> Den    (*works*)
++ England: Swe -> Bal                (*bounce, dislodged*)
 --------------------------------------
 
 Creating notebook page for 'Viewing'
 Creating check button for switch 'Include Run-dependent Text'
 Creating check button for switch 'Show differences where present' (checked)
 
+Creating notebook page for 'Saving'
+Creating entry for option 'Version to save' (set to 'reconnectrun') (drop-down list containing ['reconnectrun', ''])
+Creating check button for switch 'Replace successfully compared files also'
+
 'save all' event created with arguments ''
 Saving DIP test-case A03    - version reconnectrun, exactness 1
 Redrawing test A03 coloured green
+Saving DIP test-case A04    - version reconnectrun, exactness 1
+Redrawing test A04 coloured green
+Adding file output.dip.reconnectrun under heading 'Comparison Files', coloured green
+---------- Text Info Window ----------
+Test succeeded
+--------------------------------------
+
+Creating notebook page for 'Viewing'
+Creating check button for switch 'Include Run-dependent Text'
+Creating check button for switch 'Show differences where present' (checked)
 
 'quit' event created with arguments ''

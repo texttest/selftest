@@ -1,6 +1,6 @@
 geoff@localhost
-unrunnable=9,strange behaviour=1,FAILED=1
-051101 DIP reconnectrun.batch : 11 tests : 9 unrunnable, 1 strange behaviour, 1 FAILED
+unrunnable=9,FAILED=2
+051111 DIP reconnectrun.batch : 11 tests : 9 unrunnable, 2 FAILED
 
 Summary of all Unsuccessful tests follows...
 ---------------------------------------------------------------------------------
@@ -19,15 +19,11 @@ In DIP test-suite TargetApp:
     In DIP test-suite Game47:
       - DIP test-case S01 : no results
 
-The following tests strange behaviour : 
-In DIP test-suite TargetApp:
-  In DIP test-suite Game9952:
-    - DIP test-case A04    : don't get it
-
 The following tests FAILED : 
 In DIP test-suite TargetApp:
   In DIP test-suite Game9952:
     - DIP test-case A03    : output different
+    - DIP test-case A04    : output different
 
 
 Details of all Unsuccessful tests follows...
@@ -63,12 +59,6 @@ No file found to load results from
 TEST could not be run : DIP test-case S01 (under npstIII/Game47/S01)
 No file found to load results from
 
-Detailed information for the tests that strange behaviour follows...
---------------------------------------------------------
-TEST strange behaviour : DIP test-case A04    (under Game9952/A04)
-Lots of junk appeared.
-And then we died.
-
 Detailed information for the tests that FAILED follows...
 --------------------------------------------------------
 TEST FAILED on frankfort : DIP test-case A03    (under Game9952/A03)
@@ -76,4 +66,37 @@ TEST FAILED on frankfort : DIP test-case A03    (under Game9952/A03)
 - Italy:   Tyn CONVOY Tun -> Rom     (*dislodged*)
 + Italy:   Tyn CONVOY Tun -> Rom     (*was dislodged*)
 ?                                      ++++            
+--------------------------------------------------------
+TEST FAILED : DIP test-case A04    (under Game9952/A04)
+------------------ Differences in output --------------------
+- Austria: Eas -> Smy                (*bounce*)
+- Austria: Bul -> Con                (*works*)
+- Austria: Ser -> Rum                (*works*)
+- Austria: Alb -> Gre                (*works*)
+- Austria: Adr -> Alb                (*works*)
+- Austria: Tri -> Vie                (*works*)
+?                 ^^^                          
++ Austria: Tri -> Tyr                (*works*)
+?                 ^^^                          
+- Austria: Tyr -> Mun                (*works*)
++ Austria: Vie SUPPORT Tri -> Tyr    (*works*)
++ Austria: Adr -> Ven                (*bounce*)
++ Austria: Gre SUPPORT Bul HOLD      (*works*)
++ Austria: Bul SUPPORT Con HOLD      (*works*)
++ Austria: Smy SUPPORT Con HOLD      (*cut*)
+  
+- England: Nwy -> StP                (*bounce*)
+- England: Nth HOLD                  (*works*)
+?          ^^^                                 
++ England: Yor HOLD                  (*works*)
+?          ^^^                                 
+- England: Den SUPPORT Kie HOLD      (*works*)
+- England: Swe HOLD                  (*works*)
+- England: Ska SUPPORT Swe HOLD      (*works*)
+- England: Nrg -> Bar                (*works*)
+?           ^^    ^^^                          
++ England: Nth -> Den                (*works*)
+?           ^^    ^^^                          
++ England: Ska SUPPORT Nth -> Den    (*works*)
++ England: Swe -> Bal                (*bounce, dislodged*)
 
