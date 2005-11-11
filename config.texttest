@@ -60,7 +60,7 @@ output:test-case.* on .*new results.*differences{WORD -9}
 output:test-case.* on .*new results{WORD -6}
 output:test-case.* on .*differences{WORD -5}
 output:test-case.* on .*:${WORD -2}
-output:still in use
+output:second to retry
 output:creating batch report{WORD 2}
 output:Killing running test{WORD -1}
 output*:TextTest will write diagnostics
@@ -164,7 +164,6 @@ filterfile*:TargetApp/filter_files/filter*
 
 definition_file_stems:dynamic_usecase
 definition_file_stems:replay_usecase
-definition_file_stems:slave_usecase
 
 # Run the LSF and SGE tests too...
 extra_version:sge
