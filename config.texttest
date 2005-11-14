@@ -155,14 +155,16 @@ targetMem:TargetApp/Failures/memory.mem
 targetReport:TargetApp/*/batchreport*
 collectReport:TargetApp/batchreport*
 shortcut:TargetApp/*.shortcut
-outputrep:TargetApp/*/replaylog
+errorsrec:TargetApp/*/record_errors.log
+outputrec:TargetApp/*/record_run.log
+errorsrep:TargetApp/*/replay_errors.log
+outputrep:TargetApp/*/replay_run.log
 jusecaseprops:TargetApp/*/*/jusecase.properties
 filterfile*:TargetApp/filter_files/filter*
-#useful for debugging...
-#recerrors:TargetApp/*/record_errors.log
 [end]
 
 definition_file_stems:dynamic_usecase
+definition_file_stems:record_usecase
 definition_file_stems:replay_usecase
 
 # Run the LSF and SGE tests too...
