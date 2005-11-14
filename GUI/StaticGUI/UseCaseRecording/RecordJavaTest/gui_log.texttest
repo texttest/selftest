@@ -26,6 +26,7 @@ Creating check button for switch 'Recompute file filters when reconnecting'
 
 Creating notebook page for 'How to run'
 Creating entry for option 'Run batch mode session'
+Creating check button for switch 'Run with slow motion replay'
 Creating check button for switch 'Disable any performance testing'
 
 Creating notebook page for 'Side effects'
@@ -63,7 +64,8 @@ Viewing new test t1
 Adding file options.gui under heading 'Definition Files', coloured pale green
 
 Creating notebook page for 'Recording'
-Creating check button for switch 'Hold record shell after recording'
+Creating check button for switch 'Automatically replay test after recording it' (checked)
+Creating radio button for switch 'Auto-replay in dynamic GUI/Auto-replay invisible'
 
 Creating notebook page for 'Copying'
 Creating entry for option 'Name of copied test' (set to 't1_copy')
@@ -71,27 +73,25 @@ Creating entry for option 'Description of new test' (set to 'Copy of t1')
 
 'record use-case' event created with arguments ''
 Running VideoStore in order to capture user actions...
-Recorder settings: record on replay on
 
-
-Terminating process that records use cases...
-Making changes to file usecase.gui...
+Waiting for application event 'replay texttest to complete' to occur.
 Redrawing test t1 coloured pale green
 Adding file options.gui under heading 'Definition Files', coloured pale green
 Adding file usecase.gui under heading 'Definition Files', coloured pale green
+Adding file errors.gui under heading 'Standard Files', coloured pale green
+Adding file output.gui under heading 'Standard Files', coloured pale green
 ---------- Text Info Window ----------
 Recorded use case - now attempting to replay in the background to collect standard files
 These will appear shortly. You do not need to submit the test manually.
 --------------------------------------
 
 Creating notebook page for 'Recording'
-Creating check button for switch 'Hold record shell after recording'
+Creating check button for switch 'Automatically replay test after recording it' (checked)
+Creating radio button for switch 'Auto-replay in dynamic GUI/Auto-replay invisible'
 
 Creating notebook page for 'Copying'
 Creating entry for option 'Name of copied test' (set to 't1_copy')
 Creating entry for option 'Description of new test' (set to 'Copy of t1')
-
-Waiting for application event 'replay texttest to complete' to occur.
 Expected application event 'replay texttest to complete' occurred, proceeding.
 Redrawing test t1 coloured pale green
 Adding file options.gui under heading 'Definition Files', coloured pale green
@@ -103,7 +103,8 @@ Recorded use case and collected all standard files
 --------------------------------------
 
 Creating notebook page for 'Recording'
-Creating check button for switch 'Hold record shell after recording'
+Creating check button for switch 'Automatically replay test after recording it' (checked)
+Creating radio button for switch 'Auto-replay in dynamic GUI/Auto-replay invisible'
 
 Creating notebook page for 'Copying'
 Creating entry for option 'Name of copied test' (set to 't1_copy')
