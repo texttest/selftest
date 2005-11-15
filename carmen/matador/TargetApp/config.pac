@@ -36,6 +36,7 @@ output:Picador library date
 output:Generation time
 output:RU_FRT
 output:CARMSYS
+output:CARMUSR
 output:CARMTMP
 output:Using Filer to load SubPlan
 output:SUBPLAN
@@ -59,7 +60,7 @@ link_test_path:secret_parameters.etab
 
 # Collect the solution
 [collate_file]
-solution:best_solution
+solution:APC_FILES/best_solution
 [end]
 
 # ---------------- Values required by the performance module -------------------

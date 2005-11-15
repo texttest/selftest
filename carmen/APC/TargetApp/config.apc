@@ -39,6 +39,8 @@ status:Costing time (sec)
 status:Conn fixing time (sec)
 status:OC to DH time (sec)
 status:Subplan
+status:CARMUSR
+all:CARMUSR
 [end]
 
 # Determines file to be used for information extraction, and presentation by tkdiff instead of diff
@@ -50,11 +52,11 @@ unsaveable_version:master
 
 # Collect the solution, and some other stuff
 [collate_file]
-solution:best_solution
-status:status
-script_errors:run_status_script_error
-warnings:run_status_warning
-error:run_status_error
+solution:APC_FILES/best_solution
+status:APC_FILES/status
+script_errors:APC_FILES/run_status_script_error
+warnings:APC_FILES/run_status_warning
+error:APC_FILES/run_status_error
 [end]
 
 # ---------------- Values required by the performance module -------------------

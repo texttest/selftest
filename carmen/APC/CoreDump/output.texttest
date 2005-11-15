@@ -1,4 +1,4 @@
-TextTest will write diagnostics in /users/geoff/texttesttmp/texttest.sgegeoff05Oct111054/carmen/APC/CoreDump based on file at /users/geoff/work/master/Testing/Automatic/texttest/log4py.conf
+TextTest will write diagnostics in /users/geoff/texttesttmp/texttest.sgegeoff15Nov163304/carmen/APC/CoreDump/Diagnostics based on file at /users/geoff/work/master/Testing/Automatic/texttest/carmen/APC/CoreDump/Diagnostics/log4py.conf
 Using Application APC, version crash, checkout /users/geoff/work/master
 Submitting Rule Builds for APC test-suite TargetApp to SGE queues
   Submitting Rule Builds for APC test-suite sk_test9scripts to SGE queues
@@ -6,7 +6,7 @@ Submitting APC test-suite TargetApp to SGE queues
   Submitting APC test-suite sk_test9scripts to SGE queues
     Submitting APC test-case no_dh_single_base_cg to SGE queue short, requesting osversion=RHEL3,carmarch="*i386_linux*"
     Evaluating APC test-case no_dh_single_base_cg (on all.apc,script_errors.apc,solution.apc,status.apc,warnings.apc)
-    APC test-case no_dh_single_base_cg CRASHED (Segmentation fault in raise) on tireeis : new results in all,script_errors, differences in solution,status,warnings
+    APC test-case no_dh_single_base_cg CRASHED (Segmentation fault in raise) on schefferville : new results in all,script_errors, differences in solution,status,warnings
     View details(v), Save Version crash(1), Save(s) or continue(any other key)?
 Program terminated with signal 11, Segmentation fault.
 Stack trace from gdb :
@@ -48,7 +48,7 @@ MPLOYER;FLIGHT_GDOR;
 < 145;6784;0;0;0;A;;;0x40;0;
 < 145;12991;0;0;0;A;;;0x62;0;
 ------------------ Differences in status --------------------
-98,949d97
+97,943d96
 < SECTION apc_status Solution_warning_1
 < --- APC runtime status report ---
 < 
@@ -112,34 +112,34 @@ MPLOYER;FLIGHT_GDOR;
 ------------------ New result in all --------------------
 Time:  0 s real  10 ms cpu  0 ms cpu_child  memory:   4.5 Mb
 Delta: 0 s real  0 ms cpu  0 ms cpu_child  memory:   4.5 Mb
-/carm/proj/texttest/selftest_data/CARMSYS/sk_test9scripts_tmp.apc/crc/rule_set/APC/i386_linux/.APC_fd54_DC9_no_reference.geoff.9483
--s /carm/carmen_paros_deliver/user_and_tmp/sk_test9_user//LOCAL_PLAN/F36/MCS_W01/V1112_0122/APC_ji_single_base_CPH_spl.apc.crashgeoff05Oct11:12:25/APC_FILES
+/carm/proj/texttest/selftest_data/CARMSYS/sk_test9scripts_tmp.apc/crc/rule_set/APC/i386_linux/.APC_fd54_DC9_no_reference.geoff.8039
 -v 1
--R /nfs/local/apc_temp/APC_ji_single_base_CPH_spl.apc.crashgeoff05Oct11:12:25_9483/APC_rot
--I /carm/carmen_paros_deliver/user_and_tmp/sk_test9_user//LOCAL_PLAN/F36/MCS_W01/V1112_0122/APC_ji_single_base_CPH_spl.apc.crashgeoff05Oct11:12:25/APC_FILES/run_status
+-R /nfs/local/apc_temp/APC_ji_single_base_CPH_spl_8039/APC_rot
 -U geoff
-executable name is [/carm/proj/texttest/selftest_data/CARMSYS/sk_test9scripts_tmp.apc/crc/rule_set/APC/i386_linux/.APC_fd54_DC9_no_reference.geoff.9483]
+executable name is [/carm/proj/texttest/selftest_data/CARMSYS/sk_test9scripts_tmp.apc/crc/rule_set/APC/i386_linux/.APC_fd54_DC9_no_reference.geoff.8039]
 carmsys: /carm/proj/texttest/selftest_data/CARMSYS
-carmusr: /carm/carmen_paros_deliver/user_and_tmp/sk_test9_user/
 carmtmp: /carm/proj/texttest/selftest_data/CARMSYS/sk_test9scripts_tmp.apc
 lp_etab_dir:  /carm/carmen_paros_deliver/user_and_tmp/sk_test9_user//LOCAL_PLAN/F36/MCS_W01/V1112_0122/etable
 sp_etab_dir:  /carm/carmen_paros_deliver/user_and_tmp/sk_test9_user//LOCAL_PLAN/F36/MCS_W01/V1112_0122/APC_ji_single_base_CPH_spl/etable
-airport file: /carm/carmen_paros_deliver/user_and_tmp/sk_test9_user//Airports/bin/AirportFile
 
  APC JOB IDENTIFICATION
 
  CARMSYS..............: /carm/proj/texttest/selftest_data/CARMSYS
- CARMUSR..............: /carm/carmen_paros_deliver/user_and_tmp/sk_test9_user/
  APC library version..: master.current
  APC library date.....: 08 March 2004 15:52:20
 canonicalize called
 _init_segment_duty_types: Cannot retrive resource CREW_DUTY_TYPE_ETAB_NAME
 
-Error! Pid:9543  Wed Oct  5 11:12:36 2005  User:geoff
+Error! Pid:8093  Tue Nov 15 16:33:18 2005  User:geoff
 Error! File:/carm/master/Data/duty_type/DutyType.cc  Line:202
 Error! _register_segment_duty_type: Registering new duty type  in category 1.
 
-crew category file: /carm/carmen_paros_deliver/user_and_tmp/sk_test9_user//data/config/crew_categories
+Crew pos 0 = FC
+Crew pos 1 = FP
+Crew pos 2 = FS
+Crew pos 3 = AP
+Crew pos 4 = AS
+Crew pos 5 = AH
 ------------------ New result in script_errors --------------------
 ***** ERROR ***** 
 APC exited with error code 139 <segmentation fault>
@@ -147,15 +147,15 @@ APC exited with error code 139 <segmentation fault>
 *** Keeping the logfiles in $APC_TEMP_DIR ***
 *** disk space available for temporary files ***
 Filesystem           1K-blocks      Used Available Use% Mounted on
-/dev/sda2             16128668     43156  15266200   1% /tmp
-/dev/sda2             16128668     43156  15266200   1% /tmp
-/dev/sda6              1004024    131952    821068  14% /var
+/dev/sda2             16513960     43540  15631560   1% /tmp
+/dev/sda2             16513960     43540  15631560   1% /tmp
+/dev/sda6              1032072    125496    854148  13% /var
 *** Saving the APC executable ***
 *** disk space available for temporary files ***
 Filesystem           1K-blocks      Used Available Use% Mounted on
-/dev/sda2             16128668     50268  15259088   1% /tmp
-/dev/sda2             16128668     50268  15259088   1% /tmp
-/dev/sda6              1004024    131952    821068  14% /var
+/dev/sda2             16513960     50652  15624448   1% /tmp
+/dev/sda2             16513960     50652  15624448   1% /tmp
+/dev/sda6              1032072    125496    854148  13% /var
 <See also tkdiff window for details of status>
     Save Version crash(1), Save(s) or continue(any other key)?
-Killed process 32668 with signal 2
+Killed process 9209 with signal 2
