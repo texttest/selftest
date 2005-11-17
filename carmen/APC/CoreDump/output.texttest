@@ -1,4 +1,4 @@
-TextTest will write diagnostics in /users/geoff/texttesttmp/texttest.sgegeoff16Nov135547/carmen/APC/CoreDump based on file at /users/geoff/work/master/Testing/Automatic/texttest/log4py.conf
+TextTest will write diagnostics in /users/geoff/texttesttmp/texttest.sgegeoff17Nov172511/carmen/APC/CoreDump based on file at /users/geoff/work/master/Testing/Automatic/texttest/log4py.conf
 Using Application APC, version crash, checkout /users/geoff/work/master
 Submitting Rule Builds for APC test-suite TargetApp to SGE queues
   Submitting Rule Builds for APC test-suite sk_test9scripts to SGE queues
@@ -6,7 +6,7 @@ Submitting APC test-suite TargetApp to SGE queues
   Submitting APC test-suite sk_test9scripts to SGE queues
     Submitting APC test-case no_dh_single_base_cg to SGE queue short, requesting osversion=RHEL3,carmarch="*i386_linux*"
     Evaluating APC test-case no_dh_single_base_cg (on all.apc,script_errors.apc,solution.apc,status.apc,warnings.apc)
-    APC test-case no_dh_single_base_cg CRASHED (Segmentation fault in raise) on gatesville : new results in all,script_errors, differences in solution,status,warnings
+    APC test-case no_dh_single_base_cg CRASHED (Segmentation fault in raise) on abbeville : new results in all,script_errors, differences in solution,status,warnings
     View details(v), Save Version crash(1), Save(s) or continue(any other key)?
 Program terminated with signal 11, Segmentation fault.
 Stack trace from gdb :
@@ -112,23 +112,23 @@ MPLOYER;FLIGHT_GDOR;
 ------------------ New result in all --------------------
 Time:  0 s real  10 ms cpu  0 ms cpu_child  memory:   4.5 Mb
 Delta: 0 s real  0 ms cpu  0 ms cpu_child  memory:   4.5 Mb
-/carm/proj/texttest/selftest_data/CARMSYS/sk_test9scripts_tmp.apc/crc/rule_set/APC/i386_linux/.APC_fd54_DC9_no_reference.geoff.13055
+/carm/proj/texttest/selftest_data/APC_CARMSYS/sk_test9scripts_tmp.apc/crc/rule_set/APC/i386_linux/.APC_fd54_DC9_no_reference.geoff.5308
 -v 1
--R /nfs/local/apc_temp/APC_ji_single_base_CPH_spl_13055/APC_rot
+-R /nfs/local/apc_temp/APC_ji_single_base_CPH_spl_5308/APC_rot
 -U geoff
-executable name is [/carm/proj/texttest/selftest_data/CARMSYS/sk_test9scripts_tmp.apc/crc/rule_set/APC/i386_linux/.APC_fd54_DC9_no_reference.geoff.13055]
-carmsys: /carm/proj/texttest/selftest_data/CARMSYS
-carmtmp: /carm/proj/texttest/selftest_data/CARMSYS/sk_test9scripts_tmp.apc
+executable name is [/carm/proj/texttest/selftest_data/APC_CARMSYS/sk_test9scripts_tmp.apc/crc/rule_set/APC/i386_linux/.APC_fd54_DC9_no_reference.geoff.5308]
+carmsys: /carm/proj/texttest/selftest_data/APC_CARMSYS
+carmtmp: /carm/proj/texttest/selftest_data/APC_CARMSYS/sk_test9scripts_tmp.apc
 
  APC JOB IDENTIFICATION
 
- CARMSYS..............: /carm/proj/texttest/selftest_data/CARMSYS
+ CARMSYS..............: /carm/proj/texttest/selftest_data/APC_CARMSYS
  APC library version..: master.current
  APC library date.....: 08 March 2004 15:52:20
 canonicalize called
 _init_segment_duty_types: Cannot retrive resource CREW_DUTY_TYPE_ETAB_NAME
 
-Error! Pid:13110  Wed Nov 16 13:56:13 2005  User:geoff
+Error! Pid:5355  Thu Nov 17 17:27:01 2005  User:geoff
 Error! File:/carm/master/Data/duty_type/DutyType.cc  Line:202
 Error! _register_segment_duty_type: Registering new duty type  in category 1.
 
@@ -147,15 +147,15 @@ APC exited with error code 139 <segmentation fault>
 *** Keeping the logfiles in $APC_TEMP_DIR ***
 *** disk space available for temporary files ***
 Filesystem           1K-blocks      Used Available Use% Mounted on
-/dev/sda2             16513960     47332  15627768   1% /tmp
-/dev/sda2             16513960     47332  15627768   1% /tmp
-/dev/sda6              1032072    320940    658704  33% /var
+/dev/sda2             16513960     44660  15630440   1% /tmp
+/dev/sda2             16513960     44660  15630440   1% /tmp
+/dev/sda6              1032072    332984    646660  34% /var
 *** Saving the APC executable ***
 *** disk space available for temporary files ***
 Filesystem           1K-blocks      Used Available Use% Mounted on
-/dev/sda2             16513960     54444  15620656   1% /tmp
-/dev/sda2             16513960     54444  15620656   1% /tmp
-/dev/sda6              1032072    320940    658704  33% /var
+/dev/sda2             16513960     51772  15623328   1% /tmp
+/dev/sda2             16513960     51772  15623328   1% /tmp
+/dev/sda6              1032072    332984    646660  34% /var
 <See also tkdiff window for details of status>
     Save Version crash(1), Save(s) or continue(any other key)?
-Killed process 8089 with signal 2
+Killed process 31393 with signal 2

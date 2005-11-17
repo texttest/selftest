@@ -2,4 +2,6 @@ Map variable map_coterminal_file is not defined in current rule set, will use re
  = ===== COTERMS: BGY LIN
  = ===== COTERMS: BGY MXP
  = ===== COTERMS: LIN MXP
-ILOG CPLEX, licensed to "carmen-goteborg-carmen rental runtime".
+Xpress-MP Hyper Integer Barrier Optimizer Release 16.01.09
+(c) Copyright Dash Associates 1984-2005
+Licensed for use by: Carmen Group products

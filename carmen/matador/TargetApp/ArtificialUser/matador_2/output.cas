@@ -1,16 +1,16 @@
-CARMSYS: /carm/proj/matador/test_texttest/CARMSYS
-CARMUSR: /carm/user_and_tmp/master/Matador_user
-CARMTMP: /carm/proj/matador/test_texttest/Matador_tmp
-SUBPLAN: S01MCS/MCS_APR01/MCS_FDDH4_CAS/Plan_2_Ruleset_5.casgeoff29Dec12:38:15
+CARMSYS: /carm/proj/texttest/selftest_data/CARMSYS_new
+CARMUSR: /users/geoff/texttesttmp/casgeoff17Nov162941/ArtificialUser/matador_2/Matador_user
+CARMTMP: /carm/proj/texttest/selftest_data/CARMTMPs/Matador_tmp
+SUBPLAN: S01MCS/MCS_APR01/MCS_FDDH4_CAS/Plan_2_Ruleset_5
 RULESET: Matador_5
-MATADOR: /carm/proj/matador/test_texttest/CARMSYS/bin/i386_linux/matador
-ARGS...: -s S01MCS/MCS_APR01/MCS_FDDH4_CAS/Plan_2_Ruleset_5.casgeoff29Dec12:38:15 -r Matador_5
+MATADOR: /carm/proj/texttest/selftest_data/CARMSYS_new/bin/i386_linux/matador
+ARGS...: -s S01MCS/MCS_APR01/MCS_FDDH4_CAS/Plan_2_Ruleset_5 -r Matador_5
 
-Running /carm/proj/matador/test_texttest/CARMSYS/bin/i386_linux/matador -s S01MCS/MCS_APR01/MCS_FDDH4_CAS/Plan_2_Ruleset_5.casgeoff29Dec12:38:15 -r Matador_5 
+Running /carm/proj/texttest/selftest_data/CARMSYS_new/bin/i386_linux/matador -s S01MCS/MCS_APR01/MCS_FDDH4_CAS/Plan_2_Ruleset_5 -r Matador_5 
 
 -- Matador::run --
 
-Using Filer to load SubPlan : S01MCS/MCS_APR01/MCS_FDDH4_CAS/Plan_2_Ruleset_5.casgeoff29Dec12:38:15
+Using Filer to load SubPlan : S01MCS/MCS_APR01/MCS_FDDH4_CAS/Plan_2_Ruleset_5
 
 Parser: Reading file /config/crew_categories, section headed by 'crew_cat'
 Loaded Crew Category : C
@@ -54,12 +54,12 @@ Qualification TQ1 not well defined.
 
 Matador Warning (7): Problems with rule system.
 Qualification TQ2 not well defined.
- Both sides of the constraint 'lhs_2 < rhs_2' undefined.
+ Both sides of the constraint 'lhs_2 < rhs_2 break_cost_2 break_cost_unit' undefined.
  Will be ignored by optimizer
 
 Matador Warning (7): Problems with rule system.
 Qualification TQ3 not well defined.
- Both sides of the constraint 'lhs_3 < rhs_3' undefined.
+ Both sides of the constraint 'lhs_3 < rhs_3 break_cost_3' undefined.
  Will be ignored by optimizer
 
 Matador Warning (7): Problems with rule system.
@@ -69,12 +69,12 @@ Qualification LQ1 not well defined.
 
 Matador Warning (7): Problems with rule system.
 Qualification LQ2 not well defined.
- Both sides of the constraint 'leg_lhs_2 < leg_rhs_2' undefined.
+ Both sides of the constraint 'leg_lhs_2 < leg_rhs_2 break_cost_2 break_cost_unit' undefined.
  Will be ignored by optimizer
 
 Matador Warning (7): Problems with rule system.
 Qualification LQ3 not well defined.
- Both sides of the constraint 'leg_lhs_3 < leg_rhs_3' undefined.
+ Both sides of the constraint 'leg_lhs_3 < leg_rhs_3 break_cost_3' undefined.
  Will be ignored by optimizer
 Time spent setting up positions and qualifications : 00:00:00
   Number of active unassigned tasks   :   230
@@ -82,10 +82,10 @@ Time spent setting up positions and qualifications : 00:00:00
 RUN INFO
   Active module............: Matador
   Matador library version..: master.current
-  Matador library date.....: 27 November 2003 00:35:11
-  Date/Time................: 12/29/03, 12:38
-  Host machine.............: onepusu
-  Subplan..................: S01MCS/MCS_APR01/MCS_FDDH4_CAS/Plan_2_Ruleset_5.casgeoff29Dec12:38:15
+  Matador library date.....: 16 November 2005 14:37:32
+  Date/Time................: 11/17/05, 16:30
+  Host machine.............: elfincove
+  Subplan..................: S01MCS/MCS_APR01/MCS_FDDH4_CAS/Plan_2_Ruleset_5
   Rule Set.................: Matador_5
   Planning period..........: [ 2001-03-20T00:00, 2001-05-10T23:59 ]
   Number of Input trips....: 304
@@ -311,10 +311,10 @@ There are no hard global constraints which have been violated.
 
 --- Matador runtime status report ---
 Current Solution.......: 0
-Memory consumption: 8 MB  Total time:(s) 00:00:01  cpu time:  00:00:01
+Memory consumption: 10 MB  Total time:(s) 00:00:01  cpu time:  00:00:01
 
 ------------------------------------------------
-Written Solution to : /carm/user_and_tmp/master/Matador_user/LOCAL_PLAN/S01MCS/MCS_APR01/MCS_FDDH4_CAS/Plan_2_Ruleset_5.casgeoff29Dec12:38:15/APC_FILES/Solution_illegal
+Written Solution to : /users/geoff/texttesttmp/casgeoff17Nov162941/ArtificialUser/matador_2/Matador_user/LOCAL_PLAN/S01MCS/MCS_APR01/MCS_FDDH4_CAS/Plan_2_Ruleset_5/APC_FILES/Solution_illegal
 
 
 -- End --

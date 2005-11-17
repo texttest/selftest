@@ -9,7 +9,7 @@ config_module:matador
 queue_system_module:${QUEUE_SYSTEM}
 
 # Binary (relative to checkout) to be used
-binary:${CARMSYS}/bin/PICADORbatch.sh
+binary:${CARMSYS}/bin/MATADORbatch.sh
 
 # Check-out to use if no -c option is specified.
 # This will look globally if it starts with a /, locally 
@@ -81,7 +81,7 @@ cputime:10
 # ---------------- Values required by the Carmen module -------------------
 
 # What needs to be built by the rule compiler
-rave_name:picador
+rave_name:matador
 
 # The architecture that runs without a version ID. If you run on other architecture, you will
 # get given version ${ARCH}, as well as any versions you may have specified
