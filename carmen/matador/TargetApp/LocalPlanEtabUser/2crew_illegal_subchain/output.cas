@@ -1,0 +1,882 @@
+CARMSYS: /carm/proj/texttest/selftest_data/CARMSYS
+CARMUSR: /users/geoff/texttesttmp/casgeoff18Nov134731/LocalPlanEtabUser/2crew_illegal_subchain/RD_ba_new_cas_user
+CARMTMP: /carm/proj/texttest/selftest_data/CARMTMPs/RD_ba_new_cas_tmp
+SUBPLAN: TX2_testing/EFCC/12FEB_2002/MAT_2crew
+RULESET: MAT_EUF_CC
+MATADOR: /carm/proj/texttest/selftest_data/CARMSYS/bin/i386_linux/matador
+ARGS...: -s TX2_testing/EFCC/12FEB_2002/MAT_2crew -r MAT_EUF_CC -i 2001-02-13
+
+Running /carm/proj/texttest/selftest_data/CARMSYS/bin/i386_linux/matador -s TX2_testing/EFCC/12FEB_2002/MAT_2crew -r MAT_EUF_CC -i 2001-02-13
+
+-- Matador::run --
+
+Using Filer to load SubPlan : TX2_testing/EFCC/12FEB_2002/MAT_2crew
+
+Parser: Reading file /config/crew_categories, section headed by 'crew_cat'
+Loaded Crew Category : CP
+Loaded Crew Category : CO
+Loaded Crew Category : FE
+Loaded Crew Category : CD
+Loaded Crew Category : PS
+Loaded Crew Category : SS
+Loaded Crew Category : EP
+Loading rule set MAT_EUF_CC
+
+
+Filer: Loading subplan-specific files
+Parser: Reading file /APC_FILES/problems
+Loaded Crew Vector : 1/0/0//1/1/1/0/0/0/0/0/0
+Set period of problem to 2001-01-01T00:00 -> 2001-03-28T23:59
+
+Parser: Reading file /APC_FILES/rules, section headed by 'SECTION rules'
+Parser: Reading file /APC_FILES/rules, section headed by '<PARAMETERS>'
+Parser: Reading file /APC_FILES/rules, section headed by '<SETS>'
+Parser: Reading file /APC_FILES/bases
+Parser: Reading file /APC_FILES/flights
+Parser: Reading file /APC_FILES/trips
+Parser: Reading file /APC_FILES/assignments
+
+(!) The following entries in the rules file were not recognised by the ruleset:
+Rule 'cabin_meal'
+Rule 'crossqualb'
+Rule 'pos_turn_base'
+Rule 'roster_cost_scheme_part_time_rule'
+Rule 'roster_cost_scheme_sliding_1_in_7_days_rule'
+Rule 'roster_cost_scheme_sliding_24_in_12_weeks_rule'
+Rule 'roster_cost_scheme_sliding_2_cons_in_14_days_rule'
+Rule 'roster_cost_scheme_sliding_7_in_4_weeks_rule'
+Rule 'soft_max_ground_time_split_duty'
+Rule 'soft_r_max_ac_changes_per_duty'
+Rule 'soft_r_max_ac_changes_per_trip'
+Set 'bases_no_three_sector_outstation_duties'
+Set 'bfs_homebase_nonights'
+Set 'bfs_homebase_nosplits'
+Set 'bfs_qual_category'
+Set 'category3b_stations'
+Set 'category_2b_stations'
+Set 'gla_homebase_nonights'
+Set 'gla_homebase_nosplits'
+Set 'gla_qual_category'
+Set 'lgw_homebase_nonights'
+Set 'lgw_homebase_nosplits'
+Set 'lhr_homebase_nonights'
+Set 'lhr_homebase_nosplits'
+Set 'man_base_destinations'
+Set 'man_homebase_nonights'
+Set 'man_homebase_nosplits'
+Set 'man_qual_category'
+Set 'pp_long_layover_dest'
+Set 'pp_long_trip_dest'
+Set 'pp_non_fren_dest_req_fren'
+Set 'pp_non_germ_dest_req_germ'
+Set 'pp_non_ital_dest_req_ital'
+Set 'pp_non_span_dest_req_span'
+Set 'qual1_category'
+Set 'qual2_category'
+Set 'qual3_category'
+Set 'qual4_category'
+Set 'stn_soft_min_rest'
+
+42 subplan rule parameters have been set.
+11 subplan rules have been switched.
+
+Analysing RAVE to establish the positions of the crew...
+
+            0%       25%       50%       75%      100%
+            |         |         |         |         |
+Progress:   *****************************************
+
+
+Analysing RAVE to set up values for qualification LQ1
+
+            0%       25%       50%       75%      100%
+            |         |         |         |         |
+Progress:   *****************************************
+
+
+Time spent setting up positions and qualifications : 00:00:00
+
+Matador Warning (7): Problems with rule system.
+RAVE variable(s):
+_topmodule.global_constraint10
+_topmodule.global_constraint11
+_topmodule.global_constraint12
+_topmodule.global_constraint13
+_topmodule.global_constraint14
+_topmodule.global_constraint15
+_topmodule.global_constraint16
+_topmodule.global_constraint17
+_topmodule.global_constraint18
+_topmodule.global_constraint19
+_topmodule.global_constraint20
+_topmodule.global_constraint21
+_topmodule.global_constraint22
+_topmodule.global_constraint23
+_topmodule.global_constraint24
+_topmodule.global_constraint25
+_topmodule.global_constraint26
+_topmodule.global_constraint27
+_topmodule.global_constraint28
+_topmodule.global_constraint29
+_topmodule.global_constraint30
+_topmodule.global_constraint31
+_topmodule.global_constraint32
+_topmodule.global_constraint33
+_topmodule.global_constraint34
+_topmodule.global_constraint35
+_topmodule.global_constraint36
+_topmodule.global_constraint37
+_topmodule.global_constraint38
+_topmodule.global_constraint39
+_topmodule.global_constraint40
+_topmodule.global_constraint41
+_topmodule.global_constraint42
+_topmodule.global_constraint43
+_topmodule.global_constraint44
+_topmodule.global_constraint45
+_topmodule.global_constraint46
+_topmodule.global_constraint47
+_topmodule.global_constraint48
+_topmodule.global_constraint49
+_topmodule.global_constraint50
+_topmodule.global_constraint51
+_topmodule.global_constraint52
+_topmodule.global_constraint53
+_topmodule.global_constraint54
+_topmodule.global_constraint55
+_topmodule.global_constraint56
+_topmodule.global_constraint57
+_topmodule.global_constraint58
+_topmodule.global_constraint59
+_topmodule.global_constraint6
+_topmodule.global_constraint60
+_topmodule.global_constraint61
+_topmodule.global_constraint62
+_topmodule.global_constraint63
+_topmodule.global_constraint64
+_topmodule.global_constraint65
+_topmodule.global_constraint66
+_topmodule.global_constraint67
+_topmodule.global_constraint68
+_topmodule.global_constraint69
+_topmodule.global_constraint7
+_topmodule.global_constraint70
+_topmodule.global_constraint71
+_topmodule.global_constraint72
+_topmodule.global_constraint73
+_topmodule.global_constraint74
+_topmodule.global_constraint75
+_topmodule.global_constraint76
+_topmodule.global_constraint77
+_topmodule.global_constraint78
+_topmodule.global_constraint79
+_topmodule.global_constraint8
+_topmodule.global_constraint80
+_topmodule.global_constraint81
+_topmodule.global_constraint82
+_topmodule.global_constraint83
+_topmodule.global_constraint84
+_topmodule.global_constraint85
+_topmodule.global_constraint86
+_topmodule.global_constraint87
+_topmodule.global_constraint88
+_topmodule.global_constraint89
+_topmodule.global_constraint9
+_topmodule.global_constraint90
+_topmodule.global_constraint91
+_topmodule.global_constraint92
+_topmodule.global_constraint93
+_topmodule.global_constraint94
+_topmodule.global_constraint95
+_topmodule.global_constraint96
+_topmodule.global_constraint97
+_topmodule.global_constraint98
+ might have been intended for global constraints, this format is not supported.
+
+  Number of active unassigned tasks   :    16
+  Number of active pre-assigned tasks :     0
+RUN INFO
+  Active module............: Matador
+  Matador library version..: master.current
+  Matador library date.....: 17 November 2005 17:09:16
+  Date/Time................: 11/18/05, 13:48
+  Host machine.............: elfincove
+  Subplan..................: TX2_testing/EFCC/12FEB_2002/MAT_2crew
+  Rule Set.................: MAT_EUF_CC
+  Planning period..........: [ 2001-01-01T00:00, 2001-03-28T23:59 ]
+  Number of Input trips....: 91
+  Number of Input legs.....: 142
+  Number of Crew Members...: 2
+  Number of Rosters........: 2
+
+
+
+SOLUTION ANALYSIS for input solution:
+-------------------------------------
+There are no crew which have illegal rosters.
+
+There are no trips which have been illegally assigned.
+There are no legs which have been illegally assigned.
+There are no hard global constraints which have been violated.
+
+----------------------- Cost Analysis -----------------------
+
+  Assignment percentage...............................: 100
+
+  Total cost of plan..................................: 15360
+
+  Total cost of rosters...............................: 15360
+  Total cost of unassigned slots......................:     0
+  Total cost of unassigned crew.......................:     0
+  Total cost of broken trip constraints...............:     0
+  Total cost of broken leg constraints................:     0
+  Total cost of broken global constraints.............:     0
+
+  Number of crew with illegal rosters.................: 0
+  Number of broken hard trip constraints..............: 0
+  Number of broken hard leg constraints...............: 0
+  Number of broken hard global constraints............: 0
+
+--------------------- Numerical Analysis ---------------------
+
+  Number of crew (total)..............................: 2
+  Number of crew (assigned)...........................: 2
+  Number of crew (unassigned).........................: 0
+
+  Number of trips (total).............................: 20
+  Number of trips (assigned)..........................: 20
+  Number of trips (unassigned)........................:  0
+
+  Number of slots (total).............................: 20
+  Number of slots (assigned)..........................: 20
+  Number of slots (unassigned)........................:  0
+
+  Number of slots in position CP (total)..............: 0
+  Number of slots in position CP (assigned)...........: 0
+  Number of slots in position CP (unassigned).........: 0
+
+  Number of slots in position CD (total)..............: 20
+  Number of slots in position CD (assigned)...........: 20
+  Number of slots in position CD (unassigned).........:  0
+
+  Number of slots in position PS (total)..............: 0
+  Number of slots in position PS (assigned)...........: 0
+  Number of slots in position PS (unassigned).........: 0
+
+  Number of slots in position SS (total)..............: 0
+  Number of slots in position SS (assigned)...........: 0
+  Number of slots in position SS (unassigned).........: 0
+
+  Number of broken soft trip constraints..............: 0
+  Number of broken soft leg constraints...............: 0
+  Number of broken soft global constraints............: 0
+
+-------------------- Block Time Analysis --------------------
+
+  Block time (total)..................................: 121:00
+  Block time (assigned)...............................: 121:00
+  Block time (unassigned).............................:   0:00
+
+  Block time for position CP (total)..................: 0:00
+  Block time for position CP (assigned)...............: 0:00
+  Block time for position CP (unassigned).............: 0:00
+
+  Block time for position CD (total)..................: 121:00
+  Block time for position CD (assigned)...............: 121:00
+  Block time for position CD (unassigned).............:   0:00
+
+  Block time for position PS (total)..................: 0:00
+  Block time for position PS (assigned)...............: 0:00
+  Block time for position PS (unassigned).............: 0:00
+
+  Block time for position SS (total)..................: 0:00
+  Block time for position SS (assigned)...............: 0:00
+  Block time for position SS (unassigned).............: 0:00
+
+------------------- Calendar Day Analysis -------------------
+
+  Number of 1 day trips ..............................: 10
+  Number of 2 day trips ..............................:  9
+  Number of 3 day trips ..............................:  1
+  Total number of trips ..............................: 20
+
+  Number of 1 day trips (all slots assigned)..........: 10
+  Number of 2 day trips (all slots assigned)..........:  9
+  Number of 3 day trips (all slots assigned)..........:  1
+  Total number of trips (all slots assigned)..........: 20
+
+  Total number of trips (at least one slot unassigned): 0
+
+--------------------------------------------------------------
+
+  Cost function (map_cost_of_roster)......: cost_of_roster
+
+---------------------- End of Analysis ----------------------
+
+
+-------------------------------------
+
+Creating solution Solution_legalised...
+
+Running SolutionLegaliser...
+
+
+Setting up impossible-trip tag rosters, using RAVE variable trip_is_impossible
+Applying improve method, period size 0w 4d 0h 0m, step size 0w 4d 0h 0m
+Planning for period:[ 2001-02-02T19:24, 2001-03-01T14:31 ]
+Starting Improve Method Sweep 1 of 1
+
+ImproveMethod iteration 1 [ 2001-02-13T00:00, 2001-02-17T00:00 ]
+  Number of active unassigned tasks   :     1
+  Number of active pre-assigned tasks :     4
+
+Creating solution Solution_1...
+
+Running ImproveMethod...
+Generating rosters...
+
+
+            0%       25%       50%       75%      100%
+            |         |         |         |         |
+Progress:   *****************************************
+
+GENERATION
+  Generated rosters.............: 5
+  Max per crew..................: 3
+  Average per crew..............: 2
+  Generation time (sec).........: 0
+  Generation speed (rost/sec)...: 5
+
+OPTIMIZATION
+  IP objective..................: 15360
+  Optimization time (sec).......:     0
+
+
+
+SOLUTION ANALYSIS for Solution_1 solution:
+------------------------------------------
+There are no crew which have illegal rosters.
+
+There are no trips which have been illegally assigned.
+There are no legs which have been illegally assigned.
+There are no hard global constraints which have been violated.
+
+----------------------- Cost Analysis -----------------------
+
+  Assignment percentage...............................: 100
+
+  Total cost of plan..................................: 15360
+
+  Total cost of rosters...............................: 15360
+  Total cost of unassigned slots......................:     0
+  Total cost of unassigned crew.......................:     0
+  Total cost of broken trip constraints...............:     0
+  Total cost of broken leg constraints................:     0
+  Total cost of broken global constraints.............:     0
+
+  Number of crew with illegal rosters.................: 0
+  Number of broken hard trip constraints..............: 0
+  Number of broken hard leg constraints...............: 0
+  Number of broken hard global constraints............: 0
+
+--------------------- Numerical Analysis ---------------------
+
+  Number of crew (total)..............................: 2
+  Number of crew (assigned)...........................: 2
+  Number of crew (unassigned).........................: 0
+
+  Number of trips (total).............................: 20
+  Number of trips (assigned)..........................: 20
+  Number of trips (unassigned)........................:  0
+
+  Number of slots (total).............................: 20
+  Number of slots (assigned)..........................: 20
+  Number of slots (unassigned)........................:  0
+
+  Number of slots in position CP (total)..............: 0
+  Number of slots in position CP (assigned)...........: 0
+  Number of slots in position CP (unassigned).........: 0
+
+  Number of slots in position CD (total)..............: 20
+  Number of slots in position CD (assigned)...........: 20
+  Number of slots in position CD (unassigned).........:  0
+
+  Number of slots in position PS (total)..............: 0
+  Number of slots in position PS (assigned)...........: 0
+  Number of slots in position PS (unassigned).........: 0
+
+  Number of slots in position SS (total)..............: 0
+  Number of slots in position SS (assigned)...........: 0
+  Number of slots in position SS (unassigned).........: 0
+
+  Number of broken soft trip constraints..............: 0
+  Number of broken soft leg constraints...............: 0
+  Number of broken soft global constraints............: 0
+
+-------------------- Block Time Analysis --------------------
+
+  Block time (total)..................................: 121:00
+  Block time (assigned)...............................: 121:00
+  Block time (unassigned).............................:   0:00
+
+  Block time for position CP (total)..................: 0:00
+  Block time for position CP (assigned)...............: 0:00
+  Block time for position CP (unassigned).............: 0:00
+
+  Block time for position CD (total)..................: 121:00
+  Block time for position CD (assigned)...............: 121:00
+  Block time for position CD (unassigned).............:   0:00
+
+  Block time for position PS (total)..................: 0:00
+  Block time for position PS (assigned)...............: 0:00
+  Block time for position PS (unassigned).............: 0:00
+
+  Block time for position SS (total)..................: 0:00
+  Block time for position SS (assigned)...............: 0:00
+  Block time for position SS (unassigned).............: 0:00
+
+------------------- Calendar Day Analysis -------------------
+
+  Number of 1 day trips ..............................: 10
+  Number of 2 day trips ..............................:  9
+  Number of 3 day trips ..............................:  1
+  Total number of trips ..............................: 20
+
+  Number of 1 day trips (all slots assigned)..........: 10
+  Number of 2 day trips (all slots assigned)..........:  9
+  Number of 3 day trips (all slots assigned)..........:  1
+  Total number of trips (all slots assigned)..........: 20
+
+  Total number of trips (at least one slot unassigned): 0
+
+--------------------------------------------------------------
+
+  Cost function (map_cost_of_roster)......: cost_of_roster
+
+---------------------- End of Analysis ----------------------
+
+--- Matador runtime status report ---
+Current Solution.......: 1
+Memory consumption: 16 MB  Total time:(s) 00:00:03  cpu time:  00:00:01
+
+------------------------------------------
+Written Solution to : /users/geoff/texttesttmp/casgeoff18Nov134731/LocalPlanEtabUser/2crew_illegal_subchain/RD_ba_new_cas_user/LOCAL_PLAN/TX2_testing/EFCC/12FEB_2002/MAT_2crew/APC_FILES/Solution_1
+
+ImproveMethod iteration 2 [ 2001-02-17T00:00, 2001-02-21T00:00 ]
+  Number of active unassigned tasks   :     3
+  Number of active pre-assigned tasks :     4
+
+Creating solution Solution_2...
+
+Running ImproveMethod...
+Generating rosters...
+
+
+            0%       25%       50%       75%      100%
+            |         |         |         |         |
+Progress:   *****************************************
+
+GENERATION
+  Generated rosters.............: 9
+  Max per crew..................: 5
+  Average per crew..............: 4
+  Generation time (sec).........: 0
+  Generation speed (rost/sec)...: 9
+
+OPTIMIZATION
+  IP objective..................: 15360
+  Optimization time (sec).......:     0
+
+
+
+SOLUTION ANALYSIS for Solution_2 solution:
+------------------------------------------
+There are no crew which have illegal rosters.
+
+There are no trips which have been illegally assigned.
+There are no legs which have been illegally assigned.
+There are no hard global constraints which have been violated.
+
+----------------------- Cost Analysis -----------------------
+
+  Assignment percentage...............................: 100
+
+  Total cost of plan..................................: 15360
+
+  Total cost of rosters...............................: 15360
+  Total cost of unassigned slots......................:     0
+  Total cost of unassigned crew.......................:     0
+  Total cost of broken trip constraints...............:     0
+  Total cost of broken leg constraints................:     0
+  Total cost of broken global constraints.............:     0
+
+  Number of crew with illegal rosters.................: 0
+  Number of broken hard trip constraints..............: 0
+  Number of broken hard leg constraints...............: 0
+  Number of broken hard global constraints............: 0
+
+--------------------- Numerical Analysis ---------------------
+
+  Number of crew (total)..............................: 2
+  Number of crew (assigned)...........................: 2
+  Number of crew (unassigned).........................: 0
+
+  Number of trips (total).............................: 20
+  Number of trips (assigned)..........................: 20
+  Number of trips (unassigned)........................:  0
+
+  Number of slots (total).............................: 20
+  Number of slots (assigned)..........................: 20
+  Number of slots (unassigned)........................:  0
+
+  Number of slots in position CP (total)..............: 0
+  Number of slots in position CP (assigned)...........: 0
+  Number of slots in position CP (unassigned).........: 0
+
+  Number of slots in position CD (total)..............: 20
+  Number of slots in position CD (assigned)...........: 20
+  Number of slots in position CD (unassigned).........:  0
+
+  Number of slots in position PS (total)..............: 0
+  Number of slots in position PS (assigned)...........: 0
+  Number of slots in position PS (unassigned).........: 0
+
+  Number of slots in position SS (total)..............: 0
+  Number of slots in position SS (assigned)...........: 0
+  Number of slots in position SS (unassigned).........: 0
+
+  Number of broken soft trip constraints..............: 0
+  Number of broken soft leg constraints...............: 0
+  Number of broken soft global constraints............: 0
+
+-------------------- Block Time Analysis --------------------
+
+  Block time (total)..................................: 121:00
+  Block time (assigned)...............................: 121:00
+  Block time (unassigned).............................:   0:00
+
+  Block time for position CP (total)..................: 0:00
+  Block time for position CP (assigned)...............: 0:00
+  Block time for position CP (unassigned).............: 0:00
+
+  Block time for position CD (total)..................: 121:00
+  Block time for position CD (assigned)...............: 121:00
+  Block time for position CD (unassigned).............:   0:00
+
+  Block time for position PS (total)..................: 0:00
+  Block time for position PS (assigned)...............: 0:00
+  Block time for position PS (unassigned).............: 0:00
+
+  Block time for position SS (total)..................: 0:00
+  Block time for position SS (assigned)...............: 0:00
+  Block time for position SS (unassigned).............: 0:00
+
+------------------- Calendar Day Analysis -------------------
+
+  Number of 1 day trips ..............................: 10
+  Number of 2 day trips ..............................:  9
+  Number of 3 day trips ..............................:  1
+  Total number of trips ..............................: 20
+
+  Number of 1 day trips (all slots assigned)..........: 10
+  Number of 2 day trips (all slots assigned)..........:  9
+  Number of 3 day trips (all slots assigned)..........:  1
+  Total number of trips (all slots assigned)..........: 20
+
+  Total number of trips (at least one slot unassigned): 0
+
+--------------------------------------------------------------
+
+  Cost function (map_cost_of_roster)......: cost_of_roster
+
+---------------------- End of Analysis ----------------------
+
+--- Matador runtime status report ---
+Current Solution.......: 2
+Memory consumption: 16 MB  Total time:(s) 00:00:03  cpu time:  00:00:01
+
+------------------------------------------
+Written Solution to : /users/geoff/texttesttmp/casgeoff18Nov134731/LocalPlanEtabUser/2crew_illegal_subchain/RD_ba_new_cas_user/LOCAL_PLAN/TX2_testing/EFCC/12FEB_2002/MAT_2crew/APC_FILES/Solution_2
+
+ImproveMethod iteration 3 [ 2001-02-21T00:00, 2001-02-25T00:00 ]
+  Number of active unassigned tasks   :     2
+  Number of active pre-assigned tasks :     4
+
+Creating solution Solution_3...
+
+Running ImproveMethod...
+Generating rosters...
+
+
+            0%       25%       50%       75%      100%
+            |         |         |         |         |
+Progress:   *****************************************
+
+GENERATION
+  Generated rosters.............: 6
+  Max per crew..................: 3
+  Average per crew..............: 3
+  Generation time (sec).........: 0
+  Generation speed (rost/sec)...: 6
+
+OPTIMIZATION
+  IP objective..................: 15360
+  Optimization time (sec).......:     0
+
+
+
+SOLUTION ANALYSIS for Solution_3 solution:
+------------------------------------------
+There are no crew which have illegal rosters.
+
+There are no trips which have been illegally assigned.
+There are no legs which have been illegally assigned.
+There are no hard global constraints which have been violated.
+
+----------------------- Cost Analysis -----------------------
+
+  Assignment percentage...............................: 100
+
+  Total cost of plan..................................: 15360
+
+  Total cost of rosters...............................: 15360
+  Total cost of unassigned slots......................:     0
+  Total cost of unassigned crew.......................:     0
+  Total cost of broken trip constraints...............:     0
+  Total cost of broken leg constraints................:     0
+  Total cost of broken global constraints.............:     0
+
+  Number of crew with illegal rosters.................: 0
+  Number of broken hard trip constraints..............: 0
+  Number of broken hard leg constraints...............: 0
+  Number of broken hard global constraints............: 0
+
+--------------------- Numerical Analysis ---------------------
+
+  Number of crew (total)..............................: 2
+  Number of crew (assigned)...........................: 2
+  Number of crew (unassigned).........................: 0
+
+  Number of trips (total).............................: 20
+  Number of trips (assigned)..........................: 20
+  Number of trips (unassigned)........................:  0
+
+  Number of slots (total).............................: 20
+  Number of slots (assigned)..........................: 20
+  Number of slots (unassigned)........................:  0
+
+  Number of slots in position CP (total)..............: 0
+  Number of slots in position CP (assigned)...........: 0
+  Number of slots in position CP (unassigned).........: 0
+
+  Number of slots in position CD (total)..............: 20
+  Number of slots in position CD (assigned)...........: 20
+  Number of slots in position CD (unassigned).........:  0
+
+  Number of slots in position PS (total)..............: 0
+  Number of slots in position PS (assigned)...........: 0
+  Number of slots in position PS (unassigned).........: 0
+
+  Number of slots in position SS (total)..............: 0
+  Number of slots in position SS (assigned)...........: 0
+  Number of slots in position SS (unassigned).........: 0
+
+  Number of broken soft trip constraints..............: 0
+  Number of broken soft leg constraints...............: 0
+  Number of broken soft global constraints............: 0
+
+-------------------- Block Time Analysis --------------------
+
+  Block time (total)..................................: 121:00
+  Block time (assigned)...............................: 121:00
+  Block time (unassigned).............................:   0:00
+
+  Block time for position CP (total)..................: 0:00
+  Block time for position CP (assigned)...............: 0:00
+  Block time for position CP (unassigned).............: 0:00
+
+  Block time for position CD (total)..................: 121:00
+  Block time for position CD (assigned)...............: 121:00
+  Block time for position CD (unassigned).............:   0:00
+
+  Block time for position PS (total)..................: 0:00
+  Block time for position PS (assigned)...............: 0:00
+  Block time for position PS (unassigned).............: 0:00
+
+  Block time for position SS (total)..................: 0:00
+  Block time for position SS (assigned)...............: 0:00
+  Block time for position SS (unassigned).............: 0:00
+
+------------------- Calendar Day Analysis -------------------
+
+  Number of 1 day trips ..............................: 10
+  Number of 2 day trips ..............................:  9
+  Number of 3 day trips ..............................:  1
+  Total number of trips ..............................: 20
+
+  Number of 1 day trips (all slots assigned)..........: 10
+  Number of 2 day trips (all slots assigned)..........:  9
+  Number of 3 day trips (all slots assigned)..........:  1
+  Total number of trips (all slots assigned)..........: 20
+
+  Total number of trips (at least one slot unassigned): 0
+
+--------------------------------------------------------------
+
+  Cost function (map_cost_of_roster)......: cost_of_roster
+
+---------------------- End of Analysis ----------------------
+
+--- Matador runtime status report ---
+Current Solution.......: 3
+Memory consumption: 17 MB  Total time:(s) 00:00:03  cpu time:  00:00:01
+
+------------------------------------------
+Written Solution to : /users/geoff/texttesttmp/casgeoff18Nov134731/LocalPlanEtabUser/2crew_illegal_subchain/RD_ba_new_cas_user/LOCAL_PLAN/TX2_testing/EFCC/12FEB_2002/MAT_2crew/APC_FILES/Solution_3
+
+ImproveMethod iteration 4 [ 2001-02-25T00:00, 2001-03-01T14:31 ]
+  Number of active unassigned tasks   :     3
+  Number of active pre-assigned tasks :     4
+
+Creating solution Solution_4...
+
+Running ImproveMethod...
+Generating rosters...
+
+
+            0%       25%       50%       75%      100%
+            |         |         |         |         |
+Progress:   *****************************************
+
+GENERATION
+  Generated rosters.............: 10
+  Max per crew..................:  6
+  Average per crew..............:  5
+  Generation time (sec).........:  0
+  Generation speed (rost/sec)...: 10
+
+OPTIMIZATION
+  IP objective..................: 15360
+  Optimization time (sec).......:     0
+
+
+
+SOLUTION ANALYSIS for Solution_4 solution:
+------------------------------------------
+There are no crew which have illegal rosters.
+
+There are no trips which have been illegally assigned.
+There are no legs which have been illegally assigned.
+There are no hard global constraints which have been violated.
+
+----------------------- Cost Analysis -----------------------
+
+  Assignment percentage...............................: 100
+
+  Total cost of plan..................................: 15360
+
+  Total cost of rosters...............................: 15360
+  Total cost of unassigned slots......................:     0
+  Total cost of unassigned crew.......................:     0
+  Total cost of broken trip constraints...............:     0
+  Total cost of broken leg constraints................:     0
+  Total cost of broken global constraints.............:     0
+
+  Number of crew with illegal rosters.................: 0
+  Number of broken hard trip constraints..............: 0
+  Number of broken hard leg constraints...............: 0
+  Number of broken hard global constraints............: 0
+
+--------------------- Numerical Analysis ---------------------
+
+  Number of crew (total)..............................: 2
+  Number of crew (assigned)...........................: 2
+  Number of crew (unassigned).........................: 0
+
+  Number of trips (total).............................: 20
+  Number of trips (assigned)..........................: 20
+  Number of trips (unassigned)........................:  0
+
+  Number of slots (total).............................: 20
+  Number of slots (assigned)..........................: 20
+  Number of slots (unassigned)........................:  0
+
+  Number of slots in position CP (total)..............: 0
+  Number of slots in position CP (assigned)...........: 0
+  Number of slots in position CP (unassigned).........: 0
+
+  Number of slots in position CD (total)..............: 20
+  Number of slots in position CD (assigned)...........: 20
+  Number of slots in position CD (unassigned).........:  0
+
+  Number of slots in position PS (total)..............: 0
+  Number of slots in position PS (assigned)...........: 0
+  Number of slots in position PS (unassigned).........: 0
+
+  Number of slots in position SS (total)..............: 0
+  Number of slots in position SS (assigned)...........: 0
+  Number of slots in position SS (unassigned).........: 0
+
+  Number of broken soft trip constraints..............: 0
+  Number of broken soft leg constraints...............: 0
+  Number of broken soft global constraints............: 0
+
+-------------------- Block Time Analysis --------------------
+
+  Block time (total)..................................: 121:00
+  Block time (assigned)...............................: 121:00
+  Block time (unassigned).............................:   0:00
+
+  Block time for position CP (total)..................: 0:00
+  Block time for position CP (assigned)...............: 0:00
+  Block time for position CP (unassigned).............: 0:00
+
+  Block time for position CD (total)..................: 121:00
+  Block time for position CD (assigned)...............: 121:00
+  Block time for position CD (unassigned).............:   0:00
+
+  Block time for position PS (total)..................: 0:00
+  Block time for position PS (assigned)...............: 0:00
+  Block time for position PS (unassigned).............: 0:00
+
+  Block time for position SS (total)..................: 0:00
+  Block time for position SS (assigned)...............: 0:00
+  Block time for position SS (unassigned).............: 0:00
+
+------------------- Calendar Day Analysis -------------------
+
+  Number of 1 day trips ..............................: 10
+  Number of 2 day trips ..............................:  9
+  Number of 3 day trips ..............................:  1
+  Total number of trips ..............................: 20
+
+  Number of 1 day trips (all slots assigned)..........: 10
+  Number of 2 day trips (all slots assigned)..........:  9
+  Number of 3 day trips (all slots assigned)..........:  1
+  Total number of trips (all slots assigned)..........: 20
+
+  Total number of trips (at least one slot unassigned): 0
+
+--------------------------------------------------------------
+
+  Cost function (map_cost_of_roster)......: cost_of_roster
+
+---------------------- End of Analysis ----------------------
+
+--- Matador runtime status report ---
+Current Solution.......: 4
+Memory consumption: 17 MB  Total time:(s) 00:00:03  cpu time:  00:00:01
+
+------------------------------------------
+Written Solution to : /users/geoff/texttesttmp/casgeoff18Nov134731/LocalPlanEtabUser/2crew_illegal_subchain/RD_ba_new_cas_user/LOCAL_PLAN/TX2_testing/EFCC/12FEB_2002/MAT_2crew/APC_FILES/Solution_4
+
+
+-- End --
+Impossible Trip Tag Statistics 
+--------------------------------
+Number of Tags               :       14
+Number of Legal Tags         :       14
+Number of Illegal Tags       :        0
+Number of RAVE calls averted :        0
+Value contributed by tags    :      -14
+
