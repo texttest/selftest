@@ -1,16 +1,16 @@
-CARMSYS: /carm/proj/matador/test_texttest/CARMSYS
-CARMUSR: /carm/user_and_tmp/carmen_8.0_deliver/RD_ib_cas_v8_user
-CARMTMP: /carm/proj/matador/test_texttest/CARMSYS/RD_ib_cas_v8_tmp
-SUBPLAN: Timetable/Version/Matador/Matador_All_Crew_1_loop_1marek.casgeoff13Feb11:46:29
+CARMSYS: /carm/proj/texttest/selftest_data/CARMSYS
+CARMUSR: /users/geoff/texttesttmp/casgeoff18Nov102136/StaticLinkUser/all_1crew/RD_ib_cas_v8_user
+CARMTMP: /users/geoff/work/master/Testing/Automatic/texttest/carmen/matador/TargetApp/test_tmp
+SUBPLAN: Timetable/Version/Matador/Matador_All_Crew_1_loop_1marek
 RULESET:
-MATADOR: /carm/proj/matador/test_texttest/CARMSYS/RD_ib_cas_v8_tmp/crc/rule_set/MATADOR/i386_linux/Matador_CO
-ARGS...: -s Timetable/Version/Matador/Matador_All_Crew_1_loop_1marek.casgeoff13Feb11:46:29
+MATADOR: /users/geoff/work/master/Testing/Automatic/texttest/carmen/matador/TargetApp/test_tmp/crc/rule_set/MATADOR/i386_linux/Matador_CO
+ARGS...: -s Timetable/Version/Matador/Matador_All_Crew_1_loop_1marek
 
-Running /carm/proj/matador/test_texttest/CARMSYS/RD_ib_cas_v8_tmp/crc/rule_set/MATADOR/i386_linux/Matador_CO -s Timetable/Version/Matador/Matador_All_Crew_1_loop_1marek.casgeoff13Feb11:46:29 
+Running /users/geoff/work/master/Testing/Automatic/texttest/carmen/matador/TargetApp/test_tmp/crc/rule_set/MATADOR/i386_linux/Matador_CO -s Timetable/Version/Matador/Matador_All_Crew_1_loop_1marek 
 
 -- Matador::run --
 
-Using Filer to load SubPlan : Timetable/Version/Matador/Matador_All_Crew_1_loop_1marek.casgeoff13Feb11:46:29
+Using Filer to load SubPlan : Timetable/Version/Matador/Matador_All_Crew_1_loop_1marek
 
 Parser: Reading file /config/crew_categories, section headed by 'crew_cat'
 Loaded Crew Category : CT
@@ -41,8 +41,10 @@ Parser: Reading file /APC_FILES/assignments
 
 (!) The following entries in the rules file were not recognised by the ruleset:
 Rule 'assign_medcheck_in_certain_distance_from_end_of_license'
+Rule 'buddy_bids.check'
 Rule 'gpc_wop_two_days_off_after_late_wops'
 Rule 'only_carry_in_pairing_from_table_allowed'
+Rule 'routeinst.check'
 Rule 'trip_pilots_no_fly'
 Set 'activities_to_add_in_roster_publication_details'
 Set 'activities_to_leave_out_in_roster_publication_details'
@@ -71,10 +73,10 @@ Time spent setting up positions and qualifications : 00:00:00
 RUN INFO
   Active module............: Matador
   Matador library version..: master.current
-  Matador library date.....: 27 November 2003 00:35:11
-  Date/Time................: 02/13/04, 11:49
-  Host machine.............: morafenobe
-  Subplan..................: Timetable/Version/Matador/Matador_All_Crew_1_loop_1marek.casgeoff13Feb11:46:29
+  Matador library date.....: 16 November 2005 14:37:32
+  Date/Time................: 11/18/05, 10:22
+  Host machine.............: bellville
+  Subplan..................: Timetable/Version/Matador/Matador_All_Crew_1_loop_1marek
   Rule Set.................: Matador_CO
   Planning period..........: [ 2001-03-29T00:00, 2001-06-03T23:59 ]
   Number of Input trips....: 1061
@@ -225,12 +227,12 @@ GENERATION
   Generated rosters.............: 105
   Max per crew..................: 105
   Average per crew..............: 105
-  Generation time (sec).........:   1
-  Generation speed (rost/sec)...: 105
+  Generation time (sec).........:   2
+  Generation speed (rost/sec)...:  52
 
 OPTIMIZATION
-  IP objective..................: 1.11997e+08
-  Optimization time (sec).......:           0
+  IP objective..................: 111996787
+  Optimization time (sec).......:         0
 
 
 
@@ -340,11 +342,12 @@ There are no hard global constraints which have been violated.
 
 --- Matador runtime status report ---
 Current Solution.......: 1
-Memory consumption: 32 MB  Total time:(s) 00:00:12  cpu time:  00:00:08
+Memory consumption: 36 MB  Total time:(s) 00:00:09  cpu time:  00:00:06
 
 ------------------------------------------
-Written Solution to : /carm/user_and_tmp/carmen_8.0_deliver/RD_ib_cas_v8_user/LOCAL_PLAN/Timetable/Version/Matador/Matador_All_Crew_1_loop_1marek.casgeoff13Feb11:46:29/APC_FILES/Solution_1
+Written Solution to : /users/geoff/texttesttmp/casgeoff18Nov102136/StaticLinkUser/all_1crew/RD_ib_cas_v8_user/LOCAL_PLAN/Timetable/Version/Matador/Matador_All_Crew_1_loop_1marek/APC_FILES/Solution_1
 
+Completed 1 loops of shift improve, exiting
 
 -- End --
 Connection Matrix Statistics 
