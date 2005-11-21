@@ -1,4 +1,4 @@
-TextTest will write diagnostics in /users/geoff/texttesttmp/texttest.sgegeoff28Oct163130/carmen/matador/LprofRun based on file at /users/geoff/work/master/Testing/Automatic/texttest/log4py.conf
+TextTest will write diagnostics in /users/geoff/texttesttmp/texttest.sgegeoff21Nov152833/carmen/matador/LprofRun based on file at /users/geoff/work/master/Testing/Automatic/texttest/log4py.conf
 Using Application Matador, checkout /carm/proj/texttest/selftest_data
 Note: Running with Diagnostics on, so performance checking is disabled!
 Submitting Rule Builds for Matador test-suite TargetApp to SGE queues
@@ -7,7 +7,7 @@ Submitting Matador test-suite TargetApp to SGE queues
   Submitting Matador test-suite ArtificialUser to SGE queues
     Submitting Matador test-case generate_in_subperiod to SGE queue short, requesting model=Opteron*,carmarch="*i386_linux*"
     Evaluating Matador test-case generate_in_subperiod (on assignedposition.cas,crewmembers.cas,inputlegs.cas,inputrosters.cas,inputtrips.cas,outputrosters.cas,parameters.cas,errors.cas,lprof.cas,output.cas,solution.cas)
-    Matador test-case generate_in_subperiod FAILED on zanesville : new results in assignedposition,outputrosters,lprof, differences in parameters
+    Matador test-case generate_in_subperiod FAILED on bagotville : new results in assignedposition,outputrosters,lprof, differences in parameters
     View details(v), Save(s) or continue(any other key)?
 ------------------ Differences in parameters --------------------
 8c8
@@ -44,10 +44,10 @@ Rotation output, requirement : BENBERG 86122 C
 (C)[  497 14C 2001-04-20T06:20  CPH  CPH 2001-04-23T06:05 C¦TQ2<2 ]
 (C)[  568 13C 2001-04-23T10:25  OSL  OSL 2001-04-27T08:25 C¦TQ3<2 ] BENBERG 86122 C >>
 
-Rotation output, requirement : BOSERUP 85215 C
+Rotation output, requirement : BOSERUP
 << (C)[   35  6C 2001-04-02T04:45  ARN  ARN 2001-04-03T10:35 C/P/I ]
 (C)[   81  4C 2001-04-03T12:20  ARN  ARN 2001-04-03T20:05 C/P¦TQ1<2 ]
-(C)[  754  1C 2001-04-04T07:00  CPH  CPH 2001-04-04T14:00 BOSERUP 85215 C ]
+(C)[  754  1C 2001-04-04T07:00  CPH  CPH 2001-04-04T14:00 BOSERUP 85215
 (C)[  140  6C 2001-04-05T13:00  CPH  CPH 2001-04-07T08:25 C/P¦TQ3<2 ]
 (C)[  185  4C 2001-04-07T12:55  CPH  CPH 2001-04-08T07:45 C/P/I ]
 (C)[  197  5C 2001-04-08T08:25  CPH  CPH 2001-04-08T16:25 C/P¦TQ2<2 ]
@@ -56,38 +56,38 @@ Rotation output, requirement : BOSERUP 85215 C
 (C)[  299  2C 2001-04-12T04:45  ARN  ARN 2001-04-12T08:45 C/P ]
 (C)[  311  4C 2001-04-12T13:15  CPH  CPH 2001-04-12T20:50 C/P ]
 (C)[  323  2C 2001-04-13T07:15  CPH  CPH 2001-04-13T11:25 C/P ]
-(C)[  755  1C 2001-04-16T07:00  CPH  CPH 2001-04-16T14:00 BOSERUP 85215 C ]
+(C)[  755  1C 2001-04-16T07:00  CPH  CPH 2001-04-16T14:00 BOSERUP 85215
 (C)[  444  6C 2001-04-18T10:25  OSL  OSL 2001-04-19T09:55 C¦TQ3<2 ]
-(C)[  756  1C 2001-04-19T11:25  CPH  CPH 2001-04-19T14:00 BOSERUP 85215 C ] BOSERUP 85215 C >>
+(C)[  756  1C 2001-04-19T11:25  CPH  CPH 2001-04-19T14:00 BOSERUP 85215 C ] BOSERUP 85215
 ------------------ New result in lprof --------------------
-Flat profile, 40 samples in total
+Flat profile, 55 samples in total
 
- 22.5   22.5   __i686.get_pc_thunk.cx
- 20.0   42.5   __libc_lseek
- 15.0   57.5   __mmap
-  7.5   65.0   __write_nocancel
-  5.0   70.0   ConcreteTask::inqExternalId const
-  5.0   75.0   __GI___munmap
-  5.0   80.0   __open_nocancel
-  5.0   85.0   _fini
-  2.5   87.5   __pthread_mutex_unlock_usercnt
-  2.5   90.0   _int_malloc
-  2.5   92.5   do_system
-  2.5   95.0   SimpleTask::inqAssignedRole const
-  2.5   97.5   __GI_times
-  2.5  100.0   std::_List_iterator<ConcreteTask const*, ConcreteTask const*), ConcreteTask const**> std::lower_bound<std::_List_iterator<ConcreteTask const*, ConcreteTask const*), ConcreteTask const**>, Task const*, less_task_before>
-  0.0  100.0   CompositeTask::outputFull const
+ 23.6   23.6   _fini
+ 21.8   45.5   __GI_times
+ 10.9   56.4   _int_malloc
+  7.3   63.6   __open_nocancel
+  5.5   69.1   __brk
+  5.5   74.5   __waitpid_nocancel
+  5.5   80.0   __write_nocancel
+  3.6   83.6   __read_nocancel
+  3.6   87.3   __GI___munmap
+  1.8   89.1   _xstat
+  1.8   90.9   std::list<ConcreteTask const*, std::allocator<ConcreteTask const*> >::_M_create_node
+  1.8   92.7   do_system
+  1.8   94.5   __GI_memset
+  1.8   96.4   __symlink
+  1.8   98.2   __GI___strtol_internal
+  1.8  100.0   __close_nocancel
+  0.0  100.0   TaskHandle::clone const
+  0.0  100.0   RRLString::RRLString
   0.0  100.0   ConcreteTask::output const
-  0.0  100.0   CompositeTask::inqAssignedRole const
+  0.0  100.0   RAVEVariable::elementValue const
+  0.0  100.0   RAVEVariable::getRaveValue const
+  0.0  100.0   RAVEVariable::resourceValue const
+  0.0  100.0   RAVEVariable::assignmentValue const
+  0.0  100.0   ColumnFactory::computeIndices const
+  0.0  100.0   CompositeTask::outputFull const
+  0.0  100.0   CompositeTask::clone const
+  0.0  100.0   ImproveMethod::createSolver const
   0.0  100.0   less_task_dep::operator const
-  0.0  100.0   CasTaskFactory::createKeywordTask const
-  0.0  100.0   AssignmentCache::findActiveLegAssignments const
-  0.0  100.0   ConcreteTask::isDeadhead const
-  0.0  100.0   TaskHandle::output const
-  0.0  100.0   TaskHandle::inqExternalId const
-  0.0  100.0   RRLParser::~RRLParser
-  0.0  100.0   Matador::run
-  0.0  100.0   Matador::runMethods
-  0.0  100.0   Column::Column
-  0.0  100.0   Filer::saveFile
     Save(s) or continue(any other key)?
