@@ -1,12 +1,12 @@
 CARMSYS: /carm/proj/texttest/selftest_data/CARMSYS
-CARMUSR: /users/geoff/texttesttmp/casgeoff18Nov102136/StaticLinkUser/all_1crew/RD_ib_cas_v8_user
-CARMTMP: /users/geoff/work/master/Testing/Automatic/texttest/carmen/matador/TargetApp/test_tmp
+CARMUSR: /users/johana/texttesttmp/casjohana21Nov112338/StaticLinkUser/all_1crew/RD_ib_cas_v8_user
+CARMTMP: /users/johana/work/master/Testing/Automatic//test_tmp
 SUBPLAN: Timetable/Version/Matador/Matador_All_Crew_1_loop_1marek
 RULESET:
-MATADOR: /users/geoff/work/master/Testing/Automatic/texttest/carmen/matador/TargetApp/test_tmp/crc/rule_set/MATADOR/i386_linux/Matador_CO
+MATADOR: /users/johana/work/master/Testing/Automatic//test_tmp/crc/rule_set/MATADOR/i386_linux/Matador_CO
 ARGS...: -s Timetable/Version/Matador/Matador_All_Crew_1_loop_1marek
 
-Running /users/geoff/work/master/Testing/Automatic/texttest/carmen/matador/TargetApp/test_tmp/crc/rule_set/MATADOR/i386_linux/Matador_CO -s Timetable/Version/Matador/Matador_All_Crew_1_loop_1marek 
+Running /users/johana/work/master/Testing/Automatic//test_tmp/crc/rule_set/MATADOR/i386_linux/Matador_CO -s Timetable/Version/Matador/Matador_All_Crew_1_loop_1marek 
 
 -- Matador::run --
 
@@ -74,8 +74,8 @@ RUN INFO
   Active module............: Matador
   Matador library version..: master.current
   Matador library date.....: 16 November 2005 14:37:32
-  Date/Time................: 11/18/05, 10:22
-  Host machine.............: bellville
+  Date/Time................: 11/21/05, 11:24
+  Host machine.............: centreville
   Subplan..................: Timetable/Version/Matador/Matador_All_Crew_1_loop_1marek
   Rule Set.................: Matador_CO
   Planning period..........: [ 2001-03-29T00:00, 2001-06-03T23:59 ]
@@ -227,8 +227,8 @@ GENERATION
   Generated rosters.............: 105
   Max per crew..................: 105
   Average per crew..............: 105
-  Generation time (sec).........:   2
-  Generation speed (rost/sec)...:  52
+  Generation time (sec).........:   3
+  Generation speed (rost/sec)...:  35
 
 OPTIMIZATION
   IP objective..................: 111996787
@@ -342,12 +342,33 @@ There are no hard global constraints which have been violated.
 
 --- Matador runtime status report ---
 Current Solution.......: 1
-Memory consumption: 36 MB  Total time:(s) 00:00:09  cpu time:  00:00:06
+Memory consumption: 36 MB  Total time:(s) 00:00:07  cpu time:  00:00:06
 
 ------------------------------------------
-Written Solution to : /users/geoff/texttesttmp/casgeoff18Nov102136/StaticLinkUser/all_1crew/RD_ib_cas_v8_user/LOCAL_PLAN/Timetable/Version/Matador/Matador_All_Crew_1_loop_1marek/APC_FILES/Solution_1
+Written Solution to : /users/johana/texttesttmp/casjohana21Nov112338/StaticLinkUser/all_1crew/RD_ib_cas_v8_user/LOCAL_PLAN/Timetable/Version/Matador/Matador_All_Crew_1_loop_1marek/APC_FILES/Solution_1
 
 Completed 1 loops of shift improve, exiting
+----------------------------Timers----------------------------
+  Legalize input solution.............................: 00:00:00
+  Improve method setup................................: 00:00:00
+  Improve method execution............................: 00:00:03
+  --Generation time...................................: 00:00:03
+  ----Generation time: setup roster cache.............: 00:00:00
+  ----Generation time: setup method...................: 00:00:00
+  ----Generation time: generate.......................: 00:00:03
+  ------Helper roster reception.......................: 00:00:00
+  ------Master roster generation......................: 00:00:03
+  --Improve solving time..............................: 00:00:00
+  ----Improve solving time: factory...................: 00:00:00
+  ----Improve solving time: constraints...............: 00:00:00
+  ----Improve solving time: columns...................: 00:00:00
+  ----Improve solving time: optimize..................: 00:00:00
+  --Method analysis and write.........................: 00:00:00
+  ----Method analysis and write: analyse..............: 00:00:00
+  ----Method analysis and write: save.................: 00:00:00
+
+--------------------------Timers End--------------------------
+
 
 -- End --
 Connection Matrix Statistics 
