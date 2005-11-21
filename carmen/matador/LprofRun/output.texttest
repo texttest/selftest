@@ -1,4 +1,4 @@
-TextTest will write diagnostics in /users/geoff/texttesttmp/texttest.sgegeoff21Nov152833/carmen/matador/LprofRun based on file at /users/geoff/work/master/Testing/Automatic/texttest/log4py.conf
+TextTest will write diagnostics in /users/geoff/texttesttmp/texttest.sgegeoff21Nov165214/carmen/matador/LprofRun based on file at /users/geoff/work/master/Testing/Automatic/texttest/log4py.conf
 Using Application Matador, checkout /carm/proj/texttest/selftest_data
 Note: Running with Diagnostics on, so performance checking is disabled!
 Submitting Rule Builds for Matador test-suite TargetApp to SGE queues
@@ -6,14 +6,18 @@ Submitting Rule Builds for Matador test-suite TargetApp to SGE queues
 Submitting Matador test-suite TargetApp to SGE queues
   Submitting Matador test-suite ArtificialUser to SGE queues
     Submitting Matador test-case generate_in_subperiod to SGE queue short, requesting model=Opteron*,carmarch="*i386_linux*"
-    Evaluating Matador test-case generate_in_subperiod (on assignedposition.cas,crewmembers.cas,inputlegs.cas,inputrosters.cas,inputtrips.cas,outputrosters.cas,parameters.cas,errors.cas,lprof.cas,output.cas,solution.cas)
-    Matador test-case generate_in_subperiod FAILED on bagotville : new results in assignedposition,outputrosters,lprof, differences in parameters
+    Evaluating Matador test-case generate_in_subperiod (on assignedposition.cas,crewmembers.cas,inputlegs.cas,inputrosters.cas,inputtrips.cas,outputrosters.cas,parameters.cas,catalogue.cas,errors.cas,lprof.cas,output.cas,solution.cas)
+    Matador test-case generate_in_subperiod FAILED on forestville : new results in assignedposition,outputrosters,lprof, differences in parameters,catalogue
     View details(v), Save(s) or continue(any other key)?
 ------------------ Differences in parameters --------------------
 8c8
 <  Parameter break_cost_unit left as default 1
 ---
 >  Parameter break_cost_unit left as default -1
+------------------ Differences in catalogue --------------------
+2a3,4
+> ----gprof.output
+> ----prof.12046
 ------------------ New result in assignedposition --------------------
 map_crew_assigned_position : crew_assigned_position NOT trip-dependent
 Regular position For all trips, crew ARKE 85868 in pos P
@@ -60,34 +64,34 @@ Rotation output, requirement : BOSERUP
 (C)[  444  6C 2001-04-18T10:25  OSL  OSL 2001-04-19T09:55 C¦TQ3<2 ]
 (C)[  756  1C 2001-04-19T11:25  CPH  CPH 2001-04-19T14:00 BOSERUP 85215 C ] BOSERUP 85215
 ------------------ New result in lprof --------------------
-Flat profile, 55 samples in total
+Flat profile, 52 samples in total
 
- 23.6   23.6   _fini
- 21.8   45.5   __GI_times
- 10.9   56.4   _int_malloc
-  7.3   63.6   __open_nocancel
-  5.5   69.1   __brk
-  5.5   74.5   __waitpid_nocancel
-  5.5   80.0   __write_nocancel
-  3.6   83.6   __read_nocancel
-  3.6   87.3   __GI___munmap
-  1.8   89.1   _xstat
-  1.8   90.9   std::list<ConcreteTask const*, std::allocator<ConcreteTask const*> >::_M_create_node
-  1.8   92.7   do_system
-  1.8   94.5   __GI_memset
-  1.8   96.4   __symlink
-  1.8   98.2   __GI___strtol_internal
-  1.8  100.0   __close_nocancel
-  0.0  100.0   TaskHandle::clone const
-  0.0  100.0   RRLString::RRLString
+ 25.0   25.0   _fini
+ 21.2   46.2   __GI_times
+ 11.5   57.7   __write_nocancel
+  5.8   63.5   _int_malloc
+  3.8   67.3   __GI___munmap
+  3.8   71.2   __waitpid_nocancel
+  3.8   75.0   __mmap
+  1.9   76.9   __GI___unlink
+  1.9   78.8   __GI_memset
+  1.9   80.8   __brk
+  1.9   82.7   __cfree
+  1.9   84.6   __close_nocancel
+  1.9   86.5   std::_Rb_tree<Task const*, Task const*, std::_Identity<Task const*>, less_task_dep, std::allocator<Task const*> >::find
+  1.9   88.5   __open_nocancel
+  1.9   90.4   __pthread_mutex_lock_internal
+  1.9   92.3   __read_nocancel
+  1.9   94.2   std::_Rb_tree<boost::shared_ptr<Requirement>, std::pair<boost::shared_ptr<Requirement> const, int>, std::_Select1st<std::pair<boost::shared_ptr<Requirement> const, int> >, less_req_ptr, std::allocator<std::pair<boost::shared_ptr<Requirement> const, int> > >::find
+  1.9   96.2   do_system
+  1.9   98.1   ConcreteTask::getRequirement const
+  1.9  100.0   std::_Rb_tree<Requirement*, std::pair<Requirement* const, Leg const*>, std::_Select1st<std::pair<Requirement* const, Leg const*> >, std::less<Requirement*>, std::allocator<std::pair<Requirement* const, Leg const*> > >::find const
+  0.0  100.0   RRLParser::readNextRecordLine
+  0.0  100.0   RRLParser::getNextRecord
+  0.0  100.0   RRLParser::~RRLParser
+  0.0  100.0   TaskHandle::output const
+  0.0  100.0   CasSolution::canAssignToLegs const
+  0.0  100.0   KeywordTask::getNextKeywordTask const
   0.0  100.0   ConcreteTask::output const
-  0.0  100.0   RAVEVariable::elementValue const
-  0.0  100.0   RAVEVariable::getRaveValue const
-  0.0  100.0   RAVEVariable::resourceValue const
-  0.0  100.0   RAVEVariable::assignmentValue const
-  0.0  100.0   ColumnFactory::computeIndices const
   0.0  100.0   CompositeTask::outputFull const
-  0.0  100.0   CompositeTask::clone const
-  0.0  100.0   ImproveMethod::createSolver const
-  0.0  100.0   less_task_dep::operator const
     Save(s) or continue(any other key)?
