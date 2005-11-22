@@ -1,0 +1,12 @@
+set terminal postscript color solid
+set size 1,1
+set ylabel 'cost of plan'
+set xlabel 'CPU time (min)'
+set time
+set title "APC (in user RD_lh_pac) "
+set xtics border nomirror norotate
+set ytics border nomirror norotate
+set border 3
+set xrange [0:];
+set ylabel "cost of plan\n% above 14272366"
+plot './average.0'  title "9" with lines lt 3 lw 2, './average.1'  title "std result" with lines lt 2 lw 2
