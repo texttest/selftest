@@ -131,6 +131,7 @@ full_name:TextTest
 # List of (generally directories) to copy from the test directory to the write directory
 # because we want to write there.
 copy_test_path:TargetApp
+copy_test_path:texttesttmp
 
 # List of constant input files to create links to. Will copy them on Windows as symbolic links
 # don't exist.
@@ -153,14 +154,13 @@ slow_motion_replay_speed:2
 # Things to collate
 [collate_file]
 targetMem:TargetApp/Failures/memory.mem
-targetReport:TargetApp/*/batchreport*
-collectReport:TargetApp/batchreport*
-shortcut:TargetApp/*.shortcut
-errorsrec:TargetApp/*/record_errors.log
-outputrec:TargetApp/*/record_run.log
-errorsrep:TargetApp/*/replay_errors.log
-outputrep:TargetApp/*/replay_run.log
-jusecaseprops:TargetApp/*/*/jusecase.properties
+targetReport:texttesttmp/*/batchreport*
+collectReport:texttesttmp/batchreport*
+errorsrec:texttesttmp/*/record_errors.log
+outputrec:texttesttmp/*/record_run.log
+errorsrep:texttesttmp/*/replay_errors.log
+outputrep:texttesttmp/*/replay_run.log
+jusecaseprops:texttesttmp/*/*/jusecase.properties
 filterfile*:TargetApp/filter_files/filter*
 [end]
 
