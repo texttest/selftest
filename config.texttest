@@ -44,10 +44,17 @@ local:false
 # GUI configuration, drop-down lists to appear in static gui...
 [gui_entry_options]
 use_checkout:/carm/master
+run_this_version:master.i386_linux
+run_this_version:master.parisc_2_0
+run_this_version:master.sparc
 run_this_version:sparc
 run_this_version:parisc_2_0
 reconnect_to_previous_run:nightjob
 request_lsf_queue:waiting
+[end]
+
+[gui_entry_overrides]
+auto-replay_in_dynamic_gui:1
 [end]
 
 [run_dependent_text]
