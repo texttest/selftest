@@ -19,6 +19,8 @@ virtual_display_machine:singleton
 
 rave_name:gpc
 
+unsaveable_version:local
+
 [run_dependent_text]
 output:Error! Pid
 output:{INTERNAL writedir}{REPLACE <texttest write directory>}
@@ -30,6 +32,7 @@ output:, Carmen Studio
 output:0x[0-9a-f]*{REPLACE <pointer value>}
 output:com_area_handler
 output:Failed to find out default UMASK
+output:LogConnectionListener
 output:/users/[^/]*/texttesttmp/texttest.[^/]*{REPLACE <parent tt app writedir>}
 
 [unordered_text]

@@ -6,7 +6,7 @@ Mapping tests in tree view...
 Viewing test Studio test-suite TargetApp
 Adding file environment.gst under heading 'Definition Files', coloured white
 Adding file testsuite.gst under heading 'Definition Files', coloured white
-Top Window title set to TextTest dynamic GUI (tests started at 28Nov16:26:39)
+Top Window title set to TextTest dynamic GUI (tests started at 29Nov14:49:14)
 
 Waiting for application event 'completion of test actions' to occur.
 Redrawing test data_unchanged_copy coloured white
@@ -20,8 +20,40 @@ Viewing test Studio test-case data_unchanged_copy
 Adding file catalogue.gst under heading 'New Files', coloured red
 Adding file errors.gst under heading 'New Files', coloured red
 Adding file output.gst under heading 'New Files', coloured red
+Adding file usecase.gst under heading 'Comparison Files', coloured red
 ---------- Text Info Window ----------
-Test FAILED on schellville :
+Test FAILED on morafenobe :
+------------------ Differences in usecase --------------------
+3d2
+< 
+5,12c4,9
+< <AreaId id=""/>
+< <Object position="" identity=""/>
+< <InteractionData type="CommandState" id="">
+< <InteractionItem key="areaId" value="0" />
+< <InteractionItem key="button" value="0" />
+< <InteractionItem key="row" value="0" />
+< <InteractionItem key="subWinId" value="3" />
+< <InteractionItem key="tim" value="3" />
+---
+> <InteractionData type="CommandState"  id="" >
+>      <InteractionItem key="areaId"  value="0" />
+>      <InteractionItem key="button"  value="0" />
+>      <InteractionItem key="row"  value="0" />
+>      <InteractionItem key="subWinId"  value="3" />
+>      <InteractionItem key="tim"  value="3" />
+15c12,25
+< <CommandAttributes label="PlanManager" script="CuiPlanManager(gpc_info,0)" level="0" returnVal="0" />
+---
+> <Interaction type="CommandState" key="" value="(areaId|0)(button|0)(row|0)(subWinId|3)(tim|3)" />
+> <Command label="Window Label" script="CuiGetAreaModeString(gpc_info,CuiArea0,pulldown0,25)" level="3">
+> <CommandAttributes label="Window Label" script="CuiGetAreaModeString(gpc_info,CuiArea0,pulldown0,25)" level="3"  returnVal="1"/>
+> </Command>
+> <Command label="Window Label" script="CuiGetAreaModeString(gpc_info,CuiArea1,pulldown1,25)" level="3">
+> <CommandAttributes label="Window Label" script="CuiGetAreaModeString(gpc_info,CuiArea1,pulldown1,25)" level="3"  returnVal="1"/>
+> </Command>
+> <Command label="Window Label" script="CuiGetAreaModeString(gpc_info,CuiArea0,pulldown0,25)" level="3">
+> <CommandAttributes label="Window Label" script="CuiGetAreaModeString(gpc_info,CuiArea0,pulldown0,25)" level="3"  returnVal="1"/>
 ------------------ New result in catalogue --------------------
 
 The following existing files/directories changed their contents:
@@ -43,7 +75,7 @@ Creating check button for switch 'Show differences where present' (checked)
 
 Creating notebook page for 'Saving'
 Creating entry for option 'Version to save'
-Creating entry for option 'Save single file' (drop-down list containing ['', 'catalogue', 'errors', 'output'])
+Creating entry for option 'Save single file' (drop-down list containing ['', 'usecase', 'catalogue', 'errors', 'output'])
 Creating check button for switch 'Replace successfully compared files also'
 
 'save' event created with arguments ''
@@ -52,8 +84,9 @@ Redrawing test data_unchanged_copy coloured green
 Adding file catalogue.gst under heading 'Comparison Files', coloured green
 Adding file errors.gst under heading 'Comparison Files', coloured green
 Adding file output.gst under heading 'Comparison Files', coloured green
+Adding file usecase.gst under heading 'Comparison Files', coloured green
 ---------- Text Info Window ----------
-Test succeeded on schellville
+Test succeeded on morafenobe
 --------------------------------------
 
 Creating notebook page for 'Viewing'
