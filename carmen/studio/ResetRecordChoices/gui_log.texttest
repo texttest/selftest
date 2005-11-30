@@ -9,7 +9,7 @@ Viewing test Studio
 Adding file config.gst under heading 'Configuration Files', coloured purple
 
 Creating notebook page for 'Select Tests'
-Creating entry for option 'Tests for version' (set to 'local')
+Creating entry for option 'Tests for version'
 Creating entry for option 'Test names containing'
 Creating entry for option 'Tests listed in file'
 Creating entry for option 'Suite names containing'
@@ -20,7 +20,7 @@ Creating entry for option 'CARMUSRs containing'
 
 Creating notebook page for 'What to run'
 Creating entry for option 'Use checkout'
-Creating entry for option 'Run this version' (set to 'local')
+Creating entry for option 'Run this version'
 Creating entry for option 'Reconnect to previous run'
 Creating check button for switch 'Recompute file filters when reconnecting'
 Creating check button for switch 'Ignore catalogue file when isolating data'
@@ -73,12 +73,17 @@ Creating entry for option 'CARMDATA'
 
 'view options for' event created with arguments 'Adding Test'
 
-'enter test name =' event created with arguments 'data_unchanged_copy'
+'enter macro to use =' event created with arguments 'waller/clear_1'
 
-'add test' event created with arguments ''
-Adding Test data_unchanged_copy under test suite Studio test-suite lh_v12
-Viewing new test data_unchanged_copy
+'select test' event created with arguments 'data_unchanged'
+Viewing test Studio test-case data_unchanged
 Adding file options.gst under heading 'Definition Files', coloured pale green
+Adding file usecase.gst under heading 'Definition Files', coloured pale green
+Adding file catalogue.gst under heading 'Standard Files', coloured pale green
+Adding file errors.gst under heading 'Standard Files', coloured pale green
+Adding file output.gst under heading 'Standard Files', coloured pale green
+Adding file subplanRules under heading 'Subplan', coloured pale green
+Adding file LBA_MTV under heading 'Ruleset', coloured pale green
 
 Creating notebook page for 'Recording'
 Creating entry for option 'Compile this ruleset first' (drop-down list containing ['', 'LBA_MTV', 'AC_ROT_gen', 'NORULES', 'LBA_MTV_v9', 'LBA_MTV_Constraints', 'kennzahlen', 'kennzahlen_save', 'LBA_MTV_segmentation'])
@@ -86,18 +91,36 @@ Creating check button for switch 'Automatically replay test after recording it' 
 Creating radio button for switch 'Auto-replay in dynamic GUI/Auto-replay invisible'
 
 Creating notebook page for 'Copying'
-Creating entry for option 'Name of copied test' (set to 'data_unchanged_copy_copy')
-Creating entry for option 'Description of new test' (set to 'Copy of data_unchanged_copy')
+Creating entry for option 'Name of copied test' (set to 'data_unchanged_copy')
+Creating entry for option 'Description of new test' (set to 'Copy of data_unchanged')
 
 'view options for' event created with arguments 'Recording'
 
 'enter compile this ruleset first =' event created with arguments 'LBA_MTV'
 
-'record use-case' event created with arguments ''
-Running Studio in order to capture user actions...
+'select test' event created with arguments 'lh_v12'
+Viewing test Studio test-suite lh_v12
+Adding file environment.gst under heading 'Definition Files', coloured pale green
+Adding file environment.gst.local under heading 'Definition Files', coloured pale green
+Adding file testsuite.gst under heading 'Definition Files', coloured pale green
+Adding file Customer.etab under heading 'Resources', coloured pale green
+Adding file Implementation.etab under heading 'Resources', coloured pale green
 
-Waiting for application event 'replay2 texttest to complete' to occur.
-Redrawing test data_unchanged_copy coloured pale green
+Creating notebook page for 'Adding Test'
+Creating entry for option 'Test Name'
+Creating entry for option 'Test Description'
+Creating entry for option 'Macro to use' (set to '<Record new macro>') (drop-down list containing ['<Record new macro>', 'wol/woltest1.txt', 'wol/woltest1.per', 'wol/apa', 'wol/bepa', 'wol/apa.x', 'wol/bepa.x', 'waller/jjjj', 'waller/clear_1', 'waller/remove_leg', 'waller/remove_leg3', 'waller/consistency', 'waller/top_row', 'waller/open_leak', 'waller/start_opt', 'howard/howard.07-jul-2005', 'howard/howard', 'howard/CARse15492Quick', 'howard/C12.7.1_how', 'howard/CARse15669', 'howard/CARse_testing', 'howard/CARse15671', 'howard/CTM_test', 'howard/CARse15675', 'howard/BBBBB', 'howard/ccccc', 'howard/ddd', 'howard/bollocks', 'howard/CARse15681', 'howard/CARse15681_perb', 'howard/apc_from_mac', 'howard/apc_from_mac_param', 'howard/CARse15671_fixed', 'howard/CARse15671_perb', 'howard/CARse15671_fixed_recorded', 'howard/CARse15759', 'Lufthansa/ratest1.txt', 'Lufthansa/woltest1.txt', 'perb/CARse15492', 'perb/CARse15585', 'perb/CARse15585-multi', 'perb/TestSplit', 'perb/Krasch', 'larss/crash.xml'])
+
+Creating notebook page for 'Adding Suite'
+Creating entry for option 'Suite Name'
+Creating entry for option 'Suite Description'
+Creating entry for option 'CARMUSR'
+Creating entry for option 'CARMDATA'
+
+'view options for' event created with arguments 'Adding Test'
+
+'select test' event created with arguments 'data_unchanged'
+Viewing test Studio test-case data_unchanged
 Adding file options.gst under heading 'Definition Files', coloured pale green
 Adding file usecase.gst under heading 'Definition Files', coloured pale green
 Adding file catalogue.gst under heading 'Standard Files', coloured pale green
@@ -105,10 +128,6 @@ Adding file errors.gst under heading 'Standard Files', coloured pale green
 Adding file output.gst under heading 'Standard Files', coloured pale green
 Adding file subplanRules under heading 'Subplan', coloured pale green
 Adding file LBA_MTV under heading 'Ruleset', coloured pale green
----------- Text Info Window ----------
-Recorded use case - now attempting to replay in the background to collect standard files
-These will appear shortly. You do not need to submit the test manually.
---------------------------------------
 
 Creating notebook page for 'Recording'
 Creating entry for option 'Compile this ruleset first' (drop-down list containing ['', 'LBA_MTV', 'AC_ROT_gen', 'NORULES', 'LBA_MTV_v9', 'LBA_MTV_Constraints', 'kennzahlen', 'kennzahlen_save', 'LBA_MTV_segmentation'])
@@ -116,49 +135,9 @@ Creating check button for switch 'Automatically replay test after recording it' 
 Creating radio button for switch 'Auto-replay in dynamic GUI/Auto-replay invisible'
 
 Creating notebook page for 'Copying'
-Creating entry for option 'Name of copied test' (set to 'data_unchanged_copy_copy')
-Creating entry for option 'Description of new test' (set to 'Copy of data_unchanged_copy')
-Redrawing test data_unchanged_copy coloured pale green
-Adding file options.gst under heading 'Definition Files', coloured pale green
-Adding file usecase.gst under heading 'Definition Files', coloured pale green
-Adding file catalogue.gst under heading 'Standard Files', coloured pale green
-Adding file errors.gst under heading 'Standard Files', coloured pale green
-Adding file output.gst under heading 'Standard Files', coloured pale green
-Adding file subplanRules under heading 'Subplan', coloured pale green
-Adding file LBA_MTV under heading 'Ruleset', coloured pale green
----------- Text Info Window ----------
-First auto-replay completed - second now in progress to collect standard files
-These will appear shortly. You do not need to submit the test manually.
---------------------------------------
+Creating entry for option 'Name of copied test' (set to 'data_unchanged_copy')
+Creating entry for option 'Description of new test' (set to 'Copy of data_unchanged')
 
-Creating notebook page for 'Recording'
-Creating entry for option 'Compile this ruleset first' (drop-down list containing ['', 'LBA_MTV', 'AC_ROT_gen', 'NORULES', 'LBA_MTV_v9', 'LBA_MTV_Constraints', 'kennzahlen', 'kennzahlen_save', 'LBA_MTV_segmentation'])
-Creating check button for switch 'Automatically replay test after recording it' (checked)
-Creating radio button for switch 'Auto-replay in dynamic GUI/Auto-replay invisible'
-
-Creating notebook page for 'Copying'
-Creating entry for option 'Name of copied test' (set to 'data_unchanged_copy_copy')
-Creating entry for option 'Description of new test' (set to 'Copy of data_unchanged_copy')
-Expected application event 'replay2 texttest to complete' occurred, proceeding.
-Redrawing test data_unchanged_copy coloured pale green
-Adding file options.gst under heading 'Definition Files', coloured pale green
-Adding file usecase.gst under heading 'Definition Files', coloured pale green
-Adding file catalogue.gst under heading 'Standard Files', coloured pale green
-Adding file errors.gst under heading 'Standard Files', coloured pale green
-Adding file output.gst under heading 'Standard Files', coloured pale green
-Adding file subplanRules under heading 'Subplan', coloured pale green
-Adding file LBA_MTV under heading 'Ruleset', coloured pale green
----------- Text Info Window ----------
-Recorded use case and collected all standard files
---------------------------------------
-
-Creating notebook page for 'Recording'
-Creating entry for option 'Compile this ruleset first' (drop-down list containing ['', 'LBA_MTV', 'AC_ROT_gen', 'NORULES', 'LBA_MTV_v9', 'LBA_MTV_Constraints', 'kennzahlen', 'kennzahlen_save', 'LBA_MTV_segmentation'])
-Creating check button for switch 'Automatically replay test after recording it' (checked)
-Creating radio button for switch 'Auto-replay in dynamic GUI/Auto-replay invisible'
-
-Creating notebook page for 'Copying'
-Creating entry for option 'Name of copied test' (set to 'data_unchanged_copy_copy')
-Creating entry for option 'Description of new test' (set to 'Copy of data_unchanged_copy')
+'view options for' event created with arguments 'Recording'
 
 'quit' event created with arguments ''
