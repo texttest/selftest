@@ -94,6 +94,16 @@ link_test_path:commands.tas
 solution:APC_FILES/best_solution
 [end]
 
+# Failure severity. Determines how differences are reported.
+# Only severity 1 differences will actually fail the test, the rest affect only the details column.
+# Defaults are output/errors 1, performance/memory 2, other 3. Crashes, internal errors, unrunnable tests are always 1
+[failure_severity]
+solution:1
+errors:2
+output:2
+performance:3
+[end]
+
 # ---------------- Values required by the performance module -------------------
 
 # Performance machines/groups. Performance is only compared if these machines are used for test execution

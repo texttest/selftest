@@ -1,40 +1,64 @@
 Mapping tests in tree view...
--> Added Matador test-suite TargetApp to test tree view.
-->   Added Matador test-suite CarmDataUser to test tree view.
-->     Added Matador test-case firstpos_illegal to test tree view.
+-> Added Tail test-suite TargetApp to test tree view.
+->   Added Tail test-suite BasicUser to test tree view.
+->     Added Tail test-suite SubTestSuite to test tree view.
+->       Added Tail test-case restDest_test to test tree view.
 
-Viewing test Matador test-suite TargetApp
-Adding file diagnostics.etab under heading 'Definition Files', coloured white
+Viewing test Tail test-suite TargetApp
 Adding file environment under heading 'Definition Files', coloured white
-Adding file testsuite.cas under heading 'Definition Files', coloured white
-Adding file matador under heading 'RAVE module', coloured white
-Top Window title set to TextTest dynamic GUI (tests started at 02Dec15:43:43)
+Adding file testsuite.tas under heading 'Definition Files', coloured white
+Top Window title set to TextTest dynamic GUI (tests started at 02Dec16:02:35)
 
 Waiting for application event 'completion of test actions' to occur.
-Redrawing test firstpos_illegal coloured white
-Redrawing test firstpos_illegal coloured yellow
-Redrawing test firstpos_illegal coloured red
-(Second column 'solution 1.8% better(+)' coloured red)
+Redrawing test restDest_test coloured white
+Redrawing test restDest_test coloured yellow
+Redrawing test restDest_test coloured red
+(Second column 'solution different(+)' coloured red)
 Expected application event 'completion of test actions' occurred, proceeding.
 
-'select test' event created with arguments 'firstpos_illegal'
-Viewing test Matador test-case firstpos_illegal
-Adding file catalogue.cas under heading 'Comparison Files', coloured green
-Adding file errors.cas under heading 'Comparison Files', coloured green
-Adding file output.cas under heading 'Comparison Files', coloured red
-Adding file solution.cas under heading 'Comparison Files', coloured red
+'select test' event created with arguments 'restDest_test'
+Viewing test Tail test-case restDest_test
+Adding file errors.tas under heading 'Comparison Files', coloured green
+Adding file output.tas.fail under heading 'Comparison Files', coloured red
+Adding file solution.tas.fail under heading 'Comparison Files', coloured red
 ---------- Text Info Window ----------
 Test FAILED on schellville :
 ------------------ Differences in output --------------------
-4858c4858
-<   Total cost of plan..................................: 580110
----
->   Total cost of plan..................................: 570110
+201a202,857
+> 
+>   Optimizer cost......................................: 7996611
+>   Gap to lower bound (in millionths)..................:       0
+> 
+> ---------------------- End of Analysis ----------------------
+> 
+> --------------- Matador runtime status report ---------------
+>   Current Solution...................:        1
+> 
+> Solving problem in interval [ 2002-03-01T12:00, 2002-03-04T12:00 ]
+>   Number of active unassigned tasks   :   170
+>   Number of active pre-assigned tasks :    13
+> 
+> Applying Vehicle Counter
+>   Found 93 points at 21 stations with no inactive vehicles.
+> 
+> Generating connections
+> 
+>             0%       25%       50%       75%      100%
+>             |         |         |         |         |
+> Progress:   *****************************************
+> 
+> Possible connections:      751
+> Legal connections   :      690
+> Created connections :      690
+> 
+> Applying Propagation Filter
+>   Removed 258 connections.
+>   432 connections left.
 ------------------ Differences in solution --------------------
-14c14
-< 179;4;0x0;1;some_crap;
+12c12
+< 179;2;0x0;0;;some_crap
 ---
-> 179;4;0x0;1;;
+> 179;2;0x0;0;;
 --------------------------------------
 
 Creating notebook page for 'Viewing'
@@ -42,7 +66,7 @@ Creating check button for switch 'Include Run-dependent Text'
 Creating check button for switch 'Show differences where present' (checked)
 
 Creating notebook page for 'Saving'
-Creating entry for option 'Version to save'
+Creating entry for option 'Version to save' (set to 'fail') (drop-down list containing ['fail', ''])
 Creating entry for option 'Save single file' (drop-down list containing ['', 'output', 'solution'])
 Creating check button for switch 'Replace successfully compared files also'
 

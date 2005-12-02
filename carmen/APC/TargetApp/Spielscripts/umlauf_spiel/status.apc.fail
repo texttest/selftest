@@ -1,0 +1,798 @@
+SECTION apc_status input
+--- Analysis of solution (input) ---
+ User..................: geoff
+ Date..................: 03/08/2004, 14:45
+
+ APC program (rule set): .umlauf_spiel.geoff.4443
+ Subplan...............: Spiel  spiel  daily  ji_test_Umlaufspiel.apcgeoff08Mar14:44:52
+ Period................: 19940919 - 19940919
+ Parameter set.........:    with  10  manual changes.
+ Machine...............: forster
+ Optimizer.............: opt_paqs
+
+ APC COST ANALYSIS 
+
+ APC solution evaluation criterion:
+   uncovered leg count, total cost of crr
+ uncovered legs...............................: 22
+ base constraint excess ......................: 0
+ variant constraint deficit ..................: 0
+ cost function (map_cost_of_crr)..............: apc_cost_of_crr
+ APC total rule cost..........................:       22
+ overcover cost ..............................:        0
+ base constraint excess cost..................:        0
+ global constraint excess cost................:        0
+
+ TOTAL cost...................................:       22
+
+ APC INTERNAL RULE VALUE ANALYSIS
+
+ working days..................................: 22
+ block flying time.............................: 21:05
+ average block per working day.................: 0:57
+ deadhead flying time..........................: 00:00
+ duty hours....................................: 48:35
+ duty per working day..........................: 2:12
+ duty-time/block-time..........................:  2.304
+ duty in longest CRR...........................: 2:45
+ number of CRRs with long duty (> 44:00).......: 0
+
+
+ rotations (crrs) (total)......................: 22
+ incomplete rotations..........................: 22
+ illegal rotations.............................: 0
+ rtds..........................................: 22
+
+ number of legs................................: 22
+ number of legs in incomplete rtds.............: 22
+ overcovers (will become deadheads)............: 0
+ this fleet deadheads..........................: 0
+ other-fleet deadheads.........................: 0
+ ground transport deadheads....................: 0
+ OAG deadheads.................................: 0
+ aircraft changes..............................: 0
+
+ Number of days in complete rotations:
+ Length      Rotations
+
+ Number of days in incomplete rotations:
+ Length    Incomplete rotations
+ 1 days    22
+
+ BASE CONSTRAINTS
+
+                 Start      End  Min/Day  Max/Day   MinTot   MaxTot    Value
+ ============  =======  =======  =======  =======  =======  =======  =======
+ Base    FRA       Mon      Mon       -        -        -        -       22
+ Default base: FRA
+
+ BASE PRODUCTION ANALYSIS
+
+ Day              Mon |   total
+ ============    ---- |  ------
+ Base    FRA       22 |      22
+
+ Total production ( FRA).........:   22
+
+ Total production (all bases)....:   22
+ Total production (all variants).:    0
+
+ APC JOB IDENTIFICATION
+
+ CARMSYS..............: /carm/proj/matador/test_texttest/CARMSYS
+ CARMUSR..............: /carm/proj/texttest/selftest_data/CARMUSRs/Spiel_user
+ APC library version..: master.alpha-1.7
+ APC library date.....: 05 March 2004 22:25:17
+
+--- end of analysis ---
+Time:  0 s real  10 ms cpu  0 ms cpu_child  memory:   6.5 Mb
+Delta: 0 s real  0 ms cpu  0 ms cpu_child  memory:   0.5 Mb
+
+SECTION apc_status Solution_1
+--- APC runtime status report ---
+
+Total time:  0:00:00   cpu time:  0:00:00
+APC program (rule set): .umlauf_spiel.geoff.4443
+APC producing solution number: 1
+Active method: column generator
+Active module: pricing (with reduced set of RTDs)
+Generated rotations: 62 this loop
+
+--- Analysis of solution (column generation) ---
+ User..................: geoff
+ Date..................: 03/08/2004, 14:45
+
+ APC program (rule set): .umlauf_spiel.geoff.4443
+ Subplan...............: Spiel  spiel  daily  ji_test_Umlaufspiel.apcgeoff08Mar14:44:52
+ Period................: 19940919 - 19940919
+ Parameter set.........:    with  10  manual changes.
+ Machine...............: forster
+ Method................: column generator
+ Optimizer.............: opt_paqs
+ Coordination optimizer: paqs
+
+ APC COST ANALYSIS 
+
+ APC solution evaluation criterion:
+   uncovered leg count, total cost of crr
+ uncovered legs...............................: 0
+ base constraint excess ......................: 0
+ variant constraint deficit ..................: 0
+ cost function (map_cost_of_crr)..............: apc_cost_of_crr
+ APC total rule cost..........................:        8
+ overcover cost ..............................:        0
+ base constraint excess cost..................:        0
+ global constraint excess cost................:        0
+
+ TOTAL cost...................................:        8
+
+ APC INTERNAL RULE VALUE ANALYSIS
+
+ working days..................................: 8
+ block flying time.............................: 21:05
+ average block per working day.................: 2:38
+ deadhead flying time..........................: 00:00
+ duty hours....................................: 44:55
+ duty per working day..........................: 5:36
+ duty-time/block-time..........................:  2.130
+ duty in longest CRR...........................: 16:45
+ number of CRRs with long duty (> 44:00).......: 0
+
+ average duty per rtd..........................: 5:36
+ longest rtd...................................: 10:05
+ shortest rtd..................................: 2:15
+ standard deviation duty.......................: 3:14
+ number of rtds with long duty (> 10:00).......: 1 
+ number of rtd pairs with long duty (> 18:00)..: 0 
+
+ number of layovers (double rest)..............: 0
+ number of normal rest periods.................: 4
+ average rest time (except layovers)...........: 15:45
+ longest rest time (except layovers)...........: 19:10
+ shortest rest time............................: 12:05
+ short rest times (< 12:00)....................: 0
+ late (> 13:00) to early (< 13:00).............: 0
+
+
+ rotations (crrs) (total)......................: 4
+ incomplete rotations..........................: 0
+ illegal rotations.............................: 0
+ rtds..........................................: 8
+
+ number of legs................................: 22
+ number of legs in incomplete rtds.............: 0
+ overcovers (will become deadheads)............: 0
+ this fleet deadheads..........................: 0
+ other-fleet deadheads.........................: 0
+ ground transport deadheads....................: 0
+ OAG deadheads.................................: 0
+ aircraft changes..............................: 4
+
+ Number of days in complete rotations:
+ Length      Rotations
+ 2 days:      4   100.000 %
+
+ BASE CONSTRAINTS
+
+                 Start      End  Min/Day  Max/Day   MinTot   MaxTot    Value
+ ============  =======  =======  =======  =======  =======  =======  =======
+ Base    FRA       Mon      Mon       -        -        -        -        8
+ Default base: FRA
+
+ BASE PRODUCTION ANALYSIS
+
+ Day              Mon |   total
+ ============    ---- |  ------
+ Base    FRA        8 |       8
+
+ Total production ( FRA).........:    8
+
+ Total production (all bases)....:    8
+ Total production (all variants).:    0
+
+ APC GENERATION INFO
+
+ Generated rotations.......: 62
+ Colgen iterations.........: 7
+ Legality (pass)...........: 1364
+ Legality (fail)...........: 595
+
+ column generator specific statistics (applies to pricing phase)
+  Rule checks.............................: 101
+   Failed due to incomplete rotation......: 0
+   Failed due to rule violation...........: 10
+   Failed due to duplicate legs...........: 25
+  Cost overestimates......................: 0
+  Cost underestimates.....................: 0
+  Legal rotations with cost overestimate..: 0
+  Unattractive legal rotations............: 0
+  Unattractive illegal rotations..........: 0
+   rule rest                                     failure count         10
+
+ APC OPTIMIZATION INFO
+
+ (the global bounds include penalties for uncovered legs, and
+  for base and global constraint violations)
+
+ Global upper bound.............: 8
+ Global lower bound.............: not yet available
+ Global gap.....................: 0.000000%
+
+ APC JOB IDENTIFICATION
+
+ CARMSYS..............: /carm/proj/matador/test_texttest/CARMSYS
+ CARMUSR..............: /carm/proj/texttest/selftest_data/CARMUSRs/Spiel_user
+ APC library version..: master.alpha-1.7
+ APC library date.....: 05 March 2004 22:25:17
+
+--- end of analysis ---
+Time:  0 s real  90 ms cpu  0 ms cpu_child  memory:  20.2 Mb
+Delta: 0 s real  0 ms cpu  0 ms cpu_child  memory:   0.0 Mb
+
+SECTION apc_status Solution_2
+--- APC runtime status report ---
+
+Total time:  0:00:00   cpu time:  0:00:00
+APC program (rule set): .umlauf_spiel.geoff.4443
+APC producing solution number: 2
+Active method: column generator
+Active module: pricing (with reduced set of RTDs)
+Generated rotations: 103 this loop
+
+--- Analysis of solution (column generation) ---
+ User..................: geoff
+ Date..................: 03/08/2004, 14:45
+
+ APC program (rule set): .umlauf_spiel.geoff.4443
+ Subplan...............: Spiel  spiel  daily  ji_test_Umlaufspiel.apcgeoff08Mar14:44:52
+ Period................: 19940919 - 19940919
+ Parameter set.........:    with  10  manual changes.
+ Machine...............: forster
+ Method................: column generator
+ Optimizer.............: opt_paqs
+ Coordination optimizer: paqs
+
+ APC COST ANALYSIS 
+
+ APC solution evaluation criterion:
+   uncovered leg count, total cost of crr
+ uncovered legs...............................: 0
+ base constraint excess ......................: 0
+ variant constraint deficit ..................: 0
+ cost function (map_cost_of_crr)..............: apc_cost_of_crr
+ APC total rule cost..........................:        7
+ overcover cost ..............................:        0
+ base constraint excess cost..................:        0
+ global constraint excess cost................:        0
+
+ TOTAL cost...................................:        7
+
+ APC INTERNAL RULE VALUE ANALYSIS
+
+ working days..................................: 7
+ block flying time.............................: 21:05
+ average block per working day.................: 3:00
+ deadhead flying time..........................: 00:00
+ duty hours....................................: 44:25
+ duty per working day..........................: 6:20
+ duty-time/block-time..........................:  2.107
+ duty in longest CRR...........................: 19:25
+ number of CRRs with long duty (> 44:00).......: 0
+
+ average duty per rtd..........................: 6:20
+ longest rtd...................................: 10:25
+ shortest rtd..................................: 2:00
+ standard deviation duty.......................: 2:31
+ number of rtds with long duty (> 10:00).......: 1 
+ number of rtd pairs with long duty (> 18:00)..: 0 
+
+ number of layovers (double rest)..............: 0
+ number of normal rest periods.................: 4
+ average rest time (except layovers)...........: 15:47
+ longest rest time (except layovers)...........: 16:25
+ shortest rest time............................: 15:20
+ short rest times (< 12:00)....................: 0
+ late (> 13:00) to early (< 13:00).............: 0
+
+
+ rotations (crrs) (total)......................: 3
+ incomplete rotations..........................: 0
+ illegal rotations.............................: 0
+ rtds..........................................: 7
+
+ number of legs................................: 22
+ number of legs in incomplete rtds.............: 0
+ overcovers (will become deadheads)............: 0
+ this fleet deadheads..........................: 0
+ other-fleet deadheads.........................: 0
+ ground transport deadheads....................: 0
+ OAG deadheads.................................: 0
+ aircraft changes..............................: 3
+
+ Number of days in complete rotations:
+ Length      Rotations
+ 2 days:      2   66.667 %
+ 3 days:      1   33.333 %
+
+ BASE CONSTRAINTS
+
+                 Start      End  Min/Day  Max/Day   MinTot   MaxTot    Value
+ ============  =======  =======  =======  =======  =======  =======  =======
+ Base    FRA       Mon      Mon       -        -        -        -        7
+ Default base: FRA
+
+ BASE PRODUCTION ANALYSIS
+
+ Day              Mon |   total
+ ============    ---- |  ------
+ Base    FRA        7 |       7
+
+ Total production ( FRA).........:    7
+
+ Total production (all bases)....:    7
+ Total production (all variants).:    0
+
+ APC GENERATION INFO
+
+ Generated rotations.......: 103
+ Colgen iterations.........: 11
+ Legality (pass)...........: 1596
+ Legality (fail)...........: 818
+
+ column generator specific statistics (applies to pricing phase)
+  Rule checks.............................: 178
+   Failed due to incomplete rotation......: 0
+   Failed due to rule violation...........: 13
+   Failed due to duplicate legs...........: 43
+  Cost overestimates......................: 0
+  Cost underestimates.....................: 0
+  Legal rotations with cost overestimate..: 0
+  Unattractive legal rotations............: 0
+  Unattractive illegal rotations..........: 0
+   rule rest                                     failure count         13
+
+ APC OPTIMIZATION INFO
+
+ (the global bounds include penalties for uncovered legs, and
+  for base and global constraint violations)
+
+ Global upper bound.............: 7
+ Global lower bound.............: not yet available
+ Global gap.....................: 0.000000%
+
+ APC JOB IDENTIFICATION
+
+ CARMSYS..............: /carm/proj/matador/test_texttest/CARMSYS
+ CARMUSR..............: /carm/proj/texttest/selftest_data/CARMUSRs/Spiel_user
+ APC library version..: master.alpha-1.7
+ APC library date.....: 05 March 2004 22:25:17
+
+--- end of analysis ---
+Time:  0 s real  130 ms cpu  0 ms cpu_child  memory:  20.3 Mb
+Delta: 0 s real  0 ms cpu  0 ms cpu_child  memory:   0.0 Mb
+
+SECTION apc_status Solution_3
+--- APC runtime status report ---
+
+Total time:  0:00:01   cpu time:  0:00:00
+APC program (rule set): .umlauf_spiel.geoff.4443
+APC producing solution number: 3
+Active method: column generator
+Active module: pricing (with reduced set of RTDs)
+Generated rotations: 129 this loop
+
+--- Analysis of solution (column generation) ---
+ User..................: geoff
+ Date..................: 03/08/2004, 14:45
+
+ APC program (rule set): .umlauf_spiel.geoff.4443
+ Subplan...............: Spiel  spiel  daily  ji_test_Umlaufspiel.apcgeoff08Mar14:44:52
+ Period................: 19940919 - 19940919
+ Parameter set.........:    with  10  manual changes.
+ Machine...............: forster
+ Method................: column generator
+ Optimizer.............: opt_paqs
+ Coordination optimizer: paqs
+
+ APC COST ANALYSIS 
+
+ APC solution evaluation criterion:
+   uncovered leg count, total cost of crr
+ uncovered legs...............................: 0
+ base constraint excess ......................: 0
+ variant constraint deficit ..................: 0
+ cost function (map_cost_of_crr)..............: apc_cost_of_crr
+ APC total rule cost..........................:        6
+ overcover cost ..............................:        0
+ base constraint excess cost..................:        0
+ global constraint excess cost................:        0
+
+ TOTAL cost...................................:        6
+
+ APC INTERNAL RULE VALUE ANALYSIS
+
+ working days..................................: 6
+ block flying time.............................: 21:05
+ average block per working day.................: 3:30
+ deadhead flying time..........................: 00:00
+ duty hours....................................: 44:25
+ duty per working day..........................: 7:24
+ duty-time/block-time..........................:  2.107
+ duty in longest CRR...........................: 25:05
+ number of CRRs with long duty (> 44:00).......: 0
+
+ average duty per rtd..........................: 7:24
+ longest rtd...................................: 10:15
+ shortest rtd..................................: 2:00
+ standard deviation duty.......................: 2:55
+ number of rtds with long duty (> 10:00).......: 1 
+ number of rtd pairs with long duty (> 18:00)..: 1 
+
+ number of layovers (double rest)..............: 0
+ number of normal rest periods.................: 4
+ average rest time (except layovers)...........: 15:46
+ longest rest time (except layovers)...........: 19:55
+ shortest rest time............................: 11:45
+ short rest times (< 12:00)....................: 1
+ late (> 13:00) to early (< 13:00).............: 0
+
+
+ rotations (crrs) (total)......................: 2
+ incomplete rotations..........................: 0
+ illegal rotations.............................: 0
+ rtds..........................................: 6
+
+ number of legs................................: 22
+ number of legs in incomplete rtds.............: 0
+ overcovers (will become deadheads)............: 0
+ this fleet deadheads..........................: 0
+ other-fleet deadheads.........................: 0
+ ground transport deadheads....................: 0
+ OAG deadheads.................................: 0
+ aircraft changes..............................: 7
+
+ Number of days in complete rotations:
+ Length      Rotations
+ 3 days:      2   100.000 %
+
+ BASE CONSTRAINTS
+
+                 Start      End  Min/Day  Max/Day   MinTot   MaxTot    Value
+ ============  =======  =======  =======  =======  =======  =======  =======
+ Base    FRA       Mon      Mon       -        -        -        -        6
+ Default base: FRA
+
+ BASE PRODUCTION ANALYSIS
+
+ Day              Mon |   total
+ ============    ---- |  ------
+ Base    FRA        6 |       6
+
+ Total production ( FRA).........:    6
+
+ Total production (all bases)....:    6
+ Total production (all variants).:    0
+
+ APC GENERATION INFO
+
+ Generated rotations.......: 129
+ Colgen iterations.........: 14
+ Legality (pass)...........: 2004
+ Legality (fail)...........: 1266
+
+ column generator specific statistics (applies to pricing phase)
+  Rule checks.............................: 268
+   Failed due to incomplete rotation......: 0
+   Failed due to rule violation...........: 13
+   Failed due to duplicate legs...........: 92
+  Cost overestimates......................: 0
+  Cost underestimates.....................: 0
+  Legal rotations with cost overestimate..: 0
+  Unattractive legal rotations............: 0
+  Unattractive illegal rotations..........: 0
+   rule rest                                     failure count         13
+
+ APC OPTIMIZATION INFO
+
+ (the global bounds include penalties for uncovered legs, and
+  for base and global constraint violations)
+
+ Global upper bound.............: 6
+ Global lower bound.............: not yet available
+ Global gap.....................: 0.000000%
+
+ APC JOB IDENTIFICATION
+
+ CARMSYS..............: /carm/proj/matador/test_texttest/CARMSYS
+ CARMUSR..............: /carm/proj/texttest/selftest_data/CARMUSRs/Spiel_user
+ APC library version..: master.alpha-1.7
+ APC library date.....: 05 March 2004 22:25:17
+
+--- end of analysis ---
+Time:  1 s real  180 ms cpu  0 ms cpu_child  memory:  20.4 Mb
+Delta: 0 s real  0 ms cpu  0 ms cpu_child  memory:   0.0 Mb
+
+SECTION apc_status Solution_4
+--- APC runtime status report ---
+
+Total time:  0:00:03   cpu time:  0:00:01
+APC program (rule set): .umlauf_spiel.geoff.4443
+APC producing solution number: 4
+Active method: column generator
+Active module: pricing (with all RTDs)
+Generated rotations: 295 this loop
+
+--- Analysis of solution (column generation) ---
+ User..................: geoff
+ Date..................: 03/08/2004, 14:45
+
+ APC program (rule set): .umlauf_spiel.geoff.4443
+ Subplan...............: Spiel  spiel  daily  ji_test_Umlaufspiel.apcgeoff08Mar14:44:52
+ Period................: 19940919 - 19940919
+ Parameter set.........:    with  10  manual changes.
+ Machine...............: forster
+ Method................: column generator
+ Optimizer.............: opt_paqs
+ Coordination optimizer: paqs
+
+ APC COST ANALYSIS 
+
+ APC solution evaluation criterion:
+   uncovered leg count, total cost of crr
+ uncovered legs...............................: 0
+ base constraint excess ......................: 0
+ variant constraint deficit ..................: 0
+ cost function (map_cost_of_crr)..............: apc_cost_of_crr
+ APC total rule cost..........................:        6
+ overcover cost ..............................:        0
+ base constraint excess cost..................:        0
+ global constraint excess cost................:        0
+
+ TOTAL cost...................................:        6
+
+ APC INTERNAL RULE VALUE ANALYSIS
+
+ working days..................................: 6
+ block flying time.............................: 21:05
+ average block per working day.................: 3:30
+ deadhead flying time..........................: 00:00
+ duty hours....................................: 44:25
+ duty per working day..........................: 7:24
+ duty-time/block-time..........................:  2.107
+ duty in longest CRR...........................: 25:05
+ number of CRRs with long duty (> 44:00).......: 0
+
+ average duty per rtd..........................: 7:24
+ longest rtd...................................: 10:15
+ shortest rtd..................................: 2:00
+ standard deviation duty.......................: 2:55
+ number of rtds with long duty (> 10:00).......: 1 
+ number of rtd pairs with long duty (> 18:00)..: 1 
+
+ number of layovers (double rest)..............: 0
+ number of normal rest periods.................: 4
+ average rest time (except layovers)...........: 15:46
+ longest rest time (except layovers)...........: 19:55
+ shortest rest time............................: 11:45
+ short rest times (< 12:00)....................: 1
+ late (> 13:00) to early (< 13:00).............: 0
+
+
+ rotations (crrs) (total)......................: 2
+ incomplete rotations..........................: 0
+ illegal rotations.............................: 0
+ rtds..........................................: 6
+
+ number of legs................................: 22
+ number of legs in incomplete rtds.............: 0
+ overcovers (will become deadheads)............: 0
+ this fleet deadheads..........................: 0
+ other-fleet deadheads.........................: 0
+ ground transport deadheads....................: 0
+ OAG deadheads.................................: 0
+ aircraft changes..............................: 7
+
+ Number of days in complete rotations:
+ Length      Rotations
+ 3 days:      2   100.000 %
+
+ BASE CONSTRAINTS
+
+                 Start      End  Min/Day  Max/Day   MinTot   MaxTot    Value
+ ============  =======  =======  =======  =======  =======  =======  =======
+ Base    FRA       Mon      Mon       -        -        -        -        6
+ Default base: FRA
+
+ BASE PRODUCTION ANALYSIS
+
+ Day              Mon |   total
+ ============    ---- |  ------
+ Base    FRA        6 |       6
+
+ Total production ( FRA).........:    6
+
+ Total production (all bases)....:    6
+ Total production (all variants).:    0
+
+ APC GENERATION INFO
+
+ Generated rotations.......: 295
+ Colgen iterations.........: 77
+ Generation time (sec).....: 1
+ Legality (pass)...........: 8780
+ Legality (fail)...........: 18544
+
+ column generator specific statistics (applies to pricing phase)
+  Rule checks.............................: 3002
+   Failed due to incomplete rotation......: 0
+   Failed due to rule violation...........: 86
+   Failed due to duplicate legs...........: 2376
+  Cost overestimates......................: 0
+  Cost underestimates.....................: 0
+  Legal rotations with cost overestimate..: 0
+  Unattractive legal rotations............: 0
+  Unattractive illegal rotations..........: 0
+   rule rest                                     failure count         98
+
+ APC OPTIMIZATION INFO
+
+ (the global bounds include penalties for uncovered legs, and
+  for base and global constraint violations)
+
+ Global upper bound.............: 6
+ Global lower bound.............: 6
+ Global gap.....................: 0.000000%
+
+ APC JOB IDENTIFICATION
+
+ CARMSYS..............: /carm/proj/matador/test_texttest/CARMSYS
+ CARMUSR..............: /carm/proj/texttest/selftest_data/CARMUSRs/Spiel_user
+ APC library version..: master.alpha-1.7
+ APC library date.....: 05 March 2004 22:25:17
+
+--- end of analysis ---
+Time:  3 s real  1800 ms cpu  0 ms cpu_child  memory:  22.1 Mb
+Delta: 0 s real  0 ms cpu  0 ms cpu_child  memory:   0.0 Mb
+
+SECTION apc_status Solution_5
+--- APC runtime status report ---
+
+Total time:  0:00:03   cpu time:  0:00:01
+APC program (rule set): .umlauf_spiel.geoff.4443
+APC producing solution number: 5
+Active method: column generator
+Active module: overcover to deadhead
+Generated rotations: 295 this loop
+
+--- Analysis of solution (column-generation) ---
+ User..................: geoff
+ Date..................: 03/08/2004, 14:45
+
+ APC program (rule set): .umlauf_spiel.geoff.4443
+ Subplan...............: Spiel  spiel  daily  ji_test_Umlaufspiel.apcgeoff08Mar14:44:52
+ Period................: 19940919 - 19940919
+ Parameter set.........:    with  10  manual changes.
+ Machine...............: forster
+ Method................: column generator
+ Optimizer.............: opt_paqs
+ Coordination optimizer: paqs
+
+ APC COST ANALYSIS 
+
+ APC solution evaluation criterion:
+   uncovered leg count, total cost of crr
+ uncovered legs...............................: 0
+ base constraint excess ......................: 0
+ variant constraint deficit ..................: 0
+ cost function (map_cost_of_crr)..............: apc_cost_of_crr
+ APC total rule cost..........................:        6
+ overcover cost ..............................:        0
+ base constraint excess cost..................:        0
+ global constraint excess cost................:        0
+
+ TOTAL cost...................................:        5
+
+ APC INTERNAL RULE VALUE ANALYSIS
+
+ working days..................................: 6
+ block flying time.............................: 21:05
+ average block per working day.................: 3:30
+ deadhead flying time..........................: 00:00
+ duty hours....................................: 44:25
+ duty per working day..........................: 7:24
+ duty-time/block-time..........................:  2.107
+ duty in longest CRR...........................: 25:05
+ number of CRRs with long duty (> 44:00).......: 0
+
+ average duty per rtd..........................: 7:24
+ longest rtd...................................: 10:15
+ shortest rtd..................................: 2:00
+ standard deviation duty.......................: 2:55
+ number of rtds with long duty (> 10:00).......: 1 
+ number of rtd pairs with long duty (> 18:00)..: 1 
+
+ number of layovers (double rest)..............: 0
+ number of normal rest periods.................: 4
+ average rest time (except layovers)...........: 15:46
+ longest rest time (except layovers)...........: 19:55
+ shortest rest time............................: 11:45
+ short rest times (< 12:00)....................: 1
+ late (> 13:00) to early (< 13:00).............: 0
+
+
+ rotations (crrs) (total)......................: 2
+ incomplete rotations..........................: 0
+ illegal rotations.............................: 0
+ rtds..........................................: 6
+
+ number of legs................................: 22
+ number of legs in incomplete rtds.............: 0
+ overcovers (will become deadheads)............: 0
+ this fleet deadheads..........................: 0
+ other-fleet deadheads.........................: 0
+ ground transport deadheads....................: 0
+ OAG deadheads.................................: 0
+ aircraft changes..............................: 7
+
+ Number of days in complete rotations:
+ Length      Rotations
+ 3 days:      2   100.000 %
+
+ BASE CONSTRAINTS
+
+                 Start      End  Min/Day  Max/Day   MinTot   MaxTot    Value
+ ============  =======  =======  =======  =======  =======  =======  =======
+ Base    FRA       Mon      Mon       -        -        -        -        6
+ Default base: FRA
+
+ BASE PRODUCTION ANALYSIS
+
+ Day              Mon |   total
+ ============    ---- |  ------
+ Base    FRA        6 |       6
+
+ Total production ( FRA).........:    6
+
+ Total production (all bases)....:    6
+ Total production (all variants).:    0
+
+ APC GENERATION INFO
+
+ Generated rotations.......: 295
+ Colgen iterations.........: 77
+ Generation time (sec).....: 1
+ Legality (pass)...........: 8780
+ Legality (fail)...........: 18544
+
+ column generator specific statistics (applies to pricing phase)
+  Rule checks.............................: 3002
+   Failed due to incomplete rotation......: 0
+   Failed due to rule violation...........: 86
+   Failed due to duplicate legs...........: 2376
+  Cost overestimates......................: 0
+  Cost underestimates.....................: 0
+  Legal rotations with cost overestimate..: 0
+  Unattractive legal rotations............: 0
+  Unattractive illegal rotations..........: 0
+   rule rest                                     failure count         98
+
+ APC OPTIMIZATION INFO
+
+ (the global bounds include penalties for uncovered legs, and
+  for base and global constraint violations)
+
+ Global upper bound.............: 6
+ Global lower bound.............: 6
+ Global gap.....................: 0.000000%
+
+ APC JOB IDENTIFICATION
+
+ CARMSYS..............: /carm/proj/matador/test_texttest/CARMSYS
+ CARMUSR..............: /carm/proj/texttest/selftest_data/CARMUSRs/Spiel_user
+ APC library version..: master.alpha-1.7
+ APC library date.....: 05 March 2004 22:25:17
+
+--- end of analysis ---
+Time:  3 s real  1800 ms cpu  10 ms cpu_child  memory:  15.3 Mb
+Delta: 0 s real  0 ms cpu  0 ms cpu_child  memory:   0.0 Mb
+

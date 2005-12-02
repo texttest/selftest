@@ -69,6 +69,16 @@ write_directory_variable:DIAGNOSTICS_OUT
 configuration_file:diagnostics.etab
 [end]
 
+# Failure severity. Determines how differences are reported.
+# Only severity 1 differences will actually fail the test, the rest affect only the details column.
+# Defaults are output/errors 1, performance/memory 2, other 3. Crashes, internal errors, unrunnable tests are always 1
+[failure_severity]
+solution:1
+errors:2
+output:2
+performance:3
+[end]
+
 # Full name. If not present, capitalised extension is used. Must be one word.
 full_name:Matador
 
