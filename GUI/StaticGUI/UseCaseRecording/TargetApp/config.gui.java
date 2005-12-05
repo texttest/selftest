@@ -1,5 +1,5 @@
 # Path to the binary.
-binary:$TEXTTEST_HOME/TargetApp/source/videostore.jar
+binary:$TEXTTEST_HOME/source/videostore.jar
 interpreter:java -jar
 
 use_case_recorder:jusecase
