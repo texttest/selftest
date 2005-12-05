@@ -121,7 +121,7 @@ default:90
 [end]
 
 testoverview_repository:/carm/proj/texttest/selftest_data/TestStateRepository
-testoverview_pages:${TEXTTEST_HOME}
+testoverview_pages:.
 
 # ---------------- Values used by the APC module -------------------
 link_libs:-L$CARMSYS/lib/i386_linux -lxprs -lxprl -lm -ldl -L$CARMSYS/data/crc/i386_linux -lrave_rts -lrave_private -lBasics_STACK  `xml2-config --libs`
@@ -143,6 +143,6 @@ test:grep "OBJ" apclog
 all:cat apclog
 
 [apcinfo]
-profilesDir:${TEXTTEST_HOME}/TargetApp/profiles
+profilesDir:TargetApp/profiles
 profilesDirAsHtml:http://www-oint.carmen.se/Development/Optimization/APC/profiles
 [end]

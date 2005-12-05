@@ -91,7 +91,10 @@ catalogue_process_string:Created process
 
 # List of (generally directories) to copy from the test directory to the write directory
 # because we want to write there.
-copy_test_path:test_tmp
+partial_copy_test_path:test_tmp
+
+[test_data_environment]
+test_tmp:PARTIAL_CARMTMP
 
 # Things to collate
 [collate_file]

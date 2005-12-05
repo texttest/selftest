@@ -1,4 +1,4 @@
-binary:$TEXTTEST_HOME/TargetApp/runstudio.py
+binary:$TEXTTEST_HOME/runstudio.py
 
 config_module:studio
 
