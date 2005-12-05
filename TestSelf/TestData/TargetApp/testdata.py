@@ -21,7 +21,8 @@ def editFiles(dir):
 file = open("readonlyfile")
 print "Found and read my read-only file: ", file.read()
 
-if os.path.isdir("writeabledirs"):
-    editFiles("writeabledirs")
+writedirs = os.getenv("WRITEABLE_DIRS") 
+if os.path.isdir(writedirs):
+    editFiles(writedirs)
 else:
     print "Didn't get given a directory structure to edit!"
