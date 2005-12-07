@@ -34,6 +34,9 @@ output:com_area_handler
 output:Failed to find out default UMASK
 output:LogConnectionListener
 output:/users/[^/]*/texttesttmp/texttest.[^/]*{REPLACE <parent tt app writedir>}
+output:cslDispatcher
+output:colormap entry
+output:gpc_init_change_groups
 
 [unordered_text]
 #output:^Loading
