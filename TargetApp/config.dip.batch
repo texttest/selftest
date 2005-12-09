@@ -7,6 +7,11 @@ default:batch
 self_test:interr
 self_test:reconnectrun
 self_test:small
+[end]
+
+# Create a "historical repository" to test that functionality...
+[batch_result_repository]
+self_test:history
 
 # Add a recognised section with no end marker last, to catch config file bug...
 [gui_entry_overrides]
