@@ -12,3 +12,9 @@ ImportMacro
 
 # Make sure we don't preserve macros and rulesets across several test creations
 ResetRecordChoices
+
+# Test that if the macro loads a solution file, we still find the ruleset correctly
+LoadSolution
+
+# Test we can still run tests that don't have a ruleset
+NoRuleset
