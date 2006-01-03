@@ -1,4 +1,4 @@
-TextTest will write diagnostics in /users/geoff/texttesttmp/texttest.sgegeoff21Nov165214/carmen/matador/LprofRun based on file at /users/geoff/work/master/Testing/Automatic/texttest/log4py.conf
+TextTest will write diagnostics in /users/geoff/texttesttmp/texttest.sgegeoff16Dec145131/carmen/matador/LprofRun based on file at /users/geoff/work/master/Testing/Automatic/texttest/log4py.conf
 Using Application Matador, checkout /carm/proj/texttest/selftest_data
 Note: Running with Diagnostics on, so performance checking is disabled!
 Submitting Rule Builds for Matador test-suite TargetApp to SGE queues
@@ -6,18 +6,49 @@ Submitting Rule Builds for Matador test-suite TargetApp to SGE queues
 Submitting Matador test-suite TargetApp to SGE queues
   Submitting Matador test-suite ArtificialUser to SGE queues
     Submitting Matador test-case generate_in_subperiod to SGE queue short, requesting model=Opteron*,carmarch="*i386_linux*"
-    Evaluating Matador test-case generate_in_subperiod (on assignedposition.cas,crewmembers.cas,inputlegs.cas,inputrosters.cas,inputtrips.cas,outputrosters.cas,parameters.cas,catalogue.cas,errors.cas,lprof.cas,output.cas,solution.cas)
-    Matador test-case generate_in_subperiod FAILED on forestville : new results in assignedposition,outputrosters,lprof, differences in parameters,catalogue
+    Evaluating Matador test-case generate_in_subperiod (on catalogue.cas,errors.cas,lprof.cas,output.cas,solution.cas,assignedposition.cas,crewmembers.cas,inputlegs.cas,inputrosters.cas,inputtrips.cas,outputrosters.cas,parameters.cas)
+    Matador test-case generate_in_subperiod FAILED on schefferville : new results in lprof,assignedposition,outputrosters, differences in catalogue,parameters
     View details(v), Save(s) or continue(any other key)?
+------------------ Differences in catalogue --------------------
+2a3,4
+> ----gprof.output
+> ----prof.3370
 ------------------ Differences in parameters --------------------
 8c8
 <  Parameter break_cost_unit left as default 1
 ---
 >  Parameter break_cost_unit left as default -1
------------------- Differences in catalogue --------------------
-2a3,4
-> ----gprof.output
-> ----prof.12046
+------------------ New result in lprof --------------------
+Flat profile, 35 samples in total
+
+ 31.4   31.4   _fini
+ 22.9   54.3   __open_nocancel
+ 14.3   68.6   __write_nocancel
+  8.6   77.1   __GI_times
+  5.7   82.9   __GI___unlink
+  5.7   88.6   __waitpid_nocancel
+  2.9   91.4   __GI_memset
+  2.9   94.3   __static_initialization_and_destruction_0
+  2.9   97.1   D__topmoduleMnext_trip_start
+  2.9  100.0   CarmenTime::Year::inqLength const
+  0.0  100.0   CarmenTime::Date::inqYearAndDay const
+  0.0  100.0   CarmenTime::Date::output const
+  0.0  100.0   RRLString::RRLString
+  0.0  100.0   RRLParser::~RRLParser
+  0.0  100.0   RRLParser::RRLParser
+  0.0  100.0   CarmenTime::Date::inqYear const
+  0.0  100.0   CarmenTime::AbsTime::output const
+  0.0  100.0   RRLParser::readNextRecordLine
+  0.0  100.0   RRLParser::getNextRecord
+  0.0  100.0   TagEntry::TagEntry
+  0.0  100.0   Matador::run
+  0.0  100.0   Matador::runMethods
+  0.0  100.0   Filer::saveFile
+  0.0  100.0   Filer::loadFile
+  0.0  100.0   ImproveMethodGenerator::runMaster
+  0.0  100.0   ImproveMethodGenerator::generate
+  0.0  100.0   system
+  0.0  100.0   mkstemp
 ------------------ New result in assignedposition --------------------
 map_crew_assigned_position : crew_assigned_position NOT trip-dependent
 Regular position For all trips, crew ARKE 85868 in pos P
@@ -63,35 +94,4 @@ Rotation output, requirement : BOSERUP
 (C)[  755  1C 2001-04-16T07:00  CPH  CPH 2001-04-16T14:00 BOSERUP 85215
 (C)[  444  6C 2001-04-18T10:25  OSL  OSL 2001-04-19T09:55 C¦TQ3<2 ]
 (C)[  756  1C 2001-04-19T11:25  CPH  CPH 2001-04-19T14:00 BOSERUP 85215 C ] BOSERUP 85215
------------------- New result in lprof --------------------
-Flat profile, 52 samples in total
-
- 25.0   25.0   _fini
- 21.2   46.2   __GI_times
- 11.5   57.7   __write_nocancel
-  5.8   63.5   _int_malloc
-  3.8   67.3   __GI___munmap
-  3.8   71.2   __waitpid_nocancel
-  3.8   75.0   __mmap
-  1.9   76.9   __GI___unlink
-  1.9   78.8   __GI_memset
-  1.9   80.8   __brk
-  1.9   82.7   __cfree
-  1.9   84.6   __close_nocancel
-  1.9   86.5   std::_Rb_tree<Task const*, Task const*, std::_Identity<Task const*>, less_task_dep, std::allocator<Task const*> >::find
-  1.9   88.5   __open_nocancel
-  1.9   90.4   __pthread_mutex_lock_internal
-  1.9   92.3   __read_nocancel
-  1.9   94.2   std::_Rb_tree<boost::shared_ptr<Requirement>, std::pair<boost::shared_ptr<Requirement> const, int>, std::_Select1st<std::pair<boost::shared_ptr<Requirement> const, int> >, less_req_ptr, std::allocator<std::pair<boost::shared_ptr<Requirement> const, int> > >::find
-  1.9   96.2   do_system
-  1.9   98.1   ConcreteTask::getRequirement const
-  1.9  100.0   std::_Rb_tree<Requirement*, std::pair<Requirement* const, Leg const*>, std::_Select1st<std::pair<Requirement* const, Leg const*> >, std::less<Requirement*>, std::allocator<std::pair<Requirement* const, Leg const*> > >::find const
-  0.0  100.0   RRLParser::readNextRecordLine
-  0.0  100.0   RRLParser::getNextRecord
-  0.0  100.0   RRLParser::~RRLParser
-  0.0  100.0   TaskHandle::output const
-  0.0  100.0   CasSolution::canAssignToLegs const
-  0.0  100.0   KeywordTask::getNextKeywordTask const
-  0.0  100.0   ConcreteTask::output const
-  0.0  100.0   CompositeTask::outputFull const
     Save(s) or continue(any other key)?

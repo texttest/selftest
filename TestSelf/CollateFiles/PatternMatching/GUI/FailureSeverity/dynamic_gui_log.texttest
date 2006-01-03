@@ -4,7 +4,7 @@ Mapping tests in tree view...
 
 Viewing test GEN test-suite TargetApp
 Adding file testsuite.gen under heading 'Definition Files', coloured white
-Top Window title set to TextTest dynamic GUI (tests started at 24Nov11:16:20)
+Top Window title set to TextTest dynamic GUI (tests started at 16Dec16:59:07)
 
 Waiting for application event 'completion of test actions' to occur.
 Redrawing test GenerateNewFiles coloured white
@@ -21,6 +21,7 @@ Adding file created_2.gen under heading 'New Files', coloured red
 Adding file generated_first.gen under heading 'Comparison Files', coloured green
 Adding file generated_second.gen under heading 'Comparison Files', coloured green
 Adding file generated_third.gen under heading 'Comparison Files', coloured green
+Adding file output.gen under heading 'Missing Files', coloured red
 ---------- Text Info Window ----------
 Test FAILED :
 ------------------ New result in catalogue --------------------
@@ -35,6 +36,12 @@ The following new files/directories were created:
 created_1.dump
 ------------------ New result in created_2 --------------------
 created_2.dump
+------------------ Missing result in output --------------------
+Generating generated_first.dump
+Generating generated_second.dump
+Generating generated_third.dump
+Generating created_1.dump
+Generating created_2.dump
 --------------------------------------
 
 Creating notebook page for 'Viewing'
@@ -43,7 +50,29 @@ Creating check button for switch 'Show differences where present' (checked)
 
 Creating notebook page for 'Saving'
 Creating entry for option 'Version to save'
-Creating entry for option 'Save single file' (drop-down list containing ['', 'catalogue', 'created_1', 'created_2'])
+Creating entry for option 'Save single file' (drop-down list containing ['', 'catalogue', 'created_1', 'created_2', 'output'])
 Creating check button for switch 'Replace successfully compared files also'
+
+'select file' event created with arguments 'output.gen'
+Viewing file /users/geoff/texttesttmp/texttestgeoff16Dec165905/TestSelf/CollateFiles/PatternMatching/GUI/FailureSeverity/TargetApp/GenerateNewFiles/output.gen using 'xemacs', refresh set to 0
+
+Terminating process that views and edits test files...
+
+'save' event created with arguments ''
+Saving GEN test-case GenerateNewFiles - version , exactness 1
+Redrawing test GenerateNewFiles coloured green
+Adding file catalogue.gen under heading 'Comparison Files', coloured green
+Adding file created_1.gen under heading 'Comparison Files', coloured green
+Adding file created_2.gen under heading 'Comparison Files', coloured green
+Adding file generated_first.gen under heading 'Comparison Files', coloured green
+Adding file generated_second.gen under heading 'Comparison Files', coloured green
+Adding file generated_third.gen under heading 'Comparison Files', coloured green
+---------- Text Info Window ----------
+Test succeeded
+--------------------------------------
+
+Creating notebook page for 'Viewing'
+Creating check button for switch 'Include Run-dependent Text'
+Creating check button for switch 'Show differences where present' (checked)
 
 'quit' event created with arguments ''

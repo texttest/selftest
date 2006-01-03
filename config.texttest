@@ -63,8 +63,11 @@ output:BadApplication{WORD -1}
 output:Reconnecting to test results{WORD -1}
 output:Faking start
 output:not a core dump{WORD 1}
+output:test-case.* on .*new results.*missing results.*differences{WORD -13}
 output:test-case.* on .*new results.*differences{WORD -9}
+output:test-case.* on .*missing results.*differences{WORD -9}
 output:test-case.* on .*new results{WORD -6}
+output:test-case.* on .*missing results{WORD -6}
 output:test-case.* on .*differences{WORD -5}
 output:test-case.* on .*:${WORD -2}
 output:second to retry
@@ -104,6 +107,8 @@ errors:TransSocketUNIX
 errors:gtk.Combo
 errors:Import failed
 errors:Warning: Tried to connect to session manager
+*gui_log:{INTERNAL writedir}{REPLACE <test write dir>}
+dynamic_gui_log:[^/]*[0-9][0-9][A-Z][a-z][a-z][0-9][0-9][0-9][0-9][0-9][0-9]{REPLACE <target tmp dir>}
 # Hard to rely on exactly how much faster things are...
 dynamic_gui_log:% faster{WORD 3}
 dynamic_gui_log:Running on{WORD -1}

@@ -1,12 +1,12 @@
-TextTest will write diagnostics in /users/geoff/texttesttmp/texttest.sgegeoff17Nov172511/carmen/APC/CoreDump based on file at /users/geoff/work/master/Testing/Automatic/texttest/log4py.conf
+TextTest will write diagnostics in /users/geoff/texttesttmp/texttest.sgegeoff16Dec153130/carmen/APC/CoreDump based on file at /users/geoff/work/master/Testing/Automatic/texttest/log4py.conf
 Using Application APC, version crash, checkout /users/geoff/work/master
 Submitting Rule Builds for APC test-suite TargetApp to SGE queues
   Submitting Rule Builds for APC test-suite sk_test9scripts to SGE queues
 Submitting APC test-suite TargetApp to SGE queues
   Submitting APC test-suite sk_test9scripts to SGE queues
     Submitting APC test-case no_dh_single_base_cg to SGE queue short, requesting osversion=RHEL3,carmarch="*i386_linux*"
-    Evaluating APC test-case no_dh_single_base_cg (on all.apc,script_errors.apc,solution.apc,status.apc,warnings.apc)
-    APC test-case no_dh_single_base_cg CRASHED (Segmentation fault in raise) on abbeville : new results in all,script_errors, differences in solution,status,warnings
+    Evaluating APC test-case no_dh_single_base_cg (on script_errors.apc,status.apc,warnings.apc,all.apc,solution.apc)
+    APC test-case no_dh_single_base_cg CRASHED (Segmentation fault in raise) on morafenobe : new results in script_errors,all, missing results for solution, differences in status,warnings
     View details(v), Save Version crash(1), Save(s) or continue(any other key)?
 Program terminated with signal 11, Segmentation fault.
 Stack trace from gdb :
@@ -14,39 +14,6 @@ raise
 apc_pac_setup 
 apc_setup 
 main 
------------------- Differences in solution --------------------
-1,170c1
-< SECTION apc_oags Solution_3
-< 147;APC_SEGMENT_KEY_1;APC_SEGMENT;APC_SEGMENT_TYPE;FLIGHT_CARRIER;FLIGHT_NUMBER;FLIGHT_DEP_AIRP;FLIGHT_ARR_AIRP;FLIGHT_DATE;FLIGHT_DEP_TIME;FLIGHT_BLOCK_TIME;FLIGHT_IATA;CUSTOM_AC_TYPE;FLIGHT_SUFFIX;FLIGHT_LEG_NO;TASK_SUB_CODE;ONWARD_SEGMENT_KEY;FLIGHT_SERVICE_TYPE;BOOKED_CREW_VECTOR_LENGTH;BOOKED_CREW_VECTOR;AC_OWNER;FLIGHT_ONW_FLIGHT_NUM;PASSENGER_TERMINAL_DEPARTURE_STATION;PASSENGER_TERMINAL_ARRIVAL_STATION;FIRST_CLASS_CAP;BUSINESS_CLASS_CAP;ECONOMY_CLASS_CAP;FOURTH_CLASS_CAP;COCKPIT_CREW_E
-MPLOYER;FLIGHT_GDOR;
-< SECTION ground_transport Solution_3
-< 147;APC_SEGMENT_KEY_1;APC_SEGMENT;APC_SEGMENT_TYPE;FLIGHT_CARRIER;FLIGHT_NUMBER;FLIGHT_DEP_AIRP;FLIGHT_ARR_AIRP;FLIGHT_DATE;FLIGHT_DEP_TIME;FLIGHT_BLOCK_TIME;FLIGHT_IATA;CUSTOM_AC_TYPE;FLIGHT_SUFFIX;FLIGHT_LEG_NO;TASK_SUB_CODE;ONWARD_SEGMENT_KEY;FLIGHT_SERVICE_TYPE;BOOKED_CREW_VECTOR_LENGTH;BOOKED_CREW_VECTOR;AC_OWNER;FLIGHT_ONW_FLIGHT_NUM;PASSENGER_TERMINAL_DEPARTURE_STATION;PASSENGER_TERMINAL_ARRIVAL_STATION;FIRST_CLASS_CAP;BUSINESS_CLASS_CAP;ECONOMY_CLASS_CAP;FOURTH_CLASS_CAP;COCKPIT_CREW_E
-MPLOYER;FLIGHT_GDOR;
-< SECTION apc_chains Solution_3
-< 142;APC_CHAIN_NUMBER;APC_CHAIN_LEG_COUNT;APC_CHAIN_LRC_FLAG;APC_CHAIN_CREW_VECTOR_LEN;APC_CHAIN_CREW_VECTOR;APC_CHAIN_CREW_ID;APC_CHAIN_CREW_POS;APC_CHAIN_HOMEBASE;APC_CHAIN_CATEGORY;APC_CHAIN_MAIN_VARIANT;
-< 144;APC_SEGMENT_PTR;APC_SEGMENT_OFFFSET;APC_SEGMENT_START_OFFSET;APC_SEGMENT_END_OFFSET;APC_SEGMENT_DUTY_DESIGNATOR;APC_SEGMENT_DUTY_TYPE;APC_SEGMENT_BASE;APC_SEGMENT_BIT_FIELD;APC_SEGMENT_CUSTOMER_INDEX;
-< 143;10515;6;C;7;1,0,0,0,0,0,0,;;-1;CPH;;-1;
-< 145;23729;0;0;0;A;;;0x40;0;
-< 145;23760;0;0;0;A;;;0x40;0;
-< 145;20651;0;0;0;A;;;0x40;0;
-< 145;16088;0;0;0;A;;;0x40;0;
-< 145;19202;0;0;0;A;;;0x40;0;
-< 145;10208;0;0;0;A;;;0x40;0;
-< 143;10516;4;C;7;1,0,0,0,0,0,0,;;-1;CPH;;-1;
-< 145;20578;0;0;0;A;;;0x40;0;
-< 145;20613;0;0;0;A;;;0x40;0;
-< 145;23347;0;0;0;A;;;0x40;0;
-< 145;23373;0;0;0;A;;;0x40;0;
-< 143;10517;4;C;7;1,0,0,0,0,0,0,;;-1;CPH;;-1;
-< 145;19731;0;0;0;A;;;0x40;0;
-< 145;19755;0;0;0;A;;;0x40;0;
-< 145;20650;0;0;0;A;;;0x40;0;
-< 145;20721;0;0;0;A;;;0x40;0;
-< 143;10518;5;C;7;1,0,0,0,0,0,0,;;-1;CPH;;-1;
-< 145;13686;0;0;0;A;;;0x62;0;
-< 145;13715;0;0;0;A;;;0x40;0;
-< 145;6784;0;0;0;A;;;0x40;0;
-< 145;12991;0;0;0;A;;;0x62;0;
 ------------------ Differences in status --------------------
 97,943d96
 < SECTION apc_status Solution_warning_1
@@ -109,14 +76,30 @@ MPLOYER;FLIGHT_GDOR;
 < 
 < ==================================
 < Cost element values for subchain :
+------------------ New result in script_errors --------------------
+***** ERROR ***** 
+APC exited with error code 139 <segmentation fault>
+ 
+*** Keeping the logfiles in $APC_TEMP_DIR ***
+*** disk space available for temporary files ***
+Filesystem           1K-blocks      Used Available Use% Mounted on
+/dev/sda2             16128668     61764  15247592   1% /tmp
+/dev/sda2             16128668     61764  15247592   1% /tmp
+/dev/sda6              1004024    361316    591704  38% /var
+*** Saving the APC executable ***
+*** disk space available for temporary files ***
+Filesystem           1K-blocks      Used Available Use% Mounted on
+/dev/sda2             16128668     68876  15240480   1% /tmp
+/dev/sda2             16128668     68876  15240480   1% /tmp
+/dev/sda6              1004024    361316    591704  38% /var
 ------------------ New result in all --------------------
 Time:  0 s real  10 ms cpu  0 ms cpu_child  memory:   4.5 Mb
 Delta: 0 s real  0 ms cpu  0 ms cpu_child  memory:   4.5 Mb
-/carm/proj/texttest/selftest_data/APC_CARMSYS/sk_test9scripts_tmp.apc/crc/rule_set/APC/i386_linux/.APC_fd54_DC9_no_reference.geoff.5308
+/carm/proj/texttest/selftest_data/APC_CARMSYS/sk_test9scripts_tmp.apc/crc/rule_set/APC/i386_linux/.APC_fd54_DC9_no_reference.geoff.13170
 -v 1
--R /nfs/local/apc_temp/APC_ji_single_base_CPH_spl_5308/APC_rot
+-R /nfs/local/apc_temp/APC_ji_single_base_CPH_spl_13170/APC_rot
 -U geoff
-executable name is [/carm/proj/texttest/selftest_data/APC_CARMSYS/sk_test9scripts_tmp.apc/crc/rule_set/APC/i386_linux/.APC_fd54_DC9_no_reference.geoff.5308]
+executable name is [/carm/proj/texttest/selftest_data/APC_CARMSYS/sk_test9scripts_tmp.apc/crc/rule_set/APC/i386_linux/.APC_fd54_DC9_no_reference.geoff.13170]
 carmsys: /carm/proj/texttest/selftest_data/APC_CARMSYS
 carmtmp: /carm/proj/texttest/selftest_data/APC_CARMSYS/sk_test9scripts_tmp.apc
 
@@ -128,7 +111,7 @@ carmtmp: /carm/proj/texttest/selftest_data/APC_CARMSYS/sk_test9scripts_tmp.apc
 canonicalize called
 _init_segment_duty_types: Cannot retrive resource CREW_DUTY_TYPE_ETAB_NAME
 
-Error! Pid:5355  Thu Nov 17 17:27:01 2005  User:geoff
+Error! Pid:13227  Fri Dec 16 15:31:49 2005  User:geoff
 Error! File:/carm/master/Data/duty_type/DutyType.cc  Line:202
 Error! _register_segment_duty_type: Registering new duty type  in category 1.
 
@@ -140,22 +123,39 @@ Crew pos 4 = AS
 Crew pos 5 = AH
 Crew pos 6 = FR
 flight plan name and version: F36  MCS_W01  V1112_0122  APC_ji_single_base_CPH_spl
------------------- New result in script_errors --------------------
-***** ERROR ***** 
-APC exited with error code 139 <segmentation fault>
- 
-*** Keeping the logfiles in $APC_TEMP_DIR ***
-*** disk space available for temporary files ***
-Filesystem           1K-blocks      Used Available Use% Mounted on
-/dev/sda2             16513960     44660  15630440   1% /tmp
-/dev/sda2             16513960     44660  15630440   1% /tmp
-/dev/sda6              1032072    332984    646660  34% /var
-*** Saving the APC executable ***
-*** disk space available for temporary files ***
-Filesystem           1K-blocks      Used Available Use% Mounted on
-/dev/sda2             16513960     51772  15623328   1% /tmp
-/dev/sda2             16513960     51772  15623328   1% /tmp
-/dev/sda6              1032072    332984    646660  34% /var
+------------------ Missing result in solution --------------------
+SECTION apc_oags Solution_3
+147;APC_SEGMENT_KEY_1;APC_SEGMENT;APC_SEGMENT_TYPE;FLIGHT_CARRIER;FLIGHT_NUMBER;FLIGHT_DEP_AIRP;FLIGHT_ARR_AIRP;FLIGHT_DATE;FLIGHT_DEP_TIME;FLIGHT_BLOCK_TIME;FLIGHT_IATA;CUSTOM_AC_TYPE;FLIGHT_SUFFIX;FLIGHT_LEG_NO;TASK_SUB_CODE;ONWARD_SEGMENT_KEY;FLIGHT_SERVICE_TYPE;BOOKED_CREW_VECTOR_LENGTH;BOOKED_CREW_VECTOR;AC_OWNER;FLIGHT_ONW_FLIGHT_NUM;PASSENGER_TERMINAL_DEPARTURE_STATION;PASSENGER_TERMINAL_ARRIVAL_STATION;FIRST_CLASS_CAP;BUSINESS_CLASS_CAP;ECONOMY_CLASS_CAP;FOURTH_CLASS_CAP;COCKPIT_CREW_EMP
+LOYER;FLIGHT_GDOR;
+SECTION ground_transport Solution_3
+147;APC_SEGMENT_KEY_1;APC_SEGMENT;APC_SEGMENT_TYPE;FLIGHT_CARRIER;FLIGHT_NUMBER;FLIGHT_DEP_AIRP;FLIGHT_ARR_AIRP;FLIGHT_DATE;FLIGHT_DEP_TIME;FLIGHT_BLOCK_TIME;FLIGHT_IATA;CUSTOM_AC_TYPE;FLIGHT_SUFFIX;FLIGHT_LEG_NO;TASK_SUB_CODE;ONWARD_SEGMENT_KEY;FLIGHT_SERVICE_TYPE;BOOKED_CREW_VECTOR_LENGTH;BOOKED_CREW_VECTOR;AC_OWNER;FLIGHT_ONW_FLIGHT_NUM;PASSENGER_TERMINAL_DEPARTURE_STATION;PASSENGER_TERMINAL_ARRIVAL_STATION;FIRST_CLASS_CAP;BUSINESS_CLASS_CAP;ECONOMY_CLASS_CAP;FOURTH_CLASS_CAP;COCKPIT_CREW_EMP
+LOYER;FLIGHT_GDOR;
+SECTION apc_chains Solution_3
+142;APC_CHAIN_NUMBER;APC_CHAIN_LEG_COUNT;APC_CHAIN_LRC_FLAG;APC_CHAIN_CREW_VECTOR_LEN;APC_CHAIN_CREW_VECTOR;APC_CHAIN_CREW_ID;APC_CHAIN_CREW_POS;APC_CHAIN_HOMEBASE;APC_CHAIN_CATEGORY;APC_CHAIN_MAIN_VARIANT;
+144;APC_SEGMENT_PTR;APC_SEGMENT_OFFFSET;APC_SEGMENT_START_OFFSET;APC_SEGMENT_END_OFFSET;APC_SEGMENT_DUTY_DESIGNATOR;APC_SEGMENT_DUTY_TYPE;APC_SEGMENT_BASE;APC_SEGMENT_BIT_FIELD;APC_SEGMENT_CUSTOMER_INDEX;
+143;10515;6;C;7;1,0,0,0,0,0,0,;;-1;CPH;;-1;
+145;23729;0;0;0;A;;;0x40;0;
+145;23760;0;0;0;A;;;0x40;0;
+145;20651;0;0;0;A;;;0x40;0;
+145;16088;0;0;0;A;;;0x40;0;
+145;19202;0;0;0;A;;;0x40;0;
+145;10208;0;0;0;A;;;0x40;0;
+143;10516;4;C;7;1,0,0,0,0,0,0,;;-1;CPH;;-1;
+145;20578;0;0;0;A;;;0x40;0;
+145;20613;0;0;0;A;;;0x40;0;
+145;23347;0;0;0;A;;;0x40;0;
+145;23373;0;0;0;A;;;0x40;0;
+143;10517;4;C;7;1,0,0,0,0,0,0,;;-1;CPH;;-1;
+145;19731;0;0;0;A;;;0x40;0;
+145;19755;0;0;0;A;;;0x40;0;
+145;20650;0;0;0;A;;;0x40;0;
+145;20721;0;0;0;A;;;0x40;0;
+143;10518;5;C;7;1,0,0,0,0,0,0,;;-1;CPH;;-1;
+145;13686;0;0;0;A;;;0x62;0;
+145;13715;0;0;0;A;;;0x40;0;
+145;6784;0;0;0;A;;;0x40;0;
+145;12991;0;0;0;A;;;0x62;0;
+145;23686;0;0;0;A;;;0x40;0;
 <See also tkdiff window for details of status>
     Save Version crash(1), Save(s) or continue(any other key)?
-Killed process 31393 with signal 2
+Killed process 11640 with signal 2
