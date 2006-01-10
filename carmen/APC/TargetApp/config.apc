@@ -50,6 +50,8 @@ log_file:status
 unsaveable_version:i386_linux
 unsaveable_version:master
 
+extra_version:boost
+
 discard_file:output
 discard_file:errors
 
@@ -123,7 +125,9 @@ default:90
 default:TestStateRepository
 [end]
 
-testoverview_pages:.
+[historical_report_location]
+default:.
+[end]
 
 # ---------------- Values used by the APC module -------------------
 link_libs:-L$CARMSYS/lib/i386_linux -lxprs -lxprl -lm -ldl -L$CARMSYS/data/crc/i386_linux -lrave_rts -lrave_private -lBasics_STACK  `xml2-config --libs`
