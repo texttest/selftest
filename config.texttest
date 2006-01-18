@@ -151,6 +151,7 @@ partial_copy_test_path:texttesttmp
 [test_data_environment]
 TargetApp:TEXTTEST_HOME
 texttesttmp:TEXTTEST_TMP
+personaldir:TEXTTEST_PERSONAL_CONFIG
 [end]
 
 # List of constant input files to create links to. Will copy them on Windows as symbolic links
@@ -158,6 +159,7 @@ texttesttmp:TEXTTEST_TMP
 link_test_path:config
 link_test_path:FakeBugcli/bugcli
 link_test_path:FakeBugcli/bugcli.py
+link_test_path:personaldir
 
 # Tell it that we want to track what files are created
 create_catalogues:true
