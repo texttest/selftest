@@ -1,0 +1,25 @@
+NormalRun
+NormalRunSparc
+NormalRunPowerpc
+LocalRun
+# Check we report costs differences correctly
+CostDifferent
+
+RebuildRuleset
+CreateCarmTmp
+RunDebug
+RunDebugPlain
+ExtractLogs
+CoreDump
+# Make sure Lprof and APC work together...
+RunLprof
+
+# Check this action works correctly
+ViewApcLog
+
+# Make sure quit button kills test and cleans correctly
+KillTest
+
+# Make sure APC works OK when nightjob terminates, some code in carmen.py for this...
+NightjobTerminate
+
