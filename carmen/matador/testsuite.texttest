@@ -1,105 +1,16 @@
-# Check that we can run a combination of applications with static and dynamic rulesets
-StaticRuleset
+# Features to do with just running the tests
+Running
 
-# Plotting a basic graph (command line)
+# Rave compilation: most tests for this are under here
+RaveCompile
+
+# Various whizzy GUI things
+StaticGUI
+
+# Plotting graphs
 PlotGraph
 
-# Make sure it works from the static GUI
-PlotGraphStaticGUI
-PlotGraphVersions
-
-# Check we can plot a graph with version IDs after reconnecting
-PlotGraphReconnect
-
-# Check GUI doesn't hang on excessive horizontal range
-PlotGraphRangeError
-
-# No binary file
-BadCARMSYS
-
-# Check we can switch checkout for matador tests
-BadCheckout
-
-# Make sure script files appear in the static GUI if present
-ScriptFileStaticGUI
-
-# Re-adding test matador_2
-AddTest
-
-# Check we can infer a test name from a subplan name
-AddTestInferName
-
-# Adding a static and dynamic user
-AddUsers
-
-# Check we can add a suite with CARMDATA in it
-AddCarmData
-
-# Check that we can load a plan into Studio!
-StartStudio
-
-# Need to test the ability to isolate new-style CARMDATA dependent CARMUSRs
-IsolateCarmData
-
-# Make sure we link to the etables under the localplan
-LinkLocalPlanEtab
-
-# Check we don't get the cost analysis for seniority cases
-SeniorityCostChange
-
-# Test the feature selection feature
-FeatureSelect
-
-# Make sure the rave configuration works...
-RaveRun
-
-# Test for rulesets failing to compile
-BadRaveRun
-
-# Check we can build rulesets locally
-LocalRaveRun
-
-# See what happens when rave compilation fails in C-compilation
-BadRaveRunCCompile
-
-# Check that -build option works correctly, when build succeeds and fails
+# -build and -buildl
 BuildCode
-BuildFails
 
-# Check we only get single remote builds...
-RaveBuildWorks
-
-# Check that failures in one application cancel others
-RaveBuildFails
-
-# Check that the raveparameters file works correctly
-RaveParameterOverride
-# Test to make sure we can run 2 suites without crashing...
-RaveParam2Suites
-
-# Check that -lprof works, at least in some sense
-LprofRun
-
-# Check that 'compiling' personal rule sets works OK.
-PersonalRuleSet
-
-# Make sure that quitting during rule compilation works correctly
-KillRuleCompilation
-
-# Check that sensible things happen if the nightjob is terminated while rave compilation is happening
-NightjobTerminateRave
-
-# There to check extra_version for rave compilations
-RaveRunParallel
-
-# Check that rule compilations with parallel test suite are handled correctly when rules don't build
-BadRaveRunParallel
-
-# Calculates a KPI using two testcases.
-CalculateKPI
-
-# Killing matador test - should clean up tmp directories
-KillTest
-
-# Make sure collection tries to collect only...
-CollectNothing
+Miscellaneous

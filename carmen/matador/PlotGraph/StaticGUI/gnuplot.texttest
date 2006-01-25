@@ -1,0 +1,9 @@
+set ylabel 'cost of plan'
+set xlabel 'CPU time (min)'
+set time
+set title "Matador (in user ArtificialUser) : Test generate_in_subperiod"
+set xtics border nomirror norotate
+set ytics border nomirror norotate
+set border 3
+set xrange [0:];
+plot './ArtificialUser/generate_in_subperiod/framework_tmp/plot-std-result'  title "std result"  with linespoints
