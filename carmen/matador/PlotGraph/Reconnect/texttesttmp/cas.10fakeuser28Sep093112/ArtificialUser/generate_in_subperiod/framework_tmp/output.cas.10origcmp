@@ -1,0 +1,2527 @@
+RULESET:
+
+
+-- Matador::run --
+
+
+Parser: Reading file /config/crew_categories, section headed by 'crew_cat'
+Loaded Crew Category : C
+Loaded Crew Category : P
+Loaded Crew Category : S
+Loaded Crew Category : AP
+Loaded Crew Category : AS
+Loaded Crew Category : AH
+Loaded Crew Category : R
+Loaded Crew Category : I
+Loaded Crew Category : AI
+Loaded Crew Category : TR
+
+Filer: Loading subplan-specific files
+Parser: Reading file /APC_FILES/problems
+Loaded Crew Vector : 1/1/0//0/0/0/0/1/0/0/0/0
+Set period of problem to 2001-03-20T00:00 -> 2001-05-10T23:59
+
+Loading rule set Ruleset_8
+
+Parser: Reading file /APC_FILES/rules, section headed by 'SECTION rules'
+Parser: Reading file /APC_FILES/rules, section headed by '<PARAMETERS>'
+Parser: Reading file /APC_FILES/rules, section headed by '<SETS>'
+Parser: Reading file /APC_FILES/bases
+Parser: Reading file /APC_FILES/flights
+Parser: Reading file /APC_FILES/trips
+Parser: Reading file /APC_FILES/assignments
+23 subplan rule parameters have been set.
+0 subplan rules have been switched.
+
+Analysing RAVE to establish trip-independent crew positions...
+Analysing RAVE to set up trip-independent values for qualification TQ1
+Analysing RAVE to set up trip-independent values for qualification TQ2
+Analysing RAVE to set up trip-independent values for qualification TQ3
+  Number of active unassigned tasks   :   750
+  Number of active pre-assigned tasks :     0
+RUN INFO
+  Active module............: Matador
+  Rule Set.................: Ruleset_8
+  Planning period..........: [ 2001-03-20T00:00, 2001-05-10T23:59 ]
+  Number of Input trips....: 759
+  Number of Input legs.....: 3485
+  dNumber of Crew Members...: 12
+  Number of Rosters........: 4
+
+
+
+SOLUTION ANALYSIS for input solution:
+-------------------------------------
+There are no crew which have illegal rosters.
+
+The following trips have been illegally assigned : 
+[    0  9C 2001-03-31T18:35  OSL  OSL 2001-04-02T17:35 C¦TQ3<2 ], ARKE 85868(C)
+[   10  8C 2001-04-01T11:20  ARN  ARN 2001-04-02T16:10 P¦TQ2<2 ], BENBERG 86122(P)
+[   13  4C 2001-04-01T12:20  ARN  ARN 2001-04-01T20:05 C/P¦TQ1<2 ], BOSERUP 85215(P)
+[  140  6C 2001-04-05T13:00  CPH  CPH 2001-04-07T08:25 C/P¦TQ3<2 ], BOSERUP 85215(C), LOHSE 85119(P)
+[  145 10C 2001-04-05T16:45  CPH  CPH 2001-04-07T11:50 C/P¦TQ2<2/TQ3<2 ], ARKE 85868(P), BENBERG 86122(C)
+[  286  4C 2001-04-11T11:40  ARN  ARN 2001-04-11T20:05 C/P¦TQ1<2 ], BOSERUP 85215(C), LOHSE 85119(P)
+There are no legs which have been illegally assigned.
+There are no hard global constraints which have been violated.
+
+----------------------- Cost Analysis -----------------------
+
+  Assignment percentage...............................: 2
+
+  Total cost of plan..................................: 154585
+
+  Total cost of rosters...............................:    182
+  Total cost of unassigned slots......................: 121400
+  Total cost of unassigned crew.......................:   8000
+  Total cost of broken trip constraints...............:   3003
+  Total cost of broken leg constraints................:      0
+  Total cost of broken global constraints.............:      0
+
+  Number of crew with illegal rosters.................: 0
+  Number of broken hard trip constraints..............: 6
+  Number of broken hard leg constraints...............: 0
+  Number of broken hard global constraints............: 0
+
+--------------------- Numerical Analysis ---------------------
+
+  Number of crew (total)..............................: 12
+  Number of crew (assigned)...........................:  4
+  Number of crew (unassigned).........................:  8
+
+  Number of trips (total).............................: 750
+  Number of trips (assigned)..........................:   9
+  Number of trips (unassigned)........................: 741
+
+  Number of slots (total).............................: 1240
+  Number of slots (assigned)..........................:   26
+  Number of slots (unassigned)........................: 1214
+
+  Number of slots in position C (total)...............: 584
+  Number of slots in position C (assigned)............:  19
+  Number of slots in position C (unassigned)..........: 565
+
+  Number of slots in position P (total)...............: 621
+  Number of slots in position P (assigned)............:   7
+  Number of slots in position P (unassigned)..........: 614
+
+  Number of slots in position I (total)...............: 35
+  Number of slots in position I (assigned)............:  0
+  Number of slots in position I (unassigned)..........: 35
+
+  Number of broken soft trip constraints..............: 3
+  Number of broken soft leg constraints...............: 0
+  Number of broken soft global constraints............: 0
+
+-------------------- Block Time Analysis --------------------
+
+  Block time (total)..................................: 10945:15
+  Block time (assigned)...............................:   175:40
+  Block time (unassigned).............................: 10769:35
+
+  Block time for position C (total)...................: 5511:50
+  Block time for position C (assigned)................:  127:10
+  Block time for position C (unassigned)..............: 5384:40
+
+  Block time for position P (total)...................: 5233:00
+  Block time for position P (assigned)................:   48:30
+  Block time for position P (unassigned)..............: 5184:30
+
+  Block time for position I (total)...................: 200:25
+  Block time for position I (assigned)................:   0:00
+  Block time for position I (unassigned)..............: 200:25
+
+------------------- Calendar Day Analysis -------------------
+
+  Number of 1 day trips ..............................: 285
+  Number of 2 day trips ..............................: 224
+  Number of 3 day trips ..............................: 154
+  Number of 4 day trips ..............................:  50
+  Number of 5 day trips ..............................:  31
+  Number of 6 day trips ..............................:   6
+  Total number of trips ..............................: 750
+
+  Number of 1 day trips (all slots assigned)..........: 1
+  Number of 2 day trips (all slots assigned)..........: 2
+  Number of 3 day trips (all slots assigned)..........: 4
+  Number of 4 day trips (all slots assigned)..........: 1
+  Number of 5 day trips (all slots assigned)..........: 1
+  Total number of trips (all slots assigned)..........: 9
+
+  Number of 1 day trips (at least one slot unassigned): 284
+  Number of 2 day trips (at least one slot unassigned): 222
+  Number of 3 day trips (at least one slot unassigned): 150
+  Number of 4 day trips (at least one slot unassigned):  49
+  Number of 5 day trips (at least one slot unassigned):  30
+  Number of 6 day trips (at least one slot unassigned):   6
+  Total number of trips (at least one slot unassigned): 741
+
+--------------------------------------------------------------
+
+  Cost function (map_cost_of_roster)......: matador_cost_of_roster
+
+---------------- Global Constraints Analysis ----------------
+
+    G1 : block_time_roster <= 48000  : 14055
+    G2 : block_time_total <= 48000   : 14055
+
+---------------------- End of Analysis ----------------------
+
+
+-------------------------------------
+
+Creating solution Solution_legalised...
+
+Running SolutionLegaliser...
+
+
+
+Matador Warning (16): Problem with rosters.
+Deassigning crew member ARKE 85868 from trip [    0  9C 2001-03-31T18:35  OSL  OSL 2001-04-02T17:35 C¦TQ3<2 ]
+because incorrectly assigned in position C
+
+Matador Warning (16): Problem with rosters.
+Deassigning crew member BENBERG 86122 from trip [   10  8C 2001-04-01T11:20  ARN  ARN 2001-04-02T16:10 P¦TQ2<2 ]
+because incorrectly assigned in position P
+
+Matador Warning (16): Problem with rosters.
+Deassigning crew member BOSERUP 85215 from trip [   13  4C 2001-04-01T12:20  ARN  ARN 2001-04-01T20:05 C/P¦TQ1<2 ]
+because incorrectly assigned in position P
+
+Matador Warning (16): Problem with rosters.
+Deassigning crew member LOHSE 85119 from trip [  140  6C 2001-04-05T13:00  CPH  CPH 2001-04-07T08:25 C/P¦TQ3<2 ]
+because incorrectly assigned in position P
+
+Matador Warning (16): Problem with rosters.
+Deassigning crew member LOHSE 85119 from trip [  286  4C 2001-04-11T11:40  ARN  ARN 2001-04-11T20:05 C/P¦TQ1<2 ]
+because incorrectly assigned in position P
+
+SOLUTION ANALYSIS for Solution_legalised solution:
+--------------------------------------------------
+There are no crew which have illegal rosters.
+
+There are no trips which have been illegally assigned.
+There are no legs which have been illegally assigned.
+There are no hard global constraints which have been violated.
+
+----------------------- Cost Analysis -----------------------
+
+  Assignment percentage...............................: 1
+
+  Total cost of plan..................................: 154143
+
+  Total cost of rosters...............................:    141
+  Total cost of unassigned slots......................: 122000
+  Total cost of unassigned crew.......................:   8000
+  Total cost of broken trip constraints...............:   2002
+  Total cost of broken leg constraints................:      0
+  Total cost of broken global constraints.............:      0
+
+  Number of crew with illegal rosters.................: 0
+  Number of broken hard trip constraints..............: 0
+  Number of broken hard leg constraints...............: 0
+  Number of broken hard global constraints............: 0
+
+--------------------- Numerical Analysis ---------------------
+
+  Number of crew (total)..............................: 12
+  Number of crew (assigned)...........................:  4
+  Number of crew (unassigned).........................:  8
+
+  Number of trips (total).............................: 750
+  Number of trips (assigned)..........................:   4
+  Number of trips (unassigned)........................: 746
+
+  Number of slots (total).............................: 1240
+  Number of slots (assigned)..........................:   20
+  Number of slots (unassigned)........................: 1220
+
+  Number of slots in position C (total)...............: 584
+  Number of slots in position C (assigned)............:  18
+  Number of slots in position C (unassigned)..........: 566
+
+  Number of slots in position P (total)...............: 621
+  Number of slots in position P (assigned)............:   2
+  Number of slots in position P (unassigned)..........: 619
+
+  Number of slots in position I (total)...............: 35
+  Number of slots in position I (assigned)............:  0
+  Number of slots in position I (unassigned)..........: 35
+
+  Number of broken soft trip constraints..............: 2
+  Number of broken soft leg constraints...............: 0
+  Number of broken soft global constraints............: 0
+
+-------------------- Block Time Analysis --------------------
+
+  Block time (total)..................................: 10945:15
+  Block time (assigned)...............................:   133:25
+  Block time (unassigned).............................: 10811:50
+
+  Block time for position C (total)...................: 5511:50
+  Block time for position C (assigned)................:  116:55
+  Block time for position C (unassigned)..............: 5394:55
+
+  Block time for position P (total)...................: 5233:00
+  Block time for position P (assigned)................:   16:30
+  Block time for position P (unassigned)..............: 5216:30
+
+  Block time for position I (total)...................: 200:25
+  Block time for position I (assigned)................:   0:00
+  Block time for position I (unassigned)..............: 200:25
+
+------------------- Calendar Day Analysis -------------------
+
+  Number of 1 day trips ..............................: 285
+  Number of 2 day trips ..............................: 224
+  Number of 3 day trips ..............................: 154
+  Number of 4 day trips ..............................:  50
+  Number of 5 day trips ..............................:  31
+  Number of 6 day trips ..............................:   6
+  Total number of trips ..............................: 750
+
+  Number of 1 day trips (all slots assigned)..........: 0
+  Number of 2 day trips (all slots assigned)..........: 1
+  Number of 3 day trips (all slots assigned)..........: 1
+  Number of 4 day trips (all slots assigned)..........: 1
+  Number of 5 day trips (all slots assigned)..........: 1
+  Total number of trips (all slots assigned)..........: 4
+
+  Number of 1 day trips (at least one slot unassigned): 285
+  Number of 2 day trips (at least one slot unassigned): 223
+  Number of 3 day trips (at least one slot unassigned): 153
+  Number of 4 day trips (at least one slot unassigned):  49
+  Number of 5 day trips (at least one slot unassigned):  30
+  Number of 6 day trips (at least one slot unassigned):   6
+  Total number of trips (at least one slot unassigned): 746
+
+--------------------------------------------------------------
+
+  Cost function (map_cost_of_roster)......: matador_cost_of_roster
+
+---------------- Global Constraints Analysis ----------------
+
+    G1 : block_time_roster <= 48000  : 11520
+    G2 : block_time_total <= 48000   : 11520
+
+---------------------- End of Analysis ----------------------
+
+--- Matador runtime status report ---
+Current Solution.......: 0
+
+--------------------------------------------------
+
+
+Creating solution Solution_1...
+
+Running initial roster method SimpleAssign...
+
+
+            0%       25%       50%       75%      100%
+            |         |         |         |         |
+Progress:   *****************************************
+
+
+
+SOLUTION ANALYSIS for Solution_1 solution:
+------------------------------------------
+There are no crew which have illegal rosters.
+
+There are no trips which have been illegally assigned.
+There are no legs which have been illegally assigned.
+There are no hard global constraints which have been violated.
+
+----------------------- Cost Analysis -----------------------
+
+  Assignment percentage...............................: 7
+
+  Total cost of plan..................................: 117110
+
+  Total cost of rosters...............................:    508
+  Total cost of unassigned slots......................: 114600
+  Total cost of unassigned crew.......................:      0
+  Total cost of broken trip constraints...............:   2002
+  Total cost of broken leg constraints................:      0
+  Total cost of broken global constraints.............:      0
+
+  Number of crew with illegal rosters.................: 0
+  Number of broken hard trip constraints..............: 0
+  Number of broken hard leg constraints...............: 0
+  Number of broken hard global constraints............: 0
+
+--------------------- Numerical Analysis ---------------------
+
+  Number of crew (total)..............................: 12
+  Number of crew (assigned)...........................: 12
+  Number of crew (unassigned).........................:  0
+
+  Number of trips (total).............................: 750
+  Number of trips (assigned)..........................:  38
+  Number of trips (unassigned)........................: 712
+
+  Number of slots (total).............................: 1240
+  Number of slots (assigned)..........................:   94
+  Number of slots (unassigned)........................: 1146
+
+  Number of slots in position C (total)...............: 584
+  Number of slots in position C (assigned)............:  65
+  Number of slots in position C (unassigned)..........: 519
+
+  Number of slots in position P (total)...............: 621
+  Number of slots in position P (assigned)............:  29
+  Number of slots in position P (unassigned)..........: 592
+
+  Number of slots in position I (total)...............: 35
+  Number of slots in position I (assigned)............:  0
+  Number of slots in position I (unassigned)..........: 35
+
+  Number of broken soft trip constraints..............: 2
+  Number of broken soft leg constraints...............: 0
+  Number of broken soft global constraints............: 0
+
+-------------------- Block Time Analysis --------------------
+
+  Block time (total)..................................: 10945:15
+  Block time (assigned)...............................:   741:10
+  Block time (unassigned).............................: 10204:05
+
+  Block time for position C (total)...................: 5511:50
+  Block time for position C (assigned)................:  496:30
+  Block time for position C (unassigned)..............: 5015:20
+
+  Block time for position P (total)...................: 5233:00
+  Block time for position P (assigned)................:  244:40
+  Block time for position P (unassigned)..............: 4988:20
+
+  Block time for position I (total)...................: 200:25
+  Block time for position I (assigned)................:   0:00
+  Block time for position I (unassigned)..............: 200:25
+
+------------------- Calendar Day Analysis -------------------
+
+  Number of 1 day trips ..............................: 285
+  Number of 2 day trips ..............................: 224
+  Number of 3 day trips ..............................: 154
+  Number of 4 day trips ..............................:  50
+  Number of 5 day trips ..............................:  31
+  Number of 6 day trips ..............................:   6
+  Total number of trips ..............................: 750
+
+  Number of 1 day trips (all slots assigned)..........: 12
+  Number of 2 day trips (all slots assigned)..........:  9
+  Number of 3 day trips (all slots assigned)..........:  8
+  Number of 4 day trips (all slots assigned)..........:  5
+  Number of 5 day trips (all slots assigned)..........:  3
+  Number of 6 day trips (all slots assigned)..........:  1
+  Total number of trips (all slots assigned)..........: 38
+
+  Number of 1 day trips (at least one slot unassigned): 273
+  Number of 2 day trips (at least one slot unassigned): 215
+  Number of 3 day trips (at least one slot unassigned): 146
+  Number of 4 day trips (at least one slot unassigned):  45
+  Number of 5 day trips (at least one slot unassigned):  28
+  Number of 6 day trips (at least one slot unassigned):   5
+  Total number of trips (at least one slot unassigned): 712
+
+--------------------------------------------------------------
+
+  Cost function (map_cost_of_roster)......: matador_cost_of_roster
+
+---------------- Global Constraints Analysis ----------------
+
+    G1 : block_time_roster <= 48000  : 47985
+    G2 : block_time_total <= 48000   : 47985
+
+---------------------- End of Analysis ----------------------
+
+--- Matador runtime status report ---
+Current Solution.......: 1
+
+------------------------------------------
+
+Applying improve method, period size 1w 0d 0h 0m, step size 0w 2d 0h 0m
+Planning for period:[ 2001-03-31T18:34, 2001-05-04T21:01 ]
+Starting Improve Method Sweep 1 of 1
+
+ImproveMethod iteration 1 [ 2001-03-31T18:34, 2001-04-07T18:34 ]
+  Number of active unassigned tasks   :   163
+  Number of active pre-assigned tasks :    16
+
+Creating solution Solution_2...
+
+Running ImproveMethod...
+Generating rosters...
+
+
+            0%       25%       50%       75%      100%
+            |         |         |         |         |
+Progress:   *****************************************
+
+GENERATION
+  Generated rosters.............: 124
+  Max per crew..................:  37
+  Average per crew..............:  10
+
+OPTIMIZATION
+  IP objective..................: 19299
+
+
+
+SOLUTION ANALYSIS for Solution_2 solution:
+------------------------------------------
+There are no crew which have illegal rosters.
+
+There are no trips which have been illegally assigned.
+There are no legs which have been illegally assigned.
+There are no hard global constraints which have been violated.
+
+----------------------- Cost Analysis -----------------------
+
+  Assignment percentage...............................: 7
+
+  Total cost of plan..................................: 117101
+
+  Total cost of rosters...............................:    499
+  Total cost of unassigned slots......................: 114600
+  Total cost of unassigned crew.......................:      0
+  Total cost of broken trip constraints...............:   2002
+  Total cost of broken leg constraints................:      0
+  Total cost of broken global constraints.............:      0
+
+  Number of crew with illegal rosters.................: 0
+  Number of broken hard trip constraints..............: 0
+  Number of broken hard leg constraints...............: 0
+  Number of broken hard global constraints............: 0
+
+--------------------- Numerical Analysis ---------------------
+
+  Number of crew (total)..............................: 12
+  Number of crew (assigned)...........................: 12
+  Number of crew (unassigned).........................:  0
+
+  Number of trips (total).............................: 750
+  Number of trips (assigned)..........................:  41
+  Number of trips (unassigned)........................: 709
+
+  Number of slots (total).............................: 1240
+  Number of slots (assigned)..........................:   94
+  Number of slots (unassigned)........................: 1146
+
+  Number of slots in position C (total)...............: 584
+  Number of slots in position C (assigned)............:  65
+  Number of slots in position C (unassigned)..........: 519
+
+  Number of slots in position P (total)...............: 621
+  Number of slots in position P (assigned)............:  29
+  Number of slots in position P (unassigned)..........: 592
+
+  Number of slots in position I (total)...............: 35
+  Number of slots in position I (assigned)............:  0
+  Number of slots in position I (unassigned)..........: 35
+
+  Number of broken soft trip constraints..............: 2
+  Number of broken soft leg constraints...............: 0
+  Number of broken soft global constraints............: 0
+
+-------------------- Block Time Analysis --------------------
+
+  Block time (total)..................................: 10945:15
+  Block time (assigned)...............................:   740:00
+  Block time (unassigned).............................: 10205:15
+
+  Block time for position C (total)...................: 5511:50
+  Block time for position C (assigned)................:  495:20
+  Block time for position C (unassigned)..............: 5016:30
+
+  Block time for position P (total)...................: 5233:00
+  Block time for position P (assigned)................:  244:40
+  Block time for position P (unassigned)..............: 4988:20
+
+  Block time for position I (total)...................: 200:25
+  Block time for position I (assigned)................:   0:00
+  Block time for position I (unassigned)..............: 200:25
+
+------------------- Calendar Day Analysis -------------------
+
+  Number of 1 day trips ..............................: 285
+  Number of 2 day trips ..............................: 224
+  Number of 3 day trips ..............................: 154
+  Number of 4 day trips ..............................:  50
+  Number of 5 day trips ..............................:  31
+  Number of 6 day trips ..............................:   6
+  Total number of trips ..............................: 750
+
+  Number of 1 day trips (all slots assigned)..........: 15
+  Number of 2 day trips (all slots assigned)..........:  9
+  Number of 3 day trips (all slots assigned)..........:  8
+  Number of 4 day trips (all slots assigned)..........:  5
+  Number of 5 day trips (all slots assigned)..........:  3
+  Number of 6 day trips (all slots assigned)..........:  1
+  Total number of trips (all slots assigned)..........: 41
+
+  Number of 1 day trips (at least one slot unassigned): 270
+  Number of 2 day trips (at least one slot unassigned): 215
+  Number of 3 day trips (at least one slot unassigned): 146
+  Number of 4 day trips (at least one slot unassigned):  45
+  Number of 5 day trips (at least one slot unassigned):  28
+  Number of 6 day trips (at least one slot unassigned):   5
+  Total number of trips (at least one slot unassigned): 709
+
+--------------------------------------------------------------
+
+  Cost function (map_cost_of_roster)......: matador_cost_of_roster
+
+---------------- Global Constraints Analysis ----------------
+
+    G1 : block_time_roster <= 48000  : 47915
+    G2 : block_time_total <= 48000   : 47915
+
+---------------------- End of Analysis ----------------------
+
+--- Matador runtime status report ---
+Current Solution.......: 2
+
+------------------------------------------
+
+ImproveMethod iteration 2 [ 2001-04-02T18:34, 2001-04-09T18:34 ]
+  Number of active unassigned tasks   :   148
+  Number of active pre-assigned tasks :    22
+
+Creating solution Solution_3...
+
+Running ImproveMethod...
+Generating rosters...
+
+
+            0%       25%       50%       75%      100%
+            |         |         |         |         |
+Progress:   *****************************************
+
+GENERATION
+  Generated rosters.............: 934
+  Max per crew..................: 202
+  Average per crew..............:  77
+
+OPTIMIZATION
+  IP objective..................: 16973
+
+
+
+SOLUTION ANALYSIS for Solution_3 solution:
+------------------------------------------
+There are no crew which have illegal rosters.
+
+There are no trips which have been illegally assigned.
+There are no legs which have been illegally assigned.
+There are no hard global constraints which have been violated.
+
+----------------------- Cost Analysis -----------------------
+
+  Assignment percentage...............................: 8
+
+  Total cost of plan..................................: 115875
+
+  Total cost of rosters...............................:    473
+  Total cost of unassigned slots......................: 113400
+  Total cost of unassigned crew.......................:      0
+  Total cost of broken trip constraints...............:   2002
+  Total cost of broken leg constraints................:      0
+  Total cost of broken global constraints.............:      0
+
+  Number of crew with illegal rosters.................: 0
+  Number of broken hard trip constraints..............: 0
+  Number of broken hard leg constraints...............: 0
+  Number of broken hard global constraints............: 0
+
+--------------------- Numerical Analysis ---------------------
+
+  Number of crew (total)..............................: 12
+  Number of crew (assigned)...........................: 12
+  Number of crew (unassigned).........................:  0
+
+  Number of trips (total).............................: 750
+  Number of trips (assigned)..........................:  42
+  Number of trips (unassigned)........................: 708
+
+  Number of slots (total).............................: 1240
+  Number of slots (assigned)..........................:  106
+  Number of slots (unassigned)........................: 1134
+
+  Number of slots in position C (total)...............: 584
+  Number of slots in position C (assigned)............:  70
+  Number of slots in position C (unassigned)..........: 514
+
+  Number of slots in position P (total)...............: 621
+  Number of slots in position P (assigned)............:  36
+  Number of slots in position P (unassigned)..........: 585
+
+  Number of slots in position I (total)...............: 35
+  Number of slots in position I (assigned)............:  0
+  Number of slots in position I (unassigned)..........: 35
+
+  Number of broken soft trip constraints..............: 2
+  Number of broken soft leg constraints...............: 0
+  Number of broken soft global constraints............: 0
+
+-------------------- Block Time Analysis --------------------
+
+  Block time (total)..................................: 10945:15
+  Block time (assigned)...............................:   738:40
+  Block time (unassigned).............................: 10206:35
+
+  Block time for position C (total)...................: 5511:50
+  Block time for position C (assigned)................:  476:50
+  Block time for position C (unassigned)..............: 5035:00
+
+  Block time for position P (total)...................: 5233:00
+  Block time for position P (assigned)................:  261:50
+  Block time for position P (unassigned)..............: 4971:10
+
+  Block time for position I (total)...................: 200:25
+  Block time for position I (assigned)................:   0:00
+  Block time for position I (unassigned)..............: 200:25
+
+------------------- Calendar Day Analysis -------------------
+
+  Number of 1 day trips ..............................: 285
+  Number of 2 day trips ..............................: 224
+  Number of 3 day trips ..............................: 154
+  Number of 4 day trips ..............................:  50
+  Number of 5 day trips ..............................:  31
+  Number of 6 day trips ..............................:   6
+  Total number of trips ..............................: 750
+
+  Number of 1 day trips (all slots assigned)..........: 22
+  Number of 2 day trips (all slots assigned)..........: 11
+  Number of 3 day trips (all slots assigned)..........:  6
+  Number of 4 day trips (all slots assigned)..........:  2
+  Number of 5 day trips (all slots assigned)..........:  1
+  Total number of trips (all slots assigned)..........: 42
+
+  Number of 1 day trips (at least one slot unassigned): 263
+  Number of 2 day trips (at least one slot unassigned): 213
+  Number of 3 day trips (at least one slot unassigned): 148
+  Number of 4 day trips (at least one slot unassigned):  48
+  Number of 5 day trips (at least one slot unassigned):  30
+  Number of 6 day trips (at least one slot unassigned):   6
+  Total number of trips (at least one slot unassigned): 708
+
+--------------------------------------------------------------
+
+  Cost function (map_cost_of_roster)......: matador_cost_of_roster
+
+---------------- Global Constraints Analysis ----------------
+
+    G1 : block_time_roster <= 48000  : 47835
+    G2 : block_time_total <= 48000   : 47835
+
+---------------------- End of Analysis ----------------------
+
+--- Matador runtime status report ---
+Current Solution.......: 3
+
+------------------------------------------
+
+ImproveMethod iteration 3 [ 2001-04-04T18:34, 2001-04-11T18:34 ]
+  Number of active unassigned tasks   :   136
+  Number of active pre-assigned tasks :    16
+
+Creating solution Solution_4...
+
+Running ImproveMethod...
+Generating rosters...
+
+
+            0%       25%       50%       75%      100%
+            |         |         |         |         |
+Progress:   *****************************************
+
+GENERATION
+  Generated rosters.............: 1096
+  Max per crew..................:  363
+  Average per crew..............:   91
+
+OPTIMIZATION
+  IP objective..................: 15713
+
+
+
+SOLUTION ANALYSIS for Solution_4 solution:
+------------------------------------------
+There are no crew which have illegal rosters.
+
+There are no trips which have been illegally assigned.
+There are no legs which have been illegally assigned.
+There are no hard global constraints which have been violated.
+
+----------------------- Cost Analysis -----------------------
+
+  Assignment percentage...............................: 9
+
+  Total cost of plan..................................: 114415
+
+  Total cost of rosters...............................:    513
+  Total cost of unassigned slots......................: 111900
+  Total cost of unassigned crew.......................:      0
+  Total cost of broken trip constraints...............:   2002
+  Total cost of broken leg constraints................:      0
+  Total cost of broken global constraints.............:      0
+
+  Number of crew with illegal rosters.................: 0
+  Number of broken hard trip constraints..............: 0
+  Number of broken hard leg constraints...............: 0
+  Number of broken hard global constraints............: 0
+
+--------------------- Numerical Analysis ---------------------
+
+  Number of crew (total)..............................: 12
+  Number of crew (assigned)...........................: 12
+  Number of crew (unassigned).........................:  0
+
+  Number of trips (total).............................: 750
+  Number of trips (assigned)..........................:  52
+  Number of trips (unassigned)........................: 698
+
+  Number of slots (total).............................: 1240
+  Number of slots (assigned)..........................:  121
+  Number of slots (unassigned)........................: 1119
+
+  Number of slots in position C (total)...............: 584
+  Number of slots in position C (assigned)............:  77
+  Number of slots in position C (unassigned)..........: 507
+
+  Number of slots in position P (total)...............: 621
+  Number of slots in position P (assigned)............:  44
+  Number of slots in position P (unassigned)..........: 577
+
+  Number of slots in position I (total)...............: 35
+  Number of slots in position I (assigned)............:  0
+  Number of slots in position I (unassigned)..........: 35
+
+  Number of broken soft trip constraints..............: 2
+  Number of broken soft leg constraints...............: 0
+  Number of broken soft global constraints............: 0
+
+-------------------- Block Time Analysis --------------------
+
+  Block time (total)..................................: 10945:15
+  Block time (assigned)...............................:   737:30
+  Block time (unassigned).............................: 10207:45
+
+  Block time for position C (total)...................: 5511:50
+  Block time for position C (assigned)................:  459:45
+  Block time for position C (unassigned)..............: 5052:05
+
+  Block time for position P (total)...................: 5233:00
+  Block time for position P (assigned)................:  277:45
+  Block time for position P (unassigned)..............: 4955:15
+
+  Block time for position I (total)...................: 200:25
+  Block time for position I (assigned)................:   0:00
+  Block time for position I (unassigned)..............: 200:25
+
+------------------- Calendar Day Analysis -------------------
+
+  Number of 1 day trips ..............................: 285
+  Number of 2 day trips ..............................: 224
+  Number of 3 day trips ..............................: 154
+  Number of 4 day trips ..............................:  50
+  Number of 5 day trips ..............................:  31
+  Number of 6 day trips ..............................:   6
+  Total number of trips ..............................: 750
+
+  Number of 1 day trips (all slots assigned)..........: 31
+  Number of 2 day trips (all slots assigned)..........: 11
+  Number of 3 day trips (all slots assigned)..........:  7
+  Number of 4 day trips (all slots assigned)..........:  2
+  Number of 5 day trips (all slots assigned)..........:  1
+  Total number of trips (all slots assigned)..........: 52
+
+  Number of 1 day trips (at least one slot unassigned): 254
+  Number of 2 day trips (at least one slot unassigned): 213
+  Number of 3 day trips (at least one slot unassigned): 147
+  Number of 4 day trips (at least one slot unassigned):  48
+  Number of 5 day trips (at least one slot unassigned):  30
+  Number of 6 day trips (at least one slot unassigned):   6
+  Total number of trips (at least one slot unassigned): 698
+
+--------------------------------------------------------------
+
+  Cost function (map_cost_of_roster)......: matador_cost_of_roster
+
+---------------- Global Constraints Analysis ----------------
+
+    G1 : block_time_roster <= 48000  : 47765
+    G2 : block_time_total <= 48000   : 47765
+
+---------------------- End of Analysis ----------------------
+
+--- Matador runtime status report ---
+Current Solution.......: 4
+
+------------------------------------------
+
+ImproveMethod iteration 4 [ 2001-04-06T18:34, 2001-04-13T18:34 ]
+  Number of active unassigned tasks   :   145
+  Number of active pre-assigned tasks :    16
+
+Creating solution Solution_5...
+
+Running ImproveMethod...
+Generating rosters...
+
+
+            0%       25%       50%       75%      100%
+            |         |         |         |         |
+Progress:   *****************************************
+
+GENERATION
+  Generated rosters.............: 897
+  Max per crew..................: 175
+  Average per crew..............:  74
+
+OPTIMIZATION
+  IP objective..................: 19103
+
+
+
+SOLUTION ANALYSIS for Solution_5 solution:
+------------------------------------------
+There are no crew which have illegal rosters.
+
+There are no trips which have been illegally assigned.
+There are no legs which have been illegally assigned.
+There are no hard global constraints which have been violated.
+
+----------------------- Cost Analysis -----------------------
+
+  Assignment percentage...............................: 9
+
+  Total cost of plan..................................: 115404
+
+  Total cost of rosters...............................:    503
+  Total cost of unassigned slots......................: 111700
+  Total cost of unassigned crew.......................:      0
+  Total cost of broken trip constraints...............:   1001
+  Total cost of broken leg constraints................:      0
+  Total cost of broken global constraints.............:      0
+
+  Number of crew with illegal rosters.................: 0
+  Number of broken hard trip constraints..............: 0
+  Number of broken hard leg constraints...............: 0
+  Number of broken hard global constraints............: 0
+
+--------------------- Numerical Analysis ---------------------
+
+  Number of crew (total)..............................: 12
+  Number of crew (assigned)...........................: 12
+  Number of crew (unassigned).........................:  0
+
+  Number of trips (total).............................: 750
+  Number of trips (assigned)..........................:  50
+  Number of trips (unassigned)........................: 700
+
+  Number of slots (total).............................: 1240
+  Number of slots (assigned)..........................:  123
+  Number of slots (unassigned)........................: 1117
+
+  Number of slots in position C (total)...............: 584
+  Number of slots in position C (assigned)............:  77
+  Number of slots in position C (unassigned)..........: 507
+
+  Number of slots in position P (total)...............: 621
+  Number of slots in position P (assigned)............:  46
+  Number of slots in position P (unassigned)..........: 575
+
+  Number of slots in position I (total)...............: 35
+  Number of slots in position I (assigned)............:  0
+  Number of slots in position I (unassigned)..........: 35
+
+  Number of broken soft trip constraints..............: 1
+  Number of broken soft leg constraints...............: 0
+  Number of broken soft global constraints............: 0
+
+-------------------- Block Time Analysis --------------------
+
+  Block time (total)..................................: 10945:15
+  Block time (assigned)...............................:   737:30
+  Block time (unassigned).............................: 10207:45
+
+  Block time for position C (total)...................: 5511:50
+  Block time for position C (assigned)................:  450:15
+  Block time for position C (unassigned)..............: 5061:35
+
+  Block time for position P (total)...................: 5233:00
+  Block time for position P (assigned)................:  287:15
+  Block time for position P (unassigned)..............: 4945:45
+
+  Block time for position I (total)...................: 200:25
+  Block time for position I (assigned)................:   0:00
+  Block time for position I (unassigned)..............: 200:25
+
+------------------- Calendar Day Analysis -------------------
+
+  Number of 1 day trips ..............................: 285
+  Number of 2 day trips ..............................: 224
+  Number of 3 day trips ..............................: 154
+  Number of 4 day trips ..............................:  50
+  Number of 5 day trips ..............................:  31
+  Number of 6 day trips ..............................:   6
+  Total number of trips ..............................: 750
+
+  Number of 1 day trips (all slots assigned)..........: 31
+  Number of 2 day trips (all slots assigned)..........:  9
+  Number of 3 day trips (all slots assigned)..........:  7
+  Number of 4 day trips (all slots assigned)..........:  2
+  Number of 5 day trips (all slots assigned)..........:  1
+  Total number of trips (all slots assigned)..........: 50
+
+  Number of 1 day trips (at least one slot unassigned): 254
+  Number of 2 day trips (at least one slot unassigned): 215
+  Number of 3 day trips (at least one slot unassigned): 147
+  Number of 4 day trips (at least one slot unassigned):  48
+  Number of 5 day trips (at least one slot unassigned):  30
+  Number of 6 day trips (at least one slot unassigned):   6
+  Total number of trips (at least one slot unassigned): 700
+
+--------------------------------------------------------------
+
+  Cost function (map_cost_of_roster)......: matador_cost_of_roster
+
+---------------- Global Constraints Analysis ----------------
+
+    G1 : block_time_roster <= 48000  : 47765
+    G2 : block_time_total <= 48000   : 47765
+
+---------------------- End of Analysis ----------------------
+
+--- Matador runtime status report ---
+Current Solution.......: 5
+
+------------------------------------------
+
+ImproveMethod iteration 5 [ 2001-04-08T18:34, 2001-04-15T18:34 ]
+  Number of active unassigned tasks   :   142
+  Number of active pre-assigned tasks :    16
+
+Creating solution Solution_6...
+
+Running ImproveMethod...
+Generating rosters...
+
+
+            0%       25%       50%       75%      100%
+            |         |         |         |         |
+Progress:   *****************************************
+
+GENERATION
+  Generated rosters.............: 296
+  Max per crew..................: 112
+  Average per crew..............:  24
+
+OPTIMIZATION
+  IP objective..................: 20409
+
+
+
+SOLUTION ANALYSIS for Solution_6 solution:
+------------------------------------------
+There are no crew which have illegal rosters.
+
+There are no trips which have been illegally assigned.
+There are no legs which have been illegally assigned.
+There are no hard global constraints which have been violated.
+
+----------------------- Cost Analysis -----------------------
+
+  Assignment percentage...............................: 10
+
+  Total cost of plan..................................: 113110
+
+  Total cost of rosters...............................:    509
+  Total cost of unassigned slots......................: 111600
+  Total cost of unassigned crew.......................:      0
+  Total cost of broken trip constraints...............:   1001
+  Total cost of broken leg constraints................:      0
+  Total cost of broken global constraints.............:      0
+
+  Number of crew with illegal rosters.................: 0
+  Number of broken hard trip constraints..............: 0
+  Number of broken hard leg constraints...............: 0
+  Number of broken hard global constraints............: 0
+
+--------------------- Numerical Analysis ---------------------
+
+  Number of crew (total)..............................: 12
+  Number of crew (assigned)...........................: 12
+  Number of crew (unassigned).........................:  0
+
+  Number of trips (total).............................: 750
+  Number of trips (assigned)..........................:  48
+  Number of trips (unassigned)........................: 702
+
+  Number of slots (total).............................: 1240
+  Number of slots (assigned)..........................:  124
+  Number of slots (unassigned)........................: 1116
+
+  Number of slots in position C (total)...............: 584
+  Number of slots in position C (assigned)............:  77
+  Number of slots in position C (unassigned)..........: 507
+
+  Number of slots in position P (total)...............: 621
+  Number of slots in position P (assigned)............:  47
+  Number of slots in position P (unassigned)..........: 574
+
+  Number of slots in position I (total)...............: 35
+  Number of slots in position I (assigned)............:  0
+  Number of slots in position I (unassigned)..........: 35
+
+  Number of broken soft trip constraints..............: 1
+  Number of broken soft leg constraints...............: 0
+  Number of broken soft global constraints............: 0
+
+-------------------- Block Time Analysis --------------------
+
+  Block time (total)..................................: 10945:15
+  Block time (assigned)...............................:   741:10
+  Block time (unassigned).............................: 10204:05
+
+  Block time for position C (total)...................: 5511:50
+  Block time for position C (assigned)................:  450:15
+  Block time for position C (unassigned)..............: 5061:35
+
+  Block time for position P (total)...................: 5233:00
+  Block time for position P (assigned)................:  290:55
+  Block time for position P (unassigned)..............: 4942:05
+
+  Block time for position I (total)...................: 200:25
+  Block time for position I (assigned)................:   0:00
+  Block time for position I (unassigned)..............: 200:25
+
+------------------- Calendar Day Analysis -------------------
+
+  Number of 1 day trips ..............................: 285
+  Number of 2 day trips ..............................: 224
+  Number of 3 day trips ..............................: 154
+  Number of 4 day trips ..............................:  50
+  Number of 5 day trips ..............................:  31
+  Number of 6 day trips ..............................:   6
+  Total number of trips ..............................: 750
+
+  Number of 1 day trips (all slots assigned)..........: 29
+  Number of 2 day trips (all slots assigned)..........:  9
+  Number of 3 day trips (all slots assigned)..........:  7
+  Number of 4 day trips (all slots assigned)..........:  2
+  Number of 5 day trips (all slots assigned)..........:  1
+  Total number of trips (all slots assigned)..........: 48
+
+  Number of 1 day trips (at least one slot unassigned): 256
+  Number of 2 day trips (at least one slot unassigned): 215
+  Number of 3 day trips (at least one slot unassigned): 147
+  Number of 4 day trips (at least one slot unassigned):  48
+  Number of 5 day trips (at least one slot unassigned):  30
+  Number of 6 day trips (at least one slot unassigned):   6
+  Total number of trips (at least one slot unassigned): 702
+
+--------------------------------------------------------------
+
+  Cost function (map_cost_of_roster)......: matador_cost_of_roster
+
+---------------- Global Constraints Analysis ----------------
+
+    G1 : block_time_roster <= 48000  : 47985
+    G2 : block_time_total <= 48000   : 47985
+
+---------------------- End of Analysis ----------------------
+
+--- Matador runtime status report ---
+Current Solution.......: 6
+
+------------------------------------------
+
+ImproveMethod iteration 6 [ 2001-04-10T18:34, 2001-04-17T18:34 ]
+  Number of active unassigned tasks   :   125
+  Number of active pre-assigned tasks :    20
+
+Creating solution Solution_7...
+
+Running ImproveMethod...
+Generating rosters...
+
+
+            0%       25%       50%       75%      100%
+            |         |         |         |         |
+Progress:   *****************************************
+
+GENERATION
+  Generated rosters.............: 198
+  Max per crew..................:  82
+  Average per crew..............:  16
+
+OPTIMIZATION
+  IP objective..................: 20209
+
+
+
+SOLUTION ANALYSIS for Solution_7 solution:
+------------------------------------------
+There are no crew which have illegal rosters.
+
+There are no trips which have been illegally assigned.
+There are no legs which have been illegally assigned.
+There are no hard global constraints which have been violated.
+
+----------------------- Cost Analysis -----------------------
+
+  Assignment percentage...............................: 10
+
+  Total cost of plan..................................: 112910
+
+  Total cost of rosters...............................:    509
+  Total cost of unassigned slots......................: 111400
+  Total cost of unassigned crew.......................:      0
+  Total cost of broken trip constraints...............:   1001
+  Total cost of broken leg constraints................:      0
+  Total cost of broken global constraints.............:      0
+
+  Number of crew with illegal rosters.................: 0
+  Number of broken hard trip constraints..............: 0
+  Number of broken hard leg constraints...............: 0
+  Number of broken hard global constraints............: 0
+
+--------------------- Numerical Analysis ---------------------
+
+  Number of crew (total)..............................: 12
+  Number of crew (assigned)...........................: 12
+  Number of crew (unassigned).........................:  0
+
+  Number of trips (total).............................: 750
+  Number of trips (assigned)..........................:  49
+  Number of trips (unassigned)........................: 701
+
+  Number of slots (total).............................: 1240
+  Number of slots (assigned)..........................:  126
+  Number of slots (unassigned)........................: 1114
+
+  Number of slots in position C (total)...............: 584
+  Number of slots in position C (assigned)............:  78
+  Number of slots in position C (unassigned)..........: 506
+
+  Number of slots in position P (total)...............: 621
+  Number of slots in position P (assigned)............:  48
+  Number of slots in position P (unassigned)..........: 573
+
+  Number of slots in position I (total)...............: 35
+  Number of slots in position I (assigned)............:  0
+  Number of slots in position I (unassigned)..........: 35
+
+  Number of broken soft trip constraints..............: 1
+  Number of broken soft leg constraints...............: 0
+  Number of broken soft global constraints............: 0
+
+-------------------- Block Time Analysis --------------------
+
+  Block time (total)..................................: 10945:15
+  Block time (assigned)...............................:   741:25
+  Block time (unassigned).............................: 10203:50
+
+  Block time for position C (total)...................: 5511:50
+  Block time for position C (assigned)................:  450:20
+  Block time for position C (unassigned)..............: 5061:30
+
+  Block time for position P (total)...................: 5233:00
+  Block time for position P (assigned)................:  291:05
+  Block time for position P (unassigned)..............: 4941:55
+
+  Block time for position I (total)...................: 200:25
+  Block time for position I (assigned)................:   0:00
+  Block time for position I (unassigned)..............: 200:25
+
+------------------- Calendar Day Analysis -------------------
+
+  Number of 1 day trips ..............................: 285
+  Number of 2 day trips ..............................: 224
+  Number of 3 day trips ..............................: 154
+  Number of 4 day trips ..............................:  50
+  Number of 5 day trips ..............................:  31
+  Number of 6 day trips ..............................:   6
+  Total number of trips ..............................: 750
+
+  Number of 1 day trips (all slots assigned)..........: 30
+  Number of 2 day trips (all slots assigned)..........:  9
+  Number of 3 day trips (all slots assigned)..........:  7
+  Number of 4 day trips (all slots assigned)..........:  2
+  Number of 5 day trips (all slots assigned)..........:  1
+  Total number of trips (all slots assigned)..........: 49
+
+  Number of 1 day trips (at least one slot unassigned): 255
+  Number of 2 day trips (at least one slot unassigned): 215
+  Number of 3 day trips (at least one slot unassigned): 147
+  Number of 4 day trips (at least one slot unassigned):  48
+  Number of 5 day trips (at least one slot unassigned):  30
+  Number of 6 day trips (at least one slot unassigned):   6
+  Total number of trips (at least one slot unassigned): 701
+
+--------------------------------------------------------------
+
+  Cost function (map_cost_of_roster)......: matador_cost_of_roster
+
+---------------- Global Constraints Analysis ----------------
+
+    G1 : block_time_roster <= 48000  : 48000
+    G2 : block_time_total <= 48000   : 48000
+
+---------------------- End of Analysis ----------------------
+
+--- Matador runtime status report ---
+Current Solution.......: 7
+
+------------------------------------------
+
+ImproveMethod iteration 7 [ 2001-04-12T18:34, 2001-04-19T18:34 ]
+  Number of active unassigned tasks   :   130
+  Number of active pre-assigned tasks :    18
+
+Creating solution Solution_8...
+
+Running ImproveMethod...
+Generating rosters...
+
+
+            0%       25%       50%       75%      100%
+            |         |         |         |         |
+Progress:   *****************************************
+
+GENERATION
+  Generated rosters.............: 151
+  Max per crew..................:  40
+  Average per crew..............:  12
+
+OPTIMIZATION
+  IP objective..................: 22105
+
+
+
+SOLUTION ANALYSIS for Solution_8 solution:
+------------------------------------------
+There are no crew which have illegal rosters.
+
+There are no trips which have been illegally assigned.
+There are no legs which have been illegally assigned.
+There are no hard global constraints which have been violated.
+
+----------------------- Cost Analysis -----------------------
+
+  Assignment percentage...............................: 10
+
+  Total cost of plan..................................: 101905
+
+  Total cost of rosters...............................:    505
+  Total cost of unassigned slots......................: 111400
+  Total cost of unassigned crew.......................:      0
+  Total cost of broken trip constraints...............:      0
+  Total cost of broken leg constraints................:      0
+  Total cost of broken global constraints.............:      0
+
+  Number of crew with illegal rosters.................: 0
+  Number of broken hard trip constraints..............: 0
+  Number of broken hard leg constraints...............: 0
+  Number of broken hard global constraints............: 0
+
+--------------------- Numerical Analysis ---------------------
+
+  Number of crew (total)..............................: 12
+  Number of crew (assigned)...........................: 12
+  Number of crew (unassigned).........................:  0
+
+  Number of trips (total).............................: 750
+  Number of trips (assigned)..........................:  46
+  Number of trips (unassigned)........................: 704
+
+  Number of slots (total).............................: 1240
+  Number of slots (assigned)..........................:  126
+  Number of slots (unassigned)........................: 1114
+
+  Number of slots in position C (total)...............: 584
+  Number of slots in position C (assigned)............:  77
+  Number of slots in position C (unassigned)..........: 507
+
+  Number of slots in position P (total)...............: 621
+  Number of slots in position P (assigned)............:  49
+  Number of slots in position P (unassigned)..........: 572
+
+  Number of slots in position I (total)...............: 35
+  Number of slots in position I (assigned)............:  0
+  Number of slots in position I (unassigned)..........: 35
+
+  Number of broken soft trip constraints..............: 0
+  Number of broken soft leg constraints...............: 0
+  Number of broken soft global constraints............: 0
+
+-------------------- Block Time Analysis --------------------
+
+  Block time (total)..................................: 10945:15
+  Block time (assigned)...............................:   740:05
+  Block time (unassigned).............................: 10205:10
+
+  Block time for position C (total)...................: 5511:50
+  Block time for position C (assigned)................:  449:00
+  Block time for position C (unassigned)..............: 5062:50
+
+  Block time for position P (total)...................: 5233:00
+  Block time for position P (assigned)................:  291:05
+  Block time for position P (unassigned)..............: 4941:55
+
+  Block time for position I (total)...................: 200:25
+  Block time for position I (assigned)................:   0:00
+  Block time for position I (unassigned)..............: 200:25
+
+------------------- Calendar Day Analysis -------------------
+
+  Number of 1 day trips ..............................: 285
+  Number of 2 day trips ..............................: 224
+  Number of 3 day trips ..............................: 154
+  Number of 4 day trips ..............................:  50
+  Number of 5 day trips ..............................:  31
+  Number of 6 day trips ..............................:   6
+  Total number of trips ..............................: 750
+
+  Number of 1 day trips (all slots assigned)..........: 28
+  Number of 2 day trips (all slots assigned)..........:  8
+  Number of 3 day trips (all slots assigned)..........:  7
+  Number of 4 day trips (all slots assigned)..........:  2
+  Number of 5 day trips (all slots assigned)..........:  1
+  Total number of trips (all slots assigned)..........: 46
+
+  Number of 1 day trips (at least one slot unassigned): 257
+  Number of 2 day trips (at least one slot unassigned): 216
+  Number of 3 day trips (at least one slot unassigned): 147
+  Number of 4 day trips (at least one slot unassigned):  48
+  Number of 5 day trips (at least one slot unassigned):  30
+  Number of 6 day trips (at least one slot unassigned):   6
+  Total number of trips (at least one slot unassigned): 704
+
+--------------------------------------------------------------
+
+  Cost function (map_cost_of_roster)......: matador_cost_of_roster
+
+---------------- Global Constraints Analysis ----------------
+
+    G1 : block_time_roster <= 48000  : 47920
+    G2 : block_time_total <= 48000   : 47920
+
+---------------------- End of Analysis ----------------------
+
+--- Matador runtime status report ---
+Current Solution.......: 8
+
+------------------------------------------
+
+ImproveMethod iteration 8 [ 2001-04-14T18:34, 2001-04-21T18:34 ]
+  Number of active unassigned tasks   :   152
+  Number of active pre-assigned tasks :    18
+
+Creating solution Solution_9...
+
+Running ImproveMethod...
+Generating rosters...
+
+
+            0%       25%       50%       75%      100%
+            |         |         |         |         |
+Progress:   *****************************************
+
+GENERATION
+  Generated rosters.............: 146
+  Max per crew..................:  47
+  Average per crew..............:  12
+
+OPTIMIZATION
+  IP objective..................: 25905
+
+
+
+SOLUTION ANALYSIS for Solution_9 solution:
+------------------------------------------
+There are no crew which have illegal rosters.
+
+There are no trips which have been illegally assigned.
+There are no legs which have been illegally assigned.
+There are no hard global constraints which have been violated.
+
+----------------------- Cost Analysis -----------------------
+
+  Assignment percentage...............................: 10
+
+  Total cost of plan..................................: 101805
+
+  Total cost of rosters...............................:    505
+  Total cost of unassigned slots......................: 111300
+  Total cost of unassigned crew.......................:      0
+  Total cost of broken trip constraints...............:      0
+  Total cost of broken leg constraints................:      0
+  Total cost of broken global constraints.............:      0
+
+  Number of crew with illegal rosters.................: 0
+  Number of broken hard trip constraints..............: 0
+  Number of broken hard leg constraints...............: 0
+  Number of broken hard global constraints............: 0
+
+--------------------- Numerical Analysis ---------------------
+
+  Number of crew (total)..............................: 12
+  Number of crew (assigned)...........................: 12
+  Number of crew (unassigned).........................:  0
+
+  Number of trips (total).............................: 750
+  Number of trips (assigned)..........................:  46
+  Number of trips (unassigned)........................: 704
+
+  Number of slots (total).............................: 1240
+  Number of slots (assigned)..........................:  127
+  Number of slots (unassigned)........................: 1113
+
+  Number of slots in position C (total)...............: 584
+  Number of slots in position C (assigned)............:  78
+  Number of slots in position C (unassigned)..........: 506
+
+  Number of slots in position P (total)...............: 621
+  Number of slots in position P (assigned)............:  49
+  Number of slots in position P (unassigned)..........: 572
+
+  Number of slots in position I (total)...............: 35
+  Number of slots in position I (assigned)............:  0
+  Number of slots in position I (unassigned)..........: 35
+
+  Number of broken soft trip constraints..............: 0
+  Number of broken soft leg constraints...............: 0
+  Number of broken soft global constraints............: 0
+
+-------------------- Block Time Analysis --------------------
+
+  Block time (total)..................................: 10945:15
+  Block time (assigned)...............................:   740:25
+  Block time (unassigned).............................: 10204:50
+
+  Block time for position C (total)...................: 5511:50
+  Block time for position C (assigned)................:  449:20
+  Block time for position C (unassigned)..............: 5062:30
+
+  Block time for position P (total)...................: 5233:00
+  Block time for position P (assigned)................:  291:05
+  Block time for position P (unassigned)..............: 4941:55
+
+  Block time for position I (total)...................: 200:25
+  Block time for position I (assigned)................:   0:00
+  Block time for position I (unassigned)..............: 200:25
+
+------------------- Calendar Day Analysis -------------------
+
+  Number of 1 day trips ..............................: 285
+  Number of 2 day trips ..............................: 224
+  Number of 3 day trips ..............................: 154
+  Number of 4 day trips ..............................:  50
+  Number of 5 day trips ..............................:  31
+  Number of 6 day trips ..............................:   6
+  Total number of trips ..............................: 750
+
+  Number of 1 day trips (all slots assigned)..........: 28
+  Number of 2 day trips (all slots assigned)..........:  8
+  Number of 3 day trips (all slots assigned)..........:  7
+  Number of 4 day trips (all slots assigned)..........:  2
+  Number of 5 day trips (all slots assigned)..........:  1
+  Total number of trips (all slots assigned)..........: 46
+
+  Number of 1 day trips (at least one slot unassigned): 257
+  Number of 2 day trips (at least one slot unassigned): 216
+  Number of 3 day trips (at least one slot unassigned): 147
+  Number of 4 day trips (at least one slot unassigned):  48
+  Number of 5 day trips (at least one slot unassigned):  30
+  Number of 6 day trips (at least one slot unassigned):   6
+  Total number of trips (at least one slot unassigned): 704
+
+--------------------------------------------------------------
+
+  Cost function (map_cost_of_roster)......: matador_cost_of_roster
+
+---------------- Global Constraints Analysis ----------------
+
+    G1 : block_time_roster <= 48000  : 47940
+    G2 : block_time_total <= 48000   : 47940
+
+---------------------- End of Analysis ----------------------
+
+--- Matador runtime status report ---
+Current Solution.......: 9
+
+------------------------------------------
+
+ImproveMethod iteration 9 [ 2001-04-16T18:34, 2001-04-23T18:34 ]
+  Number of active unassigned tasks   :   145
+  Number of active pre-assigned tasks :    14
+
+Creating solution Solution_10...
+
+Running ImproveMethod...
+Generating rosters...
+
+
+            0%       25%       50%       75%      100%
+            |         |         |         |         |
+Progress:   *****************************************
+
+GENERATION
+  Generated rosters.............: 390
+  Max per crew..................: 251
+  Average per crew..............:  32
+
+OPTIMIZATION
+  IP objective..................: 24805
+
+
+
+SOLUTION ANALYSIS for Solution_10 solution:
+-------------------------------------------
+There are no crew which have illegal rosters.
+
+There are no trips which have been illegally assigned.
+There are no legs which have been illegally assigned.
+There are no hard global constraints which have been violated.
+
+----------------------- Cost Analysis -----------------------
+
+  Assignment percentage...............................: 10
+
+  Total cost of plan..................................: 101505
+
+  Total cost of rosters...............................:    505
+  Total cost of unassigned slots......................: 101000
+  Total cost of unassigned crew.......................:      0
+  Total cost of broken trip constraints...............:      0
+  Total cost of broken leg constraints................:      0
+  Total cost of broken global constraints.............:      0
+
+  Number of crew with illegal rosters.................: 0
+  Number of broken hard trip constraints..............: 0
+  Number of broken hard leg constraints...............: 0
+  Number of broken hard global constraints............: 0
+
+--------------------- Numerical Analysis ---------------------
+
+  Number of crew (total)..............................: 12
+  Number of crew (assigned)...........................: 12
+  Number of crew (unassigned).........................:  0
+
+  Number of trips (total).............................: 750
+  Number of trips (assigned)..........................:  46
+  Number of trips (unassigned)........................: 704
+
+  Number of slots (total).............................: 1240
+  Number of slots (assigned)..........................:  130
+  Number of slots (unassigned)........................: 1010
+
+  Number of slots in position C (total)...............: 584
+  Number of slots in position C (assigned)............:  81
+  Number of slots in position C (unassigned)..........: 503
+
+  Number of slots in position P (total)...............: 621
+  Number of slots in position P (assigned)............:  49
+  Number of slots in position P (unassigned)..........: 572
+
+  Number of slots in position I (total)...............: 35
+  Number of slots in position I (assigned)............:  0
+  Number of slots in position I (unassigned)..........: 35
+
+  Number of broken soft trip constraints..............: 0
+  Number of broken soft leg constraints...............: 0
+  Number of broken soft global constraints............: 0
+
+-------------------- Block Time Analysis --------------------
+
+  Block time (total)..................................: 10945:15
+  Block time (assigned)...............................:   739:55
+  Block time (unassigned).............................: 10205:20
+
+  Block time for position C (total)...................: 5511:50
+  Block time for position C (assigned)................:  448:50
+  Block time for position C (unassigned)..............: 5063:00
+
+  Block time for position P (total)...................: 5233:00
+  Block time for position P (assigned)................:  291:05
+  Block time for position P (unassigned)..............: 4941:55
+
+  Block time for position I (total)...................: 200:25
+  Block time for position I (assigned)................:   0:00
+  Block time for position I (unassigned)..............: 200:25
+
+------------------- Calendar Day Analysis -------------------
+
+  Number of 1 day trips ..............................: 285
+  Number of 2 day trips ..............................: 224
+  Number of 3 day trips ..............................: 154
+  Number of 4 day trips ..............................:  50
+  Number of 5 day trips ..............................:  31
+  Number of 6 day trips ..............................:   6
+  Total number of trips ..............................: 750
+
+  Number of 1 day trips (all slots assigned)..........: 29
+  Number of 2 day trips (all slots assigned)..........:  8
+  Number of 3 day trips (all slots assigned)..........:  7
+  Number of 4 day trips (all slots assigned)..........:  1
+  Number of 5 day trips (all slots assigned)..........:  1
+  Total number of trips (all slots assigned)..........: 46
+
+  Number of 1 day trips (at least one slot unassigned): 256
+  Number of 2 day trips (at least one slot unassigned): 216
+  Number of 3 day trips (at least one slot unassigned): 147
+  Number of 4 day trips (at least one slot unassigned):  49
+  Number of 5 day trips (at least one slot unassigned):  30
+  Number of 6 day trips (at least one slot unassigned):   6
+  Total number of trips (at least one slot unassigned): 704
+
+--------------------------------------------------------------
+
+  Cost function (map_cost_of_roster)......: matador_cost_of_roster
+
+---------------- Global Constraints Analysis ----------------
+
+    G1 : block_time_roster <= 48000  : 47910
+    G2 : block_time_total <= 48000   : 47910
+
+---------------------- End of Analysis ----------------------
+
+--- Matador runtime status report ---
+Current Solution.......: 10
+
+-------------------------------------------
+
+ImproveMethod iteration 10 [ 2001-04-18T18:34, 2001-04-25T18:34 ]
+  Number of active unassigned tasks   :   143
+  Number of active pre-assigned tasks :    14
+
+Creating solution Solution_11...
+
+Running ImproveMethod...
+Generating rosters...
+
+
+            0%       25%       50%       75%      100%
+            |         |         |         |         |
+Progress:   *****************************************
+
+GENERATION
+  Generated rosters.............: 158
+  Max per crew..................:  49
+  Average per crew..............:  13
+
+OPTIMIZATION
+  IP objective..................: 25005
+
+
+
+SOLUTION ANALYSIS for Solution_11 solution:
+-------------------------------------------
+There are no crew which have illegal rosters.
+
+There are no trips which have been illegally assigned.
+There are no legs which have been illegally assigned.
+There are no hard global constraints which have been violated.
+
+----------------------- Cost Analysis -----------------------
+
+  Assignment percentage...............................: 10
+
+  Total cost of plan..................................: 101505
+
+  Total cost of rosters...............................:    505
+  Total cost of unassigned slots......................: 101000
+  Total cost of unassigned crew.......................:      0
+  Total cost of broken trip constraints...............:      0
+  Total cost of broken leg constraints................:      0
+  Total cost of broken global constraints.............:      0
+
+  Number of crew with illegal rosters.................: 0
+  Number of broken hard trip constraints..............: 0
+  Number of broken hard leg constraints...............: 0
+  Number of broken hard global constraints............: 0
+
+--------------------- Numerical Analysis ---------------------
+
+  Number of crew (total)..............................: 12
+  Number of crew (assigned)...........................: 12
+  Number of crew (unassigned).........................:  0
+
+  Number of trips (total).............................: 750
+  Number of trips (assigned)..........................:  46
+  Number of trips (unassigned)........................: 704
+
+  Number of slots (total).............................: 1240
+  Number of slots (assigned)..........................:  130
+  Number of slots (unassigned)........................: 1010
+
+  Number of slots in position C (total)...............: 584
+  Number of slots in position C (assigned)............:  81
+  Number of slots in position C (unassigned)..........: 503
+
+  Number of slots in position P (total)...............: 621
+  Number of slots in position P (assigned)............:  49
+  Number of slots in position P (unassigned)..........: 572
+
+  Number of slots in position I (total)...............: 35
+  Number of slots in position I (assigned)............:  0
+  Number of slots in position I (unassigned)..........: 35
+
+  Number of broken soft trip constraints..............: 0
+  Number of broken soft leg constraints...............: 0
+  Number of broken soft global constraints............: 0
+
+-------------------- Block Time Analysis --------------------
+
+  Block time (total)..................................: 10945:15
+  Block time (assigned)...............................:   741:05
+  Block time (unassigned).............................: 10204:10
+
+  Block time for position C (total)...................: 5511:50
+  Block time for position C (assigned)................:  450:00
+  Block time for position C (unassigned)..............: 5061:50
+
+  Block time for position P (total)...................: 5233:00
+  Block time for position P (assigned)................:  291:05
+  Block time for position P (unassigned)..............: 4941:55
+
+  Block time for position I (total)...................: 200:25
+  Block time for position I (assigned)................:   0:00
+  Block time for position I (unassigned)..............: 200:25
+
+------------------- Calendar Day Analysis -------------------
+
+  Number of 1 day trips ..............................: 285
+  Number of 2 day trips ..............................: 224
+  Number of 3 day trips ..............................: 154
+  Number of 4 day trips ..............................:  50
+  Number of 5 day trips ..............................:  31
+  Number of 6 day trips ..............................:   6
+  Total number of trips ..............................: 750
+
+  Number of 1 day trips (all slots assigned)..........: 29
+  Number of 2 day trips (all slots assigned)..........:  8
+  Number of 3 day trips (all slots assigned)..........:  7
+  Number of 4 day trips (all slots assigned)..........:  1
+  Number of 5 day trips (all slots assigned)..........:  1
+  Total number of trips (all slots assigned)..........: 46
+
+  Number of 1 day trips (at least one slot unassigned): 256
+  Number of 2 day trips (at least one slot unassigned): 216
+  Number of 3 day trips (at least one slot unassigned): 147
+  Number of 4 day trips (at least one slot unassigned):  49
+  Number of 5 day trips (at least one slot unassigned):  30
+  Number of 6 day trips (at least one slot unassigned):   6
+  Total number of trips (at least one slot unassigned): 704
+
+--------------------------------------------------------------
+
+  Cost function (map_cost_of_roster)......: matador_cost_of_roster
+
+---------------- Global Constraints Analysis ----------------
+
+    G1 : block_time_roster <= 48000  : 47980
+    G2 : block_time_total <= 48000   : 47980
+
+---------------------- End of Analysis ----------------------
+
+--- Matador runtime status report ---
+Current Solution.......: 11
+
+-------------------------------------------
+
+ImproveMethod iteration 11 [ 2001-04-20T18:34, 2001-04-27T18:34 ]
+  Number of active unassigned tasks   :   132
+  Number of active pre-assigned tasks :    12
+
+Creating solution Solution_12...
+
+Running ImproveMethod...
+Generating rosters...
+
+
+            0%       25%       50%       75%      100%
+            |         |         |         |         |
+Progress:   *****************************************
+
+GENERATION
+  Generated rosters.............: 144
+  Max per crew..................:  73
+  Average per crew..............:  12
+
+OPTIMIZATION
+  IP objective..................: 23702
+
+
+
+SOLUTION ANALYSIS for Solution_12 solution:
+-------------------------------------------
+There are no crew which have illegal rosters.
+
+There are no trips which have been illegally assigned.
+There are no legs which have been illegally assigned.
+There are no hard global constraints which have been violated.
+
+----------------------- Cost Analysis -----------------------
+
+  Assignment percentage...............................: 10
+
+  Total cost of plan..................................: 101302
+
+  Total cost of rosters...............................:    502
+  Total cost of unassigned slots......................: 110800
+  Total cost of unassigned crew.......................:      0
+  Total cost of broken trip constraints...............:      0
+  Total cost of broken leg constraints................:      0
+  Total cost of broken global constraints.............:      0
+
+  Number of crew with illegal rosters.................: 0
+  Number of broken hard trip constraints..............: 0
+  Number of broken hard leg constraints...............: 0
+  Number of broken hard global constraints............: 0
+
+--------------------- Numerical Analysis ---------------------
+
+  Number of crew (total)..............................: 12
+  Number of crew (assigned)...........................: 12
+  Number of crew (unassigned).........................:  0
+
+  Number of trips (total).............................: 750
+  Number of trips (assigned)..........................:  46
+  Number of trips (unassigned)........................: 704
+
+  Number of slots (total).............................: 1240
+  Number of slots (assigned)..........................:  132
+  Number of slots (unassigned)........................: 1108
+
+  Number of slots in position C (total)...............: 584
+  Number of slots in position C (assigned)............:  83
+  Number of slots in position C (unassigned)..........: 501
+
+  Number of slots in position P (total)...............: 621
+  Number of slots in position P (assigned)............:  49
+  Number of slots in position P (unassigned)..........: 572
+
+  Number of slots in position I (total)...............: 35
+  Number of slots in position I (assigned)............:  0
+  Number of slots in position I (unassigned)..........: 35
+
+  Number of broken soft trip constraints..............: 0
+  Number of broken soft leg constraints...............: 0
+  Number of broken soft global constraints............: 0
+
+-------------------- Block Time Analysis --------------------
+
+  Block time (total)..................................: 10945:15
+  Block time (assigned)...............................:   740:10
+  Block time (unassigned).............................: 10205:05
+
+  Block time for position C (total)...................: 5511:50
+  Block time for position C (assigned)................:  449:05
+  Block time for position C (unassigned)..............: 5062:45
+
+  Block time for position P (total)...................: 5233:00
+  Block time for position P (assigned)................:  291:05
+  Block time for position P (unassigned)..............: 4941:55
+
+  Block time for position I (total)...................: 200:25
+  Block time for position I (assigned)................:   0:00
+  Block time for position I (unassigned)..............: 200:25
+
+------------------- Calendar Day Analysis -------------------
+
+  Number of 1 day trips ..............................: 285
+  Number of 2 day trips ..............................: 224
+  Number of 3 day trips ..............................: 154
+  Number of 4 day trips ..............................:  50
+  Number of 5 day trips ..............................:  31
+  Number of 6 day trips ..............................:   6
+  Total number of trips ..............................: 750
+
+  Number of 1 day trips (all slots assigned)..........: 30
+  Number of 2 day trips (all slots assigned)..........:  8
+  Number of 3 day trips (all slots assigned)..........:  7
+  Number of 4 day trips (all slots assigned)..........:  1
+  Total number of trips (all slots assigned)..........: 46
+
+  Number of 1 day trips (at least one slot unassigned): 255
+  Number of 2 day trips (at least one slot unassigned): 216
+  Number of 3 day trips (at least one slot unassigned): 147
+  Number of 4 day trips (at least one slot unassigned):  49
+  Number of 5 day trips (at least one slot unassigned):  31
+  Number of 6 day trips (at least one slot unassigned):   6
+  Total number of trips (at least one slot unassigned): 704
+
+--------------------------------------------------------------
+
+  Cost function (map_cost_of_roster)......: matador_cost_of_roster
+
+---------------- Global Constraints Analysis ----------------
+
+    G1 : block_time_roster <= 48000  : 47925
+    G2 : block_time_total <= 48000   : 47925
+
+---------------------- End of Analysis ----------------------
+
+--- Matador runtime status report ---
+Current Solution.......: 12
+
+-------------------------------------------
+
+ImproveMethod iteration 12 [ 2001-04-22T18:34, 2001-04-29T18:34 ]
+  Number of active unassigned tasks   :   138
+  Number of active pre-assigned tasks :    12
+
+Creating solution Solution_13...
+
+Running ImproveMethod...
+Generating rosters...
+
+
+            0%       25%       50%       75%      100%
+            |         |         |         |         |
+Progress:   *****************************************
+
+GENERATION
+  Generated rosters.............: 49
+  Max per crew..................: 27
+  Average per crew..............:  4
+
+OPTIMIZATION
+  IP objective..................: 23702
+
+
+
+SOLUTION ANALYSIS for Solution_13 solution:
+-------------------------------------------
+There are no crew which have illegal rosters.
+
+There are no trips which have been illegally assigned.
+There are no legs which have been illegally assigned.
+There are no hard global constraints which have been violated.
+
+----------------------- Cost Analysis -----------------------
+
+  Assignment percentage...............................: 10
+
+  Total cost of plan..................................: 101302
+
+  Total cost of rosters...............................:    502
+  Total cost of unassigned slots......................: 110800
+  Total cost of unassigned crew.......................:      0
+  Total cost of broken trip constraints...............:      0
+  Total cost of broken leg constraints................:      0
+  Total cost of broken global constraints.............:      0
+
+  Number of crew with illegal rosters.................: 0
+  Number of broken hard trip constraints..............: 0
+  Number of broken hard leg constraints...............: 0
+  Number of broken hard global constraints............: 0
+
+--------------------- Numerical Analysis ---------------------
+
+  Number of crew (total)..............................: 12
+  Number of crew (assigned)...........................: 12
+  Number of crew (unassigned).........................:  0
+
+  Number of trips (total).............................: 750
+  Number of trips (assigned)..........................:  46
+  Number of trips (unassigned)........................: 704
+
+  Number of slots (total).............................: 1240
+  Number of slots (assigned)..........................:  132
+  Number of slots (unassigned)........................: 1108
+
+  Number of slots in position C (total)...............: 584
+  Number of slots in position C (assigned)............:  83
+  Number of slots in position C (unassigned)..........: 501
+
+  Number of slots in position P (total)...............: 621
+  Number of slots in position P (assigned)............:  49
+  Number of slots in position P (unassigned)..........: 572
+
+  Number of slots in position I (total)...............: 35
+  Number of slots in position I (assigned)............:  0
+  Number of slots in position I (unassigned)..........: 35
+
+  Number of broken soft trip constraints..............: 0
+  Number of broken soft leg constraints...............: 0
+  Number of broken soft global constraints............: 0
+
+-------------------- Block Time Analysis --------------------
+
+  Block time (total)..................................: 10945:15
+  Block time (assigned)...............................:   740:10
+  Block time (unassigned).............................: 10205:05
+
+  Block time for position C (total)...................: 5511:50
+  Block time for position C (assigned)................:  449:05
+  Block time for position C (unassigned)..............: 5062:45
+
+  Block time for position P (total)...................: 5233:00
+  Block time for position P (assigned)................:  291:05
+  Block time for position P (unassigned)..............: 4941:55
+
+  Block time for position I (total)...................: 200:25
+  Block time for position I (assigned)................:   0:00
+  Block time for position I (unassigned)..............: 200:25
+
+------------------- Calendar Day Analysis -------------------
+
+  Number of 1 day trips ..............................: 285
+  Number of 2 day trips ..............................: 224
+  Number of 3 day trips ..............................: 154
+  Number of 4 day trips ..............................:  50
+  Number of 5 day trips ..............................:  31
+  Number of 6 day trips ..............................:   6
+  Total number of trips ..............................: 750
+
+  Number of 1 day trips (all slots assigned)..........: 30
+  Number of 2 day trips (all slots assigned)..........:  8
+  Number of 3 day trips (all slots assigned)..........:  7
+  Number of 4 day trips (all slots assigned)..........:  1
+  Total number of trips (all slots assigned)..........: 46
+
+  Number of 1 day trips (at least one slot unassigned): 255
+  Number of 2 day trips (at least one slot unassigned): 216
+  Number of 3 day trips (at least one slot unassigned): 147
+  Number of 4 day trips (at least one slot unassigned):  49
+  Number of 5 day trips (at least one slot unassigned):  31
+  Number of 6 day trips (at least one slot unassigned):   6
+  Total number of trips (at least one slot unassigned): 704
+
+--------------------------------------------------------------
+
+  Cost function (map_cost_of_roster)......: matador_cost_of_roster
+
+---------------- Global Constraints Analysis ----------------
+
+    G1 : block_time_roster <= 48000  : 47925
+    G2 : block_time_total <= 48000   : 47925
+
+---------------------- End of Analysis ----------------------
+
+--- Matador runtime status report ---
+Current Solution.......: 13
+
+-------------------------------------------
+
+ImproveMethod iteration 13 [ 2001-04-24T18:34, 2001-05-01T18:34 ]
+  Number of active unassigned tasks   :   127
+  Number of active pre-assigned tasks :    12
+
+Creating solution Solution_14...
+
+Running ImproveMethod...
+Generating rosters...
+
+
+            0%       25%       50%       75%      100%
+            |         |         |         |         |
+Progress:   *****************************************
+
+GENERATION
+  Generated rosters.............: 48
+  Max per crew..................: 26
+  Average per crew..............:  4
+
+OPTIMIZATION
+  IP objective..................: 22402
+
+
+
+SOLUTION ANALYSIS for Solution_14 solution:
+-------------------------------------------
+There are no crew which have illegal rosters.
+
+There are no trips which have been illegally assigned.
+There are no legs which have been illegally assigned.
+There are no hard global constraints which have been violated.
+
+----------------------- Cost Analysis -----------------------
+
+  Assignment percentage...............................: 10
+
+  Total cost of plan..................................: 101302
+
+  Total cost of rosters...............................:    502
+  Total cost of unassigned slots......................: 110800
+  Total cost of unassigned crew.......................:      0
+  Total cost of broken trip constraints...............:      0
+  Total cost of broken leg constraints................:      0
+  Total cost of broken global constraints.............:      0
+
+  Number of crew with illegal rosters.................: 0
+  Number of broken hard trip constraints..............: 0
+  Number of broken hard leg constraints...............: 0
+  Number of broken hard global constraints............: 0
+
+--------------------- Numerical Analysis ---------------------
+
+  Number of crew (total)..............................: 12
+  Number of crew (assigned)...........................: 12
+  Number of crew (unassigned).........................:  0
+
+  Number of trips (total).............................: 750
+  Number of trips (assigned)..........................:  46
+  Number of trips (unassigned)........................: 704
+
+  Number of slots (total).............................: 1240
+  Number of slots (assigned)..........................:  132
+  Number of slots (unassigned)........................: 1108
+
+  Number of slots in position C (total)...............: 584
+  Number of slots in position C (assigned)............:  83
+  Number of slots in position C (unassigned)..........: 501
+
+  Number of slots in position P (total)...............: 621
+  Number of slots in position P (assigned)............:  49
+  Number of slots in position P (unassigned)..........: 572
+
+  Number of slots in position I (total)...............: 35
+  Number of slots in position I (assigned)............:  0
+  Number of slots in position I (unassigned)..........: 35
+
+  Number of broken soft trip constraints..............: 0
+  Number of broken soft leg constraints...............: 0
+  Number of broken soft global constraints............: 0
+
+-------------------- Block Time Analysis --------------------
+
+  Block time (total)..................................: 10945:15
+  Block time (assigned)...............................:   740:10
+  Block time (unassigned).............................: 10205:05
+
+  Block time for position C (total)...................: 5511:50
+  Block time for position C (assigned)................:  449:05
+  Block time for position C (unassigned)..............: 5062:45
+
+  Block time for position P (total)...................: 5233:00
+  Block time for position P (assigned)................:  291:05
+  Block time for position P (unassigned)..............: 4941:55
+
+  Block time for position I (total)...................: 200:25
+  Block time for position I (assigned)................:   0:00
+  Block time for position I (unassigned)..............: 200:25
+
+------------------- Calendar Day Analysis -------------------
+
+  Number of 1 day trips ..............................: 285
+  Number of 2 day trips ..............................: 224
+  Number of 3 day trips ..............................: 154
+  Number of 4 day trips ..............................:  50
+  Number of 5 day trips ..............................:  31
+  Number of 6 day trips ..............................:   6
+  Total number of trips ..............................: 750
+
+  Number of 1 day trips (all slots assigned)..........: 30
+  Number of 2 day trips (all slots assigned)..........:  8
+  Number of 3 day trips (all slots assigned)..........:  7
+  Number of 4 day trips (all slots assigned)..........:  1
+  Total number of trips (all slots assigned)..........: 46
+
+  Number of 1 day trips (at least one slot unassigned): 255
+  Number of 2 day trips (at least one slot unassigned): 216
+  Number of 3 day trips (at least one slot unassigned): 147
+  Number of 4 day trips (at least one slot unassigned):  49
+  Number of 5 day trips (at least one slot unassigned):  31
+  Number of 6 day trips (at least one slot unassigned):   6
+  Total number of trips (at least one slot unassigned): 704
+
+--------------------------------------------------------------
+
+  Cost function (map_cost_of_roster)......: matador_cost_of_roster
+
+---------------- Global Constraints Analysis ----------------
+
+    G1 : block_time_roster <= 48000  : 47925
+    G2 : block_time_total <= 48000   : 47925
+
+---------------------- End of Analysis ----------------------
+
+--- Matador runtime status report ---
+Current Solution.......: 14
+
+-------------------------------------------
+
+ImproveMethod iteration 14 [ 2001-04-26T18:34, 2001-05-03T18:34 ]
+  Number of active unassigned tasks   :    85
+  Number of active pre-assigned tasks :    12
+
+Creating solution Solution_15...
+
+Running ImproveMethod...
+Generating rosters...
+
+
+            0%       25%       50%       75%      100%
+            |         |         |         |         |
+Progress:   *****************************************
+
+GENERATION
+  Generated rosters.............: 24
+  Max per crew..................:  2
+  Average per crew..............:  2
+
+OPTIMIZATION
+  IP objective..................: 16302
+
+
+
+SOLUTION ANALYSIS for Solution_15 solution:
+-------------------------------------------
+There are no crew which have illegal rosters.
+
+There are no trips which have been illegally assigned.
+There are no legs which have been illegally assigned.
+There are no hard global constraints which have been violated.
+
+----------------------- Cost Analysis -----------------------
+
+  Assignment percentage...............................: 10
+
+  Total cost of plan..................................: 101302
+
+  Total cost of rosters...............................:    502
+  Total cost of unassigned slots......................: 110800
+  Total cost of unassigned crew.......................:      0
+  Total cost of broken trip constraints...............:      0
+  Total cost of broken leg constraints................:      0
+  Total cost of broken global constraints.............:      0
+
+  Number of crew with illegal rosters.................: 0
+  Number of broken hard trip constraints..............: 0
+  Number of broken hard leg constraints...............: 0
+  Number of broken hard global constraints............: 0
+
+--------------------- Numerical Analysis ---------------------
+
+  Number of crew (total)..............................: 12
+  Number of crew (assigned)...........................: 12
+  Number of crew (unassigned).........................:  0
+
+  Number of trips (total).............................: 750
+  Number of trips (assigned)..........................:  46
+  Number of trips (unassigned)........................: 704
+
+  Number of slots (total).............................: 1240
+  Number of slots (assigned)..........................:  132
+  Number of slots (unassigned)........................: 1108
+
+  Number of slots in position C (total)...............: 584
+  Number of slots in position C (assigned)............:  83
+  Number of slots in position C (unassigned)..........: 501
+
+  Number of slots in position P (total)...............: 621
+  Number of slots in position P (assigned)............:  49
+  Number of slots in position P (unassigned)..........: 572
+
+  Number of slots in position I (total)...............: 35
+  Number of slots in position I (assigned)............:  0
+  Number of slots in position I (unassigned)..........: 35
+
+  Number of broken soft trip constraints..............: 0
+  Number of broken soft leg constraints...............: 0
+  Number of broken soft global constraints............: 0
+
+-------------------- Block Time Analysis --------------------
+
+  Block time (total)..................................: 10945:15
+  Block time (assigned)...............................:   740:10
+  Block time (unassigned).............................: 10205:05
+
+  Block time for position C (total)...................: 5511:50
+  Block time for position C (assigned)................:  449:05
+  Block time for position C (unassigned)..............: 5062:45
+
+  Block time for position P (total)...................: 5233:00
+  Block time for position P (assigned)................:  291:05
+  Block time for position P (unassigned)..............: 4941:55
+
+  Block time for position I (total)...................: 200:25
+  Block time for position I (assigned)................:   0:00
+  Block time for position I (unassigned)..............: 200:25
+
+------------------- Calendar Day Analysis -------------------
+
+  Number of 1 day trips ..............................: 285
+  Number of 2 day trips ..............................: 224
+  Number of 3 day trips ..............................: 154
+  Number of 4 day trips ..............................:  50
+  Number of 5 day trips ..............................:  31
+  Number of 6 day trips ..............................:   6
+  Total number of trips ..............................: 750
+
+  Number of 1 day trips (all slots assigned)..........: 30
+  Number of 2 day trips (all slots assigned)..........:  8
+  Number of 3 day trips (all slots assigned)..........:  7
+  Number of 4 day trips (all slots assigned)..........:  1
+  Total number of trips (all slots assigned)..........: 46
+
+  Number of 1 day trips (at least one slot unassigned): 255
+  Number of 2 day trips (at least one slot unassigned): 216
+  Number of 3 day trips (at least one slot unassigned): 147
+  Number of 4 day trips (at least one slot unassigned):  49
+  Number of 5 day trips (at least one slot unassigned):  31
+  Number of 6 day trips (at least one slot unassigned):   6
+  Total number of trips (at least one slot unassigned): 704
+
+--------------------------------------------------------------
+
+  Cost function (map_cost_of_roster)......: matador_cost_of_roster
+
+---------------- Global Constraints Analysis ----------------
+
+    G1 : block_time_roster <= 48000  : 47925
+    G2 : block_time_total <= 48000   : 47925
+
+---------------------- End of Analysis ----------------------
+
+--- Matador runtime status report ---
+Current Solution.......: 15
+
+-------------------------------------------
+
+ImproveMethod iteration 15 [ 2001-04-28T18:34, 2001-05-04T21:01 ]
+  Number of active unassigned tasks   :    50
+  Number of active pre-assigned tasks :    12
+
+Creating solution Solution_16...
+
+Running ImproveMethod...
+Generating rosters...
+
+
+            0%       25%       50%       75%      100%
+            |         |         |         |         |
+Progress:   *****************************************
+
+GENERATION
+  Generated rosters.............: 24
+  Max per crew..................:  2
+  Average per crew..............:  2
+
+OPTIMIZATION
+  IP objective..................: 10102
+
+
+
+SOLUTION ANALYSIS for Solution_16 solution:
+-------------------------------------------
+There are no crew which have illegal rosters.
+
+There are no trips which have been illegally assigned.
+There are no legs which have been illegally assigned.
+There are no hard global constraints which have been violated.
+
+----------------------- Cost Analysis -----------------------
+
+  Assignment percentage...............................: 10
+
+  Total cost of plan..................................: 101302
+
+  Total cost of rosters...............................:    502
+  Total cost of unassigned slots......................: 110800
+  Total cost of unassigned crew.......................:      0
+  Total cost of broken trip constraints...............:      0
+  Total cost of broken leg constraints................:      0
+  Total cost of broken global constraints.............:      0
+
+  Number of crew with illegal rosters.................: 0
+  Number of broken hard trip constraints..............: 0
+  Number of broken hard leg constraints...............: 0
+  Number of broken hard global constraints............: 0
+
+--------------------- Numerical Analysis ---------------------
+
+  Number of crew (total)..............................: 12
+  Number of crew (assigned)...........................: 12
+  Number of crew (unassigned).........................:  0
+
+  Number of trips (total).............................: 750
+  Number of trips (assigned)..........................:  46
+  Number of trips (unassigned)........................: 704
+
+  Number of slots (total).............................: 1240
+  Number of slots (assigned)..........................:  132
+  Number of slots (unassigned)........................: 1108
+
+  Number of slots in position C (total)...............: 584
+  Number of slots in position C (assigned)............:  83
+  Number of slots in position C (unassigned)..........: 501
+
+  Number of slots in position P (total)...............: 621
+  Number of slots in position P (assigned)............:  49
+  Number of slots in position P (unassigned)..........: 572
+
+  Number of slots in position I (total)...............: 35
+  Number of slots in position I (assigned)............:  0
+  Number of slots in position I (unassigned)..........: 35
+
+  Number of broken soft trip constraints..............: 0
+  Number of broken soft leg constraints...............: 0
+  Number of broken soft global constraints............: 0
+
+-------------------- Block Time Analysis --------------------
+
+  Block time (total)..................................: 10945:15
+  Block time (assigned)...............................:   740:10
+  Block time (unassigned).............................: 10205:05
+
+  Block time for position C (total)...................: 5511:50
+  Block time for position C (assigned)................:  449:05
+  Block time for position C (unassigned)..............: 5062:45
+
+  Block time for position P (total)...................: 5233:00
+  Block time for position P (assigned)................:  291:05
+  Block time for position P (unassigned)..............: 4941:55
+
+  Block time for position I (total)...................: 200:25
+  Block time for position I (assigned)................:   0:00
+  Block time for position I (unassigned)..............: 200:25
+
+------------------- Calendar Day Analysis -------------------
+
+  Number of 1 day trips ..............................: 285
+  Number of 2 day trips ..............................: 224
+  Number of 3 day trips ..............................: 154
+  Number of 4 day trips ..............................:  50
+  Number of 5 day trips ..............................:  31
+  Number of 6 day trips ..............................:   6
+  Total number of trips ..............................: 750
+
+  Number of 1 day trips (all slots assigned)..........: 30
+  Number of 2 day trips (all slots assigned)..........:  8
+  Number of 3 day trips (all slots assigned)..........:  7
+  Number of 4 day trips (all slots assigned)..........:  1
+  Total number of trips (all slots assigned)..........: 46
+
+  Number of 1 day trips (at least one slot unassigned): 255
+  Number of 2 day trips (at least one slot unassigned): 216
+  Number of 3 day trips (at least one slot unassigned): 147
+  Number of 4 day trips (at least one slot unassigned):  49
+  Number of 5 day trips (at least one slot unassigned):  31
+  Number of 6 day trips (at least one slot unassigned):   6
+  Total number of trips (at least one slot unassigned): 704
+
+--------------------------------------------------------------
+
+  Cost function (map_cost_of_roster)......: matador_cost_of_roster
+
+---------------- Global Constraints Analysis ----------------
+
+    G1 : block_time_roster <= 48000  : 47925
+    G2 : block_time_total <= 48000   : 47925
+
+---------------------- End of Analysis ----------------------
+
+--- Matador runtime status report ---
+Current Solution.......: 16
+
+-------------------------------------------
+
+
+-- End --
