@@ -11,7 +11,10 @@ self_test:small
 
 # Create a "historical repository" to test that functionality...
 [batch_result_repository]
-self_test:history
+self_test:repository
+
+[historical_report_location]
+default:report
 
 # Add a recognised section with no end marker last, to catch config file bug...
 [gui_entry_overrides]
