@@ -1,5 +1,5 @@
-TextTest will write diagnostics in /users/geoff/texttesttmp/texttestgeoff15Dec164600/TestSelf/DiagnosticHandling/Console/DiagFailureJava based on file at /users/geoff/work/master/Testing/Automatic/texttest/log4py.conf
-Using Application DIAG, version java.dummy, checkout /users/geoff/texttesttmp/texttestgeoff15Dec164600/TestSelf/DiagnosticHandling/Console/DiagFailureJava/TargetApp/
+TextTest will write diagnostics in /users/geoff/texttesttmp/texttestgeoff02Feb151908/TestSelf/DiagnosticHandling/Console/DiagFailureJava based on file at /users/geoff/work/master/Testing/Automatic/texttest/log4py.conf
+Using Application DIAG, version java.dummy, checkout /users/geoff/texttesttmp/texttestgeoff02Feb151908/TestSelf/DiagnosticHandling/Console/DiagFailureJava/TargetApp/
 Note: Running with Diagnostics on, so performance checking is disabled!
 Running DIAG test-suite TargetApp
   Running DIAG test-case TestWithDiag
@@ -8,12 +8,16 @@ Comparing differences for DIAG test-suite TargetApp
   DIAG test-case TestWithDiag FAILED : new results in third, differences in first,second
   View details(v), Save Version java.dummy(1), Save Version java(2), Save Version dummy(3), Save(s) or continue(any other key)?
 ------------------ Differences in first --------------------
-- Dummy file
-+ [main            ] INFO  firstdiag - Some information
-+ [main            ] DEBUG firstdiag - Some debug stuff
+1c1,2
+< Dummy file
+---
+> [main            ] INFO  firstdiag - Some information
+> [main            ] DEBUG firstdiag - Some debug stuff
 ------------------ Differences in second --------------------
-- [ seconddiag.Main ] INFO: Some information
-+ [main            ] INFO  seconddiag - Some information
+1c1
+< [ seconddiag.Main ] INFO: Some information
+---
+> [main            ] INFO  seconddiag - Some information
 ------------------ New result in third --------------------
 [main            ] INFO  thirddiag - Some information
   Save Version java.dummy(1), Save Version java(2), Save Version dummy(3), Save(s) or continue(any other key)?

@@ -5,7 +5,7 @@ Mapping tests in tree view...
 Viewing test DIAG test-suite TargetApp
 Adding file log4py.conf under heading 'Definition Files', coloured white
 Adding file testsuite.diag under heading 'Definition Files', coloured white
-Top Window title set to TextTest dynamic GUI (tests started at 24Jan16:53:18)
+Top Window title set to TextTest dynamic GUI (tests started at 02Feb15:19:54)
 
 Waiting for application event 'completion of test actions' to occur.
 Redrawing test TestWithDiag coloured white
@@ -26,12 +26,12 @@ Adding file third.diag under heading 'Diagnostics', coloured red
 ---------- Text Info Window ----------
 Test FAILED :
 ------------------ Differences in first --------------------
-- [ firstdiag.Main ] INFO: Some information <DIFF>
-?                                          ------- 
-+ [ firstdiag.Main ] INFO: Some information
-- [ firstdiag.Main ] DEBUG: Some debug stuff <DIFF>
-?                                           ------- 
-+ [ firstdiag.Main ] DEBUG: Some debug stuff
+1,2c1,2
+< [ firstdiag.Main ] INFO: Some information <DIFF>
+< [ firstdiag.Main ] DEBUG: Some debug stuff <DIFF>
+---
+> [ firstdiag.Main ] INFO: Some information
+> [ firstdiag.Main ] DEBUG: Some debug stuff
 ------------------ New result in third --------------------
 [ thirddiag.Main ] INFO: Some information
 --------------------------------------
@@ -61,12 +61,12 @@ Adding file third.diag under heading 'Diagnostics', coloured green
 ---------- Text Info Window ----------
 Test FAILED :
 ------------------ Differences in first --------------------
-- [ firstdiag.Main ] INFO: Some information <DIFF>
-?                                          ------- 
-+ [ firstdiag.Main ] INFO: Some information
-- [ firstdiag.Main ] DEBUG: Some debug stuff <DIFF>
-?                                           ------- 
-+ [ firstdiag.Main ] DEBUG: Some debug stuff
+1,2c1,2
+< [ firstdiag.Main ] INFO: Some information <DIFF>
+< [ firstdiag.Main ] DEBUG: Some debug stuff <DIFF>
+---
+> [ firstdiag.Main ] INFO: Some information
+> [ firstdiag.Main ] DEBUG: Some debug stuff
 ------------------ New result in third --------------------
 [ thirddiag.Main ] INFO: Some information
 --------------------------------------

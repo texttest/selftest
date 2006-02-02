@@ -1,5 +1,5 @@
-TextTest will write diagnostics in /users/geoff/texttesttmp/texttestgeoff17May171945/TestSelf/RunDependentText/BetweenMarkers based on file at /users/geoff/work/master/Testing/Automatic/texttest/log4py.conf
-Using Application RDT, version markers, checkout /users/geoff/texttesttmp/texttestgeoff17May171945/TestSelf/RunDependentText/BetweenMarkers/TargetApp/./
+TextTest will write diagnostics in /users/geoff/texttesttmp/texttestgeoff02Feb145518/TestSelf/RunDependentText/BetweenMarkers based on file at /users/geoff/work/master/Testing/Automatic/texttest/log4py.conf
+Using Application RDT, version markers, checkout /users/geoff/texttesttmp/texttestgeoff02Feb145518/TestSelf/RunDependentText/BetweenMarkers/TargetApp/
 Running RDT test-suite TargetApp
   Running RDT test-case Test
 Comparing differences for RDT test-suite TargetApp
@@ -7,36 +7,36 @@ Comparing differences for RDT test-suite TargetApp
   RDT test-case Test FAILED : differences in output
   View details(v), Save Version markers(1), Save(s) or continue(any other key)?
 ------------------ Differences in output --------------------
-- Sometimes we remove the second line...
-+ Sometimes we remove line number 2...
-  
-- And other times we like to remove things like today's date, 2003-11-28T10:46
-+ Sometimes we remove today's date, 2003-12-01T23:24
-  
-- We need to be able to match on trailing spaces   
-?                                                -- 
-+ We need to be able to match on trailing spaces 
--    and also on leading spaces
-? --                            
-+  and also on leading spaces
-  
-- Sometimes several lines must go:
-- Here
-- There
-- Everywhere
-+ Or even several lines at once, like in this table:
-+    Here     are     some     columns
-+    That    have    spacing   between
-+ Repeating     3     3     3     3
-  
-- Other times between markers, starting section:
-? ^^^ --                                       - 
-+ Sometimes between markers, starting section
-? ^^^                                         
-- End Section
-+ End Section Here
-?            +++++ 
-  
+2c2
+< Sometimes we remove the second line...
+---
+> Sometimes we remove line number 2...
+4c4
+< And other times we like to remove things like today's date, 2003-11-28T10:46
+---
+> Sometimes we remove today's date, 2003-12-01T23:24
+6,7c6,7
+< We need to be able to match on trailing spaces   
+<    and also on leading spaces
+---
+> We need to be able to match on trailing spaces 
+>  and also on leading spaces
+9,12c9,12
+< Sometimes several lines must go:
+< Here
+< There
+< Everywhere
+---
+> Or even several lines at once, like in this table:
+>    Here     are     some     columns
+>    That    have    spacing   between
+> Repeating     3     3     3     3
+14,15c14,15
+< Other times between markers, starting section:
+< End Section
+---
+> Sometimes between markers, starting section
+> End Section Here
 <See also tkdiff window for details of output>
   Save Version markers(1), Save(s) or continue(any other key)?
-Killed process 17062 with signal 2
+Killed process 2543 with signal 2

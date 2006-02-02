@@ -17,7 +17,7 @@ Mapping tests in tree view...
 
 Viewing test DIP test-suite TargetApp
 Adding file testsuite.dip under heading 'Definition Files', coloured white
-Top Window title set to TextTest dynamic GUI (tests started at 24Jan16:53:14)
+Top Window title set to TextTest dynamic GUI (tests started at 02Feb14:59:33)
 
 Waiting for application event 'completion of test actions' to occur.
 Redrawing test S01.99 coloured red
@@ -78,36 +78,36 @@ Adding file output.dip under heading 'Comparison Files', coloured red
 ---------- Text Info Window ----------
 Test FAILED :
 ------------------ Differences in output --------------------
-- Austria: Eas -> Smy                (*bounce*)
-- Austria: Bul -> Con                (*works*)
-- Austria: Ser -> Rum                (*works*)
-- Austria: Alb -> Gre                (*works*)
-- Austria: Adr -> Alb                (*works*)
-- Austria: Tri -> Vie                (*works*)
-?                 ^^^                          
-+ Austria: Tri -> Tyr                (*works*)
-?                 ^^^                          
-- Austria: Tyr -> Mun                (*works*)
-+ Austria: Vie SUPPORT Tri -> Tyr    (*works*)
-+ Austria: Adr -> Ven                (*bounce*)
-+ Austria: Gre SUPPORT Bul HOLD      (*works*)
-+ Austria: Bul SUPPORT Con HOLD      (*works*)
-+ Austria: Smy SUPPORT Con HOLD      (*cut*)
-  
-- England: Nwy -> StP                (*bounce*)
-- England: Nth HOLD                  (*works*)
-?          ^^^                                 
-+ England: Yor HOLD                  (*works*)
-?          ^^^                                 
-- England: Den SUPPORT Kie HOLD      (*works*)
-- England: Swe HOLD                  (*works*)
-- England: Ska SUPPORT Swe HOLD      (*works*)
-- England: Nrg -> Bar                (*works*)
-?           ^^    ^^^                          
-+ England: Nth -> Den                (*works*)
-?           ^^    ^^^                          
-+ England: Ska SUPPORT Nth -> Den    (*works*)
-+ England: Swe -> Bal                (*bounce, dislodged*)
+1,21c1,19
+< Austria: Eas -> Smy                (*bounce*)
+< Austria: Bul -> Con                (*works*)
+< Austria: Ser -> Rum                (*works*)
+< Austria: Alb -> Gre                (*works*)
+< Austria: Adr -> Alb                (*works*)
+< Austria: Tri -> Vie                (*works*)
+< Austria: Tyr -> Mun                (*works*)
+< 
+< England: Nwy -> StP                (*bounce*)
+< England: Nth HOLD                  (*works*)
+< England: Den SUPPORT Kie HOLD      (*works*)
+< England: Swe HOLD                  (*works*)
+< England: Ska SUPPORT Swe HOLD      (*works*)
+< England: Nrg -> Bar                (*works*)
+< England: Kie SUPPORT Ber HOLD      (*works*)
+< 
+< France:  Ber SUPPORT Mun HOLD      (*cut*)
+< France:  Mun SUPPORT Ber HOLD      (*dislodged*)
+< France:  Bur SUPPORT Mun HOLD      (*works*)
+< France:  Mar -> Pie                (*works*)
+< France:  Ion -> Adr                (*works*)
+---
+> Austria: Tri -> Tyr                (*works*)
+> Austria: Vie SUPPORT Tri -> Tyr    (*works*)
+> Austria: Adr -> Ven                (*bounce*)
+> Austria: Gre SUPPORT Bul HOLD      (*works*)
+> Austria: Bul SUPPORT Con HOLD      (*works*)
+> Austria: Smy SUPPORT Con HOLD      (*cut*)
+>
 --------------------------------------
 
 Creating notebook page for 'Viewing'
