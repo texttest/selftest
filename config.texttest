@@ -1,3 +1,7 @@
+
+##==============================================================================
+##Stuff that only works at Carmen!
+
 # Path to the binary, at Carmen
 binary:${TEXTTEST_CHECKOUT}/Testing/TextTest/texttest.py
 
@@ -15,11 +19,6 @@ queue_system_module:SGE
 #virtual_display_machine:reedsville
 virtual_display_machine:fougamou
 virtual_display_machine:singleton
-
-unsaveable_version:master
-unsaveable_version:i386_linux
-unsaveable_version:lsf
-unsaveable_version:sge
 
 # For each "special batch" run, specify recipients, time limit, architectures and versions 
 # Not present means $USER as recipient, no time limit, all versions and all architectures accepted
@@ -54,9 +53,18 @@ reconnect_to_previous_run:nightjob
 request_lsf_queue:waiting
 [end]
 
-[gui_entry_overrides]
-auto-replay_in_dynamic_gui:1
-[end]
+[batch_result_repository]
+default:/carm/proj/texttest/html/TestStateRepository
+
+[historical_report_location]
+default:/carm/proj/texttest/html/TestResults
+
+unsaveable_version:master
+unsaveable_version:i386_linux
+## ================================================================
+## end of stuff only for use at Carmen
+unsaveable_version:lsf
+unsaveable_version:sge
 
 [run_dependent_text]
 output*:checkout{WORD -1}
@@ -203,8 +211,6 @@ extra_version:lsf
 # Automatically collapse successful test suites?
 auto_collapse_successful:1
 
-[batch_result_repository]
-default:/carm/proj/texttest/html/TestStateRepository
-
-[historical_report_location]
-default:/carm/proj/texttest/html/TestResults
+[gui_entry_overrides]
+auto-replay_in_dynamic_gui:1
+[end]

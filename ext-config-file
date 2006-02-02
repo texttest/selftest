@@ -1,3 +1,7 @@
+
+##================================
+## Stuff only useful outside Carmen
+
 # Path to the binary under test
 binary:${SOURCE_PATH}/texttest.py
 
@@ -5,7 +9,8 @@ binary:${SOURCE_PATH}/texttest.py
 view_program:wordpad
 view_program:emacs
 
-# But don't save them as a separate version
+## ================================================================
+## end of stuff only for use externally to Carmen
 unsaveable_version:lsf
 unsaveable_version:sge
 
@@ -15,11 +20,14 @@ output:BadApplication{WORD -1}
 output:Reconnecting to test results{WORD -1}
 output:Faking start
 output:not a core dump{WORD 1}
+output:test-case.* on .*new results.*missing results.*differences{WORD -13}
 output:test-case.* on .*new results.*differences{WORD -9}
+output:test-case.* on .*missing results.*differences{WORD -9}
 output:test-case.* on .*new results{WORD -6}
+output:test-case.* on .*missing results{WORD -6}
 output:test-case.* on .*differences{WORD -5}
 output:test-case.* on .*:${WORD -2}
-output:still in use
+output:second to retry
 output:creating batch report{WORD 2}
 output:Killing running test{WORD -1}
 output*:TextTest will write diagnostics
@@ -34,14 +42,14 @@ output:What is your name{LINES 3}
 targetReport: on .*test-case.*under{WORD -7}
 targetReport:^[0-9][0-9][0-9][0-9][0-9][0-9]{WORD 1}
 targetReport:{LINE 1}
-targetReport:^\+
-targetReport:^\?
+targetReport:^\>
 targetReport:% faster{WORD -2}
 collectReport:^From:{WORD 2}
 collectReport:^To:{WORD 2}
 collectReport:^Subject:{WORD 2}
 catalogue:.nfs
-catalogue:[0-9][0-9][A-Z][a-z][a-z][0-9][0-9][0-9][0-9][0-9][0-9]
+catalogue:[^-]*[0-9][0-9][A-Z][a-z][a-z][0-9][0-9][0-9][0-9][0-9][0-9]{REPLACE <texttest tmp dir>}
+catalogue:[0-9][0-9][A-Z][a-z][a-z][0-9][0-9][0-9][0-9]{REPLACE <today's date>}
 # Files that shouldn't mean anything...
 catalogue:cmd
 catalogue:unixperf
@@ -53,12 +61,18 @@ errors:CountTest.__del__
 errors:fakeuser under{WORD -1}
 errors:TransSocketUNIX
 errors:gtk.Combo
+errors:Import failed
+errors:Warning: Tried to connect to session manager
+*gui_log:{INTERNAL writedir}{REPLACE <test write dir>}
+dynamic_gui_log:[^/]*[0-9][0-9][A-Z][a-z][a-z][0-9][0-9][0-9][0-9][0-9][0-9]{REPLACE <target tmp dir>}
 # Hard to rely on exactly how much faster things are...
 dynamic_gui_log:% faster{WORD 3}
 dynamic_gui_log:Running on{WORD -1}
 dynamic_gui_log:succeeded on{WORD -1}
+dynamic_gui_log:FAILED on{WORD -2}
 dynamic_gui_log:time.*:.*sec.
 dynamic_gui_log:^\?
+dynamic_gui_log:tests started at{WORD -1}
 jusecaseprops:record{WORD -1}
 [end]
 
@@ -86,12 +100,22 @@ full_name:TextTest
 
 # List of (generally directories) to copy from the test directory to the write directory
 # because we want to write there.
-copy_test_path:TargetApp
+partial_copy_test_path:TargetApp
+partial_copy_test_path:texttesttmp
+partial_copy_test_path:repository
+
+[test_data_environment]
+TargetApp:TEXTTEST_HOME
+texttesttmp:TEXTTEST_TMP
+personaldir:TEXTTEST_PERSONAL_CONFIG
+[end]
 
 # List of constant input files to create links to. Will copy them on Windows as symbolic links
 # don't exist.
-link_test_path:wibble.py
 link_test_path:config
+link_test_path:FakeBugcli/bugcli
+link_test_path:FakeBugcli/bugcli.py
+link_test_path:personaldir
 
 # Tell it that we want to track what files are created
 create_catalogues:true
@@ -108,18 +132,33 @@ slow_motion_replay_speed:2
 # Things to collate
 [collate_file]
 targetMem:TargetApp/Failures/memory.mem
-targetReport:TargetApp/*/batchreport*
-collectReport:TargetApp/batchreport*
-shortcut:TargetApp/*.shortcut
-outputrep:TargetApp/*/replaylog
-jusecaseprops:TargetApp/*/*/jusecase.properties
-#useful for debugging...
-#recerrors:TargetApp/*/record_errors.log
+targetReport:texttesttmp/*/batchreport*
+collectReport:texttesttmp/batchreport*
+errorsrec:texttesttmp/*/record_errors.log
+outputrec:texttesttmp/*/record_run.log
+errorsrep:texttesttmp/*/replay_errors.log
+outputrep:texttesttmp/*/replay_run.log
+jusecaseprops:texttesttmp/*/*/jusecase.properties
+filterfile*:TargetApp/filter_files/filter*
+overview:report/*/test_[a-z]*.html
+overview_all:report/*/test_*_all.html
+overview_1day:report/*/test_*_18Jan2006.html
 [end]
 
+# This is a hack to be able to test recording, don't compare it if it appears...
+discard_file:record_usecase
+
 definition_file_stems:dynamic_usecase
+definition_file_stems:record_usecase
 definition_file_stems:replay_usecase
 
 # Run the LSF and SGE tests too...
 extra_version:sge
 extra_version:lsf
+
+# Automatically collapse successful test suites?
+auto_collapse_successful:1
+
+[gui_entry_overrides]
+auto-replay_in_dynamic_gui:1
+[end]
