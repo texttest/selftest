@@ -258,6 +258,12 @@
 </InteractionData>
 
 <Interaction type="CommandState" key="" value="(areaId|0)(button|0)(row|0)(subWinId|3)(tim|3)" />
+<Command label="Window Label" script="CuiGetAreaModeString(gpc_info,CuiArea0,pulldown0,25)" level="3">
+<CommandAttributes label="Window Label" script="CuiGetAreaModeString(gpc_info,CuiArea0,pulldown0,25)" level="3"  returnVal="0"/>
+</Command>
+<Command label="Window Label" script="CuiGetAreaModeString(gpc_info,CuiArea1,pulldown1,25)" level="3">
+<CommandAttributes label="Window Label" script="CuiGetAreaModeString(gpc_info,CuiArea1,pulldown1,25)" level="3"  returnVal="1"/>
+</Command>
 <CommandAttributes label="Undo" script="CuiUndo(1)" level="0"  returnVal="100"/>
 </Command>
 <Command label="Undo" script="CuiUndo(1)" level="0">
@@ -270,6 +276,12 @@
 </InteractionData>
 
 <Interaction type="CommandState" key="" value="(areaId|0)(button|0)(row|0)(subWinId|2)(tim|27SEP2005 00:50)" />
+<Command label="Window Label" script="CuiGetAreaModeString(gpc_info,CuiArea0,pulldown0,25)" level="3">
+<CommandAttributes label="Window Label" script="CuiGetAreaModeString(gpc_info,CuiArea0,pulldown0,25)" level="3"  returnVal="0"/>
+</Command>
+<Command label="Window Label" script="CuiGetAreaModeString(gpc_info,CuiArea1,pulldown1,25)" level="3">
+<CommandAttributes label="Window Label" script="CuiGetAreaModeString(gpc_info,CuiArea1,pulldown1,25)" level="3"  returnVal="1"/>
+</Command>
 <CommandAttributes label="Undo" script="CuiUndo(1)" level="0"  returnVal="100"/>
 </Command>
 <Command label="Undo" script="CuiUndo(1)" level="0">
@@ -282,6 +294,12 @@
 </InteractionData>
 
 <Interaction type="CommandState" key="" value="(areaId|0)(button|0)(row|0)(subWinId|2)(tim|27SEP2005 00:50)" />
+<Command label="Window Label" script="CuiGetAreaModeString(gpc_info,CuiArea0,pulldown0,25)" level="3">
+<CommandAttributes label="Window Label" script="CuiGetAreaModeString(gpc_info,CuiArea0,pulldown0,25)" level="3"  returnVal="0"/>
+</Command>
+<Command label="Window Label" script="CuiGetAreaModeString(gpc_info,CuiArea1,pulldown1,25)" level="3">
+<CommandAttributes label="Window Label" script="CuiGetAreaModeString(gpc_info,CuiArea1,pulldown1,25)" level="3"  returnVal="1"/>
+</Command>
 <CommandAttributes label="Undo" script="CuiUndo(1)" level="0"  returnVal="100"/>
 </Command>
 <Command label="Hide and Show CRRs/Hide Marked Trips" script="CuiHideCrrs(gpc_info,CuiWhichArea,&quot;MARKED&quot;)" level="0">
@@ -318,6 +336,12 @@
 </InteractionData>
 
 <Interaction type="CommandState" key="" value="(areaId|0)(button|0)(row|0)(subWinId|2)(tim|27SEP2005 01:40)" />
+<Command label="Window Label" script="CuiGetAreaModeString(gpc_info,CuiArea0,pulldown0,25)" level="3">
+<CommandAttributes label="Window Label" script="CuiGetAreaModeString(gpc_info,CuiArea0,pulldown0,25)" level="3"  returnVal="0"/>
+</Command>
+<Command label="Window Label" script="CuiGetAreaModeString(gpc_info,CuiArea1,pulldown1,25)" level="3">
+<CommandAttributes label="Window Label" script="CuiGetAreaModeString(gpc_info,CuiArea1,pulldown1,25)" level="3"  returnVal="1"/>
+</Command>
 <CommandAttributes label="Undo" script="CuiUndo(1)" level="0"  returnVal="100"/>
 </Command>
 <Command label="Undo" script="CuiUndo(1)" level="0">
@@ -330,6 +354,12 @@
 </InteractionData>
 
 <Interaction type="CommandState" key="" value="(areaId|0)(button|0)(row|0)(subWinId|2)(tim|27SEP2005 01:40)" />
+<Command label="Window Label" script="CuiGetAreaModeString(gpc_info,CuiArea0,pulldown0,25)" level="3">
+<CommandAttributes label="Window Label" script="CuiGetAreaModeString(gpc_info,CuiArea0,pulldown0,25)" level="3"  returnVal="0"/>
+</Command>
+<Command label="Window Label" script="CuiGetAreaModeString(gpc_info,CuiArea1,pulldown1,25)" level="3">
+<CommandAttributes label="Window Label" script="CuiGetAreaModeString(gpc_info,CuiArea1,pulldown1,25)" level="3"  returnVal="1"/>
+</Command>
 <CommandAttributes label="Undo" script="CuiUndo(1)" level="0"  returnVal="100"/>
 </Command>
 <Command label="Undo" script="CuiUndo(1)" level="0">
@@ -342,6 +372,12 @@
 </InteractionData>
 
 <Interaction type="CommandState" key="" value="(areaId|0)(button|0)(row|0)(subWinId|2)(tim|27SEP2005 01:40)" />
+<Command label="Window Label" script="CuiGetAreaModeString(gpc_info,CuiArea0,pulldown0,25)" level="3">
+<CommandAttributes label="Window Label" script="CuiGetAreaModeString(gpc_info,CuiArea0,pulldown0,25)" level="3"  returnVal="0"/>
+</Command>
+<Command label="Window Label" script="CuiGetAreaModeString(gpc_info,CuiArea1,pulldown1,25)" level="3">
+<CommandAttributes label="Window Label" script="CuiGetAreaModeString(gpc_info,CuiArea1,pulldown1,25)" level="3"  returnVal="1"/>
+</Command>
 <CommandAttributes label="Undo" script="CuiUndo(1)" level="0"  returnVal="100"/>
 </Command>
 <Command label="Undo" script="CuiUndo(1)" level="0">
@@ -354,6 +390,12 @@
 </InteractionData>
 
 <Interaction type="CommandState" key="" value="(areaId|0)(button|0)(row|0)(subWinId|2)(tim|27SEP2005 01:40)" />
+<Command label="Window Label" script="CuiGetAreaModeString(gpc_info,CuiArea0,pulldown0,25)" level="3">
+<CommandAttributes label="Window Label" script="CuiGetAreaModeString(gpc_info,CuiArea0,pulldown0,25)" level="3"  returnVal="0"/>
+</Command>
+<Command label="Window Label" script="CuiGetAreaModeString(gpc_info,CuiArea1,pulldown1,25)" level="3">
+<CommandAttributes label="Window Label" script="CuiGetAreaModeString(gpc_info,CuiArea1,pulldown1,25)" level="3"  returnVal="1"/>
+</Command>
 <CommandAttributes label="Undo" script="CuiUndo(1)" level="0"  returnVal="100"/>
 </Command>
 <Command label="Window 1/Show Trips" script="CuiDisplayObjects(gpc_info,CuiArea0,CrrMode,CuiShowAll)" level="0">
@@ -390,6 +432,12 @@
 </InteractionData>
 
 <Interaction type="CommandState" key="" value="(areaId|0)(button|0)(row|0)(subWinId|1)(tim|27SEP2005 12:00)" />
+<Command label="Window Label" script="CuiGetAreaModeString(gpc_info,CuiArea0,pulldown0,25)" level="3">
+<CommandAttributes label="Window Label" script="CuiGetAreaModeString(gpc_info,CuiArea0,pulldown0,25)" level="3"  returnVal="0"/>
+</Command>
+<Command label="Window Label" script="CuiGetAreaModeString(gpc_info,CuiArea1,pulldown1,25)" level="3">
+<CommandAttributes label="Window Label" script="CuiGetAreaModeString(gpc_info,CuiArea1,pulldown1,25)" level="3"  returnVal="1"/>
+</Command>
 <CommandAttributes label="Undo" script="CuiUndo(1)" level="0"  returnVal="100"/>
 </Command>
 <Command label="Hide and Show CRRs/Reveal and add hidden CRRs" script="CuiRevealAllCrrs(gpc_info,CuiWhichArea)" level="0">
