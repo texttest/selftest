@@ -10,6 +10,12 @@ BatchReportTextBug
 # Make sure bug numbers that don't exist don't fool us
 BatchReportUnknownBug
 
+# Check that bugs aren't reported if test succeeds
+BatchSuccessNoBug
+
+# Make sure known bugs are only triggered if the indicated file is different
+OtherFileDiffNoBug
+
 # Check we don't die with nonsense bugs
 BadBugzillaFile
 
