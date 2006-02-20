@@ -1,4 +1,4 @@
-TextTest will write diagnostics in /users/geoff/texttesttmp/texttest.sgegeoff16Dec145131/carmen/matador/RaveParameterOverride based on file at /users/geoff/work/master/Testing/Automatic/texttest/log4py.conf
+TextTest will write diagnostics in /users/geoff/texttesttmp/texttest.sgegeoff20Feb173447/carmen/matador/Running/RaveParameterOverride based on file at /users/geoff/work/master/Testing/Automatic/texttest/log4py.conf
 Using Application Matador, version badoverride, checkout /carm/proj/texttest/selftest_data
 Note: Running with Diagnostics on, so performance checking is disabled!
 Submitting Rule Builds for Matador test-suite TargetApp to SGE queues
@@ -7,8 +7,8 @@ Submitting Matador test-suite TargetApp to SGE queues
   Submitting Matador test-suite ArtificialUser to SGE queues
     Submitting Matador test-case matador_2             to SGE queue short, requesting model=Opteron*,carmarch="*i386_linux*"
     Submitting Matador test-case generate_in_subperiod to SGE queue short, requesting model=Opteron*,carmarch="*i386_linux*"
-    Evaluating Matador test-case matador_2             (on catalogue.cas,errors.cas,output.cas,solution.cas,crewmembers.cas,inputlegs.cas,inputrosters.cas,inputtrips.cas,outputrosters.cas,parameters.cas,rulefailures.cas)
-    Matador test-case matador_2             FAILED on knoxville : differences in inputlegs,inputrosters,inputtrips,outputrosters,parameters,rulefailures
+    Evaluating Matador test-case matador_2             (on catalogue.cas,errors.cas,output.cas,solution.cas,crewmembers.cas,inputlegs.cas,inputrosters.cas,inputtrips.cas,parameters.cas,rulefailures.cas)
+    Matador test-case matador_2             FAILED on townsville : differences in inputlegs,inputrosters,inputtrips,parameters,rulefailures
     View details(v), Save Version badoverride(1), Save(s) or continue(any other key)?
 ------------------ Differences in inputlegs --------------------
 2,2037c2,2036
@@ -103,37 +103,6 @@ Submitting Matador test-suite TargetApp to SGE queues
 < [    85 2001-04-02T13:55  ARN  KSD 2001-04-02T14:45  ]
 < [    86 2001-04-02T15:20  KSD  ARN 2001-04-02T16:10  ]
 < [    98 2001-04-02T17:35  ARN  OER 2001-04-02T18:40  ]
------------------- Differences in outputrosters --------------------
-1c1,18
-< CREW MEMBERS : [ ARKE 85868 ]
----
-> Rotation output, requirement : ARKE 85868 P
-> << (P)[  199  4C 2001-04-02T12:20  ARN  ARN 2001-04-02T20:05 P ]
-> (P)[  200 10C 2001-04-03T11:20  ARN  ARN 2001-04-04T20:05 P ]
-> (P)[  201 14C 2001-04-05T17:20  ARN  ARN 2001-04-09T10:35 P ]
-> (P)[   91  6C 2001-04-11T07:15  CPH  CPH 2001-04-12T11:40 C/P ]
-> (P)[  202  4C 2001-04-13T07:15  CPH  CPH 2001-04-13T16:25 P ]
-> (P)[  111  1C 2001-04-14T04:00  CPH  CPH 2001-04-14T14:00 2P ]
-> (P)[  203  4C 2001-04-15T07:15  CPH  CPH 2001-04-15T16:10 P ]
-> (P)[  204  9C 2001-04-16T16:45  CPH  CPH 2001-04-18T12:05 P ]
-> (P)[  129  4C 2001-04-18T13:15  CPH  CPH 2001-04-19T11:25 C/P ]
-> (P)[  205  5C 2001-04-19T13:00  CPH  CPH 2001-04-20T05:50 P ]
-> (P)[  206  5C 2001-04-20T18:20  OSL  OSL 2001-04-23T17:30 P ]
-> (P)[  207  2C 2001-04-24T04:20  ARN  ARN 2001-04-24T06:35 P ]
-> (P)[  208  4C 2001-04-25T08:45  CPH  CPH 2001-04-26T11:25 P ]
-> (P)[  209  2C 2001-04-26T12:20  ARN  ARN 2001-04-26T14:35 P ]
-> (P)[  210  8C 2001-04-27T11:10  ARN  ARN 2001-04-28T15:40 P ]
-> (P)[  185  2C 2001-04-29T04:00  CPH  CPH 2001-04-30T15:00 2C/P ]
-> (P)[  211  3C 2001-05-01T05:00  CPH  CPH 2001-05-03T15:00 P ] ARKE 85868 P >>
-3c20,51
-< [ BENBERG 86122 ]
----
-> Rotation output, requirement : BENBERG 86122 C
-> << (C)[  212  1C 2001-03-01T23:00  CPH  CPH 2001-03-02T22:59 BENBERG 86122 C ]
-> (C)[  213  1C 2001-03-02T23:00  CPH  CPH 2001-03-03T22:59 BENBERG 86122 C ]
-> (C)[  214  1C 2001-03-04T23:00  CPH  CPH 2001-03-13T22:59 BENBERG 86122 C ]
-> (C)[  215  1C 2001-03-18T23:00  CPH  CPH 2001-03-19T22:59 BENBERG 86122 C ]
-> (C)[  216  1C 2001-03-19T23:00  CPH  CPH 2001-03-20T22:59 BENBERG 86122 C ]
 ------------------ Differences in parameters --------------------
 38a39
 >  Parameter matador.target_generated_rosters_per_crew set to 10000
@@ -172,7 +141,7 @@ Submitting Matador test-suite TargetApp to SGE queues
 < _topmodule.%block_time_roster%[1212:24] <=
     Save Version badoverride(1), Save(s) or continue(any other key)?
     Evaluating Matador test-case generate_in_subperiod (on catalogue.cas,errors.cas,output.cas,solution.cas,assignedposition.cas,crewmembers.cas,inputlegs.cas,inputrosters.cas,inputtrips.cas,outputrosters.cas,parameters.cas)
-    Matador test-case generate_in_subperiod FAILED on watsonville : new results in assignedposition,outputrosters, differences in parameters
+    Matador test-case generate_in_subperiod FAILED on pennsville : new results in assignedposition,outputrosters, differences in parameters
     View details(v), Save Version badoverride(1), Save(s) or continue(any other key)?
 ------------------ Differences in parameters --------------------
 8c8
