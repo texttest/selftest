@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-import os
+import os, sys
 
 def getPythonLines():
     lines = []
@@ -18,4 +18,7 @@ macro = os.getenv("USECASE_REPLAY_SCRIPT")
 commandLine = studio + " -w"
 for pythonLine in getPythonLines():
     commandLine += " -p '" + pythonLine + "'"
+# Collect arguments from options file.
+for a in sys.argv[1:]:
+    commandLine += " '" + a + "'"
 os.system(commandLine)
