@@ -1,4 +1,4 @@
-TextTest will write diagnostics in /users/geoff/texttesttmp/texttest.sgegeoff16Dec145131/carmen/matador/LprofRun based on file at /users/geoff/work/master/Testing/Automatic/texttest/log4py.conf
+TextTest will write diagnostics in /users/geoff/texttesttmp/texttest.sgegeoff23Feb175028/carmen/matador/Running/LprofRun based on file at /users/geoff/work/master/Testing/Automatic/texttest/log4py.conf
 Using Application Matador, checkout /carm/proj/texttest/selftest_data
 Note: Running with Diagnostics on, so performance checking is disabled!
 Submitting Rule Builds for Matador test-suite TargetApp to SGE queues
@@ -6,49 +6,49 @@ Submitting Rule Builds for Matador test-suite TargetApp to SGE queues
 Submitting Matador test-suite TargetApp to SGE queues
   Submitting Matador test-suite ArtificialUser to SGE queues
     Submitting Matador test-case generate_in_subperiod to SGE queue short, requesting model=Opteron*,carmarch="*i386_linux*"
-    Evaluating Matador test-case generate_in_subperiod (on catalogue.cas,errors.cas,lprof.cas,output.cas,solution.cas,assignedposition.cas,crewmembers.cas,inputlegs.cas,inputrosters.cas,inputtrips.cas,outputrosters.cas,parameters.cas)
-    Matador test-case generate_in_subperiod FAILED on schefferville : new results in lprof,assignedposition,outputrosters, differences in catalogue,parameters
+    Evaluating Matador test-case generate_in_subperiod (on catalogue.cas,errors.cas,lprof.cas,output.cas,solution.cas,assignedposition.cas,crewmembers.cas,inputlegs.cas,inputrosters.cas,inputtrips.cas,parameters.cas)
+    Matador test-case generate_in_subperiod FAILED on gatesville : new results in lprof,assignedposition, differences in catalogue,parameters
     View details(v), Save(s) or continue(any other key)?
 ------------------ Differences in catalogue --------------------
 2a3,4
 > ----gprof.output
-> ----prof.3370
+> ----prof.15971
 ------------------ Differences in parameters --------------------
 8c8
 <  Parameter break_cost_unit left as default 1
 ---
 >  Parameter break_cost_unit left as default -1
 ------------------ New result in lprof --------------------
-Flat profile, 35 samples in total
+Flat profile, 50 samples in total
 
- 31.4   31.4   _fini
- 22.9   54.3   __open_nocancel
- 14.3   68.6   __write_nocancel
-  8.6   77.1   __GI_times
-  5.7   82.9   __GI___unlink
-  5.7   88.6   __waitpid_nocancel
-  2.9   91.4   __GI_memset
-  2.9   94.3   __static_initialization_and_destruction_0
-  2.9   97.1   D__topmoduleMnext_trip_start
-  2.9  100.0   CarmenTime::Year::inqLength const
-  0.0  100.0   CarmenTime::Date::inqYearAndDay const
-  0.0  100.0   CarmenTime::Date::output const
-  0.0  100.0   RRLString::RRLString
+ 44.0   44.0   __GI_times
+ 18.0   62.0   _fini
+  8.0   70.0   __GI___munmap
+  8.0   78.0   _int_malloc
+  4.0   82.0   __write_nocancel
+  2.0   84.0   ConcreteTask::getRequirement const
+  2.0   86.0   __GI_rename
+  2.0   88.0   __brk
+  2.0   90.0   CasKeywordTask::CasKeywordTask
+  2.0   92.0   std::_Rb_tree<Task const*, std::pair<Task const* const, Capability const*>, std::_Select1st<std::pair<Task const* const, Capability const*> >, std::less<Task const*>, std::allocator<std::pair<Task const* const, Capability const*> > >::_M_create_node
+  2.0   94.0   __open_nocancel
+  2.0   96.0   __read_nocancel
+  2.0   98.0   std::_Rb_tree<Task const*, std::pair<Task const* const, GeneratedValues>, std::_Select1st<std::pair<Task const* const, GeneratedValues> >, std::less<Task const*>, std::allocator<std::pair<Task const* const, GeneratedValues> > >::find const
+  2.0  100.0   do_system
+  0.0  100.0   ImproveMethod::setUpperBound const
+  0.0  100.0   ImproveMethod::createSolver const
+  0.0  100.0   CasTaskFactory::createKeywordTask const
+  0.0  100.0   CompositeTask::clone const
+  0.0  100.0   AssignmentCache::findTripRequirements const
+  0.0  100.0   AssignmentCache::findActiveLegAssignments const
+  0.0  100.0   SolutionAnalyser::findIllegalLegs const
+  0.0  100.0   SolutionAnalyser::inqCostOfLegQuals const
+  0.0  100.0   TaskHandle::clone const
   0.0  100.0   RRLParser::~RRLParser
-  0.0  100.0   RRLParser::RRLParser
-  0.0  100.0   CarmenTime::Date::inqYear const
-  0.0  100.0   CarmenTime::AbsTime::output const
   0.0  100.0   RRLParser::readNextRecordLine
   0.0  100.0   RRLParser::getNextRecord
   0.0  100.0   TagEntry::TagEntry
   0.0  100.0   Matador::run
-  0.0  100.0   Matador::runMethods
-  0.0  100.0   Filer::saveFile
-  0.0  100.0   Filer::loadFile
-  0.0  100.0   ImproveMethodGenerator::runMaster
-  0.0  100.0   ImproveMethodGenerator::generate
-  0.0  100.0   system
-  0.0  100.0   mkstemp
 ------------------ New result in assignedposition --------------------
 map_crew_assigned_position : crew_assigned_position NOT trip-dependent
 Regular position For all trips, crew ARKE 85868 in pos P
@@ -63,35 +63,4 @@ Regular position For all trips, crew BLICHFEL 85367 in pos P
 Regular position For all trips, crew BOJSEN 85120 in pos C
 Regular position For all trips, crew BOSERUP 85215 in pos C
 Regular position For all trips, crew LOHSE 85119 in pos C
------------------- New result in outputrosters --------------------
-Rotation output, requirement : ARKE 85868 P
-<< (P)[  750  1C 2001-04-04T07:00  CPH  CPH 2001-04-04T14:00 ARKE 85868 P ]
-(P)[  284 14C 2001-04-11T11:10  ARN  ARN 2001-04-13T13:25 C/P¦TQ2<2 ]
-(P)[  751  1C 2001-04-16T07:00  CPH  CPH 2001-04-16T14:00 ARKE 85868 P ]
-(P)[  443  4C 2001-04-18T08:40  ARN  ARN 2001-04-19T05:20 C/P/I¦TQ2<2 ] ARKE 85868 P >>
-
-Rotation output, requirement : BENBERG 86122 C
-<< (C)[  752  1C 2001-04-03T07:00  CPH  CPH 2001-04-03T14:00 BENBERG 86122 C ]
-(C)[  145 10C 2001-04-05T16:45  CPH  CPH 2001-04-07T11:50 C/P¦TQ2<2/TQ3<2 ]
-(C)[  284 14C 2001-04-11T11:10  ARN  ARN 2001-04-13T13:25 C/P¦TQ2<2 ]
-(C)[  753  1C 2001-04-16T07:00  CPH  CPH 2001-04-16T14:00 BENBERG 86122 C ]
-(C)[  443  4C 2001-04-18T08:40  ARN  ARN 2001-04-19T05:20 C/P/I¦TQ2<2 ]
-(C)[  497 14C 2001-04-20T06:20  CPH  CPH 2001-04-23T06:05 C¦TQ2<2 ]
-(C)[  568 13C 2001-04-23T10:25  OSL  OSL 2001-04-27T08:25 C¦TQ3<2 ] BENBERG 86122 C >>
-
-Rotation output, requirement : BOSERUP
-<< (C)[   35  6C 2001-04-02T04:45  ARN  ARN 2001-04-03T10:35 C/P/I ]
-(C)[   81  4C 2001-04-03T12:20  ARN  ARN 2001-04-03T20:05 C/P¦TQ1<2 ]
-(C)[  754  1C 2001-04-04T07:00  CPH  CPH 2001-04-04T14:00 BOSERUP 85215
-(C)[  140  6C 2001-04-05T13:00  CPH  CPH 2001-04-07T08:25 C/P¦TQ3<2 ]
-(C)[  185  4C 2001-04-07T12:55  CPH  CPH 2001-04-08T07:45 C/P/I ]
-(C)[  197  5C 2001-04-08T08:25  CPH  CPH 2001-04-08T16:25 C/P¦TQ2<2 ]
-(C)[  227  8C 2001-04-09T11:10  ARN  ARN 2001-04-10T20:05 C/P ]
-(C)[  286  4C 2001-04-11T11:40  ARN  ARN 2001-04-11T20:05 C/P¦TQ1<2 ]
-(C)[  299  2C 2001-04-12T04:45  ARN  ARN 2001-04-12T08:45 C/P ]
-(C)[  311  4C 2001-04-12T13:15  CPH  CPH 2001-04-12T20:50 C/P ]
-(C)[  323  2C 2001-04-13T07:15  CPH  CPH 2001-04-13T11:25 C/P ]
-(C)[  755  1C 2001-04-16T07:00  CPH  CPH 2001-04-16T14:00 BOSERUP 85215
-(C)[  444  6C 2001-04-18T10:25  OSL  OSL 2001-04-19T09:55 C¦TQ3<2 ]
-(C)[  756  1C 2001-04-19T11:25  CPH  CPH 2001-04-19T14:00 BOSERUP 85215 C ] BOSERUP 85215
     Save(s) or continue(any other key)?

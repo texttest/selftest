@@ -1,4 +1,4 @@
-TextTest will write diagnostics in /users/geoff/texttesttmp/texttest.sgegeoff20Feb173447/carmen/matador/Running/RaveParameterOverride based on file at /users/geoff/work/master/Testing/Automatic/texttest/log4py.conf
+TextTest will write diagnostics in /users/geoff/texttesttmp/texttest.sgegeoff23Feb174123/carmen/matador/Running/RaveParameterOverride based on file at /users/geoff/work/master/Testing/Automatic/texttest/log4py.conf
 Using Application Matador, version badoverride, checkout /carm/proj/texttest/selftest_data
 Note: Running with Diagnostics on, so performance checking is disabled!
 Submitting Rule Builds for Matador test-suite TargetApp to SGE queues
@@ -8,7 +8,7 @@ Submitting Matador test-suite TargetApp to SGE queues
     Submitting Matador test-case matador_2             to SGE queue short, requesting model=Opteron*,carmarch="*i386_linux*"
     Submitting Matador test-case generate_in_subperiod to SGE queue short, requesting model=Opteron*,carmarch="*i386_linux*"
     Evaluating Matador test-case matador_2             (on catalogue.cas,errors.cas,output.cas,solution.cas,crewmembers.cas,inputlegs.cas,inputrosters.cas,inputtrips.cas,parameters.cas,rulefailures.cas)
-    Matador test-case matador_2             FAILED on townsville : differences in inputlegs,inputrosters,inputtrips,parameters,rulefailures
+    Matador test-case matador_2             FAILED on tiptonville : differences in inputlegs,inputrosters,inputtrips,parameters,rulefailures
     View details(v), Save Version badoverride(1), Save(s) or continue(any other key)?
 ------------------ Differences in inputlegs --------------------
 2,2037c2,2036
@@ -140,8 +140,8 @@ Submitting Matador test-suite TargetApp to SGE queues
 < Maximum block time allowed in the roster failed on [    -1 2001-05-16T22:00  CPH  CPH 2001-05-18T21:59 ] : 
 < _topmodule.%block_time_roster%[1212:24] <=
     Save Version badoverride(1), Save(s) or continue(any other key)?
-    Evaluating Matador test-case generate_in_subperiod (on catalogue.cas,errors.cas,output.cas,solution.cas,assignedposition.cas,crewmembers.cas,inputlegs.cas,inputrosters.cas,inputtrips.cas,outputrosters.cas,parameters.cas)
-    Matador test-case generate_in_subperiod FAILED on pennsville : new results in assignedposition,outputrosters, differences in parameters
+    Evaluating Matador test-case generate_in_subperiod (on catalogue.cas,errors.cas,output.cas,solution.cas,assignedposition.cas,crewmembers.cas,inputlegs.cas,inputrosters.cas,inputtrips.cas,parameters.cas)
+    Matador test-case generate_in_subperiod FAILED on zanesville : new results in assignedposition, differences in parameters
     View details(v), Save Version badoverride(1), Save(s) or continue(any other key)?
 ------------------ Differences in parameters --------------------
 8c8
@@ -162,35 +162,4 @@ Regular position For all trips, crew BLICHFEL 85367 in pos P
 Regular position For all trips, crew BOJSEN 85120 in pos C
 Regular position For all trips, crew BOSERUP 85215 in pos C
 Regular position For all trips, crew LOHSE 85119 in pos C
------------------- New result in outputrosters --------------------
-Rotation output, requirement : ARKE 85868 P
-<< (P)[  750  1C 2001-04-04T07:00  CPH  CPH 2001-04-04T14:00 ARKE 85868 P ]
-(P)[  284 14C 2001-04-11T11:10  ARN  ARN 2001-04-13T13:25 C/P¦TQ2<2 ]
-(P)[  751  1C 2001-04-16T07:00  CPH  CPH 2001-04-16T14:00 ARKE 85868 P ]
-(P)[  443  4C 2001-04-18T08:40  ARN  ARN 2001-04-19T05:20 C/P/I¦TQ2<2 ] ARKE 85868 P >>
-
-Rotation output, requirement : BENBERG 86122 C
-<< (C)[  752  1C 2001-04-03T07:00  CPH  CPH 2001-04-03T14:00 BENBERG 86122 C ]
-(C)[  145 10C 2001-04-05T16:45  CPH  CPH 2001-04-07T11:50 C/P¦TQ2<2/TQ3<2 ]
-(C)[  284 14C 2001-04-11T11:10  ARN  ARN 2001-04-13T13:25 C/P¦TQ2<2 ]
-(C)[  753  1C 2001-04-16T07:00  CPH  CPH 2001-04-16T14:00 BENBERG 86122 C ]
-(C)[  443  4C 2001-04-18T08:40  ARN  ARN 2001-04-19T05:20 C/P/I¦TQ2<2 ]
-(C)[  497 14C 2001-04-20T06:20  CPH  CPH 2001-04-23T06:05 C¦TQ2<2 ]
-(C)[  568 13C 2001-04-23T10:25  OSL  OSL 2001-04-27T08:25 C¦TQ3<2 ] BENBERG 86122 C >>
-
-Rotation output, requirement : BOSERUP
-<< (C)[   35  6C 2001-04-02T04:45  ARN  ARN 2001-04-03T10:35 C/P/I ]
-(C)[   81  4C 2001-04-03T12:20  ARN  ARN 2001-04-03T20:05 C/P¦TQ1<2 ]
-(C)[  754  1C 2001-04-04T07:00  CPH  CPH 2001-04-04T14:00 BOSERUP 85215
-(C)[  140  6C 2001-04-05T13:00  CPH  CPH 2001-04-07T08:25 C/P¦TQ3<2 ]
-(C)[  185  4C 2001-04-07T12:55  CPH  CPH 2001-04-08T07:45 C/P/I ]
-(C)[  197  5C 2001-04-08T08:25  CPH  CPH 2001-04-08T16:25 C/P¦TQ2<2 ]
-(C)[  227  8C 2001-04-09T11:10  ARN  ARN 2001-04-10T20:05 C/P ]
-(C)[  286  4C 2001-04-11T11:40  ARN  ARN 2001-04-11T20:05 C/P¦TQ1<2 ]
-(C)[  299  2C 2001-04-12T04:45  ARN  ARN 2001-04-12T08:45 C/P ]
-(C)[  311  4C 2001-04-12T13:15  CPH  CPH 2001-04-12T20:50 C/P ]
-(C)[  323  2C 2001-04-13T07:15  CPH  CPH 2001-04-13T11:25 C/P ]
-(C)[  755  1C 2001-04-16T07:00  CPH  CPH 2001-04-16T14:00 BOSERUP 85215
-(C)[  444  6C 2001-04-18T10:25  OSL  OSL 2001-04-19T09:55 C¦TQ3<2 ]
-(C)[  756  1C 2001-04-19T11:25  CPH  CPH 2001-04-19T14:00 BOSERUP 85215 C ] BOSERUP 85215
     Save Version badoverride(1), Save(s) or continue(any other key)?

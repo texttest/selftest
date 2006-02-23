@@ -21,6 +21,10 @@ def editFiles(dir):
 file = open("readonlyfile")
 print "Found and read my read-only file: ", file.read()
 
+envVar = os.getenv("MY_ENV_VAR")
+if envVar:
+    print "Got environment variable", envVar
+
 writedirs = os.getenv("WRITEABLE_DIRS") 
 if os.path.isdir(writedirs):
     editFiles(writedirs)
