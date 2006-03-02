@@ -10,3 +10,9 @@ JobSubmissionFails
 
 # What happens if the slave crashes before it has set up its communication to master?
 SlaveCrashNoReport
+
+# Handle case where job is still pending at shutdown time
+JobStaysPending
+
+# Historically, SGE has had trouble with jobs that just disappear altogether...
+JobDisappears
