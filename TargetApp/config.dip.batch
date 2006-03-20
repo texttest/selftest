@@ -1,6 +1,5 @@
 # Use collection for self tests, so we can compare reports
-[batch_use_collection]
-default:true
+batch_use_collection:true
 
 [batch_version]
 default:batch
@@ -12,9 +11,9 @@ self_test:small
 # Create a "historical repository" to test that functionality...
 [batch_result_repository]
 self_test:repository
+[end]
 
-[historical_report_location]
-default:report
+historical_report_location:report
 
 # Add a recognised section with no end marker last, to catch config file bug...
 [gui_entry_overrides]
