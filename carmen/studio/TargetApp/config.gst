@@ -17,7 +17,11 @@ create_catalogues:true
 virtual_display_machine:fougamou
 virtual_display_machine:singleton
 
-rave_name:gpc
+[rave_name]
+default:gpc
+Pac:apc
+Cas:matador
+[end]
 
 unsaveable_version:local
 
