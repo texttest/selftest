@@ -19,4 +19,4 @@ print "Rave Horribly"
 print "Gibber Horribly"
 print "End Section Here\n"
 
-print "This should always go: ", os.getcwd()
+print "This should always go: \"" + os.getcwd() + "\""
