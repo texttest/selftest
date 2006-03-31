@@ -1,13 +1,13 @@
-TextTest will write diagnostics in /users/geoff/texttesttmp/texttest.sgegeoff24Feb115155/carmen/APC/Running/CoreDump based on file at /users/geoff/work/master/Testing/Automatic/texttest/log4py.conf
+TextTest will write diagnostics in /users/johana/texttesttmp/texttest.sgejohana30Mar143741/carmen/APC/Running/CoreDump based on file at /users/johana/work/master/Testing/Automatic/texttest/log4py.conf
 Using Application APC, version crash, checkout /carm/proj/texttest/selftest_data
 Using Application APC, version crash.boost, checkout /carm/proj/texttest/selftest_data
 Submitting Rule Builds for APC test-suite TargetApp to SGE queues
   Submitting Rule Builds for APC test-suite sk_test9scripts to SGE queues
 Submitting APC test-suite TargetApp to SGE queues
   Submitting APC test-suite sk_test9scripts to SGE queues
-    Submitting APC test-case no_dh_single_base_cg to SGE queue short, requesting osversion=RHEL3,carmarch="*i386_linux*"
+    Submitting APC test-case no_dh_single_base_cg to SGE queue short, requesting osversion=RHEL3,carmrunmaster=1,carmarch="*linux*"
     Evaluating APC test-case no_dh_single_base_cg (on script_errors.apc,status.apc,warnings.apc,all.apc,solution.apc)
-    APC test-case no_dh_single_base_cg CRASHED (Segmentation fault in raise) on tiptonville : new results in script_errors,all, missing results for solution, differences in status,warnings
+    APC test-case no_dh_single_base_cg CRASHED (Segmentation fault in raise) on bellville : new results in script_errors,all, missing results for solution, differences in status,warnings
     View details(v), Save Version crash(1), Save(s) or continue(any other key)?
 Program terminated with signal 11, Segmentation fault.
 Stack trace from gdb :
@@ -84,23 +84,23 @@ APC exited with error code 139 <segmentation fault>
 *** Keeping the logfiles in $APC_TEMP_DIR ***
 *** disk space available for temporary files ***
 Filesystem           1K-blocks      Used Available Use% Mounted on
-/dev/sda2             16513960   1014600  14660500   7% /tmp
-/dev/sda2             16513960   1014600  14660500   7% /tmp
-/dev/sda6              1032072    365464    614180  38% /var
+/dev/sda2             16513960     46740  15628360   1% /tmp
+/dev/sda2             16513960     46740  15628360   1% /tmp
+/dev/sda6              1032072    151236    828408  16% /var
 *** Saving the APC executable ***
 *** disk space available for temporary files ***
 Filesystem           1K-blocks      Used Available Use% Mounted on
-/dev/sda2             16513960   1021712  14653388   7% /tmp
-/dev/sda2             16513960   1021712  14653388   7% /tmp
-/dev/sda6              1032072    365464    614180  38% /var
+/dev/sda2             16513960     53852  15621248   1% /tmp
+/dev/sda2             16513960     53852  15621248   1% /tmp
+/dev/sda6              1032072    151236    828408  16% /var
 ------------------ New result in all --------------------
-Time:  0 s real  10 ms cpu  0 ms cpu_child  memory:   4.5 Mb
+Time:  0 s real  0 ms cpu  0 ms cpu_child  memory:   4.5 Mb
 Delta: 0 s real  0 ms cpu  0 ms cpu_child  memory:   4.5 Mb
-/carm/proj/texttest/selftest_data/APC_CARMSYS/sk_test9scripts_tmp.apc/crc/rule_set/APC/i386_linux/.APC_fd54_DC9_no_reference.geoff.17025
+/carm/proj/texttest/selftest_data/APC_CARMSYS/sk_test9scripts_tmp.apc/crc/rule_set/APC/i386_linux/.APC_fd54_DC9_no_reference.johana.32656
 -v 1
--R /nfs/local/apc_temp/APC_ji_single_base_CPH_spl_17025/APC_rot
--U geoff
-executable name is [/carm/proj/texttest/selftest_data/APC_CARMSYS/sk_test9scripts_tmp.apc/crc/rule_set/APC/i386_linux/.APC_fd54_DC9_no_reference.geoff.17025]
+-R /nfs/local/apc_temp/APC_ji_single_base_CPH_spl_32656/APC_rot
+-U johana
+executable name is [/carm/proj/texttest/selftest_data/APC_CARMSYS/sk_test9scripts_tmp.apc/crc/rule_set/APC/i386_linux/.APC_fd54_DC9_no_reference.johana.32656]
 carmsys: /carm/proj/texttest/selftest_data/APC_CARMSYS
 carmtmp: /carm/proj/texttest/selftest_data/APC_CARMSYS/sk_test9scripts_tmp.apc
 
@@ -112,7 +112,7 @@ carmtmp: /carm/proj/texttest/selftest_data/APC_CARMSYS/sk_test9scripts_tmp.apc
 canonicalize called
 _init_segment_duty_types: Cannot retrive resource CREW_DUTY_TYPE_ETAB_NAME
 
-Error! Pid:17076  Fri Feb 24 11:52:51 2006  User:geoff
+Error! Pid:32709  Thu Mar 30 14:39:52 2006  User:johana
 Error! File:/carm/master/Data/duty_type/DutyType.cc  Line:202
 Error! _register_segment_duty_type: Registering new duty type  in category 1.
 
@@ -159,4 +159,4 @@ SECTION apc_chains Solution_3
 145;23686;0;0;0;A;;;0x40;0;
 <See also tkdiff window for details of status>
     Save Version crash(1), Save(s) or continue(any other key)?
-Killed process 22837 with signal 2
+Killed process 26640 with signal 2
