@@ -1,28 +1,28 @@
-TextTest will write diagnostics in /users/geoff/texttesttmp/texttest.sgegeoff23Feb173426/QueueSystems/Console/ExternalErrors/SlaveCrashNoReport based on file at /users/geoff/work/master/Testing/Automatic/texttest/log4py.conf
-Using Application SLEEP, version killing.badslavestart, checkout /users/geoff/texttesttmp/texttest.sgegeoff23Feb173426/QueueSystems/Console/ExternalErrors/SlaveCrashNoReport/TargetApp/
+TextTest will write diagnostics in /users/geoff/texttesttmp/texttest.sgegeoff05Apr150214/QueueSystems/Console/ExternalErrors/SlaveCrashNoReport based on file at /users/geoff/work/master/Testing/Automatic/texttest/log4py.conf
+Using Application SLEEP, version killing.badslavestart, checkout /users/geoff/texttesttmp/texttest.sgegeoff05Apr150214/QueueSystems/Console/ExternalErrors/SlaveCrashNoReport/TargetApp/
 Submitting SLEEP test-suite TargetApp to SGE queues
   Submitting SLEEP test-case Basic to default SGE queue
-Unexpected output from qsub : Job 2751955 exited with exit code 0.
+Unexpected output from qsub : Job 3264218 exited with exit code 0.
 Terminating testing due to external interruption (RUNLIMIT2)
-  Cancelling SLEEP test-case Basic in SGE (job 2751955)
+  Cancelling SLEEP test-case Basic in SGE (job 3264218)
   SLEEP test-case Basic not compared:  Slave exited
 Description of exception thrown :
 Traceback (most recent call last):
-  File "/users/geoff/work/master/Testing/TextTest/testmodel.py", line 541, in getActionSequence
+  File "/users/geoff/work/cvs_master/Testing/TextTest/testmodel.py", line 464, in getActionSequence
     actionSequenceFromConfig = self.target.getActionSequence()
-  File "/users/geoff/work/master/Testing/TextTest/default.py", line 50, in getActionSequence
+  File "/users/geoff/work/cvs_master/Testing/TextTest/default.py", line 57, in getActionSequence
     return self._getActionSequence(makeDirs=1)
-  File "/users/geoff/work/master/Testing/TextTest/default.py", line 89, in _getActionSequence
+  File "/users/geoff/work/cvs_master/Testing/TextTest/default.py", line 96, in _getActionSequence
     actions = [ self.getTestProcessor() ]
-  File "/users/geoff/work/master/Testing/TextTest/queuesystem.py", line 121, in getTestProcessor
+  File "/users/geoff/work/cvs_master/Testing/TextTest/queuesystem.py", line 118, in getTestProcessor
     baseProcessor = default.Config.getTestProcessor(self)
-  File "/users/geoff/work/master/Testing/TextTest/default.py", line 99, in getTestProcessor
-    return [ self.getWriteDirectoryPreparer(ignoreCatalogues), catalogueCreator, \
-  File "/users/geoff/work/master/Testing/TextTest/default.py", line 191, in tryGetTestRunner
+  File "/users/geoff/work/cvs_master/Testing/TextTest/default.py", line 107, in getTestProcessor
+    return [ self.getWriteDirectoryPreparer(ignoreCatalogues, useDiagnostics), catalogueCreator, \
+  File "/users/geoff/work/cvs_master/Testing/TextTest/default.py", line 202, in tryGetTestRunner
     return self.getTestRunner()
   File "/users/geoff/work/master/Testing/Automatic/texttest/error_config_modules/slaveerrstart.py", line 12, in getTestRunner
     wibble
 NameError: global name 'wibble' is not defined
 Error in set-up of application SLEEP - Exception thrown by 'slaveerrstart' configuration, while requesting 'action sequence'
 
-At 17:34 creating batch report for application SLEEP ...file written
+At 15:07 creating batch report for application SLEEP ...file written
