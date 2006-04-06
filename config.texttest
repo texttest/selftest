@@ -207,12 +207,11 @@ overview_all:report/*/test_*_all.html
 overview_1day:report/*/test_*_18Jan2006.html
 [end]
 
-# This is a hack to be able to test recording, don't compare it if it appears...
-discard_file:record_usecase
-
 definition_file_stems:dynamic_usecase
 definition_file_stems:record_usecase
 definition_file_stems:replay_usecase
+definition_file_stems:target_record_usecase
+definition_file_stems:target_input
 
 # Run the LSF and SGE tests too...
 extra_version:sge
