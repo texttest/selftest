@@ -3,7 +3,6 @@ Creating tool bar with buttons : _Quit, _Select, _Run Tests, R_eset
 Mapping tests in tree view...
 -> Added GREP to test tree view.
 -> Added GREP test-suite TargetApp to test tree view.
-->   Added GREP test-case ExistingTest to test tree view.
 
 Viewing test GREP test-suite TargetApp
 Adding file testsuite.grep under heading 'Definition Files', coloured pale green
@@ -15,10 +14,14 @@ Viewing entry for option 'Test Description'
 Viewing entry for option 'Command line options'
 Viewing button with title 'Add _Test'
 
-'enter test name =' event created with arguments 'ExistingTest'
+'enter test name =' event created with arguments 'ExistingTestWithOptions'
+
+'enter command line options =' event created with arguments '-i'
 
 'add test' event created with arguments ''
-ERROR : A Test with the name 'ExistingTest' already exists, please choose another name
+Adding Test ExistingTestWithOptions under test suite GREP test-suite TargetApp
+Using option string : -i
+ERROR : Test already exists for application GREP : ExistingTestWithOptions
 
 'agree to texttest message' event created with arguments ''
 
