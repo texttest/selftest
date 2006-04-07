@@ -17,39 +17,44 @@ Viewing entry for option 'Test Description'
 Viewing entry for option 'Command line options'
 Viewing button with title 'Add _Test'
 
-'select test' event created with arguments 'AddMovie under TargetApp'
-1 tests selected
-Viewing test VideoStore test-case AddMovie
-Adding file options.gui under heading 'Definition Files', coloured pale green
-Adding file usecase.gui under heading 'Definition Files', coloured pale green
-Adding file errors.gui under heading 'Standard Files', coloured pale green
-Adding file output.gui under heading 'Standard Files', coloured pale green
+'enter test name =' event created with arguments 't1'
+
+'add test' event created with arguments ''
+Adding Test t1 under test suite VideoStore test-suite TargetApp
+Not creating options file
+Viewing new test t1
 Creating tool bar with buttons : Remove
 
 Viewing notebook page for 'Recording'
 Viewing entry for option 'Version to record'
-Viewing entry for option 'Checkout to use for recording' (set to '/users/geoff/texttesttmp/texttestgeoff07Apr102350/GUI/StaticGUI/UseCaseRecording/RerecordJavaTest/TargetApp/source')
+Viewing entry for option 'Checkout to use for recording' (set to '/users/geoff/texttesttmp/texttestgeoff07Apr103049/GUI/StaticGUI/UseCaseRecording/RecordTestCheckout/TargetApp/nonsense')
 Viewing check button for switch 'Automatically replay test after recording it' (checked)
 Viewing radio button for switch 'Auto-replay in dynamic GUI/Auto-replay invisible'
 Viewing button with title 'Record _Use-Case'
+1 tests selected
 
-'uncheck automatically replay test after recording it' event created with arguments ''
-
-'enter version to record =' event created with arguments 'java'
+'enter checkout to use for recording =' event created with arguments 'source'
 
 'record use-case' event created with arguments ''
 Starting dynamic GUI in record mode...
-Starting record run of TextTest with arguments -g -tp AddMovie -d /users/geoff/texttesttmp/texttestgeoff07Apr102350/GUI/StaticGUI/UseCaseRecording/RerecordJavaTest/TargetApp -a gui -v java -c /users/geoff/texttesttmp/texttestgeoff07Apr102350/GUI/StaticGUI/UseCaseRecording/RerecordJavaTest/TargetApp/source  -record
+Starting record run of TextTest with arguments -g -tp t1 -d /users/geoff/texttesttmp/texttestgeoff07Apr103049/GUI/StaticGUI/UseCaseRecording/RecordTestCheckout/TargetApp -a gui -c source  -record
 
-Waiting for application event 'record texttest to complete' to occur.
-Expected application event 'record texttest to complete' occurred, proceeding.
-Redrawing test AddMovie coloured pale green
-Adding file options.gui under heading 'Definition Files', coloured pale green
+Waiting for application event 'replay texttest to complete' to occur.
+Starting replay run of TextTest with arguments -o -tp t1 -d /users/geoff/texttesttmp/texttestgeoff07Apr103049/GUI/StaticGUI/UseCaseRecording/RecordTestCheckout/TargetApp -a gui -c source
+Redrawing test t1 coloured pale green
 Adding file usecase.gui under heading 'Definition Files', coloured pale green
-Adding file usecase.gui.java under heading 'Definition Files', coloured pale green
 Adding file errors.gui under heading 'Standard Files', coloured pale green
 Adding file output.gui under heading 'Standard Files', coloured pale green
-Adding file output.gui.java under heading 'Standard Files', coloured pale green
+---------- Text Info Window ----------
+Recorded use case - now attempting to replay in the background to collect standard files
+These will appear shortly. You do not need to submit the test manually.
+--------------------------------------
+Creating tool bar with buttons : Remove
+Expected application event 'replay texttest to complete' occurred, proceeding.
+Redrawing test t1 coloured pale green
+Adding file usecase.gui under heading 'Definition Files', coloured pale green
+Adding file errors.gui under heading 'Standard Files', coloured pale green
+Adding file output.gui under heading 'Standard Files', coloured pale green
 ---------- Text Info Window ----------
 Recorded use case and collected all standard files
 --------------------------------------
