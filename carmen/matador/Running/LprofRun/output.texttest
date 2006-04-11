@@ -1,54 +1,54 @@
-TextTest will write diagnostics in /users/johana/texttesttmp/texttest.sgejohana30Mar143741/carmen/matador/Running/LprofRun based on file at /users/johana/work/master/Testing/Automatic/texttest/log4py.conf
+TextTest will write diagnostics in /users/geoff/texttesttmp/texttest.sgegeoff11Apr091750/carmen/matador/Running/LprofRun based on file at /users/geoff/work/master/Testing/Automatic/texttest/log4py.conf
 Using Application Matador, checkout /carm/proj/texttest/selftest_data
 Note: Running with Diagnostics on, so performance checking is disabled!
 Submitting Rule Builds for Matador test-suite TargetApp to SGE queues
   Submitting Rule Builds for Matador test-suite ArtificialUser to SGE queues
 Submitting Matador test-suite TargetApp to SGE queues
   Submitting Matador test-suite ArtificialUser to SGE queues
-    Submitting Matador test-case generate_in_subperiod to SGE queue short, requesting model=Opteron*,carmrunmaster=1,carmarch="*linux*"
+    Submitting Matador test-case generate_in_subperiod to SGE queue short, requesting osversion=RHEL3,model=Opteron*,carmrunmaster=1,carmarch="*linux*"
     Evaluating Matador test-case generate_in_subperiod (on catalogue.cas,errors.cas,lprof.cas,output.cas,solution.cas,assignedposition.cas,crewmembers.cas,inputlegs.cas,inputrosters.cas,inputtrips.cas,parameters.cas)
-    Matador test-case generate_in_subperiod FAILED on merrillville : new results in lprof,assignedposition, differences in catalogue,parameters
+    Matador test-case generate_in_subperiod FAILED on roosterville : new results in lprof,assignedposition, differences in catalogue,parameters
     View details(v), Save(s) or continue(any other key)?
 ------------------ Differences in catalogue --------------------
 2a3,4
 > ----gprof.output
-> ----prof.17032
+> ----prof.8792
 ------------------ Differences in parameters --------------------
 8c8
 <  Parameter break_cost_unit left as default 1
 ---
 >  Parameter break_cost_unit left as default -1
 ------------------ New result in lprof --------------------
-Flat profile, 51 samples in total
+Flat profile, 37 samples in total
 
- 39.2   39.2   __GI_times
- 21.6   60.8   _fini
-  5.9   66.7   __waitpid_nocancel
-  5.9   72.5   __write_nocancel
-  3.9   76.5   __GI___munmap
-  3.9   80.4   __open_nocancel
-  3.9   84.3   ConcreteTask::getRequirement const
-  2.0   86.3   _int_malloc
-  2.0   88.2   do_system
-  2.0   90.2   __read_nocancel
-  2.0   92.2   CRCApplicationNext
-  2.0   94.1   __mmap
-  2.0   96.1   ColumnFactory::createColumn
-  2.0   98.0   __libc_lseek
-  2.0  100.0   sYSMALLOc
-  0.0  100.0   TagEntry::TagEntry
-  0.0  100.0   RRLParser::getNextRecord
-  0.0  100.0   Matador::run
-  0.0  100.0   RRLParser::readNextRecordLine
-  0.0  100.0   RRLParser::RRLParser
+ 35.1   35.1   __GI_times
+ 18.9   54.1   _fini
+  8.1   62.2   __write_nocancel
+  8.1   70.3   __open_nocancel
+  5.4   75.7   __GI___unlink
+  5.4   81.1   __waitpid_nocancel
+  2.7   83.8   TaskId::TaskId
+  2.7   86.5   std::_Rb_tree<boost::shared_ptr<Requirement>, std::pair<boost::shared_ptr<Requirement> const, int>, std::_Select1st<std::pair<boost::shared_ptr<Requirement> const, int> >, less_req_ptr, std::allocator<std::pair<boost::shared_ptr<Requirement> const, int> > >::find
+  2.7   89.2   __brk
+  2.7   91.9   _int_malloc
+  2.7   94.6   __read_nocancel
+  2.7   97.3   __log
+  2.7  100.0   __GI___munmap
+  0.0  100.0   less_task_dep::operator const
+  0.0  100.0   DataModelFiler::linkBest const
+  0.0  100.0   CasCostEvaluator::evaluateUnassignedCost const
+  0.0  100.0   SolutionAnalyser::inqCostOfUnassignedSlots const
+  0.0  100.0   RAVEEvaluationTask::doRAVEChanges const
+  0.0  100.0   ImproveMethod::createSolver const
   0.0  100.0   RRLParser::~RRLParser
-  0.0  100.0   KeywordTask::getNextKeywordTask const
-  0.0  100.0   ConcreteTask::simBegin const
+  0.0  100.0   TagEntry::TagEntry
+  0.0  100.0   Matador::run
   0.0  100.0   Matador::runMethods
-  0.0  100.0   Parser::Parser
-  0.0  100.0   Parser::openInput
-  0.0  100.0   Parser::readNextLine
-  0.0  100.0   boost::detail::shared_count::shared_count<CompositeRequirement*, boost::checked_deleter<CompositeRequirement> >
+  0.0  100.0   boost::detail::sp_counted_base_impl<ExternalLPOptimizer*, boost::checked_deleter<ExternalLPOptimizer> >::dispose
+  0.0  100.0   Filer::saveFile
+  0.0  100.0   RAVEEvaluationTask::isLegal const
+  0.0  100.0   Filer::createLink const
+  0.0  100.0   std::_Rb_tree<Task const*, Task const*, std::_Identity<Task const*>, less_task_dep, std::allocator<Task const*> >::upper_bound
 ------------------ New result in assignedposition --------------------
 map_crew_assigned_position : crew_assigned_position NOT trip-dependent
 Regular position For all trips, crew ARKE 85868 in pos P
