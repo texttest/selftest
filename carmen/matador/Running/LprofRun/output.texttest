@@ -1,54 +1,54 @@
-TextTest will write diagnostics in /users/geoff/texttesttmp/texttest.sgegeoff11Apr091750/carmen/matador/Running/LprofRun based on file at /users/geoff/work/master/Testing/Automatic/texttest/log4py.conf
+TextTest will write diagnostics in /users/geoff/texttesttmp/texttest.sgegeoff19Apr135924/carmen/matador/Running/LprofRun based on file at /users/geoff/work/master/Testing/Automatic/texttest/log4py.conf
 Using Application Matador, checkout /carm/proj/texttest/selftest_data
 Note: Running with Diagnostics on, so performance checking is disabled!
 Submitting Rule Builds for Matador test-suite TargetApp to SGE queues
   Submitting Rule Builds for Matador test-suite ArtificialUser to SGE queues
 Submitting Matador test-suite TargetApp to SGE queues
   Submitting Matador test-suite ArtificialUser to SGE queues
-    Submitting Matador test-case generate_in_subperiod to SGE queue short, requesting osversion=RHEL3,model=Opteron*,carmrunmaster=1,carmarch="*linux*"
+    Submitting Matador test-case generate_in_subperiod to SGE queue short, requesting osversion=RHEL3,model=Opteron*,osversion="RHEL3",carmrunmaster=1,carmarch="*linux*"
     Evaluating Matador test-case generate_in_subperiod (on catalogue.cas,errors.cas,lprof.cas,output.cas,solution.cas,assignedposition.cas,crewmembers.cas,inputlegs.cas,inputrosters.cas,inputtrips.cas,parameters.cas)
-    Matador test-case generate_in_subperiod FAILED on roosterville : new results in lprof,assignedposition, differences in catalogue,parameters
+    Matador test-case generate_in_subperiod FAILED on bellville : new results in lprof,assignedposition, differences in catalogue,parameters
     View details(v), Save(s) or continue(any other key)?
 ------------------ Differences in catalogue --------------------
 2a3,4
 > ----gprof.output
-> ----prof.8792
+> ----prof.14590
 ------------------ Differences in parameters --------------------
 8c8
 <  Parameter break_cost_unit left as default 1
 ---
 >  Parameter break_cost_unit left as default -1
 ------------------ New result in lprof --------------------
-Flat profile, 37 samples in total
+Flat profile, 53 samples in total
 
- 35.1   35.1   __GI_times
- 18.9   54.1   _fini
-  8.1   62.2   __write_nocancel
-  8.1   70.3   __open_nocancel
-  5.4   75.7   __GI___unlink
-  5.4   81.1   __waitpid_nocancel
-  2.7   83.8   TaskId::TaskId
-  2.7   86.5   std::_Rb_tree<boost::shared_ptr<Requirement>, std::pair<boost::shared_ptr<Requirement> const, int>, std::_Select1st<std::pair<boost::shared_ptr<Requirement> const, int> >, less_req_ptr, std::allocator<std::pair<boost::shared_ptr<Requirement> const, int> > >::find
-  2.7   89.2   __brk
-  2.7   91.9   _int_malloc
-  2.7   94.6   __read_nocancel
-  2.7   97.3   __log
-  2.7  100.0   __GI___munmap
-  0.0  100.0   less_task_dep::operator const
-  0.0  100.0   DataModelFiler::linkBest const
-  0.0  100.0   CasCostEvaluator::evaluateUnassignedCost const
-  0.0  100.0   SolutionAnalyser::inqCostOfUnassignedSlots const
-  0.0  100.0   RAVEEvaluationTask::doRAVEChanges const
-  0.0  100.0   ImproveMethod::createSolver const
+ 35.8   35.8   __GI_times
+ 32.1   67.9   _fini
+ 11.3   79.2   __write_nocancel
+  5.7   84.9   __GI___unlink
+  3.8   88.7   _int_malloc
+  1.9   90.6   CompositeTask::begin const
+  1.9   92.5   ConcreteTask::getRequirement const
+  1.9   94.3   __GI___munmap
+  1.9   96.2   __brk
+  1.9   98.1   __read_nocancel
+  1.9  100.0   __waitpid_nocancel
+  0.0  100.0   SecretParameterCache::SecretParameterCache
+  0.0  100.0   CompositeTask::registerSelf const
+  0.0  100.0   CompositeTask::inqDeparture const
+  0.0  100.0   ConcreteTask::simBegin const
+  0.0  100.0   CasPersistenceHandler::saveSubPlan
+  0.0  100.0   CasSolution::canAssignToLegs const
   0.0  100.0   RRLParser::~RRLParser
   0.0  100.0   TagEntry::TagEntry
   0.0  100.0   Matador::run
   0.0  100.0   Matador::runMethods
+  0.0  100.0   Parser::readNextLine
+  0.0  100.0   CasPersistenceHandler::loadConstraints
   0.0  100.0   boost::detail::sp_counted_base_impl<ExternalLPOptimizer*, boost::checked_deleter<ExternalLPOptimizer> >::dispose
   0.0  100.0   Filer::saveFile
-  0.0  100.0   RAVEEvaluationTask::isLegal const
-  0.0  100.0   Filer::createLink const
-  0.0  100.0   std::_Rb_tree<Task const*, Task const*, std::_Identity<Task const*>, less_task_dep, std::allocator<Task const*> >::upper_bound
+  0.0  100.0   CasPersistenceHandler::loadPositionsAndQualifications
+  0.0  100.0   ImproveMethodGenerator::runGenerator
+  0.0  100.0   ImproveMethodGenerator::generate
 ------------------ New result in assignedposition --------------------
 map_crew_assigned_position : crew_assigned_position NOT trip-dependent
 Regular position For all trips, crew ARKE 85868 in pos P
