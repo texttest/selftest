@@ -44,6 +44,7 @@ catalogue:ravecompile
 catalogue:lsfreportmatador
 catalogue:slaveerrs
 catalogue:slavelog
+catalogue:^--------compile{->}^(?!--------)
 catalogue:\.##[0-9]*\.0#[a-z]*{REPLACE <rave tmp file>}
 directories:Created{WORD -1}
 slavedirs:Created{WORD -1}
@@ -77,7 +78,7 @@ output:View details
 gui_log:did not produce any results
 gui_log:process that records
 dynamic_gui_log:ERROR: Could not parse script{->}Expected application event
-dynamic_gui_log:Waiting for application event.*killing to start{->}Expected application event.*2
+dynamic_gui_log:Waiting for application event{->}Expected application event.*othercarmtmp
 dynamic_gui_log:Waiting for application event{->}Expected application event
 usecase:wait for test
 directories:Removing
