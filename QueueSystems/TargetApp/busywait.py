@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 import time, os, sys
 
-fullTime = 70
+fullTime = 700
 
 print "Busy waiting for", fullTime, "seconds..."
 sys.stdout.flush()
