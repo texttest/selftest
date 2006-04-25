@@ -25,7 +25,7 @@ if os.path.isfile("readonlyfile2"):
     print "Found and read my second read-only file: ", file.read()
 
 envVar = os.getenv("MY_ENV_VAR")
-if envVar:
+if envVar is not None:
     print "Got environment variable", envVar
 
 writedirs = os.getenv("WRITEABLE_DIRS") 
