@@ -1,8 +1,8 @@
-TextTest will write diagnostics in /users/geoff/texttesttmp/texttest.sgegeoff19Apr140245/carmen/APC/Running/CoreDump based on file at /users/geoff/work/master/Testing/Automatic/texttest/log4py.conf
+TextTest will write diagnostics in /users/geoff/texttesttmp/texttest.sgegeoff28Apr173010/carmen/APC/Running/CoreDump based on file at /users/geoff/work/master/Testing/Automatic/texttest/log4py.conf
 WARNING: the test small1 could not be found
-Please check the file at /users/geoff/texttesttmp/texttest.sgegeoff19Apr140245/carmen/APC/Running/CoreDump/TargetApp/lh_bascripts/testsuite.apc
+Please check the file at /users/geoff/texttesttmp/texttest.sgegeoff28Apr173010/carmen/APC/Running/CoreDump/TargetApp/lh_bascripts/testsuite.apc
 WARNING: the test small1 could not be found
-Please check the file at /users/geoff/texttesttmp/texttest.sgegeoff19Apr140245/carmen/APC/Running/CoreDump/TargetApp/lh_bascripts_empty/testsuite.apc
+Please check the file at /users/geoff/texttesttmp/texttest.sgegeoff28Apr173010/carmen/APC/Running/CoreDump/TargetApp/lh_bascripts_empty/testsuite.apc
 Using Application APC, version crash, checkout /carm/proj/texttest/selftest_data
 Using Application APC, version crash.boost, checkout /carm/proj/texttest/selftest_data
 Submitting Rule Builds for APC test-suite TargetApp to SGE queues
@@ -10,8 +10,8 @@ Submitting Rule Builds for APC test-suite TargetApp to SGE queues
 Submitting APC test-suite TargetApp to SGE queues
   Submitting APC test-suite sk_test9scripts to SGE queues
     Submitting APC test-case no_dh_single_base_cg to SGE queue short, requesting osversion=RHEL3,osversion="RHEL3",carmrunmaster=1,carmarch="*linux*"
-    Evaluating APC test-case no_dh_single_base_cg (on script_errors.apc,status.apc,warnings.apc,all.apc,solution.apc)
-    APC test-case no_dh_single_base_cg CRASHED (Segmentation fault in raise) on easthartford : new results in script_errors,all, missing results for solution, differences in status,warnings
+    Evaluating APC test-case no_dh_single_base_cg (on script_errors.apc,status.apc,warnings.apc,all.apc,solution.apc,test.apc)
+    APC test-case no_dh_single_base_cg CRASHED (Segmentation fault in raise) on pennsville : new results in script_errors,all, missing results for solution,test, differences in status,warnings
     View details(v), Save Version crash(1), Save(s) or continue(any other key)?
 Program terminated with signal 11, Segmentation fault.
 Stack trace from gdb :
@@ -88,23 +88,23 @@ APC exited with error code 139 <segmentation fault>
 *** Keeping the logfiles in $APC_TEMP_DIR ***
 *** disk space available for temporary files ***
 Filesystem           1K-blocks      Used Available Use% Mounted on
-/dev/sda2             16516084     44160  15632932   1% /tmp
-/dev/sda2             16516084     44160  15632932   1% /tmp
-/dev/sda6              1035660    379336    603716  39% /var
+/dev/sda2             16513960    172540  15502560   2% /tmp
+/dev/sda2             16513960    172540  15502560   2% /tmp
+/dev/sda6              1032072    452268    527376  47% /var
 *** Saving the APC executable ***
 *** disk space available for temporary files ***
 Filesystem           1K-blocks      Used Available Use% Mounted on
-/dev/sda2             16516084     51272  15625820   1% /tmp
-/dev/sda2             16516084     51272  15625820   1% /tmp
-/dev/sda6              1035660    379336    603716  39% /var
+/dev/sda2             16513960    179652  15495448   2% /tmp
+/dev/sda2             16513960    179652  15495448   2% /tmp
+/dev/sda6              1032072    452268    527376  47% /var
 ------------------ New result in all --------------------
 Time:  0 s real  20 ms cpu  0 ms cpu_child  memory:   4.5 Mb
 Delta: 0 s real  0 ms cpu  0 ms cpu_child  memory:   4.5 Mb
-/carm/proj/texttest/selftest_data/APC_CARMSYS/sk_test9scripts_tmp.apc/crc/rule_set/APC/i386_linux/.APC_fd54_DC9_no_reference.geoff.16421
+/carm/proj/texttest/selftest_data/APC_CARMSYS/sk_test9scripts_tmp.apc/crc/rule_set/APC/i386_linux/.APC_fd54_DC9_no_reference.geoff.15193
 -v 1
--R /nfs/local/apc_temp/APC_ji_single_base_CPH_spl_16421/APC_rot
+-R /nfs/local/apc_temp/APC_ji_single_base_CPH_spl_15193/APC_rot
 -U geoff
-executable name is [/carm/proj/texttest/selftest_data/APC_CARMSYS/sk_test9scripts_tmp.apc/crc/rule_set/APC/i386_linux/.APC_fd54_DC9_no_reference.geoff.16421]
+executable name is [/carm/proj/texttest/selftest_data/APC_CARMSYS/sk_test9scripts_tmp.apc/crc/rule_set/APC/i386_linux/.APC_fd54_DC9_no_reference.geoff.15193]
 carmsys: /carm/proj/texttest/selftest_data/APC_CARMSYS
 carmtmp: /carm/proj/texttest/selftest_data/APC_CARMSYS/sk_test9scripts_tmp.apc
 
@@ -116,7 +116,7 @@ carmtmp: /carm/proj/texttest/selftest_data/APC_CARMSYS/sk_test9scripts_tmp.apc
 canonicalize called
 _init_segment_duty_types: Cannot retrive resource CREW_DUTY_TYPE_ETAB_NAME
 
-Error! Pid:16479  Wed Apr 19 14:03:06 2006  User:geoff
+Error! Pid:15244  Fri Apr 28 17:30:22 2006  User:geoff
 Error! File:/carm/master/Data/duty_type/DutyType.cc  Line:202
 Error! _register_segment_duty_type: Registering new duty type  in category 1.
 
@@ -161,6 +161,37 @@ SECTION apc_chains Solution_3
 145;6784;0;0;0;A;;;0x40;0;
 145;12991;0;0;0;A;;;0x62;0;
 145;23686;0;0;0;A;;;0x40;0;
+------------------ Missing result in test --------------------
+OBJ	3782978        	trial 1
+OBJ	3782978        
+OBJ	3264229        	trial 2
+OBJ	3264229        	trial 2
+OBJ	3264229        	trial 2
+OBJ	3264229        	trial 2
+OBJ	3264229        
+OBJ	3095334        	trial 6
+OBJ	3095334        	trial 6
+OBJ	3095334        	trial 6
+OBJ	3095334        	trial 6
+OBJ	3095334        
+OBJ	2246208        	trial 10
+OBJ	2246208        	trial 10
+OBJ	2246208        	trial 10
+OBJ	2246208        	trial 10
+OBJ	2246208        
+OBJ	1869955        	trial 14
+OBJ	1869955        	trial 14
+OBJ	1869955        	trial 14
+OBJ	1869955        	trial 14
+OBJ	1869955        
+OBJ	1672802        	trial 18
+OBJ	1672802        	trial 18
+OBJ	1672802        	trial 18
+OBJ	1672802        	trial 18
+OBJ	1672802        
+OBJ	1551464        	trial 22
+OBJ	1551464        	trial 22
+OBJ	1551464        	trial 22
 <See also tkdiff window for details of status>
     Save Version crash(1), Save(s) or continue(any other key)?
-Killed process 23417 with signal 2
+Killed process 4746 with signal 2

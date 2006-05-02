@@ -7,6 +7,11 @@ def editFiles(dir):
         fileName = open(os.path.join(dir, "newfile"), "w")
         fileName.write("New file!\n")
         fileName.close()
+    if os.path.basename(dir) == "writeandremovehere":
+        fileName = open(os.path.join(dir, "newfile"), "w")
+        fileName.write("New file!\n")
+        fileName.close()
+        os.remove(os.path.join(dir, "newfile"))
     for fileName in os.listdir(dir):
         fullPath = os.path.join(dir, fileName)
         if fileName == "toRemove":
