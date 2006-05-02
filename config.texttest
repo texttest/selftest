@@ -109,6 +109,8 @@ catalogue:i386_linux_opt
 # Only filtered on windows
 catalogue:tdat.*cmp
 catalogue:grep.*cmp
+catalogues:{INTERNAL writedir}{REPLACE <test write dir>}
+catalogues:[^/]*[0-9][0-9][A-Z][a-z][a-z][0-9][0-9][0-9][0-9][0-9][0-9]{REPLACE <target tmp dir>}
 errors:RENDER
 errors:File .* line .* in
 errors:dipjudge.py has not been{WORD -5}
@@ -166,6 +168,7 @@ full_name:TextTest
 partial_copy_test_path:TargetApp
 partial_copy_test_path:texttesttmp
 partial_copy_test_path:repository
+copy_test_path:file_edits
 
 [test_data_environment]
 TargetApp:TEXTTEST_HOME
