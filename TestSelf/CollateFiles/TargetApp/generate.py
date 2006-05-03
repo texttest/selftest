@@ -6,9 +6,9 @@ def generateFile(name):
     print "Generating",name
     print >>file(name, "w"), name + "\nToday is Sunday"
 
-generateFile("generated_first.dump")
-generateFile("generated_second.dump")
-generateFile("generated_third.dump")
+generateFile("generated.first.dump")
+generateFile("generated.second.dump")
+generateFile("generated.third.dump")
 if len(sys.argv) == 1:
     generateFile("created_1.dump")
     generateFile("created_2.dump")

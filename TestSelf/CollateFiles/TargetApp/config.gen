@@ -10,11 +10,11 @@ discard_file:errors
 create_catalogues:true
 
 [run_dependent_text]
-generated_*:Today is{WORD -1}
+generated*:Today is{WORD -1}
 created_[1-9]:Today is
 
 [collate_file]
-generated_*:generated*.dump
+generated*:generated*.dump
 created_[1-9]:created_[1-9].dump
 
 [failure_severity]
