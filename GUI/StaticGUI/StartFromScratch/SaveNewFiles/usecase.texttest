@@ -1,0 +1,8 @@
+set test selection to TargetApp
+select test TargetApp
+enter test name = Test
+enter command line options = hello no_such_file
+add test
+run selected tests
+wait for dynamic GUI to be closed
+quit
