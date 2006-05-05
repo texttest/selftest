@@ -1,87 +1,48 @@
 # Checkout depends on the local machine, and the architecture
 [run_dependent_text]
 output:File .* line .* in
-output:Build Rave program
 output:lost the job{WORD -1}
 output:executing on
 output:batch system daemon
 output:Removing previous write
-output:Keeping APC logfile{WORD 9}
 output:No LSF installation
 output:system wait time
-output:Flat profile{LINES 50}
-output:Error! Pid
 output:Time.*real{LINES 9}
 output:Unexpected output from{WORD 7}
 output:Real time
 output:CPU time{WORD 4}
 output:Created process{WORD -1}
 output:Cancelling{WORD -1}
-output:/dev/sda
 output:terminated before completion{WORD 10}
 output:Terminating testing{WORD -1}
-output:compilation killed explicitly{WORD -1}
-output:GenTestOverview{WORD -1}
-output:Submitting Matador test-suite
-output:NFS, retry
-output:Timeout on
-output:^ar:
-output:----prof
 output:ioctl for device
 output:while still pending{WORD -1}
-errors:Error! Pid
-errors:/usr/share/matplotlib/Vera.ttf
 dynamic_gui_log:batch system daemon
-dynamic_gui_log:Build Rave program
 dynamic_gui_log:Second column.*PEND{WORD 4}
 dynamic_gui_log:Second column.*RU{WORD 4}
 dynamic_gui_log:No LSF installation
 dynamic_gui_log:File .* line .* in
-dynamic_gui_log:APC program{WORD -1}
-dynamic_gui_log:Total time
 catalogue:sleep.killing{LINES 20}
-catalogue:ravecompile
-catalogue:lsfreportmatador
 catalogue:slaveerrs
 catalogue:slavelog
-catalogue:^--------compile{->}^(?!--------)
-catalogue:\.##[0-9]*\.0#[a-z]*{REPLACE <rave tmp file>}
-directories:Created{WORD -1}
-slavedirs:Created{WORD -1}
 slavelog:TextTest will write diagnostics
 slavelog:checkout{WORD -1}
 slavelog:Terminating testing{WORD -1}
 slavelog:{INTERNAL writedir}{REPLACE <test write dir>}
-targetReport:Build Rave program
 targetReport:batch system daemon
 targetReport:No LSF installation
 targetReport:killed.*at{WORD -1}
 targetReport:terminated before completion{WORD 8}
 targetReport:File .* line .* in
 targetReport:ioctl for device
-graph:CreationDate
-graph:Lshow
-userpage:Comments to author
-userpage:Generated
-userpage:http://www-oint.carmen.se/Development/Optimization/APC/profiles/
-testpage:Comments to author
-testpage:Generated
 
 [unordered_text]
 output:Failed to submit to
 output:Evaluating
-output:Submitting Picador
-output:Trying to use ruleset
 output:Cancelling
 output:FAILED on
 output:View details
-gui_log:did not produce any results
-gui_log:process that records
-dynamic_gui_log:ERROR: Could not parse script{->}Expected application event
-dynamic_gui_log:Waiting for application event.*all_1crew{->}Expected application event.*othercarmtmp
 dynamic_gui_log:Waiting for application event{->}Expected application event
-usecase:wait for test
-directories:Removing
 [end]
 
 # Faked versions of LSF commands...
@@ -89,28 +50,6 @@ link_test_path:bsub
 link_test_path:bhosts
 link_test_path:bkill
 link_test_path:bjobs
-
-# Used for retrieving gnuplot processes...
-catalogue_process_string:Created process
-
-# List of (generally directories) to copy from the test directory to the write directory
-# because we want to write there.
-partial_copy_test_path:test_tmp
-
-[test_data_environment]
-test_tmp:PARTIAL_CARMTMP
-
-# Things to collate
-[collate_file]
-graph:texttesttmp/*/graph.ps
-userpage:sk_test9scripts.html
-testpage:testindex.html
-average:texttesttmp/*/average.0
-plotstd:texttesttmp/*/*/*/framework_tmp/plot-std-result
-slavelog:texttesttmp/*/*/*/framework_tmp/slavelog
-overview_weekend:report/*/test_*_weekend.html
-details:report/apc/test_master_05Sep2005.html
-[end]
 
 # Avoid waiting problems
 #default_queue:waiting

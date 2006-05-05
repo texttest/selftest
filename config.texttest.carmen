@@ -1,0 +1,79 @@
+# Checkout depends on the local machine, and the architecture
+[run_dependent_text]
+output:File .* line .* in
+output:Build Rave program
+output:Keeping APC logfile{WORD 9}
+output:Flat profile{LINES 50}
+output:Error! Pid
+output:/dev/sda
+output:compilation killed explicitly{WORD -1}
+output:GenTestOverview{WORD -1}
+output:Submitting Matador test-suite
+output:NFS, retry
+output:Timeout on
+output:^ar:
+output:----prof
+errors:Error! Pid
+errors:/usr/share/matplotlib/Vera.ttf
+dynamic_gui_log:Build Rave program
+dynamic_gui_log:APC program{WORD -1}
+dynamic_gui_log:Total time
+catalogue:ravecompile
+catalogue:lsfreportmatador
+catalogue:^--------compile{->}^(?!--------)
+catalogue:\.##[0-9]*\.0#[a-z]*{REPLACE <rave tmp file>}
+targetReport:Build Rave program
+graph:CreationDate
+graph:Lshow
+userpage:Comments to author
+userpage:Generated
+userpage:http://www-oint.carmen.se/Development/Optimization/APC/profiles/
+testpage:Comments to author
+testpage:Generated
+
+[unordered_text]
+output:Submitting Picador
+output:Trying to use ruleset
+dynamic_gui_log:{CLEAR LIST}
+dynamic_gui_log:Waiting for application event.*all_1crew{->}Expected application event.*othercarmtmp
+dynamic_gui_log:Waiting for application event{->}Expected application event
+usecase:wait for test
+[end]
+
+# We only do two passes, so we can't actually find the base_version LSF unless
+# we state it explicitly here
+base_version:{CLEAR LIST}
+base_version:sge
+base_version:lsf
+
+unsaveable_version:lsf
+unsaveable_version:sge
+unsaveable_version:carmen
+
+# Used for retrieving gnuplot processes...
+catalogue_process_string:Created process
+
+# For faking rave C-compilations
+link_test_path:gcc32
+link_test_path:gcc
+# For faking CVS operations
+link_test_path:cvs
+
+# List of (generally directories) to copy from the test directory to the write directory
+# because we want to write there.
+partial_copy_test_path:test_tmp
+
+[test_data_environment]
+test_tmp:PARTIAL_CARMTMP
+
+# Things to collate
+[collate_file]
+graph:texttesttmp/*/graph.ps
+userpage:sk_test9scripts.html
+testpage:testindex.html
+average:texttesttmp/*/average.0
+plotstd:texttesttmp/*/*/*/framework_tmp/plot-std-result
+slavelog:texttesttmp/*/*/*/framework_tmp/slavelog
+overview_weekend:report/*/test_*_weekend.html
+details:report/apc/test_master_05Sep2005.html
+[end]

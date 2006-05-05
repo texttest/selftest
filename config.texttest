@@ -34,6 +34,7 @@ default:sparc
 default:parisc_2_0
 default:lsf
 default:sge
+default:carmen
 
 [batch_use_collection]
 default:true
@@ -64,8 +65,6 @@ unsaveable_version:master
 unsaveable_version:i386_linux
 ## ================================================================
 ## end of stuff only for use at Carmen
-unsaveable_version:lsf
-unsaveable_version:sge
 
 [run_dependent_text]
 output*:TextTest will write diagnostics
@@ -220,6 +219,7 @@ definition_file_stems:target_input
 # Run the LSF and SGE tests too...
 extra_version:sge
 extra_version:lsf
+extra_version:carmen
 
 # Automatically collapse successful test suites?
 auto_collapse_successful:1
