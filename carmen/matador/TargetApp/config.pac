@@ -11,6 +11,8 @@ queue_system_module:${QUEUE_SYSTEM}
 # Binary (relative to checkout) to be used
 binary:${CARMSYS}/bin/MATADORbatch.sh
 
+default_interface:console
+
 # Check-out to use if no -c option is specified.
 # This will look globally if it starts with a /, locally 
 # under the same root as the Testing directory otherwise
