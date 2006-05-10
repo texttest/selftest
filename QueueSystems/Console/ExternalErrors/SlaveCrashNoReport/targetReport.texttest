@@ -1,6 +1,6 @@
 geoff@localhost
 unrunnable=1
-060428 SLEEP killing.badslavestart : 1 tests : 1 unrunnable
+060509 SLEEP killing.badslavestart : 1 tests : 1 unrunnable
 
 Summary of all Unsuccessful tests follows...
 ---------------------------------------------------------------------------------
@@ -18,18 +18,16 @@ TEST could not be run : SLEEP test-case Basic (under Basic)
 Slave exited
 Description of exception thrown :
 Traceback (most recent call last):
-  File "/users/geoff/work/master/Testing/TextTest/testmodel.py", line 665, in getActionSequence
+  File "/users/geoff/work/master/Testing/TextTest/testmodel.py", line 668, in getActionSequence
     actionSequenceFromConfig = self.target.getActionSequence()
-  File "/users/geoff/work/master/Testing/TextTest/default.py", line 61, in getActionSequence
+  File "/users/geoff/work/master/Testing/TextTest/default.py", line 62, in getActionSequence
     return self._getActionSequence(makeDirs=1)
-  File "/users/geoff/work/master/Testing/TextTest/default.py", line 100, in _getActionSequence
+  File "/users/geoff/work/master/Testing/TextTest/default.py", line 122, in _getActionSequence
     actions = [ self.getTestProcessor() ]
   File "/users/geoff/work/master/Testing/TextTest/queuesystem.py", line 118, in getTestProcessor
     baseProcessor = default.Config.getTestProcessor(self)
-  File "/users/geoff/work/master/Testing/TextTest/default.py", line 110, in getTestProcessor
+  File "/users/geoff/work/master/Testing/TextTest/default.py", line 132, in getTestProcessor
     return [ self.getWriteDirectoryPreparer(ignoreCatalogues), catalogueCreator, \
-  File "/users/geoff/work/master/Testing/TextTest/default.py", line 200, in tryGetTestRunner
-    return self.getTestRunner()
   File "/users/geoff/work/master/Testing/Automatic/texttest/error_config_modules/slaveerrstart.py", line 12, in getTestRunner
     wibble
 NameError: global name 'wibble' is not defined
