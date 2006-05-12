@@ -1,0 +1,20 @@
+# Make sure we can correctly select versions which have base versions and get the right answer...
+SelectBaseVersion
+
+# After selecting it should clear again when you press select next time
+ClearTestSelection
+
+# Make sure when we press select and an extra version is present, everything is highlighted
+SelectExtraVersion
+
+# Check we can save selections (all variants)
+SaveSelection
+
+# Make sure we can handle selecting tests that the static GUI doesn't know about...
+SelectUnknownTest
+
+# Do multiple selections to test the different ways in which the current selection can be manipulated.
+MultipleSelections
+
+# Copy of MultipleSelections, which also runs the selected tests
+MultipleSelectionsRun

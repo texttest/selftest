@@ -1,90 +1,20 @@
-# First test for adding a new test
-AddTest
+# Tests for starting tests from the static GUI
+Running
 
-# Adding a new suite and 1 test in it
-AddSuite
+# Tests for the various test-selection capabilities
+Selection
 
-# Make sure we can sensibly copy existing tests
-CopyTest
+# Tests for adding, copying, removing tests etc.
+Administration
 
-# Make sure deletion works from the static GUI...
-RemoveTest
-# Check that tests can be removed after they are run...
-RunAndRemoveTest
-# Should be able to remove test suites also
-RemoveSuite
-
-# Should now be able to run tests without typing command lines
-RunTestsFromStaticGUI
-
-# Should be possible to do the same thing by writing a command line filter
-StaticGUIFilterRunTests
-
-# All tests run from static GUI. Make sure they really are all run!
-RunAllTestsStatic
-
-# Make sure we can select and run OK with version identifiers
-SelectAndRunVersion
-
-# Make sure we can correctly select versions which have base versions and get the right answer...
-SelectBaseVersion
-
-# After selecting it should clear again when you press select next time
-ClearTestSelection
-
-# Make sure that personal config files show up in the application view
-ViewPersonalFiles
-
-# Press things we aren't allowed to and check for responses
-ErrorMessages
-
-# Make sure correct refreshes take place on editing testsuite files
-RefreshTestSuite
-
-# Make sure refreshing on quit doesn't cause crashes
-RefreshAfterQuit
-
-# Make sure when we press select and an extra version is present, everything is highlighted
-SelectExtraVersion
-
-# Make sure the check boxes reset correctly
-ResetRunFlag
-
-# Make sure the reset button works after changing test
-ChangeTestReset
-
-# Check we can save selections (all variants)
-SaveSelection
-
-# Make sure we can handle selecting tests that the static GUI doesn't know about...
-SelectUnknownTest
-
-# Do multiple selections to test the different ways in which the current selection can be manipulated.
-MultipleSelections
-
-# Copy of MultipleSelections, which also runs the selected tests
-MultipleSelectionsRun
-
-# Check we get a correct popup if we start a test which doesn't exist for the given version
-StartIncompatibleTest
-
-# Crash on trying to run an application as if it were a test
-RunAppAsTest
-
-# Static GUI should run even when no tests are present
-StartNoTests
-
-# Make sure we don't stack trace if no apps are started
-StartNoApps
-
-# Testing the 'verify quit' dialog, asking about all child processes
-VerifyQuitAll
-
-# Verify quit, but only for texttest
-VerifyQuitTextTest
-
-# Tests for starting with no tests
+# Tests for starting with no tests (different data)
 StartFromScratch
 
-# For tests on GUI programs...
+# For tests on GUI programs... (also different data)
 UseCaseRecording
+
+# Tests for various sorts of errors
+ErrorHandling
+
+# And the rest
+Miscellaneous
