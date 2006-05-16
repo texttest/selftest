@@ -10,6 +10,9 @@ RegisterFailureBatch
 # Check we can match up with version file and get success
 ReconnectFullWithVersion
 
+# Make sure performance comparison works when there is no teststate file and small performance differences
+ReconnectFullNoState
+
 # Check that clearing performance_test_machine works
 DisablePerfCheck
 
