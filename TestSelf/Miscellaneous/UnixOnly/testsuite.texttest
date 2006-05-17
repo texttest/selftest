@@ -1,0 +1,14 @@
+# Ordered list of tests in test suite. Add as appropriate
+
+
+# Check we can connect to and run an Xvfb server...
+UseVirtualDisplay
+
+# Make sure we can failover if there isn't a server running on the earlier machines
+UseAlternativeServer
+
+# Check we can start the server if it isn't already running
+StartNewServer
+
+# If the server can't be used, we should try to kill it
+KillUselessServer
