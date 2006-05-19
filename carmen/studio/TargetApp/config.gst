@@ -14,6 +14,8 @@ default_checkout:selftest_data
 
 create_catalogues:true
 
+lines_of_crc_compile:5000
+
 virtual_display_machine:fougamou
 virtual_display_machine:singleton
 

@@ -1,54 +1,29 @@
-TextTest will write diagnostics in /users/geoff/texttesttmp/texttest.carmengeoff08May170250/carmen/matador/Running/LprofRun based on file at /users/geoff/work/master/Testing/Automatic/texttest/log4py.conf
+TextTest will write diagnostics in /users/geoff/texttesttmp/texttest.carmengeoff19May161202/carmen/matador/Running/LprofRun based on file at /users/geoff/work/master/Testing/Automatic/texttest/log4py.conf
 Using Application Matador, checkout /carm/proj/texttest/selftest_data
 Note: Running with Diagnostics on, so performance checking is disabled!
 Submitting Rule Builds for Matador test-suite TargetApp to SGE queues
   Submitting Rule Builds for Matador test-suite ArtificialUser to SGE queues
 Submitting Matador test-suite TargetApp to SGE queues
   Submitting Matador test-suite ArtificialUser to SGE queues
-    Submitting Matador test-case generate_in_subperiod to SGE queue short, requesting osversion=RHEL3,model=Opteron*,carmrunmaster=1,carmarch="*linux*"
+    Submitting Matador test-case generate_in_subperiod to SGE queue short, requesting osversion=RHEL4,model=Opteron*,carmrunmaster=1,carmarch="*linux*"
     Evaluating Matador test-case generate_in_subperiod (on catalogue.cas,errors.cas,lprof.cas,output.cas,solution.cas,assignedposition.cas,crewmembers.cas,inputlegs.cas,inputrosters.cas,inputtrips.cas,parameters.cas)
-    Matador test-case generate_in_subperiod FAILED on roosterville : new results in lprof,assignedposition, differences in catalogue,parameters
+    Matador test-case generate_in_subperiod FAILED on merrillville : new results in lprof,assignedposition, differences in catalogue,parameters
     View details(v), Save(s) or continue(any other key)?
 ------------------ Differences in catalogue --------------------
 2a3,4
 > ----gprof.output
-> ----prof.15548
+> ----prof.2624
 ------------------ Differences in parameters --------------------
 8c8
 <  Parameter break_cost_unit left as default 1
 ---
 >  Parameter break_cost_unit left as default -1
 ------------------ New result in lprof --------------------
-Flat profile, 50 samples in total
+Flat profile, 0 samples in total
 
- 32.0   32.0   _fini
- 26.0   58.0   __GI_times
-  8.0   66.0   __open_nocancel
-  6.0   72.0   sYSMALLOc
-  6.0   78.0   TaskId::TaskId
-  4.0   82.0   __close_nocancel
-  2.0   84.0   __brk
-  2.0   86.0   __pthread_mutex_lock_internal
-  2.0   88.0   __read_nocancel
-  2.0   90.0   __waitpid_nocancel
-  2.0   92.0   __write_nocancel
-  2.0   94.0   std::_Rb_tree<Diagnostics*, Diagnostics*, std::_Identity<Diagnostics*>, DiagnosticsCache::less_diag, std::allocator<Diagnostics*> >::_M_create_node
-  2.0   96.0   _int_malloc
-  2.0   98.0   __GI___unlink
-  2.0  100.0   __GI___munmap
-  0.0  100.0   RRLParser::~RRLParser
-  0.0  100.0   RRLParser::getNextRecord
-  0.0  100.0   ImproveMethod::createSolver const
-  0.0  100.0   ImproveMethod::setUpperBound const
-  0.0  100.0   less_task_dep::operator const
-  0.0  100.0   SolutionAnalyser::inqCostOfLegQuals const
-  0.0  100.0   SolutionAnalyser::inqCost const
-  0.0  100.0   RAVEEvaluationTask::doRAVEChanges const
-  0.0  100.0   RRLParser::makeRecord
-  0.0  100.0   TagEntry::TagEntry
-  0.0  100.0   Matador::run
-  0.0  100.0   Matador::runMethods
-  0.0  100.0   CrewLeg::CrewLeg
+
+Call graph
+
 ------------------ New result in assignedposition --------------------
 map_crew_assigned_position : crew_assigned_position NOT trip-dependent
 Regular position For all trips, crew ARKE 85868 in pos P

@@ -1,19 +1,20 @@
-TextTest will write diagnostics in /users/geoff/texttesttmp/texttest.carmengeoff08May170250/carmen/APC/Running/CoreDump based on file at /users/geoff/work/master/Testing/Automatic/texttest/log4py.conf
+TextTest will write diagnostics in /users/geoff/texttesttmp/texttest.carmengeoff19May161202/carmen/APC/Running/CoreDump based on file at /users/geoff/work/master/Testing/Automatic/texttest/log4py.conf
 WARNING: the test small1 could not be found
-Please check the file at /users/geoff/texttesttmp/texttest.carmengeoff08May170250/carmen/APC/Running/CoreDump/TargetApp/lh_bascripts/testsuite.apc
+Please check the file at /users/geoff/texttesttmp/texttest.carmengeoff19May161202/carmen/APC/Running/CoreDump/TargetApp/lh_bascripts/testsuite.apc
 WARNING: the test small1 could not be found
-Please check the file at /users/geoff/texttesttmp/texttest.carmengeoff08May170250/carmen/APC/Running/CoreDump/TargetApp/lh_bascripts_empty/testsuite.apc
+Please check the file at /users/geoff/texttesttmp/texttest.carmengeoff19May161202/carmen/APC/Running/CoreDump/TargetApp/lh_bascripts_empty/testsuite.apc
 Using Application APC, version crash, checkout /carm/proj/texttest/selftest_data
 Submitting Rule Builds for APC test-suite TargetApp to SGE queues
   Submitting Rule Builds for APC test-suite sk_test9scripts to SGE queues
 Submitting APC test-suite TargetApp to SGE queues
   Submitting APC test-suite sk_test9scripts to SGE queues
-    Submitting APC test-case no_dh_single_base_cg to SGE queue short, requesting osversion=RHEL3,carmrunmaster=1,carmarch="*linux*"
+    Submitting APC test-case no_dh_single_base_cg to SGE queue short, requesting osversion=RHEL4,carmrunmaster=1,carmarch="*linux*"
     Evaluating APC test-case no_dh_single_base_cg (on script_errors.apc,status.apc,warnings.apc,all.apc,solution.apc,test.apc)
-    APC test-case no_dh_single_base_cg CRASHED (Segmentation fault in raise) on smithville : new results in script_errors,all, missing results for solution,test, differences in status,warnings
+    APC test-case no_dh_single_base_cg CRASHED (Segmentation fault in __kernel_vsyscall) on circleville : new results in script_errors,all, missing results for solution,test, differences in status,warnings
     View details(v), Save Version crash(1), Save(s) or continue(any other key)?
 Program terminated with signal 11, Segmentation fault.
 Stack trace from gdb :
+__kernel_vsyscall 
 raise 
 apc_pac_setup 
 apc_setup 
@@ -87,23 +88,29 @@ APC exited with error code 139 <segmentation fault>
 *** Keeping the logfiles in $APC_TEMP_DIR ***
 *** disk space available for temporary files ***
 Filesystem           1K-blocks      Used Available Use% Mounted on
-/dev/sda2             16513960    641936  15033164   5% /tmp
-/dev/sda2             16513960    641936  15033164   5% /tmp
-/dev/sda6              1032072    157212    822432  17% /var
+/dev/mapper/vg0-tmpvol
+                      16513960    102680  15572420   1% /tmp
+/dev/mapper/vg0-tmpvol
+                      16513960    102680  15572420   1% /tmp
+/dev/mapper/vg0-varvol
+                       2064208    138316   1821036   8% /var
 *** Saving the APC executable ***
 *** disk space available for temporary files ***
 Filesystem           1K-blocks      Used Available Use% Mounted on
-/dev/sda2             16513960    649048  15026052   5% /tmp
-/dev/sda2             16513960    649048  15026052   5% /tmp
-/dev/sda6              1032072    157212    822432  17% /var
+/dev/mapper/vg0-tmpvol
+                      16513960    109792  15565308   1% /tmp
+/dev/mapper/vg0-tmpvol
+                      16513960    109792  15565308   1% /tmp
+/dev/mapper/vg0-varvol
+                       2064208    138316   1821036   8% /var
 ------------------ New result in all --------------------
-Time:  0 s real  0 ms cpu  0 ms cpu_child  memory:   4.5 Mb
-Delta: 0 s real  0 ms cpu  0 ms cpu_child  memory:   4.5 Mb
-/carm/proj/texttest/selftest_data/APC_CARMSYS/sk_test9scripts_tmp.apc/crc/rule_set/APC/i386_linux/.APC_fd54_DC9_no_reference.geoff.11151
+Time:  0 s real  10 ms cpu  0 ms cpu_child  memory:  17.7 Mb
+Delta: 0 s real  0 ms cpu  0 ms cpu_child  memory:  17.7 Mb
+/carm/proj/texttest/selftest_data/APC_CARMSYS/sk_test9scripts_tmp.apc/crc/rule_set/APC/i386_linux/.APC_fd54_DC9_no_reference.geoff.13047
 -v 1
--R /nfs/local/apc_temp/APC_ji_single_base_CPH_spl_11151/APC_rot
+-R /nfs/local/apc_temp/APC_ji_single_base_CPH_spl_13047/APC_rot
 -U geoff
-executable name is [/carm/proj/texttest/selftest_data/APC_CARMSYS/sk_test9scripts_tmp.apc/crc/rule_set/APC/i386_linux/.APC_fd54_DC9_no_reference.geoff.11151]
+executable name is [/carm/proj/texttest/selftest_data/APC_CARMSYS/sk_test9scripts_tmp.apc/crc/rule_set/APC/i386_linux/.APC_fd54_DC9_no_reference.geoff.13047]
 carmsys: /carm/proj/texttest/selftest_data/APC_CARMSYS
 carmtmp: /carm/proj/texttest/selftest_data/APC_CARMSYS/sk_test9scripts_tmp.apc
 
@@ -115,7 +122,7 @@ carmtmp: /carm/proj/texttest/selftest_data/APC_CARMSYS/sk_test9scripts_tmp.apc
 canonicalize called
 _init_segment_duty_types: Cannot retrive resource CREW_DUTY_TYPE_ETAB_NAME
 
-Error! Pid:11198  Mon May  8 17:05:40 2006  User:geoff
+Error! Pid:13101  Fri May 19 16:12:40 2006  User:geoff
 Error! File:/carm/master/Data/duty_type/DutyType.cc  Line:202
 Error! _register_segment_duty_type: Registering new duty type  in category 1.
 
@@ -193,4 +200,4 @@ OBJ	1551464        	trial 22
 OBJ	1551464        	trial 22
 <See also tkdiff window for details of status>
     Save Version crash(1), Save(s) or continue(any other key)?
-Killed process 32663 with signal 2
+Killed process 7881 with signal 2

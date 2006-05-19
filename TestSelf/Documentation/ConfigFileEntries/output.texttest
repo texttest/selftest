@@ -1,5 +1,5 @@
-TextTest will write diagnostics in /users/geoff/texttesttmp/texttestgeoff16May150238/TestSelf/Documentation/ConfigFileEntries based on file at /users/geoff/work/master/Testing/Automatic/texttest/log4py.conf
-Using Application DIP, checkout /users/geoff/texttesttmp/texttestgeoff16May150238/TestSelf/Documentation/ConfigFileEntries/TargetApp/CodeNoFailures
+TextTest will write diagnostics in /users/geoff/texttesttmp/texttestgeoff19May163053/TestSelf/Documentation/ConfigFileEntries based on file at /users/geoff/work/master/Testing/Automatic/texttest/log4py.conf
+Using Application DIP, checkout /users/geoff/texttesttmp/texttestgeoff19May163053/TestSelf/Documentation/ConfigFileEntries/TargetApp/CodeNoFailures
 binary|${TEXTTEST_CHECKOUT}/dipjudge.py|Full path to the System Under Test
 config_module|default|Configuration module to use
 full_name|DIP|Expanded name to use for application
@@ -10,8 +10,8 @@ base_version|[]|Versions to inherit settings from
 unsaveable_version|['unsaveable']|Versions which should not have results saved for them
 slow_motion_replay_speed|0|How long in seconds to wait between each GUI action
 add_shortcut_bar|1|Whether or not TextTest's shortcut bar will appear
-test_colours|{'failure': 'red', 'running': 'yellow', 'static': 'pale green', 'success': 'green', 'not_started': 'white', 'app_static': 'purple', 'pending': 'white'}|Colours to use for each test state
-file_colours|{'failure': 'red', 'running': 'yellow', 'static': 'pale green', 'success': 'green', 'not_started': 'white', 'app_static': 'purple'}|Colours to use for each file state
+test_colours|{'success': 'green', 'not_started': 'white', 'failure': 'red', 'running': 'yellow', 'static': 'pale green', 'app_static': 'purple', 'pending': 'white'}|Colours to use for each test state
+file_colours|{'success': 'green', 'not_started': 'white', 'failure': 'red', 'running': 'yellow', 'static': 'pale green', 'app_static': 'purple'}|Colours to use for each file state
 auto_collapse_successful|0|Automatically collapse successful test suites?
 auto_sort_test_suites|0|Automatically sort test suites in alphabetical order
 window_size|{'': []}|To set the initial size of the dynamic/static GUI.
@@ -57,7 +57,7 @@ discard_file|['errors']|List of generated result files which should not be compa
 smtp_server|localhost|Server to use for sending mail in batch mode
 batch_result_repository|{'default': ''}|Directory to store historical batch results under
 historical_report_location|{'default': ''}|Directory to create reports on historical batch data under
-testoverview_colours|{'column_header_fg': 'black', 'failure_bg': '#FF3118', 'row_header_bg': '#FFFFCC', 'no_results_bg': 'gray2', 'column_header_bg': 'gray1', 'test_default_fg': 'black', 'memory_bg': 'pink', 'performance_bg': '#FFC6A5', 'performance_fg': 'red6', 'success_bg': '#CEEFBD'}|Colours to use for historical batch HTML reports
+testoverview_colours|{'performance_bg': '#FFC6A5', 'row_header_bg': '#FFFFCC', 'test_default_fg': 'black', 'column_header_bg': 'gray1', 'success_bg': '#CEEFBD', 'column_header_fg': 'black', 'failure_bg': '#FF3118', 'no_results_bg': 'gray2', 'memory_bg': 'pink', 'performance_fg': 'red6'}|Colours to use for historical batch HTML reports
 batch_sender|{'default': 'geoff@localhost'}|Sender address to use sending mail in batch mode
 batch_recipients|{'default': 'geoff@localhost'}|Addresses to send mail to in batch mode
 batch_timelimit|{'default': None}|Maximum length of test to include in batch mode runs
