@@ -1,5 +1,5 @@
-TextTest will write diagnostics in /users/geoff/texttesttmp/texttestgeoff19May163053/TestSelf/Documentation/ConfigFileEntries based on file at /users/geoff/work/master/Testing/Automatic/texttest/log4py.conf
-Using Application DIP, checkout /users/geoff/texttesttmp/texttestgeoff19May163053/TestSelf/Documentation/ConfigFileEntries/TargetApp/CodeNoFailures
+TextTest will write diagnostics in /users/geoff/texttesttmp/texttestgeoff19May182114/TestSelf/Documentation/ConfigFileEntries based on file at /users/geoff/work/master/Testing/Automatic/texttest/log4py.conf
+Using Application DIP, checkout /users/geoff/texttesttmp/texttestgeoff19May182114/TestSelf/Documentation/ConfigFileEntries/TargetApp/CodeNoFailures
 binary|${TEXTTEST_CHECKOUT}/dipjudge.py|Full path to the System Under Test
 config_module|default|Configuration module to use
 full_name|DIP|Expanded name to use for application
@@ -22,10 +22,10 @@ definition_file_stems|['environment', 'testsuite', 'knownbugs', 'options', 'usec
 gui_entry_overrides|{}|Default settings for entries in the GUI
 gui_entry_options|{'': []}|Default drop-down box options for GUI entries
 diff_program|tkdiff|External program to use for graphical file comparison
-view_program|xemacs|External program to use for viewing and editing text files
+view_program|{'default': 'xemacs'}|External program(s) to use for viewing and editing text files
 follow_program|tail -f|External program to use for following progress of a file
 log_file|output|Result file to search, by default
-failure_severity|{'output': 1, 'usecase': 2, 'errors': 1, 'catalogue': 2, 'performance': 2}|Mapping of result files to how serious diffs in them are
+failure_severity|{'errors': 1, 'default': 99, 'catalogue': 2, 'usecase': 2, 'performance': 2, 'output': 1}|Mapping of result files to how serious diffs in them are
 text_diff_program|diff|External program to use for textual comparison of files
 lines_of_text_difference|30|How many lines to present in textual previews of file diffs
 max_width_text_difference|500|How wide lines can be in textual previews of file diffs
@@ -39,8 +39,8 @@ test_data_searchpath|{'default': []}|Locations to search for test data if not pr
 test_list_files_directory|['filter_files']|Directories to search for test-filter files
 collate_file|{'stacktrace': 'core*'}|Mapping of result file names to paths to collect them from
 collate_script|{'stacktrace': 'interpretcore.py'}|Mapping of result file names to scripts which turn them into suitable text
-run_dependent_text|{'': [], 'output': ['Running Diplomacy Judge']}|Mapping of patterns to remove from result files
-unordered_text|{'': []}|Mapping of patterns to extract and sort from result files
+run_dependent_text|{'default': [], 'output': ['Running Diplomacy Judge']}|Mapping of patterns to remove from result files
+unordered_text|{'default': []}|Mapping of patterns to extract and sort from result files
 create_catalogues|false|Do we create a listing of files created/removed by tests
 catalogue_process_string||String for catalogue functionality to identify processes created
 internal_error_text|[]|List of text to be considered as an internal error, if present
