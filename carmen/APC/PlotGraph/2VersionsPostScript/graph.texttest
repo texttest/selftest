@@ -1,6 +1,6 @@
 %!PS-Adobe-2.0
-%%Creator: gnuplot 3.7 patchlevel 3
-%%CreationDate: Fri Apr 15 23:56:19 2005
+%%Creator: gnuplot 4.0 patchlevel 0
+%%CreationDate: Tue May 23 11:30:17 2006
 %%DocumentFonts: (atend)
 %%BoundingBox: 50 50 554 770
 %%Orientation: Landscape
@@ -13,15 +13,19 @@ gnudict begin
 /gnulinewidth 5.000 def
 /userlinewidth gnulinewidth def
 /vshift -46 def
-/dl {10 mul} def
+/dl {10.0 mul} def
 /hpt_ 31.5 def
 /vpt_ 31.5 def
 /hpt hpt_ def
 /vpt vpt_ def
+/Rounded false def
 /M {moveto} bind def
 /L {lineto} bind def
 /R {rmoveto} bind def
 /V {rlineto} bind def
+/N {newpath moveto} bind def
+/C {setrgbcolor} bind def
+/f {rlineto fill} bind def
 /vpt2 vpt 2 mul def
 /hpt2 hpt 2 mul def
 /Lshow { currentpoint stroke M
@@ -33,12 +37,16 @@ gnudict begin
 /UP { dup vpt_ mul /vpt exch def hpt_ mul /hpt exch def
   /hpt2 hpt 2 mul def /vpt2 vpt 2 mul def } def
 /DL { Color {setrgbcolor Solid {pop []} if 0 setdash }
- {pop pop pop Solid {pop []} if 0 setdash} ifelse } def
-/BL { stroke userlinewidth 2 mul setlinewidth } def
-/AL { stroke userlinewidth 2 div setlinewidth } def
+ {pop pop pop 0 setgray Solid {pop []} if 0 setdash} ifelse } def
+/BL { stroke userlinewidth 2 mul setlinewidth
+      Rounded { 1 setlinejoin 1 setlinecap } if } def
+/AL { stroke userlinewidth 2 div setlinewidth
+      Rounded { 1 setlinejoin 1 setlinecap } if } def
 /UL { dup gnulinewidth mul /userlinewidth exch def
       dup 1 lt {pop 1} if 10 mul /udl exch def } def
-/PL { stroke userlinewidth setlinewidth } def
+/PL { stroke userlinewidth setlinewidth
+      Rounded { 1 setlinejoin 1 setlinecap } if } def
+/LTw { PL [] 1 setgray } def
 /LTb { BL [] 0 0 0 DL } def
 /LTa { AL [1 udl mul 2 udl mul] 0 setdash 0 0 0 setrgbcolor } def
 /LT0 { PL [] 1 0 0 DL } def
@@ -236,6 +244,39 @@ gnudict begin
 /CircW { stroke [] 0 setdash 
   hpt 0 360 arc Opaque stroke } def
 /BoxFill { gsave Rec 1 setgray fill grestore } def
+/BoxColFill {
+  gsave Rec
+  /Fillden exch def
+  currentrgbcolor
+  /ColB exch def /ColG exch def /ColR exch def
+  /ColR ColR Fillden mul Fillden sub 1 add def
+  /ColG ColG Fillden mul Fillden sub 1 add def
+  /ColB ColB Fillden mul Fillden sub 1 add def
+  ColR ColG ColB setrgbcolor
+  fill grestore } def
+%
+% PostScript Level 1 Pattern Fill routine
+% Usage: x y w h s a XX PatternFill
+%	x,y = lower left corner of box to be filled
+%	w,h = width and height of box
+%	  a = angle in degrees between lines and x-axis
+%	 XX = 0/1 for no/yes cross-hatch
+%
+/PatternFill { gsave /PFa [ 9 2 roll ] def
+    PFa 0 get PFa 2 get 2 div add PFa 1 get PFa 3 get 2 div add translate
+    PFa 2 get -2 div PFa 3 get -2 div PFa 2 get PFa 3 get Rec
+    gsave 1 setgray fill grestore clip
+    currentlinewidth 0.5 mul setlinewidth
+    /PFs PFa 2 get dup mul PFa 3 get dup mul add sqrt def
+    0 0 M PFa 5 get rotate PFs -2 div dup translate
+	0 1 PFs PFa 4 get div 1 add floor cvi
+	{ PFa 4 get mul 0 M 0 PFs V } for
+    0 PFa 6 get ne {
+	0 1 PFs PFa 4 get div 1 add floor cvi
+	{ PFa 4 get mul 0 2 1 roll M PFs 0 V } for
+    } if
+    stroke grestore } def
+%
 /Symbol-Oblique /Symbol findfont [1 0 .167 1 0 0] makefont
 dup length dict begin {1 index /FID eq {pop pop} {def} ifelse} forall
 currentdict end definefont pop
@@ -257,66 +298,98 @@ LTb
 63 0 V
 -147 0 R
 ( 2.63e+07) Rshow
+1.000 UL
+LTb
 1134 1140 M
 63 0 V
 -147 0 R
 ( 2.64e+07) Rshow
+1.000 UL
+LTb
 1134 1720 M
 63 0 V
 -147 0 R
 ( 2.65e+07) Rshow
+1.000 UL
+LTb
 1134 2300 M
 63 0 V
 -147 0 R
 ( 2.66e+07) Rshow
+1.000 UL
+LTb
 1134 2880 M
 63 0 V
 -147 0 R
 ( 2.67e+07) Rshow
+1.000 UL
+LTb
 1134 3460 M
 63 0 V
 -147 0 R
 ( 2.68e+07) Rshow
+1.000 UL
+LTb
 1134 4040 M
 63 0 V
 -147 0 R
 ( 2.69e+07) Rshow
+1.000 UL
+LTb
 1134 4620 M
 63 0 V
 -147 0 R
 ( 2.7e+07) Rshow
+1.000 UL
+LTb
 1134 560 M
 0 63 V
 0 -203 R
 ( 0) Cshow
+1.000 UL
+LTb
 1967 560 M
 0 63 V
 0 -203 R
 ( 2) Cshow
+1.000 UL
+LTb
 2799 560 M
 0 63 V
 0 -203 R
 ( 4) Cshow
+1.000 UL
+LTb
 3632 560 M
 0 63 V
 0 -203 R
 ( 6) Cshow
+1.000 UL
+LTb
 4464 560 M
 0 63 V
 0 -203 R
 ( 8) Cshow
+1.000 UL
+LTb
 5297 560 M
 0 63 V
 0 -203 R
 ( 10) Cshow
+1.000 UL
+LTb
 6129 560 M
 0 63 V
 0 -203 R
 ( 12) Cshow
+1.000 UL
+LTb
 6962 560 M
 0 63 V
 0 -203 R
 ( 14) Cshow
+1.000 UL
+LTb
 1.000 UL
 LTb
 1134 560 M
@@ -324,21 +397,27 @@ LTb
 0 4060 R
 -5828 0 R
 0 -4060 V
+LTb
 140 2590 M
 currentpoint gsave translate 90 rotate 0 0 M
 (cost of plan) Cshow
 grestore
+LTb
 4048 210 M
 (CPU time \(hours\)) Cshow
+LTb
 4048 4830 M
 (testtitle) Cshow
 210 70 M
-(Fri Apr 15 23:56:19 2005) Lshow
+(Tue May 23 11:30:17 2006) Lshow
+1.000 UP
 1.000 UP
 1.000 UL
 LT1
+LTb
 6311 4487 M
 (FC4_bas_col_1_paphos_aan.std result) Rshow
+LT1
 6395 4487 M
 399 0 V
 1134 3602 M
@@ -421,8 +500,10 @@ LT1
 1.000 UP
 1.000 UL
 LT2
+LTb
 6311 4347 M
 (FC4_bas_col_1_paphos_aan.9) Rshow
+LT2
 6395 4347 M
 399 0 V
 1134 3602 M
@@ -489,8 +570,10 @@ LT2
 1.000 UP
 1.000 UL
 LT1
+LTb
 6311 4207 M
 (FC4_bas_col_1_paphos_aat.std result) Rshow
+LT1
 6395 4207 M
 399 0 V
 1134 3602 M
@@ -513,8 +596,8 @@ LT1
 4 -31 V
 134 -388 V
 134 13 V
-23 -346 V
-62 -170 V
+23 -345 V
+62 -171 V
 145 -74 V
 59 -11 V
 62 -193 V
@@ -552,7 +635,7 @@ LT1
 1988 2629 Crs
 2122 2241 Crs
 2256 2254 Crs
-2279 1908 Crs
+2279 1909 Crs
 2341 1738 Crs
 2486 1664 Crs
 2545 1653 Crs
@@ -575,8 +658,10 @@ LT1
 1.000 UP
 1.000 UL
 LT2
+LTb
 6311 4067 M
 (FC4_bas_col_1_paphos_aat.9) Rshow
+LT2
 6395 4067 M
 399 0 V
 1134 3602 M
@@ -649,8 +734,10 @@ LT2
 1.000 UP
 1.000 UL
 LT1
+LTb
 6311 3927 M
 (FC4_bas_col_1_paphos_adn.std result) Rshow
+LT1
 6395 3927 M
 399 0 V
 1134 3602 M
@@ -735,8 +822,10 @@ LT1
 1.000 UP
 1.000 UL
 LT2
+LTb
 6311 3787 M
 (FC4_bas_col_1_paphos_adn.9) Rshow
+LT2
 6395 3787 M
 399 0 V
 1134 3602 M
@@ -805,8 +894,10 @@ LT2
 1.000 UP
 1.000 UL
 LT1
+LTb
 6311 3647 M
 (FC4_bas_col_1_paphos_adt.std result) Rshow
+LT1
 6395 3647 M
 399 0 V
 1134 3602 M
@@ -891,8 +982,10 @@ LT1
 1.000 UP
 1.000 UL
 LT2
+LTb
 6311 3507 M
 (FC4_bas_col_1_paphos_adt.9) Rshow
+LT2
 6395 3507 M
 399 0 V
 -5660 95 R
@@ -965,8 +1058,10 @@ LT2
 1.000 UP
 1.000 UL
 LT1
+LTb
 6311 3367 M
 (FC4_bas_col_1_paphos_dan.std result) Rshow
+LT1
 6395 3367 M
 399 0 V
 1134 3602 M
@@ -1031,8 +1126,10 @@ LT1
 1.000 UP
 1.000 UL
 LT2
+LTb
 6311 3227 M
 (FC4_bas_col_1_paphos_dan.9) Rshow
+LT2
 6395 3227 M
 399 0 V
 1134 3602 M
@@ -1091,8 +1188,10 @@ LT2
 1.000 UP
 1.000 UL
 LT1
+LTb
 6311 3087 M
 (FC4_bas_col_1_paphos_dat.std result) Rshow
+LT1
 6395 3087 M
 399 0 V
 1134 3602 M
@@ -1153,8 +1252,10 @@ LT1
 1.000 UP
 1.000 UL
 LT2
+LTb
 6311 2947 M
 (FC4_bas_col_1_paphos_dat.9) Rshow
+LT2
 6395 2947 M
 399 0 V
 1134 3602 M
@@ -1205,8 +1306,10 @@ LT2
 1.000 UP
 1.000 UL
 LT1
+LTb
 6311 2807 M
 (FC4_bas_col_1_paphos_ddn.std result) Rshow
+LT1
 6395 2807 M
 399 0 V
 1134 3602 M
@@ -1289,8 +1392,10 @@ LT1
 1.000 UP
 1.000 UL
 LT2
+LTb
 6311 2667 M
 (FC4_bas_col_1_paphos_ddn.9) Rshow
+LT2
 6395 2667 M
 399 0 V
 1134 3602 M
@@ -1310,8 +1415,8 @@ LT2
 17 -145 V
 89 -111 V
 3 -30 V
-95 8 V
-93 -352 V
+95 9 V
+93 -353 V
 252 297 V
 51 528 V
 12 -226 V
@@ -1333,7 +1438,7 @@ LT2
 2655 1635 CircleF
 2744 1524 CircleF
 2747 1494 CircleF
-2842 1502 CircleF
+2842 1503 CircleF
 2935 1150 CircleF
 3187 1447 CircleF
 3238 1975 CircleF
@@ -1343,8 +1448,10 @@ LT2
 1.000 UP
 1.000 UL
 LT1
+LTb
 6311 2527 M
 (FC4_bas_col_1_paphos_ddt.std result) Rshow
+LT1
 6395 2527 M
 399 0 V
 1134 3602 M
@@ -1415,8 +1522,10 @@ LT1
 1.000 UP
 1.000 UL
 LT2
+LTb
 6311 2387 M
 (FC4_bas_col_1_paphos_ddt.9) Rshow
+LT2
 6395 2387 M
 399 0 V
 1134 3602 M
@@ -1466,6 +1575,14 @@ LT2
 3250 1448 TriU
 3342 1419 TriU
 6594 2387 TriU
+1.000 UL
+LTb
+1134 560 M
+5828 0 V
+0 4060 R
+-5828 0 R
+0 -4060 V
+1.000 UP
 stroke
 grestore
 end
