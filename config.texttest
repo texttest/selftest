@@ -87,6 +87,8 @@ output:Killed process{WORD 3}
 output:Sending mail from{WORD -1}
 output:What is your name{LINES 3}
 output:^$
+output:batch_recipients{WORD 2}
+output:batch_sender{WORD 2}
 targetReport: on .*test-case.*under{WORD -7}
 targetReport:^[0-9][0-9][0-9][0-9][0-9][0-9]{WORD 1}
 targetReport:{LINE 1}
