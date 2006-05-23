@@ -1,16 +1,16 @@
-TextTest will write diagnostics in /users/johana/texttesttmp/texttest.carmenjohana23May111438/carmen/APC/Running/CoreDump based on file at /users/johana/work/master/Testing/Automatic/texttest/log4py.conf
+TextTest will write diagnostics in /users/geoff/texttesttmp/texttest.carmengeoff23May165714/carmen/APC/Running/CoreDump based on file at /users/geoff/work/master/Testing/Automatic/texttest/log4py.conf
 WARNING: the test small1 could not be found
-Please check the file at /users/johana/texttesttmp/texttest.carmenjohana23May111438/carmen/APC/Running/CoreDump/TargetApp/lh_bascripts/testsuite.apc
+Please check the file at /users/geoff/texttesttmp/texttest.carmengeoff23May165714/carmen/APC/Running/CoreDump/TargetApp/lh_bascripts/testsuite.apc
 WARNING: the test small1 could not be found
-Please check the file at /users/johana/texttesttmp/texttest.carmenjohana23May111438/carmen/APC/Running/CoreDump/TargetApp/lh_bascripts_empty/testsuite.apc
+Please check the file at /users/geoff/texttesttmp/texttest.carmengeoff23May165714/carmen/APC/Running/CoreDump/TargetApp/lh_bascripts_empty/testsuite.apc
 Using Application APC, version crash, checkout /carm/proj/texttest/selftest_data
 Submitting Rule Builds for APC test-suite TargetApp to SGE queues
   Submitting Rule Builds for APC test-suite sk_test9scripts to SGE queues
 Submitting APC test-suite TargetApp to SGE queues
   Submitting APC test-suite sk_test9scripts to SGE queues
     Submitting APC test-case no_dh_single_base_cg to SGE queue short, requesting osversion=RHEL4,carmrunmaster=1,osversion=RHEL4,carmarch="*x86_64_linux*"
-    Evaluating APC test-case no_dh_single_base_cg (on script_errors.apc,status.apc,warnings.apc,all.apc,solution.apc,test.apc)
-    APC test-case no_dh_single_base_cg CRASHED (Segmentation fault in __kernel_vsyscall) on merrillville : new results in script_errors,all, missing results for solution,test, differences in status,warnings
+    Evaluating APC test-case no_dh_single_base_cg (on script_errors.apc,solution.apc,status.apc,warnings.apc,all.apc,test.apc)
+    APC test-case no_dh_single_base_cg CRASHED (Segmentation fault in __kernel_vsyscall) on batesville : new results in script_errors,all, missing results for test, differences in solution,status,warnings
     View details(v), Save Version crash(1), Save(s) or continue(any other key)?
 Program terminated with signal 11, Segmentation fault.
 Stack trace from gdb :
@@ -19,185 +19,194 @@ raise
 apc_pac_setup 
 apc_setup 
 main 
+------------------ Differences in solution --------------------
+1,170c1,254
+< SECTION apc_oags Solution_3
+< 147;APC_SEGMENT_KEY_1;APC_SEGMENT;APC_SEGMENT_TYPE;FLIGHT_CARRIER;FLIGHT_NUMBER;FLIGHT_DEP_AIRP;FLIGHT_ARR_AIRP;FLIGHT_DATE;FLIGHT_DEP_TIME;FLIGHT_BLOCK_TIME;FLIGHT_IATA;CUSTOM_AC_TYPE;FLIGHT_SUFFIX;FLIGHT_LEG_NO;TASK_SUB_CODE;ONWARD_SEGMENT_KEY;FLIGHT_SERVICE_TYPE;BOOKED_CREW_VECTOR_LENGTH;BOOKED_CREW_VECTOR;AC_OWNER;FLIGHT_ONW_FLIGHT_NUM;PASSENGER_TERMINAL_DEPARTURE_STATION;PASSENGER_TERMINAL_ARRIVAL_STATION;FIRST_CLASS_CAP;BUSINESS_CLASS_CAP;ECONOMY_CLASS_CAP;FOURTH_CLASS_CAP;COCKPIT_CREW_E
+MPLOYER;CABIN_CREW_EMPLOYER;FLIGHT_GDOR;
+< SECTION ground_transport Solution_3
+< 147;APC_SEGMENT_KEY_1;APC_SEGMENT;APC_SEGMENT_TYPE;FLIGHT_CARRIER;FLIGHT_NUMBER;FLIGHT_DEP_AIRP;FLIGHT_ARR_AIRP;FLIGHT_DATE;FLIGHT_DEP_TIME;FLIGHT_BLOCK_TIME;FLIGHT_IATA;CUSTOM_AC_TYPE;FLIGHT_SUFFIX;FLIGHT_LEG_NO;TASK_SUB_CODE;ONWARD_SEGMENT_KEY;FLIGHT_SERVICE_TYPE;BOOKED_CREW_VECTOR_LENGTH;BOOKED_CREW_VECTOR;AC_OWNER;FLIGHT_ONW_FLIGHT_NUM;PASSENGER_TERMINAL_DEPARTURE_STATION;PASSENGER_TERMINAL_ARRIVAL_STATION;FIRST_CLASS_CAP;BUSINESS_CLASS_CAP;ECONOMY_CLASS_CAP;FOURTH_CLASS_CAP;COCKPIT_CREW_E
+MPLOYER;CABIN_CREW_EMPLOYER;FLIGHT_GDOR;
+< SECTION apc_chains Solution_3
+< 142;APC_CHAIN_NUMBER;APC_CHAIN_LEG_COUNT;APC_CHAIN_LRC_FLAG;APC_CHAIN_CREW_VECTOR_LEN;APC_CHAIN_CREW_VECTOR;APC_CHAIN_CREW_ID;APC_CHAIN_CREW_POS;APC_CHAIN_HOMEBASE;APC_CHAIN_CATEGORY;APC_CHAIN_MAIN_VARIANT;APC_CHAIN_BASEGROUP;
+< 144;APC_SEGMENT_PTR;APC_SEGMENT_OFFFSET;APC_SEGMENT_START_OFFSET;APC_SEGMENT_END_OFFSET;APC_SEGMENT_DUTY_DESIGNATOR;APC_SEGMENT_DUTY_TYPE;APC_SEGMENT_BASE;APC_SEGMENT_BIT_FIELD;APC_SEGMENT_CUSTOMER_INDEX;
+< 143;10511;5;C;7;1,0,0,0,0,0,0,;;-1;CPH;;-1;;
+< 145;13686;0;0;0;A;;;0x62;0;
+< 145;13715;0;0;0;A;;;0x40;0;
+< 145;6784;0;0;0;A;;;0x40;0;
+< 145;12991;0;0;0;A;;;0x62;0;
+< 145;23686;0;0;0;A;;;0x40;0;
+< 143;10512;4;C;7;1,0,0,0,0,0,0,;;-1;CPH;;-1;;
+< 145;20578;0;0;0;A;;;0x40;0;
+< 145;20613;0;0;0;A;;;0x40;0;
+< 145;23347;0;0;0;A;;;0x40;0;
+< 145;23373;0;0;0;A;;;0x40;0;
+< 143;10513;4;C;7;1,0,0,0,0,0,0,;;-1;CPH;;-1;;
+< 145;19731;0;0;0;A;;;0x40;0;
+< 145;19755;0;0;0;A;;;0x40;0;
+< 145;20650;0;0;0;A;;;0x40;0;
+< 145;20721;0;0;0;A;;;0x40;0;
+< 143;10514;16;C;7;1,0,0,0,0,0,0,;;-1;CPH;;-1;;
+< 145;10175;0;0;0;A;;;0x40;0;
+< 145;19233;0;0;0;A;;;0x40;0;
+< 145;18354;0;0;0;A;;;0x40;0;
+< 145;3465;0;0;0;A;;;0x40;0;
+< 145;3274;0;0;0;A;;;0x40;0;
 ------------------ Differences in status --------------------
-97,943d96
+93,897d92
 < SECTION apc_status Solution_warning_1
-< --- APC runtime status report ---
+< APC STATUS REPORT OVERVIEW
 < 
 < APC producing solution number: 1
-< Active method: column generator
-< Active module: pricing (with reduced set of RTDs)
-< Generated rotations: 13 this loop
-< 
+< Active method: column generator, module: pricing (with reduced set of duties)
+< Generated trips: 15 this loop
 < This "solution" contains the problematic chains that were printed
 < in the warning section (visible from the batch viewer)
 < SECTION apc_status Solution_warning_1
-< --- APC runtime status report ---
+< APC STATUS REPORT OVERVIEW
 < 
 < APC producing solution number: 1
-< Active method: column generator
-< Active module: pricing (with reduced set of RTDs)
-< Generated rotations: 13 this loop
-< 
+< Active method: column generator, module: pricing (with reduced set of duties)
+< Generated trips: 96 this loop
 < This "solution" contains the problematic chains that were printed
 < in the warning section (visible from the batch viewer)
 < SECTION apc_status Solution_warning_1
-< --- APC runtime status report ---
+< APC STATUS REPORT OVERVIEW
 < 
 < APC producing solution number: 1
-< Active method: column generator
-< Active module: pricing (with reduced set of RTDs)
-< Generated rotations: 13 this loop
-< 
+< Active method: column generator, module: pricing (with reduced set of duties)
+< Generated trips: 128 this loop
 < This "solution" contains the problematic chains that were printed
+< in the warning section (visible from the batch viewer)
+< SECTION apc_status Solution_warning_1
+< APC STATUS REPORT OVERVIEW
+< 
+< APC producing solution number: 1
+< Active method: column generator, module: pricing (with reduced set of duties)
 ------------------ Differences in warnings --------------------
-6,1344d5
+9,971d8
 < Cannot find map_calendar_day_start value 'start_calday'.
 < APC will use internal calculation based on check_in_time.
 < 
 < 
-< Overestimate of CRR cost (can cause quality problems), overestimated by 299
-< block time 8:15, 2 days, block time per day 4:07
-< total duty 14:55, apc-cost 18732, homebase airport: CPH,  Complete,  1/0/0/0/0/0/0
-< duty period 1: duty length 7:35, block time 4:20
-< OD       [SK 406] CPH  9.25 Sat 20020323 10.40 Sat 20020323 ARN block 75 fid 4623 sp1  
-< OD AC-CH [SK1040] ARN 12.00 Sat 20020323 13.35 Sat 20020323 KRN block 95 fid 4627 sp1 L
-< OD       [SK1041] KRN 14.15 Sat 20020323 15.45 Sat 20020323 ARN block 90 fid 4627 sp1  
-< Rest time 18:00
-< duty period 2: duty length 7:20, block time 3:55
-< OD       [SK   8] ARN 11.00 Sun 20020324 12.20 Sun 20020324 LLA block 80 fid 4655 sp1  
-< OD       [SK   9] LLA 12.50 Sun 20020324 14.10 Sun 20020324 ARN block 80 fid 4659 sp1  
-< OD AC-CH [SK1407] ARN 15.50 Sun 20020324 17.05 Sun 20020324 CPH block 75 fid 4664 sp1  
+< Overestimate of trip cost (can cause quality problems), overestimated by 873
+< block time 5:25, 2 days, block time per day 2:42
+< total duty 11:55, apc-cost 19100, home base: CPH,  Complete,  1/0/0/0/0/0/0
+< duty period 1: duty length 6:00, block time 3:15
+< OD       [SK 418] CPH 15.30 Sun 20020324 16.45 Sun 20020324 ARN block 75  
+< OD       [SK1481] ARN 17.30 Sun 20020324 18.30 Sun 20020324 OSL block 60  
+< OD AC-CH [SK2368] OSL 19.30 Sun 20020324 20.30 Sun 20020324 AES block 60  
+< Rest time 11:30
+< duty period 2: duty length 5:55, block time 2:10
+< OD       [SK2363] AES  9.00 Mon 20020325  9.55 Mon 20020325 OSL block 55  
+< OD AC-CH [SK 465] OSL 12.25 Mon 20020325 13.40 Mon 20020325 CPH block 75  
 < 
-< =================================================
-< Cost of the chain : 18732
+< ================================================================
+< Cost of the chain : 19100
 < Cost elements values for complete chain
 < The nonadditive part is : 0
 < 
-<  Element                                Val    Sum
-<  -------------------------------------------------
-<  *cost_of_crr_zero_rule_violation     18732  19031
-<  -------------------------------------------------
+<  Element                                           Val     Sum
+<  -------------------------------------------------------------
+<  *cost_of_crr_zero_rule_violation                19100   19973
+<  -------------------------------------------------------------
 < 
 < ==================================
 < Cost element values for subchain :
+< The nonadditive part is : 0
 ------------------ New result in script_errors --------------------
 ***** ERROR ***** 
 APC exited with error code 139 <segmentation fault>
  
-*** Keeping the logfiles in $APC_TEMP_DIR ***
+*** Keeping the logfiles in $APC_PROBLEM_TEMP_DIR ***
+
+The 10 largest processes on batesville as at Tue May 23 16:57:31 CEST 2006
+(VSZ is the total memory allocated in KB)
+  PID   VSZ USER         TIME     ELAPSED COMMAND
+29879 1751076 hamid  02:29:33    02:31:38 /users/claesv/work/1_exp/Products/standard_gpc/CARMSYS/bin/i386_linux/matador -s 200602/PROD3/CAB.DTW.330/99FullOptimization
+24775 99944 sparud   00:00:28 11-00:22:17 emacs
+ 1971 90132 geoff    00:00:00       00:02 python /users/geoff/work/master/Testing/TextTest/texttest.py -d /users/geoff/texttesttmp/texttest.carmengeoff23May165714/carmen/APC/Running/CoreDump/TargetApp -a apc -v crash -c /carm/proj/texttest/selftest_data -l -tp sk_test9scripts/no_dh_single_base_cg -slave /users/geoff/texttesttmp/texttest.carmengeoff23May165714/carmen/APC/Running/CoreDump/texttesttmp/apc.crashgeoff23May165723 -servaddr 192.168.99.37:41015 -noperf
+ 1852 90132 geoff    00:00:00       00:03 python /users/geoff/work/master/Testing/TextTest/texttest.py -d /users/geoff/texttesttmp/texttest.carmengeoff23May165714/carmen/APC/Running/CoreDump/TargetApp -a apc -v crash -c /carm/proj/texttest/selftest_data -l -tp sk_test9scripts/no_dh_single_base_cg -slave /users/geoff/texttesttmp/texttest.carmengeoff23May165714/carmen/APC/Running/CoreDump/texttesttmp/apc.crashgeoff23May165723 -servaddr 192.168.99.37:41015 -noperf
+29727 88524 hamid    00:00:00    02:31:40 python /usr/local/bin/texttest -d /users/hamid/work/master/Testing/Automatic -a cas -v c50 -c /users/claesv/work/1_exp -l -tp RD_nw_feb/ci_330_30crew -slave /users/hamid/texttesttmp/cas.c50hamid23May142544 -servaddr 192.168.99.41:33292 -diag
+24633 79304 sparud   00:01:04 11-00:23:07 xterm -ls -name xterm-batesville -T batesville -n batesville
+24525 79296 sparud   00:01:56 11-00:23:17 xterm -ls -name xterm-batesville -T batesville -n batesville
+17485 79292 sparud   00:01:32  9-15:55:41 xterm -ls -name xterm-batesville -T batesville -n batesville
+17348 79116 sparud   00:01:17  9-15:56:14 xterm -ls -name xterm-batesville -T batesville -n batesville
+30003 79108 hamid    00:00:00    02:30:01 xterm -ls -bg lightyellow -fg darkblue
+
 *** disk space available for temporary files ***
 Filesystem           1K-blocks      Used Available Use% Mounted on
 /dev/mapper/vg0-tmpvol
-                      16513960     89088  15586012   1% /tmp
+                      16513960    356396  15318704   3% /tmp
 /dev/mapper/vg0-tmpvol
-                      16513960     89088  15586012   1% /tmp
+                      16513960    356396  15318704   3% /tmp
 /dev/mapper/vg0-varvol
-                       2064208    140096   1819256   8% /var
+                       2064208    131988   1827364   7% /var
 *** Saving the APC executable ***
 *** disk space available for temporary files ***
 Filesystem           1K-blocks      Used Available Use% Mounted on
-/dev/mapper/vg0-tmpvol
-                      16513960     96200  15578900   1% /tmp
-/dev/mapper/vg0-tmpvol
-                      16513960     96200  15578900   1% /tmp
-/dev/mapper/vg0-varvol
-                       2064208    140096   1819256   8% /var
 ------------------ New result in all --------------------
-Time:  0 s real  10 ms cpu  0 ms cpu_child  memory:  17.7 Mb
-Delta: 0 s real  0 ms cpu  0 ms cpu_child  memory:  17.7 Mb
-/carm/proj/texttest/selftest_data/APC_CARMSYS/sk_test9scripts_tmp.apc/crc/rule_set/APC/i386_linux/.APC_fd54_DC9_no_reference.johana.29280
+Time:  0 s real  10 ms cpu  0 ms cpu_child  memory:  20.6 Mb
+Delta: 0 s real  0 ms cpu  0 ms cpu_child  memory:  20.6 Mb
+/carm/proj/texttest/selftest_data/APC_CARMSYS/sk_test9scripts_tmp.apc/crc/rule_set/APC/i386_linux/.APC_fd54_DC9_no_reference.geoff.batesville_1978
 -v 1
--R /nfs/local/apc_temp/APC_ji_single_base_CPH_spl_29280/APC_rot
--U johana
-executable name is [/carm/proj/texttest/selftest_data/APC_CARMSYS/sk_test9scripts_tmp.apc/crc/rule_set/APC/i386_linux/.APC_fd54_DC9_no_reference.johana.29280]
+-R /nfs/local/apc_temp/APC_ji_single_base_CPH_spl_batesville_1978/APC_rot
+-U geoff
+executable name is [/carm/proj/texttest/selftest_data/APC_CARMSYS/sk_test9scripts_tmp.apc/crc/rule_set/APC/i386_linux/.APC_fd54_DC9_no_reference.geoff.batesville_1978]
 carmsys: /carm/proj/texttest/selftest_data/APC_CARMSYS
 carmtmp: /carm/proj/texttest/selftest_data/APC_CARMSYS/sk_test9scripts_tmp.apc
 
- APC JOB IDENTIFICATION
+APC JOB IDENTIFICATION
 
- CARMSYS..............: /carm/proj/texttest/selftest_data/APC_CARMSYS
- APC library version..: master.current
- APC library date.....: 08 March 2004 15:52:20
+ CARMSYS...............: /carm/proj/texttest/selftest_data/APC_CARMSYS
+ CARMTMP...............: /carm/proj/texttest/selftest_data/APC_CARMSYS/sk_test9scripts_tmp.apc
+ APC library version...: master.current
+ APC library date......: 23 May 2006 16:21:35
 canonicalize called
+
+Error! Pid:2073  Tue May 23 16:57:30 2006  User:geoff
+Error! File:/carm/master/Rules_and_Reports/utils/crc_etab_open.cc  Line:106
+Error! crcuRegisterTableProtocol: Obsolete function
+
+Error! Pid:2073  Tue May 23 16:57:30 2006  User:geoff
+Error! File:/carm/master/Rules_and_Reports/utils/crc_etab_open.cc  Line:106
+Error! crcuRegisterTableProtocol: Obsolete function
+
+Error! Pid:2073  Tue May 23 16:57:30 2006  User:geoff
+Error! File:/carm/master/Rules_and_Reports/utils/crc_etab_open.cc  Line:106
+Error! crcuRegisterTableProtocol: Obsolete function
 _init_segment_duty_types: Cannot retrive resource CREW_DUTY_TYPE_ETAB_NAME
-
-Error! Pid:29335  Tue May 23 11:15:16 2006  User:johana
-Error! File:/carm/master/Data/duty_type/DutyType.cc  Line:202
-Error! _register_segment_duty_type: Registering new duty type  in category 1.
-
-Crew pos 0 = FC
-Crew pos 1 = FP
-Crew pos 2 = FS
-Crew pos 3 = AP
-Crew pos 4 = AS
-Crew pos 5 = AH
-Crew pos 6 = FR
-flight plan name and version: F36  MCS_W01  V1112_0122  APC_ji_single_base_CPH_spl
------------------- Missing result in solution --------------------
-SECTION apc_oags Solution_3
-147;APC_SEGMENT_KEY_1;APC_SEGMENT;APC_SEGMENT_TYPE;FLIGHT_CARRIER;FLIGHT_NUMBER;FLIGHT_DEP_AIRP;FLIGHT_ARR_AIRP;FLIGHT_DATE;FLIGHT_DEP_TIME;FLIGHT_BLOCK_TIME;FLIGHT_IATA;CUSTOM_AC_TYPE;FLIGHT_SUFFIX;FLIGHT_LEG_NO;TASK_SUB_CODE;ONWARD_SEGMENT_KEY;FLIGHT_SERVICE_TYPE;BOOKED_CREW_VECTOR_LENGTH;BOOKED_CREW_VECTOR;AC_OWNER;FLIGHT_ONW_FLIGHT_NUM;PASSENGER_TERMINAL_DEPARTURE_STATION;PASSENGER_TERMINAL_ARRIVAL_STATION;FIRST_CLASS_CAP;BUSINESS_CLASS_CAP;ECONOMY_CLASS_CAP;FOURTH_CLASS_CAP;COCKPIT_CREW_EMP
-LOYER;FLIGHT_GDOR;
-SECTION ground_transport Solution_3
-147;APC_SEGMENT_KEY_1;APC_SEGMENT;APC_SEGMENT_TYPE;FLIGHT_CARRIER;FLIGHT_NUMBER;FLIGHT_DEP_AIRP;FLIGHT_ARR_AIRP;FLIGHT_DATE;FLIGHT_DEP_TIME;FLIGHT_BLOCK_TIME;FLIGHT_IATA;CUSTOM_AC_TYPE;FLIGHT_SUFFIX;FLIGHT_LEG_NO;TASK_SUB_CODE;ONWARD_SEGMENT_KEY;FLIGHT_SERVICE_TYPE;BOOKED_CREW_VECTOR_LENGTH;BOOKED_CREW_VECTOR;AC_OWNER;FLIGHT_ONW_FLIGHT_NUM;PASSENGER_TERMINAL_DEPARTURE_STATION;PASSENGER_TERMINAL_ARRIVAL_STATION;FIRST_CLASS_CAP;BUSINESS_CLASS_CAP;ECONOMY_CLASS_CAP;FOURTH_CLASS_CAP;COCKPIT_CREW_EMP
-LOYER;FLIGHT_GDOR;
-SECTION apc_chains Solution_3
-142;APC_CHAIN_NUMBER;APC_CHAIN_LEG_COUNT;APC_CHAIN_LRC_FLAG;APC_CHAIN_CREW_VECTOR_LEN;APC_CHAIN_CREW_VECTOR;APC_CHAIN_CREW_ID;APC_CHAIN_CREW_POS;APC_CHAIN_HOMEBASE;APC_CHAIN_CATEGORY;APC_CHAIN_MAIN_VARIANT;
-144;APC_SEGMENT_PTR;APC_SEGMENT_OFFFSET;APC_SEGMENT_START_OFFSET;APC_SEGMENT_END_OFFSET;APC_SEGMENT_DUTY_DESIGNATOR;APC_SEGMENT_DUTY_TYPE;APC_SEGMENT_BASE;APC_SEGMENT_BIT_FIELD;APC_SEGMENT_CUSTOMER_INDEX;
-143;10515;6;C;7;1,0,0,0,0,0,0,;;-1;CPH;;-1;
-145;23729;0;0;0;A;;;0x40;0;
-145;23760;0;0;0;A;;;0x40;0;
-145;20651;0;0;0;A;;;0x40;0;
-145;16088;0;0;0;A;;;0x40;0;
-145;19202;0;0;0;A;;;0x40;0;
-145;10208;0;0;0;A;;;0x40;0;
-143;10516;4;C;7;1,0,0,0,0,0,0,;;-1;CPH;;-1;
-145;20578;0;0;0;A;;;0x40;0;
-145;20613;0;0;0;A;;;0x40;0;
-145;23347;0;0;0;A;;;0x40;0;
-145;23373;0;0;0;A;;;0x40;0;
-143;10517;4;C;7;1,0,0,0,0,0,0,;;-1;CPH;;-1;
-145;19731;0;0;0;A;;;0x40;0;
-145;19755;0;0;0;A;;;0x40;0;
-145;20650;0;0;0;A;;;0x40;0;
-145;20721;0;0;0;A;;;0x40;0;
-143;10518;5;C;7;1,0,0,0,0,0,0,;;-1;CPH;;-1;
-145;13686;0;0;0;A;;;0x62;0;
-145;13715;0;0;0;A;;;0x40;0;
-145;6784;0;0;0;A;;;0x40;0;
-145;12991;0;0;0;A;;;0x62;0;
-145;23686;0;0;0;A;;;0x40;0;
 ------------------ Missing result in test --------------------
-OBJ	3782978        	trial 1
 OBJ	3782978        
-OBJ	3264229        	trial 2
-OBJ	3264229        	trial 2
-OBJ	3264229        	trial 2
-OBJ	3264229        	trial 2
 OBJ	3264229        
-OBJ	3095334        	trial 6
-OBJ	3095334        	trial 6
-OBJ	3095334        	trial 6
-OBJ	3095334        	trial 6
 OBJ	3095334        
-OBJ	2246208        	trial 10
-OBJ	2246208        	trial 10
-OBJ	2246208        	trial 10
-OBJ	2246208        	trial 10
+OBJ	3095334        
 OBJ	2246208        
-OBJ	1869955        	trial 14
-OBJ	1869955        	trial 14
-OBJ	1869955        	trial 14
-OBJ	1869955        	trial 14
 OBJ	1869955        
-OBJ	1672802        	trial 18
-OBJ	1672802        	trial 18
-OBJ	1672802        	trial 18
-OBJ	1672802        	trial 18
-OBJ	1672802        
-OBJ	1551464        	trial 22
-OBJ	1551464        	trial 22
-OBJ	1551464        	trial 22
+OBJ	1693514        
+OBJ	1551464        
+OBJ	1462065        
+OBJ	1405088        
+OBJ	2086330        
+OBJ	2085928        
+OBJ	1215956        
+OBJ	1215956        
+OBJ	1211180        
+OBJ	1211180        
+OBJ	1211180        
+OBJ	1211180        
+OBJ	1211180        
+OBJ	1211180        
+OBJ	1035983        
+OBJ	1035983        
+OBJ	1035983        
+OBJ	772255         
+OBJ	772255         
+OBJ	772255         
+OBJ	772255         
+OBJ	772255         
+OBJ	772255         
+OBJ	772255         
 <See also tkdiff window for details of status>
     Save Version crash(1), Save(s) or continue(any other key)?
-Killed process 10913 with signal 2
+Killed process 27650 with signal 2

@@ -1,85 +1,76 @@
 SECTION apc_status input
---- Analysis of solution (input) ---
- User..................: geoff
- Date..................: 03/08/04, 14:45
 
- APC program (rule set): .STD+EXP+JAR_no_reference.geoff.4403
- Subplan...............: adv_apc_pairing  daily  Delta  periodic_g.g_single_base.apcgeoff08Mar14:44:52
+--- Summary of solution (input) ---
+
+ Date..................: 05/23/06, 14:33
+ APC program (rule set): .STD+EXP+JAR_no_reference.geoff.hendersonville_7892
+ Sub-plan..............: adv_apc_pairing  daily  Delta  periodic_g.g_single_base
  Period................: 20000119 - 20000119
- Parameter set.........: APC_tests_daily/mp_fSCR_pureCRD   with  36  manual changes.
- Machine...............: singleton
- Optimizer.............: opt_paqs
+ Machine...............: hendersonville
 
- APC COST ANALYSIS 
+ legs..........................................: 56
+  uncovered legs...............................: 0
+ overcovers (will become deadheads)............: 7
+ illegal trips.................................: 0
 
- APC solution evaluation criterion:
-   uncovered leg count, total cost of crr
- uncovered legs...............................: 0
- base constraint excess ......................: 0
- variant constraint deficit ..................: 0
- cost function (map_cost_of_crr)..............: trip_total_cost
- APC total rule cost..........................:  5768876
- overcover cost ..............................:   239996
- base constraint excess cost..................:        0
- global constraint excess cost................:        0
+ TOTAL cost....................................:  5768876
 
- TOTAL cost...................................:  5768876
+  APC total rule cost..........................:  5768876
+   rule overcover cost.........................:   239996
+  extra overcover cost.........................:        0
+  global constraint excess cost................:        0
+  base constraint excess cost..................:        0
 
- APC INTERNAL RULE VALUE ANALYSIS
+APC SOLUTION ANALYSIS
 
  working days..................................: 30
- block flying time.............................: 83:23
- average block per working day.................: 2:46
- deadhead flying time..........................: 20:26
- duty hours....................................: 183:15
- duty per working day..........................: 6:06
- duty-time/block-time..........................:  2.198
- duty in longest CRR...........................: 22:28
- number of CRRs with long duty (> 44:00).......: 0
+ block time....................................: 83:23
+ average block time per working day............: 2:46
+ deadhead time.................................: 20:26
+ duty time.....................................: 183:15
+ duty time per working day.....................: 6:06
+ duty time/block time..........................: 2.198
+ duty time in longest trip.....................: 22:28
+ trips.........................................: 11
+ incomplete trips..............................: 0
+ trips with long duty time (>44:00)............: 0
 
- average duty per duty..........................: 7:02
- longest duty...................................: 13:30
- shortest duty..................................: 2:20
- standard deviation duty.......................: 3:36
- number of dutys with long duty (> 10:00).......: 7 
- number of duty pairs with long duty (> 18:00)..: 1 
+ duties........................................: 26
+ average duty time per duty....................: 7:02
+ longest duty..................................: 13:30
+ shortest duty.................................: 2:20
+ duties with long duty time (>10:00)...........: 7 
+ duty pairs with long duty time (>18:00).......: 1 
 
- number of layovers (double rest)..............: 4
- number of normal rest periods.................: 11
+ layovers (double rest)........................: 4
+ normal rest periods...........................: 11
  average rest time (except layovers)...........: 15:38
  longest rest time (except layovers)...........: 22:56
  shortest rest time............................: 10:31
- short rest times (< 12:00)....................: 3
- late (> 13:00) to early (< 13:00).............: 0
+ short rest times (<12:00).....................: 3
+ late (>13:00) to early (< 8:00)...............: 0
 
-
- rotations (crrs) (total)......................: 11
- incomplete rotations..........................: 0
- illegal rotations.............................: 0
- rtds..........................................: 26
-
- number of legs................................: 56
- number of legs in incomplete rtds.............: 0
- overcovers (will become deadheads)............: 7
+ legs..........................................: 56
+ legs in incomplete duties.....................: 0
  this fleet deadheads..........................: 13
  other-fleet deadheads.........................: 0
  ground transport deadheads....................: 0
  OAG deadheads.................................: 0
  aircraft changes..............................: 7
 
- Number of days in complete rotations:
- Length      Rotations
+ Number of days in complete trips:
+ Length     Trips
  2 days:      3   27.273 %
  3 days:      8   72.727 %
 
- BASE CONSTRAINTS
+BASE CONSTRAINTS (complete trips only)
 
                  Start      End  Min/Day  Max/Day   MinTot   MaxTot    Value
  ============  =======  =======  =======  =======  =======  =======  =======
  Base    CVG       Wed      Wed       -        -        -        -       30
  Default base: CVG
 
- BASE PRODUCTION ANALYSIS
+BASE PRODUCTION ANALYSIS (complete trips only)
 
  Day              Wed |   total
  ============    ---- |  ------
@@ -90,112 +81,101 @@ SECTION apc_status input
  Total production (all bases)....:   30
  Total production (all variants).:    0
 
- APC JOB IDENTIFICATION
+APC JOB IDENTIFICATION
 
- CARMSYS..............: /carm/proj/matador/test_texttest/CARMSYS
- CARMUSR..............: /carm/user_and_tmp/carmen_10/pic_user/
- APC library version..: master.alpha-1.7
- APC library date.....: 05 March 2004 22:25:17
+ CARMSYS...............: /carm/proj/texttest/selftest_data/APC_CARMSYS
+ CARMUSR...............: /users/geoff/texttesttmp/apcgeoff23May143250/lh_bascripts/large_gap_daily/pic_user
+ CARMTMP...............: /carm/proj/texttest/selftest_data/APC_CARMSYS/lh_bascripts_tmp.apc
+ APC library version...: master.current
+ APC library date......: 22 May 2006 22:08:59
+ Parameter set.........: APC_tests_daily/mp_fSCR_pureCRD   with  36  manual changes.
+ IP solver.............: opt_paqs
 
 --- end of analysis ---
-Time:  0 s real  60 ms cpu  0 ms cpu_child  memory:   7.8 Mb
-Delta: 0 s real  0 ms cpu  0 ms cpu_child  memory:   0.2 Mb
+Time:  0 s real  50 ms cpu  0 ms cpu_child  memory:  23.6 Mb
 
 SECTION apc_status Solution_1
---- APC runtime status report ---
+APC STATUS REPORT OVERVIEW
 
-Total time:  0:00:02   cpu time:  0:00:01
-APC program (rule set): .STD+EXP+JAR_no_reference.geoff.4403
+Total time:  0:00:01   cpu time:  0:00:01
 APC producing solution number: 1
-Active method: general generation
-Active module: optimizer
-Generated rotations: 4711 this loop (expected 4711)
+Active method: general generation, module: optimizer
+Generated trips: 4711 this loop (expected 4711)
 Generated first legs: 12 this loop (of 12)
 
---- Analysis of solution (general-generation) ---
- User..................: geoff
- Date..................: 03/08/04, 14:45
+--- Summary of solution (general-generation) ---
 
- APC program (rule set): .STD+EXP+JAR_no_reference.geoff.4403
- Subplan...............: adv_apc_pairing  daily  Delta  periodic_g.g_single_base.apcgeoff08Mar14:44:52
+ Date..................: 05/23/06, 14:33
+ APC program (rule set): .STD+EXP+JAR_no_reference.geoff.hendersonville_7892
+ Sub-plan..............: adv_apc_pairing  daily  Delta  periodic_g.g_single_base
  Period................: 20000119 - 20000119
- Parameter set.........: APC_tests_daily/mp_fSCR_pureCRD   with  36  manual changes.
- Machine...............: singleton
- Method................: general generation
- Optimizer.............: opt_paqs
+ Machine...............: hendersonville
 
- APC COST ANALYSIS 
+ legs..........................................: 56
+  uncovered legs...............................: 0
+ overcovers (will become deadheads)............: 0
+ illegal trips.................................: 0
 
- APC solution evaluation criterion:
-   uncovered leg count, total cost of crr
- uncovered legs...............................: 0
- base constraint excess ......................: 0
- variant constraint deficit ..................: 0
- cost function (map_cost_of_crr)..............: trip_total_cost
- APC total rule cost..........................:  4885020
- overcover cost ..............................:        0
- base constraint excess cost..................:        0
- global constraint excess cost................:        0
+ TOTAL cost....................................:  4885020
 
- TOTAL cost...................................:  4885020
+  APC total rule cost..........................:  4885020
+   rule overcover cost.........................:        0
+  extra overcover cost.........................:        0
+  global constraint excess cost................:        0
+  base constraint excess cost..................:        0
 
- APC INTERNAL RULE VALUE ANALYSIS
+APC SOLUTION ANALYSIS
 
  working days..................................: 26
- block flying time.............................: 83:23
- average block per working day.................: 3:12
- deadhead flying time..........................: 5:32
- duty hours....................................: 160:28
- duty per working day..........................: 6:10
- duty-time/block-time..........................:  1.924
- duty in longest CRR...........................: 50:23
- number of CRRs with long duty (> 44:00).......: 1
+ block time....................................: 83:23
+ average block time per working day............: 3:12
+ deadhead time.................................: 5:32
+ duty time.....................................: 160:28
+ duty time per working day.....................: 6:10
+ duty time/block time..........................: 1.924
+ duty time in longest trip.....................: 50:23
+ trips.........................................: 8
+ incomplete trips..............................: 0
+ trips with long duty time (>44:00)............: 1
 
- average duty per duty..........................: 7:17
- longest duty...................................: 13:30
- shortest duty..................................: 2:32
- standard deviation duty.......................: 3:34
- number of dutys with long duty (> 10:00).......: 6 
- number of duty pairs with long duty (> 18:00)..: 2 
+ duties........................................: 22
+ average duty time per duty....................: 7:17
+ longest duty..................................: 13:30
+ shortest duty.................................: 2:32
+ duties with long duty time (>10:00)...........: 6 
+ duty pairs with long duty time (>18:00).......: 2 
 
- number of layovers (double rest)..............: 4
- number of normal rest periods.................: 10
+ layovers (double rest)........................: 4
+ normal rest periods...........................: 10
  average rest time (except layovers)...........: 15:24
  longest rest time (except layovers)...........: 22:56
  shortest rest time............................: 10:31
- short rest times (< 12:00)....................: 2
- late (> 13:00) to early (< 13:00).............: 1
+ short rest times (<12:00).....................: 2
+ late (>13:00) to early (< 8:00)...............: 1
 
-
- rotations (crrs) (total)......................: 8
- incomplete rotations..........................: 0
- illegal rotations.............................: 0
- rtds..........................................: 22
-
- number of legs................................: 56
- number of legs in incomplete rtds.............: 0
- overcovers (will become deadheads)............: 0
+ legs..........................................: 56
+ legs in incomplete duties.....................: 0
  this fleet deadheads..........................: 4
  other-fleet deadheads.........................: 0
  ground transport deadheads....................: 0
  OAG deadheads.................................: 0
  aircraft changes..............................: 7
 
- Number of days in complete rotations:
- Length      Rotations
+ Number of days in complete trips:
+ Length     Trips
  2 days:      2   25.000 %
  3 days:      4   50.000 %
  4 days:      1   12.500 %
  6 days:      1   12.500 %
 
- BASE CONSTRAINTS
+BASE CONSTRAINTS (complete trips only)
 
                  Start      End  Min/Day  Max/Day   MinTot   MaxTot    Value
  ============  =======  =======  =======  =======  =======  =======  =======
  Base    CVG       Wed      Wed       -        -        -        -       26
  Default base: CVG
 
- BASE PRODUCTION ANALYSIS
+BASE PRODUCTION ANALYSIS (complete trips only)
 
  Day              Wed |   total
  ============    ---- |  ------
@@ -206,25 +186,25 @@ Generated first legs: 12 this loop (of 12)
  Total production (all bases)....:   26
  Total production (all variants).:    0
 
- APC GENERATION INFO
+APC GENERATION INFO
 
- Generated rotations.......: 4711
- Generation time (sec).....: 1
- Generation time (rot/sec).: 4711
+ Generated trips...........: 4711
  Legality (pass)...........: 21545
  Legality (fail)...........: 4019
- Added solution rotations..: 1
+ Added solution trips......: 1
  Old solution generated....: 10
  Old solution missing......: 1
 
- APC JOB IDENTIFICATION
+APC JOB IDENTIFICATION
 
- CARMSYS..............: /carm/proj/matador/test_texttest/CARMSYS
- CARMUSR..............: /carm/user_and_tmp/carmen_10/pic_user/
- APC library version..: master.alpha-1.7
- APC library date.....: 05 March 2004 22:25:17
+ CARMSYS...............: /carm/proj/texttest/selftest_data/APC_CARMSYS
+ CARMUSR...............: /users/geoff/texttesttmp/apcgeoff23May143250/lh_bascripts/large_gap_daily/pic_user
+ CARMTMP...............: /carm/proj/texttest/selftest_data/APC_CARMSYS/lh_bascripts_tmp.apc
+ APC library version...: master.current
+ APC library date......: 22 May 2006 22:08:59
+ Parameter set.........: APC_tests_daily/mp_fSCR_pureCRD   with  36  manual changes.
+ IP solver.............: opt_paqs
 
 --- end of analysis ---
-Time:  2 s real  1110 ms cpu  180 ms cpu_child  memory:   8.2 Mb
-Delta: 0 s real  10 ms cpu  0 ms cpu_child  memory:   0.0 Mb
+Time:  1 s real  1010 ms cpu  100 ms cpu_child  memory:  23.8 Mb
 
