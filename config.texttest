@@ -228,14 +228,16 @@ definition_file_stems:replay_usecase
 definition_file_stems:target_record_usecase
 definition_file_stems:target_input
 
-# Run the LSF and SGE tests too...
-extra_version:sge
-extra_version:lsf
-extra_version:carmen
-
 # Automatically collapse successful test suites?
 auto_collapse_successful:1
 
 [gui_entry_overrides]
 auto-replay_in_dynamic_gui:1
 [end]
+
+# Run the LSF and SGE tests too...
+extra_version:sge
+extra_version:lsf
+
+# Don't include this outside Carmen!
+extra_version:carmen

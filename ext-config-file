@@ -11,15 +11,11 @@ view_program:emacs
 
 ## ================================================================
 ## end of stuff only for use externally to Carmen
-unsaveable_version:lsf
-unsaveable_version:sge
 
 [run_dependent_text]
-output*:checkout{WORD -1}
-output:BadApplication{WORD -1}
-output:Reconnecting to test results{WORD -1}
-output:Faking start
-output:not a core dump{WORD 1}
+output*:TextTest will write diagnostics
+output*:{INTERNAL writedir}{REPLACE <test write dir>}
+output*:[^/]*[0-9][0-9][A-Z][a-z][a-z][0-9][0-9][0-9][0-9][0-9][0-9]{REPLACE <target tmp dir>}
 output:test-case.* on .*new results.*missing results.*differences{WORD -13}
 output:test-case.* on .*new results.*differences{WORD -9}
 output:test-case.* on .*missing results.*differences{WORD -9}
@@ -30,16 +26,15 @@ output:test-case.* on .*:${WORD -2}
 output:second to retry
 output:creating batch report{WORD 2}
 output:Killing running test{WORD -1}
-output*:TextTest will write diagnostics
-output:matching applications{WORD -1}
 # Sometimes needed under heavy machine load
 output:signal 15
 output:signal 9
 output:Killed process{WORD 3}
-output:Bug file at{WORD 4}
 output:Sending mail from{WORD -1}
 output:What is your name{LINES 3}
 output:^$
+output:batch_recipients{WORD 2}
+output:batch_sender{WORD 2}
 targetReport: on .*test-case.*under{WORD -7}
 targetReport:^[0-9][0-9][0-9][0-9][0-9][0-9]{WORD 1}
 targetReport:{LINE 1}
@@ -59,6 +54,8 @@ catalogue:unixperf
 # Only filtered on windows
 catalogue:tdat.*cmp
 catalogue:grep.*cmp
+catalogues:{INTERNAL writedir}{REPLACE <test write dir>}
+catalogues:[^/]*[0-9][0-9][A-Z][a-z][a-z][0-9][0-9][0-9][0-9][0-9][0-9]{REPLACE <target tmp dir>}
 errors:RENDER
 errors:File .* line .* in
 errors:dipjudge.py has not been{WORD -5}
@@ -66,11 +63,13 @@ errors:root directory does{WORD -1}
 errors:CountTest.__del__
 errors:fakeuser under{WORD -1}
 errors:TransSocketUNIX
-errors:gtk.Combo
 errors:Import failed
 errors:Warning: Tried to connect to session manager
+# shell errors from kill
+errors:fake_xvfb_server
 *gui_log:{INTERNAL writedir}{REPLACE <test write dir>}
 *gui_log:[^/]*[0-9][0-9][A-Z][a-z][a-z][0-9][0-9][0-9][0-9][0-9][0-9]{REPLACE <target tmp dir>}
+*gui_log:+ PID{WORD 3}
 # Hard to rely on exactly how much faster things are...
 dynamic_gui_log:% faster{WORD 3}
 dynamic_gui_log:Running on{WORD -1}
@@ -79,9 +78,14 @@ dynamic_gui_log:FAILED on{WORD -2}
 dynamic_gui_log:time.*:.*sec.
 dynamic_gui_log:^\?
 dynamic_gui_log:tests started at{WORD -1}
+gui_log:Dynamic GUI started at{WORD -1}
+gui_log:  File "
 # diff output
 dynamic_gui_log:1,2c1
 jusecaseprops:record{WORD -1}
+gui_status:started at{WORD -1}
+gui_status:Starting tests at{WORD -2}
+gui_status:tests at{WORD -1}
 [end]
 
 [unordered_text]
@@ -92,6 +96,7 @@ gui_log:Dynamic run failed{LINES 3}
 *gui_log:1
 target*:1
 shortcut:1
+*Report:1
 [end]
 
 [diagnostics]
@@ -111,6 +116,7 @@ full_name:TextTest
 partial_copy_test_path:TargetApp
 partial_copy_test_path:texttesttmp
 partial_copy_test_path:repository
+copy_test_path:file_edits
 
 [test_data_environment]
 TargetApp:TEXTTEST_HOME
@@ -124,6 +130,15 @@ link_test_path:config
 link_test_path:FakeBugcli/bugcli
 link_test_path:FakeBugcli/bugcli.py
 link_test_path:personaldir
+# Mock version of core-file finder
+link_test_path:gdb
+# And a bunch of stuff for virtual displays...
+link_test_path:rsh
+link_test_path:ps
+link_test_path:xterm
+link_test_path:Xvfb
+link_test_path:xclock
+link_test_path:xdpyinfo
 
 # Tell it that we want to track what files are created
 create_catalogues:true
@@ -132,7 +147,7 @@ create_catalogues:true
 interactive_action_module:texttestgui
 
 # Settings for creation of test cases
-use_case_record_mode:console
+use_case_record_mode:GUI
 
 # Want to slow-motion replay the GUI tests
 slow_motion_replay_speed:2
@@ -153,16 +168,11 @@ overview_all:report/*/test_*_all.html
 overview_1day:report/*/test_*_18Jan2006.html
 [end]
 
-# This is a hack to be able to test recording, don't compare it if it appears...
-discard_file:record_usecase
-
 definition_file_stems:dynamic_usecase
 definition_file_stems:record_usecase
 definition_file_stems:replay_usecase
-
-# Run the LSF and SGE tests too...
-extra_version:sge
-extra_version:lsf
+definition_file_stems:target_record_usecase
+definition_file_stems:target_input
 
 # Automatically collapse successful test suites?
 auto_collapse_successful:1
@@ -170,3 +180,7 @@ auto_collapse_successful:1
 [gui_entry_overrides]
 auto-replay_in_dynamic_gui:1
 [end]
+
+# Run the LSF and SGE tests too...
+extra_version:sge
+extra_version:lsf
