@@ -105,8 +105,6 @@ catalogue:[0-9][0-9][A-Z][a-z][a-z][0-9][0-9][0-9][0-9]{REPLACE <today's date>}
 # Files that shouldn't mean anything...
 catalogue:cmd
 catalogue:unixperf
-catalogue:.*\.o$
-catalogue:i386_linux_opt
 # Only filtered on windows
 catalogue:tdat.*cmp
 catalogue:grep.*cmp
@@ -125,6 +123,7 @@ errors:Warning: Tried to connect to session manager
 errors:fake_xvfb_server
 *gui_log:{INTERNAL writedir}{REPLACE <test write dir>}
 *gui_log:[^/]*[0-9][0-9][A-Z][a-z][a-z][0-9][0-9][0-9][0-9][0-9][0-9]{REPLACE <target tmp dir>}
+*gui_log:+ PID{WORD 3}
 # Hard to rely on exactly how much faster things are...
 dynamic_gui_log:% faster{WORD 3}
 dynamic_gui_log:Running on{WORD -1}
@@ -133,8 +132,6 @@ dynamic_gui_log:FAILED on{WORD -2}
 dynamic_gui_log:time.*:.*sec.
 dynamic_gui_log:^\?
 dynamic_gui_log:tests started at{WORD -1}
-dynamic_gui_log:+ PID{WORD 3}
-gui_log:+ PID{WORD 3}
 gui_log:Dynamic GUI started at{WORD -1}
 gui_log:  File "
 # diff output
