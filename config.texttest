@@ -68,6 +68,7 @@ unsaveable_version:i386_linux
 
 [run_dependent_text]
 output*:TextTest will write diagnostics
+output*:\{REPLACE /}
 output*:{INTERNAL writedir}{REPLACE <test write dir>}
 output*:[^/]*[0-9][0-9][A-Z][a-z][a-z][0-9][0-9][0-9][0-9][0-9][0-9]{REPLACE <target tmp dir>}
 output:test-case.* on .*new results.*missing results.*differences{WORD -13}
@@ -108,6 +109,7 @@ catalogue:unixperf
 # Only filtered on windows
 catalogue:tdat.*cmp
 catalogue:grep.*cmp
+catalogue:hello.*cmp
 catalogues:{INTERNAL writedir}{REPLACE <test write dir>}
 catalogues:[^/]*[0-9][0-9][A-Z][a-z][a-z][0-9][0-9][0-9][0-9][0-9][0-9]{REPLACE <target tmp dir>}
 errors:RENDER
@@ -121,6 +123,7 @@ errors:Import failed
 errors:Warning: Tried to connect to session manager
 # shell errors from kill
 errors:fake_xvfb_server
+*gui_log:\{REPLACE /}
 *gui_log:{INTERNAL writedir}{REPLACE <test write dir>}
 *gui_log:[^/]*[0-9][0-9][A-Z][a-z][a-z][0-9][0-9][0-9][0-9][0-9][0-9]{REPLACE <target tmp dir>}
 *gui_log:+ PID{WORD 3}

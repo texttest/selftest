@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 
 import os
+from time import sleep
 
 def editFiles(dir):
     if os.path.basename(dir) == "writehere":
@@ -11,6 +12,8 @@ def editFiles(dir):
         fileName = open(os.path.join(dir, "newfile"), "w")
         fileName.write("New file!\n")
         fileName.close()
+        # Make sure we don't get race conditions, particularly on Windows!
+        sleep(1)
         os.remove(os.path.join(dir, "newfile"))
     for fileName in os.listdir(dir):
         fullPath = os.path.join(dir, fileName)
