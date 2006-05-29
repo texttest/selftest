@@ -1,6 +1,5 @@
 
 // javac -classpath /usr/share/java/log4j.jar DiagnosticWriter.java
-// jar cmf manifest writediags.jar *.class
   
 import org.apache.log4j.*;
 import java.io.*;

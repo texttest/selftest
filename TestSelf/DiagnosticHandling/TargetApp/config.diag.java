@@ -1,8 +1,6 @@
 # Path to the binary
-binary:${TEXTTEST_CHECKOUT}/source/writediags.jar
-interpreter:java -jar
-
-use_case_recorder:jusecase
+binary:DiagnosticWriter
+interpreter:java
 
 [diagnostics]
 properties_file:myprops
