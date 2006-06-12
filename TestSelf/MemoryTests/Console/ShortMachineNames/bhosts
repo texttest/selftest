@@ -1,0 +1,10 @@
+#!/usr/bin/env python
+
+from socket import gethostname
+
+
+print "HOST_NAME          STATUS          JL/U    MAX  NJOBS    RUN  SSUSP  USUSP    RSV"
+forestville.carmen.se ok                 -      2      0      0      0      0      0
+machines = [ "fake_machine1", "fake_machine2", gethostname() ]
+for machine in machines:
+    print machine + "                 -      2      0      0      0      0      0"

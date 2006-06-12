@@ -1,0 +1,9 @@
+#!/usr/bin/env python
+
+from socket import gethostname
+
+machines = [ "fake_machine1", "fake_machine2", gethostname() ]
+queues = [ "fake_queue1", "fake_queue2" ]
+for machine in machines:
+    for queue in queues:
+        print queue + "@" + machine
