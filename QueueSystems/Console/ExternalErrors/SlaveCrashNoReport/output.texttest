@@ -1,26 +1,26 @@
-TextTest will write diagnostics in /users/geoff/texttesttmp/texttest.lsfgeoff23May120616/QueueSystems/Console/ExternalErrors/SlaveCrashNoReport based on file at /users/geoff/work/master/Testing/Automatic/texttest/log4py.conf
-Using Application SLEEP, version killing.badslavestart, checkout /users/geoff/texttesttmp/texttest.lsfgeoff23May120616/QueueSystems/Console/ExternalErrors/SlaveCrashNoReport/TargetApp
+TextTest will write diagnostics in /users/geoff/texttesttmp/texttest.lsfgeoff26Jun144340/QueueSystems/Console/ExternalErrors/SlaveCrashNoReport based on file at /users/geoff/work/master/Testing/Automatic/texttest/log4py.conf
+Using Application SLEEP, version killing.badslavestart, checkout /users/geoff/texttesttmp/texttest.lsfgeoff26Jun144340/QueueSystems/Console/ExternalErrors/SlaveCrashNoReport/TargetApp
 Submitting SLEEP test-suite TargetApp to LSF queues
   Submitting SLEEP test-case Basic to default LSF queue
 Terminating testing due to external interruption (RUNLIMIT2)
-  Cancelling SLEEP test-case Basic in LSF (job 462948)
+  Cancelling SLEEP test-case Basic in LSF (job 465230)
   SLEEP test-case Basic not compared:
 Slave exited
 Description of exception thrown :
 Traceback (most recent call last):
-  File "/users/geoff/work/master/Testing/TextTest/testmodel.py", line 688, in getActionSequence
+  File "/users/geoff/work/master/Testing/TextTest/testmodel.py", line 710, in getActionSequence
     actionSequenceFromConfig = self.target.getActionSequence()
   File "/users/geoff/work/master/Testing/TextTest/default.py", line 60, in getActionSequence
     return self._getActionSequence(makeDirs=1)
   File "/users/geoff/work/master/Testing/TextTest/default.py", line 118, in _getActionSequence
     actions = [ self.getTestProcessor() ]
-  File "/users/geoff/work/master/Testing/TextTest/queuesystem.py", line 113, in getTestProcessor
+  File "/users/geoff/work/master/Testing/TextTest/queuesystem.py", line 115, in getTestProcessor
     baseProcessor = default.Config.getTestProcessor(self)
   File "/users/geoff/work/master/Testing/TextTest/default.py", line 128, in getTestProcessor
-    return [ self.getWriteDirectoryPreparer(ignoreCatalogues), catalogueCreator, \
+    return [ self.getExecHostFinder(), self.getWriteDirectoryPreparer(ignoreCatalogues),
   File "/users/geoff/work/master/Testing/Automatic/texttest/error_config_modules/slaveerrstart.py", line 12, in getTestRunner
     wibble
 NameError: global name 'wibble' is not defined
 Error in set-up of application SLEEP - Exception thrown by 'slaveerrstart' configuration, while requesting 'action sequence'
 
-At 12:12 creating batch report for application SLEEP ...file written
+At 14:48 creating batch report for application SLEEP ...file written
