@@ -10,8 +10,11 @@ MissingEnvironmentPath
 # Check we link correctly when the test path iindicates a subdirectory of the test structure
 TestPathInSubDir
 
+# Check we can ignore certain changes in the data
+IgnoreDataChanges
+
 # Check we can add a search path for test data
 SearchPath
 
-# Check we can ignore certain changes in the data
-IgnoreDataChanges
+# Check we can use the search path on failing to find an environment variable
+SearchPathFromEnv
