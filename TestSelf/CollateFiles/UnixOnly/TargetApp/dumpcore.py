@@ -4,4 +4,7 @@ import os
 
 # Produce fake core
 file = open("core", "w")
-file.write(os.getenv("COREFILE_BINARY"))
+binary = os.getenv("COREFILE_BINARY")
+if binary:
+    file.write(binary + "\0")
+file.close()
