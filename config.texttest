@@ -147,6 +147,8 @@ jusecaseprops:record{WORD -1}
 gui_status:started at{WORD -1}
 gui_status:Starting tests at{WORD -2}
 gui_status:tests at{WORD -1}
+testobjects:{INTERNAL writedir}{REPLACE <test write dir>}
+testobjects:[^/]*[0-9][0-9][A-Z][a-z][a-z][0-9][0-9][0-9][0-9][0-9][0-9]{REPLACE <target tmp dir>}
 [end]
 
 [unordered_text]
