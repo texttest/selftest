@@ -1,69 +1,69 @@
-TextTest will write diagnostics in /users/geoff/texttesttmp/texttestgeoff26Jun152506/TestSelf/Documentation/ConfigFileEntries based on file at /users/geoff/work/master/Testing/Automatic/texttest/log4py.conf
-Using Application APPIDENTIFIER, checkout /users/geoff/texttesttmp/texttestgeoff26Jun152506/TestSelf/Documentation/ConfigFileEntries/TargetApp
-binary||Full path to the System Under Test
-config_module|default|Configuration module to use
-full_name|APPIDENTIFIER|Expanded name to use for application
-checkout_location|[]|Absolute paths to look for checkouts under
-default_checkout||Default checkout, relative to the checkout location
-extra_version|[]|Versions to be run in addition to the one specified
-base_version|[]|Versions to inherit settings from
-partial_copy_test_path|[]|Paths to be part-copied, part-linked to the temporary directory
-copy_test_path|[]|Paths to be copied to the temporary directory when running tests
-link_test_path|[]|Paths to be linked from the temp. directory when running tests
-test_data_ignore|{'default': []}|Elements under test data structures which should not be viewed or change-monitored
-unsaveable_version|[]|Versions which should not have results saved for them
-slow_motion_replay_speed|0|How long in seconds to wait between each GUI action
+TextTest will write diagnostics in /users/geoff/texttesttmp/texttestgeoff28Jun151043/TestSelf/Documentation/ConfigFileEntries based on file at /users/geoff/work/master/Testing/Automatic/texttest/log4py.conf
+Using Application APPIDENTIFIER, checkout /users/geoff/texttesttmp/texttestgeoff28Jun151043/TestSelf/Documentation/ConfigFileEntries/TargetApp
 add_shortcut_bar|1|Whether or not TextTest's shortcut bar will appear
-test_colours|{'success': 'green', 'not_started': 'white', 'failure': 'red', 'running': 'yellow', 'static': 'pale green', 'app_static': 'purple', 'pending': 'white'}|Colours to use for each test state
-file_colours|{'success': 'green', 'not_started': 'white', 'failure': 'red', 'running': 'yellow', 'static': 'pale green', 'app_static': 'purple'}|Colours to use for each file state
 auto_collapse_successful|1|Automatically collapse successful test suites?
 auto_sort_test_suites|0|Automatically sort test suites in alphabetical order
-window_size|{'': []}|To set the initial size of the dynamic/static GUI.
-version_priority|{'default': 99}|Mapping of version names to a priority order in case of conflict.
-query_kill_processes|{'': []}|Ask about whether to kill these processes when exiting texttest.
-definition_file_stems|['environment', 'testsuite', 'knownbugs', 'options', 'usecase', 'input']|files to be shown as definition files by the static GUI
-gui_entry_overrides|{}|Default settings for entries in the GUI
-gui_entry_options|{'': []}|Default drop-down box options for GUI entries
-diff_program|tkdiff|External program to use for graphical file comparison
-view_program|{'default': 'xemacs'}|External program(s) to use for viewing and editing text files
-follow_program|tail -f|External program to use for following progress of a file
-log_file|output|Result file to search, by default
-failure_severity|{'errors': 1, 'default': 99, 'catalogue': 2, 'usecase': 2, 'performance': 2, 'output': 1}|Mapping of result files to how serious diffs in them are
-text_diff_program|diff|External program to use for textual comparison of files
-lines_of_text_difference|30|How many lines to present in textual previews of file diffs
-max_width_text_difference|500|How wide lines can be in textual previews of file diffs
-home_operating_system|any|Which OS the test results were originally collected on
-diagnostics|{}|Dictionary to define how SUT diagnostics are used
-test_data_environment|{}|Environment variables to be redirected for linked/copied test data
-test_data_searchpath|{'default': []}|Locations to search for test data if not present in test structure
-test_list_files_directory|['filter_files']|Directories to search for test-filter files
-collate_file|{'stacktrace': 'core*'}|Mapping of result file names to paths to collect them from
-collate_script|{'stacktrace': 'interpretcore.py'}|Mapping of result file names to scripts which turn them into suitable text
-run_dependent_text|{'default': []}|Mapping of patterns to remove from result files
-unordered_text|{'default': []}|Mapping of patterns to extract and sort from result files
-create_catalogues|false|Do we create a listing of files created/removed by tests
-catalogue_process_string||String for catalogue functionality to identify processes created
-internal_error_text|[]|List of text to be considered as an internal error, if present
-internal_compulsory_text|[]|List of text to be considered as an internal error, if not present
-cputime_include_system_time|0|Include system time when measuring CPU time?
-performance_logfile|{'default': []}|Which result file to collect performance data from
-performance_logfile_extractor|{}|What string to look for when collecting performance data
-performance_test_machine|{'default': [], 'memory': ['any']}|List of machines where performance can be collected
-performance_variation_%|{'default': 10}|How much variation in performance is allowed
-performance_test_minimum|{'default': 0}|Minimum time/memory to be consumed before data is collected
-use_case_record_mode|disabled|Mode for Use-case recording (GUI, console or disabled)
-use_case_recorder||Which Use-case recorder is being used
-discard_file|[]|List of generated result files which should not be compared
-smtp_server|localhost|Server to use for sending mail in batch mode
-batch_result_repository|{'default': ''}|Directory to store historical batch results under
-historical_report_location|{'default': ''}|Directory to create reports on historical batch data under
-testoverview_colours|{'performance_bg': '#FFC6A5', 'row_header_bg': '#FFFFCC', 'test_default_fg': 'black', 'column_header_bg': 'gray1', 'success_bg': '#CEEFBD', 'column_header_fg': 'black', 'failure_bg': '#FF3118', 'no_results_bg': 'gray2', 'memory_bg': 'pink', 'performance_fg': 'red6'}|Colours to use for historical batch HTML reports
-batch_sender|{'default': 'geoff@localhost'}|Sender address to use sending mail in batch mode
+base_version|[]|Versions to inherit settings from
 batch_recipients|{'default': 'geoff@localhost'}|Addresses to send mail to in batch mode
+batch_result_repository|{'default': ''}|Directory to store historical batch results under
+batch_sender|{'default': 'geoff@localhost'}|Sender address to use sending mail in batch mode
 batch_timelimit|{'default': None}|Maximum length of test to include in batch mode runs
 batch_use_collection|{'default': 'false'}|Do we collect multiple mails into one in batch mode
 batch_version|{'default': []}|Which versions are allowed as batch mode runs
+binary||Full path to the System Under Test
+catalogue_process_string||String for catalogue functionality to identify processes created
+checkout_location|[]|Absolute paths to look for checkouts under
+collate_file|{'stacktrace': 'core*'}|Mapping of result file names to paths to collect them from
+collate_script|{'stacktrace': 'interpretcore.py'}|Mapping of result file names to scripts which turn them into suitable text
+config_module|default|Configuration module to use
+copy_test_path|[]|Paths to be copied to the temporary directory when running tests
+cputime_include_system_time|0|Include system time when measuring CPU time?
+create_catalogues|false|Do we create a listing of files created/removed by tests
+default_checkout||Default checkout, relative to the checkout location
 default_interface|static_gui|Which interface to start if none of -con, -g and -gx are provided
-virtual_display_machine|[]|(UNIX) List of machines to run virtual display server (Xvfb) on
+definition_file_stems|['environment', 'testsuite', 'knownbugs', 'options', 'usecase', 'input']|files to be shown as definition files by the static GUI
+diagnostics|{}|Dictionary to define how SUT diagnostics are used
+diff_program|tkdiff|External program to use for graphical file comparison
+discard_file|[]|List of generated result files which should not be compared
+extra_version|[]|Versions to be run in addition to the one specified
+failure_severity|{'errors': 1, 'default': 99, 'catalogue': 2, 'usecase': 2, 'performance': 2, 'output': 1}|Mapping of result files to how serious diffs in them are
+file_colours|{'success': 'green', 'not_started': 'white', 'failure': 'red', 'running': 'yellow', 'static': 'pale green', 'app_static': 'purple'}|Colours to use for each file state
+follow_program|tail -f|External program to use for following progress of a file
+full_name|APPIDENTIFIER|Expanded name to use for application
+gui_entry_options|{'': []}|Default drop-down box options for GUI entries
+gui_entry_overrides|{}|Default settings for entries in the GUI
+historical_report_location|{'default': ''}|Directory to create reports on historical batch data under
+home_operating_system|any|Which OS the test results were originally collected on
 interactive_action_module|default|Module to search for InteractiveActions for the GUI
+internal_compulsory_text|[]|List of text to be considered as an internal error, if not present
+internal_error_text|[]|List of text to be considered as an internal error, if present
 interpreter||Program to use as interpreter for the SUT
+lines_of_text_difference|30|How many lines to present in textual previews of file diffs
+link_test_path|[]|Paths to be linked from the temp. directory when running tests
+log_file|output|Result file to search, by default
+max_width_text_difference|500|How wide lines can be in textual previews of file diffs
+partial_copy_test_path|[]|Paths to be part-copied, part-linked to the temporary directory
+performance_logfile|{'default': []}|Which result file to collect performance data from
+performance_logfile_extractor|{}|What string to look for when collecting performance data
+performance_test_machine|{'default': [], 'memory': ['any']}|List of machines where performance can be collected
+performance_test_minimum|{'default': 0}|Minimum time/memory to be consumed before data is collected
+performance_variation_%|{'default': 10}|How much variation in performance is allowed
+query_kill_processes|{'': []}|Ask about whether to kill these processes when exiting texttest.
+run_dependent_text|{'default': []}|Mapping of patterns to remove from result files
+slow_motion_replay_speed|0|How long in seconds to wait between each GUI action
+smtp_server|localhost|Server to use for sending mail in batch mode
+test_colours|{'success': 'green', 'not_started': 'white', 'failure': 'red', 'running': 'yellow', 'static': 'pale green', 'app_static': 'purple', 'pending': 'white'}|Colours to use for each test state
+test_data_environment|{}|Environment variables to be redirected for linked/copied test data
+test_data_ignore|{'default': []}|Elements under test data structures which should not be viewed or change-monitored
+test_data_searchpath|{'default': []}|Locations to search for test data if not present in test structure
+test_list_files_directory|['filter_files']|Directories to search for test-filter files
+testoverview_colours|{'performance_bg': '#FFC6A5', 'row_header_bg': '#FFFFCC', 'test_default_fg': 'black', 'column_header_bg': 'gray1', 'success_bg': '#CEEFBD', 'column_header_fg': 'black', 'failure_bg': '#FF3118', 'no_results_bg': 'gray2', 'memory_bg': 'pink', 'performance_fg': 'red6'}|Colours to use for historical batch HTML reports
+text_diff_program|diff|External program to use for textual comparison of files
+unordered_text|{'default': []}|Mapping of patterns to extract and sort from result files
+unsaveable_version|[]|Versions which should not have results saved for them
+use_case_record_mode|disabled|Mode for Use-case recording (GUI, console or disabled)
+use_case_recorder||Which Use-case recorder is being used
+version_priority|{'default': 99}|Mapping of version names to a priority order in case of conflict.
+view_program|{'default': 'xemacs'}|External program(s) to use for viewing and editing text files
+virtual_display_machine|[]|(UNIX) List of machines to run virtual display server (Xvfb) on
+window_size|{'': []}|To set the initial size of the dynamic/static GUI.
