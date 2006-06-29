@@ -92,13 +92,13 @@ output:What is your name{LINES 3}
 output:^$
 output:batch_recipients{WORD 2}
 output:batch_sender{WORD 2}
-targetReport: on .*test-case.*under{WORD -7}
-targetReport:^[0-9][0-9][0-9][0-9][0-9][0-9]{WORD 1}
-targetReport:{LINE 1}
-targetReport:^\>
-targetReport:% faster{WORD -2}
+*Report: on .*test-case.*under{WORD -7}
+*Report:^[0-9][0-9][0-9][0-9][0-9][0-9]{WORD 1}
+*Report:^\>
+*Report:% faster{WORD -2}
 # diff output
 targetReport:1,2c1
+targetReport:{LINE 1}
 collectReport:^From:{WORD 2}
 collectReport:^To:{WORD 2}
 collectReport:^Subject:{WORD 2}

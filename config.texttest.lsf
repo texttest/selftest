@@ -30,12 +30,12 @@ slavelog:TextTest will write diagnostics
 slavelog:checkout{WORD -1}
 slavelog:Terminating testing{WORD -1}
 slavelog:{INTERNAL writedir}{REPLACE <test write dir>}
-targetReport:batch system daemon
-targetReport:No LSF installation
-targetReport:killed.*at{WORD -1}
-targetReport:terminated before completion{WORD 8}
-targetReport:File .* line .* in
-targetReport:ioctl for device
+*Report:batch system daemon
+*Report:No LSF installation
+*Report:killed.*at{WORD -1}
+*Report:terminated before completion{WORD 8}
+*Report:File .* line .* in
+*Report:ioctl for device
 
 [unordered_text]
 output:Failed to submit to
