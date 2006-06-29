@@ -1,0 +1,94 @@
+From: geoff@localhost
+To: geoff
+Subject: 060629 APC : 1 tests : 1 killed
+
+Summary of all Unsuccessful tests follows...
+---------------------------------------------------------------------------------
+The following tests were terminated before completion : 
+In APC test-suite TargetApp:
+  In APC test-suite sk_test9scripts:
+    - APC test-case FC4_bas_col_1_paphos_aan : killed at 14:47
+
+
+Details of all Unsuccessful tests follows...
+---------------------------------------------------------------------------------
+
+Detailed information for the tests that were terminated before completion follows...
+--------------------------------------------------------
+TEST were terminated before completion (killed at 14:47) on singleton : APC test-case FC4_bas_col_1_paphos_aan (under sk_test9scripts/FC4_bas_col_1_paphos_aan)
+Test killed explicitly at 14:47
+------------------ Differences in solution --------------------
+1,9400c1,9369
+< SECTION apc_oags Solution_37
+< 147;APC_SEGMENT_KEY_1;APC_SEGMENT;APC_SEGMENT_TYPE;FLIGHT_CARRIER;FLIGHT_NUMBER;FLIGHT_DEP_AIRP;FLIGHT_ARR_AIRP;FLIGHT_DATE;FLIGHT_DEP_TIME;FLIGHT_BLOCK_TIME;FLIGHT_IATA;CUSTOM_AC_TYPE;FLIGHT_SUFFIX;FLIGHT_LEG_NO;TASK_SUB_CODE;ONWARD_SEGMENT_KEY;FLIGHT_SERVICE_TYPE;BOOKED_CREW_VECTOR_LENGTH;BOOKED_CREW_VECTOR;AC_OWNER;FLIGHT_ONW_FLIGHT_NUM;PASSENGER_TERMINAL_DEPARTURE_STATION;PASSENGER_TERMINAL_ARRIVAL_STATION;FIRST_CLASS_CAP;BUSINESS_CLASS_CAP;ECONOMY_CLASS_CAP;FOURTH_CLASS_CAP;COCKPIT_CREW_E
+MPLOYER;FLIGHT_GDOR;
+< SECTION ground_transport Solution_37
+< 147;APC_SEGMENT_KEY_1;APC_SEGMENT;APC_SEGMENT_TYPE;FLIGHT_CARRIER;FLIGHT_NUMBER;FLIGHT_DEP_AIRP;FLIGHT_ARR_AIRP;FLIGHT_DATE;FLIGHT_DEP_TIME;FLIGHT_BLOCK_TIME;FLIGHT_IATA;CUSTOM_AC_TYPE;FLIGHT_SUFFIX;FLIGHT_LEG_NO;TASK_SUB_CODE;ONWARD_SEGMENT_KEY;FLIGHT_SERVICE_TYPE;BOOKED_CREW_VECTOR_LENGTH;BOOKED_CREW_VECTOR;AC_OWNER;FLIGHT_ONW_FLIGHT_NUM;PASSENGER_TERMINAL_DEPARTURE_STATION;PASSENGER_TERMINAL_ARRIVAL_STATION;FIRST_CLASS_CAP;BUSINESS_CLASS_CAP;ECONOMY_CLASS_CAP;FOURTH_CLASS_CAP;COCKPIT_CREW_E
+MPLOYER;FLIGHT_GDOR;
+< SECTION apc_chains Solution_37
+< 142;APC_CHAIN_NUMBER;APC_CHAIN_LEG_COUNT;APC_CHAIN_LRC_FLAG;APC_CHAIN_CREW_VECTOR_LEN;APC_CHAIN_CREW_VECTOR;APC_CHAIN_CREW_ID;APC_CHAIN_CREW_POS;APC_CHAIN_HOMEBASE;APC_CHAIN_CATEGORY;APC_CHAIN_MAIN_VARIANT;
+< 144;APC_SEGMENT_PTR;APC_SEGMENT_OFFFSET;APC_SEGMENT_START_OFFSET;APC_SEGMENT_END_OFFSET;APC_SEGMENT_DUTY_DESIGNATOR;APC_SEGMENT_DUTY_TYPE;APC_SEGMENT_BASE;APC_SEGMENT_BIT_FIELD;
+< 143;48079;15;C;7;1,0,0,0,0,0,0,;;-1;CPH;;-1;
+< 145;14109;0;0;0;A;;;0x62;
+< 145;14141;0;0;0;A;;;0x40;
+< 145;14512;0;0;0;A;;;0x40;
+< 145;16810;0;0;0;A;;;0x40;
+< 145;16897;0;0;0;A;;;0x62;
+< 145;17027;0;0;0;A;;;0x40;
+< 145;5685;0;0;0;A;;;0x62;
+< 145;5547;0;0;0;A;;;0x40;
+< 145;22749;0;0;0;A;;;0x62;
+< 145;22777;0;0;0;A;;;0x40;
+< 145;17042;0;0;0;A;;;0x40;
+< 145;16808;0;0;0;A;;;0x40;
+< 145;8008;0;0;0;A;;;0x40;
+< 145;23022;0;0;0;A;;;0x62;
+< 145;23047;0;0;0;A;;;0x40;
+< 143;48080;10;C;7;1,0,0,0,0,0,0,;;-1;OSL;;-1;
+< 145;23552;0;0;0;A;;;0x62;
+< 145;23571;0;0;0;A;;;0x40;
+< 145;17047;0;0;0;A;;;0x40;
+< 145;16814;0;0;0;A;;;0x40;
+< 145;5186;0;0;0;A;;;0x62;
+------------------ Differences in status --------------------
+2d1
+< --- Analysis of solution (input) ---
+3a3,5
+> --- Summary of solution (input) ---
+> 
+>  Sub-plan..............: F36  MCS_W01  V1112_0122  FC4_bas_col_1_paphos_aan
+5,6d6
+<  Parameter set.........: V0910_0117/FC1_335_1   with  38  manual changes.
+<  Optimizer.............: opt_paqs
+7a8,11
+>  legs..........................................: 7863
+>   uncovered legs...............................: 30
+>  overcovers (will become deadheads)............: 0
+>  illegal trips.................................: 0
+9,18c13
+<  APC solution evaluation criterion:
+<    uncovered leg count, total cost of crr
+<  uncovered legs...............................: 30
+<  base constraint excess ......................: 7
+<  variant constraint deficit ..................: 0
+<  cost function (map_cost_of_crr)..............: cost_of_crr
+<  APC total rule cost..........................: 26744482
+<  overcover cost ..............................:        0
+<  base constraint excess cost..................:    70000
+<  global constraint excess cost................:    10000
+---
+>  TOTAL cost....................................: 26884482
+20c15,19
+<  TOTAL cost...................................: 26824482
+---
+------------------ Differences in warnings --------------------
+6,9c6,8
+< Cannot find map_calendar_day_start value 'start_calday'.
+< APC will use internal calculation based on check_in_time.
+< 
+< 200,200 calls to split_group_nodesTotal run time limit (720 minutes) for column generator exceeded
+---
+> Dependency of map_crr_calendar_days value 'sling_length_calendar_days'
+> is not equal to chain level 'chain'.
+> Dependency is 'crr'.
+
