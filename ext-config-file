@@ -36,13 +36,13 @@ output:What is your name{LINES 3}
 output:^$
 output:batch_recipients{WORD 2}
 output:batch_sender{WORD 2}
-targetReport: on .*test-case.*under{WORD -7}
-targetReport:^[0-9][0-9][0-9][0-9][0-9][0-9]{WORD 1}
-targetReport:{LINE 1}
-targetReport:^\>
-targetReport:% faster{WORD -2}
+*Report: on .*test-case.*under{WORD -7}
+*Report:^[0-9][0-9][0-9][0-9][0-9][0-9]{WORD 1}
+*Report:^\>
+*Report:% faster{WORD -2}
 # diff output
 targetReport:1,2c1
+targetReport:{LINE 1}
 collectReport:^From:{WORD 2}
 collectReport:^To:{WORD 2}
 collectReport:^Subject:{WORD 2}
@@ -69,19 +69,21 @@ errors:Import failed
 errors:Warning: Tried to connect to session manager
 # shell errors from kill
 errors:fake_xvfb_server
+errors:^sh:.*kill
 *gui_log:\{REPLACE /}
 *gui_log:{INTERNAL writedir}{REPLACE <test write dir>}
 *gui_log:[^/]*[0-9][0-9][A-Z][a-z][a-z][0-9][0-9][0-9][0-9][0-9][0-9]{REPLACE <target tmp dir>}
 *gui_log:+ PID{WORD 3}
 # Hard to rely on exactly how much faster things are...
 dynamic_gui_log:% faster{WORD 3}
-dynamic_gui_log:Running on{WORD -1}
-dynamic_gui_log:succeeded on{WORD -1}
-dynamic_gui_log:FAILED on{WORD -2}
+dynamic_gui_log:Running on{WORD -1}{REPLACE <machine>}
+dynamic_gui_log:succeeded on{WORD -1}{REPLACE <machine>}
+dynamic_gui_log:FAILED on{WORD -2}{REPLACE <machine>}
+dynamic_gui_log:not be run on{WORD -2}{REPLACE <machine>}
 dynamic_gui_log:time.*:.*sec.
 dynamic_gui_log:^\?
-dynamic_gui_log:tests started at{WORD -1}
-gui_log:Dynamic GUI started at{WORD -1}
+dynamic_gui_log:tests started at{WORD -1}{REPLACE <date/time>}
+gui_log:Dynamic GUI started at{WORD -1}{REPLACE <date/time>}
 gui_log:  File "
 # diff output
 dynamic_gui_log:1,2c1
@@ -120,11 +122,13 @@ partial_copy_test_path:TargetApp
 partial_copy_test_path:texttesttmp
 partial_copy_test_path:repository
 copy_test_path:file_edits
+copy_test_path:usecases
 
 [test_data_environment]
 TargetApp:TEXTTEST_HOME
 texttesttmp:TEXTTEST_TMP
 personaldir:TEXTTEST_PERSONAL_CONFIG
+usecases:USECASE_HOME
 [end]
 
 # List of constant input files to create links to. Will copy them on Windows as symbolic links
@@ -135,6 +139,7 @@ link_test_path:FakeBugcli/bugcli.py
 link_test_path:personaldir
 # Mock version of core-file finder
 link_test_path:gdb
+link_test_path:interpretcore.py
 # And a bunch of stuff for virtual displays...
 link_test_path:rsh
 link_test_path:ps
@@ -151,9 +156,6 @@ interactive_action_module:texttestgui
 
 # Settings for creation of test cases
 use_case_record_mode:GUI
-
-# Want to slow-motion replay the GUI tests
-slow_motion_replay_speed:2
 
 # Things to collate
 [collate_file]
@@ -176,9 +178,6 @@ definition_file_stems:record_usecase
 definition_file_stems:replay_usecase
 definition_file_stems:target_record_usecase
 definition_file_stems:target_input
-
-# Automatically collapse successful test suites?
-auto_collapse_successful:1
 
 [gui_entry_overrides]
 auto-replay_in_dynamic_gui:1
