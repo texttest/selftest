@@ -114,12 +114,12 @@ catalogue:grep.*cmp
 catalogue:hello.*cmp
 catalogues:{INTERNAL writedir}{REPLACE <test write dir>}
 catalogues:[^/]*[0-9][0-9][A-Z][a-z][a-z][0-9][0-9][0-9][0-9][0-9][0-9]{REPLACE <target tmp dir>}
+errors:{INTERNAL writedir}{REPLACE <test write dir>}
 errors:RENDER
 errors:File .* line .* in
 errors:dipjudge.py has not been{WORD -5}
 errors:root directory does{WORD -1}
 errors:CountTest.__del__
-errors:fakeuser under{WORD -1}
 errors:TransSocketUNIX
 errors:Import failed
 errors:Warning: Tried to connect to session manager
