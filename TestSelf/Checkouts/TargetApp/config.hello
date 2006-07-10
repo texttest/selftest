@@ -1,0 +1,13 @@
+import_config_file:${OUTER_TT}/standard_console
+
+binary:$TEXTTEST_CHECKOUT/hello.py
+
+log_file:none
+
+default_checkout:checkout1
+
+[checkout_location]
+default:$TEXTTEST_HOME/$TEXTTEST_CHECKOUT_NAME/source
+batch_session:$TEXTTEST_HOME/batch_source
+multi_options:no_such_directory
+multi_options:$TEXTTEST_HOME/checkout2/source
