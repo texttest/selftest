@@ -3,15 +3,19 @@
 ##Stuff that only works at Carmen!
 
 # Path to the binary, at Carmen
-binary:${TEXTTEST_CHECKOUT}/Testing/TextTest/texttest.py
-
-# Settings for Carmen
-checkout_location:~/work
-default_checkout:master
+binary:${TEXTTEST_CHECKOUT}/texttest.py
 
 # Run with SGE at Carmen
 config_module:carmenqueuesystem
 queue_system_module:SGE
+
+# Settings for Carmen
+default_checkout:master
+[checkout_location]
+default:~/work/${TEXTTEST_CHECKOUT_NAME}/Testing/TextTest
+nightly_publish:/carm/proj/matador/publish/master/Testing/TextTest
+weekly_publish:/carm/proj/matador/publish/master/Testing/TextTest
+[end]
 
 default_major_release:none
 
@@ -47,7 +51,7 @@ local:false
 
 # GUI configuration, drop-down lists to appear in static gui...
 [gui_entry_options]
-use_checkout:/carm/master
+use_checkout:/carm/master/Testing/TextTest
 run_this_version:master.i386_linux
 run_this_version:master.parisc_2_0
 run_this_version:master.sparc
