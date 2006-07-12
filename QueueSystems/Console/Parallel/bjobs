@@ -1,0 +1,13 @@
+#!/usr/bin/env python
+
+import os, sys, string
+
+cmdLine = string.join(sys.argv[1:])
+if cmdLine.find("fake_machine1") != -1:
+    print """1  fakeuser1   RUN  normal     fake_machine1 fake_machine1 fake_job_name_1 Jul 12 16:06
+2  fakeuser2   RUN  normal     fake_machine1 fake_machine1 fake_job_name_2 Jul 12 16:46
+"""
+else:
+    print """3  fakeuser2   RUN  normal     fake_machine2 fake_machine2 fake_job_name_3 Jul 12 18:06
+4  fakeuser4   RUN  normal     fake_machine2 fake_machine2 fake_job_name_4 Jul 13 16:46
+"""

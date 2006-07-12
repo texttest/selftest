@@ -42,6 +42,8 @@ default:sparc
 default:lsf
 default:sge
 default:carmen
+# collect coverage info with local batch runs...
+local:cover
 
 [batch_use_collection]
 default:true
@@ -94,7 +96,6 @@ output:signal 9
 output:Killed process{WORD 3}
 output:Sending mail from{WORD -1}
 output:What is your name{LINES 3}
-output:^$
 output:batch_recipients{WORD 2}
 output:batch_sender{WORD 2}
 *Report: on .*test-case.*under{WORD -7}
