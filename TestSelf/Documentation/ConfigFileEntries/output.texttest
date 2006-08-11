@@ -1,4 +1,4 @@
-TextTest will write diagnostics in /users/geoff/texttesttmp/texttestgeoff10Jul104051/TestSelf/Documentation/ConfigFileEntries based on file at /users/geoff/work/master/Testing/Automatic/texttest/log4py.conf
+TextTest will write diagnostics in /users/geoff/texttesttmp/texttestgeoff11Aug152839/TestSelf/Documentation/ConfigFileEntries based on file at /users/geoff/work/master/Testing/Automatic/texttest/log4py.conf
 Using Application APPIDENTIFIER
 add_shortcut_bar|1|Whether or not TextTest's shortcut bar will appear
 auto_collapse_successful|1|Automatically collapse successful test suites?
@@ -15,13 +15,14 @@ catalogue_process_string||String for catalogue functionality to identify process
 checkout_location|{'default': []}|Absolute paths to look for checkouts under
 collate_file|{'stacktrace': 'core*'}|Mapping of result file names to paths to collect them from
 collate_script|{'stacktrace': 'interpretcore.py'}|Mapping of result file names to scripts which turn them into suitable text
+collect_traffic|[]|List of command-line programs to intercept
 config_module|default|Configuration module to use
 copy_test_path|[]|Paths to be copied to the temporary directory when running tests
 cputime_include_system_time|0|Include system time when measuring CPU time?
 create_catalogues|false|Do we create a listing of files created/removed by tests
 default_checkout||Default checkout, relative to the checkout location
 default_interface|static_gui|Which interface to start if none of -con, -g and -gx are provided
-definition_file_stems|['environment', 'testsuite', 'options', 'usecase', 'input', 'knownbugs']|files to be shown as definition files by the static GUI
+definition_file_stems|['environment', 'testsuite', 'options', 'usecase', 'traffic', 'input', 'knownbugs']|files to be shown as definition files by the static GUI
 diagnostics|{}|Dictionary to define how SUT diagnostics are used
 diff_program|tkdiff|External program to use for graphical file comparison
 discard_file|[]|List of generated result files which should not be compared
@@ -60,6 +61,7 @@ test_data_searchpath|{'default': []}|Locations to search for test data if not pr
 test_list_files_directory|['filter_files']|Directories to search for test-filter files
 testoverview_colours|{'performance_bg': '#FFC6A5', 'row_header_bg': '#FFFFCC', 'test_default_fg': 'black', 'column_header_bg': 'gray1', 'success_bg': '#CEEFBD', 'column_header_fg': 'black', 'failure_bg': '#FF3118', 'no_results_bg': 'gray2', 'memory_bg': 'pink', 'performance_fg': 'red6'}|Colours to use for historical batch HTML reports
 text_diff_program|diff|External program to use for textual comparison of files
+traffic_ignore_args|{'': []}|Mapping of traffic file names to unimportant arguments in them
 unordered_text|{'default': []}|Mapping of patterns to extract and sort from result files
 unsaveable_version|[]|Versions which should not have results saved for them
 use_case_record_mode|disabled|Mode for Use-case recording (GUI, console or disabled)
