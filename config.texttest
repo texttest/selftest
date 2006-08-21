@@ -94,6 +94,7 @@ output:Killing running test{WORD -1}
 output:signal 15
 output:signal 9
 output:Killed process{WORD 3}
+output:seconds on{WORD -1}
 output:Sending mail from{WORD -1}
 output:What is your name{LINES 3}
 output:batch_recipients{WORD 2}
@@ -144,6 +145,7 @@ dynamic_gui_log:time.*:.*sec.
 dynamic_gui_log:^\?
 dynamic_gui_log:tests started at{WORD -1}{REPLACE <date/time>}
 dynamic_gui_log:From log file reckoned
+dynamic_gui_log:seconds on{WORD -1}
 gui_log:Dynamic GUI started at{WORD -1}{REPLACE <date/time>}
 gui_log:  File "
 gui_log:Configure self-diagnostics{WORD -1}

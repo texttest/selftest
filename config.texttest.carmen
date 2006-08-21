@@ -54,13 +54,13 @@ dynamic_gui_log:Waiting for application event{->}Expected application event
 usecase:wait for test
 [end]
 
-# We only do two passes, so we can't actually find the base_version LSF unless
+# We only do two passes, so we can't actually find the base_version queuesystem unless
 # we state it explicitly here
 base_version:{CLEAR LIST}
 base_version:sge
-base_version:lsf
+base_version:queuesystem
 
-unsaveable_version:lsf
+unsaveable_version:queuesystem
 unsaveable_version:sge
 unsaveable_version:carmen
 

@@ -1,0 +1,40 @@
+<-SRV:192.168.99.28:57158
+<-CMD:env 'QUEUE_SYSTEM_RESOURCE=' 'USECASE_RECORD_SCRIPT=' 'QUEUE_SYSTEM_SUBMIT_ARGS=$TARGET_QS_SUBMIT_ARG' 'USECASE_RECORD_STDIN=' 'TEXTTEST_CHECKOUT=' 'USECASE_REPLAY_SCRIPT=' 'PATH=/users/geoff/texttesttmp/texttest.lsfgeoff21Aug115554/QueueSystems/Limits/Master/KillTest/texttesttmp/sleep.killing2geoff21Aug115728/Basic:$PATH' 'TEXTTEST_CHECKOUT_NAME=' bsub -J Test-Basic-SLEEP.killing2 -u nobody -o framework_tmp/slavelog -e framework_tmp/slaveerrs 'exec /bin/tcsh -c "exec /users/geoff/work/master/Testing/TextTest/texttest.py -d /users/geoff/texttesttmp/texttest.lsfgeoff21Aug115554/QueueSystems/Limits/Master/KillTest/TargetApp -a sleep -v killing2 -l  -tp Basic -slave /users/geoff/texttesttmp/texttest.lsfgeoff21Aug115554/QueueSystems/Limits/Master/KillTest/texttesttmp/sleep.killing2geoff21Aug115728 -servaddr 192.168.99.28:57156 -x -xr /users/geoff/work/master/Testing/Automatic/texttest -xw /users/geoff/texttesttmp/texttest.lsfgeoff21Aug115554/QueueSystems/Limits/Master/KillTest/slave"'
+->OUT:Job <471048> is submitted to queue <normal>.
+->CLI:16508
+sleep.killing2:Basic
+(idefault
+Running
+p1
+(dp2
+S'category'
+p3
+S'running'
+p4
+sS'bkgProcess'
+p5
+NsS'freeText'
+p6
+S'Running on quaqtaq'
+p7
+sS'started'
+p8
+I1
+sS'completed'
+p9
+I0
+sS'lifecycleChange'
+p10
+S'start'
+p11
+sS'briefText'
+p12
+S'RUN (quaqtaq)'
+p13
+sS'executionHosts'
+p14
+(lp15
+S'quaqtaq'
+asb.
+<-CMD:env 'TEXTTEST_CHECKOUT=' 'QUEUE_SYSTEM_RESOURCE=' 'TEXTTEST_CHECKOUT_NAME=' 'QUEUE_SYSTEM_SUBMIT_ARGS=$TARGET_QS_SUBMIT_ARG' 'PATH=/users/geoff/texttesttmp/texttest.lsfgeoff21Aug115554/QueueSystems/Limits/Master/KillTest/texttesttmp/sleep.killing2geoff21Aug115728/Basic:$PATH' bkill -s USR1 471048
+->OUT:Job <471048> is being signaled

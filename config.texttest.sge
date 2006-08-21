@@ -1,17 +1,18 @@
-# Unless otherwise stated, we use the LSF settings
-base_version:lsf
-
-extra_version:{CLEAR LIST}
+base_version:queuesystem
 
 # Fake queue system directory...
-link_test_path:{CLEAR LIST}
-link_test_path:personaldir
 link_test_path:qsub
-link_test_path:sgehostfile
 link_test_path:qdel
-link_test_path:qacct
-link_test_path:qselect
-link_test_path:qstat
+link_test_path:sgehostfile
 
 # Avoid waiting problems
 default_queue:waiting
+
+collect_traffic:qsub
+collect_traffic:qdel
+collect_traffic:qacct
+collect_traffic:qselect
+collect_traffic:qstat
+
+[test_data_environment]
+sgehostfile:PE_HOSTFILE

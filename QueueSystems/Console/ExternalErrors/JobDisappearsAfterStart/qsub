@@ -1,7 +1,0 @@
-#!/usr/bin/env python
-
-import os, sys
-
-print "Your job 1 (\"stupid\") has been submitted."
-# Run the slave locally in the background so it doesn't use a slot...
-os.system(sys.argv[-1] + " > /dev/null 2>&1 &")
