@@ -1,13 +1,13 @@
 From: geoff@localhost
-To: geoff
-Subject: 060629 APC : 1 tests : 1 killed
+To: carmen.raveopt_tests,johani
+Subject: 060821 APC : 1 tests : 1 killed
 
 Summary of all Unsuccessful tests follows...
 ---------------------------------------------------------------------------------
 The following tests were terminated before completion : 
 In APC test-suite TargetApp:
   In APC test-suite sk_test9scripts:
-    - APC test-case FC4_bas_col_1_paphos_aan : killed at 14:47
+    - APC test-case FC4_bas_col_1_paphos_aan : killed at 15:33
 
 
 Details of all Unsuccessful tests follows...
@@ -15,8 +15,8 @@ Details of all Unsuccessful tests follows...
 
 Detailed information for the tests that were terminated before completion follows...
 --------------------------------------------------------
-TEST were terminated before completion (killed at 14:47) on singleton : APC test-case FC4_bas_col_1_paphos_aan (under sk_test9scripts/FC4_bas_col_1_paphos_aan)
-Test killed explicitly at 14:47
+TEST were terminated before completion (killed at 15:33) on bagotville : APC test-case FC4_bas_col_1_paphos_aan (under sk_test9scripts/FC4_bas_col_1_paphos_aan)
+Test killed explicitly at 15:33
 ------------------ Differences in solution --------------------
 1,9400c1,9369
 < SECTION apc_oags Solution_37
@@ -91,4 +91,10 @@ MPLOYER;FLIGHT_GDOR;
 > Dependency of map_crr_calendar_days value 'sling_length_calendar_days'
 > is not equal to chain level 'chain'.
 > Dependency is 'crr'.
+------------------ New result in error --------------------
+
+--- APC INTERNAL ERROR ---
+
+ERROR: Process caught signal USR2 (User-defined signal 2). Exiting.
+
 
