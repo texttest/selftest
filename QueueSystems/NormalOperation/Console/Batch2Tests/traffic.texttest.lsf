@@ -1,9 +1,10 @@
-<-SRV:192.168.99.38:59438
-<-CMD:env 'TEXTTEST_CHECKOUT=' 'QUEUE_SYSTEM_RESOURCE=' 'TEXTTEST_CHECKOUT_NAME=' 'QUEUE_SYSTEM_SUBMIT_ARGS=$TARGET_QS_SUBMIT_ARG' 'PATH=/users/geoff/texttesttmp/texttest.lsfgeoff21Aug115554/QueueSystems/NormalOperation/Console/Batch2Tests/texttesttmp/sleepgeoff21Aug115732/Basic:$PATH' bsub -J Test-Basic-SLEEP -u nobody -o framework_tmp/slavelog -e framework_tmp/slaveerrs 'exec /bin/tcsh -c "exec /users/geoff/work/master/Testing/TextTest/texttest.py -d /users/geoff/texttesttmp/texttest.lsfgeoff21Aug115554/QueueSystems/NormalOperation/Console/Batch2Tests/TargetApp -a sleep -l  -tp Basic -slave /users/geoff/texttesttmp/texttest.lsfgeoff21Aug115554/QueueSystems/NormalOperation/Console/Batch2Tests/texttesttmp/sleepgeoff21Aug115732 -servaddr 192.168.99.38:59435 -b local -x -xr /users/geoff/work/master/Testing/Automatic/texttest -xw /users/geoff/texttesttmp/texttest.lsfgeoff21Aug115554/QueueSystems/NormalOperation/Console/Batch2Tests/slave"'
-->OUT:Job <471040> is submitted to queue <normal>.
-<-CMD:env 'TEXTTEST_CHECKOUT=' 'QUEUE_SYSTEM_RESOURCE=' 'TEXTTEST_CHECKOUT_NAME=' 'QUEUE_SYSTEM_SUBMIT_ARGS=$TARGET_QS_SUBMIT_ARG' 'PATH=/users/geoff/texttesttmp/texttest.lsfgeoff21Aug115554/QueueSystems/NormalOperation/Console/Batch2Tests/texttesttmp/sleepgeoff21Aug115732/Basic2:$PATH' bsub -J Test-Basic2-SLEEP -u nobody -o framework_tmp/slavelog -e framework_tmp/slaveerrs 'exec /bin/tcsh -c "exec /users/geoff/work/master/Testing/TextTest/texttest.py -d /users/geoff/texttesttmp/texttest.lsfgeoff21Aug115554/QueueSystems/NormalOperation/Console/Batch2Tests/TargetApp -a sleep -l  -tp Basic2 -slave /users/geoff/texttesttmp/texttest.lsfgeoff21Aug115554/QueueSystems/NormalOperation/Console/Batch2Tests/texttesttmp/sleepgeoff21Aug115732 -servaddr 192.168.99.38:59435 -b local -x -xr /users/geoff/work/master/Testing/Automatic/texttest -xw /users/geoff/texttesttmp/texttest.lsfgeoff21Aug115554/QueueSystems/NormalOperation/Console/Batch2Tests/slave"'
-->OUT:Job <471042> is submitted to queue <normal>.
-->CLI:15596
+<-SRV:192.168.99.33:37987
+<-CMD:env 'TEXTTEST_CHECKOUT=' 'QUEUE_SYSTEM_RESOURCE=' 'TEXTTEST_CHECKOUT_NAME=' 'QUEUE_SYSTEM_SUBMIT_ARGS=$TARGET_QS_SUBMIT_ARG' 'PATH=/users/geoff/texttesttmp/texttest.lsfgeoff22Aug162114/QueueSystems/NormalOperation/Console/Batch2Tests/texttesttmp/sleepgeoff22Aug162122/Basic:$PATH' bsub -J Test-Basic-SLEEP -u nobody -o framework_tmp/slavelog -e framework_tmp/slaveerrs 'exec /bin/tcsh -c "exec /users/geoff/work/master/Testing/TextTest/texttest.py -d /users/geoff/texttesttmp/texttest.lsfgeoff22Aug162114/QueueSystems/NormalOperation/Console/Batch2Tests/TargetApp -a sleep -l  -tp Basic -slave /users/geoff/texttesttmp/texttest.lsfgeoff22Aug162114/QueueSystems/NormalOperation/Console/Batch2Tests/texttesttmp/sleepgeoff22Aug162122 -servaddr 192.168.99.33:37985 -b local -x -xr /users/geoff/work/master/Testing/Automatic/texttest -xw /users/geoff/texttesttmp/texttest.lsfgeoff22Aug162114/QueueSystems/NormalOperation/Console/Batch2Tests/slave"'
+->OUT:Job <471287> is submitted to queue <normal>.
+<-CMD:env 'TEXTTEST_CHECKOUT=' 'QUEUE_SYSTEM_RESOURCE=' 'TEXTTEST_CHECKOUT_NAME=' 'QUEUE_SYSTEM_SUBMIT_ARGS=$TARGET_QS_SUBMIT_ARG' 'PATH=/users/geoff/texttesttmp/texttest.lsfgeoff22Aug162114/QueueSystems/NormalOperation/Console/Batch2Tests/texttesttmp/sleepgeoff22Aug162122/Basic2:$PATH' bsub -J Test-Basic2-SLEEP -u nobody -o framework_tmp/slavelog -e framework_tmp/slaveerrs 'exec /bin/tcsh -c "exec /users/geoff/work/master/Testing/TextTest/texttest.py -d /users/geoff/texttesttmp/texttest.lsfgeoff22Aug162114/QueueSystems/NormalOperation/Console/Batch2Tests/TargetApp -a sleep -l  -tp Basic2 -slave /users/geoff/texttesttmp/texttest.lsfgeoff22Aug162114/QueueSystems/NormalOperation/Console/Batch2Tests/texttesttmp/sleepgeoff22Aug162122 -servaddr 192.168.99.33:37985 -b local -x -xr /users/geoff/work/master/Testing/Automatic/texttest -xw /users/geoff/texttesttmp/texttest.lsfgeoff22Aug162114/QueueSystems/NormalOperation/Console/Batch2Tests/slave"'
+->OUT:Job <471288> is submitted to queue <normal>.
+<-SRV:Completed submission of all tests
+->CLI:14594
 sleep:Basic
 (idefault
 Running
@@ -38,7 +39,7 @@ p14
 (lp15
 S'quaqtaq'
 asb.
-->CLI:15596
+->CLI:14594
 sleep:Basic
 (iperformance
 PerformanceTestComparison
@@ -85,7 +86,7 @@ FileAppender
 (dp19
 S'_FileAppender__FileAppender_filename'
 p20
-S'/users/geoff/texttesttmp/texttest.lsfgeoff18Aug165516/QueueSystems/NormalOperation/Console/Batch2Tests/testcomparison.texttest'
+S'/users/geoff/work/master/Testing/Automatic/Diagnostics/testcomparison.texttest'
 sS'_FileAppender__FileAppender_rotation'
 p21
 I0
@@ -102,7 +103,7 @@ S'slave server'
 p26
 sS'_Logger__Logger_timelaststep'
 p27
-F1155913015.1669409
+F1156254416.31812
 sS'_Logger__Logger_configfilename'
 p28
 S'/users/geoff/work/master/Testing/Automatic/texttest/log4py.conf'
@@ -115,7 +116,7 @@ S'FALSE'
 p32
 sS'_Logger__Logger_timeinit'
 p33
-F1155913015.1669409
+F1156254416.31812
 sS'_Logger__Logger_loglevel'
 p34
 I1
@@ -138,7 +139,7 @@ p40
 S'quaqtaq'
 asS'appAbsPath'
 p42
-S'/users/geoff/texttesttmp/texttest.lsfgeoff18Aug165516/QueueSystems/NormalOperation/Console/Batch2Tests/TargetApp'
+S'/users/geoff/texttesttmp/texttest.lsfgeoff22Aug154642/QueueSystems/NormalOperation/Console/Batch2Tests/TargetApp'
 p43
 sS'allResults'
 p44
@@ -149,10 +150,10 @@ p46
 (dp47
 S'stdFile'
 p48
-S'/users/geoff/texttesttmp/texttest.lsfgeoff18Aug165516/QueueSystems/NormalOperation/Console/Batch2Tests/TargetApp/Basic/errors.sleep'
+S'/users/geoff/texttesttmp/texttest.lsfgeoff22Aug154642/QueueSystems/NormalOperation/Console/Batch2Tests/TargetApp/Basic/errors.sleep'
 sS'tmpCmpFile'
 p49
-S'/users/geoff/texttesttmp/texttest.lsfgeoff18Aug165516/QueueSystems/NormalOperation/Console/Batch2Tests/texttesttmp/sleepgeoff18Aug165526/Basic/framework_tmp/errors.sleepcmp'
+S'/users/geoff/texttesttmp/texttest.lsfgeoff22Aug154642/QueueSystems/NormalOperation/Console/Batch2Tests/texttesttmp/sleepgeoff22Aug154644/Basic/framework_tmp/errors.sleepcmp'
 p50
 sS'severity'
 p51
@@ -177,7 +178,7 @@ sg17
 FileAppender
 (dp56
 g20
-S'/users/geoff/texttesttmp/texttest.lsfgeoff18Aug165516/QueueSystems/NormalOperation/Console/Batch2Tests/filecomparison.texttest'
+S'/users/geoff/work/master/Testing/Automatic/Diagnostics/filecomparison.texttest'
 sg21
 I0
 sbasg22
@@ -188,14 +189,14 @@ sg25
 S'run test'
 p57
 sg27
-F1155913015.1669409
+F1156254416.31812
 sg28
 g29
 sg30
 (lsg31
 g32
 sg33
-F1155913015.1669409
+F1156254416.31812
 sg34
 I1
 sg35
@@ -207,10 +208,10 @@ p58
 I0
 sS'tmpFile'
 p59
-S'/users/geoff/texttesttmp/texttest.lsfgeoff18Aug165516/QueueSystems/NormalOperation/Console/Batch2Tests/texttesttmp/sleepgeoff18Aug165526/Basic/errors.sleep'
+S'/users/geoff/texttesttmp/texttest.lsfgeoff22Aug154642/QueueSystems/NormalOperation/Console/Batch2Tests/texttesttmp/sleepgeoff22Aug154644/Basic/errors.sleep'
 sS'stdCmpFile'
 p60
-S'/users/geoff/texttesttmp/texttest.lsfgeoff18Aug165516/QueueSystems/NormalOperation/Console/Batch2Tests/texttesttmp/sleepgeoff18Aug165526/Basic/framework_tmp/errors.sleeporigcmp'
+S'/users/geoff/texttesttmp/texttest.lsfgeoff22Aug154642/QueueSystems/NormalOperation/Console/Batch2Tests/texttesttmp/sleepgeoff22Aug154644/Basic/framework_tmp/errors.sleeporigcmp'
 p61
 sS'stem'
 p62
@@ -220,10 +221,10 @@ FileComparison
 p63
 (dp64
 g48
-S'/users/geoff/texttesttmp/texttest.lsfgeoff18Aug165516/QueueSystems/NormalOperation/Console/Batch2Tests/TargetApp/Basic/output.sleep'
+S'/users/geoff/texttesttmp/texttest.lsfgeoff22Aug154642/QueueSystems/NormalOperation/Console/Batch2Tests/TargetApp/Basic/output.sleep'
 p65
 sg49
-S'/users/geoff/texttesttmp/texttest.lsfgeoff18Aug165516/QueueSystems/NormalOperation/Console/Batch2Tests/texttesttmp/sleepgeoff18Aug165526/Basic/output.sleep'
+S'/users/geoff/texttesttmp/texttest.lsfgeoff22Aug154642/QueueSystems/NormalOperation/Console/Batch2Tests/texttesttmp/sleepgeoff22Aug154644/Basic/output.sleep'
 p66
 sg51
 I1
@@ -239,7 +240,7 @@ sg62
 S'output'
 sbasS'appWriteDir'
 p67
-S'/users/geoff/texttesttmp/texttest.lsfgeoff18Aug165516/QueueSystems/NormalOperation/Console/Batch2Tests/texttesttmp/sleepgeoff18Aug165526'
+S'/users/geoff/texttesttmp/texttest.lsfgeoff22Aug154642/QueueSystems/NormalOperation/Console/Batch2Tests/texttesttmp/sleepgeoff22Aug154644'
 p68
 sS'correctResults'
 p69
@@ -254,7 +255,7 @@ p72
 NsS'newResults'
 p73
 (lsb.
-->CLI:15692
+->CLI:14645
 sleep:Basic2
 (idefault
 Running
@@ -289,7 +290,7 @@ p14
 (lp15
 S'quaqtaq'
 asb.
-->CLI:15692
+->CLI:14645
 sleep:Basic2
 (iperformance
 PerformanceTestComparison
@@ -336,7 +337,7 @@ FileAppender
 (dp19
 S'_FileAppender__FileAppender_filename'
 p20
-S'/users/geoff/texttesttmp/texttest.lsfgeoff18Aug165516/QueueSystems/NormalOperation/Console/Batch2Tests/testcomparison.texttest'
+S'/users/geoff/work/master/Testing/Automatic/Diagnostics/testcomparison.texttest'
 sS'_FileAppender__FileAppender_rotation'
 p21
 I0
@@ -353,7 +354,7 @@ S'slave server'
 p26
 sS'_Logger__Logger_timelaststep'
 p27
-F1155913173.232753
+F1156254430.3537569
 sS'_Logger__Logger_configfilename'
 p28
 S'/users/geoff/work/master/Testing/Automatic/texttest/log4py.conf'
@@ -366,7 +367,7 @@ S'FALSE'
 p32
 sS'_Logger__Logger_timeinit'
 p33
-F1155913173.232753
+F1156254430.3537569
 sS'_Logger__Logger_loglevel'
 p34
 I1
@@ -389,7 +390,7 @@ p40
 S'quaqtaq'
 asS'appAbsPath'
 p42
-S'/users/geoff/texttesttmp/texttest.lsfgeoff18Aug165516/QueueSystems/NormalOperation/Console/Batch2Tests/TargetApp'
+S'/users/geoff/texttesttmp/texttest.lsfgeoff22Aug154642/QueueSystems/NormalOperation/Console/Batch2Tests/TargetApp'
 p43
 sS'allResults'
 p44
@@ -402,7 +403,7 @@ S'stdFile'
 p48
 NsS'tmpCmpFile'
 p49
-S'/users/geoff/texttesttmp/texttest.lsfgeoff18Aug165516/QueueSystems/NormalOperation/Console/Batch2Tests/texttesttmp/sleepgeoff18Aug165526/Basic2/framework_tmp/errors.sleepcmp'
+S'/users/geoff/texttesttmp/texttest.lsfgeoff22Aug154642/QueueSystems/NormalOperation/Console/Batch2Tests/texttesttmp/sleepgeoff22Aug154644/Basic2/framework_tmp/errors.sleepcmp'
 sS'severity'
 p50
 I1
@@ -426,7 +427,7 @@ sg17
 FileAppender
 (dp55
 g20
-S'/users/geoff/texttesttmp/texttest.lsfgeoff18Aug165516/QueueSystems/NormalOperation/Console/Batch2Tests/filecomparison.texttest'
+S'/users/geoff/work/master/Testing/Automatic/Diagnostics/filecomparison.texttest'
 sg21
 I0
 sbasg22
@@ -437,14 +438,14 @@ sg25
 S'run test'
 p56
 sg27
-F1155913173.232753
+F1156254430.3537569
 sg28
 g29
 sg30
 (lsg31
 g32
 sg33
-F1155913173.232753
+F1156254430.3537569
 sg34
 I1
 sg35
@@ -456,7 +457,7 @@ p57
 I0
 sS'tmpFile'
 p58
-S'/users/geoff/texttesttmp/texttest.lsfgeoff18Aug165516/QueueSystems/NormalOperation/Console/Batch2Tests/texttesttmp/sleepgeoff18Aug165526/Basic2/errors.sleep'
+S'/users/geoff/texttesttmp/texttest.lsfgeoff22Aug154642/QueueSystems/NormalOperation/Console/Batch2Tests/texttesttmp/sleepgeoff22Aug154644/Basic2/errors.sleep'
 sS'stdCmpFile'
 p59
 NsS'stem'
@@ -468,7 +469,7 @@ p61
 (dp62
 g48
 Nsg49
-S'/users/geoff/texttesttmp/texttest.lsfgeoff18Aug165516/QueueSystems/NormalOperation/Console/Batch2Tests/texttesttmp/sleepgeoff18Aug165526/Basic2/output.sleep'
+S'/users/geoff/texttesttmp/texttest.lsfgeoff22Aug154642/QueueSystems/NormalOperation/Console/Batch2Tests/texttesttmp/sleepgeoff22Aug154644/Basic2/output.sleep'
 p63
 sg50
 I1
@@ -483,7 +484,7 @@ Nsg60
 S'output'
 sbasS'appWriteDir'
 p64
-S'/users/geoff/texttesttmp/texttest.lsfgeoff18Aug165516/QueueSystems/NormalOperation/Console/Batch2Tests/texttesttmp/sleepgeoff18Aug165526'
+S'/users/geoff/texttesttmp/texttest.lsfgeoff22Aug154642/QueueSystems/NormalOperation/Console/Batch2Tests/texttesttmp/sleepgeoff22Aug154644'
 p65
 sS'correctResults'
 p66

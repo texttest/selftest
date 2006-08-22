@@ -1,6 +1,7 @@
 <-SRV:192.168.99.31:53190
 <-CMD:env 'QUEUE_SYSTEM_RESOURCE=' 'USECASE_RECORD_SCRIPT=' 'QUEUE_SYSTEM_SUBMIT_ARGS=$TARGET_QS_SUBMIT_ARG' 'USECASE_RECORD_STDIN=' 'TEXTTEST_CHECKOUT=' 'USECASE_REPLAY_SCRIPT=' 'PATH=/users/geoff/texttesttmp/texttest.lsfgeoff21Aug115554/QueueSystems/ErrorHandling/Console/JobDisappearsAfterStart/texttesttmp/sleep.killinggeoff21Aug115740/Basic:$PATH' 'TEXTTEST_CHECKOUT_NAME=' bsub -J Test-Basic-SLEEP.killing -u nobody -o framework_tmp/slavelog -e framework_tmp/slaveerrs 'exec /bin/tcsh -c "exec /users/geoff/work/master/Testing/TextTest/texttest.py -d /users/geoff/texttesttmp/texttest.lsfgeoff21Aug115554/QueueSystems/ErrorHandling/Console/JobDisappearsAfterStart/TargetApp -a sleep -v killing -l  -tp Basic -slave /users/geoff/texttesttmp/texttest.lsfgeoff21Aug115554/QueueSystems/ErrorHandling/Console/JobDisappearsAfterStart/texttesttmp/sleep.killinggeoff21Aug115740 -servaddr 192.168.99.31:53188 -b short_local -x -xr /users/geoff/work/master/Testing/Automatic/texttest -xw /users/geoff/texttesttmp/texttest.lsfgeoff21Aug115554/QueueSystems/ErrorHandling/Console/JobDisappearsAfterStart/slave"'
 ->OUT:Job <1> is submitted to queue <fake_machine_queue>.
+<-SRV:Completed submission of all tests
 ->CLI:25852
 sleep.killing:Basic
 (idefault

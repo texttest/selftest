@@ -1,45 +1,10 @@
-<-SRV:192.168.99.64:39186
-<-CMD:env 'TEXTTEST_CHECKOUT=' 'QUEUE_SYSTEM_RESOURCE=osversion="RHEL4|SOL*|HP*"' 'TEXTTEST_CHECKOUT_NAME=' 'QUEUE_SYSTEM_SUBMIT_ARGS=' 'PATH=/users/geoff/texttesttmp/texttest.sgegeoff21Aug115554/QueueSystems/NormalOperation/Console/Batch2Tests/texttesttmp/sleepgeoff21Aug115718/Basic:$PATH' qsub -N Test-Basic-SLEEP -l 'osversion=RHEL4|SOL*|HP*' -w e -notify -m n -cwd -b y -V -o framework_tmp/slavelog -e framework_tmp/slaveerrs 'exec /bin/tcsh -c "exec /users/geoff/work/master/Testing/TextTest/texttest.py -d /users/geoff/texttesttmp/texttest.sgegeoff21Aug115554/QueueSystems/NormalOperation/Console/Batch2Tests/TargetApp -a sleep -l  -tp Basic -slave /users/geoff/texttesttmp/texttest.sgegeoff21Aug115554/QueueSystems/NormalOperation/Console/Batch2Tests/texttesttmp/sleepgeoff21Aug115718 -servaddr 192.168.99.64:39184 -b local -x -xr /users/geoff/work/master/Testing/Automatic/texttest -xw /users/geoff/texttesttmp/texttest.sgegeoff21Aug115554/QueueSystems/NormalOperation/Console/Batch2Tests/slave"'
-->OUT:Your job 4845782 ("Test-Basic-SLEEP") has been submitted
-<-CMD:env 'TEXTTEST_CHECKOUT=' 'QUEUE_SYSTEM_RESOURCE=osversion="RHEL4|SOL*|HP*"' 'TEXTTEST_CHECKOUT_NAME=' 'QUEUE_SYSTEM_SUBMIT_ARGS=' 'PATH=/users/geoff/texttesttmp/texttest.sgegeoff21Aug115554/QueueSystems/NormalOperation/Console/Batch2Tests/texttesttmp/sleepgeoff21Aug115718/Basic2:$PATH' qsub -N Test-Basic2-SLEEP -l 'osversion=RHEL4|SOL*|HP*' -w e -notify -m n -cwd -b y -V -o framework_tmp/slavelog -e framework_tmp/slaveerrs 'exec /bin/tcsh -c "exec /users/geoff/work/master/Testing/TextTest/texttest.py -d /users/geoff/texttesttmp/texttest.sgegeoff21Aug115554/QueueSystems/NormalOperation/Console/Batch2Tests/TargetApp -a sleep -l  -tp Basic2 -slave /users/geoff/texttesttmp/texttest.sgegeoff21Aug115554/QueueSystems/NormalOperation/Console/Batch2Tests/texttesttmp/sleepgeoff21Aug115718 -servaddr 192.168.99.64:39184 -b local -x -xr /users/geoff/work/master/Testing/Automatic/texttest -xw /users/geoff/texttesttmp/texttest.sgegeoff21Aug115554/QueueSystems/NormalOperation/Console/Batch2Tests/slave"'
-->OUT:Your job 4845785 ("Test-Basic2-SLEEP") has been submitted
-->CLI:15387
-sleep:Basic2
-(idefault
-Running
-p1
-(dp2
-S'category'
-p3
-S'running'
-p4
-sS'bkgProcess'
-p5
-NsS'freeText'
-p6
-S'Running on shelbyville'
-p7
-sS'started'
-p8
-I1
-sS'completed'
-p9
-I0
-sS'briefText'
-p10
-S'RUN (shelbyville)'
-p11
-sS'executionHosts'
-p12
-(lp13
-S'shelbyville'
-p14
-asS'lifecycleChange'
-p15
-S'start'
-p16
-sb.
-->CLI:14635
+<-SRV:192.168.99.40:37905
+<-CMD:env 'TEXTTEST_CHECKOUT=' 'QUEUE_SYSTEM_RESOURCE=osversion="RHEL4|SOL*|HP*"' 'TEXTTEST_CHECKOUT_NAME=' 'QUEUE_SYSTEM_SUBMIT_ARGS=' 'PATH=/users/geoff/texttesttmp/texttest.sgegeoff22Aug150529/QueueSystems/NormalOperation/Console/Batch2Tests/texttesttmp/sleepgeoff22Aug150534/Basic:$PATH' qsub -N Test-Basic-SLEEP -l 'osversion=RHEL4|SOL*|HP*' -w e -notify -m n -cwd -b y -V -o framework_tmp/slavelog -e framework_tmp/slaveerrs 'exec /bin/tcsh -c "exec /users/geoff/work/master/Testing/TextTest/texttest.py -d /users/geoff/texttesttmp/texttest.sgegeoff22Aug150529/QueueSystems/NormalOperation/Console/Batch2Tests/TargetApp -a sleep -l  -tp Basic -slave /users/geoff/texttesttmp/texttest.sgegeoff22Aug150529/QueueSystems/NormalOperation/Console/Batch2Tests/texttesttmp/sleepgeoff22Aug150534 -servaddr 192.168.99.40:37903 -b local -x -xr /users/geoff/work/master/Testing/Automatic/texttest -xw /users/geoff/texttesttmp/texttest.sgegeoff22Aug150529/QueueSystems/NormalOperation/Console/Batch2Tests/slave"'
+->OUT:Your job 4916798 ("Test-Basic-SLEEP") has been submitted
+<-CMD:env 'TEXTTEST_CHECKOUT=' 'QUEUE_SYSTEM_RESOURCE=osversion="RHEL4|SOL*|HP*"' 'TEXTTEST_CHECKOUT_NAME=' 'QUEUE_SYSTEM_SUBMIT_ARGS=' 'PATH=/users/geoff/texttesttmp/texttest.sgegeoff22Aug150529/QueueSystems/NormalOperation/Console/Batch2Tests/texttesttmp/sleepgeoff22Aug150534/Basic2:$PATH' qsub -N Test-Basic2-SLEEP -l 'osversion=RHEL4|SOL*|HP*' -w e -notify -m n -cwd -b y -V -o framework_tmp/slavelog -e framework_tmp/slaveerrs 'exec /bin/tcsh -c "exec /users/geoff/work/master/Testing/TextTest/texttest.py -d /users/geoff/texttesttmp/texttest.sgegeoff22Aug150529/QueueSystems/NormalOperation/Console/Batch2Tests/TargetApp -a sleep -l  -tp Basic2 -slave /users/geoff/texttesttmp/texttest.sgegeoff22Aug150529/QueueSystems/NormalOperation/Console/Batch2Tests/texttesttmp/sleepgeoff22Aug150534 -servaddr 192.168.99.40:37903 -b local -x -xr /users/geoff/work/master/Testing/Automatic/texttest -xw /users/geoff/texttesttmp/texttest.sgegeoff22Aug150529/QueueSystems/NormalOperation/Console/Batch2Tests/slave"'
+->OUT:Your job 4916799 ("Test-Basic2-SLEEP") has been submitted
+<-SRV:Completed submission of all tests
+->CLI:10362
 sleep:Basic
 (idefault
 Running
@@ -53,7 +18,7 @@ sS'bkgProcess'
 p5
 NsS'freeText'
 p6
-S'Running on woodville'
+S'Running on granville'
 p7
 sS'started'
 p8
@@ -63,19 +28,55 @@ p9
 I0
 sS'briefText'
 p10
-S'RUN (woodville)'
+S'RUN (granville)'
 p11
 sS'executionHosts'
 p12
 (lp13
-S'woodville'
+S'granville'
 p14
 asS'lifecycleChange'
 p15
 S'start'
 p16
 sb.
-->CLI:15387
+->CLI:19687
+sleep:Basic2
+(idefault
+Running
+p1
+(dp2
+S'category'
+p3
+S'running'
+p4
+sS'bkgProcess'
+p5
+NsS'freeText'
+p6
+S'Running on smithville'
+p7
+sS'started'
+p8
+I1
+sS'completed'
+p9
+I0
+sS'briefText'
+p10
+S'RUN (smithville)'
+p11
+sS'executionHosts'
+p12
+(lp13
+S'smithville'
+p14
+asS'lifecycleChange'
+p15
+S'start'
+p16
+sb.
+->CLI:19687
 sleep:Basic2
 (iperformance
 PerformanceTestComparison
@@ -135,7 +136,7 @@ p26
 (dp27
 S'_FileAppender__FileAppender_filename'
 p28
-S'/users/geoff/texttesttmp/texttest.sgegeoff17Aug133351/QueueSystems/Console/Batch2Tests/testcomparison.texttest'
+S'/users/geoff/texttesttmp/texttest.sgegeoff22Aug150031/QueueSystems/NormalOperation/Console/Batch2Tests/slave/testcomparison.texttest'
 p29
 sS'_FileAppender__FileAppender_rotation'
 p30
@@ -154,14 +155,14 @@ S'slave server'
 p36
 sS'_Logger__Logger_timelaststep'
 p37
-F1155814453.995178
+F1156251639.4922609
 sS'_Logger__Logger_useansicodes'
 p38
 S'FALSE'
 p39
 sS'_Logger__Logger_timeinit'
 p40
-F1155814453.995178
+F1156251639.4922609
 sS'_Logger__Logger_timeformat'
 p41
 S'%d.%m.%Y %H:%M:%S'
@@ -178,11 +179,11 @@ S''
 sS'executionHosts'
 p46
 (lp47
-S'shelbyville'
+S'smithville'
 p48
 asS'appAbsPath'
 p49
-S'/users/geoff/texttesttmp/texttest.sgegeoff17Aug133351/QueueSystems/Console/Batch2Tests/TargetApp'
+S'/users/geoff/texttesttmp/texttest.sgegeoff22Aug150031/QueueSystems/NormalOperation/Console/Batch2Tests/TargetApp'
 p50
 sS'allResults'
 p51
@@ -223,7 +224,7 @@ FileAppender
 p62
 (dp63
 g28
-S'/users/geoff/texttesttmp/texttest.sgegeoff17Aug133351/QueueSystems/Console/Batch2Tests/filecomparison.texttest'
+S'/users/geoff/texttesttmp/texttest.sgegeoff22Aug150031/QueueSystems/NormalOperation/Console/Batch2Tests/slave/filecomparison.texttest'
 p64
 sg30
 I0
@@ -235,11 +236,11 @@ sg35
 S'windows processes'
 p65
 sg37
-F1155814453.995178
+F1156251639.4922609
 sg38
 g39
 sg40
-F1155814453.995178
+F1156251639.4922609
 sg41
 g42
 sg43
@@ -249,7 +250,7 @@ p66
 I00
 sS'tmpFile'
 p67
-S'/users/geoff/texttesttmp/texttest.sgegeoff17Aug133351/QueueSystems/Console/Batch2Tests/texttesttmp/sleepgeoff17Aug133408/Basic2/errors.sleep'
+S'/users/geoff/texttesttmp/texttest.sgegeoff22Aug150031/QueueSystems/NormalOperation/Console/Batch2Tests/texttesttmp/sleepgeoff22Aug150033/Basic2/errors.sleep'
 p68
 sS'stdCmpFile'
 p69
@@ -259,7 +260,7 @@ S'errors'
 p71
 sS'tmpCmpFile'
 p72
-S'/users/geoff/texttesttmp/texttest.sgegeoff17Aug133351/QueueSystems/Console/Batch2Tests/texttesttmp/sleepgeoff17Aug133408/Basic2/framework_tmp/errors.sleepcmp'
+S'/users/geoff/texttesttmp/texttest.sgegeoff22Aug150031/QueueSystems/NormalOperation/Console/Batch2Tests/texttesttmp/sleepgeoff22Aug150033/Basic2/framework_tmp/errors.sleepcmp'
 p73
 sba(icomparetest
 FileComparison
@@ -273,7 +274,7 @@ g57
 sg66
 I00
 sg67
-S'/users/geoff/texttesttmp/texttest.sgegeoff17Aug133351/QueueSystems/Console/Batch2Tests/texttesttmp/sleepgeoff17Aug133408/Basic2/output.sleep'
+S'/users/geoff/texttesttmp/texttest.sgegeoff22Aug150031/QueueSystems/NormalOperation/Console/Batch2Tests/texttesttmp/sleepgeoff22Aug150033/Basic2/output.sleep'
 p76
 sg69
 Nsg70
@@ -283,7 +284,7 @@ sg72
 g76
 sbasS'appWriteDir'
 p78
-S'/users/geoff/texttesttmp/texttest.sgegeoff17Aug133351/QueueSystems/Console/Batch2Tests/texttesttmp/sleepgeoff17Aug133408'
+S'/users/geoff/texttesttmp/texttest.sgegeoff22Aug150031/QueueSystems/NormalOperation/Console/Batch2Tests/texttesttmp/sleepgeoff22Aug150033'
 p79
 sS'correctResults'
 p80
@@ -299,7 +300,7 @@ p84
 g53
 ag74
 asb.
-->CLI:14635
+->CLI:10362
 sleep:Basic
 (iperformance
 PerformanceTestComparison
@@ -358,7 +359,7 @@ p25
 (dp26
 S'_FileAppender__FileAppender_filename'
 p27
-S'/users/geoff/texttesttmp/texttest.sgegeoff17Aug133351/QueueSystems/Console/Batch2Tests/testcomparison.texttest'
+S'/users/geoff/texttesttmp/texttest.sgegeoff22Aug150031/QueueSystems/NormalOperation/Console/Batch2Tests/slave/testcomparison.texttest'
 p28
 sS'_FileAppender__FileAppender_rotation'
 p29
@@ -377,14 +378,14 @@ S'slave server'
 p35
 sS'_Logger__Logger_timelaststep'
 p36
-F1155814454.339952
+F1156251639.48806
 sS'_Logger__Logger_useansicodes'
 p37
 S'FALSE'
 p38
 sS'_Logger__Logger_timeinit'
 p39
-F1155814454.339952
+F1156251639.48806
 sS'_Logger__Logger_timeformat'
 p40
 S'%d.%m.%Y %H:%M:%S'
@@ -401,11 +402,11 @@ S''
 sS'executionHosts'
 p45
 (lp46
-S'woodville'
+S'granville'
 p47
 asS'appAbsPath'
 p48
-S'/users/geoff/texttesttmp/texttest.sgegeoff17Aug133351/QueueSystems/Console/Batch2Tests/TargetApp'
+S'/users/geoff/texttesttmp/texttest.sgegeoff22Aug150031/QueueSystems/NormalOperation/Console/Batch2Tests/TargetApp'
 p49
 sS'allResults'
 p50
@@ -416,7 +417,7 @@ p52
 (dp53
 S'stdFile'
 p54
-S'/users/geoff/texttesttmp/texttest.sgegeoff17Aug133351/QueueSystems/Console/Batch2Tests/TargetApp/Basic/errors.sleep'
+S'/users/geoff/texttesttmp/texttest.sgegeoff22Aug150031/QueueSystems/NormalOperation/Console/Batch2Tests/TargetApp/Basic/errors.sleep'
 p55
 sS'severity'
 p56
@@ -448,7 +449,7 @@ FileAppender
 p62
 (dp63
 g27
-S'/users/geoff/texttesttmp/texttest.sgegeoff17Aug133351/QueueSystems/Console/Batch2Tests/filecomparison.texttest'
+S'/users/geoff/texttesttmp/texttest.sgegeoff22Aug150031/QueueSystems/NormalOperation/Console/Batch2Tests/slave/filecomparison.texttest'
 p64
 sg29
 I0
@@ -460,11 +461,11 @@ sg34
 S'windows processes'
 p65
 sg36
-F1155814454.339952
+F1156251639.48806
 sg37
 g38
 sg39
-F1155814454.339952
+F1156251639.48806
 sg40
 g41
 sg42
@@ -474,11 +475,11 @@ p66
 I00
 sS'tmpFile'
 p67
-S'/users/geoff/texttesttmp/texttest.sgegeoff17Aug133351/QueueSystems/Console/Batch2Tests/texttesttmp/sleepgeoff17Aug133408/Basic/errors.sleep'
+S'/users/geoff/texttesttmp/texttest.sgegeoff22Aug150031/QueueSystems/NormalOperation/Console/Batch2Tests/texttesttmp/sleepgeoff22Aug150033/Basic/errors.sleep'
 p68
 sS'stdCmpFile'
 p69
-S'/users/geoff/texttesttmp/texttest.sgegeoff17Aug133351/QueueSystems/Console/Batch2Tests/texttesttmp/sleepgeoff17Aug133408/Basic/framework_tmp/errors.sleeporigcmp'
+S'/users/geoff/texttesttmp/texttest.sgegeoff22Aug150031/QueueSystems/NormalOperation/Console/Batch2Tests/texttesttmp/sleepgeoff22Aug150033/Basic/framework_tmp/errors.sleeporigcmp'
 p70
 sS'stem'
 p71
@@ -486,14 +487,14 @@ S'errors'
 p72
 sS'tmpCmpFile'
 p73
-S'/users/geoff/texttesttmp/texttest.sgegeoff17Aug133351/QueueSystems/Console/Batch2Tests/texttesttmp/sleepgeoff17Aug133408/Basic/framework_tmp/errors.sleepcmp'
+S'/users/geoff/texttesttmp/texttest.sgegeoff22Aug150031/QueueSystems/NormalOperation/Console/Batch2Tests/texttesttmp/sleepgeoff22Aug150033/Basic/framework_tmp/errors.sleepcmp'
 p74
 sba(icomparetest
 FileComparison
 p75
 (dp76
 g54
-S'/users/geoff/texttesttmp/texttest.sgegeoff17Aug133351/QueueSystems/Console/Batch2Tests/TargetApp/Basic/output.sleep'
+S'/users/geoff/texttesttmp/texttest.sgegeoff22Aug150031/QueueSystems/NormalOperation/Console/Batch2Tests/TargetApp/Basic/output.sleep'
 p77
 sg56
 I1
@@ -502,7 +503,7 @@ g57
 sg66
 I00
 sg67
-S'/users/geoff/texttesttmp/texttest.sgegeoff17Aug133351/QueueSystems/Console/Batch2Tests/texttesttmp/sleepgeoff17Aug133408/Basic/output.sleep'
+S'/users/geoff/texttesttmp/texttest.sgegeoff22Aug150031/QueueSystems/NormalOperation/Console/Batch2Tests/texttesttmp/sleepgeoff22Aug150033/Basic/output.sleep'
 p78
 sg69
 g77
@@ -513,7 +514,7 @@ sg73
 g78
 sbasS'appWriteDir'
 p80
-S'/users/geoff/texttesttmp/texttest.sgegeoff17Aug133351/QueueSystems/Console/Batch2Tests/texttesttmp/sleepgeoff17Aug133408'
+S'/users/geoff/texttesttmp/texttest.sgegeoff22Aug150031/QueueSystems/NormalOperation/Console/Batch2Tests/texttesttmp/sleepgeoff22Aug150033'
 p81
 sS'correctResults'
 p82
