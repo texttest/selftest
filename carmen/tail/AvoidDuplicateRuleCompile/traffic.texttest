@@ -1,0 +1,75 @@
+<-SRV:192.168.99.27:56503
+<-CMD:env 'USECASE_RECORD_STDIN=' 'QUEUE_SYSTEM_RESOURCE=osversion=RHEL4,model=Opteron*' 'DIAGNOSTICS_OUT=/users/geoff/texttesttmp/texttest.carmengeoff25Aug175736/carmen/tail/AvoidDuplicateRuleCompile/texttesttmp/tas.localgeoff25Aug175822/BasicUser/SubTestSuite/restDest_test' 'CARMSYS=/carm/proj/texttest/selftest_data/tail_CARMSYS' 'CARMTMP=/carm/proj/texttest/selftest_data/tail_CARMSYS/tail_tmp' 'USECASE_RECORD_SCRIPT=' 'CARMUSR=/carm/proj/texttest/selftest_data/CARMUSRs/tas_test_suite_user/' 'TEXTTEST_CHECKOUT=/carm/proj/texttest/selftest_data' 'USECASE_REPLAY_SCRIPT=' 'CRS_ROOT=etab:$(CRS_ROOT_DIR)' 'CRS_ROOT_DIR=/carm/proj/texttest/selftest_data/tail_CARMSYS/data/config/CarmResources/Root.etab' 'PATH=/users/geoff/texttesttmp/texttest.carmengeoff25Aug175736/carmen/tail/AvoidDuplicateRuleCompile/texttesttmp/tas.localgeoff25Aug175822/BasicUser/SubTestSuite/restDest_test:$PATH:/carm/proj/texttest/selftest_data/tail_CARMSYS/bin' '_AUTOTEST__LOCAL_COMPILE_=1' 'TEXTTEST_CHECKOUT_NAME=selftest_data' qsub -N Rules-amtail.BasicUser-afc -l 'osversion=RHEL4,model=Opteron*,carmrunarch=*i386_linux*,ttrulesmaster=1,short' -w e -notify -m n -cwd -b y -V -o framework_tmp/slavelog -e framework_tmp/slaveerrs 'exec /bin/tcsh -c "exec /users/geoff/work/master/Testing/TextTest/texttest.py -d /users/geoff/texttesttmp/texttest.carmengeoff25Aug175736/carmen/tail/AvoidDuplicateRuleCompile/TargetApp -a tas -v local -l -c /carm/proj/texttest/selftest_data -tp BasicUser/SubTestSuite/restDest_test -raveslave /users/geoff/texttesttmp/texttest.carmengeoff25Aug175736/carmen/tail/AvoidDuplicateRuleCompile/texttesttmp/tas.localgeoff25Aug175822 -servaddr 192.168.99.27:56501 -x -xr /users/geoff/work/master/Testing/Automatic/texttest -xw /users/geoff/texttesttmp/texttest.carmengeoff25Aug175736/carmen/tail/AvoidDuplicateRuleCompile/raveslave"'
+->OUT:Your job 4985379 ("Rules-amtail.BasicUser-afc") has been submitted
+<-SRV:Completed submission of all rule compilations
+->CLI:4382
+tas.local:BasicUser/SubTestSuite/restDest_test
+(iravebased
+RunningRuleCompilation
+p1
+(dp2
+S'category'
+p3
+S'running_rulecompile'
+p4
+sS'lifecycleChange'
+p5
+S'start ruleset compilation'
+p6
+sS'freeText'
+p7
+S'Compiling ruleset amtail on roosterville'
+p8
+sS'started'
+p9
+I0
+sS'rulesetName'
+p10
+S'amtail'
+p11
+sS'completed'
+p12
+I0
+sS'briefText'
+p13
+S'RULES (roosterville)'
+p14
+sS'executionHosts'
+p15
+(lp16
+sS'testCompiling'
+p17
+Nsb.
+<-CMD:env 'CARMSYS=/carm/proj/texttest/selftest_data/tail_CARMSYS' 'QUEUE_SYSTEM_RESOURCE=osversion=RHEL4,model=Opteron*' 'DIAGNOSTICS_OUT=/users/geoff/texttesttmp/texttest.carmengeoff25Aug175736/carmen/tail/AvoidDuplicateRuleCompile/texttesttmp/tas.localgeoff25Aug175822/BasicUser/SubTestSuite/restDest_test' 'CARMTMP=/carm/proj/texttest/selftest_data/tail_CARMSYS/tail_tmp' 'CARMUSR=/carm/proj/texttest/selftest_data/CARMUSRs/tas_test_suite_user/' 'TEXTTEST_CHECKOUT=/carm/proj/texttest/selftest_data' 'CRS_ROOT=etab:$(CRS_ROOT_DIR)' 'CRS_ROOT_DIR=/carm/proj/texttest/selftest_data/tail_CARMSYS/data/config/CarmResources/Root.etab' 'PATH=/users/geoff/texttesttmp/texttest.carmengeoff25Aug175736/carmen/tail/AvoidDuplicateRuleCompile/texttesttmp/tas.localgeoff25Aug175822/BasicUser/SubTestSuite/restDest_test:$PATH:/carm/proj/texttest/selftest_data/tail_CARMSYS/bin' '_AUTOTEST__LOCAL_COMPILE_=1' 'TEXTTEST_CHECKOUT_NAME=selftest_data' qdel 4985379
+->OUT:geoff has registered the job 4985379 for deletion
+->CLI:4382
+tas.local:BasicUser/SubTestSuite/restDest_test
+(iravebased
+RuleBuildFailed
+p1
+(dp2
+S'category'
+p3
+S'unrunnable'
+p4
+sS'freeText'
+p5
+S'Ruleset compilation killed explicitly at 16:59'
+p6
+sS'started'
+p7
+I0
+sS'completed'
+p8
+I1
+sS'briefText'
+p9
+S'Ruleset build killed at 16:59'
+p10
+sS'executionHosts'
+p11
+(lp12
+sS'lifecycleChange'
+p13
+S''
+sb.
