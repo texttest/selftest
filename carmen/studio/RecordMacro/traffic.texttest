@@ -1,0 +1,21 @@
+<-CMD:env 'USECASE_RECORD_STDIN=/users/geoff/texttesttmp/texttest.carmengeoff25Aug175048/carmen/studio/RecordMacro/texttesttmp/gstgeoff25Aug175055/lh_v12/data_unchanged_copy/input.gst' 'QUEUE_SYSTEM_RESOURCE=osversion=RHEL4' 'CARMEN_EXEC_DIR=.' 'CARMTMP=/carm/proj/texttest/selftest_data/CARMTMPs/lh_v12_tmp' 'USECASE_RECORD_SCRIPT=/users/geoff/texttesttmp/texttest.carmengeoff25Aug175048/carmen/studio/RecordMacro/texttesttmp/gstgeoff25Aug175055/lh_v12/data_unchanged_copy/usecase.gst' 'CARMUSR=/carm/proj/texttest/selftest_data/CARMUSRs/lh_v12_user' 'TEXTTEST_CHECKOUT=/carm/proj/texttest/selftest_data' 'USECASE_REPLAY_SCRIPT=/users/geoff/work/master/Testing/Automatic/texttest/carmen/studio/RecordMacro/target_record_usecase.texttest' 'CRS_ROOT=etab:/carm/proj/texttest/selftest_data/studio_CARMSYS/data/config/CarmResources/Root.etab' 'PATH=/users/geoff/texttesttmp/texttest.carmengeoff25Aug175048/carmen/studio/RecordMacro/texttesttmp/gstgeoff25Aug175055/lh_v12/data_unchanged_copy:$PATH:/carm/proj/texttest/selftest_data/studio_CARMSYS/bin' 'CARMSYS=/carm/proj/texttest/selftest_data/studio_CARMSYS' 'TEXTTEST_CHECKOUT_NAME=selftest_data' 'USER=nightjob' crc_compile apc gpc -optimize -archs i386_linux /carm/proj/texttest/selftest_data/CARMUSRs/lh_v12_user/crc/source/LBA_MTV
+->OUT:set SITE to: carmen
+Build Rave program LBA_MTV started on abbeville, 25 August 17:31
+Generating code... done.
+Submitting jobs for apc on i386_linux - 1 files out of 56 needs to be compiled
+Submitting jobs for gpc on i386_linux - 1 files out of 141 needs to be compiled
+Compiling... done.
+Installing apc on architecture i386_linux... done.
+Installing gpc on architecture i386_linux... done.
+Build Rave program finished at 25 August 17:32
+Cleaning up... done.
+->ERR:
+*** Trouble report (0 errors, 1 warning):
+
+"report/l_hotel", line 485.27:
+     483: %first_dated_arrival_above_1% =
+     484:        round_down (min(above(1), min(leg_set, %LOCAL_ARRIVAL_TIME_...
+     485:                    where (%rest_period_relevant_hotel%),
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ WARNING: Dependency mismatch in where (_builtin.const/_topmodule.leg)
+
