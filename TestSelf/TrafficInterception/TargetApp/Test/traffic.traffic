@@ -1,6 +1,10 @@
 <-CMD:firstcall.py -a -b -c 'hello | goodbye'
 ->OUT:firstcall.py called with 5 arguments
-Fri Aug 11 15:09:46 2006
-<-CMD:secondcall.py -c -x
-->OUT:5847
+Fri Aug 25 11:26:43 2006
+<-CMD:firstcall.py -a -b -c 'hello | goodbye'
+->OUT:firstcall.py called with 5 arguments
+Fri Aug 25 11:26:43 2006
+<-CMD:env 'MY_ENV_VAR=value' secondcall.py -c -x
+->OUT:24768
 ->ERR:secondcall.py called with ['-c', '-x'] as arguments
+MY_ENV_VAR = 'value'

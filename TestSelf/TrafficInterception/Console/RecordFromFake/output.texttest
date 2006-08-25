@@ -1,0 +1,41 @@
+TextTest will write diagnostics in /users/geoff/texttesttmp/texttestgeoff25Aug113122/TestSelf/TrafficInterception/Console/RecordFromFake based on file at /users/geoff/work/master/Testing/Automatic/texttest/log4py.conf
+Using Application TRAFFIC
+Running TRAFFIC test-suite TargetApp
+  Running TRAFFIC test-case Test
+Comparing differences for TRAFFIC test-suite TargetApp
+  Comparing differences for TRAFFIC test-case Test (on errors.traffic,output.traffic,traffic.traffic)
+  TRAFFIC test-case Test FAILED : differences in errors,output,traffic
+  View details(v), Save Version rectraffic(1), Save(s) or continue(any other key)?
+------------------ Differences in errors --------------------
+1,2d0
+< secondcall.py called with ['-c', '-x'] as arguments
+< MY_ENV_VAR = 'value'
+------------------ Differences in output --------------------
+1,5c1,3
+< firstcall.py called with 5 arguments
+< Fri Aug 25 11:26:43 2006
+< firstcall.py called with 5 arguments
+< Fri Aug 25 11:26:43 2006
+< 24768
+---
+> Called fake firstcall.py
+> Called fake firstcall.py
+> Called fake secondcall.py
+------------------ Differences in traffic --------------------
+2,3c2
+< ->OUT:firstcall.py called with 5 arguments
+< Fri Aug 25 11:26:43 2006
+---
+> ->OUT:Called fake firstcall.py
+5,6c4
+< ->OUT:firstcall.py called with 5 arguments
+< Fri Aug 25 11:26:43 2006
+---
+> ->OUT:Called fake firstcall.py
+8,10c6
+< ->OUT:24768
+< ->ERR:secondcall.py called with ['-c', '-x'] as arguments
+< MY_ENV_VAR = 'value'
+---
+> ->OUT:Called fake secondcall.py
+  Save Version rectraffic(1), Save(s) or continue(any other key)?
