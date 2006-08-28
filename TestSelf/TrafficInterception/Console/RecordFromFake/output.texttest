@@ -1,4 +1,4 @@
-TextTest will write diagnostics in /users/geoff/texttesttmp/texttestgeoff25Aug113122/TestSelf/TrafficInterception/Console/RecordFromFake based on file at /users/geoff/work/master/Testing/Automatic/texttest/log4py.conf
+TextTest will write diagnostics in /users/geoff/texttesttmp/texttestgeoff28Aug122659/TestSelf/TrafficInterception/Console/RecordFromFake based on file at /users/geoff/work/master/Testing/Automatic/texttest/log4py.conf
 Using Application TRAFFIC
 Running TRAFFIC test-suite TargetApp
   Running TRAFFIC test-case Test
@@ -11,29 +11,33 @@ Comparing differences for TRAFFIC test-suite TargetApp
 < secondcall.py called with ['-c', '-x'] as arguments
 < MY_ENV_VAR = 'value'
 ------------------ Differences in output --------------------
-1,5c1,3
+2,7c2,5
 < firstcall.py called with 5 arguments
-< Fri Aug 25 11:26:43 2006
+< Mon Aug 28 12:06:11 2006
+< firstcall exited with status 1
 < firstcall.py called with 5 arguments
-< Fri Aug 25 11:26:43 2006
-< 24768
+< Mon Aug 28 12:06:11 2006
+< 5463
 ---
 > Called fake firstcall.py
+> firstcall exited with status 0
 > Called fake firstcall.py
 > Called fake secondcall.py
 ------------------ Differences in traffic --------------------
-2,3c2
+2,4c2
 < ->OUT:firstcall.py called with 5 arguments
-< Fri Aug 25 11:26:43 2006
+< Mon Aug 28 12:06:11 2006
+< ->EXC:256
 ---
 > ->OUT:Called fake firstcall.py
-5,6c4
+6,8c4
 < ->OUT:firstcall.py called with 5 arguments
-< Fri Aug 25 11:26:43 2006
+< Mon Aug 28 12:06:11 2006
+< ->EXC:256
 ---
 > ->OUT:Called fake firstcall.py
-8,10c6
-< ->OUT:24768
+10,12c6
+< ->OUT:5463
 < ->ERR:secondcall.py called with ['-c', '-x'] as arguments
 < MY_ENV_VAR = 'value'
 ---
