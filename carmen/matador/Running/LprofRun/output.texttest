@@ -1,41 +1,10 @@
-TextTest will write diagnostics in /users/geoff/texttesttmp/texttest.carmengeoff31May152659/carmen/matador/Running/LprofRun based on file at /users/geoff/work/master/Testing/Automatic/texttest/log4py.conf
+TextTest will write diagnostics in /users/geoff/texttesttmp/texttest.carmengeoff28Aug103649/carmen/matador/Running/LprofRun based on file at /users/geoff/work/master/Testing/Automatic/texttest/log4py.conf
 Using Application Matador, checkout /carm/proj/texttest/selftest_data
 Note: Running with Diagnostics on, so performance checking is disabled!
-Submitting Rule Builds for Matador test-suite TargetApp to SGE queues
-  Submitting Rule Builds for Matador test-suite ArtificialUser to SGE queues
-Submitting Matador test-suite TargetApp to SGE queues
-  Submitting Matador test-suite ArtificialUser to SGE queues
-    Submitting Matador test-case generate_in_subperiod to SGE queue short, requesting osversion=RHEL4,model=Opteron*,carmrunarch="*i386_linux*",carmrunmaster=1
-    Evaluating Matador test-case generate_in_subperiod (on catalogue.cas,errors.cas,lprof.cas,output.cas,solution.cas,assignedposition.cas,crewmembers.cas,inputlegs.cas,inputrosters.cas,inputtrips.cas,parameters.cas)
-    Matador test-case generate_in_subperiod FAILED on merrillville : new results in lprof,assignedposition, differences in catalogue,parameters
-    View details(v), Save(s) or continue(any other key)?
------------------- Differences in catalogue --------------------
-28a29,30
-> ----gprof.output
-> ----prof.2060
------------------- Differences in parameters --------------------
-8c8
-<  Parameter break_cost_unit left as default 1
----
->  Parameter break_cost_unit left as default -1
------------------- New result in lprof --------------------
-Flat profile, 0 samples in total
-
-
-Call graph
-
------------------- New result in assignedposition --------------------
-map_crew_assigned_position : crew_assigned_position NOT trip-dependent
-Regular position For all trips, crew ARKE 85868 in pos P
-Regular position For all trips, crew ASKELAND 85503 in pos P
-Regular position For all trips, crew BAASTRUP 85544 in pos P
-Regular position For all trips, crew BAKKEN 86193 in pos C
-Regular position For all trips, crew BENBERG 86122 in pos C
-Regular position For all trips, crew BENTZEN 86189 in pos C
-Regular position For all trips, crew BERG 17613 in pos C
-Regular position For all trips, crew BERTHELS 85111 in pos C
-Regular position For all trips, crew BLICHFEL 85367 in pos P
-Regular position For all trips, crew BOJSEN 85120 in pos C
-Regular position For all trips, crew BOSERUP 85215 in pos C
-Regular position For all trips, crew LOHSE 85119 in pos C
-    Save(s) or continue(any other key)?
+Running Matador test-suite TargetApp
+  Running Matador test-suite ArtificialUser
+    Running Matador test-case generate_in_subperiod, profiling process 'matador'
+Comparing differences for Matador test-suite TargetApp
+  Comparing differences for Matador test-suite ArtificialUser
+    Comparing differences for Matador test-case generate_in_subperiod (on catalogue.cas,errors.cas,lprof.cas,output.cas,solution.cas,assignedposition.cas,crewmembers.cas,inputlegs.cas,inputrosters.cas,inputtrips.cas,parameters.cas)
+    Matador test-case generate_in_subperiod FAILED on abbeville : new results in lprof,assignedposition, differences in catalogue,parameters
