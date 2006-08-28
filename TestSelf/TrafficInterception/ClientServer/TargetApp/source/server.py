@@ -18,8 +18,9 @@ class MyRequestHandler(StreamRequestHandler):
 server = TCPServer((gethostname(), 0), MyRequestHandler)
 host, port = server.socket.getsockname()
 address = host + ":" + str(port)
-sendServerState(address)
-print "Started string-length server at", address
+message = "Started string-length server at " + address
+sendServerState(message)
+print message
 sys.stdout.flush()
 
 gotExit = False

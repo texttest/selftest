@@ -1,5 +1,5 @@
-<-SRV:192.168.99.116:35040
-<-CMD:env 'PATH=/users/geoff/texttesttmp/texttest.lsfgeoff28Aug101813/QueueSystems/Limits/Master/NightjobTerminate/texttesttmp/sleep.killinggeoff28Aug101857/Basic:$PATH' 'USECASE_RECORD_SCRIPT=' 'USECASE_RECORD_STDIN=' 'USECASE_REPLAY_SCRIPT=' bsub -J Test-Basic-SLEEP.killing -u nobody -o framework_tmp/slavelog -e framework_tmp/slaveerrs 'exec /bin/tcsh -c "exec /users/geoff/work/master/Testing/TextTest/texttest.py -d /users/geoff/texttesttmp/texttest.lsfgeoff28Aug101813/QueueSystems/Limits/Master/NightjobTerminate/TargetApp -a sleep -v killing -l  -tp Basic -slave /users/geoff/texttesttmp/texttest.lsfgeoff28Aug101813/QueueSystems/Limits/Master/NightjobTerminate/texttesttmp/sleep.killinggeoff28Aug101857 -servaddr 192.168.99.116:35035 -b short_local -x -xr /users/geoff/work/master/Testing/Automatic/texttest -xw /users/geoff/texttesttmp/texttest.lsfgeoff28Aug101813/QueueSystems/Limits/Master/NightjobTerminate/slave"'
+<-SRV:TextTest slave server started on 192.168.99.28:33951
+<-CMD:env 'PATH=/users/geoff/texttesttmp/texttest.lsfgeoff28Aug171505/QueueSystems/Limits/Master/NightjobTerminate/texttesttmp/sleep.killinggeoff28Aug171528/Basic:$PATH' 'USECASE_RECORD_SCRIPT=' 'USECASE_RECORD_STDIN=' 'USECASE_REPLAY_SCRIPT=' bsub -J Test-Basic-SLEEP.killing -u nobody -o framework_tmp/slavelog -e framework_tmp/slaveerrs 'exec /bin/tcsh -c "exec /users/geoff/work/master/Testing/TextTest/texttest.py -d /users/geoff/texttesttmp/texttest.lsfgeoff28Aug171505/QueueSystems/Limits/Master/NightjobTerminate/TargetApp -a sleep -v killing -l  -tp Basic -slave /users/geoff/texttesttmp/texttest.lsfgeoff28Aug171505/QueueSystems/Limits/Master/NightjobTerminate/texttesttmp/sleep.killinggeoff28Aug171528 -servaddr 192.168.99.28:33949 -b short_local -x -xr /users/geoff/work/master/Testing/Automatic/texttest -xw /users/geoff/texttesttmp/texttest.lsfgeoff28Aug171505/QueueSystems/Limits/Master/NightjobTerminate/slave"'
 ->OUT:Job <471285> is submitted to queue <normal>.
 <-SRV:Completed submission of all tests
 ->CLI:11159
@@ -38,7 +38,7 @@ p15
 S'start'
 p16
 sb.
-<-CMD:env 'PATH=/users/geoff/texttesttmp/texttest.lsfgeoff28Aug101813/QueueSystems/Limits/Master/NightjobTerminate/texttesttmp/sleep.killinggeoff28Aug101857/Basic:$PATH' bkill -s USR1 471285
+<-CMD:env 'PATH=/users/geoff/texttesttmp/texttest.lsfgeoff28Aug171505/QueueSystems/Limits/Master/NightjobTerminate/texttesttmp/sleep.killinggeoff28Aug171528/Basic:$PATH' bkill -s USR1 471285
 ->OUT:Job <471285> is being signaled
 ->CLI:11159
 sleep.killing:Basic

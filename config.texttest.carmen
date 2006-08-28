@@ -52,6 +52,9 @@ output:Submitting Picador
 output:Trying to use ruleset
 dynamic_gui_log:{CLEAR LIST}
 dynamic_gui_log:Waiting for application event{->}Expected application event
+traffic:qsub.*-slave{LINES 2}
+# to the end of the file after qdel, they can come in any order here...
+traffic:qdel{LINES 10000}
 [end]
 
 # We only do two passes, so we can't actually find the base_version queuesystem unless
