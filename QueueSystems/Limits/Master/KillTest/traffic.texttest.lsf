@@ -1,5 +1,5 @@
-<-SRV:192.168.99.61:49468
-<-CMD:env 'PATH=/users/geoff/texttesttmp/texttest.lsfgeoff26Aug130608/QueueSystems/Limits/Master/KillTest/texttesttmp/sleep.killing2geoff26Aug130816/Basic:$PATH' 'QUEUE_SYSTEM_RESOURCE=' 'QUEUE_SYSTEM_SUBMIT_ARGS=$TARGET_QS_SUBMIT_ARG' 'TEXTTEST_CHECKOUT=' 'TEXTTEST_CHECKOUT_NAME=' 'USECASE_RECORD_SCRIPT=' 'USECASE_RECORD_STDIN=' 'USECASE_REPLAY_SCRIPT=' bsub -J Test-Basic-SLEEP.killing2 -u nobody -o framework_tmp/slavelog -e framework_tmp/slaveerrs 'exec /bin/tcsh -c "exec /users/geoff/work/master/Testing/TextTest/texttest.py -d /users/geoff/texttesttmp/texttest.lsfgeoff26Aug130608/QueueSystems/Limits/Master/KillTest/TargetApp -a sleep -v killing2 -l  -tp Basic -slave /users/geoff/texttesttmp/texttest.lsfgeoff26Aug130608/QueueSystems/Limits/Master/KillTest/texttesttmp/sleep.killing2geoff26Aug130816 -servaddr 192.168.99.61:49466 -x -xr /users/geoff/work/master/Testing/Automatic/texttest -xw /users/geoff/texttesttmp/texttest.lsfgeoff26Aug130608/QueueSystems/Limits/Master/KillTest/slave"'
+<-SRV:192.168.99.73:56328
+<-CMD:env 'PATH=/users/geoff/texttesttmp/texttest.lsfgeoff28Aug101813/QueueSystems/Limits/Master/KillTest/texttesttmp/sleep.killing2geoff28Aug101900/Basic:$PATH' 'USECASE_RECORD_SCRIPT=' 'USECASE_RECORD_STDIN=' 'USECASE_REPLAY_SCRIPT=' bsub -J Test-Basic-SLEEP.killing2 -u nobody -o framework_tmp/slavelog -e framework_tmp/slaveerrs 'exec /bin/tcsh -c "exec /users/geoff/work/master/Testing/TextTest/texttest.py -d /users/geoff/texttesttmp/texttest.lsfgeoff28Aug101813/QueueSystems/Limits/Master/KillTest/TargetApp -a sleep -v killing2 -l  -tp Basic -slave /users/geoff/texttesttmp/texttest.lsfgeoff28Aug101813/QueueSystems/Limits/Master/KillTest/texttesttmp/sleep.killing2geoff28Aug101900 -servaddr 192.168.99.73:56261 -x -xr /users/geoff/work/master/Testing/Automatic/texttest -xw /users/geoff/texttesttmp/texttest.lsfgeoff28Aug101813/QueueSystems/Limits/Master/KillTest/slave"'
 ->OUT:Job <471297> is submitted to queue <normal>.
 <-SRV:Completed submission of all tests
 ->CLI:20759
@@ -38,7 +38,7 @@ p15
 S'start'
 p16
 sb.
-<-CMD:env 'PATH=/users/geoff/texttesttmp/texttest.lsfgeoff26Aug130608/QueueSystems/Limits/Master/KillTest/texttesttmp/sleep.killing2geoff26Aug130816/Basic:$PATH' 'QUEUE_SYSTEM_RESOURCE=' 'QUEUE_SYSTEM_SUBMIT_ARGS=$TARGET_QS_SUBMIT_ARG' 'TEXTTEST_CHECKOUT=' 'TEXTTEST_CHECKOUT_NAME=' bkill -s USR1 471297
+<-CMD:env 'PATH=/users/geoff/texttesttmp/texttest.lsfgeoff28Aug101813/QueueSystems/Limits/Master/KillTest/texttesttmp/sleep.killing2geoff28Aug101900/Basic:$PATH' bkill -s USR1 471297
 ->OUT:Job <471297> is being signaled
 ->CLI:20759
 sleep.killing2:Basic

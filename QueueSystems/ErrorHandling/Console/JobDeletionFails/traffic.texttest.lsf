@@ -1,5 +1,5 @@
-<-SRV:192.168.99.115:48303
-<-CMD:env 'PATH=/users/geoff/texttesttmp/texttest.lsfgeoff26Aug130608/QueueSystems/ErrorHandling/Console/JobDeletionFails/texttesttmp/sleep.killinggeoff26Aug130826/Basic:$PATH' 'QUEUE_SYSTEM_RESOURCE=' 'QUEUE_SYSTEM_SUBMIT_ARGS=$TARGET_QS_SUBMIT_ARG' 'TEXTTEST_CHECKOUT=' 'TEXTTEST_CHECKOUT_NAME=' 'USECASE_RECORD_SCRIPT=' 'USECASE_RECORD_STDIN=' 'USECASE_REPLAY_SCRIPT=' bsub -J Test-Basic-SLEEP.killing -u nobody -o framework_tmp/slavelog -e framework_tmp/slaveerrs 'exec /bin/tcsh -c "exec /users/geoff/work/master/Testing/TextTest/texttest.py -d /users/geoff/texttesttmp/texttest.lsfgeoff26Aug130608/QueueSystems/ErrorHandling/Console/JobDeletionFails/TargetApp -a sleep -v killing -l  -tp Basic -slave /users/geoff/texttesttmp/texttest.lsfgeoff26Aug130608/QueueSystems/ErrorHandling/Console/JobDeletionFails/texttesttmp/sleep.killinggeoff26Aug130826 -servaddr 192.168.99.115:48300 -b short_local -x -xr /users/geoff/work/master/Testing/Automatic/texttest -xw /users/geoff/texttesttmp/texttest.lsfgeoff26Aug130608/QueueSystems/ErrorHandling/Console/JobDeletionFails/slave"'
+<-SRV:192.168.99.31:57894
+<-CMD:env 'PATH=/users/geoff/texttesttmp/texttest.lsfgeoff28Aug101813/QueueSystems/ErrorHandling/Console/JobDeletionFails/texttesttmp/sleep.killinggeoff28Aug101857/Basic:$PATH' 'USECASE_RECORD_SCRIPT=' 'USECASE_RECORD_STDIN=' 'USECASE_REPLAY_SCRIPT=' bsub -J Test-Basic-SLEEP.killing -u nobody -o framework_tmp/slavelog -e framework_tmp/slaveerrs 'exec /bin/tcsh -c "exec /users/geoff/work/master/Testing/TextTest/texttest.py -d /users/geoff/texttesttmp/texttest.lsfgeoff28Aug101813/QueueSystems/ErrorHandling/Console/JobDeletionFails/TargetApp -a sleep -v killing -l  -tp Basic -slave /users/geoff/texttesttmp/texttest.lsfgeoff28Aug101813/QueueSystems/ErrorHandling/Console/JobDeletionFails/texttesttmp/sleep.killinggeoff28Aug101857 -servaddr 192.168.99.31:57892 -b short_local -x -xr /users/geoff/work/master/Testing/Automatic/texttest -xw /users/geoff/texttesttmp/texttest.lsfgeoff28Aug101813/QueueSystems/ErrorHandling/Console/JobDeletionFails/slave"'
 ->OUT:Job <1> is submitted to queue <fake_machine_queue>.
 <-SRV:Completed submission of all tests
 ->CLI:25483
@@ -38,5 +38,5 @@ p15
 S'start'
 p16
 sb.
-<-CMD:env 'PATH=/users/geoff/texttesttmp/texttest.lsfgeoff26Aug130608/QueueSystems/ErrorHandling/Console/JobDeletionFails/texttesttmp/sleep.killinggeoff26Aug130826/Basic:$PATH' 'QUEUE_SYSTEM_RESOURCE=' 'QUEUE_SYSTEM_SUBMIT_ARGS=$TARGET_QS_SUBMIT_ARG' 'TEXTTEST_CHECKOUT=' 'TEXTTEST_CHECKOUT_NAME=' bkill -s USR1 1
+<-CMD:env 'PATH=/users/geoff/texttesttmp/texttest.lsfgeoff28Aug101813/QueueSystems/ErrorHandling/Console/JobDeletionFails/texttesttmp/sleep.killinggeoff28Aug101857/Basic:$PATH' bkill -s USR1 1
 ->OUT:Some job is being terminated
