@@ -1,0 +1,148 @@
+<-SRV:TextTest slave server started on 192.168.99.56:55084
+<-CMD:env 'CARMSYS=/carm/proj/texttest/selftest_data/CARMSYS' 'CARMTMP=/users/geoff/texttesttmp/texttest.carmengeoff28Aug171505/carmen/matador/RaveCompile/KillRuleCompilation/test_tmp' 'CARMUSR=/carm/proj/texttest/selftest_data/CARMUSRs/RD_ib_cas_v8_user' 'CRS_ROOT=etab:/carm/proj/texttest/selftest_data/CARMSYS/data/config/CarmResources/Root.etab' 'DIAGNOSTICS_IN=/users/geoff/texttesttmp/texttest.carmengeoff28Aug171505/carmen/matador/RaveCompile/KillRuleCompilation/TargetApp' 'DIAGNOSTICS_OUT=/users/geoff/texttesttmp/texttest.carmengeoff28Aug171505/carmen/matador/RaveCompile/KillRuleCompilation/texttesttmp/casgeoff28Aug171539/StaticLinkUser/all_1crew' 'LANG=C' 'PATH=/users/geoff/texttesttmp/texttest.carmengeoff28Aug171505/carmen/matador/RaveCompile/KillRuleCompilation/texttesttmp/casgeoff28Aug171539/StaticLinkUser/all_1crew:$PATH:/carm/proj/texttest/selftest_data/CARMSYS/bin' 'TEST_IP_SOLVER=XPRESS;CPLEX' 'USECASE_RECORD_SCRIPT=' 'USECASE_RECORD_STDIN=' 'USECASE_REPLAY_SCRIPT=' qsub -N Rules-Matador_CO.StaticLinkUser-matador -l 'osversion=RHEL4,model=Opteron*,carmrunarch=*i386_linux*,ttrulesmaster=1,short' -w e -notify -m n -cwd -b y -V -o framework_tmp/slavelog -e framework_tmp/slaveerrs 'exec /bin/tcsh -c "exec /users/geoff/work/master/Testing/TextTest/texttest.py -d /users/geoff/texttesttmp/texttest.carmengeoff28Aug171505/carmen/matador/RaveCompile/KillRuleCompilation/TargetApp -a cas -l -c /carm/proj/texttest/selftest_data -tp StaticLinkUser/all_1crew -raveslave /users/geoff/texttesttmp/texttest.carmengeoff28Aug171505/carmen/matador/RaveCompile/KillRuleCompilation/texttesttmp/casgeoff28Aug171539 -servaddr 192.168.99.56:55077 -x -xr /users/geoff/work/master/Testing/Automatic/texttest -xw /users/geoff/texttesttmp/texttest.carmengeoff28Aug171505/carmen/matador/RaveCompile/KillRuleCompilation/raveslave"'
+->OUT:Your job 5009102 ("Rules-Matador_CO.StaticLinkUser-matador") has been submitted
+<-CMD:env 'CARMSYS=/carm/proj/texttest/selftest_data/CARMSYS' 'CARMTMP=/users/geoff/texttesttmp/texttest.carmengeoff28Aug171505/carmen/matador/RaveCompile/KillRuleCompilation/test_tmp_2' 'CARMUSR=/carm/proj/texttest/selftest_data/CARMUSRs/RD_ib_cas_v8_user' 'CRS_ROOT=etab:/carm/proj/texttest/selftest_data/CARMSYS/data/config/CarmResources/Root.etab' 'DIAGNOSTICS_IN=/users/geoff/texttesttmp/texttest.carmengeoff28Aug171505/carmen/matador/RaveCompile/KillRuleCompilation/TargetApp' 'DIAGNOSTICS_OUT=/users/geoff/texttesttmp/texttest.carmengeoff28Aug171505/carmen/matador/RaveCompile/KillRuleCompilation/texttesttmp/cas.othercarmtmpgeoff28Aug171539/StaticLinkUser/all_1crew' 'LANG=C' 'PATH=/users/geoff/texttesttmp/texttest.carmengeoff28Aug171505/carmen/matador/RaveCompile/KillRuleCompilation/texttesttmp/cas.othercarmtmpgeoff28Aug171539/StaticLinkUser/all_1crew:$PATH:/carm/proj/texttest/selftest_data/CARMSYS/bin' 'TEST_IP_SOLVER=XPRESS;CPLEX' 'USECASE_RECORD_SCRIPT=' 'USECASE_RECORD_STDIN=' 'USECASE_REPLAY_SCRIPT=' qsub -N Rules-Matador_CO.StaticLinkUser-matador.othercarmtmp -l 'osversion=RHEL4,model=Opteron*,carmrunarch=*i386_linux*,ttrulesmaster=1,short' -w e -notify -m n -cwd -b y -V -o framework_tmp/slavelog -e framework_tmp/slaveerrs 'exec /bin/tcsh -c "exec /users/geoff/work/master/Testing/TextTest/texttest.py -d /users/geoff/texttesttmp/texttest.carmengeoff28Aug171505/carmen/matador/RaveCompile/KillRuleCompilation/TargetApp -a cas -v othercarmtmp -l -c /carm/proj/texttest/selftest_data -tp StaticLinkUser/all_1crew -raveslave /users/geoff/texttesttmp/texttest.carmengeoff28Aug171505/carmen/matador/RaveCompile/KillRuleCompilation/texttesttmp/cas.othercarmtmpgeoff28Aug171539 -servaddr 192.168.99.56:55077 -x -xr /users/geoff/work/master/Testing/Automatic/texttest -xw /users/geoff/texttesttmp/texttest.carmengeoff28Aug171505/carmen/matador/RaveCompile/KillRuleCompilation/raveslave"'
+->OUT:Your job 5009104 ("Rules-Matador_CO.StaticLinkUser-matador.othercarmtmp") has been submitted
+<-SRV:Completed submission of all rule compilations
+->CLI:27225
+cas:StaticLinkUser/all_1crew
+(iravebased
+RunningRuleCompilation
+p1
+(dp2
+S'category'
+p3
+S'running_rulecompile'
+p4
+sS'lifecycleChange'
+p5
+S'start ruleset compilation'
+p6
+sS'freeText'
+p7
+S'Compiling ruleset Matador_CO on woodville'
+p8
+sS'started'
+p9
+I0
+sS'rulesetName'
+p10
+S'Matador_CO'
+p11
+sS'completed'
+p12
+I0
+sS'briefText'
+p13
+S'RULES (woodville)'
+p14
+sS'executionHosts'
+p15
+(lp16
+sS'testCompiling'
+p17
+Nsb.
+->CLI:28489
+cas.othercarmtmp:StaticLinkUser/all_1crew
+(iravebased
+RunningRuleCompilation
+p1
+(dp2
+S'category'
+p3
+S'running_rulecompile'
+p4
+sS'lifecycleChange'
+p5
+S'start ruleset compilation'
+p6
+sS'freeText'
+p7
+S'Compiling ruleset Matador_CO on tiptonville'
+p8
+sS'started'
+p9
+I0
+sS'rulesetName'
+p10
+S'Matador_CO'
+p11
+sS'completed'
+p12
+I0
+sS'briefText'
+p13
+S'RULES (tiptonville)'
+p14
+sS'executionHosts'
+p15
+(lp16
+sS'testCompiling'
+p17
+Nsb.
+<-CMD:env 'CARMSYS=/carm/proj/texttest/selftest_data/CARMSYS' 'CARMTMP=/users/geoff/texttesttmp/texttest.carmengeoff28Aug171505/carmen/matador/RaveCompile/KillRuleCompilation/test_tmp_2' 'CARMUSR=/carm/proj/texttest/selftest_data/CARMUSRs/RD_ib_cas_v8_user' 'CRS_ROOT=etab:/carm/proj/texttest/selftest_data/CARMSYS/data/config/CarmResources/Root.etab' 'DIAGNOSTICS_IN=/users/geoff/texttesttmp/texttest.carmengeoff28Aug171505/carmen/matador/RaveCompile/KillRuleCompilation/TargetApp' 'DIAGNOSTICS_OUT=/users/geoff/texttesttmp/texttest.carmengeoff28Aug171505/carmen/matador/RaveCompile/KillRuleCompilation/texttesttmp/cas.othercarmtmpgeoff28Aug171539/StaticLinkUser/all_1crew' 'LANG=C' 'PATH=/users/geoff/texttesttmp/texttest.carmengeoff28Aug171505/carmen/matador/RaveCompile/KillRuleCompilation/texttesttmp/cas.othercarmtmpgeoff28Aug171539/StaticLinkUser/all_1crew:$PATH:/carm/proj/texttest/selftest_data/CARMSYS/bin' 'TEST_IP_SOLVER=XPRESS;CPLEX' qdel 5009104
+->OUT:geoff has registered the job 5009104 for deletion
+->CLI:28489
+cas.othercarmtmp:StaticLinkUser/all_1crew
+(iravebased
+RuleBuildFailed
+p1
+(dp2
+S'category'
+p3
+S'unrunnable'
+p4
+sS'freeText'
+p5
+S'Ruleset compilation killed explicitly at 14:03'
+p6
+sS'started'
+p7
+I0
+sS'completed'
+p8
+I1
+sS'briefText'
+p9
+S'Ruleset build killed at 14:03'
+p10
+sS'executionHosts'
+p11
+(lp12
+sS'lifecycleChange'
+p13
+S''
+sb.
+<-CMD:env 'CARMSYS=/carm/proj/texttest/selftest_data/CARMSYS' 'CARMTMP=/users/geoff/texttesttmp/texttest.carmengeoff28Aug171505/carmen/matador/RaveCompile/KillRuleCompilation/test_tmp' 'CARMUSR=/carm/proj/texttest/selftest_data/CARMUSRs/RD_ib_cas_v8_user' 'CRS_ROOT=etab:/carm/proj/texttest/selftest_data/CARMSYS/data/config/CarmResources/Root.etab' 'DIAGNOSTICS_IN=/users/geoff/texttesttmp/texttest.carmengeoff28Aug171505/carmen/matador/RaveCompile/KillRuleCompilation/TargetApp' 'DIAGNOSTICS_OUT=/users/geoff/texttesttmp/texttest.carmengeoff28Aug171505/carmen/matador/RaveCompile/KillRuleCompilation/texttesttmp/casgeoff28Aug171539/StaticLinkUser/all_1crew' 'LANG=C' 'PATH=/users/geoff/texttesttmp/texttest.carmengeoff28Aug171505/carmen/matador/RaveCompile/KillRuleCompilation/texttesttmp/casgeoff28Aug171539/StaticLinkUser/all_1crew:$PATH:/carm/proj/texttest/selftest_data/CARMSYS/bin' 'TEST_IP_SOLVER=XPRESS;CPLEX' qdel 5009102
+->OUT:geoff has registered the job 5009102 for deletion
+->CLI:27225
+cas:StaticLinkUser/all_1crew
+(iravebased
+RuleBuildFailed
+p1
+(dp2
+S'category'
+p3
+S'unrunnable'
+p4
+sS'freeText'
+p5
+S'Ruleset compilation killed explicitly at 14:03'
+p6
+sS'started'
+p7
+I0
+sS'completed'
+p8
+I1
+sS'briefText'
+p9
+S'Ruleset build killed at 14:03'
+p10
+sS'executionHosts'
+p11
+(lp12
+sS'lifecycleChange'
+p13
+S''
+sb.

@@ -1,0 +1,14 @@
+<-CMD:env 'CARMSYS=/carm/proj/texttest/selftest_data/CARMSYS' 'CARMTMP=/users/geoff/texttesttmp/texttest.carmengeoff28Aug133243/carmen/matador/RaveCompile/LocalRaveRun/test_tmp' 'CARMUSR=/carm/proj/texttest/selftest_data/CARMUSRs/Matador_user' 'CRS_ROOT=etab:/carm/proj/texttest/selftest_data/CARMSYS/data/config/CarmResources/Root.etab' 'DIAGNOSTICS_IN=/users/geoff/texttesttmp/texttest.carmengeoff28Aug133243/carmen/matador/RaveCompile/LocalRaveRun/TargetApp' 'DIAGNOSTICS_OUT=/users/geoff/texttesttmp/texttest.carmengeoff28Aug133243/carmen/matador/RaveCompile/LocalRaveRun/texttesttmp/cas.rave.badrulegeoff28Aug133248/ArtificialUser/matador_2' 'LANG=C' 'PATH=/users/geoff/texttesttmp/texttest.carmengeoff28Aug133243/carmen/matador/RaveCompile/LocalRaveRun/texttesttmp/cas.rave.badrulegeoff28Aug133248/ArtificialUser/matador_2:$PATH:/carm/proj/texttest/selftest_data/CARMSYS/bin' 'TEST_IP_SOLVER=XPRESS;CPLEX' crc_compile matador -optimize -archs i386_linux /carm/proj/texttest/selftest_data/CARMUSRs/Matador_user/crc/source/Matador_5_bad
+->OUT:Build Rave program Matador_5_bad started on abbeville, 28 August 13:32
+Generating code... 
+->ERR:
+*** Trouble report (1 error, 0 warnings):
+
+"source/Matador_5_bad", line 18.22:
+      16: %cost_weight% = parameter 1;
+      17: 
+      18: %cost_of_a_roster% = sum(leg(roser),%cost_weight%);
+                               ^^^
+   ERROR: _topmodule.roser is undefined
+
+->EXC:256
