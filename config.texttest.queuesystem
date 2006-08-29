@@ -26,6 +26,7 @@ catalogue:slavelog
 catalogue:-slave$
 catalogue:-core.[0-9]*$
 catalogue:-core$
+catalogue:-stacktrace.collate_errs
 slavelog:TextTest will write diagnostics
 slavelog:checkout{WORD -1}
 slavelog:Terminating testing{WORD -1}
@@ -41,12 +42,10 @@ traffic:[^ ]*/Testing/Automatic{REPLACE <texttest_home>}
 traffic:[^ ]*/texttest.py{REPLACE <path_to_texttest>}
 
 [unordered_text]
-output:Failed to submit to
 output:Evaluating
 output:Cancelling
 output:FAILED on
 output:View details
-dynamic_gui_log:Waiting for application event{->}Expected application event
 [end]
 
 [collate_file]
