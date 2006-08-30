@@ -1,11 +1,11 @@
-<-CMD:env 'PATH=/users/geoff/texttesttmp/texttest.lsfgeoff28Aug101813/QueueSystems/Performance/CheckExecHost/PerfParallel/texttesttmp/perf.resourcegeoff28Aug101853/Failures:$PATH' 'USECASE_RECORD_SCRIPT=/users/geoff/texttesttmp/texttest.lsfgeoff28Aug101813/QueueSystems/Performance/CheckExecHost/PerfParallel/texttesttmp/perf.resourcegeoff28Aug101853/Failures/usecase.perf' 'USECASE_RECORD_STDIN=/users/geoff/texttesttmp/texttest.lsfgeoff28Aug101813/QueueSystems/Performance/CheckExecHost/PerfParallel/texttesttmp/perf.resourcegeoff28Aug101853/Failures/input.perf' bhosts -w -R performance_resource
+<-CMD:bhosts -w -R performance_resource
 ->OUT:HOST_NAME          STATUS          JL/U    MAX  NJOBS    RUN  SSUSP  USUSP    RSV 
 perf_machine1.carmen.se ok                 -      2      0      0      0      0      0
 perf_machine2.carmen.se ok                 -      2      0      0      0      0      0
 bagotville.carmen.se    ok                 -      2      0      0      0      0      0
 batesville.carmen.se    ok                 -      2      0      0      0      0      0
 bellville.carmen.se     ok                 -      2      0      0      0      0      0
-<-CMD:env 'PATH=/users/geoff/texttesttmp/texttest.lsfgeoff28Aug101813/QueueSystems/Performance/CheckExecHost/PerfParallel/texttesttmp/perf.resourcegeoff28Aug101853/Failures:$PATH' 'USECASE_RECORD_SCRIPT=/users/geoff/texttesttmp/texttest.lsfgeoff28Aug101813/QueueSystems/Performance/CheckExecHost/PerfParallel/texttesttmp/perf.resourcegeoff28Aug101853/Failures/usecase.perf' 'USECASE_RECORD_STDIN=/users/geoff/texttesttmp/texttest.lsfgeoff28Aug101813/QueueSystems/Performance/CheckExecHost/PerfParallel/texttesttmp/perf.resourcegeoff28Aug101853/Failures/input.perf' bjobs -m perf_machine1 -u all -w
+<-CMD:bjobs -m perf_machine1 -u all -w
 ->ERR:No unfinished job found on host/group <perf_machine1>
-<-CMD:env 'PATH=/users/geoff/texttesttmp/texttest.lsfgeoff28Aug101813/QueueSystems/Performance/CheckExecHost/PerfParallel/texttesttmp/perf.resourcegeoff28Aug101853/Failures:$PATH' 'USECASE_RECORD_SCRIPT=/users/geoff/texttesttmp/texttest.lsfgeoff28Aug101813/QueueSystems/Performance/CheckExecHost/PerfParallel/texttesttmp/perf.resourcegeoff28Aug101853/Failures/usecase.perf' 'USECASE_RECORD_STDIN=/users/geoff/texttesttmp/texttest.lsfgeoff28Aug101813/QueueSystems/Performance/CheckExecHost/PerfParallel/texttesttmp/perf.resourcegeoff28Aug101853/Failures/input.perf' bjobs -m perf_machine2 -u all -w
+<-CMD:bjobs -m perf_machine2 -u all -w
 ->ERR:No unfinished job found on host/group <perf_machine2>

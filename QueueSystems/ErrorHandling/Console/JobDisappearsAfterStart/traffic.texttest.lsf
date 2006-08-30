@@ -1,5 +1,5 @@
-<-SRV:TextTest slave server started on 192.168.99.33:54161
-<-CMD:env 'PATH=/users/geoff/texttesttmp/texttest.lsfgeoff28Aug171505/QueueSystems/ErrorHandling/Console/JobDisappearsAfterStart/texttesttmp/sleep.killinggeoff28Aug171533/Basic:$PATH' 'USECASE_RECORD_SCRIPT=' 'USECASE_RECORD_STDIN=' 'USECASE_REPLAY_SCRIPT=' bsub -J Test-Basic-SLEEP.killing -u nobody -o framework_tmp/slavelog -e framework_tmp/slaveerrs 'exec /bin/tcsh -c "exec /users/geoff/work/master/Testing/TextTest/texttest.py -d /users/geoff/texttesttmp/texttest.lsfgeoff28Aug171505/QueueSystems/ErrorHandling/Console/JobDisappearsAfterStart/TargetApp -a sleep -v killing -l  -tp Basic -slave /users/geoff/texttesttmp/texttest.lsfgeoff28Aug171505/QueueSystems/ErrorHandling/Console/JobDisappearsAfterStart/texttesttmp/sleep.killinggeoff28Aug171533 -servaddr 192.168.99.33:54159 -b short_local -x -xr /users/geoff/work/master/Testing/Automatic/texttest -xw /users/geoff/texttesttmp/texttest.lsfgeoff28Aug171505/QueueSystems/ErrorHandling/Console/JobDisappearsAfterStart/slave"'
+<-SRV:TextTest slave server started on 192.168.99.111:35724
+<-CMD:env 'USECASE_RECORD_STDIN=' 'USECASE_RECORD_SCRIPT=' 'USECASE_REPLAY_SCRIPT=' bsub -J Test-Basic-SLEEP.killing -u nobody -o framework_tmp/slavelog -e framework_tmp/slaveerrs 'exec /bin/tcsh -c "exec /users/geoff/work/master/Testing/TextTest/texttest.py -d /users/geoff/texttesttmp/texttest.lsfgeoff30Aug124735/QueueSystems/ErrorHandling/Console/JobDisappearsAfterStart/TargetApp -a sleep -v killing -l  -tp Basic -slave /users/geoff/texttesttmp/texttest.lsfgeoff30Aug124735/QueueSystems/ErrorHandling/Console/JobDisappearsAfterStart/texttesttmp/sleep.killinggeoff30Aug124814 -servaddr 192.168.99.111:35720 -b short_local -x -xr /users/geoff/work/master/Testing/Automatic/texttest -xw /users/geoff/texttesttmp/texttest.lsfgeoff30Aug124735/QueueSystems/ErrorHandling/Console/JobDisappearsAfterStart/slave"'
 ->OUT:Job <1> is submitted to queue <fake_machine_queue>.
 <-SRV:Completed submission of all tests
 ->CLI:25852
@@ -38,7 +38,7 @@ p15
 S'start'
 p16
 sb.
-<-CMD:env 'PATH=/users/geoff/texttesttmp/texttest.lsfgeoff28Aug171505/QueueSystems/ErrorHandling/Console/JobDisappearsAfterStart/texttesttmp/sleep.killinggeoff28Aug171533/Basic:$PATH' bkill -s USR1 1
+<-CMD:bkill -s USR1 1
 ->ERR:No jobs can be deleted today!
-<-CMD:env 'PATH=/users/geoff/texttesttmp/texttest.lsfgeoff28Aug171505/QueueSystems/ErrorHandling/Console/JobDisappearsAfterStart/texttesttmp/sleep.killinggeoff28Aug171533/Basic:$PATH' bjobs -a -l 1
+<-CMD:bjobs -a -l 1
 ->OUT:Seriously nasty things happened while this test was running!

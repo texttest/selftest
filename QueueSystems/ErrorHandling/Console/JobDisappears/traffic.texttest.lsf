@@ -1,8 +1,8 @@
-<-SRV:TextTest slave server started on 192.168.99.61:59702
-<-CMD:env 'PATH=/users/geoff/texttesttmp/texttest.lsfgeoff28Aug171505/QueueSystems/ErrorHandling/Console/JobDisappears/texttesttmp/sleep.killinggeoff28Aug171533/Basic:$PATH' 'USECASE_RECORD_SCRIPT=' 'USECASE_RECORD_STDIN=' 'USECASE_REPLAY_SCRIPT=' bsub -J Test-Basic-SLEEP.killing -u nobody -o framework_tmp/slavelog -e framework_tmp/slaveerrs 'exec /bin/tcsh -c "exec /users/geoff/work/master/Testing/TextTest/texttest.py -d /users/geoff/texttesttmp/texttest.lsfgeoff28Aug171505/QueueSystems/ErrorHandling/Console/JobDisappears/TargetApp -a sleep -v killing -l  -tp Basic -slave /users/geoff/texttesttmp/texttest.lsfgeoff28Aug171505/QueueSystems/ErrorHandling/Console/JobDisappears/texttesttmp/sleep.killinggeoff28Aug171533 -servaddr 192.168.99.61:59700 -b short_local -x -xr /users/geoff/work/master/Testing/Automatic/texttest -xw /users/geoff/texttesttmp/texttest.lsfgeoff28Aug171505/QueueSystems/ErrorHandling/Console/JobDisappears/slave"'
+<-SRV:TextTest slave server started on 192.168.99.116:48381
+<-CMD:env 'USECASE_RECORD_STDIN=' 'USECASE_RECORD_SCRIPT=' 'USECASE_REPLAY_SCRIPT=' bsub -J Test-Basic-SLEEP.killing -u nobody -o framework_tmp/slavelog -e framework_tmp/slaveerrs 'exec /bin/tcsh -c "exec /users/geoff/work/master/Testing/TextTest/texttest.py -d /users/geoff/texttesttmp/texttest.lsfgeoff30Aug124735/QueueSystems/ErrorHandling/Console/JobDisappears/TargetApp -a sleep -v killing -l  -tp Basic -slave /users/geoff/texttesttmp/texttest.lsfgeoff30Aug124735/QueueSystems/ErrorHandling/Console/JobDisappears/texttesttmp/sleep.killinggeoff30Aug124813 -servaddr 192.168.99.116:48379 -b short_local -x -xr /users/geoff/work/master/Testing/Automatic/texttest -xw /users/geoff/texttesttmp/texttest.lsfgeoff30Aug124735/QueueSystems/ErrorHandling/Console/JobDisappears/slave"'
 ->OUT:Job <1> is submitted to queue <bad_machine_queue>.
 <-SRV:Completed submission of all tests
-<-CMD:env 'PATH=/users/geoff/texttesttmp/texttest.lsfgeoff28Aug171505/QueueSystems/ErrorHandling/Console/JobDisappears/texttesttmp/sleep.killinggeoff28Aug171533/Basic:$PATH' bkill -s USR1 1
+<-CMD:bkill -s USR1 1
 ->ERR:Job <1>: No matching job found
-<-CMD:env 'PATH=/users/geoff/texttesttmp/texttest.lsfgeoff28Aug171505/QueueSystems/ErrorHandling/Console/JobDisappears/texttesttmp/sleep.killinggeoff28Aug171533/Basic:$PATH' bjobs -a -l 1
+<-CMD:bjobs -a -l 1
 ->ERR:Job <1> is not found

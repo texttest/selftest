@@ -1,4 +1,4 @@
-<-CMD:env 'PATH=/users/geoff/texttesttmp/texttest.sgegeoff28Aug101813/QueueSystems/Performance/CheckExecHost/PerfParallel/texttesttmp/perf.resourcegeoff28Aug101851/Failures:$PATH' 'USECASE_RECORD_SCRIPT=/users/geoff/texttesttmp/texttest.sgegeoff28Aug101813/QueueSystems/Performance/CheckExecHost/PerfParallel/texttesttmp/perf.resourcegeoff28Aug101851/Failures/usecase.perf' 'USECASE_RECORD_STDIN=/users/geoff/texttesttmp/texttest.sgegeoff28Aug101813/QueueSystems/Performance/CheckExecHost/PerfParallel/texttesttmp/perf.resourcegeoff28Aug101851/Failures/input.perf' qselect -l performance_resource
+<-CMD:qselect -l performance_resource
 ->OUT:idle@perf_machine1.carmen.se
 idle@perf_machine2.carmen.se
 idle@bagotville.carmen.se
@@ -29,5 +29,5 @@ normal@perf_machine2.carmen.se
 normal@bagotville.carmen.se
 normal@batesville.carmen.se
 normal@bellville.carmen.se
-<-CMD:env 'PATH=/users/geoff/texttesttmp/texttest.sgegeoff28Aug101813/QueueSystems/Performance/CheckExecHost/PerfParallel/texttesttmp/perf.resourcegeoff28Aug101851/Failures:$PATH' 'USECASE_RECORD_SCRIPT=/users/geoff/texttesttmp/texttest.sgegeoff28Aug101813/QueueSystems/Performance/CheckExecHost/PerfParallel/texttesttmp/perf.resourcegeoff28Aug101851/Failures/usecase.perf' 'USECASE_RECORD_STDIN=/users/geoff/texttesttmp/texttest.sgegeoff28Aug101813/QueueSystems/Performance/CheckExecHost/PerfParallel/texttesttmp/perf.resourcegeoff28Aug101851/Failures/input.perf' qstat -r -s r -l hostname=perf_machine1
-<-CMD:env 'PATH=/users/geoff/texttesttmp/texttest.sgegeoff28Aug101813/QueueSystems/Performance/CheckExecHost/PerfParallel/texttesttmp/perf.resourcegeoff28Aug101851/Failures:$PATH' 'USECASE_RECORD_SCRIPT=/users/geoff/texttesttmp/texttest.sgegeoff28Aug101813/QueueSystems/Performance/CheckExecHost/PerfParallel/texttesttmp/perf.resourcegeoff28Aug101851/Failures/usecase.perf' 'USECASE_RECORD_STDIN=/users/geoff/texttesttmp/texttest.sgegeoff28Aug101813/QueueSystems/Performance/CheckExecHost/PerfParallel/texttesttmp/perf.resourcegeoff28Aug101851/Failures/input.perf' qstat -r -s r -l hostname=perf_machine2
+<-CMD:qstat -r -s r -l hostname=perf_machine1
+<-CMD:qstat -r -s r -l hostname=perf_machine2

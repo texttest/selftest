@@ -78,6 +78,13 @@ link_test_path:cvs
 
 collect_traffic:crc_compile
 
+[collect_traffic_environment]
+crc_compile:CARMSYS
+crc_compile:CARMUSR
+crc_compile:CARMTMP
+crc_compile:_AUTOTEST__LOCAL_COMPILE_
+[end]
+
 # List of (generally directories) to copy from the test directory to the write directory
 # because we want to write there.
 partial_copy_test_path:test_tmp

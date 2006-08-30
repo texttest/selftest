@@ -1,7 +1,9 @@
 binary:$TEXTTEST_HOME/source/syscalls.py
 
+# disable tkdiff windows
+log_file:none
+
 collect_traffic:firstcall.py
 collect_traffic:secondcall.py
 
-# disable tkdiff windows
-log_file:none
+collect_traffic_environment:MY_ENV_VAR
