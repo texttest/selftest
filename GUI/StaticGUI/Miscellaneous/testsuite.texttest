@@ -7,20 +7,24 @@ ResetRunFlag
 # Make sure the reset button works after changing test
 ChangeTestReset
 
-# Testing the 'verify quit' dialog, asking about all child processes
-VerifyQuitAll
-
-# Verify quit, but only for texttest
-VerifyQuitTextTest
-
-# Check we can use test creation mode, where we don't want everything expanded by default
-CollapseStaticSuites
-
 # Check we can reset the radio button for types of selection
 ResetSelectOption
 
 # Check we don't view tests identified as belonging to base version of our extra versions
 ExtraBaseVersions
 
+# Testing the 'verify quit' dialog, asking about all child processes
+VerifyQuitAll
+
+# Verify quit, but only for texttest
+VerifyQuitTextTest
+
+# Check that expansion expands the whole suite in the normal case
+ExpandAll
+
+# Check we can use test creation mode, where we don't want everything expanded by default
+CollapseStaticSuites
+
 # Select in collapsed suites, expand on demand
 SelectInCollapsed
+
