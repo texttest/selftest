@@ -1,7 +1,7 @@
-<-SRV:TextTest slave server started on 192.168.99.115:35338
-<-CMD:env 'USECASE_RECORD_STDIN=' 'USECASE_RECORD_SCRIPT=' 'USECASE_REPLAY_SCRIPT=' qsub -N Rules-Matador_CO.StaticLinkUser-matador -l 'osversion=RHEL4,model=Opteron*,carmrunarch=*i386_linux*,ttrulesmaster=1,short' -w e -notify -m n -cwd -b y -V -o framework_tmp/slavelog -e framework_tmp/slaveerrs 'exec /bin/tcsh -c "exec /users/geoff/work/master/Testing/TextTest/texttest.py -d /users/geoff/texttesttmp/texttest.carmengeoff30Aug124735/carmen/matador/RaveCompile/KillRuleCompilation/TargetApp -a cas -l -c /carm/proj/texttest/selftest_data -tp StaticLinkUser/all_1crew -raveslave /users/geoff/texttesttmp/texttest.carmengeoff30Aug124735/carmen/matador/RaveCompile/KillRuleCompilation/texttesttmp/casgeoff30Aug124819 -servaddr 192.168.99.115:35328 -x -xr /users/geoff/work/master/Testing/Automatic/texttest -xw /users/geoff/texttesttmp/texttest.carmengeoff30Aug124735/carmen/matador/RaveCompile/KillRuleCompilation/raveslave"'
+<-SRV:TextTest slave server started on 192.168.99.36:55855
+<-CMD:env 'USECASE_RECORD_STDIN=' 'USECASE_RECORD_SCRIPT=' 'USECASE_REPLAY_SCRIPT=' qsub -N Rules-Matador_CO.StaticLinkUser-matador -l 'osversion=RHEL4,model=Opteron*,carmarch=*i386_linux*,carmbuildmaster=1,short' -w e -notify -m n -cwd -b y -V -o framework_tmp/slavelog -e framework_tmp/slaveerrs 'exec /bin/tcsh -c "exec /users/geoff/work/master/Testing/TextTest/texttest.py -d /users/geoff/texttesttmp/texttest.carmengeoff31Aug144532/carmen/matador/RaveCompile/KillRuleCompilation/TargetApp -a cas -l -c /carm/proj/texttest/selftest_data -tp StaticLinkUser/all_1crew -raveslave /users/geoff/texttesttmp/texttest.carmengeoff31Aug144532/carmen/matador/RaveCompile/KillRuleCompilation/texttesttmp/casgeoff31Aug144547 -servaddr 192.168.99.36:55848 -x -xr /users/geoff/work/master/Testing/Automatic/texttest -xw /users/geoff/texttesttmp/texttest.carmengeoff31Aug144532/carmen/matador/RaveCompile/KillRuleCompilation/raveslave"'
 ->OUT:Your job 5009102 ("Rules-Matador_CO.StaticLinkUser-matador") has been submitted
-<-CMD:env 'USECASE_RECORD_STDIN=' 'USECASE_RECORD_SCRIPT=' 'USECASE_REPLAY_SCRIPT=' qsub -N Rules-Matador_CO.StaticLinkUser-matador.othercarmtmp -l 'osversion=RHEL4,model=Opteron*,carmrunarch=*i386_linux*,ttrulesmaster=1,short' -w e -notify -m n -cwd -b y -V -o framework_tmp/slavelog -e framework_tmp/slaveerrs 'exec /bin/tcsh -c "exec /users/geoff/work/master/Testing/TextTest/texttest.py -d /users/geoff/texttesttmp/texttest.carmengeoff30Aug124735/carmen/matador/RaveCompile/KillRuleCompilation/TargetApp -a cas -v othercarmtmp -l -c /carm/proj/texttest/selftest_data -tp StaticLinkUser/all_1crew -raveslave /users/geoff/texttesttmp/texttest.carmengeoff30Aug124735/carmen/matador/RaveCompile/KillRuleCompilation/texttesttmp/cas.othercarmtmpgeoff30Aug124819 -servaddr 192.168.99.115:35328 -x -xr /users/geoff/work/master/Testing/Automatic/texttest -xw /users/geoff/texttesttmp/texttest.carmengeoff30Aug124735/carmen/matador/RaveCompile/KillRuleCompilation/raveslave"'
+<-CMD:env 'USECASE_RECORD_STDIN=' 'USECASE_RECORD_SCRIPT=' 'USECASE_REPLAY_SCRIPT=' qsub -N Rules-Matador_CO.StaticLinkUser-matador.othercarmtmp -l 'osversion=RHEL4,model=Opteron*,carmarch=*i386_linux*,carmbuildmaster=1,short' -w e -notify -m n -cwd -b y -V -o framework_tmp/slavelog -e framework_tmp/slaveerrs 'exec /bin/tcsh -c "exec /users/geoff/work/master/Testing/TextTest/texttest.py -d /users/geoff/texttesttmp/texttest.carmengeoff31Aug144532/carmen/matador/RaveCompile/KillRuleCompilation/TargetApp -a cas -v othercarmtmp -l -c /carm/proj/texttest/selftest_data -tp StaticLinkUser/all_1crew -raveslave /users/geoff/texttesttmp/texttest.carmengeoff31Aug144532/carmen/matador/RaveCompile/KillRuleCompilation/texttesttmp/cas.othercarmtmpgeoff31Aug144547 -servaddr 192.168.99.36:55848 -x -xr /users/geoff/work/master/Testing/Automatic/texttest -xw /users/geoff/texttesttmp/texttest.carmengeoff31Aug144532/carmen/matador/RaveCompile/KillRuleCompilation/raveslave"'
 ->OUT:Your job 5009104 ("Rules-Matador_CO.StaticLinkUser-matador.othercarmtmp") has been submitted
 <-SRV:Completed submission of all rule compilations
 ->CLI:27225
@@ -80,10 +80,10 @@ p15
 sS'testCompiling'
 p17
 Nsb.
-<-CMD:qdel 5009104
-->OUT:geoff has registered the job 5009104 for deletion
-->CLI:28489
-cas.othercarmtmp:StaticLinkUser/all_1crew
+<-CMD:qdel 5009102
+->OUT:geoff has registered the job 5009102 for deletion
+->CLI:27225
+cas:StaticLinkUser/all_1crew
 (iravebased
 RuleBuildFailed
 p1
@@ -113,10 +113,10 @@ sS'lifecycleChange'
 p13
 S''
 sb.
-<-CMD:qdel 5009102
-->OUT:geoff has registered the job 5009102 for deletion
-->CLI:27225
-cas:StaticLinkUser/all_1crew
+<-CMD:qdel 5009104
+->OUT:geoff has registered the job 5009104 for deletion
+->CLI:28489
+cas.othercarmtmp:StaticLinkUser/all_1crew
 (iravebased
 RuleBuildFailed
 p1
