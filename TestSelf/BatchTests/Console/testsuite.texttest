@@ -1,0 +1,26 @@
+# Test that batch runs and produces a correct report
+BatchReport
+
+# ...even when internal errors or unrunnable tests are registered
+BatchInternalErrors
+
+# Check we can link batch runs to particular filter files
+BatchFilterFile
+
+# Should reject as the batch session is undefined and a version is provided
+BatchRejectVersion
+
+# Check that rejecting extra versions doesn't lead to crashes...
+RejectExtraVersion
+
+# See that we don't get batch reports when an application has no tests
+OneAppNoTests
+
+# See that we don't get batch reports when an application has no binary defined
+OneAppNoBinary
+
+# Test for collecting batch files
+CollectFiles
+
+# Make sure that when there isn't anything to collect, we don't send spurious stuff
+CollectNothing
