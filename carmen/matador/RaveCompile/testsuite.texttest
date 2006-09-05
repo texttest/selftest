@@ -13,20 +13,23 @@ StaticRuleset
 # See what happens when rave compilation fails in C-compilation
 BadRaveRunCCompile
 
-# Make sure that quitting during rule compilation works correctly
-KillRuleCompilation
-
-# Check that sensible things happen if the nightjob is terminated while rave compilation is happening
-NightjobTerminateRave
-
 # There to check extra_version for rave compilations
 RaveRunParallel
 
 # Check that rule compilations with parallel test suite are handled correctly when rules don't build
 BadRaveRunParallel
 
+# Make sure that quitting during rule compilation works correctly
+KillRuleCompilation
+
+# Copy of KillRuleCompilation, but use a longer test and make sure it doesn't get performance resources
+KillRuleCompLongTest
+
 # Copy of KillRuleCompilation, except run two tests with the same ruleset
 KillRuleComp2Tests
+
+# Check that sensible things happen if the nightjob is terminated while rave compilation is happening
+NightjobTerminateRave
 
 # Check we can compile a ruleset in the slave process
 RaveSlave
