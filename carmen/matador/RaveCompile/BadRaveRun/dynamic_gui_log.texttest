@@ -1,4 +1,4 @@
-Top Window title set to TextTest dynamic GUI (tests started at 04Sep09:06:55)
+Top Window title set to TextTest dynamic GUI (tests started at 05Sep13:16:28)
 Expanding tests in tree view...
 -> Added Matador test-suite TargetApp to test tree view.
 ->   Added Matador test-suite ArtificialUser to test tree view.
@@ -42,6 +42,20 @@ Expected application event 'completion of test actions' occurred, proceeding.
 Tests: 1/2 selected, all visible
 Viewing test Matador test-case matador_2
 Creating tool bar with buttons : CVS _Log, _Plot Graph
+Warning: Failed to decode string 'Test could not be run :
+Failed to build ruleset Matador_5_bad
+Build Rave program Matador_5_bad started on gatesville, 28 August 14:03
+Generating code... 
+*** Trouble report (1 error, 0 warnings):
+
+"source/Matador_5_bad", line 18.22:
+      16: %cost_weight% = parameter 1;
+      17: 
+      18: %cost_of_a_roster% = sum(leg(roser),%cost_weight%);
+                               ^^^
+   ERROR: _topmodule.roser is undefined
+
+' using default locale encoding None. Trying strict UTF-8 encoding ...
 
 
 ---------- Text Info Window ----------
@@ -66,6 +80,8 @@ Tests: 0/2 selected, all visible
 Tests: 1/2 selected, all visible
 Viewing test Matador test-case generate_in_subperiod
 Creating tool bar with buttons : CVS _Log, _Plot Graph
+Warning: Failed to decode string 'Test could not be run :
+Trying to use ruleset 'Matador_5_bad' that failed to build.' using default locale encoding None. Trying strict UTF-8 encoding ...
 
 
 ---------- Text Info Window ----------
