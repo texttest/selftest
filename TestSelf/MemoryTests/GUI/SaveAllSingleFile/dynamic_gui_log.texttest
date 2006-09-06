@@ -1,4 +1,4 @@
-Top Window title set to TextTest dynamic GUI (tests started at 04Sep08:55:55)
+Top Window title set to TextTest dynamic GUI (tests started at 05Sep21:07:05)
 Expanding tests in tree view...
 -> Added MEM test-suite TargetApp to test tree view.
 ->   Added MEM test-case NoMemFile    to test tree view.
@@ -12,7 +12,6 @@ Adding file testsuite.mem.nomemfile under heading 'Definition Files', coloured w
 
 Viewing notebook page for 'Saving'
 Viewing entry for option 'Version to save' (set to '2') (drop-down list containing ['2', '4', 'nomemfile', ''])
-Viewing entry for option 'Save single file' (drop-down list containing ['', 'output', 'memory'])
 Viewing check button for switch 'Replace successfully compared files also'
 Viewing radio button for switch 'Save: ', options Average performance/Exact performance'. Default value 1.
 Viewing button with title '_Save'
@@ -49,16 +48,7 @@ Running Fake Memory Program...
 
 Tabs showing : Text Info, Viewing, Saving, Save Selection
 
-'view options for' event created with arguments 'Saving'
-
-Viewing notebook page for 'Saving'
-Viewing entry for option 'Version to save' (set to '2') (drop-down list containing ['2', '4', 'nomemfile', ''])
-Viewing entry for option 'Save single file' (drop-down list containing ['', 'output', 'memory'])
-Viewing check button for switch 'Replace successfully compared files also'
-Viewing radio button for switch 'Save: ', options Average performance/Exact performance'. Default value 1.
-Viewing button with title '_Save'
-
-'enter save single file =' event created with arguments 'output'
+'set file selection to' event created with arguments 'output.mem'
 
 'set test selection to' event created with arguments 'NoMemFile,NoOutputFile'
 Tests: 0/2 selected, all visible
@@ -66,15 +56,26 @@ Tests: 1/2 selected, all visible
 Tests: All 2 selected, all visible
 
 'save' event created with arguments ''
-Saving MEM test-case NoMemFile    - version 2, exactness 1, only file with stem output
+Saving MEM test-case NoMemFile    - version 2, exactness 1, only output.mem
 Redrawing test NoMemFile coloured pale green
 (Second column 'memory new' coloured orange)
-Saving MEM test-case NoOutputFile - version 2, exactness 1, only file with stem output
+Saving MEM test-case NoOutputFile - version 2, exactness 1, only output.mem
 Redrawing test NoOutputFile coloured pale green
 (Second column '13% larger' coloured orange)
 
 Adding file memory.mem under heading 'Comparison Files', coloured red
 (Second column '13% larger' coloured red)
 Adding file output.mem.2 under heading 'Comparison Files', coloured green
+
+---------- Text Info Window ----------
+Test FAILED :
+------------------ Differences in memory(larger) --------------------
+1c1
+< Max Memory  :      42.3 MB
+---
+> Max Memory  :      47.8 MB
+------------------ New result in output --------------------
+Running Fake Memory Program...
+--------------------------------------
 
 'quit' event created with arguments ''

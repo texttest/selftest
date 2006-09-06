@@ -1,4 +1,4 @@
-Top Window title set to TextTest dynamic GUI (tests started at 04Sep09:02:41)
+Top Window title set to TextTest dynamic GUI (tests started at 06Sep09:06:06)
 Expanding tests in tree view...
 -> Added VideoStore test-suite TargetApp to test tree view.
 ->   Added VideoStore test-case AddMovie to test tree view.
@@ -10,7 +10,6 @@ Adding file testsuite.gui under heading 'Definition Files', coloured white
 
 Viewing notebook page for 'Saving'
 Viewing entry for option 'Version to save'
-Viewing entry for option 'Save single file' (drop-down list containing ['', 'output', 'errors'])
 Viewing check button for switch 'Replace successfully compared files also'
 Viewing button with title '_Save'
 
@@ -49,18 +48,10 @@ Test FAILED :
 
 Tabs showing : Text Info, Viewing, Saving, Save Selection
 
-'view options for' event created with arguments 'Saving'
+'set file selection to' event created with arguments 'usecase.gui'
 
-Viewing notebook page for 'Saving'
-Viewing entry for option 'Version to save'
-Viewing entry for option 'Save single file' (drop-down list containing ['', 'output', 'errors'])
-Viewing check button for switch 'Replace successfully compared files also'
-Viewing button with title '_Save'
-
-'enter save single file =' event created with arguments 'usecase'
-
-'save from tab' event created with arguments ''
-Saving VideoStore test-case AddMovie - version , exactness 1, only file with stem usecase
+'save' event created with arguments ''
+Saving VideoStore test-case AddMovie - version , exactness 1, only usecase.gui
 Redrawing test AddMovie coloured red
 (Second column 'output different' coloured red)
 
@@ -68,8 +59,26 @@ Adding file errors.gui under heading 'Comparison Files', coloured green
 Adding file output.gui under heading 'Comparison Files', coloured red
 Adding file usecase.gui under heading 'Comparison Files', coloured green
 
+---------- Text Info Window ----------
+Test FAILED :
+------------------ Differences in output --------------------
+2c2
+< 'set new movie name to' event created with arguments 'Star Wars'
+---
+> 'set new movie name to' event created with arguments 'Chariots of Fire'
+5c5
+< Adding movie 'Star Wars'. There are now 1 movies.
+---
+> Adding movie 'Chariots of Fire'. There are now 1 movies.
+------------------ Differences in usecase --------------------
+1c1
+< set new movie name to Star Wars
+---
+> set new movie name to Chariots of Fire
+--------------------------------------
+
 'quit' event created with arguments ''
-Top Window title set to TextTest dynamic GUI (tests started at 04Sep09:02:43)
+Top Window title set to TextTest dynamic GUI (tests started at 06Sep09:06:08)
 Expanding tests in tree view...
 -> Added VideoStore test-suite TargetApp to test tree view.
 ->   Added VideoStore test-case AddMovie to test tree view.
@@ -81,7 +90,6 @@ Adding file testsuite.gui under heading 'Definition Files', coloured white
 
 Viewing notebook page for 'Saving'
 Viewing entry for option 'Version to save'
-Viewing entry for option 'Save single file' (drop-down list containing ['', 'output', 'errors'])
 Viewing check button for switch 'Replace successfully compared files also'
 Viewing button with title '_Save'
 
