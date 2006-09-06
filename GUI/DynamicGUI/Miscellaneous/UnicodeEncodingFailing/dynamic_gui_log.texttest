@@ -1,13 +1,12 @@
-Top Window title set to TextTest dynamic GUI (tests started at 06Sep08:42:08)
+Top Window title set to TextTest dynamic GUI (tests started at 06Sep13:42:06)
 Expanding tests in tree view...
--> Added DIP test-suite TargetApp to test tree view.
-->   Added DIP test-suite Game9952 to test tree view.
-->     Added DIP test-case S01.99 to test tree view.
+-> Added HELLO test-suite TargetApp to test tree view.
+->   Added HELLO test-case test1 to test tree view.
 
 Creating tool bar with buttons : _Quit, _Save
-Viewing test DIP test-suite TargetApp
+Viewing test HELLO test-suite TargetApp
 
-Adding file testsuite.dip under heading 'Definition Files', coloured white
+Adding file testsuite.hello under heading 'Definition Files', coloured white
 
 Viewing notebook page for 'Saving'
 Viewing entry for option 'Version to save'
@@ -15,35 +14,42 @@ Viewing check button for switch 'Replace successfully compared files also'
 Viewing button with title '_Save'
 
 Waiting for application event 'completion of test actions' to occur.
-Redrawing test S01.99 coloured white
-Redrawing test S01.99 coloured yellow
-Redrawing test S01.99 coloured red
-(Second column 'output different' coloured red)
+Redrawing test test1 coloured white
+Redrawing test test1 coloured yellow
+Redrawing test test1 coloured red
+(Second column 'output different(+)' coloured red)
 Expected application event 'completion of test actions' occurred, proceeding.
 
-'select test' event created with arguments 'S01.99'
+'select test' event created with arguments 'test1'
 Tests: All 1 selected, all visible
-Viewing test DIP test-case S01.99
+Viewing test HELLO test-case test1
 Warning: Failed to decode string 'Test FAILED :
 ------------------ Differences in output --------------------
-1d0
-< Test: åäöÅÄÖ
+2,3d1
+< 
+< By the way, åäöÅÄÖ.
+------------------ New result in errors --------------------
 ' using default locale encoding 'utf'. Trying strict UTF-8 encoding ...
 Warning: Failed to decode string 'Test FAILED :
 ------------------ Differences in output --------------------
-1d0
-< Test: åäöÅÄÖ
+2,3d1
+< 
+< By the way, åäöÅÄÖ.
+------------------ New result in errors --------------------
 ' both using strict UTF-8 and 'utf' encodings.
 Reverting to non-strict UTF-8 encoding but replacing problematic
 characters with the Unicode replacement character, U+FFFD.
 
-Adding file output.dip under heading 'Comparison Files', coloured red
+Adding file output.hello under heading 'Comparison Files', coloured red
+Adding file errors.hello under heading 'New Files', coloured red
 
 ---------- Text Info Window ----------
 Test FAILED :
 ------------------ Differences in output --------------------
-1d0
-< Test: åäöÅÄÖ
+2,3d1
+< 
+< By the way, åäöÅÄÖ.
+------------------ New result in errors --------------------
 --------------------------------------
 
 Tabs showing : Text Info, Viewing, Saving, Save Selection
