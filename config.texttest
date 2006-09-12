@@ -201,8 +201,6 @@ usecases:USECASE_HOME
 # List of constant input files to create links to. Will copy them on Windows as symbolic links
 # don't exist.
 link_test_path:config
-link_test_path:FakeBugcli/bugcli
-link_test_path:FakeBugcli/bugcli.py
 link_test_path:personaldir
 link_test_path:gtk.py
 # Mock version of core-file finder
@@ -215,6 +213,8 @@ link_test_path:xterm
 link_test_path:Xvfb
 link_test_path:xclock
 link_test_path:xdpyinfo
+
+collect_traffic:bugcli
 
 # Tell it that we want to track what files are created
 create_catalogues:true
