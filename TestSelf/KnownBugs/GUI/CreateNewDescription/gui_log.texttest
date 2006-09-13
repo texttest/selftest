@@ -52,10 +52,11 @@ Viewing notebook page for 'Bugs'
 Viewing entry for option 'Text or regexp to match'
 Viewing entry for option 'File to search in' (set to 'output') (drop-down list containing ['errors', 'output'])
 Viewing entry for option 'Version to report for'
+Viewing entry for option 'Trigger only when run on machine(s)'
 Viewing entry for option 'Extract info from bug system' (set to '<none>') (drop-down list containing ['<none>', 'bugzilla'])
 Viewing entry for option 'Bug ID (only if bug system given)'
-Viewing entry for option 'Full description (only if bug system NOT given)'
-Viewing entry for option 'Few-word summary (only if bug system NOT given)'
+Viewing entry for option 'Full description (no bug system)'
+Viewing entry for option 'Few-word summary (no bug system)'
 Viewing check button for switch 'Trigger if given text is NOT present'
 Viewing check button for switch 'Trigger even if other files differ (report as internal error)'
 Viewing button with title 'Report'
@@ -69,22 +70,25 @@ ERROR : Must either provide a bug system or fill in both description and summary
 
 'agree to texttest message' event created with arguments ''
 
-'enter full description (only if bug system not given) =' event created with arguments 'Not mentioning geoff enough'
+'enter full description (no bug system) =' event created with arguments 'Not mentioning geoff enough'
 
 'report described bugs' event created with arguments ''
 ERROR : Must either provide a bug system or fill in both description and summary fields
 
 'agree to texttest message' event created with arguments ''
 
-'enter few-word summary (only if bug system not given) =' event created with arguments 'No geoff'
+'enter few-word summary (no bug system) =' event created with arguments 'No geoff'
+
+'enter trigger only when run on machine(s) =' event created with arguments 'fake_machine1'
 
 'check trigger if given text is not present' event created with arguments ''
 
 'report described bugs' event created with arguments ''
-Recording known bugs to /users/geoff/texttesttmp/texttestgeoff13Sep151222/TestSelf/KnownBugs/GUI/CreateNewDescription/TargetApp/GrepTest/knownbugs.grep :
-[Reported by geoff at 13Sep15:12:58]
+Recording known bugs to /users/geoff/texttesttmp/texttestgeoff13Sep153721/TestSelf/KnownBugs/GUI/CreateNewDescription/TargetApp/GrepTest/knownbugs.grep :
+[Reported by geoff at 13Sep15:37:32]
 search_string:geoff
 search_file:errors
+execution_hosts:fake_machine1
 full_description:Not mentioning geoff enough
 brief_description:No geoff
 trigger_on_absence:1
@@ -112,16 +116,17 @@ Viewing notebook page for 'Bugs'
 Viewing entry for option 'Text or regexp to match' (set to 'geoff')
 Viewing entry for option 'File to search in' (set to 'errors') (drop-down list containing ['errors', 'output'])
 Viewing entry for option 'Version to report for'
+Viewing entry for option 'Trigger only when run on machine(s)' (set to 'fake_machine1')
 Viewing entry for option 'Extract info from bug system' (set to '<none>') (drop-down list containing ['<none>', 'bugzilla'])
 Viewing entry for option 'Bug ID (only if bug system given)'
-Viewing entry for option 'Full description (only if bug system NOT given)' (set to 'Not mentioning geoff enough')
-Viewing entry for option 'Few-word summary (only if bug system NOT given)' (set to 'No geoff')
+Viewing entry for option 'Full description (no bug system)' (set to 'Not mentioning geoff enough')
+Viewing entry for option 'Few-word summary (no bug system)' (set to 'No geoff')
 Viewing check button for switch 'Trigger if given text is NOT present' (checked)
 Viewing check button for switch 'Trigger even if other files differ (report as internal error)'
 Viewing button with title 'Report'
 
 'select file' event created with arguments 'knownbugs.grep'
-Viewing file /users/geoff/texttesttmp/texttestgeoff13Sep151222/TestSelf/KnownBugs/GUI/CreateNewDescription/TargetApp/GrepTest/knownbugs.grep using 'emacs', refresh set to 0
+Viewing file /users/geoff/texttesttmp/texttestgeoff13Sep153721/TestSelf/KnownBugs/GUI/CreateNewDescription/TargetApp/GrepTest/knownbugs.grep using 'emacs', refresh set to 0
 
 Terminating process that views and edits test files...
 
