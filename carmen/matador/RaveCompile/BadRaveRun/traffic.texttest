@@ -1,8 +1,8 @@
-<-SRV:TextTest slave server started on 192.168.99.32:51886
-<-CMD:env 'USECASE_RECORD_STDIN=' 'USECASE_RECORD_SCRIPT=' 'USECASE_REPLAY_SCRIPT=' qsub -N Rules-Matador_5_bad.ArtificialUser-matador -l 'carmarch=*i386_linux*,carmbuildmaster=1,short' -w e -notify -m n -cwd -b y -V -o framework_tmp/slavelog -e framework_tmp/slaveerrs 'exec /bin/tcsh -c "exec /users/geoff/work/master/Testing/TextTest/texttest.py -d /users/geoff/texttesttmp/texttest.carmengeoff04Sep110006/carmen/matador/RaveCompile/BadRaveRun/TargetApp -a cas -v rave.badrule -l -c /carm/proj/texttest/selftest_data -tp ArtificialUser/matador_2 -raveslave /users/geoff/texttesttmp/texttest.carmengeoff04Sep110006/carmen/matador/RaveCompile/BadRaveRun/texttesttmp/cas.rave.badrulegeoff04Sep110038 -servaddr 192.168.99.32:51879 -keeptmp -x -xr /users/geoff/work/master/Testing/Automatic/texttest -xw /users/geoff/texttesttmp/texttest.carmengeoff04Sep110006/carmen/matador/RaveCompile/BadRaveRun/raveslave"'
-->OUT:Your job 5009099 ("Rules-Matador_5_bad.ArtificialUser-matador") has been submitted
+<-SRV:TextTest slave server started on 192.168.99.72:56188
+<-CMD:env 'USECASE_RECORD_STDIN=' 'USECASE_RECORD_SCRIPT=' 'USECASE_REPLAY_SCRIPT=' qsub -N Rules-Matador_5_bad.ArtificialUser-matador -l 'carmarch=*i386_linux*,carmbuildmaster=1,short' -w e -notify -m n -cwd -b y -V -o framework_tmp/slavelog -e framework_tmp/slaveerrs 'exec /bin/tcsh -c "exec /users/geoff/work/master/Testing/TextTest/texttest.py -d /users/geoff/texttesttmp/texttest.carmengeoff18Sep150354/carmen/matador/RaveCompile/BadRaveRun/TargetApp -a cas -v rave.badrule -l -c /carm/proj/texttest/selftest_data -tp ArtificialUser/matador_2 -raveslave /users/geoff/texttesttmp/texttest.carmengeoff18Sep150354/carmen/matador/RaveCompile/BadRaveRun/texttesttmp/cas.rave.badrulegeoff18Sep150406 -servaddr 192.168.99.72:56182 -keeptmp -x -xr /users/geoff/work/master/Testing/Automatic/texttest -xw /users/geoff/texttesttmp/texttest.carmengeoff18Sep150354/carmen/matador/RaveCompile/BadRaveRun/raveslave"'
+->OUT:Your job 5330940 ("Rules-Matador_5_bad.ArtificialUser-matador") has been submitted
 <-SRV:Completed submission of all rule compilations
-->CLI:8206
+->CLI:28856
 cas.rave.badrule:ArtificialUser/matador_2
 (iravebased
 RunningRuleCompilation
@@ -18,7 +18,7 @@ S'start ruleset compilation'
 p6
 sS'freeText'
 p7
-S'Compiling ruleset Matador_5_bad on gatesville'
+S'Compiling ruleset Matador_5_bad on fivefinger'
 p8
 sS'started'
 p9
@@ -32,7 +32,7 @@ p12
 I0
 sS'briefText'
 p13
-S'RULES (gatesville)'
+S'RULES (fivefinger)'
 p14
 sS'executionHosts'
 p15
@@ -40,7 +40,7 @@ p15
 sS'testCompiling'
 p17
 Nsb.
-->CLI:8206
+->CLI:28856
 cas.rave.badrule:ArtificialUser/matador_2
 (iravebased
 RuleBuildFailed
@@ -52,7 +52,7 @@ S'unrunnable'
 p4
 sS'freeText'
 p5
-S'Build Rave program Matador_5_bad started on gatesville, 28 August 14:03\nGenerating code... \n*** Trouble report (1 error, 0 warnings):\n\n"source/Matador_5_bad", line 18.22:\n      16: %cost_weight% = parameter 1;\n      17: \n      18: %cost_of_a_roster% = sum(leg(roser),%cost_weight%);\n                               ^^^\n   ERROR: _topmodule.roser is undefined\n\n'
+S'Build Rave program Matador_5_bad started on reddog, 18 September 15:04\nGenerating code... \n*** Trouble report (1 error, 0 warnings):\n\n"source/Matador_5_bad", line 18.22:\n      16: %cost_weight% = parameter 1;\n      17: \n      18: %cost_of_a_roster% = sum(leg(roser),%cost_weight%);\n                               ^^^\n   ERROR: _topmodule.roser is undefined\n\n'
 p6
 sS'started'
 p7
@@ -69,5 +69,6 @@ p11
 (lp12
 sS'lifecycleChange'
 p13
-S''
+S'complete rule compilation'
+p14
 sb.

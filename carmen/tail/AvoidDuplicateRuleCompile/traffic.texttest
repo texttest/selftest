@@ -1,8 +1,8 @@
-<-SRV:TextTest slave server started on 192.168.99.57:58485
-<-CMD:env 'USECASE_RECORD_STDIN=' 'USECASE_RECORD_SCRIPT=' 'USECASE_REPLAY_SCRIPT=' qsub -N Rules-amtail.BasicUser-afc -l 'carmarch=*i386_linux*,carmbuildmaster=1,short' -w e -notify -m n -cwd -b y -V -o framework_tmp/slavelog -e framework_tmp/slaveerrs 'exec /bin/tcsh -c "exec /users/geoff/work/master/Testing/TextTest/texttest.py -d /users/geoff/texttesttmp/texttest.carmengeoff04Sep110006/carmen/tail/AvoidDuplicateRuleCompile/TargetApp -a tas -v local -l -c /carm/proj/texttest/selftest_data -tp BasicUser/SubTestSuite/restDest_test -raveslave /users/geoff/texttesttmp/texttest.carmengeoff04Sep110006/carmen/tail/AvoidDuplicateRuleCompile/texttesttmp/tas.localgeoff04Sep110055 -servaddr 192.168.99.57:58483 -x -xr /users/geoff/work/master/Testing/Automatic/texttest -xw /users/geoff/texttesttmp/texttest.carmengeoff04Sep110006/carmen/tail/AvoidDuplicateRuleCompile/raveslave"'
-->OUT:Your job 4985379 ("Rules-amtail.BasicUser-afc") has been submitted
+<-SRV:TextTest slave server started on 192.168.99.72:57817
+<-CMD:env 'USECASE_RECORD_STDIN=' 'USECASE_RECORD_SCRIPT=' 'USECASE_REPLAY_SCRIPT=' qsub -N Rules-amtail.BasicUser-afc -l 'carmarch=*i386_linux*,carmbuildmaster=1,short' -w e -notify -m n -cwd -b y -V -o framework_tmp/slavelog -e framework_tmp/slaveerrs 'exec /bin/tcsh -c "exec /users/geoff/work/master/Testing/TextTest/texttest.py -d /users/geoff/texttesttmp/texttest.carmengeoff18Sep161043/carmen/tail/AvoidDuplicateRuleCompile/TargetApp -a tas -v local -l -c /carm/proj/texttest/selftest_data -tp BasicUser/SubTestSuite/restDest_test -raveslave /users/geoff/texttesttmp/texttest.carmengeoff18Sep161043/carmen/tail/AvoidDuplicateRuleCompile/texttesttmp/tas.localgeoff18Sep161056 -servaddr 192.168.99.72:57812 -x -xr /users/geoff/work/master/Testing/Automatic/texttest -xw /users/geoff/texttesttmp/texttest.carmengeoff18Sep161043/carmen/tail/AvoidDuplicateRuleCompile/raveslave"'
+->OUT:Your job 5331152 ("Rules-amtail.BasicUser-afc") has been submitted
 <-SRV:Completed submission of all rule compilations
-->CLI:4382
+->CLI:772
 tas.local:BasicUser/SubTestSuite/restDest_test
 (iravebased
 RunningRuleCompilation
@@ -18,7 +18,7 @@ S'start ruleset compilation'
 p6
 sS'freeText'
 p7
-S'Compiling ruleset amtail on roosterville'
+S'Compiling ruleset amtail on granville'
 p8
 sS'started'
 p9
@@ -32,7 +32,7 @@ p12
 I0
 sS'briefText'
 p13
-S'RULES (roosterville)'
+S'RULES (granville)'
 p14
 sS'executionHosts'
 p15
@@ -40,9 +40,9 @@ p15
 sS'testCompiling'
 p17
 Nsb.
-<-CMD:qdel 4985379
-->OUT:geoff has registered the job 4985379 for deletion
-->CLI:4382
+<-CMD:qdel 5331152
+->OUT:geoff has registered the job 5331152 for deletion
+->CLI:772
 tas.local:BasicUser/SubTestSuite/restDest_test
 (iravebased
 RuleBuildFailed
@@ -54,7 +54,7 @@ S'unrunnable'
 p4
 sS'freeText'
 p5
-S'Ruleset compilation killed explicitly at 16:59'
+S'Ruleset compilation killed explicitly at 16:11'
 p6
 sS'started'
 p7
@@ -64,12 +64,13 @@ p8
 I1
 sS'briefText'
 p9
-S'Ruleset build killed at 16:59'
+S'Ruleset build killed at 16:11'
 p10
 sS'executionHosts'
 p11
 (lp12
 sS'lifecycleChange'
 p13
-S''
+S'complete rule compilation'
+p14
 sb.

@@ -1,8 +1,8 @@
-<-SRV:TextTest slave server started on 192.168.99.64:37505
-<-CMD:env 'USECASE_RECORD_STDIN=' 'USECASE_RECORD_SCRIPT=' 'USECASE_REPLAY_SCRIPT=' qsub -N Rules-Ruleset_8.ArtificialUser-matador -l 'carmarch=*i386_linux*,carmbuildmaster=1,short' -w e -notify -m n -cwd -b y -V -o framework_tmp/slavelog -e framework_tmp/slaveerrs 'exec /bin/tcsh -c "exec /users/geoff/work/master/Testing/TextTest/texttest.py -d /users/geoff/texttesttmp/texttest.carmengeoff04Sep110006/carmen/matador/RaveCompile/RaveRunParallel/TargetApp -a cas -v rave.extraversion -l -c /carm/proj/texttest/selftest_data -tp ArtificialUser/generate_in_subperiod -raveslave /users/geoff/texttesttmp/texttest.carmengeoff04Sep110006/carmen/matador/RaveCompile/RaveRunParallel/texttesttmp/cas.rave.extraversiongeoff04Sep110037 -servaddr 192.168.99.64:37499 -noperf -x -xr /users/geoff/work/master/Testing/Automatic/texttest -xw /users/geoff/texttesttmp/texttest.carmengeoff04Sep110006/carmen/matador/RaveCompile/RaveRunParallel/raveslave"'
-->OUT:Your job 5009100 ("Rules-Ruleset_8.ArtificialUser-matador") has been submitted
+<-SRV:TextTest slave server started on 192.168.99.72:56885
+<-CMD:env 'USECASE_RECORD_STDIN=' 'USECASE_RECORD_SCRIPT=' 'USECASE_REPLAY_SCRIPT=' qsub -N Rules-Ruleset_8.ArtificialUser-matador -l 'carmarch=*i386_linux*,carmbuildmaster=1,short' -w e -notify -m n -cwd -b y -V -o framework_tmp/slavelog -e framework_tmp/slaveerrs 'exec /bin/tcsh -c "exec /users/geoff/work/master/Testing/TextTest/texttest.py -d /users/geoff/texttesttmp/texttest.carmengeoff18Sep152527/carmen/matador/RaveCompile/RaveRunParallel/TargetApp -a cas -v rave.extraversion -l -c /carm/proj/texttest/selftest_data -tp ArtificialUser/generate_in_subperiod -raveslave /users/geoff/texttesttmp/texttest.carmengeoff18Sep152527/carmen/matador/RaveCompile/RaveRunParallel/texttesttmp/cas.rave.extraversiongeoff18Sep152553 -servaddr 192.168.99.72:56884 -noperf -x -xr /users/geoff/work/master/Testing/Automatic/texttest -xw /users/geoff/texttesttmp/texttest.carmengeoff18Sep152527/carmen/matador/RaveCompile/RaveRunParallel/raveslave"'
+->OUT:Your job 5331047 ("Rules-Ruleset_8.ArtificialUser-matador") has been submitted
 <-SRV:Completed submission of all rule compilations
-->CLI:31420
+->CLI:30873
 cas.rave.extraversion:ArtificialUser/generate_in_subperiod
 (iravebased
 RunningRuleCompilation
@@ -18,7 +18,7 @@ S'start ruleset compilation'
 p6
 sS'freeText'
 p7
-S'Compiling ruleset Ruleset_8 on pennsville'
+S'Compiling ruleset Ruleset_8 on fivefinger'
 p8
 sS'started'
 p9
@@ -32,7 +32,7 @@ p12
 I0
 sS'briefText'
 p13
-S'RULES (pennsville)'
+S'RULES (fivefinger)'
 p14
 sS'executionHosts'
 p15
@@ -40,7 +40,7 @@ p15
 sS'testCompiling'
 p17
 Nsb.
-->CLI:31420
+->CLI:30873
 cas.rave.extraversion:ArtificialUser/generate_in_subperiod
 (iplugins
 TestState
@@ -52,7 +52,7 @@ S'ruleset_compiled'
 p4
 sS'freeText'
 p5
-S'Build Rave program Ruleset_8 started on pennsville, 28 August 14:03\nGenerating code... done.\nBuilding for matador on localhost - 2 files out of 2 need to be compiled\nCompiling... done.\nInstalling matador on architecture i386_linux... done.\nBuild Rave program finished at 28 August 14:03\nCleaning up... done.\n'
+S'Build Rave program Ruleset_8 started on fivefinger, 18 September 15:26\nGenerating code... done.\nBuilding for matador on localhost - 2 files out of 2 need to be compiled\nCompiling... done.\nInstalling matador on architecture i386_linux... done.\nBuild Rave program finished at 18 September 15:26\nCleaning up... done.\n'
 p6
 sS'started'
 p7
@@ -68,14 +68,15 @@ p10
 (lp11
 sS'lifecycleChange'
 p12
-S''
+S'complete rule compilation'
+p13
 sb.
-<-CMD:env 'USECASE_RECORD_STDIN=' 'USECASE_RECORD_SCRIPT=' 'USECASE_REPLAY_SCRIPT=' qsub -N Test-generate_in_subperiod.ArtificialUser-Matador.rave.extraversion -p -11.4 -l 'osversion=RHEL4,model=Opteron*,carmarch=*i386_linux*,carmrunmaster=1,short' -w e -notify -m n -cwd -b y -V -o framework_tmp/slavelog -e framework_tmp/slaveerrs 'exec /bin/tcsh -c "exec /users/geoff/work/master/Testing/TextTest/texttest.py -d /users/geoff/texttesttmp/texttest.carmengeoff04Sep110006/carmen/matador/RaveCompile/RaveRunParallel/TargetApp -a cas -v rave.extraversion -l -c /carm/proj/texttest/selftest_data -tp ArtificialUser/generate_in_subperiod -slave /users/geoff/texttesttmp/texttest.carmengeoff04Sep110006/carmen/matador/RaveCompile/RaveRunParallel/texttesttmp/cas.rave.extraversiongeoff04Sep110037 -servaddr 192.168.99.64:37499 -noperf -x -xr /users/geoff/work/master/Testing/Automatic/texttest -xw /users/geoff/texttesttmp/texttest.carmengeoff04Sep110006/carmen/matador/RaveCompile/RaveRunParallel/slave"'
-->OUT:Your job 5009108 ("Test-generate_in_subperiod.ArtificialUser-Matador.rave.extraversion") has been submitted
-<-CMD:env 'USECASE_RECORD_STDIN=' 'USECASE_RECORD_SCRIPT=' 'USECASE_REPLAY_SCRIPT=' qsub -N Test-generate_in_subperiod.ArtificialUser-Matador.rave.extraversion.parallel -pe matador 2 -p -9.4 -l 'osversion=RHEL4,model=Opteron*,carmarch=*i386_linux*,carmrunmaster=1,short' -w e -notify -m n -cwd -b y -V -o framework_tmp/slavelog -e framework_tmp/slaveerrs 'exec /bin/tcsh -c "exec /users/geoff/work/master/Testing/TextTest/texttest.py -d /users/geoff/texttesttmp/texttest.carmengeoff04Sep110006/carmen/matador/RaveCompile/RaveRunParallel/TargetApp -a cas -v rave.extraversion.parallel -l -c /carm/proj/texttest/selftest_data -tp ArtificialUser/generate_in_subperiod -slave /users/geoff/texttesttmp/texttest.carmengeoff04Sep110006/carmen/matador/RaveCompile/RaveRunParallel/texttesttmp/cas.rave.extraversion.parallelgeoff04Sep110037 -servaddr 192.168.99.64:37499 -noperf -x -xr /users/geoff/work/master/Testing/Automatic/texttest -xw /users/geoff/texttesttmp/texttest.carmengeoff04Sep110006/carmen/matador/RaveCompile/RaveRunParallel/slave"'
-->OUT:Your job 5009107 ("Test-generate_in_subperiod.ArtificialUser-Matador.rave.extraversion.parallel") has been submitted
+<-CMD:env 'USECASE_RECORD_STDIN=' 'USECASE_RECORD_SCRIPT=' 'USECASE_REPLAY_SCRIPT=' qsub -N Test-generate_in_subperiod.ArtificialUser-Matador.rave.extraversion.parallel -pe matador 2 -p -9.4 -l 'osversion=RHEL4,model=Opteron*,carmarch=*i386_linux*,carmrunmaster=1,short' -w e -notify -m n -cwd -b y -V -o framework_tmp/slavelog -e framework_tmp/slaveerrs 'exec /bin/tcsh -c "exec /users/geoff/work/master/Testing/TextTest/texttest.py -d /users/geoff/texttesttmp/texttest.carmengeoff18Sep152527/carmen/matador/RaveCompile/RaveRunParallel/TargetApp -a cas -v rave.extraversion.parallel -l -c /carm/proj/texttest/selftest_data -tp ArtificialUser/generate_in_subperiod -slave /users/geoff/texttesttmp/texttest.carmengeoff18Sep152527/carmen/matador/RaveCompile/RaveRunParallel/texttesttmp/cas.rave.extraversion.parallelgeoff18Sep152553 -servaddr 192.168.99.72:56884 -noperf -x -xr /users/geoff/work/master/Testing/Automatic/texttest -xw /users/geoff/texttesttmp/texttest.carmengeoff18Sep152527/carmen/matador/RaveCompile/RaveRunParallel/slave"'
+->OUT:Your job 5331051 ("Test-generate_in_subperiod.ArtificialUser-Matador.rave.extraversion.parallel") has been submitted
+<-CMD:env 'USECASE_RECORD_STDIN=' 'USECASE_RECORD_SCRIPT=' 'USECASE_REPLAY_SCRIPT=' qsub -N Test-generate_in_subperiod.ArtificialUser-Matador.rave.extraversion -p -11.4 -l 'osversion=RHEL4,model=Opteron*,carmarch=*i386_linux*,carmrunmaster=1,short' -w e -notify -m n -cwd -b y -V -o framework_tmp/slavelog -e framework_tmp/slaveerrs 'exec /bin/tcsh -c "exec /users/geoff/work/master/Testing/TextTest/texttest.py -d /users/geoff/texttesttmp/texttest.carmengeoff18Sep152527/carmen/matador/RaveCompile/RaveRunParallel/TargetApp -a cas -v rave.extraversion -l -c /carm/proj/texttest/selftest_data -tp ArtificialUser/generate_in_subperiod -slave /users/geoff/texttesttmp/texttest.carmengeoff18Sep152527/carmen/matador/RaveCompile/RaveRunParallel/texttesttmp/cas.rave.extraversiongeoff18Sep152553 -servaddr 192.168.99.72:56884 -noperf -x -xr /users/geoff/work/master/Testing/Automatic/texttest -xw /users/geoff/texttesttmp/texttest.carmengeoff18Sep152527/carmen/matador/RaveCompile/RaveRunParallel/slave"'
+->OUT:Your job 5331052 ("Test-generate_in_subperiod.ArtificialUser-Matador.rave.extraversion") has been submitted
 <-SRV:Completed submission of all tests
-->CLI:31770
+->CLI:4641
 cas.rave.extraversion:ArtificialUser/generate_in_subperiod
 (idefault
 Running
@@ -89,7 +90,7 @@ sS'bkgProcess'
 p5
 NsS'freeText'
 p6
-S'Running on schefferville'
+S'Running on bagotville'
 p7
 sS'started'
 p8
@@ -99,19 +100,19 @@ p9
 I0
 sS'briefText'
 p10
-S'RUN (schefferville)'
+S'RUN (bagotville)'
 p11
 sS'executionHosts'
 p12
 (lp13
-S'schefferville'
+S'bagotville'
 p14
 asS'lifecycleChange'
 p15
 S'start'
 p16
 sb.
-->CLI:28700
+->CLI:4665
 cas.rave.extraversion.parallel:ArtificialUser/generate_in_subperiod
 (idefault
 Running
@@ -125,7 +126,7 @@ sS'bkgProcess'
 p5
 NsS'freeText'
 p6
-S'Running on bagotville,graceville'
+S'Running on knoxville,graceville'
 p7
 sS'started'
 p8
@@ -135,12 +136,12 @@ p9
 I0
 sS'briefText'
 p10
-S'RUN (bagotville,graceville)'
+S'RUN (knoxville,graceville)'
 p11
 sS'executionHosts'
 p12
 (lp13
-S'bagotville'
+S'knoxville'
 p14
 aS'graceville'
 p15
@@ -149,7 +150,7 @@ p16
 S'start'
 p17
 sb.
-->CLI:31770
+->CLI:4641
 cas.rave.extraversion:ArtificialUser/generate_in_subperiod
 (ioptimization
 OptimizationTestComparison
@@ -208,7 +209,7 @@ p25
 (dp26
 S'_FileAppender__FileAppender_filename'
 p27
-S'/users/geoff/texttesttmp/texttest.carmengeoff28Aug140324/carmen/matador/RaveCompile/RaveRunParallel/testcomparison.texttest'
+S'/users/geoff/texttesttmp/texttest.carmengeoff18Sep152527/carmen/matador/RaveCompile/RaveRunParallel/slave/testcomparison.texttest'
 p28
 sS'_FileAppender__FileAppender_rotation'
 p29
@@ -227,14 +228,14 @@ S'slave server'
 p35
 sS'_Logger__Logger_timelaststep'
 p36
-F1156766634.0687261
+F1158585976.6082001
 sS'_Logger__Logger_useansicodes'
 p37
 S'FALSE'
 p38
 sS'_Logger__Logger_timeinit'
 p39
-F1156766634.0687261
+F1158585976.6082001
 sS'_Logger__Logger_timeformat'
 p40
 S'%d.%m.%Y %H:%M:%S'
@@ -251,7 +252,7 @@ S''
 sS'executionHosts'
 p45
 (lp46
-S'schefferville'
+S'bagotville'
 p47
 asS'logStem'
 p48
@@ -259,7 +260,7 @@ S'output'
 p49
 sS'appAbsPath'
 p50
-S'/users/geoff/texttesttmp/texttest.carmengeoff28Aug140324/carmen/matador/RaveCompile/RaveRunParallel/TargetApp'
+S'/users/geoff/texttesttmp/texttest.carmengeoff18Sep152527/carmen/matador/RaveCompile/RaveRunParallel/TargetApp'
 p51
 sS'allResults'
 p52
@@ -270,7 +271,7 @@ p54
 (dp55
 S'stdFile'
 p56
-S'/users/geoff/texttesttmp/texttest.carmengeoff28Aug140324/carmen/matador/RaveCompile/RaveRunParallel/TargetApp/ArtificialUser/generate_in_subperiod/catalogue.cas'
+S'/users/geoff/texttesttmp/texttest.carmengeoff18Sep152527/carmen/matador/RaveCompile/RaveRunParallel/TargetApp/ArtificialUser/generate_in_subperiod/catalogue.cas'
 p57
 sS'severity'
 p58
@@ -302,7 +303,7 @@ FileAppender
 p64
 (dp65
 g27
-S'/users/geoff/texttesttmp/texttest.carmengeoff28Aug140324/carmen/matador/RaveCompile/RaveRunParallel/filecomparison.texttest'
+S'/users/geoff/texttesttmp/texttest.carmengeoff18Sep152527/carmen/matador/RaveCompile/RaveRunParallel/slave/filecomparison.texttest'
 p66
 sg29
 I0
@@ -314,11 +315,11 @@ sg34
 S'windows processes'
 p67
 sg36
-F1156766634.0687261
+F1158585976.6082001
 sg37
 g38
 sg39
-F1156766634.0687261
+F1158585976.6082001
 sg40
 g41
 sg42
@@ -328,7 +329,7 @@ p68
 I00
 sS'tmpFile'
 p69
-S'/users/geoff/texttesttmp/texttest.carmengeoff28Aug140324/carmen/matador/RaveCompile/RaveRunParallel/texttesttmp/cas.rave.extraversiongeoff28Aug140337/ArtificialUser/generate_in_subperiod/catalogue.cas'
+S'/users/geoff/texttesttmp/texttest.carmengeoff18Sep152527/carmen/matador/RaveCompile/RaveRunParallel/texttesttmp/cas.rave.extraversiongeoff18Sep152553/ArtificialUser/generate_in_subperiod/catalogue.cas'
 p70
 sS'stdCmpFile'
 p71
@@ -340,13 +341,16 @@ p73
 sS'tmpCmpFile'
 p74
 g70
+sS'displayPriority'
+p75
+I99
 sba(icomparetest
 FileComparison
-p75
-(dp76
+p76
+(dp77
 g56
-S'/users/geoff/texttesttmp/texttest.carmengeoff28Aug140324/carmen/matador/RaveCompile/RaveRunParallel/TargetApp/ArtificialUser/generate_in_subperiod/errors.cas'
-p77
+S'/users/geoff/texttesttmp/texttest.carmengeoff18Sep152527/carmen/matador/RaveCompile/RaveRunParallel/TargetApp/ArtificialUser/generate_in_subperiod/errors.cas'
+p78
 sg58
 I2
 sg11
@@ -354,24 +358,26 @@ g59
 sg68
 I00
 sg69
-S'/users/geoff/texttesttmp/texttest.carmengeoff28Aug140324/carmen/matador/RaveCompile/RaveRunParallel/texttesttmp/cas.rave.extraversiongeoff28Aug140337/ArtificialUser/generate_in_subperiod/errors.cas'
-p78
-sg71
-S'/users/geoff/texttesttmp/texttest.carmengeoff28Aug140324/carmen/matador/RaveCompile/RaveRunParallel/texttesttmp/cas.rave.extraversiongeoff28Aug140337/ArtificialUser/generate_in_subperiod/framework_tmp/errors.casorigcmp'
+S'/users/geoff/texttesttmp/texttest.carmengeoff18Sep152527/carmen/matador/RaveCompile/RaveRunParallel/texttesttmp/cas.rave.extraversiongeoff18Sep152553/ArtificialUser/generate_in_subperiod/errors.cas'
 p79
+sg71
+S'/users/geoff/texttesttmp/texttest.carmengeoff18Sep152527/carmen/matador/RaveCompile/RaveRunParallel/texttesttmp/cas.rave.extraversiongeoff18Sep152553/ArtificialUser/generate_in_subperiod/framework_tmp/errors.casorigcmp'
+p80
 sg72
 S'errors'
-p80
-sg74
-S'/users/geoff/texttesttmp/texttest.carmengeoff28Aug140324/carmen/matador/RaveCompile/RaveRunParallel/texttesttmp/cas.rave.extraversiongeoff28Aug140337/ArtificialUser/generate_in_subperiod/framework_tmp/errors.cascmp'
 p81
+sg74
+S'/users/geoff/texttesttmp/texttest.carmengeoff18Sep152527/carmen/matador/RaveCompile/RaveRunParallel/texttesttmp/cas.rave.extraversiongeoff18Sep152553/ArtificialUser/generate_in_subperiod/framework_tmp/errors.cascmp'
+p82
+sg75
+I99
 sba(icomparetest
 FileComparison
-p82
-(dp83
+p83
+(dp84
 g56
-S'/users/geoff/texttesttmp/texttest.carmengeoff28Aug140324/carmen/matador/RaveCompile/RaveRunParallel/TargetApp/ArtificialUser/generate_in_subperiod/output.cas'
-p84
+S'/users/geoff/texttesttmp/texttest.carmengeoff18Sep152527/carmen/matador/RaveCompile/RaveRunParallel/TargetApp/ArtificialUser/generate_in_subperiod/output.cas'
+p85
 sg58
 I2
 sg11
@@ -379,24 +385,26 @@ g59
 sg68
 I00
 sg69
-S'/users/geoff/texttesttmp/texttest.carmengeoff28Aug140324/carmen/matador/RaveCompile/RaveRunParallel/texttesttmp/cas.rave.extraversiongeoff28Aug140337/ArtificialUser/generate_in_subperiod/output.cas'
-p85
-sg71
-S'/users/geoff/texttesttmp/texttest.carmengeoff28Aug140324/carmen/matador/RaveCompile/RaveRunParallel/texttesttmp/cas.rave.extraversiongeoff28Aug140337/ArtificialUser/generate_in_subperiod/framework_tmp/output.casorigcmp'
+S'/users/geoff/texttesttmp/texttest.carmengeoff18Sep152527/carmen/matador/RaveCompile/RaveRunParallel/texttesttmp/cas.rave.extraversiongeoff18Sep152553/ArtificialUser/generate_in_subperiod/output.cas'
 p86
+sg71
+S'/users/geoff/texttesttmp/texttest.carmengeoff18Sep152527/carmen/matador/RaveCompile/RaveRunParallel/texttesttmp/cas.rave.extraversiongeoff18Sep152553/ArtificialUser/generate_in_subperiod/framework_tmp/output.casorigcmp'
+p87
 sg72
 S'output'
-p87
-sg74
-S'/users/geoff/texttesttmp/texttest.carmengeoff28Aug140324/carmen/matador/RaveCompile/RaveRunParallel/texttesttmp/cas.rave.extraversiongeoff28Aug140337/ArtificialUser/generate_in_subperiod/framework_tmp/output.cascmp'
 p88
+sg74
+S'/users/geoff/texttesttmp/texttest.carmengeoff18Sep152527/carmen/matador/RaveCompile/RaveRunParallel/texttesttmp/cas.rave.extraversiongeoff18Sep152553/ArtificialUser/generate_in_subperiod/framework_tmp/output.cascmp'
+p89
+sg75
+I99
 sba(icomparetest
 FileComparison
-p89
-(dp90
+p90
+(dp91
 g56
-S'/users/geoff/texttesttmp/texttest.carmengeoff28Aug140324/carmen/matador/RaveCompile/RaveRunParallel/TargetApp/ArtificialUser/generate_in_subperiod/solution.cas'
-p91
+S'/users/geoff/texttesttmp/texttest.carmengeoff18Sep152527/carmen/matador/RaveCompile/RaveRunParallel/TargetApp/ArtificialUser/generate_in_subperiod/solution.cas'
+p92
 sg58
 I1
 sg11
@@ -404,40 +412,43 @@ g59
 sg68
 I00
 sg69
-S'/users/geoff/texttesttmp/texttest.carmengeoff28Aug140324/carmen/matador/RaveCompile/RaveRunParallel/texttesttmp/cas.rave.extraversiongeoff28Aug140337/ArtificialUser/generate_in_subperiod/solution.cas'
-p92
+S'/users/geoff/texttesttmp/texttest.carmengeoff18Sep152527/carmen/matador/RaveCompile/RaveRunParallel/texttesttmp/cas.rave.extraversiongeoff18Sep152553/ArtificialUser/generate_in_subperiod/solution.cas'
+p93
 sg71
-g91
+g92
 sg72
 S'solution'
-p93
-sg74
-g92
-sbasS'appWriteDir'
 p94
-S'/users/geoff/texttesttmp/texttest.carmengeoff28Aug140324/carmen/matador/RaveCompile/RaveRunParallel/texttesttmp/cas.rave.extraversiongeoff28Aug140337'
+sg74
+g93
+sg75
+I99
+sbasS'appWriteDir'
 p95
-sS'correctResults'
+S'/users/geoff/texttesttmp/texttest.carmengeoff18Sep152527/carmen/matador/RaveCompile/RaveRunParallel/texttesttmp/cas.rave.extraversiongeoff18Sep152553'
 p96
-(lp97
+sS'correctResults'
+p97
+(lp98
 g54
-ag75
-ag82
-ag89
+ag76
+ag83
+ag90
 asS'lifecycleChange'
-p98
-S''
-sS'failedPrediction'
 p99
-NsS'costName'
+S'complete'
 p100
-S'cost of plan'
+sS'failedPrediction'
 p101
-sS'newResults'
+NsS'costName'
 p102
-(lp103
+S'cost of plan'
+p103
+sS'newResults'
+p104
+(lp105
 sb.
-->CLI:28700
+->CLI:4665
 cas.rave.extraversion.parallel:ArtificialUser/generate_in_subperiod
 (ioptimization
 OptimizationTestComparison
@@ -496,7 +507,7 @@ p25
 (dp26
 S'_FileAppender__FileAppender_filename'
 p27
-S'/users/geoff/texttesttmp/texttest.carmengeoff28Aug140324/carmen/matador/RaveCompile/RaveRunParallel/testcomparison.texttest'
+S'/users/geoff/texttesttmp/texttest.carmengeoff18Sep152527/carmen/matador/RaveCompile/RaveRunParallel/slave/testcomparison.texttest'
 p28
 sS'_FileAppender__FileAppender_rotation'
 p29
@@ -515,14 +526,14 @@ S'slave server'
 p35
 sS'_Logger__Logger_timelaststep'
 p36
-F1156766636.3507881
+F1158585977.8591039
 sS'_Logger__Logger_useansicodes'
 p37
 S'FALSE'
 p38
 sS'_Logger__Logger_timeinit'
 p39
-F1156766636.3507881
+F1158585977.8591039
 sS'_Logger__Logger_timeformat'
 p40
 S'%d.%m.%Y %H:%M:%S'
@@ -539,7 +550,7 @@ S''
 sS'executionHosts'
 p45
 (lp46
-S'bagotville'
+S'knoxville'
 p47
 aS'graceville'
 p48
@@ -549,7 +560,7 @@ S'output'
 p50
 sS'appAbsPath'
 p51
-S'/users/geoff/texttesttmp/texttest.carmengeoff28Aug140324/carmen/matador/RaveCompile/RaveRunParallel/TargetApp'
+S'/users/geoff/texttesttmp/texttest.carmengeoff18Sep152527/carmen/matador/RaveCompile/RaveRunParallel/TargetApp'
 p52
 sS'allResults'
 p53
@@ -560,7 +571,7 @@ p55
 (dp56
 S'stdFile'
 p57
-S'/users/geoff/texttesttmp/texttest.carmengeoff28Aug140324/carmen/matador/RaveCompile/RaveRunParallel/TargetApp/ArtificialUser/generate_in_subperiod/catalogue.cas'
+S'/users/geoff/texttesttmp/texttest.carmengeoff18Sep152527/carmen/matador/RaveCompile/RaveRunParallel/TargetApp/ArtificialUser/generate_in_subperiod/catalogue.cas'
 p58
 sS'severity'
 p59
@@ -592,7 +603,7 @@ FileAppender
 p65
 (dp66
 g27
-S'/users/geoff/texttesttmp/texttest.carmengeoff28Aug140324/carmen/matador/RaveCompile/RaveRunParallel/filecomparison.texttest'
+S'/users/geoff/texttesttmp/texttest.carmengeoff18Sep152527/carmen/matador/RaveCompile/RaveRunParallel/slave/filecomparison.texttest'
 p67
 sg29
 I0
@@ -604,11 +615,11 @@ sg34
 S'windows processes'
 p68
 sg36
-F1156766636.3507881
+F1158585977.8591039
 sg37
 g38
 sg39
-F1156766636.3507881
+F1158585977.8591039
 sg40
 g41
 sg42
@@ -618,7 +629,7 @@ p69
 I00
 sS'tmpFile'
 p70
-S'/users/geoff/texttesttmp/texttest.carmengeoff28Aug140324/carmen/matador/RaveCompile/RaveRunParallel/texttesttmp/cas.rave.extraversion.parallelgeoff28Aug140337/ArtificialUser/generate_in_subperiod/catalogue.cas'
+S'/users/geoff/texttesttmp/texttest.carmengeoff18Sep152527/carmen/matador/RaveCompile/RaveRunParallel/texttesttmp/cas.rave.extraversion.parallelgeoff18Sep152553/ArtificialUser/generate_in_subperiod/catalogue.cas'
 p71
 sS'stdCmpFile'
 p72
@@ -630,13 +641,16 @@ p74
 sS'tmpCmpFile'
 p75
 g71
+sS'displayPriority'
+p76
+I99
 sba(icomparetest
 FileComparison
-p76
-(dp77
+p77
+(dp78
 g57
-S'/users/geoff/texttesttmp/texttest.carmengeoff28Aug140324/carmen/matador/RaveCompile/RaveRunParallel/TargetApp/ArtificialUser/generate_in_subperiod/errors.cas'
-p78
+S'/users/geoff/texttesttmp/texttest.carmengeoff18Sep152527/carmen/matador/RaveCompile/RaveRunParallel/TargetApp/ArtificialUser/generate_in_subperiod/errors.cas'
+p79
 sg59
 I2
 sg11
@@ -644,24 +658,26 @@ g60
 sg69
 I00
 sg70
-S'/users/geoff/texttesttmp/texttest.carmengeoff28Aug140324/carmen/matador/RaveCompile/RaveRunParallel/texttesttmp/cas.rave.extraversion.parallelgeoff28Aug140337/ArtificialUser/generate_in_subperiod/errors.cas'
-p79
-sg72
-S'/users/geoff/texttesttmp/texttest.carmengeoff28Aug140324/carmen/matador/RaveCompile/RaveRunParallel/texttesttmp/cas.rave.extraversion.parallelgeoff28Aug140337/ArtificialUser/generate_in_subperiod/framework_tmp/errors.casorigcmp'
+S'/users/geoff/texttesttmp/texttest.carmengeoff18Sep152527/carmen/matador/RaveCompile/RaveRunParallel/texttesttmp/cas.rave.extraversion.parallelgeoff18Sep152553/ArtificialUser/generate_in_subperiod/errors.cas'
 p80
+sg72
+S'/users/geoff/texttesttmp/texttest.carmengeoff18Sep152527/carmen/matador/RaveCompile/RaveRunParallel/texttesttmp/cas.rave.extraversion.parallelgeoff18Sep152553/ArtificialUser/generate_in_subperiod/framework_tmp/errors.casorigcmp'
+p81
 sg73
 S'errors'
-p81
-sg75
-S'/users/geoff/texttesttmp/texttest.carmengeoff28Aug140324/carmen/matador/RaveCompile/RaveRunParallel/texttesttmp/cas.rave.extraversion.parallelgeoff28Aug140337/ArtificialUser/generate_in_subperiod/framework_tmp/errors.cascmp'
 p82
+sg75
+S'/users/geoff/texttesttmp/texttest.carmengeoff18Sep152527/carmen/matador/RaveCompile/RaveRunParallel/texttesttmp/cas.rave.extraversion.parallelgeoff18Sep152553/ArtificialUser/generate_in_subperiod/framework_tmp/errors.cascmp'
+p83
+sg76
+I99
 sba(icomparetest
 FileComparison
-p83
-(dp84
+p84
+(dp85
 g57
-S'/users/geoff/texttesttmp/texttest.carmengeoff28Aug140324/carmen/matador/RaveCompile/RaveRunParallel/TargetApp/ArtificialUser/generate_in_subperiod/output.cas'
-p85
+S'/users/geoff/texttesttmp/texttest.carmengeoff18Sep152527/carmen/matador/RaveCompile/RaveRunParallel/TargetApp/ArtificialUser/generate_in_subperiod/output.cas'
+p86
 sg59
 I2
 sg11
@@ -669,24 +685,26 @@ g60
 sg69
 I00
 sg70
-S'/users/geoff/texttesttmp/texttest.carmengeoff28Aug140324/carmen/matador/RaveCompile/RaveRunParallel/texttesttmp/cas.rave.extraversion.parallelgeoff28Aug140337/ArtificialUser/generate_in_subperiod/output.cas'
-p86
-sg72
-S'/users/geoff/texttesttmp/texttest.carmengeoff28Aug140324/carmen/matador/RaveCompile/RaveRunParallel/texttesttmp/cas.rave.extraversion.parallelgeoff28Aug140337/ArtificialUser/generate_in_subperiod/framework_tmp/output.casorigcmp'
+S'/users/geoff/texttesttmp/texttest.carmengeoff18Sep152527/carmen/matador/RaveCompile/RaveRunParallel/texttesttmp/cas.rave.extraversion.parallelgeoff18Sep152553/ArtificialUser/generate_in_subperiod/output.cas'
 p87
+sg72
+S'/users/geoff/texttesttmp/texttest.carmengeoff18Sep152527/carmen/matador/RaveCompile/RaveRunParallel/texttesttmp/cas.rave.extraversion.parallelgeoff18Sep152553/ArtificialUser/generate_in_subperiod/framework_tmp/output.casorigcmp'
+p88
 sg73
 S'output'
-p88
-sg75
-S'/users/geoff/texttesttmp/texttest.carmengeoff28Aug140324/carmen/matador/RaveCompile/RaveRunParallel/texttesttmp/cas.rave.extraversion.parallelgeoff28Aug140337/ArtificialUser/generate_in_subperiod/framework_tmp/output.cascmp'
 p89
+sg75
+S'/users/geoff/texttesttmp/texttest.carmengeoff18Sep152527/carmen/matador/RaveCompile/RaveRunParallel/texttesttmp/cas.rave.extraversion.parallelgeoff18Sep152553/ArtificialUser/generate_in_subperiod/framework_tmp/output.cascmp'
+p90
+sg76
+I99
 sba(icomparetest
 FileComparison
-p90
-(dp91
+p91
+(dp92
 g57
-S'/users/geoff/texttesttmp/texttest.carmengeoff28Aug140324/carmen/matador/RaveCompile/RaveRunParallel/TargetApp/ArtificialUser/generate_in_subperiod/solution.cas'
-p92
+S'/users/geoff/texttesttmp/texttest.carmengeoff18Sep152527/carmen/matador/RaveCompile/RaveRunParallel/TargetApp/ArtificialUser/generate_in_subperiod/solution.cas'
+p93
 sg59
 I1
 sg11
@@ -694,36 +712,39 @@ g60
 sg69
 I00
 sg70
-S'/users/geoff/texttesttmp/texttest.carmengeoff28Aug140324/carmen/matador/RaveCompile/RaveRunParallel/texttesttmp/cas.rave.extraversion.parallelgeoff28Aug140337/ArtificialUser/generate_in_subperiod/solution.cas'
-p93
+S'/users/geoff/texttesttmp/texttest.carmengeoff18Sep152527/carmen/matador/RaveCompile/RaveRunParallel/texttesttmp/cas.rave.extraversion.parallelgeoff18Sep152553/ArtificialUser/generate_in_subperiod/solution.cas'
+p94
 sg72
-g92
+g93
 sg73
 S'solution'
-p94
-sg75
-g93
-sbasS'appWriteDir'
 p95
-S'/users/geoff/texttesttmp/texttest.carmengeoff28Aug140324/carmen/matador/RaveCompile/RaveRunParallel/texttesttmp/cas.rave.extraversion.parallelgeoff28Aug140337'
+sg75
+g94
+sg76
+I99
+sbasS'appWriteDir'
 p96
-sS'correctResults'
+S'/users/geoff/texttesttmp/texttest.carmengeoff18Sep152527/carmen/matador/RaveCompile/RaveRunParallel/texttesttmp/cas.rave.extraversion.parallelgeoff18Sep152553'
 p97
-(lp98
+sS'correctResults'
+p98
+(lp99
 g55
-ag76
-ag83
-ag90
+ag77
+ag84
+ag91
 asS'lifecycleChange'
-p99
-S''
-sS'failedPrediction'
 p100
-NsS'costName'
+S'complete'
 p101
-S'cost of plan'
+sS'failedPrediction'
 p102
-sS'newResults'
+NsS'costName'
 p103
-(lp104
+S'cost of plan'
+p104
+sS'newResults'
+p105
+(lp106
 sb.

@@ -50,9 +50,6 @@ output:Written Solution to
 # Full name. If not present, capitalised extension is used
 full_name:Picador
 
-internal_error_text:integer infeasible
-internal_error_text:No MIP solution exists
-
 # Versions which exist for environmental or other purposes and should not be offered as save options
 unsaveable_version:i386_linux
 unsaveable_version:master

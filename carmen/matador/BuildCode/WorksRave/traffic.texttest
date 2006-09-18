@@ -1,12 +1,12 @@
-<-SRV:TextTest slave server started on 192.168.99.120:34370
-<-CMD:env 'USECASE_RECORD_STDIN=' 'USECASE_RECORD_SCRIPT=' 'USECASE_REPLAY_SCRIPT=' qsub -N Rules-Matador_5.ArtificialUser-matador -l 'carmarch=*i386_linux*,carmbuildmaster=1,short' -w e -notify -m n -cwd -b y -V -o framework_tmp/slavelog -e framework_tmp/slaveerrs 'exec /bin/tcsh -c "exec /users/geoff/work/master/Testing/TextTest/texttest.py -d /users/geoff/texttesttmp/texttest.carmengeoff05Sep153641/carmen/matador/BuildCode/WorksRave/TargetApp -a cas -v rave -l -c /carm/proj/texttest/selftest_data/fake_source_compiles -tp ArtificialUser/matador_2 -raveslave /users/geoff/texttesttmp/texttest.carmengeoff05Sep153641/carmen/matador/BuildCode/WorksRave/texttesttmp/cas.ravegeoff05Sep153648 -servaddr 192.168.99.120:34365 -noperf -x -xr /users/geoff/work/master/Testing/Automatic/texttest -xw /users/geoff/texttesttmp/texttest.carmengeoff05Sep153641/carmen/matador/BuildCode/WorksRave/raveslave"'
-->OUT:Your job 5010237 ("Rules-Matador_5.ArtificialUser-matador") has been submitted
-<-CMD:env 'USECASE_RECORD_STDIN=' 'USECASE_RECORD_SCRIPT=' 'USECASE_REPLAY_SCRIPT=' qsub -N Rules-PIC_umlauf_spiel.Picador-matador -l 'non_existent,carmarch=*i386_linux*,carmbuildmaster=1,short' -w e -notify -m n -cwd -b y -V -o framework_tmp/slavelog -e framework_tmp/slaveerrs 'exec /bin/tcsh -c "exec /users/geoff/work/master/Testing/TextTest/texttest.py -d /users/geoff/texttesttmp/texttest.carmengeoff05Sep153641/carmen/matador/BuildCode/WorksRave/TargetApp -a pac -v rave.badresource -l -c /carm/proj/texttest/selftest_data/fake_source_compiles -tp Picador/illegal_pairings -raveslave /users/geoff/texttesttmp/texttest.carmengeoff05Sep153641/carmen/matador/BuildCode/WorksRave/texttesttmp/pac.rave.badresourcegeoff05Sep153648 -servaddr 192.168.99.120:34365 -noperf -x -xr /users/geoff/work/master/Testing/Automatic/texttest -xw /users/geoff/texttesttmp/texttest.carmengeoff05Sep153641/carmen/matador/BuildCode/WorksRave/raveslave"'
+<-SRV:TextTest slave server started on 192.168.99.72:57208
+<-CMD:env 'USECASE_RECORD_STDIN=' 'USECASE_RECORD_SCRIPT=' 'USECASE_REPLAY_SCRIPT=' qsub -N Rules-Matador_5.ArtificialUser-matador -l 'carmarch=*i386_linux*,carmbuildmaster=1,short' -w e -notify -m n -cwd -b y -V -o framework_tmp/slavelog -e framework_tmp/slaveerrs 'exec /bin/tcsh -c "exec /users/geoff/work/master/Testing/TextTest/texttest.py -d /users/geoff/texttesttmp/texttest.carmengeoff18Sep153554/carmen/matador/BuildCode/WorksRave/TargetApp -a cas -v rave -l -c /carm/proj/texttest/selftest_data/fake_source_compiles -tp ArtificialUser/matador_2 -raveslave /users/geoff/texttesttmp/texttest.carmengeoff18Sep153554/carmen/matador/BuildCode/WorksRave/texttesttmp/cas.ravegeoff18Sep153601 -servaddr 192.168.99.72:57193 -noperf -x -xr /users/geoff/work/master/Testing/Automatic/texttest -xw /users/geoff/texttesttmp/texttest.carmengeoff18Sep153554/carmen/matador/BuildCode/WorksRave/raveslave"'
+->OUT:Your job 5331069 ("Rules-Matador_5.ArtificialUser-matador") has been submitted
+<-CMD:env 'USECASE_RECORD_STDIN=' 'USECASE_RECORD_SCRIPT=' 'USECASE_REPLAY_SCRIPT=' qsub -N Rules-PIC_umlauf_spiel.Picador-matador -l 'non_existent,carmarch=*i386_linux*,carmbuildmaster=1,short' -w e -notify -m n -cwd -b y -V -o framework_tmp/slavelog -e framework_tmp/slaveerrs 'exec /bin/tcsh -c "exec /users/geoff/work/master/Testing/TextTest/texttest.py -d /users/geoff/texttesttmp/texttest.carmengeoff18Sep153554/carmen/matador/BuildCode/WorksRave/TargetApp -a pac -v rave.badresource -l -c /carm/proj/texttest/selftest_data/fake_source_compiles -tp Picador/illegal_pairings -raveslave /users/geoff/texttesttmp/texttest.carmengeoff18Sep153554/carmen/matador/BuildCode/WorksRave/texttesttmp/pac.rave.badresourcegeoff18Sep153601 -servaddr 192.168.99.72:57193 -noperf -x -xr /users/geoff/work/master/Testing/Automatic/texttest -xw /users/geoff/texttesttmp/texttest.carmengeoff18Sep153554/carmen/matador/BuildCode/WorksRave/raveslave"'
 ->ERR:Unable to run job: unknown resource "non_existent".
 Exiting.
 ->EXC:256
 <-SRV:Completed submission of all rule compilations
-->CLI:15873
+->CLI:12732
 cas.rave:ArtificialUser/matador_2
 (iravebased
 RunningRuleCompilation
@@ -22,7 +22,7 @@ S'start ruleset compilation'
 p6
 sS'freeText'
 p7
-S'Compiling ruleset Matador_5 on bellville'
+S'Compiling ruleset Matador_5 on roosterville'
 p8
 sS'started'
 p9
@@ -36,7 +36,7 @@ p12
 I0
 sS'briefText'
 p13
-S'RULES (bellville)'
+S'RULES (roosterville)'
 p14
 sS'executionHosts'
 p15
@@ -44,7 +44,7 @@ p15
 sS'testCompiling'
 p17
 Nsb.
-->CLI:15873
+->CLI:12732
 cas.rave:ArtificialUser/matador_2
 (iplugins
 TestState
@@ -56,7 +56,7 @@ S'ruleset_compiled'
 p4
 sS'freeText'
 p5
-S'Build Rave program Matador_5 started on bellville, 28 August 17:39\nGenerating code... done.\nBuilding for matador on localhost - 2 files out of 2 need to be compiled\nCompiling... done.\nInstalling matador on architecture i386_linux... done.\nBuild Rave program finished at 28 August 17:39\nCleaning up... done.\n'
+S'Build Rave program Matador_5 started on roosterville, 18 September 15:36\nGenerating code... done.\nBuilding for matador on localhost - 1 files out of 2 needs to be compiled\nCompiling... done.\nInstalling matador on architecture i386_linux... done.\nBuild Rave program finished at 18 September 15:36\nCleaning up... done.\n'
 p6
 sS'started'
 p7
@@ -72,12 +72,13 @@ p10
 (lp11
 sS'lifecycleChange'
 p12
-S''
+S'complete rule compilation'
+p13
 sb.
-<-CMD:env 'USECASE_RECORD_STDIN=' 'USECASE_RECORD_SCRIPT=' 'USECASE_REPLAY_SCRIPT=' qsub -N Test-matador_2.ArtificialUser-Matador.rave -p -0.83 -l 'osversion=RHEL4,model=Opteron*,carmarch=*i386_linux*,carmrunmaster=1,short' -w e -notify -m n -cwd -b y -V -o framework_tmp/slavelog -e framework_tmp/slaveerrs 'exec /bin/tcsh -c "exec /users/geoff/work/master/Testing/TextTest/texttest.py -d /users/geoff/texttesttmp/texttest.carmengeoff05Sep153641/carmen/matador/BuildCode/WorksRave/TargetApp -a cas -v rave -l -c /carm/proj/texttest/selftest_data/fake_source_compiles -tp ArtificialUser/matador_2 -slave /users/geoff/texttesttmp/texttest.carmengeoff05Sep153641/carmen/matador/BuildCode/WorksRave/texttesttmp/cas.ravegeoff05Sep153648 -servaddr 192.168.99.120:34365 -noperf -x -xr /users/geoff/work/master/Testing/Automatic/texttest -xw /users/geoff/texttesttmp/texttest.carmengeoff05Sep153641/carmen/matador/BuildCode/WorksRave/slave"'
-->OUT:Your job 5010239 ("Test-matador_2.ArtificialUser-Matador.rave") has been submitted
+<-CMD:env 'USECASE_RECORD_STDIN=' 'USECASE_RECORD_SCRIPT=' 'USECASE_REPLAY_SCRIPT=' qsub -N Test-matador_2.ArtificialUser-Matador.rave -p -0.83 -l 'osversion=RHEL4,model=Opteron*,carmarch=*i386_linux*,carmrunmaster=1,short' -w e -notify -m n -cwd -b y -V -o framework_tmp/slavelog -e framework_tmp/slaveerrs 'exec /bin/tcsh -c "exec /users/geoff/work/master/Testing/TextTest/texttest.py -d /users/geoff/texttesttmp/texttest.carmengeoff18Sep153554/carmen/matador/BuildCode/WorksRave/TargetApp -a cas -v rave -l -c /carm/proj/texttest/selftest_data/fake_source_compiles -tp ArtificialUser/matador_2 -slave /users/geoff/texttesttmp/texttest.carmengeoff18Sep153554/carmen/matador/BuildCode/WorksRave/texttesttmp/cas.ravegeoff18Sep153601 -servaddr 192.168.99.72:57193 -noperf -x -xr /users/geoff/work/master/Testing/Automatic/texttest -xw /users/geoff/texttesttmp/texttest.carmengeoff18Sep153554/carmen/matador/BuildCode/WorksRave/slave"'
+->OUT:Your job 5331073 ("Test-matador_2.ArtificialUser-Matador.rave") has been submitted
 <-SRV:Completed submission of all tests
-->CLI:16195
+->CLI:22088
 cas.rave:ArtificialUser/matador_2
 (idefault
 Running
@@ -113,7 +114,7 @@ p15
 S'start'
 p16
 sb.
-->CLI:16195
+->CLI:22088
 cas.rave:ArtificialUser/matador_2
 (ioptimization
 OptimizationTestComparison
@@ -172,7 +173,7 @@ p25
 (dp26
 S'_FileAppender__FileAppender_filename'
 p27
-S'/users/geoff/texttesttmp/texttest.carmengeoff28Aug173926/carmen/matador/BuildCode/WorksRave/slave/testcomparison.texttest'
+S'/users/geoff/texttesttmp/texttest.carmengeoff18Sep153554/carmen/matador/BuildCode/WorksRave/slave/testcomparison.texttest'
 p28
 sS'_FileAppender__FileAppender_rotation'
 p29
@@ -191,14 +192,14 @@ S'slave server'
 p35
 sS'_Logger__Logger_timelaststep'
 p36
-F1156779586.072356
+F1158586583.2779181
 sS'_Logger__Logger_useansicodes'
 p37
 S'FALSE'
 p38
 sS'_Logger__Logger_timeinit'
 p39
-F1156779586.072356
+F1158586583.2779181
 sS'_Logger__Logger_timeformat'
 p40
 S'%d.%m.%Y %H:%M:%S'
@@ -223,7 +224,7 @@ S'output'
 p49
 sS'appAbsPath'
 p50
-S'/users/geoff/texttesttmp/texttest.carmengeoff28Aug173926/carmen/matador/BuildCode/WorksRave/TargetApp'
+S'/users/geoff/texttesttmp/texttest.carmengeoff18Sep153554/carmen/matador/BuildCode/WorksRave/TargetApp'
 p51
 sS'allResults'
 p52
@@ -234,7 +235,7 @@ p54
 (dp55
 S'stdFile'
 p56
-S'/users/geoff/texttesttmp/texttest.carmengeoff28Aug173926/carmen/matador/BuildCode/WorksRave/TargetApp/ArtificialUser/matador_2/catalogue.cas'
+S'/users/geoff/texttesttmp/texttest.carmengeoff18Sep153554/carmen/matador/BuildCode/WorksRave/TargetApp/ArtificialUser/matador_2/catalogue.cas'
 p57
 sS'severity'
 p58
@@ -266,7 +267,7 @@ FileAppender
 p64
 (dp65
 g27
-S'/users/geoff/texttesttmp/texttest.carmengeoff28Aug173926/carmen/matador/BuildCode/WorksRave/slave/filecomparison.texttest'
+S'/users/geoff/texttesttmp/texttest.carmengeoff18Sep153554/carmen/matador/BuildCode/WorksRave/slave/filecomparison.texttest'
 p66
 sg29
 I0
@@ -278,11 +279,11 @@ sg34
 S'windows processes'
 p67
 sg36
-F1156779586.072356
+F1158586583.2779181
 sg37
 g38
 sg39
-F1156779586.072356
+F1158586583.2779181
 sg40
 g41
 sg42
@@ -292,7 +293,7 @@ p68
 I00
 sS'tmpFile'
 p69
-S'/users/geoff/texttesttmp/texttest.carmengeoff28Aug173926/carmen/matador/BuildCode/WorksRave/texttesttmp/cas.ravegeoff28Aug173933/ArtificialUser/matador_2/catalogue.cas'
+S'/users/geoff/texttesttmp/texttest.carmengeoff18Sep153554/carmen/matador/BuildCode/WorksRave/texttesttmp/cas.ravegeoff18Sep153601/ArtificialUser/matador_2/catalogue.cas'
 p70
 sS'stdCmpFile'
 p71
@@ -304,13 +305,16 @@ p73
 sS'tmpCmpFile'
 p74
 g70
+sS'displayPriority'
+p75
+I99
 sba(icomparetest
 FileComparison
-p75
-(dp76
+p76
+(dp77
 g56
-S'/users/geoff/texttesttmp/texttest.carmengeoff28Aug173926/carmen/matador/BuildCode/WorksRave/TargetApp/ArtificialUser/matador_2/errors.cas'
-p77
+S'/users/geoff/texttesttmp/texttest.carmengeoff18Sep153554/carmen/matador/BuildCode/WorksRave/TargetApp/ArtificialUser/matador_2/errors.cas'
+p78
 sg58
 I2
 sg11
@@ -318,24 +322,26 @@ g59
 sg68
 I00
 sg69
-S'/users/geoff/texttesttmp/texttest.carmengeoff28Aug173926/carmen/matador/BuildCode/WorksRave/texttesttmp/cas.ravegeoff28Aug173933/ArtificialUser/matador_2/errors.cas'
-p78
-sg71
-S'/users/geoff/texttesttmp/texttest.carmengeoff28Aug173926/carmen/matador/BuildCode/WorksRave/texttesttmp/cas.ravegeoff28Aug173933/ArtificialUser/matador_2/framework_tmp/errors.casorigcmp'
+S'/users/geoff/texttesttmp/texttest.carmengeoff18Sep153554/carmen/matador/BuildCode/WorksRave/texttesttmp/cas.ravegeoff18Sep153601/ArtificialUser/matador_2/errors.cas'
 p79
+sg71
+S'/users/geoff/texttesttmp/texttest.carmengeoff18Sep153554/carmen/matador/BuildCode/WorksRave/texttesttmp/cas.ravegeoff18Sep153601/ArtificialUser/matador_2/framework_tmp/errors.casorigcmp'
+p80
 sg72
 S'errors'
-p80
-sg74
-S'/users/geoff/texttesttmp/texttest.carmengeoff28Aug173926/carmen/matador/BuildCode/WorksRave/texttesttmp/cas.ravegeoff28Aug173933/ArtificialUser/matador_2/framework_tmp/errors.cascmp'
 p81
+sg74
+S'/users/geoff/texttesttmp/texttest.carmengeoff18Sep153554/carmen/matador/BuildCode/WorksRave/texttesttmp/cas.ravegeoff18Sep153601/ArtificialUser/matador_2/framework_tmp/errors.cascmp'
+p82
+sg75
+I99
 sba(icomparetest
 FileComparison
-p82
-(dp83
+p83
+(dp84
 g56
-S'/users/geoff/texttesttmp/texttest.carmengeoff28Aug173926/carmen/matador/BuildCode/WorksRave/TargetApp/ArtificialUser/matador_2/output.cas'
-p84
+S'/users/geoff/texttesttmp/texttest.carmengeoff18Sep153554/carmen/matador/BuildCode/WorksRave/TargetApp/ArtificialUser/matador_2/output.cas'
+p85
 sg58
 I2
 sg11
@@ -343,24 +349,26 @@ g59
 sg68
 I00
 sg69
-S'/users/geoff/texttesttmp/texttest.carmengeoff28Aug173926/carmen/matador/BuildCode/WorksRave/texttesttmp/cas.ravegeoff28Aug173933/ArtificialUser/matador_2/output.cas'
-p85
-sg71
-S'/users/geoff/texttesttmp/texttest.carmengeoff28Aug173926/carmen/matador/BuildCode/WorksRave/texttesttmp/cas.ravegeoff28Aug173933/ArtificialUser/matador_2/framework_tmp/output.casorigcmp'
+S'/users/geoff/texttesttmp/texttest.carmengeoff18Sep153554/carmen/matador/BuildCode/WorksRave/texttesttmp/cas.ravegeoff18Sep153601/ArtificialUser/matador_2/output.cas'
 p86
+sg71
+S'/users/geoff/texttesttmp/texttest.carmengeoff18Sep153554/carmen/matador/BuildCode/WorksRave/texttesttmp/cas.ravegeoff18Sep153601/ArtificialUser/matador_2/framework_tmp/output.casorigcmp'
+p87
 sg72
 S'output'
-p87
-sg74
-S'/users/geoff/texttesttmp/texttest.carmengeoff28Aug173926/carmen/matador/BuildCode/WorksRave/texttesttmp/cas.ravegeoff28Aug173933/ArtificialUser/matador_2/framework_tmp/output.cascmp'
 p88
+sg74
+S'/users/geoff/texttesttmp/texttest.carmengeoff18Sep153554/carmen/matador/BuildCode/WorksRave/texttesttmp/cas.ravegeoff18Sep153601/ArtificialUser/matador_2/framework_tmp/output.cascmp'
+p89
+sg75
+I99
 sba(icomparetest
 FileComparison
-p89
-(dp90
+p90
+(dp91
 g56
-S'/users/geoff/texttesttmp/texttest.carmengeoff28Aug173926/carmen/matador/BuildCode/WorksRave/TargetApp/ArtificialUser/matador_2/solution.cas'
-p91
+S'/users/geoff/texttesttmp/texttest.carmengeoff18Sep153554/carmen/matador/BuildCode/WorksRave/TargetApp/ArtificialUser/matador_2/solution.cas'
+p92
 sg58
 I1
 sg11
@@ -368,36 +376,39 @@ g59
 sg68
 I00
 sg69
-S'/users/geoff/texttesttmp/texttest.carmengeoff28Aug173926/carmen/matador/BuildCode/WorksRave/texttesttmp/cas.ravegeoff28Aug173933/ArtificialUser/matador_2/solution.cas'
-p92
+S'/users/geoff/texttesttmp/texttest.carmengeoff18Sep153554/carmen/matador/BuildCode/WorksRave/texttesttmp/cas.ravegeoff18Sep153601/ArtificialUser/matador_2/solution.cas'
+p93
 sg71
-g91
+g92
 sg72
 S'solution'
-p93
-sg74
-g92
-sbasS'appWriteDir'
 p94
-S'/users/geoff/texttesttmp/texttest.carmengeoff28Aug173926/carmen/matador/BuildCode/WorksRave/texttesttmp/cas.ravegeoff28Aug173933'
+sg74
+g93
+sg75
+I99
+sbasS'appWriteDir'
 p95
-sS'correctResults'
+S'/users/geoff/texttesttmp/texttest.carmengeoff18Sep153554/carmen/matador/BuildCode/WorksRave/texttesttmp/cas.ravegeoff18Sep153601'
 p96
-(lp97
+sS'correctResults'
+p97
+(lp98
 g54
-ag75
-ag82
-ag89
+ag76
+ag83
+ag90
 asS'lifecycleChange'
-p98
-S''
-sS'failedPrediction'
 p99
-NsS'costName'
+S'complete'
 p100
-S'cost of plan'
+sS'failedPrediction'
 p101
-sS'newResults'
+NsS'costName'
 p102
-(lp103
+S'cost of plan'
+p103
+sS'newResults'
+p104
+(lp105
 sb.
