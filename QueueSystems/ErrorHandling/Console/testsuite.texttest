@@ -1,8 +1,11 @@
-# Test that we can override lsf_queue via the config file, and what happens when the queue doesn't exist
+# Test that we can override default_queue via the config file, and what happens when the queue doesn't exist
 BadQueue
 
 # Check for -q on command line
 BadQueueCommandLine
+
+# Copy of BadQueue, but mark the text as known bug, to check we can do this from the master process
+BadQueueKnownBug
 
 # Check that we read LSF_RESOURCE environment variable
 BadResource
