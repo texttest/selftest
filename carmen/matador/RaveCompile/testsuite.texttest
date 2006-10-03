@@ -10,9 +10,6 @@ LocalRaveRun
 # Check that we can run a combination of applications with static and dynamic rulesets
 StaticRuleset
 
-# See what happens when rave compilation fails in C-compilation
-BadRaveRunCCompile
-
 # There to check extra_version for rave compilations
 RaveRunParallel
 
@@ -30,6 +27,9 @@ KillRuleComp2Tests
 
 # Check that sensible things happen if the nightjob is terminated while rave compilation is happening
 NightjobTerminateRave
+
+# Check we get correct reports when a rule compilation disappears
+RuleCompDisappears
 
 # Check we can compile a ruleset in the slave process
 RaveSlave

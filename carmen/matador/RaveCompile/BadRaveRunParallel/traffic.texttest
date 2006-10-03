@@ -1,8 +1,8 @@
-<-SRV:TextTest slave server started on 192.168.99.72:56912
-<-CMD:env 'USECASE_RECORD_STDIN=' 'USECASE_RECORD_SCRIPT=' 'USECASE_REPLAY_SCRIPT=' qsub -N Rules-Matador_5_bad.ArtificialUser-matador -l 'carmarch=*i386_linux*,carmbuildmaster=1,short' -w e -notify -m n -cwd -b y -V -o framework_tmp/slavelog -e framework_tmp/slaveerrs 'exec /bin/tcsh -c "exec /users/geoff/work/master/Testing/TextTest/texttest.py -d /users/geoff/texttesttmp/texttest.carmengeoff18Sep152527/carmen/matador/RaveCompile/BadRaveRunParallel/TargetApp -a cas -v badrule.extraversion -l -c /carm/proj/texttest/selftest_data -tp ArtificialUser/matador_2 -raveslave /users/geoff/texttesttmp/texttest.carmengeoff18Sep152527/carmen/matador/RaveCompile/BadRaveRunParallel/texttesttmp/cas.badrule.extraversiongeoff18Sep152632 -servaddr 192.168.99.72:56911 -b nightjob -x -xr /users/geoff/work/master/Testing/Automatic/texttest -xw /users/geoff/texttesttmp/texttest.carmengeoff18Sep152527/carmen/matador/RaveCompile/BadRaveRunParallel/raveslave"'
-->OUT:Your job 5331054 ("Rules-Matador_5_bad.ArtificialUser-matador") has been submitted
+<-SRV:TextTest slave server started on 192.168.99.72:41645
+<-CMD:env 'USECASE_RECORD_STDIN=' 'USECASE_RECORD_SCRIPT=' 'USECASE_REPLAY_SCRIPT=' qsub -N Rules-Matador_5_bad.ArtificialUser-matador -l 'carmarch=*i386_linux*,carmbuildmaster=1,short' -w e -notify -m n -cwd -b y -V -o framework_tmp/slavelog -e framework_tmp/slaveerrs 'exec /bin/tcsh -c "exec /users/geoff/work/master/Testing/TextTest/texttest.py -d /users/geoff/texttesttmp/texttest.carmen.03Oct154135/carmen/matador/RaveCompile/BadRaveRunParallel/TargetApp -a cas -v badrule.extraversion -l -c /carm/proj/texttest/selftest_data -tp ArtificialUser/matador_2 -raveslave /users/geoff/texttesttmp/texttest.carmen.03Oct154135/carmen/matador/RaveCompile/BadRaveRunParallel/texttesttmp/cas.badrule.extraversion.03Oct154200 -servaddr 192.168.99.72:41640 -b nightjob -x -xr /users/geoff/work/master/Testing/Automatic/texttest -xw /users/geoff/texttesttmp/texttest.carmen.03Oct154135/carmen/matador/RaveCompile/BadRaveRunParallel/raveslave"'
+->OUT:Your job 5557576 ("Rules-Matador_5_bad.ArtificialUser-matador") has been submitted
 <-SRV:Completed submission of all rule compilations
-->CLI:23909
+->CLI:23210
 cas.badrule.extraversion:ArtificialUser/matador_2
 (iravebased
 RunningRuleCompilation
@@ -18,7 +18,7 @@ S'start ruleset compilation'
 p6
 sS'freeText'
 p7
-S'Compiling ruleset Matador_5_bad on bonnyville'
+S'Compiling ruleset Matador_5_bad on roosterville'
 p8
 sS'started'
 p9
@@ -32,7 +32,7 @@ p12
 I0
 sS'briefText'
 p13
-S'RULES (bonnyville)'
+S'RULES (roosterville)'
 p14
 sS'executionHosts'
 p15
@@ -40,7 +40,7 @@ p15
 sS'testCompiling'
 p17
 Nsb.
-->CLI:23909
+->CLI:23210
 cas.badrule.extraversion:ArtificialUser/matador_2
 (iravebased
 RuleBuildFailed
@@ -50,25 +50,33 @@ S'category'
 p3
 S'unrunnable'
 p4
-sS'freeText'
+sS'raveInfo'
 p5
-S'Build Rave program Matador_5_bad started on bonnyville, 18 September 15:26\nGenerating code... \n*** Trouble report (1 error, 0 warnings):\n\n"source/Matador_5_bad", line 18.22:\n      16: %cost_weight% = parameter 1;\n      17: \n      18: %cost_of_a_roster% = sum(leg(roser),%cost_weight%);\n                               ^^^\n   ERROR: _topmodule.roser is undefined\n\n'
+S'Build Rave program Matador_5_bad started on reddog, 03 October 15:42\nGenerating code... \n*** Trouble report (1 error, 0 warnings):\n\n"source/Matador_5_bad", line 18.22:\n      16: %cost_weight% = parameter 1;\n      17: \n      18: %cost_of_a_roster% = sum(leg(roser),%cost_weight%);\n                               ^^^\n   ERROR: _topmodule.roser is undefined\n\n'
 p6
-sS'started'
+sS'freeText'
 p7
+S'Failed to build ruleset Matador_5_bad\nBuild Rave program Matador_5_bad started on reddog, 03 October 15:42\nGenerating code... \n*** Trouble report (1 error, 0 warnings):\n\n"source/Matador_5_bad", line 18.22:\n      16: %cost_weight% = parameter 1;\n      17: \n      18: %cost_of_a_roster% = sum(leg(roser),%cost_weight%);\n                               ^^^\n   ERROR: _topmodule.roser is undefined\n\n'
+p8
+sS'started'
+p9
 I0
 sS'completed'
-p8
+p10
 I1
 sS'briefText'
-p9
-S'Ruleset build failed'
-p10
-sS'executionHosts'
 p11
-(lp12
-sS'lifecycleChange'
+S'Ruleset build failed'
+p12
+sS'executionHosts'
 p13
-S'complete rule compilation'
-p14
+(lp14
+sS'lifecycleChange'
+p15
+S'complete'
+p16
+sS'raveFile'
+p17
+S'/users/geoff/texttesttmp/cas.badrule.extraversion.03Oct154206/ArtificialUser/matador_2/framework_tmp/crc_compile_output'
+p18
 sb.

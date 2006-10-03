@@ -1,4 +1,4 @@
-Top Window title set to TextTest dynamic GUI (tests started at 02Oct15:01:12)
+Top Window title set to TextTest dynamic GUI (tests started at 03Oct15:36:40)
 Expanding tests in tree view...
 -> Added Matador test-suite TargetApp to test tree view.
 ->   Added Matador test-suite ArtificialUser to test tree view.
@@ -30,12 +30,12 @@ Redrawing test generate_in_subperiod coloured white
 Test progress:
 --> Pend rulecompile : 2, colour 'white', font 'bold'
 Redrawing test matador_2 coloured peach puff
-(Second column 'RULES (fivefinger)' coloured peach puff)
+(Second column 'RULES (knoxville)' coloured peach puff)
 Test progress:
 --> Pend rulecompile : 1, colour 'white', font 'bold'
 --> Running rulecompile : 1, colour 'peach puff', font 'bold'
 Redrawing test generate_in_subperiod coloured peach puff
-(Second column 'RULES (fivefinger)' coloured peach puff)
+(Second column 'RULES (knoxville)' coloured peach puff)
 Test progress:
 --> Pend rulecompile : 0, colour 'white', font ''
 --> Running rulecompile : 2, colour 'peach puff', font 'bold'
@@ -48,8 +48,8 @@ Test progress:
 --> Failed : 1, colour 'red', font 'bold'
 ----> Unrunnable : 1, colour 'red', font 'bold'
 Redrawing test generate_in_subperiod coloured red
-(Second column 'Ruleset build failed (repeat)' coloured red)
-Progress bar set to fraction 1.0, text 'All 2 tests completed at 02Oct15:01:13 (2 tests failed)'
+(Second column 'Ruleset build failed' coloured red)
+Progress bar set to fraction 1.0, text 'All 2 tests completed at 03Oct15:36:50 (2 tests failed)'
 Test progress:
 --> Pend rulecompile : 0, colour 'white', font ''
 --> Running rulecompile : 0, colour 'white', font ''
@@ -63,7 +63,7 @@ Viewing test Matador test-case matador_2
 Creating action '_Plot Graph' with label ''_Plot Graph'', stock id 'None' and accelerator None
 Warning: Failed to decode string 'Test could not be run :
 Failed to build ruleset Matador_5_bad
-Build Rave program Matador_5_bad started on reddog, 18 September 15:04
+Build Rave program Matador_5_bad started on reddog, 03 October 15:36
 Generating code... 
 *** Trouble report (1 error, 0 warnings):
 
@@ -83,7 +83,7 @@ Creating box with buttons : CVS _Log, _Plot Graph
 ---------- Text Info Window ----------
 Test could not be run :
 Failed to build ruleset Matador_5_bad
-Build Rave program Matador_5_bad started on reddog, 18 September 15:04
+Build Rave program Matador_5_bad started on reddog, 03 October 15:36
 Generating code... 
 *** Trouble report (1 error, 0 warnings):
 
@@ -105,7 +105,19 @@ Disconnecting accelerator for action 'CVS _Log'
 Disconnecting accelerator for action '_Plot Graph'
 Creating action '_Plot Graph' with label ''_Plot Graph'', stock id 'None' and accelerator None
 Warning: Failed to decode string 'Test could not be run :
-Trying to use ruleset 'Matador_5_bad' that failed to build.' using default locale encoding None. Trying strict UTF-8 encoding ...
+Failed to build ruleset Matador_5_bad
+Build Rave program Matador_5_bad started on reddog, 03 October 15:36
+Generating code... 
+*** Trouble report (1 error, 0 warnings):
+
+"source/Matador_5_bad", line 18.22:
+      16: %cost_weight% = parameter 1;
+      17: 
+      18: %cost_of_a_roster% = sum(leg(roser),%cost_weight%);
+                               ^^^
+   ERROR: _topmodule.roser is undefined
+
+' using default locale encoding None. Trying strict UTF-8 encoding ...
 Creating action 'CVS _Log' with label ''CVS _Log'', stock id 'None' and accelerator None
 Creating action '_Plot Graph' with label ''_Plot Graph'', stock id 'None' and accelerator None
 Creating box with buttons : CVS _Log, _Plot Graph
@@ -113,7 +125,17 @@ Creating box with buttons : CVS _Log, _Plot Graph
 
 ---------- Text Info Window ----------
 Test could not be run :
-Trying to use ruleset 'Matador_5_bad' that failed to build.
+Failed to build ruleset Matador_5_bad
+Build Rave program Matador_5_bad started on reddog, 03 October 15:36
+Generating code... 
+*** Trouble report (1 error, 0 warnings):
+
+"source/Matador_5_bad", line 18.22:
+      16: %cost_weight% = parameter 1;
+      17: 
+      18: %cost_of_a_roster% = sum(leg(roser),%cost_weight%);
+                               ^^^
+   ERROR: _topmodule.roser is undefined
 --------------------------------------
 
 'quit' event created with arguments ''
