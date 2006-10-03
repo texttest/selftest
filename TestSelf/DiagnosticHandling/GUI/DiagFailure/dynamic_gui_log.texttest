@@ -1,4 +1,4 @@
-Top Window title set to TextTest dynamic GUI (tests started at 02Oct17:54:37)
+Top Window title set to TextTest dynamic GUI (tests started at 03Oct16:41:57)
 Expanding tests in tree view...
 -> Added DIAG test-suite TargetApp to test tree view.
 ->   Added DIAG test-case TestWithDiag to test tree view.
@@ -24,12 +24,13 @@ Test progress:
 --> Running : 1, colour 'yellow', font 'bold'
 Redrawing test TestWithDiag coloured green
 (Second column 'first different(+)' coloured red)
-Progress bar set to fraction 1.0, text 'All 1 tests completed at 02Oct17:54:37 (1 tests failed)'
+Progress bar set to fraction 1.0, text 'All 1 tests completed at 03Oct16:41:57 (1 tests failed)'
 Test progress:
 --> Pending : 0, colour 'white', font ''
 --> Running : 0, colour 'white', font ''
 --> Failed : 1, colour 'red', font 'bold'
-----> Multiple different files : 1, colour 'red', font 'bold'
+----> Differences : 1, colour 'red', font 'bold'
+------> first different(+) : 1, colour 'red', font 'bold'
 Expected application event 'completion of test actions' occurred, proceeding.
 
 'select test' event created with arguments 'TestWithDiag'
@@ -87,8 +88,9 @@ Test progress:
 --> Pending : 0, colour 'white', font ''
 --> Running : 0, colour 'white', font ''
 --> Failed : 1, colour 'red', font 'bold'
-----> Multiple different files : 0, colour 'white', font ''
-----> One different file : 1, colour 'red', font 'bold'
+----> Differences : 1, colour 'red', font 'bold'
+------> first different(+) : 0, colour 'white', font ''
+------> first different : 1, colour 'red', font 'bold'
 
 'save' event created with arguments ''
 Saving DIAG test-case TestWithDiag - version , exactness 1
@@ -106,13 +108,14 @@ Adding file third.diag under heading 'Diagnostics', coloured green
 ---------- Text Info Window ----------
 Test succeeded
 --------------------------------------
-Progress bar detected save, new text is 'All 1 tests completed at 02Oct17:54:37'
+Progress bar detected save, new text is 'All 1 tests completed at 03Oct16:41:57'
 Test progress:
 --> Pending : 0, colour 'white', font ''
 --> Running : 0, colour 'white', font ''
 --> Failed : 0, colour 'white', font ''
-----> Multiple different files : 0, colour 'white', font ''
-----> One different file : 0, colour 'white', font ''
+----> Differences : 0, colour 'white', font ''
+------> first different(+) : 0, colour 'white', font ''
+------> first different : 0, colour 'white', font ''
 --> Succeeded : 1, colour 'green', font 'bold'
 
 'quit' event created with arguments ''
