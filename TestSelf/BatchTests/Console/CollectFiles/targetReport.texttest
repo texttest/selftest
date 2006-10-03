@@ -1,60 +1,32 @@
-$USER
-unrunnable=3
-040908 Matador badrule.extraversion : 3 tests : 3 unrunnable
-
-040908 Matador badrule.extraversion : 2 tests : 2 unrunnable
-040908 Matador badrule.extraversion.parallel : 1 tests : 1 unrunnable
+dick
+CRASHED=1
+040908 CORE : 1 tests : 1 CRASHED
 
 Summary of all Unsuccessful tests follows...
 ---------------------------------------------------------------------------------
-040908 Matador badrule.extraversion : 2 tests : 2 unrunnable
-
-The following tests could not be run : 
-In Matador test-suite TargetApp:
-  In Matador test-suite ArtificialUser:
-    - Matador test-case matador_2            
-    - Matador test-case generate_in_subperiod
-
-
-040908 Matador badrule.extraversion.parallel : 1 tests : 1 unrunnable
-
-The following tests could not be run : 
-In Matador test-suite TargetApp:
-  In Matador test-suite ArtificialUser:
-    - Matador test-case generate_in_subperiod
+The following tests CRASHED : 
+In CORE test-suite TargetApp:
+  - CORE test-case DumpCore
 
 
 Details of all Unsuccessful tests follows...
 ---------------------------------------------------------------------------------
-040908 Matador badrule.extraversion : 2 tests : 2 unrunnable
 
-
-Detailed information for the tests that could not be run follows...
+Detailed information for the tests that CRASHED follows...
 --------------------------------------------------------
-TEST could not be run : Matador test-case matador_2             (under ArtificialUser/matador_2)
-Failed to build ruleset Matador_5_bad
-Build Rave program Matador_5_bad started on ninilchik, 08 September 19:18
-Generating code... 
-*** Trouble report (2 errors, 0 warnings):
-
-"source/Matador_5_bad", line 18.22:
-      16: %cost_weight% = parameter 1;
-      17: 
-      18: %cost_of_a_roster% = sum(leg(roser),%cost_weight%);
-                               ^^^
-   ERROR: Missing parent level in traverser
-   ERROR: Undefined level _topmodule.roser in traverser
-
---------------------------------------------------------
-TEST could not be run : Matador test-case generate_in_subperiod (under ArtificialUser/generate_in_subperiod)
-Trying to use ruleset 'Matador_5_bad' that failed to build.
-
----------------------------------------------------------------------------------
-040908 Matador badrule.extraversion.parallel : 1 tests : 1 unrunnable
-
-
-Detailed information for the tests that could not be run follows...
---------------------------------------------------------
-TEST could not be run : Matador test-case generate_in_subperiod (under ArtificialUser/generate_in_subperiod)
-Trying to use ruleset 'Matador_5_bad' that failed to build.
+TEST CRASHED on severodoneck : CORE test-case DumpCore (under DumpCore)
+Program terminated with signal 11, Segmentation fault.
+Stack trace from gdb :
+___newselect_nocancel 
+floatsleep 
+time_sleep 
+PyCFunction_Call 
+PyEval_EvalCode 
+PyEval_EvalCodeEx 
+PyEval_EvalCode 
+PyRun_FileExFlags 
+PyRun_SimpleFileExFlags 
+PyRun_AnyFileExFlags 
+Py_Main 
+main 
 
