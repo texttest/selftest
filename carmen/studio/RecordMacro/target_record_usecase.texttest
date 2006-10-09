@@ -70,23 +70,29 @@
 </InteractionData>
 
 <Interaction type="TT" key="PLAN_MANAGER" value="(button|OPEN_PLAN)(selection|1OC05/VERSION_1/SR_OCT.file/A300_CAB_Abstimmung)" />
-<Command label="Leg" script="CuiGetSubPlanCrewFilterLeg(gpc_info,crew_fleg)" level="3">
-<CommandAttributes label="Leg" script="CuiGetSubPlanCrewFilterLeg(gpc_info,crew_fleg)" level="3"  returnVal="0"/>
+<Command label="Assign Value Field" script="CuiGetSubPlanAssignValue(gpc_info,ass_v,20)" level="3">
+<CommandAttributes label="Assign Value Field" script="CuiGetSubPlanAssignValue(gpc_info,ass_v,20)" level="3"  returnVal="0"/>
 </Command>
-<Command label="A/C" script="CuiGetSubPlanCrewFilterAc(gpc_info,crew_fac)" level="3">
-<CommandAttributes label="A/C" script="CuiGetSubPlanCrewFilterAc(gpc_info,crew_fac)" level="3"  returnVal="0"/>
+<Command label="Leg Filter" script="CuiGetSubPlanCrewFilterLeg(gpc_info,crew_fleg)" level="3">
+<CommandAttributes label="Leg Filter" script="CuiGetSubPlanCrewFilterLeg(gpc_info,crew_fleg)" level="3"  returnVal="0"/>
 </Command>
-<Command label="Profi" script="CuiRaveProfilerQuery(profileFlag)" level="3">
-<CommandAttributes label="Profi" script="CuiRaveProfilerQuery(profileFlag)" level="3"  returnVal="0"/>
+<Command label="Rotation Filter" script="CuiGetSubPlanCrewFilterAc(gpc_info,crew_fac)" level="3">
+<CommandAttributes label="Rotation Filter" script="CuiGetSubPlanCrewFilterAc(gpc_info,crew_fac)" level="3"  returnVal="0"/>
 </Command>
-<Command label="Leg" script="CuiGetSubPlanCrewFilterLeg(gpc_info,crew_fleg)" level="3">
-<CommandAttributes label="Leg" script="CuiGetSubPlanCrewFilterLeg(gpc_info,crew_fleg)" level="3"  returnVal="0"/>
+<Command label="Trip Filter" script="CuiGetSubPlanCrewFilterCrr(gpc_info,crew_fcrr)" level="3">
+<CommandAttributes label="Trip Filter" script="CuiGetSubPlanCrewFilterCrr(gpc_info,crew_fcrr)" level="3"  returnVal="0"/>
 </Command>
-<Command label="A/C" script="CuiGetSubPlanCrewFilterAc(gpc_info,crew_fac)" level="3">
-<CommandAttributes label="A/C" script="CuiGetSubPlanCrewFilterAc(gpc_info,crew_fac)" level="3"  returnVal="0"/>
+<Command label="Assign Value Field" script="CuiGetSubPlanAssignValue(gpc_info,ass_v,20)" level="3">
+<CommandAttributes label="Assign Value Field" script="CuiGetSubPlanAssignValue(gpc_info,ass_v,20)" level="3"  returnVal="0"/>
 </Command>
-<Command label="Profi" script="CuiRaveProfilerQuery(profileFlag)" level="3">
-<CommandAttributes label="Profi" script="CuiRaveProfilerQuery(profileFlag)" level="3"  returnVal="0"/>
+<Command label="Leg Filter" script="CuiGetSubPlanCrewFilterLeg(gpc_info,crew_fleg)" level="3">
+<CommandAttributes label="Leg Filter" script="CuiGetSubPlanCrewFilterLeg(gpc_info,crew_fleg)" level="3"  returnVal="0"/>
+</Command>
+<Command label="Rotation Filter" script="CuiGetSubPlanCrewFilterAc(gpc_info,crew_fac)" level="3">
+<CommandAttributes label="Rotation Filter" script="CuiGetSubPlanCrewFilterAc(gpc_info,crew_fac)" level="3"  returnVal="0"/>
+</Command>
+<Command label="Trip Filter" script="CuiGetSubPlanCrewFilterCrr(gpc_info,crew_fcrr)" level="3">
+<CommandAttributes label="Trip Filter" script="CuiGetSubPlanCrewFilterCrr(gpc_info,crew_fcrr)" level="3"  returnVal="0"/>
 </Command>
 <CommandAttributes label="Plan Manager/Open Plan" script="GuiProcessInteraction(&quot;TT&quot;, &quot;PLAN_MANAGER&quot;)" level="0"  returnVal="0"/>
 </Command>
@@ -762,14 +768,17 @@
 <Interaction type="SelectionAction" key="" value="(Cancelled|0)(areaId|1)(button|1)(row|0)(subWinId|2)(tim|03OCT2005 10:10)" />
 <CommandAttributes label="Get Next/Trip" script="CuiGetNextPreviousCrr(gpc_info,0)" level="0"  returnVal="0"/>
 </Command>
-<Command label="Leg" script="CuiGetSubPlanCrewFilterLeg(gpc_info,crew_fleg)" level="3">
-<CommandAttributes label="Leg" script="CuiGetSubPlanCrewFilterLeg(gpc_info,crew_fleg)" level="3"  returnVal="0"/>
+<Command label="Assign Value Field" script="CuiGetSubPlanAssignValue(gpc_info,ass_v,20)" level="3">
+<CommandAttributes label="Assign Value Field" script="CuiGetSubPlanAssignValue(gpc_info,ass_v,20)" level="3"  returnVal="0"/>
 </Command>
-<Command label="A/C" script="CuiGetSubPlanCrewFilterAc(gpc_info,crew_fac)" level="3">
-<CommandAttributes label="A/C" script="CuiGetSubPlanCrewFilterAc(gpc_info,crew_fac)" level="3"  returnVal="0"/>
+<Command label="Leg Filter" script="CuiGetSubPlanCrewFilterLeg(gpc_info,crew_fleg)" level="3">
+<CommandAttributes label="Leg Filter" script="CuiGetSubPlanCrewFilterLeg(gpc_info,crew_fleg)" level="3"  returnVal="0"/>
 </Command>
-<Command label="Profi" script="CuiRaveProfilerQuery(profileFlag)" level="3">
-<CommandAttributes label="Profi" script="CuiRaveProfilerQuery(profileFlag)" level="3"  returnVal="0"/>
+<Command label="Rotation Filter" script="CuiGetSubPlanCrewFilterAc(gpc_info,crew_fac)" level="3">
+<CommandAttributes label="Rotation Filter" script="CuiGetSubPlanCrewFilterAc(gpc_info,crew_fac)" level="3"  returnVal="0"/>
+</Command>
+<Command label="Trip Filter" script="CuiGetSubPlanCrewFilterCrr(gpc_info,crew_fcrr)" level="3">
+<CommandAttributes label="Trip Filter" script="CuiGetSubPlanCrewFilterCrr(gpc_info,crew_fcrr)" level="3"  returnVal="0"/>
 </Command>
 <Command label="Window Label" script="CuiGetAreaModeString(gpc_info,CuiArea0,pulldown0,25)" level="3">
 <CommandAttributes label="Window Label" script="CuiGetAreaModeString(gpc_info,CuiArea0,pulldown0,25)" level="3"  returnVal="0"/>
