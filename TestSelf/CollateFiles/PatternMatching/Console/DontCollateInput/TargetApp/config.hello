@@ -1,6 +1,9 @@
 import_config_file:$OUTER_TT/standard_console
 
-link_test_path:input_dir
+copy_test_path:input_dir
 
 [collate_file]
-writefile:*/outfile
+# matches read and write but not edit
+writefile:*/*r*file
+# matches read and edit but not write
+editfile:*/*d*file 
