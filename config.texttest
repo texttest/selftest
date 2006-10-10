@@ -96,20 +96,19 @@ output:signal 15
 output:signal 9
 output:Killed process{WORD 3}
 output:seconds on{WORD -1}
-output:Sending mail from{WORD -1}
+output:Sending mail from{WORD 5}
 output:What is your name{LINES 3}
 output:batch_recipients{WORD 2}
 output:batch_sender{WORD 2}
-*Report: on .*test-case.*under{WORD -7}
-*Report:^[0-9][0-9][0-9][0-9][0-9][0-9]{WORD 1}
-*Report:^\>
-*Report:% faster{WORD -2}
+targetReport:^From:{WORD 2}
+targetReport:^Subject:{WORD 2}
+targetReport: on .*test-case.*under{WORD -7}
+targetReport:^[0-9][0-9][0-9][0-9][0-9][0-9]{WORD 1}
+targetReport:^\>
+targetReport:% faster{WORD -2}
 # diff output
 targetReport:1,2c1
 targetReport:{LINE 1}
-collectReport:^From:{WORD 2}
-collectReport:^To:{WORD 2}
-collectReport:^Subject:{WORD 2}
 catalogue:.nfs
 catalogue:[^-]*[0-9][0-9][A-Z][a-z][a-z][0-9][0-9][0-9][0-9][0-9][0-9]{REPLACE <texttest tmp dir>}
 catalogue:[0-9][0-9][A-Z][a-z][a-z][0-9][0-9][0-9][0-9]{REPLACE <today's date>}
@@ -170,7 +169,7 @@ gui_log:Dynamic run failed{LINES 3}
 *gui_log:1
 target*:1
 shortcut:1
-*Report:1
+targetReport:1
 [end]
 
 [diagnostics]
@@ -205,6 +204,8 @@ usecases:USECASE_HOME
 link_test_path:config
 link_test_path:personaldir
 link_test_path:gtk.py
+# Faking email send
+link_test_path:smtplib.py
 # pick a name for any config modules we might write...
 link_test_path:customconfig.py
 # Mock version of core-file finder
@@ -231,9 +232,8 @@ use_case_record_mode:GUI
 
 # Things to collate
 [collate_file]
-targetMem:TargetApp/Failures/memory.mem
+targetMem:TargetApp/*/memory.mem*
 targetReport:texttesttmp/*/batchreport*
-collectReport:texttesttmp/batchreport*
 errorsrec:texttesttmp/*/record/record_errors.log
 outputrec:texttesttmp/*/record/record_output.log
 errorsrep:texttesttmp/*/record/replay_errors.log
