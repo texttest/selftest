@@ -39,7 +39,7 @@ output:0x[0-9a-f]*{REPLACE <pointer value>}
 output:com_area_handler
 output:Failed to find out default UMASK
 output:LogConnectionListener
-output:/users/[^/]*/texttesttmp/texttest.[^/]*{REPLACE <parent tt app writedir>}
+output:/.*/texttest.[^/]*[0-3][0-9][A-Za-z][a-z][a-z][0-9][0-9][0-9][0-9][0-9][0-9]{REPLACE <parent tt app writedir>}
 output:cslDispatcher
 output:colormap entry
 output:gpc_init_change_groups
