@@ -26,28 +26,3 @@ Cas:matador
 [end]
 
 unsaveable_version:local
-
-[run_dependent_text]
-output:Error! Pid
-output:{INTERNAL writedir}{REPLACE <texttest write directory>}
-output:cslDispatcher: returnvalue{WORD 5+}
-output:real.*cpu.*cpu_child
-output:\.subplan[^ ]*{REPLACE <tmp subplan name>}
-output:Shadow_[^ /]*{REPLACE <tmp shadow id>}
-output:, Carmen Studio
-output:0x[0-9a-f]*{REPLACE <pointer value>}
-output:com_area_handler
-output:Failed to find out default UMASK
-output:LogConnectionListener
-output:/.*/texttest.[^/]*[0-3][0-9][A-Za-z][a-z][a-z][0-9][0-9][0-9][0-9][0-9][0-9]{REPLACE <parent tt app writedir>}
-output:cslDispatcher
-output:colormap entry
-output:gpc_init_change_groups
-
-[unordered_text]
-#output:^Loading
-#output:SharedPythonEngine::init
-#output:cslDispatcher: dispatching{LINES 2}
-#output:com_setup_cron
-#well, it was a nice try. Treat the whole file as random-order
-output:.*

@@ -1,24 +1,17 @@
 #!/usr/bin/env python
 
-import os, sys
+import os, sys, shutil
 
-def getPythonLines():
-    lines = []
-    replayMacro = os.getenv("USECASE_REPLAY_SCRIPT")
-    recordMacro = os.getenv("USECASE_RECORD_SCRIPT")
-    lines.append('PythonRunFile("PlayMacroFile.py","-f","-b","' + recordMacro + '")')
-    if replayMacro and os.path.isfile(replayMacro):
-        lines.append('PythonRunFile("PlayMacroFile.py","' + replayMacro + '")')
-        lines.append('PythonRunFile("PlayMacroFile.py","-f","-e")')
-        lines.append('CuiExit(gpc_info,1)')
-    return lines
+replayMacro = os.getenv("USECASE_REPLAY_SCRIPT")
+recordMacro = os.getenv("USECASE_RECORD_SCRIPT")
 
-studio = os.path.join(os.getenv("CARMSYS"), "bin", "studio")
-macro = os.getenv("USECASE_REPLAY_SCRIPT")
-commandLine = studio + " -w"
-for pythonLine in getPythonLines():
-    commandLine += " -p '" + pythonLine + "'"
-# Collect arguments from options file.
-for a in sys.argv[1:]:
-    commandLine += " '" + a + "'"
-os.system(commandLine)
+lockFile = os.path.join(os.getenv("CARMUSR"), "LOCAL_PLAN", "1OC05", "VERSION_1", "SR_OCT.file", "A300_CAB_Abstimmung", ".lockfile")
+writeFile = open(lockFile, "w")
+writeFile.write("Lock")
+writeFile.close()
+
+if replayMacro and recordMacro:
+    shutil.copyfile(replayMacro, recordMacro)
+
+print "Hello from Fake Studio in", os.getenv("CARMSYS")
+os.remove(lockFile)
