@@ -39,6 +39,7 @@ class DiagnosticWriter
   public static void main(String [] args)
   {
     System.out.println("This is a simple diagnostic-writing program");
+    System.out.println("Using Java version " + System.getProperty("java.version"));
     if (!setupConfigFile())
       return;
 

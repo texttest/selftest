@@ -1,11 +1,11 @@
-TextTest will write diagnostics in /carm/proj/matador2/publish/coach.texttest_tmp/texttest.master.powerpc.02Nov210013/TestSelf/DiagnosticHandling/Console/DiagFailureJava based on file at /carm/proj/matador2/publish/master/Testing/Automatic/texttest/log4py.conf
+TextTest will write diagnostics in /users/mattias/texttesttmp/texttest.powerpc.03Nov084245/TestSelf/DiagnosticHandling/Console/DiagFailureJava based on file at /users/mattias/work/master/Testing/Automatic/texttest/log4py.conf
 Using Application DIAG, version java.dummy
 Note: Running with Diagnostics on, so performance checking is disabled!
 Running DIAG test-suite TargetApp
   Running DIAG test-case TestWithDiag
 Comparing differences for DIAG test-suite TargetApp
   Comparing differences for DIAG test-case TestWithDiag (on errors.diag,output.diag,first.diag.dummy,second.diag,third.diag)
-  DIAG test-case TestWithDiag FAILED : new results in third, differences in first,second
+  DIAG test-case TestWithDiag FAILED : new results in third, differences in output,first,second
   View details(v), Save Version java.dummy(1), Save Version java(2), Save Version dummy(3), Save(s) or continue(any other key)?
 ------------------ Differences in first --------------------
 1c1,2
@@ -13,6 +13,11 @@ Comparing differences for DIAG test-suite TargetApp
 ---
 > [main            ] INFO  firstdiag - Some information
 > [main            ] DEBUG firstdiag - Some debug stuff
+------------------ Differences in output --------------------
+2c2
+< Using Java version 1.5.0_03
+---
+> Using Java version 1.5.0
 ------------------ Differences in second --------------------
 1c1
 < [ seconddiag.Main ] INFO: Some information
@@ -20,4 +25,6 @@ Comparing differences for DIAG test-suite TargetApp
 > [main            ] INFO  seconddiag - Some information
 ------------------ New result in third --------------------
 [main            ] INFO  thirddiag - Some information
+<See also tkdiff window for details of output>
   Save Version java.dummy(1), Save Version java(2), Save Version dummy(3), Save(s) or continue(any other key)?
+Killed process 778246 with signal 2
