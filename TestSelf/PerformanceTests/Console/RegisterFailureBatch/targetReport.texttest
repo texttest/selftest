@@ -1,11 +1,16 @@
-faster=1,succeeded=1
-061011 PERF : 2 tests : 1 faster
+faster=2,slower=1,succeeded=1
+061103 PERF : 4 tests : 2 faster, 1 slower
 
 Summary of all Unsuccessful tests follows...
 ---------------------------------------------------------------------------------
 The following tests ran faster : 
 In PERF test-suite TargetApp:
-  - PERF test-case Failures : 100% faster
+  - PERF test-case Failures               : 100% faster
+  - PERF test-case FailuresNewBelowLimit  : 400% faster
+
+The following tests ran slower : 
+In PERF test-suite TargetApp:
+  - PERF test-case FailuresCurrBelowLimit : 250% slower
 
 
 Details of all Unsuccessful tests follows...
@@ -13,19 +18,39 @@ Details of all Unsuccessful tests follows...
 
 Detailed information for the tests that ran faster follows...
 --------------------------------------------------------
-TEST ran faster on hendersonville : PERF test-case Failures (under Failures)
+TEST ran faster on schefferville : PERF test-case Failures               (under Failures)
 ------------------ Differences in performance(faster) --------------------
 1,2c1,2
 < CPU time   :       10.0 sec. on sedom
 < Real time  :       18.2 sec.
 ---
-> CPU time   :       5.0 sec. on hendersonville
-> Real time  :       6.0 sec.
+> CPU time   :       5.0 sec. on schefferville
+> Real time  :       6.1 sec.
+--------------------------------------------------------
+TEST ran faster on schefferville : PERF test-case FailuresNewBelowLimit  (under FailuresNewBelowLimit)
+------------------ Differences in performance(faster) --------------------
+1,2c1,2
+< CPU time   :       5.0 sec. on madisonville
+< Real time  :       6.0 sec.
+---
+> CPU time   :       1.0 sec. on schefferville
+> Real time  :       2.0 sec.
+
+Detailed information for the tests that ran slower follows...
+--------------------------------------------------------
+TEST ran slower on schefferville : PERF test-case FailuresCurrBelowLimit (under FailuresCurrBelowLimit)
+------------------ Differences in performance(slower) --------------------
+1,2c1,2
+< CPU time   :       2.0 sec. on sedom
+< Real time  :       18.2 sec.
+---
+> CPU time   :       7.0 sec. on schefferville
+> Real time  :       8.1 sec.
 
 Summary of all Successful tests follows...
 ---------------------------------------------------------------------------------
 The following tests succeeded : 
 In PERF test-suite TargetApp:
-  - PERF test-case Success 
+  - PERF test-case Success               
 
 

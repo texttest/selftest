@@ -1,8 +1,10 @@
-Top Window title set to TextTest dynamic GUI (tests started at 01Nov11:13:04)
+Top Window title set to TextTest dynamic GUI (tests started at 02Nov13:55:16)
 Expanding tests in tree view...
 -> Added PERF test-suite TargetApp to test tree view.
-->   Added PERF test-case Success  to test tree view.
-->   Added PERF test-case Failures to test tree view.
+->   Added PERF test-case Success                to test tree view.
+->   Added PERF test-case Failures               to test tree view.
+->   Added PERF test-case FailuresCurrBelowLimit to test tree view.
+->   Added PERF test-case FailuresNewBelowLimit  to test tree view.
 
 Viewing test PERF test-suite TargetApp
 
@@ -12,9 +14,9 @@ Creating action 'Save' with label ''_Save'', stock id ''gtk-save'' and accelerat
 Creating action 'S_ave Selection' with label ''S_ave Selection'', stock id 'None' and accelerator None
 Creating action '_Quit' with label ''_Quit'', stock id ''gtk-quit'' and accelerator '<control>q'
 Creating action 'Save' with label ''_Save'', stock id ''gtk-save'' and accelerator '<control>s'
-Progress bar set to fraction 0.0, text '0 of 2 tests completed'
+Progress bar set to fraction 0.0, text '0 of 4 tests completed'
 
-Changing GUI status to: 'TextTest started at 01Nov11:13:05.'
+Changing GUI status to: 'TextTest started at 02Nov13:55:16.'
 Default widget is <type 'gtk.TreeView'>
 
 Waiting for application event 'completion of test actions' to occur.
@@ -26,7 +28,7 @@ Test progress:
 --> Pending : 0, colour 'white', font ''
 --> Running : 1, colour 'yellow', font 'bold'
 Redrawing test Success coloured green
-Progress bar set to fraction 0.5, text '1 of 2 tests completed'
+Progress bar set to fraction 0.25, text '1 of 4 tests completed'
 Test progress:
 --> Pending : 0, colour 'white', font ''
 --> Running : 0, colour 'white', font ''
@@ -43,7 +45,7 @@ Test progress:
 --> Succeeded : 1, colour 'green', font 'bold'
 Redrawing test Failures coloured green
 (Second column '100% faster(logperf)' coloured red)
-Progress bar set to fraction 1.0, text 'All 2 tests completed at 01Nov11:13:06 (1 tests failed)'
+Progress bar set to fraction 0.5, text '2 of 4 tests completed (1 tests failed)'
 Test progress:
 --> Pending : 0, colour 'white', font ''
 --> Running : 0, colour 'white', font ''
@@ -51,12 +53,64 @@ Test progress:
 --> Failed : 1, colour 'red', font 'bold'
 ----> Performance differences : 1, colour 'red', font 'bold'
 ------> Faster(logperf) : 1, colour 'red', font 'bold'
+Redrawing test FailuresCurrBelowLimit coloured white
+Test progress:
+--> Pending : 1, colour 'white', font 'bold'
+--> Running : 0, colour 'white', font ''
+--> Succeeded : 1, colour 'green', font 'bold'
+--> Failed : 1, colour 'red', font 'bold'
+----> Performance differences : 1, colour 'red', font 'bold'
+------> Faster(logperf) : 1, colour 'red', font 'bold'
+Redrawing test FailuresCurrBelowLimit coloured yellow
+Test progress:
+--> Pending : 0, colour 'white', font ''
+--> Running : 1, colour 'yellow', font 'bold'
+--> Succeeded : 1, colour 'green', font 'bold'
+--> Failed : 1, colour 'red', font 'bold'
+----> Performance differences : 1, colour 'red', font 'bold'
+------> Faster(logperf) : 1, colour 'red', font 'bold'
+Redrawing test FailuresCurrBelowLimit coloured green
+(Second column '100% faster(logperf)' coloured red)
+Progress bar set to fraction 0.75, text '3 of 4 tests completed (2 tests failed)'
+Test progress:
+--> Pending : 0, colour 'white', font ''
+--> Running : 0, colour 'white', font ''
+--> Succeeded : 1, colour 'green', font 'bold'
+--> Failed : 2, colour 'red', font 'bold'
+----> Performance differences : 2, colour 'red', font 'bold'
+------> Faster(logperf) : 2, colour 'red', font 'bold'
+Redrawing test FailuresNewBelowLimit coloured white
+Test progress:
+--> Pending : 1, colour 'white', font 'bold'
+--> Running : 0, colour 'white', font ''
+--> Succeeded : 1, colour 'green', font 'bold'
+--> Failed : 2, colour 'red', font 'bold'
+----> Performance differences : 2, colour 'red', font 'bold'
+------> Faster(logperf) : 2, colour 'red', font 'bold'
+Redrawing test FailuresNewBelowLimit coloured yellow
+Test progress:
+--> Pending : 0, colour 'white', font ''
+--> Running : 1, colour 'yellow', font 'bold'
+--> Succeeded : 1, colour 'green', font 'bold'
+--> Failed : 2, colour 'red', font 'bold'
+----> Performance differences : 2, colour 'red', font 'bold'
+------> Faster(logperf) : 2, colour 'red', font 'bold'
+Redrawing test FailuresNewBelowLimit coloured green
+(Second column '100% faster(logperf)' coloured red)
+Progress bar set to fraction 1.0, text 'All 4 tests completed at 02Nov13:55:18 (3 tests failed)'
+Test progress:
+--> Pending : 0, colour 'white', font ''
+--> Running : 0, colour 'white', font ''
+--> Succeeded : 1, colour 'green', font 'bold'
+--> Failed : 3, colour 'red', font 'bold'
+----> Performance differences : 3, colour 'red', font 'bold'
+------> Faster(logperf) : 3, colour 'red', font 'bold'
 Expected application event 'completion of test actions' occurred, proceeding.
 
 'select test' event created with arguments 'Failures'
-Tests: 1/2 selected, all visible
+Tests: 1/4 selected, all visible
 
-Changing GUI status to: 'Showing PERF test-case Failures ...'
+Changing GUI status to: 'Showing PERF test-case Failures               ...'
 Viewing test PERF test-case Failures
 
 Adding file errors.perf under heading 'Comparison Files', coloured green
@@ -71,12 +125,12 @@ Test faster(logperf) :
 1c1
 < Total Logperf :       10.0 seconds
 ---
-> Total Logperf  :      5.0 seconds on zanesville
+> Total Logperf  :      5.0 seconds on schefferville
 --------------------------------------
 
 Tabs showing : Text Info, Viewing, Progress, Saving, Save Selection
 
-Changing GUI status to: 'Done showing PERF test-case Failures.'
+Changing GUI status to: 'Done showing PERF test-case Failures              .'
 
 'select file' event created with arguments 'logperf.perf.logfile'
 Comparing file logperf.perf with previous version using 'tkdiff'
@@ -96,25 +150,23 @@ Viewing button with title '_Save'
 'save' event created with arguments ''
 
 Changing GUI status to: 'Saving 1 tests ...'
-Saving PERF test-case Failures - version logfile, exactness 1
+Saving PERF test-case Failures               - version logfile, exactness 1
 
-Changing GUI status to: 'Saving PERF test-case Failures : logperf(faster(logperf)), version logfile'
+Changing GUI status to: 'Saving PERF test-case Failures               : logperf(faster(logperf)), version logfile'
 Redrawing test Failures coloured green
-Redrawing suite TargetApp : second column 'All 2 tests successful' coloured green
-Tests: 0/2 selected, all visible
 
 Adding file errors.perf under heading 'Comparison Files', coloured green
 Adding file logperf.perf.logfile under heading 'Comparison Files', coloured green
 Adding file output.perf under heading 'Comparison Files', coloured green
 Adding file performance.perf under heading 'Comparison Files', coloured green
-Progress bar detected save, new text is 'All 2 tests completed at 01Nov11:13:06'
+Progress bar detected save, new text is 'All 4 tests completed at 02Nov13:55:18 (2 tests failed)'
 Test progress:
 --> Pending : 0, colour 'white', font ''
 --> Running : 0, colour 'white', font ''
 --> Succeeded : 2, colour 'green', font 'bold'
---> Failed : 0, colour 'white', font ''
-----> Performance differences : 0, colour 'white', font ''
-------> Faster(logperf) : 0, colour 'white', font ''
+--> Failed : 2, colour 'red', font 'bold'
+----> Performance differences : 2, colour 'red', font 'bold'
+------> Faster(logperf) : 2, colour 'red', font 'bold'
 
 Changing GUI status to: 'Saved 1 tests.'
 
