@@ -10,8 +10,8 @@ BatchFilterFile
 # Should reject as the batch session is undefined and a version is provided
 BatchRejectVersion
 
-# Make sure rejection doesn't kick in if batch_version empty
-DontRejectNoBatchVersions
+# If batch version filtering enabled and all versions match, shouldn't reject
+BatchVersionsMatch
 
 # Check that rejecting extra versions doesn't lead to crashes...
 RejectExtraVersion
