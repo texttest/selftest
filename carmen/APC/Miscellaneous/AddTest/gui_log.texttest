@@ -48,6 +48,7 @@ Adding file apc under heading 'RAVE module', coloured pale green
 Viewing notebook page for 'Adding Test'
 Viewing entry for option 'Test Name'
 Viewing entry for option 'Test Description'
+Viewing entry for option 'Place Test' (set to 'last in suite') (drop-down list containing ['last in suite', 'first in suite', 'after lh_bascripts', 'after lh_bascripts_empty', 'after sk_test9scripts', 'after Spielscripts', 'after RD_lh_pac'])
 Viewing entry for option 'Subplan name'
 Viewing button with title 'Add Test'
 Viewing button with title '_Quit', stock id ''gtk-quit'', accelerator ''<control>q''
@@ -55,7 +56,7 @@ Viewing button with title '_Select', stock id ''gtk-refresh'', accelerator ''<co
 Viewing button with title '_Run Tests', stock id ''gtk-execute'', accelerator ''<control>r''
 Viewing button with title 'R_eset', stock id ''gtk-revert-to-saved'', accelerator ''<control>e''
 
-Changing GUI status to: 'TextTest started at 10Nov14:10:45.'
+Changing GUI status to: 'TextTest started at 13Nov11:19:38.'
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
 Pane separator moved to 46% from the top
@@ -80,6 +81,7 @@ Adding file apc under heading 'RAVE module', coloured pale green
 Viewing notebook page for 'Adding Test'
 Viewing entry for option 'Test Name'
 Viewing entry for option 'Test Description'
+Viewing entry for option 'Place Test' (set to 'last in suite') (drop-down list containing ['last in suite', 'first in suite', 'after lh_bascripts', 'after lh_bascripts_empty', 'after sk_test9scripts', 'after Spielscripts', 'after RD_lh_pac'])
 Viewing entry for option 'Subplan name'
 Viewing button with title 'Add Test'
 
@@ -90,6 +92,7 @@ Changing GUI status to: 'Done showing APC test-suite TargetApp.'
 Viewing notebook page for 'Adding Suite'
 Viewing entry for option 'Suite Name'
 Viewing entry for option 'Suite Description'
+Viewing entry for option 'Place Suite' (set to 'last in suite') (drop-down list containing ['last in suite', 'first in suite', 'after lh_bascripts', 'after lh_bascripts_empty', 'after sk_test9scripts', 'after Spielscripts', 'after RD_lh_pac'])
 Viewing entry for option 'CARMUSR'
 Viewing entry for option 'CARMDATA (only if different)'
 Viewing button with title 'Add Suite'
@@ -99,7 +102,7 @@ Viewing button with title 'Add Suite'
 'enter carmusr =' event created with arguments '/carm/proj/apc/carmen_10/pic_user'
 
 'add suite' event created with arguments ''
-Adding Suite lh_ba_new under test suite APC test-suite TargetApp
+Adding Suite lh_ba_new under test suite APC test-suite TargetApp, placed last in suite
 Writing file environment.apc
 CARMUSR:/carm/proj/apc/carmen_10/pic_user
 CARMTMP:$CARMSYS/pic_tmp.apc
@@ -115,8 +118,45 @@ Adding file Implementation.etab under heading 'Resources', coloured pale green
 Viewing notebook page for 'Adding Test'
 Viewing entry for option 'Test Name'
 Viewing entry for option 'Test Description'
+Viewing entry for option 'Place Test' (set to 'last in suite') (drop-down list containing ['last in suite', 'first in suite'])
 Viewing entry for option 'Subplan name'
 Viewing button with title 'Add Test'
+Tests: 0/20 selected
+-> Recreating contents of APC test-suite TargetApp.
+->   Removed APC test-suite lh_bascripts from test tree view.
+->   Removed APC test-suite lh_bascripts_empty from test tree view.
+->   Removed APC test-suite sk_test9scripts from test tree view.
+->   Removed APC test-suite Spielscripts from test tree view.
+->   Removed APC test-suite RD_lh_pac from test tree view.
+->   Removed APC test-suite lh_ba_new from test tree view.
+->   Added APC test-suite lh_bascripts to test tree view.
+->     Added APC test-case large_gap_daily       to test tree view.
+->     Added APC test-case small_delta_benchmark to test tree view.
+->   Added APC test-suite lh_bascripts_empty to test tree view.
+->   Added APC test-suite sk_test9scripts to test tree view.
+->     Added APC test-case FC4_bas_col_1_paphos_aan to test tree view.
+->     Added APC test-case FC4_bas_col_1_paphos_aat to test tree view.
+->     Added APC test-case FC4_bas_col_1_paphos_adn to test tree view.
+->     Added APC test-case FC4_bas_col_1_paphos_adt to test tree view.
+->     Added APC test-case FC4_bas_col_1_paphos_dan to test tree view.
+->     Added APC test-case FC4_bas_col_1_paphos_dat to test tree view.
+->     Added APC test-case FC4_bas_col_1_paphos_ddn to test tree view.
+->     Added APC test-case FC4_bas_col_1_paphos_ddt to test tree view.
+->     Added APC test-case no_dh_single_base_cg     to test tree view.
+->   Added APC test-suite Spielscripts to test tree view.
+->     Added APC test-case umlauf_spiel to test tree view.
+->   Added APC test-suite RD_lh_pac to test tree view.
+->     Added APC test-case A320_COC_aan to test tree view.
+->     Added APC test-case A320_COC_aat to test tree view.
+->     Added APC test-case A320_COC_adn to test tree view.
+->     Added APC test-case A320_COC_adt to test tree view.
+->     Added APC test-case A320_COC_dan to test tree view.
+->     Added APC test-case A320_COC_dat to test tree view.
+->     Added APC test-case A320_COC_ddt to test tree view.
+->     Added APC test-case A320_COC_ddn to test tree view.
+->   Added APC test-suite lh_ba_new to test tree view.
+Marking 1 tests as selected
+Tests: 0/20 selected
 
 Changing GUI status to: 'Added new APC test-suite lh_ba_new'
 
@@ -125,7 +165,7 @@ Changing GUI status to: 'Added new APC test-suite lh_ba_new'
 'enter subplan name =' event created with arguments 'adv_apc_pairing/daily/Delta/small1'
 
 'add test' event created with arguments ''
-Adding Test small1 under test suite APC test-suite lh_ba_new
+Adding Test small1 under test suite APC test-suite lh_ba_new, placed last in suite
 Using option string : $CARMUSR/LOCAL_PLAN/adv_apc_pairing/daily/Delta/small1/APC_FILES $CARMUSR/LOCAL_PLAN/adv_apc_pairing/daily/Delta/small1/APC_FILES/run_status ${CARMSYS} ${CARMTMP}/crc/rule_set/APC/PUTS_ARCH_HERE/STD+EXP+JAR_no_reference ${USER}
 Setting test env: SP_ETAB_DIR = /carm/proj/apc/carmen_10/pic_user/LOCAL_PLAN/adv_apc_pairing/daily/Delta/small1/etable
 Setting test env: LP_ETAB_DIR = /carm/proj/apc/carmen_10/pic_user/LOCAL_PLAN/adv_apc_pairing/daily/Delta/etable
@@ -147,9 +187,16 @@ Setting sensitivity of button '_Plot Graph' to True
 Viewing notebook page for 'Copying'
 Viewing entry for option 'Name of copy' (set to 'small1_copy')
 Viewing entry for option 'Description' (set to 'Copy of small1')
+Viewing entry for option 'Place Test' (set to 'last in suite') (drop-down list containing ['last in suite', 'first in suite', 'after small1'])
 Viewing button with title '_Copy'
 
 Tabs showing : Copying, Studio, Graph, Bugs
+Tests: 0/21 selected
+->   Recreating contents of APC test-suite lh_ba_new.
+->     Removed APC test-case small1 from test tree view.
+->     Added APC test-case small1 to test tree view.
+Marking 1 tests as selected
+Tests: 1/21 selected
 
 Changing GUI status to: 'Added new APC test-case small1'
 

@@ -16,6 +16,7 @@ Adding file readonlyfile under heading 'Data Files', coloured pale green
 Viewing notebook page for 'Adding Test'
 Viewing entry for option 'Test Name'
 Viewing entry for option 'Test Description'
+Viewing entry for option 'Place Test' (set to 'last in suite') (drop-down list containing ['last in suite', 'first in suite', 'after Test1', 'after Test2'])
 Viewing entry for option 'Command line options'
 Viewing button with title 'Add Test'
 Viewing button with title '_Quit', stock id ''gtk-quit'', accelerator ''<control>q''
@@ -23,7 +24,7 @@ Viewing button with title '_Select', stock id ''gtk-refresh'', accelerator ''<co
 Viewing button with title '_Run Tests', stock id ''gtk-execute'', accelerator ''<control>r''
 Viewing button with title 'R_eset', stock id ''gtk-revert-to-saved'', accelerator ''<control>e''
 
-Changing GUI status to: 'TextTest started at 09Nov18:25:06.'
+Changing GUI status to: 'TextTest started at 13Nov11:17:31.'
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
 Pane separator moved to 46% from the top
@@ -64,6 +65,7 @@ Adding file readfile under heading 'writeandremovehere', coloured pale green
 Viewing notebook page for 'Copying'
 Viewing entry for option 'Name of copy' (set to 'Test1_copy')
 Viewing entry for option 'Description' (set to 'Copy of Test1')
+Viewing entry for option 'Place Test' (set to 'last in suite') (drop-down list containing ['last in suite', 'first in suite', 'after Test1', 'after Test2'])
 Viewing button with title '_Copy'
 
 Tabs showing : Copying, Bugs
@@ -71,7 +73,7 @@ Tabs showing : Copying, Bugs
 Changing GUI status to: 'Done showing TDAT test-case Test1.'
 
 'copy test' event created with arguments ''
-Adding Test Test1_copy under test suite TDAT test-suite TargetApp
+Adding Test Test1_copy under test suite TDAT test-suite TargetApp, placed last in suite
 Marking 1 tests as selected
 Tests: 1/3 selected
 Viewing new test Test1_copy
@@ -104,7 +106,18 @@ Adding file readfile under heading 'writeandremovehere', coloured pale green
 Viewing notebook page for 'Copying'
 Viewing entry for option 'Name of copy' (set to 'Test1_copy_copy')
 Viewing entry for option 'Description' (set to 'Copy of Test1_copy')
+Viewing entry for option 'Place Test' (set to 'last in suite') (drop-down list containing ['last in suite', 'first in suite', 'after Test1', 'after Test2', 'after Test1_copy'])
 Viewing button with title '_Copy'
+Tests: 0/3 selected
+-> Recreating contents of TDAT test-suite TargetApp.
+->   Removed TDAT test-case Test1 from test tree view.
+->   Removed TDAT test-case Test2 from test tree view.
+->   Removed TDAT test-case Test1_copy from test tree view.
+->   Added TDAT test-case Test1 to test tree view.
+->   Added TDAT test-case Test2 to test tree view.
+->   Added TDAT test-case Test1_copy to test tree view.
+Marking 1 tests as selected
+Tests: 1/3 selected
 
 Changing GUI status to: 'Added new TDAT test-case Test1_copy'
 
