@@ -24,7 +24,7 @@ Viewing action with title '_Select', stock id ''gtk-refresh'', accelerator ''<co
 Viewing action with title '_Run Tests', stock id ''gtk-execute'', accelerator ''<control>r''
 Viewing action with title 'R_eset', stock id ''gtk-revert-to-saved'', accelerator ''<control>e''
 
-Changing GUI status to: 'TextTest started at 15Nov12:56:46.'
+Changing GUI status to: 'TextTest started at 16Nov15:39:44.'
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
 
@@ -43,11 +43,9 @@ Viewing action with title '_Select', stock id ''gtk-refresh'', accelerator ''<co
 Pane separator moved to 50% from the left edge
 Default widget is <type 'gtk.TreeView'>
 
-'select test' event created with arguments 'A03'
+'set test selection to' event created with arguments 'A03'
 Tests: 1/11 selected
-
-Changing GUI status to: 'Showing DIP test-case A03    ...'
-Viewing test DIP test-case A03
+Setting file-view title to 'A03'
 
 Tabs showing : Copying, Bugs
 
@@ -62,46 +60,31 @@ Viewing entry for option 'Description' (set to 'Copy of A03')
 Viewing entry for option 'Place Test' (set to 'last in suite') (drop-down list containing ['last in suite', 'first in suite', 'after S01.99', 'after A01', 'after S02', 'after A02', 'after S03', 'after A03', 'after S04', 'after A04', 'after S05', 'after A05'])
 Viewing action with title '_Copy'
 
-Changing GUI status to: 'Done showing DIP test-case A03   .'
-
 'select indicated tests' event created with arguments ''
 
 Changing GUI status to: 'Selecting tests ...'
 Selected 11 out of a possible 11
 Marking 11 tests as selected
 Tests: All 11 selected
+Setting sensitivity of button 'Remove' to False
+
+Viewing notebook page for 'Select Tests'
+Viewing entry for option 'Tests for version' (drop-down list containing ['', '<default>'])
+Viewing entry for option 'Test names containing'
+Viewing entry for option 'Tests listed in file' (drop-down list containing ['', 'failures.dip', 'metafail.dip', 'versioned.dip.a03', 'versioned.dip.s03'])
+Viewing entry for option 'Suite names containing'
+Viewing entry for option 'Result files containing'
+Viewing entry for option 'Result file to search' (set to 'output')
+Viewing entry for option 'Execution time'
+Viewing check button for switch 'Select in collapsed suites'
+Viewing radio button for switch 'Current selection:', options Discard/Refine/Extend/Exclude'. Default value 0.
+Viewing action with title '_Select', stock id ''gtk-refresh'', accelerator ''<control>s''
 
 Changing GUI status to: 'Selected 11 tests.'
 
 'remove test' event created with arguments ''
-QUERY: You are about to remove the test 'A03' and all associated files.
-Are you sure you wish to proceed?
+ERROR: Cannot perform 'Remove Test' on currently selected None
 
-'answer yes to texttest query' event created with arguments ''
-Changes made to testcase file : 
-9,11d8
-< 
-< # Turkey and Germany go out together!
-< A03
-
-->     Removed DIP test-case A03    from test tree view.
-Tests: 10/11 selected
-Tests: All 10 selected
-Viewing DIP test-suite Game9952 as test A03 removed
-
-Adding file testsuite.dip under heading 'Definition Files', coloured pale green
-Adding file testsuite.dip.extraversion.extra1 under heading 'Definition Files', coloured pale green
-Adding file testsuite.dip.small under heading 'Definition Files', coloured pale green
-
-Viewing notebook page for 'Adding Test'
-Viewing entry for option 'Test Name'
-Viewing entry for option 'Test Description'
-Viewing entry for option 'Place Test' (set to 'last in suite') (drop-down list containing ['last in suite', 'first in suite', 'after S01.99', 'after A01', 'after S02', 'after A02', 'after S03', 'after S04', 'after A04', 'after S05', 'after A05'])
-Viewing entry for option 'Command line options'
-Viewing action with title 'Add Test'
-
-Tabs showing : Adding Test, Adding Suite, Bugs
-
-Changing GUI status to: 'Removed test A03'
+'agree to texttest message' event created with arguments ''
 
 'quit' event created with arguments ''

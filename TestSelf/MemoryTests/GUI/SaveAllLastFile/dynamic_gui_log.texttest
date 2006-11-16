@@ -1,4 +1,4 @@
-Top Window title set to TextTest dynamic GUI (tests started at 15Nov12:55:36)
+Top Window title set to TextTest dynamic GUI (tests started at 16Nov13:13:29)
 Expanding tests in tree view...
 -> Added MEM test-suite TargetApp to test tree view.
 ->   Added MEM test-case NoMemFile    to test tree view.
@@ -11,7 +11,7 @@ Viewing toggle action with title '_Status bar'. Start value is 1
 Viewing action with title '_Save', stock id ''gtk-save'', accelerator ''<control>s''
 Progress bar set to fraction 0.0, text '0 of 2 tests completed'
 
-Changing GUI status to: 'TextTest started at 15Nov12:55:37.'
+Changing GUI status to: 'TextTest started at 16Nov13:13:30.'
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
 
@@ -55,7 +55,7 @@ Test progress:
 ------> memory new : 1, colour 'orange', font 'bold'
 Redrawing test NoOutputFile coloured orange
 (Second column 'output new(+)' coloured orange)
-Progress bar set to fraction 1.0, text 'All 2 tests completed at 15Nov12:55:38 (2 tests failed)'
+Progress bar set to fraction 1.0, text 'All 2 tests completed at 16Nov13:13:31 (2 tests failed)'
 Test progress:
 --> Pending : 0, colour 'white', font ''
 --> Running : 0, colour 'white', font ''
@@ -65,11 +65,9 @@ Test progress:
 ------> output new(+) : 1, colour 'orange', font 'bold'
 Expected application event 'completion of test actions' occurred, proceeding.
 
-'select test' event created with arguments 'NoOutputFile'
+'set test selection to' event created with arguments 'NoOutputFile'
 Tests: 1/2 selected, all visible
-
-Changing GUI status to: 'Showing MEM test-case NoOutputFile ...'
-Viewing test MEM test-case NoOutputFile
+Setting file-view title to 'NoOutputFile'
 
 Adding file memory.mem under heading 'Comparison Files', coloured red
 (Second column '13% larger' coloured red)
@@ -88,21 +86,18 @@ Running Fake Memory Program...
 
 Tabs showing : Text Info, Viewing, Progress, Saving, Save Selection
 
-Changing GUI status to: 'Done showing MEM test-case NoOutputFile.'
-
 'set file selection to' event created with arguments 'memory.mem'
 
-'set test selection to' event created with arguments 'NoMemFile,NoOutputFile'
-Tests: 0/2 selected, all visible
-Tests: 1/2 selected, all visible
+'set test selection to' event created with arguments 'NoOutputFile,NoMemFile'
 Tests: All 2 selected, all visible
+Setting file-view title to 'Sample from 2 tests'
 
 'save' event created with arguments ''
 
 Changing GUI status to: 'Saving 2 tests ...'
 Saving MEM test-case NoMemFile    - version 2, exactness 1, only memory.mem
 Redrawing test NoMemFile coloured pale green
-Progress bar detected save, new text is 'All 2 tests completed at 15Nov12:55:38 (1 tests failed)'
+Progress bar detected save, new text is 'All 2 tests completed at 16Nov13:13:31 (1 tests failed)'
 Test progress:
 --> Pending : 0, colour 'white', font ''
 --> Running : 0, colour 'white', font ''
