@@ -1,12 +1,9 @@
 #!/usr/bin/env python
 
-import sys, time
+import sys, time, os
 
 def getSleepLength():
-    if len(sys.argv) > 1:
-        return int(sys.argv[1])
-    else:
-        return 1000
+    return int(os.getenv("SLEEP_LENGTH", 1000))
 
 sleepLength = getSleepLength()
 print "Sleeping for", sleepLength, "seconds..."
