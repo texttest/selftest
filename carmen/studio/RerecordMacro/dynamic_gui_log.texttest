@@ -1,10 +1,10 @@
-Top Window title set to TextTest dynamic GUI (tests started at 21Nov12:22:17)
+Top Window title set to TextTest dynamic GUI (tests started at 24Nov17:27:42)
 
 Viewing toggle action with title '_Toolbar'. Start value is 1
 Viewing toggle action with title '_Shortcut bar'. Start value is 1
 Viewing toggle action with title '_Status bar'. Start value is 1
 Viewing action with title '_Quit', stock id ''gtk-quit'', accelerator ''<control>q''
-Viewing action with title '_Save', stock id ''gtk-save'', accelerator ''<control>s''
+Viewing action with title '_Save', stock id ''gtk-save'', accelerator ''<control>s'' (greyed out)
 Progress bar set to fraction 0.0, text '0 of 1 tests completed'
 
 Expanding tests in tree view...
@@ -12,15 +12,17 @@ Expanding tests in tree view...
 ->   Added Studio test-suite lh_v12 to test tree view.
 ->     Added Studio test-case data_unchanged to test tree view.
 
-Changing GUI status to: 'TextTest started at 21Nov12:22:17.'
+Changing GUI status to: 'TextTest started at 24Nov17:27:42.'
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
-
-Viewing action with title 'Progress' (greyed out)
 
 Setting file-view title to 'TargetApp'
 Adding file environment.gst under heading 'Definition Files', coloured white
 Adding file testsuite.gst under heading 'Definition Files', coloured white
+
+Viewing action with title 'Progress' (greyed out)
+
+Tabs showing : Progress
 
 Pane separator moved to 46% from the top
 Pane separator moved to 50% from the left edge
@@ -36,7 +38,7 @@ Test progress:
 --> Running : 1, colour 'yellow', font 'bold'
 Redrawing test data_unchanged coloured green
 (Second column 'catalogue different(+)' coloured red)
-Progress bar set to fraction 1.0, text 'All 1 tests completed at 21Nov12:22:22 (1 tests failed)'
+Progress bar set to fraction 1.0, text 'All 1 tests completed at 24Nov17:28:01 (1 tests failed)'
 Test progress:
 --> Pending : 0, colour 'white', font ''
 --> Running : 0, colour 'white', font ''
@@ -55,7 +57,7 @@ Adding file output.gst under heading 'Comparison Files', coloured green
 Adding file usecase.gst under heading 'Comparison Files', coloured red
 
 ---------- Text Info Window ----------
-Test FAILED on shelbyville :
+Test FAILED on redenaco :
 ------------------ Differences in catalogue --------------------
 5,9c5,10
 < --------LOCAL_PLAN
@@ -103,7 +105,8 @@ Test FAILED on shelbyville :
 < <CommandAttributes label="Window Label" script="CuiGetAreaModeString(gpc_info,CuiArea1,pulldown1,25)" level="3"  returnVal="1"/>
 --------------------------------------
 
-Tabs showing : Text Info, Viewing, Progress, Saving, Save Selection
+Tabs showing : Text Info, Progress, Viewing, Saving, Save Selection
+Setting sensitivity of button '_Save' to True
 
 'save' event created with arguments ''
 
@@ -113,9 +116,16 @@ Saving Studio test-case data_unchanged - version , exactness 1
 Changing GUI status to: 'Saving Studio test-case data_unchanged : catalogue, no version'
 
 Changing GUI status to: 'Saving Studio test-case data_unchanged : usecase, no version'
+
+---------- Text Info Window ----------
+Test succeeded on redenaco
+--------------------------------------
 Redrawing test data_unchanged coloured green
 Redrawing suite lh_v12 : second column 'All 1 tests successful' coloured green
 Tests: 0/1 selected, all visible
+
+Tabs showing : Text Info, Progress, Viewing
+Setting sensitivity of button '_Save' to False
 Redrawing suite TargetApp : second column 'All 1 tests successful' coloured green
 
 Setting file-view title to 'data__unchanged'
@@ -123,11 +133,7 @@ Adding file catalogue.gst under heading 'Comparison Files', coloured green
 Adding file errors.gst under heading 'Comparison Files', coloured green
 Adding file output.gst under heading 'Comparison Files', coloured green
 Adding file usecase.gst under heading 'Comparison Files', coloured green
-
----------- Text Info Window ----------
-Test succeeded on shelbyville
---------------------------------------
-Progress bar detected save, new text is 'All 1 tests completed at 21Nov12:22:22'
+Progress bar detected save, new text is 'All 1 tests completed at 24Nov17:28:01'
 Test progress:
 --> Pending : 0, colour 'white', font ''
 --> Running : 0, colour 'white', font ''

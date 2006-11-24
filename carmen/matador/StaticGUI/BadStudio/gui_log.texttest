@@ -5,7 +5,7 @@ Viewing toggle action with title '_Shortcut bar'. Start value is 1
 Viewing toggle action with title '_Status bar'. Start value is 1
 Viewing action with title '_Quit', stock id ''gtk-quit'', accelerator ''<control>q''
 Viewing action with title '_Select', stock id ''gtk-refresh'', accelerator ''<control>s''
-Viewing action with title '_Run Tests', stock id ''gtk-execute'', accelerator ''<control>r''
+Viewing action with title '_Run Tests', stock id ''gtk-execute'', accelerator ''<control>r'' (greyed out)
 Viewing action with title 'R_eset', stock id ''gtk-revert-to-saved'', accelerator ''<control>e''
 
 Expanding tests in tree view...
@@ -27,14 +27,11 @@ Expanding tests in tree view...
 ->   Added Picador test-suite Picador to test tree view.
 ->     Added Picador test-case illegal_pairings to test tree view.
 
-Changing GUI status to: 'TextTest started at 17Nov11:45:53.'
+Changing GUI status to: 'TextTest started at 24Nov17:26:23.'
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
 
-Viewing action with title 'Remove'
-Viewing action with title 'New _Diagnostics' (greyed out)
-Viewing action with title 'CVS _Log' (greyed out)
-Viewing action with title '_Plot Graph' (greyed out)
+Tabs showing : Test, Selection, Running
 
 Setting file-view title to 'TargetApp'
 Adding file environment under heading 'Definition Files', coloured pale green
@@ -44,6 +41,13 @@ Adding file knownbugs.cas under heading 'Definition Files', coloured pale green
 Adding file knownbugs.cas.parallel under heading 'Definition Files', coloured pale green
 Adding file diagnostics.etab under heading 'Definition Files', coloured pale green
 Adding file matador under heading 'RAVE module', coloured pale green
+
+Viewing action with title 'Remove'
+Viewing action with title 'New _Diagnostics' (greyed out)
+Viewing action with title 'CVS _Log' (greyed out)
+Viewing action with title '_Plot Graph' (greyed out)
+
+Tabs showing : Adding Test, Adding Suite, Bugs
 
 Viewing notebook page for 'Adding Test'
 Viewing entry for option 'Test Name'
@@ -82,10 +86,11 @@ Setting sensitivity of button '_Plot Graph' to True
 Viewing notebook page for 'Copying'
 Viewing entry for option 'Name of copy' (set to 'firstpos_illegal_copy')
 Viewing entry for option 'Description' (set to 'Copy of firstpos_illegal')
-Viewing entry for option 'Place Test' (set to 'last in suite') (drop-down list containing ['last in suite', 'first in suite', 'after firstpos_illegal'])
+Viewing entry for option 'Place copy' (set to 'last in suite') (drop-down list containing ['last in suite', 'first in suite', 'after firstpos_illegal'])
 Viewing action with title '_Copy'
 
-Tabs showing : Copying, Studio, Graph, Bugs
+Tabs showing : Copying, Bugs, Studio, Graph
+Setting sensitivity of button '_Run Tests' to True
 
 'view sub-options for test :' event created with arguments 'Studio'
 
@@ -101,7 +106,6 @@ ERROR: Cannot start studio, no file at /no/such/CARMSYS/bin/studio
 'agree to texttest message' event created with arguments ''
 
 'set test selection to' event created with arguments '2crew_illegal_subchain'
-Tests: 0/8 selected
 Tests: 1/8 selected
 
 Setting file-view title to '2crew__illegal__subchain'
@@ -115,12 +119,6 @@ Adding file rules under heading 'Subplan', coloured pale green
 Adding file MAT_EUF_CC under heading 'Ruleset', coloured pale green
 Adding file matador_800restart under heading 'Script', coloured pale green
 
-Viewing notebook page for 'Copying'
-Viewing entry for option 'Name of copy' (set to '2crew_illegal_subchain_copy')
-Viewing entry for option 'Description' (set to 'Copy of 2crew_illegal_subchain')
-Viewing entry for option 'Place Test' (set to 'last in suite') (drop-down list containing ['last in suite', 'first in suite', 'after 2crew_illegal_subchain'])
-Viewing action with title '_Copy'
-
 'view options for' event created with arguments 'Running'
 
 Setting file-view title to 'cas'
@@ -128,6 +126,8 @@ Adding file config.cas under heading 'Application Files', coloured purple
 Adding file config.cas.extraversion under heading 'Application Files', coloured purple
 Adding file config.cas.parallel under heading 'Application Files', coloured purple
 Adding file config.cas.rave under heading 'Application Files', coloured purple
+
+Tabs showing : What to run, How to run, SGE, Side effects
 
 Viewing notebook page for 'What to run'
 Viewing entry for option 'Run this version'
@@ -149,13 +149,13 @@ Viewing check button for switch 'Run on performance machines only'
 
 'run selected tests' event created with arguments ''
 
-Changing GUI status to: 'Started 1 tests at 17Nov11:45:55.'
+Changing GUI status to: 'Started 1 tests at 24Nov17:26:24.'
 
 Waiting for application event 'dynamic GUI to be closed' to occur.
 
 Changing GUI status to: 'Updating files for Matador test-case 2crew_illegal_subchain ...'
 Expected application event 'dynamic GUI to be closed' occurred, proceeding.
 
-Changing GUI status to: 'Done updating after dynamic run started at 17Nov11:46:01.'
+Changing GUI status to: 'Done updating after dynamic run started at 24Nov17:26:29.'
 
 'quit' event created with arguments ''
