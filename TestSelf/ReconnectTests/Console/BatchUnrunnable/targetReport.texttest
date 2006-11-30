@@ -1,6 +1,6 @@
 From: geoff@localhost
 To: tom,dick,harry
-Subject: 061010 DIP reconnectrun.batch : 11 tests : 9 unrunnable, 2 FAILED
+Subject: 061130 DIP reconnectrun.batch : 11 tests : 8 unrunnable, 3 FAILED
 
 Summary of all Unsuccessful tests follows...
 ---------------------------------------------------------------------------------
@@ -10,7 +10,6 @@ In DIP test-suite TargetApp:
     - DIP test-case S01.99 : no results
     - DIP test-case A01   
     - DIP test-case S02    : no results
-    - DIP test-case A02    : no results
     - DIP test-case S03    : no results
     - DIP test-case S04    : no results
     - DIP test-case S05    : no results
@@ -22,6 +21,7 @@ In DIP test-suite TargetApp:
 The following tests FAILED : 
 In DIP test-suite TargetApp:
   In DIP test-suite Game9952:
+    - DIP test-case A02    : output missing
     - DIP test-case A03    : output different
     - DIP test-case A04    : output different
 
@@ -31,15 +31,48 @@ Details of all Unsuccessful tests follows...
 
 Detailed information for the tests that could not be run follows...
 --------------------------------------------------------
-8 TESTS could not be run :
+7 TESTS could not be run :
 No file found to load results from
-(tests were S01.99, S02, A02, S03, S04, S05, A05, S01)
+(tests were S01.99, S02, S03, S04, S05, A05, S01)
 --------------------------------------------------------
 TEST could not be run : DIP test-case A01    (under Game9952/A01)
 This test was not able to be run.
 There are many deep and involved reasons for this, too many to mention here...
 
 Detailed information for the tests that FAILED follows...
+--------------------------------------------------------
+TEST FAILED : DIP test-case A02    (under Game9952/A02)
+------------------ Missing result in output --------------------
+Austria: Bud -> Rum                (*bounce*)
+Austria: Vie -> Bud                (*bounce*)
+Austria: Ser SUPPORT Alb -> Gre    (*works*)
+Austria: Alb -> Gre                (*works*)
+Austria: Aeg -> Con                (*works*)
+
+England: Swe HOLD                  (*works*)
+England: Yor -> Hol                (*works*)
+England: Nth CONVOY Yor -> Hol     (*works*)
+England: Eng -> Lon                (*works*)
+
+France:  MAt -> Wes                (*works*)
+France:  Spa HOLD                  (*works*)
+France:  Ruh -> Mun                (*works*)
+France:  Bur SUPPORT Ruh -> Mun    (*works*)
+France:  Bel SUPPORT Yor -> Hol    (*works*)
+
+Germany: Hol HOLD                  (*dislodged*)
+Germany: Sil -> War                (*bounce*)
+Germany: Bal -> Swe                (*bounce*)
+Germany: Den SUPPORT Bal -> Swe    (*works*)
+
+Italy:   Tun -> Gre                (*bounce*)
+Italy:   Ion CONVOY Tun -> Gre     (*works*)
+Italy:   Apu SUPPORT Ion HOLD      (*works*)
+Italy:   Ven -> Tyr                (*works*)
+
+Russia:  Rum -> Ank                (*works*)
+Russia:  Bla CONVOY Rum -> Ank     (*works*)
+Russia:  Ukr -> War                (*bounce*)
 --------------------------------------------------------
 TEST FAILED on frankfort : DIP test-case A03    (under Game9952/A03)
 ------------------ Differences in output --------------------

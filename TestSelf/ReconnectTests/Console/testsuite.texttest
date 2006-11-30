@@ -16,6 +16,9 @@ NoStateFile
 # If we do full reconnection, make sure we actually create results if teststate is missing
 ResultsButNoStateFile
 
+# Copy of ResultsButNoStateFile, but don't tell it we need to recompute
+AutoRecomputeNoStateFile
+
 # Check that reconnection works together with linking test paths, without leaking directories
 LinkTestPath
 LinkTestPathRecompute
