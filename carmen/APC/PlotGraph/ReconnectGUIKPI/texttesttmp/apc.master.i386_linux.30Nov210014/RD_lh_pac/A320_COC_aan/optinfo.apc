@@ -1,0 +1,215 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>APC Status Report</title>
+<script type="text/javascript" language="JavaScript">
+    function HideView(id1,id2) {
+      document.getElementById(id1).style.display="none";
+      document.getElementById(id2).style.display="block";
+    }
+  </script><style type="text/css">
+    body { font-family: Arial,Helvetica,sans-serif;
+        font-size: 0.9em;
+        margin-right: 2em;}
+    a { color: rgb(0, 0, 0);}
+    a:hover { color: rgb(0, 0, 0);}
+    li { margin-bottom: 1em;
+        margin-left: -1.5em;}
+    pre { margin-top: 0.1em;
+        margin-bottom: 0em;
+        font-size: 1.2em;}
+    .optInfo { border-style: dashed;
+        border-width: 1px;
+        padding-bottom: 0.3em;
+        padding-top: 0.3em;
+        padding-left: 0.5em;}
+    .optInfoHead { padding-bottom: 0.3em;
+        padding-top: 0.3em;
+        padding-left: 0.5em;
+        font-family: Arial,Helvetica,sans-serif;
+        font-size:1.0em;}
+    .initHide { display: none;}
+    .imageLink { border-style: none;}
+    .warningHighVisibility { font-weight:bold }
+    .warningText { margin-top: 1em;
+        margin-bottom: 0em;}
+    .warningInfo { margin-left: 1.5em;}
+    .chain {margin-top: 0.5em;}
+    .boxTitle { border: 1px solid rgb(153, 153, 153);
+        margin-top: 0em;
+        margin-bottom: 0em;
+        font-weight: bold;
+        padding-top: 0.3em;
+        padding-left: 0.5em;
+        padding-bottom: 0.3em;
+        background-color: rgb(221, 221, 221);}
+    .box { border: 1px solid rgb(153, 153, 153);
+        margin-top: 0em;
+        padding-top: 0.3em;
+        padding-left: 0.5em;
+        padding-bottom: 0.3em;}
+  </style>
+</head>
+<body>
+<iframe name="dummy_iframe" id="dummyiframe" style="position: absolute; border: none;right: 2px; bottom:2px; width: 2px; height:2px;"></iframe><pre class="optInfoHead">
+APC STATUS REPORT OVERVIEW
+
+Total time:  3:06:19   cpu time:  3:04:42
+Active method: deadhead improve, module: exit
+Generated trips: 560582 this loop (expected 560582)
+Generated first legs: 14106 this loop (of 14106)
+</pre>
+<h1>
+<img style="width: 30px; height: 28px;" alt="" src="images/warning.gif"> Warnings</h1>
+<ul>
+<li><div>
+<div>Illegal rotations in input: 24 illegal rotations.
+</div>
+<pre>Abbreviations: OD on duty, DH deadhead, AC-CH aircraft change.
+</pre>
+<div class="chain">
+<div class="boxTitle">Trip example (<a href="unknown:/carmensystems/publisher/private/publisher?_id=carmensystems.apc.load_warning_chainunknownSolution=.Solution_warning1_1" target="dummy_iframe">
+      view in Studio )</a>
+</div>
+<pre class="box">
+block time 23:10, 5 days, block time per day 4:38
+total duty 47:55, apc-cost 14848, home base: FRA group "",  Complete,  1/0/1/0/0/0/0/0/0
+duty period 1: duty length 10:50, block time 7:10
+OD       [LH4292] FRA 12.40 Wed 20030101 15.35 Wed 20030101 AGP block 175 L
+OD       [LH4409] AGP 16.30 Wed 20030101 19.35 Wed 20030101 FRA block 185  
+OD AC-CH [LH4074] FRA 20.40 Wed 20030101 21.50 Wed 20030101 CDG block 70  
+Rest time 13:45
+duty period 2: duty length 11:55, block time 5:20
+DH       [LH4083] CDG 12.45 Thu 20030102 14.15 Thu 20030102 FRA block 90  
+OD AC-CH [LH4194] FRA 15.25 Thu 20030102 16.35 Thu 20030102 CDG block 70  
+OD       [LH4191] CDG 17.15 Thu 20030102 18.45 Thu 20030102 FRA block 90  
+OD       [LH4294] FRA 20.50 Thu 20030102 23.30 Thu 20030102 OPO block 160  
+Rest time 15:30
+duty period 3: duty length 10:10, block time 5:10
+OD       [LH4277] OPO 16.30 Fri 20030103 19.15 Fri 20030103 FRA block 165  
+OD       [LH 172] FRA 20.20 Fri 20030103 21.15 Fri 20030103 LEJ block 55  
+OD       [LH1367] LEJ 22.40 Fri 20030103 23.35 Fri 20030103 FRA block 55 L
+OD       [LH1367] FRA  0.35 Sat 20030104  1.10 Sat 20030104 STR block 35  
+Rest time 15:50
+duty period 4: duty length 4:20, block time 0:55
+DH       [LH  23] STR 18.10 Sat 20030104 19.05 Sat 20030104 FRA block 55  
+OD AC-CH [LH  98] FRA 20.25 Sat 20030104 21.20 Sat 20030104 BRE block 55  
+Rest time 11:55
+duty period 5: duty length 10:40, block time 4:35
+DH       [LH 935] BRE 10.25 Sun 20030105 12.05 Sun 20030105 MUC block 100  
+OD AC-CH [LH 167] MUC 13.15 Sun 20030105 14.30 Sun 20030105 FRA block 75  
+OD       [LH3392] FRA 15.45 Sun 20030105 17.15 Sun 20030105 BUD block 90  
+OD       [LH3437] BUD 18.05 Sun 20030105 19.55 Sun 20030105 FRA block 110  
+
+</pre>
+</div>
+<pre>Rule: MTV-COC: FDZ Verlaengerung Anzahl Cockpit 
+Current value: 4, should be &lt;= 3
+Actual: 4  Limit: 3 Overshoot: 1
+Rule: MTV-COC: RZ nach Schicht (unterwegs)
+Current value: 11:55, should be &gt;= 12:00
+Actual: 11:55  Limit: 12:00 Overshoot: 0:05
+</pre>
+<div class="chain">
+<div class="boxTitle">Trip example (<a href="unknown:/carmensystems/publisher/private/publisher?_id=carmensystems.apc.load_warning_chainunknownSolution=.Solution_warning2_1" target="dummy_iframe">
+      view in Studio )</a>
+</div>
+<pre class="box">
+block time 22:55, 5 days, block time per day 4:35
+total duty 42:50, apc-cost 18465, home base: FRA group "",  Complete,  1/0/1/0/0/0/0/0/0
+duty period 1: duty length 7:25, block time 3:05
+OD       [LH4438] FRA 15.10 Thu 20021212 16.20 Thu 20021212 AMS block 70  
+OD       [LH4439] AMS 17.35 Thu 20021212 18.45 Thu 20021212 FRA block 70  
+OD       [LH 234] FRA 20.10 Thu 20021212 20.55 Thu 20021212 DUS block 45  
+Rest time 13:35
+duty period 2: duty length 10:15, block time 5:55
+OD       [LH 848] DUS 12.00 Fri 20021213 13.10 Fri 20021213 MUC block 70  
+OD       [LH 915] MUC 13.55 Fri 20021213 15.10 Fri 20021213 DUS block 75  
+OD       [LH 874] DUS 15.50 Fri 20021213 17.00 Fri 20021213 MUC block 70  
+OD       [LH 873] MUC 17.40 Fri 20021213 18.50 Fri 20021213 TXL block 70  
+OD       [LH1070] TXL 19.35 Fri 20021213 20.45 Fri 20021213 MUC block 70  
+Rest time 15:30
+duty period 3: duty length 8:35, block time 5:15
+OD       [LH4500] MUC 13.55 Sat 20021214 16.10 Sat 20021214 LHR block 135  
+OD       [LH4731] LHR 17.05 Sat 20021214 18.55 Sat 20021214 MUC block 110  
+OD AC-CH [LH 965] MUC 19.40 Sat 20021214 20.50 Sat 20021214 CGN block 70  
+Rest time 12:40
+duty period 4: duty length 13:20, block time 6:55
+DH       [LH   7] CGN 10.40 Sun 20021215 11.35 Sun 20021215 FRA block 55  
+OD AC-CH [LH4290] FRA 14.00 Sun 20021215 16.30 Sun 20021215 MAD block 150  
+OD       [LH4281] MAD 17.20 Sun 20021215 20.05 Sun 20021215 FRA block 165  
+OD       [LH4544] FRA 21.10 Sun 20021215 22.50 Sun 20021215 MAN block 100  
+Rest time 17:50
+duty period 5: duty length 3:15, block time 1:45
+OD       [LH4607] MAN 18.10 Mon 20021216 19.55 Mon 20021216 FRA block 105  
+
+</pre>
+</div>
+<pre>Rule: MTV-COC: FDZ nicht laenger als vorangegangene Ruhezeit (nur SR)
+Current value: 13:20, should be &lt;= 12:40
+Actual: 13:20  Limit: 12:40 Overshoot: 0:40
+</pre>
+</div></li>
+<li><div>
+<div>Leg has no useful follower (1 uncoverable legs so far)
+</div>
+<div class="chain">
+<div class="boxTitle">Trip example (<a href="unknown:/carmensystems/publisher/private/publisher?_id=carmensystems.apc.load_warning_chainunknownSolution=.Solution_warning5_1" target="dummy_iframe">
+      view in Studio )</a>
+</div>
+<pre class="box">home base: FRA group "",  1/0/1/0/0/0/0/0/0
+OD       [LH3064] FRA 20.40 Mon 20021223 22.40 Mon 20021223 OSL block 120  
+
+</pre>
+</div>
+</div></li>
+<li><div>
+<div>Leg sequence has no useful follower (3 uncoverable legs so far)
+</div>
+<div class="chain">
+<div class="boxTitle">Trip example (<a href="unknown:/carmensystems/publisher/private/publisher?_id=carmensystems.apc.load_warning_chainunknownSolution=.Solution_warning6_1" target="dummy_iframe">
+      view in Studio )</a>
+</div>
+<pre class="box">home base: FRA group "",  1/0/1/0/0/0/0/0/0
+OD       [LH1333] STR 22.35 Mon 20021223 23.15 Mon 20021223 FRA block 40 L
+OD       [LH1333] FRA  0.40 Tue 20021224  1.30 Tue 20021224 BRE block 50  
+
+</pre>
+</div>
+</div></li>
+<li><div>
+<div>Leg sequence has no useful follower (5 uncoverable legs so far)
+</div>
+<div class="chain">
+<div class="boxTitle">Trip example (<a href="unknown:/carmensystems/publisher/private/publisher?_id=carmensystems.apc.load_warning_chainunknownSolution=.Solution_warning7_1" target="dummy_iframe">
+      view in Studio )</a>
+</div>
+<pre class="box">home base: FRA group "",  1/0/1/0/0/0/0/0/0
+OD       [LH1333] STR 22.35 Mon 20021230 23.15 Mon 20021230 FRA block 40 L
+OD       [LH1333] FRA  0.40 Tue 20021231  1.30 Tue 20021231 BRE block 50  
+
+</pre>
+</div>
+</div></li>
+<li><div>
+<div>Leg sequence has no useful predecessor (7 uncoverable legs so far)
+</div>
+<div class="chain">
+<div class="boxTitle">Trip example (<a href="unknown:/carmensystems/publisher/private/publisher?_id=carmensystems.apc.load_warning_chainunknownSolution=.Solution_warning8_1" target="dummy_iframe">
+      view in Studio )</a>
+</div>
+<pre class="box">home base: MUC group "",  1/0/1/0/0/0/0/0/0
+OD       [LH 898] CGN  6.05 Mon 20021230  7.10 Mon 20021230 MUC block 65 L
+OD       [LH1321] MUC  8.00 Mon 20021230 10.00 Mon 20021230 MUC block 120  
+
+</pre>
+</div>
+</div></li>
+<li><div><div>There are 8 legs that are definitely uncoverable
+
+</div></div></li>
+<li><div><div class="warningHighVisibility">The run was interupted after 1000 column generation iterations, as specified by the parameter column_generation_stop_after_iteration.
+</div></div></li>
+</ul>
+</body>
+</html>
