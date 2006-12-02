@@ -1,4 +1,4 @@
-Top Window title set to TextTest dynamic GUI (tests started at 01Dec17:02:11)
+Top Window title set to TextTest dynamic GUI (tests started at 02Dec15:29:45)
 
 Viewing toggle action with title '_Toolbar'. Start value is 1
 Viewing toggle action with title '_Shortcut bar'. Start value is 1
@@ -6,6 +6,27 @@ Viewing toggle action with title '_Status bar'. Start value is 1
 Viewing action with title '_Quit', stock id ''gtk-quit'', accelerator ''<control>q''
 Viewing action with title '_Save', stock id ''gtk-save'', accelerator ''<control>s'' (greyed out)
 Progress bar set to fraction 0.0, text '0 of 8 tests completed'
+UI layout: 
+<ui>
+  <menubar name="menubar">
+    <menu name="filemenu" action="filemenu">
+      <menuitem name="_Quit" action="_Quit"/>
+    </menu>
+    <menu name="viewmenu" action="viewmenu">
+      <menuitem name="_Toolbar" action="_Toolbar"/>
+      <menuitem name="_Shortcut bar" action="_Shortcut bar"/>
+      <menuitem name="_Status bar" action="_Status bar"/>
+    </menu>
+    <menu name="actionmenu" action="actionmenu">
+      <menuitem name="Save" action="Save"/>
+    </menu>
+  </menubar>
+  <toolbar name="toolbar">
+    <toolitem name="_Quit" action="_Quit"/>
+    <separator/>
+    <toolitem name="Save" action="Save"/>
+  </toolbar>
+</ui>
 
 Expanding tests in tree view...
 -> Added APC test-suite TargetApp to test tree view.
@@ -19,7 +40,7 @@ Expanding tests in tree view...
 ->     Added APC test-case A320_COC_ddt to test tree view.
 ->     Added APC test-case A320_COC_ddn to test tree view.
 
-Changing GUI status to: 'TextTest started at 01Dec17:02:12.'
+Changing GUI status to: 'TextTest started at 02Dec15:29:46.'
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
 
@@ -112,7 +133,7 @@ Test progress:
 --> Succeeded : 1, colour 'green', font 'bold'
 Redrawing test A320_COC_ddn coloured red
 (Second column 'no results' coloured red)
-Progress bar set to fraction 1.0, text 'All 8 tests completed at 01Dec17:02:14 (7 tests failed)'
+Progress bar set to fraction 1.0, text 'All 8 tests completed at 02Dec15:29:48 (7 tests failed)'
 Test progress:
 --> Failed : 7, colour 'red', font 'bold'
 ----> Performance differences : 1, colour 'red', font 'bold'

@@ -8,6 +8,33 @@ Viewing action with title '_Select', stock id ''gtk-refresh'', accelerator ''<co
 Viewing action with title '_Run Tests', stock id ''gtk-execute'', accelerator ''<control>r'' (greyed out)
 Viewing action with title 'R_eset', stock id ''gtk-revert-to-saved'', accelerator ''<control>e''
 Viewing action with title 'Remove', stock id ''gtk-delete'' (greyed out)
+UI layout: 
+<ui>
+  <menubar name="menubar">
+    <menu name="filemenu" action="filemenu">
+      <menuitem name="_Quit" action="_Quit"/>
+    </menu>
+    <menu name="viewmenu" action="viewmenu">
+      <menuitem name="_Toolbar" action="_Toolbar"/>
+      <menuitem name="_Shortcut bar" action="_Shortcut bar"/>
+      <menuitem name="_Status bar" action="_Status bar"/>
+    </menu>
+    <menu name="actionmenu" action="actionmenu">
+      <menuitem name="Select" action="Select"/>
+      <menuitem name="_Run Tests" action="_Run Tests"/>
+      <menuitem name="R_eset" action="R_eset"/>
+      <menuitem name="Remove" action="Remove"/>
+    </menu>
+  </menubar>
+  <toolbar name="toolbar">
+    <toolitem name="_Quit" action="_Quit"/>
+    <separator/>
+    <toolitem name="Select" action="Select"/>
+    <toolitem name="_Run Tests" action="_Run Tests"/>
+    <toolitem name="R_eset" action="R_eset"/>
+    <toolitem name="Remove" action="Remove"/>
+  </toolbar>
+</ui>
 
 Expanding tests in tree view...
 -> Added DIP test-suite TargetApp to test tree view.
@@ -26,7 +53,7 @@ Expanding tests in tree view...
 ->     Added DIP test-suite Game47 to test tree view.
 ->       Added DIP test-case S01 to test tree view.
 
-Changing GUI status to: 'TextTest started at 01Dec15:03:19.'
+Changing GUI status to: 'TextTest started at 02Dec15:28:26.'
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
 
@@ -108,7 +135,7 @@ Changing GUI status to: 'Selected 11 tests.'
 
 'run selected tests' event created with arguments ''
 
-Changing GUI status to: 'Started 11 tests at 01Dec15:03:20.'
+Changing GUI status to: 'Started 11 tests at 02Dec15:28:27.'
 
 Waiting for application event 'dynamic GUI to be closed' to occur.
 
@@ -135,6 +162,6 @@ Changing GUI status to: 'Updating files for DIP test-case A05    ...'
 Changing GUI status to: 'Updating files for DIP test-case S01 ...'
 Expected application event 'dynamic GUI to be closed' occurred, proceeding.
 
-Changing GUI status to: 'Done updating after dynamic run started at 01Dec15:03:26.'
+Changing GUI status to: 'Done updating after dynamic run started at 02Dec15:28:33.'
 
 'quit' event created with arguments ''

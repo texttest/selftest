@@ -8,11 +8,38 @@ Viewing action with title '_Select', stock id ''gtk-refresh'', accelerator ''<co
 Viewing action with title '_Run Tests', stock id ''gtk-execute'', accelerator ''<control>r'' (greyed out)
 Viewing action with title 'R_eset', stock id ''gtk-revert-to-saved'', accelerator ''<control>e''
 Viewing action with title 'Remove', stock id ''gtk-delete'' (greyed out)
+UI layout: 
+<ui>
+  <menubar name="menubar">
+    <menu name="filemenu" action="filemenu">
+      <menuitem name="_Quit" action="_Quit"/>
+    </menu>
+    <menu name="viewmenu" action="viewmenu">
+      <menuitem name="_Toolbar" action="_Toolbar"/>
+      <menuitem name="_Shortcut bar" action="_Shortcut bar"/>
+      <menuitem name="_Status bar" action="_Status bar"/>
+    </menu>
+    <menu name="actionmenu" action="actionmenu">
+      <menuitem name="Select" action="Select"/>
+      <menuitem name="_Run Tests" action="_Run Tests"/>
+      <menuitem name="R_eset" action="R_eset"/>
+      <menuitem name="Remove" action="Remove"/>
+    </menu>
+  </menubar>
+  <toolbar name="toolbar">
+    <toolitem name="_Quit" action="_Quit"/>
+    <separator/>
+    <toolitem name="Select" action="Select"/>
+    <toolitem name="_Run Tests" action="_Run Tests"/>
+    <toolitem name="R_eset" action="R_eset"/>
+    <toolitem name="Remove" action="Remove"/>
+  </toolbar>
+</ui>
 
 Expanding tests in tree view...
 -> Added HELLO test-suite TargetApp to test tree view.
 
-Changing GUI status to: 'TextTest started at 01Dec15:03:14.'
+Changing GUI status to: 'TextTest started at 02Dec15:28:18.'
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
 
@@ -53,6 +80,6 @@ Setting sensitivity of button 'Remove' to True
 
 'add test' event created with arguments ''
 Adding Test ExistingFile under test suite HELLO test-suite TargetApp, placed last in suite
-ERROR: Cannot create test sub-directory : /users/geoff/texttesttmp/texttest.01Dec150214/GUI/StaticGUI/StartFromScratch/FileNameClash/TargetApp/ExistingFile
+ERROR: Cannot create test sub-directory : /users/mattias/texttesttmp/texttest.02Dec152620/GUI/StaticGUI/StartFromScratch/FileNameClash/TargetApp/ExistingFile
 
 'close window' event created with arguments ''

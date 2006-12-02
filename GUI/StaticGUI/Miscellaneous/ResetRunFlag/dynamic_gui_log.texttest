@@ -1,4 +1,4 @@
-Top Window title set to TextTest dynamic GUI (tests started at 24Nov16:52:06)
+Top Window title set to TextTest dynamic GUI (tests started at 02Dec15:28:31)
 
 Viewing toggle action with title '_Toolbar'. Start value is 1
 Viewing toggle action with title '_Shortcut bar'. Start value is 1
@@ -6,6 +6,27 @@ Viewing toggle action with title '_Status bar'. Start value is 1
 Viewing action with title '_Quit', stock id ''gtk-quit'', accelerator ''<control>q''
 Viewing action with title '_Save', stock id ''gtk-save'', accelerator ''<control>s'' (greyed out)
 Progress bar set to fraction 0.0, text '0 of 11 tests completed'
+UI layout: 
+<ui>
+  <menubar name="menubar">
+    <menu name="filemenu" action="filemenu">
+      <menuitem name="_Quit" action="_Quit"/>
+    </menu>
+    <menu name="viewmenu" action="viewmenu">
+      <menuitem name="_Toolbar" action="_Toolbar"/>
+      <menuitem name="_Shortcut bar" action="_Shortcut bar"/>
+      <menuitem name="_Status bar" action="_Status bar"/>
+    </menu>
+    <menu name="actionmenu" action="actionmenu">
+      <menuitem name="Save" action="Save"/>
+    </menu>
+  </menubar>
+  <toolbar name="toolbar">
+    <toolitem name="_Quit" action="_Quit"/>
+    <separator/>
+    <toolitem name="Save" action="Save"/>
+  </toolbar>
+</ui>
 
 Expanding tests in tree view...
 -> Added DIP test-suite TargetApp to test tree view.
@@ -24,7 +45,7 @@ Expanding tests in tree view...
 ->     Added DIP test-suite Game47 to test tree view.
 ->       Added DIP test-case S01 to test tree view.
 
-Changing GUI status to: 'TextTest started at 24Nov16:52:07.'
+Changing GUI status to: 'TextTest started at 02Dec15:28:31.'
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
 
@@ -212,7 +233,7 @@ Redrawing test S01 coloured green
 Redrawing suite Game47 : second column 'All 1 tests successful' coloured green
 Redrawing suite npstIII : second column 'All 1 tests successful' coloured green
 Redrawing suite TargetApp : second column 'All 11 tests successful' coloured green
-Progress bar set to fraction 1.0, text 'All 11 tests completed at 24Nov16:52:13'
+Progress bar set to fraction 1.0, text 'All 11 tests completed at 02Dec15:28:36'
 Test progress:
 --> Pending : 0, colour 'white', font ''
 --> Running : 0, colour 'white', font ''

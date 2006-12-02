@@ -8,12 +8,39 @@ Viewing action with title '_Select', stock id ''gtk-refresh'', accelerator ''<co
 Viewing action with title '_Run Tests', stock id ''gtk-execute'', accelerator ''<control>r'' (greyed out)
 Viewing action with title 'R_eset', stock id ''gtk-revert-to-saved'', accelerator ''<control>e''
 Viewing action with title 'Remove', stock id ''gtk-delete'' (greyed out)
+UI layout: 
+<ui>
+  <menubar name="menubar">
+    <menu name="filemenu" action="filemenu">
+      <menuitem name="_Quit" action="_Quit"/>
+    </menu>
+    <menu name="viewmenu" action="viewmenu">
+      <menuitem name="_Toolbar" action="_Toolbar"/>
+      <menuitem name="_Shortcut bar" action="_Shortcut bar"/>
+      <menuitem name="_Status bar" action="_Status bar"/>
+    </menu>
+    <menu name="actionmenu" action="actionmenu">
+      <menuitem name="Select" action="Select"/>
+      <menuitem name="_Run Tests" action="_Run Tests"/>
+      <menuitem name="R_eset" action="R_eset"/>
+      <menuitem name="Remove" action="Remove"/>
+    </menu>
+  </menubar>
+  <toolbar name="toolbar">
+    <toolitem name="_Quit" action="_Quit"/>
+    <separator/>
+    <toolitem name="Select" action="Select"/>
+    <toolitem name="_Run Tests" action="_Run Tests"/>
+    <toolitem name="R_eset" action="R_eset"/>
+    <toolitem name="Remove" action="Remove"/>
+  </toolbar>
+</ui>
 
 Expanding tests in tree view...
 -> Added GREP test-suite TargetApp to test tree view.
 ->   Added GREP test-case GrepTest to test tree view.
 
-Changing GUI status to: 'TextTest started at 01Dec15:02:41.'
+Changing GUI status to: 'TextTest started at 02Dec15:24:55.'
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
 
@@ -73,8 +100,8 @@ ERROR: Must provide a bug ID if bug system is given
 'check trigger even if other files differ (report as internal error)' event created with arguments ''
 
 'report described bugs' event created with arguments ''
-Recording known bugs to /users/geoff/texttesttmp/texttest.01Dec150214/TestSelf/KnownBugs/GUI/CreateNewReport/TargetApp/knownbugs.grep.new :
-[Reported by geoff at 01Dec15:02:42]
+Recording known bugs to /users/mattias/texttesttmp/texttest.02Dec152338/TestSelf/KnownBugs/GUI/CreateNewReport/TargetApp/knownbugs.grep.new :
+[Reported by mattias at 02Dec15:24:56]
 search_string:Harald
 search_file:output
 bug_system:bugzilla

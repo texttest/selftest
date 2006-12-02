@@ -1,4 +1,4 @@
-Top Window title set to TextTest dynamic GUI (tests started at 24Nov17:26:39)
+Top Window title set to TextTest dynamic GUI (tests started at 02Dec15:29:31)
 
 Viewing toggle action with title '_Toolbar'. Start value is 1
 Viewing toggle action with title '_Shortcut bar'. Start value is 1
@@ -6,13 +6,34 @@ Viewing toggle action with title '_Status bar'. Start value is 1
 Viewing action with title '_Quit', stock id ''gtk-quit'', accelerator ''<control>q''
 Viewing action with title '_Save', stock id ''gtk-save'', accelerator ''<control>s'' (greyed out)
 Progress bar set to fraction 0.0, text '0 of 1 tests completed'
+UI layout: 
+<ui>
+  <menubar name="menubar">
+    <menu name="filemenu" action="filemenu">
+      <menuitem name="_Quit" action="_Quit"/>
+    </menu>
+    <menu name="viewmenu" action="viewmenu">
+      <menuitem name="_Toolbar" action="_Toolbar"/>
+      <menuitem name="_Shortcut bar" action="_Shortcut bar"/>
+      <menuitem name="_Status bar" action="_Status bar"/>
+    </menu>
+    <menu name="actionmenu" action="actionmenu">
+      <menuitem name="Save" action="Save"/>
+    </menu>
+  </menubar>
+  <toolbar name="toolbar">
+    <toolitem name="_Quit" action="_Quit"/>
+    <separator/>
+    <toolitem name="Save" action="Save"/>
+  </toolbar>
+</ui>
 
 Expanding tests in tree view...
 -> Added APC test-suite TargetApp to test tree view.
 ->   Added APC test-suite Spielscripts to test tree view.
 ->     Added APC test-case umlauf_spiel to test tree view.
 
-Changing GUI status to: 'TextTest started at 24Nov17:26:40.'
+Changing GUI status to: 'TextTest started at 02Dec15:29:32.'
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
 
@@ -48,7 +69,7 @@ Test progress:
 --> Running : 1, colour 'yellow', font 'bold'
 Redrawing test umlauf_spiel coloured green
 (Second column 'solution 20.0% worse(+)' coloured red)
-Progress bar set to fraction 1.0, text 'All 1 tests completed at 24Nov17:26:44 (1 tests failed)'
+Progress bar set to fraction 1.0, text 'All 1 tests completed at 02Dec15:29:35 (1 tests failed)'
 Test progress:
 --> Pending : 0, colour 'white', font ''
 --> Running : 0, colour 'white', font ''
@@ -70,7 +91,7 @@ Setting sensitivity of button 'CVS _Log' to True
 Setting sensitivity of button '_Plot Graph' to True
 
 ---------- Text Info Window ----------
-Test FAILED on singleton :
+Test FAILED on madisonville :
 ------------------ Differences in solution --------------------
 12c12
 < 145;21;0;0;0;A;;;0x40;0;some_crap
