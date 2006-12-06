@@ -35,7 +35,7 @@ traffic:{INTERNAL writedir}{REPLACE <test write dir>}
 traffic:[^/]*[0-9][0-9][A-Z][a-z][a-z][0-9][0-9][0-9][0-9][0-9][0-9]{REPLACE <target tmp dir>}
 traffic:[0-9]*\.[0-9]*\.[0-9]*\.[0-9]*:[0-9]*{REPLACE <host:port>}
 traffic:[^ ]*/Testing/Automatic{REPLACE <texttest_home>}
-traffic:[^ ]*/texttest.py{REPLACE <path_to_texttest>}
+traffic:[^ ]*/texttest[\.py]* {REPLACE <path_to_texttest> }
 
 [unordered_text]
 output:succeeded on
