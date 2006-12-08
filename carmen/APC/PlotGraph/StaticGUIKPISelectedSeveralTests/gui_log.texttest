@@ -8,7 +8,7 @@ Viewing action with title '_Select', stock id ''gtk-refresh'', accelerator ''<co
 Viewing action with title '_Run Tests', stock id ''gtk-execute'', accelerator ''<control>r'' (greyed out)
 Viewing action with title 'R_eset', stock id ''gtk-revert-to-saved'', accelerator ''<control>e''
 Viewing action with title 'Remove', stock id ''gtk-delete'' (greyed out)
-Viewing action with title '_Plot Graph', stock id ''gtk-clear'' (greyed out)
+Viewing action with title '_Plot Graph', stock id ''gtk-clear'', accelerator ''<control>p'' (greyed out)
 UI layout: 
 <ui>
   <menubar name="menubar">
@@ -69,7 +69,7 @@ Expanding tests in tree view...
 ->     Added APC test-case A320_COC_ddn to test tree view.
 -> Added APC test-suite TargetApp to test tree view.
 
-Changing GUI status to: 'TextTest started at 08Dec12:39:10.'
+Changing GUI status to: 'TextTest started at 08Dec14:28:49.'
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
 
@@ -92,6 +92,8 @@ Viewing action with title '_Select', stock id ''gtk-refresh'', accelerator ''<co
 
 Pane separator moved to 50% from the left edge
 Default widget is <type 'gtk.TreeView'>
+
+'set test selection to' event created with arguments 'A320_COC_aan,A320_COC_aat'
 Tests: 1/21 selected
 Setting sensitivity of button 'CVS _Log' to True
 
@@ -147,6 +149,8 @@ Viewing action with title '_Select', stock id ''gtk-refresh'', accelerator ''<co
 
 Tabs showing : Selection, Running, Graph
 
+'view options for' event created with arguments 'Graph'
+
 Viewing notebook page for 'Graph'
 Viewing entry for option 'Horizontal range' (set to '0:')
 Viewing entry for option 'Vertical range'
@@ -169,6 +173,26 @@ Viewing check button for switch 'Plot only average'
 Viewing check button for switch 'No legend'
 Viewing check button for switch 'Only legend for the averages'
 Viewing check button for switch 'Plot kpi group'
-Viewing action with title '_Plot Graph', stock id ''gtk-clear''
+Viewing action with title '_Plot Graph', stock id ''gtk-clear'', accelerator ''<control>p''
 
-Changing GUI status to: 'Performed 'Plot Graph' on 2 tests.'
+'check plot kpi group' event created with arguments ''
+
+'check plot also average' event created with arguments ''
+
+'check plot percentage' event created with arguments ''
+
+'enter vertical range =' event created with arguments ':4'
+
+'enter extra versions to plot =' event created with arguments '9'
+
+'enter time scale to use =' event created with arguments 'hours'
+
+'plot graph' event created with arguments ''
+
+Changing GUI status to: 'Plotting tests ...'
+
+Changing GUI status to: 'Plotted 2 tests.'
+
+Terminating process that plots graphs...
+
+'quit' event created with arguments ''
