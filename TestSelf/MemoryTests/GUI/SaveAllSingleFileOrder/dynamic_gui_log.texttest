@@ -1,11 +1,11 @@
-Top Window title set to TextTest dynamic GUI (tests started at 08Dec10:26:47)
+Top Window title set to TextTest dynamic GUI (tests started at 08Dec10:26:51)
 
 Viewing toggle action with title '_Toolbar'. Start value is 1
 Viewing toggle action with title '_Shortcut bar'. Start value is 1
 Viewing toggle action with title '_Status bar'. Start value is 1
 Viewing action with title '_Quit', stock id ''gtk-quit'', accelerator ''<control>q''
 Viewing action with title '_Save', stock id ''gtk-save'', accelerator ''<control>s'' (greyed out)
-Progress bar set to fraction 0.0, text '0 of 1 tests completed'
+Progress bar set to fraction 0.0, text '0 of 2 tests completed'
 UI layout: 
 <ui>
   <menubar name="menubar">
@@ -31,8 +31,9 @@ UI layout:
 Expanding tests in tree view...
 -> Added MEM test-suite TargetApp to test tree view.
 ->   Added MEM test-case NoOutputFile to test tree view.
+->   Added MEM test-case NoMemFile    to test tree view.
 
-Changing GUI status to: 'TextTest started at 08Dec10:26:48.'
+Changing GUI status to: 'TextTest started at 08Dec10:26:52.'
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
 
@@ -59,7 +60,7 @@ Test progress:
 --> Running : 1, colour 'yellow', font 'bold'
 Redrawing test NoOutputFile coloured red
 (Second column 'output new(+)' coloured red)
-Progress bar set to fraction 1.0, text 'All 1 tests completed at 08Dec10:26:48 (1 tests failed)'
+Progress bar set to fraction 0.5, text '1 of 2 tests completed (1 tests failed)'
 Test progress:
 --> Pending : 0, colour 'white', font ''
 --> Running : 0, colour 'white', font ''
@@ -68,10 +69,40 @@ Test progress:
 ------> Memory+ : 1, colour 'red', font 'bold'
 ----> Differences : 1, colour 'red', font 'bold'
 ------> output new : 1, colour 'red', font 'bold'
+Redrawing test NoMemFile coloured white
+Test progress:
+--> Pending : 1, colour 'white', font 'bold'
+--> Running : 0, colour 'white', font ''
+--> Failed : 1, colour 'red', font 'bold'
+----> Performance differences : 1, colour 'red', font 'bold'
+------> Memory+ : 1, colour 'red', font 'bold'
+----> Differences : 1, colour 'red', font 'bold'
+------> output new : 1, colour 'red', font 'bold'
+Redrawing test NoMemFile coloured yellow
+Test progress:
+--> Pending : 0, colour 'white', font ''
+--> Running : 1, colour 'yellow', font 'bold'
+--> Failed : 1, colour 'red', font 'bold'
+----> Performance differences : 1, colour 'red', font 'bold'
+------> Memory+ : 1, colour 'red', font 'bold'
+----> Differences : 1, colour 'red', font 'bold'
+------> output new : 1, colour 'red', font 'bold'
+Redrawing test NoMemFile coloured green
+(Second column 'memory new' coloured red)
+Progress bar set to fraction 1.0, text 'All 2 tests completed at 08Dec10:26:53 (2 tests failed)'
+Test progress:
+--> Pending : 0, colour 'white', font ''
+--> Running : 0, colour 'white', font ''
+--> Failed : 2, colour 'red', font 'bold'
+----> Performance differences : 1, colour 'red', font 'bold'
+------> Memory+ : 1, colour 'red', font 'bold'
+----> Differences : 2, colour 'red', font 'bold'
+------> output new : 1, colour 'red', font 'bold'
+------> memory new : 1, colour 'red', font 'bold'
 Expected application event 'completion of test actions' occurred, proceeding.
 
 'set test selection to' event created with arguments 'NoOutputFile'
-Tests: All 1 selected, all visible
+Tests: 1/2 selected, all visible
 
 Setting file-view title to 'NoOutputFile'
 Adding file memory.mem under heading 'Comparison Files', coloured red
@@ -92,39 +123,54 @@ Running Fake Memory Program...
 Tabs showing : Text Info, Progress, Viewing, Saving, Save Selection
 Setting sensitivity of button '_Save' to True
 
+'set file selection to' event created with arguments 'output.mem'
+
+'set test selection to' event created with arguments 'NoOutputFile,NoMemFile'
+Tests: All 2 selected, all visible
+Setting file-view title to 'Sample from 2 tests'
+
 'save' event created with arguments ''
 
-Changing GUI status to: 'Saving 1 tests ...'
-Saving MEM test-case NoOutputFile - version nomemfile, exactness 1
-
-Changing GUI status to: 'Saving MEM test-case NoOutputFile : memory(larger), version nomemfile'
-
-Changing GUI status to: 'Saving MEM test-case NoOutputFile : output, version nomemfile'
+Changing GUI status to: 'Saving 2 tests ...'
+Saving MEM test-case NoOutputFile - version reversed, exactness 1, only output.mem
 
 ---------- Text Info Window ----------
-Test succeeded
+Test used more memory :
+------------------ Differences in memory(larger) --------------------
+1c1
+< Max Memory  :      42.3 MB
+---
+> Max Memory  :      47.8 MB
 --------------------------------------
 Redrawing test NoOutputFile coloured green
-Redrawing suite TargetApp : second column 'All 1 tests successful' coloured green
-Tests: 0/1 selected, all visible
+(Second column '13% larger' coloured red)
 
-Tabs showing : Text Info, Progress, Viewing
-Setting sensitivity of button '_Save' to False
-
-Setting file-view title to 'NoOutputFile'
-Adding file memory.mem.nomemfile under heading 'Comparison Files', coloured green
-Adding file output.mem.nomemfile under heading 'Comparison Files', coloured green
-Progress bar detected save, new text is 'All 1 tests completed at 08Dec10:26:48'
+Setting file-view title to 'Sample from 2 tests'
+Adding file memory.mem under heading 'Comparison Files', coloured red
+(Second column '13% larger' coloured red)
+Adding file output.mem.reversed under heading 'Comparison Files', coloured green
 Test progress:
 --> Pending : 0, colour 'white', font ''
 --> Running : 0, colour 'white', font ''
---> Failed : 0, colour 'white', font ''
-----> Performance differences : 0, colour 'white', font ''
-------> Memory+ : 0, colour 'white', font ''
-----> Differences : 0, colour 'white', font ''
+--> Failed : 2, colour 'red', font 'bold'
+----> Performance differences : 1, colour 'red', font 'bold'
+------> Memory+ : 1, colour 'red', font 'bold'
+----> Differences : 1, colour 'red', font 'bold'
 ------> output new : 0, colour 'white', font ''
---> Succeeded : 1, colour 'green', font 'bold'
+------> memory new : 1, colour 'red', font 'bold'
+Saving MEM test-case NoMemFile    - version reversed, exactness 1, only output.mem
+Redrawing test NoMemFile coloured green
+(Second column 'memory new' coloured red)
+Test progress:
+--> Pending : 0, colour 'white', font ''
+--> Running : 0, colour 'white', font ''
+--> Failed : 2, colour 'red', font 'bold'
+----> Performance differences : 1, colour 'red', font 'bold'
+------> Memory+ : 1, colour 'red', font 'bold'
+----> Differences : 1, colour 'red', font 'bold'
+------> output new : 0, colour 'white', font ''
+------> memory new : 1, colour 'red', font 'bold'
 
-Changing GUI status to: 'Saved 1 tests.'
+Changing GUI status to: 'Saved 2 tests.'
 
 'quit' event created with arguments ''
