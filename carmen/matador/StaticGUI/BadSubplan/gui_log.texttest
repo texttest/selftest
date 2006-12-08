@@ -8,6 +8,7 @@ Viewing action with title '_Select', stock id ''gtk-refresh'', accelerator ''<co
 Viewing action with title '_Run Tests', stock id ''gtk-execute'', accelerator ''<control>r'' (greyed out)
 Viewing action with title 'R_eset', stock id ''gtk-revert-to-saved'', accelerator ''<control>e''
 Viewing action with title 'Remove', stock id ''gtk-delete'' (greyed out)
+Viewing action with title '_Plot Graph', stock id ''gtk-clear'' (greyed out)
 UI layout: 
 <ui>
   <menubar name="menubar">
@@ -24,6 +25,7 @@ UI layout:
       <menuitem name="_Run Tests" action="_Run Tests"/>
       <menuitem name="R_eset" action="R_eset"/>
       <menuitem name="Remove" action="Remove"/>
+      <menuitem name="_Plot Graph" action="_Plot Graph"/>
     </menu>
   </menubar>
   <toolbar name="toolbar">
@@ -33,6 +35,7 @@ UI layout:
     <toolitem name="_Run Tests" action="_Run Tests"/>
     <toolitem name="R_eset" action="R_eset"/>
     <toolitem name="Remove" action="Remove"/>
+    <toolitem name="_Plot Graph" action="_Plot Graph"/>
   </toolbar>
 </ui>
 
@@ -55,7 +58,7 @@ Expanding tests in tree view...
 ->   Added Picador test-suite Picador to test tree view.
 ->     Added Picador test-case illegal_pairings to test tree view.
 
-Changing GUI status to: 'TextTest started at 02Dec15:29:26.'
+Changing GUI status to: 'TextTest started at 08Dec12:03:37.'
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
 
@@ -72,7 +75,6 @@ Adding file matador under heading 'RAVE module', coloured pale green
 
 Viewing action with title 'New _Diagnostics' (greyed out)
 Viewing action with title 'CVS _Log' (greyed out)
-Viewing action with title '_Plot Graph' (greyed out)
 
 Tabs showing : Adding Test, Adding Suite, Bugs
 
@@ -120,7 +122,8 @@ Setting file-view title to 'BadSubplan'
 Adding file options.cas under heading 'Definition Files', coloured pale green
 Setting sensitivity of button 'New _Diagnostics' to True
 Setting sensitivity of button 'CVS _Log' to True
-Setting sensitivity of button '_Plot Graph' to True
+
+Tabs showing : Test, Selection, Running, Graph
 
 Viewing notebook page for 'Copying'
 Viewing entry for option 'Name of copy' (set to 'BadSubplan_copy')
@@ -128,8 +131,9 @@ Viewing entry for option 'Description' (set to 'Copy of BadSubplan')
 Viewing entry for option 'Place copy' (set to 'last in suite') (drop-down list containing ['last in suite', 'first in suite', 'after firstpos_illegal', 'after BadSubplan'])
 Viewing action with title '_Copy'
 
-Tabs showing : Copying, Bugs, Studio, Graph
+Tabs showing : Copying, Bugs, Studio
 Setting sensitivity of button '_Run Tests' to True
+Setting sensitivity of button '_Plot Graph' to True
 ->   Recreating contents of Matador test-suite CarmDataUser.
 ->     Removed Matador test-case firstpos_illegal from test tree view.
 ->     Removed Matador test-case BadSubplan from test tree view.
@@ -183,9 +187,8 @@ Adding file matador_800restart under heading 'Script', coloured pale green
 
 Viewing action with title 'New _Diagnostics'
 Viewing action with title 'CVS _Log'
-Viewing action with title '_Plot Graph'
 
-Tabs showing : Copying, Bugs, Studio, Graph
+Tabs showing : Copying, Bugs, Studio
 
 Viewing notebook page for 'Copying'
 Viewing entry for option 'Name of copy' (set to '2crew_illegal_subchain_copy')
@@ -195,7 +198,7 @@ Viewing action with title '_Copy'
 
 'run selected tests' event created with arguments ''
 
-Changing GUI status to: 'Started 1 tests at 02Dec15:29:28.'
+Changing GUI status to: 'Started 1 tests at 08Dec12:03:38.'
 
 Waiting for application event 'dynamic GUI to be closed' to occur.
 
@@ -213,6 +216,6 @@ Adding file MAT_EUF_CC under heading 'Ruleset', coloured pale green
 Adding file matador_800restart under heading 'Script', coloured pale green
 Expected application event 'dynamic GUI to be closed' occurred, proceeding.
 
-Changing GUI status to: 'Done updating after dynamic run started at 02Dec15:29:32.'
+Changing GUI status to: 'Done updating after dynamic run started at 08Dec12:03:42.'
 
 'quit' event created with arguments ''

@@ -8,6 +8,7 @@ Viewing action with title '_Select', stock id ''gtk-refresh'', accelerator ''<co
 Viewing action with title '_Run Tests', stock id ''gtk-execute'', accelerator ''<control>r'' (greyed out)
 Viewing action with title 'R_eset', stock id ''gtk-revert-to-saved'', accelerator ''<control>e''
 Viewing action with title 'Remove', stock id ''gtk-delete'' (greyed out)
+Viewing action with title '_Plot Graph', stock id ''gtk-clear'' (greyed out)
 UI layout: 
 <ui>
   <menubar name="menubar">
@@ -24,6 +25,7 @@ UI layout:
       <menuitem name="_Run Tests" action="_Run Tests"/>
       <menuitem name="R_eset" action="R_eset"/>
       <menuitem name="Remove" action="Remove"/>
+      <menuitem name="_Plot Graph" action="_Plot Graph"/>
     </menu>
   </menubar>
   <toolbar name="toolbar">
@@ -33,6 +35,7 @@ UI layout:
     <toolitem name="_Run Tests" action="_Run Tests"/>
     <toolitem name="R_eset" action="R_eset"/>
     <toolitem name="Remove" action="Remove"/>
+    <toolitem name="_Plot Graph" action="_Plot Graph"/>
   </toolbar>
 </ui>
 
@@ -66,7 +69,7 @@ Expanding tests in tree view...
 ->     Added APC test-case A320_COC_ddn to test tree view.
 -> Added APC test-suite TargetApp to test tree view.
 
-Changing GUI status to: 'TextTest started at 04Dec16:22:51.'
+Changing GUI status to: 'TextTest started at 08Dec11:56:22.'
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
 
@@ -93,7 +96,6 @@ Default widget is <type 'gtk.TreeView'>
 'set test selection to' event created with arguments 'A320_COC_aan'
 Tests: 1/21 selected
 Setting sensitivity of button 'CVS _Log' to True
-Setting sensitivity of button '_Plot Graph' to True
 
 Setting file-view title to 'A320__COC__aan'
 Adding file error.apc under heading 'Standard Files', coloured pale green
@@ -112,9 +114,10 @@ Adding file rules under heading 'Subplan', coloured pale green
 Adding file LBA_MTV under heading 'Ruleset', coloured pale green
 
 Viewing action with title 'CVS _Log'
-Viewing action with title '_Plot Graph'
 
 Tabs showing : Adding Test, Adding Suite, Bugs
+
+Tabs showing : Test, Selection, Running, Graph
 
 Viewing notebook page for 'Copying'
 Viewing entry for option 'Name of copy' (set to 'A320_COC_aan_copy')
@@ -122,11 +125,12 @@ Viewing entry for option 'Description' (set to 'Copy of A320_COC_aan')
 Viewing entry for option 'Place copy' (set to 'last in suite') (drop-down list containing ['last in suite', 'first in suite', 'after A320_COC_aan', 'after A320_COC_aat', 'after A320_COC_adn', 'after A320_COC_adt', 'after A320_COC_dan', 'after A320_COC_dat', 'after A320_COC_ddt', 'after A320_COC_ddn'])
 Viewing action with title '_Copy'
 
-Tabs showing : Copying, Bugs, Studio, Graph
+Tabs showing : Copying, Bugs, Studio
 Setting sensitivity of button '_Run Tests' to True
 Setting sensitivity of button 'Remove' to True
+Setting sensitivity of button '_Plot Graph' to True
 
-'view sub-options for test :' event created with arguments 'Graph'
+'view options for' event created with arguments 'Graph'
 
 Viewing notebook page for 'Graph'
 Viewing entry for option 'Horizontal range' (set to '0:')
@@ -150,7 +154,7 @@ Viewing check button for switch 'Plot only average'
 Viewing check button for switch 'No legend'
 Viewing check button for switch 'Only legend for the averages'
 Viewing check button for switch 'Plot kpi group'
-Viewing action with title '_Plot Graph'
+Viewing action with title '_Plot Graph', stock id ''gtk-clear''
 
 'enter time scale to use =' event created with arguments 'hours'
 
@@ -158,7 +162,7 @@ Viewing action with title '_Plot Graph'
 
 'plot graph' event created with arguments ''
 
-Changing GUI status to: 'Performed 'Plot Graph' on APC test-case A320_COC_aan.'
+Changing GUI status to: 'Performed 'Plot Graph' on 1 tests.'
 
 Terminating process that plots graphs...
 
@@ -166,7 +170,7 @@ Terminating process that plots graphs...
 
 'plot graph' event created with arguments ''
 
-Changing GUI status to: 'Performed 'Plot Graph' on APC test-case A320_COC_aan.'
+Changing GUI status to: 'Performed 'Plot Graph' on 1 tests.'
 
 Terminating process that plots graphs...
 
@@ -178,7 +182,7 @@ Terminating process that plots graphs...
 
 'plot graph' event created with arguments ''
 
-Changing GUI status to: 'Performed 'Plot Graph' on APC test-case A320_COC_aan.'
+Changing GUI status to: 'Performed 'Plot Graph' on 1 tests.'
 
 Terminating process that plots graphs...
 
@@ -202,9 +206,19 @@ Adding file options.apc under heading 'Definition Files', coloured pale green
 Adding file rules under heading 'Subplan', coloured pale green
 Adding file LBA_MTV under heading 'Ruleset', coloured pale green
 
+Viewing action with title 'CVS _Log'
+
+Tabs showing : Copying, Bugs, Studio
+
+Viewing notebook page for 'Copying'
+Viewing entry for option 'Name of copy' (set to 'A320_COC_aat_copy')
+Viewing entry for option 'Description' (set to 'Copy of A320_COC_aat')
+Viewing entry for option 'Place copy' (set to 'last in suite') (drop-down list containing ['last in suite', 'first in suite', 'after A320_COC_aan', 'after A320_COC_aat', 'after A320_COC_adn', 'after A320_COC_adt', 'after A320_COC_dan', 'after A320_COC_dat', 'after A320_COC_ddt', 'after A320_COC_ddn'])
+Viewing action with title '_Copy'
+
 'plot graph' event created with arguments ''
 
-Changing GUI status to: 'Performed 'Plot Graph' on APC test-case A320_COC_aat.'
+Changing GUI status to: 'Performed 'Plot Graph' on 1 tests.'
 
 Terminating process that plots graphs...
 
@@ -227,9 +241,15 @@ Adding file options.apc under heading 'Definition Files', coloured pale green
 Adding file rules under heading 'Subplan', coloured pale green
 Adding file LBA_MTV under heading 'Ruleset', coloured pale green
 
+Viewing notebook page for 'Copying'
+Viewing entry for option 'Name of copy' (set to 'A320_COC_aan_copy')
+Viewing entry for option 'Description' (set to 'Copy of A320_COC_aan')
+Viewing entry for option 'Place copy' (set to 'last in suite') (drop-down list containing ['last in suite', 'first in suite', 'after A320_COC_aan', 'after A320_COC_aat', 'after A320_COC_adn', 'after A320_COC_adt', 'after A320_COC_dan', 'after A320_COC_dat', 'after A320_COC_ddt', 'after A320_COC_ddn'])
+Viewing action with title '_Copy'
+
 'plot graph' event created with arguments ''
 
-Changing GUI status to: 'Performed 'Plot Graph' on APC test-case A320_COC_aan.'
+Changing GUI status to: 'Performed 'Plot Graph' on 1 tests.'
 
 Terminating process that plots graphs...
 
