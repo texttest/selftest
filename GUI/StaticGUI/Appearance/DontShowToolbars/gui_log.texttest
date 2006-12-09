@@ -5,7 +5,7 @@ Viewing toggle action with title '_Shortcut bar'. Start value is 1
 Viewing toggle action with title '_Status bar'. Start value is 1
 Viewing action with title '_Quit', stock id ''gtk-quit''
 Viewing action with title '_Select', stock id ''gtk-refresh'', accelerator ''<atl>o''
-Viewing action with title '_Run Tests', stock id ''gtk-execute'', accelerator ''<ctrl>g'' (greyed out)
+Viewing action with title '_Run', stock id ''gtk-execute'', accelerator ''<control>r'' (greyed out)
 Viewing action with title 'R_eset', stock id ''gtk-revert-to-saved'', accelerator ''F2''
 Viewing action with title 'Remove', stock id ''gtk-delete'', accelerator ''<control><alt>r'' (greyed out)
 UI layout: 
@@ -21,7 +21,7 @@ UI layout:
     </menu>
     <menu name="actionmenu" action="actionmenu">
       <menuitem name="Select" action="Select"/>
-      <menuitem name="_Run Tests" action="_Run Tests"/>
+      <menuitem name="_Run" action="_Run"/>
       <menuitem name="R_eset" action="R_eset"/>
       <menuitem name="Remove" action="Remove"/>
     </menu>
@@ -30,7 +30,7 @@ UI layout:
     <toolitem name="_Quit" action="_Quit"/>
     <separator/>
     <toolitem name="Select" action="Select"/>
-    <toolitem name="_Run Tests" action="_Run Tests"/>
+    <toolitem name="_Run" action="_Run"/>
     <toolitem name="R_eset" action="R_eset"/>
     <toolitem name="Remove" action="Remove"/>
   </toolbar>
@@ -53,7 +53,7 @@ Expanding tests in tree view...
 ->     Added DIP test-suite Game47 to test tree view.
 ->       Added DIP test-case S01 to test tree view.
 
-Changing GUI status to: 'TextTest started at 02Dec15:28:26.'
+Changing GUI status to: 'TextTest started at 09Dec17:05:23.'
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
 
@@ -86,7 +86,7 @@ Tests: All 11 selected
 Tabs showing : Selection, Running
 
 Tabs showing : Select Tests, Saving
-Setting sensitivity of button '_Run Tests' to True
+Setting sensitivity of button '_Run' to True
 Setting sensitivity of button 'Remove' to True
 
 Changing GUI status to: 'Selected 11 tests.'
@@ -134,7 +134,7 @@ Viewing entry for option 'Command line options'
 Viewing action with title 'Add Test', accelerator ''p''
 
 Tabs showing : Adding Test, Adding Suite, Bugs
-Setting sensitivity of button '_Run Tests' to False
+Setting sensitivity of button '_Run' to False
 
 'set test selection to' event created with arguments 'S01.99'
 Tests: 1/11 selected
@@ -150,11 +150,11 @@ Viewing entry for option 'Place copy' (set to 'last in suite') (drop-down list c
 Viewing action with title '_Copy', accelerator ''<alt><shift><control>F2''
 
 Tabs showing : Copying, Bugs
-Setting sensitivity of button '_Run Tests' to True
+Setting sensitivity of button '_Run' to True
 
 'run selected tests' event created with arguments ''
 
-Changing GUI status to: 'Started 1 tests at 02Dec15:28:27.'
+Changing GUI status to: 'Started 1 tests at 09Dec17:05:24.'
 
 Waiting for application event 'dynamic GUI to be closed' to occur.
 
@@ -165,6 +165,6 @@ Adding file output.dip under heading 'Standard Files', coloured pale green
 Adding file input.dip under heading 'Definition Files', coloured pale green
 Expected application event 'dynamic GUI to be closed' occurred, proceeding.
 
-Changing GUI status to: 'Done updating after dynamic run started at 02Dec15:28:29.'
+Changing GUI status to: 'Done updating after dynamic run started at 09Dec17:05:24.'
 
 'quit' event created with arguments ''
