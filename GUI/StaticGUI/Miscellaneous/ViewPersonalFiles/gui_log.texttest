@@ -12,26 +12,26 @@ UI layout:
 <ui>
   <menubar name="menubar">
     <menu name="filemenu" action="filemenu">
-      <menuitem name="_Quit" action="_Quit"/>
+      <menuitem name="Quit" action="Quit"/>
     </menu>
     <menu name="viewmenu" action="viewmenu">
-      <menuitem name="_Toolbar" action="_Toolbar"/>
-      <menuitem name="_Shortcut bar" action="_Shortcut bar"/>
-      <menuitem name="_Status bar" action="_Status bar"/>
+      <menuitem name="Toolbar" action="Toolbar"/>
+      <menuitem name="Shortcut bar" action="Shortcut bar"/>
+      <menuitem name="Status bar" action="Status bar"/>
     </menu>
     <menu name="actionmenu" action="actionmenu">
       <menuitem name="Select" action="Select"/>
-      <menuitem name="_Run" action="_Run"/>
-      <menuitem name="R_eset" action="R_eset"/>
+      <menuitem name="Run" action="Run"/>
+      <menuitem name="Reset" action="Reset"/>
       <menuitem name="Remove" action="Remove"/>
     </menu>
   </menubar>
   <toolbar name="toolbar">
-    <toolitem name="_Quit" action="_Quit"/>
+    <toolitem name="Quit" action="Quit"/>
     <separator/>
     <toolitem name="Select" action="Select"/>
-    <toolitem name="_Run" action="_Run"/>
-    <toolitem name="R_eset" action="R_eset"/>
+    <toolitem name="Run" action="Run"/>
+    <toolitem name="Reset" action="Reset"/>
     <toolitem name="Remove" action="Remove"/>
   </toolbar>
 </ui>
@@ -53,11 +53,11 @@ Expanding tests in tree view...
 ->     Added DIP test-suite Game47 to test tree view.
 ->       Added DIP test-case S01 to test tree view.
 
-Changing GUI status to: 'TextTest started at 13Dec15:56:07.'
+Changing GUI status to: 'TextTest started at 14Dec17:25:05.'
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
 
-Tabs showing : Test, Selection, Running
+Tabs showing : Selection
 
 Tabs showing : Select Tests
 
@@ -76,6 +76,26 @@ Viewing action with title '_Select'
 Pane separator moved to 50% from the left edge
 Default widget is <type 'gtk.TreeView'>
 
+'set test selection to' event created with arguments 'A03'
+Tests: 1/11 selected
+
+Setting file-view title to 'A03'
+Adding file output.dip under heading 'Standard Files', coloured pale green
+Adding file input.dip under heading 'Definition Files', coloured pale green
+
+
+Tabs showing : Copying, Bugs
+
+Viewing notebook page for 'Copying'
+Viewing entry for option 'Name of copy' (set to 'A03_copy')
+Viewing entry for option 'Description' (set to 'Copy of A03')
+Viewing entry for option 'Place copy' (set to 'last in suite') (drop-down list containing ['last in suite', 'first in suite', 'after S01.99', 'after A01', 'after S02', 'after A02', 'after S03', 'after A03', 'after S04', 'after A04', 'after S05', 'after A05'])
+Viewing action with title '_Copy'
+
+Tabs showing : Test, Selection, Running
+Setting sensitivity of button '_Run' to True
+Setting sensitivity of button 'Remove' to True
+
 'view options for' event created with arguments 'Running'
 
 Setting file-view title to 'dip'
@@ -87,10 +107,16 @@ Adding file config.dip.view under heading 'Application Files', coloured purple
 Adding file .texttest under heading 'Personal Files', coloured purple
 Adding file .texttest_gtk under heading 'Personal Files', coloured purple
 
-Tabs showing :
+Tabs showing : What to run, How to run, Side effects
+
+Viewing notebook page for 'What to run'
+Viewing entry for option 'Run this version'
+Viewing entry for option 'Use checkout' (set to '/users/geoff/texttesttmp/texttest.14Dec172458/GUI/StaticGUI/Miscellaneous/ViewPersonalFiles/TargetApp/CodeNoFailures')
+Viewing entry for option 'Reconnect to'
+Viewing check button for switch 'Recompute file filters when reconnecting'
 
 'select application file' event created with arguments '.texttest'
-Viewing file /users/geoff/texttesttmp/texttest.13Dec155501/GUI/StaticGUI/Miscellaneous/ViewPersonalFiles/personaldir/.texttest using 'emacs', refresh set to 0
+Viewing file /users/geoff/texttesttmp/texttest.14Dec172458/GUI/StaticGUI/Miscellaneous/ViewPersonalFiles/personaldir/.texttest using 'emacs', refresh set to 0
 
 Terminating process that views and edits test files...
 

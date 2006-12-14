@@ -12,26 +12,26 @@ UI layout:
 <ui>
   <menubar name="menubar">
     <menu name="filemenu" action="filemenu">
-      <menuitem name="_Quit" action="_Quit"/>
+      <menuitem name="Quit" action="Quit"/>
     </menu>
     <menu name="viewmenu" action="viewmenu">
-      <menuitem name="_Toolbar" action="_Toolbar"/>
-      <menuitem name="_Shortcut bar" action="_Shortcut bar"/>
-      <menuitem name="_Status bar" action="_Status bar"/>
+      <menuitem name="Toolbar" action="Toolbar"/>
+      <menuitem name="Shortcut bar" action="Shortcut bar"/>
+      <menuitem name="Status bar" action="Status bar"/>
     </menu>
     <menu name="actionmenu" action="actionmenu">
       <menuitem name="Select" action="Select"/>
-      <menuitem name="_Run" action="_Run"/>
-      <menuitem name="R_eset" action="R_eset"/>
+      <menuitem name="Run" action="Run"/>
+      <menuitem name="Reset" action="Reset"/>
       <menuitem name="Remove" action="Remove"/>
     </menu>
   </menubar>
   <toolbar name="toolbar">
-    <toolitem name="_Quit" action="_Quit"/>
+    <toolitem name="Quit" action="Quit"/>
     <separator/>
     <toolitem name="Select" action="Select"/>
-    <toolitem name="_Run" action="_Run"/>
-    <toolitem name="R_eset" action="R_eset"/>
+    <toolitem name="Run" action="Run"/>
+    <toolitem name="Reset" action="Reset"/>
     <toolitem name="Remove" action="Remove"/>
   </toolbar>
 </ui>
@@ -39,11 +39,31 @@ UI layout:
 Expanding tests in tree view...
 -> Added HELLO test-suite TargetApp to test tree view.
 
-Changing GUI status to: 'TextTest started at 09Dec17:39:52.'
+Changing GUI status to: 'TextTest started at 14Dec17:18:22.'
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
 
-Tabs showing : Test, Selection, Running
+Tabs showing : Selection
+
+Tabs showing : Select Tests
+
+Viewing notebook page for 'Select Tests'
+Viewing entry for option 'Tests for version' (drop-down list containing ['', '<default>'])
+Viewing entry for option 'Test names containing'
+Viewing entry for option 'Tests listed in file' (drop-down list containing [''])
+Viewing entry for option 'Suite names containing'
+Viewing entry for option 'Result files containing'
+Viewing entry for option 'Result file to search' (set to 'output') (drop-down list containing ['output', 'errors'])
+Viewing entry for option 'Execution time'
+Viewing check button for switch 'Select in collapsed suites'
+Viewing radio button for switch 'Current selection:', options Discard/Refine/Extend/Exclude'. Default value 0.
+Viewing action with title '_Select'
+
+Pane separator moved to 50% from the left edge
+Default widget is <type 'gtk.TreeView'>
+
+'set test selection to' event created with arguments 'TargetApp'
+Tests: All 0 selected
 
 Setting file-view title to 'TargetApp'
 Adding file testsuite.hello under heading 'Definition Files', coloured pale green
@@ -58,9 +78,8 @@ Viewing entry for option 'Place Test' (set to 'last in suite') (drop-down list c
 Viewing entry for option 'Command line options'
 Viewing action with title 'Add Test'
 
-Pane separator moved to 46% from the top
-Pane separator moved to 50% from the left edge
-Default widget is <type 'gtk.TreeView'>
+Tabs showing : Test, Selection
+Setting sensitivity of button 'Remove' to True
 
 'enter test name =' event created with arguments 'Test'
 
@@ -74,6 +93,8 @@ Tests: All 1 selected
 
 Setting file-view title to 'Test'
 
+Tabs showing : Test, Selection, Running
+
 Viewing notebook page for 'Copying'
 Viewing entry for option 'Name of copy' (set to 'Test_copy')
 Viewing entry for option 'Description' (set to 'Copy of Test')
@@ -82,7 +103,6 @@ Viewing action with title '_Copy'
 
 Tabs showing : Copying, Bugs
 Setting sensitivity of button '_Run' to True
-Setting sensitivity of button 'Remove' to True
 -> Recreating contents of HELLO test-suite TargetApp.
 ->   Removed HELLO test-case Test from test tree view.
 ->   Added HELLO test-case Test to test tree view.
@@ -109,6 +129,8 @@ Tests: 0/1 selected
 
 Setting file-view title to 'TargetApp'
 Adding file testsuite.hello under heading 'Definition Files', coloured pale green
+
+Tabs showing : Test, Selection
 
 Viewing notebook page for 'Adding Test'
 Viewing entry for option 'Test Name'

@@ -12,26 +12,26 @@ UI layout:
 <ui>
   <menubar name="menubar">
     <menu name="filemenu" action="filemenu">
-      <menuitem name="_Quit" action="_Quit"/>
+      <menuitem name="Quit" action="Quit"/>
     </menu>
     <menu name="viewmenu" action="viewmenu">
-      <menuitem name="_Toolbar" action="_Toolbar"/>
-      <menuitem name="_Shortcut bar" action="_Shortcut bar"/>
-      <menuitem name="_Status bar" action="_Status bar"/>
+      <menuitem name="Toolbar" action="Toolbar"/>
+      <menuitem name="Shortcut bar" action="Shortcut bar"/>
+      <menuitem name="Status bar" action="Status bar"/>
     </menu>
     <menu name="actionmenu" action="actionmenu">
       <menuitem name="Select" action="Select"/>
-      <menuitem name="_Run" action="_Run"/>
-      <menuitem name="R_eset" action="R_eset"/>
+      <menuitem name="Run" action="Run"/>
+      <menuitem name="Reset" action="Reset"/>
       <menuitem name="Remove" action="Remove"/>
     </menu>
   </menubar>
   <toolbar name="toolbar">
-    <toolitem name="_Quit" action="_Quit"/>
+    <toolitem name="Quit" action="Quit"/>
     <separator/>
     <toolitem name="Select" action="Select"/>
-    <toolitem name="_Run" action="_Run"/>
-    <toolitem name="R_eset" action="R_eset"/>
+    <toolitem name="Run" action="Run"/>
+    <toolitem name="Reset" action="Reset"/>
     <toolitem name="Remove" action="Remove"/>
   </toolbar>
 </ui>
@@ -45,31 +45,11 @@ Expanding tests in tree view...
 ->   Added HELLO test-suite SuiteWithVersionFile to test tree view.
 ->   Added HELLO test-case VersionTest          to test tree view.
 
-Changing GUI status to: 'TextTest started at 13Dec15:55:32.'
+Changing GUI status to: 'TextTest started at 14Dec17:36:12.'
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
 
-Tabs showing : Test, Selection, Running
-
-Setting file-view title to 'TargetApp'
-Adding file testsuite.hello under heading 'Definition Files', coloured pale green
-Adding file testsuite.hello.extratest under heading 'Definition Files', coloured pale green
-
-
-Tabs showing : Adding Test, Adding Suite, Bugs
-
-Viewing notebook page for 'Adding Test'
-Viewing entry for option 'Test Name'
-Viewing entry for option 'Test Description'
-Viewing entry for option 'Place Test' (set to 'last in suite') (drop-down list containing ['last in suite', 'first in suite', 'after EmptySuite', 'after SuiteWithTest', 'after SuiteWithBadTest', 'after SuiteWithVersionFile', 'after VersionTest'])
-Viewing entry for option 'Command line options'
-Viewing action with title 'Add Test'
-
-Pane separator moved to 46% from the top
-Pane separator moved to 50% from the left edge
-Default widget is <type 'gtk.TreeView'>
-
-'view options for' event created with arguments 'Selection'
+Tabs showing : Selection
 
 Tabs showing : Select Tests
 
@@ -85,6 +65,9 @@ Viewing check button for switch 'Select in collapsed suites'
 Viewing radio button for switch 'Current selection:', options Discard/Refine/Extend/Exclude'. Default value 0.
 Viewing action with title '_Select'
 
+Pane separator moved to 50% from the left edge
+Default widget is <type 'gtk.TreeView'>
+
 'enter tests for version =' event created with arguments '<default>'
 
 'select indicated tests from tab' event created with arguments ''
@@ -98,7 +81,7 @@ Setting file-view title to 'Test'
 Adding file output.hello under heading 'Standard Files', coloured pale green
 
 
-Tabs showing : Adding Test, Adding Suite, Bugs
+Tabs showing : Copying, Bugs
 
 Viewing notebook page for 'Copying'
 Viewing entry for option 'Name of copy' (set to 'Test_copy')
@@ -106,7 +89,7 @@ Viewing entry for option 'Description' (set to 'Copy of Test')
 Viewing entry for option 'Place copy' (set to 'last in suite') (drop-down list containing ['last in suite', 'first in suite', 'after Test'])
 Viewing action with title '_Copy'
 
-Tabs showing : Copying, Bugs
+Tabs showing : Test, Selection, Running
 Setting sensitivity of button '_Run' to True
 Setting sensitivity of button 'Remove' to True
 

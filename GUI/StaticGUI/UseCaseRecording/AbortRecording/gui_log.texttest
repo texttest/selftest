@@ -12,26 +12,26 @@ UI layout:
 <ui>
   <menubar name="menubar">
     <menu name="filemenu" action="filemenu">
-      <menuitem name="_Quit" action="_Quit"/>
+      <menuitem name="Quit" action="Quit"/>
     </menu>
     <menu name="viewmenu" action="viewmenu">
-      <menuitem name="_Toolbar" action="_Toolbar"/>
-      <menuitem name="_Shortcut bar" action="_Shortcut bar"/>
-      <menuitem name="_Status bar" action="_Status bar"/>
+      <menuitem name="Toolbar" action="Toolbar"/>
+      <menuitem name="Shortcut bar" action="Shortcut bar"/>
+      <menuitem name="Status bar" action="Status bar"/>
     </menu>
     <menu name="actionmenu" action="actionmenu">
       <menuitem name="Select" action="Select"/>
-      <menuitem name="_Run" action="_Run"/>
-      <menuitem name="R_eset" action="R_eset"/>
+      <menuitem name="Run" action="Run"/>
+      <menuitem name="Reset" action="Reset"/>
       <menuitem name="Remove" action="Remove"/>
     </menu>
   </menubar>
   <toolbar name="toolbar">
-    <toolitem name="_Quit" action="_Quit"/>
+    <toolitem name="Quit" action="Quit"/>
     <separator/>
     <toolitem name="Select" action="Select"/>
-    <toolitem name="_Run" action="_Run"/>
-    <toolitem name="R_eset" action="R_eset"/>
+    <toolitem name="Run" action="Run"/>
+    <toolitem name="Reset" action="Reset"/>
     <toolitem name="Remove" action="Remove"/>
   </toolbar>
 </ui>
@@ -42,11 +42,31 @@ Expanding tests in tree view...
 ->   Added VideoStore test-suite suite to test tree view.
 ->     Added VideoStore test-case AddMovie to test tree view.
 
-Changing GUI status to: 'TextTest started at 09Dec17:05:22.'
+Changing GUI status to: 'TextTest started at 14Dec17:20:41.'
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
 
-Tabs showing : Test, Selection, Running
+Tabs showing : Selection
+
+Tabs showing : Select Tests
+
+Viewing notebook page for 'Select Tests'
+Viewing entry for option 'Tests for version' (drop-down list containing ['', '<default>'])
+Viewing entry for option 'Test names containing'
+Viewing entry for option 'Tests listed in file' (drop-down list containing [''])
+Viewing entry for option 'Suite names containing'
+Viewing entry for option 'Result files containing'
+Viewing entry for option 'Result file to search' (set to 'output') (drop-down list containing ['output', 'errors'])
+Viewing entry for option 'Execution time'
+Viewing check button for switch 'Select in collapsed suites'
+Viewing radio button for switch 'Current selection:', options Discard/Refine/Extend/Exclude'. Default value 0.
+Viewing action with title '_Select'
+
+Pane separator moved to 50% from the left edge
+Default widget is <type 'gtk.TreeView'>
+
+'set test selection to' event created with arguments 'TargetApp'
+Tests: 0/2 selected
 
 Setting file-view title to 'TargetApp'
 Adding file environment under heading 'Definition Files', coloured pale green
@@ -62,9 +82,8 @@ Viewing entry for option 'Place Test' (set to 'last in suite') (drop-down list c
 Viewing entry for option 'Command line options'
 Viewing action with title 'Add Test'
 
-Pane separator moved to 46% from the top
-Pane separator moved to 50% from the left edge
-Default widget is <type 'gtk.TreeView'>
+Tabs showing : Test, Selection
+Setting sensitivity of button 'Remove' to True
 
 'enter test name =' event created with arguments 't1'
 
@@ -77,16 +96,17 @@ Tests: 1/3 selected
 
 Setting file-view title to 't1'
 
+Tabs showing : Test, Selection, Running
+
 Viewing notebook page for 'Recording'
 Viewing entry for option 'Version to record'
-Viewing entry for option 'Checkout to use for recording' (set to '/users/mattias/texttesttmp/texttest.09Dec170243/GUI/StaticGUI/UseCaseRecording/AbortRecording/TargetApp/source')
+Viewing entry for option 'Checkout to use for recording' (set to '/users/geoff/texttesttmp/texttest.14Dec172026/GUI/StaticGUI/UseCaseRecording/AbortRecording/TargetApp/source')
 Viewing check button for switch 'Automatically replay test after recording it' (checked)
 Viewing radio button for switch '', options Auto-replay invisible/Auto-replay in dynamic GUI'. Default value 0.
 Viewing action with title 'Record _Use-Case'
 
 Tabs showing : Recording, Copying, Bugs
 Setting sensitivity of button '_Run' to True
-Setting sensitivity of button 'Remove' to True
 -> Recreating contents of VideoStore test-suite TargetApp.
 ->   Removed VideoStore test-case AddMovie from test tree view.
 ->   Removed VideoStore test-suite suite from test tree view.
@@ -101,7 +121,7 @@ Changing GUI status to: 'Added new VideoStore test-case t1'
 
 'record use-case' event created with arguments ''
 Starting dynamic GUI in record mode...
-Starting record run of TextTest with arguments -g -tp t1 -d /users/mattias/texttesttmp/texttest.09Dec170243/GUI/StaticGUI/UseCaseRecording/AbortRecording/TargetApp -a gui -c /users/mattias/texttesttmp/texttest.09Dec170243/GUI/StaticGUI/UseCaseRecording/AbortRecording/TargetApp/source -record
+Starting record run of TextTest with arguments -g -tp t1 -d /users/geoff/texttesttmp/texttest.14Dec172026/GUI/StaticGUI/UseCaseRecording/AbortRecording/TargetApp -a gui -c /users/geoff/texttesttmp/texttest.14Dec172026/GUI/StaticGUI/UseCaseRecording/AbortRecording/TargetApp/source -record
 
 Changing GUI status to: 'Started record session for VideoStore test-case t1'
 
