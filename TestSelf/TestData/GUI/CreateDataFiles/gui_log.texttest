@@ -41,7 +41,7 @@ Expanding tests in tree view...
 ->   Added TDAT test-case Test1 to test tree view.
 ->   Added TDAT test-case Test2 to test tree view.
 
-Changing GUI status to: 'TextTest started at 18Dec17:13:49.'
+Changing GUI status to: 'TextTest started at 18Dec16:25:15.'
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
 
@@ -50,7 +50,7 @@ Tabs showing : Selection
 Tabs showing : Select Tests
 
 Viewing notebook page for 'Select Tests'
-Viewing entry for option 'Tests for version' (drop-down list containing ['', '<default>'])
+Viewing entry for option 'Tests for version' (drop-down list containing ['', 'subdir'])
 Viewing entry for option 'Test names containing'
 Viewing entry for option 'Tests listed in file' (drop-down list containing [''])
 Viewing entry for option 'Suite names containing'
@@ -73,25 +73,6 @@ Adding file errors.tdat under heading 'Standard Files', coloured pale green
 Adding file output.tdat under heading 'Standard Files', coloured pale green
 Adding file options.tdat under heading 'Definition Files', coloured pale green
 Adding file readonlyfile under heading 'Data Files', coloured pale green
-Adding file writeabledirs under heading 'Data Files', coloured pale green
-Adding file otherreadfile under heading 'writeabledirs', coloured pale green
-Adding file readfile under heading 'writeabledirs', coloured pale green
-Adding file toRemove under heading 'writeabledirs', coloured pale green
-Adding file otherdir under heading 'writeabledirs', coloured pale green
-Adding file toRemove under heading 'otherdir', coloured pale green
-Adding file writehere under heading 'otherdir', coloured pale green
-Adding file readfile under heading 'writehere', coloured pale green
-Adding file readdir under heading 'writeabledirs', coloured pale green
-Adding file otherdir under heading 'readdir', coloured pale green
-Adding file readfile under heading 'otherdir', coloured pale green
-Adding file somedir under heading 'readdir', coloured pale green
-Adding file readfile under heading 'somedir', coloured pale green
-Adding file somedir under heading 'writeabledirs', coloured pale green
-Adding file toEdit under heading 'somedir', coloured pale green
-Adding file writehere under heading 'writeabledirs', coloured pale green
-Adding file readfile under heading 'writehere', coloured pale green
-Adding file writeandremovehere under heading 'writehere', coloured pale green
-Adding file readfile under heading 'writeandremovehere', coloured pale green
 
 
 Tabs showing : Copying, New File, Bugs
@@ -108,23 +89,66 @@ Tabs showing : Test, Selection, Running
 Setting sensitivity of button '_Run' to True
 Setting sensitivity of button 'Remove' to True
 
-'set test selection to' event created with arguments 'Test2'
-Tests: 1/2 selected
+'view sub-options for test :' event created with arguments 'New File'
 
-Setting file-view title to 'Test2'
+Viewing notebook page for 'New File'
+Viewing entry for option 'Type of definition file to create' (set to 'environment') (drop-down list containing ['environment', 'options', 'input', 'readonlyfile', 'somedir/readonlyfile2'])
+Viewing action with title 'Create _File'
+
+'enter type of definition file to create =' event created with arguments 'somedir/readonlyfile2'
+
+'create file' event created with arguments ''
+Creating new empty file...
+Viewing file /users/geoff/texttesttmp/texttest.18Dec162508/TestSelf/TestData/GUI/CreateDataFiles/TargetApp/Test1/somedir/readonlyfile2 using 'emacs', refresh set to 1
+
+Changing GUI status to: 'Performed 'Create File' on TDAT test-case Test1.'
+
+
+Terminating process that views and edits test files...
+Making changes to file readonlyfile2...
+
+Setting file-view title to 'Test1'
 Adding file catalogue.tdat under heading 'Standard Files', coloured pale green
 Adding file errors.tdat under heading 'Standard Files', coloured pale green
 Adding file output.tdat under heading 'Standard Files', coloured pale green
-Adding file environment.tdat.env under heading 'Definition Files', coloured pale green
-Adding file environment.tdat.env.searchpath under heading 'Definition Files', coloured pale green
 Adding file options.tdat under heading 'Definition Files', coloured pale green
+Adding file readonlyfile under heading 'Data Files', coloured pale green
 
-Viewing notebook page for 'Copying'
-Viewing entry for option 'Name of copy' (set to 'Test2_copy')
-Viewing entry for option 'Description' (set to 'Copy of Test2')
-Viewing entry for option 'Copy to suite' (set to 'current') (drop-down list containing ['current', 'TargetApp'])
-Viewing entry for option 'Place copy' (set to 'last in suite') (drop-down list containing ['last in suite', 'first in suite', 'after Test1', 'after Test2'])
-Viewing check button for switch 'Keep original' (checked)
-Viewing action with title '_Copy'
+'enter type of definition file to create =' event created with arguments 'readonlyfile'
+
+'create file' event created with arguments ''
+Creating new file, copying /users/geoff/texttesttmp/texttest.18Dec162508/TestSelf/TestData/GUI/CreateDataFiles/TargetApp/Test1/readonlyfile
+Viewing file /users/geoff/texttesttmp/texttest.18Dec162508/TestSelf/TestData/GUI/CreateDataFiles/TargetApp/Test1/readonlyfile using 'emacs', refresh set to 1
+
+Changing GUI status to: 'Performed 'Create File' on TDAT test-case Test1.'
+
+Terminating process that views and edits test files...
+
+Setting file-view title to 'Test1'
+Adding file catalogue.tdat under heading 'Standard Files', coloured pale green
+Adding file errors.tdat under heading 'Standard Files', coloured pale green
+Adding file output.tdat under heading 'Standard Files', coloured pale green
+Adding file options.tdat under heading 'Definition Files', coloured pale green
+Adding file readonlyfile under heading 'Data Files', coloured pale green
+
+'enter type of definition file to create =' event created with arguments 'input'
+
+'create file' event created with arguments ''
+Creating new empty file...
+Viewing file /users/geoff/texttesttmp/texttest.18Dec162508/TestSelf/TestData/GUI/CreateDataFiles/TargetApp/Test1/input.tdat using 'emacs', refresh set to 1
+
+Changing GUI status to: 'Performed 'Create File' on TDAT test-case Test1.'
+
+
+Terminating process that views and edits test files...
+Making changes to file input.tdat...
+
+Setting file-view title to 'Test1'
+Adding file catalogue.tdat under heading 'Standard Files', coloured pale green
+Adding file errors.tdat under heading 'Standard Files', coloured pale green
+Adding file output.tdat under heading 'Standard Files', coloured pale green
+Adding file options.tdat under heading 'Definition Files', coloured pale green
+Adding file input.tdat under heading 'Definition Files', coloured pale green
+Adding file readonlyfile under heading 'Data Files', coloured pale green
 
 'quit' event created with arguments ''
