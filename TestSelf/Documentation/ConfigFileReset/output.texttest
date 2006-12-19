@@ -1,4 +1,4 @@
-TextTest will write diagnostics in /users/geoff/texttesttmp/texttest.12Dec111436/TestSelf/Documentation/ConfigFileReset based on file at /users/geoff/work/master/Testing/Automatic/texttest/log4py.conf
+TextTest will write diagnostics in /users/geoff/texttesttmp/texttest.19Dec163630/TestSelf/Documentation/ConfigFileReset based on file at /users/geoff/work/master/Testing/Automatic/texttest/log4py.conf
 Using Application APPIDENTIFIER
 add_shortcut_bar|1|Whether or not TextTest's shortcut bar will appear
 add_status_bar|1|Whether or not TextTest's status bar will appear
@@ -27,7 +27,7 @@ create_catalogues|false|Do we create a listing of files created/removed by tests
 default_checkout||Default checkout, relative to the checkout location
 default_interface|static_gui|Which interface to start if none of -con, -g and -gx are provided
 definition_file_stems|['environment', 'testsuite', 'options', 'usecase', 'traffic', 'input', 'knownbugs']|files to be shown as definition files by the static GUI
-diagnostics|{}|Dictionary to define how SUT diagnostics are used
+diagnostics|{'trace_level_variable': '', 'configuration_file': '', 'input_directory_variable': '', 'write_directory_variable': ''}|Dictionary to define how SUT diagnostics are used
 diff_program|tkdiff|External program to use for graphical file comparison
 discard_file|[]|List of generated result files which should not be compared
 dynamic_gui_show_menubar|1|Show menubar in the dynamic GUI?
@@ -38,9 +38,9 @@ failure_severity|{'errors': 1, 'default': 99, 'catalogue': 2, 'usecase': 2, 'per
 file_colours|{'success': 'green', 'not_started': 'white', 'failure': 'red', 'running': 'yellow', 'static': 'pale green', 'app_static': 'purple', 'pending': 'white'}|Colours to use for each file state
 follow_program|tail -f|External program to use for following progress of a file
 full_name|APPIDENTIFIER|Expanded name to use for application
-gui_accelerators|{'': ''}|Custom action accelerators.
-gui_entry_options|{'': []}|Default drop-down box options for GUI entries
-gui_entry_overrides|{}|Default settings for entries in the GUI
+gui_accelerators|{'reset': '<control>e', 'quit': '<control>q', 'save': '<control>s', 'run': '<control>r', 'select': '<control>s'}|Custom action accelerators.
+gui_entry_options|{'default': []}|Default drop-down box options for GUI entries
+gui_entry_overrides|{'default': '<not set>'}|Default settings for entries in the GUI
 hide_test_category|[]|Categories of tests which should not appear in the dynamic GUI test view
 historical_report_location|{'default': ''}|Directory to create reports on historical batch data under
 home_operating_system|any|Which OS the test results were originally collected on
@@ -79,4 +79,4 @@ use_case_recorder||Which Use-case recorder is being used
 version_priority|{'default': 99}|Mapping of version names to a priority order in case of conflict.
 view_program|{'default': 'emacs'}|External program(s) to use for viewing and editing text files
 virtual_display_machine|[]|(UNIX) List of machines to run virtual display server (Xvfb) on
-window_size|{'': ''}|To set the initial size of the dynamic/static GUI.
+window_size|{'dynamic_maximize': 0, 'dynamic_height_pixels': '<not set>', 'static_maximize': 0, 'dynamic_vertical_separator_position': 0.5, 'static_height_pixels': '<not set>', 'dynamic_width_pixels': '<not set>', 'dynamic_horizontal_separator_position': 0.46000000000000002, 'static_horizontal_separator_position': 0.46000000000000002, 'static_width_pixels': '<not set>', 'static_height_screen': 0.83333333333333337, 'static_width_screen': 0.59999999999999998, 'dynamic_width_screen': 0.59999999999999998, 'dynamic_height_screen': 0.83333333333333337, 'static_vertical_separator_position': 0.5}|To set the initial size of the dynamic/static GUI.
