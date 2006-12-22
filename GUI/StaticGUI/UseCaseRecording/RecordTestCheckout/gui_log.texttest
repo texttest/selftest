@@ -1,4 +1,7 @@
-Top Window title set to TextTest static GUI : management of tests for VideoStore
+Top Window title is TextTest static GUI : management of tests for VideoStore
+Default widget is <type 'gtk.TreeView'>
+Setting window width to 60% of screen.
+Setting window height to 83% of screen.
 
 Viewing toggle action with title '_Toolbar'
 Viewing toggle action with title '_Shortcut bar'
@@ -8,6 +11,7 @@ Viewing action with title '_Select', stock id ''gtk-refresh'', accelerator ''<co
 Viewing action with title '_Run', stock id ''gtk-execute'', accelerator ''<control>r'' (greyed out)
 Viewing action with title 'R_eset', stock id ''gtk-revert-to-saved'', accelerator ''<control>e''
 Viewing action with title 'Remove', stock id ''gtk-delete'' (greyed out)
+
 UI layout: 
 <ui>
   <menubar name="menubar">
@@ -36,15 +40,11 @@ UI layout:
   </toolbar>
 </ui>
 
-Expanding tests in tree view...
--> Added VideoStore test-suite TargetApp to test tree view.
-->   Added VideoStore test-case AddMovie to test tree view.
-->   Added VideoStore test-suite suite to test tree view.
-->     Added VideoStore test-case AddMovie to test tree view.
-
-Changing GUI status to: 'TextTest started at 22Dec15:30:21.'
-Setting window width to 60% of screen.
-Setting window height to 83% of screen.
+Test Tree description...
+-> TargetApp (gui)
+->   AddMovie
+->   suite
+->     AddMovie
 
 Pane separator positioned 50% from the left edge
 
@@ -64,7 +64,7 @@ Viewing check button for switch 'Select in collapsed suites'
 Viewing radio button for switch 'Current selection:', options Discard/Refine/Extend/Exclude'. Default value 0.
 Viewing action with title '_Select'
 
-Default widget is <type 'gtk.TreeView'>
+Changing GUI status to: 'TextTest started at 22Dec21:31:48.'
 
 'set test selection to' event created with arguments 'TargetApp'
 Tests: 0/2 selected
@@ -101,21 +101,27 @@ Tabs showing : Test, Selection, Running
 
 Viewing notebook page for 'Recording'
 Viewing entry for option 'Version to record'
-Viewing entry for option 'Checkout to use for recording' (set to '/users/geoff/texttesttmp/texttest.22Dec152937/GUI/StaticGUI/UseCaseRecording/RecordTestCheckout/TargetApp/suite')
+Viewing entry for option 'Checkout to use for recording' (set to '/users/geoff/texttesttmp/texttest.22Dec213056/GUI/StaticGUI/UseCaseRecording/RecordTestCheckout/TargetApp/suite')
 Viewing check button for switch 'Automatically replay test after recording it' (checked)
 Viewing radio button for switch '', options Auto-replay invisible/Auto-replay in dynamic GUI'. Default value 0.
 Viewing action with title 'Record _Use-Case'
 
 Tabs showing : Recording, Copying, New File, Bugs
 Setting sensitivity of button '_Run' to True
--> Recreating contents of VideoStore test-suite TargetApp.
-->   Removed VideoStore test-case AddMovie from test tree view.
-->   Removed VideoStore test-suite suite from test tree view.
-->   Removed VideoStore test-case t1 from test tree view.
-->   Added VideoStore test-case AddMovie to test tree view.
-->   Added VideoStore test-suite suite to test tree view.
-->     Added VideoStore test-case AddMovie to test tree view.
-->   Added VideoStore test-case t1 to test tree view.
+
+Test Tree description...
+-> TargetApp (gui)
+->   AddMovie
+->   suite
+->     AddMovie
+->   t1
+
+Test Tree description...
+-> TargetApp (gui)
+->   AddMovie
+->   suite
+->     AddMovie
+->   t1
 Marking 1 tests as selected
 
 Changing GUI status to: 'Added new VideoStore test-case t1'
@@ -124,12 +130,12 @@ Changing GUI status to: 'Added new VideoStore test-case t1'
 
 'record use-case' event created with arguments ''
 Starting dynamic GUI in record mode...
-Starting record run of TextTest with arguments -g -tp t1 -d /users/geoff/texttesttmp/texttest.22Dec152937/GUI/StaticGUI/UseCaseRecording/RecordTestCheckout/TargetApp -a gui -c source -record
+Starting record run of TextTest with arguments -g -tp t1 -d /users/geoff/texttesttmp/texttest.22Dec213056/GUI/StaticGUI/UseCaseRecording/RecordTestCheckout/TargetApp -a gui -c source -record
 
 Changing GUI status to: 'Started record session for VideoStore test-case t1'
 
 Waiting for application event 'replay texttest to complete' to occur.
-Starting replay run of TextTest with arguments -o -tp t1 -d /users/geoff/texttesttmp/texttest.22Dec152937/GUI/StaticGUI/UseCaseRecording/RecordTestCheckout/TargetApp -a gui -c source
+Starting replay run of TextTest with arguments -o -tp t1 -d /users/geoff/texttesttmp/texttest.22Dec213056/GUI/StaticGUI/UseCaseRecording/RecordTestCheckout/TargetApp -a gui -c source
 
 Changing GUI status to: 'Recording completed for VideoStore test-case t1. Auto-replay of test now started. Don't submit the test manually!'
 
