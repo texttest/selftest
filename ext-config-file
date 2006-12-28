@@ -12,6 +12,7 @@ view_program:emacs
 ## ================================================================
 ## end of stuff only for use externally to Carmen
 
+
 [run_dependent_text]
 output*:TextTest will write diagnostics
 output*:\{REPLACE /}
@@ -31,21 +32,21 @@ output:Killing running test{WORD -1}
 output:signal 15
 output:signal 9
 output:Killed process{WORD 3}
-output:Sending mail from{WORD -1}
+output:seconds on{WORD -1}
+output:Sending mail from{WORD 5}
 output:What is your name{LINES 3}
-output:^$
 output:batch_recipients{WORD 2}
 output:batch_sender{WORD 2}
-*Report: on .*test-case.*under{WORD -7}
-*Report:^[0-9][0-9][0-9][0-9][0-9][0-9]{WORD 1}
-*Report:^\>
-*Report:% faster{WORD -2}
+output:image file format for file{WORD -1}
+targetReport:^From:{WORD 2}
+targetReport:^Subject:{WORD 2}
+targetReport: on .*test-case.*under{WORD -7}
+targetReport:^[0-9][0-9][0-9][0-9][0-9][0-9]{WORD 1}
+targetReport:^\>
+targetReport:% faster{WORD -2}
+targetReport:% slower{WORD -2}
 # diff output
 targetReport:1,2c1
-targetReport:{LINE 1}
-collectReport:^From:{WORD 2}
-collectReport:^To:{WORD 2}
-collectReport:^Subject:{WORD 2}
 catalogue:.nfs
 catalogue:[^-]*[0-9][0-9][A-Z][a-z][a-z][0-9][0-9][0-9][0-9][0-9][0-9]{REPLACE <texttest tmp dir>}
 catalogue:[0-9][0-9][A-Z][a-z][a-z][0-9][0-9][0-9][0-9]{REPLACE <today's date>}
@@ -58,22 +59,24 @@ catalogue:grep.*cmp
 catalogue:hello.*cmp
 catalogues:{INTERNAL writedir}{REPLACE <test write dir>}
 catalogues:[^/]*[0-9][0-9][A-Z][a-z][a-z][0-9][0-9][0-9][0-9][0-9][0-9]{REPLACE <target tmp dir>}
+errors:{INTERNAL writedir}{REPLACE <test write dir>}
 errors:RENDER
 errors:File .* line .* in
-errors:dipjudge.py has not been{WORD -5}
-errors:root directory does{WORD -1}
 errors:CountTest.__del__
-errors:fakeuser under{WORD -1}
 errors:TransSocketUNIX
 errors:Import failed
 errors:Warning: Tried to connect to session manager
 # shell errors from kill
 errors:fake_xvfb_server
 errors:^sh:.*kill
+errors:pixbuf loader module file
+errors:theme icon for stock{LINES 2}
 *gui_log:\{REPLACE /}
 *gui_log:{INTERNAL writedir}{REPLACE <test write dir>}
 *gui_log:[^/]*[0-9][0-9][A-Z][a-z][a-z][0-9][0-9][0-9][0-9][0-9][0-9]{REPLACE <target tmp dir>}
 *gui_log:+ PID{WORD 3}
+*gui_log:started at{WORD -1}{REPLACE <date/time>}
+*gui_log:tests at{WORD -1}{REPLACE <date/time>}
 # Hard to rely on exactly how much faster things are...
 dynamic_gui_log:% faster{WORD 3}
 dynamic_gui_log:Running on{WORD -1}{REPLACE <machine>}
@@ -83,14 +86,17 @@ dynamic_gui_log:not be run on{WORD -2}{REPLACE <machine>}
 dynamic_gui_log:time.*:.*sec.
 dynamic_gui_log:^\?
 dynamic_gui_log:tests started at{WORD -1}{REPLACE <date/time>}
-gui_log:Dynamic GUI started at{WORD -1}{REPLACE <date/time>}
+dynamic_gui_log:tests completed at{WORD 13}{REPLACE <date/time>}
+dynamic_gui_log:From log file reckoned
+dynamic_gui_log:seconds on{WORD -1}
 gui_log:  File "
+gui_log:Configure self-diagnostics{WORD -1}
+gui_log:\[Reported by.*at{WORD 3}{REPLACE <user>}
+gui_log:\[Reported by.*at{WORD 5}{REPLACE <date/time>}
 # diff output
 dynamic_gui_log:1,2c1
 jusecaseprops:record{WORD -1}
-gui_status:started at{WORD -1}
-gui_status:Starting tests at{WORD -2}
-gui_status:tests at{WORD -1}
+usecase:usecase filtering 6 lines{LINES 6}
 [end]
 
 [unordered_text]
@@ -98,10 +104,11 @@ gui_log:Dynamic run failed{LINES 3}
 [end]
 
 [failure_severity]
+errors:1
 *gui_log:1
 target*:1
 shortcut:1
-*Report:1
+targetReport:1
 [end]
 
 [diagnostics]
@@ -134,9 +141,12 @@ usecases:USECASE_HOME
 # List of constant input files to create links to. Will copy them on Windows as symbolic links
 # don't exist.
 link_test_path:config
-link_test_path:FakeBugcli/bugcli
-link_test_path:FakeBugcli/bugcli.py
 link_test_path:personaldir
+link_test_path:gtk.py
+# Faking email send
+link_test_path:smtplib.py
+# pick a name for any config modules we might write...
+link_test_path:customconfig.py
 # Mock version of core-file finder
 link_test_path:gdb
 link_test_path:interpretcore.py
@@ -147,6 +157,8 @@ link_test_path:xterm
 link_test_path:Xvfb
 link_test_path:xclock
 link_test_path:xdpyinfo
+
+collect_traffic:bugcli
 
 # Tell it that we want to track what files are created
 create_catalogues:true
@@ -159,21 +171,30 @@ use_case_record_mode:GUI
 
 # Things to collate
 [collate_file]
-targetMem:TargetApp/Failures/memory.mem
+targetMem:TargetApp/*/memory.mem*
 targetReport:texttesttmp/*/batchreport*
-collectReport:texttesttmp/batchreport*
-errorsrec:texttesttmp/*/record_errors.log
-outputrec:texttesttmp/*/record_run.log
-errorsrep:texttesttmp/*/replay_errors.log
-outputrep:texttesttmp/*/replay_run.log
+rootTestSuite:TargetApp/testsuite.*
+level1TestSuite:TargetApp/*/testsuite.*
+level2TestSuite:TargetApp/*/*/testsuite.*
+errorsrec:texttesttmp/*/record/record_errors.log
+outputrec:texttesttmp/*/record/record_output.log
+errorsrep:texttesttmp/*/record/replay_errors.log
+outputrep:texttesttmp/*/record/replay_output.log
+gui_select:texttesttmp/*/dynamic_run*/gui_select
 jusecaseprops:texttesttmp/*/*/jusecase.properties
 filterfile*:TargetApp/filter_files/filter*
 overview:report/*/test_[a-z]*.html
 overview_all:report/*/test_*_all.html
 overview_1day:report/*/test_*_18Jan2006.html
+overview_1day_ver:report/*/test_*_26Jan2006.html
+[end]
+
+[view_program]
+overview*:mozilla
 [end]
 
 definition_file_stems:dynamic_usecase
+definition_file_stems:dynamic_2_usecase
 definition_file_stems:record_usecase
 definition_file_stems:replay_usecase
 definition_file_stems:target_record_usecase
