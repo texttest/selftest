@@ -1,4 +1,4 @@
-Top Window title is TextTest dynamic GUI (tests started at 22Dec20:54:12)
+Top Window title is TextTest dynamic GUI (tests started at 28Dec16:58:44)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -51,36 +51,32 @@ Pane separator positioned 46% from the top
 
 Tabs showing : Progress
 
-Changing GUI status to: 'TextTest started at 22Dec20:54:13.'
+Test progress:
+--> Not started : 2, colour 'white', font 'bold'
+
+Changing GUI status to: 'TextTest started at 28Dec16:58:44.'
 
 Waiting for application event 'completion of test actions' to occur.
-Redrawing test NoMemFile coloured white
-Test progress:
---> Pending : 1, colour 'white', font 'bold'
 Redrawing test NoMemFile coloured yellow
+
 Test progress:
---> Pending : 0, colour 'white', font ''
+--> Not started : 1, colour 'white', font 'bold'
 --> Running : 1, colour 'yellow', font 'bold'
 Redrawing test NoMemFile coloured green
 (Second column 'memory new' coloured red)
 
 Progress bar set to fraction 0.5, text '1 of 2 tests completed (1 tests failed)'
+
 Test progress:
---> Pending : 0, colour 'white', font ''
---> Running : 0, colour 'white', font ''
---> Failed : 1, colour 'red', font 'bold'
-----> Differences : 1, colour 'red', font 'bold'
-------> memory new : 1, colour 'red', font 'bold'
-Redrawing test NoOutputFile coloured white
-Test progress:
---> Pending : 1, colour 'white', font 'bold'
+--> Not started : 1, colour 'white', font 'bold'
 --> Running : 0, colour 'white', font ''
 --> Failed : 1, colour 'red', font 'bold'
 ----> Differences : 1, colour 'red', font 'bold'
 ------> memory new : 1, colour 'red', font 'bold'
 Redrawing test NoOutputFile coloured yellow
+
 Test progress:
---> Pending : 0, colour 'white', font ''
+--> Not started : 0, colour 'white', font ''
 --> Running : 1, colour 'yellow', font 'bold'
 --> Failed : 1, colour 'red', font 'bold'
 ----> Differences : 1, colour 'red', font 'bold'
@@ -88,9 +84,10 @@ Test progress:
 Redrawing test NoOutputFile coloured red
 (Second column 'output new(+)' coloured red)
 
-Progress bar set to fraction 1.0, text 'All 2 tests completed at 22Dec20:54:14 (2 tests failed)'
+Progress bar set to fraction 1.0, text 'All 2 tests completed at 28Dec16:58:45 (2 tests failed)'
+
 Test progress:
---> Pending : 0, colour 'white', font ''
+--> Not started : 0, colour 'white', font ''
 --> Running : 0, colour 'white', font ''
 --> Failed : 2, colour 'red', font 'bold'
 ----> Differences : 2, colour 'red', font 'bold'
@@ -134,15 +131,6 @@ Changing GUI status to: 'Saving 2 tests ...'
 Saving MEM test-case NoMemFile    - version nomemfile, exactness 1, only output.mem
 Redrawing test NoMemFile coloured green
 (Second column 'memory new' coloured red)
-Test progress:
---> Pending : 0, colour 'white', font ''
---> Running : 0, colour 'white', font ''
---> Failed : 2, colour 'red', font 'bold'
-----> Differences : 2, colour 'red', font 'bold'
-------> memory new : 1, colour 'red', font 'bold'
-------> output new : 1, colour 'red', font 'bold'
-----> Performance differences : 1, colour 'red', font 'bold'
-------> Memory+ : 1, colour 'red', font 'bold'
 Saving MEM test-case NoOutputFile - version nomemfile, exactness 1, only output.mem
 
 ---------- Text Info Window ----------
@@ -160,8 +148,13 @@ Setting file-view title to 'Sample from 2 tests'
 Adding file memory.mem under heading 'Comparison Files', coloured red
 (Second column '13% larger' coloured red)
 Adding file output.mem.nomemfile under heading 'Comparison Files', coloured green
+
+Changing GUI status to: 'Saved 2 tests.'
+
+'view options for' event created with arguments 'Progress'
+
 Test progress:
---> Pending : 0, colour 'white', font ''
+--> Not started : 0, colour 'white', font ''
 --> Running : 0, colour 'white', font ''
 --> Failed : 2, colour 'red', font 'bold'
 ----> Differences : 1, colour 'red', font 'bold'
@@ -169,7 +162,5 @@ Test progress:
 ------> output new : 0, colour 'white', font ''
 ----> Performance differences : 1, colour 'red', font 'bold'
 ------> Memory+ : 1, colour 'red', font 'bold'
-
-Changing GUI status to: 'Saved 2 tests.'
 
 'quit' event created with arguments ''

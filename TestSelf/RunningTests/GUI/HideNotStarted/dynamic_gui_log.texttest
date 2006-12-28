@@ -1,0 +1,105 @@
+Top Window title is TextTest dynamic GUI (tests started at 28Dec17:05:00)
+Default widget is <type 'gtk.TreeView'>
+Setting window width to 60% of screen.
+Setting window height to 83% of screen.
+
+Viewing toggle action with title '_Toolbar'
+Viewing toggle action with title '_Shortcut bar'
+Viewing toggle action with title '_Status bar'
+Viewing action with title '_Quit', stock id ''gtk-quit'', accelerator ''<control>q''
+Viewing action with title '_Save', stock id ''gtk-save'', accelerator ''<control>s'' (greyed out)
+
+UI layout: 
+<ui>
+  <menubar name="menubar">
+    <menu name="filemenu" action="filemenu">
+      <menuitem name="Quit" action="Quit"/>
+    </menu>
+    <menu name="viewmenu" action="viewmenu">
+      <menuitem name="Toolbar" action="Toolbar"/>
+      <menuitem name="Shortcut bar" action="Shortcut bar"/>
+      <menuitem name="Status bar" action="Status bar"/>
+    </menu>
+    <menu name="actionmenu" action="actionmenu">
+      <menuitem name="Save" action="Save"/>
+    </menu>
+  </menubar>
+  <toolbar name="toolbar">
+    <toolitem name="Quit" action="Quit"/>
+    <separator/>
+    <toolitem name="Save" action="Save"/>
+  </toolbar>
+</ui>
+
+Progress bar set to fraction 0.0, text '0 of 3 tests completed'
+
+Test Tree description...
+-> TargetApp (sleep)
+->   Basic
+->   Basic2
+->   Suite
+->     Basic3
+
+Pane separator positioned 50% from the left edge
+
+Setting file-view title to 'TargetApp'
+Adding file testsuite.sleep under heading 'Definition Files', coloured white
+
+Viewing action with title 'Progress' (greyed out)
+
+Pane separator positioned 46% from the top
+
+Tabs showing : Progress
+
+Test progress:
+--> Not started : 3, colour 'white', font 'bold'
+
+Changing GUI status to: 'TextTest started at 28Dec17:05:00.'
+
+Waiting for application event 'test Basic to start' to occur.
+Redrawing test Basic coloured yellow
+
+Test progress:
+--> Not started : 2, colour 'white', font 'bold'
+--> Running : 1, colour 'yellow', font 'bold'
+Expected application event 'test Basic to start' occurred, proceeding.
+
+'toggle progress report category' event created with arguments 'Not started'
+Selecting not to show tests in the 'Not started' category.
+Hiding test : SLEEP test-case Basic2
+Hiding test : SLEEP test-case Basic3
+Hiding test : SLEEP test-suite Suite
+
+'set progress report filter selection to' event created with arguments 'Not started'
+Selecting all 2 tests in category Not started
+Marking 0 tests as selected
+Tests: 0/3 selected, 1 visible
+
+'toggle progress report category' event created with arguments 'Not started'
+Selecting to show tests in the 'Not started' category.
+Making test visible : SLEEP test-case Basic2
+Making test visible : SLEEP test-suite Suite
+Making test visible : SLEEP test-case Basic3
+
+Test Tree description...
+-> TargetApp (sleep)
+->   Basic
+->   Basic2
+->   Suite
+->     Basic3
+
+'set progress report filter selection to' event created with arguments 'Not started'
+Marking 0 tests as selected
+Tests: 0/3 selected, all visible
+Selecting all 2 tests in category Not started
+Marking 2 tests as selected
+Tests: 2/3 selected, all visible
+
+Setting file-view title to 'Sample from 2 tests'
+Adding file errors.sleep under heading 'Standard Files', coloured white
+Adding file output.sleep under heading 'Standard Files', coloured white
+
+Tabs showing : Progress, Viewing, Saving, Save Selection
+Setting sensitivity of button '_Save' to True
+
+'quit' event created with arguments ''
