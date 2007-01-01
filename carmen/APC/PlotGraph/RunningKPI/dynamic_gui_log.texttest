@@ -1,4 +1,4 @@
-Top Window title is TextTest dynamic GUI (tests started at 29Dec17:44:43)
+Top Window title is TextTest dynamic GUI (tests started at 31Dec13:34:23)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -21,8 +21,10 @@ UI layout:
       <menuitem name="Shortcut bar" action="Shortcut bar"/>
       <menuitem name="Status bar" action="Status bar"/>
     </menu>
-    <menu name="actionmenu" action="actionmenu">
+    <menu name="actionsmenu" action="actionsmenu">
       <menuitem name="Save" action="Save"/>
+    </menu>
+    <menu name="optimizationmenu" action="optimizationmenu">
       <menuitem name="Plot Graph" action="Plot Graph"/>
     </menu>
   </menubar>
@@ -30,8 +32,11 @@ UI layout:
     <toolitem name="Quit" action="Quit"/>
     <separator/>
     <toolitem name="Save" action="Save"/>
+    <separator/>
     <toolitem name="Plot Graph" action="Plot Graph"/>
   </toolbar>
+  <popup name="popup">
+  </popup>
 </ui>
 
 Progress bar set to fraction 0.0, text '0 of 2 tests completed'
@@ -66,7 +71,7 @@ Tabs showing : Progress
 Test progress:
 --> Not started : 2, colour 'white', font 'bold'
 
-Changing GUI status to: 'TextTest started at 29Dec17:44:43.'
+Changing GUI status to: 'TextTest started at 31Dec13:34:24.'
 
 Waiting for application event 'test umlauf_spiel to start' to occur.
 Waiting for application event 'test just_a_copy to start' to occur.
@@ -82,15 +87,15 @@ Redrawing test just_a_copy coloured white
 Test progress:
 --> Not started : 0, colour 'white', font ''
 --> Pending : 2, colour 'white', font 'bold'
-Redrawing test just_a_copy coloured yellow
-(Second column 'RUN (roosterville)' coloured yellow)
+Redrawing test umlauf_spiel coloured yellow
+(Second column 'RUN (tiptonville)' coloured yellow)
 
 Test progress:
 --> Not started : 0, colour 'white', font ''
 --> Pending : 1, colour 'white', font 'bold'
 --> Running : 1, colour 'yellow', font 'bold'
-Redrawing test umlauf_spiel coloured yellow
-(Second column 'RUN (connellsville)' coloured yellow)
+Redrawing test just_a_copy coloured yellow
+(Second column 'RUN (townsville)' coloured yellow)
 
 Test progress:
 --> Not started : 0, colour 'white', font ''
@@ -111,7 +116,7 @@ Setting sensitivity of button 'Save best' to True
 Setting sensitivity of button 'CVS _Log' to True
 
 ---------- Text Info Window ----------
-Running on connellsville
+Running on tiptonville
 --------------------------------------
 
 Tabs showing : Text Info, Progress, Viewing, Saving, Save Selection, Graph

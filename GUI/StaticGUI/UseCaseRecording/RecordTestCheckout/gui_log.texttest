@@ -10,7 +10,7 @@ Viewing action with title '_Quit', stock id ''gtk-quit'', accelerator ''<control
 Viewing action with title '_Select', stock id ''gtk-refresh'', accelerator ''<control>s''
 Viewing action with title '_Run', stock id ''gtk-execute'', accelerator ''<control>r'' (greyed out)
 Viewing action with title 'R_eset', stock id ''gtk-revert-to-saved'', accelerator ''<control>e''
-Viewing action with title 'Remove', stock id ''gtk-delete'' (greyed out)
+Viewing action with title 'Remove...', stock id ''gtk-delete'' (greyed out)
 
 UI layout: 
 <ui>
@@ -18,16 +18,18 @@ UI layout:
     <menu name="filemenu" action="filemenu">
       <menuitem name="Quit" action="Quit"/>
     </menu>
+    <menu name="editmenu" action="editmenu">
+      <menuitem name="Remove..." action="Remove..."/>
+    </menu>
     <menu name="viewmenu" action="viewmenu">
       <menuitem name="Toolbar" action="Toolbar"/>
       <menuitem name="Shortcut bar" action="Shortcut bar"/>
       <menuitem name="Status bar" action="Status bar"/>
     </menu>
-    <menu name="actionmenu" action="actionmenu">
+    <menu name="actionsmenu" action="actionsmenu">
       <menuitem name="Select" action="Select"/>
       <menuitem name="Run" action="Run"/>
       <menuitem name="Reset" action="Reset"/>
-      <menuitem name="Remove" action="Remove"/>
     </menu>
   </menubar>
   <toolbar name="toolbar">
@@ -36,8 +38,12 @@ UI layout:
     <toolitem name="Select" action="Select"/>
     <toolitem name="Run" action="Run"/>
     <toolitem name="Reset" action="Reset"/>
-    <toolitem name="Remove" action="Remove"/>
+    <separator/>
+    <toolitem name="Remove..." action="Remove..."/>
   </toolbar>
+  <popup name="popup">
+    <menuitem name="Remove..." action="Remove..."/>
+  </popup>
 </ui>
 
 Test Tree description...
@@ -64,7 +70,7 @@ Viewing check button for switch 'Select in collapsed suites'
 Viewing radio button for switch 'Current selection:', options Discard/Refine/Extend/Exclude'. Default value 0.
 Viewing action with title '_Select'
 
-Changing GUI status to: 'TextTest started at 28Dec11:50:27.'
+Changing GUI status to: 'TextTest started at 01Jan11:57:12.'
 
 'set test selection to' event created with arguments 'TargetApp'
 Tests: 0/2 selected
@@ -84,7 +90,7 @@ Viewing entry for option 'Command line options'
 Viewing action with title 'Add Test'
 
 Tabs showing : Test, Selection
-Setting sensitivity of button 'Remove' to True
+Setting sensitivity of button 'Remove...' to True
 
 'enter test name =' event created with arguments 't1'
 
@@ -101,7 +107,7 @@ Tabs showing : Test, Selection, Running
 
 Viewing notebook page for 'Recording'
 Viewing entry for option 'Version to record'
-Viewing entry for option 'Checkout to use for recording' (set to '/users/geoff/texttesttmp/texttest.28Dec114935/GUI/StaticGUI/UseCaseRecording/RecordTestCheckout/TargetApp/suite')
+Viewing entry for option 'Checkout to use for recording' (set to '/users/mattias/texttesttmp/texttest.01Jan115540/GUI/StaticGUI/UseCaseRecording/RecordTestCheckout/TargetApp/suite')
 Viewing check button for switch 'Automatically replay test after recording it' (checked)
 Viewing radio button for switch '', options Auto-replay invisible/Auto-replay in dynamic GUI'. Default value 0.
 Viewing action with title 'Record _Use-Case'
@@ -122,12 +128,12 @@ Changing GUI status to: 'Added new VideoStore test-case t1'
 
 'record use-case' event created with arguments ''
 Starting dynamic GUI in record mode...
-Starting record run of TextTest with arguments -g -tp t1 -d /users/geoff/texttesttmp/texttest.28Dec114935/GUI/StaticGUI/UseCaseRecording/RecordTestCheckout/TargetApp -a gui -c source -record
+Starting record run of TextTest with arguments -g -tp t1 -d /users/mattias/texttesttmp/texttest.01Jan115540/GUI/StaticGUI/UseCaseRecording/RecordTestCheckout/TargetApp -a gui -c source -record
 
 Changing GUI status to: 'Started record session for VideoStore test-case t1'
 
 Waiting for application event 'replay texttest to complete' to occur.
-Starting replay run of TextTest with arguments -o -tp t1 -d /users/geoff/texttesttmp/texttest.28Dec114935/GUI/StaticGUI/UseCaseRecording/RecordTestCheckout/TargetApp -a gui -c source
+Starting replay run of TextTest with arguments -o -tp t1 -d /users/mattias/texttesttmp/texttest.01Jan115540/GUI/StaticGUI/UseCaseRecording/RecordTestCheckout/TargetApp -a gui -c source
 
 Changing GUI status to: 'Recording completed for VideoStore test-case t1. Auto-replay of test now started. Don't submit the test manually!'
 

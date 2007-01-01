@@ -10,7 +10,7 @@ Viewing action with title '_Quit', stock id ''gtk-quit'', accelerator ''<control
 Viewing action with title '_Select', stock id ''gtk-refresh'', accelerator ''<control>s''
 Viewing action with title '_Run', stock id ''gtk-execute'', accelerator ''<control>r'' (greyed out)
 Viewing action with title 'R_eset', stock id ''gtk-revert-to-saved'', accelerator ''<control>e''
-Viewing action with title 'Remove', stock id ''gtk-delete'' (greyed out)
+Viewing action with title 'Remove...', stock id ''gtk-delete'' (greyed out)
 
 UI layout: 
 <ui>
@@ -18,16 +18,18 @@ UI layout:
     <menu name="filemenu" action="filemenu">
       <menuitem name="Quit" action="Quit"/>
     </menu>
+    <menu name="editmenu" action="editmenu">
+      <menuitem name="Remove..." action="Remove..."/>
+    </menu>
     <menu name="viewmenu" action="viewmenu">
       <menuitem name="Toolbar" action="Toolbar"/>
       <menuitem name="Shortcut bar" action="Shortcut bar"/>
       <menuitem name="Status bar" action="Status bar"/>
     </menu>
-    <menu name="actionmenu" action="actionmenu">
+    <menu name="actionsmenu" action="actionsmenu">
       <menuitem name="Select" action="Select"/>
       <menuitem name="Run" action="Run"/>
       <menuitem name="Reset" action="Reset"/>
-      <menuitem name="Remove" action="Remove"/>
     </menu>
   </menubar>
   <toolbar name="toolbar">
@@ -36,8 +38,12 @@ UI layout:
     <toolitem name="Select" action="Select"/>
     <toolitem name="Run" action="Run"/>
     <toolitem name="Reset" action="Reset"/>
-    <toolitem name="Remove" action="Remove"/>
+    <separator/>
+    <toolitem name="Remove..." action="Remove..."/>
   </toolbar>
+  <popup name="popup">
+    <menuitem name="Remove..." action="Remove..."/>
+  </popup>
 </ui>
 
 Test Tree description...
@@ -61,7 +67,7 @@ Viewing check button for switch 'Select in collapsed suites'
 Viewing radio button for switch 'Current selection:', options Discard/Refine/Extend/Exclude'. Default value 0.
 Viewing action with title '_Select'
 
-Changing GUI status to: 'TextTest started at 22Dec20:54:42.'
+Changing GUI status to: 'TextTest started at 01Jan11:57:13.'
 
 'set test selection to' event created with arguments 'TargetApp'
 Tests: All 0 selected
@@ -80,7 +86,7 @@ Viewing entry for option 'Command line options'
 Viewing action with title 'Add Test'
 
 Tabs showing : Test, Selection
-Setting sensitivity of button 'Remove' to True
+Setting sensitivity of button 'Remove...' to True
 
 'enter test name =' event created with arguments 'Name With Spaces'
 

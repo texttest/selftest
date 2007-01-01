@@ -1,4 +1,4 @@
-Top Window title is TextTest dynamic GUI (tests started at 28Dec17:14:43)
+Top Window title is TextTest dynamic GUI (tests started at 31Dec13:34:13)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -21,8 +21,10 @@ UI layout:
       <menuitem name="Shortcut bar" action="Shortcut bar"/>
       <menuitem name="Status bar" action="Status bar"/>
     </menu>
-    <menu name="actionmenu" action="actionmenu">
+    <menu name="actionsmenu" action="actionsmenu">
       <menuitem name="Save" action="Save"/>
+    </menu>
+    <menu name="optimizationmenu" action="optimizationmenu">
       <menuitem name="Plot Graph" action="Plot Graph"/>
     </menu>
   </menubar>
@@ -30,8 +32,11 @@ UI layout:
     <toolitem name="Quit" action="Quit"/>
     <separator/>
     <toolitem name="Save" action="Save"/>
+    <separator/>
     <toolitem name="Plot Graph" action="Plot Graph"/>
   </toolbar>
+  <popup name="popup">
+  </popup>
 </ui>
 
 Progress bar set to fraction 0.0, text '0 of 1 tests completed'
@@ -65,7 +70,7 @@ Tabs showing : Progress
 Test progress:
 --> Not started : 1, colour 'white', font 'bold'
 
-Changing GUI status to: 'TextTest started at 28Dec17:14:44.'
+Changing GUI status to: 'TextTest started at 31Dec13:34:13.'
 
 Waiting for application event 'completion of test actions' to occur.
 Redrawing test umlauf_spiel coloured yellow
@@ -76,7 +81,7 @@ Test progress:
 Redrawing test umlauf_spiel coloured green
 (Second column 'solution 20.0% worse(+)' coloured red)
 
-Progress bar set to fraction 1.0, text 'All 1 tests completed at 28Dec17:14:47 (1 tests failed)'
+Progress bar set to fraction 1.0, text 'All 1 tests completed at 31Dec13:34:16 (1 tests failed)'
 
 Test progress:
 --> Not started : 0, colour 'white', font ''
@@ -100,7 +105,7 @@ Setting sensitivity of button 'Save best' to True
 Setting sensitivity of button 'CVS _Log' to True
 
 ---------- Text Info Window ----------
-Test FAILED on painesville :
+Test FAILED on beltzville :
 ------------------ Differences in solution --------------------
 12c12
 < 145;21;0;0;0;A;;;0x40;0;some_crap
