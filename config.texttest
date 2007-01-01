@@ -2,9 +2,6 @@
 ##==============================================================================
 ##Stuff that only works at Carmen!
 
-# Path to the binary, at Carmen
-binary:${TEXTTEST_CHECKOUT}/texttest.py
-
 # Run with SGE at Carmen
 config_module:carmenqueuesystem
 queue_system_module:SGE
@@ -53,6 +50,10 @@ local:false
 
 # ---------------- Values for the static GUI -------------------
 
+[view_program]
+overview*:mozilla
+[end]
+
 # GUI configuration, drop-down lists to appear in static gui...
 [gui_entry_options]
 use_checkout:/usr/local/bin
@@ -77,6 +78,9 @@ unsaveable_version:master
 unsaveable_version:i386_linux
 ## ================================================================
 ## end of stuff only for use at Carmen
+
+# Path to the binary, at Carmen
+binary:${TEXTTEST_CHECKOUT}/texttest.py
 
 [run_dependent_text]
 output*:TextTest will write diagnostics
@@ -255,10 +259,6 @@ overview_1day:report/*/test_*_18Jan2006.html
 overview_1day_ver:report/*/test_*_26Jan2006.html
 [end]
 
-[view_program]
-overview*:mozilla
-[end]
-
 definition_file_stems:dynamic_usecase
 definition_file_stems:dynamic_2_usecase
 definition_file_stems:record_usecase
@@ -274,5 +274,6 @@ auto-replay_in_dynamic_gui:1
 extra_version:sge
 extra_version:lsf
 
-# Don't include this outside Carmen!
+## ================================================================
+## more stuff only for use at Carmen
 extra_version:carmen
