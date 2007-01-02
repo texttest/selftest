@@ -1,4 +1,4 @@
-Top Window title is TextTest dynamic GUI (tests started at 31Dec13:33:44)
+Top Window title is TextTest dynamic GUI (tests started at 02Jan11:49:49)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -11,8 +11,10 @@ Viewing action with title '_Save', stock id ''gtk-save'', accelerator ''<control
 
 UI layout: 
 <ui>
-  <menubar name="menubar">
+  <menubar name="MainMenuBar">
     <menu name="filemenu" action="filemenu">
+      <menuitem name="Save" action="Save"/>
+      <separator/>
       <menuitem name="Quit" action="Quit"/>
     </menu>
     <menu name="viewmenu" action="viewmenu">
@@ -20,16 +22,13 @@ UI layout:
       <menuitem name="Shortcut bar" action="Shortcut bar"/>
       <menuitem name="Status bar" action="Status bar"/>
     </menu>
-    <menu name="actionsmenu" action="actionsmenu">
-      <menuitem name="Save" action="Save"/>
-    </menu>
   </menubar>
-  <toolbar name="toolbar">
+  <toolbar name="MainToolBar">
     <toolitem name="Quit" action="Quit"/>
     <separator/>
     <toolitem name="Save" action="Save"/>
   </toolbar>
-  <popup name="popup">
+  <popup name="TestPopupMenu">
   </popup>
 </ui>
 
@@ -54,7 +53,7 @@ Tabs showing : Progress
 Test progress:
 --> Not started : 1, colour 'purple', font 'bold'
 
-Changing GUI status to: 'TextTest started at 31Dec13:33:44.'
+Changing GUI status to: 'TextTest started at 02Jan11:49:49.'
 
 Waiting for application event 'completion of test actions' to occur.
 Redrawing test A03 coloured turquoise
@@ -65,7 +64,7 @@ Test progress:
 Redrawing test A03 coloured orange
 (Second column 'output different' coloured orange)
 
-Progress bar set to fraction 1.0, text 'All 1 tests completed at 31Dec13:33:45 (1 tests failed)'
+Progress bar set to fraction 1.0, text 'All 1 tests completed at 02Jan11:49:49 (1 tests failed)'
 
 Test progress:
 --> Not started : 0, colour 'white', font ''
@@ -109,7 +108,7 @@ Redrawing suite TargetApp : second column 'All 1 tests successful' coloured pale
 
 Setting file-view title to 'A03'
 Adding file output.dip under heading 'Comparison Files', coloured dark green
-Progress bar detected save, new text is 'All 1 tests completed at 31Dec13:33:45'
+Progress bar detected save, new text is 'All 1 tests completed at 02Jan11:49:49'
 
 Changing GUI status to: 'Saved 1 tests.'
 

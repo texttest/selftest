@@ -1,4 +1,4 @@
-Top Window title is TextTest dynamic GUI (tests started at 01Jan16:03:12)
+Top Window title is TextTest dynamic GUI (tests started at 02Jan11:48:38)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -11,8 +11,10 @@ Viewing action with title '_Save', stock id ''gtk-save'', accelerator ''<control
 
 UI layout: 
 <ui>
-  <menubar name="menubar">
+  <menubar name="MainMenuBar">
     <menu name="filemenu" action="filemenu">
+      <menuitem name="Save" action="Save"/>
+      <separator/>
       <menuitem name="Quit" action="Quit"/>
     </menu>
     <menu name="viewmenu" action="viewmenu">
@@ -20,16 +22,13 @@ UI layout:
       <menuitem name="Shortcut bar" action="Shortcut bar"/>
       <menuitem name="Status bar" action="Status bar"/>
     </menu>
-    <menu name="actionsmenu" action="actionsmenu">
-      <menuitem name="Save" action="Save"/>
-    </menu>
   </menubar>
-  <toolbar name="toolbar">
+  <toolbar name="MainToolBar">
     <toolitem name="Quit" action="Quit"/>
     <separator/>
     <toolitem name="Save" action="Save"/>
   </toolbar>
-  <popup name="popup">
+  <popup name="TestPopupMenu">
   </popup>
 </ui>
 
@@ -57,7 +56,7 @@ Tabs showing : Progress
 Test progress:
 --> Not started : 2, colour 'white', font 'bold'
 
-Changing GUI status to: 'TextTest started at 01Jan16:03:12.'
+Changing GUI status to: 'TextTest started at 02Jan11:48:38.'
 
 Waiting for application event 'completion of test actions' to occur.
 Redrawing test A02 coloured yellow
@@ -87,7 +86,7 @@ Test progress:
 Redrawing test A02 coloured red
 (Second column 'output different' coloured red)
 
-Progress bar set to fraction 1.0, text 'All 2 tests completed at 01Jan16:03:13 (2 tests failed)'
+Progress bar set to fraction 1.0, text 'All 2 tests completed at 02Jan11:48:40 (2 tests failed)'
 
 Test progress:
 --> Not started : 0, colour 'white', font ''
@@ -104,7 +103,7 @@ Setting file-view title to 'A02'
 Adding file output.dip under heading 'Comparison Files', coloured red
 
 ---------- Text Info Window ----------
-Test FAILED on circleville :
+Test FAILED on granville :
 ------------------ Differences in output --------------------
 18c18
 < Germany: Hol HOLD                  (*dislodged*)
@@ -123,7 +122,7 @@ Saving DIP test-case A02 - version batch.view, exactness 1
 Changing GUI status to: 'Saving DIP test-case A02 : output, version batch.view'
 
 ---------- Text Info Window ----------
-Test succeeded on circleville
+Test succeeded on granville
 --------------------------------------
 Redrawing test A02 coloured green
 Redrawing suite Game9952 : second column 'All 1 tests successful' coloured green
@@ -131,7 +130,7 @@ Redrawing suite TargetApp : second column 'All 1 tests successful' coloured gree
 
 Setting file-view title to 'A02'
 Adding file output.dip.batch.view under heading 'Comparison Files', coloured green
-Progress bar detected save, new text is 'All 2 tests completed at 01Jan16:03:13 (1 tests failed)'
+Progress bar detected save, new text is 'All 2 tests completed at 02Jan11:48:40 (1 tests failed)'
 
 Changing GUI status to: 'Saved 1 tests.'
 

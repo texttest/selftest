@@ -1,4 +1,4 @@
-Top Window title is TextTest dynamic GUI (tests started at 31Dec13:33:18)
+Top Window title is TextTest dynamic GUI (tests started at 02Jan11:49:23)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -11,8 +11,10 @@ Viewing action with title '_Save', stock id ''gtk-save'', accelerator ''<control
 
 UI layout: 
 <ui>
-  <menubar name="menubar">
+  <menubar name="MainMenuBar">
     <menu name="filemenu" action="filemenu">
+      <menuitem name="Save" action="Save"/>
+      <separator/>
       <menuitem name="Quit" action="Quit"/>
     </menu>
     <menu name="viewmenu" action="viewmenu">
@@ -20,16 +22,13 @@ UI layout:
       <menuitem name="Shortcut bar" action="Shortcut bar"/>
       <menuitem name="Status bar" action="Status bar"/>
     </menu>
-    <menu name="actionsmenu" action="actionsmenu">
-      <menuitem name="Save" action="Save"/>
-    </menu>
   </menubar>
-  <toolbar name="toolbar">
+  <toolbar name="MainToolBar">
     <toolitem name="Quit" action="Quit"/>
     <separator/>
     <toolitem name="Save" action="Save"/>
   </toolbar>
-  <popup name="popup">
+  <popup name="TestPopupMenu">
   </popup>
 </ui>
 
@@ -57,7 +56,7 @@ Tabs showing : Progress
 Test progress:
 --> Not started : 2, colour 'white', font 'bold'
 
-Changing GUI status to: 'TextTest started at 31Dec13:33:18.'
+Changing GUI status to: 'TextTest started at 02Jan11:49:23.'
 
 Waiting for application event 'completion of test actions' to occur.
 Redrawing test A03 coloured yellow
@@ -87,7 +86,7 @@ Test progress:
 Redrawing test A03 coloured red
 (Second column 'output different' coloured red)
 
-Progress bar set to fraction 1.0, text 'All 2 tests completed at 31Dec13:33:19 (2 tests failed)'
+Progress bar set to fraction 1.0, text 'All 2 tests completed at 02Jan11:49:24 (2 tests failed)'
 
 Test progress:
 --> Not started : 0, colour 'white', font ''
@@ -136,7 +135,7 @@ Redrawing suite TargetApp : second column 'All 1 tests successful' coloured gree
 
 Setting file-view title to 'A03'
 Adding file output.dip under heading 'Comparison Files', coloured green
-Progress bar detected save, new text is 'All 2 tests completed at 31Dec13:33:19 (1 tests failed)'
+Progress bar detected save, new text is 'All 2 tests completed at 02Jan11:49:24 (1 tests failed)'
 
 Changing GUI status to: 'Saved 1 tests.'
 
@@ -147,7 +146,7 @@ Changing GUI status to: 'Recomputing status of DIP test-case A03 ...'
 Redrawing test A03 coloured green
 Redrawing suite Game9952 : second column 'All 1 tests successful' coloured green
 Redrawing suite TargetApp : second column 'All 1 tests successful' coloured green
-Progress bar detected save, new text is 'All 2 tests completed at 31Dec13:33:19'
+Progress bar detected save, new text is 'All 2 tests completed at 02Jan11:49:24'
 
 Changing GUI status to: 'Done recomputing status of DIP test-case A03.'
 
@@ -164,7 +163,7 @@ Test succeeded
 --------------------------------------
 
 'select file' event created with arguments 'output.dip'
-Viewing file /users/mattias/texttesttmp/texttest.31Dec133208/GUI/DynamicGUI/Saving/RefreshOnSave/texttesttmp/dip.4.31Dec133318/Game9952/A03/framework_tmp/output.dipcmp using 'emacs', refresh set to 0
+Viewing file /users/mattias/texttesttmp/texttest.02Jan114752/GUI/DynamicGUI/Saving/RefreshOnSave/texttesttmp/dip.4.02Jan114923/Game9952/A03/framework_tmp/output.dipcmp using 'emacs', refresh set to 0
 
 'quit' event created with arguments ''
 Killing 'emacs' interactive process

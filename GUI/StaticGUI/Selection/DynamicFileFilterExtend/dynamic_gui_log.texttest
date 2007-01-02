@@ -1,4 +1,4 @@
-Top Window title is TextTest dynamic GUI (tests started at 01Jan11:57:07)
+Top Window title is TextTest dynamic GUI (tests started at 02Jan11:49:33)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -11,8 +11,10 @@ Viewing action with title '_Save', stock id ''gtk-save'', accelerator ''<control
 
 UI layout: 
 <ui>
-  <menubar name="menubar">
+  <menubar name="MainMenuBar">
     <menu name="filemenu" action="filemenu">
+      <menuitem name="Save" action="Save"/>
+      <separator/>
       <menuitem name="Quit" action="Quit"/>
     </menu>
     <menu name="viewmenu" action="viewmenu">
@@ -20,16 +22,13 @@ UI layout:
       <menuitem name="Shortcut bar" action="Shortcut bar"/>
       <menuitem name="Status bar" action="Status bar"/>
     </menu>
-    <menu name="actionsmenu" action="actionsmenu">
-      <menuitem name="Save" action="Save"/>
-    </menu>
   </menubar>
-  <toolbar name="toolbar">
+  <toolbar name="MainToolBar">
     <toolitem name="Quit" action="Quit"/>
     <separator/>
     <toolitem name="Save" action="Save"/>
   </toolbar>
-  <popup name="popup">
+  <popup name="TestPopupMenu">
   </popup>
 </ui>
 
@@ -66,7 +65,7 @@ Tabs showing : Progress
 Test progress:
 --> Not started : 11, colour 'white', font 'bold'
 
-Changing GUI status to: 'TextTest started at 01Jan11:57:08.'
+Changing GUI status to: 'TextTest started at 02Jan11:49:33.'
 
 Waiting for application event 'completion of test actions' to occur.
 Redrawing test S01.99 coloured yellow
@@ -271,7 +270,7 @@ Redrawing test S01 coloured green
 Redrawing suite Game47 : second column 'All 1 tests successful' coloured green
 Redrawing suite npstIII : second column 'All 1 tests successful' coloured green
 
-Progress bar set to fraction 1.0, text 'All 11 tests completed at 01Jan11:57:13 (5 tests failed)'
+Progress bar set to fraction 1.0, text 'All 11 tests completed at 02Jan11:49:39 (5 tests failed)'
 
 Test progress:
 --> Not started : 0, colour 'white', font ''
@@ -314,7 +313,7 @@ Viewing action with title 'S_ave selection'
 
 'save selected tests in file' event created with arguments ''
 
-Changing GUI status to: 'Saved 3 tests in file '/users/mattias/texttesttmp/texttest.01Jan115540/GUI/StaticGUI/Selection/DynamicFileFilterExtend/texttesttmp/static_gui.dip.01Jan115706/dynamic_run1/A_failures'.'
+Changing GUI status to: 'Saved 3 tests in file '/users/mattias/texttesttmp/texttest.02Jan114752/GUI/StaticGUI/Selection/DynamicFileFilterExtend/texttesttmp/static_gui.dip.02Jan114932/dynamic_run1/A_failures'.'
 
 'set test selection to' event created with arguments 'A04'
 Tests: 2/11 selected, all visible
@@ -356,6 +355,6 @@ Setting file-view title to 'Sample from 2 tests'
 
 'save selected tests in file' event created with arguments ''
 
-Changing GUI status to: 'Saved 2 tests in file '/users/mattias/texttesttmp/texttest.01Jan115540/GUI/StaticGUI/Selection/DynamicFileFilterExtend/texttesttmp/static_gui.dip.01Jan115706/dynamic_run1/S_failures'.'
+Changing GUI status to: 'Saved 2 tests in file '/users/mattias/texttesttmp/texttest.02Jan114752/GUI/StaticGUI/Selection/DynamicFileFilterExtend/texttesttmp/static_gui.dip.02Jan114932/dynamic_run1/S_failures'.'
 
 'quit' event created with arguments ''

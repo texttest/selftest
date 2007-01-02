@@ -1,4 +1,4 @@
-Top Window title is TextTest dynamic GUI (tests started at 31Dec13:30:32)
+Top Window title is TextTest dynamic GUI (tests started at 02Jan11:48:51)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -11,8 +11,10 @@ Viewing action with title '_Save', stock id ''gtk-save'', accelerator ''<control
 
 UI layout: 
 <ui>
-  <menubar name="menubar">
+  <menubar name="MainMenuBar">
     <menu name="filemenu" action="filemenu">
+      <menuitem name="Save" action="Save"/>
+      <separator/>
       <menuitem name="Quit" action="Quit"/>
     </menu>
     <menu name="viewmenu" action="viewmenu">
@@ -20,16 +22,13 @@ UI layout:
       <menuitem name="Shortcut bar" action="Shortcut bar"/>
       <menuitem name="Status bar" action="Status bar"/>
     </menu>
-    <menu name="actionsmenu" action="actionsmenu">
-      <menuitem name="Save" action="Save"/>
-    </menu>
   </menubar>
-  <toolbar name="toolbar">
+  <toolbar name="MainToolBar">
     <toolitem name="Quit" action="Quit"/>
     <separator/>
     <toolitem name="Save" action="Save"/>
   </toolbar>
-  <popup name="popup">
+  <popup name="TestPopupMenu">
   </popup>
 </ui>
 
@@ -57,7 +56,7 @@ Tabs showing : Progress
 Test progress:
 --> Not started : 4, colour 'white', font 'bold'
 
-Changing GUI status to: 'TextTest started at 31Dec13:30:33.'
+Changing GUI status to: 'TextTest started at 02Jan11:48:52.'
 
 Waiting for application event 'test Success to complete' to occur.
 Waiting for application event 'test Failures to start' to occur.
@@ -112,7 +111,7 @@ Redrawing test FailuresNewBelowLimit coloured yellow
 Redrawing test FailuresNewBelowLimit coloured green
 (Second column '400% faster' coloured red)
 
-Progress bar set to fraction 1.0, text 'All 4 tests completed at 31Dec13:30:56 (3 tests failed)'
+Progress bar set to fraction 1.0, text 'All 4 tests completed at 02Jan11:49:15 (3 tests failed)'
 Expected application event 'completion of test actions' occurred, proceeding.
 
 'set test selection to' event created with arguments 'Failures'
@@ -131,7 +130,7 @@ Test ran faster :
 < CPU time   :       10.0 sec. on sedom
 < Real time  :       18.2 sec.
 ---
-> CPU time   :       5.0 sec. on dolgeville
+> CPU time   :       5.0 sec. on graceville
 > Real time  :       6.1 sec.
 --------------------------------------
 
@@ -162,7 +161,7 @@ Setting file-view title to 'Failures'
 Adding file errors.perf under heading 'Comparison Files', coloured green
 Adding file output.perf under heading 'Comparison Files', coloured green
 Adding file performance.perf under heading 'Comparison Files', coloured green
-Progress bar detected save, new text is 'All 4 tests completed at 31Dec13:30:56 (2 tests failed)'
+Progress bar detected save, new text is 'All 4 tests completed at 02Jan11:49:15 (2 tests failed)'
 
 Changing GUI status to: 'Saved 1 tests.'
 

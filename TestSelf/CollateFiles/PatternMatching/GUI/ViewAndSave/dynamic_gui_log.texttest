@@ -1,4 +1,4 @@
-Top Window title is TextTest dynamic GUI (tests started at 31Dec13:32:58)
+Top Window title is TextTest dynamic GUI (tests started at 02Jan11:48:56)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -11,8 +11,10 @@ Viewing action with title '_Save', stock id ''gtk-save'', accelerator ''<control
 
 UI layout: 
 <ui>
-  <menubar name="menubar">
+  <menubar name="MainMenuBar">
     <menu name="filemenu" action="filemenu">
+      <menuitem name="Save" action="Save"/>
+      <separator/>
       <menuitem name="Quit" action="Quit"/>
     </menu>
     <menu name="viewmenu" action="viewmenu">
@@ -20,16 +22,13 @@ UI layout:
       <menuitem name="Shortcut bar" action="Shortcut bar"/>
       <menuitem name="Status bar" action="Status bar"/>
     </menu>
-    <menu name="actionsmenu" action="actionsmenu">
-      <menuitem name="Save" action="Save"/>
-    </menu>
   </menubar>
-  <toolbar name="toolbar">
+  <toolbar name="MainToolBar">
     <toolitem name="Quit" action="Quit"/>
     <separator/>
     <toolitem name="Save" action="Save"/>
   </toolbar>
-  <popup name="popup">
+  <popup name="TestPopupMenu">
   </popup>
 </ui>
 
@@ -53,7 +52,7 @@ Tabs showing : Progress
 Test progress:
 --> Not started : 1, colour 'white', font 'bold'
 
-Changing GUI status to: 'TextTest started at 31Dec13:32:58.'
+Changing GUI status to: 'TextTest started at 02Jan11:48:56.'
 
 Waiting for application event 'completion of test actions' to occur.
 Redrawing test GenerateNewFiles coloured yellow
@@ -64,7 +63,7 @@ Test progress:
 Redrawing test GenerateNewFiles coloured red
 (Second column 'created_1 new(+)' coloured red)
 
-Progress bar set to fraction 1.0, text 'All 1 tests completed at 31Dec13:32:59 (1 tests failed)'
+Progress bar set to fraction 1.0, text 'All 1 tests completed at 02Jan11:48:57 (1 tests failed)'
 
 Test progress:
 --> Not started : 0, colour 'white', font ''
@@ -115,7 +114,7 @@ Tabs showing : Text Info, Progress, Viewing, Saving, Save Selection
 Setting sensitivity of button '_Save' to True
 
 'select file' event created with arguments 'catalogue.gen'
-Viewing file /users/mattias/texttesttmp/texttest.31Dec133208/TestSelf/CollateFiles/PatternMatching/GUI/ViewAndSave/texttesttmp/gen.31Dec133258/GenerateNewFiles/framework_tmp/catalogue.gencmp using 'emacs', refresh set to 0
+Viewing file /users/mattias/texttesttmp/texttest.02Jan114752/TestSelf/CollateFiles/PatternMatching/GUI/ViewAndSave/texttesttmp/gen.02Jan114856/GenerateNewFiles/framework_tmp/catalogue.gencmp using 'emacs', refresh set to 0
 
 Terminating process that views and edits test files...
 
@@ -149,7 +148,7 @@ Adding file created_2.gen under heading 'Comparison Files', coloured green
 Adding file generated_first.gen under heading 'Comparison Files', coloured green
 Adding file generated_second.gen under heading 'Comparison Files', coloured green
 Adding file generated_third.gen under heading 'Comparison Files', coloured green
-Progress bar detected save, new text is 'All 1 tests completed at 31Dec13:32:59'
+Progress bar detected save, new text is 'All 1 tests completed at 02Jan11:48:57'
 
 Changing GUI status to: 'Saved 1 tests.'
 

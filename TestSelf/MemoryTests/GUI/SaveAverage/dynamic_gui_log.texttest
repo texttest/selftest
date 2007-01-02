@@ -1,4 +1,4 @@
-Top Window title is TextTest dynamic GUI (tests started at 31Dec13:30:28)
+Top Window title is TextTest dynamic GUI (tests started at 02Jan11:48:47)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -11,8 +11,10 @@ Viewing action with title '_Save', stock id ''gtk-save'', accelerator ''<control
 
 UI layout: 
 <ui>
-  <menubar name="menubar">
+  <menubar name="MainMenuBar">
     <menu name="filemenu" action="filemenu">
+      <menuitem name="Save" action="Save"/>
+      <separator/>
       <menuitem name="Quit" action="Quit"/>
     </menu>
     <menu name="viewmenu" action="viewmenu">
@@ -20,16 +22,13 @@ UI layout:
       <menuitem name="Shortcut bar" action="Shortcut bar"/>
       <menuitem name="Status bar" action="Status bar"/>
     </menu>
-    <menu name="actionsmenu" action="actionsmenu">
-      <menuitem name="Save" action="Save"/>
-    </menu>
   </menubar>
-  <toolbar name="toolbar">
+  <toolbar name="MainToolBar">
     <toolitem name="Quit" action="Quit"/>
     <separator/>
     <toolitem name="Save" action="Save"/>
   </toolbar>
-  <popup name="popup">
+  <popup name="TestPopupMenu">
   </popup>
 </ui>
 
@@ -55,7 +54,7 @@ Tabs showing : Progress
 Test progress:
 --> Not started : 1, colour 'white', font 'bold'
 
-Changing GUI status to: 'TextTest started at 31Dec13:30:28.'
+Changing GUI status to: 'TextTest started at 02Jan11:48:47.'
 
 Waiting for application event 'completion of test actions' to occur.
 Redrawing test Failures coloured yellow
@@ -66,7 +65,7 @@ Test progress:
 Redrawing test Failures coloured green
 (Second column '13% larger' coloured red)
 
-Progress bar set to fraction 1.0, text 'All 1 tests completed at 31Dec13:30:28 (1 tests failed)'
+Progress bar set to fraction 1.0, text 'All 1 tests completed at 02Jan11:48:48 (1 tests failed)'
 
 Test progress:
 --> Not started : 0, colour 'white', font ''
@@ -126,7 +125,7 @@ Setting sensitivity of button '_Save' to False
 Setting file-view title to 'Failures'
 Adding file memory.mem under heading 'Comparison Files', coloured green
 Adding file output.mem under heading 'Comparison Files', coloured green
-Progress bar detected save, new text is 'All 1 tests completed at 31Dec13:30:28'
+Progress bar detected save, new text is 'All 1 tests completed at 02Jan11:48:48'
 
 Changing GUI status to: 'Saved 1 tests.'
 
