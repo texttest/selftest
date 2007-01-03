@@ -1,4 +1,4 @@
-Top Window title is TextTest dynamic GUI (tests started at 03Jan00:22:23)
+Top Window title is TextTest dynamic GUI (tests started at 03Jan19:48:23)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -35,13 +35,13 @@ UI layout:
 Progress bar set to fraction 0.0, text '0 of 1 tests completed'
 
 Test Tree description...
--> TargetApp (grep)
-->   GrepTest
+-> TargetApp (hello)
+->   Test
 
 Pane separator positioned 50% from the left edge
 
 Setting file-view title to 'TargetApp'
-Adding file testsuite.grep under heading 'Definition Files', coloured white
+Adding file testsuite.hello under heading 'Definition Files', coloured white
 
 Viewing action with title '_Update Info' (greyed out)
 
@@ -52,46 +52,37 @@ Tabs showing : Progress
 Test progress:
 --> Not started : 1, colour 'white', font 'bold'
 
-Changing GUI status to: 'TextTest started at 03Jan00:22:24.'
+Changing GUI status to: 'TextTest started at 03Jan19:48:23.'
 
 Waiting for application event 'completion of test actions' to occur.
-Redrawing test GrepTest coloured yellow
+Redrawing test Test coloured yellow
 
 Test progress:
 --> Not started : 0, colour 'white', font ''
 --> Running : 1, colour 'yellow', font 'bold'
-Redrawing test GrepTest coloured red
-(Second column 'bug 1831 (CLOSED)' coloured red)
+Redrawing test Test coloured green
+(Second column 'Delay bug' coloured red)
 
-Progress bar set to fraction 1.0, text 'All 1 tests completed at 03Jan00:22:24 (1 tests failed)'
+Progress bar set to fraction 1.0, text 'All 1 tests completed at 03Jan19:48:24 (1 tests failed)'
 
 Test progress:
 --> Not started : 0, colour 'white', font ''
 --> Running : 0, colour 'white', font ''
 --> Failed : 1, colour 'red', font 'bold'
-----> Internal errors : 1, colour 'red', font 'bold'
-------> bug 1831 (CLOSED) : 1, colour 'red', font 'bold'
+----> Known bugs : 1, colour 'red', font 'bold'
+------> Delay bug : 1, colour 'red', font 'bold'
 Expected application event 'completion of test actions' occurred, proceeding.
 
-'set test selection to' event created with arguments 'GrepTest'
+'set test selection to' event created with arguments 'Test'
 Tests: All 1 selected, all visible
 
-Setting file-view title to 'GrepTest'
-Adding file errors.grep under heading 'Comparison Files', coloured green
-Adding file output.grep under heading 'Comparison Files', coloured red
+Setting file-view title to 'Test'
+Adding file errors.hello under heading 'Comparison Files', coloured green
+Adding file output.hello under heading 'Comparison Files', coloured red
 
 ---------- Text Info Window ----------
-Test had internal errors (bug 1831 (CLOSED)) :
-******************************************************
-BugId: 1831          Assigned: 2
-Severity: normal  Status: CLOSED
-Priority: 3     Created: 2003-12-30 10:23:19
-Component: grep
-Summary: Grep keeps talking about Harald!
-Description:
-
-When clearly it should be talking about Geoff...
-******************************************************
+Test had known bugs (Delay bug) :
+Known problem with delay
 --------------------------------------
 
 Tabs showing : Text Info, Progress, Viewing, Saving, Save Selection

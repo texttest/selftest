@@ -1,11 +1,11 @@
 FAILED=1
-061011 GREP badhost : 1 tests : 1 FAILED
+070103 HELLO badhost : 1 tests : 1 FAILED
 
 Summary of all Unsuccessful tests follows...
 ---------------------------------------------------------------------------------
 The following tests FAILED : 
-In GREP test-suite TargetApp:
-  - GREP test-case GrepTest : output different
+In HELLO test-suite TargetApp:
+  - HELLO test-case Test : output different
 
 
 Details of all Unsuccessful tests follows...
@@ -13,11 +13,10 @@ Details of all Unsuccessful tests follows...
 
 Detailed information for the tests that FAILED follows...
 --------------------------------------------------------
-TEST FAILED on fake_machine1 : GREP test-case GrepTest (under GrepTest)
+TEST FAILED on fake_machine1 : HELLO test-case Test (under Test)
 ------------------ Differences in output --------------------
-1c1,2
-< hello geoff
+1c1
+< Hello world
 ---
-> hello Harald
-> 
+> Hello after 10 seconds
 

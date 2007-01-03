@@ -1,11 +1,11 @@
 FAILED=1
-061011 GREP baderr : 1 tests : 1 FAILED
+070103 HELLO baderr : 1 tests : 1 FAILED
 
 Summary of all Unsuccessful tests follows...
 ---------------------------------------------------------------------------------
 The following tests FAILED : 
-In GREP test-suite TargetApp:
-  - GREP test-case GrepTest : errors different(+)
+In HELLO test-suite TargetApp:
+  - HELLO test-case Test : errors different(+)
 
 
 Details of all Unsuccessful tests follows...
@@ -13,14 +13,13 @@ Details of all Unsuccessful tests follows...
 
 Detailed information for the tests that FAILED follows...
 --------------------------------------------------------
-TEST FAILED on connellsville : GREP test-case GrepTest (under GrepTest)
+TEST FAILED on titusville : HELLO test-case Test (under Test)
 ------------------ Differences in errors --------------------
 1d0
 < Some nonsense to trigger failure...
 ------------------ Differences in output --------------------
-1c1,2
-< hello geoff
+1c1
+< Hello world
 ---
-> hello Harald
-> 
+> Hello after 5 seconds
 
