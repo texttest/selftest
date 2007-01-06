@@ -4,7 +4,7 @@
 <-CMD:env 'USECASE_RECORD_STDIN=' 'USECASE_RECORD_SCRIPT=' 'USECASE_REPLAY_SCRIPT=' qsub -N Rules-PIC_umlauf_spiel.Picador-matador -l "non_existent,carmarch=*i386_linux*,carmbuildmaster=1,rave" -w e -notify -m n -cwd -b y -V -o framework_tmp/slavelog -e framework_tmp/slaveerrs 'exec /bin/tcsh -c "exec /users/geoff/work/master/Testing/TextTest/texttest.py -d /users/geoff/texttesttmp/texttest.carmen.05Jan160641/carmen/matador/BuildCode/WorksRave/TargetApp -a pac -v rave.badresource -l -c /carm/proj/texttest/selftest_data/fake_source_compiles -tp Picador/illegal_pairings -raveslave /users/geoff/texttesttmp/texttest.carmen.05Jan160641/carmen/matador/BuildCode/WorksRave/texttesttmp/pac.rave.badresource.05Jan160716 -servaddr 192.168.99.36:39544 -noperf -x -xr /users/geoff/work/master/Testing/Automatic/texttest -xw /users/geoff/texttesttmp/texttest.carmen.05Jan160641/carmen/matador/BuildCode/WorksRave/raveslave"'
 ->ERR:Unable to run job: unknown resource "non_existent".
 Exiting.
-->EXC:256
+->EXC:1
 <-SRV:Completed submission of all rule compilations
 ->CLI:12732
 cas.rave:ArtificialUser/matador_2

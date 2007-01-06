@@ -1,7 +1,7 @@
 <-SRV:TextTest slave server started on 192.168.99.72:34153
 <-CMD:env 'USECASE_RECORD_STDIN=' 'USECASE_RECORD_SCRIPT=' 'USECASE_REPLAY_SCRIPT=' bsub -J Test-Basic-SLEEP.kb -q non_existent -u nobody -o framework_tmp/slavelog -e framework_tmp/slaveerrs 'exec /bin/tcsh -c "exec /users/geoff/work/master/Testing/TextTest/texttest.py -d /users/geoff/texttesttmp/texttest.lsfgeoff22Sep151622/QueueSystems/ErrorHandling/Console/BadQueueKnownBug/TargetApp -a sleep -v kb -l  -tp Basic -slave /users/geoff/texttesttmp/texttest.lsfgeoff22Sep151622/QueueSystems/ErrorHandling/Console/BadQueueKnownBug/texttesttmp/sleep.kbgeoff22Sep151631 -servaddr 192.168.99.72:34152 -b local -x -xr /users/geoff/work/master/Testing/Automatic/texttest -xw /users/geoff/texttesttmp/texttest.lsfgeoff22Sep151622/QueueSystems/ErrorHandling/Console/BadQueueKnownBug/slave"'
 ->ERR:non_existent: No such queue. Job not submitted.
-->EXC:65280
+->EXC:255
 <-CMD:env 'USECASE_RECORD_STDIN=' 'USECASE_RECORD_SCRIPT=' 'USECASE_REPLAY_SCRIPT=' bsub -J Test-Basic2-SLEEP.kb -q non_existent -u nobody -o framework_tmp/slavelog -e framework_tmp/slaveerrs 'exec /bin/tcsh -c "exec /users/geoff/work/master/Testing/TextTest/texttest.py -d /users/geoff/texttesttmp/texttest.lsfgeoff22Sep151622/QueueSystems/ErrorHandling/Console/BadQueueKnownBug/TargetApp -a sleep -v kb -l  -tp Basic2 -slave /users/geoff/texttesttmp/texttest.lsfgeoff22Sep151622/QueueSystems/ErrorHandling/Console/BadQueueKnownBug/texttesttmp/sleep.kbgeoff22Sep151631 -servaddr 192.168.99.72:34152 -b local -x -xr /users/geoff/work/master/Testing/Automatic/texttest -xw /users/geoff/texttesttmp/texttest.lsfgeoff22Sep151622/QueueSystems/ErrorHandling/Console/BadQueueKnownBug/slave"'
 ->ERR:non_existent: No such queue. Job not submitted.
-->EXC:65280
+->EXC:255
