@@ -4,12 +4,6 @@ SelectBaseVersion
 # After selecting it should clear again when you press select next time
 ClearTestSelection
 
-# Make sure when we press select and an extra version is present, everything is highlighted
-SelectExtraVersion
-
-# Try to just pick out the tests for the extra_version
-SelectExtraVersionOnly
-
 # Check we can save selections (all variants)
 SaveSelection
 
@@ -36,7 +30,6 @@ FileFilterExtend
 
 # Create 2 dynamic file filters, select first one and then extend with the other
 DynamicFileFilterExtend
-
 
 # Check we can extend a filter even when the contents have no suites in common
 FileFilterExtend2Suites
