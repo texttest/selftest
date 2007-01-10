@@ -1,0 +1,126 @@
+Top Window title is TextTest static GUI : management of tests for HELLO
+Default widget is <type 'gtk.TreeView'>
+Setting window width to 60% of screen.
+Setting window height to 83% of screen.
+
+Viewing toggle action with title '_Toolbar'
+Viewing toggle action with title '_Shortcut bar'
+Viewing toggle action with title '_Status bar'
+Viewing action with title '_Quit', stock id ''gtk-quit'', accelerator ''<control>q''
+Viewing action with title '_Select', stock id ''gtk-refresh'', accelerator ''<control>s''
+Viewing action with title '_Run', stock id ''gtk-execute'', accelerator ''<control>r'' (greyed out)
+Viewing action with title 'R_eset', stock id ''gtk-revert-to-saved'', accelerator ''<control>e''
+Viewing action with title 'Remove...', stock id ''gtk-delete'' (greyed out)
+
+UI layout: 
+<ui>
+  <menubar name="MainMenuBar">
+    <menu name="filemenu" action="filemenu">
+      <menuitem name="Quit" action="Quit"/>
+    </menu>
+    <menu name="editmenu" action="editmenu">
+      <menuitem name="Remove..." action="Remove..."/>
+    </menu>
+    <menu name="viewmenu" action="viewmenu">
+      <menuitem name="Toolbar" action="Toolbar"/>
+      <menuitem name="Shortcut bar" action="Shortcut bar"/>
+      <menuitem name="Status bar" action="Status bar"/>
+    </menu>
+    <menu name="actionsmenu" action="actionsmenu">
+      <menuitem name="Select" action="Select"/>
+      <menuitem name="Run" action="Run"/>
+      <menuitem name="Reset" action="Reset"/>
+    </menu>
+  </menubar>
+  <toolbar name="MainToolBar">
+    <toolitem name="Quit" action="Quit"/>
+    <separator/>
+    <toolitem name="Select" action="Select"/>
+    <toolitem name="Run" action="Run"/>
+    <toolitem name="Reset" action="Reset"/>
+    <separator/>
+    <toolitem name="Remove..." action="Remove..."/>
+    <separator/>
+  </toolbar>
+  <popup name="TestPopupMenu">
+    <menuitem name="Remove..." action="Remove..."/>
+    <separator/>
+  </popup>
+</ui>
+
+Test Tree description...
+-> TargetApp (hello)
+->   Test
+
+Test column header set to 'Tests: 0/1 selected'
+
+Pane separator positioned 50% from the left edge
+
+Tabs showing : Selection, Config
+
+Tabs showing : Select Tests
+
+Viewing notebook page for 'Select Tests'
+Viewing entry for option 'Tests for version' (drop-down list containing ['', '<default>'])
+Viewing entry for option 'Test names containing'
+Viewing entry for option 'Tests listed in file' (drop-down list containing [''])
+Viewing entry for option 'Suite names containing'
+Viewing entry for option 'Result files containing'
+Viewing entry for option 'Result file to search' (set to 'output')
+Viewing entry for option 'Execution time'
+Viewing check button for switch 'Select in collapsed suites'
+Viewing radio button for switch 'Current selection:', options Discard/Refine/Extend/Exclude'. Default value 0.
+Viewing action with title '_Select'
+
+Changing GUI status to: 'TextTest started at 10Jan11:11:56.'
+
+'set test selection to' event created with arguments 'TargetApp'
+
+Setting file-view title to 'TargetApp'
+Adding file testsuite.hello under heading 'Definition Files', coloured pale green
+Adding file options.data under heading 'Data Files', coloured pale green
+
+
+Tabs showing : Adding Test, Adding Suite, New File, Bugs
+
+Viewing notebook page for 'Adding Test'
+Viewing entry for option 'Test Name'
+Viewing entry for option 'Test Description'
+Viewing entry for option 'Place Test' (set to 'last in suite') (drop-down list containing ['first in suite', 'after Test', 'last in suite'])
+Viewing entry for option 'Command line options'
+Viewing action with title 'Add Test'
+
+Tabs showing : Test, Selection, Config
+Setting sensitivity of button 'Remove...' to True
+
+'select file' event created with arguments 'options.data'
+Viewing file /users/geoff/texttesttmp/texttest.10Jan111150/TestSelf/TestData/GUI/ReservedNames/TargetApp/options.data using 'emacs', refresh set to 0
+
+Terminating process that views and edits test files...
+
+'set test selection to' event created with arguments 'Test'
+
+Test column header set to 'Tests: All 1 selected'
+
+Setting file-view title to 'Test'
+Adding file testsuite.data under heading 'Data Files', coloured pale green
+
+Tabs showing : Test, Selection, Running, Config
+
+Viewing notebook page for 'Copying'
+Viewing entry for option 'Name of copy' (set to 'Test_copy')
+Viewing entry for option 'Description' (set to 'Copy of Test')
+Viewing entry for option 'Copy to suite' (set to 'current') (drop-down list containing ['current', 'TargetApp'])
+Viewing entry for option 'Place copy' (set to 'last in suite') (drop-down list containing ['first in suite', 'after Test', 'last in suite'])
+Viewing check button for switch 'Keep original' (checked)
+Viewing action with title '_Copy'
+
+Tabs showing : Copying, New File, Bugs
+Setting sensitivity of button '_Run' to True
+
+'select file' event created with arguments 'testsuite.data'
+Viewing file /users/geoff/texttesttmp/texttest.10Jan111150/TestSelf/TestData/GUI/ReservedNames/TargetApp/Test/testsuite.data using 'emacs', refresh set to 0
+
+Terminating process that views and edits test files...
+
+'quit' event created with arguments ''
