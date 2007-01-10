@@ -61,16 +61,21 @@ carmen:3
 overview*:mozilla
 [end]
 
+[gui_entry_overrides]
+auto-replay_in_dynamic_gui:1
+temporary_result_directory:/carm/proj/matador2/publish/coach.texttest_tmp
+version_to_reconnect_to:master.i386_linux
+[end]
+
 # GUI configuration, drop-down lists to appear in static gui...
 [gui_entry_options]
 use_checkout:/usr/local/bin
 use_checkout:/carm/master/Testing/TextTest
-run_this_version:master.i386_linux
-run_this_version:master.parisc_2_0
-run_this_version:master.sparc
 run_this_version:sparc
 run_this_version:parisc_2_0
-reconnect_to:/carm/proj/matador2/publish/coach.texttest_tmp
+version_to_reconnect_to:master.i386_linux
+version_to_reconnect_to:master.sparc
+version_to_reconnect_to:master.powerpc
 request_lsf_queue:waiting
 [end]
 
@@ -269,15 +274,11 @@ overview_1day_ver:report/*/test_*_26Jan2006.html
 [end]
 
 definition_file_stems:dynamic_usecase
-definition_file_stems:dynamic_2_usecase
+definition_file_stems:reconnect_usecase
 definition_file_stems:record_usecase
 definition_file_stems:replay_usecase
 definition_file_stems:target_record_usecase
 definition_file_stems:target_input
-
-[gui_entry_overrides]
-auto-replay_in_dynamic_gui:1
-[end]
 
 # Run the LSF and SGE tests too...
 extra_version:sge
