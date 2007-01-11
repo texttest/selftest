@@ -1,0 +1,169 @@
+Top Window title is TextTest dynamic GUI (tests started at 11Jan14:09:00)
+Default widget is <type 'gtk.TreeView'>
+Setting window width to 60% of screen.
+Setting window height to 83% of screen.
+
+Viewing toggle action with title '_Toolbar'
+Viewing toggle action with title '_Shortcut bar'
+Viewing toggle action with title '_Status bar'
+Viewing action with title '_Quit', stock id ''gtk-quit'', accelerator ''<control>q''
+Viewing action with title '_Save', stock id ''gtk-save'', accelerator ''<control>s'' (greyed out)
+
+UI layout: 
+<ui>
+  <menubar name="MainMenuBar">
+    <menu name="filemenu" action="filemenu">
+      <menuitem name="Save" action="Save"/>
+      <separator/>
+      <menuitem name="Quit" action="Quit"/>
+    </menu>
+    <menu name="viewmenu" action="viewmenu">
+      <menuitem name="Toolbar" action="Toolbar"/>
+      <menuitem name="Shortcut bar" action="Shortcut bar"/>
+      <menuitem name="Status bar" action="Status bar"/>
+    </menu>
+  </menubar>
+  <toolbar name="MainToolBar">
+    <toolitem name="Quit" action="Quit"/>
+    <toolitem name="Save" action="Save"/>
+    <separator/>
+  </toolbar>
+  <popup name="TestPopupMenu">
+  </popup>
+</ui>
+
+Progress bar set to fraction 0.0, text '0 of 3 tests completed'
+
+Test Tree description...
+-> TargetApp (gen)
+->   GenerateLessFiles
+->   Generate
+->   GenerateNewFiles
+
+Test column header set to 'Tests: 0/3 selected, none hidden'
+
+Pane separator positioned 50% from the left edge
+
+Setting file-view title to 'TargetApp'
+Adding file testsuite.gen under heading 'Definition Files', coloured white
+
+Viewing action with title '_Update Info' (greyed out)
+
+Pane separator positioned 46% from the top
+
+Tabs showing : Progress
+
+Test progress:
+--> Not started : 3, colour 'white', font 'bold'
+
+Changing GUI status to: 'TextTest started at 11Jan14:09:00.'
+
+Waiting for application event 'completion of test actions' to occur.
+Redrawing test GenerateLessFiles coloured yellow
+
+Test progress:
+--> Not started : 2, colour 'white', font 'bold'
+--> Running : 1, colour 'yellow', font 'bold'
+Redrawing test GenerateLessFiles coloured red
+(Second column 'output missing' coloured red)
+
+Progress bar set to fraction 0.333333333333, text '1 of 3 tests completed (1 tests failed)'
+
+Test progress:
+--> Not started : 2, colour 'white', font 'bold'
+--> Running : 0, colour 'white', font ''
+--> Failed : 1, colour 'red', font 'bold'
+----> Differences : 1, colour 'red', font 'bold'
+------> output missing : 1, colour 'red', font 'bold'
+Redrawing test Generate coloured yellow
+
+Test progress:
+--> Not started : 1, colour 'white', font 'bold'
+--> Running : 1, colour 'yellow', font 'bold'
+--> Failed : 1, colour 'red', font 'bold'
+----> Differences : 1, colour 'red', font 'bold'
+------> output missing : 1, colour 'red', font 'bold'
+Redrawing test Generate coloured red
+(Second column 'output missing' coloured red)
+
+Progress bar set to fraction 0.666666666667, text '2 of 3 tests completed (2 tests failed)'
+
+Test progress:
+--> Not started : 1, colour 'white', font 'bold'
+--> Running : 0, colour 'white', font ''
+--> Failed : 2, colour 'red', font 'bold'
+----> Differences : 2, colour 'red', font 'bold'
+------> output missing : 2, colour 'red', font 'bold'
+Redrawing test GenerateNewFiles coloured yellow
+
+Test progress:
+--> Not started : 0, colour 'white', font ''
+--> Running : 1, colour 'yellow', font 'bold'
+--> Failed : 2, colour 'red', font 'bold'
+----> Differences : 2, colour 'red', font 'bold'
+------> output missing : 2, colour 'red', font 'bold'
+Redrawing test GenerateNewFiles coloured red
+(Second column 'created_1 new(+)' coloured red)
+
+Progress bar set to fraction 1.0, text 'All 3 tests completed at 11Jan14:09:02 (3 tests failed)'
+
+Test progress:
+--> Not started : 0, colour 'white', font ''
+--> Running : 0, colour 'white', font ''
+--> Failed : 3, colour 'red', font 'bold'
+----> Differences : 3, colour 'red', font 'bold'
+------> output missing : 3, colour 'red', font 'bold'
+------> catalogue new : 1, colour 'red', font 'bold'
+------> created_1 new : 1, colour 'red', font 'bold'
+------> created_2 new : 1, colour 'red', font 'bold'
+Expected application event 'completion of test actions' occurred, proceeding.
+
+'toggle progress report category' event created with arguments 'output missing'
+Selecting not to show tests in the 'output missing' category.
+Hiding test : GEN test-case GenerateLessFiles
+Hiding test : GEN test-case Generate
+
+Test column header set to 'Tests: 0/3 selected, 2 hidden'
+
+'toggle progress report category' event created with arguments 'catalogue new'
+Selecting not to show tests in the 'catalogue new' category.
+
+'set test selection to' event created with arguments 'GenerateNewFiles'
+
+Test column header set to 'Tests: 1/3 selected, 2 hidden'
+
+Setting file-view title to 'GenerateNewFiles'
+Adding file generated_first.gen under heading 'Comparison Files', coloured green
+Adding file generated_second.gen under heading 'Comparison Files', coloured green
+Adding file generated_third.gen under heading 'Comparison Files', coloured green
+Adding file catalogue.gen under heading 'New Files', coloured red
+Adding file created_1.gen under heading 'New Files', coloured red
+Adding file created_2.gen under heading 'New Files', coloured red
+Adding file output.gen under heading 'Missing Files', coloured red
+
+---------- Text Info Window ----------
+Test FAILED :
+------------------ New result in catalogue --------------------
+The following new files/directories were created:
+<Test Directory>
+----created_1.dump
+----created_2.dump
+----generated.first.dump
+----generated.second.dump
+----generated.third.dump
+------------------ New result in created_1 --------------------
+created_1.dump
+------------------ New result in created_2 --------------------
+created_2.dump
+------------------ Missing result in output --------------------
+Generating generated_first.dump
+Generating generated_second.dump
+Generating generated_third.dump
+Generating created_1.dump
+Generating created_2.dump
+--------------------------------------
+
+Tabs showing : Text Info, Progress, Viewing, Saving, Save Selection
+Setting sensitivity of button '_Save' to True
+
+'quit' event created with arguments ''
