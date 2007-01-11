@@ -1,0 +1,155 @@
+Top Window title is TextTest static GUI : management of tests for DIP
+Default widget is <type 'gtk.TreeView'>
+Setting window width to 60% of screen.
+Setting window height to 83% of screen.
+
+Viewing toggle action with title '_Toolbar'
+Viewing toggle action with title '_Shortcut bar'
+Viewing toggle action with title '_Status bar'
+Viewing action with title '_Quit', stock id ''gtk-quit'', accelerator ''<control>q''
+Viewing action with title '_Select', stock id ''gtk-refresh'', accelerator ''<control>s''
+Viewing action with title '_Run', stock id ''gtk-execute'', accelerator ''<control>r'' (greyed out)
+Viewing action with title 'R_eset', stock id ''gtk-revert-to-saved'', accelerator ''<control>e''
+Viewing action with title 'Remove...', stock id ''gtk-delete'' (greyed out)
+
+UI layout: 
+<ui>
+  <menubar name="MainMenuBar">
+    <menu name="filemenu" action="filemenu">
+      <menuitem name="Quit" action="Quit"/>
+    </menu>
+    <menu name="editmenu" action="editmenu">
+      <menuitem name="Remove..." action="Remove..."/>
+    </menu>
+    <menu name="viewmenu" action="viewmenu">
+      <menuitem name="Toolbar" action="Toolbar"/>
+      <menuitem name="Shortcut bar" action="Shortcut bar"/>
+      <menuitem name="Status bar" action="Status bar"/>
+    </menu>
+    <menu name="actionsmenu" action="actionsmenu">
+      <menuitem name="Select" action="Select"/>
+      <menuitem name="Run" action="Run"/>
+      <menuitem name="Reset" action="Reset"/>
+    </menu>
+  </menubar>
+  <toolbar name="MainToolBar">
+    <toolitem name="Quit" action="Quit"/>
+    <separator/>
+    <toolitem name="Select" action="Select"/>
+    <toolitem name="Run" action="Run"/>
+    <toolitem name="Reset" action="Reset"/>
+    <separator/>
+    <toolitem name="Remove..." action="Remove..."/>
+    <separator/>
+  </toolbar>
+  <popup name="TestPopupMenu">
+    <menuitem name="Remove..." action="Remove..."/>
+    <separator/>
+  </popup>
+</ui>
+
+Test Tree description...
+-> TargetApp (dip)
+->   Game9952
+->     S01.99
+->     A01
+->     S02
+->     A02
+->     S03
+->     A03
+->     S04
+->     A04
+->     S05
+->     A05
+->   npstIII
+->     Game47
+->       S01
+
+Test column header set to 'Tests: 0/11 selected'
+
+Pane separator positioned 50% from the left edge
+
+Tabs showing : Selection, Config
+
+Tabs showing : Select Tests
+
+Viewing notebook page for 'Select Tests'
+Viewing entry for option 'Tests for version' (drop-down list containing ['', '<default>'])
+Viewing entry for option 'Test names containing'
+Viewing entry for option 'Tests listed in file' (drop-down list containing ['', 'failures.dip', 'metafail.dip', 'versioned.dip.a03', 'versioned.dip.s03'])
+Viewing entry for option 'Suite names containing'
+Viewing entry for option 'Result files containing'
+Viewing entry for option 'Result file to search' (set to 'output')
+Viewing entry for option 'Execution time'
+Viewing check button for switch 'Select in collapsed suites'
+Viewing radio button for switch 'Current selection:', options Discard/Refine/Extend/Exclude'. Default value 0.
+Viewing action with title '_Select'
+
+Changing GUI status to: 'TextTest started at 11Jan15:20:57.'
+
+'set test selection to' event created with arguments 'TargetApp'
+
+Setting file-view title to 'TargetApp'
+Adding file testsuite.dip under heading 'Definition Files', coloured pale green
+
+
+Tabs showing : Adding Test, Adding Suite, New File, Bugs
+
+Viewing notebook page for 'Adding Test'
+Viewing entry for option 'Test Name'
+Viewing entry for option 'Test Description'
+Viewing entry for option 'Place Test' (set to 'last in suite') (drop-down list containing ['first in suite', 'after Game9952', 'after npstIII', 'last in suite'])
+Viewing entry for option 'Command line options'
+Viewing action with title 'Add Test'
+
+Tabs showing : Test, Selection, Config
+Setting sensitivity of button 'Remove...' to True
+
+'enter test name =' event created with arguments 'A01'
+
+'add test' event created with arguments ''
+Adding Test A01 under test suite DIP test-suite TargetApp, placed last in suite
+Not creating options file
+
+Test column header set to 'Tests: 0/12 selected'
+Selecting new test A01
+Marking 1 tests as selected
+
+Test column header set to 'Tests: 1/12 selected'
+
+Setting file-view title to 'A01'
+
+Tabs showing : Test, Selection, Running, Config
+
+Viewing notebook page for 'Copying'
+Viewing entry for option 'Name of copy' (set to 'A01_copy')
+Viewing entry for option 'Description' (set to 'Copy of A01')
+Viewing entry for option 'Copy to suite' (set to 'current') (drop-down list containing ['current', 'TargetApp', 'TargetApp/Game9952', 'TargetApp/npstIII', 'TargetApp/npstIII/Game47'])
+Viewing entry for option 'Place copy' (set to 'last in suite') (drop-down list containing ['first in suite', 'after Game9952', 'after npstIII', 'after A01', 'last in suite'])
+Viewing check button for switch 'Keep original' (checked)
+Viewing action with title '_Copy'
+
+Tabs showing : Copying, New File, Bugs
+Setting sensitivity of button '_Run' to True
+
+Test Tree description...
+-> TargetApp (dip)
+->   Game9952
+->     S01.99
+->     A01
+->     S02
+->     A02
+->     S03
+->     A03
+->     S04
+->     A04
+->     S05
+->     A05
+->   npstIII
+->     Game47
+->       S01
+->   A01
+
+Changing GUI status to: 'Added new DIP test-case A01'
+
+'quit' event created with arguments ''
