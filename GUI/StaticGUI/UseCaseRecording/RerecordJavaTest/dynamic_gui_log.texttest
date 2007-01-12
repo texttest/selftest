@@ -1,4 +1,4 @@
-Top Window title is TextTest dynamic GUI (tests started at 08Jan23:14:00)
+Top Window title is TextTest dynamic GUI (tests started at 12Jan16:04:59)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -42,20 +42,14 @@ Test column header set to 'Tests: 0/1 selected, none hidden'
 
 Pane separator positioned 50% from the left edge
 
-Setting file-view title to 'TargetApp'
-Adding file environment under heading 'Definition Files', coloured white
-Adding file testsuite.gui under heading 'Definition Files', coloured white
+Tabs showing : Selection
 
-Viewing action with title '_Update Info' (greyed out)
-
-Pane separator positioned 46% from the top
-
-Tabs showing : Progress
+Tabs showing : Select Tests
 
 Test progress:
 --> Not started : 1, colour 'white', font 'bold'
 
-Changing GUI status to: 'TextTest started at 08Jan23:14:01.'
+Changing GUI status to: 'TextTest started at 12Jan16:05:00.'
 
 Waiting for application event 'completion of test actions' to occur.
 Redrawing test AddMovie coloured yellow
@@ -66,7 +60,7 @@ Test progress:
 Redrawing test AddMovie coloured red
 (Second column 'output different(+)' coloured red)
 
-Progress bar set to fraction 1.0, text 'All 1 tests completed at 08Jan23:14:06 (1 tests failed)'
+Progress bar set to fraction 1.0, text 'All 1 tests completed at 12Jan16:05:05 (1 tests failed)'
 
 Test progress:
 --> Not started : 0, colour 'white', font ''
@@ -80,11 +74,16 @@ Expected application event 'completion of test actions' occurred, proceeding.
 'set test selection to' event created with arguments 'AddMovie'
 
 Test column header set to 'Tests: All 1 selected, none hidden'
+Setting sensitivity of button '_Save' to True
 
 Setting file-view title to 'AddMovie'
 Adding file errors.gui under heading 'Comparison Files', coloured green
 Adding file output.gui under heading 'Comparison Files', coloured red
 Adding file usecase.gui under heading 'Comparison Files', coloured red
+
+Viewing action with title '_Update Info' (greyed out)
+
+Tabs showing : Text Info, Viewing, Saving
 
 ---------- Text Info Window ----------
 Test FAILED :
@@ -104,10 +103,9 @@ Test FAILED :
 > set new movie name to Chariots of Fire
 --------------------------------------
 
-Tabs showing : Text Info, Progress, Viewing, Saving, Save Selection
-Setting sensitivity of button '_Save' to True
+Tabs showing : Test, Selection
 
-'view options for' event created with arguments 'Saving'
+'view sub-options for test :' event created with arguments 'Saving'
 
 Viewing notebook page for 'Saving'
 Viewing entry for option 'Version to save' (set to 'java') (drop-down list containing ['java', ''])
@@ -126,19 +124,31 @@ Redrawing test AddMovie coloured green
 Redrawing suite TargetApp : second column 'All 1 tests successful' coloured green
 
 Test column header set to 'Tests: 0/1 selected, none hidden'
-
----------- Text Info Window ----------
-Test succeeded
---------------------------------------
-
-Tabs showing : Text Info, Progress, Viewing
 Setting sensitivity of button '_Save' to False
 
-Setting file-view title to 'AddMovie'
-Adding file errors.gui under heading 'Comparison Files', coloured green
-Adding file output.gui.java under heading 'Comparison Files', coloured green
-Adding file usecase.gui.java under heading 'Comparison Files', coloured green
-Progress bar detected save, new text is 'All 1 tests completed at 08Jan23:14:06'
+Tabs showing : Select Tests, Saving
+
+Test progress:
+--> Not started : 0, colour 'white', font ''
+--> Running : 0, colour 'white', font ''
+--> Failed : 1, colour 'red', font 'bold'
+----> Differences : 1, colour 'red', font 'bold'
+------> output different : 1, colour 'red', font 'bold'
+------> usecase different : 1, colour 'red', font 'bold'
+
+Tabs showing : Selection
+
+Tabs showing : Select Tests
+Progress bar detected save, new text is 'All 1 tests completed at 12Jan16:05:05'
+
+Test progress:
+--> Not started : 0, colour 'white', font ''
+--> Running : 0, colour 'white', font ''
+--> Failed : 0, colour 'white', font ''
+----> Differences : 0, colour 'white', font ''
+------> output different : 0, colour 'white', font ''
+------> usecase different : 0, colour 'white', font ''
+--> Succeeded : 1, colour 'green', font 'bold'
 
 Changing GUI status to: 'Saved 1 tests.'
 

@@ -1,4 +1,4 @@
-Top Window title is TextTest dynamic GUI (tests started at 08Jan23:13:48)
+Top Window title is TextTest dynamic GUI (tests started at 12Jan16:04:58)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -55,19 +55,14 @@ Test column header set to 'Tests: 0/11 selected, none hidden'
 
 Pane separator positioned 50% from the left edge
 
-Setting file-view title to 'TargetApp'
-Adding file testsuite.dip under heading 'Definition Files', coloured white
+Tabs showing : Selection
 
-Viewing action with title '_Update Info' (greyed out)
-
-Pane separator positioned 46% from the top
-
-Tabs showing : Progress
+Tabs showing : Select Tests
 
 Test progress:
 --> Not started : 11, colour 'white', font 'bold'
 
-Changing GUI status to: 'TextTest started at 08Jan23:13:48.'
+Changing GUI status to: 'TextTest started at 12Jan16:04:58.'
 
 Waiting for application event 'completion of test actions' to occur.
 Redrawing test S01.99 coloured yellow
@@ -272,7 +267,7 @@ Redrawing test S01 coloured green
 Redrawing suite Game47 : second column 'All 1 tests successful' coloured green
 Redrawing suite npstIII : second column 'All 1 tests successful' coloured green
 
-Progress bar set to fraction 1.0, text 'All 11 tests completed at 08Jan23:13:54 (5 tests failed)'
+Progress bar set to fraction 1.0, text 'All 11 tests completed at 12Jan16:05:04 (5 tests failed)'
 
 Test progress:
 --> Not started : 0, colour 'white', font ''
@@ -286,9 +281,14 @@ Expected application event 'completion of test actions' occurred, proceeding.
 'set test selection to' event created with arguments 'A02,A03,A04'
 
 Test column header set to 'Tests: 1/11 selected, none hidden'
+Setting sensitivity of button '_Save' to True
 
 Setting file-view title to 'A02'
 Adding file output.dip under heading 'Comparison Files', coloured red
+
+Viewing action with title '_Update Info' (greyed out)
+
+Tabs showing : Text Info, Viewing, Saving
 
 ---------- Text Info Window ----------
 Test FAILED :
@@ -299,8 +299,7 @@ Test FAILED :
 > Germany: Hol HOLD                  (*was dislodged*)
 --------------------------------------
 
-Tabs showing : Text Info, Progress, Viewing, Saving, Save Selection
-Setting sensitivity of button '_Save' to True
+Tabs showing : Test, Selection
 
 Test column header set to 'Tests: 2/11 selected, none hidden'
 Setting file-view title to 'Sample from 2 tests'
@@ -308,9 +307,21 @@ Setting file-view title to 'Sample from 2 tests'
 Test column header set to 'Tests: 3/11 selected, none hidden'
 Setting file-view title to 'Sample from 3 tests'
 
-'view options for' event created with arguments 'Save Selection'
+'view options for' event created with arguments 'Selection'
 
-Viewing notebook page for 'Save Selection'
+Tabs showing : Select Tests, Saving
+
+Test progress:
+--> Not started : 0, colour 'white', font ''
+--> Running : 0, colour 'white', font ''
+--> Succeeded : 6, colour 'green', font 'bold'
+--> Failed : 5, colour 'red', font 'bold'
+----> Differences : 5, colour 'red', font 'bold'
+------> output different : 5, colour 'red', font 'bold'
+
+'view sub-options for selection :' event created with arguments 'Saving'
+
+Viewing notebook page for 'Saving'
 Viewing entry for option 'Name to give selection'
 Viewing action with title 'S_ave selection'
 
@@ -318,19 +329,22 @@ Viewing action with title 'S_ave selection'
 
 'save selected tests in file' event created with arguments ''
 
-Changing GUI status to: 'Saved 3 tests in file '/users/mattias/texttesttmp/texttest.08Jan231127/GUI/StaticGUI/Selection/DynamicFileFilterExtend/texttesttmp/static_gui.dip.08Jan231347/dynamic_run1/A_failures'.'
+Changing GUI status to: 'Saved 3 tests in file '/users/geoff/texttesttmp/texttest.12Jan160420/GUI/StaticGUI/Selection/DynamicFileFilterExtend/texttesttmp/static_gui.dip.12Jan160457/dynamic_run1/A_failures'.'
 
 'set test selection to' event created with arguments 'A04'
 
 Test column header set to 'Tests: 2/11 selected, none hidden'
 
-Setting file-view title to 'Sample from 2 tests'
-Adding file output.dip under heading 'Comparison Files', coloured red
-
 Test column header set to 'Tests: 1/11 selected, none hidden'
 
 Setting file-view title to 'A04'
 Adding file output.dip under heading 'Comparison Files', coloured red
+
+Viewing action with title '_Update Info' (greyed out)
+
+Pane separator positioned 46% from the top
+
+Tabs showing : Text Info, Viewing, Saving
 
 ---------- Text Info Window ----------
 Test FAILED :
@@ -362,6 +376,6 @@ Setting file-view title to 'Sample from 2 tests'
 
 'save selected tests in file' event created with arguments ''
 
-Changing GUI status to: 'Saved 2 tests in file '/users/mattias/texttesttmp/texttest.08Jan231127/GUI/StaticGUI/Selection/DynamicFileFilterExtend/texttesttmp/static_gui.dip.08Jan231347/dynamic_run1/S_failures'.'
+Changing GUI status to: 'Saved 2 tests in file '/users/geoff/texttesttmp/texttest.12Jan160420/GUI/StaticGUI/Selection/DynamicFileFilterExtend/texttesttmp/static_gui.dip.12Jan160457/dynamic_run1/S_failures'.'
 
 'quit' event created with arguments ''

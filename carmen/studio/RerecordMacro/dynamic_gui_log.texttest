@@ -1,4 +1,4 @@
-Top Window title is TextTest dynamic GUI (tests started at 08Jan23:15:23)
+Top Window title is TextTest dynamic GUI (tests started at 12Jan16:30:39)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -43,20 +43,14 @@ Test column header set to 'Tests: 0/1 selected, none hidden'
 
 Pane separator positioned 50% from the left edge
 
-Setting file-view title to 'TargetApp'
-Adding file environment.gst under heading 'Definition Files', coloured white
-Adding file testsuite.gst under heading 'Definition Files', coloured white
+Tabs showing : Selection
 
-Viewing action with title '_Update Info' (greyed out)
-
-Pane separator positioned 46% from the top
-
-Tabs showing : Progress
+Tabs showing : Select Tests
 
 Test progress:
 --> Not started : 1, colour 'white', font 'bold'
 
-Changing GUI status to: 'TextTest started at 08Jan23:15:24.'
+Changing GUI status to: 'TextTest started at 12Jan16:30:39.'
 
 Waiting for application event 'completion of test actions' to occur.
 Redrawing test data_unchanged coloured yellow
@@ -67,7 +61,7 @@ Test progress:
 Redrawing test data_unchanged coloured green
 (Second column 'catalogue different(+)' coloured red)
 
-Progress bar set to fraction 1.0, text 'All 1 tests completed at 08Jan23:15:29 (1 tests failed)'
+Progress bar set to fraction 1.0, text 'All 1 tests completed at 12Jan16:30:43 (1 tests failed)'
 
 Test progress:
 --> Not started : 0, colour 'white', font ''
@@ -81,6 +75,7 @@ Expected application event 'completion of test actions' occurred, proceeding.
 'set test selection to' event created with arguments 'data_unchanged'
 
 Test column header set to 'Tests: All 1 selected, none hidden'
+Setting sensitivity of button '_Save' to True
 
 Setting file-view title to 'data__unchanged'
 Adding file catalogue.gst under heading 'Comparison Files', coloured red
@@ -88,8 +83,12 @@ Adding file errors.gst under heading 'Comparison Files', coloured green
 Adding file output.gst under heading 'Comparison Files', coloured green
 Adding file usecase.gst under heading 'Comparison Files', coloured red
 
+Viewing action with title '_Update Info' (greyed out)
+
+Tabs showing : Text Info, Viewing, Saving
+
 ---------- Text Info Window ----------
-Test FAILED on tiptonville :
+Test FAILED on knoxville :
 ------------------ Differences in catalogue --------------------
 5,9c5,10
 < --------LOCAL_PLAN
@@ -137,8 +136,7 @@ Test FAILED on tiptonville :
 < <CommandAttributes label="Window Label" script="CuiGetAreaModeString(gpc_info,CuiArea1,pulldown1,25)" level="3"  returnVal="1"/>
 --------------------------------------
 
-Tabs showing : Text Info, Progress, Viewing, Saving, Save Selection
-Setting sensitivity of button '_Save' to True
+Tabs showing : Test, Selection
 
 'save results for selected tests' event created with arguments ''
 
@@ -150,23 +148,38 @@ Changing GUI status to: 'Saving Studio test-case data_unchanged : catalogue, no 
 Changing GUI status to: 'Saving Studio test-case data_unchanged : usecase, no version'
 
 ---------- Text Info Window ----------
-Test succeeded on tiptonville
+Test succeeded on knoxville
 --------------------------------------
 Redrawing test data_unchanged coloured green
 Redrawing suite lh_v12 : second column 'All 1 tests successful' coloured green
 
 Test column header set to 'Tests: 0/1 selected, none hidden'
-
-Tabs showing : Text Info, Progress, Viewing
 Setting sensitivity of button '_Save' to False
-Redrawing suite TargetApp : second column 'All 1 tests successful' coloured green
 
-Setting file-view title to 'data__unchanged'
-Adding file catalogue.gst under heading 'Comparison Files', coloured green
-Adding file errors.gst under heading 'Comparison Files', coloured green
-Adding file output.gst under heading 'Comparison Files', coloured green
-Adding file usecase.gst under heading 'Comparison Files', coloured green
-Progress bar detected save, new text is 'All 1 tests completed at 08Jan23:15:29'
+Tabs showing : Select Tests, Saving
+
+Test progress:
+--> Not started : 0, colour 'white', font ''
+--> Running : 0, colour 'white', font ''
+--> Failed : 1, colour 'red', font 'bold'
+----> Differences : 1, colour 'red', font 'bold'
+------> catalogue different : 1, colour 'red', font 'bold'
+------> usecase different : 1, colour 'red', font 'bold'
+
+Tabs showing : Selection
+
+Tabs showing : Select Tests
+Redrawing suite TargetApp : second column 'All 1 tests successful' coloured green
+Progress bar detected save, new text is 'All 1 tests completed at 12Jan16:30:43'
+
+Test progress:
+--> Not started : 0, colour 'white', font ''
+--> Running : 0, colour 'white', font ''
+--> Failed : 0, colour 'white', font ''
+----> Differences : 0, colour 'white', font ''
+------> catalogue different : 0, colour 'white', font ''
+------> usecase different : 0, colour 'white', font ''
+--> Succeeded : 1, colour 'green', font 'bold'
 
 Changing GUI status to: 'Saved 1 tests.'
 
