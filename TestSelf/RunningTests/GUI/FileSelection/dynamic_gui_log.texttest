@@ -1,4 +1,4 @@
-Top Window title is TextTest dynamic GUI (tests started at 12Jan17:36:37)
+Top Window title is TextTest dynamic GUI (tests started at 12Jan17:34:46)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -52,7 +52,7 @@ Tabs showing : Select Tests
 Test progress:
 --> Not started : 3, colour 'white', font 'bold'
 
-Changing GUI status to: 'TextTest started at 12Jan17:36:37.'
+Changing GUI status to: 'TextTest started at 12Jan17:34:46.'
 
 Waiting for application event 'test Basic to start' to occur.
 Redrawing test Basic coloured yellow
@@ -76,35 +76,69 @@ Viewing action with title '_Update Info'
 Tabs showing : Text Info, Viewing, Saving
 
 ---------- Text Info Window ----------
-Running on forestville
+Running on tilin
 --------------------------------------
 
 Tabs showing : Test, Selection
 
-'select file' event created with arguments 'output.sleep'
-Following file /users/geoff/texttesttmp/texttest.12Jan173624/TestSelf/RunningTests/GUI/ViewRunningTest/texttesttmp/sleep.12Jan173637/Basic/output.sleep using 'tail -f'
-
-'view sub-options for test :' event created with arguments 'Viewing'
-
-Viewing notebook page for 'Viewing'
-Viewing check button for switch 'Follow file rather than view it' (checked)
-
-'uncheck follow file rather than view it' event created with arguments ''
-
-'select file' event created with arguments 'output.sleep'
-Viewing file /users/geoff/texttesttmp/texttest.12Jan173624/TestSelf/RunningTests/GUI/ViewRunningTest/texttesttmp/sleep.12Jan173637/Basic/output.sleep using 'emacs', refresh set to 0
-
-'set test selection to' event created with arguments 'Basic'
+Waiting for application event 'test Basic to complete' to occur.
+Waiting for application event 'test Basic2 to start' to occur.
 
 ---------- Text Info Window ----------
-Running on forestville
+Test FAILED :
+------------------ Differences in output --------------------
+1c1
+< Sleeping for 1000 seconds...
+---
+> Sleeping for 5 seconds...
 --------------------------------------
+Redrawing test Basic coloured red
+(Second column 'output different' coloured red)
 
-'view sub-options for test :' event created with arguments 'Viewing'
+Setting file-view title to 'Basic'
+Adding file errors.sleep under heading 'Comparison Files', coloured green
+Adding file output.sleep under heading 'Comparison Files', coloured red
 
-Viewing notebook page for 'Viewing'
-Viewing check button for switch 'Follow file rather than view it'
+Progress bar set to fraction 0.333333333333, text '1 of 3 tests completed (1 tests failed)'
+Redrawing test Basic2 coloured yellow
+Expected application event 'test Basic to complete' occurred, proceeding.
+Expected application event 'test Basic2 to start' occurred, proceeding.
+
+'set file selection to' event created with arguments 'errors.sleep'
+
+Waiting for application event 'test Basic2 to complete' to occur.
+Waiting for application event 'test Basic3 to start' to occur.
+Redrawing test Basic2 coloured green
+
+Progress bar set to fraction 0.666666666667, text '2 of 3 tests completed (1 tests failed)'
+Hiding test : SLEEP test-case Basic2
+
+Test column header set to 'Tests: 1/3 selected, 1 hidden'
+Setting sensitivity of button '_Update Info' to False
+Redrawing test Basic3 coloured yellow
+Expected application event 'test Basic2 to complete' occurred, proceeding.
+Expected application event 'test Basic3 to start' occurred, proceeding.
+
+'save results for selected tests' event created with arguments ''
+
+Changing GUI status to: 'Saving 1 tests ...'
+Saving SLEEP test-case Basic  - version , exactness 1, only errors.sleep
+
+---------- Text Info Window ----------
+Test FAILED :
+------------------ Differences in output --------------------
+1c1
+< Sleeping for 1000 seconds...
+---
+> Sleeping for 5 seconds...
+--------------------------------------
+Redrawing test Basic coloured red
+(Second column 'output different' coloured red)
+
+Setting file-view title to 'Basic'
+Adding file errors.sleep under heading 'Comparison Files', coloured green
+Adding file output.sleep under heading 'Comparison Files', coloured red
+
+Changing GUI status to: 'Saved 1 tests.'
 
 'quit' event created with arguments ''
-Killing 'tail' interactive process
-Killing 'emacs' interactive process
