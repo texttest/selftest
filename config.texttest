@@ -227,14 +227,12 @@ link_test_path:smtplib.py
 link_test_path:shutil.py
 # pick a name for any config modules we might write...
 link_test_path:customconfig.py
-# Mock version of core-file finder
-link_test_path:gdb
-link_test_path:interpretcore.py
 
 collect_traffic:bugcli
 collect_traffic:time
 collect_traffic:rsh
 collect_traffic:xdpyinfo
+collect_traffic:interpretcore.py
 
 [collect_traffic_environment]
 time:TEXTTEST_HOME
