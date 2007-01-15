@@ -175,6 +175,9 @@ traffic:[^/]*[0-9][0-9][A-Z][a-z][a-z][0-9][0-9][0-9][0-9][0-9][0-9]{REPLACE <ta
 
 [unordered_text]
 gui_log:Dynamic run failed{LINES 3}
+traffic:xclock
+traffic:xterm
+traffic:Xvfb
 [end]
 
 [failure_severity]
@@ -227,16 +230,11 @@ link_test_path:customconfig.py
 # Mock version of core-file finder
 link_test_path:gdb
 link_test_path:interpretcore.py
-# And a bunch of stuff for virtual displays...
-link_test_path:rsh
-link_test_path:ps
-link_test_path:xterm
-link_test_path:Xvfb
-link_test_path:xclock
-link_test_path:xdpyinfo
 
 collect_traffic:bugcli
 collect_traffic:time
+collect_traffic:rsh
+collect_traffic:xdpyinfo
 
 [collect_traffic_environment]
 time:TEXTTEST_HOME

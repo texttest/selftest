@@ -1,0 +1,7 @@
+<-CMD:rsh stupid_machine1 "ps -efl | grep Xvfb | grep -v grep"
+->OUT:No processes!
+<-CMD:rsh stupid_machine2 "ps -efl | grep Xvfb | grep -v grep"
+->OUT:No processes!
+<-CMD:rsh stupid_machine1 "Xvfb :42 > /dev/null 2>&1 &"
+<-CMD:rsh stupid_machine1 "xclock -display stupid_machine1:42.0 > /dev/null 2>&1 &"
+<-CMD:rsh stupid_machine1 "xterm -display stupid_machine1:42.0 -e xhost + > /dev/null 2>&1 &"
