@@ -16,9 +16,6 @@ create_catalogues:true
 
 lines_of_crc_compile:5000
 
-virtual_display_machine:fougamou
-virtual_display_machine:singleton
-
 [rave_name]
 default:gpc
 Pac:apc
