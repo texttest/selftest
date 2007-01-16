@@ -1,0 +1,149 @@
+Top Window title is TextTest static GUI : management of tests for DIP
+Default widget is <type 'gtk.TreeView'>
+Setting window width to 60% of screen.
+Setting window height to 83% of screen.
+
+Viewing toggle action with title '_Toolbar'
+Viewing toggle action with title '_Shortcut bar'
+Viewing toggle action with title '_Status bar'
+Viewing action with title '_Quit', stock id ''gtk-quit'', accelerator ''<control>q''
+Viewing action with title '_Select', stock id ''gtk-refresh'', accelerator ''<control>s''
+Viewing action with title '_Run', stock id ''gtk-execute'', accelerator ''<control>r'' (greyed out)
+Viewing action with title 'R_eset', stock id ''gtk-revert-to-saved'', accelerator ''<control>e''
+Viewing action with title 'Remove...', stock id ''gtk-delete'' (greyed out)
+
+UI layout: 
+<ui>
+  <menubar name="MainMenuBar">
+    <menu name="filemenu" action="filemenu">
+      <menuitem name="Quit" action="Quit"/>
+    </menu>
+    <menu name="editmenu" action="editmenu">
+      <menuitem name="Remove..." action="Remove..."/>
+    </menu>
+    <menu name="viewmenu" action="viewmenu">
+      <menuitem name="Toolbar" action="Toolbar"/>
+      <menuitem name="Shortcut bar" action="Shortcut bar"/>
+      <menuitem name="Status bar" action="Status bar"/>
+    </menu>
+    <menu name="actionsmenu" action="actionsmenu">
+      <menuitem name="Select" action="Select"/>
+      <menuitem name="Run" action="Run"/>
+      <menuitem name="Reset" action="Reset"/>
+    </menu>
+  </menubar>
+  <toolbar name="MainToolBar">
+    <toolitem name="Quit" action="Quit"/>
+    <separator/>
+    <toolitem name="Select" action="Select"/>
+    <toolitem name="Run" action="Run"/>
+    <toolitem name="Reset" action="Reset"/>
+    <separator/>
+    <toolitem name="Remove..." action="Remove..."/>
+    <separator/>
+  </toolbar>
+  <popup name="TestPopupMenu">
+    <menuitem name="Remove..." action="Remove..."/>
+    <separator/>
+  </popup>
+</ui>
+
+Test Tree description...
+-> TargetApp (dip)
+->   Game9952
+->     S01.99
+->     A01
+->     S02
+->     A02
+->     S03
+->     A03
+->     S04
+->     A04
+->     S05
+->     A05
+->   npstIII
+->     Game47
+->       S01
+
+Test column header set to 'Tests: 0/11 selected'
+
+Pane separator positioned 50% from the left edge
+
+Tabs showing : Selection, Config
+
+Tabs showing : Select Tests
+
+Viewing notebook page for 'Select Tests'
+Viewing entry for option 'Tests for version' (drop-down list containing ['', '<default>'])
+Viewing entry for option 'Test names containing'
+Viewing entry for option 'Tests listed in file' (drop-down list containing ['', 'failures.dip', 'metafail.dip', 'versioned.dip.a03', 'versioned.dip.s03'])
+Viewing entry for option 'Suite names containing'
+Viewing entry for option 'Result files containing'
+Viewing entry for option 'Result file to search' (set to 'output')
+Viewing entry for option 'Execution time'
+Viewing check button for switch 'Select in collapsed suites'
+Viewing radio button for switch 'Current selection:', options Discard/Refine/Extend/Exclude'. Default value 0.
+Viewing action with title '_Select'
+
+Changing GUI status to: 'TextTest started at 16Jan14:35:17.'
+
+'enter test names containing =' event created with arguments '4'
+
+'select indicated tests from tab' event created with arguments ''
+
+Changing GUI status to: 'Selecting tests ...'
+Selected 2 out of a possible 11
+Marking 2 tests as selected
+
+Test column header set to 'Tests: 2/11 selected'
+Setting sensitivity of button '_Run' to True
+Setting sensitivity of button 'Remove...' to True
+
+Tabs showing : Selection, Running, Config
+
+Tabs showing : Select Tests, Saving
+
+Changing GUI status to: 'Selected 2 tests.'
+
+'view sub-options for selection :' event created with arguments 'Saving'
+
+Viewing notebook page for 'Saving'
+Viewing entry for option 'Name to give selection'
+Viewing check button for switch 'Store actual tests selected' (checked)
+Viewing action with title 'S_ave selection'
+
+'enter name to give selection =' event created with arguments 'four'
+
+'uncheck store actual tests selected' event created with arguments ''
+
+'save selected tests in file' event created with arguments ''
+
+Changing GUI status to: 'Saved 2 tests in file '/users/geoff/texttesttmp/texttest.16Jan143512/GUI/StaticGUI/Selection/LoadCriteriaSelection/TargetApp/filter_files/four'.'
+
+'view sub-options for selection :' event created with arguments 'Select Tests'
+
+Viewing notebook page for 'Select Tests'
+Viewing entry for option 'Tests for version' (drop-down list containing ['', '<default>'])
+Viewing entry for option 'Test names containing' (set to '4')
+Viewing entry for option 'Tests listed in file' (drop-down list containing ['', 'failures.dip', 'metafail.dip', 'versioned.dip.a03', 'versioned.dip.s03', 'four'])
+Viewing entry for option 'Suite names containing'
+Viewing entry for option 'Result files containing'
+Viewing entry for option 'Result file to search' (set to 'output')
+Viewing entry for option 'Execution time'
+Viewing check button for switch 'Select in collapsed suites'
+Viewing radio button for switch 'Current selection:', options Discard/Refine/Extend/Exclude'. Default value 0.
+Viewing action with title '_Select'
+
+'enter test names containing =' event created with arguments ''
+
+'enter tests listed in file =' event created with arguments 'four'
+
+'select indicated tests from tab' event created with arguments ''
+
+Changing GUI status to: 'Selecting tests ...'
+Selected 2 out of a possible 11
+Marking 2 tests as selected
+
+Changing GUI status to: 'Selected 2 tests.'
+
+'quit' event created with arguments ''
