@@ -1,0 +1,58 @@
+<-CMD:rsh abbeville "gmake  -C /carm/proj/texttest/selftest_data/fake_source_fails/Optimization/APC"
+->OUT:gmake: Entering directory `/nfs/vm/texttest/selftest_data/fake_source_fails/Optimization/APC'
+env
+KCC_LICENSE=CXP-1942-XLK-230732-87520
+SHELL=/bin/sh
+SUPPORTED=en_US.UTF-8:en_US:en:en_US.UTF-8:en_US:en:cs_CZ.UTF-8:cs_CZ:cs:da_DK.UTF-8:da_DK:da:nl_NL.UTF-8:nl_NL:nl:fr_FR.UTF-8:fr_FR:fr:de_DE.UTF-8:de_DE:de:is_IS.UTF-8:is_IS:is:it_IT.UTF-8:it_IT:it:en_US.UTF-8:en_US:en:en_US.UTF-8:en_US:en:en_US.UTF-8:en_US:en:pt_PT.UTF-8:pt_PT:pt:en_US.UTF-8:en_US:en:sl_SI.UTF-8:sl_SI:sl:es_ES.UTF-8:es_ES:es:sv_SE.UTF-8:sv_SE:sv:uk_UA.UTF-8:uk_UA:uk
+ILOG_LICENSE_FILE=/carm/ilog/ilm/access.ilm
+LSF_RAVE_VERSION_RESOURCE=YES
+REMOTEUSER=geoff
+MACHTYPE=i386
+LESSOPEN=|/usr/bin/lesspipe.sh %s
+PATH=/users/geoff/work/master/ImakeConfig/Utilities:/users/geoff/work/master/Testing/Automatic/matador/analysis/:/usr/local/share/sge/bin/lx24-x86:/usr/local/bin:/usr/local/sbin:/usr/kerberos/bin:/usr/bin:/bin:/usr/X11R6/bin:/usr/sbin:/sbin:/carm/rational/releases/PurifyPlus.7.0.0.0-002.I/i386_linux2/bin:.:/users/johana/bin/i386_linux/bin
+TEXTTEST_HOME=/users/geoff/work/master/Testing/Automatic/
+SGE_ROOT=/usr/local/share/sge
+LIBRARY_PATH=/usr/local/lib-gcc3.4.6
+VENDOR=intel
+CARMSITE=/usr/local/share/carmen
+LS_COLORS=
+LPDEST=loft_ps
+PWD=/users/geoff
+G_BROKEN_FILENAMES=1
+MANPATH=/usr/local/share/sge/man::/carm/rational/releases/purify.i386_linux2.7.0.0.0-002.I/man:/carm/rational/releases/quantify.i386_linux2.7.0.0.0-002.I/man
+HOME=/users/geoff
+LD_LIBRARY_PATH=/usr/local/share/sge/lib/lx24-x86:/usr/local/lib-gcc3.4.6:/usr/local/lib-gcc2.96
+QUANTIFYOPTIONS=-record-register-window-traps=yes -measure-timed-calls=user+system
+LOGNAME=geoff
+SGE_CELL=default
+PRINTER=loft_ps
+HOSTNAME=abbeville
+SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+OSTYPE=linux
+SHLVL=1
+USER=geoff
+REMOTEHOST=192.168.99.28
+PYTHONPATH=/usr/local/share/python
+MAKEFLAGS=w
+MFLAGS=-w
+MAIL=/var/spool/mail/geoff
+KDEDIR=/usr
+HOSTTYPE=i386-linux
+GROUP=carm
+NNTPSERVER=news
+LANG=en_US
+HOST=abbeville
+MAKELEVEL=1
+echo "Normal version"
+Normal version
+gmake: Leaving directory `/nfs/vm/texttest/selftest_data/fake_source_fails/Optimization/APC'
+<-CMD:rsh abbeville "gmake install CARMSYS=/carm/proj/texttest/selftest_data/fake_source_fails/CARMSYS -C /carm/proj/texttest/selftest_data/fake_source_fails/Optimization/APC"
+->OUT:gmake: Entering directory `/nfs/vm/texttest/selftest_data/fake_source_fails/Optimization/APC'
+gmake: Leaving directory `/nfs/vm/texttest/selftest_data/fake_source_fails/Optimization/APC'
+->ERR:gmake: *** No rule to make target `install'.  Stop.
+<-CMD:env 'CARMSYS=/carm/proj/texttest/selftest_data/fake_source_fails/CARMSYS' 'CARMUSR=/carm/proj/texttest/selftest_data/CARMUSRs/Spiel_user' 'CARMTMP=/carm/proj/texttest/selftest_data/fake_source_fails/CARMSYS/Spielscripts_tmp.apc' crc_compile -apc -optimize -archs i386_linux /carm/proj/texttest/selftest_data/CARMUSRs/Spiel_user/crc/source/umlauf_spiel
+->OUT:Build Rave program umlauf_spiel started on circleville, 17 January 11:15
+->ERR:crc_compile: cannot access directory
+/carm/proj/texttest/selftest_data/fake_source_fails/CARMSYS/data/crc/APC
+(value of resource apc.RaveCompile.ApplicationIncludeDir)
+->EXC:1

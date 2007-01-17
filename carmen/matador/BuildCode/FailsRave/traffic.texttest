@@ -1,0 +1,14 @@
+<-CMD:rsh abbeville "gmake  -C /carm/proj/texttest/selftest_data/fake_source_fails/Rules_and_Reports"
+->OUT:gmake: Entering directory `/nfs/vm/texttest/selftest_data/fake_source_fails/Rules_and_Reports'
+g++ -c fake.cc 
+gmake: Leaving directory `/nfs/vm/texttest/selftest_data/fake_source_fails/Rules_and_Reports'
+->ERR:fake.cc: In function `int main()':
+fake.cc:3: error: expected primary-expression before '?' token
+fake.cc:3: error: expected primary-expression before '?' token
+fake.cc:3: error: expected primary-expression before "return"
+fake.cc:3: error: expected `:' before "return"
+fake.cc:3: error: expected primary-expression before "return"
+fake.cc:3: error: expected `:' before "return"
+fake.cc:3: error: expected primary-expression before "return"
+fake.cc:3: error: expected `;' before "return"
+gmake: *** [all] Error 1
