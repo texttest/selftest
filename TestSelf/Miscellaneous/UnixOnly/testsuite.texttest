@@ -1,6 +1,3 @@
-# Ordered list of tests in test suite. Add as appropriate
-
-
 # Check we can connect to and run an Xvfb server...
 UseVirtualDisplay
 
@@ -21,3 +18,9 @@ AllMachinesBlocked
 
 # Check we do sensible things when one of the machines is down
 MachineDown
+
+# Don't look for virtual displays when running scripts!
+CountTests
+
+# Check we don't recheck Xvfb server with extra_version...
+ExtraVersion
