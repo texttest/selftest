@@ -220,12 +220,12 @@ test_data_ignore:*pyc
 # List of constant input files to create links to. Will copy them on Windows as symbolic links
 # don't exist.
 link_test_path:personaldir
-link_test_path:gtk.py
-# Faking email send
-link_test_path:smtplib.py
-link_test_path:shutil.py
 # pick a name for any config modules we might write...
 link_test_path:customconfig.py
+# be able to block modules entirely
+link_test_path:gtk.py
+# Put method interceptions in here
+link_test_path:interceptor.py
 
 collect_traffic:bugcli
 collect_traffic:time

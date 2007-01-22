@@ -1,9 +1,6 @@
 
 import gtk, os
 
-def copyfile(src, dst):
-    pass
-
 def pixbuf_broken(icon):
     raise Exception, "Didn't like the look of image '" + os.path.basename(icon) + "'"
 
