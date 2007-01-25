@@ -11,12 +11,15 @@ Viewing action with title '_Select', stock id ''gtk-refresh'', accelerator ''<co
 Viewing action with title '_Run', stock id ''gtk-execute'', accelerator ''<control>r'' (greyed out)
 Viewing action with title 'R_eset', stock id ''gtk-revert-to-saved'', accelerator ''<control>e''
 Viewing action with title 'Remove...', stock id ''gtk-delete'' (greyed out)
+Viewing action with title 'S_ave Selection...', stock id ''gtk-save-as'', accelerator ''<control><shift>s'' (greyed out)
 Viewing action with title '_Plot Graph', stock id ''gtk-clear'', accelerator ''<control>p'' (greyed out)
 
 UI layout: 
 <ui>
   <menubar name="MainMenuBar">
     <menu name="filemenu" action="filemenu">
+      <menuitem name="Save Selection..." action="Save Selection..."/>
+      <separator/>
       <menuitem name="Quit" action="Quit"/>
     </menu>
     <menu name="editmenu" action="editmenu">
@@ -88,12 +91,10 @@ Pane separator positioned 50% from the left edge
 
 Tabs showing : Selection, Config
 
-Tabs showing : Select Tests
-
 Viewing notebook page for 'Select Tests'
 Viewing entry for option 'Tests for version' (drop-down list containing ['', '<default>', 'boost'])
 Viewing entry for option 'Test names containing'
-Viewing entry for option 'Tests listed in file' (drop-down list containing [''])
+Viewing entry for option 'Tests listed in file'
 Viewing entry for option 'Suite names containing'
 Viewing entry for option 'Result files containing'
 Viewing entry for option 'Result file to search' (set to 'status') (drop-down list containing ['error', 'script_errors', 'solution', 'status', 'warnings'])
@@ -103,7 +104,7 @@ Viewing check button for switch 'Select in collapsed suites'
 Viewing radio button for switch 'Current selection:', options Discard/Refine/Extend/Exclude'. Default value 0.
 Viewing action with title '_Select'
 
-Changing GUI status to: 'TextTest started at 17Jan17:49:39.'
+Changing GUI status to: 'TextTest started at 24Jan09:15:32.'
 
 'set test selection to' event created with arguments 'RD_lh_pac'
 Setting sensitivity of action 'Remove...' to True
@@ -166,6 +167,7 @@ Adding file rules under heading 'Subplan', coloured pale green
 Adding file LBA_MTV under heading 'Ruleset', coloured pale green
 Setting sensitivity of action 'CVS _Log' to True
 Setting sensitivity of action '_Run' to True
+Setting sensitivity of action 'S_ave Selection...' to True
 Setting sensitivity of action '_Plot Graph' to True
 
 Tabs showing : Test, Selection, Running, Config, Graph

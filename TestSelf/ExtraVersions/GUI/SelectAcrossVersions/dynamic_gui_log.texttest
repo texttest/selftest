@@ -1,4 +1,4 @@
-Top Window title is TextTest dynamic GUI (tests started at 23Jan12:21:14)
+Top Window title is TextTest dynamic GUI (tests started at 25Jan00:05:03)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -8,11 +8,14 @@ Viewing toggle action with title '_Shortcut bar'
 Viewing toggle action with title '_Status bar'
 Viewing action with title '_Quit', stock id ''gtk-quit'', accelerator ''<control>q''
 Viewing action with title '_Save', stock id ''gtk-save'', accelerator ''<control>s'' (greyed out)
+Viewing action with title 'S_ave Selection...', stock id ''gtk-save-as'', accelerator ''<control><shift>s'' (greyed out)
 
 UI layout: 
 <ui>
   <menubar name="MainMenuBar">
     <menu name="filemenu" action="filemenu">
+      <menuitem name="Save Selection..." action="Save Selection..."/>
+      <separator/>
       <menuitem name="Save" action="Save"/>
       <separator/>
       <menuitem name="Quit" action="Quit"/>
@@ -48,14 +51,12 @@ Test column header set to 'Tests: 0/5 selected, none hidden'
 
 Pane separator positioned 50% from the left edge
 
-Tabs showing : Selection
-
-Tabs showing : Select Tests
+Tabs showing : Status
 
 Test progress:
 --> Not started : 5, colour 'white', font 'bold'
 
-Changing GUI status to: 'TextTest started at 23Jan12:21:14.'
+Changing GUI status to: 'TextTest started at 25Jan00:05:03.'
 
 Waiting for application event 'completion of test actions' to occur.
 Redrawing test Common coloured yellow
@@ -124,7 +125,7 @@ Test progress:
 Redrawing test Common coloured green
 Redrawing suite TargetApp : second column 'All 1 tests successful' coloured green
 
-Progress bar set to fraction 1.0, text 'All 5 tests completed at 23Jan12:21:17'
+Progress bar set to fraction 1.0, text 'All 5 tests completed at 25Jan00:05:06'
 
 Test progress:
 --> Not started : 0, colour 'white', font ''
@@ -144,6 +145,7 @@ Test Tree description...
 
 Test column header set to 'Tests: 1/5 selected, none hidden'
 Setting sensitivity of action '_Save' to True
+Setting sensitivity of action 'S_ave Selection...' to True
 
 Setting file-view title to 'Common'
 Adding file errors.hello under heading 'Comparison Files', coloured green
@@ -157,7 +159,7 @@ Tabs showing : Text Info, Viewing, Saving
 Test succeeded
 --------------------------------------
 
-Tabs showing : Test, Selection
+Tabs showing : Test, Status
 
 'show test suite' event created with arguments 'TargetApp version extra1'
 
@@ -174,25 +176,12 @@ Test Tree description...
 Test column header set to 'Tests: 2/5 selected, none hidden'
 Setting file-view title to 'Sample from 2 tests'
 
-'view options for' event created with arguments 'Selection'
-
-Tabs showing : Select Tests, Saving
-
-Test progress:
---> Not started : 0, colour 'white', font ''
---> Running : 0, colour 'white', font ''
---> Succeeded : 5, colour 'green', font 'bold'
-
-'view sub-options for selection :' event created with arguments 'Saving'
-
-Viewing notebook page for 'Saving'
-Viewing entry for option 'Name to give selection'
-Viewing action with title 'S_ave selection'
-
-'enter name to give selection =' event created with arguments 'two'
-
 'save selected tests in file' event created with arguments ''
 
-Changing GUI status to: 'Saved 2 tests in file '/users/geoff/texttesttmp/texttest.23Jan122109/TestSelf/ExtraVersions/GUI/SelectAcrossVersions/texttesttmp/static_gui.hello.23Jan122112/temporary_filter_files/two'.'
+'choose to save in file' event created with arguments 'temporary_filter_files/two'
+
+'press save' event created with arguments ''
+
+Changing GUI status to: 'Saved 2 tests in file '/users/mattias/texttesttmp/texttest.25Jan000322/TestSelf/ExtraVersions/GUI/SelectAcrossVersions/texttesttmp/static_gui.hello.25Jan000502/temporary_filter_files/two'.'
 
 'quit' event created with arguments ''

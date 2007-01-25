@@ -11,6 +11,7 @@ Viewing action with title '_Select', stock id ''gtk-refresh'', accelerator ''<co
 Viewing action with title '_Run', stock id ''gtk-execute'', accelerator ''<control>r'' (greyed out)
 Viewing action with title 'R_eset', stock id ''gtk-revert-to-saved'', accelerator ''<control>e''
 Viewing action with title 'Remove...', stock id ''gtk-delete'' (greyed out)
+Viewing action with title 'S_ave Selection...', stock id ''gtk-save-as'', accelerator ''<control><shift>s'' (greyed out)
 Viewing action with title 'Create Performance Report...' (greyed out)
 Viewing action with title '_Plot Graph', stock id ''gtk-clear'', accelerator ''<control>p'' (greyed out)
 
@@ -18,6 +19,8 @@ UI layout:
 <ui>
   <menubar name="MainMenuBar">
     <menu name="filemenu" action="filemenu">
+      <menuitem name="Save Selection..." action="Save Selection..."/>
+      <separator/>
       <menuitem name="Quit" action="Quit"/>
     </menu>
     <menu name="editmenu" action="editmenu">
@@ -81,12 +84,10 @@ Pane separator positioned 50% from the left edge
 
 Tabs showing : Selection, Config
 
-Tabs showing : Select Tests
-
 Viewing notebook page for 'Select Tests'
 Viewing entry for option 'Tests for version' (drop-down list containing ['', '<default>'])
 Viewing entry for option 'Test names containing'
-Viewing entry for option 'Tests listed in file' (drop-down list containing [''])
+Viewing entry for option 'Tests listed in file'
 Viewing entry for option 'Suite names containing'
 Viewing entry for option 'Result files containing'
 Viewing entry for option 'Result file to search' (set to 'output') (drop-down list containing ['output', 'errors', 'catalogue', 'solution'])
@@ -122,7 +123,7 @@ Viewing check button for switch 'Subproblems'
 Viewing check button for switch 'TargetJuniorImprove'
 Viewing action with title '_Select'
 
-Changing GUI status to: 'TextTest started at 19Jan11:49:42.'
+Changing GUI status to: 'TextTest started at 24Jan09:15:08.'
 
 'set test selection to' event created with arguments 'CarmDataUser'
 Setting sensitivity of action 'Remove...' to True
@@ -171,6 +172,7 @@ Setting file-view title to 'BadSubplan'
 Adding file options.cas under heading 'Definition Files', coloured pale green
 Setting sensitivity of action 'CVS _Log' to True
 Setting sensitivity of action '_Run' to True
+Setting sensitivity of action 'S_ave Selection...' to True
 Setting sensitivity of action 'Create Performance Report...' to True
 Setting sensitivity of action '_Plot Graph' to True
 
@@ -222,7 +224,7 @@ Viewing action with title '_Run'
 
 Viewing notebook page for 'Advanced'
 Viewing entry for option 'Configure self-diagnostics from' (set to '/users/mattias/work/usable_texttest/Testing/Automatic/texttest')
-Viewing entry for option 'Write self-diagnostics to' (set to '/users/mattias/texttesttmp/texttest.carmen.19Jan114710/carmen/matador/StaticGUI/BadSubplan')
+Viewing entry for option 'Write self-diagnostics to' (set to '/users/mattias/texttesttmp/texttest.carmen.24Jan091210/carmen/matador/StaticGUI/BadSubplan')
 Viewing entry for option 'Run batch mode session'
 Viewing entry for option 'Request SGE resource'
 Viewing entry for option 'Request SGE queue' (drop-down list containing ['', 'short', 'normal', 'idle'])
@@ -265,7 +267,7 @@ Problems with illegal subchains
 
 'run selected tests' event created with arguments ''
 
-Changing GUI status to: 'Started 1 tests at 19Jan11:49:43.'
+Changing GUI status to: 'Started 1 tests at 24Jan09:15:10.'
 
 Waiting for application event 'dynamic GUI to be closed' to occur.
 
@@ -283,6 +285,6 @@ Adding file MAT_EUF_CC under heading 'Ruleset', coloured pale green
 Adding file matador_800restart under heading 'Script', coloured pale green
 Expected application event 'dynamic GUI to be closed' occurred, proceeding.
 
-Changing GUI status to: 'Done updating after dynamic run started at 19Jan11:49:43.'
+Changing GUI status to: 'Done updating after dynamic run started at 24Jan09:15:10.'
 
 'quit' event created with arguments ''

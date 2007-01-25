@@ -11,11 +11,14 @@ Viewing action with title '_Select', stock id ''gtk-refresh'', accelerator ''<co
 Viewing action with title '_Run', stock id ''gtk-execute'', accelerator ''<control>r'' (greyed out)
 Viewing action with title 'R_eset', stock id ''gtk-revert-to-saved'', accelerator ''<control>e''
 Viewing action with title 'Remove...', stock id ''gtk-delete'' (greyed out)
+Viewing action with title 'S_ave Selection...', stock id ''gtk-save-as'', accelerator ''<control><shift>s'' (greyed out)
 
 UI layout: 
 <ui>
   <menubar name="MainMenuBar">
     <menu name="filemenu" action="filemenu">
+      <menuitem name="Save Selection..." action="Save Selection..."/>
+      <separator/>
       <menuitem name="Quit" action="Quit"/>
     </menu>
     <menu name="editmenu" action="editmenu">
@@ -60,12 +63,10 @@ Pane separator positioned 50% from the left edge
 
 Tabs showing : Selection, Config
 
-Tabs showing : Select Tests
-
 Viewing notebook page for 'Select Tests'
 Viewing entry for option 'Tests for version' (drop-down list containing ['', '<default>'])
 Viewing entry for option 'Test names containing'
-Viewing entry for option 'Tests listed in file' (drop-down list containing [''])
+Viewing entry for option 'Tests listed in file'
 Viewing entry for option 'Suite names containing'
 Viewing entry for option 'Result files containing'
 Viewing entry for option 'Result file to search' (set to 'none') (drop-down list containing ['none', 'output', 'errors'])
@@ -74,13 +75,14 @@ Viewing check button for switch 'Select in collapsed suites'
 Viewing radio button for switch 'Current selection:', options Discard/Refine/Extend/Exclude'. Default value 0.
 Viewing action with title '_Select'
 
-Changing GUI status to: 'TextTest started at 17Jan11:25:14.'
+Changing GUI status to: 'TextTest started at 24Jan09:13:36.'
 
 'set test selection to' event created with arguments 'Test'
 
 Test column header set to 'Tests: 1/3 selected'
 Setting sensitivity of action '_Run' to True
 Setting sensitivity of action 'Remove...' to True
+Setting sensitivity of action 'S_ave Selection...' to True
 
 Setting file-view title to 'Test'
 Adding file errors.traffic under heading 'Standard Files', coloured pale green
@@ -108,8 +110,8 @@ Viewing action with title '_Run'
 'view sub-options for running :' event created with arguments 'Advanced'
 
 Viewing notebook page for 'Advanced'
-Viewing entry for option 'Configure self-diagnostics from' (set to '/users/geoff/work/master/Testing/Automatic/texttest')
-Viewing entry for option 'Write self-diagnostics to' (set to '/users/geoff/texttesttmp/texttest.17Jan112349/TestSelf/TrafficInterception/GUI/RecordCmdLine')
+Viewing entry for option 'Configure self-diagnostics from' (set to '/users/mattias/work/usable_texttest/Testing/Automatic/texttest')
+Viewing entry for option 'Write self-diagnostics to' (set to '/users/mattias/texttesttmp/texttest.24Jan091210/TestSelf/TrafficInterception/GUI/RecordCmdLine')
 Viewing entry for option 'Run batch mode session'
 Viewing check button for switch 'Enable self-diagnostics'
 Viewing check button for switch '(Re-)record command-line or client-server traffic'
@@ -120,13 +122,13 @@ Viewing action with title '_Run'
 
 'run selected tests' event created with arguments ''
 
-Changing GUI status to: 'Started 1 tests at 17Jan11:25:15.'
+Changing GUI status to: 'Started 1 tests at 24Jan09:13:37.'
 
 Waiting for application event 'dynamic GUI to be closed' to occur.
 
 Changing GUI status to: 'Updating files for TRAFFIC test-case Test           ...'
 Expected application event 'dynamic GUI to be closed' occurred, proceeding.
 
-Changing GUI status to: 'Done updating after dynamic run started at 17Jan11:25:15.'
+Changing GUI status to: 'Done updating after dynamic run started at 24Jan09:13:37.'
 
 'quit' event created with arguments ''

@@ -11,11 +11,14 @@ Viewing action with title '_Select', stock id ''gtk-refresh'', accelerator ''<co
 Viewing action with title '_Run', stock id ''gtk-execute'', accelerator ''<control>r'' (greyed out)
 Viewing action with title 'R_eset', stock id ''gtk-revert-to-saved'', accelerator ''<control>e''
 Viewing action with title 'Remove...', stock id ''gtk-delete'' (greyed out)
+Viewing action with title 'S_ave Selection...', stock id ''gtk-save-as'', accelerator ''<control><shift>s'' (greyed out)
 
 UI layout: 
 <ui>
   <menubar name="MainMenuBar">
     <menu name="filemenu" action="filemenu">
+      <menuitem name="Save Selection..." action="Save Selection..."/>
+      <separator/>
       <menuitem name="Quit" action="Quit"/>
     </menu>
     <menu name="editmenu" action="editmenu">
@@ -71,12 +74,10 @@ Pane separator positioned 50% from the left edge
 
 Tabs showing : Selection, Config
 
-Tabs showing : Select Tests
-
 Viewing notebook page for 'Select Tests'
 Viewing entry for option 'Tests for version' (drop-down list containing ['', '<default>'])
 Viewing entry for option 'Test names containing'
-Viewing entry for option 'Tests listed in file' (drop-down list containing ['', 'failures.dip', 'metafail.dip', 'versioned.dip.a03', 'versioned.dip.s03'])
+Viewing entry for option 'Tests listed in file'
 Viewing entry for option 'Suite names containing'
 Viewing entry for option 'Result files containing'
 Viewing entry for option 'Result file to search' (set to 'output')
@@ -85,7 +86,7 @@ Viewing check button for switch 'Select in collapsed suites'
 Viewing radio button for switch 'Current selection:', options Discard/Refine/Extend/Exclude'. Default value 0.
 Viewing action with title '_Select'
 
-Changing GUI status to: 'TextTest started at 12Jan16:41:58.'
+Changing GUI status to: 'TextTest started at 24Jan09:14:01.'
 
 'set test selection to' event created with arguments 'npstIII'
 Setting sensitivity of action 'Remove...' to True
@@ -160,7 +161,7 @@ Viewing entry for option 'Command line options'
 Viewing action with title 'Add Test'
 
 'select file' event created with arguments 'testsuite.dip'
-Viewing file /users/geoff/texttesttmp/texttest.12Jan163945/GUI/StaticGUI/Administration/AddSuite/TargetApp/npstIII/Game106/testsuite.dip using 'emacs', refresh set to 1
+Viewing file /users/mattias/texttesttmp/texttest.24Jan091210/GUI/StaticGUI/Administration/AddSuite/TargetApp/npstIII/Game106/testsuite.dip using 'emacs', refresh set to 1
 
 Terminating process that views and edits test files...
 Marking 1 tests as selected
@@ -200,6 +201,7 @@ Test column header set to 'Tests: 1/12 selected'
 
 Setting file-view title to 'S01new'
 Setting sensitivity of action '_Run' to True
+Setting sensitivity of action 'S_ave Selection...' to True
 
 Tabs showing : Test, Selection, Running, Config
 

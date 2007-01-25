@@ -11,11 +11,14 @@ Viewing action with title '_Select', stock id ''gtk-refresh'', accelerator ''<co
 Viewing action with title '_Run', stock id ''gtk-execute'', accelerator ''<control>r'' (greyed out)
 Viewing action with title 'R_eset', stock id ''gtk-revert-to-saved'', accelerator ''<control>e''
 Viewing action with title 'Remove...', stock id ''gtk-delete'' (greyed out)
+Viewing action with title 'S_ave Selection...', stock id ''gtk-save-as'', accelerator ''<control><shift>s'' (greyed out)
 
 UI layout: 
 <ui>
   <menubar name="MainMenuBar">
     <menu name="filemenu" action="filemenu">
+      <menuitem name="Save Selection..." action="Save Selection..."/>
+      <separator/>
       <menuitem name="Quit" action="Quit"/>
     </menu>
     <menu name="editmenu" action="editmenu">
@@ -57,12 +60,10 @@ Pane separator positioned 50% from the left edge
 
 Tabs showing : Selection, Config
 
-Tabs showing : Select Tests
-
 Viewing notebook page for 'Select Tests'
 Viewing entry for option 'Tests for version' (drop-down list containing ['', '<default>'])
 Viewing entry for option 'Test names containing'
-Viewing entry for option 'Tests listed in file' (drop-down list containing [''])
+Viewing entry for option 'Tests listed in file'
 Viewing entry for option 'Suite names containing'
 Viewing entry for option 'Result files containing'
 Viewing entry for option 'Result file to search' (set to 'output') (drop-down list containing ['output', 'errors'])
@@ -71,7 +72,7 @@ Viewing check button for switch 'Select in collapsed suites'
 Viewing radio button for switch 'Current selection:', options Discard/Refine/Extend/Exclude'. Default value 0.
 Viewing action with title '_Select'
 
-Changing GUI status to: 'TextTest started at 12Jan16:42:03.'
+Changing GUI status to: 'TextTest started at 24Jan09:14:09.'
 
 'set test selection to' event created with arguments 'TargetApp'
 Setting sensitivity of action 'Remove...' to True
@@ -115,6 +116,7 @@ Test column header set to 'Tests: All 1 selected'
 
 Setting file-view title to 'Test'
 Setting sensitivity of action '_Run' to True
+Setting sensitivity of action 'S_ave Selection...' to True
 
 Tabs showing : Test, Selection, Running, Config
 
@@ -141,13 +143,12 @@ Test column header set to 'Tests: 1/0 selected'
 Test column header set to 'Tests: All 0 selected'
 Setting sensitivity of action '_Run' to False
 Setting sensitivity of action 'Remove...' to False
-
-Tabs showing : Select Tests, Saving
+Setting sensitivity of action 'S_ave Selection...' to False
 
 Viewing notebook page for 'Select Tests'
 Viewing entry for option 'Tests for version' (drop-down list containing ['', '<default>'])
 Viewing entry for option 'Test names containing'
-Viewing entry for option 'Tests listed in file' (drop-down list containing [''])
+Viewing entry for option 'Tests listed in file'
 Viewing entry for option 'Suite names containing'
 Viewing entry for option 'Result files containing'
 Viewing entry for option 'Result file to search' (set to 'output') (drop-down list containing ['output', 'errors'])
@@ -157,8 +158,6 @@ Viewing radio button for switch 'Current selection:', options Discard/Refine/Ext
 Viewing action with title '_Select'
 
 Tabs showing : Selection, Config
-
-Tabs showing : Select Tests
 Removing test with path Test
 
 Changing GUI status to: 'Removed test(s) Test'

@@ -12,11 +12,14 @@ Viewing action with title '_Select', stock id ''gtk-refresh'', accelerator ''<co
 Viewing action with title '_Run', stock id ''gtk-execute'', accelerator ''<control>r'' (greyed out)
 Viewing action with title 'R_eset', stock id ''gtk-revert-to-saved'', accelerator ''<control>e''
 Viewing action with title 'Remove...', stock id ''gtk-delete'' (greyed out)
+Viewing action with title 'S_ave Selection...', stock id ''gtk-save-as'', accelerator ''<control><shift>s'' (greyed out)
 
 UI layout: 
 <ui>
   <menubar name="MainMenuBar">
     <menu name="filemenu" action="filemenu">
+      <menuitem name="Save Selection..." action="Save Selection..."/>
+      <separator/>
       <menuitem name="Quit" action="Quit"/>
     </menu>
     <menu name="editmenu" action="editmenu">
@@ -72,12 +75,10 @@ Pane separator positioned 50% from the left edge
 
 Tabs showing : Selection, Config
 
-Tabs showing : Select Tests
-
 Viewing notebook page for 'Select Tests'
 Viewing entry for option 'Tests for version' (drop-down list containing ['', '<default>'])
 Viewing entry for option 'Test names containing'
-Viewing entry for option 'Tests listed in file' (drop-down list containing ['', 'failures.dip', 'metafail.dip', 'versioned.dip.a03', 'versioned.dip.s03'])
+Viewing entry for option 'Tests listed in file'
 Viewing entry for option 'Suite names containing'
 Viewing entry for option 'Result files containing'
 Viewing entry for option 'Result file to search' (set to 'output')
@@ -86,7 +87,7 @@ Viewing check button for switch 'Select in collapsed suites'
 Viewing radio button for switch 'Current selection:', options Discard/Refine/Extend/Exclude'. Default value 0.
 Viewing action with title '_Select'
 
-Changing GUI status to: 'TextTest started at 10Jan17:24:01.'
+Changing GUI status to: 'TextTest started at 24Jan09:14:20.'
 
 'view options for' event created with arguments 'Config'
 
@@ -97,7 +98,7 @@ Adding file config.dip under heading 'Files for DIP', coloured purple
 Adding file config.dip.batch under heading 'Files for DIP', coloured purple
 
 'select application file' event created with arguments '.texttest'
-Viewing file /users/geoff/texttesttmp/texttest.10Jan172209/GUI/StaticGUI/Miscellaneous/ViewPersonalFiles/personaldir/.texttest using 'emacs', refresh set to 0
+Viewing file /users/mattias/texttesttmp/texttest.24Jan091210/GUI/StaticGUI/Miscellaneous/ViewPersonalFiles/personaldir/.texttest using 'emacs', refresh set to 0
 
 Terminating process that views and edits test files...
 

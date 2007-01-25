@@ -11,11 +11,14 @@ Viewing action with title '_Select', stock id ''gtk-refresh'', accelerator ''<co
 Viewing action with title '_Run', stock id ''gtk-execute'', accelerator ''<control>r'' (greyed out)
 Viewing action with title 'R_eset', stock id ''gtk-revert-to-saved'', accelerator ''<control>e''
 Viewing action with title 'Remove...', stock id ''gtk-delete'' (greyed out)
+Viewing action with title 'S_ave Selection...', stock id ''gtk-save-as'', accelerator ''<control><shift>s'' (greyed out)
 
 UI layout: 
 <ui>
   <menubar name="MainMenuBar">
     <menu name="filemenu" action="filemenu">
+      <menuitem name="Save Selection..." action="Save Selection..."/>
+      <separator/>
       <menuitem name="Quit" action="Quit"/>
     </menu>
     <menu name="editmenu" action="editmenu">
@@ -71,12 +74,10 @@ Pane separator positioned 50% from the left edge
 
 Tabs showing : Selection, Config
 
-Tabs showing : Select Tests
-
 Viewing notebook page for 'Select Tests'
 Viewing entry for option 'Tests for version' (drop-down list containing ['', '<default>'])
 Viewing entry for option 'Test names containing'
-Viewing entry for option 'Tests listed in file' (drop-down list containing ['', 'failures.dip', 'metafail.dip', 'versioned.dip.a03', 'versioned.dip.s03'])
+Viewing entry for option 'Tests listed in file'
 Viewing entry for option 'Suite names containing'
 Viewing entry for option 'Result files containing'
 Viewing entry for option 'Result file to search' (set to 'output')
@@ -85,13 +86,14 @@ Viewing check button for switch 'Select in collapsed suites'
 Viewing radio button for switch 'Current selection:', options Discard/Refine/Extend/Exclude'. Default value 0.
 Viewing action with title '_Select'
 
-Changing GUI status to: 'TextTest started at 12Jan16:42:09.'
+Changing GUI status to: 'TextTest started at 24Jan09:14:16.'
 
 'set test selection to' event created with arguments 'A02'
 
 Test column header set to 'Tests: 1/11 selected'
 Setting sensitivity of action '_Run' to True
 Setting sensitivity of action 'Remove...' to True
+Setting sensitivity of action 'S_ave Selection...' to True
 
 Setting file-view title to 'A02'
 Adding file output.dip under heading 'Standard Files', coloured pale green
@@ -112,14 +114,14 @@ Tabs showing : Basic, Advanced, Reconnect
 
 Viewing notebook page for 'Basic'
 Viewing entry for option 'Run this version'
-Viewing entry for option 'Use checkout' (set to '/users/geoff/texttesttmp/texttest.12Jan163945/GUI/StaticGUI/Resetting/PageRemoval/TargetApp/CodeNoFailures')
+Viewing entry for option 'Use checkout' (set to '/users/mattias/texttesttmp/texttest.24Jan091210/GUI/StaticGUI/Resetting/PageRemoval/TargetApp/CodeNoFailures')
 Viewing action with title '_Run'
 
 'view sub-options for running :' event created with arguments 'Reconnect'
 
 Viewing notebook page for 'Reconnect'
 Viewing entry for option 'Version to reconnect to'
-Viewing entry for option 'Temporary result directory' (set to '/users/geoff/texttesttmp/texttest.12Jan163945/GUI/StaticGUI/Resetting/PageRemoval/texttesttmp')
+Viewing entry for option 'Temporary result directory' (set to '/users/mattias/texttesttmp/texttest.24Jan091210/GUI/StaticGUI/Resetting/PageRemoval/texttesttmp')
 Viewing radio button for switch 'Results:', options Display as they were/Recompute from files'. Default value 0.
 Viewing action with title 'Re_connect'
 
@@ -129,6 +131,7 @@ Viewing action with title 'Re_connect'
 
 Test column header set to 'Tests: 0/11 selected'
 Setting sensitivity of action '_Run' to False
+Setting sensitivity of action 'S_ave Selection...' to False
 
 Setting file-view title to 'Game9952'
 Adding file testsuite.dip under heading 'Definition Files', coloured pale green
@@ -159,6 +162,7 @@ Adding file input.dip under heading 'Definition Files', coloured pale green
 Nice dislodgements!
 --------------------------------------
 Setting sensitivity of action '_Run' to True
+Setting sensitivity of action 'S_ave Selection...' to True
 
 Tabs showing : Test, Selection, Running, Config
 
@@ -170,7 +174,7 @@ Tabs showing : Basic, Advanced, Reconnect
 
 Viewing notebook page for 'Reconnect'
 Viewing entry for option 'Version to reconnect to'
-Viewing entry for option 'Temporary result directory' (set to '/users/geoff/texttesttmp/texttest.12Jan163945/GUI/StaticGUI/Resetting/PageRemoval/texttesttmp')
+Viewing entry for option 'Temporary result directory' (set to '/users/mattias/texttesttmp/texttest.24Jan091210/GUI/StaticGUI/Resetting/PageRemoval/texttesttmp')
 Viewing radio button for switch 'Results:', options Display as they were/Recompute from files'. Default value 1.
 Viewing action with title 'Re_connect'
 
@@ -178,7 +182,7 @@ Viewing action with title 'Re_connect'
 
 Viewing notebook page for 'Reconnect'
 Viewing entry for option 'Version to reconnect to'
-Viewing entry for option 'Temporary result directory' (set to '/users/geoff/texttesttmp/texttest.12Jan163945/GUI/StaticGUI/Resetting/PageRemoval/texttesttmp')
+Viewing entry for option 'Temporary result directory' (set to '/users/mattias/texttesttmp/texttest.24Jan091210/GUI/StaticGUI/Resetting/PageRemoval/texttesttmp')
 Viewing radio button for switch 'Results:', options Display as they were/Recompute from files'. Default value 0.
 Viewing action with title 'Re_connect'
 

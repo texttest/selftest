@@ -11,11 +11,14 @@ Viewing action with title '_Select', stock id ''gtk-refresh'', accelerator ''<co
 Viewing action with title '_Run', stock id ''gtk-execute'', accelerator ''<control>r'' (greyed out)
 Viewing action with title 'R_eset', stock id ''gtk-revert-to-saved'', accelerator ''<control>e''
 Viewing action with title 'Remove...', stock id ''gtk-delete'' (greyed out)
+Viewing action with title 'S_ave Selection...', stock id ''gtk-save-as'', accelerator ''<control><shift>s'' (greyed out)
 
 UI layout: 
 <ui>
   <menubar name="MainMenuBar">
     <menu name="filemenu" action="filemenu">
+      <menuitem name="Save Selection..." action="Save Selection..."/>
+      <separator/>
       <menuitem name="Quit" action="Quit"/>
     </menu>
     <menu name="editmenu" action="editmenu">
@@ -71,12 +74,10 @@ Pane separator positioned 50% from the left edge
 
 Tabs showing : Selection, Config
 
-Tabs showing : Select Tests
-
 Viewing notebook page for 'Select Tests'
 Viewing entry for option 'Tests for version' (drop-down list containing ['', '<default>'])
 Viewing entry for option 'Test names containing'
-Viewing entry for option 'Tests listed in file' (drop-down list containing ['', 'failures.dip', 'metafail.dip', 'versioned.dip.a03', 'versioned.dip.s03'])
+Viewing entry for option 'Tests listed in file'
 Viewing entry for option 'Suite names containing'
 Viewing entry for option 'Result files containing'
 Viewing entry for option 'Result file to search' (set to 'output')
@@ -85,7 +86,7 @@ Viewing check button for switch 'Select in collapsed suites'
 Viewing radio button for switch 'Current selection:', options Discard/Refine/Extend/Exclude'. Default value 0.
 Viewing action with title '_Select'
 
-Changing GUI status to: 'TextTest started at 16Jan14:35:17.'
+Changing GUI status to: 'TextTest started at 24Jan23:24:26.'
 
 'enter test names containing =' event created with arguments '4'
 
@@ -98,45 +99,25 @@ Marking 2 tests as selected
 Test column header set to 'Tests: 2/11 selected'
 Setting sensitivity of action '_Run' to True
 Setting sensitivity of action 'Remove...' to True
+Setting sensitivity of action 'S_ave Selection...' to True
 
 Tabs showing : Selection, Running, Config
 
-Tabs showing : Select Tests, Saving
-
 Changing GUI status to: 'Selected 2 tests.'
-
-'view sub-options for selection :' event created with arguments 'Saving'
-
-Viewing notebook page for 'Saving'
-Viewing entry for option 'Name to give selection'
-Viewing check button for switch 'Store actual tests selected' (checked)
-Viewing action with title 'S_ave selection'
-
-'enter name to give selection =' event created with arguments 'four'
-
-'uncheck store actual tests selected' event created with arguments ''
 
 'save selected tests in file' event created with arguments ''
 
-Changing GUI status to: 'Saved 2 tests in file '/users/geoff/texttesttmp/texttest.16Jan143512/GUI/StaticGUI/Selection/LoadCriteriaSelection/TargetApp/filter_files/four'.'
+'choose to save selection criteria' event created with arguments ''
 
-'view sub-options for selection :' event created with arguments 'Select Tests'
+'choose to save in file' event created with arguments 'filter_files/four'
 
-Viewing notebook page for 'Select Tests'
-Viewing entry for option 'Tests for version' (drop-down list containing ['', '<default>'])
-Viewing entry for option 'Test names containing' (set to '4')
-Viewing entry for option 'Tests listed in file' (drop-down list containing ['', 'failures.dip', 'metafail.dip', 'versioned.dip.a03', 'versioned.dip.s03', 'four'])
-Viewing entry for option 'Suite names containing'
-Viewing entry for option 'Result files containing'
-Viewing entry for option 'Result file to search' (set to 'output')
-Viewing entry for option 'Execution time'
-Viewing check button for switch 'Select in collapsed suites'
-Viewing radio button for switch 'Current selection:', options Discard/Refine/Extend/Exclude'. Default value 0.
-Viewing action with title '_Select'
+'press save' event created with arguments ''
+
+Changing GUI status to: 'Saved 2 tests in file '/users/mattias/texttesttmp/texttest.24Jan232143/GUI/StaticGUI/Selection/LoadCriteriaSelection/TargetApp/filter_files/four'.'
 
 'enter test names containing =' event created with arguments ''
 
-'enter tests listed in file =' event created with arguments 'four'
+'enter tests listed in file =' event created with arguments 'filter_files/four'
 
 'select indicated tests from tab' event created with arguments ''
 

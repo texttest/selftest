@@ -11,6 +11,7 @@ Viewing action with title '_Select', stock id ''gtk-refresh'', accelerator ''<co
 Viewing action with title '_Run', stock id ''gtk-execute'', accelerator ''<control>r'' (greyed out)
 Viewing action with title 'R_eset', stock id ''gtk-revert-to-saved'', accelerator ''<control>e''
 Viewing action with title 'Remove...', stock id ''gtk-delete'' (greyed out)
+Viewing action with title 'S_ave Selection...', stock id ''gtk-save-as'', accelerator ''<control><shift>s'' (greyed out)
 Viewing action with title 'Create Performance Report...' (greyed out)
 Viewing action with title '_Plot Graph', stock id ''gtk-clear'', accelerator ''<control>p'' (greyed out)
 
@@ -18,6 +19,8 @@ UI layout:
 <ui>
   <menubar name="MainMenuBar">
     <menu name="filemenu" action="filemenu">
+      <menuitem name="Save Selection..." action="Save Selection..."/>
+      <separator/>
       <menuitem name="Quit" action="Quit"/>
     </menu>
     <menu name="editmenu" action="editmenu">
@@ -81,12 +84,10 @@ Pane separator positioned 50% from the left edge
 
 Tabs showing : Selection, Config
 
-Tabs showing : Select Tests
-
 Viewing notebook page for 'Select Tests'
 Viewing entry for option 'Tests for version' (drop-down list containing ['', '<default>'])
 Viewing entry for option 'Test names containing'
-Viewing entry for option 'Tests listed in file' (drop-down list containing [''])
+Viewing entry for option 'Tests listed in file'
 Viewing entry for option 'Suite names containing'
 Viewing entry for option 'Result files containing'
 Viewing entry for option 'Result file to search' (set to 'output') (drop-down list containing ['output', 'errors', 'catalogue', 'solution'])
@@ -122,7 +123,7 @@ Viewing check button for switch 'Subproblems'
 Viewing check button for switch 'TargetJuniorImprove'
 Viewing action with title '_Select'
 
-Changing GUI status to: 'TextTest started at 19Jan11:49:45.'
+Changing GUI status to: 'TextTest started at 24Jan09:15:07.'
 
 'set test selection to' event created with arguments 'ArtificialUser'
 Setting sensitivity of action 'Remove...' to True
@@ -177,6 +178,7 @@ Adding file rules under heading 'Subplan', coloured pale green
 Adding file Matador_5 under heading 'Ruleset', coloured pale green
 Setting sensitivity of action 'CVS _Log' to True
 Setting sensitivity of action '_Run' to True
+Setting sensitivity of action 'S_ave Selection...' to True
 Setting sensitivity of action 'Create Performance Report...' to True
 Setting sensitivity of action '_Plot Graph' to True
 
@@ -243,7 +245,7 @@ From main test suite
 
 'run selected tests' event created with arguments ''
 
-Changing GUI status to: 'Started 1 tests at 19Jan11:49:47.'
+Changing GUI status to: 'Started 1 tests at 24Jan09:15:09.'
 
 Waiting for application event 'dynamic GUI to be closed' to occur.
 
@@ -255,6 +257,6 @@ Adding file rules under heading 'Subplan', coloured pale green
 Adding file Matador_5 under heading 'Ruleset', coloured pale green
 Expected application event 'dynamic GUI to be closed' occurred, proceeding.
 
-Changing GUI status to: 'Done updating after dynamic run started at 19Jan11:49:47.'
+Changing GUI status to: 'Done updating after dynamic run started at 24Jan09:15:09.'
 
 'quit' event created with arguments ''

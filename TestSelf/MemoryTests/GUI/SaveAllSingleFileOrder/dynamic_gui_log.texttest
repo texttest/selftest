@@ -1,4 +1,4 @@
-Top Window title is TextTest dynamic GUI (tests started at 12Jan16:04:36)
+Top Window title is TextTest dynamic GUI (tests started at 24Jan09:13:05)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -8,11 +8,14 @@ Viewing toggle action with title '_Shortcut bar'
 Viewing toggle action with title '_Status bar'
 Viewing action with title '_Quit', stock id ''gtk-quit'', accelerator ''<control>q''
 Viewing action with title '_Save', stock id ''gtk-save'', accelerator ''<control>s'' (greyed out)
+Viewing action with title 'S_ave Selection...', stock id ''gtk-save-as'', accelerator ''<control><shift>s'' (greyed out)
 
 UI layout: 
 <ui>
   <menubar name="MainMenuBar">
     <menu name="filemenu" action="filemenu">
+      <menuitem name="Save Selection..." action="Save Selection..."/>
+      <separator/>
       <menuitem name="Save" action="Save"/>
       <separator/>
       <menuitem name="Quit" action="Quit"/>
@@ -43,14 +46,12 @@ Test column header set to 'Tests: 0/2 selected, none hidden'
 
 Pane separator positioned 50% from the left edge
 
-Tabs showing : Selection
-
-Tabs showing : Select Tests
+Tabs showing : Status
 
 Test progress:
 --> Not started : 2, colour 'white', font 'bold'
 
-Changing GUI status to: 'TextTest started at 12Jan16:04:37.'
+Changing GUI status to: 'TextTest started at 24Jan09:13:06.'
 
 Waiting for application event 'completion of test actions' to occur.
 Redrawing test NoOutputFile coloured yellow
@@ -84,7 +85,7 @@ Test progress:
 Redrawing test NoMemFile coloured green
 (Second column 'memory new' coloured red)
 
-Progress bar set to fraction 1.0, text 'All 2 tests completed at 12Jan16:04:38 (2 tests failed)'
+Progress bar set to fraction 1.0, text 'All 2 tests completed at 24Jan09:13:09 (2 tests failed)'
 
 Test progress:
 --> Not started : 0, colour 'white', font ''
@@ -101,6 +102,7 @@ Expected application event 'completion of test actions' occurred, proceeding.
 
 Test column header set to 'Tests: 1/2 selected, none hidden'
 Setting sensitivity of action '_Save' to True
+Setting sensitivity of action 'S_ave Selection...' to True
 
 Setting file-view title to 'NoOutputFile'
 Adding file memory.mem under heading 'Comparison Files', coloured red
@@ -122,7 +124,7 @@ Test FAILED :
 Running Fake Memory Program...
 --------------------------------------
 
-Tabs showing : Test, Selection
+Tabs showing : Test, Status
 
 'set file selection to' event created with arguments 'output.mem'
 

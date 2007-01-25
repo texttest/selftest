@@ -1,4 +1,4 @@
-Top Window title is TextTest dynamic GUI (tests started at 12Jan16:04:42)
+Top Window title is TextTest dynamic GUI (tests started at 24Jan09:13:16)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -8,11 +8,14 @@ Viewing toggle action with title '_Shortcut bar'
 Viewing toggle action with title '_Status bar'
 Viewing action with title '_Quit', stock id ''gtk-quit'', accelerator ''<control>q''
 Viewing action with title '_Save', stock id ''gtk-save'', accelerator ''<control>s'' (greyed out)
+Viewing action with title 'S_ave Selection...', stock id ''gtk-save-as'', accelerator ''<control><shift>s'' (greyed out)
 
 UI layout: 
 <ui>
   <menubar name="MainMenuBar">
     <menu name="filemenu" action="filemenu">
+      <menuitem name="Save Selection..." action="Save Selection..."/>
+      <separator/>
       <menuitem name="Save" action="Save"/>
       <separator/>
       <menuitem name="Quit" action="Quit"/>
@@ -42,14 +45,12 @@ Test column header set to 'Tests: 0/1 selected, none hidden'
 
 Pane separator positioned 50% from the left edge
 
-Tabs showing : Selection
-
-Tabs showing : Select Tests
+Tabs showing : Status
 
 Test progress:
 --> Not started : 1, colour 'white', font 'bold'
 
-Changing GUI status to: 'TextTest started at 12Jan16:04:42.'
+Changing GUI status to: 'TextTest started at 24Jan09:13:16.'
 
 Waiting for application event 'completion of test actions' to occur.
 Redrawing test GenerateNewFiles coloured yellow
@@ -60,7 +61,7 @@ Test progress:
 Redrawing test GenerateNewFiles coloured red
 (Second column 'created_1 new(+)' coloured red)
 
-Progress bar set to fraction 1.0, text 'All 1 tests completed at 12Jan16:04:43 (1 tests failed)'
+Progress bar set to fraction 1.0, text 'All 1 tests completed at 24Jan09:13:17 (1 tests failed)'
 
 Test progress:
 --> Not started : 0, colour 'white', font ''
@@ -77,6 +78,7 @@ Expected application event 'completion of test actions' occurred, proceeding.
 
 Test column header set to 'Tests: All 1 selected, none hidden'
 Setting sensitivity of action '_Save' to True
+Setting sensitivity of action 'S_ave Selection...' to True
 
 Setting file-view title to 'GenerateNewFiles'
 Adding file generated_first.gen under heading 'Comparison Files', coloured green
@@ -113,10 +115,10 @@ Generating created_1.dump
 Generating created_2.dump
 --------------------------------------
 
-Tabs showing : Test, Selection
+Tabs showing : Test, Status
 
 'select file' event created with arguments 'catalogue.gen'
-Viewing file /users/geoff/texttesttmp/texttest.12Jan160420/TestSelf/CollateFiles/PatternMatching/GUI/ViewAndSave/texttesttmp/gen.12Jan160442/GenerateNewFiles/framework_tmp/catalogue.gencmp using 'emacs', refresh set to 0
+Viewing file /users/mattias/texttesttmp/texttest.24Jan091210/TestSelf/CollateFiles/PatternMatching/GUI/ViewAndSave/texttesttmp/gen.24Jan091316/GenerateNewFiles/framework_tmp/catalogue.gencmp using 'emacs', refresh set to 0
 
 Terminating process that views and edits test files...
 
@@ -141,8 +143,7 @@ Redrawing suite TargetApp : second column 'All 1 tests successful' coloured gree
 
 Test column header set to 'Tests: 0/1 selected, none hidden'
 Setting sensitivity of action '_Save' to False
-
-Tabs showing : Select Tests, Saving
+Setting sensitivity of action 'S_ave Selection...' to False
 
 Test progress:
 --> Not started : 0, colour 'white', font ''
@@ -154,10 +155,8 @@ Test progress:
 ------> created_2 new : 1, colour 'red', font 'bold'
 ------> output missing : 1, colour 'red', font 'bold'
 
-Tabs showing : Selection
-
-Tabs showing : Select Tests
-Progress bar detected save, new text is 'All 1 tests completed at 12Jan16:04:43'
+Tabs showing : Status
+Progress bar detected save, new text is 'All 1 tests completed at 24Jan09:13:17'
 
 Test progress:
 --> Not started : 0, colour 'white', font ''

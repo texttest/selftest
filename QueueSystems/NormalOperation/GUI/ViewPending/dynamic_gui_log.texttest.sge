@@ -1,4 +1,4 @@
-Top Window title is TextTest dynamic GUI (tests started at 12Jan18:02:43)
+Top Window title is TextTest dynamic GUI (tests started at 24Jan09:14:29)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -8,11 +8,14 @@ Viewing toggle action with title '_Shortcut bar'
 Viewing toggle action with title '_Status bar'
 Viewing action with title '_Quit', stock id ''gtk-quit'', accelerator ''<control>q''
 Viewing action with title '_Save', stock id ''gtk-save'', accelerator ''<control>s'' (greyed out)
+Viewing action with title 'S_ave Selection...', stock id ''gtk-save-as'', accelerator ''<control><shift>s'' (greyed out)
 
 UI layout: 
 <ui>
   <menubar name="MainMenuBar">
     <menu name="filemenu" action="filemenu">
+      <menuitem name="Save Selection..." action="Save Selection..."/>
+      <separator/>
       <menuitem name="Save" action="Save"/>
       <separator/>
       <menuitem name="Quit" action="Quit"/>
@@ -42,14 +45,12 @@ Test column header set to 'Tests: 0/1 selected, none hidden'
 
 Pane separator positioned 50% from the left edge
 
-Tabs showing : Selection
-
-Tabs showing : Select Tests
+Tabs showing : Status
 
 Test progress:
 --> Not started : 1, colour 'white', font 'bold'
 
-Changing GUI status to: 'TextTest started at 12Jan18:02:44.'
+Changing GUI status to: 'TextTest started at 24Jan09:14:30.'
 
 Waiting for application event 'test Basic to become pending' to occur.
 Redrawing test Basic coloured white
@@ -64,6 +65,7 @@ Expected application event 'test Basic to become pending' occurred, proceeding.
 
 Test column header set to 'Tests: All 1 selected, none hidden'
 Setting sensitivity of action '_Save' to True
+Setting sensitivity of action 'S_ave Selection...' to True
 
 Setting file-view title to 'Basic'
 Adding file errors.sleep under heading 'Standard Files', coloured white
@@ -82,15 +84,15 @@ Tabs showing : Text Info, Viewing, Saving
 Job pending in SGE
 --------------------------------------
 
-Tabs showing : Test, Selection
+Tabs showing : Test, Status
 
 Waiting for application event 'completion of test actions' to occur.
 
 ---------- Text Info Window ----------
-Running on woodville
+Running on townsville
 --------------------------------------
 Redrawing test Basic coloured yellow
-(Second column 'RUN (woodville)' coloured yellow)
+(Second column 'RUN (townsville)' coloured yellow)
 
 Setting file-view title to 'Basic'
 Adding file errors.sleep under heading 'Temporary Files', coloured yellow
@@ -98,7 +100,7 @@ Adding file output.sleep under heading 'Temporary Files', coloured yellow
 Setting sensitivity of action '_Update Info' to True
 
 ---------- Text Info Window ----------
-Test succeeded on woodville
+Test succeeded on townsville
 --------------------------------------
 Redrawing test Basic coloured green
 Redrawing suite TargetApp : second column 'All 1 tests successful' coloured green
@@ -106,19 +108,16 @@ Redrawing suite TargetApp : second column 'All 1 tests successful' coloured gree
 Test column header set to 'Tests: 0/1 selected, none hidden'
 Setting sensitivity of action '_Update Info' to False
 Setting sensitivity of action '_Save' to False
-
-Tabs showing : Select Tests, Saving
+Setting sensitivity of action 'S_ave Selection...' to False
 
 Test progress:
 --> Not started : 0, colour 'white', font ''
 --> Pending : 0, colour 'white', font ''
 --> Running : 1, colour 'yellow', font 'bold'
 
-Tabs showing : Selection
+Tabs showing : Status
 
-Tabs showing : Select Tests
-
-Progress bar set to fraction 1.0, text 'All 1 tests completed at 12Jan18:02:54'
+Progress bar set to fraction 1.0, text 'All 1 tests completed at 24Jan09:14:41'
 
 Test progress:
 --> Not started : 0, colour 'white', font ''

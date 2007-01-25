@@ -11,11 +11,14 @@ Viewing action with title '_Select', stock id ''gtk-refresh'', accelerator ''<co
 Viewing action with title '_Run', stock id ''gtk-execute'', accelerator ''<control>r'' (greyed out)
 Viewing action with title 'R_eset', stock id ''gtk-revert-to-saved'', accelerator ''<control>e''
 Viewing action with title 'Remove...', stock id ''gtk-delete'' (greyed out)
+Viewing action with title 'S_ave Selection...', stock id ''gtk-save-as'', accelerator ''<control><shift>s'' (greyed out)
 
 UI layout: 
 <ui>
   <menubar name="MainMenuBar">
     <menu name="filemenu" action="filemenu">
+      <menuitem name="Save Selection..." action="Save Selection..."/>
+      <separator/>
       <menuitem name="Quit" action="Quit"/>
     </menu>
     <menu name="editmenu" action="editmenu">
@@ -57,12 +60,10 @@ Pane separator positioned 50% from the left edge
 
 Tabs showing : Selection, Config
 
-Tabs showing : Select Tests
-
 Viewing notebook page for 'Select Tests'
 Viewing entry for option 'Tests for version' (drop-down list containing ['', '<default>'])
 Viewing entry for option 'Test names containing'
-Viewing entry for option 'Tests listed in file' (drop-down list containing [''])
+Viewing entry for option 'Tests listed in file'
 Viewing entry for option 'Suite names containing'
 Viewing entry for option 'Result files containing'
 Viewing entry for option 'Result file to search' (set to 'output') (drop-down list containing ['output', 'errors'])
@@ -71,7 +72,7 @@ Viewing check button for switch 'Select in collapsed suites'
 Viewing radio button for switch 'Current selection:', options Discard/Refine/Extend/Exclude'. Default value 0.
 Viewing action with title '_Select'
 
-Changing GUI status to: 'TextTest started at 12Jan16:42:03.'
+Changing GUI status to: 'TextTest started at 24Jan23:10:40.'
 
 'set test selection to' event created with arguments 'TargetApp'
 Setting sensitivity of action 'Remove...' to True
@@ -115,6 +116,7 @@ Test column header set to 'Tests: All 1 selected'
 
 Setting file-view title to 't1'
 Setting sensitivity of action '_Run' to True
+Setting sensitivity of action 'S_ave Selection...' to True
 
 Tabs showing : Test, Selection, Running, Config
 
@@ -130,33 +132,12 @@ Test Tree description...
 
 Changing GUI status to: 'Added new HELLO test-case t1'
 
-'view options for' event created with arguments 'Selection'
-
-Tabs showing : Select Tests, Saving
-
-Viewing notebook page for 'Select Tests'
-Viewing entry for option 'Tests for version' (drop-down list containing ['', '<default>'])
-Viewing entry for option 'Test names containing'
-Viewing entry for option 'Tests listed in file' (drop-down list containing [''])
-Viewing entry for option 'Suite names containing'
-Viewing entry for option 'Result files containing'
-Viewing entry for option 'Result file to search' (set to 'output') (drop-down list containing ['output', 'errors'])
-Viewing entry for option 'Execution time'
-Viewing check button for switch 'Select in collapsed suites'
-Viewing radio button for switch 'Current selection:', options Discard/Refine/Extend/Exclude'. Default value 0.
-Viewing action with title '_Select'
-
-'view sub-options for selection :' event created with arguments 'Saving'
-
-Viewing notebook page for 'Saving'
-Viewing entry for option 'Name to give selection'
-Viewing check button for switch 'Store actual tests selected' (checked)
-Viewing action with title 'S_ave selection'
-
-'enter name to give selection =' event created with arguments 't1'
-
 'save selected tests in file' event created with arguments ''
 
-Changing GUI status to: 'Saved 1 tests in file '/users/geoff/texttesttmp/texttest.12Jan163945/GUI/StaticGUI/StartFromScratch/SaveFirstSelection/TargetApp/filter_files/t1'.'
+'choose to save in file' event created with arguments 'filter_files/t1'
+
+'press save' event created with arguments ''
+
+Changing GUI status to: 'Saved 1 tests in file '/users/mattias/texttesttmp/texttest.24Jan230756/GUI/StaticGUI/StartFromScratch/SaveFirstSelection/TargetApp/filter_files/t1'.'
 
 'quit' event created with arguments ''
