@@ -1,0 +1,7 @@
+set test selection to PrintPermissions
+view sub-options for test : Copying
+copy test
+set test selection to PrintPermissions,PrintPermissions_copy
+run selected tests
+wait for dynamic GUI to be closed
+quit
