@@ -1,0 +1,283 @@
+TextTest will write diagnostics in /users/geoff/texttesttmp/texttest.05Feb180241/TestSelf/Miscellaneous/ReplaceTextRegexp based on file at /users/geoff/work/master/Testing/Automatic/texttest/log4py.conf
+Using Application DIP, checkout /users/geoff/texttesttmp/texttest.05Feb180241/TestSelf/Miscellaneous/ReplaceTextRegexp/TargetApp/CodeNoFailures
+Replacing ([a-z]*) SUPPORT with \1 support for DIP test-suite TargetApp
+  Replacing ([a-z]*) SUPPORT with \1 support for DIP test-suite Game9952
+    Replacing ([a-z]*) SUPPORT with \1 support for DIP test-case S01.99
+    Replacing ([a-z]*) SUPPORT with \1 support for DIP test-case A01   
+3c3
+< Austria: Ser SUPPORT Alb -> Gre    (*works*)
+---
+> Austria: Ser support Alb -> Gre    (*works*)
+9c9
+< France:  Eng SUPPORT Bur -> Bel    (*works*)
+---
+> France:  Eng support Bur -> Bel    (*works*)
+23c23
+< Russia:  Bla SUPPORT Ukr -> Rum    (*works*)
+---
+> Russia:  Bla support Ukr -> Rum    (*works*)
+27c27
+< Turkey:  Bul SUPPORT Ukr -> Rum    (*works*)
+---
+> Turkey:  Bul support Ukr -> Rum    (*works*)
+    Replacing ([a-z]*) SUPPORT with \1 support for DIP test-case S02   
+2c2
+< Austria: Ser SUPPORT Rum -> Bul    (*void*)
+---
+> Austria: Ser support Rum -> Bul    (*void*)
+4c4
+< Austria: Bud SUPPORT Ser HOLD      (*works*)
+---
+> Austria: Bud support Ser HOLD      (*works*)
+10c10
+< England: Nth SUPPORT Lon -> Eng    (*works*)
+---
+> England: Nth support Lon -> Eng    (*works*)
+23c23
+< Italy:   Ion SUPPORT Gre -> Aeg    (*works*)
+---
+> Italy:   Ion support Gre -> Aeg    (*works*)
+28c28
+< Russia:  Bot SUPPORT Nwy -> Swe    (*works*)
+---
+> Russia:  Bot support Nwy -> Swe    (*works*)
+31,32c31,32
+< Russia:  Rum SUPPORT War -> Gal    (*works*)
+< Russia:  Bla SUPPORT Rum HOLD      (*works*)
+---
+> Russia:  Rum support War -> Gal    (*works*)
+> Russia:  Bla support Rum HOLD      (*works*)
+35c35
+< Turkey:  Aeg SUPPORT Bul -> Gre    (*dislodged*)
+---
+> Turkey:  Aeg support Bul -> Gre    (*dislodged*)
+    Replacing ([a-z]*) SUPPORT with \1 support for DIP test-case A02   
+3c3
+< Austria: Ser SUPPORT Alb -> Gre    (*works*)
+---
+> Austria: Ser support Alb -> Gre    (*works*)
+15,16c15,16
+< France:  Bur SUPPORT Ruh -> Mun    (*works*)
+< France:  Bel SUPPORT Yor -> Hol    (*works*)
+---
+> France:  Bur support Ruh -> Mun    (*works*)
+> France:  Bel support Yor -> Hol    (*works*)
+21c21
+< Germany: Den SUPPORT Bal -> Swe    (*works*)
+---
+> Germany: Den support Bal -> Swe    (*works*)
+25c25
+< Italy:   Apu SUPPORT Ion HOLD      (*works*)
+---
+> Italy:   Apu support Ion HOLD      (*works*)
+32c32
+< Russia:  Bot SUPPORT Swe HOLD      (*works*)
+---
+> Russia:  Bot support Swe HOLD      (*works*)
+    Replacing ([a-z]*) SUPPORT with \1 support for DIP test-case S03   
+3c3
+< Austria: Gre SUPPORT Ser -> Bul    (*works*)
+---
+> Austria: Gre support Ser -> Bul    (*works*)
+6c6
+< Austria: Vie SUPPORT Bud -> Tri    (*works*)
+---
+> Austria: Vie support Bud -> Tri    (*works*)
+9c9
+< England: Lon SUPPORT Edi -> Nth    (*works*)
+---
+> England: Lon support Edi -> Nth    (*works*)
+12c12
+< England: Swe SUPPORT Nth -> Ska    (*works*)
+---
+> England: Swe support Nth -> Ska    (*works*)
+16c16
+< France:  Mun SUPPORT Hol -> Kie    (*works*)
+---
+> France:  Mun support Hol -> Kie    (*works*)
+30c30
+< Italy:   Tyr SUPPORT Apu -> Ven    (*works*)
+---
+> Italy:   Tyr support Apu -> Ven    (*works*)
+32c32
+< Russia:  Bot SUPPORT Bal -> Swe    (*void*)
+---
+> Russia:  Bot support Bal -> Swe    (*void*)
+37c37
+< Russia:  Ank SUPPORT Con -> Smy    (*works*)
+---
+> Russia:  Ank support Con -> Smy    (*works*)
+    Replacing ([a-z]*) SUPPORT with \1 support for DIP test-case A03   
+2c2
+< Austria: Vie SUPPORT Tri -> Tyr    (*works*)
+---
+> Austria: Vie support Tri -> Tyr    (*works*)
+4,6c4,6
+< Austria: Gre SUPPORT Bul HOLD      (*works*)
+< Austria: Bul SUPPORT Con HOLD      (*works*)
+< Austria: Smy SUPPORT Con HOLD      (*cut*)
+---
+> Austria: Gre support Bul HOLD      (*works*)
+> Austria: Bul support Con HOLD      (*works*)
+> Austria: Smy support Con HOLD      (*cut*)
+10c10
+< England: Ska SUPPORT Nth -> Den    (*works*)
+---
+> England: Ska support Nth -> Den    (*works*)
+12c12
+< England: Kie SUPPORT Mun -> Ber    (*works*)
+---
+> England: Kie support Mun -> Ber    (*works*)
+18c18
+< France:  Bur SUPPORT Ruh -> Mun    (*works*)
+---
+> France:  Bur support Ruh -> Mun    (*works*)
+21c21
+< France:  Wes SUPPORT GoL -> Tyn    (*works*)
+---
+> France:  Wes support GoL -> Tyn    (*works*)
+24c24
+< Germany: Bal SUPPORT Bot -> Swe    (*works*)
+---
+> Germany: Bal support Bot -> Swe    (*works*)
+27c27
+< Italy:   Ven SUPPORT Tyr -> Tri    (*cut*)
+---
+> Italy:   Ven support Tyr -> Tri    (*cut*)
+35,36c35,36
+< Russia:  Ank SUPPORT Con HOLD      (*works*)
+< Russia:  Con SUPPORT Smy HOLD      (*works*)
+---
+> Russia:  Ank support Con HOLD      (*works*)
+> Russia:  Con support Smy HOLD      (*works*)
+39c39
+< Turkey:  Aeg SUPPORT Eas -> Smy    (*works*)
+---
+> Turkey:  Aeg support Eas -> Smy    (*works*)
+    Replacing ([a-z]*) SUPPORT with \1 support for DIP test-case S04   
+5c5
+< Austria: Tyr SUPPORT Vie -> Tri    (*works*)
+---
+> Austria: Tyr support Vie -> Tri    (*works*)
+11c11
+< England: Ska SUPPORT Nwy -> Swe    (*works*)
+---
+> England: Ska support Nwy -> Swe    (*works*)
+18,20c18,20
+< France:  Ber SUPPORT Mun HOLD      (*works*)
+< France:  Mun SUPPORT Ber HOLD      (*cut*)
+< France:  Bur SUPPORT Mun HOLD      (*works*)
+---
+> France:  Ber support Mun HOLD      (*works*)
+> France:  Mun support Ber HOLD      (*cut*)
+> France:  Bur support Mun HOLD      (*works*)
+29c29
+< Italy:   Rom SUPPORT Ven -> Apu    (*works*)
+---
+> Italy:   Rom support Ven -> Apu    (*works*)
+34c34
+< Russia:  Sil SUPPORT War -> Pru    (*works*)
+---
+> Russia:  Sil support War -> Pru    (*works*)
+    Replacing ([a-z]*) SUPPORT with \1 support for DIP test-case A04   
+11c11
+< England: Den SUPPORT Kie HOLD      (*works*)
+---
+> England: Den support Kie HOLD      (*works*)
+13c13
+< England: Ska SUPPORT Swe HOLD      (*works*)
+---
+> England: Ska support Swe HOLD      (*works*)
+15c15
+< England: Kie SUPPORT Ber HOLD      (*works*)
+---
+> England: Kie support Ber HOLD      (*works*)
+17,19c17,19
+< France:  Ber SUPPORT Mun HOLD      (*cut*)
+< France:  Mun SUPPORT Ber HOLD      (*dislodged*)
+< France:  Bur SUPPORT Mun HOLD      (*works*)
+---
+> France:  Ber support Mun HOLD      (*cut*)
+> France:  Mun support Ber HOLD      (*dislodged*)
+> France:  Bur support Mun HOLD      (*works*)
+26,28c26,28
+< Italy:   NAf SUPPORT Tun HOLD      (*void*)
+< Italy:   Rom SUPPORT Ven HOLD      (*works*)
+< Italy:   Ven SUPPORT Mun -> Tyr    (*void*)
+---
+> Italy:   NAf support Tun HOLD      (*void*)
+> Italy:   Rom support Ven HOLD      (*works*)
+> Italy:   Ven support Mun -> Tyr    (*void*)
+35,36c35,36
+< Russia:  Sil SUPPORT Tyr -> Mun    (*works*)
+< Russia:  Boh SUPPORT Tyr -> Mun    (*works*)
+---
+> Russia:  Sil support Tyr -> Mun    (*works*)
+> Russia:  Boh support Tyr -> Mun    (*works*)
+38c38
+< Russia:  Aeg SUPPORT Eas -> Ion    (*void*)
+---
+> Russia:  Aeg support Eas -> Ion    (*void*)
+    Replacing ([a-z]*) SUPPORT with \1 support for DIP test-case S05   
+7c7
+< Austria: Con SUPPORT Gre -> Bul    (*cut*)
+---
+> Austria: Con support Gre -> Bul    (*cut*)
+18c18
+< England: Kie SUPPORT Mun -> Ber    (*works*)
+---
+> England: Kie support Mun -> Ber    (*works*)
+21,22c21,22
+< France:  Ber SUPPORT Ruh -> Mun    (*dislodged*)
+< France:  Bur SUPPORT Ruh -> Mun    (*works*)
+---
+> France:  Ber support Ruh -> Mun    (*dislodged*)
+> France:  Bur support Ruh -> Mun    (*works*)
+25,27c25,27
+< France:  Ion SUPPORT Adr -> Alb    (*works*)
+< France:  Tyn SUPPORT Ion HOLD      (*works*)
+< France:  Tun SUPPORT Ion HOLD      (*works*)
+---
+> France:  Ion support Adr -> Alb    (*works*)
+> France:  Tyn support Ion HOLD      (*works*)
+> France:  Tun support Ion HOLD      (*works*)
+29,31c29,31
+< Italy:   Ven SUPPORT Pie -> Tyr    (*cut*)
+< Italy:   Rom SUPPORT Nap HOLD      (*works*)
+< Italy:   Nap SUPPORT Ion HOLD      (*works*)
+---
+> Italy:   Ven support Pie -> Tyr    (*cut*)
+> Italy:   Rom support Nap HOLD      (*works*)
+> Italy:   Nap support Ion HOLD      (*works*)
+    Replacing ([a-z]*) SUPPORT with \1 support for DIP test-case A05   
+4c4
+< Austria: Gre SUPPORT Tri -> Alb    (*works*)
+---
+> Austria: Gre support Tri -> Alb    (*works*)
+8c8
+< Austria: Sev SUPPORT Gal -> Ukr    (*cut*)
+---
+> Austria: Sev support Gal -> Ukr    (*cut*)
+11,12c11,12
+< England: Bot SUPPORT StP HOLD      (*works*)
+< England: Kie SUPPORT Ber HOLD      (*works*)
+---
+> England: Bot support StP HOLD      (*works*)
+> England: Kie support Ber HOLD      (*works*)
+25,26c25,26
+< France:  Sil SUPPORT War -> Gal    (*works*)
+< France:  Mun SUPPORT Pie -> Tyr    (*works*)
+---
+> France:  Sil support War -> Gal    (*works*)
+> France:  Mun support Pie -> Tyr    (*works*)
+28c28
+< Italy:   Ven SUPPORT Alb -> Tri    (*works*)
+---
+> Italy:   Ven support Alb -> Tri    (*works*)
+36c36
+< Russia:  Ank SUPPORT Aeg -> Con    (*works*)
+---
+> Russia:  Ank support Aeg -> Con    (*works*)
+  Replacing ([a-z]*) SUPPORT with \1 support for DIP test-suite npstIII
+    Replacing ([a-z]*) SUPPORT with \1 support for DIP test-suite Game47
+      Replacing ([a-z]*) SUPPORT with \1 support for DIP test-case S01
