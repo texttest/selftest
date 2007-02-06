@@ -19,6 +19,10 @@ LoadStrangeFilterFiles
 # What happens if we try to load from a directory which doesn't exist?
 LoadFromNonExistingDir
 
+# Make sure the GUI can handle the case where a test
+# with a sub-name is selected (Bugzilla 1521)
+SelectSubText
+
 # Make sure we can handle selecting tests that the static GUI doesn't know about...
 SelectUnknownTest
 
