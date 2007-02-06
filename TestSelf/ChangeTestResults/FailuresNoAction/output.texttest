@@ -1,50 +1,24 @@
-TextTest will write diagnostics in /users/geoff/texttesttmp/texttestgeoff10Apr121122/TestSelf/ChangeTestResults/FailuresNoAction based on file at /users/geoff/work/master/Testing/Automatic/texttest/log4py.conf
-Using Application DIP, checkout /users/geoff/texttesttmp/texttestgeoff10Apr121122/TestSelf/ChangeTestResults/FailuresNoAction/TargetApp/CodeFailures
-Running DIP test-suite TargetApp
-  Running DIP test-suite Game9952
-    Running DIP test-case S01.99
-Comparing differences for DIP test-suite TargetApp
-  Comparing differences for DIP test-suite Game9952
-    Comparing differences for DIP test-case S01.99 - SUCCESS! (on output.dip)
-    Running DIP test-case A01   
-    Comparing differences for DIP test-case A01    - SUCCESS! (on output.dip)
-    Running DIP test-case S02   
-    Comparing differences for DIP test-case S02    (on output.dip)
-    DIP test-case S02    FAILED : differences in output
-    View details(v), Save(s) or continue(any other key)?
+TextTest will write diagnostics in /users/geoff/texttesttmp/texttest.06Feb173643/TestSelf/ChangeTestResults/FailuresNoAction based on file at /users/geoff/work/master/Testing/Automatic/texttest/log4py.conf
+Using Application HELLO
+Running HELLO test-suite TargetApp
+  Running HELLO test-case OutDiff 
+Comparing differences for HELLO test-suite TargetApp
+  Comparing differences for HELLO test-case OutDiff  (on errors.hello,output.hello)
+  HELLO test-case OutDiff  FAILED : differences in output
+  View details(v), Save(s) or continue(any other key)?
 ------------------ Differences in output --------------------
-35c35
-< Turkey:  Aeg SUPPORT Bul -> Gre    (*dislodged*)
----
-> Turkey:  Aeg SUPPORT Bul -> Gre    (*was dislodged*)
+0a1
+> Hello World!
 <See also tkdiff window for details of output>
-    Save(s) or continue(any other key)?
-Killed process 26137 with signal 2
-    Running DIP test-case A02   
-    Comparing differences for DIP test-case A02    (on output.dip)
-    DIP test-case A02    FAILED : differences in output
-    View details(v), Save(s) or continue(any other key)?
-    Running DIP test-case S03   
-    Comparing differences for DIP test-case S03    - SUCCESS! (on output.dip)
-    Running DIP test-case A03   
-    Comparing differences for DIP test-case A03    (on output.dip)
-    DIP test-case A03    FAILED : differences in output
-    View details(v), Save(s) or continue(any other key)?
-    Running DIP test-case S04   
-    Comparing differences for DIP test-case S04    - SUCCESS! (on output.dip)
-    Running DIP test-case A04   
-    Comparing differences for DIP test-case A04    (on output.dip)
-    DIP test-case A04    FAILED : differences in output
-    View details(v), Save(s) or continue(any other key)?
-    Running DIP test-case S05   
-    Comparing differences for DIP test-case S05    (on output.dip)
-    DIP test-case S05    FAILED : differences in output
-    View details(v), Save(s) or continue(any other key)?
-    Running DIP test-case A05   
-    Comparing differences for DIP test-case A05    - SUCCESS! (on output.dip)
-  Running DIP test-suite npstIII
-    Running DIP test-suite Game47
-      Running DIP test-case S01
-  Comparing differences for DIP test-suite npstIII
-    Comparing differences for DIP test-suite Game47
-      Comparing differences for DIP test-case S01 - SUCCESS! (on output.dip)
+  Save(s) or continue(any other key)?
+Killed process 23182 with signal 2
+  Running HELLO test-case Success 
+  Comparing differences for HELLO test-case Success  - SUCCESS! (on errors.hello,output.hello)
+  Running HELLO test-case ErrDiff 
+  Comparing differences for HELLO test-case ErrDiff  (on errors.hello,output.hello)
+  HELLO test-case ErrDiff  FAILED : differences in errors
+  View details(v), Save(s) or continue(any other key)?
+  Running HELLO test-case BothDiff
+  Comparing differences for HELLO test-case BothDiff (on errors.hello,output.hello)
+  HELLO test-case BothDiff FAILED : differences in errors,output
+  View details(v), Save(s) or continue(any other key)?
