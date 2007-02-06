@@ -1,0 +1,244 @@
+Top Window title is TextTest dynamic GUI (tests started at 06Feb20:54:07)
+Default widget is <type 'gtk.TreeView'>
+Setting window width to 60% of screen.
+Setting window height to 83% of screen.
+
+Viewing toggle action with title '_Toolbar'
+Viewing toggle action with title '_Shortcut bar'
+Viewing toggle action with title '_Status bar'
+Viewing action with title '_Quit', stock id ''gtk-quit'', accelerator ''<control>q''
+Viewing action with title '_Save', stock id ''gtk-save'', accelerator ''<control>s'' (greyed out)
+Viewing action with title 'S_ave Selection...', stock id ''gtk-save-as'', accelerator ''<control><shift>s'' (greyed out)
+
+UI layout: 
+<ui>
+  <menubar name="MainMenuBar">
+    <menu name="filemenu" action="filemenu">
+      <menuitem name="Save Selection..." action="Save Selection..."/>
+      <separator/>
+      <menuitem name="Save" action="Save"/>
+      <separator/>
+      <menuitem name="Quit" action="Quit"/>
+    </menu>
+    <menu name="viewmenu" action="viewmenu">
+      <menuitem name="Toolbar" action="Toolbar"/>
+      <menuitem name="Shortcut bar" action="Shortcut bar"/>
+      <menuitem name="Status bar" action="Status bar"/>
+    </menu>
+  </menubar>
+  <toolbar name="MainToolBar">
+    <toolitem name="Quit" action="Quit"/>
+    <toolitem name="Save" action="Save"/>
+    <separator/>
+  </toolbar>
+  <popup name="TestPopupMenu">
+  </popup>
+</ui>
+
+Progress bar set to fraction 0.0, text '0 of 3 tests completed'
+
+Test Tree description...
+-> TargetApp (hello)
+->   OutDiff
+-> TargetApp (hello.10.2)
+->   OutDiff
+-> TargetApp (hello.10.4)
+->   OutDiff
+
+Test column header set to 'Tests: 0/3 selected, none hidden'
+
+Pane separator positioned 50% from the left edge
+
+Tabs showing : Status
+
+Test progress:
+--> Not started : 3, colour 'white', font 'bold'
+
+Changing GUI status to: 'TextTest started at 06Feb20:54:07.'
+
+Waiting for application event 'completion of test actions' to occur.
+Redrawing test OutDiff coloured yellow
+
+Test progress:
+--> Not started : 2, colour 'white', font 'bold'
+--> Running : 1, colour 'yellow', font 'bold'
+Redrawing test OutDiff coloured red
+(Second column 'output different' coloured red)
+
+Progress bar set to fraction 0.333333333333, text '1 of 3 tests completed (1 tests failed)'
+
+Test progress:
+--> Not started : 2, colour 'white', font 'bold'
+--> Running : 0, colour 'white', font ''
+--> Failed : 1, colour 'red', font 'bold'
+----> Differences : 1, colour 'red', font 'bold'
+------> output different : 1, colour 'red', font 'bold'
+Redrawing test OutDiff coloured yellow
+
+Test progress:
+--> Not started : 1, colour 'white', font 'bold'
+--> Running : 1, colour 'yellow', font 'bold'
+--> Failed : 1, colour 'red', font 'bold'
+----> Differences : 1, colour 'red', font 'bold'
+------> output different : 1, colour 'red', font 'bold'
+Redrawing test OutDiff coloured red
+(Second column 'output different' coloured red)
+
+Progress bar set to fraction 0.666666666667, text '2 of 3 tests completed (2 tests failed)'
+
+Test progress:
+--> Not started : 1, colour 'white', font 'bold'
+--> Running : 0, colour 'white', font ''
+--> Failed : 2, colour 'red', font 'bold'
+----> Differences : 2, colour 'red', font 'bold'
+------> output different : 2, colour 'red', font 'bold'
+Redrawing test OutDiff coloured yellow
+
+Test progress:
+--> Not started : 0, colour 'white', font ''
+--> Running : 1, colour 'yellow', font 'bold'
+--> Failed : 2, colour 'red', font 'bold'
+----> Differences : 2, colour 'red', font 'bold'
+------> output different : 2, colour 'red', font 'bold'
+Redrawing test OutDiff coloured red
+(Second column 'output different' coloured red)
+
+Progress bar set to fraction 1.0, text 'All 3 tests completed at 06Feb20:54:09 (3 tests failed)'
+
+Test progress:
+--> Not started : 0, colour 'white', font ''
+--> Running : 0, colour 'white', font ''
+--> Failed : 3, colour 'red', font 'bold'
+----> Differences : 3, colour 'red', font 'bold'
+------> output different : 3, colour 'red', font 'bold'
+Expected application event 'completion of test actions' occurred, proceeding.
+
+'set test selection to' event created with arguments 'OutDiff version 10.2'
+
+Test column header set to 'Tests: 1/3 selected, none hidden'
+Setting sensitivity of action '_Save' to True
+Setting sensitivity of action 'S_ave Selection...' to True
+
+Setting file-view title to 'OutDiff'
+Adding file errors.hello under heading 'Comparison Files', coloured green
+Adding file output.hello under heading 'Comparison Files', coloured red
+
+Viewing action with title '_Update Info' (greyed out)
+
+Tabs showing : Text Info, Viewing, Saving
+
+---------- Text Info Window ----------
+Test FAILED :
+------------------ Differences in output --------------------
+0a1
+> Hello World!
+--------------------------------------
+
+Tabs showing : Test, Status
+
+'view sub-options for test :' event created with arguments 'Saving'
+
+Viewing notebook page for 'Saving'
+Viewing entry for option 'Version to save' (set to '10.2') (drop-down list containing ['10.2', '10', '2', ''])
+Viewing check button for switch 'Replace successfully compared files also'
+Viewing action with title '_Save'
+
+'enter version to save =' event created with arguments '10'
+
+'save results for selected tests from tab' event created with arguments ''
+
+Changing GUI status to: 'Saving 1 tests ...'
+Saving HELLO test-case OutDiff - version 10, exactness 1
+
+Changing GUI status to: 'Saving HELLO test-case OutDiff : output, version 10'
+Redrawing test OutDiff coloured green
+Redrawing suite TargetApp : second column 'All 1 tests successful' coloured green
+
+Setting file-view title to 'OutDiff'
+Adding file errors.hello under heading 'Comparison Files', coloured green
+Adding file output.hello.10 under heading 'Comparison Files', coloured green
+Progress bar detected save, new text is 'All 3 tests completed at 06Feb20:54:09 (2 tests failed)'
+
+Changing GUI status to: 'Saved 1 tests.'
+
+'set test selection to' event created with arguments 'OutDiff version <default>'
+
+Setting file-view title to 'OutDiff'
+Adding file errors.hello under heading 'Comparison Files', coloured green
+Adding file output.hello under heading 'Comparison Files', coloured red
+
+Viewing notebook page for 'Saving'
+Viewing entry for option 'Version to save'
+Viewing check button for switch 'Replace successfully compared files also'
+Viewing action with title '_Save'
+
+---------- Text Info Window ----------
+Test FAILED :
+------------------ Differences in output --------------------
+0a1
+> Hello World!
+--------------------------------------
+
+'view sub-options for test :' event created with arguments 'Saving'
+
+Viewing notebook page for 'Saving'
+Viewing entry for option 'Version to save'
+Viewing check button for switch 'Replace successfully compared files also'
+Viewing action with title '_Save'
+
+'save results for selected tests from tab' event created with arguments ''
+
+Changing GUI status to: 'Saving 1 tests ...'
+Saving HELLO test-case OutDiff - version , exactness 1
+
+Changing GUI status to: 'Saving HELLO test-case OutDiff : output, no version'
+Redrawing test OutDiff coloured green
+Redrawing suite TargetApp : second column 'All 1 tests successful' coloured green
+
+Setting file-view title to 'OutDiff'
+Adding file errors.hello under heading 'Comparison Files', coloured green
+Adding file output.hello under heading 'Comparison Files', coloured green
+Progress bar detected save, new text is 'All 3 tests completed at 06Feb20:54:09 (1 tests failed)'
+
+Changing GUI status to: 'Saved 1 tests.'
+
+'set test selection to' event created with arguments 'OutDiff version 10.4'
+
+Changing GUI status to: 'Recomputing status of HELLO test-case OutDiff ...'
+Redrawing test OutDiff coloured green
+Redrawing suite TargetApp : second column 'All 1 tests successful' coloured green
+Progress bar detected save, new text is 'All 3 tests completed at 06Feb20:54:09'
+
+Changing GUI status to: 'Done recomputing status of HELLO test-case OutDiff.'
+
+Setting file-view title to 'OutDiff'
+Adding file errors.hello under heading 'Comparison Files', coloured green
+Adding file output.hello.10 under heading 'Comparison Files', coloured green
+
+Viewing notebook page for 'Saving'
+Viewing entry for option 'Version to save' (set to '10.4') (drop-down list containing ['10.4', '10', '4', ''])
+Viewing check button for switch 'Replace successfully compared files also'
+Viewing action with title '_Save'
+
+---------- Text Info Window ----------
+Test succeeded
+--------------------------------------
+
+'view sub-options for test :' event created with arguments 'Viewing'
+
+Viewing notebook page for 'Viewing'
+Viewing check button for switch 'Include run-dependent text'
+Viewing check button for switch 'Show differences where present' (checked)
+
+'check include run-dependent text' event created with arguments ''
+
+'select file' event created with arguments 'output.hello.10'
+Starting graphical difference comparison using 'tkdiff':
+-- original file : /users/geoff/texttesttmp/texttest.06Feb205405/TestSelf/ChangeTestResults/GUI/RefreshVersionToSave/TargetApp/OutDiff/output.hello.10
+--  current file : /users/geoff/texttesttmp/texttest.06Feb205405/TestSelf/ChangeTestResults/GUI/RefreshVersionToSave/texttesttmp/hello.10.4.06Feb205407/OutDiff/output.hello
+
+Changing GUI status to: 'Started "tkdiff output.hello.10 output.hello" in background (from test OutDiff version 10.4).'
+
+Terminating process that shows graphical differences in test files...
+
+'quit' event created with arguments ''
