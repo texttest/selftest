@@ -1,0 +1,102 @@
+Top Window title is TextTest static GUI : management of tests for HELLO
+Default widget is <type 'gtk.TreeView'>
+Setting window width to 60% of screen.
+Setting window height to 83% of screen.
+
+Viewing toggle action with title '_Toolbar'
+Viewing toggle action with title '_Shortcut bar'
+Viewing toggle action with title '_Status bar'
+Viewing action with title '_Quit', stock id ''gtk-quit'', accelerator ''<control>q''
+Viewing action with title '_Select', stock id ''gtk-refresh'', accelerator ''<control>s''
+Viewing action with title '_Run', stock id ''gtk-execute'', accelerator ''<control>r'' (greyed out)
+Viewing action with title 'R_eset', stock id ''gtk-revert-to-saved'', accelerator ''<control>e''
+Viewing action with title 'Remove...', stock id ''gtk-delete'' (greyed out)
+Viewing action with title 'S_ave Selection...', stock id ''gtk-save-as'', accelerator ''<control><shift>s'' (greyed out)
+
+UI layout: 
+<ui>
+  <menubar name="MainMenuBar">
+    <menu name="filemenu" action="filemenu">
+      <menuitem name="Save Selection..." action="Save Selection..."/>
+      <separator/>
+      <menuitem name="Quit" action="Quit"/>
+    </menu>
+    <menu name="editmenu" action="editmenu">
+      <menuitem name="Remove..." action="Remove..."/>
+    </menu>
+    <menu name="viewmenu" action="viewmenu">
+      <menuitem name="Toolbar" action="Toolbar"/>
+      <menuitem name="Shortcut bar" action="Shortcut bar"/>
+      <menuitem name="Status bar" action="Status bar"/>
+    </menu>
+    <menu name="actionsmenu" action="actionsmenu">
+      <menuitem name="Select" action="Select"/>
+      <menuitem name="Run" action="Run"/>
+      <menuitem name="Reset" action="Reset"/>
+    </menu>
+  </menubar>
+  <toolbar name="MainToolBar">
+    <toolitem name="Quit" action="Quit"/>
+    <separator/>
+    <toolitem name="Select" action="Select"/>
+    <toolitem name="Run" action="Run"/>
+    <toolitem name="Reset" action="Reset"/>
+    <separator/>
+    <toolitem name="Remove..." action="Remove..."/>
+    <separator/>
+  </toolbar>
+  <popup name="TestPopupMenu">
+    <menuitem name="Remove..." action="Remove..."/>
+    <separator/>
+  </popup>
+</ui>
+
+Test Tree description...
+-> TargetApp (hello)
+->   Suite1
+->     One1
+->     Two
+->     Three
+->   Super
+->     Suite2
+->       One
+
+Test column header set to 'Tests: 0/4 selected'
+
+Pane separator positioned 50% from the left edge
+
+Tabs showing : Selection, Config
+
+Viewing notebook page for 'Selection'
+Viewing entry for option 'Tests for version' (drop-down list containing ['', '<default>'])
+Viewing entry for option 'Test names containing'
+Viewing entry for option 'Tests listed in file'
+Viewing entry for option 'Suite names containing'
+Viewing entry for option 'Result files containing'
+Viewing entry for option 'Result file to search' (set to 'output') (drop-down list containing ['output', 'errors'])
+Viewing entry for option 'Execution time'
+Viewing check button for switch 'Select in collapsed suites'
+Viewing radio button for switch 'Current selection:', options Discard/Refine/Extend/Exclude'. Default value 0.
+Viewing action with title '_Select'
+
+Changing GUI status to: 'TextTest started at 06Feb16:52:53.'
+
+'enter tests listed in file =' event created with arguments 'some_random_dir/some_random_file'
+
+'select indicated tests from tab' event created with arguments ''
+
+Changing GUI status to: 'Selecting tests ...'
+ERROR: 
+Failed to get filters from file 'some_random_dir/some_random_file':
+[Errno 2] No such file or directory: 'some_random_dir/some_random_file'
+
+'enter tests listed in file =' event created with arguments 'filter_files/some_random_file'
+
+'select indicated tests from tab' event created with arguments ''
+
+Changing GUI status to: 'Selecting tests ...'
+ERROR: 
+Failed to get filters from file 'filter_files/some_random_file':
+[Errno 2] No such file or directory: '/users/geoff/texttesttmp/texttest.06Feb165251/TestSelf/TestSelection/GUI/LoadFromNonExistingDir/TargetApp/filter_files/some_random_file'
+
+'quit' event created with arguments ''

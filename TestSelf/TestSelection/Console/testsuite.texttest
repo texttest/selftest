@@ -1,0 +1,38 @@
+# All tests run correctly: no filters means all tests
+NoFilters
+
+# TestNameFilter, single and multiple
+TestNameFilter
+MultipleTests
+MultipleTestsWithSpace
+
+# Test for testsuite filter, both partial and full paths
+TestSuiteFilter
+TestSuiteFullPath
+
+# Test for filename filter
+FileNameFilter
+
+# Make sure other filters can be put in test case filter files
+FileMetaFilter
+
+# Make sure different apps pick up different filters
+FileFilterMultiApp
+
+# Check if we can have multiple test_list_files_directory dirs, and find a filter in the last one
+FileFilterMultiPaths
+
+# Test for grep filter : looks in log file as default
+GrepFilter
+
+# Check we can grep in other files...
+GrepFilterOtherFile
+
+# Make sure that we can run two tests whose names are substrings of each other...
+TestNameSubstrings
+
+# Check we can select test names with regular expressions
+RegExpTestName
+
+# Make sure we can sort the test suites in alphabetical order if we want to
+AutoSortTestSuites
