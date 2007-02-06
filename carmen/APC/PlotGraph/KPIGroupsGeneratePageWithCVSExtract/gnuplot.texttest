@@ -10,7 +10,12 @@ set border 3
 set xrange [0:];
 set yrange [0:0.5];
 set ylabel "cost of plan\n% above 6"
-plot './Spielscripts/umlauf_spiel/framework_tmp/plot-std-result'  notitle  with linespoints lt 2 pt 1, './Spielscripts/umlauf_spiel/framework_tmp/plot-CVS-070101'  notitle  with linespoints lt 3 pt 1, './Spielscripts/just_a_copy/framework_tmp/plot-std-result'  notitle  with linespoints lt 2 pt 2, './Spielscripts/just_a_copy/framework_tmp/plot-CVS-070101'  notitle  with linespoints lt 3 pt 2, './average.0'  title "std result"  with lines lt 2 lw 2, './average.1'  title "CVS 070101"  with lines lt 3 lw 2
+plot './Spielscripts/umlauf_spiel/framework_tmp/plot-std-result'  notitle  with linespoints lt 2 pt 1, \
+'./Spielscripts/umlauf_spiel/framework_tmp/plot-CVS-070101'  notitle  with linespoints lt 3 pt 1, \
+'./Spielscripts/just_a_copy/framework_tmp/plot-std-result'  notitle  with linespoints lt 2 pt 2, \
+'./Spielscripts/just_a_copy/framework_tmp/plot-CVS-070101'  notitle  with linespoints lt 3 pt 2, \
+'./average.0'  title "std result"  with lines lt 2 lw 2, \
+'./average.1'  title "CVS 070101"  with lines lt 3 lw 2
 set terminal png color solid
 set size 0.65,0.65
 set ylabel 'cost of plan'
@@ -23,4 +28,5 @@ set border 3
 set xrange [0:];
 set yrange [0:0.5];
 set ylabel "cost of plan\n% above 6"
-plot './average.2'  title "std result"  with lines lt 2 lw 2, './average.3'  title "CVS 070101"  with lines lt 3 lw 2
+plot './average.2'  title "std result"  with lines lt 2 lw 2, \
+'./average.3'  title "CVS 070101"  with lines lt 3 lw 2

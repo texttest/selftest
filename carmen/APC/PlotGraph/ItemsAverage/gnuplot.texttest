@@ -6,4 +6,15 @@ set xtics border nomirror norotate
 set ytics border nomirror norotate
 set border 3
 set xrange [0:];
-plot './RD_lh_pac/A320_COC_aan/framework_tmp/plot-std-result.TOTAL-cost'  title "A320_COC_aan.std result.TOTAL cost"  with linespoints lt 2 pt 1, './RD_lh_pac/A320_COC_aan/framework_tmp/plot-std-result.rule-cost'  title "A320_COC_aan.std result.rule cost"  with linespoints lt 3 pt 1, './RD_lh_pac/A320_COC_aan/framework_tmp/plot-9.TOTAL-cost'  title "A320_COC_aan.9.TOTAL cost"  with linespoints lt 4 pt 1, './RD_lh_pac/A320_COC_aan/framework_tmp/plot-9.rule-cost'  title "A320_COC_aan.9.rule cost"  with linespoints lt 5 pt 1, './RD_lh_pac/A320_COC_aat/framework_tmp/plot-std-result.TOTAL-cost'  title "A320_COC_aat.std result.TOTAL cost"  with linespoints lt 2 pt 2, './RD_lh_pac/A320_COC_aat/framework_tmp/plot-std-result.rule-cost'  title "A320_COC_aat.std result.rule cost"  with linespoints lt 3 pt 2, './RD_lh_pac/A320_COC_aat/framework_tmp/plot-9.TOTAL-cost'  title "A320_COC_aat.9.TOTAL cost"  with linespoints lt 4 pt 2, './RD_lh_pac/A320_COC_aat/framework_tmp/plot-9.rule-cost'  title "A320_COC_aat.9.rule cost"  with linespoints lt 5 pt 2, './average.0'  title "std result.rule cost"  with lines lt 3 lw 2, './average.1'  title "9.rule cost"  with lines lt 5 lw 2, './average.2'  title "9.TOTAL cost"  with lines lt 4 lw 2, './average.3'  title "std result.TOTAL cost"  with lines lt 2 lw 2
+plot './RD_lh_pac/A320_COC_aan/framework_tmp/plot-std-result.TOTAL-cost'  title "A320_COC_aan.std result.TOTAL cost"  with linespoints lt 2 pt 1, \
+'./RD_lh_pac/A320_COC_aan/framework_tmp/plot-std-result.rule-cost'  title "A320_COC_aan.std result.rule cost"  with linespoints lt 3 pt 1, \
+'./RD_lh_pac/A320_COC_aan/framework_tmp/plot-9.TOTAL-cost'  title "A320_COC_aan.9.TOTAL cost"  with linespoints lt 4 pt 1, \
+'./RD_lh_pac/A320_COC_aan/framework_tmp/plot-9.rule-cost'  title "A320_COC_aan.9.rule cost"  with linespoints lt 5 pt 1, \
+'./RD_lh_pac/A320_COC_aat/framework_tmp/plot-std-result.TOTAL-cost'  title "A320_COC_aat.std result.TOTAL cost"  with linespoints lt 2 pt 2, \
+'./RD_lh_pac/A320_COC_aat/framework_tmp/plot-std-result.rule-cost'  title "A320_COC_aat.std result.rule cost"  with linespoints lt 3 pt 2, \
+'./RD_lh_pac/A320_COC_aat/framework_tmp/plot-9.TOTAL-cost'  title "A320_COC_aat.9.TOTAL cost"  with linespoints lt 4 pt 2, \
+'./RD_lh_pac/A320_COC_aat/framework_tmp/plot-9.rule-cost'  title "A320_COC_aat.9.rule cost"  with linespoints lt 5 pt 2, \
+'./average.0'  title "std result.rule cost"  with lines lt 3 lw 2, \
+'./average.1'  title "9.rule cost"  with lines lt 5 lw 2, \
+'./average.2'  title "9.TOTAL cost"  with lines lt 4 lw 2, \
+'./average.3'  title "std result.TOTAL cost"  with lines lt 2 lw 2
