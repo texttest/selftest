@@ -19,8 +19,18 @@ SaveAllMultiVersions
 # Same as above, but choose the other test (bug 3439)
 SaveAllMultiVersionsOrder
 
+# Check the Save All button works with the single file option
+# also in the case where the final file is saved for some test
+SaveAllSingleFile
+
+# Copy of SaveAllSingleFile but save the errors file instead. This reverses the order of the chosen test and the "lonely" test
+SaveAllSingleFileOrder
+
 # Test that unsaveable versions don't end up as default
 UnsaveableVersion
+
+# Make sure we can save with the option to invalidate all existing files. The version means new versions of output etc. should appear too
+SaveSuccessFiles
 
 # Check that when one version is saved the other takes account of it
 RefreshOnSave
