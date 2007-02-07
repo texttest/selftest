@@ -4,21 +4,6 @@ NoFilters
 # After selecting it should clear again when you press select next time
 ClearTestSelection
 
-# Check we can save selections (all variants)
-SaveSelection
-
-# Reset test_list_files_directory and see what happens when we try to save
-SaveSelectionNoDir
-
-# Check we can load the selections from the criteria we save
-LoadCriteriaSelection
-
-# What happens if we try to use a python script, a text file, a gif image and a word document as a filter file?
-LoadStrangeFilterFiles
-
-# What happens if we try to load from a directory which doesn't exist?
-LoadFromNonExistingDir
-
 # Make sure the GUI can handle the case where a test
 # with a sub-name is selected (Bugzilla 1521)
 SelectSubText
@@ -37,6 +22,21 @@ MultipleSelections
 
 # Copy of MultipleSelections, which also runs the selected tests
 MultipleSelectionsRun
+
+# Check we can save selections (all variants)
+SaveSelection
+
+# Reset test_list_files_directory and see what happens when we try to save
+SaveSelectionNoDir
+
+# Check we can load the selections from the criteria we save
+LoadCriteriaSelection
+
+# What happens if we try to use a python script, a text file, a gif image and a word document as a filter file?
+LoadStrangeFilterFiles
+
+# What happens if we try to load from a directory which doesn't exist?
+LoadFromNonExistingDir
 
 # Try the file filter drop-down list, and try expanding the selection by another file filter
 FileFilterExtend
