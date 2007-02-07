@@ -1,0 +1,171 @@
+Top Window title is TextTest dynamic GUI (tests started at 07Feb15:44:51)
+Default widget is <type 'gtk.TreeView'>
+Setting window width to 60% of screen.
+Setting window height to 83% of screen.
+
+Viewing toggle action with title '_Toolbar'
+Viewing toggle action with title '_Shortcut bar'
+Viewing toggle action with title '_Status bar'
+Viewing action with title '_Quit', stock id ''gtk-quit'', accelerator ''<control>q''
+Viewing action with title '_Save', stock id ''gtk-save'', accelerator ''<control>s'' (greyed out)
+Viewing action with title 'S_ave Selection...', stock id ''gtk-save-as'', accelerator ''<control><shift>s'' (greyed out)
+
+UI layout: 
+<ui>
+  <menubar name="MainMenuBar">
+    <menu name="filemenu" action="filemenu">
+      <menuitem name="Save Selection..." action="Save Selection..."/>
+      <separator/>
+      <menuitem name="Save" action="Save"/>
+      <separator/>
+      <menuitem name="Quit" action="Quit"/>
+    </menu>
+    <menu name="viewmenu" action="viewmenu">
+      <menuitem name="Toolbar" action="Toolbar"/>
+      <menuitem name="Shortcut bar" action="Shortcut bar"/>
+      <menuitem name="Status bar" action="Status bar"/>
+    </menu>
+  </menubar>
+  <toolbar name="MainToolBar">
+    <toolitem name="Quit" action="Quit"/>
+    <toolitem name="Save" action="Save"/>
+    <separator/>
+  </toolbar>
+  <popup name="TestPopupMenu">
+  </popup>
+</ui>
+
+Progress bar set to fraction 0.0, text '0 of 1 tests completed'
+
+Test Tree description...
+-> TargetApp (hello)
+->   Test
+
+Test column header set to 'Tests: 0/1 selected, none hidden'
+
+Pane separator positioned 50% from the left edge
+
+Tabs showing : Status
+
+Test progress:
+--> Not started : 1, colour 'white', font 'bold'
+
+Changing GUI status to: 'TextTest started at 07Feb15:44:52.'
+
+Waiting for application event 'completion of test actions' to occur.
+Redrawing test Test coloured yellow
+
+Test progress:
+--> Not started : 0, colour 'white', font ''
+--> Running : 1, colour 'yellow', font 'bold'
+Redrawing test Test coloured red
+(Second column 'output different' coloured red)
+
+Progress bar set to fraction 1.0, text 'All 1 tests completed at 07Feb15:44:52 (1 tests failed)'
+
+Test progress:
+--> Not started : 0, colour 'white', font ''
+--> Running : 0, colour 'white', font ''
+--> Failed : 1, colour 'red', font 'bold'
+----> Differences : 1, colour 'red', font 'bold'
+------> output different : 1, colour 'red', font 'bold'
+Expected application event 'completion of test actions' occurred, proceeding.
+
+'set test selection to' event created with arguments 'Test'
+
+Test column header set to 'Tests: All 1 selected, none hidden'
+Setting sensitivity of action '_Save' to True
+Setting sensitivity of action 'S_ave Selection...' to True
+
+Setting file-view title to 'Test'
+Adding file errors.hello under heading 'Comparison Files', coloured green
+Adding file output.hello under heading 'Comparison Files', coloured red
+
+Viewing action with title '_Update Info' (greyed out)
+
+Tabs showing : Text Info, Viewing, Saving
+
+---------- Text Info Window ----------
+Test FAILED :
+------------------ Differences in output --------------------
+1c1
+< Hello
+---
+> Hello World!
+--------------------------------------
+
+Tabs showing : Test, Status
+
+'save results for selected tests' event created with arguments ''
+
+Changing GUI status to: 'Saving 1 tests ...'
+Saving HELLO test-case Test - version , exactness 1
+
+Changing GUI status to: 'Saving HELLO test-case Test : output, no version'
+
+---------- Text Info Window ----------
+Test succeeded
+--------------------------------------
+Redrawing test Test coloured green
+Redrawing suite TargetApp : second column 'All 1 tests successful' coloured green
+
+Test column header set to 'Tests: 0/1 selected, none hidden'
+Setting sensitivity of action '_Save' to False
+Setting sensitivity of action 'S_ave Selection...' to False
+
+Test progress:
+--> Not started : 0, colour 'white', font ''
+--> Running : 0, colour 'white', font ''
+--> Failed : 1, colour 'red', font 'bold'
+----> Differences : 1, colour 'red', font 'bold'
+------> output different : 1, colour 'red', font 'bold'
+
+Tabs showing : Status
+Progress bar detected save, new text is 'All 1 tests completed at 07Feb15:44:52'
+
+Test progress:
+--> Not started : 0, colour 'white', font ''
+--> Running : 0, colour 'white', font ''
+--> Failed : 0, colour 'white', font ''
+----> Differences : 0, colour 'white', font ''
+------> output different : 0, colour 'white', font ''
+--> Succeeded : 1, colour 'green', font 'bold'
+
+Changing GUI status to: 'Saved 1 tests.'
+
+'show test suite' event created with arguments 'TargetApp'
+
+Test Tree description...
+-> TargetApp (hello)
+->   Test
+
+'set test selection to' event created with arguments 'Test'
+
+Test column header set to 'Tests: All 1 selected, none hidden'
+Setting sensitivity of action '_Save' to True
+Setting sensitivity of action 'S_ave Selection...' to True
+
+Setting file-view title to 'Test'
+Adding file errors.hello under heading 'Comparison Files', coloured green
+Adding file output.hello under heading 'Comparison Files', coloured green
+
+Viewing action with title '_Update Info' (greyed out)
+
+Pane separator positioned 46% from the top
+
+Tabs showing : Text Info, Viewing, Saving
+
+---------- Text Info Window ----------
+Test succeeded
+--------------------------------------
+
+Tabs showing : Test, Status
+
+'select file' event created with arguments 'output.hello'
+Viewing file /users/geoff/texttesttmp/texttest.07Feb154449/TestSelf/FileViewers/GUI/ViewSavedFile/TargetApp/Test/output.hello using 'emacs', refresh set to 0
+
+Changing GUI status to: 'Started "emacs output.hello" in background (from test Test).'
+
+Terminating process that views and edits test files...
+
+'quit' event created with arguments ''
