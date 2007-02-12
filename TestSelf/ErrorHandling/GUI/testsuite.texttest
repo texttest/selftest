@@ -1,0 +1,35 @@
+# Test GUI deals OK with bad arguments
+BadArguments
+
+# Press things we aren't allowed to and check for responses
+ErrorMessages
+
+# Static GUI should run even when no tests are present
+StartNoTests
+
+# Make sure we don't stack trace if no apps are started
+StartNoApps
+
+# Make sure applications with no tests don't appear in dynamic GUI
+OneAppNoTests
+
+# Make sure refreshing on quit doesn't cause crashes
+RefreshAfterQuit
+
+# Test for bug where path name repeat caused a stacktrace
+PathNameRepeat
+
+# Check we don't crash if the header line is clicked
+ActivateFileViewHeaders
+
+# The collapse feature currently does not like it when 
+# the success color is not unique, so here we use failure 
+# colour == success colour. A bit ridiculous, but still 
+# worth remembering.
+SuccessColourNotUnique
+
+# What happens when GTK isn't present?
+NoGtk
+
+# Make sure we don't allow PyGTK to run if the version is too old
+GtkTooOld

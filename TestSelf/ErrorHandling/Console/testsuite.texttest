@@ -1,0 +1,49 @@
+# Test for arguments that aren't recognised
+BadArguments
+
+# Test that extra arguments for plugin scripts are parsed correctly
+CountTestsBadArg
+
+# Test for applications that aren't recognised
+BadApplication
+
+# Check we get errors if we reconnect to things that don't exist
+# Should really be under reconnect but this tests specifically for no texttesttmp
+BadReconnect
+
+# Some error conditions - Config module isn't there, Config module contains nonsense, config module contains bad import and config module is a valid module but not a config module
+NoConfig
+BadConfig
+ConfigBadImport
+ConfigModuleNotConfig
+
+# Test we don't crash when binary is not defined
+NoBinary
+
+# Check that exceptions in one application don't crash others
+AppsIndependent
+
+# Check that -r does not remove everything without a performance file
+PerfFilterNoPerf
+
+# Check that dashes in the TEXTTEST_HOME variable don't fool us,
+# and that we don't crash if the directory doesn't exist
+DashesInTEXTTEST_HOME
+
+# See what happens when we try to run a non-existent script
+BadScript
+
+# Check we exit with error if given non-existent file
+NoFileFilter
+
+# Test what happens when the file filter directory doesn't even exist
+NoFileFilterDir
+
+# import_config_file with non-existent file
+BadImportedConfig
+
+# Crash if we specify the default version twice
+DuplicateVersion
+
+# Check we don't crash with a single - in arguments
+LoneDash
