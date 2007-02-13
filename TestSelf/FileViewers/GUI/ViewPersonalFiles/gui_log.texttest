@@ -11,7 +11,14 @@ Viewing action with title '_Quit', stock id ''gtk-quit'', accelerator ''<control
 Viewing action with title '_Select', stock id ''gtk-refresh'', accelerator ''<control>s''
 Viewing action with title '_Run', stock id ''gtk-execute'', accelerator ''<control>r'' (greyed out)
 Viewing action with title 'R_eset', stock id ''gtk-revert-to-saved'', accelerator ''<control>e''
+Viewing action with title '_Rename...', stock id ''gtk-italic'', accelerator ''<control>m'' (greyed out)
 Viewing action with title 'Remove...', stock id ''gtk-delete'' (greyed out)
+Viewing action with title '_Sort Suite', stock id ''gtk-sort-ascending'' (greyed out)
+Viewing action with title '_Reversed Sort Suite', stock id ''gtk-sort-descending'' (greyed out)
+Viewing action with title 'Move to first', stock id ''gtk-goto-top'', accelerator ''<control>Home'' (greyed out)
+Viewing action with title 'Move up', stock id ''gtk-go-up'', accelerator ''<control>Page_Up'' (greyed out)
+Viewing action with title 'Move down', stock id ''gtk-go-down'', accelerator ''<control>Page_Down'' (greyed out)
+Viewing action with title 'Move to last', stock id ''gtk-goto-bottom'', accelerator ''<control>End'' (greyed out)
 Viewing action with title 'S_ave Selection...', stock id ''gtk-save-as'', accelerator ''<control><shift>s'' (greyed out)
 
 UI layout: 
@@ -23,7 +30,17 @@ UI layout:
       <menuitem name="Quit" action="Quit"/>
     </menu>
     <menu name="editmenu" action="editmenu">
+      <menuitem name="Rename..." action="Rename..."/>
       <menuitem name="Remove..." action="Remove..."/>
+      <separator/>
+      <menuitem name="Move to first" action="Move to first"/>
+      <menuitem name="Move up" action="Move up"/>
+      <menuitem name="Move down" action="Move down"/>
+      <menuitem name="Move to last" action="Move to last"/>
+      <separator/>
+      <menuitem name="Sort Suite" action="Sort Suite"/>
+      <menuitem name="Reversed Sort Suite" action="Reversed Sort Suite"/>
+      <separator/>
     </menu>
     <menu name="viewmenu" action="viewmenu">
       <menuitem name="Toolbar" action="Toolbar"/>
@@ -43,12 +60,26 @@ UI layout:
     <toolitem name="Run" action="Run"/>
     <toolitem name="Reset" action="Reset"/>
     <separator/>
+    <toolitem name="Move up" action="Move up"/>
+    <toolitem name="Move down" action="Move down"/>
+    <toolitem name="Rename..." action="Rename..."/>
     <toolitem name="Remove..." action="Remove..."/>
     <separator/>
   </toolbar>
   <popup name="TestPopupMenu">
+    <menuitem name="Rename..." action="Rename..."/>
     <menuitem name="Remove..." action="Remove..."/>
     <separator/>
+    <menu name="reorderpopupmenu" action="reorderpopupmenu">
+      <menuitem name="Move to first" action="Move to first"/>
+      <menuitem name="Move up" action="Move up"/>
+      <menuitem name="Move down" action="Move down"/>
+      <menuitem name="Move to last" action="Move to last"/>
+      <separator/>
+      <menuitem name="Sort Suite" action="Sort Suite"/>
+      <menuitem name="Reversed Sort Suite" action="Reversed Sort Suite"/>
+      <separator/>
+    </menu>
   </popup>
 </ui>
 
@@ -74,7 +105,7 @@ Viewing check button for switch 'Select in collapsed suites'
 Viewing radio button for switch 'Current selection:', options Discard/Refine/Extend/Exclude'. Default value 0.
 Viewing action with title '_Select'
 
-Changing GUI status to: 'TextTest started at 07Feb15:25:13.'
+Changing GUI status to: 'TextTest started at 13Feb22:35:47.'
 
 'view options for' event created with arguments 'Config'
 
@@ -84,7 +115,7 @@ Adding file .texttest_gtk under heading 'Personal Files', coloured purple
 Adding file config.hello under heading 'Files for HELLO', coloured purple
 
 'select application file' event created with arguments '.texttest'
-Viewing file /users/geoff/texttesttmp/texttest.07Feb152510/TestSelf/FileViewers/GUI/ViewPersonalFiles/personaldir/.texttest using 'emacs', refresh set to 0
+Viewing file /users/mattias/texttesttmp/texttest.13Feb223516/TestSelf/FileViewers/GUI/ViewPersonalFiles/personaldir/.texttest using 'emacs', refresh set to 0
 
 Changing GUI status to: 'Started "emacs .texttest" in background.'
 

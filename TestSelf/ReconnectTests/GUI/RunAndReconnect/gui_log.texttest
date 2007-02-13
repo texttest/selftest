@@ -10,7 +10,14 @@ Viewing action with title '_Quit', stock id ''gtk-quit'', accelerator ''<control
 Viewing action with title '_Select', stock id ''gtk-refresh'', accelerator ''<control>s''
 Viewing action with title '_Run', stock id ''gtk-execute'', accelerator ''<control>r'' (greyed out)
 Viewing action with title 'R_eset', stock id ''gtk-revert-to-saved'', accelerator ''<control>e''
+Viewing action with title '_Rename...', stock id ''gtk-italic'', accelerator ''<control>m'' (greyed out)
 Viewing action with title 'Remove...', stock id ''gtk-delete'' (greyed out)
+Viewing action with title '_Sort Suite', stock id ''gtk-sort-ascending'' (greyed out)
+Viewing action with title '_Reversed Sort Suite', stock id ''gtk-sort-descending'' (greyed out)
+Viewing action with title 'Move to first', stock id ''gtk-goto-top'', accelerator ''<control>Home'' (greyed out)
+Viewing action with title 'Move up', stock id ''gtk-go-up'', accelerator ''<control>Page_Up'' (greyed out)
+Viewing action with title 'Move down', stock id ''gtk-go-down'', accelerator ''<control>Page_Down'' (greyed out)
+Viewing action with title 'Move to last', stock id ''gtk-goto-bottom'', accelerator ''<control>End'' (greyed out)
 Viewing action with title 'S_ave Selection...', stock id ''gtk-save-as'', accelerator ''<control><shift>s'' (greyed out)
 
 UI layout: 
@@ -22,7 +29,17 @@ UI layout:
       <menuitem name="Quit" action="Quit"/>
     </menu>
     <menu name="editmenu" action="editmenu">
+      <menuitem name="Rename..." action="Rename..."/>
       <menuitem name="Remove..." action="Remove..."/>
+      <separator/>
+      <menuitem name="Move to first" action="Move to first"/>
+      <menuitem name="Move up" action="Move up"/>
+      <menuitem name="Move down" action="Move down"/>
+      <menuitem name="Move to last" action="Move to last"/>
+      <separator/>
+      <menuitem name="Sort Suite" action="Sort Suite"/>
+      <menuitem name="Reversed Sort Suite" action="Reversed Sort Suite"/>
+      <separator/>
     </menu>
     <menu name="viewmenu" action="viewmenu">
       <menuitem name="Toolbar" action="Toolbar"/>
@@ -42,12 +59,26 @@ UI layout:
     <toolitem name="Run" action="Run"/>
     <toolitem name="Reset" action="Reset"/>
     <separator/>
+    <toolitem name="Move up" action="Move up"/>
+    <toolitem name="Move down" action="Move down"/>
+    <toolitem name="Rename..." action="Rename..."/>
     <toolitem name="Remove..." action="Remove..."/>
     <separator/>
   </toolbar>
   <popup name="TestPopupMenu">
+    <menuitem name="Rename..." action="Rename..."/>
     <menuitem name="Remove..." action="Remove..."/>
     <separator/>
+    <menu name="reorderpopupmenu" action="reorderpopupmenu">
+      <menuitem name="Move to first" action="Move to first"/>
+      <menuitem name="Move up" action="Move up"/>
+      <menuitem name="Move down" action="Move down"/>
+      <menuitem name="Move to last" action="Move to last"/>
+      <separator/>
+      <menuitem name="Sort Suite" action="Sort Suite"/>
+      <menuitem name="Reversed Sort Suite" action="Reversed Sort Suite"/>
+      <separator/>
+    </menu>
   </popup>
 </ui>
 
@@ -86,13 +117,18 @@ Viewing check button for switch 'Select in collapsed suites'
 Viewing radio button for switch 'Current selection:', options Discard/Refine/Extend/Exclude'. Default value 0.
 Viewing action with title '_Select'
 
-Changing GUI status to: 'TextTest started at 10Feb11:44:51.'
+Changing GUI status to: 'TextTest started at 13Feb22:36:10.'
 
 'set test selection to' event created with arguments 'A01'
 
 Test column header set to 'Tests: 1/11 selected'
 Setting sensitivity of action '_Run' to True
+Setting sensitivity of action '_Rename...' to True
 Setting sensitivity of action 'Remove...' to True
+Setting sensitivity of action 'Move to first' to True
+Setting sensitivity of action 'Move up' to True
+Setting sensitivity of action 'Move down' to True
+Setting sensitivity of action 'Move to last' to True
 Setting sensitivity of action 'S_ave Selection...' to True
 
 Setting file-view title to 'A01'
@@ -122,7 +158,7 @@ Viewing action with title '_Run'
 
 Viewing notebook page for 'Advanced'
 Viewing entry for option 'Configure self-diagnostics from' (set to '/users/mattias/work/master/Testing/Automatic/texttest')
-Viewing entry for option 'Write self-diagnostics to' (set to '/users/mattias/texttesttmp/texttest.10Feb114400/TestSelf/ReconnectTests/GUI/RunAndReconnect')
+Viewing entry for option 'Write self-diagnostics to' (set to '/users/mattias/texttesttmp/texttest.13Feb223516/TestSelf/ReconnectTests/GUI/RunAndReconnect')
 Viewing entry for option 'Run batch mode session'
 Viewing check button for switch 'Enable self-diagnostics'
 Viewing check button for switch '(Re-)record command-line or client-server traffic'
@@ -133,32 +169,32 @@ Viewing action with title '_Run'
 
 'run selected tests from tab' event created with arguments ''
 
-Changing GUI status to: 'Started 1 tests at 10Feb11:44:51.'
+Changing GUI status to: 'Started 1 tests at 13Feb22:36:11.'
 
 Waiting for application event 'dynamic GUI to be closed' to occur.
 
 Changing GUI status to: 'Updating files for DIP test-case A01    ...'
 Expected application event 'dynamic GUI to be closed' occurred, proceeding.
 
-Changing GUI status to: 'Done updating after dynamic run started at 10Feb11:44:51.'
+Changing GUI status to: 'Done updating after dynamic run started at 13Feb22:36:11.'
 
 'view sub-options for running :' event created with arguments 'Reconnect'
 
 Viewing notebook page for 'Reconnect'
 Viewing entry for option 'Version to reconnect to'
-Viewing entry for option 'Temporary result directory' (set to '/users/mattias/texttesttmp/texttest.10Feb114400/TestSelf/ReconnectTests/GUI/RunAndReconnect/texttesttmp')
+Viewing entry for option 'Temporary result directory' (set to '/users/mattias/texttesttmp/texttest.13Feb223516/TestSelf/ReconnectTests/GUI/RunAndReconnect/texttesttmp')
 Viewing radio button for switch 'Results:', options Display as they were/Recompute from files'. Default value 0.
 Viewing action with title 'Re_connect'
 
 'reconnect to previously run tests' event created with arguments ''
 
-Changing GUI status to: 'Reconnected to 1 tests at 10Feb11:44:53.'
+Changing GUI status to: 'Reconnected to 1 tests at 13Feb22:36:14.'
 
 Waiting for application event 'reconnect GUI to be closed' to occur.
 
 Changing GUI status to: 'Updating files for DIP test-case A01    ...'
 Expected application event 'reconnect GUI to be closed' occurred, proceeding.
 
-Changing GUI status to: 'Done updating after dynamic run started at 10Feb11:44:53.'
+Changing GUI status to: 'Done updating after dynamic run started at 13Feb22:36:14.'
 
 'quit' event created with arguments ''

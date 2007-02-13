@@ -10,7 +10,14 @@ Viewing action with title '_Quit', stock id ''gtk-quit'', accelerator ''<control
 Viewing action with title '_Select', stock id ''gtk-refresh'', accelerator ''<control>s''
 Viewing action with title '_Run', stock id ''gtk-execute'', accelerator ''<control>r'' (greyed out)
 Viewing action with title 'R_eset', stock id ''gtk-revert-to-saved'', accelerator ''<control>e''
+Viewing action with title '_Rename...', stock id ''gtk-italic'', accelerator ''<control>m'' (greyed out)
 Viewing action with title 'Remove...', stock id ''gtk-delete'' (greyed out)
+Viewing action with title '_Sort Suite', stock id ''gtk-sort-ascending'' (greyed out)
+Viewing action with title '_Reversed Sort Suite', stock id ''gtk-sort-descending'' (greyed out)
+Viewing action with title 'Move to first', stock id ''gtk-goto-top'', accelerator ''<control>Home'' (greyed out)
+Viewing action with title 'Move up', stock id ''gtk-go-up'', accelerator ''<control>Page_Up'' (greyed out)
+Viewing action with title 'Move down', stock id ''gtk-go-down'', accelerator ''<control>Page_Down'' (greyed out)
+Viewing action with title 'Move to last', stock id ''gtk-goto-bottom'', accelerator ''<control>End'' (greyed out)
 Viewing action with title 'S_ave Selection...', stock id ''gtk-save-as'', accelerator ''<control><shift>s'' (greyed out)
 Viewing action with title 'Create Performance Report...' (greyed out)
 Viewing action with title '_Plot Graph', stock id ''gtk-clear'', accelerator ''<control>p'' (greyed out)
@@ -24,7 +31,17 @@ UI layout:
       <menuitem name="Quit" action="Quit"/>
     </menu>
     <menu name="editmenu" action="editmenu">
+      <menuitem name="Rename..." action="Rename..."/>
       <menuitem name="Remove..." action="Remove..."/>
+      <separator/>
+      <menuitem name="Move to first" action="Move to first"/>
+      <menuitem name="Move up" action="Move up"/>
+      <menuitem name="Move down" action="Move down"/>
+      <menuitem name="Move to last" action="Move to last"/>
+      <separator/>
+      <menuitem name="Sort Suite" action="Sort Suite"/>
+      <menuitem name="Reversed Sort Suite" action="Reversed Sort Suite"/>
+      <separator/>
     </menu>
     <menu name="viewmenu" action="viewmenu">
       <menuitem name="Toolbar" action="Toolbar"/>
@@ -49,13 +66,27 @@ UI layout:
     <toolitem name="Run" action="Run"/>
     <toolitem name="Reset" action="Reset"/>
     <separator/>
+    <toolitem name="Move up" action="Move up"/>
+    <toolitem name="Move down" action="Move down"/>
+    <toolitem name="Rename..." action="Rename..."/>
     <toolitem name="Remove..." action="Remove..."/>
     <separator/>
     <toolitem name="Plot Graph" action="Plot Graph"/>
   </toolbar>
   <popup name="TestPopupMenu">
+    <menuitem name="Rename..." action="Rename..."/>
     <menuitem name="Remove..." action="Remove..."/>
     <separator/>
+    <menu name="reorderpopupmenu" action="reorderpopupmenu">
+      <menuitem name="Move to first" action="Move to first"/>
+      <menuitem name="Move up" action="Move up"/>
+      <menuitem name="Move down" action="Move down"/>
+      <menuitem name="Move to last" action="Move to last"/>
+      <separator/>
+      <menuitem name="Sort Suite" action="Sort Suite"/>
+      <menuitem name="Reversed Sort Suite" action="Reversed Sort Suite"/>
+      <separator/>
+    </menu>
   </popup>
 </ui>
 
@@ -123,7 +154,7 @@ Viewing check button for switch 'Subproblems'
 Viewing check button for switch 'TargetJuniorImprove'
 Viewing action with title '_Select'
 
-Changing GUI status to: 'TextTest started at 25Jan18:22:03.'
+Changing GUI status to: 'TextTest started at 13Feb22:57:12.'
 
 'check simpleassign' event created with arguments ''
 
@@ -138,7 +169,10 @@ Marking 1 tests as selected
 
 Test column header set to 'Tests: 1/8 selected'
 Setting sensitivity of action '_Run' to True
+Setting sensitivity of action '_Rename...' to True
 Setting sensitivity of action 'Remove...' to True
+Setting sensitivity of action 'Move to first' to True
+Setting sensitivity of action 'Move up' to True
 Setting sensitivity of action 'S_ave Selection...' to True
 Setting sensitivity of action 'Create Performance Report...' to True
 Setting sensitivity of action '_Plot Graph' to True

@@ -1,0 +1,235 @@
+Top Window title is TextTest static GUI : management of tests for DIP
+Default widget is <type 'gtk.TreeView'>
+Setting window width to 60% of screen.
+Setting window height to 83% of screen.
+
+Viewing toggle action with title '_Toolbar'
+Viewing toggle action with title '_Shortcut bar'
+Viewing toggle action with title '_Status bar'
+Viewing action with title '_Quit', stock id ''gtk-quit'', accelerator ''<control>q''
+Viewing action with title '_Select', stock id ''gtk-refresh'', accelerator ''<control>s''
+Viewing action with title '_Run', stock id ''gtk-execute'', accelerator ''<control>r'' (greyed out)
+Viewing action with title 'R_eset', stock id ''gtk-revert-to-saved'', accelerator ''<control>e''
+Viewing action with title '_Rename...', stock id ''gtk-italic'', accelerator ''<control>m'' (greyed out)
+Viewing action with title 'Remove...', stock id ''gtk-delete'' (greyed out)
+Viewing action with title '_Sort Suite', stock id ''gtk-sort-ascending'' (greyed out)
+Viewing action with title '_Reversed Sort Suite', stock id ''gtk-sort-descending'' (greyed out)
+Viewing action with title 'Move to first', stock id ''gtk-goto-top'', accelerator ''<control>Home'' (greyed out)
+Viewing action with title 'Move up', stock id ''gtk-go-up'', accelerator ''<control>Page_Up'' (greyed out)
+Viewing action with title 'Move down', stock id ''gtk-go-down'', accelerator ''<control>Page_Down'' (greyed out)
+Viewing action with title 'Move to last', stock id ''gtk-goto-bottom'', accelerator ''<control>End'' (greyed out)
+Viewing action with title 'S_ave Selection...', stock id ''gtk-save-as'', accelerator ''<control><shift>s'' (greyed out)
+
+UI layout: 
+<ui>
+  <menubar name="MainMenuBar">
+    <menu name="filemenu" action="filemenu">
+      <menuitem name="Save Selection..." action="Save Selection..."/>
+      <separator/>
+      <menuitem name="Quit" action="Quit"/>
+    </menu>
+    <menu name="editmenu" action="editmenu">
+      <menuitem name="Rename..." action="Rename..."/>
+      <menuitem name="Remove..." action="Remove..."/>
+      <separator/>
+      <menuitem name="Move to first" action="Move to first"/>
+      <menuitem name="Move up" action="Move up"/>
+      <menuitem name="Move down" action="Move down"/>
+      <menuitem name="Move to last" action="Move to last"/>
+      <separator/>
+      <menuitem name="Sort Suite" action="Sort Suite"/>
+      <menuitem name="Reversed Sort Suite" action="Reversed Sort Suite"/>
+      <separator/>
+    </menu>
+    <menu name="viewmenu" action="viewmenu">
+      <menuitem name="Toolbar" action="Toolbar"/>
+      <menuitem name="Shortcut bar" action="Shortcut bar"/>
+      <menuitem name="Status bar" action="Status bar"/>
+    </menu>
+    <menu name="actionsmenu" action="actionsmenu">
+      <menuitem name="Select" action="Select"/>
+      <menuitem name="Run" action="Run"/>
+      <menuitem name="Reset" action="Reset"/>
+    </menu>
+  </menubar>
+  <toolbar name="MainToolBar">
+    <toolitem name="Quit" action="Quit"/>
+    <separator/>
+    <toolitem name="Select" action="Select"/>
+    <toolitem name="Run" action="Run"/>
+    <toolitem name="Reset" action="Reset"/>
+    <separator/>
+    <toolitem name="Move up" action="Move up"/>
+    <toolitem name="Move down" action="Move down"/>
+    <toolitem name="Rename..." action="Rename..."/>
+    <toolitem name="Remove..." action="Remove..."/>
+    <separator/>
+  </toolbar>
+  <popup name="TestPopupMenu">
+    <menuitem name="Rename..." action="Rename..."/>
+    <menuitem name="Remove..." action="Remove..."/>
+    <separator/>
+    <menu name="reorderpopupmenu" action="reorderpopupmenu">
+      <menuitem name="Move to first" action="Move to first"/>
+      <menuitem name="Move up" action="Move up"/>
+      <menuitem name="Move down" action="Move down"/>
+      <menuitem name="Move to last" action="Move to last"/>
+      <separator/>
+      <menuitem name="Sort Suite" action="Sort Suite"/>
+      <menuitem name="Reversed Sort Suite" action="Reversed Sort Suite"/>
+      <separator/>
+    </menu>
+  </popup>
+</ui>
+
+Test Tree description...
+-> TargetApp (dip)
+->   Game9952
+->     S01.99
+->     A01
+->     S02
+->     A02
+->     S03
+->     A03
+->     S04
+->     A04
+->     S05
+->     A05
+->   npstIII
+->     Game47
+->       S01
+
+Test column header set to 'Tests: 0/11 selected'
+
+Pane separator positioned 50% from the left edge
+
+Tabs showing : Selection, Config
+
+Viewing notebook page for 'Selection'
+Viewing entry for option 'Tests for version' (drop-down list containing ['', '<default>'])
+Viewing entry for option 'Test names containing'
+Viewing entry for option 'Tests listed in file'
+Viewing entry for option 'Suite names containing'
+Viewing entry for option 'Result files containing'
+Viewing entry for option 'Result file to search' (set to 'output')
+Viewing entry for option 'Execution time'
+Viewing check button for switch 'Select in collapsed suites'
+Viewing radio button for switch 'Current selection:', options Discard/Refine/Extend/Exclude'. Default value 0.
+Viewing action with title '_Select'
+
+Changing GUI status to: 'TextTest started at 13Feb23:17:50.'
+
+'set test selection to' event created with arguments 'Game9952'
+Setting sensitivity of action 'Remove...' to True
+Setting sensitivity of action '_Sort Suite' to True
+Setting sensitivity of action '_Reversed Sort Suite' to True
+Setting sensitivity of action 'Move down' to True
+Setting sensitivity of action 'Move to last' to True
+
+Setting file-view title to 'Game9952'
+Adding file testsuite.dip under heading 'Definition Files', coloured pale green
+Adding file testsuite.dip.small under heading 'Definition Files', coloured pale green
+
+
+Tabs showing : Text Info, Adding Test, Adding Suite, New File, Bugs
+
+---------- Text Info Window ----------
+Description:
+<No description provided>
+--------------------------------------
+
+Tabs showing : Test, Selection, Config
+
+'sort selected test suite in alphabetical order' event created with arguments ''
+
+Changing GUI status to: 'Sorting DIP test-suite Game9952'
+
+Test Tree description...
+-> TargetApp (dip)
+->   Game9952
+->     A01
+->     A02
+->     A03
+->     A04
+->     A05
+->     S01.99
+->     S02
+->     S03
+->     S04
+->     S05
+->   npstIII
+->     Game47
+->       S01
+Marking 1 tests as selected
+
+Changing GUI status to: 'Sorted DIP test-suite Game9952 in alphabetical order.'
+
+'set test selection to' event created with arguments 'TargetApp'
+
+Setting file-view title to 'TargetApp'
+Adding file testsuite.dip under heading 'Definition Files', coloured pale green
+
+---------- Text Info Window ----------
+Description:
+Root test suite
+--------------------------------------
+Setting sensitivity of action '_Rename...' to False
+Setting sensitivity of action 'Move down' to False
+Setting sensitivity of action 'Move to last' to False
+
+'sort selected test suite in reversed alphabetical order' event created with arguments ''
+
+Changing GUI status to: 'Sorting DIP test-suite TargetApp'
+
+Test Tree description...
+-> TargetApp (dip)
+->   npstIII
+->     Game47
+->       S01
+->   Game9952
+
+Test Tree description...
+-> TargetApp (dip)
+->   npstIII
+->     Game47
+->       S01
+->   Game9952
+
+Test Tree description...
+-> TargetApp (dip)
+->   npstIII
+->     Game47
+->       S01
+->   Game9952
+->     A01
+->     A02
+->     A03
+->     A04
+->     A05
+->     S01.99
+->     S02
+->     S03
+->     S04
+->     S05
+
+Test Tree description...
+-> TargetApp (dip)
+->   npstIII
+->     Game47
+->       S01
+->   Game9952
+->     A01
+->     A02
+->     A03
+->     A04
+->     A05
+->     S01.99
+->     S02
+->     S03
+->     S04
+->     S05
+Marking 1 tests as selected
+
+Changing GUI status to: 'Sorted DIP test-suite TargetApp in reversed alphabetical order.'
+
+'quit' event created with arguments ''
