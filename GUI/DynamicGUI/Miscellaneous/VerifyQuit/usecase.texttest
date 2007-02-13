@@ -1,11 +1,12 @@
 wait for completion of test actions
-set test selection to A02
-select file output.dip
-set test selection to A04
-select file output.dip
+set test selection to Test
+select file output.hello
+view sub-options for test : Viewing
+uncheck show differences where present
+select file output.hello
 quit
 answer no to texttest query
-terminate process that shows graphical differences in test files
+terminate process that views and edits test files
 quit
 answer no to texttest query
 quit
