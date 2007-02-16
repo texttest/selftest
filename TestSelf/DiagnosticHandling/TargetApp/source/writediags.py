@@ -4,9 +4,7 @@ import os, log4py
 print "This is a simple diagnostic-writing program"
 
 # Point log4py at the configuration file to read
-diagFile = os.path.join(os.environ["TESTDIAG_READDIR"], "log4py.conf")
-if os.path.isfile(diagFile):
-    rootLogger = log4py.Logger(log4py.TRUE, diagFile)
+rootLogger = log4py.Logger(log4py.TRUE, os.getenv("TESTDIAG_READFILE"))
 
 if os.environ.has_key("LOG_LEVEL"):
     print "The trace level has been set to", os.environ["LOG_LEVEL"]

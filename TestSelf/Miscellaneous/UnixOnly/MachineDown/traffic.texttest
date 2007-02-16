@@ -2,6 +2,6 @@
 ->ERR:stupid_machine1: Unknown host
 <-CMD:rsh stupid_machine2 "ps -efl | grep Xvfb | grep -v grep"
 ->OUT:No processes!
-<-CMD:rsh stupid_machine2 "Xvfb :42 > /dev/null 2>&1 &"
-<-CMD:rsh stupid_machine2 "xclock -display stupid_machine2:42.0 > /dev/null 2>&1 &"
-<-CMD:rsh stupid_machine2 "xterm -display stupid_machine2:42.0 -e xhost + > /dev/null 2>&1 &"
+<-CMD:rsh stupid_machine2 "Xvfb :42 &"
+<-CMD:rsh stupid_machine2 "xclock -display stupid_machine2:42.0 &"
+<-CMD:rsh stupid_machine2 "xterm -display stupid_machine2:42.0 -e xhost + &"

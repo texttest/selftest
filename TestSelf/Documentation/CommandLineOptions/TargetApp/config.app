@@ -1,7 +1,7 @@
 config_module:queuesystem
 
 [diagnostics]
-configuration_file:nonsense
+configuration_file_variable:nonsense
 trace_level_variable:nonsense
 [end]
 

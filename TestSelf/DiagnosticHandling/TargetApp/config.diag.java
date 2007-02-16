@@ -4,7 +4,6 @@ interpreter:java
 
 [diagnostics]
 properties_file:myprops
-input_directory_variable:testdiag_readdir
+configuration_file_variable:testdiag_readfile
 write_directory_variable:testdiag_writedir
-configuration_file:log4j.properties
 [end]
