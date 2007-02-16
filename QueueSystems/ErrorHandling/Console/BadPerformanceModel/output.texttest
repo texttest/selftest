@@ -1,7 +1,13 @@
-TextTest will write diagnostics in /users/geoff/texttesttmp/texttest.lsfgeoff10Jul105727/QueueSystems/Console/BadPerformanceModel based on file at /users/geoff/work/master/Testing/Automatic/texttest/log4py.conf
+TextTest will write diagnostics in /users/geoff/texttesttmp/texttest.lsf.16Feb182238/QueueSystems/ErrorHandling/Console/BadPerformanceModel based on file at /users/geoff/work/master/Testing/Automatic/texttest/logging.texttest
 Using Application SLEEP, version badperfmodel
 Submitting SLEEP test-suite TargetApp to LSF queues
   Submitting SLEEP test-case Basic  to default LSF queue
-  SLEEP test-case Basic  not compared:  Failed to submit to LSF (Bad resource requirement syntax. Job not submitted.)
+  SLEEP test-case Basic  not compared:
+Failed to submit to LSF (Bad resource requirement syntax. Job not submitted.)
+Submission command was 'bsub -J Test-Basic-SLEEP.badperfmodel -R "model==no_such_model " -u nobody -o framework_tmp/slavelog -e framework_tmp/slaveerrs $TARGET_QS_SUBMIT_ARG ... '
+
   Submitting SLEEP test-case Basic2 to default LSF queue
-  SLEEP test-case Basic2 not compared:  Failed to submit to LSF (Bad resource requirement syntax. Job not submitted.)
+  SLEEP test-case Basic2 not compared:
+Failed to submit to LSF (Bad resource requirement syntax. Job not submitted.)
+Submission command was 'bsub -J Test-Basic2-SLEEP.badperfmodel -R "model==no_such_model " -u nobody -o framework_tmp/slavelog -e framework_tmp/slaveerrs $TARGET_QS_SUBMIT_ARG ... '
+
