@@ -1,4 +1,4 @@
-Top Window title is TextTest dynamic GUI (tests started at 06Feb13:55:56)
+Top Window title is TextTest dynamic GUI (tests started at 19Feb10:23:02)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -35,52 +35,53 @@ UI layout:
   </popup>
 </ui>
 
-Progress bar set to fraction 0.0, text '0 of 3 tests completed'
+Progress bar set to fraction 0.0, text '0 of 4 tests completed'
 
 Test Tree description...
 -> TargetApp (perf)
 ->   Success
 ->   Failures
 ->   FailuresCurrBelowLimit
+->   FailuresZeroTime
 
-Test column header set to 'Tests: 0/3 selected, none hidden'
+Test column header set to 'Tests: 0/4 selected, none hidden'
 
 Pane separator positioned 50% from the left edge
 
 Tabs showing : Status
 
 Test progress:
---> Not started : 3, colour 'white', font 'bold'
+--> Not started : 4, colour 'white', font 'bold'
 
-Changing GUI status to: 'TextTest started at 06Feb13:55:56.'
+Changing GUI status to: 'TextTest started at 19Feb10:23:03.'
 
 Waiting for application event 'completion of test actions' to occur.
 Redrawing test Success coloured yellow
 
 Test progress:
---> Not started : 2, colour 'white', font 'bold'
+--> Not started : 3, colour 'white', font 'bold'
 --> Running : 1, colour 'yellow', font 'bold'
 Redrawing test Success coloured green
 
-Progress bar set to fraction 0.333333333333, text '1 of 3 tests completed'
+Progress bar set to fraction 0.25, text '1 of 4 tests completed'
 
 Test progress:
---> Not started : 2, colour 'white', font 'bold'
+--> Not started : 3, colour 'white', font 'bold'
 --> Running : 0, colour 'white', font ''
 --> Succeeded : 1, colour 'green', font 'bold'
 Redrawing test Failures coloured yellow
 
 Test progress:
---> Not started : 1, colour 'white', font 'bold'
+--> Not started : 2, colour 'white', font 'bold'
 --> Running : 1, colour 'yellow', font 'bold'
 --> Succeeded : 1, colour 'green', font 'bold'
 Redrawing test Failures coloured green
 (Second column '100% faster' coloured red)
 
-Progress bar set to fraction 0.666666666667, text '2 of 3 tests completed (1 tests failed)'
+Progress bar set to fraction 0.5, text '2 of 4 tests completed (1 tests failed)'
 
 Test progress:
---> Not started : 1, colour 'white', font 'bold'
+--> Not started : 2, colour 'white', font 'bold'
 --> Running : 0, colour 'white', font ''
 --> Succeeded : 1, colour 'green', font 'bold'
 --> Failed : 1, colour 'red', font 'bold'
@@ -89,7 +90,7 @@ Test progress:
 Redrawing test FailuresCurrBelowLimit coloured yellow
 
 Test progress:
---> Not started : 0, colour 'white', font ''
+--> Not started : 1, colour 'white', font 'bold'
 --> Running : 1, colour 'yellow', font 'bold'
 --> Succeeded : 1, colour 'green', font 'bold'
 --> Failed : 1, colour 'red', font 'bold'
@@ -98,21 +99,45 @@ Test progress:
 Redrawing test FailuresCurrBelowLimit coloured green
 (Second column '150% slower' coloured red)
 
-Progress bar set to fraction 1.0, text 'All 3 tests completed at 06Feb13:55:57 (2 tests failed)'
+Progress bar set to fraction 0.75, text '3 of 4 tests completed (2 tests failed)'
 
 Test progress:
---> Not started : 0, colour 'white', font ''
+--> Not started : 1, colour 'white', font 'bold'
 --> Running : 0, colour 'white', font ''
 --> Succeeded : 1, colour 'green', font 'bold'
 --> Failed : 2, colour 'red', font 'bold'
 ----> Performance differences : 2, colour 'red', font 'bold'
 ------> Faster : 1, colour 'red', font 'bold'
 ------> Slower : 1, colour 'red', font 'bold'
+Redrawing test FailuresZeroTime coloured yellow
+
+Test progress:
+--> Not started : 0, colour 'white', font ''
+--> Running : 1, colour 'yellow', font 'bold'
+--> Succeeded : 1, colour 'green', font 'bold'
+--> Failed : 2, colour 'red', font 'bold'
+----> Performance differences : 2, colour 'red', font 'bold'
+------> Faster : 1, colour 'red', font 'bold'
+------> Slower : 1, colour 'red', font 'bold'
+Redrawing test FailuresZeroTime coloured green
+(Second column 'infinitely slower' coloured red)
+
+Progress bar set to fraction 1.0, text 'All 4 tests completed at 19Feb10:23:04 (3 tests failed)'
+
+Test progress:
+--> Not started : 0, colour 'white', font ''
+--> Running : 0, colour 'white', font ''
+--> Succeeded : 1, colour 'green', font 'bold'
+--> Failed : 3, colour 'red', font 'bold'
+----> Performance differences : 3, colour 'red', font 'bold'
+------> Faster : 1, colour 'red', font 'bold'
+------> Slower : 1, colour 'red', font 'bold'
+------> Infinitely slower : 1, colour 'red', font 'bold'
 Expected application event 'completion of test actions' occurred, proceeding.
 
 'set test selection to' event created with arguments 'Failures'
 
-Test column header set to 'Tests: 1/3 selected, none hidden'
+Test column header set to 'Tests: 1/4 selected, none hidden'
 Setting sensitivity of action '_Save' to True
 Setting sensitivity of action 'S_ave Selection...' to True
 
@@ -133,15 +158,15 @@ Test ran faster :
 < CPU time   :       10.0 sec. on sedom
 < Real time  :       18.2 sec.
 ---
-> Total Performance  :      5.0 seconds on painesville
+> Total Performance  :      5.0 seconds on knoxville
 --------------------------------------
 
 Tabs showing : Test, Status
 
 'select file' event created with arguments 'performance.perf'
 Starting graphical difference comparison using 'tkdiff':
--- original file : /users/geoff/texttesttmp/texttest.06Feb135414/TestSelf/PerformanceTests/GUI/RegisterFailure/TargetApp/Failures/performance.perf
---  current file : /users/geoff/texttesttmp/texttest.06Feb135414/TestSelf/PerformanceTests/GUI/RegisterFailure/texttesttmp/perf.06Feb135556/Failures/performance.perf
+-- original file : /users/mattias/texttesttmp/texttest.19Feb102258/TestSelf/PerformanceTests/GUI/RegisterFailure/TargetApp/Failures/performance.perf
+--  current file : /users/mattias/texttesttmp/texttest.19Feb102258/TestSelf/PerformanceTests/GUI/RegisterFailure/texttesttmp/perf.19Feb102302/Failures/performance.perf
 
 Changing GUI status to: 'Started "tkdiff performance.perf performance.perf" in background (from test Failures).'
 
@@ -169,7 +194,7 @@ Setting file-view title to 'Failures'
 Adding file errors.perf under heading 'Comparison Files', coloured green
 Adding file output.perf under heading 'Comparison Files', coloured green
 Adding file performance.perf under heading 'Comparison Files', coloured green
-Progress bar detected save, new text is 'All 3 tests completed at 06Feb13:55:57 (1 tests failed)'
+Progress bar detected save, new text is 'All 4 tests completed at 19Feb10:23:04 (2 tests failed)'
 
 Changing GUI status to: 'Saved 1 tests.'
 

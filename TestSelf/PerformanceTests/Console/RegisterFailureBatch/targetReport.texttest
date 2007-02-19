@@ -1,5 +1,5 @@
-faster=1,slower=1,succeeded=1
-070103 PERF : 3 tests : 1 faster, 1 slower
+faster=1,slower=2,succeeded=1
+070219 PERF : 4 tests : 1 faster, 2 slower
 
 Summary of all Unsuccessful tests follows...
 ---------------------------------------------------------------------------------
@@ -10,6 +10,7 @@ In PERF test-suite TargetApp:
 The following tests ran slower : 
 In PERF test-suite TargetApp:
   - PERF test-case FailuresCurrBelowLimit : 150% slower
+  - PERF test-case FailuresZeroTime       : infinitely slower
 
 
 Details of all Unsuccessful tests follows...
@@ -17,23 +18,31 @@ Details of all Unsuccessful tests follows...
 
 Detailed information for the tests that ran faster follows...
 --------------------------------------------------------
-TEST ran faster on bellville : PERF test-case Failures               (under Failures)
+TEST ran faster on pennsville : PERF test-case Failures               (under Failures)
 ------------------ Differences in performance(faster) --------------------
 1,2c1
 < CPU time   :       10.0 sec. on sedom
 < Real time  :       18.2 sec.
 ---
-> Total Performance  :      5.0 seconds on bellville
+> Total Performance  :      5.0 seconds on pennsville
 
 Detailed information for the tests that ran slower follows...
 --------------------------------------------------------
-TEST ran slower on bellville : PERF test-case FailuresCurrBelowLimit (under FailuresCurrBelowLimit)
+TEST ran slower on pennsville : PERF test-case FailuresCurrBelowLimit (under FailuresCurrBelowLimit)
 ------------------ Differences in performance(slower) --------------------
 1,2c1
 < CPU time   :       2.0 sec. on sedom
 < Real time  :       18.2 sec.
 ---
-> Total Performance  :      5.0 seconds on bellville
+> Total Performance  :      5.0 seconds on pennsville
+--------------------------------------------------------
+TEST ran slower on pennsville : PERF test-case FailuresZeroTime       (under FailuresZeroTime)
+------------------ Differences in performance(slower) --------------------
+1,2c1
+< CPU time   :       0.0 sec. on sedom
+< Real time  :       18.2 sec.
+---
+> Total Performance  :      5.0 seconds on pennsville
 
 Summary of all Successful tests follows...
 ---------------------------------------------------------------------------------
