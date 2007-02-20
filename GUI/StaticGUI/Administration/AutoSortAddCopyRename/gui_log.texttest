@@ -1,0 +1,460 @@
+Top Window title is TextTest static GUI : management of tests for DIP
+Default widget is <type 'gtk.TreeView'>
+Setting window width to 60% of screen.
+Setting window height to 83% of screen.
+
+Viewing toggle action with title '_Toolbar'
+Viewing toggle action with title '_Shortcut bar'
+Viewing toggle action with title '_Status bar'
+Viewing action with title '_Quit', stock id ''gtk-quit'', accelerator ''<control>q''
+Viewing action with title '_Select', stock id ''gtk-refresh'', accelerator ''<control>s''
+Viewing action with title '_Run', stock id ''gtk-execute'', accelerator ''<control>r'' (greyed out)
+Viewing action with title 'R_eset', stock id ''gtk-revert-to-saved'', accelerator ''<control>e''
+Viewing action with title '_Rename...', stock id ''gtk-italic'', accelerator ''<control>m'' (greyed out)
+Viewing action with title 'Remove...', stock id ''gtk-delete'' (greyed out)
+Viewing action with title '_Sort Suite', stock id ''gtk-sort-ascending'' (greyed out)
+Viewing action with title '_Reversed Sort Suite', stock id ''gtk-sort-descending'' (greyed out)
+Viewing action with title 'Move to first', stock id ''gtk-goto-top'', accelerator ''<control>Home'' (greyed out)
+Viewing action with title 'Move up', stock id ''gtk-go-up'', accelerator ''<control>Page_Up'' (greyed out)
+Viewing action with title 'Move down', stock id ''gtk-go-down'', accelerator ''<control>Page_Down'' (greyed out)
+Viewing action with title 'Move to last', stock id ''gtk-goto-bottom'', accelerator ''<control>End'' (greyed out)
+Viewing action with title 'Re_connect', stock id ''gtk-connect'', accelerator ''<control><shift>r'' (greyed out)
+Viewing action with title 'S_ave Selection...', stock id ''gtk-save-as'', accelerator ''<control><shift>s'' (greyed out)
+
+UI layout: 
+<ui>
+  <menubar name="MainMenuBar">
+    <menu name="filemenu" action="filemenu">
+      <menuitem name="Save Selection..." action="Save Selection..."/>
+      <separator/>
+      <menuitem name="Quit" action="Quit"/>
+    </menu>
+    <menu name="editmenu" action="editmenu">
+      <menuitem name="Rename..." action="Rename..."/>
+      <menuitem name="Remove..." action="Remove..."/>
+      <separator/>
+      <menuitem name="Move to first" action="Move to first"/>
+      <menuitem name="Move up" action="Move up"/>
+      <menuitem name="Move down" action="Move down"/>
+      <menuitem name="Move to last" action="Move to last"/>
+      <separator/>
+      <menuitem name="Sort Suite" action="Sort Suite"/>
+      <menuitem name="Reversed Sort Suite" action="Reversed Sort Suite"/>
+      <separator/>
+    </menu>
+    <menu name="viewmenu" action="viewmenu">
+      <menuitem name="Toolbar" action="Toolbar"/>
+      <menuitem name="Shortcut bar" action="Shortcut bar"/>
+      <menuitem name="Status bar" action="Status bar"/>
+    </menu>
+    <menu name="actionsmenu" action="actionsmenu">
+      <menuitem name="Select" action="Select"/>
+      <menuitem name="Run" action="Run"/>
+      <menuitem name="Reconnect" action="Reconnect"/>
+      <menuitem name="Reset" action="Reset"/>
+    </menu>
+  </menubar>
+  <toolbar name="MainToolBar">
+    <toolitem name="Quit" action="Quit"/>
+    <separator/>
+    <toolitem name="Select" action="Select"/>
+    <toolitem name="Run" action="Run"/>
+    <toolitem name="Reset" action="Reset"/>
+    <separator/>
+    <toolitem name="Move up" action="Move up"/>
+    <toolitem name="Move down" action="Move down"/>
+    <toolitem name="Rename..." action="Rename..."/>
+    <toolitem name="Remove..." action="Remove..."/>
+    <separator/>
+  </toolbar>
+  <popup name="TestPopupMenu">
+    <menuitem name="Rename..." action="Rename..."/>
+    <menuitem name="Remove..." action="Remove..."/>
+    <separator/>
+    <menu name="reorderpopupmenu" action="reorderpopupmenu">
+      <menuitem name="Move to first" action="Move to first"/>
+      <menuitem name="Move up" action="Move up"/>
+      <menuitem name="Move down" action="Move down"/>
+      <menuitem name="Move to last" action="Move to last"/>
+      <separator/>
+      <menuitem name="Sort Suite" action="Sort Suite"/>
+      <menuitem name="Reversed Sort Suite" action="Reversed Sort Suite"/>
+      <separator/>
+    </menu>
+  </popup>
+</ui>
+
+Test Tree description...
+-> TargetApp (dip)
+->   Game9952
+->     A01
+->     A02
+->     A03
+->     A04
+->     A05
+->     S01.99
+->     S02
+->     S03
+->     S04
+->     S05
+->   npstIII
+->     Game47
+->       S01
+
+Test column header set to 'Tests: 0/11 selected'
+
+Pane separator positioned 50% from the left edge
+
+Tabs showing : Selection, Config
+
+Viewing notebook page for 'Selection'
+Viewing entry for option 'Tests for version' (drop-down list containing ['', '<default>'])
+Viewing entry for option 'Test names containing'
+Viewing entry for option 'Tests listed in file'
+Viewing entry for option 'Suite names containing'
+Viewing entry for option 'Result files containing'
+Viewing entry for option 'Result file to search' (set to 'output')
+Viewing entry for option 'Execution time'
+Viewing check button for switch 'Select in collapsed suites'
+Viewing radio button for switch 'Current selection:', options Discard/Refine/Extend/Exclude'. Default value 0.
+Viewing action with title '_Select'
+
+Changing GUI status to: 'TextTest started at 21Feb00:12:53.'
+
+'set test selection to' event created with arguments 'A05'
+
+Test column header set to 'Tests: 1/11 selected'
+Setting sensitivity of action '_Run' to True
+Setting sensitivity of action '_Rename...' to True
+Setting sensitivity of action 'Remove...' to True
+Setting sensitivity of action 'Re_connect' to True
+Setting sensitivity of action 'S_ave Selection...' to True
+
+Setting file-view title to 'A05'
+Adding file output.dip under heading 'Standard Files', coloured pale green
+Adding file input.dip under heading 'Definition Files', coloured pale green
+
+
+Tabs showing : Text Info, Copying, New File, Bugs
+
+---------- Text Info Window ----------
+Description:
+<No description provided>
+--------------------------------------
+
+Tabs showing : Test, Selection, Running, Config
+
+'view sub-options for test :' event created with arguments 'Copying'
+
+Viewing notebook page for 'Copying'
+Viewing entry for option 'Name of copy' (set to 'A05_copy')
+Viewing entry for option 'Description' (set to 'Copy of A05')
+Viewing entry for option 'Copy to suite' (set to 'current') (drop-down list containing ['current', 'TargetApp', 'TargetApp/Game9952', 'TargetApp/npstIII', 'TargetApp/npstIII/Game47'])
+Viewing entry for option 'Place copy' (set to 'last in suite') (drop-down list containing ['first in suite', 'after A01', 'after A02', 'after A03', 'after A04', 'after A05', 'after S01.99', 'after S02', 'after S03', 'after S04', 'after S05', 'last in suite'])
+Viewing check button for switch 'Keep original' (checked)
+Viewing action with title '_Copy'
+
+'enter name of copy =' event created with arguments 'A04_copy'
+
+'copy test' event created with arguments ''
+Adding Test A04_copy under test suite DIP test-suite Game9952, placed last in suite
+
+Test column header set to 'Tests: 1/12 selected'
+Selecting new test A04_copy
+Marking 1 tests as selected
+
+Setting file-view title to 'A04__copy'
+Adding file output.dip under heading 'Standard Files', coloured pale green
+Adding file input.dip under heading 'Definition Files', coloured pale green
+
+Viewing notebook page for 'Copying'
+Viewing entry for option 'Name of copy' (set to 'A04_copy_copy')
+Viewing entry for option 'Description' (set to 'Copy of A05')
+Viewing entry for option 'Copy to suite' (set to 'current') (drop-down list containing ['current', 'TargetApp', 'TargetApp/Game9952', 'TargetApp/npstIII', 'TargetApp/npstIII/Game47'])
+Viewing entry for option 'Place copy' (set to 'last in suite') (drop-down list containing ['first in suite', 'after A01', 'after A02', 'after A03', 'after A04', 'after A05', 'after S01.99', 'after S02', 'after S03', 'after S04', 'after S05', 'after A04_copy', 'last in suite'])
+Viewing check button for switch 'Keep original' (checked)
+Viewing action with title '_Copy'
+
+Test Tree description...
+-> TargetApp (dip)
+->   Game9952
+->     A01
+->     A02
+->     A03
+->     A04
+->     A05
+->     S01.99
+->     S02
+->     S03
+->     S04
+->     S05
+->     A04_copy
+->   npstIII
+->     Game47
+->       S01
+
+Test Tree description...
+-> TargetApp (dip)
+->   Game9952
+->     A01
+->     A02
+->     A03
+->     A04
+->     A04_copy
+->     A05
+->     S01.99
+->     S02
+->     S03
+->     S04
+->     S05
+->   npstIII
+->     Game47
+->       S01
+Marking 1 tests as selected
+
+Changing GUI status to: 'Added new DIP test-case A04_copy'
+
+'set test selection to' event created with arguments 'S04'
+
+Setting file-view title to 'S04'
+Adding file output.dip under heading 'Standard Files', coloured pale green
+Adding file input.dip under heading 'Definition Files', coloured pale green
+
+Viewing notebook page for 'Copying'
+Viewing entry for option 'Name of copy' (set to 'S04_copy')
+Viewing entry for option 'Description' (set to 'Copy of S04')
+Viewing entry for option 'Copy to suite' (set to 'current') (drop-down list containing ['current', 'TargetApp', 'TargetApp/Game9952', 'TargetApp/npstIII', 'TargetApp/npstIII/Game47'])
+Viewing entry for option 'Place copy' (set to 'last in suite') (drop-down list containing ['first in suite', 'after A01', 'after A02', 'after A03', 'after A04', 'after A04_copy', 'after A05', 'after S01.99', 'after S02', 'after S03', 'after S04', 'after S05', 'last in suite'])
+Viewing check button for switch 'Keep original' (checked)
+Viewing action with title '_Copy'
+
+---------- Text Info Window ----------
+Description:
+<No description provided>
+--------------------------------------
+
+'rename selected test' event created with arguments ''
+
+'enter new name' event created with arguments 'S01.87'
+
+'press ok' event created with arguments ''
+
+Test column header set to 'Tests: 1/13 selected'
+Selecting new test S01.87
+Marking 1 tests as selected
+
+Setting file-view title to 'S01.87'
+Adding file output.dip under heading 'Standard Files', coloured pale green
+Adding file input.dip under heading 'Definition Files', coloured pale green
+
+---------- Text Info Window ----------
+Description:
+<No description provided>
+--------------------------------------
+
+Test Tree description...
+-> TargetApp (dip)
+->   Game9952
+->     A01
+->     A02
+->     A03
+->     A04
+->     A04_copy
+->     A05
+->     S01.99
+->     S02
+->     S03
+->     S01.87
+->     S04
+->     S05
+->   npstIII
+->     Game47
+->       S01
+
+Test column header set to 'Tests: 1/12 selected'
+Removing test with path Game9952/S04
+
+Test Tree description...
+-> TargetApp (dip)
+->   Game9952
+->     A01
+->     A02
+->     A03
+->     A04
+->     A04_copy
+->     A05
+->     S01.87
+->     S01.99
+->     S02
+->     S03
+->     S05
+->   npstIII
+->     Game47
+->       S01
+Marking 1 tests as selected
+
+Changing GUI status to: 'Renamed test S04 to S01.87'
+
+'set test selection to' event created with arguments 'Game9952'
+
+Test column header set to 'Tests: 0/12 selected'
+
+Setting file-view title to 'Game9952'
+Adding file testsuite.dip under heading 'Definition Files', coloured pale green
+Adding file testsuite.dip.small under heading 'Definition Files', coloured pale green
+
+---------- Text Info Window ----------
+Description:
+<No description provided>
+--------------------------------------
+Setting sensitivity of action '_Run' to False
+Setting sensitivity of action '_Rename...' to False
+Setting sensitivity of action 'Re_connect' to False
+Setting sensitivity of action 'S_ave Selection...' to False
+
+Tabs showing : Test, Selection, Config
+
+Tabs showing : Text Info, Adding Test, Adding Suite, New File, Bugs
+
+'view sub-options for test :' event created with arguments 'Adding Test'
+
+Viewing notebook page for 'Adding Test'
+Viewing entry for option 'Test Name'
+Viewing entry for option 'Test Description'
+Viewing entry for option 'Place Test' (set to 'last in suite') (drop-down list containing ['first in suite', 'after A01', 'after A02', 'after A03', 'after A04', 'after A04_copy', 'after A05', 'after S01.87', 'after S01.99', 'after S02', 'after S03', 'after S05', 'last in suite'])
+Viewing entry for option 'Command line options'
+Viewing action with title 'Add Test'
+
+'enter test name =' event created with arguments 'B01'
+
+'enter test description =' event created with arguments 'Correctly ordered?'
+
+'add test' event created with arguments ''
+Adding Test B01 under test suite DIP test-suite Game9952, placed last in suite
+Not creating options file
+
+Test column header set to 'Tests: 0/13 selected'
+Selecting new test B01
+Marking 1 tests as selected
+
+Test column header set to 'Tests: 1/13 selected'
+
+Setting file-view title to 'B01'
+Setting sensitivity of action '_Run' to True
+Setting sensitivity of action '_Rename...' to True
+Setting sensitivity of action 'Re_connect' to True
+Setting sensitivity of action 'S_ave Selection...' to True
+
+Tabs showing : Test, Selection, Running, Config
+
+---------- Text Info Window ----------
+Description:
+Correctly ordered?
+--------------------------------------
+
+Tabs showing : Text Info, Copying, New File, Bugs
+
+Test Tree description...
+-> TargetApp (dip)
+->   Game9952
+->     A01
+->     A02
+->     A03
+->     A04
+->     A04_copy
+->     A05
+->     S01.87
+->     S01.99
+->     S02
+->     S03
+->     S05
+->     B01
+->   npstIII
+->     Game47
+->       S01
+
+Test Tree description...
+-> TargetApp (dip)
+->   Game9952
+->     A01
+->     A02
+->     A03
+->     A04
+->     A04_copy
+->     A05
+->     B01
+->     S01.87
+->     S01.99
+->     S02
+->     S03
+->     S05
+->   npstIII
+->     Game47
+->       S01
+Marking 1 tests as selected
+
+Changing GUI status to: 'Added new DIP test-case B01'
+
+'rename selected test' event created with arguments ''
+
+'enter new name' event created with arguments 'S06'
+
+'press ok' event created with arguments ''
+
+Test column header set to 'Tests: 1/14 selected'
+Selecting new test S06
+Marking 1 tests as selected
+
+Setting file-view title to 'S06'
+
+---------- Text Info Window ----------
+Description:
+Correctly ordered?
+--------------------------------------
+
+Test Tree description...
+-> TargetApp (dip)
+->   Game9952
+->     A01
+->     A02
+->     A03
+->     A04
+->     A04_copy
+->     A05
+->     S06
+->     B01
+->     S01.87
+->     S01.99
+->     S02
+->     S03
+->     S05
+->   npstIII
+->     Game47
+->       S01
+
+Test column header set to 'Tests: 1/13 selected'
+Removing test with path Game9952/B01
+
+Test Tree description...
+-> TargetApp (dip)
+->   Game9952
+->     A01
+->     A02
+->     A03
+->     A04
+->     A04_copy
+->     A05
+->     S01.87
+->     S01.99
+->     S02
+->     S03
+->     S05
+->     S06
+->   npstIII
+->     Game47
+->       S01
+Marking 1 tests as selected
+
+Changing GUI status to: 'Renamed test B01 to S06'
+
+'quit' event created with arguments ''
