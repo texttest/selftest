@@ -1,4 +1,4 @@
-TextTest will write diagnostics in /users/geoff/texttesttmp/texttest.carmen.30Nov171409/carmen/matador/RaveCompile/StaticRuleset based on file at /users/geoff/work/master/Testing/Automatic/texttest/log4py.conf
+TextTest will write diagnostics in /carm/proj/matador2/publish/coach.texttest_tmp/texttest.master.i386_linux.carmen.19Feb210010/carmen/matador/RaveCompile/StaticRuleset based on file at /carm/proj/matador2/publish/master/Testing/Automatic/texttest/logging.texttest
 Using Application Matador, checkout /carm/proj/texttest/selftest_data
 Using Application Picador, version badqueue, checkout /carm/proj/texttest/selftest_data
 Submitting Rule Builds for Matador test-suite TargetApp to SGE queues
@@ -11,7 +11,10 @@ Submitting Rule Builds for Picador test-suite TargetApp to SGE queues
 Submitting Picador test-suite TargetApp to SGE queues
   Submitting Picador test-suite Picador to SGE queues
     Submitting Picador test-case illegal_pairings to SGE queue non_existent, requesting osversion=RHEL4,model=Opteron*,carmarch="*i386_linux*",carmrunmaster=1
-    Picador test-case illegal_pairings not compared:  Failed to submit to SGE (Unable to run job: unknown resource "non_existent".)
+    Picador test-case illegal_pairings not compared:
+Failed to submit to SGE (Unable to run job: unknown resource "non_existent".)
+Submission command was 'qsub -N Test-illegal_pairings.Picador-Picador.badqueue -p -2.54 -l osversion=RHEL4,model=Opteron*,carmarch="*i386_linux*",carmrunmaster=1,non_existent -w e -notify -m n -cwd -b y -V -o framework_tmp/slavelog -e framework_tmp/slaveerrs ... '
+
 Submitting Rule Builds for Matador test-suite TargetApp to SGE queues
   Submitting Rule Builds for Matador test-suite StaticLinkUser to SGE queues
     Submitting Rule Builds for Matador test-case all_1crew (Matador_CO ruleset) to SGE queue rave, requesting carmarch="*i386_linux*",carmbuildmaster=1
