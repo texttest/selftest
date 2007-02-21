@@ -12,8 +12,8 @@ Viewing action with title '_Run', stock id ''gtk-execute'', accelerator ''<contr
 Viewing action with title 'R_eset', stock id ''gtk-revert-to-saved'', accelerator ''<control>e''
 Viewing action with title '_Rename...', stock id ''gtk-italic'', accelerator ''<control>m'' (greyed out)
 Viewing action with title 'Remove...', stock id ''gtk-delete'' (greyed out)
-Viewing action with title '_Sort Suite', stock id ''gtk-sort-ascending'' (greyed out)
-Viewing action with title '_Reversed Sort Suite', stock id ''gtk-sort-descending'' (greyed out)
+Viewing action with title '_Sort Test Suite File', stock id ''gtk-sort-ascending'' (greyed out)
+Viewing action with title '_Reversed Sort Test Suite File', stock id ''gtk-sort-descending'' (greyed out)
 Viewing action with title 'Move to first', stock id ''gtk-goto-top'', accelerator ''<control>Home'' (greyed out)
 Viewing action with title 'Move up', stock id ''gtk-go-up'', accelerator ''<control>Page_Up'' (greyed out)
 Viewing action with title 'Move down', stock id ''gtk-go-down'', accelerator ''<control>Page_Down'' (greyed out)
@@ -38,8 +38,8 @@ UI layout:
       <menuitem name="Move down" action="Move down"/>
       <menuitem name="Move to last" action="Move to last"/>
       <separator/>
-      <menuitem name="Sort Suite" action="Sort Suite"/>
-      <menuitem name="Reversed Sort Suite" action="Reversed Sort Suite"/>
+      <menuitem name="Sort Test Suite File" action="Sort Test Suite File"/>
+      <menuitem name="Reversed Sort Test Suite File" action="Reversed Sort Test Suite File"/>
       <separator/>
     </menu>
     <menu name="viewmenu" action="viewmenu">
@@ -77,8 +77,8 @@ UI layout:
       <menuitem name="Move down" action="Move down"/>
       <menuitem name="Move to last" action="Move to last"/>
       <separator/>
-      <menuitem name="Sort Suite" action="Sort Suite"/>
-      <menuitem name="Reversed Sort Suite" action="Reversed Sort Suite"/>
+      <menuitem name="Sort Test Suite File" action="Sort Test Suite File"/>
+      <menuitem name="Reversed Sort Test Suite File" action="Reversed Sort Test Suite File"/>
       <separator/>
     </menu>
   </popup>
@@ -106,7 +106,7 @@ Viewing check button for switch 'Select in collapsed suites'
 Viewing radio button for switch 'Current selection:', options Discard/Refine/Extend/Exclude'. Default value 0.
 Viewing action with title '_Select'
 
-Changing GUI status to: 'TextTest started at 14Feb23:34:53.'
+Changing GUI status to: 'TextTest started at 21Feb23:30:36.'
 
 'set test selection to' event created with arguments 'Test'
 
@@ -132,20 +132,20 @@ Description:
 Tabs showing : Test, Selection, Running, Config
 
 'select file' event created with arguments 'output.hello'
-Viewing file /users/mattias/texttesttmp/texttest.14Feb233301/GUI/QuitConfirmation/AllStatic/TargetApp/Test/output.hello using 'emacs', refresh set to 0
+Viewing file /users/mattias/texttesttmp/texttest.21Feb232839/GUI/QuitConfirmation/AllStatic/TargetApp/Test/output.hello using 'emacs', refresh set to 0
 
 Changing GUI status to: 'Started "emacs output.hello" in background (from test Test).'
 
 'run selected tests' event created with arguments ''
 
-Changing GUI status to: 'Started 1 tests at 14Feb23:34:54.'
+Changing GUI status to: 'Started 1 tests at 21Feb23:30:36.'
 
 'quit' event created with arguments ''
 QUERY: 
 These processes are still running, and will be terminated when quitting: 
 
-   + PID 28544 : emacs output.hello (from test Test)
-   + PID 28547 : Dynamic GUI started at 14Feb23:34:54
+   + PID 14026 : emacs output.hello (from test Test)
+   + PID 14029 : Dynamic GUI started at 21Feb23:30:36
 
 Quit anyway?
 
@@ -162,13 +162,13 @@ Adding file errors.hello under heading 'Standard Files', coloured pale green
 Adding file output.hello under heading 'Standard Files', coloured pale green
 Expected application event 'dynamic GUI to be closed' occurred, proceeding.
 
-Changing GUI status to: 'Done updating after dynamic run started at 14Feb23:34:54.'
+Changing GUI status to: 'Done updating after dynamic run started at 21Feb23:30:36.'
 
 'quit' event created with arguments ''
 QUERY: 
 These processes are still running, and will be terminated when quitting: 
 
-   + PID 28544 : emacs output.hello (from test Test)
+   + PID 14026 : emacs output.hello (from test Test)
 
 Quit anyway?
 
