@@ -117,10 +117,9 @@ output:Sending mail from{WORD 5}
 output:What is your name{LINES 3}
 output:batch_recipients{WORD 2}
 output:batch_sender{WORD 2}
-targetReport:^From:{WORD 2}
-targetReport:^Subject:{WORD 2}
+targetReport:[^ ]*@localhost{REPLACE <username>@localhost}
 targetReport: on .*test-case.*under{WORD -7}
-targetReport:^[0-9][0-9][0-9][0-9][0-9][0-9]{WORD 1}
+targetReport:[0-9][0-9][A-Z][a-z][a-z][0-9][0-9][0-9][0-9]{REPLACE <today's date>}
 targetReport:seconds on{WORD -1}
 catalogue:.nfs
 catalogue:[^-]*[0-9][0-9][A-Z][a-z][a-z][0-9][0-9][0-9][0-9][0-9][0-9]{REPLACE <texttest tmp dir>}
@@ -240,6 +239,7 @@ collect_traffic:time
 collect_traffic:rsh
 collect_traffic:xdpyinfo
 collect_traffic:interpretcore.py
+collect_traffic:cvs
 
 [collect_traffic_environment]
 time:TEXTTEST_HOME
