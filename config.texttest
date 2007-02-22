@@ -10,8 +10,8 @@ queue_system_module:SGE
 default_checkout:master
 [checkout_location]
 default:~/work/${TEXTTEST_CHECKOUT_NAME}/Testing/TextTest
-nightly_publish:/usr/local/bin
-weekly_publish:/usr/local/bin
+nightly_publish:/usr/local/
+weekly_publish:/usr/local/
 [end]
 
 default_major_release:none
@@ -68,7 +68,7 @@ version_to_reconnect_to:master.i386_linux
 
 # GUI configuration, drop-down lists to appear in static gui...
 [gui_entry_options]
-use_checkout:/usr/local/bin
+use_checkout:/usr/local
 use_checkout:/carm/master/Testing/TextTest
 run_this_version:sparc
 run_this_version:parisc_2_0
@@ -92,7 +92,7 @@ unsaveable_version:i386_linux
 ## ================================================================
 
 # Path to the binary
-binary:${TEXTTEST_CHECKOUT}/texttest.py
+binary:${TEXTTEST_CHECKOUT}/bin/texttest.py
 
 [run_dependent_text]
 output*:TextTest will write diagnostics
@@ -292,4 +292,4 @@ extra_version:lsf
 extra_version:carmen
 
 # Path to the binary - override this so we run our shell script
-binary:${TEXTTEST_CHECKOUT}/texttest
+binary:${TEXTTEST_CHECKOUT}/bin/texttest
