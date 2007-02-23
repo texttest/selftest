@@ -10,8 +10,8 @@ queue_system_module:SGE
 default_checkout:master
 [checkout_location]
 default:~/work/${TEXTTEST_CHECKOUT_NAME}/Testing/TextTest
-nightly_publish:/usr/local/
-weekly_publish:/usr/local/
+nightly_publish:/usr/local/share/texttest
+weekly_publish:/usr/local/share/texttest
 [end]
 
 default_major_release:none
@@ -68,7 +68,7 @@ version_to_reconnect_to:master.i386_linux
 
 # GUI configuration, drop-down lists to appear in static gui...
 [gui_entry_options]
-use_checkout:/usr/local
+use_checkout:/usr/local/share/texttest
 use_checkout:/carm/master/Testing/TextTest
 run_this_version:sparc
 run_this_version:parisc_2_0
