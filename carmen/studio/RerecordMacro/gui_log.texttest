@@ -19,12 +19,15 @@ Viewing action with title 'Move up', stock id ''gtk-go-up'', accelerator ''<cont
 Viewing action with title 'Move down', stock id ''gtk-go-down'', accelerator ''<control>Page_Down'' (greyed out)
 Viewing action with title 'Move to last', stock id ''gtk-goto-bottom'', accelerator ''<control>End'' (greyed out)
 Viewing action with title 'Re_connect', stock id ''gtk-connect'', accelerator ''<control><shift>r'' (greyed out)
+Viewing action with title '_Load Selection...', stock id ''gtk-open'', accelerator ''<control><shift>o''
 Viewing action with title 'S_ave Selection...', stock id ''gtk-save-as'', accelerator ''<control><shift>s'' (greyed out)
 
 UI layout: 
 <ui>
   <menubar name="MainMenuBar">
     <menu name="filemenu" action="filemenu">
+      <menuitem name="Load Selection..." action="Load Selection..."/>
+      <separator/>
       <menuitem name="Save Selection..." action="Save Selection..."/>
       <separator/>
       <menuitem name="Quit" action="Quit"/>
@@ -109,7 +112,7 @@ Viewing check button for switch 'Select in collapsed suites'
 Viewing radio button for switch 'Current selection:', options Discard/Refine/Extend/Exclude'. Default value 0.
 Viewing action with title '_Select'
 
-Changing GUI status to: 'TextTest started at 21Feb23:32:01.'
+Changing GUI status to: 'TextTest started at 23Feb22:53:42.'
 
 'set test selection to' event created with arguments 'data_unchanged'
 
@@ -153,12 +156,12 @@ Viewing action with title 'Record _Use-Case'
 
 'record use-case' event created with arguments ''
 Starting dynamic GUI in record mode...
-Starting record run of TextTest with arguments -g -tp lh_v12/data_unchanged -d /users/mattias/texttesttmp/texttest.carmen.21Feb232839/carmen/studio/RerecordMacro/TargetApp -a gst -l -c /carm/proj/texttest/selftest_data -record
+Starting record run of TextTest with arguments -g -tp lh_v12/data_unchanged -d /users/mattias/texttesttmp/texttest.carmen.23Feb225039/carmen/studio/RerecordMacro/TargetApp -a gst -l -c /carm/proj/texttest/selftest_data -record
 
 Changing GUI status to: 'Started record session for Studio test-case data_unchanged'
 
 Waiting for application event 'replay2 texttest to complete' to occur.
-Starting replay run of TextTest with arguments -o -tp lh_v12/data_unchanged -d /users/mattias/texttesttmp/texttest.carmen.21Feb232839/carmen/studio/RerecordMacro/TargetApp -a gst -l -c /carm/proj/texttest/selftest_data
+Starting replay run of TextTest with arguments -o -tp lh_v12/data_unchanged -d /users/mattias/texttesttmp/texttest.carmen.23Feb225039/carmen/studio/RerecordMacro/TargetApp -a gst -l -c /carm/proj/texttest/selftest_data
 
 Changing GUI status to: 'Recording completed for Studio test-case data_unchanged. Auto-replay of test now started. Don't submit the test manually!'
 
@@ -170,7 +173,7 @@ Adding file options.gst under heading 'Definition Files', coloured pale green
 Adding file usecase.gst under heading 'Definition Files', coloured pale green
 Adding file subplanRules under heading 'Subplan', coloured pale green
 Adding file LBA_MTV under heading 'Ruleset', coloured pale green
-Starting replay2 run of TextTest with arguments -o -tp lh_v12/data_unchanged -d /users/mattias/texttesttmp/texttest.carmen.21Feb232839/carmen/studio/RerecordMacro/TargetApp -a gst -l -c /carm/proj/texttest/selftest_data
+Starting replay2 run of TextTest with arguments -o -tp lh_v12/data_unchanged -d /users/mattias/texttesttmp/texttest.carmen.23Feb225039/carmen/studio/RerecordMacro/TargetApp -a gst -l -c /carm/proj/texttest/selftest_data
 
 Changing GUI status to: 'First auto-replay completed for Studio test-case data_unchanged. Second auto-replay now started. Don't submit the test manually!'
 

@@ -19,12 +19,15 @@ Viewing action with title 'Move up', stock id ''gtk-go-up'', accelerator ''<cont
 Viewing action with title 'Move down', stock id ''gtk-go-down'', accelerator ''<control>Page_Down'' (greyed out)
 Viewing action with title 'Move to last', stock id ''gtk-goto-bottom'', accelerator ''<control>End'' (greyed out)
 Viewing action with title 'Re_connect', stock id ''gtk-connect'', accelerator ''<control><shift>r'' (greyed out)
+Viewing action with title '_Load Selection...', stock id ''gtk-open'', accelerator ''<control><shift>o''
 Viewing action with title 'S_ave Selection...', stock id ''gtk-save-as'', accelerator ''<control><shift>s'' (greyed out)
 
 UI layout: 
 <ui>
   <menubar name="MainMenuBar">
     <menu name="filemenu" action="filemenu">
+      <menuitem name="Load Selection..." action="Load Selection..."/>
+      <separator/>
       <menuitem name="Save Selection..." action="Save Selection..."/>
       <separator/>
       <menuitem name="Quit" action="Quit"/>
@@ -106,7 +109,7 @@ Viewing check button for switch 'Select in collapsed suites'
 Viewing radio button for switch 'Current selection:', options Discard/Refine/Extend/Exclude'. Default value 0.
 Viewing action with title '_Select'
 
-Changing GUI status to: 'TextTest started at 21Feb23:30:36.'
+Changing GUI status to: 'TextTest started at 23Feb22:52:12.'
 
 'set test selection to' event created with arguments 'Test'
 
@@ -132,20 +135,20 @@ Description:
 Tabs showing : Test, Selection, Running, Config
 
 'select file' event created with arguments 'output.hello'
-Viewing file /users/mattias/texttesttmp/texttest.21Feb232839/GUI/QuitConfirmation/AllStatic/TargetApp/Test/output.hello using 'emacs', refresh set to 0
+Viewing file /users/mattias/texttesttmp/texttest.23Feb225039/GUI/QuitConfirmation/AllStatic/TargetApp/Test/output.hello using 'emacs', refresh set to 0
 
 Changing GUI status to: 'Started "emacs output.hello" in background (from test Test).'
 
 'run selected tests' event created with arguments ''
 
-Changing GUI status to: 'Started 1 tests at 21Feb23:30:36.'
+Changing GUI status to: 'Started 1 tests at 23Feb22:52:13.'
 
 'quit' event created with arguments ''
 QUERY: 
 These processes are still running, and will be terminated when quitting: 
 
-   + PID 14026 : emacs output.hello (from test Test)
-   + PID 14029 : Dynamic GUI started at 21Feb23:30:36
+   + PID 19015 : emacs output.hello (from test Test)
+   + PID 19018 : Dynamic GUI started at 23Feb22:52:13
 
 Quit anyway?
 
@@ -162,13 +165,13 @@ Adding file errors.hello under heading 'Standard Files', coloured pale green
 Adding file output.hello under heading 'Standard Files', coloured pale green
 Expected application event 'dynamic GUI to be closed' occurred, proceeding.
 
-Changing GUI status to: 'Done updating after dynamic run started at 21Feb23:30:36.'
+Changing GUI status to: 'Done updating after dynamic run started at 23Feb22:52:13.'
 
 'quit' event created with arguments ''
 QUERY: 
 These processes are still running, and will be terminated when quitting: 
 
-   + PID 14026 : emacs output.hello (from test Test)
+   + PID 19015 : emacs output.hello (from test Test)
 
 Quit anyway?
 

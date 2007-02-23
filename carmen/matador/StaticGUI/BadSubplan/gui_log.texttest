@@ -19,6 +19,7 @@ Viewing action with title 'Move up', stock id ''gtk-go-up'', accelerator ''<cont
 Viewing action with title 'Move down', stock id ''gtk-go-down'', accelerator ''<control>Page_Down'' (greyed out)
 Viewing action with title 'Move to last', stock id ''gtk-goto-bottom'', accelerator ''<control>End'' (greyed out)
 Viewing action with title 'Re_connect', stock id ''gtk-connect'', accelerator ''<control><shift>r'' (greyed out)
+Viewing action with title '_Load Selection...', stock id ''gtk-open'', accelerator ''<control><shift>o''
 Viewing action with title 'S_ave Selection...', stock id ''gtk-save-as'', accelerator ''<control><shift>s'' (greyed out)
 Viewing action with title 'Create Performance Report...' (greyed out)
 Viewing action with title '_Plot Graph', stock id ''gtk-clear'', accelerator ''<control>p'' (greyed out)
@@ -27,6 +28,8 @@ UI layout:
 <ui>
   <menubar name="MainMenuBar">
     <menu name="filemenu" action="filemenu">
+      <menuitem name="Load Selection..." action="Load Selection..."/>
+      <separator/>
       <menuitem name="Save Selection..." action="Save Selection..."/>
       <separator/>
       <menuitem name="Quit" action="Quit"/>
@@ -156,7 +159,7 @@ Viewing check button for switch 'Subproblems'
 Viewing check button for switch 'TargetJuniorImprove'
 Viewing action with title '_Select'
 
-Changing GUI status to: 'TextTest started at 21Feb23:31:34.'
+Changing GUI status to: 'TextTest started at 23Feb22:53:13.'
 
 'set test selection to' event created with arguments 'CarmDataUser'
 Setting sensitivity of action 'Remove...' to True
@@ -270,8 +273,8 @@ Viewing action with title '_Run'
 'view sub-options for running :' event created with arguments 'Advanced'
 
 Viewing notebook page for 'Advanced'
-Viewing entry for option 'Configure self-diagnostics from' (set to '/users/mattias/texttesttmp/texttest.carmen.21Feb232839/carmen/matador/StaticGUI/BadSubplan/TargetApp/Diagnostics/log4py.conf')
-Viewing entry for option 'Write self-diagnostics to' (set to '/users/mattias/texttesttmp/texttest.carmen.21Feb232839/carmen/matador/StaticGUI/BadSubplan/TargetApp/Diagnostics')
+Viewing entry for option 'Configure self-diagnostics from' (set to '/users/mattias/texttesttmp/texttest.carmen.23Feb225039/carmen/matador/StaticGUI/BadSubplan/TargetApp/Diagnostics/log4py.conf')
+Viewing entry for option 'Write self-diagnostics to' (set to '/users/mattias/texttesttmp/texttest.carmen.23Feb225039/carmen/matador/StaticGUI/BadSubplan/TargetApp/Diagnostics')
 Viewing entry for option 'Run batch mode session'
 Viewing entry for option 'Request SGE resource'
 Viewing entry for option 'Request SGE queue' (drop-down list containing ['', 'short', 'normal', 'idle'])
@@ -320,7 +323,7 @@ CPU time   :      0.95 sec. on easthartford
 
 'run selected tests' event created with arguments ''
 
-Changing GUI status to: 'Started 1 tests at 21Feb23:31:36.'
+Changing GUI status to: 'Started 1 tests at 23Feb22:53:15.'
 
 Waiting for application event 'dynamic GUI to be closed' to occur.
 
@@ -338,6 +341,6 @@ Adding file MAT_EUF_CC under heading 'Ruleset', coloured pale green
 Adding file matador_800restart under heading 'Script', coloured pale green
 Expected application event 'dynamic GUI to be closed' occurred, proceeding.
 
-Changing GUI status to: 'Done updating after dynamic run started at 21Feb23:31:36.'
+Changing GUI status to: 'Done updating after dynamic run started at 23Feb22:53:15.'
 
 'quit' event created with arguments ''
