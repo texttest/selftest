@@ -1,4 +1,4 @@
-Top Window title is TextTest dynamic GUI (tests started at 28Feb09:40:50)
+Top Window title is TextTest dynamic GUI (tests started at 28Feb23:50:18)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -9,6 +9,7 @@ Viewing toggle action with title '_Status bar'
 Viewing action with title '_Quit', stock id ''gtk-quit'', accelerator ''<control>q''
 Viewing action with title '_Save', stock id ''gtk-save'', accelerator ''<control>s'' (greyed out)
 Viewing action with title 'S_ave Selection...', stock id ''gtk-save-as'', accelerator ''<control><shift>s'' (greyed out)
+Viewing action with title '_Migration Notes'
 Viewing action with title 'Component _Versions'
 Viewing action with title '_About TextTest', stock id ''gtk-about''
 
@@ -28,6 +29,8 @@ UI layout:
       <menuitem name="Status bar" action="Status bar"/>
     </menu>
     <menu name="helpmenu" action="helpmenu">
+      <menuitem name="Migration Notes" action="Migration Notes"/>
+      <separator/>
       <menuitem name="Component Versions" action="Component Versions"/>
       <separator/>
       <menuitem name="About TextTest" action="About TextTest"/>
@@ -60,7 +63,7 @@ Tabs showing : Status
 Test progress:
 --> Not started : 3, colour 'white', font 'bold'
 
-Changing GUI status to: 'TextTest started at 28Feb09:40:51.'
+Changing GUI status to: 'TextTest started at 28Feb23:50:19.'
 
 Waiting for application event 'test Basic to start' to occur.
 Redrawing test Basic coloured yellow
@@ -85,7 +88,7 @@ Viewing action with title '_Update Info'
 Tabs showing : Text Info, Viewing, Saving
 
 ---------- Text Info Window ----------
-Running on redenaco
+Running on fivefinger
 --------------------------------------
 
 Tabs showing : Test, Status
@@ -95,8 +98,8 @@ Tabs showing : Test, Status
 Changing GUI status to: 'Recomputing status of SLEEP test-case Basic  ...'
 
 ---------- Text Info Window ----------
-Running on redenaco
-Reckoned to be 85% complete at 28Feb09:40:53.
+Running on fivefinger
+Reckoned to be 85% complete at 28Feb23:50:21.
 --------------------------------------
 Redrawing test Basic coloured yellow
 
@@ -107,7 +110,7 @@ Adding file output.sleep under heading 'Comparison Files', coloured yellow
 Changing GUI status to: 'Done recomputing status of SLEEP test-case Basic .'
 
 'select file' event created with arguments 'output.sleep'
-Following file /users/mattias/texttesttmp/texttest.28Feb093903/TestSelf/RunningTests/GUI/CompareWhileRunning/texttesttmp/sleep.28Feb094050/Basic/output.sleep using 'tail -f'
+Following file /users/mattias/texttesttmp/texttest.28Feb234900/TestSelf/RunningTests/GUI/CompareWhileRunning/texttesttmp/sleep.28Feb235018/Basic/output.sleep using 'tail -f'
 
 Changing GUI status to: 'Started "tail -f output.sleep" in background (from test Basic).'
 
@@ -124,8 +127,8 @@ Viewing check button for switch 'Follow file rather than view it' (checked)
 
 'select file' event created with arguments 'output.sleep'
 Starting graphical difference comparison using 'tkdiff':
--- original file : /users/mattias/texttesttmp/texttest.28Feb093903/TestSelf/RunningTests/GUI/CompareWhileRunning/TargetApp/Basic/output.sleep
---  current file : /users/mattias/texttesttmp/texttest.28Feb093903/TestSelf/RunningTests/GUI/CompareWhileRunning/texttesttmp/sleep.28Feb094050/Basic/output.sleep
+-- original file : /users/mattias/texttesttmp/texttest.28Feb234900/TestSelf/RunningTests/GUI/CompareWhileRunning/TargetApp/Basic/output.sleep
+--  current file : /users/mattias/texttesttmp/texttest.28Feb234900/TestSelf/RunningTests/GUI/CompareWhileRunning/texttesttmp/sleep.28Feb235018/Basic/output.sleep
 
 Changing GUI status to: 'Started "tkdiff output.sleep output.sleep" in background (from test Basic).'
 
