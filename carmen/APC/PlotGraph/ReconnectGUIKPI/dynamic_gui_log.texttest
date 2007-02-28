@@ -1,4 +1,4 @@
-Top Window title is TextTest dynamic GUI (tests started at 08Feb11:19:04)
+Top Window title is TextTest dynamic GUI (tests started at 28Feb09:43:15)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -9,6 +9,8 @@ Viewing toggle action with title '_Status bar'
 Viewing action with title '_Quit', stock id ''gtk-quit'', accelerator ''<control>q''
 Viewing action with title '_Save', stock id ''gtk-save'', accelerator ''<control>s'' (greyed out)
 Viewing action with title 'S_ave Selection...', stock id ''gtk-save-as'', accelerator ''<control><shift>s'' (greyed out)
+Viewing action with title 'Component _Versions'
+Viewing action with title '_About TextTest', stock id ''gtk-about''
 Viewing action with title '_Plot Graph', stock id ''gtk-clear'', accelerator ''<control>p'' (greyed out)
 
 UI layout: 
@@ -25,6 +27,11 @@ UI layout:
       <menuitem name="Toolbar" action="Toolbar"/>
       <menuitem name="Shortcut bar" action="Shortcut bar"/>
       <menuitem name="Status bar" action="Status bar"/>
+    </menu>
+    <menu name="helpmenu" action="helpmenu">
+      <menuitem name="Component Versions" action="Component Versions"/>
+      <separator/>
+      <menuitem name="About TextTest" action="About TextTest"/>
     </menu>
     <menu name="optimizationmenu" action="optimizationmenu">
       <menuitem name="Plot Graph" action="Plot Graph"/>
@@ -63,7 +70,7 @@ Tabs showing : Status
 Test progress:
 --> Not started : 8, colour 'white', font 'bold'
 
-Changing GUI status to: 'TextTest started at 08Feb11:19:06.'
+Changing GUI status to: 'TextTest started at 28Feb09:43:16.'
 
 Waiting for application event 'completion of test actions' to occur.
 Redrawing test A320_COC_aan coloured green
@@ -154,7 +161,7 @@ Test progress:
 Redrawing test A320_COC_ddn coloured red
 (Second column 'no results' coloured red)
 
-Progress bar set to fraction 1.0, text 'All 8 tests completed at 08Feb11:19:09 (7 tests failed)'
+Progress bar set to fraction 1.0, text 'All 8 tests completed at 28Feb09:43:18 (7 tests failed)'
 
 Test progress:
 --> Not started : 0, colour 'white', font ''

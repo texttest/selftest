@@ -1,4 +1,4 @@
-Top Window title is TextTest dynamic GUI (tests started at 13Feb16:56:07)
+Top Window title is TextTest dynamic GUI (tests started at 28Feb09:41:55)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -9,6 +9,8 @@ Viewing toggle action with title '_Status bar'
 Viewing action with title '_Quit', stock id ''gtk-quit'', accelerator ''<control>q''
 Viewing action with title '_Save', stock id ''gtk-save'', accelerator ''<control>s'' (greyed out)
 Viewing action with title 'S_ave Selection...', stock id ''gtk-save-as'', accelerator ''<control><shift>s'' (greyed out)
+Viewing action with title 'Component _Versions'
+Viewing action with title '_About TextTest', stock id ''gtk-about''
 
 UI layout: 
 <ui>
@@ -24,6 +26,11 @@ UI layout:
       <menuitem name="Toolbar" action="Toolbar"/>
       <menuitem name="Shortcut bar" action="Shortcut bar"/>
       <menuitem name="Status bar" action="Status bar"/>
+    </menu>
+    <menu name="helpmenu" action="helpmenu">
+      <menuitem name="Component Versions" action="Component Versions"/>
+      <separator/>
+      <menuitem name="About TextTest" action="About TextTest"/>
     </menu>
   </menubar>
   <toolbar name="MainToolBar">
@@ -51,7 +58,7 @@ Tabs showing : Status
 Test progress:
 --> Not started : 1, colour 'white', font 'bold'
 
-Changing GUI status to: 'TextTest started at 13Feb16:56:07.'
+Changing GUI status to: 'TextTest started at 28Feb09:41:55.'
 
 Waiting for application event 'completion of test actions' to occur.
 Redrawing test success coloured yellow
@@ -67,7 +74,7 @@ Redrawing test success coloured green
 Redrawing suite suite : second column 'All 1 tests successful' coloured green
 Redrawing suite TargetApp : second column 'All 1 tests successful' coloured green
 
-Progress bar set to fraction 1.0, text 'All 1 tests completed at 13Feb16:56:08'
+Progress bar set to fraction 1.0, text 'All 1 tests completed at 28Feb09:41:56'
 Making test visible : HELLO test-suite suite
 
 Test Tree description...

@@ -21,6 +21,8 @@ Viewing action with title 'Move to last', stock id ''gtk-goto-bottom'', accelera
 Viewing action with title 'Re_connect', stock id ''gtk-connect'', accelerator ''<control><shift>r'' (greyed out)
 Viewing action with title '_Load Selection...', stock id ''gtk-open'', accelerator ''<control><shift>o''
 Viewing action with title 'S_ave Selection...', stock id ''gtk-save-as'', accelerator ''<control><shift>s'' (greyed out)
+Viewing action with title 'Component _Versions'
+Viewing action with title '_About TextTest', stock id ''gtk-about''
 
 UI layout: 
 <ui>
@@ -55,6 +57,11 @@ UI layout:
       <menuitem name="Run" action="Run"/>
       <menuitem name="Reconnect" action="Reconnect"/>
       <menuitem name="Reset" action="Reset"/>
+    </menu>
+    <menu name="helpmenu" action="helpmenu">
+      <menuitem name="Component Versions" action="Component Versions"/>
+      <separator/>
+      <menuitem name="About TextTest" action="About TextTest"/>
     </menu>
   </menubar>
   <toolbar name="MainToolBar">
@@ -122,7 +129,7 @@ Viewing check button for switch 'Select in collapsed suites'
 Viewing radio button for switch 'Current selection:', options Discard/Refine/Extend/Exclude'. Default value 0.
 Viewing action with title '_Select'
 
-Changing GUI status to: 'TextTest started at 23Feb22:52:24.'
+Changing GUI status to: 'TextTest started at 28Feb09:41:56.'
 
 'set test selection to' event created with arguments 'Game9952'
 Setting sensitivity of action 'Remove...' to True

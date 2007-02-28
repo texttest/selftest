@@ -1,4 +1,4 @@
-Top Window title is TextTest dynamic GUI (tests started at 06Feb20:26:31)
+Top Window title is TextTest dynamic GUI (tests started at 28Feb09:39:36)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -9,6 +9,8 @@ Viewing toggle action with title '_Status bar'
 Viewing action with title '_Quit', stock id ''gtk-quit'', accelerator ''<control>q''
 Viewing action with title '_Save', stock id ''gtk-save'', accelerator ''<control>s'' (greyed out)
 Viewing action with title 'S_ave Selection...', stock id ''gtk-save-as'', accelerator ''<control><shift>s'' (greyed out)
+Viewing action with title 'Component _Versions'
+Viewing action with title '_About TextTest', stock id ''gtk-about''
 
 UI layout: 
 <ui>
@@ -24,6 +26,11 @@ UI layout:
       <menuitem name="Toolbar" action="Toolbar"/>
       <menuitem name="Shortcut bar" action="Shortcut bar"/>
       <menuitem name="Status bar" action="Status bar"/>
+    </menu>
+    <menu name="helpmenu" action="helpmenu">
+      <menuitem name="Component Versions" action="Component Versions"/>
+      <separator/>
+      <menuitem name="About TextTest" action="About TextTest"/>
     </menu>
   </menubar>
   <toolbar name="MainToolBar">
@@ -52,7 +59,7 @@ Tabs showing : Status
 Test progress:
 --> Not started : 2, colour 'white', font 'bold'
 
-Changing GUI status to: 'TextTest started at 06Feb20:26:32.'
+Changing GUI status to: 'TextTest started at 28Feb09:39:36.'
 
 Waiting for application event 'completion of test actions' to occur.
 Redrawing test OutDiff coloured yellow
@@ -82,7 +89,7 @@ Test progress:
 Redrawing test OutDiff coloured red
 (Second column 'output different' coloured red)
 
-Progress bar set to fraction 1.0, text 'All 2 tests completed at 06Feb20:26:33 (2 tests failed)'
+Progress bar set to fraction 1.0, text 'All 2 tests completed at 28Feb09:39:37 (2 tests failed)'
 
 Test progress:
 --> Not started : 0, colour 'white', font ''
@@ -126,7 +133,7 @@ Saving HELLO test-case OutDiff - version 2, exactness 1
 Changing GUI status to: 'Saving HELLO test-case OutDiff : output, version 2'
 Redrawing test OutDiff coloured green
 Redrawing suite TargetApp : second column 'All 1 tests successful' coloured green
-Progress bar detected save, new text is 'All 2 tests completed at 06Feb20:26:33 (1 tests failed)'
+Progress bar detected save, new text is 'All 2 tests completed at 28Feb09:39:37 (1 tests failed)'
 Saving HELLO test-case OutDiff - version 4, exactness 1
 
 Changing GUI status to: 'Saving HELLO test-case OutDiff : output, version 4'
@@ -140,7 +147,7 @@ Redrawing suite TargetApp : second column 'All 1 tests successful' coloured gree
 Setting file-view title to 'Sample from 2 tests'
 Adding file errors.hello under heading 'Comparison Files', coloured green
 Adding file output.hello.4 under heading 'Comparison Files', coloured green
-Progress bar detected save, new text is 'All 2 tests completed at 06Feb20:26:33'
+Progress bar detected save, new text is 'All 2 tests completed at 28Feb09:39:37'
 
 Changing GUI status to: 'Saved 2 tests.'
 
