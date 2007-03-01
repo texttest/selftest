@@ -132,12 +132,12 @@ Viewing check button for switch 'Select in collapsed suites'
 Viewing radio button for switch 'Current selection:', options Discard/Refine/Extend/Exclude'. Default value 0.
 Viewing action with title '_Select'
 
-Changing GUI status to: 'TextTest started at 28Feb23:52:57.'
+Changing GUI status to: 'TextTest started at 01Mar16:03:00.'
 
 'show texttest migration notes' event created with arguments ''
 
 Changing GUI status to: ''
-Adding migration notes from file '/users/mattias/work/usable_texttest5/Testing/TextTest/doc/MigrationNotes_from_3.7':
+Adding migration notes from file 'MigrationNotes_from_3.7':
 Following on from the GUI changes in 3.7, version 3.8 is also a release which emphasises GUI
 improvements. TextTest hopefully looks more like other GUIs than it used to: it has a proper
 menubar, a proper toolbar and even some icons.
@@ -285,7 +285,7 @@ Previously this setting caused performance figures not to be compared if either 
 result was less than it. This behaviour is changed/fixed such that failure is triggered if either is
 above it. On upgrading to TextTest 3.8 you may suddenly get tests that are 1000% slower/faster that
 you hadn't noticed until now... (if using this setting)
-Adding migration notes from file '/users/mattias/work/usable_texttest5/Testing/TextTest/doc/MigrationNotes_from_3.6':
+Adding migration notes from file 'MigrationNotes_from_3.6':
 It should not be necessary to explicitly migrate anything on upgrading to version 3.7, but note 
 that the following behaviour is changed as default:
 
@@ -408,7 +408,7 @@ A bug has been fixed whereby local links within test data structures are preserv
 than made to point to the master copy. A side-effect of this is that links that are local
 but point outside the structure (typically via ../ at the top level) will no longer work. 
 These will need to be changed to the absolute target location.
-Adding migration notes from file '/users/mattias/work/usable_texttest5/Testing/TextTest/doc/MigrationNotes_from_3.5':
+Adding migration notes from file 'MigrationNotes_from_3.5':
 It should not be necessary to explicitly migrate anything on upgrading to version 3.6, but note 
 that the following behaviour is changed as default:
 
@@ -447,7 +447,7 @@ behaviour.
 
 This has generally been thought to be a good change, but the possibility is there to turn
 it off if you don't like it. Set auto_collapse_successful:0 to preserve the old behaviour.
-Adding migration notes from file '/users/mattias/work/usable_texttest5/Testing/TextTest/doc/MigrationNotes_from_3.4':
+Adding migration notes from file 'MigrationNotes_from_3.4':
 (1) Due to resurrected support on Windows, the configuration 'unixConfig'
 is no longer present or necessary. The few UNIX-specific things left
 are inferrred by running the configuration 'default' on a UNIX system.
@@ -513,7 +513,7 @@ cputime:apple
 config_module:default
 
 (This will not work as config_module will be entered in the section [performance_test_machine]. Use an [end] marker after the section.)
-Adding migration notes from file '/users/mattias/work/usable_texttest5/Testing/TextTest/doc/MigrationNotes_from_3.3':
+Adding migration notes from file 'MigrationNotes_from_3.3':
 This only applies to users of the LSF module.
 
 TextTest now integrates with Sun Grid Engine as well as LSF. This has caused the renaming of a few
@@ -525,7 +525,7 @@ In the config file, the
 The environment variables
 LSF_RESOURCE and LSF_PROCESSES become
 QUEUE_SYSTEM_RESOURCE and QUEUE_SYSTEM_PROCESSES respectively.
-Adding migration notes from file '/users/mattias/work/usable_texttest5/Testing/TextTest/doc/MigrationNotes_from_3.1':
+Adding migration notes from file 'MigrationNotes_from_3.1':
 Version 3.1.1 finally removes the "magical" pre-pend of checkout to relative paths in the environment and 
 some config file values. Instead, it exports the environment variable TEXTTEST_CHECKOUT so you can
 be explicit about when you want this.
@@ -537,7 +537,7 @@ binary:source/myprogram
 assuming this would be interpreted relative to the checkout, you now need to say
 
 binary:${TEXTTEST_CHECKOUT}/source/myprogram
-Adding migration notes from file '/users/mattias/work/usable_texttest5/Testing/TextTest/doc/MigrationNotes_from_2.x':
+Adding migration notes from file 'MigrationNotes_from_2.x':
 Migration notes from TextTest 2.x
 =================================
 
@@ -645,23 +645,23 @@ Changing GUI status to: ''
 
 'press credits' event created with arguments ''
 Showing credits:
-Code Maintainer:
+Code Maintainer:                                        
 
-    Geoff Bache <Geoff.Bache@jeppesen.com>
+    Geoff Bache
 
 Developers:
 
-    Geoff Bache <Geoff.Bache@jeppesen.com>
-    Mattias Grönkvist <Mattias.Gronkvist@jeppesen.com>
-    Johan Ivarsson <Johan.Ivarsson@jeppesen.com>
-    Johan Andersson <Johan.Andersson@jeppesen.com>
+    Geoff Bache
+    Mattias Grönkvist
+    Johan Ivarsson
+    Johan Andersson
 
 Contributors:
 
-    Patrik Blommaskog <Patrik.Blommaskog@jeppesen.com>
-    Per Bergsten <Per.Bergsten@jeppesen.com>
-    Emily Bache <Emily.Bache@astrazeneca.com>
-    Claes Verdoes <Claes.Verdoes@jeppesen.com>
+    Patrik Blommaskog
+    Per Bergsten
+    Emily Bache
+    Claes Verdoes
 
 'press close' event created with arguments ''
 
