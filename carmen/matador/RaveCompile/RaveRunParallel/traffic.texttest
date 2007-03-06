@@ -1,5 +1,5 @@
-<-SRV:TextTest slave server started on 192.168.99.28:54213
-<-CMD:env 'USECASE_RECORD_STDIN=' 'USECASE_RECORD_SCRIPT=' 'USECASE_REPLAY_SCRIPT=' qsub -N Rules-Ruleset_8.ArtificialUser-matador -l "carmarch=*i386_linux*,carmbuildmaster=1,rave" -w e -notify -m n -cwd -b y -V -o framework_tmp/slavelog -e framework_tmp/slaveerrs 'exec /bin/tcsh -c "exec /users/geoff/work/master/Testing/TextTest/texttest -d /users/geoff/texttesttmp/texttest.carmen.16Feb112111/carmen/matador/RaveCompile/RaveRunParallel/TargetApp -a cas -v rave.extraversion -l -c /carm/proj/texttest/selftest_data -tp ArtificialUser/generate_in_subperiod -raveslave /users/geoff/texttesttmp/texttest.carmen.16Feb112111/carmen/matador/RaveCompile/RaveRunParallel/texttesttmp/cas.rave.extraversion.16Feb112334 -servaddr 192.168.99.28:54207 -x -xr /users/geoff/work/master/Testing/Automatic/texttest/logging.texttest -xw /users/geoff/texttesttmp/texttest.carmen.16Feb112111/carmen/matador/RaveCompile/RaveRunParallel/raveslave"'
+<-SRV:TextTest slave server started on 192.168.98.14:38675
+<-CMD:env 'USECASE_RECORD_STDIN=' 'USECASE_RECORD_SCRIPT=' 'USECASE_REPLAY_SCRIPT=' qsub -N Rules-Ruleset_8.ArtificialUser-matador -l "carmarch=*i386_linux*,carmbuildmaster=1,rave" -w e -notify -m n -cwd -b y -V -o framework_tmp/slavelog -e framework_tmp/slaveerrs 'exec /bin/tcsh -c "exec /users/geoff/work/master/Testing/TextTest/bin/texttest -d /users/geoff/texttesttmp/texttest.carmen.05Mar150056/carmen/matador/RaveCompile/RaveRunParallel/TargetApp -a cas -v rave.extraversion -l -c /carm/proj/texttest/selftest_data -tp ArtificialUser/generate_in_subperiod -raveslave /users/geoff/texttesttmp/texttest.carmen.05Mar150056/carmen/matador/RaveCompile/RaveRunParallel/texttesttmp/cas.rave.extraversion.05Mar150058 -servaddr 192.168.98.14:38674 -rset Ruleset_8 -x -xr /users/geoff/work/master/Testing/Automatic/texttest/logging.texttest -xw /users/geoff/texttesttmp/texttest.carmen.05Mar150056/carmen/matador/RaveCompile/RaveRunParallel/raveslave"'
 ->OUT:Your job 5331047 ("Rules-Ruleset_8.ArtificialUser-matador") has been submitted
 <-SRV:Completed submission of all rule compilations
 ->CLI:30873
@@ -12,68 +12,183 @@ S'category'
 p3
 S'running_rulecompile'
 p4
-sS'lifecycleChange'
-p5
-S'start ruleset compilation'
-p6
 sS'freeText'
-p7
-S'Compiling ruleset Ruleset_8 on fivefinger'
-p8
+p5
+S'Compiling ruleset Ruleset_8 on lineville'
+p6
 sS'started'
-p9
+p7
 I0
-sS'rulesetName'
-p10
-S'Ruleset_8'
-p11
 sS'completed'
-p12
+p8
 I0
 sS'briefText'
-p13
-S'RULES (fivefinger)'
-p14
+p9
+S'RULES (lineville)'
+p10
 sS'executionHosts'
+p11
+(lp12
+sS'observers'
+p13
+(lp14
+sS'rulecomp'
 p15
-(lp16
-sS'testCompiling'
-p17
-Nsb.
+(iravebased
+TestRuleCompilation
+p16
+(dp17
+S'rulesetsForSelf'
+p18
+(lp19
+(iravebased
+RuleSet
+p20
+(dp21
+S'name'
+p22
+S'Ruleset_8'
+p23
+sS'sourceFile'
+p24
+S'/carm/proj/texttest/selftest_data/CARMUSRs/Matador_user/crc/source/Ruleset_8'
+p25
+sS'raveNames'
+p26
+(lp27
+S'matador'
+p28
+asS'targetFiles'
+p29
+(lp30
+S'/carm/proj/texttest/selftest_data/partial_carmtmp/crc/rule_set/MATADOR/i386_linux/Ruleset_8'
+p31
+asS'modeString'
+p32
+S'-optimize'
+p33
+sS'arch'
+p34
+S'i386_linux'
+p35
+sbasS'rulesetsFromOthers'
+p36
+(indict
+seqdict
+p37
+(dp38
+S'dict'
+p39
+(dp40
+sS'list'
+p41
+(lp42
+sbsbsS'passSelf'
+p43
+I00
+sS'lifecycleChange'
+p44
+S'start ruleset compilation'
+p45
+sb.
 ->CLI:30873
 cas.rave.extraversion:ArtificialUser/generate_in_subperiod
-(iplugins
-TestState
+(iravebased
+RulesetCompiled
 p1
 (dp2
 S'category'
 p3
 S'ruleset_compiled'
 p4
-sS'freeText'
+sS'raveInfo'
 p5
-S'Build Rave program Ruleset_8 started on fivefinger, 18 September 15:26\nGenerating code... done.\nBuilding for matador on localhost - 2 files out of 2 need to be compiled\nCompiling... done.\nInstalling matador on architecture i386_linux... done.\nBuild Rave program finished at 18 September 15:26\nCleaning up... done.\n'
+S'\nBuild Rave program Ruleset_8 started on portmoller, 05 March 14:59\nGenerating code... done.\nSubmitting jobs for matador on i386_linux - 0 files out of 2 need to be compiled\nCompiling... done.\nInstalling matador on architecture i386_linux... done.\nBuild Rave program finished at 05 March 14:59\nCleaning up... done.\n'
 p6
-sS'started'
+sS'freeText'
 p7
-I0
-sS'completed'
+S''
+sS'started'
 p8
 I0
-sS'briefText'
+sS'completed'
 p9
+I0
+sS'briefText'
+p10
 S''
 sS'executionHosts'
-p10
-(lp11
-sS'lifecycleChange'
-p12
-S'complete rule compilation'
+p11
+(lp12
+sS'observers'
 p13
+(lp14
+sS'rulecomp'
+p15
+(iravebased
+TestRuleCompilation
+p16
+(dp17
+S'rulesetsForSelf'
+p18
+(lp19
+(iravebased
+RuleSet
+p20
+(dp21
+S'name'
+p22
+S'Ruleset_8'
+p23
+sS'sourceFile'
+p24
+S'/carm/proj/texttest/selftest_data/CARMUSRs/Matador_user/crc/source/Ruleset_8'
+p25
+sS'raveNames'
+p26
+(lp27
+S'matador'
+p28
+asS'targetFiles'
+p29
+(lp30
+S'/carm/proj/texttest/selftest_data/partial_carmtmp/crc/rule_set/MATADOR/i386_linux/Ruleset_8'
+p31
+asS'modeString'
+p32
+S'-optimize'
+p33
+sS'arch'
+p34
+S'i386_linux'
+p35
+sbasS'rulesetsFromOthers'
+p36
+(indict
+seqdict
+p37
+(dp38
+S'dict'
+p39
+(dp40
+sS'list'
+p41
+(lp42
+sbsbsS'passSelf'
+p43
+I00
+sS'lifecycleChange'
+p44
+S'complete rule compilation'
+p45
+sS'raveFile'
+p46
+S'/users/geoff/texttesttmp/texttest.carmen.05Mar145908/carmen/matador/RaveCompile/RaveRunParallel/texttesttmp/cas.rave.extraversion.05Mar145910/ArtificialUser/generate_in_subperiod/framework_tmp/crc_compile_output'
+p47
 sb.
-<-CMD:env 'USECASE_RECORD_STDIN=' 'USECASE_RECORD_SCRIPT=' 'USECASE_REPLAY_SCRIPT=' qsub -N Test-generate_in_subperiod.ArtificialUser-Matador.rave.extraversion.parallel -pe matador 2 -p -9.4 -l "osversion=RHEL4,model=Opteron*,carmarch=*i386_linux*,carmrunmaster=1,short" -w e -notify -m n -cwd -b y -V -o framework_tmp/slavelog -e framework_tmp/slaveerrs 'exec /bin/tcsh -c "exec /users/geoff/work/master/Testing/TextTest/texttest -d /users/geoff/texttesttmp/texttest.carmen.16Feb112111/carmen/matador/RaveCompile/RaveRunParallel/TargetApp -a cas -v rave.extraversion.parallel -l -c /carm/proj/texttest/selftest_data -tp ArtificialUser/generate_in_subperiod -slave /users/geoff/texttesttmp/texttest.carmen.16Feb112111/carmen/matador/RaveCompile/RaveRunParallel/texttesttmp/cas.rave.extraversion.parallel.16Feb112334 -servaddr 192.168.99.28:54207 -x -xr /users/geoff/work/master/Testing/Automatic/texttest/logging.texttest -xw /users/geoff/texttesttmp/texttest.carmen.16Feb112111/carmen/matador/RaveCompile/RaveRunParallel/slave"'
+<-CMD:env 'USECASE_RECORD_STDIN=' 'USECASE_RECORD_SCRIPT=' 'USECASE_REPLAY_SCRIPT=' qsub -N Test-generate_in_subperiod.ArtificialUser-Matador.rave.extraversion.parallel -pe matador 2 -p -9.4 -l "osversion=RHEL4,model=Opteron*,carmarch=*i386_linux*,carmrunmaster=1,short" -w e -notify -m n -cwd -b y -V -o framework_tmp/slavelog -e framework_tmp/slaveerrs 'exec /bin/tcsh -c "exec /users/geoff/work/master/Testing/TextTest/bin/texttest -d /users/geoff/texttesttmp/texttest.carmen.05Mar150056/carmen/matador/RaveCompile/RaveRunParallel/TargetApp -a cas -v rave.extraversion.parallel -l -c /carm/proj/texttest/selftest_data -tp ArtificialUser/generate_in_subperiod -slave /users/geoff/texttesttmp/texttest.carmen.05Mar150056/carmen/matador/RaveCompile/RaveRunParallel/texttesttmp/cas.rave.extraversion.parallel.05Mar150058 -servaddr 192.168.98.14:38674 -x -xr /users/geoff/work/master/Testing/Automatic/texttest/logging.texttest -xw /users/geoff/texttesttmp/texttest.carmen.05Mar150056/carmen/matador/RaveCompile/RaveRunParallel/slave"'
 ->OUT:Your job 5331051 ("Test-generate_in_subperiod.ArtificialUser-Matador.rave.extraversion.parallel") has been submitted
-<-CMD:env 'USECASE_RECORD_STDIN=' 'USECASE_RECORD_SCRIPT=' 'USECASE_REPLAY_SCRIPT=' qsub -N Test-generate_in_subperiod.ArtificialUser-Matador.rave.extraversion -p -11.4 -l "osversion=RHEL4,model=Opteron*,carmarch=*i386_linux*,carmrunmaster=1,short" -w e -notify -m n -cwd -b y -V -o framework_tmp/slavelog -e framework_tmp/slaveerrs 'exec /bin/tcsh -c "exec /users/geoff/work/master/Testing/TextTest/texttest -d /users/geoff/texttesttmp/texttest.carmen.16Feb112111/carmen/matador/RaveCompile/RaveRunParallel/TargetApp -a cas -v rave.extraversion -l -c /carm/proj/texttest/selftest_data -tp ArtificialUser/generate_in_subperiod -slave /users/geoff/texttesttmp/texttest.carmen.16Feb112111/carmen/matador/RaveCompile/RaveRunParallel/texttesttmp/cas.rave.extraversion.16Feb112334 -servaddr 192.168.99.28:54207 -x -xr /users/geoff/work/master/Testing/Automatic/texttest/logging.texttest -xw /users/geoff/texttesttmp/texttest.carmen.16Feb112111/carmen/matador/RaveCompile/RaveRunParallel/slave"'
+<-CMD:env 'USECASE_RECORD_STDIN=' 'USECASE_RECORD_SCRIPT=' 'USECASE_REPLAY_SCRIPT=' qsub -N Test-generate_in_subperiod.ArtificialUser-Matador.rave.extraversion -p -11.4 -l "osversion=RHEL4,model=Opteron*,carmarch=*i386_linux*,carmrunmaster=1,short" -w e -notify -m n -cwd -b y -V -o framework_tmp/slavelog -e framework_tmp/slaveerrs 'exec /bin/tcsh -c "exec /users/geoff/work/master/Testing/TextTest/bin/texttest -d /users/geoff/texttesttmp/texttest.carmen.05Mar150056/carmen/matador/RaveCompile/RaveRunParallel/TargetApp -a cas -v rave.extraversion -l -c /carm/proj/texttest/selftest_data -tp ArtificialUser/generate_in_subperiod -slave /users/geoff/texttesttmp/texttest.carmen.05Mar150056/carmen/matador/RaveCompile/RaveRunParallel/texttesttmp/cas.rave.extraversion.05Mar150058 -servaddr 192.168.98.14:38674 -x -xr /users/geoff/work/master/Testing/Automatic/texttest/logging.texttest -xw /users/geoff/texttesttmp/texttest.carmen.05Mar150056/carmen/matador/RaveCompile/RaveRunParallel/slave"'
 ->OUT:Your job 5331052 ("Test-generate_in_subperiod.ArtificialUser-Matador.rave.extraversion") has been submitted
 <-SRV:Completed submission of all tests
 ->CLI:4641
