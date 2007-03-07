@@ -1,4 +1,4 @@
-Top Window title is TextTest dynamic GUI (tests started at 06Mar23:52:21)
+Top Window title is TextTest dynamic GUI (tests started at 07Mar15:45:00)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -48,7 +48,7 @@ UI layout:
 Progress bar set to fraction 0.0, text '0 of 1 tests completed'
 
 Test Tree description...
--> TargetApp (diag)
+-> TargetApp (diag.tmp)
 ->   TestWithDiag
 
 Test column header set to 'Tests: 0/1 selected, none hidden'
@@ -60,7 +60,7 @@ Tabs showing : Status
 Test progress:
 --> Not started : 1, colour 'white', font 'bold'
 
-Changing GUI status to: 'TextTest started at 06Mar23:52:22.'
+Changing GUI status to: 'TextTest started at 07Mar15:45:01.'
 
 Waiting for application event 'completion of test actions' to occur.
 Redrawing test TestWithDiag coloured yellow
@@ -71,7 +71,7 @@ Test progress:
 Redrawing test TestWithDiag coloured green
 (Second column 'first different(+)' coloured red)
 
-Progress bar set to fraction 1.0, text 'All 1 tests completed at 06Mar23:52:23 (1 tests failed)'
+Progress bar set to fraction 1.0, text 'All 1 tests completed at 07Mar15:45:02 (1 tests failed)'
 
 Test progress:
 --> Not started : 0, colour 'white', font ''
@@ -90,10 +90,9 @@ Setting sensitivity of action 'S_ave Selection...' to True
 
 Setting file-view title to 'TestWithDiag'
 Adding file errors.diag under heading 'Comparison Files', coloured green
+Adding file first.diag.tmp under heading 'Comparison Files', coloured red
 Adding file output.diag under heading 'Comparison Files', coloured green
-Adding file Diagnostics under heading 'Comparison Files', coloured white
-Adding file first.diag under heading 'Diagnostics', coloured red
-Adding file second.diag under heading 'Diagnostics', coloured green
+Adding file second.diag.tmp under heading 'Comparison Files', coloured green
 Adding file third.diag under heading 'New Files', coloured red
 
 Viewing action with title '_Update Info' (greyed out)
@@ -120,9 +119,9 @@ Tabs showing : Test, Status
 'save results for selected tests' event created with arguments ''
 
 Changing GUI status to: 'Saving 1 tests ...'
-Saving DIAG test-case TestWithDiag - version , exactness 1, only third.diag
+Saving DIAG test-case TestWithDiag - version tmp, exactness 1, only third.diag
 
-Changing GUI status to: 'Saving DIAG test-case TestWithDiag : third, no version'
+Changing GUI status to: 'Saving DIAG test-case TestWithDiag : third, version tmp'
 
 ---------- Text Info Window ----------
 Test FAILED :
@@ -139,20 +138,19 @@ Redrawing test TestWithDiag coloured green
 
 Setting file-view title to 'TestWithDiag'
 Adding file errors.diag under heading 'Comparison Files', coloured green
+Adding file first.diag.tmp under heading 'Comparison Files', coloured red
 Adding file output.diag under heading 'Comparison Files', coloured green
-Adding file Diagnostics under heading 'Comparison Files', coloured white
-Adding file first.diag under heading 'Diagnostics', coloured red
-Adding file second.diag under heading 'Diagnostics', coloured green
-Adding file third.diag under heading 'Diagnostics', coloured green
+Adding file second.diag.tmp under heading 'Comparison Files', coloured green
+Adding file third.diag.tmp under heading 'Comparison Files', coloured green
 
 Changing GUI status to: 'Saved 1 tests.'
 
 'save results for selected tests' event created with arguments ''
 
 Changing GUI status to: 'Saving 1 tests ...'
-Saving DIAG test-case TestWithDiag - version , exactness 1
+Saving DIAG test-case TestWithDiag - version tmp, exactness 1
 
-Changing GUI status to: 'Saving DIAG test-case TestWithDiag : first, no version'
+Changing GUI status to: 'Saving DIAG test-case TestWithDiag : first, version tmp'
 
 ---------- Text Info Window ----------
 Test succeeded
@@ -173,7 +171,7 @@ Test progress:
 ------> third new : 0, colour 'white', font ''
 
 Tabs showing : Status
-Progress bar detected save, new text is 'All 1 tests completed at 06Mar23:52:23'
+Progress bar detected save, new text is 'All 1 tests completed at 07Mar15:45:02'
 
 Test progress:
 --> Not started : 0, colour 'white', font ''
