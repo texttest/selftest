@@ -29,9 +29,12 @@ UI layout:
 <ui>
   <menubar name="MainMenuBar">
     <menu name="filemenu" action="filemenu">
+      <menuitem name="Load Selection..." action="Load Selection..."/>
+      <separator/>
       <menuitem name="Save Selection..." action="Save Selection..."/>
       <separator/>
       <menuitem name="Quit" action="Quit"/>
+      <separator/>
     </menu>
     <menu name="editmenu" action="editmenu">
       <menuitem name="Rename..." action="Rename..."/>
@@ -44,6 +47,9 @@ UI layout:
       <separator/>
       <menuitem name="Sort Test Suite File" action="Sort Test Suite File"/>
       <menuitem name="Reversed Sort Test Suite File" action="Reversed Sort Test Suite File"/>
+      <separator/>
+      <separator/>
+      <separator/>
       <separator/>
     </menu>
     <menu name="viewmenu" action="viewmenu">
@@ -70,6 +76,10 @@ UI layout:
     <separator/>
     <toolitem name="Select" action="Select"/>
     <toolitem name="Run" action="Run"/>
+    <separator/>
+    <toolitem name="Remove..." action="Remove..."/>
+    <separator/>
+    <separator/>
     <toolitem name="Reconnect" action="Reconnect"/>
     <separator/>
   </toolbar>
@@ -86,7 +96,10 @@ UI layout:
       <menuitem name="Sort Test Suite File" action="Sort Test Suite File"/>
       <menuitem name="Reversed Sort Test Suite File" action="Reversed Sort Test Suite File"/>
       <separator/>
+      <separator/>
+      <separator/>
     </menu>
+    <separator/>
   </popup>
 </ui>
 
@@ -112,7 +125,7 @@ Viewing check button for switch 'Select in collapsed suites'
 Viewing radio button for switch 'Current selection:', options Discard/Refine/Extend/Exclude'. Default value 0.
 Viewing action with title '_Select'
 
-Changing GUI status to: 'TextTest started at 06Mar23:53:29.'
+Changing GUI status to: 'TextTest started at 07Mar17:15:06.'
 
 'set test selection to' event created with arguments 'Test'
 
@@ -139,7 +152,7 @@ Tabs showing : Test, Selection, Running, Config
 
 'run selected tests' event created with arguments ''
 
-Changing GUI status to: 'Started 1 tests at 06Mar23:53:30.'
+Changing GUI status to: 'Started 1 tests at 07Mar17:15:07.'
 
 Waiting for application event 'dynamic GUI to be closed' to occur.
 
@@ -150,7 +163,7 @@ Adding file errors.hello under heading 'Standard Files', coloured pale green
 Adding file output.hello under heading 'Standard Files', coloured pale green
 Expected application event 'dynamic GUI to be closed' occurred, proceeding.
 
-Changing GUI status to: 'Done updating after dynamic run started at 06Mar23:53:30.'
+Changing GUI status to: 'Done updating after dynamic run started at 07Mar17:15:07.'
 
 'quit' event created with arguments ''
 
