@@ -29,8 +29,10 @@ UI layout:
 <ui>
   <menubar name="MainMenuBar">
     <menu name="filemenu" action="filemenu">
-      <menuitem name="Load Selection..." action="Load Selection..."/>
-      <separator/>
+      <placeholder name="FirstInFileMenu">
+        <menuitem name="Load Selection..." action="Load Selection..."/>
+        <separator/>
+      </placeholder>
       <menuitem name="Save Selection..." action="Save Selection..."/>
       <separator/>
       <menuitem name="Quit" action="Quit"/>
@@ -53,12 +55,14 @@ UI layout:
       <menuitem name="Shortcut bar" action="Shortcut bar"/>
       <menuitem name="Status bar" action="Status bar"/>
     </menu>
-    <menu name="actionsmenu" action="actionsmenu">
-      <menuitem name="Select" action="Select"/>
-      <menuitem name="Run" action="Run"/>
-      <menuitem name="Reconnect" action="Reconnect"/>
-      <menuitem name="Reset" action="Reset"/>
-    </menu>
+    <placeholder name="ExtraMenus">
+      <menu name="actionsmenu" action="actionsmenu">
+        <menuitem name="Select" action="Select"/>
+        <menuitem name="Run" action="Run"/>
+        <menuitem name="Reconnect" action="Reconnect"/>
+        <menuitem name="Reset" action="Reset"/>
+      </menu>
+    </placeholder>
     <menu name="helpmenu" action="helpmenu">
       <menuitem name="Migration Notes" action="Migration Notes"/>
       <separator/>
@@ -72,6 +76,8 @@ UI layout:
     <separator/>
     <toolitem name="Select" action="Select"/>
     <toolitem name="Run" action="Run"/>
+    <placeholder name="AfterRun">
+    </placeholder>
     <separator/>
     <toolitem name="Remove..." action="Remove..."/>
     <separator/>
@@ -80,7 +86,7 @@ UI layout:
     <menuitem name="Rename..." action="Rename..."/>
     <menuitem name="Remove..." action="Remove..."/>
     <separator/>
-    <menu name="reorderpopupmenu" action="reorderpopupmenu">
+    <menu name="reordermenu" action="reordermenu">
       <menuitem name="Move to first" action="Move to first"/>
       <menuitem name="Move up" action="Move up"/>
       <menuitem name="Move down" action="Move down"/>
@@ -117,7 +123,7 @@ Viewing check button for switch 'Select in collapsed suites'
 Viewing radio button for switch 'Current selection:', options Discard/Refine/Extend/Exclude'. Default value 0.
 Viewing action with title '_Select'
 
-Changing GUI status to: 'TextTest started at 07Mar17:19:59.'
+Changing GUI status to: 'TextTest started at 08Mar16:12:58.'
 
 'set test selection to' event created with arguments 'suite'
 Setting sensitivity of action 'Remove...' to True
@@ -190,14 +196,14 @@ Changing GUI status to: 'Added new VideoStore test-case t1'
 
 Viewing notebook page for 'Recording'
 Viewing entry for option 'Version to record'
-Viewing entry for option 'Checkout to use for recording' (set to '/users/geoff/texttesttmp/texttest.07Mar171850/GUI/StaticGUI/UseCaseRecording/RecordFails/TargetApp/source_with_pyc')
+Viewing entry for option 'Checkout to use for recording' (set to '/users/geoff/texttesttmp/texttest.08Mar161158/GUI/StaticGUI/UseCaseRecording/RecordFails/TargetApp/source_with_pyc')
 Viewing check button for switch 'Automatically replay test after recording it' (checked)
 Viewing radio button for switch '', options Auto-replay invisible/Auto-replay in dynamic GUI'. Default value 0.
 Viewing action with title 'Record _Use-Case'
 
 'record use-case' event created with arguments ''
 Starting dynamic GUI in record mode...
-Starting record run of TextTest with arguments -g -tp suite/t1 -d /users/geoff/texttesttmp/texttest.07Mar171850/GUI/StaticGUI/UseCaseRecording/RecordFails/TargetApp -a gui -c /users/geoff/texttesttmp/texttest.07Mar171850/GUI/StaticGUI/UseCaseRecording/RecordFails/TargetApp/source_with_pyc -record
+Starting record run of TextTest with arguments -g -tp suite/t1 -d /users/geoff/texttesttmp/texttest.08Mar161158/GUI/StaticGUI/UseCaseRecording/RecordFails/TargetApp -a gui -c /users/geoff/texttesttmp/texttest.08Mar161158/GUI/StaticGUI/UseCaseRecording/RecordFails/TargetApp/source_with_pyc -record
 
 Changing GUI status to: 'Started record session for VideoStore test-case t1'
 

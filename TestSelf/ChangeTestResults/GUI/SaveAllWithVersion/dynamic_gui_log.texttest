@@ -1,4 +1,4 @@
-Top Window title is TextTest dynamic GUI (tests started at 06Mar23:51:49)
+Top Window title is TextTest dynamic GUI (tests started at 08Mar16:12:13)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -17,17 +17,23 @@ UI layout:
 <ui>
   <menubar name="MainMenuBar">
     <menu name="filemenu" action="filemenu">
+      <placeholder name="FirstInFileMenu">
+        <menuitem name="Save" action="Save"/>
+        <separator/>
+      </placeholder>
       <menuitem name="Save Selection..." action="Save Selection..."/>
       <separator/>
-      <menuitem name="Save" action="Save"/>
-      <separator/>
       <menuitem name="Quit" action="Quit"/>
+    </menu>
+    <menu name="editmenu" action="editmenu">
     </menu>
     <menu name="viewmenu" action="viewmenu">
       <menuitem name="Toolbar" action="Toolbar"/>
       <menuitem name="Shortcut bar" action="Shortcut bar"/>
       <menuitem name="Status bar" action="Status bar"/>
     </menu>
+    <placeholder name="ExtraMenus">
+    </placeholder>
     <menu name="helpmenu" action="helpmenu">
       <menuitem name="Migration Notes" action="Migration Notes"/>
       <separator/>
@@ -63,7 +69,7 @@ Tabs showing : Status
 Test progress:
 --> Not started : 4, colour 'white', font 'bold'
 
-Changing GUI status to: 'TextTest started at 06Mar23:51:49.'
+Changing GUI status to: 'TextTest started at 08Mar16:12:13.'
 
 Waiting for application event 'completion of test actions' to occur.
 Redrawing test OutDiff coloured yellow
@@ -136,7 +142,7 @@ Test progress:
 Redrawing test ErrDiff coloured red
 (Second column 'errors different' coloured red)
 
-Progress bar set to fraction 1.0, text 'All 4 tests completed at 06Mar23:51:51 (3 tests failed)'
+Progress bar set to fraction 1.0, text 'All 4 tests completed at 08Mar16:12:15 (3 tests failed)'
 
 Test progress:
 --> Not started : 0, colour 'white', font ''
@@ -198,14 +204,14 @@ Saving HELLO test-case OutDiff  - version 2, exactness 1
 
 Changing GUI status to: 'Saving HELLO test-case OutDiff  : output, version 2'
 Redrawing test OutDiff coloured green
-Progress bar detected save, new text is 'All 4 tests completed at 06Mar23:51:51 (2 tests failed)'
+Progress bar detected save, new text is 'All 4 tests completed at 08Mar16:12:15 (2 tests failed)'
 Saving HELLO test-case BothDiff - version 2, exactness 1
 
 Changing GUI status to: 'Saving HELLO test-case BothDiff : errors, version 2'
 
 Changing GUI status to: 'Saving HELLO test-case BothDiff : output, version 2'
 Redrawing test BothDiff coloured green
-Progress bar detected save, new text is 'All 4 tests completed at 06Mar23:51:51 (1 tests failed)'
+Progress bar detected save, new text is 'All 4 tests completed at 08Mar16:12:15 (1 tests failed)'
 Saving HELLO test-case ErrDiff  - version 2, exactness 1
 
 Changing GUI status to: 'Saving HELLO test-case ErrDiff  : errors, version 2'
@@ -226,7 +232,7 @@ Test progress:
 --> Succeeded : 3, colour 'green', font 'bold'
 
 Tabs showing : Status
-Progress bar detected save, new text is 'All 4 tests completed at 06Mar23:51:51'
+Progress bar detected save, new text is 'All 4 tests completed at 08Mar16:12:15'
 
 Test progress:
 --> Not started : 0, colour 'white', font ''

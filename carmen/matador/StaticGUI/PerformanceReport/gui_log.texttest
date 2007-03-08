@@ -31,8 +31,10 @@ UI layout:
 <ui>
   <menubar name="MainMenuBar">
     <menu name="filemenu" action="filemenu">
-      <menuitem name="Load Selection..." action="Load Selection..."/>
-      <separator/>
+      <placeholder name="FirstInFileMenu">
+        <menuitem name="Load Selection..." action="Load Selection..."/>
+        <separator/>
+      </placeholder>
       <menuitem name="Save Selection..." action="Save Selection..."/>
       <separator/>
       <menuitem name="Quit" action="Quit"/>
@@ -55,17 +57,18 @@ UI layout:
       <menuitem name="Shortcut bar" action="Shortcut bar"/>
       <menuitem name="Status bar" action="Status bar"/>
     </menu>
-    <menu name="actionsmenu" action="actionsmenu">
-      <menuitem name="Select" action="Select"/>
-      <menuitem name="Run" action="Run"/>
-      <menuitem name="Reconnect" action="Reconnect"/>
-      <menuitem name="Reset" action="Reset"/>
-    </menu>
-    <menu name="optimizationmenu" action="optimizationmenu">
-      <separator/>
-      <menuitem name="Create Performance Report..." action="Create Performance Report..."/>
-      <menuitem name="Plot Graph" action="Plot Graph"/>
-    </menu>
+    <placeholder name="ExtraMenus">
+      <menu name="actionsmenu" action="actionsmenu">
+        <menuitem name="Select" action="Select"/>
+        <menuitem name="Run" action="Run"/>
+        <menuitem name="Reconnect" action="Reconnect"/>
+        <menuitem name="Reset" action="Reset"/>
+      </menu>
+      <menu name="optimizationmenu" action="optimizationmenu">
+        <menuitem name="Plot Graph" action="Plot Graph"/>
+        <menuitem name="Create Performance Report..." action="Create Performance Report..."/>
+      </menu>
+    </placeholder>
     <menu name="helpmenu" action="helpmenu">
       <menuitem name="Migration Notes" action="Migration Notes"/>
       <separator/>
@@ -79,6 +82,8 @@ UI layout:
     <separator/>
     <toolitem name="Select" action="Select"/>
     <toolitem name="Run" action="Run"/>
+    <placeholder name="AfterRun">
+    </placeholder>
     <separator/>
     <toolitem name="Remove..." action="Remove..."/>
     <separator/>
@@ -88,7 +93,7 @@ UI layout:
     <menuitem name="Rename..." action="Rename..."/>
     <menuitem name="Remove..." action="Remove..."/>
     <separator/>
-    <menu name="reorderpopupmenu" action="reorderpopupmenu">
+    <menu name="reordermenu" action="reordermenu">
       <menuitem name="Move to first" action="Move to first"/>
       <menuitem name="Move up" action="Move up"/>
       <menuitem name="Move down" action="Move down"/>
@@ -165,7 +170,7 @@ Viewing check button for switch 'Subproblems'
 Viewing check button for switch 'TargetJuniorImprove'
 Viewing action with title '_Select'
 
-Changing GUI status to: 'TextTest started at 07Mar17:20:18.'
+Changing GUI status to: 'TextTest started at 08Mar16:13:18.'
 
 'select indicated tests' event created with arguments ''
 
@@ -208,7 +213,7 @@ Changing GUI status to: 'Creating report for RD_am_cas_v9scripts/large'
 
 Changing GUI status to: 'Creating report for Picador/illegal_pairings'
 
-Changing GUI status to: 'Created performance report in /users/geoff/texttesttmp/texttest.carmen.07Mar171850/carmen/matador/StaticGUI/PerformanceReport/performance_report'
+Changing GUI status to: 'Created performance report in /users/geoff/texttesttmp/texttest.carmen.08Mar161158/carmen/matador/StaticGUI/PerformanceReport/performance_report'
 
 'quit' event created with arguments ''
 

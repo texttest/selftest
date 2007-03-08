@@ -29,8 +29,10 @@ UI layout:
 <ui>
   <menubar name="MainMenuBar">
     <menu name="filemenu" action="filemenu">
-      <menuitem name="Load Selection..." action="Load Selection..."/>
-      <separator/>
+      <placeholder name="FirstInFileMenu">
+        <menuitem name="Load Selection..." action="Load Selection..."/>
+        <separator/>
+      </placeholder>
       <menuitem name="Save Selection..." action="Save Selection..."/>
       <separator/>
       <menuitem name="Quit" action="Quit"/>
@@ -53,12 +55,14 @@ UI layout:
       <menuitem name="Shortcut bar" action="Shortcut bar"/>
       <menuitem name="Status bar" action="Status bar"/>
     </menu>
-    <menu name="actionsmenu" action="actionsmenu">
-      <menuitem name="Select" action="Select"/>
-      <menuitem name="Run" action="Run"/>
-      <menuitem name="Reconnect" action="Reconnect"/>
-      <menuitem name="Reset" action="Reset"/>
-    </menu>
+    <placeholder name="ExtraMenus">
+      <menu name="actionsmenu" action="actionsmenu">
+        <menuitem name="Select" action="Select"/>
+        <menuitem name="Run" action="Run"/>
+        <menuitem name="Reconnect" action="Reconnect"/>
+        <menuitem name="Reset" action="Reset"/>
+      </menu>
+    </placeholder>
     <menu name="helpmenu" action="helpmenu">
       <menuitem name="Migration Notes" action="Migration Notes"/>
       <separator/>
@@ -72,6 +76,8 @@ UI layout:
     <separator/>
     <toolitem name="Select" action="Select"/>
     <toolitem name="Run" action="Run"/>
+    <placeholder name="AfterRun">
+    </placeholder>
     <separator/>
     <toolitem name="Remove..." action="Remove..."/>
     <separator/>
@@ -80,7 +86,7 @@ UI layout:
     <menuitem name="Rename..." action="Rename..."/>
     <menuitem name="Remove..." action="Remove..."/>
     <separator/>
-    <menu name="reorderpopupmenu" action="reorderpopupmenu">
+    <menu name="reordermenu" action="reordermenu">
       <menuitem name="Move to first" action="Move to first"/>
       <menuitem name="Move up" action="Move up"/>
       <menuitem name="Move down" action="Move down"/>
@@ -115,7 +121,7 @@ Viewing check button for switch 'Select in collapsed suites'
 Viewing radio button for switch 'Current selection:', options Discard/Refine/Extend/Exclude'. Default value 0.
 Viewing action with title '_Select'
 
-Changing GUI status to: 'TextTest started at 07Mar17:19:33.'
+Changing GUI status to: 'TextTest started at 08Mar16:12:44.'
 
 'set test selection to' event created with arguments 'Test'
 
@@ -141,19 +147,19 @@ Description:
 Tabs showing : Test, Selection, Running, Config
 
 'select file' event created with arguments 'output.hello'
-Viewing file /users/geoff/texttesttmp/texttest.07Mar171850/GUI/QuitConfirmation/DynamicFromStatic/TargetApp/Test/output.hello using 'emacs', refresh set to 0
+Viewing file /users/geoff/texttesttmp/texttest.08Mar161158/GUI/QuitConfirmation/DynamicFromStatic/TargetApp/Test/output.hello using 'emacs', refresh set to 0
 
 Changing GUI status to: 'Started "emacs output.hello" in background (from test Test).'
 
 'run selected tests' event created with arguments ''
 
-Changing GUI status to: 'Started 1 tests at 07Mar17:19:34.'
+Changing GUI status to: 'Started 1 tests at 08Mar16:12:45.'
 
 'quit' event created with arguments ''
 QUERY: 
 These processes are still running, and will be terminated when quitting: 
 
-   + PID 16966 : emacs output.hello (from test Test)
+   + PID 26648 : emacs output.hello (from test Test)
 
 Quit anyway?
 
@@ -170,13 +176,13 @@ Adding file errors.hello under heading 'Standard Files', coloured pale green
 Adding file output.hello under heading 'Standard Files', coloured pale green
 Expected application event 'dynamic GUI to be closed' occurred, proceeding.
 
-Changing GUI status to: 'Done updating after dynamic run started at 07Mar17:19:34.'
+Changing GUI status to: 'Done updating after dynamic run started at 08Mar16:12:45.'
 
 'quit' event created with arguments ''
 QUERY: 
 These processes are still running, and will be terminated when quitting: 
 
-   + PID 16966 : emacs output.hello (from test Test)
+   + PID 26648 : emacs output.hello (from test Test)
 
 Quit anyway?
 

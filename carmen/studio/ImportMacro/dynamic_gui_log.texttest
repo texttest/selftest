@@ -1,4 +1,4 @@
-Top Window title is TextTest dynamic GUI (tests started at 06Mar23:55:01)
+Top Window title is TextTest dynamic GUI (tests started at 08Mar16:13:23)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -17,17 +17,23 @@ UI layout:
 <ui>
   <menubar name="MainMenuBar">
     <menu name="filemenu" action="filemenu">
+      <placeholder name="FirstInFileMenu">
+        <menuitem name="Save" action="Save"/>
+        <separator/>
+      </placeholder>
       <menuitem name="Save Selection..." action="Save Selection..."/>
       <separator/>
-      <menuitem name="Save" action="Save"/>
-      <separator/>
       <menuitem name="Quit" action="Quit"/>
+    </menu>
+    <menu name="editmenu" action="editmenu">
     </menu>
     <menu name="viewmenu" action="viewmenu">
       <menuitem name="Toolbar" action="Toolbar"/>
       <menuitem name="Shortcut bar" action="Shortcut bar"/>
       <menuitem name="Status bar" action="Status bar"/>
     </menu>
+    <placeholder name="ExtraMenus">
+    </placeholder>
     <menu name="helpmenu" action="helpmenu">
       <menuitem name="Migration Notes" action="Migration Notes"/>
       <separator/>
@@ -61,7 +67,7 @@ Tabs showing : Status
 Test progress:
 --> Not started : 1, colour 'white', font 'bold'
 
-Changing GUI status to: 'TextTest started at 06Mar23:55:02.'
+Changing GUI status to: 'TextTest started at 08Mar16:13:23.'
 
 Waiting for application event 'completion of test actions' to occur.
 Redrawing test data_unchanged_copy coloured yellow
@@ -72,7 +78,7 @@ Test progress:
 Redrawing test data_unchanged_copy coloured red
 (Second column 'errors new(+)' coloured red)
 
-Progress bar set to fraction 1.0, text 'All 1 tests completed at 06Mar23:55:11 (1 tests failed)'
+Progress bar set to fraction 1.0, text 'All 1 tests completed at 08Mar16:13:31 (1 tests failed)'
 
 Test progress:
 --> Not started : 0, colour 'white', font ''
@@ -101,7 +107,7 @@ Viewing action with title '_Update Info' (greyed out)
 Tabs showing : Text Info, Viewing, Saving
 
 ---------- Text Info Window ----------
-Test FAILED on redenaco :
+Test FAILED on singleton :
 ------------------ New result in catalogue --------------------
 
 The following existing files/directories changed their contents:
@@ -132,7 +138,7 @@ Changing GUI status to: 'Saving Studio test-case data_unchanged_copy : errors, n
 Changing GUI status to: 'Saving Studio test-case data_unchanged_copy : output, no version'
 
 ---------- Text Info Window ----------
-Test succeeded on redenaco
+Test succeeded on singleton
 --------------------------------------
 Redrawing test data_unchanged_copy coloured green
 Redrawing suite lh_v12 : second column 'All 1 tests successful' coloured green
@@ -152,7 +158,7 @@ Test progress:
 
 Tabs showing : Status
 Redrawing suite TargetApp : second column 'All 1 tests successful' coloured green
-Progress bar detected save, new text is 'All 1 tests completed at 06Mar23:55:11'
+Progress bar detected save, new text is 'All 1 tests completed at 08Mar16:13:31'
 
 Test progress:
 --> Not started : 0, colour 'white', font ''

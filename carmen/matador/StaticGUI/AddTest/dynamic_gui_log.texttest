@@ -1,4 +1,4 @@
-Top Window title is TextTest dynamic GUI (tests started at 06Mar23:54:26)
+Top Window title is TextTest dynamic GUI (tests started at 08Mar16:13:11)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -18,20 +18,26 @@ UI layout:
 <ui>
   <menubar name="MainMenuBar">
     <menu name="filemenu" action="filemenu">
+      <placeholder name="FirstInFileMenu">
+        <menuitem name="Save" action="Save"/>
+        <separator/>
+      </placeholder>
       <menuitem name="Save Selection..." action="Save Selection..."/>
       <separator/>
-      <menuitem name="Save" action="Save"/>
-      <separator/>
       <menuitem name="Quit" action="Quit"/>
+    </menu>
+    <menu name="editmenu" action="editmenu">
     </menu>
     <menu name="viewmenu" action="viewmenu">
       <menuitem name="Toolbar" action="Toolbar"/>
       <menuitem name="Shortcut bar" action="Shortcut bar"/>
       <menuitem name="Status bar" action="Status bar"/>
     </menu>
-    <menu name="optimizationmenu" action="optimizationmenu">
-      <menuitem name="Plot Graph" action="Plot Graph"/>
-    </menu>
+    <placeholder name="ExtraMenus">
+      <menu name="optimizationmenu" action="optimizationmenu">
+        <menuitem name="Plot Graph" action="Plot Graph"/>
+      </menu>
+    </placeholder>
     <menu name="helpmenu" action="helpmenu">
       <menuitem name="Migration Notes" action="Migration Notes"/>
       <separator/>
@@ -66,7 +72,7 @@ Tabs showing : Status
 Test progress:
 --> Not started : 1, colour 'white', font 'bold'
 
-Changing GUI status to: 'TextTest started at 06Mar23:54:27.'
+Changing GUI status to: 'TextTest started at 08Mar16:13:12.'
 
 Waiting for application event 'completion of test actions' to occur.
 Redrawing test flight_back_in_time coloured yellow
@@ -77,7 +83,7 @@ Test progress:
 Redrawing test flight_back_in_time coloured red
 (Second column 'solution new(+)' coloured red)
 
-Progress bar set to fraction 1.0, text 'All 1 tests completed at 06Mar23:54:28 (1 tests failed)'
+Progress bar set to fraction 1.0, text 'All 1 tests completed at 08Mar16:13:15 (1 tests failed)'
 
 Test progress:
 --> Not started : 0, colour 'white', font ''

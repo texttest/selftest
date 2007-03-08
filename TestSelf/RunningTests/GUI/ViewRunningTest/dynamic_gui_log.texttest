@@ -1,4 +1,4 @@
-Top Window title is TextTest dynamic GUI (tests started at 06Mar23:52:33)
+Top Window title is TextTest dynamic GUI (tests started at 08Mar16:12:27)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -17,17 +17,23 @@ UI layout:
 <ui>
   <menubar name="MainMenuBar">
     <menu name="filemenu" action="filemenu">
+      <placeholder name="FirstInFileMenu">
+        <menuitem name="Save" action="Save"/>
+        <separator/>
+      </placeholder>
       <menuitem name="Save Selection..." action="Save Selection..."/>
       <separator/>
-      <menuitem name="Save" action="Save"/>
-      <separator/>
       <menuitem name="Quit" action="Quit"/>
+    </menu>
+    <menu name="editmenu" action="editmenu">
     </menu>
     <menu name="viewmenu" action="viewmenu">
       <menuitem name="Toolbar" action="Toolbar"/>
       <menuitem name="Shortcut bar" action="Shortcut bar"/>
       <menuitem name="Status bar" action="Status bar"/>
     </menu>
+    <placeholder name="ExtraMenus">
+    </placeholder>
     <menu name="helpmenu" action="helpmenu">
       <menuitem name="Migration Notes" action="Migration Notes"/>
       <separator/>
@@ -63,7 +69,7 @@ Tabs showing : Status
 Test progress:
 --> Not started : 3, colour 'white', font 'bold'
 
-Changing GUI status to: 'TextTest started at 06Mar23:52:33.'
+Changing GUI status to: 'TextTest started at 08Mar16:12:27.'
 
 Waiting for application event 'test Basic to start' to occur.
 Redrawing test Basic coloured yellow
@@ -88,13 +94,13 @@ Viewing action with title '_Update Info'
 Tabs showing : Text Info, Viewing, Saving
 
 ---------- Text Info Window ----------
-Running on bonnyville
+Running on pennsville
 --------------------------------------
 
 Tabs showing : Test, Status
 
 'select file' event created with arguments 'output.sleep'
-Following file /users/mattias/texttesttmp/texttest.06Mar235121/TestSelf/RunningTests/GUI/ViewRunningTest/texttesttmp/sleep.06Mar235233/Basic/output.sleep using 'tail -f'
+Following file /users/geoff/texttesttmp/texttest.08Mar161158/TestSelf/RunningTests/GUI/ViewRunningTest/texttesttmp/sleep.08Mar161227/Basic/output.sleep using 'tail -f'
 
 Changing GUI status to: 'Started "tail -f output.sleep" in background (from test Basic).'
 
@@ -106,7 +112,7 @@ Viewing check button for switch 'Follow file rather than view it' (checked)
 'uncheck follow file rather than view it' event created with arguments ''
 
 'select file' event created with arguments 'output.sleep'
-Viewing file /users/mattias/texttesttmp/texttest.06Mar235121/TestSelf/RunningTests/GUI/ViewRunningTest/texttesttmp/sleep.06Mar235233/Basic/output.sleep using 'emacs', refresh set to 0
+Viewing file /users/geoff/texttesttmp/texttest.08Mar161158/TestSelf/RunningTests/GUI/ViewRunningTest/texttesttmp/sleep.08Mar161227/Basic/output.sleep using 'emacs', refresh set to 0
 
 Changing GUI status to: 'Started "emacs output.sleep" in background (from test Basic).'
 

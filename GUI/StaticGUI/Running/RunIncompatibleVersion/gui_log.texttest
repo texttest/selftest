@@ -29,8 +29,10 @@ UI layout:
 <ui>
   <menubar name="MainMenuBar">
     <menu name="filemenu" action="filemenu">
-      <menuitem name="Load Selection..." action="Load Selection..."/>
-      <separator/>
+      <placeholder name="FirstInFileMenu">
+        <menuitem name="Load Selection..." action="Load Selection..."/>
+        <separator/>
+      </placeholder>
       <menuitem name="Save Selection..." action="Save Selection..."/>
       <separator/>
       <menuitem name="Quit" action="Quit"/>
@@ -53,12 +55,14 @@ UI layout:
       <menuitem name="Shortcut bar" action="Shortcut bar"/>
       <menuitem name="Status bar" action="Status bar"/>
     </menu>
-    <menu name="actionsmenu" action="actionsmenu">
-      <menuitem name="Select" action="Select"/>
-      <menuitem name="Run" action="Run"/>
-      <menuitem name="Reconnect" action="Reconnect"/>
-      <menuitem name="Reset" action="Reset"/>
-    </menu>
+    <placeholder name="ExtraMenus">
+      <menu name="actionsmenu" action="actionsmenu">
+        <menuitem name="Select" action="Select"/>
+        <menuitem name="Run" action="Run"/>
+        <menuitem name="Reconnect" action="Reconnect"/>
+        <menuitem name="Reset" action="Reset"/>
+      </menu>
+    </placeholder>
     <menu name="helpmenu" action="helpmenu">
       <menuitem name="Migration Notes" action="Migration Notes"/>
       <separator/>
@@ -72,6 +76,8 @@ UI layout:
     <separator/>
     <toolitem name="Select" action="Select"/>
     <toolitem name="Run" action="Run"/>
+    <placeholder name="AfterRun">
+    </placeholder>
     <separator/>
     <toolitem name="Remove..." action="Remove..."/>
     <separator/>
@@ -80,7 +86,7 @@ UI layout:
     <menuitem name="Rename..." action="Rename..."/>
     <menuitem name="Remove..." action="Remove..."/>
     <separator/>
-    <menu name="reorderpopupmenu" action="reorderpopupmenu">
+    <menu name="reordermenu" action="reordermenu">
       <menuitem name="Move to first" action="Move to first"/>
       <menuitem name="Move up" action="Move up"/>
       <menuitem name="Move down" action="Move down"/>
@@ -128,7 +134,7 @@ Viewing check button for switch 'Select in collapsed suites'
 Viewing radio button for switch 'Current selection:', options Discard/Refine/Extend/Exclude'. Default value 0.
 Viewing action with title '_Select'
 
-Changing GUI status to: 'TextTest started at 07Mar17:19:43.'
+Changing GUI status to: 'TextTest started at 08Mar16:12:47.'
 
 'set test selection to' event created with arguments 'A03'
 
@@ -163,21 +169,21 @@ Tabs showing : Basic, Advanced, Reconnect
 
 Viewing notebook page for 'Basic'
 Viewing entry for option 'Run this version'
-Viewing entry for option 'Use checkout' (set to '/users/geoff/texttesttmp/texttest.07Mar171850/GUI/StaticGUI/Running/RunIncompatibleVersion/TargetApp/CodeNoFailures')
+Viewing entry for option 'Use checkout' (set to '/users/geoff/texttesttmp/texttest.08Mar161158/GUI/StaticGUI/Running/RunIncompatibleVersion/TargetApp/CodeNoFailures')
 Viewing action with title '_Run'
 
 'enter run this version =' event created with arguments 'small'
 
 'run selected tests' event created with arguments ''
 
-Changing GUI status to: 'Started 1 tests at 07Mar17:19:44.'
+Changing GUI status to: 'Started 1 tests at 08Mar16:12:47.'
 
 Waiting for application event 'dynamic GUI to be closed' to occur.
 
 Changing GUI status to: 'Updating files for DIP test-case A03    ...'
 Expected application event 'dynamic GUI to be closed' occurred, proceeding.
 
-Changing GUI status to: 'Done updating after dynamic run started at 07Mar17:19:44.'
+Changing GUI status to: 'Done updating after dynamic run started at 08Mar16:12:47.'
 ERROR: Dynamic run failed, with the following errors:
 No tests matching the selection criteria found for Application DIP, version small
 

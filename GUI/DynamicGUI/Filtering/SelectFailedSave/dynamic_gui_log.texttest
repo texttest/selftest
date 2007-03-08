@@ -1,4 +1,4 @@
-Top Window title is TextTest dynamic GUI (tests started at 06Mar23:53:33)
+Top Window title is TextTest dynamic GUI (tests started at 08Mar16:12:42)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -17,17 +17,23 @@ UI layout:
 <ui>
   <menubar name="MainMenuBar">
     <menu name="filemenu" action="filemenu">
+      <placeholder name="FirstInFileMenu">
+        <menuitem name="Save" action="Save"/>
+        <separator/>
+      </placeholder>
       <menuitem name="Save Selection..." action="Save Selection..."/>
       <separator/>
-      <menuitem name="Save" action="Save"/>
-      <separator/>
       <menuitem name="Quit" action="Quit"/>
+    </menu>
+    <menu name="editmenu" action="editmenu">
     </menu>
     <menu name="viewmenu" action="viewmenu">
       <menuitem name="Toolbar" action="Toolbar"/>
       <menuitem name="Shortcut bar" action="Shortcut bar"/>
       <menuitem name="Status bar" action="Status bar"/>
     </menu>
+    <placeholder name="ExtraMenus">
+    </placeholder>
     <menu name="helpmenu" action="helpmenu">
       <menuitem name="Migration Notes" action="Migration Notes"/>
       <separator/>
@@ -65,7 +71,7 @@ Tabs showing : Status
 Test progress:
 --> Not started : 5, colour 'white', font 'bold'
 
-Changing GUI status to: 'TextTest started at 06Mar23:53:34.'
+Changing GUI status to: 'TextTest started at 08Mar16:12:42.'
 
 Waiting for application event 'completion of test actions' to occur.
 Redrawing test simple_fail1 coloured yellow
@@ -168,7 +174,7 @@ Test progress:
 Redrawing test success coloured green
 Redrawing suite suite : second column 'All 1 tests successful' coloured green
 
-Progress bar set to fraction 1.0, text 'All 5 tests completed at 06Mar23:53:37 (4 tests failed)'
+Progress bar set to fraction 1.0, text 'All 5 tests completed at 08Mar16:12:44 (4 tests failed)'
 
 Test progress:
 --> Not started : 0, colour 'white', font ''
@@ -282,7 +288,7 @@ Changing GUI status to: 'Saving HELLO test-case complex_fail1 : output, no versi
 
 Changing GUI status to: 'Saving HELLO test-case complex_fail1 : errors, no version'
 Redrawing test complex_fail1 coloured green
-Progress bar detected save, new text is 'All 5 tests completed at 06Mar23:53:37 (3 tests failed)'
+Progress bar detected save, new text is 'All 5 tests completed at 08Mar16:12:44 (3 tests failed)'
 
 Test progress:
 --> Not started : 0, colour 'white', font ''
@@ -310,7 +316,7 @@ Changing GUI status to: 'Saving HELLO test-case complex_fail2 : output, no versi
 
 Changing GUI status to: 'Saving HELLO test-case complex_fail2 : errors, no version'
 Redrawing test complex_fail2 coloured green
-Progress bar detected save, new text is 'All 5 tests completed at 06Mar23:53:37 (2 tests failed)'
+Progress bar detected save, new text is 'All 5 tests completed at 08Mar16:12:44 (2 tests failed)'
 
 Test progress:
 --> Not started : 0, colour 'white', font ''
