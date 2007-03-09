@@ -65,6 +65,12 @@ warnings:APC_FILES/run_status_warning
 error:APC_FILES/run_status_error
 [end]
 
+# Collect the solution, which will be compressed
+[collate_script]
+solution:cat
+solution:uncompress -c
+[end]
+
 # ---------------- Values required by the Carmen module -------------------
 
 # What needs to be built by the rule compiler
