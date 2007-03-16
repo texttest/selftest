@@ -1,52 +1,52 @@
 From: geoff@localhost
 To: tom,dick,harry
-Subject: 21Feb2007 DIP batch : 2 tests : 2 FAILED
+Subject: 16Mar2007 HELLO batch : 2 tests : 2 FAILED
 
-DIP batch.view : 1 tests : 1 FAILED
-DIP batch.small : 1 tests : 1 FAILED
+HELLO batch.1 : 1 tests : 1 FAILED
+HELLO batch.2 : 1 tests : 1 FAILED
 
 Summary of all Unsuccessful tests follows...
 ---------------------------------------------------------------------------------
-DIP batch.view : 1 tests : 1 FAILED
+HELLO batch.1 : 1 tests : 1 FAILED
 
 The following tests FAILED : 
-In DIP test-suite TargetApp:
-  In DIP test-suite Game9952:
-    - DIP test-case A02 : output different
+In HELLO test-suite TargetApp:
+  - HELLO test-case BothDiff : errors different(+)
 
 
-DIP batch.small : 1 tests : 1 FAILED
+HELLO batch.2 : 1 tests : 1 FAILED
 
 The following tests FAILED : 
-In DIP test-suite TargetApp:
-  In DIP test-suite Game9952:
-    - DIP test-case A02 : output different
+In HELLO test-suite TargetApp:
+  - HELLO test-case BothDiff : errors different(+)
 
 
 Details of all Unsuccessful tests follows...
 ---------------------------------------------------------------------------------
-DIP batch.view : 1 tests : 1 FAILED
+HELLO batch.1 : 1 tests : 1 FAILED
 
 
 Detailed information for the tests that FAILED follows...
 --------------------------------------------------------
-TEST FAILED on hendersonville : DIP test-case A02 (under Game9952/A02)
+TEST FAILED on portmoller : HELLO test-case BothDiff (under BothDiff)
+------------------ Differences in errors --------------------
+0a1
+> Error text
 ------------------ Differences in output --------------------
-18c18
-< Germany: Hol HOLD                  (*dislodged*)
----
-> Germany: Hol HOLD                  (*was dislodged*)
+0a1
+> Hello World!
 
 ---------------------------------------------------------------------------------
-DIP batch.small : 1 tests : 1 FAILED
+HELLO batch.2 : 1 tests : 1 FAILED
 
 
 Detailed information for the tests that FAILED follows...
 --------------------------------------------------------
-TEST FAILED on hendersonville : DIP test-case A02 (under Game9952/A02)
+TEST FAILED on portmoller : HELLO test-case BothDiff (under BothDiff)
+------------------ Differences in errors --------------------
+0a1
+> Error text
 ------------------ Differences in output --------------------
-18c18
-< Germany: Hol HOLD                  (*dislodged*)
----
-> Germany: Hol HOLD                  (*was dislodged*)
+0a1
+> Hello World!
 

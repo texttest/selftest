@@ -1,4 +1,4 @@
-Top Window title is TextTest dynamic GUI (tests started at 16Mar11:44:24)
+Top Window title is TextTest dynamic GUI (tests started at 16Mar18:19:07)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -54,12 +54,10 @@ UI layout:
 Progress bar set to fraction 0.0, text '0 of 2 tests completed'
 
 Test Tree description...
--> TargetApp (dip.batch.view)
-->   Game9952
-->     A02
--> TargetApp (dip.batch.small)
-->   Game9952
-->     A02
+-> TargetApp (hello.batch.1)
+->   BothDiff
+-> TargetApp (hello.batch.2)
+->   BothDiff
 
 Test column header set to 'Tests: 0/2 selected, none hidden'
 
@@ -70,16 +68,16 @@ Tabs showing : Status
 Test progress:
 --> Not started : 2, colour 'white', font 'bold'
 
-Changing GUI status to: 'TextTest started at 16Mar11:44:25.'
+Changing GUI status to: 'TextTest started at 16Mar18:19:08.'
 
 Waiting for application event 'completion of test actions' to occur.
-Redrawing test A02 coloured yellow
+Redrawing test BothDiff coloured yellow
 
 Test progress:
 --> Not started : 1, colour 'white', font 'bold'
 --> Running : 1, colour 'yellow', font 'bold'
-Redrawing test A02 coloured red
-(Second column 'output different' coloured red)
+Redrawing test BothDiff coloured red
+(Second column 'errors different(+)' coloured red)
 
 Progress bar set to fraction 0.5, text '1 of 2 tests completed (1 tests failed)'
 
@@ -88,48 +86,53 @@ Test progress:
 --> Running : 0, colour 'white', font ''
 --> Failed : 1, colour 'red', font 'bold'
 ----> Differences : 1, colour 'red', font 'bold'
+------> errors different : 1, colour 'red', font 'bold'
 ------> output different : 1, colour 'red', font 'bold'
-Redrawing test A02 coloured yellow
+Redrawing test BothDiff coloured yellow
 
 Test progress:
 --> Not started : 0, colour 'white', font ''
 --> Running : 1, colour 'yellow', font 'bold'
 --> Failed : 1, colour 'red', font 'bold'
 ----> Differences : 1, colour 'red', font 'bold'
+------> errors different : 1, colour 'red', font 'bold'
 ------> output different : 1, colour 'red', font 'bold'
-Redrawing test A02 coloured red
-(Second column 'output different' coloured red)
+Redrawing test BothDiff coloured red
+(Second column 'errors different(+)' coloured red)
 
-Progress bar set to fraction 1.0, text 'All 2 tests completed at 16Mar11:44:26 (2 tests failed)'
+Progress bar set to fraction 1.0, text 'All 2 tests completed at 16Mar18:19:09 (2 tests failed)'
 
 Test progress:
 --> Not started : 0, colour 'white', font ''
 --> Running : 0, colour 'white', font ''
 --> Failed : 2, colour 'red', font 'bold'
 ----> Differences : 2, colour 'red', font 'bold'
+------> errors different : 2, colour 'red', font 'bold'
 ------> output different : 2, colour 'red', font 'bold'
 Expected application event 'completion of test actions' occurred, proceeding.
 
-'set test selection to' event created with arguments 'A02 version batch.view'
+'set test selection to' event created with arguments 'BothDiff version batch.1'
 
 Test column header set to 'Tests: 1/2 selected, none hidden'
 Setting sensitivity of action '_Save' to True
 Setting sensitivity of action 'S_ave Selection...' to True
 
-Setting file-view title to 'A02'
-Adding file output.dip under heading 'Comparison Files', coloured red
+Setting file-view title to 'BothDiff'
+Adding file errors.hello under heading 'Comparison Files', coloured red
+Adding file output.hello under heading 'Comparison Files', coloured red
 
 Viewing action with title '_Update Info' (greyed out)
 
 Tabs showing : Text Info, Viewing, Saving
 
 ---------- Text Info Window ----------
-Test FAILED on graceville :
+Test FAILED on portmoller :
+------------------ Differences in errors --------------------
+0a1
+> Error text
 ------------------ Differences in output --------------------
-18c18
-< Germany: Hol HOLD                  (*dislodged*)
----
-> Germany: Hol HOLD                  (*was dislodged*)
+0a1
+> Hello World!
 --------------------------------------
 
 Tabs showing : Test, Status
@@ -137,23 +140,37 @@ Tabs showing : Test, Status
 'save results for selected tests' event created with arguments ''
 
 Changing GUI status to: 'Saving 1 tests ...'
-Saving DIP test-case A02 - version batch.view, exactness 1
+Saving HELLO test-case BothDiff - version batch.1, exactness 1
 
-Changing GUI status to: 'Saving DIP test-case A02 : output, version batch.view'
-Redrawing test A02 coloured green
-Redrawing suite Game9952 : second column 'All 1 tests successful' coloured green
+Changing GUI status to: 'Saving HELLO test-case BothDiff : errors, version batch.1'
+
+Changing GUI status to: 'Saving HELLO test-case BothDiff : output, version batch.1'
+Redrawing test BothDiff coloured green
 Redrawing suite TargetApp : second column 'All 1 tests successful' coloured green
 
-Setting file-view title to 'A02'
-Adding file output.dip.batch.view under heading 'Comparison Files', coloured green
-
----------- Text Info Window ----------
-Test succeeded on graceville
---------------------------------------
+Test column header set to 'Tests: 0/2 selected, none hidden'
 Setting sensitivity of action '_Save' to False
+Setting sensitivity of action 'S_ave Selection...' to False
 
-Tabs showing : Text Info, Viewing
-Progress bar detected save, new text is 'All 2 tests completed at 16Mar11:44:26 (1 tests failed)'
+Test progress:
+--> Not started : 0, colour 'white', font ''
+--> Running : 0, colour 'white', font ''
+--> Failed : 2, colour 'red', font 'bold'
+----> Differences : 2, colour 'red', font 'bold'
+------> errors different : 2, colour 'red', font 'bold'
+------> output different : 2, colour 'red', font 'bold'
+
+Tabs showing : Status
+Progress bar detected save, new text is 'All 2 tests completed at 16Mar18:19:09 (1 tests failed)'
+
+Test progress:
+--> Not started : 0, colour 'white', font ''
+--> Running : 0, colour 'white', font ''
+--> Failed : 1, colour 'red', font 'bold'
+----> Differences : 1, colour 'red', font 'bold'
+------> errors different : 1, colour 'red', font 'bold'
+------> output different : 1, colour 'red', font 'bold'
+--> Succeeded : 1, colour 'green', font 'bold'
 
 Changing GUI status to: 'Saved 1 tests.'
 

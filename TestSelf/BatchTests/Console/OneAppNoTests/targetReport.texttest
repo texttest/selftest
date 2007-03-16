@@ -1,13 +1,15 @@
 From: geoff@localhost
 To: tom,dick,harry
-Subject: 21Feb2007 DIP batch : 2 tests : 1 FAILED
+Subject: 16Mar2007 HELLO : 4 tests : 3 FAILED
 
 Summary of all Unsuccessful tests follows...
 ---------------------------------------------------------------------------------
 The following tests FAILED : 
-In DIP test-suite TargetApp:
-  In DIP test-suite Game9952:
-    - DIP test-case A04 : output different
+In HELLO test-suite TargetApp:
+  - HELLO test-case OutDiff  : output different
+  - HELLO test-case BothDiff : errors different(+)
+  In HELLO test-suite suite:
+    - HELLO test-case OutDiff2 : output different
 
 
 Details of all Unsuccessful tests follows...
@@ -15,18 +17,24 @@ Details of all Unsuccessful tests follows...
 
 Detailed information for the tests that FAILED follows...
 --------------------------------------------------------
-TEST FAILED on louisville : DIP test-case A04 (under Game9952/A04)
+2 TESTS FAILED on portmoller :
 ------------------ Differences in output --------------------
-18c18
-< France:  Mun SUPPORT Ber HOLD      (*dislodged*)
----
-> France:  Mun SUPPORT Ber HOLD      (*was dislodged*)
+0a1
+> Hello World!
+(tests were OutDiff, OutDiff2)
+--------------------------------------------------------
+TEST FAILED on portmoller : HELLO test-case BothDiff (under BothDiff)
+------------------ Differences in errors --------------------
+0a1
+> Error text
+------------------ Differences in output --------------------
+0a1
+> Hello World!
 
 Summary of all Successful tests follows...
 ---------------------------------------------------------------------------------
 The following tests succeeded : 
-In DIP test-suite TargetApp:
-  In DIP test-suite Game9952:
-    - DIP test-case S04
+In HELLO test-suite TargetApp:
+  - HELLO test-case Success 
 
 

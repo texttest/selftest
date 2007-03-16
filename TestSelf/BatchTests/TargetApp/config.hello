@@ -1,0 +1,16 @@
+binary:${TEXTTEST_HOME}/hello.py
+
+default_interface:console
+
+home_operating_system:posix
+
+batch_recipients:tom,dick,harry
+
+# Add a recognised section with no end marker last, to catch config file bug...
+[gui_entry_overrides]
+add_environment_file:0
+
+# Create a "historical repository" to test that functionality...
+[batch_result_repository]
+self_test:repository
+[end]
