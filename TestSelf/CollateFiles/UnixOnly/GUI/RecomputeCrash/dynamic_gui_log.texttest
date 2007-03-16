@@ -1,4 +1,4 @@
-Top Window title is TextTest dynamic GUI (tests started at 08Mar16:12:28)
+Top Window title is TextTest dynamic GUI (tests started at 16Mar11:44:29)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -68,7 +68,7 @@ Tabs showing : Status
 Test progress:
 --> Not started : 2, colour 'white', font 'bold'
 
-Changing GUI status to: 'TextTest started at 08Mar16:12:28.'
+Changing GUI status to: 'TextTest started at 16Mar11:44:29.'
 
 Waiting for application event 'completion of test actions' to occur.
 Redrawing test Test coloured yellow
@@ -98,7 +98,7 @@ Test progress:
 Redrawing test Test coloured red
 (Second column 'Segmentation fault in ___newselect_nocancel' coloured red)
 
-Progress bar set to fraction 1.0, text 'All 2 tests completed at 08Mar16:12:29 (2 tests failed)'
+Progress bar set to fraction 1.0, text 'All 2 tests completed at 16Mar11:44:30 (2 tests failed)'
 
 Test progress:
 --> Not started : 0, colour 'white', font ''
@@ -137,10 +137,13 @@ inittime_the_fake_version
 Tabs showing : Test, Status
 
 'save results for selected tests' event created with arguments ''
+CONFIRMATION: You have selected tests whose results are partial or which are registered as bugs:
+  Test 'Test version core' CRASHED (Segmentation fault in ___newselect_nocancel)
+Are you sure you want to do this?
 
-Changing GUI status to: 'Saving 1 tests ...'
+'answer no to texttest confirmation' event created with arguments ''
 
-Changing GUI status to: 'Saved 1 tests.'
+Changing GUI status to: 'Action cancelled.'
 
 'set test selection to' event created with arguments 'Test version <default>'
 
@@ -163,10 +166,6 @@ Changing GUI status to: 'Saving 1 tests ...'
 Saving HELLO test-case Test - version , exactness 1
 
 Changing GUI status to: 'Saving HELLO test-case Test : output, no version'
-
----------- Text Info Window ----------
-Test succeeded
---------------------------------------
 Redrawing test Test coloured green
 Redrawing suite TargetApp : second column 'All 1 tests successful' coloured green
 
@@ -184,7 +183,7 @@ Test progress:
 ------> Segmentation fault in ___newselect_nocancel : 1, colour 'red', font 'bold'
 
 Tabs showing : Status
-Progress bar detected save, new text is 'All 2 tests completed at 08Mar16:12:29 (1 tests failed)'
+Progress bar detected save, new text is 'All 2 tests completed at 16Mar11:44:30 (1 tests failed)'
 
 Test progress:
 --> Not started : 0, colour 'white', font ''
@@ -203,6 +202,18 @@ Changing GUI status to: 'Saved 1 tests.'
 Changing GUI status to: 'Recomputing status of HELLO test-case Test ...'
 Redrawing test Test coloured red
 (Second column 'Segmentation fault in ___newselect_nocancel' coloured red)
+Setting sensitivity of action '_Save' to True
+Setting sensitivity of action 'S_ave Selection...' to True
+
+Test progress:
+--> Not started : 0, colour 'white', font ''
+--> Running : 0, colour 'white', font ''
+--> Failed : 1, colour 'red', font 'bold'
+----> Differences : 0, colour 'white', font ''
+------> output different : 0, colour 'white', font ''
+----> Crashed : 1, colour 'red', font 'bold'
+------> Segmentation fault in ___newselect_nocancel : 1, colour 'red', font 'bold'
+--> Succeeded : 1, colour 'green', font 'bold'
 
 Test progress:
 --> Not started : 0, colour 'white', font ''
@@ -217,8 +228,6 @@ Test progress:
 Changing GUI status to: 'Done recomputing status of HELLO test-case Test.'
 
 Test column header set to 'Tests: 1/2 selected, none hidden'
-Setting sensitivity of action '_Save' to True
-Setting sensitivity of action 'S_ave Selection...' to True
 
 Setting file-view title to 'Test'
 Adding file errors.hello under heading 'Comparison Files', coloured green
