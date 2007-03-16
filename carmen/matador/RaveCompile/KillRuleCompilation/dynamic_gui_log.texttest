@@ -1,4 +1,4 @@
-Top Window title is TextTest dynamic GUI (tests started at 09Mar13:46:11)
+Top Window title is TextTest dynamic GUI (tests started at 16Mar01:45:55)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -9,6 +9,14 @@ Viewing toggle action with title '_Status bar'
 Viewing action with title '_Quit', stock id ''gtk-quit'', accelerator ''<control>q''
 Viewing action with title '_Save', stock id ''gtk-save'', accelerator ''<control>s'' (greyed out)
 Viewing action with title 'S_ave Selection...', stock id ''gtk-save-as'', accelerator ''<control><shift>s'' (greyed out)
+Viewing action with title '_Log' (greyed out)
+Viewing action with title 'Log Recursive' (greyed out)
+Viewing action with title '_Difference' (greyed out)
+Viewing action with title 'Difference Recursive' (greyed out)
+Viewing action with title '_Status' (greyed out)
+Viewing action with title 'Status Recursive' (greyed out)
+Viewing action with title 'A_nnotate' (greyed out)
+Viewing action with title 'Annotate Recursive' (greyed out)
 Viewing action with title '_Plot Graph', stock id ''gtk-clear'', accelerator ''<control>p'' (greyed out)
 Viewing action with title '_Migration Notes'
 Viewing action with title 'Component _Versions'
@@ -37,6 +45,20 @@ UI layout:
       <menu name="optimizationmenu" action="optimizationmenu">
         <menuitem name="Plot Graph" action="Plot Graph"/>
       </menu>
+      <menu name="CVSmenu" action="CVSmenu">
+        <menuitem name="Log" action="Log"/>
+        <menuitem name="Log Recursive" action="Log Recursive"/>
+        <separator/>
+        <menuitem name="Difference" action="Difference"/>
+        <menuitem name="Difference Recursive" action="Difference Recursive"/>
+        <separator/>
+        <menuitem name="Status" action="Status"/>
+        <menuitem name="Status Recursive" action="Status Recursive"/>
+        <separator/>
+        <menuitem name="Annotate" action="Annotate"/>
+        <menuitem name="Annotate Recursive" action="Annotate Recursive"/>
+        <separator/>
+      </menu>
     </placeholder>
     <menu name="helpmenu" action="helpmenu">
       <menuitem name="Migration Notes" action="Migration Notes"/>
@@ -52,6 +74,20 @@ UI layout:
     <separator/>
   </toolbar>
   <popup name="TestPopupMenu">
+    <menu name="CVSmenu" action="CVSmenu">
+      <menuitem name="Log" action="Log"/>
+      <menuitem name="Log Recursive" action="Log Recursive"/>
+      <separator/>
+      <menuitem name="Difference" action="Difference"/>
+      <menuitem name="Difference Recursive" action="Difference Recursive"/>
+      <separator/>
+      <menuitem name="Status" action="Status"/>
+      <menuitem name="Status Recursive" action="Status Recursive"/>
+      <separator/>
+      <menuitem name="Annotate" action="Annotate"/>
+      <menuitem name="Annotate Recursive" action="Annotate Recursive"/>
+      <separator/>
+    </menu>
   </popup>
 </ui>
 
@@ -74,7 +110,7 @@ Tabs showing : Status
 Test progress:
 --> Not started : 2, colour 'white', font 'bold'
 
-Changing GUI status to: 'TextTest started at 09Mar13:46:13.'
+Changing GUI status to: 'TextTest started at 16Mar01:45:56.'
 
 Waiting for application event 'test all_1crew version <default> to start ruleset compilation' to occur.
 Waiting for application event 'test all_1crew version othercarmtmp to start ruleset compilation' to occur.

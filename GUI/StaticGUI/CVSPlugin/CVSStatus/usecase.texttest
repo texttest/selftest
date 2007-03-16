@@ -1,0 +1,19 @@
+set test selection to S01.99
+cvs status for the selected files
+select TargetApp/Game9952/S01.99/output.dip
+show cvs log
+press close
+show cvs annotations
+press close
+show cvs diffs
+press close
+press close
+set test selection to npstIII
+recursive cvs status for the selected files
+select TargetApp/npstIII/Game47/testsuite.dip
+select TargetApp/npstIII/Game47/S01/input.dip
+press close
+set file selection to testsuite.dip
+cvs status for the selected files
+press close
+quit
