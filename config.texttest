@@ -121,6 +121,7 @@ targetReport:[^ ]*@localhost{REPLACE <username>@localhost}
 targetReport: on .*test-case.*under{WORD -7}
 targetReport:[0-9][0-9][A-Z][a-z][a-z][0-9][0-9][0-9][0-9]{REPLACE <today's date>}
 targetReport:seconds on{WORD -1}
+targetReport:TESTS FAILED{WORD -2}
 catalogue:.nfs
 catalogue:[^-]*[0-9][0-9][A-Z][a-z][a-z][0-9][0-9][0-9][0-9][0-9][0-9]{REPLACE <texttest tmp dir>}
 catalogue:[0-9][0-9][A-Z][a-z][a-z][0-9][0-9][0-9][0-9]{REPLACE <today's date>}
