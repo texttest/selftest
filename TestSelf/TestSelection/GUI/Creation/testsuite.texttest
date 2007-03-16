@@ -1,0 +1,39 @@
+# All tests run from static GUI. Make sure they really are all run!
+NoFilters
+
+# Check we can select a test or two with the mouse
+MouseSelection
+
+# Check we can type in a test name or two
+SelectByName
+
+# Make sure we can select and run OK with version identifiers
+SelectByVersion
+
+# Make sure the GUI can handle the case where a test
+# with a sub-name is selected (Bugzilla 1521)
+SelectSubText
+
+# But should still find tests selected from the static GUI command line
+CmdLineSelection
+
+# After selecting it should clear again when you press select next time
+ClearTestSelection
+
+# Make sure we can handle selecting tests that the static GUI doesn't know about...
+SelectUnknownTest
+
+# Check we get a correct popup if we start a test which doesn't exist for the given version
+TestAndVersionIncompatible
+
+# Check file view continues to be correct after disappearing due to multiple selection
+SelectSingleAfterMultiple
+
+# Check for crashes when changing a few selections
+SelectTestAfterSuites
+
+# Do multiple selections to test the different ways in which the current selection can be manipulated.
+MultipleSelections
+
+# Copy of MultipleSelections, which also runs the selected tests
+MultipleSelectionsRun

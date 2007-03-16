@@ -127,25 +127,60 @@ Viewing check button for switch 'Select in collapsed suites'
 Viewing radio button for switch 'Current selection:', options Discard/Refine/Extend/Exclude'. Default value 0.
 Viewing action with title '_Select'
 
-Changing GUI status to: 'TextTest started at 08Mar16:12:14.'
+Changing GUI status to: 'TextTest started at 16Mar16:41:01.'
 
-'enter tests listed in file =' event created with arguments 'some_random_dir/some_random_file'
+'set test selection to' event created with arguments 'Two'
 
-'select indicated tests from tab' event created with arguments ''
+Test column header set to 'Tests: 1/4 selected'
+Setting sensitivity of action '_Run' to True
+Setting sensitivity of action '_Rename...' to True
+Setting sensitivity of action 'Remove...' to True
+Setting sensitivity of action 'Move to first' to True
+Setting sensitivity of action 'Move up' to True
+Setting sensitivity of action 'Move down' to True
+Setting sensitivity of action 'Move to last' to True
+Setting sensitivity of action 'Re_connect' to True
+Setting sensitivity of action 'S_ave Selection...' to True
 
-Changing GUI status to: 'Selecting tests ...'
-ERROR: 
-Failed to get filters from file 'some_random_dir/some_random_file':
-[Errno 2] No such file or directory: 'some_random_dir/some_random_file'
+Setting file-view title to 'Two'
+Adding file errors.hello under heading 'Standard Files', coloured pale green
+Adding file output.hello under heading 'Standard Files', coloured pale green
 
-'enter tests listed in file =' event created with arguments 'filter_files/some_random_file'
 
-'select indicated tests from tab' event created with arguments ''
+Tabs showing : Text Info, Copying, New File, Bugs
 
-Changing GUI status to: 'Selecting tests ...'
-ERROR: 
-Failed to get filters from file 'filter_files/some_random_file':
-[Errno 2] No such file or directory: '/users/geoff/texttesttmp/texttest.08Mar161158/TestSelf/TestSelection/GUI/LoadFromNonExistingDir/TargetApp/filter_files/some_random_file'
+---------- Text Info Window ----------
+Description:
+<No description provided>
+--------------------------------------
+
+Tabs showing : Test, Selection, Running, Config
+
+'view options for' event created with arguments 'Running'
+
+Tabs showing : Basic, Advanced, Reconnect
+
+Viewing notebook page for 'Basic'
+Viewing entry for option 'Run this version'
+Viewing entry for option 'Use checkout'
+Viewing action with title '_Run'
+
+'enter run this version =' event created with arguments 'small'
+
+'run selected tests' event created with arguments ''
+
+Changing GUI status to: 'Started 1 tests at 16Mar16:41:02.'
+
+Waiting for application event 'dynamic GUI to be closed' to occur.
+
+Changing GUI status to: 'Updating files for HELLO test-case Two   ...'
+Expected application event 'dynamic GUI to be closed' occurred, proceeding.
+
+Changing GUI status to: 'Done updating after dynamic run started at 16Mar16:41:02.'
+ERROR: Dynamic run failed, with the following errors:
+No tests matching the selection criteria found for Application HELLO, version small
+
+'agree to texttest message' event created with arguments ''
 
 'quit' event created with arguments ''
 
