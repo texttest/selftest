@@ -1,4 +1,4 @@
-Top Window title is TextTest dynamic GUI (tests started at 16Mar12:16:53)
+Top Window title is TextTest dynamic GUI (tests started at 19Mar01:11:16)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -89,6 +89,22 @@ UI layout:
       <separator/>
     </menu>
   </popup>
+  <popup name="TestFilePopupMenu">
+    <menu name="CVSmenu" action="CVSmenu">
+      <menuitem name="Log" action="Log"/>
+      <menuitem name="Log Recursive" action="Log Recursive"/>
+      <separator/>
+      <menuitem name="Difference" action="Difference"/>
+      <menuitem name="Difference Recursive" action="Difference Recursive"/>
+      <separator/>
+      <menuitem name="Status" action="Status"/>
+      <menuitem name="Status Recursive" action="Status Recursive"/>
+      <separator/>
+      <menuitem name="Annotate" action="Annotate"/>
+      <menuitem name="Annotate Recursive" action="Annotate Recursive"/>
+      <separator/>
+    </menu>
+  </popup>
 </ui>
 
 Progress bar set to fraction 0.0, text '0 of 2 tests completed'
@@ -110,7 +126,7 @@ Tabs showing : Status
 Test progress:
 --> Not started : 2, colour 'white', font 'bold'
 
-Changing GUI status to: 'TextTest started at 16Mar12:16:57.'
+Changing GUI status to: 'TextTest started at 19Mar01:11:16.'
 
 Waiting for application event 'completion of test actions' to occur.
 Redrawing test firstpos_illegal coloured yellow
@@ -142,7 +158,7 @@ Test progress:
 Redrawing test firstpos_illegal coloured red
 (Second column 'solution 100.0% better(+)' coloured red)
 
-Progress bar set to fraction 1.0, text 'All 2 tests completed at 16Mar12:17:01 (2 tests failed)'
+Progress bar set to fraction 1.0, text 'All 2 tests completed at 19Mar01:11:18 (2 tests failed)'
 
 Test progress:
 --> Not started : 0, colour 'white', font ''
@@ -181,7 +197,7 @@ Viewing action with title 'CVS _Log'
 Tabs showing : Text Info, Viewing, Saving
 
 ---------- Text Info Window ----------
-Test FAILED on woodville :
+Test FAILED on watsonville :
 ------------------ Differences in output --------------------
 7d6
 < Total cost of plan.......: 600
@@ -223,11 +239,11 @@ Adding file solution.cas under heading 'Comparison Files', coloured green
 Setting sensitivity of action '_Save' to False
 
 ---------- Text Info Window ----------
-Test succeeded on woodville
+Test succeeded on watsonville
 --------------------------------------
 
 Tabs showing : Text Info, Viewing
-Progress bar detected save, new text is 'All 2 tests completed at 16Mar12:17:01 (1 tests failed)'
+Progress bar detected save, new text is 'All 2 tests completed at 19Mar01:11:18 (1 tests failed)'
 
 Changing GUI status to: 'Saved 1 tests.'
 
@@ -237,7 +253,7 @@ Changing GUI status to: 'Recomputing status of Matador test-case firstpos_illega
 Redrawing test firstpos_illegal coloured green
 Redrawing suite CarmDataUser : second column 'All 1 tests successful' coloured green
 Redrawing suite TargetApp : second column 'All 1 tests successful' coloured green
-Progress bar detected save, new text is 'All 2 tests completed at 16Mar12:17:01'
+Progress bar detected save, new text is 'All 2 tests completed at 19Mar01:11:18'
 
 Changing GUI status to: 'Done recomputing status of Matador test-case firstpos_illegal.'
 
@@ -248,7 +264,7 @@ Adding file output.cas under heading 'Comparison Files', coloured green
 Adding file solution.cas under heading 'Comparison Files', coloured green
 
 ---------- Text Info Window ----------
-Test succeeded on woodville
+Test succeeded on watsonville
 --------------------------------------
 
 'quit' event created with arguments ''
