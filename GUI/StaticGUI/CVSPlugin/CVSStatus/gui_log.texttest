@@ -133,6 +133,24 @@ UI layout:
       <separator/>
     </menu>
   </popup>
+  <popup name="TestFilePopupMenu">
+    <menuitem name="Remove..." action="Remove..."/>
+    <separator/>
+    <menu name="CVSmenu" action="CVSmenu">
+      <menuitem name="Log" action="Log"/>
+      <menuitem name="Log Recursive" action="Log Recursive"/>
+      <separator/>
+      <menuitem name="Difference" action="Difference"/>
+      <menuitem name="Difference Recursive" action="Difference Recursive"/>
+      <separator/>
+      <menuitem name="Status" action="Status"/>
+      <menuitem name="Status Recursive" action="Status Recursive"/>
+      <separator/>
+      <menuitem name="Annotate" action="Annotate"/>
+      <menuitem name="Annotate Recursive" action="Annotate Recursive"/>
+      <separator/>
+    </menu>
+  </popup>
 </ui>
 
 Test Tree description...
@@ -170,7 +188,7 @@ Viewing check button for switch 'Select in collapsed suites'
 Viewing radio button for switch 'Current selection:', options Discard/Refine/Extend/Exclude'. Default value 0.
 Viewing action with title '_Select'
 
-Changing GUI status to: 'TextTest started at 16Mar17:47:14.'
+Changing GUI status to: 'TextTest started at 22Mar13:29:23.'
 
 'set test selection to' event created with arguments 'S01.99'
 
@@ -208,10 +226,8 @@ Tabs showing : Test, Selection, Running, Config
 
 Changing GUI status to: 'Getting status for TargetApp/Game9952/S01.99'
 
-Changing GUI status to: 'Analyzing status for TargetApp/Game9952/S01.99/input.dip'
-
 Changing GUI status to: 'Performed cvs status for the selected files.'
-Loaded class 'CVSTreeViewDialog' from module 'cvs'
+Loaded class 'CVSStatusDialog' from module 'cvs'
 Showing CVS tree view dialog 'cvs status for the selected files' with header
 CVS status shown below.
 CVS command used: cvs status -l
@@ -220,24 +236,13 @@ CVS tree view dialog: Using icon: 'gtk-dialog-info'
 CVS tree view dialog: Adding TargetApp as root, info Up-to-date
 CVS tree view dialog: Adding TargetApp/Game9952 as child of TargetApp, info Up-to-date
 CVS tree view dialog: Adding TargetApp/Game9952/S01.99 as child of TargetApp/Game9952, info Up-to-date
-CVS tree view dialog: Adding TargetApp/Game9952/S01.99/input.dip as child of TargetApp/Game9952/S01.99, info Up-to-date
 CVS tree view dialog: Adding TargetApp/Game9952/S01.99/output.dip as child of TargetApp/Game9952/S01.99, info Up-to-date
 CVS tree view dialog: Showing two columns
 CVS tree view dialog: Showing CVS output
-File: input.dip        	Status: Up-to-date
-
-   Working revision:	1.1	Tue Feb 13 16:01:40 2007
-   Repository revision:	1.1	/carm/2_CVS/Testing/Automatic/texttest/GUI/StaticGUI/TargetApp/Game9952/S01.99/input.dip,v
-   Sticky Tag:		(none)
-   Sticky Date:		(none)
-   Sticky Options:	(none)
-
-'select' event created with arguments 'TargetApp/Game9952/S01.99/output.dip'
-CVS tree view dialog: Showing CVS output
 File: output.dip       	Status: Up-to-date
 
-   Working revision:	1.1	Tue Feb 13 16:01:40 2007
-   Repository revision:	1.1	/carm/2_CVS/Testing/Automatic/texttest/GUI/StaticGUI/TargetApp/Game9952/S01.99/output.dip,v
+   Working revision:	1.2	Fri Mar 16 21:22:49 2007
+   Repository revision:	1.2	/carm/2_CVS/Testing/Automatic/texttest/GUI/StaticGUI/TargetApp/Game9952/S01.99/output.dip,v
    Sticky Tag:		(none)
    Sticky Date:		(none)
    Sticky Options:	(none)
@@ -248,21 +253,25 @@ Showing logs for the CVS controlled files.
 CVS log command used: cvs log -N -l
 Subdirectories were ignored, use CVS Log Recursive to see logs for all subdirectories.
 CVS tree view dialog: Using icon: 'gtk-dialog-info'
-CVS tree view dialog: Adding TargetApp as root, info Tue Feb 13 16:01:40 2007
-CVS tree view dialog: Adding TargetApp/Game9952 as child of TargetApp, info Tue Feb 13 16:01:40 2007
-CVS tree view dialog: Adding TargetApp/Game9952/S01.99 as child of TargetApp/Game9952, info Tue Feb 13 16:01:40 2007
-CVS tree view dialog: Adding TargetApp/Game9952/S01.99/output.dip as child of TargetApp/Game9952/S01.99, info Tue Feb 13 16:01:40 2007
+CVS tree view dialog: Adding TargetApp as root, info 5 days ago
+CVS tree view dialog: Adding TargetApp/Game9952 as child of TargetApp, info 5 days ago
+CVS tree view dialog: Adding TargetApp/Game9952/S01.99 as child of TargetApp/Game9952, info 5 days ago
+CVS tree view dialog: Adding TargetApp/Game9952/S01.99/output.dip as child of TargetApp/Game9952/S01.99, info 5 days ago
 CVS tree view dialog: Showing two columns
 CVS tree view dialog: Showing CVS output
 RCS file: /carm/2_CVS/Testing/Automatic/texttest/GUI/StaticGUI/TargetApp/Game9952/S01.99/output.dip,v
-Working file: /users/geoff/work/master/Testing/Automatic/texttest/GUI/StaticGUI/TargetApp/Game9952/S01.99/output.dip
-head: 1.1
+Working file: /users/mattias/work/master/Testing/Automatic/texttest/GUI/StaticGUI/TargetApp/Game9952/S01.99/output.dip
+head: 1.2
 branch:
 locks: strict
 access list:
 keyword substitution: kv
-total revisions: 1;	selected revisions: 1
+total revisions: 2;	selected revisions: 2
 description:
+----------------------------
+revision 1.2
+date: 2007/03/16 16:34:01;  author: geoff;  state: Exp;  lines: +1 -29
+Simplifying the TargetApp as much as possible
 ----------------------------
 revision 1.1
 date: 2007/02/13 16:01:40;  author: geoff;  state: Exp;
@@ -276,13 +285,14 @@ CVS annotations shown below.
 CVS command used: cvs annotate -l
 Subdirectories were ignored, use CVS Annotate Recursive to get the annotations for all subdirectories.
 CVS tree view dialog: Using icon: 'gtk-dialog-info'
-CVS tree view dialog: Adding TargetApp as root, info /users/geoff/work/master/Testing/Automatic/texttest/GUI/StaticGUI/TargetApp/Game9952/S01.99/output.dip
-CVS tree view dialog: Adding TargetApp/Game9952 as child of TargetApp, info /users/geoff/work/master/Testing/Automatic/texttest/GUI/StaticGUI/TargetApp/Game9952/S01.99/output.dip
-CVS tree view dialog: Adding TargetApp/Game9952/S01.99 as child of TargetApp/Game9952, info /users/geoff/work/master/Testing/Automatic/texttest/GUI/StaticGUI/TargetApp/Game9952/S01.99/output.dip
-CVS tree view dialog: Adding TargetApp/Game9952/S01.99/output.dip as child of TargetApp/Game9952/S01.99, info /users/geoff/work/master/Testing/Automatic/texttest/GUI/StaticGUI/TargetApp/Game9952/S01.99/output.dip
+CVS tree view dialog: Adding TargetApp as root, info /users/mattias/work/master/Testing/Automatic/texttest/GUI/StaticGUI/TargetApp/Game9952/S01.99/output.dip
+CVS tree view dialog: Adding TargetApp/Game9952 as child of TargetApp, info /users/mattias/work/master/Testing/Automatic/texttest/GUI/StaticGUI/TargetApp/Game9952/S01.99/output.dip
+CVS tree view dialog: Adding TargetApp/Game9952/S01.99 as child of TargetApp/Game9952, info /users/mattias/work/master/Testing/Automatic/texttest/GUI/StaticGUI/TargetApp/Game9952/S01.99/output.dip
+CVS tree view dialog: Adding TargetApp/Game9952/S01.99/output.dip as child of TargetApp/Game9952/S01.99, info /users/mattias/work/master/Testing/Automatic/texttest/GUI/StaticGUI/TargetApp/Game9952/S01.99/output.dip
 CVS tree view dialog: Showing CVS output
-Annotations for /users/geoff/work/master/Testing/Automatic/texttest/GUI/StaticGUI/TargetApp/Game9952/S01.99/output.dip
+Annotations for /users/mattias/work/master/Testing/Automatic/texttest/GUI/StaticGUI/TargetApp/Game9952/S01.99/output.dip
 ***************
+1.2          (geoff    16-Mar-07): Hello World!
 
 'press close' event created with arguments ''
 
@@ -296,7 +306,60 @@ CVS tree view dialog: Using icon: 'gtk-dialog-info'
 
 'press close' event created with arguments ''
 
-'set test selection to' event created with arguments 'npstIII'
+'set test selection to' event created with arguments 'S02'
+
+Setting file-view title to 'S02'
+Adding file output.dip under heading 'Standard Files', coloured pale green
+
+---------- Text Info Window ----------
+Description:
+<No description provided>
+--------------------------------------
+Setting sensitivity of action 'Move to first' to True
+Setting sensitivity of action 'Move up' to True
+
+'set file selection to' event created with arguments 'output.dip'
+
+'cvs status for the selected files' event created with arguments ''
+
+Changing GUI status to: 'Getting status for TargetApp/Game9952/S02'
+
+Changing GUI status to: 'Performed cvs status for the selected files.'
+Loaded class 'CVSStatusDialog' from module 'cvs'
+Showing CVS tree view dialog 'cvs status for the selected files' with header
+CVS status shown below.
+CVS command used: cvs status -l
+Subdirectories were ignored, use CVS Status Recursive to get the status for all subdirectories.
+CVS tree view dialog: Using icon: 'gtk-dialog-info'
+CVS tree view dialog: Adding TargetApp as root, info Up-to-date
+CVS tree view dialog: Adding TargetApp/Game9952 as child of TargetApp, info Up-to-date
+CVS tree view dialog: Adding TargetApp/Game9952/S02 as child of TargetApp/Game9952, info Up-to-date
+CVS tree view dialog: Adding TargetApp/Game9952/S02/output.dip as child of TargetApp/Game9952/S02, info Up-to-date
+CVS tree view dialog: Showing two columns
+CVS tree view dialog: Showing CVS output
+File: output.dip       	Status: Up-to-date
+
+   Working revision:	1.2	Fri Mar 16 21:22:49 2007
+   Repository revision:	1.2	/carm/2_CVS/Testing/Automatic/texttest/GUI/StaticGUI/TargetApp/Game9952/S02/output.dip,v
+   Sticky Tag:		(none)
+   Sticky Date:		(none)
+   Sticky Options:	(none)
+
+'press close' event created with arguments ''
+
+'set test selection to' event created with arguments 'S01.99'
+Setting sensitivity of action 'Move to first' to False
+Setting sensitivity of action 'Move up' to False
+
+Setting file-view title to 'S01.99'
+Adding file output.dip under heading 'Standard Files', coloured pale green
+
+---------- Text Info Window ----------
+Description:
+S01.99's comment
+--------------------------------------
+
+'set test selection to' event created with arguments 'npstIII,S05'
 
 Test column header set to 'Tests: 0/11 selected'
 
@@ -322,7 +385,32 @@ Tabs showing : Test, Selection, Config
 
 Tabs showing : Text Info, Adding Test, Adding Suite, New File, Bugs
 
+Test column header set to 'Tests: 1/11 selected'
+Setting sensitivity of action '_Run' to True
+Setting sensitivity of action '_Sort Test Suite File' to False
+Setting sensitivity of action '_Reversed Sort Test Suite File' to False
+Setting sensitivity of action 'Move to first' to False
+Setting sensitivity of action 'Move up' to False
+Setting sensitivity of action 'Re_connect' to True
+Setting sensitivity of action 'S_ave Selection...' to True
+
+Viewing notebook page for 'Selection'
+Viewing entry for option 'Tests for version' (drop-down list containing ['', '<default>'])
+Viewing entry for option 'Test names containing'
+Viewing entry for option 'Tests listed in file'
+Viewing entry for option 'Suite names containing'
+Viewing entry for option 'Result files containing'
+Viewing entry for option 'Result file to search' (set to 'output')
+Viewing entry for option 'Execution time'
+Viewing check button for switch 'Select in collapsed suites'
+Viewing radio button for switch 'Current selection:', options Discard/Refine/Extend/Exclude'. Default value 0.
+Viewing action with title '_Select'
+
+Tabs showing : Selection, Running, Config
+
 'recursive cvs status for the selected files' event created with arguments ''
+
+Changing GUI status to: 'Getting status for TargetApp/Game9952/S05'
 
 Changing GUI status to: 'Getting status for TargetApp/npstIII'
 
@@ -330,79 +418,35 @@ Changing GUI status to: 'Analyzing status for TargetApp/npstIII/testsuite.dip'
 
 Changing GUI status to: 'Analyzing status for TargetApp/npstIII/Game47/testsuite.dip'
 
-Changing GUI status to: 'Analyzing status for TargetApp/npstIII/Game47/S01/input.dip'
-
 Changing GUI status to: 'Performed recursive cvs status for the selected files.'
-Loaded class 'CVSTreeViewDialog' from module 'cvs'
+Loaded class 'CVSStatusDialog' from module 'cvs'
 Showing CVS tree view dialog 'recursive cvs status for the selected files' with header
 CVS status shown below.
 CVS command used: cvs status
 CVS tree view dialog: Using icon: 'gtk-dialog-info'
 CVS tree view dialog: Adding TargetApp as root, info Up-to-date
+CVS tree view dialog: Adding TargetApp/Game9952 as child of TargetApp, info Up-to-date
+CVS tree view dialog: Adding TargetApp/Game9952/S05 as child of TargetApp/Game9952, info Up-to-date
+CVS tree view dialog: Adding TargetApp/Game9952/S05/output.dip as child of TargetApp/Game9952/S05, info Up-to-date
 CVS tree view dialog: Adding TargetApp/npstIII as child of TargetApp, info Up-to-date
 CVS tree view dialog: Adding TargetApp/npstIII/testsuite.dip as child of TargetApp/npstIII, info Up-to-date
 CVS tree view dialog: Adding TargetApp/npstIII/Game47 as child of TargetApp/npstIII, info Up-to-date
 CVS tree view dialog: Adding TargetApp/npstIII/Game47/testsuite.dip as child of TargetApp/npstIII/Game47, info Up-to-date
 CVS tree view dialog: Adding TargetApp/npstIII/Game47/S01 as child of TargetApp/npstIII/Game47, info Up-to-date
-CVS tree view dialog: Adding TargetApp/npstIII/Game47/S01/input.dip as child of TargetApp/npstIII/Game47/S01, info Up-to-date
 CVS tree view dialog: Adding TargetApp/npstIII/Game47/S01/output.dip as child of TargetApp/npstIII/Game47/S01, info Up-to-date
 CVS tree view dialog: Showing two columns
 CVS tree view dialog: Showing CVS output
-File: testsuite.dip    	Status: Up-to-date
+File: output.dip       	Status: Up-to-date
 
-   Working revision:	1.1	Tue Feb 13 16:01:41 2007
-   Repository revision:	1.1	/carm/2_CVS/Testing/Automatic/texttest/GUI/StaticGUI/TargetApp/npstIII/testsuite.dip,v
+   Working revision:	1.2	Fri Mar 16 21:22:49 2007
+   Repository revision:	1.2	/carm/2_CVS/Testing/Automatic/texttest/GUI/StaticGUI/TargetApp/Game9952/S05/output.dip,v
    Sticky Tag:		(none)
    Sticky Date:		(none)
    Sticky Options:	(none)
 
-'select' event created with arguments 'TargetApp/npstIII/Game47/testsuite.dip'
-CVS tree view dialog: Showing CVS output
-File: testsuite.dip    	Status: Up-to-date
+'hide category up-to-date' event created with arguments ''
 
-   Working revision:	1.1	Tue Feb 13 16:01:41 2007
-   Repository revision:	1.1	/carm/2_CVS/Testing/Automatic/texttest/GUI/StaticGUI/TargetApp/npstIII/Game47/testsuite.dip,v
-   Sticky Tag:		(none)
-   Sticky Date:		(none)
-   Sticky Options:	(none)
-
-'select' event created with arguments 'TargetApp/npstIII/Game47/S01/input.dip'
-CVS tree view dialog: Showing CVS output
-File: input.dip        	Status: Up-to-date
-
-   Working revision:	1.1	Fri Mar 16 00:22:34 2007
-   Repository revision:	1.1	/carm/2_CVS/Testing/Automatic/texttest/GUI/StaticGUI/TargetApp/npstIII/Game47/S01/input.dip,v
-   Sticky Tag:		(none)
-   Sticky Date:		(none)
-   Sticky Options:	(none)
-
-'press close' event created with arguments ''
-
-'set file selection to' event created with arguments 'testsuite.dip'
-
-'cvs status for the selected files' event created with arguments ''
-
-Changing GUI status to: 'Getting status for TargetApp/npstIII'
-
-Changing GUI status to: 'Performed cvs status for the selected files.'
-Loaded class 'CVSTreeViewDialog' from module 'cvs'
-Showing CVS tree view dialog 'cvs status for the selected files' with header
-CVS status shown below.
-CVS command used: cvs status -l
-Subdirectories were ignored, use CVS Status Recursive to get the status for all subdirectories.
-CVS tree view dialog: Using icon: 'gtk-dialog-info'
-CVS tree view dialog: Adding TargetApp as root, info Up-to-date
-CVS tree view dialog: Adding TargetApp/npstIII as child of TargetApp, info Up-to-date
-CVS tree view dialog: Adding TargetApp/npstIII/testsuite.dip as child of TargetApp/npstIII, info Up-to-date
-CVS tree view dialog: Showing two columns
-CVS tree view dialog: Showing CVS output
-File: testsuite.dip    	Status: Up-to-date
-
-   Working revision:	1.1	Tue Feb 13 16:01:41 2007
-   Repository revision:	1.1	/carm/2_CVS/Testing/Automatic/texttest/GUI/StaticGUI/TargetApp/npstIII/testsuite.dip,v
-   Sticky Tag:		(none)
-   Sticky Date:		(none)
-   Sticky Options:	(none)
+'show category up-to-date' event created with arguments ''
 
 'press close' event created with arguments ''
 
