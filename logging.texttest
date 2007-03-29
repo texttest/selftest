@@ -106,6 +106,10 @@ LogLevel: None
 Target: $TEXTTEST_DIAGDIR/checkforbugs.texttest
 LogLevel: None
 
+[check for crashes]
+Target: $TEXTTEST_DIAGDIR/checkforcrashes.texttest
+LogLevel: None
+
 [collate files]
 Target: $TEXTTEST_DIAGDIR/collatefiles.texttest
 LogLevel: None
@@ -126,8 +130,12 @@ LogLevel: None
 Target: $TEXTTEST_DIAGDIR/generatewebpages.texttest
 LogLevel: None
 
-[known bugs]
-Target: $TEXTTEST_DIAGDIR/knownbugs.texttest
+[gui notebook]
+Target: $TEXTTEST_DIAGDIR/guinotebook.texttest
+LogLevel: None
+
+[interactive actions]
+Target: $TEXTTEST_DIAGDIR/interactiveactions.texttest
 LogLevel: None
 
 [mail sender]
@@ -138,12 +146,12 @@ LogLevel: None
 Target: $TEXTTEST_DIAGDIR/makeperformance.texttest
 LogLevel: None
 
-[option finder]
-Target: $TEXTTEST_DIAGDIR/optionfinder.texttest
+[menu bar]
+Target: $TEXTTEST_DIAGDIR/menubar.texttest
 LogLevel: None
 
-[performance]
-Target: $TEXTTEST_DIAGDIR/performance.texttest
+[option finder]
+Target: $TEXTTEST_DIAGDIR/optionfinder.texttest
 LogLevel: None
 
 [prepare writedir]
@@ -174,6 +182,10 @@ LogLevel: None
 Target: $TEXTTEST_DIAGDIR/runtest.texttest
 LogLevel: None
 
+[save repository]
+Target: $TEXTTEST_DIAGDIR/saverepository.texttest
+LogLevel: None
+
 [select tests]
 Target: $TEXTTEST_DIAGDIR/selecttests.texttest
 LogLevel: None
@@ -190,6 +202,10 @@ LogLevel: None
 Target: $TEXTTEST_DIAGDIR/testcomparison.texttest
 LogLevel: None
 
+[traffic replay]
+Target: $TEXTTEST_DIAGDIR/trafficreplay.texttest
+LogLevel: None
+
 [traffic server]
 Target: $TEXTTEST_DIAGDIR/trafficserver.texttest
 LogLevel: None
@@ -202,17 +218,9 @@ LogLevel: None
 Target: $TEXTTEST_DIAGDIR/virtualdisplay.texttest
 LogLevel: None
 
-[windows processes]
-Target: $TEXTTEST_DIAGDIR/windowsprocesses.texttest
-LogLevel: None
-
 # The following diagnostics are specific to Carmen configurations:
 [apc airport]
 Target: $TEXTTEST_DIAGDIR/apcairport.texttest
-LogLevel: None
-
-[apccompilerules]
-Target: $TEXTTEST_DIAGDIR/apccompilerules.texttest
 LogLevel: None
 
 [compile rules]
@@ -251,6 +259,3 @@ LogLevel: None
 Target: $TEXTTEST_DIAGDIR/synchroniser.texttest
 LogLevel: None
 
-[gui notebook]
-Target: $TEXTTEST_DIAGDIR/notebook.texttest
-LogLevel: None
