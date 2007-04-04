@@ -1,4 +1,4 @@
-Top Window title is TextTest dynamic GUI (tests started at 19Mar01:09:36)
+Top Window title is TextTest dynamic GUI (tests started at 04Apr14:48:16)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -7,6 +7,11 @@ Viewing toggle action with title '_Toolbar'
 Viewing toggle action with title '_Shortcut bar'
 Viewing toggle action with title '_Status bar'
 Viewing action with title '_Quit', stock id ''gtk-quit'', accelerator ''<control>q''
+Viewing action with title 'View File' (greyed out)
+Viewing action with title 'View Filtered File' (greyed out)
+Viewing action with title 'View Raw Differences' (greyed out)
+Viewing action with title 'View Differences' (greyed out)
+Viewing action with title 'Follow File Progress' (greyed out)
 Viewing action with title '_Save', stock id ''gtk-save'', accelerator ''<control>s'' (greyed out)
 Viewing action with title 'S_ave Selection...', stock id ''gtk-save-as'', accelerator ''<control><shift>s'' (greyed out)
 Viewing action with title '_Migration Notes'
@@ -50,6 +55,13 @@ UI layout:
   <popup name="TestPopupMenu">
   </popup>
   <popup name="TestFilePopupMenu">
+    <menuitem name="View File" action="View File"/>
+    <menuitem name="View Filtered File" action="View Filtered File"/>
+    <separator/>
+    <menuitem name="View Differences" action="View Differences"/>
+    <menuitem name="View Raw Differences" action="View Raw Differences"/>
+    <separator/>
+    <menuitem name="Follow File Progress" action="Follow File Progress"/>
   </popup>
 </ui>
 
@@ -81,7 +93,7 @@ Tabs showing : Status
 Test progress:
 --> Not started : 11, colour 'white', font 'bold'
 
-Changing GUI status to: 'TextTest started at 19Mar01:09:36.'
+Changing GUI status to: 'TextTest started at 04Apr14:48:16.'
 
 Waiting for application event 'completion of test actions' to occur.
 Redrawing test S01.99 coloured red
@@ -215,7 +227,7 @@ Test progress:
 Redrawing test S01 coloured red
 (Second column 'no results' coloured red)
 
-Progress bar set to fraction 1.0, text 'All 11 tests completed at 19Mar01:09:39 (11 tests failed)'
+Progress bar set to fraction 1.0, text 'All 11 tests completed at 04Apr14:48:20 (11 tests failed)'
 
 Test progress:
 --> Not started : 0, colour 'white', font ''
@@ -237,7 +249,7 @@ Setting file-view title to 'A01'
 
 Viewing action with title '_Update Info' (greyed out)
 
-Tabs showing : Text Info, Viewing
+Tabs showing : Text Info
 
 ---------- Text Info Window ----------
 Test could not be run :
@@ -288,7 +300,7 @@ Russia:  Ukr -> War                (*bounce*)
 --------------------------------------
 Setting sensitivity of action '_Save' to True
 
-Tabs showing : Text Info, Viewing, Saving
+Tabs showing : Text Info, Saving
 
 'set test selection to' event created with arguments 'A04,S01.99,A01,S02,A02,S03,A03,S04,S05,A05,S01'
 
@@ -367,12 +379,12 @@ Saving DIP test-case A02    - version reconnectrun, exactness 1
 
 Changing GUI status to: 'Saving DIP test-case A02    : output, version reconnectrun'
 Redrawing test A02 coloured green
-Progress bar detected save, new text is 'All 11 tests completed at 19Mar01:09:39 (10 tests failed)'
+Progress bar detected save, new text is 'All 11 tests completed at 04Apr14:48:20 (10 tests failed)'
 Saving DIP test-case A03    - version reconnectrun, exactness 1
 
 Changing GUI status to: 'Saving DIP test-case A03    : output, version reconnectrun'
 Redrawing test A03 coloured green
-Progress bar detected save, new text is 'All 11 tests completed at 19Mar01:09:39 (9 tests failed)'
+Progress bar detected save, new text is 'All 11 tests completed at 04Apr14:48:20 (9 tests failed)'
 Saving DIP test-case A04    - version reconnectrun, exactness 1
 
 Changing GUI status to: 'Saving DIP test-case A04    : output, version reconnectrun'
@@ -386,8 +398,8 @@ Test succeeded
 --------------------------------------
 Setting sensitivity of action '_Save' to False
 
-Tabs showing : Text Info, Viewing
-Progress bar detected save, new text is 'All 11 tests completed at 19Mar01:09:39 (8 tests failed)'
+Tabs showing : Text Info
+Progress bar detected save, new text is 'All 11 tests completed at 04Apr14:48:20 (8 tests failed)'
 
 Changing GUI status to: 'Saved 3 tests.'
 

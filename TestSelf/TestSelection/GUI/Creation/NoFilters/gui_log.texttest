@@ -7,6 +7,7 @@ Viewing toggle action with title '_Toolbar'
 Viewing toggle action with title '_Shortcut bar'
 Viewing toggle action with title '_Status bar'
 Viewing action with title '_Quit', stock id ''gtk-quit'', accelerator ''<control>q''
+Viewing action with title 'View File' (greyed out)
 Viewing action with title '_Select', stock id ''gtk-refresh'', accelerator ''<control>s''
 Viewing action with title '_Run', stock id ''gtk-execute'', accelerator ''<control>r'' (greyed out)
 Viewing action with title 'R_eset', stock id ''gtk-revert-to-saved'', accelerator ''<control>e''
@@ -98,6 +99,8 @@ UI layout:
     </menu>
   </popup>
   <popup name="TestFilePopupMenu">
+    <menuitem name="View File" action="View File"/>
+    <separator/>
     <menuitem name="Remove..." action="Remove..."/>
     <separator/>
   </popup>
@@ -131,7 +134,7 @@ Viewing check button for switch 'Select in collapsed suites'
 Viewing radio button for switch 'Current selection:', options Discard/Refine/Extend/Exclude'. Default value 0.
 Viewing action with title '_Select'
 
-Changing GUI status to: 'TextTest started at 19Mar01:04:32.'
+Changing GUI status to: 'TextTest started at 04Apr14:48:01.'
 
 'select indicated tests' event created with arguments ''
 
@@ -151,7 +154,7 @@ Changing GUI status to: 'Selected 4 tests.'
 
 'run selected tests' event created with arguments ''
 
-Changing GUI status to: 'Started 4 tests at 19Mar01:04:33.'
+Changing GUI status to: 'Started 4 tests at 04Apr14:48:05.'
 
 Waiting for application event 'dynamic GUI to be closed' to occur.
 
@@ -164,7 +167,7 @@ Changing GUI status to: 'Updating files for HELLO test-case Three ...'
 Changing GUI status to: 'Updating files for HELLO test-case One ...'
 Expected application event 'dynamic GUI to be closed' occurred, proceeding.
 
-Changing GUI status to: 'Done updating after dynamic run started at 19Mar01:04:33.'
+Changing GUI status to: 'Done updating after dynamic run started at 04Apr14:48:05.'
 
 'quit' event created with arguments ''
 

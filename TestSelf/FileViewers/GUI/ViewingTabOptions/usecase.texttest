@@ -1,14 +1,12 @@
 wait for completion of test actions
 set test selection to Test
-view sub-options for test : Viewing
 select file output.hello
 select file errors.hello
-uncheck show differences where present
-select file output.hello
-check show differences where present
-check include run-dependent text
-select file output.hello
-select file errors.hello
-uncheck show differences where present
-select file output.hello
+set file selection to output.hello
+view filtered file
+view raw differences
+set file selection to errors.hello
+view raw differences
+set file selection to output.hello
+view file
 quit

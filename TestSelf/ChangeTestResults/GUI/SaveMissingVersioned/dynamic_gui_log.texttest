@@ -1,4 +1,4 @@
-Top Window title is TextTest dynamic GUI (tests started at 19Mar01:09:10)
+Top Window title is TextTest dynamic GUI (tests started at 04Apr14:48:11)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -7,6 +7,11 @@ Viewing toggle action with title '_Toolbar'
 Viewing toggle action with title '_Shortcut bar'
 Viewing toggle action with title '_Status bar'
 Viewing action with title '_Quit', stock id ''gtk-quit'', accelerator ''<control>q''
+Viewing action with title 'View File' (greyed out)
+Viewing action with title 'View Filtered File' (greyed out)
+Viewing action with title 'View Raw Differences' (greyed out)
+Viewing action with title 'View Differences' (greyed out)
+Viewing action with title 'Follow File Progress' (greyed out)
 Viewing action with title '_Save', stock id ''gtk-save'', accelerator ''<control>s'' (greyed out)
 Viewing action with title 'S_ave Selection...', stock id ''gtk-save-as'', accelerator ''<control><shift>s'' (greyed out)
 Viewing action with title '_Migration Notes'
@@ -50,6 +55,13 @@ UI layout:
   <popup name="TestPopupMenu">
   </popup>
   <popup name="TestFilePopupMenu">
+    <menuitem name="View File" action="View File"/>
+    <menuitem name="View Filtered File" action="View Filtered File"/>
+    <separator/>
+    <menuitem name="View Differences" action="View Differences"/>
+    <menuitem name="View Raw Differences" action="View Raw Differences"/>
+    <separator/>
+    <menuitem name="Follow File Progress" action="Follow File Progress"/>
   </popup>
 </ui>
 
@@ -68,7 +80,7 @@ Tabs showing : Status
 Test progress:
 --> Not started : 1, colour 'white', font 'bold'
 
-Changing GUI status to: 'TextTest started at 19Mar01:09:11.'
+Changing GUI status to: 'TextTest started at 04Apr14:48:12.'
 
 Waiting for application event 'completion of test actions' to occur.
 Redrawing test BothDiff coloured yellow
@@ -79,7 +91,7 @@ Test progress:
 Redrawing test BothDiff coloured red
 (Second column 'output different(+)' coloured red)
 
-Progress bar set to fraction 1.0, text 'All 1 tests completed at 19Mar01:09:11 (1 tests failed)'
+Progress bar set to fraction 1.0, text 'All 1 tests completed at 04Apr14:48:13 (1 tests failed)'
 
 Test progress:
 --> Not started : 0, colour 'white', font ''
@@ -102,7 +114,7 @@ Adding file errors.hello under heading 'Missing Files', coloured red
 
 Viewing action with title '_Update Info' (greyed out)
 
-Tabs showing : Text Info, Viewing, Saving
+Tabs showing : Text Info, Saving
 
 ---------- Text Info Window ----------
 Test FAILED :
@@ -138,7 +150,7 @@ Test progress:
 ------> errors missing : 1, colour 'red', font 'bold'
 
 Tabs showing : Status
-Progress bar detected save, new text is 'All 1 tests completed at 19Mar01:09:11'
+Progress bar detected save, new text is 'All 1 tests completed at 04Apr14:48:13'
 
 Test progress:
 --> Not started : 0, colour 'white', font ''
@@ -154,7 +166,7 @@ Changing GUI status to: 'Saved 1 tests.'
 'quit' event created with arguments ''
 
 Changing GUI status to: 'Quitting TextTest ...'
-Top Window title is TextTest dynamic GUI (tests started at 19Mar01:09:13)
+Top Window title is TextTest dynamic GUI (tests started at 04Apr14:48:14)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -163,6 +175,11 @@ Viewing toggle action with title '_Toolbar'
 Viewing toggle action with title '_Shortcut bar'
 Viewing toggle action with title '_Status bar'
 Viewing action with title '_Quit', stock id ''gtk-quit'', accelerator ''<control>q''
+Viewing action with title 'View File' (greyed out)
+Viewing action with title 'View Filtered File' (greyed out)
+Viewing action with title 'View Raw Differences' (greyed out)
+Viewing action with title 'View Differences' (greyed out)
+Viewing action with title 'Follow File Progress' (greyed out)
 Viewing action with title '_Save', stock id ''gtk-save'', accelerator ''<control>s'' (greyed out)
 Viewing action with title 'S_ave Selection...', stock id ''gtk-save-as'', accelerator ''<control><shift>s'' (greyed out)
 Viewing action with title '_Migration Notes'
@@ -206,6 +223,13 @@ UI layout:
   <popup name="TestPopupMenu">
   </popup>
   <popup name="TestFilePopupMenu">
+    <menuitem name="View File" action="View File"/>
+    <menuitem name="View Filtered File" action="View Filtered File"/>
+    <separator/>
+    <menuitem name="View Differences" action="View Differences"/>
+    <menuitem name="View Raw Differences" action="View Raw Differences"/>
+    <separator/>
+    <menuitem name="Follow File Progress" action="Follow File Progress"/>
   </popup>
 </ui>
 
@@ -224,13 +248,13 @@ Tabs showing : Status
 Test progress:
 --> Not started : 1, colour 'white', font 'bold'
 
-Changing GUI status to: 'TextTest started at 19Mar01:09:13.'
+Changing GUI status to: 'TextTest started at 04Apr14:48:15.'
 
 Waiting for application event 'completion of test actions' to occur.
 Redrawing test BothDiff coloured green
 Redrawing suite TargetApp : second column 'All 1 tests successful' coloured green
 
-Progress bar set to fraction 1.0, text 'All 1 tests completed at 19Mar01:09:13'
+Progress bar set to fraction 1.0, text 'All 1 tests completed at 04Apr14:48:16'
 
 Test progress:
 --> Not started : 0, colour 'white', font ''

@@ -1,4 +1,4 @@
-Top Window title is TextTest dynamic GUI (tests started at 19Mar01:10:31)
+Top Window title is TextTest dynamic GUI (tests started at 04Apr14:22:38)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -7,6 +7,11 @@ Viewing toggle action with title '_Toolbar'
 Viewing toggle action with title '_Shortcut bar'
 Viewing toggle action with title '_Status bar'
 Viewing action with title '_Quit', stock id ''gtk-quit'', accelerator ''<control>q''
+Viewing action with title 'View File' (greyed out)
+Viewing action with title 'View Filtered File' (greyed out)
+Viewing action with title 'View Raw Differences' (greyed out)
+Viewing action with title 'View Differences' (greyed out)
+Viewing action with title 'Follow File Progress' (greyed out)
 Viewing action with title '_Save', stock id ''gtk-save'', accelerator ''<control>s'' (greyed out)
 Viewing action with title 'S_ave Selection...', stock id ''gtk-save-as'', accelerator ''<control><shift>s'' (greyed out)
 Viewing action with title '_Migration Notes'
@@ -50,6 +55,13 @@ UI layout:
   <popup name="TestPopupMenu">
   </popup>
   <popup name="TestFilePopupMenu">
+    <menuitem name="View File" action="View File"/>
+    <menuitem name="View Filtered File" action="View Filtered File"/>
+    <separator/>
+    <menuitem name="View Differences" action="View Differences"/>
+    <menuitem name="View Raw Differences" action="View Raw Differences"/>
+    <separator/>
+    <menuitem name="Follow File Progress" action="Follow File Progress"/>
   </popup>
 </ui>
 
@@ -68,7 +80,7 @@ Tabs showing : Status
 Test progress:
 --> Not started : 1, colour 'white', font 'bold'
 
-Changing GUI status to: 'TextTest started at 19Mar01:10:32.'
+Changing GUI status to: 'TextTest started at 04Apr14:22:39.'
 
 Waiting for application event 'completion of test actions' to occur.
 Redrawing test Test coloured yellow
@@ -79,7 +91,7 @@ Test progress:
 Redrawing test Test coloured red
 (Second column 'output different' coloured red)
 
-Progress bar set to fraction 1.0, text 'All 1 tests completed at 19Mar01:10:33 (1 tests failed)'
+Progress bar set to fraction 1.0, text 'All 1 tests completed at 04Apr14:22:40 (1 tests failed)'
 
 Test progress:
 --> Not started : 0, colour 'white', font ''
@@ -101,7 +113,7 @@ Adding file output.hello under heading 'Comparison Files', coloured red
 
 Viewing action with title '_Update Info' (greyed out)
 
-Tabs showing : Text Info, Viewing, Saving
+Tabs showing : Text Info, Saving
 
 ---------- Text Info Window ----------
 Test FAILED :
@@ -116,21 +128,19 @@ Tabs showing : Test, Status
 
 'select file' event created with arguments 'output.hello'
 Starting graphical difference comparison using 'tkdiff':
--- original file : /users/mattias/texttesttmp/texttest.19Mar010844/GUI/QuitConfirmation/MultipleDynamic/texttesttmp/hello.19Mar011031/Test/framework_tmp/output.helloorigcmp
---  current file : /users/mattias/texttesttmp/texttest.19Mar010844/GUI/QuitConfirmation/MultipleDynamic/texttesttmp/hello.19Mar011031/Test/framework_tmp/output.hellocmp
+-- original file : /users/geoff/texttesttmp/texttest.04Apr142236/GUI/QuitConfirmation/MultipleDynamic/texttesttmp/hello.04Apr142238/Test/framework_tmp/output.helloorigcmp
+--  current file : /users/geoff/texttesttmp/texttest.04Apr142236/GUI/QuitConfirmation/MultipleDynamic/texttesttmp/hello.04Apr142238/Test/framework_tmp/output.hellocmp
 
 Changing GUI status to: 'Started "tkdiff output.helloorigcmp output.hellocmp" in background (from test Test).'
 
-'view sub-options for test :' event created with arguments 'Viewing'
+'set file selection to' event created with arguments 'output.hello'
+Setting sensitivity of action 'View File' to True
+Setting sensitivity of action 'View Filtered File' to True
+Setting sensitivity of action 'View Raw Differences' to True
+Setting sensitivity of action 'View Differences' to True
 
-Viewing notebook page for 'Viewing'
-Viewing check button for switch 'Include run-dependent text'
-Viewing check button for switch 'Show differences where present' (checked)
-
-'uncheck show differences where present' event created with arguments ''
-
-'select file' event created with arguments 'output.hello'
-Viewing file /users/mattias/texttesttmp/texttest.19Mar010844/GUI/QuitConfirmation/MultipleDynamic/texttesttmp/hello.19Mar011031/Test/framework_tmp/output.hellocmp using 'emacs', refresh set to 0
+'view filtered file' event created with arguments ''
+Viewing file /users/geoff/texttesttmp/texttest.04Apr142236/GUI/QuitConfirmation/MultipleDynamic/texttesttmp/hello.04Apr142238/Test/framework_tmp/output.hellocmp using 'emacs', refresh set to False
 
 Changing GUI status to: 'Started "emacs output.hellocmp" in background (from test Test).'
 
@@ -138,8 +148,8 @@ Changing GUI status to: 'Started "emacs output.hellocmp" in background (from tes
 CONFIRMATION: 
 These processes are still running, and will be terminated when quitting: 
 
-   + PID 5435 : tkdiff output.helloorigcmp output.hellocmp (from test Test)
-   + PID 5440 : emacs output.hellocmp (from test Test)
+   + PID 26212 : tkdiff output.helloorigcmp output.hellocmp (from test Test)
+   + PID 26216 : emacs output.hellocmp (from test Test)
 
 Quit anyway?
 
@@ -153,7 +163,7 @@ Terminating process that views and edits test files...
 CONFIRMATION: 
 These processes are still running, and will be terminated when quitting: 
 
-   + PID 5435 : tkdiff output.helloorigcmp output.hellocmp (from test Test)
+   + PID 26212 : tkdiff output.helloorigcmp output.hellocmp (from test Test)
 
 Quit anyway?
 
@@ -165,7 +175,7 @@ Changing GUI status to: 'Action cancelled.'
 CONFIRMATION: 
 These processes are still running, and will be terminated when quitting: 
 
-   + PID 5435 : tkdiff output.helloorigcmp output.hellocmp (from test Test)
+   + PID 26212 : tkdiff output.helloorigcmp output.hellocmp (from test Test)
 
 Quit anyway?
 
