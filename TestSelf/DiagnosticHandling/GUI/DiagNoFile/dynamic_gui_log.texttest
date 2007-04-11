@@ -1,4 +1,4 @@
-Top Window title is TextTest dynamic GUI (tests started at 04Apr14:48:20)
+Top Window title is TextTest dynamic GUI (tests started at 11Apr13:46:39)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -13,7 +13,7 @@ Viewing action with title 'View Raw Differences' (greyed out)
 Viewing action with title 'View Differences' (greyed out)
 Viewing action with title 'Follow File Progress' (greyed out)
 Viewing action with title '_Save', stock id ''gtk-save'', accelerator ''<control>s'' (greyed out)
-Viewing action with title 'S_ave Selection...', stock id ''gtk-save-as'', accelerator ''<control><shift>s'' (greyed out)
+Viewing action with title 'S_ave Selection...', stock id ''gtk-save-as'', accelerator ''<control><shift>s''
 Viewing action with title '_Migration Notes'
 Viewing action with title 'Component _Versions'
 Viewing action with title '_About TextTest', stock id ''gtk-about''
@@ -71,34 +71,61 @@ Test Tree description...
 -> TargetApp (diag)
 ->   Test
 
-Test column header set to 'Tests: 0/1 selected, none hidden'
+Test column header set to 'Tests: All 1 selected, none hidden'
 
 Pane separator positioned 50% from the left edge
 
-Tabs showing : Status
+Tabs showing : Test, Status
 
-Test progress:
---> Not started : 1, colour 'white', font 'bold'
+Setting file-view title to 'Test'
+Adding file errors.diag under heading 'Standard Files', coloured white
+Adding file output.diag under heading 'Standard Files', coloured white
 
-Changing GUI status to: 'TextTest started at 04Apr14:48:21.'
+Viewing action with title '_Update Info' (greyed out)
+
+Pane separator positioned 46% from the top
+
+Tabs showing : Text Info
+
+---------- Text Info Window ----------
+Description:
+<No description provided>
+--------------------------------------
+
+Changing GUI status to: 'TextTest started at 11Apr13:46:40.'
 
 Waiting for application event 'completion of test actions' to occur.
 Redrawing test Test coloured yellow
 
-Test progress:
---> Not started : 0, colour 'white', font ''
---> Running : 1, colour 'yellow', font 'bold'
+Setting file-view title to 'Test'
+Adding file errors.diag under heading 'Temporary Files', coloured yellow
+Adding file output.diag under heading 'Temporary Files', coloured yellow
+Setting sensitivity of action '_Update Info' to True
+
+---------- Text Info Window ----------
+Running on townsville
+--------------------------------------
 Redrawing test Test coloured red
 (Second column 'output different' coloured red)
 
-Progress bar set to fraction 1.0, text 'All 1 tests completed at 04Apr14:48:22 (1 tests failed)'
+Setting file-view title to 'Test'
+Adding file errors.diag under heading 'Comparison Files', coloured green
+Adding file output.diag under heading 'Comparison Files', coloured red
+Setting sensitivity of action '_Update Info' to False
 
-Test progress:
---> Not started : 0, colour 'white', font ''
---> Running : 0, colour 'white', font ''
---> Failed : 1, colour 'red', font 'bold'
-----> Differences : 1, colour 'red', font 'bold'
-------> output different : 1, colour 'red', font 'bold'
+---------- Text Info Window ----------
+Test FAILED :
+------------------ Differences in output --------------------
+1c1
+< This is a simple diagnostic-writing program
+---
+> Reading config file at None
+--------------------------------------
+Setting sensitivity of action '_Save' to True
+
+Tabs showing : Text Info, Saving
+
+Progress bar set to fraction 1.0, text 'All 1 tests completed at 11Apr13:46:41 (1 tests failed)'
 Expected application event 'completion of test actions' occurred, proceeding.
 
 'quit' event created with arguments ''

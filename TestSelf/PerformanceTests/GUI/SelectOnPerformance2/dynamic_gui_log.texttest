@@ -1,4 +1,4 @@
-Top Window title is TextTest dynamic GUI (tests started at 04Apr14:48:27)
+Top Window title is TextTest dynamic GUI (tests started at 10Apr15:11:40)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -13,7 +13,7 @@ Viewing action with title 'View Raw Differences' (greyed out)
 Viewing action with title 'View Differences' (greyed out)
 Viewing action with title 'Follow File Progress' (greyed out)
 Viewing action with title '_Save', stock id ''gtk-save'', accelerator ''<control>s'' (greyed out)
-Viewing action with title 'S_ave Selection...', stock id ''gtk-save-as'', accelerator ''<control><shift>s'' (greyed out)
+Viewing action with title 'S_ave Selection...', stock id ''gtk-save-as'', accelerator ''<control><shift>s''
 Viewing action with title '_Migration Notes'
 Viewing action with title 'Component _Versions'
 Viewing action with title '_About TextTest', stock id ''gtk-about''
@@ -71,34 +71,71 @@ Test Tree description...
 -> TargetApp (perf)
 ->   Failures
 
-Test column header set to 'Tests: 0/1 selected, none hidden'
+Test column header set to 'Tests: All 1 selected, none hidden'
 
 Pane separator positioned 50% from the left edge
 
-Tabs showing : Status
+Tabs showing : Test, Status
 
-Test progress:
---> Not started : 1, colour 'white', font 'bold'
+Setting file-view title to 'Failures'
+Adding file errors.perf under heading 'Standard Files', coloured white
+Adding file output.perf under heading 'Standard Files', coloured white
+Adding file performance.perf under heading 'Standard Files', coloured white
+Adding file performance.perf.correct under heading 'Standard Files', coloured white
+Adding file input.perf under heading 'Definition Files', coloured white
 
-Changing GUI status to: 'TextTest started at 04Apr14:48:28.'
+Viewing action with title '_Update Info' (greyed out)
+
+Pane separator positioned 46% from the top
+
+Tabs showing : Text Info
+
+---------- Text Info Window ----------
+Description:
+Stores 10 seconds
+
+Expected running time for the default version:
+CPU time   :       10.0 sec. on sedom
+Real time  :       18.2 sec.
+--------------------------------------
+
+Changing GUI status to: 'TextTest started at 10Apr15:11:40.'
 
 Waiting for application event 'completion of test actions' to occur.
 Redrawing test Failures coloured yellow
 
-Test progress:
---> Not started : 0, colour 'white', font ''
---> Running : 1, colour 'yellow', font 'bold'
+Setting file-view title to 'Failures'
+Adding file errors.perf under heading 'Temporary Files', coloured yellow
+Adding file output.perf under heading 'Temporary Files', coloured yellow
+Setting sensitivity of action '_Update Info' to True
+
+---------- Text Info Window ----------
+Running on knoxville
+--------------------------------------
 Redrawing test Failures coloured green
 (Second column '100% faster' coloured red)
 
-Progress bar set to fraction 1.0, text 'All 1 tests completed at 04Apr14:48:28 (1 tests failed)'
+Setting file-view title to 'Failures'
+Adding file errors.perf under heading 'Comparison Files', coloured green
+Adding file output.perf under heading 'Comparison Files', coloured green
+Adding file performance.perf under heading 'Comparison Files', coloured red
+(Second column '100% faster' coloured red)
+Setting sensitivity of action '_Update Info' to False
 
-Test progress:
---> Not started : 0, colour 'white', font ''
---> Running : 0, colour 'white', font ''
---> Failed : 1, colour 'red', font 'bold'
-----> Performance differences : 1, colour 'red', font 'bold'
-------> Faster : 1, colour 'red', font 'bold'
+---------- Text Info Window ----------
+Test ran faster :
+------------------ Differences in performance(faster) --------------------
+1,2c1
+< CPU time   :       10.0 sec. on sedom
+< Real time  :       18.2 sec.
+---
+> Total Performance  :      5.0 seconds on knoxville
+--------------------------------------
+Setting sensitivity of action '_Save' to True
+
+Tabs showing : Text Info, Saving
+
+Progress bar set to fraction 1.0, text 'All 1 tests completed at 10Apr15:11:41 (1 tests failed)'
 Expected application event 'completion of test actions' occurred, proceeding.
 
 'quit' event created with arguments ''

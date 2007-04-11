@@ -2,5 +2,5 @@
 
 import sys, time
 print "firstcall.py called with", len(sys.argv), "arguments"
-print time.asctime()
+print "The time is now", time.asctime()
 sys.exit(1)

@@ -1,4 +1,4 @@
-Top Window title is TextTest dynamic GUI (tests started at 04Apr14:49:04)
+Top Window title is TextTest dynamic GUI (tests started at 11Apr12:21:20)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -13,7 +13,7 @@ Viewing action with title 'View Raw Differences' (greyed out)
 Viewing action with title 'View Differences' (greyed out)
 Viewing action with title 'Follow File Progress' (greyed out)
 Viewing action with title '_Save', stock id ''gtk-save'', accelerator ''<control>s'' (greyed out)
-Viewing action with title 'S_ave Selection...', stock id ''gtk-save-as'', accelerator ''<control><shift>s'' (greyed out)
+Viewing action with title 'S_ave Selection...', stock id ''gtk-save-as'', accelerator ''<control><shift>s''
 Viewing action with title '_Migration Notes'
 Viewing action with title 'Component _Versions'
 Viewing action with title '_About TextTest', stock id ''gtk-about''
@@ -71,49 +71,60 @@ Test Tree description...
 -> TargetApp (sleep.killing2)
 ->   Basic
 
-Test column header set to 'Tests: 0/1 selected, none hidden'
+Test column header set to 'Tests: All 1 selected, none hidden'
 
 Pane separator positioned 50% from the left edge
 
-Tabs showing : Status
+Tabs showing : Test, Status
 
-Test progress:
---> Not started : 1, colour 'white', font 'bold'
+Setting file-view title to 'Basic'
+Adding file errors.sleep under heading 'Standard Files', coloured white
+Adding file output.sleep under heading 'Standard Files', coloured white
+Adding file output.sleep.cpulimit under heading 'Standard Files', coloured white
+Adding file options.sleep under heading 'Definition Files', coloured white
+Adding file options.sleep.killing under heading 'Definition Files', coloured white
+Adding file options.sleep.killing2 under heading 'Definition Files', coloured white
+Adding file options.sleep.killing3 under heading 'Definition Files', coloured white
 
-Changing GUI status to: 'TextTest started at 04Apr14:49:05.'
+Viewing action with title '_Update Info' (greyed out)
+
+Pane separator positioned 46% from the top
+
+Tabs showing : Text Info
+
+---------- Text Info Window ----------
+Description:
+<No description provided>
+--------------------------------------
+
+Changing GUI status to: 'TextTest started at 11Apr12:21:20.'
 
 Waiting for application event 'test Basic to start' to occur.
 Redrawing test Basic coloured white
 (Second column 'PEND' coloured white)
 
-Test progress:
---> Not started : 0, colour 'white', font ''
---> Pending : 1, colour 'white', font 'bold'
+Setting file-view title to 'Basic'
+Adding file errors.sleep under heading 'Standard Files', coloured white
+Adding file output.sleep under heading 'Standard Files', coloured white
+Adding file output.sleep.cpulimit under heading 'Standard Files', coloured white
+Adding file options.sleep under heading 'Definition Files', coloured white
+Adding file options.sleep.killing under heading 'Definition Files', coloured white
+Adding file options.sleep.killing2 under heading 'Definition Files', coloured white
+Adding file options.sleep.killing3 under heading 'Definition Files', coloured white
+
+---------- Text Info Window ----------
+Job pending in LSF
+--------------------------------------
 Redrawing test Basic coloured yellow
 (Second column 'RUN (forestville)' coloured yellow)
 
-Test progress:
---> Not started : 0, colour 'white', font ''
---> Pending : 0, colour 'white', font ''
---> Running : 1, colour 'yellow', font 'bold'
-Expected application event 'test Basic to start' occurred, proceeding.
-
-'set test selection to' event created with arguments 'Basic'
-
-Test column header set to 'Tests: All 1 selected, none hidden'
-Setting sensitivity of action 'S_ave Selection...' to True
-
 Setting file-view title to 'Basic'
-
-Viewing action with title '_Update Info'
-
-Tabs showing : Text Info
+Setting sensitivity of action '_Update Info' to True
 
 ---------- Text Info Window ----------
 Running on forestville
 --------------------------------------
-
-Tabs showing : Test, Status
+Expected application event 'test Basic to start' occurred, proceeding.
 
 'update test progress information and compare test files so far' event created with arguments ''
 

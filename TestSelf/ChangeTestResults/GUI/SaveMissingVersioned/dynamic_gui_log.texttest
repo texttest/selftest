@@ -1,4 +1,4 @@
-Top Window title is TextTest dynamic GUI (tests started at 04Apr14:48:11)
+Top Window title is TextTest dynamic GUI (tests started at 11Apr09:29:37)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -13,7 +13,7 @@ Viewing action with title 'View Raw Differences' (greyed out)
 Viewing action with title 'View Differences' (greyed out)
 Viewing action with title 'Follow File Progress' (greyed out)
 Viewing action with title '_Save', stock id ''gtk-save'', accelerator ''<control>s'' (greyed out)
-Viewing action with title 'S_ave Selection...', stock id ''gtk-save-as'', accelerator ''<control><shift>s'' (greyed out)
+Viewing action with title 'S_ave Selection...', stock id ''gtk-save-as'', accelerator ''<control><shift>s''
 Viewing action with title '_Migration Notes'
 Viewing action with title 'Component _Versions'
 Viewing action with title '_About TextTest', stock id ''gtk-about''
@@ -71,50 +71,47 @@ Test Tree description...
 -> TargetApp (hello.2)
 ->   BothDiff
 
-Test column header set to 'Tests: 0/1 selected, none hidden'
+Test column header set to 'Tests: All 1 selected, none hidden'
 
 Pane separator positioned 50% from the left edge
 
-Tabs showing : Status
+Tabs showing : Test, Status
 
-Test progress:
---> Not started : 1, colour 'white', font 'bold'
+Setting file-view title to 'BothDiff'
+Adding file errors.hello under heading 'Standard Files', coloured white
+Adding file output.hello under heading 'Standard Files', coloured white
 
-Changing GUI status to: 'TextTest started at 04Apr14:48:12.'
+Viewing action with title '_Update Info' (greyed out)
+
+Pane separator positioned 46% from the top
+
+Tabs showing : Text Info
+
+---------- Text Info Window ----------
+Description:
+<No description provided>
+--------------------------------------
+
+Changing GUI status to: 'TextTest started at 11Apr09:29:38.'
 
 Waiting for application event 'completion of test actions' to occur.
 Redrawing test BothDiff coloured yellow
 
-Test progress:
---> Not started : 0, colour 'white', font ''
---> Running : 1, colour 'yellow', font 'bold'
+Setting file-view title to 'BothDiff'
+Adding file errors.hello under heading 'Temporary Files', coloured yellow
+Adding file output.hello under heading 'Temporary Files', coloured yellow
+Setting sensitivity of action '_Update Info' to True
+
+---------- Text Info Window ----------
+Running on watsonville
+--------------------------------------
 Redrawing test BothDiff coloured red
 (Second column 'output different(+)' coloured red)
-
-Progress bar set to fraction 1.0, text 'All 1 tests completed at 04Apr14:48:13 (1 tests failed)'
-
-Test progress:
---> Not started : 0, colour 'white', font ''
---> Running : 0, colour 'white', font ''
---> Failed : 1, colour 'red', font 'bold'
-----> Differences : 1, colour 'red', font 'bold'
-------> output different : 1, colour 'red', font 'bold'
-------> errors missing : 1, colour 'red', font 'bold'
-Expected application event 'completion of test actions' occurred, proceeding.
-
-'set test selection to' event created with arguments 'BothDiff'
-
-Test column header set to 'Tests: All 1 selected, none hidden'
-Setting sensitivity of action '_Save' to True
-Setting sensitivity of action 'S_ave Selection...' to True
 
 Setting file-view title to 'BothDiff'
 Adding file output.hello under heading 'Comparison Files', coloured red
 Adding file errors.hello under heading 'Missing Files', coloured red
-
-Viewing action with title '_Update Info' (greyed out)
-
-Tabs showing : Text Info, Saving
+Setting sensitivity of action '_Update Info' to False
 
 ---------- Text Info Window ----------
 Test FAILED :
@@ -123,8 +120,12 @@ Test FAILED :
 > Hello World!
 ------------------ Missing result in errors --------------------
 --------------------------------------
+Setting sensitivity of action '_Save' to True
 
-Tabs showing : Test, Status
+Tabs showing : Text Info, Saving
+
+Progress bar set to fraction 1.0, text 'All 1 tests completed at 11Apr09:29:39 (1 tests failed)'
+Expected application event 'completion of test actions' occurred, proceeding.
 
 'save results for selected tests' event created with arguments ''
 
@@ -150,7 +151,7 @@ Test progress:
 ------> errors missing : 1, colour 'red', font 'bold'
 
 Tabs showing : Status
-Progress bar detected save, new text is 'All 1 tests completed at 04Apr14:48:13'
+Progress bar detected save, new text is 'All 1 tests completed at 11Apr09:29:39'
 
 Test progress:
 --> Not started : 0, colour 'white', font ''
@@ -166,7 +167,7 @@ Changing GUI status to: 'Saved 1 tests.'
 'quit' event created with arguments ''
 
 Changing GUI status to: 'Quitting TextTest ...'
-Top Window title is TextTest dynamic GUI (tests started at 04Apr14:48:14)
+Top Window title is TextTest dynamic GUI (tests started at 11Apr09:29:41)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -181,7 +182,7 @@ Viewing action with title 'View Raw Differences' (greyed out)
 Viewing action with title 'View Differences' (greyed out)
 Viewing action with title 'Follow File Progress' (greyed out)
 Viewing action with title '_Save', stock id ''gtk-save'', accelerator ''<control>s'' (greyed out)
-Viewing action with title 'S_ave Selection...', stock id ''gtk-save-as'', accelerator ''<control><shift>s'' (greyed out)
+Viewing action with title 'S_ave Selection...', stock id ''gtk-save-as'', accelerator ''<control><shift>s''
 Viewing action with title '_Migration Notes'
 Viewing action with title 'Component _Versions'
 Viewing action with title '_About TextTest', stock id ''gtk-about''
@@ -239,22 +240,44 @@ Test Tree description...
 -> TargetApp (hello.2)
 ->   BothDiff
 
-Test column header set to 'Tests: 0/1 selected, none hidden'
+Test column header set to 'Tests: All 1 selected, none hidden'
 
 Pane separator positioned 50% from the left edge
 
-Tabs showing : Status
+Tabs showing : Test, Status
 
-Test progress:
---> Not started : 1, colour 'white', font 'bold'
+Setting file-view title to 'BothDiff'
+Adding file errors.hello under heading 'Standard Files', coloured white
+Adding file errors.hello.2 under heading 'Standard Files', coloured white
+Adding file output.hello under heading 'Standard Files', coloured white
+Adding file output.hello.2 under heading 'Standard Files', coloured white
 
-Changing GUI status to: 'TextTest started at 04Apr14:48:15.'
+Viewing action with title '_Update Info' (greyed out)
+
+Pane separator positioned 46% from the top
+
+Tabs showing : Text Info
+
+---------- Text Info Window ----------
+Description:
+<No description provided>
+--------------------------------------
+
+Changing GUI status to: 'TextTest started at 11Apr09:29:42.'
 
 Waiting for application event 'completion of test actions' to occur.
 Redrawing test BothDiff coloured green
 Redrawing suite TargetApp : second column 'All 1 tests successful' coloured green
 
-Progress bar set to fraction 1.0, text 'All 1 tests completed at 04Apr14:48:16'
+Test column header set to 'Tests: 0/1 selected, none hidden'
+Setting sensitivity of action 'S_ave Selection...' to False
+
+Test progress:
+--> Not started : 1, colour 'white', font 'bold'
+
+Tabs showing : Status
+
+Progress bar set to fraction 1.0, text 'All 1 tests completed at 11Apr09:29:43'
 
 Test progress:
 --> Not started : 0, colour 'white', font ''

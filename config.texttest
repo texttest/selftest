@@ -160,6 +160,11 @@ dynamic_gui_log:From log file reckoned
 dynamic_gui_log:seconds on{WORD -1}
 dynamic_gui_log:^Reckoned to be{WORD 4+}{REPLACE <percent> complete at <date/time>}
 dynamic_gui_log:[0-9]* and [0-9]* bytes{REPLACE <file sizes>}
+# Unfortunately race conditions mean we can't reliably look at these
+dynamic_gui_log:Temporary Files
+# Traffic tests. Can't filter them there because then we can't tell when they're different...
+dynamic_gui_log:The time is now{WORD 5+}{REPLACE <ASCII time>}
+dynamic_gui_log:The process ID is{WORD -1}{REPLACE <pid>}
 gui_log:  File "
 gui_log:\[Reported by.*at{WORD 3}{REPLACE <user>}
 gui_log:\[Reported by.*at{WORD 5}{REPLACE <date/time>}
