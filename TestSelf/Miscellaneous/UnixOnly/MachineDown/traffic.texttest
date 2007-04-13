@@ -1,7 +1,9 @@
-<-CMD:rsh stupid_machine1 "ps -efl | grep Xvfb | grep -v grep"
+<-CMD:xdpyinfo -display stupid_machine1:42.0
+->ERR:xdpyinfo:  unable to open display "stupid_machine1:42.0"
+<-CMD:rsh stupid_machine1 "ps -efl"
 ->ERR:stupid_machine1: Unknown host
-<-CMD:rsh stupid_machine2 "ps -efl | grep Xvfb | grep -v grep"
+<-CMD:xdpyinfo -display stupid_machine2:42.0
+->ERR:xdpyinfo:  unable to open display "stupid_machine2:42.0"
+<-CMD:rsh stupid_machine2 "ps -efl"
 ->OUT:No processes!
-<-CMD:rsh stupid_machine2 "Xvfb :42 &"
-<-CMD:rsh stupid_machine2 "xclock -display stupid_machine2:42.0 &"
-<-CMD:rsh stupid_machine2 "xterm -display stupid_machine2:42.0 -e xhost + &"
+<-CMD:rsh stupid_machine2 "Xvfb -ac :42"

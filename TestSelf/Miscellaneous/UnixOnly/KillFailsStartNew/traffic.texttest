@@ -1,11 +1,9 @@
-<-CMD:rsh stupid_machine1 "ps -efl | grep Xvfb | grep -v grep"
-->OUT:0 S fakeuser  fake_xvfb_server     1  0  76   0 -  4211 -      Apr00 ?        00:40:35 Xvfb :42
 <-CMD:xdpyinfo -display stupid_machine1:42.0
 ->ERR:A strange error occurred!
-<-CMD:rsh stupid_machine1 "ps -efl | grep Xvfb | grep -v grep"
+<-CMD:rsh stupid_machine1 "ps -efl"
 ->OUT:0 S fakeuser  fake_xvfb_server     1  0  76   0 -  4211 -      Apr00 ?        00:40:35 Xvfb :42
-<-CMD:rsh stupid_machine2 "ps -efl | grep Xvfb | grep -v grep"
+<-CMD:xdpyinfo -display stupid_machine2:42.0
+->ERR:A strange error occurred!
+<-CMD:rsh stupid_machine2 "ps -efl"
 ->OUT:No processes!
-<-CMD:rsh stupid_machine2 "Xvfb :42 &"
-<-CMD:rsh stupid_machine2 "xclock -display stupid_machine2:42.0 &"
-<-CMD:rsh stupid_machine2 "xterm -display stupid_machine2:42.0 -e xhost + &"
+<-CMD:rsh stupid_machine2 "Xvfb -ac :42"

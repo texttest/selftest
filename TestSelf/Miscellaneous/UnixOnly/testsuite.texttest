@@ -1,6 +1,9 @@
 # Check we can connect to and run an Xvfb server...
 UseVirtualDisplay
 
+# Make sure we aren't reliant on rsh for things to work, if we use localhost, just start things locally
+DisplayOnLocalHost
+
 # Make sure we can failover if there isn't a server running on the earlier machines
 UseAlternativeServer
 
