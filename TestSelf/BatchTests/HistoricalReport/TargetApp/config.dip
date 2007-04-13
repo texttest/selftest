@@ -1,13 +1,8 @@
-# Path to the binary
-binary:${TEXTTEST_CHECKOUT}/dipjudge.py
-
 import_config_file:${OUTER_TT}/standard_console
 
-checkout_location:${TEXTTEST_HOME}
-default_checkout:CodeNoFailures
-
-[run_dependent_text]
-output:Running Diplomacy Judge
+# Create a "historical repository" to test that functionality...
+[batch_result_repository]
+self_test:repository
 [end]
 
-auto_collapse_successful:0
+historical_report_location:report
