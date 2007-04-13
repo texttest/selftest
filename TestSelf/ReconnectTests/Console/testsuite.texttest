@@ -4,20 +4,8 @@ SuccessTest
 # Check we can reconnect and recalculate the temporary files
 RecomputeFileFilters
 
-# Check batch report for unrunnable tests reconnected to here...
-BatchUnrunnable
-
-# Test that reconnecting to non-found tests and tests with strange result files works
-StrangeResultFiles
-
-# Check we give sensible errors if we try to reconnect fast when there isn't enough info to do so
+# We should automatically recompute if we can't find a state file
 NoStateFile
-
-# If we do full reconnection, make sure we actually create results if teststate is missing
-ResultsButNoStateFile
-
-# Copy of ResultsButNoStateFile, but don't tell it we need to recompute
-AutoRecomputeNoStateFile
 
 # Check we can handle linking to new files
 NewFiles
