@@ -179,9 +179,6 @@ traffic:[^/]*[0-9][0-9][A-Z][a-z][a-z][0-9][0-9][0-9][0-9][0-9][0-9]{REPLACE <ta
 
 [unordered_text]
 gui_log:Dynamic run failed{LINES 3}
-traffic:xclock
-traffic:xterm
-traffic:Xvfb
 [end]
 
 [failure_severity]
@@ -247,6 +244,7 @@ collect_traffic:rsh
 collect_traffic:xdpyinfo
 collect_traffic:interpretcore.py
 collect_traffic:cvs
+collect_traffic:Xvfb
 
 [collect_traffic_environment]
 time:TEXTTEST_HOME
