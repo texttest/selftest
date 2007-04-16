@@ -1,4 +1,4 @@
-Top Window title is TextTest dynamic GUI (tests started at 12Apr18:13:40)
+Top Window title is TextTest dynamic GUI (tests started at 17Apr01:54:02)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -16,6 +16,7 @@ Viewing action with title '_Save', stock id ''gtk-save'', accelerator ''<control
 Viewing action with title 'S_ave Selection...', stock id ''gtk-save-as'', accelerator ''<control><shift>s''
 Viewing action with title '_Log'
 Viewing action with title 'Log Recursive'
+Viewing action with title 'Log Latest'
 Viewing action with title '_Difference'
 Viewing action with title 'Difference Recursive'
 Viewing action with title '_Status'
@@ -55,6 +56,7 @@ UI layout:
       <menu name="CVSmenu" action="CVSmenu">
         <menuitem name="Log" action="Log"/>
         <menuitem name="Log Recursive" action="Log Recursive"/>
+        <menuitem name="Log Latest" action="Log Latest"/>
         <separator/>
         <menuitem name="Difference" action="Difference"/>
         <menuitem name="Difference Recursive" action="Difference Recursive"/>
@@ -86,6 +88,7 @@ UI layout:
     <menu name="CVSmenu" action="CVSmenu">
       <menuitem name="Log" action="Log"/>
       <menuitem name="Log Recursive" action="Log Recursive"/>
+      <menuitem name="Log Latest" action="Log Latest"/>
       <separator/>
       <menuitem name="Difference" action="Difference"/>
       <menuitem name="Difference Recursive" action="Difference Recursive"/>
@@ -109,6 +112,7 @@ UI layout:
     <menu name="CVSmenu" action="CVSmenu">
       <menuitem name="Log" action="Log"/>
       <menuitem name="Log Recursive" action="Log Recursive"/>
+      <menuitem name="Log Latest" action="Log Latest"/>
       <separator/>
       <menuitem name="Difference" action="Difference"/>
       <menuitem name="Difference Recursive" action="Difference Recursive"/>
@@ -165,7 +169,7 @@ Expected running time for the default version:
 CPU time   :      2.48 sec. on heathlands
 --------------------------------------
 
-Changing GUI status to: 'TextTest started at 12Apr18:13:41.'
+Changing GUI status to: 'TextTest started at 17Apr01:54:02.'
 
 Waiting for application event 'completion of test actions' to occur.
 Redrawing test large_gap_daily coloured white
@@ -187,7 +191,7 @@ Adding file STD+EXP+JAR_no_reference under heading 'Ruleset', coloured white
 Job pending in SGE
 --------------------------------------
 Redrawing test large_gap_daily coloured yellow
-(Second column 'RUN (pennsville)' coloured yellow)
+(Second column 'RUN (greenville)' coloured yellow)
 
 Setting file-view title to 'large__gap__daily'
 Adding file errors.apc under heading 'Temporary Files', coloured yellow
@@ -195,7 +199,7 @@ Adding file output.apc under heading 'Temporary Files', coloured yellow
 Setting sensitivity of action '_Update Info' to True
 
 ---------- Text Info Window ----------
-Running on pennsville
+Running on greenville
 --------------------------------------
 Redrawing test large_gap_daily coloured green
 (Second column 'test new' coloured red)
@@ -208,7 +212,7 @@ Adding file test.apc under heading 'New Files', coloured red
 Setting sensitivity of action '_Update Info' to False
 
 ---------- Text Info Window ----------
-Test FAILED on pennsville :
+Test FAILED on greenville :
 ------------------ New result in test --------------------
 OBJ	4911686        	trial 1
 --------------------------------------
@@ -216,7 +220,7 @@ Setting sensitivity of action '_Save' to True
 
 Tabs showing : Text Info, Saving
 
-Progress bar set to fraction 1.0, text 'All 1 tests completed at 12Apr18:13:50 (1 tests failed)'
+Progress bar set to fraction 1.0, text 'All 1 tests completed at 17Apr01:54:07 (1 tests failed)'
 Expected application event 'completion of test actions' occurred, proceeding.
 
 'save results for selected tests' event created with arguments ''
@@ -236,6 +240,7 @@ Setting sensitivity of action '_Save' to False
 Setting sensitivity of action 'S_ave Selection...' to False
 Setting sensitivity of action '_Log' to False
 Setting sensitivity of action 'Log Recursive' to False
+Setting sensitivity of action 'Log Latest' to False
 Setting sensitivity of action '_Difference' to False
 Setting sensitivity of action 'Difference Recursive' to False
 Setting sensitivity of action '_Status' to False
@@ -255,7 +260,7 @@ Test progress:
 
 Tabs showing : Status
 Redrawing suite TargetApp : second column 'All 1 tests successful' coloured green
-Progress bar detected save, new text is 'All 1 tests completed at 12Apr18:13:50'
+Progress bar detected save, new text is 'All 1 tests completed at 17Apr01:54:07'
 
 Test progress:
 --> Not started : 0, colour 'white', font ''
