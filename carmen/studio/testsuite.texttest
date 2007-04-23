@@ -28,9 +28,10 @@ AddBadMacroUsers
 
 # Check we can fire up the macro editor
 ViewMacro
-
-# 
 ScriptTest
 
 # If user and tmp have the same base name the tests may be UNRUNNABLE...
 AvoidUserTmpClash
+
+# Bugzilla 15228 - Stacktrace when sorting treeview in the precense of empty test suite
+SortEmptySuite
