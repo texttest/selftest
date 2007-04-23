@@ -1,4 +1,4 @@
-Top Window title is TextTest dynamic GUI (tests started at 13Apr11:33:10)
+Top Window title is TextTest dynamic GUI (tests started at 23Apr13:59:14)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -92,18 +92,21 @@ Description:
 <No description provided>
 --------------------------------------
 
-Changing GUI status to: 'TextTest started at 13Apr11:33:10.'
+Changing GUI status to: 'TextTest started at 23Apr13:59:14.'
 
 Waiting for application event 'completion of test actions' to occur.
 Redrawing test Test coloured red
-(Second column 'output different' coloured red)
+(Second column 'errors different(+)' coloured red)
 
 Setting file-view title to 'Test'
-Adding file errors.hello under heading 'Comparison Files', coloured green
+Adding file errors.hello under heading 'Comparison Files', coloured red
 Adding file output.hello under heading 'Comparison Files', coloured red
 
 ---------- Text Info Window ----------
 Test FAILED :
+------------------ Differences in errors --------------------
+0a1
+> Error message!
 ------------------ Differences in output --------------------
 1c1
 < Hello
@@ -114,13 +117,15 @@ Setting sensitivity of action '_Save' to True
 
 Tabs showing : Text Info, Saving
 
-Progress bar set to fraction 1.0, text 'All 1 tests completed at 13Apr11:33:11 (1 tests failed)'
+Progress bar set to fraction 1.0, text 'All 1 tests completed at 23Apr13:59:15 (1 tests failed)'
 Expected application event 'completion of test actions' occurred, proceeding.
 
 'save results for selected tests' event created with arguments ''
 
 Changing GUI status to: 'Saving 1 tests ...'
 Saving HELLO test-case Test - version reconnectrun, exactness 1
+
+Changing GUI status to: 'Saving HELLO test-case Test : errors, version reconnectrun'
 
 Changing GUI status to: 'Saving HELLO test-case Test : output, version reconnectrun'
 Redrawing test Test coloured green
@@ -134,15 +139,17 @@ Test progress:
 --> Not started : 0, colour 'white', font ''
 --> Failed : 1, colour 'red', font 'bold'
 ----> Differences : 1, colour 'red', font 'bold'
+------> errors different : 1, colour 'red', font 'bold'
 ------> output different : 1, colour 'red', font 'bold'
 
 Tabs showing : Status
-Progress bar detected save, new text is 'All 1 tests completed at 13Apr11:33:11'
+Progress bar detected save, new text is 'All 1 tests completed at 23Apr13:59:15'
 
 Test progress:
 --> Not started : 0, colour 'white', font ''
 --> Failed : 0, colour 'white', font ''
 ----> Differences : 0, colour 'white', font ''
+------> errors different : 0, colour 'white', font ''
 ------> output different : 0, colour 'white', font ''
 --> Succeeded : 1, colour 'green', font 'bold'
 
