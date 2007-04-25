@@ -1,0 +1,22 @@
+# Tests for texttest_release.py
+binary:${TEXTTEST_CHECKOUT}/bin/texttest_release.py
+
+full_name:TextTest Release
+
+create_catalogues:true
+
+config_module:carmenqueuesystem
+
+copy_test_path:Testing
+copy_test_path:texttest-current.zip
+
+# Settings for Carmen
+default_checkout:master
+[checkout_location]
+default:~/work/${TEXTTEST_CHECKOUT_NAME}/Testing/TextTest
+nightly_publish:/usr/local/share/texttest
+weekly_publish:/usr/local/share/texttest
+[end]
+
+[run_dependent_text]
+errors:lock in
