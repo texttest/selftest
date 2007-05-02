@@ -148,7 +148,7 @@ def getCheckout(optDict):
     if os.path.isdir(sourceDir):
         return sourceDir
     else:
-        print "No source directory found at", sourceDir, "please specify it with the -c option"
+        print "No source directory found at", sourceDir, ": please specify it with the -c option."
 
         
 def getTestDir(root):
