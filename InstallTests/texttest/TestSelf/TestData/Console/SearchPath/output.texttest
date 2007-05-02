@@ -1,0 +1,43 @@
+TextTest will write diagnostics in /users/geoff/texttesttmp/texttestgeoff10Jul104051/TestSelf/TestData/Console/SearchPath based on file at /users/geoff/work/master/Testing/Automatic/texttest/log4py.conf
+Using Application TDAT, version subdir.searchpath
+Running TDAT test-suite TargetApp
+  Running TDAT test-case Test1
+Comparing differences for TDAT test-suite TargetApp
+  Comparing differences for TDAT test-case Test1 (on catalogue.tdat,errors.tdat,output.tdat)
+  TDAT test-case Test1 FAILED : differences in catalogue,output
+  View details(v), Save Version subdir.searchpath(1), Save Version subdir(2), Save Version searchpath(3), Save(s) or continue(any other key)?
+------------------ Differences in catalogue --------------------
+1,23c1
+< The following new files/directories were created:
+< <Test Directory>
+< ----writeabledirs
+< --------otherdir
+< ------------writehere
+< ----------------newfile
+< --------writehere
+< ------------newfile
+< 
+< The following existing files/directories changed their contents:
+< <Test Directory>
+< ----writeabledirs
+< --------somedir
+< ------------toEdit
+< --------writehere
+< ------------writeandremovehere
+< 
+< The following existing files/directories were deleted:
+< <Test Directory>
+< ----writeabledirs
+< --------toRemove
+< --------otherdir
+< ------------toRemove
+---
+> No files or directories were created, edited or deleted.
+------------------ Differences in output --------------------
+2a3,5
+> Found and read my second read-only file:  Personal!
+> 
+> Didn't get given a directory structure to edit!
+<See also tkdiff window for details of output>
+  Save Version subdir.searchpath(1), Save Version subdir(2), Save Version searchpath(3), Save(s) or continue(any other key)?
+Killed process 11874 with signal 2

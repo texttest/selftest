@@ -1,0 +1,29 @@
+# Tests for texttest_release.py
+binary:${TEXTTEST_CHECKOUT}/configure_tests.py
+
+full_name:TextTest Install
+
+create_catalogues:true
+
+config_module:carmenqueuesystem
+
+# Settings for Carmen
+default_checkout:master
+[checkout_location]
+default:~/work/${TEXTTEST_CHECKOUT_NAME}/Testing/Automatic/texttest
+nightly_publish:/carm/${TEXTTEST_CHECKOUT_NAME}/Testing/Automatic/texttest
+weekly_publish:/carm/${TEXTTEST_CHECKOUT_NAME}/Testing/Automatic/texttest
+[end]
+
+copy_test_path:texttest
+link_test_path:gtk.py
+link_test_path:configintercept.py
+
+collect_traffic:bsub
+collect_traffic:qsub
+
+[test_data_environment]
+texttest:TEXTTEST_HOME
+
+[run_dependent_text]
+output:{INTERNAL writedir}{REPLACE <test dir>}

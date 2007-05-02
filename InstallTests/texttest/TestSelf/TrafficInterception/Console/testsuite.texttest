@@ -1,0 +1,10 @@
+# Test suite
+
+# Make sure we can replay some matching traffic and it can work...
+ReplayTraffic
+
+# If no traffic file present and recording not requested, ignore traffic functionality
+RunWithoutTraffic
+
+# Make sure things still work if we have a faked version of something we're recording traffic for
+RecordFromFake

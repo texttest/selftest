@@ -1,0 +1,1 @@
+CLASSPATH:$TEXTTEST_HOME/source:$TEXTTEST_HOME/source/log4j.jar

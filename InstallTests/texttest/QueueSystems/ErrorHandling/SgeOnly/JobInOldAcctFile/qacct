@@ -1,0 +1,16 @@
+#!/usr/bin/env python
+
+import sys
+from getopt import getopt
+
+def getFileArg():
+    args, info = getopt(sys.argv[1:], "f:j:")
+    for arg, val in args:
+        if arg == "-f":
+            return val
+
+acctFile = getFileArg()
+if acctFile and acctFile.endswith("accounting.2"):
+    print "This job ran several days ago!"
+else:
+    sys.stderr.write("error: job id 1 not found\n")
