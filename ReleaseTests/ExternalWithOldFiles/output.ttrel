@@ -1,8 +1,8 @@
-U Testing/TextTest/install.py
-U Testing/TextTest/texttest_release.py
+U Testing/TextTest/readme.txt
 U Testing/TextTest/bin/interpretcore.py
 U Testing/TextTest/bin/texttest
 U Testing/TextTest/bin/texttest.py
+U Testing/TextTest/bin/texttest_release.py
 U Testing/TextTest/doc/AUTHORS
 U Testing/TextTest/doc/COPYING
 U Testing/TextTest/doc/ChangeLog
@@ -89,6 +89,9 @@ U Testing/Automatic/texttest/config.texttest.powerpc
 U Testing/Automatic/texttest/config.texttest.queuesystem
 U Testing/Automatic/texttest/config.texttest.sge
 U Testing/Automatic/texttest/config.texttest.sparc
+U Testing/Automatic/texttest/config.ttinst
+U Testing/Automatic/texttest/config.ttrel
+U Testing/Automatic/texttest/configure_tests.py
 U Testing/Automatic/texttest/environment.texttest
 U Testing/Automatic/texttest/environment.texttest.cover
 U Testing/Automatic/texttest/environment.texttest.lsf
@@ -107,6 +110,8 @@ U Testing/Automatic/texttest/testsuite.texttest.carmen.nonlinux
 U Testing/Automatic/texttest/testsuite.texttest.nonlinux
 U Testing/Automatic/texttest/testsuite.texttest.queuesystem
 U Testing/Automatic/texttest/testsuite.texttest.sge.nonlinux
+U Testing/Automatic/texttest/testsuite.ttinst
+U Testing/Automatic/texttest/testsuite.ttrel
 U Testing/Automatic/texttest/QueueSystems/testsuite.texttest
 U Testing/Automatic/texttest/QueueSystems/ErrorHandling/testsuite.texttest
 U Testing/Automatic/texttest/QueueSystems/ErrorHandling/testsuite.texttest.nonlinux
@@ -1433,14 +1438,12 @@ U Testing/Automatic/texttest/TestSelf/BatchTests/Console/NoSuchSender/errors.tex
 U Testing/Automatic/texttest/TestSelf/BatchTests/Console/NoSuchSender/interceptor.py
 U Testing/Automatic/texttest/TestSelf/BatchTests/Console/NoSuchSender/options.texttest
 U Testing/Automatic/texttest/TestSelf/BatchTests/Console/NoSuchSender/output.texttest
-U Testing/Automatic/texttest/TestSelf/BatchTests/Console/NoSuchSender/targetReport.texttest
 U Testing/Automatic/texttest/TestSelf/BatchTests/Console/NoSuchSender/personaldir/config
 U Testing/Automatic/texttest/TestSelf/BatchTests/Console/NoSuchServer/catalogue.texttest
 U Testing/Automatic/texttest/TestSelf/BatchTests/Console/NoSuchServer/errors.texttest
 U Testing/Automatic/texttest/TestSelf/BatchTests/Console/NoSuchServer/interceptor.py
 U Testing/Automatic/texttest/TestSelf/BatchTests/Console/NoSuchServer/options.texttest
 U Testing/Automatic/texttest/TestSelf/BatchTests/Console/NoSuchServer/output.texttest
-U Testing/Automatic/texttest/TestSelf/BatchTests/Console/NoSuchServer/targetReport.texttest
 U Testing/Automatic/texttest/TestSelf/BatchTests/Console/NoSuchServer/personaldir/config
 U Testing/Automatic/texttest/TestSelf/BatchTests/Console/OneAppNoTests/catalogue.texttest
 U Testing/Automatic/texttest/TestSelf/BatchTests/Console/OneAppNoTests/errors.texttest
@@ -2001,9 +2004,11 @@ U Testing/Automatic/texttest/TestSelf/DiagnosticHandling/TargetApp/TestWithDiag/
 U Testing/Automatic/texttest/TestSelf/DiagnosticHandling/TargetApp/TestWithDiag/options.diag
 U Testing/Automatic/texttest/TestSelf/DiagnosticHandling/TargetApp/TestWithDiag/output.diag
 U Testing/Automatic/texttest/TestSelf/DiagnosticHandling/TargetApp/TestWithDiag/second.diag.tmp
+U Testing/Automatic/texttest/TestSelf/DiagnosticHandling/TargetApp/source/.cvsignore
 U Testing/Automatic/texttest/TestSelf/DiagnosticHandling/TargetApp/source/DiagnosticWriter.class
 U Testing/Automatic/texttest/TestSelf/DiagnosticHandling/TargetApp/source/DiagnosticWriter.java
 U Testing/Automatic/texttest/TestSelf/DiagnosticHandling/TargetApp/source/log4j.jar
+U Testing/Automatic/texttest/TestSelf/DiagnosticHandling/TargetApp/source/log4py.py
 U Testing/Automatic/texttest/TestSelf/DiagnosticHandling/TargetApp/source/writediags.py
 U Testing/Automatic/texttest/TestSelf/Documentation/testsuite.texttest
 U Testing/Automatic/texttest/TestSelf/Documentation/CommandLineOptions/catalogue.texttest
@@ -3847,13 +3852,562 @@ U Testing/Automatic/texttest/filter_files/batch
 U Testing/Automatic/texttest/filter_files/dynamic_gui
 U Testing/Automatic/texttest/filter_files/reconnect
 U Testing/Automatic/texttest/filter_files/static_gui
+U Testing/Automatic/texttest/InstallTests/configintercept.py
+U Testing/Automatic/texttest/InstallTests/gtk.py
+U Testing/Automatic/texttest/InstallTests/testsuite.ttinst
+U Testing/Automatic/texttest/InstallTests/BasicUnix/catalogue.ttinst
+U Testing/Automatic/texttest/InstallTests/BasicUnix/configintercept.py
+U Testing/Automatic/texttest/InstallTests/BasicUnix/errors.ttinst
+U Testing/Automatic/texttest/InstallTests/BasicUnix/gtk.py
+U Testing/Automatic/texttest/InstallTests/BasicUnix/options.ttinst
+U Testing/Automatic/texttest/InstallTests/BasicUnix/output.ttinst
+U Testing/Automatic/texttest/InstallTests/BasicUnix/traffic.ttinst
+U Testing/Automatic/texttest/InstallTests/Jeppesen/catalogue.ttinst
+U Testing/Automatic/texttest/InstallTests/Jeppesen/errors.ttinst
+U Testing/Automatic/texttest/InstallTests/Jeppesen/options.ttinst
+U Testing/Automatic/texttest/InstallTests/Jeppesen/output.ttinst
+U Testing/Automatic/texttest/InstallTests/Jeppesen/traffic.ttinst
+U Testing/Automatic/texttest/InstallTests/NoCheckout/catalogue.ttinst
+U Testing/Automatic/texttest/InstallTests/NoCheckout/errors.ttinst
+U Testing/Automatic/texttest/InstallTests/NoCheckout/output.ttinst
+U Testing/Automatic/texttest/InstallTests/Windows/catalogue.ttinst
+U Testing/Automatic/texttest/InstallTests/Windows/configintercept.py
+U Testing/Automatic/texttest/InstallTests/Windows/errors.ttinst
+U Testing/Automatic/texttest/InstallTests/Windows/options.ttinst
+U Testing/Automatic/texttest/InstallTests/Windows/output.ttinst
+U Testing/Automatic/texttest/InstallTests/texttest/config.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/config.texttest.lsf
+U Testing/Automatic/texttest/InstallTests/texttest/config.texttest.queuesystem
+U Testing/Automatic/texttest/InstallTests/texttest/config.texttest.sge
+U Testing/Automatic/texttest/InstallTests/texttest/environment.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/environment.texttest.lsf
+U Testing/Automatic/texttest/InstallTests/texttest/environment.texttest.lsf.rectraffic
+U Testing/Automatic/texttest/InstallTests/texttest/environment.texttest.sge
+U Testing/Automatic/texttest/InstallTests/texttest/interceptor.py
+U Testing/Automatic/texttest/InstallTests/texttest/knownbugs.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/locktargetdata.py
+U Testing/Automatic/texttest/InstallTests/texttest/logging.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/standard_console
+U Testing/Automatic/texttest/InstallTests/texttest/testsuite.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/testsuite.texttest.queuesystem
+U Testing/Automatic/texttest/InstallTests/texttest/GUI/testsuite.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/GUI/QuitConfirmation/testsuite.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/GUI/QuitConfirmation/AllStatic/catalogue.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/GUI/QuitConfirmation/AllStatic/dynamic_gui_log.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/GUI/QuitConfirmation/AllStatic/dynamic_usecase.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/GUI/QuitConfirmation/AllStatic/errors.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/GUI/QuitConfirmation/AllStatic/gui_log.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/GUI/QuitConfirmation/AllStatic/options.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/GUI/QuitConfirmation/AllStatic/output.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/GUI/QuitConfirmation/AllStatic/usecase.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/GUI/QuitConfirmation/AllStatic/personaldir/config
+U Testing/Automatic/texttest/InstallTests/texttest/GUI/QuitConfirmation/DynamicFromStatic/catalogue.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/GUI/QuitConfirmation/DynamicFromStatic/dynamic_gui_log.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/GUI/QuitConfirmation/DynamicFromStatic/dynamic_usecase.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/GUI/QuitConfirmation/DynamicFromStatic/errors.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/GUI/QuitConfirmation/DynamicFromStatic/gui_log.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/GUI/QuitConfirmation/DynamicFromStatic/options.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/GUI/QuitConfirmation/DynamicFromStatic/output.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/GUI/QuitConfirmation/DynamicFromStatic/usecase.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/GUI/QuitConfirmation/DynamicFromStatic/personaldir/config
+U Testing/Automatic/texttest/InstallTests/texttest/GUI/QuitConfirmation/MultipleDynamic/catalogue.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/GUI/QuitConfirmation/MultipleDynamic/dynamic_gui_log.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/GUI/QuitConfirmation/MultipleDynamic/errors.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/GUI/QuitConfirmation/MultipleDynamic/options.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/GUI/QuitConfirmation/MultipleDynamic/output.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/GUI/QuitConfirmation/MultipleDynamic/usecase.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/GUI/QuitConfirmation/MultipleDynamic/personaldir/config
+U Testing/Automatic/texttest/InstallTests/texttest/QueueSystems/testsuite.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/testsuite.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/testsuite.texttest.sge
+U Testing/Automatic/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/Console/testsuite.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/Console/JobDeletionFails/catalogue.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/Console/JobDeletionFails/errors.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/Console/JobDeletionFails/options.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/Console/JobDeletionFails/output.texttest.lsf
+U Testing/Automatic/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/Console/JobDeletionFails/output.texttest.sge
+U Testing/Automatic/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/Console/JobDeletionFails/targetReport.texttest.lsf
+U Testing/Automatic/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/Console/JobDeletionFails/targetReport.texttest.sge
+U Testing/Automatic/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/Console/JobDeletionFails/traffic.texttest.lsf
+U Testing/Automatic/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/Console/JobDeletionFails/traffic.texttest.sge
+U Testing/Automatic/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/Console/JobDeletionFails/usecase.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/Console/JobDeletionFails/usecase_log.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/Console/JobDisappears/catalogue.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/Console/JobDisappears/errors.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/Console/JobDisappears/interceptor.py
+U Testing/Automatic/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/Console/JobDisappears/options.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/Console/JobDisappears/output.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/Console/JobDisappears/output.texttest.sge
+U Testing/Automatic/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/Console/JobDisappears/targetReport.texttest.lsf
+U Testing/Automatic/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/Console/JobDisappears/targetReport.texttest.sge
+U Testing/Automatic/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/Console/JobDisappears/traffic.texttest.lsf
+U Testing/Automatic/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/Console/JobDisappears/traffic.texttest.sge
+U Testing/Automatic/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/Console/JobDisappears/usecase.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/Console/JobDisappears/usecase_log.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/Console/JobDisappearsAfterStart/catalogue.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/Console/JobDisappearsAfterStart/errors.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/Console/JobDisappearsAfterStart/options.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/Console/JobDisappearsAfterStart/output.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/Console/JobDisappearsAfterStart/output.texttest.sge
+U Testing/Automatic/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/Console/JobDisappearsAfterStart/targetReport.texttest.lsf
+U Testing/Automatic/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/Console/JobDisappearsAfterStart/targetReport.texttest.sge
+U Testing/Automatic/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/Console/JobDisappearsAfterStart/traffic.texttest.lsf
+U Testing/Automatic/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/Console/JobDisappearsAfterStart/traffic.texttest.sge
+U Testing/Automatic/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/Console/JobDisappearsAfterStart/usecase.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/Console/JobDisappearsAfterStart/usecase_log.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/GUI/testsuite.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/GUI/QuitDuringSetup/bkill
+U Testing/Automatic/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/GUI/QuitDuringSetup/bsub
+U Testing/Automatic/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/GUI/QuitDuringSetup/catalogue.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/GUI/QuitDuringSetup/dynamic_gui_log.texttest.lsf
+U Testing/Automatic/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/GUI/QuitDuringSetup/dynamic_gui_log.texttest.sge
+U Testing/Automatic/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/GUI/QuitDuringSetup/errors.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/GUI/QuitDuringSetup/output.texttest.lsf
+U Testing/Automatic/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/GUI/QuitDuringSetup/output.texttest.sge
+U Testing/Automatic/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/GUI/QuitDuringSetup/qdel
+U Testing/Automatic/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/GUI/QuitDuringSetup/qsub
+U Testing/Automatic/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/GUI/QuitDuringSetup/usecase.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/GUI/QuitDuringSetup/TargetApp/config.hello
+U Testing/Automatic/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/GUI/QuitDuringSetup/TargetApp/hello.py
+U Testing/Automatic/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/GUI/QuitDuringSetup/TargetApp/testsuite.hello
+U Testing/Automatic/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/GUI/QuitDuringSetup/TargetApp/Suite1/testsuite.hello
+U Testing/Automatic/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/GUI/QuitDuringSetup/TargetApp/Suite1/Test1/errors.hello
+U Testing/Automatic/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/GUI/QuitDuringSetup/TargetApp/Suite1/Test1/output.hello
+U Testing/Automatic/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/GUI/QuitDuringSetup/TargetApp/Suite1/Test2/errors.hello
+U Testing/Automatic/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/GUI/QuitDuringSetup/TargetApp/Suite1/Test2/output.hello
+U Testing/Automatic/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/GUI/QuitDuringSetup/TargetApp/Suite2/testsuite.hello
+U Testing/Automatic/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/GUI/QuitDuringSetup/TargetApp/Suite2/Test2/errors.hello
+U Testing/Automatic/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/GUI/QuitDuringSetup/TargetApp/Suite2/Test2/output.hello
+U Testing/Automatic/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/LsfOnly/testsuite.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/LsfOnly/BadResourceUsage/catalogue.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/LsfOnly/BadResourceUsage/errors.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/LsfOnly/BadResourceUsage/options.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/LsfOnly/BadResourceUsage/output.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/LsfOnly/BadResourceUsage/traffic.texttest.lsf
+U Testing/Automatic/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/SgeOnly/testsuite.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/SgeOnly/JobInOldAcctFile/catalogue.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/SgeOnly/JobInOldAcctFile/errors.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/SgeOnly/JobInOldAcctFile/options.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/SgeOnly/JobInOldAcctFile/output.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/SgeOnly/JobInOldAcctFile/output.texttest.sge
+U Testing/Automatic/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/SgeOnly/JobInOldAcctFile/qacct
+U Testing/Automatic/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/SgeOnly/JobInOldAcctFile/qdel
+U Testing/Automatic/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/SgeOnly/JobInOldAcctFile/qsub
+U Testing/Automatic/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/SgeOnly/JobInOldAcctFile/targetReport.texttest.sge
+U Testing/Automatic/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/SgeOnly/JobInOldAcctFile/traffic.texttest.sge
+U Testing/Automatic/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/SgeOnly/JobInOldAcctFile/usecase.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/SgeOnly/JobInOldAcctFile/usecase_log.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/QueueSystems/TargetApp/busywait.py
+U Testing/Automatic/texttest/InstallTests/texttest/QueueSystems/TargetApp/config.sleep
+U Testing/Automatic/texttest/InstallTests/texttest/QueueSystems/TargetApp/config.sleep.badperfarch
+U Testing/Automatic/texttest/InstallTests/texttest/QueueSystems/TargetApp/config.sleep.badperfmachine
+U Testing/Automatic/texttest/InstallTests/texttest/QueueSystems/TargetApp/config.sleep.badperfmodel
+U Testing/Automatic/texttest/InstallTests/texttest/QueueSystems/TargetApp/config.sleep.badqueue
+U Testing/Automatic/texttest/InstallTests/texttest/QueueSystems/TargetApp/config.sleep.cpulimit
+U Testing/Automatic/texttest/InstallTests/texttest/QueueSystems/TargetApp/config.sleep.parallel
+U Testing/Automatic/texttest/InstallTests/texttest/QueueSystems/TargetApp/config.sleep.parallel.oneperf
+U Testing/Automatic/texttest/InstallTests/texttest/QueueSystems/TargetApp/environment.sleep
+U Testing/Automatic/texttest/InstallTests/texttest/QueueSystems/TargetApp/environment.sleep.badresource
+U Testing/Automatic/texttest/InstallTests/texttest/QueueSystems/TargetApp/environment.sleep.badresusage
+U Testing/Automatic/texttest/InstallTests/texttest/QueueSystems/TargetApp/environment.sleep.parallel
+U Testing/Automatic/texttest/InstallTests/texttest/QueueSystems/TargetApp/knownbugs.sleep.kb
+U Testing/Automatic/texttest/InstallTests/texttest/QueueSystems/TargetApp/sleep.py
+U Testing/Automatic/texttest/InstallTests/texttest/QueueSystems/TargetApp/testsuite.sleep
+U Testing/Automatic/texttest/InstallTests/texttest/QueueSystems/TargetApp/testsuite.sleep.startdigit
+U Testing/Automatic/texttest/InstallTests/texttest/QueueSystems/TargetApp/123Test/options.sleep
+U Testing/Automatic/texttest/InstallTests/texttest/QueueSystems/TargetApp/Basic/errors.sleep
+U Testing/Automatic/texttest/InstallTests/texttest/QueueSystems/TargetApp/Basic/options.sleep
+U Testing/Automatic/texttest/InstallTests/texttest/QueueSystems/TargetApp/Basic/options.sleep.killing
+U Testing/Automatic/texttest/InstallTests/texttest/QueueSystems/TargetApp/Basic/options.sleep.killing2
+U Testing/Automatic/texttest/InstallTests/texttest/QueueSystems/TargetApp/Basic/options.sleep.killing3
+U Testing/Automatic/texttest/InstallTests/texttest/QueueSystems/TargetApp/Basic/output.sleep
+U Testing/Automatic/texttest/InstallTests/texttest/QueueSystems/TargetApp/Basic/output.sleep.cpulimit
+U Testing/Automatic/texttest/InstallTests/texttest/QueueSystems/TargetApp/Basic2/options.sleep
+U Testing/Automatic/texttest/InstallTests/texttest/TargetApp/config.hello
+U Testing/Automatic/texttest/InstallTests/texttest/TargetApp/hello.py
+U Testing/Automatic/texttest/InstallTests/texttest/TargetApp/testsuite.hello
+U Testing/Automatic/texttest/InstallTests/texttest/TargetApp/Test/errors.hello
+U Testing/Automatic/texttest/InstallTests/texttest/TargetApp/Test/output.hello
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/testsuite.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/testsuite.texttest.queuesystem
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/testsuite.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/Console/testsuite.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/Console/DiagFailure/catalogue.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/Console/DiagFailure/errors.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/Console/DiagFailure/input.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/Console/DiagFailure/options.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/Console/DiagFailure/output.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/Console/DiagFailureJava/catalogue.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/Console/DiagFailureJava/errors.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/Console/DiagFailureJava/input.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/Console/DiagFailureJava/options.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/Console/DiagFailureJava/output.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/Console/TraceLevel/catalogue.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/Console/TraceLevel/errors.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/Console/TraceLevel/input.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/Console/TraceLevel/options.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/Console/TraceLevel/output.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/GUI/testsuite.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/GUI/CopyTests/catalogue.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/GUI/CopyTests/errors.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/GUI/CopyTests/gui_log.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/GUI/CopyTests/options.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/GUI/CopyTests/output.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/GUI/CopyTests/rootTestSuite.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/GUI/CopyTests/usecase.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/GUI/DiagFailure/catalogue.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/GUI/DiagFailure/dynamic_gui_log.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/GUI/DiagFailure/errors.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/GUI/DiagFailure/options.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/GUI/DiagFailure/output.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/GUI/DiagFailure/usecase.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/GUI/DiagNoFile/catalogue.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/GUI/DiagNoFile/dynamic_gui_log.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/GUI/DiagNoFile/errors.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/GUI/DiagNoFile/output.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/GUI/DiagNoFile/usecase.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/GUI/DiagNoFile/TargetApp/config.diag
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/GUI/DiagNoFile/TargetApp/testsuite.diag
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/GUI/DiagNoFile/TargetApp/Test/errors.diag
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/GUI/DiagNoFile/TargetApp/Test/output.diag
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/GUI/DiagNoFile/TargetApp/source/writediags.py
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/GUI/DiagOnPermanently/catalogue.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/GUI/DiagOnPermanently/dynamic_gui_log.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/GUI/DiagOnPermanently/errors.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/GUI/DiagOnPermanently/knownbugs.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/GUI/DiagOnPermanently/options.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/GUI/DiagOnPermanently/output.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/GUI/DiagOnPermanently/usecase.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/GUI/EnableDiagnostics/catalogue.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/GUI/EnableDiagnostics/errors.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/GUI/EnableDiagnostics/gui_log.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/GUI/EnableDiagnostics/options.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/GUI/EnableDiagnostics/output.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/GUI/EnableDiagnostics/usecase.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/GUI/TempDiagOnPermanent/catalogue.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/GUI/TempDiagOnPermanent/dynamic_gui_log.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/GUI/TempDiagOnPermanent/errors.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/GUI/TempDiagOnPermanent/options.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/GUI/TempDiagOnPermanent/output.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/GUI/TempDiagOnPermanent/usecase.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/TargetApp/config.diag
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/TargetApp/config.diag.java
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/TargetApp/environment.diag.java
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/TargetApp/logging.diag
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/TargetApp/logging.diag.java
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/TargetApp/testsuite.diag
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/TargetApp/Test/errors.diag
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/TargetApp/Test/options.diag
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/TargetApp/Test/output.diag
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/TargetApp/TestAlwaysDiag/errors.diag
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/TargetApp/TestAlwaysDiag/first.diag
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/TargetApp/TestAlwaysDiag/first.diag.dummy
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/TargetApp/TestAlwaysDiag/logging.diag
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/TargetApp/TestAlwaysDiag/logging.diag.tmp
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/TargetApp/TestAlwaysDiag/options.diag
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/TargetApp/TestAlwaysDiag/output.diag
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/TargetApp/TestAlwaysDiag/second.diag
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/TargetApp/TestAlwaysDiag/third.diag
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/TargetApp/TestWithDiag/errors.diag
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/TargetApp/TestWithDiag/first.diag.tmp
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/TargetApp/TestWithDiag/first.diag.tmp.dummy
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/TargetApp/TestWithDiag/logging.diag.java.tmp
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/TargetApp/TestWithDiag/logging.diag.tmp
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/TargetApp/TestWithDiag/options.diag
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/TargetApp/TestWithDiag/output.diag
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/TargetApp/TestWithDiag/second.diag.tmp
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/RunningTests/testsuite.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/RunningTests/GUI/testsuite.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/RunningTests/GUI/CollapseWhileRunning/catalogue.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/RunningTests/GUI/CollapseWhileRunning/dynamic_gui_log.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/RunningTests/GUI/CollapseWhileRunning/environment.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/RunningTests/GUI/CollapseWhileRunning/errors.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/RunningTests/GUI/CollapseWhileRunning/output.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/RunningTests/GUI/CollapseWhileRunning/usecase.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/RunningTests/GUI/CollapseWhileRunning/personaldir/config
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/RunningTests/GUI/CompareWhileRunning/catalogue.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/RunningTests/GUI/CompareWhileRunning/dynamic_gui_log.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/RunningTests/GUI/CompareWhileRunning/errors.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/RunningTests/GUI/CompareWhileRunning/output.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/RunningTests/GUI/CompareWhileRunning/usecase.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/RunningTests/GUI/FileSelection/catalogue.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/RunningTests/GUI/FileSelection/dynamic_gui_log.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/RunningTests/GUI/FileSelection/environment.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/RunningTests/GUI/FileSelection/errors.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/RunningTests/GUI/FileSelection/output.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/RunningTests/GUI/FileSelection/usecase.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/RunningTests/GUI/FileSelection/personaldir/config
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/RunningTests/GUI/HideNotStarted/catalogue.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/RunningTests/GUI/HideNotStarted/dynamic_gui_log.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/RunningTests/GUI/HideNotStarted/errors.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/RunningTests/GUI/HideNotStarted/output.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/RunningTests/GUI/HideNotStarted/usecase.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/RunningTests/GUI/ViewRunningTest/catalogue.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/RunningTests/GUI/ViewRunningTest/dynamic_gui_log.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/RunningTests/GUI/ViewRunningTest/errors.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/RunningTests/GUI/ViewRunningTest/output.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/RunningTests/GUI/ViewRunningTest/usecase.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/RunningTests/TargetApp/config.sleep
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/RunningTests/TargetApp/sleep.py
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/RunningTests/TargetApp/testsuite.sleep
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/RunningTests/TargetApp/Basic/errors.sleep
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/RunningTests/TargetApp/Basic/output.sleep
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/RunningTests/TargetApp/Basic2/errors.sleep
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/RunningTests/TargetApp/Basic2/output.sleep
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/RunningTests/TargetApp/Suite/testsuite.sleep
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/RunningTests/TargetApp/Suite/Basic3/errors.sleep
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/RunningTests/TargetApp/Suite/Basic3/output.sleep
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/RunningTests/UnixOnly/testsuite.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/RunningTests/UnixOnly/KillTest/catalogue.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/RunningTests/UnixOnly/KillTest/errors.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/RunningTests/UnixOnly/KillTest/options.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/RunningTests/UnixOnly/KillTest/output.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/RunningTests/UnixOnly/KillTest/usecase.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/RunningTests/UnixOnly/KillTest/usecase_log.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/testsuite.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/testsuite.texttest.queuesystem
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/Console/testsuite.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/Console/CopyEnvironmentPath/catalogue.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/Console/CopyEnvironmentPath/errors.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/Console/CopyEnvironmentPath/input.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/Console/CopyEnvironmentPath/options.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/Console/CopyEnvironmentPath/output.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/Console/CopyTestPath/catalogue.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/Console/CopyTestPath/errors.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/Console/CopyTestPath/options.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/Console/CopyTestPath/output.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/Console/IgnoreDataChanges/catalogue.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/Console/IgnoreDataChanges/errors.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/Console/IgnoreDataChanges/input.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/Console/IgnoreDataChanges/options.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/Console/IgnoreDataChanges/output.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/Console/IgnoreDataChanges/personaldir/config
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/Console/MissingEnvironmentPath/catalogue.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/Console/MissingEnvironmentPath/environment.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/Console/MissingEnvironmentPath/errors.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/Console/MissingEnvironmentPath/input.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/Console/MissingEnvironmentPath/options.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/Console/MissingEnvironmentPath/output.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/Console/SearchPath/catalogue.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/Console/SearchPath/errors.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/Console/SearchPath/input.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/Console/SearchPath/options.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/Console/SearchPath/output.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/Console/SearchPath/personaldir/somedir/readonlyfile2
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/Console/SearchPathFromEnv/catalogue.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/Console/SearchPathFromEnv/errors.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/Console/SearchPathFromEnv/input.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/Console/SearchPathFromEnv/options.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/Console/SearchPathFromEnv/output.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/Console/SearchPathFromEnv/personaldir/my_personal_file
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/Console/SearchPathPresetEnv/catalogue.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/Console/SearchPathPresetEnv/environment.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/Console/SearchPathPresetEnv/errors.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/Console/SearchPathPresetEnv/input.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/Console/SearchPathPresetEnv/options.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/Console/SearchPathPresetEnv/output.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/Console/SearchPathPresetEnv/personaldir/my_personal_file
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/Console/TestPathInSubDir/catalogue.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/Console/TestPathInSubDir/errors.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/Console/TestPathInSubDir/input.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/Console/TestPathInSubDir/options.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/Console/TestPathInSubDir/output.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/GUI/testsuite.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/GUI/CopyTest/catalogue.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/GUI/CopyTest/errors.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/GUI/CopyTest/gui_log.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/GUI/CopyTest/options.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/GUI/CopyTest/output.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/GUI/CopyTest/rootTestSuite.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/GUI/CopyTest/usecase.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/GUI/CopyTestPermission/catalogue.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/GUI/CopyTestPermission/dynamic_gui_log.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/GUI/CopyTestPermission/dynamic_usecase.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/GUI/CopyTestPermission/errors.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/GUI/CopyTestPermission/gui_log.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/GUI/CopyTestPermission/options.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/GUI/CopyTestPermission/output.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/GUI/CopyTestPermission/rootTestSuite.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/GUI/CopyTestPermission/usecase.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/GUI/CopyTestPermission/TargetApp/config.printperm
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/GUI/CopyTestPermission/TargetApp/printpermissions.py
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/GUI/CopyTestPermission/TargetApp/testsuite.printperm
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/GUI/CopyTestPermission/TargetApp/PrintPermissions/errors.printperm
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/GUI/CopyTestPermission/TargetApp/PrintPermissions/fake_executable.py
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/GUI/CopyTestPermission/TargetApp/PrintPermissions/output.printperm
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/GUI/CreateDataDirectory/catalogue.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/GUI/CreateDataDirectory/errors.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/GUI/CreateDataDirectory/gui_log.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/GUI/CreateDataDirectory/options.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/GUI/CreateDataDirectory/output.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/GUI/CreateDataDirectory/usecase.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/GUI/CreateDataDirectory/personaldir/config
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/GUI/CreateDataFiles/catalogue.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/GUI/CreateDataFiles/errors.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/GUI/CreateDataFiles/gui_log.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/GUI/CreateDataFiles/options.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/GUI/CreateDataFiles/output.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/GUI/CreateDataFiles/usecase.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/GUI/OverwriteFileRootSuite/catalogue.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/GUI/OverwriteFileRootSuite/errors.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/GUI/OverwriteFileRootSuite/gui_log.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/GUI/OverwriteFileRootSuite/options.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/GUI/OverwriteFileRootSuite/output.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/GUI/OverwriteFileRootSuite/usecase.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/GUI/ReservedNames/catalogue.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/GUI/ReservedNames/errors.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/GUI/ReservedNames/gui_log.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/GUI/ReservedNames/output.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/GUI/ReservedNames/usecase.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/GUI/ReservedNames/TargetApp/config.hello
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/GUI/ReservedNames/TargetApp/hello.py
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/GUI/ReservedNames/TargetApp/options.data
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/GUI/ReservedNames/TargetApp/testsuite.hello
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/GUI/ReservedNames/TargetApp/Test/testsuite.data
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/GUI/ViewDataFiles/catalogue.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/GUI/ViewDataFiles/errors.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/GUI/ViewDataFiles/gui_log.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/GUI/ViewDataFiles/options.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/GUI/ViewDataFiles/output.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/GUI/ViewDataFiles/usecase.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/TargetApp/config.tdat
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/TargetApp/config.tdat.copy
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/TargetApp/config.tdat.env
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/TargetApp/config.tdat.env.searchpath
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/TargetApp/config.tdat.queuesystem
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/TargetApp/config.tdat.searchpath
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/TargetApp/config.tdat.subdir
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/TargetApp/environment.queuesystem
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/TargetApp/readonlyfile
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/TargetApp/testdata.py
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/TargetApp/testsuite.tdat
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/TargetApp/Test1/catalogue.tdat
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/TargetApp/Test1/errors.tdat
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/TargetApp/Test1/options.tdat
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/TargetApp/Test1/output.tdat
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/TargetApp/Test1/readonlyfile
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/TargetApp/Test1/writeabledirs/otherreadfile
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/TargetApp/Test1/writeabledirs/readfile
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/TargetApp/Test1/writeabledirs/toRemove
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/TargetApp/Test1/writeabledirs/otherdir/toRemove
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/TargetApp/Test1/writeabledirs/otherdir/writehere/readfile
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/TargetApp/Test1/writeabledirs/readdir/otherdir/readfile
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/TargetApp/Test1/writeabledirs/readdir/somedir/readfile
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/TargetApp/Test1/writeabledirs/somedir/toEdit
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/TargetApp/Test1/writeabledirs/writehere/readfile
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/TargetApp/Test1/writeabledirs/writehere/writeandremovehere/readfile
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/TargetApp/Test2/catalogue.tdat
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/TargetApp/Test2/environment.tdat.env
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/TargetApp/Test2/environment.tdat.env.searchpath
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/TargetApp/Test2/errors.tdat
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/TargetApp/Test2/options.tdat
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/TargetApp/Test2/output.tdat
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/TargetApp/Test2/somedir/readonlyfile2
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/TargetApp/datadir/dummyfile
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/UnixOnly/testsuite.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/UnixOnly/testsuite.texttest.queuesystem
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/UnixOnly/LinkTestPath/catalogue.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/UnixOnly/LinkTestPath/errors.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/UnixOnly/LinkTestPath/options.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/UnixOnly/LinkTestPath/output.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/UnixOnly/PartialCopyIgnoreCatalogues/catalogue.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/UnixOnly/PartialCopyIgnoreCatalogues/catalogue.texttest.queuesystem
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/UnixOnly/PartialCopyIgnoreCatalogues/errors.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/UnixOnly/PartialCopyIgnoreCatalogues/options.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/UnixOnly/PartialCopyIgnoreCatalogues/options.texttest.queuesystem
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/UnixOnly/PartialCopyIgnoreCatalogues/output.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/UnixOnly/PartialCopyIgnoreCatalogues/output.texttest.lsf
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/UnixOnly/PartialCopyIgnoreCatalogues/output.texttest.sge
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/UnixOnly/PartialCopyIgnoreCatalogues/traffic.texttest.lsf
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/UnixOnly/PartialCopyIgnoreCatalogues/traffic.texttest.sge
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/UnixOnly/PartialCopyTestPath/catalogue.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/UnixOnly/PartialCopyTestPath/errors.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/UnixOnly/PartialCopyTestPath/options.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TestData/UnixOnly/PartialCopyTestPath/output.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TrafficInterception/testsuite.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TrafficInterception/ClientServer/testsuite.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TrafficInterception/ClientServer/Record/catalogue.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TrafficInterception/ClientServer/Record/errors.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TrafficInterception/ClientServer/Record/input.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TrafficInterception/ClientServer/Record/options.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TrafficInterception/ClientServer/Record/output.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TrafficInterception/ClientServer/Replay/catalogue.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TrafficInterception/ClientServer/Replay/errors.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TrafficInterception/ClientServer/Replay/input.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TrafficInterception/ClientServer/Replay/options.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TrafficInterception/ClientServer/Replay/output.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TrafficInterception/ClientServer/Replay2Tests/catalogue.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TrafficInterception/ClientServer/Replay2Tests/errors.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TrafficInterception/ClientServer/Replay2Tests/input.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TrafficInterception/ClientServer/Replay2Tests/options.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TrafficInterception/ClientServer/Replay2Tests/output.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TrafficInterception/ClientServer/TargetApp/config.strserv
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TrafficInterception/ClientServer/TargetApp/environment
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TrafficInterception/ClientServer/TargetApp/environment.rectraffic
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TrafficInterception/ClientServer/TargetApp/testsuite.strserv
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TrafficInterception/ClientServer/TargetApp/Test/errors.strserv
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TrafficInterception/ClientServer/TargetApp/Test/output.strserv
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TrafficInterception/ClientServer/TargetApp/Test/traffic.strserv
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TrafficInterception/ClientServer/TargetApp/source/client.py
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TrafficInterception/ClientServer/TargetApp/source/runsystem.py
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TrafficInterception/ClientServer/TargetApp/source/server.py
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TrafficInterception/Console/testsuite.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TrafficInterception/Console/RecordFromFake/catalogue.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TrafficInterception/Console/RecordFromFake/errors.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TrafficInterception/Console/RecordFromFake/input.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TrafficInterception/Console/RecordFromFake/options.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TrafficInterception/Console/RecordFromFake/output.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TrafficInterception/Console/RecordFromFake/personaldir/config
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TrafficInterception/Console/ReplayTraffic/catalogue.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TrafficInterception/Console/ReplayTraffic/errors.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TrafficInterception/Console/ReplayTraffic/input.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TrafficInterception/Console/ReplayTraffic/options.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TrafficInterception/Console/ReplayTraffic/output.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TrafficInterception/Console/RunWithoutTraffic/catalogue.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TrafficInterception/Console/RunWithoutTraffic/errors.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TrafficInterception/Console/RunWithoutTraffic/options.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TrafficInterception/Console/RunWithoutTraffic/output.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TrafficInterception/GUI/testsuite.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TrafficInterception/GUI/RecordCmdLine/catalogue.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TrafficInterception/GUI/RecordCmdLine/dynamic_gui_log.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TrafficInterception/GUI/RecordCmdLine/dynamic_usecase.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TrafficInterception/GUI/RecordCmdLine/errors.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TrafficInterception/GUI/RecordCmdLine/gui_log.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TrafficInterception/GUI/RecordCmdLine/output.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TrafficInterception/GUI/RecordCmdLine/usecase.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TrafficInterception/GUI/ReplayBadTraffic/catalogue.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TrafficInterception/GUI/ReplayBadTraffic/dynamic_gui_log.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TrafficInterception/GUI/ReplayBadTraffic/errors.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TrafficInterception/GUI/ReplayBadTraffic/options.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TrafficInterception/GUI/ReplayBadTraffic/output.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TrafficInterception/GUI/ReplayBadTraffic/usecase.texttest
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TrafficInterception/TargetApp/config.traffic
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TrafficInterception/TargetApp/environment.traffic
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TrafficInterception/TargetApp/testsuite.traffic
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TrafficInterception/TargetApp/Test/errors.traffic
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TrafficInterception/TargetApp/Test/firstcall.py
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TrafficInterception/TargetApp/Test/output.traffic
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TrafficInterception/TargetApp/Test/secondcall.py
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TrafficInterception/TargetApp/Test/traffic.traffic
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TrafficInterception/TargetApp/TestBadTraffic/errors.traffic
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TrafficInterception/TargetApp/TestBadTraffic/output.traffic
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TrafficInterception/TargetApp/TestBadTraffic/traffic.traffic
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TrafficInterception/TargetApp/TestNoTraffic/errors.traffic
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TrafficInterception/TargetApp/TestNoTraffic/output.traffic
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TrafficInterception/TargetApp/source/firstcall.py
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TrafficInterception/TargetApp/source/secondcall.py
+U Testing/Automatic/texttest/InstallTests/texttest/TestSelf/TrafficInterception/TargetApp/source/syscalls.py
+U Testing/Automatic/texttest/InstallTests/texttest/filter_files/batch
+U Testing/Automatic/texttest/InstallTests/texttest/filter_files/dynamic_gui
+U Testing/Automatic/texttest/InstallTests/texttest/filter_files/reconnect
+U Testing/Automatic/texttest/InstallTests/texttest/filter_files/static_gui
   adding: texttest-4.8.9/ (stored 0%)
   adding: texttest-4.8.9/source/ (stored 0%)
   adding: texttest-4.8.9/source/lib/ (stored 0%)
   adding: texttest-4.8.9/source/lib/gtkusecase.py (deflated 76%)
   adding: texttest-4.8.9/source/lib/log4py.py (deflated 75%)
   adding: texttest-4.8.9/source/lib/ndict.py (deflated 73%)
-  adding: texttest-4.8.9/source/lib/paths.py (deflated 60%)
+  adding: texttest-4.8.9/source/lib/paths.py (deflated 61%)
   adding: texttest-4.8.9/source/lib/process.py (deflated 73%)
   adding: texttest-4.8.9/source/lib/setup.py (deflated 24%)
   adding: texttest-4.8.9/source/lib/usecase.py (deflated 73%)
@@ -3889,7 +4443,6 @@ U Testing/Automatic/texttest/filter_files/static_gui
   adding: texttest-4.8.9/source/lib/traffic.py (deflated 75%)
   adding: texttest-4.8.9/source/lib/traffic_cmd.py (deflated 53%)
   adding: texttest-4.8.9/source/lib/unixonly.py (deflated 68%)
-  adding: texttest-4.8.9/source/install.py (deflated 69%)
   adding: texttest-4.8.9/source/bin/ (stored 0%)
   adding: texttest-4.8.9/source/bin/interpretcore.py (deflated 63%)
   adding: texttest-4.8.9/source/bin/texttest.py (deflated 55%)
@@ -3916,6 +4469,7 @@ U Testing/Automatic/texttest/filter_files/static_gui
   adding: texttest-4.8.9/source/layout/default_dynamic_gui.xml (deflated 66%)
   adding: texttest-4.8.9/source/layout/default_gui.xml (deflated 68%)
   adding: texttest-4.8.9/source/layout/default_static_gui.xml (deflated 81%)
+  adding: texttest-4.8.9/readme.txt (deflated 56%)
   adding: texttest-4.8.9/tests/ (stored 0%)
   adding: texttest-4.8.9/tests/Diagnostics/ (stored 0%)
   adding: texttest-4.8.9/tests/Diagnostics/log4py.conf (deflated 72%)
@@ -3963,7 +4517,7 @@ U Testing/Automatic/texttest/filter_files/static_gui
   adding: texttest-4.8.9/tests/texttest/QueueSystems/ErrorHandling/Console/BadQueueKnownBug/options.texttest (stored 0%)
   adding: texttest-4.8.9/tests/texttest/QueueSystems/ErrorHandling/Console/BadQueueKnownBug/output.texttest.lsf (deflated 52%)
   adding: texttest-4.8.9/tests/texttest/QueueSystems/ErrorHandling/Console/BadQueueKnownBug/output.texttest.sge (deflated 52%)
-  adding: texttest-4.8.9/tests/texttest/QueueSystems/ErrorHandling/Console/BadQueueKnownBug/targetReport.texttest (deflated 65%)
+  adding: texttest-4.8.9/tests/texttest/QueueSystems/ErrorHandling/Console/BadQueueKnownBug/targetReport.texttest (deflated 67%)
   adding: texttest-4.8.9/tests/texttest/QueueSystems/ErrorHandling/Console/BadQueueKnownBug/traffic.texttest.lsf (deflated 75%)
   adding: texttest-4.8.9/tests/texttest/QueueSystems/ErrorHandling/Console/BadQueueKnownBug/traffic.texttest.sge (deflated 74%)
   adding: texttest-4.8.9/tests/texttest/QueueSystems/ErrorHandling/Console/BadResource/ (stored 0%)
@@ -4448,6 +5002,8 @@ U Testing/Automatic/texttest/filter_files/static_gui
   adding: texttest-4.8.9/tests/texttest/config.texttest.lsf (deflated 51%)
   adding: texttest-4.8.9/tests/texttest/config.texttest.queuesystem (deflated 56%)
   adding: texttest-4.8.9/tests/texttest/config.texttest.sge (deflated 51%)
+  adding: texttest-4.8.9/tests/texttest/config.ttinst (deflated 48%)
+  adding: texttest-4.8.9/tests/texttest/configure_tests.py (deflated 65%)
   adding: texttest-4.8.9/tests/texttest/environment.texttest (deflated 22%)
   adding: texttest-4.8.9/tests/texttest/environment.texttest.lsf (stored 0%)
   adding: texttest-4.8.9/tests/texttest/environment.texttest.lsf.rectraffic (stored 0%)
@@ -4459,6 +5015,7 @@ U Testing/Automatic/texttest/filter_files/static_gui
   adding: texttest-4.8.9/tests/texttest/standard_console (deflated 6%)
   adding: texttest-4.8.9/tests/texttest/testsuite.texttest (deflated 39%)
   adding: texttest-4.8.9/tests/texttest/testsuite.texttest.queuesystem (deflated 22%)
+  adding: texttest-4.8.9/tests/texttest/testsuite.ttinst (deflated 5%)
   adding: texttest-4.8.9/tests/texttest/TargetApp/ (stored 0%)
   adding: texttest-4.8.9/tests/texttest/TargetApp/Test/ (stored 0%)
   adding: texttest-4.8.9/tests/texttest/TargetApp/Test/errors.hello (stored 0%)
@@ -5033,7 +5590,7 @@ U Testing/Automatic/texttest/filter_files/static_gui
   adding: texttest-4.8.9/tests/texttest/GUI/StaticGUI/Administration/ViewHelp/ (stored 0%)
   adding: texttest-4.8.9/tests/texttest/GUI/StaticGUI/Administration/ViewHelp/catalogue.texttest (deflated 9%)
   adding: texttest-4.8.9/tests/texttest/GUI/StaticGUI/Administration/ViewHelp/errors.texttest (stored 0%)
-  adding: texttest-4.8.9/tests/texttest/GUI/StaticGUI/Administration/ViewHelp/gui_log.texttest (deflated 66%)
+  adding: texttest-4.8.9/tests/texttest/GUI/StaticGUI/Administration/ViewHelp/gui_log.texttest (deflated 67%)
   adding: texttest-4.8.9/tests/texttest/GUI/StaticGUI/Administration/ViewHelp/output.texttest (deflated 30%)
   adding: texttest-4.8.9/tests/texttest/GUI/StaticGUI/Administration/ViewHelp/usecase.texttest (deflated 53%)
   adding: texttest-4.8.9/tests/texttest/GUI/StaticGUI/testsuite.texttest (deflated 37%)
@@ -5472,7 +6029,7 @@ U Testing/Automatic/texttest/filter_files/static_gui
   adding: texttest-4.8.9/tests/texttest/TestSelf/BatchTests/Console/BatchFilterFile/errors.texttest (stored 0%)
   adding: texttest-4.8.9/tests/texttest/TestSelf/BatchTests/Console/BatchFilterFile/options.texttest (stored 0%)
   adding: texttest-4.8.9/tests/texttest/TestSelf/BatchTests/Console/BatchFilterFile/output.texttest (deflated 64%)
-  adding: texttest-4.8.9/tests/texttest/TestSelf/BatchTests/Console/BatchFilterFile/targetReport.texttest (deflated 69%)
+  adding: texttest-4.8.9/tests/texttest/TestSelf/BatchTests/Console/BatchFilterFile/targetReport.texttest (deflated 70%)
   adding: texttest-4.8.9/tests/texttest/TestSelf/BatchTests/Console/testsuite.texttest (deflated 52%)
   adding: texttest-4.8.9/tests/texttest/TestSelf/BatchTests/Console/BatchRejectVersion/ (stored 0%)
   adding: texttest-4.8.9/tests/texttest/TestSelf/BatchTests/Console/BatchRejectVersion/personaldir/ (stored 0%)
@@ -5531,21 +6088,19 @@ U Testing/Automatic/texttest/filter_files/static_gui
   adding: texttest-4.8.9/tests/texttest/TestSelf/BatchTests/Console/NoSuchSender/ (stored 0%)
   adding: texttest-4.8.9/tests/texttest/TestSelf/BatchTests/Console/NoSuchSender/personaldir/ (stored 0%)
   adding: texttest-4.8.9/tests/texttest/TestSelf/BatchTests/Console/NoSuchSender/personaldir/config (stored 0%)
-  adding: texttest-4.8.9/tests/texttest/TestSelf/BatchTests/Console/NoSuchSender/catalogue.texttest (deflated 78%)
+  adding: texttest-4.8.9/tests/texttest/TestSelf/BatchTests/Console/NoSuchSender/catalogue.texttest (deflated 79%)
   adding: texttest-4.8.9/tests/texttest/TestSelf/BatchTests/Console/NoSuchSender/errors.texttest (stored 0%)
   adding: texttest-4.8.9/tests/texttest/TestSelf/BatchTests/Console/NoSuchSender/interceptor.py (deflated 38%)
   adding: texttest-4.8.9/tests/texttest/TestSelf/BatchTests/Console/NoSuchSender/options.texttest (stored 0%)
   adding: texttest-4.8.9/tests/texttest/TestSelf/BatchTests/Console/NoSuchSender/output.texttest (deflated 65%)
-  adding: texttest-4.8.9/tests/texttest/TestSelf/BatchTests/Console/NoSuchSender/targetReport.texttest (deflated 73%)
   adding: texttest-4.8.9/tests/texttest/TestSelf/BatchTests/Console/NoSuchServer/ (stored 0%)
   adding: texttest-4.8.9/tests/texttest/TestSelf/BatchTests/Console/NoSuchServer/personaldir/ (stored 0%)
   adding: texttest-4.8.9/tests/texttest/TestSelf/BatchTests/Console/NoSuchServer/personaldir/config (deflated 11%)
-  adding: texttest-4.8.9/tests/texttest/TestSelf/BatchTests/Console/NoSuchServer/catalogue.texttest (deflated 78%)
+  adding: texttest-4.8.9/tests/texttest/TestSelf/BatchTests/Console/NoSuchServer/catalogue.texttest (deflated 79%)
   adding: texttest-4.8.9/tests/texttest/TestSelf/BatchTests/Console/NoSuchServer/errors.texttest (stored 0%)
   adding: texttest-4.8.9/tests/texttest/TestSelf/BatchTests/Console/NoSuchServer/interceptor.py (deflated 26%)
   adding: texttest-4.8.9/tests/texttest/TestSelf/BatchTests/Console/NoSuchServer/options.texttest (stored 0%)
   adding: texttest-4.8.9/tests/texttest/TestSelf/BatchTests/Console/NoSuchServer/output.texttest (deflated 65%)
-  adding: texttest-4.8.9/tests/texttest/TestSelf/BatchTests/Console/NoSuchServer/targetReport.texttest (deflated 73%)
   adding: texttest-4.8.9/tests/texttest/TestSelf/BatchTests/Console/OneAppNoTests/ (stored 0%)
   adding: texttest-4.8.9/tests/texttest/TestSelf/BatchTests/Console/OneAppNoTests/catalogue.texttest (deflated 79%)
   adding: texttest-4.8.9/tests/texttest/TestSelf/BatchTests/Console/OneAppNoTests/errors.texttest (deflated 9%)
@@ -6273,9 +6828,11 @@ U Testing/Automatic/texttest/filter_files/static_gui
   adding: texttest-4.8.9/tests/texttest/TestSelf/DiagnosticHandling/TargetApp/TestWithDiag/output.diag (stored 0%)
   adding: texttest-4.8.9/tests/texttest/TestSelf/DiagnosticHandling/TargetApp/TestWithDiag/second.diag.tmp (stored 0%)
   adding: texttest-4.8.9/tests/texttest/TestSelf/DiagnosticHandling/TargetApp/source/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/TestSelf/DiagnosticHandling/TargetApp/source/.cvsignore (stored 0%)
   adding: texttest-4.8.9/tests/texttest/TestSelf/DiagnosticHandling/TargetApp/source/DiagnosticWriter.class (deflated 43%)
   adding: texttest-4.8.9/tests/texttest/TestSelf/DiagnosticHandling/TargetApp/source/DiagnosticWriter.java (deflated 64%)
   adding: texttest-4.8.9/tests/texttest/TestSelf/DiagnosticHandling/TargetApp/source/log4j.jar (deflated 10%)
+  adding: texttest-4.8.9/tests/texttest/TestSelf/DiagnosticHandling/TargetApp/source/log4py.py (deflated 75%)
   adding: texttest-4.8.9/tests/texttest/TestSelf/DiagnosticHandling/TargetApp/source/writediags.py (deflated 53%)
   adding: texttest-4.8.9/tests/texttest/TestSelf/Documentation/ (stored 0%)
   adding: texttest-4.8.9/tests/texttest/TestSelf/Documentation/ConfigFileReset/ (stored 0%)
@@ -7516,7 +8073,7 @@ U Testing/Automatic/texttest/filter_files/static_gui
   adding: texttest-4.8.9/tests/texttest/TestSelf/PerformanceTests/Console/RegisterFailure/input.texttest (stored 0%)
   adding: texttest-4.8.9/tests/texttest/TestSelf/PerformanceTests/Console/RegisterFailure/output.texttest (deflated 72%)
   adding: texttest-4.8.9/tests/texttest/TestSelf/PerformanceTests/Console/RegisterFailureBatch/ (stored 0%)
-  adding: texttest-4.8.9/tests/texttest/TestSelf/PerformanceTests/Console/RegisterFailureBatch/catalogue.texttest (deflated 87%)
+  adding: texttest-4.8.9/tests/texttest/TestSelf/PerformanceTests/Console/RegisterFailureBatch/catalogue.texttest (deflated 88%)
   adding: texttest-4.8.9/tests/texttest/TestSelf/PerformanceTests/Console/RegisterFailureBatch/errors.texttest (stored 0%)
   adding: texttest-4.8.9/tests/texttest/TestSelf/PerformanceTests/Console/RegisterFailureBatch/options.texttest (stored 0%)
   adding: texttest-4.8.9/tests/texttest/TestSelf/PerformanceTests/Console/RegisterFailureBatch/output.texttest (deflated 71%)
@@ -8589,16 +9146,706 @@ U Testing/Automatic/texttest/filter_files/static_gui
   adding: texttest-4.8.9/tests/texttest/filter_files/reconnect (deflated 3%)
   adding: texttest-4.8.9/tests/texttest/filter_files/static_gui (stored 0%)
   adding: texttest-4.8.9/tests/texttest/InstallTests/ (stored 0%)
-cvs -d /carm/2_CVS/ export -D 2007-04-24 Testing/TextTest
-cvs -d /carm/2_CVS/ export -D 2007-04-24 Testing/PyUseCase
-cvs -d /carm/2_CVS/ export -D 2007-04-24 Testing/Automatic/Diagnostics
-cvs -d /carm/2_CVS/ export -D 2007-04-24 -l Testing/Automatic/texttest
-cvs -d /carm/2_CVS/ export -D 2007-04-24 Testing/Automatic/texttest/QueueSystems
-cvs -d /carm/2_CVS/ export -D 2007-04-24 Testing/Automatic/texttest/TargetApp
-cvs -d /carm/2_CVS/ export -D 2007-04-24 Testing/Automatic/texttest/GUI
-cvs -d /carm/2_CVS/ export -D 2007-04-24 Testing/Automatic/texttest/TestSelf
-cvs -d /carm/2_CVS/ export -D 2007-04-24 Testing/Automatic/texttest/filter_files
-cvs -d /carm/2_CVS/ export -D 2007-04-24 Testing/Automatic/texttest/InstallTests
+  adding: texttest-4.8.9/tests/texttest/InstallTests/BasicUnix/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/BasicUnix/catalogue.ttinst (deflated 84%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/BasicUnix/configintercept.py (deflated 21%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/BasicUnix/errors.ttinst (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/BasicUnix/gtk.py (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/BasicUnix/options.ttinst (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/BasicUnix/output.ttinst (deflated 72%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/BasicUnix/traffic.ttinst (deflated 40%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/configintercept.py (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/gtk.py (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/testsuite.ttinst (deflated 37%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/Jeppesen/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/Jeppesen/catalogue.ttinst (deflated 42%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/Jeppesen/errors.ttinst (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/Jeppesen/options.ttinst (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/Jeppesen/output.ttinst (deflated 32%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/Jeppesen/traffic.ttinst (deflated 68%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/NoCheckout/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/NoCheckout/catalogue.ttinst (deflated 10%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/NoCheckout/errors.ttinst (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/NoCheckout/output.ttinst (deflated 16%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/Windows/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/Windows/catalogue.ttinst (deflated 89%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/Windows/configintercept.py (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/Windows/errors.ttinst (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/Windows/options.ttinst (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/Windows/output.ttinst (deflated 89%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/GUI/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/GUI/QuitConfirmation/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/GUI/QuitConfirmation/AllStatic/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/GUI/QuitConfirmation/AllStatic/personaldir/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/GUI/QuitConfirmation/AllStatic/personaldir/config (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/GUI/QuitConfirmation/AllStatic/catalogue.texttest (deflated 7%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/GUI/QuitConfirmation/AllStatic/dynamic_gui_log.texttest (deflated 72%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/GUI/QuitConfirmation/AllStatic/dynamic_usecase.texttest (deflated 2%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/GUI/QuitConfirmation/AllStatic/errors.texttest (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/GUI/QuitConfirmation/AllStatic/gui_log.texttest (deflated 76%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/GUI/QuitConfirmation/AllStatic/options.texttest (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/GUI/QuitConfirmation/AllStatic/output.texttest (deflated 35%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/GUI/QuitConfirmation/AllStatic/usecase.texttest (deflated 42%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/GUI/QuitConfirmation/testsuite.texttest (deflated 34%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/GUI/QuitConfirmation/DynamicFromStatic/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/GUI/QuitConfirmation/DynamicFromStatic/personaldir/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/GUI/QuitConfirmation/DynamicFromStatic/personaldir/config (deflated 13%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/GUI/QuitConfirmation/DynamicFromStatic/catalogue.texttest (deflated 7%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/GUI/QuitConfirmation/DynamicFromStatic/dynamic_gui_log.texttest (deflated 72%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/GUI/QuitConfirmation/DynamicFromStatic/dynamic_usecase.texttest (deflated 2%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/GUI/QuitConfirmation/DynamicFromStatic/errors.texttest (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/GUI/QuitConfirmation/DynamicFromStatic/gui_log.texttest (deflated 76%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/GUI/QuitConfirmation/DynamicFromStatic/options.texttest (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/GUI/QuitConfirmation/DynamicFromStatic/output.texttest (deflated 36%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/GUI/QuitConfirmation/DynamicFromStatic/usecase.texttest (deflated 42%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/GUI/QuitConfirmation/MultipleDynamic/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/GUI/QuitConfirmation/MultipleDynamic/personaldir/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/GUI/QuitConfirmation/MultipleDynamic/personaldir/config (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/GUI/QuitConfirmation/MultipleDynamic/catalogue.texttest (deflated 7%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/GUI/QuitConfirmation/MultipleDynamic/dynamic_gui_log.texttest (deflated 75%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/GUI/QuitConfirmation/MultipleDynamic/errors.texttest (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/GUI/QuitConfirmation/MultipleDynamic/options.texttest (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/GUI/QuitConfirmation/MultipleDynamic/output.texttest (deflated 45%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/GUI/QuitConfirmation/MultipleDynamic/usecase.texttest (deflated 52%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/GUI/testsuite.texttest (deflated 42%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/config.texttest (deflated 66%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/config.texttest.lsf (deflated 51%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/config.texttest.queuesystem (deflated 56%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/config.texttest.sge (deflated 51%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/environment.texttest (deflated 22%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/environment.texttest.lsf (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/environment.texttest.lsf.rectraffic (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/environment.texttest.sge (deflated 16%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/interceptor.py (deflated 41%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/knownbugs.texttest (deflated 69%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/locktargetdata.py (deflated 45%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/logging.texttest (deflated 73%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/standard_console (deflated 6%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/testsuite.texttest (deflated 39%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/testsuite.texttest.queuesystem (deflated 22%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/Console/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/Console/JobDeletionFails/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/Console/JobDeletionFails/catalogue.texttest (deflated 55%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/Console/JobDeletionFails/errors.texttest (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/Console/JobDeletionFails/options.texttest (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/Console/JobDeletionFails/output.texttest.lsf (deflated 89%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/Console/JobDeletionFails/output.texttest.sge (deflated 89%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/Console/JobDeletionFails/targetReport.texttest.lsf (deflated 64%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/Console/JobDeletionFails/targetReport.texttest.sge (deflated 64%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/Console/JobDeletionFails/traffic.texttest.lsf (deflated 52%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/Console/JobDeletionFails/traffic.texttest.sge (deflated 50%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/Console/JobDeletionFails/usecase.texttest (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/Console/JobDeletionFails/usecase_log.texttest (deflated 32%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/Console/testsuite.texttest (deflated 49%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/Console/JobDisappears/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/Console/JobDisappears/catalogue.texttest (deflated 39%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/Console/JobDisappears/errors.texttest (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/Console/JobDisappears/interceptor.py (deflated 14%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/Console/JobDisappears/options.texttest (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/Console/JobDisappears/output.texttest (deflated 41%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/Console/JobDisappears/output.texttest.sge (deflated 63%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/Console/JobDisappears/targetReport.texttest.lsf (deflated 63%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/Console/JobDisappears/targetReport.texttest.sge (deflated 61%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/Console/JobDisappears/traffic.texttest.lsf (deflated 54%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/Console/JobDisappears/traffic.texttest.sge (deflated 72%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/Console/JobDisappears/usecase.texttest (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/Console/JobDisappears/usecase_log.texttest (deflated 37%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/Console/JobDisappearsAfterStart/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/Console/JobDisappearsAfterStart/catalogue.texttest (deflated 55%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/Console/JobDisappearsAfterStart/errors.texttest (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/Console/JobDisappearsAfterStart/options.texttest (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/Console/JobDisappearsAfterStart/output.texttest (deflated 41%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/Console/JobDisappearsAfterStart/output.texttest.sge (deflated 41%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/Console/JobDisappearsAfterStart/targetReport.texttest.lsf (deflated 63%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/Console/JobDisappearsAfterStart/targetReport.texttest.sge (deflated 63%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/Console/JobDisappearsAfterStart/traffic.texttest.lsf (deflated 52%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/Console/JobDisappearsAfterStart/traffic.texttest.sge (deflated 50%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/Console/JobDisappearsAfterStart/usecase.texttest (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/Console/JobDisappearsAfterStart/usecase_log.texttest (deflated 32%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/testsuite.texttest (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/testsuite.texttest.sge (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/GUI/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/GUI/QuitDuringSetup/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/GUI/QuitDuringSetup/TargetApp/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/GUI/QuitDuringSetup/TargetApp/Suite1/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/GUI/QuitDuringSetup/TargetApp/Suite1/Test1/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/GUI/QuitDuringSetup/TargetApp/Suite1/Test1/errors.hello (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/GUI/QuitDuringSetup/TargetApp/Suite1/Test1/output.hello (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/GUI/QuitDuringSetup/TargetApp/Suite1/testsuite.hello (deflated 8%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/GUI/QuitDuringSetup/TargetApp/Suite1/Test2/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/GUI/QuitDuringSetup/TargetApp/Suite1/Test2/errors.hello (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/GUI/QuitDuringSetup/TargetApp/Suite1/Test2/output.hello (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/GUI/QuitDuringSetup/TargetApp/config.hello (deflated 16%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/GUI/QuitDuringSetup/TargetApp/hello.py (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/GUI/QuitDuringSetup/TargetApp/testsuite.hello (deflated 23%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/GUI/QuitDuringSetup/TargetApp/Suite2/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/GUI/QuitDuringSetup/TargetApp/Suite2/Test2/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/GUI/QuitDuringSetup/TargetApp/Suite2/Test2/errors.hello (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/GUI/QuitDuringSetup/TargetApp/Suite2/Test2/output.hello (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/GUI/QuitDuringSetup/TargetApp/Suite2/testsuite.hello (deflated 4%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/GUI/QuitDuringSetup/bkill (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/GUI/QuitDuringSetup/bsub (deflated 7%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/GUI/QuitDuringSetup/catalogue.texttest (deflated 7%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/GUI/QuitDuringSetup/dynamic_gui_log.texttest.lsf (deflated 70%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/GUI/QuitDuringSetup/dynamic_gui_log.texttest.sge (deflated 70%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/GUI/QuitDuringSetup/errors.texttest (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/GUI/QuitDuringSetup/output.texttest.lsf (deflated 53%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/GUI/QuitDuringSetup/output.texttest.sge (deflated 53%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/GUI/QuitDuringSetup/qdel (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/GUI/QuitDuringSetup/qsub (deflated 8%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/GUI/QuitDuringSetup/usecase.texttest (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/GUI/testsuite.texttest (deflated 10%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/LsfOnly/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/LsfOnly/BadResourceUsage/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/LsfOnly/BadResourceUsage/catalogue.texttest (deflated 7%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/LsfOnly/BadResourceUsage/errors.texttest (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/LsfOnly/BadResourceUsage/options.texttest (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/LsfOnly/BadResourceUsage/output.texttest (deflated 40%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/LsfOnly/BadResourceUsage/traffic.texttest.lsf (deflated 54%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/LsfOnly/testsuite.texttest (deflated 9%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/SgeOnly/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/SgeOnly/JobInOldAcctFile/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/SgeOnly/JobInOldAcctFile/catalogue.texttest (deflated 39%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/SgeOnly/JobInOldAcctFile/errors.texttest (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/SgeOnly/JobInOldAcctFile/options.texttest (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/SgeOnly/JobInOldAcctFile/output.texttest (deflated 49%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/SgeOnly/JobInOldAcctFile/output.texttest.sge (deflated 41%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/SgeOnly/JobInOldAcctFile/qacct (deflated 37%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/SgeOnly/JobInOldAcctFile/qdel (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/SgeOnly/JobInOldAcctFile/qsub (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/SgeOnly/JobInOldAcctFile/targetReport.texttest.sge (deflated 62%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/SgeOnly/JobInOldAcctFile/traffic.texttest.sge (deflated 58%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/SgeOnly/JobInOldAcctFile/usecase.texttest (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/SgeOnly/JobInOldAcctFile/usecase_log.texttest (deflated 37%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/ErrorHandling/SgeOnly/testsuite.texttest (deflated 1%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/testsuite.texttest (deflated 44%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/TargetApp/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/TargetApp/123Test/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/TargetApp/123Test/options.sleep (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/TargetApp/busywait.py (deflated 24%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/TargetApp/config.sleep (deflated 25%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/TargetApp/config.sleep.badperfarch (deflated 2%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/TargetApp/config.sleep.badperfmachine (deflated 34%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/TargetApp/config.sleep.badperfmodel (deflated 4%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/TargetApp/config.sleep.badqueue (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/TargetApp/config.sleep.cpulimit (deflated 5%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/TargetApp/config.sleep.parallel (deflated 45%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/TargetApp/config.sleep.parallel.oneperf (deflated 20%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/TargetApp/environment.sleep (deflated 38%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/TargetApp/environment.sleep.badresource (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/TargetApp/environment.sleep.badresusage (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/TargetApp/environment.sleep.parallel (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/TargetApp/knownbugs.sleep.kb (deflated 30%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/TargetApp/sleep.py (deflated 39%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/TargetApp/testsuite.sleep (deflated 6%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/TargetApp/testsuite.sleep.startdigit (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/TargetApp/Basic/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/TargetApp/Basic/errors.sleep (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/TargetApp/Basic/options.sleep (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/TargetApp/Basic/options.sleep.killing (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/TargetApp/Basic/options.sleep.killing2 (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/TargetApp/Basic/options.sleep.killing3 (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/TargetApp/Basic/output.sleep (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/TargetApp/Basic/output.sleep.cpulimit (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/TargetApp/Basic2/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/QueueSystems/TargetApp/Basic2/options.sleep (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TargetApp/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TargetApp/Test/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TargetApp/Test/errors.hello (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TargetApp/Test/output.hello (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TargetApp/config.hello (deflated 11%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TargetApp/hello.py (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TargetApp/testsuite.hello (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/RunningTests/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/RunningTests/GUI/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/RunningTests/GUI/FileSelection/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/RunningTests/GUI/FileSelection/personaldir/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/RunningTests/GUI/FileSelection/personaldir/config (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/RunningTests/GUI/FileSelection/catalogue.texttest (deflated 7%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/RunningTests/GUI/FileSelection/dynamic_gui_log.texttest (deflated 77%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/RunningTests/GUI/FileSelection/environment.texttest (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/RunningTests/GUI/FileSelection/errors.texttest (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/RunningTests/GUI/FileSelection/output.texttest (deflated 55%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/RunningTests/GUI/FileSelection/usecase.texttest (deflated 54%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/RunningTests/GUI/testsuite.texttest (deflated 44%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/RunningTests/GUI/CollapseWhileRunning/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/RunningTests/GUI/CollapseWhileRunning/personaldir/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/RunningTests/GUI/CollapseWhileRunning/personaldir/config (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/RunningTests/GUI/CollapseWhileRunning/catalogue.texttest (deflated 7%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/RunningTests/GUI/CollapseWhileRunning/dynamic_gui_log.texttest (deflated 74%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/RunningTests/GUI/CollapseWhileRunning/environment.texttest (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/RunningTests/GUI/CollapseWhileRunning/errors.texttest (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/RunningTests/GUI/CollapseWhileRunning/output.texttest (deflated 48%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/RunningTests/GUI/CollapseWhileRunning/usecase.texttest (deflated 38%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/RunningTests/GUI/CompareWhileRunning/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/RunningTests/GUI/CompareWhileRunning/catalogue.texttest (deflated 7%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/RunningTests/GUI/CompareWhileRunning/dynamic_gui_log.texttest (deflated 75%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/RunningTests/GUI/CompareWhileRunning/errors.texttest (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/RunningTests/GUI/CompareWhileRunning/output.texttest (deflated 45%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/RunningTests/GUI/CompareWhileRunning/usecase.texttest (deflated 47%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/RunningTests/GUI/HideNotStarted/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/RunningTests/GUI/HideNotStarted/catalogue.texttest (deflated 7%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/RunningTests/GUI/HideNotStarted/dynamic_gui_log.texttest (deflated 73%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/RunningTests/GUI/HideNotStarted/errors.texttest (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/RunningTests/GUI/HideNotStarted/output.texttest (deflated 38%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/RunningTests/GUI/HideNotStarted/usecase.texttest (deflated 48%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/RunningTests/GUI/ViewRunningTest/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/RunningTests/GUI/ViewRunningTest/catalogue.texttest (deflated 7%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/RunningTests/GUI/ViewRunningTest/dynamic_gui_log.texttest (deflated 73%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/RunningTests/GUI/ViewRunningTest/errors.texttest (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/RunningTests/GUI/ViewRunningTest/output.texttest (deflated 45%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/RunningTests/GUI/ViewRunningTest/usecase.texttest (deflated 48%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/RunningTests/testsuite.texttest (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/RunningTests/TargetApp/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/RunningTests/TargetApp/Basic/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/RunningTests/TargetApp/Basic/errors.sleep (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/RunningTests/TargetApp/Basic/output.sleep (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/RunningTests/TargetApp/config.sleep (deflated 4%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/RunningTests/TargetApp/sleep.py (deflated 32%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/RunningTests/TargetApp/testsuite.sleep (deflated 5%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/RunningTests/TargetApp/Basic2/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/RunningTests/TargetApp/Basic2/errors.sleep (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/RunningTests/TargetApp/Basic2/output.sleep (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/RunningTests/TargetApp/Suite/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/RunningTests/TargetApp/Suite/Basic3/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/RunningTests/TargetApp/Suite/Basic3/errors.sleep (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/RunningTests/TargetApp/Suite/Basic3/output.sleep (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/RunningTests/TargetApp/Suite/testsuite.sleep (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/RunningTests/UnixOnly/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/RunningTests/UnixOnly/KillTest/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/RunningTests/UnixOnly/KillTest/catalogue.texttest (deflated 7%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/RunningTests/UnixOnly/KillTest/errors.texttest (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/RunningTests/UnixOnly/KillTest/options.texttest (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/RunningTests/UnixOnly/KillTest/output.texttest (deflated 38%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/RunningTests/UnixOnly/KillTest/usecase.texttest (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/RunningTests/UnixOnly/KillTest/usecase_log.texttest (deflated 33%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/RunningTests/UnixOnly/testsuite.texttest (deflated 33%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/testsuite.texttest (deflated 56%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/testsuite.texttest.queuesystem (deflated 27%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/Console/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/Console/DiagFailure/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/Console/DiagFailure/catalogue.texttest (deflated 7%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/Console/DiagFailure/errors.texttest (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/Console/DiagFailure/input.texttest (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/Console/DiagFailure/options.texttest (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/Console/DiagFailure/output.texttest (deflated 59%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/Console/testsuite.texttest (deflated 30%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/Console/DiagFailureJava/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/Console/DiagFailureJava/catalogue.texttest (deflated 7%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/Console/DiagFailureJava/errors.texttest (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/Console/DiagFailureJava/input.texttest (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/Console/DiagFailureJava/options.texttest (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/Console/DiagFailureJava/output.texttest (deflated 65%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/Console/TraceLevel/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/Console/TraceLevel/catalogue.texttest (deflated 7%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/Console/TraceLevel/errors.texttest (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/Console/TraceLevel/input.texttest (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/Console/TraceLevel/options.texttest (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/Console/TraceLevel/output.texttest (deflated 49%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/testsuite.texttest (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/GUI/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/GUI/CopyTests/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/GUI/CopyTests/catalogue.texttest (deflated 69%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/GUI/CopyTests/errors.texttest (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/GUI/CopyTests/gui_log.texttest (deflated 85%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/GUI/CopyTests/options.texttest (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/GUI/CopyTests/output.texttest (deflated 29%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/GUI/CopyTests/rootTestSuite.texttest (deflated 55%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/GUI/CopyTests/usecase.texttest (deflated 48%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/GUI/testsuite.texttest (deflated 49%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/GUI/DiagFailure/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/GUI/DiagFailure/catalogue.texttest (deflated 51%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/GUI/DiagFailure/dynamic_gui_log.texttest (deflated 79%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/GUI/DiagFailure/errors.texttest (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/GUI/DiagFailure/options.texttest (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/GUI/DiagFailure/output.texttest (deflated 47%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/GUI/DiagFailure/usecase.texttest (deflated 41%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/GUI/DiagNoFile/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/GUI/DiagNoFile/TargetApp/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/GUI/DiagNoFile/TargetApp/Test/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/GUI/DiagNoFile/TargetApp/Test/errors.diag (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/GUI/DiagNoFile/TargetApp/Test/output.diag (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/GUI/DiagNoFile/TargetApp/config.diag (deflated 24%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/GUI/DiagNoFile/TargetApp/testsuite.diag (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/GUI/DiagNoFile/TargetApp/source/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/GUI/DiagNoFile/TargetApp/source/writediags.py (deflated 1%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/GUI/DiagNoFile/catalogue.texttest (deflated 7%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/GUI/DiagNoFile/dynamic_gui_log.texttest (deflated 72%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/GUI/DiagNoFile/errors.texttest (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/GUI/DiagNoFile/output.texttest (deflated 45%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/GUI/DiagNoFile/usecase.texttest (deflated 2%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/GUI/DiagOnPermanently/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/GUI/DiagOnPermanently/catalogue.texttest (deflated 7%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/GUI/DiagOnPermanently/dynamic_gui_log.texttest (deflated 75%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/GUI/DiagOnPermanently/errors.texttest (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/GUI/DiagOnPermanently/knownbugs.texttest (deflated 9%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/GUI/DiagOnPermanently/options.texttest (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/GUI/DiagOnPermanently/output.texttest (deflated 46%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/GUI/DiagOnPermanently/usecase.texttest (deflated 2%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/GUI/EnableDiagnostics/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/GUI/EnableDiagnostics/catalogue.texttest (deflated 31%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/GUI/EnableDiagnostics/errors.texttest (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/GUI/EnableDiagnostics/gui_log.texttest (deflated 79%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/GUI/EnableDiagnostics/options.texttest (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/GUI/EnableDiagnostics/output.texttest (deflated 37%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/GUI/EnableDiagnostics/usecase.texttest (deflated 46%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/GUI/TempDiagOnPermanent/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/GUI/TempDiagOnPermanent/catalogue.texttest (deflated 7%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/GUI/TempDiagOnPermanent/dynamic_gui_log.texttest (deflated 74%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/GUI/TempDiagOnPermanent/errors.texttest (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/GUI/TempDiagOnPermanent/options.texttest (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/GUI/TempDiagOnPermanent/output.texttest (deflated 46%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/GUI/TempDiagOnPermanent/usecase.texttest (deflated 2%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/TargetApp/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/TargetApp/Test/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/TargetApp/Test/errors.diag (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/TargetApp/Test/options.diag (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/TargetApp/Test/output.diag (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/TargetApp/config.diag (deflated 28%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/TargetApp/config.diag.java (deflated 32%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/TargetApp/environment.diag.java (deflated 28%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/TargetApp/logging.diag (deflated 56%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/TargetApp/logging.diag.java (deflated 64%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/TargetApp/testsuite.diag (deflated 22%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/TargetApp/TestAlwaysDiag/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/TargetApp/TestAlwaysDiag/errors.diag (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/TargetApp/TestAlwaysDiag/first.diag (deflated 19%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/TargetApp/TestAlwaysDiag/first.diag.dummy (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/TargetApp/TestAlwaysDiag/logging.diag (deflated 56%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/TargetApp/TestAlwaysDiag/logging.diag.tmp (deflated 56%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/TargetApp/TestAlwaysDiag/options.diag (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/TargetApp/TestAlwaysDiag/output.diag (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/TargetApp/TestAlwaysDiag/second.diag (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/TargetApp/TestAlwaysDiag/third.diag (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/TargetApp/TestWithDiag/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/TargetApp/TestWithDiag/errors.diag (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/TargetApp/TestWithDiag/first.diag.tmp (deflated 22%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/TargetApp/TestWithDiag/first.diag.tmp.dummy (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/TargetApp/TestWithDiag/logging.diag.java.tmp (deflated 71%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/TargetApp/TestWithDiag/logging.diag.tmp (deflated 56%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/TargetApp/TestWithDiag/options.diag (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/TargetApp/TestWithDiag/output.diag (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/DiagnosticHandling/TargetApp/TestWithDiag/second.diag.tmp (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/Console/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/Console/CopyTestPath/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/Console/CopyTestPath/catalogue.texttest (deflated 74%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/Console/CopyTestPath/errors.texttest (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/Console/CopyTestPath/options.texttest (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/Console/CopyTestPath/output.texttest (deflated 44%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/Console/testsuite.texttest (deflated 57%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/Console/CopyEnvironmentPath/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/Console/CopyEnvironmentPath/catalogue.texttest (deflated 7%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/Console/CopyEnvironmentPath/errors.texttest (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/Console/CopyEnvironmentPath/input.texttest (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/Console/CopyEnvironmentPath/options.texttest (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/Console/CopyEnvironmentPath/output.texttest (deflated 55%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/Console/IgnoreDataChanges/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/Console/IgnoreDataChanges/personaldir/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/Console/IgnoreDataChanges/personaldir/config (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/Console/IgnoreDataChanges/catalogue.texttest (deflated 74%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/Console/IgnoreDataChanges/errors.texttest (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/Console/IgnoreDataChanges/input.texttest (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/Console/IgnoreDataChanges/options.texttest (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/Console/IgnoreDataChanges/output.texttest (deflated 53%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/Console/MissingEnvironmentPath/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/Console/MissingEnvironmentPath/catalogue.texttest (deflated 7%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/Console/MissingEnvironmentPath/environment.texttest (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/Console/MissingEnvironmentPath/errors.texttest (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/Console/MissingEnvironmentPath/input.texttest (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/Console/MissingEnvironmentPath/options.texttest (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/Console/MissingEnvironmentPath/output.texttest (deflated 55%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/Console/SearchPath/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/Console/SearchPath/personaldir/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/Console/SearchPath/personaldir/somedir/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/Console/SearchPath/personaldir/somedir/readonlyfile2 (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/Console/SearchPath/catalogue.texttest (deflated 7%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/Console/SearchPath/errors.texttest (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/Console/SearchPath/input.texttest (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/Console/SearchPath/options.texttest (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/Console/SearchPath/output.texttest (deflated 63%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/Console/SearchPathFromEnv/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/Console/SearchPathFromEnv/personaldir/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/Console/SearchPathFromEnv/personaldir/my_personal_file (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/Console/SearchPathFromEnv/catalogue.texttest (deflated 53%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/Console/SearchPathFromEnv/errors.texttest (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/Console/SearchPathFromEnv/input.texttest (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/Console/SearchPathFromEnv/options.texttest (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/Console/SearchPathFromEnv/output.texttest (deflated 59%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/Console/SearchPathPresetEnv/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/Console/SearchPathPresetEnv/personaldir/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/Console/SearchPathPresetEnv/personaldir/my_personal_file (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/Console/SearchPathPresetEnv/catalogue.texttest (deflated 53%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/Console/SearchPathPresetEnv/environment.texttest (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/Console/SearchPathPresetEnv/errors.texttest (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/Console/SearchPathPresetEnv/input.texttest (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/Console/SearchPathPresetEnv/options.texttest (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/Console/SearchPathPresetEnv/output.texttest (deflated 59%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/Console/TestPathInSubDir/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/Console/TestPathInSubDir/catalogue.texttest (deflated 7%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/Console/TestPathInSubDir/errors.texttest (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/Console/TestPathInSubDir/input.texttest (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/Console/TestPathInSubDir/options.texttest (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/Console/TestPathInSubDir/output.texttest (deflated 50%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/testsuite.texttest (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/testsuite.texttest.queuesystem (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/GUI/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/GUI/CopyTest/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/GUI/CopyTest/catalogue.texttest (deflated 72%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/GUI/CopyTest/errors.texttest (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/GUI/CopyTest/gui_log.texttest (deflated 83%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/GUI/CopyTest/options.texttest (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/GUI/CopyTest/output.texttest (deflated 28%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/GUI/CopyTest/rootTestSuite.texttest (deflated 40%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/GUI/CopyTest/usecase.texttest (deflated 13%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/GUI/testsuite.texttest (deflated 48%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/GUI/CopyTestPermission/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/GUI/CopyTestPermission/TargetApp/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/GUI/CopyTestPermission/TargetApp/PrintPermissions/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/GUI/CopyTestPermission/TargetApp/PrintPermissions/errors.printperm (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/GUI/CopyTestPermission/TargetApp/PrintPermissions/fake_executable.py (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/GUI/CopyTestPermission/TargetApp/PrintPermissions/output.printperm (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/GUI/CopyTestPermission/TargetApp/config.printperm (deflated 6%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/GUI/CopyTestPermission/TargetApp/printpermissions.py (deflated 28%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/GUI/CopyTestPermission/TargetApp/testsuite.printperm (deflated 13%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/GUI/CopyTestPermission/catalogue.texttest (deflated 49%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/GUI/CopyTestPermission/dynamic_gui_log.texttest (deflated 74%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/GUI/CopyTestPermission/dynamic_usecase.texttest (deflated 2%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/GUI/CopyTestPermission/errors.texttest (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/GUI/CopyTestPermission/gui_log.texttest (deflated 82%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/GUI/CopyTestPermission/options.texttest (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/GUI/CopyTestPermission/output.texttest (deflated 30%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/GUI/CopyTestPermission/rootTestSuite.texttest (deflated 51%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/GUI/CopyTestPermission/usecase.texttest (deflated 40%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/GUI/CreateDataDirectory/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/GUI/CreateDataDirectory/personaldir/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/GUI/CreateDataDirectory/personaldir/config (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/GUI/CreateDataDirectory/catalogue.texttest (deflated 20%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/GUI/CreateDataDirectory/errors.texttest (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/GUI/CreateDataDirectory/gui_log.texttest (deflated 78%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/GUI/CreateDataDirectory/options.texttest (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/GUI/CreateDataDirectory/output.texttest (deflated 27%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/GUI/CreateDataDirectory/usecase.texttest (deflated 31%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/GUI/CreateDataFiles/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/GUI/CreateDataFiles/catalogue.texttest (deflated 52%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/GUI/CreateDataFiles/errors.texttest (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/GUI/CreateDataFiles/gui_log.texttest (deflated 80%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/GUI/CreateDataFiles/options.texttest (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/GUI/CreateDataFiles/output.texttest (deflated 40%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/GUI/CreateDataFiles/usecase.texttest (deflated 65%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/GUI/OverwriteFileRootSuite/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/GUI/OverwriteFileRootSuite/catalogue.texttest (deflated 9%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/GUI/OverwriteFileRootSuite/errors.texttest (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/GUI/OverwriteFileRootSuite/gui_log.texttest (deflated 76%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/GUI/OverwriteFileRootSuite/options.texttest (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/GUI/OverwriteFileRootSuite/output.texttest (deflated 27%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/GUI/OverwriteFileRootSuite/usecase.texttest (deflated 28%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/GUI/ReservedNames/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/GUI/ReservedNames/TargetApp/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/GUI/ReservedNames/TargetApp/Test/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/GUI/ReservedNames/TargetApp/Test/testsuite.data (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/GUI/ReservedNames/TargetApp/config.hello (deflated 23%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/GUI/ReservedNames/TargetApp/hello.py (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/GUI/ReservedNames/TargetApp/options.data (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/GUI/ReservedNames/TargetApp/testsuite.hello (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/GUI/ReservedNames/catalogue.texttest (deflated 9%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/GUI/ReservedNames/errors.texttest (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/GUI/ReservedNames/gui_log.texttest (deflated 78%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/GUI/ReservedNames/output.texttest (deflated 34%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/GUI/ReservedNames/usecase.texttest (deflated 52%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/GUI/ViewDataFiles/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/GUI/ViewDataFiles/catalogue.texttest (deflated 9%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/GUI/ViewDataFiles/errors.texttest (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/GUI/ViewDataFiles/gui_log.texttest (deflated 80%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/GUI/ViewDataFiles/options.texttest (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/GUI/ViewDataFiles/output.texttest (deflated 27%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/GUI/ViewDataFiles/usecase.texttest (deflated 36%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/TargetApp/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/TargetApp/Test1/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/TargetApp/Test1/writeabledirs/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/TargetApp/Test1/writeabledirs/otherdir/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/TargetApp/Test1/writeabledirs/otherdir/writehere/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/TargetApp/Test1/writeabledirs/otherdir/writehere/readfile (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/TargetApp/Test1/writeabledirs/otherdir/toRemove (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/TargetApp/Test1/writeabledirs/otherreadfile (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/TargetApp/Test1/writeabledirs/readfile (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/TargetApp/Test1/writeabledirs/toRemove (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/TargetApp/Test1/writeabledirs/readdir/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/TargetApp/Test1/writeabledirs/readdir/otherdir/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/TargetApp/Test1/writeabledirs/readdir/otherdir/readfile (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/TargetApp/Test1/writeabledirs/readdir/somedir/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/TargetApp/Test1/writeabledirs/readdir/somedir/readfile (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/TargetApp/Test1/writeabledirs/somedir/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/TargetApp/Test1/writeabledirs/somedir/toEdit (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/TargetApp/Test1/writeabledirs/writehere/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/TargetApp/Test1/writeabledirs/writehere/readfile (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/TargetApp/Test1/writeabledirs/writehere/writeandremovehere/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/TargetApp/Test1/writeabledirs/writehere/writeandremovehere/readfile (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/TargetApp/Test1/catalogue.tdat (deflated 67%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/TargetApp/Test1/errors.tdat (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/TargetApp/Test1/options.tdat (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/TargetApp/Test1/output.tdat (deflated 7%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/TargetApp/Test1/readonlyfile (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/TargetApp/config.tdat (deflated 26%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/TargetApp/config.tdat.copy (deflated 17%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/TargetApp/config.tdat.env (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/TargetApp/config.tdat.env.searchpath (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/TargetApp/config.tdat.queuesystem (deflated 15%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/TargetApp/config.tdat.searchpath (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/TargetApp/config.tdat.subdir (deflated 10%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/TargetApp/environment.queuesystem (deflated 12%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/TargetApp/readonlyfile (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/TargetApp/testdata.py (deflated 62%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/TargetApp/testsuite.tdat (deflated 23%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/TargetApp/Test2/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/TargetApp/Test2/somedir/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/TargetApp/Test2/somedir/readonlyfile2 (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/TargetApp/Test2/catalogue.tdat (deflated 9%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/TargetApp/Test2/environment.tdat.env (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/TargetApp/Test2/environment.tdat.env.searchpath (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/TargetApp/Test2/errors.tdat (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/TargetApp/Test2/options.tdat (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/TargetApp/Test2/output.tdat (deflated 19%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/TargetApp/datadir/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/TargetApp/datadir/dummyfile (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/UnixOnly/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/UnixOnly/LinkTestPath/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/UnixOnly/LinkTestPath/catalogue.texttest (deflated 7%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/UnixOnly/LinkTestPath/errors.texttest (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/UnixOnly/LinkTestPath/options.texttest (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/UnixOnly/LinkTestPath/output.texttest (deflated 43%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/UnixOnly/testsuite.texttest (deflated 39%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/UnixOnly/testsuite.texttest.queuesystem (deflated 12%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/UnixOnly/PartialCopyIgnoreCatalogues/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/UnixOnly/PartialCopyIgnoreCatalogues/catalogue.texttest (deflated 74%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/UnixOnly/PartialCopyIgnoreCatalogues/catalogue.texttest.queuesystem (deflated 34%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/UnixOnly/PartialCopyIgnoreCatalogues/errors.texttest (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/UnixOnly/PartialCopyIgnoreCatalogues/options.texttest (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/UnixOnly/PartialCopyIgnoreCatalogues/options.texttest.queuesystem (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/UnixOnly/PartialCopyIgnoreCatalogues/output.texttest (deflated 44%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/UnixOnly/PartialCopyIgnoreCatalogues/output.texttest.lsf (deflated 39%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/UnixOnly/PartialCopyIgnoreCatalogues/output.texttest.sge (deflated 39%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/UnixOnly/PartialCopyIgnoreCatalogues/traffic.texttest.lsf (deflated 70%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/UnixOnly/PartialCopyIgnoreCatalogues/traffic.texttest.sge (deflated 70%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/UnixOnly/PartialCopyTestPath/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/UnixOnly/PartialCopyTestPath/catalogue.texttest (deflated 72%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/UnixOnly/PartialCopyTestPath/errors.texttest (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/UnixOnly/PartialCopyTestPath/options.texttest (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TestData/UnixOnly/PartialCopyTestPath/output.texttest (deflated 44%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TrafficInterception/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TrafficInterception/ClientServer/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TrafficInterception/ClientServer/Record/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TrafficInterception/ClientServer/Record/catalogue.texttest (deflated 7%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TrafficInterception/ClientServer/Record/errors.texttest (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TrafficInterception/ClientServer/Record/input.texttest (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TrafficInterception/ClientServer/Record/options.texttest (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TrafficInterception/ClientServer/Record/output.texttest (deflated 55%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TrafficInterception/ClientServer/testsuite.texttest (deflated 37%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TrafficInterception/ClientServer/Replay/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TrafficInterception/ClientServer/Replay/catalogue.texttest (deflated 7%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TrafficInterception/ClientServer/Replay/errors.texttest (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TrafficInterception/ClientServer/Replay/input.texttest (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TrafficInterception/ClientServer/Replay/options.texttest (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TrafficInterception/ClientServer/Replay/output.texttest (deflated 46%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TrafficInterception/ClientServer/Replay2Tests/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TrafficInterception/ClientServer/Replay2Tests/catalogue.texttest (deflated 7%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TrafficInterception/ClientServer/Replay2Tests/errors.texttest (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TrafficInterception/ClientServer/Replay2Tests/input.texttest (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TrafficInterception/ClientServer/Replay2Tests/options.texttest (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TrafficInterception/ClientServer/Replay2Tests/output.texttest (deflated 64%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TrafficInterception/ClientServer/TargetApp/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TrafficInterception/ClientServer/TargetApp/Test/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TrafficInterception/ClientServer/TargetApp/Test/errors.strserv (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TrafficInterception/ClientServer/TargetApp/Test/output.strserv (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TrafficInterception/ClientServer/TargetApp/Test/traffic.strserv (deflated 34%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TrafficInterception/ClientServer/TargetApp/config.strserv (deflated 19%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TrafficInterception/ClientServer/TargetApp/environment (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TrafficInterception/ClientServer/TargetApp/environment.rectraffic (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TrafficInterception/ClientServer/TargetApp/testsuite.strserv (deflated 4%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TrafficInterception/ClientServer/TargetApp/source/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TrafficInterception/ClientServer/TargetApp/source/client.py (deflated 50%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TrafficInterception/ClientServer/TargetApp/source/runsystem.py (deflated 43%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TrafficInterception/ClientServer/TargetApp/source/server.py (deflated 51%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TrafficInterception/testsuite.texttest (deflated 17%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TrafficInterception/Console/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TrafficInterception/Console/RecordFromFake/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TrafficInterception/Console/RecordFromFake/personaldir/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TrafficInterception/Console/RecordFromFake/personaldir/config (deflated 28%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TrafficInterception/Console/RecordFromFake/catalogue.texttest (deflated 7%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TrafficInterception/Console/RecordFromFake/errors.texttest (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TrafficInterception/Console/RecordFromFake/input.texttest (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TrafficInterception/Console/RecordFromFake/options.texttest (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TrafficInterception/Console/RecordFromFake/output.texttest (deflated 67%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TrafficInterception/Console/testsuite.texttest (deflated 39%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TrafficInterception/Console/ReplayTraffic/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TrafficInterception/Console/ReplayTraffic/catalogue.texttest (deflated 7%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TrafficInterception/Console/ReplayTraffic/errors.texttest (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TrafficInterception/Console/ReplayTraffic/input.texttest (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TrafficInterception/Console/ReplayTraffic/options.texttest (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TrafficInterception/Console/ReplayTraffic/output.texttest (deflated 47%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TrafficInterception/Console/RunWithoutTraffic/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TrafficInterception/Console/RunWithoutTraffic/catalogue.texttest (deflated 7%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TrafficInterception/Console/RunWithoutTraffic/errors.texttest (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TrafficInterception/Console/RunWithoutTraffic/options.texttest (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TrafficInterception/Console/RunWithoutTraffic/output.texttest (deflated 48%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TrafficInterception/GUI/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TrafficInterception/GUI/RecordCmdLine/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TrafficInterception/GUI/RecordCmdLine/catalogue.texttest (deflated 7%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TrafficInterception/GUI/RecordCmdLine/dynamic_gui_log.texttest (deflated 74%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TrafficInterception/GUI/RecordCmdLine/dynamic_usecase.texttest (deflated 2%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TrafficInterception/GUI/RecordCmdLine/errors.texttest (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TrafficInterception/GUI/RecordCmdLine/gui_log.texttest (deflated 76%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TrafficInterception/GUI/RecordCmdLine/output.texttest (deflated 28%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TrafficInterception/GUI/RecordCmdLine/usecase.texttest (deflated 30%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TrafficInterception/GUI/testsuite.texttest (deflated 34%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TrafficInterception/GUI/ReplayBadTraffic/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TrafficInterception/GUI/ReplayBadTraffic/catalogue.texttest (deflated 7%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TrafficInterception/GUI/ReplayBadTraffic/dynamic_gui_log.texttest (deflated 73%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TrafficInterception/GUI/ReplayBadTraffic/errors.texttest (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TrafficInterception/GUI/ReplayBadTraffic/options.texttest (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TrafficInterception/GUI/ReplayBadTraffic/output.texttest (deflated 49%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TrafficInterception/GUI/ReplayBadTraffic/usecase.texttest (deflated 2%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TrafficInterception/TargetApp/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TrafficInterception/TargetApp/Test/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TrafficInterception/TargetApp/Test/errors.traffic (deflated 1%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TrafficInterception/TargetApp/Test/firstcall.py (deflated 3%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TrafficInterception/TargetApp/Test/output.traffic (deflated 46%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TrafficInterception/TargetApp/Test/secondcall.py (deflated 3%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TrafficInterception/TargetApp/Test/traffic.traffic (deflated 52%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TrafficInterception/TargetApp/config.traffic (deflated 28%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TrafficInterception/TargetApp/environment.traffic (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TrafficInterception/TargetApp/testsuite.traffic (deflated 28%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TrafficInterception/TargetApp/TestBadTraffic/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TrafficInterception/TargetApp/TestBadTraffic/errors.traffic (deflated 1%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TrafficInterception/TargetApp/TestBadTraffic/output.traffic (deflated 45%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TrafficInterception/TargetApp/TestBadTraffic/traffic.traffic (deflated 53%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TrafficInterception/TargetApp/TestNoTraffic/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TrafficInterception/TargetApp/TestNoTraffic/errors.traffic (deflated 1%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TrafficInterception/TargetApp/TestNoTraffic/output.traffic (deflated 46%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TrafficInterception/TargetApp/source/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TrafficInterception/TargetApp/source/firstcall.py (deflated 23%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TrafficInterception/TargetApp/source/secondcall.py (deflated 27%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/TestSelf/TrafficInterception/TargetApp/source/syscalls.py (deflated 43%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/filter_files/ (stored 0%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/filter_files/batch (deflated 3%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/filter_files/dynamic_gui (deflated 16%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/filter_files/reconnect (deflated 3%)
+  adding: texttest-4.8.9/tests/texttest/InstallTests/texttest/filter_files/static_gui (stored 0%)
+cvs -d /carm/2_CVS/ export -D 2007-05-03 Testing/TextTest
+cvs -d /carm/2_CVS/ export -D 2007-05-03 Testing/PyUseCase
+cvs -d /carm/2_CVS/ export -D 2007-05-03 Testing/Automatic/Diagnostics
+cvs -d /carm/2_CVS/ export -D 2007-05-03 -l Testing/Automatic/texttest
+cvs -d /carm/2_CVS/ export -D 2007-05-03 Testing/Automatic/texttest/QueueSystems
+cvs -d /carm/2_CVS/ export -D 2007-05-03 Testing/Automatic/texttest/TargetApp
+cvs -d /carm/2_CVS/ export -D 2007-05-03 Testing/Automatic/texttest/GUI
+cvs -d /carm/2_CVS/ export -D 2007-05-03 Testing/Automatic/texttest/TestSelf
+cvs -d /carm/2_CVS/ export -D 2007-05-03 Testing/Automatic/texttest/filter_files
+cvs -d /carm/2_CVS/ export -D 2007-05-03 Testing/Automatic/texttest/InstallTests
 Copying Testing/PyUseCase/gtkusecase.py
 Copying Testing/PyUseCase/log4py.py
 Copying Testing/PyUseCase/ndict.py
@@ -8606,7 +9853,7 @@ Copying Testing/PyUseCase/paths.py
 Copying Testing/PyUseCase/process.py
 Copying Testing/PyUseCase/setup.py
 Copying Testing/PyUseCase/usecase.py
-Copying Testing/TextTest/install.py
+Copying Testing/TextTest/readme.txt
 Copying Testing/TextTest/bin/interpretcore.py
 Copying Testing/TextTest/bin/texttest.py
 Copying Testing/TextTest/doc/AUTHORS
@@ -8673,6 +9920,7 @@ Removing texttest-4.8.9/tests/texttest/config.texttest.lsf.nonlinux
 Removing texttest-4.8.9/tests/texttest/config.texttest.parisc_2_0
 Removing texttest-4.8.9/tests/texttest/config.texttest.powerpc
 Removing texttest-4.8.9/tests/texttest/config.texttest.sparc
+Removing texttest-4.8.9/tests/texttest/config.ttrel
 Removing texttest-4.8.9/tests/texttest/environment.texttest.cover
 Removing texttest-4.8.9/tests/texttest/environment.texttest.nonlinux
 Removing texttest-4.8.9/tests/texttest/environment.texttest.sparc
@@ -8680,6 +9928,7 @@ Removing texttest-4.8.9/tests/texttest/testsuite.texttest.carmen
 Removing texttest-4.8.9/tests/texttest/testsuite.texttest.carmen.nonlinux
 Removing texttest-4.8.9/tests/texttest/testsuite.texttest.nonlinux
 Removing texttest-4.8.9/tests/texttest/testsuite.texttest.sge.nonlinux
+Removing texttest-4.8.9/tests/texttest/testsuite.ttrel
 Removing texttest-4.8.9/tests/texttest/TestSelf/BaseVersions/testsuite.texttest.nonlinux
 Removing texttest-4.8.9/tests/texttest/TestSelf/BatchTests/testsuite.texttest.nonlinux
 Removing texttest-4.8.9/tests/texttest/TestSelf/ChangeTestResults/testsuite.texttest.nonlinux
