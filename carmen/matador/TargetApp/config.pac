@@ -62,21 +62,6 @@ link_test_path:secret_parameters.etab
 solution:APC_FILES/best_solution
 [end]
 
-# ---------------- Values required by the performance module -------------------
-
-# Performance machines/groups. Performance is only compared if these machines are used for test execution
-[performance_test_machine]
-cputime:hgrp_rd_xeon5600
-
-# How much variation in performance do we allow, in percentage of total runtime? 
-[performance_variation_%]
-cputime:10
-
-# How long (in seconds) must a test be before performance comparison is used?
-[performance_test_minimum]
-cputime:10
-[end]
-
 # ---------------- Values required by the Carmen module -------------------
 
 # What needs to be built by the rule compiler
