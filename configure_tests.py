@@ -51,6 +51,13 @@ def insertSourceDir(line, sourceDir):
     else:
         return line
 
+# Files come from UNIX, which don't get displayed properly by notepad (the default)
+def insertWordpad(line):
+    if line.startswith("binary:"):
+        return line + "\nview_program:wordpad\n"
+    else:
+        return line
+    
 def commentMatching(line, text):
     if line.strip() == text:
         return "# " + line
@@ -98,6 +105,7 @@ def pythonHasUnsetenv():
 
 def configureTests(testDir, sourceDir):
     testSuiteFiles = findPathsMatching(testDir, "testsuite")
+    configFile = os.path.join(testDir, "config.texttest")
     if os.name == "posix":
         checkInstall("lsf", "bsub -V", testDir)
         checkInstall("sge", "qsub -help", testDir)
@@ -123,10 +131,10 @@ def configureTests(testDir, sourceDir):
 
         for outputFile in findPathsMatching(testDir, "output"):
             transformFile(outputFile, replaceCmdToolsForWindows)
+        transformFile(configFile, insertWordpad)
 
-    os.chdir(testDir)
-    transformFile("config.texttest", insertSourceDir, sourceDir)
-
+    # Don't use Windows paths, which get confused with escape characters!
+    transformFile(configFile, insertSourceDir, sourceDir.replace("\\", "/"))
     try:
         import gtk
     except:
