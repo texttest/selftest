@@ -1,12 +1,16 @@
 set test selection to One,Three
 save selected tests in file
+wait for dialog to be displayed
 choose folder filter_files
+wait for dialog to be displayed
 enter filter-file name = filter1
 press save
 set test selection to Three
 set test selection to One1,Two
 save selected tests in file
+wait for dialog to be displayed
 choose folder filter_files
+wait for dialog to be displayed
 enter filter-file name = filter2
 press save
 enter tests listed in file = filter_files/filter1
@@ -15,7 +19,9 @@ choose extend
 enter tests listed in file = filter_files/filter2
 select indicated tests from tab
 save selected tests in file
+wait for dialog to be displayed
 choose folder filter_files
+wait for dialog to be displayed
 enter filter-file name = All_tests
 press save
 quit
