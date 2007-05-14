@@ -1,9 +1,22 @@
 #!/usr/bin/env python
 
 from SocketServer import TCPServer, StreamRequestHandler
-from traffic_cmd import sendServerState
-from socket import gethostname
-import sys
+import sys, os, socket
+
+def createSocket():
+    servAddr = os.getenv("TEXTTEST_MIM_SERVER")
+    if servAddr:
+        host, port = servAddr.split(":")
+        serverAddress = (host, int(port))
+        sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        sock.connect(serverAddress)
+        return sock
+
+def sendServerState(stateDesc):
+    sock = createSocket()
+    if sock:
+        sock.sendall("SUT_SERVER:" + stateDesc + "\n")
+        sock.close()
 
 class MyRequestHandler(StreamRequestHandler):
     def handle(self):
@@ -15,7 +28,7 @@ class MyRequestHandler(StreamRequestHandler):
         else:
             self.wfile.write("Length was " + str(len(clientData)))
 
-server = TCPServer((gethostname(), 0), MyRequestHandler)
+server = TCPServer((socket.gethostname(), 0), MyRequestHandler)
 host, port = server.socket.getsockname()
 address = host + ":" + str(port)
 message = "Started string-length server at " + address
