@@ -57,6 +57,13 @@ def insertWordpad(line):
         return line + "\nview_program:wordpad\n"
     else:
         return line
+
+# See PyGTK bug 438318. This sorting is a consequence of that windows-specific bug
+def insertNotebookBugWorkaround(line):
+    if line.startswith("[unordered_text"):
+        return line + "dynamic_gui_log:Tabs showing : Test, Status{LINES 2}\n"
+    else:
+        return line
     
 def commentMatching(line, text):
     if line.strip() == text:
@@ -133,6 +140,7 @@ def configureTests(testDir, sourceDir):
         for outputFile in findPathsMatching(testDir, "output"):
             transformFile(outputFile, replaceCmdToolsForWindows)
         transformFile(configFile, insertWordpad)
+        transformFile(configFile, insertNotebookBugWorkaround)
 
     # Don't use Windows paths, which get confused with escape characters!
     transformFile(configFile, insertSourceDir, sourceDir.replace("\\", "/"))
