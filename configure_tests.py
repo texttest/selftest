@@ -121,13 +121,14 @@ def configureTests(testDir, sourceDir):
         for envFile in findPathsMatching(testDir, "environment"):
             transformFile(envFile, replacePathForWindows)
         print "Replacing for MS-DOS syntax in options and config files '$' -> '$$'"
-        filesWithDollars = findPathsMatching(testDir, "options") + findPathsMatching(testDir, "config")
+        configFiles = findPathsMatching(testDir, "config")
+        filesWithDollars = findPathsMatching(testDir, "options") + configFiles
         for fileWithDollars in filesWithDollars:
             transformFile(fileWithDollars, replaceDollarForWindows)
-        guiLogs = findPathsMatching(testDir, "gui_log") + \
-                  findPathsMatching(testDir, "dynamic_gui_log")
-        for guifile in guiLogs:
-            transformFile(guifile, replaceToolsForWindows)
+        filesWithTools = findPathsMatching(testDir, "gui_log") + \
+                         findPathsMatching(testDir, "dynamic_gui_log") + configFiles
+        for fileWithTools in filesWithTools:
+            transformFile(fileWithTools, replaceToolsForWindows)
 
         for outputFile in findPathsMatching(testDir, "output"):
             transformFile(outputFile, replaceCmdToolsForWindows)
