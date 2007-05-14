@@ -57,13 +57,6 @@ def insertWordpad(line):
         return line + "\nview_program:wordpad\n"
     else:
         return line
-
-# See PyGTK bug 438318. This sorting is a consequence of that windows-specific bug
-def insertNotebookBugWorkaround(line):
-    if line.startswith("[unordered_text"):
-        return line + "dynamic_gui_log:Tabs showing : Test, Status{LINES 2}\n"
-    else:
-        return line
     
 def commentMatching(line, text):
     if line.strip() == text:
@@ -128,19 +121,17 @@ def configureTests(testDir, sourceDir):
         for envFile in findPathsMatching(testDir, "environment"):
             transformFile(envFile, replacePathForWindows)
         print "Replacing for MS-DOS syntax in options and config files '$' -> '$$'"
-        configFiles = findPathsMatching(testDir, "config")
-        filesWithDollars = findPathsMatching(testDir, "options") + configFiles
+        filesWithDollars = findPathsMatching(testDir, "options") + findPathsMatching(testDir, "config")
         for fileWithDollars in filesWithDollars:
             transformFile(fileWithDollars, replaceDollarForWindows)
-        filesWithTools = findPathsMatching(testDir, "gui_log") + \
-                         findPathsMatching(testDir, "dynamic_gui_log") + configFiles
-        for fileWithTools in filesWithTools:
-            transformFile(fileWithTools, replaceToolsForWindows)
+        guiLogs = findPathsMatching(testDir, "gui_log") + \
+                  findPathsMatching(testDir, "dynamic_gui_log")
+        for guifile in guiLogs:
+            transformFile(guifile, replaceToolsForWindows)
 
         for outputFile in findPathsMatching(testDir, "output"):
             transformFile(outputFile, replaceCmdToolsForWindows)
         transformFile(configFile, insertWordpad)
-        transformFile(configFile, insertNotebookBugWorkaround)
 
     # Don't use Windows paths, which get confused with escape characters!
     transformFile(configFile, insertSourceDir, sourceDir.replace("\\", "/"))
