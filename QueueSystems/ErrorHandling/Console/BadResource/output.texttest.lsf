@@ -1,0 +1,13 @@
+TextTest will write diagnostics in /users/geoff/texttesttmp/texttest.lsf.11May181147/QueueSystems/ErrorHandling/Console/BadResource based on file at /users/geoff/work/master/Testing/Automatic/texttest/logging.texttest
+Using Application SLEEP, version badresource
+Submitting SLEEP test-suite TargetApp to LSF queues
+  Submitting SLEEP test-case Basic  to default LSF queue
+  SLEEP test-case Basic  not compared:
+Failed to submit to LSF (Bad resource requirement syntax. Job not submitted.)
+Submission command was 'bsub -J Test-Basic-SLEEP.badresource -R no_such_resource  -u nobody -o framework_tmp/slavelog -e framework_tmp/slaveerrs ... '
+
+  Submitting SLEEP test-case Basic2 to default LSF queue
+  SLEEP test-case Basic2 not compared:
+Failed to submit to LSF (Bad resource requirement syntax. Job not submitted.)
+Submission command was 'bsub -J Test-Basic2-SLEEP.badresource -R no_such_resource  -u nobody -o framework_tmp/slavelog -e framework_tmp/slaveerrs ... '
+

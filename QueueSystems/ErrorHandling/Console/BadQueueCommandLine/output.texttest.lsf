@@ -1,0 +1,13 @@
+TextTest will write diagnostics in /users/geoff/texttesttmp/texttest.lsf.11May181147/QueueSystems/ErrorHandling/Console/BadQueueCommandLine based on file at /users/geoff/work/master/Testing/Automatic/texttest/logging.texttest
+Using Application SLEEP
+Submitting SLEEP test-suite TargetApp to LSF queues
+  Submitting SLEEP test-case Basic  to LSF queue non_existent
+  SLEEP test-case Basic  not compared:
+Failed to submit to LSF (non_existent: No such queue. Job not submitted.)
+Submission command was 'bsub -J Test-Basic-SLEEP -q non_existent -u nobody -o framework_tmp/slavelog -e framework_tmp/slaveerrs ... '
+
+  Submitting SLEEP test-case Basic2 to LSF queue non_existent
+  SLEEP test-case Basic2 not compared:
+Failed to submit to LSF (non_existent: No such queue. Job not submitted.)
+Submission command was 'bsub -J Test-Basic2-SLEEP -q non_existent -u nobody -o framework_tmp/slavelog -e framework_tmp/slaveerrs ... '
+

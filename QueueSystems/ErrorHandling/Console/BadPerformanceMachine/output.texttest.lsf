@@ -1,0 +1,13 @@
+TextTest will write diagnostics in /users/geoff/texttesttmp/texttest.lsf.11May181147/QueueSystems/ErrorHandling/Console/BadPerformanceMachine based on file at /users/geoff/work/master/Testing/Automatic/texttest/logging.texttest
+Using Application SLEEP, version badperfmachine
+Submitting SLEEP test-suite TargetApp to LSF queues
+  Submitting SLEEP test-case Basic  to default LSF queue
+  SLEEP test-case Basic  not compared:
+Failed to submit to LSF (no_such_machine: Bad host name, host group name or cluster name. Job not submitted.)
+Submission command was 'bsub -J Test-Basic-SLEEP.badperfmachine -m no_such_machine no_such_machine2 -u nobody -o framework_tmp/slavelog -e framework_tmp/slaveerrs ... '
+
+  Submitting SLEEP test-case Basic2 to default LSF queue
+  SLEEP test-case Basic2 not compared:
+Failed to submit to LSF (no_such_machine: Bad host name, host group name or cluster name. Job not submitted.)
+Submission command was 'bsub -J Test-Basic2-SLEEP.badperfmachine -m no_such_machine no_such_machine2 -u nobody -o framework_tmp/slavelog -e framework_tmp/slaveerrs ... '
+
