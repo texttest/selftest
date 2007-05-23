@@ -35,9 +35,6 @@ local:cover
 [batch_recipients]
 nightjob:carmen.testtool_tests
 
-[batch_use_collection]
-nightjob:true
-
 # ---------------- Values for the static GUI -------------------
 
 [version_priority]
@@ -186,6 +183,10 @@ targetReport:1
 [failure_display_priority]
 errors:1
 [end]
+
+[batch_use_collection]
+# For Jeppesen, so that the multi-platform nightly test "nightjob" works properly
+nightjob:true
 
 [diagnostics]
 write_directory_variable:TEXTTEST_DIAGDIR
