@@ -10,8 +10,7 @@ queue_system_module:SGE
 default_checkout:master
 [checkout_location]
 default:~/work/${TEXTTEST_CHECKOUT_NAME}/Testing/TextTest
-nightly_publish:/usr/local/share/texttest
-weekly_publish:/usr/local/share/texttest
+nightjob:/usr/local/share/texttest
 [end]
 
 default_major_release:none
@@ -22,8 +21,16 @@ default_major_release:none
 virtual_display_machine:fougamou
 virtual_display_machine:singleton
 
-[batch_use_version_filtering]
-nightjob:false
+[batch_version]
+default:i386_linux
+default:sparc
+default:unix
+default:powerpc
+default:lsf
+default:sge
+default:carmen
+# collect coverage info with local batch runs...
+local:cover
 
 [batch_recipients]
 nightjob:carmen.testtool_tests
