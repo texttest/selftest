@@ -19,33 +19,17 @@ default_major_release:none
 # ---------------- Values needed to run in batch mode at Carmen -------------------
 
 # Machines where we can start Xvfb
-#virtual_display_machine:reedsville
 virtual_display_machine:fougamou
 virtual_display_machine:singleton
 
-# For each "special batch" run, specify recipients, time limit, architectures and versions 
-# Not present means $USER as recipient, no time limit, all versions and all architectures accepted
-[batch_recipients]
-default:carmen.testtool_tests
-local:$USER
+[batch_use_version_filtering]
+nightjob:false
 
-[batch_version]
-nightly_publish:master
-weekly_publish:master
-default:i386_linux
-default:sparc
-# disabled due to too many suspension-kills. Is in any case on the way out
-#default:parisc_2_0
-default:powerpc
-default:lsf
-default:sge
-default:carmen
-# collect coverage info with local batch runs...
-local:cover
+[batch_recipients]
+nightjob:carmen.testtool_tests
 
 [batch_use_collection]
-default:true
-local:false
+nightjob:true
 
 # ---------------- Values for the static GUI -------------------
 
@@ -62,8 +46,8 @@ overview*:mozilla
 
 [gui_entry_overrides]
 auto-replay_in_dynamic_gui:1
-temporary_result_directory:/carm/proj/matador2/publish/coach.texttest_tmp
-version_to_reconnect_to:master.i386_linux
+temporary_result_directory:/carm/proj/texttest/nightjob_tmp
+version_to_reconnect_to:unix.i386_linux
 [end]
 
 # GUI configuration, drop-down lists to appear in static gui...
@@ -72,9 +56,9 @@ use_checkout:/usr/local/share/texttest
 use_checkout:/carm/master/Testing/TextTest
 run_this_version:sparc
 run_this_version:parisc_2_0
-version_to_reconnect_to:master.i386_linux
-version_to_reconnect_to:master.sparc
-version_to_reconnect_to:master.powerpc
+version_to_reconnect_to:unix.i386_linux
+version_to_reconnect_to:unix.sparc
+version_to_reconnect_to:unix.powerpc
 request_lsf_queue:waiting
 [end]
 
@@ -85,7 +69,7 @@ default:/carm/proj/texttest/html/TestStateRepository
 default:/carm/proj/texttest/html/TestResults
 [end]
 
-unsaveable_version:master
+unsaveable_version:unix
 unsaveable_version:i386_linux
 
 ## end of stuff only for use at Carmen
