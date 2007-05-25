@@ -32,7 +32,10 @@ def findPathsMatching(dir, stem):
     return paths
 
 def commentLine(file, text):
-    return transformFile(file, commentMatching, text)
+    return transformFile(file, insertComment, text)
+
+def uncommentLine(file, text):
+    return transformFile(file, removeComment, text)
 
 def transformFile(file, function, *args):
     newFile = open(file + "new", "w")
@@ -58,9 +61,15 @@ def insertWordpad(line):
     else:
         return line
     
-def commentMatching(line, text):
+def insertComment(line, text):
     if line.strip() == text:
         return "# " + line
+    else:
+        return line
+
+def removeComment(line, text):
+    if line.startswith("#") and line.strip().endswith(text):
+        return line.replace("#", "").lstrip()
     else:
         return line
 
@@ -117,6 +126,7 @@ def configureTests(testDir, sourceDir):
         commentLine(testFile, "extra_version:sge")
         for testSuiteFile in testSuiteFiles:
             commentLine(testSuiteFile, "UnixOnly")
+            uncommentLine(testSuiteFile, "WindowsOnly")
         print "Replacing PATH settings in environment files ':' -> ';'"
         for envFile in findPathsMatching(testDir, "environment"):
             transformFile(envFile, replacePathForWindows)
@@ -134,8 +144,7 @@ def configureTests(testDir, sourceDir):
             transformFile(outputFile, replaceCmdToolsForWindows)
         transformFile(configFile, insertWordpad)
 
-    # Don't use Windows paths, which get confused with escape characters!
-    transformFile(configFile, insertSourceDir, sourceDir.replace("\\", "/"))
+    transformFile(configFile, insertSourceDir, sourceDir)
     try:
         import gtk
     except:
