@@ -14,4 +14,7 @@ if replayMacro and recordMacro:
     shutil.copyfile(replayMacro, recordMacro)
 
 print "Hello from Fake Studio in", os.getenv("CARMSYS")
+singlestep = os.getenv("USECASE_REPLAY_SINGLESTEP")
+if singlestep:
+    print "Single-stepping with the macro recorder! Variable set to", singlestep
 os.remove(lockFile)
