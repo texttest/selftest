@@ -143,20 +143,15 @@ errors:Could not start TextTest{WORD 5}{REPLACE <version>}
 *gui_log:{INTERNAL writedir}{REPLACE <test write dir>}
 *gui_log:[^/]*[0-9][0-9][A-Z][a-z][a-z][0-9][0-9][0-9][0-9][0-9][0-9]{REPLACE <target tmp dir>}
 *gui_log:+ PID{WORD 3}
-*gui_log:started at{WORD -1}{REPLACE <date/time>}
-*gui_log:tests at{WORD -1}{REPLACE <date/time>}
+*gui_log:at [0-9][0-9][A-Za-z][a-z][a-z][0-9][0-9]:[0-9][0-9]:[0-9][0-9]{REPLACE at <date/time>}
 dynamic_gui_log:Running on{WORD -1}{REPLACE <machine>}
 dynamic_gui_log:succeeded on{WORD -1}{REPLACE <machine>}
 dynamic_gui_log:FAILED on{WORD -2}{REPLACE <machine>}
 dynamic_gui_log:not be run on{WORD -2}{REPLACE <machine>}
-dynamic_gui_log:tests started at{WORD -1}{REPLACE <date/time>}
-dynamic_gui_log:tests completed at{WORD 13}{REPLACE <date/time>}
-dynamic_gui_log:Second column 'killed at{WORD 5}{REPLACE <date/time>}
-dynamic_gui_log:killed at{WORD -2}{REPLACE <date/time>}
-dynamic_gui_log:killed explicitly at{WORD -1}{REPLACE <date/time>}
+dynamic_gui_log:^Reckoned to be{WORD 4+}{REPLACE <percent> complete at <date/time>}
+dynamic_gui_log:at [0-3][0-9]:[0-6][0-9]{REPLACE <time of day>}
 dynamic_gui_log:From log file reckoned
 dynamic_gui_log:seconds on{WORD -1}
-dynamic_gui_log:^Reckoned to be{WORD 4+}{REPLACE <percent> complete at <date/time>}
 # Unfortunately race conditions mean we can't reliably look at these
 dynamic_gui_log:Temporary Files
 # Traffic tests. Can't filter them there because then we can't tell when they're different...
