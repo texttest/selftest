@@ -1,4 +1,4 @@
-Top Window title is TextTest dynamic GUI (tests started at 15May15:58:11)
+Top Window title is TextTest dynamic GUI (tests started at 28May12:36:13)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -14,6 +14,7 @@ Viewing action with title 'View Differences' (greyed out)
 Viewing action with title 'Follow File Progress' (greyed out)
 Viewing action with title '_Save', stock id ''gtk-save'', accelerator ''<control>s'' (greyed out)
 Viewing action with title 'S_ave Selection...', stock id ''gtk-save-as'', accelerator ''<control><shift>s''
+Viewing action with title '_Kill', stock id ''gtk-stop''
 Viewing action with title '_Log'
 Viewing action with title 'Log Recursive'
 Viewing action with title 'Log Latest'
@@ -47,6 +48,9 @@ UI layout:
       <menuitem name="Shortcut bar" action="Shortcut bar"/>
       <menuitem name="Status bar" action="Status bar"/>
     </menu>
+    <menu name="actionsmenu" action="actionsmenu">
+      <menuitem name="Kill" action="Kill"/>
+    </menu>
     <placeholder name="ExtraMenus">
       <menu name="optimizationmenu" action="optimizationmenu">
         <menuitem name="Plot Graph" action="Plot Graph"/>
@@ -77,6 +81,7 @@ UI layout:
   </menubar>
   <toolbar name="MainToolBar">
     <toolitem name="Quit" action="Quit"/>
+    <toolitem name="Kill" action="Kill"/>
     <toolitem name="Save" action="Save"/>
     <separator/>
   </toolbar>
@@ -167,7 +172,7 @@ CPU time   :      5.27 sec. on tireeis
 Real time  :     17.63 sec.
 --------------------------------------
 
-Changing GUI status to: 'TextTest started at 15May15:58:12.'
+Changing GUI status to: 'TextTest started at 28May12:36:15.'
 
 Waiting for application event 'completion of test actions' to occur.
 Redrawing test restDest_test coloured yellow
@@ -178,7 +183,7 @@ Adding file output.tas under heading 'Temporary Files', coloured yellow
 Setting sensitivity of action '_Update Info' to True
 
 ---------- Text Info Window ----------
-Running on shelbyville
+Running on knoxville
 --------------------------------------
 Redrawing test restDest_test coloured red
 (Second column 'solution different(+)' coloured red)
@@ -190,7 +195,7 @@ Adding file solution.tas.fail under heading 'Comparison Files', coloured red
 Setting sensitivity of action '_Update Info' to False
 
 ---------- Text Info Window ----------
-Test FAILED on shelbyville :
+Test FAILED on knoxville :
 ---------- Differences in output ----------
 201a202,857
 > 
@@ -229,10 +234,11 @@ Test FAILED on shelbyville :
 > 179;2;0x0;0;;
 --------------------------------------
 Setting sensitivity of action '_Save' to True
+Setting sensitivity of action '_Kill' to False
 
 Tabs showing : Text Info, Saving
 
-Progress bar set to fraction 1.0, text 'All 1 tests completed at 15May15:58:16 (1 tests failed)'
+Progress bar set to fraction 1.0, text 'All 1 tests completed at 28May12:36:22 (1 tests failed)'
 Expected application event 'completion of test actions' occurred, proceeding.
 
 'quit' event created with arguments ''

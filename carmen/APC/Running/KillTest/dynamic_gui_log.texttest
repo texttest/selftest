@@ -1,4 +1,4 @@
-Top Window title is TextTest dynamic GUI (tests started at 17Apr01:25:51)
+Top Window title is TextTest dynamic GUI (tests started at 28May12:36:09)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -14,6 +14,7 @@ Viewing action with title 'View Differences' (greyed out)
 Viewing action with title 'Follow File Progress' (greyed out)
 Viewing action with title '_Save', stock id ''gtk-save'', accelerator ''<control>s'' (greyed out)
 Viewing action with title 'S_ave Selection...', stock id ''gtk-save-as'', accelerator ''<control><shift>s''
+Viewing action with title '_Kill', stock id ''gtk-stop''
 Viewing action with title '_Log'
 Viewing action with title 'Log Recursive'
 Viewing action with title 'Log Latest'
@@ -48,6 +49,9 @@ UI layout:
       <menuitem name="Shortcut bar" action="Shortcut bar"/>
       <menuitem name="Status bar" action="Status bar"/>
     </menu>
+    <menu name="actionsmenu" action="actionsmenu">
+      <menuitem name="Kill" action="Kill"/>
+    </menu>
     <placeholder name="ExtraMenus">
       <menu name="optimizationmenu" action="optimizationmenu">
         <menuitem name="Plot Graph" action="Plot Graph"/>
@@ -79,6 +83,7 @@ UI layout:
   </menubar>
   <toolbar name="MainToolBar">
     <toolitem name="Quit" action="Quit"/>
+    <toolitem name="Kill" action="Kill"/>
     <toolitem name="Save" action="Save"/>
     <separator/>
     <toolitem name="Plot Graph" action="Plot Graph"/>
@@ -171,7 +176,7 @@ CPU time   :       1.7 sec. on frankfort
 Real time  :       3.5 sec.
 --------------------------------------
 
-Changing GUI status to: 'TextTest started at 17Apr01:25:52.'
+Changing GUI status to: 'TextTest started at 28May12:36:11.'
 
 Waiting for application event 'test umlauf_spiel to start' to occur.
 Redrawing test umlauf_spiel coloured yellow
@@ -182,7 +187,7 @@ Adding file output.apc under heading 'Temporary Files', coloured yellow
 Setting sensitivity of action '_Update Info' to True
 
 ---------- Text Info Window ----------
-Running on brockville
+Running on zanesville
 --------------------------------------
 Expected application event 'test umlauf_spiel to start' occurred, proceeding.
 
@@ -196,7 +201,7 @@ Adding file errors.apc under heading 'New Files', coloured yellow
 Adding file output.apc under heading 'New Files', coloured yellow
 
 ---------- Text Info Window ----------
-Running on brockville
+Running on zanesville
 APC STATUS REPORT OVERVIEW
 
 Total time:  0:00:01   cpu time:  0:00:00

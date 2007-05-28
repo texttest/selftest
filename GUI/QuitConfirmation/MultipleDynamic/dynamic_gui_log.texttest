@@ -1,4 +1,4 @@
-Top Window title is TextTest dynamic GUI (tests started at 15May15:54:37)
+Top Window title is TextTest dynamic GUI (tests started at 28May12:35:24)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -14,6 +14,7 @@ Viewing action with title 'View Differences' (greyed out)
 Viewing action with title 'Follow File Progress' (greyed out)
 Viewing action with title '_Save', stock id ''gtk-save'', accelerator ''<control>s'' (greyed out)
 Viewing action with title 'S_ave Selection...', stock id ''gtk-save-as'', accelerator ''<control><shift>s''
+Viewing action with title '_Kill', stock id ''gtk-stop''
 Viewing action with title '_Migration Notes'
 Viewing action with title 'Component _Versions'
 Viewing action with title '_About TextTest', stock id ''gtk-about''
@@ -37,6 +38,9 @@ UI layout:
       <menuitem name="Shortcut bar" action="Shortcut bar"/>
       <menuitem name="Status bar" action="Status bar"/>
     </menu>
+    <menu name="actionsmenu" action="actionsmenu">
+      <menuitem name="Kill" action="Kill"/>
+    </menu>
     <placeholder name="ExtraMenus">
     </placeholder>
     <menu name="helpmenu" action="helpmenu">
@@ -49,6 +53,7 @@ UI layout:
   </menubar>
   <toolbar name="MainToolBar">
     <toolitem name="Quit" action="Quit"/>
+    <toolitem name="Kill" action="Kill"/>
     <toolitem name="Save" action="Save"/>
     <separator/>
   </toolbar>
@@ -92,7 +97,7 @@ Description:
 <No description provided>
 --------------------------------------
 
-Changing GUI status to: 'TextTest started at 15May15:54:37.'
+Changing GUI status to: 'TextTest started at 28May12:35:24.'
 
 Waiting for application event 'completion of test actions' to occur.
 Redrawing test Test coloured yellow
@@ -103,7 +108,7 @@ Adding file output.hello under heading 'Temporary Files', coloured yellow
 Setting sensitivity of action '_Update Info' to True
 
 ---------- Text Info Window ----------
-Running on dolgeville
+Running on woodville
 --------------------------------------
 Redrawing test Test coloured red
 (Second column 'output different' coloured red)
@@ -122,16 +127,17 @@ Test FAILED :
 > Hello World!
 --------------------------------------
 Setting sensitivity of action '_Save' to True
+Setting sensitivity of action '_Kill' to False
 
 Tabs showing : Text Info, Saving
 
-Progress bar set to fraction 1.0, text 'All 1 tests completed at 15May15:54:39 (1 tests failed)'
+Progress bar set to fraction 1.0, text 'All 1 tests completed at 28May12:35:25 (1 tests failed)'
 Expected application event 'completion of test actions' occurred, proceeding.
 
 'select file' event created with arguments 'output.hello'
 Starting graphical difference comparison using 'tkdiff':
--- original file : /users/geoff/texttesttmp/texttest.15May155042/GUI/QuitConfirmation/MultipleDynamic/texttesttmp/hello.15May155437/Test/framework_tmp/output.helloorigcmp
---  current file : /users/geoff/texttesttmp/texttest.15May155042/GUI/QuitConfirmation/MultipleDynamic/texttesttmp/hello.15May155437/Test/framework_tmp/output.hellocmp
+-- original file : /users/geoff/texttesttmp/texttest.28May123358/GUI/QuitConfirmation/MultipleDynamic/texttesttmp/hello.28May123524/Test/framework_tmp/output.helloorigcmp
+--  current file : /users/geoff/texttesttmp/texttest.28May123358/GUI/QuitConfirmation/MultipleDynamic/texttesttmp/hello.28May123524/Test/framework_tmp/output.hellocmp
 
 Changing GUI status to: 'Started "tkdiff output.helloorigcmp output.hellocmp" in background (from test Test).'
 
@@ -142,7 +148,7 @@ Setting sensitivity of action 'View Raw Differences' to True
 Setting sensitivity of action 'View Differences' to True
 
 'view filtered file' event created with arguments ''
-Viewing file /users/geoff/texttesttmp/texttest.15May155042/GUI/QuitConfirmation/MultipleDynamic/texttesttmp/hello.15May155437/Test/framework_tmp/output.hellocmp using 'emacs', refresh set to False
+Viewing file /users/geoff/texttesttmp/texttest.28May123358/GUI/QuitConfirmation/MultipleDynamic/texttesttmp/hello.28May123524/Test/framework_tmp/output.hellocmp using 'emacs', refresh set to False
 
 Changing GUI status to: 'Started "emacs output.hellocmp" in background (from test Test).'
 
@@ -150,8 +156,8 @@ Changing GUI status to: 'Started "emacs output.hellocmp" in background (from tes
 CONFIRMATION: 
 These processes are still running, and will be terminated when quitting: 
 
-   + PID 2892 : tkdiff output.helloorigcmp output.hellocmp (from test Test)
-   + PID 2894 : emacs output.hellocmp (from test Test)
+   + PID 9319 : tkdiff output.helloorigcmp output.hellocmp (from test Test)
+   + PID 9321 : emacs output.hellocmp (from test Test)
 
 Quit anyway?
 
@@ -165,7 +171,7 @@ Terminating process that views and edits test files...
 CONFIRMATION: 
 These processes are still running, and will be terminated when quitting: 
 
-   + PID 2892 : tkdiff output.helloorigcmp output.hellocmp (from test Test)
+   + PID 9319 : tkdiff output.helloorigcmp output.hellocmp (from test Test)
 
 Quit anyway?
 
@@ -177,7 +183,7 @@ Changing GUI status to: 'Action cancelled.'
 CONFIRMATION: 
 These processes are still running, and will be terminated when quitting: 
 
-   + PID 2892 : tkdiff output.helloorigcmp output.hellocmp (from test Test)
+   + PID 9319 : tkdiff output.helloorigcmp output.hellocmp (from test Test)
 
 Quit anyway?
 
