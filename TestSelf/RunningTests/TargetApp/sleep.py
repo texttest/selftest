@@ -8,5 +8,8 @@ def getSleepLength():
 sleepLength = getSleepLength()
 print "Sleeping for", sleepLength, "seconds..."
 sys.stdout.flush()
-time.sleep(sleepLength)
-print "Done"
+try:
+    time.sleep(sleepLength)
+    print "Done"
+except:
+    pass # Don't print stack traces when killed, as Windows can't do this...
