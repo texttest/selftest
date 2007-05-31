@@ -1,4 +1,4 @@
-TextTest will write diagnostics in /users/geoff/texttesttmp/texttest.carmen.05Mar150432/carmen/matador/RaveCompile/BadRaveRunParallel based on file at /users/geoff/work/master/Testing/Automatic/texttest/logging.texttest
+TextTest will write diagnostics in /users/geoff/texttesttmp/texttest.carmen.31May112957/carmen/matador/RaveCompile/BadRaveRunParallel based on file at /users/geoff/work/cvs_master/Testing/Automatic/texttest/logging.texttest
 Using Application Matador, version badrule.extraversion, checkout /carm/proj/texttest/selftest_data
 Using Application Matador, version badrule.extraversion.parallel, checkout /carm/proj/texttest/selftest_data
 Submitting Rule Builds for Matador test-suite TargetApp to SGE queues
@@ -6,40 +6,9 @@ Submitting Rule Builds for Matador test-suite TargetApp to SGE queues
     Submitting Rule Builds for Matador test-case matador_2             (Matador_5_bad ruleset) to SGE queue rave, requesting carmarch=*i386_linux*,carmbuildmaster=1
 Submitting Rule Builds for Matador test-suite TargetApp to SGE queues
   Submitting Rule Builds for Matador test-suite ArtificialUser to SGE queues
-    Evaluating Rule Build for Matador test-case generate_in_subperiod (ruleset Matador_5_bad FAILED!)
-    Matador test-case generate_in_subperiod not compared:
-Failed to build ruleset Matador_5_bad
-Build Rave program Matador_5_bad started on portmoller, 05 March 15:02
-Generating code... 
-*** Trouble report (1 error, 0 warnings):
-
-"source/Matador_5_bad", line 18.22:
-      16: %cost_weight% = parameter 1;
-      17: 
-      18: %cost_of_a_roster% = sum(leg(roser),%cost_weight%);
-                               ^^^
-   ERROR: _topmodule.roser is undefined
-
-
-    Evaluating Rule Build for Matador test-case generate_in_subperiod (ruleset Matador_5_bad FAILED!)
-    Matador test-case generate_in_subperiod not compared:
-Failed to build ruleset Matador_5_bad
-Build Rave program Matador_5_bad started on portmoller, 05 March 15:02
-Generating code... 
-*** Trouble report (1 error, 0 warnings):
-
-"source/Matador_5_bad", line 18.22:
-      16: %cost_weight% = parameter 1;
-      17: 
-      18: %cost_of_a_roster% = sum(leg(roser),%cost_weight%);
-                               ^^^
-   ERROR: _topmodule.roser is undefined
-
-
-    Evaluating Rule Build for Matador test-case matador_2             (ruleset Matador_5_bad FAILED!)
     Matador test-case matador_2             not compared:
 Failed to build ruleset Matador_5_bad
-Build Rave program Matador_5_bad started on portmoller, 05 March 15:02
+Build Rave program Matador_5_bad started on hendersonville, 31 May 11:30
 Generating code... 
 *** Trouble report (1 error, 0 warnings):
 
@@ -51,4 +20,32 @@ Generating code...
    ERROR: _topmodule.roser is undefined
 
 
-At 15:04 creating batch report for application Matador ...file written.
+    Matador test-case generate_in_subperiod not compared:
+Failed to build ruleset Matador_5_bad
+Build Rave program Matador_5_bad started on hendersonville, 31 May 11:30
+Generating code... 
+*** Trouble report (1 error, 0 warnings):
+
+"source/Matador_5_bad", line 18.22:
+      16: %cost_weight% = parameter 1;
+      17: 
+      18: %cost_of_a_roster% = sum(leg(roser),%cost_weight%);
+                               ^^^
+   ERROR: _topmodule.roser is undefined
+
+
+    Matador test-case generate_in_subperiod not compared:
+Failed to build ruleset Matador_5_bad
+Build Rave program Matador_5_bad started on hendersonville, 31 May 11:30
+Generating code... 
+*** Trouble report (1 error, 0 warnings):
+
+"source/Matador_5_bad", line 18.22:
+      16: %cost_weight% = parameter 1;
+      17: 
+      18: %cost_of_a_roster% = sum(leg(roser),%cost_weight%);
+                               ^^^
+   ERROR: _topmodule.roser is undefined
+
+
+At 11:30 creating batch report for application Matador ...file written.
