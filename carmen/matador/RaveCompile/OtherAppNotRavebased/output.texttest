@@ -1,0 +1,31 @@
+TextTest will write diagnostics in /users/geoff/texttesttmp/texttest.carmen.01Jun140001/carmen/matador/RaveCompile/OtherAppNotRavebased based on file at /users/geoff/work/cvs_master/Testing/Automatic/texttest/logging.texttest
+ERROR : config entry name 'rave_name' not recognised
+ERROR : config entry name 'rave_static_library' not recognised
+ERROR: Config section name 'build_targets' not recognised.
+ERROR : config entry name 'link' not recognised
+ERROR : config entry name 'product' not recognised
+ERROR : config entry name 'codebase' not recognised
+Using Application Matador, version notravebased, checkout /carm/proj/texttest/selftest_data
+Using Application Matador, version rave.badrule, checkout /carm/proj/texttest/selftest_data
+Submitting Matador test-suite TargetApp to SGE queues
+  Submitting Matador test-suite ArtificialUser to SGE queues
+    Submitting Matador test-case matador_2 to SGE queue short, requesting osversion=RHEL4,model=Opteron*,carmarch=*i386_linux*,carmrunmaster=1
+Submitting Rule Builds for Matador test-suite TargetApp to SGE queues
+  Submitting Rule Builds for Matador test-suite ArtificialUser to SGE queues
+    Submitting Rule Builds for Matador test-case matador_2 (Matador_5_bad ruleset) to SGE queue rave, requesting carmarch=*i386_linux*,carmbuildmaster=1
+    Matador test-case matador_2 not compared:
+Failed to build ruleset Matador_5_bad
+Build Rave program Matador_5_bad started on portmoller, 01 June 14:00
+Generating code... 
+*** Trouble report (1 error, 0 warnings):
+
+"source/Matador_5_bad", line 18.22:
+      16: %cost_weight% = parameter 1;
+      17: 
+      18: %cost_of_a_roster% = sum(leg(roser),%cost_weight%);
+                               ^^^
+   ERROR: _topmodule.roser is undefined
+
+
+    Matador test-case matador_2 FAILED on schefferville : missing results for solution, differences in catalogue
+    View details(v), Save Version notravebased(1), Save(s) or continue(any other key)?
