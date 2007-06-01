@@ -149,7 +149,7 @@ dynamic_gui_log:succeeded on{WORD -1}{REPLACE <machine>}
 dynamic_gui_log:FAILED on{WORD -2}{REPLACE <machine>}
 dynamic_gui_log:not be run on{WORD -2}{REPLACE <machine>}
 dynamic_gui_log:^Reckoned to be{WORD 4+}{REPLACE <percent> complete at <date/time>}
-dynamic_gui_log:at [0-3][0-9]:[0-6][0-9]{REPLACE <time of day>}
+dynamic_gui_log:at [0-3][0-9]:[0-6][0-9]{REPLACE at <time of day>}
 dynamic_gui_log:From log file reckoned
 dynamic_gui_log:seconds on{WORD -1}
 # Unfortunately race conditions mean we can't reliably look at these

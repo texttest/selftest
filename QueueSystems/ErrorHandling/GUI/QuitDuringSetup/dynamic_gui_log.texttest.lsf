@@ -1,4 +1,4 @@
-Top Window title is TextTest dynamic GUI (tests started at 28May12:35:57)
+Top Window title is TextTest dynamic GUI (tests started at 29May17:01:27)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -89,7 +89,7 @@ Tabs showing : Status
 Test progress:
 --> Not started : 3, colour 'white', font 'bold'
 
-Changing GUI status to: 'TextTest started at 28May12:35:57.'
+Changing GUI status to: 'TextTest started at 29May17:01:28.'
 
 Waiting for application event 'test Test1 to become pending' to occur.
 Redrawing test Test1 coloured white
@@ -102,4 +102,47 @@ Expected application event 'test Test1 to become pending' occurred, proceeding.
 
 'quit' event created with arguments ''
 
-Changing GUI status to: 'Quitting TextTest ...'
+Changing GUI status to: 'Killing 3 tests ...'
+Killing HELLO test-case Test2
+Redrawing test Test2 coloured red
+(Second column 'cancelled' coloured red)
+
+Progress bar set to fraction 0.333333333333, text '1 of 3 tests completed (1 tests failed)'
+
+Test progress:
+--> Not started : 1, colour 'white', font 'bold'
+--> Pending : 1, colour 'white', font 'bold'
+--> Failed : 1, colour 'red', font 'bold'
+----> Cancelled : 1, colour 'red', font 'bold'
+------> cancelled : 1, colour 'red', font 'bold'
+Killing HELLO test-case Test2
+Redrawing test Test2 coloured red
+(Second column 'cancelled' coloured red)
+
+Progress bar set to fraction 0.666666666667, text '2 of 3 tests completed (2 tests failed)'
+
+Test progress:
+--> Not started : 0, colour 'white', font ''
+--> Pending : 1, colour 'white', font 'bold'
+--> Failed : 2, colour 'red', font 'bold'
+----> Cancelled : 2, colour 'red', font 'bold'
+------> cancelled : 2, colour 'red', font 'bold'
+Killing HELLO test-case Test1
+Redrawing test Test1 coloured red
+(Second column 'cancelled pending job at 17:01' coloured red)
+
+Progress bar set to fraction 1.0, text 'All 3 tests completed at 29May17:01:35 (3 tests failed)'
+
+Test progress:
+--> Not started : 0, colour 'white', font ''
+--> Pending : 0, colour 'white', font ''
+--> Failed : 3, colour 'red', font 'bold'
+----> Cancelled : 3, colour 'red', font 'bold'
+------> cancelled : 2, colour 'red', font 'bold'
+------> cancelled pending job at 17:01 : 1, colour 'red', font 'bold'
+
+Changing GUI status to: 'Killed 3 tests.'
+
+Changing GUI status to: 'Waiting for all tests to terminate ...'
+
+Changing GUI status to: 'Removing all temporary files ...'

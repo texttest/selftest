@@ -5,7 +5,7 @@ output:lost the job{WORD -1}
 output:executing on
 output:Time.*real{LINES 9}
 output:Unexpected output from{WORD 7}
-output:at [0-3][0-9]:[0-6][0-9]{REPLACE <time of day>}
+output:at [0-3][0-9]:[0-6][0-9]{REPLACE at <time of day>}
 output:Created process{WORD -1}
 output:Cancelling{WORD -1}
 output:Slave server caught
@@ -13,6 +13,7 @@ dynamic_gui_log:Second column.*PEND{WORD 4}
 dynamic_gui_log:Second column.*RU{WORD 4}
 dynamic_gui_log:File .* line .* in
 dynamic_gui_log:Adding file .*.sleep under heading '.*Files', coloured yellow
+dynamic_gui_log:terminated before completion.*on{WORD -2}{REPLACE <machine>}
 catalogue:sleep.killing{LINES 20}
 catalogue:slaveerrs
 catalogue:slavelog
@@ -20,7 +21,7 @@ catalogue:-slave$
 catalogue:-core.[0-9]*$
 catalogue:-core$
 catalogue:-stacktrace.collate_errs
-*Report:at [0-3][0-9]:[0-6][0-9]{REPLACE <time of day>}
+*Report:at [0-3][0-9]:[0-6][0-9]{REPLACE at <time of day>}
 *Report:File .* line .* in
 traffic:[^/]*[0-9][0-9][A-Z][a-z][a-z][0-9][0-9][0-9][0-9][0-9][0-9]{REPLACE <target tmp dir>}
 traffic:[0-9]*\.[0-9]*\.[0-9]*\.[0-9]*:[0-9]*{REPLACE <host:port>}
@@ -30,7 +31,6 @@ traffic:[^ ]*/texttest[\.py]* {REPLACE <path_to_texttest> }
 [unordered_text]
 output:succeeded on
 output:not compared
-output:Cancelling
 output:FAILED on
 output:View details
 [end]
