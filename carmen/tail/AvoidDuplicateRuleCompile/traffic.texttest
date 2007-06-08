@@ -1,7 +1,8 @@
-<-SRV:TextTest slave server started on 192.168.99.61:33198
-<-CMD:env 'USECASE_RECORD_SCRIPT=' 'USECASE_REPLAY_SCRIPT=' qsub -N Rules-amtail.BasicUser-afc -l "carmarch=*i386_linux*,carmbuildmaster=1,rave" -w e -notify -m n -cwd -b y -V -o framework_tmp/slavelog -e framework_tmp/slaveerrs 'exec /bin/tcsh -c "exec /users/geoff/work/master/Testing/TextTest/bin/remotecmd.py /carm/proj/texttest/selftest_data/tail_CARMSYS/tail_tmp/crc/rule_set/AFC/i386_linux/amtail 192.168.99.61:33195 /carm/proj/texttest/selftest_data/tail_CARMSYS/bin/crc_compile afc -optimize -archs i386_linux /carm/proj/texttest/selftest_data/CARMUSRs/tas_test_suite_user/crc/source/amtail"'
+<-SRV:TextTest slave server started on 192.168.99.55:35588
+<-CMD:env 'USECASE_RECORD_SCRIPT=' 'USECASE_REPLAY_SCRIPT=' qsub -N Rules-amtail.BasicUser-afc -l "carmarch=*i386_linux*,carmbuildmaster=1,rave" -w e -notify -m n -cwd -b y -V -o framework_tmp/slavelog -e framework_tmp/slaveerrs 'exec /bin/tcsh -c "exec /users/geoff/work/master/Testing/TextTest/bin/remotecmd.py /carm/proj/texttest/selftest_data/tail_CARMSYS/tail_tmp/crc/rule_set/AFC/i386_linux/amtail 192.168.99.55:35582 /carm/proj/texttest/selftest_data/tail_CARMSYS/bin/crc_compile afc -optimize -archs i386_linux /carm/proj/texttest/selftest_data/CARMUSRs/tas_test_suite_user/crc/source/amtail"'
 ->OUT:Your job 54066 ("Rules-amtail.BasicUser-afc") has been submitted
 <-SRV:Completed submission of all rule compilations
 ->CLI:remotecmd.py:/carm/proj/texttest/selftest_data/tail_CARMSYS/tail_tmp/crc/rule_set/AFC/i386_linux/amtail:start
 <-CMD:qdel 54066
 ->OUT:geoff has registered the job 54066 for deletion
+<-SRV:Completed submission of all tests

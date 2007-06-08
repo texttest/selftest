@@ -28,13 +28,6 @@ traffic:[0-9]*\.[0-9]*\.[0-9]*\.[0-9]*:[0-9]*{REPLACE <host:port>}
 traffic:[^ ]*/Testing/Automatic{REPLACE <texttest_home>}
 traffic:[^ ]*/texttest[\.py]* {REPLACE <path_to_texttest> }
 
-[unordered_text]
-output:succeeded on
-output:not compared
-output:FAILED on
-output:View details
-[end]
-
 [collate_file]
 targetPerf:texttesttmp/*/Failures/logperf.perf*
 targetPerfSaved:TargetApp/Failures/logperf.perf*
