@@ -70,7 +70,7 @@ UI layout:
   </popup>
 </ui>
 
-Progress bar set to fraction 0.0, text '0 of 3 tests completed'
+Progress bar set to fraction 0.0, text '0 of 6 tests completed'
 
 Test Tree description...
 -> TargetApp (sleep)
@@ -78,90 +78,110 @@ Test Tree description...
 ->   Basic2
 ->   Suite
 ->     Basic3
+-> TargetApp (sleep.extra)
+->   Basic
+->   Basic2
+->   Suite
+->     Basic3
 
-Test column header set to 'Tests: 0/3 selected, none hidden'
+Test column header set to 'Tests: 0/6 selected, none hidden'
 
 Pane separator positioned 50% from the left edge
 
 Tabs showing : Status
 
 Test progress:
---> Not started : 3, colour 'white', font 'bold'
+--> Not started : 6, colour 'white', font 'bold'
 
 Changing GUI status to: 'TextTest started at 11Jun18:04:58.'
 
-Waiting for application event 'test Basic to start' to occur.
+Waiting for application event 'test Basic version <default> to start' to occur.
 Redrawing test Basic coloured yellow
 
 Test progress:
---> Not started : 2, colour 'white', font 'bold'
+--> Not started : 5, colour 'white', font 'bold'
 --> Running : 1, colour 'yellow', font 'bold'
-Expected application event 'test Basic to start' occurred, proceeding.
-
-'hide test suite' event created with arguments 'Suite'
-
-Waiting for application event 'test Basic to complete' to occur.
-Waiting for application event 'test Basic2 to start' to occur.
-Redrawing test Basic coloured red
-(Second column 'output different' coloured red)
-
-Progress bar set to fraction 0.333333333333, text '1 of 3 tests completed (1 tests failed)'
-Hiding test : SLEEP test-case Basic
-
-Test column header set to 'Tests: 0/3 selected, 1 hidden'
-
-Test progress:
---> Not started : 2, colour 'white', font 'bold'
---> Running : 0, colour 'white', font ''
---> Failed : 1, colour 'red', font 'bold'
-----> Differences : 1, colour 'red', font 'bold'
-------> output different : 1, colour 'red', font 'bold'
-Redrawing test Basic2 coloured yellow
-
-Test progress:
---> Not started : 1, colour 'white', font 'bold'
---> Running : 1, colour 'yellow', font 'bold'
---> Failed : 1, colour 'red', font 'bold'
-----> Differences : 1, colour 'red', font 'bold'
-------> output different : 1, colour 'red', font 'bold'
-Expected application event 'test Basic to complete' occurred, proceeding.
-Expected application event 'test Basic2 to start' occurred, proceeding.
+Expected application event 'test Basic version <default> to start' occurred, proceeding.
 
 'quit' event created with arguments ''
 
-Changing GUI status to: 'Killing 2 tests ...'
+Changing GUI status to: 'Killing 6 tests ...'
 Killing SLEEP test-case Basic3
 Killing SLEEP test-case Basic2
+Killing SLEEP test-case Basic
+Killing SLEEP test-case Basic3
+Killing SLEEP test-case Basic2
+Killing SLEEP test-case Basic
 
-Changing GUI status to: 'Killed 2 tests.'
+Changing GUI status to: 'Killed 6 tests.'
 
 Changing GUI status to: 'Waiting for all tests to terminate ...'
 Redrawing test Basic3 coloured red
 (Second column 'cancelled' coloured red)
 
-Progress bar set to fraction 0.666666666667, text '2 of 3 tests completed (2 tests failed)'
+Progress bar set to fraction 0.166666666667, text '1 of 6 tests completed (1 tests failed)'
+
+Test progress:
+--> Not started : 4, colour 'white', font 'bold'
+--> Running : 1, colour 'yellow', font 'bold'
+--> Failed : 1, colour 'red', font 'bold'
+----> Cancelled : 1, colour 'red', font 'bold'
+------> cancelled : 1, colour 'red', font 'bold'
+Redrawing test Basic2 coloured red
+(Second column 'cancelled' coloured red)
+
+Progress bar set to fraction 0.333333333333, text '2 of 6 tests completed (2 tests failed)'
+
+Test progress:
+--> Not started : 3, colour 'white', font 'bold'
+--> Running : 1, colour 'yellow', font 'bold'
+--> Failed : 2, colour 'red', font 'bold'
+----> Cancelled : 2, colour 'red', font 'bold'
+------> cancelled : 2, colour 'red', font 'bold'
+Redrawing test Basic coloured red
+(Second column 'cancelled' coloured red)
+
+Progress bar set to fraction 0.5, text '3 of 6 tests completed (3 tests failed)'
+
+Test progress:
+--> Not started : 2, colour 'white', font 'bold'
+--> Running : 1, colour 'yellow', font 'bold'
+--> Failed : 3, colour 'red', font 'bold'
+----> Cancelled : 3, colour 'red', font 'bold'
+------> cancelled : 3, colour 'red', font 'bold'
+Redrawing test Basic3 coloured red
+(Second column 'cancelled' coloured red)
+
+Progress bar set to fraction 0.666666666667, text '4 of 6 tests completed (4 tests failed)'
+
+Test progress:
+--> Not started : 1, colour 'white', font 'bold'
+--> Running : 1, colour 'yellow', font 'bold'
+--> Failed : 4, colour 'red', font 'bold'
+----> Cancelled : 4, colour 'red', font 'bold'
+------> cancelled : 4, colour 'red', font 'bold'
+Redrawing test Basic2 coloured red
+(Second column 'cancelled' coloured red)
+
+Progress bar set to fraction 0.833333333333, text '5 of 6 tests completed (5 tests failed)'
 
 Test progress:
 --> Not started : 0, colour 'white', font ''
 --> Running : 1, colour 'yellow', font 'bold'
---> Failed : 2, colour 'red', font 'bold'
-----> Differences : 1, colour 'red', font 'bold'
-------> output different : 1, colour 'red', font 'bold'
-----> Cancelled : 1, colour 'red', font 'bold'
-------> cancelled : 1, colour 'red', font 'bold'
-Redrawing test Basic2 coloured red
+--> Failed : 5, colour 'red', font 'bold'
+----> Cancelled : 5, colour 'red', font 'bold'
+------> cancelled : 5, colour 'red', font 'bold'
+Redrawing test Basic coloured red
 (Second column 'killed at 18:05' coloured red)
 
-Progress bar set to fraction 1.0, text 'All 3 tests completed at 11Jun18:05:06 (3 tests failed)'
+Progress bar set to fraction 1.0, text 'All 6 tests completed at 11Jun18:05:01 (6 tests failed)'
 
 Test progress:
 --> Not started : 0, colour 'white', font ''
 --> Running : 0, colour 'white', font ''
---> Failed : 3, colour 'red', font 'bold'
-----> Differences : 1, colour 'red', font 'bold'
-------> output different : 1, colour 'red', font 'bold'
-----> Cancelled : 1, colour 'red', font 'bold'
-------> cancelled : 1, colour 'red', font 'bold'
+--> Failed : 6, colour 'red', font 'bold'
+----> Cancelled : 5, colour 'red', font 'bold'
+------> cancelled : 5, colour 'red', font 'bold'
 ----> Killed : 1, colour 'red', font 'bold'
 ------> killed at 18:05 : 1, colour 'red', font 'bold'
 
