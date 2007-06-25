@@ -1,14 +1,9 @@
-TextTest will write diagnostics in /users/geoff/texttesttmp/texttest.2.carmen.31May153206/carmen/matador/RaveCompile/MultipleRulesetsOrder based on file at /users/geoff/work/cvs_master/Testing/Automatic/texttest/logging.texttest
-Using Application Matador, version rave, checkout /carm/proj/texttest/selftest_data
-Using Application Matador, version rave.fakerstock, checkout /carm/proj/texttest/selftest_data
-Submitting Rule Builds for Matador test-suite TargetApp to SGE queues
-  Submitting Rule Builds for Matador test-suite ArtificialUser to SGE queues
-    Submitting Rule Builds for Matador test-case matador_2 (Matador_5 ruleset) to SGE queue rave, requesting carmarch=*i386_linux*,carmbuildmaster=1
-Submitting Rule Builds for Matador test-suite TargetApp to SGE queues
-  Submitting Rule Builds for Matador test-suite ArtificialUser to SGE queues
-    Submitting Rule Builds for Matador test-case matador_2 (Matador_5_bad ruleset) to SGE queue rave, requesting carmarch=*i386_linux*,carmbuildmaster=1
-    All rulesets compiled for matador_2 version rave (ruleset Matador_5)
-    Matador test-case matador_2 not compared:
+TextTest will write diagnostics in /users/geoff/texttesttmp/texttest.carmen.14Jun174733/carmen/matador/RaveCompile/MultipleRulesetsOrder based on file at /users/geoff/work/master/Testing/Automatic/texttest/logging.texttest
+Using SGE queues for Application Matador, version rave, checkout /carm/proj/texttest/selftest_data
+Using SGE queues for Application Matador, version rave.fakerstock, checkout /carm/proj/texttest/selftest_data
+R: Submitting Rule Compilation for ruleset Matador_5 (for test matador_2 version rave)  to SGE queue rave, requesting carmarch=*i386_linux*,carmbuildmaster=1
+R: Submitting Rule Compilation for ruleset Matador_5_bad (for test matador_2 version rave.fakerstock)  to SGE queue rave, requesting carmarch=*i386_linux*,carmbuildmaster=1
+S: Test matador_2 version rave.fakerstock not compared:
 Failed to build ruleset Matador_5_bad
 Build Rave program Matador_5_bad started on hendersonville, 31 May 11:34
 Generating code... 
@@ -22,7 +17,6 @@ Generating code...
    ERROR: _topmodule.roser is undefined
 
 
-Submitting Matador test-suite TargetApp to SGE queues
-  Submitting Matador test-suite ArtificialUser to SGE queues
-    Submitting Matador test-case matador_2 to SGE queue short, requesting osversion=RHEL4,model=Opteron*,carmarch=*i386_linux*,carmrunmaster=1
-    Matador test-case matador_2 succeeded on hendersonville
+S: All rulesets compiled for matador_2 version rave (ruleset Matador_5)
+Q: Submitting test matador_2 version rave  to SGE queue short, requesting osversion=RHEL4,model=Opteron*,carmarch=*i386_linux*,carmrunmaster=1
+S: Test matador_2 version rave succeeded on hendersonville

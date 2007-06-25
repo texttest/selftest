@@ -1,4 +1,4 @@
-Top Window title is TextTest dynamic GUI (tests started at 28May12:36:22)
+Top Window title is TextTest dynamic GUI (tests started at 15Jun15:24:26)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -151,83 +151,92 @@ Description:
 <No description provided>
 --------------------------------------
 
-Changing GUI status to: 'TextTest started at 28May12:36:22.'
+Changing GUI status to: 'TextTest started at 15Jun15:24:26.'
 
 Waiting for application event 'completion of test actions' to occur.
 Redrawing test data_unchanged_copy coloured peach puff
-(Second column 'RULES (granville)' coloured peach puff)
+(Second column 'RULES (portmoller)' coloured peach puff)
 
 Setting file-view title to 'data__unchanged__copy'
 Adding file LBA_MTV under heading 'Ruleset', coloured white
 
 ---------- Text Info Window ----------
-Compiling ruleset LBA_MTV on granville
+Compiling ruleset LBA_MTV on portmoller
 --------------------------------------
-Redrawing test data_unchanged_copy coloured white
-
-Setting file-view title to 'data__unchanged__copy'
-Adding file LBA_MTV under heading 'Ruleset', coloured white
-
-Test progress:
---> Not started : 0, colour 'white', font ''
---> Running rulecompile : 1, colour 'peach puff', font 'bold'
-
-Tabs showing : Status
-
-Test progress:
---> Not started : 0, colour 'white', font ''
---> Running rulecompile : 0, colour 'white', font ''
---> Ruleset compiled : 1, colour 'white', font 'bold'
-
-Test progress:
---> Not started : 0, colour 'white', font ''
---> Running rulecompile : 0, colour 'white', font ''
---> Ruleset compiled : 1, colour 'white', font 'bold'
 Redrawing test data_unchanged_copy coloured yellow
 
-Tabs showing : Test, Status
+Setting file-view title to 'data__unchanged__copy'
+Adding file errors.gst under heading 'Temporary Files', coloured yellow
+Adding file output.gst under heading 'Temporary Files', coloured yellow
+Setting sensitivity of action '_Update Info' to True
 
-Test progress:
---> Not started : 0, colour 'white', font ''
---> Running rulecompile : 0, colour 'white', font ''
---> Ruleset compiled : 0, colour 'white', font ''
---> Running : 1, colour 'yellow', font 'bold'
-
-Test progress:
---> Not started : 0, colour 'white', font ''
---> Running rulecompile : 0, colour 'white', font ''
---> Ruleset compiled : 0, colour 'white', font ''
---> Running : 1, colour 'yellow', font 'bold'
+---------- Text Info Window ----------
+Running on portmoller
+--------------------------------------
 Redrawing test data_unchanged_copy coloured red
 (Second column 'errors new(+)' coloured red)
+
+Setting file-view title to 'data__unchanged__copy'
+Adding file catalogue.gst under heading 'New Files', coloured red
+Adding file errors.gst under heading 'New Files', coloured red
+Adding file output.gst under heading 'New Files', coloured red
+Adding file usecase.gst under heading 'New Files', coloured red
+Setting sensitivity of action '_Update Info' to False
+
+---------- Text Info Window ----------
+Test FAILED on portmoller :
+---------- New result in catalogue ----------
+
+The following existing files/directories changed their contents:
+<Test Directory>
+----lh_v12_user
+--------current_carmdata
+------------LOCAL_PLAN
+----------------1OC05
+--------------------VERSION_1
+------------------------SR_OCT.file
+----------------------------A300_CAB_Abstimmung
+---------- New result in errors ----------
+---------- New result in output ----------
+Hello from Fake Studio in /carm/proj/texttest/selftest_data/studio_CARMSYS
+---------- New result in usecase ----------
+<?xml version="1.0" encoding="UTF-8"?>
+<All>
+<Command label="PlanManager" script="CuiPlanManager(gpc_info,0)" level="0">
+<InteractionData type="CommandState"  id="" >
+     <InteractionItem key="areaId"  value="0" />
+     <InteractionItem key="button"  value="0" />
+     <InteractionItem key="row"  value="0" />
+     <InteractionItem key="subWinId"  value="3" />
+     <InteractionItem key="tim"  value="3" />
+</InteractionData>
+
+<Interaction type="CommandState" key="" value="(areaId|0)(button|0)(row|0)(subWinId|3)(tim|3)" />
+<Command label="Window Label" script="CuiGetAreaModeString(gpc_info,CuiArea0,pulldown0,25)" level="3">
+<CommandAttributes label="Window Label" script="CuiGetAreaModeString(gpc_info,CuiArea0,pulldown0,25)" level="3"  returnVal="1"/>
+</Command>
+<Command label="Window Label" script="CuiGetAreaModeString(gpc_info,CuiArea1,pulldown1,25)" level="3">
+<CommandAttributes label="Window Label" script="CuiGetAreaModeString(gpc_info,CuiArea1,pulldown1,25)" level="3"  returnVal="1"/>
+</Command>
+<Command label="Window Label" script="CuiGetAreaModeString(gpc_info,CuiArea0,pulldown0,25)" level="3">
+<CommandAttributes label="Window Label" script="CuiGetAreaModeString(gpc_info,CuiArea0,pulldown0,25)" level="3"  returnVal="1"/>
+</Command>
+<Command label="Window Label" script="CuiGetAreaModeString(gpc_info,CuiArea1,pulldown1,25)" level="3">
+<CommandAttributes label="Window Label" script="CuiGetAreaModeString(gpc_info,CuiArea1,pulldown1,25)" level="3"  returnVal="1"/>
+</Command>
+<CommandAttributes label="PlanManager" script="CuiPlanManager(gpc_info,0)" level="0"  returnVal="0"/>
+</Command>
+<Command label="Plan Manager/Open Plan" script="GuiProcessInteraction(&quot;TT&quot;, &quot;PLAN_MANAGER&quot;)" level="0">
+<InteractionData type="CommandState"  id="" >
+     <InteractionItem key="areaId"  value="0" />
+     <InteractionItem key="button"  value="0" />
+--------------------------------------
 Setting sensitivity of action '_Save' to True
 Setting sensitivity of action '_Kill' to False
 
-Test progress:
---> Not started : 0, colour 'white', font ''
---> Running rulecompile : 0, colour 'white', font ''
---> Ruleset compiled : 0, colour 'white', font ''
---> Running : 0, colour 'white', font ''
---> Failed : 1, colour 'red', font 'bold'
-----> Differences : 1, colour 'red', font 'bold'
-------> catalogue new : 1, colour 'red', font 'bold'
-------> errors new : 1, colour 'red', font 'bold'
-------> output new : 1, colour 'red', font 'bold'
-------> usecase new : 1, colour 'red', font 'bold'
+Tabs showing : Text Info, Saving
 
-Progress bar set to fraction 1.0, text 'All 1 tests completed at 28May12:36:36 (1 tests failed)'
-
-Test progress:
---> Not started : 0, colour 'white', font ''
---> Running rulecompile : 0, colour 'white', font ''
---> Ruleset compiled : 0, colour 'white', font ''
---> Running : 0, colour 'white', font ''
---> Failed : 1, colour 'red', font 'bold'
-----> Differences : 1, colour 'red', font 'bold'
-------> catalogue new : 1, colour 'red', font 'bold'
-------> errors new : 1, colour 'red', font 'bold'
-------> output new : 1, colour 'red', font 'bold'
-------> usecase new : 1, colour 'red', font 'bold'
+Progress bar set to fraction 1.0, text 'All 1 tests completed at 15Jun15:24:36 (1 tests failed)'
 Expected application event 'completion of test actions' occurred, proceeding.
 
 'save results for selected tests' event created with arguments ''
@@ -258,14 +267,24 @@ Setting sensitivity of action 'Status Recursive' to False
 Setting sensitivity of action 'A_nnotate' to False
 Setting sensitivity of action 'Annotate Recursive' to False
 
+Test progress:
+--> Not started : 0, colour 'white', font ''
+--> Running rulecompile : 0, colour 'white', font ''
+--> Running : 0, colour 'white', font ''
+--> Failed : 1, colour 'red', font 'bold'
+----> Differences : 1, colour 'red', font 'bold'
+------> catalogue new : 1, colour 'red', font 'bold'
+------> errors new : 1, colour 'red', font 'bold'
+------> output new : 1, colour 'red', font 'bold'
+------> usecase new : 1, colour 'red', font 'bold'
+
 Tabs showing : Status
 Redrawing suite TargetApp : second column 'All 1 tests successful' coloured green
-Progress bar detected save, new text is 'All 1 tests completed at 28May12:36:36'
+Progress bar detected save, new text is 'All 1 tests completed at 15Jun15:24:36'
 
 Test progress:
 --> Not started : 0, colour 'white', font ''
 --> Running rulecompile : 0, colour 'white', font ''
---> Ruleset compiled : 0, colour 'white', font ''
 --> Running : 0, colour 'white', font ''
 --> Failed : 0, colour 'white', font ''
 ----> Differences : 0, colour 'white', font ''

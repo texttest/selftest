@@ -1,7 +1,7 @@
-<-SRV:TextTest slave server started on 192.168.99.53:58559
-<-CMD:env 'USECASE_RECORD_SCRIPT=' 'USECASE_REPLAY_SCRIPT=' qsub -N Rules-Matador_5_bad.ArtificialUser-matador -l "carmarch=*i386_linux*,carmbuildmaster=1,rave" -w e -notify -m n -cwd -b y -V -o framework_tmp/slavelog -e framework_tmp/slaveerrs 'exec /bin/tcsh -c "exec /users/geoff/work/master/Testing/TextTest/bin/remotecmd.py /carm/proj/texttest/selftest_data/partial_carmtmp/crc/rule_set/MATADOR/i386_linux/Matador_5_bad 192.168.99.53:58548 /carm/proj/texttest/selftest_data/CARMSYS/bin/crc_compile matador -optimize -archs i386_linux /carm/proj/texttest/selftest_data/CARMUSRs/Matador_user/crc/source/Matador_5_bad"'
+<-SRV:TextTest slave server started on 192.168.99.68:57434
+<-CMD:env 'USECASE_RECORD_SCRIPT=' 'USECASE_REPLAY_SCRIPT=' qsub -N Rules-Matador_5_bad.ArtificialUser-matador -l "carmarch=*i386_linux*,carmbuildmaster=1,rave" -w e -notify -m n -cwd -b y -V -o framework_tmp/slavelog -e framework_tmp/slaveerrs 'exec /bin/tcsh -c "exec /users/geoff/work/cvs_master/Testing/TextTest/bin/remotecmd.py /carm/proj/texttest/selftest_data/partial_carmtmp/crc/rule_set/MATADOR/i386_linux/Matador_5_bad 192.168.99.68:57423 /carm/proj/texttest/selftest_data/CARMSYS/bin/crc_compile matador -optimize -archs i386_linux /carm/proj/texttest/selftest_data/CARMUSRs/Matador_user/crc/source/Matador_5_bad"'
 ->OUT:Your job 50821 ("Rules-Matador_5_bad.ArtificialUser-matador") has been submitted
-<-SRV:Completed submission of all rule compilations
+<-SRV:Completed submission of all rule compilations and tests that don't require rule compilation
 ->CLI:remotecmd.py:/carm/proj/texttest/selftest_data/partial_carmtmp/crc/rule_set/MATADOR/i386_linux/Matador_5_bad:start
 ->CLI:remotecmd.py:/carm/proj/texttest/selftest_data/partial_carmtmp/crc/rule_set/MATADOR/i386_linux/Matador_5_bad:exitcode=1
 Build Rave program Matador_5_bad started on titusville, 31 May 12:34

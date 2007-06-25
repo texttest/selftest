@@ -51,19 +51,12 @@ testpage:Comments to author
 testpage:Generated
 traffic:core.[0-9]*{REPLACE core.<pid>}
 traffic:[^ ]*remotecmd.py {REPLACE <path_to_remotecmd> }
+[end]
 
 [unordered_text]
-output:succeeded on
-output:not compared
-output:FAILED on
-output:View details
-output:Submitting Picador
-output:Trying to use ruleset
-dynamic_gui_log:{CLEAR LIST}
-dynamic_gui_log:Waiting for application event{->}Expected application event
-traffic:qsub.*-slave{LINES 2}
-# to the end of the file after qdel, they can come in any order here...
-traffic:qdel{LINES 10000}
+# APC tests really run both master and slave, hence hack...
+dynamic_gui_log:just_a_copy coloured yellow
+dynamic_gui_log:umlauf_spiel coloured yellow
 [end]
 
 # We only do two passes, so we can't actually find the base_version queuesystem unless

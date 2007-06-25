@@ -1,4 +1,4 @@
-Top Window title is TextTest dynamic GUI (tests started at 31May18:23:57)
+Top Window title is TextTest dynamic GUI (tests started at 25Jun11:25:07)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -149,7 +149,7 @@ Tabs showing : Status
 Test progress:
 --> Not started : 2, colour 'white', font 'bold'
 
-Changing GUI status to: 'TextTest started at 31May18:23:59.'
+Changing GUI status to: 'TextTest started at 25Jun11:25:08.'
 
 Waiting for application event 'test umlauf_spiel to start' to occur.
 Waiting for application event 'test just_a_copy to start' to occur.
@@ -165,15 +165,15 @@ Redrawing test just_a_copy coloured white
 Test progress:
 --> Not started : 0, colour 'white', font ''
 --> Pending : 2, colour 'white', font 'bold'
-Redrawing test just_a_copy coloured yellow
-(Second column 'RUN (roosterville)' coloured yellow)
+Redrawing test umlauf_spiel coloured yellow
+(Second column 'RUN (redenaco)' coloured yellow)
 
 Test progress:
 --> Not started : 0, colour 'white', font ''
 --> Pending : 1, colour 'white', font 'bold'
 --> Running : 1, colour 'yellow', font 'bold'
-Redrawing test umlauf_spiel coloured yellow
-(Second column 'RUN (tiptonville)' coloured yellow)
+Redrawing test just_a_copy coloured yellow
+(Second column 'RUN (redenaco)' coloured yellow)
 
 Test progress:
 --> Not started : 0, colour 'white', font ''
@@ -211,7 +211,7 @@ Viewing action with title 'CVS _Log'
 Tabs showing : Text Info
 
 ---------- Text Info Window ----------
-Running on tiptonville
+Running on redenaco
 --------------------------------------
 
 Tabs showing : Test, Status, Graph
@@ -253,24 +253,66 @@ Changing GUI status to: 'Plotted 2 tests.'
 
 Terminating process that plots graphs...
 
-'quit' event created with arguments ''
+'view options for' event created with arguments 'Status'
 
-Changing GUI status to: 'Killing 2 tests ...'
-Killing APC test-case just_a_copy
+Test progress:
+--> Not started : 0, colour 'white', font ''
+--> Pending : 0, colour 'white', font ''
+--> Running : 2, colour 'yellow', font 'bold'
+
+'kill selected tests' event created with arguments ''
+
+Changing GUI status to: 'Killing 1 tests ...'
 Killing APC test-case umlauf_spiel
 
-Changing GUI status to: 'Killed 2 tests.'
+Changing GUI status to: 'Killed 1 tests.'
 
-Changing GUI status to: 'Waiting for all tests to terminate ...'
-Redrawing test just_a_copy coloured red
-(Second column 'killed at 18:24' coloured red)
+Changing GUI status to: 'Performed 'Kill selected tests' on 1 tests.'
 
-Progress bar set to fraction 0.5, text '1 of 2 tests completed (1 tests failed)'
+Waiting for application event 'test umlauf_spiel to complete' to occur.
 Redrawing test umlauf_spiel coloured red
-(Second column 'killed at 18:24' coloured red)
+(Second column 'killed at 11:25' coloured red)
 Setting sensitivity of action '_Save' to True
 Setting sensitivity of action '_Kill' to False
 
-Progress bar set to fraction 1.0, text 'All 2 tests completed at 31May18:24:17 (2 tests failed)'
+Test progress:
+--> Not started : 0, colour 'white', font ''
+--> Pending : 0, colour 'white', font ''
+--> Running : 1, colour 'yellow', font 'bold'
+--> Failed : 1, colour 'red', font 'bold'
+----> Killed : 1, colour 'red', font 'bold'
+------> killed at 11:25 : 1, colour 'red', font 'bold'
+
+Progress bar set to fraction 0.5, text '1 of 2 tests completed (1 tests failed)'
+
+Test progress:
+--> Not started : 0, colour 'white', font ''
+--> Pending : 0, colour 'white', font ''
+--> Running : 1, colour 'yellow', font 'bold'
+--> Failed : 1, colour 'red', font 'bold'
+----> Killed : 1, colour 'red', font 'bold'
+------> killed at 11:25 : 1, colour 'red', font 'bold'
+Expected application event 'test umlauf_spiel to complete' occurred, proceeding.
+
+'quit' event created with arguments ''
+
+Changing GUI status to: 'Killing 1 tests ...'
+Killing APC test-case just_a_copy
+
+Changing GUI status to: 'Killed 1 tests.'
+
+Changing GUI status to: 'Waiting for all tests to terminate ...'
+Redrawing test just_a_copy coloured red
+(Second column 'killed at 11:25' coloured red)
+
+Progress bar set to fraction 1.0, text 'All 2 tests completed at 25Jun11:25:31 (2 tests failed)'
+
+Test progress:
+--> Not started : 0, colour 'white', font ''
+--> Pending : 0, colour 'white', font ''
+--> Running : 0, colour 'white', font ''
+--> Failed : 2, colour 'red', font 'bold'
+----> Killed : 2, colour 'red', font 'bold'
+------> killed at 11:25 : 2, colour 'red', font 'bold'
 
 Changing GUI status to: 'Removing all temporary files ...'
