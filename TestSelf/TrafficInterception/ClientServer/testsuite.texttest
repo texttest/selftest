@@ -5,7 +5,10 @@
 Record
 
 # Make sure we can replay the clientserver traffic appropriately
-Replay
+ReplayServer
 
 # Make sure we reset everything properly...
-Replay2Tests
+ReplayServer2Tests
+
+# Lack of server contact at the start should mean TextTest taking on the role of server itself
+ReplayClient
