@@ -22,7 +22,7 @@ SlaveCrash
 # What happens if the slave crashes before it has set up its communication to master?
 SlaveCrashNoReport
 
-#  we need to make sure we report queue system errors intelligently here.
+# we need to make sure we report queue system errors intelligently here.
 # Interactive queue system errors are not really handled right now.
 
 # What happens when nightjob cannot delete long-running jobs?
@@ -39,3 +39,9 @@ JobDisappears
 
 # Check what happens if jobs disappear after they report in
 JobDisappearsAfterStart
+
+# Should make sure things work when we have both queuesystem and default config in the same run
+OtherAppDefaultConfig
+
+# Make sure we clean previous write directories here also
+PreviousWriteDir
