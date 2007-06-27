@@ -32,6 +32,10 @@ traffic:'pid'${LINES 3}
 traffic:S'Running on{WORD 3}{REPLACE <host>'}
 traffic:S'RUN (.*)'{WORD 2}{REPLACE (<host>)}
 traffic:executionHosts{->}observers
+traffic:at [0-3][0-9]:[0-6][0-9]{REPLACE at <time of day>}
+traffic:S'returncode'{LINES 3}
+traffic:/core.[0-9]*{REPLACE /core.<pid>}
+traffic:^S'Traceback
 
 [collate_file]
 targetPerf:texttesttmp/*/Failures/logperf.perf*

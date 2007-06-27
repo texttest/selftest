@@ -52,6 +52,9 @@ testpage:Comments to author
 testpage:Generated
 traffic:core.[0-9]*{REPLACE core.<pid>}
 traffic:[^ ]*remotecmd.py {REPLACE <path_to_remotecmd> }
+traffic:S'percentageChange'{LINES 3}
+traffic:S'newPerformance'{LINES 3}
+traffic:result in lprof
 [end]
 
 [unordered_text]
@@ -73,8 +76,13 @@ unsaveable_version:carmen
 # Used for retrieving gnuplot processes...
 catalogue_process_string:Created process
 
+collect_traffic:{CLEAR LIST}
+collect_traffic:qsub
+collect_traffic:qdel
+collect_traffic:interpretcore.py
 collect_traffic:crc_compile
 collect_traffic:qrsh
+collect_traffic:rsh
 collect_traffic:lpr
 collect_traffic:cvs
 
