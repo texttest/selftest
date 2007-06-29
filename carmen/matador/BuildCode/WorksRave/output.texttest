@@ -1,4 +1,4 @@
-TextTest will write diagnostics in /users/geoff/texttesttmp/texttest.carmen.15Jun124413/carmen/matador/BuildCode/WorksRave based on file at /users/geoff/work/master/Testing/Automatic/texttest/logging.texttest
+TextTest will write diagnostics in /carm/proj/nighttest_tmp/texttest.carmen.29Jun100636/carmen/matador/BuildCode/WorksRave based on file at /users/geoff/work/master/Testing/Automatic/texttest/logging.texttest
 Building Matador in /carm/proj/texttest/selftest_data/fake_source_compiles/Rules_and_Reports on abbeville ...
 Product Matador built correctly in /carm/proj/texttest/selftest_data/fake_source_compiles/Rules_and_Reports
 Making install from /carm/proj/texttest/selftest_data/fake_source_compiles/Rules_and_Reports to /carm/proj/texttest/selftest_data/fake_source_compiles/CARMSYS
@@ -12,11 +12,11 @@ Making install from /carm/proj/texttest/selftest_data/fake_source_compiles/Optim
 Using SGE queues for Application Matador, version rave, checkout /carm/proj/texttest/selftest_data/fake_source_compiles
 Using SGE queues for Application Picador, version rave.badresource, checkout /carm/proj/texttest/selftest_data/fake_source_compiles
 R: Submitting Rule Compilation for ruleset Matador_5 (for test matador_2)  to SGE queue rave, requesting carmarch=*i386_linux*,carmbuildmaster=1
-R: Submitting Rule Compilation for ruleset PIC_umlauf_spiel (for test illegal_pairings)  to SGE queue rave, requesting non_existent,carmarch=*i386_linux*,carmbuildmaster=1
+R: Submitting Rule Compilation for ruleset PIC_umlauf_spiel (for test illegal_pairings)  to SGE queue rave, requesting carmarch=*i386_linux*,carmbuildmaster=1,non_existent
 S: Test illegal_pairings not compared:
 Failed to submit to SGE (Unable to run job: unknown resource "non_existent".)
-Submission command was 'qsub -N Rules-PIC_umlauf_spiel.Picador-matador -l non_existent,carmarch=*i386_linux*,carmbuildmaster=1,rave -w e -notify -m n -cwd -b y -V -o framework_tmp/slavelog -e framework_tmp/slaveerrs ... '
+Submission command was 'qsub -N Rules-PIC_umlauf_spiel.Picador-matador -l carmarch=*i386_linux*,carmbuildmaster=1,non_existent,rave -w e -notify -m n -cwd -b y -V -o framework_tmp/slavelog -e framework_tmp/slaveerrs ... '
 
 S: All rulesets compiled for matador_2 (ruleset Matador_5)
-Q: Submitting test matador_2  to SGE queue short, requesting osversion=RHEL4,model=Opteron*,carmarch=*i386_linux*,carmrunmaster=1
+Q: Submitting test matador_2  to SGE queue short, requesting carmarch=*i386_linux*,carmrunmaster=1,osversion=RHEL4,model=Opteron*
 S: Test matador_2 succeeded on watsonville
