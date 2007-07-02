@@ -34,7 +34,7 @@ traffic:S'RUN (.*)'{WORD 2}{REPLACE (<host>)}
 traffic:executionHosts{->}observers
 traffic:at [0-3][0-9]:[0-6][0-9]{REPLACE at <time of day>}
 traffic:S'returncode'{LINES 3}
-traffic:/core.[0-9]*{REPLACE /core.<pid>}
+traffic:/core[\.]*[0-9]*{REPLACE /<corefile>}
 traffic:^S'Traceback
 
 [collate_file]
