@@ -1,0 +1,15 @@
+set test selection to Game9952
+view sub-options for test : Adding Test
+enter test name = NewTest
+add test
+set test selection to Game9952
+view sub-options for test : Adding Suite
+enter suite name = NewSuite
+add suite
+set test selection to NewTest
+view sub-options for test : Copying
+enter copy to suite = TargetApp/Game9952/NewSuite
+enter name of copy = NewTest
+uncheck keep original
+copy test
+quit
