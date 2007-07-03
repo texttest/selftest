@@ -1,0 +1,11 @@
+TextTest will write diagnostics in /users/geoff/texttesttmp/texttest.sge.02Jul122655/QueueSystems/SlaveReuse/Master/RespectResources based on file at /users/geoff/work/master/Testing/Automatic/texttest/logging.texttest
+Using SGE queues for Application HELLO, version resource
+Q: Submitting test Test under TargetApp to default SGE queue
+Waiting Q thread for 5 seconds
+S: Test Test under TargetApp FAILED on schellville : differences in output
+View details(v), Save Version resource(1), Save(s) or continue(any other key)?
+Q: Submitting test Test under Suite to default SGE queue
+S: Test Test under Suite not compared:
+Failed to submit to SGE (Unable to run job: unknown resource "no_such_resource".)
+Submission command was 'qsub -N Test-Test.Suite-HELLO.resource -l no_such_resource -w e -notify -m n -cwd -b y -V -o framework_tmp/slavelog -e framework_tmp/slaveerrs ... '
+
