@@ -1,0 +1,20 @@
+# Make sure we can submit to the right queues. Bad resource so nothing is submitted for real
+QueueCategories
+
+# Make sure versions are detected when they match architectures/major releases
+ReservedVersions
+
+# Should be able to change defaults away from master.i386_linux
+ChangeDefaults
+
+# Not everyone in the building wants the major release settings
+NoMajorRelease
+
+# If tests are in the same category, reuse the slaves
+ReuseSameCategory
+
+# If one test is in the short queue and the other isn't, don't reuse
+NoReuseDifferentCategories
+
+# Check that when tests are both short individually but too long in total, we don't keep submitting them
+TotalCputimeOverLimit

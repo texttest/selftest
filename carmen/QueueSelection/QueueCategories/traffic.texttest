@@ -1,0 +1,22 @@
+<-SRV:TextTest slave server started on 192.168.98.14:37583
+<-CMD:qsub -N Test-NoPerf-HELLO.badresource -l "carmarch=*i386_linux*,carmrunmaster=1,no_such_resource,short" -w e -notify -m n -cwd -b y -V -o framework_tmp/slavelog -e framework_tmp/slaveerrs 'exec /bin/tcsh -c "exec /usr/local/share/texttest/bin/texttest -d /users/geoff/texttesttmp/texttest.carmen.02Jul163653/carmen/QueueSelection/QueueCategories/TargetApp -a hello -v badresource -l -tp NoPerf -slave /users/geoff/texttesttmp/texttest.carmen.02Jul163653/carmen/QueueSelection/QueueCategories/texttesttmp/hello.badresource.02Jul163701 -servaddr 192.168.98.14:37582 -x -xr /users/geoff/work/master/Testing/Automatic/texttest/logging.texttest -xw /users/geoff/texttesttmp/texttest.carmen.02Jul163653/carmen/QueueSelection/QueueCategories/slave"'
+->ERR:Unable to run job: unknown resource "no_such_resource".
+Exiting.
+->EXC:1
+<-CMD:qsub -N Test-5Min-HELLO.badresource -p -300.0 -l "carmarch=*i386_linux*,carmrunmaster=1,no_such_resource,short" -w e -notify -m n -cwd -b y -V -o framework_tmp/slavelog -e framework_tmp/slaveerrs 'exec /bin/tcsh -c "exec /usr/local/share/texttest/bin/texttest -d /users/geoff/texttesttmp/texttest.carmen.02Jul163653/carmen/QueueSelection/QueueCategories/TargetApp -a hello -v badresource -l -tp 5Min -slave /users/geoff/texttesttmp/texttest.carmen.02Jul163653/carmen/QueueSelection/QueueCategories/texttesttmp/hello.badresource.02Jul163701 -servaddr 192.168.98.14:37582 -x -xr /users/geoff/work/master/Testing/Automatic/texttest/logging.texttest -xw /users/geoff/texttesttmp/texttest.carmen.02Jul163653/carmen/QueueSelection/QueueCategories/slave"'
+->ERR:Unable to run job: unknown resource "no_such_resource".
+Exiting.
+->EXC:1
+<-CMD:qsub -N Test-30Min-HELLO.badresource -p -618.0 -l "carmarch=*i386_linux*,carmrunmaster=1,no_such_resource,normal" -w e -notify -m n -cwd -b y -V -o framework_tmp/slavelog -e framework_tmp/slaveerrs 'exec /bin/tcsh -c "exec /usr/local/share/texttest/bin/texttest -d /users/geoff/texttesttmp/texttest.carmen.02Jul163653/carmen/QueueSelection/QueueCategories/TargetApp -a hello -v badresource -l -tp 30Min -slave /users/geoff/texttesttmp/texttest.carmen.02Jul163653/carmen/QueueSelection/QueueCategories/texttesttmp/hello.badresource.02Jul163701 -servaddr 192.168.98.14:37582 -x -xr /users/geoff/work/master/Testing/Automatic/texttest/logging.texttest -xw /users/geoff/texttesttmp/texttest.carmen.02Jul163653/carmen/QueueSelection/QueueCategories/slave"'
+->ERR:Unable to run job: unknown resource "no_such_resource".
+Exiting.
+->EXC:1
+<-CMD:qsub -N Test-6Hour-HELLO.badresource -p -816.0 -l "carmarch=*i386_linux*,carmrunmaster=1,no_such_resource,idle" -w e -notify -m n -cwd -b y -V -o framework_tmp/slavelog -e framework_tmp/slaveerrs 'exec /bin/tcsh -c "exec /usr/local/share/texttest/bin/texttest -d /users/geoff/texttesttmp/texttest.carmen.02Jul163653/carmen/QueueSelection/QueueCategories/TargetApp -a hello -v badresource -l -tp 6Hour -slave /users/geoff/texttesttmp/texttest.carmen.02Jul163653/carmen/QueueSelection/QueueCategories/texttesttmp/hello.badresource.02Jul163701 -servaddr 192.168.98.14:37582 -x -xr /users/geoff/work/master/Testing/Automatic/texttest/logging.texttest -xw /users/geoff/texttesttmp/texttest.carmen.02Jul163653/carmen/QueueSelection/QueueCategories/slave"'
+->ERR:Unable to run job: unknown resource "no_such_resource".
+Exiting.
+->EXC:1
+<-CMD:qsub -N Test-Preset-HELLO.badresource -p -300.0 -l "carmarch=*i386_linux*,carmrunmaster=1,no_such_resource,short" -w e -notify -m n -cwd -b y -V -o framework_tmp/slavelog -e framework_tmp/slaveerrs 'exec /bin/tcsh -c "exec /usr/local/share/texttest/bin/texttest -d /users/geoff/texttesttmp/texttest.carmen.02Jul163653/carmen/QueueSelection/QueueCategories/TargetApp -a hello -v badresource -l -tp Preset -slave /users/geoff/texttesttmp/texttest.carmen.02Jul163653/carmen/QueueSelection/QueueCategories/texttesttmp/hello.badresource.02Jul163701 -servaddr 192.168.98.14:37582 -x -xr /users/geoff/work/master/Testing/Automatic/texttest/logging.texttest -xw /users/geoff/texttesttmp/texttest.carmen.02Jul163653/carmen/QueueSelection/QueueCategories/slave"'
+->ERR:Unable to run job: unknown resource "no_such_resource".
+Exiting.
+->EXC:1
+<-SRV:Completed submission of all tests
