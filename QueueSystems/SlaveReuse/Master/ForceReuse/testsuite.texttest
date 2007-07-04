@@ -6,3 +6,6 @@ ResourcesOverReuse
 
 # Make sure we can kill tests that have reused another test's slave process
 KillReusedTest
+
+# Make sure we don't submit slaves so they can't clear their environment, otherwise reuse suffers
+ClearEnvironment

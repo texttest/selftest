@@ -1,2 +1,3 @@
 #!/usr/bin/env python
-print 'Hello World!'
+import os
+print 'Hello ' + os.getenv("TO_GREET", "World") + '!'
