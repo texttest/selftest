@@ -10,8 +10,7 @@ queue_system_module:SGE
 default_checkout:master
 [checkout_location]
 default:~/work/${TEXTTEST_CHECKOUT_NAME}/Testing/TextTest
-nightjob:/usr/local/share/texttest
-test:/usr/local/share/texttest
+nightjob:/carm/proj/texttest/release/current
 [end]
 
 default_major_release:none
@@ -60,6 +59,7 @@ version_to_reconnect_to:unix.i386_linux
 
 # GUI configuration, drop-down lists to appear in static gui...
 [gui_entry_options]
+use_checkout:/carm/proj/texttest/release/current
 use_checkout:/usr/local/share/texttest
 use_checkout:/carm/master/Testing/TextTest
 run_this_version:sparc
