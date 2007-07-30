@@ -1,0 +1,80 @@
+# This file is used by texttest.py, and specifies the binary, 
+# default checkout, users, and run-dependent text etc. for APC Pairing (APC) 
+
+# ---------------- Values required by the framework -------------------
+
+# Python configuration module to use. The configuration "default" is always available
+# Otherwise, provide any module you like that implements a getConfig(optionMap) method
+config_module:apc
+
+# Binary (relative to checkout) to be used
+binary:${CARMSYS}/bin/APCbatch.sh
+
+default_interface:console
+
+checkout_location:/carm/proj/texttest/
+default_checkout:selftest_data
+
+# run-dependent text for each file produced
+# Please add text to remove from comparison files
+# separated from the file concerned by a semicolon
+[run_dependent_text]
+status:cpu_child
+status:Date
+status:library date
+status:cpu time
+status:Machine
+status:library version
+status:CARMSYS
+status:APC COST ANA
+status:Generation time
+status:Optimization time
+status:Coordination time
+status:User
+status:APC program
+status:Network generation time
+status:Costing time (sec)
+status:Conn fixing time (sec)
+status:OC to DH time (sec)
+status:Subplan
+status:CARMUSR
+status:CARMTMP
+all:sk_test9_user
+[end]
+
+# Determines file to be used for information extraction, and presentation by tkdiff instead of diff
+log_file:status
+
+discard_file:output
+discard_file:errors
+
+# Collect the solution, and some other stuff
+[collate_file]
+solution:APC_FILES/best_solution
+status:APC_FILES/status
+script_errors:APC_FILES/run_status_script_error
+warnings:APC_FILES/run_status_warning
+# Appearance is indeterministic, so disable for self-tests
+#error:APC_FILES/run_status_error
+[end]
+
+# Collect the solution, which will be compressed
+[collate_script]
+solution:cat
+solution:uncompress -c
+[end]
+
+# ---------------- Values required by the Carmen module -------------------
+
+# What needs to be built by the rule compiler
+rave_name:apc
+
+# The library it should link with, need to check dates on this
+rave_static_library:${CARMSYS}/data/apc/${ARCHITECTURE}/libapc.a
+
+# The architecture that runs without a version ID. If you run on other architecture, you will
+# get given version ${ARCH}$v, where $v was the version specified, if any...
+default_architecture:i386_linux
+
+# ---------------- Values used by the APC module -------------------
+link_libs:-L$CARMSYS/lib/i386_linux -lxprs -lxprl -lm -ldl -L$CARMSYS/data/crc/i386_linux -lrave_rts -lrave_private -lBasics_STACK  `xml2-config --libs`
