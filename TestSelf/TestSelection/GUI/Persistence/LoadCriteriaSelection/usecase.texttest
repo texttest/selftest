@@ -7,7 +7,12 @@ choose folder filter_files
 wait for dialog to be displayed
 enter filter-file name = etests
 press save
-enter test names containing = 
-enter tests listed in file = filter_files/etests
-select indicated tests from tab
+reset running options
+set test selection to One
+set test selection to TargetApp
+load test selection from file
+wait for dialog to be displayed
+select filter-file etests
+wait for dialog to be displayed
+press load
 quit
