@@ -1,9 +1,9 @@
 set test selection to Common
-view sub-options for test : Copying
-enter place copy = first in suite
-copy test
+copy selected tests
+set test selection to TargetApp
+paste tests from clipboard
 set test selection to Extra1
-view sub-options for test : Copying
-enter place copy = after Base
-copy test
+copy selected tests
+set test selection to Base
+paste tests from clipboard
 quit

@@ -1,7 +1,12 @@
 set test selection to A05
-view sub-options for test : Copying
-enter name of copy = A04_copy
-copy test
+copy selected tests
+set test selection to S05
+paste tests from clipboard
+wait for suite Game9952 to change order
+rename selected test
+enter new name A04_copy
+enter new description Copy of A04
+press ok
 wait for suite Game9952 to change order
 set test selection to S04
 rename selected test

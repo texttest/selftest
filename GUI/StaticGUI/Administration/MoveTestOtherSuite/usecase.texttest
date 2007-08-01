@@ -1,9 +1,6 @@
 set test selection to S03
-enter copy to suite = TargetApp/npstIII
-enter place copy = first in suite
-uncheck keep original
-view sub-options for test : Copying
-copy test
-check keep original
-copy test
+cut selected tests
+set test selection to npstIII
+paste tests from clipboard
+paste tests from clipboard
 quit

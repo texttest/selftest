@@ -8,6 +8,9 @@ Viewing toggle action with title '_Shortcut bar'
 Viewing toggle action with title '_Status bar'
 Viewing action with title '_Quit', stock id ''gtk-quit'', accelerator ''<control>q''
 Viewing action with title 'View File' (greyed out)
+Viewing action with title '_Copy', stock id ''gtk-copy'', accelerator ''<control>c'' (greyed out)
+Viewing action with title '_Cut', stock id ''gtk-cut'', accelerator ''<control>x'' (greyed out)
+Viewing action with title '_Paste', stock id ''gtk-paste'', accelerator ''<control>v'' (greyed out)
 Viewing action with title '_Select', stock id ''gtk-refresh'', accelerator ''<control>s''
 Viewing action with title '_Run', stock id ''gtk-execute'', accelerator ''<control>r'' (greyed out)
 Viewing action with title 'R_eset', stock id ''gtk-revert-to-saved'', accelerator ''<control>e''
@@ -39,8 +42,11 @@ UI layout:
       <menuitem name="Quit" action="Quit"/>
     </menu>
     <menu name="editmenu" action="editmenu">
-      <menuitem name="Rename..." action="Rename..."/>
+      <menuitem name="Cut" action="Cut"/>
+      <menuitem name="Copy" action="Copy"/>
+      <menuitem name="Paste" action="Paste"/>
       <menuitem name="Remove..." action="Remove..."/>
+      <menuitem name="Rename..." action="Rename..."/>
       <separator/>
       <menuitem name="Move to first" action="Move to first"/>
       <menuitem name="Move up" action="Move up"/>
@@ -84,6 +90,9 @@ UI layout:
     <separator/>
   </toolbar>
   <popup name="TestPopupMenu">
+    <menuitem name="Cut" action="Cut"/>
+    <menuitem name="Copy" action="Copy"/>
+    <menuitem name="Paste" action="Paste"/>
     <menuitem name="Rename..." action="Rename..."/>
     <menuitem name="Remove..." action="Remove..."/>
     <separator/>
@@ -128,11 +137,13 @@ Viewing check button for switch 'Select in collapsed suites'
 Viewing radio button for switch 'Current selection:', options Discard/Refine/Extend/Exclude'. Default value 0.
 Viewing action with title '_Select'
 
-Changing GUI status to: 'TextTest started at 31Jul15:17:46.'
+Changing GUI status to: 'TextTest started at 01Aug13:58:36.'
 
 'set test selection to' event created with arguments 'Test'
 
 Test column header set to 'Tests: All 1 selected'
+Setting sensitivity of action '_Copy' to True
+Setting sensitivity of action '_Cut' to True
 Setting sensitivity of action '_Run' to True
 Setting sensitivity of action '_Rename...' to True
 Setting sensitivity of action 'Remove...' to True
@@ -168,7 +179,7 @@ Description:
 
 Tabs showing : Test, Selection, Running, Config
 
-Tabs showing : Text Info, Copying, New File, Bugs
+Tabs showing : Text Info, New File, Bugs
 
 'view sub-options for test :' event created with arguments 'Bugs'
 
@@ -211,8 +222,8 @@ ERROR: Must either provide a bug system or fill in both description and summary 
 'check trigger even if test would otherwise succeed' event created with arguments ''
 
 'report described bugs' event created with arguments ''
-Recording known bugs to /users/geoff/texttesttmp/texttest.31Jul151714/TestSelf/KnownBugs/GUI/CreateNewDescription/TargetApp/Test/knownbugs.hello :
-[Reported by geoff at 31Jul15:17:48]
+Recording known bugs to /users/geoff/texttesttmp/texttest.01Aug135812/TestSelf/KnownBugs/GUI/CreateNewDescription/TargetApp/Test/knownbugs.hello :
+[Reported by geoff at 01Aug13:58:38]
 search_string:geoff
 search_file:errors
 execution_hosts:fake_machine1
@@ -243,7 +254,7 @@ Adding file knownbugs.hello.unknownbug under heading 'Definition Files', coloure
 Changing GUI status to: 'Performed 'Report Described Bugs' on HELLO test-case Test.'
 
 'select file' event created with arguments 'knownbugs.hello'
-Viewing file /users/geoff/texttesttmp/texttest.31Jul151714/TestSelf/KnownBugs/GUI/CreateNewDescription/TargetApp/Test/knownbugs.hello using 'emacs', refresh set to False
+Viewing file /users/geoff/texttesttmp/texttest.01Aug135812/TestSelf/KnownBugs/GUI/CreateNewDescription/TargetApp/Test/knownbugs.hello using 'emacs', refresh set to False
 
 Changing GUI status to: 'Started "emacs knownbugs.hello" in background (from test Test).'
 

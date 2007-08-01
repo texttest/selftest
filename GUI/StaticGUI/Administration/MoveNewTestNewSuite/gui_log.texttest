@@ -8,6 +8,9 @@ Viewing toggle action with title '_Shortcut bar'
 Viewing toggle action with title '_Status bar'
 Viewing action with title '_Quit', stock id ''gtk-quit'', accelerator ''<control>q''
 Viewing action with title 'View File' (greyed out)
+Viewing action with title '_Copy', stock id ''gtk-copy'', accelerator ''<control>c'' (greyed out)
+Viewing action with title '_Cut', stock id ''gtk-cut'', accelerator ''<control>x'' (greyed out)
+Viewing action with title '_Paste', stock id ''gtk-paste'', accelerator ''<control>v'' (greyed out)
 Viewing action with title '_Select', stock id ''gtk-refresh'', accelerator ''<control>s''
 Viewing action with title '_Run', stock id ''gtk-execute'', accelerator ''<control>r'' (greyed out)
 Viewing action with title 'R_eset', stock id ''gtk-revert-to-saved'', accelerator ''<control>e''
@@ -39,8 +42,11 @@ UI layout:
       <menuitem name="Quit" action="Quit"/>
     </menu>
     <menu name="editmenu" action="editmenu">
-      <menuitem name="Rename..." action="Rename..."/>
+      <menuitem name="Cut" action="Cut"/>
+      <menuitem name="Copy" action="Copy"/>
+      <menuitem name="Paste" action="Paste"/>
       <menuitem name="Remove..." action="Remove..."/>
+      <menuitem name="Rename..." action="Rename..."/>
       <separator/>
       <menuitem name="Move to first" action="Move to first"/>
       <menuitem name="Move up" action="Move up"/>
@@ -84,6 +90,9 @@ UI layout:
     <separator/>
   </toolbar>
   <popup name="TestPopupMenu">
+    <menuitem name="Cut" action="Cut"/>
+    <menuitem name="Copy" action="Copy"/>
+    <menuitem name="Paste" action="Paste"/>
     <menuitem name="Rename..." action="Rename..."/>
     <menuitem name="Remove..." action="Remove..."/>
     <separator/>
@@ -141,7 +150,7 @@ Viewing check button for switch 'Select in collapsed suites'
 Viewing radio button for switch 'Current selection:', options Discard/Refine/Extend/Exclude'. Default value 0.
 Viewing action with title '_Select'
 
-Changing GUI status to: 'TextTest started at 31Jul15:17:47.'
+Changing GUI status to: 'TextTest started at 01Aug13:26:50.'
 
 'set test selection to' event created with arguments 'Game9952'
 Setting sensitivity of action 'Remove...' to True
@@ -188,6 +197,8 @@ Marking 1 tests as selected
 Test column header set to 'Tests: 1/12 selected'
 
 Setting file-view title to 'NewTest'
+Setting sensitivity of action '_Copy' to True
+Setting sensitivity of action '_Cut' to True
 Setting sensitivity of action '_Run' to True
 Setting sensitivity of action '_Rename...' to True
 Setting sensitivity of action '_Sort Test Suite File' to False
@@ -206,7 +217,7 @@ Description:
 <No description provided>
 --------------------------------------
 
-Tabs showing : Text Info, Copying, New File, Bugs
+Tabs showing : Text Info, New File, Bugs
 
 Test Tree description...
 -> TargetApp (dip)
@@ -240,6 +251,8 @@ Adding file testsuite.dip.small under heading 'Definition Files', coloured grey9
 Description:
 <No description provided>
 --------------------------------------
+Setting sensitivity of action '_Copy' to False
+Setting sensitivity of action '_Cut' to False
 Setting sensitivity of action '_Run' to False
 Setting sensitivity of action '_Rename...' to False
 Setting sensitivity of action '_Sort Test Suite File' to True
@@ -311,6 +324,8 @@ Changing GUI status to: 'Added new DIP test-suite NewSuite'
 Test column header set to 'Tests: 1/12 selected'
 
 Setting file-view title to 'NewTest'
+Setting sensitivity of action '_Copy' to True
+Setting sensitivity of action '_Cut' to True
 Setting sensitivity of action '_Run' to True
 Setting sensitivity of action '_Rename...' to True
 Setting sensitivity of action '_Sort Test Suite File' to False
@@ -327,28 +342,43 @@ Description:
 <No description provided>
 --------------------------------------
 
-Tabs showing : Text Info, Copying, New File, Bugs
+Tabs showing : Text Info, New File, Bugs
 
-'view sub-options for test :' event created with arguments 'Copying'
+'cut selected tests' event created with arguments ''
+Setting sensitivity of action '_Paste' to True
 
-Viewing notebook page for 'Copying'
-Viewing entry for option 'Name of copy' (set to 'NewTest_copy')
-Viewing entry for option 'Description' (set to 'Copy of NewTest')
-Viewing entry for option 'Copy to suite' (set to 'current') (drop-down list containing ['current', 'TargetApp', 'TargetApp/Game9952', 'TargetApp/Game9952/NewSuite', 'TargetApp/npstIII', 'TargetApp/npstIII/Game47'])
-Viewing entry for option 'Place copy' (set to 'last in suite') (drop-down list containing ['first in suite', 'after S01.99', 'after A01', 'after S02', 'after A02', 'after S03', 'after A03', 'after S04', 'after A04', 'after S05', 'after A05', 'after NewTest', 'after NewSuite', 'last in suite'])
-Viewing check button for switch 'Keep original' (checked)
-Viewing action with title '_Copy'
+Changing GUI status to: 'Performed 'Cut selected tests' on 1 tests.'
 
-'enter copy to suite =' event created with arguments 'TargetApp/Game9952/NewSuite'
+'set test selection to' event created with arguments 'NewSuite'
 
-'enter name of copy =' event created with arguments 'NewTest'
+Test column header set to 'Tests: 0/12 selected'
 
-'uncheck keep original' event created with arguments ''
+Setting file-view title to 'NewSuite'
+Adding file testsuite.dip under heading 'Definition Files', coloured grey90
 
-'copy test' event created with arguments ''
-Adding Test NewTest under test suite DIP test-suite NewSuite, placed last in suite
+---------- Text Info Window ----------
+Description:
+<No description provided>
+--------------------------------------
+Setting sensitivity of action '_Copy' to False
+Setting sensitivity of action '_Cut' to False
+Setting sensitivity of action '_Run' to False
+Setting sensitivity of action '_Rename...' to False
+Setting sensitivity of action '_Sort Test Suite File' to True
+Setting sensitivity of action '_Reversed Sort Test Suite File' to True
+Setting sensitivity of action 'Move down' to False
+Setting sensitivity of action 'Move to last' to False
+Setting sensitivity of action 'Re_connect' to False
+Setting sensitivity of action 'S_ave Selection...' to False
 
-Test column header set to 'Tests: 1/13 selected'
+Tabs showing : Test, Selection, Config
+
+Tabs showing : Text Info, Adding Test, Adding Suite, New File, Bugs
+
+'paste tests from clipboard' event created with arguments ''
+Pasting test NewTest under test suite DIP test-suite NewSuite, in position 0
+
+Test column header set to 'Tests: 0/13 selected'
 Selecting new test NewTest
 
 Test Tree description...
@@ -372,19 +402,28 @@ Test Tree description...
 ->       S01
 Marking 1 tests as selected
 
+Test column header set to 'Tests: 1/13 selected'
+
 Setting file-view title to 'NewTest'
 
-Viewing notebook page for 'Copying'
-Viewing entry for option 'Name of copy' (set to 'NewTest_copy')
-Viewing entry for option 'Description' (set to 'Copy of NewTest')
-Viewing entry for option 'Copy to suite' (set to 'current') (drop-down list containing ['current', 'TargetApp', 'TargetApp/Game9952', 'TargetApp/Game9952/NewSuite', 'TargetApp/npstIII', 'TargetApp/npstIII/Game47'])
-Viewing entry for option 'Place copy' (set to 'last in suite') (drop-down list containing ['first in suite', 'after NewTest', 'last in suite'])
-Viewing check button for switch 'Keep original'
-Viewing action with title '_Copy'
+---------- Text Info Window ----------
+Description:
+<No description provided>
+--------------------------------------
+Setting sensitivity of action '_Copy' to True
+Setting sensitivity of action '_Cut' to True
+Setting sensitivity of action '_Run' to True
+Setting sensitivity of action '_Rename...' to True
+Setting sensitivity of action '_Sort Test Suite File' to False
+Setting sensitivity of action '_Reversed Sort Test Suite File' to False
 Setting sensitivity of action 'Move to first' to False
 Setting sensitivity of action 'Move up' to False
-Setting sensitivity of action 'Move down' to False
-Setting sensitivity of action 'Move to last' to False
+Setting sensitivity of action 'Re_connect' to True
+Setting sensitivity of action 'S_ave Selection...' to True
+
+Tabs showing : Test, Selection, Running, Config
+
+Tabs showing : Text Info, New File, Bugs
 
 Test Tree description...
 -> TargetApp (dip)
@@ -409,7 +448,7 @@ Test Tree description...
 Test column header set to 'Tests: 1/12 selected'
 Removing test with path Game9952/NewTest
 
-Changing GUI status to: 'Added new DIP test-case NewTest'
+Changing GUI status to: 'Performed 'Paste tests from clipboard' on DIP test-case NewTest.'
 
 'quit' event created with arguments ''
 

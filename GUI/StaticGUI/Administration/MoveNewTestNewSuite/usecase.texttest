@@ -7,9 +7,7 @@ view sub-options for test : Adding Suite
 enter suite name = NewSuite
 add suite
 set test selection to NewTest
-view sub-options for test : Copying
-enter copy to suite = TargetApp/Game9952/NewSuite
-enter name of copy = NewTest
-uncheck keep original
-copy test
+cut selected tests
+set test selection to NewSuite
+paste tests from clipboard
 quit
