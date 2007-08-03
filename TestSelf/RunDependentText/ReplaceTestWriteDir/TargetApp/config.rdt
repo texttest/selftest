@@ -1,0 +1,10 @@
+# Path to the binary
+binary:${TEXTTEST_HOME}/writeessay.py
+
+import_config_file:${OUTER_TT}/standard_console
+
+# View everything
+lines_of_text_difference:40
+
+[run_dependent_text]
+output:{INTERNAL writedir}{REPLACE <test write directory>}
