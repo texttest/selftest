@@ -31,11 +31,20 @@ LeadingTrailingSpaces
 # Removing words beyond the end of lines should trim trailing spaces
 RemoveWordBeyondEnd
 
+# Removing words before the start of lines doesn't trim leading spaces, we treat trailing and leading spaces separately
+RemoveWordBeforeStart
+
 # Make sure we can replace regular expressions with something else
 ReplaceRegex
 
 # Check that replace functionality works with word removal...
 ReplaceWord
+
+# If we filter out all words we should be able to replace them all with something
+ReplaceMultipleWords
+
+# Check we can replace a whole line
+ReplaceLineNumber
 
 # Check we can filter the actual test write directory
 ReplaceTestWriteDir

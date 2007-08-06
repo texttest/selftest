@@ -1,0 +1,48 @@
+TextTest will write diagnostics in /users/geoff/texttesttmp/texttest.06Aug110017/TestSelf/RunDependentText/ReplaceMultipleWords based on file at /users/geoff/work/master/Testing/Automatic/texttest/logging.texttest
+Using Application RDT
+Running RDT test-suite TargetApp
+  Running RDT test-case Test
+Comparing differences for RDT test-suite TargetApp
+  Comparing differences for RDT test-case Test (on output.rdt)
+  RDT test-case Test FAILED : differences in output
+  View details(v), Save(s) or continue(any other key)?
+---------- Differences in output ----------
+2c2
+< Sometimes we remove the second line...
+---
+> Sometimes we remove line number 2...
+4c4
+< And other <date words>
+---
+> Sometimes we <date words>
+6,7c6,7
+< We need to be able to match on trailing spaces   
+<    and also on leading spaces
+---
+> We need to be able to match on trailing spaces 
+>  and also on leading spaces
+9,12c9,12
+< Sometimes several lines must go:
+< Here
+< There
+< Everywhere
+---
+> Or even several lines at once, like in this table:
+>    Here     are     some     columns
+>    That    have    spacing   between
+> Repeating     3     3     3     3
+14,18c14,18
+< Other times between markers, starting section:
+< Tom
+< Dick
+< Harry
+< End Section
+---
+> Sometimes between markers, starting section
+> Rant
+> Rave Horribly
+> Gibber Horribly
+> End Section Here
+<See also tkdiff window for details of output>
+  Save(s) or continue(any other key)?
+Terminating graphical viewer...
