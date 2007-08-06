@@ -1,4 +1,4 @@
-Top Window title is TextTest dynamic GUI (tests started at 03Aug16:31:27)
+Top Window title is TextTest dynamic GUI (tests started at 04Aug23:56:34)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -15,6 +15,8 @@ Viewing action with title 'Follow File Progress' (greyed out)
 Viewing action with title '_Save', stock id ''gtk-save'', accelerator ''<control>s'' (greyed out)
 Viewing action with title 'S_ave Selection...', stock id ''gtk-save-as'', accelerator ''<control><shift>s''
 Viewing action with title '_Kill', stock id ''gtk-stop''
+Viewing action with title '_Mark', accelerator ''<control><shift>m'' (greyed out)
+Viewing action with title '_Unmark', accelerator ''<control><shift>u'' (greyed out)
 Viewing action with title '_Log'
 Viewing action with title 'Log Recursive'
 Viewing action with title 'Log Latest'
@@ -50,6 +52,8 @@ UI layout:
     </menu>
     <menu name="actionsmenu" action="actionsmenu">
       <menuitem name="Kill" action="Kill"/>
+      <menuitem name="Mark" action="Mark"/>
+      <menuitem name="Unmark" action="Unmark"/>
     </menu>
     <placeholder name="ExtraMenus">
       <menu name="optimizationmenu" action="optimizationmenu">
@@ -86,6 +90,8 @@ UI layout:
     <separator/>
   </toolbar>
   <popup name="TestPopupMenu">
+    <menuitem name="Mark" action="Mark"/>
+    <menuitem name="Unmark" action="Unmark"/>
     <menu name="CVSmenu" action="CVSmenu">
       <menuitem name="Log" action="Log"/>
       <menuitem name="Log Recursive" action="Log Recursive"/>
@@ -172,7 +178,7 @@ CPU time   :      11.4 sec. on fougamou
 Real time  :      14.3 sec.
 --------------------------------------
 
-Changing GUI status to: 'TextTest started at 03Aug16:31:27.'
+Changing GUI status to: 'TextTest started at 04Aug23:56:35.'
 
 Waiting for application event 'completion of test actions' to occur.
 Redrawing test generate_in_subperiod coloured red
@@ -219,10 +225,11 @@ Test FAILED :
 --------------------------------------
 Setting sensitivity of action '_Save' to True
 Setting sensitivity of action '_Kill' to False
+Setting sensitivity of action '_Mark' to True
 
 Tabs showing : Text Info, Saving
 
-Progress bar set to fraction 1.0, text 'All 1 tests completed at 03Aug16:31:28'
+Progress bar set to fraction 1.0, text 'All 1 tests completed at 04Aug23:56:35'
 Expected application event 'completion of test actions' occurred, proceeding.
 
 'plot graph' event created with arguments ''

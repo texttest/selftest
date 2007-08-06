@@ -1,4 +1,4 @@
-Top Window title is TextTest dynamic GUI (tests started at 01Aug10:17:58)
+Top Window title is TextTest dynamic GUI (tests started at 05Aug00:18:47)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -15,6 +15,8 @@ Viewing action with title 'Follow File Progress' (greyed out)
 Viewing action with title '_Save', stock id ''gtk-save'', accelerator ''<control>s'' (greyed out)
 Viewing action with title 'S_ave Selection...', stock id ''gtk-save-as'', accelerator ''<control><shift>s''
 Viewing action with title '_Kill', stock id ''gtk-stop''
+Viewing action with title '_Mark', accelerator ''<control><shift>m'' (greyed out)
+Viewing action with title '_Unmark', accelerator ''<control><shift>u'' (greyed out)
 Viewing action with title '_Log'
 Viewing action with title 'Log Recursive'
 Viewing action with title 'Log Latest'
@@ -50,6 +52,8 @@ UI layout:
     </menu>
     <menu name="actionsmenu" action="actionsmenu">
       <menuitem name="Kill" action="Kill"/>
+      <menuitem name="Mark" action="Mark"/>
+      <menuitem name="Unmark" action="Unmark"/>
     </menu>
     <placeholder name="ExtraMenus">
       <menu name="optimizationmenu" action="optimizationmenu">
@@ -86,6 +90,8 @@ UI layout:
     <separator/>
   </toolbar>
   <popup name="TestPopupMenu">
+    <menuitem name="Mark" action="Mark"/>
+    <menuitem name="Unmark" action="Unmark"/>
     <menu name="CVSmenu" action="CVSmenu">
       <menuitem name="Log" action="Log"/>
       <menuitem name="Log Recursive" action="Log Recursive"/>
@@ -166,7 +172,7 @@ Expected running time for the default version:
 CPU time   :      0.95 sec. on easthartford
 --------------------------------------
 
-Changing GUI status to: 'TextTest started at 01Aug10:17:59.'
+Changing GUI status to: 'TextTest started at 05Aug00:18:48.'
 
 Waiting for application event 'completion of test actions' to occur.
 Redrawing test 2crew_illegal_subchain coloured yellow
@@ -176,7 +182,7 @@ Adding file errors.cas under heading 'Temporary Files', coloured yellow
 Adding file output.cas under heading 'Temporary Files', coloured yellow
 
 ---------- Text Info Window ----------
-Running on shelbyville
+Running on tilin
 --------------------------------------
 Setting sensitivity of action '_Update Info' to True
 Redrawing test 2crew_illegal_subchain coloured green
@@ -205,7 +211,7 @@ Test progress:
 Tabs showing : Status
 Redrawing suite TargetApp : second column 'All 1 tests successful' coloured green
 
-Progress bar set to fraction 1.0, text 'All 1 tests completed at 01Aug10:18:00'
+Progress bar set to fraction 1.0, text 'All 1 tests completed at 05Aug00:18:50'
 
 Test progress:
 --> Not started : 0, colour 'white', font ''

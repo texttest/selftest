@@ -1,4 +1,4 @@
-Top Window title is TextTest dynamic GUI (tests started at 03Aug16:13:17)
+Top Window title is TextTest dynamic GUI (tests started at 04Aug23:55:12)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -15,6 +15,8 @@ Viewing action with title 'Follow File Progress' (greyed out)
 Viewing action with title '_Save', stock id ''gtk-save'', accelerator ''<control>s'' (greyed out)
 Viewing action with title 'S_ave Selection...', stock id ''gtk-save-as'', accelerator ''<control><shift>s'' (greyed out)
 Viewing action with title '_Kill', stock id ''gtk-stop'' (greyed out)
+Viewing action with title '_Mark', accelerator ''<control><shift>m'' (greyed out)
+Viewing action with title '_Unmark', accelerator ''<control><shift>u'' (greyed out)
 Viewing action with title '_Migration Notes'
 Viewing action with title 'Component _Versions'
 Viewing action with title '_About TextTest', stock id ''gtk-about''
@@ -40,6 +42,8 @@ UI layout:
     </menu>
     <menu name="actionsmenu" action="actionsmenu">
       <menuitem name="Kill" action="Kill"/>
+      <menuitem name="Mark" action="Mark"/>
+      <menuitem name="Unmark" action="Unmark"/>
     </menu>
     <placeholder name="ExtraMenus">
     </placeholder>
@@ -58,6 +62,8 @@ UI layout:
     <separator/>
   </toolbar>
   <popup name="TestPopupMenu">
+    <menuitem name="Mark" action="Mark"/>
+    <menuitem name="Unmark" action="Unmark"/>
   </popup>
   <popup name="TestFilePopupMenu">
     <menuitem name="View File" action="View File"/>
@@ -89,7 +95,7 @@ Tabs showing : Status
 Test progress:
 --> Not started : 3, colour 'white', font 'bold'
 
-Changing GUI status to: 'TextTest started at 03Aug16:13:18.'
+Changing GUI status to: 'TextTest started at 04Aug23:55:13.'
 
 Waiting for application event 'completion of test actions' to occur.
 Redrawing test OutDiff coloured yellow
@@ -138,7 +144,7 @@ Test progress:
 Redrawing test OutDiff coloured red
 (Second column 'output different' coloured red)
 
-Progress bar set to fraction 1.0, text 'All 3 tests completed at 03Aug16:13:19'
+Progress bar set to fraction 1.0, text 'All 3 tests completed at 04Aug23:55:14'
 
 Test progress:
 --> Not started : 0, colour 'white', font ''
@@ -153,6 +159,7 @@ Expected application event 'completion of test actions' occurred, proceeding.
 Test column header set to 'Tests: 1/3 selected, none hidden'
 Setting sensitivity of action '_Save' to True
 Setting sensitivity of action 'S_ave Selection...' to True
+Setting sensitivity of action '_Mark' to True
 
 Setting file-view title to 'OutDiff'
 Adding file errors.hello under heading 'Comparison Files', coloured green
@@ -194,6 +201,7 @@ Redrawing suite TargetApp : second column 'All 1 tests successful' coloured gree
 Test column header set to 'Tests: 0/3 selected, none hidden'
 Setting sensitivity of action '_Save' to False
 Setting sensitivity of action 'S_ave Selection...' to False
+Setting sensitivity of action '_Mark' to False
 
 Test progress:
 --> Not started : 0, colour 'white', font ''
@@ -219,6 +227,7 @@ Changing GUI status to: 'Saved 1 tests.'
 Test column header set to 'Tests: 1/3 selected, none hidden'
 Setting sensitivity of action '_Save' to True
 Setting sensitivity of action 'S_ave Selection...' to True
+Setting sensitivity of action '_Mark' to True
 
 Setting file-view title to 'OutDiff'
 Adding file errors.hello under heading 'Comparison Files', coloured green
@@ -260,6 +269,7 @@ Redrawing suite TargetApp : second column 'All 1 tests successful' coloured gree
 Test column header set to 'Tests: 0/3 selected, none hidden'
 Setting sensitivity of action '_Save' to False
 Setting sensitivity of action 'S_ave Selection...' to False
+Setting sensitivity of action '_Mark' to False
 
 Test progress:
 --> Not started : 0, colour 'white', font ''
@@ -304,6 +314,7 @@ Test progress:
 --> Succeeded : 3, colour 'green', font 'bold'
 
 Changing GUI status to: 'Done recomputing status of HELLO test-case OutDiff.'
+Setting sensitivity of action '_Mark' to True
 
 'show test suite' event created with arguments 'TargetApp version 10.4'
 
@@ -362,8 +373,8 @@ Setting sensitivity of action 'View Raw Differences' to True
 
 'view raw differences' event created with arguments ''
 Starting graphical difference comparison using 'tkdiff':
--- original file : /users/mattias/texttesttmp/texttest.03Aug161226/TestSelf/ChangeTestResults/GUI/RefreshVersionToSave/TargetApp/OutDiff/output.hello.10
---  current file : /users/mattias/texttesttmp/texttest.03Aug161226/TestSelf/ChangeTestResults/GUI/RefreshVersionToSave/texttesttmp/hello.10.4.03Aug161317/OutDiff/output.hello
+-- original file : /users/mattias/texttesttmp/texttest.04Aug235455/TestSelf/ChangeTestResults/GUI/RefreshVersionToSave/TargetApp/OutDiff/output.hello.10
+--  current file : /users/mattias/texttesttmp/texttest.04Aug235455/TestSelf/ChangeTestResults/GUI/RefreshVersionToSave/texttesttmp/hello.10.4.04Aug235512/OutDiff/output.hello
 
 Changing GUI status to: 'Started "tkdiff output.hello.10 output.hello" in background (from test OutDiff version 10.4).'
 

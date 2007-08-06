@@ -1,0 +1,26 @@
+wait for completion of test actions
+show test suite suite
+set test selection to success
+mark the selected tests
+enter new test state free text Nothing which needs filtering
+press ok
+wait for test success to marked
+set test selection to complex_fail2
+mark the selected tests
+enter new test state brief text ignored
+enter new test state free text Nothing which needs filtering
+press ok
+wait for test complex_fail2 to marked
+set test selection to simple_fail2
+mark the selected tests
+enter new test state free text Nothing which needs filtering
+press ok
+wait for test simple_fail2 to marked
+set test selection to complex_fail1,simple_fail1,simple_fail2
+mark the selected tests
+enter new test state brief text Multimarked
+enter new test state free text Nothing which needs filtering
+press ok
+wait for test simple_fail1 to marked, test simple_fail2 to marked, test complex_fail1 to marked
+view options for Status
+quit

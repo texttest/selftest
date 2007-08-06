@@ -1,4 +1,4 @@
-Top Window title is TextTest dynamic GUI (tests started at 03Aug16:31:22)
+Top Window title is TextTest dynamic GUI (tests started at 06Aug11:51:18)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -15,6 +15,8 @@ Viewing action with title 'Follow File Progress' (greyed out)
 Viewing action with title '_Save', stock id ''gtk-save'', accelerator ''<control>s'' (greyed out)
 Viewing action with title 'S_ave Selection...', stock id ''gtk-save-as'', accelerator ''<control><shift>s'' (greyed out)
 Viewing action with title '_Kill', stock id ''gtk-stop'' (greyed out)
+Viewing action with title '_Mark', accelerator ''<control><shift>m'' (greyed out)
+Viewing action with title '_Unmark', accelerator ''<control><shift>u'' (greyed out)
 Viewing action with title '_Log' (greyed out)
 Viewing action with title 'Log Recursive' (greyed out)
 Viewing action with title 'Log Latest' (greyed out)
@@ -50,6 +52,8 @@ UI layout:
     </menu>
     <menu name="actionsmenu" action="actionsmenu">
       <menuitem name="Kill" action="Kill"/>
+      <menuitem name="Mark" action="Mark"/>
+      <menuitem name="Unmark" action="Unmark"/>
     </menu>
     <placeholder name="ExtraMenus">
       <menu name="optimizationmenu" action="optimizationmenu">
@@ -86,6 +90,8 @@ UI layout:
     <separator/>
   </toolbar>
   <popup name="TestPopupMenu">
+    <menuitem name="Mark" action="Mark"/>
+    <menuitem name="Unmark" action="Unmark"/>
     <menu name="CVSmenu" action="CVSmenu">
       <menuitem name="Log" action="Log"/>
       <menuitem name="Log Recursive" action="Log Recursive"/>
@@ -147,7 +153,7 @@ Tabs showing : Status
 Test progress:
 --> Not started : 2, colour 'white', font 'bold'
 
-Changing GUI status to: 'TextTest started at 03Aug16:31:23.'
+Changing GUI status to: 'TextTest started at 06Aug11:51:20.'
 
 Waiting for application event 'test all_1crew version <default> to start ruleset compilation' to occur.
 Waiting for application event 'test all_1crew version 2 to start ruleset compilation' to occur.
@@ -164,14 +170,14 @@ Test progress:
 --> Not started : 0, colour 'white', font ''
 --> Pend rulecompile : 2, colour 'white', font 'bold'
 Redrawing test all_1crew coloured peach puff
-(Second column 'RULES (severodoneck)' coloured peach puff)
+(Second column 'RULES (townsville)' coloured peach puff)
 
 Test progress:
 --> Not started : 0, colour 'white', font ''
 --> Pend rulecompile : 1, colour 'white', font 'bold'
 --> Running rulecompile : 1, colour 'peach puff', font 'bold'
 Redrawing test all_1crew coloured peach puff
-(Second column 'RULES (severodoneck)' coloured peach puff)
+(Second column 'RULES (townsville)' coloured peach puff)
 
 Test progress:
 --> Not started : 0, colour 'white', font ''
@@ -202,9 +208,9 @@ Test progress:
 ----> Cancelled : 1, colour 'red', font 'bold'
 ------> cancelled : 1, colour 'red', font 'bold'
 Redrawing test all_1crew coloured red
-(Second column 'Ruleset build killed at 16:31' coloured red)
+(Second column 'Ruleset build killed at 11:51' coloured red)
 
-Progress bar set to fraction 1.0, text 'All 2 tests completed at 03Aug16:31:25'
+Progress bar set to fraction 1.0, text 'All 2 tests completed at 06Aug11:51:23'
 
 Test progress:
 --> Not started : 0, colour 'white', font ''
@@ -213,6 +219,6 @@ Test progress:
 --> Failed : 2, colour 'red', font 'bold'
 ----> Cancelled : 2, colour 'red', font 'bold'
 ------> cancelled : 1, colour 'red', font 'bold'
-------> Ruleset build killed at 16:31 : 1, colour 'red', font 'bold'
+------> Ruleset build killed at 11:51 : 1, colour 'red', font 'bold'
 
 Changing GUI status to: 'Removing all temporary files ...'

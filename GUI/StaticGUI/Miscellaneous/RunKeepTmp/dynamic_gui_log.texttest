@@ -1,4 +1,4 @@
-Top Window title is TextTest dynamic GUI (tests started at 01Aug09:46:15)
+Top Window title is TextTest dynamic GUI (tests started at 05Aug01:14:30)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -15,6 +15,8 @@ Viewing action with title 'Follow File Progress' (greyed out)
 Viewing action with title '_Save', stock id ''gtk-save'', accelerator ''<control>s'' (greyed out)
 Viewing action with title 'S_ave Selection...', stock id ''gtk-save-as'', accelerator ''<control><shift>s''
 Viewing action with title '_Kill', stock id ''gtk-stop''
+Viewing action with title '_Mark', accelerator ''<control><shift>m'' (greyed out)
+Viewing action with title '_Unmark', accelerator ''<control><shift>u'' (greyed out)
 Viewing action with title '_Migration Notes'
 Viewing action with title 'Component _Versions'
 Viewing action with title '_About TextTest', stock id ''gtk-about''
@@ -40,6 +42,8 @@ UI layout:
     </menu>
     <menu name="actionsmenu" action="actionsmenu">
       <menuitem name="Kill" action="Kill"/>
+      <menuitem name="Mark" action="Mark"/>
+      <menuitem name="Unmark" action="Unmark"/>
     </menu>
     <placeholder name="ExtraMenus">
     </placeholder>
@@ -58,6 +62,8 @@ UI layout:
     <separator/>
   </toolbar>
   <popup name="TestPopupMenu">
+    <menuitem name="Mark" action="Mark"/>
+    <menuitem name="Unmark" action="Unmark"/>
   </popup>
   <popup name="TestFilePopupMenu">
     <menuitem name="View File" action="View File"/>
@@ -97,16 +103,17 @@ Description:
 A03 description
 --------------------------------------
 
-Changing GUI status to: 'TextTest started at 01Aug09:46:15.'
+Changing GUI status to: 'TextTest started at 05Aug01:14:30.'
 
 Waiting for application event 'completion of test actions' to occur.
 Redrawing test A03 coloured yellow
 
 Setting file-view title to 'A03'
+Adding file errors.dip under heading 'Temporary Files', coloured yellow
 Adding file output.dip under heading 'Temporary Files', coloured yellow
 
 ---------- Text Info Window ----------
-Running on greenville
+Running on lineville
 --------------------------------------
 Setting sensitivity of action '_Update Info' to True
 Redrawing test A03 coloured green
@@ -124,7 +131,7 @@ Test progress:
 Tabs showing : Status
 Redrawing suite TargetApp : second column 'All 1 tests successful' coloured green
 
-Progress bar set to fraction 1.0, text 'All 1 tests completed at 01Aug09:46:16'
+Progress bar set to fraction 1.0, text 'All 1 tests completed at 05Aug01:14:33'
 
 Test progress:
 --> Not started : 0, colour 'white', font ''

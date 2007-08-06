@@ -1,0 +1,41 @@
+wait for completion of test actions
+show test suite suite
+set progress report filter selection to output different
+mark the selected tests
+enter new test state free text Nothing that needs filtering
+press ok
+wait for test complex_fail1 to marked, test complex_fail2 to marked
+set test selection to complex_fail2
+set test selection to simple_fail2,complex_fail1,success
+mark the selected tests
+enter new test state brief text Marked2
+enter new test state free text Nothing that needs filtering
+press ok
+wait for test simple_fail2 to marked, test complex_fail1 to marked, test success to marked
+set test selection to complex_fail1
+set test selection to complex_fail2
+unmark the selected tests
+wait for test complex_fail2 to unmarked
+set test selection to simple_fail1
+mark the selected tests
+enter new test state brief text Marked3
+enter new test state free text Nothing that needs filtering
+press ok
+wait for test simple_fail1 to marked
+set test selection to simple_fail2,complex_fail1
+unmark the selected tests
+wait for test simple_fail2 to unmarked, test complex_fail1 to unmarked
+view options for Status
+set progress report filter selection to 
+set test selection to complex_fail1
+mark the selected tests
+enter new test state brief text Marked4
+enter new test state free text Nothing that needs filtering
+press ok
+wait for test complex_fail1 to marked
+view options for Status
+set progress report filter selection to Marked by user
+unmark the selected tests
+wait for test simple_fail1 to unmarked, test complex_fail1 to unmarked, test success to unmarked
+set progress report filter selection to 
+quit
