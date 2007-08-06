@@ -14,9 +14,16 @@ choose folder filter_files
 wait for dialog to be displayed
 enter filter-file name = two
 press save
-enter tests listed in file = filter_files/one
-select indicated tests from tab
+load test selection from file
+wait for dialog to be displayed
+select filter-file one
+wait for dialog to be displayed
+press load
 choose extend
-enter tests listed in file = filter_files/two
+search for files for 'tests listed in file'
+wait for dialog to be displayed
+select filter-file two
+wait for dialog to be displayed
+open selected file
 select indicated tests from tab
 quit
