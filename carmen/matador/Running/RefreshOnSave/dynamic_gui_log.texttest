@@ -1,4 +1,4 @@
-Top Window title is TextTest dynamic GUI (tests started at 05Aug00:18:35)
+Top Window title is TextTest dynamic GUI (tests started at 15Aug11:23:36)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -8,6 +8,7 @@ Viewing toggle action with title '_Shortcut bar'
 Viewing toggle action with title '_Status bar'
 Viewing action with title '_Quit', stock id ''gtk-quit'', accelerator ''<control>q''
 Viewing action with title 'View File' (greyed out)
+Viewing action with title '_File Properties' (greyed out)
 Viewing action with title 'View Filtered File' (greyed out)
 Viewing action with title 'View Raw Differences' (greyed out)
 Viewing action with title 'View Differences' (greyed out)
@@ -116,6 +117,9 @@ UI layout:
     <menuitem name="View Raw Differences" action="View Raw Differences"/>
     <separator/>
     <menuitem name="Follow File Progress" action="Follow File Progress"/>
+    <separator/>
+    <menuitem name="File Properties" action="File Properties"/>
+    <separator/>
     <menu name="CVSmenu" action="CVSmenu">
       <menuitem name="Log" action="Log"/>
       <menuitem name="Log Recursive" action="Log Recursive"/>
@@ -153,7 +157,7 @@ Tabs showing : Status
 Test progress:
 --> Not started : 2, colour 'white', font 'bold'
 
-Changing GUI status to: 'TextTest started at 05Aug00:18:36.'
+Changing GUI status to: 'TextTest started at 15Aug11:23:38.'
 
 Waiting for application event 'completion of test actions' to occur.
 Redrawing test firstpos_illegal coloured yellow
@@ -185,7 +189,7 @@ Test progress:
 Redrawing test firstpos_illegal coloured red
 (Second column 'solution 100.0% better(+)' coloured red)
 
-Progress bar set to fraction 1.0, text 'All 2 tests completed at 05Aug00:18:41'
+Progress bar set to fraction 1.0, text 'All 2 tests completed at 15Aug11:23:43'
 
 Test progress:
 --> Not started : 0, colour 'white', font ''
@@ -226,7 +230,7 @@ Viewing action with title 'CVS _Log'
 Tabs showing :
 
 ---------- Text Info Window ----------
-Test FAILED on tilin :
+Test FAILED on onepusu :
 ---------- Differences in output ----------
 7d6
 < Total cost of plan.......: 600
@@ -270,7 +274,7 @@ Adding file solution.cas under heading 'Comparison Files', coloured green
 Setting sensitivity of action '_Save' to False
 
 ---------- Text Info Window ----------
-Test succeeded on tilin
+Test succeeded on onepusu
 --------------------------------------
 
 Tabs showing : Text Info
@@ -287,7 +291,7 @@ Adding file solution.cas under heading 'Comparison Files', coloured red
 (Second column 'solution 100.0% better' coloured red)
 
 ---------- Text Info Window ----------
-Test FAILED on tilin :
+Test FAILED on onepusu :
 ---------- Differences in output ----------
 7d6
 < Total cost of plan.......: 600
@@ -311,7 +315,7 @@ Adding file output.cas under heading 'Comparison Files', coloured green
 Adding file solution.cas under heading 'Comparison Files', coloured green
 
 ---------- Text Info Window ----------
-Test succeeded on tilin
+Test succeeded on onepusu
 --------------------------------------
 Setting sensitivity of action '_Save' to False
 

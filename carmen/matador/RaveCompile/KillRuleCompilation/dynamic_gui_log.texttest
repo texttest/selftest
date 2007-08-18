@@ -1,4 +1,4 @@
-Top Window title is TextTest dynamic GUI (tests started at 06Aug11:51:17)
+Top Window title is TextTest dynamic GUI (tests started at 15Aug11:23:38)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -8,6 +8,7 @@ Viewing toggle action with title '_Shortcut bar'
 Viewing toggle action with title '_Status bar'
 Viewing action with title '_Quit', stock id ''gtk-quit'', accelerator ''<control>q''
 Viewing action with title 'View File' (greyed out)
+Viewing action with title '_File Properties' (greyed out)
 Viewing action with title 'View Filtered File' (greyed out)
 Viewing action with title 'View Raw Differences' (greyed out)
 Viewing action with title 'View Differences' (greyed out)
@@ -116,6 +117,9 @@ UI layout:
     <menuitem name="View Raw Differences" action="View Raw Differences"/>
     <separator/>
     <menuitem name="Follow File Progress" action="Follow File Progress"/>
+    <separator/>
+    <menuitem name="File Properties" action="File Properties"/>
+    <separator/>
     <menu name="CVSmenu" action="CVSmenu">
       <menuitem name="Log" action="Log"/>
       <menuitem name="Log Recursive" action="Log Recursive"/>
@@ -153,7 +157,7 @@ Tabs showing : Status
 Test progress:
 --> Not started : 2, colour 'white', font 'bold'
 
-Changing GUI status to: 'TextTest started at 06Aug11:51:18.'
+Changing GUI status to: 'TextTest started at 15Aug11:23:39.'
 
 Waiting for application event 'test all_1crew version <default> to start ruleset compilation' to occur.
 Waiting for application event 'test all_1crew version othercarmtmp to start ruleset compilation' to occur.
@@ -170,14 +174,14 @@ Test progress:
 --> Not started : 0, colour 'white', font ''
 --> Pend rulecompile : 2, colour 'white', font 'bold'
 Redrawing test all_1crew coloured peach puff
-(Second column 'RULES (circleville)' coloured peach puff)
+(Second column 'RULES (schefferville)' coloured peach puff)
 
 Test progress:
 --> Not started : 0, colour 'white', font ''
 --> Pend rulecompile : 1, colour 'white', font 'bold'
 --> Running rulecompile : 1, colour 'peach puff', font 'bold'
 Redrawing test all_1crew coloured peach puff
-(Second column 'RULES (circleville)' coloured peach puff)
+(Second column 'RULES (schefferville)' coloured peach puff)
 
 Test progress:
 --> Not started : 0, colour 'white', font ''
@@ -196,7 +200,7 @@ Changing GUI status to: 'Killed 2 tests.'
 
 Changing GUI status to: 'Waiting for all tests to terminate ...'
 Redrawing test all_1crew coloured red
-(Second column 'Ruleset build killed at 11:51' coloured red)
+(Second column 'Ruleset build killed at 11:23' coloured red)
 
 Progress bar set to fraction 0.5, text '1 of 2 tests completed'
 
@@ -206,11 +210,11 @@ Test progress:
 --> Running rulecompile : 1, colour 'peach puff', font 'bold'
 --> Failed : 1, colour 'red', font 'bold'
 ----> Cancelled : 1, colour 'red', font 'bold'
-------> Ruleset build killed at 11:51 : 1, colour 'red', font 'bold'
+------> Ruleset build killed at 11:23 : 1, colour 'red', font 'bold'
 Redrawing test all_1crew coloured red
-(Second column 'Ruleset build killed at 11:51' coloured red)
+(Second column 'Ruleset build killed at 11:23' coloured red)
 
-Progress bar set to fraction 1.0, text 'All 2 tests completed at 06Aug11:51:20'
+Progress bar set to fraction 1.0, text 'All 2 tests completed at 15Aug11:23:41'
 
 Test progress:
 --> Not started : 0, colour 'white', font ''
@@ -218,6 +222,6 @@ Test progress:
 --> Running rulecompile : 0, colour 'white', font ''
 --> Failed : 2, colour 'red', font 'bold'
 ----> Cancelled : 2, colour 'red', font 'bold'
-------> Ruleset build killed at 11:51 : 2, colour 'red', font 'bold'
+------> Ruleset build killed at 11:23 : 2, colour 'red', font 'bold'
 
 Changing GUI status to: 'Removing all temporary files ...'
