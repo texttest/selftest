@@ -1,0 +1,168 @@
+Top Window title is TextTest dynamic GUI (tests started at 20Aug10:32:38)
+Default widget is <type 'gtk.TreeView'>
+Setting window width to 60% of screen.
+Setting window height to 83% of screen.
+
+Viewing toggle action with title '_Toolbar'
+Viewing toggle action with title '_Shortcut bar'
+Viewing toggle action with title '_Status bar'
+Viewing action with title '_Quit', stock id ''gtk-quit'', accelerator ''<control>q''
+Viewing action with title 'View File' (greyed out)
+Viewing action with title '_File Properties' (greyed out)
+Viewing action with title 'View Filtered File' (greyed out)
+Viewing action with title 'View Raw Differences' (greyed out)
+Viewing action with title 'View Differences' (greyed out)
+Viewing action with title 'Follow File Progress' (greyed out)
+Viewing action with title '_Save', stock id ''gtk-save'', accelerator ''<control>s'' (greyed out)
+Viewing action with title 'S_ave Selection...', stock id ''gtk-save-as'', accelerator ''<control><shift>s''
+Viewing action with title '_Kill', stock id ''gtk-stop''
+Viewing action with title '_Mark', accelerator ''<control><shift>m'' (greyed out)
+Viewing action with title '_Unmark', accelerator ''<control><shift>u'' (greyed out)
+Viewing action with title '_Migration Notes'
+Viewing action with title 'Component _Versions'
+Viewing action with title '_About TextTest', stock id ''gtk-about''
+
+UI layout: 
+<ui>
+  <menubar name="MainMenuBar">
+    <menu name="filemenu" action="filemenu">
+      <placeholder name="FirstInFileMenu">
+        <menuitem name="Save" action="Save"/>
+        <separator/>
+      </placeholder>
+      <menuitem name="Save Selection..." action="Save Selection..."/>
+      <separator/>
+      <menuitem name="Quit" action="Quit"/>
+    </menu>
+    <menu name="editmenu" action="editmenu">
+    </menu>
+    <menu name="viewmenu" action="viewmenu">
+      <menuitem name="Toolbar" action="Toolbar"/>
+      <menuitem name="Shortcut bar" action="Shortcut bar"/>
+      <menuitem name="Status bar" action="Status bar"/>
+    </menu>
+    <menu name="actionsmenu" action="actionsmenu">
+      <menuitem name="Kill" action="Kill"/>
+      <menuitem name="Mark" action="Mark"/>
+      <menuitem name="Unmark" action="Unmark"/>
+    </menu>
+    <placeholder name="ExtraMenus">
+    </placeholder>
+    <menu name="helpmenu" action="helpmenu">
+      <menuitem name="Migration Notes" action="Migration Notes"/>
+      <separator/>
+      <menuitem name="Component Versions" action="Component Versions"/>
+      <separator/>
+      <menuitem name="About TextTest" action="About TextTest"/>
+    </menu>
+  </menubar>
+  <toolbar name="MainToolBar">
+    <toolitem name="Quit" action="Quit"/>
+    <toolitem name="Kill" action="Kill"/>
+    <toolitem name="Save" action="Save"/>
+    <separator/>
+  </toolbar>
+  <popup name="TestPopupMenu">
+    <menuitem name="Mark" action="Mark"/>
+    <menuitem name="Unmark" action="Unmark"/>
+  </popup>
+  <popup name="TestFilePopupMenu">
+    <menuitem name="View File" action="View File"/>
+    <menuitem name="View Filtered File" action="View Filtered File"/>
+    <separator/>
+    <menuitem name="View Differences" action="View Differences"/>
+    <menuitem name="View Raw Differences" action="View Raw Differences"/>
+    <separator/>
+    <menuitem name="Follow File Progress" action="Follow File Progress"/>
+    <separator/>
+    <menuitem name="File Properties" action="File Properties"/>
+    <separator/>
+  </popup>
+</ui>
+
+Progress bar set to fraction 0.0, text '0 of 1 tests completed'
+
+Test Tree description...
+-> TargetApp (hello)
+->   Test
+
+Test column header set to 'Tests: All 1 selected, none hidden'
+
+Pane separator positioned 50% from the left edge
+
+Tabs showing : Test, Status
+
+Setting file-view title to 'Test'
+Adding file errors.hello under heading 'Standard Files', coloured white
+Adding file output.hello under heading 'Standard Files', coloured white
+
+Viewing action with title '_Update Info' (greyed out)
+
+Pane separator positioned 46% from the top
+
+Tabs showing : Text Info
+
+---------- Text Info Window ----------
+Description:
+<No description provided>
+--------------------------------------
+
+Changing GUI status to: 'TextTest started at 20Aug10:32:38.'
+
+Waiting for application event 'completion of test actions' to occur.
+Redrawing test Test coloured yellow
+
+Setting file-view title to 'Test'
+Adding file errors.hello under heading 'Temporary Files', coloured yellow
+Adding file output.hello under heading 'Temporary Files', coloured yellow
+
+---------- Text Info Window ----------
+Running on abbeville
+--------------------------------------
+Setting sensitivity of action '_Update Info' to True
+Redrawing test Test coloured red
+(Second column 'output different(+)' coloured red)
+
+Setting file-view title to 'Test'
+Adding file errors.hello under heading 'Comparison Files', coloured green
+Adding file output.hello under heading 'Comparison Files', coloured red
+Adding file newout.hello under heading 'New Files', coloured red
+
+---------- Text Info Window ----------
+Test FAILED :
+---------- Differences in output ----------
+1c1
+< Hello
+---
+> Hello World!
+---------- New result in newout ----------
+Hello World!
+--------------------------------------
+Setting sensitivity of action '_Save' to True
+Setting sensitivity of action '_Update Info' to False
+Setting sensitivity of action '_Kill' to False
+Setting sensitivity of action '_Mark' to True
+
+Tabs showing : Text Info, Saving
+
+Progress bar set to fraction 1.0, text 'All 1 tests completed at 20Aug10:32:39'
+Expected application event 'completion of test actions' occurred, proceeding.
+
+'set file selection to' event created with arguments 'newout.hello'
+Setting sensitivity of action 'View File' to True
+Setting sensitivity of action '_File Properties' to True
+Setting sensitivity of action 'View Filtered File' to True
+
+'set file selection to' event created with arguments 'output.hello'
+Setting sensitivity of action 'View File' to False
+Setting sensitivity of action '_File Properties' to False
+Setting sensitivity of action 'View Filtered File' to False
+Setting sensitivity of action 'View File' to True
+Setting sensitivity of action '_File Properties' to True
+Setting sensitivity of action 'View Filtered File' to True
+Setting sensitivity of action 'View Raw Differences' to True
+Setting sensitivity of action 'View Differences' to True
+
+'quit' event created with arguments ''
+
+Changing GUI status to: 'Removing all temporary files ...'
