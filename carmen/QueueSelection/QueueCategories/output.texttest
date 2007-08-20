@@ -1,4 +1,4 @@
-TextTest will write diagnostics in /users/geoff/texttesttmp/texttest.carmen.02Jul163613/carmen/QueueSelection/QueueCategories based on file at /users/geoff/work/master/Testing/Automatic/texttest/logging.texttest
+TextTest will write diagnostics in /users/geoff/texttesttmp/texttest.carmen.20Aug134804/carmen/QueueSelection/QueueCategories based on file at /users/geoff/work/master/Testing/Automatic/texttest/logging.texttest
 Using SGE queues for Application HELLO, version badresource
 Q: Submitting test NoPerf  to SGE queue short, requesting carmarch=*i386_linux*,carmrunmaster=1,no_such_resource
 S: Test NoPerf not compared:
@@ -20,8 +20,8 @@ S: Test 6Hour not compared:
 Failed to submit to SGE (Unable to run job: unknown resource "no_such_resource".)
 Submission command was 'qsub -N Test-6Hour-HELLO.badresource -p -816.0 -l carmarch=*i386_linux*,carmrunmaster=1,no_such_resource,idle -w e -notify -m n -cwd -b y -V -o framework_tmp/slavelog -e framework_tmp/slaveerrs ... '
 
-Q: Submitting test Preset  to SGE queue short, requesting carmarch=*i386_linux*,carmrunmaster=1,no_such_resource
+Q: Submitting test Preset  to SGE queue normal, requesting carmarch=*i386_linux*,carmrunmaster=1,no_such_resource
 S: Test Preset not compared:
 Failed to submit to SGE (Unable to run job: unknown resource "no_such_resource".)
-Submission command was 'qsub -N Test-Preset-HELLO.badresource -p -300.0 -l carmarch=*i386_linux*,carmrunmaster=1,no_such_resource,short -w e -notify -m n -cwd -b y -V -o framework_tmp/slavelog -e framework_tmp/slaveerrs ... '
+Submission command was 'qsub -N Test-Preset-HELLO.badresource -p -300.0 -l carmarch=*i386_linux*,carmrunmaster=1,no_such_resource,normal -w e -notify -m n -cwd -b y -V -o framework_tmp/slavelog -e framework_tmp/slaveerrs ... '
 
