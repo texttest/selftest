@@ -145,12 +145,9 @@ errors:Could not start TextTest{WORD 5}{REPLACE <version>}
 *gui_log:[^/]*[0-9][0-9][A-Z][a-z][a-z][0-9][0-9][0-9][0-9][0-9][0-9]{REPLACE <target tmp dir>}
 *gui_log:+ PID{WORD 3}
 *gui_log:at [0-9][0-9][A-Za-z][a-z][a-z][0-9][0-9]:[0-9][0-9]:[0-9][0-9]{REPLACE at <date/time>}
-gui_log:-rw-rw-r--{WORD 8}{REPLACE <time>}
-gui_log:-rw-rw-r--{WORD 7}{REPLACE <day of month>}
-gui_log:-rw-rw-r--{WORD 6}{REPLACE <month>}
-dynamic_gui_log:-rw-rw-r--{WORD 8}{REPLACE <time>}
-dynamic_gui_log:-rw-rw-r--{WORD 7}{REPLACE <day of month>}
-dynamic_gui_log:-rw-rw-r--{WORD 6}{REPLACE <month>}
+*gui_log:-rw-rw-r--{WORD 8}{REPLACE <time>}
+*gui_log:-rw-rw-r--{WORD 7}{REPLACE <day of month>}
+*gui_log:-rw-rw-r--{WORD 6}{REPLACE <month>}
 dynamic_gui_log:Running on{WORD -1}{REPLACE <machine>}
 dynamic_gui_log:succeeded on{WORD -1}{REPLACE <machine>}
 dynamic_gui_log:FAILED on{WORD -2}{REPLACE <machine>}
