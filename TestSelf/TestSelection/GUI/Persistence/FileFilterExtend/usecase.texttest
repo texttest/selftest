@@ -1,34 +1,24 @@
 set test selection to One,Three
 save selected tests in file
-wait for dialog to be displayed
 choose folder filter_files
-wait for dialog to be displayed
 enter filter-file name = filter1
 press save
 set test selection to Three
 set test selection to One1,Two
 save selected tests in file
-wait for dialog to be displayed
 choose folder filter_files
-wait for dialog to be displayed
 enter filter-file name = filter2
 press save
 load test selection from file
-wait for dialog to be displayed
 select filter-file filter1
-wait for dialog to be displayed
 press load
 choose extend
 search for files for 'tests listed in file'
-wait for dialog to be displayed
 select filter-file filter2
-wait for dialog to be displayed
 open selected file
 select indicated tests from tab
 save selected tests in file
-wait for dialog to be displayed
 choose folder filter_files
-wait for dialog to be displayed
 enter filter-file name = All_tests
 press save
 quit
