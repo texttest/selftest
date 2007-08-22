@@ -168,7 +168,8 @@ gui_log:\[Reported by.*at{WORD 5}{REPLACE <date/time>}
 gui_log:Showing component versions{LINES 5}{REPLACE <version info>}
 # diff output
 dynamic_gui_log:1,2c1
-jusecaseprops:record{WORD -1}
+jusecaseprops:{INTERNAL writedir}{REPLACE <test write dir>}
+jusecaseprops:[^/]*[0-9][0-9][A-Z][a-z][a-z][0-9][0-9][0-9][0-9][0-9][0-9]{REPLACE <target tmp dir>}
 usecase:usecase filtering 3 lines{LINES 3}
 traffic:{INTERNAL writedir}{REPLACE <test write dir>}
 traffic:[^/]*[0-9][0-9][A-Z][a-z][a-z][0-9][0-9][0-9][0-9][0-9][0-9]{REPLACE <target tmp dir>}
