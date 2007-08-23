@@ -109,9 +109,6 @@ def checkInstall(queueSystem, cmdLine, testDir):
         print queueSystem.upper(), "not installed - commented self-tests for", queueSystem, "configuration."
         commentLine(os.path.join(testDir, "config.texttest"), "extra_version:" + queueSystem)
 
-def pythonHasUnsetenv():
-    return "unsetenv" in dir(os)
-
 def configureTests(testDir, sourceDir):
     testSuiteFiles = findPathsMatching(testDir, "testsuite")
     configFile = os.path.join(testDir, "config.texttest")
@@ -152,10 +149,6 @@ def configureTests(testDir, sourceDir):
         print "See the README for downloading instructions."
         for testSuiteFile in testSuiteFiles:
             commentLine(testSuiteFile, "GUI")
-
-    if not pythonHasUnsetenv():
-        print "Your version of python and/or your system does not support unsetting environment variables from Python."
-        print "This will mean you need to take care when using TextTest environment files. See README file"
 
 def getCheckout(optDict):
     if optDict.has_key("-c"):
