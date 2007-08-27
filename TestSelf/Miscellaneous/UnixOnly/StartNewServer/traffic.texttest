@@ -1,9 +1,0 @@
-<-CMD:xdpyinfo -display stupid_machine1:42.0
-->ERR:xdpyinfo:  unable to open display "stupid_machine1:42.0"
-<-CMD:rsh stupid_machine1 "ps -efl"
-->OUT:No processes!
-<-CMD:xdpyinfo -display stupid_machine2:42.0
-->ERR:xdpyinfo:  unable to open display "stupid_machine2:42.0"
-<-CMD:rsh stupid_machine2 "ps -efl"
-->OUT:No processes!
-<-CMD:rsh stupid_machine1 "Xvfb -ac :42"

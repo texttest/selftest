@@ -1,0 +1,32 @@
+# Ordered list of tests in test suite. Add as appropriate
+
+
+# Make sure we can record a basic GUI test
+RecordTest
+
+# Check we can re-record usecases and the right number of tests get replayed
+RerecordTest
+
+# Test that we can record with jusecase also
+RecordJavaTest
+
+# Make sure java tests can also be re-recorded
+RerecordJavaTest
+
+# Copy of RecordTest which sets the checkout
+RecordTestCheckout
+
+# Test what happens when errors happen during record
+RecordFails
+
+# Check we don't get automatic replays if we abandon a record attempt
+AbortRecording
+
+# Check the record settings don't reset themselves too much...
+RecordSettings
+
+# Check we can run a test in slow motion replay and see what comes up
+ActionReplay
+
+# Check we get a warning if we try running too many tests with action replay
+MultiTestActionReplay

@@ -1,0 +1,17 @@
+<-CMD:rsh fake_machine1 which Xvfb
+->OUT:Xvfb: Command not found.
+<-CMD:rsh fake_machine2 which Xvfb
+->OUT:/usr/X11R6/bin/Xvfb
+<-CMD:rsh fake_machine2 "Xvfb -ac :3979"
+->ERR:Could not init font path element /usr/X11R6/lib/X11/fonts/CID/, removing from list!
+<-CMD:rsh fake_machine2 "ps -efl"
+->OUT:F S UID        PID  PPID  C PRI  NI ADDR SZ WCHAN  STIME TTY          TIME CMD
+4 S geoff    17771 17770  0  85   0 -  1325 rt_sig Aug03 ?        00:00:00 tcsh -c Xvfb -ac :42
+0 S geoff    17840 17771  0  75   0 -  3888 -      Aug03 ?        01:12:23 Xvfb -ac :42
+1 S tobias   24310  9680  0  76   0 -  8060 -      Aug07 ?        00:00:12 spamd child
+4 S geoff    11757 11756  6  80   0 -  1408 rt_sig 17:45 ?        00:00:00 tcsh -c Xvfb -ac :3979
+4 S root     11769  2699  1  76   0 -  1069 -      17:45 ?        00:00:00 in.rshd
+4 S geoff    11774 11769  7  85   0 -  1502 rt_sig 17:45 ?        00:00:00 tcsh -c ps -efl
+0 R geoff    11906 11774  0  85   0 -   851 -      17:45 ?        00:00:00 ps -efl
+0 R geoff    11907 11757  0  82   0 -  2377 -      17:45 ?        00:00:00 Xvfb -ac :3979
+<-CMD:rsh fake_machine2 kill 11907

@@ -1,0 +1,20 @@
+# Make sure we aren't reliant on rsh for things to work, if we use localhost, just start things locally
+DisplayOnLocalHost
+
+# Check we can connect to and run an Xvfb server...
+RemoteDisplay
+
+# Make sure we can failover if there isn't a server running on the earlier machines
+UseAlternativeServer
+
+# All machines have servers that cannot be connected to - what do we do?
+AllMachinesBlocked
+
+# Check we do sensible things when one of the machines is down
+MachineDown
+
+# Don't look for virtual displays when running scripts!
+CountTests
+
+# Check we don't recheck Xvfb server with extra_version...
+ExtraVersion
