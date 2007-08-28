@@ -18,8 +18,9 @@ try:
 except ImportError:
     pass
 
-import sys, os
+import sys, os, shutil
 from getopt import getopt
+from tempfile import mktemp
 
 def findPathsMatching(dir, stem):
     paths = []
@@ -38,15 +39,24 @@ def uncommentLine(file, text):
     return transformFile(file, removeComment, text)
 
 def transformFile(file, function, *args):
-    newFile = open(file + "new", "w")
+    newFileName = mktemp("tmp_config")
+    newFile = open(newFileName, "w")
+    changed = False
     for line in open(file).xreadlines():
         newLine = function(line, *args)
+        if newLine is None:
+            print line + "-> removed from " + file
+            changed = True
+            continue
         if newLine != line:
+            changed = True
             print newLine + "-> inserted into " + file
         newFile.write(newLine)
     newFile.close()
-    os.remove(file)
-    os.rename(file + "new", file)
+    if changed:
+        shutil.move(newFileName, file)
+    else:
+        os.remove(newFileName)
 
 def insertSourceDir(line, sourceDir):
     if line.startswith("binary:"):
@@ -88,6 +98,13 @@ def replaceToolsForWindows(line):
 
 def replaceCmdToolsForWindows(line):
     return line.replace("emacs window", "notepad window")
+
+def replaceDisplayForWindows(line):
+    pos = line.find("DISPLAY variable set to")
+    if pos != -1:
+        return line.replace(line[pos:], "windows hidden\n")
+    if line.find("Xvfb process") == -1:
+        return line
     
 # Windows needs ; as path separator instead of :
 def replacePathForWindows(line):
@@ -139,6 +156,8 @@ def configureTests(testDir, sourceDir):
 
         for outputFile in findPathsMatching(testDir, "output"):
             transformFile(outputFile, replaceCmdToolsForWindows)
+        for outputFile in findPathsMatching(testDir, "outputrep"):
+            transformFile(outputFile, replaceDisplayForWindows)
         transformFile(configFile, insertWordpad)
 
     transformFile(configFile, insertSourceDir, sourceDir)
