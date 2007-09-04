@@ -5,7 +5,10 @@ AddTest
 AddApplication
 
 # Make sure we pick up environment references correctly when adding tests to slaves
-AddTestEnvReferences
+AddTestEnvRefUp
+
+# Make sure references work the other way, i.e. when the already present suite refers to variables present in the new test
+AddTestEnvRefDown
 
 # Issues surrounding reuse of virtual displays in slaves, or even creating them midway through
 VirtualDisplay
