@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # Test GUI for 'PyUseCase'
 
-import gtk, gobject
+import gtk, gobject, time
 from gtkusecase import ScriptEngine
 
 class VideoStore:
@@ -61,6 +61,8 @@ class VideoStore:
         return (gtk.gdk.screen_width()) / 5
     def run(self):
         topWindow = self.createTopWindow()
+        # Just to make it fail (make record and replay different...)
+        print "Started the video store at", time.strftime("%d%b%H:%M:%S", time.localtime())
         gtk.main()
     def addMovie(self, button, entry, *args):
         movieName = entry.get_text()
