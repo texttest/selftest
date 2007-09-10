@@ -14,7 +14,7 @@ dynamic_gui_log:Second column.*RU{WORD 4}
 dynamic_gui_log:File .* line .* in
 dynamic_gui_log:Adding file .*.sleep under heading '.*Files', coloured yellow
 dynamic_gui_log:terminated before completion.*on{WORD -2}{REPLACE <machine>}
-catalogue:sleep.killing{LINES 20}
+#catalogue:sleep.killing{LINES 20}
 catalogue:slaveerrs
 catalogue:slavelog
 catalogue:-slave$
@@ -38,5 +38,5 @@ traffic:/core[\.]*[0-9]*{REPLACE /<corefile>}
 traffic:^S'Traceback
 
 [collate_file]
-targetPerf:texttesttmp/*/Failures/logperf.perf*
+targetPerf:texttesttmp/*/*/Failures/logperf.perf*
 targetPerfSaved:TargetApp/Failures/logperf.perf*
