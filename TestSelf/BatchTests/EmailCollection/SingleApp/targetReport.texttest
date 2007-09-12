@@ -1,38 +1,12 @@
 From: geoff@localhost
 To: tom
-Subject: 040908 FAKE : 26 tests ran : 3 unrunnable, 1 CRASHED, 6 FAILED, 5 internal errors
+Subject: 040908 FAKE dip : 22 tests ran : 6 FAILED, 5 internal errors
 
-040908 Matador badrule.extraversion : 3 tests : 3 unrunnable
-040907 CORE : 1 tests : 1 CRASHED
 040909 DIP unix : 11 tests : 5 FAILED
 040908 DIP unix : 11 tests : 5 internal errors, 1 FAILED
 
 Summary of all Unsuccessful tests follows...
 =================================================================================
-040908 Matador badrule.extraversion : 3 tests : 3 unrunnable
-
-Matador badrule.extraversion : 2 tests : 2 unrunnable
-
-The following tests could not be run : 
-In Matador test-suite TargetApp:
-  In Matador test-suite ArtificialUser:
-    - Matador test-case matador_2            
-    - Matador test-case generate_in_subperiod
-
-
-Matador badrule.extraversion.parallel : 1 tests : 1 unrunnable
-
-The following tests could not be run : 
-In Matador test-suite TargetApp:
-  In Matador test-suite ArtificialUser:
-    - Matador test-case generate_in_subperiod
-
-040907 CORE : 1 tests : 1 CRASHED
-
-The following tests CRASHED : 
-In CORE test-suite TargetApp:
-  - CORE test-case DumpCore
-
 040909 DIP unix : 11 tests : 5 FAILED
 
 The following tests FAILED : 
@@ -61,62 +35,6 @@ In DIP test-suite TargetApp:
     - DIP test-case A02    : output different
 
 Details of all Unsuccessful tests follows...
-=================================================================================
-040908 Matador badrule.extraversion : 3 tests : 3 unrunnable
-
-Matador badrule.extraversion : 2 tests : 2 unrunnable
-
-
-Detailed information for the tests that could not be run follows...
---------------------------------------------------------
-TEST could not be run : Matador test-case matador_2             (under ArtificialUser/matador_2)
-Failed to build ruleset Matador_5_bad
-Build Rave program Matador_5_bad started on ninilchik, 08 September 19:18
-Generating code... 
-*** Trouble report (2 errors, 0 warnings):
-
-"source/Matador_5_bad", line 18.22:
-      16: %cost_weight% = parameter 1;
-      17: 
-      18: %cost_of_a_roster% = sum(leg(roser),%cost_weight%);
-                               ^^^
-   ERROR: Missing parent level in traverser
-   ERROR: Undefined level _topmodule.roser in traverser
-
---------------------------------------------------------
-TEST could not be run : Matador test-case generate_in_subperiod (under ArtificialUser/generate_in_subperiod)
-Trying to use ruleset 'Matador_5_bad' that failed to build.
-
----------------------------------------------------------------------------------
-Matador badrule.extraversion.parallel : 1 tests : 1 unrunnable
-
-
-Detailed information for the tests that could not be run follows...
---------------------------------------------------------
-TEST could not be run : Matador test-case generate_in_subperiod (under ArtificialUser/generate_in_subperiod)
-Trying to use ruleset 'Matador_5_bad' that failed to build.
-
-=================================================================================
-040907 CORE : 1 tests : 1 CRASHED
-
-Detailed information for the tests that CRASHED follows...
---------------------------------------------------------
-TEST CRASHED on severodoneck : CORE test-case DumpCore (under DumpCore)
-Program terminated with signal 11, Segmentation fault.
-Stack trace from gdb :
-___newselect_nocancel 
-floatsleep 
-time_sleep 
-PyCFunction_Call 
-PyEval_EvalCode 
-PyEval_EvalCodeEx 
-PyEval_EvalCode 
-PyRun_FileExFlags 
-PyRun_SimpleFileExFlags 
-PyRun_AnyFileExFlags 
-Py_Main 
-main
-
 =================================================================================
 040909 DIP unix : 11 tests : 5 FAILED
 
