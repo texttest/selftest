@@ -105,6 +105,7 @@ output:Killing running test{WORD -1}
 output:signal 15
 output:signal 9
 output:Killed process{WORD 3}
+output:Process had already terminated
 output:sec[^ ]* on{WORD -1}
 output:Sending mail from{WORD 5}
 output:batch_recipients{WORD 2}
@@ -244,7 +245,6 @@ link_test_path:bkill
 collect_traffic:bugcli
 collect_traffic:time
 collect_traffic:rsh
-collect_traffic:xdpyinfo
 collect_traffic:interpretcore.py
 collect_traffic:cvs
 collect_traffic:Xvfb
