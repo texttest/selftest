@@ -91,6 +91,7 @@ output*:TextTest will write diagnostics
 output*:{INTERNAL writedir}{REPLACE <test write dir>}
 output*:[^/]*[0-9][0-9][A-Z][a-z][a-z][0-9][0-9][0-9][0-9][0-9][0-9]{REPLACE <target tmp dir>}
 output*:Killing.*Xvfb process{WORD -1}
+output*:second to retry
 output:test-case.* on .*new results.*missing results.*differences{WORD -13}
 output:test-case.* on .*new results.*differences{WORD -9}
 output:test-case.* on .*missing results.*differences{WORD -9}
@@ -98,7 +99,6 @@ output:test-case.* on .*new results{WORD -6}
 output:test-case.* on .*missing results{WORD -6}
 output:test-case.* on .*differences{WORD -5}
 output:test-case.* on .*:${WORD -2}
-output:second to retry
 output:creating batch report{WORD 2}
 output:Killing running test{WORD -1}
 # Sometimes needed under heavy machine load
@@ -128,6 +128,7 @@ catalogue:unixperf
 catalogue:tdat.*cmp
 catalogue:hello.*cmp
 catalogue:dip.*cmp
+catalogue:Xvfb\.[a-z]*\.([0-9]*){REPLACE Xvfb.<machine>.\1}
 catalogues:{INTERNAL writedir}{REPLACE <test write dir>}
 catalogues:[^/]*[0-9][0-9][A-Z][a-z][a-z][0-9][0-9][0-9][0-9][0-9][0-9]{REPLACE <target tmp dir>}
 errors:{INTERNAL writedir}{REPLACE <test write dir>}
