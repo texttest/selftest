@@ -2,7 +2,7 @@
 ->OUT:Xvfb: Command not found.
 <-CMD:rsh fake_machine2 which Xvfb
 ->OUT:/usr/X11R6/bin/Xvfb
-<-CMD:rsh fake_machine2 "Xvfb -ac :3979"
+<-CMD:rsh fake_machine2 "Xvfb -ac -audit 2 :3979"
 ->ERR:Could not init font path element /usr/X11R6/lib/X11/fonts/CID/, removing from list!
 <-CMD:rsh fake_machine2 "ps -efl"
 ->OUT:F S UID        PID  PPID  C PRI  NI ADDR SZ WCHAN  STIME TTY          TIME CMD
