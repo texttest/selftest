@@ -4,9 +4,6 @@ RaveRun
 # Test for rulesets failing to compile
 BadRaveRun
 
-# Check for race conditions if dispatching rule builds is slow
-RaveRunSlowDispatch
-
 # When we've passed the capacity of the system, make sure we still pick up completed rule compilations
 RuleCompFinishesLast
 
@@ -42,6 +39,9 @@ KillRuleCompLongTest
 
 # Copy of KillRuleCompilation, except run two tests with the same ruleset
 KillRuleComp2Tests
+
+# Check what happens if queue system rejects rule compilation
+RuleCompSubmissionFails
 
 # Check that sensible things happen if the nightjob is terminated while rave compilation is happening
 NightjobTerminateRave

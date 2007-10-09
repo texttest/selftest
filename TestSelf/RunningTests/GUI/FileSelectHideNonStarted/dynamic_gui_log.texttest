@@ -1,5 +1,5 @@
 Enabling entry completion, using matching 1
-Top Window title is TextTest dynamic GUI : testing SLEEP (started at 24Aug12:00:22)
+Top Window title is TextTest dynamic GUI : testing SLEEP (started at 04Oct15:20:33)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -81,24 +81,37 @@ UI layout:
   </popup>
 </ui>
 
-Progress bar set to fraction 0.0, text '0 of 3 tests completed'
-
 Test Tree description...
--> TargetApp (sleep)
 
-Test column header set to 'Tests: 0/3 selected, all hidden'
+Test column header set to 'Tests: All 0 selected, none hidden'
 
 Pane separator positioned 50% from the left edge
 
 Tabs showing : Status
 
 Test progress:
---> Not started : 3, colour 'white', font 'bold'
 
-Changing GUI status to: 'TextTest started at 24Aug12:00:23.'
+Changing GUI status to: 'TextTest started at 04Oct15:20:33.'
 
+Waiting for application event 'all tests to be read' to occur.
 Waiting for application event 'test Basic to complete' to occur.
 Waiting for application event 'test Basic2 to start' to occur.
+
+Test progress:
+--> Not started : 1, colour 'white', font 'bold'
+
+Test progress:
+--> Not started : 2, colour 'white', font 'bold'
+
+Test progress:
+--> Not started : 3, colour 'white', font 'bold'
+
+Test Tree description...
+-> TargetApp (sleep)
+
+Test column header set to 'Tests: 0/3 selected, all hidden'
+
+Progress bar set to fraction 0.0, text '0 of 3 tests completed'
 Redrawing test Basic coloured yellow
 
 Test progress:
@@ -108,11 +121,17 @@ Redrawing test Basic coloured red
 (Second column 'output different' coloured red)
 
 Progress bar set to fraction 0.333333333333, text '1 of 3 tests completed'
+Making test visible : SLEEP test-suite Suite1
+
+Test Tree description...
+-> TargetApp (sleep)
+->   Suite1
 Making test visible : SLEEP test-case Basic
 
 Test Tree description...
 -> TargetApp (sleep)
-->   Basic
+->   Suite1
+->     Basic
 
 Test column header set to 'Tests: 0/3 selected, 2 hidden'
 
@@ -130,6 +149,7 @@ Test progress:
 --> Failed : 1, colour 'red', font 'bold'
 ----> Differences : 1, colour 'red', font 'bold'
 ------> output different : 1, colour 'red', font 'bold'
+Expected application event 'all tests to be read' occurred, proceeding.
 Expected application event 'test Basic to complete' occurred, proceeding.
 Expected application event 'test Basic2 to start' occurred, proceeding.
 
@@ -145,6 +165,8 @@ Adding file errors.sleep under heading 'Comparison Files', coloured green
 Adding file output.sleep under heading 'Comparison Files', coloured red
 
 Viewing action with title '_Update Info' (greyed out)
+
+Pane separator positioned 46% from the top
 
 Tabs showing :
 
@@ -181,23 +203,23 @@ Expected application event 'test Basic3 to start' occurred, proceeding.
 
 'quit' event created with arguments ''
 
-Changing GUI status to: 'Killing 1 tests ...'
-Killing SLEEP test-case Basic3
+Changing GUI status to: 'Killing all running tests ...'
 
-Changing GUI status to: 'Killed 1 tests.'
+Changing GUI status to: 'Killed all running tests.'
 
 Changing GUI status to: 'Waiting for all tests to terminate ...'
 Redrawing test Basic3 coloured red
 (Second column 'KILLED' coloured red)
 
-Progress bar set to fraction 1.0, text 'All 3 tests completed at 24Aug12:00:36'
+Progress bar set to fraction 1.0, text 'All 3 tests completed at 04Oct15:20:45'
 Making test visible : SLEEP test-suite Suite
 Making test visible : SLEEP test-case Basic3
 
 Test Tree description...
 -> TargetApp (sleep)
-->   Basic
-->   Basic2
+->   Suite1
+->     Basic
+->     Basic2
 ->   Suite
 ->     Basic3
 

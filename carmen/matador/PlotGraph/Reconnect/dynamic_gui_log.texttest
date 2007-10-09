@@ -22,7 +22,7 @@ Adding entry completion 'png' ...
 Adding entry completion 'svg' ...
 Adding entry completion 'gnuplot' ...
 Adding entry completion 'mpl' ...
-Top Window title is TextTest dynamic GUI : testing Matador.10.i386_linux (started at 24Aug12:01:29)
+Top Window title is TextTest dynamic GUI : testing Matador.10.i386_linux (started at 03Oct10:54:17)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -38,20 +38,20 @@ Viewing action with title 'View Raw Differences' (greyed out)
 Viewing action with title 'View Differences' (greyed out)
 Viewing action with title 'Follow File Progress' (greyed out)
 Viewing action with title '_Save', stock id ''gtk-save'', accelerator ''<control>s'' (greyed out)
-Viewing action with title 'S_ave Selection...', stock id ''gtk-save-as'', accelerator ''<control><shift>s''
-Viewing action with title '_Kill', stock id ''gtk-stop''
+Viewing action with title 'S_ave Selection...', stock id ''gtk-save-as'', accelerator ''<control><shift>s'' (greyed out)
+Viewing action with title '_Kill', stock id ''gtk-stop'' (greyed out)
 Viewing action with title '_Mark', accelerator ''<control><shift>m'' (greyed out)
 Viewing action with title '_Unmark', accelerator ''<control><shift>u'' (greyed out)
-Viewing action with title '_Log'
-Viewing action with title 'Log Recursive'
-Viewing action with title 'Log Latest'
-Viewing action with title '_Difference'
-Viewing action with title 'Difference Recursive'
-Viewing action with title '_Status'
-Viewing action with title 'Status Recursive'
-Viewing action with title 'A_nnotate'
-Viewing action with title 'Annotate Recursive'
-Viewing action with title '_Plot Graph', stock id ''gtk-clear'', accelerator ''<control>p''
+Viewing action with title '_Log' (greyed out)
+Viewing action with title 'Log Recursive' (greyed out)
+Viewing action with title 'Log Latest' (greyed out)
+Viewing action with title '_Difference' (greyed out)
+Viewing action with title 'Difference Recursive' (greyed out)
+Viewing action with title '_Status' (greyed out)
+Viewing action with title 'Status Recursive' (greyed out)
+Viewing action with title 'A_nnotate' (greyed out)
+Viewing action with title 'Annotate Recursive' (greyed out)
+Viewing action with title '_Plot Graph', stock id ''gtk-clear'', accelerator ''<control>p'' (greyed out)
 Viewing action with title '_Migration Notes'
 Viewing action with title 'Component _Versions'
 Viewing action with title '_About TextTest', stock id ''gtk-about''
@@ -162,60 +162,69 @@ UI layout:
   </popup>
 </ui>
 
-Progress bar set to fraction 0.0, text '0 of 1 tests completed'
+Test Tree description...
+
+Test column header set to 'Tests: All 0 selected, none hidden'
+
+Pane separator positioned 50% from the left edge
+
+Tabs showing : Status
+
+Test progress:
+
+Changing GUI status to: 'TextTest started at 03Oct10:54:19.'
+
+Waiting for application event 'completion of test actions' to occur.
+
+Test progress:
+--> Not started : 1, colour 'white', font 'bold'
 
 Test Tree description...
 -> TargetApp (cas.10.i386_linux)
 ->   ArtificialUser
 ->     generate_in_subperiod
 
+Test column header set to 'Tests: 0/1 selected, none hidden'
+
+Progress bar set to fraction 0.0, text '0 of 1 tests completed'
+Redrawing test generate_in_subperiod coloured red
+(Second column 'output different' coloured red)
+
+Progress bar set to fraction 1.0, text 'All 1 tests completed at 03Oct10:54:19'
+
+Test progress:
+--> Not started : 0, colour 'white', font ''
+--> Failed : 1, colour 'red', font 'bold'
+----> Differences : 1, colour 'red', font 'bold'
+------> output different : 1, colour 'red', font 'bold'
+Only one test found, selecting generate_in_subperiod
+
 Test column header set to 'Tests: All 1 selected, none hidden'
-
-Pane separator positioned 50% from the left edge
-
-Tabs showing : Test, Status, Graph
+Setting sensitivity of action '_Save' to True
+Setting sensitivity of action 'S_ave Selection...' to True
+Setting sensitivity of action '_Mark' to True
+Setting sensitivity of action '_Log' to True
+Setting sensitivity of action 'Log Recursive' to True
+Setting sensitivity of action 'Log Latest' to True
+Setting sensitivity of action '_Difference' to True
+Setting sensitivity of action 'Difference Recursive' to True
+Setting sensitivity of action '_Status' to True
+Setting sensitivity of action 'Status Recursive' to True
+Setting sensitivity of action 'A_nnotate' to True
+Setting sensitivity of action 'Annotate Recursive' to True
+Setting sensitivity of action '_Plot Graph' to True
 
 Setting file-view title to 'generate__in__subperiod'
-Adding file catalogue.cas under heading 'Standard Files', coloured white
-Adding file errors.cas under heading 'Standard Files', coloured white
-Adding file features.cas under heading 'Standard Files', coloured white
-Adding file output.cas under heading 'Standard Files', coloured white
-Adding file output.cas.10 under heading 'Standard Files', coloured white
-Adding file performance.cas under heading 'Standard Files', coloured white
-Adding file performance.cas.parallel under heading 'Standard Files', coloured white
-Adding file solution.cas under heading 'Standard Files', coloured white
-Adding file options.cas under heading 'Definition Files', coloured white
-Adding file options.cas.badrule under heading 'Definition Files', coloured white
-Adding file secret_parameters.etab under heading 'Data Files', coloured white
-Adding file rules under heading 'Subplan', coloured white
-Adding file Ruleset_8 under heading 'Ruleset', coloured white
+Adding file errors.cas under heading 'Comparison Files', coloured green
+Adding file output.cas.10 under heading 'Comparison Files', coloured red
+Adding file solution.cas under heading 'Comparison Files', coloured green
 
 Viewing action with title '_Update Info' (greyed out)
 Viewing action with title 'CVS _Log'
 
 Pane separator positioned 46% from the top
 
-Tabs showing : Text Info
-
----------- Text Info Window ----------
-Description:
-<No description provided>
-
-Expected running time for the default version:
-CPU time   :      11.4 sec. on fougamou
-Real time  :      14.3 sec.
---------------------------------------
-
-Changing GUI status to: 'TextTest started at 24Aug12:01:33.'
-
-Waiting for application event 'completion of test actions' to occur.
-Redrawing test generate_in_subperiod coloured red
-(Second column 'output different' coloured red)
-
-Setting file-view title to 'generate__in__subperiod'
-Adding file errors.cas under heading 'Comparison Files', coloured green
-Adding file output.cas.10 under heading 'Comparison Files', coloured red
-Adding file solution.cas under heading 'Comparison Files', coloured green
+Tabs showing :
 
 ---------- Text Info Window ----------
 Test FAILED :
@@ -251,13 +260,10 @@ Test FAILED :
 1620c1620
 <   Number of slots (unassigned)........................: 1010
 --------------------------------------
-Setting sensitivity of action '_Save' to True
-Setting sensitivity of action '_Kill' to False
-Setting sensitivity of action '_Mark' to True
+
+Tabs showing : Test, Status, Graph
 
 Tabs showing : Text Info, Saving
-
-Progress bar set to fraction 1.0, text 'All 1 tests completed at 24Aug12:01:35'
 Expected application event 'completion of test actions' occurred, proceeding.
 
 'plot graph' event created with arguments ''

@@ -10,10 +10,3 @@ class SlowQueue(ProperQueue):
         return retVal
 
 Queue.Queue = SlowQueue
-
-origMkdir = os.mkdir
-def slowmkdir(dir, mode=oct(0777)):
-    time.sleep(1)
-    return origMkdir(dir)
-    
-os.mkdir = slowmkdir

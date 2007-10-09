@@ -1,5 +1,5 @@
 Enabling entry completion, using matching 1
-Top Window title is TextTest dynamic GUI : testing Studio under /carm/proj/texttest/selftest_data (started at 24Aug12:01:57)
+Top Window title is TextTest dynamic GUI : testing Studio under /carm/proj/texttest/selftest_data (started at 03Oct10:54:24)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -15,19 +15,19 @@ Viewing action with title 'View Raw Differences' (greyed out)
 Viewing action with title 'View Differences' (greyed out)
 Viewing action with title 'Follow File Progress' (greyed out)
 Viewing action with title '_Save', stock id ''gtk-save'', accelerator ''<control>s'' (greyed out)
-Viewing action with title 'S_ave Selection...', stock id ''gtk-save-as'', accelerator ''<control><shift>s''
-Viewing action with title '_Kill', stock id ''gtk-stop''
+Viewing action with title 'S_ave Selection...', stock id ''gtk-save-as'', accelerator ''<control><shift>s'' (greyed out)
+Viewing action with title '_Kill', stock id ''gtk-stop'' (greyed out)
 Viewing action with title '_Mark', accelerator ''<control><shift>m'' (greyed out)
 Viewing action with title '_Unmark', accelerator ''<control><shift>u'' (greyed out)
-Viewing action with title '_Log'
-Viewing action with title 'Log Recursive'
-Viewing action with title 'Log Latest'
-Viewing action with title '_Difference'
-Viewing action with title 'Difference Recursive'
-Viewing action with title '_Status'
-Viewing action with title 'Status Recursive'
-Viewing action with title 'A_nnotate'
-Viewing action with title 'Annotate Recursive'
+Viewing action with title '_Log' (greyed out)
+Viewing action with title 'Log Recursive' (greyed out)
+Viewing action with title 'Log Latest' (greyed out)
+Viewing action with title '_Difference' (greyed out)
+Viewing action with title 'Difference Recursive' (greyed out)
+Viewing action with title '_Status' (greyed out)
+Viewing action with title 'Status Recursive' (greyed out)
+Viewing action with title 'A_nnotate' (greyed out)
+Viewing action with title 'Annotate Recursive' (greyed out)
 Viewing action with title '_Migration Notes'
 Viewing action with title 'Component _Versions'
 Viewing action with title '_About TextTest', stock id ''gtk-about''
@@ -135,54 +135,62 @@ UI layout:
   </popup>
 </ui>
 
-Progress bar set to fraction 0.0, text '0 of 1 tests completed'
+Test Tree description...
+
+Test column header set to 'Tests: All 0 selected, none hidden'
+
+Pane separator positioned 50% from the left edge
+
+Tabs showing : Status
+
+Test progress:
+
+Changing GUI status to: 'TextTest started at 03Oct10:54:25.'
+
+Waiting for application event 'completion of test actions' to occur.
+
+Test progress:
+--> Not started : 1, colour 'white', font 'bold'
 
 Test Tree description...
 -> TargetApp (gst)
 ->   lh_v12
 ->     data_unchanged
 
-Test column header set to 'Tests: All 1 selected, none hidden'
+Test column header set to 'Tests: 0/1 selected, none hidden'
 
-Pane separator positioned 50% from the left edge
-
-Tabs showing : Test, Status
-
-Setting file-view title to 'data__unchanged'
-Adding file catalogue.gst under heading 'Standard Files', coloured white
-Adding file errors.gst under heading 'Standard Files', coloured white
-Adding file output.gst under heading 'Standard Files', coloured white
-Adding file options.gst under heading 'Definition Files', coloured white
-Adding file usecase.gst under heading 'Definition Files', coloured white
-Adding file subplanRules under heading 'Subplan', coloured white
-Adding file LBA_MTV under heading 'Ruleset', coloured white
-
-Viewing action with title '_Update Info' (greyed out)
-
-Pane separator positioned 46% from the top
-
-Tabs showing : Text Info
-
----------- Text Info Window ----------
-Description:
-<No description provided>
---------------------------------------
-
-Changing GUI status to: 'TextTest started at 24Aug12:01:58.'
-
-Waiting for application event 'completion of test actions' to occur.
+Progress bar set to fraction 0.0, text '0 of 1 tests completed'
 Redrawing test data_unchanged coloured yellow
 
-Setting file-view title to 'data__unchanged'
-Adding file errors.gst under heading 'Temporary Files', coloured yellow
-Adding file output.gst under heading 'Temporary Files', coloured yellow
-
----------- Text Info Window ----------
-Running on schefferville
---------------------------------------
-Setting sensitivity of action '_Update Info' to True
+Test progress:
+--> Not started : 0, colour 'white', font ''
+--> Running : 1, colour 'yellow', font 'bold'
 Redrawing test data_unchanged coloured red
 (Second column 'output different' coloured red)
+
+Progress bar set to fraction 1.0, text 'All 1 tests completed at 03Oct10:54:26'
+
+Test progress:
+--> Not started : 0, colour 'white', font ''
+--> Running : 0, colour 'white', font ''
+--> Failed : 1, colour 'red', font 'bold'
+----> Differences : 1, colour 'red', font 'bold'
+------> output different : 1, colour 'red', font 'bold'
+Only one test found, selecting data_unchanged
+
+Test column header set to 'Tests: All 1 selected, none hidden'
+Setting sensitivity of action '_Save' to True
+Setting sensitivity of action 'S_ave Selection...' to True
+Setting sensitivity of action '_Mark' to True
+Setting sensitivity of action '_Log' to True
+Setting sensitivity of action 'Log Recursive' to True
+Setting sensitivity of action 'Log Latest' to True
+Setting sensitivity of action '_Difference' to True
+Setting sensitivity of action 'Difference Recursive' to True
+Setting sensitivity of action '_Status' to True
+Setting sensitivity of action 'Status Recursive' to True
+Setting sensitivity of action 'A_nnotate' to True
+Setting sensitivity of action 'Annotate Recursive' to True
 
 Setting file-view title to 'data__unchanged'
 Adding file catalogue.gst under heading 'Comparison Files', coloured green
@@ -190,20 +198,22 @@ Adding file errors.gst under heading 'Comparison Files', coloured green
 Adding file output.gst under heading 'Comparison Files', coloured red
 Adding file usecase.gst under heading 'Comparison Files', coloured green
 
+Viewing action with title '_Update Info' (greyed out)
+
+Pane separator positioned 46% from the top
+
+Tabs showing :
+
 ---------- Text Info Window ----------
-Test FAILED on schefferville :
+Test FAILED on severodoneck :
 ---------- Differences in output ----------
 1a2
 > Single-stepping with the macro recorder! Variable set to 1
 --------------------------------------
-Setting sensitivity of action '_Save' to True
-Setting sensitivity of action '_Update Info' to False
-Setting sensitivity of action '_Kill' to False
-Setting sensitivity of action '_Mark' to True
+
+Tabs showing : Test, Status
 
 Tabs showing : Text Info, Saving
-
-Progress bar set to fraction 1.0, text 'All 1 tests completed at 24Aug12:02:01'
 Expected application event 'completion of test actions' occurred, proceeding.
 
 'quit' event created with arguments ''

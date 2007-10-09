@@ -1,15 +1,15 @@
-TextTest will write diagnostics in /users/geoff/texttesttmp/texttest.11Sep114032/texttest.carmen/carmen/matador/RaveCompile/StaticRuleset based on file at /users/geoff/work/master/Testing/Automatic/texttest/logging.texttest
+TextTest will write diagnostics in /carm/proj/texttest/geoff/texttesttmp/texttest.08Oct154441/texttest.carmen/carmen/matador/RaveCompile/StaticRuleset based on file at /carm/proj/texttest/geoff/Testing/Automatic/texttest/logging.texttest
 Using SGE queues for Application Matador, checkout /carm/proj/texttest/selftest_data
 Using SGE queues for Application Picador, version badqueue, checkout /carm/proj/texttest/selftest_data
-R: Submitting Rule Compilation for ruleset Matador_CO (for test all_1crew)  to SGE queue rave, requesting carmarch=*i386_linux*,carmbuildmaster=1
-Q: Submitting test matador_2  to SGE queue short, requesting carmarch=*i386_linux*,carmrunmaster=1,osversion=RHEL4,model=Opteron*
-Q: Submitting test illegal_pairings  to SGE queue non_existent, requesting carmarch=*i386_linux*,carmrunmaster=1,osversion=RHEL4,model=Opteron*
-S: Test illegal_pairings not compared:
+R: Submitting Rule Compilation for ruleset Matador_CO (for Matador test-case all_1crew)  to SGE queue rave, requesting carmarch=*i386_linux*,carmbuildmaster=1
+Q: Submitting Matador test-case matador_2  to SGE queue short, requesting carmarch=*i386_linux*,carmrunmaster=1,osversion=RHEL4,model=Opteron*
+Q: Submitting Picador.badqueue test-case illegal_pairings  to SGE queue non_existent, requesting carmarch=*i386_linux*,carmrunmaster=1,osversion=RHEL4,model=Opteron*
+S: Picador.badqueue test-case illegal_pairings not compared:
 Failed to submit to SGE (Unable to run job: unknown resource "non_existent".)
 Submission command was 'qsub -N Test-illegal_pairings.Picador-Picador.badqueue -p -2.54 -l carmarch=*i386_linux*,carmrunmaster=1,osversion=RHEL4,model=Opteron*,non_existent -w e -notify -m n -cwd -b y -V -o Test-illegal_pairings.Picador-Picador.badqueue.log -e Test-illegal_pairings.Picador-Picador.badqueue.errors ... '
 
-S: Test matador_2 succeeded on watsonville
-S: All rulesets compiled for all_1crew (ruleset Matador_CO)
-Q: Submitting test all_1crew  to SGE queue short, requesting carmarch=*i386_linux*,carmrunmaster=1,osversion=RHEL4,model=Opteron*
-S: Test all_1crew FAILED on schefferville : missing results for solution, differences in catalogue,errors,output
+S: Matador test-case matador_2 succeeded on watsonville
+S: All rulesets compiled for Matador test-case all_1crew (ruleset Matador_CO)
+Q: Submitting Matador test-case all_1crew  to SGE queue short, requesting carmarch=*i386_linux*,carmrunmaster=1,osversion=RHEL4,model=Opteron*
+S: Matador test-case all_1crew FAILED on schefferville : missing results for solution, differences in catalogue,errors,output
 View details(v), Save(s) or continue(any other key)?

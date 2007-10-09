@@ -22,7 +22,7 @@ Adding entry completion 'png' ...
 Adding entry completion 'svg' ...
 Adding entry completion 'gnuplot' ...
 Adding entry completion 'mpl' ...
-Top Window title is TextTest dynamic GUI : testing APC.sleep under /carm/proj/texttest/selftest_data (started at 24Aug12:01:45)
+Top Window title is TextTest dynamic GUI : testing APC.sleep under /carm/proj/texttest/selftest_data (started at 05Oct18:06:50)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -38,24 +38,24 @@ Viewing action with title 'View Raw Differences' (greyed out)
 Viewing action with title 'View Differences' (greyed out)
 Viewing action with title 'Follow File Progress' (greyed out)
 Viewing action with title '_Save', stock id ''gtk-save'', accelerator ''<control>s'' (greyed out)
-Viewing action with title 'S_ave Selection...', stock id ''gtk-save-as'', accelerator ''<control><shift>s''
-Viewing action with title '_Kill', stock id ''gtk-stop''
+Viewing action with title 'S_ave Selection...', stock id ''gtk-save-as'', accelerator ''<control><shift>s'' (greyed out)
+Viewing action with title '_Kill', stock id ''gtk-stop'' (greyed out)
 Viewing action with title '_Mark', accelerator ''<control><shift>m'' (greyed out)
 Viewing action with title '_Unmark', accelerator ''<control><shift>u'' (greyed out)
-Viewing action with title '_Log'
-Viewing action with title 'Log Recursive'
-Viewing action with title 'Log Latest'
-Viewing action with title '_Difference'
-Viewing action with title 'Difference Recursive'
-Viewing action with title '_Status'
-Viewing action with title 'Status Recursive'
-Viewing action with title 'A_nnotate'
-Viewing action with title 'Annotate Recursive'
+Viewing action with title '_Log' (greyed out)
+Viewing action with title 'Log Recursive' (greyed out)
+Viewing action with title 'Log Latest' (greyed out)
+Viewing action with title '_Difference' (greyed out)
+Viewing action with title 'Difference Recursive' (greyed out)
+Viewing action with title '_Status' (greyed out)
+Viewing action with title 'Status Recursive' (greyed out)
+Viewing action with title 'A_nnotate' (greyed out)
+Viewing action with title 'Annotate Recursive' (greyed out)
 Viewing action with title '_Migration Notes'
 Viewing action with title 'Component _Versions'
 Viewing action with title '_About TextTest', stock id ''gtk-about''
-Viewing action with title '_Plot Graph', stock id ''gtk-clear'', accelerator ''<control>p''
-Viewing action with title '_Select KPI group', stock id ''gtk-index'', accelerator ''<control>k''
+Viewing action with title '_Plot Graph', stock id ''gtk-clear'', accelerator ''<control>p'' (greyed out)
+Viewing action with title '_Select KPI group', stock id ''gtk-index'', accelerator ''<control>k'' (greyed out)
 
 UI layout: 
 <ui>
@@ -166,64 +166,77 @@ UI layout:
   </popup>
 </ui>
 
-Progress bar set to fraction 0.0, text '0 of 1 tests completed'
+Test Tree description...
+
+Test column header set to 'Tests: All 0 selected, none hidden'
+
+Pane separator positioned 50% from the left edge
+
+Tabs showing : Status
+
+Test progress:
+
+Changing GUI status to: 'TextTest started at 05Oct18:06:53.'
+
+Waiting for application event 'all tests to be read' to occur.
+Waiting for application event 'test umlauf_spiel to start' to occur.
+
+Test progress:
+--> Not started : 1, colour 'white', font 'bold'
 
 Test Tree description...
 -> TargetApp (apc.sleep)
 ->   Spielscripts
 ->     umlauf_spiel
 
+Test column header set to 'Tests: 0/1 selected, none hidden'
+
+Progress bar set to fraction 0.0, text '0 of 1 tests completed'
+Redrawing test umlauf_spiel coloured yellow
+
+Test progress:
+--> Not started : 0, colour 'white', font ''
+--> Running : 1, colour 'yellow', font 'bold'
+Expected application event 'all tests to be read' occurred, proceeding.
+Expected application event 'test umlauf_spiel to start' occurred, proceeding.
+
+'set test selection to' event created with arguments 'umlauf_spiel'
+
 Test column header set to 'Tests: All 1 selected, none hidden'
-
-Pane separator positioned 50% from the left edge
-
-Tabs showing : Test, Status, Graph
+Setting sensitivity of action 'S_ave Selection...' to True
+Setting sensitivity of action '_Kill' to True
+Setting sensitivity of action '_Log' to True
+Setting sensitivity of action 'Log Recursive' to True
+Setting sensitivity of action 'Log Latest' to True
+Setting sensitivity of action '_Difference' to True
+Setting sensitivity of action 'Difference Recursive' to True
+Setting sensitivity of action '_Status' to True
+Setting sensitivity of action 'Status Recursive' to True
+Setting sensitivity of action 'A_nnotate' to True
+Setting sensitivity of action 'Annotate Recursive' to True
+Setting sensitivity of action '_Plot Graph' to True
+Setting sensitivity of action '_Select KPI group' to True
 
 Setting file-view title to 'umlauf__spiel'
-Adding file error.apc under heading 'Standard Files', coloured white
-Adding file performance.apc under heading 'Standard Files', coloured white
-Adding file solution.apc under heading 'Standard Files', coloured white
-Adding file solution.apc.fail under heading 'Standard Files', coloured white
-Adding file status.apc under heading 'Standard Files', coloured white
-Adding file status.apc.fail under heading 'Standard Files', coloured white
-Adding file warnings.apc under heading 'Standard Files', coloured white
-Adding file environment.apc under heading 'Definition Files', coloured white
-Adding file options.apc under heading 'Definition Files', coloured white
-Adding file rules under heading 'Subplan', coloured white
-Adding file umlauf_spiel under heading 'Ruleset', coloured white
+Adding file errors.apc under heading 'Temporary Files', coloured yellow
+Adding file output.apc under heading 'Temporary Files', coloured yellow
 
-Viewing action with title '_Update Info' (greyed out)
+Viewing action with title '_Update Info'
 Viewing action with title 'View APC Log'
 Viewing action with title 'Save best'
 Viewing action with title 'CVS _Log'
 
 Pane separator positioned 46% from the top
 
+Tabs showing :
+
+---------- Text Info Window ----------
+Running on townsville
+--------------------------------------
+
+Tabs showing : Test, Status, Graph
+
 Tabs showing : Text Info
-
----------- Text Info Window ----------
-Description:
-<No description provided>
-
-Expected running time for the default version:
-CPU time   :       1.7 sec. on frankfort
-Real time  :       3.5 sec.
---------------------------------------
-
-Changing GUI status to: 'TextTest started at 24Aug12:01:48.'
-
-Waiting for application event 'test umlauf_spiel to start' to occur.
-Redrawing test umlauf_spiel coloured yellow
-
-Setting file-view title to 'umlauf__spiel'
-Adding file errors.apc under heading 'Temporary Files', coloured yellow
-Adding file output.apc under heading 'Temporary Files', coloured yellow
-
----------- Text Info Window ----------
-Running on raduzhnyi
---------------------------------------
-Setting sensitivity of action '_Update Info' to True
-Expected application event 'test umlauf_spiel to start' occurred, proceeding.
 
 'plot graph' event created with arguments ''
 
@@ -235,10 +248,9 @@ Terminating process that plots graphs...
 
 'quit' event created with arguments ''
 
-Changing GUI status to: 'Killing 1 tests ...'
-Killing APC test-case umlauf_spiel
+Changing GUI status to: 'Killing all running tests ...'
 
-Changing GUI status to: 'Killed 1 tests.'
+Changing GUI status to: 'Killed all running tests.'
 
 Changing GUI status to: 'Waiting for all tests to terminate ...'
 Redrawing test umlauf_spiel coloured red
@@ -250,8 +262,8 @@ Adding file status.apc under heading 'Comparison Files', coloured green
 Adding file warnings.apc under heading 'Comparison Files', coloured green
 
 ---------- Text Info Window ----------
-Test were terminated before completion (KILLED) on raduzhnyi :
-Test killed explicitly at 12:01
+Test were terminated before completion (KILLED) on townsville :
+Test killed explicitly at 18:07
 --------------------------------------
 Setting sensitivity of action '_Save' to True
 Setting sensitivity of action '_Update Info' to False
@@ -260,6 +272,12 @@ Setting sensitivity of action '_Mark' to True
 
 Tabs showing : Text Info, Saving
 
-Progress bar set to fraction 1.0, text 'All 1 tests completed at 24Aug12:01:59'
+Progress bar set to fraction 1.0, text 'All 1 tests completed at 05Oct18:07:02'
+Only one test found, selecting umlauf_spiel
+
+Setting file-view title to 'umlauf__spiel'
+Adding file solution.apc under heading 'Comparison Files', coloured green
+Adding file status.apc under heading 'Comparison Files', coloured green
+Adding file warnings.apc under heading 'Comparison Files', coloured green
 
 Changing GUI status to: 'Removing all temporary files ...'

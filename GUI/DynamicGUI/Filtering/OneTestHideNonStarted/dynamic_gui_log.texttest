@@ -1,5 +1,5 @@
 Enabling entry completion, using matching 1
-Top Window title is TextTest dynamic GUI : testing HELLO (started at 24Aug12:00:41)
+Top Window title is TextTest dynamic GUI : testing HELLO (started at 03Oct12:35:43)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -81,36 +81,38 @@ UI layout:
   </popup>
 </ui>
 
-Progress bar set to fraction 0.0, text '0 of 1 tests completed'
-
 Test Tree description...
--> TargetApp (hello)
 
-Test column header set to 'Tests: 0/1 selected, all hidden'
+Test column header set to 'Tests: All 0 selected, none hidden'
 
 Pane separator positioned 50% from the left edge
 
 Tabs showing : Status
 
 Test progress:
---> Not started : 1, colour 'white', font 'bold'
 
-Changing GUI status to: 'TextTest started at 24Aug12:00:42.'
+Changing GUI status to: 'TextTest started at 03Oct12:35:43.'
 
 Waiting for application event 'completion of test actions' to occur.
-Redrawing test simple_fail1 coloured yellow
 
 Test progress:
---> Not started : 0, colour 'white', font ''
---> Running : 1, colour 'yellow', font 'bold'
+--> Not started : 1, colour 'white', font 'bold'
+
+Test Tree description...
+-> TargetApp (hello)
+
+Test column header set to 'Tests: 0/1 selected, all hidden'
+
+Progress bar set to fraction 0.0, text '0 of 1 tests completed'
+Redrawing test simple_fail1 coloured yellow
 
 Test progress:
 --> Not started : 0, colour 'white', font ''
 --> Running : 1, colour 'yellow', font 'bold'
 Redrawing test simple_fail1 coloured green
 (Second column 'file3 different' coloured red)
-Setting sensitivity of action '_Save' to True
-Setting sensitivity of action '_Mark' to True
+
+Progress bar set to fraction 1.0, text 'All 1 tests completed at 03Oct12:35:43'
 Making test visible : HELLO test-case simple_fail1
 
 Test Tree description...
@@ -119,8 +121,18 @@ Test Tree description...
 
 Test column header set to 'Tests: 0/1 selected, none hidden'
 
+Test progress:
+--> Not started : 0, colour 'white', font ''
+--> Running : 0, colour 'white', font ''
+--> Failed : 1, colour 'red', font 'bold'
+----> Differences : 1, colour 'red', font 'bold'
+------> file3 different : 1, colour 'red', font 'bold'
+Only one test found, selecting simple_fail1
+
 Test column header set to 'Tests: All 1 selected, none hidden'
+Setting sensitivity of action '_Save' to True
 Setting sensitivity of action 'S_ave Selection...' to True
+Setting sensitivity of action '_Mark' to True
 
 Setting file-view title to 'simple__fail1'
 Adding file errors.hello under heading 'Comparison Files', coloured green
@@ -132,7 +144,9 @@ Adding file output.hello under heading 'Comparison Files', coloured green
 
 Viewing action with title '_Update Info' (greyed out)
 
-Tabs showing : Saving
+Pane separator positioned 46% from the top
+
+Tabs showing :
 
 ---------- Text Info Window ----------
 Test FAILED :
@@ -146,8 +160,6 @@ Test FAILED :
 Tabs showing : Test, Status
 
 Tabs showing : Text Info, Saving
-
-Progress bar set to fraction 1.0, text 'All 1 tests completed at 24Aug12:00:44'
 Expected application event 'completion of test actions' occurred, proceeding.
 
 'view options for' event created with arguments 'Status'
