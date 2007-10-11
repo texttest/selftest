@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # Test GUI for 'PyUseCase'
 
-import gtk, gobject, time
+import gtk, gobject, time, sys
 from gtkusecase import ScriptEngine
 
 class VideoStore:
@@ -62,8 +62,6 @@ class VideoStore:
     def run(self):
         try:
             topWindow = self.createTopWindow()
-            # Just to make it fail (make record and replay different...)
-            print "Started the video store at", time.strftime("%d%b%H:%M:%S", time.localtime())
             gtk.main()
         except KeyboardInterrupt:
             pass
@@ -76,5 +74,8 @@ class VideoStore:
         gtk.main_quit()
         
 if __name__ == "__main__":
+    # Just to make it fail (make record and replay different...)
+    print "Started the video store at", time.strftime("%d%b%H:%M:%S", time.localtime())
+    sys.stdout.flush()
     program = VideoStore()
     program.run()
