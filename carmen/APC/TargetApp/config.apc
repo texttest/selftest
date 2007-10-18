@@ -40,6 +40,28 @@ status:Subplan
 status:CARMUSR
 status:CARMTMP
 all:sk_test9_user
+valout:==.*=={WORD 0}
+valout:--.*--{WORD 0}
+valout:{INTERNAL writedir}{REPLACE <test write dir>}
+valout:My PID
+valout:Linux version{WORD 2+}
+valout:Reading syms
+valout:REDIR
+valout:discard syms
+valout:ERROR SUMMARY:{WORD -3+}
+valout:supp:
+valout:malloc/free{WORD 2+}
+valout:checked.*bytes{WORD 2}
+valout:definitely lost{WORD 3+}
+valout:possibly lost{WORD 3+}
+valout:memcheck: secondaries:
+valout:translate: new
+valout:tt/tc
+valout:scheduler
+valout:exectx
+valout:memcheck: sanity checks:
+valout:sanity:
+valout:still reachable:
 [end]
 
 # Determines file to be used for information extraction, and presentation by tkdiff instead of diff
