@@ -1,8 +1,14 @@
 # Make sure the rave configuration works...
 RaveRun
 
+# Test for race conditions if reading the tests is slow
+RaveRunSlowRead
+
 # Test for rulesets failing to compile
 BadRaveRun
+
+# See what happens to failed rulesets if they fail before some tests are read
+BadRaveRunSlowRead
 
 # When we've passed the capacity of the system, make sure we still pick up completed rule compilations
 RuleCompFinishesLast
@@ -39,6 +45,9 @@ KillRuleCompLongTest
 
 # Copy of KillRuleCompilation, except run two tests with the same ruleset
 KillRuleComp2Tests
+
+# Copy of KillRuleCompilation, except run two tests with the same ruleset
+KillRuleComp2TestsSlowRead
 
 # Check what happens if queue system rejects rule compilation
 RuleCompSubmissionFails
