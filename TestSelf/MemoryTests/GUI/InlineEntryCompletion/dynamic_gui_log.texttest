@@ -1,5 +1,6 @@
 Enabling entry completion, using matching 1
-Top Window title is TextTest dynamic GUI : testing MEM.nomemfile (started at 24Oct13:41:49)
+- Inlining common completion prefixes in entries.
+Top Window title is TextTest dynamic GUI : testing MEM.foobar (started at 24Oct13:39:14)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -91,7 +92,7 @@ Tabs showing : Status
 
 Test progress:
 
-Changing GUI status to: 'TextTest started at 24Oct13:41:49.'
+Changing GUI status to: 'TextTest started at 24Oct13:39:15.'
 
 Waiting for application event 'completion of test actions' to occur.
 
@@ -99,21 +100,21 @@ Test progress:
 --> Not started : 1, colour 'white', font 'bold'
 
 Test Tree description...
--> TargetApp (mem.nomemfile)
-->   NoOutputFile
+-> TargetApp (mem.foobar)
+->   Failures
 
 Test column header set to 'Tests: 0/1 selected, none hidden'
 
 Progress bar set to fraction 0.0, text '0 of 1 tests completed'
-Redrawing test NoOutputFile coloured yellow
+Redrawing test Failures coloured yellow
 
 Test progress:
 --> Not started : 0, colour 'white', font ''
 --> Running : 1, colour 'yellow', font 'bold'
-Redrawing test NoOutputFile coloured red
-(Second column 'output new(+)' coloured red)
+Redrawing test Failures coloured green
+(Second column '13% larger' coloured red)
 
-Progress bar set to fraction 1.0, text 'All 1 tests completed at 24Oct13:41:50'
+Progress bar set to fraction 1.0, text 'All 1 tests completed at 24Oct13:39:16'
 
 Test progress:
 --> Not started : 0, colour 'white', font ''
@@ -121,19 +122,17 @@ Test progress:
 --> Failed : 1, colour 'red', font 'bold'
 ----> Performance differences : 1, colour 'red', font 'bold'
 ------> Memory+ : 1, colour 'red', font 'bold'
-----> Differences : 1, colour 'red', font 'bold'
-------> output new : 1, colour 'red', font 'bold'
-Only one test found, selecting NoOutputFile
+Only one test found, selecting Failures
 
 Test column header set to 'Tests: All 1 selected, none hidden'
 Setting sensitivity of action '_Save' to True
 Setting sensitivity of action 'S_ave Selection...' to True
 Setting sensitivity of action '_Mark' to True
 
-Setting file-view title to 'NoOutputFile'
+Setting file-view title to 'Failures'
 Adding file memory.mem under heading 'Comparison Files', coloured red
 (Second column '13% larger' coloured red)
-Adding file output.mem under heading 'New Files', coloured red
+Adding file output.mem under heading 'Comparison Files', coloured green
 
 Viewing action with title '_Update Info' (greyed out)
 
@@ -142,14 +141,12 @@ Pane separator positioned 46% from the top
 Tabs showing :
 
 ---------- Text Info Window ----------
-Test FAILED :
+Test used more memory :
 ---------- Differences in memory(larger) ----------
 1c1
 < Max Memory  :      42.3 MB
 ---
 > Max Memory  :      47.8 MB
----------- New result in output ----------
-Running Fake Memory Program...
 --------------------------------------
 
 Tabs showing : Test, Status
@@ -157,46 +154,7 @@ Tabs showing : Test, Status
 Tabs showing : Text Info, Saving
 Expected application event 'completion of test actions' occurred, proceeding.
 
-'save results for selected tests' event created with arguments ''
-Adding entry completion 'nomemfile' ...
-
-Changing GUI status to: 'Saving 1 tests ...'
-Saving MEM.nomemfile test-case NoOutputFile - version nomemfile, exactness 1
-
-Changing GUI status to: 'Saving MEM.nomemfile test-case NoOutputFile : memory(larger), version nomemfile'
-
-Changing GUI status to: 'Saving MEM.nomemfile test-case NoOutputFile : output, version nomemfile'
-Redrawing test NoOutputFile coloured green
-Redrawing suite TargetApp : second column 'All 1 tests successful' coloured green
-
-Test column header set to 'Tests: 0/1 selected, none hidden'
-Setting sensitivity of action '_Save' to False
-Setting sensitivity of action 'S_ave Selection...' to False
-Setting sensitivity of action '_Mark' to False
-
-Test progress:
---> Not started : 0, colour 'white', font ''
---> Running : 0, colour 'white', font ''
---> Failed : 1, colour 'red', font 'bold'
-----> Performance differences : 1, colour 'red', font 'bold'
-------> Memory+ : 1, colour 'red', font 'bold'
-----> Differences : 1, colour 'red', font 'bold'
-------> output new : 1, colour 'red', font 'bold'
-
-Tabs showing : Status
-
-Test progress:
---> Not started : 0, colour 'white', font ''
---> Running : 0, colour 'white', font ''
---> Failed : 0, colour 'white', font ''
-----> Performance differences : 0, colour 'white', font ''
-------> Memory+ : 0, colour 'white', font ''
-----> Differences : 0, colour 'white', font ''
-------> output new : 0, colour 'white', font ''
---> Succeeded : 1, colour 'green', font 'bold'
-
-Changing GUI status to: 'Saved 1 tests.'
-
 'quit' event created with arguments ''
+Adding entry completion 'foobar' ...
 
 Changing GUI status to: 'Removing all temporary files ...'
