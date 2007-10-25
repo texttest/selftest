@@ -92,6 +92,7 @@ output*:{INTERNAL writedir}{REPLACE <test write dir>}
 output*:[^/]*[0-9][0-9][A-Z][a-z][a-z][0-9][0-9][0-9][0-9][0-9][0-9]{REPLACE <target tmp dir>}
 output*:Killing.*Xvfb process{WORD -1}
 output*:second to retry
+output*:(DISPLAY variable set to localhost:)[0-9]*\.0{REPLACE \1<pid>.0}
 output:test-case.* on .*new results.*missing results.*differences{WORD -13}
 output:test-case.* on .*new results.*differences{WORD -9}
 output:test-case.* on .*missing results.*differences{WORD -9}
@@ -128,7 +129,7 @@ catalogue:unixperf
 catalogue:tdat.*cmp
 catalogue:hello.*cmp
 catalogue:dip.*cmp
-catalogue:Xvfb\.[a-z]*\.([0-9]*){REPLACE Xvfb.<machine>.\1}
+catalogue:Xvfb\.[a-z]*\.[0-9]*{REPLACE Xvfb.<machine>.<pid>}
 catalogues:{INTERNAL writedir}{REPLACE <test write dir>}
 catalogues:[^/]*[0-9][0-9][A-Z][a-z][a-z][0-9][0-9][0-9][0-9][0-9][0-9]{REPLACE <target tmp dir>}
 errors:{INTERNAL writedir}{REPLACE <test write dir>}
@@ -176,13 +177,14 @@ jusecaseprops:[^/]*[0-9][0-9][A-Z][a-z][a-z][0-9][0-9][0-9][0-9][0-9][0-9]{REPLA
 usecase:usecase filtering 3 lines{LINES 3}
 traffic:{INTERNAL writedir}{REPLACE <test write dir>}
 traffic:[^/]*[0-9][0-9][A-Z][a-z][a-z][0-9][0-9][0-9][0-9][0-9][0-9]{REPLACE <target tmp dir>}
+traffic:[^ ]*(/startXvfb.py){REPLACE <path>\1}
+traffic:startXvfb.py{WORD 3}{REPLACE "<python>}
 readenvironment:{INTERNAL writedir}{REPLACE <test write dir>}
 readenvironment:[^/]*[0-9][0-9][A-Z][a-z][a-z][0-9][0-9][0-9][0-9][0-9][0-9]{REPLACE <target tmp dir>}
 [end]
 
 [unordered_text]
 gui_log:Dynamic run failed{LINES 3}
-traffic:Xvfb -ac
 usecase_log:application event.*to be read
 dynamic_gui_log:application event.*to be read
 [end]
@@ -252,7 +254,7 @@ collect_traffic:time
 collect_traffic:rsh
 collect_traffic:interpretcore.py
 collect_traffic:cvs
-collect_traffic:Xvfb
+collect_traffic:which
 
 [collect_traffic_environment]
 time:TEXTTEST_HOME
