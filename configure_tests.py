@@ -156,7 +156,8 @@ def configureTests(testDir, sourceDir):
 
         for outputFile in findPathsMatching(testDir, "output"):
             transformFile(outputFile, replaceCmdToolsForWindows)
-        for outputFile in findPathsMatching(testDir, "outputrep"):
+        filesWithDisplay = findPathsMatching(testDir, "outputrep") + findPathsMatching(testDir, "outputdyn")
+        for outputFile in filesWithDisplay:
             transformFile(outputFile, replaceDisplayForWindows)
         transformFile(configFile, insertWordpad)
 
