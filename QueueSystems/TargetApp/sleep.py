@@ -8,8 +8,11 @@ def getSleepLength():
     else:
         return 5
 
-sleepLength = getSleepLength()
-print "Sleeping for", sleepLength, "seconds..."
-sys.stdout.flush()
-time.sleep(sleepLength)
-print "Done"
+try:
+    sleepLength = getSleepLength()
+    print "Sleeping for", sleepLength, "seconds..."
+    sys.stdout.flush()
+    time.sleep(sleepLength)
+    print "Done"
+except KeyboardInterrupt:
+    pass
