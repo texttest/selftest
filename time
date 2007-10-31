@@ -9,9 +9,9 @@ sys 1.5
 """
 
 options, args = getopt(sys.argv[1:], "po:")
+os.spawnvp(os.P_WAIT, args[0], args)
+
 perfFile = dict(options).get("-o")
 targetFile = open(perfFile, "w")
-print "Writing to", perfFile, output
 targetFile.write(output)
 targetFile.close()
-os.execvp(args[0], args)
