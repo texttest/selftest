@@ -1,19 +1,27 @@
+
+##==============================================================================
+##Stuff that only works at Jeppesen!
+
+config_module:carmenqueuesystem
+
+# Settings for Carmen
+default_checkout:master
+
+[checkout_location]
+default:~/work/${TEXTTEST_CHECKOUT_NAME}/Testing/Automatic/texttest
+nightly_publish:/carm/${TEXTTEST_CHECKOUT_NAME}/Testing/Automatic/texttest
+weekly_publish:/carm/${TEXTTEST_CHECKOUT_NAME}/Testing/Automatic/texttest
+[end]
+
+## end of stuff only for use at Jeppesen
+## ================================================================
+
 # Tests for texttest_release.py
 binary:${TEXTTEST_CHECKOUT}/configure_tests.py
 
 full_name:SelfTest Configure
 
 create_catalogues:true
-
-config_module:carmenqueuesystem
-
-# Settings for Carmen
-default_checkout:master
-[checkout_location]
-default:~/work/${TEXTTEST_CHECKOUT_NAME}/Testing/Automatic/texttest
-nightly_publish:/carm/${TEXTTEST_CHECKOUT_NAME}/Testing/Automatic/texttest
-weekly_publish:/carm/${TEXTTEST_CHECKOUT_NAME}/Testing/Automatic/texttest
-[end]
 
 copy_test_path:texttest
 link_test_path:gtk.py
