@@ -5,7 +5,7 @@ os.name = "posix"
 orig_isfile = os.path.isfile
 
 def my_isfile(path):
-    programs = [ "tkdiff", "java", "emacs", "tail", "Xvfb" ]
+    programs = [ "tkdiff", "java", "emacs", "tail", "Xvfb", "bsub", "qsub" ]
     if os.path.basename(path) in programs:
         return True
     else:
