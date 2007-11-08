@@ -1,7 +1,15 @@
-LSF (LSF 5.1, Aug  3 2004) installed locally - consider using the lsf configuration!
-SGE (GE 6.0u8) installed locally - consider using the sge configuration!
+SGE is installed - changing self-tests to run in parallel using it
+binary:${TEXTTEST_CHECKOUT}/bin/texttest.py
+
+config_module:queuesystem
+queue_system_module:SGE
+-> inserted into /carm/proj/texttest/geoff/texttesttmp/ttinst.08Nov145936/ttinst/InstallTests/Jeppesen/texttest/config.texttest
 binary:${TEXTTEST_CHECKOUT}/bin/texttest.py
 
 checkout_location:/some/location/for/tests
--> inserted into /users/geoff/texttesttmp/ttinst.10May171014/InstallTests/Jeppesen/texttest/config.texttest
+-> inserted into /carm/proj/texttest/geoff/texttesttmp/ttinst.08Nov145936/ttinst/InstallTests/Jeppesen/texttest/config.texttest
+binary:${TEXTTEST_CHECKOUT}/configure_tests.py
+
+checkout_location:/carm/proj/texttest/geoff/texttesttmp/ttinst.08Nov145936/ttinst/InstallTests/Jeppesen/texttest
+-> inserted into /carm/proj/texttest/geoff/texttesttmp/ttinst.08Nov145936/ttinst/InstallTests/Jeppesen/texttest/config.ttinst
 Fake GTK is here!

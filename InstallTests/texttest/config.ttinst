@@ -1,0 +1,18 @@
+
+# Tests for texttest_release.py
+binary:${TEXTTEST_CHECKOUT}/configure_tests.py
+
+full_name:SelfTest Configure
+
+create_catalogues:true
+
+partial_copy_test_path:texttest
+link_test_path:gtk.py
+link_test_path:configintercept.py
+
+[test_data_environment]
+texttest:TEXTTEST_HOME
+
+[run_dependent_text]
+output:{INTERNAL writedir}{REPLACE <test dir>}
+output:No source dir{WORD 6}{REPLACE <dir>}

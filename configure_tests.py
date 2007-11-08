@@ -58,16 +58,9 @@ def transformFile(file, function, *args):
     else:
         os.remove(newFileName)
 
-def insertSourceDir(line, sourceDir):
+def insertIntoConfig(line, extraLine):
     if line.startswith("binary:"):
-        return line + "\ncheckout_location:" + sourceDir + "\n"
-    else:
-        return line
-
-# Files come from UNIX, which don't get displayed properly by notepad (the default)
-def insertWordpad(line):
-    if line.startswith("binary:"):
-        return line + "\nview_program:wordpad\n"
+        return line + "\n" + extraLine + "\n"
     else:
         return line
     
@@ -113,31 +106,43 @@ def replacePathForWindows(line):
     else:
         return line
  
-def checkInstall(queueSystem, cmdLine, testDir):
-    stdin, stdout, stderr = os.popen3(cmdLine)
-    outlines = stdout.readlines()
-    errlines = stderr.readlines()
-    if len(errlines) > 1:# LSF prints several lines
-        outlines = errlines
-        errlines = []
-    if len(errlines) == 0: 
-        print queueSystem.upper(), "(" + outlines[0].strip() + ") installed locally - consider using the", queueSystem, "configuration!" 
-    else:
-        print queueSystem.upper(), "not installed - commented self-tests for", queueSystem, "configuration."
-        commentLine(os.path.join(testDir, "config.texttest"), "extra_version:" + queueSystem)
+def isInstalled(program):
+    for dir in os.getenv("PATH").split(os.pathsep):
+        fullPath = os.path.join(dir, program)
+        if os.path.isfile(fullPath):
+            return True
+    return False
 
+def getPreRequisites():
+    common = [ "tkdiff", "java" ]
+    if os.name == "posix":
+        return common + [ "emacs", "Xvfb" ]
+    else:
+        return [ name + ".exe" for name in common ] + [ "baretail.exe" ]
+
+def checkPreRequisites():
+    for program in getPreRequisites():
+        if not isInstalled(program):
+            raise EnvironmentError, "pre-requisite program '" + program + "' cannot be found on your PATH."
+
+def enableQueueSystem(name, configFile):
+    print name, "is installed - changing self-tests to run in parallel using it"
+    transformFile(configFile, insertIntoConfig, "config_module:queuesystem\nqueue_system_module:" + name)
+            
 def configureTests(testDir, sourceDir):
+    checkPreRequisites()
     testSuiteFiles = findPathsMatching(testDir, "testsuite")
     configFile = os.path.join(testDir, "config.texttest")
     if os.name == "posix":
-        checkInstall("lsf", "bsub -V", testDir)
-        checkInstall("sge", "qsub -help", testDir)
+        if isInstalled("qsub"):
+            enableQueueSystem("SGE", configFile)
+        elif isInstalled("bsub"):
+            enableQueueSystem("LSF", configFile)
     else:
         print "Disabling UNIX-specific test elements..."
-        testFile = os.path.join(testDir, "config.texttest")
-        commentLine(testFile, "view_program:emacs")
-        commentLine(testFile, "extra_version:lsf")
-        commentLine(testFile, "extra_version:sge")
+        commentLine(configFile, "view_program:emacs")
+        commentLine(configFile, "extra_version:lsf")
+        commentLine(configFile, "extra_version:sge")
         for testSuiteFile in testSuiteFiles:
             commentLine(testSuiteFile, "UnixOnly")
             uncommentLine(testSuiteFile, "WindowsOnly")
@@ -159,9 +164,12 @@ def configureTests(testDir, sourceDir):
         filesWithDisplay = findPathsMatching(testDir, "outputrep") + findPathsMatching(testDir, "outputdyn")
         for outputFile in filesWithDisplay:
             transformFile(outputFile, replaceDisplayForWindows)
-        transformFile(configFile, insertWordpad)
+        # Files come from UNIX, which don't get displayed properly by notepad (the default)
+        transformFile(configFile, insertIntoConfig, "view_program:wordpad")
 
-    transformFile(configFile, insertSourceDir, sourceDir)
+    transformFile(configFile, insertIntoConfig, "checkout_location:" + sourceDir)
+    instConfigFile = os.path.join(testDir, "config.ttinst")
+    transformFile(instConfigFile, insertIntoConfig, "checkout_location:" + testDir)
     try:
         import gtk
     except:
@@ -198,4 +206,9 @@ if __name__ == "__main__":
     testRoot, sourceDir = getCommandLine()
     if sourceDir:
         testDir = getTestDir(testRoot)
-        configureTests(testDir, sourceDir)
+        try:
+            configureTests(testDir, sourceDir)
+        except EnvironmentError, e:
+            print "ERROR: Could not run self-tests as", str(e)
+            sys.exit(1)
+
