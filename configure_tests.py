@@ -26,7 +26,7 @@ def findPathsMatching(dir, stem):
     paths = []
     for file in os.listdir(dir):
         fullPath = os.path.join(dir, file)
-        if file.startswith(stem):
+        if file == stem or file.startswith(stem + "."):
             paths.append(fullPath)
         elif os.path.isdir(fullPath) and file != "InstallTests":
             # Don't touch the InstallTests, they exist to test this script!
