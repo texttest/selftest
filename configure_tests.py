@@ -28,7 +28,8 @@ def findPathsMatching(dir, stem):
         fullPath = os.path.join(dir, file)
         if file.startswith(stem):
             paths.append(fullPath)
-        elif os.path.isdir(fullPath):
+        elif os.path.isdir(fullPath) and file != "InstallTests":
+            # Don't touch the InstallTests, they exist to test this script!
             paths += findPathsMatching(fullPath, stem)
     return paths
 
@@ -116,9 +117,10 @@ def isInstalled(program):
 def getPreRequisites():
     common = [ "tkdiff", "java" ]
     if os.name == "posix":
-        return common + [ "emacs", "Xvfb" ]
+        return common + [ "emacs", "tail", "Xvfb" ]
     else:
-        return [ name + ".exe" for name in common ] + [ "baretail.exe" ]
+        allStems = common + [ "wordpad", "baretail" ]
+        return [ name + ".exe" for name in allStems ] 
 
 def checkPreRequisites():
     for program in getPreRequisites():
@@ -133,6 +135,7 @@ def configureTests(testDir, sourceDir):
     checkPreRequisites()
     testSuiteFiles = findPathsMatching(testDir, "testsuite")
     configFile = os.path.join(testDir, "config.texttest")
+    instConfigFile = os.path.join(testDir, "config.ttinst")
     if os.name == "posix":
         if isInstalled("qsub"):
             enableQueueSystem("SGE", configFile)
@@ -166,9 +169,9 @@ def configureTests(testDir, sourceDir):
             transformFile(outputFile, replaceDisplayForWindows)
         # Files come from UNIX, which don't get displayed properly by notepad (the default)
         transformFile(configFile, insertIntoConfig, "view_program:wordpad")
-
+        transformFile(instConfigFile, insertIntoConfig, "view_program:wordpad")
+    
     transformFile(configFile, insertIntoConfig, "checkout_location:" + sourceDir)
-    instConfigFile = os.path.join(testDir, "config.ttinst")
     transformFile(instConfigFile, insertIntoConfig, "checkout_location:" + testDir)
     try:
         import gtk
