@@ -7,9 +7,12 @@ if hasattr(os, "unsetenv"):
 orig_isfile = os.path.isfile
 
 def my_isfile(path):
-    programs = [ "bsub", "qsub" ]
-    if os.path.basename(path) in programs:
+    absent = [ "bsub", "qsub" ]
+    present = [ "tkdiff", "java", "emacs", "tail", "Xvfb" ]
+    if os.path.basename(path) in absent:
         return False
+    elif os.path.basename(path) in present:
+        return True
     else:
         return orig_isfile(path)
 
