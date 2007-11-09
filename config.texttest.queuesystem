@@ -27,7 +27,7 @@ catalogue:-stacktrace.collate_errs
 *Report:File .* line .* in
 traffic:[^/]*[0-9][0-9][A-Z][a-z][a-z][0-9][0-9][0-9][0-9][0-9][0-9]{REPLACE <target tmp dir>}
 traffic:[0-9]*\.[0-9]*\.[0-9]*\.[0-9]*:[0-9]*{REPLACE <host:port>}
-traffic:[^ ]*/Testing/Automatic{REPLACE <texttest_home>}
+traffic:[^ ]*/(texttest/logging.texttest){REPLACE <texttest_home>/\1}
 traffic:[^ ]*/texttest[\.py]* {REPLACE <path_to_texttest> }
 traffic:<-CLI:[0-9]*{REPLACE <-CLI:<pid>}
 traffic:'pid'${LINES 3}
