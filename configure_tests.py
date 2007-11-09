@@ -24,7 +24,9 @@ from tempfile import mktemp
 
 def findPathsMatching(dir, stem):
     paths = []
-    for file in os.listdir(dir):
+    files = os.listdir(dir)
+    files.sort()
+    for file in files:
         fullPath = os.path.join(dir, file)
         if file == stem or file.startswith(stem + "."):
             paths.append(fullPath)
