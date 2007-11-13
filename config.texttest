@@ -15,6 +15,10 @@ nightjob:/carm/proj/texttest/release/current
 
 default_major_release:none
 
+[test_data_searchpath]
+sge:/usr/local/share
+[end]
+
 # ---------------- Values needed to run in batch mode at Carmen -------------------
 
 # Machines where we can start Xvfb
@@ -227,7 +231,7 @@ personaldir:TEXTTEST_PERSONAL_CONFIG
 usecases:USECASE_HOME
 standard_console:STANDARD_CONSOLE
 gtk_config:XDG_CONFIG_HOME
-sge_root:SGE_ROOT
+sge:SGE_ROOT
 [end]
 
 test_data_ignore:*pyc
@@ -247,7 +251,7 @@ link_test_path:time
 link_test_path:qsub
 link_test_path:qdel
 link_test_path:sgehostfile
-link_test_path:sge_root
+link_test_path:sge
 # Faked versions of LSF commands...
 link_test_path:bsub
 link_test_path:bkill
