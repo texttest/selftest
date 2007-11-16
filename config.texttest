@@ -133,7 +133,7 @@ catalogue:unixperf
 catalogue:tdat.*cmp
 catalogue:hello.*cmp
 catalogue:dip.*cmp
-catalogue:Xvfb\.[a-z]*\.[0-9]*{REPLACE Xvfb.<machine>.<pid>}
+catalogue:Xvfb\..*\.[0-9]*{REPLACE Xvfb.<machine>.<pid>}
 catalogues:{INTERNAL writedir}{REPLACE <test write dir>}
 catalogues:[^/]*[0-9][0-9][A-Z][a-z][a-z][0-9][0-9][0-9][0-9][0-9][0-9]{REPLACE <target tmp dir>}
 errors:{INTERNAL writedir}{REPLACE <test write dir>}
