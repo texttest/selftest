@@ -40,37 +40,7 @@ status:Subplan
 status:CARMUSR
 status:CARMTMP
 all:sk_test9_user
-valgrind:==.*=={WORD 0}
-valgrind:--.*--{WORD 0}
-valgrind:{INTERNAL writedir}{REPLACE <test write dir>}
-valgrind:My PID
-valgrind:Linux version{WORD 2+}
-valgrind:Reading syms
-valgrind:REDIR
-valgrind:new:.*(index     ) 
-valgrind:discard syms
-valgrind:Discarding syms at
-valgrind:ERROR SUMMARY:{WORD -3+}
-valgrind:supp:
-valgrind:malloc/free{WORD 2+}
-valgrind:checked.*bytes{WORD 2}
-valgrind:definitely lost{WORD 3+}
-valgrind:possibly lost{WORD 3+}
-valgrind:memcheck: secondaries:
-valgrind:translate:
-valgrind:transtab:
-valgrind:tt/tc
-valgrind:scheduler
-valgrind:exectx
-valgrind:memcheck: sanity checks:
-valgrind:memcheck: SMs: 
-valgrind:memcheck: max sec V bit nodes:
-valgrind:memcheck: set_sec_vbits8 calls:
-valgrind:memcheck: max shadow mem size:
-valgrind:sanity:
-valgrind:still reachable:
-valgrind:$USER{REPLACE <username>}
-valgrind:johani{REPLACE <username>}
+valgrind:.*
 [end]
 
 # Determines file to be used for information extraction, and presentation by tkdiff instead of diff
