@@ -205,11 +205,6 @@ targetReport:1
 errors:1
 [end]
 
-[diagnostics]
-write_directory_variable:TEXTTEST_DIAGDIR
-configuration_file_variable:TEXTTEST_LOGCONFIG
-[end]
-
 # Force recomputation of files on non-UNIX archs
 home_operating_system:posix
 
@@ -232,10 +227,12 @@ usecases:USECASE_HOME
 standard_console:STANDARD_CONSOLE
 gtk_config:XDG_CONFIG_HOME
 sge:SGE_ROOT
+logging:TEXTTEST_LOGCONFIG
 [end]
 
 test_data_ignore:*pyc
 
+link_test_path:logging
 # List of constant input files to create links to. Will copy them on Windows as symbolic links
 # don't exist.
 link_test_path:personaldir

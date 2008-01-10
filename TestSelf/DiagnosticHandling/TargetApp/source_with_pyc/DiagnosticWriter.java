@@ -14,9 +14,7 @@ class DiagnosticWriter
     {
       FileInputStream input = new FileInputStream("myprops.properties");
       props.load(input);
-      String log4jconfigfile = props.getProperty("testdiag_readfile");
-      String writeDir = props.getProperty("testdiag_writedir");
-      System.getProperties().setProperty("testdiag_writedir", writeDir);
+      String log4jconfigfile = props.getProperty("TESTDIAG_READFILE");
       File config = new File(log4jconfigfile);
       if (config.exists())
         PropertyConfigurator.configure(log4jconfigfile);

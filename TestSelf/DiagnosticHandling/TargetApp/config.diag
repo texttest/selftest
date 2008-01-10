@@ -10,8 +10,10 @@ home_operating_system:posix
 output:Java version
 [end]
 
-[diagnostics]
 trace_level_variable:LOG_LEVEL
-configuration_file_variable:TESTDIAG_READFILE
-write_directory_variable:TESTDIAG_WRITEDIR
-[end]
+
+link_test_path:logging
+
+[test_data_environment]
+logging:TESTDIAG_READFILE
+
