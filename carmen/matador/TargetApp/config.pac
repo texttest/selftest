@@ -1,4 +1,4 @@
-# This file is used by runtests.py, and specifies the binary, 
+# This file is used by runtests.py, and specifies the executable, 
 # default checkout, users, and run-dependent text etc. for Pairing (PAC) 
 
 # ---------------- Values required by the framework -------------------
@@ -9,7 +9,7 @@ config_module:matador
 queue_system_module:${QUEUE_SYSTEM}
 
 # Binary (relative to checkout) to be used
-binary:${CARMSYS}/bin/MATADORbatch.sh
+executable:${CARMSYS}/bin/MATADORbatch.sh
 
 default_interface:console
 

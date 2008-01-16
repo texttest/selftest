@@ -62,7 +62,7 @@ def transformFile(file, function, *args):
         os.remove(newFileName)
 
 def insertIntoConfig(line, extraLine):
-    if line.startswith("binary:"):
+    if line.startswith("executable:"):
         return line + "\n" + extraLine + "\n"
     else:
         return line

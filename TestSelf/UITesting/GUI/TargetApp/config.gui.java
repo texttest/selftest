@@ -1,5 +1,5 @@
-# Path to the binary.
-binary:$TEXTTEST_HOME/source_with_pyc/videostore.jar
+# Path to the executable.
+executable:$TEXTTEST_HOME/source_with_pyc/videostore.jar
 
 interpreter:java -jar
 

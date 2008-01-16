@@ -15,7 +15,7 @@ nightjob:/carm/proj/texttest/release/current
 
 default_major_release:none
 
-[test_data_searchpath]
+[extra_search_directory]
 sge:/usr/local/share
 [end]
 
@@ -87,8 +87,8 @@ unsaveable_version:i386_linux
 ## end of stuff only for use at Carmen
 ## ================================================================
 
-# Path to the binary
-binary:${TEXTTEST_CHECKOUT}/bin/texttest.py
+# Path to the executable
+executable:${TEXTTEST_CHECKOUT}/bin/texttest.py
 
 [run_dependent_text]
 output*:TextTest will write diagnostics
@@ -315,5 +315,5 @@ extra_version:lsf
 ## more stuff only for use at Carmen
 extra_version:carmen
 
-# Path to the binary - override this so we run our shell script
-binary:${TEXTTEST_CHECKOUT}/bin/texttest
+# Path to the executable - override this so we run our shell script
+executable:${TEXTTEST_CHECKOUT}/bin/texttest
