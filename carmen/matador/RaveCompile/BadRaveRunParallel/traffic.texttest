@@ -1,10 +1,10 @@
-<-SRV:TextTest slave server started on 192.168.99.116:44512
-<-CMD:cd /nfs/vm/texttest/geoff/texttesttmp/texttest.26Sep152130/texttest.carmen/carmen/matador/RaveCompile/BadRaveRunParallel/texttesttmp/cas.badrule.extraversion.26Sep152135/slavelogs; env 'CARMSYS=/carm/proj/texttest/selftest_data/CARMSYS' 'CARMUSR=/carm/proj/texttest/selftest_data/CARMUSRs/Matador_user' 'CARMTMP=/carm/proj/texttest/selftest_data/CARMTMPs/Matador_tmp' '_AUTOTEST__LOCAL_COMPILE_=1' qsub -N Rules-Matador_5_bad.ArtificialUser-matador -l "carmarch=*i386_linux*,carmbuildmaster=1,rave" -w e -notify -m n -cwd -b y -V -o Rules-Matador_5_bad.ArtificialUser-matador.log -e Rules-Matador_5_bad.ArtificialUser-matador.errors 'exec $SHELL -c "exec /users/geoff/work/master/Testing/TextTest/bin/remotecmd.py /carm/proj/texttest/selftest_data/CARMTMPs/Matador_tmp/crc/rule_set/MATADOR/i386_linux/Matador_5_bad 192.168.99.116:44510 /carm/proj/texttest/selftest_data/CARMSYS/bin/crc_compile matador -optimize -archs i386_linux /carm/proj/texttest/selftest_data/CARMUSRs/Matador_user/crc/source/Matador_5_bad"'
-->OUT:Your job 48586 ("Rules-Matador_5_bad.ArtificialUser-matador") has been submitted
+<-SRV:TextTest slave server started on 192.168.99.32:58028
+<-CMD:cd /nfs/vm/texttest-tmp/geoff/texttest.17Jan142907/texttest.carmen/carmen/matador/RaveCompile/BadRaveRunParallel/texttesttmp/cas.badrule.extraversion.17Jan142921/slavelogs; env 'CARMSYS=/carm/proj/texttest/selftest_data/CARMSYS' 'CARMUSR=/carm/proj/texttest/selftest_data/CARMUSRs/Matador_user' 'CARMTMP=/carm/proj/texttest/selftest_data/CARMTMPs/Matador_tmp' '_AUTOTEST__LOCAL_COMPILE_=1' qsub -N Rules-Matador_5_bad.ArtificialUser-matador -l "carmarch=*i386_linux*,carmbuildmaster=1,rave" -w e -notify -m n -cwd -b y -V -o Rules-Matador_5_bad.ArtificialUser-matador.log -e Rules-Matador_5_bad.ArtificialUser-matador.errors 'exec $SHELL -c "exec /users/geoff/work/master/Testing/TextTest/bin/remotecmd.py Matador_5_bad./carm/proj/texttest/selftest_data/CARMTMPs/Matador_tmp 192.168.99.32:58026 /carm/proj/texttest/selftest_data/CARMSYS/bin/crc_compile matador -optimize -archs i386_linux /carm/proj/texttest/selftest_data/CARMUSRs/Matador_user/crc/source/Matador_5_bad"'
+->OUT:Your job 506372 ("Rules-Matador_5_bad.ArtificialUser-matador") has been submitted
 <-SRV:Completed submission of all rule compilations and tests that don't require rule compilation
-->CLI:remotecmd.py:/carm/proj/texttest/selftest_data/CARMTMPs/Matador_tmp/crc/rule_set/MATADOR/i386_linux/Matador_5_bad:start
-->CLI:remotecmd.py:/carm/proj/texttest/selftest_data/CARMTMPs/Matador_tmp/crc/rule_set/MATADOR/i386_linux/Matador_5_bad:exitcode=1
-Build Rave program Matador_5_bad started on hendersonville, 31 May 11:30
+->CLI:remotecmd.py:Matador_5_bad./carm/proj/texttest/selftest_data/CARMTMPs/Matador_tmp:start
+->CLI:remotecmd.py:Matador_5_bad./carm/proj/texttest/selftest_data/CARMTMPs/Matador_tmp:exitcode=1
+Build Rave program Matador_5_bad started on placerville, 17 January 14:29
 Generating code... |STD_ERR|
 *** Trouble report (1 error, 0 warnings):
 
@@ -14,4 +14,5 @@ Generating code... |STD_ERR|
       18: %cost_of_a_roster% = sum(leg(roser),%cost_weight%);
                                ^^^
    ERROR: _topmodule.roser is undefined
+
 <-SRV:Completed submission of all tests

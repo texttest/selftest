@@ -23,7 +23,7 @@ Adding entry completion 'png' ...
 Adding entry completion 'svg' ...
 Adding entry completion 'gnuplot' ...
 Adding entry completion 'mpl' ...
-Top Window title is TextTest dynamic GUI : testing Matador under /carm/proj/texttest/selftest_data (started at 04Jan15:47:51)
+Top Window title is TextTest dynamic GUI : testing Matador under /carm/proj/texttest/selftest_data (started at 17Jan14:56:15)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -173,7 +173,7 @@ Tabs showing : Status
 
 Test progress:
 
-Changing GUI status to: 'TextTest started at 04Jan15:47:52.'
+Changing GUI status to: 'TextTest started at 17Jan14:56:16.'
 
 Waiting for application event 'all tests to be read' to occur.
 Waiting for application event 'test all_1crew version <default> to start ruleset compilation' to occur.
@@ -209,14 +209,14 @@ Test progress:
 --> Not started : 0, colour 'white', font ''
 --> Pending rulecompile : 2, colour 'white', font 'bold'
 Redrawing test all_1crew coloured peach puff
-(Second column 'RULES (connellsville)' coloured peach puff)
+(Second column 'RULES (portmoller)' coloured peach puff)
 
 Test progress:
 --> Not started : 0, colour 'white', font ''
 --> Pending rulecompile : 1, colour 'white', font 'bold'
 --> Running rulecompile : 1, colour 'peach puff', font 'bold'
 Redrawing test all_1crew coloured peach puff
-(Second column 'RULES (connellsville)' coloured peach puff)
+(Second column 'RULES (portmoller)' coloured peach puff)
 
 Test progress:
 --> Not started : 0, colour 'white', font ''
@@ -229,8 +229,12 @@ Expected application event 'test all_1crew version othercarmtmp to start ruleset
 'quit' event created with arguments ''
 
 Changing GUI status to: 'Killing all running tests ...'
+
+Changing GUI status to: 'Killed all running tests.'
+
+Changing GUI status to: 'Waiting for all tests to terminate ...'
 Redrawing test all_1crew coloured red
-(Second column 'no report from rule compilation (possibly killed with SIGKILL)' coloured red)
+(Second column 'Ruleset build killed at 14:56' coloured red)
 
 Progress bar set to fraction 0.5, text '1 of 2 tests completed'
 
@@ -239,21 +243,19 @@ Test progress:
 --> Pending rulecompile : 0, colour 'white', font ''
 --> Running rulecompile : 1, colour 'peach puff', font 'bold'
 --> Failed : 1, colour 'red', font 'bold'
-----> Unrunnable : 1, colour 'red', font 'bold'
-------> no report from rule compilation (possibly killed with SIGKILL) : 1, colour 'red', font 'bold'
+----> Cancelled : 1, colour 'red', font 'bold'
+------> Ruleset build killed at 14:56 : 1, colour 'red', font 'bold'
 Redrawing test all_1crew coloured red
-(Second column 'no report from rule compilation (possibly killed with SIGKILL)' coloured red)
+(Second column 'Ruleset build killed at 14:56' coloured red)
 
-Progress bar set to fraction 1.0, text 'All 2 tests completed at 04Jan15:47:54'
+Progress bar set to fraction 1.0, text 'All 2 tests completed at 17Jan14:56:26'
 
 Test progress:
 --> Not started : 0, colour 'white', font ''
 --> Pending rulecompile : 0, colour 'white', font ''
 --> Running rulecompile : 0, colour 'white', font ''
 --> Failed : 2, colour 'red', font 'bold'
-----> Unrunnable : 2, colour 'red', font 'bold'
-------> no report from rule compilation (possibly killed with SIGKILL) : 2, colour 'red', font 'bold'
-
-Changing GUI status to: 'Killed all running tests.'
+----> Cancelled : 2, colour 'red', font 'bold'
+------> Ruleset build killed at 14:56 : 2, colour 'red', font 'bold'
 
 Changing GUI status to: 'Removing all temporary files ...'
