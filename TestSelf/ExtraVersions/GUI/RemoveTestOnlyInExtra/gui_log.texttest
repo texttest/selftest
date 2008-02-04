@@ -8,9 +8,9 @@ Adding entry completion 'extra2' ...
 Adding entry completion 'output' ...
 Adding entry completion 'errors' ...
 Adding entry completion '1' ...
-Adding entry completion '/carm/proj/texttest-tmp/mattias/texttest.09Jan163951/texttest/TestSelf/ExtraVersions/GUI/RemoveTestOnlyInExtra/TargetApp/Diagnostics/log4py.conf' ...
-Adding entry completion '/carm/proj/texttest-tmp/mattias/texttest.09Jan163951/texttest/TestSelf/ExtraVersions/GUI/RemoveTestOnlyInExtra/TargetApp/Diagnostics' ...
-Adding entry completion '/carm/proj/texttest-tmp/mattias/texttest.09Jan163951/texttest/TestSelf/ExtraVersions/GUI/RemoveTestOnlyInExtra/texttesttmp' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.29Jan165618/texttest/TestSelf/ExtraVersions/GUI/RemoveTestOnlyInExtra/TargetApp/Diagnostics/log4py.conf' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.29Jan165618/texttest/TestSelf/ExtraVersions/GUI/RemoveTestOnlyInExtra/TargetApp/Diagnostics' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.29Jan165618/texttest/TestSelf/ExtraVersions/GUI/RemoveTestOnlyInExtra/texttesttmp' ...
 Top Window title is TextTest static GUI : management of tests for HELLO
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
@@ -153,13 +153,13 @@ Viewing check button for switch 'Select in collapsed suites'
 Viewing radio button for switch 'Current selection:', options Discard/Refine/Extend/Exclude'. Default value 0.
 Viewing action with title '_Select'
 
-Changing GUI status to: 'TextTest started at 09Jan16:40:22.'
+Changing GUI status to: 'TextTest started at 29Jan16:56:21.'
 
 Waiting for application event 'all tests to be read' to occur.
 
 Changing GUI status to: 'Reading tests ...'
 
-Changing GUI status to: 'Reading tests completed at 09Jan16:40:23.'
+Changing GUI status to: 'Reading tests completed at 29Jan16:56:21.'
 
 Test Tree description...
 -> TargetApp (hello)
@@ -168,12 +168,12 @@ Test Tree description...
 ->   Extra1
 ->   Extra2
 
-Test column header set to 'Tests: 0/4 selected'
+Test column header set to 'Tests: 0/6 selected, 0/4 distinct'
 Expected application event 'all tests to be read' occurred, proceeding.
 
 'set test selection to' event created with arguments 'Common'
 
-Test column header set to 'Tests: 1/4 selected'
+Test column header set to 'Tests: 3/6 selected, 1/4 distinct'
 Setting sensitivity of action '_Copy' to True
 Setting sensitivity of action '_Cut' to True
 Setting sensitivity of action '_Run' to True
@@ -204,7 +204,7 @@ Tabs showing : Text Info, New File, Bugs
 
 'remove selected files' event created with arguments ''
 CONFIRMATION: 
-You are about to remove the test 'Common' and all associated files.
+You are about to remove 3 tests with associated files.
 
 Note: This will remove files from the file system and hence may not be reversible.
 
@@ -213,9 +213,9 @@ Are you sure you wish to proceed?
 'answer yes to texttest confirmation' event created with arguments ''
 Adding entry completion 'environment' ...
 
-Test column header set to 'Tests: 1/3 selected'
+Test column header set to 'Tests: 3/5 selected, 1/3 distinct'
 
-Test column header set to 'Tests: 0/3 selected'
+Test column header set to 'Tests: 0/5 selected, 0/3 distinct'
 Setting sensitivity of action '_Copy' to False
 Setting sensitivity of action '_Cut' to False
 Setting sensitivity of action '_Run' to False
@@ -243,7 +243,13 @@ Viewing action with title '_Select'
 Tabs showing : Selection, Config
 Removing test with path Common
 
-Changing GUI status to: 'Removed test(s) Common'
+Test column header set to 'Tests: 0/4 selected, 0/3 distinct'
+Removing additional test from path Common
+
+Test column header set to 'Tests: 0/3 selected'
+Removing additional test from path Common
+
+Changing GUI status to: 'Removed test(s) Common,Common,Common'
 
 'set test selection to' event created with arguments 'Extra1'
 
@@ -253,10 +259,6 @@ Setting sensitivity of action '_Cut' to True
 Setting sensitivity of action '_Run' to True
 Setting sensitivity of action '_Rename...' to True
 Setting sensitivity of action 'Remove...' to True
-Setting sensitivity of action 'Move to first' to True
-Setting sensitivity of action 'Move up' to True
-Setting sensitivity of action 'Move down' to True
-Setting sensitivity of action 'Move to last' to True
 Setting sensitivity of action 'Re_connect' to True
 Setting sensitivity of action 'S_ave Selection...' to True
 
@@ -296,10 +298,6 @@ Setting sensitivity of action '_Cut' to False
 Setting sensitivity of action '_Run' to False
 Setting sensitivity of action '_Rename...' to False
 Setting sensitivity of action 'Remove...' to False
-Setting sensitivity of action 'Move to first' to False
-Setting sensitivity of action 'Move up' to False
-Setting sensitivity of action 'Move down' to False
-Setting sensitivity of action 'Move to last' to False
 Setting sensitivity of action 'Re_connect' to False
 Setting sensitivity of action 'S_ave Selection...' to False
 

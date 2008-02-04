@@ -1,11 +1,10 @@
 wait for all tests to be read
 set test selection to S01.99
 cvs log for the selected files
-select TargetApp/Game9952/S01.99/output.dip
 press close
 set test selection to S01.99,S02
 cvs log for the selected files
-select TargetApp/Game9952/S02/output.dip
+select output.dip under S02
 press close
 set test selection to S02
 set test selection to Game9952
@@ -14,7 +13,7 @@ cvs log for the selected files
 press close
 set test selection to npstIII
 recursive cvs log for the selected files
-select TargetApp/npstIII/Game47/testsuite.dip
+select testsuite.dip under Game47
 press close
 set test selection to S01.99
 set file selection to output.dip

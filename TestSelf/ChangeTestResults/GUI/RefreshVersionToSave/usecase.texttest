@@ -1,14 +1,14 @@
 wait for completion of test actions
-set test selection to OutDiff version 10.2
+set test selection to OutDiff under TargetApp (hello.10.2)
 view sub-options for test : Saving
 enter version to save = 10
 save results for selected tests from tab
-set test selection to OutDiff version <default>
+set test selection to OutDiff under TargetApp (hello)
 view sub-options for test : Saving
 save results for selected tests from tab
-set test selection to OutDiff version 10.4
-show test suite TargetApp version 10.4
-set test selection to OutDiff version 10.4
+set test selection to OutDiff under TargetApp (hello.10.4)
+show test suite TargetApp (hello.10.4)
+set test selection to OutDiff under TargetApp (hello.10.4)
 set file selection to output.hello.10
 view raw differences
 terminate process that shows graphical differences in test files

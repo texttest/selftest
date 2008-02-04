@@ -8,9 +8,9 @@ Adding entry completion 'extra2' ...
 Adding entry completion 'output' ...
 Adding entry completion 'errors' ...
 Adding entry completion '1' ...
-Adding entry completion '/carm/proj/texttest-tmp/mattias/texttest.09Jan163951/texttest/TestSelf/ExtraVersions/GUI/CopyTestOnlyInExtra/TargetApp/Diagnostics/log4py.conf' ...
-Adding entry completion '/carm/proj/texttest-tmp/mattias/texttest.09Jan163951/texttest/TestSelf/ExtraVersions/GUI/CopyTestOnlyInExtra/TargetApp/Diagnostics' ...
-Adding entry completion '/carm/proj/texttest-tmp/mattias/texttest.09Jan163951/texttest/TestSelf/ExtraVersions/GUI/CopyTestOnlyInExtra/texttesttmp' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.29Jan155924/texttest/TestSelf/ExtraVersions/GUI/CopyTestOnlyInExtra/TargetApp/Diagnostics/log4py.conf' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.29Jan155924/texttest/TestSelf/ExtraVersions/GUI/CopyTestOnlyInExtra/TargetApp/Diagnostics' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.29Jan155924/texttest/TestSelf/ExtraVersions/GUI/CopyTestOnlyInExtra/texttesttmp' ...
 Top Window title is TextTest static GUI : management of tests for HELLO
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
@@ -153,13 +153,13 @@ Viewing check button for switch 'Select in collapsed suites'
 Viewing radio button for switch 'Current selection:', options Discard/Refine/Extend/Exclude'. Default value 0.
 Viewing action with title '_Select'
 
-Changing GUI status to: 'TextTest started at 09Jan16:40:22.'
+Changing GUI status to: 'TextTest started at 29Jan15:59:27.'
 
 Waiting for application event 'all tests to be read' to occur.
 
 Changing GUI status to: 'Reading tests ...'
 
-Changing GUI status to: 'Reading tests completed at 09Jan16:40:23.'
+Changing GUI status to: 'Reading tests completed at 29Jan15:59:28.'
 
 Test Tree description...
 -> TargetApp (hello)
@@ -168,12 +168,12 @@ Test Tree description...
 ->   Extra1
 ->   Extra2
 
-Test column header set to 'Tests: 0/4 selected'
+Test column header set to 'Tests: 0/6 selected, 0/4 distinct'
 Expected application event 'all tests to be read' occurred, proceeding.
 
 'set test selection to' event created with arguments 'Common'
 
-Test column header set to 'Tests: 1/4 selected'
+Test column header set to 'Tests: 3/6 selected, 1/4 distinct'
 Setting sensitivity of action '_Copy' to True
 Setting sensitivity of action '_Cut' to True
 Setting sensitivity of action '_Run' to True
@@ -206,11 +206,11 @@ Tabs showing : Text Info, New File, Bugs
 Adding entry completion 'environment' ...
 Setting sensitivity of action '_Paste' to True
 
-Changing GUI status to: 'Performed 'Copy selected tests' on 1 tests.'
+Changing GUI status to: 'Performed 'Copy selected tests' on 3 tests.'
 
-'set test selection to' event created with arguments 'TargetApp'
+'set test selection to' event created with arguments 'TargetApp (hello)'
 
-Test column header set to 'Tests: 0/4 selected'
+Test column header set to 'Tests: 0/6 selected, 0/4 distinct'
 
 Setting file-view title to 'TargetApp'
 Adding file testsuite.hello under heading 'Definition Files', coloured grey90
@@ -240,11 +240,11 @@ Tabs showing : Text Info, Adding Test, Adding Suite, New File, Bugs
 'paste tests from clipboard' event created with arguments ''
 Pasting test Common_copy under test suite HELLO test-suite TargetApp, in position 0
 
-Test column header set to 'Tests: 0/5 selected'
+Test column header set to 'Tests: 0/7 selected, 0/5 distinct'
 Selecting new test Common_copy
 Marking 1 tests as selected
 
-Test column header set to 'Tests: 1/5 selected'
+Test column header set to 'Tests: 1/7 selected, 1/5 distinct'
 
 Setting file-view title to 'Common__copy'
 Adding file errors.hello under heading 'Standard Files', coloured grey90
@@ -277,8 +277,52 @@ Test Tree description...
 ->   Base
 ->   Extra1
 ->   Extra2
+Pasting test Common_copy under test suite HELLO.extra1 test-suite TargetApp, in position 0
 
-Changing GUI status to: 'Performed 'Paste tests from clipboard' on HELLO test-case Common_copy.'
+Test column header set to 'Tests: 1/8 selected, 1/5 distinct'
+Selecting new test Common_copy
+Marking 1 tests as selected
+
+Setting file-view title to 'Common__copy'
+Adding file errors.hello under heading 'Standard Files', coloured grey90
+Adding file output.hello under heading 'Standard Files', coloured grey90
+
+---------- Text Info Window ----------
+Description:
+Copy of Common
+--------------------------------------
+
+Test Tree description...
+-> TargetApp (hello)
+->   Common_copy
+->   Common
+->   Base
+->   Extra1
+->   Extra2
+Pasting test Common_copy under test suite HELLO.extra2 test-suite TargetApp, in position 0
+
+Test column header set to 'Tests: 1/9 selected, 1/5 distinct'
+Selecting new test Common_copy
+Marking 1 tests as selected
+
+Setting file-view title to 'Common__copy'
+Adding file errors.hello under heading 'Standard Files', coloured grey90
+Adding file output.hello under heading 'Standard Files', coloured grey90
+
+---------- Text Info Window ----------
+Description:
+Copy of Common
+--------------------------------------
+
+Test Tree description...
+-> TargetApp (hello)
+->   Common_copy
+->   Common
+->   Base
+->   Extra1
+->   Extra2
+
+Changing GUI status to: 'Performed 'Paste tests from clipboard' on HELLO.extra2 test-case Common_copy.'
 
 'set test selection to' event created with arguments 'Extra1'
 
@@ -292,6 +336,8 @@ Copy of Common
 --------------------------------------
 Setting sensitivity of action 'Move to first' to True
 Setting sensitivity of action 'Move up' to True
+Setting sensitivity of action 'Move down' to False
+Setting sensitivity of action 'Move to last' to False
 
 'copy selected tests' event created with arguments ''
 
@@ -309,11 +355,35 @@ Copy of Common
 --------------------------------------
 
 'paste tests from clipboard' event created with arguments ''
-Pasting test Extra1_copy under test suite HELLO test-suite TargetApp, in position 3
+ERROR: Cannot paste test there, as the copied test and currently selected test have no application/version in common
 
-Test column header set to 'Tests: 1/6 selected'
+'agree to texttest message' event created with arguments ''
+
+'set test selection to' event created with arguments 'Common_copy'
+
+Test column header set to 'Tests: 3/9 selected, 1/5 distinct'
+
+Setting file-view title to 'Common__copy'
+Adding file errors.hello under heading 'Standard Files', coloured grey90
+Adding file output.hello under heading 'Standard Files', coloured grey90
+
+---------- Text Info Window ----------
+Description:
+Copy of Common
+--------------------------------------
+Setting sensitivity of action 'Move to first' to False
+Setting sensitivity of action 'Move up' to False
+Setting sensitivity of action 'Move down' to True
+Setting sensitivity of action 'Move to last' to True
+
+'paste tests from clipboard' event created with arguments ''
+Pasting test Extra1_copy under test suite HELLO.extra1 test-suite TargetApp, in position 1
+
+Test column header set to 'Tests: 3/10 selected, 1/6 distinct'
 Selecting new test Extra1_copy
 Marking 1 tests as selected
+
+Test column header set to 'Tests: 1/10 selected, 1/6 distinct'
 
 Setting file-view title to 'Extra1__copy'
 Adding file errors.hello under heading 'Standard Files', coloured grey90
@@ -323,17 +393,19 @@ Adding file output.hello.extra1 under heading 'Standard Files', coloured grey90
 Description:
 Copy of Common
 --------------------------------------
+Setting sensitivity of action 'Move to first' to True
+Setting sensitivity of action 'Move up' to True
 
 Test Tree description...
 -> TargetApp (hello)
 ->   Common_copy
+->   Extra1_copy
 ->   Common
 ->   Base
-->   Extra1_copy
 ->   Extra1
 ->   Extra2
 
-Changing GUI status to: 'Performed 'Paste tests from clipboard' on HELLO test-case Extra1_copy.'
+Changing GUI status to: 'Performed 'Paste tests from clipboard' on HELLO.extra1 test-case Extra1_copy.'
 
 'quit' event created with arguments ''
 

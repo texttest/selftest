@@ -1,15 +1,11 @@
 wait for all tests to be read
 set test selection to S02
 toggle test sorting order
-wait for suite Game9952 to change order
 toggle test sorting order
-wait for suite TargetApp to change order, suite Game9952 to change order
-set test selection to TargetApp
+set test selection to TargetApp (dip)
 view sub-options for test : Adding Suite
 enter suite name = EmptySuite
 add suite
 toggle test sorting order
-wait for suite TargetApp to change order, suite Game9952 to change order
 toggle test sorting order
-wait for suite TargetApp to change order, suite Game9952 to change order
 quit

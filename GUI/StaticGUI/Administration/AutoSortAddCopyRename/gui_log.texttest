@@ -6,9 +6,9 @@ Adding entry completion 'bugzilla' ...
 Adding entry completion '<default>' ...
 Adding entry completion 'output' ...
 Adding entry completion '1' ...
-Adding entry completion '/carm/proj/texttest-tmp/mattias/texttest.09Jan090238/texttest/GUI/StaticGUI/Administration/AutoSortAddCopyRename/TargetApp/Diagnostics/log4py.conf' ...
-Adding entry completion '/carm/proj/texttest-tmp/mattias/texttest.09Jan090238/texttest/GUI/StaticGUI/Administration/AutoSortAddCopyRename/TargetApp/Diagnostics' ...
-Adding entry completion '/carm/proj/texttest-tmp/mattias/texttest.09Jan090238/texttest/GUI/StaticGUI/Administration/AutoSortAddCopyRename/texttesttmp' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.30Jan161237/texttest/GUI/StaticGUI/Administration/AutoSortAddCopyRename/TargetApp/Diagnostics/log4py.conf' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.30Jan161237/texttest/GUI/StaticGUI/Administration/AutoSortAddCopyRename/TargetApp/Diagnostics' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.30Jan161237/texttest/GUI/StaticGUI/Administration/AutoSortAddCopyRename/texttesttmp' ...
 Top Window title is TextTest static GUI : management of tests for DIP
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
@@ -151,13 +151,13 @@ Viewing check button for switch 'Select in collapsed suites'
 Viewing radio button for switch 'Current selection:', options Discard/Refine/Extend/Exclude'. Default value 0.
 Viewing action with title '_Select'
 
-Changing GUI status to: 'TextTest started at 09Jan09:03:39.'
+Changing GUI status to: 'TextTest started at 30Jan16:12:40.'
 
 Waiting for application event 'all tests to be read' to occur.
 
 Changing GUI status to: 'Reading tests ...'
 
-Changing GUI status to: 'Reading tests completed at 09Jan09:03:39.'
+Changing GUI status to: 'Reading tests completed at 30Jan16:12:40.'
 
 Test Tree description...
 -> TargetApp (dip)
@@ -276,9 +276,6 @@ Test Tree description...
 
 Changing GUI status to: 'Performed 'Paste tests from clipboard' on DIP test-case A05_copy.'
 
-Waiting for application event 'suite Game9952 to change order' to occur.
-Expected application event 'suite Game9952 to change order' occurred, proceeding.
-
 'rename selected test' event created with arguments ''
 
 'enter new name' event created with arguments 'A04_copy'
@@ -289,65 +286,50 @@ Expected application event 'suite Game9952 to change order' occurred, proceeding
 Adding entry completion 'A04_copy' ...
 Adding entry completion 'Copy of A04' ...
 
-Test column header set to 'Tests: 1/13 selected'
-Selecting new test A04_copy
-Marking 1 tests as selected
+Test Tree description...
+-> TargetApp (dip)
+->   Game9952
+->     A01
+->     A02
+->     A03
+->     A04
+->     A05
+->     A04_copy
+->     S01.99
+->     S02
+->     S03
+->     S04
+->     S05
+->   npstIII
+->     Game47
+->       S01
 
-Setting file-view title to 'A04__copy'
-Adding file output.dip under heading 'Standard Files', coloured grey90
+Test Tree description...
+-> TargetApp (dip)
+->   Game9952
+->     A01
+->     A02
+->     A03
+->     A04
+->     A04_copy
+->     A05
+->     S01.99
+->     S02
+->     S03
+->     S04
+->     S05
+->   npstIII
+->     Game47
+->       S01
 
 ---------- Text Info Window ----------
 Description:
 Copy of A04
 --------------------------------------
 
-Test Tree description...
--> TargetApp (dip)
-->   Game9952
-->     A01
-->     A02
-->     A03
-->     A04
-->     A05
-->     A04_copy
-->     A05_copy
-->     S01.99
-->     S02
-->     S03
-->     S04
-->     S05
-->   npstIII
-->     Game47
-->       S01
-
-Test column header set to 'Tests: 1/12 selected'
-Removing test with path Game9952/A05_copy
-
-Test Tree description...
--> TargetApp (dip)
-->   Game9952
-->     A01
-->     A02
-->     A03
-->     A04
-->     A04_copy
-->     A05
-->     S01.99
-->     S02
-->     S03
-->     S04
-->     S05
-->   npstIII
-->     Game47
-->       S01
-
 Setting file-view title to 'A04__copy'
-Adding file output.dip under heading 'Standard Files', coloured grey90
 
 Changing GUI status to: 'Renamed test A05_copy to A04_copy and changed description.'
-
-Waiting for application event 'suite Game9952 to change order' to occur.
-Expected application event 'suite Game9952 to change order' occurred, proceeding.
 
 'set test selection to' event created with arguments 'S04'
 
@@ -366,18 +348,6 @@ Description:
 'press ok' event created with arguments ''
 Adding entry completion 'S01.87' ...
 
-Test column header set to 'Tests: 1/13 selected'
-Selecting new test S01.87
-Marking 1 tests as selected
-
-Setting file-view title to 'S01.87'
-Adding file output.dip under heading 'Standard Files', coloured grey90
-
----------- Text Info Window ----------
-Description:
-<No description provided>
---------------------------------------
-
 Test Tree description...
 -> TargetApp (dip)
 ->   Game9952
@@ -391,14 +361,10 @@ Test Tree description...
 ->     S02
 ->     S03
 ->     S01.87
-->     S04
 ->     S05
 ->   npstIII
 ->     Game47
 ->       S01
-
-Test column header set to 'Tests: 1/12 selected'
-Removing test with path Game9952/S04
 
 Test Tree description...
 -> TargetApp (dip)
@@ -419,9 +385,6 @@ Test Tree description...
 ->       S01
 
 Changing GUI status to: 'Renamed test S04 to S01.87.'
-
-Waiting for application event 'suite Game9952 to change order' to occur.
-Expected application event 'suite Game9952 to change order' occurred, proceeding.
 
 'set test selection to' event created with arguments 'Game9952'
 
@@ -528,26 +491,12 @@ Test Tree description...
 
 Changing GUI status to: 'Added new DIP test-case B01'
 
-Waiting for application event 'suite Game9952 to change order' to occur.
-Expected application event 'suite Game9952 to change order' occurred, proceeding.
-
 'rename selected test' event created with arguments ''
 
 'enter new name' event created with arguments 'S06'
 
 'press ok' event created with arguments ''
 Adding entry completion 'S06' ...
-
-Test column header set to 'Tests: 1/14 selected'
-Selecting new test S06
-Marking 1 tests as selected
-
-Setting file-view title to 'S06'
-
----------- Text Info Window ----------
-Description:
-Correctly ordered?
---------------------------------------
 
 Test Tree description...
 -> TargetApp (dip)
@@ -559,7 +508,6 @@ Test Tree description...
 ->     A04_copy
 ->     A05
 ->     S06
-->     B01
 ->     S01.87
 ->     S01.99
 ->     S02
@@ -568,9 +516,6 @@ Test Tree description...
 ->   npstIII
 ->     Game47
 ->       S01
-
-Test column header set to 'Tests: 1/13 selected'
-Removing test with path Game9952/B01
 
 Test Tree description...
 -> TargetApp (dip)
@@ -592,9 +537,6 @@ Test Tree description...
 ->       S01
 
 Changing GUI status to: 'Renamed test B01 to S06.'
-
-Waiting for application event 'suite Game9952 to change order' to occur.
-Expected application event 'suite Game9952 to change order' occurred, proceeding.
 
 'quit' event created with arguments ''
 

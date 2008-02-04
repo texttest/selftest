@@ -8,9 +8,9 @@ Adding entry completion 'extra2' ...
 Adding entry completion 'output' ...
 Adding entry completion 'errors' ...
 Adding entry completion '1' ...
-Adding entry completion '/carm/proj/texttest-tmp/mattias/texttest.09Jan163951/texttest/TestSelf/ExtraVersions/GUI/RenameTestOnlyInExtra/TargetApp/Diagnostics/log4py.conf' ...
-Adding entry completion '/carm/proj/texttest-tmp/mattias/texttest.09Jan163951/texttest/TestSelf/ExtraVersions/GUI/RenameTestOnlyInExtra/TargetApp/Diagnostics' ...
-Adding entry completion '/carm/proj/texttest-tmp/mattias/texttest.09Jan163951/texttest/TestSelf/ExtraVersions/GUI/RenameTestOnlyInExtra/texttesttmp' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.30Jan164711/texttest/TestSelf/ExtraVersions/GUI/RenameTestOnlyInExtra/TargetApp/Diagnostics/log4py.conf' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.30Jan164711/texttest/TestSelf/ExtraVersions/GUI/RenameTestOnlyInExtra/TargetApp/Diagnostics' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.30Jan164711/texttest/TestSelf/ExtraVersions/GUI/RenameTestOnlyInExtra/texttesttmp' ...
 Top Window title is TextTest static GUI : management of tests for HELLO
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
@@ -153,13 +153,13 @@ Viewing check button for switch 'Select in collapsed suites'
 Viewing radio button for switch 'Current selection:', options Discard/Refine/Extend/Exclude'. Default value 0.
 Viewing action with title '_Select'
 
-Changing GUI status to: 'TextTest started at 09Jan16:40:22.'
+Changing GUI status to: 'TextTest started at 30Jan16:47:28.'
 
 Waiting for application event 'all tests to be read' to occur.
 
 Changing GUI status to: 'Reading tests ...'
 
-Changing GUI status to: 'Reading tests completed at 09Jan16:40:22.'
+Changing GUI status to: 'Reading tests completed at 30Jan16:47:29.'
 
 Test Tree description...
 -> TargetApp (hello)
@@ -168,12 +168,12 @@ Test Tree description...
 ->   Extra1
 ->   Extra2
 
-Test column header set to 'Tests: 0/4 selected'
+Test column header set to 'Tests: 0/6 selected, 0/4 distinct'
 Expected application event 'all tests to be read' occurred, proceeding.
 
 'set test selection to' event created with arguments 'Common'
 
-Test column header set to 'Tests: 1/4 selected'
+Test column header set to 'Tests: 3/6 selected, 1/4 distinct'
 Setting sensitivity of action '_Copy' to True
 Setting sensitivity of action '_Cut' to True
 Setting sensitivity of action '_Run' to True
@@ -213,37 +213,25 @@ Adding entry completion 'environment' ...
 Adding entry completion 'Common_renamed' ...
 Adding entry completion 'This test was renamed' ...
 
-Test column header set to 'Tests: 1/5 selected'
-Selecting new test Common_renamed
-Marking 1 tests as selected
-
-Setting file-view title to 'Common__renamed'
-Adding file errors.hello under heading 'Standard Files', coloured grey90
-Adding file output.hello under heading 'Standard Files', coloured grey90
+Test Tree description...
+-> TargetApp (hello)
+->   Common_renamed
+->   Base
+->   Extra1
+->   Extra2
 
 ---------- Text Info Window ----------
 Description:
 This test was renamed
 --------------------------------------
 
-Test Tree description...
--> TargetApp (hello)
-->   Common_renamed
-->   Common
-->   Base
-->   Extra1
-->   Extra2
-
-Test column header set to 'Tests: 1/4 selected'
-Removing test with path Common
-
 Setting file-view title to 'Common__renamed'
-Adding file errors.hello under heading 'Standard Files', coloured grey90
-Adding file output.hello under heading 'Standard Files', coloured grey90
 
 Changing GUI status to: 'Renamed test Common to Common_renamed and changed description.'
 
 'set test selection to' event created with arguments 'Extra1'
+
+Test column header set to 'Tests: 1/6 selected, 1/4 distinct'
 
 Setting file-view title to 'Extra1'
 Adding file errors.hello under heading 'Standard Files', coloured grey90
@@ -255,6 +243,8 @@ Copy of Common
 --------------------------------------
 Setting sensitivity of action 'Move to first' to True
 Setting sensitivity of action 'Move up' to True
+Setting sensitivity of action 'Move down' to False
+Setting sensitivity of action 'Move to last' to False
 
 'rename selected test' event created with arguments ''
 
@@ -266,33 +256,19 @@ Setting sensitivity of action 'Move up' to True
 Adding entry completion 'Extra1_renamed' ...
 Adding entry completion 'Copy of Common. Renamed.' ...
 
-Test column header set to 'Tests: 1/5 selected'
-Selecting new test Extra1_renamed
-Marking 1 tests as selected
-
-Setting file-view title to 'Extra1__renamed'
-Adding file errors.hello under heading 'Standard Files', coloured grey90
-Adding file output.hello.extra1 under heading 'Standard Files', coloured grey90
+Test Tree description...
+-> TargetApp (hello)
+->   Common_renamed
+->   Base
+->   Extra1_renamed
+->   Extra2
 
 ---------- Text Info Window ----------
 Description:
 Copy of Common. Renamed.
 --------------------------------------
 
-Test Tree description...
--> TargetApp (hello)
-->   Common_renamed
-->   Base
-->   Extra1_renamed
-->   Extra1
-->   Extra2
-
-Test column header set to 'Tests: 1/4 selected'
-Removing test with path Extra1
-
 Setting file-view title to 'Extra1__renamed'
-Adding file errors.hello under heading 'Standard Files', coloured grey90
-Adding file output.hello.extra1 under heading 'Standard Files', coloured grey90
 
 Changing GUI status to: 'Renamed test Extra1 to Extra1_renamed and changed description.'
 
