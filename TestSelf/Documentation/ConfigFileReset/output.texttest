@@ -1,13 +1,13 @@
-TextTest will write diagnostics in /nfs/vm/texttest-tmp/mattias/texttest.31Jan124312/texttest/TestSelf/Documentation/ConfigFileReset based on file at /carm/proj/texttest-tmp/mattias/texttest.31Jan124312/texttest/TestSelf/Documentation/ConfigFileReset/logging
+TextTest will write diagnostics in /nfs/vm/texttest-tmp/geoff/texttest.06Feb141648/texttest/TestSelf/Documentation/ConfigFileReset based on file at /carm/proj/texttest-tmp/geoff/texttest.06Feb141648/texttest/TestSelf/Documentation/ConfigFileReset/logging
 Using Application APPIDENTIFIER
 auto_collapse_successful|1|Automatically collapse successful test suites?
 auto_sort_test_suites|0|Automatically sort test suites in alphabetical order. 1 means sort in ascending order, -1 means sort in descending order.
 base_version|[]|Versions to inherit settings from
 batch_extra_version|{'default': []}|Versions to be run in addition to the one specified, for particular batch sessions
 batch_filter_file|{'default': None}|Generic filter for batch session, more flexible than timelimit
-batch_recipients|{'default': 'mattias@localhost'}|Addresses to send mail to in batch mode
+batch_recipients|{'default': 'geoff@localhost'}|Addresses to send mail to in batch mode
 batch_result_repository|{'default': ''}|Directory to store historical batch results under
-batch_sender|{'default': 'mattias@localhost'}|Sender address to use sending mail in batch mode
+batch_sender|{'default': 'geoff@localhost'}|Sender address to use sending mail in batch mode
 batch_timelimit|{'default': None}|Maximum length of test to include in batch mode runs
 batch_use_collection|{'default': 'false'}|Do we collect multiple mails into one in batch mode
 batch_use_version_filtering|{'default': 'false'}|Which batch sessions use the version filtering mechanism
@@ -34,7 +34,7 @@ extra_search_directory|{'default': []}|Additional directories to search for sett
 extra_version|[]|Versions to be run in addition to the one specified
 failure_display_priority|{'default': 99}|Mapping of result files to which order they should be shown in the text info window.
 failure_severity|{'errors': 1, 'default': 99, 'catalogue': 2, 'usecase': 1, 'traffic': 1, 'performance': 2, 'output': 1}|Mapping of result files to how serious diffs in them are
-file_colours|{'success': 'green', 'not_started': 'white', 'failure': 'red', 'running': 'yellow', 'static': 'grey90', 'marked by user': 'orange', 'pending': 'white'}|Colours to use for each file state
+file_colours|{'success': 'green', 'default': 'red', 'not_started': 'white', 'marked': 'orange', 'failure': 'red', 'running': 'yellow', 'static': 'grey90', 'pending': 'white'}|Colours to use for each file state
 follow_program|{'default': 'tail -f'}|External program to use for following progress of a file
 full_name|APPIDENTIFIER|Expanded name to use for application
 gui_accelerators|{'reset': '<control>e', 'quit': '<control>q', 'move_down': '<control>Page_Down', 'save': '<control>s', 'run': '<control>r', 'load_selection': '<control><shift>o', 'move_to_last': '<control>End', 'mark': '<control><shift>m', 'rename': '<control>m', 'cut': '<control>x', 'save_selection': '<control><shift>s', 'reconnect': '<control><shift>r', 'unmark': '<control><shift>u', 'move_up': '<control>Page_Up', 'copy': '<control>c', 'paste': '<control>v', 'select': '<control>s', 'move_to_first': '<control>Home'}|Custom action accelerators.
@@ -66,7 +66,7 @@ slow_motion_replay_speed|3|How long in seconds to wait between each GUI action
 smtp_server|localhost|Server to use for sending mail in batch mode
 sort_test_suites_recursively|1|Sort subsuites when sorting test suites
 static_collapse_suites|0|Whether or not the static GUI will show everything collapsed
-test_colours|{'success': 'green', 'not_started': 'white', 'failure': 'red', 'running': 'yellow', 'static': 'grey90', 'marked by user': 'orange', 'pending': 'white'}|Colours to use for each test state
+test_colours|{'success': 'green', 'default': 'red', 'not_started': 'white', 'marked': 'orange', 'failure': 'red', 'running': 'yellow', 'static': 'grey90', 'pending': 'white'}|Colours to use for each test state
 test_data_environment|{}|Environment variables to be redirected for linked/copied test data
 test_data_ignore|{'default': []}|Elements under test data structures which should not be viewed or change-monitored
 test_data_properties|{'default': ''}|Write the contents of test_data_environment to the given Java properties file

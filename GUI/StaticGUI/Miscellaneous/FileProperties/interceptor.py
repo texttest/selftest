@@ -25,7 +25,8 @@ class MyStat:
 origStat = os.stat
 def myStat(filename):
     info = origStat(filename)
-    if os.path.basename(filename) == "output.dip":
+    basename = os.path.basename(filename)
+    if basename.startswith("output.dip") or basename.startswith("testsuite.dip"):
         print "Faking os.stat(" + filename.replace("\\", "/") + ") ..."
         return MyStat(info)
     else:
