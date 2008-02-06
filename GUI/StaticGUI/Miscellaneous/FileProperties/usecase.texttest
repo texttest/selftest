@@ -3,9 +3,20 @@ set test selection to S01.99
 set file selection to output.dip
 show properties of selected files
 press close
-set test selection to S02
+set test selection to A01
+set file selection to output.dip
+show properties of selected files
 press close
-select indicated tests
+set test selection to Game9952
+set file selection to testsuite.dip
+show properties of selected files
+press close
+set file selection to testsuite.dip,testsuite.dip.small
+show properties of selected files
+press close
+set test selection to S01.99,A01
 run selected tests
 wait for dynamic GUI to be closed
+view options for Running
+view sub-options for running : Advanced
 quit
