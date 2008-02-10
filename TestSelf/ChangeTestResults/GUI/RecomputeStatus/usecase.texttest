@@ -1,0 +1,17 @@
+wait for completion of test actions
+set test selection to OutDiff under TargetApp (hello.2)
+view sub-options for test : Saving
+enter version to save = 
+save results for selected tests from tab
+set test selection to OutDiff under TargetApp (hello.2),Success under TargetApp (hello.2),BothDiff under TargetApp (hello.2),ErrDiff under TargetApp (hello.2),OutDiff under TargetApp (hello.3),Success under TargetApp (hello.3),BothDiff under TargetApp (hello.3),ErrDiff under TargetApp (hello.3),OutDiff under TargetApp (hello.4),Success under TargetApp (hello.4),BothDiff under TargetApp (hello.4),ErrDiff under TargetApp (hello.4)
+recompute status of all tests
+set test selection to ErrDiff under TargetApp (hello.3)
+view sub-options for test : Saving
+enter version to save = 
+save results for selected tests from tab
+set test selection to ErrDiff under TargetApp (hello.2),OutDiff under TargetApp (hello.2),Success under TargetApp (hello.2),BothDiff under TargetApp (hello.2),OutDiff under TargetApp (hello.3),Success under TargetApp (hello.3),BothDiff under TargetApp (hello.3),ErrDiff under TargetApp (hello.3),OutDiff under TargetApp (hello.4),Success under TargetApp (hello.4),BothDiff under TargetApp (hello.4),ErrDiff under TargetApp (hello.4)
+recompute status of all tests
+show test suite TargetApp (hello.4)
+show test suite TargetApp (hello.3)
+show test suite TargetApp (hello.2)
+quit

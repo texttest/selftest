@@ -1,5 +1,5 @@
 Enabling entry completion, using matching 1
-Top Window title is TextTest dynamic GUI : testing HELLO.2 (started at 05Feb17:12:16)
+Top Window title is TextTest dynamic GUI : testing HELLO.2 (started at 10Feb21:34:11)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -16,6 +16,7 @@ Viewing action with title 'View Differences' (greyed out)
 Viewing action with title 'Follow File Progress' (greyed out)
 Viewing action with title '_Save', stock id ''gtk-save'', accelerator ''<control>s'' (greyed out)
 Viewing action with title 'S_ave Selection...', stock id ''gtk-save-as'', accelerator ''<control><shift>s'' (greyed out)
+Viewing action with title 'Recompute Status' (greyed out)
 Viewing action with title '_Kill', stock id ''gtk-stop'' (greyed out)
 Viewing action with title '_Mark', accelerator ''<control><shift>m'' (greyed out)
 Viewing action with title '_Unmark', accelerator ''<control><shift>u'' (greyed out)
@@ -46,6 +47,9 @@ UI layout:
       <menuitem name="Kill" action="Kill"/>
       <menuitem name="Mark" action="Mark"/>
       <menuitem name="Unmark" action="Unmark"/>
+      <separator/>
+      <menuitem name="Recompute Status" action="Recompute Status"/>
+      <separator/>
     </menu>
     <placeholder name="ExtraMenus">
     </placeholder>
@@ -66,6 +70,9 @@ UI layout:
   <popup name="TestPopupMenu">
     <menuitem name="Mark" action="Mark"/>
     <menuitem name="Unmark" action="Unmark"/>
+    <separator/>
+    <menuitem name="Recompute Status" action="Recompute Status"/>
+    <separator/>
   </popup>
   <popup name="TestFilePopupMenu">
     <menuitem name="View File" action="View File"/>
@@ -92,7 +99,7 @@ Tabs showing : Status
 Test progress:
 --> Not started : 1, colour 'white', font 'bold'
 
-Changing GUI status to: 'TextTest started at 05Feb17:12:16.'
+Changing GUI status to: 'TextTest started at 10Feb21:34:12.'
 
 Waiting for application event 'completion of test actions' to occur.
 
@@ -111,7 +118,7 @@ Test progress:
 Redrawing test BothDiff coloured red
 (Second column 'output different(+)' coloured red)
 
-Progress bar set to fraction 1.0, text 'All 1 tests completed at 05Feb17:12:17'
+Progress bar set to fraction 1.0, text 'All 1 tests completed at 10Feb21:34:12'
 
 Test progress:
 --> Not started : 0, colour 'white', font ''
@@ -192,7 +199,7 @@ Changing GUI status to: 'Saved 1 tests.'
 
 Changing GUI status to: 'Removing all temporary files ...'
 Enabling entry completion, using matching 1
-Top Window title is TextTest dynamic GUI : testing HELLO.2 (started at 05Feb17:12:18)
+Top Window title is TextTest dynamic GUI : testing HELLO.2 (started at 10Feb21:34:13)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -209,6 +216,7 @@ Viewing action with title 'View Differences' (greyed out)
 Viewing action with title 'Follow File Progress' (greyed out)
 Viewing action with title '_Save', stock id ''gtk-save'', accelerator ''<control>s'' (greyed out)
 Viewing action with title 'S_ave Selection...', stock id ''gtk-save-as'', accelerator ''<control><shift>s'' (greyed out)
+Viewing action with title 'Recompute Status' (greyed out)
 Viewing action with title '_Kill', stock id ''gtk-stop'' (greyed out)
 Viewing action with title '_Mark', accelerator ''<control><shift>m'' (greyed out)
 Viewing action with title '_Unmark', accelerator ''<control><shift>u'' (greyed out)
@@ -239,6 +247,9 @@ UI layout:
       <menuitem name="Kill" action="Kill"/>
       <menuitem name="Mark" action="Mark"/>
       <menuitem name="Unmark" action="Unmark"/>
+      <separator/>
+      <menuitem name="Recompute Status" action="Recompute Status"/>
+      <separator/>
     </menu>
     <placeholder name="ExtraMenus">
     </placeholder>
@@ -259,6 +270,9 @@ UI layout:
   <popup name="TestPopupMenu">
     <menuitem name="Mark" action="Mark"/>
     <menuitem name="Unmark" action="Unmark"/>
+    <separator/>
+    <menuitem name="Recompute Status" action="Recompute Status"/>
+    <separator/>
   </popup>
   <popup name="TestFilePopupMenu">
     <menuitem name="View File" action="View File"/>
@@ -285,7 +299,7 @@ Tabs showing : Status
 Test progress:
 --> Not started : 1, colour 'white', font 'bold'
 
-Changing GUI status to: 'TextTest started at 05Feb17:12:18.'
+Changing GUI status to: 'TextTest started at 10Feb21:34:14.'
 
 Waiting for application event 'completion of test actions' to occur.
 
@@ -299,7 +313,7 @@ Progress bar set to fraction 0.0, text '0 of 1 tests completed'
 Redrawing test BothDiff coloured green
 Redrawing suite TargetApp : second column 'All 1 tests successful' coloured green
 
-Progress bar set to fraction 1.0, text 'All 1 tests completed at 05Feb17:12:19'
+Progress bar set to fraction 1.0, text 'All 1 tests completed at 10Feb21:34:14'
 
 Test progress:
 --> Not started : 0, colour 'white', font ''

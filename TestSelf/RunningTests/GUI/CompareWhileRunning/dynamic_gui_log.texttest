@@ -1,5 +1,5 @@
 Enabling entry completion, using matching 1
-Top Window title is TextTest dynamic GUI : testing SLEEP (started at 24Jan17:55:25)
+Top Window title is TextTest dynamic GUI : testing SLEEP (started at 10Feb21:36:57)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -16,6 +16,7 @@ Viewing action with title 'View Differences' (greyed out)
 Viewing action with title 'Follow File Progress' (greyed out)
 Viewing action with title '_Save', stock id ''gtk-save'', accelerator ''<control>s'' (greyed out)
 Viewing action with title 'S_ave Selection...', stock id ''gtk-save-as'', accelerator ''<control><shift>s'' (greyed out)
+Viewing action with title 'Recompute Status' (greyed out)
 Viewing action with title '_Kill', stock id ''gtk-stop'' (greyed out)
 Viewing action with title '_Mark', accelerator ''<control><shift>m'' (greyed out)
 Viewing action with title '_Unmark', accelerator ''<control><shift>u'' (greyed out)
@@ -46,6 +47,9 @@ UI layout:
       <menuitem name="Kill" action="Kill"/>
       <menuitem name="Mark" action="Mark"/>
       <menuitem name="Unmark" action="Unmark"/>
+      <separator/>
+      <menuitem name="Recompute Status" action="Recompute Status"/>
+      <separator/>
     </menu>
     <placeholder name="ExtraMenus">
     </placeholder>
@@ -66,6 +70,9 @@ UI layout:
   <popup name="TestPopupMenu">
     <menuitem name="Mark" action="Mark"/>
     <menuitem name="Unmark" action="Unmark"/>
+    <separator/>
+    <menuitem name="Recompute Status" action="Recompute Status"/>
+    <separator/>
   </popup>
   <popup name="TestFilePopupMenu">
     <menuitem name="View File" action="View File"/>
@@ -91,7 +98,7 @@ Tabs showing : Status
 
 Test progress:
 
-Changing GUI status to: 'TextTest started at 24Jan17:55:26.'
+Changing GUI status to: 'TextTest started at 10Feb21:36:58.'
 
 Waiting for application event 'all tests to be read' to occur.
 Waiting for application event 'test Basic to start' to occur.
@@ -141,7 +148,7 @@ Pane separator positioned 46% from the top
 Tabs showing :
 
 ---------- Text Info Window ----------
-Running on graceville
+Running on redenaco
 --------------------------------------
 
 Tabs showing : Test, Status
@@ -158,8 +165,8 @@ Adding file errors.sleep under heading 'Comparison Files', coloured yellow
 Adding file output.sleep under heading 'Comparison Files', coloured yellow
 
 ---------- Text Info Window ----------
-Running on graceville
-Reckoned to be 85% complete at 24Jan17:55:28.
+Running on redenaco
+Reckoned to be 85% complete at 10Feb21:36:59.
 --------------------------------------
 
 Changing GUI status to: 'Done recomputing status of SLEEP test-case Basic.'
@@ -173,7 +180,7 @@ Setting sensitivity of action 'View Differences' to True
 Setting sensitivity of action 'Follow File Progress' to True
 
 'follow file progress' event created with arguments ''
-Following file /carm/proj/texttest-tmp/geoff/texttest.24Jan175517/texttest/TestSelf/RunningTests/GUI/CompareWhileRunning/texttesttmp/console.24Jan175525/sleep/Suite1/Basic/output.sleep using 'tail -f'
+Following file /carm/proj/texttest-tmp/mattias/dynamic_gui.10Feb213327/texttest/TestSelf/RunningTests/GUI/CompareWhileRunning/texttesttmp/console.10Feb213657/sleep/Suite1/Basic/output.sleep using 'tail -f'
 
 Changing GUI status to: 'Started "tail -f output.sleep" in background (from test Basic).'
 
@@ -187,8 +194,8 @@ Setting sensitivity of action 'View Raw Differences' to False
 Setting sensitivity of action 'View Differences' to False
 Setting sensitivity of action 'Follow File Progress' to False
 Starting graphical difference comparison using 'tkdiff':
--- original file : /carm/proj/texttest-tmp/geoff/texttest.24Jan175517/texttest/TestSelf/RunningTests/GUI/CompareWhileRunning/texttesttmp/console.24Jan175525/sleep/Suite1/Basic/framework_tmp/output.sleeporigcmp
---  current file : /carm/proj/texttest-tmp/geoff/texttest.24Jan175517/texttest/TestSelf/RunningTests/GUI/CompareWhileRunning/texttesttmp/console.24Jan175525/sleep/Suite1/Basic/framework_tmp/output.sleeppartcmp
+-- original file : /carm/proj/texttest-tmp/mattias/dynamic_gui.10Feb213327/texttest/TestSelf/RunningTests/GUI/CompareWhileRunning/texttesttmp/console.10Feb213657/sleep/Suite1/Basic/framework_tmp/output.sleeporigcmp
+--  current file : /carm/proj/texttest-tmp/mattias/dynamic_gui.10Feb213327/texttest/TestSelf/RunningTests/GUI/CompareWhileRunning/texttesttmp/console.10Feb213657/sleep/Suite1/Basic/framework_tmp/output.sleeppartcmp
 
 Changing GUI status to: 'Started "tkdiff output.sleeporigcmp output.sleeppartcmp" in background (from test Basic).'
 
@@ -211,7 +218,7 @@ Adding file output.sleep under heading 'Comparison Files', coloured red
 
 ---------- Text Info Window ----------
 Test were terminated before completion (KILLED) :
-Test killed explicitly at 17:55
+Test killed explicitly at 21:37
 ---------- Differences in output ----------
 2d1
 < Done
@@ -231,6 +238,6 @@ Progress bar set to fraction 0.666666666667, text '2 of 3 tests completed'
 Redrawing test Basic3 coloured red
 (Second column 'cancelled' coloured red)
 
-Progress bar set to fraction 1.0, text 'All 3 tests completed at 24Jan17:55:29'
+Progress bar set to fraction 1.0, text 'All 3 tests completed at 10Feb21:37:01'
 
 Changing GUI status to: 'Removing all temporary files ...'
