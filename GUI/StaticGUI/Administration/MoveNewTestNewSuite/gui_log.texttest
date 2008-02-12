@@ -5,9 +5,9 @@ Adding entry completion 'bugzilla' ...
 Adding entry completion '<default>' ...
 Adding entry completion 'output' ...
 Adding entry completion '1' ...
-Adding entry completion '/carm/proj/texttest-tmp/mattias/texttest.09Jan090238/texttest/GUI/StaticGUI/Administration/MoveNewTestNewSuite/TargetApp/Diagnostics/log4py.conf' ...
-Adding entry completion '/carm/proj/texttest-tmp/mattias/texttest.09Jan090238/texttest/GUI/StaticGUI/Administration/MoveNewTestNewSuite/TargetApp/Diagnostics' ...
-Adding entry completion '/carm/proj/texttest-tmp/mattias/texttest.09Jan090238/texttest/GUI/StaticGUI/Administration/MoveNewTestNewSuite/texttesttmp' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/dynamic_gui.12Feb154634/texttest/GUI/StaticGUI/Administration/MoveNewTestNewSuite/TargetApp/Diagnostics/log4py.conf' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/dynamic_gui.12Feb154634/texttest/GUI/StaticGUI/Administration/MoveNewTestNewSuite/TargetApp/Diagnostics' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/dynamic_gui.12Feb154634/texttest/GUI/StaticGUI/Administration/MoveNewTestNewSuite/texttesttmp' ...
 Top Window title is TextTest static GUI : management of tests for DIP
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
@@ -150,13 +150,13 @@ Viewing check button for switch 'Select in collapsed suites'
 Viewing radio button for switch 'Current selection:', options Discard/Refine/Extend/Exclude'. Default value 0.
 Viewing action with title '_Select'
 
-Changing GUI status to: 'TextTest started at 09Jan09:03:37.'
+Changing GUI status to: 'TextTest started at 12Feb15:47:20.'
 
 Waiting for application event 'all tests to be read' to occur.
 
 Changing GUI status to: 'Reading tests ...'
 
-Changing GUI status to: 'Reading tests completed at 09Jan09:03:38.'
+Changing GUI status to: 'Reading tests completed at 12Feb15:47:20.'
 
 Test Tree description...
 -> TargetApp (dip)
@@ -221,6 +221,24 @@ Adding Test NewTest under test suite DIP test-suite Game9952, placed last in sui
 Not creating options file
 
 Test column header set to 'Tests: 0/12 selected'
+
+Test Tree description...
+-> TargetApp (dip)
+->   Game9952
+->     S01.99
+->     A01
+->     S02
+->     A02
+->     S03
+->     A03
+->     S04
+->     A04
+->     S05
+->     A05
+->     NewTest
+->   npstIII
+->     Game47
+->       S01
 Selecting new test NewTest
 Marking 1 tests as selected
 
@@ -248,24 +266,6 @@ Description:
 --------------------------------------
 
 Tabs showing : Text Info, New File, Bugs
-
-Test Tree description...
--> TargetApp (dip)
-->   Game9952
-->     S01.99
-->     A01
-->     S02
-->     A02
-->     S03
-->     A03
-->     S04
-->     A04
-->     S05
-->     A05
-->     NewTest
-->   npstIII
-->     Game47
-->       S01
 
 Changing GUI status to: 'Added new DIP test-case NewTest'
 
@@ -312,22 +312,6 @@ Viewing action with title 'Add Suite'
 'add suite' event created with arguments ''
 Adding entry completion 'NewSuite' ...
 Adding Suite NewSuite under test suite DIP test-suite Game9952, placed last in suite
-Selecting new test NewSuite
-Marking 1 tests as selected
-
-Setting file-view title to 'NewSuite'
-Adding file testsuite.dip under heading 'Definition Files', coloured grey90
-
-Viewing notebook page for 'Adding Suite'
-Viewing entry for option 'Suite Name'
-Viewing entry for option 'Suite Description'
-Viewing entry for option 'Place Suite' (set to 'last in suite') (drop-down list containing ['first in suite', 'last in suite'])
-Viewing check button for switch 'Add environment file'
-Viewing action with title 'Add Suite'
-Setting sensitivity of action 'Move to first' to True
-Setting sensitivity of action 'Move up' to True
-Setting sensitivity of action 'Move down' to False
-Setting sensitivity of action 'Move to last' to False
 
 Test Tree description...
 -> TargetApp (dip)
@@ -347,6 +331,22 @@ Test Tree description...
 ->   npstIII
 ->     Game47
 ->       S01
+Selecting new test NewSuite
+Marking 1 tests as selected
+
+Setting file-view title to 'NewSuite'
+Adding file testsuite.dip under heading 'Definition Files', coloured grey90
+
+Viewing notebook page for 'Adding Suite'
+Viewing entry for option 'Suite Name'
+Viewing entry for option 'Suite Description'
+Viewing entry for option 'Place Suite' (set to 'last in suite') (drop-down list containing ['first in suite', 'last in suite'])
+Viewing check button for switch 'Add environment file'
+Viewing action with title 'Add Suite'
+Setting sensitivity of action 'Move to first' to True
+Setting sensitivity of action 'Move up' to True
+Setting sensitivity of action 'Move down' to False
+Setting sensitivity of action 'Move to last' to False
 
 Changing GUI status to: 'Added new DIP test-suite NewSuite'
 
@@ -430,31 +430,6 @@ Test Tree description...
 ->   npstIII
 ->     Game47
 ->       S01
-Selecting new test NewTest
-Marking 1 tests as selected
-
-Test column header set to 'Tests: 1/13 selected'
-
-Setting file-view title to 'NewTest'
-
----------- Text Info Window ----------
-Description:
-<No description provided>
---------------------------------------
-Setting sensitivity of action '_Copy' to True
-Setting sensitivity of action '_Cut' to True
-Setting sensitivity of action '_Run' to True
-Setting sensitivity of action '_Rename...' to True
-Setting sensitivity of action '_Sort Test Suite File' to False
-Setting sensitivity of action '_Reversed Sort Test Suite File' to False
-Setting sensitivity of action 'Move to first' to False
-Setting sensitivity of action 'Move up' to False
-Setting sensitivity of action 'Re_connect' to True
-Setting sensitivity of action 'S_ave Selection...' to True
-
-Tabs showing : Test, Selection, Running, Config
-
-Tabs showing : Text Info, New File, Bugs
 
 Test Tree description...
 -> TargetApp (dip)
@@ -476,8 +451,33 @@ Test Tree description...
 ->     Game47
 ->       S01
 
-Test column header set to 'Tests: 1/12 selected'
+Test column header set to 'Tests: 0/12 selected'
 Removing test with path Game9952/NewTest
+Selecting new tests : [DIP test-case NewTest]
+Marking 1 tests as selected
+
+Test column header set to 'Tests: 1/12 selected'
+
+Setting file-view title to 'NewTest'
+
+---------- Text Info Window ----------
+Description:
+<No description provided>
+--------------------------------------
+Setting sensitivity of action '_Copy' to True
+Setting sensitivity of action '_Cut' to True
+Setting sensitivity of action '_Run' to True
+Setting sensitivity of action '_Rename...' to True
+Setting sensitivity of action '_Sort Test Suite File' to False
+Setting sensitivity of action '_Reversed Sort Test Suite File' to False
+Setting sensitivity of action 'Move to first' to False
+Setting sensitivity of action 'Move up' to False
+Setting sensitivity of action 'Re_connect' to True
+Setting sensitivity of action 'S_ave Selection...' to True
+
+Tabs showing : Test, Selection, Running, Config
+
+Tabs showing : Text Info, New File, Bugs
 
 Changing GUI status to: 'Performed 'Paste tests from clipboard' on DIP test-case NewTest.'
 
