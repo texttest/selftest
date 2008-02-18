@@ -187,6 +187,10 @@ traffic:[^ ]*(/startXvfb.py){REPLACE <path>\1}
 traffic:startXvfb.py{WORD 3}{REPLACE "<python>}
 readenvironment:{INTERNAL writedir}{REPLACE <test write dir>}
 readenvironment:[^/]*[0-9][0-9][A-Z][a-z][a-z][0-9][0-9][0-9][0-9][0-9][0-9]{REPLACE <target tmp dir>}
+rundependenttext:{INTERNAL writedir}{REPLACE <test write dir>}
+rundependenttext:[^/]*[0-9][0-9][A-Z][a-z][a-z][0-9][0-9][0-9][0-9][0-9][0-9]{REPLACE <target tmp dir>}
+testcomparison:{INTERNAL writedir}{REPLACE <test write dir>}
+testcomparison:[0-9][0-9][A-Za-z][a-z][a-z][0-9][0-9]:[0-9][0-9]:[0-9][0-9]{REPLACE at <date/time>}
 [end]
 
 [unordered_text]
