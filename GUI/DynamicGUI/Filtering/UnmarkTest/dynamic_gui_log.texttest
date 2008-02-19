@@ -1,5 +1,5 @@
 Enabling entry completion, using matching 1
-Top Window title is TextTest dynamic GUI : testing HELLO (started at 18Feb16:49:59)
+Top Window title is TextTest dynamic GUI : testing HELLO (started at 19Feb15:45:50)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -98,7 +98,7 @@ Tabs showing : Status
 
 Test progress:
 
-Changing GUI status to: 'TextTest started at 18Feb16:50:00.'
+Changing GUI status to: 'TextTest started at 19Feb15:45:51.'
 
 Waiting for application event 'completion of test actions' to occur.
 
@@ -117,6 +117,8 @@ Test progress:
 Test progress:
 --> Not started : 5, colour 'white', font 'bold'
 
+Progress bar set to fraction 0.0, text '0 of 5 tests completed'
+
 Test Tree description...
 -> TargetApp (hello)
 ->   simple_fail1
@@ -128,16 +130,16 @@ Test Tree description...
 
 Test column header set to 'Tests: 0/5 selected, none hidden'
 
-Progress bar set to fraction 0.0, text '0 of 5 tests completed'
 Redrawing test simple_fail1 coloured yellow
 
 Test progress:
 --> Not started : 4, colour 'white', font 'bold'
 --> Running : 1, colour 'yellow', font 'bold'
-Redrawing test simple_fail1 coloured green
-(Second column 'file3 different' coloured red)
 
 Progress bar set to fraction 0.2, text '1 of 5 tests completed'
+
+Redrawing test simple_fail1 coloured green
+(Second column 'file3 different' coloured red)
 
 Test progress:
 --> Not started : 4, colour 'white', font 'bold'
@@ -145,6 +147,7 @@ Test progress:
 --> Failed : 1, colour 'red', font 'bold'
 ----> Differences : 1, colour 'red', font 'bold'
 ------> file3 different : 1, colour 'red', font 'bold'
+
 Redrawing test simple_fail2 coloured yellow
 
 Test progress:
@@ -153,10 +156,11 @@ Test progress:
 --> Failed : 1, colour 'red', font 'bold'
 ----> Differences : 1, colour 'red', font 'bold'
 ------> file3 different : 1, colour 'red', font 'bold'
-Redrawing test simple_fail2 coloured red
-(Second column 'errors new' coloured red)
 
 Progress bar set to fraction 0.4, text '2 of 5 tests completed'
+
+Redrawing test simple_fail2 coloured red
+(Second column 'errors new' coloured red)
 
 Test progress:
 --> Not started : 3, colour 'white', font 'bold'
@@ -165,6 +169,7 @@ Test progress:
 ----> Differences : 2, colour 'red', font 'bold'
 ------> file3 different : 1, colour 'red', font 'bold'
 ------> errors new : 1, colour 'red', font 'bold'
+
 Redrawing test complex_fail1 coloured yellow
 
 Test progress:
@@ -174,10 +179,11 @@ Test progress:
 ----> Differences : 2, colour 'red', font 'bold'
 ------> file3 different : 1, colour 'red', font 'bold'
 ------> errors new : 1, colour 'red', font 'bold'
-Redrawing test complex_fail1 coloured red
-(Second column 'output different(+)' coloured red)
 
 Progress bar set to fraction 0.6, text '3 of 5 tests completed'
+
+Redrawing test complex_fail1 coloured red
+(Second column 'output different(+)' coloured red)
 
 Test progress:
 --> Not started : 2, colour 'white', font 'bold'
@@ -187,6 +193,7 @@ Test progress:
 ------> file3 different : 2, colour 'red', font 'bold'
 ------> errors new : 2, colour 'red', font 'bold'
 ------> output different : 1, colour 'red', font 'bold'
+
 Redrawing test complex_fail2 coloured yellow
 
 Test progress:
@@ -197,10 +204,11 @@ Test progress:
 ------> file3 different : 2, colour 'red', font 'bold'
 ------> errors new : 2, colour 'red', font 'bold'
 ------> output different : 1, colour 'red', font 'bold'
-Redrawing test complex_fail2 coloured red
-(Second column 'output different(+)' coloured red)
 
 Progress bar set to fraction 0.8, text '4 of 5 tests completed'
+
+Redrawing test complex_fail2 coloured red
+(Second column 'output different(+)' coloured red)
 
 Test progress:
 --> Not started : 1, colour 'white', font 'bold'
@@ -213,6 +221,7 @@ Test progress:
 ------> file1 different : 1, colour 'red', font 'bold'
 ------> file2 different : 1, colour 'red', font 'bold'
 ------> file4 different : 1, colour 'red', font 'bold'
+
 Redrawing test success coloured yellow
 
 Test progress:
@@ -226,10 +235,11 @@ Test progress:
 ------> file1 different : 1, colour 'red', font 'bold'
 ------> file2 different : 1, colour 'red', font 'bold'
 ------> file4 different : 1, colour 'red', font 'bold'
+
+Progress bar set to fraction 1.0, text 'All 5 tests completed at 19Feb15:45:53'
+
 Redrawing test success coloured green
 Redrawing suite suite : second column 'All 1 tests successful' coloured green
-
-Progress bar set to fraction 1.0, text 'All 5 tests completed at 18Feb16:50:01'
 
 Test progress:
 --> Not started : 0, colour 'white', font ''
@@ -274,72 +284,44 @@ Tabs showing : Test, Status
 'press ok' event created with arguments ''
 Adding entry completion 'Checked' ...
 Adding entry completion 'Nothing that needs filtering' ...
+
 Redrawing test complex_fail1 coloured orange
 (Second column 'Checked' coloured orange)
+
+Test progress:
+--> Not started : 0, colour 'white', font ''
+--> Running : 0, colour 'white', font ''
+--> Failed : 3, colour 'red', font 'bold'
+----> Differences : 3, colour 'red', font 'bold'
+------> file3 different : 2, colour 'red', font 'bold'
+------> errors new : 2, colour 'red', font 'bold'
+------> output different : 1, colour 'red', font 'bold'
+------> file1 different : 1, colour 'red', font 'bold'
+------> file2 different : 1, colour 'red', font 'bold'
+------> file4 different : 1, colour 'red', font 'bold'
+--> Succeeded : 1, colour 'green', font 'bold'
+--> Marked : 1, colour 'orange', font 'bold'
+----> Checked : 1, colour 'orange', font 'bold'
 Setting sensitivity of action '_Unmark' to True
 
-Test progress:
---> Not started : 0, colour 'white', font ''
---> Running : 0, colour 'white', font ''
---> Failed : 3, colour 'red', font 'bold'
-----> Differences : 3, colour 'red', font 'bold'
-------> file3 different : 2, colour 'red', font 'bold'
-------> errors new : 2, colour 'red', font 'bold'
-------> output different : 1, colour 'red', font 'bold'
-------> file1 different : 1, colour 'red', font 'bold'
-------> file2 different : 1, colour 'red', font 'bold'
-------> file4 different : 1, colour 'red', font 'bold'
---> Succeeded : 1, colour 'green', font 'bold'
---> Marked : 1, colour 'orange', font 'bold'
-----> Checked : 1, colour 'orange', font 'bold'
-
-Test progress:
---> Not started : 0, colour 'white', font ''
---> Running : 0, colour 'white', font ''
---> Failed : 3, colour 'red', font 'bold'
-----> Differences : 3, colour 'red', font 'bold'
-------> file3 different : 2, colour 'red', font 'bold'
-------> errors new : 2, colour 'red', font 'bold'
-------> output different : 1, colour 'red', font 'bold'
-------> file1 different : 1, colour 'red', font 'bold'
-------> file2 different : 1, colour 'red', font 'bold'
-------> file4 different : 1, colour 'red', font 'bold'
---> Succeeded : 1, colour 'green', font 'bold'
---> Marked : 1, colour 'orange', font 'bold'
-----> Checked : 1, colour 'orange', font 'bold'
 Redrawing test complex_fail2 coloured orange
 (Second column 'Checked' coloured orange)
+
+Test progress:
+--> Not started : 0, colour 'white', font ''
+--> Running : 0, colour 'white', font ''
+--> Failed : 2, colour 'red', font 'bold'
+----> Differences : 2, colour 'red', font 'bold'
+------> file3 different : 1, colour 'red', font 'bold'
+------> errors new : 1, colour 'red', font 'bold'
+------> output different : 0, colour 'white', font ''
+------> file1 different : 0, colour 'white', font ''
+------> file2 different : 0, colour 'white', font ''
+------> file4 different : 0, colour 'white', font ''
+--> Succeeded : 1, colour 'green', font 'bold'
+--> Marked : 2, colour 'orange', font 'bold'
+----> Checked : 2, colour 'orange', font 'bold'
 Setting sensitivity of action '_Save' to False
-
-Test progress:
---> Not started : 0, colour 'white', font ''
---> Running : 0, colour 'white', font ''
---> Failed : 2, colour 'red', font 'bold'
-----> Differences : 2, colour 'red', font 'bold'
-------> file3 different : 1, colour 'red', font 'bold'
-------> errors new : 1, colour 'red', font 'bold'
-------> output different : 0, colour 'white', font ''
-------> file1 different : 0, colour 'white', font ''
-------> file2 different : 0, colour 'white', font ''
-------> file4 different : 0, colour 'white', font ''
---> Succeeded : 1, colour 'green', font 'bold'
---> Marked : 2, colour 'orange', font 'bold'
-----> Checked : 2, colour 'orange', font 'bold'
-
-Test progress:
---> Not started : 0, colour 'white', font ''
---> Running : 0, colour 'white', font ''
---> Failed : 2, colour 'red', font 'bold'
-----> Differences : 2, colour 'red', font 'bold'
-------> file3 different : 1, colour 'red', font 'bold'
-------> errors new : 1, colour 'red', font 'bold'
-------> output different : 0, colour 'white', font ''
-------> file1 different : 0, colour 'white', font ''
-------> file2 different : 0, colour 'white', font ''
-------> file4 different : 0, colour 'white', font ''
---> Succeeded : 1, colour 'green', font 'bold'
---> Marked : 2, colour 'orange', font 'bold'
-----> Checked : 2, colour 'orange', font 'bold'
 
 Changing GUI status to: 'Performed 'Mark the selected tests' on 2 tests.'
 
@@ -428,6 +410,7 @@ Setting file-view title to 'Sample from 3 tests'
 
 'press ok' event created with arguments ''
 Adding entry completion 'Marked2' ...
+
 Redrawing test simple_fail2 coloured orange
 (Second column 'Marked2' coloured orange)
 
@@ -450,8 +433,10 @@ Test FAILED :
 Setting sensitivity of action '_Save' to False
 
 Tabs showing : Text Info
+
 Redrawing test complex_fail1 coloured orange
 (Second column 'Marked2' coloured orange)
+
 Redrawing test success coloured orange
 (Second column 'Marked2' coloured orange)
 
@@ -541,6 +526,7 @@ Test FAILED :
 --------------------------------------
 
 'unmark the selected tests' event created with arguments ''
+
 Redrawing test complex_fail2 coloured red
 (Second column 'output different(+)' coloured red)
 
@@ -614,6 +600,7 @@ Test FAILED :
 
 'press ok' event created with arguments ''
 Adding entry completion 'Marked3' ...
+
 Redrawing test simple_fail1 coloured orange
 (Second column 'Marked3' coloured orange)
 
@@ -667,6 +654,7 @@ Test column header set to 'Tests: 2/5 selected, none hidden'
 Setting file-view title to 'Sample from 2 tests'
 
 'unmark the selected tests' event created with arguments ''
+
 Redrawing test simple_fail2 coloured red
 (Second column 'errors new' coloured red)
 
@@ -685,6 +673,7 @@ Test FAILED :
 Setting sensitivity of action '_Save' to True
 
 Tabs showing : Text Info, Saving
+
 Redrawing test complex_fail1 coloured red
 (Second column 'output different(+)' coloured red)
 Setting sensitivity of action '_Unmark' to False
@@ -767,6 +756,7 @@ Tabs showing : Text Info, Saving
 
 'press ok' event created with arguments ''
 Adding entry completion 'Marked4' ...
+
 Redrawing test complex_fail1 coloured orange
 (Second column 'Marked4' coloured orange)
 
@@ -829,6 +819,7 @@ Marking 3 tests as selected
 Test column header set to 'Tests: 3/5 selected, none hidden'
 
 'unmark the selected tests' event created with arguments ''
+
 Redrawing test success coloured green
 
 Test progress:
@@ -849,101 +840,49 @@ Test progress:
 ----> Marked3 : 1, colour 'orange', font 'bold'
 ----> Marked4 : 1, colour 'orange', font 'bold'
 
-Test progress:
---> Not started : 0, colour 'white', font ''
---> Running : 0, colour 'white', font ''
---> Failed : 2, colour 'red', font 'bold'
-----> Differences : 2, colour 'red', font 'bold'
-------> file3 different : 1, colour 'red', font 'bold'
-------> errors new : 2, colour 'red', font 'bold'
-------> output different : 1, colour 'red', font 'bold'
-------> file1 different : 1, colour 'red', font 'bold'
-------> file2 different : 1, colour 'red', font 'bold'
-------> file4 different : 1, colour 'red', font 'bold'
---> Succeeded : 1, colour 'green', font 'bold'
---> Marked : 2, colour 'orange', font 'bold'
-----> Checked : 0, colour 'white', font ''
-----> Marked2 : 0, colour 'white', font ''
-----> Marked3 : 1, colour 'orange', font 'bold'
-----> Marked4 : 1, colour 'orange', font 'bold'
 Redrawing test simple_fail1 coloured green
 (Second column 'file3 different' coloured red)
+
+Test progress:
+--> Not started : 0, colour 'white', font ''
+--> Running : 0, colour 'white', font ''
+--> Failed : 3, colour 'red', font 'bold'
+----> Differences : 3, colour 'red', font 'bold'
+------> file3 different : 2, colour 'red', font 'bold'
+------> errors new : 2, colour 'red', font 'bold'
+------> output different : 1, colour 'red', font 'bold'
+------> file1 different : 1, colour 'red', font 'bold'
+------> file2 different : 1, colour 'red', font 'bold'
+------> file4 different : 1, colour 'red', font 'bold'
+--> Succeeded : 1, colour 'green', font 'bold'
+--> Marked : 1, colour 'orange', font 'bold'
+----> Checked : 0, colour 'white', font ''
+----> Marked2 : 0, colour 'white', font ''
+----> Marked3 : 0, colour 'white', font ''
+----> Marked4 : 1, colour 'orange', font 'bold'
 Setting sensitivity of action '_Save' to True
 
-Test progress:
---> Not started : 0, colour 'white', font ''
---> Running : 0, colour 'white', font ''
---> Failed : 3, colour 'red', font 'bold'
-----> Differences : 3, colour 'red', font 'bold'
-------> file3 different : 2, colour 'red', font 'bold'
-------> errors new : 2, colour 'red', font 'bold'
-------> output different : 1, colour 'red', font 'bold'
-------> file1 different : 1, colour 'red', font 'bold'
-------> file2 different : 1, colour 'red', font 'bold'
-------> file4 different : 1, colour 'red', font 'bold'
---> Succeeded : 1, colour 'green', font 'bold'
---> Marked : 1, colour 'orange', font 'bold'
-----> Checked : 0, colour 'white', font ''
-----> Marked2 : 0, colour 'white', font ''
-----> Marked3 : 0, colour 'white', font ''
-----> Marked4 : 1, colour 'orange', font 'bold'
-
-Test progress:
---> Not started : 0, colour 'white', font ''
---> Running : 0, colour 'white', font ''
---> Failed : 3, colour 'red', font 'bold'
-----> Differences : 3, colour 'red', font 'bold'
-------> file3 different : 2, colour 'red', font 'bold'
-------> errors new : 2, colour 'red', font 'bold'
-------> output different : 1, colour 'red', font 'bold'
-------> file1 different : 1, colour 'red', font 'bold'
-------> file2 different : 1, colour 'red', font 'bold'
-------> file4 different : 1, colour 'red', font 'bold'
---> Succeeded : 1, colour 'green', font 'bold'
---> Marked : 1, colour 'orange', font 'bold'
-----> Checked : 0, colour 'white', font ''
-----> Marked2 : 0, colour 'white', font ''
-----> Marked3 : 0, colour 'white', font ''
-----> Marked4 : 1, colour 'orange', font 'bold'
 Redrawing test complex_fail1 coloured red
 (Second column 'output different(+)' coloured red)
+
+Test progress:
+--> Not started : 0, colour 'white', font ''
+--> Running : 0, colour 'white', font ''
+--> Failed : 4, colour 'red', font 'bold'
+----> Differences : 4, colour 'red', font 'bold'
+------> file3 different : 3, colour 'red', font 'bold'
+------> errors new : 3, colour 'red', font 'bold'
+------> output different : 2, colour 'red', font 'bold'
+------> file1 different : 1, colour 'red', font 'bold'
+------> file2 different : 1, colour 'red', font 'bold'
+------> file4 different : 1, colour 'red', font 'bold'
+--> Succeeded : 1, colour 'green', font 'bold'
+--> Marked : 0, colour 'white', font ''
+----> Checked : 0, colour 'white', font ''
+----> Marked2 : 0, colour 'white', font ''
+----> Marked3 : 0, colour 'white', font ''
+----> Marked4 : 0, colour 'white', font ''
 Setting sensitivity of action '_Unmark' to False
-
-Test progress:
---> Not started : 0, colour 'white', font ''
---> Running : 0, colour 'white', font ''
---> Failed : 4, colour 'red', font 'bold'
-----> Differences : 4, colour 'red', font 'bold'
-------> file3 different : 3, colour 'red', font 'bold'
-------> errors new : 3, colour 'red', font 'bold'
-------> output different : 2, colour 'red', font 'bold'
-------> file1 different : 1, colour 'red', font 'bold'
-------> file2 different : 1, colour 'red', font 'bold'
-------> file4 different : 1, colour 'red', font 'bold'
---> Succeeded : 1, colour 'green', font 'bold'
---> Marked : 0, colour 'white', font ''
-----> Checked : 0, colour 'white', font ''
-----> Marked2 : 0, colour 'white', font ''
-----> Marked3 : 0, colour 'white', font ''
-----> Marked4 : 0, colour 'white', font ''
-
-Test progress:
---> Not started : 0, colour 'white', font ''
---> Running : 0, colour 'white', font ''
---> Failed : 4, colour 'red', font 'bold'
-----> Differences : 4, colour 'red', font 'bold'
-------> file3 different : 3, colour 'red', font 'bold'
-------> errors new : 3, colour 'red', font 'bold'
-------> output different : 2, colour 'red', font 'bold'
-------> file1 different : 1, colour 'red', font 'bold'
-------> file2 different : 1, colour 'red', font 'bold'
-------> file4 different : 1, colour 'red', font 'bold'
---> Succeeded : 1, colour 'green', font 'bold'
---> Marked : 0, colour 'white', font ''
-----> Checked : 0, colour 'white', font ''
-----> Marked2 : 0, colour 'white', font ''
-----> Marked3 : 0, colour 'white', font ''
-----> Marked4 : 0, colour 'white', font ''
 
 Changing GUI status to: 'Performed 'Unmark the selected tests' on 3 tests.'
 

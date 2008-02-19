@@ -1,5 +1,5 @@
 Enabling entry completion, using matching 1
-Top Window title is TextTest dynamic GUI : testing HELLO.v1,HELLO.v2 (started at 15Feb14:00:43)
+Top Window title is TextTest dynamic GUI : testing HELLO.v1,HELLO.v2 (started at 19Feb15:45:39)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -98,7 +98,7 @@ Tabs showing : Status
 
 Test progress:
 
-Changing GUI status to: 'TextTest started at 15Feb14:00:44.'
+Changing GUI status to: 'TextTest started at 19Feb15:45:39.'
 
 Waiting for application event 'completion of test actions' to occur.
 
@@ -108,6 +108,8 @@ Test progress:
 Test progress:
 --> Not started : 2, colour 'white', font 'bold'
 
+Progress bar set to fraction 0.0, text '0 of 2 tests completed'
+
 Test Tree description...
 -> TargetApp (hello.v1)
 ->   Test
@@ -116,21 +118,21 @@ Test Tree description...
 
 Test column header set to 'Tests: 0/2 selected, none hidden'
 
-Progress bar set to fraction 0.0, text '0 of 2 tests completed'
+Progress bar set to fraction 0.5, text '1 of 2 tests completed'
+
 Redrawing test Test coloured red
 (Second column 'output different' coloured red)
-
-Progress bar set to fraction 0.5, text '1 of 2 tests completed'
 
 Test progress:
 --> Not started : 1, colour 'white', font 'bold'
 --> Failed : 1, colour 'red', font 'bold'
 ----> Differences : 1, colour 'red', font 'bold'
 ------> output different : 1, colour 'red', font 'bold'
+
+Progress bar set to fraction 1.0, text 'All 2 tests completed at 19Feb15:45:40'
+
 Redrawing test Test coloured red
 (Second column 'output different' coloured red)
-
-Progress bar set to fraction 1.0, text 'All 2 tests completed at 15Feb14:00:44'
 
 Test progress:
 --> Not started : 0, colour 'white', font ''
@@ -184,6 +186,7 @@ Changing GUI status to: 'Saving 1 tests ...'
 Saving HELLO.v1 test-case Test - version , exactness 1
 
 Changing GUI status to: 'Saving HELLO.v1 test-case Test : output, no version'
+
 Redrawing test Test coloured green
 Redrawing suite TargetApp : second column 'All 1 tests successful' coloured green
 
@@ -194,9 +197,10 @@ Setting sensitivity of action '_Mark' to False
 
 Test progress:
 --> Not started : 0, colour 'white', font ''
---> Failed : 2, colour 'red', font 'bold'
-----> Differences : 2, colour 'red', font 'bold'
-------> output different : 2, colour 'red', font 'bold'
+--> Failed : 1, colour 'red', font 'bold'
+----> Differences : 1, colour 'red', font 'bold'
+------> output different : 1, colour 'red', font 'bold'
+--> Succeeded : 1, colour 'green', font 'bold'
 
 Tabs showing : Status
 
@@ -216,6 +220,7 @@ Setting sensitivity of action '_Save' to True
 Setting sensitivity of action 'S_ave Selection...' to True
 
 Changing GUI status to: 'Recomputing status of HELLO.v2 test-case Test ...'
+
 Redrawing test Test coloured green
 Redrawing suite TargetApp : second column 'All 1 tests successful' coloured green
 

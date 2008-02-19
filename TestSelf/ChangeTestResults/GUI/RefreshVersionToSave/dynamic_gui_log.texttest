@@ -1,5 +1,5 @@
 Enabling entry completion, using matching 1
-Top Window title is TextTest dynamic GUI : testing HELLO,HELLO.10.2,HELLO.10.4 (started at 10Feb21:34:10)
+Top Window title is TextTest dynamic GUI : testing HELLO,HELLO.10.2,HELLO.10.4 (started at 19Feb15:45:41)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -98,7 +98,7 @@ Tabs showing : Status
 
 Test progress:
 
-Changing GUI status to: 'TextTest started at 10Feb21:34:10.'
+Changing GUI status to: 'TextTest started at 19Feb15:45:41.'
 
 Waiting for application event 'completion of test actions' to occur.
 
@@ -111,6 +111,8 @@ Test progress:
 Test progress:
 --> Not started : 3, colour 'white', font 'bold'
 
+Progress bar set to fraction 0.0, text '0 of 3 tests completed'
+
 Test Tree description...
 -> TargetApp (hello)
 ->   OutDiff
@@ -121,16 +123,16 @@ Test Tree description...
 
 Test column header set to 'Tests: 0/3 selected, none hidden'
 
-Progress bar set to fraction 0.0, text '0 of 3 tests completed'
 Redrawing test OutDiff coloured yellow
 
 Test progress:
 --> Not started : 2, colour 'white', font 'bold'
 --> Running : 1, colour 'yellow', font 'bold'
-Redrawing test OutDiff coloured red
-(Second column 'output different' coloured red)
 
 Progress bar set to fraction 0.333333333333, text '1 of 3 tests completed'
+
+Redrawing test OutDiff coloured red
+(Second column 'output different' coloured red)
 
 Test progress:
 --> Not started : 2, colour 'white', font 'bold'
@@ -138,6 +140,7 @@ Test progress:
 --> Failed : 1, colour 'red', font 'bold'
 ----> Differences : 1, colour 'red', font 'bold'
 ------> output different : 1, colour 'red', font 'bold'
+
 Redrawing test OutDiff coloured yellow
 
 Test progress:
@@ -146,10 +149,11 @@ Test progress:
 --> Failed : 1, colour 'red', font 'bold'
 ----> Differences : 1, colour 'red', font 'bold'
 ------> output different : 1, colour 'red', font 'bold'
-Redrawing test OutDiff coloured red
-(Second column 'output different' coloured red)
 
 Progress bar set to fraction 0.666666666667, text '2 of 3 tests completed'
+
+Redrawing test OutDiff coloured red
+(Second column 'output different' coloured red)
 
 Test progress:
 --> Not started : 1, colour 'white', font 'bold'
@@ -157,6 +161,7 @@ Test progress:
 --> Failed : 2, colour 'red', font 'bold'
 ----> Differences : 2, colour 'red', font 'bold'
 ------> output different : 2, colour 'red', font 'bold'
+
 Redrawing test OutDiff coloured yellow
 
 Test progress:
@@ -165,10 +170,11 @@ Test progress:
 --> Failed : 2, colour 'red', font 'bold'
 ----> Differences : 2, colour 'red', font 'bold'
 ------> output different : 2, colour 'red', font 'bold'
+
+Progress bar set to fraction 1.0, text 'All 3 tests completed at 19Feb15:45:42'
+
 Redrawing test OutDiff coloured red
 (Second column 'output different' coloured red)
-
-Progress bar set to fraction 1.0, text 'All 3 tests completed at 10Feb21:34:11'
 
 Test progress:
 --> Not started : 0, colour 'white', font ''
@@ -222,6 +228,7 @@ Changing GUI status to: 'Saving 1 tests ...'
 Saving HELLO.10.2 test-case OutDiff - version 10, exactness 1
 
 Changing GUI status to: 'Saving HELLO.10.2 test-case OutDiff : output, version 10'
+
 Redrawing test OutDiff coloured green
 Redrawing suite TargetApp : second column 'All 1 tests successful' coloured green
 
@@ -233,9 +240,10 @@ Setting sensitivity of action '_Mark' to False
 Test progress:
 --> Not started : 0, colour 'white', font ''
 --> Running : 0, colour 'white', font ''
---> Failed : 3, colour 'red', font 'bold'
-----> Differences : 3, colour 'red', font 'bold'
-------> output different : 3, colour 'red', font 'bold'
+--> Failed : 2, colour 'red', font 'bold'
+----> Differences : 2, colour 'red', font 'bold'
+------> output different : 2, colour 'red', font 'bold'
+--> Succeeded : 1, colour 'green', font 'bold'
 
 Tabs showing : Status
 
@@ -290,6 +298,7 @@ Changing GUI status to: 'Saving 1 tests ...'
 Saving HELLO test-case OutDiff - version , exactness 1
 
 Changing GUI status to: 'Saving HELLO test-case OutDiff : output, no version'
+
 Redrawing test OutDiff coloured green
 Redrawing suite TargetApp : second column 'All 1 tests successful' coloured green
 
@@ -301,10 +310,10 @@ Setting sensitivity of action '_Mark' to False
 Test progress:
 --> Not started : 0, colour 'white', font ''
 --> Running : 0, colour 'white', font ''
---> Failed : 2, colour 'red', font 'bold'
-----> Differences : 2, colour 'red', font 'bold'
-------> output different : 2, colour 'red', font 'bold'
---> Succeeded : 1, colour 'green', font 'bold'
+--> Failed : 1, colour 'red', font 'bold'
+----> Differences : 1, colour 'red', font 'bold'
+------> output different : 1, colour 'red', font 'bold'
+--> Succeeded : 2, colour 'green', font 'bold'
 
 Tabs showing : Status
 
@@ -325,6 +334,7 @@ Setting sensitivity of action '_Save' to True
 Setting sensitivity of action 'S_ave Selection...' to True
 
 Changing GUI status to: 'Recomputing status of HELLO.10.4 test-case OutDiff ...'
+
 Redrawing test OutDiff coloured green
 Redrawing suite TargetApp : second column 'All 1 tests successful' coloured green
 
@@ -358,25 +368,18 @@ Test column header set to 'Tests: 1/3 selected, none hidden'
 Setting sensitivity of action 'S_ave Selection...' to True
 
 Changing GUI status to: 'Recomputing status of HELLO.10.4 test-case OutDiff ...'
+
 Redrawing test OutDiff coloured green
 
+Test progress:
+--> Not started : 0, colour 'white', font ''
+--> Running : 0, colour 'white', font ''
+--> Failed : 0, colour 'white', font ''
+----> Differences : 0, colour 'white', font ''
+------> output different : 0, colour 'white', font ''
+--> Succeeded : 3, colour 'green', font 'bold'
+
 Tabs showing : Test, Status
-
-Test progress:
---> Not started : 0, colour 'white', font ''
---> Running : 0, colour 'white', font ''
---> Failed : 0, colour 'white', font ''
-----> Differences : 0, colour 'white', font ''
-------> output different : 0, colour 'white', font ''
---> Succeeded : 3, colour 'green', font 'bold'
-
-Test progress:
---> Not started : 0, colour 'white', font ''
---> Running : 0, colour 'white', font ''
---> Failed : 0, colour 'white', font ''
-----> Differences : 0, colour 'white', font ''
-------> output different : 0, colour 'white', font ''
---> Succeeded : 3, colour 'green', font 'bold'
 
 Changing GUI status to: 'Done recomputing status of HELLO.10.4 test-case OutDiff.'
 
@@ -403,8 +406,8 @@ Setting sensitivity of action 'View Raw Differences' to True
 'view raw differences' event created with arguments ''
 Adding entry completion '10.4' ...
 Starting graphical difference comparison using 'tkdiff':
--- original file : /carm/proj/texttest-tmp/mattias/dynamic_gui.10Feb213327/texttest/TestSelf/ChangeTestResults/GUI/RefreshVersionToSave/TargetApp/OutDiff/output.hello.10
---  current file : /carm/proj/texttest-tmp/mattias/dynamic_gui.10Feb213327/texttest/TestSelf/ChangeTestResults/GUI/RefreshVersionToSave/texttesttmp/console.10Feb213410/hello.10.4/OutDiff/output.hello
+-- original file : /carm/proj/texttest-tmp/geoff/texttest.19Feb154518/texttest/TestSelf/ChangeTestResults/GUI/RefreshVersionToSave/TargetApp/OutDiff/output.hello.10
+--  current file : /carm/proj/texttest-tmp/geoff/texttest.19Feb154518/texttest/TestSelf/ChangeTestResults/GUI/RefreshVersionToSave/texttesttmp/console.19Feb154541/hello.10.4/OutDiff/output.hello
 
 Changing GUI status to: 'Started "tkdiff output.hello.10 output.hello" in background (from test OutDiff version 10.4).'
 

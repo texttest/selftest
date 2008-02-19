@@ -1,5 +1,5 @@
 Enabling entry completion, using matching 1
-Top Window title is TextTest dynamic GUI : testing DIAG.tmp (started at 10Feb22:10:48)
+Top Window title is TextTest dynamic GUI : testing DIAG.tmp (started at 19Feb15:45:39)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -98,12 +98,14 @@ Tabs showing : Status
 
 Test progress:
 
-Changing GUI status to: 'TextTest started at 10Feb22:10:48.'
+Changing GUI status to: 'TextTest started at 19Feb15:45:40.'
 
 Waiting for application event 'completion of test actions' to occur.
 
 Test progress:
 --> Not started : 1, colour 'white', font 'bold'
+
+Progress bar set to fraction 0.0, text '0 of 1 tests completed'
 
 Test Tree description...
 -> TargetApp (diag.tmp)
@@ -111,16 +113,16 @@ Test Tree description...
 
 Test column header set to 'Tests: 0/1 selected, none hidden'
 
-Progress bar set to fraction 0.0, text '0 of 1 tests completed'
 Redrawing test TestWithDiag coloured yellow
 
 Test progress:
 --> Not started : 0, colour 'white', font ''
 --> Running : 1, colour 'yellow', font 'bold'
+
+Progress bar set to fraction 1.0, text 'All 1 tests completed at 19Feb15:45:41'
+
 Redrawing test TestWithDiag coloured green
 (Second column 'first different(+)' coloured red)
-
-Progress bar set to fraction 1.0, text 'All 1 tests completed at 10Feb22:10:49'
 
 Test progress:
 --> Not started : 0, colour 'white', font ''
@@ -179,6 +181,7 @@ Changing GUI status to: 'Saving 1 tests ...'
 Saving DIAG.tmp test-case TestWithDiag - version tmp, exactness 1, only third
 
 Changing GUI status to: 'Saving DIAG.tmp test-case TestWithDiag : third, version tmp'
+
 Redrawing test TestWithDiag coloured green
 (Second column 'first different' coloured red)
 Setting sensitivity of action 'View File' to False
@@ -211,6 +214,7 @@ Changing GUI status to: 'Saving 1 tests ...'
 Saving DIAG.tmp test-case TestWithDiag - version tmp, exactness 1
 
 Changing GUI status to: 'Saving DIAG.tmp test-case TestWithDiag : first, version tmp'
+
 Redrawing test TestWithDiag coloured green
 Redrawing suite TargetApp : second column 'All 1 tests successful' coloured green
 
@@ -222,10 +226,11 @@ Setting sensitivity of action '_Mark' to False
 Test progress:
 --> Not started : 0, colour 'white', font ''
 --> Running : 0, colour 'white', font ''
---> Failed : 1, colour 'red', font 'bold'
-----> Differences : 1, colour 'red', font 'bold'
-------> first different : 1, colour 'red', font 'bold'
+--> Failed : 0, colour 'white', font ''
+----> Differences : 0, colour 'white', font ''
+------> first different : 0, colour 'white', font ''
 ------> third new : 0, colour 'white', font ''
+--> Succeeded : 1, colour 'green', font 'bold'
 
 Tabs showing : Status
 
