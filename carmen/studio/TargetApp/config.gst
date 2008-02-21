@@ -23,3 +23,7 @@ Cas:matador
 [end]
 
 unsaveable_version:local
+
+[view_program]
+*usecase*:$CARMSYS/bin/startMacroRecorder
+
