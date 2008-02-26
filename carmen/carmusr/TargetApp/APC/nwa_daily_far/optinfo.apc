@@ -1,0 +1,247 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>APC Status Report</title>
+<script type="text/javascript" language="JavaScript">
+    function HideView(id1,id2) {
+      document.getElementById(id1).style.display="none";
+      document.getElementById(id2).style.display="block";
+    }
+  </script><style type="text/css">
+    body { font-family: Arial,Helvetica,sans-serif;
+        font-size: 0.9em;
+        margin-right: 2em;}
+    a { color: rgb(0, 0, 0);}
+    a:hover { color: rgb(0, 0, 0);}
+    li { margin-bottom: 1em;
+        margin-left: -1.5em;}
+    pre { margin-top: 0.1em;
+        margin-bottom: 0em;
+        font-size: 1.2em;}
+    .optInfo { border-style: dashed;
+        border-width: 1px;
+        padding-bottom: 0.3em;
+        padding-top: 0.3em;
+        padding-left: 0.5em;}
+    .optInfoHead { padding-bottom: 0.3em;
+        padding-top: 0.3em;
+        padding-left: 0.5em;
+        font-family: Arial,Helvetica,sans-serif;
+        font-size:1.0em;}
+    .initHide { display: none;}
+    .imageLink { border-style: none;}
+    .warningHighVisibility { font-weight:bold }
+    .warningText { margin-top: 1em;
+        margin-bottom: 0em;}
+    .warningInfo { margin-left: 1.5em;}
+    .chain {margin-top: 0.5em;}
+    .boxTitle { border: 1px solid rgb(153, 153, 153);
+        margin-top: 0em;
+        margin-bottom: 0em;
+        font-weight: bold;
+        padding-top: 0.3em;
+        padding-left: 0.5em;
+        padding-bottom: 0.3em;
+        background-color: rgb(221, 221, 221);}
+    .box { border: 1px solid rgb(153, 153, 153);
+        margin-top: 0em;
+        padding-top: 0.3em;
+        padding-left: 0.5em;
+        padding-bottom: 0.3em;}
+  </style>
+</head>
+<body>
+<iframe name="dummy_iframe" id="dummyiframe" style="position: absolute; border: none;right: 2px; bottom:2px; width: 2px; height:2px;"></iframe><pre class="optInfoHead">
+APC STATUS REPORT OVERVIEW
+
+Total time:  0:01:05   cpu time:  0:01:00
+Active method: column generator, module: exit
+Generated trips: 3150 this loop
+</pre>
+<h1>
+<img style="width: 30px; height: 28px;" alt="" src="images/warning.gif"> Warnings</h1>
+<ul>
+<li><div>
+<div>FUTURE ERROR: Illegal keyword dependency:
+The rule trip_rules_far.far_leg_24h_max_flight_time is depending on the booked_crew_position_1 keyword.
+This may lead to undefined results. The keyword booked_crew_position_1 is only allowed to be
+used in APC reports.
+</div>
+<div class="detail">
+<div class="boxTitle" id="detail_id45172_x"><a href="javascript:HideView('detail_id45172_x','detail_id45172_o')">Details <img class="imageLink" style="width: 6px; height: 8px;" alt="" src="images/collapsed.gif"></a></div>
+<div class="initHide" id="detail_id45172_o">
+<div class="boxTitle"><a href="javascript:HideView('detail_id45172_o','detail_id45172_x')">Details <img class="imageLink" style="width: 8px; height: 6px;" alt="" src="images/expanded.gif"></a></div>
+<pre class="box">The dependency chain is:
+  booked_crew_position_1 -&gt; 
+  leg.is_assigned_to_crr -&gt; 
+  crew_pos.aug_need_in_pos -&gt; 
+  crew_pos.need_in_pos -&gt; 
+  crew_pos.total_needed_cockpit_crew -&gt; 
+  trip_rules_far.need_3crew -&gt; 
+  trip_rules_far.far_leg_24h_max_flight_time -&gt; 
+  trip_rules_far.far_leg_24h_max_flight_time
+</pre>
+</div>
+</div>
+<pre>
+Surpressing similar warning(s) for the keyword(s):
+booked_crew_position_2 booked_crew_position_3 booked_crew_position_4
+booked_crew_position_5 booked_crew_position_6 booked_crew_position_7
+booked_crew_position_8 booked_crew_position_9 booked_crew_position_10
+booked_crew_position_11 booked_crew_position_12 
+
+</pre>
+</div></li>
+<li><div>
+<div>FUTURE ERROR: Illegal keyword dependency:
+The rule trip_rules_far.far_leg_24h_rest_time is depending on the booked_crew_position_1 keyword.
+This may lead to undefined results. The keyword booked_crew_position_1 is only allowed to be
+used in APC reports.
+</div>
+<div class="detail">
+<div class="boxTitle" id="detail_id46487_x"><a href="javascript:HideView('detail_id46487_x','detail_id46487_o')">Details <img class="imageLink" style="width: 6px; height: 8px;" alt="" src="images/collapsed.gif"></a></div>
+<div class="initHide" id="detail_id46487_o">
+<div class="boxTitle"><a href="javascript:HideView('detail_id46487_o','detail_id46487_x')">Details <img class="imageLink" style="width: 8px; height: 6px;" alt="" src="images/expanded.gif"></a></div>
+<pre class="box">The dependency chain is:
+  booked_crew_position_1 -&gt; 
+  leg.is_assigned_to_crr -&gt; 
+  crew_pos.aug_need_in_pos -&gt; 
+  crew_pos.need_in_pos -&gt; 
+  crew_pos.total_needed_cockpit_crew -&gt; 
+  trip_rules_far.need_2crew -&gt; 
+  trip_rules_far.far_leg_24h_rest_time
+</pre>
+</div>
+</div>
+<pre>
+Surpressing similar warning(s) for the keyword(s):
+booked_crew_position_2 booked_crew_position_3 booked_crew_position_4
+booked_crew_position_5 booked_crew_position_6 booked_crew_position_7
+booked_crew_position_8 booked_crew_position_9 booked_crew_position_10
+booked_crew_position_11 booked_crew_position_12 
+
+</pre>
+</div></li>
+<li><div>
+<div>FUTURE ERROR: Illegal keyword dependency:
+The rule trip_rules_far.far_leg_24h_min_rest_time_if_flight_time_over_8h is depending on the booked_crew_position_1 keyword.
+This may lead to undefined results. The keyword booked_crew_position_1 is only allowed to be
+used in APC reports.
+</div>
+<div class="detail">
+<div class="boxTitle" id="detail_id46506_x"><a href="javascript:HideView('detail_id46506_x','detail_id46506_o')">Details <img class="imageLink" style="width: 6px; height: 8px;" alt="" src="images/collapsed.gif"></a></div>
+<div class="initHide" id="detail_id46506_o">
+<div class="boxTitle"><a href="javascript:HideView('detail_id46506_o','detail_id46506_x')">Details <img class="imageLink" style="width: 8px; height: 6px;" alt="" src="images/expanded.gif"></a></div>
+<pre class="box">The dependency chain is:
+  booked_crew_position_1 -&gt; 
+  leg.is_assigned_to_crr -&gt; 
+  crew_pos.aug_need_in_pos -&gt; 
+  crew_pos.need_in_pos -&gt; 
+  crew_pos.total_needed_cockpit_crew -&gt; 
+  trip_rules_far.need_2crew -&gt; 
+  trip_rules_far.far_leg_24h_min_rest_time_if_flight_time_over_8h
+</pre>
+</div>
+</div>
+<pre>
+Surpressing similar warning(s) for the keyword(s):
+booked_crew_position_2 booked_crew_position_3 booked_crew_position_4
+booked_crew_position_5 booked_crew_position_6 booked_crew_position_7
+booked_crew_position_8 booked_crew_position_9 booked_crew_position_10
+booked_crew_position_11 booked_crew_position_12 
+
+</pre>
+</div></li>
+<li><div>
+<div>FUTURE ERROR: Illegal keyword dependency:
+The rule trip_rules_far.far_leg_24h_min_rest_time_if_flight_time_over_20_or_24 is depending on the booked_crew_position_1 keyword.
+This may lead to undefined results. The keyword booked_crew_position_1 is only allowed to be
+used in APC reports.
+</div>
+<div class="detail">
+<div class="boxTitle" id="detail_id46529_x"><a href="javascript:HideView('detail_id46529_x','detail_id46529_o')">Details <img class="imageLink" style="width: 6px; height: 8px;" alt="" src="images/collapsed.gif"></a></div>
+<div class="initHide" id="detail_id46529_o">
+<div class="boxTitle"><a href="javascript:HideView('detail_id46529_o','detail_id46529_x')">Details <img class="imageLink" style="width: 8px; height: 6px;" alt="" src="images/expanded.gif"></a></div>
+<pre class="box">The dependency chain is:
+  booked_crew_position_1 -&gt; 
+  leg.is_assigned_to_crr -&gt; 
+  crew_pos.aug_need_in_pos -&gt; 
+  crew_pos.need_in_pos -&gt; 
+  crew_pos.total_needed_cockpit_crew -&gt; 
+  trip_rules_far.need_3crew -&gt; 
+  trip_rules_far.far_leg_24h_min_rest_time_if_flight_time_over_20_or_24
+</pre>
+</div>
+</div>
+<pre>
+Surpressing similar warning(s) for the keyword(s):
+booked_crew_position_2 booked_crew_position_3 booked_crew_position_4
+booked_crew_position_5 booked_crew_position_6 booked_crew_position_7
+booked_crew_position_8 booked_crew_position_9 booked_crew_position_10
+booked_crew_position_11 booked_crew_position_12 
+
+</pre>
+</div></li>
+<li><div>
+<div>FUTURE ERROR: Illegal keyword dependency:
+The rule trip_rules_far.far_leg_max_flight_time_168h_acc_int is depending on the booked_crew_position_1 keyword.
+This may lead to undefined results. The keyword booked_crew_position_1 is only allowed to be
+used in APC reports.
+</div>
+<div class="detail">
+<div class="boxTitle" id="detail_id46551_x"><a href="javascript:HideView('detail_id46551_x','detail_id46551_o')">Details <img class="imageLink" style="width: 6px; height: 8px;" alt="" src="images/collapsed.gif"></a></div>
+<div class="initHide" id="detail_id46551_o">
+<div class="boxTitle"><a href="javascript:HideView('detail_id46551_o','detail_id46551_x')">Details <img class="imageLink" style="width: 8px; height: 6px;" alt="" src="images/expanded.gif"></a></div>
+<pre class="box">The dependency chain is:
+  booked_crew_position_1 -&gt; 
+  leg.is_assigned_to_crr -&gt; 
+  crew_pos.aug_need_in_pos -&gt; 
+  crew_pos.need_in_pos -&gt; 
+  crew_pos.total_needed_cockpit_crew -&gt; 
+  trip_rules_far.need_2crew -&gt; 
+  trip_rules_far.far_leg_max_flight_time_168h_acc_int
+</pre>
+</div>
+</div>
+<pre>
+Surpressing similar warning(s) for the keyword(s):
+booked_crew_position_2 booked_crew_position_3 booked_crew_position_4
+booked_crew_position_5 booked_crew_position_6 booked_crew_position_7
+booked_crew_position_8 booked_crew_position_9 booked_crew_position_10
+booked_crew_position_11 booked_crew_position_12 
+
+</pre>
+</div></li>
+<li><div>
+<div>FUTURE ERROR: Illegal keyword dependency:
+The rule trip_rules_far.far_duty_rest_168h_int is depending on the booked_crew_position_1 keyword.
+This may lead to undefined results. The keyword booked_crew_position_1 is only allowed to be
+used in APC reports.
+</div>
+<div class="detail">
+<div class="boxTitle" id="detail_id46571_x"><a href="javascript:HideView('detail_id46571_x','detail_id46571_o')">Details <img class="imageLink" style="width: 6px; height: 8px;" alt="" src="images/collapsed.gif"></a></div>
+<div class="initHide" id="detail_id46571_o">
+<div class="boxTitle"><a href="javascript:HideView('detail_id46571_o','detail_id46571_x')">Details <img class="imageLink" style="width: 8px; height: 6px;" alt="" src="images/expanded.gif"></a></div>
+<pre class="box">The dependency chain is:
+  booked_crew_position_1 -&gt; 
+  leg.is_assigned_to_crr -&gt; 
+  crew_pos.aug_need_in_pos -&gt; 
+  crew_pos.need_in_pos -&gt; 
+  crew_pos.total_needed_cockpit_crew -&gt; 
+  trip_rules_far.need_2crew -&gt; 
+  trip_rules_far.far_duty_rest_168h_int
+</pre>
+</div>
+</div>
+<pre>
+Surpressing similar warning(s) for the keyword(s):
+booked_crew_position_2 booked_crew_position_3 booked_crew_position_4
+booked_crew_position_5 booked_crew_position_6 booked_crew_position_7
+booked_crew_position_8 booked_crew_position_9 booked_crew_position_10
+booked_crew_position_11 booked_crew_position_12 
+
+</pre>
+</div></li>
+</ul>
+</body>
+</html>

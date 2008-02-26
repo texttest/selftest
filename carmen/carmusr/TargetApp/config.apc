@@ -1,0 +1,103 @@
+# This file is used by texttest.py, and specifies the binary, 
+# default checkout, users, and run-dependent text etc. for APC Pairing (APC) 
+
+# ---------------- Values required by the framework -------------------
+
+import_config_file:carmusr_generic
+
+# Specially-written cut-down version of the APC module, to not include all the development
+# tools
+config_module:apc_basic
+
+# Program that we're testing
+executable:${CARMSYS}/bin/APCbatch.sh
+
+# run-dependent text for each file produced
+# Please add text to remove from comparison files
+# separated from the file concerned by a semicolon
+[run_dependent_text]
+status:cpu_child
+status:Date
+status:library date
+status:cpu time
+status:Machine
+status:library version
+status:CARMSYS
+status:CARMUSR
+status:CARMTMP
+status:APC COST ANA
+status:Generation time
+status:Optimization time
+status:Coordination time
+status:DH post processing
+status:User
+status:APC program
+status:Network generation time
+status:Preprocessing time
+status:Costing time (sec)
+status:Conn fixing time (sec)
+status:OC to DH time (sec)
+status:DH route time (sec)
+status:Subplan
+status:Sub-plan
+optinfo:Total time
+[end]
+
+# Failure severity. Determines how differences are reported.
+# Only severity 1 differences will actually fail the test, the rest affect only the details column.
+# Defaults are output/errors 1, performance/memory 2, other 3. Crashes, internal errors, unrunnable tests are always 1
+[failure_severity]
+error:1
+script_errors:1
+solution:1
+status:1
+warnings:1
+performance:3
+[end]
+
+# Determines file to be used for information extraction, and presentation by tkdiff instead of diff
+log_file:status
+
+# Disable comparison of stdout and stderr
+discard_file:output
+discard_file:errors
+
+
+# Collect the solution, and some other stuff
+[collate_file]
+solution:APC_FILES/best_solution
+status:APC_FILES/status
+script_errors:APC_FILES/run_status_script_error
+warnings:APC_FILES/run_status_warning
+error:APC_FILES/run_status_error
+[end]
+
+# ---------------- Values required by the performance module -------------------
+
+# String to look for to check for memory
+[performance_logfile_extractor]
+memory:memory:
+
+# Performance machines/groups. Performance is only compared if these machines are used for test execution
+[performance_test_resource]
+cputime:model=Opteron250
+
+# How much variation in performance do we allow, in percentage of total runtime? 
+[performance_variation_%]
+default:9
+
+# How long (in seconds) must a test be before performance comparison is used?
+[performance_test_minimum]
+cputime:5
+memory:15
+[end]
+
+# The maximum amount of cpu time a test can take and be submitted to the short queue.
+maximum_cputime_for_short_queue:5
+
+# ---------------- Values required by the Carmen module -------------------
+
+# What needs to be built by the rule compiler. Enforcing GPC is really a cheat here
+# to get round the fact TextTest doesn't know how to combine two different ruleset builds...
+rave_name:apc
+rave_name:gpc
