@@ -1,5 +1,5 @@
 Enabling entry completion, using matching 1
-Top Window title is TextTest dynamic GUI : testing HELLO (started at 19Feb15:45:49)
+Top Window title is TextTest dynamic GUI : testing HELLO (started at 06Mar14:34:04)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -98,24 +98,24 @@ Tabs showing : Status
 
 Test progress:
 
-Changing GUI status to: 'TextTest started at 19Feb15:45:50.'
+Changing GUI status to: 'TextTest started at 06Mar14:34:05.'
 
 Waiting for application event 'completion of test actions' to occur.
 
 Test progress:
---> Not started : 1, colour 'white', font 'bold'
+--> Not started : 1, colour 'white', font 'bold'', visible=False
 
 Test progress:
---> Not started : 2, colour 'white', font 'bold'
+--> Not started : 2, colour 'white', font 'bold'', visible=False
 
 Test progress:
---> Not started : 3, colour 'white', font 'bold'
+--> Not started : 3, colour 'white', font 'bold'', visible=False
 
 Test progress:
---> Not started : 4, colour 'white', font 'bold'
+--> Not started : 4, colour 'white', font 'bold'', visible=False
 
 Test progress:
---> Not started : 5, colour 'white', font 'bold'
+--> Not started : 5, colour 'white', font 'bold'', visible=False
 
 Progress bar set to fraction 0.0, text '0 of 5 tests completed'
 
@@ -134,8 +134,8 @@ Test Tree description...
 Test column header set to 'Tests: 0/5 selected, 4 hidden'
 
 Test progress:
---> Not started : 4, colour 'white', font 'bold'
---> Running : 1, colour 'yellow', font 'bold'
+--> Not started : 4, colour 'white', font 'bold'', visible=False
+--> Running : 1, colour 'yellow', font 'bold'', visible=True
 
 Progress bar set to fraction 0.2, text '1 of 5 tests completed'
 
@@ -146,11 +146,11 @@ Hiding test : HELLO test-case simple_fail1
 Test column header set to 'Tests: 0/5 selected, all hidden'
 
 Test progress:
---> Not started : 4, colour 'white', font 'bold'
---> Running : 0, colour 'white', font ''
---> Failed : 1, colour 'red', font 'bold'
-----> Differences : 1, colour 'red', font 'bold'
-------> file3 different : 1, colour 'red', font 'bold'
+--> Not started : 4, colour 'white', font 'bold'', visible=False
+--> Running : 0, colour 'white', font ''', visible=True
+--> Failed : 1, colour 'red', font 'bold'', visible=False
+----> Differences : 1, colour 'red', font 'bold'', visible=False
+------> file3 different : 1, colour 'red', font 'bold'', visible=False
 
 Redrawing test simple_fail2 coloured yellow
 Making test visible : HELLO test-case simple_fail2
@@ -162,11 +162,11 @@ Test Tree description...
 Test column header set to 'Tests: 0/5 selected, 4 hidden'
 
 Test progress:
---> Not started : 3, colour 'white', font 'bold'
---> Running : 1, colour 'yellow', font 'bold'
---> Failed : 1, colour 'red', font 'bold'
-----> Differences : 1, colour 'red', font 'bold'
-------> file3 different : 1, colour 'red', font 'bold'
+--> Not started : 3, colour 'white', font 'bold'', visible=False
+--> Running : 1, colour 'yellow', font 'bold'', visible=True
+--> Failed : 1, colour 'red', font 'bold'', visible=False
+----> Differences : 1, colour 'red', font 'bold'', visible=False
+------> file3 different : 1, colour 'red', font 'bold'', visible=False
 
 Progress bar set to fraction 0.4, text '2 of 5 tests completed'
 
@@ -177,12 +177,12 @@ Hiding test : HELLO test-case simple_fail2
 Test column header set to 'Tests: 0/5 selected, all hidden'
 
 Test progress:
---> Not started : 3, colour 'white', font 'bold'
---> Running : 0, colour 'white', font ''
---> Failed : 2, colour 'red', font 'bold'
-----> Differences : 2, colour 'red', font 'bold'
-------> file3 different : 1, colour 'red', font 'bold'
-------> errors new : 1, colour 'red', font 'bold'
+--> Not started : 3, colour 'white', font 'bold'', visible=False
+--> Running : 0, colour 'white', font ''', visible=True
+--> Failed : 2, colour 'red', font 'bold'', visible=False
+----> Differences : 2, colour 'red', font 'bold'', visible=False
+------> file3 different : 1, colour 'red', font 'bold'', visible=False
+------> errors new : 1, colour 'red', font 'bold'', visible=False
 
 Redrawing test complex_fail1 coloured yellow
 Making test visible : HELLO test-case complex_fail1
@@ -194,12 +194,12 @@ Test Tree description...
 Test column header set to 'Tests: 0/5 selected, 4 hidden'
 
 Test progress:
---> Not started : 2, colour 'white', font 'bold'
---> Running : 1, colour 'yellow', font 'bold'
---> Failed : 2, colour 'red', font 'bold'
-----> Differences : 2, colour 'red', font 'bold'
-------> file3 different : 1, colour 'red', font 'bold'
-------> errors new : 1, colour 'red', font 'bold'
+--> Not started : 2, colour 'white', font 'bold'', visible=False
+--> Running : 1, colour 'yellow', font 'bold'', visible=True
+--> Failed : 2, colour 'red', font 'bold'', visible=False
+----> Differences : 2, colour 'red', font 'bold'', visible=False
+------> file3 different : 1, colour 'red', font 'bold'', visible=False
+------> errors new : 1, colour 'red', font 'bold'', visible=False
 
 Progress bar set to fraction 0.6, text '3 of 5 tests completed'
 
@@ -210,13 +210,13 @@ Hiding test : HELLO test-case complex_fail1
 Test column header set to 'Tests: 0/5 selected, all hidden'
 
 Test progress:
---> Not started : 2, colour 'white', font 'bold'
---> Running : 0, colour 'white', font ''
---> Failed : 3, colour 'red', font 'bold'
-----> Differences : 3, colour 'red', font 'bold'
-------> file3 different : 2, colour 'red', font 'bold'
-------> errors new : 2, colour 'red', font 'bold'
-------> output different : 1, colour 'red', font 'bold'
+--> Not started : 2, colour 'white', font 'bold'', visible=False
+--> Running : 0, colour 'white', font ''', visible=True
+--> Failed : 3, colour 'red', font 'bold'', visible=False
+----> Differences : 3, colour 'red', font 'bold'', visible=False
+------> file3 different : 2, colour 'red', font 'bold'', visible=False
+------> errors new : 2, colour 'red', font 'bold'', visible=False
+------> output different : 1, colour 'red', font 'bold'', visible=False
 
 Redrawing test complex_fail2 coloured yellow
 Making test visible : HELLO test-case complex_fail2
@@ -228,13 +228,13 @@ Test Tree description...
 Test column header set to 'Tests: 0/5 selected, 4 hidden'
 
 Test progress:
---> Not started : 1, colour 'white', font 'bold'
---> Running : 1, colour 'yellow', font 'bold'
---> Failed : 3, colour 'red', font 'bold'
-----> Differences : 3, colour 'red', font 'bold'
-------> file3 different : 2, colour 'red', font 'bold'
-------> errors new : 2, colour 'red', font 'bold'
-------> output different : 1, colour 'red', font 'bold'
+--> Not started : 1, colour 'white', font 'bold'', visible=False
+--> Running : 1, colour 'yellow', font 'bold'', visible=True
+--> Failed : 3, colour 'red', font 'bold'', visible=False
+----> Differences : 3, colour 'red', font 'bold'', visible=False
+------> file3 different : 2, colour 'red', font 'bold'', visible=False
+------> errors new : 2, colour 'red', font 'bold'', visible=False
+------> output different : 1, colour 'red', font 'bold'', visible=False
 
 Progress bar set to fraction 0.8, text '4 of 5 tests completed'
 
@@ -245,16 +245,16 @@ Hiding test : HELLO test-case complex_fail2
 Test column header set to 'Tests: 0/5 selected, all hidden'
 
 Test progress:
---> Not started : 1, colour 'white', font 'bold'
---> Running : 0, colour 'white', font ''
---> Failed : 4, colour 'red', font 'bold'
-----> Differences : 4, colour 'red', font 'bold'
-------> file3 different : 3, colour 'red', font 'bold'
-------> errors new : 3, colour 'red', font 'bold'
-------> output different : 2, colour 'red', font 'bold'
-------> file1 different : 1, colour 'red', font 'bold'
-------> file2 different : 1, colour 'red', font 'bold'
-------> file4 different : 1, colour 'red', font 'bold'
+--> Not started : 1, colour 'white', font 'bold'', visible=False
+--> Running : 0, colour 'white', font ''', visible=True
+--> Failed : 4, colour 'red', font 'bold'', visible=False
+----> Differences : 4, colour 'red', font 'bold'', visible=False
+------> file3 different : 3, colour 'red', font 'bold'', visible=False
+------> errors new : 3, colour 'red', font 'bold'', visible=False
+------> output different : 2, colour 'red', font 'bold'', visible=False
+------> file1 different : 1, colour 'red', font 'bold'', visible=False
+------> file2 different : 1, colour 'red', font 'bold'', visible=False
+------> file4 different : 1, colour 'red', font 'bold'', visible=False
 
 Redrawing test success coloured yellow
 Making test visible : HELLO test-suite suite
@@ -272,34 +272,34 @@ Test Tree description...
 Test column header set to 'Tests: 0/5 selected, 4 hidden'
 
 Test progress:
---> Not started : 0, colour 'white', font ''
---> Running : 1, colour 'yellow', font 'bold'
---> Failed : 4, colour 'red', font 'bold'
-----> Differences : 4, colour 'red', font 'bold'
-------> file3 different : 3, colour 'red', font 'bold'
-------> errors new : 3, colour 'red', font 'bold'
-------> output different : 2, colour 'red', font 'bold'
-------> file1 different : 1, colour 'red', font 'bold'
-------> file2 different : 1, colour 'red', font 'bold'
-------> file4 different : 1, colour 'red', font 'bold'
+--> Not started : 0, colour 'white', font ''', visible=False
+--> Running : 1, colour 'yellow', font 'bold'', visible=True
+--> Failed : 4, colour 'red', font 'bold'', visible=False
+----> Differences : 4, colour 'red', font 'bold'', visible=False
+------> file3 different : 3, colour 'red', font 'bold'', visible=False
+------> errors new : 3, colour 'red', font 'bold'', visible=False
+------> output different : 2, colour 'red', font 'bold'', visible=False
+------> file1 different : 1, colour 'red', font 'bold'', visible=False
+------> file2 different : 1, colour 'red', font 'bold'', visible=False
+------> file4 different : 1, colour 'red', font 'bold'', visible=False
 
-Progress bar set to fraction 1.0, text 'All 5 tests completed at 19Feb15:45:51'
+Progress bar set to fraction 1.0, text 'All 5 tests completed at 06Mar14:34:07'
 
 Redrawing test success coloured green
 Redrawing suite suite : second column 'All 1 tests successful' coloured green
 
 Test progress:
---> Not started : 0, colour 'white', font ''
---> Running : 0, colour 'white', font ''
---> Failed : 4, colour 'red', font 'bold'
-----> Differences : 4, colour 'red', font 'bold'
-------> file3 different : 3, colour 'red', font 'bold'
-------> errors new : 3, colour 'red', font 'bold'
-------> output different : 2, colour 'red', font 'bold'
-------> file1 different : 1, colour 'red', font 'bold'
-------> file2 different : 1, colour 'red', font 'bold'
-------> file4 different : 1, colour 'red', font 'bold'
---> Succeeded : 1, colour 'green', font 'bold'
+--> Not started : 0, colour 'white', font ''', visible=False
+--> Running : 0, colour 'white', font ''', visible=True
+--> Failed : 4, colour 'red', font 'bold'', visible=False
+----> Differences : 4, colour 'red', font 'bold'', visible=False
+------> file3 different : 3, colour 'red', font 'bold'', visible=False
+------> errors new : 3, colour 'red', font 'bold'', visible=False
+------> output different : 2, colour 'red', font 'bold'', visible=False
+------> file1 different : 1, colour 'red', font 'bold'', visible=False
+------> file2 different : 1, colour 'red', font 'bold'', visible=False
+------> file4 different : 1, colour 'red', font 'bold'', visible=False
+--> Succeeded : 1, colour 'green', font 'bold'', visible=True
 Expected application event 'completion of test actions' occurred, proceeding.
 
 'toggle progress report category' event created with arguments 'Failed'

@@ -1,5 +1,5 @@
 Enabling entry completion, using matching 1
-Top Window title is TextTest dynamic GUI : testing SLEEP (started at 19Feb15:45:42)
+Top Window title is TextTest dynamic GUI : testing SLEEP (started at 06Mar14:33:47)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -98,20 +98,20 @@ Tabs showing : Status
 
 Test progress:
 
-Changing GUI status to: 'TextTest started at 19Feb15:45:42.'
+Changing GUI status to: 'TextTest started at 06Mar14:33:47.'
 
 Waiting for application event 'all tests to be read' to occur.
 Waiting for application event 'test Basic to complete' to occur.
 Waiting for application event 'test Basic2 to start' to occur.
 
 Test progress:
---> Not started : 1, colour 'white', font 'bold'
+--> Not started : 1, colour 'white', font 'bold'', visible=False
 
 Test progress:
---> Not started : 2, colour 'white', font 'bold'
+--> Not started : 2, colour 'white', font 'bold'', visible=False
 
 Test progress:
---> Not started : 3, colour 'white', font 'bold'
+--> Not started : 3, colour 'white', font 'bold'', visible=False
 
 Progress bar set to fraction 0.0, text '0 of 3 tests completed'
 
@@ -123,8 +123,8 @@ Test column header set to 'Tests: 0/3 selected, all hidden'
 Redrawing test Basic coloured yellow
 
 Test progress:
---> Not started : 2, colour 'white', font 'bold'
---> Running : 1, colour 'yellow', font 'bold'
+--> Not started : 2, colour 'white', font 'bold'', visible=False
+--> Running : 1, colour 'yellow', font 'bold'', visible=False
 
 Progress bar set to fraction 0.333333333333, text '1 of 3 tests completed'
 
@@ -145,20 +145,20 @@ Test Tree description...
 Test column header set to 'Tests: 0/3 selected, 2 hidden'
 
 Test progress:
---> Not started : 2, colour 'white', font 'bold'
---> Running : 0, colour 'white', font ''
---> Failed : 1, colour 'red', font 'bold'
-----> Differences : 1, colour 'red', font 'bold'
-------> output different : 1, colour 'red', font 'bold'
+--> Not started : 2, colour 'white', font 'bold'', visible=False
+--> Running : 0, colour 'white', font ''', visible=False
+--> Failed : 1, colour 'red', font 'bold'', visible=True
+----> Differences : 1, colour 'red', font 'bold'', visible=True
+------> output different : 1, colour 'red', font 'bold'', visible=True
 
 Redrawing test Basic2 coloured yellow
 
 Test progress:
---> Not started : 1, colour 'white', font 'bold'
---> Running : 1, colour 'yellow', font 'bold'
---> Failed : 1, colour 'red', font 'bold'
-----> Differences : 1, colour 'red', font 'bold'
-------> output different : 1, colour 'red', font 'bold'
+--> Not started : 1, colour 'white', font 'bold'', visible=False
+--> Running : 1, colour 'yellow', font 'bold'', visible=False
+--> Failed : 1, colour 'red', font 'bold'', visible=True
+----> Differences : 1, colour 'red', font 'bold'', visible=True
+------> output different : 1, colour 'red', font 'bold'', visible=True
 Expected application event 'all tests to be read' occurred, proceeding.
 Expected application event 'test Basic to complete' occurred, proceeding.
 Expected application event 'test Basic2 to start' occurred, proceeding.
@@ -221,7 +221,7 @@ Changing GUI status to: 'Killed all running tests.'
 
 Changing GUI status to: 'Waiting for all tests to terminate ...'
 
-Progress bar set to fraction 1.0, text 'All 3 tests completed at 19Feb15:45:54'
+Progress bar set to fraction 1.0, text 'All 3 tests completed at 06Mar14:34:01'
 
 Redrawing test Basic3 coloured red
 (Second column 'KILLED' coloured red)

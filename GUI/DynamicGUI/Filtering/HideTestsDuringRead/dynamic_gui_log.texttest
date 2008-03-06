@@ -1,5 +1,5 @@
 Enabling entry completion, using matching 1
-Top Window title is TextTest dynamic GUI : testing HELLO (started at 19Feb15:45:50)
+Top Window title is TextTest dynamic GUI : testing HELLO (started at 06Mar14:34:06)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -98,12 +98,12 @@ Tabs showing : Status
 
 Test progress:
 
-Changing GUI status to: 'TextTest started at 19Feb15:45:50.'
+Changing GUI status to: 'TextTest started at 06Mar14:34:07.'
 
 Waiting for application event 'test t1 to be read' to occur.
 
 Test progress:
---> Not started : 1, colour 'white', font 'bold'
+--> Not started : 1, colour 'white', font 'bold'', visible=True
 Expected application event 'test t1 to be read' occurred, proceeding.
 
 'toggle progress report category' event created with arguments 'Not started'
@@ -116,7 +116,7 @@ Test column header set to 'Tests: 0/1 selected, all hidden'
 Waiting for application event 'completion of test actions' to occur.
 
 Test progress:
---> Not started : 2, colour 'white', font 'bold'
+--> Not started : 2, colour 'white', font 'bold'', visible=False
 
 Progress bar set to fraction 0.0, text '0 of 2 tests completed'
 
@@ -141,17 +141,17 @@ Test Tree description...
 Test column header set to 'Tests: 0/2 selected, 1 hidden'
 
 Test progress:
---> Not started : 1, colour 'white', font 'bold'
---> Running : 1, colour 'yellow', font 'bold'
+--> Not started : 1, colour 'white', font 'bold'', visible=False
+--> Running : 1, colour 'yellow', font 'bold'', visible=True
 
 Progress bar set to fraction 0.5, text '1 of 2 tests completed'
 
 Redrawing test t1 coloured green
 
 Test progress:
---> Not started : 1, colour 'white', font 'bold'
---> Running : 0, colour 'white', font ''
---> Succeeded : 1, colour 'green', font 'bold'
+--> Not started : 1, colour 'white', font 'bold'', visible=False
+--> Running : 0, colour 'white', font ''', visible=True
+--> Succeeded : 1, colour 'green', font 'bold'', visible=True
 
 Redrawing test t2 coloured yellow
 Making test visible : HELLO test-case t2
@@ -159,20 +159,20 @@ Making test visible : HELLO test-case t2
 Test column header set to 'Tests: 0/2 selected, none hidden'
 
 Test progress:
---> Not started : 0, colour 'white', font ''
---> Running : 1, colour 'yellow', font 'bold'
---> Succeeded : 1, colour 'green', font 'bold'
+--> Not started : 0, colour 'white', font ''', visible=False
+--> Running : 1, colour 'yellow', font 'bold'', visible=True
+--> Succeeded : 1, colour 'green', font 'bold'', visible=True
 
-Progress bar set to fraction 1.0, text 'All 2 tests completed at 19Feb15:45:54'
+Progress bar set to fraction 1.0, text 'All 2 tests completed at 06Mar14:34:11'
 
 Redrawing test t2 coloured green
 Redrawing suite suite : second column 'All 2 tests successful' coloured green
 Redrawing suite TargetApp : second column 'All 2 tests successful' coloured green
 
 Test progress:
---> Not started : 0, colour 'white', font ''
---> Running : 0, colour 'white', font ''
---> Succeeded : 2, colour 'green', font 'bold'
+--> Not started : 0, colour 'white', font ''', visible=False
+--> Running : 0, colour 'white', font ''', visible=True
+--> Succeeded : 2, colour 'green', font 'bold'', visible=True
 Expected application event 'completion of test actions' occurred, proceeding.
 
 'quit' event created with arguments ''
