@@ -166,7 +166,7 @@ def configureTests(testDir, sourceDir):
 
         for outputFile in findPathsMatching(testDir, "output"):
             transformFile(outputFile, replaceCmdToolsForWindows)
-        filesWithDisplay = findPathsMatching(testDir, "outputrep") + findPathsMatching(testDir, "outputdyn")
+        filesWithDisplay = findPathsMatching(testDir, "outputdyn") + findPathsMatching(testDir, "outputdyn2")
         for outputFile in filesWithDisplay:
             transformFile(outputFile, replaceDisplayForWindows)
         # Files come from UNIX, which don't get displayed properly by notepad (the default)
