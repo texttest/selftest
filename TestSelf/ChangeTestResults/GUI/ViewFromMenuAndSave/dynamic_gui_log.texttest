@@ -1,5 +1,5 @@
 Enabling entry completion, using matching 1
-Top Window title is TextTest dynamic GUI : testing HELLO (started at 19Mar15:27:37)
+Top Window title is TextTest dynamic GUI : testing HELLO (started at 19Mar15:25:59)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -98,7 +98,7 @@ Tabs showing : Status
 
 Test progress:
 
-Changing GUI status to: 'TextTest started at 19Mar15:27:38.'
+Changing GUI status to: 'TextTest started at 19Mar15:26:00.'
 
 Waiting for application event 'completion of test actions' to occur.
 
@@ -109,36 +109,37 @@ Progress bar set to fraction 0.0, text '0 of 1 tests completed'
 
 Test Tree description...
 -> TargetApp (hello)
-->   Test
+->   BothDiff
 
 Test column header set to 'Tests: 0/1 selected, none hidden'
 
-Redrawing test Test coloured yellow
+Redrawing test BothDiff coloured yellow
 
 Test progress:
 --> Not started : 0, colour 'white', font ''', visible=True
 --> Running : 1, colour 'yellow', font 'bold'', visible=True
 
-Progress bar set to fraction 1.0, text 'All 1 tests completed at 19Mar15:27:39'
+Progress bar set to fraction 1.0, text 'All 1 tests completed at 19Mar15:26:01'
 
-Redrawing test Test coloured red
-(Second column 'output different' coloured red)
+Redrawing test BothDiff coloured red
+(Second column 'errors different(+)' coloured red)
 
 Test progress:
 --> Not started : 0, colour 'white', font ''', visible=True
 --> Running : 0, colour 'white', font ''', visible=True
 --> Failed : 1, colour 'red', font 'bold'', visible=True
 ----> Differences : 1, colour 'red', font 'bold'', visible=True
+------> errors different : 1, colour 'red', font 'bold'', visible=True
 ------> output different : 1, colour 'red', font 'bold'', visible=True
-Only one test found, selecting Test
+Only one test found, selecting BothDiff
 
 Test column header set to 'Tests: All 1 selected, none hidden'
 Setting sensitivity of action 'S_ave Selection...' to True
 Setting sensitivity of action '_Mark' to True
 Setting sensitivity of action '_Save' to True
 
-Setting file-view title to 'Test'
-Adding file errors.hello under heading 'Comparison Files', coloured green
+Setting file-view title to 'BothDiff'
+Adding file errors.hello under heading 'Comparison Files', coloured red
 Adding file output.hello under heading 'Comparison Files', coloured red
 
 Viewing action with title '_Update Info' (greyed out)
@@ -149,10 +150,11 @@ Tabs showing :
 
 ---------- Text Info Window ----------
 Test FAILED :
+---------- Differences in errors ----------
+0a1
+> Error text
 ---------- Differences in output ----------
-1c1
-< Hello
----
+0a1
 > Hello World!
 --------------------------------------
 
@@ -161,13 +163,6 @@ Tabs showing : Test, Status
 Tabs showing : Text Info, Saving
 Expected application event 'completion of test actions' occurred, proceeding.
 
-'select file' event created with arguments 'output.hello'
-Starting graphical difference comparison using 'tkdiff':
--- original file : /carm/proj/texttest-tmp/geoff/texttest.19Mar152707/texttest/GUI/QuitConfirmation/MultipleDynamic/texttesttmp/dynamic_gui.19Mar152737/hello/Test/framework_tmp/output.helloorigcmp
---  current file : /carm/proj/texttest-tmp/geoff/texttest.19Mar152707/texttest/GUI/QuitConfirmation/MultipleDynamic/texttesttmp/dynamic_gui.19Mar152737/hello/Test/framework_tmp/output.hellocmp
-
-Changing GUI status to: 'Started "tkdiff output.helloorigcmp output.hellocmp" in background (from test Test).'
-
 'set file selection to' event created with arguments 'output.hello'
 Setting sensitivity of action 'View File' to True
 Setting sensitivity of action '_File Properties' to True
@@ -175,54 +170,57 @@ Setting sensitivity of action 'View Filtered File' to True
 Setting sensitivity of action 'View Raw Differences' to True
 Setting sensitivity of action 'View Differences' to True
 
-'view filtered file' event created with arguments ''
-Viewing file /carm/proj/texttest-tmp/geoff/texttest.19Mar152707/texttest/GUI/QuitConfirmation/MultipleDynamic/texttesttmp/dynamic_gui.19Mar152737/hello/Test/framework_tmp/output.hellocmp using 'emacs', refresh set to False
+'view file' event created with arguments ''
+Viewing file /carm/proj/texttest-tmp/geoff/texttest.19Mar152558/texttest/TestSelf/ChangeTestResults/GUI/ViewFromMenuAndSave/texttesttmp/dynamic_gui.19Mar152559/hello/BothDiff/output.hello using 'emacs', refresh set to False
 
-Changing GUI status to: 'Started "emacs output.hellocmp" in background (from test Test).'
+Changing GUI status to: 'Started "emacs output.hello" in background (from test BothDiff).'
 Setting sensitivity of action 'View File' to False
 Setting sensitivity of action '_File Properties' to False
 Setting sensitivity of action 'View Filtered File' to False
 Setting sensitivity of action 'View Raw Differences' to False
 Setting sensitivity of action 'View Differences' to False
 
-'quit' event created with arguments ''
-CONFIRMATION: 
-These processes are still running, and will be terminated when quitting: 
-
-   + PID 26611 : tkdiff output.helloorigcmp output.hellocmp (from test Test)
-   + PID 26613 : emacs output.hellocmp (from test Test)
-
-Quit anyway?
-
-'answer no to texttest confirmation' event created with arguments ''
-
-Changing GUI status to: 'Action cancelled.'
-
 Terminating process that views and edits test files...
 
+'save results for selected tests' event created with arguments ''
+
+Changing GUI status to: 'Saving 1 tests ...'
+Saving HELLO test-case BothDiff - version , exactness 1
+
+Changing GUI status to: 'Saving HELLO test-case BothDiff : errors, no version'
+
+Changing GUI status to: 'Saving HELLO test-case BothDiff : output, no version'
+
+Redrawing test BothDiff coloured green
+Redrawing suite TargetApp : second column 'All 1 tests successful' coloured green
+
+Test column header set to 'Tests: 0/1 selected, none hidden'
+Setting sensitivity of action 'S_ave Selection...' to False
+Setting sensitivity of action '_Mark' to False
+Setting sensitivity of action '_Save' to False
+
+Test progress:
+--> Not started : 0, colour 'white', font ''', visible=True
+--> Running : 0, colour 'white', font ''', visible=True
+--> Failed : 0, colour 'white', font ''', visible=True
+----> Differences : 0, colour 'white', font ''', visible=True
+------> errors different : 0, colour 'white', font ''', visible=True
+------> output different : 0, colour 'white', font ''', visible=True
+--> Succeeded : 1, colour 'green', font 'bold'', visible=True
+
+Tabs showing : Status
+
+Test progress:
+--> Not started : 0, colour 'white', font ''', visible=True
+--> Running : 0, colour 'white', font ''', visible=True
+--> Failed : 0, colour 'white', font ''', visible=True
+----> Differences : 0, colour 'white', font ''', visible=True
+------> errors different : 0, colour 'white', font ''', visible=True
+------> output different : 0, colour 'white', font ''', visible=True
+--> Succeeded : 1, colour 'green', font 'bold'', visible=True
+
+Changing GUI status to: 'Saved 1 tests.'
+
 'quit' event created with arguments ''
-CONFIRMATION: 
-These processes are still running, and will be terminated when quitting: 
-
-   + PID 26611 : tkdiff output.helloorigcmp output.hellocmp (from test Test)
-
-Quit anyway?
-
-'answer no to texttest confirmation' event created with arguments ''
-
-Changing GUI status to: 'Action cancelled.'
-
-'quit' event created with arguments ''
-CONFIRMATION: 
-These processes are still running, and will be terminated when quitting: 
-
-   + PID 26611 : tkdiff output.helloorigcmp output.hellocmp (from test Test)
-
-Quit anyway?
-
-'answer yes to texttest confirmation' event created with arguments ''
-
-Changing GUI status to: 'Terminating all external viewers ...'
-Killing 'tkdiff output.helloorigcmp output.hellocmp (from test Test)' interactive process
 
 Changing GUI status to: 'Removing all temporary files ...'
