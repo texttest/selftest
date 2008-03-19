@@ -8,9 +8,9 @@ Adding entry completion 'extra2' ...
 Adding entry completion 'output' ...
 Adding entry completion 'errors' ...
 Adding entry completion '1' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.14Mar083010/texttest/TestSelf/ExtraVersions/GUI/NoExtras/TargetApp/Diagnostics/log4py.conf' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.14Mar083010/texttest/TestSelf/ExtraVersions/GUI/NoExtras/TargetApp/Diagnostics' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.14Mar083010/texttest/TestSelf/ExtraVersions/GUI/NoExtras/texttesttmp' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.19Mar121258/texttest/TestSelf/ExtraVersions/GUI/NoExtras/TargetApp/Diagnostics/log4py.conf' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.19Mar121258/texttest/TestSelf/ExtraVersions/GUI/NoExtras/TargetApp/Diagnostics' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.19Mar121258/texttest/TestSelf/ExtraVersions/GUI/NoExtras/texttesttmp' ...
 Top Window title is TextTest static GUI : management of tests for HELLO
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
@@ -25,6 +25,7 @@ Viewing action with title '_File Properties' (greyed out)
 Viewing action with title '_Copy', stock id ''gtk-copy'', accelerator ''<control>c'' (greyed out)
 Viewing action with title '_Cut', stock id ''gtk-cut'', accelerator ''<control>x'' (greyed out)
 Viewing action with title '_Paste', stock id ''gtk-paste'', accelerator ''<control>v'' (greyed out)
+Viewing action with title 'Create _File', stock id ''gtk-new'' (greyed out)
 Viewing action with title 'R_eset', stock id ''gtk-revert-to-saved'', accelerator ''<control>e''
 Viewing action with title '_Rename...', stock id ''gtk-italic'', accelerator ''<control>m'' (greyed out)
 Viewing action with title 'Remove...', stock id ''gtk-delete'' (greyed out)
@@ -124,10 +125,11 @@ UI layout:
   </popup>
   <popup name="TestFilePopupMenu">
     <menuitem name="View File" action="View File"/>
+    <menuitem name="File Properties" action="File Properties"/>
+    <separator/>
+    <menuitem name="Create File" action="Create File"/>
     <separator/>
     <menuitem name="Remove..." action="Remove..."/>
-    <separator/>
-    <menuitem name="File Properties" action="File Properties"/>
     <separator/>
   </popup>
 </ui>
@@ -154,13 +156,13 @@ Viewing check button for switch 'Select in collapsed suites'
 Viewing radio button for switch 'Current selection', options Discard/Refine/Extend/Exclude'. Default value 0.
 Viewing action with title '_Select', stock id ''gtk-refresh'', accelerator ''<control>s''
 
-Changing GUI status to: 'TextTest started at 14Mar08:30:37.'
+Changing GUI status to: 'TextTest started at 19Mar12:13:28.'
 
 Waiting for application event 'all tests to be read' to occur.
 
 Changing GUI status to: 'Reading tests ...'
 
-Changing GUI status to: 'Reading tests completed at 14Mar08:30:37.'
+Changing GUI status to: 'Reading tests completed at 19Mar12:13:29.'
 
 Test Tree description...
 -> TargetApp (hello)
@@ -196,9 +198,9 @@ Tabs showing : Selection, Running, Config
 Changing GUI status to: 'Selected 2 tests.'
 
 'run selected tests' event created with arguments ''
-Starting dynamic run of TextTest with arguments ['-g', '-a', 'hello', '-cp', '1', '-xr', '/carm/proj/texttest-tmp/geoff/texttest.14Mar083010/texttest/TestSelf/ExtraVersions/GUI/NoExtras/TargetApp/Diagnostics/log4py.conf', '-xw', '/carm/proj/texttest-tmp/geoff/texttest.14Mar083010/texttest/TestSelf/ExtraVersions/GUI/NoExtras/TargetApp/Diagnostics', '-count', '2', '-f', '/carm/proj/texttest-tmp/geoff/texttest.14Mar083010/texttest/TestSelf/ExtraVersions/GUI/NoExtras/texttesttmp/static_gui.14Mar083037/dynamic_run1/gui_select', '-fd', '/carm/proj/texttest-tmp/geoff/texttest.14Mar083010/texttest/TestSelf/ExtraVersions/GUI/NoExtras/texttesttmp/static_gui.14Mar083037/temporary_filter_files']
+Starting dynamic run of TextTest with arguments ['-g', '-a', 'hello', '-cp', '1', '-xr', '/carm/proj/texttest-tmp/geoff/texttest.19Mar121258/texttest/TestSelf/ExtraVersions/GUI/NoExtras/TargetApp/Diagnostics/log4py.conf', '-xw', '/carm/proj/texttest-tmp/geoff/texttest.19Mar121258/texttest/TestSelf/ExtraVersions/GUI/NoExtras/TargetApp/Diagnostics', '-count', '2', '-f', '/carm/proj/texttest-tmp/geoff/texttest.19Mar121258/texttest/TestSelf/ExtraVersions/GUI/NoExtras/texttesttmp/static_gui.19Mar121328/dynamic_run1/gui_select', '-fd', '/carm/proj/texttest-tmp/geoff/texttest.19Mar121258/texttest/TestSelf/ExtraVersions/GUI/NoExtras/texttesttmp/static_gui.19Mar121328/temporary_filter_files']
 
-Changing GUI status to: 'Started 2 tests at 14Mar08:30:38.'
+Changing GUI status to: 'Started 2 tests at 19Mar12:13:29.'
 
 Waiting for application event 'dynamic GUI to be closed' to occur.
 Expected application event 'dynamic GUI to be closed' occurred, proceeding.

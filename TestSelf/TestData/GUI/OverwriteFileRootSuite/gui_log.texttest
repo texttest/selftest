@@ -8,9 +8,9 @@ Adding entry completion 'output' ...
 Adding entry completion 'errors' ...
 Adding entry completion 'catalogue' ...
 Adding entry completion '1' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.13Mar174423/texttest/TestSelf/TestData/GUI/OverwriteFileRootSuite/TargetApp/Diagnostics/log4py.conf' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.13Mar174423/texttest/TestSelf/TestData/GUI/OverwriteFileRootSuite/TargetApp/Diagnostics' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.13Mar174423/texttest/TestSelf/TestData/GUI/OverwriteFileRootSuite/texttesttmp' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.19Mar120057/texttest/TestSelf/TestData/GUI/OverwriteFileRootSuite/TargetApp/Diagnostics/log4py.conf' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.19Mar120057/texttest/TestSelf/TestData/GUI/OverwriteFileRootSuite/TargetApp/Diagnostics' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.19Mar120057/texttest/TestSelf/TestData/GUI/OverwriteFileRootSuite/texttesttmp' ...
 Top Window title is TextTest static GUI : management of tests for TDAT
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
@@ -25,6 +25,7 @@ Viewing action with title '_File Properties' (greyed out)
 Viewing action with title '_Copy', stock id ''gtk-copy'', accelerator ''<control>c'' (greyed out)
 Viewing action with title '_Cut', stock id ''gtk-cut'', accelerator ''<control>x'' (greyed out)
 Viewing action with title '_Paste', stock id ''gtk-paste'', accelerator ''<control>v'' (greyed out)
+Viewing action with title 'Create _File', stock id ''gtk-new'' (greyed out)
 Viewing action with title 'R_eset', stock id ''gtk-revert-to-saved'', accelerator ''<control>e''
 Viewing action with title '_Rename...', stock id ''gtk-italic'', accelerator ''<control>m'' (greyed out)
 Viewing action with title 'Remove...', stock id ''gtk-delete'' (greyed out)
@@ -124,10 +125,11 @@ UI layout:
   </popup>
   <popup name="TestFilePopupMenu">
     <menuitem name="View File" action="View File"/>
+    <menuitem name="File Properties" action="File Properties"/>
+    <separator/>
+    <menuitem name="Create File" action="Create File"/>
     <separator/>
     <menuitem name="Remove..." action="Remove..."/>
-    <separator/>
-    <menuitem name="File Properties" action="File Properties"/>
     <separator/>
   </popup>
 </ui>
@@ -154,13 +156,13 @@ Viewing check button for switch 'Select in collapsed suites'
 Viewing radio button for switch 'Current selection', options Discard/Refine/Extend/Exclude'. Default value 0.
 Viewing action with title '_Select', stock id ''gtk-refresh'', accelerator ''<control>s''
 
-Changing GUI status to: 'TextTest started at 13Mar17:44:45.'
+Changing GUI status to: 'TextTest started at 19Mar12:01:00.'
 
 Waiting for application event 'all tests to be read' to occur.
 
 Changing GUI status to: 'Reading tests ...'
 
-Changing GUI status to: 'Reading tests completed at 13Mar17:44:45.'
+Changing GUI status to: 'Reading tests completed at 19Mar12:01:01.'
 
 Test Tree description...
 -> TargetApp (tdat)
@@ -175,7 +177,6 @@ Setting sensitivity of action '_Sort Test Suite File' to True
 Setting sensitivity of action '_Reversed Sort Test Suite File' to True
 Setting sensitivity of action 'Add Test' to True
 Setting sensitivity of action 'Add Suite' to True
-Setting sensitivity of action 'Create _File' to True
 Setting sensitivity of action 'Report' to True
 
 Setting file-view title to 'TargetApp'
@@ -196,21 +197,24 @@ Root test suite
 
 Tabs showing : Test, Selection, Config
 
-Tabs showing : Text Info, Adding Test, Adding Suite, New File, Bugs
+Tabs showing : Text Info, Adding Test, Adding Suite, Bugs
 
-'view sub-options for test :' event created with arguments 'New File'
-
-Viewing notebook page for 'New File'
-Viewing entry for option 'Type of definition file to create' (set to 'environment') (drop-down list containing ['environment', 'readonlyfile', 'writeabledirs'])
-Viewing entry for option 'Version identifier to use'
-Viewing action with title 'Create _File', stock id ''gtk-new''
-
-'enter type of definition file to create =' event created with arguments 'readonlyfile'
+'set file selection to' event created with arguments 'readonlyfile'
+Setting sensitivity of action 'View File' to True
+Setting sensitivity of action '_File Properties' to True
+Setting sensitivity of action 'Remove...' to True
+Setting sensitivity of action 'Create _File' to True
 
 'create file' event created with arguments ''
 Adding entry completion 'readonlyfile' ...
+Adding entry completion 'writeabledirs' ...
+Viewing dialog with title 'New File'
+Viewing entry for option 'Type of definition file to create' (set to 'readonlyfile') (drop-down list containing ['readonlyfile', 'writeabledirs'])
+Viewing entry for option 'Version identifier to use'
+
+'press ok' event created with arguments ''
 ERROR: Unable to create file, no possible source found and target file already exists:
-/carm/proj/texttest-tmp/geoff/texttest.13Mar174423/texttest/TestSelf/TestData/GUI/OverwriteFileRootSuite/TargetApp/readonlyfile
+/carm/proj/texttest-tmp/geoff/texttest.19Mar120057/texttest/TestSelf/TestData/GUI/OverwriteFileRootSuite/TargetApp/readonlyfile
 
 'agree to texttest message' event created with arguments ''
 

@@ -5,9 +5,9 @@ Adding entry completion 'bugzilla' ...
 Adding entry completion '<default>' ...
 Adding entry completion 'output' ...
 Adding entry completion '1' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.18Mar145658/texttest/GUI/StaticGUI/Administration/RenameAndRunTest/TargetApp/Diagnostics/log4py.conf' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.18Mar145658/texttest/GUI/StaticGUI/Administration/RenameAndRunTest/TargetApp/Diagnostics' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.18Mar145658/texttest/GUI/StaticGUI/Administration/RenameAndRunTest/texttesttmp' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.19Mar121258/texttest/GUI/StaticGUI/Administration/RenameAndRunTest/TargetApp/Diagnostics/log4py.conf' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.19Mar121258/texttest/GUI/StaticGUI/Administration/RenameAndRunTest/TargetApp/Diagnostics' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.19Mar121258/texttest/GUI/StaticGUI/Administration/RenameAndRunTest/texttesttmp' ...
 Top Window title is TextTest static GUI : management of tests for DIP
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
@@ -22,6 +22,7 @@ Viewing action with title '_File Properties' (greyed out)
 Viewing action with title '_Copy', stock id ''gtk-copy'', accelerator ''<control>c'' (greyed out)
 Viewing action with title '_Cut', stock id ''gtk-cut'', accelerator ''<control>x'' (greyed out)
 Viewing action with title '_Paste', stock id ''gtk-paste'', accelerator ''<control>v'' (greyed out)
+Viewing action with title 'Create _File', stock id ''gtk-new'' (greyed out)
 Viewing action with title 'R_eset', stock id ''gtk-revert-to-saved'', accelerator ''<control>e''
 Viewing action with title '_Rename...', stock id ''gtk-italic'', accelerator ''<control>m'' (greyed out)
 Viewing action with title 'Remove...', stock id ''gtk-delete'' (greyed out)
@@ -121,10 +122,11 @@ UI layout:
   </popup>
   <popup name="TestFilePopupMenu">
     <menuitem name="View File" action="View File"/>
+    <menuitem name="File Properties" action="File Properties"/>
+    <separator/>
+    <menuitem name="Create File" action="Create File"/>
     <separator/>
     <menuitem name="Remove..." action="Remove..."/>
-    <separator/>
-    <menuitem name="File Properties" action="File Properties"/>
     <separator/>
   </popup>
 </ui>
@@ -151,13 +153,13 @@ Viewing check button for switch 'Select in collapsed suites'
 Viewing radio button for switch 'Current selection', options Discard/Refine/Extend/Exclude'. Default value 0.
 Viewing action with title '_Select', stock id ''gtk-refresh'', accelerator ''<control>s''
 
-Changing GUI status to: 'TextTest started at 18Mar14:57:00.'
+Changing GUI status to: 'TextTest started at 19Mar12:13:34.'
 
 Waiting for application event 'all tests to be read' to occur.
 
 Changing GUI status to: 'Reading tests ...'
 
-Changing GUI status to: 'Reading tests completed at 18Mar14:57:01.'
+Changing GUI status to: 'Reading tests completed at 19Mar12:13:35.'
 
 Test Tree description...
 -> TargetApp (dip)
@@ -191,7 +193,6 @@ Setting sensitivity of action 'Move up' to True
 Setting sensitivity of action 'Move down' to True
 Setting sensitivity of action 'Move to last' to True
 Setting sensitivity of action 'S_ave Selection...' to True
-Setting sensitivity of action 'Create _File' to True
 Setting sensitivity of action 'Report' to True
 Setting sensitivity of action '_Run' to True
 Setting sensitivity of action '_Run' to True
@@ -212,7 +213,7 @@ Description:
 
 Tabs showing : Test, Selection, Running, Config
 
-Tabs showing : Text Info, New File, Bugs
+Tabs showing : Text Info, Bugs
 
 'rename selected test' event created with arguments ''
 Adding entry completion 'S03' ...
@@ -225,7 +226,6 @@ Viewing entry for option '\nNew description'
 'enter new description =' event created with arguments 'Additional comment for renamed test'
 
 'press ok' event created with arguments ''
-Adding entry completion 'environment' ...
 Adding entry completion 'S03_copy' ...
 Adding entry completion 'Additional comment for renamed test' ...
 
@@ -255,14 +255,14 @@ Additional comment for renamed test
 Changing GUI status to: 'Renamed test S03 to S03_copy and changed description.'
 
 'select file' event created with arguments 'output.dip'
-Viewing file /carm/proj/texttest-tmp/geoff/texttest.18Mar145658/texttest/GUI/StaticGUI/Administration/RenameAndRunTest/TargetApp/Game9952/S03_copy/output.dip using 'emacs', refresh set to False
+Viewing file /carm/proj/texttest-tmp/geoff/texttest.19Mar121258/texttest/GUI/StaticGUI/Administration/RenameAndRunTest/TargetApp/Game9952/S03_copy/output.dip using 'emacs', refresh set to False
 
 Changing GUI status to: 'Started "emacs output.dip" in background (from test S03).'
 
 'run selected tests' event created with arguments ''
-Starting dynamic run of TextTest with arguments ['-g', '-a', 'dip', '-cp', '1', '-xr', '/carm/proj/texttest-tmp/geoff/texttest.18Mar145658/texttest/GUI/StaticGUI/Administration/RenameAndRunTest/TargetApp/Diagnostics/log4py.conf', '-xw', '/carm/proj/texttest-tmp/geoff/texttest.18Mar145658/texttest/GUI/StaticGUI/Administration/RenameAndRunTest/TargetApp/Diagnostics', '-count', '1', '-f', '/carm/proj/texttest-tmp/geoff/texttest.18Mar145658/texttest/GUI/StaticGUI/Administration/RenameAndRunTest/texttesttmp/static_gui.18Mar145700/dynamic_run1/gui_select', '-fd', '/carm/proj/texttest-tmp/geoff/texttest.18Mar145658/texttest/GUI/StaticGUI/Administration/RenameAndRunTest/texttesttmp/static_gui.18Mar145700/temporary_filter_files']
+Starting dynamic run of TextTest with arguments ['-g', '-a', 'dip', '-cp', '1', '-xr', '/carm/proj/texttest-tmp/geoff/texttest.19Mar121258/texttest/GUI/StaticGUI/Administration/RenameAndRunTest/TargetApp/Diagnostics/log4py.conf', '-xw', '/carm/proj/texttest-tmp/geoff/texttest.19Mar121258/texttest/GUI/StaticGUI/Administration/RenameAndRunTest/TargetApp/Diagnostics', '-count', '1', '-f', '/carm/proj/texttest-tmp/geoff/texttest.19Mar121258/texttest/GUI/StaticGUI/Administration/RenameAndRunTest/texttesttmp/static_gui.19Mar121334/dynamic_run1/gui_select', '-fd', '/carm/proj/texttest-tmp/geoff/texttest.19Mar121258/texttest/GUI/StaticGUI/Administration/RenameAndRunTest/texttesttmp/static_gui.19Mar121334/temporary_filter_files']
 
-Changing GUI status to: 'Started DIP test-case S03_copy at 18Mar14:57:02.'
+Changing GUI status to: 'Started DIP test-case S03_copy at 19Mar12:13:37.'
 
 Waiting for application event 'dynamic GUI to be closed' to occur.
 

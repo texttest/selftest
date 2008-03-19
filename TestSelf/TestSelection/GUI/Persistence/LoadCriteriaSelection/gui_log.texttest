@@ -6,9 +6,9 @@ Adding entry completion '<default>' ...
 Adding entry completion 'output' ...
 Adding entry completion 'errors' ...
 Adding entry completion '1' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.18Mar143304/texttest/TestSelf/TestSelection/GUI/Persistence/LoadCriteriaSelection/TargetApp/Diagnostics/log4py.conf' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.18Mar143304/texttest/TestSelf/TestSelection/GUI/Persistence/LoadCriteriaSelection/TargetApp/Diagnostics' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.18Mar143304/texttest/TestSelf/TestSelection/GUI/Persistence/LoadCriteriaSelection/texttesttmp' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.19Mar121258/texttest/TestSelf/TestSelection/GUI/Persistence/LoadCriteriaSelection/TargetApp/Diagnostics/log4py.conf' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.19Mar121258/texttest/TestSelf/TestSelection/GUI/Persistence/LoadCriteriaSelection/TargetApp/Diagnostics' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.19Mar121258/texttest/TestSelf/TestSelection/GUI/Persistence/LoadCriteriaSelection/texttesttmp' ...
 Top Window title is TextTest static GUI : management of tests for HELLO
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
@@ -23,6 +23,7 @@ Viewing action with title '_File Properties' (greyed out)
 Viewing action with title '_Copy', stock id ''gtk-copy'', accelerator ''<control>c'' (greyed out)
 Viewing action with title '_Cut', stock id ''gtk-cut'', accelerator ''<control>x'' (greyed out)
 Viewing action with title '_Paste', stock id ''gtk-paste'', accelerator ''<control>v'' (greyed out)
+Viewing action with title 'Create _File', stock id ''gtk-new'' (greyed out)
 Viewing action with title 'R_eset', stock id ''gtk-revert-to-saved'', accelerator ''<control>e''
 Viewing action with title '_Rename...', stock id ''gtk-italic'', accelerator ''<control>m'' (greyed out)
 Viewing action with title 'Remove...', stock id ''gtk-delete'' (greyed out)
@@ -122,10 +123,11 @@ UI layout:
   </popup>
   <popup name="TestFilePopupMenu">
     <menuitem name="View File" action="View File"/>
+    <menuitem name="File Properties" action="File Properties"/>
+    <separator/>
+    <menuitem name="Create File" action="Create File"/>
     <separator/>
     <menuitem name="Remove..." action="Remove..."/>
-    <separator/>
-    <menuitem name="File Properties" action="File Properties"/>
     <separator/>
   </popup>
 </ui>
@@ -152,13 +154,13 @@ Viewing check button for switch 'Select in collapsed suites'
 Viewing radio button for switch 'Current selection', options Discard/Refine/Extend/Exclude'. Default value 0.
 Viewing action with title '_Select', stock id ''gtk-refresh'', accelerator ''<control>s''
 
-Changing GUI status to: 'TextTest started at 18Mar14:33:06.'
+Changing GUI status to: 'TextTest started at 19Mar12:13:15.'
 
 Waiting for application event 'all tests to be read' to occur.
 
 Changing GUI status to: 'Reading tests ...'
 
-Changing GUI status to: 'Reading tests completed at 18Mar14:33:07.'
+Changing GUI status to: 'Reading tests completed at 19Mar12:13:15.'
 
 Test Tree description...
 -> TargetApp (hello)
@@ -197,7 +199,7 @@ Changing GUI status to: 'Selected 3 tests.'
 
 'save selected tests in file' event created with arguments ''
 Viewing dialog with title 'Save selected tests in file'
-Viewing filechooser for option 'enter filter-file name =' (choosing from directories [('temporary_filter_files', '/carm/proj/texttest-tmp/geoff/texttest.18Mar143304/texttest/TestSelf/TestSelection/GUI/Persistence/LoadCriteriaSelection/texttesttmp/static_gui.18Mar143305/temporary_filter_files'), ('filter_files', '/carm/proj/texttest-tmp/geoff/texttest.18Mar143304/texttest/TestSelf/TestSelection/GUI/Persistence/LoadCriteriaSelection/TargetApp/filter_files')])
+Viewing filechooser for option 'enter filter-file name =' (choosing from directories [('temporary_filter_files', '/carm/proj/texttest-tmp/geoff/texttest.19Mar121258/texttest/TestSelf/TestSelection/GUI/Persistence/LoadCriteriaSelection/texttesttmp/static_gui.19Mar121314/temporary_filter_files'), ('filter_files', '/carm/proj/texttest-tmp/geoff/texttest.19Mar121258/texttest/TestSelf/TestSelection/GUI/Persistence/LoadCriteriaSelection/TargetApp/filter_files')])
 Viewing radio button for switch 'Save', options _List of selected tests/C_riteria entered in the Selection tab
 (Might not match current selection, if it has been modified)'. Default value 0.
 
@@ -209,7 +211,7 @@ Viewing radio button for switch 'Save', options _List of selected tests/C_riteri
 
 'press save' event created with arguments ''
 
-Changing GUI status to: 'Saved 3 tests in file '/carm/proj/texttest-tmp/geoff/texttest.18Mar143304/texttest/TestSelf/TestSelection/GUI/Persistence/LoadCriteriaSelection/TargetApp/filter_files/etests'.'
+Changing GUI status to: 'Saved 3 tests in file '/carm/proj/texttest-tmp/geoff/texttest.19Mar121258/texttest/TestSelf/TestSelection/GUI/Persistence/LoadCriteriaSelection/TargetApp/filter_files/etests'.'
 
 'reset running options' event created with arguments ''
 
@@ -235,7 +237,6 @@ Test column header set to 'Tests: 2/4 selected'
 
 Test column header set to 'Tests: 1/4 selected'
 Setting sensitivity of action '_Rename...' to True
-Setting sensitivity of action 'Create _File' to True
 Setting sensitivity of action 'Report' to True
 
 Setting file-view title to 'One'
@@ -254,7 +255,7 @@ Description:
 
 Tabs showing : Test, Selection, Running, Config
 
-Tabs showing : Text Info, New File, Bugs
+Tabs showing : Text Info, Bugs
 
 'set test selection to' event created with arguments 'TargetApp (hello)'
 
@@ -282,19 +283,18 @@ Setting sensitivity of action 'Re_connect' to False
 
 Tabs showing : Test, Selection, Config
 
-Tabs showing : Text Info, Adding Test, Adding Suite, New File, Bugs
+Tabs showing : Text Info, Adding Test, Adding Suite, Bugs
 
 'load test selection from file' event created with arguments ''
 Viewing dialog with title 'Load test selection from file'
-Viewing filechooser for option 'select filter-file' (choosing from directories [('temporary_filter_files', '/carm/proj/texttest-tmp/geoff/texttest.18Mar143304/texttest/TestSelf/TestSelection/GUI/Persistence/LoadCriteriaSelection/texttesttmp/static_gui.18Mar143305/temporary_filter_files'), ('filter_files', '/carm/proj/texttest-tmp/geoff/texttest.18Mar143304/texttest/TestSelf/TestSelection/GUI/Persistence/LoadCriteriaSelection/TargetApp/filter_files')])
+Viewing filechooser for option 'select filter-file' (choosing from directories [('temporary_filter_files', '/carm/proj/texttest-tmp/geoff/texttest.19Mar121258/texttest/TestSelf/TestSelection/GUI/Persistence/LoadCriteriaSelection/texttesttmp/static_gui.19Mar121314/temporary_filter_files'), ('filter_files', '/carm/proj/texttest-tmp/geoff/texttest.19Mar121258/texttest/TestSelf/TestSelection/GUI/Persistence/LoadCriteriaSelection/TargetApp/filter_files')])
 
 'select filter-file' event created with arguments 'etests'
 
 'press load' event created with arguments ''
-Adding entry completion 'environment' ...
 
 Changing GUI status to: 'Loading test selection ...'
-Loaded 3 tests from /carm/proj/texttest-tmp/geoff/texttest.18Mar143304/texttest/TestSelf/TestSelection/GUI/Persistence/LoadCriteriaSelection/TargetApp/filter_files/etests
+Loaded 3 tests from /carm/proj/texttest-tmp/geoff/texttest.19Mar121258/texttest/TestSelf/TestSelection/GUI/Persistence/LoadCriteriaSelection/TargetApp/filter_files/etests
 Marking 3 tests as selected
 
 Test column header set to 'Tests: 3/4 selected'
@@ -311,7 +311,6 @@ Setting sensitivity of action '_Reversed Sort Test Suite File' to False
 Setting sensitivity of action 'S_ave Selection...' to True
 Setting sensitivity of action 'Add Test' to False
 Setting sensitivity of action 'Add Suite' to False
-Setting sensitivity of action 'Create _File' to False
 Setting sensitivity of action 'Report' to False
 Setting sensitivity of action '_Run' to True
 Setting sensitivity of action '_Run' to True
@@ -333,7 +332,7 @@ Viewing action with title '_Select', stock id ''gtk-refresh'', accelerator ''<co
 
 Tabs showing : Selection, Running, Config
 
-Changing GUI status to: 'Loaded test selection from file '/carm/proj/texttest-tmp/geoff/texttest.18Mar143304/texttest/TestSelf/TestSelection/GUI/Persistence/LoadCriteriaSelection/TargetApp/filter_files/etests'.'
+Changing GUI status to: 'Loaded test selection from file '/carm/proj/texttest-tmp/geoff/texttest.19Mar121258/texttest/TestSelf/TestSelection/GUI/Persistence/LoadCriteriaSelection/TargetApp/filter_files/etests'.'
 
 'quit' event created with arguments ''
 

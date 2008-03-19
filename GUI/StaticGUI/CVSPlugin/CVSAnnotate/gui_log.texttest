@@ -5,9 +5,9 @@ Adding entry completion 'bugzilla' ...
 Adding entry completion '<default>' ...
 Adding entry completion 'output' ...
 Adding entry completion '1' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.17Mar123523/texttest/GUI/StaticGUI/CVSPlugin/CVSAnnotate/TargetApp/Diagnostics/log4py.conf' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.17Mar123523/texttest/GUI/StaticGUI/CVSPlugin/CVSAnnotate/TargetApp/Diagnostics' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.17Mar123523/texttest/GUI/StaticGUI/CVSPlugin/CVSAnnotate/texttesttmp' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.19Mar121258/texttest/GUI/StaticGUI/CVSPlugin/CVSAnnotate/TargetApp/Diagnostics/log4py.conf' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.19Mar121258/texttest/GUI/StaticGUI/CVSPlugin/CVSAnnotate/TargetApp/Diagnostics' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.19Mar121258/texttest/GUI/StaticGUI/CVSPlugin/CVSAnnotate/texttesttmp' ...
 Top Window title is TextTest static GUI : management of tests for DIP
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
@@ -22,6 +22,7 @@ Viewing action with title '_File Properties' (greyed out)
 Viewing action with title '_Copy', stock id ''gtk-copy'', accelerator ''<control>c'' (greyed out)
 Viewing action with title '_Cut', stock id ''gtk-cut'', accelerator ''<control>x'' (greyed out)
 Viewing action with title '_Paste', stock id ''gtk-paste'', accelerator ''<control>v'' (greyed out)
+Viewing action with title 'Create _File', stock id ''gtk-new'' (greyed out)
 Viewing action with title 'R_eset', stock id ''gtk-revert-to-saved'', accelerator ''<control>e''
 Viewing action with title '_Rename...', stock id ''gtk-italic'', accelerator ''<control>m'' (greyed out)
 Viewing action with title 'Remove...', stock id ''gtk-delete'' (greyed out)
@@ -160,10 +161,11 @@ UI layout:
   </popup>
   <popup name="TestFilePopupMenu">
     <menuitem name="View File" action="View File"/>
+    <menuitem name="File Properties" action="File Properties"/>
+    <separator/>
+    <menuitem name="Create File" action="Create File"/>
     <separator/>
     <menuitem name="Remove..." action="Remove..."/>
-    <separator/>
-    <menuitem name="File Properties" action="File Properties"/>
     <separator/>
     <menu name="CVSmenu" action="CVSmenu">
       <menuitem name="Log" action="Log"/>
@@ -205,13 +207,13 @@ Viewing check button for switch 'Select in collapsed suites'
 Viewing radio button for switch 'Current selection', options Discard/Refine/Extend/Exclude'. Default value 0.
 Viewing action with title '_Select', stock id ''gtk-refresh'', accelerator ''<control>s''
 
-Changing GUI status to: 'TextTest started at 17Mar12:35:36.'
+Changing GUI status to: 'TextTest started at 19Mar12:13:39.'
 
 Waiting for application event 'all tests to be read' to occur.
 
 Changing GUI status to: 'Reading tests ...'
 
-Changing GUI status to: 'Reading tests completed at 17Mar12:35:37.'
+Changing GUI status to: 'Reading tests completed at 19Mar12:13:41.'
 
 Test Tree description...
 -> TargetApp (dip)
@@ -252,7 +254,6 @@ Setting sensitivity of action '_Status' to True
 Setting sensitivity of action 'Status Recursive' to True
 Setting sensitivity of action 'A_nnotate' to True
 Setting sensitivity of action 'Annotate Recursive' to True
-Setting sensitivity of action 'Create _File' to True
 Setting sensitivity of action 'Report' to True
 Setting sensitivity of action '_Run' to True
 Setting sensitivity of action '_Run' to True
@@ -273,10 +274,9 @@ S01.99's comment
 
 Tabs showing : Test, Selection, Running, Config
 
-Tabs showing : Text Info, New File, Bugs
+Tabs showing : Text Info, Bugs
 
 'cvs annotate for the selected files' event created with arguments ''
-Adding entry completion 'environment' ...
 
 Changing GUI status to: 'Getting annotations of Game9952/S01.99'
 Showing CVS tree view dialog 'cvs annotate for the selected files' with header
@@ -326,7 +326,7 @@ Setting sensitivity of action 'Re_connect' to False
 
 Tabs showing : Test, Selection, Config
 
-Tabs showing : Text Info, Adding Test, Adding Suite, New File, Bugs
+Tabs showing : Text Info, Adding Test, Adding Suite, Bugs
 
 'recursive cvs annotate for the selected files' event created with arguments ''
 

@@ -6,9 +6,9 @@ Adding entry completion '<default>' ...
 Adding entry completion 'output' ...
 Adding entry completion 'errors' ...
 Adding entry completion '1' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.13Mar171331/texttest/TestSelf/TestSelection/GUI/Creation/SelectUnknownTest/TargetApp/Diagnostics/log4py.conf' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.13Mar171331/texttest/TestSelf/TestSelection/GUI/Creation/SelectUnknownTest/TargetApp/Diagnostics' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.13Mar171331/texttest/TestSelf/TestSelection/GUI/Creation/SelectUnknownTest/texttesttmp' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.19Mar121258/texttest/TestSelf/TestSelection/GUI/Creation/SelectUnknownTest/TargetApp/Diagnostics/log4py.conf' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.19Mar121258/texttest/TestSelf/TestSelection/GUI/Creation/SelectUnknownTest/TargetApp/Diagnostics' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.19Mar121258/texttest/TestSelf/TestSelection/GUI/Creation/SelectUnknownTest/texttesttmp' ...
 Top Window title is TextTest static GUI : management of tests for HELLO
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
@@ -23,6 +23,7 @@ Viewing action with title '_File Properties' (greyed out)
 Viewing action with title '_Copy', stock id ''gtk-copy'', accelerator ''<control>c'' (greyed out)
 Viewing action with title '_Cut', stock id ''gtk-cut'', accelerator ''<control>x'' (greyed out)
 Viewing action with title '_Paste', stock id ''gtk-paste'', accelerator ''<control>v'' (greyed out)
+Viewing action with title 'Create _File', stock id ''gtk-new'' (greyed out)
 Viewing action with title 'R_eset', stock id ''gtk-revert-to-saved'', accelerator ''<control>e''
 Viewing action with title '_Rename...', stock id ''gtk-italic'', accelerator ''<control>m'' (greyed out)
 Viewing action with title 'Remove...', stock id ''gtk-delete'' (greyed out)
@@ -122,10 +123,11 @@ UI layout:
   </popup>
   <popup name="TestFilePopupMenu">
     <menuitem name="View File" action="View File"/>
+    <menuitem name="File Properties" action="File Properties"/>
+    <separator/>
+    <menuitem name="Create File" action="Create File"/>
     <separator/>
     <menuitem name="Remove..." action="Remove..."/>
-    <separator/>
-    <menuitem name="File Properties" action="File Properties"/>
     <separator/>
   </popup>
 </ui>
@@ -152,13 +154,13 @@ Viewing check button for switch 'Select in collapsed suites'
 Viewing radio button for switch 'Current selection', options Discard/Refine/Extend/Exclude'. Default value 0.
 Viewing action with title '_Select', stock id ''gtk-refresh'', accelerator ''<control>s''
 
-Changing GUI status to: 'TextTest started at 13Mar17:13:40.'
+Changing GUI status to: 'TextTest started at 19Mar12:13:14.'
 
 Waiting for application event 'all tests to be read' to occur.
 
 Changing GUI status to: 'Reading tests ...'
 
-Changing GUI status to: 'Reading tests completed at 13Mar17:13:40.'
+Changing GUI status to: 'Reading tests completed at 19Mar12:13:16.'
 
 Test Tree description...
 -> TargetApp (hello)
@@ -180,7 +182,6 @@ Setting sensitivity of action '_Cut' to True
 Setting sensitivity of action '_Rename...' to True
 Setting sensitivity of action 'Remove...' to True
 Setting sensitivity of action 'S_ave Selection...' to True
-Setting sensitivity of action 'Create _File' to True
 Setting sensitivity of action 'Report' to True
 Setting sensitivity of action '_Run' to True
 Setting sensitivity of action '_Run' to True
@@ -191,6 +192,5 @@ Tabs showing : Test, Selection, Running, Config
 Changing GUI status to: 'Selected HELLO test-case Two.'
 
 'quit' event created with arguments ''
-Adding entry completion 'environment' ...
 
 Changing GUI status to: 'Removing all temporary files ...'
