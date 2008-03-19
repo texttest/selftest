@@ -1,16 +1,14 @@
 Enabling entry completion, using matching 1
 Adding entry completion 'last in suite' ...
-Adding entry completion '<none>' ...
-Adding entry completion 'bugzilla' ...
 Adding entry completion '<default>' ...
 Adding entry completion 'extra1' ...
 Adding entry completion 'extra2' ...
 Adding entry completion 'output' ...
 Adding entry completion 'errors' ...
 Adding entry completion '1' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.19Mar121258/texttest/TestSelf/ExtraVersions/GUI/SortTestOnlyInExtra/TargetApp/Diagnostics/log4py.conf' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.19Mar121258/texttest/TestSelf/ExtraVersions/GUI/SortTestOnlyInExtra/TargetApp/Diagnostics' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.19Mar121258/texttest/TestSelf/ExtraVersions/GUI/SortTestOnlyInExtra/texttesttmp' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.19Mar165038/texttest/TestSelf/ExtraVersions/GUI/SortTestOnlyInExtra/TargetApp/Diagnostics/log4py.conf' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.19Mar165038/texttest/TestSelf/ExtraVersions/GUI/SortTestOnlyInExtra/TargetApp/Diagnostics' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.19Mar165038/texttest/TestSelf/ExtraVersions/GUI/SortTestOnlyInExtra/texttesttmp' ...
 Top Window title is TextTest static GUI : management of tests for HELLO
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
@@ -20,12 +18,13 @@ Viewing toggle action with title '_Toolbar'
 Viewing toggle action with title '_Shortcut bar'
 Viewing toggle action with title '_Status bar'
 Viewing action with title '_Quit', stock id ''gtk-quit'', accelerator ''<control>q''
-Viewing action with title 'View File' (greyed out)
-Viewing action with title '_File Properties' (greyed out)
+Viewing action with title 'View File', stock id ''gtk-open'' (greyed out)
+Viewing action with title '_File Properties', stock id ''gtk-properties'' (greyed out)
 Viewing action with title '_Copy', stock id ''gtk-copy'', accelerator ''<control>c'' (greyed out)
 Viewing action with title '_Cut', stock id ''gtk-cut'', accelerator ''<control>x'' (greyed out)
 Viewing action with title '_Paste', stock id ''gtk-paste'', accelerator ''<control>v'' (greyed out)
 Viewing action with title 'Create _File', stock id ''gtk-new'' (greyed out)
+Viewing action with title 'Enter Failure Information', stock id ''gtk-info'', accelerator ''<control>i'' (greyed out)
 Viewing action with title 'R_eset', stock id ''gtk-revert-to-saved'', accelerator ''<control>e''
 Viewing action with title '_Rename...', stock id ''gtk-italic'', accelerator ''<control>m'' (greyed out)
 Viewing action with title 'Remove...', stock id ''gtk-delete'' (greyed out)
@@ -63,6 +62,8 @@ UI layout:
       <menuitem name="Paste" action="Paste"/>
       <menuitem name="Remove..." action="Remove..."/>
       <menuitem name="Rename..." action="Rename..."/>
+      <separator/>
+      <menuitem name="Enter Failure Information" action="Enter Failure Information"/>
       <separator/>
       <menuitem name="Move to first" action="Move to first"/>
       <menuitem name="Move up" action="Move up"/>
@@ -112,6 +113,8 @@ UI layout:
     <menuitem name="Rename..." action="Rename..."/>
     <menuitem name="Remove..." action="Remove..."/>
     <separator/>
+    <menuitem name="Enter Failure Information" action="Enter Failure Information"/>
+    <separator/>
     <menu name="reordermenu" action="reordermenu">
       <menuitem name="Move to first" action="Move to first"/>
       <menuitem name="Move up" action="Move up"/>
@@ -156,13 +159,13 @@ Viewing check button for switch 'Select in collapsed suites'
 Viewing radio button for switch 'Current selection', options Discard/Refine/Extend/Exclude'. Default value 0.
 Viewing action with title '_Select', stock id ''gtk-refresh'', accelerator ''<control>s''
 
-Changing GUI status to: 'TextTest started at 19Mar12:13:26.'
+Changing GUI status to: 'TextTest started at 19Mar16:51:03.'
 
 Waiting for application event 'all tests to be read' to occur.
 
 Changing GUI status to: 'Reading tests ...'
 
-Changing GUI status to: 'Reading tests completed at 19Mar12:13:27.'
+Changing GUI status to: 'Reading tests completed at 19Mar16:51:03.'
 
 Test Tree description...
 -> TargetApp (hello)
@@ -175,11 +178,11 @@ Test column header set to 'Tests: 0/6 selected, 0/4 distinct'
 Expected application event 'all tests to be read' occurred, proceeding.
 
 'set test selection to' event created with arguments 'TargetApp (hello)'
+Setting sensitivity of action 'Enter Failure Information' to True
 Setting sensitivity of action '_Sort Test Suite File' to True
 Setting sensitivity of action '_Reversed Sort Test Suite File' to True
 Setting sensitivity of action 'Add Test' to True
 Setting sensitivity of action 'Add Suite' to True
-Setting sensitivity of action 'Report' to True
 
 Setting file-view title to 'TargetApp'
 Adding file testsuite.hello under heading 'Definition Files', coloured grey90
@@ -198,7 +201,7 @@ Root test suite
 
 Tabs showing : Test, Selection, Config
 
-Tabs showing : Text Info, Adding Test, Adding Suite, Bugs
+Tabs showing : Text Info, Adding Test, Adding Suite
 
 'sort testsuite file for the selected test suite in alphabetical order' event created with arguments ''
 

@@ -1,14 +1,12 @@
 Enabling entry completion, using matching 1
 Adding entry completion 'last in suite' ...
-Adding entry completion '<none>' ...
-Adding entry completion 'bugzilla' ...
 Adding entry completion '<default>' ...
 Adding entry completion 'output' ...
 Adding entry completion 'errors' ...
 Adding entry completion '1' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.19Mar121258/texttest/TestSelf/TestSelection/GUI/Creation/SomeTestsIncompatible/TargetApp/Diagnostics/log4py.conf' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.19Mar121258/texttest/TestSelf/TestSelection/GUI/Creation/SomeTestsIncompatible/TargetApp/Diagnostics' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.19Mar121258/texttest/TestSelf/TestSelection/GUI/Creation/SomeTestsIncompatible/texttesttmp' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.19Mar165038/texttest/TestSelf/TestSelection/GUI/Creation/SomeTestsIncompatible/TargetApp/Diagnostics/log4py.conf' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.19Mar165038/texttest/TestSelf/TestSelection/GUI/Creation/SomeTestsIncompatible/TargetApp/Diagnostics' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.19Mar165038/texttest/TestSelf/TestSelection/GUI/Creation/SomeTestsIncompatible/texttesttmp' ...
 Top Window title is TextTest static GUI : management of tests for HELLO
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
@@ -18,12 +16,13 @@ Viewing toggle action with title '_Toolbar'
 Viewing toggle action with title '_Shortcut bar'
 Viewing toggle action with title '_Status bar'
 Viewing action with title '_Quit', stock id ''gtk-quit'', accelerator ''<control>q''
-Viewing action with title 'View File' (greyed out)
-Viewing action with title '_File Properties' (greyed out)
+Viewing action with title 'View File', stock id ''gtk-open'' (greyed out)
+Viewing action with title '_File Properties', stock id ''gtk-properties'' (greyed out)
 Viewing action with title '_Copy', stock id ''gtk-copy'', accelerator ''<control>c'' (greyed out)
 Viewing action with title '_Cut', stock id ''gtk-cut'', accelerator ''<control>x'' (greyed out)
 Viewing action with title '_Paste', stock id ''gtk-paste'', accelerator ''<control>v'' (greyed out)
 Viewing action with title 'Create _File', stock id ''gtk-new'' (greyed out)
+Viewing action with title 'Enter Failure Information', stock id ''gtk-info'', accelerator ''<control>i'' (greyed out)
 Viewing action with title 'R_eset', stock id ''gtk-revert-to-saved'', accelerator ''<control>e''
 Viewing action with title '_Rename...', stock id ''gtk-italic'', accelerator ''<control>m'' (greyed out)
 Viewing action with title 'Remove...', stock id ''gtk-delete'' (greyed out)
@@ -61,6 +60,8 @@ UI layout:
       <menuitem name="Paste" action="Paste"/>
       <menuitem name="Remove..." action="Remove..."/>
       <menuitem name="Rename..." action="Rename..."/>
+      <separator/>
+      <menuitem name="Enter Failure Information" action="Enter Failure Information"/>
       <separator/>
       <menuitem name="Move to first" action="Move to first"/>
       <menuitem name="Move up" action="Move up"/>
@@ -110,6 +111,8 @@ UI layout:
     <menuitem name="Rename..." action="Rename..."/>
     <menuitem name="Remove..." action="Remove..."/>
     <separator/>
+    <menuitem name="Enter Failure Information" action="Enter Failure Information"/>
+    <separator/>
     <menu name="reordermenu" action="reordermenu">
       <menuitem name="Move to first" action="Move to first"/>
       <menuitem name="Move up" action="Move up"/>
@@ -154,13 +157,13 @@ Viewing check button for switch 'Select in collapsed suites'
 Viewing radio button for switch 'Current selection', options Discard/Refine/Extend/Exclude'. Default value 0.
 Viewing action with title '_Select', stock id ''gtk-refresh'', accelerator ''<control>s''
 
-Changing GUI status to: 'TextTest started at 19Mar12:13:14.'
+Changing GUI status to: 'TextTest started at 19Mar16:50:52.'
 
 Waiting for application event 'all tests to be read' to occur.
 
 Changing GUI status to: 'Reading tests ...'
 
-Changing GUI status to: 'Reading tests completed at 19Mar12:13:14.'
+Changing GUI status to: 'Reading tests completed at 19Mar16:50:52.'
 
 Test Tree description...
 -> TargetApp (hello)
@@ -208,9 +211,9 @@ Viewing action with title '_Run', stock id ''gtk-execute'', accelerator ''<contr
 
 'run selected tests' event created with arguments ''
 Adding entry completion 'small' ...
-Starting dynamic run of TextTest with arguments ['-g', '-a', 'hello', '-v', 'small', '-cp', '1', '-xr', '/carm/proj/texttest-tmp/geoff/texttest.19Mar121258/texttest/TestSelf/TestSelection/GUI/Creation/SomeTestsIncompatible/TargetApp/Diagnostics/log4py.conf', '-xw', '/carm/proj/texttest-tmp/geoff/texttest.19Mar121258/texttest/TestSelf/TestSelection/GUI/Creation/SomeTestsIncompatible/TargetApp/Diagnostics', '-count', '4', '-f', '/carm/proj/texttest-tmp/geoff/texttest.19Mar121258/texttest/TestSelf/TestSelection/GUI/Creation/SomeTestsIncompatible/texttesttmp/static_gui.19Mar121313/dynamic_run1/gui_select', '-fd', '/carm/proj/texttest-tmp/geoff/texttest.19Mar121258/texttest/TestSelf/TestSelection/GUI/Creation/SomeTestsIncompatible/texttesttmp/static_gui.19Mar121313/temporary_filter_files']
+Starting dynamic run of TextTest with arguments ['-g', '-a', 'hello', '-v', 'small', '-cp', '1', '-xr', '/carm/proj/texttest-tmp/geoff/texttest.19Mar165038/texttest/TestSelf/TestSelection/GUI/Creation/SomeTestsIncompatible/TargetApp/Diagnostics/log4py.conf', '-xw', '/carm/proj/texttest-tmp/geoff/texttest.19Mar165038/texttest/TestSelf/TestSelection/GUI/Creation/SomeTestsIncompatible/TargetApp/Diagnostics', '-count', '4', '-f', '/carm/proj/texttest-tmp/geoff/texttest.19Mar165038/texttest/TestSelf/TestSelection/GUI/Creation/SomeTestsIncompatible/texttesttmp/static_gui.19Mar165050/dynamic_run1/gui_select', '-fd', '/carm/proj/texttest-tmp/geoff/texttest.19Mar165038/texttest/TestSelf/TestSelection/GUI/Creation/SomeTestsIncompatible/texttesttmp/static_gui.19Mar165050/temporary_filter_files']
 
-Changing GUI status to: 'Started 4 tests at 19Mar12:13:15.'
+Changing GUI status to: 'Started 4 tests at 19Mar16:50:52.'
 
 Waiting for application event 'dynamic GUI to be closed' to occur.
 Expected application event 'dynamic GUI to be closed' occurred, proceeding.

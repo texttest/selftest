@@ -1,14 +1,12 @@
 Enabling entry completion, using matching 1
 Adding entry completion 'last in suite' ...
-Adding entry completion '<none>' ...
-Adding entry completion 'bugzilla' ...
 Adding entry completion '<default>' ...
 Adding entry completion 'output' ...
 Adding entry completion 'errors' ...
 Adding entry completion '1' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.19Mar121258/texttest/TestSelf/ReconnectTests/GUI/RecomputeFileFilters/TargetApp/Diagnostics/log4py.conf' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.19Mar121258/texttest/TestSelf/ReconnectTests/GUI/RecomputeFileFilters/TargetApp/Diagnostics' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.19Mar121258/texttest/TestSelf/ReconnectTests/GUI/RecomputeFileFilters/texttesttmp' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.19Mar165038/texttest/TestSelf/ReconnectTests/GUI/RecomputeFileFilters/TargetApp/Diagnostics/log4py.conf' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.19Mar165038/texttest/TestSelf/ReconnectTests/GUI/RecomputeFileFilters/TargetApp/Diagnostics' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.19Mar165038/texttest/TestSelf/ReconnectTests/GUI/RecomputeFileFilters/texttesttmp' ...
 Top Window title is TextTest static GUI : management of tests for HELLO
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
@@ -18,12 +16,13 @@ Viewing toggle action with title '_Toolbar'
 Viewing toggle action with title '_Shortcut bar'
 Viewing toggle action with title '_Status bar'
 Viewing action with title '_Quit', stock id ''gtk-quit'', accelerator ''<control>q''
-Viewing action with title 'View File' (greyed out)
-Viewing action with title '_File Properties' (greyed out)
+Viewing action with title 'View File', stock id ''gtk-open'' (greyed out)
+Viewing action with title '_File Properties', stock id ''gtk-properties'' (greyed out)
 Viewing action with title '_Copy', stock id ''gtk-copy'', accelerator ''<control>c'' (greyed out)
 Viewing action with title '_Cut', stock id ''gtk-cut'', accelerator ''<control>x'' (greyed out)
 Viewing action with title '_Paste', stock id ''gtk-paste'', accelerator ''<control>v'' (greyed out)
 Viewing action with title 'Create _File', stock id ''gtk-new'' (greyed out)
+Viewing action with title 'Enter Failure Information', stock id ''gtk-info'', accelerator ''<control>i'' (greyed out)
 Viewing action with title 'R_eset', stock id ''gtk-revert-to-saved'', accelerator ''<control>e''
 Viewing action with title '_Rename...', stock id ''gtk-italic'', accelerator ''<control>m'' (greyed out)
 Viewing action with title 'Remove...', stock id ''gtk-delete'' (greyed out)
@@ -61,6 +60,8 @@ UI layout:
       <menuitem name="Paste" action="Paste"/>
       <menuitem name="Remove..." action="Remove..."/>
       <menuitem name="Rename..." action="Rename..."/>
+      <separator/>
+      <menuitem name="Enter Failure Information" action="Enter Failure Information"/>
       <separator/>
       <menuitem name="Move to first" action="Move to first"/>
       <menuitem name="Move up" action="Move up"/>
@@ -110,6 +111,8 @@ UI layout:
     <menuitem name="Rename..." action="Rename..."/>
     <menuitem name="Remove..." action="Remove..."/>
     <separator/>
+    <menuitem name="Enter Failure Information" action="Enter Failure Information"/>
+    <separator/>
     <menu name="reordermenu" action="reordermenu">
       <menuitem name="Move to first" action="Move to first"/>
       <menuitem name="Move up" action="Move up"/>
@@ -154,13 +157,13 @@ Viewing check button for switch 'Select in collapsed suites'
 Viewing radio button for switch 'Current selection', options Discard/Refine/Extend/Exclude'. Default value 0.
 Viewing action with title '_Select', stock id ''gtk-refresh'', accelerator ''<control>s''
 
-Changing GUI status to: 'TextTest started at 19Mar12:13:22.'
+Changing GUI status to: 'TextTest started at 19Mar16:50:56.'
 
 Waiting for application event 'all tests to be read' to occur.
 
 Changing GUI status to: 'Reading tests ...'
 
-Changing GUI status to: 'Reading tests completed at 19Mar12:13:23.'
+Changing GUI status to: 'Reading tests completed at 19Mar16:50:56.'
 
 Test Tree description...
 -> TargetApp (hello)
@@ -174,10 +177,10 @@ Expected application event 'all tests to be read' occurred, proceeding.
 Test column header set to 'Tests: All 1 selected'
 Setting sensitivity of action '_Copy' to True
 Setting sensitivity of action '_Cut' to True
+Setting sensitivity of action 'Enter Failure Information' to True
 Setting sensitivity of action '_Rename...' to True
 Setting sensitivity of action 'Remove...' to True
 Setting sensitivity of action 'S_ave Selection...' to True
-Setting sensitivity of action 'Report' to True
 Setting sensitivity of action '_Run' to True
 Setting sensitivity of action '_Run' to True
 Setting sensitivity of action 'Re_connect' to True
@@ -198,7 +201,7 @@ Description:
 
 Tabs showing : Test, Selection, Running, Config
 
-Tabs showing : Text Info, Bugs
+Tabs showing : Text Info
 
 'view options for' event created with arguments 'Running'
 
@@ -214,7 +217,7 @@ Viewing action with title '_Run', stock id ''gtk-execute'', accelerator ''<contr
 
 Viewing notebook page for 'Reconnect'
 Viewing entry for option 'Version to reconnect to'
-Viewing entry for option 'Temporary result directory' (set to '/carm/proj/texttest-tmp/geoff/texttest.19Mar121258/texttest/TestSelf/ReconnectTests/GUI/RecomputeFileFilters/texttesttmp')
+Viewing entry for option 'Temporary result directory' (set to '/carm/proj/texttest-tmp/geoff/texttest.19Mar165038/texttest/TestSelf/ReconnectTests/GUI/RecomputeFileFilters/texttesttmp')
 Viewing radio button for switch 'Results', options Display as they were/Recompute from files'. Default value 0.
 Viewing action with title 'Re_connect', stock id ''gtk-connect'', accelerator ''<control><shift>r''
 
@@ -224,9 +227,9 @@ Viewing action with title 'Re_connect', stock id ''gtk-connect'', accelerator ''
 
 'reconnect to previously run tests' event created with arguments ''
 Adding entry completion 'reconnectrun' ...
-Starting reconnect run of TextTest with arguments ['-g', '-a', 'hello', '-v', 'reconnectrun', '-reconnect', '/carm/proj/texttest-tmp/geoff/texttest.19Mar121258/texttest/TestSelf/ReconnectTests/GUI/RecomputeFileFilters/texttesttmp', '-reconnfull', '-count', '1', '-f', '/carm/proj/texttest-tmp/geoff/texttest.19Mar121258/texttest/TestSelf/ReconnectTests/GUI/RecomputeFileFilters/texttesttmp/static_gui.19Mar121321/dynamic_run1/gui_select', '-fd', '/carm/proj/texttest-tmp/geoff/texttest.19Mar121258/texttest/TestSelf/ReconnectTests/GUI/RecomputeFileFilters/texttesttmp/static_gui.19Mar121321/temporary_filter_files']
+Starting reconnect run of TextTest with arguments ['-g', '-a', 'hello', '-v', 'reconnectrun', '-reconnect', '/carm/proj/texttest-tmp/geoff/texttest.19Mar165038/texttest/TestSelf/ReconnectTests/GUI/RecomputeFileFilters/texttesttmp', '-reconnfull', '-count', '1', '-f', '/carm/proj/texttest-tmp/geoff/texttest.19Mar165038/texttest/TestSelf/ReconnectTests/GUI/RecomputeFileFilters/texttesttmp/static_gui.19Mar165056/dynamic_run1/gui_select', '-fd', '/carm/proj/texttest-tmp/geoff/texttest.19Mar165038/texttest/TestSelf/ReconnectTests/GUI/RecomputeFileFilters/texttesttmp/static_gui.19Mar165056/temporary_filter_files']
 
-Changing GUI status to: 'Reconnected to HELLO test-case Test at 19Mar12:13:25.'
+Changing GUI status to: 'Reconnected to HELLO test-case Test at 19Mar16:50:57.'
 
 Waiting for application event 'reconnect GUI to be closed' to occur.
 Expected application event 'reconnect GUI to be closed' occurred, proceeding.
@@ -242,7 +245,7 @@ Adding file output.hello.reconnectrun under heading 'Standard Files', coloured g
 
 Pane separator positioned 46% from the top
 
-Tabs showing : Text Info, Bugs
+Tabs showing : Text Info
 
 ---------- Text Info Window ----------
 Description:
