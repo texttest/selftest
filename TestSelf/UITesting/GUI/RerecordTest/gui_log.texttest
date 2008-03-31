@@ -1,13 +1,12 @@
 Enabling entry completion, using matching 1
-Adding entry completion 'last in suite' ...
 Adding entry completion '<default>' ...
 Adding entry completion 'output' ...
 Adding entry completion 'errors' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.19Mar165038/texttest/TestSelf/UITesting/GUI/RerecordTest/TargetApp/source_with_pyc' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.19Mar180225/texttest/TestSelf/UITesting/GUI/RerecordTest/TargetApp/source_with_pyc' ...
 Adding entry completion '1' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.19Mar165038/texttest/TestSelf/UITesting/GUI/RerecordTest/TargetApp/Diagnostics/log4py.conf' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.19Mar165038/texttest/TestSelf/UITesting/GUI/RerecordTest/TargetApp/Diagnostics' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.19Mar165038/texttest/TestSelf/UITesting/GUI/RerecordTest/texttesttmp' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.19Mar180225/texttest/TestSelf/UITesting/GUI/RerecordTest/TargetApp/Diagnostics/log4py.conf' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.19Mar180225/texttest/TestSelf/UITesting/GUI/RerecordTest/TargetApp/Diagnostics' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.19Mar180225/texttest/TestSelf/UITesting/GUI/RerecordTest/texttesttmp' ...
 Top Window title is TextTest static GUI : management of tests for VideoStore
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
@@ -22,6 +21,8 @@ Viewing action with title '_File Properties', stock id ''gtk-properties'' (greye
 Viewing action with title '_Copy', stock id ''gtk-copy'', accelerator ''<control>c'' (greyed out)
 Viewing action with title '_Cut', stock id ''gtk-cut'', accelerator ''<control>x'' (greyed out)
 Viewing action with title '_Paste', stock id ''gtk-paste'', accelerator ''<control>v'' (greyed out)
+Viewing action with title 'Add Test', stock id ''gtk-add'', accelerator ''<control>n'' (greyed out)
+Viewing action with title 'Add Suite', stock id ''gtk-directory'' (greyed out)
 Viewing action with title 'Create _File', stock id ''gtk-new'' (greyed out)
 Viewing action with title 'Enter Failure Information', stock id ''gtk-info'', accelerator ''<control>i'' (greyed out)
 Viewing action with title 'R_eset', stock id ''gtk-revert-to-saved'', accelerator ''<control>e''
@@ -56,6 +57,9 @@ UI layout:
       <menuitem name="Quit" action="Quit"/>
     </menu>
     <menu name="editmenu" action="editmenu">
+      <menuitem name="Add Test" action="Add Test"/>
+      <menuitem name="Add Suite" action="Add Suite"/>
+      <separator/>
       <menuitem name="Cut" action="Cut"/>
       <menuitem name="Copy" action="Copy"/>
       <menuitem name="Paste" action="Paste"/>
@@ -106,6 +110,9 @@ UI layout:
     <separator/>
   </toolbar>
   <popup name="TestPopupMenu">
+    <menuitem name="Add Test" action="Add Test"/>
+    <menuitem name="Add Suite" action="Add Suite"/>
+    <separator/>
     <menuitem name="Cut" action="Cut"/>
     <menuitem name="Copy" action="Copy"/>
     <menuitem name="Paste" action="Paste"/>
@@ -158,13 +165,13 @@ Viewing check button for switch 'Select in collapsed suites'
 Viewing radio button for switch 'Current selection', options Discard/Refine/Extend/Exclude'. Default value 0.
 Viewing action with title '_Select', stock id ''gtk-refresh'', accelerator ''<control>s''
 
-Changing GUI status to: 'TextTest started at 19Mar16:51:09.'
+Changing GUI status to: 'TextTest started at 19Mar18:02:55.'
 
 Waiting for application event 'all tests to be read' to occur.
 
 Changing GUI status to: 'Reading tests ...'
 
-Changing GUI status to: 'Reading tests completed at 19Mar16:51:09.'
+Changing GUI status to: 'Reading tests completed at 19Mar18:02:56.'
 
 Test Tree description...
 -> TargetApp (gui)
@@ -217,18 +224,18 @@ Tabs showing : Text Info, Recording
 
 Viewing notebook page for 'Recording'
 Viewing entry for option 'Version to record'
-Viewing entry for option 'Checkout to use for recording' (set to '/carm/proj/texttest-tmp/geoff/texttest.19Mar165038/texttest/TestSelf/UITesting/GUI/RerecordTest/TargetApp/source_with_pyc')
+Viewing entry for option 'Checkout to use for recording' (set to '/carm/proj/texttest-tmp/geoff/texttest.19Mar180225/texttest/TestSelf/UITesting/GUI/RerecordTest/TargetApp/source_with_pyc')
 Viewing check button for switch 'Automatically replay test after recording it' (checked)
 Viewing radio button for switch '', options Auto-replay invisible/Auto-replay in dynamic GUI'. Default value 1.
 Viewing action with title 'Record _Use-Case', stock id ''gtk-media-record''
 
 'record use-case' event created with arguments ''
-Starting record run of TextTest with arguments ['-g', '-record', '-a', 'gui', '-c', '/carm/proj/texttest-tmp/geoff/texttest.19Mar165038/texttest/TestSelf/UITesting/GUI/RerecordTest/TargetApp/source_with_pyc', '-count', '1', '-f', '/carm/proj/texttest-tmp/geoff/texttest.19Mar165038/texttest/TestSelf/UITesting/GUI/RerecordTest/texttesttmp/static_gui.gui.19Mar165108/dynamic_run1/gui_select', '-fd', '/carm/proj/texttest-tmp/geoff/texttest.19Mar165038/texttest/TestSelf/UITesting/GUI/RerecordTest/texttesttmp/static_gui.gui.19Mar165108/temporary_filter_files']
+Starting record run of TextTest with arguments ['-g', '-record', '-a', 'gui', '-c', '/carm/proj/texttest-tmp/geoff/texttest.19Mar180225/texttest/TestSelf/UITesting/GUI/RerecordTest/TargetApp/source_with_pyc', '-count', '1', '-f', '/carm/proj/texttest-tmp/geoff/texttest.19Mar180225/texttest/TestSelf/UITesting/GUI/RerecordTest/texttesttmp/static_gui.gui.19Mar180255/dynamic_run1/gui_select', '-fd', '/carm/proj/texttest-tmp/geoff/texttest.19Mar180225/texttest/TestSelf/UITesting/GUI/RerecordTest/texttesttmp/static_gui.gui.19Mar180255/temporary_filter_files']
 
 Changing GUI status to: 'Started record session for VideoStore test-case AddMovie'
 
 Waiting for application event 'replay GUI to be closed' to occur.
-Starting replay run of TextTest with arguments ['-g', '-autoreplay', '-a', 'gui', '-c', '/carm/proj/texttest-tmp/geoff/texttest.19Mar165038/texttest/TestSelf/UITesting/GUI/RerecordTest/TargetApp/source_with_pyc', '-count', '1', '-f', '/carm/proj/texttest-tmp/geoff/texttest.19Mar165038/texttest/TestSelf/UITesting/GUI/RerecordTest/texttesttmp/static_gui.gui.19Mar165108/dynamic_run2/gui_select', '-fd', '/carm/proj/texttest-tmp/geoff/texttest.19Mar165038/texttest/TestSelf/UITesting/GUI/RerecordTest/texttesttmp/static_gui.gui.19Mar165108/temporary_filter_files']
+Starting replay run of TextTest with arguments ['-g', '-autoreplay', '-a', 'gui', '-c', '/carm/proj/texttest-tmp/geoff/texttest.19Mar180225/texttest/TestSelf/UITesting/GUI/RerecordTest/TargetApp/source_with_pyc', '-count', '1', '-f', '/carm/proj/texttest-tmp/geoff/texttest.19Mar180225/texttest/TestSelf/UITesting/GUI/RerecordTest/texttesttmp/static_gui.gui.19Mar180255/dynamic_run2/gui_select', '-fd', '/carm/proj/texttest-tmp/geoff/texttest.19Mar180225/texttest/TestSelf/UITesting/GUI/RerecordTest/texttesttmp/static_gui.gui.19Mar180255/temporary_filter_files']
 
 Changing GUI status to: 'Recording completed for VideoStore test-case AddMovie. Auto-replay of test now started. Don't submit the test manually!'
 

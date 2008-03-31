@@ -1,12 +1,11 @@
 Enabling entry completion, using matching 1
-Adding entry completion 'last in suite' ...
 Adding entry completion '<default>' ...
 Adding entry completion 'output' ...
 Adding entry completion 'errors' ...
 Adding entry completion '1' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.19Mar165038/texttest/TestSelf/ErrorHandling/GUI/RefreshAfterQuit/TargetApp/Diagnostics/log4py.conf' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.19Mar165038/texttest/TestSelf/ErrorHandling/GUI/RefreshAfterQuit/TargetApp/Diagnostics' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.19Mar165038/texttest/TestSelf/ErrorHandling/GUI/RefreshAfterQuit/texttesttmp' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.19Mar180225/texttest/TestSelf/ErrorHandling/GUI/RefreshAfterQuit/TargetApp/Diagnostics/log4py.conf' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.19Mar180225/texttest/TestSelf/ErrorHandling/GUI/RefreshAfterQuit/TargetApp/Diagnostics' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.19Mar180225/texttest/TestSelf/ErrorHandling/GUI/RefreshAfterQuit/texttesttmp' ...
 Top Window title is TextTest static GUI : management of tests for HELLO
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
@@ -21,6 +20,8 @@ Viewing action with title '_File Properties', stock id ''gtk-properties'' (greye
 Viewing action with title '_Copy', stock id ''gtk-copy'', accelerator ''<control>c'' (greyed out)
 Viewing action with title '_Cut', stock id ''gtk-cut'', accelerator ''<control>x'' (greyed out)
 Viewing action with title '_Paste', stock id ''gtk-paste'', accelerator ''<control>v'' (greyed out)
+Viewing action with title 'Add Test', stock id ''gtk-add'', accelerator ''<control>n'' (greyed out)
+Viewing action with title 'Add Suite', stock id ''gtk-directory'' (greyed out)
 Viewing action with title 'Create _File', stock id ''gtk-new'' (greyed out)
 Viewing action with title 'Enter Failure Information', stock id ''gtk-info'', accelerator ''<control>i'' (greyed out)
 Viewing action with title 'R_eset', stock id ''gtk-revert-to-saved'', accelerator ''<control>e''
@@ -55,6 +56,9 @@ UI layout:
       <menuitem name="Quit" action="Quit"/>
     </menu>
     <menu name="editmenu" action="editmenu">
+      <menuitem name="Add Test" action="Add Test"/>
+      <menuitem name="Add Suite" action="Add Suite"/>
+      <separator/>
       <menuitem name="Cut" action="Cut"/>
       <menuitem name="Copy" action="Copy"/>
       <menuitem name="Paste" action="Paste"/>
@@ -105,6 +109,9 @@ UI layout:
     <separator/>
   </toolbar>
   <popup name="TestPopupMenu">
+    <menuitem name="Add Test" action="Add Test"/>
+    <menuitem name="Add Suite" action="Add Suite"/>
+    <separator/>
     <menuitem name="Cut" action="Cut"/>
     <menuitem name="Copy" action="Copy"/>
     <menuitem name="Paste" action="Paste"/>
@@ -157,13 +164,13 @@ Viewing check button for switch 'Select in collapsed suites'
 Viewing radio button for switch 'Current selection', options Discard/Refine/Extend/Exclude'. Default value 0.
 Viewing action with title '_Select', stock id ''gtk-refresh'', accelerator ''<control>s''
 
-Changing GUI status to: 'TextTest started at 19Mar16:51:05.'
+Changing GUI status to: 'TextTest started at 19Mar18:02:51.'
 
 Waiting for application event 'all tests to be read' to occur.
 
 Changing GUI status to: 'Reading tests ...'
 
-Changing GUI status to: 'Reading tests completed at 19Mar16:51:05.'
+Changing GUI status to: 'Reading tests completed at 19Mar18:02:51.'
 
 Test Tree description...
 -> TargetApp (hello)
@@ -173,11 +180,11 @@ Test column header set to 'Tests: 0/1 selected'
 Expected application event 'all tests to be read' occurred, proceeding.
 
 'set test selection to' event created with arguments 'TargetApp (hello)'
+Setting sensitivity of action 'Add Test' to True
+Setting sensitivity of action 'Add Suite' to True
 Setting sensitivity of action 'Enter Failure Information' to True
 Setting sensitivity of action '_Sort Test Suite File' to True
 Setting sensitivity of action '_Reversed Sort Test Suite File' to True
-Setting sensitivity of action 'Add Test' to True
-Setting sensitivity of action 'Add Suite' to True
 
 Setting file-view title to 'TargetApp'
 Adding file testsuite.hello under heading 'Definition Files', coloured grey90
@@ -194,10 +201,10 @@ Root test suite
 
 Tabs showing : Test, Selection, Config
 
-Tabs showing : Text Info, Adding Test, Adding Suite
+Tabs showing : Text Info
 
 'select file' event created with arguments 'testsuite.hello'
-Viewing file /carm/proj/texttest-tmp/geoff/texttest.19Mar165038/texttest/TestSelf/ErrorHandling/GUI/RefreshAfterQuit/TargetApp/testsuite.hello using 'emacs', refresh set to True
+Viewing file /carm/proj/texttest-tmp/geoff/texttest.19Mar180225/texttest/TestSelf/ErrorHandling/GUI/RefreshAfterQuit/TargetApp/testsuite.hello using 'emacs', refresh set to True
 
 Changing GUI status to: 'Started "emacs testsuite.hello" in background (from test TargetApp).'
 

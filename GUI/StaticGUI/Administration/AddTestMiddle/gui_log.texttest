@@ -1,11 +1,10 @@
 Enabling entry completion, using matching 1
-Adding entry completion 'last in suite' ...
 Adding entry completion '<default>' ...
 Adding entry completion 'output' ...
 Adding entry completion '1' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.19Mar165038/texttest/GUI/StaticGUI/Administration/AddTestMiddle/TargetApp/Diagnostics/log4py.conf' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.19Mar165038/texttest/GUI/StaticGUI/Administration/AddTestMiddle/TargetApp/Diagnostics' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.19Mar165038/texttest/GUI/StaticGUI/Administration/AddTestMiddle/texttesttmp' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.19Mar180225/texttest/GUI/StaticGUI/Administration/AddTestMiddle/TargetApp/Diagnostics/log4py.conf' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.19Mar180225/texttest/GUI/StaticGUI/Administration/AddTestMiddle/TargetApp/Diagnostics' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.19Mar180225/texttest/GUI/StaticGUI/Administration/AddTestMiddle/texttesttmp' ...
 Top Window title is TextTest static GUI : management of tests for DIP
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
@@ -20,6 +19,8 @@ Viewing action with title '_File Properties', stock id ''gtk-properties'' (greye
 Viewing action with title '_Copy', stock id ''gtk-copy'', accelerator ''<control>c'' (greyed out)
 Viewing action with title '_Cut', stock id ''gtk-cut'', accelerator ''<control>x'' (greyed out)
 Viewing action with title '_Paste', stock id ''gtk-paste'', accelerator ''<control>v'' (greyed out)
+Viewing action with title 'Add Test', stock id ''gtk-add'', accelerator ''<control>n'' (greyed out)
+Viewing action with title 'Add Suite', stock id ''gtk-directory'' (greyed out)
 Viewing action with title 'Create _File', stock id ''gtk-new'' (greyed out)
 Viewing action with title 'Enter Failure Information', stock id ''gtk-info'', accelerator ''<control>i'' (greyed out)
 Viewing action with title 'R_eset', stock id ''gtk-revert-to-saved'', accelerator ''<control>e''
@@ -54,6 +55,9 @@ UI layout:
       <menuitem name="Quit" action="Quit"/>
     </menu>
     <menu name="editmenu" action="editmenu">
+      <menuitem name="Add Test" action="Add Test"/>
+      <menuitem name="Add Suite" action="Add Suite"/>
+      <separator/>
       <menuitem name="Cut" action="Cut"/>
       <menuitem name="Copy" action="Copy"/>
       <menuitem name="Paste" action="Paste"/>
@@ -104,6 +108,9 @@ UI layout:
     <separator/>
   </toolbar>
   <popup name="TestPopupMenu">
+    <menuitem name="Add Test" action="Add Test"/>
+    <menuitem name="Add Suite" action="Add Suite"/>
+    <separator/>
     <menuitem name="Cut" action="Cut"/>
     <menuitem name="Copy" action="Copy"/>
     <menuitem name="Paste" action="Paste"/>
@@ -156,13 +163,13 @@ Viewing check button for switch 'Select in collapsed suites'
 Viewing radio button for switch 'Current selection', options Discard/Refine/Extend/Exclude'. Default value 0.
 Viewing action with title '_Select', stock id ''gtk-refresh'', accelerator ''<control>s''
 
-Changing GUI status to: 'TextTest started at 19Mar16:51:09.'
+Changing GUI status to: 'TextTest started at 19Mar18:02:55.'
 
 Waiting for application event 'all tests to be read' to occur.
 
 Changing GUI status to: 'Reading tests ...'
 
-Changing GUI status to: 'Reading tests completed at 19Mar16:51:09.'
+Changing GUI status to: 'Reading tests completed at 19Mar18:02:56.'
 
 Test Tree description...
 -> TargetApp (dip)
@@ -185,14 +192,14 @@ Test column header set to 'Tests: 0/11 selected'
 Expected application event 'all tests to be read' occurred, proceeding.
 
 'set test selection to' event created with arguments 'Game9952'
+Setting sensitivity of action 'Add Test' to True
+Setting sensitivity of action 'Add Suite' to True
 Setting sensitivity of action 'Enter Failure Information' to True
 Setting sensitivity of action 'Remove...' to True
 Setting sensitivity of action '_Sort Test Suite File' to True
 Setting sensitivity of action '_Reversed Sort Test Suite File' to True
 Setting sensitivity of action 'Move down' to True
 Setting sensitivity of action 'Move to last' to True
-Setting sensitivity of action 'Add Test' to True
-Setting sensitivity of action 'Add Suite' to True
 
 Setting file-view title to 'Game9952'
 Adding file testsuite.dip under heading 'Definition Files', coloured grey90
@@ -210,16 +217,26 @@ Description:
 
 Tabs showing : Test, Selection, Config
 
-Tabs showing : Text Info, Adding Test, Adding Suite
+Tabs showing : Text Info
 
-'view sub-options for test :' event created with arguments 'Adding Test'
-
-Viewing notebook page for 'Adding Test'
+'add test' event created with arguments ''
+Adding entry completion 'last in suite' ...
+Adding entry completion 'first in suite' ...
+Adding entry completion 'after S01.99' ...
+Adding entry completion 'after A01' ...
+Adding entry completion 'after S02' ...
+Adding entry completion 'after A02' ...
+Adding entry completion 'after S03' ...
+Adding entry completion 'after A03' ...
+Adding entry completion 'after S04' ...
+Adding entry completion 'after A04' ...
+Adding entry completion 'after S05' ...
+Adding entry completion 'after A05' ...
+Viewing dialog with title 'Add Test'
 Viewing entry for option 'Test Name'
 Viewing entry for option 'Test Description'
-Viewing entry for option 'Place Test' (set to 'last in suite') (drop-down list containing ['first in suite', 'after S01.99', 'after A01', 'after S02', 'after A02', 'after S03', 'after A03', 'after S04', 'after A04', 'after S05', 'after A05', 'last in suite'])
+Viewing entry for option '\nPlace Test' (set to 'last in suite') (drop-down list containing ['first in suite', 'after S01.99', 'after A01', 'after S02', 'after A02', 'after S03', 'after A03', 'after S04', 'after A04', 'after S05', 'after A05', 'last in suite'])
 Viewing entry for option 'Command line options'
-Viewing action with title 'Add Test'
 
 'enter test name =' event created with arguments 'A05v2'
 
@@ -227,10 +244,9 @@ Viewing action with title 'Add Test'
 
 'enter place test =' event created with arguments 'after A03'
 
-'add test' event created with arguments ''
+'press ok' event created with arguments ''
 Adding entry completion 'A05v2' ...
 Adding entry completion 'Version 2' ...
-Adding entry completion 'after A03' ...
 Adding Test A05v2 under test suite DIP test-suite Game9952, placed after A03
 Not creating options file
 
@@ -259,28 +275,26 @@ Marking 1 tests as selected
 Test column header set to 'Tests: 1/12 selected'
 
 Setting file-view title to 'A05v2'
+
+---------- Text Info Window ----------
+Description:
+Version 2
+--------------------------------------
 Setting sensitivity of action '_Copy' to True
 Setting sensitivity of action '_Cut' to True
+Setting sensitivity of action 'Add Test' to False
+Setting sensitivity of action 'Add Suite' to False
 Setting sensitivity of action '_Rename...' to True
 Setting sensitivity of action '_Sort Test Suite File' to False
 Setting sensitivity of action '_Reversed Sort Test Suite File' to False
 Setting sensitivity of action 'Move to first' to True
 Setting sensitivity of action 'Move up' to True
 Setting sensitivity of action 'S_ave Selection...' to True
-Setting sensitivity of action 'Add Test' to False
-Setting sensitivity of action 'Add Suite' to False
 Setting sensitivity of action '_Run' to True
 Setting sensitivity of action '_Run' to True
 Setting sensitivity of action 'Re_connect' to True
 
 Tabs showing : Test, Selection, Running, Config
-
----------- Text Info Window ----------
-Description:
-Version 2
---------------------------------------
-
-Tabs showing : Text Info
 
 Changing GUI status to: 'Added new DIP test-case A05v2'
 

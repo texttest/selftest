@@ -1,5 +1,4 @@
 Enabling entry completion, using matching 1
-Adding entry completion 'last in suite' ...
 Adding entry completion '<default>' ...
 Adding entry completion 'status' ...
 Adding entry completion 'error' ...
@@ -10,12 +9,12 @@ Adding entry completion 'memory' ...
 Adding entry completion 'performance' ...
 Adding entry completion '/carm/proj/texttest/selftest_data/CARMUSRs/' ...
 Adding entry completion '1' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.19Mar165038/texttest.carmen/carmen/carmusr/ViewOpt/TargetApp/Diagnostics/log4py.conf' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.19Mar165038/texttest.carmen/carmen/carmusr/ViewOpt/TargetApp/Diagnostics' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.carmen.31Mar142444/texttest.carmen/carmen/carmusr/ViewOpt/TargetApp/Diagnostics/log4py.conf' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.carmen.31Mar142444/texttest.carmen/carmen/carmusr/ViewOpt/TargetApp/Diagnostics' ...
 Adding entry completion 'short' ...
 Adding entry completion 'normal' ...
 Adding entry completion 'idle' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.19Mar165038/texttest.carmen/carmen/carmusr/ViewOpt/texttesttmp' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.carmen.31Mar142444/texttest.carmen/carmen/carmusr/ViewOpt/texttesttmp' ...
 Adding entry completion '0:' ...
 Adding entry completion 'minutes' ...
 Adding entry completion 'hours' ...
@@ -53,6 +52,8 @@ Viewing action with title '_File Properties', stock id ''gtk-properties'' (greye
 Viewing action with title '_Copy', stock id ''gtk-copy'', accelerator ''<control>c'' (greyed out)
 Viewing action with title '_Cut', stock id ''gtk-cut'', accelerator ''<control>x'' (greyed out)
 Viewing action with title '_Paste', stock id ''gtk-paste'', accelerator ''<control>v'' (greyed out)
+Viewing action with title 'Add Test', stock id ''gtk-add'', accelerator ''<control>n'' (greyed out)
+Viewing action with title 'Add Suite', stock id ''gtk-directory'' (greyed out)
 Viewing action with title 'Create _File', stock id ''gtk-new'' (greyed out)
 Viewing action with title 'Enter Failure Information', stock id ''gtk-info'', accelerator ''<control>i'' (greyed out)
 Viewing action with title 'R_eset', stock id ''gtk-revert-to-saved'', accelerator ''<control>e''
@@ -97,6 +98,9 @@ UI layout:
       <menuitem name="Quit" action="Quit"/>
     </menu>
     <menu name="editmenu" action="editmenu">
+      <menuitem name="Add Test" action="Add Test"/>
+      <menuitem name="Add Suite" action="Add Suite"/>
+      <separator/>
       <menuitem name="Cut" action="Cut"/>
       <menuitem name="Copy" action="Copy"/>
       <menuitem name="Paste" action="Paste"/>
@@ -165,6 +169,9 @@ UI layout:
     <separator/>
   </toolbar>
   <popup name="TestPopupMenu">
+    <menuitem name="Add Test" action="Add Test"/>
+    <menuitem name="Add Suite" action="Add Suite"/>
+    <separator/>
     <menuitem name="Cut" action="Cut"/>
     <menuitem name="Copy" action="Copy"/>
     <menuitem name="Paste" action="Paste"/>
@@ -248,13 +255,13 @@ Viewing check button for switch 'Select in collapsed suites'
 Viewing radio button for switch 'Current selection', options Discard/Refine/Extend/Exclude'. Default value 0.
 Viewing action with title '_Select', stock id ''gtk-refresh'', accelerator ''<control>s''
 
-Changing GUI status to: 'TextTest started at 19Mar16:51:20.'
+Changing GUI status to: 'TextTest started at 31Mar14:24:49.'
 
 Waiting for application event 'all tests to be read' to occur.
 
 Changing GUI status to: 'Reading tests ...'
 
-Changing GUI status to: 'Reading tests completed at 19Mar16:51:20.'
+Changing GUI status to: 'Reading tests completed at 31Mar14:24:50.'
 
 Test Tree description...
 -> TargetApp (apc)
@@ -271,6 +278,8 @@ Test column header set to 'Tests: 0/3 selected'
 Expected application event 'all tests to be read' occurred, proceeding.
 
 'set test selection to' event created with arguments 'APC'
+Setting sensitivity of action 'Add Test' to True
+Setting sensitivity of action 'Add Suite' to True
 Setting sensitivity of action 'Enter Failure Information' to True
 Setting sensitivity of action 'Remove...' to True
 Setting sensitivity of action '_Sort Test Suite File' to True
@@ -284,8 +293,6 @@ Setting sensitivity of action '_Status' to True
 Setting sensitivity of action 'Status Recursive' to True
 Setting sensitivity of action 'A_nnotate' to True
 Setting sensitivity of action 'Annotate Recursive' to True
-Setting sensitivity of action 'Add Test' to True
-Setting sensitivity of action 'Add Suite' to True
 
 Setting file-view title to 'APC'
 Adding file environment.apc under heading 'Definition Files', coloured grey90
@@ -303,16 +310,19 @@ Description:
 
 Tabs showing : Test, Selection, Config
 
-Tabs showing : Text Info, Adding Test, Adding Suite
+Tabs showing : Text Info
 
-'view sub-options for test :' event created with arguments 'Adding Test'
-
-Viewing notebook page for 'Adding Test'
+'add test' event created with arguments ''
+Adding entry completion 'last in suite' ...
+Viewing dialog with title 'Add Test'
 Viewing entry for option 'Test Name'
 Viewing entry for option 'Test Description'
-Viewing entry for option 'Place Test' (set to 'last in suite') (drop-down list containing ['first in suite', 'after nwa_daily_far', 'last in suite'])
+Viewing entry for option '\nPlace Test' (set to 'last in suite') (drop-down list containing ['last in suite'])
 Viewing entry for option 'Subplan name'
-Viewing action with title 'Add Test'
+
+'press cancel' event created with arguments ''
+
+Changing GUI status to: 'Action cancelled.'
 
 'set test selection to' event created with arguments 'nwa_daily_far'
 
@@ -329,21 +339,6 @@ Adding file environment.apc under heading 'Definition Files', coloured grey90
 Adding file options.apc under heading 'Definition Files', coloured grey90
 Adding file rules under heading 'Subplan', coloured grey90
 Adding file default_ccp under heading 'Ruleset', coloured grey90
-Setting sensitivity of action '_Copy' to True
-Setting sensitivity of action '_Cut' to True
-Setting sensitivity of action '_Rename...' to True
-Setting sensitivity of action '_Sort Test Suite File' to False
-Setting sensitivity of action '_Reversed Sort Test Suite File' to False
-Setting sensitivity of action 'S_ave Selection...' to True
-Setting sensitivity of action 'Add Test' to False
-Setting sensitivity of action 'Add Suite' to False
-Setting sensitivity of action '_Run' to True
-Setting sensitivity of action '_Run' to True
-Setting sensitivity of action 'Re_connect' to True
-Setting sensitivity of action '_Plot Graph' to True
-Setting sensitivity of action 'Studio' to True
-
-Tabs showing : Test, Selection, Running, Config, Graph
 
 ---------- Text Info Window ----------
 Description:
@@ -356,6 +351,21 @@ Real time  :      61.4 sec.
 Expected memory consumption for the default version:
 Max Memory  :      54.4 MB
 --------------------------------------
+Setting sensitivity of action '_Copy' to True
+Setting sensitivity of action '_Cut' to True
+Setting sensitivity of action 'Add Test' to False
+Setting sensitivity of action 'Add Suite' to False
+Setting sensitivity of action '_Rename...' to True
+Setting sensitivity of action '_Sort Test Suite File' to False
+Setting sensitivity of action '_Reversed Sort Test Suite File' to False
+Setting sensitivity of action 'S_ave Selection...' to True
+Setting sensitivity of action '_Run' to True
+Setting sensitivity of action '_Run' to True
+Setting sensitivity of action 'Re_connect' to True
+Setting sensitivity of action '_Plot Graph' to True
+Setting sensitivity of action 'Studio' to True
+
+Tabs showing : Test, Selection, Running, Config, Graph
 
 Tabs showing : Text Info, Studio
 
