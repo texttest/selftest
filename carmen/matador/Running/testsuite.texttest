@@ -7,24 +7,6 @@ LinkLocalPlanEtab
 # Check we don't get the cost analysis for seniority cases
 SeniorityCostChange
 
-# Check that the raveparameters file works correctly
-RaveParameterOverride
-
-# Check that the raveparameters file can handle rules
-RaveRuleOverride
-
-# Check we can override both rules and parameters at the same time
-RaveRuleParamOverride
-
-# Check we can insert new sections if needed
-RaveNoSectionOverride
-
-# Test to make sure we can run 2 suites without crashing...
-RaveParam2Suites
-
-# Make sure that we prefer versioned
-RaveParamVersionPriority
-
 # Check that -lprof works, at least in some sense
 LprofRun
 
@@ -33,3 +15,6 @@ DifferentLocale
 
 # Check we can do recalculation and not come to grief
 RefreshOnSave
+
+# Once upon a time, running two apps locally crashed in rave parameters
+MultipleAppCrash
