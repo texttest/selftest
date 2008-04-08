@@ -34,6 +34,9 @@ CopyTestOnlyInExtra
 # What happens when we want to remove a test which is only in an extra version, and a test which is in a suite which also has tests only in extra versions?
 RemoveTestOnlyInExtra
 
+# Remove a file from a test shared by several versions, check warning is sensible
+RemoveFileFromShared
+
 # When starting editor the status message contains <default>, which pango doesn't like. Make sure we convert the message properly to avoid errors
 MarkupConversion
 
@@ -55,6 +58,3 @@ BlockExtrasExplicitly
 
 # Define an extra_version via a filter file and make sure we can select sensibly...
 ExtraFromFilterFile
-
-# Remove a file from a test shared by several versions, check warning is sensible
-RemoveFileFromShared
