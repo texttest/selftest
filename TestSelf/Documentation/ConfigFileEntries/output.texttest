@@ -1,4 +1,4 @@
-TextTest will write diagnostics in /nfs/vm/texttest-tmp/geoff/texttest.31Mar144634/texttest/TestSelf/Documentation/ConfigFileEntries based on file at /carm/proj/texttest-tmp/geoff/texttest.31Mar144634/texttest/TestSelf/Documentation/ConfigFileEntries/logging
+TextTest will write diagnostics in /nfs/vm/texttest-tmp/geoff/texttest.08Apr120829/texttest/TestSelf/Documentation/ConfigFileEntries based on file at /carm/proj/texttest-tmp/geoff/texttest.08Apr120829/texttest/TestSelf/Documentation/ConfigFileEntries/logging
 Using Application APPIDENTIFIER
 auto_collapse_successful|1|Automatically collapse successful test suites?
 auto_sort_test_suites|0|Automatically sort test suites in alphabetical order. 1 means sort in ascending order, -1 means sort in descending order.
@@ -8,7 +8,7 @@ batch_filter_file|{'default': []}|Generic filter for batch session, more flexibl
 batch_recipients|{'default': 'geoff@localhost'}|Addresses to send mail to in batch mode
 batch_result_repository|{'default': ''}|Directory to store historical batch results under
 batch_sender|{'default': 'geoff@localhost'}|Sender address to use sending mail in batch mode
-batch_timelimit|{'default': None}|Maximum length of test to include in batch mode runs
+batch_timelimit|{'default': ''}|Maximum length of test to include in batch mode runs
 batch_use_collection|{'default': 'false'}|Do we collect multiple mails into one in batch mode
 batch_use_version_filtering|{'default': 'false'}|Which batch sessions use the version filtering mechanism
 batch_version|{'default': []}|List of versions to allow if batch_use_version_filtering enabled
@@ -61,7 +61,7 @@ performance_logfile|{'default': []}|Which result file to collect performance dat
 performance_logfile_extractor|{}|What string to look for when collecting performance data
 performance_test_machine|{'default': [], 'memory': ['any']}|List of machines where performance can be collected
 performance_test_minimum|{'default': 0}|Minimum time/memory to be consumed before data is collected
-performance_variation_%|{'default': 10}|How much variation in performance is allowed
+performance_variation_%|{'default': 10.0}|How much variation in performance is allowed
 query_kill_processes|{'default': []}|Ask about whether to kill these processes when exiting texttest.
 run_dependent_text|{'default': []}|Mapping of patterns to remove from result files
 slow_motion_replay_speed|3|How long in seconds to wait between each GUI action
