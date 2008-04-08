@@ -1,14 +1,16 @@
-TextTest will write diagnostics in /carm/proj/texttest/geoff/texttesttmp/texttest.19Oct154401/texttest.sge/QueueSystems/ErrorHandling/SgeOnly/MasterResetsConnection based on file at /carm/proj/texttest/geoff/Testing/Automatic/texttest/logging.texttest
+TextTest will write diagnostics in /nfs/vm/texttest-tmp/geoff/texttest.sge.08Apr134837/texttest.sge/QueueSystems/ErrorHandling/SgeOnly/MasterResetsConnection based on file at /carm/proj/texttest-tmp/geoff/texttest.sge.08Apr134837/texttest.sge/QueueSystems/ErrorHandling/SgeOnly/MasterResetsConnection/logging
 Using Application SLEEP, version startdigit
 Running SLEEP.startdigit test-suite TargetApp
   Running SLEEP.startdigit test-case 123Test
 Comparing differences for SLEEP.startdigit test-suite TargetApp
   Comparing differences for SLEEP.startdigit test-case 123Test - SUCCESS! (on errors.sleep,output.sleep)
-Terminating as failed to read response from master process, got error :
+Terminating as failed to communicate with master process, got error :
 Traceback (most recent call last):
-  File "/users/geoff/work/master/Testing/TextTest/lib/queuesystem.py", line 70, in notifyLifecycleChange
+  File "/users/geoff/work/master/Testing/TextTest/lib/queuesystem.py", line 68, in notifyLifecycleChange
+    self.sendData(fullData)
+  File "/users/geoff/work/master/Testing/TextTest/lib/queuesystem.py", line 79, in sendData
     response = sendSocket.makefile().read()
-  File "/carm/proj/texttest/geoff/texttesttmp/texttest.19Oct154401/texttest.sge/QueueSystems/ErrorHandling/SgeOnly/MasterResetsConnection/interceptor.py", line 11, in makefile
+  File "/carm/proj/texttest-tmp/geoff/texttest.sge.08Apr134837/texttest.sge/QueueSystems/ErrorHandling/SgeOnly/MasterResetsConnection/interceptor.py", line 11, in makefile
     raise socket.error, "Connection reset by peer"
 error: Connection reset by peer
 
