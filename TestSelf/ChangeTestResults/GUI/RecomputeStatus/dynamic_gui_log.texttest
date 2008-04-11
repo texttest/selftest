@@ -1,5 +1,5 @@
 Enabling entry completion, using matching 1
-Top Window title is TextTest dynamic GUI : testing HELLO.2,HELLO.3,HELLO.4 (started at 19Mar16:50:54)
+Top Window title is TextTest dynamic GUI : testing HELLO.2,HELLO.3,HELLO.4 (started at 11Apr15:47:13)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -15,10 +15,10 @@ Viewing action with title 'View Raw Differences' (greyed out)
 Viewing action with title 'View Differences' (greyed out)
 Viewing action with title 'Follow File Progress' (greyed out)
 Viewing action with title 'S_ave Selection...', stock id ''gtk-save-as'', accelerator ''<control><shift>s'' (greyed out)
-Viewing action with title 'Recompute Status' (greyed out)
 Viewing action with title '_Kill', stock id ''gtk-stop'' (greyed out)
 Viewing action with title '_Mark', accelerator ''<control><shift>m'' (greyed out)
 Viewing action with title '_Unmark', accelerator ''<control><shift>u'' (greyed out)
+Viewing action with title 'Recompute Status', accelerator ''<control>r'' (greyed out)
 Viewing action with title '_Migration Notes'
 Viewing action with title 'Component _Versions'
 Viewing action with title '_About TextTest', stock id ''gtk-about''
@@ -98,7 +98,7 @@ Tabs showing : Status
 
 Test progress:
 
-Changing GUI status to: 'TextTest started at 19Mar16:50:54.'
+Changing GUI status to: 'TextTest started at 11Apr15:47:14.'
 
 Waiting for application event 'completion of test actions' to occur.
 
@@ -431,7 +431,7 @@ Test progress:
 ------> errors different : 5, colour 'red', font 'bold'', visible=True
 --> Succeeded : 3, colour 'green', font 'bold'', visible=True
 
-Progress bar set to fraction 1.0, text 'All 12 tests completed at 19Mar16:50:56'
+Progress bar set to fraction 1.0, text 'All 12 tests completed at 11Apr15:47:16'
 
 Redrawing test ErrDiff coloured red
 (Second column 'errors different' coloured red)
@@ -457,7 +457,6 @@ Setting file-view title to 'OutDiff'
 Adding file errors.hello under heading 'Comparison Files', coloured green
 Adding file output.hello under heading 'Comparison Files', coloured red
 
-Viewing action with title '_Update Info' (greyed out)
 
 Pane separator positioned 46% from the top
 
@@ -544,7 +543,7 @@ Setting file-view title to 'Sample from 11 tests'
 Test column header set to 'Tests: All 12 selected, none hidden'
 Setting file-view title to 'Sample from 12 tests'
 
-'recompute status of all tests' event created with arguments ''
+'recompute test status, including progress information if appropriate' event created with arguments ''
 Adding entry completion '<default> - 2,3,4' ...
 
 Changing GUI status to: 'Recomputing status of HELLO.3 test-case OutDiff ...'
@@ -667,7 +666,7 @@ Adding file output.hello under heading 'Comparison Files', coloured green
 Test succeeded
 --------------------------------------
 
-Changing GUI status to: 'Done recomputing status of HELLO.2 test-case ErrDiff.'
+Changing GUI status to: 'Recomputed status of 1 test.'
 
 Test column header set to 'Tests: 2/12 selected, none hidden'
 Setting file-view title to 'Sample from 2 tests'
@@ -705,7 +704,7 @@ Setting file-view title to 'Sample from 11 tests'
 Test column header set to 'Tests: All 12 selected, none hidden'
 Setting file-view title to 'Sample from 12 tests'
 
-'recompute status of all tests' event created with arguments ''
+'recompute test status, including progress information if appropriate' event created with arguments ''
 
 Changing GUI status to: 'Recomputing status of HELLO.2 test-case ErrDiff ...'
 
@@ -756,8 +755,8 @@ Redrawing suite TargetApp : second column 'All 4 tests successful' coloured gree
 
 Test column header set to 'Tests: 0/12 selected, none hidden'
 Setting sensitivity of action 'S_ave Selection...' to False
-Setting sensitivity of action 'Recompute Status' to False
 Setting sensitivity of action '_Mark' to False
+Setting sensitivity of action 'Recompute Status' to False
 Setting sensitivity of action '_Save' to False
 
 Test progress:
