@@ -56,6 +56,7 @@ extra_version:boost
 
 discard_file:output
 discard_file:errors
+discard_file:apclog
 
 # Collect the solution, and some other stuff
 [collate_file]
@@ -72,6 +73,9 @@ warnings:APC_FILES/run_status_warning
 solution:cat
 solution:uncompress -c
 [end]
+
+follow_program:less +F
+follow_file_by_default:1
 
 # ---------------- Values required by the Carmen module -------------------
 

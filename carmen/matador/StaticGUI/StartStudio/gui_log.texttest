@@ -6,12 +6,12 @@ Adding entry completion 'catalogue' ...
 Adding entry completion 'solution' ...
 Adding entry completion '/carm/proj/texttest/selftest_data' ...
 Adding entry completion '1' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.31Mar142908/texttest.carmen/carmen/matador/StaticGUI/StartStudio/TargetApp/Diagnostics/log4py.conf' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.31Mar142908/texttest.carmen/carmen/matador/StaticGUI/StartStudio/TargetApp/Diagnostics' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.carmen.14Apr110130/texttest.carmen/carmen/matador/StaticGUI/StartStudio/TargetApp/Diagnostics/log4py.conf' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.carmen.14Apr110130/texttest.carmen/carmen/matador/StaticGUI/StartStudio/TargetApp/Diagnostics' ...
 Adding entry completion 'short' ...
 Adding entry completion 'normal' ...
 Adding entry completion 'idle' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.31Mar142908/texttest.carmen/carmen/matador/StaticGUI/StartStudio/texttesttmp' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.carmen.14Apr110130/texttest.carmen/carmen/matador/StaticGUI/StartStudio/texttesttmp' ...
 Adding entry completion '0:' ...
 Adding entry completion 'minutes' ...
 Adding entry completion 'hours' ...
@@ -78,11 +78,13 @@ Viewing action with title 'Status Recursive' (greyed out)
 Viewing action with title 'A_nnotate' (greyed out)
 Viewing action with title 'Annotate Recursive' (greyed out)
 Viewing action with title 'Create Performance Report...' (greyed out)
+Viewing action with title 'Record _Use-Case', stock id ''gtk-media-record'' (greyed out)
 Viewing action with title '_Select', stock id ''gtk-refresh'', accelerator ''<control>s''
 Viewing action with title '_Run', stock id ''gtk-execute'', accelerator ''F5'' (greyed out)
 Viewing action with title '_Run', stock id ''gtk-execute'', accelerator ''F5'' (greyed out)
 Viewing action with title 'Re_connect', stock id ''gtk-connect'', accelerator ''<control><shift>r'' (greyed out)
 Viewing action with title '_Plot Graph', stock id ''gtk-clear'', accelerator ''<control>p'' (greyed out)
+Viewing action with title 'Start Studio' (greyed out)
 
 UI layout: 
 <ui>
@@ -126,11 +128,13 @@ UI layout:
       <menuitem name="Select" action="Select"/>
       <menuitem name="Run" action="Run"/>
       <menuitem name="Reconnect" action="Reconnect"/>
+      <menuitem name="Record Use-Case" action="Record Use-Case"/>
       <menuitem name="Reset" action="Reset"/>
     </menu>
     <placeholder name="ExtraMenus">
       <menu name="optimizationmenu" action="optimizationmenu">
         <menuitem name="Plot Graph" action="Plot Graph"/>
+        <menuitem name="Start Studio" action="Start Studio"/>
         <menuitem name="Create Performance Report..." action="Create Performance Report..."/>
       </menu>
       <menu name="CVSmenu" action="CVSmenu">
@@ -281,13 +285,13 @@ Viewing check button for switch 'Subproblems'
 Viewing check button for switch 'TargetJuniorImprove'
 Viewing action with title '_Select', stock id ''gtk-refresh'', accelerator ''<control>s''
 
-Changing GUI status to: 'TextTest started at 31Mar14:31:32.'
+Changing GUI status to: 'TextTest started at 14Apr11:01:33.'
 
 Waiting for application event 'all tests to be read' to occur.
 
 Changing GUI status to: 'Reading tests ...'
 
-Changing GUI status to: 'Reading tests completed at 31Mar14:31:33.'
+Changing GUI status to: 'Reading tests completed at 14Apr11:01:33.'
 
 Test Tree description...
 -> TargetApp (cas)
@@ -336,7 +340,7 @@ Setting sensitivity of action '_Run' to True
 Setting sensitivity of action '_Run' to True
 Setting sensitivity of action 'Re_connect' to True
 Setting sensitivity of action '_Plot Graph' to True
-Setting sensitivity of action 'Studio' to True
+Setting sensitivity of action 'Start Studio' to True
 
 Setting file-view title to 'generate__in__subperiod'
 Adding file catalogue.cas under heading 'Standard Files', coloured grey90
@@ -352,7 +356,6 @@ Adding file options.cas.badrule under heading 'Definition Files', coloured grey9
 Adding file secret_parameters.etab under heading 'Data Files', coloured grey90
 Adding file rules under heading 'Subplan', coloured grey90
 Adding file Ruleset_8 under heading 'Ruleset', coloured grey90
-
 
 Pane separator positioned 46% from the top
 
@@ -375,7 +378,7 @@ Tabs showing : Text Info, Studio
 
 Viewing notebook page for 'Studio'
 Viewing entry for option 'Studio CARMSYS to use' (set to '/carm/proj/texttest/selftest_data/CARMSYS')
-Viewing action with title 'Studio'
+Viewing action with title 'Start Studio'
 
 'start studio' event created with arguments ''
 Adding entry completion '/carm/proj/texttest/selftest_data/CARMSYS' ...

@@ -3,9 +3,9 @@ Adding entry completion '<default>' ...
 Adding entry completion 'output' ...
 Adding entry completion 'errors' ...
 Adding entry completion '1' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.11Apr143231/texttest/TestSelf/ReconnectTests/GUI/RecomputeFileFilters/TargetApp/Diagnostics/log4py.conf' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.11Apr143231/texttest/TestSelf/ReconnectTests/GUI/RecomputeFileFilters/TargetApp/Diagnostics' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.11Apr143231/texttest/TestSelf/ReconnectTests/GUI/RecomputeFileFilters/texttesttmp' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.14Apr110327/texttest/TestSelf/ReconnectTests/GUI/RecomputeFileFilters/TargetApp/Diagnostics/log4py.conf' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.14Apr110327/texttest/TestSelf/ReconnectTests/GUI/RecomputeFileFilters/TargetApp/Diagnostics' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.14Apr110327/texttest/TestSelf/ReconnectTests/GUI/RecomputeFileFilters/texttesttmp' ...
 Top Window title is TextTest static GUI : management of tests for HELLO
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
@@ -38,6 +38,7 @@ Viewing action with title 'S_ave Selection...', stock id ''gtk-save-as'', accele
 Viewing action with title '_Migration Notes'
 Viewing action with title 'Component _Versions'
 Viewing action with title '_About TextTest', stock id ''gtk-about''
+Viewing action with title 'Record _Use-Case', stock id ''gtk-media-record'' (greyed out)
 Viewing action with title '_Select', stock id ''gtk-refresh'', accelerator ''<control>s''
 Viewing action with title '_Run', stock id ''gtk-execute'', accelerator ''F5'' (greyed out)
 Viewing action with title '_Run', stock id ''gtk-execute'', accelerator ''F5'' (greyed out)
@@ -85,6 +86,7 @@ UI layout:
       <menuitem name="Select" action="Select"/>
       <menuitem name="Run" action="Run"/>
       <menuitem name="Reconnect" action="Reconnect"/>
+      <menuitem name="Record Use-Case" action="Record Use-Case"/>
       <menuitem name="Reset" action="Reset"/>
     </menu>
     <placeholder name="ExtraMenus">
@@ -164,13 +166,13 @@ Viewing check button for switch 'Select in collapsed suites'
 Viewing radio button for switch 'Current selection', options Discard/Refine/Extend/Exclude'. Default value 0.
 Viewing action with title '_Select', stock id ''gtk-refresh'', accelerator ''<control>s''
 
-Changing GUI status to: 'TextTest started at 11Apr14:32:44.'
+Changing GUI status to: 'TextTest started at 14Apr11:03:45.'
 
 Waiting for application event 'all tests to be read' to occur.
 
 Changing GUI status to: 'Reading tests ...'
 
-Changing GUI status to: 'Reading tests completed at 11Apr14:32:45.'
+Changing GUI status to: 'Reading tests completed at 14Apr11:03:45.'
 
 Test Tree description...
 -> TargetApp (hello)
@@ -195,7 +197,6 @@ Setting sensitivity of action 'Re_connect' to True
 Setting file-view title to 'Test'
 Adding file errors.hello under heading 'Standard Files', coloured grey90
 Adding file output.hello under heading 'Standard Files', coloured grey90
-
 
 Pane separator positioned 46% from the top
 
@@ -224,7 +225,7 @@ Viewing action with title '_Run', stock id ''gtk-execute'', accelerator ''F5''
 
 Viewing notebook page for 'Reconnect'
 Viewing entry for option 'Version to reconnect to'
-Viewing entry for option 'Temporary result directory' (set to '/carm/proj/texttest-tmp/geoff/texttest.11Apr143231/texttest/TestSelf/ReconnectTests/GUI/RecomputeFileFilters/texttesttmp')
+Viewing entry for option 'Temporary result directory' (set to '/carm/proj/texttest-tmp/geoff/texttest.14Apr110327/texttest/TestSelf/ReconnectTests/GUI/RecomputeFileFilters/texttesttmp')
 Viewing radio button for switch 'Results', options Display as they were/Recompute from files'. Default value 0.
 Viewing action with title 'Re_connect', stock id ''gtk-connect'', accelerator ''<control><shift>r''
 
@@ -234,9 +235,9 @@ Viewing action with title 'Re_connect', stock id ''gtk-connect'', accelerator ''
 
 'reconnect to previously run tests' event created with arguments ''
 Adding entry completion 'reconnectrun' ...
-Starting reconnect run of TextTest with arguments ['-g', '-a', 'hello', '-v', 'reconnectrun', '-reconnect', '/carm/proj/texttest-tmp/geoff/texttest.11Apr143231/texttest/TestSelf/ReconnectTests/GUI/RecomputeFileFilters/texttesttmp', '-reconnfull', '-count', '1', '-f', '/carm/proj/texttest-tmp/geoff/texttest.11Apr143231/texttest/TestSelf/ReconnectTests/GUI/RecomputeFileFilters/texttesttmp/static_gui.11Apr143243/dynamic_run1/gui_select', '-fd', '/carm/proj/texttest-tmp/geoff/texttest.11Apr143231/texttest/TestSelf/ReconnectTests/GUI/RecomputeFileFilters/texttesttmp/static_gui.11Apr143243/temporary_filter_files']
+Starting reconnect run of TextTest with arguments ['-g', '-a', 'hello', '-v', 'reconnectrun', '-reconnect', '/carm/proj/texttest-tmp/geoff/texttest.14Apr110327/texttest/TestSelf/ReconnectTests/GUI/RecomputeFileFilters/texttesttmp', '-reconnfull', '-count', '1', '-f', '/carm/proj/texttest-tmp/geoff/texttest.14Apr110327/texttest/TestSelf/ReconnectTests/GUI/RecomputeFileFilters/texttesttmp/static_gui.14Apr110345/dynamic_run1/gui_select', '-fd', '/carm/proj/texttest-tmp/geoff/texttest.14Apr110327/texttest/TestSelf/ReconnectTests/GUI/RecomputeFileFilters/texttesttmp/static_gui.14Apr110345/temporary_filter_files']
 
-Changing GUI status to: 'Reconnected to HELLO test-case Test at 11Apr14:32:47.'
+Changing GUI status to: 'Reconnected to HELLO test-case Test at 14Apr11:03:47.'
 
 Waiting for application event 'reconnect GUI to be closed' to occur.
 Expected application event 'reconnect GUI to be closed' occurred, proceeding.
@@ -248,7 +249,6 @@ Adding file errors.hello under heading 'Standard Files', coloured grey90
 Adding file errors.hello.reconnectrun under heading 'Standard Files', coloured grey90
 Adding file output.hello under heading 'Standard Files', coloured grey90
 Adding file output.hello.reconnectrun under heading 'Standard Files', coloured grey90
-
 
 Pane separator positioned 46% from the top
 

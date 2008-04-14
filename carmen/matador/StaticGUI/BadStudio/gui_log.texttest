@@ -6,12 +6,12 @@ Adding entry completion 'catalogue' ...
 Adding entry completion 'solution' ...
 Adding entry completion '/carm/proj/texttest/selftest_data' ...
 Adding entry completion '1' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.carmen.07Apr153819/texttest.carmen/carmen/matador/StaticGUI/BadStudio/TargetApp/Diagnostics/log4py.conf' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.carmen.07Apr153819/texttest.carmen/carmen/matador/StaticGUI/BadStudio/TargetApp/Diagnostics' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.14Apr110327/texttest.carmen/carmen/matador/StaticGUI/BadStudio/TargetApp/Diagnostics/log4py.conf' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.14Apr110327/texttest.carmen/carmen/matador/StaticGUI/BadStudio/TargetApp/Diagnostics' ...
 Adding entry completion 'short' ...
 Adding entry completion 'normal' ...
 Adding entry completion 'idle' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.carmen.07Apr153819/texttest.carmen/carmen/matador/StaticGUI/BadStudio/texttesttmp' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.14Apr110327/texttest.carmen/carmen/matador/StaticGUI/BadStudio/texttesttmp' ...
 Adding entry completion '0:' ...
 Adding entry completion 'minutes' ...
 Adding entry completion 'hours' ...
@@ -78,11 +78,13 @@ Viewing action with title 'Status Recursive' (greyed out)
 Viewing action with title 'A_nnotate' (greyed out)
 Viewing action with title 'Annotate Recursive' (greyed out)
 Viewing action with title 'Create Performance Report...' (greyed out)
+Viewing action with title 'Record _Use-Case', stock id ''gtk-media-record'' (greyed out)
 Viewing action with title '_Select', stock id ''gtk-refresh'', accelerator ''<control>s''
 Viewing action with title '_Run', stock id ''gtk-execute'', accelerator ''F5'' (greyed out)
 Viewing action with title '_Run', stock id ''gtk-execute'', accelerator ''F5'' (greyed out)
 Viewing action with title 'Re_connect', stock id ''gtk-connect'', accelerator ''<control><shift>r'' (greyed out)
 Viewing action with title '_Plot Graph', stock id ''gtk-clear'', accelerator ''<control>p'' (greyed out)
+Viewing action with title 'Start Studio' (greyed out)
 
 UI layout: 
 <ui>
@@ -126,11 +128,13 @@ UI layout:
       <menuitem name="Select" action="Select"/>
       <menuitem name="Run" action="Run"/>
       <menuitem name="Reconnect" action="Reconnect"/>
+      <menuitem name="Record Use-Case" action="Record Use-Case"/>
       <menuitem name="Reset" action="Reset"/>
     </menu>
     <placeholder name="ExtraMenus">
       <menu name="optimizationmenu" action="optimizationmenu">
         <menuitem name="Plot Graph" action="Plot Graph"/>
+        <menuitem name="Start Studio" action="Start Studio"/>
         <menuitem name="Create Performance Report..." action="Create Performance Report..."/>
       </menu>
       <menu name="CVSmenu" action="CVSmenu">
@@ -281,13 +285,13 @@ Viewing check button for switch 'Subproblems'
 Viewing check button for switch 'TargetJuniorImprove'
 Viewing action with title '_Select', stock id ''gtk-refresh'', accelerator ''<control>s''
 
-Changing GUI status to: 'TextTest started at 07Apr15:39:08.'
+Changing GUI status to: 'TextTest started at 14Apr11:04:03.'
 
 Waiting for application event 'all tests to be read' to occur.
 
 Changing GUI status to: 'Reading tests ...'
 
-Changing GUI status to: 'Reading tests completed at 07Apr15:39:08.'
+Changing GUI status to: 'Reading tests completed at 14Apr11:04:04.'
 
 Test Tree description...
 -> TargetApp (cas)
@@ -334,7 +338,7 @@ Setting sensitivity of action '_Run' to True
 Setting sensitivity of action '_Run' to True
 Setting sensitivity of action 'Re_connect' to True
 Setting sensitivity of action '_Plot Graph' to True
-Setting sensitivity of action 'Studio' to True
+Setting sensitivity of action 'Start Studio' to True
 
 Setting file-view title to 'firstpos__illegal'
 Adding file catalogue.cas under heading 'Standard Files', coloured grey90
@@ -350,7 +354,6 @@ Adding file raveparameters.cas.seniority under heading 'Definition Files', colou
 Adding file rules under heading 'Subplan', coloured grey90
 Adding file CrewRostering under heading 'Ruleset', coloured grey90
 Adding file matador_fast.py under heading 'Script', coloured grey90
-
 
 Pane separator positioned 46% from the top
 
@@ -373,7 +376,7 @@ Tabs showing : Text Info, Studio
 
 Viewing notebook page for 'Studio'
 Viewing entry for option 'Studio CARMSYS to use' (set to '/carm/proj/texttest/selftest_data/CARMSYS')
-Viewing action with title 'Studio'
+Viewing action with title 'Start Studio'
 
 'enter studio carmsys to use =' event created with arguments '/no/such/CARMSYS'
 
@@ -420,8 +423,8 @@ Viewing action with title '_Run', stock id ''gtk-execute'', accelerator ''F5''
 'view sub-options for running :' event created with arguments 'Advanced'
 
 Viewing notebook page for 'Advanced'
-Viewing entry for option 'Configure self-diagnostics from' (set to '/carm/proj/texttest-tmp/geoff/texttest.carmen.07Apr153819/texttest.carmen/carmen/matador/StaticGUI/BadStudio/TargetApp/Diagnostics/log4py.conf')
-Viewing entry for option 'Write self-diagnostics to' (set to '/carm/proj/texttest-tmp/geoff/texttest.carmen.07Apr153819/texttest.carmen/carmen/matador/StaticGUI/BadStudio/TargetApp/Diagnostics')
+Viewing entry for option 'Configure self-diagnostics from' (set to '/carm/proj/texttest-tmp/geoff/texttest.14Apr110327/texttest.carmen/carmen/matador/StaticGUI/BadStudio/TargetApp/Diagnostics/log4py.conf')
+Viewing entry for option 'Write self-diagnostics to' (set to '/carm/proj/texttest-tmp/geoff/texttest.14Apr110327/texttest.carmen/carmen/matador/StaticGUI/BadStudio/TargetApp/Diagnostics')
 Viewing entry for option 'Run batch mode session'
 Viewing entry for option 'Request SGE resource'
 Viewing entry for option 'Request SGE queue' (drop-down list containing ['', 'short', 'normal', 'idle'])
@@ -441,9 +444,9 @@ Viewing action with title '_Run', stock id ''gtk-execute'', accelerator ''F5''
 
 'run selected tests' event created with arguments ''
 Adding entry completion '/carm/proj/texttest/selftest_data/CARMSYS' ...
-Starting dynamic run of TextTest with arguments ['-g', '-a', 'cas', '-c', '/carm/proj/texttest/selftest_data', '-cp', '1', '-l', '-xr', '/carm/proj/texttest-tmp/geoff/texttest.carmen.07Apr153819/texttest.carmen/carmen/matador/StaticGUI/BadStudio/TargetApp/Diagnostics/log4py.conf', '-xw', '/carm/proj/texttest-tmp/geoff/texttest.carmen.07Apr153819/texttest.carmen/carmen/matador/StaticGUI/BadStudio/TargetApp/Diagnostics', '-keeptmp', '-count', '1', '-f', '/carm/proj/texttest-tmp/geoff/texttest.carmen.07Apr153819/texttest.carmen/carmen/matador/StaticGUI/BadStudio/texttesttmp/static_gui.07Apr153907/dynamic_run1/gui_select', '-fd', '/carm/proj/texttest-tmp/geoff/texttest.carmen.07Apr153819/texttest.carmen/carmen/matador/StaticGUI/BadStudio/texttesttmp/static_gui.07Apr153907/temporary_filter_files']
+Starting dynamic run of TextTest with arguments ['-g', '-a', 'cas', '-c', '/carm/proj/texttest/selftest_data', '-cp', '1', '-l', '-xr', '/carm/proj/texttest-tmp/geoff/texttest.14Apr110327/texttest.carmen/carmen/matador/StaticGUI/BadStudio/TargetApp/Diagnostics/log4py.conf', '-xw', '/carm/proj/texttest-tmp/geoff/texttest.14Apr110327/texttest.carmen/carmen/matador/StaticGUI/BadStudio/TargetApp/Diagnostics', '-keeptmp', '-count', '1', '-f', '/carm/proj/texttest-tmp/geoff/texttest.14Apr110327/texttest.carmen/carmen/matador/StaticGUI/BadStudio/texttesttmp/static_gui.14Apr110402/dynamic_run1/gui_select', '-fd', '/carm/proj/texttest-tmp/geoff/texttest.14Apr110327/texttest.carmen/carmen/matador/StaticGUI/BadStudio/texttesttmp/static_gui.14Apr110402/temporary_filter_files']
 
-Changing GUI status to: 'Started Matador test-case 2crew_illegal_subchain at 07Apr15:39:10.'
+Changing GUI status to: 'Started Matador test-case 2crew_illegal_subchain at 14Apr11:04:05.'
 
 Waiting for application event 'dynamic GUI to be closed' to occur.
 Expected application event 'dynamic GUI to be closed' occurred, proceeding.
