@@ -3,12 +3,12 @@ Adding entry completion '<default>' ...
 Adding entry completion 'boost' ...
 Adding entry completion '/carm/proj/texttest/selftest_data' ...
 Adding entry completion '1' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.17Apr121105/texttest.carmen/carmen/APC/Miscellaneous/SelectKPIGroup/TargetApp/Diagnostics/log4py.conf' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.17Apr121105/texttest.carmen/carmen/APC/Miscellaneous/SelectKPIGroup/TargetApp/Diagnostics' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.22Apr152023/texttest.carmen/carmen/APC/Miscellaneous/SelectKPIGroup/TargetApp/Diagnostics/log4py.conf' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.22Apr152023/texttest.carmen/carmen/APC/Miscellaneous/SelectKPIGroup/TargetApp/Diagnostics' ...
 Adding entry completion 'short' ...
 Adding entry completion 'normal' ...
 Adding entry completion 'idle' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.17Apr121105/texttest.carmen/carmen/APC/Miscellaneous/SelectKPIGroup/texttesttmp' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.22Apr152023/texttest.carmen/carmen/APC/Miscellaneous/SelectKPIGroup/texttesttmp' ...
 Adding entry completion '0:' ...
 Adding entry completion 'minutes' ...
 Adding entry completion 'hours' ...
@@ -53,6 +53,8 @@ Viewing action with title 'Add Suite', stock id ''gtk-directory'' (greyed out)
 Viewing action with title 'Create _File', stock id ''gtk-new'' (greyed out)
 Viewing action with title 'Enter Failure Information', stock id ''gtk-info'', accelerator ''<control>i'' (greyed out)
 Viewing action with title 'Refresh', stock id ''gtk-refresh'', accelerator ''F5''
+Viewing action with title 'Show only selected' (greyed out)
+Viewing action with title 'Show all' (greyed out)
 Viewing action with title 'R_eset', stock id ''gtk-revert-to-saved'', accelerator ''<control>e''
 Viewing action with title '_Rename...', stock id ''gtk-italic'', accelerator ''<control>m'' (greyed out)
 Viewing action with title 'Remove...', stock id ''gtk-delete'' (greyed out)
@@ -126,6 +128,9 @@ UI layout:
     </menu>
     <menu name="actionsmenu" action="actionsmenu">
       <menuitem name="Select/Find" action="Select/Find"/>
+      <menuitem name="Show only selected" action="Show only selected"/>
+      <menuitem name="Show all" action="Show all"/>
+      <separator/>
       <menuitem name="Refresh" action="Refresh"/>
       <menuitem name="Run" action="Run"/>
       <menuitem name="Reconnect" action="Reconnect"/>
@@ -262,13 +267,13 @@ Viewing check button for switch 'Select in collapsed suites'
 Viewing radio button for switch 'Current selection', options Discard/Refine/Extend/Exclude'. Default value 0.
 Viewing action with title '_Select/Find', stock id ''gtk-find'', accelerator ''<control>s''
 
-Changing GUI status to: 'TextTest started at 17Apr12:12:21.'
+Changing GUI status to: 'TextTest started at 22Apr15:21:02.'
 
 Waiting for application event 'all tests to be read' to occur.
 
 Changing GUI status to: 'Reading tests ...'
 
-Changing GUI status to: 'Reading tests completed at 17Apr12:12:22.'
+Changing GUI status to: 'Reading tests completed at 22Apr15:21:02.'
 
 Test Tree description...
 -> TargetApp (apc)
@@ -326,6 +331,8 @@ Test column header set to 'Tests: 1/23 selected'
 Setting sensitivity of action '_Copy' to True
 Setting sensitivity of action '_Cut' to True
 Setting sensitivity of action 'Enter Failure Information' to True
+Setting sensitivity of action 'Show only selected' to True
+Setting sensitivity of action 'Show all' to True
 Setting sensitivity of action '_Rename...' to True
 Setting sensitivity of action 'Remove...' to True
 Setting sensitivity of action 'Move down' to True
