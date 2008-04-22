@@ -1,5 +1,5 @@
 Enabling entry completion, using matching 1
-Top Window title is TextTest dynamic GUI : testing HELLO.v1,HELLO.v2 (started at 14Apr11:03:44)
+Top Window title is TextTest dynamic GUI : testing HELLO.v1,HELLO.v2 (started at 22Apr13:59:27)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -98,7 +98,7 @@ Tabs showing : Status
 
 Test progress:
 
-Changing GUI status to: 'TextTest started at 14Apr11:03:45.'
+Changing GUI status to: 'TextTest started at 22Apr13:59:27.'
 
 Waiting for application event 'completion of test actions' to occur.
 
@@ -129,7 +129,7 @@ Test progress:
 ----> Differences : 1, colour 'red', font 'bold'', visible=True
 ------> output different : 1, colour 'red', font 'bold'', visible=True
 
-Progress bar set to fraction 1.0, text 'All 2 tests completed at 14Apr11:03:45'
+Progress bar set to fraction 1.0, text 'All 2 tests completed at 22Apr13:59:28'
 
 Redrawing test Test coloured red
 (Second column 'output different' coloured red)
@@ -146,6 +146,7 @@ Expected application event 'completion of test actions' occurred, proceeding.
 Test column header set to 'Tests: 1/2 selected, none hidden'
 Setting sensitivity of action 'S_ave Selection...' to True
 Setting sensitivity of action '_Mark' to True
+Setting sensitivity of action 'Recompute Status' to True
 Setting sensitivity of action '_Save' to True
 
 Setting file-view title to 'Test'
@@ -191,6 +192,7 @@ Redrawing suite TargetApp : second column 'All 1 tests successful' coloured gree
 Test column header set to 'Tests: 0/2 selected, none hidden'
 Setting sensitivity of action 'S_ave Selection...' to False
 Setting sensitivity of action '_Mark' to False
+Setting sensitivity of action 'Recompute Status' to False
 Setting sensitivity of action '_Save' to False
 
 Test progress:
@@ -217,6 +219,37 @@ Test column header set to 'Tests: 1/2 selected, none hidden'
 Setting sensitivity of action 'S_ave Selection...' to True
 Setting sensitivity of action '_Mark' to True
 Setting sensitivity of action 'Recompute Status' to True
+Setting sensitivity of action '_Save' to True
+
+Setting file-view title to 'Test'
+Adding file errors.hello under heading 'Comparison Files', coloured green
+Adding file output.hello under heading 'Comparison Files', coloured red
+
+Pane separator positioned 46% from the top
+
+Tabs showing : Text Info
+
+---------- Text Info Window ----------
+Test FAILED :
+---------- Differences in output ----------
+1c1
+< Hello
+---
+> Hello World!
+--------------------------------------
+
+Tabs showing : Test, Status
+
+Tabs showing : Text Info, Saving
+Setting recalculation icon to 'gtk-refresh'
+
+Setting file-view title to 'Test'
+Adding file errors.hello under heading 'Comparison Files', coloured green
+Adding file output.hello under heading 'Comparison Files', coloured red
+(Recalculation icon showing 'gtk-refresh')
+
+'recompute test status, including progress information if appropriate' event created with arguments ''
+Adding entry completion 'v2' ...
 
 Changing GUI status to: 'Recomputing status of HELLO.v2 test-case Test ...'
 
@@ -227,6 +260,7 @@ Test column header set to 'Tests: 0/2 selected, none hidden'
 Setting sensitivity of action 'S_ave Selection...' to False
 Setting sensitivity of action '_Mark' to False
 Setting sensitivity of action 'Recompute Status' to False
+Setting sensitivity of action '_Save' to False
 
 Test progress:
 --> Not started : 0, colour 'white', font ''', visible=True
@@ -234,6 +268,16 @@ Test progress:
 ----> Differences : 0, colour 'white', font ''', visible=True
 ------> output different : 0, colour 'white', font ''', visible=True
 --> Succeeded : 2, colour 'green', font 'bold'', visible=True
+
+Tabs showing : Status
+
+Test progress:
+--> Not started : 0, colour 'white', font ''', visible=True
+--> Failed : 0, colour 'white', font ''', visible=True
+----> Differences : 0, colour 'white', font ''', visible=True
+------> output different : 0, colour 'white', font ''', visible=True
+--> Succeeded : 2, colour 'green', font 'bold'', visible=True
+Setting recalculation icon to ''
 
 Changing GUI status to: 'Recomputed status of 1 test.'
 

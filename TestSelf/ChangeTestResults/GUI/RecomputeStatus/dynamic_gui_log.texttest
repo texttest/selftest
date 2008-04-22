@@ -1,5 +1,5 @@
 Enabling entry completion, using matching 1
-Top Window title is TextTest dynamic GUI : testing HELLO.2,HELLO.3,HELLO.4 (started at 14Apr11:03:48)
+Top Window title is TextTest dynamic GUI : testing HELLO.2,HELLO.3,HELLO.4 (started at 22Apr11:05:51)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -98,7 +98,7 @@ Tabs showing : Status
 
 Test progress:
 
-Changing GUI status to: 'TextTest started at 14Apr11:03:49.'
+Changing GUI status to: 'TextTest started at 22Apr11:05:51.'
 
 Waiting for application event 'completion of test actions' to occur.
 
@@ -431,7 +431,7 @@ Test progress:
 ------> errors different : 5, colour 'red', font 'bold'', visible=True
 --> Succeeded : 3, colour 'green', font 'bold'', visible=True
 
-Progress bar set to fraction 1.0, text 'All 12 tests completed at 14Apr11:03:51'
+Progress bar set to fraction 1.0, text 'All 12 tests completed at 22Apr11:05:54'
 
 Redrawing test ErrDiff coloured red
 (Second column 'errors different' coloured red)
@@ -451,6 +451,7 @@ Expected application event 'completion of test actions' occurred, proceeding.
 Test column header set to 'Tests: 1/12 selected, none hidden'
 Setting sensitivity of action 'S_ave Selection...' to True
 Setting sensitivity of action '_Mark' to True
+Setting sensitivity of action 'Recompute Status' to True
 Setting sensitivity of action '_Save' to True
 
 Setting file-view title to 'OutDiff'
@@ -519,7 +520,7 @@ Setting file-view title to 'Sample from 4 tests'
 
 Test column header set to 'Tests: 5/12 selected, none hidden'
 Setting file-view title to 'Sample from 5 tests'
-Setting sensitivity of action 'Recompute Status' to True
+Setting recalculation icon to 'gtk-refresh'
 
 Test column header set to 'Tests: 6/12 selected, none hidden'
 Setting file-view title to 'Sample from 6 tests'
@@ -532,6 +533,7 @@ Setting file-view title to 'Sample from 8 tests'
 
 Test column header set to 'Tests: 9/12 selected, none hidden'
 Setting file-view title to 'Sample from 9 tests'
+Setting recalculation icon to 'gtk-refresh'
 
 Test column header set to 'Tests: 10/12 selected, none hidden'
 Setting file-view title to 'Sample from 10 tests'
@@ -545,15 +547,71 @@ Setting file-view title to 'Sample from 12 tests'
 'recompute test status, including progress information if appropriate' event created with arguments ''
 Adding entry completion '<default> - 2,3,4' ...
 
+Changing GUI status to: 'Recomputing status of HELLO.2 test-case OutDiff ...'
+
+Redrawing test OutDiff coloured green
+
+Setting file-view title to 'Sample from 12 tests'
+Adding file errors.hello under heading 'Comparison Files', coloured green
+Adding file output.hello under heading 'Comparison Files', coloured green
+
+---------- Text Info Window ----------
+Test succeeded
+--------------------------------------
+
+Changing GUI status to: 'Recomputing status of HELLO.2 test-case Success ...'
+
+Redrawing test Success coloured green
+
+Changing GUI status to: 'Recomputing status of HELLO.2 test-case BothDiff ...'
+
+Redrawing test BothDiff coloured red
+(Second column 'errors different(+)' coloured red)
+
+Changing GUI status to: 'Recomputing status of HELLO.2 test-case ErrDiff ...'
+
+Redrawing test ErrDiff coloured red
+(Second column 'errors different' coloured red)
+
 Changing GUI status to: 'Recomputing status of HELLO.3 test-case OutDiff ...'
 
 Redrawing test OutDiff coloured green
+Setting recalculation icon to ''
+
+Changing GUI status to: 'Recomputing status of HELLO.3 test-case Success ...'
+
+Redrawing test Success coloured green
+
+Changing GUI status to: 'Recomputing status of HELLO.3 test-case BothDiff ...'
+
+Redrawing test BothDiff coloured red
+(Second column 'errors different(+)' coloured red)
+
+Changing GUI status to: 'Recomputing status of HELLO.3 test-case ErrDiff ...'
+
+Redrawing test ErrDiff coloured red
+(Second column 'errors different' coloured red)
 
 Changing GUI status to: 'Recomputing status of HELLO.4 test-case OutDiff ...'
 
 Redrawing test OutDiff coloured green
+Setting recalculation icon to ''
 
-Changing GUI status to: 'Recomputed status of 2 tests.'
+Changing GUI status to: 'Recomputing status of HELLO.4 test-case Success ...'
+
+Redrawing test Success coloured green
+
+Changing GUI status to: 'Recomputing status of HELLO.4 test-case BothDiff ...'
+
+Redrawing test BothDiff coloured red
+(Second column 'errors different(+)' coloured red)
+
+Changing GUI status to: 'Recomputing status of HELLO.4 test-case ErrDiff ...'
+
+Redrawing test ErrDiff coloured red
+(Second column 'errors different' coloured red)
+
+Changing GUI status to: 'Recomputed status of 12 tests.'
 
 'set test selection to' event created with arguments 'ErrDiff under TargetApp (hello.3)'
 
@@ -606,7 +664,6 @@ Test FAILED :
 0a1
 > Error text
 --------------------------------------
-Setting sensitivity of action 'Recompute Status' to False
 
 'view sub-options for test :' event created with arguments 'Saving'
 
@@ -651,21 +708,15 @@ Test FAILED :
 0a1
 > Error text
 --------------------------------------
-Setting sensitivity of action 'Recompute Status' to True
+Setting sensitivity of action '_Save' to True
 
-Changing GUI status to: 'Recomputing status of HELLO.2 test-case ErrDiff ...'
-
-Redrawing test ErrDiff coloured green
+Tabs showing : Text Info, Saving
+Setting recalculation icon to 'gtk-refresh'
 
 Setting file-view title to 'ErrDiff'
-Adding file errors.hello under heading 'Comparison Files', coloured green
+Adding file errors.hello under heading 'Comparison Files', coloured red
+(Recalculation icon showing 'gtk-refresh')
 Adding file output.hello under heading 'Comparison Files', coloured green
-
----------- Text Info Window ----------
-Test succeeded
---------------------------------------
-
-Changing GUI status to: 'Recomputed status of 1 test.'
 
 Test column header set to 'Tests: 2/12 selected, none hidden'
 Setting file-view title to 'Sample from 2 tests'
@@ -675,9 +726,6 @@ Setting file-view title to 'Sample from 3 tests'
 
 Test column header set to 'Tests: 4/12 selected, none hidden'
 Setting file-view title to 'Sample from 4 tests'
-Setting sensitivity of action '_Save' to True
-
-Tabs showing : Text Info, Saving
 
 Test column header set to 'Tests: 5/12 selected, none hidden'
 Setting file-view title to 'Sample from 5 tests'
@@ -702,130 +750,77 @@ Setting file-view title to 'Sample from 11 tests'
 
 Test column header set to 'Tests: All 12 selected, none hidden'
 Setting file-view title to 'Sample from 12 tests'
+Setting recalculation icon to 'gtk-refresh'
 
 'recompute test status, including progress information if appropriate' event created with arguments ''
+
+Changing GUI status to: 'Recomputing status of HELLO.2 test-case OutDiff ...'
+
+Redrawing test OutDiff coloured green
+
+Changing GUI status to: 'Recomputing status of HELLO.2 test-case Success ...'
+
+Redrawing test Success coloured green
+
+Changing GUI status to: 'Recomputing status of HELLO.2 test-case BothDiff ...'
+
+Redrawing test BothDiff coloured red
+(Second column 'errors different(+)' coloured red)
 
 Changing GUI status to: 'Recomputing status of HELLO.2 test-case ErrDiff ...'
 
 Redrawing test ErrDiff coloured green
-Redrawing suite TargetApp : second column 'All 4 tests successful' coloured green
 
-Test column header set to 'Tests: 8/12 selected, none hidden'
-
-Setting file-view title to 'Sample from 8 tests'
+Setting file-view title to 'Sample from 12 tests'
 Adding file errors.hello under heading 'Comparison Files', coloured green
 Adding file output.hello under heading 'Comparison Files', coloured green
 
 ---------- Text Info Window ----------
 Test succeeded
 --------------------------------------
+Setting recalculation icon to ''
+
+Setting file-view title to 'Sample from 12 tests'
+Adding file errors.hello under heading 'Comparison Files', coloured green
+Adding file output.hello under heading 'Comparison Files', coloured green
 
 Changing GUI status to: 'Recomputing status of HELLO.3 test-case OutDiff ...'
 
 Redrawing test OutDiff coloured green
-Redrawing suite TargetApp : second column 'All 4 tests successful' coloured green
 
-Test column header set to 'Tests: 4/12 selected, none hidden'
+Changing GUI status to: 'Recomputing status of HELLO.3 test-case Success ...'
 
-Setting file-view title to 'Sample from 4 tests'
-Adding file errors.hello under heading 'Comparison Files', coloured green
-Adding file output.hello under heading 'Comparison Files', coloured green
+Redrawing test Success coloured green
 
----------- Text Info Window ----------
-Test succeeded
---------------------------------------
+Changing GUI status to: 'Recomputing status of HELLO.3 test-case BothDiff ...'
+
+Redrawing test BothDiff coloured red
+(Second column 'errors different(+)' coloured red)
+
+Changing GUI status to: 'Recomputing status of HELLO.3 test-case ErrDiff ...'
+
+Redrawing test ErrDiff coloured green
 
 Changing GUI status to: 'Recomputing status of HELLO.4 test-case OutDiff ...'
 
 Redrawing test OutDiff coloured green
 
-Setting file-view title to 'Sample from 4 tests'
-Adding file errors.hello under heading 'Comparison Files', coloured green
-Adding file output.hello under heading 'Comparison Files', coloured green
+Changing GUI status to: 'Recomputing status of HELLO.4 test-case Success ...'
 
----------- Text Info Window ----------
-Test succeeded
---------------------------------------
+Redrawing test Success coloured green
+
+Changing GUI status to: 'Recomputing status of HELLO.4 test-case BothDiff ...'
+
+Redrawing test BothDiff coloured red
+(Second column 'errors different(+)' coloured red)
 
 Changing GUI status to: 'Recomputing status of HELLO.4 test-case ErrDiff ...'
 
 Redrawing test ErrDiff coloured green
-Redrawing suite TargetApp : second column 'All 4 tests successful' coloured green
+Setting recalculation icon to ''
 
-Test column header set to 'Tests: 0/12 selected, none hidden'
-Setting sensitivity of action 'S_ave Selection...' to False
-Setting sensitivity of action '_Mark' to False
-Setting sensitivity of action 'Recompute Status' to False
-Setting sensitivity of action '_Save' to False
-
-Test progress:
---> Not started : 0, colour 'white', font ''', visible=True
---> Running : 0, colour 'white', font ''', visible=True
---> Failed : 3, colour 'red', font 'bold'', visible=True
-----> Differences : 3, colour 'red', font 'bold'', visible=True
-------> output different : 3, colour 'red', font 'bold'', visible=True
-------> errors different : 3, colour 'red', font 'bold'', visible=True
---> Succeeded : 9, colour 'green', font 'bold'', visible=True
-
-Tabs showing : Status
-
-Test progress:
---> Not started : 0, colour 'white', font ''', visible=True
---> Running : 0, colour 'white', font ''', visible=True
---> Failed : 3, colour 'red', font 'bold'', visible=True
-----> Differences : 3, colour 'red', font 'bold'', visible=True
-------> output different : 3, colour 'red', font 'bold'', visible=True
-------> errors different : 3, colour 'red', font 'bold'', visible=True
---> Succeeded : 9, colour 'green', font 'bold'', visible=True
-
-Changing GUI status to: 'Recomputed status of 4 tests.'
-
-'show test suite' event created with arguments 'TargetApp (hello.4)'
-
-Test Tree description...
--> TargetApp (hello.2)
--> TargetApp (hello.3)
--> TargetApp (hello.4)
-->   OutDiff
-->   Success
-->   BothDiff
-->   ErrDiff
-
-'show test suite' event created with arguments 'TargetApp (hello.3)'
-
-Test Tree description...
--> TargetApp (hello.2)
--> TargetApp (hello.3)
-->   OutDiff
-->   Success
-->   BothDiff
-->   ErrDiff
--> TargetApp (hello.4)
-->   OutDiff
-->   Success
-->   BothDiff
-->   ErrDiff
-
-'show test suite' event created with arguments 'TargetApp (hello.2)'
-
-Test Tree description...
--> TargetApp (hello.2)
-->   OutDiff
-->   Success
-->   BothDiff
-->   ErrDiff
--> TargetApp (hello.3)
-->   OutDiff
-->   Success
-->   BothDiff
-->   ErrDiff
--> TargetApp (hello.4)
-->   OutDiff
-->   Success
-->   BothDiff
-->   ErrDiff
+Changing GUI status to: 'Recomputed status of 12 tests.'
 
 'quit' event created with arguments ''
-Adding entry completion '4' ...
 
 Changing GUI status to: 'Removing all temporary files ...'

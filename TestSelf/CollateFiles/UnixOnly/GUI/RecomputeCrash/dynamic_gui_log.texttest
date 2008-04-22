@@ -1,5 +1,5 @@
 Enabling entry completion, using matching 1
-Top Window title is TextTest dynamic GUI : testing HELLO,HELLO.core (started at 14Apr11:03:48)
+Top Window title is TextTest dynamic GUI : testing HELLO,HELLO.core (started at 22Apr13:59:32)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -98,7 +98,7 @@ Tabs showing : Status
 
 Test progress:
 
-Changing GUI status to: 'TextTest started at 14Apr11:03:49.'
+Changing GUI status to: 'TextTest started at 22Apr13:59:32.'
 
 Waiting for application event 'completion of test actions' to occur.
 
@@ -145,7 +145,7 @@ Test progress:
 ----> Differences : 1, colour 'red', font 'bold'', visible=True
 ------> output different : 1, colour 'red', font 'bold'', visible=True
 
-Progress bar set to fraction 1.0, text 'All 2 tests completed at 14Apr11:03:50'
+Progress bar set to fraction 1.0, text 'All 2 tests completed at 22Apr13:59:33'
 
 Redrawing test Test coloured red
 (Second column 'Segmentation fault in ___newselect_nocancel' coloured red)
@@ -165,6 +165,7 @@ Expected application event 'completion of test actions' occurred, proceeding.
 Test column header set to 'Tests: 1/2 selected, none hidden'
 Setting sensitivity of action 'S_ave Selection...' to True
 Setting sensitivity of action '_Mark' to True
+Setting sensitivity of action 'Recompute Status' to True
 Setting sensitivity of action '_Save' to True
 
 Setting file-view title to 'Test'
@@ -227,6 +228,7 @@ Redrawing suite TargetApp : second column 'All 1 tests successful' coloured gree
 Test column header set to 'Tests: 0/2 selected, none hidden'
 Setting sensitivity of action 'S_ave Selection...' to False
 Setting sensitivity of action '_Mark' to False
+Setting sensitivity of action 'Recompute Status' to False
 Setting sensitivity of action '_Save' to False
 
 Test progress:
@@ -259,34 +261,46 @@ Test column header set to 'Tests: 1/2 selected, none hidden'
 Setting sensitivity of action 'S_ave Selection...' to True
 Setting sensitivity of action '_Mark' to True
 Setting sensitivity of action 'Recompute Status' to True
+Setting sensitivity of action '_Save' to True
+
+Setting file-view title to 'Test'
+Adding file errors.hello under heading 'Comparison Files', coloured green
+Adding file output.hello under heading 'Comparison Files', coloured green
+
+Pane separator positioned 46% from the top
+
+Tabs showing : Text Info
+
+---------- Text Info Window ----------
+Test CRASHED (Segmentation fault in ___newselect_nocancel) :
+Program terminated with signal 11, Segmentation fault.
+Stack trace from gdb :
+___newselect_nocancel 
+inittime_the_fake_version 
+?? 
+??
+--------------------------------------
+
+Tabs showing : Test, Status
+
+Tabs showing : Text Info, Saving
+Setting recalculation icon to 'gtk-refresh'
+
+Setting file-view title to 'Test'
+Adding file errors.hello under heading 'Comparison Files', coloured green
+Adding file output.hello under heading 'Comparison Files', coloured green
+(Recalculation icon showing 'gtk-refresh')
+
+'recompute test status, including progress information if appropriate' event created with arguments ''
 
 Changing GUI status to: 'Recomputing status of HELLO.core test-case Test ...'
 
 Redrawing test Test coloured red
 (Second column 'Segmentation fault in ___newselect_nocancel' coloured red)
 
-Test progress:
---> Not started : 0, colour 'white', font ''', visible=True
---> Running : 0, colour 'white', font ''', visible=True
---> Failed : 1, colour 'red', font 'bold'', visible=True
-----> Differences : 0, colour 'white', font ''', visible=True
-------> output different : 0, colour 'white', font ''', visible=True
-----> Crashed : 1, colour 'red', font 'bold'', visible=True
-------> Segmentation fault in ___newselect_nocancel : 1, colour 'red', font 'bold'', visible=True
---> Succeeded : 1, colour 'green', font 'bold'', visible=True
-Setting sensitivity of action '_Save' to True
-
-Tabs showing : Test, Status
-
-Changing GUI status to: 'Recomputed status of 1 test.'
-
 Setting file-view title to 'Test'
 Adding file errors.hello under heading 'Comparison Files', coloured green
 Adding file output.hello under heading 'Comparison Files', coloured red
-
-Pane separator positioned 46% from the top
-
-Tabs showing : Text Info, Saving
 
 ---------- Text Info Window ----------
 Test CRASHED (Segmentation fault in ___newselect_nocancel) :
@@ -302,6 +316,13 @@ inittime_the_fake_version
 ---
 > Going to dump a core!
 --------------------------------------
+Setting recalculation icon to ''
+
+Setting file-view title to 'Test'
+Adding file errors.hello under heading 'Comparison Files', coloured green
+Adding file output.hello under heading 'Comparison Files', coloured red
+
+Changing GUI status to: 'Recomputed status of 1 test.'
 
 'quit' event created with arguments ''
 
