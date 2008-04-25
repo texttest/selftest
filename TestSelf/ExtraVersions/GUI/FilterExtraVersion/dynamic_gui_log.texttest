@@ -1,0 +1,150 @@
+Enabling entry completion, using matching 1
+Top Window title is TextTest dynamic GUI : testing HELLO (started at 25Apr14:57:57)
+Default widget is <type 'gtk.TreeView'>
+Setting window width to 60% of screen.
+Setting window height to 83% of screen.
+
+Viewing toggle action with title '_Toolbar'
+Viewing toggle action with title '_Shortcut bar'
+Viewing toggle action with title '_Status bar'
+Viewing action with title '_Quit', stock id ''gtk-quit'', accelerator ''<control>q''
+Viewing action with title 'View File', stock id ''gtk-open'' (greyed out)
+Viewing action with title '_File Properties', stock id ''gtk-properties'' (greyed out)
+Viewing action with title 'View Filtered File' (greyed out)
+Viewing action with title 'View Raw Differences' (greyed out)
+Viewing action with title 'View Differences' (greyed out)
+Viewing action with title 'Follow File Progress' (greyed out)
+Viewing action with title 'S_ave Selection...', stock id ''gtk-save-as'', accelerator ''<control><shift>s'' (greyed out)
+Viewing action with title '_Kill', stock id ''gtk-stop'' (greyed out)
+Viewing action with title '_Mark', accelerator ''<control><shift>m'' (greyed out)
+Viewing action with title '_Unmark', accelerator ''<control><shift>u'' (greyed out)
+Viewing action with title 'Recompute Status', stock id ''gtk-refresh'', accelerator ''F5'' (greyed out)
+Viewing action with title '_Migration Notes'
+Viewing action with title 'Component _Versions'
+Viewing action with title '_About TextTest', stock id ''gtk-about''
+Viewing action with title '_Save', stock id ''gtk-save'', accelerator ''<control>s'' (greyed out)
+
+UI layout: 
+<ui>
+  <menubar name="MainMenuBar">
+    <menu name="filemenu" action="filemenu">
+      <placeholder name="FirstInFileMenu">
+        <menuitem name="Save" action="Save"/>
+        <separator/>
+      </placeholder>
+      <menuitem name="Save Selection..." action="Save Selection..."/>
+      <separator/>
+      <menuitem name="Quit" action="Quit"/>
+    </menu>
+    <menu name="editmenu" action="editmenu">
+    </menu>
+    <menu name="viewmenu" action="viewmenu">
+      <menuitem name="Toolbar" action="Toolbar"/>
+      <menuitem name="Shortcut bar" action="Shortcut bar"/>
+      <menuitem name="Status bar" action="Status bar"/>
+    </menu>
+    <menu name="actionsmenu" action="actionsmenu">
+      <menuitem name="Kill" action="Kill"/>
+      <menuitem name="Mark" action="Mark"/>
+      <menuitem name="Unmark" action="Unmark"/>
+      <separator/>
+      <menuitem name="Recompute Status" action="Recompute Status"/>
+      <separator/>
+    </menu>
+    <placeholder name="ExtraMenus">
+    </placeholder>
+    <menu name="helpmenu" action="helpmenu">
+      <menuitem name="Migration Notes" action="Migration Notes"/>
+      <separator/>
+      <menuitem name="Component Versions" action="Component Versions"/>
+      <separator/>
+      <menuitem name="About TextTest" action="About TextTest"/>
+    </menu>
+  </menubar>
+  <toolbar name="MainToolBar">
+    <toolitem name="Quit" action="Quit"/>
+    <toolitem name="Kill" action="Kill"/>
+    <toolitem name="Save" action="Save"/>
+    <separator/>
+  </toolbar>
+  <popup name="TestPopupMenu">
+    <menuitem name="Mark" action="Mark"/>
+    <menuitem name="Unmark" action="Unmark"/>
+    <separator/>
+    <menuitem name="Recompute Status" action="Recompute Status"/>
+    <separator/>
+  </popup>
+  <popup name="TestFilePopupMenu">
+    <menuitem name="View File" action="View File"/>
+    <menuitem name="View Filtered File" action="View Filtered File"/>
+    <separator/>
+    <menuitem name="View Differences" action="View Differences"/>
+    <menuitem name="View Raw Differences" action="View Raw Differences"/>
+    <separator/>
+    <menuitem name="Follow File Progress" action="Follow File Progress"/>
+    <separator/>
+    <menuitem name="File Properties" action="File Properties"/>
+    <separator/>
+  </popup>
+</ui>
+
+Test Tree description...
+
+Test column header set to 'Tests: 0/2 selected, all hidden'
+
+Pane separator positioned 50% from the left edge
+
+Tabs showing : Status
+
+Test progress:
+--> Not started : 2, colour 'white', font 'bold'', visible=True
+
+Changing GUI status to: 'TextTest started at 25Apr14:57:57.'
+
+Waiting for application event 'completion of test actions' to occur.
+
+Progress bar set to fraction 0.0, text '0 of 2 tests completed'
+
+Test Tree description...
+-> TargetApp (hello.extra1)
+->   Common
+->   Extra1
+
+Test column header set to 'Tests: 0/2 selected, none hidden'
+
+Redrawing test Common coloured yellow
+
+Test progress:
+--> Not started : 1, colour 'white', font 'bold'', visible=True
+--> Running : 1, colour 'yellow', font 'bold'', visible=True
+
+Progress bar set to fraction 0.5, text '1 of 2 tests completed'
+
+Redrawing test Common coloured green
+
+Test progress:
+--> Not started : 1, colour 'white', font 'bold'', visible=True
+--> Running : 0, colour 'white', font ''', visible=True
+--> Succeeded : 1, colour 'green', font 'bold'', visible=True
+
+Redrawing test Extra1 coloured yellow
+
+Test progress:
+--> Not started : 0, colour 'white', font ''', visible=True
+--> Running : 1, colour 'yellow', font 'bold'', visible=True
+--> Succeeded : 1, colour 'green', font 'bold'', visible=True
+
+Progress bar set to fraction 1.0, text 'All 2 tests completed at 25Apr14:57:58'
+
+Redrawing test Extra1 coloured green
+Redrawing suite TargetApp : second column 'All 2 tests successful' coloured green
+
+Test progress:
+--> Not started : 0, colour 'white', font ''', visible=True
+--> Running : 0, colour 'white', font ''', visible=True
+--> Succeeded : 2, colour 'green', font 'bold'', visible=True
+Expected application event 'completion of test actions' occurred, proceeding.
+
+'quit' event created with arguments ''
+
+Changing GUI status to: 'Removing all temporary files ...'

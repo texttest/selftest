@@ -1,5 +1,5 @@
 Enabling entry completion, using matching 1
-Top Window title is TextTest dynamic GUI : testing HELLO (started at 11Apr15:47:00)
+Top Window title is TextTest dynamic GUI : testing HELLO (started at 25Apr15:51:54)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -90,7 +90,7 @@ UI layout:
 
 Test Tree description...
 
-Test column header set to 'Tests: All 0 selected, none hidden'
+Test column header set to 'Tests: All 0 selected'
 
 Pane separator positioned 50% from the left edge
 
@@ -98,7 +98,7 @@ Tabs showing : Status
 
 Test progress:
 
-Changing GUI status to: 'TextTest started at 11Apr15:47:00.'
+Changing GUI status to: 'TextTest started at 25Apr15:51:55.'
 
 Waiting for application event 'completion of test actions' to occur.
 
@@ -283,7 +283,7 @@ Test progress:
 ------> file2 different : 1, colour 'red', font 'bold'', visible=False
 ------> file4 different : 1, colour 'red', font 'bold'', visible=False
 
-Progress bar set to fraction 1.0, text 'All 5 tests completed at 11Apr15:47:01'
+Progress bar set to fraction 1.0, text 'All 5 tests completed at 25Apr15:51:56'
 
 Redrawing test success coloured green
 Redrawing suite suite : second column 'All 1 tests successful' coloured green
@@ -300,6 +300,37 @@ Test progress:
 ------> file2 different : 1, colour 'red', font 'bold'', visible=False
 ------> file4 different : 1, colour 'red', font 'bold'', visible=False
 --> Succeeded : 1, colour 'green', font 'bold'', visible=True
+Only one test found, selecting success
+
+Test Tree description...
+-> TargetApp (hello)
+->   suite
+->     success
+
+Test column header set to 'Tests: 1/5 selected, 4 hidden'
+Setting sensitivity of action 'S_ave Selection...' to True
+Setting sensitivity of action '_Mark' to True
+Setting sensitivity of action 'Recompute Status' to True
+
+Setting file-view title to 'success'
+Adding file errors.hello under heading 'Comparison Files', coloured green
+Adding file file1.hello under heading 'Comparison Files', coloured green
+Adding file file2.hello under heading 'Comparison Files', coloured green
+Adding file file3.hello under heading 'Comparison Files', coloured green
+Adding file file4.hello under heading 'Comparison Files', coloured green
+Adding file output.hello under heading 'Comparison Files', coloured green
+
+Pane separator positioned 46% from the top
+
+Tabs showing :
+
+---------- Text Info Window ----------
+Test succeeded
+--------------------------------------
+
+Tabs showing : Test, Status
+
+Tabs showing : Text Info
 Expected application event 'completion of test actions' occurred, proceeding.
 
 'toggle progress report category' event created with arguments 'Failed'
@@ -309,7 +340,7 @@ Making test visible : HELLO test-case simple_fail2
 Making test visible : HELLO test-case complex_fail1
 Making test visible : HELLO test-case complex_fail2
 
-Test column header set to 'Tests: 0/5 selected, none hidden'
+Test column header set to 'Tests: 1/5 selected, none hidden'
 
 'toggle progress report category' event created with arguments 'Failed'
 Selecting not to show tests in the 'Failed' category.
@@ -318,14 +349,34 @@ Hiding test : HELLO test-case simple_fail2
 Hiding test : HELLO test-case complex_fail1
 Hiding test : HELLO test-case complex_fail2
 
-Test column header set to 'Tests: 0/5 selected, 4 hidden'
+Test column header set to 'Tests: 1/5 selected, 4 hidden'
 
 'toggle progress report category' event created with arguments 'Succeeded'
 Selecting not to show tests in the 'Succeeded' category.
 Hiding test : HELLO test-case success
 Hiding test : HELLO test-suite suite
 
+Test column header set to 'Tests: 1/5 selected, all hidden'
+
 Test column header set to 'Tests: 0/5 selected, all hidden'
+Setting sensitivity of action 'S_ave Selection...' to False
+Setting sensitivity of action '_Mark' to False
+Setting sensitivity of action 'Recompute Status' to False
+
+Test progress:
+--> Not started : 0, colour 'white', font ''', visible=False
+--> Running : 0, colour 'white', font ''', visible=True
+--> Failed : 4, colour 'red', font 'bold'', visible=False
+----> Differences : 4, colour 'red', font 'bold'', visible=False
+------> file3 different : 3, colour 'red', font 'bold'', visible=False
+------> errors new : 3, colour 'red', font 'bold'', visible=False
+------> output different : 2, colour 'red', font 'bold'', visible=False
+------> file1 different : 1, colour 'red', font 'bold'', visible=False
+------> file2 different : 1, colour 'red', font 'bold'', visible=False
+------> file4 different : 1, colour 'red', font 'bold'', visible=False
+--> Succeeded : 1, colour 'green', font 'bold'', visible=False
+
+Tabs showing : Status
 
 'quit' event created with arguments ''
 
