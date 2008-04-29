@@ -2,12 +2,12 @@ Enabling entry completion, using matching 1
 Adding entry completion '<default>' ...
 Adding entry completion '/carm/proj/texttest/selftest_data' ...
 Adding entry completion '1' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.29Apr115253/texttest.carmen/carmen/studio/RerecordMacroSaveVersion/TargetApp/Diagnostics/log4py.conf' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.29Apr115253/texttest.carmen/carmen/studio/RerecordMacroSaveVersion/TargetApp/Diagnostics' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.29Apr142749/texttest.carmen/carmen/studio/RerecordMacroSaveVersion/TargetApp/Diagnostics/log4py.conf' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.29Apr142749/texttest.carmen/carmen/studio/RerecordMacroSaveVersion/TargetApp/Diagnostics' ...
 Adding entry completion 'short' ...
 Adding entry completion 'normal' ...
 Adding entry completion 'idle' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.29Apr115253/texttest.carmen/carmen/studio/RerecordMacroSaveVersion/texttesttmp' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.29Apr142749/texttest.carmen/carmen/studio/RerecordMacroSaveVersion/texttesttmp' ...
 Top Window title is TextTest static GUI : management of tests for Studio
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
@@ -55,6 +55,7 @@ Viewing action with title 'A_nnotate' (greyed out)
 Viewing action with title 'Annotate Recursive' (greyed out)
 Viewing action with title 'Record _Use-Case', stock id ''gtk-media-record'' (greyed out)
 Viewing action with title '_Select/Find', stock id ''gtk-find'', accelerator ''<control>s''
+Viewing action with title 'Filter', stock id ''gtk-find'', accelerator ''<control>f''
 Viewing action with title '_Run', stock id ''gtk-execute'', accelerator ''<control>r'' (greyed out)
 Viewing action with title '_Run', stock id ''gtk-execute'', accelerator ''<control>r'' (greyed out)
 Viewing action with title 'Re_connect', stock id ''gtk-connect'', accelerator ''<control><shift>r'' (greyed out)
@@ -93,14 +94,18 @@ UI layout:
       <separator/>
     </menu>
     <menu name="viewmenu" action="viewmenu">
+      <placeholder name="FirstInViewMenu">
+        <menuitem name="Show only selected" action="Show only selected"/>
+        <menuitem name="Show all" action="Show all"/>
+        <separator/>
+      </placeholder>
       <menuitem name="Toolbar" action="Toolbar"/>
       <menuitem name="Shortcut bar" action="Shortcut bar"/>
       <menuitem name="Status bar" action="Status bar"/>
     </menu>
     <menu name="actionsmenu" action="actionsmenu">
       <menuitem name="Select/Find" action="Select/Find"/>
-      <menuitem name="Show only selected" action="Show only selected"/>
-      <menuitem name="Show all" action="Show all"/>
+      <menuitem name="Filter" action="Filter"/>
       <separator/>
       <menuitem name="Refresh" action="Refresh"/>
       <menuitem name="Run" action="Run"/>
@@ -233,15 +238,15 @@ Viewing radio button for switch '', options Discard/Refine/Extend/Exclude'. Defa
 Viewing action with title '_Select/Find', stock id ''gtk-find'', accelerator ''<control>s''
 ...........
 Viewing radio button for switch '', options Discard/Refine/Extend'. Default value 0.
-Showing filter button
+Viewing action with title 'Filter', stock id ''gtk-find'', accelerator ''<control>f''
 
-Changing GUI status to: 'TextTest started at 29Apr11:53:37.'
+Changing GUI status to: 'TextTest started at 29Apr14:28:34.'
 
 Waiting for application event 'all tests to be read' to occur.
 
 Changing GUI status to: 'Reading tests ...'
 
-Changing GUI status to: 'Reading tests completed at 29Apr11:53:38.'
+Changing GUI status to: 'Reading tests completed at 29Apr14:28:34.'
 
 Test Tree description...
 -> TargetApp (gst)
@@ -268,7 +273,7 @@ Viewing radio button for switch '', options Discard/Refine/Extend/Exclude'. Defa
 Viewing action with title '_Select/Find', stock id ''gtk-find'', accelerator ''<control>s''
 ...........
 Viewing radio button for switch '', options Discard/Refine/Extend'. Default value 0.
-Showing filter button
+Viewing action with title 'Filter', stock id ''gtk-find'', accelerator ''<control>f''
 Expected application event 'all tests to be read' occurred, proceeding.
 
 'set test selection to' event created with arguments 'data_unchanged'
@@ -336,12 +341,12 @@ Viewing action with title 'Record _Use-Case', stock id ''gtk-media-record''
 'record use-case' event created with arguments ''
 Adding entry completion '13' ...
 Adding entry completion 'output' ...
-Starting record run of TextTest with arguments ['-g', '-record', '-a', 'gst', '-v', '13', '-c', '/carm/proj/texttest/selftest_data', '-count', '1', '-f', '/carm/proj/texttest-tmp/geoff/texttest.29Apr115253/texttest.carmen/carmen/studio/RerecordMacroSaveVersion/texttesttmp/static_gui.29Apr115337/dynamic_run1/gui_select', '-fd', '/carm/proj/texttest-tmp/geoff/texttest.29Apr115253/texttest.carmen/carmen/studio/RerecordMacroSaveVersion/texttesttmp/static_gui.29Apr115337/temporary_filter_files']
+Starting record run of TextTest with arguments ['-g', '-record', '-a', 'gst', '-v', '13', '-c', '/carm/proj/texttest/selftest_data', '-count', '1', '-f', '/carm/proj/texttest-tmp/geoff/texttest.29Apr142749/texttest.carmen/carmen/studio/RerecordMacroSaveVersion/texttesttmp/static_gui.29Apr142833/dynamic_run1/gui_select', '-fd', '/carm/proj/texttest-tmp/geoff/texttest.29Apr142749/texttest.carmen/carmen/studio/RerecordMacroSaveVersion/texttesttmp/static_gui.29Apr142833/temporary_filter_files']
 
 Changing GUI status to: 'Started record session for Studio test-case data_unchanged'
 
 Waiting for application event 'replay2 GUI to be closed' to occur.
-Starting replay run of TextTest with arguments ['-autoreplay', '-o', '13', '-a', 'gst', '-v', '13', '-c', '/carm/proj/texttest/selftest_data', '-count', '1', '-f', '/carm/proj/texttest-tmp/geoff/texttest.29Apr115253/texttest.carmen/carmen/studio/RerecordMacroSaveVersion/texttesttmp/static_gui.29Apr115337/dynamic_run2/gui_select', '-fd', '/carm/proj/texttest-tmp/geoff/texttest.29Apr115253/texttest.carmen/carmen/studio/RerecordMacroSaveVersion/texttesttmp/static_gui.29Apr115337/temporary_filter_files']
+Starting replay run of TextTest with arguments ['-autoreplay', '-o', '13', '-a', 'gst', '-v', '13', '-c', '/carm/proj/texttest/selftest_data', '-count', '1', '-f', '/carm/proj/texttest-tmp/geoff/texttest.29Apr142749/texttest.carmen/carmen/studio/RerecordMacroSaveVersion/texttesttmp/static_gui.29Apr142833/dynamic_run2/gui_select', '-fd', '/carm/proj/texttest-tmp/geoff/texttest.29Apr142749/texttest.carmen/carmen/studio/RerecordMacroSaveVersion/texttesttmp/static_gui.29Apr142833/temporary_filter_files']
 
 Changing GUI status to: 'Recording completed for Studio test-case data_unchanged. Auto-replay of test now started. Don't submit the test manually!'
 
@@ -357,7 +362,7 @@ Adding file Subplan under heading 'External Files', coloured white
 Adding file subplanRules under heading 'Subplan', coloured grey90
 Adding file Ruleset under heading 'External Files', coloured white
 Adding file LBA_MTV under heading 'Ruleset', coloured grey90
-Starting replay2 run of TextTest with arguments ['-autoreplay', '-o', '13', '-a', 'gst', '-v', '13', '-c', '/carm/proj/texttest/selftest_data', '-count', '1', '-f', '/carm/proj/texttest-tmp/geoff/texttest.29Apr115253/texttest.carmen/carmen/studio/RerecordMacroSaveVersion/texttesttmp/static_gui.29Apr115337/dynamic_run3/gui_select', '-fd', '/carm/proj/texttest-tmp/geoff/texttest.29Apr115253/texttest.carmen/carmen/studio/RerecordMacroSaveVersion/texttesttmp/static_gui.29Apr115337/temporary_filter_files']
+Starting replay2 run of TextTest with arguments ['-autoreplay', '-o', '13', '-a', 'gst', '-v', '13', '-c', '/carm/proj/texttest/selftest_data', '-count', '1', '-f', '/carm/proj/texttest-tmp/geoff/texttest.29Apr142749/texttest.carmen/carmen/studio/RerecordMacroSaveVersion/texttesttmp/static_gui.29Apr142833/dynamic_run3/gui_select', '-fd', '/carm/proj/texttest-tmp/geoff/texttest.29Apr142749/texttest.carmen/carmen/studio/RerecordMacroSaveVersion/texttesttmp/static_gui.29Apr142833/temporary_filter_files']
 
 Changing GUI status to: 'First auto-replay completed for Studio test-case data_unchanged. Second auto-replay now started. Don't submit the test manually!'
 

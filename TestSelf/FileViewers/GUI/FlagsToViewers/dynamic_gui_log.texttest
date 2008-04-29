@@ -1,5 +1,5 @@
 Enabling entry completion, using matching 1
-Top Window title is TextTest dynamic GUI : testing HELLO (started at 22Apr13:59:21)
+Top Window title is TextTest dynamic GUI : testing HELLO (started at 29Apr14:28:07)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -39,6 +39,8 @@ UI layout:
     <menu name="editmenu" action="editmenu">
     </menu>
     <menu name="viewmenu" action="viewmenu">
+      <placeholder name="FirstInViewMenu">
+      </placeholder>
       <menuitem name="Toolbar" action="Toolbar"/>
       <menuitem name="Shortcut bar" action="Shortcut bar"/>
       <menuitem name="Status bar" action="Status bar"/>
@@ -98,7 +100,7 @@ Tabs showing : Status
 
 Test progress:
 
-Changing GUI status to: 'TextTest started at 22Apr13:59:22.'
+Changing GUI status to: 'TextTest started at 29Apr14:28:07.'
 
 Waiting for application event 'completion of test actions' to occur.
 
@@ -119,7 +121,7 @@ Test progress:
 --> Not started : 0, colour 'white', font ''', visible=True
 --> Running : 1, colour 'yellow', font 'bold'', visible=True
 
-Progress bar set to fraction 1.0, text 'All 1 tests completed at 22Apr13:59:23'
+Progress bar set to fraction 1.0, text 'All 1 tests completed at 29Apr14:28:07'
 
 Redrawing test Test coloured red
 (Second column 'output different' coloured red)
@@ -162,15 +164,15 @@ Expected application event 'completion of test actions' occurred, proceeding.
 
 'select file' event created with arguments 'output.hello'
 Starting graphical difference comparison using 'tkdiff -L original -L current':
--- original file : /carm/proj/texttest-tmp/geoff/texttest.22Apr135905/texttest/TestSelf/FileViewers/GUI/FlagsToViewers/texttesttmp/dynamic_gui.22Apr135921/hello/Test/framework_tmp/output.helloorigcmp
---  current file : /carm/proj/texttest-tmp/geoff/texttest.22Apr135905/texttest/TestSelf/FileViewers/GUI/FlagsToViewers/texttesttmp/dynamic_gui.22Apr135921/hello/Test/framework_tmp/output.hellocmp
+-- original file : /carm/proj/texttest-tmp/geoff/texttest.29Apr142749/texttest/TestSelf/FileViewers/GUI/FlagsToViewers/texttesttmp/dynamic_gui.29Apr142807/hello/Test/framework_tmp/output.helloorigcmp
+--  current file : /carm/proj/texttest-tmp/geoff/texttest.29Apr142749/texttest/TestSelf/FileViewers/GUI/FlagsToViewers/texttesttmp/dynamic_gui.29Apr142807/hello/Test/framework_tmp/output.hellocmp
 
 Changing GUI status to: 'Started "tkdiff -L original -L current output.helloorigcmp output.hellocmp" in background (from test Test).'
 
 Terminating process that shows graphical differences in test files...
 
 'select file' event created with arguments 'errors.hello'
-Viewing file /carm/proj/texttest-tmp/geoff/texttest.22Apr135905/texttest/TestSelf/FileViewers/GUI/FlagsToViewers/texttesttmp/dynamic_gui.22Apr135921/hello/Test/errors.hello using 'emacs -q', refresh set to False
+Viewing file /carm/proj/texttest-tmp/geoff/texttest.29Apr142749/texttest/TestSelf/FileViewers/GUI/FlagsToViewers/texttesttmp/dynamic_gui.29Apr142807/hello/Test/errors.hello using 'emacs -q', refresh set to False
 
 Changing GUI status to: 'Started "emacs -q errors.hello" in background (from test Test).'
 

@@ -1,12 +1,12 @@
 Enabling entry completion, using matching 1
 Adding entry completion '<default>' ...
 Adding entry completion '1' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.29Apr115253/texttest.carmen/carmen/APC/Miscellaneous/StartWithOtherApp/TargetApp/Diagnostics/log4py.conf' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.29Apr115253/texttest.carmen/carmen/APC/Miscellaneous/StartWithOtherApp/TargetApp/Diagnostics' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.carmen.29Apr144919/texttest.carmen/carmen/APC/Miscellaneous/StartWithOtherApp/TargetApp/Diagnostics/log4py.conf' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.carmen.29Apr144919/texttest.carmen/carmen/APC/Miscellaneous/StartWithOtherApp/TargetApp/Diagnostics' ...
 Adding entry completion 'short' ...
 Adding entry completion 'normal' ...
 Adding entry completion 'idle' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.29Apr115253/texttest.carmen/carmen/APC/Miscellaneous/StartWithOtherApp/texttesttmp' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.carmen.29Apr144919/texttest.carmen/carmen/APC/Miscellaneous/StartWithOtherApp/texttesttmp' ...
 Adding entry completion '0:' ...
 Adding entry completion 'minutes' ...
 Adding entry completion 'hours' ...
@@ -120,14 +120,18 @@ UI layout:
       <separator/>
     </menu>
     <menu name="viewmenu" action="viewmenu">
+      <placeholder name="FirstInViewMenu">
+        <menuitem name="Show only selected" action="Show only selected"/>
+        <menuitem name="Show all" action="Show all"/>
+        <separator/>
+      </placeholder>
       <menuitem name="Toolbar" action="Toolbar"/>
       <menuitem name="Shortcut bar" action="Shortcut bar"/>
       <menuitem name="Status bar" action="Status bar"/>
     </menu>
     <menu name="actionsmenu" action="actionsmenu">
       <menuitem name="Select/Find" action="Select/Find"/>
-      <menuitem name="Show only selected" action="Show only selected"/>
-      <menuitem name="Show all" action="Show all"/>
+      <menuitem name="Filter" action="Filter"/>
       <separator/>
       <menuitem name="Refresh" action="Refresh"/>
       <menuitem name="Run" action="Run"/>
@@ -264,18 +268,18 @@ Viewing entry for option 'CARMUSRs containing'
 ...........
 Viewing check button for switch 'Select in collapsed suites'
 Viewing radio button for switch '', options Discard/Refine/Extend/Exclude'. Default value 0.
-Viewing action with title '_Select/Find', stock id ''gtk-find''
+Viewing action with title '_Select/Find', stock id ''gtk-find'', accelerator ''<control>s''
 ...........
 Viewing radio button for switch '', options Discard/Refine/Extend'. Default value 0.
-Showing filter button
+Viewing action with title 'Filter', stock id ''gtk-find'', accelerator ''<control>f''
 
-Changing GUI status to: 'TextTest started at 29Apr11:53:37.'
+Changing GUI status to: 'TextTest started at 29Apr14:49:22.'
 
 Waiting for application event 'all tests to be read' to occur.
 
 Changing GUI status to: 'Reading tests ...'
 
-Changing GUI status to: 'Reading tests completed at 29Apr11:53:38.'
+Changing GUI status to: 'Reading tests completed at 29Apr14:49:23.'
 
 Test Tree description...
 -> TargetApp (apc)
@@ -297,10 +301,10 @@ Viewing entry for option 'CARMUSRs containing'
 ...........
 Viewing check button for switch 'Select in collapsed suites'
 Viewing radio button for switch '', options Discard/Refine/Extend/Exclude'. Default value 0.
-Viewing action with title '_Select/Find', stock id ''gtk-find''
+Viewing action with title '_Select/Find', stock id ''gtk-find'', accelerator ''<control>s''
 ...........
 Viewing radio button for switch '', options Discard/Refine/Extend'. Default value 0.
-Showing filter button
+Viewing action with title 'Filter', stock id ''gtk-find'', accelerator ''<control>f''
 Expected application event 'all tests to be read' occurred, proceeding.
 
 'set test selection to' event created with arguments 'TargetApp (apc)'

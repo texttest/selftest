@@ -3,12 +3,12 @@ Adding entry completion '<default>' ...
 Adding entry completion 'boost' ...
 Adding entry completion '/carm/proj/texttest/selftest_data' ...
 Adding entry completion '1' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.29Apr115253/texttest.carmen/carmen/APC/Miscellaneous/AddTestKPIGroupFirstInSuite/TargetApp/Diagnostics/log4py.conf' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.29Apr115253/texttest.carmen/carmen/APC/Miscellaneous/AddTestKPIGroupFirstInSuite/TargetApp/Diagnostics' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.29Apr142749/texttest.carmen/carmen/APC/Miscellaneous/AddTestKPIGroupFirstInSuite/TargetApp/Diagnostics/log4py.conf' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.29Apr142749/texttest.carmen/carmen/APC/Miscellaneous/AddTestKPIGroupFirstInSuite/TargetApp/Diagnostics' ...
 Adding entry completion 'short' ...
 Adding entry completion 'normal' ...
 Adding entry completion 'idle' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.29Apr115253/texttest.carmen/carmen/APC/Miscellaneous/AddTestKPIGroupFirstInSuite/texttesttmp' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.29Apr142749/texttest.carmen/carmen/APC/Miscellaneous/AddTestKPIGroupFirstInSuite/texttesttmp' ...
 Adding entry completion '0:' ...
 Adding entry completion 'minutes' ...
 Adding entry completion 'hours' ...
@@ -81,6 +81,7 @@ Viewing action with title 'Annotate Recursive' (greyed out)
 Viewing action with title '_Select KPI group', stock id ''gtk-index'', accelerator ''<control>k'' (greyed out)
 Viewing action with title 'Record _Use-Case', stock id ''gtk-media-record'' (greyed out)
 Viewing action with title '_Select/Find', stock id ''gtk-find'', accelerator ''<control>s''
+Viewing action with title 'Filter', stock id ''gtk-find'', accelerator ''<control>f''
 Viewing action with title '_Run', stock id ''gtk-execute'', accelerator ''<control>r'' (greyed out)
 Viewing action with title '_Run', stock id ''gtk-execute'', accelerator ''<control>r'' (greyed out)
 Viewing action with title 'Re_connect', stock id ''gtk-connect'', accelerator ''<control><shift>r'' (greyed out)
@@ -122,14 +123,18 @@ UI layout:
       <separator/>
     </menu>
     <menu name="viewmenu" action="viewmenu">
+      <placeholder name="FirstInViewMenu">
+        <menuitem name="Show only selected" action="Show only selected"/>
+        <menuitem name="Show all" action="Show all"/>
+        <separator/>
+      </placeholder>
       <menuitem name="Toolbar" action="Toolbar"/>
       <menuitem name="Shortcut bar" action="Shortcut bar"/>
       <menuitem name="Status bar" action="Status bar"/>
     </menu>
     <menu name="actionsmenu" action="actionsmenu">
       <menuitem name="Select/Find" action="Select/Find"/>
-      <menuitem name="Show only selected" action="Show only selected"/>
-      <menuitem name="Show all" action="Show all"/>
+      <menuitem name="Filter" action="Filter"/>
       <separator/>
       <menuitem name="Refresh" action="Refresh"/>
       <menuitem name="Run" action="Run"/>
@@ -269,15 +274,15 @@ Viewing radio button for switch '', options Discard/Refine/Extend/Exclude'. Defa
 Viewing action with title '_Select/Find', stock id ''gtk-find'', accelerator ''<control>s''
 ...........
 Viewing radio button for switch '', options Discard/Refine/Extend'. Default value 0.
-Showing filter button
+Viewing action with title 'Filter', stock id ''gtk-find'', accelerator ''<control>f''
 
-Changing GUI status to: 'TextTest started at 29Apr11:53:37.'
+Changing GUI status to: 'TextTest started at 29Apr14:28:32.'
 
 Waiting for application event 'all tests to be read' to occur.
 
 Changing GUI status to: 'Reading tests ...'
 
-Changing GUI status to: 'Reading tests completed at 29Apr11:53:37.'
+Changing GUI status to: 'Reading tests completed at 29Apr14:28:33.'
 
 Test Tree description...
 -> TargetApp (apc)
@@ -330,7 +335,7 @@ Viewing radio button for switch '', options Discard/Refine/Extend/Exclude'. Defa
 Viewing action with title '_Select/Find', stock id ''gtk-find'', accelerator ''<control>s''
 ...........
 Viewing radio button for switch '', options Discard/Refine/Extend'. Default value 0.
-Showing filter button
+Viewing action with title 'Filter', stock id ''gtk-find'', accelerator ''<control>f''
 Expected application event 'all tests to be read' occurred, proceeding.
 
 'set test selection to' event created with arguments 'RD_lh_pac'
