@@ -1,9 +1,9 @@
 Enabling entry completion, using matching 1
 Adding entry completion '<default>' ...
 Adding entry completion '1' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.29Apr142749/texttest/TestSelf/ErrorHandling/GUI/CopyRenameRemoveBug/TargetApp/Diagnostics/log4py.conf' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.29Apr142749/texttest/TestSelf/ErrorHandling/GUI/CopyRenameRemoveBug/TargetApp/Diagnostics' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.29Apr142749/texttest/TestSelf/ErrorHandling/GUI/CopyRenameRemoveBug/texttesttmp' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.09May144856.10596/texttest/TestSelf/ErrorHandling/GUI/CopyRenameRemoveBug/TargetApp/Diagnostics/log4py.conf' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.09May144856.10596/texttest/TestSelf/ErrorHandling/GUI/CopyRenameRemoveBug/TargetApp/Diagnostics' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.09May144856.10596/texttest/TestSelf/ErrorHandling/GUI/CopyRenameRemoveBug/texttesttmp' ...
 Top Window title is TextTest static GUI : management of tests for HELLO
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
@@ -181,13 +181,13 @@ Viewing action with title '_Select', stock id ''gtk-find'', accelerator ''<contr
 Viewing radio button for switch '', options Discard/Refine/Extend'. Default value 0.
 Viewing action with title 'Filter', stock id ''gtk-find'', accelerator ''<control>f''
 
-Changing GUI status to: 'TextTest started at 29Apr14:28:17.'
+Changing GUI status to: 'TextTest started at 09May14:49:24.'
 
 Waiting for application event 'all tests to be read' to occur.
 
 Changing GUI status to: 'Reading tests ...'
 
-Changing GUI status to: 'Reading tests completed at 29Apr14:28:17.'
+Changing GUI status to: 'Reading tests completed at 09May14:49:24.'
 
 Test Tree description...
 -> TargetApp (hello)
@@ -275,9 +275,11 @@ Changing GUI status to: 'Performed 'Paste tests from clipboard' on HELLO test-ca
 'rename selected test' event created with arguments ''
 Adding entry completion 'Test_copy' ...
 Adding entry completion 'Copy of Test' ...
-Viewing dialog with title 'Rename selected test'
+---------- Dialog 'Rename selected test' ----------
+Default action is labelled 'gtk-ok'
 Viewing entry for option '\nNew name' (set to 'Test_copy')
 Viewing entry for option '\nNew description' (set to 'Copy of Test')
+---------------------------------------------------
 
 'enter new name =' event created with arguments 'Test2'
 
@@ -293,12 +295,14 @@ Setting file-view title to 'Test2'
 Changing GUI status to: 'Renamed test Test_copy to Test2.'
 
 'remove selected files' event created with arguments ''
-CONFIRMATION: 
+---------- Dialog 'TextTest Confirmation' ----------
+Using stock icon 'gtk-dialog-warning'
 You are about to remove the test 'Test2' and all associated files.
 
 Note: This will remove files from the file system and hence may not be reversible.
 
 Are you sure you wish to proceed?
+----------------------------------------------------
 
 'answer yes to texttest confirmation' event created with arguments ''
 

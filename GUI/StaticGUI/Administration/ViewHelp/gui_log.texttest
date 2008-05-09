@@ -1,9 +1,9 @@
 Enabling entry completion, using matching 1
 Adding entry completion '<default>' ...
 Adding entry completion '1' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.29Apr142749/texttest/GUI/StaticGUI/Administration/ViewHelp/TargetApp/Diagnostics/log4py.conf' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.29Apr142749/texttest/GUI/StaticGUI/Administration/ViewHelp/TargetApp/Diagnostics' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.29Apr142749/texttest/GUI/StaticGUI/Administration/ViewHelp/texttesttmp' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.09May122923.7713/texttest/GUI/StaticGUI/Administration/ViewHelp/TargetApp/Diagnostics/log4py.conf' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.09May122923.7713/texttest/GUI/StaticGUI/Administration/ViewHelp/TargetApp/Diagnostics' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.09May122923.7713/texttest/GUI/StaticGUI/Administration/ViewHelp/texttesttmp' ...
 Top Window title is TextTest static GUI : management of tests for DIP
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
@@ -181,13 +181,13 @@ Viewing action with title '_Select', stock id ''gtk-find'', accelerator ''<contr
 Viewing radio button for switch '', options Discard/Refine/Extend'. Default value 0.
 Viewing action with title 'Filter', stock id ''gtk-find'', accelerator ''<control>f''
 
-Changing GUI status to: 'TextTest started at 29Apr14:28:24.'
+Changing GUI status to: 'TextTest started at 09May12:29:26.'
 
 Waiting for application event 'all tests to be read' to occur.
 
 Changing GUI status to: 'Reading tests ...'
 
-Changing GUI status to: 'Reading tests completed at 29Apr14:28:24.'
+Changing GUI status to: 'Reading tests completed at 09May12:29:26.'
 
 Test Tree description...
 -> TargetApp (dip)
@@ -229,6 +229,8 @@ Expected application event 'all tests to be read' occurred, proceeding.
 
 'show texttest migration notes' event created with arguments ''
 Adding entry completion 'output' ...
+---------- Dialog 'TextTest Migration Notes' ----------
+Default action is labelled 'gtk-close'
 Adding migration notes from file 'MigrationNotes_from_3.9':
 
 There isn't much migration to do in this release apart from upgrade PyGTK if you haven't done that 
@@ -338,6 +340,7 @@ was not well liked. In consequence it was not used much.
 So we've cleaned up the script, renamed it to PrintObsoleteVersions, added a load of tests and fixed
 a load of bugs. It now merely informs you of obsolete files, and leaves it up to you what to do
 with them. It doesn't assume you use CVS for your version control either (!)
+
 Adding migration notes from file 'MigrationNotes_from_3.8':
 
 For the first time in a long time 3.9 tries to remove a bunch of dubious old features...
@@ -554,6 +557,7 @@ TextTest that there is no standard file for version 2, rather than have it compa
 with improve.myapp.
 
 This has been a bit of a pain for a while so hopefully it will be more convenient now.
+
 Adding migration notes from file 'MigrationNotes_from_3.7':
 Following on from the GUI changes in 3.7, version 3.8 is also a release which emphasises GUI
 improvements. TextTest hopefully looks more like other GUIs than it used to: it has a proper
@@ -702,6 +706,8 @@ Previously this setting caused performance figures not to be compared if either 
 result was less than it. This behaviour is changed/fixed such that failure is triggered if either is
 above it. On upgrading to TextTest 3.8 you may suddenly get tests that are 1000% slower/faster that
 you hadn't noticed until now... (if using this setting)
+
+
 Adding migration notes from file 'MigrationNotes_from_3.6':
 It should not be necessary to explicitly migrate anything on upgrading to version 3.7, but note 
 that the following behaviour is changed as default:
@@ -825,6 +831,7 @@ A bug has been fixed whereby local links within test data structures are preserv
 than made to point to the master copy. A side-effect of this is that links that are local
 but point outside the structure (typically via ../ at the top level) will no longer work. 
 These will need to be changed to the absolute target location.
+
 Adding migration notes from file 'MigrationNotes_from_3.5':
 It should not be necessary to explicitly migrate anything on upgrading to version 3.6, but note 
 that the following behaviour is changed as default:
@@ -864,6 +871,7 @@ behaviour.
 
 This has generally been thought to be a good change, but the possibility is there to turn
 it off if you don't like it. Set auto_collapse_successful:0 to preserve the old behaviour.
+
 Adding migration notes from file 'MigrationNotes_from_3.4':
 (1) Due to resurrected support on Windows, the configuration 'unixConfig'
 is no longer present or necessary. The few UNIX-specific things left
@@ -929,7 +937,8 @@ cputime:apple
 
 config_module:default
 
-(This will not work as config_module will be entered in the section [performance_test_machine]. Use an [end] marker after the section.)
+(This will not work as config_module will be entered in the section [performance_test_machine]. Use an [end] marker after the section.) 
+
 Adding migration notes from file 'MigrationNotes_from_3.3':
 This only applies to users of the LSF module.
 
@@ -941,7 +950,8 @@ In the config file, the
 
 The environment variables
 LSF_RESOURCE and LSF_PROCESSES become
-QUEUE_SYSTEM_RESOURCE and QUEUE_SYSTEM_PROCESSES respectively.
+QUEUE_SYSTEM_RESOURCE and QUEUE_SYSTEM_PROCESSES respectively. 
+
 Adding migration notes from file 'MigrationNotes_from_3.10':
 
 This file also details behaviour of TextTest 3.11 which will be different from TextTest 3.10. You can
@@ -1025,6 +1035,8 @@ In TextTest 3.10 it is "bar". In TextTest 3.11 it is "foo".
 Hopefully such conflicting situations are fairly rare. But this might require some
 migration. Naturally, if in the above case you wish to preserve the 3.10 behaviour,
 copying the "environment.version" file to the test directory would achieve this.
+ 
+
 Adding migration notes from file 'MigrationNotes_from_3.1':
 Version 3.1.1 finally removes the "magical" pre-pend of checkout to relative paths in the environment and 
 some config file values. Instead, it exports the environment variable TEXTTEST_CHECKOUT so you can
@@ -1037,6 +1049,8 @@ binary:source/myprogram
 assuming this would be interpreted relative to the checkout, you now need to say
 
 binary:${TEXTTEST_CHECKOUT}/source/myprogram
+
+
 Adding migration notes from file 'MigrationNotes_from_2.x':
 Migration notes from TextTest 2.x
 =================================
@@ -1123,6 +1137,7 @@ As indicated above, we now force configurations to announce their config setting
 Therefore, a configuration should call setConfigDefault on each one from the configuration function setApplicationDefault(). 
 Types are inferred when reading the config file from the type of default values. app.getConfigList is deprecated, it is 
 replaced by app.getConfigValue which returns a wide variety of types.
+-------------------------------------------------------
 
 Changing GUI status to: ''
 
@@ -1131,21 +1146,33 @@ Changing GUI status to: ''
 'press close' event created with arguments ''
 
 'show component version information' event created with arguments ''
+---------- Dialog 'Version Information' ----------
+Default action is labelled 'gtk-close'
 Showing component versions: 
  TextTest: master
  Python: 2.4.3.final.0
  GTK: 2.10.14
  PyGTK: 2.10.6
+--------------------------------------------------
 
 Changing GUI status to: ''
 
 'press close' event created with arguments ''
 
 'show information about texttest' event created with arguments ''
+---------- Dialog 'About TextTest' ----------
+Default action is labelled 'gtk-close'
+TextTest is an application-independent tool for text-based
+functional testing. This means running a batch-mode program
+in lots of different ways, and using the text output produced
+as a means of controlling the behaviour of that application.
+---------------------------------------------
 
 Changing GUI status to: ''
 
 'press credits' event created with arguments ''
+---------- Dialog 'TextTest Credits' ----------
+Default action is labelled 'gtk-close'
 Showing credits:
 Code Maintainer:                                        
 
@@ -1165,10 +1192,13 @@ Contributors:
     Emily Bache
     Nicolas Gattario
     Claes Verdoes
+-----------------------------------------------
 
 'press close' event created with arguments ''
 
 'press license' event created with arguments ''
+---------- Dialog 'TextTest License' ----------
+Default action is labelled 'gtk-close'
 Showing license:
 TextTest : tool for automatic system-level acceptance testing
 Copyright (c) 2003 Geoff Bache
@@ -1183,15 +1213,19 @@ but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
 Lesser General Public License for more details. This can be found
 online at http://www.opensource.org/licenses/lgpl-license.php
+-----------------------------------------------
 
 'press close' event created with arguments ''
 
 'press versions' event created with arguments ''
+---------- Dialog 'Version Information' ----------
+Default action is labelled 'gtk-close'
 Showing component versions: 
  TextTest: master
  Python: 2.4.3.final.0
  GTK: 2.10.14
  PyGTK: 2.10.6
+--------------------------------------------------
 
 'press close' event created with arguments ''
 

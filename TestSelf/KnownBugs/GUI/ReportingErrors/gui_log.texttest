@@ -1,9 +1,9 @@
 Enabling entry completion, using matching 1
 Adding entry completion '<default>' ...
 Adding entry completion '1' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.29Apr142749/texttest/TestSelf/KnownBugs/GUI/ReportingErrors/TargetApp/Diagnostics/log4py.conf' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.29Apr142749/texttest/TestSelf/KnownBugs/GUI/ReportingErrors/TargetApp/Diagnostics' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.29Apr142749/texttest/TestSelf/KnownBugs/GUI/ReportingErrors/texttesttmp' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.09May144856.10596/texttest/TestSelf/KnownBugs/GUI/ReportingErrors/TargetApp/Diagnostics/log4py.conf' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.09May144856.10596/texttest/TestSelf/KnownBugs/GUI/ReportingErrors/TargetApp/Diagnostics' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.09May144856.10596/texttest/TestSelf/KnownBugs/GUI/ReportingErrors/texttesttmp' ...
 Top Window title is TextTest static GUI : management of tests for HELLO
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
@@ -181,13 +181,13 @@ Viewing action with title '_Select', stock id ''gtk-find'', accelerator ''<contr
 Viewing radio button for switch '', options Discard/Refine/Extend'. Default value 0.
 Viewing action with title 'Filter', stock id ''gtk-find'', accelerator ''<control>f''
 
-Changing GUI status to: 'TextTest started at 29Apr14:28:13.'
+Changing GUI status to: 'TextTest started at 09May14:49:20.'
 
 Waiting for application event 'all tests to be read' to occur.
 
 Changing GUI status to: 'Reading tests ...'
 
-Changing GUI status to: 'Reading tests completed at 29Apr14:28:13.'
+Changing GUI status to: 'Reading tests completed at 09May14:49:20.'
 
 Test Tree description...
 -> TargetApp (hello)
@@ -240,7 +240,8 @@ Adding entry completion 'errors' ...
 Adding entry completion 'free_text' ...
 Adding entry completion '<none>' ...
 Adding entry completion 'bugzilla' ...
-Viewing dialog with title 'Enter information for automatic interpretation of test failures'
+---------- Dialog 'Enter information for automatic interpretation of test failures' ----------
+Default action is labelled 'gtk-ok'
 Viewing entry for option 'Text or regexp to match'
 Viewing entry for option 'File to search in' (set to 'output') (drop-down list containing ['errors', 'output', 'free_text'])
 Viewing entry for option '\nVersion to report for'
@@ -252,14 +253,20 @@ Viewing entry for option 'Few-word summary (no bug system)'
 Viewing check button for switch 'Trigger if given text is NOT present'
 Viewing check button for switch 'Trigger even if other files differ (report as internal error)'
 Viewing check button for switch 'Trigger even if test would otherwise succeed'
+----------------------------------------------------------------------------------------------
 
 'press ok' event created with arguments ''
-ERROR: Must fill in the field 'text or regexp to match'
+---------- Dialog 'TextTest Error' ----------
+Default action is labelled 'gtk-ok'
+Using stock icon 'gtk-dialog-error'
+Must fill in the field 'text or regexp to match'
+---------------------------------------------
 
 'agree to texttest message' event created with arguments ''
 
 'enter failure information' event created with arguments ''
-Viewing dialog with title 'Enter information for automatic interpretation of test failures'
+---------- Dialog 'Enter information for automatic interpretation of test failures' ----------
+Default action is labelled 'gtk-ok'
 Viewing entry for option 'Text or regexp to match'
 Viewing entry for option 'File to search in' (set to 'output') (drop-down list containing ['errors', 'output', 'free_text'])
 Viewing entry for option '\nVersion to report for'
@@ -271,17 +278,23 @@ Viewing entry for option 'Few-word summary (no bug system)'
 Viewing check button for switch 'Trigger if given text is NOT present'
 Viewing check button for switch 'Trigger even if other files differ (report as internal error)'
 Viewing check button for switch 'Trigger even if test would otherwise succeed'
+----------------------------------------------------------------------------------------------
 
 'enter text or regexp to match =' event created with arguments 'foobar'
 
 'press ok' event created with arguments ''
 Adding entry completion 'foobar' ...
-ERROR: Must either provide a bug system or fill in both description and summary fields
+---------- Dialog 'TextTest Error' ----------
+Default action is labelled 'gtk-ok'
+Using stock icon 'gtk-dialog-error'
+Must either provide a bug system or fill in both description and summary fields
+---------------------------------------------
 
 'agree to texttest message' event created with arguments ''
 
 'enter failure information' event created with arguments ''
-Viewing dialog with title 'Enter information for automatic interpretation of test failures'
+---------- Dialog 'Enter information for automatic interpretation of test failures' ----------
+Default action is labelled 'gtk-ok'
 Viewing entry for option 'Text or regexp to match' (set to 'foobar')
 Viewing entry for option 'File to search in' (set to 'output') (drop-down list containing ['errors', 'output', 'free_text'])
 Viewing entry for option '\nVersion to report for'
@@ -293,16 +306,22 @@ Viewing entry for option 'Few-word summary (no bug system)'
 Viewing check button for switch 'Trigger if given text is NOT present'
 Viewing check button for switch 'Trigger even if other files differ (report as internal error)'
 Viewing check button for switch 'Trigger even if test would otherwise succeed'
+----------------------------------------------------------------------------------------------
 
 'enter extract info from bug system =' event created with arguments 'bugzilla'
 
 'press ok' event created with arguments ''
-ERROR: Must provide a bug ID if bug system is given
+---------- Dialog 'TextTest Error' ----------
+Default action is labelled 'gtk-ok'
+Using stock icon 'gtk-dialog-error'
+Must provide a bug ID if bug system is given
+---------------------------------------------
 
 'agree to texttest message' event created with arguments ''
 
 'enter failure information' event created with arguments ''
-Viewing dialog with title 'Enter information for automatic interpretation of test failures'
+---------- Dialog 'Enter information for automatic interpretation of test failures' ----------
+Default action is labelled 'gtk-ok'
 Viewing entry for option 'Text or regexp to match' (set to 'foobar')
 Viewing entry for option 'File to search in' (set to 'output') (drop-down list containing ['errors', 'output', 'free_text'])
 Viewing entry for option '\nVersion to report for'
@@ -314,13 +333,18 @@ Viewing entry for option 'Few-word summary (no bug system)'
 Viewing check button for switch 'Trigger if given text is NOT present'
 Viewing check button for switch 'Trigger even if other files differ (report as internal error)'
 Viewing check button for switch 'Trigger even if test would otherwise succeed'
+----------------------------------------------------------------------------------------------
 
 'enter extract info from bug system =' event created with arguments '<none>'
 
 'enter full description (no bug system) =' event created with arguments 'foobar'
 
 'press ok' event created with arguments ''
-ERROR: Must either provide a bug system or fill in both description and summary fields
+---------- Dialog 'TextTest Error' ----------
+Default action is labelled 'gtk-ok'
+Using stock icon 'gtk-dialog-error'
+Must either provide a bug system or fill in both description and summary fields
+---------------------------------------------
 
 'agree to texttest message' event created with arguments ''
 

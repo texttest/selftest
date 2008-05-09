@@ -1,9 +1,9 @@
 Enabling entry completion, using matching 1
 Adding entry completion '<default>' ...
 Adding entry completion '1' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.29Apr142749/texttest/GUI/StaticGUI/CVSPlugin/CVSStatus/TargetApp/Diagnostics/log4py.conf' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.29Apr142749/texttest/GUI/StaticGUI/CVSPlugin/CVSStatus/TargetApp/Diagnostics' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.29Apr142749/texttest/GUI/StaticGUI/CVSPlugin/CVSStatus/texttesttmp' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.09May144656.10399/texttest/GUI/StaticGUI/CVSPlugin/CVSStatus/TargetApp/Diagnostics/log4py.conf' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.09May144656.10399/texttest/GUI/StaticGUI/CVSPlugin/CVSStatus/TargetApp/Diagnostics' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.09May144656.10399/texttest/GUI/StaticGUI/CVSPlugin/CVSStatus/texttesttmp' ...
 Top Window title is TextTest static GUI : management of tests for DIP
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
@@ -235,13 +235,13 @@ Viewing action with title '_Select', stock id ''gtk-find'', accelerator ''<contr
 Viewing radio button for switch '', options Discard/Refine/Extend'. Default value 0.
 Viewing action with title 'Filter', stock id ''gtk-find'', accelerator ''<control>f''
 
-Changing GUI status to: 'TextTest started at 29Apr14:28:26.'
+Changing GUI status to: 'TextTest started at 09May14:46:58.'
 
 Waiting for application event 'all tests to be read' to occur.
 
 Changing GUI status to: 'Reading tests ...'
 
-Changing GUI status to: 'Reading tests completed at 29Apr14:28:27.'
+Changing GUI status to: 'Reading tests completed at 09May14:46:59.'
 
 Test Tree description...
 -> TargetApp (dip)
@@ -322,11 +322,13 @@ Tabs showing : Test, Selection, Running, Config
 Adding entry completion 'output' ...
 
 Changing GUI status to: 'Getting status for Game9952/S01.99'
-Showing CVS tree view dialog 'cvs status for the selected files' with header
+---------- Dialog 'cvs status for the selected files' ----------
+Default action is labelled 'gtk-close'
+Using Tree View layout with icon 'gtk-dialog-info', header :
 CVS status shown below.
 CVS command used: cvs -d /carm/2_CVS status -l
 Subdirectories were ignored, use CVS Status Recursive to get the status for all subdirectories.
-CVS tree view dialog: Using icon: 'gtk-dialog-info'
+
 CVS tree view dialog: Adding TargetApp as root, info Up-to-date
 CVS tree view dialog: Adding TargetApp/Game9952 as child of TargetApp, info Up-to-date
 CVS tree view dialog: Adding TargetApp/Game9952/S01.99 as child of TargetApp/Game9952, info Up-to-date
@@ -340,15 +342,18 @@ File: output.dip       	Status: Up-to-date
    Sticky Tag:		(none)
    Sticky Date:		(none)
    Sticky Options:	(none)
+----------------------------------------------------------------
 
 Changing GUI status to: 'Performed cvs status for the selected files.'
 
 'show cvs log' event created with arguments ''
-Showing CVS tree view dialog 'cvs log for the selected files' with header
+---------- Dialog 'cvs log for the selected files' ----------
+Default action is labelled 'gtk-close'
+Using Tree View layout with icon 'gtk-dialog-info', header :
 Showing logs for the CVS controlled files.
 CVS log command used: cvs -d /carm/2_CVS log -N -l
 Subdirectories were ignored, use CVS Log Recursive to see logs for all subdirectories.
-CVS tree view dialog: Using icon: 'gtk-dialog-info'
+
 CVS tree view dialog: Adding TargetApp as root, info Fri Mar 16 16:34:01 2007
 CVS tree view dialog: Adding TargetApp/Game9952 as child of TargetApp, info Fri Mar 16 16:34:01 2007
 CVS tree view dialog: Adding TargetApp/Game9952/S01.99 as child of TargetApp/Game9952, info Fri Mar 16 16:34:01 2007
@@ -372,16 +377,19 @@ Simplifying the TargetApp as much as possible
 revision 1.1
 date: 2007/02/13 16:01:40;  author: geoff;  state: Exp;
 Diplomacy judge moved into StaticGUI
+-------------------------------------------------------------
 
 'press close' event created with arguments ''
 Adding entry completion 'HEAD' ...
 
 'show cvs annotations' event created with arguments ''
-Showing CVS tree view dialog 'cvs annotate for the selected files' with header
+---------- Dialog 'cvs annotate for the selected files' ----------
+Default action is labelled 'gtk-close'
+Using Tree View layout with icon 'gtk-dialog-info', header :
 CVS annotations shown below.
 CVS command used: cvs -d /carm/2_CVS annotate -l
 Subdirectories were ignored, use CVS Annotate Recursive to get the annotations for all subdirectories.
-CVS tree view dialog: Using icon: 'gtk-dialog-info'
+
 CVS tree view dialog: Adding TargetApp as root, info /users/mattias/work/master/Testing/Automatic/texttest/GUI/StaticGUI/TargetApp/Game9952/S01.99/output.dip
 CVS tree view dialog: Adding TargetApp/Game9952 as child of TargetApp, info /users/mattias/work/master/Testing/Automatic/texttest/GUI/StaticGUI/TargetApp/Game9952/S01.99/output.dip
 CVS tree view dialog: Adding TargetApp/Game9952/S01.99 as child of TargetApp/Game9952, info /users/mattias/work/master/Testing/Automatic/texttest/GUI/StaticGUI/TargetApp/Game9952/S01.99/output.dip
@@ -389,14 +397,17 @@ CVS tree view dialog: Adding TargetApp/Game9952/S01.99/output.dip as child of Ta
 CVS tree view dialog: Showing CVS output
 Annotations for /users/mattias/work/master/Testing/Automatic/texttest/GUI/StaticGUI/TargetApp/Game9952/S01.99/output.dip
 ***************
+------------------------------------------------------------------
 
 'press close' event created with arguments ''
 
 'show cvs diffs' event created with arguments ''
-Showing CVS tree view dialog 'cvs diff for the selected files' with header
+---------- Dialog 'cvs diff for the selected files' ----------
+Default action is labelled 'gtk-close'
+Using Tree View layout with icon 'gtk-dialog-info', header :
 All CVS controlled files are up-to-date and unmodified compared to the latest repository version.
 Subdirectories were ignored, use CVS Difference Recursive to see differences for all subdirectories.
-CVS tree view dialog: Using icon: 'gtk-dialog-info'
+--------------------------------------------------------------
 
 'press close' event created with arguments ''
 
@@ -422,11 +433,13 @@ Setting sensitivity of action 'Create _File' to True
 'cvs status for the selected files' event created with arguments ''
 
 Changing GUI status to: 'Getting status for Game9952/S02'
-Showing CVS tree view dialog 'cvs status for the selected files' with header
+---------- Dialog 'cvs status for the selected files' ----------
+Default action is labelled 'gtk-close'
+Using Tree View layout with icon 'gtk-dialog-info', header :
 CVS status shown below.
 CVS command used: cvs -d /carm/2_CVS status -l
 Subdirectories were ignored, use CVS Status Recursive to get the status for all subdirectories.
-CVS tree view dialog: Using icon: 'gtk-dialog-info'
+
 CVS tree view dialog: Adding TargetApp as root, info Up-to-date
 CVS tree view dialog: Adding TargetApp/Game9952 as child of TargetApp, info Up-to-date
 CVS tree view dialog: Adding TargetApp/Game9952/S02 as child of TargetApp/Game9952, info Up-to-date
@@ -440,6 +453,7 @@ File: output.dip       	Status: Up-to-date
    Sticky Tag:		(none)
    Sticky Date:		(none)
    Sticky Options:	(none)
+----------------------------------------------------------------
 
 Changing GUI status to: 'Performed cvs status for the selected files.'
 
@@ -533,10 +547,12 @@ Changing GUI status to: 'Getting status for npstIII'
 Changing GUI status to: 'Analyzing status for TargetApp/npstIII/testsuite.dip'
 
 Changing GUI status to: 'Analyzing status for TargetApp/npstIII/Game47/testsuite.dip'
-Showing CVS tree view dialog 'recursive cvs status for the selected files' with header
+---------- Dialog 'recursive cvs status for the selected files' ----------
+Default action is labelled 'gtk-close'
+Using Tree View layout with icon 'gtk-dialog-info', header :
 CVS status shown below.
 CVS command used: cvs -d /carm/2_CVS status
-CVS tree view dialog: Using icon: 'gtk-dialog-info'
+
 CVS tree view dialog: Adding TargetApp as root, info Up-to-date
 CVS tree view dialog: Adding TargetApp/Game9952 as child of TargetApp, info Up-to-date
 CVS tree view dialog: Adding TargetApp/Game9952/S05 as child of TargetApp/Game9952, info Up-to-date
@@ -556,6 +572,7 @@ File: output.dip       	Status: Up-to-date
    Sticky Tag:		(none)
    Sticky Date:		(none)
    Sticky Options:	(none)
+--------------------------------------------------------------------------
 
 Changing GUI status to: 'Performed recursive cvs status for the selected files.'
 
