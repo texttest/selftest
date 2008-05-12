@@ -1,5 +1,5 @@
 Enabling entry completion, using matching 1
-Top Window title is TextTest dynamic GUI : testing SLEEP.killing2 (started at 12May14:01:19)
+Top Window title is TextTest dynamic GUI : testing SLEEP (started at 12May15:47:31)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -100,10 +100,9 @@ Tabs showing : Status
 
 Test progress:
 
-Changing GUI status to: 'TextTest started at 12May14:01:19.'
+Changing GUI status to: 'TextTest started at 12May15:47:32.'
 
-Waiting for application event 'all tests to be read' to occur.
-Waiting for application event 'test Basic to start' to occur.
+Waiting for application event 'completion of test actions' to occur.
 
 Test progress:
 --> Not started : 1, colour 'white', font 'bold'', visible=True
@@ -111,7 +110,7 @@ Test progress:
 Progress bar set to fraction 0.0, text '0 of 1 tests completed'
 
 Test Tree description...
--> TargetApp (sleep.killing2)
+-> TargetApp (sleep)
 ->   Basic
 
 Test column header set to 'Tests: 0/1 selected, none hidden'
@@ -124,32 +123,48 @@ Test progress:
 --> Pending : 1, colour 'white', font 'bold'', visible=True
 
 Redrawing test Basic coloured yellow
-(Second column 'RUN (forestville)' coloured yellow)
+(Second column 'RUN (wakeman)' coloured yellow)
 
 Test progress:
 --> Not started : 0, colour 'white', font ''', visible=True
 --> Pending : 0, colour 'white', font ''', visible=True
 --> Running : 1, colour 'yellow', font 'bold'', visible=True
-Expected application event 'all tests to be read' occurred, proceeding.
-Expected application event 'test Basic to start' occurred, proceeding.
+
+Progress bar set to fraction 1.0, text 'All 1 tests completed at 12May15:47:32'
+
+Redrawing test Basic coloured green
+Redrawing suite TargetApp : second column 'All 1 tests successful' coloured green
+
+Test progress:
+--> Not started : 0, colour 'white', font ''', visible=True
+--> Pending : 0, colour 'white', font ''', visible=True
+--> Running : 0, colour 'white', font ''', visible=True
+--> Succeeded : 1, colour 'green', font 'bold'', visible=True
+Expected application event 'completion of test actions' occurred, proceeding.
+
+'show test suite' event created with arguments 'TargetApp (sleep)'
+
+Test Tree description...
+-> TargetApp (sleep)
+->   Basic
 
 'set test selection to' event created with arguments 'Basic'
 
 Test column header set to 'Tests: All 1 selected, none hidden'
 Setting sensitivity of action 'S_ave Selection...' to True
-Setting sensitivity of action '_Kill' to True
+Setting sensitivity of action '_Mark' to True
 Setting sensitivity of action 'Recompute Status' to True
 
 Setting file-view title to 'Basic'
+Adding file errors.sleep under heading 'Comparison Files', coloured green
+Adding file output.sleep under heading 'Comparison Files', coloured green
 
 Pane separator positioned 46% from the top
 
 Tabs showing :
 
 ---------- Text Info Window ----------
-Running on forestville
-
-To obtain the latest progress information and an up-to-date comparison of the files above, perform 'recompute status' (press 'F5')
+Test succeeded on wakeman
 --------------------------------------
 
 Tabs showing : Test, Status
@@ -158,59 +173,34 @@ Tabs showing : Text Info
 
 'recompute test status, including progress information if appropriate' event created with arguments ''
 
-Changing GUI status to: 'Rereading configuration for SLEEP.killing2 ...'
+Changing GUI status to: 'Rereading configuration for SLEEP ...'
 
-Changing GUI status to: 'Recomputing status of SLEEP.killing2 test-case Basic ...'
+Changing GUI status to: 'Recomputing status of SLEEP test-case Basic ...'
 
-Redrawing test Basic coloured yellow
-(Second column 'RUN (forestville)' coloured yellow)
+Redrawing test Basic coloured green
+Redrawing suite TargetApp : second column 'All 1 tests successful' coloured green
 
-Setting file-view title to 'Basic'
+Test column header set to 'Tests: 0/1 selected, none hidden'
+Setting sensitivity of action 'S_ave Selection...' to False
+Setting sensitivity of action '_Mark' to False
+Setting sensitivity of action 'Recompute Status' to False
 
----------- Text Info Window ----------
-Running on forestville
+Test progress:
+--> Not started : 0, colour 'white', font ''', visible=True
+--> Pending : 0, colour 'white', font ''', visible=True
+--> Running : 0, colour 'white', font ''', visible=True
+--> Succeeded : 1, colour 'green', font 'bold'', visible=True
 
-To obtain the latest progress information and an up-to-date comparison of the files above, perform 'recompute status' (press 'F5')
---------------------------------------
+Tabs showing : Status
+
+Test progress:
+--> Not started : 0, colour 'white', font ''', visible=True
+--> Pending : 0, colour 'white', font ''', visible=True
+--> Running : 0, colour 'white', font ''', visible=True
+--> Succeeded : 1, colour 'green', font 'bold'', visible=True
 
 Changing GUI status to: 'Recomputed status of 1 test.'
 
 'quit' event created with arguments ''
-
-Changing GUI status to: 'Killing all running tests ...'
-
-Changing GUI status to: 'Killed all running tests.'
-
-Changing GUI status to: 'Waiting for all tests to terminate ...'
-
-Progress bar set to fraction 1.0, text 'All 1 tests completed at 12May14:01:21'
-
-Redrawing test Basic coloured red
-(Second column 'killed at 16:15' coloured red)
-
-Setting file-view title to 'Basic'
-Adding file errors.sleep under heading 'Comparison Files', coloured green
-Adding file output.sleep under heading 'Comparison Files', coloured red
-
----------- Text Info Window ----------
-Test were terminated before completion (killed at 16:15) on forestville :
-Test killed explicitly at 16:15
------------------- Differences in output --------------------
-1,2c1
-< Sleeping for 5 seconds...
-< Done
----
-> Sleeping for 1000 seconds...
---------------------------------------
-Setting sensitivity of action '_Kill' to False
-Setting sensitivity of action '_Mark' to True
-Setting sensitivity of action '_Save' to True
-
-Tabs showing : Text Info, Saving
-Only one test found, selecting Basic
-
-Setting file-view title to 'Basic'
-Adding file errors.sleep under heading 'Comparison Files', coloured green
-Adding file output.sleep under heading 'Comparison Files', coloured red
 
 Changing GUI status to: 'Removing all temporary files ...'
