@@ -1,9 +1,9 @@
 Enabling entry completion, using matching 1
 Adding entry completion '<default>' ...
 Adding entry completion '1' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.12May113238.9716/texttest/GUI/QuitConfirmation/AllStatic/TargetApp/Diagnostics/log4py.conf' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.12May113238.9716/texttest/GUI/QuitConfirmation/AllStatic/TargetApp/Diagnostics' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.12May113238.9716/texttest/GUI/QuitConfirmation/AllStatic/texttesttmp' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.12May114214.11815/texttest/GUI/QuitConfirmation/AllStatic/TargetApp/Diagnostics/log4py.conf' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.12May114214.11815/texttest/GUI/QuitConfirmation/AllStatic/TargetApp/Diagnostics' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.12May114214.11815/texttest/GUI/QuitConfirmation/AllStatic/texttesttmp' ...
 Top Window title is TextTest static GUI : management of tests for HELLO
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
@@ -135,6 +135,9 @@ UI layout:
     <separator/>
     <menuitem name="Enter Failure Information" action="Enter Failure Information"/>
     <separator/>
+    <menuitem name="Show only selected" action="Show only selected"/>
+    <menuitem name="Hide selected" action="Hide selected"/>
+    <separator/>
     <menu name="reordermenu" action="reordermenu">
       <menuitem name="Move to first" action="Move to first"/>
       <menuitem name="Move up" action="Move up"/>
@@ -183,13 +186,13 @@ Viewing action with title '_Select', stock id ''gtk-find'', accelerator ''<contr
 Viewing radio button for switch '', options Discard/Refine/Extend'. Default value 0.
 Viewing action with title 'Filter', stock id ''gtk-find'', accelerator ''<control>f''
 
-Changing GUI status to: 'TextTest started at 12May11:33:06.'
+Changing GUI status to: 'TextTest started at 12May11:43:03.'
 
 Waiting for application event 'all tests to be read' to occur.
 
 Changing GUI status to: 'Reading tests ...'
 
-Changing GUI status to: 'Reading tests completed at 12May11:33:06.'
+Changing GUI status to: 'Reading tests completed at 12May11:43:04.'
 
 Test Tree description...
 -> TargetApp (hello)
@@ -245,23 +248,23 @@ Description:
 Tabs showing : Test, Selection, Running, Config
 
 'select file' event created with arguments 'output.hello'
-Viewing file /carm/proj/texttest-tmp/geoff/texttest.12May113238.9716/texttest/GUI/QuitConfirmation/AllStatic/TargetApp/Test/output.hello using 'emacs', refresh set to False
+Viewing file /carm/proj/texttest-tmp/geoff/texttest.12May114214.11815/texttest/GUI/QuitConfirmation/AllStatic/TargetApp/Test/output.hello using 'emacs', refresh set to False
 
 Changing GUI status to: 'Started "emacs output.hello" in background (from test Test).'
 
 'run selected tests' event created with arguments ''
 Adding entry completion 'output' ...
-Starting dynamic run of TextTest with arguments ['-g', '-a', 'hello', '-cp', '1', '-xr', '/carm/proj/texttest-tmp/geoff/texttest.12May113238.9716/texttest/GUI/QuitConfirmation/AllStatic/TargetApp/Diagnostics/log4py.conf', '-xw', '/carm/proj/texttest-tmp/geoff/texttest.12May113238.9716/texttest/GUI/QuitConfirmation/AllStatic/TargetApp/Diagnostics', '-count', '1', '-f', '/carm/proj/texttest-tmp/geoff/texttest.12May113238.9716/texttest/GUI/QuitConfirmation/AllStatic/texttesttmp/static_gui.12May113305.14117/dynamic_run1/gui_select', '-fd', '/carm/proj/texttest-tmp/geoff/texttest.12May113238.9716/texttest/GUI/QuitConfirmation/AllStatic/texttesttmp/static_gui.12May113305.14117/temporary_filter_files']
+Starting dynamic run of TextTest with arguments ['-g', '-a', 'hello', '-cp', '1', '-xr', '/carm/proj/texttest-tmp/geoff/texttest.12May114214.11815/texttest/GUI/QuitConfirmation/AllStatic/TargetApp/Diagnostics/log4py.conf', '-xw', '/carm/proj/texttest-tmp/geoff/texttest.12May114214.11815/texttest/GUI/QuitConfirmation/AllStatic/TargetApp/Diagnostics', '-count', '1', '-f', '/carm/proj/texttest-tmp/geoff/texttest.12May114214.11815/texttest/GUI/QuitConfirmation/AllStatic/texttesttmp/static_gui.12May114303.8844/dynamic_run1/gui_select', '-fd', '/carm/proj/texttest-tmp/geoff/texttest.12May114214.11815/texttest/GUI/QuitConfirmation/AllStatic/texttesttmp/static_gui.12May114303.8844/temporary_filter_files']
 
-Changing GUI status to: 'Started HELLO test-case Test at 12May11:33:07.'
+Changing GUI status to: 'Started HELLO test-case Test at 12May11:43:04.'
 
 'quit' event created with arguments ''
 ---------- Dialog 'TextTest Confirmation' ----------
 Using stock icon 'gtk-dialog-warning'
 These processes are still running, and will be terminated when quitting: 
 
-   + PID 14131 : emacs output.hello (from test Test)
-   + PID 14133 : Dynamic GUI started at 12May11:33:07
+   + PID 8857 : emacs output.hello (from test Test)
+   + PID 8860 : Dynamic GUI started at 12May11:43:04
 
 Quit anyway?
 ----------------------------------------------------
@@ -282,7 +285,7 @@ Expected application event 'dynamic GUI to be closed' occurred, proceeding.
 Using stock icon 'gtk-dialog-warning'
 These processes are still running, and will be terminated when quitting: 
 
-   + PID 14131 : emacs output.hello (from test Test)
+   + PID 8857 : emacs output.hello (from test Test)
 
 Quit anyway?
 ----------------------------------------------------
