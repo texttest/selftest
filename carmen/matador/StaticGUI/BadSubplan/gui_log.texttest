@@ -2,12 +2,12 @@ Enabling entry completion, using matching 1
 Adding entry completion '<default>' ...
 Adding entry completion '/carm/proj/texttest/selftest_data' ...
 Adding entry completion '1' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.09May144856.10596/texttest.carmen/carmen/matador/StaticGUI/BadSubplan/TargetApp/Diagnostics/log4py.conf' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.09May144856.10596/texttest.carmen/carmen/matador/StaticGUI/BadSubplan/TargetApp/Diagnostics' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.12May113238.9716/texttest.carmen/carmen/matador/StaticGUI/BadSubplan/TargetApp/Diagnostics/log4py.conf' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.12May113238.9716/texttest.carmen/carmen/matador/StaticGUI/BadSubplan/TargetApp/Diagnostics' ...
 Adding entry completion 'short' ...
 Adding entry completion 'normal' ...
 Adding entry completion 'idle' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.09May144856.10596/texttest.carmen/carmen/matador/StaticGUI/BadSubplan/texttesttmp' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.12May113238.9716/texttest.carmen/carmen/matador/StaticGUI/BadSubplan/texttesttmp' ...
 Adding entry completion '0:' ...
 Adding entry completion 'minutes' ...
 Adding entry completion 'hours' ...
@@ -53,6 +53,7 @@ Viewing action with title 'Create _File', stock id ''gtk-new'' (greyed out)
 Viewing action with title 'Enter Failure Information', stock id ''gtk-info'', accelerator ''<control>i'' (greyed out)
 Viewing action with title 'Refresh', stock id ''gtk-refresh'', accelerator ''F5''
 Viewing action with title 'Show only selected' (greyed out)
+Viewing action with title 'Hide selected' (greyed out)
 Viewing action with title 'Show all'
 Viewing action with title 'R_eset', stock id ''gtk-revert-to-saved'', accelerator ''<control>e''
 Viewing action with title '_Rename...', stock id ''gtk-italic'', accelerator ''<control>m'' (greyed out)
@@ -123,6 +124,7 @@ UI layout:
     <menu name="viewmenu" action="viewmenu">
       <placeholder name="FirstInViewMenu">
         <menuitem name="Show only selected" action="Show only selected"/>
+        <menuitem name="Hide selected" action="Hide selected"/>
         <menuitem name="Show all" action="Show all"/>
         <separator/>
       </placeholder>
@@ -298,13 +300,13 @@ Viewing action with title '_Select', stock id ''gtk-find'', accelerator ''<contr
 Viewing radio button for switch '', options Discard/Refine/Extend'. Default value 0.
 Viewing action with title 'Filter', stock id ''gtk-find'', accelerator ''<control>f''
 
-Changing GUI status to: 'TextTest started at 09May14:49:37.'
+Changing GUI status to: 'TextTest started at 12May11:33:17.'
 
 Waiting for application event 'all tests to be read' to occur.
 
 Changing GUI status to: 'Reading tests ...'
 
-Changing GUI status to: 'Reading tests completed at 09May14:49:38.'
+Changing GUI status to: 'Reading tests completed at 12May11:33:18.'
 
 Test Tree description...
 -> TargetApp (cas)
@@ -378,6 +380,7 @@ Setting sensitivity of action 'Add Test' to True
 Setting sensitivity of action 'Add Suite' to True
 Setting sensitivity of action 'Enter Failure Information' to True
 Setting sensitivity of action 'Show only selected' to True
+Setting sensitivity of action 'Hide selected' to True
 Setting sensitivity of action 'Remove...' to True
 Setting sensitivity of action '_Sort Test Suite File' to True
 Setting sensitivity of action '_Reversed Sort Test Suite File' to True
@@ -512,8 +515,8 @@ Viewing action with title '_Run', stock id ''gtk-execute'', accelerator ''<contr
 'view sub-options for running :' event created with arguments 'Advanced'
 
 Viewing notebook page for 'Advanced'
-Viewing entry for option 'Configure self-diagnostics from' (set to '/carm/proj/texttest-tmp/geoff/texttest.09May144856.10596/texttest.carmen/carmen/matador/StaticGUI/BadSubplan/TargetApp/Diagnostics/log4py.conf')
-Viewing entry for option 'Write self-diagnostics to' (set to '/carm/proj/texttest-tmp/geoff/texttest.09May144856.10596/texttest.carmen/carmen/matador/StaticGUI/BadSubplan/TargetApp/Diagnostics')
+Viewing entry for option 'Configure self-diagnostics from' (set to '/carm/proj/texttest-tmp/geoff/texttest.12May113238.9716/texttest.carmen/carmen/matador/StaticGUI/BadSubplan/TargetApp/Diagnostics/log4py.conf')
+Viewing entry for option 'Write self-diagnostics to' (set to '/carm/proj/texttest-tmp/geoff/texttest.12May113238.9716/texttest.carmen/carmen/matador/StaticGUI/BadSubplan/TargetApp/Diagnostics')
 Viewing entry for option 'Run batch mode session'
 Viewing entry for option 'Request SGE resource'
 Viewing entry for option 'Request SGE queue' (drop-down list containing ['', 'short', 'normal', 'idle'])
@@ -561,9 +564,9 @@ CPU time   :      0.95 sec. on easthartford
 
 'run selected tests' event created with arguments ''
 Adding entry completion '/carm/proj/texttest/selftest_data/CARMSYS' ...
-Starting dynamic run of TextTest with arguments ['-g', '-a', 'cas', '-c', '/carm/proj/texttest/selftest_data', '-cp', '1', '-l', '-xr', '/carm/proj/texttest-tmp/geoff/texttest.09May144856.10596/texttest.carmen/carmen/matador/StaticGUI/BadSubplan/TargetApp/Diagnostics/log4py.conf', '-xw', '/carm/proj/texttest-tmp/geoff/texttest.09May144856.10596/texttest.carmen/carmen/matador/StaticGUI/BadSubplan/TargetApp/Diagnostics', '-keeptmp', '-count', '1', '-f', '/carm/proj/texttest-tmp/geoff/texttest.09May144856.10596/texttest.carmen/carmen/matador/StaticGUI/BadSubplan/texttesttmp/static_gui.09May144936.9800/dynamic_run1/gui_select', '-fd', '/carm/proj/texttest-tmp/geoff/texttest.09May144856.10596/texttest.carmen/carmen/matador/StaticGUI/BadSubplan/texttesttmp/static_gui.09May144936.9800/temporary_filter_files']
+Starting dynamic run of TextTest with arguments ['-g', '-a', 'cas', '-c', '/carm/proj/texttest/selftest_data', '-cp', '1', '-l', '-xr', '/carm/proj/texttest-tmp/geoff/texttest.12May113238.9716/texttest.carmen/carmen/matador/StaticGUI/BadSubplan/TargetApp/Diagnostics/log4py.conf', '-xw', '/carm/proj/texttest-tmp/geoff/texttest.12May113238.9716/texttest.carmen/carmen/matador/StaticGUI/BadSubplan/TargetApp/Diagnostics', '-keeptmp', '-count', '1', '-f', '/carm/proj/texttest-tmp/geoff/texttest.12May113238.9716/texttest.carmen/carmen/matador/StaticGUI/BadSubplan/texttesttmp/static_gui.12May113316.18515/dynamic_run1/gui_select', '-fd', '/carm/proj/texttest-tmp/geoff/texttest.12May113238.9716/texttest.carmen/carmen/matador/StaticGUI/BadSubplan/texttesttmp/static_gui.12May113316.18515/temporary_filter_files']
 
-Changing GUI status to: 'Started Matador test-case 2crew_illegal_subchain at 09May14:49:40.'
+Changing GUI status to: 'Started Matador test-case 2crew_illegal_subchain at 12May11:33:19.'
 
 Waiting for application event 'dynamic GUI to be closed' to occur.
 
