@@ -1,6 +1,7 @@
 #!/usr/bin/env python
-import os, log4py
+import os, log4py, time
 
+time.sleep(int(os.getenv("SLEEP_TIME", "0")))
 print "This is a simple diagnostic-writing program"
 
 # Point log4py at the configuration file to read
