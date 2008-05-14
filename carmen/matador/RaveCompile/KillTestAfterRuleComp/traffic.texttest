@@ -1,0 +1,19 @@
+<-SRV:TextTest slave server started on 192.168.98.14:43634
+<-CMD:cd /nfs/vm/texttest-tmp/geoff/texttest.carmen.14May134219.8745/texttest.carmen/carmen/matador/RaveCompile/KillTestAfterRuleComp/texttesttmp/dynamic_gui.14May134221.8757/slavelogs; env 'CARMSYS=/carm/proj/texttest/selftest_data/CARMSYS' 'CARMUSR=/carm/proj/texttest/selftest_data/CARMUSRs/Matador_user' 'CARMTMP=/carm/proj/texttest/selftest_data/CARMTMPs/Matador_tmp' '_AUTOTEST__LOCAL_COMPILE_=1' qsub -N Rules-Matador_5.ArtificialUser-matador -l "carmarch=*i386_linux*,carmbuildmaster=1,rave" -w e -notify -m n -cwd -b y -V -o Rules-Matador_5.ArtificialUser-matador.log -e Rules-Matador_5.ArtificialUser-matador.errors 'exec $SHELL -c "exec /carm/proj/texttest/release/current/bin/remotecmd.py Matador_5./carm/proj/texttest/selftest_data/CARMTMPs/Matador_tmp 192.168.98.14:43632 /carm/proj/texttest/selftest_data/CARMSYS/bin/crc_compile matador -optimize -archs i386_linux /carm/proj/texttest/selftest_data/CARMUSRs/Matador_user/crc/source/Matador_5"'
+->OUT:Your job 2351524 ("Rules-Matador_5.ArtificialUser-matador") has been submitted
+<-SRV:Completed submission of all rule compilations and tests that don't require rule compilation
+->CLI:remotecmd.py:Matador_5./carm/proj/texttest/selftest_data/CARMTMPs/Matador_tmp:start
+->CLI:remotecmd.py:Matador_5./carm/proj/texttest/selftest_data/CARMTMPs/Matador_tmp:exitcode=0
+Build Rave program Matador_5 started on smithville, 14 May 13:42
+Generating code... done.
+Building for matador on localhost - 0 files out of 2 need to be compiled
+Compiling... done.
+Installing matador on architecture i386_linux... done.
+Build Rave program finished at 14 May 13:42
+Cleaning up... done.
+|STD_ERR|
+<-CMD:cd /nfs/vm/texttest-tmp/geoff/texttest.carmen.14May134219.8745/texttest.carmen/carmen/matador/RaveCompile/KillTestAfterRuleComp/texttesttmp/dynamic_gui.14May134221.8757/slavelogs; env 'USECASE_RECORD_SCRIPT=' 'USECASE_REPLAY_SCRIPT=' qsub -N Test-matador_2.ArtificialUser-Matador -p -0.83 -l "carmarch=*i386_linux*,carmrunmaster=1,osversion=RHEL4,model=Opteron*,short" -w e -notify -m n -cwd -b y -V -o Test-matador_2.ArtificialUser-Matador.log -e Test-matador_2.ArtificialUser-Matador.errors 'exec $SHELL -c "exec /carm/proj/texttest/release/current/bin/texttest -d /carm/proj/texttest-tmp/geoff/texttest.carmen.14May134219.8745/texttest.carmen/carmen/matador/RaveCompile/KillTestAfterRuleComp/TargetApp -a cas -l -tp ArtificialUser/matador_2 -slave /carm/proj/texttest-tmp/geoff/texttest.carmen.14May134219.8745/texttest.carmen/carmen/matador/RaveCompile/KillTestAfterRuleComp/texttesttmp/dynamic_gui.14May134221.8757 -servaddr 192.168.98.14:43632 -x -xr /carm/proj/texttest-tmp/geoff/texttest.carmen.14May134219.8745/texttest.carmen/carmen/matador/RaveCompile/KillTestAfterRuleComp/logging -xw /nfs/vm/texttest-tmp/geoff/texttest.carmen.14May134219.8745/texttest.carmen/carmen/matador/RaveCompile/KillTestAfterRuleComp/Test-matador_2.ArtificialUser-Matador"'
+->OUT:Your job 2351525 ("Test-matador_2.ArtificialUser-Matador") has been submitted
+<-SRV:Completed submission of all tests
+<-CMD:qdel 2351525
+->OUT:geoff has deleted job 2351525
