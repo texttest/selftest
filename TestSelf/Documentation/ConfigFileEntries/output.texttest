@@ -1,4 +1,4 @@
-TextTest will write diagnostics in /nfs/vm/texttest-tmp/geoff/texttest.30Apr164129/texttest/TestSelf/Documentation/ConfigFileEntries based on file at /carm/proj/texttest-tmp/geoff/texttest.30Apr164129/texttest/TestSelf/Documentation/ConfigFileEntries/logging
+TextTest will write diagnostics in /nfs/vm/texttest-tmp/geoff/texttest.16May114524.610/texttest/TestSelf/Documentation/ConfigFileEntries based on file at /carm/proj/texttest-tmp/geoff/texttest.16May114524.610/texttest/TestSelf/Documentation/ConfigFileEntries/logging
 Using Application APPIDENTIFIER
 auto_collapse_successful|1|Automatically collapse successful test suites?
 auto_sort_test_suites|0|Automatically sort test suites in alphabetical order. 1 means sort in ascending order, -1 means sort in descending order.
@@ -12,6 +12,7 @@ batch_timelimit|{'default': ''}|Maximum length of test to include in batch mode 
 batch_use_collection|{'default': 'false'}|Do we collect multiple mails into one in batch mode
 batch_use_version_filtering|{'default': 'false'}|Which batch sessions use the version filtering mechanism
 batch_version|{'default': []}|List of versions to allow if batch_use_version_filtering enabled
+binary||Alias. See entry for 'executable'
 binary_file|[]|Which output files are known to be binary, and hence should not be shown/diffed?
 bug_system_script|{'default': ''}|The location of the script used to extract information from the bug system.
 catalogue_process_string||String for catalogue functionality to identify processes created
@@ -31,6 +32,7 @@ definition_file_stems|['environment', 'testsuite', 'options', 'usecase', 'traffi
 diff_program|{'default': 'tkdiff'}|External program to use for graphical file comparison
 discard_file|[]|List of generated result files which should not be compared
 executable||Full path to the System Under Test
+extra_config_directory|{'default': []}|Alias. See entry for 'extra_search_directory'
 extra_search_directory|{'default': []}|Additional directories to search for settings besides the test structure
 extra_version|[]|Versions to be run in addition to the one specified
 failure_display_priority|{'default': 99}|Mapping of result files to which order they should be shown in the text info window.
@@ -76,6 +78,7 @@ test_colours|{'success': 'green', 'default': 'red', 'not_started': 'white', 'mar
 test_data_environment|{}|Environment variables to be redirected for linked/copied test data
 test_data_ignore|{'default': []}|Elements under test data structures which should not be viewed or change-monitored
 test_data_properties|{'default': ''}|Write the contents of test_data_environment to the given Java properties file
+test_data_searchpath|{'default': []}|Alias. See entry for 'extra_search_directory'
 test_list_files_directory|['filter_files']|Default directories for test filter files, relative to an application directory.
 testoverview_colours|{'performance_bg': '#FFC6A5', 'row_header_bg': '#FFFFCC', 'test_default_fg': 'black', 'column_header_bg': 'gray1', 'success_bg': '#CEEFBD', 'column_header_fg': 'black', 'failure_bg': '#FF3118', 'no_results_bg': 'gray2', 'memory_bg': 'pink', 'performance_fg': 'red6'}|Colours to use for historical batch HTML reports
 text_diff_program|diff|External program to use for textual comparison of files
