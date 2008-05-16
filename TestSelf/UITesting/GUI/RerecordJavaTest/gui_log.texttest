@@ -1,10 +1,10 @@
 Enabling entry completion, using matching 1
 Adding entry completion '<default>' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.12May114214.11815/texttest/TestSelf/UITesting/GUI/RerecordJavaTest/TargetApp/source_with_pyc' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.16May165611.10184/texttest/TestSelf/UITesting/GUI/RerecordJavaTest/TargetApp/source_with_pyc' ...
 Adding entry completion '1' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.12May114214.11815/texttest/TestSelf/UITesting/GUI/RerecordJavaTest/TargetApp/Diagnostics/log4py.conf' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.12May114214.11815/texttest/TestSelf/UITesting/GUI/RerecordJavaTest/TargetApp/Diagnostics' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.12May114214.11815/texttest/TestSelf/UITesting/GUI/RerecordJavaTest/texttesttmp' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.16May165611.10184/texttest/TestSelf/UITesting/GUI/RerecordJavaTest/TargetApp/Diagnostics/log4py.conf' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.16May165611.10184/texttest/TestSelf/UITesting/GUI/RerecordJavaTest/TargetApp/Diagnostics' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.16May165611.10184/texttest/TestSelf/UITesting/GUI/RerecordJavaTest/texttesttmp' ...
 Top Window title is TextTest static GUI : management of tests for VideoStore
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
@@ -42,11 +42,11 @@ Viewing action with title 'S_ave Selection...', stock id ''gtk-save-as'', accele
 Viewing action with title '_Migration Notes'
 Viewing action with title 'Component _Versions'
 Viewing action with title '_About TextTest', stock id ''gtk-about''
-Viewing action with title 'Record _Use-Case', stock id ''gtk-media-record'' (greyed out)
 Viewing action with title '_Select', stock id ''gtk-find'', accelerator ''<control>s''
 Viewing action with title 'Filter', stock id ''gtk-find'', accelerator ''<control>f''
 Viewing action with title '_Run', stock id ''gtk-execute'', accelerator ''<control>r'' (greyed out)
 Viewing action with title '_Run', stock id ''gtk-execute'', accelerator ''<control>r'' (greyed out)
+Viewing action with title 'Record _Use-Case', stock id ''gtk-media-record'', accelerator ''F9'' (greyed out)
 Viewing action with title 'Re_connect', stock id ''gtk-connect'', accelerator ''<control><shift>r'' (greyed out)
 
 UI layout: 
@@ -187,13 +187,13 @@ Viewing action with title '_Select', stock id ''gtk-find'', accelerator ''<contr
 Viewing radio button for switch '', options Discard/Refine/Extend'. Default value 0.
 Viewing action with title 'Filter', stock id ''gtk-find'', accelerator ''<control>f''
 
-Changing GUI status to: 'TextTest started at 12May11:42:43.'
+Changing GUI status to: 'TextTest started at 16May16:56:22.'
 
 Waiting for application event 'all tests to be read' to occur.
 
 Changing GUI status to: 'Reading tests ...'
 
-Changing GUI status to: 'Reading tests completed at 12May11:42:44.'
+Changing GUI status to: 'Reading tests completed at 16May16:56:22.'
 
 Test Tree description...
 -> TargetApp (gui)
@@ -235,9 +235,9 @@ Setting sensitivity of action 'Remove...' to True
 Setting sensitivity of action 'Move down' to True
 Setting sensitivity of action 'Move to last' to True
 Setting sensitivity of action 'S_ave Selection...' to True
+Setting sensitivity of action '_Run' to True
+Setting sensitivity of action '_Run' to True
 Setting sensitivity of action 'Record _Use-Case' to True
-Setting sensitivity of action '_Run' to True
-Setting sensitivity of action '_Run' to True
 Setting sensitivity of action 'Re_connect' to True
 
 Setting file-view title to 'AddMovie'
@@ -248,8 +248,6 @@ Adding file usecase.gui under heading 'Definition Files', coloured grey90
 
 Pane separator positioned 46% from the top
 
-Tabs showing :
-
 ---------- Text Info Window ----------
 Description:
 <No description provided>
@@ -257,31 +255,43 @@ Description:
 
 Tabs showing : Test, Selection, Running, Config
 
-Tabs showing : Text Info, Recording
+'view options for' event created with arguments 'Running'
+
+Tabs showing : Basic, Advanced, Recording, Reconnect
+
+Viewing notebook page for 'Basic'
+Viewing entry for option 'Run this version'
+Viewing entry for option 'Use checkout' (set to '/carm/proj/texttest-tmp/geoff/texttest.16May165611.10184/texttest/TestSelf/UITesting/GUI/RerecordJavaTest/TargetApp/source_with_pyc')
+Viewing entry for option 'Times to run' (set to '1')
+Viewing check button for switch 'Run with slow motion replay'
+Viewing action with title '_Run', stock id ''gtk-execute'', accelerator ''<control>r''
+
+'view sub-options for running :' event created with arguments 'Recording'
+
+Viewing notebook page for 'Recording'
+Viewing entry for option 'Version to record'
+Viewing entry for option 'Checkout to use for recording' (set to '/carm/proj/texttest-tmp/geoff/texttest.16May165611.10184/texttest/TestSelf/UITesting/GUI/RerecordJavaTest/TargetApp/source_with_pyc')
+Viewing check button for switch 'Automatically replay test after recording it' (checked)
+Viewing radio button for switch '', options Auto-replay invisible/Auto-replay in dynamic GUI'. Default value 0.
+Viewing action with title 'Record _Use-Case', stock id ''gtk-media-record'', accelerator ''F9''
 
 'uncheck automatically replay test after recording it' event created with arguments ''
 
 'enter version to record =' event created with arguments 'java'
 
-'view sub-options for test :' event created with arguments 'Recording'
-
-Viewing notebook page for 'Recording'
-Viewing entry for option 'Version to record' (set to 'java')
-Viewing entry for option 'Checkout to use for recording' (set to '/carm/proj/texttest-tmp/geoff/texttest.12May114214.11815/texttest/TestSelf/UITesting/GUI/RerecordJavaTest/TargetApp/source_with_pyc')
-Viewing check button for switch 'Automatically replay test after recording it'
-Viewing radio button for switch '', options Auto-replay invisible/Auto-replay in dynamic GUI'. Default value 0.
-Viewing action with title 'Record _Use-Case', stock id ''gtk-media-record''
-
 'record use-case' event created with arguments ''
-Adding entry completion 'java' ...
 Adding entry completion 'output' ...
-Starting record run of TextTest with arguments ['-g', '-record', '-a', 'gui', '-v', 'java', '-c', '/carm/proj/texttest-tmp/geoff/texttest.12May114214.11815/texttest/TestSelf/UITesting/GUI/RerecordJavaTest/TargetApp/source_with_pyc', '-count', '1', '-f', '/carm/proj/texttest-tmp/geoff/texttest.12May114214.11815/texttest/TestSelf/UITesting/GUI/RerecordJavaTest/texttesttmp/static_gui.gui.12May114243.8747/dynamic_run1/gui_select', '-fd', '/carm/proj/texttest-tmp/geoff/texttest.12May114214.11815/texttest/TestSelf/UITesting/GUI/RerecordJavaTest/texttesttmp/static_gui.gui.12May114243.8747/temporary_filter_files']
+Adding entry completion 'java' ...
+Starting record run of TextTest with arguments ['-g', '-record', '-a', 'gui', '-v', 'java', '-c', '/carm/proj/texttest-tmp/geoff/texttest.16May165611.10184/texttest/TestSelf/UITesting/GUI/RerecordJavaTest/TargetApp/source_with_pyc', '-count', '1', '-f', '/carm/proj/texttest-tmp/geoff/texttest.16May165611.10184/texttest/TestSelf/UITesting/GUI/RerecordJavaTest/texttesttmp/static_gui.gui.16May165620.29100/dynamic_run1/gui_select', '-fd', '/carm/proj/texttest-tmp/geoff/texttest.16May165611.10184/texttest/TestSelf/UITesting/GUI/RerecordJavaTest/texttesttmp/static_gui.gui.16May165620.29100/temporary_filter_files']
 
 Changing GUI status to: 'Started record session for VideoStore test-case AddMovie'
 
 Waiting for application event 'record GUI to be closed' to occur.
 
 Changing GUI status to: 'Recording completed for VideoStore test-case AddMovie, not auto-replaying'
+Expected application event 'record GUI to be closed' occurred, proceeding.
+
+'view options for' event created with arguments 'Test'
 
 Setting file-view title to 'AddMovie'
 Adding file errors.gui under heading 'Standard Files', coloured grey90
@@ -290,7 +300,13 @@ Adding file output.gui.java under heading 'Standard Files', coloured grey90
 Adding file options.gui under heading 'Definition Files', coloured grey90
 Adding file usecase.gui under heading 'Definition Files', coloured grey90
 Adding file usecase.gui.java under heading 'Definition Files', coloured grey90
-Expected application event 'record GUI to be closed' occurred, proceeding.
+
+Pane separator positioned 46% from the top
+
+---------- Text Info Window ----------
+Description:
+<No description provided>
+--------------------------------------
 
 'quit' event created with arguments ''
 
