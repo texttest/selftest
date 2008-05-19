@@ -1,5 +1,5 @@
 Enabling entry completion, using matching 1
-Top Window title is TextTest dynamic GUI : testing Studio.13 under /carm/proj/texttest/selftest_data (started at 29Apr14:28:36)
+Top Window title is TextTest dynamic GUI : testing Studio.13 under /carm/proj/texttest/selftest_data (started at 19May10:05:39)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -14,6 +14,8 @@ Viewing action with title 'View Filtered File' (greyed out)
 Viewing action with title 'View Raw Differences' (greyed out)
 Viewing action with title 'View Differences' (greyed out)
 Viewing action with title 'Follow File Progress' (greyed out)
+Viewing action with title '_Save', stock id ''gtk-save'', accelerator ''<control>s'' (greyed out)
+Viewing action with title 'Save _As...', stock id ''gtk-save'', accelerator ''<control><alt>s'' (greyed out)
 Viewing action with title 'S_ave Selection...', stock id ''gtk-save-as'', accelerator ''<control><shift>s'' (greyed out)
 Viewing action with title '_Kill', stock id ''gtk-stop'' (greyed out)
 Viewing action with title '_Mark', accelerator ''<control><shift>m'' (greyed out)
@@ -31,7 +33,6 @@ Viewing action with title '_Status' (greyed out)
 Viewing action with title 'Status Recursive' (greyed out)
 Viewing action with title 'A_nnotate' (greyed out)
 Viewing action with title 'Annotate Recursive' (greyed out)
-Viewing action with title '_Save', stock id ''gtk-save'', accelerator ''<control>s'' (greyed out)
 
 UI layout: 
 <ui>
@@ -39,6 +40,7 @@ UI layout:
     <menu name="filemenu" action="filemenu">
       <placeholder name="FirstInFileMenu">
         <menuitem name="Save" action="Save"/>
+        <menuitem name="Save As..." action="Save As..."/>
         <separator/>
       </placeholder>
       <menuitem name="Save Selection..." action="Save Selection..."/>
@@ -155,7 +157,7 @@ Tabs showing : Status
 Test progress:
 --> Not started : 1, colour 'white', font 'bold'', visible=True
 
-Changing GUI status to: 'TextTest started at 29Apr14:28:38.'
+Changing GUI status to: 'TextTest started at 19May10:05:39.'
 
 Waiting for application event 'completion of test actions' to occur.
 
@@ -174,7 +176,7 @@ Test progress:
 --> Not started : 0, colour 'white', font ''', visible=True
 --> Running : 1, colour 'yellow', font 'bold'', visible=True
 
-Progress bar set to fraction 1.0, text 'All 1 tests completed at 29Apr14:28:49'
+Progress bar set to fraction 1.0, text 'All 1 tests completed at 19May10:05:44'
 
 Redrawing test data_unchanged coloured red
 (Second column 'usecase different(+)' coloured red)
@@ -189,6 +191,8 @@ Test progress:
 Only one test found, selecting data_unchanged
 
 Test column header set to 'Tests: All 1 selected, none hidden'
+Setting sensitivity of action '_Save' to True
+Setting sensitivity of action 'Save _As...' to True
 Setting sensitivity of action 'S_ave Selection...' to True
 Setting sensitivity of action '_Mark' to True
 Setting sensitivity of action 'Recompute Status' to True
@@ -201,7 +205,6 @@ Setting sensitivity of action '_Status' to True
 Setting sensitivity of action 'Status Recursive' to True
 Setting sensitivity of action 'A_nnotate' to True
 Setting sensitivity of action 'Annotate Recursive' to True
-Setting sensitivity of action '_Save' to True
 
 Setting file-view title to 'data__unchanged'
 Adding file catalogue.gst under heading 'Comparison Files', coloured red
@@ -211,10 +214,8 @@ Adding file usecase.gst under heading 'Comparison Files', coloured red
 
 Pane separator positioned 46% from the top
 
-Tabs showing :
-
 ---------- Text Info Window ----------
-Test FAILED on connellsville :
+Test FAILED on smithville :
 ---------- Differences in catalogue ----------
 5,9c5,10
 < --------LOCAL_PLAN
@@ -263,12 +264,9 @@ Test FAILED on connellsville :
 --------------------------------------
 
 Tabs showing : Test, Status
-
-Tabs showing : Text Info, Saving
 Expected application event 'completion of test actions' occurred, proceeding.
 
 'save results for selected tests' event created with arguments ''
-Adding entry completion '13' ...
 
 Changing GUI status to: 'Saving 1 tests ...'
 Saving Studio.13 test-case data_unchanged - version 13, exactness 1
@@ -281,6 +279,8 @@ Redrawing test data_unchanged coloured green
 Redrawing suite lh_v12 : second column 'All 1 tests successful' coloured green
 
 Test column header set to 'Tests: 0/1 selected, none hidden'
+Setting sensitivity of action '_Save' to False
+Setting sensitivity of action 'Save _As...' to False
 Setting sensitivity of action 'S_ave Selection...' to False
 Setting sensitivity of action '_Mark' to False
 Setting sensitivity of action 'Recompute Status' to False
@@ -293,7 +293,6 @@ Setting sensitivity of action '_Status' to False
 Setting sensitivity of action 'Status Recursive' to False
 Setting sensitivity of action 'A_nnotate' to False
 Setting sensitivity of action 'Annotate Recursive' to False
-Setting sensitivity of action '_Save' to False
 
 Test progress:
 --> Not started : 0, colour 'white', font ''', visible=True

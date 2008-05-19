@@ -1,5 +1,5 @@
 Enabling entry completion, using matching 1
-Top Window title is TextTest dynamic GUI : testing HELLO (started at 29Apr14:28:00)
+Top Window title is TextTest dynamic GUI : testing HELLO (started at 19May10:05:20)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -14,6 +14,8 @@ Viewing action with title 'View Filtered File' (greyed out)
 Viewing action with title 'View Raw Differences' (greyed out)
 Viewing action with title 'View Differences' (greyed out)
 Viewing action with title 'Follow File Progress' (greyed out)
+Viewing action with title '_Save', stock id ''gtk-save'', accelerator ''<control>s'' (greyed out)
+Viewing action with title 'Save _As...', stock id ''gtk-save'', accelerator ''<control><alt>s'' (greyed out)
 Viewing action with title 'S_ave Selection...', stock id ''gtk-save-as'', accelerator ''<control><shift>s'' (greyed out)
 Viewing action with title '_Kill', stock id ''gtk-stop'' (greyed out)
 Viewing action with title '_Mark', accelerator ''<control><shift>m'' (greyed out)
@@ -22,7 +24,6 @@ Viewing action with title 'Recompute Status', stock id ''gtk-refresh'', accelera
 Viewing action with title '_Migration Notes'
 Viewing action with title 'Component _Versions'
 Viewing action with title '_About TextTest', stock id ''gtk-about''
-Viewing action with title '_Save', stock id ''gtk-save'', accelerator ''<control>s'' (greyed out)
 
 UI layout: 
 <ui>
@@ -30,6 +31,7 @@ UI layout:
     <menu name="filemenu" action="filemenu">
       <placeholder name="FirstInFileMenu">
         <menuitem name="Save" action="Save"/>
+        <menuitem name="Save As..." action="Save As..."/>
         <separator/>
       </placeholder>
       <menuitem name="Save Selection..." action="Save Selection..."/>
@@ -101,7 +103,7 @@ Tabs showing : Status
 Test progress:
 --> Not started : 2, colour 'white', font 'bold'', visible=True
 
-Changing GUI status to: 'TextTest started at 29Apr14:28:00.'
+Changing GUI status to: 'TextTest started at 19May10:05:21.'
 
 Waiting for application event 'completion of test actions' to occur.
 
@@ -144,7 +146,7 @@ Test progress:
 ----> Differences : 1, colour 'red', font 'bold'', visible=True
 ------> output different : 1, colour 'red', font 'bold'', visible=True
 
-Progress bar set to fraction 1.0, text 'All 2 tests completed at 29Apr14:28:01'
+Progress bar set to fraction 1.0, text 'All 2 tests completed at 19May10:05:22'
 
 Redrawing test One coloured green
 Redrawing suite Suite2 : second column 'All 1 tests successful' coloured green

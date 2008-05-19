@@ -1,5 +1,5 @@
 
-import subprocess
+import subprocess, sys
 from time import sleep
 
 RealPopen = subprocess.Popen
@@ -10,6 +10,7 @@ class SlowPopen(RealPopen):
         if not self.doneSleep and (cmdArgs[0] == "qsub" or cmdArgs[0] == "bsub"):
             SlowPopen.doneSleep = True
             print "Waiting Q thread for 5 seconds"
+            sys.stdout.flush()
             sleep(5)
         
 subprocess.Popen = SlowPopen

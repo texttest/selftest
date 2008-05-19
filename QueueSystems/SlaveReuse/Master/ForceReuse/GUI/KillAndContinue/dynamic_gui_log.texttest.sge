@@ -1,5 +1,5 @@
 Enabling entry completion, using matching 1
-Top Window title is TextTest dynamic GUI : testing HELLO under /carm/proj/texttest-tmp/geoff/texttest.29Apr142749/texttest.sge/QueueSystems/SlaveReuse/Master/ForceReuse/GUI/KillAndContinue/TargetApp/ (started at 29Apr14:28:26)
+Top Window title is TextTest dynamic GUI : testing HELLO under /carm/proj/texttest-tmp/geoff/texttest.19May100457.17909/texttest.sge/QueueSystems/SlaveReuse/Master/ForceReuse/GUI/KillAndContinue/TargetApp/ (started at 19May10:05:31)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -14,6 +14,8 @@ Viewing action with title 'View Filtered File' (greyed out)
 Viewing action with title 'View Raw Differences' (greyed out)
 Viewing action with title 'View Differences' (greyed out)
 Viewing action with title 'Follow File Progress' (greyed out)
+Viewing action with title '_Save', stock id ''gtk-save'', accelerator ''<control>s'' (greyed out)
+Viewing action with title 'Save _As...', stock id ''gtk-save'', accelerator ''<control><alt>s'' (greyed out)
 Viewing action with title 'S_ave Selection...', stock id ''gtk-save-as'', accelerator ''<control><shift>s'' (greyed out)
 Viewing action with title '_Kill', stock id ''gtk-stop'' (greyed out)
 Viewing action with title '_Mark', accelerator ''<control><shift>m'' (greyed out)
@@ -22,7 +24,6 @@ Viewing action with title 'Recompute Status', stock id ''gtk-refresh'', accelera
 Viewing action with title '_Migration Notes'
 Viewing action with title 'Component _Versions'
 Viewing action with title '_About TextTest', stock id ''gtk-about''
-Viewing action with title '_Save', stock id ''gtk-save'', accelerator ''<control>s'' (greyed out)
 
 UI layout: 
 <ui>
@@ -30,6 +31,7 @@ UI layout:
     <menu name="filemenu" action="filemenu">
       <placeholder name="FirstInFileMenu">
         <menuitem name="Save" action="Save"/>
+        <menuitem name="Save As..." action="Save As..."/>
         <separator/>
       </placeholder>
       <menuitem name="Save Selection..." action="Save Selection..."/>
@@ -100,7 +102,7 @@ Tabs showing : Status
 
 Test progress:
 
-Changing GUI status to: 'TextTest started at 29Apr14:28:27.'
+Changing GUI status to: 'TextTest started at 19May10:05:32.'
 
 Waiting for application event 'all tests to be read' to occur.
 Waiting for application event 'test Test under TargetApp to become pending' to occur.
@@ -140,15 +142,11 @@ Setting file-view title to 'Test'
 
 Pane separator positioned 46% from the top
 
-Tabs showing :
-
 ---------- Text Info Window ----------
 Job pending in SGE
 --------------------------------------
 
 Tabs showing : Test, Status
-
-Tabs showing : Text Info
 
 'kill selected tests' event created with arguments ''
 
@@ -165,13 +163,13 @@ Waiting for application event 'test Test under Suite to become pending' to occur
 Progress bar set to fraction 0.5, text '1 of 2 tests completed'
 
 Redrawing test Test coloured red
-(Second column 'cancelled pending job at 14:28' coloured red)
+(Second column 'cancelled pending job at 10:05' coloured red)
 
 Setting file-view title to 'Test'
 
 ---------- Text Info Window ----------
 Test were cancelled before starting :
-Test job was cancelled (while still pending in SGE) at 14:28
+Test job was cancelled (while still pending in SGE) at 10:05
 --------------------------------------
 Setting sensitivity of action '_Kill' to False
 Setting sensitivity of action '_Mark' to True
@@ -190,9 +188,9 @@ Changing GUI status to: 'Killed all running tests.'
 
 Changing GUI status to: 'Waiting for all tests to terminate ...'
 
-Progress bar set to fraction 1.0, text 'All 2 tests completed at 29Apr14:28:30'
+Progress bar set to fraction 1.0, text 'All 2 tests completed at 19May10:05:36'
 
 Redrawing test Test coloured red
-(Second column 'cancelled pending job at 14:28' coloured red)
+(Second column 'cancelled pending job at 10:05' coloured red)
 
 Changing GUI status to: 'Removing all temporary files ...'

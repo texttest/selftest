@@ -1,5 +1,5 @@
 Enabling entry completion, using matching 1
-Top Window title is TextTest dynamic GUI : testing PERF (started at 30Apr16:41:54)
+Top Window title is TextTest dynamic GUI : testing PERF (started at 19May09:39:17)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -14,6 +14,8 @@ Viewing action with title 'View Filtered File' (greyed out)
 Viewing action with title 'View Raw Differences' (greyed out)
 Viewing action with title 'View Differences' (greyed out)
 Viewing action with title 'Follow File Progress' (greyed out)
+Viewing action with title '_Save', stock id ''gtk-save'', accelerator ''<control>s'' (greyed out)
+Viewing action with title 'Save _As...', stock id ''gtk-save'', accelerator ''<control><alt>s'' (greyed out)
 Viewing action with title 'S_ave Selection...', stock id ''gtk-save-as'', accelerator ''<control><shift>s'' (greyed out)
 Viewing action with title '_Kill', stock id ''gtk-stop'' (greyed out)
 Viewing action with title '_Mark', accelerator ''<control><shift>m'' (greyed out)
@@ -22,7 +24,6 @@ Viewing action with title 'Recompute Status', stock id ''gtk-refresh'', accelera
 Viewing action with title '_Migration Notes'
 Viewing action with title 'Component _Versions'
 Viewing action with title '_About TextTest', stock id ''gtk-about''
-Viewing action with title '_Save', stock id ''gtk-save'', accelerator ''<control>s'' (greyed out)
 
 UI layout: 
 <ui>
@@ -30,6 +31,7 @@ UI layout:
     <menu name="filemenu" action="filemenu">
       <placeholder name="FirstInFileMenu">
         <menuitem name="Save" action="Save"/>
+        <menuitem name="Save As..." action="Save As..."/>
         <separator/>
       </placeholder>
       <menuitem name="Save Selection..." action="Save Selection..."/>
@@ -100,7 +102,7 @@ Tabs showing : Status
 
 Test progress:
 
-Changing GUI status to: 'TextTest started at 30Apr16:41:55.'
+Changing GUI status to: 'TextTest started at 19May09:39:18.'
 
 Waiting for application event 'completion of test actions' to occur.
 
@@ -197,7 +199,7 @@ Test progress:
 ------> Faster : 1, colour 'red', font 'bold'', visible=True
 ------> Slower : 1, colour 'red', font 'bold'', visible=True
 
-Progress bar set to fraction 1.0, text 'All 4 tests completed at 30Apr16:41:58'
+Progress bar set to fraction 1.0, text 'All 4 tests completed at 19May09:39:21'
 
 Redrawing test FailuresZeroTime coloured green
 (Second column 'infinitely slower' coloured red)
@@ -216,10 +218,11 @@ Expected application event 'completion of test actions' occurred, proceeding.
 'set test selection to' event created with arguments 'Failures'
 
 Test column header set to 'Tests: 1/4 selected, none hidden'
+Setting sensitivity of action '_Save' to True
+Setting sensitivity of action 'Save _As...' to True
 Setting sensitivity of action 'S_ave Selection...' to True
 Setting sensitivity of action '_Mark' to True
 Setting sensitivity of action 'Recompute Status' to True
-Setting sensitivity of action '_Save' to True
 
 Setting file-view title to 'Failures'
 Adding file errors.perf under heading 'Comparison Files', coloured green
@@ -229,8 +232,6 @@ Adding file performance.perf under heading 'Comparison Files', coloured red
 
 Pane separator positioned 46% from the top
 
-Tabs showing :
-
 ---------- Text Info Window ----------
 Test ran faster :
 ---------- Differences in performance(faster) ----------
@@ -238,33 +239,31 @@ Test ran faster :
 < CPU time   :       10.0 sec. on sedom
 < Real time  :       18.2 sec.
 ---
-> Total Performance  :      5.0 seconds on graceville
+> Total Performance  :      5.0 seconds on easthartford
 --------------------------------------
 
 Tabs showing : Test, Status
 
-Tabs showing : Text Info, Saving
-
 'select file' event created with arguments 'performance.perf'
 Starting graphical difference comparison using 'tkdiff':
--- original file : /carm/proj/texttest-tmp/geoff/texttest.30Apr164129/texttest/TestSelf/PerformanceTests/GUI/RegisterFailure/TargetApp/Failures/performance.perf
---  current file : /carm/proj/texttest-tmp/geoff/texttest.30Apr164129/texttest/TestSelf/PerformanceTests/GUI/RegisterFailure/texttesttmp/dynamic_gui.30Apr164154.8420/perf/Failures/performance.perf
+-- original file : /carm/proj/texttest-tmp/geoff/texttest.19May093907.17078/texttest/TestSelf/PerformanceTests/GUI/RegisterFailure/TargetApp/Failures/performance.perf
+--  current file : /carm/proj/texttest-tmp/geoff/texttest.19May093907.17078/texttest/TestSelf/PerformanceTests/GUI/RegisterFailure/texttesttmp/dynamic_gui.19May093917.8643/perf/Failures/performance.perf
 
 Changing GUI status to: 'Started "tkdiff performance.perf performance.perf" in background (from test Failures).'
 
-'view sub-options for test :' event created with arguments 'Saving'
-
-Viewing notebook page for 'Saving'
+'save results with non-default settings' event created with arguments ''
+---------- Dialog 'Saving 1 tests' ----------
+Default action is labelled 'gtk-ok'
 Viewing entry for option 'Version to save'
 Viewing check button for switch 'Replace successfully compared files also'
 Viewing radio button for switch 'Save', options Average performance/Exact performance'. Default value 1.
-Viewing action with title '_Save', stock id ''gtk-save'', accelerator ''<control>s''
+---------------------------------------------
 
 'choose average performance for save' event created with arguments ''
 
 'choose exact performance for save' event created with arguments ''
 
-'save results for selected tests' event created with arguments ''
+'press ok' event created with arguments ''
 
 Changing GUI status to: 'Saving 1 tests ...'
 Saving PERF test-case Failures - version , exactness 1
@@ -277,13 +276,12 @@ Setting file-view title to 'Failures'
 Adding file errors.perf under heading 'Comparison Files', coloured green
 Adding file output.perf under heading 'Comparison Files', coloured green
 Adding file performance.perf under heading 'Comparison Files', coloured green
-Setting sensitivity of action '_Save' to False
 
 ---------- Text Info Window ----------
 Test succeeded
 --------------------------------------
-
-Tabs showing : Text Info
+Setting sensitivity of action '_Save' to False
+Setting sensitivity of action 'Save _As...' to False
 
 Changing GUI status to: 'Saved 1 tests.'
 

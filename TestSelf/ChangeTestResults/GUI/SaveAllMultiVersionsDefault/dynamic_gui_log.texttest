@@ -1,5 +1,5 @@
 Enabling entry completion, using matching 1
-Top Window title is TextTest dynamic GUI : testing HELLO.2,HELLO.4 (started at 09May10:33:14)
+Top Window title is TextTest dynamic GUI : testing HELLO.2,HELLO.4 (started at 19May09:39:16)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -14,6 +14,8 @@ Viewing action with title 'View Filtered File' (greyed out)
 Viewing action with title 'View Raw Differences' (greyed out)
 Viewing action with title 'View Differences' (greyed out)
 Viewing action with title 'Follow File Progress' (greyed out)
+Viewing action with title '_Save', stock id ''gtk-save'', accelerator ''<control>s'' (greyed out)
+Viewing action with title 'Save _As...', stock id ''gtk-save'', accelerator ''<control><alt>s'' (greyed out)
 Viewing action with title 'S_ave Selection...', stock id ''gtk-save-as'', accelerator ''<control><shift>s'' (greyed out)
 Viewing action with title '_Kill', stock id ''gtk-stop'' (greyed out)
 Viewing action with title '_Mark', accelerator ''<control><shift>m'' (greyed out)
@@ -22,7 +24,6 @@ Viewing action with title 'Recompute Status', stock id ''gtk-refresh'', accelera
 Viewing action with title '_Migration Notes'
 Viewing action with title 'Component _Versions'
 Viewing action with title '_About TextTest', stock id ''gtk-about''
-Viewing action with title '_Save', stock id ''gtk-save'', accelerator ''<control>s'' (greyed out)
 
 UI layout: 
 <ui>
@@ -30,6 +31,7 @@ UI layout:
     <menu name="filemenu" action="filemenu">
       <placeholder name="FirstInFileMenu">
         <menuitem name="Save" action="Save"/>
+        <menuitem name="Save As..." action="Save As..."/>
         <separator/>
       </placeholder>
       <menuitem name="Save Selection..." action="Save Selection..."/>
@@ -100,7 +102,7 @@ Tabs showing : Status
 
 Test progress:
 
-Changing GUI status to: 'TextTest started at 09May10:33:15.'
+Changing GUI status to: 'TextTest started at 19May09:39:17.'
 
 Waiting for application event 'completion of test actions' to occur.
 
@@ -147,7 +149,7 @@ Test progress:
 ----> Differences : 1, colour 'red', font 'bold'', visible=True
 ------> output different : 1, colour 'red', font 'bold'', visible=True
 
-Progress bar set to fraction 1.0, text 'All 2 tests completed at 09May10:33:16'
+Progress bar set to fraction 1.0, text 'All 2 tests completed at 19May09:39:17'
 
 Redrawing test OutDiff coloured red
 (Second column 'output different' coloured red)
@@ -164,18 +166,17 @@ Expected application event 'completion of test actions' occurred, proceeding.
 'set test selection to' event created with arguments 'OutDiff under TargetApp (hello.2),OutDiff under TargetApp (hello.4)'
 
 Test column header set to 'Tests: 1/2 selected, none hidden'
+Setting sensitivity of action '_Save' to True
+Setting sensitivity of action 'Save _As...' to True
 Setting sensitivity of action 'S_ave Selection...' to True
 Setting sensitivity of action '_Mark' to True
 Setting sensitivity of action 'Recompute Status' to True
-Setting sensitivity of action '_Save' to True
 
 Setting file-view title to 'OutDiff'
 Adding file errors.hello under heading 'Comparison Files', coloured green
 Adding file output.hello under heading 'Comparison Files', coloured red
 
 Pane separator positioned 46% from the top
-
-Tabs showing :
 
 ---------- Text Info Window ----------
 Test FAILED :
@@ -186,21 +187,22 @@ Test FAILED :
 
 Tabs showing : Test, Status
 
-Tabs showing : Text Info, Saving
-
 Test column header set to 'Tests: All 2 selected, none hidden'
 Setting file-view title to 'Sample from 2 tests'
 
-'view sub-options for test :' event created with arguments 'Saving'
-
-Viewing notebook page for 'Saving'
+'save results with non-default settings' event created with arguments ''
+Adding entry completion '<default> - 2,4' ...
+Adding entry completion '2' ...
+Adding entry completion '4' ...
+---------- Dialog 'Saving 2 tests' ----------
+Default action is labelled 'gtk-ok'
 Viewing entry for option 'Version to save' (set to '<default> - 2,4') (drop-down list containing ['<default> - 2,4', '2', '4', ''])
 Viewing check button for switch 'Replace successfully compared files also'
-Viewing action with title '_Save', stock id ''gtk-save'', accelerator ''<control>s''
+---------------------------------------------
 
 'enter version to save =' event created with arguments ''
 
-'save results for selected tests' event created with arguments ''
+'press ok' event created with arguments ''
 
 Changing GUI status to: 'Saving 2 tests ...'
 Saving HELLO.2 test-case OutDiff - version , exactness 1
@@ -215,11 +217,6 @@ Test column header set to 'Tests: 1/2 selected, none hidden'
 Setting file-view title to 'OutDiff'
 Adding file errors.hello under heading 'Comparison Files', coloured green
 Adding file output.hello under heading 'Comparison Files', coloured red
-
-Viewing notebook page for 'Saving'
-Viewing entry for option 'Version to save' (set to '4') (drop-down list containing ['4', ''])
-Viewing check button for switch 'Replace successfully compared files also'
-Viewing action with title '_Save', stock id ''gtk-save'', accelerator ''<control>s''
 
 ---------- Text Info Window ----------
 Test FAILED :
@@ -241,10 +238,11 @@ Redrawing test OutDiff coloured green
 Redrawing suite TargetApp : second column 'All 1 tests successful' coloured green
 
 Test column header set to 'Tests: 0/2 selected, none hidden'
+Setting sensitivity of action '_Save' to False
+Setting sensitivity of action 'Save _As...' to False
 Setting sensitivity of action 'S_ave Selection...' to False
 Setting sensitivity of action '_Mark' to False
 Setting sensitivity of action 'Recompute Status' to False
-Setting sensitivity of action '_Save' to False
 
 Test progress:
 --> Not started : 0, colour 'white', font ''', visible=True
@@ -269,6 +267,5 @@ Test progress:
 Changing GUI status to: 'Saved 2 tests.'
 
 'quit' event created with arguments ''
-Adding entry completion '4' ...
 
 Changing GUI status to: 'Removing all temporary files ...'

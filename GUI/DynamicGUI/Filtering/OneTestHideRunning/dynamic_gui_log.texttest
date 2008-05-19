@@ -1,5 +1,5 @@
 Enabling entry completion, using matching 1
-Top Window title is TextTest dynamic GUI : testing HELLO (started at 29Apr14:28:21)
+Top Window title is TextTest dynamic GUI : testing HELLO (started at 19May10:05:26)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -14,6 +14,8 @@ Viewing action with title 'View Filtered File' (greyed out)
 Viewing action with title 'View Raw Differences' (greyed out)
 Viewing action with title 'View Differences' (greyed out)
 Viewing action with title 'Follow File Progress' (greyed out)
+Viewing action with title '_Save', stock id ''gtk-save'', accelerator ''<control>s'' (greyed out)
+Viewing action with title 'Save _As...', stock id ''gtk-save'', accelerator ''<control><alt>s'' (greyed out)
 Viewing action with title 'S_ave Selection...', stock id ''gtk-save-as'', accelerator ''<control><shift>s'' (greyed out)
 Viewing action with title '_Kill', stock id ''gtk-stop'' (greyed out)
 Viewing action with title '_Mark', accelerator ''<control><shift>m'' (greyed out)
@@ -22,7 +24,6 @@ Viewing action with title 'Recompute Status', stock id ''gtk-refresh'', accelera
 Viewing action with title '_Migration Notes'
 Viewing action with title 'Component _Versions'
 Viewing action with title '_About TextTest', stock id ''gtk-about''
-Viewing action with title '_Save', stock id ''gtk-save'', accelerator ''<control>s'' (greyed out)
 
 UI layout: 
 <ui>
@@ -30,6 +31,7 @@ UI layout:
     <menu name="filemenu" action="filemenu">
       <placeholder name="FirstInFileMenu">
         <menuitem name="Save" action="Save"/>
+        <menuitem name="Save As..." action="Save As..."/>
         <separator/>
       </placeholder>
       <menuitem name="Save Selection..." action="Save Selection..."/>
@@ -100,7 +102,7 @@ Tabs showing : Status
 
 Test progress:
 
-Changing GUI status to: 'TextTest started at 29Apr14:28:22.'
+Changing GUI status to: 'TextTest started at 19May10:05:26.'
 
 Waiting for application event 'completion of test actions' to occur.
 
@@ -124,7 +126,7 @@ Test progress:
 --> Not started : 0, colour 'white', font ''', visible=True
 --> Running : 1, colour 'yellow', font 'bold'', visible=False
 
-Progress bar set to fraction 1.0, text 'All 1 tests completed at 29Apr14:28:23'
+Progress bar set to fraction 1.0, text 'All 1 tests completed at 19May10:05:27'
 
 Redrawing test simple_fail1 coloured green
 (Second column 'file3 different' coloured red)
@@ -145,10 +147,11 @@ Test progress:
 Only one test found, selecting simple_fail1
 
 Test column header set to 'Tests: All 1 selected, none hidden'
+Setting sensitivity of action '_Save' to True
+Setting sensitivity of action 'Save _As...' to True
 Setting sensitivity of action 'S_ave Selection...' to True
 Setting sensitivity of action '_Mark' to True
 Setting sensitivity of action 'Recompute Status' to True
-Setting sensitivity of action '_Save' to True
 
 Setting file-view title to 'simple__fail1'
 Adding file errors.hello under heading 'Comparison Files', coloured green
@@ -160,8 +163,6 @@ Adding file output.hello under heading 'Comparison Files', coloured green
 
 Pane separator positioned 46% from the top
 
-Tabs showing :
-
 ---------- Text Info Window ----------
 Test FAILED :
 ---------- Differences in file3 ----------
@@ -172,8 +173,6 @@ Test FAILED :
 --------------------------------------
 
 Tabs showing : Test, Status
-
-Tabs showing : Text Info, Saving
 Expected application event 'completion of test actions' occurred, proceeding.
 
 'quit' event created with arguments ''
