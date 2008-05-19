@@ -1,9 +1,9 @@
 Enabling entry completion, using matching 1
 Adding entry completion '<default>' ...
 Adding entry completion '1' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.19May170622.3202/texttest/GUI/StaticGUI/Miscellaneous/ViewHelp/TargetApp/Diagnostics/log4py.conf' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.19May170622.3202/texttest/GUI/StaticGUI/Miscellaneous/ViewHelp/TargetApp/Diagnostics' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.19May170622.3202/texttest/GUI/StaticGUI/Miscellaneous/ViewHelp/texttesttmp' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.19May180240.7565/texttest/GUI/StaticGUI/Miscellaneous/ViewHelp/TargetApp/Diagnostics/log4py.conf' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.19May180240.7565/texttest/GUI/StaticGUI/Miscellaneous/ViewHelp/TargetApp/Diagnostics' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.19May180240.7565/texttest/GUI/StaticGUI/Miscellaneous/ViewHelp/texttesttmp' ...
 Top Window title is TextTest static GUI : management of tests for DIP
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
@@ -186,13 +186,13 @@ Viewing action with title '_Select', stock id ''gtk-find'', accelerator ''<contr
 Viewing radio button for switch '', options Discard/Refine/Extend'. Default value 0.
 Viewing action with title 'Filter', stock id ''gtk-find'', accelerator ''<control>f''
 
-Changing GUI status to: 'TextTest started at 19May17:06:54.'
+Changing GUI status to: 'TextTest started at 19May18:02:42.'
 
 Waiting for application event 'all tests to be read' to occur.
 
 Changing GUI status to: 'Reading tests ...'
 
-Changing GUI status to: 'Reading tests completed at 19May17:06:54.'
+Changing GUI status to: 'Reading tests completed at 19May18:02:43.'
 
 Test Tree description...
 -> TargetApp (dip)
@@ -395,7 +395,7 @@ predict how many tests will be run, if any. This meant that
 
 - Numbers in the status bar for how many tests have been started were sometimes wrong.
 - It let you start inconsistent combinations and you only found out later that they were wrong.
-- The dynamic GUI didn't know how many tests it had got until it has read them all. It started running them as 
+- The dynamic GUI didn't know how many tests it had got until it had read them all. It started running them as 
 they were read, which lead to the "hopping progress bar" phenomenon, where the speed
 and even direction of the progress bar depends on the relative speed of running and reading tests.
 
@@ -423,14 +423,28 @@ Say you have reported some bugs for the default version and some for a specific 
 and thus have knownbugs.app and knownbugs.app.v1. Running version v1 would previously
 ignore the stuff in knownbugs.app. Now both files will be read.
 
-(6) Cosmetic and layout changes
+(6) Reconnect incompatibility
+=============================
+As often happens in releases TextTest 3.11 will not be able to reconnect to runs done by
+TextTest 3.10. Nor will it be able to clean them up. If you rely on the feature that each
+batch run wipes the previous one's log files you'll need to clean the last 3.10 run by hand.
+
+(7) Cosmetic and layout changes
 ===============================
+"Saving" tab is removed, replaced by "Save As" action in the File menu. "Save" still
+exists and behaves as before (i.e. uses the settings from last time you did "Save As",
+or the default ones as appropriate).
 "Adding Test" and "Adding Suite" tabs are removed and replaced with dialogs available 
 from the test popup menu and the Edit menu.
 "Bugs" tab is removed and replaced by "Enter Failure Information" in the same places.
+"Recording" tab has moved and can now be found under "Running" instead of under "Test".
+"Update Info" button is renamed to "Recompute Status" and lives in the actions menu instead.
+
 "Refresh" action has taken over the refresh icon, so "Select" now has a "Find" icon instead.
 "Result file" entries in selection tab now renamed to "test-file" as they work with any file
 
+There are therefore no more buttons between the file view and the textual info, and no more 
+tabs alongside the textual info.
 
 Adding migration notes from file 'MigrationNotes_from_3.9':
 
