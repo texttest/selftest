@@ -23,7 +23,7 @@ Adding entry completion 'png' ...
 Adding entry completion 'svg' ...
 Adding entry completion 'gnuplot' ...
 Adding entry completion 'mpl' ...
-Top Window title is TextTest dynamic GUI : testing Matador,Picador under /carm/proj/texttest/selftest_data (started at 19May14:31:32)
+Top Window title is TextTest dynamic GUI : testing Matador.rave,Matador.rave.2 under /carm/proj/texttest/selftest_data (started at 19May14:30:29)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -184,29 +184,51 @@ Tabs showing : Status
 
 Test progress:
 
-Changing GUI status to: 'TextTest started at 19May14:31:33.'
+Changing GUI status to: 'TextTest started at 19May14:30:30.'
 
 Waiting for application event 'all tests to be read' to occur.
-Waiting for application event 'test matador_2 to become pending' to occur.
+Waiting for application event 'test matador_2 version rave to start' to occur.
+Waiting for application event 'test matador_2 version rave.2 to complete ruleset compilation' to occur.
 
 Test progress:
 --> Not started : 1, colour 'white', font 'bold'', visible=True
 
-Progress bar set to fraction 0.0, text '0 of 1 tests completed'
+Test progress:
+--> Not started : 2, colour 'white', font 'bold'', visible=True
+
+Progress bar set to fraction 0.0, text '0 of 2 tests completed'
 
 Test Tree description...
--> TargetApp (cas)
+-> TargetApp (cas.rave)
+->   ArtificialUser
+->     matador_2
+-> TargetApp (cas.rave.2)
 ->   ArtificialUser
 ->     matador_2
 
-Test column header set to 'Tests: 0/1 selected, none hidden'
+Test column header set to 'Tests: 0/2 selected, none hidden'
+
+Redrawing test matador_2 coloured white
+(Second column 'RULES PEND' coloured white)
+
+Test progress:
+--> Not started : 1, colour 'white', font 'bold'', visible=True
+--> Pending rulecompile : 1, colour 'white', font 'bold'', visible=True
 
 Redrawing test matador_2 coloured white
 (Second column 'RULES PEND' coloured white)
 
 Test progress:
 --> Not started : 0, colour 'white', font ''', visible=True
+--> Pending rulecompile : 2, colour 'white', font 'bold'', visible=True
+
+Redrawing test matador_2 coloured peach puff
+(Second column 'RULES (portmoller)' coloured peach puff)
+
+Test progress:
+--> Not started : 0, colour 'white', font ''', visible=True
 --> Pending rulecompile : 1, colour 'white', font 'bold'', visible=True
+--> Running rulecompile : 1, colour 'peach puff', font 'bold'', visible=True
 
 Redrawing test matador_2 coloured peach puff
 (Second column 'RULES (portmoller)' coloured peach puff)
@@ -214,7 +236,16 @@ Redrawing test matador_2 coloured peach puff
 Test progress:
 --> Not started : 0, colour 'white', font ''', visible=True
 --> Pending rulecompile : 0, colour 'white', font ''', visible=True
+--> Running rulecompile : 2, colour 'peach puff', font 'bold'', visible=True
+
+Redrawing test matador_2 coloured white
+(Second column 'READY' coloured white)
+
+Test progress:
+--> Not started : 0, colour 'white', font ''', visible=True
+--> Pending rulecompile : 0, colour 'white', font ''', visible=True
 --> Running rulecompile : 1, colour 'peach puff', font 'bold'', visible=True
+--> Complete rulecompile : 1, colour 'white', font 'bold'', visible=True
 
 Redrawing test matador_2 coloured white
 (Second column 'READY' coloured white)
@@ -223,7 +254,7 @@ Test progress:
 --> Not started : 0, colour 'white', font ''', visible=True
 --> Pending rulecompile : 0, colour 'white', font ''', visible=True
 --> Running rulecompile : 0, colour 'white', font ''', visible=True
---> Complete rulecompile : 1, colour 'white', font 'bold'', visible=True
+--> Complete rulecompile : 2, colour 'white', font 'bold'', visible=True
 
 Redrawing test matador_2 coloured white
 (Second column 'PEND' coloured white)
@@ -232,14 +263,26 @@ Test progress:
 --> Not started : 0, colour 'white', font ''', visible=True
 --> Pending rulecompile : 0, colour 'white', font ''', visible=True
 --> Running rulecompile : 0, colour 'white', font ''', visible=True
---> Complete rulecompile : 0, colour 'white', font ''', visible=True
+--> Complete rulecompile : 1, colour 'white', font 'bold'', visible=True
 --> Pending : 1, colour 'white', font 'bold'', visible=True
+
+Redrawing test matador_2 coloured yellow
+(Second column 'RUN (waterville)' coloured yellow)
+
+Test progress:
+--> Not started : 0, colour 'white', font ''', visible=True
+--> Pending rulecompile : 0, colour 'white', font ''', visible=True
+--> Running rulecompile : 0, colour 'white', font ''', visible=True
+--> Complete rulecompile : 1, colour 'white', font 'bold'', visible=True
+--> Pending : 0, colour 'white', font ''', visible=True
+--> Running : 1, colour 'yellow', font 'bold'', visible=True
 Expected application event 'all tests to be read' occurred, proceeding.
-Expected application event 'test matador_2 to become pending' occurred, proceeding.
+Expected application event 'test matador_2 version rave to start' occurred, proceeding.
+Expected application event 'test matador_2 version rave.2 to complete ruleset compilation' occurred, proceeding.
 
-'set test selection to' event created with arguments 'matador_2'
+'set test selection to' event created with arguments 'matador_2 under TargetApp (cas.rave.2)'
 
-Test column header set to 'Tests: All 1 selected, none hidden'
+Test column header set to 'Tests: 1/2 selected, none hidden'
 Setting sensitivity of action 'S_ave Selection...' to True
 Setting sensitivity of action '_Kill' to True
 Setting sensitivity of action '_Log' to True
@@ -258,7 +301,7 @@ Setting file-view title to 'matador__2'
 Pane separator positioned 46% from the top
 
 ---------- Text Info Window ----------
-Job pending in SGE
+Ready for submission of test. Completed compilation of ruleset Matador_5 on portmoller
 --------------------------------------
 
 Tabs showing : Test, Status, Graph
@@ -266,31 +309,34 @@ Tabs showing : Test, Status, Graph
 'kill selected tests' event created with arguments ''
 
 Changing GUI status to: 'Killing 1 tests ...'
-Killing Matador test-case matador_2
+Killing Matador.rave.2 test-case matador_2
 
 Changing GUI status to: 'Killed 1 tests.'
 
-Changing GUI status to: 'Performed 'Kill selected tests' on Matador test-case matador_2.'
+Changing GUI status to: 'Performed 'Kill selected tests' on Matador.rave.2 test-case matador_2.'
 
 Waiting for application event 'completion of test actions' to occur.
 
-Progress bar set to fraction 1.0, text 'All 1 tests completed at 19May14:31:36'
+Progress bar set to fraction 0.5, text '1 of 2 tests completed'
 
 Redrawing test matador_2 coloured red
-(Second column 'cancelled pending job at 14:31' coloured red)
+(Second column 'Test was cancelled after rule compilation was successful, at 14:30' coloured red)
 
 Setting file-view title to 'matador__2'
 
 ---------- Text Info Window ----------
 Test were cancelled before starting :
-Test job was cancelled (while still pending in SGE) at 14:31
+cancelled at 14:30
 --------------------------------------
 Setting sensitivity of action '_Kill' to False
 Setting sensitivity of action '_Mark' to True
 Setting sensitivity of action 'Recompute Status' to True
-Only one test found, selecting matador_2
 
-Setting file-view title to 'matador__2'
+Progress bar set to fraction 1.0, text 'All 2 tests completed at 19May14:30:33'
+
+Redrawing test matador_2 coloured green
+Redrawing suite ArtificialUser : second column 'All 1 tests successful' coloured green
+Redrawing suite TargetApp : second column 'All 1 tests successful' coloured green
 Expected application event 'completion of test actions' occurred, proceeding.
 
 'quit' event created with arguments ''
