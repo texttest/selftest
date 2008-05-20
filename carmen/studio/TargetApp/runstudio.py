@@ -17,4 +17,8 @@ print "Hello from Fake Studio in", os.getenv("CARMSYS")
 singlestep = os.getenv("USECASE_REPLAY_SINGLESTEP")
 if singlestep:
     print "Single-stepping with the macro recorder! Variable set to", singlestep
+tracelevel = os.getenv("TRACE_ON")
+if tracelevel:
+    print "Tracing level set to", tracelevel
+    
 os.remove(lockFile)

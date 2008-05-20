@@ -2,12 +2,12 @@ Enabling entry completion, using matching 1
 Adding entry completion '<default>' ...
 Adding entry completion '/carm/proj/texttest/selftest_data' ...
 Adding entry completion '1' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.carmen.20May145748.2257/texttest.carmen/carmen/studio/BuildLocalRuleset/TargetApp/Diagnostics/log4py.conf' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.carmen.20May145748.2257/texttest.carmen/carmen/studio/BuildLocalRuleset/TargetApp/Diagnostics' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.carmen.20May145700.2082/texttest.carmen/carmen/studio/RunWithTrace/TargetApp/Diagnostics/log4py.conf' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.carmen.20May145700.2082/texttest.carmen/carmen/studio/RunWithTrace/TargetApp/Diagnostics' ...
 Adding entry completion 'short' ...
 Adding entry completion 'normal' ...
 Adding entry completion 'idle' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.carmen.20May145748.2257/texttest.carmen/carmen/studio/BuildLocalRuleset/texttesttmp' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.carmen.20May145700.2082/texttest.carmen/carmen/studio/RunWithTrace/texttesttmp' ...
 Top Window title is TextTest static GUI : management of tests for Studio
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
@@ -245,13 +245,13 @@ Viewing action with title '_Select', stock id ''gtk-find'', accelerator ''<contr
 Viewing radio button for switch '', options Discard/Refine/Extend'. Default value 0.
 Viewing action with title 'Filter', stock id ''gtk-find'', accelerator ''<control>f''
 
-Changing GUI status to: 'TextTest started at 20May14:58:01.'
+Changing GUI status to: 'TextTest started at 20May14:57:03.'
 
 Waiting for application event 'all tests to be read' to occur.
 
 Changing GUI status to: 'Reading tests ...'
 
-Changing GUI status to: 'Reading tests completed at 20May14:58:01.'
+Changing GUI status to: 'Reading tests completed at 20May14:57:03.'
 
 Test Tree description...
 -> TargetApp (gst)
@@ -281,18 +281,19 @@ Viewing radio button for switch '', options Discard/Refine/Extend'. Default valu
 Viewing action with title 'Filter', stock id ''gtk-find'', accelerator ''<control>f''
 Expected application event 'all tests to be read' occurred, proceeding.
 
-'set test selection to' event created with arguments 'data_unchanged'
+'select indicated tests' event created with arguments ''
+Adding entry completion 'output' ...
 
-Test column header set to 'Tests: 1/2 selected'
+Changing GUI status to: 'Selecting tests ...'
+Selected 2 out of a possible 2
+Marking 2 tests as selected
+
+Test column header set to 'Tests: All 2 selected'
 Setting sensitivity of action '_Copy' to True
 Setting sensitivity of action '_Cut' to True
-Setting sensitivity of action 'Enter Failure Information' to True
 Setting sensitivity of action 'Show only selected' to True
 Setting sensitivity of action 'Hide selected' to True
-Setting sensitivity of action '_Rename...' to True
 Setting sensitivity of action 'Remove...' to True
-Setting sensitivity of action 'Move down' to True
-Setting sensitivity of action 'Move to last' to True
 Setting sensitivity of action 'S_ave Selection...' to True
 Setting sensitivity of action '_Log' to True
 Setting sensitivity of action 'Log Recursive' to True
@@ -308,25 +309,9 @@ Setting sensitivity of action '_Run' to True
 Setting sensitivity of action 'Record _Use-Case' to True
 Setting sensitivity of action 'Re_connect' to True
 
-Setting file-view title to 'data__unchanged'
-Adding file catalogue.gst under heading 'Standard Files', coloured grey90
-Adding file errors.gst under heading 'Standard Files', coloured grey90
-Adding file output.gst under heading 'Standard Files', coloured grey90
-Adding file options.gst under heading 'Definition Files', coloured grey90
-Adding file usecase.gst under heading 'Definition Files', coloured grey90
-Adding file Subplan under heading 'External Files', coloured white
-Adding file subplanRules under heading 'Subplan', coloured grey90
-Adding file Ruleset under heading 'External Files', coloured white
-Adding file LBA_MTV under heading 'Ruleset', coloured grey90
+Tabs showing : Selection, Running, Config
 
-Pane separator positioned 46% from the top
-
----------- Text Info Window ----------
-Description:
-<No description provided>
---------------------------------------
-
-Tabs showing : Test, Selection, Running, Config
+Changing GUI status to: 'Selected 2 tests.'
 
 'view options for' event created with arguments 'Running'
 
@@ -343,51 +328,15 @@ Viewing check button for switch 'Ignore catalogue file when isolating data'
 Viewing radio button for switch '', options Submit tests to SGE/Run tests locally'. Default value 0.
 Viewing action with title '_Run', stock id ''gtk-execute'', accelerator ''<control>r''
 
-'view sub-options for running :' event created with arguments 'Advanced'
-
-Viewing notebook page for 'Advanced'
-Viewing entry for option 'Configure self-diagnostics from' (set to '/carm/proj/texttest-tmp/geoff/texttest.carmen.20May145748.2257/texttest.carmen/carmen/studio/BuildLocalRuleset/TargetApp/Diagnostics/log4py.conf')
-Viewing entry for option 'Write self-diagnostics to' (set to '/carm/proj/texttest-tmp/geoff/texttest.carmen.20May145748.2257/texttest.carmen/carmen/studio/BuildLocalRuleset/TargetApp/Diagnostics')
-Viewing entry for option 'Run batch mode session'
-Viewing entry for option 'Request SGE resource'
-Viewing entry for option 'Request SGE queue' (drop-down list containing ['', 'short', 'normal', 'idle'])
-Viewing entry for option 'Build application target'
-Viewing check button for switch 'Enable self-diagnostics'
-Viewing check button for switch '(Re-)record command-line or client-server traffic'
-Viewing check button for switch 'Keep temporary write-directories'
-Viewing check button for switch 'Keep data files and successful tests until termination'
-Viewing check button for switch 'Run on performance machines only'
-Viewing check button for switch 'Run with LProf profiler'
-Viewing check button for switch 'Build all rulesets'
-Viewing check button for switch 'Use debug rulesets'
-Viewing check button for switch 'Run with RAVE Explorer'
-Viewing action with title '_Run', stock id ''gtk-execute'', accelerator ''<control>r''
-
-'check build all rulesets' event created with arguments ''
-
-'view sub-options for running :' event created with arguments 'Basic'
-
-Viewing notebook page for 'Basic'
-Viewing entry for option 'Run this version'
-Viewing entry for option 'Use checkout' (set to '/carm/proj/texttest/selftest_data')
-Viewing entry for option 'Times to run' (set to '1')
-Viewing entry for option 'Studio trace level'
-Viewing check button for switch 'Step through macro using the Macro Recorder'
-Viewing check button for switch 'Run with slow motion replay'
-Viewing check button for switch 'Ignore catalogue file when isolating data'
-Viewing radio button for switch '', options Submit tests to SGE/Run tests locally'. Default value 0.
-Viewing action with title '_Run', stock id ''gtk-execute'', accelerator ''<control>r''
-
-'enter run this version =' event created with arguments 'local'
-
 'choose run tests locally' event created with arguments ''
 
-'run selected tests' event created with arguments ''
-Adding entry completion 'output' ...
-Adding entry completion 'local' ...
-Starting dynamic run of TextTest with arguments ['-g', '-a', 'gst', '-v', 'local', '-c', '/carm/proj/texttest/selftest_data', '-cp', '1', '-l', '-xr', '/carm/proj/texttest-tmp/geoff/texttest.carmen.20May145748.2257/texttest.carmen/carmen/studio/BuildLocalRuleset/TargetApp/Diagnostics/log4py.conf', '-xw', '/carm/proj/texttest-tmp/geoff/texttest.carmen.20May145748.2257/texttest.carmen/carmen/studio/BuildLocalRuleset/TargetApp/Diagnostics', '-rulecomp', '-count', '1', '-f', '/carm/proj/texttest-tmp/geoff/texttest.carmen.20May145748.2257/texttest.carmen/carmen/studio/BuildLocalRuleset/texttesttmp/static_gui.20May145800.30215/dynamic_run1/gui_select', '-fd', '/carm/proj/texttest-tmp/geoff/texttest.carmen.20May145748.2257/texttest.carmen/carmen/studio/BuildLocalRuleset/texttesttmp/static_gui.20May145800.30215/temporary_filter_files']
+'enter studio trace level =' event created with arguments '9'
 
-Changing GUI status to: 'Started Studio test-case data_unchanged at 20May14:58:02.'
+'run selected tests' event created with arguments ''
+Adding entry completion '9' ...
+Starting dynamic run of TextTest with arguments ['-g', '-a', 'gst', '-c', '/carm/proj/texttest/selftest_data', '-cp', '1', '-trace', '9', '-l', '-xr', '/carm/proj/texttest-tmp/geoff/texttest.carmen.20May145700.2082/texttest.carmen/carmen/studio/RunWithTrace/TargetApp/Diagnostics/log4py.conf', '-xw', '/carm/proj/texttest-tmp/geoff/texttest.carmen.20May145700.2082/texttest.carmen/carmen/studio/RunWithTrace/TargetApp/Diagnostics', '-count', '2', '-f', '/carm/proj/texttest-tmp/geoff/texttest.carmen.20May145700.2082/texttest.carmen/carmen/studio/RunWithTrace/texttesttmp/static_gui.20May145702.2097/dynamic_run1/gui_select', '-fd', '/carm/proj/texttest-tmp/geoff/texttest.carmen.20May145700.2082/texttest.carmen/carmen/studio/RunWithTrace/texttesttmp/static_gui.20May145702.2097/temporary_filter_files']
+
+Changing GUI status to: 'Started 2 tests at 20May14:57:04.'
 
 Waiting for application event 'dynamic GUI to be closed' to occur.
 Expected application event 'dynamic GUI to be closed' occurred, proceeding.
