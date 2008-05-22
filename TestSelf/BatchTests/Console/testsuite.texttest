@@ -19,6 +19,12 @@ BatchRejectVersion
 # If batch version filtering enabled and all versions match, shouldn't reject
 BatchVersionsMatch
 
+# Check we can disable sending mail when no tests fail
+MailOnFailureOnly
+
+# Even if we do mail on failure only, make sure we send mail when some tests fail
+SendMailOnFailure
+
 # See that we don't get batch reports when an application has no tests
 OneAppNoTests
 
