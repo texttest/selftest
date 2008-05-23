@@ -23,7 +23,7 @@ Adding entry completion 'png' ...
 Adding entry completion 'svg' ...
 Adding entry completion 'gnuplot' ...
 Adding entry completion 'mpl' ...
-Top Window title is TextTest dynamic GUI : testing Matador,Picador under /carm/proj/texttest/selftest_data (started at 19maj17:06:57)
+Top Window title is TextTest dynamic GUI : testing Matador,Picador under /carm/proj/texttest/selftest_data (started at 23maj17:19:58)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -124,6 +124,10 @@ UI layout:
     <separator/>
   </toolbar>
   <popup name="TestPopupMenu">
+    <menuitem name="Save" action="Save"/>
+    <menuitem name="Save As..." action="Save As..."/>
+    <separator/>
+    <menuitem name="Kill" action="Kill"/>
     <menuitem name="Mark" action="Mark"/>
     <menuitem name="Unmark" action="Unmark"/>
     <separator/>
@@ -156,6 +160,8 @@ UI layout:
     <separator/>
     <menuitem name="File Properties" action="File Properties"/>
     <separator/>
+    <menuitem name="Save" action="Save"/>
+    <menuitem name="Save As..." action="Save As..."/>
     <menu name="CVSmenu" action="CVSmenu">
       <menuitem name="Log" action="Log"/>
       <menuitem name="Log Recursive" action="Log Recursive"/>
@@ -184,7 +190,7 @@ Tabs showing : Status
 
 Test progress:
 
-Changing GUI status to: 'TextTest started at 19maj17:06:58.'
+Changing GUI status to: 'TextTest started at 23maj17:19:59.'
 
 Waiting for application event 'completion of test actions' to occur.
 
@@ -215,7 +221,7 @@ Test progress:
 --> Pending : 0, colour 'white', font ''', visible=True
 --> Running : 1, colour 'yellow', font 'bold'', visible=True
 
-Progress bar set to fraction 1.0, text 'All 1 tests completed at 19maj17:06:59'
+Progress bar set to fraction 1.0, text 'All 1 tests completed at 23maj17:20:00'
 
 Redrawing test matador_2 coloured green
 Redrawing suite ArtificialUser : second column 'All 1 tests successful' coloured green

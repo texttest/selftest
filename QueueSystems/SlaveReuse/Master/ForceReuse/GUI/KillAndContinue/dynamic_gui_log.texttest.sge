@@ -1,5 +1,5 @@
 Enabling entry completion, using matching 1
-Top Window title is TextTest dynamic GUI : testing HELLO under /carm/proj/texttest-tmp/geoff/texttest.19May170622.3202/texttest.sge/QueueSystems/SlaveReuse/Master/ForceReuse/GUI/KillAndContinue/TargetApp/ (started at 19May17:06:56)
+Top Window title is TextTest dynamic GUI : testing HELLO under /carm/proj/texttest-tmp/geoff/texttest.23May171933.4946/texttest.sge/QueueSystems/SlaveReuse/Master/ForceReuse/GUI/KillAndContinue/TargetApp/ (started at 23May17:20:10)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -72,6 +72,10 @@ UI layout:
     <separator/>
   </toolbar>
   <popup name="TestPopupMenu">
+    <menuitem name="Save" action="Save"/>
+    <menuitem name="Save As..." action="Save As..."/>
+    <separator/>
+    <menuitem name="Kill" action="Kill"/>
     <menuitem name="Mark" action="Mark"/>
     <menuitem name="Unmark" action="Unmark"/>
     <separator/>
@@ -89,6 +93,8 @@ UI layout:
     <separator/>
     <menuitem name="File Properties" action="File Properties"/>
     <separator/>
+    <menuitem name="Save" action="Save"/>
+    <menuitem name="Save As..." action="Save As..."/>
   </popup>
 </ui>
 
@@ -102,7 +108,7 @@ Tabs showing : Status
 
 Test progress:
 
-Changing GUI status to: 'TextTest started at 19May17:06:56.'
+Changing GUI status to: 'TextTest started at 23May17:20:11.'
 
 Waiting for application event 'all tests to be read' to occur.
 Waiting for application event 'test Test under TargetApp to become pending' to occur.
@@ -163,13 +169,13 @@ Waiting for application event 'test Test under Suite to become pending' to occur
 Progress bar set to fraction 0.5, text '1 of 2 tests completed'
 
 Redrawing test Test coloured red
-(Second column 'cancelled pending job at 17:06' coloured red)
+(Second column 'cancelled pending job at 17:20' coloured red)
 
 Setting file-view title to 'Test'
 
 ---------- Text Info Window ----------
 Test were cancelled before starting :
-Test job was cancelled (while still pending in SGE) at 17:06
+Test job was cancelled (while still pending in SGE) at 17:20
 --------------------------------------
 Setting sensitivity of action '_Kill' to False
 Setting sensitivity of action '_Mark' to True
@@ -188,9 +194,9 @@ Changing GUI status to: 'Killed all running tests.'
 
 Changing GUI status to: 'Waiting for all tests to terminate ...'
 
-Progress bar set to fraction 1.0, text 'All 2 tests completed at 19May17:07:00'
+Progress bar set to fraction 1.0, text 'All 2 tests completed at 23May17:20:15'
 
 Redrawing test Test coloured red
-(Second column 'cancelled pending job at 17:07' coloured red)
+(Second column 'cancelled pending job at 17:20' coloured red)
 
 Changing GUI status to: 'Removing all temporary files ...'

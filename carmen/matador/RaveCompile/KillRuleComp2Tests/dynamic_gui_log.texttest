@@ -23,7 +23,7 @@ Adding entry completion 'png' ...
 Adding entry completion 'svg' ...
 Adding entry completion 'gnuplot' ...
 Adding entry completion 'mpl' ...
-Top Window title is TextTest dynamic GUI : testing Matador,Matador.2 under /carm/proj/texttest/selftest_data (started at 19May17:06:57)
+Top Window title is TextTest dynamic GUI : testing Matador,Matador.2 under /carm/proj/texttest/selftest_data (started at 23May17:19:58)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -124,6 +124,10 @@ UI layout:
     <separator/>
   </toolbar>
   <popup name="TestPopupMenu">
+    <menuitem name="Save" action="Save"/>
+    <menuitem name="Save As..." action="Save As..."/>
+    <separator/>
+    <menuitem name="Kill" action="Kill"/>
     <menuitem name="Mark" action="Mark"/>
     <menuitem name="Unmark" action="Unmark"/>
     <separator/>
@@ -156,6 +160,8 @@ UI layout:
     <separator/>
     <menuitem name="File Properties" action="File Properties"/>
     <separator/>
+    <menuitem name="Save" action="Save"/>
+    <menuitem name="Save As..." action="Save As..."/>
     <menu name="CVSmenu" action="CVSmenu">
       <menuitem name="Log" action="Log"/>
       <menuitem name="Log Recursive" action="Log Recursive"/>
@@ -184,7 +190,7 @@ Tabs showing : Status
 
 Test progress:
 
-Changing GUI status to: 'TextTest started at 19May17:06:59.'
+Changing GUI status to: 'TextTest started at 23May17:19:59.'
 
 Waiting for application event 'all tests to be read' to occur.
 Waiting for application event 'test all_1crew version <default> to start ruleset compilation' to occur.
@@ -223,7 +229,7 @@ Test progress:
 --> Pending rulecompile : 2, colour 'white', font 'bold'', visible=True
 
 Redrawing test all_1crew coloured peach puff
-(Second column 'RULES (dolgeville)' coloured peach puff)
+(Second column 'RULES (zanesville)' coloured peach puff)
 
 Test progress:
 --> Not started : 0, colour 'white', font ''', visible=True
@@ -231,7 +237,7 @@ Test progress:
 --> Running rulecompile : 1, colour 'peach puff', font 'bold'', visible=True
 
 Redrawing test all_1crew coloured peach puff
-(Second column 'RULES (dolgeville)' coloured peach puff)
+(Second column 'RULES (zanesville)' coloured peach puff)
 
 Test progress:
 --> Not started : 0, colour 'white', font ''', visible=True
@@ -252,7 +258,7 @@ Changing GUI status to: 'Waiting for all tests to terminate ...'
 Progress bar set to fraction 0.5, text '1 of 2 tests completed'
 
 Redrawing test all_1crew coloured red
-(Second column 'Ruleset build killed at 17:07' coloured red)
+(Second column 'Ruleset build killed at 17:20' coloured red)
 
 Test progress:
 --> Not started : 0, colour 'white', font ''', visible=True
@@ -260,12 +266,12 @@ Test progress:
 --> Running rulecompile : 1, colour 'peach puff', font 'bold'', visible=True
 --> Failed : 1, colour 'red', font 'bold'', visible=True
 ----> Cancelled : 1, colour 'red', font 'bold'', visible=True
-------> Ruleset build killed at 17:07 : 1, colour 'red', font 'bold'', visible=True
+------> Ruleset build killed at 17:20 : 1, colour 'red', font 'bold'', visible=True
 
-Progress bar set to fraction 1.0, text 'All 2 tests completed at 19May17:07:01'
+Progress bar set to fraction 1.0, text 'All 2 tests completed at 23May17:20:01'
 
 Redrawing test all_1crew coloured red
-(Second column 'Ruleset build killed at 17:07' coloured red)
+(Second column 'Ruleset build killed at 17:20' coloured red)
 
 Test progress:
 --> Not started : 0, colour 'white', font ''', visible=True
@@ -273,6 +279,6 @@ Test progress:
 --> Running rulecompile : 0, colour 'white', font ''', visible=True
 --> Failed : 2, colour 'red', font 'bold'', visible=True
 ----> Cancelled : 2, colour 'red', font 'bold'', visible=True
-------> Ruleset build killed at 17:07 : 2, colour 'red', font 'bold'', visible=True
+------> Ruleset build killed at 17:20 : 2, colour 'red', font 'bold'', visible=True
 
 Changing GUI status to: 'Removing all temporary files ...'

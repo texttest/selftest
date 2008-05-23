@@ -1,5 +1,5 @@
 Enabling entry completion, using matching 1
-Top Window title is TextTest dynamic GUI : testing SLEEP (started at 19May17:06:42)
+Top Window title is TextTest dynamic GUI : testing SLEEP (started at 23May17:19:56)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -72,6 +72,10 @@ UI layout:
     <separator/>
   </toolbar>
   <popup name="TestPopupMenu">
+    <menuitem name="Save" action="Save"/>
+    <menuitem name="Save As..." action="Save As..."/>
+    <separator/>
+    <menuitem name="Kill" action="Kill"/>
     <menuitem name="Mark" action="Mark"/>
     <menuitem name="Unmark" action="Unmark"/>
     <separator/>
@@ -89,6 +93,8 @@ UI layout:
     <separator/>
     <menuitem name="File Properties" action="File Properties"/>
     <separator/>
+    <menuitem name="Save" action="Save"/>
+    <menuitem name="Save As..." action="Save As..."/>
   </popup>
 </ui>
 
@@ -102,7 +108,7 @@ Tabs showing : Status
 
 Test progress:
 
-Changing GUI status to: 'TextTest started at 19May17:06:42.'
+Changing GUI status to: 'TextTest started at 23May17:19:56.'
 
 Waiting for application event 'all tests to be read' to occur.
 Waiting for application event 'test Basic to complete' to occur.
@@ -191,11 +197,11 @@ Setting sensitivity of action '_Kill' to True
 
 'mark the selected tests' event created with arguments ''
 Adding entry completion 'Checked' ...
-Adding entry completion 'Checked at 19May17:06:42' ...
+Adding entry completion 'Checked at 23May17:19:56' ...
 ---------- Dialog 'Mark the selected tests' ----------
 Default action is labelled 'gtk-ok'
 Viewing entry for option 'Brief text' (set to 'Checked')
-Viewing entry for option 'Free text' (set to 'Checked at 19May17:06:42')
+Viewing entry for option 'Free text' (set to 'Checked at 23May17:19:56')
 ------------------------------------------------------
 
 'press ok' event created with arguments ''
@@ -209,7 +215,7 @@ Adding file output.sleep under heading 'Comparison Files', coloured red
 
 ---------- Text Info Window ----------
 Test was marked by the user :
-Checked at 19May17:06:42
+Checked at 23May17:19:56
 
 ORIGINAL STATE:
 Test FAILED :
@@ -243,7 +249,7 @@ Changing GUI status to: 'Waiting for all tests to terminate ...'
 
 Redrawing test Basic3 coloured yellow
 
-Progress bar set to fraction 1.0, text 'All 3 tests completed at 19May17:06:55'
+Progress bar set to fraction 1.0, text 'All 3 tests completed at 23May17:20:08'
 
 Redrawing test Basic3 coloured red
 (Second column 'KILLED' coloured red)

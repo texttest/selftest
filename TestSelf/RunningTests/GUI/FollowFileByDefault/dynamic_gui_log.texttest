@@ -1,5 +1,5 @@
 Enabling entry completion, using matching 1
-Top Window title is TextTest dynamic GUI : testing SLEEP (started at 19May17:06:42)
+Top Window title is TextTest dynamic GUI : testing SLEEP (started at 23May17:19:49)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -72,6 +72,10 @@ UI layout:
     <separator/>
   </toolbar>
   <popup name="TestPopupMenu">
+    <menuitem name="Save" action="Save"/>
+    <menuitem name="Save As..." action="Save As..."/>
+    <separator/>
+    <menuitem name="Kill" action="Kill"/>
     <menuitem name="Mark" action="Mark"/>
     <menuitem name="Unmark" action="Unmark"/>
     <separator/>
@@ -89,6 +93,8 @@ UI layout:
     <separator/>
     <menuitem name="File Properties" action="File Properties"/>
     <separator/>
+    <menuitem name="Save" action="Save"/>
+    <menuitem name="Save As..." action="Save As..."/>
   </popup>
 </ui>
 
@@ -102,7 +108,7 @@ Tabs showing : Status
 
 Test progress:
 
-Changing GUI status to: 'TextTest started at 19May17:06:43.'
+Changing GUI status to: 'TextTest started at 23May17:19:49.'
 
 Waiting for application event 'all tests to be read' to occur.
 Waiting for application event 'test Basic to start' to occur.
@@ -158,7 +164,7 @@ To obtain the latest progress information and an up-to-date comparison of the fi
 Tabs showing : Test, Status
 
 'select file' event created with arguments 'output.sleep'
-Following file /carm/proj/texttest-tmp/geoff/texttest.19May170622.3202/texttest/TestSelf/RunningTests/GUI/FollowFileByDefault/texttesttmp/console.19May170642.22046/sleep/Suite1/Basic/output.sleep using 'tail -f'
+Following file /carm/proj/texttest-tmp/geoff/texttest.23May171933.4946/texttest/TestSelf/RunningTests/GUI/FollowFileByDefault/texttesttmp/console.23May171949.13217/sleep/Suite1/Basic/output.sleep using 'tail -f'
 
 Changing GUI status to: 'Started "tail -f output.sleep" in background (from test Basic).'
 
@@ -184,7 +190,7 @@ Adding file output.sleep under heading 'Comparison Files', coloured red
 
 ---------- Text Info Window ----------
 Test were terminated before completion (KILLED) :
-Test killed explicitly at 17:06
+Test killed explicitly at 17:19
 ---------- Differences in output ----------
 2d1
 < Done
@@ -199,7 +205,7 @@ Progress bar set to fraction 0.666666666667, text '2 of 3 tests completed'
 Redrawing test Basic2 coloured red
 (Second column 'cancelled' coloured red)
 
-Progress bar set to fraction 1.0, text 'All 3 tests completed at 19May17:06:45'
+Progress bar set to fraction 1.0, text 'All 3 tests completed at 23May17:19:51'
 
 Redrawing test Basic3 coloured red
 (Second column 'cancelled' coloured red)

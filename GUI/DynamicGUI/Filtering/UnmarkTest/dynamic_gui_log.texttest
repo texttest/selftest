@@ -1,5 +1,5 @@
 Enabling entry completion, using matching 1
-Top Window title is TextTest dynamic GUI : testing HELLO (started at 19May17:06:50)
+Top Window title is TextTest dynamic GUI : testing HELLO (started at 23May17:19:55)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -72,6 +72,10 @@ UI layout:
     <separator/>
   </toolbar>
   <popup name="TestPopupMenu">
+    <menuitem name="Save" action="Save"/>
+    <menuitem name="Save As..." action="Save As..."/>
+    <separator/>
+    <menuitem name="Kill" action="Kill"/>
     <menuitem name="Mark" action="Mark"/>
     <menuitem name="Unmark" action="Unmark"/>
     <separator/>
@@ -89,6 +93,8 @@ UI layout:
     <separator/>
     <menuitem name="File Properties" action="File Properties"/>
     <separator/>
+    <menuitem name="Save" action="Save"/>
+    <menuitem name="Save As..." action="Save As..."/>
   </popup>
 </ui>
 
@@ -102,7 +108,7 @@ Tabs showing : Status
 
 Test progress:
 
-Changing GUI status to: 'TextTest started at 19May17:06:51.'
+Changing GUI status to: 'TextTest started at 23May17:19:56.'
 
 Waiting for application event 'completion of test actions' to occur.
 
@@ -250,7 +256,7 @@ Test progress:
 ------> file2 different : 1, colour 'red', font 'bold'', visible=True
 ------> file4 different : 1, colour 'red', font 'bold'', visible=True
 
-Progress bar set to fraction 1.0, text 'All 5 tests completed at 19May17:06:52'
+Progress bar set to fraction 1.0, text 'All 5 tests completed at 23May17:19:57'
 
 Redrawing test success coloured green
 Redrawing suite suite : second column 'All 1 tests successful' coloured green
@@ -298,11 +304,11 @@ Tabs showing : Test, Status
 
 'mark the selected tests' event created with arguments ''
 Adding entry completion 'Checked' ...
-Adding entry completion 'Checked at 19May17:06:51' ...
+Adding entry completion 'Checked at 23May17:19:56' ...
 ---------- Dialog 'Mark the selected tests' ----------
 Default action is labelled 'gtk-ok'
 Viewing entry for option 'Brief text' (set to 'Checked')
-Viewing entry for option 'Free text' (set to 'Checked at 19May17:06:51')
+Viewing entry for option 'Free text' (set to 'Checked at 23May17:19:56')
 ------------------------------------------------------
 
 'enter free text =' event created with arguments 'Nothing that needs filtering'

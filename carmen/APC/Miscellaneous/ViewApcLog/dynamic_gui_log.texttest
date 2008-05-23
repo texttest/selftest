@@ -23,7 +23,7 @@ Adding entry completion 'png' ...
 Adding entry completion 'svg' ...
 Adding entry completion 'gnuplot' ...
 Adding entry completion 'mpl' ...
-Top Window title is TextTest dynamic GUI : testing APC.sleep under /carm/proj/texttest/selftest_data (started at 19May17:07:01)
+Top Window title is TextTest dynamic GUI : testing APC.sleep under /carm/proj/texttest/selftest_data (started at 23May17:20:00)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -132,6 +132,10 @@ UI layout:
     <toolitem name="Select KPI group" action="Select KPI group"/>
   </toolbar>
   <popup name="TestPopupMenu">
+    <menuitem name="Save" action="Save"/>
+    <menuitem name="Save As..." action="Save As..."/>
+    <separator/>
+    <menuitem name="Kill" action="Kill"/>
     <menuitem name="Mark" action="Mark"/>
     <menuitem name="Unmark" action="Unmark"/>
     <separator/>
@@ -164,6 +168,8 @@ UI layout:
     <separator/>
     <menuitem name="File Properties" action="File Properties"/>
     <separator/>
+    <menuitem name="Save" action="Save"/>
+    <menuitem name="Save As..." action="Save As..."/>
     <menu name="CVSmenu" action="CVSmenu">
       <menuitem name="Log" action="Log"/>
       <menuitem name="Log Recursive" action="Log Recursive"/>
@@ -192,7 +198,7 @@ Tabs showing : Status
 
 Test progress:
 
-Changing GUI status to: 'TextTest started at 19May17:07:02.'
+Changing GUI status to: 'TextTest started at 23May17:20:01.'
 
 Waiting for application event 'all tests to be read' to occur.
 Waiting for application event 'test umlauf_spiel to start' to occur.
@@ -217,7 +223,7 @@ Test progress:
 --> Pending : 1, colour 'white', font 'bold'', visible=True
 
 Redrawing test umlauf_spiel coloured yellow
-(Second column 'RUN (redenaco)' coloured yellow)
+(Second column 'RUN (greenville)' coloured yellow)
 
 Test progress:
 --> Not started : 0, colour 'white', font ''', visible=True
@@ -254,7 +260,7 @@ Adding file output.apc under heading 'Temporary Files', coloured yellow
 Pane separator positioned 46% from the top
 
 ---------- Text Info Window ----------
-Running on redenaco
+Running on greenville
 
 To obtain the latest progress information and an up-to-date comparison of the files above, perform 'recompute status' (press 'F5')
 --------------------------------------
@@ -268,7 +274,7 @@ Changing GUI status to: 'Rereading configuration for APC.sleep ...'
 Changing GUI status to: 'Recomputing status of APC.sleep test-case umlauf_spiel ...'
 
 Redrawing test umlauf_spiel coloured yellow
-(Second column 'RUN (redenaco)' coloured yellow)
+(Second column 'RUN (greenville)' coloured yellow)
 
 Setting file-view title to 'umlauf__spiel'
 Adding file apclog.apc under heading 'New Files', coloured yellow
@@ -276,11 +282,14 @@ Adding file errors.apc under heading 'New Files', coloured yellow
 Adding file output.apc under heading 'New Files', coloured yellow
 
 ---------- Text Info Window ----------
-Running on redenaco
+Running on greenville
 APC STATUS REPORT OVERVIEW
 
 Total time:  0:00:00   cpu time:  0:00:00
-module: input
+APC producing solution number: 4
+Active method: column generator, module: pricing (with all duties)
+Generated trips: 445 this loop (expected 445)
+Generated first legs: 22 this loop (of 22)
 
 
 To obtain the latest progress information and an up-to-date comparison of the files above, perform 'recompute status' (press 'F5')
@@ -289,7 +298,7 @@ To obtain the latest progress information and an up-to-date comparison of the fi
 Changing GUI status to: 'Recomputed status of 1 test.'
 
 'select file' event created with arguments 'apclog.apc'
-Following file /carm/proj/texttest-tmp/geoff/texttest.19May170622.3202/texttest.carmen/carmen/APC/Miscellaneous/ViewApcLog/texttesttmp/apc.sleep.19May170701.2766/apc.sleep/Spielscripts/umlauf_spiel/apclog.apc using 'less +F'
+Following file /carm/proj/texttest-tmp/geoff/texttest.23May171933.4946/texttest.carmen/carmen/APC/Miscellaneous/ViewApcLog/texttesttmp/apc.sleep.23May172000.22807/apc.sleep/Spielscripts/umlauf_spiel/apclog.apc using 'less +F'
 
 Changing GUI status to: 'Started "less +F apclog.apc" in background (from test umlauf_spiel).'
 
@@ -300,7 +309,7 @@ Setting sensitivity of action 'View Filtered File' to True
 Setting sensitivity of action 'Follow File Progress' to True
 
 'view file' event created with arguments ''
-Viewing file /carm/proj/texttest-tmp/geoff/texttest.19May170622.3202/texttest.carmen/carmen/APC/Miscellaneous/ViewApcLog/texttesttmp/apc.sleep.19May170701.2766/apc.sleep/Spielscripts/umlauf_spiel/apclog.apc using 'xemacs', refresh set to False
+Viewing file /carm/proj/texttest-tmp/geoff/texttest.23May171933.4946/texttest.carmen/carmen/APC/Miscellaneous/ViewApcLog/texttesttmp/apc.sleep.23May172000.22807/apc.sleep/Spielscripts/umlauf_spiel/apclog.apc using 'xemacs', refresh set to False
 
 Changing GUI status to: 'Started "xemacs apclog.apc" in background (from test umlauf_spiel).'
 Setting sensitivity of action 'View File' to False
@@ -327,7 +336,7 @@ Changing GUI status to: 'Killed all running tests.'
 
 Changing GUI status to: 'Waiting for all tests to terminate ...'
 
-Progress bar set to fraction 1.0, text 'All 1 tests completed at 19May17:07:13'
+Progress bar set to fraction 1.0, text 'All 1 tests completed at 23May17:20:18'
 
 Redrawing test umlauf_spiel coloured red
 (Second column 'KILLED' coloured red)
