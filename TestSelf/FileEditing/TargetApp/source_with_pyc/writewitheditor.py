@@ -1,5 +1,8 @@
 #!/usr/bin/env python
 
+import signal
+signal.signal(signal.SIGINT, signal.SIG_DFL)
+
 import os, sys
 from subprocess import Popen
 from usecase import ScriptEngine
@@ -10,8 +13,6 @@ def editFile(fileName):
     process = Popen([ "python", editorPath, fileName ])
     scriptEngine.monitorProcess("edits " + fileName, process, [ fileName ])
     scriptEngine.applicationEvent("file " + fileName + " being edited")
-    print "Editing file", fileName
-    sys.stdout.flush()
     scriptEngine.recorder.writeApplicationEventDetails()
     process.wait()
     # Hack!

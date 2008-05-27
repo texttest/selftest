@@ -1,8 +1,10 @@
 #!/usr/bin/env python
 
-import sys, os, time, signal
+import signal
 
 signal.signal(signal.SIGINT, signal.SIG_DFL)
+
+import sys, os, time
 
 # If we're recording, edit and terminate. Otherwise hang :)
 if os.getenv("USECASE_RECORD_SCRIPT") and not os.getenv("USECASE_REPLAY_SCRIPT"):
