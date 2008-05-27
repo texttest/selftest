@@ -1,0 +1,252 @@
+Enabling entry completion, using matching 1
+Top Window title is TextTest dynamic GUI : testing EDIT (started at 23May14:52:14)
+Default widget is <type 'gtk.TreeView'>
+Setting window width to 60% of screen.
+Setting window height to 83% of screen.
+
+Viewing toggle action with title '_Toolbar'
+Viewing toggle action with title '_Shortcut bar'
+Viewing toggle action with title '_Status bar'
+Viewing action with title '_Quit', stock id ''gtk-quit'', accelerator ''<control>q''
+Viewing action with title 'View File', stock id ''gtk-open'' (greyed out)
+Viewing action with title '_File Properties', stock id ''gtk-properties'' (greyed out)
+Viewing action with title 'View Filtered File' (greyed out)
+Viewing action with title 'View Raw Differences' (greyed out)
+Viewing action with title 'View Differences' (greyed out)
+Viewing action with title 'Follow File Progress' (greyed out)
+Viewing action with title '_Save', stock id ''gtk-save'', accelerator ''<control>s'' (greyed out)
+Viewing action with title 'Save _As...', stock id ''gtk-save'', accelerator ''<control><alt>s'' (greyed out)
+Viewing action with title 'S_ave Selection...', stock id ''gtk-save-as'', accelerator ''<control><shift>s'' (greyed out)
+Viewing action with title '_Kill', stock id ''gtk-stop'', accelerator ''<control>Delete'' (greyed out)
+Viewing action with title '_Mark', accelerator ''<control><shift>m'' (greyed out)
+Viewing action with title '_Unmark', accelerator ''<control><shift>u'' (greyed out)
+Viewing action with title 'Recompute Status', stock id ''gtk-refresh'', accelerator ''F5'' (greyed out)
+Viewing action with title '_Migration Notes'
+Viewing action with title 'Component _Versions'
+Viewing action with title '_About TextTest', stock id ''gtk-about''
+
+UI layout: 
+<ui>
+  <menubar name="MainMenuBar">
+    <menu name="filemenu" action="filemenu">
+      <placeholder name="FirstInFileMenu">
+        <menuitem name="Save" action="Save"/>
+        <menuitem name="Save As..." action="Save As..."/>
+        <separator/>
+      </placeholder>
+      <menuitem name="Save Selection..." action="Save Selection..."/>
+      <separator/>
+      <menuitem name="Quit" action="Quit"/>
+    </menu>
+    <menu name="editmenu" action="editmenu">
+    </menu>
+    <menu name="viewmenu" action="viewmenu">
+      <placeholder name="FirstInViewMenu">
+      </placeholder>
+      <menuitem name="Toolbar" action="Toolbar"/>
+      <menuitem name="Shortcut bar" action="Shortcut bar"/>
+      <menuitem name="Status bar" action="Status bar"/>
+    </menu>
+    <menu name="actionsmenu" action="actionsmenu">
+      <menuitem name="Kill" action="Kill"/>
+      <menuitem name="Mark" action="Mark"/>
+      <menuitem name="Unmark" action="Unmark"/>
+      <separator/>
+      <menuitem name="Recompute Status" action="Recompute Status"/>
+      <separator/>
+    </menu>
+    <placeholder name="ExtraMenus">
+    </placeholder>
+    <menu name="helpmenu" action="helpmenu">
+      <menuitem name="Migration Notes" action="Migration Notes"/>
+      <separator/>
+      <menuitem name="Component Versions" action="Component Versions"/>
+      <separator/>
+      <menuitem name="About TextTest" action="About TextTest"/>
+    </menu>
+  </menubar>
+  <toolbar name="MainToolBar">
+    <toolitem name="Quit" action="Quit"/>
+    <toolitem name="Kill" action="Kill"/>
+    <toolitem name="Save" action="Save"/>
+    <separator/>
+  </toolbar>
+  <popup name="TestPopupMenu">
+    <menuitem name="Mark" action="Mark"/>
+    <menuitem name="Unmark" action="Unmark"/>
+    <separator/>
+    <menuitem name="Recompute Status" action="Recompute Status"/>
+    <separator/>
+  </popup>
+  <popup name="TestFilePopupMenu">
+    <menuitem name="View File" action="View File"/>
+    <menuitem name="View Filtered File" action="View Filtered File"/>
+    <separator/>
+    <menuitem name="View Differences" action="View Differences"/>
+    <menuitem name="View Raw Differences" action="View Raw Differences"/>
+    <separator/>
+    <menuitem name="Follow File Progress" action="Follow File Progress"/>
+    <separator/>
+    <menuitem name="File Properties" action="File Properties"/>
+    <separator/>
+  </popup>
+</ui>
+
+Test Tree description...
+
+Test column header set to 'Tests: 0/1 selected, all hidden'
+
+Pane separator positioned 50% from the left edge
+
+Tabs showing : Status
+
+Test progress:
+--> Not started : 1, colour 'white', font 'bold'', visible=True
+
+Changing GUI status to: 'TextTest started at 23May14:52:14.'
+
+Waiting for application event 'completion of test actions' to occur.
+
+Progress bar set to fraction 0.0, text '0 of 1 tests completed'
+
+Test Tree description...
+-> TargetApp (edit)
+->   new
+
+Test column header set to 'Tests: 0/1 selected, none hidden'
+
+Redrawing test new coloured yellow
+
+Test progress:
+--> Not started : 0, colour 'white', font ''', visible=True
+--> Running : 1, colour 'yellow', font 'bold'', visible=True
+
+Progress bar set to fraction 1.0, text 'All 1 tests completed at 23May14:52:15'
+
+Redrawing test new coloured red
+(Second column 'errors new(+)' coloured red)
+
+Test progress:
+--> Not started : 0, colour 'white', font ''', visible=True
+--> Running : 0, colour 'white', font ''', visible=True
+--> Failed : 1, colour 'red', font 'bold'', visible=True
+----> Differences : 1, colour 'red', font 'bold'', visible=True
+------> catalogue new : 1, colour 'red', font 'bold'', visible=True
+------> editedfile new : 1, colour 'red', font 'bold'', visible=True
+------> editedfile2 new : 1, colour 'red', font 'bold'', visible=True
+------> errors new : 1, colour 'red', font 'bold'', visible=True
+------> output new : 1, colour 'red', font 'bold'', visible=True
+------> usecase new : 1, colour 'red', font 'bold'', visible=True
+Only one test found, selecting new
+
+Test column header set to 'Tests: All 1 selected, none hidden'
+Setting sensitivity of action '_Save' to True
+Setting sensitivity of action 'Save _As...' to True
+Setting sensitivity of action 'S_ave Selection...' to True
+Setting sensitivity of action '_Mark' to True
+Setting sensitivity of action 'Recompute Status' to True
+
+Setting file-view title to 'new'
+Adding file catalogue.edit under heading 'New Files', coloured red
+Adding file editedfile.edit under heading 'New Files', coloured red
+Adding file editedfile2.edit under heading 'New Files', coloured red
+Adding file errors.edit under heading 'New Files', coloured red
+Adding file output.edit under heading 'New Files', coloured red
+Adding file usecase.edit under heading 'New Files', coloured red
+
+Pane separator positioned 46% from the top
+
+---------- Text Info Window ----------
+Test FAILED :
+---------- New result in catalogue ----------
+
+The following existing files/directories changed their contents:
+<Test Directory>
+----file
+----file2
+---------- New result in editedfile ----------
+dummy
+The Editor has made its mark
+---------- New result in editedfile2 ----------
+dummy
+The Editor has made its mark
+---------- New result in errors ----------
+---------- New result in output ----------
+Editing file file
+Editing file file2
+---------- New result in usecase ----------
+wait for file file being edited
+make changes to file file
+terminate process that edits file
+wait for file file2 being edited
+make changes to file file2
+terminate process that edits file2
+--------------------------------------
+
+Tabs showing : Test, Status
+Expected application event 'completion of test actions' occurred, proceeding.
+
+'save results for selected tests' event created with arguments ''
+
+Changing GUI status to: 'Saving 1 tests ...'
+Saving EDIT test-case new - version , exactness 1
+
+Changing GUI status to: 'Saving EDIT test-case new : catalogue, no version'
+
+Changing GUI status to: 'Saving EDIT test-case new : editedfile, no version'
+
+Changing GUI status to: 'Saving EDIT test-case new : editedfile2, no version'
+
+Changing GUI status to: 'Saving EDIT test-case new : errors, no version'
+
+Changing GUI status to: 'Saving EDIT test-case new : output, no version'
+
+Changing GUI status to: 'Saving EDIT test-case new : usecase, no version'
+
+Changing GUI status to: 'Saving EDIT test-case new : edited file file, no version'
+
+Changing GUI status to: 'Saving EDIT test-case new : edited file file2, no version'
+
+Redrawing test new coloured green
+Redrawing suite TargetApp : second column 'All 1 tests successful' coloured green
+
+Test column header set to 'Tests: 0/1 selected, none hidden'
+Setting sensitivity of action '_Save' to False
+Setting sensitivity of action 'Save _As...' to False
+Setting sensitivity of action 'S_ave Selection...' to False
+Setting sensitivity of action '_Mark' to False
+Setting sensitivity of action 'Recompute Status' to False
+
+Test progress:
+--> Not started : 0, colour 'white', font ''', visible=True
+--> Running : 0, colour 'white', font ''', visible=True
+--> Failed : 0, colour 'white', font ''', visible=True
+----> Differences : 0, colour 'white', font ''', visible=True
+------> catalogue new : 0, colour 'white', font ''', visible=True
+------> editedfile new : 0, colour 'white', font ''', visible=True
+------> editedfile2 new : 0, colour 'white', font ''', visible=True
+------> errors new : 0, colour 'white', font ''', visible=True
+------> output new : 0, colour 'white', font ''', visible=True
+------> usecase new : 0, colour 'white', font ''', visible=True
+--> Succeeded : 1, colour 'green', font 'bold'', visible=True
+
+Tabs showing : Status
+
+Test progress:
+--> Not started : 0, colour 'white', font ''', visible=True
+--> Running : 0, colour 'white', font ''', visible=True
+--> Failed : 0, colour 'white', font ''', visible=True
+----> Differences : 0, colour 'white', font ''', visible=True
+------> catalogue new : 0, colour 'white', font ''', visible=True
+------> editedfile new : 0, colour 'white', font ''', visible=True
+------> editedfile2 new : 0, colour 'white', font ''', visible=True
+------> errors new : 0, colour 'white', font ''', visible=True
+------> output new : 0, colour 'white', font ''', visible=True
+------> usecase new : 0, colour 'white', font ''', visible=True
+--> Succeeded : 1, colour 'green', font 'bold'', visible=True
+
+Changing GUI status to: 'Saved 1 tests.'
+
+'quit' event created with arguments ''
+
+Changing GUI status to: 'Removing all temporary files ...'
