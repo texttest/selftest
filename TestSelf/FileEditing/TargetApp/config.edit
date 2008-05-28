@@ -1,4 +1,4 @@
-executable:${TEXTTEST_HOME}/source_with_pyc/writewitheditor.py
+executable:${TEXTTEST_HOME}/writewitheditor.py
 
 log_file:none
 
@@ -12,12 +12,8 @@ copy_test_path:file2
 
 test_data_ignore:CVS
 
-use_case_record_mode:GUI
+collect_traffic:editor.py
 
 [collate_file]
 editedfile:file
 editedfile2:file2
-
-[run_dependent_text]
-# Seem to get printouts when keyboardinterrupt happens during an "import site" command
-errors:import site

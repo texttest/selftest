@@ -1,9 +1,9 @@
 Enabling entry completion, using matching 1
 Adding entry completion '<default>' ...
 Adding entry completion '1' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.23May145208.540/texttest/TestSelf/FileEditing/GUI/RecordAndSave/TargetApp/Diagnostics/log4py.conf' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.23May145208.540/texttest/TestSelf/FileEditing/GUI/RecordAndSave/TargetApp/Diagnostics' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.23May145208.540/texttest/TestSelf/FileEditing/GUI/RecordAndSave/texttesttmp' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.28May112907.10976/texttest/TestSelf/FileEditing/GUI/RecordAndSave/TargetApp/Diagnostics/log4py.conf' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.28May112907.10976/texttest/TestSelf/FileEditing/GUI/RecordAndSave/TargetApp/Diagnostics' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.28May112907.10976/texttest/TestSelf/FileEditing/GUI/RecordAndSave/texttesttmp' ...
 Top Window title is TextTest static GUI : management of tests for EDIT
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
@@ -186,13 +186,13 @@ Viewing action with title '_Select', stock id ''gtk-find'', accelerator ''<contr
 Viewing radio button for switch '', options Discard/Refine/Extend'. Default value 0.
 Viewing action with title 'Filter', stock id ''gtk-find'', accelerator ''<control>f''
 
-Changing GUI status to: 'TextTest started at 23May14:52:12.'
+Changing GUI status to: 'TextTest started at 28May11:29:16.'
 
 Waiting for application event 'all tests to be read' to occur.
 
 Changing GUI status to: 'Reading tests ...'
 
-Changing GUI status to: 'Reading tests completed at 23May14:52:12.'
+Changing GUI status to: 'Reading tests completed at 28May11:29:16.'
 
 Test Tree description...
 -> TargetApp (edit)
@@ -208,7 +208,7 @@ Viewing entry for option 'App names containing'
 Viewing entry for option 'Tests listed in file'
 Viewing entry for option 'Descriptions containing'
 Viewing entry for option 'Test-files containing'
-Viewing entry for option 'Test-file to search' (set to 'errors') (drop-down list containing ['errors', 'editedfile2', 'usecase', 'catalogue', 'output', 'editedfile'])
+Viewing entry for option 'Test-file to search' (set to 'errors') (drop-down list containing ['errors', 'editedfile2', 'catalogue', 'traffic', 'output', 'editedfile'])
 Viewing entry for option 'Execution time'
 ...........
 Viewing check button for switch 'Select in collapsed suites'
@@ -229,6 +229,7 @@ Setting sensitivity of action '_Sort Test Suite File' to True
 Setting sensitivity of action '_Reversed Sort Test Suite File' to True
 
 Setting file-view title to 'TargetApp'
+Adding file environment under heading 'Definition Files', coloured grey90
 Adding file testsuite.edit under heading 'Definition Files', coloured grey90
 Adding file file under heading 'Data Files', coloured grey90
 Adding file file2 under heading 'Data Files', coloured grey90
@@ -292,7 +293,6 @@ Setting sensitivity of action 'Move up' to True
 Setting sensitivity of action 'S_ave Selection...' to True
 Setting sensitivity of action '_Run' to True
 Setting sensitivity of action '_Run' to True
-Setting sensitivity of action 'Record _Use-Case' to True
 Setting sensitivity of action 'Re_connect' to True
 
 Tabs showing : Test, Selection, Running, Config
@@ -301,35 +301,53 @@ Changing GUI status to: 'Added new EDIT test-case new'
 
 'view options for' event created with arguments 'Running'
 
-Tabs showing : Basic, Advanced, Recording, Reconnect
+Tabs showing : Basic, Advanced, Reconnect
 
 Viewing notebook page for 'Basic'
 Viewing entry for option 'Run this version'
 Viewing entry for option 'Use checkout'
 Viewing entry for option 'Times to run' (set to '1')
-Viewing check button for switch 'Run with slow motion replay'
 Viewing action with title '_Run', stock id ''gtk-execute'', accelerator ''<control>r''
 
-'view sub-options for running :' event created with arguments 'Recording'
+'view sub-options for running :' event created with arguments 'Advanced'
 
-Viewing notebook page for 'Recording'
-Viewing entry for option 'Version to record'
-Viewing entry for option 'Checkout to use for recording'
-Viewing check button for switch 'Automatically replay test after recording it' (checked)
-Viewing radio button for switch '', options Auto-replay invisible/Auto-replay in dynamic GUI'. Default value 0.
-Viewing action with title 'Record _Use-Case', stock id ''gtk-media-record'', accelerator ''F9''
+Viewing notebook page for 'Advanced'
+Viewing entry for option 'Configure self-diagnostics from' (set to '/carm/proj/texttest-tmp/geoff/texttest.28May112907.10976/texttest/TestSelf/FileEditing/GUI/RecordAndSave/TargetApp/Diagnostics/log4py.conf')
+Viewing entry for option 'Write self-diagnostics to' (set to '/carm/proj/texttest-tmp/geoff/texttest.28May112907.10976/texttest/TestSelf/FileEditing/GUI/RecordAndSave/TargetApp/Diagnostics')
+Viewing entry for option 'Run batch mode session'
+Viewing check button for switch 'Enable self-diagnostics'
+Viewing check button for switch '(Re-)record command-line or client-server traffic'
+Viewing check button for switch 'Keep temporary write-directories'
+Viewing action with title '_Run', stock id ''gtk-execute'', accelerator ''<control>r''
 
-'uncheck automatically replay test after recording it' event created with arguments ''
+'check (re-)record command-line or client-server traffic' event created with arguments ''
 
-'record use-case' event created with arguments ''
-Starting record run of TextTest with arguments ['-g', '-record', '-a', 'edit', '-count', '1', '-f', '/carm/proj/texttest-tmp/geoff/texttest.23May145208.540/texttest/TestSelf/FileEditing/GUI/RecordAndSave/texttesttmp/static_gui.23May145211.552/dynamic_run1/gui_select', '-fd', '/carm/proj/texttest-tmp/geoff/texttest.23May145208.540/texttest/TestSelf/FileEditing/GUI/RecordAndSave/texttesttmp/static_gui.23May145211.552/temporary_filter_files']
+'run selected tests' event created with arguments ''
+Starting dynamic run of TextTest with arguments ['-g', '-a', 'edit', '-cp', '1', '-xr', '/carm/proj/texttest-tmp/geoff/texttest.28May112907.10976/texttest/TestSelf/FileEditing/GUI/RecordAndSave/TargetApp/Diagnostics/log4py.conf', '-xw', '/carm/proj/texttest-tmp/geoff/texttest.28May112907.10976/texttest/TestSelf/FileEditing/GUI/RecordAndSave/TargetApp/Diagnostics', '-rectraffic', '-count', '1', '-f', '/carm/proj/texttest-tmp/geoff/texttest.28May112907.10976/texttest/TestSelf/FileEditing/GUI/RecordAndSave/texttesttmp/static_gui.28May112915.27756/dynamic_run1/gui_select', '-fd', '/carm/proj/texttest-tmp/geoff/texttest.28May112907.10976/texttest/TestSelf/FileEditing/GUI/RecordAndSave/texttesttmp/static_gui.28May112915.27756/temporary_filter_files']
 
-Changing GUI status to: 'Started record session for EDIT test-case new'
+Changing GUI status to: 'Started EDIT test-case new at 28May11:29:17.'
 
-Waiting for application event 'record GUI to be closed' to occur.
+Waiting for application event 'dynamic GUI to be closed' to occur.
+Expected application event 'dynamic GUI to be closed' occurred, proceeding.
 
-Changing GUI status to: 'Recording completed for EDIT test-case new, not auto-replaying'
-Expected application event 'record GUI to be closed' occurred, proceeding.
+'view options for' event created with arguments 'Test'
+
+Setting file-view title to 'new'
+Adding file catalogue.edit under heading 'Standard Files', coloured grey90
+Adding file editedfile.edit under heading 'Standard Files', coloured grey90
+Adding file editedfile2.edit under heading 'Standard Files', coloured grey90
+Adding file errors.edit under heading 'Standard Files', coloured grey90
+Adding file output.edit under heading 'Standard Files', coloured grey90
+Adding file traffic.edit under heading 'Definition Files', coloured grey90
+Adding file file under heading 'Externally Edited Files', coloured grey90
+Adding file file2 under heading 'Externally Edited Files', coloured grey90
+
+Pane separator positioned 46% from the top
+
+---------- Text Info Window ----------
+Description:
+<No description provided>
+--------------------------------------
 
 'quit' event created with arguments ''
 

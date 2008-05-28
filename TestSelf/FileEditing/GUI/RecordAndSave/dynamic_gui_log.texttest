@@ -1,5 +1,5 @@
 Enabling entry completion, using matching 1
-Top Window title is TextTest dynamic GUI : testing EDIT (started at 27May16:10:09)
+Top Window title is TextTest dynamic GUI : testing EDIT (started at 28May11:25:26)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -109,7 +109,7 @@ Tabs showing : Status
 Test progress:
 --> Not started : 1, colour 'white', font 'bold'', visible=True
 
-Changing GUI status to: 'TextTest started at 27May16:10:09.'
+Changing GUI status to: 'TextTest started at 28May11:25:26.'
 
 Waiting for application event 'completion of test actions' to occur.
 
@@ -127,7 +127,7 @@ Test progress:
 --> Not started : 0, colour 'white', font ''', visible=True
 --> Running : 1, colour 'yellow', font 'bold'', visible=True
 
-Progress bar set to fraction 1.0, text 'All 1 tests completed at 27May16:10:10'
+Progress bar set to fraction 1.0, text 'All 1 tests completed at 28May11:25:27'
 
 Redrawing test new coloured red
 (Second column 'errors new(+)' coloured red)
@@ -142,7 +142,7 @@ Test progress:
 ------> editedfile2 new : 1, colour 'red', font 'bold'', visible=True
 ------> errors new : 1, colour 'red', font 'bold'', visible=True
 ------> output new : 1, colour 'red', font 'bold'', visible=True
-------> usecase new : 1, colour 'red', font 'bold'', visible=True
+------> traffic new : 1, colour 'red', font 'bold'', visible=True
 Only one test found, selecting new
 
 Test column header set to 'Tests: All 1 selected, none hidden'
@@ -158,7 +158,7 @@ Adding file editedfile.edit under heading 'New Files', coloured red
 Adding file editedfile2.edit under heading 'New Files', coloured red
 Adding file errors.edit under heading 'New Files', coloured red
 Adding file output.edit under heading 'New Files', coloured red
-Adding file usecase.edit under heading 'New Files', coloured red
+Adding file traffic.edit under heading 'New Files', coloured red
 
 Pane separator positioned 46% from the top
 
@@ -178,13 +178,15 @@ dummy
 The Editor has made its mark
 ---------- New result in errors ----------
 ---------- New result in output ----------
----------- New result in usecase ----------
-wait for file file being edited
-make changes to file file
-terminate process that edits file
-wait for file file2 being edited
-make changes to file file2
-terminate process that edits file2
+Editing file file
+Editing file file2
+---------- New result in traffic ----------
+<-CMD:editor.py file
+->OUT:Editing file file
+->FIL:file
+<-CMD:editor.py file2
+->OUT:Editing file file2
+->FIL:file2
 --------------------------------------
 
 Tabs showing : Test, Status
@@ -205,7 +207,7 @@ Changing GUI status to: 'Saving EDIT test-case new : errors, no version'
 
 Changing GUI status to: 'Saving EDIT test-case new : output, no version'
 
-Changing GUI status to: 'Saving EDIT test-case new : usecase, no version'
+Changing GUI status to: 'Saving EDIT test-case new : traffic, no version'
 
 Changing GUI status to: 'Saving EDIT test-case new : edited file file, no version'
 
@@ -231,7 +233,7 @@ Test progress:
 ------> editedfile2 new : 0, colour 'white', font ''', visible=True
 ------> errors new : 0, colour 'white', font ''', visible=True
 ------> output new : 0, colour 'white', font ''', visible=True
-------> usecase new : 0, colour 'white', font ''', visible=True
+------> traffic new : 0, colour 'white', font ''', visible=True
 --> Succeeded : 1, colour 'green', font 'bold'', visible=True
 
 Tabs showing : Status
@@ -246,7 +248,7 @@ Test progress:
 ------> editedfile2 new : 0, colour 'white', font ''', visible=True
 ------> errors new : 0, colour 'white', font ''', visible=True
 ------> output new : 0, colour 'white', font ''', visible=True
-------> usecase new : 0, colour 'white', font ''', visible=True
+------> traffic new : 0, colour 'white', font ''', visible=True
 --> Succeeded : 1, colour 'green', font 'bold'', visible=True
 
 Changing GUI status to: 'Saved 1 tests.'
