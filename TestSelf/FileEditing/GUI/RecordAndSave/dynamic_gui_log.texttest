@@ -1,5 +1,5 @@
 Enabling entry completion, using matching 1
-Top Window title is TextTest dynamic GUI : testing EDIT (started at 28May11:25:26)
+Top Window title is TextTest dynamic GUI : testing EDIT (started at 28May13:59:18)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -109,7 +109,7 @@ Tabs showing : Status
 Test progress:
 --> Not started : 1, colour 'white', font 'bold'', visible=True
 
-Changing GUI status to: 'TextTest started at 28May11:25:26.'
+Changing GUI status to: 'TextTest started at 28May13:59:19.'
 
 Waiting for application event 'completion of test actions' to occur.
 
@@ -127,7 +127,7 @@ Test progress:
 --> Not started : 0, colour 'white', font ''', visible=True
 --> Running : 1, colour 'yellow', font 'bold'', visible=True
 
-Progress bar set to fraction 1.0, text 'All 1 tests completed at 28May11:25:27'
+Progress bar set to fraction 1.0, text 'All 1 tests completed at 28May13:59:20'
 
 Redrawing test new coloured red
 (Second column 'errors new(+)' coloured red)
@@ -140,6 +140,7 @@ Test progress:
 ------> catalogue new : 1, colour 'red', font 'bold'', visible=True
 ------> editedfile new : 1, colour 'red', font 'bold'', visible=True
 ------> editedfile2 new : 1, colour 'red', font 'bold'', visible=True
+------> editedfile3 new : 1, colour 'red', font 'bold'', visible=True
 ------> errors new : 1, colour 'red', font 'bold'', visible=True
 ------> output new : 1, colour 'red', font 'bold'', visible=True
 ------> traffic new : 1, colour 'red', font 'bold'', visible=True
@@ -156,6 +157,7 @@ Setting file-view title to 'new'
 Adding file catalogue.edit under heading 'New Files', coloured red
 Adding file editedfile.edit under heading 'New Files', coloured red
 Adding file editedfile2.edit under heading 'New Files', coloured red
+Adding file editedfile3.edit under heading 'New Files', coloured red
 Adding file errors.edit under heading 'New Files', coloured red
 Adding file output.edit under heading 'New Files', coloured red
 Adding file traffic.edit under heading 'New Files', coloured red
@@ -170,16 +172,23 @@ The following existing files/directories changed their contents:
 <Test Directory>
 ----file
 ----file2
+----writedir
+--------subdir
+------------file
 ---------- New result in editedfile ----------
 dummy
 The Editor has made its mark
 ---------- New result in editedfile2 ----------
 dummy
 The Editor has made its mark
+---------- New result in editedfile3 ----------
+dummy
+The Editor has made its mark
 ---------- New result in errors ----------
 ---------- New result in output ----------
 Editing file file
 Editing file file2
+Editing file writedir/subdir/file
 ---------- New result in traffic ----------
 <-CMD:editor.py file
 ->OUT:Editing file file
@@ -187,6 +196,9 @@ Editing file file2
 <-CMD:editor.py file2
 ->OUT:Editing file file2
 ->FIL:file2
+<-CMD:editor.py writedir
+->OUT:Editing file writedir/subdir/file
+->FIL:writedir
 --------------------------------------
 
 Tabs showing : Test, Status
@@ -203,6 +215,8 @@ Changing GUI status to: 'Saving EDIT test-case new : editedfile, no version'
 
 Changing GUI status to: 'Saving EDIT test-case new : editedfile2, no version'
 
+Changing GUI status to: 'Saving EDIT test-case new : editedfile3, no version'
+
 Changing GUI status to: 'Saving EDIT test-case new : errors, no version'
 
 Changing GUI status to: 'Saving EDIT test-case new : output, no version'
@@ -212,6 +226,8 @@ Changing GUI status to: 'Saving EDIT test-case new : traffic, no version'
 Changing GUI status to: 'Saving EDIT test-case new : edited file file, no version'
 
 Changing GUI status to: 'Saving EDIT test-case new : edited file file2, no version'
+
+Changing GUI status to: 'Saving EDIT test-case new : edited file file, no version'
 
 Redrawing test new coloured green
 Redrawing suite TargetApp : second column 'All 1 tests successful' coloured green
@@ -231,6 +247,7 @@ Test progress:
 ------> catalogue new : 0, colour 'white', font ''', visible=True
 ------> editedfile new : 0, colour 'white', font ''', visible=True
 ------> editedfile2 new : 0, colour 'white', font ''', visible=True
+------> editedfile3 new : 0, colour 'white', font ''', visible=True
 ------> errors new : 0, colour 'white', font ''', visible=True
 ------> output new : 0, colour 'white', font ''', visible=True
 ------> traffic new : 0, colour 'white', font ''', visible=True
@@ -246,6 +263,7 @@ Test progress:
 ------> catalogue new : 0, colour 'white', font ''', visible=True
 ------> editedfile new : 0, colour 'white', font ''', visible=True
 ------> editedfile2 new : 0, colour 'white', font ''', visible=True
+------> editedfile3 new : 0, colour 'white', font ''', visible=True
 ------> errors new : 0, colour 'white', font ''', visible=True
 ------> output new : 0, colour 'white', font ''', visible=True
 ------> traffic new : 0, colour 'white', font ''', visible=True

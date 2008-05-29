@@ -1,7 +1,14 @@
 #!/usr/bin/env python
 
-import sys
+import sys, os
 
-print "Editing file", sys.argv[1]
-file = open(sys.argv[1], "a")
-file.write("The Editor has made its mark\n")
+def editFile(fileName):
+    print "Editing file", fileName
+    file = open(fileName, "a")
+    file.write("The Editor has made its mark\n")
+
+fileName = sys.argv[1]
+if os.path.isfile(fileName):
+    editFile(fileName)
+else:
+    editFile(fileName + "/subdir/file")
