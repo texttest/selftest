@@ -1,9 +1,9 @@
 Enabling entry completion, using matching 1
 Adding entry completion '<default>' ...
 Adding entry completion '1' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.28May144205.16371/texttest/TestSelf/FileEditing/GUI/RecordAndSave/TargetApp/Diagnostics/log4py.conf' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.28May144205.16371/texttest/TestSelf/FileEditing/GUI/RecordAndSave/TargetApp/Diagnostics' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.28May144205.16371/texttest/TestSelf/FileEditing/GUI/RecordAndSave/texttesttmp' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.30May180921.23762/texttest/TestSelf/FileEditing/GUI/RecordAndSave/TargetApp/Diagnostics/log4py.conf' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.30May180921.23762/texttest/TestSelf/FileEditing/GUI/RecordAndSave/TargetApp/Diagnostics' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.30May180921.23762/texttest/TestSelf/FileEditing/GUI/RecordAndSave/texttesttmp' ...
 Top Window title is TextTest static GUI : management of tests for EDIT
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
@@ -186,19 +186,20 @@ Viewing action with title '_Select', stock id ''gtk-find'', accelerator ''<contr
 Viewing radio button for switch '', options Discard/Refine/Extend'. Default value 0.
 Viewing action with title 'Filter', stock id ''gtk-find'', accelerator ''<control>f''
 
-Changing GUI status to: 'TextTest started at 28May14:42:08.'
+Changing GUI status to: 'TextTest started at 30May18:09:31.'
 
 Waiting for application event 'all tests to be read' to occur.
 
 Changing GUI status to: 'Reading tests ...'
 
-Changing GUI status to: 'Reading tests completed at 28May14:42:08.'
+Changing GUI status to: 'Reading tests completed at 30May18:09:31.'
 
 Test Tree description...
 -> TargetApp (edit)
 ->   Test
+->   NameMismatch
 
-Test column header set to 'Tests: 0/1 selected'
+Test column header set to 'Tests: 0/2 selected'
 
 Viewing notebook page for 'Selection'
 Viewing entry for option 'Tests for version' (drop-down list containing ['', '<default>'])
@@ -250,11 +251,12 @@ Tabs showing : Test, Selection, Config
 Adding entry completion 'last in suite' ...
 Adding entry completion 'first in suite' ...
 Adding entry completion 'after Test' ...
+Adding entry completion 'after NameMismatch' ...
 ---------- Dialog 'Add Test' ----------
 Default action is labelled 'gtk-ok'
 Viewing entry for option 'Test Name'
 Viewing entry for option 'Test Description'
-Viewing entry for option '\nPlace Test' (set to 'last in suite') (drop-down list containing ['first in suite', 'after Test', 'last in suite'])
+Viewing entry for option '\nPlace Test' (set to 'last in suite') (drop-down list containing ['first in suite', 'after Test', 'after NameMismatch', 'last in suite'])
 Viewing entry for option 'Command line options'
 ---------------------------------------
 
@@ -266,16 +268,17 @@ Adding entry completion 'new' ...
 Adding Test new under test suite EDIT test-suite TargetApp, placed last in suite
 Not creating options file
 
-Test column header set to 'Tests: 0/2 selected'
+Test column header set to 'Tests: 0/3 selected'
 
 Test Tree description...
 -> TargetApp (edit)
 ->   Test
+->   NameMismatch
 ->   new
 Selecting new test new
 Marking 1 tests as selected
 
-Test column header set to 'Tests: 1/2 selected'
+Test column header set to 'Tests: 1/3 selected'
 
 Setting file-view title to 'new'
 
@@ -315,8 +318,8 @@ Viewing action with title '_Run', stock id ''gtk-execute'', accelerator ''<contr
 'view sub-options for running :' event created with arguments 'Advanced'
 
 Viewing notebook page for 'Advanced'
-Viewing entry for option 'Configure self-diagnostics from' (set to '/carm/proj/texttest-tmp/geoff/texttest.28May144205.16371/texttest/TestSelf/FileEditing/GUI/RecordAndSave/TargetApp/Diagnostics/log4py.conf')
-Viewing entry for option 'Write self-diagnostics to' (set to '/carm/proj/texttest-tmp/geoff/texttest.28May144205.16371/texttest/TestSelf/FileEditing/GUI/RecordAndSave/TargetApp/Diagnostics')
+Viewing entry for option 'Configure self-diagnostics from' (set to '/carm/proj/texttest-tmp/geoff/texttest.30May180921.23762/texttest/TestSelf/FileEditing/GUI/RecordAndSave/TargetApp/Diagnostics/log4py.conf')
+Viewing entry for option 'Write self-diagnostics to' (set to '/carm/proj/texttest-tmp/geoff/texttest.30May180921.23762/texttest/TestSelf/FileEditing/GUI/RecordAndSave/TargetApp/Diagnostics')
 Viewing entry for option 'Run batch mode session'
 Viewing check button for switch 'Enable self-diagnostics'
 Viewing check button for switch '(Re-)record command-line or client-server traffic'
@@ -326,9 +329,9 @@ Viewing action with title '_Run', stock id ''gtk-execute'', accelerator ''<contr
 'check (re-)record command-line or client-server traffic' event created with arguments ''
 
 'run selected tests' event created with arguments ''
-Starting dynamic run of TextTest with arguments ['-g', '-a', 'edit', '-cp', '1', '-xr', '/carm/proj/texttest-tmp/geoff/texttest.28May144205.16371/texttest/TestSelf/FileEditing/GUI/RecordAndSave/TargetApp/Diagnostics/log4py.conf', '-xw', '/carm/proj/texttest-tmp/geoff/texttest.28May144205.16371/texttest/TestSelf/FileEditing/GUI/RecordAndSave/TargetApp/Diagnostics', '-rectraffic', '-count', '1', '-f', '/carm/proj/texttest-tmp/geoff/texttest.28May144205.16371/texttest/TestSelf/FileEditing/GUI/RecordAndSave/texttesttmp/static_gui.28May144207.16386/dynamic_run1/gui_select', '-fd', '/carm/proj/texttest-tmp/geoff/texttest.28May144205.16371/texttest/TestSelf/FileEditing/GUI/RecordAndSave/texttesttmp/static_gui.28May144207.16386/temporary_filter_files']
+Starting dynamic run of TextTest with arguments ['-g', '-a', 'edit', '-cp', '1', '-xr', '/carm/proj/texttest-tmp/geoff/texttest.30May180921.23762/texttest/TestSelf/FileEditing/GUI/RecordAndSave/TargetApp/Diagnostics/log4py.conf', '-xw', '/carm/proj/texttest-tmp/geoff/texttest.30May180921.23762/texttest/TestSelf/FileEditing/GUI/RecordAndSave/TargetApp/Diagnostics', '-rectraffic', '-count', '1', '-f', '/carm/proj/texttest-tmp/geoff/texttest.30May180921.23762/texttest/TestSelf/FileEditing/GUI/RecordAndSave/texttesttmp/static_gui.30May180930.10233/dynamic_run1/gui_select', '-fd', '/carm/proj/texttest-tmp/geoff/texttest.30May180921.23762/texttest/TestSelf/FileEditing/GUI/RecordAndSave/texttesttmp/static_gui.30May180930.10233/temporary_filter_files']
 
-Changing GUI status to: 'Started EDIT test-case new at 28May14:42:10.'
+Changing GUI status to: 'Started EDIT test-case new at 30May18:09:33.'
 
 Waiting for application event 'dynamic GUI to be closed' to occur.
 Expected application event 'dynamic GUI to be closed' occurred, proceeding.
@@ -344,6 +347,7 @@ Adding file errors.edit under heading 'Standard Files', coloured grey90
 Adding file output.edit under heading 'Standard Files', coloured grey90
 Adding file traffic.edit under heading 'Definition Files', coloured grey90
 Adding file file under heading 'Externally Edited Files', coloured grey90
+Adding file file.edit_2 under heading 'Externally Edited Files', coloured grey90
 Adding file file2 under heading 'Externally Edited Files', coloured grey90
 Adding file writedir under heading 'Externally Edited Files', coloured grey90
 Adding file subdir under heading 'writedir', coloured grey90

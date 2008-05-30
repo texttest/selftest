@@ -1,5 +1,5 @@
 Enabling entry completion, using matching 1
-Top Window title is TextTest dynamic GUI : testing EDIT (started at 28May13:59:18)
+Top Window title is TextTest dynamic GUI : testing EDIT (started at 30May16:52:29)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -109,7 +109,7 @@ Tabs showing : Status
 Test progress:
 --> Not started : 1, colour 'white', font 'bold'', visible=True
 
-Changing GUI status to: 'TextTest started at 28May13:59:19.'
+Changing GUI status to: 'TextTest started at 30May16:52:29.'
 
 Waiting for application event 'completion of test actions' to occur.
 
@@ -127,7 +127,7 @@ Test progress:
 --> Not started : 0, colour 'white', font ''', visible=True
 --> Running : 1, colour 'yellow', font 'bold'', visible=True
 
-Progress bar set to fraction 1.0, text 'All 1 tests completed at 28May13:59:20'
+Progress bar set to fraction 1.0, text 'All 1 tests completed at 30May16:52:30'
 
 Redrawing test new coloured red
 (Second column 'errors new(+)' coloured red)
@@ -178,6 +178,7 @@ The following existing files/directories changed their contents:
 ---------- New result in editedfile ----------
 dummy
 The Editor has made its mark
+The Editor has made its mark
 ---------- New result in editedfile2 ----------
 dummy
 The Editor has made its mark
@@ -189,16 +190,20 @@ The Editor has made its mark
 Editing file file
 Editing file file2
 Editing file writedir/subdir/file
+Editing file file
 ---------- New result in traffic ----------
 <-CMD:editor.py file
-->OUT:Editing file file
 ->FIL:file
+->OUT:Editing file file
 <-CMD:editor.py file2
-->OUT:Editing file file2
 ->FIL:file2
+->OUT:Editing file file2
 <-CMD:editor.py writedir
-->OUT:Editing file writedir/subdir/file
 ->FIL:writedir
+->OUT:Editing file writedir/subdir/file
+<-CMD:editor.py file
+->FIL:file
+->OUT:Editing file file
 --------------------------------------
 
 Tabs showing : Test, Status
@@ -226,6 +231,8 @@ Changing GUI status to: 'Saving EDIT test-case new : traffic, no version'
 Changing GUI status to: 'Saving EDIT test-case new : edited file file, no version'
 
 Changing GUI status to: 'Saving EDIT test-case new : edited file file2, no version'
+
+Changing GUI status to: 'Saving EDIT test-case new : edited file file.edit_2, no version'
 
 Changing GUI status to: 'Saving EDIT test-case new : edited file file, no version'
 
