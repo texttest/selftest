@@ -15,10 +15,6 @@ nightjob:/carm/proj/texttest/release/current
 
 default_major_release:none
 
-[extra_search_directory]
-sge:/usr/local/share
-[end]
-
 # ---------------- Values needed to run in batch mode at Carmen -------------------
 
 # Machines where we can start Xvfb
@@ -258,16 +254,8 @@ link_test_path:Xvfb
 link_test_path:interceptor.py
 # performance testing
 link_test_path:time
-# Fake queue system directory...
-link_test_path:qsub
-link_test_path:qdel
-link_test_path:qacct
 link_test_path:sgehostfile
 link_test_path:sge
-# Faked versions of LSF commands...
-link_test_path:bsub
-link_test_path:bkill
-link_test_path:bjobs
 # GTK configuration
 link_test_path:gtk_config
 
@@ -309,6 +297,7 @@ gui_select:texttesttmp/*/dynamic_run1/gui_select
 gui_select2:texttesttmp/*/dynamic_run2/gui_select
 gui_select3:texttesttmp/*/dynamic_run3/gui_select
 jusecaseprops:texttesttmp/*/*/jusecase.properties
+symlink*:texttesttmp/*/*/*/file_edits/*/*.TEXTTEST_SYMLINK
 filterfile*:TargetApp/filter_files/filter*
 overview:report/*/test_[a-z]*.html
 overview_all:report/*/test_*_all.html
