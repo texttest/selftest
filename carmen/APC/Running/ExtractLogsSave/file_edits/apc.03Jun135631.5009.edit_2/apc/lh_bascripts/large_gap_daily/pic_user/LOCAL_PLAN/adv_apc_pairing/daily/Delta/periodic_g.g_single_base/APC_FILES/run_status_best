@@ -1,0 +1,106 @@
+
+--- Summary of solution (general-generation) ---
+
+ Date..................: 06/03/08, 13:56
+ APC program (rule set): .STD+EXP+JAR_no_reference.geoff.circleville_7484
+ Sub-plan..............: adv_apc_pairing  daily  Delta  periodic_g.g_single_base
+ Period................: 20000119 - 20000119
+ Machine...............: circleville
+
+ legs..........................................: 56
+  uncovered legs...............................: 0
+ overcovers (will become deadheads)............: 0
+ illegal trips.................................: 0
+
+ TOTAL cost....................................:  4885020
+
+  APC total rule cost..........................:  4885020
+   rule overcover cost.........................:        0
+  extra overcover cost.........................:        0
+  global constraint excess cost................:        0
+  base constraint excess cost..................:        0
+
+APC SOLUTION ANALYSIS
+
+ working days..................................: 26
+ block time....................................: 83:23
+ average block time per working day............: 3:12
+ deadhead time.................................: 5:32
+ duty time.....................................: 160:28
+ duty time per working day.....................: 6:10
+ duty time/block time..........................: 1.924
+ duty time in longest trip.....................: 50:23
+ trips.........................................: 8
+ incomplete trips..............................: 0
+ trips with long duty time (>44:00)............: 1
+
+ duties........................................: 22
+ average duty time per duty....................: 7:17
+ longest duty..................................: 13:30
+ shortest duty.................................: 2:32
+ duties with long duty time (>10:00)...........: 6 
+ duty pairs with long duty time (>18:00).......: 2 
+
+ layovers (double rest)........................: 4
+ normal rest periods...........................: 10
+ average rest time (except layovers)...........: 15:24
+ longest rest time (except layovers)...........: 22:56
+ shortest rest time............................: 10:31
+ short rest times (<12:00).....................: 2
+ late (>13:00) to early (< 8:00)...............: 1
+
+ legs..........................................: 56
+ legs in incomplete duties.....................: 0
+ this fleet deadheads..........................: 4
+ other-fleet deadheads.........................: 0
+ ground transport deadheads....................: 0
+ OAG deadheads.................................: 0
+ aircraft changes..............................: 7
+
+ Number of days in complete trips:
+ Length     Trips
+ 2 days:      2   25.000 %
+ 3 days:      4   50.000 %
+ 4 days:      1   12.500 %
+ 6 days:      1   12.500 %
+
+BASE CONSTRAINTS (complete trips only)
+
+                 Start      End  Min/Day  Max/Day   MinTot   MaxTot    Value
+ ============  =======  =======  =======  =======  =======  =======  =======
+ Base    CVG       Wed      Wed       -        -        -        -       26
+ Default base: CVG
+
+BASE PRODUCTION ANALYSIS (complete trips only)
+
+ Day              Wed |   total
+ ============    ---- |  ------
+ Base    CVG       26 |      26
+
+ Total production ( CVG).........:   26
+
+ Total production (all bases)....:   26
+ Total production (all variants).:    0
+
+APC GENERATION INFO
+
+ Generated trips...........: 4711
+ Legality (pass)...........: 21545
+ Legality (fail)...........: 4019
+ Added solution trips......: 1
+ Old solution generated....: 10
+ Old solution missing......: 1
+
+APC JOB IDENTIFICATION
+
+ CARMSYS...............: /carm/proj/texttest/selftest_data/APC_CARMSYS
+ CARMUSR...............: /carm/proj/texttest-tmp/geoff/texttest.carmen.03Jun135629.4995/texttest.carmen/carmen/APC/Running/ExtractLogsSave/texttesttmp/apc.03Jun135631.5009/apc/lh_bascripts/large_gap_daily/pic_user
+ CARMTMP...............: /carm/proj/texttest/selftest_data/APC_CARMSYS/lh_bascripts_tmp.apc
+ APC library version...: master.current
+ APC library date......: 23 May 2006 16:21:35
+ Parameter set.........: APC_tests_daily/mp_fSCR_pureCRD   with  36  manual changes.
+ IP solver.............: opt_paqs
+
+--- end of analysis ---
+Time:  2 s real  990 ms cpu  100 ms cpu_child  memory:  23.8 Mb
+
