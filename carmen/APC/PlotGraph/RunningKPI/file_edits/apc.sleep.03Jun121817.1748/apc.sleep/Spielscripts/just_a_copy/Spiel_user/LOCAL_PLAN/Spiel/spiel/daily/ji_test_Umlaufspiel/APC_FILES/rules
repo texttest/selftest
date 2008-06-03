@@ -1,0 +1,367 @@
+SECTION rules
+_builtin.MasterRule on #D> on
+numberofdays on 0 0 0 #D> on 0 0 0
+numberoflegs on 0 0 0 #D> on 0 0 0
+rest on 0:00 0 0 #D> on 0:00 0 0
+dutytime on 0:00 0 0 #D> on 0:00 0 0
+<PARAMETERS>
+apc_max_calendar_days 4 #D> 4
+min_block_off_time_btw_rtd 8:30 #D> 8:30
+brieftime 1:00 #D> 1:00
+debrieftime 1:00 #D> 1:00
+maxdutytime 14:00 #D> 14:00
+maxlegsperday 5 #D> 5
+map_parameter_set_name  #D> 
+map_parameter_set_manual_changes 10 #D> 0
+map_filter_crr_block_time crr_block_time #D> crr_block_time
+map_filter_rtd_block_time rtd_block_time #D> rtd_block_time
+map_filter_crr_num_of_all_legs crr_all_landings #D> crr_all_landings
+map_filter_rtd_num_of_all_legs rtd_all_landings #D> rtd_all_landings
+map_filter_crr_num_of_od_legs crr_od_landings #D> crr_od_landings
+map_filter_rtd_num_of_od_legs rtd_od_landings #D> rtd_od_landings
+map_filter_crr_num_of_ac_changes crr_count_ac_changes #D> crr_count_ac_changes
+map_filter_rtd_num_of_ac_changes rtd_count_ac_changes #D> rtd_count_ac_changes
+map_show_leg_info_1 to_be_changed #D> to_be_changed
+map_show_leg_info_2 to_be_changed #D> to_be_changed
+map_show_leg_info_3 to_be_changed #D> to_be_changed
+map_show_leg_info_4 to_be_changed #D> to_be_changed
+map_show_leg_info_5 to_be_changed #D> to_be_changed
+map_show_leg_info_6 to_be_changed #D> to_be_changed
+map_show_leg_info_7 to_be_changed #D> to_be_changed
+map_show_leg_info_8 to_be_changed #D> to_be_changed
+map_show_leg_info_9 to_be_changed #D> to_be_changed
+map_show_leg_info_10 to_be_changed #D> to_be_changed
+map_show_crr_info_1 to_be_changed #D> to_be_changed
+map_show_crr_info_2 to_be_changed #D> to_be_changed
+map_show_crr_info_3 to_be_changed #D> to_be_changed
+map_show_crr_info_4 to_be_changed #D> to_be_changed
+map_show_crr_info_5 to_be_changed #D> to_be_changed
+map_show_crr_info_6 to_be_changed #D> to_be_changed
+map_show_crr_info_7 to_be_changed #D> to_be_changed
+map_show_crr_info_8 to_be_changed #D> to_be_changed
+map_show_crr_info_9 to_be_changed #D> to_be_changed
+map_show_crr_info_10 to_be_changed #D> to_be_changed
+apc_pac._preprocess_parameters_ ________ #D> ________
+apc_pac.use_user_lock FALSE #D> FALSE
+apc_pac.user_lock_file user_lock #D> user_lock
+apc_pac.connection_matrix_max_connection_time 72:00 #D> 0:00
+apc_pac.use_twin_airport_departures FALSE #D> FALSE
+apc_pac.twin_airport_departures1  #D> 
+apc_pac.twin_airport_departures2  #D> 
+apc_pac.twin_airport_departures3  #D> 
+apc_pac.twin_airport_departures4  #D> 
+apc_pac.completely_hard_locked_is_legal FALSE #D> FALSE
+apc_pac.exit_on_illegal_hard_lock TRUE #D> TRUE
+apc_pac.use_illegal_hard_lock_warnings TRUE #D> TRUE
+apc_pac.search_oag_deadheads TRUE #D> TRUE
+apc_pac.max_layover_time 36:00 #D> 36:00
+apc_pac._______jumper_parameters___________ ________ #D> ________
+apc_pac.jumper_method_generated_rotations_copy FALSE #D> FALSE
+apc_pac.jumper_method_doublets_separate_generation FALSE #D> FALSE
+apc_pac.crew_augmentation FALSE #D> FALSE
+apc_pac._____matching______________________ ________ #D> ________
+apc_pac.use_matcher TRUE #D> TRUE
+apc_pac.keep_matcher_locks FALSE #D> FALSE
+apc_pac.matcher_lock_airports  #D> 
+apc_pac.use_layover_dh TRUE #D> TRUE
+apc_pac.use_layover_dh_time 26:00 #D> 26:00
+apc_pac.map_matching_cost_of_connection  #D> 
+apc_pac.end_with_matcher FALSE #D> FALSE
+apc_pac._______local_plan_deadhead_preprocess___________ ________ #D> ________
+apc_pac.add_tight_deadheads_active_copies FALSE #D> FALSE
+apc_pac.add_tight_deadheads_other FALSE #D> FALSE
+apc_pac.add_all_passive_copies_of_active_flights FALSE #D> FALSE
+apc_pac.add_all_other_local_plan_deadheads FALSE #D> FALSE
+apc_pac._____ground_transport_preprocess__________ ________ #D> ________
+apc_pac.use_ground_transport FALSE #D> FALSE
+apc_pac.ground_transport_airports1  #D> 
+apc_pac.ground_transport_airports2  #D> 
+apc_pac.ground_transport_airports3  #D> 
+apc_pac.ground_transport_airports4  #D> 
+apc_pac.ground_transport_gt_level 3 #D> 3
+apc_pac.ground_transport_gt_in_rtd FALSE #D> FALSE
+apc_pac.ground_transport_max_connection_time 36:00 #D> 36:00
+apc_pac.ground_transport_min_connection_time_to_gt 0:30 #D> 0:30
+apc_pac.ground_transport_max_connection_time_to_gt 2:00 #D> 2:00
+apc_pac._____long_haul_preprocess__________ ________ #D> ________
+apc_pac.use_long_haul_preprocess FALSE #D> FALSE
+apc_pac.use_long_haul_crdh_search FALSE #D> FALSE
+apc_pac.use_long_haul_double_crdh_search FALSE #D> FALSE
+apc_pac.long_haul_crdh_search_level 0 #D> 0
+apc_pac.long_haul_crdh_search_type 0 #D> 0
+apc_pac.long_haul_crdh_search_airports1  #D> 
+apc_pac.long_haul_crdh_search_airports2  #D> 
+apc_pac.long_haul_double_crdh_search_airports1  #D> 
+apc_pac.long_haul_double_crdh_search_airports2  #D> 
+apc_pac.long_haul_max_consecutive_oag_dhs 2 #D> 2
+apc_pac.long_haul_max_oag_block_time 3:00 #D> 3:00
+apc_pac.long_haul_crdh_connection_time 72:00 #D> 72:00
+apc_pac.use_long_haul_double_deadheads FALSE #D> FALSE
+apc_pac.long_haul_block_time 5:00 #D> 5:00
+apc_pac.use_long_haul_base_close_deadheads FALSE #D> FALSE
+apc_pac.long_haul_base_close_distance 4000 #D> 4000
+apc_pac.long_haul_carriers_restrict_only TRUE #D> TRUE
+apc_pac.long_haul_carriers_names  #D> 
+apc_pac.long_haul_ac_types_restrict_only TRUE #D> TRUE
+apc_pac.long_haul_ac_types_names  #D> 
+apc_pac.long_haul_min_connection_time_between_oags 0:10 #D> 0:10
+apc_pac.long_haul_max_connection_time_between_oags 6:00 #D> 6:00
+apc_pac.___general_generation_method___ ________ #D> ________
+apc_pac.use_general_generation_method FALSE #D> FALSE
+apc_pac.generator_search_day_connections 2 2 #D> 2 2
+apc_pac.generator_search_night_connections 2 2 #D> 2 2
+apc_pac.generator_search_day_passive_connections -1 #D> -1
+apc_pac.generator_search_night_passive_connections -1 #D> -1
+apc_pac.___pairing_repair_method___ ________ #D> ________
+apc_pac.use_pairing_repair_method FALSE #D> FALSE
+apc_pac.pairing_repair_number_of_loops 2 #D> 2
+apc_pac.pairing_repair_min_block_per_day 3:00 #D> 3:00
+apc_pac.pairing_repair_max_generated_rotations_per_iteration 500000 #D> 500000
+apc_pac.pairing_repair_generator_search_connections 10 #D> 10
+apc_pac.___column_generation_method___ ________ #D> ________
+apc_pac.use_column_generation_method TRUE #D> FALSE
+apc_pac.column_generation_search_day_connections 99999 #D> 99999
+apc_pac.column_generation_search_night_connections 99999 #D> 99999
+apc_pac.column_generation_use_paqs_as_optimizer TRUE #D> TRUE
+apc_pac.column_generation_skip_lb FALSE #D> FALSE
+apc_pac.column_generation_connection_fixing 0 #D> 2
+apc_pac.column_generation_thorough_cost_analysis FALSE #D> FALSE
+apc_pac.column_generation_total_time_limit 0:00 #D> 0:00
+apc_pac.column_generation_solution_time_limit 0:00 #D> 0:00
+apc_pac.column_generation_subselection 0 #D> 0
+apc_pac.___deadhead_improve_method___ ________ #D> ________
+apc_pac.use_deadhead_improve_method FALSE #D> FALSE
+apc_pac.deadhead_improve_after_initial_methods TRUE #D> TRUE
+apc_pac.deadhead_improve_after_other_methods TRUE #D> TRUE
+apc_pac.deadhead_improve_lock_legal_first_and_last TRUE #D> TRUE
+apc_pac.deadhead_improve_replace_sub_chains TRUE #D> TRUE
+apc_pac.deadhead_improve_search_from_base TRUE #D> TRUE
+apc_pac.deadhead_improve_search_to_base TRUE #D> TRUE
+apc_pac.deadhead_improve_search_cross TRUE #D> TRUE
+apc_pac.deadhead_improve_search_cross_max_connection_time 48:00 #D> 48:00
+apc_pac.deadhead_improve_open_deadhead_connections TRUE #D> TRUE
+apc_pac.deadhead_improve_max_num_deadhead_legs 1 #D> 1
+apc_pac._____split_initial_solution_______ ________ #D> ________
+apc_pac.use_split_init_method FALSE #D> FALSE
+apc_pac.split_init_start_day 0 #D> 0
+apc_pac.split_init_search_level 2 #D> 2
+apc_pac.split_init_deadhead_search_base 2 #D> 2
+apc_pac.split_init_deadhead_search_cross 2 #D> 2
+apc_pac.split_init_deadhead_search_cross_night 2 #D> 2
+apc_pac.split_init_generator_search_day_connections 5 3 #D> 5 3
+apc_pac.split_init_generator_search_night_connections 3 3 #D> 3 3
+apc_pac.split_init_generator_search_day_passive_connections -1 #D> -1
+apc_pac.split_init_generator_search_night_passive_connections -1 #D> -1
+apc_pac.split_init_completion_in_every_loop TRUE #D> TRUE
+apc_pac.deadhead_elimination_in_every_loop TRUE #D> TRUE
+apc_pac._____k_opt_improve_________________ ________ #D> ________
+apc_pac.use_k_opt_improve_method FALSE #D> FALSE
+apc_pac.k_opt_improve_number_of_loops 50 #D> 50
+apc_pac.k_opt_improve_number_of_rotations 10 #D> 10
+apc_pac.k_opt_use_weighted_selection TRUE #D> TRUE
+apc_pac.k_opt_use_weight_with_connection TRUE #D> TRUE
+apc_pac.k_opt_use_weight_with_credit TRUE #D> TRUE
+apc_pac.map_k_opt_credit_of_crr  #D> 
+apc_pac.k_opt_use_weight_with_base TRUE #D> TRUE
+apc_pac.k_opt_loop_over_weighting_methods FALSE #D> FALSE
+apc_pac.k_opt_improve_open_first_and_last FALSE #D> FALSE
+apc_pac.k_opt_improve_generator_search_day_connections 30 #D> 30
+apc_pac.k_opt_improve_generator_search_night_connections 30 #D> 30
+apc_pac.k_opt_improve_generator_search_day_passive_connections -1 #D> -1
+apc_pac.k_opt_improve_generator_search_night_passive_connections -1 #D> -1
+apc_pac._____a_opt_improve_________________ ________ #D> ________
+apc_pac.use_a_opt_improve_method FALSE #D> FALSE
+apc_pac.a_opt_improve_number_of_loops 50 #D> 50
+apc_pac.a_opt_improve_number_of_connections 10 #D> 10
+apc_pac.a_opt_improve_generator_search_day_connections 30 #D> 30
+apc_pac.a_opt_improve_generator_search_night_connections 30 #D> 30
+apc_pac.a_opt_improve_generator_search_day_passive_connections -1 #D> -1
+apc_pac.a_opt_improve_generator_search_night_passive_connections -1 #D> -1
+apc_pac._____shift_improve_________________ ________ #D> ________
+apc_pac.use_shift_improve_method FALSE #D> FALSE
+apc_pac.shift_improve_number_of_loops 50 #D> 50
+apc_pac.shift_improve_tw_touch FALSE #D> FALSE
+apc_pac.shift_improve_tw_length 168:00 #D> 168:00
+apc_pac.shift_improve_tw_step_size 48:00 #D> 48:00
+apc_pac.shift_improve_tw_start_date 01JAN90 0:00 #D> 01JAN90 0:00
+apc_pac.shift_improve_tw_end_date 31DEC35 23:59 #D> 31DEC35 23:59
+apc_pac.shift_improve_tw_start_iteration 0 #D> 0
+apc_pac.shift_improve_generator_search_day_connections 30 #D> 30
+apc_pac.shift_improve_generator_search_night_connections 30 #D> 30
+apc_pac.shift_improve_generator_search_day_passive_connections -1 #D> -1
+apc_pac.shift_improve_generator_search_night_passive_connections -1 #D> -1
+apc_pac._____split_improve_________________ ________ #D> ________
+apc_pac.use_split_improve_method FALSE #D> FALSE
+apc_pac.split_improve_start_date 01JAN90 0:00 #D> 01JAN90 0:00
+apc_pac.split_improve_last_date 31DEC30 0:00 #D> 31DEC30 0:00
+apc_pac.split_improve_start_day 0 #D> 0
+apc_pac.split_improve_number_of_loops 7 #D> 7
+apc_pac.split_improve_search_level 2 #D> 2
+apc_pac.split_improve_deadhead_search_base 1 #D> 1
+apc_pac.split_improve_deadhead_search_cross 1 #D> 1
+apc_pac.split_improve_deadhead_search_cross_night1 2 #D> 2
+apc_pac.split_improve_deadhead_search_cross_night2 1 #D> 1
+apc_pac.move_production_between_bases_deadheads FALSE #D> FALSE
+apc_pac.split_improve_generator_search_day_connections 5 3 #D> 5 3
+apc_pac.split_improve_generator_search_night_connections 3 3 #D> 3 3
+apc_pac.split_improve_generator_search_day_passive_connections -1 #D> -1
+apc_pac.split_improve_generator_search_night_passive_connections -1 #D> -1
+apc_pac.___script_file_parameters__________ ________ #D> ________
+apc_pac.use_script_file FALSE #D> FALSE
+apc_pac.script_file_name  #D> 
+apc_pac.___generation_parameters___________ ________ #D> ________
+apc_pac.number_of_generator_exceptions 0 #D> 0
+apc_pac.use_constant_search_width FALSE #D> FALSE
+apc_pac.max_generated_rotations_per_starting_leg 40000 #D> 40000
+apc_pac.max_generated_rotations 500000 #D> 500000
+apc_pac.min_hours_in_duty_period 0:00 #D> 0:00
+apc_pac.follow_aircraft TRUE #D> TRUE
+apc_pac.follow_solution TRUE #D> TRUE
+apc_pac.next_day_connection_time 15:00 #D> 15:00
+apc_pac._______optimizer_parameters___________ ________ #D> ________
+apc_pac.tries_in_optimization 5 #D> 5
+apc_pac.use_prob0_prob1_or_cplex 4 #D> 4
+apc_pac.extra_flags_for_optimizer -d 0 #D> -d 0
+apc_pac.optimizer_max_failure_count 0 #D> 0
+apc_pac.only_return_improvement TRUE #D> TRUE
+apc_pac.deadhead_to_overcover_cost_check FALSE #D> FALSE
+apc_pac.___apc_rules_parameters____________ ________ #D> ________
+apc_pac.rotation_closed_at_base FALSE #D> FALSE
+apc_pac.rotation_closed_at_twin TRUE #D> TRUE
+apc_pac.allow_oag_deadheads TRUE #D> TRUE
+apc_pac.___base_constraints____________ ________ #D> ________
+apc_pac.use_default_homebase TRUE #D> TRUE
+apc_pac.base_constraint_use_optimizer_constraint TRUE #D> TRUE
+apc_pac.base_constraint_use_hard_upper TRUE #D> TRUE
+apc_pac.base_constraint_use_hard_lower TRUE #D> TRUE
+apc_pac.base_constraint_use_hard_upper_per_day TRUE #D> TRUE
+apc_pac.base_constraint_use_hard_lower_per_day TRUE #D> TRUE
+apc_pac.base_constraint_excess_cost 100 #D> 100
+apc_pac.use_base_constraints_in_solution_cost_comparison TRUE #D> TRUE
+apc_pac.___base_variant_constraints______ ________ #D> ________
+apc_pac.use_base_variant_constraint FALSE #D> FALSE
+apc_pac.base_variant_constraint_cost_weight 50 #D> 50
+apc_pac.base_variant_constraint_search_only_same_day_deadheads FALSE #D> FALSE
+apc_pac.base_variant_constraint_use_lower_limit TRUE #D> TRUE
+apc_pac.base_variant_constraint_use_lower_limit_per_day TRUE #D> TRUE
+apc_pac.base_variant_constraint_deficit_cost 0 #D> 0
+apc_pac.use_base_variant_constraints_in_solution_cost_comparison FALSE #D> FALSE
+apc_pac.___global_constraints____________ ________ #D> ________
+apc_pac.use_glc_in_solution_cost_comparison TRUE #D> TRUE
+apc_pac.___rule_test_parameters____________ ________ #D> ________
+apc_pac.test_rules_level 0 #D> 0
+apc_pac.test_rule_evaluation_time 0 #D> 0
+apc_pac.test_rule_generation_time 0 #D> 0
+apc_pac.test_dictionary_values_count 0 #D> 0
+apc_pac.___system_parameters_______________ ________ #D> ________
+apc_pac.solution_evaluation_string LVCGB #D> LVCGB
+apc_pac.print_warning_illegal_subchains TRUE #D> TRUE
+apc_pac.print_warning_illegal_subchains_forward TRUE #D> TRUE
+apc_pac.print_illegal_subchains_count 2 #D> 2
+apc_pac.check_generation_of_solution TRUE #D> TRUE
+apc_pac.add_previous_solution_rotations TRUE #D> TRUE
+apc_pac.add_illegal_solution_rotations_with_penalty 100 #D> 100
+apc_pac.exit_on_rule_runtime_error_count 10 #D> 10
+apc_pac.disk_space_waiting_time 72:00 #D> 72:00
+apc_pac.max_airport_size_in_matching 4000 #D> 4000
+apc_pac.use_coterminals_external_table FALSE #D> FALSE
+apc_pac.map_block_off_btw_rtd min_block_off_time_btw_rtd #D> min_block_off_time_btw_rtd
+apc_pac.use_rule_cache_for_ac_rotations FALSE #D> TRUE
+apc_pac.split_methods_outer_tw_size 100 #D> 100
+apc_pac.split_methods_hide_rotations_outside_time_window FALSE #D> FALSE
+apc_pac.___status_parameters_______________ ________ #D> ________
+apc_pac.use_internal_status TRUE #D> TRUE
+apc_pac.use_pdl_status FALSE #D> FALSE
+apc_pac.status_pdl_file crr_window_general/apc_status.output #D> crr_window_general/apc_status.output
+apc_pac.acceptable_duty_crr 44:00 #D> 44:00
+apc_pac.acceptable_duty_rtd 10:00 #D> 10:00
+apc_pac.acceptable_duty_2rtd 18:00 #D> 18:00
+apc_pac.min_late_rtd_departure 13:00 #D> 13:00
+apc_pac.max_early_rtd_departure 8:00 #D> 8:00
+apc_pac.early_rtd_enough_rest 12:00 #D> 12:00
+apc_pac.good_rest_time 12:00 #D> 12:00
+apc_pac.___auxiliary_test_parameters________________ ________ #D> ________
+apc_pac.generator_alternative_connections_per_rotation 999 #D> 999
+apc_pac.overcover_cost_percentage_multiplier 100 #D> 100
+apc_pac.all_x_day_open 0 #D> 0
+apc_pac.back_to_base_deadheads FALSE #D> FALSE
+apc_pac.one_day_back_to_base_deadheads FALSE #D> FALSE
+apc_pac.extra_open_leg_on_day_before FALSE #D> FALSE
+apc_pac.open_airport --- #D> ---
+apc_pac._____lock_to_solution_lts__________ ________ #D> ________
+apc_pac.use_lock_to_solution FALSE #D> FALSE
+apc_pac.lts_open_bases FALSE #D> FALSE
+apc_pac.lts_open_nightstops FALSE #D> FALSE
+apc_pac.lts_open_deadheads FALSE #D> FALSE
+apc_pac.lts_open_overcovers FALSE #D> FALSE
+apc_pac.___debug_parameters________________ ________ #D> ________
+apc_pac.trace_level 1 #D> 1
+apc_pac.dh_rule_switch TRUE #D> TRUE
+apc_pac.solution_completion_test FALSE #D> FALSE
+apc_pac.print_connection_table FALSE #D> FALSE
+apc_pac.connection_table_file APC_contbl #D> APC_contbl
+apc_pac.print_initial_connection_table FALSE #D> FALSE
+apc_pac.print_deadhead_search FALSE #D> FALSE
+apc_pac.print_cross_deadhead_search FALSE #D> FALSE
+apc_pac.print_gt_search FALSE #D> FALSE
+apc_pac.print_matching_info FALSE #D> FALSE
+apc_pac.print_matching_costs FALSE #D> FALSE
+apc_pac.print_dh_search_in_matching FALSE #D> FALSE
+apc_pac.print_solution_rotations FALSE #D> FALSE
+apc_pac.save_all_rotation_files FALSE #D> FALSE
+apc_pac.crc_runtime_statistics FALSE #D> FALSE
+apc_pac.use_penalty_cache FALSE #D> FALSE
+apc_pac.exit_after_generation FALSE #D> FALSE
+apc_pac.remove_optimizer_tmp_files TRUE #D> TRUE
+apc_pac.connection_matrix_setup FALSE #D> FALSE
+apc_pac.is_generating FALSE #D> FALSE
+apc_pac.show_generated_rotations FALSE #D> FALSE
+apc_pac.show_warning_rotations 10 #D> 10
+apc_pac.debug_integer_1 0 #D> 0
+apc_pac.debug_integer_2 0 #D> 0
+apc_pac.debug_integer_3 0 #D> 0
+apc_pac.debug_boolean_1 FALSE #D> FALSE
+apc_pac.debug_boolean_2 FALSE #D> FALSE
+apc_pac.debug_string_1  #D> 
+apc_pac.debug_string_2  #D> 
+apc_pac.debug_reltime_1 0:00 #D> 0:00
+apc_pac.debug_abstime_1 01JAN90 0:00 #D> 01JAN90 0:00
+apc_pac.use_all_deadheads_to_base FALSE #D> FALSE
+apc_pac.use_extra_connection_filter FALSE #D> FALSE
+apc_pac.___end_of_apc_control_parameters___ ________ #D> ________
+apc_pac.___parameters_in_rule_set__________ ________ #D> ________
+apc_pac.map_cost_of_crr apc_cost_of_crr #D> apc_cost_of_crr
+apc_pac.map_cost_of_deadhead apc_cost_of_deadhead #D> apc_cost_of_deadhead
+apc_pac.map_crr_length_penalty  #D> 
+apc_pac.map_non_additive_cost_of_crr  #D> 
+apc_pac.num_col_gen_objective_components 1 #D> 1
+apc_pac.map_col_gen_objective_1  #D> 
+apc_pac.map_col_gen_objective_2  #D> 
+apc_pac.map_col_gen_objective_3  #D> 
+apc_pac.num_col_gen_resource_components 0 #D> 0
+apc_pac.map_col_gen_resource_1  #D> 
+apc_pac.map_col_gen_resource_2  #D> 
+apc_pac.map_col_gen_resource_3  #D> 
+apc_pac.map_col_gen_resource_4  #D> 
+apc_pac.duty_level_name  #D> 
+apc_pac.map_rotation_is_complete  #D> 
+apc_pac.map_leg_allowed_as_deadhead  #D> 
+apc_pac.map_max_layover_time max_layover_time #D> apc_pac.max_layover_time
+apc_pac.map_base_production_on_day  #D> 
+apc_pac.map_base_departure_time  #D> 
+apc_pac.map_base_production_day_count  #D> 
+apc_pac.map_valid_start  #D> 
+apc_pac.map_valid_end  #D> 
+apc_pac.map_penalty_cost_of_crr_info  #D> 
+apc_pac.map_credit_of_crr_info  #D> 
+apc_pac.map_credit_block_time  #D> 
+apc_pac.map_calendar_day_start  #D> 
+apc_pac.map_crr_calendar_days num_caldays #D> num_caldays
+apc_pac.map_max_calendar_days apc_max_calendar_days #D> apc_max_calendar_days
+apc_pac.map_rtd_duty_time  #D> 
+apc_pac.map_duty_start_local_time  #D> 
+apc_pac.map_rest_time_after_rtd  #D> 
+apc_pac.map_crr_ac_changes  #D> 
+apc_pac.map_crr_twin_airport_connection_count  #D> 
+<SETS>
+<END>
