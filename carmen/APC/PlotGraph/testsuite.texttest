@@ -9,7 +9,6 @@ SimpleSwedishMemory
 # Plot a running APC test
 Running
 2Versions
-2VersionsPostScript
 
 # Plotting several versions with the -v flag, not extra versions v=
 SeveralVersions
@@ -21,7 +20,6 @@ AveragePerc
 
 # Removed until mpl on RHEL4
 AveragePercMPLPostScript
-OnlyAveragePostScript
 ItemsAverage
 StaticGUI
 
@@ -60,26 +58,14 @@ KPIGroupsGeneratePageMPL
 # KPIGroupsGeneratePage using CVS extract
 KPIGroupsGeneratePageWithCVSExtract
 
-# Test the script optimization.PlotSubplans
-Subplan
-
-# Reconnects and plot the KPI group to a postscript file
-ReconnectGUIKPI
-
 # Plot the whole KPI group for a running test.
 RunningKPI
-
-# Extract data from CVS
-ExtractFromCVS
-
-# Test printing
-Print
-
-# As Print but tries to do an A3 print
-PrintA3
 
 # Print with matplotlib
 PrintMPL
 
 # Print with matplotlib-A3 format
 PrintA3MPL
+
+# gnuplot's postscript generation seems to vary depending on machine type
+GnuplotPostscript
