@@ -1,5 +1,5 @@
 # Path to the executable.
-executable:$TEXTTEST_HOME/source_with_pyc/videostore.jar
+executable:${TEXTTEST_CHECKOUT}/videostore.jar
 
 interpreter:java -jar
 
