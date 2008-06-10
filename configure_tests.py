@@ -117,7 +117,7 @@ def isInstalled(program):
     return False
 
 def getPreRequisites():
-    common = [ "tkdiff", "java" ]
+    common = [ "tkdiff" ]
     if os.name == "posix":
         return common + [ "emacs", "tail", "Xvfb" ]
     else:
