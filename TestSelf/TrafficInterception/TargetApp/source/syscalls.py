@@ -15,5 +15,6 @@ os.system('firstcall.py -a -b -c "hello | goodbye"')
 
 # Check our environment and current working directory goes into the traffic environment
 os.environ["MY_ENV_VAR"] = "value"
-os.chdir(os.path.expanduser(os.getenv("TEXTTEST_TMP")))
+os.mkdir("tmpdir")
+os.chdir("tmpdir")
 os.system("secondcall.py -c -x")
