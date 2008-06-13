@@ -1,41 +1,46 @@
-TextTest will write diagnostics in /users/geoff/texttesttmp/texttest.06Aug154044/TestSelf/KnownBugs/Console/MigrateFrom3.7 based on file at /users/geoff/work/master/Testing/Automatic/texttest/logging.texttest
+TextTest will write diagnostics in /carm/proj/texttest-tmp/geoff/texttest.13Jun105849.9897/texttest/TestSelf/KnownBugs/Console/MigrateFrom3.7 based on file at /carm/proj/texttest-tmp/geoff/texttest.13Jun105849.9897/texttest/TestSelf/KnownBugs/Console/MigrateFrom3.7/logging
 Using Application HELLO
 Migrating knownbugs file in HELLO test-suite TargetApp - knownbugs.hello.version
-1,2c1,12
-< [output]
-< interrupted by external:3180
----
-> [Migrated section 1]
-> search_string:interrupted by external
-> search_file:output
-> bug_system:bugzilla
-> bug_id:3180
-> 
-> [Migrated section 2]
-> search_string:some message
-> search_file:errors
-> full_description:there was a message
-> brief_description:unreported bug
-> internal_error:0
-4,5d13
-< [errors]
-< some message:there was a message
+Old File:
+[output]
+output message:3180
+
+[errors]
+some message:there was a message
+
+New File:
+[Migrated section 1]
+search_string:output message
+search_file:output
+bug_system:bugzilla
+bug_id:3180
+
+[Migrated section 2]
+search_string:some message
+search_file:errors
+full_description:there was a message
+brief_description:unreported bug
+internal_error:0
+
+
   Migrating knownbugs file in HELLO test-case Test - knownbugs.hello
-1,3c1,13
-< [output]
-< bug message:3180
-< no bug message:there was no bug message
----
-> [Migrated section 1]
-> search_string:bug message
-> search_file:output
-> bug_system:bugzilla
-> bug_id:3180
-> 
-> [Migrated section 2]
-> search_string:no bug message
-> search_file:output
-> full_description:there was no bug message
-> brief_description:unreported bug
-> internal_error:0
-> 
+Old File:
+[output]
+bug message:3180
+no bug message:there was no bug message
+
+New File:
+[Migrated section 1]
+search_string:bug message
+search_file:output
+bug_system:bugzilla
+bug_id:3180
+
+[Migrated section 2]
+search_string:no bug message
+search_file:output
+full_description:there was no bug message
+brief_description:unreported bug
+internal_error:0
+
+
