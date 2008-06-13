@@ -72,8 +72,9 @@ checkout_to_use_for_recording:/usr/local/share/texttest
 checkout_to_use_for_recording:/carm/master/Testing/TextTest
 checkout_to_use_for_recording:/users/geoff/work/release/texttest-3.10/source/
 checkout_to_use_for_recording:/users/geoff/work/release/texttest-3.9.1/source/
+run_this_version:x86_64_solaris
+run_this_version:powerpc
 run_this_version:sparc
-run_this_version:parisc_2_0
 version_to_reconnect_to:unix.i386_linux
 version_to_reconnect_to:unix.sparc
 version_to_reconnect_to:unix.powerpc
@@ -315,6 +316,11 @@ definition_file_stems:record_usecase
 definition_file_stems:replay_usecase
 definition_file_stems:target_record_usecase
 definition_file_stems:target_input
+
+unsaveable_version:rundep
+
+# Run-dependent smaller tests
+extra_version:rundep
 
 # Run the LSF and SGE tests too...
 extra_version:sge
