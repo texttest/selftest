@@ -117,11 +117,10 @@ def isInstalled(program):
     return False
 
 def getPreRequisites():
-    common = [ "tkdiff" ]
     if os.name == "posix":
-        return common + [ "emacs", "tail", "Xvfb" ]
+        return [ "emacs", "tail", "Xvfb ]
     else:
-        allStems = common + [ "wordpad", "baretail" ]
+        allStems = [ "wordpad", "baretail" ]
         return [ name + ".exe" for name in allStems ] 
 
 def checkPreRequisites():
