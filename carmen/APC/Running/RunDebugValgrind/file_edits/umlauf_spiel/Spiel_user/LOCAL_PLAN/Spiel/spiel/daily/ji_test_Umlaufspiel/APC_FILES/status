@@ -1,0 +1,754 @@
+SECTION apc_status input
+
+--- Summary of solution (input) ---
+
+ Date..................: 06/17/2008, 14:03
+ APC program (rule set): umlauf_spiel
+ Sub-plan..............: Spiel  spiel  daily  ji_test_Umlaufspiel
+ Period................: 19940919 - 19940919
+ Machine...............: portmoller
+
+ legs..........................................: 22
+  uncovered legs...............................: 22
+ overcovers (will become deadheads)............: 0
+ illegal trips.................................: 0
+
+ TOTAL cost....................................:       22
+
+  APC total rule cost..........................:       22
+   rule overcover cost.........................:        0
+  extra overcover cost.........................:        0
+  global constraint excess cost................:        0
+  base constraint excess cost..................:        0
+
+APC SOLUTION ANALYSIS
+
+ working days..................................: 22
+ block time....................................: 21:05
+ average block time per working day............: 0:57
+ deadhead time.................................: 00:00
+ duty time.....................................: 48:35
+ duty time per working day.....................: 2:12
+ duty time/block time..........................: 2.304
+ duty time in longest trip.....................: 2:45
+ trips.........................................: 22
+ incomplete trips..............................: 22
+ trips with long duty time (>44:00)............: 0
+
+ duties........................................: 22
+
+ legs..........................................: 22
+ legs in incomplete duties.....................: 22
+ this fleet deadheads..........................: 0
+ other-fleet deadheads.........................: 0
+ ground transport deadheads....................: 0
+ OAG deadheads.................................: 0
+ aircraft changes..............................: 0
+
+ Number of days in complete trips:
+ Length     Trips
+
+ Number of days in incomplete trips:
+ Length    Incomplete trips
+ 1 days    22
+
+BASE CONSTRAINTS (complete trips only)
+
+                 Start      End  Min/Day  Max/Day   MinTot   MaxTot    Value
+ ============  =======  =======  =======  =======  =======  =======  =======
+ Base    FRA       Mon      Mon       -        -        -        -        0
+ Default base: FRA
+
+BASE PRODUCTION ANALYSIS (complete trips only)
+
+
+
+ Total production (all bases)....:    0
+ Total production (all variants).:    0
+
+APC JOB IDENTIFICATION
+
+ CARMSYS...............: /carm/proj/texttest/selftest_data/APC_CARMSYS
+ CARMUSR...............: /carm/proj/texttest-tmp/geoff/texttest.carmen.17Jun140330.2439/texttest.carmen/carmen/APC/Running/RunDebugValgrind/texttesttmp/apc.valgrind.17Jun140335.2456/apc.valgrind/Spielscripts/umlauf_spiel/Spiel_user
+ CARMTMP...............: /carm/proj/texttest/selftest_data/APC_CARMSYS/Spielscripts_tmp.apc
+ APC library version...: master.current
+ APC library date......: 23 May 2006 16:21:35
+ Parameter set.........:    with  10  manual changes.
+ IP solver.............: opt_paqs
+
+--- end of analysis ---
+Time:  7 s real  8860 ms cpu  10 ms cpu_child  memory:  78.2 Mb
+
+SECTION apc_status Solution_1
+APC STATUS REPORT OVERVIEW
+
+Total time:  0:00:18   cpu time:  0:00:11
+APC producing solution number: 1
+Active method: column generator, module: pricing (with reduced set of duties)
+Generated trips: 50 this loop
+
+--- Summary of solution (column generation) ---
+
+ Date..................: 06/17/2008, 14:04
+ APC program (rule set): umlauf_spiel
+ Sub-plan..............: Spiel  spiel  daily  ji_test_Umlaufspiel
+ Period................: 19940919 - 19940919
+ Machine...............: portmoller
+
+ legs..........................................: 22
+  uncovered legs...............................: 0
+ overcovers (will become deadheads)............: 0
+ illegal trips.................................: 0
+
+ TOTAL cost....................................:        8
+
+  APC total rule cost..........................:        8
+   rule overcover cost.........................:        0
+  extra overcover cost.........................:        0
+  global constraint excess cost................:        0
+  base constraint excess cost..................:        0
+
+APC SOLUTION ANALYSIS
+
+ working days..................................: 8
+ block time....................................: 21:05
+ average block time per working day............: 2:38
+ deadhead time.................................: 00:00
+ duty time.....................................: 45:10
+ duty time per working day.....................: 5:38
+ duty time/block time..........................: 2.142
+ duty time in longest trip.....................: 17:00
+ trips.........................................: 4
+ incomplete trips..............................: 0
+ trips with long duty time (>44:00)............: 0
+
+ duties........................................: 8
+ average duty time per duty....................: 5:38
+ longest duty..................................: 10:05
+ shortest duty.................................: 2:15
+ duties with long duty time (>10:00)...........: 1 
+ duty pairs with long duty time (>18:00).......: 0 
+
+ layovers (double rest)........................: 0
+ normal rest periods...........................: 4
+ average rest time (except layovers)...........: 15:45
+ longest rest time (except layovers)...........: 19:10
+ shortest rest time............................: 12:05
+ short rest times (<12:00).....................: 0
+ late (>13:00) to early (< 8:00)...............: 0
+
+ legs..........................................: 22
+ legs in incomplete duties.....................: 0
+ this fleet deadheads..........................: 0
+ other-fleet deadheads.........................: 0
+ ground transport deadheads....................: 0
+ OAG deadheads.................................: 0
+ aircraft changes..............................: 5
+
+ Number of days in complete trips:
+ Length     Trips
+ 2 days:      4   100.000 %
+
+BASE CONSTRAINTS (complete trips only)
+
+                 Start      End  Min/Day  Max/Day   MinTot   MaxTot    Value
+ ============  =======  =======  =======  =======  =======  =======  =======
+ Base    FRA       Mon      Mon       -        -        -        -        8
+ Default base: FRA
+
+BASE PRODUCTION ANALYSIS (complete trips only)
+
+ Day              Mon |   total
+ ============    ---- |  ------
+ Base    FRA        8 |       8
+
+ Total production ( FRA).........:    8
+
+ Total production (all bases)....:    8
+ Total production (all variants).:    0
+
+APC GENERATION INFO
+
+ Generated trips...........: 50
+ Colgen iterations.........: 8
+ Network generation time ..: 2
+ Generation time (sec).....: 2
+ Legality (pass)...........: 1272
+ Legality (fail)...........: 440
+ Coordination time (sec)...: 1
+
+ Column generator statistics
+  Rule checks.............................: 74
+   Failed due to incomplete trip..........: 0
+   Failed due to rule violation...........: 7
+   Failed due to duplicate legs...........: 15
+  Cost overestimates......................: 0
+  Cost underestimates.....................: 0
+  Legal rotations with cost overestimate..: 0
+  Unattractive legal trips................: 0
+  Unattractive illegal trips..............: 0
+  Failed rules
+   rest                 failures 7
+
+APC OPTIMIZATION INFO
+
+ (the global bounds include penalties for uncovered legs, and
+  for base and global constraint violations)
+
+ Global upper bound.............: 8
+ Global lower bound.............: not yet available
+ Global gap.....................: 0.000000%
+
+APC JOB IDENTIFICATION
+
+ CARMSYS...............: /carm/proj/texttest/selftest_data/APC_CARMSYS
+ CARMUSR...............: /carm/proj/texttest-tmp/geoff/texttest.carmen.17Jun140330.2439/texttest.carmen/carmen/APC/Running/RunDebugValgrind/texttesttmp/apc.valgrind.17Jun140335.2456/apc.valgrind/Spielscripts/umlauf_spiel/Spiel_user
+ CARMTMP...............: /carm/proj/texttest/selftest_data/APC_CARMSYS/Spielscripts_tmp.apc
+ APC library version...: master.current
+ APC library date......: 23 May 2006 16:21:35
+ Parameter set.........:    with  10  manual changes.
+ IP solver.............: opt_paqs
+ Coordination IP solver: paqs
+
+--- end of analysis ---
+Time:  21 s real  16960 ms cpu  10 ms cpu_child  memory: 200.0 Mb
+
+SECTION apc_status Solution_2
+APC STATUS REPORT OVERVIEW
+
+Total time:  0:00:21   cpu time:  0:00:13
+APC producing solution number: 2
+Active method: column generator, module: pricing (with reduced set of duties)
+Generated trips: 107 this loop
+
+--- Summary of solution (column generation) ---
+
+ Date..................: 06/17/2008, 14:04
+ APC program (rule set): umlauf_spiel
+ Sub-plan..............: Spiel  spiel  daily  ji_test_Umlaufspiel
+ Period................: 19940919 - 19940919
+ Machine...............: portmoller
+
+ legs..........................................: 22
+  uncovered legs...............................: 0
+ overcovers (will become deadheads)............: 0
+ illegal trips.................................: 0
+
+ TOTAL cost....................................:        7
+
+  APC total rule cost..........................:        7
+   rule overcover cost.........................:        0
+  extra overcover cost.........................:        0
+  global constraint excess cost................:        0
+  base constraint excess cost..................:        0
+
+APC SOLUTION ANALYSIS
+
+ working days..................................: 7
+ block time....................................: 21:05
+ average block time per working day............: 3:00
+ deadhead time.................................: 00:00
+ duty time.....................................: 48:25
+ duty time per working day.....................: 6:55
+ duty time/block time..........................: 2.296
+ duty time in longest trip.....................: 24:05
+ trips.........................................: 3
+ incomplete trips..............................: 0
+ trips with long duty time (>44:00)............: 0
+
+ duties........................................: 7
+ average duty time per duty....................: 6:55
+ longest duty..................................: 10:35
+ shortest duty.................................: 2:00
+ duties with long duty time (>10:00)...........: 1 
+ duty pairs with long duty time (>18:00).......: 0 
+
+ layovers (double rest)........................: 0
+ normal rest periods...........................: 4
+ average rest time (except layovers)...........: 14:48
+ longest rest time (except layovers)...........: 19:55
+ shortest rest time............................: 11:45
+ short rest times (<12:00).....................: 1
+ late (>13:00) to early (< 8:00)...............: 0
+
+ legs..........................................: 22
+ legs in incomplete duties.....................: 0
+ this fleet deadheads..........................: 0
+ other-fleet deadheads.........................: 0
+ ground transport deadheads....................: 0
+ OAG deadheads.................................: 0
+ aircraft changes..............................: 5
+
+ Number of days in complete trips:
+ Length     Trips
+ 2 days:      2   66.667 %
+ 3 days:      1   33.333 %
+
+BASE CONSTRAINTS (complete trips only)
+
+                 Start      End  Min/Day  Max/Day   MinTot   MaxTot    Value
+ ============  =======  =======  =======  =======  =======  =======  =======
+ Base    FRA       Mon      Mon       -        -        -        -        7
+ Default base: FRA
+
+BASE PRODUCTION ANALYSIS (complete trips only)
+
+ Day              Mon |   total
+ ============    ---- |  ------
+ Base    FRA        7 |       7
+
+ Total production ( FRA).........:    7
+
+ Total production (all bases)....:    7
+ Total production (all variants).:    0
+
+APC GENERATION INFO
+
+ Generated trips...........: 107
+ Colgen iterations.........: 17
+ Network generation time ..: 2
+ Generation time (sec).....: 3
+ Legality (pass)...........: 1648
+ Legality (fail)...........: 842
+ Coordination time (sec)...: 2
+
+ Column generator statistics
+  Rule checks.............................: 183
+   Failed due to incomplete trip..........: 0
+   Failed due to rule violation...........: 11
+   Failed due to duplicate legs...........: 48
+  Cost overestimates......................: 0
+  Cost underestimates.....................: 0
+  Legal rotations with cost overestimate..: 0
+  Unattractive legal trips................: 0
+  Unattractive illegal trips..............: 0
+  Failed rules
+   rest                 failures 11
+
+APC OPTIMIZATION INFO
+
+ (the global bounds include penalties for uncovered legs, and
+  for base and global constraint violations)
+
+ Global upper bound.............: 7
+ Global lower bound.............: not yet available
+ Global gap.....................: 0.000000%
+
+APC JOB IDENTIFICATION
+
+ CARMSYS...............: /carm/proj/texttest/selftest_data/APC_CARMSYS
+ CARMUSR...............: /carm/proj/texttest-tmp/geoff/texttest.carmen.17Jun140330.2439/texttest.carmen/carmen/APC/Running/RunDebugValgrind/texttesttmp/apc.valgrind.17Jun140335.2456/apc.valgrind/Spielscripts/umlauf_spiel/Spiel_user
+ CARMTMP...............: /carm/proj/texttest/selftest_data/APC_CARMSYS/Spielscripts_tmp.apc
+ APC library version...: master.current
+ APC library date......: 23 May 2006 16:21:35
+ Parameter set.........:    with  10  manual changes.
+ IP solver.............: opt_paqs
+ Coordination IP solver: paqs
+
+--- end of analysis ---
+Time:  24 s real  19440 ms cpu  20 ms cpu_child  memory: 247.9 Mb
+
+SECTION apc_status Solution_3
+APC STATUS REPORT OVERVIEW
+
+Total time:  0:00:25   cpu time:  0:00:16
+APC producing solution number: 3
+Active method: column generator, module: pricing (with reduced set of duties)
+Generated trips: 153 this loop
+
+--- Summary of solution (column generation) ---
+
+ Date..................: 06/17/2008, 14:04
+ APC program (rule set): umlauf_spiel
+ Sub-plan..............: Spiel  spiel  daily  ji_test_Umlaufspiel
+ Period................: 19940919 - 19940919
+ Machine...............: portmoller
+
+ legs..........................................: 22
+  uncovered legs...............................: 0
+ overcovers (will become deadheads)............: 0
+ illegal trips.................................: 0
+
+ TOTAL cost....................................:        6
+
+  APC total rule cost..........................:        6
+   rule overcover cost.........................:        0
+  extra overcover cost.........................:        0
+  global constraint excess cost................:        0
+  base constraint excess cost..................:        0
+
+APC SOLUTION ANALYSIS
+
+ working days..................................: 6
+ block time....................................: 21:05
+ average block time per working day............: 3:30
+ deadhead time.................................: 00:00
+ duty time.....................................: 45:15
+ duty time per working day.....................: 7:32
+ duty time/block time..........................: 2.146
+ duty time in longest trip.....................: 25:30
+ trips.........................................: 2
+ incomplete trips..............................: 0
+ trips with long duty time (>44:00)............: 0
+
+ duties........................................: 6
+ average duty time per duty....................: 7:32
+ longest duty..................................: 10:25
+ shortest duty.................................: 5:40
+ duties with long duty time (>10:00)...........: 1 
+ duty pairs with long duty time (>18:00).......: 1 
+
+ layovers (double rest)........................: 0
+ normal rest periods...........................: 4
+ average rest time (except layovers)...........: 15:47
+ longest rest time (except layovers)...........: 16:25
+ shortest rest time............................: 15:20
+ short rest times (<12:00).....................: 0
+ late (>13:00) to early (< 8:00)...............: 0
+
+ legs..........................................: 22
+ legs in incomplete duties.....................: 0
+ this fleet deadheads..........................: 0
+ other-fleet deadheads.........................: 0
+ ground transport deadheads....................: 0
+ OAG deadheads.................................: 0
+ aircraft changes..............................: 5
+
+ Number of days in complete trips:
+ Length     Trips
+ 3 days:      2   100.000 %
+
+BASE CONSTRAINTS (complete trips only)
+
+                 Start      End  Min/Day  Max/Day   MinTot   MaxTot    Value
+ ============  =======  =======  =======  =======  =======  =======  =======
+ Base    FRA       Mon      Mon       -        -        -        -        6
+ Default base: FRA
+
+BASE PRODUCTION ANALYSIS (complete trips only)
+
+ Day              Mon |   total
+ ============    ---- |  ------
+ Base    FRA        6 |       6
+
+ Total production ( FRA).........:    6
+
+ Total production (all bases)....:    6
+ Total production (all variants).:    0
+
+APC GENERATION INFO
+
+ Generated trips...........: 153
+ Colgen iterations.........: 25
+ Network generation time ..: 2
+ Generation time (sec).....: 4
+ Legality (pass)...........: 2028
+ Legality (fail)...........: 1227
+ Coordination time (sec)...: 3
+
+ Column generator statistics
+  Rule checks.............................: 284
+   Failed due to incomplete trip..........: 0
+   Failed due to rule violation...........: 13
+   Failed due to duplicate legs...........: 85
+  Cost overestimates......................: 0
+  Cost underestimates.....................: 0
+  Legal rotations with cost overestimate..: 0
+  Unattractive legal trips................: 0
+  Unattractive illegal trips..............: 0
+  Failed rules
+   rest                 failures 13
+
+APC OPTIMIZATION INFO
+
+ (the global bounds include penalties for uncovered legs, and
+  for base and global constraint violations)
+
+ Global upper bound.............: 6
+ Global lower bound.............: not yet available
+ Global gap.....................: 0.000000%
+
+APC JOB IDENTIFICATION
+
+ CARMSYS...............: /carm/proj/texttest/selftest_data/APC_CARMSYS
+ CARMUSR...............: /carm/proj/texttest-tmp/geoff/texttest.carmen.17Jun140330.2439/texttest.carmen/carmen/APC/Running/RunDebugValgrind/texttesttmp/apc.valgrind.17Jun140335.2456/apc.valgrind/Spielscripts/umlauf_spiel/Spiel_user
+ CARMTMP...............: /carm/proj/texttest/selftest_data/APC_CARMSYS/Spielscripts_tmp.apc
+ APC library version...: master.current
+ APC library date......: 23 May 2006 16:21:35
+ Parameter set.........:    with  10  manual changes.
+ IP solver.............: opt_paqs
+ Coordination IP solver: paqs
+
+--- end of analysis ---
+Time:  27 s real  21920 ms cpu  20 ms cpu_child  memory: 295.8 Mb
+
+SECTION apc_status Solution_4
+APC STATUS REPORT OVERVIEW
+
+Total time:  0:01:32   cpu time:  0:01:12
+APC producing solution number: 4
+Active method: column generator, module: pricing (with all duties)
+Generated trips: 320 this loop
+
+--- Summary of solution (column generation) ---
+
+ Date..................: 06/17/2008, 14:05
+ APC program (rule set): umlauf_spiel
+ Sub-plan..............: Spiel  spiel  daily  ji_test_Umlaufspiel
+ Period................: 19940919 - 19940919
+ Machine...............: portmoller
+
+ legs..........................................: 22
+  uncovered legs...............................: 0
+ overcovers (will become deadheads)............: 0
+ illegal trips.................................: 0
+
+ TOTAL cost....................................:        6
+
+  APC total rule cost..........................:        6
+   rule overcover cost.........................:        0
+  extra overcover cost.........................:        0
+  global constraint excess cost................:        0
+  base constraint excess cost..................:        0
+
+APC SOLUTION ANALYSIS
+
+ working days..................................: 6
+ block time....................................: 21:05
+ average block time per working day............: 3:30
+ deadhead time.................................: 00:00
+ duty time.....................................: 45:15
+ duty time per working day.....................: 7:32
+ duty time/block time..........................: 2.146
+ duty time in longest trip.....................: 25:30
+ trips.........................................: 2
+ incomplete trips..............................: 0
+ trips with long duty time (>44:00)............: 0
+
+ duties........................................: 6
+ average duty time per duty....................: 7:32
+ longest duty..................................: 10:25
+ shortest duty.................................: 5:40
+ duties with long duty time (>10:00)...........: 1 
+ duty pairs with long duty time (>18:00).......: 1 
+
+ layovers (double rest)........................: 0
+ normal rest periods...........................: 4
+ average rest time (except layovers)...........: 15:47
+ longest rest time (except layovers)...........: 16:25
+ shortest rest time............................: 15:20
+ short rest times (<12:00).....................: 0
+ late (>13:00) to early (< 8:00)...............: 0
+
+ legs..........................................: 22
+ legs in incomplete duties.....................: 0
+ this fleet deadheads..........................: 0
+ other-fleet deadheads.........................: 0
+ ground transport deadheads....................: 0
+ OAG deadheads.................................: 0
+ aircraft changes..............................: 5
+
+ Number of days in complete trips:
+ Length     Trips
+ 3 days:      2   100.000 %
+
+BASE CONSTRAINTS (complete trips only)
+
+                 Start      End  Min/Day  Max/Day   MinTot   MaxTot    Value
+ ============  =======  =======  =======  =======  =======  =======  =======
+ Base    FRA       Mon      Mon       -        -        -        -        6
+ Default base: FRA
+
+BASE PRODUCTION ANALYSIS (complete trips only)
+
+ Day              Mon |   total
+ ============    ---- |  ------
+ Base    FRA        6 |       6
+
+ Total production ( FRA).........:    6
+
+ Total production (all bases)....:    6
+ Total production (all variants).:    0
+
+APC GENERATION INFO
+
+ Generated trips...........: 320
+ Colgen iterations.........: 72
+ Network generation time ..: 4
+ Generation time (sec).....: 43
+ Legality (pass)...........: 9084
+ Legality (fail)...........: 21231
+ Coordination time (sec)...: 17
+ Conn fixing time (sec)....: 1
+
+ Column generator statistics
+  Rule checks.............................: 4438
+   Failed due to incomplete trip..........: 0
+   Failed due to rule violation...........: 87
+   Failed due to duplicate legs...........: 3519
+  Cost overestimates......................: 0
+  Cost underestimates.....................: 0
+  Legal rotations with cost overestimate..: 0
+  Unattractive legal trips................: 0
+  Unattractive illegal trips..............: 0
+  Failed rules
+   rest                 failures 92
+
+APC OPTIMIZATION INFO
+
+ (the global bounds include penalties for uncovered legs, and
+  for base and global constraint violations)
+
+ Global upper bound.............: 6
+ Global lower bound.............: 6
+ Global gap.....................: 0.000000%
+
+APC JOB IDENTIFICATION
+
+ CARMSYS...............: /carm/proj/texttest/selftest_data/APC_CARMSYS
+ CARMUSR...............: /carm/proj/texttest-tmp/geoff/texttest.carmen.17Jun140330.2439/texttest.carmen/carmen/APC/Running/RunDebugValgrind/texttesttmp/apc.valgrind.17Jun140335.2456/apc.valgrind/Spielscripts/umlauf_spiel/Spiel_user
+ CARMTMP...............: /carm/proj/texttest/selftest_data/APC_CARMSYS/Spielscripts_tmp.apc
+ APC library version...: master.current
+ APC library date......: 23 May 2006 16:21:35
+ Parameter set.........:    with  10  manual changes.
+ IP solver.............: opt_paqs
+ Coordination IP solver: paqs
+
+--- end of analysis ---
+Time:  95 s real  78310 ms cpu  30 ms cpu_child  memory: 344.0 Mb
+
+SECTION apc_status Solution_5
+APC STATUS REPORT OVERVIEW
+
+Total time:  0:01:33   cpu time:  0:01:12
+APC producing solution number: 5
+Active method: column generator, module: overcover to deadhead
+Generated trips: 320 this loop
+
+--- Summary of solution (column-generation) ---
+
+ Date..................: 06/17/2008, 14:05
+ APC program (rule set): umlauf_spiel
+ Sub-plan..............: Spiel  spiel  daily  ji_test_Umlaufspiel
+ Period................: 19940919 - 19940919
+ Machine...............: portmoller
+
+ legs..........................................: 22
+  uncovered legs...............................: 0
+ overcovers (will become deadheads)............: 0
+ illegal trips.................................: 0
+
+ TOTAL cost....................................:        6
+
+  APC total rule cost..........................:        6
+   rule overcover cost.........................:        0
+  extra overcover cost.........................:        0
+  global constraint excess cost................:        0
+  base constraint excess cost..................:        0
+
+APC SOLUTION ANALYSIS
+
+ working days..................................: 6
+ block time....................................: 21:05
+ average block time per working day............: 3:30
+ deadhead time.................................: 00:00
+ duty time.....................................: 45:15
+ duty time per working day.....................: 7:32
+ duty time/block time..........................: 2.146
+ duty time in longest trip.....................: 25:30
+ trips.........................................: 2
+ incomplete trips..............................: 0
+ trips with long duty time (>44:00)............: 0
+
+ duties........................................: 6
+ average duty time per duty....................: 7:32
+ longest duty..................................: 10:25
+ shortest duty.................................: 5:40
+ duties with long duty time (>10:00)...........: 1 
+ duty pairs with long duty time (>18:00).......: 1 
+
+ layovers (double rest)........................: 0
+ normal rest periods...........................: 4
+ average rest time (except layovers)...........: 15:47
+ longest rest time (except layovers)...........: 16:25
+ shortest rest time............................: 15:20
+ short rest times (<12:00).....................: 0
+ late (>13:00) to early (< 8:00)...............: 0
+
+ legs..........................................: 22
+ legs in incomplete duties.....................: 0
+ this fleet deadheads..........................: 0
+ other-fleet deadheads.........................: 0
+ ground transport deadheads....................: 0
+ OAG deadheads.................................: 0
+ aircraft changes..............................: 5
+
+ Number of days in complete trips:
+ Length     Trips
+ 3 days:      2   100.000 %
+
+BASE CONSTRAINTS (complete trips only)
+
+                 Start      End  Min/Day  Max/Day   MinTot   MaxTot    Value
+ ============  =======  =======  =======  =======  =======  =======  =======
+ Base    FRA       Mon      Mon       -        -        -        -        6
+ Default base: FRA
+
+BASE PRODUCTION ANALYSIS (complete trips only)
+
+ Day              Mon |   total
+ ============    ---- |  ------
+ Base    FRA        6 |       6
+
+ Total production ( FRA).........:    6
+
+ Total production (all bases)....:    6
+ Total production (all variants).:    0
+
+APC GENERATION INFO
+
+ Generated trips...........: 320
+ Colgen iterations.........: 72
+ Network generation time ..: 4
+ Generation time (sec).....: 43
+ Legality (pass)...........: 9084
+ Legality (fail)...........: 21231
+ Coordination time (sec)...: 17
+ Conn fixing time (sec)....: 1
+
+ Column generator statistics
+  Rule checks.............................: 4438
+   Failed due to incomplete trip..........: 0
+   Failed due to rule violation...........: 87
+   Failed due to duplicate legs...........: 3519
+  Cost overestimates......................: 0
+  Cost underestimates.....................: 0
+  Legal rotations with cost overestimate..: 0
+  Unattractive legal trips................: 0
+  Unattractive illegal trips..............: 0
+  Failed rules
+   rest                 failures 92
+
+APC OPTIMIZATION INFO
+
+ (the global bounds include penalties for uncovered legs, and
+  for base and global constraint violations)
+
+ Global upper bound.............: 6
+ Global lower bound.............: 6
+ Global gap.....................: 0.000000%
+
+APC JOB IDENTIFICATION
+
+ CARMSYS...............: /carm/proj/texttest/selftest_data/APC_CARMSYS
+ CARMUSR...............: /carm/proj/texttest-tmp/geoff/texttest.carmen.17Jun140330.2439/texttest.carmen/carmen/APC/Running/RunDebugValgrind/texttesttmp/apc.valgrind.17Jun140335.2456/apc.valgrind/Spielscripts/umlauf_spiel/Spiel_user
+ CARMTMP...............: /carm/proj/texttest/selftest_data/APC_CARMSYS/Spielscripts_tmp.apc
+ APC library version...: master.current
+ APC library date......: 23 May 2006 16:21:35
+ Parameter set.........:    with  10  manual changes.
+ IP solver.............: opt_paqs
+ Coordination IP solver: paqs
+
+--- end of analysis ---
+Time:  95 s real  78590 ms cpu  30 ms cpu_child  memory: 344.3 Mb
+
