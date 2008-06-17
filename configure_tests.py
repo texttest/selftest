@@ -88,8 +88,6 @@ def replaceDollarForWindows(line):
 
 # Default viewing tools are different for windows
 def replaceToolsForWindows(line):
-    if line.find("'tail") != -1 or line.find("\"tail") != -1:
-        return line.replace("tail -f", "baretail").replace("'tail'", "'baretail'")
     return line.replace("emacs", "notepad")
 
 def replaceCmdToolsForWindows(line):
@@ -118,9 +116,9 @@ def isInstalled(program):
 
 def getPreRequisites():
     if os.name == "posix":
-        return [ "emacs", "tail", "Xvfb" ]
+        return [ "emacs", "Xvfb" ]
     else:
-        allStems = [ "wordpad", "baretail" ]
+        allStems = [ "wordpad" ]
         return [ name + ".exe" for name in allStems ] 
 
 def checkPreRequisites():
