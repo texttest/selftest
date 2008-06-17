@@ -118,7 +118,7 @@ def isInstalled(program):
 
 def getPreRequisites():
     if os.name == "posix":
-        return [ "emacs", "tail", "Xvfb ]
+        return [ "emacs", "tail", "Xvfb" ]
     else:
         allStems = [ "wordpad", "baretail" ]
         return [ name + ".exe" for name in allStems ] 
