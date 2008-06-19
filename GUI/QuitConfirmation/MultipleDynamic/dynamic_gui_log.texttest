@@ -1,5 +1,5 @@
 Enabling entry completion, using matching 1
-Top Window title is TextTest dynamic GUI : testing HELLO (started at 23May17:29:08)
+Top Window title is TextTest dynamic GUI : testing HELLO (started at 18Jun16:37:09)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -108,7 +108,7 @@ Tabs showing : Status
 
 Test progress:
 
-Changing GUI status to: 'TextTest started at 23May17:29:09.'
+Changing GUI status to: 'TextTest started at 18Jun16:37:10.'
 
 Waiting for application event 'completion of test actions' to occur.
 
@@ -129,7 +129,7 @@ Test progress:
 --> Not started : 0, colour 'white', font ''', visible=True
 --> Running : 1, colour 'yellow', font 'bold'', visible=True
 
-Progress bar set to fraction 1.0, text 'All 1 tests completed at 23May17:29:09'
+Progress bar set to fraction 1.0, text 'All 1 tests completed at 18Jun16:37:10'
 
 Redrawing test Test coloured red
 (Second column 'output different' coloured red)
@@ -169,10 +169,24 @@ Expected application event 'completion of test actions' occurred, proceeding.
 
 'select file' event created with arguments 'output.hello'
 Starting graphical difference comparison using 'tkdiff':
--- original file : /carm/proj/texttest-tmp/geoff/texttest.23May172859.5294/texttest/GUI/QuitConfirmation/MultipleDynamic/texttesttmp/dynamic_gui.23May172908.30772/hello/Test/framework_tmp/output.helloorigcmp
---  current file : /carm/proj/texttest-tmp/geoff/texttest.23May172859.5294/texttest/GUI/QuitConfirmation/MultipleDynamic/texttesttmp/dynamic_gui.23May172908.30772/hello/Test/framework_tmp/output.hellocmp
+-- original file : /carm/proj/texttest-tmp/geoff/texttest.18Jun163707.15863/texttest/GUI/QuitConfirmation/MultipleDynamic/texttesttmp/dynamic_gui.18Jun163709.15875/hello/Test/framework_tmp/output.helloorigcmp
+--  current file : /carm/proj/texttest-tmp/geoff/texttest.18Jun163707.15863/texttest/GUI/QuitConfirmation/MultipleDynamic/texttesttmp/dynamic_gui.18Jun163709.15875/hello/Test/framework_tmp/output.hellocmp
 
 Changing GUI status to: 'Started "tkdiff output.helloorigcmp output.hellocmp" in background (from test Test).'
+
+'quit' event created with arguments ''
+---------- Dialog 'TextTest Confirmation' ----------
+Using stock icon 'gtk-dialog-warning'
+These processes are still running, and will be terminated when quitting: 
+
+   + PID 15884 : tkdiff output.helloorigcmp output.hellocmp (from test Test)
+
+Quit anyway?
+----------------------------------------------------
+
+'answer no to texttest confirmation' event created with arguments ''
+
+Changing GUI status to: 'Action cancelled.'
 
 'set file selection to' event created with arguments 'output.hello'
 Setting sensitivity of action 'View File' to True
@@ -182,7 +196,7 @@ Setting sensitivity of action 'View Raw Differences' to True
 Setting sensitivity of action 'View Differences' to True
 
 'view filtered file' event created with arguments ''
-Viewing file /carm/proj/texttest-tmp/geoff/texttest.23May172859.5294/texttest/GUI/QuitConfirmation/MultipleDynamic/texttesttmp/dynamic_gui.23May172908.30772/hello/Test/framework_tmp/output.hellocmp using 'emacs', refresh set to False
+Viewing file /carm/proj/texttest-tmp/geoff/texttest.18Jun163707.15863/texttest/GUI/QuitConfirmation/MultipleDynamic/texttesttmp/dynamic_gui.18Jun163709.15875/hello/Test/framework_tmp/output.hellocmp using 'emacs', refresh set to False
 
 Changing GUI status to: 'Started "emacs output.hellocmp" in background (from test Test).'
 Setting sensitivity of action 'View File' to False
@@ -196,38 +210,8 @@ Setting sensitivity of action 'View Differences' to False
 Using stock icon 'gtk-dialog-warning'
 These processes are still running, and will be terminated when quitting: 
 
-   + PID 30783 : tkdiff output.helloorigcmp output.hellocmp (from test Test)
-   + PID 30785 : emacs output.hellocmp (from test Test)
-
-Quit anyway?
-----------------------------------------------------
-
-'answer no to texttest confirmation' event created with arguments ''
-
-Changing GUI status to: 'Action cancelled.'
-
-Terminating process that views and edits test files...
-
-'quit' event created with arguments ''
----------- Dialog 'TextTest Confirmation' ----------
-Using stock icon 'gtk-dialog-warning'
-These processes are still running, and will be terminated when quitting: 
-
-   + PID 30783 : tkdiff output.helloorigcmp output.hellocmp (from test Test)
-
-Quit anyway?
-----------------------------------------------------
-
-'answer no to texttest confirmation' event created with arguments ''
-
-Changing GUI status to: 'Action cancelled.'
-
-'quit' event created with arguments ''
----------- Dialog 'TextTest Confirmation' ----------
-Using stock icon 'gtk-dialog-warning'
-These processes are still running, and will be terminated when quitting: 
-
-   + PID 30783 : tkdiff output.helloorigcmp output.hellocmp (from test Test)
+   + PID 15884 : tkdiff output.helloorigcmp output.hellocmp (from test Test)
+   + PID 15886 : emacs output.hellocmp (from test Test)
 
 Quit anyway?
 ----------------------------------------------------
@@ -236,5 +220,6 @@ Quit anyway?
 
 Changing GUI status to: 'Terminating all external viewers ...'
 Killing 'tkdiff output.helloorigcmp output.hellocmp (from test Test)' interactive process
+Killing 'emacs output.hellocmp (from test Test)' interactive process
 
 Changing GUI status to: 'Removing all temporary files ...'

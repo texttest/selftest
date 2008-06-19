@@ -209,6 +209,9 @@ trafficserver:traffic server address{WORD -1}
 [unordered_text]
 usecase_log:application event.*to be read
 dynamic_gui_log:application event.*to be read
+# start in the background, so order can be changed
+traffic:CMD:tkdiff
+traffic:CMD:emacs
 [end]
 
 [failure_severity]
@@ -271,6 +274,7 @@ collect_traffic:which
 collect_traffic:java
 collect_traffic:tkdiff
 collect_traffic:xterm
+collect_traffic:emacs
 
 [collect_traffic_environment]
 time:TEXTTEST_HOME

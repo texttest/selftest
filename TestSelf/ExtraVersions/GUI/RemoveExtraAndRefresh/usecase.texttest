@@ -1,8 +1,6 @@
 wait for all tests to be read
 set test selection to TargetApp (hello)
 select file testsuite.hello.extra1
-make changes to file testsuite.hello.extra1
-terminate process that views and edits test files
-refresh the whole test suite so that it reflects file changes
+wait for the automatic refresh to complete
 set test selection to Common
 quit
