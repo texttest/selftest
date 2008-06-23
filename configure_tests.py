@@ -85,20 +85,6 @@ def replaceDollarForWindows(line):
         return line.replace("$", "$$")
     else:
         return line
-
-# Default viewing tools are different for windows
-def replaceToolsForWindows(line):
-    return line.replace("emacs", "notepad")
-
-def replaceCmdToolsForWindows(line):
-    return line.replace("emacs window", "notepad window")
-
-def replaceDisplayForWindows(line):
-    pos = line.find("DISPLAY variable set to")
-    if pos != -1:
-        return line.replace(line[pos:], "windows hidden\n")
-    if line.find("Xvfb process") == -1:
-        return line
     
 # Windows needs ; as path separator instead of :
 def replacePathForWindows(line):
@@ -116,10 +102,9 @@ def isInstalled(program):
 
 def getPreRequisites():
     if os.name == "posix":
-        return [ "emacs", "Xvfb" ]
+        return [ "Xvfb" ]
     else:
-        allStems = [ "wordpad" ]
-        return [ name + ".exe" for name in allStems ] 
+        return [ "wordpad.exe" ]
 
 def checkPreRequisites():
     for program in getPreRequisites():
@@ -156,16 +141,7 @@ def configureTests(testDir, sourceDir):
         filesWithDollars = findPathsMatching(testDir, "options") + configFiles
         for fileWithDollars in filesWithDollars:
             transformFile(fileWithDollars, replaceDollarForWindows)
-        filesWithTools = findPathsMatching(testDir, "gui_log") + \
-                         findPathsMatching(testDir, "dynamic_gui_log") + configFiles
-        for fileWithTools in filesWithTools:
-            transformFile(fileWithTools, replaceToolsForWindows)
-
-        for outputFile in findPathsMatching(testDir, "output"):
-            transformFile(outputFile, replaceCmdToolsForWindows)
-        filesWithDisplay = findPathsMatching(testDir, "outputdyn") + findPathsMatching(testDir, "outputdyn2")
-        for outputFile in filesWithDisplay:
-            transformFile(outputFile, replaceDisplayForWindows)
+        
         # Files come from UNIX, which don't get displayed properly by notepad (the default)
         transformFile(configFile, insertIntoConfig, "view_program:wordpad")
         transformFile(instConfigFile, insertIntoConfig, "view_program:wordpad")
