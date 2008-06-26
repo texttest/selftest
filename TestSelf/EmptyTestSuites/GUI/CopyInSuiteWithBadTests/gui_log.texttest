@@ -1,9 +1,9 @@
 Enabling entry completion, using matching 1
 Adding entry completion '<default>' ...
 Adding entry completion '1' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.25Jun180002.11481/texttest/TestSelf/EmptyTestSuites/GUI/RefreshNoOutput/TargetApp/Diagnostics/log4py.conf' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.25Jun180002.11481/texttest/TestSelf/EmptyTestSuites/GUI/RefreshNoOutput/TargetApp/Diagnostics' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.25Jun180002.11481/texttest/TestSelf/EmptyTestSuites/GUI/RefreshNoOutput/texttesttmp' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.25Jun174905.11166/texttest/TestSelf/EmptyTestSuites/GUI/CopyInSuiteWithBadTests/TargetApp/Diagnostics/log4py.conf' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.25Jun174905.11166/texttest/TestSelf/EmptyTestSuites/GUI/CopyInSuiteWithBadTests/TargetApp/Diagnostics' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.25Jun174905.11166/texttest/TestSelf/EmptyTestSuites/GUI/CopyInSuiteWithBadTests/texttesttmp' ...
 Top Window title is TextTest static GUI : management of tests for HELLO
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
@@ -186,21 +186,17 @@ Viewing action with title '_Select', stock id ''gtk-find'', accelerator ''<contr
 Viewing radio button for switch '', options Discard/Refine/Extend'. Default value 0.
 Viewing action with title 'Filter', stock id ''gtk-find'', accelerator ''<control>f''
 
-Changing GUI status to: 'TextTest started at 25Jun18:00:22.'
+Changing GUI status to: 'TextTest started at 25Jun17:49:08.'
 
 Waiting for application event 'all tests to be read' to occur.
 
 Changing GUI status to: 'Reading tests ...'
 
-Changing GUI status to: 'Reading tests completed at 25Jun18:00:22.'
+Changing GUI status to: 'Reading tests completed at 25Jun17:49:08.'
 
 Test Tree description...
 -> TargetApp (hello)
-->   EmptySuite
-->   SuiteWithBadTest
-->   SuiteWithTest
-->     Test
-->   SuiteWithVersionFile
+->   Test
 
 Test column header set to 'Tests: 0/1 selected'
 
@@ -223,12 +219,64 @@ Viewing radio button for switch '', options Discard/Refine/Extend'. Default valu
 Viewing action with title 'Filter', stock id ''gtk-find'', accelerator ''<control>f''
 Expected application event 'all tests to be read' occurred, proceeding.
 
-'refresh the whole test suite so that it reflects file changes' event created with arguments ''
+'set test selection to' event created with arguments 'Test'
+
+Test column header set to 'Tests: All 1 selected'
+Setting sensitivity of action '_Copy' to True
+Setting sensitivity of action '_Cut' to True
+Setting sensitivity of action 'Enter Failure Information' to True
+Setting sensitivity of action 'Show only selected' to True
+Setting sensitivity of action 'Hide selected' to True
+Setting sensitivity of action '_Rename...' to True
+Setting sensitivity of action 'Remove...' to True
+Setting sensitivity of action 'S_ave Selection...' to True
+Setting sensitivity of action '_Run' to True
+Setting sensitivity of action '_Run' to True
+Setting sensitivity of action 'Re_connect' to True
+
+Setting file-view title to 'Test'
+Adding file errors.hello under heading 'Standard Files', coloured grey90
+Adding file output.hello under heading 'Standard Files', coloured grey90
+
+Pane separator positioned 46% from the top
+
+---------- Text Info Window ----------
+Description:
+Nice comment...
+--------------------------------------
+
+Tabs showing : Test, Selection, Running, Config
+
+'copy selected tests' event created with arguments ''
 Adding entry completion 'output' ...
+Setting sensitivity of action '_Paste' to True
 
-Changing GUI status to: 'Refreshing the whole test suite...'
+Changing GUI status to: 'Performed 'Copy selected tests' on HELLO test-case Test.'
 
-Changing GUI status to: 'Refreshed the test suite from the files'
+'paste tests from clipboard' event created with arguments ''
+Pasting test Test_copy under test suite HELLO test-suite TargetApp, in position 1
+
+Test column header set to 'Tests: 1/2 selected'
+
+Test Tree description...
+-> TargetApp (hello)
+->   Test
+->   Test_copy
+Selecting new tests : [HELLO test-case Test_copy]
+Marking 1 tests as selected
+
+Setting file-view title to 'Test__copy'
+Adding file errors.hello under heading 'Standard Files', coloured grey90
+Adding file output.hello under heading 'Standard Files', coloured grey90
+
+---------- Text Info Window ----------
+Description:
+Nice comment...
+--------------------------------------
+Setting sensitivity of action 'Move to first' to True
+Setting sensitivity of action 'Move up' to True
+
+Changing GUI status to: 'Performed 'Paste tests from clipboard' on HELLO test-case Test_copy.'
 
 'quit' event created with arguments ''
 
