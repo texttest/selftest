@@ -6,6 +6,10 @@ use_case_record_mode:GUI
 
 full_name:Studio
 
+# No need to involve the virtual display, it's tested
+# elsewhere and unlikely to interact with functionality in the studio module
+virtual_display_machine:{CLEAR LIST}
+
 # Check-out to use if no -c option is specified.
 # This will look globally if it starts with a /, locally 
 # under the same root as the Testing directory otherwise
