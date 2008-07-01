@@ -100,23 +100,11 @@ def isInstalled(program):
             return True
     return False
 
-def getPreRequisites():
-    if os.name == "posix":
-        return [ "Xvfb" ]
-    else:
-        return [ "wordpad.exe" ]
-
-def checkPreRequisites():
-    for program in getPreRequisites():
-        if not isInstalled(program):
-            raise EnvironmentError, "pre-requisite program '" + program + "' cannot be found on your PATH."
-
 def enableQueueSystem(name, configFile):
     print name, "is installed - changing self-tests to run in parallel using it"
     transformFile(configFile, insertIntoConfig, "config_module:queuesystem\nqueue_system_module:" + name)
             
 def configureTests(testDir, sourceDir):
-    checkPreRequisites()
     testSuiteFiles = findPathsMatching(testDir, "testsuite")
     configFile = os.path.join(testDir, "config.texttest")
     instConfigFile = os.path.join(testDir, "config.ttinst")
