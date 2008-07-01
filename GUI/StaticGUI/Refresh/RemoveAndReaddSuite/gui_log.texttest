@@ -1,9 +1,9 @@
 Enabling entry completion, using matching 1
 Adding entry completion '<default>' ...
 Adding entry completion '1' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.01Jul161130.19525/texttest/GUI/StaticGUI/Refresh/FilterSuite/TargetApp/Diagnostics/log4py.conf' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.01Jul161130.19525/texttest/GUI/StaticGUI/Refresh/FilterSuite/TargetApp/Diagnostics' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.01Jul161130.19525/texttest/GUI/StaticGUI/Refresh/FilterSuite/texttesttmp' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.01Jul161019.19451/texttest/GUI/StaticGUI/Refresh/RemoveAndReaddSuite/TargetApp/Diagnostics/log4py.conf' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.01Jul161019.19451/texttest/GUI/StaticGUI/Refresh/RemoveAndReaddSuite/TargetApp/Diagnostics' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.01Jul161019.19451/texttest/GUI/StaticGUI/Refresh/RemoveAndReaddSuite/texttesttmp' ...
 Top Window title is TextTest static GUI : management of tests for HELLO
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
@@ -186,13 +186,13 @@ Viewing action with title '_Select', stock id ''gtk-find'', accelerator ''<contr
 Viewing radio button for switch '', options Discard/Refine/Extend'. Default value 0.
 Viewing action with title 'Filter', stock id ''gtk-find'', accelerator ''<control>f''
 
-Changing GUI status to: 'TextTest started at 01Jul16:12:05.'
+Changing GUI status to: 'TextTest started at 01Jul16:10:31.'
 
 Waiting for application event 'all tests to be read' to occur.
 
 Changing GUI status to: 'Reading tests ...'
 
-Changing GUI status to: 'Reading tests completed at 01Jul16:12:05.'
+Changing GUI status to: 'Reading tests completed at 01Jul16:10:31.'
 
 Test Tree description...
 -> orig (hello)
@@ -223,7 +223,7 @@ Viewing radio button for switch '', options Discard/Refine/Extend'. Default valu
 Viewing action with title 'Filter', stock id ''gtk-find'', accelerator ''<control>f''
 Expected application event 'all tests to be read' occurred, proceeding.
 
-'set test selection to' event created with arguments 't1 under suite1'
+'set test selection to' event created with arguments 't1 under suite2'
 
 Test column header set to 'Tests: 1/3 selected'
 Setting sensitivity of action '_Copy' to True
@@ -250,42 +250,61 @@ Description:
 
 Tabs showing : Test, Selection, Running, Config
 
-'run selected tests' event created with arguments ''
+'copy selected tests' event created with arguments ''
 Adding entry completion 'output' ...
-Starting dynamic run of TextTest with arguments ['-g', '-a', 'hello', '-cp', '1', '-xr', '/carm/proj/texttest-tmp/geoff/texttest.01Jul161130.19525/texttest/GUI/StaticGUI/Refresh/FilterSuite/TargetApp/Diagnostics/log4py.conf', '-xw', '/carm/proj/texttest-tmp/geoff/texttest.01Jul161130.19525/texttest/GUI/StaticGUI/Refresh/FilterSuite/TargetApp/Diagnostics', '-count', '1', '-f', '/carm/proj/texttest-tmp/geoff/texttest.01Jul161130.19525/texttest/GUI/StaticGUI/Refresh/FilterSuite/texttesttmp/static_gui.01Jul161205.6779/dynamic_run1/gui_select', '-fd', '/carm/proj/texttest-tmp/geoff/texttest.01Jul161130.19525/texttest/GUI/StaticGUI/Refresh/FilterSuite/texttesttmp/static_gui.01Jul161205.6779/temporary_filter_files']
+Setting sensitivity of action '_Paste' to True
 
-Changing GUI status to: 'Started HELLO test-case t1 at 01Jul16:12:06.'
+Changing GUI status to: 'Performed 'Copy selected tests' on HELLO test-case t1.'
 
-Waiting for application event 'dynamic GUI to be closed' to occur.
+'paste tests from clipboard' event created with arguments ''
+Pasting test t1_copy under test suite HELLO test-suite suite2, in position 1
 
-Setting file-view title to 't1'
+Test column header set to 'Tests: 1/4 selected'
+
+Test Tree description...
+-> orig (hello)
+->   t1
+->   suite1
+->     t1
+->   suite2
+->     t1
+->     t1_copy
+Selecting new tests : [HELLO test-case t1_copy]
+Marking 1 tests as selected
+
+Setting file-view title to 't1__copy'
 Adding file output.hello under heading 'Standard Files', coloured grey90
-Adding file options.hello under heading 'Definition Files', coloured grey90
-Expected application event 'dynamic GUI to be closed' occurred, proceeding.
 
-'set test selection to' event created with arguments 'suite1'
+---------- Text Info Window ----------
+Description:
+Copy of t1
+--------------------------------------
+Setting sensitivity of action 'Move to first' to True
+Setting sensitivity of action 'Move up' to True
 
-Test column header set to 'Tests: 0/3 selected'
+Changing GUI status to: 'Performed 'Paste tests from clipboard' on HELLO test-case t1_copy.'
 
-Setting file-view title to 'suite1'
-Adding file environment.hello under heading 'Definition Files', coloured grey90
+'set test selection to' event created with arguments 'orig (hello)'
+
+Test column header set to 'Tests: 0/4 selected'
+
+Setting file-view title to 'orig'
 Adding file testsuite.hello under heading 'Definition Files', coloured grey90
 
 ---------- Text Info Window ----------
 Description:
-<No description provided>
+Root test suite
 --------------------------------------
 Setting sensitivity of action '_Copy' to False
 Setting sensitivity of action '_Cut' to False
 Setting sensitivity of action 'Add Test' to True
 Setting sensitivity of action 'Add Suite' to True
 Setting sensitivity of action '_Rename...' to False
+Setting sensitivity of action 'Remove...' to False
 Setting sensitivity of action '_Sort Test Suite File' to True
 Setting sensitivity of action '_Reversed Sort Test Suite File' to True
-Setting sensitivity of action 'Move to first' to True
-Setting sensitivity of action 'Move up' to True
-Setting sensitivity of action 'Move down' to True
-Setting sensitivity of action 'Move to last' to True
+Setting sensitivity of action 'Move to first' to False
+Setting sensitivity of action 'Move up' to False
 Setting sensitivity of action 'S_ave Selection...' to False
 Setting sensitivity of action '_Run' to False
 Setting sensitivity of action '_Run' to False
@@ -293,60 +312,74 @@ Setting sensitivity of action 'Re_connect' to False
 
 Tabs showing : Test, Selection, Config
 
-'refresh the whole test suite so that it reflects file changes' event created with arguments ''
+'select file' event created with arguments 'testsuite.hello'
+Viewing file /carm/proj/texttest-tmp/geoff/texttest.01Jul161019.19451/texttest/GUI/StaticGUI/Refresh/RemoveAndReaddSuite/TargetApp/orig/testsuite.hello using 'emacs', refresh set to True
 
-Changing GUI status to: 'Refreshing the whole test suite...'
+Changing GUI status to: 'Started "emacs testsuite.hello" in background (from test orig).'
 
-Test column header set to 'Tests: 0/2 selected'
-Removing test with path t1
+Waiting for application event 'file editing operations to complete' to occur.
 
-Test column header set to 'Tests: 0/1 selected'
+Setting file-view title to 'orig'
+Adding file testsuite.hello under heading 'Definition Files', coloured grey90
+
+Test column header set to 'Tests: 0/3 selected'
 Removing test with path suite2/t1
 
-Test column header set to 'Tests: 0/1 selected'
-Removing test with path suite2
+Test column header set to 'Tests: 0/2 selected'
+Removing test with path suite2/t1_copy
 
 Test column header set to 'Tests: 0/2 selected'
+Removing test with path suite2
+Expected application event 'file editing operations to complete' occurred, proceeding.
 
-Test Tree description...
--> orig (hello)
-->   suite1
-->     t1
-->   suite3
-->     t1
+'select file' event created with arguments 'testsuite.hello'
+Viewing file /carm/proj/texttest-tmp/geoff/texttest.01Jul161019.19451/texttest/GUI/StaticGUI/Refresh/RemoveAndReaddSuite/TargetApp/orig/testsuite.hello using 'emacs', refresh set to True
 
-Test Tree description...
--> orig (hello)
-->   suite1
-->     t1
-->   suite3
-->     t1
+Changing GUI status to: 'Started "emacs testsuite.hello" in background (from test orig).'
 
-Test Tree description...
--> orig (hello)
-->   suite1
-->     t1
-->   suite3
-->     t1
+Waiting for application event 'file editing operations to complete' to occur.
 
----------- Text Info Window ----------
-Description:
-There was a description here!
---------------------------------------
-
-Setting file-view title to 'suite1'
-Adding file environment.hello under heading 'Definition Files', coloured grey90
+Setting file-view title to 'orig'
 Adding file testsuite.hello under heading 'Definition Files', coloured grey90
-Adding file datafile under heading 'Data Files', coloured grey90
+
+Test column header set to 'Tests: 0/3 selected'
 
 Test Tree description...
 -> orig (hello)
-->   suite3
-->     t1
+->   t1
 ->   suite1
 ->     t1
+->   suite2
+->     t1
 
-Changing GUI status to: 'Refreshed the test suite from the files'
+Test Tree description...
+-> orig (hello)
+->   t1
+->   suite1
+->     t1
+->   suite2
+->     t1
+
+Test column header set to 'Tests: 0/4 selected'
+
+Test Tree description...
+-> orig (hello)
+->   t1
+->   suite1
+->     t1
+->   suite2
+->     t1
+->     t1_copy
+
+Test Tree description...
+-> orig (hello)
+->   t1
+->   suite1
+->     t1
+->   suite2
+->     t1
+->     t1_copy
+Expected application event 'file editing operations to complete' occurred, proceeding.
 
 'quit' event created with arguments ''
 
