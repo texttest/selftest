@@ -78,13 +78,6 @@ def removeComment(line, text):
         return line.replace("#", "").lstrip()
     else:
         return line
-
-# DOS shells have $$ as a special character, need to double it up
-def replaceDollarForWindows(line):
-    if line.rstrip().endswith("$") or line.find("$ ") != -1:
-        return line.replace("$", "$$")
-    else:
-        return line
     
 # Windows needs ; as path separator instead of :
 def replacePathForWindows(line):
@@ -124,11 +117,6 @@ def configureTests(testDir, sourceDir):
         print "Replacing PATH settings in environment files ':' -> ';'"
         for envFile in findPathsMatching(testDir, "environment"):
             transformFile(envFile, replacePathForWindows)
-        print "Replacing for MS-DOS syntax in options and config files '$' -> '$$'"
-        configFiles = findPathsMatching(testDir, "config")
-        filesWithDollars = findPathsMatching(testDir, "options") + configFiles
-        for fileWithDollars in filesWithDollars:
-            transformFile(fileWithDollars, replaceDollarForWindows)
         
         # Files come from UNIX, which don't get displayed properly by notepad (the default)
         transformFile(configFile, insertIntoConfig, "view_program:wordpad")
