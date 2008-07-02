@@ -1,7 +1,15 @@
 # Path to the executable
 executable:${TEXTTEST_HOME}/dumpcore.py
 
+import_config_file:$STANDARD
+
 default_interface:console
+
+[collate_file]
+stacktrace:core*
+
+[collate_script]
+stacktrace:interpretcore.py
 
 # Make sure batch files are collectable...
 [batch_use_collection]
