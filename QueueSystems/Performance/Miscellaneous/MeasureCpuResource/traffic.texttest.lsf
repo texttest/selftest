@@ -38,6 +38,11 @@ p17
 S'start'
 p18
 sb.
+<-CMD:cd /nfs/vm/texttest-tmp/geoff/texttest.sge.02Jul160728.22258/texttest.sge/QueueSystems/Performance/Miscellaneous/MeasureCpuResource/texttesttmp/console.02Jul160729.22269/perf/Failures; time -p -o /carm/proj/texttest-tmp/geoff/texttest.sge.02Jul160728.22258/texttest.sge/QueueSystems/Performance/Miscellaneous/MeasureCpuResource/texttesttmp/console.02Jul160729.22269/perf/Failures/framework_tmp/unixperf python /carm/proj/texttest-tmp/geoff/texttest.sge.02Jul160728.22258/texttest.sge/QueueSystems/Performance/Miscellaneous/MeasureCpuResource/TargetApp/writeperfnumbers.py
+->FIL:Failures
+->OUT:cpu time: 2.5 seconds
+->ERR:cpu time: 2.5 seconds
+->FIL:Failures.edit_2
 <-CMD:bhosts -w -R performance_resource
 ->OUT:HOST_NAME          STATUS          JL/U    MAX  NJOBS    RUN  SSUSP  USUSP    RSV 
 perf_machine1.carmen.se ok                 -      2      0      0      0      0      0
@@ -47,6 +52,7 @@ batesville.carmen.se    ok                 -      2      0      0      0      0 
 bellville.carmen.se     ok                 -      2      0      0      0      0      0
 <-CMD:bjobs -m perf_machine1 -u all -w
 ->ERR:No unfinished job found on host/group <perf_machine1>
+->FIL:Failures.edit_3
 <-CLI:24380
 perf:Failures
 (icomparetest
