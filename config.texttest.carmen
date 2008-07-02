@@ -88,6 +88,11 @@ unsaveable_version:carmen
 # Used for retrieving gnuplot processes...
 catalogue_process_string:Created process
 
+# Collecting traffic for 'time' doesn't work,
+# because we do funny things around finding subprocesses of it...
+# So we write a fake one, clear the collect list and recreate it...
+link_test_path:time
+
 collect_traffic:{CLEAR LIST}
 collect_traffic:qsub
 collect_traffic:qdel
@@ -98,7 +103,6 @@ collect_traffic:crc_compile
 collect_traffic:qrsh
 collect_traffic:rsh
 collect_traffic:lpr
-collect_traffic:cvs
 collect_traffic:valgrind
 collect_traffic:valgrind64
 collect_traffic:xemacs

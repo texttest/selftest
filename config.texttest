@@ -258,13 +258,11 @@ link_test_path:Xvfb
 # Put method interceptions in here
 link_test_path:interceptor.py
 # performance testing
-link_test_path:time
 link_test_path:sgehostfile
 link_test_path:sge
 # GTK configuration
 link_test_path:gtk_config
 
-collect_traffic:bugcli
 collect_traffic:rsh
 collect_traffic:interpretcore.py
 collect_traffic:cvs
@@ -273,12 +271,7 @@ collect_traffic:java
 collect_traffic:tkdiff
 collect_traffic:xterm
 collect_traffic:emacs
-
-[collect_traffic_environment]
-time:TEXTTEST_HOME
-time:TEXTTEST_TMP
-time:TIME_TO_BUSYWAIT
-[end]
+collect_traffic:time
 
 # Tell it that we want to track what files are created
 create_catalogues:true
