@@ -6,13 +6,6 @@
 config_module:carmenqueuesystem
 queue_system_module:SGE
 
-# Settings for Carmen
-default_checkout:master
-[checkout_location]
-default:~/work/${TEXTTEST_CHECKOUT_NAME}/Testing/TextTest
-nightjob:/carm/proj/texttest/release/current
-[end]
-
 default_major_release:none
 
 # ---------------- Values needed to run in batch mode at Carmen -------------------
@@ -78,8 +71,8 @@ run_this_version:x86_64_solaris
 run_this_version:powerpc
 run_this_version:sparc
 version_to_reconnect_to:unix.i386_linux
-version_to_reconnect_to:unix.sparc
-version_to_reconnect_to:unix.powerpc
+version_to_reconnect_to:unix.x86_64_solaris
+version_to_reconnect_to:windows
 request_lsf_queue:waiting
 [end]
 
@@ -98,6 +91,8 @@ unsaveable_version:i386_linux
 
 # Path to the executable
 executable:${TEXTTEST_CHECKOUT}/bin/texttest.py
+
+checkout_location:${TEXTTEST_HOME}/../source
 
 [run_dependent_text]
 output*:TextTest will write diagnostics
@@ -337,3 +332,10 @@ extra_version:carmen
 
 # Path to the executable - override this so we run our shell script
 executable:${TEXTTEST_CHECKOUT}/bin/texttest
+
+# Settings for Carmen
+default_checkout:master
+[checkout_location]
+default:~/work/${TEXTTEST_CHECKOUT_NAME}/Testing/TextTest
+nightjob:/carm/proj/texttest/release/current
+[end]
