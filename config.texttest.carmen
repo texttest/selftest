@@ -70,9 +70,7 @@ traffic:(env DISPLAY=)[^ ]*{REPLACE \1<display>}
 [end]
 
 [unordered_text]
-# APC tests really run both master and slave, hence hack...
-dynamic_gui_log:just_a_copy coloured yellow
-dynamic_gui_log:umlauf_spiel coloured yellow
+traffic:CMD:rsh.*xterm{LINES 2}
 [end]
 
 # We only do two passes, so we can't actually find the base_version queuesystem unless
