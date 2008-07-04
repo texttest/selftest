@@ -1,7 +1,7 @@
 Enabling entry completion, using matching 1
 
 Waiting for application event 'completion of test actions' to occur.
-Top Window title is TextTest dynamic GUI : testing HELLO (started at 02Jul10:54:29)
+Top Window title is TextTest dynamic GUI : testing HELLO (started at 04Jul13:09:42)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -20,6 +20,7 @@ Viewing action with title '_Save', stock id ''gtk-save'', accelerator ''<control
 Viewing action with title 'Save _As...', stock id ''gtk-save'', accelerator ''<control><alt>s'' (greyed out)
 Viewing action with title 'S_ave Selection...', stock id ''gtk-save-as'', accelerator ''<control><shift>s'' (greyed out)
 Viewing action with title '_Kill', stock id ''gtk-stop'', accelerator ''<control>Delete'' (greyed out)
+Viewing action with title 'Annotate', stock id ''gtk-index''
 Viewing action with title '_Mark', accelerator ''<control><shift>m'' (greyed out)
 Viewing action with title '_Unmark', accelerator ''<control><shift>u'' (greyed out)
 Viewing action with title 'Recompute Status', stock id ''gtk-refresh'', accelerator ''F5'' (greyed out)
@@ -44,6 +45,8 @@ UI layout:
     </menu>
     <menu name="viewmenu" action="viewmenu">
       <placeholder name="FirstInViewMenu">
+        <menuitem name="Annotate" action="Annotate"/>
+        <separator/>
       </placeholder>
       <menuitem name="Toolbar" action="Toolbar"/>
       <menuitem name="Shortcut bar" action="Shortcut bar"/>
@@ -110,7 +113,7 @@ Tabs showing : Status
 
 Test progress:
 
-Changing GUI status to: 'TextTest started at 02Jul10:54:29.'
+Changing GUI status to: 'TextTest started at 04Jul13:09:42.'
 
 Test progress:
 --> Not started : 1, colour 'white', font 'bold'', visible=True
@@ -129,7 +132,7 @@ Test progress:
 --> Not started : 0, colour 'white', font ''', visible=True
 --> Running : 1, colour 'yellow', font 'bold'', visible=True
 
-Progress bar set to fraction 1.0, text 'All 1 tests completed at 02Jul10:54:30'
+Progress bar set to fraction 1.0, text 'All 1 tests completed at 04Jul13:09:43'
 
 Redrawing test BothDiff coloured red
 (Second column 'errors different(+)' coloured red)
@@ -171,8 +174,8 @@ Expected application event 'completion of test actions' occurred, proceeding.
 
 'select file' event created with arguments 'output.hello'
 Starting graphical difference comparison using 'tkdiff':
--- original file : /carm/proj/texttest-tmp/geoff/texttest.02Jul105414.6994/texttest/TestSelf/ChangeTestResults/GUI/ViewAndSave/texttesttmp/dynamic_gui.02Jul105429.18833/hello/BothDiff/framework_tmp/output.helloorigcmp
---  current file : /carm/proj/texttest-tmp/geoff/texttest.02Jul105414.6994/texttest/TestSelf/ChangeTestResults/GUI/ViewAndSave/texttesttmp/dynamic_gui.02Jul105429.18833/hello/BothDiff/framework_tmp/output.hellocmp
+-- original file : /carm/proj/texttest-tmp/geoff/texttest.04Jul130925.5301/texttest/TestSelf/ChangeTestResults/GUI/ViewAndSave/texttesttmp/dynamic_gui.04Jul130942.5005/hello/BothDiff/framework_tmp/output.helloorigcmp
+--  current file : /carm/proj/texttest-tmp/geoff/texttest.04Jul130925.5301/texttest/TestSelf/ChangeTestResults/GUI/ViewAndSave/texttesttmp/dynamic_gui.04Jul130942.5005/hello/BothDiff/framework_tmp/output.hellocmp
 
 Changing GUI status to: 'Started "tkdiff output.helloorigcmp output.hellocmp" in background (from test BothDiff).'
 

@@ -1,7 +1,7 @@
 Enabling entry completion, using matching 1
 
 Waiting for application event 'completion of test actions' to occur.
-Top Window title is TextTest dynamic GUI : testing HELLO,HELLO.10.2,HELLO.10.4 (started at 02Jul10:54:33)
+Top Window title is TextTest dynamic GUI : testing HELLO,HELLO.10.2,HELLO.10.4 (started at 04Jul13:09:38)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -20,6 +20,7 @@ Viewing action with title '_Save', stock id ''gtk-save'', accelerator ''<control
 Viewing action with title 'Save _As...', stock id ''gtk-save'', accelerator ''<control><alt>s'' (greyed out)
 Viewing action with title 'S_ave Selection...', stock id ''gtk-save-as'', accelerator ''<control><shift>s'' (greyed out)
 Viewing action with title '_Kill', stock id ''gtk-stop'', accelerator ''<control>Delete'' (greyed out)
+Viewing action with title 'Annotate', stock id ''gtk-index''
 Viewing action with title '_Mark', accelerator ''<control><shift>m'' (greyed out)
 Viewing action with title '_Unmark', accelerator ''<control><shift>u'' (greyed out)
 Viewing action with title 'Recompute Status', stock id ''gtk-refresh'', accelerator ''F5'' (greyed out)
@@ -44,6 +45,8 @@ UI layout:
     </menu>
     <menu name="viewmenu" action="viewmenu">
       <placeholder name="FirstInViewMenu">
+        <menuitem name="Annotate" action="Annotate"/>
+        <separator/>
       </placeholder>
       <menuitem name="Toolbar" action="Toolbar"/>
       <menuitem name="Shortcut bar" action="Shortcut bar"/>
@@ -110,7 +113,7 @@ Tabs showing : Status
 
 Test progress:
 
-Changing GUI status to: 'TextTest started at 02Jul10:54:34.'
+Changing GUI status to: 'TextTest started at 04Jul13:09:39.'
 
 Test progress:
 --> Not started : 1, colour 'white', font 'bold'', visible=True
@@ -183,7 +186,7 @@ Test progress:
 ------> output different : 2, colour 'red', font 'bold'', visible=True
 --------> Group 1 : 2, colour 'red', font 'bold'', visible=True
 
-Progress bar set to fraction 1.0, text 'All 3 tests completed at 02Jul10:54:34'
+Progress bar set to fraction 1.0, text 'All 3 tests completed at 04Jul13:09:40'
 
 Redrawing test OutDiff coloured red
 (Second column 'output different' coloured red)
@@ -447,8 +450,8 @@ Setting sensitivity of action 'View Raw Differences' to True
 
 'view raw differences' event created with arguments ''
 Starting graphical difference comparison using 'tkdiff':
--- original file : /carm/proj/texttest-tmp/geoff/texttest.02Jul105414.6994/texttest/TestSelf/ChangeTestResults/GUI/RecomputeStatus/SaveVersionNewFiles/TargetApp/OutDiff/output.hello.10
---  current file : /carm/proj/texttest-tmp/geoff/texttest.02Jul105414.6994/texttest/TestSelf/ChangeTestResults/GUI/RecomputeStatus/SaveVersionNewFiles/texttesttmp/console.02Jul105433.15777/hello.10.4/OutDiff/output.hello
+-- original file : /carm/proj/texttest-tmp/geoff/texttest.04Jul130925.5301/texttest/TestSelf/ChangeTestResults/GUI/RecomputeStatus/SaveVersionNewFiles/TargetApp/OutDiff/output.hello.10
+--  current file : /carm/proj/texttest-tmp/geoff/texttest.04Jul130925.5301/texttest/TestSelf/ChangeTestResults/GUI/RecomputeStatus/SaveVersionNewFiles/texttesttmp/console.04Jul130938.13838/hello.10.4/OutDiff/output.hello
 
 Changing GUI status to: 'Started "tkdiff output.hello.10 output.hello" in background (from test OutDiff version 10.4).'
 Setting sensitivity of action 'View File' to False
