@@ -4,12 +4,12 @@ Waiting for application event 'all tests to be read' to occur.
 Adding entry completion '<default>' ...
 Adding entry completion '/carm/proj/texttest/selftest_data' ...
 Adding entry completion '1' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.07Jul134629.13374/texttest.carmen/carmen/studio/RecordMacro/TargetApp/Diagnostics/log4py.conf' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.07Jul134629.13374/texttest.carmen/carmen/studio/RecordMacro/TargetApp/Diagnostics' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.09Jul092055.18155/texttest.carmen/carmen/studio/RecordMacro/TargetApp/Diagnostics/log4py.conf' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.09Jul092055.18155/texttest.carmen/carmen/studio/RecordMacro/TargetApp/Diagnostics' ...
 Adding entry completion 'short' ...
 Adding entry completion 'normal' ...
 Adding entry completion 'idle' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.07Jul134629.13374/texttest.carmen/carmen/studio/RecordMacro/texttesttmp' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.09Jul092055.18155/texttest.carmen/carmen/studio/RecordMacro/texttesttmp' ...
 Top Window title is TextTest static GUI : management of tests for Studio
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
@@ -26,7 +26,8 @@ Viewing action with title '_Copy', stock id ''gtk-copy'', accelerator ''<control
 Viewing action with title '_Cut', stock id ''gtk-cut'', accelerator ''<control>x'' (greyed out)
 Viewing action with title '_Paste', stock id ''gtk-paste'', accelerator ''<control>v'' (greyed out)
 Viewing action with title 'Add Test', stock id ''gtk-add'', accelerator ''<control>n'' (greyed out)
-Viewing action with title 'Add Suite', stock id ''gtk-directory'' (greyed out)
+Viewing action with title 'Add Suite', stock id ''gtk-add'' (greyed out)
+Viewing action with title 'Add Application', stock id ''gtk-add''
 Viewing action with title 'Create _File', stock id ''gtk-new'' (greyed out)
 Viewing action with title 'Enter Failure Information', stock id ''gtk-info'', accelerator ''<control>i'' (greyed out)
 Viewing action with title 'Refresh', stock id ''gtk-refresh'', accelerator ''F5''
@@ -78,6 +79,7 @@ UI layout:
     <menu name="editmenu" action="editmenu">
       <menuitem name="Add Test" action="Add Test"/>
       <menuitem name="Add Suite" action="Add Suite"/>
+      <menuitem name="Add Application" action="Add Application"/>
       <separator/>
       <menuitem name="Cut" action="Cut"/>
       <menuitem name="Copy" action="Copy"/>
@@ -247,11 +249,11 @@ Viewing action with title '_Select', stock id ''gtk-find'', accelerator ''<contr
 Viewing radio button for switch '', options Discard/Refine/Extend'. Default value 0.
 Viewing action with title 'Filter', stock id ''gtk-find'', accelerator ''<control>f''
 
-Changing GUI status to: 'TextTest started at 07Jul13:47:13.'
+Changing GUI status to: 'TextTest started at 09Jul09:21:13.'
 
 Changing GUI status to: 'Reading tests ...'
 
-Changing GUI status to: 'Reading tests completed at 07Jul13:47:14.'
+Changing GUI status to: 'Reading tests completed at 09Jul09:21:14.'
 
 Test Tree description...
 -> TargetApp (gst)
@@ -387,8 +389,6 @@ Viewing entry for option 'Macro to use' (set to '<Record new macro>') (drop-down
 'enter test name =' event created with arguments 'data_unchanged_copy'
 
 'press ok' event created with arguments ''
-Adding entry completion 'output' ...
-Adding entry completion 'data_unchanged_copy' ...
 Adding Test data_unchanged_copy under test suite Studio test-suite lh_v12, placed last in suite
 Not creating options file
 
@@ -428,6 +428,8 @@ Setting sensitivity of action 'Re_connect' to True
 Tabs showing : Test, Selection, Running, Config
 
 Changing GUI status to: 'Added new Studio test-case data_unchanged_copy'
+Adding entry completion 'output' ...
+Adding entry completion 'data_unchanged_copy' ...
 
 'view options for' event created with arguments 'Running'
 
@@ -459,15 +461,15 @@ Viewing action with title 'Record _Use-Case', stock id ''gtk-media-record'', acc
 
 'record use-case' event created with arguments ''
 Adding entry completion 'LBA_MTV' ...
-Starting record run of TextTest with arguments ['-g', '-record', '-a', 'gst', '-c', '/carm/proj/texttest/selftest_data', '-rulecomp', 'LBA_MTV', '-rectraffic', '-count', '1', '-f', '/carm/proj/texttest-tmp/geoff/texttest.07Jul134629.13374/texttest.carmen/carmen/studio/RecordMacro/texttesttmp/static_gui.07Jul134712.13860/dynamic_run1/gui_select', '-fd', '/carm/proj/texttest-tmp/geoff/texttest.07Jul134629.13374/texttest.carmen/carmen/studio/RecordMacro/texttesttmp/static_gui.07Jul134712.13860/temporary_filter_files']
+Starting record run of TextTest with arguments ['-g', '-record', '-a', 'gst', '-c', '/carm/proj/texttest/selftest_data', '-rulecomp', 'LBA_MTV', '-rectraffic', '-count', '1', '-f', '/carm/proj/texttest-tmp/geoff/texttest.09Jul092055.18155/texttest.carmen/carmen/studio/RecordMacro/texttesttmp/static_gui.09Jul092112.28538/dynamic_run1/gui_select', '-fd', '/carm/proj/texttest-tmp/geoff/texttest.09Jul092055.18155/texttest.carmen/carmen/studio/RecordMacro/texttesttmp/static_gui.09Jul092112.28538/temporary_filter_files']
 
 Changing GUI status to: 'Started record session for Studio test-case data_unchanged_copy'
 
 Waiting for application event 'replay2 GUI to be closed' to occur.
-Starting replay run of TextTest with arguments ['-autoreplay', '-o', '', '-a', 'gst', '-c', '/carm/proj/texttest/selftest_data', '-rulecomp', 'LBA_MTV', '-count', '1', '-f', '/carm/proj/texttest-tmp/geoff/texttest.07Jul134629.13374/texttest.carmen/carmen/studio/RecordMacro/texttesttmp/static_gui.07Jul134712.13860/dynamic_run2/gui_select', '-fd', '/carm/proj/texttest-tmp/geoff/texttest.07Jul134629.13374/texttest.carmen/carmen/studio/RecordMacro/texttesttmp/static_gui.07Jul134712.13860/temporary_filter_files']
+Starting replay run of TextTest with arguments ['-autoreplay', '-o', '', '-a', 'gst', '-c', '/carm/proj/texttest/selftest_data', '-rulecomp', 'LBA_MTV', '-count', '1', '-f', '/carm/proj/texttest-tmp/geoff/texttest.09Jul092055.18155/texttest.carmen/carmen/studio/RecordMacro/texttesttmp/static_gui.09Jul092112.28538/dynamic_run2/gui_select', '-fd', '/carm/proj/texttest-tmp/geoff/texttest.09Jul092055.18155/texttest.carmen/carmen/studio/RecordMacro/texttesttmp/static_gui.09Jul092112.28538/temporary_filter_files']
 
 Changing GUI status to: 'Recording completed for Studio test-case data_unchanged_copy. Auto-replay of test now started. Don't submit the test manually!'
-Starting replay2 run of TextTest with arguments ['-autoreplay', '-o', '', '-a', 'gst', '-c', '/carm/proj/texttest/selftest_data', '-rulecomp', 'LBA_MTV', '-count', '1', '-f', '/carm/proj/texttest-tmp/geoff/texttest.07Jul134629.13374/texttest.carmen/carmen/studio/RecordMacro/texttesttmp/static_gui.07Jul134712.13860/dynamic_run3/gui_select', '-fd', '/carm/proj/texttest-tmp/geoff/texttest.07Jul134629.13374/texttest.carmen/carmen/studio/RecordMacro/texttesttmp/static_gui.07Jul134712.13860/temporary_filter_files']
+Starting replay2 run of TextTest with arguments ['-autoreplay', '-o', '', '-a', 'gst', '-c', '/carm/proj/texttest/selftest_data', '-rulecomp', 'LBA_MTV', '-count', '1', '-f', '/carm/proj/texttest-tmp/geoff/texttest.09Jul092055.18155/texttest.carmen/carmen/studio/RecordMacro/texttesttmp/static_gui.09Jul092112.28538/dynamic_run3/gui_select', '-fd', '/carm/proj/texttest-tmp/geoff/texttest.09Jul092055.18155/texttest.carmen/carmen/studio/RecordMacro/texttesttmp/static_gui.09Jul092112.28538/temporary_filter_files']
 
 Changing GUI status to: 'First auto-replay completed for Studio test-case data_unchanged_copy. Second auto-replay now started. Don't submit the test manually!'
 

@@ -8,6 +8,8 @@ queue_system_module:SGE
 
 default_major_release:none
 
+interactive_action_module:cvs
+
 # ---------------- Values needed to run in batch mode at Carmen -------------------
 
 # Machines where we can start Xvfb
@@ -120,6 +122,7 @@ output:batch_recipients{WORD 2}
 output:batch_sender{WORD 2}
 output:[0-9]* and [0-9]* bytes{REPLACE <file sizes>}
 outputrep*:localhost:[0-9]*.0{REPLACE localhost:<pid>.0}
+targetConfig:{INTERNAL writedir}{REPLACE <test write dir>}
 targetReport:{INTERNAL writedir}{REPLACE <test write dir>}
 targetReport:[^ ]*@localhost{REPLACE <username>@localhost}
 targetReport: on .*test-case.*under{WORD -7}
@@ -274,9 +277,6 @@ create_catalogues:true
 # Rescue any leaked Xvfb processes
 catalogue_process_string:Killing Xvfb process
 
-# And here's where to find interactive action overrides...
-interactive_action_module:selftest_gui
-
 # Settings for creation of test cases
 use_case_record_mode:GUI
 
@@ -284,6 +284,7 @@ use_case_record_mode:GUI
 [collate_file]
 targetMem:TargetApp/*/memory.mem*
 targetReport:texttesttmp/*/batchreport*
+targetConfig:TargetApp/config.*
 rootTestSuite:TargetApp/testsuite.*
 level1TestSuite:TargetApp/*/testsuite.*
 level2TestSuite:TargetApp/*/*/testsuite.*

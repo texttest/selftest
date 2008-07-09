@@ -3,9 +3,9 @@ Enabling entry completion, using matching 1
 Waiting for application event 'all tests to be read' to occur.
 Adding entry completion '<default>' ...
 Adding entry completion '1' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.03Jul173340.15292/texttest/GUI/StaticGUI/Miscellaneous/CreateFiles/TargetApp/Diagnostics/log4py.conf' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.03Jul173340.15292/texttest/GUI/StaticGUI/Miscellaneous/CreateFiles/TargetApp/Diagnostics' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.03Jul173340.15292/texttest/GUI/StaticGUI/Miscellaneous/CreateFiles/texttesttmp' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.08Jul173202.19307/texttest/GUI/StaticGUI/Miscellaneous/CreateFiles/TargetApp/Diagnostics/log4py.conf' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.08Jul173202.19307/texttest/GUI/StaticGUI/Miscellaneous/CreateFiles/TargetApp/Diagnostics' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.08Jul173202.19307/texttest/GUI/StaticGUI/Miscellaneous/CreateFiles/texttesttmp' ...
 Top Window title is TextTest static GUI : management of tests for DIP
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
@@ -22,7 +22,8 @@ Viewing action with title '_Copy', stock id ''gtk-copy'', accelerator ''<control
 Viewing action with title '_Cut', stock id ''gtk-cut'', accelerator ''<control>x'' (greyed out)
 Viewing action with title '_Paste', stock id ''gtk-paste'', accelerator ''<control>v'' (greyed out)
 Viewing action with title 'Add Test', stock id ''gtk-add'', accelerator ''<control>n'' (greyed out)
-Viewing action with title 'Add Suite', stock id ''gtk-directory'' (greyed out)
+Viewing action with title 'Add Suite', stock id ''gtk-add'' (greyed out)
+Viewing action with title 'Add Application', stock id ''gtk-add''
 Viewing action with title 'Create _File', stock id ''gtk-new'' (greyed out)
 Viewing action with title 'Enter Failure Information', stock id ''gtk-info'', accelerator ''<control>i'' (greyed out)
 Viewing action with title 'Refresh', stock id ''gtk-refresh'', accelerator ''F5''
@@ -65,6 +66,7 @@ UI layout:
     <menu name="editmenu" action="editmenu">
       <menuitem name="Add Test" action="Add Test"/>
       <menuitem name="Add Suite" action="Add Suite"/>
+      <menuitem name="Add Application" action="Add Application"/>
       <separator/>
       <menuitem name="Cut" action="Cut"/>
       <menuitem name="Copy" action="Copy"/>
@@ -188,11 +190,11 @@ Viewing action with title '_Select', stock id ''gtk-find'', accelerator ''<contr
 Viewing radio button for switch '', options Discard/Refine/Extend'. Default value 0.
 Viewing action with title 'Filter', stock id ''gtk-find'', accelerator ''<control>f''
 
-Changing GUI status to: 'TextTest started at 03Jul17:34:15.'
+Changing GUI status to: 'TextTest started at 08Jul17:32:18.'
 
 Changing GUI status to: 'Reading tests ...'
 
-Changing GUI status to: 'Reading tests completed at 03Jul17:34:15.'
+Changing GUI status to: 'Reading tests completed at 08Jul17:32:19.'
 
 Test Tree description...
 -> TargetApp (dip)
@@ -273,9 +275,8 @@ Viewing entry for option 'Version identifier to use'
 ---------------------------------------
 
 'press ok' event created with arguments ''
-Adding entry completion 'output' ...
 Creating new empty file...
-Viewing file /carm/proj/texttest-tmp/geoff/texttest.03Jul173340.15292/texttest/GUI/StaticGUI/Miscellaneous/CreateFiles/TargetApp/npstIII/environment.dip using 'emacs', refresh set to False
+Viewing file /carm/proj/texttest-tmp/geoff/texttest.08Jul173202.19307/texttest/GUI/StaticGUI/Miscellaneous/CreateFiles/TargetApp/npstIII/environment.dip using 'emacs', refresh set to False
 
 Changing GUI status to: 'Started "emacs environment.dip" in background (from test npstIII).'
 Setting sensitivity of action 'Remove...' to True
@@ -284,6 +285,7 @@ Setting sensitivity of action 'Create _File' to False
 Setting file-view title to 'npstIII'
 Adding file environment.dip under heading 'Definition Files', coloured grey90
 Adding file testsuite.dip under heading 'Definition Files', coloured grey90
+Adding entry completion 'output' ...
 
 'set test selection to' event created with arguments 'Game47'
 
@@ -315,9 +317,8 @@ Viewing entry for option 'Version identifier to use'
 'enter version identifier to use =' event created with arguments 'ver'
 
 'press ok' event created with arguments ''
-Adding entry completion 'ver' ...
-Creating new file, copying /carm/proj/texttest-tmp/geoff/texttest.03Jul173340.15292/texttest/GUI/StaticGUI/Miscellaneous/CreateFiles/TargetApp/npstIII/environment.dip
-Viewing file /carm/proj/texttest-tmp/geoff/texttest.03Jul173340.15292/texttest/GUI/StaticGUI/Miscellaneous/CreateFiles/TargetApp/npstIII/Game47/environment.dip.ver using 'emacs', refresh set to False
+Creating new file, copying /carm/proj/texttest-tmp/geoff/texttest.08Jul173202.19307/texttest/GUI/StaticGUI/Miscellaneous/CreateFiles/TargetApp/npstIII/environment.dip
+Viewing file /carm/proj/texttest-tmp/geoff/texttest.08Jul173202.19307/texttest/GUI/StaticGUI/Miscellaneous/CreateFiles/TargetApp/npstIII/Game47/environment.dip.ver using 'emacs', refresh set to False
 
 Changing GUI status to: 'Started "emacs environment.dip.ver" in background (from test Game47).'
 Setting sensitivity of action 'Remove...' to True
@@ -326,6 +327,7 @@ Setting sensitivity of action 'Create _File' to False
 Setting file-view title to 'Game47'
 Adding file environment.dip.ver under heading 'Definition Files', coloured grey90
 Adding file testsuite.dip under heading 'Definition Files', coloured grey90
+Adding entry completion 'ver' ...
 
 'set test selection to' event created with arguments 'S01'
 
@@ -370,7 +372,7 @@ Viewing entry for option 'Version identifier to use' (set to 'ver')
 
 'press ok' event created with arguments ''
 Creating new empty file...
-Viewing file /carm/proj/texttest-tmp/geoff/texttest.03Jul173340.15292/texttest/GUI/StaticGUI/Miscellaneous/CreateFiles/TargetApp/npstIII/Game47/S01/options.dip.ver using 'emacs', refresh set to False
+Viewing file /carm/proj/texttest-tmp/geoff/texttest.08Jul173202.19307/texttest/GUI/StaticGUI/Miscellaneous/CreateFiles/TargetApp/npstIII/Game47/S01/options.dip.ver using 'emacs', refresh set to False
 
 Changing GUI status to: 'Started "emacs options.dip.ver" in background (from test S01).'
 Setting sensitivity of action 'Remove...' to True
@@ -396,8 +398,8 @@ Viewing entry for option 'Version identifier to use' (set to 'ver')
 ---------------------------------------
 
 'press ok' event created with arguments ''
-Creating new file, copying /carm/proj/texttest-tmp/geoff/texttest.03Jul173340.15292/texttest/GUI/StaticGUI/Miscellaneous/CreateFiles/TargetApp/npstIII/Game47/S01/output.dip
-Viewing file /carm/proj/texttest-tmp/geoff/texttest.03Jul173340.15292/texttest/GUI/StaticGUI/Miscellaneous/CreateFiles/TargetApp/npstIII/Game47/S01/output.dip.ver using 'emacs', refresh set to False
+Creating new file, copying /carm/proj/texttest-tmp/geoff/texttest.08Jul173202.19307/texttest/GUI/StaticGUI/Miscellaneous/CreateFiles/TargetApp/npstIII/Game47/S01/output.dip
+Viewing file /carm/proj/texttest-tmp/geoff/texttest.08Jul173202.19307/texttest/GUI/StaticGUI/Miscellaneous/CreateFiles/TargetApp/npstIII/Game47/S01/output.dip.ver using 'emacs', refresh set to False
 
 Changing GUI status to: 'Started "emacs output.dip.ver" in background (from test S01).'
 Setting sensitivity of action 'Remove...' to True

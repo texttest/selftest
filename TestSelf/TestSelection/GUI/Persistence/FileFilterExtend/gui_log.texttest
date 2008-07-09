@@ -3,9 +3,9 @@ Enabling entry completion, using matching 1
 Waiting for application event 'all tests to be read' to occur.
 Adding entry completion '<default>' ...
 Adding entry completion '1' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.02Jul105414.6994/texttest/TestSelf/TestSelection/GUI/Persistence/FileFilterExtend/TargetApp/Diagnostics/log4py.conf' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.02Jul105414.6994/texttest/TestSelf/TestSelection/GUI/Persistence/FileFilterExtend/TargetApp/Diagnostics' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.02Jul105414.6994/texttest/TestSelf/TestSelection/GUI/Persistence/FileFilterExtend/texttesttmp' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.08Jul173527.20760/texttest/TestSelf/TestSelection/GUI/Persistence/FileFilterExtend/TargetApp/Diagnostics/log4py.conf' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.08Jul173527.20760/texttest/TestSelf/TestSelection/GUI/Persistence/FileFilterExtend/TargetApp/Diagnostics' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.08Jul173527.20760/texttest/TestSelf/TestSelection/GUI/Persistence/FileFilterExtend/texttesttmp' ...
 Top Window title is TextTest static GUI : management of tests for HELLO
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
@@ -22,7 +22,8 @@ Viewing action with title '_Copy', stock id ''gtk-copy'', accelerator ''<control
 Viewing action with title '_Cut', stock id ''gtk-cut'', accelerator ''<control>x'' (greyed out)
 Viewing action with title '_Paste', stock id ''gtk-paste'', accelerator ''<control>v'' (greyed out)
 Viewing action with title 'Add Test', stock id ''gtk-add'', accelerator ''<control>n'' (greyed out)
-Viewing action with title 'Add Suite', stock id ''gtk-directory'' (greyed out)
+Viewing action with title 'Add Suite', stock id ''gtk-add'' (greyed out)
+Viewing action with title 'Add Application', stock id ''gtk-add''
 Viewing action with title 'Create _File', stock id ''gtk-new'' (greyed out)
 Viewing action with title 'Enter Failure Information', stock id ''gtk-info'', accelerator ''<control>i'' (greyed out)
 Viewing action with title 'Refresh', stock id ''gtk-refresh'', accelerator ''F5''
@@ -65,6 +66,7 @@ UI layout:
     <menu name="editmenu" action="editmenu">
       <menuitem name="Add Test" action="Add Test"/>
       <menuitem name="Add Suite" action="Add Suite"/>
+      <menuitem name="Add Application" action="Add Application"/>
       <separator/>
       <menuitem name="Cut" action="Cut"/>
       <menuitem name="Copy" action="Copy"/>
@@ -188,11 +190,11 @@ Viewing action with title '_Select', stock id ''gtk-find'', accelerator ''<contr
 Viewing radio button for switch '', options Discard/Refine/Extend'. Default value 0.
 Viewing action with title 'Filter', stock id ''gtk-find'', accelerator ''<control>f''
 
-Changing GUI status to: 'TextTest started at 02Jul10:54:34.'
+Changing GUI status to: 'TextTest started at 08Jul17:35:47.'
 
 Changing GUI status to: 'Reading tests ...'
 
-Changing GUI status to: 'Reading tests completed at 02Jul10:54:34.'
+Changing GUI status to: 'Reading tests completed at 08Jul17:35:48.'
 
 Test Tree description...
 -> TargetApp (hello)
@@ -280,7 +282,7 @@ Tabs showing : Selection, Running, Config
 'save selected tests in file' event created with arguments ''
 ---------- Dialog 'Save selected tests in file' ----------
 Default action is labelled 'gtk-save'
-Viewing filechooser for option 'enter filter-file name =' (choosing from directories [('temporary_filter_files', '/carm/proj/texttest-tmp/geoff/texttest.02Jul105414.6994/texttest/TestSelf/TestSelection/GUI/Persistence/FileFilterExtend/texttesttmp/static_gui.02Jul105433.21976/temporary_filter_files'), ('filter_files', '/carm/proj/texttest-tmp/geoff/texttest.02Jul105414.6994/texttest/TestSelf/TestSelection/GUI/Persistence/FileFilterExtend/TargetApp/filter_files')])
+Viewing filechooser for option 'enter filter-file name =' (choosing from directories [('temporary_filter_files', '/carm/proj/texttest-tmp/geoff/texttest.08Jul173527.20760/texttest/TestSelf/TestSelection/GUI/Persistence/FileFilterExtend/texttesttmp/static_gui.08Jul173546.21182/temporary_filter_files'), ('filter_files', '/carm/proj/texttest-tmp/geoff/texttest.08Jul173527.20760/texttest/TestSelf/TestSelection/GUI/Persistence/FileFilterExtend/TargetApp/filter_files')])
 Viewing radio button for switch 'Save', options _List of selected tests/C_riteria entered in the Selection tab
 (Might not match current selection, if it has been modified)'. Default value 0.
 ----------------------------------------------------------
@@ -290,9 +292,9 @@ Viewing radio button for switch 'Save', options _List of selected tests/C_riteri
 'enter filter-file name =' event created with arguments 'filter1'
 
 'press save' event created with arguments ''
-Adding entry completion 'output' ...
 
-Changing GUI status to: 'Saved 2 tests in file '/carm/proj/texttest-tmp/geoff/texttest.02Jul105414.6994/texttest/TestSelf/TestSelection/GUI/Persistence/FileFilterExtend/TargetApp/filter_files/filter1'.'
+Changing GUI status to: 'Saved 2 tests in file '/carm/proj/texttest-tmp/geoff/texttest.08Jul173527.20760/texttest/TestSelf/TestSelection/GUI/Persistence/FileFilterExtend/TargetApp/filter_files/filter1'.'
+Adding entry completion 'output' ...
 
 'set test selection to' event created with arguments 'Three'
 
@@ -359,7 +361,7 @@ Tabs showing : Selection, Running, Config
 'save selected tests in file' event created with arguments ''
 ---------- Dialog 'Save selected tests in file' ----------
 Default action is labelled 'gtk-save'
-Viewing filechooser for option 'enter filter-file name =' (choosing from directories [('temporary_filter_files', '/carm/proj/texttest-tmp/geoff/texttest.02Jul105414.6994/texttest/TestSelf/TestSelection/GUI/Persistence/FileFilterExtend/texttesttmp/static_gui.02Jul105433.21976/temporary_filter_files'), ('filter_files', '/carm/proj/texttest-tmp/geoff/texttest.02Jul105414.6994/texttest/TestSelf/TestSelection/GUI/Persistence/FileFilterExtend/TargetApp/filter_files')])
+Viewing filechooser for option 'enter filter-file name =' (choosing from directories [('temporary_filter_files', '/carm/proj/texttest-tmp/geoff/texttest.08Jul173527.20760/texttest/TestSelf/TestSelection/GUI/Persistence/FileFilterExtend/texttesttmp/static_gui.08Jul173546.21182/temporary_filter_files'), ('filter_files', '/carm/proj/texttest-tmp/geoff/texttest.08Jul173527.20760/texttest/TestSelf/TestSelection/GUI/Persistence/FileFilterExtend/TargetApp/filter_files')])
 Viewing radio button for switch 'Save', options _List of selected tests/C_riteria entered in the Selection tab
 (Might not match current selection, if it has been modified)'. Default value 0.
 ----------------------------------------------------------
@@ -370,12 +372,12 @@ Viewing radio button for switch 'Save', options _List of selected tests/C_riteri
 
 'press save' event created with arguments ''
 
-Changing GUI status to: 'Saved 2 tests in file '/carm/proj/texttest-tmp/geoff/texttest.02Jul105414.6994/texttest/TestSelf/TestSelection/GUI/Persistence/FileFilterExtend/TargetApp/filter_files/filter2'.'
+Changing GUI status to: 'Saved 2 tests in file '/carm/proj/texttest-tmp/geoff/texttest.08Jul173527.20760/texttest/TestSelf/TestSelection/GUI/Persistence/FileFilterExtend/TargetApp/filter_files/filter2'.'
 
 'load test selection from file' event created with arguments ''
 ---------- Dialog 'Load test selection from file' ----------
 Default action is labelled 'texttest-stock-load'
-Viewing filechooser for option 'select filter-file' (choosing from directories [('temporary_filter_files', '/carm/proj/texttest-tmp/geoff/texttest.02Jul105414.6994/texttest/TestSelf/TestSelection/GUI/Persistence/FileFilterExtend/texttesttmp/static_gui.02Jul105433.21976/temporary_filter_files'), ('filter_files', '/carm/proj/texttest-tmp/geoff/texttest.02Jul105414.6994/texttest/TestSelf/TestSelection/GUI/Persistence/FileFilterExtend/TargetApp/filter_files')])
+Viewing filechooser for option 'select filter-file' (choosing from directories [('temporary_filter_files', '/carm/proj/texttest-tmp/geoff/texttest.08Jul173527.20760/texttest/TestSelf/TestSelection/GUI/Persistence/FileFilterExtend/texttesttmp/static_gui.08Jul173546.21182/temporary_filter_files'), ('filter_files', '/carm/proj/texttest-tmp/geoff/texttest.08Jul173527.20760/texttest/TestSelf/TestSelection/GUI/Persistence/FileFilterExtend/TargetApp/filter_files')])
 ------------------------------------------------------------
 
 'select filter-file' event created with arguments 'filter1'
@@ -383,10 +385,10 @@ Viewing filechooser for option 'select filter-file' (choosing from directories [
 'press load' event created with arguments ''
 
 Changing GUI status to: 'Loading test selection ...'
-Loaded 2 tests from /carm/proj/texttest-tmp/geoff/texttest.02Jul105414.6994/texttest/TestSelf/TestSelection/GUI/Persistence/FileFilterExtend/TargetApp/filter_files/filter1
+Loaded 2 tests from /carm/proj/texttest-tmp/geoff/texttest.08Jul173527.20760/texttest/TestSelf/TestSelection/GUI/Persistence/FileFilterExtend/TargetApp/filter_files/filter1
 Marking 2 tests as selected
 
-Changing GUI status to: 'Loaded test selection from file '/carm/proj/texttest-tmp/geoff/texttest.02Jul105414.6994/texttest/TestSelf/TestSelection/GUI/Persistence/FileFilterExtend/TargetApp/filter_files/filter1'.'
+Changing GUI status to: 'Loaded test selection from file '/carm/proj/texttest-tmp/geoff/texttest.08Jul173527.20760/texttest/TestSelf/TestSelection/GUI/Persistence/FileFilterExtend/TargetApp/filter_files/filter1'.'
 
 'choose extend for current selection' event created with arguments ''
 
@@ -397,7 +399,7 @@ Changing GUI status to: 'Loaded test selection from file '/carm/proj/texttest-tm
 'open selected file' event created with arguments ''
 
 'select indicated tests' event created with arguments ''
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.02Jul105414.6994/texttest/TestSelf/TestSelection/GUI/Persistence/FileFilterExtend/TargetApp/filter_files/filter2' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.08Jul173527.20760/texttest/TestSelf/TestSelection/GUI/Persistence/FileFilterExtend/TargetApp/filter_files/filter2' ...
 
 Changing GUI status to: 'Selecting tests ...'
 Selected 4 out of a possible 4
@@ -410,7 +412,7 @@ Changing GUI status to: 'Selected 4 tests.'
 'save selected tests in file' event created with arguments ''
 ---------- Dialog 'Save selected tests in file' ----------
 Default action is labelled 'gtk-save'
-Viewing filechooser for option 'enter filter-file name =' (choosing from directories [('temporary_filter_files', '/carm/proj/texttest-tmp/geoff/texttest.02Jul105414.6994/texttest/TestSelf/TestSelection/GUI/Persistence/FileFilterExtend/texttesttmp/static_gui.02Jul105433.21976/temporary_filter_files'), ('filter_files', '/carm/proj/texttest-tmp/geoff/texttest.02Jul105414.6994/texttest/TestSelf/TestSelection/GUI/Persistence/FileFilterExtend/TargetApp/filter_files')])
+Viewing filechooser for option 'enter filter-file name =' (choosing from directories [('temporary_filter_files', '/carm/proj/texttest-tmp/geoff/texttest.08Jul173527.20760/texttest/TestSelf/TestSelection/GUI/Persistence/FileFilterExtend/texttesttmp/static_gui.08Jul173546.21182/temporary_filter_files'), ('filter_files', '/carm/proj/texttest-tmp/geoff/texttest.08Jul173527.20760/texttest/TestSelf/TestSelection/GUI/Persistence/FileFilterExtend/TargetApp/filter_files')])
 Viewing radio button for switch 'Save', options _List of selected tests/C_riteria entered in the Selection tab
 (Might not match current selection, if it has been modified)'. Default value 0.
 ----------------------------------------------------------
@@ -421,7 +423,7 @@ Viewing radio button for switch 'Save', options _List of selected tests/C_riteri
 
 'press save' event created with arguments ''
 
-Changing GUI status to: 'Saved 4 tests in file '/carm/proj/texttest-tmp/geoff/texttest.02Jul105414.6994/texttest/TestSelf/TestSelection/GUI/Persistence/FileFilterExtend/TargetApp/filter_files/All_tests'.'
+Changing GUI status to: 'Saved 4 tests in file '/carm/proj/texttest-tmp/geoff/texttest.08Jul173527.20760/texttest/TestSelf/TestSelection/GUI/Persistence/FileFilterExtend/TargetApp/filter_files/All_tests'.'
 
 'quit' event created with arguments ''
 

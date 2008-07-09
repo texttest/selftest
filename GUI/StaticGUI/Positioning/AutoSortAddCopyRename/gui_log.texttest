@@ -4,9 +4,9 @@ Waiting for application event 'all tests to be read' to occur.
 Initially sorting tests in alphabetical order.
 Adding entry completion '<default>' ...
 Adding entry completion '1' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.03Jul173340.15292/texttest/GUI/StaticGUI/Positioning/AutoSortAddCopyRename/TargetApp/Diagnostics/log4py.conf' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.03Jul173340.15292/texttest/GUI/StaticGUI/Positioning/AutoSortAddCopyRename/TargetApp/Diagnostics' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.03Jul173340.15292/texttest/GUI/StaticGUI/Positioning/AutoSortAddCopyRename/texttesttmp' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.08Jul173202.19307/texttest/GUI/StaticGUI/Positioning/AutoSortAddCopyRename/TargetApp/Diagnostics/log4py.conf' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.08Jul173202.19307/texttest/GUI/StaticGUI/Positioning/AutoSortAddCopyRename/TargetApp/Diagnostics' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.08Jul173202.19307/texttest/GUI/StaticGUI/Positioning/AutoSortAddCopyRename/texttesttmp' ...
 Top Window title is TextTest static GUI : management of tests for DIP
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
@@ -23,7 +23,8 @@ Viewing action with title '_Copy', stock id ''gtk-copy'', accelerator ''<control
 Viewing action with title '_Cut', stock id ''gtk-cut'', accelerator ''<control>x'' (greyed out)
 Viewing action with title '_Paste', stock id ''gtk-paste'', accelerator ''<control>v'' (greyed out)
 Viewing action with title 'Add Test', stock id ''gtk-add'', accelerator ''<control>n'' (greyed out)
-Viewing action with title 'Add Suite', stock id ''gtk-directory'' (greyed out)
+Viewing action with title 'Add Suite', stock id ''gtk-add'' (greyed out)
+Viewing action with title 'Add Application', stock id ''gtk-add''
 Viewing action with title 'Create _File', stock id ''gtk-new'' (greyed out)
 Viewing action with title 'Enter Failure Information', stock id ''gtk-info'', accelerator ''<control>i'' (greyed out)
 Viewing action with title 'Refresh', stock id ''gtk-refresh'', accelerator ''F5''
@@ -66,6 +67,7 @@ UI layout:
     <menu name="editmenu" action="editmenu">
       <menuitem name="Add Test" action="Add Test"/>
       <menuitem name="Add Suite" action="Add Suite"/>
+      <menuitem name="Add Application" action="Add Application"/>
       <separator/>
       <menuitem name="Cut" action="Cut"/>
       <menuitem name="Copy" action="Copy"/>
@@ -189,11 +191,11 @@ Viewing action with title '_Select', stock id ''gtk-find'', accelerator ''<contr
 Viewing radio button for switch '', options Discard/Refine/Extend'. Default value 0.
 Viewing action with title 'Filter', stock id ''gtk-find'', accelerator ''<control>f''
 
-Changing GUI status to: 'TextTest started at 03Jul17:34:16.'
+Changing GUI status to: 'TextTest started at 08Jul17:32:19.'
 
 Changing GUI status to: 'Reading tests ...'
 
-Changing GUI status to: 'Reading tests completed at 03Jul17:34:16.'
+Changing GUI status to: 'Reading tests completed at 08Jul17:32:19.'
 
 Test Tree description...
 -> TargetApp (dip)
@@ -343,8 +345,6 @@ Viewing entry for option '\nNew description' (set to 'Copy of A05')
 'enter new description =' event created with arguments 'Copy of A04'
 
 'press ok' event created with arguments ''
-Adding entry completion 'A04_copy' ...
-Adding entry completion 'Copy of A04' ...
 
 Test Tree description...
 -> TargetApp (dip)
@@ -389,6 +389,8 @@ Copy of A04
 --------------------------------------
 
 Changing GUI status to: 'Renamed test A05_copy to A04_copy and changed description.'
+Adding entry completion 'A04_copy' ...
+Adding entry completion 'Copy of A04' ...
 
 'set test selection to' event created with arguments 'S04'
 
@@ -411,7 +413,6 @@ Viewing entry for option '\nNew description'
 'enter new name =' event created with arguments 'S01.87'
 
 'press ok' event created with arguments ''
-Adding entry completion 'S01.87' ...
 
 Test Tree description...
 -> TargetApp (dip)
@@ -451,6 +452,7 @@ Test Tree description...
 ->       S01
 
 Changing GUI status to: 'Renamed test S04 to S01.87.'
+Adding entry completion 'S01.87' ...
 
 'set test selection to' event created with arguments 'Game9952'
 
@@ -500,9 +502,6 @@ Viewing entry for option 'Command line options'
 'enter test description =' event created with arguments 'Correctly ordered?'
 
 'press ok' event created with arguments ''
-Adding entry completion 'Game9952' ...
-Adding entry completion 'B01' ...
-Adding entry completion 'Correctly ordered?' ...
 Adding Test B01 under test suite DIP test-suite Game9952, placed last in suite
 Not creating options file
 
@@ -566,6 +565,8 @@ Setting sensitivity of action 'Re_connect' to True
 Tabs showing : Test, Selection, Running, Config
 
 Changing GUI status to: 'Added new DIP test-case B01'
+Adding entry completion 'B01' ...
+Adding entry completion 'Correctly ordered?' ...
 
 'rename selected test' event created with arguments ''
 ---------- Dialog 'Rename selected test' ----------
@@ -577,7 +578,6 @@ Viewing entry for option '\nNew description' (set to 'Correctly ordered?')
 'enter new name =' event created with arguments 'S06'
 
 'press ok' event created with arguments ''
-Adding entry completion 'S06' ...
 
 Test Tree description...
 -> TargetApp (dip)
@@ -619,6 +619,7 @@ Test Tree description...
 ->       S01
 
 Changing GUI status to: 'Renamed test B01 to S06.'
+Adding entry completion 'S06' ...
 
 'quit' event created with arguments ''
 
