@@ -1,18 +1,16 @@
 Enabling entry completion, using matching 1
 
 Waiting for application event 'all tests to be read' to occur.
-Adding entry completion '11.i386_linux' ...
-Adding entry completion '11.i386_linux.boost' ...
-Adding entry completion '12.i386_linux' ...
-Adding entry completion '12.i386_linux.boost' ...
+Adding entry completion 'plotapclog' ...
+Adding entry completion 'plotapclog.boost' ...
 Adding entry completion '/carm/proj/texttest/selftest_data' ...
 Adding entry completion '1' ...
-Adding entry completion '/carm/proj/texttest-tmp/johani/texttest.10Jul125739.11141/texttest.carmen/carmen/APC/PlotGraph/StaticGUISeveralVersions/TargetApp/Diagnostics/log4py.conf' ...
-Adding entry completion '/carm/proj/texttest-tmp/johani/texttest.10Jul125739.11141/texttest.carmen/carmen/APC/PlotGraph/StaticGUISeveralVersions/TargetApp/Diagnostics' ...
+Adding entry completion '/carm/proj/texttest-tmp/johani/texttest.carmen.10Jul153222.15518/texttest.carmen/carmen/APC/PlotGraph/StaticGUIApclog/TargetApp/Diagnostics/log4py.conf' ...
+Adding entry completion '/carm/proj/texttest-tmp/johani/texttest.carmen.10Jul153222.15518/texttest.carmen/carmen/APC/PlotGraph/StaticGUIApclog/TargetApp/Diagnostics' ...
 Adding entry completion 'short' ...
 Adding entry completion 'normal' ...
 Adding entry completion 'idle' ...
-Adding entry completion '/carm/proj/texttest-tmp/johani/texttest.10Jul125739.11141/texttest.carmen/carmen/APC/PlotGraph/StaticGUISeveralVersions/texttesttmp' ...
+Adding entry completion '/carm/proj/texttest-tmp/johani/texttest.carmen.10Jul153222.15518/texttest.carmen/carmen/APC/PlotGraph/StaticGUIApclog/texttesttmp' ...
 Adding entry completion '0:' ...
 Adding entry completion 'minutes' ...
 Adding entry completion 'hours' ...
@@ -39,7 +37,7 @@ Adding entry completion 'png' ...
 Adding entry completion 'svg' ...
 Adding entry completion 'gnuplot' ...
 Adding entry completion 'mpl' ...
-Top Window title is TextTest static GUI : management of tests for APC.11.i386_linux,APC.12.i386_linux
+Top Window title is TextTest static GUI : management of tests for APC.plotapclog
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -271,7 +269,7 @@ Pane separator positioned 50% from the left edge
 Tabs showing : Selection, Config
 
 Viewing notebook page for 'Selection'
-Viewing entry for option 'Tests for version' (drop-down list containing ['', '11.i386_linux', '11.i386_linux.boost', '12.i386_linux', '12.i386_linux.boost'])
+Viewing entry for option 'Tests for version' (drop-down list containing ['', 'plotapclog', 'plotapclog.boost'])
 Viewing entry for option 'Test names containing'
 Viewing entry for option 'Suite names containing'
 Viewing entry for option 'App names containing'
@@ -289,31 +287,55 @@ Viewing action with title '_Select', stock id ''gtk-find'', accelerator ''<contr
 Viewing radio button for switch '', options Discard/Refine/Extend'. Default value 0.
 Viewing action with title 'Filter', stock id ''gtk-find'', accelerator ''<control>f''
 
-Changing GUI status to: 'TextTest started at 10Jul12:57:55.'
+Changing GUI status to: 'TextTest started at 10Jul15:32:32.'
 
 Changing GUI status to: 'Reading tests ...'
 
-Changing GUI status to: 'Reading tests completed at 10Jul12:57:55.'
+Changing GUI status to: 'Reading tests completed at 10Jul15:32:32.'
 
 Test Tree description...
--> TargetApp (apc.11.i386_linux)
-->   RD_gc_v12
-->     gc_weekly_shift_improve_adn
--> TargetApp (apc.12.i386_linux)
+-> TargetApp (apc.plotapclog)
+->   lh_bascripts
+->     large_gap_daily
+->     small_delta_benchmark
+->   lh_bascripts_empty
+->   sk_test9scripts
+->     FC4_bas_col_1_paphos_aan
+->     FC4_bas_col_1_paphos_aat
+->     FC4_bas_col_1_paphos_adn
+->     FC4_bas_col_1_paphos_adt
+->     FC4_bas_col_1_paphos_dan
+->     FC4_bas_col_1_paphos_dat
+->     FC4_bas_col_1_paphos_ddn
+->     FC4_bas_col_1_paphos_ddt
+->     no_dh_single_base_cg
+->   Spielscripts
+->     umlauf_spiel
+->     just_a_copy
+->     subplan_env
+->   RD_lh_pac
+->     A320_COC_aan
+->     A320_COC_aat
+->     A320_COC_adn
+->     A320_COC_adt
+->     A320_COC_dan
+->     A320_COC_dat
+->     A320_COC_ddt
+->     A320_COC_ddn
 ->   RD_gc_v12
 ->     gc_weekly_shift_improve_adn
 
-Test column header set to 'Tests: 0/2 selected'
+Test column header set to 'Tests: 0/23 selected'
 
 Viewing notebook page for 'Selection'
-Viewing entry for option 'Tests for version' (drop-down list containing ['', '11.i386_linux', '11.i386_linux.boost', '12.i386_linux', '12.i386_linux.boost'])
+Viewing entry for option 'Tests for version' (drop-down list containing ['', 'plotapclog', 'plotapclog.boost'])
 Viewing entry for option 'Test names containing'
 Viewing entry for option 'Suite names containing'
 Viewing entry for option 'App names containing'
 Viewing entry for option 'Tests listed in file'
 Viewing entry for option 'Descriptions containing'
 Viewing entry for option 'Test-files containing'
-Viewing entry for option 'Test-file to search' (set to 'status') (drop-down list containing ['status', 'warnings', 'optinfo', 'solution', 'environment', 'performance', 'options'])
+Viewing entry for option 'Test-file to search' (set to 'status') (drop-down list containing ['status', 'environment', 'performance', 'options', 'warnings', 'solution', 'error', 'memory', 'all', 'optinfo', 'valgrind', 'test'])
 Viewing entry for option 'Execution time'
 Viewing entry for option 'CARMUSRs containing'
 ...........
@@ -325,9 +347,9 @@ Viewing radio button for switch '', options Discard/Refine/Extend'. Default valu
 Viewing action with title 'Filter', stock id ''gtk-find'', accelerator ''<control>f''
 Expected application event 'all tests to be read' occurred, proceeding.
 
-'set test selection to' event created with arguments 'gc_weekly_shift_improve_adn under TargetApp (apc.11.i386_linux),gc_weekly_shift_improve_adn under TargetApp (apc.12.i386_linux)'
+'set test selection to' event created with arguments 'umlauf_spiel'
 
-Test column header set to 'Tests: 1/2 selected'
+Test column header set to 'Tests: 1/23 selected'
 Setting sensitivity of action '_Copy' to True
 Setting sensitivity of action '_Cut' to True
 Setting sensitivity of action 'Enter Failure Information' to True
@@ -335,6 +357,8 @@ Setting sensitivity of action 'Show only selected' to True
 Setting sensitivity of action 'Hide selected' to True
 Setting sensitivity of action '_Rename...' to True
 Setting sensitivity of action 'Remove...' to True
+Setting sensitivity of action 'Move down' to True
+Setting sensitivity of action 'Move to last' to True
 Setting sensitivity of action 'S_ave Selection...' to True
 Setting sensitivity of action '_Log' to True
 Setting sensitivity of action 'Log Recursive' to True
@@ -353,26 +377,22 @@ Setting sensitivity of action 'Re_connect' to True
 Setting sensitivity of action '_Plot Graph' to True
 Setting sensitivity of action '_Plot Profile' to True
 
-Setting file-view title to 'gc__weekly__shift__improve__adn'
-Adding file optinfo.apc under heading 'Standard Files', coloured grey90
+Setting file-view title to 'umlauf__spiel'
+Adding file all.apc.plotapclog under heading 'Standard Files', coloured grey90
+Adding file error.apc under heading 'Standard Files', coloured grey90
 Adding file performance.apc under heading 'Standard Files', coloured grey90
-Adding file performance.apc.11 under heading 'Standard Files', coloured grey90
-Adding file performance.apc.12 under heading 'Standard Files', coloured grey90
 Adding file solution.apc under heading 'Standard Files', coloured grey90
-Adding file solution.apc.11 under heading 'Standard Files', coloured grey90
-Adding file solution.apc.12 under heading 'Standard Files', coloured grey90
+Adding file solution.apc.fail under heading 'Standard Files', coloured grey90
 Adding file status.apc under heading 'Standard Files', coloured grey90
-Adding file status.apc.11 under heading 'Standard Files', coloured grey90
-Adding file status.apc.12 under heading 'Standard Files', coloured grey90
+Adding file status.apc.fail under heading 'Standard Files', coloured grey90
+Adding file valgrind.apc.valgrind under heading 'Standard Files', coloured grey90
 Adding file warnings.apc under heading 'Standard Files', coloured grey90
-Adding file warnings.apc.11 under heading 'Standard Files', coloured grey90
-Adding file warnings.apc.12 under heading 'Standard Files', coloured grey90
 Adding file environment.apc under heading 'Definition Files', coloured grey90
 Adding file options.apc under heading 'Definition Files', coloured grey90
 Adding file Subplan under heading 'External Files', coloured white
 Adding file rules under heading 'Subplan', coloured grey90
 Adding file Ruleset under heading 'External Files', coloured white
-Adding file Typv_standard under heading 'Ruleset', coloured grey90
+Adding file umlauf_spiel under heading 'Ruleset', coloured grey90
 
 Pane separator positioned 46% from the top
 
@@ -381,44 +401,63 @@ Description:
 <No description provided>
 
 Expected running time for the default version:
-CPU time   :    7102.0 sec. on watsonville
-Real time  :    8713.8 sec.
+CPU time   :       1.7 sec. on frankfort
+Real time  :       3.5 sec.
 --------------------------------------
 
 Tabs showing : Test, Selection, Running, Config, Graph, Profile
 
-Test column header set to 'Tests: All 2 selected'
-Setting sensitivity of action 'Enter Failure Information' to False
-Setting sensitivity of action '_Rename...' to False
-Setting sensitivity of action 'Start Studio' to False
-Setting sensitivity of action '_Select KPI group' to False
+'view options for' event created with arguments 'Graph'
 
-Viewing notebook page for 'Selection'
-Viewing entry for option 'Tests for version' (drop-down list containing ['', '11.i386_linux', '11.i386_linux.boost', '12.i386_linux', '12.i386_linux.boost'])
-Viewing entry for option 'Test names containing'
-Viewing entry for option 'Suite names containing'
-Viewing entry for option 'App names containing'
-Viewing entry for option 'Tests listed in file'
-Viewing entry for option 'Descriptions containing'
-Viewing entry for option 'Test-files containing'
-Viewing entry for option 'Test-file to search' (set to 'status') (drop-down list containing ['status', 'warnings', 'optinfo', 'solution', 'environment', 'performance', 'options'])
-Viewing entry for option 'Execution time'
-Viewing entry for option 'CARMUSRs containing'
-...........
-Viewing check button for switch 'Select in collapsed suites'
-Viewing radio button for switch '', options Discard/Refine/Extend/Exclude'. Default value 0.
-Viewing action with title '_Select', stock id ''gtk-find'', accelerator ''<control>s''
-...........
-Viewing radio button for switch '', options Discard/Refine/Extend'. Default value 0.
-Viewing action with title 'Filter', stock id ''gtk-find'', accelerator ''<control>f''
+Viewing notebook page for 'Graph'
+Viewing entry for option 'Horizontal range' (set to '0:')
+Viewing entry for option 'Vertical range'
+Viewing entry for option 'Time scale to use' (set to 'minutes') (drop-down list containing ['minutes', 'hours', 'days'])
+Viewing entry for option 'Absolute file to print to'
+Viewing entry for option 'Printer to print to'
+Viewing entry for option 'Log file item to plot' (set to 'cost of plan') (drop-down list containing ['cost of plan', 'APC total rule cost', 'extra overcover cost', 'global constraint excess cost', 'base constraint excess cost', 'global constraint excess cost,base constraint excess cost', 'overcovers', 'uncovered legs\\.\\.', 'illegal trips........................', 'overcovers,uncovered legs\\.\\.,illegal trips........................', 'apctimes', 'memory'])
+Viewing entry for option 'Log file item to plot against' (set to 'cpu time') (drop-down list containing ['cpu time', 'Colgen iterations', 'execution time'])
+Viewing entry for option 'Log file to use' (set to 'status') (drop-down list containing ['status', 'all'])
+Viewing entry for option 'Extra versions to plot'
+Viewing entry for option 'Title of the plot'
+Viewing entry for option 'size of the plot'
+Viewing entry for option 'gnuplot print terminal' (set to 'postscript') (drop-down list containing ['postscript', 'png', 'svg'])
+Viewing entry for option 'Plot engine to use' (set to 'gnuplot') (drop-down list containing ['gnuplot', 'mpl'])
+Viewing check button for switch 'Plot percentage'
+Viewing check button for switch 'Print in colour'
+Viewing check button for switch 'Print in A3'
+Viewing check button for switch 'Plot against solution number rather than time'
+Viewing check button for switch 'Plot also average'
+Viewing check button for switch 'Plot only average'
+Viewing check button for switch 'No legend'
+Viewing check button for switch 'Only legend for the averages'
+Viewing check button for switch 'Plot kpi group'
+Viewing check button for switch 'Use kpi group percentage scale'
+Viewing action with title '_Plot Graph', stock id ''gtk-clear'', accelerator ''<control>p''
 
-Tabs showing : Selection, Running, Config, Graph, Profile
+'enter log file to use =' event created with arguments 'all'
+
+'enter log file item to plot =' event created with arguments 'OBJ,sLBD,pLBD'
+
+'enter vertical range =' event created with arguments ':1110'
+
+'plot graph' event created with arguments ''
+Adding entry completion ':1110' ...
+Adding entry completion 'OBJ,sLBD,pLBD' ...
+
+Changing GUI status to: 'Plotting tests ...'
+
+Changing GUI status to: 'Plotted 1 tests.'
+
+Terminating process that plots graphs...
+
+'enter log file item to plot against =' event created with arguments 'Colgen iterations'
 
 'plot graph' event created with arguments ''
 
 Changing GUI status to: 'Plotting tests ...'
 
-Changing GUI status to: 'Plotted 2 tests.'
+Changing GUI status to: 'Plotted 1 tests.'
 
 Terminating process that plots graphs...
 
