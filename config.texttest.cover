@@ -1,4 +1,6 @@
-default_checkout:tt_coverage
+#default_checkout:tt_coverage
+
+interpreter:ttpython /usr/local/bin/coverage.py -p -x
 
 [run_dependent_text]
 traffic:coverage.py -p -x {REPLACE }
