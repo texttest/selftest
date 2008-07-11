@@ -1,14 +1,11 @@
 Enabling entry completion, using matching 1
 
 Waiting for application event 'all tests to be read' to occur.
-Adding entry completion '<default>' ...
 Adding entry completion '1' ...
-Adding entry completion '3' ...
-Adding entry completion '2' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.11Jul145022.15847/texttest/GUI/Appearance/ConflictingGUIConfig/TargetApp/Diagnostics/log4py.conf' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.11Jul145022.15847/texttest/GUI/Appearance/ConflictingGUIConfig/TargetApp/Diagnostics' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.11Jul145022.15847/texttest/GUI/Appearance/ConflictingGUIConfig/texttesttmp' ...
-Top Window title is TextTest static GUI : management of tests for APP1,APP2
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.11Jul135358.27102/texttest/GUI/StaticGUI/AddingApps/FromScratch/TargetApp/Diagnostics/log4py.conf' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.11Jul135358.27102/texttest/GUI/StaticGUI/AddingApps/FromScratch/TargetApp/Diagnostics' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.11Jul135358.27102/texttest/GUI/StaticGUI/AddingApps/FromScratch/texttesttmp' ...
+Top Window title is TextTest static GUI : management of tests
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -175,7 +172,7 @@ Pane separator positioned 50% from the left edge
 Tabs showing : Selection, Config
 
 Viewing notebook page for 'Selection'
-Viewing entry for option 'Tests for version' (drop-down list containing ['', '<default>', '1', '3', '2'])
+Viewing entry for option 'Tests for version'
 Viewing entry for option 'Test names containing'
 Viewing entry for option 'Suite names containing'
 Viewing entry for option 'App names containing'
@@ -192,20 +189,25 @@ Viewing action with title '_Select', stock id ''gtk-find'', accelerator ''<contr
 Viewing radio button for switch '', options Discard/Refine/Extend'. Default value 0.
 Viewing action with title 'Filter', stock id ''gtk-find'', accelerator ''<control>f''
 
-Changing GUI status to: 'TextTest started at 11Jul14:50:29.'
+Changing GUI status to: 'TextTest started at 11Jul13:54:00.'
 
 Changing GUI status to: 'Reading tests ...'
 
-Changing GUI status to: 'Reading tests completed at 11Jul14:50:29.'
+Changing GUI status to: 'Reading tests completed at 11Jul13:54:00.'
 
 Test Tree description...
--> TargetApp (app1)
--> TargetApp (app2)
 
 Test column header set to 'Tests: All 0 selected'
+---------- Dialog 'Define a new tested application' ----------
+Default action is labelled 'gtk-ok'
+Viewing entry for option 'Full name of application'
+Viewing entry for option '\nFile extension to use for TextTest files associated with this application'
+Viewing entry for option '\nSubdirectory of TEXTTEST_HOME to store the above application files under (leave blank for local storage)'
+Viewing filechooser for option '\nSelect executable program to test' (choosing from directories ['/carm/proj/texttest-tmp/geoff/texttest.11Jul135358.27102/texttest/GUI/StaticGUI/AddingApps/FromScratch/TargetApp'])
+--------------------------------------------------------------
 
 Viewing notebook page for 'Selection'
-Viewing entry for option 'Tests for version' (drop-down list containing ['', '<default>', '1', '3', '2'])
+Viewing entry for option 'Tests for version'
 Viewing entry for option 'Test names containing'
 Viewing entry for option 'Suite names containing'
 Viewing entry for option 'App names containing'
@@ -223,7 +225,115 @@ Viewing radio button for switch '', options Discard/Refine/Extend'. Default valu
 Viewing action with title 'Filter', stock id ''gtk-find'', accelerator ''<control>f''
 Expected application event 'all tests to be read' occurred, proceeding.
 
-'quit' event created with arguments ''
+'enter file extension to use for texttest files associated with this application =' event created with arguments 'hello'
+
+'enter subdirectory of texttest_home to store the above application files under (leave blank for local storage) =' event created with arguments 'helloworld'
+
+'press define' event created with arguments ''
+Top Window title is TextTest static GUI : management of tests for HELLO
+
+Test Tree description...
+-> helloworld (hello)
+
+Changing GUI status to: 'Created new application with extension 'hello'.'
 Adding entry completion 'output' ...
+Adding entry completion 'hello' ...
+Adding entry completion 'helloworld' ...
+
+'set test selection to' event created with arguments 'helloworld (hello)'
+Setting sensitivity of action 'Add Test' to True
+Setting sensitivity of action 'Add Suite' to True
+Setting sensitivity of action 'Enter Failure Information' to True
+Setting sensitivity of action 'Show only selected' to True
+Setting sensitivity of action 'Hide selected' to True
+Setting sensitivity of action '_Sort Test Suite File' to True
+Setting sensitivity of action '_Reversed Sort Test Suite File' to True
+
+Setting file-view title to 'helloworld'
+Adding file testsuite.hello under heading 'Definition Files', coloured grey90
+
+Pane separator positioned 46% from the top
+
+---------- Text Info Window ----------
+Description:
+Root test suite
+--------------------------------------
+
+Tabs showing : Test, Selection, Config
+
+'add test' event created with arguments ''
+Adding entry completion 'last in suite' ...
+Adding entry completion 'first in suite' ...
+---------- Dialog 'Add Test' ----------
+Default action is labelled 'gtk-ok'
+Viewing entry for option 'Test Name'
+Viewing entry for option 'Test Description'
+Viewing entry for option '\nPlace Test' (set to 'last in suite') (drop-down list containing ['first in suite', 'last in suite'])
+Viewing entry for option 'Command line options'
+---------------------------------------
+
+'enter test name =' event created with arguments 'Test'
+
+'press ok' event created with arguments ''
+Adding Test Test under test suite HELLO test-suite helloworld, placed last in suite
+Not creating options file
+
+Test column header set to 'Tests: 0/1 selected'
+
+Test Tree description...
+-> helloworld (hello)
+->   Test
+
+Test Tree description...
+-> helloworld (hello)
+->   Test
+Selecting new test Test
+Marking 1 tests as selected
+
+Test column header set to 'Tests: All 1 selected'
+
+Setting file-view title to 'Test'
+
+---------- Text Info Window ----------
+Description:
+<No description provided>
+--------------------------------------
+Setting sensitivity of action '_Copy' to True
+Setting sensitivity of action '_Cut' to True
+Setting sensitivity of action 'Add Test' to False
+Setting sensitivity of action 'Add Suite' to False
+Setting sensitivity of action '_Rename...' to True
+Setting sensitivity of action 'Remove...' to True
+Setting sensitivity of action '_Sort Test Suite File' to False
+Setting sensitivity of action '_Reversed Sort Test Suite File' to False
+Setting sensitivity of action 'S_ave Selection...' to True
+Setting sensitivity of action '_Run' to True
+Setting sensitivity of action '_Run' to True
+Setting sensitivity of action 'Re_connect' to True
+
+Tabs showing : Test, Selection, Running, Config
+
+Changing GUI status to: 'Added new HELLO test-case Test'
+Adding entry completion 'Test' ...
+
+'view options for' event created with arguments 'Running'
+
+Tabs showing : Basic, Advanced, Reconnect
+
+Viewing notebook page for 'Basic'
+Viewing entry for option 'Run this version'
+Viewing entry for option 'Use checkout'
+Viewing entry for option 'Times to run' (set to '1')
+Viewing action with title '_Run', stock id ''gtk-execute'', accelerator ''<control>r''
+
+'run selected tests' event created with arguments ''
+Starting dynamic run of TextTest with arguments ['-g', '-a', 'hello', '-cp', '1', '-xr', '/carm/proj/texttest-tmp/geoff/texttest.11Jul135358.27102/texttest/GUI/StaticGUI/AddingApps/FromScratch/TargetApp/Diagnostics/log4py.conf', '-xw', '/carm/proj/texttest-tmp/geoff/texttest.11Jul135358.27102/texttest/GUI/StaticGUI/AddingApps/FromScratch/TargetApp/Diagnostics', '-count', '1', '-f', '/carm/proj/texttest-tmp/geoff/texttest.11Jul135358.27102/texttest/GUI/StaticGUI/AddingApps/FromScratch/texttesttmp/static_gui.11Jul135400.27110/dynamic_run1/gui_select', '-fd', '/carm/proj/texttest-tmp/geoff/texttest.11Jul135358.27102/texttest/GUI/StaticGUI/AddingApps/FromScratch/texttesttmp/static_gui.11Jul135400.27110/temporary_filter_files']
+
+Changing GUI status to: 'Started HELLO test-case Test at 11Jul13:54:02.'
+
+Waiting for application event 'dynamic GUI to be closed' to occur.
+Expected application event 'dynamic GUI to be closed' occurred, proceeding.
+
+'quit' event created with arguments ''
 
 Changing GUI status to: 'Removing all temporary files ...'
