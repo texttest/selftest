@@ -1,0 +1,14 @@
+set ylabel ''
+set xlabel 'CPU time (min)'
+set time
+set title "APC Version 14 (in user RD_lh_pac) : Test A320_COC_aan"
+set xtics border nomirror norotate
+set ytics border nomirror norotate
+set border 3
+set xrange [0:];
+plot './apc.14/RD_lh_pac/A320_COC_aan/framework_tmp/plot-14DH-post-processing'  title "DH post processing"  with linespoints lt 2 pt 1, \
+'./apc.14/RD_lh_pac/A320_COC_aan/framework_tmp/plot-14Generation-time'  title "Generation time"  with linespoints lt 3 pt 1, \
+'./apc.14/RD_lh_pac/A320_COC_aan/framework_tmp/plot-14Coordination-time'  title "Coordination time"  with linespoints lt 4 pt 1, \
+'./apc.14/RD_lh_pac/A320_COC_aan/framework_tmp/plot-14Conn-fixing-time'  title "Conn fixing time"  with linespoints lt 5 pt 1, \
+'./apc.14/RD_lh_pac/A320_COC_aan/framework_tmp/plot-14Optimization-time'  title "Optimization time"  with linespoints lt 6 pt 1, \
+'./apc.14/RD_lh_pac/A320_COC_aan/framework_tmp/plot-14Network-generation-time'  title "Network generation time"  with linespoints lt 7 pt 1
