@@ -1,7 +1,7 @@
 Enabling entry completion, using matching 1
 
 Waiting for application event 'completion of test actions' to occur.
-Top Window title is TextTest dynamic GUI : testing HELLO (started at 14Jul11:24:16)
+Top Window title is TextTest dynamic GUI : testing HELLO (started at 09Jul09:21:19)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -113,7 +113,7 @@ Tabs showing : Status
 
 Test progress:
 
-Changing GUI status to: 'TextTest started at 14Jul11:24:16.'
+Changing GUI status to: 'TextTest started at 09Jul09:21:20.'
 
 Test progress:
 --> Not started : 1, colour 'white', font 'bold'', visible=True
@@ -259,7 +259,7 @@ Test progress:
 ------> file2 different : 1, colour 'red', font 'bold'', visible=True
 ------> file4 different : 1, colour 'red', font 'bold'', visible=True
 
-Progress bar set to fraction 1.0, text 'All 5 tests completed at 14Jul11:24:18'
+Progress bar set to fraction 1.0, text 'All 5 tests completed at 09Jul09:21:22'
 
 Redrawing test success coloured green
 Redrawing suite suite : second column 'All 1 tests successful' coloured green
@@ -281,14 +281,139 @@ Test progress:
 --> Succeeded : 1, colour 'green', font 'bold'', visible=True
 Expected application event 'completion of test actions' occurred, proceeding.
 
-'set test selection to' event created with arguments 'simple_fail2,complex_fail1,complex_fail2'
+'show test suite' event created with arguments 'suite'
 
-Test column header set to 'Tests: 1/5 selected, none hidden'
+Test Tree description...
+-> TargetApp (hello)
+->   simple_fail1
+->   simple_fail2
+->   complex_fail1
+->   complex_fail2
+->   suite
+->     success
+
+'set progress report filter selection to' event created with arguments 'output different'
+Selecting all 2 tests in category output different
+Marking 2 tests as selected
+
+Test column header set to 'Tests: 2/5 selected, none hidden'
 Setting sensitivity of action '_Save' to True
 Setting sensitivity of action 'Save _As...' to True
 Setting sensitivity of action 'S_ave Selection...' to True
 Setting sensitivity of action '_Mark' to True
 Setting sensitivity of action 'Recompute Status' to True
+
+Tabs showing : Test, Status
+
+'mark the selected tests' event created with arguments ''
+Adding entry completion 'Checked' ...
+Adding entry completion 'Checked at 09Jul09:21:20' ...
+---------- Dialog 'Mark the selected tests' ----------
+Default action is labelled 'gtk-ok'
+Viewing entry for option 'Brief text' (set to 'Checked')
+Viewing entry for option 'Free text' (set to 'Checked at 09Jul09:21:20')
+------------------------------------------------------
+
+'enter free text =' event created with arguments 'Nothing that needs filtering'
+
+'press ok' event created with arguments ''
+
+Redrawing test complex_fail1 coloured orange
+(Second column 'Checked' coloured orange)
+
+Test progress:
+--> Not started : 0, colour 'white', font ''', visible=True
+--> Running : 0, colour 'white', font ''', visible=True
+--> Failed : 3, colour 'red', font 'bold'', visible=True
+----> Differences : 3, colour 'red', font 'bold'', visible=True
+------> file3 different : 2, colour 'red', font 'bold'', visible=True
+--------> Group 1 : 2, colour 'red', font 'bold'', visible=True
+------> errors new : 2, colour 'red', font 'bold'', visible=True
+--------> Group 1 : 2, colour 'red', font 'bold'', visible=True
+------> output different : 1, colour 'red', font 'bold'', visible=True
+--------> Group 1 : 1, colour 'red', font 'bold'', visible=True
+------> file1 different : 1, colour 'red', font 'bold'', visible=True
+------> file2 different : 1, colour 'red', font 'bold'', visible=True
+------> file4 different : 1, colour 'red', font 'bold'', visible=True
+--> Succeeded : 1, colour 'green', font 'bold'', visible=True
+--> Marked : 1, colour 'orange', font 'bold'', visible=True
+----> Checked : 1, colour 'orange', font 'bold'', visible=True
+Setting sensitivity of action '_Unmark' to True
+
+Redrawing test complex_fail2 coloured orange
+(Second column 'Checked' coloured orange)
+
+Test progress:
+--> Not started : 0, colour 'white', font ''', visible=True
+--> Running : 0, colour 'white', font ''', visible=True
+--> Failed : 2, colour 'red', font 'bold'', visible=True
+----> Differences : 2, colour 'red', font 'bold'', visible=True
+------> file3 different : 1, colour 'red', font 'bold'', visible=True
+--------> Group 1 : 1, colour 'red', font 'bold'', visible=True
+------> errors new : 1, colour 'red', font 'bold'', visible=True
+--------> Group 1 : 1, colour 'red', font 'bold'', visible=True
+------> output different : 0, colour 'white', font ''', visible=True
+--------> Group 1 : 0, colour 'white', font ''', visible=True
+------> file1 different : 0, colour 'white', font ''', visible=True
+------> file2 different : 0, colour 'white', font ''', visible=True
+------> file4 different : 0, colour 'white', font ''', visible=True
+--> Succeeded : 1, colour 'green', font 'bold'', visible=True
+--> Marked : 2, colour 'orange', font 'bold'', visible=True
+----> Checked : 2, colour 'orange', font 'bold'', visible=True
+Setting sensitivity of action '_Save' to False
+Setting sensitivity of action 'Save _As...' to False
+
+Changing GUI status to: 'Performed 'Mark the selected tests' on 2 tests.'
+Adding entry completion 'Nothing that needs filtering' ...
+
+'set test selection to' event created with arguments 'complex_fail2'
+
+Test column header set to 'Tests: 1/5 selected, none hidden'
+
+Setting file-view title to 'complex__fail2'
+Adding file file1.hello under heading 'Comparison Files', coloured red
+Adding file file2.hello under heading 'Comparison Files', coloured red
+Adding file file3.hello under heading 'Comparison Files', coloured red
+Adding file file4.hello under heading 'Comparison Files', coloured red
+Adding file output.hello under heading 'Comparison Files', coloured red
+Adding file errors.hello under heading 'New Files', coloured red
+
+Pane separator positioned 46% from the top
+
+---------- Text Info Window ----------
+Test was marked by the user :
+Nothing that needs filtering
+
+ORIGINAL STATE:
+Test FAILED :
+ ---------- Differences in file1 ----------
+1c1
+< Nothing in file1 ... or
+---
+> Nothing in file1 ...
+---------- Differences in file2 ----------
+1c1
+< Nothing in file2 ... indeed!
+---
+> Nothing in file2 ...
+---------- Differences in file3 ----------
+1c1
+< Something in file3: Whitespace
+---
+> Nothing in file3 ...
+---------- Differences in file4 ----------
+1c1
+< Nothing in file4 ... yet ...
+---
+> Nothing in file4 ...
+---------- Differences in output ----------
+2,3d1
+< 
+< By the way, åäöÅÄÖ.
+---------- New result in errors ----------
+--------------------------------------
+
+'set test selection to' event created with arguments 'simple_fail2,complex_fail1,success'
 
 Setting file-view title to 'simple__fail2'
 Adding file file1.hello under heading 'Comparison Files', coloured green
@@ -298,34 +423,34 @@ Adding file file4.hello under heading 'Comparison Files', coloured green
 Adding file output.hello under heading 'Comparison Files', coloured green
 Adding file errors.hello under heading 'New Files', coloured red
 
-Pane separator positioned 46% from the top
-
 ---------- Text Info Window ----------
 Test FAILED :
 ---------- New result in errors ----------
 --------------------------------------
-
-Tabs showing : Test, Status
+Setting sensitivity of action '_Save' to True
+Setting sensitivity of action 'Save _As...' to True
+Setting sensitivity of action '_Unmark' to False
 
 Test column header set to 'Tests: 2/5 selected, none hidden'
 Setting file-view title to 'Sample from 2 tests'
+Setting sensitivity of action '_Unmark' to True
 
 Test column header set to 'Tests: 3/5 selected, none hidden'
 Setting file-view title to 'Sample from 3 tests'
 
 'mark the selected tests' event created with arguments ''
-Adding entry completion 'Checked' ...
-Adding entry completion 'Checked at 14Jul11:24:16' ...
 ---------- Dialog 'Mark the selected tests' ----------
 Default action is labelled 'gtk-ok'
 Viewing entry for option 'Brief text' (set to 'Checked')
-Viewing entry for option 'Free text' (set to 'Checked at 14Jul11:24:16')
+Viewing entry for option 'Free text' (set to 'Nothing that needs filtering')
 ------------------------------------------------------
+
+'enter brief text =' event created with arguments 'Marked2'
 
 'press ok' event created with arguments ''
 
 Redrawing test simple_fail2 coloured orange
-(Second column 'Checked' coloured orange)
+(Second column 'Marked2' coloured orange)
 
 Setting file-view title to 'Sample from 3 tests'
 Adding file file1.hello under heading 'Comparison Files', coloured green
@@ -337,25 +462,25 @@ Adding file errors.hello under heading 'New Files', coloured red
 
 ---------- Text Info Window ----------
 Test was marked by the user :
-Checked at 14Jul11:24:16
+Nothing that needs filtering
 
 ORIGINAL STATE:
 Test FAILED :
  ---------- New result in errors ----------
 --------------------------------------
-Setting sensitivity of action '_Unmark' to True
-
-Redrawing test complex_fail1 coloured orange
-(Second column 'Checked' coloured orange)
-
-Redrawing test complex_fail2 coloured orange
-(Second column 'Checked' coloured orange)
 Setting sensitivity of action '_Save' to False
 Setting sensitivity of action 'Save _As...' to False
 
-Changing GUI status to: 'Performed 'Mark the selected tests' on 3 tests.'
+Redrawing test complex_fail1 coloured orange
+(Second column 'Marked2' coloured orange)
 
-'set test selection to' event created with arguments 'complex_fail2'
+Redrawing test success coloured orange
+(Second column 'Marked2' coloured orange)
+
+Changing GUI status to: 'Performed 'Mark the selected tests' on 3 tests.'
+Adding entry completion 'Marked2' ...
+
+'set test selection to' event created with arguments 'complex_fail1'
 
 Test column header set to 'Tests: 2/5 selected, none hidden'
 
@@ -369,7 +494,7 @@ Adding file errors.hello under heading 'New Files', coloured red
 
 ---------- Text Info Window ----------
 Test was marked by the user :
-Checked at 14Jul11:24:16
+Nothing that needs filtering
 
 ORIGINAL STATE:
 Test FAILED :
@@ -387,6 +512,16 @@ Test FAILED :
 
 Test column header set to 'Tests: 1/5 selected, none hidden'
 
+Setting file-view title to 'complex__fail1'
+Adding file file1.hello under heading 'Comparison Files', coloured green
+Adding file file2.hello under heading 'Comparison Files', coloured green
+Adding file file3.hello under heading 'Comparison Files', coloured red
+Adding file file4.hello under heading 'Comparison Files', coloured green
+Adding file output.hello under heading 'Comparison Files', coloured red
+Adding file errors.hello under heading 'New Files', coloured red
+
+'set test selection to' event created with arguments 'complex_fail2'
+
 Setting file-view title to 'complex__fail2'
 Adding file file1.hello under heading 'Comparison Files', coloured red
 Adding file file2.hello under heading 'Comparison Files', coloured red
@@ -397,7 +532,7 @@ Adding file errors.hello under heading 'New Files', coloured red
 
 ---------- Text Info Window ----------
 Test was marked by the user :
-Checked at 14Jul11:24:16
+Nothing that needs filtering
 
 ORIGINAL STATE:
 Test FAILED :
@@ -475,30 +610,67 @@ Setting sensitivity of action '_Unmark' to False
 
 Changing GUI status to: 'Performed 'Unmark the selected tests' on HELLO test-case complex_fail2.'
 
-'view options for' event created with arguments 'Status'
+'set test selection to' event created with arguments 'simple_fail1'
 
-Test progress:
---> Not started : 0, colour 'white', font ''', visible=True
---> Running : 0, colour 'white', font ''', visible=True
---> Failed : 2, colour 'red', font 'bold'', visible=True
-----> Differences : 2, colour 'red', font 'bold'', visible=True
-------> file3 different : 2, colour 'red', font 'bold'', visible=True
---------> Group 1 : 2, colour 'red', font 'bold'', visible=True
-------> errors new : 1, colour 'red', font 'bold'', visible=True
---------> Group 1 : 1, colour 'red', font 'bold'', visible=True
-------> output different : 1, colour 'red', font 'bold'', visible=True
---------> Group 1 : 1, colour 'red', font 'bold'', visible=True
-------> file1 different : 1, colour 'red', font 'bold'', visible=True
-------> file2 different : 1, colour 'red', font 'bold'', visible=True
-------> file4 different : 1, colour 'red', font 'bold'', visible=True
---> Succeeded : 1, colour 'green', font 'bold'', visible=True
---> Marked : 2, colour 'orange', font 'bold'', visible=True
-----> Checked : 2, colour 'orange', font 'bold'', visible=True
+Setting file-view title to 'simple__fail1'
+Adding file errors.hello under heading 'Comparison Files', coloured green
+Adding file file1.hello under heading 'Comparison Files', coloured green
+Adding file file2.hello under heading 'Comparison Files', coloured green
+Adding file file3.hello under heading 'Comparison Files', coloured red
+Adding file file4.hello under heading 'Comparison Files', coloured green
+Adding file output.hello under heading 'Comparison Files', coloured green
 
-'set test selection to' event created with arguments 'simple_fail2,complex_fail1'
+---------- Text Info Window ----------
+Test FAILED :
+---------- Differences in file3 ----------
+1c1
+< Something in file3: Whitespace
+---
+> Nothing in file3 ...
+--------------------------------------
+
+'mark the selected tests' event created with arguments ''
+---------- Dialog 'Mark the selected tests' ----------
+Default action is labelled 'gtk-ok'
+Viewing entry for option 'Brief text' (set to 'Marked2')
+Viewing entry for option 'Free text' (set to 'Nothing that needs filtering')
+------------------------------------------------------
+
+'enter brief text =' event created with arguments 'Marked3'
+
+'press ok' event created with arguments ''
+
+Redrawing test simple_fail1 coloured orange
+(Second column 'Marked3' coloured orange)
+
+Setting file-view title to 'simple__fail1'
+Adding file errors.hello under heading 'Comparison Files', coloured green
+Adding file file1.hello under heading 'Comparison Files', coloured green
+Adding file file2.hello under heading 'Comparison Files', coloured green
+Adding file file3.hello under heading 'Comparison Files', coloured red
+Adding file file4.hello under heading 'Comparison Files', coloured green
+Adding file output.hello under heading 'Comparison Files', coloured green
+
+---------- Text Info Window ----------
+Test was marked by the user :
+Nothing that needs filtering
+
+ORIGINAL STATE:
+Test FAILED :
+ ---------- Differences in file3 ----------
+1c1
+< Something in file3: Whitespace
+---
+> Nothing in file3 ...
+--------------------------------------
 Setting sensitivity of action '_Save' to False
 Setting sensitivity of action 'Save _As...' to False
 Setting sensitivity of action '_Unmark' to True
+
+Changing GUI status to: 'Performed 'Mark the selected tests' on HELLO test-case simple_fail1.'
+Adding entry completion 'Marked3' ...
+
+'set test selection to' event created with arguments 'simple_fail2,complex_fail1'
 
 Setting file-view title to 'simple__fail2'
 Adding file file1.hello under heading 'Comparison Files', coloured green
@@ -508,11 +680,9 @@ Adding file file4.hello under heading 'Comparison Files', coloured green
 Adding file output.hello under heading 'Comparison Files', coloured green
 Adding file errors.hello under heading 'New Files', coloured red
 
-Pane separator positioned 46% from the top
-
 ---------- Text Info Window ----------
 Test was marked by the user :
-Checked at 14Jul11:24:16
+Nothing that needs filtering
 
 ORIGINAL STATE:
 Test FAILED :
@@ -553,6 +723,202 @@ Changing GUI status to: 'Performed 'Unmark the selected tests' on 2 tests.'
 Test progress:
 --> Not started : 0, colour 'white', font ''', visible=True
 --> Running : 0, colour 'white', font ''', visible=True
+--> Failed : 3, colour 'red', font 'bold'', visible=True
+----> Differences : 3, colour 'red', font 'bold'', visible=True
+------> file3 different : 2, colour 'red', font 'bold'', visible=True
+--------> Group 1 : 2, colour 'red', font 'bold'', visible=True
+------> errors new : 3, colour 'red', font 'bold'', visible=True
+--------> Group 1 : 3, colour 'red', font 'bold'', visible=True
+------> output different : 2, colour 'red', font 'bold'', visible=True
+--------> Group 1 : 2, colour 'red', font 'bold'', visible=True
+------> file1 different : 1, colour 'red', font 'bold'', visible=True
+------> file2 different : 1, colour 'red', font 'bold'', visible=True
+------> file4 different : 1, colour 'red', font 'bold'', visible=True
+--> Succeeded : 0, colour 'white', font ''', visible=True
+--> Marked : 2, colour 'orange', font 'bold'', visible=True
+----> Checked : 0, colour 'white', font ''', visible=True
+----> Marked2 : 1, colour 'orange', font 'bold'', visible=True
+----> Marked3 : 1, colour 'orange', font 'bold'', visible=True
+
+'set progress report filter selection to' event created with arguments ''
+Marking 0 tests as selected
+
+Test column header set to 'Tests: 0/5 selected, none hidden'
+Setting sensitivity of action '_Save' to False
+Setting sensitivity of action 'Save _As...' to False
+Setting sensitivity of action 'S_ave Selection...' to False
+Setting sensitivity of action '_Mark' to False
+Setting sensitivity of action 'Recompute Status' to False
+
+Tabs showing : Status
+
+'set test selection to' event created with arguments 'complex_fail1'
+
+Test column header set to 'Tests: 1/5 selected, none hidden'
+Setting sensitivity of action '_Save' to True
+Setting sensitivity of action 'Save _As...' to True
+Setting sensitivity of action 'S_ave Selection...' to True
+Setting sensitivity of action '_Mark' to True
+Setting sensitivity of action 'Recompute Status' to True
+
+Setting file-view title to 'complex__fail1'
+Adding file file1.hello under heading 'Comparison Files', coloured green
+Adding file file2.hello under heading 'Comparison Files', coloured green
+Adding file file3.hello under heading 'Comparison Files', coloured red
+Adding file file4.hello under heading 'Comparison Files', coloured green
+Adding file output.hello under heading 'Comparison Files', coloured red
+Adding file errors.hello under heading 'New Files', coloured red
+
+Pane separator positioned 46% from the top
+
+---------- Text Info Window ----------
+Test FAILED :
+---------- Differences in file3 ----------
+1c1
+< Something in file3: Whitespace
+---
+> Nothing in file3 ...
+---------- Differences in output ----------
+2,3d1
+< 
+< By the way, åäöÅÄÖ.
+---------- New result in errors ----------
+--------------------------------------
+
+Tabs showing : Test, Status
+
+'mark the selected tests' event created with arguments ''
+---------- Dialog 'Mark the selected tests' ----------
+Default action is labelled 'gtk-ok'
+Viewing entry for option 'Brief text' (set to 'Marked3')
+Viewing entry for option 'Free text' (set to 'Nothing that needs filtering')
+------------------------------------------------------
+
+'enter brief text =' event created with arguments 'Marked4'
+
+'press ok' event created with arguments ''
+
+Redrawing test complex_fail1 coloured orange
+(Second column 'Marked4' coloured orange)
+
+Setting file-view title to 'complex__fail1'
+Adding file file1.hello under heading 'Comparison Files', coloured green
+Adding file file2.hello under heading 'Comparison Files', coloured green
+Adding file file3.hello under heading 'Comparison Files', coloured red
+Adding file file4.hello under heading 'Comparison Files', coloured green
+Adding file output.hello under heading 'Comparison Files', coloured red
+Adding file errors.hello under heading 'New Files', coloured red
+
+---------- Text Info Window ----------
+Test was marked by the user :
+Nothing that needs filtering
+
+ORIGINAL STATE:
+Test FAILED :
+ ---------- Differences in file3 ----------
+1c1
+< Something in file3: Whitespace
+---
+> Nothing in file3 ...
+---------- Differences in output ----------
+2,3d1
+< 
+< By the way, åäöÅÄÖ.
+---------- New result in errors ----------
+--------------------------------------
+Setting sensitivity of action '_Save' to False
+Setting sensitivity of action 'Save _As...' to False
+Setting sensitivity of action '_Unmark' to True
+
+Changing GUI status to: 'Performed 'Mark the selected tests' on HELLO test-case complex_fail1.'
+Adding entry completion 'Marked4' ...
+
+'view options for' event created with arguments 'Status'
+
+Test progress:
+--> Not started : 0, colour 'white', font ''', visible=True
+--> Running : 0, colour 'white', font ''', visible=True
+--> Failed : 2, colour 'red', font 'bold'', visible=True
+----> Differences : 2, colour 'red', font 'bold'', visible=True
+------> file3 different : 1, colour 'red', font 'bold'', visible=True
+--------> Group 1 : 1, colour 'red', font 'bold'', visible=True
+------> errors new : 2, colour 'red', font 'bold'', visible=True
+--------> Group 1 : 2, colour 'red', font 'bold'', visible=True
+------> output different : 1, colour 'red', font 'bold'', visible=True
+--------> Group 1 : 1, colour 'red', font 'bold'', visible=True
+------> file1 different : 1, colour 'red', font 'bold'', visible=True
+------> file2 different : 1, colour 'red', font 'bold'', visible=True
+------> file4 different : 1, colour 'red', font 'bold'', visible=True
+--> Succeeded : 0, colour 'white', font ''', visible=True
+--> Marked : 3, colour 'orange', font 'bold'', visible=True
+----> Checked : 0, colour 'white', font ''', visible=True
+----> Marked2 : 1, colour 'orange', font 'bold'', visible=True
+----> Marked3 : 1, colour 'orange', font 'bold'', visible=True
+----> Marked4 : 1, colour 'orange', font 'bold'', visible=True
+
+'set progress report filter selection to' event created with arguments 'Marked'
+Selecting all 3 tests in category Marked
+Marking 3 tests as selected
+
+Test column header set to 'Tests: 3/5 selected, none hidden'
+
+'unmark the selected tests' event created with arguments ''
+
+Redrawing test success coloured green
+
+Test progress:
+--> Not started : 0, colour 'white', font ''', visible=True
+--> Running : 0, colour 'white', font ''', visible=True
+--> Failed : 2, colour 'red', font 'bold'', visible=True
+----> Differences : 2, colour 'red', font 'bold'', visible=True
+------> file3 different : 1, colour 'red', font 'bold'', visible=True
+--------> Group 1 : 1, colour 'red', font 'bold'', visible=True
+------> errors new : 2, colour 'red', font 'bold'', visible=True
+--------> Group 1 : 2, colour 'red', font 'bold'', visible=True
+------> output different : 1, colour 'red', font 'bold'', visible=True
+--------> Group 1 : 1, colour 'red', font 'bold'', visible=True
+------> file1 different : 1, colour 'red', font 'bold'', visible=True
+------> file2 different : 1, colour 'red', font 'bold'', visible=True
+------> file4 different : 1, colour 'red', font 'bold'', visible=True
+--> Succeeded : 1, colour 'green', font 'bold'', visible=True
+--> Marked : 2, colour 'orange', font 'bold'', visible=True
+----> Checked : 0, colour 'white', font ''', visible=True
+----> Marked2 : 0, colour 'white', font ''', visible=True
+----> Marked3 : 1, colour 'orange', font 'bold'', visible=True
+----> Marked4 : 1, colour 'orange', font 'bold'', visible=True
+
+Redrawing test simple_fail1 coloured green
+(Second column 'file3 different' coloured red)
+
+Test progress:
+--> Not started : 0, colour 'white', font ''', visible=True
+--> Running : 0, colour 'white', font ''', visible=True
+--> Failed : 3, colour 'red', font 'bold'', visible=True
+----> Differences : 3, colour 'red', font 'bold'', visible=True
+------> file3 different : 2, colour 'red', font 'bold'', visible=True
+--------> Group 1 : 2, colour 'red', font 'bold'', visible=True
+------> errors new : 2, colour 'red', font 'bold'', visible=True
+--------> Group 1 : 2, colour 'red', font 'bold'', visible=True
+------> output different : 1, colour 'red', font 'bold'', visible=True
+--------> Group 1 : 1, colour 'red', font 'bold'', visible=True
+------> file1 different : 1, colour 'red', font 'bold'', visible=True
+------> file2 different : 1, colour 'red', font 'bold'', visible=True
+------> file4 different : 1, colour 'red', font 'bold'', visible=True
+--> Succeeded : 1, colour 'green', font 'bold'', visible=True
+--> Marked : 1, colour 'orange', font 'bold'', visible=True
+----> Checked : 0, colour 'white', font ''', visible=True
+----> Marked2 : 0, colour 'white', font ''', visible=True
+----> Marked3 : 0, colour 'white', font ''', visible=True
+----> Marked4 : 1, colour 'orange', font 'bold'', visible=True
+Setting sensitivity of action '_Save' to True
+Setting sensitivity of action 'Save _As...' to True
+
+Redrawing test complex_fail1 coloured red
+(Second column 'output different(+)' coloured red)
+
+Test progress:
+--> Not started : 0, colour 'white', font ''', visible=True
+--> Running : 0, colour 'white', font ''', visible=True
 --> Failed : 4, colour 'red', font 'bold'', visible=True
 ----> Differences : 4, colour 'red', font 'bold'', visible=True
 ------> file3 different : 3, colour 'red', font 'bold'', visible=True
@@ -567,6 +933,24 @@ Test progress:
 --> Succeeded : 1, colour 'green', font 'bold'', visible=True
 --> Marked : 0, colour 'white', font ''', visible=True
 ----> Checked : 0, colour 'white', font ''', visible=True
+----> Marked2 : 0, colour 'white', font ''', visible=True
+----> Marked3 : 0, colour 'white', font ''', visible=True
+----> Marked4 : 0, colour 'white', font ''', visible=True
+Setting sensitivity of action '_Unmark' to False
+
+Changing GUI status to: 'Performed 'Unmark the selected tests' on 3 tests.'
+
+'set progress report filter selection to' event created with arguments ''
+Marking 0 tests as selected
+
+Test column header set to 'Tests: 0/5 selected, none hidden'
+Setting sensitivity of action '_Save' to False
+Setting sensitivity of action 'Save _As...' to False
+Setting sensitivity of action 'S_ave Selection...' to False
+Setting sensitivity of action '_Mark' to False
+Setting sensitivity of action 'Recompute Status' to False
+
+Tabs showing : Status
 
 'quit' event created with arguments ''
 
