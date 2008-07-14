@@ -15,7 +15,7 @@ S'running'
 p4
 sS'freeText'
 p5
-S'Running on knoxville'
+S'Running on some_machine'
 p6
 sS'started'
 p7
@@ -25,12 +25,12 @@ p8
 I0
 sS'briefText'
 p9
-S'RUN (knoxville)'
+S'RUN (some_machine)'
 p10
 sS'executionHosts'
 p11
 (lp12
-S'knoxville'
+S'some_machine'
 p13
 asS'observers'
 p14
@@ -44,9 +44,9 @@ S'start'
 p18
 sb.
 ->FIL:apc.sleep.17Jun120103.30906.edit_2
-<-CMD:rsh knoxville 'env DISPLAY=portmoller:30899.0 xterm -bg white -T "umlauf_spiel (apclog.apc)" -e less +F /carm/proj/texttest-tmp/geoff/texttest.carmen.17Jun120100.30889/texttest.carmen/carmen/APC/Miscellaneous/ViewApcLog/texttesttmp/apc.sleep.17Jun120103.30906/apc.sleep/Spielscripts/umlauf_spiel/apclog.apc'
+<-CMD:rsh some_machine 'env DISPLAY=portmoller:30899.0 xterm -bg white -T "umlauf_spiel (apclog.apc)" -e less +F /carm/proj/texttest-tmp/geoff/texttest.carmen.17Jun120100.30889/texttest.carmen/carmen/APC/Miscellaneous/ViewApcLog/texttesttmp/apc.sleep.17Jun120103.30906/apc.sleep/Spielscripts/umlauf_spiel/apclog.apc'
 ->EXC:-2
-<-CMD:rsh knoxville "env DISPLAY=portmoller:30899.0 xemacs /carm/proj/texttest-tmp/geoff/texttest.carmen.17Jun120100.30889/texttest.carmen/carmen/APC/Miscellaneous/ViewApcLog/texttesttmp/apc.sleep.17Jun120103.30906/apc.sleep/Spielscripts/umlauf_spiel/apclog.apc"
+<-CMD:rsh some_machine "env DISPLAY=portmoller:30899.0 xemacs /carm/proj/texttest-tmp/geoff/texttest.carmen.17Jun120100.30889/texttest.carmen/carmen/APC/Miscellaneous/ViewApcLog/texttesttmp/apc.sleep.17Jun120103.30906/apc.sleep/Spielscripts/umlauf_spiel/apclog.apc"
 ->ERR:
 Lisp backtrace follows:
 
@@ -78,7 +78,7 @@ S'TOTAL cost'
 p10
 sS'freeText'
 p11
-S'Test killed explicitly at 12:01\n---------- New result in all ----------\nPO-file Standard.po loaded successfully\nTime:  0 s real  10 ms cpu  0 ms cpu_child  memory:  19.0 Mb\nDelta: 0 s real  0 ms cpu  0 ms cpu_child  memory:  19.0 Mb\n/carm/proj/texttest/selftest_data/APC_CARMSYS/Spielscripts_tmp.apc/crc/rule_set/APC/i386_linux/.umlauf_spiel.geoff.knoxville_24953\n-s /carm/proj/texttest-tmp/geoff/texttest.carmen.17Jun120100.30889/texttest.carmen/carmen/APC/Miscellaneous/ViewApcLog/texttesttmp/apc.sleep.17Jun120103.30906/apc.sleep/Spielscripts/umlauf_spiel/Spiel_user/LOCAL_PLAN/Spiel/spiel/daily/ji_test_Umlaufspiel/APC_FILES\n-v 1\n-R /nfs/local/apc_temp/ji_test_Umlaufspiel_knoxville_24953/APC_rot\n-I /carm/proj/texttest-tmp/geoff/texttest.carmen.17Jun120100.30889/texttest.carmen/carmen/APC/Miscellaneous/ViewApcLog/texttesttmp/apc.sleep.17Jun120103.30906/apc.sleep/Spielscripts/umlauf_spiel/Spiel_user/LOCAL_PLAN/Spiel/spiel/daily/ji_test_Umlaufspiel/APC_FILES//run_status\n-U geoff\nexecutable name is [/carm/proj/texttest/selftest_data/APC_CARMSYS/Spielscripts_tmp.apc/crc/rule_set/APC/i386_linux/.umlauf_spiel.geoff.knoxville_24953]\ncarmsys: /carm/proj/texttest/selftest_data/APC_CARMSYS\ncarmusr: /carm/proj/texttest-tmp/geoff/texttest.carmen.17Jun120100.30889/texttest.carmen/carmen/APC/Miscellaneous/ViewApcLog/texttesttmp/apc.sleep.17Jun120103.30906/apc.sleep/Spielscripts/umlauf_spiel/Spiel_user\ncarmtmp: /carm/proj/texttest/selftest_data/APC_CARMSYS/Spielscripts_tmp.apc\nlp_etab_dir:  /carm/proj/texttest/selftest_data/CARMUSRs/Spiel_user/LOCAL_PLAN/Spiel/spiel/daily/etable\nsp_etab_dir:  /carm/proj/texttest/selftest_data/CARMUSRs/Spiel_user/LOCAL_PLAN/Spiel/spiel/daily/ji_test_Umlaufspiel/etable\nairport file: /carm/proj/texttest/selftest_data/APC_CARMSYS/data/Airport/bin/AirportFile\n\nAPC JOB IDENTIFICATION\n\n CARMSYS...............: /carm/proj/texttest/selftest_data/APC_CARMSYS\n CARMUSR...............: /carm/proj/texttest-tmp/geoff/texttest.carmen.17Jun120100.30889/texttest.carmen/carmen/APC/Miscellaneous/ViewApcLog/texttesttmp/apc.sleep.17Jun120103.30906/apc.sleep/Spielscripts/umlauf_spiel/Spiel_user\n CARMTMP...............: /carm/proj/texttest/selftest_data/APC_CARMSYS/Spielscripts_tmp.apc\n APC library version...: master.current\n APC library date......: 23 May 2006 16:21:35\ncanonicalize called\n\nError! Pid:25025  Tue Jun 17 12:01:14 2008  User:geoff\nError! File:/carm/master/Rules_and_Reports/utils/crc_etab_open.cc  Line:106\nError! crcuRegisterTableProtocol: Obsolete function\n\n'
+S'Test killed explicitly at 12:01\n---------- New result in all ----------\nPO-file Standard.po loaded successfully\nTime:  0 s real  10 ms cpu  0 ms cpu_child  memory:  19.0 Mb\nDelta: 0 s real  0 ms cpu  0 ms cpu_child  memory:  19.0 Mb\n/carm/proj/texttest/selftest_data/APC_CARMSYS/Spielscripts_tmp.apc/crc/rule_set/APC/i386_linux/.umlauf_spiel.geoff.some_machine_24953\n-s /carm/proj/texttest-tmp/geoff/texttest.carmen.17Jun120100.30889/texttest.carmen/carmen/APC/Miscellaneous/ViewApcLog/texttesttmp/apc.sleep.17Jun120103.30906/apc.sleep/Spielscripts/umlauf_spiel/Spiel_user/LOCAL_PLAN/Spiel/spiel/daily/ji_test_Umlaufspiel/APC_FILES\n-v 1\n-R /nfs/local/apc_temp/ji_test_Umlaufspiel_some_machine_24953/APC_rot\n-I /carm/proj/texttest-tmp/geoff/texttest.carmen.17Jun120100.30889/texttest.carmen/carmen/APC/Miscellaneous/ViewApcLog/texttesttmp/apc.sleep.17Jun120103.30906/apc.sleep/Spielscripts/umlauf_spiel/Spiel_user/LOCAL_PLAN/Spiel/spiel/daily/ji_test_Umlaufspiel/APC_FILES//run_status\n-U geoff\nexecutable name is [/carm/proj/texttest/selftest_data/APC_CARMSYS/Spielscripts_tmp.apc/crc/rule_set/APC/i386_linux/.umlauf_spiel.geoff.some_machine_24953]\ncarmsys: /carm/proj/texttest/selftest_data/APC_CARMSYS\ncarmusr: /carm/proj/texttest-tmp/geoff/texttest.carmen.17Jun120100.30889/texttest.carmen/carmen/APC/Miscellaneous/ViewApcLog/texttesttmp/apc.sleep.17Jun120103.30906/apc.sleep/Spielscripts/umlauf_spiel/Spiel_user\ncarmtmp: /carm/proj/texttest/selftest_data/APC_CARMSYS/Spielscripts_tmp.apc\nlp_etab_dir:  /carm/proj/texttest/selftest_data/CARMUSRs/Spiel_user/LOCAL_PLAN/Spiel/spiel/daily/etable\nsp_etab_dir:  /carm/proj/texttest/selftest_data/CARMUSRs/Spiel_user/LOCAL_PLAN/Spiel/spiel/daily/ji_test_Umlaufspiel/etable\nairport file: /carm/proj/texttest/selftest_data/APC_CARMSYS/data/Airport/bin/AirportFile\n\nAPC JOB IDENTIFICATION\n\n CARMSYS...............: /carm/proj/texttest/selftest_data/APC_CARMSYS\n CARMUSR...............: /carm/proj/texttest-tmp/geoff/texttest.carmen.17Jun120100.30889/texttest.carmen/carmen/APC/Miscellaneous/ViewApcLog/texttesttmp/apc.sleep.17Jun120103.30906/apc.sleep/Spielscripts/umlauf_spiel/Spiel_user\n CARMTMP...............: /carm/proj/texttest/selftest_data/APC_CARMSYS/Spielscripts_tmp.apc\n APC library version...: master.current\n APC library date......: 23 May 2006 16:21:35\ncanonicalize called\n\nError! Pid:25025  Tue Jun 17 12:01:14 2008  User:geoff\nError! File:/carm/master/Rules_and_Reports/utils/crc_etab_open.cc  Line:106\nError! crcuRegisterTableProtocol: Obsolete function\n\n'
 p12
 sS'started'
 p13
@@ -101,7 +101,7 @@ g3
 S'running'
 p20
 sg11
-S'Running on knoxville'
+S'Running on some_machine'
 p21
 sg13
 I1
@@ -110,12 +110,12 @@ p22
 I0
 sS'briefText'
 p23
-S'RUN (knoxville)'
+S'RUN (some_machine)'
 p24
 sS'executionHosts'
 p25
 (lp26
-S'knoxville'
+S'some_machine'
 p27
 asS'observers'
 p28
@@ -168,7 +168,7 @@ p43
 (dp44
 S'freeTextBody'
 p45
-S'PO-file Standard.po loaded successfully\nTime:  0 s real  10 ms cpu  0 ms cpu_child  memory:  19.0 Mb\nDelta: 0 s real  0 ms cpu  0 ms cpu_child  memory:  19.0 Mb\n/carm/proj/texttest/selftest_data/APC_CARMSYS/Spielscripts_tmp.apc/crc/rule_set/APC/i386_linux/.umlauf_spiel.geoff.knoxville_24953\n-s /carm/proj/texttest-tmp/geoff/texttest.carmen.17Jun120100.30889/texttest.carmen/carmen/APC/Miscellaneous/ViewApcLog/texttesttmp/apc.sleep.17Jun120103.30906/apc.sleep/Spielscripts/umlauf_spiel/Spiel_user/LOCAL_PLAN/Spiel/spiel/daily/ji_test_Umlaufspiel/APC_FILES\n-v 1\n-R /nfs/local/apc_temp/ji_test_Umlaufspiel_knoxville_24953/APC_rot\n-I /carm/proj/texttest-tmp/geoff/texttest.carmen.17Jun120100.30889/texttest.carmen/carmen/APC/Miscellaneous/ViewApcLog/texttesttmp/apc.sleep.17Jun120103.30906/apc.sleep/Spielscripts/umlauf_spiel/Spiel_user/LOCAL_PLAN/Spiel/spiel/daily/ji_test_Umlaufspiel/APC_FILES//run_status\n-U geoff\nexecutable name is [/carm/proj/texttest/selftest_data/APC_CARMSYS/Spielscripts_tmp.apc/crc/rule_set/APC/i386_linux/.umlauf_spiel.geoff.knoxville_24953]\ncarmsys: /carm/proj/texttest/selftest_data/APC_CARMSYS\ncarmusr: /carm/proj/texttest-tmp/geoff/texttest.carmen.17Jun120100.30889/texttest.carmen/carmen/APC/Miscellaneous/ViewApcLog/texttesttmp/apc.sleep.17Jun120103.30906/apc.sleep/Spielscripts/umlauf_spiel/Spiel_user\ncarmtmp: /carm/proj/texttest/selftest_data/APC_CARMSYS/Spielscripts_tmp.apc\nlp_etab_dir:  /carm/proj/texttest/selftest_data/CARMUSRs/Spiel_user/LOCAL_PLAN/Spiel/spiel/daily/etable\nsp_etab_dir:  /carm/proj/texttest/selftest_data/CARMUSRs/Spiel_user/LOCAL_PLAN/Spiel/spiel/daily/ji_test_Umlaufspiel/etable\nairport file: /carm/proj/texttest/selftest_data/APC_CARMSYS/data/Airport/bin/AirportFile\n\nAPC JOB IDENTIFICATION\n\n CARMSYS...............: /carm/proj/texttest/selftest_data/APC_CARMSYS\n CARMUSR...............: /carm/proj/texttest-tmp/geoff/texttest.carmen.17Jun120100.30889/texttest.carmen/carmen/APC/Miscellaneous/ViewApcLog/texttesttmp/apc.sleep.17Jun120103.30906/apc.sleep/Spielscripts/umlauf_spiel/Spiel_user\n CARMTMP...............: /carm/proj/texttest/selftest_data/APC_CARMSYS/Spielscripts_tmp.apc\n APC library version...: master.current\n APC library date......: 23 May 2006 16:21:35\ncanonicalize called\n\nError! Pid:25025  Tue Jun 17 12:01:14 2008  User:geoff\nError! File:/carm/master/Rules_and_Reports/utils/crc_etab_open.cc  Line:106\nError! crcuRegisterTableProtocol: Obsolete function\n\n'
+S'PO-file Standard.po loaded successfully\nTime:  0 s real  10 ms cpu  0 ms cpu_child  memory:  19.0 Mb\nDelta: 0 s real  0 ms cpu  0 ms cpu_child  memory:  19.0 Mb\n/carm/proj/texttest/selftest_data/APC_CARMSYS/Spielscripts_tmp.apc/crc/rule_set/APC/i386_linux/.umlauf_spiel.geoff.some_machine_24953\n-s /carm/proj/texttest-tmp/geoff/texttest.carmen.17Jun120100.30889/texttest.carmen/carmen/APC/Miscellaneous/ViewApcLog/texttesttmp/apc.sleep.17Jun120103.30906/apc.sleep/Spielscripts/umlauf_spiel/Spiel_user/LOCAL_PLAN/Spiel/spiel/daily/ji_test_Umlaufspiel/APC_FILES\n-v 1\n-R /nfs/local/apc_temp/ji_test_Umlaufspiel_some_machine_24953/APC_rot\n-I /carm/proj/texttest-tmp/geoff/texttest.carmen.17Jun120100.30889/texttest.carmen/carmen/APC/Miscellaneous/ViewApcLog/texttesttmp/apc.sleep.17Jun120103.30906/apc.sleep/Spielscripts/umlauf_spiel/Spiel_user/LOCAL_PLAN/Spiel/spiel/daily/ji_test_Umlaufspiel/APC_FILES//run_status\n-U geoff\nexecutable name is [/carm/proj/texttest/selftest_data/APC_CARMSYS/Spielscripts_tmp.apc/crc/rule_set/APC/i386_linux/.umlauf_spiel.geoff.some_machine_24953]\ncarmsys: /carm/proj/texttest/selftest_data/APC_CARMSYS\ncarmusr: /carm/proj/texttest-tmp/geoff/texttest.carmen.17Jun120100.30889/texttest.carmen/carmen/APC/Miscellaneous/ViewApcLog/texttesttmp/apc.sleep.17Jun120103.30906/apc.sleep/Spielscripts/umlauf_spiel/Spiel_user\ncarmtmp: /carm/proj/texttest/selftest_data/APC_CARMSYS/Spielscripts_tmp.apc\nlp_etab_dir:  /carm/proj/texttest/selftest_data/CARMUSRs/Spiel_user/LOCAL_PLAN/Spiel/spiel/daily/etable\nsp_etab_dir:  /carm/proj/texttest/selftest_data/CARMUSRs/Spiel_user/LOCAL_PLAN/Spiel/spiel/daily/ji_test_Umlaufspiel/etable\nairport file: /carm/proj/texttest/selftest_data/APC_CARMSYS/data/Airport/bin/AirportFile\n\nAPC JOB IDENTIFICATION\n\n CARMSYS...............: /carm/proj/texttest/selftest_data/APC_CARMSYS\n CARMUSR...............: /carm/proj/texttest-tmp/geoff/texttest.carmen.17Jun120100.30889/texttest.carmen/carmen/APC/Miscellaneous/ViewApcLog/texttesttmp/apc.sleep.17Jun120103.30906/apc.sleep/Spielscripts/umlauf_spiel/Spiel_user\n CARMTMP...............: /carm/proj/texttest/selftest_data/APC_CARMSYS/Spielscripts_tmp.apc\n APC library version...: master.current\n APC library date......: 23 May 2006 16:21:35\ncanonicalize called\n\nError! Pid:25025  Tue Jun 17 12:01:14 2008  User:geoff\nError! File:/carm/master/Rules_and_Reports/utils/crc_etab_open.cc  Line:106\nError! crcuRegisterTableProtocol: Obsolete function\n\n'
 p46
 sS'tmpFile'
 p47
