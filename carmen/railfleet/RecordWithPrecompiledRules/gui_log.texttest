@@ -3,12 +3,11 @@ Enabling entry completion, using matching 1
 Waiting for application event 'all tests to be read' to occur.
 Adding entry completion '<default>' ...
 Adding entry completion '1' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.carmen.10Jul171716.24531/texttest.carmen/carmen/railfleet/RecordWithPrecompiledRules/TargetApp/Diagnostics/log4py.conf' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.carmen.10Jul171716.24531/texttest.carmen/carmen/railfleet/RecordWithPrecompiledRules/TargetApp/Diagnostics' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.15Jul175013.16748/texttest.carmen/carmen/railfleet/RecordWithPrecompiledRules/TargetApp/Diagnostics/log4py.conf' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.15Jul175013.16748/texttest.carmen/carmen/railfleet/RecordWithPrecompiledRules/TargetApp/Diagnostics' ...
 Adding entry completion 'short' ...
 Adding entry completion 'normal' ...
 Adding entry completion 'idle' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.carmen.10Jul171716.24531/texttest.carmen/carmen/railfleet/RecordWithPrecompiledRules/texttesttmp' ...
 Top Window title is TextTest static GUI : management of tests for RailFleet
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
@@ -42,6 +41,7 @@ Viewing action with title 'Move to first', stock id ''gtk-goto-top'', accelerato
 Viewing action with title 'Move up', stock id ''gtk-go-up'', accelerator ''<control>Page_Up'' (greyed out)
 Viewing action with title 'Move down', stock id ''gtk-go-down'', accelerator ''<control>Page_Down'' (greyed out)
 Viewing action with title 'Move to last', stock id ''gtk-goto-bottom'', accelerator ''<control>End'' (greyed out)
+Viewing action with title 'Re_connect', stock id ''gtk-connect'', accelerator ''<control><shift>r'' (greyed out)
 Viewing action with title '_Load Selection...', stock id ''gtk-open'', accelerator ''<control><shift>o''
 Viewing action with title 'S_ave Selection...', stock id ''gtk-save-as'', accelerator ''<control>d'' (greyed out)
 Viewing action with title '_Migration Notes'
@@ -61,7 +61,6 @@ Viewing action with title 'Filter', stock id ''gtk-find'', accelerator ''<contro
 Viewing action with title '_Run', stock id ''gtk-execute'', accelerator ''<control>r'' (greyed out)
 Viewing action with title '_Run', stock id ''gtk-execute'', accelerator ''<control>r'' (greyed out)
 Viewing action with title 'Record _Use-Case', stock id ''gtk-media-record'', accelerator ''F9'' (greyed out)
-Viewing action with title 'Re_connect', stock id ''gtk-connect'', accelerator ''<control><shift>r'' (greyed out)
 
 UI layout: 
 <ui>
@@ -248,11 +247,11 @@ Viewing action with title '_Select', stock id ''gtk-find'', accelerator ''<contr
 Viewing radio button for switch '', options Discard/Refine/Extend'. Default value 0.
 Viewing action with title 'Filter', stock id ''gtk-find'', accelerator ''<control>f''
 
-Changing GUI status to: 'TextTest started at 10Jul17:17:55.'
+Changing GUI status to: 'TextTest started at 15Jul17:50:57.'
 
 Changing GUI status to: 'Reading tests ...'
 
-Changing GUI status to: 'Reading tests completed at 10Jul17:17:56.'
+Changing GUI status to: 'Reading tests completed at 15Jul17:50:58.'
 
 Test Tree description...
 -> TargetApp (grf)
@@ -292,6 +291,7 @@ Setting sensitivity of action 'Show only selected' to True
 Setting sensitivity of action 'Hide selected' to True
 Setting sensitivity of action '_Rename...' to True
 Setting sensitivity of action 'Remove...' to True
+Setting sensitivity of action 'Re_connect' to True
 Setting sensitivity of action 'S_ave Selection...' to True
 Setting sensitivity of action '_Log' to True
 Setting sensitivity of action 'Log Recursive' to True
@@ -305,7 +305,6 @@ Setting sensitivity of action 'Annotate Recursive' to True
 Setting sensitivity of action '_Run' to True
 Setting sensitivity of action '_Run' to True
 Setting sensitivity of action 'Record _Use-Case' to True
-Setting sensitivity of action 'Re_connect' to True
 
 Setting file-view title to 'start__and__exit'
 Adding file catalogue.grf under heading 'Standard Files', coloured grey90
@@ -340,11 +339,11 @@ Setting sensitivity of action 'Add Test' to True
 Setting sensitivity of action 'Add Suite' to True
 Setting sensitivity of action '_Sort Test Suite File' to True
 Setting sensitivity of action '_Reversed Sort Test Suite File' to True
+Setting sensitivity of action 'Re_connect' to False
 Setting sensitivity of action 'S_ave Selection...' to False
 Setting sensitivity of action '_Run' to False
 Setting sensitivity of action '_Run' to False
 Setting sensitivity of action 'Record _Use-Case' to False
-Setting sensitivity of action 'Re_connect' to False
 
 Tabs showing : Test, Selection, Config
 
@@ -393,11 +392,11 @@ Setting sensitivity of action '_Sort Test Suite File' to False
 Setting sensitivity of action '_Reversed Sort Test Suite File' to False
 Setting sensitivity of action 'Move to first' to True
 Setting sensitivity of action 'Move up' to True
+Setting sensitivity of action 'Re_connect' to True
 Setting sensitivity of action 'S_ave Selection...' to True
 Setting sensitivity of action '_Run' to True
 Setting sensitivity of action '_Run' to True
 Setting sensitivity of action 'Record _Use-Case' to True
-Setting sensitivity of action 'Re_connect' to True
 
 Tabs showing : Test, Selection, Running, Config
 
@@ -407,7 +406,7 @@ Adding entry completion 'New_Test' ...
 
 'view options for' event created with arguments 'Running'
 
-Tabs showing : Basic, Advanced, Recording, Reconnect
+Tabs showing : Basic, Advanced, Recording
 
 Viewing notebook page for 'Basic'
 Viewing entry for option 'Run this version'
@@ -438,7 +437,7 @@ Viewing action with title 'Record _Use-Case', stock id ''gtk-media-record'', acc
 'record use-case' event created with arguments ''
 Adding entry completion '/carm/carmen_RAILFLEET_1/Products/RailFleet/CARMSYS/' ...
 Adding entry completion 'dsb' ...
-Starting record run of TextTest with arguments ['-g', '-record', '-a', 'grf', '-c', '/carm/carmen_RAILFLEET_1/Products/RailFleet/CARMSYS/', '-rulecomp', 'dsb', '-rectraffic', '-count', '1', '-f', '/carm/proj/texttest-tmp/geoff/texttest.carmen.10Jul171716.24531/texttest.carmen/carmen/railfleet/RecordWithPrecompiledRules/texttesttmp/static_gui.10Jul171755.17510/dynamic_run1/gui_select', '-fd', '/carm/proj/texttest-tmp/geoff/texttest.carmen.10Jul171716.24531/texttest.carmen/carmen/railfleet/RecordWithPrecompiledRules/texttesttmp/static_gui.10Jul171755.17510/temporary_filter_files']
+Starting record run of TextTest with arguments ['-g', '-record', '-a', 'grf', '-c', '/carm/carmen_RAILFLEET_1/Products/RailFleet/CARMSYS/', '-rulecomp', 'dsb', '-rectraffic', '-count', '1', '-f', '/carm/proj/texttest-tmp/geoff/texttest.15Jul175013.16748/texttest.carmen/carmen/railfleet/RecordWithPrecompiledRules/texttesttmp/static_gui.15Jul175057.29143/dynamic_run1/gui_select', '-fd', '/carm/proj/texttest-tmp/geoff/texttest.15Jul175013.16748/texttest.carmen/carmen/railfleet/RecordWithPrecompiledRules/texttesttmp/static_gui.15Jul175057.29143/temporary_filter_files']
 
 Changing GUI status to: 'Started record session for RailFleet test-case New_Test'
 
