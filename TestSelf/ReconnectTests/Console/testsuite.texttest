@@ -4,6 +4,9 @@ SuccessTest
 # Check we can reconnect and recalculate the temporary files. Check that run dependent text is included!
 RecomputeFileFilters
 
+# Check that we match version files that have appeared since the run was made (see bug 3113)
+RecomputeVersionFile
+
 # We should automatically recompute if we can't find a state file
 NoStateFile
 
