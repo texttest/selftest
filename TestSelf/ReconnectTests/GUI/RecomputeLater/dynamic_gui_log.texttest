@@ -1,7 +1,7 @@
 Enabling entry completion, using matching 1
 
 Waiting for application event 'completion of test actions' to occur.
-Top Window title is TextTest dynamic GUI : testing HELLO.v1,HELLO.v2 (started at 15Jul12:16:03)
+Top Window title is TextTest dynamic GUI : testing HELLO (started at 18Jul10:01:25)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -113,7 +113,7 @@ Tabs showing : Status, Run Info
 
 Test progress:
 
-Changing GUI status to: 'TextTest started at 15Jul12:16:04.'
+Changing GUI status to: 'TextTest started at 18Jul10:01:25.'
 
 Test progress:
 --> Not started : 1, colour 'white', font 'bold'', visible=True
@@ -124,9 +124,9 @@ Test progress:
 Progress bar set to fraction 0.0, text '0 of 2 tests completed'
 
 Test Tree description...
--> TargetApp (hello.v1)
+-> TargetApp (hello)
 ->   Test
--> TargetApp (hello.v2)
+-> TargetApp (hello.copy_1)
 ->   Test
 
 Test column header set to 'Tests: 0/2 selected, none hidden'
@@ -142,7 +142,7 @@ Test progress:
 ----> Differences : 1, colour 'red', font 'bold'', visible=True
 ------> output different : 1, colour 'red', font 'bold'', visible=True
 
-Progress bar set to fraction 1.0, text 'All 2 tests completed at 15Jul12:16:04'
+Progress bar set to fraction 1.0, text 'All 2 tests completed at 18Jul10:01:26'
 
 Redrawing test Test coloured red
 (Second column 'output different' coloured red)
@@ -155,7 +155,7 @@ Test progress:
 --------> Group 1 : 2, colour 'red', font 'bold'', visible=True
 Expected application event 'completion of test actions' occurred, proceeding.
 
-'set test selection to' event created with arguments 'Test under TargetApp (hello.v1)'
+'set test selection to' event created with arguments 'Test under TargetApp (hello)'
 
 Test column header set to 'Tests: 1/2 selected, none hidden'
 Setting sensitivity of action '_Save' to True
@@ -181,22 +181,12 @@ Test FAILED :
 
 Tabs showing : Test, Status, Run Info
 
-'save results with non-default settings' event created with arguments ''
-Adding entry completion 'v1' ...
----------- Dialog 'Saving 1 tests' ----------
-Default action is labelled 'gtk-save'
-Viewing entry for option 'Version to save' (set to 'v1') (drop-down list containing ['v1', ''])
-Viewing check button for switch 'Replace successfully compared files also'
----------------------------------------------
-
-'enter version to save =' event created with arguments ''
-
-'press ok' event created with arguments ''
+'save results for selected tests' event created with arguments ''
 
 Changing GUI status to: 'Saving 1 tests ...'
-Saving HELLO.v1 test-case Test - version , exactness 1
+Saving HELLO test-case Test - version , exactness 1
 
-Changing GUI status to: 'Saving HELLO.v1 test-case Test : output, no version'
+Changing GUI status to: 'Saving HELLO test-case Test : output, no version'
 
 Redrawing test Test coloured green
 Redrawing suite TargetApp : second column 'All 1 tests successful' coloured green
@@ -229,7 +219,7 @@ Test progress:
 
 Changing GUI status to: 'Saved 1 tests.'
 
-'set test selection to' event created with arguments 'Test under TargetApp (hello.v2)'
+'set test selection to' event created with arguments 'Test under TargetApp (hello.copy_1)'
 
 Test column header set to 'Tests: 1/2 selected, none hidden'
 Setting sensitivity of action '_Save' to True
@@ -261,11 +251,10 @@ Adding file output.hello under heading 'Comparison Files', coloured red
 (Recalculation icon showing 'gtk-refresh')
 
 'recompute test status, including progress information if appropriate' event created with arguments ''
-Adding entry completion 'v2' ...
 
-Changing GUI status to: 'Rereading configuration for HELLO.v2 ...'
+Changing GUI status to: 'Rereading configuration for HELLO.copy_1 ...'
 
-Changing GUI status to: 'Recomputing status of HELLO.v2 test-case Test ...'
+Changing GUI status to: 'Recomputing status of HELLO.copy_1 test-case Test ...'
 
 Redrawing test Test coloured green
 Redrawing suite TargetApp : second column 'All 1 tests successful' coloured green
