@@ -3,8 +3,8 @@ Enabling entry completion, using matching 1
 Waiting for application event 'all tests to be read' to occur.
 Adding entry completion '<default>' ...
 Adding entry completion '1' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.15Aug103059.30079/texttest/GUI/StaticGUI/Miscellaneous/ViewHelp/TargetApp/Diagnostics/log4py.conf' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.15Aug103059.30079/texttest/GUI/StaticGUI/Miscellaneous/ViewHelp/TargetApp/Diagnostics' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.18Aug104718.13491/texttest/GUI/StaticGUI/Miscellaneous/ViewHelp/TargetApp/Diagnostics/log4py.conf' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.18Aug104718.13491/texttest/GUI/StaticGUI/Miscellaneous/ViewHelp/TargetApp/Diagnostics' ...
 Top Window title is TextTest static GUI : management of tests for DIP
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
@@ -189,11 +189,11 @@ Viewing action with title '_Select', stock id ''gtk-find'', accelerator ''<contr
 Viewing radio button for switch '', options Discard/Refine/Extend'. Default value 0.
 Viewing action with title 'Filter', stock id ''gtk-find'', accelerator ''<control>f''
 
-Changing GUI status to: 'TextTest started at 15Aug10:31:05.'
+Changing GUI status to: 'TextTest started at 18Aug10:47:27.'
 
 Changing GUI status to: 'Reading tests ...'
 
-Changing GUI status to: 'Reading tests completed at 15Aug10:31:06.'
+Changing GUI status to: 'Reading tests completed at 18Aug10:47:27.'
 
 Test Tree description...
 -> TargetApp (dip)
@@ -246,8 +246,8 @@ c) use UNIX and have set the "follow_program" entry in your config files
 4) have entered GUI appearance configuration in your application config file
 
 Otherwise, this file also details behaviour of TextTest 3.12 which will be different from 
-TextTest 3.11 by default. This might be worth a quick scan if you do much reconnecting to
-previous runs.
+TextTest 3.11 by default. This is worth a quick scan as the important functionality of creating
+new applications and reconnecting to previous runs has changed somewhat.
 
 =========================================================
 COMPULSORY MIGRATION
@@ -327,7 +327,7 @@ Note that settings not in this list will still work fine in personal configurati
 all of them make sense of course)
 
 =========================================================
-CHANGES IN DEFAULT BEHAVIOUR
+CHANGES IN DEFAULT BEHAVIOUR (OR PROCEDURE)
 =========================================================
 
 (1) Reconnecting to previous runs from the static GUI
@@ -344,7 +344,10 @@ list will appear as "shortcuts" to the left.
 
 c) If you do it "the old way" (i.e. don't explicitly select a run directory as described in (b)) it will reconnect to *all* the runs
 it finds for the given version or a more *specific* one. Previously it picked *a random* run that had the given version or a more
-*general* one. As an example, if you specify "foo" it will now pick up foo.bar,foo.blah etc., but it won't pick up runs without a version ID as it did before. If there are several runs which differ only in date, these dates will be used as versions when the run is displayed. So if you don't select a version or a run directory, it will show you all runs for all versions of the tests you've selected.
+*general* one. As an example, if you specify "foo" it will now pick up foo.bar,foo.blah etc., but it won't pick up runs without a 
+version ID as it did before. If there are several runs which differ only in date, these dates will be used as versions when the run 
+is displayed. So if you don't select a version or a run directory, it will show you all runs for all versions of the tests you've 
+selected.
  
 (2) Default accelerator for Save Selection is now ctrl-D instead of ctrl-shift-S
 ================================================================================
@@ -354,6 +357,14 @@ Avoids confusion with Save-as with is ctrl-alt-s. You can of course override thi
 =================================================================================================================
 There may be cases where you don't want to do this, but usually you will. There is a check box on the
 record tab which can be used to restore the old behaviour when desired
+
+(4) Can now create new test-applications from the GUI
+=====================================================
+You don't need to drop out to the command line and create config files by hand to do this any more. You can do it 
+from a dialog within the GUI (Edit/Add Application). This dialog is also produced if the static GUI doesn't find 
+any applications, or if you provide --new on the command line. In the last case it will not load any existing 
+applications first.
+
 
 Adding migration notes from file 'MigrationNotes_from_3.10':
 
