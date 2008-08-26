@@ -93,12 +93,6 @@ link_test_path:commands.tas
 solution:APC_FILES/best_solution
 [end]
 
-# Collect the solution, which will be compressed
-[collate_script]
-solution:cat
-solution:uncompress -c
-[end]
-
 # Failure severity. Determines how differences are reported.
 # Only severity 1 differences will actually fail the test, the rest affect only the details column.
 # Defaults are output/errors 1, performance/memory 2, other 3. Crashes, internal errors, unrunnable tests are always 1
