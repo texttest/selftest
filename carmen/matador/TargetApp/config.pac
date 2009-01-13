@@ -9,7 +9,7 @@ config_module:matador
 queue_system_module:${QUEUE_SYSTEM}
 
 # Binary (relative to checkout) to be used
-executable:${CARMSYS}/bin/MATADORbatch.sh
+executable:${TEXTTEST_HOME}/fakematador.py
 
 default_interface:console
 
