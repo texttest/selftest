@@ -1,10 +1,4 @@
 #Configutation for Rhel5
+default_architecture:none
 
-interpreter:python
-
-# In reality we want "none", but 
-# the 32-bit machines have a failing Xvfb
-default_architecture:x86_64_linux
-
-# Increase to 4 if we get tireeis working again...
-queue_system_max_capacity:2
+queue_system_max_capacity:40
