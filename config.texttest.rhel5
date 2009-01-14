@@ -1,4 +1,6 @@
 #Configutation for Rhel5
-default_architecture:none
+# Should be 'none' but currently
+# 32-bit machines try to use the 64-bit GTK
+default_architecture:x86_64_linux
 
-queue_system_max_capacity:40
+queue_system_max_capacity:50
