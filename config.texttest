@@ -7,10 +7,14 @@ config_module:carmenqueuesystem
 queue_system_module:SGE
 
 default_major_release:none
+# Should be 'none' but currently
+# 32-bit machines try to use the 64-bit GTK
+default_architecture:x86_64_linux
 
-queue_system_max_capacity:20
+queue_system_max_capacity:50
 
-interactive_action_module:cvs
+# Replace with bzr when we can!
+#interactive_action_module:cvs
 
 # ---------------- Values needed to run in batch mode at Carmen -------------------
 
