@@ -75,7 +75,8 @@ class VideoStore:
         
 if __name__ == "__main__":
     # Just to make it fail (make record and replay different...)
-    print "Started the video store at", time.strftime("%d%b%H:%M:%S", time.localtime())
+    import os
+    print "Started the video store. The process ID is", os.getpid()
     sys.stdout.flush()
     program = VideoStore()
     program.run()
