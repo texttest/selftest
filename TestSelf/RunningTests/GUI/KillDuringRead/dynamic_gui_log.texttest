@@ -1,7 +1,7 @@
 Enabling entry completion, using matching 1
 
-Waiting for application event 'test Basic to start' to occur.
-Top Window title is TextTest dynamic GUI : testing SLEEP (started at 15Jul12:16:06)
+Waiting for application event 'test Basic to be read' to occur.
+Top Window title is TextTest dynamic GUI : testing SLEEP (started at 22Jan09:38:19)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -113,17 +113,11 @@ Tabs showing : Status, Run Info
 
 Test progress:
 
-Changing GUI status to: 'TextTest started at 15Jul12:16:09.'
+Changing GUI status to: 'TextTest started at 22Jan09:38:22.'
 
 Test progress:
 --> Not started : 1, colour 'white', font 'bold'', visible=True
-
-Redrawing test Basic coloured yellow
-
-Test progress:
---> Not started : 0, colour 'white', font ''', visible=True
---> Running : 1, colour 'yellow', font 'bold'', visible=True
-Expected application event 'test Basic to start' occurred, proceeding.
+Expected application event 'test Basic to be read' occurred, proceeding.
 
 'quit' event created with arguments ''
 
@@ -133,33 +127,13 @@ Changing GUI status to: 'Killed all running tests.'
 
 Changing GUI status to: 'Waiting for all tests to terminate ...'
 
-Progress bar set to fraction 1.0, text 'All 1 tests completed at 15Jul12:16:11'
-
-Redrawing test Basic coloured red
-(Second column 'KILLED' coloured red)
-
-Test progress:
---> Not started : 0, colour 'white', font ''', visible=True
---> Running : 0, colour 'white', font ''', visible=True
---> Failed : 1, colour 'red', font 'bold'', visible=True
-----> Killed : 1, colour 'red', font 'bold'', visible=True
-------> KILLED : 1, colour 'red', font 'bold'', visible=True
-
-Test progress:
---> Not started : 1, colour 'white', font 'bold'', visible=True
---> Running : 0, colour 'white', font ''', visible=True
---> Failed : 1, colour 'red', font 'bold'', visible=True
-----> Killed : 1, colour 'red', font 'bold'', visible=True
-------> KILLED : 1, colour 'red', font 'bold'', visible=True
-
 Test progress:
 --> Not started : 2, colour 'white', font 'bold'', visible=True
---> Running : 0, colour 'white', font ''', visible=True
---> Failed : 1, colour 'red', font 'bold'', visible=True
-----> Killed : 1, colour 'red', font 'bold'', visible=True
-------> KILLED : 1, colour 'red', font 'bold'', visible=True
 
-Progress bar set to fraction 0.333333333333, text '1 of 3 tests completed'
+Test progress:
+--> Not started : 3, colour 'white', font 'bold'', visible=True
+
+Progress bar set to fraction 0.0, text '0 of 3 tests completed'
 
 Test Tree description...
 -> TargetApp (sleep)
@@ -171,6 +145,17 @@ Test Tree description...
 
 Test column header set to 'Tests: 0/3 selected, none hidden'
 
+Progress bar set to fraction 0.333333333333, text '1 of 3 tests completed'
+
+Redrawing test Basic coloured red
+(Second column 'cancelled' coloured red)
+
+Test progress:
+--> Not started : 2, colour 'white', font 'bold'', visible=True
+--> Failed : 1, colour 'red', font 'bold'', visible=True
+----> Cancelled : 1, colour 'red', font 'bold'', visible=True
+------> cancelled : 1, colour 'red', font 'bold'', visible=True
+
 Progress bar set to fraction 0.666666666667, text '2 of 3 tests completed'
 
 Redrawing test Basic2 coloured red
@@ -178,25 +163,19 @@ Redrawing test Basic2 coloured red
 
 Test progress:
 --> Not started : 1, colour 'white', font 'bold'', visible=True
---> Running : 0, colour 'white', font ''', visible=True
 --> Failed : 2, colour 'red', font 'bold'', visible=True
-----> Killed : 1, colour 'red', font 'bold'', visible=True
-------> KILLED : 1, colour 'red', font 'bold'', visible=True
-----> Cancelled : 1, colour 'red', font 'bold'', visible=True
-------> cancelled : 1, colour 'red', font 'bold'', visible=True
+----> Cancelled : 2, colour 'red', font 'bold'', visible=True
+------> cancelled : 2, colour 'red', font 'bold'', visible=True
 
-Progress bar set to fraction 1.0, text 'All 3 tests completed at 15Jul12:16:13'
+Progress bar set to fraction 1.0, text 'All 3 tests completed at 22Jan09:38:26'
 
 Redrawing test Basic3 coloured red
 (Second column 'cancelled' coloured red)
 
 Test progress:
 --> Not started : 0, colour 'white', font ''', visible=True
---> Running : 0, colour 'white', font ''', visible=True
 --> Failed : 3, colour 'red', font 'bold'', visible=True
-----> Killed : 1, colour 'red', font 'bold'', visible=True
-------> KILLED : 1, colour 'red', font 'bold'', visible=True
-----> Cancelled : 2, colour 'red', font 'bold'', visible=True
-------> cancelled : 2, colour 'red', font 'bold'', visible=True
+----> Cancelled : 3, colour 'red', font 'bold'', visible=True
+------> cancelled : 3, colour 'red', font 'bold'', visible=True
 
 Changing GUI status to: 'Removing all temporary files ...'
