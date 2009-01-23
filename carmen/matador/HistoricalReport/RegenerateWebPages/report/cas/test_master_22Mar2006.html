@@ -1,0 +1,152 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<HTML>
+
+<!-- This file generated using Python HTMLgen module. -->
+<HEAD>
+  <META NAME="GENERATOR" CONTENT="HTMLgen 2.2.2">
+        <TITLE>Detailed test results for Matador - version master: 22Mar2006</TITLE>
+</HEAD>
+<BODY>
+<H1 align="center">22Mar2006 - detailed test results for Matador - version master</H1>
+
+<HR>
+<H2>master.i386_linux.parallel: 2 tests: 1 CRASHED 1 unrunnable </H2>
+
+<A NAME="master.i386_linux.parallelCRASHED"></A>
+<H3>Detailed information for the tests that CRASHED:</H3>
+
+<A NAME="master.i386_linux.parallelRD_ib_cas_v8scripts allcrew_bb_ixg"></A>
+<H4>TEST CRASHED (Segmentation fault in ??) on circleville,roosterville : RD_ib_cas_v8scripts allcrew_bb_ixg (
+<A HREF="test_master.html#master.i386_linux.parallelRD_ib_cas_v8scripts allcrew_bb_ixg">Last six days</A>
+<A HREF="test_master_weekend.html#master.i386_linux.parallelRD_ib_cas_v8scripts allcrew_bb_ixg">Weekend</A>
+<A HREF="test_master_all_Mar2006.html#master.i386_linux.parallelRD_ib_cas_v8scripts allcrew_bb_ixg">Mar2006</A>
+<A HREF="test_master_all_Feb2006.html#master.i386_linux.parallelRD_ib_cas_v8scripts allcrew_bb_ixg">Feb2006</A>
+<A HREF="test_master_all_Jan2006.html#master.i386_linux.parallelRD_ib_cas_v8scripts allcrew_bb_ixg">Jan2006</A>
+
+)</H4>
+
+<PRE>Program terminated with signal 11, Segmentation fault.
+Stack trace from gdb :
+?? 
+CarmenResource::inqValue 
+CarmenPathManager::getDir 
+CarmenPathManager::getDir 
+CarmenPathManager::getAllEtabPaths 
+RAVEGlobal::RAVEGlobal 
+ApplicationBase::doInitSingletons 
+ApplicationStartup::runApplication 
+component_main 
+main 
+------------------ Differences in errors --------------------
+1,73d0
+&lt; Xpress-MP Hyper Integer Barrier Optimizer Release 16.10.05
+&lt; (c) Copyright Dash Associates 1984-2005
+&lt; Licensed for use by: Carmen Group products
+&lt; -- Unordered text as found by filter 'Load ETABLE' --
+&lt; Load ETABLE _topmodule.aircraft_group, &lt;texttest_tmp_dir&gt;/RD_ib_cas_v8_user/crc/etable/.GPCSetupEtables/aircraft_familly.etab
+&lt; Load ETABLE _topmodule.bad_course_table, &lt;texttest_tmp_dir&gt;/RD_ib_cas_v8_user/ETABLES/05_A320_TEC/crew_bad_course_dates.etab
+&lt; Load ETABLE _topmodule.compl_func_for_crew, &lt;texttest_tmp_dir&gt;/RD_ib_cas_v8_user/ETABLES/05_A320_TEC/compl_func.etab
+&lt; Load ETABLE _topmodule.crew_base1, &lt;texttest_tmp_dir&gt;/RD_ib_cas_v8_user/ETABLES/05_A320_TEC/crew_table.etab
+&lt; Load ETABLE _topmodule.crew_base2, &lt;texttest_tmp_dir&gt;/RD_ib_cas_v8_user/ETABLES/05_A320_TEC/crew_table.etab
+&lt; Load ETABLE _topmodule.crew_base2_days_off, &lt;texttest_tmp_dir&gt;/RD_ib_cas_v8_user/ETABLES/05_A320_TEC/crew_table.etab
+&lt; Load ETABLE _topmodule.crew_base2_start, &lt;texttest_tmp_dir&gt;/RD_ib_cas_v8_user/ETABLES/05_A320_TEC/crew_table.etab
+&lt; Load ETABLE _topmodule.crew_base3, &lt;texttest_tmp_dir&gt;/RD_ib_cas_v8_user/ETABLES/05_A320_TEC/crew_table.etab
+&lt; Load ETABLE _topmodule.crew_base3_days_off, &lt;texttest_tmp_dir&gt;/RD_ib_cas_v8_user/ETABLES/05_A320_TEC/crew_table.etab
+&lt; Load ETABLE _topmodule.crew_base3_start, &lt;texttest_tmp_dir&gt;/RD_ib_cas_v8_user/ETABLES/05_A320_TEC/crew_table.etab
+&lt; Load ETABLE _topmodule.crew_compl_func, &lt;texttest_tmp_dir&gt;/RD_ib_cas_v8_user/ETABLES/05_A320_TEC/compl_func.etab
+&lt; Load ETABLE _topmodule.crew_compl_func2, &lt;texttest_tmp_dir&gt;/RD_ib_cas_v8_user/ETABLES/05_A320_TEC/compl_func.etab
+&lt; Load ETABLE _topmodule.crew_compl_func2_start, &lt;texttest_tmp_dir&gt;/RD_ib_cas_v8_user/ETABLES/05_A320_TEC/compl_func.etab
+&lt; Load ETABLE _topmodule.crew_compl_func_start, &lt;texttest_tmp_dir&gt;/RD_ib_cas_v8_user/ETABLES/05_A320_TEC/compl_func.etab
+&lt; Load ETABLE _topmodule.crew_end_contract2, &lt;texttest_tmp_dir&gt;/RD_ib_cas_v8_user/ETABLES/05_A320_TEC/crew_table.etab
+&lt; Load ETABLE _topmodule.crew_end_license2, &lt;texttest_tmp_dir&gt;/RD_ib_cas_v8_user/ETABLES/05_A320_TEC/crew_table.etab
+&lt; Load ETABLE _topmodule.crew_extra_motherhood_days_off_table, &lt;texttest_tmp_dir&gt;/RD_ib_cas_v8_user/ETABLES/05_A320_TEC/crew_table.etab
+&lt; Load ETABLE _topmodule.crew_fleet, &lt;texttest_tmp_dir&gt;/RD_ib_cas_v8_user/ETABLES/05_A320_TEC/crew_table.etab
+&lt; Load ETABLE _topmodule.crew_fleet_end2, &lt;texttest_tmp_dir&gt;/RD_ib_cas_v8_user/ETABLES/05_A320_TEC/crew_table.etab
+&lt; Load ETABLE _topmodule.crew_fleet_start, &lt;texttest_tmp_dir&gt;/RD_ib_cas_v8_user/ETABLES/05_A320_TEC/crew_table.etab
+&lt; Load ETABLE _topmodule.crew_is_standby_table, &lt;texttest_tmp_dir&gt;/RD_ib_cas_v8_user/ETABLES/05_A320_TEC/compl_func.etab
+&lt; Load ETABLE _topmodule.crew_main_func, &lt;texttest_tmp_dir&gt;/RD_ib_cas_v8_user/ETABLES/05_A320_TEC/crew_table.etab
+&lt; Load ETABLE _topmodule.crew_main_func_start, &lt;texttest_tmp_dir&gt;/RD_ib_cas_v8_user/ETABLES/05_A320_TEC/crew_table.etab
+&lt; Load ETABLE _topmodule.crew_month_max_block_time, &lt;texttest_tmp_dir&gt;/RD_ib_cas_v8_user/ETABLES/05_A320_TEC/crew_table.etab
+&lt; Load ETABLE _topmodule.crew_num_auto1, &lt;texttest_tmp_dir&gt;/RD_ib_cas_v8_user/ETABLES/05_A320_TEC/automatic_tasks_copy.etab
+------------------ Differences in output --------------------
+5,2447d4
+&lt; 
+&lt; -- Matador::run --
+&lt; 
+&lt; Using Filer to load SubPlan : Timetable/Version/Matador/Matador_All_Crew_Ref_BuddyBids
+&lt; 
+&lt; Parser: Reading file /config/crew_categories, section headed by 'crew_cat'
+&lt; Loaded Crew Category : CT
+&lt; Loaded Crew Category : FO
+&lt; Loaded Crew Category : OT
+&lt; Loaded Crew Category : IN
+&lt; Loaded Crew Category : CS
+&lt; Loaded Crew Category : SC
+&lt; Loaded Crew Category : TP
+&lt; Loaded Crew Category : ST
+&lt; Loaded Crew Category : GL
+&lt; Loaded Crew Category : GU
+&lt; Loading rule set Matador_CO_no_roster_cost
+&lt; 
+&lt; 
+&lt; Filer: Loading subplan-specific files
+&lt; Parser: Reading file /APC_FILES/problems
+&lt; Loaded Crew Vector : 1/1/0//0/1/0/0/0/1/0/0/0
+&lt; Set period of problem to 2001-03-29T00:00 -&gt; 2001-06-03T23:59
+&lt; 
+&lt; Parser: Reading file /APC_FILES/rules, section headed by 'SECTION rules'
+&lt; Parser: Reading file /APC_FILES/rules, section headed by '&lt;PARAMETERS&gt;'
+&lt; Parser: Reading file /APC_FILES/rules, section headed by '&lt;SETS&gt;'
+&lt; Parser: Reading file /APC_FILES/bases
+&lt; Parser: Reading file /APC_FILES/flights
+------------------ Missing result in solution --------------------
+SECTION apc_oags Solution_15
+147;APC_SEGMENT_KEY_1;APC_SEGMENT;APC_SEGMENT_TYPE;FLIGHT_CARRIER;FLIGHT_NUMBER;FLIGHT_DEP_AIRP;FLIGHT_ARR_AIRP;FLIGHT_DATE;FLIGHT_DEP_TIME;FLIGHT_BLOCK_TIME;FLIGHT_IATA;CUSTOM_AC_TYPE;FLIGHT_SUFFIX;FLIGHT_LEG_NO;TASK_SUB_CODE;ONWARD_SEGMENT_KEY;FLIGHT_SERVICE_TYPE;BOOKED_CREW_VECTOR_LENGTH;BOOKED_CREW_VECTOR;AC_OWNER;FLIGHT_ONW_FLIGHT_NUM;PASSENGER_TERMINAL_DEPARTURE_STATION;PASSENGER_TERMINAL_ARRIVAL_STATION;FIRST_CLASS_CAP;BUSINESS_CLASS_CAP;ECONOMY_CLASS_CAP;FOURTH_CLASS_CAP;
+SECTION ground_transport Solution_15
+147;APC_SEGMENT_KEY_1;APC_SEGMENT;APC_SEGMENT_TYPE;FLIGHT_CARRIER;FLIGHT_NUMBER;FLIGHT_DEP_AIRP;FLIGHT_ARR_AIRP;FLIGHT_DATE;FLIGHT_DEP_TIME;FLIGHT_BLOCK_TIME;FLIGHT_IATA;CUSTOM_AC_TYPE;FLIGHT_SUFFIX;FLIGHT_LEG_NO;TASK_SUB_CODE;ONWARD_SEGMENT_KEY;FLIGHT_SERVICE_TYPE;BOOKED_CREW_VECTOR_LENGTH;BOOKED_CREW_VECTOR;AC_OWNER;FLIGHT_ONW_FLIGHT_NUM;PASSENGER_TERMINAL_DEPARTURE_STATION;PASSENGER_TERMINAL_ARRIVAL_STATION;FIRST_CLASS_CAP;BUSINESS_CLASS_CAP;ECONOMY_CLASS_CAP;FOURTH_CLASS_CAP;
+SECTION apc_assignments Solution_15
+176;APC_CREW_ID;APC_CREW_SIGNATURE;APC_CREW_TRIP_COUNT;
+178;APC_TRIP_PTR;APC_TRIP_BIT_FIELD;APC_TRIP_ASSIGNED_POS;APC_TRIP_CODES;
+177;192776;AGUILELLA VIVES        ,192776;1;
+179;684;0x0;1;;
+177;294475;AGUIRRE QUINTERO       ,294475;13;
+179;16;0x0;0;;
+179;221;0x0;0;;
+179;1087;0x1;0;;
+179;1088;0x1;0;;
+179;1089;0x1;0;;
+179;1090;0x1;0;;
+179;1091;0x1;0;;
+179;1092;0x1;0;;
+179;1093;0x1;0;;
+179;1094;0x1;0;;
+179;1095;0x1;0;;
+179;903;0x0;0;;
+179;1096;0x1;0;;
+177;024371;AHMED CHAVARINO        ,024371;17;
+179;18;0x0;1;;
+179;1104;0x1;1;;
+179;1105;0x1;1;;
+179;1106;0x1;1;;
+179;1107;0x1;1;;
+179;1108;0x1;1;;
+</PRE>
+
+<A NAME="master.i386_linux.parallelcould not be run"></A>
+<H3>Detailed information for the tests that could not be run:</H3>
+
+<A NAME="master.i386_linux.parallelRD_ib_cas_v8scripts allcrew_buddy_bids"></A>
+<H4>TEST could not be run : RD_ib_cas_v8scripts allcrew_buddy_bids (
+<A HREF="test_master.html#master.i386_linux.parallelRD_ib_cas_v8scripts allcrew_buddy_bids">Last six days</A>
+<A HREF="test_master_weekend.html#master.i386_linux.parallelRD_ib_cas_v8scripts allcrew_buddy_bids">Weekend</A>
+<A HREF="test_master_all_Mar2006.html#master.i386_linux.parallelRD_ib_cas_v8scripts allcrew_buddy_bids">Mar2006</A>
+<A HREF="test_master_all_Feb2006.html#master.i386_linux.parallelRD_ib_cas_v8scripts allcrew_buddy_bids">Feb2006</A>
+<A HREF="test_master_all_Jan2006.html#master.i386_linux.parallelRD_ib_cas_v8scripts allcrew_buddy_bids">Jan2006</A>
+
+)</H4>
+
+<PRE>Trying to use ruleset 'Matador_CO' that failed to build.</PRE>
+
+
+
+</BODY> </HTML>
