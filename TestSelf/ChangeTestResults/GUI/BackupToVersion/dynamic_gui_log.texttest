@@ -1,7 +1,7 @@
 Enabling entry completion, using matching 1
 
 Waiting for application event 'completion of test actions' to occur.
-Top Window title is TextTest dynamic GUI : testing MEM,MEM.2 (started at 26Jan11:39:17)
+Top Window title is TextTest dynamic GUI : testing HELLO (started at 26Jan11:35:25)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -113,90 +113,63 @@ Tabs showing : Status, Run Info
 
 Test progress:
 
-Changing GUI status to: 'TextTest started at 26Jan11:39:18.'
+Changing GUI status to: 'TextTest started at 26Jan11:35:26.'
 
 Test progress:
 --> Not started : 1, colour 'white', font 'bold'', visible=True
 
-Test progress:
---> Not started : 2, colour 'white', font 'bold'', visible=True
-
-Progress bar set to fraction 0.0, text '0 of 2 tests completed'
+Progress bar set to fraction 0.0, text '0 of 1 tests completed'
 
 Test Tree description...
--> TargetApp (mem)
-->   Failures
--> TargetApp (mem.2)
-->   Failures
+-> TargetApp (hello)
+->   OutDiff
 
-Test column header set to 'Tests: 0/2 selected, none hidden'
+Test column header set to 'Tests: 0/1 selected, none hidden'
 
-Redrawing test Failures coloured yellow
-
-Test progress:
---> Not started : 1, colour 'white', font 'bold'', visible=True
---> Running : 1, colour 'yellow', font 'bold'', visible=True
-
-Progress bar set to fraction 0.5, text '1 of 2 tests completed'
-
-Redrawing test Failures coloured green
-(Second column '13% larger' coloured red)
-
-Test progress:
---> Not started : 1, colour 'white', font 'bold'', visible=True
---> Running : 0, colour 'white', font ''', visible=True
---> Failed : 1, colour 'red', font 'bold'', visible=True
-----> Performance differences : 1, colour 'red', font 'bold'', visible=True
-------> Memory+ : 1, colour 'red', font 'bold'', visible=True
-
-Redrawing test Failures coloured yellow
+Redrawing test OutDiff coloured yellow
 
 Test progress:
 --> Not started : 0, colour 'white', font ''', visible=True
 --> Running : 1, colour 'yellow', font 'bold'', visible=True
---> Failed : 1, colour 'red', font 'bold'', visible=True
-----> Performance differences : 1, colour 'red', font 'bold'', visible=True
-------> Memory+ : 1, colour 'red', font 'bold'', visible=True
 
-Progress bar set to fraction 1.0, text 'All 2 tests completed at 26Jan11:39:18'
+Progress bar set to fraction 1.0, text 'All 1 tests completed at 26Jan11:35:26'
 
-Redrawing test Failures coloured green
-(Second column '13% larger' coloured red)
+Redrawing test OutDiff coloured red
+(Second column 'output different(+)' coloured red)
 
 Test progress:
 --> Not started : 0, colour 'white', font ''', visible=True
 --> Running : 0, colour 'white', font ''', visible=True
---> Failed : 2, colour 'red', font 'bold'', visible=True
-----> Performance differences : 2, colour 'red', font 'bold'', visible=True
-------> Memory+ : 2, colour 'red', font 'bold'', visible=True
-Expected application event 'completion of test actions' occurred, proceeding.
+--> Failed : 1, colour 'red', font 'bold'', visible=True
+----> Differences : 1, colour 'red', font 'bold'', visible=True
+------> output different : 1, colour 'red', font 'bold'', visible=True
+------> errors missing : 1, colour 'red', font 'bold'', visible=True
+Only one test found, selecting OutDiff
 
-'set test selection to' event created with arguments 'Failures under TargetApp (mem)'
-
-Test column header set to 'Tests: 1/2 selected, none hidden'
+Test column header set to 'Tests: All 1 selected, none hidden'
 Setting sensitivity of action '_Save' to True
 Setting sensitivity of action 'Save _As...' to True
 Setting sensitivity of action 'S_ave Selection...' to True
 Setting sensitivity of action '_Mark' to True
 Setting sensitivity of action 'Recompute Status' to True
 
-Setting file-view title to 'Failures'
-Adding file memory.mem under heading 'Comparison Files', coloured red
-(Second column '13% larger' coloured red)
-Adding file output.mem under heading 'Comparison Files', coloured green
+Setting file-view title to 'OutDiff'
+Adding file output.hello under heading 'Comparison Files', coloured red
+Adding file errors.hello under heading 'Missing Files', coloured red
 
 Pane separator positioned 46% from the top
 
 ---------- Text Info Window ----------
-Test used more memory :
----------- Differences in memory(larger) ----------
-1c1
-< Max Memory  :      42.3 MB
----
-> Max Memory  :      47.8 MB
+Test FAILED :
+---------- Differences in output ----------
+0a1
+> Hello World!
+---------- Missing result in errors ----------
+Error text
 --------------------------------------
 
 Tabs showing : Test, Status, Run Info
+Expected application event 'completion of test actions' occurred, proceeding.
 
 'save results with non-default settings' event created with arguments ''
 ---------- Dialog 'Saving 1 tests' ----------
@@ -204,22 +177,37 @@ Default action is labelled 'gtk-save'
 Viewing entry for option 'Version to save'
 Viewing entry for option 'Version to save previous results as'
 Viewing check button for switch 'Replace successfully compared files also'
-Viewing radio button for switch 'Save', options Average performance/Exact performance'. Default value 1.
 ---------------------------------------------
 
-'choose average performance for save' event created with arguments ''
+'enter version to save =' event created with arguments 'old'
+
+'enter version to save previous results as =' event created with arguments 'old'
+
+'press ok' event created with arguments ''
+---------- Dialog 'TextTest Error' ----------
+Default action is labelled 'gtk-ok'
+Using stock icon 'gtk-dialog-error'
+Cannot backup to the same version we're trying to save! Choose another name.
+---------------------------------------------
+
+'agree to texttest message' event created with arguments ''
+Adding entry completion 'old' ...
+
+'enter version to save =' event created with arguments ''
 
 'press ok' event created with arguments ''
 
 Changing GUI status to: 'Saving 1 tests ...'
-Saving MEM test-case Failures - version , exactness 0
+Saving HELLO test-case OutDiff - version , exactness 1
 
-Changing GUI status to: 'Saving MEM test-case Failures : memory(larger), no version'
+Changing GUI status to: 'Saving HELLO test-case OutDiff : output, no version'
 
-Redrawing test Failures coloured green
+Changing GUI status to: 'Saving HELLO test-case OutDiff : errors, no version'
+
+Redrawing test OutDiff coloured green
 Redrawing suite TargetApp : second column 'All 1 tests successful' coloured green
 
-Test column header set to 'Tests: 0/2 selected, none hidden'
+Test column header set to 'Tests: 0/1 selected, none hidden'
 Setting sensitivity of action '_Save' to False
 Setting sensitivity of action 'Save _As...' to False
 Setting sensitivity of action 'S_ave Selection...' to False
@@ -229,83 +217,24 @@ Setting sensitivity of action 'Recompute Status' to False
 Test progress:
 --> Not started : 0, colour 'white', font ''', visible=True
 --> Running : 0, colour 'white', font ''', visible=True
---> Failed : 1, colour 'red', font 'bold'', visible=True
-----> Performance differences : 1, colour 'red', font 'bold'', visible=True
-------> Memory+ : 1, colour 'red', font 'bold'', visible=True
+--> Failed : 0, colour 'white', font ''', visible=True
+----> Differences : 0, colour 'white', font ''', visible=True
+------> output different : 0, colour 'white', font ''', visible=True
+------> errors missing : 0, colour 'white', font ''', visible=True
 --> Succeeded : 1, colour 'green', font 'bold'', visible=True
 
 Tabs showing : Status, Run Info
-Setting recalculation icon to 'gtk-refresh'
 
 Test progress:
 --> Not started : 0, colour 'white', font ''', visible=True
 --> Running : 0, colour 'white', font ''', visible=True
---> Failed : 1, colour 'red', font 'bold'', visible=True
-----> Performance differences : 1, colour 'red', font 'bold'', visible=True
-------> Memory+ : 1, colour 'red', font 'bold'', visible=True
+--> Failed : 0, colour 'white', font ''', visible=True
+----> Differences : 0, colour 'white', font ''', visible=True
+------> output different : 0, colour 'white', font ''', visible=True
+------> errors missing : 0, colour 'white', font ''', visible=True
 --> Succeeded : 1, colour 'green', font 'bold'', visible=True
 
 Changing GUI status to: 'Saved 1 tests.'
-
-'set test selection to' event created with arguments 'Failures under TargetApp (mem.2)'
-
-Test column header set to 'Tests: 1/2 selected, none hidden'
-Setting sensitivity of action '_Save' to True
-Setting sensitivity of action 'Save _As...' to True
-Setting sensitivity of action 'S_ave Selection...' to True
-Setting sensitivity of action '_Mark' to True
-Setting sensitivity of action 'Recompute Status' to True
-
-Setting file-view title to 'Failures'
-Adding file memory.mem under heading 'Comparison Files', coloured red
-(Second column '13% larger' coloured red)
-Adding file output.mem under heading 'Comparison Files', coloured green
-
-Pane separator positioned 46% from the top
-
----------- Text Info Window ----------
-Test used more memory :
----------- Differences in memory(larger) ----------
-1c1
-< Max Memory  :      42.3 MB
----
-> Max Memory  :      47.8 MB
---------------------------------------
-
-Tabs showing : Test, Status, Run Info
-
-Setting file-view title to 'Failures'
-Adding file memory.mem under heading 'Comparison Files', coloured red
-(Second column '13% larger' coloured red)
-(Recalculation icon showing 'gtk-refresh')
-Adding file output.mem under heading 'Comparison Files', coloured green
-
-'recompute test status, including progress information if appropriate' event created with arguments ''
-Adding entry completion '2' ...
-
-Changing GUI status to: 'Rereading configuration for MEM.2 ...'
-
-Changing GUI status to: 'Recomputing status of MEM.2 test-case Failures ...'
-
-Redrawing test Failures coloured green
-(Second column '6% larger' coloured red)
-
-Setting file-view title to 'Failures'
-Adding file memory.mem under heading 'Comparison Files', coloured red
-(Second column '6% larger' coloured red)
-Adding file output.mem under heading 'Comparison Files', coloured green
-
----------- Text Info Window ----------
-Test used more memory :
----------- Differences in memory(larger) ----------
-1c1
-< Max Memory  :      45.05 MB
----
-> Max Memory  :      47.8 MB
---------------------------------------
-Setting recalculation icon to ''
-
-Changing GUI status to: 'Recomputed status of 1 test.'
 
 'quit' event created with arguments ''
 
