@@ -1,5 +1,5 @@
-<-SRV:TextTest slave server started on 192.168.98.14:34468
-<-CMD:cd /nfs/vm/texttest-tmp/geoff/texttest.carmen.17Jun120100.30889/texttest.carmen/carmen/APC/Miscellaneous/ViewApcLog/texttesttmp/apc.sleep.17Jun120103.30906/slavelogs; env 'USECASE_RECORD_SCRIPT=' 'USECASE_REPLAY_SCRIPT=' qsub -N Test-umlauf_spiel.Spielscripts-APC.sleep -p -1.7 -l "carmarch=*i386_linux*,carmrunmaster=1,osversion=RHEL4,short" -w e -notify -m n -cwd -b y -V -o Test-umlauf_spiel.Spielscripts-APC.sleep.log -e Test-umlauf_spiel.Spielscripts-APC.sleep.errors 'exec $SHELL -c "exec /users/geoff/work/master/Testing/TextTest/bin/texttest -d /carm/proj/texttest-tmp/geoff/texttest.carmen.17Jun120100.30889/texttest.carmen/carmen/APC/Miscellaneous/ViewApcLog/TargetApp -a apc.sleep -l -tp Spielscripts/umlauf_spiel -slave /carm/proj/texttest-tmp/geoff/texttest.carmen.17Jun120100.30889/texttest.carmen/carmen/APC/Miscellaneous/ViewApcLog/texttesttmp/apc.sleep.17Jun120103.30906 -servaddr 192.168.98.14:34466 -x -xr /carm/proj/texttest-tmp/geoff/texttest.carmen.17Jun120100.30889/texttest.carmen/carmen/APC/Miscellaneous/ViewApcLog/logging -xw /carm/proj/texttest-tmp/geoff/texttest.carmen.17Jun120100.30889/texttest.carmen/carmen/APC/Miscellaneous/ViewApcLog"'
+<-SRV:TextTest slave server started on 10.67.7.13:42533
+<-CMD:cd /nfs/vm/texttest-tmp/geoff/texttest.27Jan145350.26797/texttest.carmen/carmen/APC/Miscellaneous/ViewApcLog/texttesttmp/apc.sleep.27Jan145506.2786/slavelogs; env 'USECASE_RECORD_SCRIPT=' 'USECASE_REPLAY_SCRIPT=' qsub -N Test-umlauf_spiel.Spielscripts-APC.sleep -p -1.7 -l "carmarch=*i386_linux*,carmrunmaster=1,osversion=RHEL4,short" -w e -notify -m n -cwd -b y -V -o Test-umlauf_spiel.Spielscripts-APC.sleep.log -e Test-umlauf_spiel.Spielscripts-APC.sleep.errors 'exec $SHELL -c "exec /carm/proj/texttest/release/current/site/bin/texttest -d /carm/proj/texttest-tmp/geoff/texttest.27Jan145350.26797/texttest.carmen/carmen/APC/Miscellaneous/ViewApcLog/TargetApp -a apc.sleep -l -tp Spielscripts/umlauf_spiel -slave /carm/proj/texttest-tmp/geoff/texttest.27Jan145350.26797/texttest.carmen/carmen/APC/Miscellaneous/ViewApcLog/texttesttmp/apc.sleep.27Jan145506.2786 -servaddr 10.67.7.13:36610 -x -xr /carm/proj/texttest-tmp/geoff/texttest.27Jan145350.26797/texttest.carmen/carmen/APC/Miscellaneous/ViewApcLog/logging -xw /carm/proj/texttest-tmp/geoff/texttest.27Jan145350.26797/texttest.carmen/carmen/APC/Miscellaneous/ViewApcLog"'
 ->OUT:Your job 2897728 ("Test-umlauf_spiel.Spielscripts-APC.sleep") has been submitted
 <-SRV:Completed submission of all tests
 ->FIL:apc.sleep.17Jun120103.30906
@@ -44,9 +44,9 @@ S'start'
 p18
 sb.
 ->FIL:apc.sleep.17Jun120103.30906.edit_2
-<-CMD:rsh some_machine 'env DISPLAY=portmoller:30899.0 xterm -bg white -T "umlauf_spiel (apclog.apc)" -e less +F /carm/proj/texttest-tmp/geoff/texttest.carmen.17Jun120100.30889/texttest.carmen/carmen/APC/Miscellaneous/ViewApcLog/texttesttmp/apc.sleep.17Jun120103.30906/apc.sleep/Spielscripts/umlauf_spiel/apclog.apc'
+<-CMD:rsh some_machine 'env DISPLAY=juliaca:1797.0 xterm -bg white -T "umlauf_spiel (apclog.apc)" -e less +F /carm/proj/texttest-tmp/geoff/texttest.27Jan145350.26797/texttest.carmen/carmen/APC/Miscellaneous/ViewApcLog/texttesttmp/apc.sleep.27Jan145506.2786/apc.sleep/Spielscripts/umlauf_spiel/apclog.apc'
 ->EXC:-2
-<-CMD:rsh some_machine "env DISPLAY=portmoller:30899.0 xemacs /carm/proj/texttest-tmp/geoff/texttest.carmen.17Jun120100.30889/texttest.carmen/carmen/APC/Miscellaneous/ViewApcLog/texttesttmp/apc.sleep.17Jun120103.30906/apc.sleep/Spielscripts/umlauf_spiel/apclog.apc"
+<-CMD:rsh some_machine "env DISPLAY=juliaca:1797.0 emacs /carm/proj/texttest-tmp/geoff/texttest.27Jan145350.26797/texttest.carmen/carmen/APC/Miscellaneous/ViewApcLog/texttesttmp/apc.sleep.27Jan145506.2786/apc.sleep/Spielscripts/umlauf_spiel/apclog.apc"
 ->ERR:
 Lisp backtrace follows:
 
