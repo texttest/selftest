@@ -18,35 +18,15 @@ queue_system_max_capacity:60
 
 # ---------------- Values needed to run in batch mode at Carmen -------------------
 
-# Machines where we can start Xvfb
-virtual_display_machine:fougamou
-virtual_display_machine:singleton
-
-[batch_version]
-default:linux_std
-default:rundep
-default:sparc
-default:unix
-default:powerpc
-default:x86_64_solaris
-default:lsf
-default:sge
-default:carmen
-default:rhel4
-# collect coverage info with local batch runs...
-local:cover
-
 [batch_recipients]
-nightjob:carmen.testtool_tests
+tt_nightjob:carmen.testtool_tests
 
 [batch_use_collection]
-nightjob:true
+tt_nightjob:true
 
 # ---------------- Values for the static GUI -------------------
 
 [version_priority]
-powerpc:1
-sparc:1
 x86_64_solaris:1
 carmen:2
 sge:3
@@ -70,7 +50,6 @@ version_to_reconnect_to:unix.linux_std
 [gui_entry_options]
 use_checkout:/carm/proj/texttest/release/current
 use_checkout:/usr/local/share/texttest
-use_checkout:/carm/master/Testing/TextTest
 use_checkout:/users/geoff/work/release/texttest-3.10/source/
 use_checkout:/users/geoff/work/release/texttest-3.9.1/source/
 checkout_to_use_for_recording:/carm/proj/texttest/release/current
@@ -79,23 +58,22 @@ checkout_to_use_for_recording:/carm/master/Testing/TextTest
 checkout_to_use_for_recording:/users/geoff/work/release/texttest-3.10/source/
 checkout_to_use_for_recording:/users/geoff/work/release/texttest-3.9.1/source/
 run_this_version:x86_64_solaris
-run_this_version:powerpc
-run_this_version:sparc
+run_this_version:rhel4
 version_to_reconnect_to:unix.linux_std
 version_to_reconnect_to:unix.x86_64_solaris
+version_to_reconnect_to:unix.rhel4
 version_to_reconnect_to:windows
-request_lsf_queue:waiting
 [end]
 
 [batch_result_repository]
-nightjob:/carm/proj/texttest/html/TestStateRepository
+tt_nightjob:/carm/proj/texttest/html/TestStateRepository
 
 [historical_report_location]
-nightjob:/carm/documents/Development/Texttest/Texttest/TestResults
+tt_nightjob:/carm/documents/Development/Texttest/Texttest/TestResults
 [end]
 
 [historical_report_all_page]
-nightjob:false
+tt_nightjob:false
 [end]
 
 unsaveable_version:unix
@@ -360,5 +338,5 @@ interpreter:ttpython
 default_checkout:master
 [checkout_location]
 default:~/work/${TEXTTEST_CHECKOUT_NAME}/Testing/TextTest
-nightjob:/carm/proj/texttest/release/current
+tt_nightjob:/carm/proj/texttest/release/current
 [end]
