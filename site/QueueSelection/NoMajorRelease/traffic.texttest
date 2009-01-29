@@ -1,0 +1,6 @@
+<-SRV:TextTest slave server started on 192.168.99.56:55519
+<-CMD:cd /nfs/vm/texttest-tmp/geoff/texttest.03Jun144624.7006/texttest.carmen/site/QueueSelection/NoMajorRelease/texttesttmp/console.badresource.03Jun144712.6394/slavelogs; qsub -N Test-5Min-HELLO.badresource -p -300.0 -l "carmarch=*i386_linux*,no_such_resource,short" -w e -notify -m n -cwd -b y -V -o Test-5Min-HELLO.badresource.log -e Test-5Min-HELLO.badresource.errors 'exec $SHELL -c "exec /users/geoff/work/master/Testing/TextTest/bin/texttest -d /carm/proj/texttest-tmp/geoff/texttest.03Jun144624.7006/texttest.carmen/site/QueueSelection/NoMajorRelease/TargetApp -a hello.badresource -l -tp 5Min -slave /carm/proj/texttest-tmp/geoff/texttest.03Jun144624.7006/texttest.carmen/site/QueueSelection/NoMajorRelease/texttesttmp/console.badresource.03Jun144712.6394 -servaddr 192.168.99.56:55505 -x -xr /carm/proj/texttest-tmp/geoff/texttest.03Jun144624.7006/texttest.carmen/site/QueueSelection/NoMajorRelease/logging -xw /carm/proj/texttest-tmp/geoff/texttest.03Jun144624.7006/texttest.carmen/site/QueueSelection/NoMajorRelease"'
+->ERR:Unable to run job: unknown resource "no_such_resource".
+Exiting.
+->EXC:1
+<-SRV:Completed submission of all tests

@@ -1,0 +1,18 @@
+<-SRV:TextTest slave server started on 10.67.7.12:55735
+<-CMD:cd /nfs/vm/texttest-tmp/geoff/texttest.29Jan163107.8432/texttest.siteconfmods/site/matador/RaveCompile/RuleCompDisappears/texttesttmp/cas.29Jan163123.24754/slavelogs; env 'CARMSYS=/carm/proj/texttest/selftest_data/CARMSYS' 'CARMUSR=/carm/proj/texttest/selftest_data/CARMUSRs/RD_ib_cas_v8_user' 'CARMTMP=/carm/proj/texttest/selftest_data/CARMTMPs/RD_ib_cas_v8_tmp' '_AUTOTEST__LOCAL_COMPILE_=1' qsub -N Rules-Matador_CO.StaticLinkUser-matador -l "carmarch=*i386_linux*,carmbuildmaster=1,rave" -w e -notify -m n -cwd -b y -V -o Rules-Matador_CO.StaticLinkUser-matador.log -e Rules-Matador_CO.StaticLinkUser-matador.errors 'exec $SHELL -c "exec /users/geoff/work/master/Testing/TextTest/site/libexec/remotecmd.py Matador_CO./carm/proj/texttest/selftest_data/CARMTMPs/RD_ib_cas_v8_tmp 10.67.7.12:43143 /carm/proj/texttest/selftest_data/CARMSYS/bin/crc_compile matador -optimize -archs i386_linux /carm/proj/texttest/selftest_data/CARMUSRs/RD_ib_cas_v8_user/crc/source/Matador_CO"'
+->OUT:Your job 506668 ("Rules-Matador_CO.StaticLinkUser-matador") has been submitted
+<-CMD:cd /nfs/vm/texttest-tmp/geoff/texttest.29Jan163107.8432/texttest.siteconfmods/site/matador/RaveCompile/RuleCompDisappears/texttesttmp/cas.29Jan163123.24754/slavelogs; env 'CARMSYS=/carm/proj/texttest/selftest_data/CARMSYS' 'CARMUSR=/carm/proj/texttest/selftest_data/CARMUSRs/RD_ib_cas_v8_user' 'CARMTMP=/carm/proj/texttest/selftest_data/CARMTMPs/RD_ib_cas_v8_tmp_2' '_AUTOTEST__LOCAL_COMPILE_=1' qsub -N Rules-Matador_CO.StaticLinkUser-matador.othercarmtmp -l "carmarch=*i386_linux*,carmbuildmaster=1,rave" -w e -notify -m n -cwd -b y -V -o Rules-Matador_CO.StaticLinkUser-matador.othercarmtmp.log -e Rules-Matador_CO.StaticLinkUser-matador.othercarmtmp.errors 'exec $SHELL -c "exec /users/geoff/work/master/Testing/TextTest/site/libexec/remotecmd.py Matador_CO./carm/proj/texttest/selftest_data/CARMTMPs/RD_ib_cas_v8_tmp_2 10.67.7.12:43143 /carm/proj/texttest/selftest_data/CARMSYS/bin/crc_compile matador -optimize -archs i386_linux /carm/proj/texttest/selftest_data/CARMUSRs/RD_ib_cas_v8_user/crc/source/Matador_CO"'
+->OUT:Your job 506669 ("Rules-Matador_CO.StaticLinkUser-matador.othercarmtmp") has been submitted
+<-SRV:Completed submission of all rule compilations and tests that don't require rule compilation
+->FIL:slavelogs
+->CLI:remotecmd.py:Matador_CO./carm/proj/texttest/selftest_data/CARMTMPs/RD_ib_cas_v8_tmp:start
+->CLI:remotecmd.py:Matador_CO./carm/proj/texttest/selftest_data/CARMTMPs/RD_ib_cas_v8_tmp_2:start
+<-CMD:qdel 506668
+->OUT:denied: job "506668" does not exist
+<-CMD:qacct -j 506668
+->OUT:denied: job "506668" does not exist
+<-CMD:qdel 506669
+->OUT:denied: job "506669" does not exist
+<-CMD:qacct -j 506669
+->OUT:denied: job "506669" does not exist
+<-SRV:Completed submission of all tests

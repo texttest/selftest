@@ -1,0 +1,25 @@
+# Current Config Module
+config_module:railfleet
+
+# No need to involve the virtual display, it's tested
+# elsewhere and unlikely to interact with functionality in this module
+virtual_display_machine:{CLEAR LIST}
+
+#For GUI recording in JUseCase
+use_case_record_mode:GUI
+use_case_recorder:jusecase
+slow_motion_replay_speed:2
+
+# Full name of this Testsuite
+full_name:RailFleet
+
+# For rule compilation
+rave_name:mirador
+
+# Binary (relative to checkout) to be used
+binary:${TEXTTEST_HOME}/run_planeditor.py
+
+# Catalogues
+create_catalogues:true
+
+#lines_of_crc_compile:5000

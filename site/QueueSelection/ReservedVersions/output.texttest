@@ -1,0 +1,25 @@
+TextTest will write diagnostics in /carm/proj/texttest-tmp/geoff/texttest.13Jan094916.23724/texttest.carmen/site/QueueSelection/ReservedVersions based on file at /carm/proj/texttest-tmp/geoff/texttest.13Jan094916.23724/texttest.carmen/site/QueueSelection/ReservedVersions/logging
+Using SGE queues for Application HELLO, version 12.badresource.parisc_2_0
+Using SGE queues for Application HELLO, version sparc.badresource
+Using SGE queues for Application HELLO, version badresource.13.powerpc
+Using SGE queues for Application HELLO, version i386_linux.TRACKING_1
+Q: Submitting HELLO.12.badresource.parisc_2_0 test-case 5Min  to SGE queue short, requesting carmarch=*parisc_2_0*,carmrun12=1,no_such_resource
+S: HELLO.12.badresource.parisc_2_0 test-case 5Min not compared:
+Failed to submit to SGE (Unable to run job: unknown resource "no_such_resource".)
+Submission command was 'qsub -N Test-5Min-HELLO.12.badresource.parisc_2_0 -p -300.0 -l carmarch=*parisc_2_0*,carmrun12=1,no_such_resource,short -w e -notify -m n -cwd -b y -V -o Test-5Min-HELLO.12.badresource.parisc_2_0.log -e Test-5Min-HELLO.12.badresource.parisc_2_0.errors ... '
+
+Q: Submitting HELLO.sparc.badresource test-case 5Min  to SGE queue normal, requesting carmarch=*sparc*,carmrunmaster=1,no_such_resource
+S: HELLO.sparc.badresource test-case 5Min not compared:
+Failed to submit to SGE (Unable to run job: unknown resource "no_such_resource".)
+Submission command was 'qsub -N Test-5Min-HELLO.sparc.badresource -p -300.0 -l carmarch=*sparc*,carmrunmaster=1,no_such_resource,normal -w e -notify -m n -cwd -b y -V -o Test-5Min-HELLO.sparc.badresource.log -e Test-5Min-HELLO.sparc.badresource.errors ... '
+
+Q: Submitting HELLO.badresource.13.powerpc test-case 5Min  to SGE queue short, requesting carmarch=*powerpc*,carmrun13=1,no_such_resource
+S: HELLO.badresource.13.powerpc test-case 5Min not compared:
+Failed to submit to SGE (Unable to run job: unknown resource "no_such_resource".)
+Submission command was 'qsub -N Test-5Min-HELLO.badresource.13.powerpc -p -300.0 -l carmarch=*powerpc*,carmrun13=1,no_such_resource,short -w e -notify -m n -cwd -b y -V -o Test-5Min-HELLO.badresource.13.powerpc.log -e Test-5Min-HELLO.badresource.13.powerpc.errors ... '
+
+Q: Submitting HELLO.i386_linux.TRACKING_1 test-case 5Min  to SGE queue short, requesting carmarch=*i386_linux*,carmrunTRACKING_1=1
+S: HELLO.i386_linux.TRACKING_1 test-case 5Min not compared:
+Failed to submit to SGE (Unable to run job: unknown resource "no_such_resource".)
+Submission command was 'qsub -N Test-5Min-HELLO.i386_linux.TRACKING_1 -p -300.0 -l carmarch=*i386_linux*,carmrunTRACKING_1=1,short -w e -notify -m n -cwd -b y -V -o Test-5Min-HELLO.i386_linux.TRACKING_1.log -e Test-5Min-HELLO.i386_linux.TRACKING_1.errors ... '
+

@@ -1,91 +1,17 @@
-
-##==============================================================================
-##Stuff that only works at Carmen!
-
-# Run with SGE at Carmen
-config_module:carmenqueuesystem
-
-default_major_release:none
-# handle this separately
-default_architecture:none
-
-extra_search_directory:carmen/siteconfig
-
-# Replace with bzr when we can!
-#interactive_action_module:cvs
-
-# ---------------- Values needed to run in batch mode at Carmen -------------------
-
-[batch_filter_file]
-tt_nightjob:nightjob
-
-[batch_recipients]
-tt_nightjob:carmen.testtool_tests
-
-[batch_use_collection]
-tt_nightjob:true
-
-# ---------------- Values for the static GUI -------------------
-
-[version_priority]
-x86_64_solaris:1
-carmen:2
-sge:3
-lsf:3
-queuesystem:4
-cover:5
-rundep:6
-[end]
-
-[view_program]
-overview*:firefox
-[end]
-
-[gui_entry_overrides]
-auto-replay_in_dynamic_gui:1
-temporary_result_directory:/carm/proj/texttest/nightjob_tmp
-version_to_reconnect_to:unix.linux_std
-[end]
-
-# GUI configuration, drop-down lists to appear in static gui...
-[gui_entry_options]
-use_checkout:/carm/proj/texttest/release/current
-use_checkout:/usr/local/share/texttest
-use_checkout:/users/geoff/work/release/texttest-3.10/source/
-use_checkout:/users/geoff/work/release/texttest-3.9.1/source/
-checkout_to_use_for_recording:/carm/proj/texttest/release/current
-checkout_to_use_for_recording:/usr/local/share/texttest
-checkout_to_use_for_recording:/users/geoff/work/release/texttest-3.10/source/
-checkout_to_use_for_recording:/users/geoff/work/release/texttest-3.9.1/source/
-run_this_version:x86_64_solaris
-run_this_version:rhel4
-version_to_reconnect_to:unix.linux_std
-version_to_reconnect_to:unix.x86_64_solaris
-version_to_reconnect_to:unix.rhel4
-version_to_reconnect_to:windows
-[end]
-
-[batch_result_repository]
-tt_nightjob:/carm/proj/texttest/html/TestStateRepository
-
-[historical_report_location]
-tt_nightjob:/carm/documents/Development/Texttest/Texttest/TestResults
-[end]
-
-[historical_report_all_page]
-tt_nightjob:false
-[end]
-
-unsaveable_version:unix
-unsaveable_version:linux_std
-
-## end of stuff only for use at Carmen
-## ================================================================
+# Main configuration for the self-tests
 
 # Path to the executable
 executable:${TEXTTEST_CHECKOUT}/bin/texttest.py
 
-checkout_location:${TEXTTEST_HOME}/../source
+# Need to load site-specific configuration in
+extra_search_directory:site/siteconfig
+# ...and have a fallback if the site directory isn't present
+extra_search_directory:default_site
+
+import_config_file:site_configfile
+
+# Replace with bzr when we can!
+#interactive_action_module:cvs
 
 [run_dependent_text]
 output*:TextTest will write diagnostics
@@ -273,9 +199,6 @@ collect_traffic:time
 # Tell it that we want to track what files are created
 create_catalogues:true
 
-# Rescue any leaked Xvfb processes
-catalogue_process_string:Killing Xvfb process
-
 # Settings for creation of test cases
 use_case_record_mode:GUI
 
@@ -327,16 +250,6 @@ extra_version:rundep
 extra_version:sge
 extra_version:lsf
 
-## ================================================================
-## more stuff only for use at Carmen
-extra_version:carmen
-
-# Use the same environment as the parent TextTest
-interpreter:ttpython
-
-# Settings for Carmen
-default_checkout:master
-[checkout_location]
-default:~/work/${TEXTTEST_CHECKOUT_NAME}/Testing/TextTest
-tt_nightjob:/carm/proj/texttest/release/current
-[end]
+## We have site-specific config-modules, so we add their tests here
+# Naturally this shouldn't be here!
+extra_version:siteconfmods

@@ -1,0 +1,21 @@
+<-CMD:env 'CARMSYS=/carm/proj/texttest/selftest_data/studio_CARMSYS' 'CARMUSR=/carm/proj/texttest/selftest_data/CARMUSRs/lh_v12_user' 'CARMTMP=/carm/proj/texttest/selftest_data/CARMTMPs/lh_v12_tmp' 'PATH=/users/geoff/texttesttmp/texttest.carmen.10Sep163632/site/studio/RecordMacro/texttesttmp/gst.10Sep163707/gst/lh_v12/data_unchanged_copy:$PATH:/carm/proj/texttest/selftest_data/studio_CARMSYS/bin' crc_compile apc gpc -optimize -archs i386_linux /carm/proj/texttest/selftest_data/CARMUSRs/lh_v12_user/crc/source/LBA_MTV
+->OUT:set SITE to: carmen
+Build Rave program LBA_MTV started on abbeville, 25 August 17:31
+Generating code... done.
+Submitting jobs for apc on i386_linux - 1 files out of 56 needs to be compiled
+Submitting jobs for gpc on i386_linux - 1 files out of 141 needs to be compiled
+Compiling... done.
+Installing apc on architecture i386_linux... done.
+Installing gpc on architecture i386_linux... done.
+Build Rave program finished at 25 August 17:32
+Cleaning up... done.
+->ERR:
+*** Trouble report (0 errors, 1 warning):
+
+"report/l_hotel", line 485.27:
+     483: %first_dated_arrival_above_1% =
+     484:        round_down (min(above(1), min(leg_set, %LOCAL_ARRIVAL_TIME_...
+     485:                    where (%rest_period_relevant_hotel%),
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ WARNING: Dependency mismatch in where (_builtin.const/_topmodule.leg)
+

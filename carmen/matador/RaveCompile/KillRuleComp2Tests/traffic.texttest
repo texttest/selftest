@@ -1,8 +1,0 @@
-<-SRV:TextTest slave server started on 192.168.99.33:48716
-<-CMD:cd /nfs/vm/texttest-tmp/geoff/texttest.17Jan142907/texttest.carmen/carmen/matador/RaveCompile/KillRuleComp2Tests/texttesttmp/cas.17Jan142921/slavelogs; env 'CARMSYS=/carm/proj/texttest/selftest_data/CARMSYS' 'CARMUSR=/carm/proj/texttest/selftest_data/CARMUSRs/RD_ib_cas_v8_user' 'CARMTMP=/carm/proj/texttest/selftest_data/CARMTMPs/RD_ib_cas_v8_tmp' '_AUTOTEST__LOCAL_COMPILE_=1' qsub -N Rules-Matador_CO.StaticLinkUser-matador -l "carmarch=*i386_linux*,carmbuildmaster=1,rave" -w e -notify -m n -cwd -b y -V -o Rules-Matador_CO.StaticLinkUser-matador.log -e Rules-Matador_CO.StaticLinkUser-matador.errors 'exec $SHELL -c "exec /users/geoff/work/master/Testing/TextTest/bin/remotecmd.py Matador_CO./carm/proj/texttest/selftest_data/CARMTMPs/RD_ib_cas_v8_tmp 192.168.99.33:48707 /carm/proj/texttest/selftest_data/CARMSYS/bin/crc_compile matador -optimize -archs i386_linux /carm/proj/texttest/selftest_data/CARMUSRs/RD_ib_cas_v8_user/crc/source/Matador_CO"'
-->OUT:Your job 506392 ("Rules-Matador_CO.StaticLinkUser-matador") has been submitted
-<-SRV:Completed submission of all rule compilations and tests that don't require rule compilation
-->CLI:remotecmd.py:Matador_CO./carm/proj/texttest/selftest_data/CARMTMPs/RD_ib_cas_v8_tmp:start
-<-CMD:qdel 506392
-->OUT:geoff has registered the job 506392 for deletion
-<-SRV:Completed submission of all tests

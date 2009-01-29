@@ -1,0 +1,125 @@
+# File for configuration of Jeppesen-specific self-tests
+
+# Checkout depends on the local machine, and the architecture
+[run_dependent_text]
+output:File .* line .* in
+output:Build Rave program
+output:Keeping APC logfile{WORD 9}
+output:Flat profile{LINES 50}
+output:Error! Pid
+output:/dev/sda
+output:/dev/mapper{LINES 2}
+output:compilation killed explicitly{WORD -1}
+output:GenTestOverview{WORD -1}
+output:Submitting Matador test-suite
+output:NFS, retry
+output:Timeout on
+output:^ar:
+output:----prof
+output:Keeping the logfiles{->}^-------
+output:_dl_sysinfo_int80{REPLACE __kernel_vsyscall}
+output:^\r$
+output:Detaching after fork from child process{WORD -1}
+output:[New Thread
+output:APC test-case umlauf_spiel FAILED on
+output:libthread_db
+output:no debugging symbols found
+errors:Error! Pid
+errors:/usr/share/matplotlib/Vera.ttf
+errors:^$
+errors:Signal.*caught by ps{LINES 2}
+errors:egrep
+errors:fork from child process{WORD 7}{REPLACE <pid>}
+dynamic_gui_log:GTK2_RC_FILES: {WORD -1}{REPLACE <path>}
+dynamic_gui_log:Build Rave program
+dynamic_gui_log:APC program{WORD -1}
+dynamic_gui_log:java class is not found{WORD -1}
+dynamic_gui_log:APC STATUS REPORT{->}----------
+dynamic_gui_log:Compiling ruleset{WORD -1}{REPLACE <machine>}
+dynamic_gui_log:Ready for submission of test{WORD -1}{REPLACE <machine>}
+dynamic_gui_log:^LD_LIBRARY_PATH: {WORD 2+}{REPLACE <path>}
+dynamic_gui_log:^PYTHONPATH: {WORD 2+}{REPLACE <path>}
+catalogue:.*\.o$
+catalogue:i386_linux_opt
+catalogue:ravecompile
+catalogue:-raveslave$
+catalogue:lsfreportmatador
+catalogue:^--------compile{->}^(?!---------)
+catalogue:^--------compile
+catalogue:\.##[0-9]*\.0#[a-z]*{REPLACE <rave tmp file>}
+catalogue:(\.APC_fd54_DC9_no_reference\.).*{REPLACE \1<extras>}
+catalogue:run_status.*
+catalogue:-prof\.[0-9]*$
+*Report:Build Rave program
+graph:CreationDate
+graph:Lshow
+graph:%%Title
+userpage:Comments to author
+userpage:Generated
+userpage:http://www-oint.carmen.se/Development/Optimization/APC/profiles/
+testpage:Comments to author
+testpage:Generated
+traffic:core.[0-9]*{REPLACE core.<pid>}
+traffic:[^ ]*remotecmd.py {REPLACE <path_to_remotecmd> }
+traffic:S'percentageChange'{LINES 3}
+traffic:S'newPerformance'{LINES 3}
+traffic:Flat profile
+traffic:cpu_child
+traffic:New result in script_errors
+traffic:largest processes on
+traffic:error code 139
+traffic:S' \\n'
+traffic:[^ ]*/Testing/Automatic{REPLACE <texttest_home>}
+traffic:valgrind[0-9]*{REPLACE <valgrind>} 
+traffic:valgrind{WORD -1}{REPLACE <user>}
+traffic:(env DISPLAY=)[^ ]*{REPLACE \1<display>}
+[end]
+
+[unordered_text]
+traffic:CMD:rsh.*xterm{LINES 2}
+[end]
+
+# We only do two passes, so we can't actually find the base_version queuesystem unless
+# we state it explicitly here
+base_version:sge
+base_version:queuesystem
+
+unsaveable_version:queuesystem
+unsaveable_version:sge
+unsaveable_version:siteconfmods
+
+# Used for retrieving gnuplot processes...
+catalogue_process_string:Created process
+
+# Collecting traffic for 'time' doesn't work,
+# because we do funny things around finding subprocesses of it...
+# So we write a fake one, clear the collect list and recreate it...
+link_test_path:time
+
+[collect_traffic_environment]
+crc_compile:CARMSYS
+crc_compile:CARMUSR
+crc_compile:CARMTMP
+crc_compile:_AUTOTEST__LOCAL_COMPILE_
+crc_compile:PATH
+qsub:CARMSYS
+qsub:CARMUSR
+qsub:CARMTMP
+qsub:_AUTOTEST__LOCAL_COMPILE_
+[end]
+
+# Things to collate
+[collate_file]
+errorsrep2:texttesttmp/*/record/replay2_errors.log
+outputrep2:texttesttmp/*/record/replay2_output.log
+graph:texttesttmp/*/graph.ps
+userpage:sk_test9scripts.html
+testpage:testindex.html
+average:texttesttmp/*/average.0
+plotstd:texttesttmp/*/*/*/*/framework_tmp/plot-std-result
+plotapclog:texttesttmp/*/*/*/*/framework_tmp/plot-plotapclogOBJ
+slavelog:texttesttmp/*/*/*/*/framework_tmp/slavelog
+overview_weekend:report/*/test_*_weekend.html
+details:report/apc/test_master_05Sep2005.html
+rules:texttesttmp/*/*/*/*/APC_FILES/rules
+[end]
