@@ -1,8 +1,10 @@
-QUEUE_SYSTEM_RESOURCE:osversion=RHEL5
-QUEUE_SYSTEM_PROCESSES:1
-LSB_DEFAULTQUEUE:normal
 TEXTTEST_DIAGDIR:$TEXTTEST_SANDBOX
 TEXTTEST_SLAVE_DIAGDIR:$TEXTTEST_SANDBOX
+
 # Only has any effect if you patch GTK2.12 currently. See http://bugzilla.gnome.org/show_bug.cgi?id=568526
 # Without it tests will fail intermittently if run in parallel
 GTK_RECENTLY_USED_FILE:$TEXTTEST_SANDBOX/gtk_recently_used
+
+# Just in case either of these is set in the shell...
+QUEUE_SYSTEM_PROCESSES:1
+LSB_DEFAULTQUEUE:normal

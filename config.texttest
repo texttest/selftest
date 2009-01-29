@@ -6,14 +6,18 @@
 config_module:carmenqueuesystem
 
 default_major_release:none
-# Should be 'none' but currently
-# 32-bit machines try to use the 64-bit GTK
-default_architecture:x86_64_linux
+# handle this separately
+default_architecture:none
+
+extra_search_directory:carmen/siteconfig
 
 # Replace with bzr when we can!
 #interactive_action_module:cvs
 
 # ---------------- Values needed to run in batch mode at Carmen -------------------
+
+[batch_filter_file]
+tt_nightjob:nightjob
 
 [batch_recipients]
 tt_nightjob:carmen.testtool_tests
