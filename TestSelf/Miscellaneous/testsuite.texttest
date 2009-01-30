@@ -25,6 +25,9 @@ MultipleSubDirs
 # Make sure we can do everything we need to do importing config files, i.e. read from different directories, get priority right etc.
 ImportConfigFiles
 
+# Config files should be able to import each other indefinitely
+IndirectImport
+
 # Check that we can find and clean up processes if the SUT leaks them but logs the process ID
 TrackProcesses
 
