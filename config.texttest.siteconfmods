@@ -5,21 +5,3 @@
 # The tests are then placed under site, and the general site configuration file
 # (site_configfile) should add 'extra_version:siteconfmods'
 import_config_file:configfile_for_site_config_module_tests
-
-# This shouldn't be here of course, but the {CLEAR LIST} doesn't work in imported files...
-collect_traffic:{CLEAR LIST}
-collect_traffic:qsub
-collect_traffic:qdel
-collect_traffic:qselect
-collect_traffic:qstat
-collect_traffic:qacct
-collect_traffic:interpretcore.py
-collect_traffic:crc_compile
-collect_traffic:qrsh
-collect_traffic:rsh
-collect_traffic:lpr
-collect_traffic:valgrind
-collect_traffic:valgrind64
-collect_traffic:emacs
-collect_traffic:studio
-collect_traffic:cvs

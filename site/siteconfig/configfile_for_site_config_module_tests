@@ -91,6 +91,23 @@ unsaveable_version:siteconfmods
 # Used for retrieving gnuplot processes...
 catalogue_process_string:Created process
 
+collect_traffic:{CLEAR LIST}
+collect_traffic:qsub
+collect_traffic:qdel
+collect_traffic:qselect
+collect_traffic:qstat
+collect_traffic:qacct
+collect_traffic:interpretcore.py
+collect_traffic:crc_compile
+collect_traffic:qrsh
+collect_traffic:rsh
+collect_traffic:lpr
+collect_traffic:valgrind
+collect_traffic:valgrind64
+collect_traffic:emacs
+collect_traffic:studio
+collect_traffic:cvs
+
 # Collecting traffic for 'time' doesn't work,
 # because we do funny things around finding subprocesses of it...
 # So we write a fake one, clear the collect list and recreate it...
