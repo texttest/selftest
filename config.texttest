@@ -3,6 +3,13 @@
 # Path to the executable
 executable:${TEXTTEST_CHECKOUT}/bin/texttest.py
 
+# Run-dependent smaller tests
+extra_version:rundep
+
+# Run the LSF and SGE tests too...
+extra_version:sge
+extra_version:lsf
+
 # Need to load site-specific configuration in
 extra_search_directory:site/siteconfig
 # ...and have a fallback if the site directory isn't present
@@ -244,14 +251,3 @@ unsaveable_version:rundep
 [bug_system_location]
 bugzilla:http://bugzilla.carmen.se
 [end]
-
-# Run-dependent smaller tests
-extra_version:rundep
-
-# Run the LSF and SGE tests too...
-extra_version:sge
-extra_version:lsf
-
-## We have site-specific config-modules, so we add their tests here
-# Naturally this shouldn't be here!
-extra_version:siteconfmods
