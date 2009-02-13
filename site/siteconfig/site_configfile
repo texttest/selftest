@@ -16,6 +16,12 @@ extra_version:siteconfmods
 # Store the "nightjob" files in a site-specific place
 test_list_files_directory:site/siteconfig/filter_files
 
+[batch_extra_version]
+tt_nightjob:solaris
+tt_nightjob:solaris.sge
+tt_nightjob:solaris.lsf
+tt_nightjob:rhel4
+
 [batch_filter_file]
 tt_nightjob:nightjob
 
@@ -28,7 +34,7 @@ tt_nightjob:true
 # ---------------- Values for the static GUI -------------------
 
 [version_priority]
-x86_64_solaris:1
+solaris:1
 siteconfmods:2
 sge:3
 lsf:3
@@ -57,10 +63,10 @@ checkout_to_use_for_recording:/carm/proj/texttest/release/current
 checkout_to_use_for_recording:/usr/local/share/texttest
 checkout_to_use_for_recording:/users/geoff/work/release/texttest-3.10/source/
 checkout_to_use_for_recording:/users/geoff/work/release/texttest-3.9.1/source/
-run_this_version:x86_64_solaris
+run_this_version:solaris
 run_this_version:rhel4
 version_to_reconnect_to:unix.linux_std
-version_to_reconnect_to:unix.x86_64_solaris
+version_to_reconnect_to:unix.solaris
 version_to_reconnect_to:unix.rhel4
 version_to_reconnect_to:windows
 [end]
