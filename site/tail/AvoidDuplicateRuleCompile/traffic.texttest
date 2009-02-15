@@ -1,8 +1,0 @@
-<-SRV:TextTest slave server started on 192.168.99.64:46998
-<-CMD:cd /nfs/vm/texttest-tmp/geoff/texttest.17Jan142907/texttest.carmen/site/tail/AvoidDuplicateRuleCompile/texttesttmp/console.local.17Jan142923/slavelogs; env 'CARMSYS=/carm/proj/texttest/selftest_data/tail_CARMSYS' 'CARMUSR=/carm/proj/texttest/selftest_data/CARMUSRs/tas_test_suite_user/' 'CARMTMP=/carm/proj/texttest/selftest_data/tail_CARMSYS/tail_tmp' '_AUTOTEST__LOCAL_COMPILE_=1' qsub -N Rules-amtail.BasicUser-afc -l "carmarch=*i386_linux*,carmbuildmaster=1,rave" -w e -notify -m n -cwd -b y -V -o Rules-amtail.BasicUser-afc.log -e Rules-amtail.BasicUser-afc.errors 'exec $SHELL -c "exec /users/geoff/work/master/Testing/TextTest/bin/remotecmd.py amtail./carm/proj/texttest/selftest_data/tail_CARMSYS/tail_tmp 192.168.99.64:46996 /carm/proj/texttest/selftest_data/tail_CARMSYS/bin/crc_compile afc -optimize -archs i386_linux /carm/proj/texttest/selftest_data/CARMUSRs/tas_test_suite_user/crc/source/amtail"'
-->OUT:Your job 506386 ("Rules-amtail.BasicUser-afc") has been submitted
-<-SRV:Completed submission of all rule compilations and tests that don't require rule compilation
-->CLI:remotecmd.py:amtail./carm/proj/texttest/selftest_data/tail_CARMSYS/tail_tmp:start
-<-CMD:qdel 506386
-->OUT:geoff has registered the job 506386 for deletion
-<-SRV:Completed submission of all tests

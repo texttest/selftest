@@ -1,5 +1,0 @@
-CARMSYS:${TEXTTEST_CHECKOUT}/studio_CARMSYS
-CRS_ROOT:etab:${CARMSYS}/data/config/CarmResources/Root.etab
-QUEUE_SYSTEM_RESOURCE:osversion=RHEL4
-CARMEN_EXEC_DIR:.
-USER:nightjob

@@ -1,8 +1,0 @@
-<-SRV:TextTest slave server started on 192.168.99.52:47071
-<-CMD:cd /nfs/vm/texttest-tmp/geoff/texttest.17Jan142907/texttest.carmen/site/matador/RaveCompile/KillRuleCompLongTest/texttesttmp/cas.17Jan142921/slavelogs; env 'CARMSYS=/carm/proj/texttest/selftest_data/CARMSYS' 'CARMUSR=/carm/proj/matador/carmusrs/carmen_9.0_deliver/RD_am_cas_v9_user/' 'CARMTMP=/carm/proj/texttest/selftest_data/CARMTMPs/RD_am_cas_v9_tmp' '_AUTOTEST__LOCAL_COMPILE_=1' qsub -N Rules-PilotCAS_matador.RD_am_cas_v9scripts-matador -l "carmarch=*i386_linux*,carmbuildmaster=1,rave" -w e -notify -m n -cwd -b y -V -o Rules-PilotCAS_matador.RD_am_cas_v9scripts-matador.log -e Rules-PilotCAS_matador.RD_am_cas_v9scripts-matador.errors 'exec $SHELL -c "exec /users/geoff/work/master/Testing/TextTest/bin/remotecmd.py PilotCAS_matador./carm/proj/texttest/selftest_data/CARMTMPs/RD_am_cas_v9_tmp 192.168.99.52:47068 /carm/proj/texttest/selftest_data/CARMSYS/bin/crc_compile matador -optimize -archs i386_linux /carm/proj/matador/carmusrs/carmen_9.0_deliver/RD_am_cas_v9_user/crc/source/PilotCAS_matador"'
-->OUT:Your job 506384 ("Rules-PilotCAS_matador.RD_am_cas_v9scripts-matador") has been submitted
-<-SRV:Completed submission of all rule compilations and tests that don't require rule compilation
-->CLI:remotecmd.py:PilotCAS_matador./carm/proj/texttest/selftest_data/CARMTMPs/RD_am_cas_v9_tmp:start
-<-CMD:qdel 506384
-->OUT:geoff has registered the job 506384 for deletion
-<-SRV:Completed submission of all tests
