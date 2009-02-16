@@ -9,5 +9,5 @@ def devnull():
         return "nul"
 
 print 'Hello World, now sleeping!'
-proc = subprocess.Popen([ "sleep", "10" ], stdin=open(devnull()), stdout=open(devnull(), "w"), stderr=subprocess.STDOUT)
+proc = subprocess.Popen([ "python", "-c", "import time; time.sleep(10)" ], stdin=open(devnull()), stdout=open(devnull(), "w"), stderr=subprocess.STDOUT)
 print "Leaking sleep process : sleep process :", proc.pid
