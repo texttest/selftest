@@ -3,9 +3,9 @@ Enabling entry completion, using matching 1
 Waiting for application event 'all tests to be read' to occur.
 Adding entry completion '<default>' ...
 Adding entry completion '1' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.16Jan103214.22898/texttest/GUI/StaticGUI/Miscellaneous/ViewHelp/personaldir/log/log4py.conf' ...
-Adding entry completion '/users/geoff/work/master/Testing/TextTest/log/log4py.conf' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.16Jan103214.22898/texttest/GUI/StaticGUI/Miscellaneous/ViewHelp/personaldir/log' ...
+Adding entry completion '/home/geoff/texttesttmp/texttest.18Feb212307.7272/texttest/GUI/StaticGUI/Miscellaneous/ViewHelp/personaldir/log/log4py.conf' ...
+Adding entry completion '/home/geoff/code/texttest/log/log4py.conf' ...
+Adding entry completion '/home/geoff/texttesttmp/texttest.18Feb212307.7272/texttest/GUI/StaticGUI/Miscellaneous/ViewHelp/personaldir/log' ...
 Top Window title is TextTest static GUI : management of tests for DIP
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
@@ -190,11 +190,11 @@ Viewing action with title '_Select', stock id ''gtk-find'', accelerator ''<contr
 Viewing radio button for switch '', options Discard/Refine/Extend'. Default value 0.
 Viewing action with title 'Filter', stock id ''gtk-find'', accelerator ''<control>f''
 
-Changing GUI status to: 'TextTest started at 16Jan10:32:59.'
+Changing GUI status to: 'TextTest started at 18Feb21:23:11.'
 
 Changing GUI status to: 'Reading tests ...'
 
-Changing GUI status to: 'Reading tests completed at 16Jan10:32:59.'
+Changing GUI status to: 'Reading tests completed at 18Feb21:23:11.'
 
 Test Tree description...
 -> TargetApp (dip)
@@ -238,6 +238,51 @@ Expected application event 'all tests to be read' occurred, proceeding.
 Adding entry completion 'output' ...
 ---------- Dialog 'TextTest Migration Notes' ----------
 Default action is labelled 'gtk-close'
+Adding migration notes from file 'MigrationNotes_from_3.12':
+
+There is almost certainly no migration needed. But a few things in TextTest 3.13
+will be different from 3.12 by default. This is worth a quick scan in case any of
+this applies to you.
+
+=========================================================
+CHANGES IN DEFAULT BEHAVIOUR (OR PROCEDURE)
+=========================================================
+
+(1) The HTML historical batch report now looks a bit different by default
+=========================================================================
+Instead of generating an "All" page it will generate one page per month. The basic point is
+to speed up generation of the pages once there is lots of data, as the older pages won't need
+to be regenerated. Also to avoid creating a huge All page that the browser can't really handle.
+
+If you really miss your All page the behaviour from 3.12 can be restored by setting the config
+file setting "historical_report_all_page" to "true".
+
+(2) import_config_file now behaves like "import" in Python or #include in C
+===========================================================================
+The basic effect is that it is exactly equivalent to pasting the contents of the imported file into your 
+config file at that point.
+
+Obviously this isn't guaranteed to behave the same as in version 3.12, where settings in the config file always
+had priority over those in the imported file. Now it depends on where the file is imported which setting will be
+used.
+
+It's obviously more flexible (imported files can import other files, for example) and should be more
+intuitive but it's possible your config files aren't back-compatible.
+ 
+(3) Extra syntax checking on your config file
+=============================================
+It's possible you may get warnings/popups which you didn't get before. But hopefully you
+will deserve them... in particular mistakenly missing [end] markers will create warnings now.
+
+(4) TextTest's default location for its internal logging is now ~/.texttest/log
+===============================================================================
+Instead of $TEXTTEST_HOME/Diagnostics. But it is still configurable as before. The configuration file
+lives with the source in the log subdirectory and should probably be copied to the above location
+and edited as desired if you need to debug TextTest this way.
+
+
+
+
 Adding migration notes from file 'MigrationNotes_from_3.11':
 
 You need to do migration if you 
@@ -1413,9 +1458,9 @@ Changing GUI status to: ''
 ---------- Dialog 'Version Information' ----------
 Default action is labelled 'gtk-close'
 Showing component versions: 
- TextTest: master
- Python: 2.4.3.final.0
- GTK: 2.12.12
+ TextTest: trunk
+ Python: 2.5.2.final.0
+ GTK: 2.12.9
  PyGTK: 2.12.1
 --------------------------------------------------
 
@@ -1487,9 +1532,9 @@ online at http://www.opensource.org/licenses/lgpl-license.php
 ---------- Dialog 'Version Information' ----------
 Default action is labelled 'gtk-close'
 Showing component versions: 
- TextTest: master
- Python: 2.4.3.final.0
- GTK: 2.12.12
+ TextTest: trunk
+ Python: 2.5.2.final.0
+ GTK: 2.12.9
  PyGTK: 2.12.1
 --------------------------------------------------
 
