@@ -1,4 +1,4 @@
-<-CMD:rsh fake_machine1 which Xvfb
+<-CMD:rsh fake_machine1 which Xvfb && echo "found an Xvfb"
 ->OUT:Xvfb: Command not found.
-<-CMD:rsh fake_machine2 which Xvfb
+<-CMD:rsh fake_machine2 which Xvfb && echo "found an Xvfb"
 ->OUT:Xvfb: Command not found.

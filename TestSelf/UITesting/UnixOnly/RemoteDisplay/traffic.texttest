@@ -1,5 +1,6 @@
-<-CMD:rsh fake_machine1 which Xvfb
+<-CMD:rsh fake_machine1 which Xvfb && echo "found an Xvfb"
 ->OUT:/usr/X11R6/bin/Xvfb
-<-CMD:rsh fake_machine1 "/users/geoff/work/master/Testing/TextTest/bin/ttpython -u /users/geoff/work/master/Testing/TextTest/bin/startXvfb.py <test write dir>/texttesttmp/<target tmp dir>/Xvfb"
+found an Xvfb
+<-CMD:rsh fake_machine1 "/users/geoff/work/master/Testing/TextTest/site/bin/ttpython -u /users/geoff/work/master/Testing/TextTest/libexec/startXvfb.py /carm/proj/texttest-tmp/geoff/texttest.19Feb153407.18932/texttest/TestSelf/UITesting/UnixOnly/RemoteDisplay/texttesttmp/console.19Feb153408.102283/Xvfb"
 ->OUT:3979,11907
 <-CMD:rsh fake_machine1 kill 11907
