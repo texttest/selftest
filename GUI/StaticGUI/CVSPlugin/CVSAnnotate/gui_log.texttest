@@ -3,10 +3,10 @@ Enabling entry completion, using matching 1
 Waiting for application event 'all tests to be read' to occur.
 Adding entry completion '<default>' ...
 Adding entry completion '1' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.20Feb135610.27599/texttest/GUI/StaticGUI/CVSPlugin/CVSAnnotate/personaldir/log/log4py.conf' ...
-Adding entry completion '/users/geoff/work/master/Testing/TextTest/log/log4py.conf' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.20Feb135610.27599/texttest/GUI/StaticGUI/CVSPlugin/CVSAnnotate/personaldir/log' ...
-Top Window title is TextTest static GUI : management of tests for DIP
+Adding entry completion '/home/geoff/texttesttmp/texttest.20Feb200506.10965/texttest/GUI/StaticGUI/CVSPlugin/CVSAnnotate/personaldir/log/log4py.conf' ...
+Adding entry completion '/home/geoff/code/texttest/log/log4py.conf' ...
+Adding entry completion '/home/geoff/texttesttmp/texttest.20Feb200506.10965/texttest/GUI/StaticGUI/CVSPlugin/CVSAnnotate/personaldir/log' ...
+Top Window title is TextTest static GUI : management of tests for HELLO
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -244,30 +244,21 @@ Viewing action with title '_Select', stock id ''gtk-find'', accelerator ''<contr
 Viewing radio button for switch '', options Discard/Refine/Extend'. Default value 0.
 Viewing action with title 'Filter', stock id ''gtk-find'', accelerator ''<control>f''
 
-Changing GUI status to: 'TextTest started at 20Feb13:56:12.'
+Changing GUI status to: 'TextTest started at 20Feb20:05:08.'
 
 Changing GUI status to: 'Reading tests ...'
 
-Changing GUI status to: 'Reading tests completed at 20Feb13:56:12.'
+Changing GUI status to: 'Reading tests completed at 20Feb20:05:08.'
 
 Test Tree description...
--> TargetApp (dip)
-->   Game9952
-->     S01.99
-->     A01
-->     S02
-->     A02
-->     S03
-->     A03
-->     S04
-->     A04
-->     S05
-->     A05
-->   npstIII
-->     Game47
-->       S01
+-> TargetApp (hello)
+->   Test1
+->   Test2
+->   Suite
+->     Subsuite
+->       Test3
 
-Test column header set to 'Tests: 0/11 selected'
+Test column header set to 'Tests: 0/3 selected'
 
 Viewing notebook page for 'Selection'
 Viewing entry for option 'Tests for version' (drop-down list containing ['', '<default>'])
@@ -277,7 +268,7 @@ Viewing entry for option 'App names containing'
 Viewing entry for option 'Tests listed in file'
 Viewing entry for option 'Descriptions containing'
 Viewing entry for option 'Test-files containing'
-Viewing entry for option 'Test-file to search' (set to 'output') (drop-down list containing ['output'])
+Viewing entry for option 'Test-file to search' (set to 'output') (drop-down list containing ['output', 'errors'])
 Viewing entry for option 'Execution time'
 ...........
 Viewing check button for switch 'Select in collapsed suites'
@@ -288,9 +279,9 @@ Viewing radio button for switch '', options Discard/Refine/Extend'. Default valu
 Viewing action with title 'Filter', stock id ''gtk-find'', accelerator ''<control>f''
 Expected application event 'all tests to be read' occurred, proceeding.
 
-'set test selection to' event created with arguments 'S01.99'
+'set test selection to' event created with arguments 'Test1'
 
-Test column header set to 'Tests: 1/11 selected'
+Test column header set to 'Tests: 1/3 selected'
 Setting sensitivity of action '_Copy' to True
 Setting sensitivity of action '_Cut' to True
 Setting sensitivity of action 'Enter Failure Information' to True
@@ -314,14 +305,15 @@ Setting sensitivity of action 'Annotate Recursive' to True
 Setting sensitivity of action '_Run' to True
 Setting sensitivity of action '_Run' to True
 
-Setting file-view title to 'S01.99'
-Adding file output.dip under heading 'Standard Files', coloured grey90
+Setting file-view title to 'Test1'
+Adding file errors.hello under heading 'Standard Files', coloured grey90
+Adding file output.hello under heading 'Standard Files', coloured grey90
 
 Pane separator positioned 46% from the top
 
 ---------- Text Info Window ----------
 Description:
-S01.99's comment
+<No description provided>
 --------------------------------------
 
 Tabs showing : Test, Selection, Running, Config
@@ -329,87 +321,25 @@ Tabs showing : Test, Selection, Running, Config
 'cvs annotate for the selected files' event created with arguments ''
 Adding entry completion 'output' ...
 
-Changing GUI status to: 'Getting annotations of Game9952/S01.99'
+Changing GUI status to: 'Getting annotations of Test1'
 
-Changing GUI status to: 'Analyzing annotations of TargetApp/Game9952/S01.99/output.dip'
+Changing GUI status to: 'Analyzing annotations of TargetApp/Test1/errors.hello'
+
+Changing GUI status to: 'Analyzing annotations of TargetApp/Test1/output.hello'
 ---------- Dialog 'cvs annotate for the selected files' ----------
 Default action is labelled 'gtk-close'
 Using Tree View layout with icon 'gtk-dialog-info', header :
 CVS annotations shown below.
-CVS command used: cvs -d /some/path/to/cvs annotate -l
+CVS command used: cvs -d /home/geoff/texttesttmp/texttest.20Feb200506.10965/texttest/GUI/StaticGUI/CVSPlugin/CVSAnnotate/cvsroot annotate -l
 Subdirectories were ignored, use CVS Annotate Recursive to get the annotations for all subdirectories.
 
-CVS tree view dialog: Adding TargetApp as root, info /carm/proj/texttest-tmp/geoff/texttest.20Feb135610.27599/texttest/GUI/StaticGUI/CVSPlugin/CVSAnnotate/TargetApp/Game9952/S01.99/output.dip
-CVS tree view dialog: Adding TargetApp/Game9952 as child of TargetApp, info /carm/proj/texttest-tmp/geoff/texttest.20Feb135610.27599/texttest/GUI/StaticGUI/CVSPlugin/CVSAnnotate/TargetApp/Game9952/S01.99/output.dip
-CVS tree view dialog: Adding TargetApp/Game9952/S01.99 as child of TargetApp/Game9952, info /carm/proj/texttest-tmp/geoff/texttest.20Feb135610.27599/texttest/GUI/StaticGUI/CVSPlugin/CVSAnnotate/TargetApp/Game9952/S01.99/output.dip
-CVS tree view dialog: Adding TargetApp/Game9952/S01.99/output.dip as child of TargetApp/Game9952/S01.99, info /carm/proj/texttest-tmp/geoff/texttest.20Feb135610.27599/texttest/GUI/StaticGUI/CVSPlugin/CVSAnnotate/TargetApp/Game9952/S01.99/output.dip
+CVS tree view dialog: Adding TargetApp as root, info /home/geoff/texttesttmp/texttest.20Feb200506.10965/texttest/GUI/StaticGUI/CVSPlugin/CVSAnnotate/TargetApp/Test1/errors.hello
+CVS tree view dialog: Adding TargetApp/Test1 as child of TargetApp, info /home/geoff/texttesttmp/texttest.20Feb200506.10965/texttest/GUI/StaticGUI/CVSPlugin/CVSAnnotate/TargetApp/Test1/errors.hello
+CVS tree view dialog: Adding TargetApp/Test1/errors.hello as child of TargetApp/Test1, info /home/geoff/texttesttmp/texttest.20Feb200506.10965/texttest/GUI/StaticGUI/CVSPlugin/CVSAnnotate/TargetApp/Test1/errors.hello
+CVS tree view dialog: Adding TargetApp/Test1/output.hello as child of TargetApp/Test1, info /home/geoff/texttesttmp/texttest.20Feb200506.10965/texttest/GUI/StaticGUI/CVSPlugin/CVSAnnotate/TargetApp/Test1/output.hello
 CVS tree view dialog: Showing CVS output
-1.1          (geoff    13-Feb-07): Turkey:
-1.1          (geoff    13-Feb-07): Con - Bul:    OK
-1.1          (geoff    13-Feb-07): Smy - Ank:    OK
-1.1          (geoff    13-Feb-07): Ank - Con:    OK
-1.1          (geoff    13-Feb-07): 
-1.1          (geoff    13-Feb-07): Russia:
-1.1          (geoff    13-Feb-07): StP - Bot:    OK
-1.1          (geoff    13-Feb-07): War - Gal: Bounce with Vie;    
-1.1          (geoff    13-Feb-07): Mos - Ukr:    OK
-1.1          (geoff    13-Feb-07): Sev - Bla:    OK
-1.1          (geoff    13-Feb-07): 
-1.1          (geoff    13-Feb-07): Italy:
-1.1          (geoff    13-Feb-07): Ven H:    OK
-1.1          (geoff    13-Feb-07): Rom - Apu:    OK
-1.1          (geoff    13-Feb-07): Nap - Ion:    OK
-1.1          (geoff    13-Feb-07): 
-1.1          (geoff    13-Feb-07): Germany:
-1.1          (geoff    13-Feb-07): Kie - Den:    OK
-1.1          (geoff    13-Feb-07): Ber - Kie:    OK
-1.1          (geoff    13-Feb-07): Mun - Ruh:    OK
-1.1          (geoff    13-Feb-07): 
-1.1          (geoff    13-Feb-07): France:
-1.1          (geoff    13-Feb-07): Bre - Eng:    OK
-1.1          (geoff    13-Feb-07): Par - Bur:    OK
-1.1          (geoff    13-Feb-07): Mar - Spa:    OK
-1.1          (geoff    13-Feb-07): 
-1.1          (geoff    13-Feb-07): England:
-1.1          (geoff    13-Feb-07): Liv - Yor:    OK
-1.1          (geoff    13-Feb-07): Edi - Nrg:    OK
-1.1          (geoff    13-Feb-07): Lon - Nth:    OK
-1.1          (geoff    13-Feb-07): 
-1.1          (geoff    13-Feb-07): Austria:
-1.1          (geoff    13-Feb-07): Tri - Alb:    OK
-1.1          (geoff    13-Feb-07): Bud - Ser:    OK
-1.1          (geoff    13-Feb-07): Vie - Gal: Bounce with War; 
-1.1          (geoff    13-Feb-07): Austria: Tri -> Alb                (*works*)
-1.1          (geoff    13-Feb-07): Austria: Bud -> Ser                (*works*)
-1.1          (geoff    13-Feb-07): Austria: Vie -> Gal                (*bounce*)
-1.1          (geoff    13-Feb-07): 
-1.1          (geoff    13-Feb-07): England: Liv -> Yor                (*works*)
-1.1          (geoff    13-Feb-07): England: Edi -> Nrg                (*works*)
-1.1          (geoff    13-Feb-07): England: Lon -> Nth                (*works*)
-1.1          (geoff    13-Feb-07): 
-1.1          (geoff    13-Feb-07): France:  Bre -> Eng                (*works*)
-1.1          (geoff    13-Feb-07): France:  Par -> Bur                (*works*)
-1.1          (geoff    13-Feb-07): France:  Mar -> Spa                (*works*)
-1.1          (geoff    13-Feb-07): 
-1.1          (geoff    13-Feb-07): Germany: Kie -> Den                (*works*)
-1.1          (geoff    13-Feb-07): Germany: Ber -> Kie                (*works*)
-1.1          (geoff    13-Feb-07): Germany: Mun -> Ruh                (*works*)
-1.1          (geoff    13-Feb-07): 
-1.1          (geoff    13-Feb-07): Italy:   Ven HOLD                  (*works*)
-1.1          (geoff    13-Feb-07): Italy:   Rom -> Apu                (*works*)
-1.1          (geoff    13-Feb-07): Italy:   Nap -> Ion                (*works*)
-1.1          (geoff    13-Feb-07): 
-1.1          (geoff    13-Feb-07): Russia:  StP -> Bot                (*works*)
-1.1          (geoff    13-Feb-07): Russia:  War -> Gal                (*bounce*)
-1.1          (geoff    13-Feb-07): Russia:  Mos -> Ukr                (*works*)
-1.1          (geoff    13-Feb-07): Russia:  Sev -> Bla                (*works*)
-1.1          (geoff    13-Feb-07): 
-1.1          (geoff    13-Feb-07): Turkey:  Con -> Bul                (*works*)
-1.1          (geoff    13-Feb-07): Turkey:  Smy -> Ank                (*works*)
-1.1          (geoff    13-Feb-07): Turkey:  Ank -> Con                (*works*)
-1.1          (geoff    13-Feb-07): 
 
-Annotations for /users/mattias/work/master/Testing/Automatic/texttest/GUI/StaticGUI/TargetApp/Game9952/S01.99/output.dip
+Annotations for /home/geoff/texttesttmp/texttest.20Feb200506.10965/texttest/GUI/StaticGUI/CVSPlugin/CVSAnnotate/TargetApp/Test1/errors.hello
 ***************
 ------------------------------------------------------------------
 
@@ -418,12 +348,12 @@ Changing GUI status to: 'Performed cvs annotate for the selected files.'
 'press close' event created with arguments ''
 Adding entry completion 'HEAD' ...
 
-'set test selection to' event created with arguments 'npstIII'
+'set test selection to' event created with arguments 'Suite'
 
-Test column header set to 'Tests: 0/11 selected'
+Test column header set to 'Tests: 0/3 selected'
 
-Setting file-view title to 'npstIII'
-Adding file testsuite.dip under heading 'Definition Files', coloured grey90
+Setting file-view title to 'Suite'
+Adding file testsuite.hello under heading 'Definition Files', coloured grey90
 
 ---------- Text Info Window ----------
 Description:
@@ -446,111 +376,51 @@ Tabs showing : Test, Selection, Config
 
 'recursive cvs annotate for the selected files' event created with arguments ''
 
-Changing GUI status to: 'Getting annotations of npstIII'
+Changing GUI status to: 'Getting annotations of Suite'
 
-Changing GUI status to: 'Analyzing annotations of TargetApp/npstIII/testsuite.dip'
+Changing GUI status to: 'Analyzing annotations of TargetApp/Suite/testsuite.hello'
 
-Changing GUI status to: 'Analyzing annotations of TargetApp/npstIII/Game47/testsuite.dip'
+Changing GUI status to: 'Analyzing annotations of TargetApp/Suite/Subsuite/testsuite.hello'
 
-Changing GUI status to: 'Analyzing annotations of TargetApp/npstIII/Game47/S01/output.dip'
+Changing GUI status to: 'Analyzing annotations of TargetApp/Suite/Subsuite/Test3/errors.hello'
+
+Changing GUI status to: 'Analyzing annotations of TargetApp/Suite/Subsuite/Test3/output.hello'
 ---------- Dialog 'recursive cvs annotate for the selected files' ----------
 Default action is labelled 'gtk-close'
 Using Tree View layout with icon 'gtk-dialog-info', header :
 CVS annotations shown below.
-CVS command used: cvs -d /some/path/to/cvs annotate
+CVS command used: cvs -d /home/geoff/texttesttmp/texttest.20Feb200506.10965/texttest/GUI/StaticGUI/CVSPlugin/CVSAnnotate/cvsroot annotate
 
-CVS tree view dialog: Adding TargetApp as root, info /carm/proj/texttest-tmp/geoff/texttest.20Feb135610.27599/texttest/GUI/StaticGUI/CVSPlugin/CVSAnnotate/TargetApp/npstIII/testsuite.dip
-CVS tree view dialog: Adding TargetApp/npstIII as child of TargetApp, info /carm/proj/texttest-tmp/geoff/texttest.20Feb135610.27599/texttest/GUI/StaticGUI/CVSPlugin/CVSAnnotate/TargetApp/npstIII/testsuite.dip
-CVS tree view dialog: Adding TargetApp/npstIII/testsuite.dip as child of TargetApp/npstIII, info /carm/proj/texttest-tmp/geoff/texttest.20Feb135610.27599/texttest/GUI/StaticGUI/CVSPlugin/CVSAnnotate/TargetApp/npstIII/testsuite.dip
-CVS tree view dialog: Adding TargetApp/npstIII/Game47 as child of TargetApp/npstIII, info /carm/proj/texttest-tmp/geoff/texttest.20Feb135610.27599/texttest/GUI/StaticGUI/CVSPlugin/CVSAnnotate/TargetApp/npstIII/Game47/testsuite.dip
-CVS tree view dialog: Adding TargetApp/npstIII/Game47/testsuite.dip as child of TargetApp/npstIII/Game47, info /carm/proj/texttest-tmp/geoff/texttest.20Feb135610.27599/texttest/GUI/StaticGUI/CVSPlugin/CVSAnnotate/TargetApp/npstIII/Game47/testsuite.dip
-CVS tree view dialog: Adding TargetApp/npstIII/Game47/S01 as child of TargetApp/npstIII/Game47, info /carm/proj/texttest-tmp/geoff/texttest.20Feb135610.27599/texttest/GUI/StaticGUI/CVSPlugin/CVSAnnotate/TargetApp/npstIII/Game47/S01/output.dip
-CVS tree view dialog: Adding TargetApp/npstIII/Game47/S01/output.dip as child of TargetApp/npstIII/Game47/S01, info /carm/proj/texttest-tmp/geoff/texttest.20Feb135610.27599/texttest/GUI/StaticGUI/CVSPlugin/CVSAnnotate/TargetApp/npstIII/Game47/S01/output.dip
+CVS tree view dialog: Adding TargetApp as root, info /home/geoff/texttesttmp/texttest.20Feb200506.10965/texttest/GUI/StaticGUI/CVSPlugin/CVSAnnotate/TargetApp/Suite/testsuite.hello
+CVS tree view dialog: Adding TargetApp/Suite as child of TargetApp, info /home/geoff/texttesttmp/texttest.20Feb200506.10965/texttest/GUI/StaticGUI/CVSPlugin/CVSAnnotate/TargetApp/Suite/testsuite.hello
+CVS tree view dialog: Adding TargetApp/Suite/testsuite.hello as child of TargetApp/Suite, info /home/geoff/texttesttmp/texttest.20Feb200506.10965/texttest/GUI/StaticGUI/CVSPlugin/CVSAnnotate/TargetApp/Suite/testsuite.hello
+CVS tree view dialog: Adding TargetApp/Suite/Subsuite as child of TargetApp/Suite, info /home/geoff/texttesttmp/texttest.20Feb200506.10965/texttest/GUI/StaticGUI/CVSPlugin/CVSAnnotate/TargetApp/Suite/Subsuite/testsuite.hello
+CVS tree view dialog: Adding TargetApp/Suite/Subsuite/testsuite.hello as child of TargetApp/Suite/Subsuite, info /home/geoff/texttesttmp/texttest.20Feb200506.10965/texttest/GUI/StaticGUI/CVSPlugin/CVSAnnotate/TargetApp/Suite/Subsuite/testsuite.hello
+CVS tree view dialog: Adding TargetApp/Suite/Subsuite/Test3 as child of TargetApp/Suite/Subsuite, info /home/geoff/texttesttmp/texttest.20Feb200506.10965/texttest/GUI/StaticGUI/CVSPlugin/CVSAnnotate/TargetApp/Suite/Subsuite/Test3/errors.hello
+CVS tree view dialog: Adding TargetApp/Suite/Subsuite/Test3/errors.hello as child of TargetApp/Suite/Subsuite/Test3, info /home/geoff/texttesttmp/texttest.20Feb200506.10965/texttest/GUI/StaticGUI/CVSPlugin/CVSAnnotate/TargetApp/Suite/Subsuite/Test3/errors.hello
+CVS tree view dialog: Adding TargetApp/Suite/Subsuite/Test3/output.hello as child of TargetApp/Suite/Subsuite/Test3, info /home/geoff/texttesttmp/texttest.20Feb200506.10965/texttest/GUI/StaticGUI/CVSPlugin/CVSAnnotate/TargetApp/Suite/Subsuite/Test3/output.hello
 CVS tree view dialog: Showing CVS output
-1.1          (geoff    13-Feb-07): Game47
+1.1          (geoff    19-Feb-09): Subsuite
 
-Annotations for /users/mattias/work/master/Testing/Automatic/texttest/GUI/StaticGUI/TargetApp/npstIII/testsuite.dip
+Annotations for /home/geoff/texttesttmp/texttest.20Feb200506.10965/texttest/GUI/StaticGUI/CVSPlugin/CVSAnnotate/TargetApp/Suite/testsuite.hello
 ***************
 ----------------------------------------------------------------------------
 
 Changing GUI status to: 'Performed recursive cvs annotate for the selected files.'
 
-'select' event created with arguments 'testsuite.dip under Game47'
+'select' event created with arguments 'testsuite.hello under Subsuite'
 CVS tree view dialog: Showing CVS output
-1.1          (geoff    13-Feb-07): S01
+1.1          (geoff    19-Feb-09): # In a subsuite
+1.1          (geoff    19-Feb-09): Test3
 
-Annotations for /users/mattias/work/master/Testing/Automatic/texttest/GUI/StaticGUI/TargetApp/npstIII/Game47/testsuite.dip
+Annotations for /home/geoff/texttesttmp/texttest.20Feb200506.10965/texttest/GUI/StaticGUI/CVSPlugin/CVSAnnotate/TargetApp/Suite/Subsuite/testsuite.hello
 ***************
 
-'select' event created with arguments 'output.dip'
+'select' event created with arguments 'output.hello'
 CVS tree view dialog: Showing CVS output
-1.1          (geoff    13-Feb-07): Turkey:
-1.1          (geoff    13-Feb-07): Con - Bul:    OK
-1.1          (geoff    13-Feb-07): Smy - Con:    OK
-1.1          (geoff    13-Feb-07): Ank - BLA:    OK
-1.1          (geoff    13-Feb-07): 
-1.1          (geoff    13-Feb-07): Russia:
-1.1          (geoff    13-Feb-07): StP - Fin:    OK
-1.1          (geoff    13-Feb-07): War - Gal: Bounce with Vie;    
-1.1          (geoff    13-Feb-07): Mos - Ukr:    OK
-1.1          (geoff    13-Feb-07): Sev - Rum:    OK
-1.1          (geoff    13-Feb-07): 
-1.1          (geoff    13-Feb-07): Italy:
-1.1          (geoff    13-Feb-07): Ven - Tri:    OK
-1.1          (geoff    13-Feb-07): Rom - Apu:    OK
-1.1          (geoff    13-Feb-07): Nap - Ion:    OK
-1.1          (geoff    13-Feb-07): 
-1.1          (geoff    13-Feb-07): Germany:
-1.1          (geoff    13-Feb-07): Kie - Den:    OK
-1.1          (geoff    13-Feb-07): Ber - Kie:    OK
-1.1          (geoff    13-Feb-07): Mun - Bur:    OK
-1.1          (geoff    13-Feb-07): 
-1.1          (geoff    13-Feb-07): France:
-1.1          (geoff    13-Feb-07): Bre - MAO:    OK
-1.1          (geoff    13-Feb-07): Par - Gas:    OK
-1.1          (geoff    13-Feb-07): Mar - Spa:    OK
-1.1          (geoff    13-Feb-07): 
-1.1          (geoff    13-Feb-07): England:
-1.1          (geoff    13-Feb-07): Liv - Wal:    OK
-1.1          (geoff    13-Feb-07): Edi - Nth:    OK
-1.1          (geoff    13-Feb-07): Lon - Eng:    OK
-1.1          (geoff    13-Feb-07): 
-1.1          (geoff    13-Feb-07): Austria:
-1.1          (geoff    13-Feb-07): Tri - Alb:    OK
-1.1          (geoff    13-Feb-07): Bud - Ser:    OK
-1.1          (geoff    13-Feb-07): Vie - Gal: Bounce with War; 
-1.1          (geoff    13-Feb-07): 
-1.1          (geoff    13-Feb-07): Austria: Tri -> Alb                (*works*)
-1.1          (geoff    13-Feb-07): Austria: Bud -> Ser                (*works*)
-1.1          (geoff    13-Feb-07): Austria: Vie -> Gal                (*bounce*)
-1.1          (geoff    13-Feb-07): 
-1.1          (geoff    13-Feb-07): England: Liv -> Wal                (*works*)
-1.1          (geoff    13-Feb-07): England: Edi -> Nth                (*works*)
-1.1          (geoff    13-Feb-07): England: Lon -> Eng                (*works*)
-1.1          (geoff    13-Feb-07): 
-1.1          (geoff    13-Feb-07): France:  Bre -> MAO                (*works*)
-1.1          (geoff    13-Feb-07): France:  Par -> Gas                (*works*)
-1.1          (geoff    13-Feb-07): France:  Mar -> Spa                (*works*)
-1.1          (geoff    13-Feb-07): 
-1.1          (geoff    13-Feb-07): Germany: Kie -> Den                (*works*)
-1.1          (geoff    13-Feb-07): Germany: Ber -> Kie                (*works*)
-1.1          (geoff    13-Feb-07): Germany: Mun -> Bur                (*works*)
-1.1          (geoff    13-Feb-07): 
-1.1          (geoff    13-Feb-07): Italy:   Ven -> Tri                (*works*)
-1.1          (geoff    13-Feb-07): Italy:   Rom -> Apu                (*works*)
-1.1          (geoff    13-Feb-07): Italy:   Nap -> Ion                (*works*)
-1.1          (geoff    13-Feb-07): 
-1.1          (geoff    13-Feb-07): Russia:  StP -> Fin                (*works*)
-1.1          (geoff    13-Feb-07): Russia:  War -> Gal                (*bounce*)
-1.1          (geoff    13-Feb-07): Russia:  Mos -> Ukr                (*works*)
-1.1          (geoff    13-Feb-07): Russia:  Sev -> Rum                (*works*)
-1.1          (geoff    13-Feb-07): 
-1.1          (geoff    13-Feb-07): Turkey:  Con -> Bul                (*works*)
-1.1          (geoff    13-Feb-07): Turkey:  Smy -> Con                (*works*)
-1.1          (geoff    13-Feb-07): Turkey:  Ank -> BLA                (*works*)
-1.1          (geoff    13-Feb-07): 
+1.1          (geoff    19-Feb-09): Hello World!
 
-Annotations for /users/mattias/work/master/Testing/Automatic/texttest/GUI/StaticGUI/TargetApp/npstIII/Game47/S01/output.dip
+Annotations for /home/geoff/texttesttmp/texttest.20Feb200506.10965/texttest/GUI/StaticGUI/CVSPlugin/CVSAnnotate/TargetApp/Suite/Subsuite/Test3/output.hello
 ***************
 
 'press close' event created with arguments ''
