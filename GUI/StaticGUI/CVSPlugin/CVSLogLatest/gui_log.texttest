@@ -3,9 +3,9 @@ Enabling entry completion, using matching 1
 Waiting for application event 'all tests to be read' to occur.
 Adding entry completion '<default>' ...
 Adding entry completion '1' ...
-Adding entry completion '/home/geoff/texttesttmp/texttest.cover.22Feb195221.8180/texttest.cover/GUI/StaticGUI/CVSPlugin/CVSLogLatest/personaldir/log/log4py.conf' ...
+Adding entry completion '/home/geoff/texttesttmp/texttest.22Feb202035.8945/texttest/GUI/StaticGUI/CVSPlugin/CVSLogLatest/personaldir/log/log4py.conf' ...
 Adding entry completion '/home/geoff/code/texttest/log/log4py.conf' ...
-Adding entry completion '/home/geoff/texttesttmp/texttest.cover.22Feb195221.8180/texttest.cover/GUI/StaticGUI/CVSPlugin/CVSLogLatest/personaldir/log' ...
+Adding entry completion '/home/geoff/texttesttmp/texttest.22Feb202035.8945/texttest/GUI/StaticGUI/CVSPlugin/CVSLogLatest/personaldir/log' ...
 Top Window title is TextTest static GUI : management of tests for HELLO
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
@@ -244,11 +244,11 @@ Viewing action with title '_Select', stock id ''gtk-find'', accelerator ''<contr
 Viewing radio button for switch '', options Discard/Refine/Extend'. Default value 0.
 Viewing action with title 'Filter', stock id ''gtk-find'', accelerator ''<control>f''
 
-Changing GUI status to: 'TextTest started at 22Feb19:52:36.'
+Changing GUI status to: 'TextTest started at 22Feb20:20:43.'
 
 Changing GUI status to: 'Reading tests ...'
 
-Changing GUI status to: 'Reading tests completed at 22Feb19:52:37.'
+Changing GUI status to: 'Reading tests completed at 22Feb20:20:44.'
 
 Test Tree description...
 -> TargetApp (hello)
@@ -257,8 +257,9 @@ Test Tree description...
 ->   Suite
 ->     Subsuite
 ->       Test3
+->       Test4
 
-Test column header set to 'Tests: 0/3 selected'
+Test column header set to 'Tests: 0/4 selected'
 
 Viewing notebook page for 'Selection'
 Viewing entry for option 'Tests for version' (drop-down list containing ['', '<default>'])
@@ -281,7 +282,7 @@ Expected application event 'all tests to be read' occurred, proceeding.
 
 'set test selection to' event created with arguments 'Test1'
 
-Test column header set to 'Tests: 1/3 selected'
+Test column header set to 'Tests: 1/4 selected'
 Setting sensitivity of action '_Copy' to True
 Setting sensitivity of action '_Cut' to True
 Setting sensitivity of action 'Enter Failure Information' to True
@@ -354,10 +355,10 @@ Changing GUI status to: 'Performed cvs log latest for the selected test.'
 'select indicated tests' event created with arguments ''
 
 Changing GUI status to: 'Selecting tests ...'
-Selected 3 out of a possible 3
-Marking 3 tests as selected
+Selected 4 out of a possible 4
+Marking 4 tests as selected
 
-Test column header set to 'Tests: All 3 selected'
+Test column header set to 'Tests: All 4 selected'
 Setting sensitivity of action 'Enter Failure Information' to False
 Setting sensitivity of action '_Rename...' to False
 Setting sensitivity of action 'Move down' to False
@@ -383,7 +384,7 @@ Viewing action with title 'Filter', stock id ''gtk-find'', accelerator ''<contro
 
 Tabs showing : Selection, Running, Config
 
-Changing GUI status to: 'Selected 3 tests.'
+Changing GUI status to: 'Selected 4 tests.'
 
 'cvs log latest for the selected test' event created with arguments ''
 
@@ -392,6 +393,8 @@ Changing GUI status to: 'Logging Test1'
 Changing GUI status to: 'Logging Test2'
 
 Changing GUI status to: 'Logging Suite/Subsuite/Test3'
+
+Changing GUI status to: 'Logging Suite/Subsuite/Test4'
 ---------- Dialog 'cvs log latest for the selected test' ----------
 Default action is labelled 'gtk-close'
 Using notebook layout with icon 'gtk-dialog-info', header :
@@ -446,6 +449,8 @@ revision 1.1.1.1
 date: 2009-02-19 21:26:26 +0100;  author: geoff;  state: Exp;  lines: +0 -0;  commitid: rWzEIC5JwaIek5Dt;
 Initial import
 ====================
+
+Adding notebook tab 'Test4' with contents
 -------------------------------------------------------------------
 
 Changing GUI status to: 'Performed cvs log latest for the selected test.'
@@ -456,11 +461,15 @@ Changing GUI status to: 'Performed cvs log latest for the selected test.'
 
 'set test selection to' event created with arguments 'Test3'
 
-Test column header set to 'Tests: 2/3 selected'
+Test column header set to 'Tests: 3/4 selected'
 
-Test column header set to 'Tests: 1/3 selected'
+Test column header set to 'Tests: 2/4 selected'
+
+Test column header set to 'Tests: 1/4 selected'
 Setting sensitivity of action 'Enter Failure Information' to True
 Setting sensitivity of action '_Rename...' to True
+Setting sensitivity of action 'Move down' to True
+Setting sensitivity of action 'Move to last' to True
 
 Setting file-view title to 'Test3'
 Adding file errors.hello under heading 'Standard Files', coloured grey90
@@ -477,7 +486,7 @@ Tabs showing : Test, Selection, Running, Config
 
 'set test selection to' event created with arguments 'Suite'
 
-Test column header set to 'Tests: 0/3 selected'
+Test column header set to 'Tests: 0/4 selected'
 
 Setting file-view title to 'Suite'
 Adding file testsuite.hello under heading 'Definition Files', coloured grey90
@@ -492,6 +501,8 @@ Setting sensitivity of action '_Sort Test Suite File' to True
 Setting sensitivity of action '_Reversed Sort Test Suite File' to True
 Setting sensitivity of action 'Move to first' to True
 Setting sensitivity of action 'Move up' to True
+Setting sensitivity of action 'Move down' to False
+Setting sensitivity of action 'Move to last' to False
 Setting sensitivity of action 'Re_connect' to False
 Setting sensitivity of action 'S_ave Selection...' to False
 Setting sensitivity of action '_Run' to False
