@@ -1,0 +1,56 @@
+<-CMD:cvs -d /home/geoff/texttesttmp/texttest.cover.22Feb211045.10601/texttest.cover/GUI/StaticGUI/CVSPlugin/DiffRevisions/cvsroot status -l /home/geoff/texttesttmp/texttest.cover.22Feb211045.10601/texttest.cover/GUI/StaticGUI/CVSPlugin/DiffRevisions/TargetApp/Test2/errors.hello
+->OUT:===================================================================
+File: errors.hello     	Status: Up-to-date
+
+   Working revision:	1.1.1.1	2009-02-19 21:26:26 +0100
+   Repository revision:	1.1.1.1	/home/geoff/texttesttmp/texttest.cover.22Feb211045.10601/texttest.cover/GUI/StaticGUI/CVSPlugin/DiffRevisions/cvsroot/TargetApp/Test2/errors.hello,v
+   Commit Identifier:	rWzEIC5JwaIek5Dt
+   Sticky Tag:		(none)
+   Sticky Date:		(none)
+   Sticky Options:	(none)
+
+<-CMD:cvs -d /home/geoff/texttesttmp/texttest.cover.22Feb211045.10601/texttest.cover/GUI/StaticGUI/CVSPlugin/DiffRevisions/cvsroot status -l /home/geoff/texttesttmp/texttest.cover.22Feb211045.10601/texttest.cover/GUI/StaticGUI/CVSPlugin/DiffRevisions/TargetApp/Test2/output.hello
+->OUT:===================================================================
+File: output.hello     	Status: Locally Modified
+
+   Working revision:	1.2	2009-02-22 21:09:35 +0100
+   Repository revision:	1.2	/home/geoff/texttesttmp/texttest.cover.22Feb211045.10601/texttest.cover/GUI/StaticGUI/CVSPlugin/DiffRevisions/cvsroot/TargetApp/Test2/output.hello,v
+   Commit Identifier:	mhUeUwQ4ncMD8tDt
+   Sticky Tag:		(none)
+   Sticky Date:		(none)
+   Sticky Options:	(none)
+
+<-CMD:cvs -d /home/geoff/texttesttmp/texttest.cover.22Feb211045.10601/texttest.cover/GUI/StaticGUI/CVSPlugin/DiffRevisions/cvsroot diff -N -l -r 1.1 /home/geoff/texttesttmp/texttest.cover.22Feb211045.10601/texttest.cover/GUI/StaticGUI/CVSPlugin/DiffRevisions/TargetApp/Test2/output.hello
+->OUT:Index: /home/geoff/texttesttmp/texttest.cover.22Feb211045.10601/texttest.cover/GUI/StaticGUI/CVSPlugin/DiffRevisions/TargetApp/Test2/output.hello
+===================================================================
+RCS file: /home/geoff/texttesttmp/texttest.cover.22Feb211045.10601/texttest.cover/GUI/StaticGUI/CVSPlugin/DiffRevisions/cvsroot/TargetApp/Test2/output.hello,v
+retrieving revision 1.1
+diff -r1.1 output.hello
+1c1
+< Hello
+---
+> Hello uncommitted update!
+->EXC:1
+<-CMD:cvs -d /home/geoff/texttesttmp/texttest.cover.22Feb211045.10601/texttest.cover/GUI/StaticGUI/CVSPlugin/DiffRevisions/cvsroot diff -N -l -r 1.1 /home/geoff/texttesttmp/texttest.cover.22Feb211045.10601/texttest.cover/GUI/StaticGUI/CVSPlugin/DiffRevisions/TargetApp/Test2/output.hello
+->OUT:Index: /home/geoff/texttesttmp/texttest.cover.22Feb211045.10601/texttest.cover/GUI/StaticGUI/CVSPlugin/DiffRevisions/TargetApp/Test2/output.hello
+===================================================================
+RCS file: /home/geoff/texttesttmp/texttest.cover.22Feb211045.10601/texttest.cover/GUI/StaticGUI/CVSPlugin/DiffRevisions/cvsroot/TargetApp/Test2/output.hello,v
+retrieving revision 1.1
+diff -r1.1 output.hello
+1c1
+< Hello
+---
+> Hello uncommitted update!
+->EXC:1
+<-CMD:cvs -d /home/geoff/texttesttmp/texttest.cover.22Feb211045.10601/texttest.cover/GUI/StaticGUI/CVSPlugin/DiffRevisions/cvsroot diff -N -l -r HEAD -r 1.1 /home/geoff/texttesttmp/texttest.cover.22Feb211045.10601/texttest.cover/GUI/StaticGUI/CVSPlugin/DiffRevisions/TargetApp/Test2/output.hello
+->OUT:Index: /home/geoff/texttesttmp/texttest.cover.22Feb211045.10601/texttest.cover/GUI/StaticGUI/CVSPlugin/DiffRevisions/TargetApp/Test2/output.hello
+===================================================================
+RCS file: /home/geoff/texttesttmp/texttest.cover.22Feb211045.10601/texttest.cover/GUI/StaticGUI/CVSPlugin/DiffRevisions/cvsroot/TargetApp/Test2/output.hello,v
+retrieving revision 1.2
+retrieving revision 1.1
+diff -r1.2 -r1.1
+1c1
+< Hello current version!
+---
+> Hello
+->EXC:1
