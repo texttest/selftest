@@ -1,4 +1,4 @@
-TextTest will write diagnostics in /carm/proj/texttest-tmp/geoff/texttest.20Feb175653.30235/texttest/TestSelf/Documentation/ConfigFileEntries based on file at /carm/proj/texttest-tmp/geoff/texttest.20Feb175653.30235/texttest/TestSelf/Documentation/ConfigFileEntries/logging
+TextTest will write diagnostics in /carm/proj/texttest-tmp/geoff/texttest.23Feb172230.9590/texttest/TestSelf/Documentation/ConfigFileEntries based on file at /carm/proj/texttest-tmp/geoff/texttest.23Feb172230.9590/texttest/TestSelf/Documentation/ConfigFileEntries/logging
 Using Application APPIDENTIFIER
 auto_sort_test_suites|0|Automatically sort test suites in alphabetical order. 1 means sort in ascending order, -1 means sort in descending order.
 base_version|[]|Versions to inherit settings from
@@ -39,6 +39,7 @@ extra_search_directory|{'default': []}|Additional directories to search for Text
 extra_version|[]|Versions to be run in addition to the one specified
 failure_display_priority|{'default': 99}|Mapping of result files to which order they should be shown in the text info window.
 failure_severity|{'errors': 1, 'default': 99, 'catalogue': 2, 'usecase': 1, 'traffic': 1, 'performance': 2, 'output': 1}|Mapping of result files to how serious diffs in them are
+filter_file_directory|['filter_files']|Default directories for test filter files, relative to an application directory.
 follow_file_by_default|0|When double-clicking running files, should we follow progress or just view them?
 follow_program|{'default': 'xterm -bg white -T $TEXTTEST_FOLLOW_FILE_TITLE -e tail -f'}|External program to use for following progress of a file
 full_name|APPIDENTIFIER|Expanded name to use for application
@@ -77,7 +78,7 @@ test_data_environment|{}|Environment variables to be redirected for linked/copie
 test_data_ignore|{'default': []}|Elements under test data structures which should not be viewed or change-monitored
 test_data_properties|{'default': ''}|Write the contents of test_data_environment to the given Java properties file
 test_data_searchpath|{'default': []}|Alias. See entry for 'extra_search_directory'
-test_list_files_directory|['filter_files']|Default directories for test filter files, relative to an application directory.
+test_list_files_directory|['filter_files']|Alias. See entry for 'filter_file_directory'
 testoverview_colours|{'run_tuesday_fg': 'black', 'performance_bg': '#FFC6A5', 'row_header_bg': '#FFFFCC', 'run_wednesday_fg': 'black', 'no_results_bg': 'gray2', 'column_header_bg': 'gray1', 'test_default_fg': 'black', 'success_bg': '#CEEFBD', 'failure_bg': '#FF3118', 'run_monday_fg': 'black', 'run_sunday_fg': 'black', 'run_saturday_fg': 'black', 'run_thursday_fg': 'black', 'run_friday_fg': 'black', 'memory_bg': 'pink', 'performance_fg': 'red6'}|Alias. See entry for 'historical_report_colours'
 text_diff_program|diff|External program to use for textual comparison of files
 text_diff_program_filters|{'default': [], 'diff': ['^<', '^>']}|Filters that should be applied for particular diff tools to aid with grouping in dynamic GUI
