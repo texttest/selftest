@@ -3,9 +3,9 @@ Enabling entry completion, using matching 1
 Waiting for application event 'all tests to be read' to occur.
 Adding entry completion '<default>' ...
 Adding entry completion '1' ...
-Adding entry completion '/home/geoff/texttesttmp/texttest.23Feb224742.9982/texttest/GUI/StaticGUI/CVSPlugin/CVSDiff/personaldir/log/log4py.conf' ...
-Adding entry completion '/home/geoff/code/texttest/log/log4py.conf' ...
-Adding entry completion '/home/geoff/texttesttmp/texttest.23Feb224742.9982/texttest/GUI/StaticGUI/CVSPlugin/CVSDiff/personaldir/log' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.25Feb145603.3154/texttest/GUI/StaticGUI/CVSPlugin/CVSDiff/personaldir/log/log4py.conf' ...
+Adding entry completion '/users/geoff/work/master/Testing/TextTest/log/log4py.conf' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.25Feb145603.3154/texttest/GUI/StaticGUI/CVSPlugin/CVSDiff/personaldir/log' ...
 Top Window title is TextTest static GUI : management of tests for HELLO
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
@@ -244,11 +244,11 @@ Viewing action with title '_Select', stock id ''gtk-find'', accelerator ''<contr
 Viewing radio button for switch '', options Discard/Refine/Extend'. Default value 0.
 Viewing action with title 'Filter', stock id ''gtk-find'', accelerator ''<control>f''
 
-Changing GUI status to: 'TextTest started at 23Feb22:47:44.'
+Changing GUI status to: 'TextTest started at 25Feb14:56:04.'
 
 Changing GUI status to: 'Reading tests ...'
 
-Changing GUI status to: 'Reading tests completed at 23Feb22:47:44.'
+Changing GUI status to: 'Reading tests completed at 25Feb14:56:04.'
 
 Test Tree description...
 -> TargetApp (hello)
@@ -323,12 +323,22 @@ Tabs showing : Test, Selection, Running, Config
 'cvs difference for the selected files' event created with arguments ''
 Adding entry completion 'output' ...
 
-Changing GUI status to: 'Diffing Test1'
+Changing GUI status to: 'Getting differences for Test1'
+
+Changing GUI status to: 'Analyzing differences for TargetApp/Test1/output.hello.version'
 ---------- Dialog 'cvs difference for the selected files' ----------
 Default action is labelled 'gtk-close'
-Using Tree View layout with icon 'gtk-dialog-info', header :
-All CVS controlled files are up-to-date and unmodified compared to the latest repository version.
-Subdirectories were ignored, use CVS Difference Recursive to see differences for all subdirectories.
+Using Tree View layout with icon 'gtk-dialog-warning', header :
+CVS differences compared to the latest revision shown below.
+Some files/directories were not under CVS control.
+CVS command used: cvs diff -N
+Subdirectories were ignored, use CVS Difference Recursive to get the differences for all subdirectories.
+
+CVS tree view dialog: Adding TargetApp as root, info /carm/proj/texttest-tmp/geoff/texttest.25Feb145603.3154/texttest/GUI/StaticGUI/CVSPlugin/CVSDiff/TargetApp/Test1/output.hello.version
+CVS tree view dialog: Adding TargetApp/Test1 as child of TargetApp, info /carm/proj/texttest-tmp/geoff/texttest.25Feb145603.3154/texttest/GUI/StaticGUI/CVSPlugin/CVSDiff/TargetApp/Test1/output.hello.version
+CVS tree view dialog: Adding TargetApp/Test1/output.hello.version as child of TargetApp/Test1, info /carm/proj/texttest-tmp/geoff/texttest.25Feb145603.3154/texttest/GUI/StaticGUI/CVSPlugin/CVSDiff/TargetApp/Test1/output.hello.version
+CVS tree view dialog: Showing CVS output
+cvs diff: I know nothing about /carm/proj/texttest-tmp/geoff/texttest.25Feb144121.2893/texttest/GUI/StaticGUI/CVSPlugin/CVSDiff/TargetApp/Test1/output.hello.version
 --------------------------------------------------------------------
 
 Changing GUI status to: 'Performed cvs difference for the selected files.'
@@ -367,41 +377,54 @@ Test column header set to 'Tests: 3/4 selected'
 
 'cvs difference for the selected files' event created with arguments ''
 
-Changing GUI status to: 'Diffing Test1'
+Changing GUI status to: 'Getting differences for Test1'
 
-Changing GUI status to: 'Diffing Test2'
+Changing GUI status to: 'Analyzing differences for TargetApp/Test1/output.hello.version'
 
-Changing GUI status to: 'Diffing Suite/Subsuite/Test3'
+Changing GUI status to: 'Getting differences for Test2'
+
+Changing GUI status to: 'Analyzing differences for TargetApp/Test2/output.hello'
+
+Changing GUI status to: 'Getting differences for Suite/Subsuite/Test3'
 ---------- Dialog 'cvs difference for the selected files' ----------
 Default action is labelled 'gtk-close'
 Using Tree View layout with icon 'gtk-dialog-warning', header :
-Showing differences compared to the latest revision for CVS controlled files.
-CVS command used: cvs diff -N -l
-Subdirectories were ignored, use CVS Difference Recursive to see differences for all subdirectories.
+CVS differences compared to the latest revision shown below.
+Some files/directories were not under CVS control.
+CVS command used: cvs diff -N
+Subdirectories were ignored, use CVS Difference Recursive to get the differences for all subdirectories.
 
-CVS tree view dialog: Adding TargetApp as root, info /home/geoff/texttesttmp/texttest.cover.22Feb211143.10645/texttest.cover/GUI/StaticGUI/CVSPlugin/CVSDiff/TargetApp/Test2/output.hello
-CVS tree view dialog: Adding TargetApp/Test2 as child of TargetApp, info /home/geoff/texttesttmp/texttest.cover.22Feb211143.10645/texttest.cover/GUI/StaticGUI/CVSPlugin/CVSDiff/TargetApp/Test2/output.hello
-CVS tree view dialog: Adding TargetApp/Test2/output.hello as child of TargetApp/Test2, info /home/geoff/texttesttmp/texttest.cover.22Feb211143.10645/texttest.cover/GUI/StaticGUI/CVSPlugin/CVSDiff/TargetApp/Test2/output.hello
+CVS tree view dialog: Adding TargetApp as root, info /carm/proj/texttest-tmp/geoff/texttest.25Feb145603.3154/texttest/GUI/StaticGUI/CVSPlugin/CVSDiff/TargetApp/Test1/output.hello.version
+CVS tree view dialog: Adding TargetApp/Test1 as child of TargetApp, info /carm/proj/texttest-tmp/geoff/texttest.25Feb145603.3154/texttest/GUI/StaticGUI/CVSPlugin/CVSDiff/TargetApp/Test1/output.hello.version
+CVS tree view dialog: Adding TargetApp/Test1/output.hello.version as child of TargetApp/Test1, info /carm/proj/texttest-tmp/geoff/texttest.25Feb145603.3154/texttest/GUI/StaticGUI/CVSPlugin/CVSDiff/TargetApp/Test1/output.hello.version
+CVS tree view dialog: Adding TargetApp/Test2 as child of TargetApp, info /carm/proj/texttest-tmp/geoff/texttest.25Feb145603.3154/texttest/GUI/StaticGUI/CVSPlugin/CVSDiff/TargetApp/Test2/output.hello
+CVS tree view dialog: Adding TargetApp/Test2/output.hello as child of TargetApp/Test2, info /carm/proj/texttest-tmp/geoff/texttest.25Feb145603.3154/texttest/GUI/StaticGUI/CVSPlugin/CVSDiff/TargetApp/Test2/output.hello
 CVS tree view dialog: Showing CVS output
-RCS file: /home/geoff/texttesttmp/texttest.cover.22Feb211143.10645/texttest.cover/GUI/StaticGUI/CVSPlugin/CVSDiff/cvsroot/TargetApp/Test2/output.hello,v
+cvs diff: I know nothing about /carm/proj/texttest-tmp/geoff/texttest.25Feb144121.2893/texttest/GUI/StaticGUI/CVSPlugin/CVSDiff/TargetApp/Test1/output.hello.version
+--------------------------------------------------------------------
+
+Changing GUI status to: 'Performed cvs difference for the selected files.'
+
+'select' event created with arguments 'output.hello'
+CVS tree view dialog: Showing CVS output
+Index: /carm/proj/texttest-tmp/geoff/texttest.25Feb144121.2893/texttest/GUI/StaticGUI/CVSPlugin/CVSDiff/TargetApp/Test2/output.hello
+===================================================================
+RCS file: /carm/proj/texttest-tmp/geoff/texttest.25Feb144121.2893/texttest/GUI/StaticGUI/CVSPlugin/CVSDiff/cvsroot/TargetApp/Test2/output.hello,v
 retrieving revision 1.2
 diff -r1.2 output.hello
 1c1
 < Hello current version!
 ---
 > Hello uncommitted update!
---------------------------------------------------------------------
-
-Changing GUI status to: 'Performed cvs difference for the selected files.'
 
 'show cvs differences graphically' event created with arguments ''
-Viewing CVS differences for file '/home/geoff/texttesttmp/texttest.cover.22Feb211143.10645/texttest.cover/GUI/StaticGUI/CVSPlugin/CVSDiff/TargetApp/Test2/output.hello' graphically ...
+Viewing CVS differences for file '/carm/proj/texttest-tmp/geoff/texttest.25Feb145603.3154/texttest/GUI/StaticGUI/CVSPlugin/CVSDiff/TargetApp/Test2/output.hello' graphically ...
 
 'press close' event created with arguments ''
 
 'quit' event created with arguments ''
 
 Changing GUI status to: 'Terminating all external viewers ...'
-Killing 'Graphical CVS diff for file /home/geoff/texttesttmp/texttest.cover.22Feb211143.10645/texttest.cover/GUI/StaticGUI/CVSPlugin/CVSDiff/TargetApp/Test2/output.hello' interactive process
+Killing 'Graphical CVS diff for file /carm/proj/texttest-tmp/geoff/texttest.25Feb145603.3154/texttest/GUI/StaticGUI/CVSPlugin/CVSDiff/TargetApp/Test2/output.hello' interactive process
 
 Changing GUI status to: 'Removing all temporary files ...'
