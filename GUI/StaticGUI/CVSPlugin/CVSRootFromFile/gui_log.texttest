@@ -3,9 +3,9 @@ Enabling entry completion, using matching 1
 Waiting for application event 'all tests to be read' to occur.
 Adding entry completion '<default>' ...
 Adding entry completion '1' ...
-Adding entry completion '/home/geoff/texttesttmp/texttest.25Feb212957.9505/texttest/GUI/StaticGUI/CVSPlugin/NoCVSRoot/personaldir/log/log4py.conf' ...
-Adding entry completion '/home/geoff/code/texttest/log/log4py.conf' ...
-Adding entry completion '/home/geoff/texttesttmp/texttest.25Feb212957.9505/texttest/GUI/StaticGUI/CVSPlugin/NoCVSRoot/personaldir/log' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.25Feb163444.5150/texttest/GUI/StaticGUI/CVSPlugin/CVSRootFromFile/personaldir/log/log4py.conf' ...
+Adding entry completion '/users/geoff/work/master/Testing/TextTest/log/log4py.conf' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.25Feb163444.5150/texttest/GUI/StaticGUI/CVSPlugin/CVSRootFromFile/personaldir/log' ...
 Top Window title is TextTest static GUI : management of tests for HELLO
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
@@ -244,11 +244,11 @@ Viewing action with title '_Select', stock id ''gtk-find'', accelerator ''<contr
 Viewing radio button for switch '', options Discard/Refine/Extend'. Default value 0.
 Viewing action with title 'Filter', stock id ''gtk-find'', accelerator ''<control>f''
 
-Changing GUI status to: 'TextTest started at 25Feb21:29:59.'
+Changing GUI status to: 'TextTest started at 25Feb16:34:47.'
 
 Changing GUI status to: 'Reading tests ...'
 
-Changing GUI status to: 'Reading tests completed at 25Feb21:29:59.'
+Changing GUI status to: 'Reading tests completed at 25Feb16:34:48.'
 
 Test Tree description...
 -> TargetApp (hello)
@@ -308,14 +308,30 @@ Tabs showing : Test, Selection, Config
 Adding entry completion 'output' ...
 
 Changing GUI status to: 'Getting logs for the root test suite'
----------- Dialog 'TextTest Error' ----------
-Default action is labelled 'gtk-ok'
-Using stock icon 'gtk-dialog-error'
-Could not determine $CVSROOT: environment variable not set and no file present at:
-/home/geoff/texttesttmp/texttest.25Feb212957.9505/texttest/GUI/StaticGUI/CVSPlugin/NoCVSRoot/TargetApp/CVS/Root
----------------------------------------------
 
-'agree to texttest message' event created with arguments ''
+Changing GUI status to: 'Analyzing logs for TargetApp/config.hello'
+
+Changing GUI status to: 'Analyzing logs for TargetApp/testsuite.hello'
+---------- Dialog 'cvs log for the selected files' ----------
+Default action is labelled 'gtk-close'
+Using Tree View layout with icon 'gtk-dialog-warning', header :
+CVS logs shown below.
+Some files/directories were not under CVS control.
+CVS command used: cvs -d /no/such/path log -N
+Subdirectories were ignored, use CVS Log Recursive to get the logs for all subdirectories.
+
+CVS tree view dialog: Adding TargetApp as root, info Not in CVS
+CVS tree view dialog: Adding TargetApp/config.hello as child of TargetApp, info Not in CVS
+CVS tree view dialog: Adding TargetApp/testsuite.hello as child of TargetApp, info Not in CVS
+CVS tree view dialog: Showing two columns
+CVS tree view dialog: Showing CVS output
+cvs [log aborted]: /no/such/path/CVSROOT: No such file or directory
+-------------------------------------------------------------
+
+Changing GUI status to: 'Performed cvs log for the selected files.'
+
+'press close' event created with arguments ''
+Adding entry completion 'HEAD' ...
 
 'quit' event created with arguments ''
 
