@@ -3,9 +3,9 @@ Enabling entry completion, using matching 1
 Waiting for application event 'all tests to be read' to occur.
 Adding entry completion '<default>' ...
 Adding entry completion '1' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.25Feb154516.4080/texttest/GUI/StaticGUI/CVSPlugin/CVSStatusFromLog/personaldir/log/log4py.conf' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.25Feb163717.5240/texttest/GUI/StaticGUI/CVSPlugin/CVSStatusFromLog/personaldir/log/log4py.conf' ...
 Adding entry completion '/users/geoff/work/master/Testing/TextTest/log/log4py.conf' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.25Feb154516.4080/texttest/GUI/StaticGUI/CVSPlugin/CVSStatusFromLog/personaldir/log' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.25Feb163717.5240/texttest/GUI/StaticGUI/CVSPlugin/CVSStatusFromLog/personaldir/log' ...
 Top Window title is TextTest static GUI : management of tests for HELLO
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
@@ -244,11 +244,11 @@ Viewing action with title '_Select', stock id ''gtk-find'', accelerator ''<contr
 Viewing radio button for switch '', options Discard/Refine/Extend'. Default value 0.
 Viewing action with title 'Filter', stock id ''gtk-find'', accelerator ''<control>f''
 
-Changing GUI status to: 'TextTest started at 25Feb15:45:24.'
+Changing GUI status to: 'TextTest started at 25Feb16:37:20.'
 
 Changing GUI status to: 'Reading tests ...'
 
-Changing GUI status to: 'Reading tests completed at 25Feb15:45:24.'
+Changing GUI status to: 'Reading tests completed at 25Feb16:37:20.'
 
 Test Tree description...
 -> TargetApp (hello)
@@ -323,24 +323,31 @@ Tabs showing : Test, Selection, Running, Config
 'cvs log for the selected files' event created with arguments ''
 Adding entry completion 'output' ...
 
-Changing GUI status to: 'Logging Test1'
+Changing GUI status to: 'Getting logs for Test1'
 
-Changing GUI status to: 'Analyzing log for TargetApp/Test1/errors.hello'
+Changing GUI status to: 'Analyzing logs for TargetApp/Test1/errors.hello'
+
+Changing GUI status to: 'Analyzing logs for TargetApp/Test1/output.hello'
+
+Changing GUI status to: 'Analyzing logs for TargetApp/Test1/output.hello.version'
 ---------- Dialog 'cvs log for the selected files' ----------
 Default action is labelled 'gtk-close'
-Using Tree View layout with icon 'gtk-dialog-info', header :
+Using Tree View layout with icon 'gtk-dialog-warning', header :
 CVS logs shown below.
-CVS command used: cvs log -N -l
+Some files/directories were not under CVS control.
+CVS command used: cvs log -N
 Subdirectories were ignored, use CVS Log Recursive to get the logs for all subdirectories.
 
-CVS tree view dialog: Adding TargetApp as root, info <span weight='bold' foreground='red'>Today at 22:21:36</span>
-CVS tree view dialog: Adding TargetApp/Test1 as child of TargetApp, info <span weight='bold' foreground='red'>Today at 22:21:36</span>
-CVS tree view dialog: Adding TargetApp/Test1/errors.hello as child of TargetApp/Test1, info <span weight='bold' foreground='red'>Today at 22:21:36</span>
+CVS tree view dialog: Adding TargetApp as root, info <span weight='bold' foreground='red'>Today at 21:21:36</span>
+CVS tree view dialog: Adding TargetApp/Test1 as child of TargetApp, info <span weight='bold' foreground='red'>Today at 21:21:36</span>
+CVS tree view dialog: Adding TargetApp/Test1/errors.hello as child of TargetApp/Test1, info <span weight='bold' foreground='red'>Today at 21:21:36</span>
 CVS tree view dialog: Adding TargetApp/Test1/output.hello as child of TargetApp/Test1, info 5 days ago
+CVS tree view dialog: Adding TargetApp/Test1/output.hello.version as child of TargetApp/Test1, info Not in CVS
 CVS tree view dialog: Showing two columns
 CVS tree view dialog: Showing CVS output
-RCS file: /home/geoff/texttesttmp/texttest.24Feb222712.7462/texttest/GUI/StaticGUI/CVSPlugin/CVSStatusFromLog/cvsroot/TargetApp/Test1/errors.hello,v
-Working file: /home/geoff/texttesttmp/texttest.24Feb222712.7462/texttest/GUI/StaticGUI/CVSPlugin/CVSStatusFromLog/TargetApp/Test1/errors.hello
+
+RCS file: /carm/proj/texttest-tmp/geoff/texttest.25Feb163717.5240/texttest/GUI/StaticGUI/CVSPlugin/CVSStatusFromLog/cvsroot/TargetApp/Test1/errors.hello,v
+Working file: /carm/proj/texttest-tmp/geoff/texttest.25Feb163717.5240/texttest/GUI/StaticGUI/CVSPlugin/CVSStatusFromLog/TargetApp/Test1/errors.hello
 head: 1.2
 branch:
 locks: strict
@@ -350,17 +357,18 @@ total revisions: 3;	selected revisions: 3
 description:
 ----------------------------
 revision 1.2
-date: 2009-02-24 22:21:36 +0100;  author: geoff;  state: Exp;  lines: +1 -0;  commitid: N8xcISlYrXbctJDt;
+date: 2009/02/24 21:21:36;  author: geoff;  state: Exp;  lines: +1 -0
 Adding a line for to get a file that isn't up-to-date
 ----------------------------
 revision 1.1
-date: 2009-02-19 21:26:26 +0100;  author: geoff;  state: Exp;  commitid: rWzEIC5JwaIek5Dt;
+date: 2009/02/19 20:26:26;  author: geoff;  state: Exp;
 branches:  1.1.1;
 Initial revision
 ----------------------------
 revision 1.1.1.1
-date: 2009-02-19 21:26:26 +0100;  author: geoff;  state: Exp;  lines: +0 -0;  commitid: rWzEIC5JwaIek5Dt;
+date: 2009/02/19 20:26:26;  author: geoff;  state: Exp;  lines: +0 -0
 Initial import
+=============================================================================
 -------------------------------------------------------------
 
 Changing GUI status to: 'Performed cvs log for the selected files.'
@@ -382,9 +390,8 @@ CVS tree view dialog: Showing CVS output
 ===================================================================
 File: errors.hello     	Status: Needs Patch
 
-   Working revision:	1.1.1.1	2009-02-19 21:26:26 +0100
-   Repository revision:	1.2	/home/geoff/texttesttmp/texttest.24Feb222712.7462/texttest/GUI/StaticGUI/CVSPlugin/CVSStatusFromLog/cvsroot/TargetApp/Test1/errors.hello,v
-   Commit Identifier:	N8xcISlYrXbctJDt
+   Working revision:	1.1.1.1	Mon Feb 23 01:01:26 2009
+   Repository revision:	1.2	/carm/proj/texttest-tmp/geoff/texttest.25Feb163717.5240/texttest/GUI/StaticGUI/CVSPlugin/CVSStatusFromLog/cvsroot/TargetApp/Test1/errors.hello,v
    Sticky Tag:		(none)
    Sticky Date:		(none)
    Sticky Options:	(none)

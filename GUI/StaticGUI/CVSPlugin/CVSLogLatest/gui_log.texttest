@@ -3,9 +3,9 @@ Enabling entry completion, using matching 1
 Waiting for application event 'all tests to be read' to occur.
 Adding entry completion '<default>' ...
 Adding entry completion '1' ...
-Adding entry completion '/home/geoff/texttesttmp/texttest.24Feb222712.7462/texttest/GUI/StaticGUI/CVSPlugin/CVSLogLatest/personaldir/log/log4py.conf' ...
-Adding entry completion '/home/geoff/code/texttest/log/log4py.conf' ...
-Adding entry completion '/home/geoff/texttesttmp/texttest.24Feb222712.7462/texttest/GUI/StaticGUI/CVSPlugin/CVSLogLatest/personaldir/log' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.25Feb163142.5009/texttest/GUI/StaticGUI/CVSPlugin/CVSLogLatest/personaldir/log/log4py.conf' ...
+Adding entry completion '/users/geoff/work/master/Testing/TextTest/log/log4py.conf' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.25Feb163142.5009/texttest/GUI/StaticGUI/CVSPlugin/CVSLogLatest/personaldir/log' ...
 Top Window title is TextTest static GUI : management of tests for HELLO
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
@@ -244,11 +244,11 @@ Viewing action with title '_Select', stock id ''gtk-find'', accelerator ''<contr
 Viewing radio button for switch '', options Discard/Refine/Extend'. Default value 0.
 Viewing action with title 'Filter', stock id ''gtk-find'', accelerator ''<control>f''
 
-Changing GUI status to: 'TextTest started at 24Feb22:27:17.'
+Changing GUI status to: 'TextTest started at 25Feb16:31:43.'
 
 Changing GUI status to: 'Reading tests ...'
 
-Changing GUI status to: 'Reading tests completed at 24Feb22:27:18.'
+Changing GUI status to: 'Reading tests completed at 25Feb16:31:44.'
 
 Test Tree description...
 -> TargetApp (hello)
@@ -320,15 +320,15 @@ Description:
 
 Tabs showing : Test, Selection, Running, Config
 
-'cvs log latest for the selected test' event created with arguments ''
+'cvs log latest for the selected files' event created with arguments ''
 Adding entry completion 'output' ...
 
-Changing GUI status to: 'Logging Test1'
----------- Dialog 'cvs log latest for the selected test' ----------
+Changing GUI status to: 'Getting logs for Test1'
+---------- Dialog 'cvs log latest for the selected files' ----------
 Default action is labelled 'gtk-close'
 Using notebook layout with icon 'gtk-dialog-info', header :
 Showing latest log entries for the CVS controlled files.
-CVS log command used: log -N -l -rHEAD
+CVS log command used: log -N -rHEAD
 Subdirectories were ignored.
 
 Adding notebook tab 'Test1' with contents
@@ -336,19 +336,19 @@ Adding notebook tab 'Test1' with contents
 File: errors.hello
 ----------------------------
 revision 1.2
-date: 2009-02-24 22:21:36 +0100;  author: geoff;  state: Exp;  lines: +1 -0;  commitid: N8xcISlYrXbctJDt;
+date: 2009/02/24 21:21:36;  author: geoff;  state: Exp;  lines: +1 -0
 Adding a line for to get a file that isn't up-to-date
 ====================
 
 File: output.hello
 ----------------------------
 revision 1.1.1.1
-date: 2009-02-19 21:26:26 +0100;  author: geoff;  state: Exp;  lines: +0 -0;  commitid: rWzEIC5JwaIek5Dt;
+date: 2009/02/19 20:26:26;  author: geoff;  state: Exp;  lines: +0 -0
 Initial import
 ====================
--------------------------------------------------------------------
+--------------------------------------------------------------------
 
-Changing GUI status to: 'Performed cvs log latest for the selected test.'
+Changing GUI status to: 'Performed cvs log latest for the selected files.'
 
 'press close' event created with arguments ''
 
@@ -386,20 +386,20 @@ Tabs showing : Selection, Running, Config
 
 Changing GUI status to: 'Selected 4 tests.'
 
-'cvs log latest for the selected test' event created with arguments ''
+'cvs log latest for the selected files' event created with arguments ''
 
-Changing GUI status to: 'Logging Test1'
+Changing GUI status to: 'Getting logs for Test1'
 
-Changing GUI status to: 'Logging Test2'
+Changing GUI status to: 'Getting logs for Test2'
 
-Changing GUI status to: 'Logging Suite/Subsuite/Test3'
+Changing GUI status to: 'Getting logs for Suite/Subsuite/Test3'
 
-Changing GUI status to: 'Logging Suite/Subsuite/Test4'
----------- Dialog 'cvs log latest for the selected test' ----------
+Changing GUI status to: 'Getting logs for Suite/Subsuite/Test4'
+---------- Dialog 'cvs log latest for the selected files' ----------
 Default action is labelled 'gtk-close'
 Using notebook layout with icon 'gtk-dialog-info', header :
 Showing latest log entries for the CVS controlled files.
-CVS log command used: log -N -l -rHEAD
+CVS log command used: log -N -rHEAD
 Subdirectories were ignored.
 
 Adding notebook tab 'Test1' with contents
@@ -407,14 +407,14 @@ Adding notebook tab 'Test1' with contents
 File: errors.hello
 ----------------------------
 revision 1.2
-date: 2009-02-24 22:21:36 +0100;  author: geoff;  state: Exp;  lines: +1 -0;  commitid: N8xcISlYrXbctJDt;
+date: 2009/02/24 21:21:36;  author: geoff;  state: Exp;  lines: +1 -0
 Adding a line for to get a file that isn't up-to-date
 ====================
 
 File: output.hello
 ----------------------------
 revision 1.1.1.1
-date: 2009-02-19 21:26:26 +0100;  author: geoff;  state: Exp;  lines: +0 -0;  commitid: rWzEIC5JwaIek5Dt;
+date: 2009/02/19 20:26:26;  author: geoff;  state: Exp;  lines: +0 -0
 Initial import
 ====================
 
@@ -423,14 +423,14 @@ Adding notebook tab 'Test2' with contents
 File: errors.hello
 ----------------------------
 revision 1.1.1.1
-date: 2009-02-19 21:26:26 +0100;  author: geoff;  state: Exp;  lines: +0 -0;  commitid: rWzEIC5JwaIek5Dt;
+date: 2009/02/19 20:26:26;  author: geoff;  state: Exp;  lines: +0 -0
 Initial import
 ====================
 
 File: output.hello
 ----------------------------
 revision 1.2
-date: 2009-02-22 21:10:04 +0100;  author: geoff;  state: Exp;  lines: +1 -1;  commitid: mhUeUwQ4ncMD8tDt;
+date: 2009/02/22 20:10:04;  author: geoff;  state: Exp;  lines: +1 -1
 We made a change!
 ====================
 
@@ -439,21 +439,21 @@ Adding notebook tab 'Test3' with contents
 File: errors.hello
 ----------------------------
 revision 1.1.1.1
-date: 2009-02-19 21:26:26 +0100;  author: geoff;  state: Exp;  lines: +0 -0;  commitid: rWzEIC5JwaIek5Dt;
+date: 2009/02/19 20:26:26;  author: geoff;  state: Exp;  lines: +0 -0
 Initial import
 ====================
 
 File: output.hello
 ----------------------------
 revision 1.1.1.1
-date: 2009-02-19 21:26:26 +0100;  author: geoff;  state: Exp;  lines: +0 -0;  commitid: rWzEIC5JwaIek5Dt;
+date: 2009/02/19 20:26:26;  author: geoff;  state: Exp;  lines: +0 -0
 Initial import
 ====================
 
 Adding notebook tab 'Test4' with contents
--------------------------------------------------------------------
+--------------------------------------------------------------------
 
-Changing GUI status to: 'Performed cvs log latest for the selected test.'
+Changing GUI status to: 'Performed cvs log latest for the selected files.'
 
 'view tab' event created with arguments 'Test2'
 
@@ -510,14 +510,14 @@ Setting sensitivity of action '_Run' to False
 
 Tabs showing : Test, Selection, Config
 
-'cvs log latest for the selected test' event created with arguments ''
+'cvs log latest for the selected files' event created with arguments ''
 
-Changing GUI status to: 'Logging Suite'
----------- Dialog 'cvs log latest for the selected test' ----------
+Changing GUI status to: 'Getting logs for Suite'
+---------- Dialog 'cvs log latest for the selected files' ----------
 Default action is labelled 'gtk-close'
 Using notebook layout with icon 'gtk-dialog-info', header :
 Showing latest log entries for the CVS controlled files.
-CVS log command used: log -N -l -rHEAD
+CVS log command used: log -N -rHEAD
 Subdirectories were ignored.
 
 Adding notebook tab 'Suite' with contents
@@ -525,12 +525,12 @@ Adding notebook tab 'Suite' with contents
 File: testsuite.hello
 ----------------------------
 revision 1.1.1.1
-date: 2009-02-19 21:26:26 +0100;  author: geoff;  state: Exp;  lines: +0 -0;  commitid: rWzEIC5JwaIek5Dt;
+date: 2009/02/19 20:26:26;  author: geoff;  state: Exp;  lines: +0 -0
 Initial import
 ====================
--------------------------------------------------------------------
+--------------------------------------------------------------------
 
-Changing GUI status to: 'Performed cvs log latest for the selected test.'
+Changing GUI status to: 'Performed cvs log latest for the selected files.'
 
 'press close' event created with arguments ''
 
