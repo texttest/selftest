@@ -1,0 +1,39 @@
+<-CMD:bzr diff /home/geoff/texttesttmp/texttest.bzr.26Feb222755.11145/texttest.bzr/VersionControl/CVSDiff/TargetApp/Test1/errors.hello
+->OUT:=== modified file 'TargetApp/Test1/errors.hello'
+1d0
+< Added an extra line
+->EXC:1
+<-CMD:bzr diff /home/geoff/texttesttmp/texttest.bzr.26Feb222755.11145/texttest.bzr/VersionControl/CVSDiff/TargetApp/Test1/output.hello
+<-CMD:bzr diff /home/geoff/texttesttmp/texttest.bzr.26Feb222755.11145/texttest.bzr/VersionControl/CVSDiff/TargetApp/Test1/output.hello.version
+->ERR:bzr: ERROR: Path(s) are not versioned: TargetApp/Test1/output.hello.version
+->EXC:3
+<-CMD:bzr diff /home/geoff/texttesttmp/texttest.bzr.26Feb222755.11145/texttest.bzr/VersionControl/CVSDiff/TargetApp/Test1/output.hello
+<-CMD:bzr diff /home/geoff/texttesttmp/texttest.bzr.26Feb222755.11145/texttest.bzr/VersionControl/CVSDiff/TargetApp/Test1/errors.hello
+->OUT:=== modified file 'TargetApp/Test1/errors.hello'
+1d0
+< Added an extra line
+->EXC:1
+<-CMD:bzr diff /home/geoff/texttesttmp/texttest.bzr.26Feb222755.11145/texttest.bzr/VersionControl/CVSDiff/TargetApp/Test1/output.hello
+<-CMD:bzr diff /home/geoff/texttesttmp/texttest.bzr.26Feb222755.11145/texttest.bzr/VersionControl/CVSDiff/TargetApp/Test1/output.hello.version
+->ERR:bzr: ERROR: Path(s) are not versioned: TargetApp/Test1/output.hello.version
+->EXC:3
+<-CMD:bzr diff /home/geoff/texttesttmp/texttest.bzr.26Feb222755.11145/texttest.bzr/VersionControl/CVSDiff/TargetApp/Test2/errors.hello
+<-CMD:bzr diff /home/geoff/texttesttmp/texttest.bzr.26Feb222755.11145/texttest.bzr/VersionControl/CVSDiff/TargetApp/Test2/output.hello
+->OUT:=== modified file 'TargetApp/Test2/output.hello'
+1c1
+< Hello current version!
+---
+> Hello uncommitted update!
+->EXC:1
+<-CMD:bzr diff /home/geoff/texttesttmp/texttest.bzr.26Feb222755.11145/texttest.bzr/VersionControl/CVSDiff/TargetApp/Suite/Subsuite/Test3/errors.hello
+<-CMD:bzr diff /home/geoff/texttesttmp/texttest.bzr.26Feb222755.11145/texttest.bzr/VersionControl/CVSDiff/TargetApp/Suite/Subsuite/Test3/output.hello
+->OUT:=== modified file 'TargetApp/Suite/Subsuite/Test3/output.hello'
+1,2c1
+< Failure checked in!
+< 
+---
+> Failure created locally!
+->EXC:1
+<-CMD:tkdiff --help
+<-CMD:bzr diff --using=tkdiff /home/geoff/texttesttmp/texttest.bzr.26Feb222755.11145/texttest.bzr/VersionControl/CVSDiff/TargetApp/Test2/output.hello
+->OUT:=== modified file 'TargetApp/Test2/output.hello'

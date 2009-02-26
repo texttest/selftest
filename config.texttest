@@ -6,7 +6,11 @@ executable:${TEXTTEST_CHECKOUT}/bin/texttest.py
 # Run-dependent smaller tests
 extra_version:rundep
 
-# Run the LSF and SGE tests too...
+# Version control systems!
+extra_version:cvs
+extra_version:bzr
+
+# Grid Engines!
 extra_version:sge
 extra_version:lsf
 
@@ -170,7 +174,6 @@ partial_copy_test_path:personaldir
 
 [test_data_environment]
 TargetApp:TEXTTEST_HOME
-cvsroot:CVSROOT
 texttesttmp:TEXTTEST_TMP
 personaldir:TEXTTEST_PERSONAL_CONFIG
 usecases:USECASE_HOME
@@ -191,7 +194,6 @@ link_test_path:logging
 link_test_path:standard
 link_test_path:customconfig.py
 link_test_path:Xvfb
-link_test_path:cvsroot
 # Put method interceptions in here
 link_test_path:interceptor.py
 # performance testing
@@ -200,7 +202,6 @@ link_test_path:sge
 
 collect_traffic:rsh
 collect_traffic:interpretcore
-collect_traffic:cvs
 collect_traffic:which
 collect_traffic:java
 collect_traffic:tkdiff

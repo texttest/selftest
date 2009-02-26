@@ -1,0 +1,23 @@
+<-CMD:bzr annotate /home/geoff/texttesttmp/texttest.bzr.26Feb221946.10768/texttest.bzr/VersionControl/CVSAnnotate/TargetApp/Test1/errors.hello
+<-CMD:bzr annotate /home/geoff/texttesttmp/texttest.bzr.26Feb221946.10768/texttest.bzr/VersionControl/CVSAnnotate/TargetApp/Test1/output.hello
+->OUT:1   geoff   | Hello
+<-CMD:bzr annotate /home/geoff/texttesttmp/texttest.bzr.26Feb221946.10768/texttest.bzr/VersionControl/CVSAnnotate/TargetApp/Test1/output.hello.version
+->ERR:bzr: ERROR: /home/geoff/texttesttmp/texttest.bzr.26Feb221946.10768/texttest.bzr/VersionControl/CVSAnnotate/TargetApp/Test1/output.hello.version is not versioned.
+->EXC:3
+<-CMD:bzr annotate /home/geoff/texttesttmp/texttest.bzr.26Feb221946.10768/texttest.bzr/VersionControl/CVSAnnotate/TargetApp/Suite/Subsuite/Test3/errors.hello
+<-CMD:bzr annotate /home/geoff/texttesttmp/texttest.bzr.26Feb221946.10768/texttest.bzr/VersionControl/CVSAnnotate/TargetApp/Suite/Subsuite/Test3/output.hello
+->OUT:8?  geoff.b | Failure created locally!
+<-CMD:bzr annotate /home/geoff/texttesttmp/texttest.bzr.26Feb221946.10768/texttest.bzr/VersionControl/CVSAnnotate/TargetApp/Suite/Subsuite/Test4/errors.hello
+->ERR:bzr: ERROR: /home/geoff/texttesttmp/texttest.bzr.26Feb221946.10768/texttest.bzr/VersionControl/CVSAnnotate/TargetApp/Suite/Subsuite/Test4/errors.hello is not versioned.
+->EXC:3
+<-CMD:bzr annotate /home/geoff/texttesttmp/texttest.bzr.26Feb221946.10768/texttest.bzr/VersionControl/CVSAnnotate/TargetApp/Suite/Subsuite/Test4/output.hello
+->ERR:bzr: ERROR: /home/geoff/texttesttmp/texttest.bzr.26Feb221946.10768/texttest.bzr/VersionControl/CVSAnnotate/TargetApp/Suite/Subsuite/Test4/output.hello is not versioned.
+->EXC:3
+<-CMD:bzr annotate /home/geoff/texttesttmp/texttest.bzr.26Feb221946.10768/texttest.bzr/VersionControl/CVSAnnotate/TargetApp/Suite/Subsuite/testsuite.hello
+->OUT:6   geoff   | # In a subsuite - other tests not added in CVS
+1   geoff   | Test3
+8?  geoff.b | 
+            | # Not in CVS
+            | Test4
+<-CMD:bzr annotate /home/geoff/texttesttmp/texttest.bzr.26Feb221946.10768/texttest.bzr/VersionControl/CVSAnnotate/TargetApp/Suite/testsuite.hello
+->OUT:1   geoff   | Subsuite
