@@ -1,5 +1,8 @@
 #!/usr/bin/env python
 
 import os, time
-time.sleep(int(os.getenv("TO_SLEEP", "0")))
-print 'Hello World!'
+try:
+    time.sleep(int(os.getenv("TO_SLEEP", "0")))
+    print 'Hello World!'
+except KeyboardInterrupt:
+    pass
