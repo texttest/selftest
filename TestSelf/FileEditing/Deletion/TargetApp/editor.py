@@ -7,4 +7,8 @@ def editFile(fileName):
     os.remove(fileName)
     
 fileName = sys.argv[1]
-editFile(fileName)
+if os.path.exists(fileName):
+    editFile(fileName)
+else:
+    print "No such file", fileName
+    
