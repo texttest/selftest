@@ -7,8 +7,11 @@ def editFile(fileName):
     os.remove(fileName)
     
 fileName = sys.argv[1]
-if os.path.exists(fileName):
+if os.path.isfile(fileName):
     editFile(fileName)
+elif os.path.isdir(fileName):
+    for file in sorted(os.listdir(fileName)):
+        editFile(os.path.join(fileName, file))
 else:
     print "No such file", fileName
-    
+
