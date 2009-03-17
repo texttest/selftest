@@ -15,6 +15,9 @@ HideCategories
 
 # Press the status button and make sure it works...
 CVSStatusFromLog
+
+# Make sure we find the correct file names for files that are subdirectories
+StatusFromRecursiveLog
 CVSAnnotate
 
 # CVSLog in dynamic GUI, make sure only files visible in the dynamic GUI are reported.
@@ -34,3 +37,6 @@ RenameTest
 
 # Check that moving to different suites handles version control appropriately
 MoveTest
+
+# Check we can add a test to version control as appropriate
+AddToVersionControl
