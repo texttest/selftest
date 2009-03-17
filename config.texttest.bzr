@@ -3,3 +3,7 @@ base_version:vcs
 collect_traffic:bzr
 
 link_test_path:.bzr
+
+[run_dependent_text]
+# Because of the softlink workaround...
+traffic:bzr add .*/TargetApp{REPLACE bzr add <test write dir>/TargetApp}
