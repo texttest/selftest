@@ -1,7 +1,7 @@
 Enabling entry completion, using matching 1
 
 Waiting for application event 'completion of test actions' to occur.
-Top Window title is TextTest dynamic GUI : testing HELLO.something.version.otherversion (started at 17Mar15:06:53)
+Top Window title is TextTest dynamic GUI : testing HELLO.something.version.otherversion (started at 17Mar22:13:57)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -35,6 +35,7 @@ Viewing action with title '_Status' (greyed out)
 Viewing action with title 'Status Recursive' (greyed out)
 Viewing action with title 'A_nnotate' (greyed out)
 Viewing action with title 'Annotate Recursive' (greyed out)
+Viewing action with title 'A_dd' (greyed out)
 
 UI layout: 
 <ui>
@@ -82,6 +83,8 @@ UI layout:
         <menuitem name="Bazaar Annotate" action="Bazaar Annotate"/>
         <menuitem name="Bazaar Annotate Recursive" action="Bazaar Annotate Recursive"/>
         <separator/>
+        <menuitem name="Bazaar Add" action="Bazaar Add"/>
+        <separator/>
       </menu>
     </placeholder>
     <menu name="helpmenu" action="helpmenu">
@@ -121,6 +124,8 @@ UI layout:
       <menuitem name="Bazaar Annotate" action="Bazaar Annotate"/>
       <menuitem name="Bazaar Annotate Recursive" action="Bazaar Annotate Recursive"/>
       <separator/>
+      <menuitem name="Bazaar Add" action="Bazaar Add"/>
+      <separator/>
     </menu>
   </popup>
   <popup name="TestFilePopupMenu">
@@ -149,6 +154,8 @@ UI layout:
       <menuitem name="Bazaar Annotate" action="Bazaar Annotate"/>
       <menuitem name="Bazaar Annotate Recursive" action="Bazaar Annotate Recursive"/>
       <separator/>
+      <menuitem name="Bazaar Add" action="Bazaar Add"/>
+      <separator/>
     </menu>
   </popup>
 </ui>
@@ -163,7 +170,7 @@ Tabs showing : Status, Run Info
 
 Test progress:
 
-Changing GUI status to: 'TextTest started at 17Mar15:06:53.'
+Changing GUI status to: 'TextTest started at 17Mar22:13:57.'
 
 Test progress:
 --> Not started : 1, colour 'white', font 'bold'', visible=True
@@ -182,7 +189,7 @@ Test progress:
 --> Not started : 0, colour 'white', font ''', visible=True
 --> Running : 1, colour 'yellow', font 'bold'', visible=True
 
-Progress bar set to fraction 1.0, text 'All 1 tests completed at 17Mar15:06:54'
+Progress bar set to fraction 1.0, text 'All 1 tests completed at 17Mar22:13:58'
 
 Redrawing test Test1 coloured red
 (Second column 'output different' coloured red)
@@ -209,6 +216,7 @@ Setting sensitivity of action '_Status' to True
 Setting sensitivity of action 'Status Recursive' to True
 Setting sensitivity of action 'A_nnotate' to True
 Setting sensitivity of action 'Annotate Recursive' to True
+Setting sensitivity of action 'A_dd' to True
 
 Setting file-view title to 'Test1'
 Adding file errors.hello under heading 'Comparison Files', coloured green
@@ -244,9 +252,9 @@ Bazaar command used: bzr status
 Subdirectories were ignored, use Bazaar Status Recursive to get the status for all subdirectories.
 
 Bazaar tree view dialog: Adding <span weight='bold'>TargetApp</span> as root, info <span weight='bold'>Modified</span>
-Bazaar tree view dialog: Adding <span weight='bold'>Test1</span> as child of /carm/proj/texttest-tmp/geoff/texttest.17Mar150643.25233/texttest.bzr/VersionControl/DynamicVersions/TargetApp, info <span weight='bold'>Modified</span>
-Bazaar tree view dialog: Adding errors.hello as child of /carm/proj/texttest-tmp/geoff/texttest.17Mar150643.25233/texttest.bzr/VersionControl/DynamicVersions/TargetApp/Test1, info <span weight='bold'>Modified</span>
-Bazaar tree view dialog: Adding output.hello.version as child of /carm/proj/texttest-tmp/geoff/texttest.17Mar150643.25233/texttest.bzr/VersionControl/DynamicVersions/TargetApp/Test1, info <span weight='bold' foreground='red'>Unknown</span>
+Bazaar tree view dialog: Adding <span weight='bold'>Test1</span> as child of /home/geoff/texttesttmp/texttest.17Mar221236.30129/texttest.bzr/VersionControl/DynamicVersions/TargetApp, info <span weight='bold'>Modified</span>
+Bazaar tree view dialog: Adding errors.hello as child of /home/geoff/texttesttmp/texttest.17Mar221236.30129/texttest.bzr/VersionControl/DynamicVersions/TargetApp/Test1, info <span weight='bold'>Modified</span>
+Bazaar tree view dialog: Adding output.hello.version as child of /home/geoff/texttesttmp/texttest.17Mar221236.30129/texttest.bzr/VersionControl/DynamicVersions/TargetApp/Test1, info <span weight='bold' foreground='red'>Unknown</span>
 Bazaar tree view dialog: Showing two columns
 Bazaar tree view dialog: Showing Bazaar output
 modified:
@@ -279,8 +287,8 @@ Bazaar command used: bzr status
 Subdirectories were ignored, use Bazaar Status Recursive to get the status for all subdirectories.
 
 Bazaar tree view dialog: Adding <span weight='bold'>TargetApp</span> as root, info <span weight='bold' foreground='red'>Unknown</span>
-Bazaar tree view dialog: Adding <span weight='bold'>Test1</span> as child of /carm/proj/texttest-tmp/geoff/texttest.17Mar150643.25233/texttest.bzr/VersionControl/DynamicVersions/TargetApp, info <span weight='bold' foreground='red'>Unknown</span>
-Bazaar tree view dialog: Adding output.hello.version as child of /carm/proj/texttest-tmp/geoff/texttest.17Mar150643.25233/texttest.bzr/VersionControl/DynamicVersions/TargetApp/Test1, info <span weight='bold' foreground='red'>Unknown</span>
+Bazaar tree view dialog: Adding <span weight='bold'>Test1</span> as child of /home/geoff/texttesttmp/texttest.17Mar221236.30129/texttest.bzr/VersionControl/DynamicVersions/TargetApp, info <span weight='bold' foreground='red'>Unknown</span>
+Bazaar tree view dialog: Adding output.hello.version as child of /home/geoff/texttesttmp/texttest.17Mar221236.30129/texttest.bzr/VersionControl/DynamicVersions/TargetApp/Test1, info <span weight='bold' foreground='red'>Unknown</span>
 Bazaar tree view dialog: Showing two columns
 Bazaar tree view dialog: Showing Bazaar output
 unknown:

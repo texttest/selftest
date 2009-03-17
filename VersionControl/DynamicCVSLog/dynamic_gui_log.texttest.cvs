@@ -1,7 +1,7 @@
 Enabling entry completion, using matching 1
 
 Waiting for application event 'completion of test actions' to occur.
-Top Window title is TextTest dynamic GUI : testing HELLO (started at 17Mar15:06:50)
+Top Window title is TextTest dynamic GUI : testing HELLO (started at 17Mar22:13:04)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -35,6 +35,7 @@ Viewing action with title '_Status' (greyed out)
 Viewing action with title 'Status Recursive' (greyed out)
 Viewing action with title 'A_nnotate' (greyed out)
 Viewing action with title 'Annotate Recursive' (greyed out)
+Viewing action with title 'A_dd' (greyed out)
 Viewing action with title 'Log Latest' (greyed out)
 
 UI layout: 
@@ -84,6 +85,8 @@ UI layout:
         <menuitem name="CVS Annotate" action="CVS Annotate"/>
         <menuitem name="CVS Annotate Recursive" action="CVS Annotate Recursive"/>
         <separator/>
+        <menuitem name="CVS Add" action="CVS Add"/>
+        <separator/>
       </menu>
     </placeholder>
     <menu name="helpmenu" action="helpmenu">
@@ -124,6 +127,8 @@ UI layout:
       <menuitem name="CVS Annotate" action="CVS Annotate"/>
       <menuitem name="CVS Annotate Recursive" action="CVS Annotate Recursive"/>
       <separator/>
+      <menuitem name="CVS Add" action="CVS Add"/>
+      <separator/>
     </menu>
   </popup>
   <popup name="TestFilePopupMenu">
@@ -153,6 +158,8 @@ UI layout:
       <menuitem name="CVS Annotate" action="CVS Annotate"/>
       <menuitem name="CVS Annotate Recursive" action="CVS Annotate Recursive"/>
       <separator/>
+      <menuitem name="CVS Add" action="CVS Add"/>
+      <separator/>
     </menu>
   </popup>
 </ui>
@@ -168,7 +175,7 @@ Tabs showing : Status, Run Info
 Test progress:
 --> Not started : 4, colour 'white', font 'bold'', visible=True
 
-Changing GUI status to: 'TextTest started at 17Mar15:06:51.'
+Changing GUI status to: 'TextTest started at 17Mar22:13:05.'
 
 Progress bar set to fraction 0.0, text '0 of 4 tests completed'
 
@@ -252,7 +259,7 @@ Test progress:
 ----> Differences : 3, colour 'red', font 'bold'', visible=True
 ------> output different : 3, colour 'red', font 'bold'', visible=True
 
-Progress bar set to fraction 1.0, text 'All 4 tests completed at 17Mar15:06:51'
+Progress bar set to fraction 1.0, text 'All 4 tests completed at 17Mar22:13:05'
 
 Redrawing test Test4 coloured green
 
@@ -281,6 +288,7 @@ Setting sensitivity of action '_Status' to True
 Setting sensitivity of action 'Status Recursive' to True
 Setting sensitivity of action 'A_nnotate' to True
 Setting sensitivity of action 'Annotate Recursive' to True
+Setting sensitivity of action 'A_dd' to True
 Setting sensitivity of action 'Log Latest' to True
 
 Setting file-view title to 'Test1'
@@ -315,9 +323,9 @@ CVS command used: cvs log -N
 Subdirectories were ignored, use CVS Log Recursive to get the logs for all subdirectories.
 
 CVS tree view dialog: Adding <span weight='bold'>TargetApp</span> as root, info <span weight='bold'>2 days ago</span>
-CVS tree view dialog: Adding <span weight='bold'>Test1</span> as child of /carm/proj/texttest-tmp/geoff/texttest.17Mar150643.25233/texttest.cvs/VersionControl/DynamicCVSLog/TargetApp, info <span weight='bold'>2 days ago</span>
-CVS tree view dialog: Adding errors.hello as child of /carm/proj/texttest-tmp/geoff/texttest.17Mar150643.25233/texttest.cvs/VersionControl/DynamicCVSLog/TargetApp/Test1, info <span weight='bold'>2 days ago</span>
-CVS tree view dialog: Adding output.hello as child of /carm/proj/texttest-tmp/geoff/texttest.17Mar150643.25233/texttest.cvs/VersionControl/DynamicCVSLog/TargetApp/Test1, info Thu Feb 19 20:26:26 2009
+CVS tree view dialog: Adding <span weight='bold'>Test1</span> as child of /home/geoff/texttesttmp/texttest.17Mar221236.30129/texttest.cvs/VersionControl/DynamicCVSLog/TargetApp, info <span weight='bold'>2 days ago</span>
+CVS tree view dialog: Adding errors.hello as child of /home/geoff/texttesttmp/texttest.17Mar221236.30129/texttest.cvs/VersionControl/DynamicCVSLog/TargetApp/Test1, info <span weight='bold'>2 days ago</span>
+CVS tree view dialog: Adding output.hello as child of /home/geoff/texttesttmp/texttest.17Mar221236.30129/texttest.cvs/VersionControl/DynamicCVSLog/TargetApp/Test1, info Thu Feb 19 20:26:26 2009
 CVS tree view dialog: Showing two columns
 CVS tree view dialog: Showing CVS output
 
@@ -371,8 +379,8 @@ CVS command used: cvs log -N
 Subdirectories were ignored, use CVS Log Recursive to get the logs for all subdirectories.
 
 CVS tree view dialog: Adding <span weight='bold'>TargetApp</span> as root, info Thu Feb 19 20:26:26 2009
-CVS tree view dialog: Adding <span weight='bold'>Test1</span> as child of /carm/proj/texttest-tmp/geoff/texttest.17Mar150643.25233/texttest.cvs/VersionControl/DynamicCVSLog/TargetApp, info Thu Feb 19 20:26:26 2009
-CVS tree view dialog: Adding output.hello as child of /carm/proj/texttest-tmp/geoff/texttest.17Mar150643.25233/texttest.cvs/VersionControl/DynamicCVSLog/TargetApp/Test1, info Thu Feb 19 20:26:26 2009
+CVS tree view dialog: Adding <span weight='bold'>Test1</span> as child of /home/geoff/texttesttmp/texttest.17Mar221236.30129/texttest.cvs/VersionControl/DynamicCVSLog/TargetApp, info Thu Feb 19 20:26:26 2009
+CVS tree view dialog: Adding output.hello as child of /home/geoff/texttesttmp/texttest.17Mar221236.30129/texttest.cvs/VersionControl/DynamicCVSLog/TargetApp/Test1, info Thu Feb 19 20:26:26 2009
 CVS tree view dialog: Showing two columns
 CVS tree view dialog: Showing CVS output
 
@@ -445,12 +453,12 @@ CVS command used: cvs log -N
 Subdirectories were ignored, use CVS Log Recursive to get the logs for all subdirectories.
 
 CVS tree view dialog: Adding <span weight='bold'>TargetApp</span> as root, info <span weight='bold'>2 days ago</span>
-CVS tree view dialog: Adding <span weight='bold'>Test1</span> as child of /carm/proj/texttest-tmp/geoff/texttest.17Mar150643.25233/texttest.cvs/VersionControl/DynamicCVSLog/TargetApp, info <span weight='bold'>2 days ago</span>
-CVS tree view dialog: Adding errors.hello as child of /carm/proj/texttest-tmp/geoff/texttest.17Mar150643.25233/texttest.cvs/VersionControl/DynamicCVSLog/TargetApp/Test1, info <span weight='bold'>2 days ago</span>
-CVS tree view dialog: Adding output.hello as child of /carm/proj/texttest-tmp/geoff/texttest.17Mar150643.25233/texttest.cvs/VersionControl/DynamicCVSLog/TargetApp/Test1, info Thu Feb 19 20:26:26 2009
-CVS tree view dialog: Adding <span weight='bold'>Test2</span> as child of /carm/proj/texttest-tmp/geoff/texttest.17Mar150643.25233/texttest.cvs/VersionControl/DynamicCVSLog/TargetApp, info Thu Feb 19 20:26:26 2009
-CVS tree view dialog: Adding errors.hello as child of /carm/proj/texttest-tmp/geoff/texttest.17Mar150643.25233/texttest.cvs/VersionControl/DynamicCVSLog/TargetApp/Test2, info Thu Feb 19 20:26:26 2009
-CVS tree view dialog: Adding output.hello as child of /carm/proj/texttest-tmp/geoff/texttest.17Mar150643.25233/texttest.cvs/VersionControl/DynamicCVSLog/TargetApp/Test2, info 4 days ago
+CVS tree view dialog: Adding <span weight='bold'>Test1</span> as child of /home/geoff/texttesttmp/texttest.17Mar221236.30129/texttest.cvs/VersionControl/DynamicCVSLog/TargetApp, info <span weight='bold'>2 days ago</span>
+CVS tree view dialog: Adding errors.hello as child of /home/geoff/texttesttmp/texttest.17Mar221236.30129/texttest.cvs/VersionControl/DynamicCVSLog/TargetApp/Test1, info <span weight='bold'>2 days ago</span>
+CVS tree view dialog: Adding output.hello as child of /home/geoff/texttesttmp/texttest.17Mar221236.30129/texttest.cvs/VersionControl/DynamicCVSLog/TargetApp/Test1, info Thu Feb 19 20:26:26 2009
+CVS tree view dialog: Adding <span weight='bold'>Test2</span> as child of /home/geoff/texttesttmp/texttest.17Mar221236.30129/texttest.cvs/VersionControl/DynamicCVSLog/TargetApp, info Thu Feb 19 20:26:26 2009
+CVS tree view dialog: Adding errors.hello as child of /home/geoff/texttesttmp/texttest.17Mar221236.30129/texttest.cvs/VersionControl/DynamicCVSLog/TargetApp/Test2, info Thu Feb 19 20:26:26 2009
+CVS tree view dialog: Adding output.hello as child of /home/geoff/texttesttmp/texttest.17Mar221236.30129/texttest.cvs/VersionControl/DynamicCVSLog/TargetApp/Test2, info 4 days ago
 CVS tree view dialog: Showing two columns
 CVS tree view dialog: Showing CVS output
 
@@ -502,8 +510,8 @@ CVS command used: cvs log -N
 Subdirectories were ignored, use CVS Log Recursive to get the logs for all subdirectories.
 
 CVS tree view dialog: Adding <span weight='bold'>TargetApp</span> as root, info 4 days ago
-CVS tree view dialog: Adding <span weight='bold'>Test2</span> as child of /carm/proj/texttest-tmp/geoff/texttest.17Mar150643.25233/texttest.cvs/VersionControl/DynamicCVSLog/TargetApp, info 4 days ago
-CVS tree view dialog: Adding output.hello as child of /carm/proj/texttest-tmp/geoff/texttest.17Mar150643.25233/texttest.cvs/VersionControl/DynamicCVSLog/TargetApp/Test2, info 4 days ago
+CVS tree view dialog: Adding <span weight='bold'>Test2</span> as child of /home/geoff/texttesttmp/texttest.17Mar221236.30129/texttest.cvs/VersionControl/DynamicCVSLog/TargetApp, info 4 days ago
+CVS tree view dialog: Adding output.hello as child of /home/geoff/texttesttmp/texttest.17Mar221236.30129/texttest.cvs/VersionControl/DynamicCVSLog/TargetApp/Test2, info 4 days ago
 CVS tree view dialog: Showing two columns
 CVS tree view dialog: Showing CVS output
 

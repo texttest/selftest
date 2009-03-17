@@ -3,9 +3,9 @@ Enabling entry completion, using matching 1
 Waiting for application event 'all tests to be read' to occur.
 Adding entry completion '<default>' ...
 Adding entry completion '1' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.17Mar150643.25233/texttest.bzr/VersionControl/CVSStatus/personaldir/log/log4py.conf' ...
-Adding entry completion '/carm/proj/texttest/geoff/reserve/Testing/TextTest/log/log4py.conf' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.17Mar150643.25233/texttest.bzr/VersionControl/CVSStatus/personaldir/log' ...
+Adding entry completion '/home/geoff/texttesttmp/texttest.17Mar221236.30129/texttest.bzr/VersionControl/CVSStatus/personaldir/log/log4py.conf' ...
+Adding entry completion '/home/geoff/code/texttest/log/log4py.conf' ...
+Adding entry completion '/home/geoff/texttesttmp/texttest.17Mar221236.30129/texttest.bzr/VersionControl/CVSStatus/personaldir/log' ...
 Top Window title is TextTest static GUI : management of tests for HELLO
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
@@ -53,6 +53,7 @@ Viewing action with title '_Status' (greyed out)
 Viewing action with title 'Status Recursive' (greyed out)
 Viewing action with title 'A_nnotate' (greyed out)
 Viewing action with title 'Annotate Recursive' (greyed out)
+Viewing action with title 'A_dd' (greyed out)
 Viewing action with title '_Select', stock id ''gtk-find'', accelerator ''<control>s''
 Viewing action with title 'Filter', stock id ''gtk-find'', accelerator ''<control>f''
 Viewing action with title '_Run', stock id ''gtk-execute'', accelerator ''<control>r'' (greyed out)
@@ -128,6 +129,8 @@ UI layout:
         <menuitem name="Bazaar Annotate" action="Bazaar Annotate"/>
         <menuitem name="Bazaar Annotate Recursive" action="Bazaar Annotate Recursive"/>
         <separator/>
+        <menuitem name="Bazaar Add" action="Bazaar Add"/>
+        <separator/>
       </menu>
     </placeholder>
     <menu name="helpmenu" action="helpmenu">
@@ -187,6 +190,8 @@ UI layout:
       <menuitem name="Bazaar Annotate" action="Bazaar Annotate"/>
       <menuitem name="Bazaar Annotate Recursive" action="Bazaar Annotate Recursive"/>
       <separator/>
+      <menuitem name="Bazaar Add" action="Bazaar Add"/>
+      <separator/>
     </menu>
   </popup>
   <popup name="TestFilePopupMenu">
@@ -209,6 +214,8 @@ UI layout:
       <separator/>
       <menuitem name="Bazaar Annotate" action="Bazaar Annotate"/>
       <menuitem name="Bazaar Annotate Recursive" action="Bazaar Annotate Recursive"/>
+      <separator/>
+      <menuitem name="Bazaar Add" action="Bazaar Add"/>
       <separator/>
     </menu>
   </popup>
@@ -240,11 +247,11 @@ Viewing action with title '_Select', stock id ''gtk-find'', accelerator ''<contr
 Viewing radio button for switch '', options Discard/Refine/Extend'. Default value 0.
 Viewing action with title 'Filter', stock id ''gtk-find'', accelerator ''<control>f''
 
-Changing GUI status to: 'TextTest started at 17Mar15:06:53.'
+Changing GUI status to: 'TextTest started at 17Mar22:13:42.'
 
 Changing GUI status to: 'Reading tests ...'
 
-Changing GUI status to: 'Reading tests completed at 17Mar15:06:53.'
+Changing GUI status to: 'Reading tests completed at 17Mar22:13:43.'
 
 Test Tree description...
 -> TargetApp (hello)
@@ -298,6 +305,7 @@ Setting sensitivity of action '_Status' to True
 Setting sensitivity of action 'Status Recursive' to True
 Setting sensitivity of action 'A_nnotate' to True
 Setting sensitivity of action 'Annotate Recursive' to True
+Setting sensitivity of action 'A_dd' to True
 Setting sensitivity of action '_Run' to True
 Setting sensitivity of action '_Run' to True
 
@@ -334,10 +342,10 @@ Bazaar command used: bzr status
 Subdirectories were ignored, use Bazaar Status Recursive to get the status for all subdirectories.
 
 Bazaar tree view dialog: Adding <span weight='bold'>TargetApp</span> as root, info <span weight='bold'>Modified</span>
-Bazaar tree view dialog: Adding <span weight='bold'>Test1</span> as child of /carm/proj/texttest-tmp/geoff/texttest.17Mar150643.25233/texttest.bzr/VersionControl/CVSStatus/TargetApp, info <span weight='bold'>Modified</span>
-Bazaar tree view dialog: Adding errors.hello as child of /carm/proj/texttest-tmp/geoff/texttest.17Mar150643.25233/texttest.bzr/VersionControl/CVSStatus/TargetApp/Test1, info <span weight='bold'>Modified</span>
-Bazaar tree view dialog: Adding output.hello as child of /carm/proj/texttest-tmp/geoff/texttest.17Mar150643.25233/texttest.bzr/VersionControl/CVSStatus/TargetApp/Test1, info Unchanged
-Bazaar tree view dialog: Adding output.hello.version as child of /carm/proj/texttest-tmp/geoff/texttest.17Mar150643.25233/texttest.bzr/VersionControl/CVSStatus/TargetApp/Test1, info <span weight='bold' foreground='red'>Unknown</span>
+Bazaar tree view dialog: Adding <span weight='bold'>Test1</span> as child of /home/geoff/texttesttmp/texttest.17Mar221236.30129/texttest.bzr/VersionControl/CVSStatus/TargetApp, info <span weight='bold'>Modified</span>
+Bazaar tree view dialog: Adding errors.hello as child of /home/geoff/texttesttmp/texttest.17Mar221236.30129/texttest.bzr/VersionControl/CVSStatus/TargetApp/Test1, info <span weight='bold'>Modified</span>
+Bazaar tree view dialog: Adding output.hello as child of /home/geoff/texttesttmp/texttest.17Mar221236.30129/texttest.bzr/VersionControl/CVSStatus/TargetApp/Test1, info Unchanged
+Bazaar tree view dialog: Adding output.hello.version as child of /home/geoff/texttesttmp/texttest.17Mar221236.30129/texttest.bzr/VersionControl/CVSStatus/TargetApp/Test1, info <span weight='bold' foreground='red'>Unknown</span>
 Bazaar tree view dialog: Showing two columns
 Bazaar tree view dialog: Showing Bazaar output
 modified:
@@ -355,8 +363,8 @@ Bazaar command used: bzr log
 Subdirectories were ignored, use Bazaar Log Recursive to get the logs for all subdirectories.
 
 Bazaar tree view dialog: Adding <span weight='bold'>TargetApp</span> as root, info <span weight='bold'>2 days ago</span>
-Bazaar tree view dialog: Adding <span weight='bold'>Test1</span> as child of /carm/proj/texttest-tmp/geoff/texttest.17Mar150643.25233/texttest.bzr/VersionControl/CVSStatus/TargetApp, info <span weight='bold'>2 days ago</span>
-Bazaar tree view dialog: Adding errors.hello as child of /carm/proj/texttest-tmp/geoff/texttest.17Mar150643.25233/texttest.bzr/VersionControl/CVSStatus/TargetApp/Test1, info <span weight='bold'>2 days ago</span>
+Bazaar tree view dialog: Adding <span weight='bold'>Test1</span> as child of /home/geoff/texttesttmp/texttest.17Mar221236.30129/texttest.bzr/VersionControl/CVSStatus/TargetApp, info <span weight='bold'>2 days ago</span>
+Bazaar tree view dialog: Adding errors.hello as child of /home/geoff/texttesttmp/texttest.17Mar221236.30129/texttest.bzr/VersionControl/CVSStatus/TargetApp/Test1, info <span weight='bold'>2 days ago</span>
 Bazaar tree view dialog: Showing two columns
 Bazaar tree view dialog: Showing Bazaar output
 ------------------------------------------------------------
@@ -387,8 +395,8 @@ Bazaar command used: bzr annotate
 Subdirectories were ignored, use Bazaar Annotate Recursive to get the annotations for all subdirectories.
 
 Bazaar tree view dialog: Adding <span weight='bold'>TargetApp</span> as root
-Bazaar tree view dialog: Adding <span weight='bold'>Test1</span> as child of /carm/proj/texttest-tmp/geoff/texttest.17Mar150643.25233/texttest.bzr/VersionControl/CVSStatus/TargetApp
-Bazaar tree view dialog: Adding errors.hello as child of /carm/proj/texttest-tmp/geoff/texttest.17Mar150643.25233/texttest.bzr/VersionControl/CVSStatus/TargetApp/Test1
+Bazaar tree view dialog: Adding <span weight='bold'>Test1</span> as child of /home/geoff/texttesttmp/texttest.17Mar221236.30129/texttest.bzr/VersionControl/CVSStatus/TargetApp
+Bazaar tree view dialog: Adding errors.hello as child of /home/geoff/texttesttmp/texttest.17Mar221236.30129/texttest.bzr/VersionControl/CVSStatus/TargetApp/Test1
 Bazaar tree view dialog: Showing Bazaar output
 ---------------------------------------------------------------------
 
@@ -403,8 +411,8 @@ Bazaar command used: bzr diff -r -1
 Subdirectories were ignored, use Bazaar Difference Recursive to get the differences for all subdirectories.
 
 Bazaar tree view dialog: Adding <span weight='bold'>TargetApp</span> as root
-Bazaar tree view dialog: Adding <span weight='bold'>Test1</span> as child of /carm/proj/texttest-tmp/geoff/texttest.17Mar150643.25233/texttest.bzr/VersionControl/CVSStatus/TargetApp
-Bazaar tree view dialog: Adding errors.hello as child of /carm/proj/texttest-tmp/geoff/texttest.17Mar150643.25233/texttest.bzr/VersionControl/CVSStatus/TargetApp/Test1
+Bazaar tree view dialog: Adding <span weight='bold'>Test1</span> as child of /home/geoff/texttesttmp/texttest.17Mar221236.30129/texttest.bzr/VersionControl/CVSStatus/TargetApp
+Bazaar tree view dialog: Adding errors.hello as child of /home/geoff/texttesttmp/texttest.17Mar221236.30129/texttest.bzr/VersionControl/CVSStatus/TargetApp/Test1
 Bazaar tree view dialog: Showing Bazaar output
 === modified file 'TargetApp/Test1/errors.hello'
 1d0
@@ -446,8 +454,8 @@ Bazaar command used: bzr status
 Subdirectories were ignored, use Bazaar Status Recursive to get the status for all subdirectories.
 
 Bazaar tree view dialog: Adding <span weight='bold'>TargetApp</span> as root, info <span weight='bold'>Modified</span>
-Bazaar tree view dialog: Adding <span weight='bold'>Test2</span> as child of /carm/proj/texttest-tmp/geoff/texttest.17Mar150643.25233/texttest.bzr/VersionControl/CVSStatus/TargetApp, info <span weight='bold'>Modified</span>
-Bazaar tree view dialog: Adding output.hello as child of /carm/proj/texttest-tmp/geoff/texttest.17Mar150643.25233/texttest.bzr/VersionControl/CVSStatus/TargetApp/Test2, info <span weight='bold'>Modified</span>
+Bazaar tree view dialog: Adding <span weight='bold'>Test2</span> as child of /home/geoff/texttesttmp/texttest.17Mar221236.30129/texttest.bzr/VersionControl/CVSStatus/TargetApp, info <span weight='bold'>Modified</span>
+Bazaar tree view dialog: Adding output.hello as child of /home/geoff/texttesttmp/texttest.17Mar221236.30129/texttest.bzr/VersionControl/CVSStatus/TargetApp/Test2, info <span weight='bold'>Modified</span>
 Bazaar tree view dialog: Showing two columns
 Bazaar tree view dialog: Showing Bazaar output
 modified:
