@@ -1,52 +1,8 @@
-# See what happens if CVS isn't installed
-NotInstalled
-CVSLog
-CVSDiff
+# Tests that need to be run on every VCS belong here
+General
 
-# Check we can compare with different revisions
-DiffRevisions
+# Tests that are independent of version control system live here. Only run on CVS right now
+Independent
 
-# See what happens if we try to get a graphical diff and the tool isn't there
-NoDiffTool
-CVSStatus
-
-# Check we can hide and show CVS Status categories
-HideCategories
-
-# Press the status button and make sure it works...
-CVSStatusFromLog
-
-# Make sure we find the correct file names for files that are subdirectories
-StatusFromRecursiveLog
-CVSAnnotate
-
-# CVSLog in dynamic GUI, make sure only files visible in the dynamic GUI are reported.
-DynamicCVSLog
-
-# Make sure we can find the right files to analyse from the dynamic GUI
-DynamicVersions
-
-# What happens if we perform actions on a test that isn't yet in version control?
-NoVersionControl
-
-# See if we can get CVS information out of a running test
-RunningTest
-
-# Check that renaming handles version control appropriately
-RenameTest
-
-# Check that moving to different suites handles version control appropriately
-MoveTest
-
-# Check we can add a test to version control as appropriate
-AddToVersionControl
-
-# These test only work in CVS
-# When CVSROOT is not set, use the CVS directories themselves
-NoCVSRoot
-
-# When CVSROOT is not set, use the CVS directories themselves
-CVSRootFromFile
-
-# Test the CVSLogLatest action
-CVSLogLatest
+# Any functionality which only exists in CVS or the CVS plugin
+CvsSpecific
