@@ -1,7 +1,7 @@
 Enabling entry completion, using matching 1
 
 Waiting for application event 'completion of test actions' to occur.
-Top Window title is TextTest dynamic GUI : testing HELLO (started at 17Mar22:13:54)
+Top Window title is TextTest dynamic GUI : testing HELLO (started at 18Mar12:17:15)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -36,6 +36,7 @@ Viewing action with title 'Status Recursive' (greyed out)
 Viewing action with title 'A_nnotate' (greyed out)
 Viewing action with title 'Annotate Recursive' (greyed out)
 Viewing action with title 'A_dd' (greyed out)
+Viewing action with title 'Add Recursive' (greyed out)
 
 UI layout: 
 <ui>
@@ -84,6 +85,7 @@ UI layout:
         <menuitem name="Bazaar Annotate Recursive" action="Bazaar Annotate Recursive"/>
         <separator/>
         <menuitem name="Bazaar Add" action="Bazaar Add"/>
+        <menuitem name="Bazaar Add Recursive" action="Bazaar Add Recursive"/>
         <separator/>
       </menu>
     </placeholder>
@@ -125,6 +127,7 @@ UI layout:
       <menuitem name="Bazaar Annotate Recursive" action="Bazaar Annotate Recursive"/>
       <separator/>
       <menuitem name="Bazaar Add" action="Bazaar Add"/>
+      <menuitem name="Bazaar Add Recursive" action="Bazaar Add Recursive"/>
       <separator/>
     </menu>
   </popup>
@@ -155,6 +158,7 @@ UI layout:
       <menuitem name="Bazaar Annotate Recursive" action="Bazaar Annotate Recursive"/>
       <separator/>
       <menuitem name="Bazaar Add" action="Bazaar Add"/>
+      <menuitem name="Bazaar Add Recursive" action="Bazaar Add Recursive"/>
       <separator/>
     </menu>
   </popup>
@@ -171,7 +175,7 @@ Tabs showing : Status, Run Info
 Test progress:
 --> Not started : 4, colour 'white', font 'bold'', visible=True
 
-Changing GUI status to: 'TextTest started at 17Mar22:13:55.'
+Changing GUI status to: 'TextTest started at 18Mar12:17:16.'
 
 Progress bar set to fraction 0.0, text '0 of 4 tests completed'
 
@@ -255,7 +259,7 @@ Test progress:
 ----> Differences : 3, colour 'red', font 'bold'', visible=True
 ------> output different : 3, colour 'red', font 'bold'', visible=True
 
-Progress bar set to fraction 1.0, text 'All 4 tests completed at 17Mar22:13:55'
+Progress bar set to fraction 1.0, text 'All 4 tests completed at 18Mar12:17:17'
 
 Redrawing test Test4 coloured green
 
@@ -285,6 +289,7 @@ Setting sensitivity of action 'Status Recursive' to True
 Setting sensitivity of action 'A_nnotate' to True
 Setting sensitivity of action 'Annotate Recursive' to True
 Setting sensitivity of action 'A_dd' to True
+Setting sensitivity of action 'Add Recursive' to True
 
 Setting file-view title to 'Test1'
 Adding file errors.hello under heading 'Comparison Files', coloured green
@@ -305,8 +310,6 @@ Tabs showing : Test, Status, Run Info
 
 'version control log for the selected files' event created with arguments ''
 
-Changing GUI status to: 'Getting logs for Test1'
-
 Changing GUI status to: 'Analyzing logs for errors.hello in test Test1'
 
 Changing GUI status to: 'Analyzing logs for output.hello in test Test1'
@@ -318,9 +321,9 @@ Bazaar command used: bzr log
 Subdirectories were ignored, use Bazaar Log Recursive to get the logs for all subdirectories.
 
 Bazaar tree view dialog: Adding <span weight='bold'>TargetApp</span> as root, info <span weight='bold'>2 days ago</span>
-Bazaar tree view dialog: Adding <span weight='bold'>Test1</span> as child of /home/geoff/texttesttmp/texttest.17Mar221236.30129/texttest.bzr/VersionControl/DynamicCVSLog/TargetApp, info <span weight='bold'>2 days ago</span>
-Bazaar tree view dialog: Adding errors.hello as child of /home/geoff/texttesttmp/texttest.17Mar221236.30129/texttest.bzr/VersionControl/DynamicCVSLog/TargetApp/Test1, info <span weight='bold'>2 days ago</span>
-Bazaar tree view dialog: Adding output.hello as child of /home/geoff/texttesttmp/texttest.17Mar221236.30129/texttest.bzr/VersionControl/DynamicCVSLog/TargetApp/Test1, info Thu Feb 19 19:26:26 2009
+Bazaar tree view dialog: Adding <span weight='bold'>Test1</span> as child of /carm/proj/texttest-tmp/geoff/texttest.18Mar121646.2351/texttest.bzr/VersionControl/DynamicCVSLog/TargetApp, info <span weight='bold'>2 days ago</span>
+Bazaar tree view dialog: Adding errors.hello as child of /carm/proj/texttest-tmp/geoff/texttest.18Mar121646.2351/texttest.bzr/VersionControl/DynamicCVSLog/TargetApp/Test1, info <span weight='bold'>2 days ago</span>
+Bazaar tree view dialog: Adding output.hello as child of /carm/proj/texttest-tmp/geoff/texttest.18Mar121646.2351/texttest.bzr/VersionControl/DynamicCVSLog/TargetApp/Test1, info Thu Feb 19 19:26:26 2009
 Bazaar tree view dialog: Showing two columns
 Bazaar tree view dialog: Showing Bazaar output
 ------------------------------------------------------------
@@ -353,8 +356,6 @@ Setting sensitivity of action 'View Differences' to True
 
 'version control log for the selected files' event created with arguments ''
 
-Changing GUI status to: 'Getting logs for Test1'
-
 Changing GUI status to: 'Analyzing logs for output.hello in test Test1'
 ---------- Dialog 'Bazaar Log for the selected files' ----------
 Default action is labelled 'gtk-close'
@@ -364,8 +365,8 @@ Bazaar command used: bzr log
 Subdirectories were ignored, use Bazaar Log Recursive to get the logs for all subdirectories.
 
 Bazaar tree view dialog: Adding <span weight='bold'>TargetApp</span> as root, info Thu Feb 19 19:26:26 2009
-Bazaar tree view dialog: Adding <span weight='bold'>Test1</span> as child of /home/geoff/texttesttmp/texttest.17Mar221236.30129/texttest.bzr/VersionControl/DynamicCVSLog/TargetApp, info Thu Feb 19 19:26:26 2009
-Bazaar tree view dialog: Adding output.hello as child of /home/geoff/texttesttmp/texttest.17Mar221236.30129/texttest.bzr/VersionControl/DynamicCVSLog/TargetApp/Test1, info Thu Feb 19 19:26:26 2009
+Bazaar tree view dialog: Adding <span weight='bold'>Test1</span> as child of /carm/proj/texttest-tmp/geoff/texttest.18Mar121646.2351/texttest.bzr/VersionControl/DynamicCVSLog/TargetApp, info Thu Feb 19 19:26:26 2009
+Bazaar tree view dialog: Adding output.hello as child of /carm/proj/texttest-tmp/geoff/texttest.18Mar121646.2351/texttest.bzr/VersionControl/DynamicCVSLog/TargetApp/Test1, info Thu Feb 19 19:26:26 2009
 Bazaar tree view dialog: Showing two columns
 Bazaar tree view dialog: Showing Bazaar output
 ------------------------------------------------------------
@@ -406,13 +407,9 @@ Setting file-view title to 'Sample from 2 tests'
 
 'version control log for the selected files' event created with arguments ''
 
-Changing GUI status to: 'Getting logs for Test1'
-
 Changing GUI status to: 'Analyzing logs for errors.hello in test Test1'
 
 Changing GUI status to: 'Analyzing logs for output.hello in test Test1'
-
-Changing GUI status to: 'Getting logs for Test2'
 
 Changing GUI status to: 'Analyzing logs for errors.hello in test Test2'
 
@@ -425,12 +422,12 @@ Bazaar command used: bzr log
 Subdirectories were ignored, use Bazaar Log Recursive to get the logs for all subdirectories.
 
 Bazaar tree view dialog: Adding <span weight='bold'>TargetApp</span> as root, info <span weight='bold'>2 days ago</span>
-Bazaar tree view dialog: Adding <span weight='bold'>Test1</span> as child of /home/geoff/texttesttmp/texttest.17Mar221236.30129/texttest.bzr/VersionControl/DynamicCVSLog/TargetApp, info <span weight='bold'>2 days ago</span>
-Bazaar tree view dialog: Adding errors.hello as child of /home/geoff/texttesttmp/texttest.17Mar221236.30129/texttest.bzr/VersionControl/DynamicCVSLog/TargetApp/Test1, info <span weight='bold'>2 days ago</span>
-Bazaar tree view dialog: Adding output.hello as child of /home/geoff/texttesttmp/texttest.17Mar221236.30129/texttest.bzr/VersionControl/DynamicCVSLog/TargetApp/Test1, info Thu Feb 19 19:26:26 2009
-Bazaar tree view dialog: Adding <span weight='bold'>Test2</span> as child of /home/geoff/texttesttmp/texttest.17Mar221236.30129/texttest.bzr/VersionControl/DynamicCVSLog/TargetApp, info Thu Feb 19 19:26:26 2009
-Bazaar tree view dialog: Adding errors.hello as child of /home/geoff/texttesttmp/texttest.17Mar221236.30129/texttest.bzr/VersionControl/DynamicCVSLog/TargetApp/Test2, info Thu Feb 19 19:26:26 2009
-Bazaar tree view dialog: Adding output.hello as child of /home/geoff/texttesttmp/texttest.17Mar221236.30129/texttest.bzr/VersionControl/DynamicCVSLog/TargetApp/Test2, info 4 days ago
+Bazaar tree view dialog: Adding <span weight='bold'>Test1</span> as child of /carm/proj/texttest-tmp/geoff/texttest.18Mar121646.2351/texttest.bzr/VersionControl/DynamicCVSLog/TargetApp, info <span weight='bold'>2 days ago</span>
+Bazaar tree view dialog: Adding errors.hello as child of /carm/proj/texttest-tmp/geoff/texttest.18Mar121646.2351/texttest.bzr/VersionControl/DynamicCVSLog/TargetApp/Test1, info <span weight='bold'>2 days ago</span>
+Bazaar tree view dialog: Adding output.hello as child of /carm/proj/texttest-tmp/geoff/texttest.18Mar121646.2351/texttest.bzr/VersionControl/DynamicCVSLog/TargetApp/Test1, info Thu Feb 19 19:26:26 2009
+Bazaar tree view dialog: Adding <span weight='bold'>Test2</span> as child of /carm/proj/texttest-tmp/geoff/texttest.18Mar121646.2351/texttest.bzr/VersionControl/DynamicCVSLog/TargetApp, info Thu Feb 19 19:26:26 2009
+Bazaar tree view dialog: Adding errors.hello as child of /carm/proj/texttest-tmp/geoff/texttest.18Mar121646.2351/texttest.bzr/VersionControl/DynamicCVSLog/TargetApp/Test2, info Thu Feb 19 19:26:26 2009
+Bazaar tree view dialog: Adding output.hello as child of /carm/proj/texttest-tmp/geoff/texttest.18Mar121646.2351/texttest.bzr/VersionControl/DynamicCVSLog/TargetApp/Test2, info 4 days ago
 Bazaar tree view dialog: Showing two columns
 Bazaar tree view dialog: Showing Bazaar output
 ------------------------------------------------------------
@@ -457,11 +454,7 @@ Changing GUI status to: 'Performed version control log for the selected files.'
 
 'version control log for the selected files' event created with arguments ''
 
-Changing GUI status to: 'Getting logs for Test1'
-
 Changing GUI status to: 'Analyzing logs for output.hello in test Test2'
-
-Changing GUI status to: 'Getting logs for Test2'
 
 Changing GUI status to: 'Analyzing logs for output.hello in test Test2'
 ---------- Dialog 'Bazaar Log for the selected files' ----------
@@ -472,8 +465,8 @@ Bazaar command used: bzr log
 Subdirectories were ignored, use Bazaar Log Recursive to get the logs for all subdirectories.
 
 Bazaar tree view dialog: Adding <span weight='bold'>TargetApp</span> as root, info 4 days ago
-Bazaar tree view dialog: Adding <span weight='bold'>Test2</span> as child of /home/geoff/texttesttmp/texttest.17Mar221236.30129/texttest.bzr/VersionControl/DynamicCVSLog/TargetApp, info 4 days ago
-Bazaar tree view dialog: Adding output.hello as child of /home/geoff/texttesttmp/texttest.17Mar221236.30129/texttest.bzr/VersionControl/DynamicCVSLog/TargetApp/Test2, info 4 days ago
+Bazaar tree view dialog: Adding <span weight='bold'>Test2</span> as child of /carm/proj/texttest-tmp/geoff/texttest.18Mar121646.2351/texttest.bzr/VersionControl/DynamicCVSLog/TargetApp, info 4 days ago
+Bazaar tree view dialog: Adding output.hello as child of /carm/proj/texttest-tmp/geoff/texttest.18Mar121646.2351/texttest.bzr/VersionControl/DynamicCVSLog/TargetApp/Test2, info 4 days ago
 Bazaar tree view dialog: Showing two columns
 Bazaar tree view dialog: Showing Bazaar output
 ------------------------------------------------------------

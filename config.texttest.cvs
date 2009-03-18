@@ -6,3 +6,7 @@ link_test_path:cvsroot
 
 [test_data_environment]
 cvsroot:CVSROOT
+
+[run_dependent_text]
+# sometimes caused by symbolic links...
+traffic:cd .*/TargetApp.cvs{REPLACE cd <test write dir>/TargetApp}
