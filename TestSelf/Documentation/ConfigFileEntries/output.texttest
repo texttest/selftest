@@ -1,4 +1,4 @@
-TextTest will write diagnostics in /carm/proj/texttest-tmp/geoff/texttest.06Mar165831.29823/texttest/TestSelf/Documentation/ConfigFileEntries based on file at /carm/proj/texttest-tmp/geoff/texttest.06Mar165831.29823/texttest/TestSelf/Documentation/ConfigFileEntries/logging
+TextTest will write diagnostics in /carm/proj/texttest-tmp/geoff/texttest.18Mar175507.5856/texttest/TestSelf/Documentation/ConfigFileEntries based on file at /carm/proj/texttest-tmp/geoff/texttest.18Mar175507.5856/texttest/TestSelf/Documentation/ConfigFileEntries/logging
 Using Application APPIDENTIFIER
 asynchronous_file_edits|[]|List of intercepted command-line programs that may edit files asynchronously
 auto_sort_test_suites|0|Automatically sort test suites in alphabetical order. 1 means sort in ascending order, -1 means sort in descending order.
@@ -68,7 +68,7 @@ performance_logfile_extractor|{}|What string to look for when collecting perform
 performance_test_machine|{'default': [], 'memory': ['any']}|List of machines where performance can be collected
 performance_test_minimum|{'default': 0.0}|Minimum time/memory to be consumed before data is collected
 performance_unit|{'default': 'seconds', 'memory': 'MB'}|Name to be used to identify the units in a performance file
-performance_use_normalised_%|{'default': 'true'}|Do we interpret performance percentage changes as normalised (symmetric) values?
+performance_use_normalised_%|{'default': 'true'}|Alias. See entry for 'use_normalised_percentage_change'
 performance_variation_%|{'default': 10.0}|How much variation in performance is allowed
 performance_variation_serious_%|{'default': 0.0}|Additional cutoff to performance_variation_% for extra highlighting
 run_dependent_text|{'default': []}|Mapping of patterns to remove from result files
@@ -88,6 +88,7 @@ unordered_text|{'default': []}|Mapping of patterns to extract and sort from resu
 unsaveable_version|[]|Versions which should not have results saved for them
 use_case_record_mode|disabled|Mode for Use-case recording (GUI, console or disabled)
 use_case_recorder||Which Use-case recorder is being used
+use_normalised_percentage_change|{'default': 'true'}|Do we interpret performance percentage changes as normalised (symmetric) values?
 version_priority|{'default': 99}|Mapping of version names to a priority order in case of conflict.
 view_program|{'default': 'emacs'}|External program(s) to use for viewing and editing text files
 virtual_display_machine|['localhost']|(UNIX) List of machines to run virtual display server (Xvfb) on
