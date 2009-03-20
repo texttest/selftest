@@ -1,10 +1,13 @@
 #!/usr/bin/env python
 
-import sys, os
+import sys, os, shutil
 
 def editFile(fileName):
     print "Removing file", os.path.basename(fileName)
-    os.remove(fileName)
+    if os.path.isdir(fileName):
+        shutil.rmtree(fileName)
+    else:
+        os.remove(fileName)
     
 fileName = sys.argv[1]
 if os.path.isfile(fileName):
