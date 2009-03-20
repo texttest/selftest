@@ -1,6 +1,5 @@
-TextTest will write diagnostics in /carm/proj/texttest-tmp/geoff/texttest.20Mar115414.23915/texttest/TestSelf/Documentation/ConfigFileEntries based on file at /carm/proj/texttest-tmp/geoff/texttest.20Mar115414.23915/texttest/TestSelf/Documentation/ConfigFileEntries/logging
+TextTest will write diagnostics in /carm/proj/texttest-tmp/geoff/texttest.20Mar142045.26328/texttest/TestSelf/Documentation/ConfigFileEntries based on file at /carm/proj/texttest-tmp/geoff/texttest.20Mar142045.26328/texttest/TestSelf/Documentation/ConfigFileEntries/logging
 Using Application APPIDENTIFIER
-asynchronous_file_edits|[]|List of intercepted command-line programs that may edit files asynchronously
 auto_sort_test_suites|0|Automatically sort test suites in alphabetical order. 1 means sort in ascending order, -1 means sort in descending order.
 base_version|[]|Versions to inherit settings from
 batch_collect_compulsory_version|{'default': []}|When collecting multiple messages, which versions should be expected and give an error if not present?
@@ -22,7 +21,7 @@ catalogue_process_string||String for catalogue functionality to identify process
 checkout_location|{'default': []}|Absolute paths to look for checkouts under
 collate_file|{'stacktrace': 'core*'}|Mapping of result file names to paths to collect them from
 collate_script|{'default': [], 'stacktrace': ['interpretcore.py']}|Mapping of result file names to scripts which turn them into suitable text
-collect_traffic|[]|List of command-line programs to intercept
+collect_traffic|{'default': [], 'asynchronous': []}|List of command-line programs to intercept
 collect_traffic_environment|{'default': []}|Mapping of collected programs to environment variables they care about
 config_module|default|Configuration module to use
 copy_test_path|[]|Paths to be copied to the temporary directory when running tests
