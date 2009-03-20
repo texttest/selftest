@@ -3,9 +3,9 @@ Enabling entry completion, using matching 1
 Waiting for application event 'all tests to be read' to occur.
 Adding entry completion '<default>' ...
 Adding entry completion '1' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.20Mar160426.29622/texttest/GUI/StaticGUI/Renaming/RenameBackAndForth/personaldir/log/log4py.conf' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.20Mar162538.30051/texttest/GUI/StaticGUI/Renaming/RenameBackAndForth/personaldir/log/log4py.conf' ...
 Adding entry completion '/users/geoff/work/master/Testing/TextTest/log/log4py.conf' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.20Mar160426.29622/texttest/GUI/StaticGUI/Renaming/RenameBackAndForth/personaldir/log' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.20Mar162538.30051/texttest/GUI/StaticGUI/Renaming/RenameBackAndForth/personaldir/log' ...
 Top Window title is TextTest static GUI : management of tests for DIP
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
@@ -190,11 +190,11 @@ Viewing action with title '_Select', stock id ''gtk-find'', accelerator ''<contr
 Viewing radio button for switch '', options Discard/Refine/Extend'. Default value 0.
 Viewing action with title 'Filter', stock id ''gtk-find'', accelerator ''<control>f''
 
-Changing GUI status to: 'TextTest started at 20Mar16:04:27.'
+Changing GUI status to: 'TextTest started at 20Mar16:25:40.'
 
 Changing GUI status to: 'Reading tests ...'
 
-Changing GUI status to: 'Reading tests completed at 20Mar16:04:27.'
+Changing GUI status to: 'Reading tests completed at 20Mar16:25:40.'
 
 Test Tree description...
 -> TargetApp (dip)
@@ -330,6 +330,37 @@ Test Tree description...
 Setting file-view title to 'A03'
 
 Changing GUI status to: 'Renamed test Blah to A03.'
+
+'rename selected test' event created with arguments ''
+---------- Dialog 'Rename selected test' ----------
+Default action is labelled 'gtk-ok'
+Viewing entry for option '\nNew name' (set to 'A03')
+Viewing entry for option '\nNew description' (set to 'A03 description')
+---------------------------------------------------
+
+'enter new name =' event created with arguments 'Blah'
+
+'press ok' event created with arguments ''
+
+Test Tree description...
+-> TargetApp (dip)
+->   Game9952
+->     S01.99
+->     A01
+->     S02
+->     A02
+->     S03
+->     Blah
+->     S04
+->     A04
+->     S05
+->     A05
+->   npstIII
+->     Game47
+->       S01
+Setting file-view title to 'Blah'
+
+Changing GUI status to: 'Renamed test A03 to Blah.'
 
 'quit' event created with arguments ''
 
