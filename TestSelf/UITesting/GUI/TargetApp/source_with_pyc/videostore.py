@@ -77,6 +77,9 @@ if __name__ == "__main__":
     # Just to make it fail (make record and replay different...)
     import os
     print "Started the video store. The process ID is", os.getpid()
-    sys.stdout.flush()
-    program = VideoStore()
-    program.run()
+    if os.getenv("SABOTAGE_VIDEOSTORE"):
+        print "Sabotage!"
+    else:
+        sys.stdout.flush()
+        program = VideoStore()
+        program.run()
