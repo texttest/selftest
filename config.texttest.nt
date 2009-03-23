@@ -1,3 +1,10 @@
 # don't run the SGE/LSF tests for now : they don't work on Windows...
 extra_version:{CLEAR sge}
 extra_version:{CLEAR lsf}
+
+# We do a lot of terminating programs with signals,
+# which can be replayed but not recorded on Windows.
+# Don't complain if the traffic file is missing therefore...
+[collect_traffic]
+regenerate:{CLEAR traffic}
+builtin:traffic
