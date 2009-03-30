@@ -1,4 +1,4 @@
-TextTest will write diagnostics in /carm/proj/texttest-tmp/geoff/texttest.30Mar170720.12637/texttest/TestSelf/Documentation/EnvironmentVariables based on file at /carm/proj/texttest-tmp/geoff/texttest.30Mar170720.12637/texttest/TestSelf/Documentation/EnvironmentVariables/logging
+TextTest will write diagnostics in /carm/proj/texttest-tmp/geoff/texttest.30Mar175459.13402/texttest.sge/QueueSystems/NormalOperation/Console/DocumentEnvironment based on file at /carm/proj/texttest-tmp/geoff/texttest.30Mar175459.13402/texttest.sge/QueueSystems/NormalOperation/Console/DocumentEnvironment/logging
 Using Application APP
 The following variables may be set by the user :
 TEXTTEST_DIAGDIR|$TEXTTEST_PERSONAL_CONFIG/log|Location to write TextTest's internal logs
@@ -6,6 +6,8 @@ TEXTTEST_DYNAMIC_GUI_PYARGS||Additional python arguments for dynamic GUI : mostl
 TEXTTEST_HOME|.|Root directory of the test suite
 TEXTTEST_LOGCONFIG|$TEXTTEST_DIAGDIR/log4py.conf|Configuration file for TextTest's internal logs
 TEXTTEST_PERSONAL_CONFIG|~/.texttest|Location of personal configuration
+TEXTTEST_SLAVE_CMD|<source directory>/bin/texttest.py|TextTest executable to call for the grid engine slave process
+TEXTTEST_SLAVE_DIAGDIR|$TEXTTEST_DIAGDIR/<slave job name>|Internal log directory to use in the grid engine slave process
 TEXTTEST_TMP|$TEXTTEST_PERSONAL_CONFIG/tmp|Location of temporary files from test runs
 TEXTTEST_XVFB_WAIT|30|Time to wait for Xvfb to set up connections
 USECASE_HOME|$TEXTTEST_HOME/usecases|Location to store shortcuts from the GUI
@@ -18,3 +20,7 @@ TEXTTEST_SANDBOX|Full path to the sandbox directory
 USECASE_RECORD_SCRIPT|Full path to the script to record in GUI tests
 USECASE_REPLAY_DELAY|Time to wait between each action in GUI tests
 USECASE_REPLAY_SCRIPT|Full path to the script to replay in GUI tests
+The following variables can be used in environment files :
+QUEUE_SYSTEM_PROCESSES|1|Number of processes the test needs to run
+QUEUE_SYSTEM_RESOURCE||Grid engine resources required for the test
+QUEUE_SYSTEM_SUBMIT_ARGS||Extra arguments to provide on submission to grid engine
