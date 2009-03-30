@@ -1,4 +1,4 @@
-<-CLI:14719
+<-CLI:15164
 sleep.killing:Basic
 (idefault
 Running
@@ -38,14 +38,14 @@ p17
 S'start'
 p18
 sb.
-<-CMD:cd /nfs/vm/texttest-tmp/geoff/texttest.09Feb165141.5798/texttest.sge/QueueSystems/Limits/Slave/CpuLimitPerformance/texttesttmp/console.killing.09Feb165153.14719/sleep.killing/Basic; time -p -o /carm/proj/texttest-tmp/geoff/texttest.09Feb165141.5798/texttest.sge/QueueSystems/Limits/Slave/CpuLimitPerformance/texttesttmp/console.killing.09Feb165153.14719/sleep.killing/Basic/framework_tmp/unixperf python /carm/proj/texttest-tmp/geoff/texttest.09Feb165141.5798/texttest.sge/QueueSystems/Limits/Slave/CpuLimitPerformance/TargetApp/sleep.py 1000
+<-CMD:cd /nfs/vm/texttest-tmp/geoff/texttest.30Mar114909.6945/texttest.sge/QueueSystems/Limits/Slave/CpuLimitPerformance/texttesttmp/console.killing.30Mar115004.15164/sleep.killing/Basic; time -p -o /carm/proj/texttest-tmp/geoff/texttest.30Mar114909.6945/texttest.sge/QueueSystems/Limits/Slave/CpuLimitPerformance/texttesttmp/console.killing.30Mar115004.15164/sleep.killing/Basic/framework_tmp/unixperf python /carm/proj/texttest-tmp/geoff/texttest.30Mar114909.6945/texttest.sge/QueueSystems/Limits/Slave/CpuLimitPerformance/TargetApp/sleep.py 1000
 ->FIL:Basic
 ->OUT:Sleeping for 1000 seconds...
 ->EXC:-2
 <-CMD:qstat -r -s r -u "*" -l hostname=my_machine
-<-CLI:14719
+<-CLI:15164
 sleep.killing:Basic
-(icomparetest
+(idefault.comparetest
 TestComparison
 p1
 (dp2
@@ -56,7 +56,7 @@ p4
 sS'changedResults'
 p5
 (lp6
-(icomparefile
+(idefault.comparefile
 FileComparison
 p7
 (dp8
@@ -66,7 +66,7 @@ S'1,2c1\n< Sleeping for 5 seconds...\n< Done\n---\n> Sleeping for 1000 seconds..
 p10
 sS'tmpFile'
 p11
-S'/carm/proj/texttest-tmp/geoff/texttest.09Feb165141.5798/texttest.sge/QueueSystems/Limits/Slave/CpuLimitPerformance/texttesttmp/console.killing.09Feb165153.14719/sleep.killing/Basic/output.sleep'
+S'/carm/proj/texttest-tmp/geoff/texttest.30Mar114909.6945/texttest.sge/QueueSystems/Limits/Slave/CpuLimitPerformance/texttesttmp/console.killing.30Mar115004.15164/sleep.killing/Basic/output.sleep'
 p12
 sS'severity'
 p13
@@ -76,7 +76,7 @@ p14
 I01
 sS'stdFile'
 p15
-S'/carm/proj/texttest-tmp/geoff/texttest.09Feb165141.5798/texttest.sge/QueueSystems/Limits/Slave/CpuLimitPerformance/TargetApp/Basic/output.sleep'
+S'/carm/proj/texttest-tmp/geoff/texttest.30Mar114909.6945/texttest.sge/QueueSystems/Limits/Slave/CpuLimitPerformance/TargetApp/Basic/output.sleep'
 p16
 sS'stdCmpFile'
 p17
@@ -198,28 +198,28 @@ sg51
 (lp59
 sS'appAbsPath'
 p60
-S'/carm/proj/texttest-tmp/geoff/texttest.09Feb165141.5798/texttest.sge/QueueSystems/Limits/Slave/CpuLimitPerformance/TargetApp'
+S'/carm/proj/texttest-tmp/geoff/texttest.30Mar114909.6945/texttest.sge/QueueSystems/Limits/Slave/CpuLimitPerformance/TargetApp'
 p61
 sS'allResults'
 p62
 (lp63
-(icomparefile
+(idefault.comparefile
 FileComparison
 p64
 (dp65
 g9
 Nsg11
-S'/carm/proj/texttest-tmp/geoff/texttest.09Feb165141.5798/texttest.sge/QueueSystems/Limits/Slave/CpuLimitPerformance/texttesttmp/console.killing.09Feb165153.14719/sleep.killing/Basic/errors.sleep'
+S'/carm/proj/texttest-tmp/geoff/texttest.30Mar114909.6945/texttest.sge/QueueSystems/Limits/Slave/CpuLimitPerformance/texttesttmp/console.killing.30Mar115004.15164/sleep.killing/Basic/errors.sleep'
 p66
 sg13
 I1
 sg14
 I00
 sg15
-S'/carm/proj/texttest-tmp/geoff/texttest.09Feb165141.5798/texttest.sge/QueueSystems/Limits/Slave/CpuLimitPerformance/TargetApp/Basic/errors.sleep'
+S'/carm/proj/texttest-tmp/geoff/texttest.30Mar114909.6945/texttest.sge/QueueSystems/Limits/Slave/CpuLimitPerformance/TargetApp/Basic/errors.sleep'
 p67
 sg17
-S'/carm/proj/texttest-tmp/geoff/texttest.09Feb165141.5798/texttest.sge/QueueSystems/Limits/Slave/CpuLimitPerformance/texttesttmp/console.killing.09Feb165153.14719/sleep.killing/Basic/framework_tmp/errors.sleeporigcmp'
+S'/carm/proj/texttest-tmp/geoff/texttest.30Mar114909.6945/texttest.sge/QueueSystems/Limits/Slave/CpuLimitPerformance/texttesttmp/console.killing.30Mar115004.15164/sleep.killing/Basic/framework_tmp/errors.sleeporigcmp'
 p68
 sg18
 F-1
@@ -235,7 +235,7 @@ I0
 sg24
 I500
 sbsg25
-S'/carm/proj/texttest-tmp/geoff/texttest.09Feb165141.5798/texttest.sge/QueueSystems/Limits/Slave/CpuLimitPerformance/texttesttmp/console.killing.09Feb165153.14719/sleep.killing/Basic/framework_tmp/errors.sleepcmp'
+S'/carm/proj/texttest-tmp/geoff/texttest.30Mar114909.6945/texttest.sge/QueueSystems/Limits/Slave/CpuLimitPerformance/texttesttmp/console.killing.30Mar115004.15164/sleep.killing/Basic/framework_tmp/errors.sleepcmp'
 p71
 sg26
 g27
@@ -247,7 +247,7 @@ sg30
 S'errors'
 p72
 sbag7
-a(iperformance
+a(idefault.performance
 PerformanceFileComparison
 p73
 (dp74
@@ -255,7 +255,7 @@ g9
 S'CPU time   :       3.0 sec. on my_machine\nReal time  :       3.1 sec.\n'
 p75
 sg11
-S'/carm/proj/texttest-tmp/geoff/texttest.09Feb165141.5798/texttest.sge/QueueSystems/Limits/Slave/CpuLimitPerformance/texttesttmp/console.killing.09Feb165153.14719/sleep.killing/Basic/performance.sleep'
+S'/carm/proj/texttest-tmp/geoff/texttest.30Mar114909.6945/texttest.sge/QueueSystems/Limits/Slave/CpuLimitPerformance/texttesttmp/console.killing.30Mar115004.15164/sleep.killing/Basic/performance.sleep'
 p76
 sg13
 I2
@@ -300,7 +300,7 @@ S'complete'
 p83
 sS'appWriteDir'
 p84
-S'/carm/proj/texttest-tmp/geoff/texttest.09Feb165141.5798/texttest.sge/QueueSystems/Limits/Slave/CpuLimitPerformance/texttesttmp/console.killing.09Feb165153.14719'
+S'/carm/proj/texttest-tmp/geoff/texttest.30Mar114909.6945/texttest.sge/QueueSystems/Limits/Slave/CpuLimitPerformance/texttesttmp/console.killing.30Mar115004.15164'
 p85
 sS'newResults'
 p86

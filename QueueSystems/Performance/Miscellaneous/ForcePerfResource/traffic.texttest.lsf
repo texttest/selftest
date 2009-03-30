@@ -1,5 +1,5 @@
-<-SRV:TextTest slave server started on 192.168.99.62:59317
-<-CMD:cd /nfs/vm/texttest-tmp/geoff/dynamic_gui.03Jun141458.5821/texttest.lsf/QueueSystems/Performance/Miscellaneous/ForcePerfResource/texttesttmp/console.resource.03Jun141515.9188/slavelogs; bsub -J Test-Failures-PERF.resource -R "performance_resource " -u nobody -o Test-Failures-PERF.resource.log -e Test-Failures-PERF.resource.errors 'exec $SHELL -c "exec /users/geoff/work/master/Testing/TextTest/bin/texttest -d /carm/proj/texttest-tmp/geoff/dynamic_gui.03Jun141458.5821/texttest.lsf/QueueSystems/Performance/Miscellaneous/ForcePerfResource/TargetApp -a perf.resource -l -tp Failures -slave /carm/proj/texttest-tmp/geoff/dynamic_gui.03Jun141458.5821/texttest.lsf/QueueSystems/Performance/Miscellaneous/ForcePerfResource/texttesttmp/console.resource.03Jun141515.9188 -servaddr 192.168.99.62:59261 -x -xr /carm/proj/texttest-tmp/geoff/dynamic_gui.03Jun141458.5821/texttest.lsf/QueueSystems/Performance/Miscellaneous/ForcePerfResource/logging -xw /carm/proj/texttest-tmp/geoff/dynamic_gui.03Jun141458.5821/texttest.lsf/QueueSystems/Performance/Miscellaneous/ForcePerfResource"'
+<-SRV:TextTest slave server started on 10.67.7.12:33396
+<-CMD:cd /nfs/vm/texttest-tmp/geoff/texttest.30Mar114909.6945/texttest.lsf/QueueSystems/Performance/Miscellaneous/ForcePerfResource/texttesttmp/console.resource.30Mar115010.21416/slavelogs; bsub -J Test-Failures-PERF.resource -R "performance_resource " -u nobody -o Test-Failures-PERF.resource.log -e Test-Failures-PERF.resource.errors 'exec $SHELL -c "exec /carm/proj/texttest/release/current/site/bin/texttest -d /carm/proj/texttest-tmp/geoff/texttest.30Mar114909.6945/texttest.lsf/QueueSystems/Performance/Miscellaneous/ForcePerfResource/TargetApp -a perf.resource -l -tp Failures -slave /carm/proj/texttest-tmp/geoff/texttest.30Mar114909.6945/texttest.lsf/QueueSystems/Performance/Miscellaneous/ForcePerfResource/texttesttmp/console.resource.30Mar115010.21416 -servaddr 10.67.7.12:47210 -x -xr /carm/proj/texttest-tmp/geoff/texttest.30Mar114909.6945/texttest.lsf/QueueSystems/Performance/Miscellaneous/ForcePerfResource/logging -xw /carm/proj/texttest-tmp/geoff/texttest.30Mar114909.6945/texttest.lsf/QueueSystems/Performance/Miscellaneous/ForcePerfResource"'
 ->OUT:Job <471058> is submitted to queue <normal>.
 <-SRV:Completed submission of all tests
 ->CLI:12098
@@ -38,7 +38,7 @@ p15
 sb.
 ->CLI:12098
 perf.resource:Failures
-(icomparetest
+(idefault.comparetest
 TestComparison
 p1
 (dp2
@@ -77,7 +77,7 @@ p18
 sS'allResults'
 p19
 (lp20
-(icomparefile
+(idefault.comparefile
 FileComparison
 p21
 (dp22
@@ -178,7 +178,7 @@ sS'stem'
 p65
 S'errors'
 p66
-sba(iperformance
+sba(idefault.performance
 PerformanceFileComparison
 p67
 (dp68
@@ -200,7 +200,7 @@ p70
 Nsg65
 S'logperf'
 p71
-sba(icomparefile
+sba(idefault.comparefile
 FileComparison
 p72
 (dp73
