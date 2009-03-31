@@ -3,9 +3,9 @@ Enabling entry completion, using matching 1
 Waiting for application event 'all tests to be read' to occur.
 Adding entry completion '<default>' ...
 Adding entry completion '1' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.25Mar180155.31432/texttest/GUI/StaticGUI/Miscellaneous/ViewHelp/personaldir/log/log4py.conf' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.31Mar165036.26696/texttest/GUI/StaticGUI/Miscellaneous/ViewHelp/personaldir/log/log4py.conf' ...
 Adding entry completion '/users/geoff/work/master/Testing/TextTest/log/log4py.conf' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.25Mar180155.31432/texttest/GUI/StaticGUI/Miscellaneous/ViewHelp/personaldir/log' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.31Mar165036.26696/texttest/GUI/StaticGUI/Miscellaneous/ViewHelp/personaldir/log' ...
 Top Window title is TextTest static GUI : management of tests for DIP
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
@@ -43,6 +43,7 @@ Viewing action with title 'Re_connect', stock id ''gtk-connect'', accelerator ''
 Viewing action with title '_Load Selection...', stock id ''gtk-open'', accelerator ''<control><shift>o''
 Viewing action with title 'S_ave Selection...', stock id ''gtk-save-as'', accelerator ''<control>d'' (greyed out)
 Viewing action with title '_Migration Notes'
+Viewing action with title '_Change Logs'
 Viewing action with title 'Component _Versions'
 Viewing action with title '_About TextTest', stock id ''gtk-about''
 Viewing action with title '_Select', stock id ''gtk-find'', accelerator ''<control>s''
@@ -110,6 +111,7 @@ UI layout:
     </placeholder>
     <menu name="helpmenu" action="helpmenu">
       <menuitem name="Migration Notes" action="Migration Notes"/>
+      <menuitem name="Change Logs" action="Change Logs"/>
       <separator/>
       <menuitem name="Component Versions" action="Component Versions"/>
       <separator/>
@@ -190,11 +192,11 @@ Viewing action with title '_Select', stock id ''gtk-find'', accelerator ''<contr
 Viewing radio button for switch '', options Discard/Refine/Extend'. Default value 0.
 Viewing action with title 'Filter', stock id ''gtk-find'', accelerator ''<control>f''
 
-Changing GUI status to: 'TextTest started at 25Mar18:01:58.'
+Changing GUI status to: 'TextTest started at 31Mar16:50:37.'
 
 Changing GUI status to: 'Reading tests ...'
 
-Changing GUI status to: 'Reading tests completed at 25Mar18:01:58.'
+Changing GUI status to: 'Reading tests completed at 31Mar16:50:38.'
 
 Test Tree description...
 -> TargetApp (dip)
@@ -238,46 +240,129 @@ Expected application event 'all tests to be read' occurred, proceeding.
 Adding entry completion 'output' ...
 ---------- Dialog 'TextTest Migration Notes' ----------
 Default action is labelled 'gtk-close'
-Adding migration notes from file 'MigrationNotes_from_3.13':
+Adding Migration Notes from version 3.13:
 First sentence :
 There is almost certainly no migration needed.
-Adding migration notes from file 'MigrationNotes_from_3.12':
+Adding Migration Notes from version 3.12:
 First sentence :
 There is almost certainly no migration needed.
-Adding migration notes from file 'MigrationNotes_from_3.11':
+Adding Migration Notes from version 3.11:
 First sentence :
 You need to do migration if you 
 a) use Windows and Python 2.
-Adding migration notes from file 'MigrationNotes_from_3.10':
+Adding Migration Notes from version 3.10:
 First sentence :
 There isn't so much migration to do for this release.
-Adding migration notes from file 'MigrationNotes_from_3.9':
+Adding Migration Notes from version 3.9:
 First sentence :
 There isn't much migration to do in this release apart from upgrade PyGTK if you haven't done that 
 yet.
-Adding migration notes from file 'MigrationNotes_from_3.8':
+Adding Migration Notes from version 3.8:
 First sentence :
 For the first time in a long time 3.
-Adding migration notes from file 'MigrationNotes_from_3.7':
+Adding Migration Notes from version 3.7:
 First sentence :Following on from the GUI changes in 3.
-Adding migration notes from file 'MigrationNotes_from_3.6':
+Adding Migration Notes from version 3.6:
 First sentence :It should not be necessary to explicitly migrate anything on upgrading to version 3.
-Adding migration notes from file 'MigrationNotes_from_3.5':
+Adding Migration Notes from version 3.5:
 First sentence :It should not be necessary to explicitly migrate anything on upgrading to version 3.
-Adding migration notes from file 'MigrationNotes_from_3.4':
+Adding Migration Notes from version 3.4:
 First sentence :(1) Due to resurrected support on Windows, the configuration 'unixConfig'
 is no longer present or necessary.
-Adding migration notes from file 'MigrationNotes_from_3.3':
+Adding Migration Notes from version 3.3:
 First sentence :This only applies to users of the LSF module.
-Adding migration notes from file 'MigrationNotes_from_3.1':
+Adding Migration Notes from version 3.1:
 First sentence :Version 3.
-Adding migration notes from file 'MigrationNotes_from_2.x':
+Adding Migration Notes from version 2.x:
 First sentence :Migration notes from TextTest 2.
 -------------------------------------------------------
 
 Changing GUI status to: ''
 
 'view migration notes in tab' event created with arguments 'from 3.4'
+
+'press close' event created with arguments ''
+
+'show texttest change logs' event created with arguments ''
+---------- Dialog 'TextTest Change Logs' ----------
+Default action is labelled 'gtk-close'
+Adding Change Logs from version trunk:
+First sentence :General GUI Enhancements:
+    - This ChangeLog now visible from the GUI (helpdialogs.
+Adding Change Logs from version 3.13:
+First sentence :Dynamic GUI Enhancements:
+    - "Save As" dialog has a new field "Version to save previous results as"
+	Means old default results can be preserved as a version, for example after a branch of the codebase
+Framework Enhancements:
+    - Can now have application-specific personal configuration files (testmodel.
+Adding Change Logs from version 3.12.1:
+First sentence :Installation and self-test changes:
+    - ViewHelp self-test fixed, oversight in 3.
+Adding Change Logs from version 3.12:
+First sentence :System requirements (see Migration Notes):
+    - TextTest GUI now requires at least Python 2.
+Adding Change Logs from version 3.11.1:
+First sentence :Framework Enhancements:
+    - Can now configure how the units of performance are described (sandbox.
+Adding Change Logs from version 3.11:
+First sentence :Major Enhancements:
+    - Added "filter" action on the static GUI selection tab (default_gui.
+Adding Change Logs from version 3.10:
+First sentence :System requirements (see Migration Notes):
+    - TextTest GUI now requires at least PyGTK 2.
+Adding Change Logs from version 3.9.1:
+First sentence :Fixes for bugs introduced in 3.
+Adding Change Logs from version 3.9:
+First sentence :System requirements:
+    - TextTest now requires at least Python 2.
+Adding Change Logs from version 3.8:
+First sentence :System requirements:
+    - To run GUI, now need at least Python 2.
+Adding Change Logs from version 3.7.1:
+First sentence :Framework enhancements:
+    - Plugin scripts (-s option) will no longer be rejected by the framework if no tests are found (engine.
+Adding Change Logs from version 3.7:
+First sentence :Major Enhancements:
+    - GUI layout revamped after various usability complaints (texttestgui.
+Adding Change Logs from version 3.6:
+First sentence :Major Enhancements:
+    - New webpage generation for batch reporting (testoverview.
+Adding Change Logs from version 3.5.3:
+First sentence :    - Added ability to specify directory for finding test list files in (testmodel.
+Adding Change Logs from version 3.5.2:
+First sentence :    - More bugfixes for Windows XP (plugins.
+Adding Change Logs from version 3.5.1:
+First sentence :    - Bugfixes for Windows XP from 3.
+Adding Change Logs from version 3.5:
+First sentence :    - Support for Windows XP introduced (default.
+Adding Change Logs from version 3.4:
+First sentence :    - Integration with Sun Grid Engine (sge.
+Adding Change Logs from version 3.3:
+First sentence :    - LSF module now faster and more reliable (lsf.
+Adding Change Logs from version 3.2:
+First sentence :    - Replaced dynamic GUI "performance" column with "details" column (texttestgui.
+Adding Change Logs from version 3.1.1:
+First sentence :    - PyUseCase now released separately (usecase.
+Adding Change Logs from version 3.1:
+First sentence :    - Plug-in for bugzilla command line interface (bugzilla.
+Adding Change Logs from version 3.0:
+First sentence :    - Compatibility changes in config file format.
+Adding Change Logs from version 2.1:
+First sentence :    - Major GUI development (texttestgui.
+Adding Change Logs from version 2.0:
+First sentence :    - Default configuration development (default.
+Adding Change Logs from version 1.0:
+First sentence :    - LSF development (lsf.
+Adding Change Logs from version 0.2:
+First sentence :    - bug fixes
+	(1) Core file handling deals with core.
+Adding Change Logs from version 0.1:
+First sentence :
+---------------------------------------------------
+
+Changing GUI status to: ''
+
+'view change logs in tab' event created with arguments '3.7.1'
 
 'press close' event created with arguments ''
 

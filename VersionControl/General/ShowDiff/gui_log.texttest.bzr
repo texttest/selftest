@@ -3,9 +3,9 @@ Enabling entry completion, using matching 1
 Waiting for application event 'all tests to be read' to occur.
 Adding entry completion '<default>' ...
 Adding entry completion '1' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.26Mar104159.6205/texttest.bzr/VersionControl/General/ShowDiff/personaldir/log/log4py.conf' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.31Mar164539.26600/texttest.bzr/VersionControl/General/ShowDiff/personaldir/log/log4py.conf' ...
 Adding entry completion '/users/geoff/work/master/Testing/TextTest/log/log4py.conf' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.26Mar104159.6205/texttest.bzr/VersionControl/General/ShowDiff/personaldir/log' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.31Mar164539.26600/texttest.bzr/VersionControl/General/ShowDiff/personaldir/log' ...
 Top Window title is TextTest static GUI : management of tests for HELLO
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
@@ -43,6 +43,7 @@ Viewing action with title 'Re_connect', stock id ''gtk-connect'', accelerator ''
 Viewing action with title '_Load Selection...', stock id ''gtk-open'', accelerator ''<control><shift>o''
 Viewing action with title 'S_ave Selection...', stock id ''gtk-save-as'', accelerator ''<control>d'' (greyed out)
 Viewing action with title '_Migration Notes'
+Viewing action with title '_Change Logs'
 Viewing action with title 'Component _Versions'
 Viewing action with title '_About TextTest', stock id ''gtk-about''
 Viewing action with title '_Log' (greyed out)
@@ -137,6 +138,7 @@ UI layout:
     </placeholder>
     <menu name="helpmenu" action="helpmenu">
       <menuitem name="Migration Notes" action="Migration Notes"/>
+      <menuitem name="Change Logs" action="Change Logs"/>
       <separator/>
       <menuitem name="Component Versions" action="Component Versions"/>
       <separator/>
@@ -251,11 +253,11 @@ Viewing action with title '_Select', stock id ''gtk-find'', accelerator ''<contr
 Viewing radio button for switch '', options Discard/Refine/Extend'. Default value 0.
 Viewing action with title 'Filter', stock id ''gtk-find'', accelerator ''<control>f''
 
-Changing GUI status to: 'TextTest started at 26Mar10:42:00.'
+Changing GUI status to: 'TextTest started at 31Mar16:46:24.'
 
 Changing GUI status to: 'Reading tests ...'
 
-Changing GUI status to: 'Reading tests completed at 26Mar10:42:00.'
+Changing GUI status to: 'Reading tests completed at 31Mar16:46:25.'
 
 Test Tree description...
 -> TargetApp (hello)
@@ -343,9 +345,9 @@ Bazaar command used: bzr diff
 Subdirectories were ignored, use Bazaar Difference Recursive to get the differences for all subdirectories.
 
 Bazaar tree view dialog: Adding <span weight='bold'>TargetApp</span> as root
-Bazaar tree view dialog: Adding <span weight='bold'>Test1</span> as child of /carm/proj/texttest-tmp/geoff/texttest.26Mar104159.6205/texttest.bzr/VersionControl/General/ShowDiff/TargetApp
-Bazaar tree view dialog: Adding errors.hello as child of /carm/proj/texttest-tmp/geoff/texttest.26Mar104159.6205/texttest.bzr/VersionControl/General/ShowDiff/TargetApp/Test1
-Bazaar tree view dialog: Adding output.hello.version as child of /carm/proj/texttest-tmp/geoff/texttest.26Mar104159.6205/texttest.bzr/VersionControl/General/ShowDiff/TargetApp/Test1
+Bazaar tree view dialog: Adding <span weight='bold'>Test1</span> as child of /carm/proj/texttest-tmp/geoff/texttest.31Mar164539.26600/texttest.bzr/VersionControl/General/ShowDiff/TargetApp
+Bazaar tree view dialog: Adding errors.hello as child of /carm/proj/texttest-tmp/geoff/texttest.31Mar164539.26600/texttest.bzr/VersionControl/General/ShowDiff/TargetApp/Test1
+Bazaar tree view dialog: Adding output.hello.version as child of /carm/proj/texttest-tmp/geoff/texttest.31Mar164539.26600/texttest.bzr/VersionControl/General/ShowDiff/TargetApp/Test1
 Bazaar tree view dialog: Showing Bazaar output
 === modified file 'TargetApp/Test1/errors.hello'
 1d0
@@ -422,15 +424,15 @@ Bazaar command used: bzr diff
 Subdirectories were ignored, use Bazaar Difference Recursive to get the differences for all subdirectories.
 
 Bazaar tree view dialog: Adding <span weight='bold'>TargetApp</span> as root
-Bazaar tree view dialog: Adding <span weight='bold'>Test1</span> as child of /carm/proj/texttest-tmp/geoff/texttest.26Mar104159.6205/texttest.bzr/VersionControl/General/ShowDiff/TargetApp
-Bazaar tree view dialog: Adding errors.hello as child of /carm/proj/texttest-tmp/geoff/texttest.26Mar104159.6205/texttest.bzr/VersionControl/General/ShowDiff/TargetApp/Test1
-Bazaar tree view dialog: Adding output.hello.version as child of /carm/proj/texttest-tmp/geoff/texttest.26Mar104159.6205/texttest.bzr/VersionControl/General/ShowDiff/TargetApp/Test1
-Bazaar tree view dialog: Adding <span weight='bold'>Test2</span> as child of /carm/proj/texttest-tmp/geoff/texttest.26Mar104159.6205/texttest.bzr/VersionControl/General/ShowDiff/TargetApp
-Bazaar tree view dialog: Adding output.hello as child of /carm/proj/texttest-tmp/geoff/texttest.26Mar104159.6205/texttest.bzr/VersionControl/General/ShowDiff/TargetApp/Test2
-Bazaar tree view dialog: Adding <span weight='bold'>Suite</span> as child of /carm/proj/texttest-tmp/geoff/texttest.26Mar104159.6205/texttest.bzr/VersionControl/General/ShowDiff/TargetApp
-Bazaar tree view dialog: Adding <span weight='bold'>Subsuite</span> as child of /carm/proj/texttest-tmp/geoff/texttest.26Mar104159.6205/texttest.bzr/VersionControl/General/ShowDiff/TargetApp/Suite
-Bazaar tree view dialog: Adding <span weight='bold'>Test3</span> as child of /carm/proj/texttest-tmp/geoff/texttest.26Mar104159.6205/texttest.bzr/VersionControl/General/ShowDiff/TargetApp/Suite/Subsuite
-Bazaar tree view dialog: Adding output.hello as child of /carm/proj/texttest-tmp/geoff/texttest.26Mar104159.6205/texttest.bzr/VersionControl/General/ShowDiff/TargetApp/Suite/Subsuite/Test3
+Bazaar tree view dialog: Adding <span weight='bold'>Test1</span> as child of /carm/proj/texttest-tmp/geoff/texttest.31Mar164539.26600/texttest.bzr/VersionControl/General/ShowDiff/TargetApp
+Bazaar tree view dialog: Adding errors.hello as child of /carm/proj/texttest-tmp/geoff/texttest.31Mar164539.26600/texttest.bzr/VersionControl/General/ShowDiff/TargetApp/Test1
+Bazaar tree view dialog: Adding output.hello.version as child of /carm/proj/texttest-tmp/geoff/texttest.31Mar164539.26600/texttest.bzr/VersionControl/General/ShowDiff/TargetApp/Test1
+Bazaar tree view dialog: Adding <span weight='bold'>Test2</span> as child of /carm/proj/texttest-tmp/geoff/texttest.31Mar164539.26600/texttest.bzr/VersionControl/General/ShowDiff/TargetApp
+Bazaar tree view dialog: Adding output.hello as child of /carm/proj/texttest-tmp/geoff/texttest.31Mar164539.26600/texttest.bzr/VersionControl/General/ShowDiff/TargetApp/Test2
+Bazaar tree view dialog: Adding <span weight='bold'>Suite</span> as child of /carm/proj/texttest-tmp/geoff/texttest.31Mar164539.26600/texttest.bzr/VersionControl/General/ShowDiff/TargetApp
+Bazaar tree view dialog: Adding <span weight='bold'>Subsuite</span> as child of /carm/proj/texttest-tmp/geoff/texttest.31Mar164539.26600/texttest.bzr/VersionControl/General/ShowDiff/TargetApp/Suite
+Bazaar tree view dialog: Adding <span weight='bold'>Test3</span> as child of /carm/proj/texttest-tmp/geoff/texttest.31Mar164539.26600/texttest.bzr/VersionControl/General/ShowDiff/TargetApp/Suite/Subsuite
+Bazaar tree view dialog: Adding output.hello as child of /carm/proj/texttest-tmp/geoff/texttest.31Mar164539.26600/texttest.bzr/VersionControl/General/ShowDiff/TargetApp/Suite/Subsuite/Test3
 Bazaar tree view dialog: Showing Bazaar output
 === modified file 'TargetApp/Test1/errors.hello'
 1d0
@@ -448,7 +450,7 @@ Bazaar tree view dialog: Showing Bazaar output
 > Hello uncommitted update!
 
 'show version control differences graphically' event created with arguments ''
-Viewing Bazaar differences for file '/carm/proj/texttest-tmp/geoff/texttest.26Mar104159.6205/texttest.bzr/VersionControl/General/ShowDiff/TargetApp/Test2/output.hello' graphically ...
+Viewing Bazaar differences for file '/carm/proj/texttest-tmp/geoff/texttest.31Mar164539.26600/texttest.bzr/VersionControl/General/ShowDiff/TargetApp/Test2/output.hello' graphically ...
 
 Waiting for application event 'the version-control graphical diff program to terminate' to occur.
 Expected application event 'the version-control graphical diff program to terminate' occurred, proceeding.
