@@ -1,0 +1,32 @@
+<-CMD:hg status /carm/proj/texttest-tmp/geoff/texttest.03Apr100325.27322/texttest.hg/VersionControl/General/ShowStatus/TargetApp/Test1/errors.hello
+->OUT:M TargetApp/Test1/errors.hello
+<-CMD:hg status /carm/proj/texttest-tmp/geoff/texttest.03Apr100325.27322/texttest.hg/VersionControl/General/ShowStatus/TargetApp/Test1/output.hello
+<-CMD:hg status /carm/proj/texttest-tmp/geoff/texttest.03Apr100325.27322/texttest.hg/VersionControl/General/ShowStatus/TargetApp/Test1/output.hello.version
+->OUT:? TargetApp/Test1/output.hello.version
+<-CMD:hg log -f /carm/proj/texttest-tmp/geoff/texttest.03Apr100325.27322/texttest.hg/VersionControl/General/ShowStatus/TargetApp/Test1/errors.hello
+->OUT:changeset:   8:c57d2c6473b1
+tag:         tip
+user:        geoff@gewoia.jeppesensystems.com
+date:        Thu Apr 02 15:05:09 2009 +0200
+summary:     Moving under TargetApp
+
+changeset:   4:480ebf49e6ab
+user:        geoff
+date:        Tue Feb 24 22:21:36 2009 +0100
+summary:     Adding a line for to get a file that isn't up-to-date
+
+changeset:   0:44876aa2023b
+user:        geoff
+date:        Thu Feb 19 21:26:26 2009 +0100
+summary:     Initial revision
+
+<-CMD:hg annotate -f -n /carm/proj/texttest-tmp/geoff/texttest.03Apr100325.27322/texttest.hg/VersionControl/General/ShowStatus/TargetApp/Test1/errors.hello
+->OUT:4 Test1/errors.hello: Added an extra line
+<-CMD:hg diff -g -r tip /carm/proj/texttest-tmp/geoff/texttest.03Apr100325.27322/texttest.hg/VersionControl/General/ShowStatus/TargetApp/Test1/errors.hello
+->OUT:diff --git a/TargetApp/Test1/errors.hello b/TargetApp/Test1/errors.hello
+--- a/TargetApp/Test1/errors.hello
++++ b/TargetApp/Test1/errors.hello
+@@ -1,1 +0,0 @@
+-Added an extra line
+<-CMD:hg status /carm/proj/texttest-tmp/geoff/texttest.03Apr100325.27322/texttest.hg/VersionControl/General/ShowStatus/TargetApp/Test2/output.hello
+->OUT:M TargetApp/Test2/output.hello
