@@ -4,6 +4,9 @@ AddTest
 # If the virtual display crashes and we get sent a new test, restart it
 AddTestXvfbCrash
 
+# If we're still around when the Xvfb timeout expires, make sure we handle this correctly
+AddTestSlowerThanTimeout
+
 # Make sure adding a new GUI application doesn't start a second virtual server
 AddApplication
 
