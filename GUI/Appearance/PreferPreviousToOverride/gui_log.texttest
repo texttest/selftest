@@ -3,9 +3,9 @@ Enabling entry completion, using matching 1
 Waiting for application event 'all tests to be read' to occur.
 Adding entry completion '<default>' ...
 Adding entry completion '1' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.31Mar164539.26600/texttest/GUI/Appearance/PreferPreviousToOverride/personaldir/log/log4py.conf' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.06Apr161009.14387/texttest/GUI/Appearance/PreferPreviousToOverride/personaldir/log/log4py.conf' ...
 Adding entry completion '/users/geoff/work/master/Testing/TextTest/log/log4py.conf' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.31Mar164539.26600/texttest/GUI/Appearance/PreferPreviousToOverride/personaldir/log' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.06Apr161009.14387/texttest/GUI/Appearance/PreferPreviousToOverride/personaldir/log' ...
 Top Window title is TextTest static GUI : management of tests for HELLO
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
@@ -192,11 +192,11 @@ Viewing action with title '_Select', stock id ''gtk-find'', accelerator ''<contr
 Viewing radio button for switch '', options Discard/Refine/Extend'. Default value 0.
 Viewing action with title 'Filter', stock id ''gtk-find'', accelerator ''<control>f''
 
-Changing GUI status to: 'TextTest started at 31Mar16:46:10.'
+Changing GUI status to: 'TextTest started at 06Apr16:10:56.'
 
 Changing GUI status to: 'Reading tests ...'
 
-Changing GUI status to: 'Reading tests completed at 31Mar16:46:10.'
+Changing GUI status to: 'Reading tests completed at 06Apr16:10:56.'
 
 Test Tree description...
 -> TargetApp (hello)
@@ -256,29 +256,61 @@ Adding entry completion 'version_from_config' ...
 ---------- Dialog 'Reconnect to previously run tests' ----------
 Default action is labelled 'gtk-ok'
 Viewing entry for option 'Version to reconnect to' (set to 'version_from_config') (drop-down list containing ['', 'version_from_config'])
-Viewing filechooser for option 'Temporary result directory' (choosing from directories ['/carm/proj/texttest-tmp/geoff/texttest.31Mar164539.26600/texttest/GUI/Appearance/PreferPreviousToOverride/texttesttmp'])
+Viewing filechooser for option 'Temporary result directory' (choosing from directories ['/carm/proj/texttest-tmp/geoff/texttest.06Apr161009.14387/texttest/GUI/Appearance/PreferPreviousToOverride/texttesttmp', '/carm/proj/texttest-tmp/geoff/texttest.06Apr161009.14387/texttest/GUI/Appearance/PreferPreviousToOverride/TargetApp'])
 Viewing radio button for switch 'Recomputation', options Display results exactly as they were in the original run/Use raw data from the original run, but recompute run-dependent text, known bug information etc.'. Default value 0.
 ----------------------------------------------------------------
 
 'enter version to reconnect to =' event created with arguments 'version_I_set_by_hand'
 
-'press cancel' event created with arguments ''
+'temporary result directory' event created with arguments 'TargetApp'
 
-Changing GUI status to: 'Action cancelled.'
+'look in folder' event created with arguments 'TargetApp'
+
+'press reconnect' event created with arguments ''
+Starting reconnect run of TextTest with arguments ['-g', '-a', 'hello', '-v', 'version_I_set_by_hand', '-reconnect', '/carm/proj/texttest-tmp/geoff/texttest.06Apr161009.14387/texttest/GUI/Appearance/PreferPreviousToOverride/TargetApp', '-count', '1', '-f', '/carm/proj/texttest-tmp/geoff/texttest.06Apr161009.14387/texttest/GUI/Appearance/PreferPreviousToOverride/texttesttmp/static_gui.06Apr161056.3405/dynamic_run1/gui_select', '-fd', '/carm/proj/texttest-tmp/geoff/texttest.06Apr161009.14387/texttest/GUI/Appearance/PreferPreviousToOverride/texttesttmp/static_gui.06Apr161056.3405/temporary_filter_files']
+
+Changing GUI status to: 'Reconnected to HELLO test-case Test at 06Apr16:10:57.'
 Adding entry completion 'output' ...
 Adding entry completion 'version_I_set_by_hand' ...
+
+Waiting for application event 'reconnect GUI to be closed' to occur.
+
+Changing GUI status to: 'Reconnect run failed for HELLO test-case Test'
+---------- Dialog 'TextTest Error' ----------
+Default action is labelled 'gtk-ok'
+Using stock icon 'gtk-dialog-error'
+Reconnect run failed, with the following errors:
+Rejected Application HELLO, version version_I_set_by_hand - Could not find any runs matching Application HELLO, version version_I_set_by_hand under /carm/proj/texttest-tmp/geoff/texttest.06Apr161009.14387/texttest/GUI/Appearance/PreferPreviousToOverride/TargetApp
+---------------------------------------------
+Expected application event 'reconnect GUI to be closed' occurred, proceeding.
+
+'agree to texttest message' event created with arguments ''
 
 'reconnect to previously run tests' event created with arguments ''
 ---------- Dialog 'Reconnect to previously run tests' ----------
 Default action is labelled 'gtk-ok'
 Viewing entry for option 'Version to reconnect to' (set to 'version_I_set_by_hand') (drop-down list containing ['', 'version_from_config'])
-Viewing filechooser for option 'Temporary result directory' (choosing from directories ['/carm/proj/texttest-tmp/geoff/texttest.31Mar164539.26600/texttest/GUI/Appearance/PreferPreviousToOverride/texttesttmp'])
+Viewing filechooser for option 'Temporary result directory' (choosing from directories ['/carm/proj/texttest-tmp/geoff/texttest.06Apr161009.14387/texttest/GUI/Appearance/PreferPreviousToOverride/texttesttmp', '/carm/proj/texttest-tmp/geoff/texttest.06Apr161009.14387/texttest/GUI/Appearance/PreferPreviousToOverride/TargetApp'])
 Viewing radio button for switch 'Recomputation', options Display results exactly as they were in the original run/Use raw data from the original run, but recompute run-dependent text, known bug information etc.'. Default value 0.
 ----------------------------------------------------------------
 
-'press cancel' event created with arguments ''
+'press reconnect' event created with arguments ''
+Starting reconnect run of TextTest with arguments ['-g', '-a', 'hello', '-v', 'version_I_set_by_hand', '-reconnect', '/carm/proj/texttest-tmp/geoff/texttest.06Apr161009.14387/texttest/GUI/Appearance/PreferPreviousToOverride/TargetApp', '-count', '1', '-f', '/carm/proj/texttest-tmp/geoff/texttest.06Apr161009.14387/texttest/GUI/Appearance/PreferPreviousToOverride/texttesttmp/static_gui.06Apr161056.3405/dynamic_run2/gui_select', '-fd', '/carm/proj/texttest-tmp/geoff/texttest.06Apr161009.14387/texttest/GUI/Appearance/PreferPreviousToOverride/texttesttmp/static_gui.06Apr161056.3405/temporary_filter_files']
 
-Changing GUI status to: 'Action cancelled.'
+Changing GUI status to: 'Reconnected to HELLO test-case Test at 06Apr16:10:59.'
+
+Waiting for application event 'reconnect GUI to be closed' to occur.
+
+Changing GUI status to: 'Reconnect run failed for HELLO test-case Test'
+---------- Dialog 'TextTest Error' ----------
+Default action is labelled 'gtk-ok'
+Using stock icon 'gtk-dialog-error'
+Reconnect run failed, with the following errors:
+Rejected Application HELLO, version version_I_set_by_hand - Could not find any runs matching Application HELLO, version version_I_set_by_hand under /carm/proj/texttest-tmp/geoff/texttest.06Apr161009.14387/texttest/GUI/Appearance/PreferPreviousToOverride/TargetApp
+---------------------------------------------
+Expected application event 'reconnect GUI to be closed' occurred, proceeding.
+
+'agree to texttest message' event created with arguments ''
 
 'quit' event created with arguments ''
 
