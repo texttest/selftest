@@ -3,9 +3,9 @@ Enabling entry completion, using matching 1
 Waiting for application event 'all tests to be read' to occur.
 Adding entry completion '<default>' ...
 Adding entry completion '1' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.31Mar164539.26600/texttest/GUI/StaticGUI/Miscellaneous/CreateFiles/personaldir/log/log4py.conf' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.16Apr152758.3406/texttest/GUI/StaticGUI/Miscellaneous/CreateFiles/personaldir/log/log4py.conf' ...
 Adding entry completion '/users/geoff/work/master/Testing/TextTest/log/log4py.conf' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.31Mar164539.26600/texttest/GUI/StaticGUI/Miscellaneous/CreateFiles/personaldir/log' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.16Apr152758.3406/texttest/GUI/StaticGUI/Miscellaneous/CreateFiles/personaldir/log' ...
 Top Window title is TextTest static GUI : management of tests for DIP
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
@@ -24,7 +24,7 @@ Viewing action with title '_Paste', stock id ''gtk-paste'', accelerator ''<contr
 Viewing action with title 'Add Test', stock id ''gtk-add'', accelerator ''<control>n'' (greyed out)
 Viewing action with title 'Add Suite', stock id ''gtk-add'' (greyed out)
 Viewing action with title 'Add Application', stock id ''gtk-add''
-Viewing action with title 'Create _File', stock id ''gtk-new'' (greyed out)
+Viewing action with title 'Create/_Import', stock id ''gtk-new'' (greyed out)
 Viewing action with title 'Enter Failure Information', stock id ''gtk-info'', accelerator ''<control>i'' (greyed out)
 Viewing action with title 'Refresh', stock id ''gtk-refresh'', accelerator ''F5''
 Viewing action with title 'Show only selected' (greyed out)
@@ -159,7 +159,7 @@ UI layout:
     <menuitem name="View File" action="View File"/>
     <menuitem name="File Properties" action="File Properties"/>
     <separator/>
-    <menuitem name="Create File" action="Create File"/>
+    <menuitem name="Create/Import" action="Create/Import"/>
     <separator/>
     <menuitem name="Remove..." action="Remove..."/>
     <separator/>
@@ -192,11 +192,11 @@ Viewing action with title '_Select', stock id ''gtk-find'', accelerator ''<contr
 Viewing radio button for switch '', options Discard/Refine/Extend'. Default value 0.
 Viewing action with title 'Filter', stock id ''gtk-find'', accelerator ''<control>f''
 
-Changing GUI status to: 'TextTest started at 31Mar16:46:19.'
+Changing GUI status to: 'TextTest started at 16Apr15:28:08.'
 
 Changing GUI status to: 'Reading tests ...'
 
-Changing GUI status to: 'Reading tests completed at 31Mar16:46:20.'
+Changing GUI status to: 'Reading tests completed at 16Apr15:28:09.'
 
 Test Tree description...
 -> TargetApp (dip)
@@ -264,25 +264,26 @@ Description:
 Tabs showing : Test, Selection, Config
 
 'set file selection to' event created with arguments 'Definition Files'
-Setting sensitivity of action 'Create _File' to True
+Setting sensitivity of action 'Create/_Import' to True
 Setting sensitivity of action 'Remove...' to False
 
-'create file' event created with arguments ''
-Adding text 'Creating file in test directory for DIP test-suite npstIII'
+'create a new file or directory, possibly by copying it' event created with arguments ''
+Adding text 'Creating/importing files in test directory for DIP test-suite npstIII'
 Adding entry completion 'environment' ...
 ---------- Dialog 'New File' ----------
 Default action is labelled 'gtk-ok'
-Viewing entry for option 'Type of definition file to create' (set to 'environment') (drop-down list containing ['environment'])
+Viewing entry for option 'Type of file/directory to create' (set to 'environment') (drop-down list containing ['environment'])
 Viewing entry for option 'Version identifier to use'
+Viewing filechooser for option 'Source to copy from (leave unchanged to use file from parent suite)' (choosing from directories ['/carm/proj/texttest-tmp/geoff/texttest.16Apr152758.3406/texttest/GUI/StaticGUI/Miscellaneous/CreateFiles/TargetApp'])
 ---------------------------------------
 
-'press ok' event created with arguments ''
+'press create' event created with arguments ''
 Creating new empty file...
-Viewing file /carm/proj/texttest-tmp/geoff/texttest.31Mar164539.26600/texttest/GUI/StaticGUI/Miscellaneous/CreateFiles/TargetApp/npstIII/environment.dip using 'emacs', refresh set to False
+Viewing file /carm/proj/texttest-tmp/geoff/texttest.16Apr152758.3406/texttest/GUI/StaticGUI/Miscellaneous/CreateFiles/TargetApp/npstIII/environment.dip using 'emacs', refresh set to False
 
 Changing GUI status to: 'Started "emacs environment.dip" in background (from test npstIII).'
 Setting sensitivity of action 'Remove...' to True
-Setting sensitivity of action 'Create _File' to False
+Setting sensitivity of action 'Create/_Import' to False
 
 Setting file-view title to 'npstIII'
 Adding file environment.dip under heading 'Definition Files', coloured grey90
@@ -305,26 +306,27 @@ Setting sensitivity of action 'Move to first' to False
 Setting sensitivity of action 'Move up' to False
 
 'set file selection to' event created with arguments 'Definition Files'
-Setting sensitivity of action 'Create _File' to True
+Setting sensitivity of action 'Create/_Import' to True
 Setting sensitivity of action 'Remove...' to False
 
-'create file' event created with arguments ''
-Adding text 'Creating file in test directory for DIP test-suite Game47'
+'create a new file or directory, possibly by copying it' event created with arguments ''
+Adding text 'Creating/importing files in test directory for DIP test-suite Game47'
 ---------- Dialog 'New File' ----------
 Default action is labelled 'gtk-ok'
-Viewing entry for option 'Type of definition file to create' (set to 'environment') (drop-down list containing ['environment'])
+Viewing entry for option 'Type of file/directory to create' (set to 'environment') (drop-down list containing ['environment'])
 Viewing entry for option 'Version identifier to use'
+Viewing filechooser for option 'Source to copy from (leave unchanged to use file from parent suite)' (choosing from directories ['/carm/proj/texttest-tmp/geoff/texttest.16Apr152758.3406/texttest/GUI/StaticGUI/Miscellaneous/CreateFiles/TargetApp'])
 ---------------------------------------
 
 'enter version identifier to use =' event created with arguments 'ver'
 
-'press ok' event created with arguments ''
-Creating new file, copying /carm/proj/texttest-tmp/geoff/texttest.31Mar164539.26600/texttest/GUI/StaticGUI/Miscellaneous/CreateFiles/TargetApp/npstIII/environment.dip
-Viewing file /carm/proj/texttest-tmp/geoff/texttest.31Mar164539.26600/texttest/GUI/StaticGUI/Miscellaneous/CreateFiles/TargetApp/npstIII/Game47/environment.dip.ver using 'emacs', refresh set to False
+'press create' event created with arguments ''
+Creating new path, copying /carm/proj/texttest-tmp/geoff/texttest.16Apr152758.3406/texttest/GUI/StaticGUI/Miscellaneous/CreateFiles/TargetApp/npstIII/environment.dip
+Viewing file /carm/proj/texttest-tmp/geoff/texttest.16Apr152758.3406/texttest/GUI/StaticGUI/Miscellaneous/CreateFiles/TargetApp/npstIII/Game47/environment.dip.ver using 'emacs', refresh set to False
 
 Changing GUI status to: 'Started "emacs environment.dip.ver" in background (from test Game47).'
 Setting sensitivity of action 'Remove...' to True
-Setting sensitivity of action 'Create _File' to False
+Setting sensitivity of action 'Create/_Import' to False
 
 Setting file-view title to 'Game47'
 Adding file environment.dip.ver under heading 'Definition Files', coloured grey90
@@ -357,28 +359,29 @@ Setting sensitivity of action '_Run' to True
 Tabs showing : Test, Selection, Running, Config
 
 'set file selection to' event created with arguments 'Definition Files'
-Setting sensitivity of action 'Create _File' to True
+Setting sensitivity of action 'Create/_Import' to True
 Setting sensitivity of action 'Remove...' to False
 
-'create file' event created with arguments ''
-Adding text 'Creating file in test directory for DIP test-case S01'
+'create a new file or directory, possibly by copying it' event created with arguments ''
+Adding text 'Creating/importing files in test directory for DIP test-case S01'
 Adding entry completion 'options' ...
 Adding entry completion 'input' ...
 ---------- Dialog 'New File' ----------
 Default action is labelled 'gtk-ok'
-Viewing entry for option 'Type of definition file to create' (set to 'environment') (drop-down list containing ['environment', 'options', 'input'])
+Viewing entry for option 'Type of file/directory to create' (set to 'environment') (drop-down list containing ['environment', 'options', 'input'])
 Viewing entry for option 'Version identifier to use' (set to 'ver')
+Viewing filechooser for option 'Source to copy from (leave unchanged to use file from parent suite)' (choosing from directories ['/carm/proj/texttest-tmp/geoff/texttest.16Apr152758.3406/texttest/GUI/StaticGUI/Miscellaneous/CreateFiles/TargetApp'])
 ---------------------------------------
 
-'enter type of definition file to create =' event created with arguments 'options'
+'enter type of file/directory to create =' event created with arguments 'options'
 
-'press ok' event created with arguments ''
+'press create' event created with arguments ''
 Creating new empty file...
-Viewing file /carm/proj/texttest-tmp/geoff/texttest.31Mar164539.26600/texttest/GUI/StaticGUI/Miscellaneous/CreateFiles/TargetApp/npstIII/Game47/S01/options.dip.ver using 'emacs', refresh set to False
+Viewing file /carm/proj/texttest-tmp/geoff/texttest.16Apr152758.3406/texttest/GUI/StaticGUI/Miscellaneous/CreateFiles/TargetApp/npstIII/Game47/S01/options.dip.ver using 'emacs', refresh set to False
 
 Changing GUI status to: 'Started "emacs options.dip.ver" in background (from test S01).'
 Setting sensitivity of action 'Remove...' to True
-Setting sensitivity of action 'Create _File' to False
+Setting sensitivity of action 'Create/_Import' to False
 
 Setting file-view title to 'S01'
 Adding file output.dip under heading 'Standard Files', coloured grey90
@@ -388,24 +391,25 @@ Waiting for application event 'file editing operations to complete' to occur.
 Expected application event 'file editing operations to complete' occurred, proceeding.
 
 'set file selection to' event created with arguments 'Standard Files'
-Setting sensitivity of action 'Create _File' to True
+Setting sensitivity of action 'Create/_Import' to True
 Setting sensitivity of action 'Remove...' to False
 
-'create file' event created with arguments ''
-Adding text 'Creating file in test directory for DIP test-case S01'
+'create a new file or directory, possibly by copying it' event created with arguments ''
+Adding text 'Creating/importing files in test directory for DIP test-case S01'
 ---------- Dialog 'New File' ----------
 Default action is labelled 'gtk-ok'
-Viewing entry for option 'Type of definition file to create' (set to 'output') (drop-down list containing ['output'])
+Viewing entry for option 'Type of file/directory to create' (set to 'output') (drop-down list containing ['output'])
 Viewing entry for option 'Version identifier to use' (set to 'ver')
+Viewing filechooser for option 'Source to copy from (leave unchanged to use file from parent suite)' (choosing from directories ['/carm/proj/texttest-tmp/geoff/texttest.16Apr152758.3406/texttest/GUI/StaticGUI/Miscellaneous/CreateFiles/TargetApp'])
 ---------------------------------------
 
-'press ok' event created with arguments ''
-Creating new file, copying /carm/proj/texttest-tmp/geoff/texttest.31Mar164539.26600/texttest/GUI/StaticGUI/Miscellaneous/CreateFiles/TargetApp/npstIII/Game47/S01/output.dip
-Viewing file /carm/proj/texttest-tmp/geoff/texttest.31Mar164539.26600/texttest/GUI/StaticGUI/Miscellaneous/CreateFiles/TargetApp/npstIII/Game47/S01/output.dip.ver using 'emacs', refresh set to False
+'press create' event created with arguments ''
+Creating new path, copying /carm/proj/texttest-tmp/geoff/texttest.16Apr152758.3406/texttest/GUI/StaticGUI/Miscellaneous/CreateFiles/TargetApp/npstIII/Game47/S01/output.dip
+Viewing file /carm/proj/texttest-tmp/geoff/texttest.16Apr152758.3406/texttest/GUI/StaticGUI/Miscellaneous/CreateFiles/TargetApp/npstIII/Game47/S01/output.dip.ver using 'emacs', refresh set to False
 
 Changing GUI status to: 'Started "emacs output.dip.ver" in background (from test S01).'
 Setting sensitivity of action 'Remove...' to True
-Setting sensitivity of action 'Create _File' to False
+Setting sensitivity of action 'Create/_Import' to False
 
 Setting file-view title to 'S01'
 Adding file output.dip under heading 'Standard Files', coloured grey90
