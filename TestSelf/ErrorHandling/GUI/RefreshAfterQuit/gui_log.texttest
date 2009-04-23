@@ -3,9 +3,9 @@ Enabling entry completion, using matching 1
 Waiting for application event 'all tests to be read' to occur.
 Adding entry completion '<default>' ...
 Adding entry completion '1' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.16Apr153843.3555/texttest/TestSelf/ErrorHandling/GUI/RefreshAfterQuit/personaldir/log/log4py.conf' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.23Apr153254.2797/texttest/TestSelf/ErrorHandling/GUI/RefreshAfterQuit/personaldir/log/log4py.conf' ...
 Adding entry completion '/users/geoff/work/master/Testing/TextTest/log/log4py.conf' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.16Apr153843.3555/texttest/TestSelf/ErrorHandling/GUI/RefreshAfterQuit/personaldir/log' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.23Apr153254.2797/texttest/TestSelf/ErrorHandling/GUI/RefreshAfterQuit/personaldir/log' ...
 Top Window title is TextTest static GUI : management of tests for HELLO
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
@@ -192,11 +192,11 @@ Viewing action with title '_Select', stock id ''gtk-find'', accelerator ''<contr
 Viewing radio button for switch '', options Discard/Refine/Extend'. Default value 0.
 Viewing action with title 'Filter', stock id ''gtk-find'', accelerator ''<control>f''
 
-Changing GUI status to: 'TextTest started at 16Apr15:39:11.'
+Changing GUI status to: 'TextTest started at 23Apr15:32:56.'
 
 Changing GUI status to: 'Reading tests ...'
 
-Changing GUI status to: 'Reading tests completed at 16Apr15:39:11.'
+Changing GUI status to: 'Reading tests completed at 23Apr15:32:56.'
 
 Test Tree description...
 -> TargetApp (hello)
@@ -251,15 +251,15 @@ Description:
 
 Tabs showing : Test, Selection, Running, Config
 
-'select file' event created with arguments 'output.hello'
-Viewing file /carm/proj/texttest-tmp/geoff/texttest.16Apr153843.3555/texttest/TestSelf/ErrorHandling/GUI/RefreshAfterQuit/TargetApp/Test/output.hello using 'emacs', refresh set to False
-
-Changing GUI status to: 'Started "emacs output.hello" in background (from test Test).'
-
 'select file' event created with arguments 'errors.hello'
-Viewing file /carm/proj/texttest-tmp/geoff/texttest.16Apr153843.3555/texttest/TestSelf/ErrorHandling/GUI/RefreshAfterQuit/TargetApp/Test/errors.hello using 'emacs', refresh set to False
+Viewing file /carm/proj/texttest-tmp/geoff/texttest.23Apr153254.2797/texttest/TestSelf/ErrorHandling/GUI/RefreshAfterQuit/TargetApp/Test/errors.hello using 'emacs', refresh set to False
 
 Changing GUI status to: 'Started "emacs errors.hello" in background (from test Test).'
+
+'select file' event created with arguments 'output.hello'
+Viewing file /carm/proj/texttest-tmp/geoff/texttest.23Apr153254.2797/texttest/TestSelf/ErrorHandling/GUI/RefreshAfterQuit/TargetApp/Test/output.hello using 'emacs', refresh set to False
+
+Changing GUI status to: 'Started "emacs output.hello" in background (from test Test).'
 
 'set test selection to' event created with arguments 'TargetApp (hello)'
 
@@ -288,16 +288,25 @@ Setting sensitivity of action '_Run' to False
 Tabs showing : Test, Selection, Config
 
 'select file' event created with arguments 'testsuite.hello'
-Viewing file /carm/proj/texttest-tmp/geoff/texttest.16Apr153843.3555/texttest/TestSelf/ErrorHandling/GUI/RefreshAfterQuit/TargetApp/testsuite.hello using 'emacs', refresh set to True
+Viewing file /carm/proj/texttest-tmp/geoff/texttest.23Apr153254.2797/texttest/TestSelf/ErrorHandling/GUI/RefreshAfterQuit/TargetApp/testsuite.hello using 'emacs', refresh set to True
 
 Changing GUI status to: 'Started "emacs testsuite.hello" in background (from test TargetApp).'
 
-'quit' event created with arguments ''
+'refresh the whole test suite so that it reflects file changes' event created with arguments ''
 Adding entry completion 'output' ...
 
+Changing GUI status to: 'Refreshing the whole test suite...'
+
+Setting file-view title to 'TargetApp'
+Adding file testsuite.hello under heading 'Definition Files', coloured grey90
+
+Changing GUI status to: 'Refreshed the test suite from the files'
+
+'quit' event created with arguments ''
+
 Changing GUI status to: 'Terminating all external viewers ...'
-Killing 'emacs output.hello (from test Test)' interactive process
 Killing 'emacs errors.hello (from test Test)' interactive process
+Killing 'emacs output.hello (from test Test)' interactive process
 Killing 'emacs testsuite.hello (from test TargetApp)' interactive process
 
 Changing GUI status to: 'Removing all temporary files ...'
