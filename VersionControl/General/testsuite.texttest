@@ -35,6 +35,9 @@ MoveTest
 # Moving a whole suite has been known to interact badly with version control
 MoveSuite
 
+# It's fairly common to create a new suite and move existing suites to it. Would be nice if TextTest understood that it needed to add the parent suite for this to work. Mercurial does this automatically, but not the others.
+MoveToUnversionedSuite
+
 # Make sure copying a test works and doesn't copy control dirs
 CopyTest
 

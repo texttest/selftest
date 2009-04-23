@@ -1,18 +1,22 @@
-<-CMD:hg mv /carm/proj/texttest-tmp/geoff/texttest.03Apr132431.29295/texttest.hg/VersionControl/General/MoveTest/TargetApp/Test1 /nfs/vm/texttest-tmp/geoff/texttest.03Apr132431.29295/texttest.hg/VersionControl/General/MoveTest/TargetApp/Suite/Test1
+<-CMD:hg stat /carm/proj/texttest-tmp/geoff/texttest.23Apr135207.1801/texttest.hg/VersionControl/General/MoveTest/TargetApp/Test1/errors.hello
+->OUT:M TargetApp/Test1/errors.hello
+<-CMD:hg stat /carm/proj/texttest-tmp/geoff/texttest.23Apr135207.1801/texttest.hg/VersionControl/General/MoveTest/TargetApp/Suite/Subsuite/Test3/errors.hello
+<-CMD:hg mv /carm/proj/texttest-tmp/geoff/texttest.23Apr135207.1801/texttest.hg/VersionControl/General/MoveTest/TargetApp/Test1 /nfs/vm/texttest-tmp/geoff/texttest.23Apr135207.1801/texttest.hg/VersionControl/General/MoveTest/TargetApp/Suite/Test1
 ->FIL:Test1
 ->FIL:Test1.edit_2
 ->OUT:moving TargetApp/Test1/errors.hello to TargetApp/Suite/Test1/errors.hello
 moving TargetApp/Test1/output.hello to TargetApp/Suite/Test1/output.hello
-<-CMD:hg mv /carm/proj/texttest-tmp/geoff/texttest.03Apr132431.29295/texttest.hg/VersionControl/General/MoveTest/TargetApp/Suite/Subsuite/Test4 /nfs/vm/texttest-tmp/geoff/texttest.03Apr132431.29295/texttest.hg/VersionControl/General/MoveTest/TargetApp/Suite/Test4
-->ERR:abort: no files to copy
-->EXC:255
-<-CMD:hg status /carm/proj/texttest-tmp/geoff/texttest.03Apr132431.29295/texttest.hg/VersionControl/General/MoveTest/TargetApp/Suite/Test4/errors.hello
+<-CMD:hg stat /carm/proj/texttest-tmp/geoff/texttest.23Apr135207.1801/texttest.hg/VersionControl/General/MoveTest/TargetApp/Suite/Subsuite/Test4/errors.hello
+->OUT:? TargetApp/Suite/Subsuite/Test4/errors.hello
+<-CMD:hg stat /carm/proj/texttest-tmp/geoff/texttest.23Apr135207.1801/texttest.hg/VersionControl/General/MoveTest/TargetApp/Suite/Subsuite/Test4/output.hello
+->OUT:? TargetApp/Suite/Subsuite/Test4/output.hello
+<-CMD:hg status /carm/proj/texttest-tmp/geoff/texttest.23Apr135207.1801/texttest.hg/VersionControl/General/MoveTest/TargetApp/Suite/Test4/errors.hello
 ->OUT:? TargetApp/Suite/Test4/errors.hello
-<-CMD:hg status /carm/proj/texttest-tmp/geoff/texttest.03Apr132431.29295/texttest.hg/VersionControl/General/MoveTest/TargetApp/Suite/Test4/output.hello
+<-CMD:hg status /carm/proj/texttest-tmp/geoff/texttest.23Apr135207.1801/texttest.hg/VersionControl/General/MoveTest/TargetApp/Suite/Test4/output.hello
 ->OUT:? TargetApp/Suite/Test4/output.hello
-<-CMD:hg status /carm/proj/texttest-tmp/geoff/texttest.03Apr132431.29295/texttest.hg/VersionControl/General/MoveTest/TargetApp/Suite/Test1/errors.hello
+<-CMD:hg status /carm/proj/texttest-tmp/geoff/texttest.23Apr135207.1801/texttest.hg/VersionControl/General/MoveTest/TargetApp/Suite/Test1/errors.hello
 ->OUT:A TargetApp/Suite/Test1/errors.hello
-<-CMD:hg status /carm/proj/texttest-tmp/geoff/texttest.03Apr132431.29295/texttest.hg/VersionControl/General/MoveTest/TargetApp/Suite/Test1/output.hello
+<-CMD:hg status /carm/proj/texttest-tmp/geoff/texttest.23Apr135207.1801/texttest.hg/VersionControl/General/MoveTest/TargetApp/Suite/Test1/output.hello
 ->OUT:A TargetApp/Suite/Test1/output.hello
-<-CMD:hg status /carm/proj/texttest-tmp/geoff/texttest.03Apr132431.29295/texttest.hg/VersionControl/General/MoveTest/TargetApp/Suite/Test1/output.hello.version
+<-CMD:hg status /carm/proj/texttest-tmp/geoff/texttest.23Apr135207.1801/texttest.hg/VersionControl/General/MoveTest/TargetApp/Suite/Test1/output.hello.version
 ->OUT:? TargetApp/Suite/Test1/output.hello.version

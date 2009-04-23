@@ -1,20 +1,27 @@
-<-CMD:bzr mv /carm/proj/texttest-tmp/geoff/texttest.bzr.06Mar163445.28742/texttest.bzr/VersionControl/General/MoveTest/TargetApp/Test1 /carm/proj/texttest-tmp/geoff/texttest.bzr.06Mar163445.28742/texttest.bzr/VersionControl/General/MoveTest/TargetApp/Suite/Test1
+<-CMD:bzr stat /carm/proj/texttest-tmp/geoff/texttest.23Apr135207.1801/texttest.bzr/VersionControl/General/MoveTest/TargetApp/Test1/errors.hello
+->OUT:modified:
+  TargetApp/Test1/errors.hello
+<-CMD:bzr stat /carm/proj/texttest-tmp/geoff/texttest.23Apr135207.1801/texttest.bzr/VersionControl/General/MoveTest/TargetApp/Suite/Subsuite/Test3/errors.hello
+<-CMD:bzr mv /carm/proj/texttest-tmp/geoff/texttest.23Apr135207.1801/texttest.bzr/VersionControl/General/MoveTest/TargetApp/Test1 /carm/proj/texttest-tmp/geoff/texttest.23Apr135207.1801/texttest.bzr/VersionControl/General/MoveTest/TargetApp/Suite/Test1
 ->FIL:Test1
 ->FIL:Test1.edit_2
 ->OUT:TargetApp/Test1 => TargetApp/Suite/Test1
-<-CMD:bzr mv /carm/proj/texttest-tmp/geoff/texttest.bzr.06Mar163445.28742/texttest.bzr/VersionControl/General/MoveTest/TargetApp/Suite/Subsuite/Test4 /carm/proj/texttest-tmp/geoff/texttest.bzr.06Mar163445.28742/texttest.bzr/VersionControl/General/MoveTest/TargetApp/Suite/Test4
-->ERR:bzr: ERROR: Could not rename Test4 => Test4: TargetApp/Suite/Subsuite/Test4 is not versioned.
-->EXC:3
-<-CMD:bzr status /carm/proj/texttest-tmp/geoff/texttest.bzr.06Mar163445.28742/texttest.bzr/VersionControl/General/MoveTest/TargetApp/Suite/Test4/errors.hello
+<-CMD:bzr stat /carm/proj/texttest-tmp/geoff/texttest.23Apr135207.1801/texttest.bzr/VersionControl/General/MoveTest/TargetApp/Suite/Subsuite/Test4/errors.hello
+->OUT:unknown:
+  TargetApp/Suite/Subsuite/Test4/errors.hello
+<-CMD:bzr stat /carm/proj/texttest-tmp/geoff/texttest.23Apr135207.1801/texttest.bzr/VersionControl/General/MoveTest/TargetApp/Suite/Subsuite/Test4/output.hello
+->OUT:unknown:
+  TargetApp/Suite/Subsuite/Test4/output.hello
+<-CMD:bzr status /carm/proj/texttest-tmp/geoff/texttest.23Apr135207.1801/texttest.bzr/VersionControl/General/MoveTest/TargetApp/Suite/Test4/errors.hello
 ->OUT:unknown:
   TargetApp/Suite/Test4/errors.hello
-<-CMD:bzr status /carm/proj/texttest-tmp/geoff/texttest.bzr.06Mar163445.28742/texttest.bzr/VersionControl/General/MoveTest/TargetApp/Suite/Test4/output.hello
+<-CMD:bzr status /carm/proj/texttest-tmp/geoff/texttest.23Apr135207.1801/texttest.bzr/VersionControl/General/MoveTest/TargetApp/Suite/Test4/output.hello
 ->OUT:unknown:
   TargetApp/Suite/Test4/output.hello
-<-CMD:bzr status /carm/proj/texttest-tmp/geoff/texttest.bzr.06Mar163445.28742/texttest.bzr/VersionControl/General/MoveTest/TargetApp/Suite/Test1/errors.hello
+<-CMD:bzr status /carm/proj/texttest-tmp/geoff/texttest.23Apr135207.1801/texttest.bzr/VersionControl/General/MoveTest/TargetApp/Suite/Test1/errors.hello
 ->OUT:modified:
   TargetApp/Suite/Test1/errors.hello
-<-CMD:bzr status /carm/proj/texttest-tmp/geoff/texttest.bzr.06Mar163445.28742/texttest.bzr/VersionControl/General/MoveTest/TargetApp/Suite/Test1/output.hello
-<-CMD:bzr status /carm/proj/texttest-tmp/geoff/texttest.bzr.06Mar163445.28742/texttest.bzr/VersionControl/General/MoveTest/TargetApp/Suite/Test1/output.hello.version
+<-CMD:bzr status /carm/proj/texttest-tmp/geoff/texttest.23Apr135207.1801/texttest.bzr/VersionControl/General/MoveTest/TargetApp/Suite/Test1/output.hello
+<-CMD:bzr status /carm/proj/texttest-tmp/geoff/texttest.23Apr135207.1801/texttest.bzr/VersionControl/General/MoveTest/TargetApp/Suite/Test1/output.hello.version
 ->OUT:unknown:
   TargetApp/Suite/Test1/output.hello.version
