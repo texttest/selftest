@@ -69,3 +69,17 @@ search_file:gui_log
 full_description:Self-tests seem to very occasionally get X Window problems. Doesn't seem very easy to fix as it only happens one time in a million.
 brief_description:X-window error
 internal_error:1
+
+[Reported by geoff at 23Apr22:53:31]
+search_string:Cannot replay FileChoosers with GTK 2.14
+search_file:errors
+full_description:FileChooser tests fail with GTK 2.14 because the PyUseCase replayer relies on idle handlers, which are broken. See http://bugzilla.gnome.org/show_bug.cgi?id=579449
+brief_description:FileChoosers + GTK 2.14
+internal_error:1
+
+[Reported by geoff at 23Apr22:53:33]
+search_string:Cannot replay FileChoosers with GTK 2.14
+search_file:gui_log
+full_description:FileChooser tests fail with GTK 2.14 because the PyUseCase replayer relies on idle handlers, which are broken. See http://bugzilla.gnome.org/show_bug.cgi?id=579449
+brief_description:FileChoosers + GTK 2.14
+internal_error:1
