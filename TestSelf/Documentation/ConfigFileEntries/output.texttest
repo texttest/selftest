@@ -1,4 +1,4 @@
-TextTest will write diagnostics in /home/geoff/.texttest/tmp/texttest.08Apr200007.7382/texttest/TestSelf/Documentation/ConfigFileEntries based on file at /home/geoff/.texttest/tmp/texttest.08Apr200007.7382/texttest/TestSelf/Documentation/ConfigFileEntries/logging
+TextTest will write diagnostics in /carm/proj/texttest-tmp/geoff/texttest.24Apr121443.11253/texttest/TestSelf/Documentation/ConfigFileEntries based on file at /carm/proj/texttest-tmp/geoff/texttest.24Apr121443.11253/texttest/TestSelf/Documentation/ConfigFileEntries/logging
 Using Application APPIDENTIFIER
 auto_sort_test_suites|0|Automatically sort test suites in alphabetical order. 1 means sort in ascending order, -1 means sort in descending order.
 base_version|[]|Versions to inherit settings from
@@ -30,6 +30,7 @@ create_catalogues|false|Do we create a listing of files created/removed by tests
 default_checkout||Default checkout, relative to the checkout location
 default_filter_file|[]|Filter file to use by default, generally only useful for versions
 default_interface|static_gui|Which interface to start if none of -con, -g and -gx are provided
+default_machine|localhost|Default machine to run tests on
 definition_file_stems|{'default': [], 'regenerate': ['usecase', 'traffic'], 'builtin': ['environment', 'properties', 'testsuite', 'options', 'input', 'knownbugs']}|files to be shown as definition files by the static GUI
 diff_program|{'default': 'tkdiff'}|External program to use for graphical file comparison
 discard_file|[]|List of generated result files which should not be compared
@@ -71,6 +72,7 @@ performance_unit|{'default': 'seconds', 'memory': 'MB'}|Name to be used to ident
 performance_use_normalised_%|{'default': 'true'}|Alias. See entry for 'use_normalised_percentage_change'
 performance_variation_%|{'default': 10.0}|How much variation in performance is allowed
 performance_variation_serious_%|{'default': 0.0}|Additional cutoff to performance_variation_% for extra highlighting
+remote_shell_program|rsh|Program to use for running commands remotely
 run_dependent_text|{'default': []}|Mapping of patterns to remove from result files
 slow_motion_replay_speed|3|How long in seconds to wait between each GUI action
 smtp_server|localhost|Server to use for sending mail in batch mode
