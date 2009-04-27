@@ -1,14 +1,5 @@
-# Just run a test using rsh
-Basic
+# Tests where we assume the same filesystem on the remote machine
+SharedFilesystem
 
-# What happens if we provide a machine that doesn't exist?
-BadMachine
-
-# Set the machine to run things on in the config file
-ChangeDefaultMachine
-
-# Need to make sure we don't hang if ssh wants to ask questions...
-UseSSH
-
-# Make sure we can make use of secure copying in order to run tests on machines where we don't share a file system
-FilesystemNotShared
+# Tests for remote synchronisation etc
+DifferentFilesystems
