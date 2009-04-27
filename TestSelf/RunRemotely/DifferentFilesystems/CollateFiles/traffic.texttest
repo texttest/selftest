@@ -1,0 +1,8 @@
+<-CMD:ssh -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 testnet-s16 mkdir -p ~/.texttest/tmp/console.27Apr180916.2544/system_under_test
+<-CMD:scp -Cr -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 /carm/proj/texttest-tmp/geoff/texttest.27Apr180915.2541/texttest/TestSelf/RunRemotely/DifferentFilesystems/CollateFiles/TargetApp/hello.py testnet-s16:~/.texttest/tmp/console.27Apr180916.2544/system_under_test/hello.py
+<-CMD:ssh -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 testnet-s16 mkdir -p ~/.texttest/tmp/console.27Apr180916.2544/Test
+<-CMD:cd /nfs/vm/texttest-tmp/geoff/texttest.27Apr180915.2541/texttest/TestSelf/RunRemotely/DifferentFilesystems/CollateFiles/texttesttmp/console.27Apr180916.2544/hello/Test; ssh -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 testnet-s16 cd ~/.texttest/tmp/console.27Apr180916.2544/Test ; python ~/.texttest/tmp/console.27Apr180916.2544/system_under_test/hello.py
+->OUT:Hello World!
+<-CMD:scp -Cr -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 "testnet-s16:~/.texttest/tmp/console.27Apr180916.2544/Test/*" /carm/proj/texttest-tmp/geoff/texttest.27Apr180915.2541/texttest/TestSelf/RunRemotely/DifferentFilesystems/CollateFiles/texttesttmp/console.27Apr180916.2544/hello/Test
+->FIL:Test
+<-CMD:ssh -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 testnet-s16 rm -rf ~/.texttest/tmp/console.27Apr180916.2544

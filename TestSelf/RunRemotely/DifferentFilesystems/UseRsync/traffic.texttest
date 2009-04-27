@@ -1,6 +1,7 @@
-<-CMD:ssh -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 testnet-s16 mkdir -p ~/.texttest/tmp/console.27Apr163756.745/system_under_test
-<-CMD:rsync -e /usr/bin/ssh -az /carm/proj/texttest-tmp/geoff/texttest.27Apr163755.742/texttest/TestSelf/RunRemotely/DifferentFilesystems/UseRsync/TargetApp/hello.py testnet-s16:~/.texttest/tmp/console.27Apr163756.745/system_under_test/hello.py
-<-CMD:ssh -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 testnet-s16 mkdir -p ~/.texttest/tmp/console.27Apr163756.745/Test
-<-CMD:cd /nfs/vm/texttest-tmp/geoff/texttest.27Apr163755.742/texttest/TestSelf/RunRemotely/DifferentFilesystems/UseRsync/texttesttmp/console.27Apr163756.745/hello/Test; ssh -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 testnet-s16 cd ~/.texttest/tmp/console.27Apr163756.745/Test ; python ~/.texttest/tmp/console.27Apr163756.745/system_under_test/hello.py
+<-CMD:ssh -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 testnet-s16 mkdir -p ~/.texttest/tmp/console.27Apr181210.15438/system_under_test
+<-CMD:rsync -e /usr/bin/ssh -az /carm/proj/texttest-tmp/geoff/texttest.27Apr181202.2666/texttest/TestSelf/RunRemotely/DifferentFilesystems/UseRsync/TargetApp/hello.py testnet-s16:~/.texttest/tmp/console.27Apr181210.15438/system_under_test/hello.py
+<-CMD:ssh -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 testnet-s16 mkdir -p ~/.texttest/tmp/console.27Apr181210.15438/Test
+<-CMD:cd /nfs/vm/texttest-tmp/geoff/texttest.27Apr181202.2666/texttest/TestSelf/RunRemotely/DifferentFilesystems/UseRsync/texttesttmp/console.27Apr181210.15438/hello/Test; ssh -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 testnet-s16 cd ~/.texttest/tmp/console.27Apr181210.15438/Test ; python ~/.texttest/tmp/console.27Apr181210.15438/system_under_test/hello.py
 ->OUT:Hello World!
-<-CMD:ssh -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 testnet-s16 rm -rf ~/.texttest/tmp/console.27Apr163756.745
+<-CMD:rsync -e /usr/bin/ssh -az "testnet-s16:~/.texttest/tmp/console.27Apr181210.15438/Test/*" /carm/proj/texttest-tmp/geoff/texttest.27Apr181202.2666/texttest/TestSelf/RunRemotely/DifferentFilesystems/UseRsync/texttesttmp/console.27Apr181210.15438/hello/Test
+<-CMD:ssh -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 testnet-s16 rm -rf ~/.texttest/tmp/console.27Apr181210.15438
