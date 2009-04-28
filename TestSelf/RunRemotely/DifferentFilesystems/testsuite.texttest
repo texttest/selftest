@@ -4,6 +4,9 @@ CopyExecutable
 # Make sure we can take the whole checkout over if we need to
 CopyCheckout
 
+# If the checkout already exists remotely, don't fall over!
+RemoteCheckout
+
 # Make sure it works with Rsync also
 UseRsync
 
