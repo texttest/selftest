@@ -1,0 +1,9 @@
+<-CMD:ssh -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 testnet-s16 mkdir -p ~/.texttest/tmp/console.28Apr094016.8790/system_under_test
+<-CMD:scp -Cr -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 /carm/proj/texttest-tmp/geoff/texttest.28Apr094014.8787/texttest/TestSelf/RunRemotely/DifferentFilesystems/CopyCheckout/TargetApp/checkout testnet-s16:~/.texttest/tmp/console.28Apr094016.8790/system_under_test/checkout
+<-CMD:ssh -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 testnet-s16 mkdir -p ~/.texttest/tmp/console.28Apr094016.8790/Test
+<-CMD:cd /nfs/vm/texttest-tmp/geoff/texttest.28Apr094014.8787/texttest/TestSelf/RunRemotely/DifferentFilesystems/CopyCheckout/texttesttmp/console.28Apr094016.8790/hello/Test; ssh -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 testnet-s16 cd ~/.texttest/tmp/console.28Apr094016.8790/Test ; python ~/.texttest/tmp/console.28Apr094016.8790/system_under_test/checkout/hello.py
+->OUT:Hello test data!
+<-CMD:scp -Cr -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 "testnet-s16:~/.texttest/tmp/console.28Apr094016.8790/Test/*" /carm/proj/texttest-tmp/geoff/texttest.28Apr094014.8787/texttest/TestSelf/RunRemotely/DifferentFilesystems/CopyCheckout/texttesttmp/console.28Apr094016.8790/hello/Test
+->ERR:scp: No match.
+->EXC:1
+<-CMD:ssh -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 testnet-s16 rm -rf ~/.texttest/tmp/console.28Apr094016.8790

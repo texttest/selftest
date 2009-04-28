@@ -1,8 +1,8 @@
-# Make sure we check remotely as well as locally in case file exists
-NoExecutable
-
 # Copy the executable remotely so we can run it
 CopyExecutable
+
+# Make sure we can take the whole checkout over if we need to
+CopyCheckout
 
 # Make sure it works with Rsync also
 UseRsync
@@ -12,6 +12,12 @@ ReadTestData
 
 # Make sure we can get hold of files written remotely by the SUT
 CollateFiles
+
+# Make sure we check remotely as well as locally in case file exists
+NoExecutable
+
+# Make sure we check remotely as well as locally in case checkout exists
+BadCheckout
 
 # Make sure we exit gracefully if we don't have access to the machine
 BadMachine
