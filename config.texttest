@@ -84,6 +84,7 @@ errors:root directory does not exist{WORD -1}
 errors:TextTest.*requires at least{WORD 2}{REPLACE <version>}
 errors:Could not start TextTest{WORD 5}{REPLACE <version>}
 errors:Rejected.*special_version_for_filtering{WORD -1}
+errors:fakeuser at .*fakeuser{REPLACE fakeuser at <expanded home dir>}
 # Don't show the entire path!
 dynamic_gui_log:^PATH: {WORD 2+}{REPLACE <path>}
 dynamic_gui_log:{INTERNAL writedir}{REPLACE <test write dir>}
