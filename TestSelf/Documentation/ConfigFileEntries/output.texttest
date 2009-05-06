@@ -1,4 +1,4 @@
-TextTest will write diagnostics in /carm/proj/texttest-tmp/geoff/texttest.27Apr181500.2791/texttest/TestSelf/Documentation/ConfigFileEntries based on file at /carm/proj/texttest-tmp/geoff/texttest.27Apr181500.2791/texttest/TestSelf/Documentation/ConfigFileEntries/logging
+TextTest will write diagnostics in /home/geoff/.texttest/tmp/texttest.06May221325.8739/texttest/TestSelf/Documentation/ConfigFileEntries based on file at /home/geoff/.texttest/tmp/texttest.06May221325.8739/texttest/TestSelf/Documentation/ConfigFileEntries/logging
 Using Application APPIDENTIFIER
 auto_sort_test_suites|0|Automatically sort test suites in alphabetical order. 1 means sort in ascending order, -1 means sort in descending order.
 base_version|[]|Versions to inherit settings from
@@ -24,7 +24,8 @@ collate_script|{'default': [], 'stacktrace': ['interpretcore.py']}|Mapping of re
 collect_traffic|{'default': [], 'asynchronous': []}|List of command-line programs to intercept
 collect_traffic_environment|{'default': []}|Mapping of collected programs to environment variables they care about
 config_module|default|Configuration module to use
-copy_test_path|[]|Paths to be copied to the temporary directory when running tests
+copy_test_path|[]|Paths to be copied to the sandbox when running tests
+copy_test_path_merge|[]|Directories to be copied to the sandbox, and merged together
 cputime_include_system_time|0|Include system time when measuring CPU time?
 create_catalogues|false|Do we create a listing of files created/removed by tests
 default_checkout||Default checkout, relative to the checkout location
@@ -61,7 +62,7 @@ lines_of_text_difference|30|How many lines to present in textual previews of fil
 link_test_path|[]|Paths to be linked from the temp. directory when running tests
 log_file|output|Result file to search, by default
 max_width_text_difference|500|How wide lines can be in textual previews of file diffs
-partial_copy_test_path|[]|Paths to be part-copied, part-linked to the temporary directory
+partial_copy_test_path|[]|Paths to be part-copied, part-linked to the sandbox
 performance_descriptor_decrease|{'default': '', 'cputime': 'faster, faster, ran faster', 'memory': 'smaller, memory-, used less memory'}|Descriptions to be used when the numbers decrease in a performance file
 performance_descriptor_increase|{'default': '', 'cputime': 'slower, slower, ran slower', 'memory': 'larger, memory+, used more memory'}|Descriptions to be used when the numbers increase in a performance file
 performance_logfile|{'default': []}|Which result file to collect performance data from
