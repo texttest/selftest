@@ -28,8 +28,11 @@ MissingTextFileMissing
 # Check we don't report bugs if there are other diffs
 MultipleDiffs
 
-# When the internal_error flag is set we should still report even when other diffs are present
+# When the appropriate flag is set we should still report even when other diffs are present
 MultipleDiffsIgnore
+
+# When the internal_error flag is set we should still report even when other diffs are present. This is now here to check back-compatibility as there is a separate flag for this now.
+MultipleDiffsIgnoreError
 
 # Make sure we ignore performance differences when deciding whether to trigger a bug
 MultipleDiffsPerformance
