@@ -4,9 +4,9 @@ Enabling entry completion, using matching 1
 Adding entry completion '<default>' ...
 Adding entry completion 'localhost' ...
 Adding entry completion '1' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.18May105304.21690/texttest/GUI/StaticGUI/Miscellaneous/CreateFiles/personaldir/log/log4py.conf' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.18May181204.29561/texttest/GUI/StaticGUI/Miscellaneous/CreateFiles/personaldir/log/log4py.conf' ...
 Adding entry completion '/users/geoff/work/master/Testing/TextTest/log/log4py.conf' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.18May105304.21690/texttest/GUI/StaticGUI/Miscellaneous/CreateFiles/personaldir/log' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.18May181204.29561/texttest/GUI/StaticGUI/Miscellaneous/CreateFiles/personaldir/log' ...
 Top Window title is TextTest static GUI : management of tests for DIP
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
@@ -176,28 +176,29 @@ Pane separator positioned 50% from the left edge
 Tabs showing : Selection, Config
 
 Viewing notebook page for 'Selection'
-Viewing entry for option 'Tests for version' (drop-down list containing ['', '<default>'])
-Viewing entry for option 'Test names containing'
-Viewing entry for option 'Suite names containing'
-Viewing entry for option 'App names containing'
-Viewing entry for option 'Tests listed in file'
-Viewing entry for option 'Descriptions containing'
-Viewing entry for option 'Test-files containing'
-Viewing entry for option 'Test-file to search' (drop-down list containing [''])
-Viewing entry for option 'Execution time'
-...........
-Viewing check button for switch 'Select in collapsed suites'
-Viewing radio button for switch '', options Discard/Refine/Extend/Exclude'. Default value 0.
-Viewing action with title '_Select', stock id ''gtk-find'', accelerator ''<control>s''
-...........
-Viewing radio button for switch '', options Discard/Refine/Extend'. Default value 0.
-Viewing action with title 'Filter', stock id ''gtk-find'', accelerator ''<control>f''
+Viewing table with 9 rows and 2 columns.
+'Tests for version  ' | Text entry (drop-down list containing ['', '<default>'])
+'Test names containing  ' | Text entry
+'Suite names containing  ' | Text entry
+'App names containing  ' | Text entry
+'Tests listed in file  ' | Text entry , Button '...'
+'Descriptions containing  ' | Text entry
+'Test-files containing  ' | Text entry
+'Test-file to search  ' | Text entry (drop-down list containing [''])
+'Execution time  ' | Text entry
+.....Selection......
+Check button 'Select in collapsed suites'
+Radio button 'Discard' (checked) , Radio button 'Refine' , Radio button 'Extend' , Radio button 'Exclude'
+Button '_Select', stock image 'gtk-find'
+.....Filtering......
+Radio button 'Discard' (checked) , Radio button 'Refine' , Radio button 'Extend'
+Button 'Filter', stock image 'gtk-find'
 
-Changing GUI status to: 'TextTest started at 18May10:53:09.'
+Changing GUI status to: 'TextTest started at 18May18:13:02.'
 
 Changing GUI status to: 'Reading tests ...'
 
-Changing GUI status to: 'Reading tests completed at 18May10:53:09.'
+Changing GUI status to: 'Reading tests completed at 18May18:13:03.'
 
 Test Tree description...
 -> TargetApp (dip)
@@ -219,22 +220,23 @@ Test Tree description...
 Test column header set to 'Tests: 0/11 selected'
 
 Viewing notebook page for 'Selection'
-Viewing entry for option 'Tests for version' (drop-down list containing ['', '<default>'])
-Viewing entry for option 'Test names containing'
-Viewing entry for option 'Suite names containing'
-Viewing entry for option 'App names containing'
-Viewing entry for option 'Tests listed in file'
-Viewing entry for option 'Descriptions containing'
-Viewing entry for option 'Test-files containing'
-Viewing entry for option 'Test-file to search' (set to 'output') (drop-down list containing ['output'])
-Viewing entry for option 'Execution time'
-...........
-Viewing check button for switch 'Select in collapsed suites'
-Viewing radio button for switch '', options Discard/Refine/Extend/Exclude'. Default value 0.
-Viewing action with title '_Select', stock id ''gtk-find'', accelerator ''<control>s''
-...........
-Viewing radio button for switch '', options Discard/Refine/Extend'. Default value 0.
-Viewing action with title 'Filter', stock id ''gtk-find'', accelerator ''<control>f''
+Viewing table with 9 rows and 2 columns.
+'Tests for version  ' | Text entry (drop-down list containing ['', '<default>'])
+'Test names containing  ' | Text entry
+'Suite names containing  ' | Text entry
+'App names containing  ' | Text entry
+'Tests listed in file  ' | Text entry , Button '...'
+'Descriptions containing  ' | Text entry
+'Test-files containing  ' | Text entry
+'Test-file to search  ' | Text entry (set to 'output') (drop-down list containing ['output'])
+'Execution time  ' | Text entry
+.....Selection......
+Check button 'Select in collapsed suites'
+Radio button 'Discard' (checked) , Radio button 'Refine' , Radio button 'Extend' , Radio button 'Exclude'
+Button '_Select', stock image 'gtk-find'
+.....Filtering......
+Radio button 'Discard' (checked) , Radio button 'Refine' , Radio button 'Extend'
+Button 'Filter', stock image 'gtk-find'
 Expected application event 'all tests to be read' occurred, proceeding.
 
 'set test selection to' event created with arguments 'npstIII'
@@ -278,15 +280,25 @@ Adding text '<i>(Test is DIP test-suite npstIII)</i>'
 Adding entry completion 'environment' ...
 ---------- Dialog 'Create/Import Files and Directories' ----------
 Default action is labelled 'gtk-ok'
-Viewing entry for option 'Type of file/directory to create' (set to 'environment') (drop-down list containing ['environment'])
-Viewing entry for option 'Version identifier to use'
-Viewing filechooser for option 'Source to copy from' (choosing from directories ['/carm/proj/texttest-tmp/geoff/texttest.18May105304.21690/texttest/GUI/StaticGUI/Miscellaneous/CreateFiles/TargetApp'])
-Viewing radio button for switch '', options Import file/directory from source/Create a new file/Create a new directory'. Default value 1.
+'Create or import files in the test directory
+'
+'(Test is DIP test-suite npstIII)
+'
+'Type of file/directory to create:'
+Text entry (set to 'environment') (drop-down list containing ['environment'])
+'Version identifier to use:'
+Text entry
+...........
+Radio button 'Import file/directory from source'
+Radio button 'Create a new file' (checked)
+Radio button 'Create a new directory'
+.....Source to copy from:......
+Filechooser (choosing from directories ['/carm/proj/texttest-tmp/geoff/texttest.18May181204.29561/texttest/GUI/StaticGUI/Miscellaneous/CreateFiles/TargetApp'])
 ------------------------------------------------------------------
 
 'press create' event created with arguments ''
 Creating new empty file...
-Viewing file /carm/proj/texttest-tmp/geoff/texttest.18May105304.21690/texttest/GUI/StaticGUI/Miscellaneous/CreateFiles/TargetApp/npstIII/environment.dip using 'emacs', refresh set to False
+Viewing file /carm/proj/texttest-tmp/geoff/texttest.18May181204.29561/texttest/GUI/StaticGUI/Miscellaneous/CreateFiles/TargetApp/npstIII/environment.dip using 'emacs', refresh set to False
 
 Changing GUI status to: 'Started "emacs environment.dip" in background (from test npstIII).'
 Setting sensitivity of action 'Remove...' to True
@@ -321,10 +333,20 @@ Adding text '<b><u>Create or import files in the test directory</u></b>'
 Adding text '<i>(Test is DIP test-suite Game47)</i>'
 ---------- Dialog 'Create/Import Files and Directories' ----------
 Default action is labelled 'gtk-ok'
-Viewing entry for option 'Type of file/directory to create' (set to 'environment') (drop-down list containing ['environment'])
-Viewing entry for option 'Version identifier to use'
-Viewing filechooser for option 'Source to copy from' (choosing from directories ['/carm/proj/texttest-tmp/geoff/texttest.18May105304.21690/texttest/GUI/StaticGUI/Miscellaneous/CreateFiles/TargetApp'])
-Viewing radio button for switch '', options Import file/directory from source/Create a new file/Create a new directory'. Default value 1.
+'Create or import files in the test directory
+'
+'(Test is DIP test-suite Game47)
+'
+'Type of file/directory to create:'
+Text entry (set to 'environment') (drop-down list containing ['environment'])
+'Version identifier to use:'
+Text entry
+...........
+Radio button 'Import file/directory from source'
+Radio button 'Create a new file' (checked)
+Radio button 'Create a new directory'
+.....Source to copy from:......
+Filechooser (choosing from directories ['/carm/proj/texttest-tmp/geoff/texttest.18May181204.29561/texttest/GUI/StaticGUI/Miscellaneous/CreateFiles/TargetApp'])
 ------------------------------------------------------------------
 
 'enter version identifier to use =' event created with arguments 'ver'
@@ -332,8 +354,8 @@ Viewing radio button for switch '', options Import file/directory from source/Cr
 'choose import file/directory from source' event created with arguments ''
 
 'press create' event created with arguments ''
-Creating new path, copying /carm/proj/texttest-tmp/geoff/texttest.18May105304.21690/texttest/GUI/StaticGUI/Miscellaneous/CreateFiles/TargetApp/npstIII/environment.dip
-Viewing file /carm/proj/texttest-tmp/geoff/texttest.18May105304.21690/texttest/GUI/StaticGUI/Miscellaneous/CreateFiles/TargetApp/npstIII/Game47/environment.dip.ver using 'emacs', refresh set to False
+Creating new path, copying /carm/proj/texttest-tmp/geoff/texttest.18May181204.29561/texttest/GUI/StaticGUI/Miscellaneous/CreateFiles/TargetApp/npstIII/environment.dip
+Viewing file /carm/proj/texttest-tmp/geoff/texttest.18May181204.29561/texttest/GUI/StaticGUI/Miscellaneous/CreateFiles/TargetApp/npstIII/Game47/environment.dip.ver using 'emacs', refresh set to False
 
 Changing GUI status to: 'Started "emacs environment.dip.ver" in background (from test Game47).'
 Setting sensitivity of action 'Remove...' to True
@@ -374,17 +396,27 @@ Adding entry completion 'options' ...
 Adding entry completion 'input' ...
 ---------- Dialog 'Create/Import Files and Directories' ----------
 Default action is labelled 'gtk-ok'
-Viewing entry for option 'Type of file/directory to create' (set to 'environment') (drop-down list containing ['environment', 'options', 'input'])
-Viewing entry for option 'Version identifier to use' (set to 'ver')
-Viewing filechooser for option 'Source to copy from' (choosing from directories ['/carm/proj/texttest-tmp/geoff/texttest.18May105304.21690/texttest/GUI/StaticGUI/Miscellaneous/CreateFiles/TargetApp'])
-Viewing radio button for switch '', options Import file/directory from source/Create a new file/Create a new directory'. Default value 1.
+'Create or import files in the test directory
+'
+'(Test is DIP test-case S01)
+'
+'Type of file/directory to create:'
+Text entry (set to 'environment') (drop-down list containing ['environment', 'options', 'input'])
+'Version identifier to use:'
+Text entry (set to 'ver')
+...........
+Radio button 'Import file/directory from source'
+Radio button 'Create a new file' (checked)
+Radio button 'Create a new directory'
+.....Source to copy from:......
+Filechooser (choosing from directories ['/carm/proj/texttest-tmp/geoff/texttest.18May181204.29561/texttest/GUI/StaticGUI/Miscellaneous/CreateFiles/TargetApp'])
 ------------------------------------------------------------------
 
 'enter type of file/directory to create =' event created with arguments 'options'
 
 'press create' event created with arguments ''
 Creating new empty file...
-Viewing file /carm/proj/texttest-tmp/geoff/texttest.18May105304.21690/texttest/GUI/StaticGUI/Miscellaneous/CreateFiles/TargetApp/npstIII/Game47/S01/options.dip.ver using 'emacs', refresh set to False
+Viewing file /carm/proj/texttest-tmp/geoff/texttest.18May181204.29561/texttest/GUI/StaticGUI/Miscellaneous/CreateFiles/TargetApp/npstIII/Game47/S01/options.dip.ver using 'emacs', refresh set to False
 
 Changing GUI status to: 'Started "emacs options.dip.ver" in background (from test S01).'
 Setting sensitivity of action 'Remove...' to True
@@ -406,17 +438,27 @@ Adding text '<b><u>Create or import files in the test directory</u></b>'
 Adding text '<i>(Test is DIP test-case S01)</i>'
 ---------- Dialog 'Create/Import Files and Directories' ----------
 Default action is labelled 'gtk-ok'
-Viewing entry for option 'Type of file/directory to create' (set to 'output') (drop-down list containing ['output'])
-Viewing entry for option 'Version identifier to use' (set to 'ver')
-Viewing filechooser for option 'Source to copy from' (choosing from directories ['/carm/proj/texttest-tmp/geoff/texttest.18May105304.21690/texttest/GUI/StaticGUI/Miscellaneous/CreateFiles/TargetApp'])
-Viewing radio button for switch '', options Import file/directory from source/Create a new file/Create a new directory'. Default value 1.
+'Create or import files in the test directory
+'
+'(Test is DIP test-case S01)
+'
+'Type of file/directory to create:'
+Text entry (set to 'output') (drop-down list containing ['output'])
+'Version identifier to use:'
+Text entry (set to 'ver')
+...........
+Radio button 'Import file/directory from source'
+Radio button 'Create a new file' (checked)
+Radio button 'Create a new directory'
+.....Source to copy from:......
+Filechooser (choosing from directories ['/carm/proj/texttest-tmp/geoff/texttest.18May181204.29561/texttest/GUI/StaticGUI/Miscellaneous/CreateFiles/TargetApp'])
 ------------------------------------------------------------------
 
 'choose import file/directory from source' event created with arguments ''
 
 'press create' event created with arguments ''
-Creating new path, copying /carm/proj/texttest-tmp/geoff/texttest.18May105304.21690/texttest/GUI/StaticGUI/Miscellaneous/CreateFiles/TargetApp/npstIII/Game47/S01/output.dip
-Viewing file /carm/proj/texttest-tmp/geoff/texttest.18May105304.21690/texttest/GUI/StaticGUI/Miscellaneous/CreateFiles/TargetApp/npstIII/Game47/S01/output.dip.ver using 'emacs', refresh set to False
+Creating new path, copying /carm/proj/texttest-tmp/geoff/texttest.18May181204.29561/texttest/GUI/StaticGUI/Miscellaneous/CreateFiles/TargetApp/npstIII/Game47/S01/output.dip
+Viewing file /carm/proj/texttest-tmp/geoff/texttest.18May181204.29561/texttest/GUI/StaticGUI/Miscellaneous/CreateFiles/TargetApp/npstIII/Game47/S01/output.dip.ver using 'emacs', refresh set to False
 
 Changing GUI status to: 'Started "emacs output.dip.ver" in background (from test S01).'
 Setting sensitivity of action 'Remove...' to True

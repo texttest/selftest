@@ -4,9 +4,9 @@ Enabling entry completion, using matching 1
 Adding entry completion '<default>' ...
 Adding entry completion 'localhost' ...
 Adding entry completion '1' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.15May173456.8629/texttest/TestSelf/TestData/GUI/OverwriteFileRootSuite/personaldir/log/log4py.conf' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.18May181204.29561/texttest/TestSelf/TestData/GUI/OverwriteFileRootSuite/personaldir/log/log4py.conf' ...
 Adding entry completion '/users/geoff/work/master/Testing/TextTest/log/log4py.conf' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.15May173456.8629/texttest/TestSelf/TestData/GUI/OverwriteFileRootSuite/personaldir/log' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.18May181204.29561/texttest/TestSelf/TestData/GUI/OverwriteFileRootSuite/personaldir/log' ...
 Top Window title is TextTest static GUI : management of tests for TDAT
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
@@ -176,28 +176,29 @@ Pane separator positioned 50% from the left edge
 Tabs showing : Selection, Config
 
 Viewing notebook page for 'Selection'
-Viewing entry for option 'Tests for version' (drop-down list containing ['', '<default>'])
-Viewing entry for option 'Test names containing'
-Viewing entry for option 'Suite names containing'
-Viewing entry for option 'App names containing'
-Viewing entry for option 'Tests listed in file'
-Viewing entry for option 'Descriptions containing'
-Viewing entry for option 'Test-files containing'
-Viewing entry for option 'Test-file to search' (drop-down list containing [''])
-Viewing entry for option 'Execution time'
-...........
-Viewing check button for switch 'Select in collapsed suites'
-Viewing radio button for switch '', options Discard/Refine/Extend/Exclude'. Default value 0.
-Viewing action with title '_Select', stock id ''gtk-find'', accelerator ''<control>s''
-...........
-Viewing radio button for switch '', options Discard/Refine/Extend'. Default value 0.
-Viewing action with title 'Filter', stock id ''gtk-find'', accelerator ''<control>f''
+Viewing table with 9 rows and 2 columns.
+'Tests for version  ' | Text entry (drop-down list containing ['', '<default>'])
+'Test names containing  ' | Text entry
+'Suite names containing  ' | Text entry
+'App names containing  ' | Text entry
+'Tests listed in file  ' | Text entry , Button '...'
+'Descriptions containing  ' | Text entry
+'Test-files containing  ' | Text entry
+'Test-file to search  ' | Text entry (drop-down list containing [''])
+'Execution time  ' | Text entry
+.....Selection......
+Check button 'Select in collapsed suites'
+Radio button 'Discard' (checked) , Radio button 'Refine' , Radio button 'Extend' , Radio button 'Exclude'
+Button '_Select', stock image 'gtk-find'
+.....Filtering......
+Radio button 'Discard' (checked) , Radio button 'Refine' , Radio button 'Extend'
+Button 'Filter', stock image 'gtk-find'
 
-Changing GUI status to: 'TextTest started at 15May17:34:58.'
+Changing GUI status to: 'TextTest started at 18May18:13:44.'
 
 Changing GUI status to: 'Reading tests ...'
 
-Changing GUI status to: 'Reading tests completed at 15May17:34:58.'
+Changing GUI status to: 'Reading tests completed at 18May18:13:44.'
 
 Test Tree description...
 -> TargetApp (tdat)
@@ -207,22 +208,23 @@ Test Tree description...
 Test column header set to 'Tests: 0/2 selected'
 
 Viewing notebook page for 'Selection'
-Viewing entry for option 'Tests for version' (drop-down list containing ['', '<default>'])
-Viewing entry for option 'Test names containing'
-Viewing entry for option 'Suite names containing'
-Viewing entry for option 'App names containing'
-Viewing entry for option 'Tests listed in file'
-Viewing entry for option 'Descriptions containing'
-Viewing entry for option 'Test-files containing'
-Viewing entry for option 'Test-file to search' (set to 'output') (drop-down list containing ['output', 'catalogue', 'errors', 'options', 'environment'])
-Viewing entry for option 'Execution time'
-...........
-Viewing check button for switch 'Select in collapsed suites'
-Viewing radio button for switch '', options Discard/Refine/Extend/Exclude'. Default value 0.
-Viewing action with title '_Select', stock id ''gtk-find'', accelerator ''<control>s''
-...........
-Viewing radio button for switch '', options Discard/Refine/Extend'. Default value 0.
-Viewing action with title 'Filter', stock id ''gtk-find'', accelerator ''<control>f''
+Viewing table with 9 rows and 2 columns.
+'Tests for version  ' | Text entry (drop-down list containing ['', '<default>'])
+'Test names containing  ' | Text entry
+'Suite names containing  ' | Text entry
+'App names containing  ' | Text entry
+'Tests listed in file  ' | Text entry , Button '...'
+'Descriptions containing  ' | Text entry
+'Test-files containing  ' | Text entry
+'Test-file to search  ' | Text entry (set to 'output') (drop-down list containing ['output', 'catalogue', 'errors', 'options', 'environment'])
+'Execution time  ' | Text entry
+.....Selection......
+Check button 'Select in collapsed suites'
+Radio button 'Discard' (checked) , Radio button 'Refine' , Radio button 'Extend' , Radio button 'Exclude'
+Button '_Select', stock image 'gtk-find'
+.....Filtering......
+Radio button 'Discard' (checked) , Radio button 'Refine' , Radio button 'Extend'
+Button 'Filter', stock image 'gtk-find'
 Expected application event 'all tests to be read' occurred, proceeding.
 
 'set test selection to' event created with arguments 'TargetApp (tdat)'
@@ -266,10 +268,20 @@ Adding entry completion 'readonlyfile' ...
 Adding entry completion 'writeabledirs' ...
 ---------- Dialog 'Create/Import Files and Directories' ----------
 Default action is labelled 'gtk-ok'
-Viewing entry for option 'Type of file/directory to create' (set to 'readonlyfile') (drop-down list containing ['readonlyfile', 'writeabledirs'])
-Viewing entry for option 'Version identifier to use'
-Viewing filechooser for option 'Source to copy from' (choosing from directories ['/carm/proj/texttest-tmp/geoff/texttest.15May173456.8629/texttest/TestSelf/TestData/GUI/OverwriteFileRootSuite/TargetApp'])
-Viewing radio button for switch '', options Import file/directory from source/Create a new file/Create a new directory'. Default value 0.
+'Create or import files in the test directory
+'
+'(Test is TDAT test-suite TargetApp)
+'
+'Type of file/directory to create:'
+Text entry (set to 'readonlyfile') (drop-down list containing ['readonlyfile', 'writeabledirs'])
+'Version identifier to use:'
+Text entry
+...........
+Radio button 'Import file/directory from source' (checked)
+Radio button 'Create a new file'
+Radio button 'Create a new directory'
+.....Source to copy from:......
+Filechooser (choosing from directories ['/carm/proj/texttest-tmp/geoff/texttest.18May181204.29561/texttest/TestSelf/TestData/GUI/OverwriteFileRootSuite/TargetApp'])
 ------------------------------------------------------------------
 
 'choose create a new file' event created with arguments ''
@@ -279,7 +291,7 @@ Viewing radio button for switch '', options Import file/directory from source/Cr
 Default action is labelled 'gtk-ok'
 Using stock icon 'gtk-dialog-error'
 Not creating file or directory : path already exists:
-/carm/proj/texttest-tmp/geoff/texttest.15May173456.8629/texttest/TestSelf/TestData/GUI/OverwriteFileRootSuite/TargetApp/readonlyfile
+/carm/proj/texttest-tmp/geoff/texttest.18May181204.29561/texttest/TestSelf/TestData/GUI/OverwriteFileRootSuite/TargetApp/readonlyfile
 ---------------------------------------------
 
 'agree to texttest message' event created with arguments ''

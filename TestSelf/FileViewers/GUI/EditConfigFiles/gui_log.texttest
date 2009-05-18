@@ -4,9 +4,9 @@ Enabling entry completion, using matching 1
 Adding entry completion '<default>' ...
 Adding entry completion 'localhost' ...
 Adding entry completion '1' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.15May180559.9338/texttest/TestSelf/FileViewers/GUI/EditConfigFiles/personaldir/log/log4py.conf' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.18May181204.29561/texttest/TestSelf/FileViewers/GUI/EditConfigFiles/personaldir/log/log4py.conf' ...
 Adding entry completion '/users/geoff/work/master/Testing/TextTest/log/log4py.conf' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.15May180559.9338/texttest/TestSelf/FileViewers/GUI/EditConfigFiles/personaldir/log' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.18May181204.29561/texttest/TestSelf/FileViewers/GUI/EditConfigFiles/personaldir/log' ...
 Hiding the Menubar
 Top Window title is TextTest static GUI : management of tests for HELLO
 Default widget is <type 'gtk.TreeView'>
@@ -177,28 +177,29 @@ Pane separator positioned 50% from the left edge
 Tabs showing : Selection, Config
 
 Viewing notebook page for 'Selection'
-Viewing entry for option 'Tests for version' (drop-down list containing ['', '<default>'])
-Viewing entry for option 'Test names containing'
-Viewing entry for option 'Suite names containing'
-Viewing entry for option 'App names containing'
-Viewing entry for option 'Tests listed in file'
-Viewing entry for option 'Descriptions containing'
-Viewing entry for option 'Test-files containing'
-Viewing entry for option 'Test-file to search' (drop-down list containing [''])
-Viewing entry for option 'Execution time'
-...........
-Viewing check button for switch 'Select in collapsed suites'
-Viewing radio button for switch '', options Discard/Refine/Extend/Exclude'. Default value 0.
-Viewing action with title '_Select', stock id ''gtk-find'', accelerator ''<control>s''
-...........
-Viewing radio button for switch '', options Discard/Refine/Extend'. Default value 0.
-Viewing action with title 'Filter', stock id ''gtk-find'', accelerator ''<control>f''
+Viewing table with 9 rows and 2 columns.
+'Tests for version  ' | Text entry (drop-down list containing ['', '<default>'])
+'Test names containing  ' | Text entry
+'Suite names containing  ' | Text entry
+'App names containing  ' | Text entry
+'Tests listed in file  ' | Text entry , Button '...'
+'Descriptions containing  ' | Text entry
+'Test-files containing  ' | Text entry
+'Test-file to search  ' | Text entry (drop-down list containing [''])
+'Execution time  ' | Text entry
+.....Selection......
+Check button 'Select in collapsed suites'
+Radio button 'Discard' (checked) , Radio button 'Refine' , Radio button 'Extend' , Radio button 'Exclude'
+Button '_Select', stock image 'gtk-find'
+.....Filtering......
+Radio button 'Discard' (checked) , Radio button 'Refine' , Radio button 'Extend'
+Button 'Filter', stock image 'gtk-find'
 
-Changing GUI status to: 'TextTest started at 15May18:06:01.'
+Changing GUI status to: 'TextTest started at 18May18:12:36.'
 
 Changing GUI status to: 'Reading tests ...'
 
-Changing GUI status to: 'Reading tests completed at 15May18:06:02.'
+Changing GUI status to: 'Reading tests completed at 18May18:12:39.'
 
 Test Tree description...
 -> TargetApp (hello)
@@ -207,22 +208,23 @@ Test Tree description...
 Test column header set to 'Tests: 0/1 selected'
 
 Viewing notebook page for 'Selection'
-Viewing entry for option 'Tests for version' (drop-down list containing ['', '<default>'])
-Viewing entry for option 'Test names containing'
-Viewing entry for option 'Suite names containing'
-Viewing entry for option 'App names containing'
-Viewing entry for option 'Tests listed in file'
-Viewing entry for option 'Descriptions containing'
-Viewing entry for option 'Test-files containing'
-Viewing entry for option 'Test-file to search' (set to 'output') (drop-down list containing ['output', 'errors'])
-Viewing entry for option 'Execution time'
-...........
-Viewing check button for switch 'Select in collapsed suites'
-Viewing radio button for switch '', options Discard/Refine/Extend/Exclude'. Default value 0.
-Viewing action with title '_Select', stock id ''gtk-find'', accelerator ''<control>s''
-...........
-Viewing radio button for switch '', options Discard/Refine/Extend'. Default value 0.
-Viewing action with title 'Filter', stock id ''gtk-find'', accelerator ''<control>f''
+Viewing table with 9 rows and 2 columns.
+'Tests for version  ' | Text entry (drop-down list containing ['', '<default>'])
+'Test names containing  ' | Text entry
+'Suite names containing  ' | Text entry
+'App names containing  ' | Text entry
+'Tests listed in file  ' | Text entry , Button '...'
+'Descriptions containing  ' | Text entry
+'Test-files containing  ' | Text entry
+'Test-file to search  ' | Text entry (set to 'output') (drop-down list containing ['output', 'errors'])
+'Execution time  ' | Text entry
+.....Selection......
+Check button 'Select in collapsed suites'
+Radio button 'Discard' (checked) , Radio button 'Refine' , Radio button 'Extend' , Radio button 'Exclude'
+Button '_Select', stock image 'gtk-find'
+.....Filtering......
+Radio button 'Discard' (checked) , Radio button 'Refine' , Radio button 'Extend'
+Button 'Filter', stock image 'gtk-find'
 Expected application event 'all tests to be read' occurred, proceeding.
 
 'set test selection to' event created with arguments 'Test'
@@ -263,10 +265,20 @@ Adding text '<i>(Test is HELLO test-case Test)</i>'
 Adding entry completion 'foobar' ...
 ---------- Dialog 'Create/Import Files and Directories' ----------
 Default action is labelled 'gtk-ok'
-Viewing entry for option 'Type of file/directory to create' (set to 'foobar') (drop-down list containing ['foobar'])
-Viewing entry for option 'Version identifier to use'
-Viewing filechooser for option 'Source to copy from' (choosing from directories ['/carm/proj/texttest-tmp/geoff/texttest.15May180559.9338/texttest/TestSelf/FileViewers/GUI/EditConfigFiles/TargetApp'])
-Viewing radio button for switch '', options Import file/directory from source/Create a new file/Create a new directory'. Default value 0.
+'Create or import files in the test directory
+'
+'(Test is HELLO test-case Test)
+'
+'Type of file/directory to create:'
+Text entry (set to 'foobar') (drop-down list containing ['foobar'])
+'Version identifier to use:'
+Text entry
+...........
+Radio button 'Import file/directory from source' (checked)
+Radio button 'Create a new file'
+Radio button 'Create a new directory'
+.....Source to copy from:......
+Filechooser (choosing from directories ['/carm/proj/texttest-tmp/geoff/texttest.18May181204.29561/texttest/TestSelf/FileViewers/GUI/EditConfigFiles/TargetApp'])
 ------------------------------------------------------------------
 
 'enter type of file/directory to create =' event created with arguments 'data1'
@@ -275,7 +287,7 @@ Viewing radio button for switch '', options Import file/directory from source/Cr
 
 'press create' event created with arguments ''
 Creating new empty file...
-Viewing file /carm/proj/texttest-tmp/geoff/texttest.15May180559.9338/texttest/TestSelf/FileViewers/GUI/EditConfigFiles/TargetApp/Test/data1 using 'emacs', refresh set to False
+Viewing file /carm/proj/texttest-tmp/geoff/texttest.18May181204.29561/texttest/TestSelf/FileViewers/GUI/EditConfigFiles/TargetApp/Test/data1 using 'emacs', refresh set to False
 
 Changing GUI status to: 'Started "emacs data1" in background (from test Test).'
 Setting sensitivity of action 'Remove...' to True
@@ -299,10 +311,20 @@ Adding text '<b><u>Create or import files in the test directory</u></b>'
 Adding text '<i>(Test is HELLO test-case Test)</i>'
 ---------- Dialog 'Create/Import Files and Directories' ----------
 Default action is labelled 'gtk-ok'
-Viewing entry for option 'Type of file/directory to create' (set to 'foobar') (drop-down list containing ['foobar'])
-Viewing entry for option 'Version identifier to use'
-Viewing filechooser for option 'Source to copy from' (choosing from directories ['/carm/proj/texttest-tmp/geoff/texttest.15May180559.9338/texttest/TestSelf/FileViewers/GUI/EditConfigFiles/TargetApp'])
-Viewing radio button for switch '', options Import file/directory from source/Create a new file/Create a new directory'. Default value 0.
+'Create or import files in the test directory
+'
+'(Test is HELLO test-case Test)
+'
+'Type of file/directory to create:'
+Text entry (set to 'foobar') (drop-down list containing ['foobar'])
+'Version identifier to use:'
+Text entry
+...........
+Radio button 'Import file/directory from source' (checked)
+Radio button 'Create a new file'
+Radio button 'Create a new directory'
+.....Source to copy from:......
+Filechooser (choosing from directories ['/carm/proj/texttest-tmp/geoff/texttest.18May181204.29561/texttest/TestSelf/FileViewers/GUI/EditConfigFiles/TargetApp'])
 ------------------------------------------------------------------
 
 'enter type of file/directory to create =' event created with arguments 'data2'
@@ -311,7 +333,7 @@ Viewing radio button for switch '', options Import file/directory from source/Cr
 
 'press create' event created with arguments ''
 Creating new empty file...
-Viewing file /carm/proj/texttest-tmp/geoff/texttest.15May180559.9338/texttest/TestSelf/FileViewers/GUI/EditConfigFiles/TargetApp/Test/data2 using 'emacs', refresh set to False
+Viewing file /carm/proj/texttest-tmp/geoff/texttest.18May181204.29561/texttest/TestSelf/FileViewers/GUI/EditConfigFiles/TargetApp/Test/data2 using 'emacs', refresh set to False
 
 Changing GUI status to: 'Started "emacs data2" in background (from test Test).'
 Setting sensitivity of action 'Remove...' to True
@@ -332,7 +354,7 @@ Adding file config under heading 'Personal Files', coloured grey90
 Adding file config.hello under heading 'Files for HELLO', coloured grey90
 
 'select application file' event created with arguments 'config.hello'
-Viewing file /carm/proj/texttest-tmp/geoff/texttest.15May180559.9338/texttest/TestSelf/FileViewers/GUI/EditConfigFiles/TargetApp/config.hello using 'emacs', refresh set to True
+Viewing file /carm/proj/texttest-tmp/geoff/texttest.18May181204.29561/texttest/TestSelf/FileViewers/GUI/EditConfigFiles/TargetApp/config.hello using 'emacs', refresh set to True
 
 Changing GUI status to: 'Started "emacs config.hello" in background (from test Test).'
 
@@ -340,7 +362,7 @@ Waiting for application event 'file editing operations to complete' to occur.
 Expected application event 'file editing operations to complete' occurred, proceeding.
 
 'select application file' event created with arguments 'config'
-Viewing file /carm/proj/texttest-tmp/geoff/texttest.15May180559.9338/texttest/TestSelf/FileViewers/GUI/EditConfigFiles/personaldir/config using 'emacs', refresh set to True
+Viewing file /carm/proj/texttest-tmp/geoff/texttest.18May181204.29561/texttest/TestSelf/FileViewers/GUI/EditConfigFiles/personaldir/config using 'emacs', refresh set to True
 
 Changing GUI status to: 'Started "emacs config" in background (from test Test).'
 
@@ -371,10 +393,20 @@ Adding text '<b><u>Create or import files in the test directory</u></b>'
 Adding text '<i>(Test is HELLO test-case Test)</i>'
 ---------- Dialog 'Create/Import Files and Directories' ----------
 Default action is labelled 'gtk-ok'
-Viewing entry for option 'Type of file/directory to create' (set to 'data1') (drop-down list containing ['data1', 'data2'])
-Viewing entry for option 'Version identifier to use'
-Viewing filechooser for option 'Source to copy from' (choosing from directories ['/carm/proj/texttest-tmp/geoff/texttest.15May180559.9338/texttest/TestSelf/FileViewers/GUI/EditConfigFiles/TargetApp'])
-Viewing radio button for switch '', options Import file/directory from source/Create a new file/Create a new directory'. Default value 0.
+'Create or import files in the test directory
+'
+'(Test is HELLO test-case Test)
+'
+'Type of file/directory to create:'
+Text entry (set to 'data1') (drop-down list containing ['data1', 'data2'])
+'Version identifier to use:'
+Text entry
+...........
+Radio button 'Import file/directory from source' (checked)
+Radio button 'Create a new file'
+Radio button 'Create a new directory'
+.....Source to copy from:......
+Filechooser (choosing from directories ['/carm/proj/texttest-tmp/geoff/texttest.18May181204.29561/texttest/TestSelf/FileViewers/GUI/EditConfigFiles/TargetApp'])
 ------------------------------------------------------------------
 
 'press cancel' event created with arguments ''

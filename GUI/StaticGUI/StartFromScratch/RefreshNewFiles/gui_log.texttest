@@ -4,9 +4,9 @@ Enabling entry completion, using matching 1
 Adding entry completion '<default>' ...
 Adding entry completion 'localhost' ...
 Adding entry completion '1' ...
-Adding entry completion '/home/geoff/.texttest/tmp/texttest.24Apr230908.9903/texttest/GUI/StaticGUI/StartFromScratch/RefreshNewFiles/personaldir/log/log4py.conf' ...
-Adding entry completion '/home/geoff/code/texttest/log/log4py.conf' ...
-Adding entry completion '/home/geoff/.texttest/tmp/texttest.24Apr230908.9903/texttest/GUI/StaticGUI/StartFromScratch/RefreshNewFiles/personaldir/log' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.18May181204.29561/texttest/GUI/StaticGUI/StartFromScratch/RefreshNewFiles/personaldir/log/log4py.conf' ...
+Adding entry completion '/users/geoff/work/master/Testing/TextTest/log/log4py.conf' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.18May181204.29561/texttest/GUI/StaticGUI/StartFromScratch/RefreshNewFiles/personaldir/log' ...
 Top Window title is TextTest static GUI : management of tests for HELLO
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
@@ -176,28 +176,29 @@ Pane separator positioned 50% from the left edge
 Tabs showing : Selection, Config
 
 Viewing notebook page for 'Selection'
-Viewing entry for option 'Tests for version' (drop-down list containing ['', '<default>'])
-Viewing entry for option 'Test names containing'
-Viewing entry for option 'Suite names containing'
-Viewing entry for option 'App names containing'
-Viewing entry for option 'Tests listed in file'
-Viewing entry for option 'Descriptions containing'
-Viewing entry for option 'Test-files containing'
-Viewing entry for option 'Test-file to search' (drop-down list containing [''])
-Viewing entry for option 'Execution time'
-...........
-Viewing check button for switch 'Select in collapsed suites'
-Viewing radio button for switch '', options Discard/Refine/Extend/Exclude'. Default value 0.
-Viewing action with title '_Select', stock id ''gtk-find'', accelerator ''<control>s''
-...........
-Viewing radio button for switch '', options Discard/Refine/Extend'. Default value 0.
-Viewing action with title 'Filter', stock id ''gtk-find'', accelerator ''<control>f''
+Viewing table with 9 rows and 2 columns.
+'Tests for version  ' | Text entry (drop-down list containing ['', '<default>'])
+'Test names containing  ' | Text entry
+'Suite names containing  ' | Text entry
+'App names containing  ' | Text entry
+'Tests listed in file  ' | Text entry , Button '...'
+'Descriptions containing  ' | Text entry
+'Test-files containing  ' | Text entry
+'Test-file to search  ' | Text entry (drop-down list containing [''])
+'Execution time  ' | Text entry
+.....Selection......
+Check button 'Select in collapsed suites'
+Radio button 'Discard' (checked) , Radio button 'Refine' , Radio button 'Extend' , Radio button 'Exclude'
+Button '_Select', stock image 'gtk-find'
+.....Filtering......
+Radio button 'Discard' (checked) , Radio button 'Refine' , Radio button 'Extend'
+Button 'Filter', stock image 'gtk-find'
 
-Changing GUI status to: 'TextTest started at 24Apr23:31:56.'
+Changing GUI status to: 'TextTest started at 18May18:13:07.'
 
 Changing GUI status to: 'Reading tests ...'
 
-Changing GUI status to: 'Reading tests completed at 24Apr23:31:56.'
+Changing GUI status to: 'Reading tests completed at 18May18:13:10.'
 
 Test Tree description...
 -> TargetApp (hello)
@@ -205,22 +206,23 @@ Test Tree description...
 Test column header set to 'Tests: All 0 selected'
 
 Viewing notebook page for 'Selection'
-Viewing entry for option 'Tests for version' (drop-down list containing ['', '<default>'])
-Viewing entry for option 'Test names containing'
-Viewing entry for option 'Suite names containing'
-Viewing entry for option 'App names containing'
-Viewing entry for option 'Tests listed in file'
-Viewing entry for option 'Descriptions containing'
-Viewing entry for option 'Test-files containing'
-Viewing entry for option 'Test-file to search' (set to 'output') (drop-down list containing ['output'])
-Viewing entry for option 'Execution time'
-...........
-Viewing check button for switch 'Select in collapsed suites'
-Viewing radio button for switch '', options Discard/Refine/Extend/Exclude'. Default value 0.
-Viewing action with title '_Select', stock id ''gtk-find'', accelerator ''<control>s''
-...........
-Viewing radio button for switch '', options Discard/Refine/Extend'. Default value 0.
-Viewing action with title 'Filter', stock id ''gtk-find'', accelerator ''<control>f''
+Viewing table with 9 rows and 2 columns.
+'Tests for version  ' | Text entry (drop-down list containing ['', '<default>'])
+'Test names containing  ' | Text entry
+'Suite names containing  ' | Text entry
+'App names containing  ' | Text entry
+'Tests listed in file  ' | Text entry , Button '...'
+'Descriptions containing  ' | Text entry
+'Test-files containing  ' | Text entry
+'Test-file to search  ' | Text entry (set to 'output') (drop-down list containing ['output'])
+'Execution time  ' | Text entry
+.....Selection......
+Check button 'Select in collapsed suites'
+Radio button 'Discard' (checked) , Radio button 'Refine' , Radio button 'Extend' , Radio button 'Exclude'
+Button '_Select', stock image 'gtk-find'
+.....Filtering......
+Radio button 'Discard' (checked) , Radio button 'Refine' , Radio button 'Extend'
+Button 'Filter', stock image 'gtk-find'
 Expected application event 'all tests to be read' occurred, proceeding.
 
 'set test selection to' event created with arguments 'TargetApp (hello)'
@@ -253,10 +255,15 @@ Adding entry completion 'last in suite' ...
 Adding entry completion 'first in suite' ...
 ---------- Dialog 'Add Test' ----------
 Default action is labelled 'gtk-ok'
-Viewing entry for option 'Test Name'
-Viewing entry for option 'Test Description'
-Viewing entry for option '\nPlace Test' (set to 'last in suite') (drop-down list containing ['first in suite', 'last in suite'])
-Viewing entry for option 'Command line options'
+'Test Name:'
+Text entry
+'Test Description:'
+Text entry
+'
+Place Test:'
+Text entry (set to 'last in suite') (drop-down list containing ['first in suite', 'last in suite'])
+'Command line options:'
+Text entry
 ---------------------------------------
 
 'enter test name =' event created with arguments 'Test'
@@ -303,19 +310,20 @@ Adding entry completion 'Test' ...
 Tabs showing : Basic, Advanced
 
 Viewing notebook page for 'Basic'
-Viewing entry for option 'Run this version'
-Viewing entry for option 'Use checkout'
-Viewing entry for option 'Run on machine' (set to 'localhost')
-Viewing entry for option 'Times to run' (set to '1')
-Viewing action with title '_Run', stock id ''gtk-execute'', accelerator ''<control>r''
+Viewing table with 4 rows and 2 columns.
+'Run this version  ' | Text entry
+'Use checkout  ' | Text entry
+'Run on machine  ' | Text entry (set to 'localhost')
+'Times to run  ' | Text entry (set to '1')
+Button '_Run', stock image 'gtk-execute'
 
 'enter run this version =' event created with arguments ',2'
 
 'run selected tests' event created with arguments ''
 Adding entry completion ',2' ...
-Starting dynamic run of TextTest with arguments ['-g', '-a', 'hello', '-v', ',2', '-m', 'localhost', '-cp', '1', '-xr', '/home/geoff/.texttest/tmp/texttest.24Apr230908.9903/texttest/GUI/StaticGUI/StartFromScratch/RefreshNewFiles/personaldir/log/log4py.conf', '-xw', '/home/geoff/.texttest/tmp/texttest.24Apr230908.9903/texttest/GUI/StaticGUI/StartFromScratch/RefreshNewFiles/personaldir/log', '-count', '2', '-f', '/home/geoff/.texttest/tmp/texttest.24Apr230908.9903/texttest/GUI/StaticGUI/StartFromScratch/RefreshNewFiles/texttesttmp/static_gui.24Apr233155.16508/dynamic_run1/gui_select', '-fd', '/home/geoff/.texttest/tmp/texttest.24Apr230908.9903/texttest/GUI/StaticGUI/StartFromScratch/RefreshNewFiles/texttesttmp/static_gui.24Apr233155.16508/temporary_filter_files']
+Starting dynamic run of TextTest with arguments ['-g', '-a', 'hello', '-v', ',2', '-m', 'localhost', '-cp', '1', '-xr', '/carm/proj/texttest-tmp/geoff/texttest.18May181204.29561/texttest/GUI/StaticGUI/StartFromScratch/RefreshNewFiles/personaldir/log/log4py.conf', '-xw', '/carm/proj/texttest-tmp/geoff/texttest.18May181204.29561/texttest/GUI/StaticGUI/StartFromScratch/RefreshNewFiles/personaldir/log', '-count', '2', '-f', '/carm/proj/texttest-tmp/geoff/texttest.18May181204.29561/texttest/GUI/StaticGUI/StartFromScratch/RefreshNewFiles/texttesttmp/static_gui.18May181306.12184/dynamic_run1/gui_select', '-fd', '/carm/proj/texttest-tmp/geoff/texttest.18May181204.29561/texttest/GUI/StaticGUI/StartFromScratch/RefreshNewFiles/texttesttmp/static_gui.18May181306.12184/temporary_filter_files']
 
-Changing GUI status to: 'Started HELLO test-case Test at 24Apr23:31:57.'
+Changing GUI status to: 'Started HELLO test-case Test at 18May18:13:12.'
 
 Waiting for application event 'dynamic GUI to be closed' to occur.
 Expected application event 'dynamic GUI to be closed' occurred, proceeding.
