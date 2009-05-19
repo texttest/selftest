@@ -1,4 +1,4 @@
-TextTest will write diagnostics in /carm/proj/texttest-tmp/geoff/texttest.08May173807.26867/texttest/TestSelf/Documentation/ConfigFileEntries based on file at /carm/proj/texttest-tmp/geoff/texttest.08May173807.26867/texttest/TestSelf/Documentation/ConfigFileEntries/logging
+TextTest will write diagnostics in /carm/proj/texttest-tmp/geoff/texttest.19May181217.16266/texttest/TestSelf/Documentation/ConfigFileEntries based on file at /carm/proj/texttest-tmp/geoff/texttest.19May181217.16266/texttest/TestSelf/Documentation/ConfigFileEntries/logging
 Using Application APPIDENTIFIER
 auto_sort_test_suites|0|Automatically sort test suites in alphabetical order. 1 means sort in ascending order, -1 means sort in descending order.
 base_version|[]|Versions to inherit settings from
@@ -74,7 +74,7 @@ performance_use_normalised_%|{'default': 'true'}|Alias. See entry for 'use_norma
 performance_variation_%|{'default': 10.0}|How much variation in performance is allowed
 performance_variation_serious_%|{'default': 0.0}|Additional cutoff to performance_variation_% for extra highlighting
 remote_copy_program||(UNIX) Program to use for copying files remotely, in case of non-shared file systems
-remote_program_options|{'default': '', 'rsync': '-az', 'ssh': '-o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10', 'scp': '-Cr -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10'}|Default options to use for particular remote shell programs
+remote_program_options|{'default': '', 'rsync': '-azL', 'ssh': '-o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10', 'scp': '-Cr -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10'}|Default options to use for particular remote shell programs
 remote_shell_program|rsh|Program to use for running commands remotely
 run_dependent_text|{'default': []}|Mapping of patterns to remove from result files
 slow_motion_replay_speed|3|How long in seconds to wait between each GUI action
