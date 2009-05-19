@@ -1,10 +1,12 @@
 import_config_file:$STANDARD
 
+executable:$TEXTTEST_HOME/describedir.py
+
 default_interface:console
 
 remote_shell_program:ssh
 
-remote_copy_program:scp
+remote_copy_program:rsync -e /usr/bin/ssh
 
 copy_test_path_merge:datadir
 
