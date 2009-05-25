@@ -1,6 +1,9 @@
 # Copy the executable remotely so we can run it
 CopyExecutable
 
+# Make sure we try to remove previous remotely written directories so they don't build up
+BatchRun
+
 # Make sure we can take the whole checkout over if we need to
 CopyCheckout
 

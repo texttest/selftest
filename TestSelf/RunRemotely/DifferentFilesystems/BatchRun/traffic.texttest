@@ -1,0 +1,11 @@
+<-CMD:ssh -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 testnet-s16 rm -rf "~/.texttest/tmp/self_test.*"
+->ERR:rm: No match.
+->EXC:1
+<-CMD:ssh -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 testnet-s16 mkdir -p ~/.texttest/tmp/self_test.25May153840.10010/system_under_test
+<-CMD:scp -Cr -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 /carm/proj/texttest-tmp/geoff/texttest.25May153832.10006/texttest/TestSelf/RunRemotely/DifferentFilesystems/BatchRun/TargetApp/hello.py testnet-s16:~/.texttest/tmp/self_test.25May153840.10010/system_under_test/hello.py
+<-CMD:ssh -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 testnet-s16 mkdir -p ~/.texttest/tmp/self_test.25May153840.10010/Test
+<-CMD:cd /nfs/vm/texttest-tmp/geoff/texttest.25May153832.10006/texttest/TestSelf/RunRemotely/DifferentFilesystems/BatchRun/texttesttmp/self_test.25May153840.10010/hello/Test; ssh -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 testnet-s16 cd ~/.texttest/tmp/self_test.25May153840.10010/Test ; env 'PATH="/carm/proj/texttest-tmp/geoff/texttest.25May153832.10006/texttest/TestSelf/RunRemotely/DifferentFilesystems/BatchRun/texttesttmp/self_test.25May153840.10010/hello/Test:${PATH}"' 'TEXTTEST_CHECKOUT=""' 'TEXTTEST_SANDBOX="/carm/proj/texttest-tmp/geoff/texttest.25May153832.10006/texttest/TestSelf/RunRemotely/DifferentFilesystems/BatchRun/texttesttmp/self_test.25May153840.10010/hello/Test"' python ~/.texttest/tmp/self_test.25May153840.10010/system_under_test/hello.py
+->OUT:Hello World!
+<-CMD:scp -Cr -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 "testnet-s16:~/.texttest/tmp/self_test.25May153840.10010/Test/*" /carm/proj/texttest-tmp/geoff/texttest.25May153832.10006/texttest/TestSelf/RunRemotely/DifferentFilesystems/BatchRun/texttesttmp/self_test.25May153840.10010/hello/Test
+->ERR:scp: No match.
+->EXC:1
