@@ -3,7 +3,7 @@ Waiting for application event 'all tests to be read' to occur.
 Waiting for application event 'test Basic to complete' to occur.
 Waiting for application event 'test Basic2 to start' to occur.
 Enabling entry completion, using matching 1
-Top Window title is TextTest dynamic GUI : testing SLEEP (started at 24Apr23:19:30)
+Top Window title is TextTest dynamic GUI : testing SLEEP (started at 28May16:33:05)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -15,6 +15,8 @@ Viewing action with title '_Quit', stock id ''gtk-quit'', accelerator ''<control
 Viewing action with title 'View File', stock id ''gtk-open'' (greyed out)
 Viewing action with title '_File Properties', stock id ''gtk-properties'' (greyed out)
 Viewing action with title 'View Filtered File' (greyed out)
+Viewing action with title 'View Original File' (greyed out)
+Viewing action with title 'View Filtered Original File' (greyed out)
 Viewing action with title 'View Raw Differences' (greyed out)
 Viewing action with title 'View Differences' (greyed out)
 Viewing action with title 'Follow File Progress' (greyed out)
@@ -95,6 +97,9 @@ UI layout:
     <menuitem name="View File" action="View File"/>
     <menuitem name="View Filtered File" action="View Filtered File"/>
     <separator/>
+    <menuitem name="View Original File" action="View Original File"/>
+    <menuitem name="View Filtered Original File" action="View Filtered Original File"/>
+    <separator/>
     <menuitem name="View Differences" action="View Differences"/>
     <menuitem name="View Raw Differences" action="View Raw Differences"/>
     <separator/>
@@ -117,7 +122,7 @@ Tabs showing : Status, Run Info
 
 Test progress:
 
-Changing GUI status to: 'TextTest started at 24Apr23:19:30.'
+Changing GUI status to: 'TextTest started at 28May16:33:05.'
 
 Test progress:
 --> Not started : 1, colour 'white', font 'bold'', visible=False
@@ -208,6 +213,8 @@ Tabs showing : Test, Status, Run Info
 Setting sensitivity of action 'View File' to True
 Setting sensitivity of action '_File Properties' to True
 Setting sensitivity of action 'View Filtered File' to True
+Setting sensitivity of action 'View Original File' to True
+Setting sensitivity of action 'View Filtered Original File' to True
 Setting sensitivity of action 'View Raw Differences' to True
 
 Waiting for application event 'test Basic2 to complete' to occur.
@@ -232,7 +239,7 @@ Changing GUI status to: 'Killed all running tests.'
 
 Changing GUI status to: 'Waiting for all tests to terminate ...'
 
-Progress bar set to fraction 1.0, text 'All 3 tests completed at 24Apr23:19:42'
+Progress bar set to fraction 1.0, text 'All 3 tests completed at 28May16:33:18'
 
 Redrawing test Basic3 coloured red
 (Second column 'KILLED' coloured red)

@@ -3,7 +3,7 @@ Waiting for application event 'all tests to be read' to occur.
 Waiting for application event 'test Basic to become pending' to occur.
 Waiting for application event 'test Basic2 to become pending' to occur.
 Enabling entry completion, using matching 1
-Top Window title is TextTest dynamic GUI : testing SLEEP (started at 24Apr23:37:16)
+Top Window title is TextTest dynamic GUI : testing SLEEP (started at 28May16:33:41)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -15,6 +15,8 @@ Viewing action with title '_Quit', stock id ''gtk-quit'', accelerator ''<control
 Viewing action with title 'View File', stock id ''gtk-open'' (greyed out)
 Viewing action with title '_File Properties', stock id ''gtk-properties'' (greyed out)
 Viewing action with title 'View Filtered File' (greyed out)
+Viewing action with title 'View Original File' (greyed out)
+Viewing action with title 'View Filtered Original File' (greyed out)
 Viewing action with title 'View Raw Differences' (greyed out)
 Viewing action with title 'View Differences' (greyed out)
 Viewing action with title 'Follow File Progress' (greyed out)
@@ -95,6 +97,9 @@ UI layout:
     <menuitem name="View File" action="View File"/>
     <menuitem name="View Filtered File" action="View Filtered File"/>
     <separator/>
+    <menuitem name="View Original File" action="View Original File"/>
+    <menuitem name="View Filtered Original File" action="View Filtered Original File"/>
+    <separator/>
     <menuitem name="View Differences" action="View Differences"/>
     <menuitem name="View Raw Differences" action="View Raw Differences"/>
     <separator/>
@@ -117,7 +122,7 @@ Tabs showing : Status, Run Info
 
 Test progress:
 
-Changing GUI status to: 'TextTest started at 24Apr23:37:16.'
+Changing GUI status to: 'TextTest started at 28May16:33:42.'
 
 Test progress:
 --> Not started : 1, colour 'white', font 'bold'', visible=True
@@ -185,21 +190,21 @@ Waiting for application event 'completion of test actions' to occur.
 Progress bar set to fraction 0.5, text '1 of 2 tests completed'
 
 Redrawing test Basic2 coloured red
-(Second column 'cancelled pending job at 23:37' coloured red)
+(Second column 'cancelled pending job at 16:33' coloured red)
 Setting sensitivity of action '_Kill' to False
 Setting sensitivity of action '_Mark' to True
 Setting sensitivity of action 'Recompute Status' to True
 
-Progress bar set to fraction 1.0, text 'All 2 tests completed at 24Apr23:37:18'
+Progress bar set to fraction 1.0, text 'All 2 tests completed at 28May16:33:44'
 
 Redrawing test Basic coloured red
-(Second column 'cancelled pending job at 23:37' coloured red)
+(Second column 'cancelled pending job at 16:33' coloured red)
 
 Setting file-view title to 'Sample from 2 tests'
 
 ---------- Text Info Window ----------
 Test were cancelled before starting :
-Test job was cancelled (while still pending in SGE) at 23:37
+Test job was cancelled (while still pending in SGE) at 16:33
 --------------------------------------
 Expected application event 'completion of test actions' occurred, proceeding.
 
@@ -210,7 +215,7 @@ Test progress:
 --> Pending : 0, colour 'white', font ''', visible=True
 --> Failed : 2, colour 'red', font 'bold'', visible=True
 ----> Cancelled : 2, colour 'red', font 'bold'', visible=True
-------> cancelled pending job at 23:37 : 2, colour 'red', font 'bold'', visible=True
+------> cancelled pending job at 16:33 : 2, colour 'red', font 'bold'', visible=True
 
 'quit' event created with arguments ''
 
