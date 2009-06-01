@@ -4,9 +4,9 @@ Enabling entry completion, using matching 1
 Adding entry completion '<default>' ...
 Adding entry completion 'localhost' ...
 Adding entry completion '1' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.18May181204.29561/texttest/GUI/QuitConfirmation/AllStatic/personaldir/log/logging.debug' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.01Jun113708.19621/texttest/GUI/QuitConfirmation/AllStatic/personaldir/log/logging.debug' ...
 Adding entry completion '/users/geoff/work/master/Testing/TextTest/log/logging.debug' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.18May181204.29561/texttest/GUI/QuitConfirmation/AllStatic/personaldir/log' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.01Jun113708.19621/texttest/GUI/QuitConfirmation/AllStatic/personaldir/log' ...
 Top Window title is TextTest static GUI : management of tests for HELLO
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
@@ -177,28 +177,28 @@ Tabs showing : Selection, Config
 
 Viewing notebook page for 'Selection'
 Viewing table with 9 rows and 2 columns.
-'Tests for version  ' | Text entry (drop-down list containing ['', '<default>'])
-'Test names containing  ' | Text entry
-'Suite names containing  ' | Text entry
-'App names containing  ' | Text entry
+'Tests for version  ' (tooltip 'Select tests for a specific version.') | Text entry (drop-down list containing ['', '<default>'])
+'Test names containing  ' (tooltip 'Select tests for which the name matches the entered text. The text can be a regular expression.') | Text entry
+'Suite names containing  ' (tooltip 'Select tests for which at least one parent suite name matches the entered text. The text can be a regular expression.') | Text entry
+'App names containing  ' (tooltip 'Select tests for which the application name matches the entered text. The text can be a regular expression.') | Text entry
 'Tests listed in file  ' | Text entry , Button '...'
-'Descriptions containing  ' | Text entry
+'Descriptions containing  ' (tooltip 'Select tests for which the description (comment) matches the entered text. The text can be a regular expression.') | Text entry
 'Test-files containing  ' | Text entry
 'Test-file to search  ' | Text entry (drop-down list containing [''])
-'Execution time  ' | Text entry
+'Execution time  ' (tooltip 'Specify execution time limits, either as '<min>,<max>', or as a list of comma-separated expressions, such as >=0:45,<=1:00. Digit-only numbers are interpreted as minutes, while colon-separated numbers are interpreted as hours:minutes:seconds.') | Text entry
 .....Selection......
-Check button 'Select in collapsed suites'
-Radio button 'Discard' (checked) , Radio button 'Refine' , Radio button 'Extend' , Radio button 'Exclude'
-Button '_Select', stock image 'gtk-find'
+Check button 'Select in collapsed suites' (tooltip 'Select in currently collapsed suites as well?')
+Radio button 'Discard' (checked) (tooltip 'Unselect all currently selected tests before applying the new selection criteria.') , Radio button 'Refine' (tooltip 'Apply the new selection criteria only to the currently selected tests, to obtain a subselection.') , Radio button 'Extend' (tooltip 'Keep the currently selected tests even if they do not match the new criteria, and extend the selection with all other tests which meet the new criteria.') , Radio button 'Exclude' (tooltip 'After applying the new selection criteria to all tests, unselect the currently selected tests, to exclude them from the new selection.')
+Button '_Select', stock image 'gtk-find' (tooltip 'Select indicated tests')
 .....Filtering......
-Radio button 'Discard' (checked) , Radio button 'Refine' , Radio button 'Extend'
-Button 'Filter', stock image 'gtk-find'
+Radio button 'Discard' (checked) (tooltip 'Show all tests which match the criteria, and hide all those that do not.') , Radio button 'Refine' (tooltip 'Hide all tests which do not match the criteria. Do not show any tests that aren't already shown.') , Radio button 'Extend' (tooltip 'Show all tests which match the criteria. Do not hide any tests that are currently shown.')
+Button 'Filter', stock image 'gtk-find' (tooltip 'filter tests to show only those indicated')
 
-Changing GUI status to: 'TextTest started at 18May18:12:48.'
+Changing GUI status to: 'TextTest started at 01Jun11:37:47.'
 
 Changing GUI status to: 'Reading tests ...'
 
-Changing GUI status to: 'Reading tests completed at 18May18:12:48.'
+Changing GUI status to: 'Reading tests completed at 01Jun11:37:47.'
 
 Test Tree description...
 -> TargetApp (hello)
@@ -208,22 +208,22 @@ Test column header set to 'Tests: 0/1 selected'
 
 Viewing notebook page for 'Selection'
 Viewing table with 9 rows and 2 columns.
-'Tests for version  ' | Text entry (drop-down list containing ['', '<default>'])
-'Test names containing  ' | Text entry
-'Suite names containing  ' | Text entry
-'App names containing  ' | Text entry
+'Tests for version  ' (tooltip 'Select tests for a specific version.') | Text entry (drop-down list containing ['', '<default>'])
+'Test names containing  ' (tooltip 'Select tests for which the name matches the entered text. The text can be a regular expression.') | Text entry
+'Suite names containing  ' (tooltip 'Select tests for which at least one parent suite name matches the entered text. The text can be a regular expression.') | Text entry
+'App names containing  ' (tooltip 'Select tests for which the application name matches the entered text. The text can be a regular expression.') | Text entry
 'Tests listed in file  ' | Text entry , Button '...'
-'Descriptions containing  ' | Text entry
+'Descriptions containing  ' (tooltip 'Select tests for which the description (comment) matches the entered text. The text can be a regular expression.') | Text entry
 'Test-files containing  ' | Text entry
 'Test-file to search  ' | Text entry (set to 'output') (drop-down list containing ['output', 'errors'])
-'Execution time  ' | Text entry
+'Execution time  ' (tooltip 'Specify execution time limits, either as '<min>,<max>', or as a list of comma-separated expressions, such as >=0:45,<=1:00. Digit-only numbers are interpreted as minutes, while colon-separated numbers are interpreted as hours:minutes:seconds.') | Text entry
 .....Selection......
-Check button 'Select in collapsed suites'
-Radio button 'Discard' (checked) , Radio button 'Refine' , Radio button 'Extend' , Radio button 'Exclude'
-Button '_Select', stock image 'gtk-find'
+Check button 'Select in collapsed suites' (tooltip 'Select in currently collapsed suites as well?')
+Radio button 'Discard' (checked) (tooltip 'Unselect all currently selected tests before applying the new selection criteria.') , Radio button 'Refine' (tooltip 'Apply the new selection criteria only to the currently selected tests, to obtain a subselection.') , Radio button 'Extend' (tooltip 'Keep the currently selected tests even if they do not match the new criteria, and extend the selection with all other tests which meet the new criteria.') , Radio button 'Exclude' (tooltip 'After applying the new selection criteria to all tests, unselect the currently selected tests, to exclude them from the new selection.')
+Button '_Select', stock image 'gtk-find' (tooltip 'Select indicated tests')
 .....Filtering......
-Radio button 'Discard' (checked) , Radio button 'Refine' , Radio button 'Extend'
-Button 'Filter', stock image 'gtk-find'
+Radio button 'Discard' (checked) (tooltip 'Show all tests which match the criteria, and hide all those that do not.') , Radio button 'Refine' (tooltip 'Hide all tests which do not match the criteria. Do not show any tests that aren't already shown.') , Radio button 'Extend' (tooltip 'Show all tests which match the criteria. Do not hide any tests that are currently shown.')
+Button 'Filter', stock image 'gtk-find' (tooltip 'filter tests to show only those indicated')
 Expected application event 'all tests to be read' occurred, proceeding.
 
 'set test selection to' event created with arguments 'Test'
@@ -255,23 +255,23 @@ Description:
 Tabs showing : Test, Selection, Running, Config
 
 'select file' event created with arguments 'output.hello'
-Viewing file /carm/proj/texttest-tmp/geoff/texttest.18May181204.29561/texttest/GUI/QuitConfirmation/AllStatic/TargetApp/Test/output.hello using 'emacs', refresh set to False
+Viewing file /carm/proj/texttest-tmp/geoff/texttest.01Jun113708.19621/texttest/GUI/QuitConfirmation/AllStatic/TargetApp/Test/output.hello using 'emacs', refresh set to False
 
 Changing GUI status to: 'Started "emacs output.hello" in background (from test Test).'
 
 'run selected tests' event created with arguments ''
 Adding entry completion 'output' ...
-Starting dynamic run of TextTest with arguments ['-g', '-a', 'hello', '-m', 'localhost', '-cp', '1', '-xr', '/carm/proj/texttest-tmp/geoff/texttest.18May181204.29561/texttest/GUI/QuitConfirmation/AllStatic/personaldir/log/logging.debug', '-xw', '/carm/proj/texttest-tmp/geoff/texttest.18May181204.29561/texttest/GUI/QuitConfirmation/AllStatic/personaldir/log', '-count', '1', '-f', '/carm/proj/texttest-tmp/geoff/texttest.18May181204.29561/texttest/GUI/QuitConfirmation/AllStatic/texttesttmp/static_gui.18May181246.8257/dynamic_run1/gui_select', '-fd', '/carm/proj/texttest-tmp/geoff/texttest.18May181204.29561/texttest/GUI/QuitConfirmation/AllStatic/texttesttmp/static_gui.18May181246.8257/temporary_filter_files']
+Starting dynamic run of TextTest with arguments ['-g', '-a', 'hello', '-m', 'localhost', '-cp', '1', '-xr', '/carm/proj/texttest-tmp/geoff/texttest.01Jun113708.19621/texttest/GUI/QuitConfirmation/AllStatic/personaldir/log/logging.debug', '-xw', '/carm/proj/texttest-tmp/geoff/texttest.01Jun113708.19621/texttest/GUI/QuitConfirmation/AllStatic/personaldir/log', '-count', '1', '-f', '/carm/proj/texttest-tmp/geoff/texttest.01Jun113708.19621/texttest/GUI/QuitConfirmation/AllStatic/texttesttmp/static_gui.01Jun113746.10538/dynamic_run1/gui_select', '-fd', '/carm/proj/texttest-tmp/geoff/texttest.01Jun113708.19621/texttest/GUI/QuitConfirmation/AllStatic/texttesttmp/static_gui.01Jun113746.10538/temporary_filter_files']
 
-Changing GUI status to: 'Started HELLO test-case Test at 18May18:12:49.'
+Changing GUI status to: 'Started HELLO test-case Test at 01Jun11:37:48.'
 
 'quit' event created with arguments ''
 ---------- Dialog 'TextTest Confirmation' ----------
 Using stock icon 'gtk-dialog-warning'
 These processes are still running, and will be terminated when quitting: 
 
-   + PID 8277 : emacs output.hello (from test Test)
-   + PID 8285 : Dynamic GUI started at 18May18:12:49
+   + PID 10542 : emacs output.hello (from test Test)
+   + PID 10544 : Dynamic GUI started at 01Jun11:37:48
 
 Quit anyway?
 ----------------------------------------------------
@@ -292,7 +292,7 @@ Expected application event 'dynamic GUI to be closed' occurred, proceeding.
 Using stock icon 'gtk-dialog-warning'
 These processes are still running, and will be terminated when quitting: 
 
-   + PID 8277 : emacs output.hello (from test Test)
+   + PID 10542 : emacs output.hello (from test Test)
 
 Quit anyway?
 ----------------------------------------------------

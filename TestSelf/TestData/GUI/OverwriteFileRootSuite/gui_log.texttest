@@ -4,9 +4,9 @@ Enabling entry completion, using matching 1
 Adding entry completion '<default>' ...
 Adding entry completion 'localhost' ...
 Adding entry completion '1' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.20May093709.26799/texttest/TestSelf/TestData/GUI/OverwriteFileRootSuite/personaldir/log/logging.debug' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.01Jun113708.19621/texttest/TestSelf/TestData/GUI/OverwriteFileRootSuite/personaldir/log/logging.debug' ...
 Adding entry completion '/users/geoff/work/master/Testing/TextTest/log/logging.debug' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.20May093709.26799/texttest/TestSelf/TestData/GUI/OverwriteFileRootSuite/personaldir/log' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.01Jun113708.19621/texttest/TestSelf/TestData/GUI/OverwriteFileRootSuite/personaldir/log' ...
 Top Window title is TextTest static GUI : management of tests for TDAT
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
@@ -177,28 +177,28 @@ Tabs showing : Selection, Config
 
 Viewing notebook page for 'Selection'
 Viewing table with 9 rows and 2 columns.
-'Tests for version  ' | Text entry (drop-down list containing ['', '<default>'])
-'Test names containing  ' | Text entry
-'Suite names containing  ' | Text entry
-'App names containing  ' | Text entry
+'Tests for version  ' (tooltip 'Select tests for a specific version.') | Text entry (drop-down list containing ['', '<default>'])
+'Test names containing  ' (tooltip 'Select tests for which the name matches the entered text. The text can be a regular expression.') | Text entry
+'Suite names containing  ' (tooltip 'Select tests for which at least one parent suite name matches the entered text. The text can be a regular expression.') | Text entry
+'App names containing  ' (tooltip 'Select tests for which the application name matches the entered text. The text can be a regular expression.') | Text entry
 'Tests listed in file  ' | Text entry , Button '...'
-'Descriptions containing  ' | Text entry
+'Descriptions containing  ' (tooltip 'Select tests for which the description (comment) matches the entered text. The text can be a regular expression.') | Text entry
 'Test-files containing  ' | Text entry
 'Test-file to search  ' | Text entry (drop-down list containing [''])
-'Execution time  ' | Text entry
+'Execution time  ' (tooltip 'Specify execution time limits, either as '<min>,<max>', or as a list of comma-separated expressions, such as >=0:45,<=1:00. Digit-only numbers are interpreted as minutes, while colon-separated numbers are interpreted as hours:minutes:seconds.') | Text entry
 .....Selection......
-Check button 'Select in collapsed suites'
-Radio button 'Discard' (checked) , Radio button 'Refine' , Radio button 'Extend' , Radio button 'Exclude'
-Button '_Select', stock image 'gtk-find'
+Check button 'Select in collapsed suites' (tooltip 'Select in currently collapsed suites as well?')
+Radio button 'Discard' (checked) (tooltip 'Unselect all currently selected tests before applying the new selection criteria.') , Radio button 'Refine' (tooltip 'Apply the new selection criteria only to the currently selected tests, to obtain a subselection.') , Radio button 'Extend' (tooltip 'Keep the currently selected tests even if they do not match the new criteria, and extend the selection with all other tests which meet the new criteria.') , Radio button 'Exclude' (tooltip 'After applying the new selection criteria to all tests, unselect the currently selected tests, to exclude them from the new selection.')
+Button '_Select', stock image 'gtk-find' (tooltip 'Select indicated tests')
 .....Filtering......
-Radio button 'Discard' (checked) , Radio button 'Refine' , Radio button 'Extend'
-Button 'Filter', stock image 'gtk-find'
+Radio button 'Discard' (checked) (tooltip 'Show all tests which match the criteria, and hide all those that do not.') , Radio button 'Refine' (tooltip 'Hide all tests which do not match the criteria. Do not show any tests that aren't already shown.') , Radio button 'Extend' (tooltip 'Show all tests which match the criteria. Do not hide any tests that are currently shown.')
+Button 'Filter', stock image 'gtk-find' (tooltip 'filter tests to show only those indicated')
 
-Changing GUI status to: 'TextTest started at 20May09:37:19.'
+Changing GUI status to: 'TextTest started at 01Jun11:37:25.'
 
 Changing GUI status to: 'Reading tests ...'
 
-Changing GUI status to: 'Reading tests completed at 20May09:37:19.'
+Changing GUI status to: 'Reading tests completed at 01Jun11:37:25.'
 
 Test Tree description...
 -> TargetApp (tdat)
@@ -209,22 +209,22 @@ Test column header set to 'Tests: 0/2 selected'
 
 Viewing notebook page for 'Selection'
 Viewing table with 9 rows and 2 columns.
-'Tests for version  ' | Text entry (drop-down list containing ['', '<default>'])
-'Test names containing  ' | Text entry
-'Suite names containing  ' | Text entry
-'App names containing  ' | Text entry
+'Tests for version  ' (tooltip 'Select tests for a specific version.') | Text entry (drop-down list containing ['', '<default>'])
+'Test names containing  ' (tooltip 'Select tests for which the name matches the entered text. The text can be a regular expression.') | Text entry
+'Suite names containing  ' (tooltip 'Select tests for which at least one parent suite name matches the entered text. The text can be a regular expression.') | Text entry
+'App names containing  ' (tooltip 'Select tests for which the application name matches the entered text. The text can be a regular expression.') | Text entry
 'Tests listed in file  ' | Text entry , Button '...'
-'Descriptions containing  ' | Text entry
+'Descriptions containing  ' (tooltip 'Select tests for which the description (comment) matches the entered text. The text can be a regular expression.') | Text entry
 'Test-files containing  ' | Text entry
 'Test-file to search  ' | Text entry (set to 'output') (drop-down list containing ['output', 'catalogue', 'errors', 'options', 'environment'])
-'Execution time  ' | Text entry
+'Execution time  ' (tooltip 'Specify execution time limits, either as '<min>,<max>', or as a list of comma-separated expressions, such as >=0:45,<=1:00. Digit-only numbers are interpreted as minutes, while colon-separated numbers are interpreted as hours:minutes:seconds.') | Text entry
 .....Selection......
-Check button 'Select in collapsed suites'
-Radio button 'Discard' (checked) , Radio button 'Refine' , Radio button 'Extend' , Radio button 'Exclude'
-Button '_Select', stock image 'gtk-find'
+Check button 'Select in collapsed suites' (tooltip 'Select in currently collapsed suites as well?')
+Radio button 'Discard' (checked) (tooltip 'Unselect all currently selected tests before applying the new selection criteria.') , Radio button 'Refine' (tooltip 'Apply the new selection criteria only to the currently selected tests, to obtain a subselection.') , Radio button 'Extend' (tooltip 'Keep the currently selected tests even if they do not match the new criteria, and extend the selection with all other tests which meet the new criteria.') , Radio button 'Exclude' (tooltip 'After applying the new selection criteria to all tests, unselect the currently selected tests, to exclude them from the new selection.')
+Button '_Select', stock image 'gtk-find' (tooltip 'Select indicated tests')
 .....Filtering......
-Radio button 'Discard' (checked) , Radio button 'Refine' , Radio button 'Extend'
-Button 'Filter', stock image 'gtk-find'
+Radio button 'Discard' (checked) (tooltip 'Show all tests which match the criteria, and hide all those that do not.') , Radio button 'Refine' (tooltip 'Hide all tests which do not match the criteria. Do not show any tests that aren't already shown.') , Radio button 'Extend' (tooltip 'Show all tests which match the criteria. Do not hide any tests that are currently shown.')
+Button 'Filter', stock image 'gtk-find' (tooltip 'filter tests to show only those indicated')
 Expected application event 'all tests to be read' occurred, proceeding.
 
 'set test selection to' event created with arguments 'TargetApp (tdat)'
@@ -281,7 +281,7 @@ Radio button 'Import file/directory from source' (checked)
 Radio button 'Create a new file'
 Radio button 'Create a new directory'
 .....Source to copy from:......
-Filechooser (choosing from directories ['/carm/proj/texttest-tmp/geoff/texttest.20May093709.26799/texttest/TestSelf/TestData/GUI/OverwriteFileRootSuite/TargetApp'])
+Filechooser (choosing from directories ['/carm/proj/texttest-tmp/geoff/texttest.01Jun113708.19621/texttest/TestSelf/TestData/GUI/OverwriteFileRootSuite/TargetApp'])
 ------------------------------------------------------------------
 
 'choose create a new file' event created with arguments ''
@@ -292,7 +292,7 @@ Sensitivity of source file chooser changed to False
 Default action is labelled 'gtk-ok'
 Using stock icon 'gtk-dialog-error'
 Not creating file or directory : path already exists:
-/carm/proj/texttest-tmp/geoff/texttest.20May093709.26799/texttest/TestSelf/TestData/GUI/OverwriteFileRootSuite/TargetApp/readonlyfile
+/carm/proj/texttest-tmp/geoff/texttest.01Jun113708.19621/texttest/TestSelf/TestData/GUI/OverwriteFileRootSuite/TargetApp/readonlyfile
 ---------------------------------------------
 
 'agree to texttest message' event created with arguments ''

@@ -4,9 +4,9 @@ Enabling entry completion, using matching 1
 Adding entry completion '<default>' ...
 Adding entry completion 'localhost' ...
 Adding entry completion '1' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.18May173723.28307/texttest/TestSelf/ChangeTestResults/GUI/SaveMissingVersioned/personaldir/log/logging.debug' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.01Jun113708.19621/texttest/TestSelf/ChangeTestResults/GUI/SaveMissingVersioned/personaldir/log/logging.debug' ...
 Adding entry completion '/users/geoff/work/master/Testing/TextTest/log/logging.debug' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.18May173723.28307/texttest/TestSelf/ChangeTestResults/GUI/SaveMissingVersioned/personaldir/log' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.01Jun113708.19621/texttest/TestSelf/ChangeTestResults/GUI/SaveMissingVersioned/personaldir/log' ...
 Top Window title is TextTest static GUI : management of tests for HELLO
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
@@ -177,28 +177,28 @@ Tabs showing : Selection, Config
 
 Viewing notebook page for 'Selection'
 Viewing table with 9 rows and 2 columns.
-'Tests for version  ' | Text entry (drop-down list containing ['', '<default>'])
-'Test names containing  ' | Text entry
-'Suite names containing  ' | Text entry
-'App names containing  ' | Text entry
+'Tests for version  ' (tooltip 'Select tests for a specific version.') | Text entry (drop-down list containing ['', '<default>'])
+'Test names containing  ' (tooltip 'Select tests for which the name matches the entered text. The text can be a regular expression.') | Text entry
+'Suite names containing  ' (tooltip 'Select tests for which at least one parent suite name matches the entered text. The text can be a regular expression.') | Text entry
+'App names containing  ' (tooltip 'Select tests for which the application name matches the entered text. The text can be a regular expression.') | Text entry
 'Tests listed in file  ' | Text entry , Button '...'
-'Descriptions containing  ' | Text entry
+'Descriptions containing  ' (tooltip 'Select tests for which the description (comment) matches the entered text. The text can be a regular expression.') | Text entry
 'Test-files containing  ' | Text entry
 'Test-file to search  ' | Text entry (drop-down list containing [''])
-'Execution time  ' | Text entry
+'Execution time  ' (tooltip 'Specify execution time limits, either as '<min>,<max>', or as a list of comma-separated expressions, such as >=0:45,<=1:00. Digit-only numbers are interpreted as minutes, while colon-separated numbers are interpreted as hours:minutes:seconds.') | Text entry
 .....Selection......
-Check button 'Select in collapsed suites'
-Radio button 'Discard' (checked) , Radio button 'Refine' , Radio button 'Extend' , Radio button 'Exclude'
-Button '_Select', stock image 'gtk-find'
+Check button 'Select in collapsed suites' (tooltip 'Select in currently collapsed suites as well?')
+Radio button 'Discard' (checked) (tooltip 'Unselect all currently selected tests before applying the new selection criteria.') , Radio button 'Refine' (tooltip 'Apply the new selection criteria only to the currently selected tests, to obtain a subselection.') , Radio button 'Extend' (tooltip 'Keep the currently selected tests even if they do not match the new criteria, and extend the selection with all other tests which meet the new criteria.') , Radio button 'Exclude' (tooltip 'After applying the new selection criteria to all tests, unselect the currently selected tests, to exclude them from the new selection.')
+Button '_Select', stock image 'gtk-find' (tooltip 'Select indicated tests')
 .....Filtering......
-Radio button 'Discard' (checked) , Radio button 'Refine' , Radio button 'Extend'
-Button 'Filter', stock image 'gtk-find'
+Radio button 'Discard' (checked) (tooltip 'Show all tests which match the criteria, and hide all those that do not.') , Radio button 'Refine' (tooltip 'Hide all tests which do not match the criteria. Do not show any tests that aren't already shown.') , Radio button 'Extend' (tooltip 'Show all tests which match the criteria. Do not hide any tests that are currently shown.')
+Button 'Filter', stock image 'gtk-find' (tooltip 'filter tests to show only those indicated')
 
-Changing GUI status to: 'TextTest started at 18May17:37:26.'
+Changing GUI status to: 'TextTest started at 01Jun11:38:35.'
 
 Changing GUI status to: 'Reading tests ...'
 
-Changing GUI status to: 'Reading tests completed at 18May17:37:27.'
+Changing GUI status to: 'Reading tests completed at 01Jun11:38:35.'
 
 Test Tree description...
 -> TargetApp (hello)
@@ -211,22 +211,22 @@ Test column header set to 'Tests: 0/4 selected'
 
 Viewing notebook page for 'Selection'
 Viewing table with 9 rows and 2 columns.
-'Tests for version  ' | Text entry (drop-down list containing ['', '<default>'])
-'Test names containing  ' | Text entry
-'Suite names containing  ' | Text entry
-'App names containing  ' | Text entry
+'Tests for version  ' (tooltip 'Select tests for a specific version.') | Text entry (drop-down list containing ['', '<default>'])
+'Test names containing  ' (tooltip 'Select tests for which the name matches the entered text. The text can be a regular expression.') | Text entry
+'Suite names containing  ' (tooltip 'Select tests for which at least one parent suite name matches the entered text. The text can be a regular expression.') | Text entry
+'App names containing  ' (tooltip 'Select tests for which the application name matches the entered text. The text can be a regular expression.') | Text entry
 'Tests listed in file  ' | Text entry , Button '...'
-'Descriptions containing  ' | Text entry
+'Descriptions containing  ' (tooltip 'Select tests for which the description (comment) matches the entered text. The text can be a regular expression.') | Text entry
 'Test-files containing  ' | Text entry
 'Test-file to search  ' | Text entry (set to 'output') (drop-down list containing ['output', 'errors'])
-'Execution time  ' | Text entry
+'Execution time  ' (tooltip 'Specify execution time limits, either as '<min>,<max>', or as a list of comma-separated expressions, such as >=0:45,<=1:00. Digit-only numbers are interpreted as minutes, while colon-separated numbers are interpreted as hours:minutes:seconds.') | Text entry
 .....Selection......
-Check button 'Select in collapsed suites'
-Radio button 'Discard' (checked) , Radio button 'Refine' , Radio button 'Extend' , Radio button 'Exclude'
-Button '_Select', stock image 'gtk-find'
+Check button 'Select in collapsed suites' (tooltip 'Select in currently collapsed suites as well?')
+Radio button 'Discard' (checked) (tooltip 'Unselect all currently selected tests before applying the new selection criteria.') , Radio button 'Refine' (tooltip 'Apply the new selection criteria only to the currently selected tests, to obtain a subselection.') , Radio button 'Extend' (tooltip 'Keep the currently selected tests even if they do not match the new criteria, and extend the selection with all other tests which meet the new criteria.') , Radio button 'Exclude' (tooltip 'After applying the new selection criteria to all tests, unselect the currently selected tests, to exclude them from the new selection.')
+Button '_Select', stock image 'gtk-find' (tooltip 'Select indicated tests')
 .....Filtering......
-Radio button 'Discard' (checked) , Radio button 'Refine' , Radio button 'Extend'
-Button 'Filter', stock image 'gtk-find'
+Radio button 'Discard' (checked) (tooltip 'Show all tests which match the criteria, and hide all those that do not.') , Radio button 'Refine' (tooltip 'Hide all tests which do not match the criteria. Do not show any tests that aren't already shown.') , Radio button 'Extend' (tooltip 'Show all tests which match the criteria. Do not hide any tests that are currently shown.')
+Button 'Filter', stock image 'gtk-find' (tooltip 'filter tests to show only those indicated')
 Expected application event 'all tests to be read' occurred, proceeding.
 
 'set test selection to' event created with arguments 'BothDiff'
@@ -270,8 +270,8 @@ Viewing table with 4 rows and 2 columns.
 'Run this version  ' | Text entry
 'Use checkout  ' | Text entry
 'Run on machine  ' | Text entry (set to 'localhost')
-'Times to run  ' | Text entry (set to '1')
-Button '_Run', stock image 'gtk-execute'
+'Times to run  ' (tooltip 'Set this to some number larger than 1 to run the same test multiple times, for example to try to catch indeterminism in the system under test') | Text entry (set to '1')
+Button '_Run', stock image 'gtk-execute' (tooltip 'Run selected tests')
 
 'enter run this version =' event created with arguments '2'
 
@@ -279,23 +279,23 @@ Button '_Run', stock image 'gtk-execute'
 
 Viewing notebook page for 'Advanced'
 Viewing table with 3 rows and 2 columns.
-'Configure self-diagnostics from  ' | Text entry (set to '/carm/proj/texttest-tmp/geoff/texttest.18May173723.28307/texttest/TestSelf/ChangeTestResults/GUI/SaveMissingVersioned/personaldir/log/logging.debug') (drop-down list containing ['/carm/proj/texttest-tmp/geoff/texttest.18May173723.28307/texttest/TestSelf/ChangeTestResults/GUI/SaveMissingVersioned/personaldir/log/logging.debug', '/users/geoff/work/master/Testing/TextTest/log/logging.debug'])
-'Write self-diagnostics to  ' | Text entry (set to '/carm/proj/texttest-tmp/geoff/texttest.18May173723.28307/texttest/TestSelf/ChangeTestResults/GUI/SaveMissingVersioned/personaldir/log')
+'Configure self-diagnostics from  ' | Text entry (set to '/carm/proj/texttest-tmp/geoff/texttest.01Jun113708.19621/texttest/TestSelf/ChangeTestResults/GUI/SaveMissingVersioned/personaldir/log/logging.debug') (drop-down list containing ['/carm/proj/texttest-tmp/geoff/texttest.01Jun113708.19621/texttest/TestSelf/ChangeTestResults/GUI/SaveMissingVersioned/personaldir/log/logging.debug', '/users/geoff/work/master/Testing/TextTest/log/logging.debug'])
+'Write self-diagnostics to  ' | Text entry (set to '/carm/proj/texttest-tmp/geoff/texttest.01Jun113708.19621/texttest/TestSelf/ChangeTestResults/GUI/SaveMissingVersioned/personaldir/log')
 'Run batch mode session  ' | Text entry
 Check button 'Enable self-diagnostics'
 Check button '(Re-)record command-line or client-server traffic'
 Check button 'Keep temporary write-directories'
 Check button 'Ignore site-specific and personal configuration'
-Button '_Run', stock image 'gtk-execute'
+Button '_Run', stock image 'gtk-execute' (tooltip 'Run selected tests')
 
 'check keep temporary write-directories' event created with arguments ''
 
 'run selected tests' event created with arguments ''
 Adding entry completion 'output' ...
 Adding entry completion '2' ...
-Starting dynamic run of TextTest with arguments ['-g', '-a', 'hello', '-v', '2', '-m', 'localhost', '-cp', '1', '-xr', '/carm/proj/texttest-tmp/geoff/texttest.18May173723.28307/texttest/TestSelf/ChangeTestResults/GUI/SaveMissingVersioned/personaldir/log/logging.debug', '-xw', '/carm/proj/texttest-tmp/geoff/texttest.18May173723.28307/texttest/TestSelf/ChangeTestResults/GUI/SaveMissingVersioned/personaldir/log', '-keeptmp', '-count', '1', '-f', '/carm/proj/texttest-tmp/geoff/texttest.18May173723.28307/texttest/TestSelf/ChangeTestResults/GUI/SaveMissingVersioned/texttesttmp/static_gui.18May173726.28312/dynamic_run1/gui_select', '-fd', '/carm/proj/texttest-tmp/geoff/texttest.18May173723.28307/texttest/TestSelf/ChangeTestResults/GUI/SaveMissingVersioned/texttesttmp/static_gui.18May173726.28312/temporary_filter_files']
+Starting dynamic run of TextTest with arguments ['-g', '-a', 'hello', '-v', '2', '-m', 'localhost', '-cp', '1', '-xr', '/carm/proj/texttest-tmp/geoff/texttest.01Jun113708.19621/texttest/TestSelf/ChangeTestResults/GUI/SaveMissingVersioned/personaldir/log/logging.debug', '-xw', '/carm/proj/texttest-tmp/geoff/texttest.01Jun113708.19621/texttest/TestSelf/ChangeTestResults/GUI/SaveMissingVersioned/personaldir/log', '-keeptmp', '-count', '1', '-f', '/carm/proj/texttest-tmp/geoff/texttest.01Jun113708.19621/texttest/TestSelf/ChangeTestResults/GUI/SaveMissingVersioned/texttesttmp/static_gui.01Jun113834.30924/dynamic_run1/gui_select', '-fd', '/carm/proj/texttest-tmp/geoff/texttest.01Jun113708.19621/texttest/TestSelf/ChangeTestResults/GUI/SaveMissingVersioned/texttesttmp/static_gui.01Jun113834.30924/temporary_filter_files']
 
-Changing GUI status to: 'Started HELLO test-case BothDiff at 18May17:37:28.'
+Changing GUI status to: 'Started HELLO test-case BothDiff at 01Jun11:38:36.'
 
 Waiting for application event 'dynamic GUI to be closed' to occur.
 Expected application event 'dynamic GUI to be closed' occurred, proceeding.
@@ -306,7 +306,7 @@ Default action is labelled 'gtk-ok'
 'Version to reconnect to:'
 Text entry
 .....Temporary result directory:......
-Filechooser (choosing from directories ['/carm/proj/texttest-tmp/geoff/texttest.18May173723.28307/texttest/TestSelf/ChangeTestResults/GUI/SaveMissingVersioned/texttesttmp'])
+Filechooser (choosing from directories ['/carm/proj/texttest-tmp/geoff/texttest.01Jun113708.19621/texttest/TestSelf/ChangeTestResults/GUI/SaveMissingVersioned/texttesttmp'])
 .....Recomputation......
 Radio button 'Display results exactly as they were in the original run' (checked)
 Radio button 'Use raw data from the original run, but recompute run-dependent text, known bug information etc.'
@@ -317,9 +317,9 @@ Radio button 'Use raw data from the original run, but recompute run-dependent te
 'choose use raw data from the original run, but recompute run-dependent text, known bug information etc. for recomputation' event created with arguments ''
 
 'press reconnect' event created with arguments ''
-Starting reconnect run of TextTest with arguments ['-g', '-a', 'hello', '-v', '2', '-reconnect', '/carm/proj/texttest-tmp/geoff/texttest.18May173723.28307/texttest/TestSelf/ChangeTestResults/GUI/SaveMissingVersioned/texttesttmp', '-reconnfull', '-count', '1', '-f', '/carm/proj/texttest-tmp/geoff/texttest.18May173723.28307/texttest/TestSelf/ChangeTestResults/GUI/SaveMissingVersioned/texttesttmp/static_gui.18May173726.28312/dynamic_run2/gui_select', '-fd', '/carm/proj/texttest-tmp/geoff/texttest.18May173723.28307/texttest/TestSelf/ChangeTestResults/GUI/SaveMissingVersioned/texttesttmp/static_gui.18May173726.28312/temporary_filter_files']
+Starting reconnect run of TextTest with arguments ['-g', '-a', 'hello', '-v', '2', '-reconnect', '/carm/proj/texttest-tmp/geoff/texttest.01Jun113708.19621/texttest/TestSelf/ChangeTestResults/GUI/SaveMissingVersioned/texttesttmp', '-reconnfull', '-count', '1', '-f', '/carm/proj/texttest-tmp/geoff/texttest.01Jun113708.19621/texttest/TestSelf/ChangeTestResults/GUI/SaveMissingVersioned/texttesttmp/static_gui.01Jun113834.30924/dynamic_run2/gui_select', '-fd', '/carm/proj/texttest-tmp/geoff/texttest.01Jun113708.19621/texttest/TestSelf/ChangeTestResults/GUI/SaveMissingVersioned/texttesttmp/static_gui.01Jun113834.30924/temporary_filter_files']
 
-Changing GUI status to: 'Reconnected to HELLO test-case BothDiff at 18May17:37:30.'
+Changing GUI status to: 'Reconnected to HELLO test-case BothDiff at 01Jun11:38:38.'
 
 Waiting for application event 'reconnect GUI to be closed' to occur.
 Expected application event 'reconnect GUI to be closed' occurred, proceeding.
