@@ -1,0 +1,254 @@
+# Log4Py configuration file
+#
+# The "Default" Sections contains default settings which can be overwritten
+# by settings for different instances (see bottom of file)
+
+[Default]
+
+# Format is the output format of the lines.
+#
+# Possible parameters are:
+#
+#    %C ..... class-name
+#    %D ..... program duration
+#    %d ..... duration for the last step (last output)
+#    %F ..... function name
+#    %L ..... logtype (Error, Warning, ...)
+#    %M ..... message
+#    %N ..... Line-number
+#    %T ..... current time
+#
+# Example formats are:
+#
+#    Short:           %M
+#    Medium:          [ %C.%F ] %D: %M
+#    Long (default):  %T %L %C [%F] - %M
+#    Debug:           %T [%D (%d)] %L %C [%F (%N)] - %M
+
+Format: %C %L - %M
+
+# Target controls the output medium of the logging
+#
+# Possible values are:
+#
+#    stdout (default): Standard output stream
+#    stderr:           Error stream
+#    <filename>        Any other filename
+#
+# Multiple targets can be specified as comma seperated list
+
+# Write to stdout, by default
+Target: stdout
+
+# Use ansi colors. Possible values are True or False (default)
+
+Ansi: False
+
+# TimeFormat is the format of the date and time as used by the
+# Python strftime() function
+
+TimeFormat: %d.%m.%Y %H:%M:%S
+
+# LogLevel controls the level of what you want to see
+#
+# Possible values are:
+#
+#    None:             No output (silent mode)
+#    Normal (default): Information- and Errormessages
+#    Verbose:          Information-, Error- and Warningmessages
+#    Debug:            Information-, Error-, Warning- and Debugmessages
+
+LogLevel: None
+
+# This is a section for the TextTest framework. Configurations should add their own as appropriate.
+# If you're going to write to a file, it's generally best to use the environment variable
+# $TEXTTEST_PERSONAL_LOG as a directory
+
+# The following diagnostics are available for the generic TextTest modules:
+[action runner]
+Target: $TEXTTEST_PERSONAL_LOG/actionrunner.diag
+LogLevel: None
+
+[application]
+Target: $TEXTTEST_PERSONAL_LOG/application.diag
+LogLevel: None
+
+[batch collect]
+Target: $TEXTTEST_PERSONAL_LOG/batchcollect.diag
+LogLevel: None
+
+[catalogues]
+Target: $TEXTTEST_PERSONAL_LOG/catalogues.diag
+LogLevel: None
+
+[check for bugs]
+Target: $TEXTTEST_PERSONAL_LOG/checkforbugs.diag
+LogLevel: None
+
+[collate files]
+Target: $TEXTTEST_PERSONAL_LOG/collatefiles.diag
+LogLevel: None
+
+[dynamic gui behaviour]
+Target: $TEXTTEST_PERSONAL_LOG/dynamicguibehaviour.diag
+LogLevel: Normal
+
+[grep filter]
+Target: $TEXTTEST_PERSONAL_LOG/grepfilter.diag
+LogLevel: Normal
+
+[gui notebook]
+#Target: $TEXTTEST_PERSONAL_LOG/notebook.diag
+LogLevel: Normal
+
+[environment creator]
+Target: $TEXTTEST_PERSONAL_LOG/environmentcreator.diag
+LogLevel: None
+
+[filecomparison]
+Target: $TEXTTEST_PERSONAL_LOG/filecomparison.diag
+LogLevel: Normal
+
+[find applications]
+Target: $TEXTTEST_PERSONAL_LOG/actionrunner.diag
+LogLevel: Normal
+
+[generatewebpages]
+Target: $TEXTTEST_PERSONAL_LOG/generatewebpages.diag
+LogLevel: None
+
+[known bugs]
+Target: $TEXTTEST_PERSONAL_LOG/knownbugs.diag
+LogLevel: None
+
+[mail sender]
+Target: $TEXTTEST_PERSONAL_LOG/mailsender.diag
+LogLevel: None
+
+[makeperformance]
+Target: $TEXTTEST_PERSONAL_LOG/makeperformance.diag
+LogLevel: None
+
+[option finder]
+Target: $TEXTTEST_PERSONAL_LOG/optionfinder.diag
+LogLevel: None
+
+[performance]
+Target: $TEXTTEST_PERSONAL_LOG/performance.diag
+LogLevel: None
+
+[prepare writedir]
+Target: $TEXTTEST_PERSONAL_LOG/preparewritedir.diag
+LogLevel: None
+
+[queue system submit]
+Target: $TEXTTEST_PERSONAL_LOG/queuesystemsubmit.diag
+LogLevel: Normal
+
+[read environment]
+Target: $TEXTTEST_PERSONAL_LOG/readenvironment.diag
+LogLevel: None
+
+[reconnection]
+Target: $TEXTTEST_PERSONAL_LOG/reconnection.diag
+LogLevel: Normal
+
+[run dependent text]
+Target: $TEXTTEST_PERSONAL_LOG/rundependenttext.diag
+LogLevel: Normal
+
+[run test]
+Target: $TEXTTEST_PERSONAL_LOG/runtest.diag
+LogLevel: None
+
+[slave server]
+Target: $TEXTTEST_PERSONAL_LOG/slaveserver.diag
+LogLevel: None
+
+[standard log]
+LogLevel: Normal
+
+[static gui behaviour]
+#Target: $TEXTTEST_PERSONAL_LOG/selecttests.diag
+LogLevel: Normal
+
+[test objects]
+Target: $TEXTTEST_PERSONAL_LOG/testobjects.diag
+LogLevel: None
+
+[testcomparison]
+Target: $TEXTTEST_PERSONAL_LOG/testcomparison.diag
+LogLevel: Normal
+
+[traffic server]
+Target: $TEXTTEST_PERSONAL_LOG/trafficserver.diag
+LogLevel: Normal
+
+[unique names]
+Target: $TEXTTEST_PERSONAL_LOG/uniquenames.diag
+LogLevel: None
+
+[use-case log]
+Target: $TEXTTEST_PERSONAL_LOG/use-caselog.diag
+LogLevel: None
+
+[virtual display]
+Target: $TEXTTEST_PERSONAL_LOG/virtualdisplay.diag
+LogLevel: Normal
+
+[windows processes]
+Target: $TEXTTEST_PERSONAL_LOG/windowsprocesses.diag
+LogLevel: None
+
+# The following diagnostics are specific to Carmen configurations:
+[apc airport]
+Target: $TEXTTEST_PERSONAL_LOG/apcairport.diag
+LogLevel: None
+
+[apccompilerules]
+Target: $TEXTTEST_PERSONAL_LOG/apccompilerules.diag
+LogLevel: None
+
+[compile rules]
+Target: $TEXTTEST_PERSONAL_LOG/compilerules.diag
+LogLevel: Normal
+
+[configetable]
+Target: $TEXTTEST_PERSONAL_LOG/configetable.diag
+LogLevel: None
+
+[extractapclogs]
+Target: $TEXTTEST_PERSONAL_LOG/extractapclogs.diag
+LogLevel: None
+
+[filter rule builds]
+Target: $TEXTTEST_PERSONAL_LOG/filterrulebuilds.diag
+LogLevel: None
+
+[log file finder]
+Target: $TEXTTEST_PERSONAL_LOG/logfilefinder.diag
+LogLevel: None
+
+[optimization]
+Target: $TEXTTEST_PERSONAL_LOG/optimization.diag
+LogLevel: None
+
+[parallel action]
+Target: $TEXTTEST_PERSONAL_LOG/parallelaction.diag
+LogLevel: None
+
+[rule job names]
+Target: $TEXTTEST_PERSONAL_LOG/rulejobnames.diag
+LogLevel: None
+
+[synchroniser]
+Target: $TEXTTEST_PERSONAL_LOG/synchroniser.diag
+LogLevel: None
+
+[test graph]
+Target: $TEXTTEST_PERSONAL_LOG/testgraph.diag
+LogLevel: None
+
+[select tests]
+Target: $TEXTTEST_PERSONAL_LOG/selecttests.diag
+LogLevel: Normal
