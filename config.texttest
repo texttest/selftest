@@ -39,7 +39,7 @@ output:test-case.* on .*missing results{WORD -6}
 output:test-case.* on .*differences{WORD -5}
 output:test-case.* on .*:${WORD -2}
 output:Killing running test{WORD -1}
-output:[0-9]{2}\.[0-9]{2}\.[0-9]{4} [0-9]{2}:[0-9]{2}:[0-9]{2}\.[0-9]{3}{REPLACE <date> <timestamp>}
+output:[0-9]{4}-[0-9]{2}-[0-9]{2} [0-9]{2}:[0-9]{2}:[0-9]{2},[0-9]{3}{REPLACE <date> <timestamp>}
 # Sometimes needed under heavy machine load
 output:signal 15
 output:signal 9
