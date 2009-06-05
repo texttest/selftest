@@ -1,12 +1,3 @@
-# Cruft that python logging module needs...
-[loggers]
-keys=root,standard log,usecase log,Action Runner,Activator,Check For Bugs,Collate Files,Environment Creator,File View GUI,FileComparison,Filter Actions,Find Applications,GUI notebook,GenerateWebPages,Idle Handlers,Interactive Actions,Mail Sender,Menu Bar,MultiEntryDictionary,Observable,Prepare Writedir,Progress Monitor,Queue System Submit,Reconnection,Run Dependent Text,Save Repository,Select Tests,Slave Server,Test Column GUI,Test Tree,TestComparison,TestPathFilter,Traffic Replay,Traffic Server,Unique Names,application,batch collect,catalogues,check for crashes,gui log,locks,makeperformance,option finder,read environment,run test,test objects,virtual display
-
-[handlers]
-keys=root,stdout,standard log,usecase log,Action Runner,Activator,Check For Bugs,Collate Files,Environment Creator,File View GUI,FileComparison,Filter Actions,Find Applications,GUI notebook,GenerateWebPages,Idle Handlers,Interactive Actions,Mail Sender,Menu Bar,MultiEntryDictionary,Observable,Prepare Writedir,Progress Monitor,Queue System Submit,Reconnection,Run Dependent Text,Save Repository,Select Tests,Slave Server,Test Column GUI,Test Tree,TestComparison,TestPathFilter,Traffic Replay,Traffic Server,Unique Names,application,batch collect,catalogues,check for crashes,gui log,locks,makeperformance,option finder,read environment,run test,test objects,virtual display
-
-[formatters]
-keys=timed,debug
 
 [logger_root]
 handlers=root
@@ -50,7 +41,7 @@ qualname=Action Runner
 [handler_Action Runner]
 class=FileHandler
 formatter=debug
-args=('/dev/null', 'a')
+args=(os.devnull, 'a')
 #args=('actionrunner.texttest', 'a')
 
 # ======= Section for Activator ======
@@ -62,7 +53,7 @@ qualname=Activator
 [handler_Activator]
 class=FileHandler
 formatter=debug
-args=('/dev/null', 'a')
+args=(os.devnull, 'a')
 #args=('activator.texttest', 'a')
 
 # ======= Section for Check For Bugs ======
@@ -74,7 +65,7 @@ qualname=Check For Bugs
 [handler_Check For Bugs]
 class=FileHandler
 formatter=debug
-args=('/dev/null', 'a')
+args=(os.devnull, 'a')
 #args=('checkforbugs.texttest', 'a')
 
 # ======= Section for Collate Files ======
@@ -86,7 +77,7 @@ qualname=Collate Files
 [handler_Collate Files]
 class=FileHandler
 formatter=debug
-args=('/dev/null', 'a')
+args=(os.devnull, 'a')
 #args=('collatefiles.texttest', 'a')
 
 # ======= Section for Environment Creator ======
@@ -98,7 +89,7 @@ qualname=Environment Creator
 [handler_Environment Creator]
 class=FileHandler
 formatter=debug
-args=('/dev/null', 'a')
+args=(os.devnull, 'a')
 #args=('environmentcreator.texttest', 'a')
 
 # ======= Section for File View GUI ======
@@ -110,7 +101,7 @@ qualname=File View GUI
 [handler_File View GUI]
 class=FileHandler
 formatter=debug
-args=('/dev/null', 'a')
+args=(os.devnull, 'a')
 #args=('fileviewgui.texttest', 'a')
 
 # ======= Section for FileComparison ======
@@ -122,7 +113,7 @@ qualname=FileComparison
 [handler_FileComparison]
 class=FileHandler
 formatter=debug
-args=('/dev/null', 'a')
+args=(os.devnull, 'a')
 #args=('filecomparison.texttest', 'a')
 
 # ======= Section for Filter Actions ======
@@ -134,7 +125,7 @@ qualname=Filter Actions
 [handler_Filter Actions]
 class=FileHandler
 formatter=debug
-args=('/dev/null', 'a')
+args=(os.devnull, 'a')
 #args=('filteractions.texttest', 'a')
 
 # ======= Section for Find Applications ======
@@ -146,7 +137,7 @@ qualname=Find Applications
 [handler_Find Applications]
 class=FileHandler
 formatter=debug
-args=('/dev/null', 'a')
+args=(os.devnull, 'a')
 #args=('findapplications.texttest', 'a')
 
 # ======= Section for GUI notebook ======
@@ -158,7 +149,7 @@ qualname=GUI notebook
 [handler_GUI notebook]
 class=FileHandler
 formatter=debug
-args=('/dev/null', 'a')
+args=(os.devnull, 'a')
 #args=('guinotebook.texttest', 'a')
 
 # ======= Section for GenerateWebPages ======
@@ -170,7 +161,7 @@ qualname=GenerateWebPages
 [handler_GenerateWebPages]
 class=FileHandler
 formatter=debug
-args=('/dev/null', 'a')
+args=(os.devnull, 'a')
 #args=('generatewebpages.texttest', 'a')
 
 # ======= Section for Idle Handlers ======
@@ -182,7 +173,7 @@ qualname=Idle Handlers
 [handler_Idle Handlers]
 class=FileHandler
 formatter=debug
-args=('/dev/null', 'a')
+args=(os.devnull, 'a')
 #args=('idlehandlers.texttest', 'a')
 
 # ======= Section for Interactive Actions ======
@@ -194,7 +185,7 @@ qualname=Interactive Actions
 [handler_Interactive Actions]
 class=FileHandler
 formatter=debug
-args=('/dev/null', 'a')
+args=(os.devnull, 'a')
 #args=('interactiveactions.texttest', 'a')
 
 # ======= Section for Mail Sender ======
@@ -206,7 +197,7 @@ qualname=Mail Sender
 [handler_Mail Sender]
 class=FileHandler
 formatter=debug
-args=('/dev/null', 'a')
+args=(os.devnull, 'a')
 #args=('mailsender.texttest', 'a')
 
 # ======= Section for Menu Bar ======
@@ -218,7 +209,7 @@ qualname=Menu Bar
 [handler_Menu Bar]
 class=FileHandler
 formatter=debug
-args=('/dev/null', 'a')
+args=(os.devnull, 'a')
 #args=('menubar.texttest', 'a')
 
 # ======= Section for MultiEntryDictionary ======
@@ -230,7 +221,7 @@ qualname=MultiEntryDictionary
 [handler_MultiEntryDictionary]
 class=FileHandler
 formatter=debug
-args=('/dev/null', 'a')
+args=(os.devnull, 'a')
 #args=('multientrydictionary.texttest', 'a')
 
 # ======= Section for Observable ======
@@ -242,7 +233,7 @@ qualname=Observable
 [handler_Observable]
 class=FileHandler
 formatter=debug
-args=('/dev/null', 'a')
+args=(os.devnull, 'a')
 #args=('observable.texttest', 'a')
 
 # ======= Section for Prepare Writedir ======
@@ -254,7 +245,7 @@ qualname=Prepare Writedir
 [handler_Prepare Writedir]
 class=FileHandler
 formatter=debug
-args=('/dev/null', 'a')
+args=(os.devnull, 'a')
 #args=('preparewritedir.texttest', 'a')
 
 # ======= Section for Progress Monitor ======
@@ -266,7 +257,7 @@ qualname=Progress Monitor
 [handler_Progress Monitor]
 class=FileHandler
 formatter=debug
-args=('/dev/null', 'a')
+args=(os.devnull, 'a')
 #args=('progressmonitor.texttest', 'a')
 
 # ======= Section for Queue System Submit ======
@@ -278,7 +269,7 @@ qualname=Queue System Submit
 [handler_Queue System Submit]
 class=FileHandler
 formatter=debug
-args=('/dev/null', 'a')
+args=(os.devnull, 'a')
 #args=('queuesystemsubmit.texttest', 'a')
 
 # ======= Section for Reconnection ======
@@ -290,7 +281,7 @@ qualname=Reconnection
 [handler_Reconnection]
 class=FileHandler
 formatter=debug
-args=('/dev/null', 'a')
+args=(os.devnull, 'a')
 #args=('reconnection.texttest', 'a')
 
 # ======= Section for Run Dependent Text ======
@@ -302,7 +293,7 @@ qualname=Run Dependent Text
 [handler_Run Dependent Text]
 class=FileHandler
 formatter=debug
-args=('/dev/null', 'a')
+args=(os.devnull, 'a')
 #args=('rundependenttext.texttest', 'a')
 
 # ======= Section for Save Repository ======
@@ -314,7 +305,7 @@ qualname=Save Repository
 [handler_Save Repository]
 class=FileHandler
 formatter=debug
-args=('/dev/null', 'a')
+args=(os.devnull, 'a')
 #args=('saverepository.texttest', 'a')
 
 # ======= Section for Select Tests ======
@@ -326,7 +317,7 @@ qualname=Select Tests
 [handler_Select Tests]
 class=FileHandler
 formatter=debug
-args=('/dev/null', 'a')
+args=(os.devnull, 'a')
 #args=('selecttests.texttest', 'a')
 
 # ======= Section for Slave Server ======
@@ -338,7 +329,7 @@ qualname=Slave Server
 [handler_Slave Server]
 class=FileHandler
 formatter=debug
-args=('/dev/null', 'a')
+args=(os.devnull, 'a')
 #args=('slaveserver.texttest', 'a')
 
 # ======= Section for Test Column GUI ======
@@ -350,7 +341,7 @@ qualname=Test Column GUI
 [handler_Test Column GUI]
 class=FileHandler
 formatter=debug
-args=('/dev/null', 'a')
+args=(os.devnull, 'a')
 #args=('testcolumngui.texttest', 'a')
 
 # ======= Section for Test Tree ======
@@ -362,7 +353,7 @@ qualname=Test Tree
 [handler_Test Tree]
 class=FileHandler
 formatter=debug
-args=('/dev/null', 'a')
+args=(os.devnull, 'a')
 #args=('testtree.texttest', 'a')
 
 # ======= Section for TestComparison ======
@@ -374,7 +365,7 @@ qualname=TestComparison
 [handler_TestComparison]
 class=FileHandler
 formatter=debug
-args=('/dev/null', 'a')
+args=(os.devnull, 'a')
 #args=('testcomparison.texttest', 'a')
 
 # ======= Section for TestPathFilter ======
@@ -386,7 +377,7 @@ qualname=TestPathFilter
 [handler_TestPathFilter]
 class=FileHandler
 formatter=debug
-args=('/dev/null', 'a')
+args=(os.devnull, 'a')
 #args=('testpathfilter.texttest', 'a')
 
 # ======= Section for Traffic Replay ======
@@ -398,7 +389,7 @@ qualname=Traffic Replay
 [handler_Traffic Replay]
 class=FileHandler
 formatter=debug
-args=('/dev/null', 'a')
+args=(os.devnull, 'a')
 #args=('trafficreplay.texttest', 'a')
 
 # ======= Section for Traffic Server ======
@@ -410,7 +401,7 @@ qualname=Traffic Server
 [handler_Traffic Server]
 class=FileHandler
 formatter=debug
-args=('/dev/null', 'a')
+args=(os.devnull, 'a')
 #args=('trafficserver.texttest', 'a')
 
 # ======= Section for Unique Names ======
@@ -422,7 +413,7 @@ qualname=Unique Names
 [handler_Unique Names]
 class=FileHandler
 formatter=debug
-args=('/dev/null', 'a')
+args=(os.devnull, 'a')
 #args=('uniquenames.texttest', 'a')
 
 # ======= Section for application ======
@@ -434,7 +425,7 @@ qualname=application
 [handler_application]
 class=FileHandler
 formatter=debug
-args=('/dev/null', 'a')
+args=(os.devnull, 'a')
 #args=('application.texttest', 'a')
 
 # ======= Section for batch collect ======
@@ -446,7 +437,7 @@ qualname=batch collect
 [handler_batch collect]
 class=FileHandler
 formatter=debug
-args=('/dev/null', 'a')
+args=(os.devnull, 'a')
 #args=('batchcollect.texttest', 'a')
 
 # ======= Section for catalogues ======
@@ -458,7 +449,7 @@ qualname=catalogues
 [handler_catalogues]
 class=FileHandler
 formatter=debug
-args=('/dev/null', 'a')
+args=(os.devnull, 'a')
 #args=('catalogues.texttest', 'a')
 
 # ======= Section for check for crashes ======
@@ -470,7 +461,7 @@ qualname=check for crashes
 [handler_check for crashes]
 class=FileHandler
 formatter=debug
-args=('/dev/null', 'a')
+args=(os.devnull, 'a')
 #args=('checkforcrashes.texttest', 'a')
 
 # ======= Section for gui log ======
@@ -482,7 +473,7 @@ qualname=gui log
 [handler_gui log]
 class=FileHandler
 formatter=debug
-args=('/dev/null', 'a')
+args=(os.devnull, 'a')
 #args=('guilog.texttest', 'a')
 
 # ======= Section for locks ======
@@ -494,7 +485,7 @@ qualname=locks
 [handler_locks]
 class=FileHandler
 formatter=debug
-args=('/dev/null', 'a')
+args=(os.devnull, 'a')
 #args=('locks.texttest', 'a')
 
 # ======= Section for makeperformance ======
@@ -506,7 +497,7 @@ qualname=makeperformance
 [handler_makeperformance]
 class=FileHandler
 formatter=debug
-args=('/dev/null', 'a')
+args=(os.devnull, 'a')
 #args=('makeperformance.texttest', 'a')
 
 # ======= Section for option finder ======
@@ -518,7 +509,7 @@ qualname=option finder
 [handler_option finder]
 class=FileHandler
 formatter=debug
-args=('/dev/null', 'a')
+args=(os.devnull, 'a')
 #args=('optionfinder.texttest', 'a')
 
 # ======= Section for read environment ======
@@ -530,7 +521,7 @@ qualname=read environment
 [handler_read environment]
 class=FileHandler
 formatter=debug
-args=('/dev/null', 'a')
+args=(os.devnull, 'a')
 #args=('readenvironment.texttest', 'a')
 
 # ======= Section for run test ======
@@ -542,7 +533,7 @@ qualname=run test
 [handler_run test]
 class=FileHandler
 formatter=debug
-args=('/dev/null', 'a')
+args=(os.devnull, 'a')
 #args=('runtest.texttest', 'a')
 
 # ======= Section for test objects ======
@@ -554,7 +545,7 @@ qualname=test objects
 [handler_test objects]
 class=FileHandler
 formatter=debug
-args=('/dev/null', 'a')
+args=(os.devnull, 'a')
 #args=('testobjects.texttest', 'a')
 
 # ======= Section for virtual display ======
@@ -566,6 +557,16 @@ qualname=virtual display
 [handler_virtual display]
 class=FileHandler
 formatter=debug
-args=('/dev/null', 'a')
+args=(os.devnull, 'a')
 #args=('virtualdisplay.texttest', 'a')
+
+# ====== Cruft that python logging module needs ======
+[loggers]
+keys=root,standard log,usecase log,Action Runner,Activator,Check For Bugs,Collate Files,Environment Creator,File View GUI,FileComparison,Filter Actions,Find Applications,GUI notebook,GenerateWebPages,Idle Handlers,Interactive Actions,Mail Sender,Menu Bar,MultiEntryDictionary,Observable,Prepare Writedir,Progress Monitor,Queue System Submit,Reconnection,Run Dependent Text,Save Repository,Select Tests,Slave Server,Test Column GUI,Test Tree,TestComparison,TestPathFilter,Traffic Replay,Traffic Server,Unique Names,application,batch collect,catalogues,check for crashes,gui log,locks,makeperformance,option finder,read environment,run test,test objects,virtual display
+
+[handlers]
+keys=root,Action Runner,Activator,Check For Bugs,Collate Files,Environment Creator,File View GUI,FileComparison,Filter Actions,Find Applications,GUI notebook,GenerateWebPages,Idle Handlers,Interactive Actions,Mail Sender,Menu Bar,MultiEntryDictionary,Observable,Prepare Writedir,Progress Monitor,Queue System Submit,Reconnection,Run Dependent Text,Save Repository,Select Tests,Slave Server,Test Column GUI,Test Tree,TestComparison,TestPathFilter,Traffic Replay,Traffic Server,Unique Names,application,batch collect,catalogues,check for crashes,gui log,locks,makeperformance,option finder,read environment,run test,stdout,test objects,virtual display
+
+[formatters]
+keys=timed,debug
 
