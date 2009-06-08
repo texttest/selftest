@@ -4,9 +4,9 @@ Enabling entry completion, using matching 1
 Adding entry completion '<default>' ...
 Adding entry completion 'localhost' ...
 Adding entry completion '1' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.01Jun113708.19621/texttest.bzr/VersionControl/General/StatusFromLog/log/logging.debug' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.08Jun165020.16503/texttest.bzr/VersionControl/General/StatusFromLog/log/logging.debug' ...
 Adding entry completion '/users/geoff/work/master/Testing/TextTest/log/logging.debug' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.01Jun113708.19621/texttest.bzr/VersionControl/General/StatusFromLog/log' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.08Jun165020.16503/texttest.bzr/VersionControl/General/StatusFromLog/log' ...
 Top Window title is TextTest static GUI : management of tests for HELLO
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
@@ -255,11 +255,11 @@ Button '_Select', stock image 'gtk-find' (tooltip 'Select indicated tests')
 Radio button 'Discard' (checked) (tooltip 'Show all tests which match the criteria, and hide all those that do not.') , Radio button 'Refine' (tooltip 'Hide all tests which do not match the criteria. Do not show any tests that aren't already shown.') , Radio button 'Extend' (tooltip 'Show all tests which match the criteria. Do not hide any tests that are currently shown.')
 Button 'Filter', stock image 'gtk-find' (tooltip 'filter tests to show only those indicated')
 
-Changing GUI status to: 'TextTest started at 01Jun11:38:04.'
+Changing GUI status to: 'TextTest started at 08Jun16:50:31.'
 
 Changing GUI status to: 'Reading tests ...'
 
-Changing GUI status to: 'Reading tests completed at 01Jun11:38:04.'
+Changing GUI status to: 'Reading tests completed at 08Jun16:50:31.'
 
 Test Tree description...
 -> TargetApp (hello)
@@ -326,10 +326,10 @@ Adding file output.hello.version under heading 'Standard Files', coloured grey90
 
 Pane separator positioned 46% from the top
 
----------- Text Info Window ----------
+========== Text View ==========
 Description:
 <No description provided>
---------------------------------------
+===============================
 
 Tabs showing : Test, Selection, Running, Config
 
@@ -343,19 +343,20 @@ Changing GUI status to: 'Analyzing logs for output.hello in test Test1'
 Changing GUI status to: 'Analyzing logs for output.hello.version in test Test1'
 ---------- Dialog 'Bazaar Log for the selected files' ----------
 Default action is labelled 'gtk-close'
-Using Tree View layout with icon 'gtk-dialog-warning', header :
-Bazaar logs shown below.
+Stock image 'gtk-dialog-warning' , 'Bazaar logs shown below.
 Some files/directories were not under Bazaar control.
 Bazaar command used: bzr log
-Subdirectories were ignored, use Bazaar Log Recursive to get the logs for all subdirectories.
+Subdirectories were ignored, use Bazaar Log Recursive to get the logs for all subdirectories.'
+Showing Tree View with columns: File , Last revision committed (UTC)
+-> <span weight='bold'>TargetApp</span> | 
+->   <span weight='bold'>Test1</span> | 
+->     errors.hello | <span weight='bold'>2 days ago</span>
+->     output.hello | Thu Feb 19 19:26:26 2009
+->     output.hello.version | Not in Bazaar
 
-Bazaar tree view dialog: Adding <span weight='bold'>TargetApp</span> as root, info <span weight='bold'>2 days ago</span>
-Bazaar tree view dialog: Adding <span weight='bold'>Test1</span> as child of /carm/proj/texttest-tmp/geoff/texttest.01Jun113708.19621/texttest.bzr/VersionControl/General/StatusFromLog/TargetApp, info <span weight='bold'>2 days ago</span>
-Bazaar tree view dialog: Adding errors.hello as child of /carm/proj/texttest-tmp/geoff/texttest.01Jun113708.19621/texttest.bzr/VersionControl/General/StatusFromLog/TargetApp/Test1, info <span weight='bold'>2 days ago</span>
-Bazaar tree view dialog: Adding output.hello as child of /carm/proj/texttest-tmp/geoff/texttest.01Jun113708.19621/texttest.bzr/VersionControl/General/StatusFromLog/TargetApp/Test1, info Thu Feb 19 19:26:26 2009
-Bazaar tree view dialog: Adding output.hello.version as child of /carm/proj/texttest-tmp/geoff/texttest.01Jun113708.19621/texttest.bzr/VersionControl/General/StatusFromLog/TargetApp/Test1, info Not in Bazaar
-Bazaar tree view dialog: Showing two columns
-Bazaar tree view dialog: Showing Bazaar output
+------------------------------ (vertical pane separator)
+
+========== Text View ==========
 ------------------------------------------------------------
 revno: 4
 committer: geoff
@@ -370,6 +371,12 @@ branch nick: HEAD
 timestamp: Thu 2009-02-19 19:26:26 +0000
 message:
   Initial revision
+===============================
+Button '_Status'
+Button '_Annotate'
+Button '_Differences' , ' between revisions ' , Text entry (set to '-1') , ' and ' , Text entry
+---------------
+Button 'gtk-close', stock image 'gtk-close'
 ----------------------------------------------------------------
 
 Changing GUI status to: 'Performed version control log for the selected files.'
@@ -377,18 +384,25 @@ Changing GUI status to: 'Performed version control log for the selected files.'
 'show version control status' event created with arguments ''
 ---------- Dialog 'Bazaar Status for the selected files' ----------
 Default action is labelled 'gtk-close'
-Using Tree View layout with icon 'gtk-dialog-info', header :
-Bazaar status shown below.
+Stock image 'gtk-dialog-info' , 'Bazaar status shown below.
 Bazaar command used: bzr status
-Subdirectories were ignored, use Bazaar Status Recursive to get the status for all subdirectories.
+Subdirectories were ignored, use Bazaar Status Recursive to get the status for all subdirectories.'
+Showing Tree View with columns: File , Information
+-> <span weight='bold'>TargetApp</span> | 
+->   <span weight='bold'>Test1</span> | 
+->     errors.hello | <span weight='bold'>Modified</span>
 
-Bazaar tree view dialog: Adding <span weight='bold'>TargetApp</span> as root, info <span weight='bold'>Modified</span>
-Bazaar tree view dialog: Adding <span weight='bold'>Test1</span> as child of /carm/proj/texttest-tmp/geoff/texttest.01Jun113708.19621/texttest.bzr/VersionControl/General/StatusFromLog/TargetApp, info <span weight='bold'>Modified</span>
-Bazaar tree view dialog: Adding errors.hello as child of /carm/proj/texttest-tmp/geoff/texttest.01Jun113708.19621/texttest.bzr/VersionControl/General/StatusFromLog/TargetApp/Test1, info <span weight='bold'>Modified</span>
-Bazaar tree view dialog: Showing two columns
-Bazaar tree view dialog: Showing Bazaar output
+------------------------------ (vertical pane separator)
+
+========== Text View ==========
 modified:
   TargetApp/Test1/errors.hello
+===============================
+Button '_Log'
+Button '_Annotate'
+Button '_Differences' , ' between revisions ' , Text entry (set to '-1') , ' and ' , Text entry
+---------------
+Button 'gtk-close', stock image 'gtk-close'
 -------------------------------------------------------------------
 
 'press close' event created with arguments ''

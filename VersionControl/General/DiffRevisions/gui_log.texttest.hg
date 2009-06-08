@@ -4,9 +4,9 @@ Enabling entry completion, using matching 1
 Adding entry completion '<default>' ...
 Adding entry completion 'localhost' ...
 Adding entry completion '1' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.01Jun113708.19621/texttest.hg/VersionControl/General/DiffRevisions/log/logging.debug' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.08Jun165020.16503/texttest.hg/VersionControl/General/DiffRevisions/log/logging.debug' ...
 Adding entry completion '/users/geoff/work/master/Testing/TextTest/log/logging.debug' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.01Jun113708.19621/texttest.hg/VersionControl/General/DiffRevisions/log' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.08Jun165020.16503/texttest.hg/VersionControl/General/DiffRevisions/log' ...
 Top Window title is TextTest static GUI : management of tests for HELLO
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
@@ -255,11 +255,11 @@ Button '_Select', stock image 'gtk-find' (tooltip 'Select indicated tests')
 Radio button 'Discard' (checked) (tooltip 'Show all tests which match the criteria, and hide all those that do not.') , Radio button 'Refine' (tooltip 'Hide all tests which do not match the criteria. Do not show any tests that aren't already shown.') , Radio button 'Extend' (tooltip 'Show all tests which match the criteria. Do not hide any tests that are currently shown.')
 Button 'Filter', stock image 'gtk-find' (tooltip 'filter tests to show only those indicated')
 
-Changing GUI status to: 'TextTest started at 01Jun11:38:06.'
+Changing GUI status to: 'TextTest started at 08Jun16:50:33.'
 
 Changing GUI status to: 'Reading tests ...'
 
-Changing GUI status to: 'Reading tests completed at 01Jun11:38:06.'
+Changing GUI status to: 'Reading tests completed at 08Jun16:50:33.'
 
 Test Tree description...
 -> TargetApp (hello)
@@ -327,10 +327,10 @@ Adding file output.hello under heading 'Standard Files', coloured grey90
 
 Pane separator positioned 46% from the top
 
----------- Text Info Window ----------
+========== Text View ==========
 Description:
 Copy of Test1
---------------------------------------
+===============================
 
 Tabs showing : Test, Selection, Running, Config
 
@@ -342,18 +342,25 @@ Changing GUI status to: 'Analyzing status for errors.hello in test Test2'
 Changing GUI status to: 'Analyzing status for output.hello in test Test2'
 ---------- Dialog 'Mercurial Status for the selected files' ----------
 Default action is labelled 'gtk-close'
-Using Tree View layout with icon 'gtk-dialog-info', header :
-Mercurial status shown below.
+Stock image 'gtk-dialog-info' , 'Mercurial status shown below.
 Mercurial command used: hg status -A
-Subdirectories were ignored, use Mercurial Status Recursive to get the status for all subdirectories.
+Subdirectories were ignored, use Mercurial Status Recursive to get the status for all subdirectories.'
+Showing Tree View with columns: File , Information
+-> <span weight='bold'>TargetApp</span> | 
+->   <span weight='bold'>Test2</span> | 
+->     errors.hello | Unchanged
+->     output.hello | <span weight='bold'>Modified</span>
 
-Mercurial tree view dialog: Adding <span weight='bold'>TargetApp</span> as root, info Unchanged
-Mercurial tree view dialog: Adding <span weight='bold'>Test2</span> as child of /carm/proj/texttest-tmp/geoff/texttest.01Jun113708.19621/texttest.hg/VersionControl/General/DiffRevisions/TargetApp, info Unchanged
-Mercurial tree view dialog: Adding errors.hello as child of /carm/proj/texttest-tmp/geoff/texttest.01Jun113708.19621/texttest.hg/VersionControl/General/DiffRevisions/TargetApp/Test2, info Unchanged
-Mercurial tree view dialog: Adding output.hello as child of /carm/proj/texttest-tmp/geoff/texttest.01Jun113708.19621/texttest.hg/VersionControl/General/DiffRevisions/TargetApp/Test2, info <span weight='bold'>Modified</span>
-Mercurial tree view dialog: Showing two columns
-Mercurial tree view dialog: Showing Mercurial output
+------------------------------ (vertical pane separator)
+
+========== Text View ==========
 C TargetApp/Test2/errors.hello
+===============================
+Button '_Log'
+Button '_Annotate'
+Button '_Differences' , ' between revisions ' , Text entry (set to 'tip') , ' and ' , Text entry
+---------------
+Button 'gtk-close', stock image 'gtk-close'
 ----------------------------------------------------------------------
 
 Changing GUI status to: 'Performed version control status for the selected files.'
@@ -367,15 +374,17 @@ M TargetApp/Test2/output.hello
 'show version control differences' event created with arguments ''
 ---------- Dialog 'Mercurial Difference for the selected files' ----------
 Default action is labelled 'gtk-close'
-Using Tree View layout with icon 'gtk-dialog-warning', header :
-Mercurial differences between revision 1 and the local file shown below.
+Stock image 'gtk-dialog-warning' , 'Mercurial differences between revision 1 and the local file shown below.
 Mercurial command used: hg diff -g -r 1
-Subdirectories were ignored, use Mercurial Difference Recursive to get the differences for all subdirectories.
+Subdirectories were ignored, use Mercurial Difference Recursive to get the differences for all subdirectories.'
+Showing Tree View with columns: File
+-> <span weight='bold'>TargetApp</span>
+->   <span weight='bold'>Test2</span>
+->     output.hello
 
-Mercurial tree view dialog: Adding <span weight='bold'>TargetApp</span> as root
-Mercurial tree view dialog: Adding <span weight='bold'>Test2</span> as child of /carm/proj/texttest-tmp/geoff/texttest.01Jun113708.19621/texttest.hg/VersionControl/General/DiffRevisions/TargetApp
-Mercurial tree view dialog: Adding output.hello as child of /carm/proj/texttest-tmp/geoff/texttest.01Jun113708.19621/texttest.hg/VersionControl/General/DiffRevisions/TargetApp/Test2
-Mercurial tree view dialog: Showing Mercurial output
+------------------------------ (vertical pane separator)
+
+========== Text View ==========
 diff --git a/Test2/output.hello b/TargetApp/Test2/output.hello
 copy from Test2/output.hello
 copy to TargetApp/Test2/output.hello
@@ -384,6 +393,13 @@ copy to TargetApp/Test2/output.hello
 @@ -1,1 +1,1 @@
 -Hello
 +Hello uncommitted update!
+===============================
+Button '_Status'
+Button '_Log'
+Button '_Annotate'
+Button '_Graphical Diffs'
+---------------
+Button 'gtk-close', stock image 'gtk-close'
 --------------------------------------------------------------------------
 
 'press close' event created with arguments ''
@@ -395,15 +411,17 @@ copy to TargetApp/Test2/output.hello
 'show version control differences' event created with arguments ''
 ---------- Dialog 'Mercurial Difference for the selected files' ----------
 Default action is labelled 'gtk-close'
-Using Tree View layout with icon 'gtk-dialog-warning', header :
-Mercurial differences between the local file and revision 1 shown below.
+Stock image 'gtk-dialog-warning' , 'Mercurial differences between the local file and revision 1 shown below.
 Mercurial command used: hg diff -g -r 1
-Subdirectories were ignored, use Mercurial Difference Recursive to get the differences for all subdirectories.
+Subdirectories were ignored, use Mercurial Difference Recursive to get the differences for all subdirectories.'
+Showing Tree View with columns: File
+-> <span weight='bold'>TargetApp</span>
+->   <span weight='bold'>Test2</span>
+->     output.hello
 
-Mercurial tree view dialog: Adding <span weight='bold'>TargetApp</span> as root
-Mercurial tree view dialog: Adding <span weight='bold'>Test2</span> as child of /carm/proj/texttest-tmp/geoff/texttest.01Jun113708.19621/texttest.hg/VersionControl/General/DiffRevisions/TargetApp
-Mercurial tree view dialog: Adding output.hello as child of /carm/proj/texttest-tmp/geoff/texttest.01Jun113708.19621/texttest.hg/VersionControl/General/DiffRevisions/TargetApp/Test2
-Mercurial tree view dialog: Showing Mercurial output
+------------------------------ (vertical pane separator)
+
+========== Text View ==========
 diff --git a/Test2/output.hello b/TargetApp/Test2/output.hello
 copy from Test2/output.hello
 copy to TargetApp/Test2/output.hello
@@ -412,6 +430,13 @@ copy to TargetApp/Test2/output.hello
 @@ -1,1 +1,1 @@
 -Hello
 +Hello uncommitted update!
+===============================
+Button '_Status'
+Button '_Log'
+Button '_Annotate'
+Button '_Graphical Diffs'
+---------------
+Button 'gtk-close', stock image 'gtk-close'
 --------------------------------------------------------------------------
 
 'press close' event created with arguments ''
@@ -421,21 +446,30 @@ copy to TargetApp/Test2/output.hello
 'show version control differences' event created with arguments ''
 ---------- Dialog 'Mercurial Difference for the selected files' ----------
 Default action is labelled 'gtk-close'
-Using Tree View layout with icon 'gtk-dialog-warning', header :
-Mercurial differences between revisions tip and 1 shown below.
+Stock image 'gtk-dialog-warning' , 'Mercurial differences between revisions tip and 1 shown below.
 Mercurial command used: hg diff -g -r tip -r 1
-Subdirectories were ignored, use Mercurial Difference Recursive to get the differences for all subdirectories.
+Subdirectories were ignored, use Mercurial Difference Recursive to get the differences for all subdirectories.'
+Showing Tree View with columns: File
+-> <span weight='bold'>TargetApp</span>
+->   <span weight='bold'>Test2</span>
+->     output.hello
 
-Mercurial tree view dialog: Adding <span weight='bold'>TargetApp</span> as root
-Mercurial tree view dialog: Adding <span weight='bold'>Test2</span> as child of /carm/proj/texttest-tmp/geoff/texttest.01Jun113708.19621/texttest.hg/VersionControl/General/DiffRevisions/TargetApp
-Mercurial tree view dialog: Adding output.hello as child of /carm/proj/texttest-tmp/geoff/texttest.01Jun113708.19621/texttest.hg/VersionControl/General/DiffRevisions/TargetApp/Test2
-Mercurial tree view dialog: Showing Mercurial output
+------------------------------ (vertical pane separator)
+
+========== Text View ==========
 diff --git a/TargetApp/Test2/output.hello b/TargetApp/Test2/output.hello
 deleted file mode 100644
 --- a/TargetApp/Test2/output.hello
 +++ /dev/null
 @@ -1,1 +0,0 @@
 -Hello current version!
+===============================
+Button '_Status'
+Button '_Log'
+Button '_Annotate'
+Button '_Graphical Diffs'
+---------------
+Button 'gtk-close', stock image 'gtk-close'
 --------------------------------------------------------------------------
 
 'press close' event created with arguments ''

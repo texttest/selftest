@@ -4,9 +4,9 @@ Enabling entry completion, using matching 1
 Adding entry completion '<default>' ...
 Adding entry completion 'localhost' ...
 Adding entry completion '1' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.01Jun113708.19621/texttest.cvs/VersionControl/General/HideCategories/log/logging.debug' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.08Jun165020.16503/texttest.cvs/VersionControl/General/HideCategories/log/logging.debug' ...
 Adding entry completion '/users/geoff/work/master/Testing/TextTest/log/logging.debug' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.01Jun113708.19621/texttest.cvs/VersionControl/General/HideCategories/log' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.08Jun165020.16503/texttest.cvs/VersionControl/General/HideCategories/log' ...
 Top Window title is TextTest static GUI : management of tests for HELLO
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
@@ -259,11 +259,11 @@ Button '_Select', stock image 'gtk-find' (tooltip 'Select indicated tests')
 Radio button 'Discard' (checked) (tooltip 'Show all tests which match the criteria, and hide all those that do not.') , Radio button 'Refine' (tooltip 'Hide all tests which do not match the criteria. Do not show any tests that aren't already shown.') , Radio button 'Extend' (tooltip 'Show all tests which match the criteria. Do not hide any tests that are currently shown.')
 Button 'Filter', stock image 'gtk-find' (tooltip 'filter tests to show only those indicated')
 
-Changing GUI status to: 'TextTest started at 01Jun11:38:03.'
+Changing GUI status to: 'TextTest started at 08Jun16:50:33.'
 
 Changing GUI status to: 'Reading tests ...'
 
-Changing GUI status to: 'Reading tests completed at 01Jun11:38:04.'
+Changing GUI status to: 'Reading tests completed at 08Jun16:50:33.'
 
 Test Tree description...
 -> TargetApp (hello)
@@ -332,10 +332,10 @@ Adding file output.hello under heading 'Standard Files', coloured grey90
 
 Pane separator positioned 46% from the top
 
----------- Text Info Window ----------
+========== Text View ==========
 Description:
 Copy of Test1
---------------------------------------
+===============================
 
 Tabs showing : Test, Selection, Running, Config
 Setting sensitivity of action 'Enter Failure Information' to False
@@ -386,28 +386,29 @@ Changing GUI status to: 'Analyzing status for testsuite.hello in test Subsuite'
 Changing GUI status to: 'Analyzing status for testsuite.hello in test Suite'
 ---------- Dialog 'Recursive CVS Status for the selected files' ----------
 Default action is labelled 'gtk-close'
-Using Tree View layout with icon 'gtk-dialog-warning', header :
-CVS status shown below.
+Stock image 'gtk-dialog-warning' , 'CVS status shown below.
 CVS status found files which are not up-to-date or which have conflicts
 Some files/directories were not under CVS control.
-CVS command used: cvs status
+CVS command used: cvs status'
+Showing Tree View with columns: File , Information
+-> <span weight='bold'>TargetApp</span> | 
+->   <span weight='bold'>Test2</span> | 
+->     errors.hello | Up-to-date
+->     output.hello | <span weight='bold'>Locally Modified</span>
+->   <span weight='bold'>Suite</span> | 
+->     <span weight='bold'>Subsuite</span> | 
+->       <span weight='bold'>Test3</span> | 
+->         errors.hello | Up-to-date
+->         output.hello | <span weight='bold' foreground='red'>Needs Merge</span>
+->       <span weight='bold'>Test4</span> | 
+->         errors.hello | <span weight='bold' foreground='red'>Unknown</span>
+->         output.hello | <span weight='bold' foreground='red'>Unknown</span>
+->       testsuite.hello | <span weight='bold'>Locally Modified</span>
+->     testsuite.hello | Up-to-date
 
-CVS tree view dialog: Adding <span weight='bold'>TargetApp</span> as root, info Up-to-date
-CVS tree view dialog: Adding <span weight='bold'>Test2</span> as child of /carm/proj/texttest-tmp/geoff/texttest.01Jun113708.19621/texttest.cvs/VersionControl/General/HideCategories/TargetApp, info Up-to-date
-CVS tree view dialog: Adding errors.hello as child of /carm/proj/texttest-tmp/geoff/texttest.01Jun113708.19621/texttest.cvs/VersionControl/General/HideCategories/TargetApp/Test2, info Up-to-date
-CVS tree view dialog: Adding output.hello as child of /carm/proj/texttest-tmp/geoff/texttest.01Jun113708.19621/texttest.cvs/VersionControl/General/HideCategories/TargetApp/Test2, info <span weight='bold'>Locally Modified</span>
-CVS tree view dialog: Adding <span weight='bold'>Suite</span> as child of /carm/proj/texttest-tmp/geoff/texttest.01Jun113708.19621/texttest.cvs/VersionControl/General/HideCategories/TargetApp, info Up-to-date
-CVS tree view dialog: Adding <span weight='bold'>Subsuite</span> as child of /carm/proj/texttest-tmp/geoff/texttest.01Jun113708.19621/texttest.cvs/VersionControl/General/HideCategories/TargetApp/Suite, info Up-to-date
-CVS tree view dialog: Adding <span weight='bold'>Test3</span> as child of /carm/proj/texttest-tmp/geoff/texttest.01Jun113708.19621/texttest.cvs/VersionControl/General/HideCategories/TargetApp/Suite/Subsuite, info Up-to-date
-CVS tree view dialog: Adding errors.hello as child of /carm/proj/texttest-tmp/geoff/texttest.01Jun113708.19621/texttest.cvs/VersionControl/General/HideCategories/TargetApp/Suite/Subsuite/Test3, info Up-to-date
-CVS tree view dialog: Adding output.hello as child of /carm/proj/texttest-tmp/geoff/texttest.01Jun113708.19621/texttest.cvs/VersionControl/General/HideCategories/TargetApp/Suite/Subsuite/Test3, info <span weight='bold' foreground='red'>Needs Merge</span>
-CVS tree view dialog: Adding <span weight='bold'>Test4</span> as child of /carm/proj/texttest-tmp/geoff/texttest.01Jun113708.19621/texttest.cvs/VersionControl/General/HideCategories/TargetApp/Suite/Subsuite, info <span weight='bold' foreground='red'>Unknown</span>
-CVS tree view dialog: Adding errors.hello as child of /carm/proj/texttest-tmp/geoff/texttest.01Jun113708.19621/texttest.cvs/VersionControl/General/HideCategories/TargetApp/Suite/Subsuite/Test4, info <span weight='bold' foreground='red'>Unknown</span>
-CVS tree view dialog: Adding output.hello as child of /carm/proj/texttest-tmp/geoff/texttest.01Jun113708.19621/texttest.cvs/VersionControl/General/HideCategories/TargetApp/Suite/Subsuite/Test4, info <span weight='bold' foreground='red'>Unknown</span>
-CVS tree view dialog: Adding testsuite.hello as child of /carm/proj/texttest-tmp/geoff/texttest.01Jun113708.19621/texttest.cvs/VersionControl/General/HideCategories/TargetApp/Suite/Subsuite, info <span weight='bold'>Locally Modified</span>
-CVS tree view dialog: Adding testsuite.hello as child of /carm/proj/texttest-tmp/geoff/texttest.01Jun113708.19621/texttest.cvs/VersionControl/General/HideCategories/TargetApp/Suite, info Up-to-date
-CVS tree view dialog: Showing two columns
-CVS tree view dialog: Showing CVS output
+------------------------------ (vertical pane separator)
+
+========== Text View ==========
 ===================================================================
 File: errors.hello     	Status: Up-to-date
 
@@ -416,6 +417,12 @@ File: errors.hello     	Status: Up-to-date
    Sticky Tag:		(none)
    Sticky Date:		(none)
    Sticky Options:	(none)
+===============================
+Button '_Log'
+Button '_Annotate'
+Button '_Differences' , ' between revisions ' , Text entry (set to 'HEAD') , ' and ' , Text entry
+---------------
+Button 'gtk-close', stock image 'gtk-close'
 --------------------------------------------------------------------------
 
 Changing GUI status to: 'Performed recursive version control status for the selected files.'

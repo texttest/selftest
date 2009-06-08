@@ -2,7 +2,7 @@
 Waiting for application event 'all tests to be read' to occur.
 Waiting for application event 'test Test1 to start' to occur.
 Enabling entry completion, using matching 1
-Top Window title is TextTest dynamic GUI : testing HELLO (started at 28May16:33:35)
+Top Window title is TextTest dynamic GUI : testing HELLO (started at 08Jun16:50:35)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -186,7 +186,7 @@ Tabs showing : Status, Run Info
 
 Test progress:
 
-Changing GUI status to: 'TextTest started at 28May16:33:36.'
+Changing GUI status to: 'TextTest started at 08Jun16:50:36.'
 
 Test progress:
 --> Not started : 1, colour 'white', font 'bold'', visible=True
@@ -231,20 +231,23 @@ Adding file output.hello under heading 'Temporary Files', coloured yellow
 
 Pane separator positioned 46% from the top
 
----------- Text Info Window ----------
-Running on granville
+========== Text View ==========
+Running on aiome
 
 To obtain the latest progress information and an up-to-date comparison of the files above, perform 'recompute status' (press 'F5')
---------------------------------------
+===============================
 
 Tabs showing : Test, Status, Run Info
 
 'version control log for the selected files' event created with arguments ''
 ---------- Dialog 'TextTest Error' ----------
 Default action is labelled 'gtk-ok'
-Using stock icon 'gtk-dialog-error'
+Stock image 'gtk-dialog-error' , ========== Text View ==========
 Cannot establish which files should be compared as no comparison information exists.
 To create this information, perform 'recompute status' (press 'F5') and try again.
+===============================
+---------------
+Button 'gtk-ok', stock image 'gtk-ok'
 ---------------------------------------------
 
 'agree to texttest message' event created with arguments ''
@@ -261,12 +264,12 @@ Setting file-view title to 'Test1'
 Adding file errors.hello under heading 'Comparison Files', coloured yellow
 Adding file output.hello under heading 'Comparison Files', coloured yellow
 
----------- Text Info Window ----------
-Running on granville
-Reckoned to be 0% complete at 28May16:33:38.
+========== Text View ==========
+Running on aiome
+Reckoned to be 0% complete at 08Jun16:50:37.
 
 To obtain the latest progress information and an up-to-date comparison of the files above, perform 'recompute status' (press 'F5')
---------------------------------------
+===============================
 
 Changing GUI status to: 'Recomputed status of 1 test.'
 
@@ -277,18 +280,18 @@ Changing GUI status to: 'Analyzing logs for errors.hello in test Test1'
 Changing GUI status to: 'Analyzing logs for output.hello in test Test1'
 ---------- Dialog 'CVS Log for the selected files' ----------
 Default action is labelled 'gtk-close'
-Using Tree View layout with icon 'gtk-dialog-info', header :
-CVS logs shown below.
+Stock image 'gtk-dialog-info' , 'CVS logs shown below.
 CVS command used: cvs log -N
-Subdirectories were ignored, use CVS Log Recursive to get the logs for all subdirectories.
+Subdirectories were ignored, use CVS Log Recursive to get the logs for all subdirectories.'
+Showing Tree View with columns: File , Last revision committed (UTC)
+-> <span weight='bold'>TargetApp</span> | 
+->   <span weight='bold'>Test1</span> | 
+->     errors.hello | <span weight='bold'>2 days ago</span>
+->     output.hello | Thu Feb 19 21:26:26 2009
 
-CVS tree view dialog: Adding <span weight='bold'>TargetApp</span> as root, info <span weight='bold'>2 days ago</span>
-CVS tree view dialog: Adding <span weight='bold'>Test1</span> as child of /carm/proj/texttest-tmp/geoff/texttest.28May163237.22764/texttest.cvs/VersionControl/Independent/RunningTest/TargetApp, info <span weight='bold'>2 days ago</span>
-CVS tree view dialog: Adding errors.hello as child of /carm/proj/texttest-tmp/geoff/texttest.28May163237.22764/texttest.cvs/VersionControl/Independent/RunningTest/TargetApp/Test1, info <span weight='bold'>2 days ago</span>
-CVS tree view dialog: Adding output.hello as child of /carm/proj/texttest-tmp/geoff/texttest.28May163237.22764/texttest.cvs/VersionControl/Independent/RunningTest/TargetApp/Test1, info Thu Feb 19 21:26:26 2009
-CVS tree view dialog: Showing two columns
-CVS tree view dialog: Showing CVS output
+------------------------------ (vertical pane separator)
 
+========== Text View ==========
 RCS file: /home/geoff/texttesttmp/texttest.25Feb224256.12547/texttest/GUI/StaticGUI/CVSPlugin/RunningTest/cvsroot/TargetApp/Test1/errors.hello,v
 Working file: /home/geoff/texttesttmp/texttest.25Feb224256.12547/texttest/GUI/StaticGUI/CVSPlugin/RunningTest/TargetApp/Test1/errors.hello
 head: 1.2
@@ -312,6 +315,12 @@ revision 1.1.1.1
 date: 2009-02-19 21:26:26 +0100;  author: geoff;  state: Exp;  lines: +0 -0;  commitid: rWzEIC5JwaIek5Dt;
 Initial import
 =============================================================================
+===============================
+Button '_Status'
+Button '_Annotate'
+Button '_Differences' , ' between revisions ' , Text entry (set to 'HEAD') , ' and ' , Text entry
+---------------
+Button 'gtk-close', stock image 'gtk-close'
 -------------------------------------------------------------
 
 Changing GUI status to: 'Performed version control log for the selected files.'
@@ -327,7 +336,7 @@ Changing GUI status to: 'Killed all running tests.'
 
 Changing GUI status to: 'Waiting for all tests to terminate ...'
 
-Progress bar set to fraction 1.0, text 'All 1 tests completed at 28May16:33:38'
+Progress bar set to fraction 1.0, text 'All 1 tests completed at 08Jun16:50:38'
 
 Redrawing test Test1 coloured red
 (Second column 'KILLED' coloured red)
@@ -336,13 +345,13 @@ Setting file-view title to 'Test1'
 Adding file errors.hello under heading 'Comparison Files', coloured green
 Adding file output.hello under heading 'Comparison Files', coloured red
 
----------- Text Info Window ----------
+========== Text View ==========
 Test were terminated before completion (KILLED) :
-Test killed explicitly at 16:33
+Test killed explicitly at 16:50
 ---------- Differences in output ----------
 1d0
 < Hello
---------------------------------------
+===============================
 Setting sensitivity of action '_Save' to True
 Setting sensitivity of action 'Save _As...' to True
 Setting sensitivity of action '_Kill' to False

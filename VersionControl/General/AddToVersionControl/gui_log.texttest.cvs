@@ -4,9 +4,9 @@ Enabling entry completion, using matching 1
 Adding entry completion '<default>' ...
 Adding entry completion 'localhost' ...
 Adding entry completion '1' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.01Jun113708.19621/texttest.cvs/VersionControl/General/AddToVersionControl/log/logging.debug' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.08Jun165020.16503/texttest.cvs/VersionControl/General/AddToVersionControl/log/logging.debug' ...
 Adding entry completion '/users/geoff/work/master/Testing/TextTest/log/logging.debug' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.01Jun113708.19621/texttest.cvs/VersionControl/General/AddToVersionControl/log' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.08Jun165020.16503/texttest.cvs/VersionControl/General/AddToVersionControl/log' ...
 Top Window title is TextTest static GUI : management of tests for HELLO
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
@@ -259,11 +259,11 @@ Button '_Select', stock image 'gtk-find' (tooltip 'Select indicated tests')
 Radio button 'Discard' (checked) (tooltip 'Show all tests which match the criteria, and hide all those that do not.') , Radio button 'Refine' (tooltip 'Hide all tests which do not match the criteria. Do not show any tests that aren't already shown.') , Radio button 'Extend' (tooltip 'Show all tests which match the criteria. Do not hide any tests that are currently shown.')
 Button 'Filter', stock image 'gtk-find' (tooltip 'filter tests to show only those indicated')
 
-Changing GUI status to: 'TextTest started at 01Jun11:38:02.'
+Changing GUI status to: 'TextTest started at 08Jun16:50:32.'
 
 Changing GUI status to: 'Reading tests ...'
 
-Changing GUI status to: 'Reading tests completed at 01Jun11:38:05.'
+Changing GUI status to: 'Reading tests completed at 08Jun16:50:32.'
 
 Test Tree description...
 -> TargetApp (hello)
@@ -329,10 +329,10 @@ Adding file testsuite.hello under heading 'Definition Files', coloured grey90
 
 Pane separator positioned 46% from the top
 
----------- Text Info Window ----------
+========== Text View ==========
 Description:
 <No description provided>
---------------------------------------
+===============================
 
 Tabs showing : Test, Selection, Running, Config
 
@@ -344,16 +344,25 @@ Changing GUI status to: 'Analyzing add for Subsuite in test Suite'
 Changing GUI status to: 'Analyzing add for testsuite.hello in test Subsuite'
 ---------- Dialog 'CVS Add for the selected files' ----------
 Default action is labelled 'gtk-close'
-Using Tree View layout with icon 'gtk-dialog-warning', header :
-Output from 'CVS add' shown below.
-Subdirectories were ignored, use CVS Add Recursive to add the files from all subdirectories.
+Stock image 'gtk-dialog-warning' , 'Output from 'CVS add' shown below.
+Subdirectories were ignored, use CVS Add Recursive to add the files from all subdirectories.'
+Showing Tree View with columns: File
+-> <span weight='bold'>TargetApp</span>
+->   <span weight='bold'>Suite</span>
+->     Subsuite
+->       testsuite.hello
 
-CVS tree view dialog: Adding <span weight='bold'>TargetApp</span> as root
-CVS tree view dialog: Adding <span weight='bold'>Suite</span> as child of /carm/proj/texttest-tmp/geoff/texttest.01Jun113708.19621/texttest.cvs/VersionControl/General/AddToVersionControl/TargetApp
-CVS tree view dialog: Adding Subsuite as child of /carm/proj/texttest-tmp/geoff/texttest.01Jun113708.19621/texttest.cvs/VersionControl/General/AddToVersionControl/TargetApp/Suite
-CVS tree view dialog: Adding testsuite.hello as child of /carm/proj/texttest-tmp/geoff/texttest.01Jun113708.19621/texttest.cvs/VersionControl/General/AddToVersionControl/TargetApp/Suite/Subsuite
-CVS tree view dialog: Showing CVS output
+------------------------------ (vertical pane separator)
+
+========== Text View ==========
 cvs add: /carm/proj/texttest-tmp/geoff/texttest.18Mar115914.1801/texttest.cvs/VersionControl/General/AddToVersionControl/TargetApp/Suite/Subsuite/CVS already exists
+===============================
+Button '_Status'
+Button '_Log'
+Button '_Annotate'
+Button '_Differences' , ' between revisions ' , Text entry (set to 'HEAD') , ' and ' , Text entry
+---------------
+Button 'gtk-close', stock image 'gtk-close'
 -------------------------------------------------------------
 
 Changing GUI status to: 'Performed version control add for the selected files.'
@@ -380,21 +389,30 @@ Changing GUI status to: 'Analyzing add for output.hello in test Test4'
 Changing GUI status to: 'Analyzing add for testsuite.hello in test Subsuite'
 ---------- Dialog 'Recursive CVS Add for the selected files' ----------
 Default action is labelled 'gtk-close'
-Using Tree View layout with icon 'gtk-dialog-warning', header :
-Output from 'CVS add' shown below.
+Stock image 'gtk-dialog-warning' , 'Output from 'CVS add' shown below.'
+Showing Tree View with columns: File
+-> <span weight='bold'>TargetApp</span>
+->   <span weight='bold'>Suite</span>
+->     Subsuite
+->       Test3
+->         errors.hello
+->         output.hello
+->       Test4
+->         errors.hello
+->         output.hello
+->       testsuite.hello
 
-CVS tree view dialog: Adding <span weight='bold'>TargetApp</span> as root
-CVS tree view dialog: Adding <span weight='bold'>Suite</span> as child of /carm/proj/texttest-tmp/geoff/texttest.01Jun113708.19621/texttest.cvs/VersionControl/General/AddToVersionControl/TargetApp
-CVS tree view dialog: Adding Subsuite as child of /carm/proj/texttest-tmp/geoff/texttest.01Jun113708.19621/texttest.cvs/VersionControl/General/AddToVersionControl/TargetApp/Suite
-CVS tree view dialog: Adding Test3 as child of /carm/proj/texttest-tmp/geoff/texttest.01Jun113708.19621/texttest.cvs/VersionControl/General/AddToVersionControl/TargetApp/Suite/Subsuite
-CVS tree view dialog: Adding errors.hello as child of /carm/proj/texttest-tmp/geoff/texttest.01Jun113708.19621/texttest.cvs/VersionControl/General/AddToVersionControl/TargetApp/Suite/Subsuite/Test3
-CVS tree view dialog: Adding output.hello as child of /carm/proj/texttest-tmp/geoff/texttest.01Jun113708.19621/texttest.cvs/VersionControl/General/AddToVersionControl/TargetApp/Suite/Subsuite/Test3
-CVS tree view dialog: Adding Test4 as child of /carm/proj/texttest-tmp/geoff/texttest.01Jun113708.19621/texttest.cvs/VersionControl/General/AddToVersionControl/TargetApp/Suite/Subsuite
-CVS tree view dialog: Adding errors.hello as child of /carm/proj/texttest-tmp/geoff/texttest.01Jun113708.19621/texttest.cvs/VersionControl/General/AddToVersionControl/TargetApp/Suite/Subsuite/Test4
-CVS tree view dialog: Adding output.hello as child of /carm/proj/texttest-tmp/geoff/texttest.01Jun113708.19621/texttest.cvs/VersionControl/General/AddToVersionControl/TargetApp/Suite/Subsuite/Test4
-CVS tree view dialog: Adding testsuite.hello as child of /carm/proj/texttest-tmp/geoff/texttest.01Jun113708.19621/texttest.cvs/VersionControl/General/AddToVersionControl/TargetApp/Suite/Subsuite
-CVS tree view dialog: Showing CVS output
+------------------------------ (vertical pane separator)
+
+========== Text View ==========
 cvs add: /carm/proj/texttest-tmp/geoff/texttest.18Mar115914.1801/texttest.cvs/VersionControl/General/AddToVersionControl/TargetApp/Suite/Subsuite/CVS already exists
+===============================
+Button '_Status'
+Button '_Log'
+Button '_Annotate'
+Button '_Differences' , ' between revisions ' , Text entry (set to 'HEAD') , ' and ' , Text entry
+---------------
+Button 'gtk-close', stock image 'gtk-close'
 -----------------------------------------------------------------------
 
 Changing GUI status to: 'Performed recursive version control add for the selected files.'
@@ -407,18 +425,19 @@ cvs add: use 'cvs commit' to add this file permanently
 'show version control status' event created with arguments ''
 ---------- Dialog 'CVS Status for the selected files' ----------
 Default action is labelled 'gtk-close'
-Using Tree View layout with icon 'gtk-dialog-info', header :
-CVS status shown below.
+Stock image 'gtk-dialog-info' , 'CVS status shown below.
 CVS command used: cvs status
-Subdirectories were ignored, use CVS Status Recursive to get the status for all subdirectories.
+Subdirectories were ignored, use CVS Status Recursive to get the status for all subdirectories.'
+Showing Tree View with columns: File , Information
+-> <span weight='bold'>TargetApp</span> | 
+->   <span weight='bold'>Suite</span> | 
+->     <span weight='bold'>Subsuite</span> | 
+->       <span weight='bold'>Test4</span> | 
+->         errors.hello | <span weight='bold'>Locally Added</span>
 
-CVS tree view dialog: Adding <span weight='bold'>TargetApp</span> as root, info <span weight='bold'>Locally Added</span>
-CVS tree view dialog: Adding <span weight='bold'>Suite</span> as child of /carm/proj/texttest-tmp/geoff/texttest.01Jun113708.19621/texttest.cvs/VersionControl/General/AddToVersionControl/TargetApp, info <span weight='bold'>Locally Added</span>
-CVS tree view dialog: Adding <span weight='bold'>Subsuite</span> as child of /carm/proj/texttest-tmp/geoff/texttest.01Jun113708.19621/texttest.cvs/VersionControl/General/AddToVersionControl/TargetApp/Suite, info <span weight='bold'>Locally Added</span>
-CVS tree view dialog: Adding <span weight='bold'>Test4</span> as child of /carm/proj/texttest-tmp/geoff/texttest.01Jun113708.19621/texttest.cvs/VersionControl/General/AddToVersionControl/TargetApp/Suite/Subsuite, info <span weight='bold'>Locally Added</span>
-CVS tree view dialog: Adding errors.hello as child of /carm/proj/texttest-tmp/geoff/texttest.01Jun113708.19621/texttest.cvs/VersionControl/General/AddToVersionControl/TargetApp/Suite/Subsuite/Test4, info <span weight='bold'>Locally Added</span>
-CVS tree view dialog: Showing two columns
-CVS tree view dialog: Showing CVS output
+------------------------------ (vertical pane separator)
+
+========== Text View ==========
 ===================================================================
 File: errors.hello     	Status: Locally Added
 
@@ -427,6 +446,12 @@ File: errors.hello     	Status: Locally Added
    Sticky Tag:		(none)
    Sticky Date:		(none)
    Sticky Options:	(none)
+===============================
+Button '_Log'
+Button '_Annotate'
+Button '_Differences' , ' between revisions ' , Text entry (set to 'HEAD') , ' and ' , Text entry
+---------------
+Button 'gtk-close', stock image 'gtk-close'
 ----------------------------------------------------------------
 
 'press close' event created with arguments ''
@@ -441,10 +466,10 @@ Setting file-view title to 'Test2'
 Adding file errors.hello under heading 'Standard Files', coloured grey90
 Adding file output.hello under heading 'Standard Files', coloured grey90
 
----------- Text Info Window ----------
+========== Text View ==========
 Description:
 Copy of Test1
---------------------------------------
+===============================
 Setting sensitivity of action 'Add Test' to False
 Setting sensitivity of action 'Add Suite' to False
 Setting sensitivity of action '_Sort Test Suite File' to False
@@ -463,15 +488,24 @@ Changing GUI status to: 'Analyzing add for errors.hello in test Test2'
 Changing GUI status to: 'Analyzing add for output.hello in test Test2'
 ---------- Dialog 'Recursive CVS Add for the selected files' ----------
 Default action is labelled 'gtk-close'
-Using Tree View layout with icon 'gtk-dialog-warning', header :
-Output from 'CVS add' shown below.
+Stock image 'gtk-dialog-warning' , 'Output from 'CVS add' shown below.'
+Showing Tree View with columns: File
+-> <span weight='bold'>TargetApp</span>
+->   Test2
+->     errors.hello
+->     output.hello
 
-CVS tree view dialog: Adding <span weight='bold'>TargetApp</span> as root
-CVS tree view dialog: Adding Test2 as child of /carm/proj/texttest-tmp/geoff/texttest.01Jun113708.19621/texttest.cvs/VersionControl/General/AddToVersionControl/TargetApp
-CVS tree view dialog: Adding errors.hello as child of /carm/proj/texttest-tmp/geoff/texttest.01Jun113708.19621/texttest.cvs/VersionControl/General/AddToVersionControl/TargetApp/Test2
-CVS tree view dialog: Adding output.hello as child of /carm/proj/texttest-tmp/geoff/texttest.01Jun113708.19621/texttest.cvs/VersionControl/General/AddToVersionControl/TargetApp/Test2
-CVS tree view dialog: Showing CVS output
+------------------------------ (vertical pane separator)
+
+========== Text View ==========
 cvs add: /carm/proj/texttest-tmp/geoff/texttest.18Mar115914.1801/texttest.cvs/VersionControl/General/AddToVersionControl/TargetApp/Test2/CVS already exists
+===============================
+Button '_Status'
+Button '_Log'
+Button '_Annotate'
+Button '_Differences' , ' between revisions ' , Text entry (set to 'HEAD') , ' and ' , Text entry
+---------------
+Button 'gtk-close', stock image 'gtk-close'
 -----------------------------------------------------------------------
 
 Changing GUI status to: 'Performed recursive version control add for the selected files.'
@@ -485,10 +519,10 @@ Adding file errors.hello under heading 'Standard Files', coloured grey90
 Adding file output.hello under heading 'Standard Files', coloured grey90
 Adding file output.hello.version under heading 'Standard Files', coloured grey90
 
----------- Text Info Window ----------
+========== Text View ==========
 Description:
 <No description provided>
---------------------------------------
+===============================
 Setting sensitivity of action 'Move to first' to False
 Setting sensitivity of action 'Move up' to False
 
@@ -503,17 +537,26 @@ Changing GUI status to: 'Analyzing add for output.hello in test Test1'
 Changing GUI status to: 'Analyzing add for output.hello.version in test Test1'
 ---------- Dialog 'CVS Add for the selected files' ----------
 Default action is labelled 'gtk-close'
-Using Tree View layout with icon 'gtk-dialog-warning', header :
-Output from 'CVS add' shown below.
-Subdirectories were ignored, use CVS Add Recursive to add the files from all subdirectories.
+Stock image 'gtk-dialog-warning' , 'Output from 'CVS add' shown below.
+Subdirectories were ignored, use CVS Add Recursive to add the files from all subdirectories.'
+Showing Tree View with columns: File
+-> <span weight='bold'>TargetApp</span>
+->   Test1
+->     errors.hello
+->     output.hello
+->     output.hello.version
 
-CVS tree view dialog: Adding <span weight='bold'>TargetApp</span> as root
-CVS tree view dialog: Adding Test1 as child of /carm/proj/texttest-tmp/geoff/texttest.01Jun113708.19621/texttest.cvs/VersionControl/General/AddToVersionControl/TargetApp
-CVS tree view dialog: Adding errors.hello as child of /carm/proj/texttest-tmp/geoff/texttest.01Jun113708.19621/texttest.cvs/VersionControl/General/AddToVersionControl/TargetApp/Test1
-CVS tree view dialog: Adding output.hello as child of /carm/proj/texttest-tmp/geoff/texttest.01Jun113708.19621/texttest.cvs/VersionControl/General/AddToVersionControl/TargetApp/Test1
-CVS tree view dialog: Adding output.hello.version as child of /carm/proj/texttest-tmp/geoff/texttest.01Jun113708.19621/texttest.cvs/VersionControl/General/AddToVersionControl/TargetApp/Test1
-CVS tree view dialog: Showing CVS output
+------------------------------ (vertical pane separator)
+
+========== Text View ==========
 cvs add: /carm/proj/texttest-tmp/geoff/texttest.18Mar115914.1801/texttest.cvs/VersionControl/General/AddToVersionControl/TargetApp/Test1/CVS already exists
+===============================
+Button '_Status'
+Button '_Log'
+Button '_Annotate'
+Button '_Differences' , ' between revisions ' , Text entry (set to 'HEAD') , ' and ' , Text entry
+---------------
+Button 'gtk-close', stock image 'gtk-close'
 -------------------------------------------------------------
 
 Changing GUI status to: 'Performed version control add for the selected files.'

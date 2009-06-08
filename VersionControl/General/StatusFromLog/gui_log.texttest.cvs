@@ -4,9 +4,9 @@ Enabling entry completion, using matching 1
 Adding entry completion '<default>' ...
 Adding entry completion 'localhost' ...
 Adding entry completion '1' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.01Jun113708.19621/texttest.cvs/VersionControl/General/StatusFromLog/log/logging.debug' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.08Jun165020.16503/texttest.cvs/VersionControl/General/StatusFromLog/log/logging.debug' ...
 Adding entry completion '/users/geoff/work/master/Testing/TextTest/log/logging.debug' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.01Jun113708.19621/texttest.cvs/VersionControl/General/StatusFromLog/log' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.08Jun165020.16503/texttest.cvs/VersionControl/General/StatusFromLog/log' ...
 Top Window title is TextTest static GUI : management of tests for HELLO
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
@@ -259,11 +259,11 @@ Button '_Select', stock image 'gtk-find' (tooltip 'Select indicated tests')
 Radio button 'Discard' (checked) (tooltip 'Show all tests which match the criteria, and hide all those that do not.') , Radio button 'Refine' (tooltip 'Hide all tests which do not match the criteria. Do not show any tests that aren't already shown.') , Radio button 'Extend' (tooltip 'Show all tests which match the criteria. Do not hide any tests that are currently shown.')
 Button 'Filter', stock image 'gtk-find' (tooltip 'filter tests to show only those indicated')
 
-Changing GUI status to: 'TextTest started at 01Jun11:38:01.'
+Changing GUI status to: 'TextTest started at 08Jun16:50:33.'
 
 Changing GUI status to: 'Reading tests ...'
 
-Changing GUI status to: 'Reading tests completed at 01Jun11:38:01.'
+Changing GUI status to: 'Reading tests completed at 08Jun16:50:33.'
 
 Test Tree description...
 -> TargetApp (hello)
@@ -331,10 +331,10 @@ Adding file output.hello.version under heading 'Standard Files', coloured grey90
 
 Pane separator positioned 46% from the top
 
----------- Text Info Window ----------
+========== Text View ==========
 Description:
 <No description provided>
---------------------------------------
+===============================
 
 Tabs showing : Test, Selection, Running, Config
 
@@ -348,20 +348,20 @@ Changing GUI status to: 'Analyzing logs for output.hello in test Test1'
 Changing GUI status to: 'Analyzing logs for output.hello.version in test Test1'
 ---------- Dialog 'CVS Log for the selected files' ----------
 Default action is labelled 'gtk-close'
-Using Tree View layout with icon 'gtk-dialog-warning', header :
-CVS logs shown below.
+Stock image 'gtk-dialog-warning' , 'CVS logs shown below.
 Some files/directories were not under CVS control.
 CVS command used: cvs log -N
-Subdirectories were ignored, use CVS Log Recursive to get the logs for all subdirectories.
+Subdirectories were ignored, use CVS Log Recursive to get the logs for all subdirectories.'
+Showing Tree View with columns: File , Last revision committed (UTC)
+-> <span weight='bold'>TargetApp</span> | 
+->   <span weight='bold'>Test1</span> | 
+->     errors.hello | <span weight='bold'>2 days ago</span>
+->     output.hello | Thu Feb 19 20:26:26 2009
+->     output.hello.version | Not in CVS
 
-CVS tree view dialog: Adding <span weight='bold'>TargetApp</span> as root, info <span weight='bold'>2 days ago</span>
-CVS tree view dialog: Adding <span weight='bold'>Test1</span> as child of /carm/proj/texttest-tmp/geoff/texttest.01Jun113708.19621/texttest.cvs/VersionControl/General/StatusFromLog/TargetApp, info <span weight='bold'>2 days ago</span>
-CVS tree view dialog: Adding errors.hello as child of /carm/proj/texttest-tmp/geoff/texttest.01Jun113708.19621/texttest.cvs/VersionControl/General/StatusFromLog/TargetApp/Test1, info <span weight='bold'>2 days ago</span>
-CVS tree view dialog: Adding output.hello as child of /carm/proj/texttest-tmp/geoff/texttest.01Jun113708.19621/texttest.cvs/VersionControl/General/StatusFromLog/TargetApp/Test1, info Thu Feb 19 20:26:26 2009
-CVS tree view dialog: Adding output.hello.version as child of /carm/proj/texttest-tmp/geoff/texttest.01Jun113708.19621/texttest.cvs/VersionControl/General/StatusFromLog/TargetApp/Test1, info Not in CVS
-CVS tree view dialog: Showing two columns
-CVS tree view dialog: Showing CVS output
+------------------------------ (vertical pane separator)
 
+========== Text View ==========
 RCS file: /carm/proj/texttest-tmp/geoff/texttest.25Feb163717.5240/texttest/GUI/StaticGUI/CVSPlugin/CVSStatusFromLog/cvsroot/TargetApp/Test1/errors.hello,v
 Working file: /carm/proj/texttest-tmp/geoff/texttest.25Feb163717.5240/texttest/GUI/StaticGUI/CVSPlugin/CVSStatusFromLog/TargetApp/Test1/errors.hello
 head: 1.2
@@ -385,6 +385,12 @@ revision 1.1.1.1
 date: 2009/02/19 20:26:26;  author: geoff;  state: Exp;  lines: +0 -0
 Initial import
 =============================================================================
+===============================
+Button '_Status'
+Button '_Annotate'
+Button '_Differences' , ' between revisions ' , Text entry (set to 'HEAD') , ' and ' , Text entry
+---------------
+Button 'gtk-close', stock image 'gtk-close'
 -------------------------------------------------------------
 
 Changing GUI status to: 'Performed version control log for the selected files.'
@@ -392,17 +398,18 @@ Changing GUI status to: 'Performed version control log for the selected files.'
 'show version control status' event created with arguments ''
 ---------- Dialog 'CVS Status for the selected files' ----------
 Default action is labelled 'gtk-close'
-Using Tree View layout with icon 'gtk-dialog-warning', header :
-CVS status shown below.
+Stock image 'gtk-dialog-warning' , 'CVS status shown below.
 CVS status found files which are not up-to-date or which have conflicts
 CVS command used: cvs status
-Subdirectories were ignored, use CVS Status Recursive to get the status for all subdirectories.
+Subdirectories were ignored, use CVS Status Recursive to get the status for all subdirectories.'
+Showing Tree View with columns: File , Information
+-> <span weight='bold'>TargetApp</span> | 
+->   <span weight='bold'>Test1</span> | 
+->     errors.hello | <span weight='bold' foreground='red'>Needs Patch</span>
 
-CVS tree view dialog: Adding <span weight='bold'>TargetApp</span> as root, info <span weight='bold' foreground='red'>Needs Patch</span>
-CVS tree view dialog: Adding <span weight='bold'>Test1</span> as child of /carm/proj/texttest-tmp/geoff/texttest.01Jun113708.19621/texttest.cvs/VersionControl/General/StatusFromLog/TargetApp, info <span weight='bold' foreground='red'>Needs Patch</span>
-CVS tree view dialog: Adding errors.hello as child of /carm/proj/texttest-tmp/geoff/texttest.01Jun113708.19621/texttest.cvs/VersionControl/General/StatusFromLog/TargetApp/Test1, info <span weight='bold' foreground='red'>Needs Patch</span>
-CVS tree view dialog: Showing two columns
-CVS tree view dialog: Showing CVS output
+------------------------------ (vertical pane separator)
+
+========== Text View ==========
 ===================================================================
 File: errors.hello     	Status: Needs Patch
 
@@ -411,6 +418,12 @@ File: errors.hello     	Status: Needs Patch
    Sticky Tag:		(none)
    Sticky Date:		(none)
    Sticky Options:	(none)
+===============================
+Button '_Log'
+Button '_Annotate'
+Button '_Differences' , ' between revisions ' , Text entry (set to 'HEAD') , ' and ' , Text entry
+---------------
+Button 'gtk-close', stock image 'gtk-close'
 ----------------------------------------------------------------
 
 'press close' event created with arguments ''
