@@ -37,7 +37,7 @@ level=INFO
 [handler_action runner]
 class=FileHandler
 #formatter=timed
-args=('/dev/null', 'w')
+args=(os.devnull, 'w')
 args=('%(TEXTTEST_PERSONAL_LOG)s/actionrunner.diag', 'w')
 
 # ======= Section for activator ======
@@ -49,7 +49,7 @@ qualname=activator
 [handler_activator]
 class=FileHandler
 #formatter=timed
-args=('/dev/null', 'w')
+args=(os.devnull, 'w')
 #args=('%(TEXTTEST_PERSONAL_LOG)s/activator.diag', 'w')
 
 # ======= Section for application ======
@@ -61,7 +61,7 @@ qualname=application
 [handler_application]
 class=FileHandler
 #formatter=timed
-args=('/dev/null', 'w')
+args=(os.devnull, 'w')
 #args=('%(TEXTTEST_PERSONAL_LOG)s/application.diag', 'w')
 
 # ======= Section for batch collect ======
@@ -73,7 +73,7 @@ qualname=batch collect
 [handler_batch collect]
 class=FileHandler
 #formatter=timed
-args=('/dev/null', 'w')
+args=(os.devnull, 'w')
 #args=('%(TEXTTEST_PERSONAL_LOG)s/batchcollect.diag', 'w')
 
 # ======= Section for catalogues ======
@@ -85,7 +85,7 @@ qualname=catalogues
 [handler_catalogues]
 class=FileHandler
 #formatter=timed
-args=('/dev/null', 'w')
+args=(os.devnull, 'w')
 #args=('%(TEXTTEST_PERSONAL_LOG)s/catalogues.diag', 'w')
 
 # ======= Section for check for bugs ======
@@ -97,7 +97,7 @@ qualname=check for bugs
 [handler_check for bugs]
 class=FileHandler
 #formatter=timed
-args=('/dev/null', 'w')
+args=(os.devnull, 'w')
 #args=('%(TEXTTEST_PERSONAL_LOG)s/checkforbugs.diag', 'w')
 
 # ======= Section for check for crashes ======
@@ -109,7 +109,7 @@ qualname=check for crashes
 [handler_check for crashes]
 class=FileHandler
 #formatter=timed
-args=('/dev/null', 'w')
+args=(os.devnull, 'w')
 #args=('%(TEXTTEST_PERSONAL_LOG)s/checkforcrashes.diag', 'w')
 
 # ======= Section for collate files ======
@@ -121,7 +121,7 @@ qualname=collate files
 [handler_collate files]
 class=FileHandler
 #formatter=timed
-args=('/dev/null', 'w')
+args=(os.devnull, 'w')
 #args=('%(TEXTTEST_PERSONAL_LOG)s/collatefiles.diag', 'w')
 
 # ======= Section for environment creator ======
@@ -133,7 +133,7 @@ qualname=environment creator
 [handler_environment creator]
 class=FileHandler
 #formatter=timed
-args=('/dev/null', 'w')
+args=(os.devnull, 'w')
 #args=('%(TEXTTEST_PERSONAL_LOG)s/environmentcreator.diag', 'w')
 
 # ======= Section for file view gui ======
@@ -145,7 +145,7 @@ qualname=file view gui
 [handler_file view gui]
 class=FileHandler
 #formatter=timed
-args=('/dev/null', 'w')
+args=(os.devnull, 'w')
 #args=('%(TEXTTEST_PERSONAL_LOG)s/fileviewgui.diag', 'w')
 
 # ======= Section for filecomparison ======
@@ -157,7 +157,7 @@ level=INFO
 [handler_filecomparison]
 class=FileHandler
 #formatter=timed
-args=('/dev/null', 'w')
+args=(os.devnull, 'w')
 args=('%(TEXTTEST_PERSONAL_LOG)s/filecomparison.diag', 'w')
 
 # ======= Section for filter actions ======
@@ -169,7 +169,7 @@ qualname=filter actions
 [handler_filter actions]
 class=FileHandler
 #formatter=timed
-args=('/dev/null', 'w')
+args=(os.devnull, 'w')
 #args=('%(TEXTTEST_PERSONAL_LOG)s/filteractions.diag', 'w')
 
 # ======= Section for find applications ======
@@ -181,7 +181,7 @@ qualname=find applications
 [handler_find applications]
 class=FileHandler
 #formatter=timed
-args=('/dev/null', 'w')
+args=(os.devnull, 'w')
 #args=('%(TEXTTEST_PERSONAL_LOG)s/findapplications.diag', 'w')
 
 # ======= Section for generatewebpages ======
@@ -193,7 +193,7 @@ qualname=generatewebpages
 [handler_generatewebpages]
 class=FileHandler
 #formatter=timed
-args=('/dev/null', 'w')
+args=(os.devnull, 'w')
 #args=('%(TEXTTEST_PERSONAL_LOG)s/generatewebpages.diag', 'w')
 
 # ======= Section for generatewebpages ======
@@ -205,7 +205,7 @@ qualname=generatewebpages
 [handler_generatewebpages]
 class=FileHandler
 #formatter=timed
-args=('/dev/null', 'w')
+args=(os.devnull, 'w')
 #args=('%(TEXTTEST_PERSONAL_LOG)s/generatewebpages.diag', 'w')
 
 # ======= Section for gui log ======
@@ -217,7 +217,7 @@ qualname=gui log
 [handler_gui log]
 class=FileHandler
 #formatter=timed
-args=('/dev/null', 'w')
+args=(os.devnull, 'w')
 #args=('%(TEXTTEST_PERSONAL_LOG)s/guilog.diag', 'w')
 
 # ======= Section for gui notebook ======
@@ -229,7 +229,7 @@ qualname=gui notebook
 [handler_gui notebook]
 class=FileHandler
 #formatter=timed
-args=('/dev/null', 'w')
+args=(os.devnull, 'w')
 #args=('%(TEXTTEST_PERSONAL_LOG)s/guinotebook.diag', 'w')
 
 # ======= Section for idle handlers ======
@@ -241,7 +241,7 @@ qualname=idle handlers
 [handler_idle handlers]
 class=FileHandler
 #formatter=timed
-args=('/dev/null', 'w')
+args=(os.devnull, 'w')
 #args=('%(TEXTTEST_PERSONAL_LOG)s/idlehandlers.diag', 'w')
 
 # ======= Section for interactive actions ======
@@ -253,7 +253,7 @@ qualname=interactive actions
 [handler_interactive actions]
 class=FileHandler
 #formatter=timed
-args=('/dev/null', 'w')
+args=(os.devnull, 'w')
 #args=('%(TEXTTEST_PERSONAL_LOG)s/interactiveactions.diag', 'w')
 
 # ======= Section for locks ======
@@ -265,7 +265,7 @@ qualname=locks
 [handler_locks]
 class=FileHandler
 #formatter=timed
-args=('/dev/null', 'w')
+args=(os.devnull, 'w')
 #args=('%(TEXTTEST_PERSONAL_LOG)s/locks.diag', 'w')
 
 # ======= Section for mail sender ======
@@ -277,7 +277,7 @@ qualname=mail sender
 [handler_mail sender]
 class=FileHandler
 #formatter=timed
-args=('/dev/null', 'w')
+args=(os.devnull, 'w')
 #args=('%(TEXTTEST_PERSONAL_LOG)s/mailsender.diag', 'w')
 
 # ======= Section for makeperformance ======
@@ -289,7 +289,7 @@ qualname=makeperformance
 [handler_makeperformance]
 class=FileHandler
 #formatter=timed
-args=('/dev/null', 'w')
+args=(os.devnull, 'w')
 #args=('%(TEXTTEST_PERSONAL_LOG)s/makeperformance.diag', 'w')
 
 # ======= Section for menu bar ======
@@ -301,7 +301,7 @@ qualname=menu bar
 [handler_menu bar]
 class=FileHandler
 #formatter=timed
-args=('/dev/null', 'w')
+args=(os.devnull, 'w')
 #args=('%(TEXTTEST_PERSONAL_LOG)s/menubar.diag', 'w')
 
 # ======= Section for multientrydictionary ======
@@ -313,7 +313,7 @@ qualname=multientrydictionary
 [handler_multientrydictionary]
 class=FileHandler
 #formatter=timed
-args=('/dev/null', 'w')
+args=(os.devnull, 'w')
 #args=('%(TEXTTEST_PERSONAL_LOG)s/multientrydictionary.diag', 'w')
 
 # ======= Section for observable ======
@@ -325,7 +325,7 @@ qualname=observable
 [handler_observable]
 class=FileHandler
 #formatter=timed
-args=('/dev/null', 'w')
+args=(os.devnull, 'w')
 #args=('%(TEXTTEST_PERSONAL_LOG)s/observable.diag', 'w')
 
 # ======= Section for option finder ======
@@ -337,7 +337,7 @@ qualname=option finder
 [handler_option finder]
 class=FileHandler
 #formatter=timed
-args=('/dev/null', 'w')
+args=(os.devnull, 'w')
 #args=('%(TEXTTEST_PERSONAL_LOG)s/optionfinder.diag', 'w')
 
 # ======= Section for prepare writedir ======
@@ -349,7 +349,7 @@ qualname=prepare writedir
 [handler_prepare writedir]
 class=FileHandler
 #formatter=timed
-args=('/dev/null', 'w')
+args=(os.devnull, 'w')
 #args=('%(TEXTTEST_PERSONAL_LOG)s/preparewritedir.diag', 'w')
 
 # ======= Section for progress monitor ======
@@ -361,7 +361,7 @@ qualname=progress monitor
 [handler_progress monitor]
 class=FileHandler
 #formatter=timed
-args=('/dev/null', 'w')
+args=(os.devnull, 'w')
 #args=('%(TEXTTEST_PERSONAL_LOG)s/progressmonitor.diag', 'w')
 
 # ======= Section for queue system submit ======
@@ -373,7 +373,7 @@ qualname=queue system submit
 [handler_queue system submit]
 class=FileHandler
 #formatter=timed
-args=('/dev/null', 'w')
+args=(os.devnull, 'w')
 #args=('%(TEXTTEST_PERSONAL_LOG)s/queuesystemsubmit.diag', 'w')
 
 # ======= Section for read environment ======
@@ -385,7 +385,7 @@ qualname=read environment
 [handler_read environment]
 class=FileHandler
 #formatter=timed
-args=('/dev/null', 'w')
+args=(os.devnull, 'w')
 #args=('%(TEXTTEST_PERSONAL_LOG)s/readenvironment.diag', 'w')
 
 # ======= Section for reconnection ======
@@ -397,7 +397,7 @@ qualname=reconnection
 [handler_reconnection]
 class=FileHandler
 #formatter=timed
-args=('/dev/null', 'w')
+args=(os.devnull, 'w')
 #args=('%(TEXTTEST_PERSONAL_LOG)s/reconnection.diag', 'w')
 
 # ======= Section for run dependent text ======
@@ -409,7 +409,7 @@ level=INFO
 [handler_run dependent text]
 class=FileHandler
 #formatter=timed
-args=('/dev/null', 'w')
+args=(os.devnull, 'w')
 args=('%(TEXTTEST_PERSONAL_LOG)s/rundependenttext.diag', 'w')
 
 # ======= Section for run test ======
@@ -421,7 +421,7 @@ qualname=run test
 [handler_run test]
 class=FileHandler
 #formatter=timed
-args=('/dev/null', 'w')
+args=(os.devnull, 'w')
 #args=('%(TEXTTEST_PERSONAL_LOG)s/runtest.diag', 'w')
 
 # ======= Section for save repository ======
@@ -433,7 +433,7 @@ qualname=save repository
 [handler_save repository]
 class=FileHandler
 #formatter=timed
-args=('/dev/null', 'w')
+args=(os.devnull, 'w')
 #args=('%(TEXTTEST_PERSONAL_LOG)s/saverepository.diag', 'w')
 
 # ======= Section for select tests ======
@@ -445,7 +445,7 @@ qualname=select tests
 [handler_select tests]
 class=FileHandler
 #formatter=timed
-args=('/dev/null', 'w')
+args=(os.devnull, 'w')
 #args=('%(TEXTTEST_PERSONAL_LOG)s/selecttests.diag', 'w')
 
 # ======= Section for slave server ======
@@ -457,7 +457,7 @@ qualname=slave server
 [handler_slave server]
 class=FileHandler
 #formatter=timed
-args=('/dev/null', 'w')
+args=(os.devnull, 'w')
 #args=('%(TEXTTEST_PERSONAL_LOG)s/slaveserver.diag', 'w')
 
 # ======= Section for standard log ======
@@ -469,7 +469,7 @@ level=INFO
 [handler_standard log]
 class=FileHandler
 #formatter=timed
-args=('/dev/null', 'w')
+args=(os.devnull, 'w')
 #args=('%(TEXTTEST_PERSONAL_LOG)s/standardlog.diag', 'w')
 
 # ======= Section for test column gui ======
@@ -481,7 +481,7 @@ qualname=test column gui
 [handler_test column gui]
 class=FileHandler
 #formatter=timed
-args=('/dev/null', 'w')
+args=(os.devnull, 'w')
 #args=('%(TEXTTEST_PERSONAL_LOG)s/testcolumngui.diag', 'w')
 
 # ======= Section for test objects ======
@@ -493,7 +493,7 @@ qualname=test objects
 [handler_test objects]
 class=FileHandler
 #formatter=timed
-args=('/dev/null', 'w')
+args=(os.devnull, 'w')
 #args=('%(TEXTTEST_PERSONAL_LOG)s/testobjects.diag', 'w')
 
 # ======= Section for test tree ======
@@ -505,7 +505,7 @@ qualname=test tree
 [handler_test tree]
 class=FileHandler
 #formatter=timed
-args=('/dev/null', 'w')
+args=(os.devnull, 'w')
 #args=('%(TEXTTEST_PERSONAL_LOG)s/testtree.diag', 'w')
 
 # ======= Section for testcomparison ======
@@ -517,7 +517,7 @@ level=INFO
 [handler_testcomparison]
 class=FileHandler
 #formatter=timed
-args=('/dev/null', 'w')
+args=(os.devnull, 'w')
 args=('%(TEXTTEST_PERSONAL_LOG)s/testcomparison.diag', 'w')
 
 # ======= Section for testpathfilter ======
@@ -529,7 +529,7 @@ qualname=testpathfilter
 [handler_testpathfilter]
 class=FileHandler
 #formatter=timed
-args=('/dev/null', 'w')
+args=(os.devnull, 'w')
 #args=('%(TEXTTEST_PERSONAL_LOG)s/testpathfilter.diag', 'w')
 
 # ======= Section for traffic replay ======
@@ -541,7 +541,7 @@ qualname=traffic replay
 [handler_traffic replay]
 class=FileHandler
 #formatter=timed
-args=('/dev/null', 'w')
+args=(os.devnull, 'w')
 #args=('%(TEXTTEST_PERSONAL_LOG)s/trafficreplay.diag', 'w')
 
 # ======= Section for traffic server ======
@@ -553,7 +553,7 @@ qualname=traffic server
 [handler_traffic server]
 class=FileHandler
 #formatter=timed
-args=('/dev/null', 'w')
+args=(os.devnull, 'w')
 #args=('%(TEXTTEST_PERSONAL_LOG)s/trafficserver.diag', 'w')
 
 # ======= Section for unique names ======
@@ -565,7 +565,7 @@ qualname=unique names
 [handler_unique names]
 class=FileHandler
 #formatter=timed
-args=('/dev/null', 'w')
+args=(os.devnull, 'w')
 #args=('%(TEXTTEST_PERSONAL_LOG)s/uniquenames.diag', 'w')
 
 # ======= Section for use-case log ======
@@ -577,7 +577,7 @@ qualname=use-case log
 [handler_use-case log]
 class=FileHandler
 #formatter=timed
-args=('/dev/null', 'w')
+args=(os.devnull, 'w')
 #args=('%(TEXTTEST_PERSONAL_LOG)s/use-caselog.diag', 'w')
 
 # ======= Section for virtual display ======
@@ -589,6 +589,6 @@ qualname=virtual display
 [handler_virtual display]
 class=FileHandler
 #formatter=timed
-args=('/dev/null', 'w')
+args=(os.devnull, 'w')
 #args=('%(TEXTTEST_PERSONAL_LOG)s/virtualdisplay.diag', 'w')
 
