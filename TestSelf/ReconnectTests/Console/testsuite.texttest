@@ -25,6 +25,9 @@ MultipleVersions
 # Check we can reconnect when the original run was run with -v a,b
 MultipleVersionsOneRun
 
+# If the original run had extra versions we don't have (usually via batch_extra_version) we should pick them up
+InferExtraVersion
+
 # Make sure we get the order of compound versions right...
 InferCompoundVersion
 
@@ -33,6 +36,9 @@ ExplicitDirectory
 
 # Check we can provide the actual directory name of the run, and that this will be accepted even if it has a version (which is then inferred)
 ExplicitVersionedDirectory
+
+# Don't get fooled by trailing slashes...
+ExplicitDirectoryTrailingSlash
 
 # Complications arise when reconnecting with test data sometimes...
 TestData
