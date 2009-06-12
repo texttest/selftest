@@ -4,7 +4,7 @@ Waiting for application event 'test Test version <default> to complete' to occur
 Waiting for application event 'test Test version all to complete' to occur.
 Waiting for application event 'test Test2 to start' to occur.
 Enabling entry completion, using matching 1
-Top Window title is TextTest dynamic GUI : testing HELLO (started at 05Jun16:55:22)
+Top Window title is TextTest dynamic GUI : testing HELLO (started at 12Jun16:31:24)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -123,7 +123,7 @@ Tabs showing : Status, Run Info
 
 Test progress:
 
-Changing GUI status to: 'TextTest started at 05Jun16:55:22.'
+Changing GUI status to: 'TextTest started at 12Jun16:31:26.'
 
 Test progress:
 --> Not started : 1, colour 'white', font 'bold'', visible=True
@@ -212,7 +212,8 @@ Adding file output.hello under heading 'Comparison Files', coloured red
 
 Pane separator positioned 46% from the top
 
-========== Text View ==========
+
+========== Text Info ==========
 Test FAILED :
 ---------- Differences in output ----------
 1c1
@@ -264,6 +265,15 @@ Changing GUI status to: 'Saved 1 tests.'
 'set test selection to' event created with arguments 'Test under TargetApp (hello.all)'
 
 Test column header set to 'Tests: 1/3 selected, none hidden'
+
+========== Text Info ==========
+Test FAILED :
+---------- Differences in output ----------
+1c1
+< Hello
+---
+> Hello All!
+===============================
 Setting sensitivity of action '_Save' to True
 Setting sensitivity of action 'Save _As...' to True
 Setting sensitivity of action 'S_ave Selection...' to True
@@ -276,14 +286,6 @@ Adding file output.hello under heading 'Comparison Files', coloured red
 
 Pane separator positioned 46% from the top
 
-========== Text View ==========
-Test FAILED :
----------- Differences in output ----------
-1c1
-< Hello
----
-> Hello All!
-===============================
 
 Tabs showing : Test, Status, Run Info
 
@@ -305,7 +307,7 @@ Setting file-view title to 'Test'
 Adding file errors.hello under heading 'Comparison Files', coloured green
 Adding file output.hello under heading 'Comparison Files', coloured red
 
-========== Text View ==========
+========== Text Info ==========
 Test FAILED :
 ---------- Differences in output ----------
 1c1
@@ -319,7 +321,7 @@ Changing GUI status to: 'Recomputed status of 1 test.'
 
 Waiting for application event 'completion of test actions' to occur.
 
-Progress bar set to fraction 1.0, text 'All 3 tests completed at 05Jun16:55:27'
+Progress bar set to fraction 1.0, text 'All 3 tests completed at 12Jun16:31:32'
 
 Redrawing test Test2 coloured red
 (Second column 'output different' coloured red)

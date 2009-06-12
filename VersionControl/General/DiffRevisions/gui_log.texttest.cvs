@@ -4,9 +4,9 @@ Enabling entry completion, using matching 1
 Adding entry completion '<default>' ...
 Adding entry completion 'localhost' ...
 Adding entry completion '1' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.12Jun132322.25470/texttest.cvs/VersionControl/General/DiffRevisions/log/logging.debug' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.12Jun161910.29517/texttest.cvs/VersionControl/General/DiffRevisions/log/logging.debug' ...
 Adding entry completion '/users/geoff/work/master/Testing/TextTest/log/logging.debug' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.12Jun132322.25470/texttest.cvs/VersionControl/General/DiffRevisions/log' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.12Jun161910.29517/texttest.cvs/VersionControl/General/DiffRevisions/log' ...
 Top Window title is TextTest static GUI : management of tests for HELLO
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
@@ -259,11 +259,11 @@ Button '_Select', stock image 'gtk-find' (tooltip 'Select indicated tests')
 Radio button 'Discard' (checked) (tooltip 'Show all tests which match the criteria, and hide all those that do not.') , Radio button 'Refine' (tooltip 'Hide all tests which do not match the criteria. Do not show any tests that aren't already shown.') , Radio button 'Extend' (tooltip 'Show all tests which match the criteria. Do not hide any tests that are currently shown.')
 Button 'Filter', stock image 'gtk-find' (tooltip 'filter tests to show only those indicated')
 
-Changing GUI status to: 'TextTest started at 12Jun13:23:33.'
+Changing GUI status to: 'TextTest started at 12Jun16:19:22.'
 
 Changing GUI status to: 'Reading tests ...'
 
-Changing GUI status to: 'Reading tests completed at 12Jun13:23:33.'
+Changing GUI status to: 'Reading tests completed at 12Jun16:19:22.'
 
 Test Tree description...
 -> TargetApp (hello)
@@ -332,7 +332,8 @@ Adding file output.hello under heading 'Standard Files', coloured grey90
 
 Pane separator positioned 46% from the top
 
-========== Text View ==========
+
+========== Text Info ==========
 Description:
 Copy of Test1
 ===============================
@@ -351,14 +352,15 @@ Stock image 'gtk-dialog-info' , 'CVS status shown below.
 CVS command used: cvs status
 Subdirectories were ignored, use CVS Status Recursive to get the status for all subdirectories.'
 
-Showing Tree View with columns: File , Information
+Showing VCS status info tree with columns: File , Information
 -> <span weight='bold'>TargetApp</span> | 
 ->   <span weight='bold'>Test2</span> | 
 ->     errors.hello | Up-to-date
 ->     output.hello | <span weight='bold'>Locally Modified</span>
+
 ------------------------------ (vertical pane separator)
 
-========== Text View ==========
+========== VCS Output View ==========
 ===================================================================
 File: errors.hello     	Status: Up-to-date
 
@@ -367,7 +369,7 @@ File: errors.hello     	Status: Up-to-date
    Sticky Tag:		(none)
    Sticky Date:		(none)
    Sticky Options:	(none)
-===============================
+=====================================
 Button '_Log'
 Button '_Annotate'
 Button '_Differences' , ' between revisions ' , Text entry (set to 'HEAD') , ' and ' , Text entry
@@ -378,7 +380,8 @@ Button 'gtk-close', stock image 'gtk-close'
 Changing GUI status to: 'Performed version control status for the selected files.'
 
 'select' event created with arguments 'output.hello'
-CVS tree view dialog: Showing CVS output
+
+========== VCS Output View ==========
 ===================================================================
 File: output.hello     	Status: Locally Modified
 
@@ -387,6 +390,7 @@ File: output.hello     	Status: Locally Modified
    Sticky Tag:		(none)
    Sticky Date:		(none)
    Sticky Options:	(none)
+=====================================
 
 'set first revision to' event created with arguments '1.1'
 
@@ -397,13 +401,14 @@ Stock image 'gtk-dialog-warning' , 'CVS differences between revision 1.1 and the
 CVS command used: cvs diff -N -r 1.1
 Subdirectories were ignored, use CVS Difference Recursive to get the differences for all subdirectories.'
 
-Showing Tree View with columns: File
+Showing VCS diff info tree with columns: File
 -> <span weight='bold'>TargetApp</span>
 ->   <span weight='bold'>Test2</span>
 ->     output.hello
+
 ------------------------------ (vertical pane separator)
 
-========== Text View ==========
+========== VCS Output View ==========
 Index: /carm/proj/texttest-tmp/geoff/texttest.25Feb165952.5618/texttest/GUI/StaticGUI/CVSPlugin/DiffRevisions/TargetApp/Test2/output.hello
 ===================================================================
 RCS file: /carm/proj/texttest-tmp/geoff/texttest.25Feb165952.5618/texttest/GUI/StaticGUI/CVSPlugin/DiffRevisions/cvsroot/TargetApp/Test2/output.hello,v
@@ -413,7 +418,7 @@ diff -r1.1 output.hello
 < Hello
 ---
 > Hello uncommitted update!
-===============================
+=====================================
 Button '_Status'
 Button '_Log'
 Button '_Annotate'
@@ -436,13 +441,14 @@ Stock image 'gtk-dialog-warning' , 'CVS differences between the local file and r
 CVS command used: cvs diff -N -r 1.1
 Subdirectories were ignored, use CVS Difference Recursive to get the differences for all subdirectories.'
 
-Showing Tree View with columns: File
+Showing VCS diff info tree with columns: File
 -> <span weight='bold'>TargetApp</span>
 ->   <span weight='bold'>Test2</span>
 ->     output.hello
+
 ------------------------------ (vertical pane separator)
 
-========== Text View ==========
+========== VCS Output View ==========
 Index: /carm/proj/texttest-tmp/geoff/texttest.25Feb165952.5618/texttest/GUI/StaticGUI/CVSPlugin/DiffRevisions/TargetApp/Test2/output.hello
 ===================================================================
 RCS file: /carm/proj/texttest-tmp/geoff/texttest.25Feb165952.5618/texttest/GUI/StaticGUI/CVSPlugin/DiffRevisions/cvsroot/TargetApp/Test2/output.hello,v
@@ -452,7 +458,7 @@ diff -r1.1 output.hello
 < Hello
 ---
 > Hello uncommitted update!
-===============================
+=====================================
 Button '_Status'
 Button '_Log'
 Button '_Annotate'
@@ -472,13 +478,14 @@ Stock image 'gtk-dialog-warning' , 'CVS differences between revisions HEAD and 1
 CVS command used: cvs diff -N -r HEAD -r 1.1
 Subdirectories were ignored, use CVS Difference Recursive to get the differences for all subdirectories.'
 
-Showing Tree View with columns: File
+Showing VCS diff info tree with columns: File
 -> <span weight='bold'>TargetApp</span>
 ->   <span weight='bold'>Test2</span>
 ->     output.hello
+
 ------------------------------ (vertical pane separator)
 
-========== Text View ==========
+========== VCS Output View ==========
 Index: /carm/proj/texttest-tmp/geoff/texttest.25Feb165952.5618/texttest/GUI/StaticGUI/CVSPlugin/DiffRevisions/TargetApp/Test2/output.hello
 ===================================================================
 RCS file: /carm/proj/texttest-tmp/geoff/texttest.25Feb165952.5618/texttest/GUI/StaticGUI/CVSPlugin/DiffRevisions/cvsroot/TargetApp/Test2/output.hello,v
@@ -489,7 +496,7 @@ diff -r1.2 -r1.1
 < Hello current version!
 ---
 > Hello
-===============================
+=====================================
 Button '_Status'
 Button '_Log'
 Button '_Annotate'

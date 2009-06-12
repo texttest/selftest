@@ -1,7 +1,7 @@
 
 Waiting for application event 'completion of test actions' to occur.
 Enabling entry completion, using matching 1
-Top Window title is TextTest dynamic GUI : testing HELLO,HELLO.core (started at 05Jun16:55:10)
+Top Window title is TextTest dynamic GUI : testing HELLO,HELLO.core (started at 12Jun16:30:32)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -120,7 +120,7 @@ Tabs showing : Status, Run Info
 
 Test progress:
 
-Changing GUI status to: 'TextTest started at 05Jun16:55:10.'
+Changing GUI status to: 'TextTest started at 12Jun16:30:33.'
 
 Test progress:
 --> Not started : 1, colour 'white', font 'bold'', visible=True
@@ -165,7 +165,7 @@ Test progress:
 ----> Differences : 1, colour 'red', font 'bold'', visible=True
 ------> output different : 1, colour 'red', font 'bold'', visible=True
 
-Progress bar set to fraction 1.0, text 'All 2 tests completed at 05Jun16:55:11'
+Progress bar set to fraction 1.0, text 'All 2 tests completed at 12Jun16:30:36'
 
 Redrawing test Test coloured red
 (Second column 'Segmentation fault in ___newselect_nocancel' coloured red)
@@ -195,7 +195,8 @@ Adding file output.hello under heading 'Comparison Files', coloured green
 
 Pane separator positioned 46% from the top
 
-========== Text View ==========
+
+========== Text Info ==========
 Test CRASHED (Segmentation fault in ___newselect_nocancel) :
 Program terminated with signal 11, Segmentation fault.
 Stack trace from gdb :
@@ -209,11 +210,11 @@ Tabs showing : Test, Status, Run Info
 
 'save results for selected tests' event created with arguments ''
 ---------- Dialog 'TextTest Confirmation' ----------
-Stock image 'gtk-dialog-warning' , ========== Text View ==========
+Stock image 'gtk-dialog-warning' , ========== GtkTextView ==========
 You have selected tests whose results are partial or which are registered as bugs:
   Test 'Test version core' CRASHED (Segmentation fault in ___newselect_nocancel)
 Are you sure you want to do this?
-===============================
+=================================
 ---------------
 Button 'gtk-yes', stock image 'gtk-yes'
 Button 'gtk-no', stock image 'gtk-no'
@@ -229,7 +230,7 @@ Setting file-view title to 'Test'
 Adding file errors.hello under heading 'Comparison Files', coloured green
 Adding file output.hello under heading 'Comparison Files', coloured red
 
-========== Text View ==========
+========== Text Info ==========
 Test FAILED :
 ---------- Differences in output ----------
 1c1
@@ -283,6 +284,16 @@ Changing GUI status to: 'Saved 1 tests.'
 'set test selection to' event created with arguments 'Test under TargetApp (hello.core)'
 
 Test column header set to 'Tests: 1/2 selected, none hidden'
+
+========== Text Info ==========
+Test CRASHED (Segmentation fault in ___newselect_nocancel) :
+Program terminated with signal 11, Segmentation fault.
+Stack trace from gdb :
+___newselect_nocancel 
+inittime_the_fake_version 
+?? 
+??
+===============================
 Setting sensitivity of action '_Save' to True
 Setting sensitivity of action 'Save _As...' to True
 Setting sensitivity of action 'S_ave Selection...' to True
@@ -295,15 +306,6 @@ Adding file output.hello under heading 'Comparison Files', coloured green
 
 Pane separator positioned 46% from the top
 
-========== Text View ==========
-Test CRASHED (Segmentation fault in ___newselect_nocancel) :
-Program terminated with signal 11, Segmentation fault.
-Stack trace from gdb :
-___newselect_nocancel 
-inittime_the_fake_version 
-?? 
-??
-===============================
 
 Tabs showing : Test, Status, Run Info
 
@@ -325,7 +327,7 @@ Setting file-view title to 'Test'
 Adding file errors.hello under heading 'Comparison Files', coloured green
 Adding file output.hello under heading 'Comparison Files', coloured red
 
-========== Text View ==========
+========== Text Info ==========
 Test CRASHED (Segmentation fault in ___newselect_nocancel) :
 Program terminated with signal 11, Segmentation fault.
 Stack trace from gdb :

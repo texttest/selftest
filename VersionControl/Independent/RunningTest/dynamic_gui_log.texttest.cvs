@@ -2,7 +2,7 @@
 Waiting for application event 'all tests to be read' to occur.
 Waiting for application event 'test Test1 to start' to occur.
 Enabling entry completion, using matching 1
-Top Window title is TextTest dynamic GUI : testing HELLO (started at 12Jun13:23:36)
+Top Window title is TextTest dynamic GUI : testing HELLO (started at 12Jun16:19:19)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -186,7 +186,7 @@ Tabs showing : Status, Run Info
 
 Test progress:
 
-Changing GUI status to: 'TextTest started at 12Jun13:23:37.'
+Changing GUI status to: 'TextTest started at 12Jun16:19:20.'
 
 Test progress:
 --> Not started : 1, colour 'white', font 'bold'', visible=True
@@ -231,8 +231,9 @@ Adding file output.hello under heading 'Temporary Files', coloured yellow
 
 Pane separator positioned 46% from the top
 
-========== Text View ==========
-Running on annanberg
+
+========== Text Info ==========
+Running on aiyura
 
 To obtain the latest progress information and an up-to-date comparison of the files above, perform 'recompute status' (press 'F5')
 ===============================
@@ -242,10 +243,10 @@ Tabs showing : Test, Status, Run Info
 'version control log for the selected files' event created with arguments ''
 ---------- Dialog 'TextTest Error' ----------
 Default action is labelled 'gtk-ok'
-Stock image 'gtk-dialog-error' , ========== Text View ==========
+Stock image 'gtk-dialog-error' , ========== GtkTextView ==========
 Cannot establish which files should be compared as no comparison information exists.
 To create this information, perform 'recompute status' (press 'F5') and try again.
-===============================
+=================================
 ---------------
 Button 'gtk-ok', stock image 'gtk-ok'
 ---------------------------------------------
@@ -264,9 +265,9 @@ Setting file-view title to 'Test1'
 Adding file errors.hello under heading 'Comparison Files', coloured yellow
 Adding file output.hello under heading 'Comparison Files', coloured yellow
 
-========== Text View ==========
-Running on annanberg
-Reckoned to be 0% complete at 12Jun13:23:39.
+========== Text Info ==========
+Running on aiyura
+Reckoned to be 0% complete at 12Jun16:19:21.
 
 To obtain the latest progress information and an up-to-date comparison of the files above, perform 'recompute status' (press 'F5')
 ===============================
@@ -284,14 +285,15 @@ Stock image 'gtk-dialog-info' , 'CVS logs shown below.
 CVS command used: cvs log -N
 Subdirectories were ignored, use CVS Log Recursive to get the logs for all subdirectories.'
 
-Showing Tree View with columns: File , Last revision committed (UTC)
+Showing VCS log info tree with columns: File , Last revision committed (UTC)
 -> <span weight='bold'>TargetApp</span> | 
 ->   <span weight='bold'>Test1</span> | 
 ->     errors.hello | <span weight='bold'>2 days ago</span>
 ->     output.hello | Thu Feb 19 21:26:26 2009
+
 ------------------------------ (vertical pane separator)
 
-========== Text View ==========
+========== VCS Output View ==========
 RCS file: /home/geoff/texttesttmp/texttest.25Feb224256.12547/texttest/GUI/StaticGUI/CVSPlugin/RunningTest/cvsroot/TargetApp/Test1/errors.hello,v
 Working file: /home/geoff/texttesttmp/texttest.25Feb224256.12547/texttest/GUI/StaticGUI/CVSPlugin/RunningTest/TargetApp/Test1/errors.hello
 head: 1.2
@@ -315,7 +317,7 @@ revision 1.1.1.1
 date: 2009-02-19 21:26:26 +0100;  author: geoff;  state: Exp;  lines: +0 -0;  commitid: rWzEIC5JwaIek5Dt;
 Initial import
 =============================================================================
-===============================
+=====================================
 Button '_Status'
 Button '_Annotate'
 Button '_Differences' , ' between revisions ' , Text entry (set to 'HEAD') , ' and ' , Text entry
@@ -336,7 +338,7 @@ Changing GUI status to: 'Killed all running tests.'
 
 Changing GUI status to: 'Waiting for all tests to terminate ...'
 
-Progress bar set to fraction 1.0, text 'All 1 tests completed at 12Jun13:23:39'
+Progress bar set to fraction 1.0, text 'All 1 tests completed at 12Jun16:19:22'
 
 Redrawing test Test1 coloured red
 (Second column 'KILLED' coloured red)
@@ -345,9 +347,9 @@ Setting file-view title to 'Test1'
 Adding file errors.hello under heading 'Comparison Files', coloured green
 Adding file output.hello under heading 'Comparison Files', coloured red
 
-========== Text View ==========
+========== Text Info ==========
 Test were terminated before completion (KILLED) :
-Test killed explicitly at 13:23
+Test killed explicitly at 16:19
 ---------- Differences in output ----------
 1d0
 < Hello
