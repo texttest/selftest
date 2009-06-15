@@ -3,7 +3,7 @@ Waiting for application event 'all tests to be read' to occur.
 Waiting for application event 'test Test1 to complete' to occur.
 Waiting for application event 'test Test1_copy to start' to occur.
 Enabling entry completion, using matching 1
-Top Window title is TextTest dynamic GUI : testing HELLO (started at 12Jun16:31:25)
+Top Window title is TextTest dynamic GUI : testing HELLO (started at 15Jun14:19:43)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -120,15 +120,15 @@ Pane separator positioned 50% from the left edge
 
 Tabs showing : Status, Run Info
 
-Test progress:
+Showing Test Status View with columns: Status , Number , Visible
 
-Changing GUI status to: 'TextTest started at 12Jun16:31:27.'
+Changing GUI status to: 'TextTest started at 15Jun14:19:43.'
 
-Test progress:
---> Not started : 1, colour 'white', font 'bold'', visible=True
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white,bold) | 1 (white,bold) | Check box (checked)
 
-Test progress:
---> Not started : 2, colour 'white', font 'bold'', visible=True
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white,bold) | 2 (white,bold) | Check box (checked)
 
 Progress bar set to fraction 0.0, text '0 of 2 tests completed'
 
@@ -141,33 +141,33 @@ Test column header set to 'Tests: 0/2 selected, none hidden'
 
 Redrawing test Test1 coloured yellow
 
-Test progress:
---> Not started : 1, colour 'white', font 'bold'', visible=True
---> Running : 1, colour 'yellow', font 'bold'', visible=True
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white,bold) | 1 (white,bold) | Check box (checked)
+-> Running (yellow,bold) | 1 (yellow,bold) | Check box (checked)
 
 Progress bar set to fraction 0.5, text '1 of 2 tests completed'
 
 Redrawing test Test1 coloured red
 (Second column 'output different' coloured red)
 
-Test progress:
---> Not started : 1, colour 'white', font 'bold'', visible=True
---> Running : 0, colour 'white', font ''', visible=True
---> Failed : 1, colour 'red', font 'bold'', visible=True
-----> Differences : 1, colour 'red', font 'bold'', visible=True
-------> output different : 1, colour 'red', font 'bold'', visible=True
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white,bold) | 1 (white,bold) | Check box (checked)
+-> Running (white) | 0 (white) | Check box (checked)
+-> Failed (red,bold) | 1 (red,bold) | Check box (checked)
+->   Differences (red,bold) | 1 (red,bold) | Check box (checked)
+->     output different (red,bold) | 1 (red,bold) | Check box (checked)
 
 Redrawing test Test1_copy coloured yellow
-
-Test progress:
---> Not started : 0, colour 'white', font ''', visible=True
---> Running : 1, colour 'yellow', font 'bold'', visible=True
---> Failed : 1, colour 'red', font 'bold'', visible=True
-----> Differences : 1, colour 'red', font 'bold'', visible=True
-------> output different : 1, colour 'red', font 'bold'', visible=True
 Expected application event 'all tests to be read' occurred, proceeding.
 Expected application event 'test Test1 to complete' occurred, proceeding.
 Expected application event 'test Test1_copy to start' occurred, proceeding.
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white) | 0 (white) | Check box (checked)
+-> Running (yellow,bold) | 1 (yellow,bold) | Check box (checked)
+-> Failed (red,bold) | 1 (red,bold) | Check box (checked)
+->   Differences (red,bold) | 1 (red,bold) | Check box (checked)
+->     output different (red,bold) | 1 (red,bold) | Check box (checked)
 
 'set test selection to' event created with arguments 'Test1'
 
@@ -219,7 +219,7 @@ Changing GUI status to: 'Saved 1 tests.'
 
 Waiting for application event 'completion of test actions' to occur.
 
-Progress bar set to fraction 1.0, text 'All 2 tests completed at 12Jun16:31:35'
+Progress bar set to fraction 1.0, text 'All 2 tests completed at 15Jun14:19:50'
 
 Redrawing test Test1_copy coloured red
 (Second column 'output different' coloured red)
@@ -227,13 +227,13 @@ Expected application event 'completion of test actions' occurred, proceeding.
 
 'view options for' event created with arguments 'Status'
 
-Test progress:
---> Not started : 0, colour 'white', font ''', visible=True
---> Running : 0, colour 'white', font ''', visible=True
---> Failed : 1, colour 'red', font 'bold'', visible=True
-----> Differences : 1, colour 'red', font 'bold'', visible=True
-------> output different : 1, colour 'red', font 'bold'', visible=True
---> Succeeded : 1, colour 'green', font 'bold'', visible=True
+Showing Test Status View with columns: Status , Number , Visible
+-> Not started (white) | 0 (white) | Check box (checked)
+-> Running (white) | 0 (white) | Check box (checked)
+-> Failed (red,bold) | 1 (red,bold) | Check box (checked)
+->   Differences (red,bold) | 1 (red,bold) | Check box (checked)
+->     output different (red,bold) | 1 (red,bold) | Check box (checked)
+-> Succeeded (green,bold) | 1 (green,bold) | Check box (checked)
 
 'quit' event created with arguments ''
 

@@ -1,7 +1,7 @@
 
 Waiting for application event 'test Basic to become pending' to occur.
 Enabling entry completion, using matching 1
-Top Window title is TextTest dynamic GUI : testing SLEEP (started at 28May16:33:41)
+Top Window title is TextTest dynamic GUI : testing SLEEP (started at 15Jun14:19:46)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -118,20 +118,20 @@ Pane separator positioned 50% from the left edge
 
 Tabs showing : Status, Run Info
 
-Test progress:
+Showing Test Status View with columns: Status , Number , Visible
 
-Changing GUI status to: 'TextTest started at 28May16:33:45.'
+Changing GUI status to: 'TextTest started at 15Jun14:19:50.'
 
-Test progress:
---> Not started : 1, colour 'white', font 'bold'', visible=True
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white,bold) | 1 (white,bold) | Check box (checked)
 
 Redrawing test Basic coloured white
 (Second column 'PEND' coloured white)
-
-Test progress:
---> Not started : 0, colour 'white', font ''', visible=True
---> Pending : 1, colour 'white', font 'bold'', visible=True
 Expected application event 'test Basic to become pending' occurred, proceeding.
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white) | 0 (white) | Check box (checked)
+-> Pending (white,bold) | 1 (white,bold) | Check box (checked)
 
 'quit' event created with arguments ''
 
@@ -141,24 +141,24 @@ Changing GUI status to: 'Killed all running tests.'
 
 Changing GUI status to: 'Waiting for all tests to terminate ...'
 
-Progress bar set to fraction 1.0, text 'All 1 tests completed at 28May16:33:46'
+Progress bar set to fraction 1.0, text 'All 1 tests completed at 15Jun14:19:51'
 
 Redrawing test Basic coloured red
-(Second column 'cancelled pending job at 16:33' coloured red)
+(Second column 'cancelled pending job at 14:19' coloured red)
 
-Test progress:
---> Not started : 0, colour 'white', font ''', visible=True
---> Pending : 0, colour 'white', font ''', visible=True
---> Failed : 1, colour 'red', font 'bold'', visible=True
-----> Cancelled : 1, colour 'red', font 'bold'', visible=True
-------> cancelled pending job at 16:33 : 1, colour 'red', font 'bold'', visible=True
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white) | 0 (white) | Check box (checked)
+-> Pending (white) | 0 (white) | Check box (checked)
+-> Failed (red,bold) | 1 (red,bold) | Check box (checked)
+->   Cancelled (red,bold) | 1 (red,bold) | Check box (checked)
+->     cancelled pending job at 14:19 (red,bold) | 1 (red,bold) | Check box (checked)
 
-Test progress:
---> Not started : 1, colour 'white', font 'bold'', visible=True
---> Pending : 0, colour 'white', font ''', visible=True
---> Failed : 1, colour 'red', font 'bold'', visible=True
-----> Cancelled : 1, colour 'red', font 'bold'', visible=True
-------> cancelled pending job at 16:33 : 1, colour 'red', font 'bold'', visible=True
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white,bold) | 1 (white,bold) | Check box (checked)
+-> Pending (white) | 0 (white) | Check box (checked)
+-> Failed (red,bold) | 1 (red,bold) | Check box (checked)
+->   Cancelled (red,bold) | 1 (red,bold) | Check box (checked)
+->     cancelled pending job at 14:19 (red,bold) | 1 (red,bold) | Check box (checked)
 
 Progress bar set to fraction 0.5, text '1 of 2 tests completed'
 
@@ -169,17 +169,17 @@ Test Tree description...
 
 Test column header set to 'Tests: 0/2 selected, none hidden'
 
-Progress bar set to fraction 1.0, text 'All 2 tests completed at 28May16:33:48'
+Progress bar set to fraction 1.0, text 'All 2 tests completed at 15Jun14:19:53'
 
 Redrawing test Basic2 coloured red
 (Second column 'cancelled' coloured red)
 
-Test progress:
---> Not started : 0, colour 'white', font ''', visible=True
---> Pending : 0, colour 'white', font ''', visible=True
---> Failed : 2, colour 'red', font 'bold'', visible=True
-----> Cancelled : 2, colour 'red', font 'bold'', visible=True
-------> cancelled pending job at 16:33 : 1, colour 'red', font 'bold'', visible=True
-------> cancelled : 1, colour 'red', font 'bold'', visible=True
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white) | 0 (white) | Check box (checked)
+-> Pending (white) | 0 (white) | Check box (checked)
+-> Failed (red,bold) | 2 (red,bold) | Check box (checked)
+->   Cancelled (red,bold) | 2 (red,bold) | Check box (checked)
+->     cancelled pending job at 14:19 (red,bold) | 1 (red,bold) | Check box (checked)
+->     cancelled (red,bold) | 1 (red,bold) | Check box (checked)
 
 Changing GUI status to: 'Removing all temporary files ...'

@@ -1,7 +1,7 @@
 
 Waiting for application event 'completion of test actions' to occur.
 Enabling entry completion, using matching 1
-Top Window title is TextTest dynamic GUI : testing HELLO (started at 12Jun16:30:12)
+Top Window title is TextTest dynamic GUI : testing HELLO (started at 15Jun13:49:17)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -118,12 +118,12 @@ Pane separator positioned 50% from the left edge
 
 Tabs showing : Status, Run Info
 
-Test progress:
+Showing Test Status View with columns: Status , Number , Visible
 
-Changing GUI status to: 'TextTest started at 12Jun16:30:14.'
+Changing GUI status to: 'TextTest started at 15Jun13:49:21.'
 
-Test progress:
---> Not started : 1, colour 'white', font 'bold'', visible=True
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white,bold) | 1 (white,bold) | Check box (checked)
 
 Progress bar set to fraction 0.0, text '0 of 1 tests completed'
 
@@ -135,21 +135,21 @@ Test column header set to 'Tests: 0/1 selected, none hidden'
 
 Redrawing test Test coloured yellow
 
-Test progress:
---> Not started : 0, colour 'white', font ''', visible=True
---> Running : 1, colour 'yellow', font 'bold'', visible=True
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white) | 0 (white) | Check box (checked)
+-> Running (yellow,bold) | 1 (yellow,bold) | Check box (checked)
 
-Progress bar set to fraction 1.0, text 'All 1 tests completed at 12Jun16:30:14'
+Progress bar set to fraction 1.0, text 'All 1 tests completed at 15Jun13:49:22'
 
 Redrawing test Test coloured red
 (Second column 'output different' coloured red)
 
-Test progress:
---> Not started : 0, colour 'white', font ''', visible=True
---> Running : 0, colour 'white', font ''', visible=True
---> Failed : 1, colour 'red', font 'bold'', visible=True
-----> Differences : 1, colour 'red', font 'bold'', visible=True
-------> output different : 1, colour 'red', font 'bold'', visible=True
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white) | 0 (white) | Check box (checked)
+-> Running (white) | 0 (white) | Check box (checked)
+-> Failed (red,bold) | 1 (red,bold) | Check box (checked)
+->   Differences (red,bold) | 1 (red,bold) | Check box (checked)
+->     output different (red,bold) | 1 (red,bold) | Check box (checked)
 Only one test found, selecting Test
 
 Test column header set to 'Tests: All 1 selected, none hidden'
@@ -180,13 +180,13 @@ Expected application event 'completion of test actions' occurred, proceeding.
 
 'select file' event created with arguments 'output.hello'
 Starting graphical difference comparison using 'tkdiff':
--- original file : /carm/proj/texttest-tmp/geoff/texttest.12Jun162925.29676/texttest/TestSelf/FileViewers/GUI/ViewingTabOptions/texttesttmp/dynamic_gui.12Jun163012.2163/hello/Test/framework_tmp/output.helloorigcmp
---  current file : /carm/proj/texttest-tmp/geoff/texttest.12Jun162925.29676/texttest/TestSelf/FileViewers/GUI/ViewingTabOptions/texttesttmp/dynamic_gui.12Jun163012.2163/hello/Test/framework_tmp/output.hellocmp
+-- original file : /carm/proj/texttest-tmp/geoff/texttest.15Jun134854.15377/texttest/TestSelf/FileViewers/GUI/ViewingTabOptions/texttesttmp/dynamic_gui.15Jun134917.22968/hello/Test/framework_tmp/output.helloorigcmp
+--  current file : /carm/proj/texttest-tmp/geoff/texttest.15Jun134854.15377/texttest/TestSelf/FileViewers/GUI/ViewingTabOptions/texttesttmp/dynamic_gui.15Jun134917.22968/hello/Test/framework_tmp/output.hellocmp
 
 Changing GUI status to: 'Started "tkdiff output.helloorigcmp output.hellocmp" in background (from test Test).'
 
 'select file' event created with arguments 'errors.hello'
-Viewing file /carm/proj/texttest-tmp/geoff/texttest.12Jun162925.29676/texttest/TestSelf/FileViewers/GUI/ViewingTabOptions/texttesttmp/dynamic_gui.12Jun163012.2163/hello/Test/errors.hello using 'emacs', refresh set to False
+Viewing file /carm/proj/texttest-tmp/geoff/texttest.15Jun134854.15377/texttest/TestSelf/FileViewers/GUI/ViewingTabOptions/texttesttmp/dynamic_gui.15Jun134917.22968/hello/Test/errors.hello using 'emacs', refresh set to False
 
 Changing GUI status to: 'Started "emacs errors.hello" in background (from test Test).'
 
@@ -200,7 +200,7 @@ Setting sensitivity of action 'View Raw Differences' to True
 Setting sensitivity of action 'View Differences' to True
 
 'view filtered file' event created with arguments ''
-Viewing file /carm/proj/texttest-tmp/geoff/texttest.12Jun162925.29676/texttest/TestSelf/FileViewers/GUI/ViewingTabOptions/texttesttmp/dynamic_gui.12Jun163012.2163/hello/Test/framework_tmp/output.hellocmp using 'emacs', refresh set to False
+Viewing file /carm/proj/texttest-tmp/geoff/texttest.15Jun134854.15377/texttest/TestSelf/FileViewers/GUI/ViewingTabOptions/texttesttmp/dynamic_gui.15Jun134917.22968/hello/Test/framework_tmp/output.hellocmp using 'emacs', refresh set to False
 
 Changing GUI status to: 'Started "emacs output.hellocmp" in background (from test Test).'
 Setting sensitivity of action 'View File' to False
@@ -222,8 +222,8 @@ Setting sensitivity of action 'View Differences' to True
 
 'view raw differences' event created with arguments ''
 Starting graphical difference comparison using 'tkdiff':
--- original file : /carm/proj/texttest-tmp/geoff/texttest.12Jun162925.29676/texttest/TestSelf/FileViewers/GUI/ViewingTabOptions/TargetApp/Test/output.hello
---  current file : /carm/proj/texttest-tmp/geoff/texttest.12Jun162925.29676/texttest/TestSelf/FileViewers/GUI/ViewingTabOptions/texttesttmp/dynamic_gui.12Jun163012.2163/hello/Test/output.hello
+-- original file : /carm/proj/texttest-tmp/geoff/texttest.15Jun134854.15377/texttest/TestSelf/FileViewers/GUI/ViewingTabOptions/TargetApp/Test/output.hello
+--  current file : /carm/proj/texttest-tmp/geoff/texttest.15Jun134854.15377/texttest/TestSelf/FileViewers/GUI/ViewingTabOptions/texttesttmp/dynamic_gui.15Jun134917.22968/hello/Test/output.hello
 
 Changing GUI status to: 'Started "tkdiff output.hello output.hello" in background (from test Test).'
 Setting sensitivity of action 'View File' to False
@@ -244,8 +244,8 @@ Setting sensitivity of action 'View Raw Differences' to True
 
 'view raw differences' event created with arguments ''
 Starting graphical difference comparison using 'tkdiff':
--- original file : /carm/proj/texttest-tmp/geoff/texttest.12Jun162925.29676/texttest/TestSelf/FileViewers/GUI/ViewingTabOptions/TargetApp/Test/errors.hello
---  current file : /carm/proj/texttest-tmp/geoff/texttest.12Jun162925.29676/texttest/TestSelf/FileViewers/GUI/ViewingTabOptions/texttesttmp/dynamic_gui.12Jun163012.2163/hello/Test/errors.hello
+-- original file : /carm/proj/texttest-tmp/geoff/texttest.15Jun134854.15377/texttest/TestSelf/FileViewers/GUI/ViewingTabOptions/TargetApp/Test/errors.hello
+--  current file : /carm/proj/texttest-tmp/geoff/texttest.15Jun134854.15377/texttest/TestSelf/FileViewers/GUI/ViewingTabOptions/texttesttmp/dynamic_gui.15Jun134917.22968/hello/Test/errors.hello
 
 Changing GUI status to: 'Started "tkdiff errors.hello errors.hello" in background (from test Test).'
 Setting sensitivity of action 'View File' to False
@@ -265,7 +265,7 @@ Setting sensitivity of action 'View Raw Differences' to True
 Setting sensitivity of action 'View Differences' to True
 
 'view file' event created with arguments ''
-Viewing file /carm/proj/texttest-tmp/geoff/texttest.12Jun162925.29676/texttest/TestSelf/FileViewers/GUI/ViewingTabOptions/texttesttmp/dynamic_gui.12Jun163012.2163/hello/Test/output.hello using 'emacs', refresh set to False
+Viewing file /carm/proj/texttest-tmp/geoff/texttest.15Jun134854.15377/texttest/TestSelf/FileViewers/GUI/ViewingTabOptions/texttesttmp/dynamic_gui.15Jun134917.22968/hello/Test/output.hello using 'emacs', refresh set to False
 
 Changing GUI status to: 'Started "emacs output.hello" in background (from test Test).'
 Setting sensitivity of action 'View File' to False

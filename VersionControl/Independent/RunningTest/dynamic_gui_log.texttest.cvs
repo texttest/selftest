@@ -2,7 +2,7 @@
 Waiting for application event 'all tests to be read' to occur.
 Waiting for application event 'test Test1 to start' to occur.
 Enabling entry completion, using matching 1
-Top Window title is TextTest dynamic GUI : testing HELLO (started at 12Jun16:19:19)
+Top Window title is TextTest dynamic GUI : testing HELLO (started at 15Jun14:19:45)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -184,12 +184,12 @@ Pane separator positioned 50% from the left edge
 
 Tabs showing : Status, Run Info
 
-Test progress:
+Showing Test Status View with columns: Status , Number , Visible
 
-Changing GUI status to: 'TextTest started at 12Jun16:19:20.'
+Changing GUI status to: 'TextTest started at 15Jun14:19:46.'
 
-Test progress:
---> Not started : 1, colour 'white', font 'bold'', visible=True
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white,bold) | 1 (white,bold) | Check box (checked)
 
 Progress bar set to fraction 0.0, text '0 of 1 tests completed'
 
@@ -200,12 +200,12 @@ Test Tree description...
 Test column header set to 'Tests: 0/1 selected, none hidden'
 
 Redrawing test Test1 coloured yellow
-
-Test progress:
---> Not started : 0, colour 'white', font ''', visible=True
---> Running : 1, colour 'yellow', font 'bold'', visible=True
 Expected application event 'all tests to be read' occurred, proceeding.
 Expected application event 'test Test1 to start' occurred, proceeding.
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white) | 0 (white) | Check box (checked)
+-> Running (yellow,bold) | 1 (yellow,bold) | Check box (checked)
 
 'set test selection to' event created with arguments 'Test1'
 
@@ -233,7 +233,7 @@ Pane separator positioned 46% from the top
 
 
 ========== Text Info ==========
-Running on aiyura
+Running on abau
 
 To obtain the latest progress information and an up-to-date comparison of the files above, perform 'recompute status' (press 'F5')
 ===============================
@@ -266,8 +266,8 @@ Adding file errors.hello under heading 'Comparison Files', coloured yellow
 Adding file output.hello under heading 'Comparison Files', coloured yellow
 
 ========== Text Info ==========
-Running on aiyura
-Reckoned to be 0% complete at 12Jun16:19:21.
+Running on abau
+Reckoned to be 0% complete at 15Jun14:19:47.
 
 To obtain the latest progress information and an up-to-date comparison of the files above, perform 'recompute status' (press 'F5')
 ===============================
@@ -338,7 +338,7 @@ Changing GUI status to: 'Killed all running tests.'
 
 Changing GUI status to: 'Waiting for all tests to terminate ...'
 
-Progress bar set to fraction 1.0, text 'All 1 tests completed at 12Jun16:19:22'
+Progress bar set to fraction 1.0, text 'All 1 tests completed at 15Jun14:19:48'
 
 Redrawing test Test1 coloured red
 (Second column 'KILLED' coloured red)
@@ -349,7 +349,7 @@ Adding file output.hello under heading 'Comparison Files', coloured red
 
 ========== Text Info ==========
 Test were terminated before completion (KILLED) :
-Test killed explicitly at 16:19
+Test killed explicitly at 14:19
 ---------- Differences in output ----------
 1d0
 < Hello

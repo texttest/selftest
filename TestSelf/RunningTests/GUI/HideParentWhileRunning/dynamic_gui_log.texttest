@@ -3,7 +3,7 @@ Waiting for application event 'all tests to be read' to occur.
 Waiting for application event 'test Basic to complete' to occur.
 Waiting for application event 'test Basic3 to start' to occur.
 Enabling entry completion, using matching 1
-Top Window title is TextTest dynamic GUI : testing SLEEP (started at 28May16:33:06)
+Top Window title is TextTest dynamic GUI : testing SLEEP (started at 15Jun14:19:36)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -120,15 +120,15 @@ Pane separator positioned 50% from the left edge
 
 Tabs showing : Status, Run Info
 
-Test progress:
+Showing Test Status View with columns: Status , Number , Visible
 
-Changing GUI status to: 'TextTest started at 28May16:33:08.'
+Changing GUI status to: 'TextTest started at 15Jun14:19:36.'
 
-Test progress:
---> Not started : 1, colour 'white', font 'bold'', visible=True
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white,bold) | 1 (white,bold) | Check box (checked)
 
-Test progress:
---> Not started : 2, colour 'white', font 'bold'', visible=True
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white,bold) | 2 (white,bold) | Check box (checked)
 
 Progress bar set to fraction 0.0, text '0 of 2 tests completed'
 
@@ -143,33 +143,33 @@ Test column header set to 'Tests: 0/2 selected, none hidden'
 
 Redrawing test Basic coloured yellow
 
-Test progress:
---> Not started : 1, colour 'white', font 'bold'', visible=True
---> Running : 1, colour 'yellow', font 'bold'', visible=True
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white,bold) | 1 (white,bold) | Check box (checked)
+-> Running (yellow,bold) | 1 (yellow,bold) | Check box (checked)
 
 Progress bar set to fraction 0.5, text '1 of 2 tests completed'
 
 Redrawing test Basic coloured red
 (Second column 'output different' coloured red)
 
-Test progress:
---> Not started : 1, colour 'white', font 'bold'', visible=True
---> Running : 0, colour 'white', font ''', visible=True
---> Failed : 1, colour 'red', font 'bold'', visible=True
-----> Differences : 1, colour 'red', font 'bold'', visible=True
-------> output different : 1, colour 'red', font 'bold'', visible=True
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white,bold) | 1 (white,bold) | Check box (checked)
+-> Running (white) | 0 (white) | Check box (checked)
+-> Failed (red,bold) | 1 (red,bold) | Check box (checked)
+->   Differences (red,bold) | 1 (red,bold) | Check box (checked)
+->     output different (red,bold) | 1 (red,bold) | Check box (checked)
 
 Redrawing test Basic3 coloured yellow
-
-Test progress:
---> Not started : 0, colour 'white', font ''', visible=True
---> Running : 1, colour 'yellow', font 'bold'', visible=True
---> Failed : 1, colour 'red', font 'bold'', visible=True
-----> Differences : 1, colour 'red', font 'bold'', visible=True
-------> output different : 1, colour 'red', font 'bold'', visible=True
 Expected application event 'all tests to be read' occurred, proceeding.
 Expected application event 'test Basic to complete' occurred, proceeding.
 Expected application event 'test Basic3 to start' occurred, proceeding.
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white) | 0 (white) | Check box (checked)
+-> Running (yellow,bold) | 1 (yellow,bold) | Check box (checked)
+-> Failed (red,bold) | 1 (red,bold) | Check box (checked)
+->   Differences (red,bold) | 1 (red,bold) | Check box (checked)
+->     output different (red,bold) | 1 (red,bold) | Check box (checked)
 
 'toggle progress report category' event created with arguments 'Failed'
 Selecting not to show tests in the 'Failed' category.
@@ -180,7 +180,14 @@ Test column header set to 'Tests: 0/2 selected, 1 hidden'
 
 Waiting for application event 'completion of test actions' to occur.
 
-Progress bar set to fraction 1.0, text 'All 2 tests completed at 28May16:33:15'
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white) | 0 (white) | Check box (checked)
+-> Running (yellow,bold) | 1 (yellow,bold) | Check box (checked)
+-> Failed (red,bold) | 1 (red,bold) | Check box
+->   Differences (red,bold) | 1 (red,bold) | Check box
+->     output different (red,bold) | 1 (red,bold) | Check box
+
+Progress bar set to fraction 1.0, text 'All 2 tests completed at 15Jun14:19:43'
 
 Redrawing test Basic3 coloured red
 (Second column 'output different' coloured red)
@@ -189,13 +196,13 @@ Hiding test : SLEEP test-suite Suite
 
 Test column header set to 'Tests: 0/2 selected, all hidden'
 
-Test progress:
---> Not started : 0, colour 'white', font ''', visible=True
---> Running : 0, colour 'white', font ''', visible=True
---> Failed : 2, colour 'red', font 'bold'', visible=False
-----> Differences : 2, colour 'red', font 'bold'', visible=False
-------> output different : 2, colour 'red', font 'bold'', visible=False
---------> Group 1 : 2, colour 'red', font 'bold'', visible=False
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white) | 0 (white) | Check box (checked)
+-> Running (white) | 0 (white) | Check box (checked)
+-> Failed (red,bold) | 2 (red,bold) | Check box
+->   Differences (red,bold) | 2 (red,bold) | Check box
+->     output different (red,bold) | 2 (red,bold) | Check box
+->       Group 1 (red,bold) | 2 (red,bold) | Check box
 Expected application event 'completion of test actions' occurred, proceeding.
 
 'quit' event created with arguments ''
