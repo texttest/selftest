@@ -2,7 +2,7 @@
 Waiting for application event 'all tests to be read' to occur.
 Waiting for application event 'test Basic to start' to occur.
 Enabling entry completion, using matching 1
-Top Window title is TextTest dynamic GUI : testing SLEEP (started at 15Jun14:19:36)
+Top Window title is TextTest dynamic GUI : testing SLEEP (started at 15Jun23:16:57)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -117,11 +117,13 @@ Test column header set to 'Tests: All 0 selected'
 
 Pane separator positioned 50% from the left edge
 
-Tabs showing : Status, Run Info
+
+Showing Notebook with tabs: Status , Run Info
+Viewing page 'Status'
 
 Showing Test Status View with columns: Status , Number , Visible
 
-Changing GUI status to: 'TextTest started at 15Jun14:19:37.'
+Changing GUI status to: 'TextTest started at 15Jun23:16:58.'
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 1 (white,bold) | Check box (checked)
@@ -158,17 +160,20 @@ Test column header set to 'Tests: 1/3 selected, none hidden'
 Setting sensitivity of action 'S_ave Selection...' to True
 Setting sensitivity of action '_Kill' to True
 
-Setting file-view title to 'Basic2'
+Current page changed in Notebook with tabs: Test , Status , Run Info
+Viewing page 'Test'
+...........
 
-Pane separator positioned 46% from the top
+Showing File Tree with columns: Basic2 , Details
+-> Temporary Files
 
+------------------------------ (horizontal pane separator, 46% from the top)
+...........
 
 ========== Text Info ==========
 Description:
 Same again
 ===============================
-
-Tabs showing : Test, Status, Run Info
 
 'kill selected tests' event created with arguments ''
 
@@ -185,31 +190,32 @@ Progress bar set to fraction 0.333333333333, text '1 of 3 tests completed'
 
 Redrawing test Basic2 coloured red
 (Second column 'cancelled' coloured red)
-
-Setting file-view title to 'Basic2'
-
-========== Text Info ==========
-Test were cancelled before starting :
-Test run was cancelled before it had started
-===============================
 Setting sensitivity of action '_Kill' to False
 Setting sensitivity of action '_Mark' to True
 Setting sensitivity of action 'Recompute Status' to True
 Expected application event 'test Basic2 to complete' occurred, proceeding.
 
-'set test selection to' event created with arguments 'Basic'
-
-Setting file-view title to 'Basic'
-Adding file errors.sleep under heading 'Temporary Files', coloured yellow
-Adding file output.sleep under heading 'Temporary Files', coloured yellow
+Updated : File Tree with columns: Basic2 , Details
 
 ========== Text Info ==========
-Running on juliaca
+Test were cancelled before starting :
+Test run was cancelled before it had started
+===============================
+
+'set test selection to' event created with arguments 'Basic'
+Setting sensitivity of action '_Kill' to True
+Setting sensitivity of action '_Mark' to False
+
+Updated : File Tree with columns: Basic , Details
+-> Temporary Files
+->   errors.sleep (yellow) | (yellow)
+->   output.sleep (yellow) | (yellow)
+
+========== Text Info ==========
+Running on sofa-pc
 
 To obtain the latest progress information and an up-to-date comparison of the files above, perform 'recompute status' (press 'F5')
 ===============================
-Setting sensitivity of action '_Kill' to True
-Setting sensitivity of action '_Mark' to False
 
 'kill selected tests' event created with arguments ''
 
@@ -227,22 +233,23 @@ Progress bar set to fraction 0.666666666667, text '2 of 3 tests completed'
 
 Redrawing test Basic coloured red
 (Second column 'KILLED' coloured red)
-
-Setting file-view title to 'Basic'
-Adding file errors.sleep under heading 'Comparison Files', coloured green
-Adding file output.sleep under heading 'Comparison Files', coloured red
-
-========== Text Info ==========
-Test were terminated before completion (KILLED) :
-Test killed explicitly at 14:19
----------- Differences in output ----------
-2d1
-< Done
-===============================
 Setting sensitivity of action '_Save' to True
 Setting sensitivity of action 'Save _As...' to True
 Setting sensitivity of action '_Kill' to False
 Setting sensitivity of action '_Mark' to True
+
+Updated : File Tree with columns: Basic , Details
+-> Comparison Files
+->   errors.sleep (green) | (green)
+->   output.sleep (red) | (red)
+
+========== Text Info ==========
+Test were terminated before completion (KILLED) :
+Test killed explicitly at 23:17
+---------- Differences in output ----------
+2d1
+< Done
+===============================
 
 Redrawing test Basic3 coloured yellow
 Expected application event 'test Basic to complete' occurred, proceeding.
@@ -256,7 +263,7 @@ Changing GUI status to: 'Killed all running tests.'
 
 Changing GUI status to: 'Waiting for all tests to terminate ...'
 
-Progress bar set to fraction 1.0, text 'All 3 tests completed at 15Jun14:19:42'
+Progress bar set to fraction 1.0, text 'All 3 tests completed at 15Jun23:17:02'
 
 Redrawing test Basic3 coloured red
 (Second column 'KILLED' coloured red)

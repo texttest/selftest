@@ -3,7 +3,7 @@ Waiting for application event 'all tests to be read' to occur.
 Waiting for application event 'test Basic to become pending' to occur.
 Waiting for application event 'test Basic2 to become pending' to occur.
 Enabling entry completion, using matching 1
-Top Window title is TextTest dynamic GUI : testing SLEEP (started at 15Jun14:19:46)
+Top Window title is TextTest dynamic GUI : testing SLEEP (started at 15Jun23:19:56)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -118,11 +118,13 @@ Test column header set to 'Tests: All 0 selected'
 
 Pane separator positioned 50% from the left edge
 
-Tabs showing : Status, Run Info
+
+Showing Notebook with tabs: Status , Run Info
+Viewing page 'Status'
 
 Showing Test Status View with columns: Status , Number , Visible
 
-Changing GUI status to: 'TextTest started at 15Jun14:19:46.'
+Changing GUI status to: 'TextTest started at 15Jun23:19:56.'
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 1 (white,bold) | Check box (checked)
@@ -162,19 +164,21 @@ Test column header set to 'Tests: 1/2 selected, none hidden'
 Setting sensitivity of action 'S_ave Selection...' to True
 Setting sensitivity of action '_Kill' to True
 
-Setting file-view title to 'Basic'
+Test column header set to 'Tests: All 2 selected, none hidden'
 
-Pane separator positioned 46% from the top
+Current page changed in Notebook with tabs: Test , Status , Run Info
+Viewing page 'Test'
+...........
 
+Showing File Tree with columns: Sample from 2 tests , Details
+-> Temporary Files
+
+------------------------------ (horizontal pane separator, 46% from the top)
+...........
 
 ========== Text Info ==========
 Job pending in SGE
 ===============================
-
-Tabs showing : Test, Status, Run Info
-
-Test column header set to 'Tests: All 2 selected, none hidden'
-Setting file-view title to 'Sample from 2 tests'
 
 'kill selected tests' event created with arguments ''
 
@@ -191,32 +195,35 @@ Waiting for application event 'completion of test actions' to occur.
 Progress bar set to fraction 0.5, text '1 of 2 tests completed'
 
 Redrawing test Basic2 coloured red
-(Second column 'cancelled pending job at 14:19' coloured red)
+(Second column 'cancelled pending job at 23:19' coloured red)
 Setting sensitivity of action '_Kill' to False
 Setting sensitivity of action '_Mark' to True
 Setting sensitivity of action 'Recompute Status' to True
 
-Progress bar set to fraction 1.0, text 'All 2 tests completed at 15Jun14:19:48'
+Progress bar set to fraction 1.0, text 'All 2 tests completed at 15Jun23:19:58'
 
 Redrawing test Basic coloured red
-(Second column 'cancelled pending job at 14:19' coloured red)
+(Second column 'cancelled pending job at 23:19' coloured red)
 
-Setting file-view title to 'Sample from 2 tests'
+Updated : File Tree with columns: Sample from 2 tests , Details
 
 ========== Text Info ==========
 Test were cancelled before starting :
-Test job was cancelled (while still pending in SGE) at 14:19
+Test job was cancelled (while still pending in SGE) at 23:19
 ===============================
 Expected application event 'completion of test actions' occurred, proceeding.
 
 'view options for' event created with arguments 'Status'
+
+Current page changed in Notebook with tabs: Test , Status , Run Info
+Viewing page 'Status'
 
 Showing Test Status View with columns: Status , Number , Visible
 -> Not started (white) | 0 (white) | Check box (checked)
 -> Pending (white) | 0 (white) | Check box (checked)
 -> Failed (red,bold) | 2 (red,bold) | Check box (checked)
 ->   Cancelled (red,bold) | 2 (red,bold) | Check box (checked)
-->     cancelled pending job at 14:19 (red,bold) | 2 (red,bold) | Check box (checked)
+->     cancelled pending job at 23:19 (red,bold) | 2 (red,bold) | Check box (checked)
 
 'quit' event created with arguments ''
 

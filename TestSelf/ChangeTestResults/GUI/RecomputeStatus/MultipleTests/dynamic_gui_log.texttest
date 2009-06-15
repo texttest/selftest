@@ -1,7 +1,7 @@
 
 Waiting for application event 'completion of test actions' to occur.
 Enabling entry completion, using matching 1
-Top Window title is TextTest dynamic GUI : testing HELLO.2,HELLO.3,HELLO.4 (started at 15Jun14:19:34)
+Top Window title is TextTest dynamic GUI : testing HELLO.2,HELLO.3,HELLO.4 (started at 15Jun22:27:51)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -116,11 +116,13 @@ Test column header set to 'Tests: All 0 selected'
 
 Pane separator positioned 50% from the left edge
 
-Tabs showing : Status, Run Info
+
+Showing Notebook with tabs: Status , Run Info
+Viewing page 'Status'
 
 Showing Test Status View with columns: Status , Number , Visible
 
-Changing GUI status to: 'TextTest started at 15Jun14:19:37.'
+Changing GUI status to: 'TextTest started at 15Jun22:27:52.'
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 1 (white,bold) | Check box (checked)
@@ -485,7 +487,7 @@ Updated : Test Status View with columns: Status , Number , Visible
 ->       Group 1 (red,bold) | 5 (red,bold) | Check box (checked)
 -> Succeeded (green,bold) | 3 (green,bold) | Check box (checked)
 
-Progress bar set to fraction 1.0, text 'All 12 tests completed at 15Jun14:19:41'
+Progress bar set to fraction 1.0, text 'All 12 tests completed at 15Jun22:27:53'
 
 Redrawing test ErrDiff coloured red
 (Second column 'errors different' coloured red)
@@ -511,12 +513,17 @@ Setting sensitivity of action 'S_ave Selection...' to True
 Setting sensitivity of action '_Mark' to True
 Setting sensitivity of action 'Recompute Status' to True
 
-Setting file-view title to 'OutDiff'
-Adding file errors.hello under heading 'Comparison Files', coloured green
-Adding file output.hello under heading 'Comparison Files', coloured red
+Current page changed in Notebook with tabs: Test , Status , Run Info
+Viewing page 'Test'
+...........
 
-Pane separator positioned 46% from the top
+Showing File Tree with columns: OutDiff , Details
+-> Comparison Files
+->   errors.hello (green) | (green)
+->   output.hello (red) | (red)
 
+------------------------------ (horizontal pane separator, 46% from the top)
+...........
 
 ========== Text Info ==========
 Test FAILED :
@@ -524,8 +531,6 @@ Test FAILED :
 0a1
 > Hello World!
 ===============================
-
-Tabs showing : Test, Status, Run Info
 
 'save results with non-default settings' event created with arguments ''
 Adding entry completion '2' ...
@@ -553,55 +558,45 @@ Changing GUI status to: 'Saving HELLO.2 test-case OutDiff : output, no version'
 Redrawing test OutDiff coloured green
 Setting recalculation icon to 'gtk-refresh'
 Setting recalculation icon to 'gtk-refresh'
-
-Setting file-view title to 'OutDiff'
-Adding file errors.hello under heading 'Comparison Files', coloured green
-Adding file output.hello under heading 'Comparison Files', coloured green
-
-========== Text Info ==========
-Test succeeded
-===============================
 Setting sensitivity of action '_Save' to False
 Setting sensitivity of action 'Save _As...' to False
 
 Changing GUI status to: 'Saved 1 tests.'
 
+Updated : File Tree with columns: OutDiff , Details
+-> Comparison Files
+->   errors.hello (green) | (green)
+->   output.hello (green) | (green)
+
+========== Text Info ==========
+Test succeeded
+===============================
+
 'set test selection to' event created with arguments 'OutDiff under TargetApp (hello.2),Success under TargetApp (hello.2),BothDiff under TargetApp (hello.2),ErrDiff under TargetApp (hello.2),OutDiff under TargetApp (hello.3),Success under TargetApp (hello.3),BothDiff under TargetApp (hello.3),ErrDiff under TargetApp (hello.3),OutDiff under TargetApp (hello.4),Success under TargetApp (hello.4),BothDiff under TargetApp (hello.4),ErrDiff under TargetApp (hello.4)'
 
 Test column header set to 'Tests: 2/12 selected, none hidden'
-Setting file-view title to 'Sample from 2 tests'
 
 Test column header set to 'Tests: 3/12 selected, none hidden'
-Setting file-view title to 'Sample from 3 tests'
 Setting sensitivity of action '_Save' to True
 Setting sensitivity of action 'Save _As...' to True
 
 Test column header set to 'Tests: 4/12 selected, none hidden'
-Setting file-view title to 'Sample from 4 tests'
 
 Test column header set to 'Tests: 5/12 selected, none hidden'
-Setting file-view title to 'Sample from 5 tests'
 
 Test column header set to 'Tests: 6/12 selected, none hidden'
-Setting file-view title to 'Sample from 6 tests'
 
 Test column header set to 'Tests: 7/12 selected, none hidden'
-Setting file-view title to 'Sample from 7 tests'
 
 Test column header set to 'Tests: 8/12 selected, none hidden'
-Setting file-view title to 'Sample from 8 tests'
 
 Test column header set to 'Tests: 9/12 selected, none hidden'
-Setting file-view title to 'Sample from 9 tests'
 
 Test column header set to 'Tests: 10/12 selected, none hidden'
-Setting file-view title to 'Sample from 10 tests'
 
 Test column header set to 'Tests: 11/12 selected, none hidden'
-Setting file-view title to 'Sample from 11 tests'
 
 Test column header set to 'Tests: All 12 selected, none hidden'
-Setting file-view title to 'Sample from 12 tests'
 
 'recompute test status, including progress information if appropriate' event created with arguments ''
 Adding entry completion '<default> - 2,3,4' ...
@@ -616,15 +611,16 @@ Changing GUI status to: 'Recomputing status of HELLO.2 test-case OutDiff ...'
 
 Redrawing test OutDiff coloured green
 
-Setting file-view title to 'Sample from 12 tests'
-Adding file errors.hello under heading 'Comparison Files', coloured green
-Adding file output.hello under heading 'Comparison Files', coloured green
+Changing GUI status to: 'Recomputing status of HELLO.2 test-case Success ...'
+
+Updated : File Tree with columns: Sample from 12 tests , Details
+-> Comparison Files
+->   errors.hello (green) | (green)
+->   output.hello (green) | (green)
 
 ========== Text Info ==========
 Test succeeded
 ===============================
-
-Changing GUI status to: 'Recomputing status of HELLO.2 test-case Success ...'
 
 Redrawing test Success coloured green
 
@@ -681,47 +677,31 @@ Changing GUI status to: 'Recomputed status of 12 tests.'
 'set test selection to' event created with arguments 'ErrDiff under TargetApp (hello.3)'
 
 Test column header set to 'Tests: 11/12 selected, none hidden'
-Setting file-view title to 'Sample from 11 tests'
 
 Test column header set to 'Tests: 10/12 selected, none hidden'
-Setting file-view title to 'Sample from 10 tests'
 
 Test column header set to 'Tests: 9/12 selected, none hidden'
-Setting file-view title to 'Sample from 9 tests'
 
 Test column header set to 'Tests: 8/12 selected, none hidden'
-Setting file-view title to 'Sample from 8 tests'
 
 Test column header set to 'Tests: 7/12 selected, none hidden'
-Setting file-view title to 'Sample from 7 tests'
 
 Test column header set to 'Tests: 6/12 selected, none hidden'
-Setting file-view title to 'Sample from 6 tests'
 
 Test column header set to 'Tests: 5/12 selected, none hidden'
-Setting file-view title to 'Sample from 5 tests'
 
 Test column header set to 'Tests: 4/12 selected, none hidden'
-Setting file-view title to 'Sample from 4 tests'
 
 Test column header set to 'Tests: 3/12 selected, none hidden'
-Setting file-view title to 'Sample from 3 tests'
 
 Test column header set to 'Tests: 2/12 selected, none hidden'
 
-Setting file-view title to 'Sample from 2 tests'
-Adding file errors.hello under heading 'Comparison Files', coloured green
-Adding file output.hello under heading 'Comparison Files', coloured green
-
-========== Text Info ==========
-Test succeeded
-===============================
-
 Test column header set to 'Tests: 1/12 selected, none hidden'
 
-Setting file-view title to 'ErrDiff'
-Adding file errors.hello under heading 'Comparison Files', coloured red
-Adding file output.hello under heading 'Comparison Files', coloured green
+Updated : File Tree with columns: ErrDiff , Details
+-> Comparison Files
+->   errors.hello (red) | (red)
+->   output.hello (green) | (green)
 
 ========== Text Info ==========
 Test FAILED :
@@ -756,24 +736,50 @@ Changing GUI status to: 'Saving HELLO.3 test-case ErrDiff : errors, no version'
 Redrawing test ErrDiff coloured green
 Setting recalculation icon to 'gtk-refresh'
 Setting recalculation icon to 'gtk-refresh'
-
-Setting file-view title to 'ErrDiff'
-Adding file errors.hello under heading 'Comparison Files', coloured green
-Adding file output.hello under heading 'Comparison Files', coloured green
-
-========== Text Info ==========
-Test succeeded
-===============================
 Setting sensitivity of action '_Save' to False
 Setting sensitivity of action 'Save _As...' to False
 
 Changing GUI status to: 'Saved 1 tests.'
 
-'set test selection to' event created with arguments 'ErrDiff under TargetApp (hello.2),OutDiff under TargetApp (hello.2),Success under TargetApp (hello.2),BothDiff under TargetApp (hello.2),OutDiff under TargetApp (hello.3),Success under TargetApp (hello.3),BothDiff under TargetApp (hello.3),ErrDiff under TargetApp (hello.3),OutDiff under TargetApp (hello.4),Success under TargetApp (hello.4),BothDiff under TargetApp (hello.4),ErrDiff under TargetApp (hello.4)'
+Updated : File Tree with columns: ErrDiff , Details
+-> Comparison Files
+->   errors.hello (green) | (green)
+->   output.hello (green) | (green)
 
-Setting file-view title to 'ErrDiff'
-Adding file errors.hello under heading 'Comparison Files', coloured red
-Adding file output.hello under heading 'Comparison Files', coloured green
+========== Text Info ==========
+Test succeeded
+===============================
+
+'set test selection to' event created with arguments 'ErrDiff under TargetApp (hello.2),OutDiff under TargetApp (hello.2),Success under TargetApp (hello.2),BothDiff under TargetApp (hello.2),OutDiff under TargetApp (hello.3),Success under TargetApp (hello.3),BothDiff under TargetApp (hello.3),ErrDiff under TargetApp (hello.3),OutDiff under TargetApp (hello.4),Success under TargetApp (hello.4),BothDiff under TargetApp (hello.4),ErrDiff under TargetApp (hello.4)'
+Setting sensitivity of action '_Save' to True
+Setting sensitivity of action 'Save _As...' to True
+
+Test column header set to 'Tests: 2/12 selected, none hidden'
+
+Test column header set to 'Tests: 3/12 selected, none hidden'
+
+Test column header set to 'Tests: 4/12 selected, none hidden'
+
+Test column header set to 'Tests: 5/12 selected, none hidden'
+
+Test column header set to 'Tests: 6/12 selected, none hidden'
+
+Test column header set to 'Tests: 7/12 selected, none hidden'
+
+Test column header set to 'Tests: 8/12 selected, none hidden'
+
+Test column header set to 'Tests: 9/12 selected, none hidden'
+
+Test column header set to 'Tests: 10/12 selected, none hidden'
+
+Test column header set to 'Tests: 11/12 selected, none hidden'
+
+Test column header set to 'Tests: All 12 selected, none hidden'
+
+Updated : File Tree with columns: Sample from 12 tests , Details
+-> Comparison Files
+->   errors.hello (red) | (red) | Stock image 'gtk-refresh'
+->   output.hello (green) | (green)
 
 ========== Text Info ==========
 Test FAILED :
@@ -781,46 +787,6 @@ Test FAILED :
 0a1
 > Error text
 ===============================
-Setting sensitivity of action '_Save' to True
-Setting sensitivity of action 'Save _As...' to True
-
-Setting file-view title to 'ErrDiff'
-Adding file errors.hello under heading 'Comparison Files', coloured red
-(Recalculation icon showing 'gtk-refresh')
-Adding file output.hello under heading 'Comparison Files', coloured green
-
-Test column header set to 'Tests: 2/12 selected, none hidden'
-Setting file-view title to 'Sample from 2 tests'
-
-Test column header set to 'Tests: 3/12 selected, none hidden'
-Setting file-view title to 'Sample from 3 tests'
-
-Test column header set to 'Tests: 4/12 selected, none hidden'
-Setting file-view title to 'Sample from 4 tests'
-
-Test column header set to 'Tests: 5/12 selected, none hidden'
-Setting file-view title to 'Sample from 5 tests'
-
-Test column header set to 'Tests: 6/12 selected, none hidden'
-Setting file-view title to 'Sample from 6 tests'
-
-Test column header set to 'Tests: 7/12 selected, none hidden'
-Setting file-view title to 'Sample from 7 tests'
-
-Test column header set to 'Tests: 8/12 selected, none hidden'
-Setting file-view title to 'Sample from 8 tests'
-
-Test column header set to 'Tests: 9/12 selected, none hidden'
-Setting file-view title to 'Sample from 9 tests'
-
-Test column header set to 'Tests: 10/12 selected, none hidden'
-Setting file-view title to 'Sample from 10 tests'
-
-Test column header set to 'Tests: 11/12 selected, none hidden'
-Setting file-view title to 'Sample from 11 tests'
-
-Test column header set to 'Tests: All 12 selected, none hidden'
-Setting file-view title to 'Sample from 12 tests'
 
 'recompute test status, including progress information if appropriate' event created with arguments ''
 
@@ -846,17 +812,18 @@ Redrawing test BothDiff coloured red
 Changing GUI status to: 'Recomputing status of HELLO.2 test-case ErrDiff ...'
 
 Redrawing test ErrDiff coloured green
+Setting recalculation icon to ''
 
-Setting file-view title to 'Sample from 12 tests'
-Adding file errors.hello under heading 'Comparison Files', coloured green
-Adding file output.hello under heading 'Comparison Files', coloured green
+Changing GUI status to: 'Recomputing status of HELLO.3 test-case OutDiff ...'
+
+Updated : File Tree with columns: Sample from 12 tests , Details
+-> Comparison Files
+->   errors.hello (green) | (green)
+->   output.hello (green) | (green)
 
 ========== Text Info ==========
 Test succeeded
 ===============================
-Setting recalculation icon to ''
-
-Changing GUI status to: 'Recomputing status of HELLO.3 test-case OutDiff ...'
 
 Redrawing test OutDiff coloured green
 

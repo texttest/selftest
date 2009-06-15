@@ -6,9 +6,9 @@ Adding entry completion 'extra1' ...
 Adding entry completion 'extra2' ...
 Adding entry completion 'localhost' ...
 Adding entry completion '1' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.01Jun113708.19621/texttest/TestSelf/ExtraVersions/GUI/SelectAll/log/logging.debug' ...
-Adding entry completion '/users/geoff/work/master/Testing/TextTest/log/logging.debug' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.01Jun113708.19621/texttest/TestSelf/ExtraVersions/GUI/SelectAll/log' ...
+Adding entry completion '/home/geoff/.texttest/tmp/texttest.15Jun223421.11861/texttest/TestSelf/ExtraVersions/GUI/SelectAll/log/logging.debug' ...
+Adding entry completion '/home/geoff/code/texttest/log/logging.debug' ...
+Adding entry completion '/home/geoff/.texttest/tmp/texttest.15Jun223421.11861/texttest/TestSelf/ExtraVersions/GUI/SelectAll/log' ...
 Top Window title is TextTest static GUI : management of tests for HELLO
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
@@ -175,9 +175,9 @@ Test column header set to 'Tests: All 0 selected'
 
 Pane separator positioned 50% from the left edge
 
-Tabs showing : Selection, Config
 
-Viewing notebook page for 'Selection'
+Showing Notebook with tabs: Selection , Config
+Viewing page 'Selection'
 Viewing table with 9 rows and 2 columns.
 'Tests for version  ' (tooltip 'Select tests for a specific version.') | Text entry (drop-down list containing ['', '<default>', 'extra1', 'extra2'])
 'Test names containing  ' (tooltip 'Select tests for which the name matches the entered text. The text can be a regular expression.') | Text entry
@@ -196,11 +196,11 @@ Button '_Select', stock image 'gtk-find' (tooltip 'Select indicated tests')
 Radio button 'Discard' (checked) (tooltip 'Show all tests which match the criteria, and hide all those that do not.') , Radio button 'Refine' (tooltip 'Hide all tests which do not match the criteria. Do not show any tests that aren't already shown.') , Radio button 'Extend' (tooltip 'Show all tests which match the criteria. Do not hide any tests that are currently shown.')
 Button 'Filter', stock image 'gtk-find' (tooltip 'filter tests to show only those indicated')
 
-Changing GUI status to: 'TextTest started at 01Jun11:37:37.'
+Changing GUI status to: 'TextTest started at 15Jun22:42:48.'
 
 Changing GUI status to: 'Reading tests ...'
 
-Changing GUI status to: 'Reading tests completed at 01Jun11:37:38.'
+Changing GUI status to: 'Reading tests completed at 15Jun22:42:48.'
 
 Test Tree description...
 -> TargetApp (hello)
@@ -210,25 +210,6 @@ Test Tree description...
 ->   Extra2
 
 Test column header set to 'Tests: 0/6 selected, 0/4 distinct'
-
-Viewing notebook page for 'Selection'
-Viewing table with 9 rows and 2 columns.
-'Tests for version  ' (tooltip 'Select tests for a specific version.') | Text entry (drop-down list containing ['', '<default>', 'extra1', 'extra2'])
-'Test names containing  ' (tooltip 'Select tests for which the name matches the entered text. The text can be a regular expression.') | Text entry
-'Suite names containing  ' (tooltip 'Select tests for which at least one parent suite name matches the entered text. The text can be a regular expression.') | Text entry
-'App names containing  ' (tooltip 'Select tests for which the application name matches the entered text. The text can be a regular expression.') | Text entry
-'Tests listed in file  ' | Text entry , Button '...'
-'Descriptions containing  ' (tooltip 'Select tests for which the description (comment) matches the entered text. The text can be a regular expression.') | Text entry
-'Test-files containing  ' | Text entry
-'Test-file to search  ' | Text entry (set to 'output') (drop-down list containing ['output', 'errors'])
-'Execution time  ' (tooltip 'Specify execution time limits, either as '<min>,<max>', or as a list of comma-separated expressions, such as >=0:45,<=1:00. Digit-only numbers are interpreted as minutes, while colon-separated numbers are interpreted as hours:minutes:seconds.') | Text entry
-.....Selection......
-Check button 'Select in collapsed suites' (tooltip 'Select in currently collapsed suites as well?')
-Radio button 'Discard' (checked) (tooltip 'Unselect all currently selected tests before applying the new selection criteria.') , Radio button 'Refine' (tooltip 'Apply the new selection criteria only to the currently selected tests, to obtain a subselection.') , Radio button 'Extend' (tooltip 'Keep the currently selected tests even if they do not match the new criteria, and extend the selection with all other tests which meet the new criteria.') , Radio button 'Exclude' (tooltip 'After applying the new selection criteria to all tests, unselect the currently selected tests, to exclude them from the new selection.')
-Button '_Select', stock image 'gtk-find' (tooltip 'Select indicated tests')
-.....Filtering......
-Radio button 'Discard' (checked) (tooltip 'Show all tests which match the criteria, and hide all those that do not.') , Radio button 'Refine' (tooltip 'Hide all tests which do not match the criteria. Do not show any tests that aren't already shown.') , Radio button 'Extend' (tooltip 'Show all tests which match the criteria. Do not hide any tests that are currently shown.')
-Button 'Filter', stock image 'gtk-find' (tooltip 'filter tests to show only those indicated')
 Expected application event 'all tests to be read' occurred, proceeding.
 
 'select indicated tests' event created with arguments ''
@@ -251,14 +232,14 @@ Setting sensitivity of action 'S_ave Selection...' to True
 Setting sensitivity of action '_Run' to True
 Setting sensitivity of action '_Run' to True
 
-Tabs showing : Selection, Running, Config
-
 Changing GUI status to: 'Selected 6 tests.'
 
-'run selected tests' event created with arguments ''
-Starting dynamic run of TextTest with arguments ['-g', '-a', 'hello', '-m', 'localhost', '-cp', '1', '-xr', '/carm/proj/texttest-tmp/geoff/texttest.01Jun113708.19621/texttest/TestSelf/ExtraVersions/GUI/SelectAll/log/logging.debug', '-xw', '/carm/proj/texttest-tmp/geoff/texttest.01Jun113708.19621/texttest/TestSelf/ExtraVersions/GUI/SelectAll/log', '-count', '6', '-f', '/carm/proj/texttest-tmp/geoff/texttest.01Jun113708.19621/texttest/TestSelf/ExtraVersions/GUI/SelectAll/texttesttmp/static_gui.01Jun113736.15743/dynamic_run1/gui_select', '-fd', '/carm/proj/texttest-tmp/geoff/texttest.01Jun113708.19621/texttest/TestSelf/ExtraVersions/GUI/SelectAll/texttesttmp/static_gui.01Jun113736.15743/temporary_filter_files']
+Child visibility changed in Notebook with tabs: Selection , Running , Config
 
-Changing GUI status to: 'Started 6 tests at 01Jun11:37:38.'
+'run selected tests' event created with arguments ''
+Starting dynamic run of TextTest with arguments ['-g', '-a', 'hello', '-m', 'localhost', '-cp', '1', '-xr', '/home/geoff/.texttest/tmp/texttest.15Jun223421.11861/texttest/TestSelf/ExtraVersions/GUI/SelectAll/log/logging.debug', '-xw', '/home/geoff/.texttest/tmp/texttest.15Jun223421.11861/texttest/TestSelf/ExtraVersions/GUI/SelectAll/log', '-count', '6', '-f', '/home/geoff/.texttest/tmp/texttest.15Jun223421.11861/texttest/TestSelf/ExtraVersions/GUI/SelectAll/texttesttmp/static_gui.15Jun224247.14586/dynamic_run1/gui_select', '-fd', '/home/geoff/.texttest/tmp/texttest.15Jun223421.11861/texttest/TestSelf/ExtraVersions/GUI/SelectAll/texttesttmp/static_gui.15Jun224247.14586/temporary_filter_files']
+
+Changing GUI status to: 'Started 6 tests at 15Jun22:42:48.'
 
 Waiting for application event 'dynamic GUI to be closed' to occur.
 Expected application event 'dynamic GUI to be closed' occurred, proceeding.

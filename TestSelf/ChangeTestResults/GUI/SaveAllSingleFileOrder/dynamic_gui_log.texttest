@@ -1,7 +1,7 @@
 
 Waiting for application event 'completion of test actions' to occur.
 Enabling entry completion, using matching 1
-Top Window title is TextTest dynamic GUI : testing HELLO (started at 15Jun14:19:27)
+Top Window title is TextTest dynamic GUI : testing HELLO (started at 15Jun22:00:09)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -116,11 +116,13 @@ Test column header set to 'Tests: All 0 selected'
 
 Pane separator positioned 50% from the left edge
 
-Tabs showing : Status, Run Info
+
+Showing Notebook with tabs: Status , Run Info
+Viewing page 'Status'
 
 Showing Test Status View with columns: Status , Number , Visible
 
-Changing GUI status to: 'TextTest started at 15Jun14:19:29.'
+Changing GUI status to: 'TextTest started at 15Jun22:00:10.'
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 1 (white,bold) | Check box (checked)
@@ -221,7 +223,7 @@ Updated : Test Status View with columns: Status , Number , Visible
 ->     errors different (red,bold) | 1 (red,bold) | Check box (checked)
 -> Succeeded (green,bold) | 1 (green,bold) | Check box (checked)
 
-Progress bar set to fraction 1.0, text 'All 4 tests completed at 15Jun14:19:32'
+Progress bar set to fraction 1.0, text 'All 4 tests completed at 15Jun22:00:10'
 
 Redrawing test ErrDiff coloured red
 (Second column 'errors different' coloured red)
@@ -247,12 +249,23 @@ Setting sensitivity of action 'S_ave Selection...' to True
 Setting sensitivity of action '_Mark' to True
 Setting sensitivity of action 'Recompute Status' to True
 
-Setting file-view title to 'BothDiff'
-Adding file errors.hello under heading 'Comparison Files', coloured red
-Adding file output.hello under heading 'Comparison Files', coloured red
+Test column header set to 'Tests: 2/4 selected, none hidden'
 
-Pane separator positioned 46% from the top
+Test column header set to 'Tests: 3/4 selected, none hidden'
 
+Test column header set to 'Tests: All 4 selected, none hidden'
+
+Current page changed in Notebook with tabs: Test , Status , Run Info
+Viewing page 'Test'
+...........
+
+Showing File Tree with columns: Sample from 4 tests , Details
+-> Comparison Files
+->   errors.hello (red) | (red)
+->   output.hello (red) | (red)
+
+------------------------------ (horizontal pane separator, 46% from the top)
+...........
 
 ========== Text Info ==========
 Test FAILED :
@@ -263,17 +276,6 @@ Test FAILED :
 0a1
 > Hello World!
 ===============================
-
-Tabs showing : Test, Status, Run Info
-
-Test column header set to 'Tests: 2/4 selected, none hidden'
-Setting file-view title to 'Sample from 2 tests'
-
-Test column header set to 'Tests: 3/4 selected, none hidden'
-Setting file-view title to 'Sample from 3 tests'
-
-Test column header set to 'Tests: All 4 selected, none hidden'
-Setting file-view title to 'Sample from 4 tests'
 
 'set file selection to' event created with arguments 'errors.hello'
 
@@ -290,10 +292,14 @@ Changing GUI status to: 'Saving HELLO test-case BothDiff : errors, no version'
 
 Redrawing test BothDiff coloured red
 (Second column 'output different' coloured red)
+Saving HELLO test-case ErrDiff - version , exactness 1, only errors
 
-Setting file-view title to 'Sample from 4 tests'
-Adding file errors.hello under heading 'Comparison Files', coloured green
-Adding file output.hello under heading 'Comparison Files', coloured red
+Changing GUI status to: 'Saving HELLO test-case ErrDiff : errors, no version'
+
+Updated : File Tree with columns: Sample from 4 tests , Details
+-> Comparison Files
+->   errors.hello (green) | (green)
+->   output.hello (red) | (red)
 
 ========== Text Info ==========
 Test FAILED :
@@ -301,15 +307,15 @@ Test FAILED :
 0a1
 > Hello World!
 ===============================
-Saving HELLO test-case ErrDiff - version , exactness 1, only errors
-
-Changing GUI status to: 'Saving HELLO test-case ErrDiff : errors, no version'
 
 Redrawing test ErrDiff coloured green
 
 Changing GUI status to: 'Saved 3 tests.'
 
 'view options for' event created with arguments 'Status'
+
+Current page changed in Notebook with tabs: Test , Status , Run Info
+Viewing page 'Status'
 
 Showing Test Status View with columns: Status , Number , Visible
 -> Not started (white) | 0 (white) | Check box (checked)
