@@ -1,7 +1,7 @@
 
 Waiting for application event 'completion of test actions' to occur.
 Enabling entry completion, using matching 1
-Top Window title is TextTest dynamic GUI : testing HELLO (started at 16Jun13:53:46)
+Top Window title is TextTest dynamic GUI : testing HELLO (started at 16Jun15:42:36)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -110,12 +110,13 @@ UI layout:
   </popup>
 </ui>
 
-Test Tree description...
+Changing GUI status to: 'TextTest started at 16Jun15:42:37.'
+...........
 
-Test column header set to 'Tests: 0/4 selected, all hidden'
+Showing Test Tree with columns: Tests: 0/4 selected, all hidden , Details
 
-Pane separator positioned 50% from the left edge
-
+------------------------------ (vertical pane separator, 50% from the left edge)
+...........
 
 Showing Notebook with tabs: Status , Run Info
 Viewing page 'Status'
@@ -123,23 +124,47 @@ Viewing page 'Status'
 Showing Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 4 (white,bold) | Check box (checked)
 
-Changing GUI status to: 'TextTest started at 16Jun13:53:46.'
+Updated : Test Tree with columns: Tests: 0/4 selected, 3 hidden , Details
+-> TargetApp (hello) (white) | (white)
+->   Suite1 (white) | (white)
+->     One1 (white) | (white)
+
+Updated : Test Tree with columns: Tests: 0/4 selected, 2 hidden , Details
+-> TargetApp (hello) (white) | (white)
+->   Suite1 (white) | (white)
+->     One1 (white) | (white)
+->     Two (white) | (white)
+
+Updated : Test Tree with columns: Tests: 0/4 selected, 1 hidden , Details
+-> TargetApp (hello) (white) | (white)
+->   Suite1 (white) | (white)
+->     One1 (white) | (white)
+->     Two (white) | (white)
+->     Three (white) | (white)
+
+Updated : Test Tree with columns: Tests: 0/4 selected, none hidden , Details
+-> TargetApp (hello) (white) | (white)
+->   Suite1 (white) | (white)
+->     One1 (white) | (white)
+->     Two (white) | (white)
+->     Three (white) | (white)
+->   Super (white) | (white)
+->     Suite2 (white) | (white)
+->       One (white) | (white)
 
 Progress bar set to fraction 0.0, text '0 of 4 tests completed'
 
-Test Tree description...
--> TargetApp (hello)
-->   Suite1
-->     One1
-->     Two
-->     Three
-->   Super
-->     Suite2
-->       One
 
-Test column header set to 'Tests: 0/4 selected, none hidden'
 
-Redrawing test One1 coloured yellow
+Updated : Test Tree with columns: Tests: 0/4 selected, none hidden , Details
+-> TargetApp (hello) (white) | (white)
+->   Suite1 (white) | (white)
+->     One1 (yellow) | (yellow)
+->     Two (white) | (white)
+->     Three (white) | (white)
+->   Super (white) | (white)
+->     Suite2 (white) | (white)
+->       One (white) | (white)
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 3 (white,bold) | Check box (checked)
@@ -147,14 +172,30 @@ Updated : Test Status View with columns: Status , Number , Visible
 
 Progress bar set to fraction 0.25, text '1 of 4 tests completed'
 
-Redrawing test One1 coloured green
+Updated : Test Tree with columns: Tests: 0/4 selected, none hidden , Details
+-> TargetApp (hello) (white) | (white)
+->   Suite1 (white) | (white)
+->     One1 (green) | (green)
+->     Two (white) | (white)
+->     Three (white) | (white)
+->   Super (white) | (white)
+->     Suite2 (white) | (white)
+->       One (white) | (white)
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 3 (white,bold) | Check box (checked)
 -> Running (white) | 0 (white) | Check box (checked)
 -> Succeeded (green,bold) | 1 (green,bold) | Check box (checked)
 
-Redrawing test Two coloured yellow
+Updated : Test Tree with columns: Tests: 0/4 selected, none hidden , Details
+-> TargetApp (hello) (white) | (white)
+->   Suite1 (white) | (white)
+->     One1 (green) | (green)
+->     Two (yellow) | (yellow)
+->     Three (white) | (white)
+->   Super (white) | (white)
+->     Suite2 (white) | (white)
+->       One (white) | (white)
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 2 (white,bold) | Check box (checked)
@@ -163,8 +204,15 @@ Updated : Test Status View with columns: Status , Number , Visible
 
 Progress bar set to fraction 0.5, text '2 of 4 tests completed'
 
-Redrawing test Two coloured red
-(Second column 'output different' coloured red)
+Updated : Test Tree with columns: Tests: 0/4 selected, none hidden , Details
+-> TargetApp (hello) (white) | (white)
+->   Suite1 (white) | (white)
+->     One1 (green) | (green)
+->     Two (red) | output different (red)
+->     Three (white) | (white)
+->   Super (white) | (white)
+->     Suite2 (white) | (white)
+->       One (white) | (white)
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 2 (white,bold) | Check box (checked)
@@ -174,7 +222,15 @@ Updated : Test Status View with columns: Status , Number , Visible
 ->   Differences (red,bold) | 1 (red,bold) | Check box (checked)
 ->     output different (red,bold) | 1 (red,bold) | Check box (checked)
 
-Redrawing test Three coloured yellow
+Updated : Test Tree with columns: Tests: 0/4 selected, none hidden , Details
+-> TargetApp (hello) (white) | (white)
+->   Suite1 (white) | (white)
+->     One1 (green) | (green)
+->     Two (red) | output different (red)
+->     Three (yellow) | (yellow)
+->   Super (white) | (white)
+->     Suite2 (white) | (white)
+->       One (white) | (white)
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 1 (white,bold) | Check box (checked)
@@ -186,8 +242,15 @@ Updated : Test Status View with columns: Status , Number , Visible
 
 Progress bar set to fraction 0.75, text '3 of 4 tests completed'
 
-Redrawing test Three coloured red
-(Second column 'errors different' coloured red)
+Updated : Test Tree with columns: Tests: 0/4 selected, none hidden , Details
+-> TargetApp (hello) (white) | (white)
+->   Suite1 (white) | (white)
+->     One1 (green) | (green)
+->     Two (red) | output different (red)
+->     Three (red) | errors different (red)
+->   Super (white) | (white)
+->     Suite2 (white) | (white)
+->       One (white) | (white)
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 1 (white,bold) | Check box (checked)
@@ -198,7 +261,15 @@ Updated : Test Status View with columns: Status , Number , Visible
 ->     output different (red,bold) | 1 (red,bold) | Check box (checked)
 ->     errors different (red,bold) | 1 (red,bold) | Check box (checked)
 
-Redrawing test One coloured yellow
+Updated : Test Tree with columns: Tests: 0/4 selected, none hidden , Details
+-> TargetApp (hello) (white) | (white)
+->   Suite1 (white) | (white)
+->     One1 (green) | (green)
+->     Two (red) | output different (red)
+->     Three (red) | errors different (red)
+->   Super (white) | (white)
+->     Suite2 (white) | (white)
+->       One (yellow) | (yellow)
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white) | 0 (white) | Check box (checked)
@@ -209,11 +280,15 @@ Updated : Test Status View with columns: Status , Number , Visible
 ->     output different (red,bold) | 1 (red,bold) | Check box (checked)
 ->     errors different (red,bold) | 1 (red,bold) | Check box (checked)
 
-Progress bar set to fraction 1.0, text 'All 4 tests completed at 16Jun13:53:47'
+Progress bar set to fraction 1.0, text 'All 4 tests completed at 16Jun15:42:37'
 
-Redrawing test One coloured green
-Redrawing suite Suite2 : second column 'All 1 tests successful' coloured green
-Redrawing suite Super : second column 'All 1 tests successful' coloured green
+Updated : Test Tree with columns: Tests: 0/4 selected, none hidden , Details
+-> TargetApp (hello) (white) | (white)
+->   Suite1 (white) | (white)
+->     One1 (green) | (green)
+->     Two (red) | output different (red)
+->     Three (red) | errors different (red)
+->   Super (white) | All 1 tests successful (green)
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white) | 0 (white) | Check box (checked)
@@ -228,12 +303,13 @@ Expected application event 'completion of test actions' occurred, proceeding.
 
 'set test selection to' event created with arguments 'Two'
 
-Test column header set to 'Tests: 1/4 selected, none hidden'
 Setting sensitivity of action '_Save' to True
 Setting sensitivity of action 'Save _As...' to True
 Setting sensitivity of action 'S_ave Selection...' to True
 Setting sensitivity of action '_Mark' to True
 Setting sensitivity of action 'Recompute Status' to True
+
+Column titles changed in Test Tree with columns: Tests: 1/4 selected, none hidden , Details
 
 Current page changed in Notebook with tabs: Test , Status , Run Info
 Viewing page 'Test'
@@ -257,7 +333,7 @@ Test FAILED :
 'save selected tests in file' event created with arguments ''
 ---------- Dialog 'Save selected tests in file' ----------
 Default action is labelled 'gtk-save'
-Filechooser (choosing from directories ['/carm/proj/texttest-tmp/geoff/texttest.16Jun135329.31463/texttest/TestSelf/TestSelection/GUI/Persistence/DynamicFileFilterExtend/texttesttmp/static_gui.16Jun135344.22672/temporary_filter_files', '/carm/proj/texttest-tmp/geoff/texttest.16Jun135329.31463/texttest/TestSelf/TestSelection/GUI/Persistence/DynamicFileFilterExtend/TargetApp/filter_files'])
+Filechooser (choosing from directories ['/carm/proj/texttest-tmp/geoff/texttest.16Jun154051.556/texttest/TestSelf/TestSelection/GUI/Persistence/DynamicFileFilterExtend/texttesttmp/static_gui.16Jun154235.16632/temporary_filter_files', '/carm/proj/texttest-tmp/geoff/texttest.16Jun154051.556/texttest/TestSelf/TestSelection/GUI/Persistence/DynamicFileFilterExtend/TargetApp/filter_files'])
 ---------------
 Button 'gtk-save', stock image 'gtk-save'
 Button 'gtk-cancel', stock image 'gtk-cancel'
@@ -267,7 +343,7 @@ Button 'gtk-cancel', stock image 'gtk-cancel'
 
 'press save' event created with arguments ''
 
-Changing GUI status to: 'Saved HELLO test-case Two in file '/carm/proj/texttest-tmp/geoff/texttest.16Jun135329.31463/texttest/TestSelf/TestSelection/GUI/Persistence/DynamicFileFilterExtend/texttesttmp/static_gui.16Jun135344.22672/temporary_filter_files/filter1'.'
+Changing GUI status to: 'Saved HELLO test-case Two in file '/carm/proj/texttest-tmp/geoff/texttest.16Jun154051.556/texttest/TestSelf/TestSelection/GUI/Persistence/DynamicFileFilterExtend/texttesttmp/static_gui.16Jun154235.16632/temporary_filter_files/filter1'.'
 
 'set test selection to' event created with arguments 'Three'
 
@@ -286,7 +362,7 @@ Test FAILED :
 'save selected tests in file' event created with arguments ''
 ---------- Dialog 'Save selected tests in file' ----------
 Default action is labelled 'gtk-save'
-Filechooser (choosing from directories ['/carm/proj/texttest-tmp/geoff/texttest.16Jun135329.31463/texttest/TestSelf/TestSelection/GUI/Persistence/DynamicFileFilterExtend/texttesttmp/static_gui.16Jun135344.22672/temporary_filter_files', '/carm/proj/texttest-tmp/geoff/texttest.16Jun135329.31463/texttest/TestSelf/TestSelection/GUI/Persistence/DynamicFileFilterExtend/TargetApp/filter_files'])
+Filechooser (choosing from directories ['/carm/proj/texttest-tmp/geoff/texttest.16Jun154051.556/texttest/TestSelf/TestSelection/GUI/Persistence/DynamicFileFilterExtend/texttesttmp/static_gui.16Jun154235.16632/temporary_filter_files', '/carm/proj/texttest-tmp/geoff/texttest.16Jun154051.556/texttest/TestSelf/TestSelection/GUI/Persistence/DynamicFileFilterExtend/TargetApp/filter_files'])
 ---------------
 Button 'gtk-save', stock image 'gtk-save'
 Button 'gtk-cancel', stock image 'gtk-cancel'
@@ -296,7 +372,7 @@ Button 'gtk-cancel', stock image 'gtk-cancel'
 
 'press save' event created with arguments ''
 
-Changing GUI status to: 'Saved HELLO test-case Three in file '/carm/proj/texttest-tmp/geoff/texttest.16Jun135329.31463/texttest/TestSelf/TestSelection/GUI/Persistence/DynamicFileFilterExtend/texttesttmp/static_gui.16Jun135344.22672/temporary_filter_files/filter2'.'
+Changing GUI status to: 'Saved HELLO test-case Three in file '/carm/proj/texttest-tmp/geoff/texttest.16Jun154051.556/texttest/TestSelf/TestSelection/GUI/Persistence/DynamicFileFilterExtend/texttesttmp/static_gui.16Jun154235.16632/temporary_filter_files/filter2'.'
 
 'quit' event created with arguments ''
 

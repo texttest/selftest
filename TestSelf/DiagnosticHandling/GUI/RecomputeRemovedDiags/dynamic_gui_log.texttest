@@ -1,7 +1,7 @@
 
 Waiting for application event 'completion of test actions' to occur.
 Enabling entry completion, using matching 1
-Top Window title is TextTest dynamic GUI : testing DIAG.nodiag,DIAG.withdiag (started at 16Jun13:53:50)
+Top Window title is TextTest dynamic GUI : testing DIAG.nodiag,DIAG.withdiag (started at 16Jun15:41:13)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -110,37 +110,44 @@ UI layout:
   </popup>
 </ui>
 
-Test Tree description...
+Changing GUI status to: 'TextTest started at 16Jun15:41:13.'
+...........
 
-Test column header set to 'Tests: All 0 selected'
+Showing Test Tree with columns: Tests: All 0 selected , Details
 
-Pane separator positioned 50% from the left edge
-
+------------------------------ (vertical pane separator, 50% from the left edge)
+...........
 
 Showing Notebook with tabs: Status , Run Info
 Viewing page 'Status'
 
 Showing Test Status View with columns: Status , Number , Visible
 
-Changing GUI status to: 'TextTest started at 16Jun13:53:51.'
+Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
+-> TargetApp (diag.nodiag) (white) | (white)
+->   TestAlwaysDiag (white) | (white)
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 1 (white,bold) | Check box (checked)
+
+Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
+-> TargetApp (diag.nodiag) (white) | (white)
+->   TestAlwaysDiag (white) | (white)
+-> TargetApp (diag.withdiag) (white) | (white)
+->   TestAlwaysDiag (white) | (white)
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 2 (white,bold) | Check box (checked)
 
 Progress bar set to fraction 0.0, text '0 of 2 tests completed'
 
-Test Tree description...
--> TargetApp (diag.nodiag)
-->   TestAlwaysDiag
--> TargetApp (diag.withdiag)
-->   TestAlwaysDiag
 
-Test column header set to 'Tests: 0/2 selected, none hidden'
 
-Redrawing test TestAlwaysDiag coloured yellow
+Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
+-> TargetApp (diag.nodiag) (white) | (white)
+->   TestAlwaysDiag (yellow) | (yellow)
+-> TargetApp (diag.withdiag) (white) | (white)
+->   TestAlwaysDiag (white) | (white)
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 1 (white,bold) | Check box (checked)
@@ -148,8 +155,11 @@ Updated : Test Status View with columns: Status , Number , Visible
 
 Progress bar set to fraction 0.5, text '1 of 2 tests completed'
 
-Redrawing test TestAlwaysDiag coloured green
-(Second column 'first missing(+)' coloured red)
+Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
+-> TargetApp (diag.nodiag) (white) | (white)
+->   TestAlwaysDiag (green) | first missing(+) (red)
+-> TargetApp (diag.withdiag) (white) | (white)
+->   TestAlwaysDiag (white) | (white)
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 1 (white,bold) | Check box (checked)
@@ -160,7 +170,11 @@ Updated : Test Status View with columns: Status , Number , Visible
 ->     second missing (red,bold) | 1 (red,bold) | Check box (checked)
 ->     third missing (red,bold) | 1 (red,bold) | Check box (checked)
 
-Redrawing test TestAlwaysDiag coloured yellow
+Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
+-> TargetApp (diag.nodiag) (white) | (white)
+->   TestAlwaysDiag (green) | first missing(+) (red)
+-> TargetApp (diag.withdiag) (white) | (white)
+->   TestAlwaysDiag (yellow) | (yellow)
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white) | 0 (white) | Check box (checked)
@@ -171,10 +185,13 @@ Updated : Test Status View with columns: Status , Number , Visible
 ->     second missing (red,bold) | 1 (red,bold) | Check box (checked)
 ->     third missing (red,bold) | 1 (red,bold) | Check box (checked)
 
-Progress bar set to fraction 1.0, text 'All 2 tests completed at 16Jun13:53:52'
+Progress bar set to fraction 1.0, text 'All 2 tests completed at 16Jun15:41:15'
 
-Redrawing test TestAlwaysDiag coloured green
-Redrawing suite TargetApp : second column 'All 1 tests successful' coloured green
+Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
+-> TargetApp (diag.nodiag) (white) | (white)
+->   TestAlwaysDiag (green) | first missing(+) (red)
+-> TargetApp (diag.withdiag) (white) | All 1 tests successful (green)
+->   TestAlwaysDiag (green) | (green)
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white) | 0 (white) | Check box (checked)
@@ -190,12 +207,13 @@ Expected application event 'completion of test actions' occurred, proceeding.
 
 'set test selection to' event created with arguments 'TestAlwaysDiag under TargetApp (diag.nodiag)'
 
-Test column header set to 'Tests: 1/2 selected, none hidden'
 Setting sensitivity of action '_Save' to True
 Setting sensitivity of action 'Save _As...' to True
 Setting sensitivity of action 'S_ave Selection...' to True
 Setting sensitivity of action '_Mark' to True
 Setting sensitivity of action 'Recompute Status' to True
+
+Column titles changed in Test Tree with columns: Tests: 1/2 selected, none hidden , Details
 
 Current page changed in Notebook with tabs: Test , Status , Run Info
 Viewing page 'Test'
@@ -251,13 +269,16 @@ Changing GUI status to: 'Saving DIAG.nodiag test-case TestAlwaysDiag : first, no
 Changing GUI status to: 'Saving DIAG.nodiag test-case TestAlwaysDiag : second, no version'
 
 Changing GUI status to: 'Saving DIAG.nodiag test-case TestAlwaysDiag : third, no version'
-
-Redrawing test TestAlwaysDiag coloured green
-Redrawing suite TargetApp : second column 'All 1 tests successful' coloured green
 Setting sensitivity of action '_Save' to False
 Setting sensitivity of action 'Save _As...' to False
 
 Changing GUI status to: 'Saved 1 tests.'
+
+Updated : Test Tree with columns: Tests: 1/2 selected, none hidden , Details
+-> TargetApp (diag.nodiag) (white) | All 1 tests successful (green)
+->   TestAlwaysDiag (green) | (green)
+-> TargetApp (diag.withdiag) (white) | All 1 tests successful (green)
+->   TestAlwaysDiag (green) | (green)
 
 Updated : File Tree with columns: TestAlwaysDiag , Details
 -> Comparison Files
@@ -270,7 +291,8 @@ Test succeeded
 
 'set test selection to' event created with arguments 'TestAlwaysDiag under TargetApp (diag.nodiag),TestAlwaysDiag under TargetApp (diag.withdiag)'
 
-Test column header set to 'Tests: All 2 selected, none hidden'
+
+Column titles changed in Test Tree with columns: Tests: All 2 selected, none hidden , Details
 
 Column titles changed in File Tree with columns: Sample from 2 tests , Details
 
@@ -282,10 +304,13 @@ Changing GUI status to: 'Rereading configuration for DIAG.withdiag ...'
 
 Changing GUI status to: 'Recomputing status of DIAG.nodiag test-case TestAlwaysDiag ...'
 
-Redrawing test TestAlwaysDiag coloured green
-Redrawing suite TargetApp : second column 'All 1 tests successful' coloured green
-
 Changing GUI status to: 'Recomputing status of DIAG.withdiag test-case TestAlwaysDiag ...'
+
+Updated : Test Tree with columns: Tests: All 2 selected, none hidden , Details
+-> TargetApp (diag.nodiag) (white) | All 1 tests successful (green)
+->   TestAlwaysDiag (green) | (green)
+-> TargetApp (diag.withdiag) (white) | All 1 tests successful (green)
+->   TestAlwaysDiag (green) | (green)
 
 Updated : File Tree with columns: Sample from 2 tests , Details
 -> Comparison Files
@@ -295,13 +320,16 @@ Updated : File Tree with columns: Sample from 2 tests , Details
 ========== Text Info ==========
 Test succeeded
 ===============================
-
-Redrawing test TestAlwaysDiag coloured green
-(Second column 'first new(+)' coloured red)
 Setting sensitivity of action '_Save' to True
 Setting sensitivity of action 'Save _As...' to True
 
 Changing GUI status to: 'Recomputed status of 2 tests.'
+
+Updated : Test Tree with columns: Tests: All 2 selected, none hidden , Details
+-> TargetApp (diag.nodiag) (white) | All 1 tests successful (green)
+->   TestAlwaysDiag (green) | (green)
+-> TargetApp (diag.withdiag) (white) | All 1 tests successful (green)
+->   TestAlwaysDiag (green) | first new(+) (red)
 
 'quit' event created with arguments ''
 Adding entry completion '<default> - nodiag,withdiag' ...

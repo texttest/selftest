@@ -2,7 +2,7 @@
 Waiting for application event 'all tests to be read' to occur.
 Waiting for application event 'test Basic to start' to occur.
 Enabling entry completion, using matching 1
-Top Window title is TextTest dynamic GUI : testing SLEEP (started at 16Jun13:53:50)
+Top Window title is TextTest dynamic GUI : testing SLEEP (started at 16Jun15:41:15)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -111,42 +111,58 @@ UI layout:
   </popup>
 </ui>
 
-Test Tree description...
+Changing GUI status to: 'TextTest started at 16Jun15:41:16.'
+...........
 
-Test column header set to 'Tests: All 0 selected'
+Showing Test Tree with columns: Tests: All 0 selected , Details
 
-Pane separator positioned 50% from the left edge
-
+------------------------------ (vertical pane separator, 50% from the left edge)
+...........
 
 Showing Notebook with tabs: Status , Run Info
 Viewing page 'Status'
 
 Showing Test Status View with columns: Status , Number , Visible
 
-Changing GUI status to: 'TextTest started at 16Jun13:53:50.'
+Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
+-> TargetApp (sleep) (white) | (white)
+->   Suite1 (white) | (white)
+->     Basic (white) | (white)
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 1 (white,bold) | Check box (checked)
 
+Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
+-> TargetApp (sleep) (white) | (white)
+->   Suite1 (white) | (white)
+->     Basic (white) | (white)
+->     Basic2 (white) | (white)
+
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 2 (white,bold) | Check box (checked)
+
+Updated : Test Tree with columns: Tests: 0/3 selected, none hidden , Details
+-> TargetApp (sleep) (white) | (white)
+->   Suite1 (white) | (white)
+->     Basic (white) | (white)
+->     Basic2 (white) | (white)
+->   Suite (white) | (white)
+->     Basic3 (white) | (white)
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 3 (white,bold) | Check box (checked)
 
 Progress bar set to fraction 0.0, text '0 of 3 tests completed'
 
-Test Tree description...
--> TargetApp (sleep)
-->   Suite1
-->     Basic
-->     Basic2
-->   Suite
-->     Basic3
 
-Test column header set to 'Tests: 0/3 selected, none hidden'
 
-Redrawing test Basic coloured yellow
+Updated : Test Tree with columns: Tests: 0/3 selected, none hidden , Details
+-> TargetApp (sleep) (white) | (white)
+->   Suite1 (white) | (white)
+->     Basic (yellow) | (yellow)
+->     Basic2 (white) | (white)
+->   Suite (white) | (white)
+->     Basic3 (white) | (white)
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 2 (white,bold) | Check box (checked)
@@ -157,10 +173,11 @@ Expected application event 'test Basic to start' occurred, proceeding.
 
 'set test selection to' event created with arguments 'Basic'
 
-Test column header set to 'Tests: 1/3 selected, none hidden'
 Setting sensitivity of action 'S_ave Selection...' to True
 Setting sensitivity of action '_Kill' to True
 Setting sensitivity of action 'Recompute Status' to True
+
+Column titles changed in Test Tree with columns: Tests: 1/3 selected, none hidden , Details
 
 Current page changed in Notebook with tabs: Test , Status , Run Info
 Viewing page 'Test'
@@ -175,7 +192,7 @@ Showing File Tree with columns: Basic , Details
 ...........
 
 ========== Text Info ==========
-Running on novyy
+Running on khwai
 
 To obtain the latest progress information and an up-to-date comparison of the files above, perform 'recompute status' (press 'F5')
 ===============================
@@ -186,9 +203,15 @@ Changing GUI status to: 'Rereading configuration for SLEEP ...'
 
 Changing GUI status to: 'Recomputing status of SLEEP test-case Basic ...'
 
-Redrawing test Basic coloured yellow
-
 Changing GUI status to: 'Recomputed status of 1 test.'
+
+Updated : Test Tree with columns: Tests: 1/3 selected, none hidden , Details
+-> TargetApp (sleep) (white) | (white)
+->   Suite1 (white) | (white)
+->     Basic (yellow) | (yellow)
+->     Basic2 (white) | (white)
+->   Suite (white) | (white)
+->     Basic3 (white) | (white)
 
 Updated : File Tree with columns: Basic , Details
 -> Comparison Files
@@ -196,16 +219,16 @@ Updated : File Tree with columns: Basic , Details
 ->   output.sleep (yellow) | (yellow)
 
 ========== Text Info ==========
-Running on novyy
-Reckoned to be 85% complete at 16Jun13:53:51.
+Running on khwai
+Reckoned to be 85% complete at 16Jun15:41:18.
 
 To obtain the latest progress information and an up-to-date comparison of the files above, perform 'recompute status' (press 'F5')
 ===============================
 
 'select file' event created with arguments 'output.sleep'
 Starting graphical difference comparison using 'tkdiff':
--- original file : /carm/proj/texttest-tmp/geoff/texttest.16Jun135329.31463/texttest/TestSelf/RunningTests/GUI/CompareWhileRunning/texttesttmp/console.16Jun135350.29341/sleep/Suite1/Basic/framework_tmp/output.sleeporigcmp
---  current file : /carm/proj/texttest-tmp/geoff/texttest.16Jun135329.31463/texttest/TestSelf/RunningTests/GUI/CompareWhileRunning/texttesttmp/console.16Jun135350.29341/sleep/Suite1/Basic/framework_tmp/output.sleeppartcmp
+-- original file : /carm/proj/texttest-tmp/geoff/texttest.16Jun154051.556/texttest/TestSelf/RunningTests/GUI/CompareWhileRunning/texttesttmp/console.16Jun154115.5636/sleep/Suite1/Basic/framework_tmp/output.sleeporigcmp
+--  current file : /carm/proj/texttest-tmp/geoff/texttest.16Jun154051.556/texttest/TestSelf/RunningTests/GUI/CompareWhileRunning/texttesttmp/console.16Jun154115.5636/sleep/Suite1/Basic/framework_tmp/output.sleeppartcmp
 
 Changing GUI status to: 'Started "tkdiff output.sleeporigcmp output.sleeppartcmp" in background (from test Basic).'
 
@@ -220,7 +243,7 @@ Setting sensitivity of action 'View Differences' to True
 Setting sensitivity of action 'Follow File Progress' to True
 
 'follow file progress' event created with arguments ''
-Following file /carm/proj/texttest-tmp/geoff/texttest.16Jun135329.31463/texttest/TestSelf/RunningTests/GUI/CompareWhileRunning/texttesttmp/console.16Jun135350.29341/sleep/Suite1/Basic/output.sleep using 'xterm -bg black -fg white -T "Basic (output.sleep)" -e tail -f'
+Following file /carm/proj/texttest-tmp/geoff/texttest.16Jun154051.556/texttest/TestSelf/RunningTests/GUI/CompareWhileRunning/texttesttmp/console.16Jun154115.5636/sleep/Suite1/Basic/output.sleep using 'xterm -bg black -fg white -T "Basic (output.sleep)" -e tail -f'
 
 Changing GUI status to: 'Started "xterm -bg black -fg white -T "Basic (output.sleep)" -e tail -f output.sleep" in background (from test Basic).'
 Setting sensitivity of action 'View File' to False
@@ -248,13 +271,18 @@ Changing GUI status to: 'Killed all running tests.'
 Changing GUI status to: 'Waiting for all tests to terminate ...'
 
 Progress bar set to fraction 0.333333333333, text '1 of 3 tests completed'
-
-Redrawing test Basic coloured red
-(Second column 'KILLED' coloured red)
 Setting sensitivity of action '_Save' to True
 Setting sensitivity of action 'Save _As...' to True
 Setting sensitivity of action '_Kill' to False
 Setting sensitivity of action '_Mark' to True
+
+Updated : Test Tree with columns: Tests: 1/3 selected, none hidden , Details
+-> TargetApp (sleep) (white) | (white)
+->   Suite1 (white) | (white)
+->     Basic (red) | KILLED (red)
+->     Basic2 (white) | (white)
+->   Suite (white) | (white)
+->     Basic3 (white) | (white)
 
 Updated : File Tree with columns: Basic , Details
 -> Comparison Files
@@ -263,7 +291,7 @@ Updated : File Tree with columns: Basic , Details
 
 ========== Text Info ==========
 Test were terminated before completion (KILLED) :
-Test killed explicitly at 13:53
+Test killed explicitly at 15:41
 ---------- Differences in output ----------
 2d1
 < Done
@@ -271,12 +299,22 @@ Test killed explicitly at 13:53
 
 Progress bar set to fraction 0.666666666667, text '2 of 3 tests completed'
 
-Redrawing test Basic2 coloured red
-(Second column 'cancelled' coloured red)
+Updated : Test Tree with columns: Tests: 1/3 selected, none hidden , Details
+-> TargetApp (sleep) (white) | (white)
+->   Suite1 (white) | (white)
+->     Basic (red) | KILLED (red)
+->     Basic2 (red) | cancelled (red)
+->   Suite (white) | (white)
+->     Basic3 (white) | (white)
 
-Progress bar set to fraction 1.0, text 'All 3 tests completed at 16Jun13:53:52'
+Progress bar set to fraction 1.0, text 'All 3 tests completed at 16Jun15:41:19'
 
-Redrawing test Basic3 coloured red
-(Second column 'cancelled' coloured red)
+Updated : Test Tree with columns: Tests: 1/3 selected, none hidden , Details
+-> TargetApp (sleep) (white) | (white)
+->   Suite1 (white) | (white)
+->     Basic (red) | KILLED (red)
+->     Basic2 (red) | cancelled (red)
+->   Suite (white) | (white)
+->     Basic3 (red) | cancelled (red)
 
 Changing GUI status to: 'Removing all temporary files ...'

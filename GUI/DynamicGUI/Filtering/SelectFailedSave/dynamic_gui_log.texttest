@@ -1,7 +1,7 @@
 
 Waiting for application event 'completion of test actions' to occur.
 Enabling entry completion, using matching 1
-Top Window title is TextTest dynamic GUI : testing HELLO (started at 16Jun13:54:00)
+Top Window title is TextTest dynamic GUI : testing HELLO (started at 16Jun15:41:35)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -110,49 +110,77 @@ UI layout:
   </popup>
 </ui>
 
-Test Tree description...
+Changing GUI status to: 'TextTest started at 16Jun15:41:36.'
+...........
 
-Test column header set to 'Tests: All 0 selected'
+Showing Test Tree with columns: Tests: All 0 selected , Details
 
-Pane separator positioned 50% from the left edge
-
+------------------------------ (vertical pane separator, 50% from the left edge)
+...........
 
 Showing Notebook with tabs: Status , Run Info
 Viewing page 'Status'
 
 Showing Test Status View with columns: Status , Number , Visible
 
-Changing GUI status to: 'TextTest started at 16Jun13:54:00.'
+Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
+-> TargetApp (hello) (white) | (white)
+->   simple_fail1 (white) | (white)
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 1 (white,bold) | Check box (checked)
 
+Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
+-> TargetApp (hello) (white) | (white)
+->   simple_fail1 (white) | (white)
+->   simple_fail2 (white) | (white)
+
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 2 (white,bold) | Check box (checked)
+
+Updated : Test Tree with columns: Tests: 0/3 selected, none hidden , Details
+-> TargetApp (hello) (white) | (white)
+->   simple_fail1 (white) | (white)
+->   simple_fail2 (white) | (white)
+->   complex_fail1 (white) | (white)
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 3 (white,bold) | Check box (checked)
 
+Updated : Test Tree with columns: Tests: 0/4 selected, none hidden , Details
+-> TargetApp (hello) (white) | (white)
+->   simple_fail1 (white) | (white)
+->   simple_fail2 (white) | (white)
+->   complex_fail1 (white) | (white)
+->   complex_fail2 (white) | (white)
+
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 4 (white,bold) | Check box (checked)
+
+Updated : Test Tree with columns: Tests: 0/5 selected, none hidden , Details
+-> TargetApp (hello) (white) | (white)
+->   simple_fail1 (white) | (white)
+->   simple_fail2 (white) | (white)
+->   complex_fail1 (white) | (white)
+->   complex_fail2 (white) | (white)
+->   suite (white) | (white)
+->     success (white) | (white)
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 5 (white,bold) | Check box (checked)
 
 Progress bar set to fraction 0.0, text '0 of 5 tests completed'
 
-Test Tree description...
--> TargetApp (hello)
-->   simple_fail1
-->   simple_fail2
-->   complex_fail1
-->   complex_fail2
-->   suite
-->     success
 
-Test column header set to 'Tests: 0/5 selected, none hidden'
 
-Redrawing test simple_fail1 coloured yellow
+Updated : Test Tree with columns: Tests: 0/5 selected, none hidden , Details
+-> TargetApp (hello) (white) | (white)
+->   simple_fail1 (yellow) | (yellow)
+->   simple_fail2 (white) | (white)
+->   complex_fail1 (white) | (white)
+->   complex_fail2 (white) | (white)
+->   suite (white) | (white)
+->     success (white) | (white)
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 4 (white,bold) | Check box (checked)
@@ -160,8 +188,14 @@ Updated : Test Status View with columns: Status , Number , Visible
 
 Progress bar set to fraction 0.2, text '1 of 5 tests completed'
 
-Redrawing test simple_fail1 coloured green
-(Second column 'file3 different' coloured red)
+Updated : Test Tree with columns: Tests: 0/5 selected, none hidden , Details
+-> TargetApp (hello) (white) | (white)
+->   simple_fail1 (green) | file3 different (red)
+->   simple_fail2 (white) | (white)
+->   complex_fail1 (white) | (white)
+->   complex_fail2 (white) | (white)
+->   suite (white) | (white)
+->     success (white) | (white)
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 4 (white,bold) | Check box (checked)
@@ -170,7 +204,14 @@ Updated : Test Status View with columns: Status , Number , Visible
 ->   Differences (red,bold) | 1 (red,bold) | Check box (checked)
 ->     file3 different (red,bold) | 1 (red,bold) | Check box (checked)
 
-Redrawing test simple_fail2 coloured yellow
+Updated : Test Tree with columns: Tests: 0/5 selected, none hidden , Details
+-> TargetApp (hello) (white) | (white)
+->   simple_fail1 (green) | file3 different (red)
+->   simple_fail2 (yellow) | (yellow)
+->   complex_fail1 (white) | (white)
+->   complex_fail2 (white) | (white)
+->   suite (white) | (white)
+->     success (white) | (white)
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 3 (white,bold) | Check box (checked)
@@ -181,8 +222,14 @@ Updated : Test Status View with columns: Status , Number , Visible
 
 Progress bar set to fraction 0.4, text '2 of 5 tests completed'
 
-Redrawing test simple_fail2 coloured red
-(Second column 'errors new' coloured red)
+Updated : Test Tree with columns: Tests: 0/5 selected, none hidden , Details
+-> TargetApp (hello) (white) | (white)
+->   simple_fail1 (green) | file3 different (red)
+->   simple_fail2 (red) | errors new (red)
+->   complex_fail1 (white) | (white)
+->   complex_fail2 (white) | (white)
+->   suite (white) | (white)
+->     success (white) | (white)
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 3 (white,bold) | Check box (checked)
@@ -192,7 +239,14 @@ Updated : Test Status View with columns: Status , Number , Visible
 ->     file3 different (red,bold) | 1 (red,bold) | Check box (checked)
 ->     errors new (red,bold) | 1 (red,bold) | Check box (checked)
 
-Redrawing test complex_fail1 coloured yellow
+Updated : Test Tree with columns: Tests: 0/5 selected, none hidden , Details
+-> TargetApp (hello) (white) | (white)
+->   simple_fail1 (green) | file3 different (red)
+->   simple_fail2 (red) | errors new (red)
+->   complex_fail1 (yellow) | (yellow)
+->   complex_fail2 (white) | (white)
+->   suite (white) | (white)
+->     success (white) | (white)
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 2 (white,bold) | Check box (checked)
@@ -204,8 +258,14 @@ Updated : Test Status View with columns: Status , Number , Visible
 
 Progress bar set to fraction 0.6, text '3 of 5 tests completed'
 
-Redrawing test complex_fail1 coloured red
-(Second column 'output different(+)' coloured red)
+Updated : Test Tree with columns: Tests: 0/5 selected, none hidden , Details
+-> TargetApp (hello) (white) | (white)
+->   simple_fail1 (green) | file3 different (red)
+->   simple_fail2 (red) | errors new (red)
+->   complex_fail1 (red) | output different(+) (red)
+->   complex_fail2 (white) | (white)
+->   suite (white) | (white)
+->     success (white) | (white)
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 2 (white,bold) | Check box (checked)
@@ -218,7 +278,14 @@ Updated : Test Status View with columns: Status , Number , Visible
 ->       Group 1 (red,bold) | 2 (red,bold) | Check box (checked)
 ->     output different (red,bold) | 1 (red,bold) | Check box (checked)
 
-Redrawing test complex_fail2 coloured yellow
+Updated : Test Tree with columns: Tests: 0/5 selected, none hidden , Details
+-> TargetApp (hello) (white) | (white)
+->   simple_fail1 (green) | file3 different (red)
+->   simple_fail2 (red) | errors new (red)
+->   complex_fail1 (red) | output different(+) (red)
+->   complex_fail2 (yellow) | (yellow)
+->   suite (white) | (white)
+->     success (white) | (white)
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 1 (white,bold) | Check box (checked)
@@ -233,8 +300,14 @@ Updated : Test Status View with columns: Status , Number , Visible
 
 Progress bar set to fraction 0.8, text '4 of 5 tests completed'
 
-Redrawing test complex_fail2 coloured red
-(Second column 'output different(+)' coloured red)
+Updated : Test Tree with columns: Tests: 0/5 selected, none hidden , Details
+-> TargetApp (hello) (white) | (white)
+->   simple_fail1 (green) | file3 different (red)
+->   simple_fail2 (red) | errors new (red)
+->   complex_fail1 (red) | output different(+) (red)
+->   complex_fail2 (red) | output different(+) (red)
+->   suite (white) | (white)
+->     success (white) | (white)
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 1 (white,bold) | Check box (checked)
@@ -251,7 +324,14 @@ Updated : Test Status View with columns: Status , Number , Visible
 ->     file2 different (red,bold) | 1 (red,bold) | Check box (checked)
 ->     file4 different (red,bold) | 1 (red,bold) | Check box (checked)
 
-Redrawing test success coloured yellow
+Updated : Test Tree with columns: Tests: 0/5 selected, none hidden , Details
+-> TargetApp (hello) (white) | (white)
+->   simple_fail1 (green) | file3 different (red)
+->   simple_fail2 (red) | errors new (red)
+->   complex_fail1 (red) | output different(+) (red)
+->   complex_fail2 (red) | output different(+) (red)
+->   suite (white) | (white)
+->     success (yellow) | (yellow)
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white) | 0 (white) | Check box (checked)
@@ -268,10 +348,15 @@ Updated : Test Status View with columns: Status , Number , Visible
 ->     file2 different (red,bold) | 1 (red,bold) | Check box (checked)
 ->     file4 different (red,bold) | 1 (red,bold) | Check box (checked)
 
-Progress bar set to fraction 1.0, text 'All 5 tests completed at 16Jun13:54:01'
+Progress bar set to fraction 1.0, text 'All 5 tests completed at 16Jun15:41:38'
 
-Redrawing test success coloured green
-Redrawing suite suite : second column 'All 1 tests successful' coloured green
+Updated : Test Tree with columns: Tests: 0/5 selected, none hidden , Details
+-> TargetApp (hello) (white) | (white)
+->   simple_fail1 (green) | file3 different (red)
+->   simple_fail2 (red) | errors new (red)
+->   complex_fail1 (red) | output different(+) (red)
+->   complex_fail2 (red) | output different(+) (red)
+->   suite (white) | All 1 tests successful (green)
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white) | 0 (white) | Check box (checked)
@@ -292,13 +377,11 @@ Updated : Test Status View with columns: Status , Number , Visible
 Expected application event 'completion of test actions' occurred, proceeding.
 
 'toggle progress report category' event created with arguments 'Failed'
-Selecting not to show tests in the 'Failed' category.
-Hiding test : HELLO test-case simple_fail1
-Hiding test : HELLO test-case simple_fail2
-Hiding test : HELLO test-case complex_fail1
-Hiding test : HELLO test-case complex_fail2
 
-Test column header set to 'Tests: 0/5 selected, 4 hidden'
+
+Updated : Test Tree with columns: Tests: 0/5 selected, 4 hidden , Details
+-> TargetApp (hello) (white) | (white)
+->   suite (white) | All 1 tests successful (green)
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white) | 0 (white) | Check box (checked)
@@ -317,13 +400,15 @@ Updated : Test Status View with columns: Status , Number , Visible
 -> Succeeded (green,bold) | 1 (green,bold) | Check box (checked)
 
 'toggle progress report category' event created with arguments 'Failed'
-Selecting to show tests in the 'Failed' category.
-Making test visible : HELLO test-case simple_fail1
-Making test visible : HELLO test-case simple_fail2
-Making test visible : HELLO test-case complex_fail1
-Making test visible : HELLO test-case complex_fail2
 
-Test column header set to 'Tests: 0/5 selected, none hidden'
+
+Updated : Test Tree with columns: Tests: 0/5 selected, none hidden , Details
+-> TargetApp (hello) (white) | (white)
+->   simple_fail1 (green) | file3 different (red)
+->   simple_fail2 (red) | errors new (red)
+->   complex_fail1 (red) | output different(+) (red)
+->   complex_fail2 (red) | output different(+) (red)
+->   suite (white) | All 1 tests successful (green)
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white) | 0 (white) | Check box (checked)
@@ -345,21 +430,25 @@ Updated : Test Status View with columns: Status , Number , Visible
 Selecting all 4 tests in category Failed
 Marking 4 tests as selected
 
-Test column header set to 'Tests: 4/5 selected, none hidden'
 Setting sensitivity of action '_Save' to True
 Setting sensitivity of action 'Save _As...' to True
 Setting sensitivity of action 'S_ave Selection...' to True
 Setting sensitivity of action '_Mark' to True
 Setting sensitivity of action 'Recompute Status' to True
 
+Column titles changed in Test Tree with columns: Tests: 4/5 selected, none hidden , Details
+
 Child visibility changed in Notebook with tabs: Test , Status , Run Info
 
 'toggle progress report category' event created with arguments 'Succeeded'
-Selecting not to show tests in the 'Succeeded' category.
-Hiding test : HELLO test-case success
-Hiding test : HELLO test-suite suite
 
-Test column header set to 'Tests: 4/5 selected, 1 hidden'
+
+Updated : Test Tree with columns: Tests: 4/5 selected, 1 hidden , Details
+-> TargetApp (hello) (white) | (white)
+->   simple_fail1 (green) | file3 different (red)
+->   simple_fail2 (red) | errors new (red)
+->   complex_fail1 (red) | output different(+) (red)
+->   complex_fail2 (red) | output different(+) (red)
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white) | 0 (white) | Check box (checked)
@@ -378,11 +467,15 @@ Updated : Test Status View with columns: Status , Number , Visible
 -> Succeeded (green,bold) | 1 (green,bold) | Check box
 
 'toggle progress report category' event created with arguments 'Succeeded'
-Selecting to show tests in the 'Succeeded' category.
-Making test visible : HELLO test-suite suite
-Making test visible : HELLO test-case success
 
-Test column header set to 'Tests: 4/5 selected, none hidden'
+
+Updated : Test Tree with columns: Tests: 4/5 selected, none hidden , Details
+-> TargetApp (hello) (white) | (white)
+->   simple_fail1 (green) | file3 different (red)
+->   simple_fail2 (red) | errors new (red)
+->   complex_fail1 (red) | output different(+) (red)
+->   complex_fail2 (red) | output different(+) (red)
+->   suite (white) | All 1 tests successful (green)
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white) | 0 (white) | Check box (checked)
@@ -403,37 +496,36 @@ Updated : Test Status View with columns: Status , Number , Visible
 'set progress report filter selection to' event created with arguments 'Succeeded'
 Marking 0 tests as selected
 
-Test column header set to 'Tests: 0/5 selected, none hidden'
 Setting sensitivity of action '_Save' to False
 Setting sensitivity of action 'Save _As...' to False
 Setting sensitivity of action 'S_ave Selection...' to False
 Setting sensitivity of action '_Mark' to False
 Setting sensitivity of action 'Recompute Status' to False
 Selecting all 1 tests in category Succeeded
-
-Test Tree description...
--> TargetApp (hello)
-->   simple_fail1
-->   simple_fail2
-->   complex_fail1
-->   complex_fail2
-->   suite
-->     success
 Marking 1 tests as selected
 
-Test column header set to 'Tests: 1/5 selected, none hidden'
 Setting sensitivity of action 'S_ave Selection...' to True
 Setting sensitivity of action '_Mark' to True
 Setting sensitivity of action 'Recompute Status' to True
+
+Expanded row in Test Tree with columns: Tests: 1/5 selected, none hidden , Details
+-> TargetApp (hello) (white) | (white)
+->   simple_fail1 (green) | file3 different (red)
+->   simple_fail2 (red) | errors new (red)
+->   complex_fail1 (red) | output different(+) (red)
+->   complex_fail2 (red) | output different(+) (red)
+->   suite (white) | All 1 tests successful (green)
+->     success (green) | (green)
 
 Child visibility changed in Notebook with tabs: Test , Status , Run Info
 
 'set test selection to' event created with arguments ''
 
-Test column header set to 'Tests: 0/5 selected, none hidden'
 Setting sensitivity of action 'S_ave Selection...' to False
 Setting sensitivity of action '_Mark' to False
 Setting sensitivity of action 'Recompute Status' to False
+
+Column titles changed in Test Tree with columns: Tests: 0/5 selected, none hidden , Details
 
 Child visibility changed in Notebook with tabs: Status , Run Info
 
@@ -442,12 +534,13 @@ Marking 0 tests as selected
 Selecting all 2 tests in category output different
 Marking 2 tests as selected
 
-Test column header set to 'Tests: 2/5 selected, none hidden'
 Setting sensitivity of action '_Save' to True
 Setting sensitivity of action 'Save _As...' to True
 Setting sensitivity of action 'S_ave Selection...' to True
 Setting sensitivity of action '_Mark' to True
 Setting sensitivity of action 'Recompute Status' to True
+
+Column titles changed in Test Tree with columns: Tests: 2/5 selected, none hidden , Details
 
 Child visibility changed in Notebook with tabs: Test , Status , Run Info
 
@@ -461,11 +554,18 @@ Changing GUI status to: 'Saving HELLO test-case complex_fail1 : file3, no versio
 Changing GUI status to: 'Saving HELLO test-case complex_fail1 : output, no version'
 
 Changing GUI status to: 'Saving HELLO test-case complex_fail1 : errors, no version'
-
-Redrawing test complex_fail1 coloured green
 Saving HELLO test-case complex_fail2 - version , exactness 1
 
 Changing GUI status to: 'Saving HELLO test-case complex_fail2 : file1, no version'
+
+Updated : Test Tree with columns: Tests: 2/5 selected, none hidden , Details
+-> TargetApp (hello) (white) | (white)
+->   simple_fail1 (green) | file3 different (red)
+->   simple_fail2 (red) | errors new (red)
+->   complex_fail1 (green) | (green)
+->   complex_fail2 (red) | output different(+) (red)
+->   suite (white) | All 1 tests successful (green)
+->     success (green) | (green)
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white) | 0 (white) | Check box (checked)
@@ -492,12 +592,19 @@ Changing GUI status to: 'Saving HELLO test-case complex_fail2 : file4, no versio
 Changing GUI status to: 'Saving HELLO test-case complex_fail2 : output, no version'
 
 Changing GUI status to: 'Saving HELLO test-case complex_fail2 : errors, no version'
-
-Redrawing test complex_fail2 coloured green
 Setting sensitivity of action '_Save' to False
 Setting sensitivity of action 'Save _As...' to False
 
 Changing GUI status to: 'Saved 2 tests.'
+
+Updated : Test Tree with columns: Tests: 2/5 selected, none hidden , Details
+-> TargetApp (hello) (white) | (white)
+->   simple_fail1 (green) | file3 different (red)
+->   simple_fail2 (red) | errors new (red)
+->   complex_fail1 (green) | (green)
+->   complex_fail2 (green) | (green)
+->   suite (white) | All 1 tests successful (green)
+->     success (green) | (green)
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white) | 0 (white) | Check box (checked)

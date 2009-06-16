@@ -1,7 +1,7 @@
 
 Waiting for application event 'completion of test actions' to occur.
 Enabling entry completion, using matching 1
-Top Window title is TextTest dynamic GUI : testing HELLO (started at 16Jun13:53:59)
+Top Window title is TextTest dynamic GUI : testing HELLO (started at 16Jun15:41:34)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -110,47 +110,39 @@ UI layout:
   </popup>
 </ui>
 
-Test Tree description...
+Changing GUI status to: 'TextTest started at 16Jun15:41:36.'
+...........
 
-Test column header set to 'Tests: All 0 selected'
+Showing Test Tree with columns: Tests: All 0 selected , Details
 
-Pane separator positioned 50% from the left edge
-
+------------------------------ (vertical pane separator, 50% from the left edge)
+...........
 
 Showing Notebook with tabs: Status , Run Info
 Viewing page 'Status'
 
 Showing Test Status View with columns: Status , Number , Visible
 
-Changing GUI status to: 'TextTest started at 16Jun13:53:59.'
+Updated : Test Tree with columns: Tests: 0/1 selected, all hidden , Details
+-> TargetApp (hello) (white) | (white)
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 1 (white,bold) | Check box
+
+Column titles changed in Test Tree with columns: Tests: 0/2 selected, all hidden , Details
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 2 (white,bold) | Check box
 
 Progress bar set to fraction 0.0, text '0 of 2 tests completed'
 
-Test Tree description...
--> TargetApp (hello)
 
-Test column header set to 'Tests: 0/2 selected, all hidden'
 
-Redrawing test success coloured yellow
-Making test visible : HELLO test-suite suite
 
-Test Tree description...
--> TargetApp (hello)
-->   suite
-Making test visible : HELLO test-case success
-
-Test Tree description...
--> TargetApp (hello)
-->   suite
-->     success
-
-Test column header set to 'Tests: 0/2 selected, 1 hidden'
+Updated : Test Tree with columns: Tests: 0/2 selected, 1 hidden , Details
+-> TargetApp (hello) (white) | (white)
+->   suite (white) | (white)
+->     success (yellow) | (yellow)
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 1 (white,bold) | Check box
@@ -158,28 +150,32 @@ Updated : Test Status View with columns: Status , Number , Visible
 
 Progress bar set to fraction 0.5, text '1 of 2 tests completed'
 
-Redrawing test success coloured green
+Updated : Test Tree with columns: Tests: 0/2 selected, 1 hidden , Details
+-> TargetApp (hello) (white) | (white)
+->   suite (white) | (white)
+->     success (green) | (green)
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 1 (white,bold) | Check box
 -> Running (white) | 0 (white) | Check box (checked)
 -> Succeeded (green,bold) | 1 (green,bold) | Check box (checked)
 
-Redrawing test success_copy coloured yellow
-Making test visible : HELLO test-case success_copy
 
-Test column header set to 'Tests: 0/2 selected, none hidden'
+Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
+-> TargetApp (hello) (white) | (white)
+->   suite (white) | (white)
+->     success (green) | (green)
+->     success_copy (yellow) | (yellow)
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white) | 0 (white) | Check box
 -> Running (yellow,bold) | 1 (yellow,bold) | Check box (checked)
 -> Succeeded (green,bold) | 1 (green,bold) | Check box (checked)
 
-Progress bar set to fraction 1.0, text 'All 2 tests completed at 16Jun13:54:00'
+Progress bar set to fraction 1.0, text 'All 2 tests completed at 16Jun15:41:37'
 
-Redrawing test success_copy coloured green
-Redrawing suite suite : second column 'All 2 tests successful' coloured green
-Redrawing suite TargetApp : second column 'All 2 tests successful' coloured green
+Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
+-> TargetApp (hello) (white) | All 2 tests successful (green)
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white) | 0 (white) | Check box
@@ -189,12 +185,10 @@ Updated : Test Status View with columns: Status , Number , Visible
 Expected application event 'completion of test actions' occurred, proceeding.
 
 'toggle progress report category' event created with arguments 'Succeeded'
-Selecting not to show tests in the 'Succeeded' category.
-Hiding test : HELLO test-case success
-Hiding test : HELLO test-case success_copy
-Hiding test : HELLO test-suite suite
 
-Test column header set to 'Tests: 0/2 selected, all hidden'
+
+Updated : Test Tree with columns: Tests: 0/2 selected, all hidden , Details
+-> TargetApp (hello) (white) | All 2 tests successful (green)
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white) | 0 (white) | Check box

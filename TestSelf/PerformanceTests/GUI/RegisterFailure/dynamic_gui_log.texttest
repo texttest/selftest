@@ -1,7 +1,7 @@
 
 Waiting for application event 'completion of test actions' to occur.
 Enabling entry completion, using matching 1
-Top Window title is TextTest dynamic GUI : testing PERF (started at 16Jun13:53:49)
+Top Window title is TextTest dynamic GUI : testing PERF (started at 16Jun15:14:34)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -110,44 +110,63 @@ UI layout:
   </popup>
 </ui>
 
-Test Tree description...
+Changing GUI status to: 'TextTest started at 16Jun15:14:35.'
+...........
 
-Test column header set to 'Tests: All 0 selected'
+Showing Test Tree with columns: Tests: All 0 selected , Details
 
-Pane separator positioned 50% from the left edge
-
+------------------------------ (vertical pane separator, 50% from the left edge)
+...........
 
 Showing Notebook with tabs: Status , Run Info
 Viewing page 'Status'
 
 Showing Test Status View with columns: Status , Number , Visible
 
-Changing GUI status to: 'TextTest started at 16Jun13:53:51.'
+Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
+-> TargetApp (perf) (white) | (white)
+->   Success (white) | (white)
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 1 (white,bold) | Check box (checked)
 
+Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
+-> TargetApp (perf) (white) | (white)
+->   Success (white) | (white)
+->   Failures (white) | (white)
+
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 2 (white,bold) | Check box (checked)
 
+Updated : Test Tree with columns: Tests: 0/3 selected, none hidden , Details
+-> TargetApp (perf) (white) | (white)
+->   Success (white) | (white)
+->   Failures (white) | (white)
+->   FailuresCurrBelowLimit (white) | (white)
+
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 3 (white,bold) | Check box (checked)
+
+Updated : Test Tree with columns: Tests: 0/4 selected, none hidden , Details
+-> TargetApp (perf) (white) | (white)
+->   Success (white) | (white)
+->   Failures (white) | (white)
+->   FailuresCurrBelowLimit (white) | (white)
+->   FailuresZeroTime (white) | (white)
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 4 (white,bold) | Check box (checked)
 
 Progress bar set to fraction 0.0, text '0 of 4 tests completed'
 
-Test Tree description...
--> TargetApp (perf)
-->   Success
-->   Failures
-->   FailuresCurrBelowLimit
-->   FailuresZeroTime
 
-Test column header set to 'Tests: 0/4 selected, none hidden'
 
-Redrawing test Success coloured yellow
+Updated : Test Tree with columns: Tests: 0/4 selected, none hidden , Details
+-> TargetApp (perf) (white) | (white)
+->   Success (yellow) | (yellow)
+->   Failures (white) | (white)
+->   FailuresCurrBelowLimit (white) | (white)
+->   FailuresZeroTime (white) | (white)
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 3 (white,bold) | Check box (checked)
@@ -155,14 +174,24 @@ Updated : Test Status View with columns: Status , Number , Visible
 
 Progress bar set to fraction 0.25, text '1 of 4 tests completed'
 
-Redrawing test Success coloured green
+Updated : Test Tree with columns: Tests: 0/4 selected, none hidden , Details
+-> TargetApp (perf) (white) | (white)
+->   Success (green) | (green)
+->   Failures (white) | (white)
+->   FailuresCurrBelowLimit (white) | (white)
+->   FailuresZeroTime (white) | (white)
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 3 (white,bold) | Check box (checked)
 -> Running (white) | 0 (white) | Check box (checked)
 -> Succeeded (green,bold) | 1 (green,bold) | Check box (checked)
 
-Redrawing test Failures coloured yellow
+Updated : Test Tree with columns: Tests: 0/4 selected, none hidden , Details
+-> TargetApp (perf) (white) | (white)
+->   Success (green) | (green)
+->   Failures (yellow) | (yellow)
+->   FailuresCurrBelowLimit (white) | (white)
+->   FailuresZeroTime (white) | (white)
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 2 (white,bold) | Check box (checked)
@@ -171,8 +200,12 @@ Updated : Test Status View with columns: Status , Number , Visible
 
 Progress bar set to fraction 0.5, text '2 of 4 tests completed'
 
-Redrawing test Failures coloured green
-(Second column '100% faster' coloured red)
+Updated : Test Tree with columns: Tests: 0/4 selected, none hidden , Details
+-> TargetApp (perf) (white) | (white)
+->   Success (green) | (green)
+->   Failures (green) | 100% faster (red)
+->   FailuresCurrBelowLimit (white) | (white)
+->   FailuresZeroTime (white) | (white)
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 2 (white,bold) | Check box (checked)
@@ -182,7 +215,12 @@ Updated : Test Status View with columns: Status , Number , Visible
 ->   Performance differences (red,bold) | 1 (red,bold) | Check box (checked)
 ->     Faster (red,bold) | 1 (red,bold) | Check box (checked)
 
-Redrawing test FailuresCurrBelowLimit coloured yellow
+Updated : Test Tree with columns: Tests: 0/4 selected, none hidden , Details
+-> TargetApp (perf) (white) | (white)
+->   Success (green) | (green)
+->   Failures (green) | 100% faster (red)
+->   FailuresCurrBelowLimit (yellow) | (yellow)
+->   FailuresZeroTime (white) | (white)
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 1 (white,bold) | Check box (checked)
@@ -194,8 +232,12 @@ Updated : Test Status View with columns: Status , Number , Visible
 
 Progress bar set to fraction 0.75, text '3 of 4 tests completed'
 
-Redrawing test FailuresCurrBelowLimit coloured green
-(Second column '150% slower' coloured red)
+Updated : Test Tree with columns: Tests: 0/4 selected, none hidden , Details
+-> TargetApp (perf) (white) | (white)
+->   Success (green) | (green)
+->   Failures (green) | 100% faster (red)
+->   FailuresCurrBelowLimit (green) | 150% slower (red)
+->   FailuresZeroTime (white) | (white)
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 1 (white,bold) | Check box (checked)
@@ -206,7 +248,12 @@ Updated : Test Status View with columns: Status , Number , Visible
 ->     Faster (red,bold) | 1 (red,bold) | Check box (checked)
 ->     Slower (red,bold) | 1 (red,bold) | Check box (checked)
 
-Redrawing test FailuresZeroTime coloured yellow
+Updated : Test Tree with columns: Tests: 0/4 selected, none hidden , Details
+-> TargetApp (perf) (white) | (white)
+->   Success (green) | (green)
+->   Failures (green) | 100% faster (red)
+->   FailuresCurrBelowLimit (green) | 150% slower (red)
+->   FailuresZeroTime (yellow) | (yellow)
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white) | 0 (white) | Check box (checked)
@@ -217,10 +264,14 @@ Updated : Test Status View with columns: Status , Number , Visible
 ->     Faster (red,bold) | 1 (red,bold) | Check box (checked)
 ->     Slower (red,bold) | 1 (red,bold) | Check box (checked)
 
-Progress bar set to fraction 1.0, text 'All 4 tests completed at 16Jun13:53:54'
+Progress bar set to fraction 1.0, text 'All 4 tests completed at 16Jun15:14:38'
 
-Redrawing test FailuresZeroTime coloured green
-(Second column 'infinitely slower' coloured red)
+Updated : Test Tree with columns: Tests: 0/4 selected, none hidden , Details
+-> TargetApp (perf) (white) | (white)
+->   Success (green) | (green)
+->   Failures (green) | 100% faster (red)
+->   FailuresCurrBelowLimit (green) | 150% slower (red)
+->   FailuresZeroTime (green) | infinitely slower (red)
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white) | 0 (white) | Check box (checked)
@@ -236,12 +287,13 @@ Expected application event 'completion of test actions' occurred, proceeding.
 
 'set test selection to' event created with arguments 'Failures'
 
-Test column header set to 'Tests: 1/4 selected, none hidden'
 Setting sensitivity of action '_Save' to True
 Setting sensitivity of action 'Save _As...' to True
 Setting sensitivity of action 'S_ave Selection...' to True
 Setting sensitivity of action '_Mark' to True
 Setting sensitivity of action 'Recompute Status' to True
+
+Column titles changed in Test Tree with columns: Tests: 1/4 selected, none hidden , Details
 
 Current page changed in Notebook with tabs: Test , Status , Run Info
 Viewing page 'Test'
@@ -263,13 +315,13 @@ Test ran faster :
 < CPU time   :       10.0 sec. on sedom
 < Real time  :       18.2 sec.
 ---
-> Total Performance  :      5.0 seconds on juliaca
+> Total Performance  :      5.0 seconds on batesville
 ===============================
 
 'select file' event created with arguments 'performance.perf'
 Starting graphical difference comparison using 'tkdiff':
--- original file : /carm/proj/texttest-tmp/geoff/texttest.16Jun135329.31463/texttest/TestSelf/PerformanceTests/GUI/RegisterFailure/TargetApp/Failures/performance.perf
---  current file : /carm/proj/texttest-tmp/geoff/texttest.16Jun135329.31463/texttest/TestSelf/PerformanceTests/GUI/RegisterFailure/texttesttmp/dynamic_gui.16Jun135349.19217/perf/Failures/performance.perf
+-- original file : /carm/proj/texttest-tmp/geoff/texttest.16Jun151416.32670/texttest/TestSelf/PerformanceTests/GUI/RegisterFailure/TargetApp/Failures/performance.perf
+--  current file : /carm/proj/texttest-tmp/geoff/texttest.16Jun151416.32670/texttest/TestSelf/PerformanceTests/GUI/RegisterFailure/texttesttmp/dynamic_gui.16Jun151434.6006/perf/Failures/performance.perf
 
 Changing GUI status to: 'Started "tkdiff performance.perf performance.perf" in background (from test Failures).'
 
@@ -294,8 +346,8 @@ Button 'gtk-cancel', stock image 'gtk-cancel'
 ---------------------------------------------
 
 'choose average performance for save' event created with arguments ''
-Toggled Radio button 'Exact performance'
 Toggled Radio button 'Average performance' (checked)
+Toggled Radio button 'Exact performance'
 
 'choose exact performance for save' event created with arguments ''
 Toggled Radio button 'Average performance'
@@ -307,12 +359,17 @@ Changing GUI status to: 'Saving 1 tests ...'
 Saving PERF test-case Failures - version , exactness 1
 
 Changing GUI status to: 'Saving PERF test-case Failures : performance(faster), no version'
-
-Redrawing test Failures coloured green
 Setting sensitivity of action '_Save' to False
 Setting sensitivity of action 'Save _As...' to False
 
 Changing GUI status to: 'Saved 1 tests.'
+
+Updated : Test Tree with columns: Tests: 1/4 selected, none hidden , Details
+-> TargetApp (perf) (white) | (white)
+->   Success (green) | (green)
+->   Failures (green) | (green)
+->   FailuresCurrBelowLimit (green) | 150% slower (red)
+->   FailuresZeroTime (green) | infinitely slower (red)
 
 Updated : File Tree with columns: Failures , Details
 -> Comparison Files

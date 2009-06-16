@@ -1,7 +1,7 @@
 
 Waiting for application event 'completion of test actions' to occur.
 Enabling entry completion, using matching 1
-Top Window title is TextTest dynamic GUI : testing HELLO.2,HELLO.4 (started at 16Jun13:53:43)
+Top Window title is TextTest dynamic GUI : testing HELLO.2,HELLO.4 (started at 16Jun15:30:32)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -110,37 +110,44 @@ UI layout:
   </popup>
 </ui>
 
-Test Tree description...
+Changing GUI status to: 'TextTest started at 16Jun15:30:34.'
+...........
 
-Test column header set to 'Tests: All 0 selected'
+Showing Test Tree with columns: Tests: All 0 selected , Details
 
-Pane separator positioned 50% from the left edge
-
+------------------------------ (vertical pane separator, 50% from the left edge)
+...........
 
 Showing Notebook with tabs: Status , Run Info
 Viewing page 'Status'
 
 Showing Test Status View with columns: Status , Number , Visible
 
-Changing GUI status to: 'TextTest started at 16Jun13:53:43.'
+Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
+-> TargetApp (hello.2) (white) | (white)
+->   OutDiff (white) | (white)
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 1 (white,bold) | Check box (checked)
+
+Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
+-> TargetApp (hello.2) (white) | (white)
+->   OutDiff (white) | (white)
+-> TargetApp (hello.4) (white) | (white)
+->   OutDiff (white) | (white)
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 2 (white,bold) | Check box (checked)
 
 Progress bar set to fraction 0.0, text '0 of 2 tests completed'
 
-Test Tree description...
--> TargetApp (hello.2)
-->   OutDiff
--> TargetApp (hello.4)
-->   OutDiff
 
-Test column header set to 'Tests: 0/2 selected, none hidden'
 
-Redrawing test OutDiff coloured yellow
+Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
+-> TargetApp (hello.2) (white) | (white)
+->   OutDiff (yellow) | (yellow)
+-> TargetApp (hello.4) (white) | (white)
+->   OutDiff (white) | (white)
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 1 (white,bold) | Check box (checked)
@@ -148,8 +155,11 @@ Updated : Test Status View with columns: Status , Number , Visible
 
 Progress bar set to fraction 0.5, text '1 of 2 tests completed'
 
-Redrawing test OutDiff coloured red
-(Second column 'output different' coloured red)
+Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
+-> TargetApp (hello.2) (white) | (white)
+->   OutDiff (red) | output different (red)
+-> TargetApp (hello.4) (white) | (white)
+->   OutDiff (white) | (white)
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 1 (white,bold) | Check box (checked)
@@ -158,7 +168,11 @@ Updated : Test Status View with columns: Status , Number , Visible
 ->   Differences (red,bold) | 1 (red,bold) | Check box (checked)
 ->     output different (red,bold) | 1 (red,bold) | Check box (checked)
 
-Redrawing test OutDiff coloured yellow
+Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
+-> TargetApp (hello.2) (white) | (white)
+->   OutDiff (red) | output different (red)
+-> TargetApp (hello.4) (white) | (white)
+->   OutDiff (yellow) | (yellow)
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white) | 0 (white) | Check box (checked)
@@ -167,10 +181,13 @@ Updated : Test Status View with columns: Status , Number , Visible
 ->   Differences (red,bold) | 1 (red,bold) | Check box (checked)
 ->     output different (red,bold) | 1 (red,bold) | Check box (checked)
 
-Progress bar set to fraction 1.0, text 'All 2 tests completed at 16Jun13:53:44'
+Progress bar set to fraction 1.0, text 'All 2 tests completed at 16Jun15:30:36'
 
-Redrawing test OutDiff coloured red
-(Second column 'output different' coloured red)
+Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
+-> TargetApp (hello.2) (white) | (white)
+->   OutDiff (red) | output different (red)
+-> TargetApp (hello.4) (white) | (white)
+->   OutDiff (red) | output different (red)
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white) | 0 (white) | Check box (checked)
@@ -184,12 +201,13 @@ Expected application event 'completion of test actions' occurred, proceeding.
 
 'set test selection to' event created with arguments 'OutDiff under TargetApp (hello.2)'
 
-Test column header set to 'Tests: 1/2 selected, none hidden'
 Setting sensitivity of action '_Save' to True
 Setting sensitivity of action 'Save _As...' to True
 Setting sensitivity of action 'S_ave Selection...' to True
 Setting sensitivity of action '_Mark' to True
 Setting sensitivity of action 'Recompute Status' to True
+
+Column titles changed in Test Tree with columns: Tests: 1/2 selected, none hidden , Details
 
 Current page changed in Notebook with tabs: Test , Status , Run Info
 Viewing page 'Test'
@@ -234,18 +252,18 @@ Saving HELLO.2 test-case OutDiff - version , exactness 1
 
 Changing GUI status to: 'Saving HELLO.2 test-case OutDiff : output, no version'
 
-Redrawing test OutDiff coloured green
-Redrawing suite TargetApp : second column 'All 1 tests successful' coloured green
-
-Test column header set to 'Tests: 0/2 selected, none hidden'
 Setting sensitivity of action '_Save' to False
 Setting sensitivity of action 'Save _As...' to False
 Setting sensitivity of action 'S_ave Selection...' to False
 Setting sensitivity of action '_Mark' to False
 Setting sensitivity of action 'Recompute Status' to False
-Setting recalculation icon to 'gtk-refresh'
 
 Changing GUI status to: 'Saved 1 tests.'
+
+Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
+-> TargetApp (hello.2) (white) | All 1 tests successful (green)
+-> TargetApp (hello.4) (white) | (white)
+->   OutDiff (red) | output different (red) | Stock image 'gtk-refresh'
 
 Current page changed in Notebook with tabs: Status , Run Info
 Viewing page 'Status'
@@ -261,12 +279,13 @@ Showing Test Status View with columns: Status , Number , Visible
 
 'set test selection to' event created with arguments 'OutDiff under TargetApp (hello.4)'
 
-Test column header set to 'Tests: 1/2 selected, none hidden'
 Setting sensitivity of action '_Save' to True
 Setting sensitivity of action 'Save _As...' to True
 Setting sensitivity of action 'S_ave Selection...' to True
 Setting sensitivity of action '_Mark' to True
 Setting sensitivity of action 'Recompute Status' to True
+
+Column titles changed in Test Tree with columns: Tests: 1/2 selected, none hidden , Details
 
 Current page changed in Notebook with tabs: Test , Status , Run Info
 Viewing page 'Test'
@@ -289,11 +308,11 @@ Test FAILED :
 
 'show test suite' event created with arguments 'TargetApp (hello.2)'
 
-Test Tree description...
--> TargetApp (hello.2)
-->   OutDiff
--> TargetApp (hello.4)
-->   OutDiff
+Expanded row in Test Tree with columns: Tests: 1/2 selected, none hidden , Details
+-> TargetApp (hello.2) (white) | All 1 tests successful (green)
+->   OutDiff (green) | (green)
+-> TargetApp (hello.4) (white) | (white)
+->   OutDiff (red) | output different (red) | Stock image 'gtk-refresh'
 
 'set test selection to' event created with arguments 'OutDiff under TargetApp (hello.2)'
 Setting sensitivity of action '_Save' to False

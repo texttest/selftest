@@ -4,9 +4,9 @@ Enabling entry completion, using matching 1
 Adding entry completion '<default>' ...
 Adding entry completion 'localhost' ...
 Adding entry completion '1' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.16Jun135329.31463/texttest/GUI/StaticGUI/AddingApps/AddApplication/log/logging.debug' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.16Jun154051.556/texttest/GUI/StaticGUI/AddingApps/AddApplication/log/logging.debug' ...
 Adding entry completion '/users/geoff/work/master/Testing/TextTest/log/logging.debug' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.16Jun135329.31463/texttest/GUI/StaticGUI/AddingApps/AddApplication/log' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.16Jun154051.556/texttest/GUI/StaticGUI/AddingApps/AddApplication/log' ...
 Top Window title is TextTest static GUI : management of tests for HELLO
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
@@ -167,12 +167,13 @@ UI layout:
   </popup>
 </ui>
 
-Test Tree description...
+Changing GUI status to: 'TextTest started at 16Jun15:41:43.'
+...........
 
-Test column header set to 'Tests: All 0 selected'
+Showing Test Tree with columns: Tests: All 0 selected
 
-Pane separator positioned 50% from the left edge
-
+------------------------------ (vertical pane separator, 50% from the left edge)
+...........
 
 Showing Notebook with tabs: Selection , Config
 Viewing page 'Selection'
@@ -194,17 +195,18 @@ Button '_Select', stock image 'gtk-find' (tooltip 'Select indicated tests')
 Radio button 'Discard' (checked) (tooltip 'Show all tests which match the criteria, and hide all those that do not.') , Radio button 'Refine' (tooltip 'Hide all tests which do not match the criteria. Do not show any tests that aren't already shown.') , Radio button 'Extend' (tooltip 'Show all tests which match the criteria. Do not hide any tests that are currently shown.')
 Button 'Filter', stock image 'gtk-find' (tooltip 'filter tests to show only those indicated')
 
-Changing GUI status to: 'TextTest started at 16Jun13:54:04.'
-
 Changing GUI status to: 'Reading tests ...'
 
-Changing GUI status to: 'Reading tests completed at 16Jun13:54:04.'
+Updated : Test Tree with columns: Tests: 0/1 selected
+-> TargetApp (hello) (grey90)
 
-Test Tree description...
--> TargetApp (hello)
-->   Test
+Changing GUI status to: 'Reading tests completed at 16Jun15:41:44.'
 
-Test column header set to 'Tests: 0/1 selected'
+
+
+Updated : Test Tree with columns: Tests: 0/1 selected
+-> TargetApp (hello) (grey90)
+->   Test (grey90)
 Edited 'Test-file to search' Text entry (set to 'output')
 
 Expected application event 'all tests to be read' occurred, proceeding.
@@ -223,7 +225,7 @@ Subdirectory of TEXTTEST_HOME to store the above application files under (leave 
 Text entry (drop-down list containing ['', 'Test'])
 .....
 Select executable program to test:......
-Filechooser (choosing from directories ['/carm/proj/texttest-tmp/geoff/texttest.16Jun135329.31463/texttest/GUI/StaticGUI/AddingApps/AddApplication/TargetApp'])
+Filechooser (choosing from directories ['/carm/proj/texttest-tmp/geoff/texttest.16Jun154051.556/texttest/GUI/StaticGUI/AddingApps/AddApplication/TargetApp'])
 ---------------
 Button 'gtk-ok', stock image 'gtk-ok'
 Button 'gtk-cancel', stock image 'gtk-cancel'
@@ -240,15 +242,15 @@ Edited 'File extension to use for TextTest files associated with this applicatio
 'press define' event created with arguments ''
 Top Window title is TextTest static GUI : management of tests for HELLO,New Hello World
 
-Test Tree description...
--> TargetApp (hello)
-->   Test
--> TargetApp (hellonew)
-
 Changing GUI status to: 'Created new application with extension 'hellonew'.'
 Adding entry completion 'output' ...
 Adding entry completion 'New Hello World' ...
 Adding entry completion 'hellonew' ...
+
+Updated : Test Tree with columns: Tests: 0/1 selected
+-> TargetApp (hello) (grey90)
+->   Test (grey90)
+-> TargetApp (hellonew) (grey90)
 
 'view options for' event created with arguments 'Config'
 
@@ -327,23 +329,9 @@ Button 'gtk-no', stock image 'gtk-no'
 Adding Test Test under test suite New Hello World test-suite TargetApp, placed last in suite
 Not creating options file
 
-Test column header set to 'Tests: 0/2 selected'
-
-Test Tree description...
--> TargetApp (hello)
-->   Test
--> TargetApp (hellonew)
-->   Test
-
-Test Tree description...
--> TargetApp (hello)
-->   Test
--> TargetApp (hellonew)
-->   Test
 Selecting new test Test
 Marking 1 tests as selected
 
-Test column header set to 'Tests: 1/2 selected'
 Setting sensitivity of action '_Copy' to True
 Setting sensitivity of action '_Cut' to True
 Setting sensitivity of action 'Add Test' to False
@@ -354,6 +342,12 @@ Setting sensitivity of action '_Sort Test Suite File' to False
 Setting sensitivity of action '_Reversed Sort Test Suite File' to False
 
 Changing GUI status to: 'Added new New Hello World test-case Test'
+
+Updated : Test Tree with columns: Tests: 1/2 selected
+-> TargetApp (hello) (grey90)
+->   Test (grey90)
+-> TargetApp (hellonew) (grey90)
+->   Test (grey90)
 
 Updated : File Tree with columns: Test
 -> Standard Files (white)
@@ -371,11 +365,12 @@ Selected 1 out of a possible 1
 Selected 1 out of a possible 1
 Marking 2 tests as selected
 
-Test column header set to 'Tests: All 2 selected'
 Setting sensitivity of action 'Enter Failure Information' to False
 Setting sensitivity of action '_Rename...' to False
 
 Changing GUI status to: 'Selected 2 tests.'
+
+Column titles changed in Test Tree with columns: Tests: All 2 selected
 
 Current page changed in Notebook with tabs: Selection , Running , Config
 Viewing page 'Selection'
@@ -398,9 +393,9 @@ Radio button 'Discard' (checked) (tooltip 'Show all tests which match the criter
 Button 'Filter', stock image 'gtk-find' (tooltip 'filter tests to show only those indicated')
 
 'run selected tests' event created with arguments ''
-Starting dynamic run of TextTest with arguments ['-g', '-a', 'hello,hellonew', '-m', 'localhost', '-cp', '1', '-xr', '/carm/proj/texttest-tmp/geoff/texttest.16Jun135329.31463/texttest/GUI/StaticGUI/AddingApps/AddApplication/log/logging.debug', '-xw', '/carm/proj/texttest-tmp/geoff/texttest.16Jun135329.31463/texttest/GUI/StaticGUI/AddingApps/AddApplication/log', '-count', '2', '-f', '/carm/proj/texttest-tmp/geoff/texttest.16Jun135329.31463/texttest/GUI/StaticGUI/AddingApps/AddApplication/texttesttmp/static_gui.16Jun135404.16735/dynamic_run1/gui_select', '-fd', '/carm/proj/texttest-tmp/geoff/texttest.16Jun135329.31463/texttest/GUI/StaticGUI/AddingApps/AddApplication/texttesttmp/static_gui.16Jun135404.16735/temporary_filter_files']
+Starting dynamic run of TextTest with arguments ['-g', '-a', 'hello,hellonew', '-m', 'localhost', '-cp', '1', '-xr', '/carm/proj/texttest-tmp/geoff/texttest.16Jun154051.556/texttest/GUI/StaticGUI/AddingApps/AddApplication/log/logging.debug', '-xw', '/carm/proj/texttest-tmp/geoff/texttest.16Jun154051.556/texttest/GUI/StaticGUI/AddingApps/AddApplication/log', '-count', '2', '-f', '/carm/proj/texttest-tmp/geoff/texttest.16Jun154051.556/texttest/GUI/StaticGUI/AddingApps/AddApplication/texttesttmp/static_gui.16Jun154142.5820/dynamic_run1/gui_select', '-fd', '/carm/proj/texttest-tmp/geoff/texttest.16Jun154051.556/texttest/GUI/StaticGUI/AddingApps/AddApplication/texttesttmp/static_gui.16Jun154142.5820/temporary_filter_files']
 
-Changing GUI status to: 'Started 2 tests at 16Jun13:54:06.'
+Changing GUI status to: 'Started 2 tests at 16Jun15:41:45.'
 
 Waiting for application event 'dynamic GUI to be closed' to occur.
 

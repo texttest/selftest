@@ -11,8 +11,6 @@ output:at [0-3][0-9]:[0-6][0-9]{REPLACE at <time of day>}
 output:Created process{WORD -1}
 output:Cancelling{WORD -1}
 output:Cancellation in progress
-dynamic_gui_log:Second column.*PEND{WORD 4}
-dynamic_gui_log:Second column.*RU{WORD 4}
 dynamic_gui_log:File .* line .* in
 dynamic_gui_log:Adding file .*.sleep under heading '.*Files', coloured yellow
 dynamic_gui_log:terminated before completion.*on{WORD -2}{REPLACE <machine>}

@@ -1,7 +1,7 @@
 
 Waiting for application event 'completion of test actions' to occur.
 Enabling entry completion, using matching 1
-Top Window title is TextTest dynamic GUI : testing HELLO (started at 16Jun13:54:00)
+Top Window title is TextTest dynamic GUI : testing HELLO (started at 16Jun15:41:35)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -110,49 +110,77 @@ UI layout:
   </popup>
 </ui>
 
-Test Tree description...
+Changing GUI status to: 'TextTest started at 16Jun15:41:36.'
+...........
 
-Test column header set to 'Tests: All 0 selected'
+Showing Test Tree with columns: Tests: All 0 selected , Details
 
-Pane separator positioned 50% from the left edge
-
+------------------------------ (vertical pane separator, 50% from the left edge)
+...........
 
 Showing Notebook with tabs: Status , Run Info
 Viewing page 'Status'
 
 Showing Test Status View with columns: Status , Number , Visible
 
-Changing GUI status to: 'TextTest started at 16Jun13:54:01.'
+Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
+-> TargetApp (hello) (white) | (white)
+->   simple_fail1 (white) | (white)
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 1 (white,bold) | Check box (checked)
 
+Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
+-> TargetApp (hello) (white) | (white)
+->   simple_fail1 (white) | (white)
+->   simple_fail2 (white) | (white)
+
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 2 (white,bold) | Check box (checked)
+
+Updated : Test Tree with columns: Tests: 0/3 selected, none hidden , Details
+-> TargetApp (hello) (white) | (white)
+->   simple_fail1 (white) | (white)
+->   simple_fail2 (white) | (white)
+->   complex_fail1 (white) | (white)
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 3 (white,bold) | Check box (checked)
 
+Updated : Test Tree with columns: Tests: 0/4 selected, none hidden , Details
+-> TargetApp (hello) (white) | (white)
+->   simple_fail1 (white) | (white)
+->   simple_fail2 (white) | (white)
+->   complex_fail1 (white) | (white)
+->   complex_fail2 (white) | (white)
+
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 4 (white,bold) | Check box (checked)
+
+Updated : Test Tree with columns: Tests: 0/5 selected, none hidden , Details
+-> TargetApp (hello) (white) | (white)
+->   simple_fail1 (white) | (white)
+->   simple_fail2 (white) | (white)
+->   complex_fail1 (white) | (white)
+->   complex_fail2 (white) | (white)
+->   suite (white) | (white)
+->     success (white) | (white)
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 5 (white,bold) | Check box (checked)
 
 Progress bar set to fraction 0.0, text '0 of 5 tests completed'
 
-Test Tree description...
--> TargetApp (hello)
-->   simple_fail1
-->   simple_fail2
-->   complex_fail1
-->   complex_fail2
-->   suite
-->     success
 
-Test column header set to 'Tests: 0/5 selected, none hidden'
 
-Redrawing test simple_fail1 coloured yellow
+Updated : Test Tree with columns: Tests: 0/5 selected, none hidden , Details
+-> TargetApp (hello) (white) | (white)
+->   simple_fail1 (yellow) | (yellow)
+->   simple_fail2 (white) | (white)
+->   complex_fail1 (white) | (white)
+->   complex_fail2 (white) | (white)
+->   suite (white) | (white)
+->     success (white) | (white)
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 4 (white,bold) | Check box (checked)
@@ -160,8 +188,14 @@ Updated : Test Status View with columns: Status , Number , Visible
 
 Progress bar set to fraction 0.2, text '1 of 5 tests completed'
 
-Redrawing test simple_fail1 coloured green
-(Second column 'file3 different' coloured red)
+Updated : Test Tree with columns: Tests: 0/5 selected, none hidden , Details
+-> TargetApp (hello) (white) | (white)
+->   simple_fail1 (green) | file3 different (red)
+->   simple_fail2 (white) | (white)
+->   complex_fail1 (white) | (white)
+->   complex_fail2 (white) | (white)
+->   suite (white) | (white)
+->     success (white) | (white)
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 4 (white,bold) | Check box (checked)
@@ -170,7 +204,14 @@ Updated : Test Status View with columns: Status , Number , Visible
 ->   Differences (red,bold) | 1 (red,bold) | Check box (checked)
 ->     file3 different (red,bold) | 1 (red,bold) | Check box (checked)
 
-Redrawing test simple_fail2 coloured yellow
+Updated : Test Tree with columns: Tests: 0/5 selected, none hidden , Details
+-> TargetApp (hello) (white) | (white)
+->   simple_fail1 (green) | file3 different (red)
+->   simple_fail2 (yellow) | (yellow)
+->   complex_fail1 (white) | (white)
+->   complex_fail2 (white) | (white)
+->   suite (white) | (white)
+->     success (white) | (white)
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 3 (white,bold) | Check box (checked)
@@ -181,8 +222,14 @@ Updated : Test Status View with columns: Status , Number , Visible
 
 Progress bar set to fraction 0.4, text '2 of 5 tests completed'
 
-Redrawing test simple_fail2 coloured red
-(Second column 'errors new' coloured red)
+Updated : Test Tree with columns: Tests: 0/5 selected, none hidden , Details
+-> TargetApp (hello) (white) | (white)
+->   simple_fail1 (green) | file3 different (red)
+->   simple_fail2 (red) | errors new (red)
+->   complex_fail1 (white) | (white)
+->   complex_fail2 (white) | (white)
+->   suite (white) | (white)
+->     success (white) | (white)
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 3 (white,bold) | Check box (checked)
@@ -192,7 +239,14 @@ Updated : Test Status View with columns: Status , Number , Visible
 ->     file3 different (red,bold) | 1 (red,bold) | Check box (checked)
 ->     errors new (red,bold) | 1 (red,bold) | Check box (checked)
 
-Redrawing test complex_fail1 coloured yellow
+Updated : Test Tree with columns: Tests: 0/5 selected, none hidden , Details
+-> TargetApp (hello) (white) | (white)
+->   simple_fail1 (green) | file3 different (red)
+->   simple_fail2 (red) | errors new (red)
+->   complex_fail1 (yellow) | (yellow)
+->   complex_fail2 (white) | (white)
+->   suite (white) | (white)
+->     success (white) | (white)
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 2 (white,bold) | Check box (checked)
@@ -204,8 +258,14 @@ Updated : Test Status View with columns: Status , Number , Visible
 
 Progress bar set to fraction 0.6, text '3 of 5 tests completed'
 
-Redrawing test complex_fail1 coloured red
-(Second column 'output different(+)' coloured red)
+Updated : Test Tree with columns: Tests: 0/5 selected, none hidden , Details
+-> TargetApp (hello) (white) | (white)
+->   simple_fail1 (green) | file3 different (red)
+->   simple_fail2 (red) | errors new (red)
+->   complex_fail1 (red) | output different(+) (red)
+->   complex_fail2 (white) | (white)
+->   suite (white) | (white)
+->     success (white) | (white)
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 2 (white,bold) | Check box (checked)
@@ -218,7 +278,14 @@ Updated : Test Status View with columns: Status , Number , Visible
 ->       Group 1 (red,bold) | 2 (red,bold) | Check box (checked)
 ->     output different (red,bold) | 1 (red,bold) | Check box (checked)
 
-Redrawing test complex_fail2 coloured yellow
+Updated : Test Tree with columns: Tests: 0/5 selected, none hidden , Details
+-> TargetApp (hello) (white) | (white)
+->   simple_fail1 (green) | file3 different (red)
+->   simple_fail2 (red) | errors new (red)
+->   complex_fail1 (red) | output different(+) (red)
+->   complex_fail2 (yellow) | (yellow)
+->   suite (white) | (white)
+->     success (white) | (white)
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 1 (white,bold) | Check box (checked)
@@ -233,8 +300,14 @@ Updated : Test Status View with columns: Status , Number , Visible
 
 Progress bar set to fraction 0.8, text '4 of 5 tests completed'
 
-Redrawing test complex_fail2 coloured red
-(Second column 'output different(+)' coloured red)
+Updated : Test Tree with columns: Tests: 0/5 selected, none hidden , Details
+-> TargetApp (hello) (white) | (white)
+->   simple_fail1 (green) | file3 different (red)
+->   simple_fail2 (red) | errors new (red)
+->   complex_fail1 (red) | output different(+) (red)
+->   complex_fail2 (red) | output different(+) (red)
+->   suite (white) | (white)
+->     success (white) | (white)
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 1 (white,bold) | Check box (checked)
@@ -251,7 +324,14 @@ Updated : Test Status View with columns: Status , Number , Visible
 ->     file2 different (red,bold) | 1 (red,bold) | Check box (checked)
 ->     file4 different (red,bold) | 1 (red,bold) | Check box (checked)
 
-Redrawing test success coloured yellow
+Updated : Test Tree with columns: Tests: 0/5 selected, none hidden , Details
+-> TargetApp (hello) (white) | (white)
+->   simple_fail1 (green) | file3 different (red)
+->   simple_fail2 (red) | errors new (red)
+->   complex_fail1 (red) | output different(+) (red)
+->   complex_fail2 (red) | output different(+) (red)
+->   suite (white) | (white)
+->     success (yellow) | (yellow)
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white) | 0 (white) | Check box (checked)
@@ -268,10 +348,15 @@ Updated : Test Status View with columns: Status , Number , Visible
 ->     file2 different (red,bold) | 1 (red,bold) | Check box (checked)
 ->     file4 different (red,bold) | 1 (red,bold) | Check box (checked)
 
-Progress bar set to fraction 1.0, text 'All 5 tests completed at 16Jun13:54:02'
+Progress bar set to fraction 1.0, text 'All 5 tests completed at 16Jun15:41:37'
 
-Redrawing test success coloured green
-Redrawing suite suite : second column 'All 1 tests successful' coloured green
+Updated : Test Tree with columns: Tests: 0/5 selected, none hidden , Details
+-> TargetApp (hello) (white) | (white)
+->   simple_fail1 (green) | file3 different (red)
+->   simple_fail2 (red) | errors new (red)
+->   complex_fail1 (red) | output different(+) (red)
+->   complex_fail2 (red) | output different(+) (red)
+->   suite (white) | All 1 tests successful (green)
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white) | 0 (white) | Check box (checked)
@@ -293,37 +378,38 @@ Expected application event 'completion of test actions' occurred, proceeding.
 
 'show test suite' event created with arguments 'suite'
 
-Test Tree description...
--> TargetApp (hello)
-->   simple_fail1
-->   simple_fail2
-->   complex_fail1
-->   complex_fail2
-->   suite
-->     success
+Expanded row in Test Tree with columns: Tests: 0/5 selected, none hidden , Details
+-> TargetApp (hello) (white) | (white)
+->   simple_fail1 (green) | file3 different (red)
+->   simple_fail2 (red) | errors new (red)
+->   complex_fail1 (red) | output different(+) (red)
+->   complex_fail2 (red) | output different(+) (red)
+->   suite (white) | All 1 tests successful (green)
+->     success (green) | (green)
 
 'set progress report filter selection to' event created with arguments 'output different'
 Selecting all 2 tests in category output different
 Marking 2 tests as selected
 
-Test column header set to 'Tests: 2/5 selected, none hidden'
 Setting sensitivity of action '_Save' to True
 Setting sensitivity of action 'Save _As...' to True
 Setting sensitivity of action 'S_ave Selection...' to True
 Setting sensitivity of action '_Mark' to True
 Setting sensitivity of action 'Recompute Status' to True
 
+Column titles changed in Test Tree with columns: Tests: 2/5 selected, none hidden , Details
+
 Child visibility changed in Notebook with tabs: Test , Status , Run Info
 
 'mark the selected tests' event created with arguments ''
 Adding entry completion 'Checked' ...
-Adding entry completion 'Checked at 16Jun13:54:01' ...
+Adding entry completion 'Checked at 16Jun15:41:36' ...
 ---------- Dialog 'Mark the selected tests' ----------
 Default action is labelled 'gtk-ok'
 'Brief text:'
 Text entry (set to 'Checked')
 'Free text:'
-Text entry (set to 'Checked at 16Jun13:54:01')
+Text entry (set to 'Checked at 16Jun15:41:36')
 ---------------
 Button 'gtk-ok', stock image 'gtk-ok'
 Button 'gtk-cancel', stock image 'gtk-cancel'
@@ -333,10 +419,16 @@ Button 'gtk-cancel', stock image 'gtk-cancel'
 Edited 'Free text' Text entry (set to 'Nothing that needs filtering')
 
 'press ok' event created with arguments ''
-
-Redrawing test complex_fail1 coloured orange
-(Second column 'Checked' coloured orange)
 Setting sensitivity of action '_Unmark' to True
+
+Updated : Test Tree with columns: Tests: 2/5 selected, none hidden , Details
+-> TargetApp (hello) (white) | (white)
+->   simple_fail1 (green) | file3 different (red)
+->   simple_fail2 (red) | errors new (red)
+->   complex_fail1 (orange) | Checked (orange)
+->   complex_fail2 (red) | output different(+) (red)
+->   suite (white) | All 1 tests successful (green)
+->     success (green) | (green)
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white) | 0 (white) | Check box (checked)
@@ -355,11 +447,17 @@ Updated : Test Status View with columns: Status , Number , Visible
 -> Succeeded (green,bold) | 1 (green,bold) | Check box (checked)
 -> Marked (orange,bold) | 1 (orange,bold) | Check box (checked)
 ->   Checked (orange,bold) | 1 (orange,bold) | Check box (checked)
-
-Redrawing test complex_fail2 coloured orange
-(Second column 'Checked' coloured orange)
 Setting sensitivity of action '_Save' to False
 Setting sensitivity of action 'Save _As...' to False
+
+Updated : Test Tree with columns: Tests: 2/5 selected, none hidden , Details
+-> TargetApp (hello) (white) | (white)
+->   simple_fail1 (green) | file3 different (red)
+->   simple_fail2 (red) | errors new (red)
+->   complex_fail1 (orange) | Checked (orange)
+->   complex_fail2 (orange) | Checked (orange)
+->   suite (white) | All 1 tests successful (green)
+->     success (green) | (green)
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white) | 0 (white) | Check box (checked)
@@ -384,7 +482,8 @@ Adding entry completion 'Nothing that needs filtering' ...
 
 'set test selection to' event created with arguments 'complex_fail2'
 
-Test column header set to 'Tests: 1/5 selected, none hidden'
+
+Column titles changed in Test Tree with columns: Tests: 1/5 selected, none hidden , Details
 
 Current page changed in Notebook with tabs: Test , Status , Run Info
 Viewing page 'Test'
@@ -441,10 +540,10 @@ Setting sensitivity of action '_Save' to True
 Setting sensitivity of action 'Save _As...' to True
 Setting sensitivity of action '_Unmark' to False
 
-Test column header set to 'Tests: 2/5 selected, none hidden'
 Setting sensitivity of action '_Unmark' to True
 
-Test column header set to 'Tests: 3/5 selected, none hidden'
+
+Column titles changed in Test Tree with columns: Tests: 3/5 selected, none hidden , Details
 
 Updated : File Tree with columns: Sample from 3 tests , Details
 -> Comparison Files
@@ -477,11 +576,17 @@ Button 'gtk-cancel', stock image 'gtk-cancel'
 Edited 'Brief text' Text entry (set to 'Marked2')
 
 'press ok' event created with arguments ''
-
-Redrawing test simple_fail2 coloured orange
-(Second column 'Marked2' coloured orange)
 Setting sensitivity of action '_Save' to False
 Setting sensitivity of action 'Save _As...' to False
+
+Updated : Test Tree with columns: Tests: 3/5 selected, none hidden , Details
+-> TargetApp (hello) (white) | (white)
+->   simple_fail1 (green) | file3 different (red)
+->   simple_fail2 (orange) | Marked2 (orange)
+->   complex_fail1 (orange) | Checked (orange)
+->   complex_fail2 (orange) | Checked (orange)
+->   suite (white) | All 1 tests successful (green)
+->     success (green) | (green)
 
 Updated : File Tree with columns: Sample from 3 tests , Details
 -> Comparison Files
@@ -502,20 +607,32 @@ Test FAILED :
  ---------- New result in errors ----------
 ===============================
 
-Redrawing test complex_fail1 coloured orange
-(Second column 'Marked2' coloured orange)
+Updated : Test Tree with columns: Tests: 3/5 selected, none hidden , Details
+-> TargetApp (hello) (white) | (white)
+->   simple_fail1 (green) | file3 different (red)
+->   simple_fail2 (orange) | Marked2 (orange)
+->   complex_fail1 (orange) | Marked2 (orange)
+->   complex_fail2 (orange) | Checked (orange)
+->   suite (white) | All 1 tests successful (green)
+->     success (green) | (green)
 
-Redrawing test success coloured orange
-(Second column 'Marked2' coloured orange)
+Updated : Test Tree with columns: Tests: 3/5 selected, none hidden , Details
+-> TargetApp (hello) (white) | (white)
+->   simple_fail1 (green) | file3 different (red)
+->   simple_fail2 (orange) | Marked2 (orange)
+->   complex_fail1 (orange) | Marked2 (orange)
+->   complex_fail2 (orange) | Checked (orange)
+->   suite (white) | All 1 tests successful (green)
+->     success (orange) | Marked2 (orange)
 
 Changing GUI status to: 'Performed 'Mark the selected tests' on 3 tests.'
 Adding entry completion 'Marked2' ...
 
 'set test selection to' event created with arguments 'complex_fail1'
 
-Test column header set to 'Tests: 2/5 selected, none hidden'
 
-Test column header set to 'Tests: 1/5 selected, none hidden'
+
+Column titles changed in Test Tree with columns: Tests: 1/5 selected, none hidden , Details
 
 Updated : File Tree with columns: complex__fail1 , Details
 -> Comparison Files
@@ -591,12 +708,18 @@ Test FAILED :
 ===============================
 
 'unmark the selected tests' event created with arguments ''
-
-Redrawing test complex_fail2 coloured red
-(Second column 'output different(+)' coloured red)
 Setting sensitivity of action '_Save' to True
 Setting sensitivity of action 'Save _As...' to True
 Setting sensitivity of action '_Unmark' to False
+
+Updated : Test Tree with columns: Tests: 1/5 selected, none hidden , Details
+-> TargetApp (hello) (white) | (white)
+->   simple_fail1 (green) | file3 different (red)
+->   simple_fail2 (orange) | Marked2 (orange)
+->   complex_fail1 (orange) | Marked2 (orange)
+->   complex_fail2 (red) | output different(+) (red)
+->   suite (white) | All 1 tests successful (green)
+->     success (orange) | Marked2 (orange)
 
 Updated : File Tree with columns: complex__fail2 , Details
 -> Comparison Files
@@ -675,12 +798,18 @@ Button 'gtk-cancel', stock image 'gtk-cancel'
 Edited 'Brief text' Text entry (set to 'Marked3')
 
 'press ok' event created with arguments ''
-
-Redrawing test simple_fail1 coloured orange
-(Second column 'Marked3' coloured orange)
 Setting sensitivity of action '_Save' to False
 Setting sensitivity of action 'Save _As...' to False
 Setting sensitivity of action '_Unmark' to True
+
+Updated : Test Tree with columns: Tests: 1/5 selected, none hidden , Details
+-> TargetApp (hello) (white) | (white)
+->   simple_fail1 (orange) | Marked3 (orange)
+->   simple_fail2 (orange) | Marked2 (orange)
+->   complex_fail1 (orange) | Marked2 (orange)
+->   complex_fail2 (red) | output different(+) (red)
+->   suite (white) | All 1 tests successful (green)
+->     success (orange) | Marked2 (orange)
 
 Updated : File Tree with columns: simple__fail1 , Details
 -> Comparison Files
@@ -709,7 +838,8 @@ Adding entry completion 'Marked3' ...
 
 'set test selection to' event created with arguments 'simple_fail2,complex_fail1'
 
-Test column header set to 'Tests: 2/5 selected, none hidden'
+
+Column titles changed in Test Tree with columns: Tests: 2/5 selected, none hidden , Details
 
 Updated : File Tree with columns: Sample from 2 tests , Details
 -> Comparison Files
@@ -731,11 +861,17 @@ Test FAILED :
 ===============================
 
 'unmark the selected tests' event created with arguments ''
-
-Redrawing test simple_fail2 coloured red
-(Second column 'errors new' coloured red)
 Setting sensitivity of action '_Save' to True
 Setting sensitivity of action 'Save _As...' to True
+
+Updated : Test Tree with columns: Tests: 2/5 selected, none hidden , Details
+-> TargetApp (hello) (white) | (white)
+->   simple_fail1 (orange) | Marked3 (orange)
+->   simple_fail2 (red) | errors new (red)
+->   complex_fail1 (orange) | Marked2 (orange)
+->   complex_fail2 (red) | output different(+) (red)
+->   suite (white) | All 1 tests successful (green)
+->     success (orange) | Marked2 (orange)
 
 Updated : File Tree with columns: Sample from 2 tests , Details
 -> Comparison Files
@@ -751,10 +887,16 @@ Updated : File Tree with columns: Sample from 2 tests , Details
 Test FAILED :
 ---------- New result in errors ----------
 ===============================
-
-Redrawing test complex_fail1 coloured red
-(Second column 'output different(+)' coloured red)
 Setting sensitivity of action '_Unmark' to False
+
+Updated : Test Tree with columns: Tests: 2/5 selected, none hidden , Details
+-> TargetApp (hello) (white) | (white)
+->   simple_fail1 (orange) | Marked3 (orange)
+->   simple_fail2 (red) | errors new (red)
+->   complex_fail1 (red) | output different(+) (red)
+->   complex_fail2 (red) | output different(+) (red)
+->   suite (white) | All 1 tests successful (green)
+->     success (orange) | Marked2 (orange)
 
 Changing GUI status to: 'Performed 'Unmark the selected tests' on 2 tests.'
 
@@ -786,23 +928,25 @@ Showing Test Status View with columns: Status , Number , Visible
 'set progress report filter selection to' event created with arguments ''
 Marking 0 tests as selected
 
-Test column header set to 'Tests: 0/5 selected, none hidden'
 Setting sensitivity of action '_Save' to False
 Setting sensitivity of action 'Save _As...' to False
 Setting sensitivity of action 'S_ave Selection...' to False
 Setting sensitivity of action '_Mark' to False
 Setting sensitivity of action 'Recompute Status' to False
 
+Column titles changed in Test Tree with columns: Tests: 0/5 selected, none hidden , Details
+
 Child visibility changed in Notebook with tabs: Status , Run Info
 
 'set test selection to' event created with arguments 'complex_fail1'
 
-Test column header set to 'Tests: 1/5 selected, none hidden'
 Setting sensitivity of action '_Save' to True
 Setting sensitivity of action 'Save _As...' to True
 Setting sensitivity of action 'S_ave Selection...' to True
 Setting sensitivity of action '_Mark' to True
 Setting sensitivity of action 'Recompute Status' to True
+
+Column titles changed in Test Tree with columns: Tests: 1/5 selected, none hidden , Details
 
 Current page changed in Notebook with tabs: Test , Status , Run Info
 Viewing page 'Test'
@@ -851,12 +995,18 @@ Button 'gtk-cancel', stock image 'gtk-cancel'
 Edited 'Brief text' Text entry (set to 'Marked4')
 
 'press ok' event created with arguments ''
-
-Redrawing test complex_fail1 coloured orange
-(Second column 'Marked4' coloured orange)
 Setting sensitivity of action '_Save' to False
 Setting sensitivity of action 'Save _As...' to False
 Setting sensitivity of action '_Unmark' to True
+
+Updated : Test Tree with columns: Tests: 1/5 selected, none hidden , Details
+-> TargetApp (hello) (white) | (white)
+->   simple_fail1 (orange) | Marked3 (orange)
+->   simple_fail2 (red) | errors new (red)
+->   complex_fail1 (orange) | Marked4 (orange)
+->   complex_fail2 (red) | output different(+) (red)
+->   suite (white) | All 1 tests successful (green)
+->     success (orange) | Marked2 (orange)
 
 Updated : File Tree with columns: complex__fail1 , Details
 -> Comparison Files
@@ -919,11 +1069,19 @@ Showing Test Status View with columns: Status , Number , Visible
 Selecting all 3 tests in category Marked
 Marking 3 tests as selected
 
-Test column header set to 'Tests: 3/5 selected, none hidden'
+
+Column titles changed in Test Tree with columns: Tests: 3/5 selected, none hidden , Details
 
 'unmark the selected tests' event created with arguments ''
 
-Redrawing test success coloured green
+Updated : Test Tree with columns: Tests: 3/5 selected, none hidden , Details
+-> TargetApp (hello) (white) | (white)
+->   simple_fail1 (orange) | Marked3 (orange)
+->   simple_fail2 (red) | errors new (red)
+->   complex_fail1 (orange) | Marked4 (orange)
+->   complex_fail2 (red) | output different(+) (red)
+->   suite (white) | All 1 tests successful (green)
+->     success (green) | (green)
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white) | 0 (white) | Check box (checked)
@@ -945,11 +1103,17 @@ Updated : Test Status View with columns: Status , Number , Visible
 ->   Marked2 (white) | 0 (white) | Check box (checked)
 ->   Marked3 (orange,bold) | 1 (orange,bold) | Check box (checked)
 ->   Marked4 (orange,bold) | 1 (orange,bold) | Check box (checked)
-
-Redrawing test simple_fail1 coloured green
-(Second column 'file3 different' coloured red)
 Setting sensitivity of action '_Save' to True
 Setting sensitivity of action 'Save _As...' to True
+
+Updated : Test Tree with columns: Tests: 3/5 selected, none hidden , Details
+-> TargetApp (hello) (white) | (white)
+->   simple_fail1 (green) | file3 different (red)
+->   simple_fail2 (red) | errors new (red)
+->   complex_fail1 (orange) | Marked4 (orange)
+->   complex_fail2 (red) | output different(+) (red)
+->   suite (white) | All 1 tests successful (green)
+->     success (green) | (green)
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white) | 0 (white) | Check box (checked)
@@ -971,10 +1135,16 @@ Updated : Test Status View with columns: Status , Number , Visible
 ->   Marked2 (white) | 0 (white) | Check box (checked)
 ->   Marked3 (white) | 0 (white) | Check box (checked)
 ->   Marked4 (orange,bold) | 1 (orange,bold) | Check box (checked)
-
-Redrawing test complex_fail1 coloured red
-(Second column 'output different(+)' coloured red)
 Setting sensitivity of action '_Unmark' to False
+
+Updated : Test Tree with columns: Tests: 3/5 selected, none hidden , Details
+-> TargetApp (hello) (white) | (white)
+->   simple_fail1 (green) | file3 different (red)
+->   simple_fail2 (red) | errors new (red)
+->   complex_fail1 (red) | output different(+) (red)
+->   complex_fail2 (red) | output different(+) (red)
+->   suite (white) | All 1 tests successful (green)
+->     success (green) | (green)
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white) | 0 (white) | Check box (checked)
@@ -1002,12 +1172,13 @@ Changing GUI status to: 'Performed 'Unmark the selected tests' on 3 tests.'
 'set progress report filter selection to' event created with arguments ''
 Marking 0 tests as selected
 
-Test column header set to 'Tests: 0/5 selected, none hidden'
 Setting sensitivity of action '_Save' to False
 Setting sensitivity of action 'Save _As...' to False
 Setting sensitivity of action 'S_ave Selection...' to False
 Setting sensitivity of action '_Mark' to False
 Setting sensitivity of action 'Recompute Status' to False
+
+Column titles changed in Test Tree with columns: Tests: 0/5 selected, none hidden , Details
 
 Child visibility changed in Notebook with tabs: Status , Run Info
 

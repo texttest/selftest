@@ -2,7 +2,7 @@
 Waiting for application event 'all tests to be read' to occur.
 Waiting for application event 'test Test under TargetApp to start' to occur.
 Enabling entry completion, using matching 1
-Top Window title is TextTest dynamic GUI : testing HELLO under /carm/proj/texttest-tmp/geoff/texttest.16Jun135329.31463/texttest.sge/QueueSystems/SlaveReuse/Master/ForceReuse/GUI/KillBeforeReuse/TargetApp/ (started at 16Jun13:54:13)
+Top Window title is TextTest dynamic GUI : testing HELLO under /carm/proj/texttest-tmp/geoff/texttest.16Jun154051.556/texttest.sge/QueueSystems/SlaveReuse/Master/ForceReuse/GUI/KillBeforeReuse/TargetApp/ (started at 16Jun15:42:02)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -111,45 +111,54 @@ UI layout:
   </popup>
 </ui>
 
-Test Tree description...
+Changing GUI status to: 'TextTest started at 16Jun15:42:03.'
+...........
 
-Test column header set to 'Tests: All 0 selected'
+Showing Test Tree with columns: Tests: All 0 selected , Details
 
-Pane separator positioned 50% from the left edge
-
+------------------------------ (vertical pane separator, 50% from the left edge)
+...........
 
 Showing Notebook with tabs: Status , Run Info
 Viewing page 'Status'
 
 Showing Test Status View with columns: Status , Number , Visible
 
-Changing GUI status to: 'TextTest started at 16Jun13:54:13.'
+Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
+-> TargetApp (hello) (white) | (white)
+->   Test (white) | (white)
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 1 (white,bold) | Check box (checked)
+
+Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
+-> TargetApp (hello) (white) | (white)
+->   Test (white) | (white)
+->   Suite (white) | (white)
+->     Test (white) | (white)
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 2 (white,bold) | Check box (checked)
 
 Progress bar set to fraction 0.0, text '0 of 2 tests completed'
 
-Test Tree description...
--> TargetApp (hello)
-->   Test
-->   Suite
-->     Test
 
-Test column header set to 'Tests: 0/2 selected, none hidden'
 
-Redrawing test Test coloured white
-(Second column 'PEND' coloured white)
+Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
+-> TargetApp (hello) (white) | (white)
+->   Test (white) | PEND (white)
+->   Suite (white) | (white)
+->     Test (white) | (white)
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 1 (white,bold) | Check box (checked)
 -> Pending (white,bold) | 1 (white,bold) | Check box (checked)
 
-Redrawing test Test coloured yellow
-(Second column 'RUN (juliaca)' coloured yellow)
+Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
+-> TargetApp (hello) (white) | (white)
+->   Test (yellow) | RUN (juliaca) (yellow)
+->   Suite (white) | (white)
+->     Test (white) | (white)
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 1 (white,bold) | Check box (checked)
@@ -161,10 +170,11 @@ Expected application event 'test Test under TargetApp to start' occurred, procee
 
 'set test selection to' event created with arguments 'Test under TargetApp (hello)'
 
-Test column header set to 'Tests: 1/2 selected, none hidden'
 Setting sensitivity of action 'S_ave Selection...' to True
 Setting sensitivity of action '_Kill' to True
 Setting sensitivity of action 'Recompute Status' to True
+
+Column titles changed in Test Tree with columns: Tests: 1/2 selected, none hidden , Details
 
 Current page changed in Notebook with tabs: Test , Status , Run Info
 Viewing page 'Test'
@@ -194,13 +204,16 @@ Changing GUI status to: 'Performed 'Kill selected tests' on HELLO test-case Test
 Waiting for application event 'completion of test actions' to occur.
 
 Progress bar set to fraction 0.5, text '1 of 2 tests completed'
-
-Redrawing test Test coloured red
-(Second column 'KILLED' coloured red)
 Setting sensitivity of action '_Save' to True
 Setting sensitivity of action 'Save _As...' to True
 Setting sensitivity of action '_Kill' to False
 Setting sensitivity of action '_Mark' to True
+
+Updated : Test Tree with columns: Tests: 1/2 selected, none hidden , Details
+-> TargetApp (hello) (white) | (white)
+->   Test (red) | KILLED (red)
+->   Suite (white) | (white)
+->     Test (white) | (white)
 
 Updated : File Tree with columns: Test , Details
 -> Comparison Files
@@ -221,16 +234,24 @@ Test killed explicitly at 11:41
 < Hello
 ===============================
 
-Redrawing test Test coloured white
-(Second column 'PEND' coloured white)
+Updated : Test Tree with columns: Tests: 1/2 selected, none hidden , Details
+-> TargetApp (hello) (white) | (white)
+->   Test (red) | KILLED (red)
+->   Suite (white) | (white)
+->     Test (white) | PEND (white)
 
-Redrawing test Test coloured yellow
-(Second column 'RUN (juliaca)' coloured yellow)
+Updated : Test Tree with columns: Tests: 1/2 selected, none hidden , Details
+-> TargetApp (hello) (white) | (white)
+->   Test (red) | KILLED (red)
+->   Suite (white) | (white)
+->     Test (yellow) | RUN (juliaca) (yellow)
 
-Progress bar set to fraction 1.0, text 'All 2 tests completed at 16Jun13:54:16'
+Progress bar set to fraction 1.0, text 'All 2 tests completed at 16Jun15:42:06'
 
-Redrawing test Test coloured green
-Redrawing suite Suite : second column 'All 1 tests successful' coloured green
+Updated : Test Tree with columns: Tests: 1/2 selected, none hidden , Details
+-> TargetApp (hello) (white) | (white)
+->   Test (red) | KILLED (red)
+->   Suite (white) | All 1 tests successful (green)
 
 Expected application event 'completion of test actions' occurred, proceeding.
 

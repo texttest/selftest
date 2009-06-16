@@ -1,7 +1,7 @@
 
 Waiting for application event 'completion of test actions' to occur.
 Enabling entry completion, using matching 1
-Top Window title is TextTest dynamic GUI : testing HELLO.batch.1,HELLO.batch.2 (started at 16Jun13:53:46)
+Top Window title is TextTest dynamic GUI : testing HELLO.batch.1,HELLO.batch.2 (started at 16Jun15:41:10)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -110,37 +110,44 @@ UI layout:
   </popup>
 </ui>
 
-Test Tree description...
+Changing GUI status to: 'TextTest started at 16Jun15:41:11.'
+...........
 
-Test column header set to 'Tests: All 0 selected'
+Showing Test Tree with columns: Tests: All 0 selected , Details
 
-Pane separator positioned 50% from the left edge
-
+------------------------------ (vertical pane separator, 50% from the left edge)
+...........
 
 Showing Notebook with tabs: Status , Run Info
 Viewing page 'Status'
 
 Showing Test Status View with columns: Status , Number , Visible
 
-Changing GUI status to: 'TextTest started at 16Jun13:53:47.'
+Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
+-> TargetApp (hello.batch.1) (white) | (white)
+->   BothDiff (white) | (white)
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 1 (white,bold) | Check box (checked)
+
+Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
+-> TargetApp (hello.batch.1) (white) | (white)
+->   BothDiff (white) | (white)
+-> TargetApp (hello.batch.2) (white) | (white)
+->   BothDiff (white) | (white)
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 2 (white,bold) | Check box (checked)
 
 Progress bar set to fraction 0.0, text '0 of 2 tests completed'
 
-Test Tree description...
--> TargetApp (hello.batch.1)
-->   BothDiff
--> TargetApp (hello.batch.2)
-->   BothDiff
 
-Test column header set to 'Tests: 0/2 selected, none hidden'
 
-Redrawing test BothDiff coloured yellow
+Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
+-> TargetApp (hello.batch.1) (white) | (white)
+->   BothDiff (yellow) | (yellow)
+-> TargetApp (hello.batch.2) (white) | (white)
+->   BothDiff (white) | (white)
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 1 (white,bold) | Check box (checked)
@@ -148,8 +155,11 @@ Updated : Test Status View with columns: Status , Number , Visible
 
 Progress bar set to fraction 0.5, text '1 of 2 tests completed'
 
-Redrawing test BothDiff coloured red
-(Second column 'errors different(+)' coloured red)
+Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
+-> TargetApp (hello.batch.1) (white) | (white)
+->   BothDiff (red) | errors different(+) (red)
+-> TargetApp (hello.batch.2) (white) | (white)
+->   BothDiff (white) | (white)
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 1 (white,bold) | Check box (checked)
@@ -159,7 +169,11 @@ Updated : Test Status View with columns: Status , Number , Visible
 ->     errors different (red,bold) | 1 (red,bold) | Check box (checked)
 ->     output different (red,bold) | 1 (red,bold) | Check box (checked)
 
-Redrawing test BothDiff coloured yellow
+Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
+-> TargetApp (hello.batch.1) (white) | (white)
+->   BothDiff (red) | errors different(+) (red)
+-> TargetApp (hello.batch.2) (white) | (white)
+->   BothDiff (yellow) | (yellow)
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white) | 0 (white) | Check box (checked)
@@ -169,10 +183,13 @@ Updated : Test Status View with columns: Status , Number , Visible
 ->     errors different (red,bold) | 1 (red,bold) | Check box (checked)
 ->     output different (red,bold) | 1 (red,bold) | Check box (checked)
 
-Progress bar set to fraction 1.0, text 'All 2 tests completed at 16Jun13:53:47'
+Progress bar set to fraction 1.0, text 'All 2 tests completed at 16Jun15:41:11'
 
-Redrawing test BothDiff coloured red
-(Second column 'errors different(+)' coloured red)
+Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
+-> TargetApp (hello.batch.1) (white) | (white)
+->   BothDiff (red) | errors different(+) (red)
+-> TargetApp (hello.batch.2) (white) | (white)
+->   BothDiff (red) | errors different(+) (red)
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white) | 0 (white) | Check box (checked)
@@ -188,12 +205,13 @@ Expected application event 'completion of test actions' occurred, proceeding.
 
 'set test selection to' event created with arguments 'BothDiff under TargetApp (hello.batch.1)'
 
-Test column header set to 'Tests: 1/2 selected, none hidden'
 Setting sensitivity of action '_Save' to True
 Setting sensitivity of action 'Save _As...' to True
 Setting sensitivity of action 'S_ave Selection...' to True
 Setting sensitivity of action '_Mark' to True
 Setting sensitivity of action 'Recompute Status' to True
+
+Column titles changed in Test Tree with columns: Tests: 1/2 selected, none hidden , Details
 
 Current page changed in Notebook with tabs: Test , Status , Run Info
 Viewing page 'Test'
@@ -208,7 +226,7 @@ Showing File Tree with columns: BothDiff , Details
 ...........
 
 ========== Text Info ==========
-Test FAILED on hendersonville :
+Test FAILED on annanberg :
 ---------- Differences in errors ----------
 0a1
 > Error text
@@ -226,10 +244,6 @@ Changing GUI status to: 'Saving HELLO.batch.1 test-case BothDiff : errors, versi
 
 Changing GUI status to: 'Saving HELLO.batch.1 test-case BothDiff : output, version batch.1'
 
-Redrawing test BothDiff coloured green
-Redrawing suite TargetApp : second column 'All 1 tests successful' coloured green
-
-Test column header set to 'Tests: 0/2 selected, none hidden'
 Setting sensitivity of action '_Save' to False
 Setting sensitivity of action 'Save _As...' to False
 Setting sensitivity of action 'S_ave Selection...' to False
@@ -237,6 +251,11 @@ Setting sensitivity of action '_Mark' to False
 Setting sensitivity of action 'Recompute Status' to False
 
 Changing GUI status to: 'Saved 1 tests.'
+
+Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
+-> TargetApp (hello.batch.1) (white) | All 1 tests successful (green)
+-> TargetApp (hello.batch.2) (white) | (white)
+->   BothDiff (red) | errors different(+) (red)
 
 Current page changed in Notebook with tabs: Status , Run Info
 Viewing page 'Status'

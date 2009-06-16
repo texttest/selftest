@@ -3,7 +3,7 @@ Waiting for application event 'all tests to be read' to occur.
 Waiting for application event 'test Basic to complete' to occur.
 Waiting for application event 'test Basic2 to start' to occur.
 Enabling entry completion, using matching 1
-Top Window title is TextTest dynamic GUI : testing SLEEP (started at 16Jun13:53:50)
+Top Window title is TextTest dynamic GUI : testing SLEEP (started at 16Jun15:41:16)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -112,37 +112,38 @@ UI layout:
   </popup>
 </ui>
 
-Test Tree description...
+Changing GUI status to: 'TextTest started at 16Jun15:41:17.'
+...........
 
-Test column header set to 'Tests: All 0 selected'
+Showing Test Tree with columns: Tests: All 0 selected , Details
 
-Pane separator positioned 50% from the left edge
-
+------------------------------ (vertical pane separator, 50% from the left edge)
+...........
 
 Showing Notebook with tabs: Status , Run Info
 Viewing page 'Status'
 
 Showing Test Status View with columns: Status , Number , Visible
 
-Changing GUI status to: 'TextTest started at 16Jun13:53:50.'
+Updated : Test Tree with columns: Tests: 0/1 selected, all hidden , Details
+-> TargetApp (sleep) (white) | (white)
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 1 (white,bold) | Check box
 
+Column titles changed in Test Tree with columns: Tests: 0/2 selected, all hidden , Details
+
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 2 (white,bold) | Check box
+
+Column titles changed in Test Tree with columns: Tests: 0/3 selected, all hidden , Details
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 3 (white,bold) | Check box
 
 Progress bar set to fraction 0.0, text '0 of 3 tests completed'
 
-Test Tree description...
--> TargetApp (sleep)
 
-Test column header set to 'Tests: 0/3 selected, all hidden'
-
-Redrawing test Basic coloured yellow
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 2 (white,bold) | Check box
@@ -150,21 +151,11 @@ Updated : Test Status View with columns: Status , Number , Visible
 
 Progress bar set to fraction 0.333333333333, text '1 of 3 tests completed'
 
-Redrawing test Basic coloured red
-(Second column 'output different' coloured red)
-Making test visible : SLEEP test-suite Suite1
 
-Test Tree description...
--> TargetApp (sleep)
-->   Suite1
-Making test visible : SLEEP test-case Basic
-
-Test Tree description...
--> TargetApp (sleep)
-->   Suite1
-->     Basic
-
-Test column header set to 'Tests: 0/3 selected, 2 hidden'
+Updated : Test Tree with columns: Tests: 0/3 selected, 2 hidden , Details
+-> TargetApp (sleep) (white) | (white)
+->   Suite1 (white) | (white)
+->     Basic (red) | output different (red)
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 2 (white,bold) | Check box
@@ -172,8 +163,6 @@ Updated : Test Status View with columns: Status , Number , Visible
 -> Failed (red,bold) | 1 (red,bold) | Check box (checked)
 ->   Differences (red,bold) | 1 (red,bold) | Check box (checked)
 ->     output different (red,bold) | 1 (red,bold) | Check box (checked)
-
-Redrawing test Basic2 coloured yellow
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 1 (white,bold) | Check box
@@ -188,12 +177,13 @@ Expected application event 'test Basic2 to start' occurred, proceeding.
 
 'set test selection to' event created with arguments 'Basic'
 
-Test column header set to 'Tests: 1/3 selected, 2 hidden'
 Setting sensitivity of action '_Save' to True
 Setting sensitivity of action 'Save _As...' to True
 Setting sensitivity of action 'S_ave Selection...' to True
 Setting sensitivity of action '_Mark' to True
 Setting sensitivity of action 'Recompute Status' to True
+
+Column titles changed in Test Tree with columns: Tests: 1/3 selected, 2 hidden , Details
 
 Current page changed in Notebook with tabs: Test , Status , Run Info
 Viewing page 'Test'
@@ -229,12 +219,12 @@ Waiting for application event 'test Basic3 to start' to occur.
 
 Progress bar set to fraction 0.666666666667, text '2 of 3 tests completed'
 
-Redrawing test Basic2 coloured green
-Making test visible : SLEEP test-case Basic2
 
-Test column header set to 'Tests: 1/3 selected, 1 hidden'
-
-Redrawing test Basic3 coloured yellow
+Updated : Test Tree with columns: Tests: 1/3 selected, 1 hidden , Details
+-> TargetApp (sleep) (white) | (white)
+->   Suite1 (white) | (white)
+->     Basic (red) | output different (red)
+->     Basic2 (green) | (green)
 
 Expected application event 'test Basic2 to complete' occurred, proceeding.
 Expected application event 'test Basic3 to start' occurred, proceeding.
@@ -247,21 +237,15 @@ Changing GUI status to: 'Killed all running tests.'
 
 Changing GUI status to: 'Waiting for all tests to terminate ...'
 
-Progress bar set to fraction 1.0, text 'All 3 tests completed at 16Jun13:54:02'
+Progress bar set to fraction 1.0, text 'All 3 tests completed at 16Jun15:41:29'
 
-Redrawing test Basic3 coloured red
-(Second column 'KILLED' coloured red)
-Making test visible : SLEEP test-suite Suite
-Making test visible : SLEEP test-case Basic3
 
-Test Tree description...
--> TargetApp (sleep)
-->   Suite1
-->     Basic
-->     Basic2
-->   Suite
-->     Basic3
-
-Test column header set to 'Tests: 1/3 selected, none hidden'
+Updated : Test Tree with columns: Tests: 1/3 selected, none hidden , Details
+-> TargetApp (sleep) (white) | (white)
+->   Suite1 (white) | (white)
+->     Basic (red) | output different (red)
+->     Basic2 (green) | (green)
+->   Suite (white) | (white)
+->     Basic3 (red) | KILLED (red)
 
 Changing GUI status to: 'Removing all temporary files ...'
