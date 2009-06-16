@@ -2,7 +2,7 @@
 Waiting for application event 'all tests to be read' to occur.
 Waiting for application event 'test Basic to start' to occur.
 Enabling entry completion, using matching 1
-Top Window title is TextTest dynamic GUI : testing SLEEP (started at 15Jun23:16:57)
+Top Window title is TextTest dynamic GUI : testing SLEEP (started at 16Jun13:53:49)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -123,7 +123,7 @@ Viewing page 'Status'
 
 Showing Test Status View with columns: Status , Number , Visible
 
-Changing GUI status to: 'TextTest started at 15Jun23:16:58.'
+Changing GUI status to: 'TextTest started at 16Jun13:53:49.'
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 1 (white,bold) | Check box (checked)
@@ -147,12 +147,13 @@ Test Tree description...
 Test column header set to 'Tests: 0/3 selected, none hidden'
 
 Redrawing test Basic coloured yellow
-Expected application event 'all tests to be read' occurred, proceeding.
-Expected application event 'test Basic to start' occurred, proceeding.
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 2 (white,bold) | Check box (checked)
 -> Running (yellow,bold) | 1 (yellow,bold) | Check box (checked)
+
+Expected application event 'all tests to be read' occurred, proceeding.
+Expected application event 'test Basic to start' occurred, proceeding.
 
 'set test selection to' event created with arguments 'Basic2'
 
@@ -193,7 +194,6 @@ Redrawing test Basic2 coloured red
 Setting sensitivity of action '_Kill' to False
 Setting sensitivity of action '_Mark' to True
 Setting sensitivity of action 'Recompute Status' to True
-Expected application event 'test Basic2 to complete' occurred, proceeding.
 
 Updated : File Tree with columns: Basic2 , Details
 
@@ -201,6 +201,8 @@ Updated : File Tree with columns: Basic2 , Details
 Test were cancelled before starting :
 Test run was cancelled before it had started
 ===============================
+
+Expected application event 'test Basic2 to complete' occurred, proceeding.
 
 'set test selection to' event created with arguments 'Basic'
 Setting sensitivity of action '_Kill' to True
@@ -212,7 +214,7 @@ Updated : File Tree with columns: Basic , Details
 ->   output.sleep (yellow) | (yellow)
 
 ========== Text Info ==========
-Running on sofa-pc
+Running on khwai
 
 To obtain the latest progress information and an up-to-date comparison of the files above, perform 'recompute status' (press 'F5')
 ===============================
@@ -245,13 +247,14 @@ Updated : File Tree with columns: Basic , Details
 
 ========== Text Info ==========
 Test were terminated before completion (KILLED) :
-Test killed explicitly at 23:17
+Test killed explicitly at 13:53
 ---------- Differences in output ----------
 2d1
 < Done
 ===============================
 
 Redrawing test Basic3 coloured yellow
+
 Expected application event 'test Basic to complete' occurred, proceeding.
 Expected application event 'test Basic3 to start' occurred, proceeding.
 
@@ -263,7 +266,7 @@ Changing GUI status to: 'Killed all running tests.'
 
 Changing GUI status to: 'Waiting for all tests to terminate ...'
 
-Progress bar set to fraction 1.0, text 'All 3 tests completed at 15Jun23:17:02'
+Progress bar set to fraction 1.0, text 'All 3 tests completed at 16Jun13:53:54'
 
 Redrawing test Basic3 coloured red
 (Second column 'KILLED' coloured red)

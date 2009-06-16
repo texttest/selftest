@@ -3,7 +3,7 @@ Waiting for application event 'all tests to be read' to occur.
 Waiting for application event 'test TestAlwaysDiag version nodiag to complete' to occur.
 Waiting for application event 'test TestAlwaysDiag version withdiag to start' to occur.
 Enabling entry completion, using matching 1
-Top Window title is TextTest dynamic GUI : testing DIAG.nodiag,DIAG.withdiag (started at 15Jun14:19:34)
+Top Window title is TextTest dynamic GUI : testing DIAG.nodiag,DIAG.withdiag (started at 16Jun13:53:47)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -118,11 +118,13 @@ Test column header set to 'Tests: All 0 selected'
 
 Pane separator positioned 50% from the left edge
 
-Tabs showing : Status, Run Info
+
+Showing Notebook with tabs: Status , Run Info
+Viewing page 'Status'
 
 Showing Test Status View with columns: Status , Number , Visible
 
-Changing GUI status to: 'TextTest started at 15Jun14:19:35.'
+Changing GUI status to: 'TextTest started at 16Jun13:53:48.'
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 1 (white,bold) | Check box (checked)
@@ -161,9 +163,6 @@ Updated : Test Status View with columns: Status , Number , Visible
 ->     third missing (red,bold) | 1 (red,bold) | Check box (checked)
 
 Redrawing test TestAlwaysDiag coloured yellow
-Expected application event 'all tests to be read' occurred, proceeding.
-Expected application event 'test TestAlwaysDiag version nodiag to complete' occurred, proceeding.
-Expected application event 'test TestAlwaysDiag version withdiag to start' occurred, proceeding.
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white) | 0 (white) | Check box (checked)
@@ -174,6 +173,10 @@ Updated : Test Status View with columns: Status , Number , Visible
 ->     second missing (red,bold) | 1 (red,bold) | Check box (checked)
 ->     third missing (red,bold) | 1 (red,bold) | Check box (checked)
 
+Expected application event 'all tests to be read' occurred, proceeding.
+Expected application event 'test TestAlwaysDiag version nodiag to complete' occurred, proceeding.
+Expected application event 'test TestAlwaysDiag version withdiag to start' occurred, proceeding.
+
 'set test selection to' event created with arguments 'TestAlwaysDiag under TargetApp (diag.nodiag)'
 
 Test column header set to 'Tests: 1/2 selected, none hidden'
@@ -183,15 +186,21 @@ Setting sensitivity of action 'S_ave Selection...' to True
 Setting sensitivity of action '_Mark' to True
 Setting sensitivity of action 'Recompute Status' to True
 
-Setting file-view title to 'TestAlwaysDiag'
-Adding file errors.diag under heading 'Comparison Files', coloured green
-Adding file output.diag under heading 'Comparison Files', coloured green
-Adding file first.diag under heading 'Missing Files', coloured red
-Adding file second.diag under heading 'Missing Files', coloured red
-Adding file third.diag under heading 'Missing Files', coloured red
+Current page changed in Notebook with tabs: Test , Status , Run Info
+Viewing page 'Test'
+...........
 
-Pane separator positioned 46% from the top
+Showing File Tree with columns: TestAlwaysDiag , Details
+-> Comparison Files
+->   errors.diag (green) | (green)
+->   output.diag (green) | (green)
+-> Missing Files
+->   first.diag (red) | (red)
+->   second.diag (red) | (red)
+->   third.diag (red) | (red)
 
+------------------------------ (horizontal pane separator, 46% from the top)
+...........
 
 ========== Text Info ==========
 Test FAILED :
@@ -203,8 +212,6 @@ Test FAILED :
 ---------- Missing result in third ----------
 [ thirddiag ] INFO: Some information
 ===============================
-
-Tabs showing : Test, Status, Run Info
 
 'save results for selected tests' event created with arguments ''
 
@@ -219,14 +226,6 @@ Changing GUI status to: 'Saving DIAG.nodiag test-case TestAlwaysDiag : third, no
 
 Redrawing test TestAlwaysDiag coloured green
 Redrawing suite TargetApp : second column 'All 1 tests successful' coloured green
-
-Setting file-view title to 'TestAlwaysDiag'
-Adding file errors.diag under heading 'Comparison Files', coloured green
-Adding file output.diag under heading 'Comparison Files', coloured green
-
-========== Text Info ==========
-Test succeeded
-===============================
 Setting sensitivity of action '_Save' to False
 Setting sensitivity of action 'Save _As...' to False
 
@@ -234,20 +233,34 @@ Changing GUI status to: 'Saved 1 tests.'
 
 Waiting for application event 'completion of test actions' to occur.
 
-Progress bar set to fraction 1.0, text 'All 2 tests completed at 15Jun14:19:41'
+Updated : File Tree with columns: TestAlwaysDiag , Details
+-> Comparison Files
+->   errors.diag (green) | (green)
+->   output.diag (green) | (green)
+
+========== Text Info ==========
+Test succeeded
+===============================
+
+Progress bar set to fraction 1.0, text 'All 2 tests completed at 16Jun13:53:55'
 
 Redrawing test TestAlwaysDiag coloured green
 (Second column 'first new(+)' coloured red)
+
 Expected application event 'completion of test actions' occurred, proceeding.
 
 'set test selection to' event created with arguments 'TestAlwaysDiag under TargetApp (diag.withdiag)'
+Setting sensitivity of action '_Save' to True
+Setting sensitivity of action 'Save _As...' to True
 
-Setting file-view title to 'TestAlwaysDiag'
-Adding file errors.diag under heading 'Comparison Files', coloured green
-Adding file output.diag under heading 'Comparison Files', coloured green
-Adding file first.diag under heading 'New Files', coloured red
-Adding file second.diag under heading 'New Files', coloured red
-Adding file third.diag under heading 'New Files', coloured red
+Updated : File Tree with columns: TestAlwaysDiag , Details
+-> Comparison Files
+->   errors.diag (green) | (green)
+->   output.diag (green) | (green)
+-> New Files
+->   first.diag (red) | (red)
+->   second.diag (red) | (red)
+->   third.diag (red) | (red)
 
 ========== Text Info ==========
 Test FAILED :
@@ -259,8 +272,6 @@ Test FAILED :
 ---------- New result in third ----------
 [ thirddiag ] INFO: Some information
 ===============================
-Setting sensitivity of action '_Save' to True
-Setting sensitivity of action 'Save _As...' to True
 
 'quit' event created with arguments ''
 

@@ -1,7 +1,7 @@
 
 Waiting for application event 'completion of test actions' to occur.
 Enabling entry completion, using matching 1
-Top Window title is TextTest dynamic GUI : testing HELLO,HELLO.2 (started at 15Jun14:19:46)
+Top Window title is TextTest dynamic GUI : testing HELLO,HELLO.2 (started at 16Jun13:54:07)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -116,12 +116,14 @@ Test column header set to 'Tests: 0/2 selected, all hidden'
 
 Pane separator positioned 50% from the left edge
 
-Tabs showing : Status, Run Info
+
+Showing Notebook with tabs: Status , Run Info
+Viewing page 'Status'
 
 Showing Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 2 (white,bold) | Check box (checked)
 
-Changing GUI status to: 'TextTest started at 15Jun14:19:47.'
+Changing GUI status to: 'TextTest started at 16Jun13:54:07.'
 
 Progress bar set to fraction 0.0, text '0 of 2 tests completed'
 
@@ -162,7 +164,7 @@ Updated : Test Status View with columns: Status , Number , Visible
 ->     errors new (red,bold) | 1 (red,bold) | Check box (checked)
 ->     output new (red,bold) | 1 (red,bold) | Check box (checked)
 
-Progress bar set to fraction 1.0, text 'All 2 tests completed at 15Jun14:19:47'
+Progress bar set to fraction 1.0, text 'All 2 tests completed at 16Jun13:54:08'
 
 Redrawing test Test coloured red
 (Second column 'errors new(+)' coloured red)
@@ -176,6 +178,7 @@ Updated : Test Status View with columns: Status , Number , Visible
 ->       Group 1 (red,bold) | 2 (red,bold) | Check box (checked)
 ->     output new (red,bold) | 2 (red,bold) | Check box (checked)
 ->       Group 1 (red,bold) | 2 (red,bold) | Check box (checked)
+
 Expected application event 'completion of test actions' occurred, proceeding.
 
 'set test selection to' event created with arguments 'Test under TargetApp (hello)'
@@ -187,12 +190,17 @@ Setting sensitivity of action 'S_ave Selection...' to True
 Setting sensitivity of action '_Mark' to True
 Setting sensitivity of action 'Recompute Status' to True
 
-Setting file-view title to 'Test'
-Adding file errors.hello under heading 'New Files', coloured red
-Adding file output.hello under heading 'New Files', coloured red
+Current page changed in Notebook with tabs: Test , Status , Run Info
+Viewing page 'Test'
+...........
 
-Pane separator positioned 46% from the top
+Showing File Tree with columns: Test , Details
+-> New Files
+->   errors.hello (red) | (red)
+->   output.hello (red) | (red)
 
+------------------------------ (horizontal pane separator, 46% from the top)
+...........
 
 ========== Text Info ==========
 Test FAILED :
@@ -200,8 +208,6 @@ Test FAILED :
 ---------- New result in output ----------
 Hello
 ===============================
-
-Tabs showing : Test, Status, Run Info
 
 'save results for selected tests' event created with arguments ''
 
@@ -222,22 +228,12 @@ Setting sensitivity of action 'S_ave Selection...' to False
 Setting sensitivity of action '_Mark' to False
 Setting sensitivity of action 'Recompute Status' to False
 
-Showing Test Status View with columns: Status , Number , Visible
--> Not started (white) | 0 (white) | Check box (checked)
--> Running (white) | 0 (white) | Check box (checked)
--> Failed (red,bold) | 1 (red,bold) | Check box (checked)
-->   Differences (red,bold) | 1 (red,bold) | Check box (checked)
-->     errors new (red,bold) | 1 (red,bold) | Check box (checked)
-->       Group 1 (red,bold) | 1 (red,bold) | Check box (checked)
-->     output new (red,bold) | 1 (red,bold) | Check box (checked)
-->       Group 1 (red,bold) | 1 (red,bold) | Check box (checked)
--> Succeeded (green,bold) | 1 (green,bold) | Check box (checked)
-
-Tabs showing : Status, Run Info
-
 Changing GUI status to: 'Saved 1 tests.'
 
-Updated : Test Status View with columns: Status , Number , Visible
+Current page changed in Notebook with tabs: Status , Run Info
+Viewing page 'Status'
+
+Showing Test Status View with columns: Status , Number , Visible
 -> Not started (white) | 0 (white) | Check box (checked)
 -> Running (white) | 0 (white) | Check box (checked)
 -> Failed (red,bold) | 1 (red,bold) | Check box (checked)
@@ -251,6 +247,23 @@ Updated : Test Status View with columns: Status , Number , Visible
 'set test selection to' event created with arguments 'Test under TargetApp (hello.2)'
 
 Test column header set to 'Tests: 1/2 selected, none hidden'
+Setting sensitivity of action '_Save' to True
+Setting sensitivity of action 'Save _As...' to True
+Setting sensitivity of action 'S_ave Selection...' to True
+Setting sensitivity of action '_Mark' to True
+Setting sensitivity of action 'Recompute Status' to True
+
+Current page changed in Notebook with tabs: Test , Status , Run Info
+Viewing page 'Test'
+...........
+
+Showing File Tree with columns: Test , Details
+-> New Files
+->   errors.hello (red) | (red)
+->   output.hello (red) | (red)
+
+------------------------------ (horizontal pane separator, 46% from the top)
+...........
 
 ========== Text Info ==========
 Test FAILED :
@@ -258,20 +271,6 @@ Test FAILED :
 ---------- New result in output ----------
 Hello
 ===============================
-Setting sensitivity of action '_Save' to True
-Setting sensitivity of action 'Save _As...' to True
-Setting sensitivity of action 'S_ave Selection...' to True
-Setting sensitivity of action '_Mark' to True
-Setting sensitivity of action 'Recompute Status' to True
-
-Setting file-view title to 'Test'
-Adding file errors.hello under heading 'New Files', coloured red
-Adding file output.hello under heading 'New Files', coloured red
-
-Pane separator positioned 46% from the top
-
-
-Tabs showing : Test, Status, Run Info
 
 'quit' event created with arguments ''
 

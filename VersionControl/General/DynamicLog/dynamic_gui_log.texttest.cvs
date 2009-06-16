@@ -1,7 +1,7 @@
 
 Waiting for application event 'completion of test actions' to occur.
 Enabling entry completion, using matching 1
-Top Window title is TextTest dynamic GUI : testing HELLO (started at 15Jun17:36:54)
+Top Window title is TextTest dynamic GUI : testing HELLO (started at 16Jun13:54:08)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -181,12 +181,14 @@ Test column header set to 'Tests: 0/4 selected, all hidden'
 
 Pane separator positioned 50% from the left edge
 
-Tabs showing : Status, Run Info
+
+Showing Notebook with tabs: Status , Run Info
+Viewing page 'Status'
 
 Showing Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 4 (white,bold) | Check box (checked)
 
-Changing GUI status to: 'TextTest started at 15Jun17:36:54.'
+Changing GUI status to: 'TextTest started at 16Jun13:54:09.'
 
 Progress bar set to fraction 0.0, text '0 of 4 tests completed'
 
@@ -270,7 +272,7 @@ Updated : Test Status View with columns: Status , Number , Visible
 ->   Differences (red,bold) | 3 (red,bold) | Check box (checked)
 ->     output different (red,bold) | 3 (red,bold) | Check box (checked)
 
-Progress bar set to fraction 1.0, text 'All 4 tests completed at 15Jun17:36:55'
+Progress bar set to fraction 1.0, text 'All 4 tests completed at 16Jun13:54:10'
 
 Redrawing test Test4 coloured green
 
@@ -281,6 +283,7 @@ Updated : Test Status View with columns: Status , Number , Visible
 ->   Differences (red,bold) | 3 (red,bold) | Check box (checked)
 ->     output different (red,bold) | 3 (red,bold) | Check box (checked)
 -> Succeeded (green,bold) | 1 (green,bold) | Check box (checked)
+
 Expected application event 'completion of test actions' occurred, proceeding.
 
 'set test selection to' event created with arguments 'Test1'
@@ -303,12 +306,17 @@ Setting sensitivity of action 'A_dd' to True
 Setting sensitivity of action 'Add Recursive' to True
 Setting sensitivity of action 'Log Latest' to True
 
-Setting file-view title to 'Test1'
-Adding file errors.hello under heading 'Comparison Files', coloured green
-Adding file output.hello under heading 'Comparison Files', coloured red
+Current page changed in Notebook with tabs: Test , Status , Run Info
+Viewing page 'Test'
+...........
 
-Pane separator positioned 46% from the top
+Showing File Tree with columns: Test1 , Details
+-> Comparison Files
+->   errors.hello (green) | (green)
+->   output.hello (red) | (red)
 
+------------------------------ (horizontal pane separator, 46% from the top)
+...........
 
 ========== Text Info ==========
 Test FAILED :
@@ -318,8 +326,6 @@ Test FAILED :
 ---
 > Hello World!
 ===============================
-
-Tabs showing : Test, Status, Run Info
 
 'version control log for the selected files' event created with arguments ''
 
@@ -333,8 +339,8 @@ CVS command used: cvs log -N
 Subdirectories were ignored, use CVS Log Recursive to get the logs for all subdirectories.'
 
 Showing VCS log info tree with columns: File , Last revision committed (UTC)
--> <span weight='bold'>TargetApp</span> | 
-->   <span weight='bold'>Test1</span> | 
+-> <span weight='bold'>TargetApp</span>
+->   <span weight='bold'>Test1</span>
 ->     errors.hello | <span weight='bold'>2 days ago</span>
 ->     output.hello | Thu Feb 19 20:26:26 2009
 
@@ -396,8 +402,8 @@ CVS command used: cvs log -N
 Subdirectories were ignored, use CVS Log Recursive to get the logs for all subdirectories.'
 
 Showing VCS log info tree with columns: File , Last revision committed (UTC)
--> <span weight='bold'>TargetApp</span> | 
-->   <span weight='bold'>Test1</span> | 
+-> <span weight='bold'>TargetApp</span>
+->   <span weight='bold'>Test1</span>
 ->     output.hello | Thu Feb 19 20:26:26 2009
 
 ------------------------------ (vertical VCS dialog separator, 47% from the left edge)
@@ -443,9 +449,12 @@ Setting sensitivity of action 'View Filtered Original File' to False
 Setting sensitivity of action 'View Raw Differences' to False
 Setting sensitivity of action 'View Differences' to False
 
-Setting file-view title to 'Test2'
-Adding file errors.hello under heading 'Comparison Files', coloured green
-Adding file output.hello under heading 'Comparison Files', coloured red
+Test column header set to 'Tests: 2/4 selected, none hidden'
+
+Updated : File Tree with columns: Sample from 2 tests , Details
+-> Comparison Files
+->   errors.hello (green) | (green)
+->   output.hello (red) | (red)
 
 ========== Text Info ==========
 Test FAILED :
@@ -455,9 +464,6 @@ Test FAILED :
 ---
 > Hello World!
 ===============================
-
-Test column header set to 'Tests: 2/4 selected, none hidden'
-Setting file-view title to 'Sample from 2 tests'
 
 'version control log for the selected files' event created with arguments ''
 
@@ -475,11 +481,11 @@ CVS command used: cvs log -N
 Subdirectories were ignored, use CVS Log Recursive to get the logs for all subdirectories.'
 
 Showing VCS log info tree with columns: File , Last revision committed (UTC)
--> <span weight='bold'>TargetApp</span> | 
-->   <span weight='bold'>Test1</span> | 
+-> <span weight='bold'>TargetApp</span>
+->   <span weight='bold'>Test1</span>
 ->     errors.hello | <span weight='bold'>2 days ago</span>
 ->     output.hello | Thu Feb 19 20:26:26 2009
-->   <span weight='bold'>Test2</span> | 
+->   <span weight='bold'>Test2</span>
 ->     errors.hello | Thu Feb 19 20:26:26 2009
 ->     output.hello | 4 days ago
 
@@ -535,8 +541,8 @@ CVS command used: cvs log -N
 Subdirectories were ignored, use CVS Log Recursive to get the logs for all subdirectories.'
 
 Showing VCS log info tree with columns: File , Last revision committed (UTC)
--> <span weight='bold'>TargetApp</span> | 
-->   <span weight='bold'>Test2</span> | 
+-> <span weight='bold'>TargetApp</span>
+->   <span weight='bold'>Test2</span>
 ->     output.hello | 4 days ago
 
 ------------------------------ (vertical VCS dialog separator, 47% from the left edge)

@@ -4,9 +4,9 @@ Enabling entry completion, using matching 1
 Adding entry completion '<default>' ...
 Adding entry completion 'localhost' ...
 Adding entry completion '1' ...
-Adding entry completion '/home/geoff/.texttest/tmp/texttest.15Jun214640.9194/texttest/TestSelf/TestSelection/GUI/Creation/FilterFromCriteria/log/logging.debug' ...
-Adding entry completion '/home/geoff/code/texttest/log/logging.debug' ...
-Adding entry completion '/home/geoff/.texttest/tmp/texttest.15Jun214640.9194/texttest/TestSelf/TestSelection/GUI/Creation/FilterFromCriteria/log' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.16Jun135329.31463/texttest/TestSelf/TestSelection/GUI/Creation/FilterFromCriteria/log/logging.debug' ...
+Adding entry completion '/users/geoff/work/master/Testing/TextTest/log/logging.debug' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.16Jun135329.31463/texttest/TestSelf/TestSelection/GUI/Creation/FilterFromCriteria/log' ...
 Top Window title is TextTest static GUI : management of tests for HELLO
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
@@ -194,11 +194,11 @@ Button '_Select', stock image 'gtk-find' (tooltip 'Select indicated tests')
 Radio button 'Discard' (checked) (tooltip 'Show all tests which match the criteria, and hide all those that do not.') , Radio button 'Refine' (tooltip 'Hide all tests which do not match the criteria. Do not show any tests that aren't already shown.') , Radio button 'Extend' (tooltip 'Show all tests which match the criteria. Do not hide any tests that are currently shown.')
 Button 'Filter', stock image 'gtk-find' (tooltip 'filter tests to show only those indicated')
 
-Changing GUI status to: 'TextTest started at 15Jun21:47:10.'
+Changing GUI status to: 'TextTest started at 16Jun13:53:43.'
 
 Changing GUI status to: 'Reading tests ...'
 
-Changing GUI status to: 'Reading tests completed at 15Jun21:47:10.'
+Changing GUI status to: 'Reading tests completed at 16Jun13:53:43.'
 
 Test Tree description...
 -> TargetApp (hello)
@@ -211,9 +211,12 @@ Test Tree description...
 ->       One
 
 Test column header set to 'Tests: 0/4 selected'
+Edited 'Test-file to search' Text entry (set to 'output')
+
 Expected application event 'all tests to be read' occurred, proceeding.
 
 'enter test names containing =' event created with arguments 'e'
+Edited 'Test names containing' Text entry (set to 'e')
 
 'filter tests to show only those indicated' event created with arguments ''
 
@@ -226,6 +229,7 @@ Test column header set to 'Tests: 0/4 selected, 1 hidden'
 Changing GUI status to: 'Changed filtering by showing 3 tests and hiding 1.'
 
 'enter test names containing =' event created with arguments 'T'
+Edited 'Test names containing' Text entry (set to 'T')
 
 'filter tests to show only those indicated' event created with arguments ''
 
@@ -244,8 +248,11 @@ Test column header set to 'Tests: 0/4 selected, 2 hidden'
 Changing GUI status to: 'Changed filtering by showing 2 tests and hiding 2.'
 
 'enter test names containing =' event created with arguments 'e'
+Edited 'Test names containing' Text entry (set to 'e')
 
 'choose refine for current filtering' event created with arguments ''
+Toggled Radio button 'Discard' (tooltip 'Show all tests which match the criteria, and hide all those that do not.')
+Toggled Radio button 'Refine' (checked) (tooltip 'Hide all tests which do not match the criteria. Do not show any tests that aren't already shown.')
 
 'filter tests to show only those indicated' event created with arguments ''
 
@@ -258,8 +265,11 @@ Test column header set to 'Tests: 0/4 selected, 3 hidden'
 Changing GUI status to: 'Changed filtering by showing 0 tests and hiding 1.'
 
 'enter test names containing =' event created with arguments 'w'
+Edited 'Test names containing' Text entry (set to 'w')
 
 'choose extend for current filtering' event created with arguments ''
+Toggled Radio button 'Refine' (tooltip 'Hide all tests which do not match the criteria. Do not show any tests that aren't already shown.')
+Toggled Radio button 'Extend' (checked) (tooltip 'Show all tests which match the criteria. Do not hide any tests that are currently shown.')
 
 'filter tests to show only those indicated' event created with arguments ''
 
@@ -272,8 +282,11 @@ Test column header set to 'Tests: 0/4 selected, 2 hidden'
 Changing GUI status to: 'Changed filtering by showing 1 tests and hiding 0.'
 
 'enter test names containing =' event created with arguments ''
+Edited 'Test names containing' Text entry
 
 'choose discard for current filtering' event created with arguments ''
+Toggled Radio button 'Extend' (tooltip 'Show all tests which match the criteria. Do not hide any tests that are currently shown.')
+Toggled Radio button 'Discard' (checked) (tooltip 'Show all tests which match the criteria, and hide all those that do not.')
 
 'filter tests to show only those indicated' event created with arguments ''
 

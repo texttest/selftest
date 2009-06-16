@@ -1,7 +1,7 @@
 
 Waiting for application event 'completion of test actions' to occur.
 Enabling entry completion, using matching 1
-Top Window title is TextTest dynamic GUI : testing PERF (started at 15Jun14:19:35)
+Top Window title is TextTest dynamic GUI : testing PERF (started at 16Jun13:53:49)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -116,11 +116,13 @@ Test column header set to 'Tests: All 0 selected'
 
 Pane separator positioned 50% from the left edge
 
-Tabs showing : Status, Run Info
+
+Showing Notebook with tabs: Status , Run Info
+Viewing page 'Status'
 
 Showing Test Status View with columns: Status , Number , Visible
 
-Changing GUI status to: 'TextTest started at 15Jun14:19:35.'
+Changing GUI status to: 'TextTest started at 16Jun13:53:49.'
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 1 (white,bold) | Check box (checked)
@@ -179,7 +181,7 @@ Updated : Test Status View with columns: Status , Number , Visible
 ->   Unrunnable (red,bold) | 1 (red,bold) | Check box (checked)
 ->     no results (red,bold) | 1 (red,bold) | Check box (checked)
 
-Progress bar set to fraction 1.0, text 'All 4 tests completed at 15Jun14:19:36'
+Progress bar set to fraction 1.0, text 'All 4 tests completed at 16Jun13:53:50'
 
 Redrawing test FailuresZeroTime coloured red
 (Second column 'no results' coloured red)
@@ -192,6 +194,7 @@ Updated : Test Status View with columns: Status , Number , Visible
 ->     Faster (red,bold) | 1 (red,bold) | Check box (checked)
 ->   Unrunnable (red,bold) | 2 (red,bold) | Check box (checked)
 ->     no results (red,bold) | 2 (red,bold) | Check box (checked)
+
 Expected application event 'completion of test actions' occurred, proceeding.
 
 'set test selection to' event created with arguments 'Failures'
@@ -203,14 +206,18 @@ Setting sensitivity of action 'S_ave Selection...' to True
 Setting sensitivity of action '_Mark' to True
 Setting sensitivity of action 'Recompute Status' to True
 
-Setting file-view title to 'Failures'
-Adding file errors.perf under heading 'Comparison Files', coloured green
-Adding file output.perf under heading 'Comparison Files', coloured green
-Adding file performance.perf under heading 'Comparison Files', coloured red
-(Second column '96% faster' coloured red)
+Current page changed in Notebook with tabs: Test , Status , Run Info
+Viewing page 'Test'
+...........
 
-Pane separator positioned 46% from the top
+Showing File Tree with columns: Failures , Details
+-> Comparison Files
+->   errors.perf (green) | (green)
+->   output.perf (green) | (green)
+->   performance.perf (red) | 96% faster (red)
 
+------------------------------ (horizontal pane separator, 46% from the top)
+...........
 
 ========== Text Info ==========
 Test ran faster :
@@ -222,8 +229,6 @@ Test ran faster :
 > CPU time   :       5.1 sec. on frankfort
 > Real time  :       7.4 sec.
 ===============================
-
-Tabs showing : Test, Status, Run Info
 
 'save results with non-default settings' event created with arguments ''
 ---------- Dialog 'Saving 1 tests' ----------
@@ -242,8 +247,11 @@ Button 'gtk-cancel', stock image 'gtk-cancel'
 ---------------------------------------------
 
 'enter version to save =' event created with arguments '2'
+Edited 'Version to save' Text entry (set to '2')
 
 'choose average performance for save' event created with arguments ''
+Toggled Radio button 'Exact performance'
+Toggled Radio button 'Average performance' (checked)
 
 'press ok' event created with arguments ''
 
@@ -253,20 +261,21 @@ Saving PERF test-case Failures - version 2, exactness 0
 Changing GUI status to: 'Saving PERF test-case Failures : performance(faster), version 2'
 
 Redrawing test Failures coloured green
-
-Setting file-view title to 'Failures'
-Adding file errors.perf under heading 'Comparison Files', coloured green
-Adding file output.perf under heading 'Comparison Files', coloured green
-Adding file performance.perf.2 under heading 'Comparison Files', coloured green
-
-========== Text Info ==========
-Test succeeded
-===============================
 Setting sensitivity of action '_Save' to False
 Setting sensitivity of action 'Save _As...' to False
 
 Changing GUI status to: 'Saved 1 tests.'
 Adding entry completion '2' ...
+
+Updated : File Tree with columns: Failures , Details
+-> Comparison Files
+->   errors.perf (green) | (green)
+->   output.perf (green) | (green)
+->   performance.perf.2 (green) | (green)
+
+========== Text Info ==========
+Test succeeded
+===============================
 
 'quit' event created with arguments ''
 

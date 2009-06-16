@@ -4,9 +4,9 @@ Enabling entry completion, using matching 1
 Adding entry completion '<default>' ...
 Adding entry completion 'localhost' ...
 Adding entry completion '1' ...
-Adding entry completion '/home/geoff/.texttest/tmp/texttest.15Jun223421.11861/texttest/TestSelf/ReconnectTests/GUI/RecomputeFileFilters/log/logging.debug' ...
-Adding entry completion '/home/geoff/code/texttest/log/logging.debug' ...
-Adding entry completion '/home/geoff/.texttest/tmp/texttest.15Jun223421.11861/texttest/TestSelf/ReconnectTests/GUI/RecomputeFileFilters/log' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.16Jun135329.31463/texttest/TestSelf/ReconnectTests/GUI/RecomputeFileFilters/log/logging.debug' ...
+Adding entry completion '/users/geoff/work/master/Testing/TextTest/log/logging.debug' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.16Jun135329.31463/texttest/TestSelf/ReconnectTests/GUI/RecomputeFileFilters/log' ...
 Top Window title is TextTest static GUI : management of tests for HELLO
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
@@ -194,17 +194,19 @@ Button '_Select', stock image 'gtk-find' (tooltip 'Select indicated tests')
 Radio button 'Discard' (checked) (tooltip 'Show all tests which match the criteria, and hide all those that do not.') , Radio button 'Refine' (tooltip 'Hide all tests which do not match the criteria. Do not show any tests that aren't already shown.') , Radio button 'Extend' (tooltip 'Show all tests which match the criteria. Do not hide any tests that are currently shown.')
 Button 'Filter', stock image 'gtk-find' (tooltip 'filter tests to show only those indicated')
 
-Changing GUI status to: 'TextTest started at 15Jun22:38:12.'
+Changing GUI status to: 'TextTest started at 16Jun13:53:47.'
 
 Changing GUI status to: 'Reading tests ...'
 
-Changing GUI status to: 'Reading tests completed at 15Jun22:38:12.'
+Changing GUI status to: 'Reading tests completed at 16Jun13:53:47.'
 
 Test Tree description...
 -> TargetApp (hello)
 ->   Test
 
 Test column header set to 'Tests: 0/1 selected'
+Edited 'Test-file to search' Text entry (set to 'output')
+
 Expected application event 'all tests to be read' occurred, proceeding.
 
 'set test selection to' event created with arguments 'Test'
@@ -246,7 +248,7 @@ Default action is labelled 'gtk-ok'
 'Version to reconnect to:'
 Text entry
 .....Temporary result directory:......
-Filechooser (choosing from directories ['/home/geoff/.texttest/tmp/texttest.15Jun223421.11861/texttest/TestSelf/ReconnectTests/GUI/RecomputeFileFilters/texttesttmp'])
+Filechooser (choosing from directories ['/carm/proj/texttest-tmp/geoff/texttest.16Jun135329.31463/texttest/TestSelf/ReconnectTests/GUI/RecomputeFileFilters/texttesttmp'])
 .....Recomputation......
 Radio button 'Display results exactly as they were in the original run' (checked)
 Radio button 'Use raw data from the original run, but recompute run-dependent text, known bug information etc.'
@@ -256,21 +258,24 @@ Button 'gtk-cancel', stock image 'gtk-cancel'
 ----------------------------------------------------------------
 
 'choose use raw data from the original run, but recompute run-dependent text, known bug information etc. for recomputation' event created with arguments ''
+Toggled Radio button 'Display results exactly as they were in the original run'
+Toggled Radio button 'Use raw data from the original run, but recompute run-dependent text, known bug information etc.' (checked)
 
 'press reconnect' event created with arguments ''
-Starting reconnect run of TextTest with arguments ['-g', '-a', 'hello', '-reconnect', '/home/geoff/.texttest/tmp/texttest.15Jun223421.11861/texttest/TestSelf/ReconnectTests/GUI/RecomputeFileFilters/texttesttmp', '-reconnfull', '-count', '1', '-f', '/home/geoff/.texttest/tmp/texttest.15Jun223421.11861/texttest/TestSelf/ReconnectTests/GUI/RecomputeFileFilters/texttesttmp/static_gui.15Jun223811.13257/dynamic_run1/gui_select', '-fd', '/home/geoff/.texttest/tmp/texttest.15Jun223421.11861/texttest/TestSelf/ReconnectTests/GUI/RecomputeFileFilters/texttesttmp/static_gui.15Jun223811.13257/temporary_filter_files']
+Starting reconnect run of TextTest with arguments ['-g', '-a', 'hello', '-reconnect', '/carm/proj/texttest-tmp/geoff/texttest.16Jun135329.31463/texttest/TestSelf/ReconnectTests/GUI/RecomputeFileFilters/texttesttmp', '-reconnfull', '-count', '1', '-f', '/carm/proj/texttest-tmp/geoff/texttest.16Jun135329.31463/texttest/TestSelf/ReconnectTests/GUI/RecomputeFileFilters/texttesttmp/static_gui.16Jun135347.23107/dynamic_run1/gui_select', '-fd', '/carm/proj/texttest-tmp/geoff/texttest.16Jun135329.31463/texttest/TestSelf/ReconnectTests/GUI/RecomputeFileFilters/texttesttmp/static_gui.16Jun135347.23107/temporary_filter_files']
 
-Changing GUI status to: 'Reconnected to HELLO test-case Test at 15Jun22:38:12.'
+Changing GUI status to: 'Reconnected to HELLO test-case Test at 16Jun13:53:48.'
 Adding entry completion 'output' ...
 
 Waiting for application event 'reconnect GUI to be closed' to occur.
-Expected application event 'reconnect GUI to be closed' occurred, proceeding.
 
 Updated : File Tree with columns: Test
 -> Standard Files (white)
 ->   errors.hello (grey90)
 ->   output.hello (grey90)
 -> Definition Files (white)
+
+Expected application event 'reconnect GUI to be closed' occurred, proceeding.
 
 'quit' event created with arguments ''
 

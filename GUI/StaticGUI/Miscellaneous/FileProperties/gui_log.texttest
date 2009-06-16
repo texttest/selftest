@@ -5,9 +5,9 @@ Adding entry completion '<default>' ...
 Adding entry completion 'extra' ...
 Adding entry completion 'localhost' ...
 Adding entry completion '1' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.12Jun162925.29676/texttest/GUI/StaticGUI/Miscellaneous/FileProperties/log/logging.debug' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.16Jun135329.31463/texttest/GUI/StaticGUI/Miscellaneous/FileProperties/log/logging.debug' ...
 Adding entry completion '/users/geoff/work/master/Testing/TextTest/log/logging.debug' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.12Jun162925.29676/texttest/GUI/StaticGUI/Miscellaneous/FileProperties/log' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.16Jun135329.31463/texttest/GUI/StaticGUI/Miscellaneous/FileProperties/log' ...
 Top Window title is TextTest static GUI : management of tests for DIP
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
@@ -174,9 +174,9 @@ Test column header set to 'Tests: All 0 selected'
 
 Pane separator positioned 50% from the left edge
 
-Tabs showing : Selection, Config
 
-Viewing notebook page for 'Selection'
+Showing Notebook with tabs: Selection , Config
+Viewing page 'Selection'
 Viewing table with 9 rows and 2 columns.
 'Tests for version  ' (tooltip 'Select tests for a specific version.') | Text entry (drop-down list containing ['', '<default>', 'extra'])
 'Test names containing  ' (tooltip 'Select tests for which the name matches the entered text. The text can be a regular expression.') | Text entry
@@ -195,11 +195,11 @@ Button '_Select', stock image 'gtk-find' (tooltip 'Select indicated tests')
 Radio button 'Discard' (checked) (tooltip 'Show all tests which match the criteria, and hide all those that do not.') , Radio button 'Refine' (tooltip 'Hide all tests which do not match the criteria. Do not show any tests that aren't already shown.') , Radio button 'Extend' (tooltip 'Show all tests which match the criteria. Do not hide any tests that are currently shown.')
 Button 'Filter', stock image 'gtk-find' (tooltip 'filter tests to show only those indicated')
 
-Changing GUI status to: 'TextTest started at 12Jun16:31:48.'
+Changing GUI status to: 'TextTest started at 16Jun13:54:05.'
 
 Changing GUI status to: 'Reading tests ...'
 
-Changing GUI status to: 'Reading tests completed at 12Jun16:31:48.'
+Changing GUI status to: 'Reading tests completed at 16Jun13:54:06.'
 
 Test Tree description...
 -> TargetApp (dip)
@@ -219,25 +219,8 @@ Test Tree description...
 ->       S01
 
 Test column header set to 'Tests: 0/22 selected, 0/11 distinct'
+Edited 'Test-file to search' Text entry (set to 'output')
 
-Viewing notebook page for 'Selection'
-Viewing table with 9 rows and 2 columns.
-'Tests for version  ' (tooltip 'Select tests for a specific version.') | Text entry (drop-down list containing ['', '<default>', 'extra'])
-'Test names containing  ' (tooltip 'Select tests for which the name matches the entered text. The text can be a regular expression.') | Text entry
-'Suite names containing  ' (tooltip 'Select tests for which at least one parent suite name matches the entered text. The text can be a regular expression.') | Text entry
-'App names containing  ' (tooltip 'Select tests for which the application name matches the entered text. The text can be a regular expression.') | Text entry
-'Tests listed in file  ' | Text entry , Button '...'
-'Descriptions containing  ' (tooltip 'Select tests for which the description (comment) matches the entered text. The text can be a regular expression.') | Text entry
-'Test-files containing  ' | Text entry
-'Test-file to search  ' | Text entry (set to 'output') (drop-down list containing ['output'])
-'Execution time  ' (tooltip 'Specify execution time limits, either as '<min>,<max>', or as a list of comma-separated expressions, such as >=0:45,<=1:00. Digit-only numbers are interpreted as minutes, while colon-separated numbers are interpreted as hours:minutes:seconds.') | Text entry
-.....Selection......
-Check button 'Select in collapsed suites' (tooltip 'Select in currently collapsed suites as well?')
-Radio button 'Discard' (checked) (tooltip 'Unselect all currently selected tests before applying the new selection criteria.') , Radio button 'Refine' (tooltip 'Apply the new selection criteria only to the currently selected tests, to obtain a subselection.') , Radio button 'Extend' (tooltip 'Keep the currently selected tests even if they do not match the new criteria, and extend the selection with all other tests which meet the new criteria.') , Radio button 'Exclude' (tooltip 'After applying the new selection criteria to all tests, unselect the currently selected tests, to exclude them from the new selection.')
-Button '_Select', stock image 'gtk-find' (tooltip 'Select indicated tests')
-.....Filtering......
-Radio button 'Discard' (checked) (tooltip 'Show all tests which match the criteria, and hide all those that do not.') , Radio button 'Refine' (tooltip 'Hide all tests which do not match the criteria. Do not show any tests that aren't already shown.') , Radio button 'Extend' (tooltip 'Show all tests which match the criteria. Do not hide any tests that are currently shown.')
-Button 'Filter', stock image 'gtk-find' (tooltip 'filter tests to show only those indicated')
 Expected application event 'all tests to be read' occurred, proceeding.
 
 'set test selection to' event created with arguments 'S01.99'
@@ -257,18 +240,22 @@ Setting sensitivity of action 'S_ave Selection...' to True
 Setting sensitivity of action '_Run' to True
 Setting sensitivity of action '_Run' to True
 
-Setting file-view title to 'S01.99'
-Adding file output.dip under heading 'Standard Files', coloured grey90
+Current page changed in Notebook with tabs: Test , Selection , Running , Config
+Viewing page 'Test'
+...........
 
-Pane separator positioned 46% from the top
+Showing File Tree with columns: S01.99
+-> Standard Files (white)
+->   output.dip (grey90)
+-> Definition Files (white)
 
+------------------------------ (horizontal pane separator, 46% from the top)
+...........
 
 ========== Text Info ==========
 Description:
 S01.99's comment
 ===============================
-
-Tabs showing : Test, Selection, Running, Config
 
 'set file selection to' event created with arguments 'output.dip'
 Setting sensitivity of action 'View File' to True
@@ -279,9 +266,9 @@ Setting sensitivity of action 'Create/_Import' to True
 Adding entry completion 'output' ...
 ---------- Dialog 'Show properties of selected files' ----------
 Default action is labelled 'gtk-close'
-Expander '/carm/proj/texttest-tmp/geoff/texttest.12Jun162925.29676/texttest/GUI/StaticGUI/Miscellaneous/FileProperties/TargetApp/Game9952/S01.99':
+Expander '/carm/proj/texttest-tmp/geoff/texttest.16Jun135329.31463/texttest/GUI/StaticGUI/Miscellaneous/FileProperties/TargetApp/Game9952/S01.99':
 -> Viewing table with 1 rows and 7 columns.
-'-rw-rw-r--' | '1' | '?' | '?' | '13' | 'Jun 11 16:31' | 'output.dip'
+'-rw-rw-r--' | '1' | '?' | '?' | '13' | 'Jun 15 13:54' | 'output.dip'
 ---------------
 Button 'gtk-close', stock image 'gtk-close'
 ----------------------------------------------------------------
@@ -294,16 +281,18 @@ Changing GUI status to: 'Performed 'Show properties of selected files' on 1 file
 Setting sensitivity of action 'View File' to False
 Setting sensitivity of action '_File Properties' to False
 Setting sensitivity of action 'Create/_Import' to False
+Setting sensitivity of action 'Move to first' to True
+Setting sensitivity of action 'Move up' to True
 
-Setting file-view title to 'A01'
-Adding file output.dip under heading 'Standard Files', coloured grey90
+Updated : File Tree with columns: A01
+-> Standard Files (white)
+->   output.dip (grey90)
+-> Definition Files (white)
 
 ========== Text Info ==========
 Description:
 <No description provided>
 ===============================
-Setting sensitivity of action 'Move to first' to True
-Setting sensitivity of action 'Move up' to True
 
 'set file selection to' event created with arguments 'output.dip'
 Setting sensitivity of action 'View File' to True
@@ -313,9 +302,9 @@ Setting sensitivity of action 'Create/_Import' to True
 'show properties of selected files' event created with arguments ''
 ---------- Dialog 'Show properties of selected files' ----------
 Default action is labelled 'gtk-close'
-Expander '/carm/proj/texttest-tmp/geoff/texttest.12Jun162925.29676/texttest/GUI/StaticGUI/Miscellaneous/FileProperties/TargetApp/Game9952/A01':
+Expander '/carm/proj/texttest-tmp/geoff/texttest.16Jun135329.31463/texttest/GUI/StaticGUI/Miscellaneous/FileProperties/TargetApp/Game9952/A01':
 -> Viewing table with 1 rows and 7 columns.
-'-rw-rw-r--' | '1' | '?' | '?' | '13' | 'Jun 11 16:31' | 'output.dip'
+'-rw-rw-r--' | '1' | '?' | '?' | '13' | 'Jun 15 13:54' | 'output.dip'
 ---------------
 Button 'gtk-close', stock image 'gtk-close'
 ----------------------------------------------------------------
@@ -330,22 +319,23 @@ Test column header set to 'Tests: 0/22 selected, 0/11 distinct'
 Setting sensitivity of action 'View File' to False
 Setting sensitivity of action '_File Properties' to False
 Setting sensitivity of action 'Create/_Import' to False
-
-Setting file-view title to 'Game9952'
-Adding file environment under heading 'Definition Files', coloured grey90
-Adding file testsuite.dip under heading 'Definition Files', coloured grey90
-Adding file testsuite.dip.small under heading 'Definition Files', coloured grey90
-
-========== Text Info ==========
-Description:
-<No description provided>
-===============================
 Setting sensitivity of action 'Add Test' to True
 Setting sensitivity of action 'Add Suite' to True
 Setting sensitivity of action '_Sort Test Suite File' to True
 Setting sensitivity of action '_Reversed Sort Test Suite File' to True
 Setting sensitivity of action 'Move to first' to False
 Setting sensitivity of action 'Move up' to False
+
+Updated : File Tree with columns: Game9952
+-> Definition Files (white)
+->   environment (grey90)
+->   testsuite.dip (grey90)
+->   testsuite.dip.small (grey90)
+
+========== Text Info ==========
+Description:
+<No description provided>
+===============================
 
 'set file selection to' event created with arguments 'testsuite.dip'
 Setting sensitivity of action 'View File' to True
@@ -355,9 +345,9 @@ Setting sensitivity of action 'Create/_Import' to True
 'show properties of selected files' event created with arguments ''
 ---------- Dialog 'Show properties of selected files' ----------
 Default action is labelled 'gtk-close'
-Expander '/carm/proj/texttest-tmp/geoff/texttest.12Jun162925.29676/texttest/GUI/StaticGUI/Miscellaneous/FileProperties/TargetApp/Game9952':
+Expander '/carm/proj/texttest-tmp/geoff/texttest.16Jun135329.31463/texttest/GUI/StaticGUI/Miscellaneous/FileProperties/TargetApp/Game9952':
 -> Viewing table with 1 rows and 7 columns.
-'-rw-rw-r--' | '1' | '?' | '?' | '204' | 'Jun 11 16:31' | 'testsuite.dip'
+'-rw-rw-r--' | '1' | '?' | '?' | '204' | 'Jun 15 13:54' | 'testsuite.dip'
 ---------------
 Button 'gtk-close', stock image 'gtk-close'
 ----------------------------------------------------------------
@@ -372,10 +362,10 @@ Setting sensitivity of action 'Create/_Import' to False
 'show properties of selected files' event created with arguments ''
 ---------- Dialog 'Show properties of selected files' ----------
 Default action is labelled 'gtk-close'
-Expander '/carm/proj/texttest-tmp/geoff/texttest.12Jun162925.29676/texttest/GUI/StaticGUI/Miscellaneous/FileProperties/TargetApp/Game9952':
+Expander '/carm/proj/texttest-tmp/geoff/texttest.16Jun135329.31463/texttest/GUI/StaticGUI/Miscellaneous/FileProperties/TargetApp/Game9952':
 -> Viewing table with 2 rows and 7 columns.
-'-rw-rw-r--' | '1' | '?' | '?' | '204' | 'Jun 11 16:31' | 'testsuite.dip'
-'-rw-rw-r--' | '1' | '?' | '?' | '19' | 'Jun 11 16:31' | 'testsuite.dip.small'
+'-rw-rw-r--' | '1' | '?' | '?' | '204' | 'Jun 15 13:54' | 'testsuite.dip'
+'-rw-rw-r--' | '1' | '?' | '?' | '19' | 'Jun 15 13:54' | 'testsuite.dip.small'
 ---------------
 Button 'gtk-close', stock image 'gtk-close'
 ----------------------------------------------------------------
@@ -391,14 +381,6 @@ Setting sensitivity of action 'Create/_Import' to True
 Setting sensitivity of action 'View File' to False
 Setting sensitivity of action '_File Properties' to False
 Setting sensitivity of action 'Create/_Import' to False
-
-Setting file-view title to 'S01.99'
-Adding file output.dip under heading 'Standard Files', coloured grey90
-
-========== Text Info ==========
-Description:
-S01.99's comment
-===============================
 Setting sensitivity of action 'Add Test' to False
 Setting sensitivity of action 'Add Suite' to False
 Setting sensitivity of action '_Sort Test Suite File' to False
@@ -410,7 +392,8 @@ Setting sensitivity of action '_Rename...' to False
 Setting sensitivity of action 'Move down' to False
 Setting sensitivity of action 'Move to last' to False
 
-Viewing notebook page for 'Selection'
+Current page changed in Notebook with tabs: Selection , Running , Config
+Viewing page 'Selection'
 Viewing table with 9 rows and 2 columns.
 'Tests for version  ' (tooltip 'Select tests for a specific version.') | Text entry (drop-down list containing ['', '<default>', 'extra'])
 'Test names containing  ' (tooltip 'Select tests for which the name matches the entered text. The text can be a regular expression.') | Text entry
@@ -429,21 +412,22 @@ Button '_Select', stock image 'gtk-find' (tooltip 'Select indicated tests')
 Radio button 'Discard' (checked) (tooltip 'Show all tests which match the criteria, and hide all those that do not.') , Radio button 'Refine' (tooltip 'Hide all tests which do not match the criteria. Do not show any tests that aren't already shown.') , Radio button 'Extend' (tooltip 'Show all tests which match the criteria. Do not hide any tests that are currently shown.')
 Button 'Filter', stock image 'gtk-find' (tooltip 'filter tests to show only those indicated')
 
-Tabs showing : Selection, Running, Config
-
 'run selected tests' event created with arguments ''
-Starting dynamic run of TextTest with arguments ['-g', '-a', 'dip', '-m', 'localhost', '-cp', '1', '-xr', '/carm/proj/texttest-tmp/geoff/texttest.12Jun162925.29676/texttest/GUI/StaticGUI/Miscellaneous/FileProperties/log/logging.debug', '-xw', '/carm/proj/texttest-tmp/geoff/texttest.12Jun162925.29676/texttest/GUI/StaticGUI/Miscellaneous/FileProperties/log', '-count', '4', '-f', '/carm/proj/texttest-tmp/geoff/texttest.12Jun162925.29676/texttest/GUI/StaticGUI/Miscellaneous/FileProperties/texttesttmp/static_gui.12Jun163145.4182/dynamic_run1/gui_select', '-fd', '/carm/proj/texttest-tmp/geoff/texttest.12Jun162925.29676/texttest/GUI/StaticGUI/Miscellaneous/FileProperties/texttesttmp/static_gui.12Jun163145.4182/temporary_filter_files']
+Starting dynamic run of TextTest with arguments ['-g', '-a', 'dip', '-m', 'localhost', '-cp', '1', '-xr', '/carm/proj/texttest-tmp/geoff/texttest.16Jun135329.31463/texttest/GUI/StaticGUI/Miscellaneous/FileProperties/log/logging.debug', '-xw', '/carm/proj/texttest-tmp/geoff/texttest.16Jun135329.31463/texttest/GUI/StaticGUI/Miscellaneous/FileProperties/log', '-count', '4', '-f', '/carm/proj/texttest-tmp/geoff/texttest.16Jun135329.31463/texttest/GUI/StaticGUI/Miscellaneous/FileProperties/texttesttmp/static_gui.16Jun135405.16742/dynamic_run1/gui_select', '-fd', '/carm/proj/texttest-tmp/geoff/texttest.16Jun135329.31463/texttest/GUI/StaticGUI/Miscellaneous/FileProperties/texttesttmp/static_gui.16Jun135405.16742/temporary_filter_files']
 
-Changing GUI status to: 'Started 4 tests at 12Jun16:31:50.'
+Changing GUI status to: 'Started 4 tests at 16Jun13:54:07.'
 
 Waiting for application event 'dynamic GUI to be closed' to occur.
+
 Expected application event 'dynamic GUI to be closed' occurred, proceeding.
 
 'view options for' event created with arguments 'Running'
 
-Tabs showing : Basic, Advanced
+Current page changed in Notebook with tabs: Selection , Running , Config
+Viewing page 'Running'
 
-Viewing notebook page for 'Basic'
+Showing Notebook with tabs: Basic , Advanced
+Viewing page 'Basic'
 Viewing table with 4 rows and 2 columns.
 'Run this version  ' | Text entry
 'Use checkout  ' | Text entry
@@ -453,10 +437,11 @@ Button '_Run', stock image 'gtk-execute' (tooltip 'Run selected tests')
 
 'view sub-options for running :' event created with arguments 'Advanced'
 
-Viewing notebook page for 'Advanced'
+Current page changed in Notebook with tabs: Basic , Advanced
+Viewing page 'Advanced'
 Viewing table with 3 rows and 2 columns.
-'Configure self-diagnostics from  ' | Text entry (set to '/carm/proj/texttest-tmp/geoff/texttest.12Jun162925.29676/texttest/GUI/StaticGUI/Miscellaneous/FileProperties/log/logging.debug') (drop-down list containing ['/carm/proj/texttest-tmp/geoff/texttest.12Jun162925.29676/texttest/GUI/StaticGUI/Miscellaneous/FileProperties/log/logging.debug', '/users/geoff/work/master/Testing/TextTest/log/logging.debug'])
-'Write self-diagnostics to  ' | Text entry (set to '/carm/proj/texttest-tmp/geoff/texttest.12Jun162925.29676/texttest/GUI/StaticGUI/Miscellaneous/FileProperties/log')
+'Configure self-diagnostics from  ' | Text entry (set to '/carm/proj/texttest-tmp/geoff/texttest.16Jun135329.31463/texttest/GUI/StaticGUI/Miscellaneous/FileProperties/log/logging.debug') (drop-down list containing ['/carm/proj/texttest-tmp/geoff/texttest.16Jun135329.31463/texttest/GUI/StaticGUI/Miscellaneous/FileProperties/log/logging.debug', '/users/geoff/work/master/Testing/TextTest/log/logging.debug'])
+'Write self-diagnostics to  ' | Text entry (set to '/carm/proj/texttest-tmp/geoff/texttest.16Jun135329.31463/texttest/GUI/StaticGUI/Miscellaneous/FileProperties/log')
 'Run batch mode session  ' | Text entry
 Check button 'Enable self-diagnostics'
 Check button '(Re-)record command-line or client-server traffic'

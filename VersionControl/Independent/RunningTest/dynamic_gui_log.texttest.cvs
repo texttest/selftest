@@ -2,7 +2,7 @@
 Waiting for application event 'all tests to be read' to occur.
 Waiting for application event 'test Test1 to start' to occur.
 Enabling entry completion, using matching 1
-Top Window title is TextTest dynamic GUI : testing HELLO (started at 15Jun17:36:57)
+Top Window title is TextTest dynamic GUI : testing HELLO (started at 16Jun13:54:08)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -182,11 +182,13 @@ Test column header set to 'Tests: All 0 selected'
 
 Pane separator positioned 50% from the left edge
 
-Tabs showing : Status, Run Info
+
+Showing Notebook with tabs: Status , Run Info
+Viewing page 'Status'
 
 Showing Test Status View with columns: Status , Number , Visible
 
-Changing GUI status to: 'TextTest started at 15Jun17:36:58.'
+Changing GUI status to: 'TextTest started at 16Jun13:54:08.'
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 1 (white,bold) | Check box (checked)
@@ -200,12 +202,13 @@ Test Tree description...
 Test column header set to 'Tests: 0/1 selected, none hidden'
 
 Redrawing test Test1 coloured yellow
-Expected application event 'all tests to be read' occurred, proceeding.
-Expected application event 'test Test1 to start' occurred, proceeding.
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white) | 0 (white) | Check box (checked)
 -> Running (yellow,bold) | 1 (yellow,bold) | Check box (checked)
+
+Expected application event 'all tests to be read' occurred, proceeding.
+Expected application event 'test Test1 to start' occurred, proceeding.
 
 'set test selection to' event created with arguments 'Test1'
 
@@ -225,20 +228,23 @@ Setting sensitivity of action 'A_dd' to True
 Setting sensitivity of action 'Add Recursive' to True
 Setting sensitivity of action 'Log Latest' to True
 
-Setting file-view title to 'Test1'
-Adding file errors.hello under heading 'Temporary Files', coloured yellow
-Adding file output.hello under heading 'Temporary Files', coloured yellow
+Current page changed in Notebook with tabs: Test , Status , Run Info
+Viewing page 'Test'
+...........
 
-Pane separator positioned 46% from the top
+Showing File Tree with columns: Test1 , Details
+-> Temporary Files
+->   errors.hello (yellow) | (yellow)
+->   output.hello (yellow) | (yellow)
 
+------------------------------ (horizontal pane separator, 46% from the top)
+...........
 
 ========== Text Info ==========
-Running on aiyura
+Running on novyy
 
 To obtain the latest progress information and an up-to-date comparison of the files above, perform 'recompute status' (press 'F5')
 ===============================
-
-Tabs showing : Test, Status, Run Info
 
 'version control log for the selected files' event created with arguments ''
 ---------- Dialog 'TextTest Error' ----------
@@ -261,18 +267,19 @@ Changing GUI status to: 'Recomputing status of HELLO test-case Test1 ...'
 
 Redrawing test Test1 coloured yellow
 
-Setting file-view title to 'Test1'
-Adding file errors.hello under heading 'Comparison Files', coloured yellow
-Adding file output.hello under heading 'Comparison Files', coloured yellow
+Changing GUI status to: 'Recomputed status of 1 test.'
+
+Updated : File Tree with columns: Test1 , Details
+-> Comparison Files
+->   errors.hello (yellow) | (yellow)
+->   output.hello (yellow) | (yellow)
 
 ========== Text Info ==========
-Running on aiyura
-Reckoned to be 0% complete at 15Jun17:37:00.
+Running on novyy
+Reckoned to be 0% complete at 16Jun13:54:10.
 
 To obtain the latest progress information and an up-to-date comparison of the files above, perform 'recompute status' (press 'F5')
 ===============================
-
-Changing GUI status to: 'Recomputed status of 1 test.'
 
 'version control log for the selected files' event created with arguments ''
 
@@ -286,8 +293,8 @@ CVS command used: cvs log -N
 Subdirectories were ignored, use CVS Log Recursive to get the logs for all subdirectories.'
 
 Showing VCS log info tree with columns: File , Last revision committed (UTC)
--> <span weight='bold'>TargetApp</span> | 
-->   <span weight='bold'>Test1</span> | 
+-> <span weight='bold'>TargetApp</span>
+->   <span weight='bold'>Test1</span>
 ->     errors.hello | <span weight='bold'>2 days ago</span>
 ->     output.hello | Thu Feb 19 21:26:26 2009
 
@@ -338,30 +345,27 @@ Changing GUI status to: 'Killed all running tests.'
 
 Changing GUI status to: 'Waiting for all tests to terminate ...'
 
-Progress bar set to fraction 1.0, text 'All 1 tests completed at 15Jun17:37:00'
+Progress bar set to fraction 1.0, text 'All 1 tests completed at 16Jun13:54:10'
 
 Redrawing test Test1 coloured red
 (Second column 'KILLED' coloured red)
-
-Setting file-view title to 'Test1'
-Adding file errors.hello under heading 'Comparison Files', coloured green
-Adding file output.hello under heading 'Comparison Files', coloured red
-
-========== Text Info ==========
-Test were terminated before completion (KILLED) :
-Test killed explicitly at 17:37
----------- Differences in output ----------
-1d0
-< Hello
-===============================
 Setting sensitivity of action '_Save' to True
 Setting sensitivity of action 'Save _As...' to True
 Setting sensitivity of action '_Kill' to False
 Setting sensitivity of action '_Mark' to True
-Only one test found, selecting Test1
 
-Setting file-view title to 'Test1'
-Adding file errors.hello under heading 'Comparison Files', coloured green
-Adding file output.hello under heading 'Comparison Files', coloured red
+Updated : File Tree with columns: Test1 , Details
+-> Comparison Files
+->   errors.hello (green) | (green)
+->   output.hello (red) | (red)
+
+========== Text Info ==========
+Test were terminated before completion (KILLED) :
+Test killed explicitly at 13:54
+---------- Differences in output ----------
+1d0
+< Hello
+===============================
+Only one test found, selecting Test1
 
 Changing GUI status to: 'Removing all temporary files ...'

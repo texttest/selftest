@@ -4,7 +4,7 @@ Waiting for application event 'test Test version <default> to complete' to occur
 Waiting for application event 'test Test version all to complete' to occur.
 Waiting for application event 'test Test2 to start' to occur.
 Enabling entry completion, using matching 1
-Top Window title is TextTest dynamic GUI : testing HELLO (started at 15Jun14:19:43)
+Top Window title is TextTest dynamic GUI : testing HELLO (started at 16Jun13:54:00)
 Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
@@ -119,11 +119,13 @@ Test column header set to 'Tests: All 0 selected'
 
 Pane separator positioned 50% from the left edge
 
-Tabs showing : Status, Run Info
+
+Showing Notebook with tabs: Status , Run Info
+Viewing page 'Status'
 
 Showing Test Status View with columns: Status , Number , Visible
 
-Changing GUI status to: 'TextTest started at 15Jun14:19:44.'
+Changing GUI status to: 'TextTest started at 16Jun13:54:01.'
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 1 (white,bold) | Check box (checked)
@@ -185,10 +187,6 @@ Updated : Test Status View with columns: Status , Number , Visible
 ->     output different (red,bold) | 2 (red,bold) | Check box (checked)
 
 Redrawing test Test2 coloured yellow
-Expected application event 'all tests to be read' occurred, proceeding.
-Expected application event 'test Test version <default> to complete' occurred, proceeding.
-Expected application event 'test Test version all to complete' occurred, proceeding.
-Expected application event 'test Test2 to start' occurred, proceeding.
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white) | 0 (white) | Check box (checked)
@@ -196,6 +194,11 @@ Updated : Test Status View with columns: Status , Number , Visible
 -> Failed (red,bold) | 2 (red,bold) | Check box (checked)
 ->   Differences (red,bold) | 2 (red,bold) | Check box (checked)
 ->     output different (red,bold) | 2 (red,bold) | Check box (checked)
+
+Expected application event 'all tests to be read' occurred, proceeding.
+Expected application event 'test Test version <default> to complete' occurred, proceeding.
+Expected application event 'test Test version all to complete' occurred, proceeding.
+Expected application event 'test Test2 to start' occurred, proceeding.
 
 'set test selection to' event created with arguments 'Test under TargetApp (hello)'
 
@@ -206,12 +209,17 @@ Setting sensitivity of action 'S_ave Selection...' to True
 Setting sensitivity of action '_Mark' to True
 Setting sensitivity of action 'Recompute Status' to True
 
-Setting file-view title to 'Test'
-Adding file errors.hello under heading 'Comparison Files', coloured green
-Adding file output.hello under heading 'Comparison Files', coloured red
+Current page changed in Notebook with tabs: Test , Status , Run Info
+Viewing page 'Test'
+...........
 
-Pane separator positioned 46% from the top
+Showing File Tree with columns: Test , Details
+-> Comparison Files
+->   errors.hello (green) | (green)
+->   output.hello (red) | (red)
 
+------------------------------ (horizontal pane separator, 46% from the top)
+...........
 
 ========== Text Info ==========
 Test FAILED :
@@ -221,8 +229,6 @@ Test FAILED :
 ---
 > Hello World!
 ===============================
-
-Tabs showing : Test, Status, Run Info
 
 'save results for selected tests' event created with arguments ''
 
@@ -240,21 +246,14 @@ Setting sensitivity of action 'Save _As...' to False
 Setting sensitivity of action 'S_ave Selection...' to False
 Setting sensitivity of action '_Mark' to False
 Setting sensitivity of action 'Recompute Status' to False
-
-Showing Test Status View with columns: Status , Number , Visible
--> Not started (white) | 0 (white) | Check box (checked)
--> Running (yellow,bold) | 1 (yellow,bold) | Check box (checked)
--> Failed (red,bold) | 1 (red,bold) | Check box (checked)
-->   Differences (red,bold) | 1 (red,bold) | Check box (checked)
-->     output different (red,bold) | 1 (red,bold) | Check box (checked)
--> Succeeded (green,bold) | 1 (green,bold) | Check box (checked)
-
-Tabs showing : Status, Run Info
 Setting recalculation icon to 'gtk-refresh'
 
 Changing GUI status to: 'Saved 1 tests.'
 
-Updated : Test Status View with columns: Status , Number , Visible
+Current page changed in Notebook with tabs: Status , Run Info
+Viewing page 'Status'
+
+Showing Test Status View with columns: Status , Number , Visible
 -> Not started (white) | 0 (white) | Check box (checked)
 -> Running (yellow,bold) | 1 (yellow,bold) | Check box (checked)
 -> Failed (red,bold) | 1 (red,bold) | Check box (checked)
@@ -265,6 +264,23 @@ Updated : Test Status View with columns: Status , Number , Visible
 'set test selection to' event created with arguments 'Test under TargetApp (hello.all)'
 
 Test column header set to 'Tests: 1/3 selected, none hidden'
+Setting sensitivity of action '_Save' to True
+Setting sensitivity of action 'Save _As...' to True
+Setting sensitivity of action 'S_ave Selection...' to True
+Setting sensitivity of action '_Mark' to True
+Setting sensitivity of action 'Recompute Status' to True
+
+Current page changed in Notebook with tabs: Test , Status , Run Info
+Viewing page 'Test'
+...........
+
+Showing File Tree with columns: Test , Details
+-> Comparison Files
+->   errors.hello (green) | (green)
+->   output.hello (red) | (red) | Stock image 'gtk-refresh'
+
+------------------------------ (horizontal pane separator, 46% from the top)
+...........
 
 ========== Text Info ==========
 Test FAILED :
@@ -274,25 +290,6 @@ Test FAILED :
 ---
 > Hello All!
 ===============================
-Setting sensitivity of action '_Save' to True
-Setting sensitivity of action 'Save _As...' to True
-Setting sensitivity of action 'S_ave Selection...' to True
-Setting sensitivity of action '_Mark' to True
-Setting sensitivity of action 'Recompute Status' to True
-
-Setting file-view title to 'Test'
-Adding file errors.hello under heading 'Comparison Files', coloured green
-Adding file output.hello under heading 'Comparison Files', coloured red
-
-Pane separator positioned 46% from the top
-
-
-Tabs showing : Test, Status, Run Info
-
-Setting file-view title to 'Test'
-Adding file errors.hello under heading 'Comparison Files', coloured green
-Adding file output.hello under heading 'Comparison Files', coloured red
-(Recalculation icon showing 'gtk-refresh')
 
 'recompute test status, including progress information if appropriate' event created with arguments ''
 
@@ -302,10 +299,16 @@ Changing GUI status to: 'Recomputing status of HELLO.all test-case Test ...'
 
 Redrawing test Test coloured red
 (Second column 'output different' coloured red)
+Setting recalculation icon to ''
 
-Setting file-view title to 'Test'
-Adding file errors.hello under heading 'Comparison Files', coloured green
-Adding file output.hello under heading 'Comparison Files', coloured red
+Changing GUI status to: 'Recomputed status of 1 test.'
+
+Waiting for application event 'completion of test actions' to occur.
+
+Updated : File Tree with columns: Test , Details
+-> Comparison Files
+->   errors.hello (green) | (green)
+->   output.hello (red) | (red)
 
 ========== Text Info ==========
 Test FAILED :
@@ -315,19 +318,18 @@ Test FAILED :
 ---
 > Hello All!
 ===============================
-Setting recalculation icon to ''
 
-Changing GUI status to: 'Recomputed status of 1 test.'
-
-Waiting for application event 'completion of test actions' to occur.
-
-Progress bar set to fraction 1.0, text 'All 3 tests completed at 15Jun14:19:50'
+Progress bar set to fraction 1.0, text 'All 3 tests completed at 16Jun13:54:05'
 
 Redrawing test Test2 coloured red
 (Second column 'output different' coloured red)
+
 Expected application event 'completion of test actions' occurred, proceeding.
 
 'view options for' event created with arguments 'Status'
+
+Current page changed in Notebook with tabs: Test , Status , Run Info
+Viewing page 'Status'
 
 Showing Test Status View with columns: Status , Number , Visible
 -> Not started (white) | 0 (white) | Check box (checked)
