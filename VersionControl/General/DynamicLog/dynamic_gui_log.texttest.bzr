@@ -1,177 +1,59 @@
 
 Waiting for application event 'completion of test actions' to occur.
 Enabling entry completion, using matching 1
-Top Window title is TextTest dynamic GUI : testing HELLO (started at 16Jun15:41:55)
-Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
+---------- Window 'TextTest dynamic GUI : testing HELLO (started at 18Jun13:40:16)' ----------
+Focus widget is 'Test Tree'
 
-Viewing toggle action with title '_Toolbar'
-Viewing toggle action with title '_Shortcut bar'
-Viewing toggle action with title '_Status bar'
-Viewing action with title '_Quit', stock id ''gtk-quit'', accelerator ''<control>q''
-Viewing action with title 'View File', stock id ''gtk-open'' (greyed out)
-Viewing action with title '_File Properties', stock id ''gtk-properties'' (greyed out)
-Viewing action with title 'View Filtered File' (greyed out)
-Viewing action with title 'View Original File' (greyed out)
-Viewing action with title 'View Filtered Original File' (greyed out)
-Viewing action with title 'View Raw Differences' (greyed out)
-Viewing action with title 'View Differences' (greyed out)
-Viewing action with title 'Follow File Progress' (greyed out)
-Viewing action with title '_Save', stock id ''gtk-save'', accelerator ''<control>s'' (greyed out)
-Viewing action with title 'Save _As...', stock id ''gtk-save'', accelerator ''<control><alt>s'' (greyed out)
-Viewing action with title 'S_ave Selection...', stock id ''gtk-save-as'', accelerator ''<control>d'' (greyed out)
-Viewing action with title '_Kill', stock id ''gtk-stop'', accelerator ''<control>Delete'' (greyed out)
-Viewing action with title 'Annotate', stock id ''gtk-index''
-Viewing action with title '_Mark', accelerator ''<control><shift>m'' (greyed out)
-Viewing action with title '_Unmark', accelerator ''<control><shift>u'' (greyed out)
-Viewing action with title 'Recompute Status', stock id ''gtk-refresh'', accelerator ''F5'' (greyed out)
-Viewing action with title '_Migration Notes'
-Viewing action with title '_Change Logs'
-Viewing action with title 'Component _Versions'
-Viewing action with title '_About TextTest', stock id ''gtk-about''
-Viewing action with title '_Log' (greyed out)
-Viewing action with title 'Log Recursive' (greyed out)
-Viewing action with title '_Difference' (greyed out)
-Viewing action with title 'Difference Recursive' (greyed out)
-Viewing action with title '_Status' (greyed out)
-Viewing action with title 'Status Recursive' (greyed out)
-Viewing action with title 'A_nnotate' (greyed out)
-Viewing action with title 'Annotate Recursive' (greyed out)
-Viewing action with title 'A_dd' (greyed out)
-Viewing action with title 'Add Recursive' (greyed out)
+Menu Bar :
+  'File' Menu :
+    'Save' (Stock image 'gtk-save', greyed out, accelerator 'Ctrl+S')
+    'Save As...' (Stock image 'gtk-save', greyed out, accelerator 'Ctrl+Alt+S')
+      ----
+    'Save Selection...' (Stock image 'gtk-save-as', greyed out, accelerator 'Ctrl+D')
+      ----
+    'Quit' (Stock image 'gtk-quit', accelerator 'Ctrl+Q')
+  'View' Menu :
+    'Annotate' (Stock image 'gtk-index')
+      ----
+    'Toolbar' (checked)
+    'Shortcut bar' (checked)
+    'Status bar' (checked)
+  'Actions' Menu :
+    'Kill' (Stock image 'gtk-stop', greyed out, accelerator 'Ctrl+Delete')
+    'Mark' (greyed out, accelerator 'Shift+Ctrl+M')
+    'Unmark' (greyed out, accelerator 'Shift+Ctrl+U')
+      ----
+    'Recompute Status' (Stock image 'gtk-refresh', greyed out, accelerator 'F5')
+  'Bazaar' Menu :
+    'Log' (greyed out)
+    'Log Recursive' (greyed out)
+      ----
+    'Difference' (greyed out)
+    'Difference Recursive' (greyed out)
+      ----
+    'Status' (greyed out)
+    'Status Recursive' (greyed out)
+      ----
+    'Annotate' (greyed out)
+    'Annotate Recursive' (greyed out)
+      ----
+    'Add' (greyed out)
+    'Add Recursive' (greyed out)
+  'Help' Menu :
+    'Migration Notes'
+    'Change Logs'
+      ----
+    'Component Versions'
+      ----
+    'About TextTest' (Stock image 'gtk-about')
 
-UI layout: 
-<ui>
-  <menubar name="MainMenuBar">
-    <menu name="filemenu" action="filemenu">
-      <placeholder name="FirstInFileMenu">
-        <menuitem name="Save" action="Save"/>
-        <menuitem name="Save As..." action="Save As..."/>
-        <separator/>
-      </placeholder>
-      <menuitem name="Save Selection..." action="Save Selection..."/>
-      <separator/>
-      <menuitem name="Quit" action="Quit"/>
-    </menu>
-    <menu name="editmenu" action="editmenu">
-    </menu>
-    <menu name="viewmenu" action="viewmenu">
-      <placeholder name="FirstInViewMenu">
-        <menuitem name="Annotate" action="Annotate"/>
-        <separator/>
-      </placeholder>
-      <menuitem name="Toolbar" action="Toolbar"/>
-      <menuitem name="Shortcut bar" action="Shortcut bar"/>
-      <menuitem name="Status bar" action="Status bar"/>
-    </menu>
-    <menu name="actionsmenu" action="actionsmenu">
-      <menuitem name="Kill" action="Kill"/>
-      <menuitem name="Mark" action="Mark"/>
-      <menuitem name="Unmark" action="Unmark"/>
-      <separator/>
-      <menuitem name="Recompute Status" action="Recompute Status"/>
-      <separator/>
-    </menu>
-    <placeholder name="ExtraMenus">
-      <menu name="Bazaarmenu" action="Bazaarmenu">
-        <menuitem name="Bazaar Log" action="Bazaar Log"/>
-        <menuitem name="Bazaar Log Recursive" action="Bazaar Log Recursive"/>
-        <separator/>
-        <menuitem name="Bazaar Difference" action="Bazaar Difference"/>
-        <menuitem name="Bazaar Difference Recursive" action="Bazaar Difference Recursive"/>
-        <separator/>
-        <menuitem name="Bazaar Status" action="Bazaar Status"/>
-        <menuitem name="Bazaar Status Recursive" action="Bazaar Status Recursive"/>
-        <separator/>
-        <menuitem name="Bazaar Annotate" action="Bazaar Annotate"/>
-        <menuitem name="Bazaar Annotate Recursive" action="Bazaar Annotate Recursive"/>
-        <separator/>
-        <menuitem name="Bazaar Add" action="Bazaar Add"/>
-        <menuitem name="Bazaar Add Recursive" action="Bazaar Add Recursive"/>
-        <separator/>
-      </menu>
-    </placeholder>
-    <menu name="helpmenu" action="helpmenu">
-      <menuitem name="Migration Notes" action="Migration Notes"/>
-      <menuitem name="Change Logs" action="Change Logs"/>
-      <separator/>
-      <menuitem name="Component Versions" action="Component Versions"/>
-      <separator/>
-      <menuitem name="About TextTest" action="About TextTest"/>
-    </menu>
-  </menubar>
-  <toolbar name="MainToolBar">
-    <toolitem name="Quit" action="Quit"/>
-    <toolitem name="Kill" action="Kill"/>
-    <toolitem name="Save" action="Save"/>
-    <separator/>
-  </toolbar>
-  <popup name="TestPopupMenu">
-    <menuitem name="Save" action="Save"/>
-    <menuitem name="Save As..." action="Save As..."/>
-    <separator/>
-    <menuitem name="Kill" action="Kill"/>
-    <menuitem name="Mark" action="Mark"/>
-    <menuitem name="Unmark" action="Unmark"/>
-    <separator/>
-    <menuitem name="Recompute Status" action="Recompute Status"/>
-    <separator/>
-    <menu name="Bazaarmenu" action="Bazaarmenu">
-      <menuitem name="Bazaar Log" action="Bazaar Log"/>
-      <menuitem name="Bazaar Log Recursive" action="Bazaar Log Recursive"/>
-      <separator/>
-      <menuitem name="Bazaar Difference" action="Bazaar Difference"/>
-      <menuitem name="Bazaar Difference Recursive" action="Bazaar Difference Recursive"/>
-      <separator/>
-      <menuitem name="Bazaar Status" action="Bazaar Status"/>
-      <menuitem name="Bazaar Status Recursive" action="Bazaar Status Recursive"/>
-      <separator/>
-      <menuitem name="Bazaar Annotate" action="Bazaar Annotate"/>
-      <menuitem name="Bazaar Annotate Recursive" action="Bazaar Annotate Recursive"/>
-      <separator/>
-      <menuitem name="Bazaar Add" action="Bazaar Add"/>
-      <menuitem name="Bazaar Add Recursive" action="Bazaar Add Recursive"/>
-      <separator/>
-    </menu>
-  </popup>
-  <popup name="TestFilePopupMenu">
-    <menuitem name="View File" action="View File"/>
-    <menuitem name="View Filtered File" action="View Filtered File"/>
-    <separator/>
-    <menuitem name="View Original File" action="View Original File"/>
-    <menuitem name="View Filtered Original File" action="View Filtered Original File"/>
-    <separator/>
-    <menuitem name="View Differences" action="View Differences"/>
-    <menuitem name="View Raw Differences" action="View Raw Differences"/>
-    <separator/>
-    <menuitem name="Follow File Progress" action="Follow File Progress"/>
-    <separator/>
-    <menuitem name="File Properties" action="File Properties"/>
-    <separator/>
-    <menuitem name="Save" action="Save"/>
-    <menuitem name="Save As..." action="Save As..."/>
-    <menu name="Bazaarmenu" action="Bazaarmenu">
-      <menuitem name="Bazaar Log" action="Bazaar Log"/>
-      <menuitem name="Bazaar Log Recursive" action="Bazaar Log Recursive"/>
-      <separator/>
-      <menuitem name="Bazaar Difference" action="Bazaar Difference"/>
-      <menuitem name="Bazaar Difference Recursive" action="Bazaar Difference Recursive"/>
-      <separator/>
-      <menuitem name="Bazaar Status" action="Bazaar Status"/>
-      <menuitem name="Bazaar Status Recursive" action="Bazaar Status Recursive"/>
-      <separator/>
-      <menuitem name="Bazaar Annotate" action="Bazaar Annotate"/>
-      <menuitem name="Bazaar Annotate Recursive" action="Bazaar Annotate Recursive"/>
-      <separator/>
-      <menuitem name="Bazaar Add" action="Bazaar Add"/>
-      <menuitem name="Bazaar Add Recursive" action="Bazaar Add Recursive"/>
-      <separator/>
-    </menu>
-  </popup>
-</ui>
-
-Changing GUI status to: 'TextTest started at 16Jun15:41:56.'
+Tool Bar :
+  _Quit (Stock image 'gtk-quit', accelerator 'Ctrl+Q', tooltip 'Quit')
+  _Kill (Stock image 'gtk-stop', greyed out, accelerator 'Ctrl+Delete', tooltip 'Kill selected tests')
+  _Save (Stock image 'gtk-save', greyed out, accelerator 'Ctrl+S', tooltip 'Save results for selected tests')
+  Progress bar set to fraction 0.0, text '0 of 4 tests completed'
 ...........
 
 Showing Test Tree with columns: Tests: 0/4 selected, all hidden , Details
@@ -184,6 +66,10 @@ Viewing page 'Status'
 
 Showing Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 4 (white,bold) | Check box (checked)
+'Shortcuts:' , Button '_New'
+...........
+'TextTest started at 18Jun13:40:17.' , Non-stock image
+----------------------------------------------------------------------------------------------
 
 Updated : Test Tree with columns: Tests: 0/4 selected, 3 hidden , Details
 -> TargetApp (hello) (white) | (white)
@@ -212,8 +98,6 @@ Updated : Test Tree with columns: Tests: 0/4 selected, none hidden , Details
 ->       Test4 (white) | (white)
 
 Progress bar set to fraction 0.0, text '0 of 4 tests completed'
-
-
 
 Updated : Test Tree with columns: Tests: 0/4 selected, none hidden , Details
 -> TargetApp (hello) (white) | (white)
@@ -330,7 +214,7 @@ Updated : Test Status View with columns: Status , Number , Visible
 ->   Differences (red,bold) | 3 (red,bold) | Check box (checked)
 ->     output different (red,bold) | 3 (red,bold) | Check box (checked)
 
-Progress bar set to fraction 1.0, text 'All 4 tests completed at 16Jun15:41:58'
+Progress bar set to fraction 1.0, text 'All 4 tests completed at 18Jun13:40:18'
 
 Updated : Test Tree with columns: Tests: 0/4 selected, none hidden , Details
 -> TargetApp (hello) (white) | (white)
@@ -353,21 +237,7 @@ Expected application event 'completion of test actions' occurred, proceeding.
 
 'set test selection to' event created with arguments 'Test1'
 
-Setting sensitivity of action '_Save' to True
-Setting sensitivity of action 'Save _As...' to True
-Setting sensitivity of action 'S_ave Selection...' to True
-Setting sensitivity of action '_Mark' to True
-Setting sensitivity of action 'Recompute Status' to True
-Setting sensitivity of action '_Log' to True
-Setting sensitivity of action 'Log Recursive' to True
-Setting sensitivity of action '_Difference' to True
-Setting sensitivity of action 'Difference Recursive' to True
-Setting sensitivity of action '_Status' to True
-Setting sensitivity of action 'Status Recursive' to True
-Setting sensitivity of action 'A_nnotate' to True
-Setting sensitivity of action 'Annotate Recursive' to True
-Setting sensitivity of action 'A_dd' to True
-Setting sensitivity of action 'Add Recursive' to True
+No longer greyed out : _Save, Save _As..., S_ave Selection..., _Mark, Recompute Status, _Log, Log Recursive, _Difference, Difference Recursive, _Status, Status Recursive, A_nnotate, Annotate Recursive, A_dd, Add Recursive
 
 Column titles changed in Test Tree with columns: Tests: 1/4 selected, none hidden , Details
 
@@ -398,7 +268,7 @@ Changing GUI status to: 'Analyzing logs for errors.hello in test Test1'
 
 Changing GUI status to: 'Analyzing logs for output.hello in test Test1'
 ---------- Dialog 'Bazaar Log for the selected files' ----------
-Default action is labelled 'gtk-close'
+Default widget is 'gtk-close'
 Stock image 'gtk-dialog-info' , 'Bazaar logs shown below.
 Bazaar command used: bzr log
 Subdirectories were ignored, use Bazaar Log Recursive to get the logs for all subdirectories.'
@@ -431,7 +301,7 @@ Button '_Status'
 Button '_Annotate'
 Button '_Differences' , ' between revisions ' , Text entry (set to '-1') , ' and ' , Text entry
 ---------------
-Button 'gtk-close', stock image 'gtk-close'
+Button 'gtk-close' (Stock image 'gtk-close')
 ----------------------------------------------------------------
 
 Changing GUI status to: 'Performed version control log for the selected files.'
@@ -440,19 +310,12 @@ Changing GUI status to: 'Performed version control log for the selected files.'
 Adding entry completion '-1' ...
 
 'set file selection to' event created with arguments 'output.hello'
-Setting sensitivity of action 'View File' to True
-Setting sensitivity of action '_File Properties' to True
-Setting sensitivity of action 'View Filtered File' to True
-Setting sensitivity of action 'View Original File' to True
-Setting sensitivity of action 'View Filtered Original File' to True
-Setting sensitivity of action 'View Raw Differences' to True
-Setting sensitivity of action 'View Differences' to True
 
 'version control log for the selected files' event created with arguments ''
 
 Changing GUI status to: 'Analyzing logs for output.hello in test Test1'
 ---------- Dialog 'Bazaar Log for the selected files' ----------
-Default action is labelled 'gtk-close'
+Default widget is 'gtk-close'
 Stock image 'gtk-dialog-info' , 'Bazaar logs shown below.
 Bazaar command used: bzr log
 Subdirectories were ignored, use Bazaar Log Recursive to get the logs for all subdirectories.'
@@ -477,7 +340,7 @@ Button '_Status'
 Button '_Annotate'
 Button '_Differences' , ' between revisions ' , Text entry (set to '-1') , ' and ' , Text entry
 ---------------
-Button 'gtk-close', stock image 'gtk-close'
+Button 'gtk-close' (Stock image 'gtk-close')
 ----------------------------------------------------------------
 
 Changing GUI status to: 'Performed version control log for the selected files.'
@@ -485,14 +348,6 @@ Changing GUI status to: 'Performed version control log for the selected files.'
 'press close' event created with arguments ''
 
 'set test selection to' event created with arguments 'Test2,Test1'
-Setting sensitivity of action 'View File' to False
-Setting sensitivity of action '_File Properties' to False
-Setting sensitivity of action 'View Filtered File' to False
-Setting sensitivity of action 'View Original File' to False
-Setting sensitivity of action 'View Filtered Original File' to False
-Setting sensitivity of action 'View Raw Differences' to False
-Setting sensitivity of action 'View Differences' to False
-
 
 Column titles changed in Test Tree with columns: Tests: 2/4 selected, none hidden , Details
 
@@ -520,7 +375,7 @@ Changing GUI status to: 'Analyzing logs for errors.hello in test Test2'
 
 Changing GUI status to: 'Analyzing logs for output.hello in test Test2'
 ---------- Dialog 'Bazaar Log for the selected files' ----------
-Default action is labelled 'gtk-close'
+Default widget is 'gtk-close'
 Stock image 'gtk-dialog-info' , 'Bazaar logs shown below.
 Bazaar command used: bzr log
 Subdirectories were ignored, use Bazaar Log Recursive to get the logs for all subdirectories.'
@@ -556,7 +411,7 @@ Button '_Status'
 Button '_Annotate'
 Button '_Differences' , ' between revisions ' , Text entry (set to '-1') , ' and ' , Text entry
 ---------------
-Button 'gtk-close', stock image 'gtk-close'
+Button 'gtk-close' (Stock image 'gtk-close')
 ----------------------------------------------------------------
 
 Changing GUI status to: 'Performed version control log for the selected files.'
@@ -571,7 +426,7 @@ Changing GUI status to: 'Analyzing logs for output.hello in test Test2'
 
 Changing GUI status to: 'Analyzing logs for output.hello in test Test2'
 ---------- Dialog 'Bazaar Log for the selected files' ----------
-Default action is labelled 'gtk-close'
+Default widget is 'gtk-close'
 Stock image 'gtk-dialog-info' , 'Bazaar logs shown below.
 Bazaar command used: bzr log
 Subdirectories were ignored, use Bazaar Log Recursive to get the logs for all subdirectories.'
@@ -603,7 +458,7 @@ Button '_Status'
 Button '_Annotate'
 Button '_Differences' , ' between revisions ' , Text entry (set to '-1') , ' and ' , Text entry
 ---------------
-Button 'gtk-close', stock image 'gtk-close'
+Button 'gtk-close' (Stock image 'gtk-close')
 ----------------------------------------------------------------
 
 Changing GUI status to: 'Performed version control log for the selected files.'
@@ -611,5 +466,3 @@ Changing GUI status to: 'Performed version control log for the selected files.'
 'press close' event created with arguments ''
 
 'quit' event created with arguments ''
-
-Changing GUI status to: 'Removing all temporary files ...'

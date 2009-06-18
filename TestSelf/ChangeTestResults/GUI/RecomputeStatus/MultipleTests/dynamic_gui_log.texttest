@@ -1,116 +1,44 @@
 
 Waiting for application event 'completion of test actions' to occur.
 Enabling entry completion, using matching 1
-Top Window title is TextTest dynamic GUI : testing HELLO.2,HELLO.3,HELLO.4 (started at 16Jun15:41:04)
-Default widget is <type 'gtk.TreeView'>
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
+---------- Window 'TextTest dynamic GUI : testing HELLO.2,HELLO.3,HELLO.4 (started at 18Jun13:39:48)' ----------
+Focus widget is 'Test Tree'
 
-Viewing toggle action with title '_Toolbar'
-Viewing toggle action with title '_Shortcut bar'
-Viewing toggle action with title '_Status bar'
-Viewing action with title '_Quit', stock id ''gtk-quit'', accelerator ''<control>q''
-Viewing action with title 'View File', stock id ''gtk-open'' (greyed out)
-Viewing action with title '_File Properties', stock id ''gtk-properties'' (greyed out)
-Viewing action with title 'View Filtered File' (greyed out)
-Viewing action with title 'View Original File' (greyed out)
-Viewing action with title 'View Filtered Original File' (greyed out)
-Viewing action with title 'View Raw Differences' (greyed out)
-Viewing action with title 'View Differences' (greyed out)
-Viewing action with title 'Follow File Progress' (greyed out)
-Viewing action with title '_Save', stock id ''gtk-save'', accelerator ''<control>s'' (greyed out)
-Viewing action with title 'Save _As...', stock id ''gtk-save'', accelerator ''<control><alt>s'' (greyed out)
-Viewing action with title 'S_ave Selection...', stock id ''gtk-save-as'', accelerator ''<control>d'' (greyed out)
-Viewing action with title '_Kill', stock id ''gtk-stop'', accelerator ''<control>Delete'' (greyed out)
-Viewing action with title 'Annotate', stock id ''gtk-index''
-Viewing action with title '_Mark', accelerator ''<control><shift>m'' (greyed out)
-Viewing action with title '_Unmark', accelerator ''<control><shift>u'' (greyed out)
-Viewing action with title 'Recompute Status', stock id ''gtk-refresh'', accelerator ''F5'' (greyed out)
-Viewing action with title '_Migration Notes'
-Viewing action with title '_Change Logs'
-Viewing action with title 'Component _Versions'
-Viewing action with title '_About TextTest', stock id ''gtk-about''
+Menu Bar :
+  'File' Menu :
+    'Save' (Stock image 'gtk-save', greyed out, accelerator 'Ctrl+S')
+    'Save As...' (Stock image 'gtk-save', greyed out, accelerator 'Ctrl+Alt+S')
+      ----
+    'Save Selection...' (Stock image 'gtk-save-as', greyed out, accelerator 'Ctrl+D')
+      ----
+    'Quit' (Stock image 'gtk-quit', accelerator 'Ctrl+Q')
+  'View' Menu :
+    'Annotate' (Stock image 'gtk-index')
+      ----
+    'Toolbar' (checked)
+    'Shortcut bar' (checked)
+    'Status bar' (checked)
+  'Actions' Menu :
+    'Kill' (Stock image 'gtk-stop', greyed out, accelerator 'Ctrl+Delete')
+    'Mark' (greyed out, accelerator 'Shift+Ctrl+M')
+    'Unmark' (greyed out, accelerator 'Shift+Ctrl+U')
+      ----
+    'Recompute Status' (Stock image 'gtk-refresh', greyed out, accelerator 'F5')
+  'Help' Menu :
+    'Migration Notes'
+    'Change Logs'
+      ----
+    'Component Versions'
+      ----
+    'About TextTest' (Stock image 'gtk-about')
 
-UI layout: 
-<ui>
-  <menubar name="MainMenuBar">
-    <menu name="filemenu" action="filemenu">
-      <placeholder name="FirstInFileMenu">
-        <menuitem name="Save" action="Save"/>
-        <menuitem name="Save As..." action="Save As..."/>
-        <separator/>
-      </placeholder>
-      <menuitem name="Save Selection..." action="Save Selection..."/>
-      <separator/>
-      <menuitem name="Quit" action="Quit"/>
-    </menu>
-    <menu name="editmenu" action="editmenu">
-    </menu>
-    <menu name="viewmenu" action="viewmenu">
-      <placeholder name="FirstInViewMenu">
-        <menuitem name="Annotate" action="Annotate"/>
-        <separator/>
-      </placeholder>
-      <menuitem name="Toolbar" action="Toolbar"/>
-      <menuitem name="Shortcut bar" action="Shortcut bar"/>
-      <menuitem name="Status bar" action="Status bar"/>
-    </menu>
-    <menu name="actionsmenu" action="actionsmenu">
-      <menuitem name="Kill" action="Kill"/>
-      <menuitem name="Mark" action="Mark"/>
-      <menuitem name="Unmark" action="Unmark"/>
-      <separator/>
-      <menuitem name="Recompute Status" action="Recompute Status"/>
-      <separator/>
-    </menu>
-    <placeholder name="ExtraMenus">
-    </placeholder>
-    <menu name="helpmenu" action="helpmenu">
-      <menuitem name="Migration Notes" action="Migration Notes"/>
-      <menuitem name="Change Logs" action="Change Logs"/>
-      <separator/>
-      <menuitem name="Component Versions" action="Component Versions"/>
-      <separator/>
-      <menuitem name="About TextTest" action="About TextTest"/>
-    </menu>
-  </menubar>
-  <toolbar name="MainToolBar">
-    <toolitem name="Quit" action="Quit"/>
-    <toolitem name="Kill" action="Kill"/>
-    <toolitem name="Save" action="Save"/>
-    <separator/>
-  </toolbar>
-  <popup name="TestPopupMenu">
-    <menuitem name="Save" action="Save"/>
-    <menuitem name="Save As..." action="Save As..."/>
-    <separator/>
-    <menuitem name="Kill" action="Kill"/>
-    <menuitem name="Mark" action="Mark"/>
-    <menuitem name="Unmark" action="Unmark"/>
-    <separator/>
-    <menuitem name="Recompute Status" action="Recompute Status"/>
-    <separator/>
-  </popup>
-  <popup name="TestFilePopupMenu">
-    <menuitem name="View File" action="View File"/>
-    <menuitem name="View Filtered File" action="View Filtered File"/>
-    <separator/>
-    <menuitem name="View Original File" action="View Original File"/>
-    <menuitem name="View Filtered Original File" action="View Filtered Original File"/>
-    <separator/>
-    <menuitem name="View Differences" action="View Differences"/>
-    <menuitem name="View Raw Differences" action="View Raw Differences"/>
-    <separator/>
-    <menuitem name="Follow File Progress" action="Follow File Progress"/>
-    <separator/>
-    <menuitem name="File Properties" action="File Properties"/>
-    <separator/>
-    <menuitem name="Save" action="Save"/>
-    <menuitem name="Save As..." action="Save As..."/>
-  </popup>
-</ui>
-
-Changing GUI status to: 'TextTest started at 16Jun15:41:05.'
+Tool Bar :
+  _Quit (Stock image 'gtk-quit', accelerator 'Ctrl+Q', tooltip 'Quit')
+  _Kill (Stock image 'gtk-stop', greyed out, accelerator 'Ctrl+Delete', tooltip 'Kill selected tests')
+  _Save (Stock image 'gtk-save', greyed out, accelerator 'Ctrl+S', tooltip 'Save results for selected tests')
+  Progress bar set to fraction 0.0, text 'All 0 tests completed at 18Jun13:39:50'
 ...........
 
 Showing Test Tree with columns: Tests: All 0 selected , Details
@@ -122,6 +50,12 @@ Showing Notebook with tabs: Status , Run Info
 Viewing page 'Status'
 
 Showing Test Status View with columns: Status , Number , Visible
+'Shortcuts:' , Button '_New'
+...........
+'TextTest started at 18Jun13:39:50.' , Non-stock image
+----------------------------------------------------------------------------------------------------------------
+
+Progress bar set to fraction 0.0, text '0 of 1 tests completed'
 
 Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
 -> TargetApp (hello.2) (white) | (white)
@@ -130,6 +64,8 @@ Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 1 (white,bold) | Check box (checked)
 
+Progress bar set to fraction 0.0, text '0 of 2 tests completed'
+
 Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
 -> TargetApp (hello.2) (white) | (white)
 ->   OutDiff (white) | (white)
@@ -137,6 +73,8 @@ Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 2 (white,bold) | Check box (checked)
+
+Progress bar set to fraction 0.0, text '0 of 3 tests completed'
 
 Updated : Test Tree with columns: Tests: 0/3 selected, none hidden , Details
 -> TargetApp (hello.2) (white) | (white)
@@ -147,6 +85,8 @@ Updated : Test Tree with columns: Tests: 0/3 selected, none hidden , Details
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 3 (white,bold) | Check box (checked)
 
+Progress bar set to fraction 0.0, text '0 of 4 tests completed'
+
 Updated : Test Tree with columns: Tests: 0/4 selected, none hidden , Details
 -> TargetApp (hello.2) (white) | (white)
 ->   OutDiff (white) | (white)
@@ -156,6 +96,8 @@ Updated : Test Tree with columns: Tests: 0/4 selected, none hidden , Details
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 4 (white,bold) | Check box (checked)
+
+Progress bar set to fraction 0.0, text '0 of 5 tests completed'
 
 Updated : Test Tree with columns: Tests: 0/5 selected, none hidden , Details
 -> TargetApp (hello.2) (white) | (white)
@@ -169,6 +111,8 @@ Updated : Test Tree with columns: Tests: 0/5 selected, none hidden , Details
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 5 (white,bold) | Check box (checked)
 
+Progress bar set to fraction 0.0, text '0 of 6 tests completed'
+
 Updated : Test Tree with columns: Tests: 0/6 selected, none hidden , Details
 -> TargetApp (hello.2) (white) | (white)
 ->   OutDiff (white) | (white)
@@ -181,6 +125,8 @@ Updated : Test Tree with columns: Tests: 0/6 selected, none hidden , Details
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 6 (white,bold) | Check box (checked)
+
+Progress bar set to fraction 0.0, text '0 of 7 tests completed'
 
 Updated : Test Tree with columns: Tests: 0/7 selected, none hidden , Details
 -> TargetApp (hello.2) (white) | (white)
@@ -196,6 +142,8 @@ Updated : Test Tree with columns: Tests: 0/7 selected, none hidden , Details
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 7 (white,bold) | Check box (checked)
 
+Progress bar set to fraction 0.0, text '0 of 8 tests completed'
+
 Updated : Test Tree with columns: Tests: 0/8 selected, none hidden , Details
 -> TargetApp (hello.2) (white) | (white)
 ->   OutDiff (white) | (white)
@@ -210,6 +158,8 @@ Updated : Test Tree with columns: Tests: 0/8 selected, none hidden , Details
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 8 (white,bold) | Check box (checked)
+
+Progress bar set to fraction 0.0, text '0 of 9 tests completed'
 
 Updated : Test Tree with columns: Tests: 0/9 selected, none hidden , Details
 -> TargetApp (hello.2) (white) | (white)
@@ -227,6 +177,8 @@ Updated : Test Tree with columns: Tests: 0/9 selected, none hidden , Details
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 9 (white,bold) | Check box (checked)
+
+Progress bar set to fraction 0.0, text '0 of 10 tests completed'
 
 Updated : Test Tree with columns: Tests: 0/10 selected, none hidden , Details
 -> TargetApp (hello.2) (white) | (white)
@@ -246,6 +198,8 @@ Updated : Test Tree with columns: Tests: 0/10 selected, none hidden , Details
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 10 (white,bold) | Check box (checked)
 
+Progress bar set to fraction 0.0, text '0 of 11 tests completed'
+
 Updated : Test Tree with columns: Tests: 0/11 selected, none hidden , Details
 -> TargetApp (hello.2) (white) | (white)
 ->   OutDiff (white) | (white)
@@ -264,6 +218,8 @@ Updated : Test Tree with columns: Tests: 0/11 selected, none hidden , Details
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 11 (white,bold) | Check box (checked)
+
+Progress bar set to fraction 0.0, text '0 of 12 tests completed'
 
 Updated : Test Tree with columns: Tests: 0/12 selected, none hidden , Details
 -> TargetApp (hello.2) (white) | (white)
@@ -286,8 +242,6 @@ Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 12 (white,bold) | Check box (checked)
 
 Progress bar set to fraction 0.0, text '0 of 12 tests completed'
-
-
 
 Updated : Test Tree with columns: Tests: 0/12 selected, none hidden , Details
 -> TargetApp (hello.2) (white) | (white)
@@ -932,7 +886,7 @@ Updated : Test Status View with columns: Status , Number , Visible
 ->       Group 1 (red,bold) | 5 (red,bold) | Check box (checked)
 -> Succeeded (green,bold) | 3 (green,bold) | Check box (checked)
 
-Progress bar set to fraction 1.0, text 'All 12 tests completed at 16Jun15:41:08'
+Progress bar set to fraction 1.0, text 'All 12 tests completed at 18Jun13:39:54'
 
 Updated : Test Tree with columns: Tests: 0/12 selected, none hidden , Details
 -> TargetApp (hello.2) (white) | (white)
@@ -966,11 +920,7 @@ Expected application event 'completion of test actions' occurred, proceeding.
 
 'set test selection to' event created with arguments 'OutDiff under TargetApp (hello.2)'
 
-Setting sensitivity of action '_Save' to True
-Setting sensitivity of action 'Save _As...' to True
-Setting sensitivity of action 'S_ave Selection...' to True
-Setting sensitivity of action '_Mark' to True
-Setting sensitivity of action 'Recompute Status' to True
+No longer greyed out : _Save, Save _As..., S_ave Selection..., _Mark, Recompute Status
 
 Column titles changed in Test Tree with columns: Tests: 1/12 selected, none hidden , Details
 
@@ -996,15 +946,15 @@ Test FAILED :
 'save results with non-default settings' event created with arguments ''
 Adding entry completion '2' ...
 ---------- Dialog 'Saving 1 tests' ----------
-Default action is labelled 'gtk-save'
+Default widget is 'gtk-save'
 'Version to save:'
 Text entry (set to '2') (drop-down list containing ['2', ''])
 'Version to save previous results as:'
 Text entry
 Check button 'Replace successfully compared files also'
 ---------------
-Button 'gtk-save', stock image 'gtk-save'
-Button 'gtk-cancel', stock image 'gtk-cancel'
+Button 'gtk-save' (Stock image 'gtk-save')
+Button 'gtk-cancel' (Stock image 'gtk-cancel')
 ---------------------------------------------
 
 'enter version to save =' event created with arguments ''
@@ -1012,14 +962,9 @@ Edited 'Version to save' Text entry
 
 'press ok' event created with arguments ''
 
-Changing GUI status to: 'Saving 1 tests ...'
-Saving HELLO.2 test-case OutDiff - version , exactness 1
-
 Changing GUI status to: 'Saving HELLO.2 test-case OutDiff : output, no version'
-Setting sensitivity of action '_Save' to False
-Setting sensitivity of action 'Save _As...' to False
 
-Changing GUI status to: 'Saved 1 tests.'
+Greyed out : _Save, Save _As...
 
 Updated : Test Tree with columns: Tests: 1/12 selected, none hidden , Details
 -> TargetApp (hello.2) (white) | (white)
@@ -1047,20 +992,11 @@ Updated : File Tree with columns: OutDiff , Details
 Test succeeded
 ===============================
 
+Changing GUI status to: 'Saved 1 tests.'
+
 'set test selection to' event created with arguments 'OutDiff under TargetApp (hello.2),Success under TargetApp (hello.2),BothDiff under TargetApp (hello.2),ErrDiff under TargetApp (hello.2),OutDiff under TargetApp (hello.3),Success under TargetApp (hello.3),BothDiff under TargetApp (hello.3),ErrDiff under TargetApp (hello.3),OutDiff under TargetApp (hello.4),Success under TargetApp (hello.4),BothDiff under TargetApp (hello.4),ErrDiff under TargetApp (hello.4)'
 
-
-Setting sensitivity of action '_Save' to True
-Setting sensitivity of action 'Save _As...' to True
-
-
-
-
-
-
-
-
-
+No longer greyed out : _Save, Save _As...
 
 Column titles changed in Test Tree with columns: Tests: All 12 selected, none hidden , Details
 
@@ -1076,8 +1012,6 @@ Changing GUI status to: 'Rereading configuration for HELLO.3 ...'
 Changing GUI status to: 'Rereading configuration for HELLO.4 ...'
 
 Changing GUI status to: 'Recomputing status of HELLO.2 test-case OutDiff ...'
-
-Changing GUI status to: 'Recomputing status of HELLO.2 test-case Success ...'
 
 Updated : Test Tree with columns: Tests: All 12 selected, none hidden , Details
 -> TargetApp (hello.2) (white) | (white)
@@ -1104,6 +1038,25 @@ Updated : File Tree with columns: Sample from 12 tests , Details
 ========== Text Info ==========
 Test succeeded
 ===============================
+
+Changing GUI status to: 'Recomputing status of HELLO.2 test-case Success ...'
+
+Updated : Test Tree with columns: Tests: All 12 selected, none hidden , Details
+-> TargetApp (hello.2) (white) | (white)
+->   OutDiff (green) | (green)
+->   Success (green) | (green)
+->   BothDiff (red) | errors different(+) (red)
+->   ErrDiff (red) | errors different (red)
+-> TargetApp (hello.3) (white) | (white)
+->   OutDiff (red) | output different (red) | Stock image 'gtk-refresh'
+->   Success (green) | (green)
+->   BothDiff (red) | errors different(+) (red)
+->   ErrDiff (red) | errors different (red)
+-> TargetApp (hello.4) (white) | (white)
+->   OutDiff (red) | output different (red) | Stock image 'gtk-refresh'
+->   Success (green) | (green)
+->   BothDiff (red) | errors different(+) (red)
+->   ErrDiff (red) | errors different (red)
 
 Changing GUI status to: 'Recomputing status of HELLO.2 test-case BothDiff ...'
 
@@ -1152,7 +1105,7 @@ Updated : Test Tree with columns: Tests: All 12 selected, none hidden , Details
 ->   BothDiff (red) | errors different(+) (red)
 ->   ErrDiff (red) | errors different (red)
 -> TargetApp (hello.3) (white) | (white)
-->   OutDiff (red) | output different (red) | Stock image 'gtk-refresh'
+->   OutDiff (green) | (green)
 ->   Success (green) | (green)
 ->   BothDiff (red) | errors different(+) (red)
 ->   ErrDiff (red) | errors different (red)
@@ -1233,7 +1186,7 @@ Updated : Test Tree with columns: Tests: All 12 selected, none hidden , Details
 ->   BothDiff (red) | errors different(+) (red)
 ->   ErrDiff (red) | errors different (red)
 -> TargetApp (hello.4) (white) | (white)
-->   OutDiff (red) | output different (red) | Stock image 'gtk-refresh'
+->   OutDiff (green) | (green)
 ->   Success (green) | (green)
 ->   BothDiff (red) | errors different(+) (red)
 ->   ErrDiff (red) | errors different (red)
@@ -1297,35 +1250,7 @@ Updated : Test Tree with columns: Tests: All 12 selected, none hidden , Details
 
 Changing GUI status to: 'Recomputed status of 12 tests.'
 
-Updated : Test Tree with columns: Tests: All 12 selected, none hidden , Details
--> TargetApp (hello.2) (white) | (white)
-->   OutDiff (green) | (green)
-->   Success (green) | (green)
-->   BothDiff (red) | errors different(+) (red)
-->   ErrDiff (red) | errors different (red)
--> TargetApp (hello.3) (white) | (white)
-->   OutDiff (green) | (green)
-->   Success (green) | (green)
-->   BothDiff (red) | errors different(+) (red)
-->   ErrDiff (red) | errors different (red)
--> TargetApp (hello.4) (white) | (white)
-->   OutDiff (green) | (green)
-->   Success (green) | (green)
-->   BothDiff (red) | errors different(+) (red)
-->   ErrDiff (red) | errors different (red)
-
 'set test selection to' event created with arguments 'ErrDiff under TargetApp (hello.3)'
-
-
-
-
-
-
-
-
-
-
-
 
 Column titles changed in Test Tree with columns: Tests: 1/12 selected, none hidden , Details
 
@@ -1344,15 +1269,15 @@ Test FAILED :
 'save results with non-default settings' event created with arguments ''
 Adding entry completion '3' ...
 ---------- Dialog 'Saving 1 tests' ----------
-Default action is labelled 'gtk-save'
+Default widget is 'gtk-save'
 'Version to save:'
 Text entry (set to '3') (drop-down list containing ['3', ''])
 'Version to save previous results as:'
 Text entry
 Check button 'Replace successfully compared files also'
 ---------------
-Button 'gtk-save', stock image 'gtk-save'
-Button 'gtk-cancel', stock image 'gtk-cancel'
+Button 'gtk-save' (Stock image 'gtk-save')
+Button 'gtk-cancel' (Stock image 'gtk-cancel')
 ---------------------------------------------
 
 'enter version to save =' event created with arguments ''
@@ -1360,14 +1285,9 @@ Edited 'Version to save' Text entry
 
 'press ok' event created with arguments ''
 
-Changing GUI status to: 'Saving 1 tests ...'
-Saving HELLO.3 test-case ErrDiff - version , exactness 1
-
 Changing GUI status to: 'Saving HELLO.3 test-case ErrDiff : errors, no version'
-Setting sensitivity of action '_Save' to False
-Setting sensitivity of action 'Save _As...' to False
 
-Changing GUI status to: 'Saved 1 tests.'
+Greyed out : _Save, Save _As...
 
 Updated : Test Tree with columns: Tests: 1/12 selected, none hidden , Details
 -> TargetApp (hello.2) (white) | (white)
@@ -1395,20 +1315,11 @@ Updated : File Tree with columns: ErrDiff , Details
 Test succeeded
 ===============================
 
+Changing GUI status to: 'Saved 1 tests.'
+
 'set test selection to' event created with arguments 'ErrDiff under TargetApp (hello.2),OutDiff under TargetApp (hello.2),Success under TargetApp (hello.2),BothDiff under TargetApp (hello.2),OutDiff under TargetApp (hello.3),Success under TargetApp (hello.3),BothDiff under TargetApp (hello.3),ErrDiff under TargetApp (hello.3),OutDiff under TargetApp (hello.4),Success under TargetApp (hello.4),BothDiff under TargetApp (hello.4),ErrDiff under TargetApp (hello.4)'
-Setting sensitivity of action '_Save' to True
-Setting sensitivity of action 'Save _As...' to True
 
-
-
-
-
-
-
-
-
-
-
+No longer greyed out : _Save, Save _As...
 
 Column titles changed in Test Tree with columns: Tests: All 12 selected, none hidden , Details
 
@@ -1433,6 +1344,23 @@ Changing GUI status to: 'Rereading configuration for HELLO.3 ...'
 Changing GUI status to: 'Rereading configuration for HELLO.4 ...'
 
 Changing GUI status to: 'Recomputing status of HELLO.2 test-case OutDiff ...'
+
+Updated : Test Tree with columns: Tests: All 12 selected, none hidden , Details
+-> TargetApp (hello.2) (white) | (white)
+->   OutDiff (green) | (green)
+->   Success (green) | (green)
+->   BothDiff (red) | errors different(+) (red)
+->   ErrDiff (red) | errors different (red) | Stock image 'gtk-refresh'
+-> TargetApp (hello.3) (white) | (white)
+->   OutDiff (green) | (green)
+->   Success (green) | (green)
+->   BothDiff (red) | errors different(+) (red)
+->   ErrDiff (green) | (green)
+-> TargetApp (hello.4) (white) | (white)
+->   OutDiff (green) | (green)
+->   Success (green) | (green)
+->   BothDiff (red) | errors different(+) (red)
+->   ErrDiff (red) | errors different (red) | Stock image 'gtk-refresh'
 
 Changing GUI status to: 'Recomputing status of HELLO.2 test-case Success ...'
 
@@ -1479,25 +1407,6 @@ Updated : Test Tree with columns: Tests: All 12 selected, none hidden , Details
 ->   OutDiff (green) | (green)
 ->   Success (green) | (green)
 ->   BothDiff (red) | errors different(+) (red)
-->   ErrDiff (red) | errors different (red) | Stock image 'gtk-refresh'
--> TargetApp (hello.3) (white) | (white)
-->   OutDiff (green) | (green)
-->   Success (green) | (green)
-->   BothDiff (red) | errors different(+) (red)
-->   ErrDiff (green) | (green)
--> TargetApp (hello.4) (white) | (white)
-->   OutDiff (green) | (green)
-->   Success (green) | (green)
-->   BothDiff (red) | errors different(+) (red)
-->   ErrDiff (red) | errors different (red) | Stock image 'gtk-refresh'
-
-Changing GUI status to: 'Recomputing status of HELLO.3 test-case OutDiff ...'
-
-Updated : Test Tree with columns: Tests: All 12 selected, none hidden , Details
--> TargetApp (hello.2) (white) | (white)
-->   OutDiff (green) | (green)
-->   Success (green) | (green)
-->   BothDiff (red) | errors different(+) (red)
 ->   ErrDiff (green) | (green)
 -> TargetApp (hello.3) (white) | (white)
 ->   OutDiff (green) | (green)
@@ -1518,6 +1427,25 @@ Updated : File Tree with columns: Sample from 12 tests , Details
 ========== Text Info ==========
 Test succeeded
 ===============================
+
+Changing GUI status to: 'Recomputing status of HELLO.3 test-case OutDiff ...'
+
+Updated : Test Tree with columns: Tests: All 12 selected, none hidden , Details
+-> TargetApp (hello.2) (white) | (white)
+->   OutDiff (green) | (green)
+->   Success (green) | (green)
+->   BothDiff (red) | errors different(+) (red)
+->   ErrDiff (green) | (green)
+-> TargetApp (hello.3) (white) | (white)
+->   OutDiff (green) | (green)
+->   Success (green) | (green)
+->   BothDiff (red) | errors different(+) (red)
+->   ErrDiff (green) | (green)
+-> TargetApp (hello.4) (white) | (white)
+->   OutDiff (green) | (green)
+->   Success (green) | (green)
+->   BothDiff (red) | errors different(+) (red)
+->   ErrDiff (red) | errors different (red) | Stock image 'gtk-refresh'
 
 Changing GUI status to: 'Recomputing status of HELLO.3 test-case Success ...'
 
@@ -1650,27 +1578,8 @@ Updated : Test Tree with columns: Tests: All 12 selected, none hidden , Details
 ->   OutDiff (green) | (green)
 ->   Success (green) | (green)
 ->   BothDiff (red) | errors different(+) (red)
-->   ErrDiff (red) | errors different (red) | Stock image 'gtk-refresh'
+->   ErrDiff (green) | (green)
 
 Changing GUI status to: 'Recomputed status of 12 tests.'
 
-Updated : Test Tree with columns: Tests: All 12 selected, none hidden , Details
--> TargetApp (hello.2) (white) | (white)
-->   OutDiff (green) | (green)
-->   Success (green) | (green)
-->   BothDiff (red) | errors different(+) (red)
-->   ErrDiff (green) | (green)
--> TargetApp (hello.3) (white) | (white)
-->   OutDiff (green) | (green)
-->   Success (green) | (green)
-->   BothDiff (red) | errors different(+) (red)
-->   ErrDiff (green) | (green)
--> TargetApp (hello.4) (white) | (white)
-->   OutDiff (green) | (green)
-->   Success (green) | (green)
-->   BothDiff (red) | errors different(+) (red)
-->   ErrDiff (green) | (green)
-
 'quit' event created with arguments ''
-
-Changing GUI status to: 'Removing all temporary files ...'
