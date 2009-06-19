@@ -71,15 +71,15 @@ brief_description:X-window error
 internal_error:1
 
 [Reported by geoff at 23Apr22:53:31]
-search_string:Cannot replay FileChoosers with GTK 2.14
-search_file:errors
-full_description:FileChooser tests fail with GTK 2.14 because the PyUseCase replayer relies on idle handlers, which are broken. See http://bugzilla.gnome.org/show_bug.cgi?id=579449
+search_string:bug in GTK 2.14
+search_file:gui_log
+full_description:FileChooser tests fail with GTK 2.14 because inspecting or attempting to change the shortcut folders dumps core. See http://bugzilla.gnome.org/show_bug.cgi?id=586315. There are 3 solutions to this: (a) Upgrade to at least GTK+ 2.16.3, if it exists yet (b) Patch your local distro with the patch in the above bug or (c) Downgrade to GTK+ 2.12
 brief_description:FileChoosers + GTK 2.14
 internal_error:1
 
-[Reported by geoff at 23Apr22:53:33]
-search_string:Cannot replay FileChoosers with GTK 2.14
-search_file:gui_log
-full_description:FileChooser tests fail with GTK 2.14 because the PyUseCase replayer relies on idle handlers, which are broken. See http://bugzilla.gnome.org/show_bug.cgi?id=579449
+[Reported by geoff at 23Apr22:53:32]
+search_string:bug in GTK 2.14
+search_file:dynamic_gui_log
+full_description:FileChooser tests fail with GTK 2.14 because inspecting or attempting to change the shortcut folders dumps core. See http://bugzilla.gnome.org/show_bug.cgi?id=586315. There are 3 solutions to this: (a) Upgrade to at least GTK+ 2.16.3, if it exists yet (b) Patch your local distro with the patch in the above bug or (c) Downgrade to GTK+ 2.12
 brief_description:FileChoosers + GTK 2.14
 internal_error:1
