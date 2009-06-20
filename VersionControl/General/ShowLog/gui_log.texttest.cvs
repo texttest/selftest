@@ -4,11 +4,12 @@ Enabling entry completion, using matching 1
 Adding entry completion '<default>' ...
 Adding entry completion 'localhost' ...
 Adding entry completion '1' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.18Jun115848.25866/texttest.cvs/VersionControl/General/ShowLog/log/logging.debug' ...
-Adding entry completion '/users/geoff/work/master/Testing/TextTest/log/logging.debug' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.18Jun115848.25866/texttest.cvs/VersionControl/General/ShowLog/log' ...
+Adding entry completion '/home/geoff/.texttest/tmp/texttest.20Jun234441.17784/texttest.cvs/VersionControl/General/ShowLog/log/logging.debug' ...
+Adding entry completion '/home/geoff/code/texttest/log/logging.debug' ...
+Adding entry completion '/home/geoff/.texttest/tmp/texttest.20Jun234441.17784/texttest.cvs/VersionControl/General/ShowLog/log' ...
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
+
 ---------- Window 'TextTest static GUI : management of tests for HELLO' ----------
 Focus widget is 'Test Tree'
 
@@ -115,7 +116,7 @@ Radio button 'Discard' (checked) (tooltip 'Show all tests which match the criter
 Button 'Filter' (Stock image 'gtk-find', accelerator 'Ctrl+F', tooltip 'filter tests to show only those indicated')
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 18Jun11:59:05.' , Non-stock image
+'TextTest started at 20Jun23:59:21.' , Non-stock image
 ----------------------------------------------------------------------------------
 
 Changing GUI status to: 'Reading tests ...'
@@ -139,7 +140,7 @@ Updated : Test Tree with columns: Tests: 0/4 selected
 ->       Test4 (grey90)
 Edited 'Test-file to search' Text entry (set to 'output')
 
-Changing GUI status to: 'Reading tests completed at 18Jun11:59:06.'
+Changing GUI status to: 'Reading tests completed at 20Jun23:59:21.'
 
 Expected application event 'all tests to be read' occurred, proceeding.
 
@@ -176,6 +177,9 @@ Changing GUI status to: 'Analyzing logs for errors.hello in test Test1'
 Changing GUI status to: 'Analyzing logs for output.hello in test Test1'
 
 Changing GUI status to: 'Analyzing logs for output.hello.version in test Test1'
+
+Changing GUI status to: 'Performed version control log for the selected files.'
+
 ---------- Dialog 'CVS Log for the selected files' ----------
 Default widget is 'gtk-close'
 Stock image 'gtk-dialog-warning' , 'CVS logs shown below.
@@ -190,7 +194,7 @@ Showing VCS log info tree with columns: File , Last revision committed (UTC)
 ->     output.hello | Thu Feb 19 20:26:26 2009
 ->     output.hello.version | Not in CVS
 
------------------------------- (vertical VCS dialog separator, 54% from the left edge)
+------------------------------ (vertical VCS dialog separator, 53% from the left edge)
 
 ========== VCS Output View ==========
 RCS file: /carm/proj/texttest-tmp/geoff/texttest.26Feb083540.12919/texttest/GUI/StaticGUI/CVSPlugin/CVSLog/cvsroot/TargetApp/Test1/errors.hello,v
@@ -223,8 +227,6 @@ Button '_Differences' , ' between revisions ' , Text entry (set to 'HEAD') , ' a
 ---------------
 Button 'gtk-close' (Stock image 'gtk-close')
 -------------------------------------------------------------
-
-Changing GUI status to: 'Performed version control log for the selected files.'
 
 'press close' event created with arguments ''
 Adding entry completion 'HEAD' ...
@@ -266,6 +268,9 @@ Changing GUI status to: 'Analyzing logs for output.hello.version in test Test1'
 Changing GUI status to: 'Analyzing logs for errors.hello in test Test2'
 
 Changing GUI status to: 'Analyzing logs for output.hello in test Test2'
+
+Changing GUI status to: 'Performed version control log for the selected files.'
+
 ---------- Dialog 'CVS Log for the selected files' ----------
 Default widget is 'gtk-close'
 Stock image 'gtk-dialog-warning' , 'CVS logs shown below.
@@ -283,7 +288,7 @@ Showing VCS log info tree with columns: File , Last revision committed (UTC)
 ->     errors.hello | Thu Feb 19 20:26:26 2009
 ->     output.hello | 4 days ago
 
------------------------------- (vertical VCS dialog separator, 54% from the left edge)
+------------------------------ (vertical VCS dialog separator, 53% from the left edge)
 
 ========== VCS Output View ==========
 RCS file: /carm/proj/texttest-tmp/geoff/texttest.26Feb083540.12919/texttest/GUI/StaticGUI/CVSPlugin/CVSLog/cvsroot/TargetApp/Test1/errors.hello,v
@@ -316,8 +321,6 @@ Button '_Differences' , ' between revisions ' , Text entry (set to 'HEAD') , ' a
 ---------------
 Button 'gtk-close' (Stock image 'gtk-close')
 -------------------------------------------------------------
-
-Changing GUI status to: 'Performed version control log for the selected files.'
 
 'select' event created with arguments 'output.hello under Test2'
 
@@ -396,6 +399,9 @@ No longer greyed out : Remove...
 'version control log for the selected files' event created with arguments ''
 
 Changing GUI status to: 'Analyzing logs for testsuite.hello in test TargetApp'
+
+Changing GUI status to: 'Performed version control log for the selected files.'
+
 ---------- Dialog 'CVS Log for the selected files' ----------
 Default widget is 'gtk-close'
 Stock image 'gtk-dialog-info' , 'CVS logs shown below.
@@ -406,7 +412,7 @@ Showing VCS log info tree with columns: File , Last revision committed (UTC)
 -> <span weight='bold'>TargetApp</span>
 ->   testsuite.hello | Thu Feb 19 20:26:26 2009
 
------------------------------- (vertical VCS dialog separator, 46% from the left edge)
+------------------------------ (vertical VCS dialog separator, 47% from the left edge)
 
 ========== VCS Output View ==========
 RCS file: /carm/proj/texttest-tmp/geoff/texttest.26Feb083540.12919/texttest/GUI/StaticGUI/CVSPlugin/CVSLog/cvsroot/TargetApp/testsuite.hello,v
@@ -436,8 +442,6 @@ Button '_Differences' , ' between revisions ' , Text entry (set to 'HEAD') , ' a
 Button 'gtk-close' (Stock image 'gtk-close')
 -------------------------------------------------------------
 
-Changing GUI status to: 'Performed version control log for the selected files.'
-
 'press close' event created with arguments ''
 
 'set test selection to' event created with arguments 'Suite'
@@ -466,6 +470,9 @@ Changing GUI status to: 'Analyzing logs for output.hello in test Test4'
 Changing GUI status to: 'Analyzing logs for testsuite.hello in test Subsuite'
 
 Changing GUI status to: 'Analyzing logs for testsuite.hello in test Suite'
+
+Changing GUI status to: 'Performed recursive version control log for the selected files.'
+
 ---------- Dialog 'Recursive CVS Log for the selected files' ----------
 Default widget is 'gtk-close'
 Stock image 'gtk-dialog-warning' , 'CVS logs shown below.
@@ -514,8 +521,6 @@ Button '_Differences' , ' between revisions ' , Text entry (set to 'HEAD') , ' a
 ---------------
 Button 'gtk-close' (Stock image 'gtk-close')
 -----------------------------------------------------------------------
-
-Changing GUI status to: 'Performed recursive version control log for the selected files.'
 
 'select' event created with arguments 'testsuite.hello under Subsuite'
 
@@ -571,6 +576,9 @@ Description:
 'version control log for the selected files' event created with arguments ''
 
 Changing GUI status to: 'Analyzing logs for output.hello in test Test1'
+
+Changing GUI status to: 'Performed version control log for the selected files.'
+
 ---------- Dialog 'CVS Log for the selected files' ----------
 Default widget is 'gtk-close'
 Stock image 'gtk-dialog-info' , 'CVS logs shown below.
@@ -612,8 +620,6 @@ Button '_Differences' , ' between revisions ' , Text entry (set to 'HEAD') , ' a
 Button 'gtk-close' (Stock image 'gtk-close')
 -------------------------------------------------------------
 
-Changing GUI status to: 'Performed version control log for the selected files.'
-
 'press close' event created with arguments ''
 
 'set test selection to' event created with arguments 'Test1,Test2'
@@ -653,6 +659,9 @@ Changing GUI status to: 'Analyzing logs for output.hello.version in test Test1'
 Changing GUI status to: 'Analyzing logs for errors.hello in test Test2'
 
 Changing GUI status to: 'Analyzing logs for output.hello in test Test2'
+
+Changing GUI status to: 'Performed version control log for the selected files.'
+
 ---------- Dialog 'CVS Log for the selected files' ----------
 Default widget is 'gtk-close'
 Stock image 'gtk-dialog-warning' , 'CVS logs shown below.
@@ -670,7 +679,7 @@ Showing VCS log info tree with columns: File , Last revision committed (UTC)
 ->     errors.hello | Thu Feb 19 20:26:26 2009
 ->     output.hello | 4 days ago
 
------------------------------- (vertical VCS dialog separator, 54% from the left edge)
+------------------------------ (vertical VCS dialog separator, 53% from the left edge)
 
 ========== VCS Output View ==========
 RCS file: /carm/proj/texttest-tmp/geoff/texttest.26Feb083540.12919/texttest/GUI/StaticGUI/CVSPlugin/CVSLog/cvsroot/TargetApp/Test1/errors.hello,v
@@ -703,8 +712,6 @@ Button '_Differences' , ' between revisions ' , Text entry (set to 'HEAD') , ' a
 ---------------
 Button 'gtk-close' (Stock image 'gtk-close')
 -------------------------------------------------------------
-
-Changing GUI status to: 'Performed version control log for the selected files.'
 
 'press close' event created with arguments ''
 

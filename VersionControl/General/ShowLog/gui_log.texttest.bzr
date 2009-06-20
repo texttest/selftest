@@ -4,11 +4,12 @@ Enabling entry completion, using matching 1
 Adding entry completion '<default>' ...
 Adding entry completion 'localhost' ...
 Adding entry completion '1' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.18Jun133936.27024/texttest.bzr/VersionControl/General/ShowLog/log/logging.debug' ...
-Adding entry completion '/users/geoff/work/master/Testing/TextTest/log/logging.debug' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.18Jun133936.27024/texttest.bzr/VersionControl/General/ShowLog/log' ...
+Adding entry completion '/home/geoff/.texttest/tmp/texttest.20Jun234441.17784/texttest.bzr/VersionControl/General/ShowLog/log/logging.debug' ...
+Adding entry completion '/home/geoff/code/texttest/log/logging.debug' ...
+Adding entry completion '/home/geoff/.texttest/tmp/texttest.20Jun234441.17784/texttest.bzr/VersionControl/General/ShowLog/log' ...
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
+
 ---------- Window 'TextTest static GUI : management of tests for HELLO' ----------
 Focus widget is 'Test Tree'
 
@@ -114,7 +115,7 @@ Radio button 'Discard' (checked) (tooltip 'Show all tests which match the criter
 Button 'Filter' (Stock image 'gtk-find', accelerator 'Ctrl+F', tooltip 'filter tests to show only those indicated')
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 18Jun13:40:14.' , Non-stock image
+'TextTest started at 21Jun00:00:35.' , Non-stock image
 ----------------------------------------------------------------------------------
 
 Changing GUI status to: 'Reading tests ...'
@@ -138,7 +139,7 @@ Updated : Test Tree with columns: Tests: 0/4 selected
 ->       Test4 (grey90)
 Edited 'Test-file to search' Text entry (set to 'output')
 
-Changing GUI status to: 'Reading tests completed at 18Jun13:40:14.'
+Changing GUI status to: 'Reading tests completed at 21Jun00:00:35.'
 
 Expected application event 'all tests to be read' occurred, proceeding.
 
@@ -175,6 +176,9 @@ Changing GUI status to: 'Analyzing logs for errors.hello in test Test1'
 Changing GUI status to: 'Analyzing logs for output.hello in test Test1'
 
 Changing GUI status to: 'Analyzing logs for output.hello.version in test Test1'
+
+Changing GUI status to: 'Performed version control log for the selected files.'
+
 ---------- Dialog 'Bazaar Log for the selected files' ----------
 Default widget is 'gtk-close'
 Stock image 'gtk-dialog-warning' , 'Bazaar logs shown below.
@@ -189,7 +193,7 @@ Showing VCS log info tree with columns: File , Last revision committed (UTC)
 ->     output.hello | Thu Feb 19 19:26:26 2009
 ->     output.hello.version | Not in Bazaar
 
------------------------------- (vertical VCS dialog separator, 54% from the left edge)
+------------------------------ (vertical VCS dialog separator, 53% from the left edge)
 
 ========== VCS Output View ==========
 ------------------------------------------------------------
@@ -213,8 +217,6 @@ Button '_Differences' , ' between revisions ' , Text entry (set to '-1') , ' and
 ---------------
 Button 'gtk-close' (Stock image 'gtk-close')
 ----------------------------------------------------------------
-
-Changing GUI status to: 'Performed version control log for the selected files.'
 
 'press close' event created with arguments ''
 Adding entry completion '-1' ...
@@ -256,6 +258,9 @@ Changing GUI status to: 'Analyzing logs for output.hello.version in test Test1'
 Changing GUI status to: 'Analyzing logs for errors.hello in test Test2'
 
 Changing GUI status to: 'Analyzing logs for output.hello in test Test2'
+
+Changing GUI status to: 'Performed version control log for the selected files.'
+
 ---------- Dialog 'Bazaar Log for the selected files' ----------
 Default widget is 'gtk-close'
 Stock image 'gtk-dialog-warning' , 'Bazaar logs shown below.
@@ -273,7 +278,7 @@ Showing VCS log info tree with columns: File , Last revision committed (UTC)
 ->     errors.hello | Thu Feb 19 19:26:26 2009
 ->     output.hello | 4 days ago
 
------------------------------- (vertical VCS dialog separator, 54% from the left edge)
+------------------------------ (vertical VCS dialog separator, 53% from the left edge)
 
 ========== VCS Output View ==========
 ------------------------------------------------------------
@@ -297,8 +302,6 @@ Button '_Differences' , ' between revisions ' , Text entry (set to '-1') , ' and
 ---------------
 Button 'gtk-close' (Stock image 'gtk-close')
 ----------------------------------------------------------------
-
-Changing GUI status to: 'Performed version control log for the selected files.'
 
 'select' event created with arguments 'output.hello under Test2'
 
@@ -368,6 +371,9 @@ No longer greyed out : Remove...
 'version control log for the selected files' event created with arguments ''
 
 Changing GUI status to: 'Analyzing logs for testsuite.hello in test TargetApp'
+
+Changing GUI status to: 'Performed version control log for the selected files.'
+
 ---------- Dialog 'Bazaar Log for the selected files' ----------
 Default widget is 'gtk-close'
 Stock image 'gtk-dialog-info' , 'Bazaar logs shown below.
@@ -378,7 +384,7 @@ Showing VCS log info tree with columns: File , Last revision committed (UTC)
 -> <span weight='bold'>TargetApp</span>
 ->   testsuite.hello | <span weight='bold' foreground='red'>Today at 20:14:06</span>
 
------------------------------- (vertical VCS dialog separator, 46% from the left edge)
+------------------------------ (vertical VCS dialog separator, 47% from the left edge)
 
 ========== VCS Output View ==========
 ------------------------------------------------------------
@@ -402,8 +408,6 @@ Button '_Differences' , ' between revisions ' , Text entry (set to '-1') , ' and
 ---------------
 Button 'gtk-close' (Stock image 'gtk-close')
 ----------------------------------------------------------------
-
-Changing GUI status to: 'Performed version control log for the selected files.'
 
 'press close' event created with arguments ''
 
@@ -435,6 +439,9 @@ Changing GUI status to: 'Analyzing logs for output.hello in test Test4'
 Changing GUI status to: 'Analyzing logs for testsuite.hello in test Subsuite'
 
 Changing GUI status to: 'Analyzing logs for testsuite.hello in test Suite'
+
+Changing GUI status to: 'Performed recursive version control log for the selected files.'
+
 ---------- Dialog 'Recursive Bazaar Log for the selected files' ----------
 Default widget is 'gtk-close'
 Stock image 'gtk-dialog-warning' , 'Bazaar logs shown below.
@@ -455,7 +462,7 @@ Showing VCS log info tree with columns: File , Last revision committed (UTC)
 ->       testsuite.hello | <span weight='bold' foreground='red'>Today at 06:31:01</span>
 ->     testsuite.hello | Thu Feb 19 19:26:26 2009
 
------------------------------- (vertical VCS dialog separator, 65% from the left edge)
+------------------------------ (vertical VCS dialog separator, 64% from the left edge)
 
 ========== VCS Output View ==========
 ------------------------------------------------------------
@@ -472,8 +479,6 @@ Button '_Differences' , ' between revisions ' , Text entry (set to '-1') , ' and
 ---------------
 Button 'gtk-close' (Stock image 'gtk-close')
 --------------------------------------------------------------------------
-
-Changing GUI status to: 'Performed recursive version control log for the selected files.'
 
 'select' event created with arguments 'testsuite.hello under Subsuite'
 
@@ -520,6 +525,9 @@ Description:
 'version control log for the selected files' event created with arguments ''
 
 Changing GUI status to: 'Analyzing logs for output.hello in test Test1'
+
+Changing GUI status to: 'Performed version control log for the selected files.'
+
 ---------- Dialog 'Bazaar Log for the selected files' ----------
 Default widget is 'gtk-close'
 Stock image 'gtk-dialog-info' , 'Bazaar logs shown below.
@@ -548,8 +556,6 @@ Button '_Differences' , ' between revisions ' , Text entry (set to '-1') , ' and
 ---------------
 Button 'gtk-close' (Stock image 'gtk-close')
 ----------------------------------------------------------------
-
-Changing GUI status to: 'Performed version control log for the selected files.'
 
 'press close' event created with arguments ''
 
@@ -590,6 +596,9 @@ Changing GUI status to: 'Analyzing logs for output.hello.version in test Test1'
 Changing GUI status to: 'Analyzing logs for errors.hello in test Test2'
 
 Changing GUI status to: 'Analyzing logs for output.hello in test Test2'
+
+Changing GUI status to: 'Performed version control log for the selected files.'
+
 ---------- Dialog 'Bazaar Log for the selected files' ----------
 Default widget is 'gtk-close'
 Stock image 'gtk-dialog-warning' , 'Bazaar logs shown below.
@@ -607,7 +616,7 @@ Showing VCS log info tree with columns: File , Last revision committed (UTC)
 ->     errors.hello | Thu Feb 19 19:26:26 2009
 ->     output.hello | 4 days ago
 
------------------------------- (vertical VCS dialog separator, 54% from the left edge)
+------------------------------ (vertical VCS dialog separator, 53% from the left edge)
 
 ========== VCS Output View ==========
 ------------------------------------------------------------
@@ -631,8 +640,6 @@ Button '_Differences' , ' between revisions ' , Text entry (set to '-1') , ' and
 ---------------
 Button 'gtk-close' (Stock image 'gtk-close')
 ----------------------------------------------------------------
-
-Changing GUI status to: 'Performed version control log for the selected files.'
 
 'press close' event created with arguments ''
 

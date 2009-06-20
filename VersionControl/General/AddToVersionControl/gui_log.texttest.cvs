@@ -4,11 +4,12 @@ Enabling entry completion, using matching 1
 Adding entry completion '<default>' ...
 Adding entry completion 'localhost' ...
 Adding entry completion '1' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.18Jun133936.27024/texttest.cvs/VersionControl/General/AddToVersionControl/log/logging.debug' ...
-Adding entry completion '/users/geoff/work/master/Testing/TextTest/log/logging.debug' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.18Jun133936.27024/texttest.cvs/VersionControl/General/AddToVersionControl/log' ...
+Adding entry completion '/home/geoff/.texttest/tmp/texttest.20Jun234441.17784/texttest.cvs/VersionControl/General/AddToVersionControl/log/logging.debug' ...
+Adding entry completion '/home/geoff/code/texttest/log/logging.debug' ...
+Adding entry completion '/home/geoff/.texttest/tmp/texttest.20Jun234441.17784/texttest.cvs/VersionControl/General/AddToVersionControl/log' ...
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
+
 ---------- Window 'TextTest static GUI : management of tests for HELLO' ----------
 Focus widget is 'Test Tree'
 
@@ -115,7 +116,7 @@ Radio button 'Discard' (checked) (tooltip 'Show all tests which match the criter
 Button 'Filter' (Stock image 'gtk-find', accelerator 'Ctrl+F', tooltip 'filter tests to show only those indicated')
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 18Jun13:40:15.' , Non-stock image
+'TextTest started at 21Jun00:00:16.' , Non-stock image
 ----------------------------------------------------------------------------------
 
 Changing GUI status to: 'Reading tests ...'
@@ -139,7 +140,7 @@ Updated : Test Tree with columns: Tests: 0/4 selected
 ->       Test4 (grey90)
 Edited 'Test-file to search' Text entry (set to 'output')
 
-Changing GUI status to: 'Reading tests completed at 18Jun13:40:15.'
+Changing GUI status to: 'Reading tests completed at 21Jun00:00:16.'
 
 Expected application event 'all tests to be read' occurred, proceeding.
 
@@ -169,6 +170,9 @@ Adding entry completion 'output' ...
 Changing GUI status to: 'Analyzing add for Subsuite in test Suite'
 
 Changing GUI status to: 'Analyzing add for testsuite.hello in test Subsuite'
+
+Changing GUI status to: 'Performed version control add for the selected files.'
+
 ---------- Dialog 'CVS Add for the selected files' ----------
 Default widget is 'gtk-close'
 Stock image 'gtk-dialog-warning' , 'Output from 'CVS add' shown below.
@@ -193,8 +197,6 @@ Button '_Differences' , ' between revisions ' , Text entry (set to 'HEAD') , ' a
 Button 'gtk-close' (Stock image 'gtk-close')
 -------------------------------------------------------------
 
-Changing GUI status to: 'Performed version control add for the selected files.'
-
 'press close' event created with arguments ''
 Adding entry completion 'HEAD' ...
 
@@ -215,6 +217,9 @@ Changing GUI status to: 'Analyzing add for errors.hello in test Test4'
 Changing GUI status to: 'Analyzing add for output.hello in test Test4'
 
 Changing GUI status to: 'Analyzing add for testsuite.hello in test Subsuite'
+
+Changing GUI status to: 'Performed recursive version control add for the selected files.'
+
 ---------- Dialog 'Recursive CVS Add for the selected files' ----------
 Default widget is 'gtk-close'
 Stock image 'gtk-dialog-warning' , 'Output from 'CVS add' shown below.'
@@ -231,7 +236,7 @@ Showing VCS add info tree with columns: File
 ->         output.hello
 ->       testsuite.hello
 
------------------------------- (vertical VCS dialog separator, 27% from the left edge)
+------------------------------ (vertical VCS dialog separator, 26% from the left edge)
 
 ========== VCS Output View ==========
 cvs add: /carm/proj/texttest-tmp/geoff/texttest.18Mar115914.1801/texttest.cvs/VersionControl/General/AddToVersionControl/TargetApp/Suite/Subsuite/CVS already exists
@@ -244,8 +249,6 @@ Button '_Differences' , ' between revisions ' , Text entry (set to 'HEAD') , ' a
 Button 'gtk-close' (Stock image 'gtk-close')
 -----------------------------------------------------------------------
 
-Changing GUI status to: 'Performed recursive version control add for the selected files.'
-
 'select' event created with arguments 'errors.hello under Test4'
 
 ========== VCS Output View ==========
@@ -254,6 +257,7 @@ cvs add: use 'cvs commit' to add this file permanently
 =====================================
 
 'show version control status' event created with arguments ''
+
 ---------- Dialog 'CVS Status for the selected files' ----------
 Default widget is 'gtk-close'
 Stock image 'gtk-dialog-info' , 'CVS status shown below.
@@ -267,7 +271,7 @@ Showing VCS status info tree with columns: File , Information
 ->       <span weight='bold'>Test4</span>
 ->         errors.hello | <span weight='bold'>Locally Added</span>
 
------------------------------- (vertical VCS dialog separator, 38% from the left edge)
+------------------------------ (vertical VCS dialog separator, 39% from the left edge)
 
 ========== VCS Output View ==========
 ===================================================================
@@ -315,6 +319,9 @@ Changing GUI status to: 'Analyzing add for Test2 in test TargetApp'
 Changing GUI status to: 'Analyzing add for errors.hello in test Test2'
 
 Changing GUI status to: 'Analyzing add for output.hello in test Test2'
+
+Changing GUI status to: 'Performed recursive version control add for the selected files.'
+
 ---------- Dialog 'Recursive CVS Add for the selected files' ----------
 Default widget is 'gtk-close'
 Stock image 'gtk-dialog-warning' , 'Output from 'CVS add' shown below.'
@@ -337,8 +344,6 @@ Button '_Differences' , ' between revisions ' , Text entry (set to 'HEAD') , ' a
 ---------------
 Button 'gtk-close' (Stock image 'gtk-close')
 -----------------------------------------------------------------------
-
-Changing GUI status to: 'Performed recursive version control add for the selected files.'
 
 'press close' event created with arguments ''
 
@@ -367,6 +372,9 @@ Changing GUI status to: 'Analyzing add for errors.hello in test Test1'
 Changing GUI status to: 'Analyzing add for output.hello in test Test1'
 
 Changing GUI status to: 'Analyzing add for output.hello.version in test Test1'
+
+Changing GUI status to: 'Performed version control add for the selected files.'
+
 ---------- Dialog 'CVS Add for the selected files' ----------
 Default widget is 'gtk-close'
 Stock image 'gtk-dialog-warning' , 'Output from 'CVS add' shown below.
@@ -379,7 +387,7 @@ Showing VCS add info tree with columns: File
 ->     output.hello
 ->     output.hello.version
 
------------------------------- (vertical VCS dialog separator, 27% from the left edge)
+------------------------------ (vertical VCS dialog separator, 26% from the left edge)
 
 ========== VCS Output View ==========
 cvs add: /carm/proj/texttest-tmp/geoff/texttest.18Mar115914.1801/texttest.cvs/VersionControl/General/AddToVersionControl/TargetApp/Test1/CVS already exists
@@ -391,8 +399,6 @@ Button '_Differences' , ' between revisions ' , Text entry (set to 'HEAD') , ' a
 ---------------
 Button 'gtk-close' (Stock image 'gtk-close')
 -------------------------------------------------------------
-
-Changing GUI status to: 'Performed version control add for the selected files.'
 
 'select' event created with arguments 'output.hello.version'
 

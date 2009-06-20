@@ -6,11 +6,12 @@ Adding entry completion 'extra1' ...
 Adding entry completion 'extra2' ...
 Adding entry completion 'localhost' ...
 Adding entry completion '1' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.18Jun133936.27024/texttest/TestSelf/ExtraVersions/GUI/SortTestOnlyInExtra/log/logging.debug' ...
-Adding entry completion '/users/geoff/work/master/Testing/TextTest/log/logging.debug' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.18Jun133936.27024/texttest/TestSelf/ExtraVersions/GUI/SortTestOnlyInExtra/log' ...
+Adding entry completion '/home/geoff/.texttest/tmp/texttest.20Jun234441.17784/texttest/TestSelf/ExtraVersions/GUI/SortTestOnlyInExtra/log/logging.debug' ...
+Adding entry completion '/home/geoff/code/texttest/log/logging.debug' ...
+Adding entry completion '/home/geoff/.texttest/tmp/texttest.20Jun234441.17784/texttest/TestSelf/ExtraVersions/GUI/SortTestOnlyInExtra/log' ...
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
+
 ---------- Window 'TextTest static GUI : management of tests for HELLO' ----------
 Focus widget is 'Test Tree'
 
@@ -101,7 +102,7 @@ Radio button 'Discard' (checked) (tooltip 'Show all tests which match the criter
 Button 'Filter' (Stock image 'gtk-find', accelerator 'Ctrl+F', tooltip 'filter tests to show only those indicated')
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 18Jun13:40:00.' , Non-stock image
+'TextTest started at 20Jun23:52:28.' , Non-stock image
 ----------------------------------------------------------------------------------
 
 Changing GUI status to: 'Reading tests ...'
@@ -127,7 +128,7 @@ Updated : Test Tree with columns: Tests: 0/6 selected, 0/4 distinct
 ->   Extra2 (grey90)
 Edited 'Test-file to search' Text entry (set to 'output')
 
-Changing GUI status to: 'Reading tests completed at 18Jun13:40:00.'
+Changing GUI status to: 'Reading tests completed at 20Jun23:52:28.'
 
 Expected application event 'all tests to be read' occurred, proceeding.
 
@@ -157,19 +158,6 @@ Root test suite
 Adding entry completion 'output' ...
 
 Changing GUI status to: 'Sorting HELLO test-suite TargetApp'
----------- Dialog 'TextTest Warning' ----------
-Default widget is 'gtk-ok'
-Stock image 'gtk-dialog-warning' , ========== GtkTextView ==========
-The test suite
-'TargetApp'
-contains tests which are not present in the default version.
-Tests which are only present in some versions will not be
-mixed with tests in the default version, which might lead to
-the suite not looking entirely sorted.
-=================================
----------------
-Button 'gtk-ok' (Stock image 'gtk-ok')
------------------------------------------------
 
 Updated : Test Tree with columns: Tests: 0/6 selected, 0/4 distinct
 -> TargetApp (hello) (grey90)
@@ -180,11 +168,6 @@ Updated : Test Tree with columns: Tests: 0/6 selected, 0/4 distinct
 
 Changing GUI status to: 'Sorted testsuite file for 3 tests in alphabetical order.'
 
-'agree to texttest message' event created with arguments ''
-
-'sort testsuite file for the selected test suite in reversed alphabetical order' event created with arguments ''
-
-Changing GUI status to: 'Sorting HELLO test-suite TargetApp'
 ---------- Dialog 'TextTest Warning' ----------
 Default widget is 'gtk-ok'
 Stock image 'gtk-dialog-warning' , ========== GtkTextView ==========
@@ -199,6 +182,12 @@ the suite not looking entirely sorted.
 Button 'gtk-ok' (Stock image 'gtk-ok')
 -----------------------------------------------
 
+'agree to texttest message' event created with arguments ''
+
+'sort testsuite file for the selected test suite in reversed alphabetical order' event created with arguments ''
+
+Changing GUI status to: 'Sorting HELLO test-suite TargetApp'
+
 Updated : Test Tree with columns: Tests: 0/6 selected, 0/4 distinct
 -> TargetApp (hello) (grey90)
 ->   Common (grey90)
@@ -207,6 +196,20 @@ Updated : Test Tree with columns: Tests: 0/6 selected, 0/4 distinct
 ->   Extra2 (grey90)
 
 Changing GUI status to: 'Sorted testsuite file for 3 tests in reversed alphabetical order.'
+
+---------- Dialog 'TextTest Warning' ----------
+Default widget is 'gtk-ok'
+Stock image 'gtk-dialog-warning' , ========== GtkTextView ==========
+The test suite
+'TargetApp'
+contains tests which are not present in the default version.
+Tests which are only present in some versions will not be
+mixed with tests in the default version, which might lead to
+the suite not looking entirely sorted.
+=================================
+---------------
+Button 'gtk-ok' (Stock image 'gtk-ok')
+-----------------------------------------------
 
 'agree to texttest message' event created with arguments ''
 
