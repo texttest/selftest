@@ -1,0 +1,154 @@
+
+Waiting for application event 'all tests to be read' to occur.
+Waiting for application event 'test Basic to start' to occur.
+Enabling entry completion, using matching 1
+Setting window width to 60% of screen.
+Setting window height to 83% of screen.
+
+---------- Window 'TextTest dynamic GUI : testing HELLO (started at 22Jun21:56:35)' ----------
+Focus widget is 'Test Tree'
+
+Menu Bar :
+  'File' Menu :
+    'Save' (Stock image 'gtk-save', greyed out, accelerator 'Ctrl+S')
+    'Save As...' (Stock image 'gtk-save', greyed out, accelerator 'Ctrl+Alt+S')
+      ----
+    'Save Selection...' (Stock image 'gtk-save-as', greyed out, accelerator 'Ctrl+D')
+      ----
+    'Quit' (Stock image 'gtk-quit', accelerator 'Ctrl+Q')
+  'View' Menu :
+    'Annotate' (Stock image 'gtk-index')
+      ----
+    'Toolbar' (checked)
+    'Shortcut bar' (checked)
+    'Status bar' (checked)
+  'Actions' Menu :
+    'Kill' (Stock image 'gtk-stop', greyed out, accelerator 'Ctrl+Delete')
+    'Mark' (greyed out, accelerator 'Shift+Ctrl+M')
+    'Unmark' (greyed out, accelerator 'Shift+Ctrl+U')
+      ----
+    'Recompute Status' (Stock image 'gtk-refresh', greyed out, accelerator 'F5')
+  'Help' Menu :
+    'Migration Notes'
+    'Change Logs'
+      ----
+    'Component Versions'
+      ----
+    'About TextTest' (Stock image 'gtk-about')
+
+Tool Bar :
+  _Quit (Stock image 'gtk-quit', accelerator 'Ctrl+Q', tooltip 'Quit')
+  _Kill (Stock image 'gtk-stop', greyed out, accelerator 'Ctrl+Delete', tooltip 'Kill selected tests')
+  _Save (Stock image 'gtk-save', greyed out, accelerator 'Ctrl+S', tooltip 'Save results for selected tests')
+  Progress bar set to fraction 0.0, text 'All 0 tests completed at 22Jun21:56:35'
+...........
+
+Showing Test Tree with columns: Tests: All 0 selected , Details
+
+------------------------------ (vertical pane separator, 68% from the left edge)
+...........
+
+Showing Notebook with tabs: Status , Run Info
+Viewing page 'Status'
+
+Showing Test Status View with columns: Status , Number , Visible
+'Shortcuts:' , Button '_New'
+...........
+'TextTest started at 22Jun21:56:35.' , Non-stock image
+----------------------------------------------------------------------------------------------
+
+Progress bar set to fraction 0.0, text '0 of 1 tests completed'
+
+Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
+-> TargetApp (hello) (white) | (white)
+->   Suite1 (white) | (white)
+->     Basic (white) | (white)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white,bold) | 1 (white,bold) | Check box (checked)
+
+Progress bar set to fraction 0.0, text '0 of 1 tests completed'
+
+Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
+-> TargetApp (hello) (white) | (white)
+->   Suite1 (white) | (white)
+->     Basic (yellow) | (yellow)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white) | 0 (white) | Check box (checked)
+-> Running (yellow,bold) | 1 (yellow,bold) | Check box (checked)
+
+Expected application event 'all tests to be read' occurred, proceeding.
+Expected application event 'test Basic to start' occurred, proceeding.
+
+'set test selection to' event created with arguments 'Basic'
+
+No longer greyed out : S_ave Selection..., _Kill, Recompute Status
+
+Column titles changed in Test Tree with columns: Tests: All 1 selected, none hidden , Details
+
+Current page changed in Notebook with tabs: Test , Status , Run Info
+Viewing page 'Test'
+...........
+
+Showing File Tree with columns: Basic , Details
+-> Temporary Files
+->   errors.hello (yellow) | (yellow)
+->   output.hello (yellow) | (yellow)
+
+------------------------------ (horizontal pane separator, 46% from the top)
+...........
+
+========== Text Info ==========
+Running on sofa-pc
+
+To obtain the latest progress information and an up-to-date comparison of the files above, perform 'recompute status' (press 'F5')
+===============================
+
+'set file selection to' event created with arguments 'output.hello'
+
+'follow file progress' event created with arguments ''
+Following file /home/geoff/.texttest/tmp/texttest.22Jun215634.10408/texttest/TestSelf/RunningTests/GUI/OtherOperations/ViewRunningTest/texttesttmp/console.22Jun215635.10418/hello/Suite1/Basic/output.hello using 'xterm -bg black -fg white -T "Basic (output.hello)" -e tail -f'
+
+Changing GUI status to: 'Started "xterm -bg black -fg white -T "Basic (output.hello)" -e tail -f output.hello" in background (from test Basic).'
+
+'select file' event created with arguments 'output.hello'
+Viewing file /home/geoff/.texttest/tmp/texttest.22Jun215634.10408/texttest/TestSelf/RunningTests/GUI/OtherOperations/ViewRunningTest/texttesttmp/console.22Jun215635.10418/hello/Suite1/Basic/output.hello using 'emacs', refresh set to False
+
+Waiting for application event 'file editing operations to complete' to occur.
+
+Changing GUI status to: 'Started "emacs output.hello" in background (from test Basic).'
+
+Greyed out : _Kill
+No longer greyed out : _Save, Save _As..., _Mark
+
+Progress bar set to fraction 1.0, text 'All 1 tests completed at 22Jun21:56:37'
+
+Updated : Test Tree with columns: Tests: All 1 selected, none hidden , Details
+-> TargetApp (hello) (white) | (white)
+->   Suite1 (white) | (white)
+->     Basic (red) | output different (red)
+
+Updated : File Tree with columns: Basic , Details
+-> Comparison Files
+->   errors.hello (green) | (green)
+->   output.hello (red) | (red)
+
+========== Text Info ==========
+Test FAILED :
+---------- Differences in output ----------
+1c1
+< Hello Baby!
+---
+> Hello World!
+===============================
+
+Expected application event 'file editing operations to complete' occurred, proceeding.
+
+'quit' event created with arguments ''
+
+Changing GUI status to: 'Terminating all external viewers ...'
+Killing 'xterm -bg black -fg white -T "Basic (output.hello)" -e tail -f output.hello (from test Basic)' interactive process
+
+Changing GUI status to: 'Waiting for all tests to terminate ...'
+Only one test found, selecting Basic

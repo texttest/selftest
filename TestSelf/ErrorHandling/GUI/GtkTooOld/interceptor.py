@@ -1,11 +1,16 @@
 import __builtin__
 
-pygtk_version = 2, 2, 0
+class MyGtkModule:
+    def __init__(self):
+        self.pygtk_version = 2, 2, 0
+        
+    def __getattr__(self, name):
+        return self
 
 origImport = __builtin__.__import__
 def myImport(name, *args, **kwargs):
     if name == "gtk":
-        return origImport("interceptor", *args, **kwargs)
+        return MyGtkModule()
     else:
         return origImport(name, *args, **kwargs)
 

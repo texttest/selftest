@@ -7,11 +7,7 @@ import sys, time, os, signal
 if os.name == "posix":
     signal.signal(signal.SIGINT, signal.SIG_DFL)
 
-def getSleepLength():
-    return int(os.getenv("SLEEP_LENGTH", 1000))
-
-sleepLength = getSleepLength()
-print "Sleeping for", sleepLength, "seconds..."
+print "Sleeping for 1000 seconds..."
 sys.stdout.flush()
-time.sleep(sleepLength)
+time.sleep(1000) # Until we get killed, basically
 print "Done"
