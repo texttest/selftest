@@ -1,14 +1,15 @@
 wait for completion of test actions
 select file output.hello
 select file errors.hello
+wait for the file editing process to start
 set file selection to output.hello
 view filtered file
+wait for the file editing process to start
 set file selection to output.hello
 view raw differences
 set file selection to errors.hello
 view raw differences
 set file selection to output.hello
 view file
-show component version information
-press close
+wait for the file editing process to start
 quit
