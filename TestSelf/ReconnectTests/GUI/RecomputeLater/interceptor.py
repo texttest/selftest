@@ -12,7 +12,7 @@ class UptodateStat:
         if item != stat.ST_MTIME or self.filename.find("TargetApp") != -1:
             return origItem
         else:
-            return origItem + 10
+            return origItem + 60
 
 origStat = os.stat
 def myStat(filename):
