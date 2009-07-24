@@ -7,6 +7,12 @@ ClosedBug
 # Make sure bug numbers that don't exist don't fool us
 UnknownBug
 
+# If we have an internal error, choose that over the bug
+PreferInternalErrorToBug
+
+# If we have a known bug and a description, choose the bug
+PreferBugToLabel
+
 # Make sure we don't stack trace if we can't parse what is returned by the bugzilla cli script
 IncompatibleVersion
 
