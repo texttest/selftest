@@ -1,7 +1,7 @@
 
 import time
 
-def sleep(seconds):
+def fakeSleep(seconds):
     pass
 
-time.sleep = sleep
+time.sleep = fakeSleep
