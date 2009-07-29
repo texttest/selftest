@@ -1,8 +1,10 @@
-import gtk, sys
+import gtk, gobject, sys
 
 sys.version_info = 2, 9, 42, "final", 0
 gtk.pygtk_version = 2, 42, 0
 gtk.gtk_version = 2, 58, 42
+gobject.pygobject_version = 2, 61, 42
+gobject.glib_version = 2, 74, 42
 
 # Make sure the tests with Swedish chars work correctly
 # on systems with other default locales than ISO8859-1 ...
