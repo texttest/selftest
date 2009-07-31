@@ -6,4 +6,5 @@ if os.path.isfile("xvfblock"):
     os.kill(os.getppid(), signal.SIGUSR1)
 else:
     open("xvfblock", "w").write("dummy")
-    time.sleep(1000)
+    
+signal.pause()

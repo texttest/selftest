@@ -4,6 +4,7 @@ import os, time, signal, sys
 
 if ":3" in sys.argv:
     os.kill(os.getppid(), signal.SIGUSR1)
+    signal.pause()
 else:
     sys.stderr.write("""
 Fatal server error:
