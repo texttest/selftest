@@ -4,9 +4,9 @@ Enabling entry completion, using matching 1
 Adding entry completion '<default>' ...
 Adding entry completion 'localhost' ...
 Adding entry completion '1' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.29Jul112557.3285/texttest/GUI/StaticGUI/Miscellaneous/ViewHelp/log/logging.debug' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.31Jul152150.32427/texttest/GUI/StaticGUI/Miscellaneous/ViewHelp/log/logging.debug' ...
 Adding entry completion '/users/geoff/work/master/Testing/TextTest/log/logging.debug' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.29Jul112557.3285/texttest/GUI/StaticGUI/Miscellaneous/ViewHelp/log' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.31Jul152150.32427/texttest/GUI/StaticGUI/Miscellaneous/ViewHelp/log' ...
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
 
@@ -58,10 +58,13 @@ Menu Bar :
     'Record Use-Case' (Stock image 'gtk-media-record', greyed out, accelerator 'F9')
     'Reset' (Stock image 'gtk-revert-to-saved', accelerator 'Ctrl+E')
   'Help' Menu :
+    'Quick Start'
     'Migration Notes'
     'Change Logs'
       ----
     'Component Versions'
+    'Credits'
+    'License'
       ----
     'About TextTest' (Stock image 'gtk-about')
 
@@ -100,7 +103,7 @@ Radio button 'Discard' (checked) (tooltip 'Show all tests which match the criter
 Button 'Filter' (Stock image 'gtk-find', accelerator 'Ctrl+F', tooltip 'filter tests to show only those indicated')
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 29Jul11:25:58.' , Non-stock image
+'TextTest started at 31Jul15:21:52.' , Non-stock image
 --------------------------------------------------------------------------------
 
 Changing GUI status to: 'Reading tests ...'
@@ -146,7 +149,7 @@ Updated : Test Tree with columns: Tests: 0/11 selected
 ->       S01 (grey90)
 Edited 'Test-file to search' Text entry (set to 'output')
 
-Changing GUI status to: 'Reading tests completed at 29Jul11:25:59.'
+Changing GUI status to: 'Reading tests completed at 31Jul15:21:52.'
 
 Expected application event 'all tests to be read' occurred, proceeding.
 
@@ -277,17 +280,42 @@ Viewing page 'trunk'
 
 ========== GtkTextView ==========
 General GUI Enhancements:
+    - Version dialog shows version of PyGObject and GLib also (helpdialogs.py)
+Static GUI Enhancements:
+    - Can now use UNIX-style file expansion wildcards (globs) in the "Test-file to search" box in the Selection tab. (default_gui.py)
+	Allows looking for text in multiple files simultaneously. Also affects -grepfile on the command line.
+    - On creating a new application, can specify at creation time that it is a GUI (default_gui.py)
+	Saves on fiddling and restarting the GUI.
+    - Tooltips added to the selection tab to aid clarity.
 Dynamic GUI Enhancements:
+    - Selecting files in the file view now also filters the Text Info display below (texttestgui.py)
+	So that it only previews what is currently selected.
     - Can now view original files (filtered and not) from the file view popup menu (default_gui.py)
 Framework Enhancements:
+    - Reconnect now picks up all "extra versions" that were originally run (reconnect.py)
+	Mainly useful if batch_extra_version was originally supplied
     - Logging more flexible now (default.py)
 	Dynamic GUI does not write anything by default. Batch mode writes time stamps by default.
 	Debug logging file now called "logging.debug" rather than "log4py.conf". See migration notes
     - Personal toolbar/GTK configuration now lives in "etc" subdirectory (plugins.py)
 	Mostly to keep things consistent with "log" locations
+Historical HTML Batch Report Enhancements:
+    - Separate summary rows are now displayed for each extra version (testoverview.py) 
+    - With extra versions, the first one also gets given a header row now (testoverview.py)
+    - Category ordering is now deterministic, with succeeded tests displayed first (testoverview.py)
 Version Control Browser Enhancements/bug fixes:
-Internal changes:
+Self-test/Internal changes:
+    - Everything now done via PyUseCase 2.0's new auto-logging. Most custom logging removed from TextTest.
+    - Popup menus are now called and shown in the tests.
+    - New application event fixes indeterminism problems around tests that kill external viewers.
+    - Lots of work on coverage: tests added, dead code removed, no-coverage pragmas added. Coverage from self-tests now 98.6%
 Bug Fixes:
+    - Invisible (filtered out) tests will not be run now when a test suite is selected (texttestgui.py)
+    - "Create/Import" functionality in static GUI works correctly for directories which previously existed (default_gui.py)
+    - Static GUI no longer refuses to start if the "default checkout" can't be found (default/__init__.py)
+    - All plugins scripts now reject unknown arguments in a consistent way (plugins.py)
+    - Status of tests now synchronised across the GUI, should be harder to get a test green/red somewhere and still yellow
+	somewhere else.
 =================================
 ---------------
 Button 'gtk-close' (Stock image 'gtk-close')
@@ -358,6 +386,176 @@ TextTest source directory:'
 ---------------
 Button 'gtk-close' (Stock image 'gtk-close')
 --------------------------------------------------
+
+'press close' event created with arguments ''
+
+'show texttest credits' event created with arguments ''
+
+Changing GUI status to: ''
+
+---------- Dialog 'TextTest Credits' ----------
+Default widget is 'gtk-close'
+
+Showing Notebook with tabs: Written by
+Viewing page 'Written by'
+
+========== GtkTextView ==========
+Code Maintainer:                                        
+
+    Geoff Bache
+
+Developers:
+
+    Geoff Bache
+    Mattias Grönkvist
+    Johan Ivarsson
+    Johan Andersson
+
+Contributors:
+
+    Patrik Blommaskog
+    Per Bergsten
+    Emily Bache
+    Nicolas Gattario
+    Claes Verdoes
+    Henning Thornblad
+    Michael Behrisch
+=================================
+---------------
+Button 'gtk-close' (Stock image 'gtk-close')
+-----------------------------------------------
+
+'press close' event created with arguments ''
+
+'show texttest quick start' event created with arguments ''
+
+Changing GUI status to: ''
+
+---------- Dialog 'TextTest Quick Start' ----------
+Default widget is 'gtk-close'
+
+Showing Notebook with tabs: Quick Start
+Viewing page 'Quick Start'
+
+========== GtkTextView ==========
+To get started quickly, take a look in the self-tests. There are various "TargetApp" directories
+to be found. Each of these contains a test-suite for a simple program (which are in turn part
+of the larger test suite for TextTest, as it tests itself testing these programs)
+
+To run these apps by hand, go to the TargetApp directory in question and call it, via
+
+texttest -gx  (static GUI - allows management of tests and starting dynamic GUI)
+texttest -g   (dynamic GUI - runs tests and shows results in GUI)
+texttest -con (console interface)
+
+To understand the test suite, there is always a file called config.<app> (and maybe a few more for 
+versions). This tells texttest about the application in question. If nothing else it will have an 
+entry called "executable" (or "binary", which is a back-compatibility alias) to tell you what 
+executable is being tested.
+
+There will also be a file called testsuite.<app>. This lists subdirectories to be considered either 
+as test cases or test suites themselves. Applies recursively you can find the directories which 
+represent tests.
+
+A test can define command-line options via the options.<app> file, and also standard input contents 
+via the input.<app> file. For GUIs it can define use-case style actions to be performed on the GUI via
+the usecase.<app> file. Anything else under the test is "standard results", for example output.<app> 
+for the standard output and errors.<app> for the standard error. When the test is run these will be 
+compared with the actual results from running the program with the input as defined.
+
+What there is to find:
+
+TargetApp                                  : used by default as it's very basic, this test suite has
+                                               one test (that fails) on a "Hello World" program.
+
+TestSelf/TestSelection/TargetApp           : Contains a few tests with related names, to explore the
+                                               functionality for selecting tests and saving those selections.
+
+TestSelf/ChangeTestResults/TargetApp       : Contains a few tests that fail in various ways, to explore
+                                               how these are reported and how the results can be saved.
+
+TestSelf/RunDependentText/TargetApp        : useful for understanding the run-dependent text filtering
+
+TestSelf/EnvironmentFile/TargetApp         : useful for understanding how environment variables are 
+                                               set and unset
+
+TestSelf/DiagnosticHandling/TargetApp      : useful for understanding integration with log4py, log4j 
+                                               and log4cpp to configuration of produced logs.
+
+TestSelf/TestData/TargetApp                : useful for understanding how TextTest handles test data, and
+                                               the differences between data that is only to be read and that
+                                               which can also be written.
+
+TestSelf/CollateFiles/TargetApp            : useful for understanding how TextTest collects files of any
+                                               name written by an application
+
+TestSelf/Checkouts/TargetApp               : useful for understanding how the checkout mechanism for 
+                                               version control integration works.
+
+TestSelf/BatchTests/TargetApp              : useful for understanding how batch mode works (both plain-text 
+                                             and HTML reports)
+
+TestSelf/MemoryTests/TargetApp             : useful for understanding how memory consumption is compared
+
+TestSelf/PerformanceTests/TargetApp        : useful for understanding how performance-related info is in general 
+                                             compared by extracting and comparing numbers from log files.
+
+TestSelf/KnownBugs/TargetApp               : useful for finding out how textual patterns are identified
+                                               as known bugs, and also linked to bugs in Bugzilla
+
+TestSelf/RunningTests/TargetApp            : shows how you can view your tests before
+                                               they compmlete in the dynamic GUI
+
+TestSelf/BaseVersions/TargetApp            : shows how to get version settings to inherit from each other.
+
+TestSelf/ExtraVersions/TargetApp           : shows how to automatically run other versions than the default
+                                               when running normally.
+
+TestSelf/UITesting/GUI/TargetApp           : useful for understanding TextTest's integration with Use Case
+                                               Recorders such as PyUseCase and JUseCase for GUI testing.
+
+GUI/DynamicGUI/Filtering/TargetApp         : useful for exploring the status tab from the dynamic GUI and what
+                                             it can do.
+
+GUI/DynamicGUI/TextView/TargetApp          : mostly on unicode handling
+
+GUI/StaticGUI/TargetApp                    : fairly large suite that's a residue of the previous default one.
+
+GUI/StaticGUI/StartFromScratch/TargetApp   : useful for getting a handle on what a totally empty test suite
+                                               should look like
+
+TestSelf/TrafficInterception/TargetApp     : useful for understanding how TextTest can record and replay
+                                               results from "third-party" programs run on the command line
+                                               and thus produce repeatable results.
+
+TestSelf/TrafficInterception/ClientServer/TargetApp
+                                             : useful for undestanding how TextTest can record and replay 
+                                               textual traffic on a network connection, allowing creation
+                                               of component tests for client/server systems.
+
+TestSelf/BatchTests/CollectFiles/TargetApp : useful for understanding how batch reporting works.
+
+TestSelf/EmptyTestSuites/TargetApp         : useful for understanding how TextTest handles various unusual
+                                               things in the testsuite files.
+
+TestSelf/PerformanceTests/UnixOnly/TargetApp :
+                                             (UNIX only) shows how performance can be extracted directly via the "time" program
+
+TestSelf/CollateFiles/UnixOnly/TargetApp   : (UNIX only) useful for understanding core file processing
+
+TestSelf/Miscellaneous/UnixOnly/TargetApp  : (UNIX only) useful for understanding how the virtual display
+                                               integration with Xvfb works (to prevent application GUIs popping up)
+
+QueueSystems/TargetApp                     : useful for understanding the queuesystem configuration and
+                                               the associated plugin for LSF and Sun Grid Engine
+
+
+Once you've browsed these a bit and can read them, you might start using the actual self-tests to see how 
+TextTest itself works and what features it has...
+=================================
+---------------
+Button 'gtk-close' (Stock image 'gtk-close')
+---------------------------------------------------
 
 'press close' event created with arguments ''
 
