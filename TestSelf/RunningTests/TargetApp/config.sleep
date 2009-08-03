@@ -4,3 +4,7 @@ import_config_file:$STANDARD
 executable:${TEXTTEST_HOME}/sleep.py
 
 default_interface:dynamic_gui
+
+[run_dependent_text]
+# Gets produced if things get killed extra-fast
+errors:'import site' failed; use -v for traceback
