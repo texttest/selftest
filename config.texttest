@@ -50,7 +50,7 @@ output:Sending mail from{WORD 5}
 output:batch_recipients{WORD 2}
 output:batch_sender{WORD 2}
 output:[0-9]* and [0-9]* bytes{REPLACE <file sizes>}
-outputrep*:localhost:[0-9]*.0{REPLACE localhost:<pid>.0}
+outputdyn2:process ID is{WORD -1}
 targetConfig:{INTERNAL writedir}{REPLACE <test write dir>}
 targetReport:{INTERNAL writedir}{REPLACE <test write dir>}
 targetReport:[^ ]*@localhost{REPLACE <username>@localhost}
