@@ -7,7 +7,7 @@ def runQuery(serverAddress, toSend):
     sock.connect(serverAddress)
     sock.sendall(toSend)
     sock.shutdown(1)
-    response = sock.recv(4096)
+    response = sock.makefile().read()
     print "Sent to server:", toSend
     print "Got reply:", response
     sock.close()
