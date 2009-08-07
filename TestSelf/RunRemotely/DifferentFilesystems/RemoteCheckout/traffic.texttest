@@ -1,4 +1,4 @@
-<-CMD:ssh -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 testnet-s16 test -e /opt/Carmen
+<-CMD:ssh -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 testnet-s16 test -e /path/that/only/exists/remotely
 <-CMD:ssh -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 testnet-s16 mkdir -p ~/.texttest/tmp/console.03Jun161428.20419/system_under_test
 <-CMD:scp -Cr -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 /carm/proj/texttest-tmp/geoff/texttest.03Jun161419.17228/texttest/TestSelf/RunRemotely/DifferentFilesystems/RemoteCheckout/TargetApp/hello.py testnet-s16:~/.texttest/tmp/console.03Jun161428.20419/system_under_test/hello.py
 <-CMD:ssh -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 testnet-s16 mkdir -p ~/.texttest/tmp/console.03Jun161428.20419/hello/Test
