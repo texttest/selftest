@@ -22,8 +22,6 @@ CrapInConfigFile
 
 # Some error conditions - Config module isn't there, Config module contains nonsense, config module contains bad import and config module is a valid module but not a config module
 NoConfig
-BadConfig
-ConfigBadImport
 ConfigModuleNotConfig
 
 # Test we don't crash when binary is not defined
@@ -89,3 +87,6 @@ DoubleDottedVersion
 
 # Make sure that we accept and ignore command line flags, even if the functionality is disabled
 FlagsDisabled
+
+# Errors caused by custom configuration modules
+CustomConfig
