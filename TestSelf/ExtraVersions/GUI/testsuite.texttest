@@ -10,9 +10,6 @@ SelectAcrossVersions
 # Check we can find tests via result file search if the results are in the extra version file
 SearchExtraResultFile
 
-# If we add a test in the duplicated suite, we should get several tests added
-AddCommonTest
-
 # Check we can control the order of the versions in the test tree on the left
 TestTreeVersionPriority
 
@@ -21,6 +18,12 @@ MissingInExtra
 
 # Make sure we get a sensible response when binary not present in extra versions
 NoBinaryInExtra
+
+# If we add a test in the duplicated suite, we should get several tests added
+AddCommonTest
+
+# Make sure we can easily add a test only to the extra version
+AddTestOnlyInExtra
 
 # What happens when we want to sort a suite with one or more tests only in extra versions?
 SortTestOnlyInExtra

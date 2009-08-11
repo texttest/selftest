@@ -2,11 +2,13 @@
 Waiting for application event 'all tests to be read' to occur.
 Enabling entry completion, using matching 1
 Adding entry completion '<default>' ...
+Adding entry completion 'extra1' ...
+Adding entry completion 'extra2' ...
 Adding entry completion 'localhost' ...
 Adding entry completion '1' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.11Aug120440.30453/texttest/GUI/StaticGUI/StartFromScratch/FileNameClash/log/logging.debug' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.11Aug150242.32675/texttest/TestSelf/ExtraVersions/GUI/AddTestOnlyInExtra/log/logging.debug' ...
 Adding entry completion '/users/geoff/work/master/Testing/TextTest/log/logging.debug' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.11Aug120440.30453/texttest/GUI/StaticGUI/StartFromScratch/FileNameClash/log' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.11Aug150242.32675/texttest/TestSelf/ExtraVersions/GUI/AddTestOnlyInExtra/log' ...
 Adding entry completion 'site' ...
 Adding entry completion 'personal' ...
 Adding entry completion 'all' ...
@@ -90,7 +92,7 @@ Showing Test Tree with columns: Tests: All 0 selected
 Showing Notebook with tabs: Selection , Config
 Viewing page 'Selection'
 Viewing table with 9 rows and 2 columns.
-'Tests for version  ' (tooltip 'Select tests for a specific version.') | Text entry (drop-down list containing ['', '<default>'])
+'Tests for version  ' (tooltip 'Select tests for a specific version.') | Text entry (drop-down list containing ['', '<default>', 'extra1', 'extra2'])
 'Test names containing  ' (tooltip 'Select tests for which the name matches the entered text. The text can be a regular expression.') | Text entry
 'Suite names containing  ' (tooltip 'Select tests for which at least one parent suite name matches the entered text. The text can be a regular expression.') | Text entry
 'App names containing  ' (tooltip 'Select tests for which the application name matches the entered text. The text can be a regular expression.') | Text entry
@@ -108,19 +110,33 @@ Radio button 'Discard' (checked) (tooltip 'Show all tests which match the criter
 Button 'Filter' (Stock image 'gtk-find', accelerator 'Ctrl+F', tooltip 'filter tests to show only those indicated')
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 11Aug12:05:20.' , Non-stock image
+'TextTest started at 11Aug15:02:46.' , Non-stock image
 ----------------------------------------------------------------------------------
 
 Changing GUI status to: 'Reading tests ...'
 
-Updated : Test Tree with columns: Tests: All 0 selected
+Updated : Test Tree with columns: Tests: 0/1 selected
 -> TargetApp (hello) (grey90)
 
-Updated : Test Tree with columns: Tests: All 0 selected
+Column titles changed in Test Tree with columns: Tests: 0/2 selected
+
+Column titles changed in Test Tree with columns: Tests: 0/3 selected, 0/2 distinct
+
+Column titles changed in Test Tree with columns: Tests: 0/4 selected, 0/3 distinct
+
+Column titles changed in Test Tree with columns: Tests: 0/5 selected, 0/3 distinct
+
+Column titles changed in Test Tree with columns: Tests: 0/6 selected, 0/4 distinct
+
+Updated : Test Tree with columns: Tests: 0/6 selected, 0/4 distinct
 -> TargetApp (hello) (grey90)
+->   Common (grey90)
+->   Base (grey90)
+->   Extra1 (grey90)
+->   Extra2 (grey90)
 Edited 'Test-file to search' Text entry (set to 'output')
 
-Changing GUI status to: 'Reading tests completed at 11Aug12:05:20.'
+Changing GUI status to: 'Reading tests completed at 11Aug15:02:46.'
 
 Expected application event 'all tests to be read' occurred, proceeding.
 
@@ -128,7 +144,7 @@ Expected application event 'all tests to be read' occurred, proceeding.
 
 No longer greyed out : Add Suite, Add Test, Enter Failure Information, Hide selected, Re_connect, Replace Text in Files, S_ave Selection..., Show only selected, _Reversed Sort Test Suite File, _Run, _Sort Test Suite File
 
-Column titles changed in Test Tree with columns: Tests: 1 suite selected
+Column titles changed in Test Tree with columns: Tests: 3 suites selected, 1 distinct
 
 Current page changed in Notebook with tabs: Test , Selection , Running , Config
 Viewing page 'Test'
@@ -137,6 +153,8 @@ Viewing page 'Test'
 Showing File Tree with columns: TargetApp
 -> Definition Files (white)
 ->   testsuite.hello (grey90)
+->   testsuite.hello.extra1 (grey90)
+->   testsuite.hello.extra2 (grey90)
 
 ------------------------------ (horizontal pane separator, 46% from the top)
 ...........
@@ -146,9 +164,80 @@ Description:
 Root test suite
 ===============================
 
+'view options for' event created with arguments 'Selection'
+
+Current page changed in Notebook with tabs: Test , Selection , Running , Config
+Viewing page 'Selection'
+Viewing table with 9 rows and 2 columns.
+'Tests for version  ' (tooltip 'Select tests for a specific version.') | Text entry (drop-down list containing ['', '<default>', 'extra1', 'extra2'])
+'Test names containing  ' (tooltip 'Select tests for which the name matches the entered text. The text can be a regular expression.') | Text entry
+'Suite names containing  ' (tooltip 'Select tests for which at least one parent suite name matches the entered text. The text can be a regular expression.') | Text entry
+'App names containing  ' (tooltip 'Select tests for which the application name matches the entered text. The text can be a regular expression.') | Text entry
+'Tests listed in file  ' | Text entry , Button '...'
+'Descriptions containing  ' (tooltip 'Select tests for which the description (comment) matches the entered text. The text can be a regular expression.') | Text entry
+'Test-files containing  ' (tooltip 'Select tests which have a file containing the entered text. The text can be a regular expression : e.g. enter '.*' to only look for the file without checking the contents.') | Text entry
+'Test-file to search  ' (tooltip 'When the 'test-files containing' field is non-empty, apply the search in files with the given stem. Unix-style file expansion (note not regular expressions) may be used. For example '*' will look in any file.') | Text entry (set to 'output') (drop-down list containing ['output', 'errors'])
+'Execution time  ' (tooltip 'Specify execution time limits, either as '<min>,<max>', or as a list of comma-separated expressions, such as >=0:45,<=1:00. Digit-only numbers are interpreted as minutes, while colon-separated numbers are interpreted as hours:minutes:seconds.') | Text entry
+.....Selection......
+Check button 'Select in collapsed suites' (tooltip 'Select in currently collapsed suites as well?')
+Radio button 'Discard' (checked) (tooltip 'Unselect all currently selected tests before applying the new selection criteria.') , Radio button 'Refine' (tooltip 'Apply the new selection criteria only to the currently selected tests, to obtain a subselection.') , Radio button 'Extend' (tooltip 'Keep the currently selected tests even if they do not match the new criteria, and extend the selection with all other tests which meet the new criteria.') , Radio button 'Exclude' (tooltip 'After applying the new selection criteria to all tests, unselect the currently selected tests, to exclude them from the new selection.')
+Button '_Select' (Stock image 'gtk-find', accelerator 'Ctrl+S', tooltip 'Select indicated tests')
+.....Filtering......
+Radio button 'Discard' (checked) (tooltip 'Show all tests which match the criteria, and hide all those that do not.') , Radio button 'Refine' (tooltip 'Hide all tests which do not match the criteria. Do not show any tests that aren't already shown.') , Radio button 'Extend' (tooltip 'Show all tests which match the criteria. Do not hide any tests that are currently shown.')
+Button 'Filter' (Stock image 'gtk-find', accelerator 'Ctrl+F', tooltip 'filter tests to show only those indicated')
+
+'enter tests for version =' event created with arguments 'extra1'
+Edited 'Tests for version' Text entry (set to 'extra1')
+
+'choose refine for current selection' event created with arguments ''
+Toggled Radio button 'Discard' (tooltip 'Unselect all currently selected tests before applying the new selection criteria.')
+Toggled Radio button 'Refine' (checked) (tooltip 'Apply the new selection criteria only to the currently selected tests, to obtain a subselection.')
+
+'select indicated tests' event created with arguments ''
+Adding entry completion 'output' ...
+
+Changing GUI status to: 'Selecting tests ...'
+Selected 0 out of a possible 2
+Selected 1 out of a possible 2
+Selected 0 out of a possible 2
+Marking 1 tests as selected
+
+Column titles changed in Test Tree with columns: Tests: 1 suite selected
+
+Changing GUI status to: 'Selected HELLO.extra1 test-suite TargetApp.'
+
+'view actions for test' event created with arguments 'TargetApp (hello)'
+
+---------- Popup Window ----------
+'Add Test' (Stock image 'gtk-add', accelerator 'Ctrl+N')
+'Add Suite' (Stock image 'gtk-add')
+  ----
+'Cut' (Stock image 'gtk-cut', greyed out, accelerator 'Ctrl+X')
+'Copy' (Stock image 'gtk-copy', greyed out, accelerator 'Ctrl+C')
+'Paste' (Stock image 'gtk-paste', greyed out, accelerator 'Ctrl+V')
+'Rename...' (Stock image 'gtk-italic', greyed out, accelerator 'Ctrl+M')
+'Remove...' (Stock image 'gtk-delete', greyed out, accelerator 'Ctrl+Delete')
+  ----
+'Enter Failure Information' (Stock image 'gtk-info', accelerator 'Ctrl+I')
+  ----
+'Show only selected'
+'Hide selected'
+  ----
+'Reorder' Menu :
+  'Move to first' (Stock image 'gtk-goto-top', greyed out, accelerator 'Ctrl+Home')
+  'Move up' (Stock image 'gtk-go-up', greyed out, accelerator 'Ctrl+Page Up')
+  'Move down' (Stock image 'gtk-go-down', greyed out, accelerator 'Ctrl+Page Down')
+  'Move to last' (Stock image 'gtk-goto-bottom', greyed out, accelerator 'Ctrl+End')
+    ----
+  'Sort Test Suite File' (Stock image 'gtk-sort-ascending')
+  'Reversed Sort Test Suite File' (Stock image 'gtk-sort-descending')
+----------------------------------
+
 'add test' event created with arguments ''
 Adding entry completion 'last in suite' ...
 Adding entry completion 'first in suite' ...
+Adding entry completion 'after Common' ...
+Adding entry completion 'after Extra1' ...
 
 ---------- Dialog 'Add Test' ----------
 Default widget is 'gtk-ok'
@@ -158,7 +247,7 @@ Text entry
 Text entry
 '
 Place Test:' (tooltip 'Where in the test suite should the test be placed?')
-Text entry (set to 'last in suite') (drop-down list containing ['first in suite', 'last in suite'])
+Text entry (set to 'last in suite') (drop-down list containing ['first in suite', 'after Common', 'after Extra1', 'last in suite'])
 'Command line options:'
 Text entry
 ---------------
@@ -166,18 +255,24 @@ Button 'gtk-ok' (Stock image 'gtk-ok')
 Button 'gtk-cancel' (Stock image 'gtk-cancel')
 ---------------------------------------
 
-'enter test name =' event created with arguments 'ExistingFile'
-Edited 'Test Name' Text entry (set to 'ExistingFile')
+'enter test name =' event created with arguments 'NewExtra'
+Edited 'Test Name' Text entry (set to 'NewExtra')
 
 'press ok' event created with arguments ''
+Marking 1 tests as selected
+Adding entry completion 'NewExtra' ...
 
----------- Dialog 'TextTest Error' ----------
-Default widget is 'gtk-ok'
-Stock image 'gtk-dialog-error' , ========== GtkTextView ==========
-Cannot create test sub-directory : /carm/proj/texttest-tmp/geoff/texttest.11Aug120440.30453/texttest/GUI/StaticGUI/StartFromScratch/FileNameClash/TargetApp/ExistingFile
-=================================
----------------
-Button 'gtk-ok' (Stock image 'gtk-ok')
----------------------------------------------
+Greyed out : Add Suite, Add Test, _Reversed Sort Test Suite File, _Sort Test Suite File
+No longer greyed out : Move to first, Move up, Remove..., _Copy, _Cut, _Rename...
 
-'close window' event created with arguments ''
+Updated : Test Tree with columns: Tests: 1/7 selected, 1/5 distinct
+-> TargetApp (hello) (grey90)
+->   Common (grey90)
+->   Base (grey90)
+->   Extra1 (grey90)
+->   Extra2 (grey90)
+->   NewExtra (grey90)
+
+Changing GUI status to: 'Added new HELLO.extra1 test-case NewExtra'
+
+'quit' event created with arguments ''
