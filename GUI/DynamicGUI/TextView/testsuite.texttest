@@ -1,13 +1,13 @@
 # Test the failure_diaplay_priority option
 DisplayPriority
 
-# Force diff to contain Swedish chars, to test proper unicode encoding
+# Stored result has Latin-1 encoding, which is also the encoding we run with
 UnicodeEncoding
 
-# UnicodeEncoding, but fails due to strange LANGUAGE setting (LANGUAGE:universal cannot parse åäöÅÄÖ)
+# Stored file has Latin-1 encoding but locale encoding is utf-8
 UnicodeEncodingFailing
 
-# Test what happens with LANG=C, i.e. no encoding
+# Test contains Latin-1 characters, but there is no default encoding (e.g. LANG=C)
 NoEncoding
 
 # Check sensible things appear in the Run Info tab
