@@ -127,6 +127,7 @@ dynamic_gui_log:1,2c1
 overview*:generated at [0-9]{2}[A-Z][a-z][a-z][0-9]{2}:[0-9]{2}{REPLACE generated at <date/time>}
 jusecaseprops:{INTERNAL writedir}{REPLACE <test write dir>}
 jusecaseprops:[^/]*[0-9]{2}[A-Z][a-z][a-z][0-9]{6}\.[0-9]*{REPLACE <target tmp dir>}
+remoteScript:[^/]*[0-9]{2}[A-Z][a-z][a-z][0-9]{6}\.[0-9]*{REPLACE <target tmp dir>}
 usecase:usecase filtering 3 lines{LINES 3}
 checkforbugs:{INTERNAL writedir}{REPLACE <test write dir>}
 checkforbugs:[^/]*[0-9]{2}[A-Z][a-z][a-z][0-9]{6}\.[0-9]*{REPLACE <target tmp dir>}
@@ -259,6 +260,7 @@ overview_weekend:report/*/test_*_weekend.html
 overview_1day_ver:report/*/test_*_26Jan2006*.html
 overview_joint:report/test_[a-z]*.html
 overview_joint_1day:report/test_*_23Jan2006.html
+remoteScript:texttesttmp/*/*/*/run_test.sh
 [end]
 
 unsaveable_version:rundep

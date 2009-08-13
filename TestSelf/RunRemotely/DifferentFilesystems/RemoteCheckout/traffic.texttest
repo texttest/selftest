@@ -1,10 +1,9 @@
-<-CMD:ssh -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 testnet-s16 test -e /path/that/only/exists/remotely
-<-CMD:ssh -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 testnet-s16 mkdir -p ~/.texttest/tmp/console.13Aug142327.6152/system_under_test
-<-CMD:scp -Cr -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 /carm/proj/texttest-tmp/geoff/texttest.13Aug142315.2091/texttest/TestSelf/RunRemotely/DifferentFilesystems/RemoteCheckout/TargetApp/hello.py testnet-s16:~/.texttest/tmp/console.13Aug142327.6152/system_under_test/hello.py
-<-CMD:ssh -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 testnet-s16 mkdir -p ~/.texttest/tmp/console.13Aug142327.6152/hello/Test
-<-CMD:cd /nfs/vm/texttest-tmp/geoff/texttest.13Aug142315.2091/texttest/TestSelf/RunRemotely/DifferentFilesystems/RemoteCheckout/texttesttmp/console.13Aug142327.6152/hello/Test; ssh -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 testnet-s16 cd ~/.texttest/tmp/console.13Aug142327.6152/hello/Test ; env 'PATH="~/.texttest/tmp/console.13Aug142327.6152/hello/Test:${PATH}"' 'TEXTTEST_SANDBOX="~/.texttest/tmp/console.13Aug142327.6152/hello/Test"' 'TEXTTEST_SANDBOX_ROOT="~/.texttest/tmp/console.13Aug142327.6152"' python ~/.texttest/tmp/console.13Aug142327.6152/system_under_test/hello.py
+<-CMD:ssh -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 testnet-s16 test -e /home/geoff/dont_remove_exists_for_selftests
+<-CMD:ssh -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 testnet-s16 mkdir -p ~/.texttest/tmp/console.13Aug175205.6538/system_under_test
+<-CMD:scp -Crp -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 /carm/proj/texttest-tmp/geoff/texttest.13Aug175203.6532/texttest/TestSelf/RunRemotely/DifferentFilesystems/RemoteCheckout/TargetApp/hello.py testnet-s16:~/.texttest/tmp/console.13Aug175205.6538/system_under_test/hello.py
+<-CMD:ssh -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 testnet-s16 mkdir -p ~/.texttest/tmp/console.13Aug175205.6538/hello/Test
+<-CMD:scp -Crp -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 /carm/proj/texttest-tmp/geoff/texttest.13Aug175203.6532/texttest/TestSelf/RunRemotely/DifferentFilesystems/RemoteCheckout/texttesttmp/console.13Aug175205.6538/hello/Test/run_test.sh testnet-s16:~/.texttest/tmp/console.13Aug175205.6538/hello/Test
+<-CMD:cd /nfs/vm/texttest-tmp/geoff/texttest.13Aug175203.6532/texttest/TestSelf/RunRemotely/DifferentFilesystems/RemoteCheckout/texttesttmp/console.13Aug175205.6538/hello/Test; ssh -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 testnet-s16 ~/.texttest/tmp/console.13Aug175205.6538/hello/Test/run_test.sh
 ->OUT:Hello World!
-<-CMD:scp -Cr -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 "testnet-s16:~/.texttest/tmp/console.13Aug142327.6152/hello/Test/*" /carm/proj/texttest-tmp/geoff/texttest.13Aug142315.2091/texttest/TestSelf/RunRemotely/DifferentFilesystems/RemoteCheckout/texttesttmp/console.13Aug142327.6152/hello/Test
-->ERR:scp: No match.
-->EXC:1
-<-CMD:ssh -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 testnet-s16 rm -rf ~/.texttest/tmp/console.13Aug142327.6152
+<-CMD:scp -Crp -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 "testnet-s16:~/.texttest/tmp/console.13Aug175205.6538/hello/Test/*" /carm/proj/texttest-tmp/geoff/texttest.13Aug175203.6532/texttest/TestSelf/RunRemotely/DifferentFilesystems/RemoteCheckout/texttesttmp/console.13Aug175205.6538/hello/Test
+<-CMD:ssh -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 testnet-s16 rm -rf ~/.texttest/tmp/console.13Aug175205.6538
