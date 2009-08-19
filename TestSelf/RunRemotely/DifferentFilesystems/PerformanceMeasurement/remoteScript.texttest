@@ -1,0 +1,7 @@
+#!/bin/sh
+
+cd ~/'.texttest/tmp/console.19Aug134755.5208/hello/Test'
+export PATH=~/".texttest/tmp/console.19Aug134755.5208/hello/Test:${PATH}"
+export TEXTTEST_SANDBOX=~/'.texttest/tmp/console.19Aug134755.5208/hello/Test'
+export TEXTTEST_SANDBOX_ROOT=~/'.texttest/tmp/console.19Aug134755.5208'
+exec time -p -o ~/.texttest/tmp/console.19Aug134755.5208/hello/Test/framework_tmp/unixperf python ~/.texttest/tmp/console.19Aug134755.5208/system_under_test/hello.py
