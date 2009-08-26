@@ -1,7 +1,8 @@
 #!/bin/sh
 
-cd ~/'.texttest/tmp/self_test.17Aug154823.11125/hello/Test'
-export PATH=~/".texttest/tmp/self_test.17Aug154823.11125/hello/Test:${PATH}"
-export TEXTTEST_SANDBOX=~/'.texttest/tmp/self_test.17Aug154823.11125/hello/Test'
-export TEXTTEST_SANDBOX_ROOT=~/'.texttest/tmp/self_test.17Aug154823.11125'
-exec python ~/.texttest/tmp/self_test.17Aug154823.11125/system_under_test/hello.py
+cd ~/'.texttest/tmp/self_test.26Aug132830.28339/hello/Test'
+export PATH=~/".texttest/tmp/self_test.26Aug132830.28339/hello/Test:${PATH}"
+export TEXTTEST_SANDBOX=~/'.texttest/tmp/self_test.26Aug132830.28339/hello/Test'
+export TEXTTEST_SANDBOX_ROOT=~/'.texttest/tmp/self_test.26Aug132830.28339'
+echo "kill $$" > kill_test.sh
+exec python ~/.texttest/tmp/self_test.26Aug132830.28339/system_under_test/hello.py
