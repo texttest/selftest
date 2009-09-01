@@ -4,7 +4,7 @@ Enabling entry completion, using matching 1
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
 
----------- Window 'TextTest dynamic GUI : testing RDT (started at 31Aug15:21:18)' ----------
+---------- Window 'TextTest dynamic GUI : testing RDT (started at 01Sep11:39:03)' ----------
 Focus widget is 'Test Tree'
 
 Menu Bar :
@@ -43,7 +43,7 @@ Tool Bar :
   _Quit (Stock image 'gtk-quit', accelerator 'Ctrl+Q', tooltip 'Quit')
   _Kill (Stock image 'gtk-stop', greyed out, accelerator 'Ctrl+Delete', tooltip 'Kill selected tests')
   _Save (Stock image 'gtk-save', greyed out, accelerator 'Ctrl+S', tooltip 'Save results for selected tests')
-  Progress bar set to fraction 0.0, text 'All 0 tests completed at 31Aug15:21:19'
+  Progress bar set to fraction 0.0, text 'All 0 tests completed at 01Sep11:39:04'
 ...........
 
 Showing Test Tree with columns: Tests: All 0 selected , Details
@@ -57,7 +57,7 @@ Viewing page 'Status'
 Showing Test Status View with columns: Status , Number , Visible
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 31Aug15:21:19.' , Non-stock image
+'TextTest started at 01Sep11:39:04.' , Non-stock image
 --------------------------------------------------------------------------------------------
 
 Progress bar set to fraction 0.0, text '0 of 1 tests completed'
@@ -79,27 +79,21 @@ Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white) | 0 (white) | Check box (checked)
 -> Running (yellow,bold) | 1 (yellow,bold) | Check box (checked)
 
-Progress bar set to fraction 1.0, text 'All 1 tests completed at 31Aug15:21:19'
+Progress bar set to fraction 1.0, text 'All 1 tests completed at 01Sep11:39:05'
 
 Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
--> TargetApp (rdt) (white) | All 1 tests successful (green)
+-> TargetApp (rdt) (white) | (white)
+->   Test (red) | output different (red)
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white) | 0 (white) | Check box (checked)
 -> Running (white) | 0 (white) | Check box (checked)
--> Succeeded (green,bold) | 1 (green,bold) | Check box (checked)
+-> Failed (red,bold) | 1 (red,bold) | Check box (checked)
+->   Differences (red,bold) | 1 (red,bold) | Check box (checked)
+->     output different (red,bold) | 1 (red,bold) | Check box (checked)
+Only one test found, selecting Test
 
-Expected application event 'completion of test actions' occurred, proceeding.
-
-'show test suite' event created with arguments 'TargetApp (rdt)'
-
-Expanded row in Test Tree with columns: Tests: 0/1 selected, none hidden , Details
--> TargetApp (rdt) (white) | All 1 tests successful (green)
-->   Test (green) | (green)
-
-'set test selection to' event created with arguments 'Test'
-
-No longer greyed out : Recompute Status, S_ave Selection..., _Mark, _Rerun
+No longer greyed out : Recompute Status, S_ave Selection..., Save _As..., _Mark, _Rerun, _Save
 
 Column titles changed in Test Tree with columns: Tests: All 1 selected, none hidden , Details
 
@@ -110,14 +104,21 @@ Viewing page 'Test'
 Showing File Tree with columns: Test , Details
 -> Comparison Files
 ->   errors.rdt (green) | (green)
-->   output.rdt (green) | (green)
+->   output.rdt (red) | (red)
 
 ------------------------------ (horizontal pane separator, 46% from the top)
 ...........
 
 ========== Text Info ==========
-Test succeeded
+Test FAILED :
+---------- Differences in output ----------
+2d1
+< Extra stuff
 ===============================
+
+Expected application event 'completion of test actions' occurred, proceeding.
+
+'set test selection to' event created with arguments 'Test'
 
 'set file selection to' event created with arguments 'output.rdt'
 
@@ -132,7 +133,7 @@ Test succeeded
 'View Content-Filtered Original File'
 'View Filtered Original File'
   ----
-'View Differences' (greyed out)
+'View Differences'
 'View Content-Filtered Differences'
 'View Raw Differences'
   ----
@@ -140,14 +141,14 @@ Test succeeded
   ----
 'File Properties' (Stock image 'gtk-properties')
   ----
-'Save' (Stock image 'gtk-save', greyed out, accelerator 'Ctrl+S')
-'Save As...' (Stock image 'gtk-save', greyed out, accelerator 'Ctrl+Alt+S')
+'Save' (Stock image 'gtk-save', accelerator 'Ctrl+S')
+'Save As...' (Stock image 'gtk-save', accelerator 'Ctrl+Alt+S')
 ----------------------------------
 
 'view content-filtered differences' event created with arguments ''
 Starting graphical difference comparison using 'tkdiff':
--- original file : /carm/proj/texttest-tmp/geoff/texttest.31Aug152116.28581/texttest/TestSelf/RunDependentText/Integration/UnorderedText/ViewIntermediateFiles/texttesttmp/dynamic_gui.31Aug152118.28587/rdt/Test/framework_tmp/output.rdtorigcmp.normal
---  current file : /carm/proj/texttest-tmp/geoff/texttest.31Aug152116.28581/texttest/TestSelf/RunDependentText/Integration/UnorderedText/ViewIntermediateFiles/texttesttmp/dynamic_gui.31Aug152118.28587/rdt/Test/framework_tmp/output.rdtcmp.normal
+-- original file : /carm/proj/texttest-tmp/geoff/texttest.01Sep113858.11967/texttest/TestSelf/RunDependentText/Integration/UnorderedText/ViewIntermediateFiles/texttesttmp/dynamic_gui.01Sep113903.11973/rdt/Test/framework_tmp/output.rdtorigcmp.normal
+--  current file : /carm/proj/texttest-tmp/geoff/texttest.01Sep113858.11967/texttest/TestSelf/RunDependentText/Integration/UnorderedText/ViewIntermediateFiles/texttesttmp/dynamic_gui.01Sep113903.11973/rdt/Test/framework_tmp/output.rdtcmp.normal
 
 Waiting for application event 'the graphical diff program to terminate' to occur.
 
@@ -168,7 +169,7 @@ Expected application event 'the graphical diff program to terminate' occurred, p
 'View Content-Filtered Original File'
 'View Filtered Original File'
   ----
-'View Differences' (greyed out)
+'View Differences'
 'View Content-Filtered Differences'
 'View Raw Differences'
   ----
@@ -176,12 +177,12 @@ Expected application event 'the graphical diff program to terminate' occurred, p
   ----
 'File Properties' (Stock image 'gtk-properties')
   ----
-'Save' (Stock image 'gtk-save', greyed out, accelerator 'Ctrl+S')
-'Save As...' (Stock image 'gtk-save', greyed out, accelerator 'Ctrl+Alt+S')
+'Save' (Stock image 'gtk-save', accelerator 'Ctrl+S')
+'Save As...' (Stock image 'gtk-save', accelerator 'Ctrl+Alt+S')
 ----------------------------------
 
 'view content-filtered file' event created with arguments ''
-Viewing file /carm/proj/texttest-tmp/geoff/texttest.31Aug152116.28581/texttest/TestSelf/RunDependentText/Integration/UnorderedText/ViewIntermediateFiles/texttesttmp/dynamic_gui.31Aug152118.28587/rdt/Test/framework_tmp/output.rdtcmp.normal using 'emacs', refresh set to False
+Viewing file /carm/proj/texttest-tmp/geoff/texttest.01Sep113858.11967/texttest/TestSelf/RunDependentText/Integration/UnorderedText/ViewIntermediateFiles/texttesttmp/dynamic_gui.01Sep113903.11973/rdt/Test/framework_tmp/output.rdtcmp.normal using 'emacs', refresh set to False
 
 Waiting for application event 'file editing operations to complete' to occur.
 
@@ -202,7 +203,7 @@ Expected application event 'file editing operations to complete' occurred, proce
 'View Content-Filtered Original File'
 'View Filtered Original File'
   ----
-'View Differences' (greyed out)
+'View Differences'
 'View Content-Filtered Differences'
 'View Raw Differences'
   ----
@@ -210,12 +211,12 @@ Expected application event 'file editing operations to complete' occurred, proce
   ----
 'File Properties' (Stock image 'gtk-properties')
   ----
-'Save' (Stock image 'gtk-save', greyed out, accelerator 'Ctrl+S')
-'Save As...' (Stock image 'gtk-save', greyed out, accelerator 'Ctrl+Alt+S')
+'Save' (Stock image 'gtk-save', accelerator 'Ctrl+S')
+'Save As...' (Stock image 'gtk-save', accelerator 'Ctrl+Alt+S')
 ----------------------------------
 
 'view content-filtered original file' event created with arguments ''
-Viewing file /carm/proj/texttest-tmp/geoff/texttest.31Aug152116.28581/texttest/TestSelf/RunDependentText/Integration/UnorderedText/ViewIntermediateFiles/texttesttmp/dynamic_gui.31Aug152118.28587/rdt/Test/framework_tmp/output.rdtorigcmp.normal using 'emacs', refresh set to False
+Viewing file /carm/proj/texttest-tmp/geoff/texttest.01Sep113858.11967/texttest/TestSelf/RunDependentText/Integration/UnorderedText/ViewIntermediateFiles/texttesttmp/dynamic_gui.01Sep113903.11973/rdt/Test/framework_tmp/output.rdtorigcmp.normal using 'emacs', refresh set to False
 
 Waiting for application event 'file editing operations to complete' to occur.
 
@@ -242,12 +243,12 @@ Expected application event 'file editing operations to complete' occurred, proce
   ----
 'File Properties' (Stock image 'gtk-properties')
   ----
-'Save' (Stock image 'gtk-save', greyed out, accelerator 'Ctrl+S')
-'Save As...' (Stock image 'gtk-save', greyed out, accelerator 'Ctrl+Alt+S')
+'Save' (Stock image 'gtk-save', accelerator 'Ctrl+S')
+'Save As...' (Stock image 'gtk-save', accelerator 'Ctrl+Alt+S')
 ----------------------------------
 
 'view original file' event created with arguments ''
-Viewing file /carm/proj/texttest-tmp/geoff/texttest.31Aug152116.28581/texttest/TestSelf/RunDependentText/Integration/UnorderedText/ViewIntermediateFiles/TargetApp/Test/errors.rdt using 'emacs', refresh set to False
+Viewing file /carm/proj/texttest-tmp/geoff/texttest.01Sep113858.11967/texttest/TestSelf/RunDependentText/Integration/UnorderedText/ViewIntermediateFiles/TargetApp/Test/errors.rdt using 'emacs', refresh set to False
 
 Waiting for application event 'file editing operations to complete' to occur.
 

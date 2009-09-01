@@ -1,0 +1,142 @@
+
+Waiting for application event 'completion of test actions' to occur.
+Enabling entry completion, using matching 1
+Setting window width to 60% of screen.
+Setting window height to 83% of screen.
+
+---------- Window 'TextTest dynamic GUI : testing RDT (started at 01Sep11:52:58)' ----------
+Focus widget is 'Test Tree'
+
+Menu Bar :
+  'File' Menu :
+    'Save' (Stock image 'gtk-save', greyed out, accelerator 'Ctrl+S')
+    'Save As...' (Stock image 'gtk-save', greyed out, accelerator 'Ctrl+Alt+S')
+      ----
+    'Save Selection...' (Stock image 'gtk-save-as', greyed out, accelerator 'Ctrl+D')
+      ----
+    'Quit' (Stock image 'gtk-quit', accelerator 'Ctrl+Q')
+  'View' Menu :
+    'Annotate' (Stock image 'gtk-index')
+      ----
+    'Toolbar' (checked)
+    'Shortcut bar' (checked)
+    'Status bar' (checked)
+  'Actions' Menu :
+    'Kill' (Stock image 'gtk-stop', greyed out, accelerator 'Ctrl+Delete')
+    'Mark' (greyed out, accelerator 'Shift+Ctrl+M')
+    'Unmark' (greyed out, accelerator 'Shift+Ctrl+U')
+      ----
+    'Rerun' (Stock image 'gtk-execute', greyed out, accelerator 'Ctrl+R')
+    'Recompute Status' (Stock image 'gtk-refresh', greyed out, accelerator 'F5')
+  'Help' Menu :
+    'Quick Start'
+    'Migration Notes'
+    'Change Logs'
+      ----
+    'Component Versions'
+    'Credits'
+    'License'
+      ----
+    'About TextTest' (Stock image 'gtk-about')
+
+Tool Bar :
+  _Quit (Stock image 'gtk-quit', accelerator 'Ctrl+Q', tooltip 'Quit')
+  _Kill (Stock image 'gtk-stop', greyed out, accelerator 'Ctrl+Delete', tooltip 'Kill selected tests')
+  _Save (Stock image 'gtk-save', greyed out, accelerator 'Ctrl+S', tooltip 'Save results for selected tests')
+  Progress bar set to fraction 0.0, text '0 of 1 tests completed'
+...........
+
+Showing Test Tree with columns: Tests: 0/1 selected, all hidden , Details
+
+------------------------------ (vertical pane separator, 77% from the left edge)
+...........
+
+Showing Notebook with tabs: Status , Run Info
+Viewing page 'Status'
+
+Showing Test Status View with columns: Status , Number , Visible
+-> Not started (white,bold) | 1 (white,bold) | Check box (checked)
+'Shortcuts:' , Button '_New'
+...........
+'TextTest started at 01Sep11:52:59.' , Non-stock image
+--------------------------------------------------------------------------------------------
+
+Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
+-> TargetApp (rdt) (white) | (white)
+->   Test (white) | (white)
+
+Progress bar set to fraction 0.0, text '0 of 1 tests completed'
+
+Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
+-> TargetApp (rdt) (white) | (white)
+->   Test (yellow) | (yellow)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white) | 0 (white) | Check box (checked)
+-> Running (yellow,bold) | 1 (yellow,bold) | Check box (checked)
+
+Progress bar set to fraction 1.0, text 'All 1 tests completed at 01Sep11:52:59'
+
+Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
+-> TargetApp (rdt) (white) | (white)
+->   Test (red) | output different (red)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white) | 0 (white) | Check box (checked)
+-> Running (white) | 0 (white) | Check box (checked)
+-> Failed (red,bold) | 1 (red,bold) | Check box (checked)
+->   Differences (red,bold) | 1 (red,bold) | Check box (checked)
+->     output different (red,bold) | 1 (red,bold) | Check box (checked)
+Only one test found, selecting Test
+
+No longer greyed out : Recompute Status, S_ave Selection..., Save _As..., _Mark, _Rerun, _Save
+
+Column titles changed in Test Tree with columns: Tests: All 1 selected, none hidden , Details
+
+Current page changed in Notebook with tabs: Test , Status , Run Info
+Viewing page 'Test'
+...........
+
+Showing File Tree with columns: Test , Details
+-> Comparison Files
+->   errors.rdt (green) | (green)
+->   output.rdt (red) | (red)
+
+------------------------------ (horizontal pane separator, 46% from the top)
+...........
+
+========== Text Info ==========
+Test FAILED :
+---------- Differences in output ----------
+20c20
+< This should always go - somehow:  <test write directory>
+---
+> This should always go: "<test write directory>"
+===============================
+
+Expected application event 'completion of test actions' occurred, proceeding.
+
+'save results for selected tests' event created with arguments ''
+
+Changing GUI status to: 'Saving RDT test-case Test : output, no version'
+
+Greyed out : Recompute Status, S_ave Selection..., Save _As..., _Mark, _Rerun, _Save
+
+Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
+-> TargetApp (rdt) (white) | All 1 tests successful (green)
+
+Current page changed in Notebook with tabs: Status , Run Info
+Viewing page 'Status'
+
+Showing Test Status View with columns: Status , Number , Visible
+-> Not started (white) | 0 (white) | Check box (checked)
+-> Running (white) | 0 (white) | Check box (checked)
+-> Failed (white) | 0 (white) | Check box (checked)
+->   Differences (white) | 0 (white) | Check box (checked)
+->     output different (white) | 0 (white) | Check box (checked)
+-> Succeeded (green,bold) | 1 (green,bold) | Check box (checked)
+->   Saved (green,bold) | 1 (green,bold) | Check box (checked)
+
+Changing GUI status to: 'Saved 1 tests.'
+
+'quit' event created with arguments ''
