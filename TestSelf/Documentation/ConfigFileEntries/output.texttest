@@ -78,6 +78,7 @@ remote_copy_program||(UNIX) Program to use for copying files remotely, in case o
 remote_program_options|{'default': '', 'rsync': '-azLp', 'ssh': '-o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10', 'scp': '-Crp -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10'}|Default options to use for particular remote shell programs
 remote_shell_program|rsh|Program to use for running commands remotely
 run_dependent_text|{'default': []}|Mapping of patterns to remove from result files
+save_filtered_file_stems|[]|Files where the filtered version should be saved rather than the SUT output
 slow_motion_replay_speed|3|How long in seconds to wait between each GUI action
 smtp_server|localhost|Server to use for sending mail in batch mode
 suppress_stderr_popup|[]|List of patterns which, if written on stderr, should not produce a warning popup
