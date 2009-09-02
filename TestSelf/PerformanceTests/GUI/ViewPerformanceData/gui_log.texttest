@@ -4,9 +4,9 @@ Enabling entry completion, using matching 1
 Adding entry completion '<default>' ...
 Adding entry completion 'localhost' ...
 Adding entry completion '1' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.02Sep115814.10064/texttest/TestSelf/PerformanceTests/GUI/BadPerformanceFilter/log/logging.debug' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.02Sep121951.11320/texttest/TestSelf/PerformanceTests/GUI/ViewPerformanceData/log/logging.debug' ...
 Adding entry completion '/users/geoff/work/master/Testing/TextTest/log/logging.debug' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.02Sep115814.10064/texttest/TestSelf/PerformanceTests/GUI/BadPerformanceFilter/log' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.02Sep121951.11320/texttest/TestSelf/PerformanceTests/GUI/ViewPerformanceData/log' ...
 Adding entry completion 'site' ...
 Adding entry completion 'personal' ...
 Adding entry completion 'all' ...
@@ -108,7 +108,7 @@ Radio button 'Discard' (checked) (tooltip 'Show all tests which match the criter
 Button 'Filter' (Stock image 'gtk-find', accelerator 'Ctrl+F', tooltip 'filter tests to show only those indicated')
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 02Sep11:58:18.' , Non-stock image
+'TextTest started at 02Sep12:19:55.' , Non-stock image
 ---------------------------------------------------------------------------------
 
 Changing GUI status to: 'Reading tests ...'
@@ -118,73 +118,59 @@ Updated : Test Tree with columns: Tests: 0/1 selected
 
 Column titles changed in Test Tree with columns: Tests: 0/2 selected
 
-Column titles changed in Test Tree with columns: Tests: 0/3 selected
-
-Column titles changed in Test Tree with columns: Tests: 0/4 selected
-
-Updated : Test Tree with columns: Tests: 0/4 selected
+Updated : Test Tree with columns: Tests: 0/2 selected
 -> TargetApp (perf) (grey90)
-->   Success (grey90)
-->   Failures (grey90)
-->   FailuresCurrBelowLimit (grey90)
-->   FailuresZeroTime (grey90)
+->   Long (grey90)
+->   Zero (grey90)
 Edited 'Test-file to search' Text entry (set to 'performance')
 
-Changing GUI status to: 'Reading tests completed at 02Sep11:58:18.'
+Changing GUI status to: 'Reading tests completed at 02Sep12:19:55.'
 
 Expected application event 'all tests to be read' occurred, proceeding.
 
-'enter execution time =' event created with arguments 'foo'
-Edited 'Execution time' Text entry (set to 'foo')
+'set test selection to' event created with arguments 'Long'
 
-'select indicated tests' event created with arguments ''
-Adding entry completion 'performance' ...
-Adding entry completion 'foo' ...
+No longer greyed out : Enter Failure Information, Hide selected, Move down, Move to last, Re_connect, Remove..., Replace Text in Files, S_ave Selection..., Show only selected, _Copy, _Cut, _Rename..., _Run
 
-Changing GUI status to: 'Selecting tests ...'
-
----------- Dialog 'TextTest Error' ----------
-Default widget is 'gtk-ok'
-Stock image 'gtk-dialog-error' , ========== GtkTextView ==========
-Illegal time format 'foo' :  Use format HH:MM:SS or MM:SS, or a single number to denote a number of minutes.
-=================================
----------------
-Button 'gtk-ok' (Stock image 'gtk-ok')
----------------------------------------------
-
-'agree to texttest message' event created with arguments ''
-
-'set test selection to' event created with arguments 'FailuresCurrBelowLimit'
-
-No longer greyed out : Enter Failure Information, Hide selected, Move down, Move to first, Move to last, Move up, Re_connect, Remove..., Replace Text in Files, S_ave Selection..., Show only selected, _Copy, _Cut, _Rename..., _Run
-
-Column titles changed in Test Tree with columns: Tests: 1/4 selected
+Column titles changed in Test Tree with columns: Tests: 1/2 selected
 
 Current page changed in Notebook with tabs: Test , Selection , Running , Config
 Viewing page 'Test'
 ...........
 
-Showing File Tree with columns: FailuresCurrBelowLimit
+Showing File Tree with columns: Long
 -> Standard Files (white)
-->   errors.perf (grey90)
-->   output.perf (grey90)
 ->   performance.perf (grey90)
-->   performance.perf.correct (grey90)
 -> Definition Files (white)
-->   environment (grey90)
-->   input.perf (grey90)
 
 ------------------------------ (horizontal pane separator, 46% from the top)
 ...........
 
 ========== Text Info ==========
 Description:
-bugzilla 7088 - what happens when the currently specified 
-performance is below the limit, and the new result is above?
-stores 2 seconds
+<No description provided>
 
 Expected performance for the default version:
-CPU time   :       2 seconds on sedom
+CPU time   :       2 hours, 1 minute and 20 seconds on sedom
+===============================
+
+'set test selection to' event created with arguments 'Zero'
+
+Greyed out : Move down, Move to last
+No longer greyed out : Move to first, Move up
+
+Updated : File Tree with columns: Zero
+-> Standard Files (white)
+->   performance.perf (grey90)
+-> Definition Files (white)
+
+========== Text Info ==========
+Description:
+Copy of Long
+
+Expected performance for the default version:
+CPU time   :       Less than 1 second on sedom
 ===============================
 
 'quit' event created with arguments ''
+Adding entry completion 'performance' ...
