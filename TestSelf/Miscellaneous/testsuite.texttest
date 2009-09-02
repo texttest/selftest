@@ -28,15 +28,6 @@ VersionInApp
 # Check that -a <app>.<version1> -v <version2> works
 CombineVersionInApp
 
-# Update text in all tests without running them
-ReplaceText
-
-# Update text using a regular expression
-ReplaceTextRegexp
-
-# Check we can use file expansions in ReplaceText
-ReplaceTextFileExpansion
-
 # Check that we can find and clean up processes if the SUT leaks them but logs the process ID
 TrackProcesses
 
@@ -51,3 +42,6 @@ SUTMakesReadonly
 
 # Test the script that finds obsolete versions
 PrintObsoleteVersions
+
+# Tests for the script default.ReplaceText
+ReplaceText

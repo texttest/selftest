@@ -4,9 +4,9 @@ Enabling entry completion, using matching 1
 Adding entry completion '<default>' ...
 Adding entry completion 'localhost' ...
 Adding entry completion '1' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.06Aug182828.527/texttest/GUI/QuitConfirmation/DynamicFromStatic/log/logging.debug' ...
-Adding entry completion '/users/geoff/work/master/Testing/TextTest/log/logging.debug' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.06Aug182828.527/texttest/GUI/QuitConfirmation/DynamicFromStatic/log' ...
+Adding entry completion '/home/geoff/.texttest/tmp/texttest.02Sep214708.9857/texttest/GUI/QuitConfirmation/DynamicFromStatic/log/logging.debug' ...
+Adding entry completion '/home/geoff/code/texttest/log/logging.debug' ...
+Adding entry completion '/home/geoff/.texttest/tmp/texttest.02Sep214708.9857/texttest/GUI/QuitConfirmation/DynamicFromStatic/log' ...
 Adding entry completion 'site' ...
 Adding entry completion 'personal' ...
 Adding entry completion 'all' ...
@@ -108,7 +108,7 @@ Radio button 'Discard' (checked) (tooltip 'Show all tests which match the criter
 Button 'Filter' (Stock image 'gtk-find', accelerator 'Ctrl+F', tooltip 'filter tests to show only those indicated')
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 06Aug18:30:00.' , Non-stock image
+'TextTest started at 02Sep21:55:49.' , Non-stock image
 ----------------------------------------------------------------------------------
 
 Changing GUI status to: 'Reading tests ...'
@@ -121,7 +121,7 @@ Updated : Test Tree with columns: Tests: 0/1 selected
 ->   Test (grey90)
 Edited 'Test-file to search' Text entry (set to 'output')
 
-Changing GUI status to: 'Reading tests completed at 06Aug18:30:00.'
+Changing GUI status to: 'Reading tests completed at 02Sep21:55:49.'
 
 Expected application event 'all tests to be read' occurred, proceeding.
 
@@ -145,12 +145,13 @@ Showing File Tree with columns: Test
 ...........
 
 ========== Text Info ==========
+
 Description:
 <No description provided>
 ===============================
 
 'select file' event created with arguments 'output.hello'
-Viewing file /carm/proj/texttest-tmp/geoff/texttest.06Aug182828.527/texttest/GUI/QuitConfirmation/DynamicFromStatic/TargetApp/Test/output.hello using 'emacs', refresh set to False
+Viewing file /home/geoff/.texttest/tmp/texttest.02Sep214708.9857/texttest/GUI/QuitConfirmation/DynamicFromStatic/TargetApp/Test/output.hello using 'emacs', refresh set to False
 
 Waiting for application event 'the file editing process to start' to occur.
 Expected application event 'the file editing process to start' occurred, proceeding.
@@ -159,19 +160,20 @@ Changing GUI status to: 'Started "emacs output.hello" in background (from test T
 
 'run selected tests' event created with arguments ''
 Adding entry completion 'output' ...
-Starting dynamic run of TextTest with arguments ['-g', '-a', 'hello', '-m', 'localhost', '-cp', '1', '-xr', '/carm/proj/texttest-tmp/geoff/texttest.06Aug182828.527/texttest/GUI/QuitConfirmation/DynamicFromStatic/log/logging.debug', '-xw', '/carm/proj/texttest-tmp/geoff/texttest.06Aug182828.527/texttest/GUI/QuitConfirmation/DynamicFromStatic/log', '-vanilla', 'site', '-count', '1', '-f', '/carm/proj/texttest-tmp/geoff/texttest.06Aug182828.527/texttest/GUI/QuitConfirmation/DynamicFromStatic/texttesttmp/static_gui.06Aug182958.3350/dynamic_run1/gui_select', '-fd', '/carm/proj/texttest-tmp/geoff/texttest.06Aug182828.527/texttest/GUI/QuitConfirmation/DynamicFromStatic/texttesttmp/static_gui.06Aug182958.3350/temporary_filter_files']
+Starting dynamic run of TextTest with arguments ['-g', '-a', 'hello', '-m', 'localhost', '-cp', '1', '-xr', '/home/geoff/.texttest/tmp/texttest.02Sep214708.9857/texttest/GUI/QuitConfirmation/DynamicFromStatic/log/logging.debug', '-xw', '/home/geoff/.texttest/tmp/texttest.02Sep214708.9857/texttest/GUI/QuitConfirmation/DynamicFromStatic/log', '-vanilla', 'site', '-count', '1', '-f', '/home/geoff/.texttest/tmp/texttest.02Sep214708.9857/texttest/GUI/QuitConfirmation/DynamicFromStatic/texttesttmp/static_gui.02Sep215549.12218/dynamic_run1/gui_select', '-fd', '/home/geoff/.texttest/tmp/texttest.02Sep214708.9857/texttest/GUI/QuitConfirmation/DynamicFromStatic/texttesttmp/static_gui.02Sep215549.12218/temporary_filter_files']
 
-Changing GUI status to: 'Started HELLO test-case Test at 06Aug18:30:01.'
+Changing GUI status to: 'Started HELLO test-case Test at 02Sep21:55:51.'
 
 'quit' event created with arguments ''
 
 ---------- Dialog 'TextTest Confirmation' ----------
 Focus widget is 'GtkTextView'
 Stock image 'gtk-dialog-warning' , ========== GtkTextView ==========
+
 These processes are still running, and will be terminated when quitting: 
 
-   + PID 3378 : emacs output.hello (from test Test)
-   + PID 3391 : Dynamic GUI started at 06Aug18:30:01
+   + PID 12220 : emacs output.hello (from test Test)
+   + PID 12223 : Dynamic GUI started at 02Sep21:55:51
 
 Quit anyway?
 =================================
@@ -199,9 +201,10 @@ Expected application event 'dynamic GUI to be closed' occurred, proceeding.
 ---------- Dialog 'TextTest Confirmation' ----------
 Focus widget is 'GtkTextView'
 Stock image 'gtk-dialog-warning' , ========== GtkTextView ==========
+
 These processes are still running, and will be terminated when quitting: 
 
-   + PID 3378 : emacs output.hello (from test Test)
+   + PID 12220 : emacs output.hello (from test Test)
 
 Quit anyway?
 =================================
