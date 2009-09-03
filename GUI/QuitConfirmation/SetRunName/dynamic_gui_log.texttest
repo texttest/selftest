@@ -4,7 +4,7 @@ Enabling entry completion, using matching 1
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
 
----------- Window 'TextTest dynamic GUI : My favourite run, ever!' ----------
+---------- Window 'TextTest dynamic GUI : testing HELLO (started at 03Sep10:44:23)' ----------
 Focus widget is 'Test Tree'
 
 Menu Bar :
@@ -16,7 +16,7 @@ Menu Bar :
       ----
     'Quit' (Stock image 'gtk-quit', accelerator 'Ctrl+Q')
   'View' Menu :
-    'Annotate' (Stock image 'gtk-index')
+    'Set Run Name' (Stock image 'gtk-index')
       ----
     'Toolbar' (checked)
     'Shortcut bar' (checked)
@@ -43,7 +43,7 @@ Tool Bar :
   _Quit (Stock image 'gtk-quit', accelerator 'Ctrl+Q', tooltip 'Quit')
   _Kill (Stock image 'gtk-stop', greyed out, accelerator 'Ctrl+Delete', tooltip 'Kill selected tests')
   _Save (Stock image 'gtk-save', greyed out, accelerator 'Ctrl+S', tooltip 'Save results for selected tests')
-  Progress bar set to fraction 0.0, text 'All 0 tests completed at 02Sep14:56:35'
+  Progress bar set to fraction 0.0, text 'All 0 tests completed at 03Sep10:44:26'
 ...........
 
 Showing Test Tree with columns: Tests: All 0 selected , Details
@@ -57,8 +57,8 @@ Viewing page 'Status'
 Showing Test Status View with columns: Status , Number , Visible
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 02Sep14:56:35.' , Non-stock image
------------------------------------------------------------------------------
+'TextTest started at 03Sep10:44:26.' , Non-stock image
+----------------------------------------------------------------------------------------------
 
 Progress bar set to fraction 0.0, text '0 of 1 tests completed'
 
@@ -79,7 +79,7 @@ Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white) | 0 (white) | Check box (checked)
 -> Running (yellow,bold) | 1 (yellow,bold) | Check box (checked)
 
-Progress bar set to fraction 1.0, text 'All 1 tests completed at 02Sep14:56:38'
+Progress bar set to fraction 1.0, text 'All 1 tests completed at 03Sep10:44:28'
 
 Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
 -> TargetApp (hello) (white) | (white)
@@ -120,6 +120,27 @@ Test FAILED :
 
 Expected application event 'completion of test actions' occurred, proceeding.
 
+'provide a name for this run and warn before closing it' event created with arguments ''
+
+---------- Dialog 'Set a new name for this run' ----------
+Default widget is 'gtk-ok'
+'
+New name for this run:'
+Text entry
+---------------
+Button 'gtk-ok' (Stock image 'gtk-ok')
+Button 'gtk-cancel' (Stock image 'gtk-cancel')
+----------------------------------------------------------
+
+'enter new name for this run =' event created with arguments 'My favourite run, ever!'
+Edited 'New name for this run' Text entry (set to 'My favourite run, ever!')
+
+'press ok' event created with arguments ''
+Top Window title is TextTest dynamic GUI : My favourite run, ever!
+Adding entry completion 'My favourite run, ever!' ...
+
+Changing GUI status to: 'Set name of run to 'My favourite run, ever!''
+
 'view options for' event created with arguments 'Run Info'
 
 Current page changed in Notebook with tabs: Test , Status , Run Info
@@ -132,12 +153,12 @@ Run Name         : My favourite run, ever!
 Application name : HELLO
 Version          : 
 Number of tests  : 1
-Executable       : /carm/proj/texttest-tmp/geoff/texttest.02Sep145606.16865/texttest/GUI/QuitConfirmation/AnnotateFromCmdLine/TargetApp/hello.py
+Executable       : /carm/proj/texttest-tmp/geoff/texttest.03Sep104414.28056/texttest/GUI/QuitConfirmation/SetRunName/TargetApp/hello.py
 
-Command line     : /users/geoff/work/master/Testing/TextTest/bin/texttest.py --vanilla site -name "My favourite run, ever!" -g
+Command line     : /users/geoff/work/master/Testing/TextTest/bin/texttest.py --vanilla site -g
 
-Start time       : 02Sep14:56:30
-End time         : 02Sep14:56:38
+Start time       : 03Sep10:44:23
+End time         : 03Sep10:44:28
 ==============================
 
 ------------------------------ (horizontal pane separator, 46% from the top)
@@ -149,12 +170,12 @@ Selected test  : Test
 Description:
 <No description provided>
 
-Command Line   : python /carm/proj/texttest-tmp/geoff/texttest.02Sep145606.16865/texttest/GUI/QuitConfirmation/AnnotateFromCmdLine/TargetApp/hello.py
+Command Line   : python /carm/proj/texttest-tmp/geoff/texttest.03Sep104414.28056/texttest/GUI/QuitConfirmation/SetRunName/TargetApp/hello.py
 
 Environment variables :
-PATH: /carm/proj/texttest-tmp/geoff/texttest.02Sep145606.16865/texttest/GUI/QuitConfirmation/AnnotateFromCmdLine/texttesttmp/dynamic_gui.02Sep145630.16875/hello/Test:/carm/proj/texttest-tmp/geoff/texttest.02Sep145606.16865/texttest/GUI/QuitConfirmation/AnnotateFromCmdLine:/users/geoff/bin:/carm/proj/texttest/release/current/site/bin:/usr/local/share/sge6.2/bin/lx24-amd64:/users/geoff/bin:/carm/proj/texttest/release/current/site/bin:/usr/local/share/sge6.2/bin/lx24-amd64:/usr/lib64/qt-3.3/bin:/carm/rational/releases/PurifyPlus.7.0.0.0-010/i386_linux2/bin:/usr/local/sbin:/usr/kerberos/bin:/usr/local/bin:/usr/bin:/bin:/usr/X11R6/bin:/usr/sbin:/sbin:/usr/local/share/texttest/site/bin:/usr/local/share/java/apache-maven-2.1.0/bin:.
-TEXTTEST_SANDBOX: /carm/proj/texttest-tmp/geoff/texttest.02Sep145606.16865/texttest/GUI/QuitConfirmation/AnnotateFromCmdLine/texttesttmp/dynamic_gui.02Sep145630.16875/hello/Test
-TEXTTEST_SANDBOX_ROOT: /carm/proj/texttest-tmp/geoff/texttest.02Sep145606.16865/texttest/GUI/QuitConfirmation/AnnotateFromCmdLine/texttesttmp/dynamic_gui.02Sep145630.16875
+PATH: /carm/proj/texttest-tmp/geoff/texttest.03Sep104414.28056/texttest/GUI/QuitConfirmation/SetRunName/texttesttmp/dynamic_gui.03Sep104423.28061/hello/Test:/carm/proj/texttest-tmp/geoff/texttest.03Sep104414.28056/texttest/GUI/QuitConfirmation/SetRunName:/users/geoff/bin:/carm/proj/texttest/release/current/site/bin:/users/geoff/bin:/carm/proj/texttest/release/current/site/bin:/users/geoff/bin:/carm/proj/texttest/release/current/site/bin:/users/geoff/bin:/carm/proj/texttest/release/current/site/bin:/usr/local/share/sge6.2/bin/lx24-amd64:/users/geoff/bin:/carm/proj/texttest/release/current/site/bin:/usr/local/share/sge6.2/bin/lx24-amd64:/usr/lib64/qt-3.3/bin:/carm/rational/releases/PurifyPlus.7.0.0.0-010/i386_linux2/bin:/usr/local/sbin:/usr/kerberos/bin:/usr/local/bin:/usr/bin:/bin:/usr/X11R6/bin:/usr/sbin:/sbin:/usr/local/share/texttest/site/bin:/usr/local/share/java/apache-maven-2.1.0/bin:.
+TEXTTEST_SANDBOX: /carm/proj/texttest-tmp/geoff/texttest.03Sep104414.28056/texttest/GUI/QuitConfirmation/SetRunName/texttesttmp/dynamic_gui.03Sep104423.28061/hello/Test
+TEXTTEST_SANDBOX_ROOT: /carm/proj/texttest-tmp/geoff/texttest.03Sep104414.28056/texttest/GUI/QuitConfirmation/SetRunName/texttesttmp/dynamic_gui.03Sep104423.28061
 USECASE_REPLAY_SCRIPT:
 ===================================
 
@@ -163,7 +184,7 @@ USECASE_REPLAY_SCRIPT:
 ---------- Dialog 'TextTest Confirmation' ----------
 Focus widget is 'GtkTextView'
 Stock image 'gtk-dialog-warning' , ========== GtkTextView ==========
-You annotated this GUI, using the following message : 
+You named this run as follows : 
 My favourite run, ever!
 
 Quit anyway?
