@@ -1,6 +1,9 @@
 # Don't reuse killed tests
 KillBeforeReuse
 
+# Not all jobs that are killed will mark their tests as such, have support in the protocol for this case
+JobKillBeforeReuse
+
 # Make sure we can kill tests that have reused another test's slave process
 QuitBeforeReuse
 
