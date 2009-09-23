@@ -4,9 +4,9 @@ Enabling entry completion, using matching 1
 Adding entry completion '<default>' ...
 Adding entry completion 'localhost' ...
 Adding entry completion '1' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.06Aug182828.527/texttest/GUI/StaticGUI/Miscellaneous/ViewHelp/log/logging.debug' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.23Sep160725.28080/texttest/GUI/StaticGUI/Miscellaneous/ViewHelp/log/logging.debug' ...
 Adding entry completion '/users/geoff/work/master/Testing/TextTest/log/logging.debug' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.06Aug182828.527/texttest/GUI/StaticGUI/Miscellaneous/ViewHelp/log' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.23Sep160725.28080/texttest/GUI/StaticGUI/Miscellaneous/ViewHelp/log' ...
 Adding entry completion 'site' ...
 Adding entry completion 'personal' ...
 Adding entry completion 'all' ...
@@ -108,7 +108,7 @@ Radio button 'Discard' (checked) (tooltip 'Show all tests which match the criter
 Button 'Filter' (Stock image 'gtk-find', accelerator 'Ctrl+F', tooltip 'filter tests to show only those indicated')
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 06Aug18:30:11.' , Non-stock image
+'TextTest started at 23Sep16:07:31.' , Non-stock image
 --------------------------------------------------------------------------------
 
 Changing GUI status to: 'Reading tests ...'
@@ -154,12 +154,130 @@ Updated : Test Tree with columns: Tests: 0/11 selected
 ->       S01 (grey90)
 Edited 'Test-file to search' Text entry (set to 'output')
 
-Changing GUI status to: 'Reading tests completed at 06Aug18:30:12.'
+Changing GUI status to: 'Reading tests completed at 23Sep16:07:31.'
 
 Expected application event 'all tests to be read' occurred, proceeding.
 
-'show texttest migration notes' event created with arguments ''
+'show information about texttest' event created with arguments ''
 Adding entry completion 'output' ...
+
+Changing GUI status to: ''
+
+---------- Dialog 'About TextTest' ----------
+Default widget is 'gtk-close'
+Non-stock image
+'TextTest trunk
+'
+'TextTest is an application-independent tool for text-based
+functional testing. This means running a batch-mode program
+in lots of different ways, and using the text output produced
+as a means of controlling the behaviour of that application.
+'
+'http://www.texttest.org
+'
+'Copyright Â© The authors
+'
+---------------
+Button 'gtk-close' (Stock image 'gtk-close')
+Button '_Versions'
+Button '_License'
+Button 'texttest-stock-credits' (Stock image 'texttest-stock-credits')
+---------------------------------------------
+
+'go to website' event created with arguments ''
+
+Changing GUI status to: 'Started "firefox http://www.texttest.org" in background.'
+
+'press credits' event created with arguments ''
+
+---------- Dialog 'TextTest Credits' ----------
+Default widget is 'gtk-close'
+
+Showing Notebook with tabs: Written by
+Viewing page 'Written by'
+
+========== GtkTextView ==========
+Code Maintainer:                                        
+
+    Geoff Bache
+
+Developers:
+
+    Geoff Bache
+    Mattias Grönkvist
+    Johan Ivarsson
+    Johan Andersson
+
+Contributors:
+
+    Patrik Blommaskog
+    Per Bergsten
+    Emily Bache
+    Nicolas Gattario
+    Claes Verdoes
+    Henning Thornblad
+    Michael Behrisch
+=================================
+---------------
+Button 'gtk-close' (Stock image 'gtk-close')
+-----------------------------------------------
+
+'press close' event created with arguments ''
+
+'press license' event created with arguments ''
+
+---------- Dialog 'TextTest License' ----------
+Default widget is 'gtk-close'
+
+Showing Notebook with tabs: License
+Viewing page 'License'
+
+========== GtkTextView ==========
+TextTest : tool for automatic system-level acceptance testing
+Copyright (c) 2003 Geoff Bache
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU Lesser General Public
+License as published by the Free Software Foundation; either
+version 2.1 of the License, or (at your option) any later version.
+
+This library is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+Lesser General Public License for more details. This can be found
+online at http://www.opensource.org/licenses/lgpl-license.php
+=================================
+---------------
+Button 'gtk-close' (Stock image 'gtk-close')
+-----------------------------------------------
+
+'press close' event created with arguments ''
+
+'press versions' event created with arguments ''
+
+---------- Dialog 'Version Information' ----------
+Default widget is 'gtk-close'
+'You are using these versions:
+'
+Viewing table with 6 rows and 2 columns.
+'TextTest:' | 'trunk'
+'Python:' | '2.9.42.final.0'
+'GTK:' | '2.58.42'
+'PyGTK:' | '2.42.0'
+'PyGObject:' | '2.61.42'
+'GLib:' | '2.74.42'
+'
+TextTest source directory:'
+'/users/geoff/work/master/Testing/TextTest'
+---------------
+Button 'gtk-close' (Stock image 'gtk-close')
+--------------------------------------------------
+
+'press close' event created with arguments ''
+
+'press close' event created with arguments ''
+
+'show texttest migration notes' event created with arguments ''
 
 Changing GUI status to: ''
 
@@ -170,7 +288,28 @@ Showing Notebook with tabs: from 3.14 , from 3.13 , from 3.12 , from 3.11 , from
 Viewing page 'from 3.14'
 
 ========== GtkTextView ==========
-There is almost certainly no migration needed. 
+
+The main things that need migrating are version-specific "options" files. Otherwise there are a couple
+of changes in behaviour you might want to note.
+
+=========================================================
+COMPULSORY MIGRATION
+=========================================================
+(1) Versioned "options" files.
+
+TextTest 3.15 handles options files much more like e.g. "environment" files and "knownbugs" files have
+been handled up until now. It allows them to be placed in test suites and view them as cumulative, i.e. it attempts 
+to amalgamate them with each other. This breaks backward compatibility in the case where
+you have tests that contain both "options.app" and "options.app.v1" files. For example, if
+options.app contains "-a" and options.app.v1 contains "-b", then if you run version v1 of the
+test it will now run with "-a -b" rather than just "-b" as before.
+
+Many such versioned files simply add an extra option, if so you just need to delete the repeated options.
+The simplest way to restore backward compatibility is to add {CLEAR} to the beginning of the line,
+in which case all other options files will be ignored.
+
+You can also for example do {CLEAR -a} which in this case will have the same effect. See the guide
+to test suites on the website for more complete documentation of this new feature.
 
 =========================================================
 CHANGES IN DEFAULT BEHAVIOUR (OR PROCEDURE)
@@ -285,42 +424,131 @@ Viewing page 'trunk'
 
 ========== GtkTextView ==========
 General GUI Enhancements:
+    - Default search now works! (testtree.py)
+	Can select tests just by typing with the test tree highlighted
     - Version dialog shows version of PyGObject and GLib also (helpdialogs.py)
+    - Quick Start guide now available from help menu, also credits and license (helpdialogs.py)
 Static GUI Enhancements:
+    - New "Replace Text in Files" action
+	Graphical version of default.ReplaceText script
+    - Selection of test suites now reported in test tree header (testtree.py)
+	Reports number of suites selected instead of 0 tests
+    - Adding a test now adds it to all selected suites (adminactions.py)
+	More consistent with behaviour of Rename, Copy etc.
     - Can now use UNIX-style file expansion wildcards (globs) in the "Test-file to search" box in the Selection tab. (default_gui.py)
 	Allows looking for text in multiple files simultaneously. Also affects -grepfile on the command line.
     - On creating a new application, can specify at creation time that it is a GUI (default_gui.py)
 	Saves on fiddling and restarting the GUI.
+    - Default value for "query_kill_processes" changed (default/__init__.py)
+	Ask before terminating dynamic GUIs when static GUI is terminated.
+    - Performance values displayed in more readable format (textinfo.py)
+	Previously in seconds only
     - Tooltips added to the selection tab to aid clarity.
 Dynamic GUI Enhancements:
+    - Can now rerun tests directly from the dynamic GUI (runningactions.py)
+	Saves on saving a selection back to the static GUI, loading it and then rerunning.
     - Selecting files in the file view now also filters the Text Info display below (texttestgui.py)
 	So that it only previews what is currently selected.
-    - Can now view original files (filtered and not) from the file view popup menu (default_gui.py)
+    - Saved tests are now listed separately in the status view (statusviews.py)
+	Makes it easier to track which tests have been saved and which worked by themselves
+    - Saved tests make this clear in the Text Info space, recording the time at which they were saved (comparetest.py)
+    - "Save As" dialog allows multiple versions for "Version to save previous results as" (changetestresults.py)
+	Use comma-separated list which can provide multiple backups of the same file.
+    - Can now view original files (filtered and not) from the file view popup menu (fileviewers.py)
+    - Can now view files with content-filtering but not order-filtering present (fileviewers.py)
+	Useful when "unordered_text" is defined
+    - "Annotate" is now called "Set Run Name" and works from the command line / static GUI (housekeeping.py)
+	Uses the pre-existing option -name which previously only affected batch mode
+    - New base_version "recusecase" for when recording GUI tests
+	Works much like the exisiting "rectraffic", i.e. a way to have different configuration only in this case
+    - Test tree tooltips now work more reliably and use the builtin support in PyGTK 2.12 (testtree.py)
+	They are removed in PyGTK 2.10, was not deemed important enough to keep them there
 Framework Enhancements:
+    - Can now use "options" files in test suites (default/__init__.py)
+	They get combined like "environment" files. See "Test Suite Guide" on the website for more details.
     - Reconnect now picks up all "extra versions" that were originally run (reconnect.py)
 	Mainly useful if batch_extra_version was originally supplied
+    - New variable TEXTTEST_SANDBOX_ROOT provided
+	Refers to the top level of the sandbox structure, can be used for temporary storage shared between tests.
+    - New variable TEXTTEST_PATH provided (engine.py)
+	Like TEXTTEST_HOME, but allows loading tests from multiple locations into the same process
+    - New config setting "performance_ignore_improvements" (performance.py)
+	As the name suggests, allows performance testing to only flag when performance degrades.
+    - New config setting "save_filtered_file_stems"
+	Allows the filtered version of files to be saved instead of the raw output.
+    - Floating point filtering now supports relative tolerance (fpdiff.py)
+	New config file setting "relative_float_tolerance". Thanks to Michael Behrisch for this.
+    - Config setting "suppress_stderr_popup" renamed to "suppress_stderr_text" and used more widely
+	Old name still works as an alias. Will now look at stderr from collate scripts and grid engine slaves too.
+    - Can now have variable "executable"
+	Set a relative path and provide it also in one of the "*_test_path" config settings.
     - Logging more flexible now (default.py)
 	Dynamic GUI does not write anything by default. Batch mode writes time stamps by default.
 	Debug logging file now called "logging.debug" rather than "log4py.conf". See migration notes
     - Personal toolbar/GTK configuration now lives in "etc" subdirectory (plugins.py)
 	Mostly to keep things consistent with "log" locations
+    - Generalised --vanilla option (testmodel.py)
+	Now have --vanilla site and --vanilla personal
+    - New "default_texttest_tmp" config file entry (default/__init__.py)
+	Useful for setting a site-wide default, e.g. if a separate disk is used for this purpose
+    - Overwrite mode (-o) now displays differences for what it overwrites
 Historical HTML Batch Report Enhancements:
-    - Separate summary rows are now displayed for each extra version (testoverview.py) 
+    - Separate summary rows are now displayed for each extra version (testoverview.py)
     - With extra versions, the first one also gets given a header row now (testoverview.py)
     - Category ordering is now deterministic, with succeeded tests displayed first (testoverview.py)
-Version Control Browser Enhancements/bug fixes:
+Grid Engine (LSF/SGE) enhancements:
+    - New config file option "queue_system_min_test_count" (queuesystem/__init__.py)
+	Can make sure small numbers of tests get run locally by default, while large numbers use the grid.
+    - Slave job handling is now multithreaded (masterprocess.py)
+	Hopefully a bit faster and less sensitive to network trouble
+    - Errors produced by remote jobs now get reported on master process stderr (masterprocess.py)
+	And hence in popups in the static GUI where appropriate.
+    - Tests from different applications now interleaved when submitting (masterprocess.py)
+	Means one application is less likely to take over all available resources
 Self-test/Internal changes:
     - Everything now done via PyUseCase 2.0's new auto-logging. Most custom logging removed from TextTest.
     - Popup menus are now called and shown in the tests.
     - New application event fixes indeterminism problems around tests that kill external viewers.
+    - Major GUI code refactoring to create packages as appropriate
     - Lots of work on coverage: tests added, dead code removed, no-coverage pragmas added. Coverage from self-tests now 98.6%
 Bug Fixes:
     - Invisible (filtered out) tests will not be run now when a test suite is selected (texttestgui.py)
-    - "Create/Import" functionality in static GUI works correctly for directories which previously existed (default_gui.py)
+    - "Create/Import" functionality in static GUI works correctly for directories which previously existed (adminactions.py)
     - Static GUI no longer refuses to start if the "default checkout" can't be found (default/__init__.py)
     - All plugins scripts now reject unknown arguments in a consistent way (plugins.py)
     - Status of tests now synchronised across the GUI, should be harder to get a test green/red somewhere and still yellow
 	somewhere else.
+    - Observer exceptions no longer fatal (plugins.py)
+	Many observers can be in configuration code and shouldn't be allowed to bring down other applications.
+    - Pasting a test where there already exists a file of that name now handled gracefully (adminactions.py)
+    - Fixed stacktrace removing a suite containing duplicated subsuites (testmodel.py)
+    - Traffic mechanism no longer stacktraces if server under test resets its connection (traffic.py)
+    - "Show File Properties" in the dynamic GUI no longer shows everything twice for new files (fileviewers.py)
+    - Running tests remotely (without grid engine) can now handle illegal shell syntax in test names and environment variables (default.py)
+    - Running tests remotely (without grid engine) now gets correct values for TEXTTEST_SANDBOX
+    - Running tests remotely (without grid engine) now works in conjunction with automatic performance measurement (default.py)
+    - Killing remote tests started with SSH now works (default/__init__.py)
+	SSH doesn't forward signals unfortunately...
+    - Auto-replay the correct test when recording if static GUI test selection changes in the meantime (adminactions.py)
+    - Refining a selection containing test suites now works properly (selectandfilter.py)
+	Previously lost all test suites
+    - Now produce a warning for duplicated sections in "knownbugs" files (knownbugs/__init__.py)
+	Silently ignored previously
+    - Importing files now preserves permissions correctly (adminactions.py)
+    - Crashed virtual servers are now restarted after each test, preventing multiple tests failing for the same crash (virtualdisplay.py)
+    - Grouping of tests in the dynamic GUI is disabled if their diffs are longer than the maximum to display (statusviews.py)
+	Could lead to false grouping and hence incorrect saves
+    - Credits dialog no longer mangled in locales which aren't Latin-1 compatible (helpdialogs.py)
+    - Added error messages for locale encoding problems (guiutils.py)
+    - Errors when collating now get shown in the GUI (sandbox.py)
+    - "collate_file" is now done before "discard_file" (sandbox.py)
+	Means you can "rename" files by collating them to a new name and then discarding the original one.
+    - Fixed occasional confusion in the dynamic GUI when tests are both "collapsed" and "hidden" (testtree.py)
+Grid Engine (LSF/SGE) Bug Fixes:
+    - Don't reuse slave jobs that get killed after the test completes (masterprocess.py)
+    - Don't send tests for re-use whose submission has been cancelled (queuesystem/masterprocess.py)
+    - Reduced keepalive timeout to 5 minutes, 2 hours is rather a long time in a test context (masterprocess.py)
+    - Don't fall over if SUT leaves child processes running from the slave (slavejobs.py)
 =================================
 ---------------
 Button 'gtk-close' (Stock image 'gtk-close')
@@ -372,8 +600,6 @@ Test Fixes:
 
 'show component version information' event created with arguments ''
 
-Changing GUI status to: ''
-
 ---------- Dialog 'Version Information' ----------
 Default widget is 'gtk-close'
 'You are using these versions:
@@ -395,8 +621,6 @@ Button 'gtk-close' (Stock image 'gtk-close')
 'press close' event created with arguments ''
 
 'show texttest credits' event created with arguments ''
-
-Changing GUI status to: ''
 
 ---------- Dialog 'TextTest Credits' ----------
 Default widget is 'gtk-close'
@@ -561,120 +785,6 @@ TextTest itself works and what features it has...
 ---------------
 Button 'gtk-close' (Stock image 'gtk-close')
 ---------------------------------------------------
-
-'press close' event created with arguments ''
-
-'show information about texttest' event created with arguments ''
-
-Changing GUI status to: ''
-
----------- Dialog 'About TextTest' ----------
-Default widget is 'gtk-close'
-Non-stock image
-'TextTest trunk
-'
-'TextTest is an application-independent tool for text-based
-functional testing. This means running a batch-mode program
-in lots of different ways, and using the text output produced
-as a means of controlling the behaviour of that application.
-'
-'http://www.texttest.org/
-'
-'Copyright Â© The authors
-'
----------------
-Button 'gtk-close' (Stock image 'gtk-close')
-Button '_Versions'
-Button '_License'
-Button 'texttest-stock-credits' (Stock image 'texttest-stock-credits')
----------------------------------------------
-
-'press credits' event created with arguments ''
-
----------- Dialog 'TextTest Credits' ----------
-Default widget is 'gtk-close'
-
-Showing Notebook with tabs: Written by
-Viewing page 'Written by'
-
-========== GtkTextView ==========
-Code Maintainer:                                        
-
-    Geoff Bache
-
-Developers:
-
-    Geoff Bache
-    Mattias Grönkvist
-    Johan Ivarsson
-    Johan Andersson
-
-Contributors:
-
-    Patrik Blommaskog
-    Per Bergsten
-    Emily Bache
-    Nicolas Gattario
-    Claes Verdoes
-    Henning Thornblad
-    Michael Behrisch
-=================================
----------------
-Button 'gtk-close' (Stock image 'gtk-close')
------------------------------------------------
-
-'press close' event created with arguments ''
-
-'press license' event created with arguments ''
-
----------- Dialog 'TextTest License' ----------
-Default widget is 'gtk-close'
-
-Showing Notebook with tabs: License
-Viewing page 'License'
-
-========== GtkTextView ==========
-TextTest : tool for automatic system-level acceptance testing
-Copyright (c) 2003 Geoff Bache
-
-This program is free software; you can redistribute it and/or
-modify it under the terms of the GNU Lesser General Public
-License as published by the Free Software Foundation; either
-version 2.1 of the License, or (at your option) any later version.
-
-This library is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
-Lesser General Public License for more details. This can be found
-online at http://www.opensource.org/licenses/lgpl-license.php
-=================================
----------------
-Button 'gtk-close' (Stock image 'gtk-close')
------------------------------------------------
-
-'press close' event created with arguments ''
-
-'press versions' event created with arguments ''
-
----------- Dialog 'Version Information' ----------
-Default widget is 'gtk-close'
-'You are using these versions:
-'
-Viewing table with 6 rows and 2 columns.
-'TextTest:' | 'trunk'
-'Python:' | '2.9.42.final.0'
-'GTK:' | '2.58.42'
-'PyGTK:' | '2.42.0'
-'PyGObject:' | '2.61.42'
-'GLib:' | '2.74.42'
-'
-TextTest source directory:'
-'/users/geoff/work/master/Testing/TextTest'
----------------
-Button 'gtk-close' (Stock image 'gtk-close')
---------------------------------------------------
-
-'press close' event created with arguments ''
 
 'press close' event created with arguments ''
 
