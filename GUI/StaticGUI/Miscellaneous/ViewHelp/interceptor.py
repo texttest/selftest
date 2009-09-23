@@ -1,4 +1,4 @@
-import gtk, gobject, sys
+import gtk, gobject, sys, os, logging
 
 sys.version_info = 2, 9, 42, "final", 0
 gtk.pygtk_version = 2, 42, 0
@@ -15,3 +15,10 @@ def default_locale():
     return "en_US", "ISO8859-1"
 
 locale.getdefaultlocale = default_locale
+
+def my_startfile(fileName):
+    log = logging.getLogger("gui log")
+    log.info("Called startfile on " + fileName)
+    sys.stdout.flush()
+
+os.startfile = my_startfile
