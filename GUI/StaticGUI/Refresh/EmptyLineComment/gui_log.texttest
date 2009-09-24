@@ -4,9 +4,9 @@ Enabling entry completion, using matching 1
 Adding entry completion '<default>' ...
 Adding entry completion 'localhost' ...
 Adding entry completion '1' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.23Sep181014.2226/texttest/GUI/StaticGUI/Refresh/RemoveAndReaddSuite/log/logging.debug' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.24Sep085347.7208/texttest/GUI/StaticGUI/Refresh/EmptyLineComment/log/logging.debug' ...
 Adding entry completion '/users/geoff/work/master/Testing/TextTest/log/logging.debug' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.23Sep181014.2226/texttest/GUI/StaticGUI/Refresh/RemoveAndReaddSuite/log' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.24Sep085347.7208/texttest/GUI/StaticGUI/Refresh/EmptyLineComment/log' ...
 Adding entry completion 'site' ...
 Adding entry completion 'personal' ...
 Adding entry completion 'all' ...
@@ -108,7 +108,7 @@ Radio button 'Discard' (checked) (tooltip 'Show all tests which match the criter
 Button 'Filter' (Stock image 'gtk-find', accelerator 'Ctrl+F', tooltip 'filter tests to show only those indicated')
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 23Sep18:10:43.' , Non-stock image
+'TextTest started at 24Sep08:53:51.' , Non-stock image
 ----------------------------------------------------------------------------------
 
 Changing GUI status to: 'Reading tests ...'
@@ -129,7 +129,7 @@ Updated : Test Tree with columns: Tests: 0/3 selected
 ->     t1 (grey90)
 Edited 'Test-file to search' Text entry (set to 'output')
 
-Changing GUI status to: 'Reading tests completed at 23Sep18:10:44.'
+Changing GUI status to: 'Reading tests completed at 24Sep08:53:52.'
 
 Expected application event 'all tests to be read' occurred, proceeding.
 
@@ -157,98 +157,16 @@ Description:
 Original Description
 ===============================
 
-'copy selected tests' event created with arguments ''
+'refresh the whole test suite so that it reflects file changes' event created with arguments ''
 Adding entry completion 'output' ...
 
-No longer greyed out : _Paste
+Changing GUI status to: 'Refreshing the whole test suite...'
 
-Changing GUI status to: 'Performed 'Copy selected tests' on HELLO test-case t1.'
-
-'paste tests from clipboard' event created with arguments ''
-Pasting test t1_copy under test suite HELLO test-suite suite2, in position 1
-Selecting new tests : [HELLO test-case t1_copy]
-Marking 1 tests as selected
-
-No longer greyed out : Move to first, Move up
-
-Updated : Test Tree with columns: Tests: 1/4 selected
--> orig (hello) (grey90)
-->   t1 (grey90)
-->   suite1 (grey90)
-->     t1 (grey90)
-->   suite2 (grey90)
-->     t1 (grey90)
-->     t1_copy (grey90)
-
-Updated : File Tree with columns: t1__copy
+Updated : File Tree with columns: t1
 -> Standard Files (white)
 ->   output.hello (grey90)
 -> Definition Files (white)
 
-========== Text Info ==========
-
-Description:
-Original Description
-===============================
-
-Changing GUI status to: 'Pasted HELLO test-case t1_copy to suite 'suite2''
-
-'set test selection to' event created with arguments 'orig (hello)'
-
-Greyed out : Move to first, Move up, Remove..., _Copy, _Cut, _Rename...
-No longer greyed out : Add Suite, Add Test, _Reversed Sort Test Suite File, _Sort Test Suite File
-
-Column titles changed in Test Tree with columns: Tests: 1 suite selected
-
-Updated : File Tree with columns: orig
--> Definition Files (white)
-->   testsuite.hello (grey90)
-
-========== Text Info ==========
-
-Description:
-Root test suite
-===============================
-
-'select file' event created with arguments 'testsuite.hello'
-Viewing file /carm/proj/texttest-tmp/geoff/texttest.23Sep181014.2226/texttest/GUI/StaticGUI/Refresh/RemoveAndReaddSuite/TargetApp/orig/testsuite.hello using 'emacs', refresh set to True
-
-Waiting for application event 'file editing operations to complete' to occur.
-
-Changing GUI status to: 'Started "emacs testsuite.hello" in background (from test orig).'
-
-Updated : Test Tree with columns: Tests: 1 suite selected
--> orig (hello) (grey90)
-->   t1 (grey90)
-->   suite1 (grey90)
-->     t1 (grey90)
-
-Updated : File Tree with columns: orig
--> Definition Files (white)
-->   testsuite.hello (grey90)
-
-Expected application event 'file editing operations to complete' occurred, proceeding.
-
-'select file' event created with arguments 'testsuite.hello'
-Viewing file /carm/proj/texttest-tmp/geoff/texttest.23Sep181014.2226/texttest/GUI/StaticGUI/Refresh/RemoveAndReaddSuite/TargetApp/orig/testsuite.hello using 'emacs', refresh set to True
-
-Waiting for application event 'file editing operations to complete' to occur.
-
-Changing GUI status to: 'Started "emacs testsuite.hello" in background (from test orig).'
-
-Updated : Test Tree with columns: Tests: 1 suite selected
--> orig (hello) (grey90)
-->   t1 (grey90)
-->   suite1 (grey90)
-->     t1 (grey90)
-->   suite2 (grey90)
-->     t1 (grey90)
-->     t1_copy (grey90)
-
-Updated : File Tree with columns: orig
--> Definition Files (white)
-->   testsuite.hello (grey90)
-
-Expected application event 'file editing operations to complete' occurred, proceeding.
+Changing GUI status to: 'Refreshed the test suite from the files'
 
 'quit' event created with arguments ''
