@@ -15,7 +15,7 @@ class MyProxy:
  'components': [{'name': 'Medical', 'id': '10768'}],
  'created': '2009-06-09 08:47:29.0',
  'customFieldValues': [],
- 'description': 'Rudolf the red-nosed reindeer\nHad a very shiny nose\n',
+ 'description': 'Rudolf the red-nosed reindeer\r\nHad a very shiny nose\r\n',
  'environment': 'Foo version 1.00 (40)\r\nBar version version 1.00 (20)',
  'fixVersions': [],
  'id': '25014',
