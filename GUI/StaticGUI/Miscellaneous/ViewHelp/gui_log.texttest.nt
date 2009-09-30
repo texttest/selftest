@@ -4,9 +4,9 @@ Enabling entry completion, using matching 1
 Adding entry completion '<default>' ...
 Adding entry completion 'localhost' ...
 Adding entry completion '1' ...
-Adding entry completion 'C:/TextTest/personal/tmp/texttest.23Sep162652.2760/texttest/GUI/StaticGUI/Miscellaneous/ViewHelp/log/logging.debug' ...
+Adding entry completion 'C:/TextTest/personal/tmp/texttest.30Sep095937.2432/texttest/GUI/StaticGUI/Miscellaneous/ViewHelp/log/logging.debug' ...
 Adding entry completion 'C:/TextTest/source/log/logging.debug' ...
-Adding entry completion 'C:/TextTest/personal/tmp/texttest.23Sep162652.2760/texttest/GUI/StaticGUI/Miscellaneous/ViewHelp/log' ...
+Adding entry completion 'C:/TextTest/personal/tmp/texttest.30Sep095937.2432/texttest/GUI/StaticGUI/Miscellaneous/ViewHelp/log' ...
 Adding entry completion 'site' ...
 Adding entry completion 'personal' ...
 Adding entry completion 'all' ...
@@ -108,7 +108,7 @@ Radio button 'Discard' (checked) (tooltip 'Show all tests which match the criter
 Button 'Filter' (Stock image 'gtk-find', accelerator 'Ctrl+F', tooltip 'filter tests to show only those indicated')
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 23Sep16:26:54.' , Non-stock image
+'TextTest started at 30Sep09:59:39.' , Non-stock image
 --------------------------------------------------------------------------------
 
 Changing GUI status to: 'Reading tests ...'
@@ -154,7 +154,7 @@ Updated : Test Tree with columns: Tests: 0/11 selected
 ->       S01 (grey90)
 Edited 'Test-file to search' Text entry (set to 'output')
 
-Changing GUI status to: 'Reading tests completed at 23Sep16:26:54.'
+Changing GUI status to: 'Reading tests completed at 30Sep09:59:39.'
 
 Expected application event 'all tests to be read' occurred, proceeding.
 
@@ -312,6 +312,25 @@ in which case all other options files will be ignored.
 You can also for example do {CLEAR -a} which in this case will have the same effect. See the guide
 to test suites on the website for more complete documentation of this new feature.
 
+(2) Bug system location no longer recognises "default"
+
+This was never intentionally supported, but it has previously worked to identify your only bug system
+(e.g. bugzilla here) with 
+
+bug_system_location:http://bugzilla.mysite.com
+
+or even
+
+[bug_system_location]
+default:http://bugzilla.mysite.com
+
+This will not work any more. You have to explicitly say what bug system it is, i.e. 
+
+[bug_system_location]
+bugzilla:http://bugzilla.mysite.com
+
+Hopefully anyone with any sense did that anyway, but just in case :)
+
 =========================================================
 CHANGES IN DEFAULT BEHAVIOUR (OR PROCEDURE)
 =========================================================
@@ -420,136 +439,21 @@ Changing GUI status to: ''
 ---------- Dialog 'TextTest Change Logs' ----------
 Default widget is 'gtk-close'
 
-Showing Notebook with tabs: trunk , 3.14.1 , 3.14 , 3.13 , 3.12.1 , 3.12 , 3.11.1 , 3.11 , 3.10 , 3.9.1 , 3.9 , 3.8 , 3.7.1 , 3.7 , 3.6 , 3.5.3 , 3.5.2 , 3.5.1 , 3.5 , 3.4 , 3.3 , 3.2 , 3.1.1 , 3.1 , 3.0 , 2.1 , 2.0 , 1.0 , 0.2 , 0.1
+Showing Notebook with tabs: trunk , 3.15 , 3.14.1 , 3.14 , 3.13 , 3.12.1 , 3.12 , 3.11.1 , 3.11 , 3.10 , 3.9.1 , 3.9 , 3.8 , 3.7.1 , 3.7 , 3.6 , 3.5.3 , 3.5.2 , 3.5.1 , 3.5 , 3.4 , 3.3 , 3.2 , 3.1.1 , 3.1 , 3.0 , 2.1 , 2.0 , 1.0 , 0.2 , 0.1
 Viewing page 'trunk'
 
 ========== GtkTextView ==========
 General GUI Enhancements:
-    - Default search now works! (testtree.py)
-	Can select tests just by typing with the test tree highlighted
-    - Version dialog shows version of PyGObject and GLib also (helpdialogs.py)
-    - Quick Start guide now available from help menu, also credits and license (helpdialogs.py)
 Static GUI Enhancements:
-    - New "Replace Text in Files" action
-	Graphical version of default.ReplaceText script
-    - Selection of test suites now reported in test tree header (testtree.py)
-	Reports number of suites selected instead of 0 tests
-    - Adding a test now adds it to all selected suites (adminactions.py)
-	More consistent with behaviour of Rename, Copy etc.
-    - Can now use UNIX-style file expansion wildcards (globs) in the "Test-file to search" box in the Selection tab. (default_gui.py)
-	Allows looking for text in multiple files simultaneously. Also affects -grepfile on the command line.
-    - On creating a new application, can specify at creation time that it is a GUI (default_gui.py)
-	Saves on fiddling and restarting the GUI.
-    - Default value for "query_kill_processes" changed (default/__init__.py)
-	Ask before terminating dynamic GUIs when static GUI is terminated.
-    - Performance values displayed in more readable format (textinfo.py)
-	Previously in seconds only
-    - Tooltips added to the selection tab to aid clarity.
 Dynamic GUI Enhancements:
-    - Can now rerun tests directly from the dynamic GUI (runningactions.py)
-	Saves on saving a selection back to the static GUI, loading it and then rerunning.
-    - Selecting files in the file view now also filters the Text Info display below (texttestgui.py)
-	So that it only previews what is currently selected.
-    - Saved tests are now listed separately in the status view (statusviews.py)
-	Makes it easier to track which tests have been saved and which worked by themselves
-    - Saved tests make this clear in the Text Info space, recording the time at which they were saved (comparetest.py)
-    - "Save As" dialog allows multiple versions for "Version to save previous results as" (changetestresults.py)
-	Use comma-separated list which can provide multiple backups of the same file.
-    - Can now view original files (filtered and not) from the file view popup menu (fileviewers.py)
-    - Can now view files with content-filtering but not order-filtering present (fileviewers.py)
-	Useful when "unordered_text" is defined
-    - "Annotate" is now called "Set Run Name" and works from the command line / static GUI (housekeeping.py)
-	Uses the pre-existing option -name which previously only affected batch mode
-    - New base_version "recusecase" for when recording GUI tests
-	Works much like the exisiting "rectraffic", i.e. a way to have different configuration only in this case
-    - Test tree tooltips now work more reliably and use the builtin support in PyGTK 2.12 (testtree.py)
-	They are removed in PyGTK 2.10, was not deemed important enough to keep them there
 Framework Enhancements:
-    - Can now use "options" files in test suites (default/__init__.py)
-	They get combined like "environment" files. See "Test Suite Guide" on the website for more details.
-    - Reconnect now picks up all "extra versions" that were originally run (reconnect.py)
-	Mainly useful if batch_extra_version was originally supplied
-    - New variable TEXTTEST_SANDBOX_ROOT provided
-	Refers to the top level of the sandbox structure, can be used for temporary storage shared between tests.
-    - New variable TEXTTEST_PATH provided (engine.py)
-	Like TEXTTEST_HOME, but allows loading tests from multiple locations into the same process
-    - New config setting "performance_ignore_improvements" (performance.py)
-	As the name suggests, allows performance testing to only flag when performance degrades.
-    - New config setting "save_filtered_file_stems"
-	Allows the filtered version of files to be saved instead of the raw output.
-    - Floating point filtering now supports relative tolerance (fpdiff.py)
-	New config file setting "relative_float_tolerance". Thanks to Michael Behrisch for this.
-    - Config setting "suppress_stderr_popup" renamed to "suppress_stderr_text" and used more widely
-	Old name still works as an alias. Will now look at stderr from collate scripts and grid engine slaves too.
-    - Can now have variable "executable"
-	Set a relative path and provide it also in one of the "*_test_path" config settings.
-    - Logging more flexible now (default.py)
-	Dynamic GUI does not write anything by default. Batch mode writes time stamps by default.
-	Debug logging file now called "logging.debug" rather than "log4py.conf". See migration notes
-    - Personal toolbar/GTK configuration now lives in "etc" subdirectory (plugins.py)
-	Mostly to keep things consistent with "log" locations
-    - Generalised --vanilla option (testmodel.py)
-	Now have --vanilla site and --vanilla personal
-    - New "default_texttest_tmp" config file entry (default/__init__.py)
-	Useful for setting a site-wide default, e.g. if a separate disk is used for this purpose
-    - Overwrite mode (-o) now displays differences for what it overwrites
+    - Now integrates with Atlassian's Jira bugtracking system as well as Bugzilla (jira.py)
+	Works in broadly the same way as the bugzilla integration. See website for details.
 Historical HTML Batch Report Enhancements:
-    - Separate summary rows are now displayed for each extra version (testoverview.py)
-    - With extra versions, the first one also gets given a header row now (testoverview.py)
-    - Category ordering is now deterministic, with succeeded tests displayed first (testoverview.py)
 Grid Engine (LSF/SGE) enhancements:
-    - New config file option "queue_system_min_test_count" (queuesystem/__init__.py)
-	Can make sure small numbers of tests get run locally by default, while large numbers use the grid.
-    - Slave job handling is now multithreaded (masterprocess.py)
-	Hopefully a bit faster and less sensitive to network trouble
-    - Errors produced by remote jobs now get reported on master process stderr (masterprocess.py)
-	And hence in popups in the static GUI where appropriate.
-    - Tests from different applications now interleaved when submitting (masterprocess.py)
-	Means one application is less likely to take over all available resources
 Self-test/Internal changes:
-    - Everything now done via PyUseCase 2.0's new auto-logging. Most custom logging removed from TextTest.
-    - Popup menus are now called and shown in the tests.
-    - New application event fixes indeterminism problems around tests that kill external viewers.
-    - Major GUI code refactoring to create packages as appropriate
-    - Lots of work on coverage: tests added, dead code removed, no-coverage pragmas added. Coverage from self-tests now 98.6%
 Bug Fixes:
-    - Invisible (filtered out) tests will not be run now when a test suite is selected (texttestgui.py)
-    - "Create/Import" functionality in static GUI works correctly for directories which previously existed (adminactions.py)
-    - Static GUI no longer refuses to start if the "default checkout" can't be found (default/__init__.py)
-    - All plugins scripts now reject unknown arguments in a consistent way (plugins.py)
-    - Status of tests now synchronised across the GUI, should be harder to get a test green/red somewhere and still yellow
-	somewhere else.
-    - Observer exceptions no longer fatal (plugins.py)
-	Many observers can be in configuration code and shouldn't be allowed to bring down other applications.
-    - Pasting a test where there already exists a file of that name now handled gracefully (adminactions.py)
-    - Fixed stacktrace removing a suite containing duplicated subsuites (testmodel.py)
-    - Traffic mechanism no longer stacktraces if server under test resets its connection (traffic.py)
-    - "Show File Properties" in the dynamic GUI no longer shows everything twice for new files (fileviewers.py)
-    - Running tests remotely (without grid engine) can now handle illegal shell syntax in test names and environment variables (default.py)
-    - Running tests remotely (without grid engine) now gets correct values for TEXTTEST_SANDBOX
-    - Running tests remotely (without grid engine) now works in conjunction with automatic performance measurement (default.py)
-    - Killing remote tests started with SSH now works (default/__init__.py)
-	SSH doesn't forward signals unfortunately...
-    - Auto-replay the correct test when recording if static GUI test selection changes in the meantime (adminactions.py)
-    - Refining a selection containing test suites now works properly (selectandfilter.py)
-	Previously lost all test suites
-    - Now produce a warning for duplicated sections in "knownbugs" files (knownbugs/__init__.py)
-	Silently ignored previously
-    - Importing files now preserves permissions correctly (adminactions.py)
-    - Crashed virtual servers are now restarted after each test, preventing multiple tests failing for the same crash (virtualdisplay.py)
-    - Grouping of tests in the dynamic GUI is disabled if their diffs are longer than the maximum to display (statusviews.py)
-	Could lead to false grouping and hence incorrect saves
-    - Credits dialog no longer mangled in locales which aren't Latin-1 compatible (helpdialogs.py)
-    - Added error messages for locale encoding problems (guiutils.py)
-    - Errors when collating now get shown in the GUI (sandbox.py)
-    - "collate_file" is now done before "discard_file" (sandbox.py)
-	Means you can "rename" files by collating them to a new name and then discarding the original one.
-    - Fixed occasional confusion in the dynamic GUI when tests are both "collapsed" and "hidden" (testtree.py)
 Grid Engine (LSF/SGE) Bug Fixes:
-    - Don't reuse slave jobs that get killed after the test completes (masterprocess.py)
-    - Don't send tests for re-use whose submission has been cancelled (queuesystem/masterprocess.py)
-    - Reduced keepalive timeout to 5 minutes, 2 hours is rather a long time in a test context (masterprocess.py)
-    - Don't fall over if SUT leaves child processes running from the slave (slavejobs.py)
 =================================
 ---------------
 Button 'gtk-close' (Stock image 'gtk-close')
@@ -557,7 +461,7 @@ Button 'gtk-close' (Stock image 'gtk-close')
 
 'view change logs in tab' event created with arguments '3.7.1'
 
-Current page changed in Notebook with tabs: trunk , 3.14.1 , 3.14 , 3.13 , 3.12.1 , 3.12 , 3.11.1 , 3.11 , 3.10 , 3.9.1 , 3.9 , 3.8 , 3.7.1 , 3.7 , 3.6 , 3.5.3 , 3.5.2 , 3.5.1 , 3.5 , 3.4 , 3.3 , 3.2 , 3.1.1 , 3.1 , 3.0 , 2.1 , 2.0 , 1.0 , 0.2 , 0.1
+Current page changed in Notebook with tabs: trunk , 3.15 , 3.14.1 , 3.14 , 3.13 , 3.12.1 , 3.12 , 3.11.1 , 3.11 , 3.10 , 3.9.1 , 3.9 , 3.8 , 3.7.1 , 3.7 , 3.6 , 3.5.3 , 3.5.2 , 3.5.1 , 3.5 , 3.4 , 3.3 , 3.2 , 3.1.1 , 3.1 , 3.0 , 2.1 , 2.0 , 1.0 , 0.2 , 0.1
 Viewing page '3.7.1'
 
 ========== GtkTextView ==========
