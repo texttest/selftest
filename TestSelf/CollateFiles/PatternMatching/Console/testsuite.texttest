@@ -1,14 +1,20 @@
 # Test that UNIX-style pattern matching can be used in the target files
 TargetPattern
 
+# Make sure that patterns in the target name are respected and that no special handling of suffices is present
+TargetPatternNaming
+
 # Test of bad configuration
 NewFiles
 
 # Check that collating occurs before discarding so we can rename things
 CollateAndDiscard
 
-# Test of bad configuration
-BadTargetPattern
+# Try collating everything via a completely general pattern
+CollateAllAtOnce
+
+# What happens if we only have wildcards on the target side?
+UnmatchedWildcard
 
 # Make sure expansions not present in first test are still created for second test
 ExpandInSecondTest
@@ -16,14 +22,14 @@ ExpandInSecondTest
 # Check we can specify multiple paths to source from
 MultipleSources
 
-# Make sure it works when we have a target pattern and are fetching from a subdirectory
-TargetPatternSubDir
-
 # Check we find the right files when the collated names are substrings of each other
 CollateNameSubstring
 
 # Copy of NewFiles -but collate to create. etc.
 BadCollateName
+
+# Shouldn't allow path separators either
+BadCollateName2
 
 # If files existed before, don't collate them
 DontCollateInput
@@ -31,11 +37,11 @@ DontCollateInput
 # Test that we can use specified scripts in a pipeline to collate a file indirectly
 CollateScripts
 
-# If the collate_script is in the PATH only, make sure we find it
-CollateScriptInPath
-
 # Test that we get sensible error messages if a non-existent collate script gets given
 BadCollateScript
 
 # Make sure errors from collate_scripts turn up somewhere they can easily be seen
 CollateScriptErrors
+
+# Tests for collating files written in subdirectories
+FromSubDir
