@@ -4,9 +4,9 @@ Enabling entry completion, using matching 1
 Adding entry completion '<default>' ...
 Adding entry completion 'localhost' ...
 Adding entry completion '1' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.29Sep102439.4954/texttest/GUI/StaticGUI/Miscellaneous/ViewHelp/log/logging.debug' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.01Oct162755.11290/texttest/GUI/StaticGUI/Miscellaneous/ViewHelp/log/logging.debug' ...
 Adding entry completion '/users/geoff/work/master/Testing/TextTest/log/logging.debug' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.29Sep102439.4954/texttest/GUI/StaticGUI/Miscellaneous/ViewHelp/log' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.01Oct162755.11290/texttest/GUI/StaticGUI/Miscellaneous/ViewHelp/log' ...
 Adding entry completion 'site' ...
 Adding entry completion 'personal' ...
 Adding entry completion 'all' ...
@@ -108,7 +108,7 @@ Radio button 'Discard' (checked) (tooltip 'Show all tests which match the criter
 Button 'Filter' (Stock image 'gtk-find', accelerator 'Ctrl+F', tooltip 'filter tests to show only those indicated')
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 29Sep10:24:46.' , Non-stock image
+'TextTest started at 01Oct16:28:04.' , Non-stock image
 --------------------------------------------------------------------------------
 
 Changing GUI status to: 'Reading tests ...'
@@ -154,7 +154,7 @@ Updated : Test Tree with columns: Tests: 0/11 selected
 ->       S01 (grey90)
 Edited 'Test-file to search' Text entry (set to 'output')
 
-Changing GUI status to: 'Reading tests completed at 29Sep10:24:46.'
+Changing GUI status to: 'Reading tests completed at 01Oct16:28:04.'
 
 Expected application event 'all tests to be read' occurred, proceeding.
 
@@ -284,73 +284,54 @@ Changing GUI status to: ''
 ---------- Dialog 'TextTest Migration Notes' ----------
 Default widget is 'gtk-close'
 
-Showing Notebook with tabs: from 3.14 , from 3.13 , from 3.12 , from 3.11 , from 3.10 , from 3.9 , from 3.8 , from 3.7 , from 3.6 , from 3.5 , from 3.4 , from 3.3 , from 3.1 , from 2.x
-Viewing page 'from 3.14'
+Showing Notebook with tabs: from 3.15 , from 3.14 , from 3.13 , from 3.12 , from 3.11 , from 3.10 , from 3.9 , from 3.8 , from 3.7 , from 3.6 , from 3.5 , from 3.4 , from 3.3 , from 3.1 , from 2.x
+Viewing page 'from 3.15'
 
 ========== GtkTextView ==========
 
-The main things that need migrating are version-specific "options" files. Otherwise there are a couple
-of changes in behaviour you might want to note.
+The main things that need migrating are "collate_file" settings which collate multiple files simultaneously. 
 
 =========================================================
 COMPULSORY MIGRATION
 =========================================================
-(1) Versioned "options" files.
 
-TextTest 3.15 handles options files much more like e.g. "environment" files and "knownbugs" files have
-been handled up until now. It allows them to be placed in test suites and view them as cumulative, i.e. it attempts 
-to amalgamate them with each other. This breaks backward compatibility in the case where
-you have tests that contain both "options.app" and "options.app.v1" files. For example, if
-options.app contains "-a" and options.app.v1 contains "-b", then if you run version v1 of the
-test it will now run with "-a -b" rather than just "-b" as before.
+(1) "collate_file" as applied to multiple files at once
+=======================================================
 
-Many such versioned files simply add an extra option, if so you just need to delete the repeated options.
-The simplest way to restore backward compatibility is to add {CLEAR} to the beginning of the line,
-in which case all other options files will be ignored.
+For a long time it has been possible to write in your config file e.g.
 
-You can also for example do {CLEAR -a} which in this case will have the same effect. See the guide
-to test suites on the website for more complete documentation of this new feature.
+[collate_file]
+data*:data*.dump
 
-(2) Bug system location no longer recognises "default"
+by which it is intended to collate all files that match the pattern on the right
+and produce corresponding files without the dump suffix. This functionality
+has been completely rewritten since the TextTest 3.15 release to remove
+its assumptions about the form of the files and make it work more generally.
 
-This was never intentionally supported, but it has previously worked to identify your only bug system
-(e.g. bugzilla here) with 
+Also, the new version actually takes account of what is on the left-hand-side
+whereas the old version pretty much took the name of the source file and ignored
+what you put there. This is generally where the migration comes in.
 
-bug_system_location:http://bugzilla.mysite.com
+The worst that will happen is that a bunch of collated files will change name. For
+example if I instead had written
 
-or even
+[collate_file]
+dumped_data*:data*.dump
 
-[bug_system_location]
-default:http://bugzilla.mysite.com
+the files would still have been called "data*" anyway. Now TextTest will replace
+the matched strings and make use of the name in a more predictable way, which may
+produce a different name than you had before. It's usually fairly easy to change the
+name in the config file if you prefer that over renaming lots of files.
 
-This will not work any more. You have to explicitly say what bug system it is, i.e. 
+One additional restriction is that only "*" characters may be used in the left-hand-side
+patterns: they are effectively replacement markers for the matched values from the source file names. 
+Previously any UNIX-style file pattern would trigger this functionality.
 
-[bug_system_location]
-bugzilla:http://bugzilla.mysite.com
-
-Hopefully anyone with any sense did that anyway, but just in case :)
+See the website documentation of "collate_file" for full documentation of how this now works.
 
 =========================================================
 CHANGES IN DEFAULT BEHAVIOUR (OR PROCEDURE)
 =========================================================
-
-(1) Dynamic GUI no longer writes to standard output directly
-============================================================
-It uses the logging mechanism like everything else. To restore the output by
-default, copy the log/logging.console file from the TextTest source tree to
-$TEXTTEST_PERSONAL_CONFIG/log/logging.gui (i.e. ~/.texttest/log/logging.gui 
-unless you repoint the personal configuration directory)
-
-(2) Data file configuration now lives under $TEXTTEST_PERSONAL_CONFIG/etc
-=========================================================================
-Also for consistency with the log layout. If you have .gtkrc-2.0 or .xml files
-for configuring the tool bar in your personal configuration, you'll need to move them
-to this subdirectory.
-
-(3) Default "debug" logging file now called logging.debug instead of log4py.conf
-================================================================================
-For consistency with the above. So you need to go to $TEXTTEST_PERSONAL_CONFIG/log if
-you have such a location and do this rename.
 =================================
 ---------------
 Button 'gtk-close' (Stock image 'gtk-close')
@@ -358,7 +339,7 @@ Button 'gtk-close' (Stock image 'gtk-close')
 
 'view migration notes in tab' event created with arguments 'from 3.4'
 
-Current page changed in Notebook with tabs: from 3.14 , from 3.13 , from 3.12 , from 3.11 , from 3.10 , from 3.9 , from 3.8 , from 3.7 , from 3.6 , from 3.5 , from 3.4 , from 3.3 , from 3.1 , from 2.x
+Current page changed in Notebook with tabs: from 3.15 , from 3.14 , from 3.13 , from 3.12 , from 3.11 , from 3.10 , from 3.9 , from 3.8 , from 3.7 , from 3.6 , from 3.5 , from 3.4 , from 3.3 , from 3.1 , from 2.x
 Viewing page 'from 3.4'
 
 ========== GtkTextView ==========
@@ -446,6 +427,11 @@ General GUI Enhancements:
 Static GUI Enhancements:
 Dynamic GUI Enhancements:
 Framework Enhancements:
+    - Now integrates with Atlassian's Jira bugtracking system as well as Bugzilla (jira.py)
+	Works in broadly the same way as the bugzilla integration. See website for details.
+    - "collate_file" functionality for multiple files rewritten (sandbox.py)
+	Patterns of the form "data*:data*.dump" should behave more intuitively, but may not be completely back-compatible.
+	Read the migration notes and the website for details.
 Historical HTML Batch Report Enhancements:
 Grid Engine (LSF/SGE) enhancements:
 Self-test/Internal changes:
