@@ -4,7 +4,7 @@ Enabling entry completion, using matching 1
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
 
----------- Window 'TextTest dynamic GUI : testing HELLO,HELLO.core (started at 03Sep10:50:30)' ----------
+---------- Window 'TextTest dynamic GUI : testing HELLO,HELLO.core (started at 06Oct21:50:01)' ----------
 Focus widget is 'Test Tree'
 
 Menu Bar :
@@ -43,7 +43,7 @@ Tool Bar :
   _Quit (Stock image 'gtk-quit', accelerator 'Ctrl+Q', tooltip 'Quit')
   _Kill (Stock image 'gtk-stop', greyed out, accelerator 'Ctrl+Delete', tooltip 'Kill selected tests')
   _Save (Stock image 'gtk-save', greyed out, accelerator 'Ctrl+S', tooltip 'Save results for selected tests')
-  Progress bar set to fraction 0.0, text 'All 0 tests completed at 03Sep10:50:31'
+  Progress bar set to fraction 0.0, text 'All 0 tests completed at 06Oct21:50:01'
 ...........
 
 Showing Test Tree with columns: Tests: All 0 selected , Details
@@ -57,13 +57,13 @@ Viewing page 'Status'
 Showing Test Status View with columns: Status , Number , Visible
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 03Sep10:50:31.' , Non-stock image
----------------------------------------------------------------------------------------------------------
+'TextTest started at 06Oct21:50:01.' , Non-stock image
+----------------------------------------------------------------------------------------------------
 
 Progress bar set to fraction 0.0, text '0 of 1 tests completed'
 
 Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
--> TargetApp (hello) (white) | (white)
+-> TargetApp (hello) (white,bold) | (white)
 ->   Test (white) | (white)
 
 Updated : Test Status View with columns: Status , Number , Visible
@@ -72,9 +72,9 @@ Updated : Test Status View with columns: Status , Number , Visible
 Progress bar set to fraction 0.0, text '0 of 2 tests completed'
 
 Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
--> TargetApp (hello) (white) | (white)
+-> TargetApp (hello) (white,bold) | (white)
 ->   Test (white) | (white)
--> TargetApp (hello.core) (white) | (white)
+-> TargetApp (hello.core) (white,bold) | (white)
 ->   Test (white) | (white)
 
 Updated : Test Status View with columns: Status , Number , Visible
@@ -83,9 +83,9 @@ Updated : Test Status View with columns: Status , Number , Visible
 Progress bar set to fraction 0.0, text '0 of 2 tests completed'
 
 Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
--> TargetApp (hello) (white) | (white)
+-> TargetApp (hello) (white,bold) | (white)
 ->   Test (yellow) | (yellow)
--> TargetApp (hello.core) (white) | (white)
+-> TargetApp (hello.core) (white,bold) | (white)
 ->   Test (white) | (white)
 
 Updated : Test Status View with columns: Status , Number , Visible
@@ -95,9 +95,9 @@ Updated : Test Status View with columns: Status , Number , Visible
 Progress bar set to fraction 0.5, text '1 of 2 tests completed'
 
 Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
--> TargetApp (hello) (white) | (white)
+-> TargetApp (hello) (white,bold) | (white)
 ->   Test (red) | output different (red)
--> TargetApp (hello.core) (white) | (white)
+-> TargetApp (hello.core) (white,bold) | (white)
 ->   Test (white) | (white)
 
 Updated : Test Status View with columns: Status , Number , Visible
@@ -108,9 +108,9 @@ Updated : Test Status View with columns: Status , Number , Visible
 ->     output different (red,bold) | 1 (red,bold) | Check box (checked)
 
 Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
--> TargetApp (hello) (white) | (white)
+-> TargetApp (hello) (white,bold) | (white)
 ->   Test (red) | output different (red)
--> TargetApp (hello.core) (white) | (white)
+-> TargetApp (hello.core) (white,bold) | (white)
 ->   Test (yellow) | (yellow)
 
 Updated : Test Status View with columns: Status , Number , Visible
@@ -120,12 +120,12 @@ Updated : Test Status View with columns: Status , Number , Visible
 ->   Differences (red,bold) | 1 (red,bold) | Check box (checked)
 ->     output different (red,bold) | 1 (red,bold) | Check box (checked)
 
-Progress bar set to fraction 1.0, text 'All 2 tests completed at 03Sep10:50:32'
+Progress bar set to fraction 1.0, text 'All 2 tests completed at 06Oct21:50:02'
 
 Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
--> TargetApp (hello) (white) | (white)
+-> TargetApp (hello) (white,bold) | (white)
 ->   Test (red) | output different (red)
--> TargetApp (hello.core) (white) | (white)
+-> TargetApp (hello.core) (white,bold) | (white)
 ->   Test (red) | Segmentation fault in ___newselect_nocancel (red)
 
 Updated : Test Status View with columns: Status , Number , Visible
@@ -150,7 +150,7 @@ Viewing page 'Test'
 ...........
 
 Showing File Tree with columns: Test , Details
--> Comparison Files
+-> Comparison Files (bold)
 ->   errors.hello (green) | (green)
 ->   output.hello (green) | (green)
 
@@ -188,7 +188,7 @@ Changing GUI status to: 'Action cancelled.'
 'set test selection to' event created with arguments 'Test under TargetApp (hello)'
 
 Updated : File Tree with columns: Test , Details
--> Comparison Files
+-> Comparison Files (bold)
 ->   errors.hello (green) | (green)
 ->   output.hello (red) | (red)
 
@@ -208,8 +208,8 @@ Changing GUI status to: 'Saving HELLO test-case Test : output, no version'
 Greyed out : Recompute Status, S_ave Selection..., Save _As..., _Mark, _Rerun, _Save
 
 Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
--> TargetApp (hello) (white) | All 1 tests successful (green)
--> TargetApp (hello.core) (white) | (white)
+-> TargetApp (hello) (white,bold) | All 1 tests successful (green)
+-> TargetApp (hello.core) (white,bold) | (white)
 ->   Test (red) | Segmentation fault in ___newselect_nocancel (red) | Stock image 'gtk-refresh'
 
 Current page changed in Notebook with tabs: Status , Run Info
@@ -239,7 +239,7 @@ Viewing page 'Test'
 ...........
 
 Showing File Tree with columns: Test , Details
--> Comparison Files
+-> Comparison Files (bold)
 ->   errors.hello (green) | (green)
 ->   output.hello (green) | (green) | Stock image 'gtk-refresh'
 
@@ -263,12 +263,12 @@ Changing GUI status to: 'Rereading configuration for HELLO.core ...'
 Changing GUI status to: 'Recomputing status of HELLO.core test-case Test ...'
 
 Updated : Test Tree with columns: Tests: 1/2 selected, none hidden , Details
--> TargetApp (hello) (white) | All 1 tests successful (green)
--> TargetApp (hello.core) (white) | (white)
+-> TargetApp (hello) (white,bold) | All 1 tests successful (green)
+-> TargetApp (hello.core) (white,bold) | (white)
 ->   Test (red) | Segmentation fault in ___newselect_nocancel (red)
 
 Updated : File Tree with columns: Test , Details
--> Comparison Files
+-> Comparison Files (bold)
 ->   errors.hello (green) | (green)
 ->   output.hello (red) | (red)
 

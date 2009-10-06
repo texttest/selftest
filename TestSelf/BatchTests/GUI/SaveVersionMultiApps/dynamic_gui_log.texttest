@@ -4,7 +4,7 @@ Enabling entry completion, using matching 1
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
 
----------- Window 'TextTest dynamic GUI : testing HELLO.batch.1,HELLO.batch.2 (started at 03Sep10:50:18)' ----------
+---------- Window 'TextTest dynamic GUI : testing HELLO.batch.1,HELLO.batch.2 (started at 06Oct20:37:50)' ----------
 Focus widget is 'Test Tree'
 
 Menu Bar :
@@ -43,7 +43,7 @@ Tool Bar :
   _Quit (Stock image 'gtk-quit', accelerator 'Ctrl+Q', tooltip 'Quit')
   _Kill (Stock image 'gtk-stop', greyed out, accelerator 'Ctrl+Delete', tooltip 'Kill selected tests')
   _Save (Stock image 'gtk-save', greyed out, accelerator 'Ctrl+S', tooltip 'Save results for selected tests')
-  Progress bar set to fraction 0.0, text 'All 0 tests completed at 03Sep10:50:21'
+  Progress bar set to fraction 0.0, text 'All 0 tests completed at 06Oct20:37:50'
 ...........
 
 Showing Test Tree with columns: Tests: All 0 selected , Details
@@ -57,13 +57,13 @@ Viewing page 'Status'
 Showing Test Status View with columns: Status , Number , Visible
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 03Sep10:50:21.' , Non-stock image
---------------------------------------------------------------------------------------------------------------------
+'TextTest started at 06Oct20:37:50.' , Non-stock image
+----------------------------------------------------------------------------------------------------
 
 Progress bar set to fraction 0.0, text '0 of 1 tests completed'
 
 Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
--> TargetApp (hello.batch.1) (white) | (white)
+-> TargetApp (hello.batch.1) (white,bold) | (white)
 ->   BothDiff (white) | (white)
 
 Updated : Test Status View with columns: Status , Number , Visible
@@ -72,9 +72,9 @@ Updated : Test Status View with columns: Status , Number , Visible
 Progress bar set to fraction 0.0, text '0 of 2 tests completed'
 
 Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
--> TargetApp (hello.batch.1) (white) | (white)
+-> TargetApp (hello.batch.1) (white,bold) | (white)
 ->   BothDiff (white) | (white)
--> TargetApp (hello.batch.2) (white) | (white)
+-> TargetApp (hello.batch.2) (white,bold) | (white)
 ->   BothDiff (white) | (white)
 
 Updated : Test Status View with columns: Status , Number , Visible
@@ -83,9 +83,9 @@ Updated : Test Status View with columns: Status , Number , Visible
 Progress bar set to fraction 0.0, text '0 of 2 tests completed'
 
 Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
--> TargetApp (hello.batch.1) (white) | (white)
+-> TargetApp (hello.batch.1) (white,bold) | (white)
 ->   BothDiff (yellow) | (yellow)
--> TargetApp (hello.batch.2) (white) | (white)
+-> TargetApp (hello.batch.2) (white,bold) | (white)
 ->   BothDiff (white) | (white)
 
 Updated : Test Status View with columns: Status , Number , Visible
@@ -95,9 +95,9 @@ Updated : Test Status View with columns: Status , Number , Visible
 Progress bar set to fraction 0.5, text '1 of 2 tests completed'
 
 Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
--> TargetApp (hello.batch.1) (white) | (white)
+-> TargetApp (hello.batch.1) (white,bold) | (white)
 ->   BothDiff (red) | errors different(+) (red)
--> TargetApp (hello.batch.2) (white) | (white)
+-> TargetApp (hello.batch.2) (white,bold) | (white)
 ->   BothDiff (white) | (white)
 
 Updated : Test Status View with columns: Status , Number , Visible
@@ -109,9 +109,9 @@ Updated : Test Status View with columns: Status , Number , Visible
 ->     output different (red,bold) | 1 (red,bold) | Check box (checked)
 
 Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
--> TargetApp (hello.batch.1) (white) | (white)
+-> TargetApp (hello.batch.1) (white,bold) | (white)
 ->   BothDiff (red) | errors different(+) (red)
--> TargetApp (hello.batch.2) (white) | (white)
+-> TargetApp (hello.batch.2) (white,bold) | (white)
 ->   BothDiff (yellow) | (yellow)
 
 Updated : Test Status View with columns: Status , Number , Visible
@@ -122,12 +122,12 @@ Updated : Test Status View with columns: Status , Number , Visible
 ->     errors different (red,bold) | 1 (red,bold) | Check box (checked)
 ->     output different (red,bold) | 1 (red,bold) | Check box (checked)
 
-Progress bar set to fraction 1.0, text 'All 2 tests completed at 03Sep10:50:24'
+Progress bar set to fraction 1.0, text 'All 2 tests completed at 06Oct20:37:51'
 
 Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
--> TargetApp (hello.batch.1) (white) | (white)
+-> TargetApp (hello.batch.1) (white,bold) | (white)
 ->   BothDiff (red) | errors different(+) (red)
--> TargetApp (hello.batch.2) (white) | (white)
+-> TargetApp (hello.batch.2) (white,bold) | (white)
 ->   BothDiff (red) | errors different(+) (red)
 
 Updated : Test Status View with columns: Status , Number , Visible
@@ -153,7 +153,7 @@ Viewing page 'Test'
 ...........
 
 Showing File Tree with columns: BothDiff , Details
--> Comparison Files
+-> Comparison Files (bold)
 ->   errors.hello (red) | (red)
 ->   output.hello (red) | (red)
 
@@ -161,7 +161,7 @@ Showing File Tree with columns: BothDiff , Details
 ...........
 
 ========== Text Info ==========
-Test FAILED on rapidcity :
+Test FAILED on sofa-pc :
 ---------- Differences in errors ----------
 0a1
 > Error text
@@ -179,8 +179,8 @@ Changing GUI status to: 'Saving HELLO.batch.1 test-case BothDiff : output, versi
 Greyed out : Recompute Status, S_ave Selection..., Save _As..., _Mark, _Rerun, _Save
 
 Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
--> TargetApp (hello.batch.1) (white) | All 1 tests successful (green)
--> TargetApp (hello.batch.2) (white) | (white)
+-> TargetApp (hello.batch.1) (white,bold) | All 1 tests successful (green)
+-> TargetApp (hello.batch.2) (white,bold) | (white)
 ->   BothDiff (red) | errors different(+) (red)
 
 Current page changed in Notebook with tabs: Status , Run Info

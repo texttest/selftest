@@ -5,7 +5,7 @@ Enabling entry completion, using matching 1
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
 
----------- Window 'TextTest dynamic GUI : testing HELLO (started at 03Sep10:51:03)' ----------
+---------- Window 'TextTest dynamic GUI : testing HELLO (started at 06Oct22:01:03)' ----------
 Focus widget is 'Test Tree'
 
 Menu Bar :
@@ -44,7 +44,7 @@ Tool Bar :
   _Quit (Stock image 'gtk-quit', accelerator 'Ctrl+Q', tooltip 'Quit')
   _Kill (Stock image 'gtk-stop', greyed out, accelerator 'Ctrl+Delete', tooltip 'Kill selected tests')
   _Save (Stock image 'gtk-save', greyed out, accelerator 'Ctrl+S', tooltip 'Save results for selected tests')
-  Progress bar set to fraction 0.0, text 'All 0 tests completed at 03Sep10:51:07'
+  Progress bar set to fraction 0.0, text 'All 0 tests completed at 06Oct22:01:04'
 ...........
 
 Showing Test Tree with columns: Tests: All 0 selected , Details
@@ -58,14 +58,14 @@ Viewing page 'Status'
 Showing Test Status View with columns: Status , Number , Visible
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 03Sep10:51:07.' , Non-stock image
+'TextTest started at 06Oct22:01:04.' , Non-stock image
 ----------------------------------------------------------------------------------------------
 
 Progress bar set to fraction 0.0, text '0 of 1 tests completed'
 
 Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
--> TargetApp (hello) (white) | (white)
-->   Suite1 (white) | (white)
+-> TargetApp (hello) (white,bold) | (white)
+->   Suite1 (white,bold) | (white)
 ->     Test1 (white) | (white)
 
 Updated : Test Status View with columns: Status , Number , Visible
@@ -74,10 +74,10 @@ Updated : Test Status View with columns: Status , Number , Visible
 Progress bar set to fraction 0.0, text '0 of 2 tests completed'
 
 Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
--> TargetApp (hello) (white) | (white)
-->   Suite1 (white) | (white)
+-> TargetApp (hello) (white,bold) | (white)
+->   Suite1 (white,bold) | (white)
 ->     Test1 (white) | (white)
-->   Suite2 (white) | (white)
+->   Suite2 (white,bold) | (white)
 ->     Test2 (white) | (white)
 
 Updated : Test Status View with columns: Status , Number , Visible
@@ -86,10 +86,10 @@ Updated : Test Status View with columns: Status , Number , Visible
 Progress bar set to fraction 0.0, text '0 of 2 tests completed'
 
 Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
--> TargetApp (hello) (white) | (white)
-->   Suite1 (white) | (white)
+-> TargetApp (hello) (white,bold) | (white)
+->   Suite1 (white,bold) | (white)
 ->     Test1 (white) | PEND (white)
-->   Suite2 (white) | (white)
+->   Suite2 (white,bold) | (white)
 ->     Test2 (white) | (white)
 
 Updated : Test Status View with columns: Status , Number , Visible
@@ -104,10 +104,10 @@ Expected application event 'test Test1 to become pending' occurred, proceeding.
 Changing GUI status to: 'Waiting for all tests to terminate ...'
 
 Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
--> TargetApp (hello) (white) | (white)
-->   Suite1 (white) | (white)
+-> TargetApp (hello) (white,bold) | (white)
+->   Suite1 (white,bold) | (white)
 ->     Test1 (white) | PEND (white)
-->   Suite2 (white) | (white)
+->   Suite2 (white,bold) | (white)
 ->     Test2 (white) | PEND (white)
 
 Updated : Test Status View with columns: Status , Number , Visible
@@ -117,10 +117,10 @@ Updated : Test Status View with columns: Status , Number , Visible
 Progress bar set to fraction 0.5, text '1 of 2 tests completed'
 
 Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
--> TargetApp (hello) (white) | (white)
-->   Suite1 (white) | (white)
-->     Test1 (red) | cancelled pending job at 10:51 (red)
-->   Suite2 (white) | (white)
+-> TargetApp (hello) (white,bold) | (white)
+->   Suite1 (white,bold) | (white)
+->     Test1 (red) | cancelled pending job at 22:01 (red)
+->   Suite2 (white,bold) | (white)
 ->     Test2 (white) | PEND (white)
 
 Updated : Test Status View with columns: Status , Number , Visible
@@ -128,20 +128,20 @@ Updated : Test Status View with columns: Status , Number , Visible
 -> Pending (white,bold) | 1 (white,bold) | Check box (checked)
 -> Failed (red,bold) | 1 (red,bold) | Check box (checked)
 ->   Cancelled (red,bold) | 1 (red,bold) | Check box (checked)
-->     cancelled pending job at 10:51 (red,bold) | 1 (red,bold) | Check box (checked)
+->     cancelled pending job at 22:01 (red,bold) | 1 (red,bold) | Check box (checked)
 
-Progress bar set to fraction 1.0, text 'All 2 tests completed at 03Sep10:51:19'
+Progress bar set to fraction 1.0, text 'All 2 tests completed at 06Oct22:01:14'
 
 Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
--> TargetApp (hello) (white) | (white)
-->   Suite1 (white) | (white)
-->     Test1 (red) | cancelled pending job at 10:51 (red)
-->   Suite2 (white) | (white)
-->     Test2 (red) | cancelled pending job at 10:51 (red)
+-> TargetApp (hello) (white,bold) | (white)
+->   Suite1 (white,bold) | (white)
+->     Test1 (red) | cancelled pending job at 22:01 (red)
+->   Suite2 (white,bold) | (white)
+->     Test2 (red) | cancelled pending job at 22:01 (red)
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white) | 0 (white) | Check box (checked)
 -> Pending (white) | 0 (white) | Check box (checked)
 -> Failed (red,bold) | 2 (red,bold) | Check box (checked)
 ->   Cancelled (red,bold) | 2 (red,bold) | Check box (checked)
-->     cancelled pending job at 10:51 (red,bold) | 2 (red,bold) | Check box (checked)
+->     cancelled pending job at 22:01 (red,bold) | 2 (red,bold) | Check box (checked)
