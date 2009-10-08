@@ -4,9 +4,9 @@ Enabling entry completion, using matching 1
 Adding entry completion '<default>' ...
 Adding entry completion 'localhost' ...
 Adding entry completion '1' ...
-Adding entry completion '/home/geoff/.texttest/tmp/texttest.06Oct214436.13911/texttest/GUI/StaticGUI/Miscellaneous/CreateFiles/log/logging.debug' ...
-Adding entry completion '/home/geoff/code/texttest/log/logging.debug' ...
-Adding entry completion '/home/geoff/.texttest/tmp/texttest.06Oct214436.13911/texttest/GUI/StaticGUI/Miscellaneous/CreateFiles/log' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.08Oct151956.30386/texttest/GUI/StaticGUI/Miscellaneous/CreateFiles/log/logging.debug' ...
+Adding entry completion '/users/geoff/work/master/Testing/TextTest/log/logging.debug' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.08Oct151956.30386/texttest/GUI/StaticGUI/Miscellaneous/CreateFiles/log' ...
 Adding entry completion 'site' ...
 Adding entry completion 'personal' ...
 Adding entry completion 'all' ...
@@ -31,7 +31,7 @@ Menu Bar :
     'Cut' (Stock image 'gtk-cut', greyed out, accelerator 'Ctrl+X')
     'Copy' (Stock image 'gtk-copy', greyed out, accelerator 'Ctrl+C')
     'Paste' (Stock image 'gtk-paste', greyed out, accelerator 'Ctrl+V')
-    'Remove...' (Stock image 'gtk-delete', greyed out, accelerator 'Ctrl+Delete')
+    'Remove Tests...' (Stock image 'gtk-delete', greyed out, accelerator 'Ctrl+Delete')
     'Rename...' (Stock image 'gtk-italic', greyed out, accelerator 'Ctrl+M')
       ----
     'Enter Failure Information' (Stock image 'gtk-info', greyed out, accelerator 'Ctrl+I')
@@ -79,7 +79,7 @@ Tool Bar :
   _Select (Stock image 'gtk-find', accelerator 'Ctrl+S', tooltip 'Select indicated tests')
   _Run (Stock image 'gtk-execute', greyed out, accelerator 'Ctrl+R', tooltip 'Run selected tests')
     ----
-  Remove... (Stock image 'gtk-delete', greyed out, accelerator 'Ctrl+Delete', tooltip 'Remove selected files')
+  Remove Tests... (Stock image 'gtk-delete', greyed out, accelerator 'Ctrl+Delete', tooltip 'Remove selected tests')
 ...........
 
 Showing Test Tree with columns: Tests: All 0 selected
@@ -108,7 +108,7 @@ Radio button 'Discard' (checked) (tooltip 'Show all tests which match the criter
 Button 'Filter' (Stock image 'gtk-find', accelerator 'Ctrl+F', tooltip 'filter tests to show only those indicated')
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 06Oct21:56:50.' , Non-stock image
+'TextTest started at 08Oct15:20:43.' , Non-stock image
 --------------------------------------------------------------------------------
 
 Changing GUI status to: 'Reading tests ...'
@@ -154,13 +154,13 @@ Updated : Test Tree with columns: Tests: 0/11 selected
 ->       S01 (grey90)
 Edited 'Test-file to search' Text entry (set to 'output')
 
-Changing GUI status to: 'Reading tests completed at 06Oct21:56:50.'
+Changing GUI status to: 'Reading tests completed at 08Oct15:20:45.'
 
 Expected application event 'all tests to be read' occurred, proceeding.
 
 'set test selection to' event created with arguments 'npstIII'
 
-No longer greyed out : Add Suite, Add Test, Enter Failure Information, Hide selected, Move to first, Move up, Re_connect, Remove..., Replace Text in Files, S_ave Selection..., Show only selected, _Copy, _Cut, _Rename..., _Reversed Sort Test Suite File, _Run, _Sort Test Suite File
+No longer greyed out : Add Suite, Add Test, Enter Failure Information, Hide selected, Move to first, Move up, Re_connect, Remove Tests..., Replace Text in Files, S_ave Selection..., Show only selected, _Copy, _Cut, _Rename..., _Reversed Sort Test Suite File, _Run, _Sort Test Suite File
 
 Column titles changed in Test Tree with columns: Tests: 1 suite selected
 
@@ -182,8 +182,6 @@ Description:
 ===============================
 
 'set file selection to' event created with arguments 'Definition Files'
-
-Greyed out : Remove...
 
 'create a new file or directory, possibly by copying it' event created with arguments ''
 Adding text '<b><u>Create or import files in the test directory</u></b>'
@@ -207,9 +205,9 @@ Radio button 'Create a new file' (checked)
 Radio button 'Create a new directory'
 .....Source to copy from:......
 
-Showing Source File Chooser (selected '/home/geoff/.texttest/tmp/texttest.06Oct214436.13911/texttest/GUI/StaticGUI/Miscellaneous/CreateFiles/TargetApp/npstIII') (greyed out)
+Showing Source File Chooser (selected '/carm/proj/texttest-tmp/geoff/texttest.08Oct151956.30386/texttest/GUI/StaticGUI/Miscellaneous/CreateFiles/TargetApp/npstIII') (greyed out)
 Shortcut folders (1) :
-- /home/geoff/.texttest/tmp/texttest.06Oct214436.13911/texttest/GUI/StaticGUI/Miscellaneous/CreateFiles/TargetApp
+- /carm/proj/texttest-tmp/geoff/texttest.08Oct151956.30386/texttest/GUI/StaticGUI/Miscellaneous/CreateFiles/TargetApp
 ---------------
 Button 'gtk-ok' (Stock image 'gtk-ok')
 Button 'gtk-cancel' (Stock image 'gtk-cancel')
@@ -217,12 +215,10 @@ Button 'gtk-cancel' (Stock image 'gtk-cancel')
 
 'press create' event created with arguments ''
 Creating new empty file...
-Viewing file /home/geoff/.texttest/tmp/texttest.06Oct214436.13911/texttest/GUI/StaticGUI/Miscellaneous/CreateFiles/TargetApp/npstIII/environment.dip using 'emacs', refresh set to False
+Viewing file /carm/proj/texttest-tmp/geoff/texttest.08Oct151956.30386/texttest/GUI/StaticGUI/Miscellaneous/CreateFiles/TargetApp/npstIII/environment.dip using 'emacs', refresh set to False
 Adding entry completion 'output' ...
 
 Waiting for application event 'file editing operations to complete' to occur.
-
-No longer greyed out : Remove...
 
 Updated : File Tree with columns: npstIII
 -> Definition Files (white,bold)
@@ -249,8 +245,6 @@ Description:
 
 'set file selection to' event created with arguments 'Definition Files'
 
-Greyed out : Remove...
-
 'create a new file or directory, possibly by copying it' event created with arguments ''
 Adding text '<b><u>Create or import files in the test directory</u></b>'
 Adding text '<i>(Test is DIP test-suite Game47)</i>'
@@ -271,9 +265,9 @@ Radio button 'Create a new file' (checked)
 Radio button 'Create a new directory'
 .....Source to copy from:......
 
-Showing Source File Chooser (selected '/home/geoff/.texttest/tmp/texttest.06Oct214436.13911/texttest/GUI/StaticGUI/Miscellaneous/CreateFiles/TargetApp/npstIII/environment.dip') (greyed out)
+Showing Source File Chooser (selected '/carm/proj/texttest-tmp/geoff/texttest.08Oct151956.30386/texttest/GUI/StaticGUI/Miscellaneous/CreateFiles/TargetApp/npstIII/environment.dip') (greyed out)
 Shortcut folders (1) :
-- /home/geoff/.texttest/tmp/texttest.06Oct214436.13911/texttest/GUI/StaticGUI/Miscellaneous/CreateFiles/TargetApp
+- /carm/proj/texttest-tmp/geoff/texttest.08Oct151956.30386/texttest/GUI/StaticGUI/Miscellaneous/CreateFiles/TargetApp
 ---------------
 Button 'gtk-ok' (Stock image 'gtk-ok')
 Button 'gtk-cancel' (Stock image 'gtk-cancel')
@@ -289,13 +283,11 @@ Toggled Radio button 'Import file/directory from source' (checked)
 Toggled Radio button 'Create a new file'
 
 'press create' event created with arguments ''
-Creating new path, copying /home/geoff/.texttest/tmp/texttest.06Oct214436.13911/texttest/GUI/StaticGUI/Miscellaneous/CreateFiles/TargetApp/npstIII/environment.dip
-Viewing file /home/geoff/.texttest/tmp/texttest.06Oct214436.13911/texttest/GUI/StaticGUI/Miscellaneous/CreateFiles/TargetApp/npstIII/Game47/environment.dip.ver using 'emacs', refresh set to False
+Creating new path, copying /carm/proj/texttest-tmp/geoff/texttest.08Oct151956.30386/texttest/GUI/StaticGUI/Miscellaneous/CreateFiles/TargetApp/npstIII/environment.dip
+Viewing file /carm/proj/texttest-tmp/geoff/texttest.08Oct151956.30386/texttest/GUI/StaticGUI/Miscellaneous/CreateFiles/TargetApp/npstIII/Game47/environment.dip.ver using 'emacs', refresh set to False
 Adding entry completion 'ver' ...
 
 Waiting for application event 'file editing operations to complete' to occur.
-
-No longer greyed out : Remove...
 
 Updated : File Tree with columns: Game47
 -> Definition Files (white,bold)
@@ -325,8 +317,6 @@ Description:
 
 'set file selection to' event created with arguments 'Definition Files'
 
-Greyed out : Remove...
-
 'create a new file or directory, possibly by copying it' event created with arguments ''
 Adding text '<b><u>Create or import files in the test directory</u></b>'
 Adding text '<i>(Test is DIP test-case S01)</i>'
@@ -348,9 +338,9 @@ Radio button 'Create a new file' (checked)
 Radio button 'Create a new directory'
 .....Source to copy from:......
 
-Showing Source File Chooser (selected '/home/geoff/.texttest/tmp/texttest.06Oct214436.13911/texttest/GUI/StaticGUI/Miscellaneous/CreateFiles/TargetApp/npstIII/Game47/environment.dip.ver') (greyed out)
+Showing Source File Chooser (selected '/carm/proj/texttest-tmp/geoff/texttest.08Oct151956.30386/texttest/GUI/StaticGUI/Miscellaneous/CreateFiles/TargetApp/npstIII/Game47/environment.dip.ver') (greyed out)
 Shortcut folders (1) :
-- /home/geoff/.texttest/tmp/texttest.06Oct214436.13911/texttest/GUI/StaticGUI/Miscellaneous/CreateFiles/TargetApp
+- /carm/proj/texttest-tmp/geoff/texttest.08Oct151956.30386/texttest/GUI/StaticGUI/Miscellaneous/CreateFiles/TargetApp
 ---------------
 Button 'gtk-ok' (Stock image 'gtk-ok')
 Button 'gtk-cancel' (Stock image 'gtk-cancel')
@@ -359,15 +349,13 @@ Button 'gtk-cancel' (Stock image 'gtk-cancel')
 'enter type of file/directory to create =' event created with arguments 'options'
 Edited 'Type of file/directory to create' Text entry (set to 'options')
 
-Updated : Source File Chooser (selected '/home/geoff/.texttest/tmp/texttest.06Oct214436.13911/texttest/GUI/StaticGUI/Miscellaneous/CreateFiles/TargetApp/npstIII/Game47/S01' (greyed out))
+Updated : Source File Chooser (selected '/carm/proj/texttest-tmp/geoff/texttest.08Oct151956.30386/texttest/GUI/StaticGUI/Miscellaneous/CreateFiles/TargetApp/npstIII/Game47/S01' (greyed out))
 
 'press create' event created with arguments ''
 Creating new empty file...
-Viewing file /home/geoff/.texttest/tmp/texttest.06Oct214436.13911/texttest/GUI/StaticGUI/Miscellaneous/CreateFiles/TargetApp/npstIII/Game47/S01/options.dip.ver using 'emacs', refresh set to False
+Viewing file /carm/proj/texttest-tmp/geoff/texttest.08Oct151956.30386/texttest/GUI/StaticGUI/Miscellaneous/CreateFiles/TargetApp/npstIII/Game47/S01/options.dip.ver using 'emacs', refresh set to False
 
 Waiting for application event 'file editing operations to complete' to occur.
-
-No longer greyed out : Remove...
 
 Updated : File Tree with columns: S01
 -> Standard Files (white,bold)
@@ -380,8 +368,6 @@ Changing GUI status to: 'Started "emacs options.dip.ver" in background (from tes
 Expected application event 'file editing operations to complete' occurred, proceeding.
 
 'set file selection to' event created with arguments 'Standard Files'
-
-Greyed out : Remove...
 
 'create a new file or directory, possibly by copying it' event created with arguments ''
 Adding text '<b><u>Create or import files in the test directory</u></b>'
@@ -403,9 +389,9 @@ Radio button 'Create a new file' (checked)
 Radio button 'Create a new directory'
 .....Source to copy from:......
 
-Showing Source File Chooser (selected '/home/geoff/.texttest/tmp/texttest.06Oct214436.13911/texttest/GUI/StaticGUI/Miscellaneous/CreateFiles/TargetApp/npstIII/Game47/S01/output.dip') (greyed out)
+Showing Source File Chooser (selected '/carm/proj/texttest-tmp/geoff/texttest.08Oct151956.30386/texttest/GUI/StaticGUI/Miscellaneous/CreateFiles/TargetApp/npstIII/Game47/S01/output.dip') (greyed out)
 Shortcut folders (1) :
-- /home/geoff/.texttest/tmp/texttest.06Oct214436.13911/texttest/GUI/StaticGUI/Miscellaneous/CreateFiles/TargetApp
+- /carm/proj/texttest-tmp/geoff/texttest.08Oct151956.30386/texttest/GUI/StaticGUI/Miscellaneous/CreateFiles/TargetApp
 ---------------
 Button 'gtk-ok' (Stock image 'gtk-ok')
 Button 'gtk-cancel' (Stock image 'gtk-cancel')
@@ -418,12 +404,10 @@ Toggled Radio button 'Import file/directory from source' (checked)
 Toggled Radio button 'Create a new file'
 
 'press create' event created with arguments ''
-Creating new path, copying /home/geoff/.texttest/tmp/texttest.06Oct214436.13911/texttest/GUI/StaticGUI/Miscellaneous/CreateFiles/TargetApp/npstIII/Game47/S01/output.dip
-Viewing file /home/geoff/.texttest/tmp/texttest.06Oct214436.13911/texttest/GUI/StaticGUI/Miscellaneous/CreateFiles/TargetApp/npstIII/Game47/S01/output.dip.ver using 'emacs', refresh set to False
+Creating new path, copying /carm/proj/texttest-tmp/geoff/texttest.08Oct151956.30386/texttest/GUI/StaticGUI/Miscellaneous/CreateFiles/TargetApp/npstIII/Game47/S01/output.dip
+Viewing file /carm/proj/texttest-tmp/geoff/texttest.08Oct151956.30386/texttest/GUI/StaticGUI/Miscellaneous/CreateFiles/TargetApp/npstIII/Game47/S01/output.dip.ver using 'emacs', refresh set to False
 
 Waiting for application event 'file editing operations to complete' to occur.
-
-No longer greyed out : Remove...
 
 Updated : File Tree with columns: S01
 -> Standard Files (white,bold)

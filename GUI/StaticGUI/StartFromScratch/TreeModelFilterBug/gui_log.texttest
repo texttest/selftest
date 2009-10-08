@@ -4,9 +4,9 @@ Enabling entry completion, using matching 1
 Adding entry completion '<default>' ...
 Adding entry completion 'localhost' ...
 Adding entry completion '1' ...
-Adding entry completion '/home/geoff/.texttest/tmp/texttest.06Oct214436.13911/texttest/GUI/StaticGUI/StartFromScratch/TreeModelFilterBug/log/logging.debug' ...
-Adding entry completion '/home/geoff/code/texttest/log/logging.debug' ...
-Adding entry completion '/home/geoff/.texttest/tmp/texttest.06Oct214436.13911/texttest/GUI/StaticGUI/StartFromScratch/TreeModelFilterBug/log' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.08Oct151956.30386/texttest/GUI/StaticGUI/StartFromScratch/TreeModelFilterBug/log/logging.debug' ...
+Adding entry completion '/users/geoff/work/master/Testing/TextTest/log/logging.debug' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.08Oct151956.30386/texttest/GUI/StaticGUI/StartFromScratch/TreeModelFilterBug/log' ...
 Adding entry completion 'site' ...
 Adding entry completion 'personal' ...
 Adding entry completion 'all' ...
@@ -31,7 +31,7 @@ Menu Bar :
     'Cut' (Stock image 'gtk-cut', greyed out, accelerator 'Ctrl+X')
     'Copy' (Stock image 'gtk-copy', greyed out, accelerator 'Ctrl+C')
     'Paste' (Stock image 'gtk-paste', greyed out, accelerator 'Ctrl+V')
-    'Remove...' (Stock image 'gtk-delete', greyed out, accelerator 'Ctrl+Delete')
+    'Remove Tests...' (Stock image 'gtk-delete', greyed out, accelerator 'Ctrl+Delete')
     'Rename...' (Stock image 'gtk-italic', greyed out, accelerator 'Ctrl+M')
       ----
     'Enter Failure Information' (Stock image 'gtk-info', greyed out, accelerator 'Ctrl+I')
@@ -79,7 +79,7 @@ Tool Bar :
   _Select (Stock image 'gtk-find', accelerator 'Ctrl+S', tooltip 'Select indicated tests')
   _Run (Stock image 'gtk-execute', greyed out, accelerator 'Ctrl+R', tooltip 'Run selected tests')
     ----
-  Remove... (Stock image 'gtk-delete', greyed out, accelerator 'Ctrl+Delete', tooltip 'Remove selected files')
+  Remove Tests... (Stock image 'gtk-delete', greyed out, accelerator 'Ctrl+Delete', tooltip 'Remove selected tests')
 ...........
 
 Showing Test Tree with columns: Tests: All 0 selected
@@ -108,7 +108,7 @@ Radio button 'Discard' (checked) (tooltip 'Show all tests which match the criter
 Button 'Filter' (Stock image 'gtk-find', accelerator 'Ctrl+F', tooltip 'filter tests to show only those indicated')
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 06Oct21:57:30.' , Non-stock image
+'TextTest started at 08Oct15:20:46.' , Non-stock image
 ----------------------------------------------------------------------------------
 
 Changing GUI status to: 'Reading tests ...'
@@ -120,7 +120,7 @@ Updated : Test Tree with columns: Tests: All 0 selected
 -> TargetApp (hello) (grey90,bold)
 Edited 'Test-file to search' Text entry (set to 'output')
 
-Changing GUI status to: 'Reading tests completed at 06Oct21:57:30.'
+Changing GUI status to: 'Reading tests completed at 08Oct15:20:47.'
 
 Expected application event 'all tests to be read' occurred, proceeding.
 
@@ -173,7 +173,7 @@ Edited 'Suite Name' Text entry (set to 's')
 Marking 1 tests as selected
 Adding entry completion 'output' ...
 
-No longer greyed out : Remove..., _Copy, _Cut, _Rename...
+No longer greyed out : Remove Tests..., _Copy, _Cut, _Rename...
 
 Updated : Test Tree with columns: Tests: 1 suite selected
 -> TargetApp (hello) (grey90,bold)
@@ -237,7 +237,7 @@ Changing GUI status to: 'Added new HELLO test-case t'
 
 'set test selection to' event created with arguments 'TargetApp (hello)'
 
-Greyed out : Remove..., _Copy, _Cut, _Rename...
+Greyed out : Remove Tests..., _Copy, _Cut, _Rename...
 No longer greyed out : Add Suite, Add Test, _Reversed Sort Test Suite File, _Sort Test Suite File
 
 Column titles changed in Test Tree with columns: Tests: 1 suite selected
@@ -279,7 +279,7 @@ Marking 1 tests as selected
 Adding entry completion 't1' ...
 
 Greyed out : Add Suite, Add Test, _Reversed Sort Test Suite File, _Sort Test Suite File
-No longer greyed out : Move to first, Move up, Remove..., _Copy, _Cut, _Rename...
+No longer greyed out : Move to first, Move up, Remove Tests..., _Copy, _Cut, _Rename...
 
 Updated : Test Tree with columns: Tests: 1/2 selected
 -> TargetApp (hello) (grey90,bold)
@@ -301,7 +301,7 @@ Changing GUI status to: 'Added new HELLO test-case t1'
 
 'set test selection to' event created with arguments 'TargetApp (hello)'
 
-Greyed out : Move to first, Move up, Remove..., _Copy, _Cut, _Rename...
+Greyed out : Move to first, Move up, Remove Tests..., _Copy, _Cut, _Rename...
 No longer greyed out : Add Suite, Add Test, _Reversed Sort Test Suite File, _Sort Test Suite File
 
 Column titles changed in Test Tree with columns: Tests: 1 suite selected
@@ -343,7 +343,7 @@ Marking 1 tests as selected
 Adding entry completion 't2' ...
 
 Greyed out : Add Suite, Add Test, _Reversed Sort Test Suite File, _Sort Test Suite File
-No longer greyed out : Move to first, Move up, Remove..., _Copy, _Cut, _Rename...
+No longer greyed out : Move to first, Move up, Remove Tests..., _Copy, _Cut, _Rename...
 
 Updated : Test Tree with columns: Tests: 1/3 selected
 -> TargetApp (hello) (grey90,bold)
@@ -366,7 +366,7 @@ Changing GUI status to: 'Added new HELLO test-case t2'
 
 'set test selection to' event created with arguments 'TargetApp (hello)'
 
-Greyed out : Move to first, Move up, Remove..., _Copy, _Cut, _Rename...
+Greyed out : Move to first, Move up, Remove Tests..., _Copy, _Cut, _Rename...
 No longer greyed out : Add Suite, Add Test, _Reversed Sort Test Suite File, _Sort Test Suite File
 
 Column titles changed in Test Tree with columns: Tests: 1 suite selected
@@ -408,7 +408,7 @@ Marking 1 tests as selected
 Adding entry completion 't3' ...
 
 Greyed out : Add Suite, Add Test, _Reversed Sort Test Suite File, _Sort Test Suite File
-No longer greyed out : Move to first, Move up, Remove..., _Copy, _Cut, _Rename...
+No longer greyed out : Move to first, Move up, Remove Tests..., _Copy, _Cut, _Rename...
 
 Updated : Test Tree with columns: Tests: 1/4 selected
 -> TargetApp (hello) (grey90,bold)

@@ -4,9 +4,9 @@ Enabling entry completion, using matching 1
 Adding entry completion '<default>' ...
 Adding entry completion 'localhost' ...
 Adding entry completion '1' ...
-Adding entry completion '/home/geoff/.texttest/tmp/texttest.06Oct203423.8136/texttest/GUI/StaticGUI/Removing/RunAndRemoveTest/log/logging.debug' ...
-Adding entry completion '/home/geoff/code/texttest/log/logging.debug' ...
-Adding entry completion '/home/geoff/.texttest/tmp/texttest.06Oct203423.8136/texttest/GUI/StaticGUI/Removing/RunAndRemoveTest/log' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.08Oct145252.29597/texttest/GUI/StaticGUI/Removing/RunAndRemoveTest/log/logging.debug' ...
+Adding entry completion '/users/geoff/work/master/Testing/TextTest/log/logging.debug' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.08Oct145252.29597/texttest/GUI/StaticGUI/Removing/RunAndRemoveTest/log' ...
 Adding entry completion 'site' ...
 Adding entry completion 'personal' ...
 Adding entry completion 'all' ...
@@ -31,7 +31,7 @@ Menu Bar :
     'Cut' (Stock image 'gtk-cut', greyed out, accelerator 'Ctrl+X')
     'Copy' (Stock image 'gtk-copy', greyed out, accelerator 'Ctrl+C')
     'Paste' (Stock image 'gtk-paste', greyed out, accelerator 'Ctrl+V')
-    'Remove...' (Stock image 'gtk-delete', greyed out, accelerator 'Ctrl+Delete')
+    'Remove Tests...' (Stock image 'gtk-delete', greyed out, accelerator 'Ctrl+Delete')
     'Rename...' (Stock image 'gtk-italic', greyed out, accelerator 'Ctrl+M')
       ----
     'Enter Failure Information' (Stock image 'gtk-info', greyed out, accelerator 'Ctrl+I')
@@ -79,7 +79,7 @@ Tool Bar :
   _Select (Stock image 'gtk-find', accelerator 'Ctrl+S', tooltip 'Select indicated tests')
   _Run (Stock image 'gtk-execute', greyed out, accelerator 'Ctrl+R', tooltip 'Run selected tests')
     ----
-  Remove... (Stock image 'gtk-delete', greyed out, accelerator 'Ctrl+Delete', tooltip 'Remove selected files')
+  Remove Tests... (Stock image 'gtk-delete', greyed out, accelerator 'Ctrl+Delete', tooltip 'Remove selected tests')
 ...........
 
 Showing Test Tree with columns: Tests: All 0 selected
@@ -108,7 +108,7 @@ Radio button 'Discard' (checked) (tooltip 'Show all tests which match the criter
 Button 'Filter' (Stock image 'gtk-find', accelerator 'Ctrl+F', tooltip 'filter tests to show only those indicated')
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 06Oct20:46:08.' , Non-stock image
+'TextTest started at 08Oct14:52:56.' , Non-stock image
 --------------------------------------------------------------------------------
 
 Changing GUI status to: 'Reading tests ...'
@@ -154,13 +154,13 @@ Updated : Test Tree with columns: Tests: 0/11 selected
 ->       S01 (grey90)
 Edited 'Test-file to search' Text entry (set to 'output')
 
-Changing GUI status to: 'Reading tests completed at 06Oct20:46:08.'
+Changing GUI status to: 'Reading tests completed at 08Oct14:52:57.'
 
 Expected application event 'all tests to be read' occurred, proceeding.
 
 'set test selection to' event created with arguments 'A03'
 
-No longer greyed out : Enter Failure Information, Hide selected, Move down, Move to first, Move to last, Move up, Re_connect, Remove..., Replace Text in Files, S_ave Selection..., Show only selected, _Copy, _Cut, _Rename..., _Run
+No longer greyed out : Enter Failure Information, Hide selected, Move down, Move to first, Move to last, Move up, Re_connect, Remove Tests..., Replace Text in Files, S_ave Selection..., Show only selected, _Copy, _Cut, _Rename..., _Run
 
 Column titles changed in Test Tree with columns: Tests: 1/11 selected
 
@@ -184,11 +184,11 @@ A03 description
 
 'run selected tests' event created with arguments ''
 Adding entry completion 'output' ...
-Starting dynamic run of TextTest with arguments ['-g', '-a', 'dip', '-m', 'localhost', '-cp', '1', '-xr', '/home/geoff/.texttest/tmp/texttest.06Oct203423.8136/texttest/GUI/StaticGUI/Removing/RunAndRemoveTest/log/logging.debug', '-xw', '/home/geoff/.texttest/tmp/texttest.06Oct203423.8136/texttest/GUI/StaticGUI/Removing/RunAndRemoveTest/log', '-vanilla', 'site', '-count', '1', '-f', '/home/geoff/.texttest/tmp/texttest.06Oct203423.8136/texttest/GUI/StaticGUI/Removing/RunAndRemoveTest/texttesttmp/static_gui.06Oct204607.11338/dynamic_run1/gui_select', '-fd', '/home/geoff/.texttest/tmp/texttest.06Oct203423.8136/texttest/GUI/StaticGUI/Removing/RunAndRemoveTest/texttesttmp/static_gui.06Oct204607.11338/temporary_filter_files']
+Starting dynamic run of TextTest with arguments ['-g', '-a', 'dip', '-m', 'localhost', '-cp', '1', '-xr', '/carm/proj/texttest-tmp/geoff/texttest.08Oct145252.29597/texttest/GUI/StaticGUI/Removing/RunAndRemoveTest/log/logging.debug', '-xw', '/carm/proj/texttest-tmp/geoff/texttest.08Oct145252.29597/texttest/GUI/StaticGUI/Removing/RunAndRemoveTest/log', '-vanilla', 'site', '-count', '1', '-f', '/carm/proj/texttest-tmp/geoff/texttest.08Oct145252.29597/texttest/GUI/StaticGUI/Removing/RunAndRemoveTest/texttesttmp/static_gui.08Oct145256.29605/dynamic_run1/gui_select', '-fd', '/carm/proj/texttest-tmp/geoff/texttest.08Oct145252.29597/texttest/GUI/StaticGUI/Removing/RunAndRemoveTest/texttesttmp/static_gui.08Oct145256.29605/temporary_filter_files']
 
 Waiting for application event 'dynamic GUI to be closed' to occur.
 
-Changing GUI status to: 'Started DIP test-case A03 at 06Oct20:46:08.'
+Changing GUI status to: 'Started DIP test-case A03 at 08Oct14:52:57.'
 
 Updated : File Tree with columns: A03
 -> Standard Files (white,bold)
@@ -197,7 +197,7 @@ Updated : File Tree with columns: A03
 
 Expected application event 'dynamic GUI to be closed' occurred, proceeding.
 
-'remove selected files' event created with arguments ''
+'remove selected tests' event created with arguments ''
 
 ---------- Dialog 'TextTest Confirmation' ----------
 Focus widget is 'GtkTextView'
@@ -216,7 +216,7 @@ Button 'gtk-no' (Stock image 'gtk-no')
 
 'answer yes to texttest confirmation' event created with arguments ''
 
-Greyed out : Enter Failure Information, Hide selected, Move down, Move to first, Move to last, Move up, Re_connect, Remove..., Replace Text in Files, S_ave Selection..., Show only selected, _Copy, _Cut, _Rename..., _Run
+Greyed out : Enter Failure Information, Hide selected, Move down, Move to first, Move to last, Move up, Re_connect, Remove Tests..., Replace Text in Files, S_ave Selection..., Show only selected, _Copy, _Cut, _Rename..., _Run
 
 Updated : Test Tree with columns: Tests: 0/10 selected
 -> TargetApp (dip) (grey90,bold)
@@ -262,7 +262,7 @@ Changing GUI status to: 'Selecting tests ...'
 Selected 10 out of a possible 10
 Marking 10 tests as selected
 
-No longer greyed out : Hide selected, Re_connect, Remove..., Replace Text in Files, S_ave Selection..., Show only selected, _Copy, _Cut, _Run
+No longer greyed out : Hide selected, Re_connect, Remove Tests..., Replace Text in Files, S_ave Selection..., Show only selected, _Copy, _Cut, _Run
 
 Column titles changed in Test Tree with columns: Tests: All 10 selected
 

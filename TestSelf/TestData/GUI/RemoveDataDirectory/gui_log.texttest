@@ -4,9 +4,9 @@ Enabling entry completion, using matching 1
 Adding entry completion '<default>' ...
 Adding entry completion 'localhost' ...
 Adding entry completion '1' ...
-Adding entry completion '/home/geoff/.texttest/tmp/texttest.06Oct203423.8136/texttest/TestSelf/TestData/GUI/RemoveDataDirectory/log/logging.debug' ...
-Adding entry completion '/home/geoff/code/texttest/log/logging.debug' ...
-Adding entry completion '/home/geoff/.texttest/tmp/texttest.06Oct203423.8136/texttest/TestSelf/TestData/GUI/RemoveDataDirectory/log' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.08Oct145823.29716/texttest/TestSelf/TestData/GUI/RemoveDataDirectory/log/logging.debug' ...
+Adding entry completion '/users/geoff/work/master/Testing/TextTest/log/logging.debug' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.08Oct145823.29716/texttest/TestSelf/TestData/GUI/RemoveDataDirectory/log' ...
 Adding entry completion 'site' ...
 Adding entry completion 'personal' ...
 Adding entry completion 'all' ...
@@ -31,7 +31,7 @@ Menu Bar :
     'Cut' (Stock image 'gtk-cut', greyed out, accelerator 'Ctrl+X')
     'Copy' (Stock image 'gtk-copy', greyed out, accelerator 'Ctrl+C')
     'Paste' (Stock image 'gtk-paste', greyed out, accelerator 'Ctrl+V')
-    'Remove...' (Stock image 'gtk-delete', greyed out, accelerator 'Ctrl+Delete')
+    'Remove Tests...' (Stock image 'gtk-delete', greyed out, accelerator 'Ctrl+Delete')
     'Rename...' (Stock image 'gtk-italic', greyed out, accelerator 'Ctrl+M')
       ----
     'Enter Failure Information' (Stock image 'gtk-info', greyed out, accelerator 'Ctrl+I')
@@ -79,7 +79,7 @@ Tool Bar :
   _Select (Stock image 'gtk-find', accelerator 'Ctrl+S', tooltip 'Select indicated tests')
   _Run (Stock image 'gtk-execute', greyed out, accelerator 'Ctrl+R', tooltip 'Run selected tests')
     ----
-  Remove... (Stock image 'gtk-delete', greyed out, accelerator 'Ctrl+Delete', tooltip 'Remove selected files')
+  Remove Tests... (Stock image 'gtk-delete', greyed out, accelerator 'Ctrl+Delete', tooltip 'Remove selected tests')
 ...........
 
 Showing Test Tree with columns: Tests: All 0 selected
@@ -108,7 +108,7 @@ Radio button 'Discard' (checked) (tooltip 'Show all tests which match the criter
 Button 'Filter' (Stock image 'gtk-find', accelerator 'Ctrl+F', tooltip 'filter tests to show only those indicated')
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 06Oct20:37:42.' , Non-stock image
+'TextTest started at 08Oct14:58:36.' , Non-stock image
 ---------------------------------------------------------------------------------
 
 Changing GUI status to: 'Reading tests ...'
@@ -124,13 +124,13 @@ Updated : Test Tree with columns: Tests: 0/2 selected
 ->   Test2 (grey90)
 Edited 'Test-file to search' Text entry (set to 'output')
 
-Changing GUI status to: 'Reading tests completed at 06Oct20:37:43.'
+Changing GUI status to: 'Reading tests completed at 08Oct14:58:37.'
 
 Expected application event 'all tests to be read' occurred, proceeding.
 
 'set test selection to' event created with arguments 'Test1'
 
-No longer greyed out : Enter Failure Information, Hide selected, Move down, Move to last, Re_connect, Remove..., Replace Text in Files, S_ave Selection..., Show only selected, _Copy, _Cut, _Rename..., _Run
+No longer greyed out : Enter Failure Information, Hide selected, Move down, Move to last, Re_connect, Remove Tests..., Replace Text in Files, S_ave Selection..., Show only selected, _Copy, _Cut, _Rename..., _Run
 
 Column titles changed in Test Tree with columns: Tests: 1/2 selected
 
@@ -195,6 +195,8 @@ This test has a bunch of writeable data
 
 'set file selection to' event created with arguments 'writeabledirs'
 
+Greyed out : Remove Tests...
+
 'remove selected files' event created with arguments ''
 
 ---------- Dialog 'TextTest Confirmation' ----------
@@ -216,6 +218,8 @@ Button 'gtk-no' (Stock image 'gtk-no')
 
 Changing GUI status to: 'Removing directory writeabledirs'
 Adding entry completion 'output' ...
+
+No longer greyed out : Remove Tests...
 
 Updated : File Tree with columns: Test1
 -> Standard Files (white,bold)

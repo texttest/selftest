@@ -4,9 +4,9 @@ Enabling entry completion, using matching 1
 Adding entry completion '<default>' ...
 Adding entry completion 'localhost' ...
 Adding entry completion '1' ...
-Adding entry completion '/home/geoff/.texttest/tmp/texttest.06Oct203423.8136/texttest.cvs/VersionControl/General/ShowStatus/log/logging.debug' ...
-Adding entry completion '/home/geoff/code/texttest/log/logging.debug' ...
-Adding entry completion '/home/geoff/.texttest/tmp/texttest.06Oct203423.8136/texttest.cvs/VersionControl/General/ShowStatus/log' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.08Oct151956.30386/texttest.cvs/VersionControl/General/ShowStatus/log/logging.debug' ...
+Adding entry completion '/users/geoff/work/master/Testing/TextTest/log/logging.debug' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.08Oct151956.30386/texttest.cvs/VersionControl/General/ShowStatus/log' ...
 Adding entry completion 'site' ...
 Adding entry completion 'personal' ...
 Adding entry completion 'all' ...
@@ -31,7 +31,7 @@ Menu Bar :
     'Cut' (Stock image 'gtk-cut', greyed out, accelerator 'Ctrl+X')
     'Copy' (Stock image 'gtk-copy', greyed out, accelerator 'Ctrl+C')
     'Paste' (Stock image 'gtk-paste', greyed out, accelerator 'Ctrl+V')
-    'Remove...' (Stock image 'gtk-delete', greyed out, accelerator 'Ctrl+Delete')
+    'Remove Tests...' (Stock image 'gtk-delete', greyed out, accelerator 'Ctrl+Delete')
     'Rename...' (Stock image 'gtk-italic', greyed out, accelerator 'Ctrl+M')
       ----
     'Enter Failure Information' (Stock image 'gtk-info', greyed out, accelerator 'Ctrl+I')
@@ -95,7 +95,7 @@ Tool Bar :
   _Select (Stock image 'gtk-find', accelerator 'Ctrl+S', tooltip 'Select indicated tests')
   _Run (Stock image 'gtk-execute', greyed out, accelerator 'Ctrl+R', tooltip 'Run selected tests')
     ----
-  Remove... (Stock image 'gtk-delete', greyed out, accelerator 'Ctrl+Delete', tooltip 'Remove selected files')
+  Remove Tests... (Stock image 'gtk-delete', greyed out, accelerator 'Ctrl+Delete', tooltip 'Remove selected tests')
 ...........
 
 Showing Test Tree with columns: Tests: All 0 selected
@@ -124,7 +124,7 @@ Radio button 'Discard' (checked) (tooltip 'Show all tests which match the criter
 Button 'Filter' (Stock image 'gtk-find', accelerator 'Ctrl+F', tooltip 'filter tests to show only those indicated')
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 06Oct20:48:16.' , Non-stock image
+'TextTest started at 08Oct15:20:44.' , Non-stock image
 ----------------------------------------------------------------------------------
 
 Changing GUI status to: 'Reading tests ...'
@@ -148,13 +148,13 @@ Updated : Test Tree with columns: Tests: 0/4 selected
 ->       Test4 (grey90)
 Edited 'Test-file to search' Text entry (set to 'output')
 
-Changing GUI status to: 'Reading tests completed at 06Oct20:48:16.'
+Changing GUI status to: 'Reading tests completed at 08Oct15:20:45.'
 
 Expected application event 'all tests to be read' occurred, proceeding.
 
 'set test selection to' event created with arguments 'Test1'
 
-No longer greyed out : A_dd, A_nnotate, Add Recursive, Annotate Recursive, Difference Recursive, Enter Failure Information, Hide selected, Log Latest, Log Recursive, Move down, Move to last, Re_connect, Remove..., Replace Text in Files, S_ave Selection..., Show only selected, Status Recursive, _Copy, _Cut, _Difference, _Log, _Rename..., _Run, _Status
+No longer greyed out : A_dd, A_nnotate, Add Recursive, Annotate Recursive, Difference Recursive, Enter Failure Information, Hide selected, Log Latest, Log Recursive, Move down, Move to last, Re_connect, Remove Tests..., Replace Text in Files, S_ave Selection..., Show only selected, Status Recursive, _Copy, _Cut, _Difference, _Log, _Rename..., _Run, _Status
 
 Column titles changed in Test Tree with columns: Tests: 1/4 selected
 
@@ -204,7 +204,7 @@ Showing VCS status info tree with columns: File , Information
 ->     output.hello | Up-to-date
 ->     output.hello.version | <span weight='bold' foreground='red'>Unknown</span>
 
------------------------------- (vertical VCS dialog separator, 42% from the left edge)
+------------------------------ (vertical VCS dialog separator, 44% from the left edge)
 
 ========== VCS Output View ==========
 ===================================================================
@@ -236,7 +236,7 @@ Showing VCS log info tree with columns: File , Last revision committed (UTC)
 ->   <span weight='bold'>Test1</span>
 ->     errors.hello | <span weight='bold'>2 days ago</span>
 
------------------------------- (vertical VCS dialog separator, 49% from the left edge)
+------------------------------ (vertical VCS dialog separator, 51% from the left edge)
 
 ========== VCS Output View ==========
 
@@ -356,6 +356,8 @@ Copy of Test1
 
 'set file selection to' event created with arguments 'output.hello'
 
+Greyed out : Remove Tests...
+
 'version control status for the selected files' event created with arguments ''
 
 Changing GUI status to: 'Analyzing status for output.hello in test Test2'
@@ -373,7 +375,7 @@ Showing VCS status info tree with columns: File , Information
 ->   <span weight='bold'>Test2</span>
 ->     output.hello | <span weight='bold'>Locally Modified</span>
 
------------------------------- (vertical VCS dialog separator, 38% from the left edge)
+------------------------------ (vertical VCS dialog separator, 40% from the left edge)
 
 ========== VCS Output View ==========
 ===================================================================

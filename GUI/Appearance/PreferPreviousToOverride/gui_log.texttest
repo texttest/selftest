@@ -4,9 +4,9 @@ Enabling entry completion, using matching 1
 Adding entry completion '<default>' ...
 Adding entry completion 'localhost' ...
 Adding entry completion '1' ...
-Adding entry completion '/home/geoff/.texttest/tmp/texttest.06Oct203423.8136/texttest/GUI/Appearance/PreferPreviousToOverride/log/logging.debug' ...
-Adding entry completion '/home/geoff/code/texttest/log/logging.debug' ...
-Adding entry completion '/home/geoff/.texttest/tmp/texttest.06Oct203423.8136/texttest/GUI/Appearance/PreferPreviousToOverride/log' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.08Oct151956.30386/texttest/GUI/Appearance/PreferPreviousToOverride/log/logging.debug' ...
+Adding entry completion '/users/geoff/work/master/Testing/TextTest/log/logging.debug' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.08Oct151956.30386/texttest/GUI/Appearance/PreferPreviousToOverride/log' ...
 Adding entry completion 'site' ...
 Adding entry completion 'personal' ...
 Adding entry completion 'all' ...
@@ -31,7 +31,7 @@ Menu Bar :
     'Cut' (Stock image 'gtk-cut', greyed out, accelerator 'Ctrl+X')
     'Copy' (Stock image 'gtk-copy', greyed out, accelerator 'Ctrl+C')
     'Paste' (Stock image 'gtk-paste', greyed out, accelerator 'Ctrl+V')
-    'Remove...' (Stock image 'gtk-delete', greyed out, accelerator 'Ctrl+Delete')
+    'Remove Tests...' (Stock image 'gtk-delete', greyed out, accelerator 'Ctrl+Delete')
     'Rename...' (Stock image 'gtk-italic', greyed out, accelerator 'Ctrl+M')
       ----
     'Enter Failure Information' (Stock image 'gtk-info', greyed out, accelerator 'Ctrl+I')
@@ -79,7 +79,7 @@ Tool Bar :
   _Select (Stock image 'gtk-find', accelerator 'Ctrl+S', tooltip 'Select indicated tests')
   _Run (Stock image 'gtk-execute', greyed out, accelerator 'Ctrl+R', tooltip 'Run selected tests')
     ----
-  Remove... (Stock image 'gtk-delete', greyed out, accelerator 'Ctrl+Delete', tooltip 'Remove selected files')
+  Remove Tests... (Stock image 'gtk-delete', greyed out, accelerator 'Ctrl+Delete', tooltip 'Remove selected tests')
 ...........
 
 Showing Test Tree with columns: Tests: All 0 selected
@@ -108,7 +108,7 @@ Radio button 'Discard' (checked) (tooltip 'Show all tests which match the criter
 Button 'Filter' (Stock image 'gtk-find', accelerator 'Ctrl+F', tooltip 'filter tests to show only those indicated')
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 06Oct20:43:15.' , Non-stock image
+'TextTest started at 08Oct15:20:34.' , Non-stock image
 ----------------------------------------------------------------------------------
 
 Changing GUI status to: 'Reading tests ...'
@@ -121,13 +121,13 @@ Updated : Test Tree with columns: Tests: 0/1 selected
 ->   Test (grey90)
 Edited 'Test-file to search' Text entry (set to 'output')
 
-Changing GUI status to: 'Reading tests completed at 06Oct20:43:15.'
+Changing GUI status to: 'Reading tests completed at 08Oct15:20:35.'
 
 Expected application event 'all tests to be read' occurred, proceeding.
 
 'set test selection to' event created with arguments 'Test'
 
-No longer greyed out : Enter Failure Information, Hide selected, Re_connect, Remove..., Replace Text in Files, S_ave Selection..., Show only selected, _Copy, _Cut, _Rename..., _Run
+No longer greyed out : Enter Failure Information, Hide selected, Re_connect, Remove Tests..., Replace Text in Files, S_ave Selection..., Show only selected, _Copy, _Cut, _Rename..., _Run
 
 Column titles changed in Test Tree with columns: Tests: All 1 selected
 
@@ -159,10 +159,10 @@ Default widget is 'gtk-ok'
 Text entry (set to 'version_from_config') (drop-down list containing ['', 'version_from_config'])
 .....Temporary result directory:......
 
-Showing FileChooserWidget (selected '/home/geoff/.texttest/tmp/texttest.06Oct203423.8136/texttest/GUI/Appearance/PreferPreviousToOverride/texttesttmp')
+Showing FileChooserWidget (selected '/carm/proj/texttest-tmp/geoff/texttest.08Oct151956.30386/texttest/GUI/Appearance/PreferPreviousToOverride/texttesttmp')
 Shortcut folders (2) :
-- /home/geoff/.texttest/tmp/texttest.06Oct203423.8136/texttest/GUI/Appearance/PreferPreviousToOverride/texttesttmp
-- /home/geoff/.texttest/tmp/texttest.06Oct203423.8136/texttest/GUI/Appearance/PreferPreviousToOverride/TargetApp
+- /carm/proj/texttest-tmp/geoff/texttest.08Oct151956.30386/texttest/GUI/Appearance/PreferPreviousToOverride/texttesttmp
+- /carm/proj/texttest-tmp/geoff/texttest.08Oct151956.30386/texttest/GUI/Appearance/PreferPreviousToOverride/TargetApp
 .....Recomputation......
 Radio button 'Display results exactly as they were in the original run' (checked)
 Radio button 'Use raw data from the original run, but recompute run-dependent text, known bug information etc.'
@@ -176,16 +176,16 @@ Edited 'Version to reconnect to' Text entry (set to 'version_I_set_by_hand')
 
 'select temporary result directory =' event created with arguments 'TargetApp'
 
-Updated : FileChooserWidget (selected '/home/geoff/.texttest/tmp/texttest.06Oct203423.8136/texttest/GUI/Appearance/PreferPreviousToOverride/TargetApp')
+Updated : FileChooserWidget (selected '/carm/proj/texttest-tmp/geoff/texttest.08Oct151956.30386/texttest/GUI/Appearance/PreferPreviousToOverride/TargetApp')
 
 'press reconnect' event created with arguments ''
-Starting reconnect run of TextTest with arguments ['-g', '-vanilla', 'site', '-a', 'hello', '-v', 'version_I_set_by_hand', '-reconnect', '/home/geoff/.texttest/tmp/texttest.06Oct203423.8136/texttest/GUI/Appearance/PreferPreviousToOverride/TargetApp', '-count', '1', '-f', '/home/geoff/.texttest/tmp/texttest.06Oct203423.8136/texttest/GUI/Appearance/PreferPreviousToOverride/texttesttmp/static_gui.06Oct204315.10570/dynamic_run1/gui_select', '-fd', '/home/geoff/.texttest/tmp/texttest.06Oct203423.8136/texttest/GUI/Appearance/PreferPreviousToOverride/texttesttmp/static_gui.06Oct204315.10570/temporary_filter_files']
+Starting reconnect run of TextTest with arguments ['-g', '-vanilla', 'site', '-a', 'hello', '-v', 'version_I_set_by_hand', '-reconnect', '/carm/proj/texttest-tmp/geoff/texttest.08Oct151956.30386/texttest/GUI/Appearance/PreferPreviousToOverride/TargetApp', '-count', '1', '-f', '/carm/proj/texttest-tmp/geoff/texttest.08Oct151956.30386/texttest/GUI/Appearance/PreferPreviousToOverride/texttesttmp/static_gui.08Oct152030.29635/dynamic_run1/gui_select', '-fd', '/carm/proj/texttest-tmp/geoff/texttest.08Oct151956.30386/texttest/GUI/Appearance/PreferPreviousToOverride/texttesttmp/static_gui.08Oct152030.29635/temporary_filter_files']
 Adding entry completion 'output' ...
 Adding entry completion 'version_I_set_by_hand' ...
 
 Waiting for application event 'reconnect GUI to be closed' to occur.
 
-Changing GUI status to: 'Reconnected to HELLO test-case Test at 06Oct20:43:16.'
+Changing GUI status to: 'Reconnected to HELLO test-case Test at 08Oct15:20:36.'
 
 Changing GUI status to: 'Reconnect run failed for HELLO test-case Test'
 
@@ -193,7 +193,7 @@ Changing GUI status to: 'Reconnect run failed for HELLO test-case Test'
 Default widget is 'gtk-ok'
 Stock image 'gtk-dialog-error' , ========== GtkTextView ==========
 Reconnect run failed, with the following errors:
-Rejected Application HELLO, version version_I_set_by_hand - Could not find any runs matching Application HELLO, version version_I_set_by_hand under /home/geoff/.texttest/tmp/texttest.06Oct203423.8136/texttest/GUI/Appearance/PreferPreviousToOverride/TargetApp
+Rejected Application HELLO, version version_I_set_by_hand - Could not find any runs matching Application HELLO, version version_I_set_by_hand under /carm/proj/texttest-tmp/geoff/texttest.08Oct151956.30386/texttest/GUI/Appearance/PreferPreviousToOverride/TargetApp
 =================================
 ---------------
 Button 'gtk-ok' (Stock image 'gtk-ok')
@@ -211,10 +211,10 @@ Default widget is 'gtk-ok'
 Text entry (set to 'version_I_set_by_hand') (drop-down list containing ['', 'version_from_config'])
 .....Temporary result directory:......
 
-Showing FileChooserWidget (selected '/home/geoff/.texttest/tmp/texttest.06Oct203423.8136/texttest/GUI/Appearance/PreferPreviousToOverride/TargetApp')
+Showing FileChooserWidget (selected '/carm/proj/texttest-tmp/geoff/texttest.08Oct151956.30386/texttest/GUI/Appearance/PreferPreviousToOverride/TargetApp')
 Shortcut folders (2) :
-- /home/geoff/.texttest/tmp/texttest.06Oct203423.8136/texttest/GUI/Appearance/PreferPreviousToOverride/texttesttmp
-- /home/geoff/.texttest/tmp/texttest.06Oct203423.8136/texttest/GUI/Appearance/PreferPreviousToOverride/TargetApp
+- /carm/proj/texttest-tmp/geoff/texttest.08Oct151956.30386/texttest/GUI/Appearance/PreferPreviousToOverride/texttesttmp
+- /carm/proj/texttest-tmp/geoff/texttest.08Oct151956.30386/texttest/GUI/Appearance/PreferPreviousToOverride/TargetApp
 .....Recomputation......
 Radio button 'Display results exactly as they were in the original run' (checked)
 Radio button 'Use raw data from the original run, but recompute run-dependent text, known bug information etc.'
@@ -224,11 +224,11 @@ Button 'gtk-cancel' (Stock image 'gtk-cancel')
 ----------------------------------------------------------------
 
 'press reconnect' event created with arguments ''
-Starting reconnect run of TextTest with arguments ['-g', '-vanilla', 'site', '-a', 'hello', '-v', 'version_I_set_by_hand', '-reconnect', '/home/geoff/.texttest/tmp/texttest.06Oct203423.8136/texttest/GUI/Appearance/PreferPreviousToOverride/TargetApp', '-count', '1', '-f', '/home/geoff/.texttest/tmp/texttest.06Oct203423.8136/texttest/GUI/Appearance/PreferPreviousToOverride/texttesttmp/static_gui.06Oct204315.10570/dynamic_run2/gui_select', '-fd', '/home/geoff/.texttest/tmp/texttest.06Oct203423.8136/texttest/GUI/Appearance/PreferPreviousToOverride/texttesttmp/static_gui.06Oct204315.10570/temporary_filter_files']
+Starting reconnect run of TextTest with arguments ['-g', '-vanilla', 'site', '-a', 'hello', '-v', 'version_I_set_by_hand', '-reconnect', '/carm/proj/texttest-tmp/geoff/texttest.08Oct151956.30386/texttest/GUI/Appearance/PreferPreviousToOverride/TargetApp', '-count', '1', '-f', '/carm/proj/texttest-tmp/geoff/texttest.08Oct151956.30386/texttest/GUI/Appearance/PreferPreviousToOverride/texttesttmp/static_gui.08Oct152030.29635/dynamic_run2/gui_select', '-fd', '/carm/proj/texttest-tmp/geoff/texttest.08Oct151956.30386/texttest/GUI/Appearance/PreferPreviousToOverride/texttesttmp/static_gui.08Oct152030.29635/temporary_filter_files']
 
 Waiting for application event 'reconnect GUI to be closed' to occur.
 
-Changing GUI status to: 'Reconnected to HELLO test-case Test at 06Oct20:43:16.'
+Changing GUI status to: 'Reconnected to HELLO test-case Test at 08Oct15:20:38.'
 
 Changing GUI status to: 'Reconnect run failed for HELLO test-case Test'
 
@@ -236,7 +236,7 @@ Changing GUI status to: 'Reconnect run failed for HELLO test-case Test'
 Default widget is 'gtk-ok'
 Stock image 'gtk-dialog-error' , ========== GtkTextView ==========
 Reconnect run failed, with the following errors:
-Rejected Application HELLO, version version_I_set_by_hand - Could not find any runs matching Application HELLO, version version_I_set_by_hand under /home/geoff/.texttest/tmp/texttest.06Oct203423.8136/texttest/GUI/Appearance/PreferPreviousToOverride/TargetApp
+Rejected Application HELLO, version version_I_set_by_hand - Could not find any runs matching Application HELLO, version version_I_set_by_hand under /carm/proj/texttest-tmp/geoff/texttest.08Oct151956.30386/texttest/GUI/Appearance/PreferPreviousToOverride/TargetApp
 =================================
 ---------------
 Button 'gtk-ok' (Stock image 'gtk-ok')

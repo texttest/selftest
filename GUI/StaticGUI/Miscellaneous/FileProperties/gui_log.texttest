@@ -5,9 +5,9 @@ Adding entry completion '<default>' ...
 Adding entry completion 'extra' ...
 Adding entry completion 'localhost' ...
 Adding entry completion '1' ...
-Adding entry completion '/home/geoff/.texttest/tmp/texttest.06Oct214436.13911/texttest/GUI/StaticGUI/Miscellaneous/FileProperties/log/logging.debug' ...
-Adding entry completion '/home/geoff/code/texttest/log/logging.debug' ...
-Adding entry completion '/home/geoff/.texttest/tmp/texttest.06Oct214436.13911/texttest/GUI/StaticGUI/Miscellaneous/FileProperties/log' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.08Oct151956.30386/texttest/GUI/StaticGUI/Miscellaneous/FileProperties/log/logging.debug' ...
+Adding entry completion '/users/geoff/work/master/Testing/TextTest/log/logging.debug' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.08Oct151956.30386/texttest/GUI/StaticGUI/Miscellaneous/FileProperties/log' ...
 Adding entry completion 'site' ...
 Adding entry completion 'personal' ...
 Adding entry completion 'all' ...
@@ -32,7 +32,7 @@ Menu Bar :
     'Cut' (Stock image 'gtk-cut', greyed out, accelerator 'Ctrl+X')
     'Copy' (Stock image 'gtk-copy', greyed out, accelerator 'Ctrl+C')
     'Paste' (Stock image 'gtk-paste', greyed out, accelerator 'Ctrl+V')
-    'Remove...' (Stock image 'gtk-delete', greyed out, accelerator 'Ctrl+Delete')
+    'Remove Tests...' (Stock image 'gtk-delete', greyed out, accelerator 'Ctrl+Delete')
     'Rename...' (Stock image 'gtk-italic', greyed out, accelerator 'Ctrl+M')
       ----
     'Enter Failure Information' (Stock image 'gtk-info', greyed out, accelerator 'Ctrl+I')
@@ -80,7 +80,7 @@ Tool Bar :
   _Select (Stock image 'gtk-find', accelerator 'Ctrl+S', tooltip 'Select indicated tests')
   _Run (Stock image 'gtk-execute', greyed out, accelerator 'Ctrl+R', tooltip 'Run selected tests')
     ----
-  Remove... (Stock image 'gtk-delete', greyed out, accelerator 'Ctrl+Delete', tooltip 'Remove selected files')
+  Remove Tests... (Stock image 'gtk-delete', greyed out, accelerator 'Ctrl+Delete', tooltip 'Remove selected tests')
 ...........
 
 Showing Test Tree with columns: Tests: All 0 selected
@@ -109,7 +109,7 @@ Radio button 'Discard' (checked) (tooltip 'Show all tests which match the criter
 Button 'Filter' (Stock image 'gtk-find', accelerator 'Ctrl+F', tooltip 'filter tests to show only those indicated')
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 06Oct21:56:58.' , Non-stock image
+'TextTest started at 08Oct15:20:43.' , Non-stock image
 --------------------------------------------------------------------------------
 
 Changing GUI status to: 'Reading tests ...'
@@ -177,13 +177,13 @@ Updated : Test Tree with columns: Tests: 0/22 selected, 0/11 distinct
 ->       S01 (grey90)
 Edited 'Test-file to search' Text entry (set to 'output')
 
-Changing GUI status to: 'Reading tests completed at 06Oct21:56:58.'
+Changing GUI status to: 'Reading tests completed at 08Oct15:20:44.'
 
 Expected application event 'all tests to be read' occurred, proceeding.
 
 'set test selection to' event created with arguments 'S01.99'
 
-No longer greyed out : Enter Failure Information, Hide selected, Move down, Move to last, Re_connect, Remove..., Replace Text in Files, S_ave Selection..., Show only selected, _Copy, _Cut, _Rename..., _Run
+No longer greyed out : Enter Failure Information, Hide selected, Move down, Move to last, Re_connect, Remove Tests..., Replace Text in Files, S_ave Selection..., Show only selected, _Copy, _Cut, _Rename..., _Run
 
 Column titles changed in Test Tree with columns: Tests: 2/22 selected, 1/11 distinct
 
@@ -207,6 +207,8 @@ S01.99's comment
 
 'view actions for file' event created with arguments 'output.dip'
 
+Greyed out : Remove Tests...
+
 ---------- Popup Window ----------
 'View File' (Stock image 'gtk-open', accelerator 'Ctrl+O')
 'File Properties' (Stock image 'gtk-properties')
@@ -223,9 +225,9 @@ Changing GUI status to: 'Performed 'Show properties of selected files' on 1 file
 
 ---------- Dialog 'Show properties of selected files' ----------
 Default widget is 'gtk-close'
-Expander '/home/geoff/.texttest/tmp/texttest.06Oct214436.13911/texttest/GUI/StaticGUI/Miscellaneous/FileProperties/TargetApp/Game9952/S01.99':
+Expander '/carm/proj/texttest-tmp/geoff/texttest.08Oct151956.30386/texttest/GUI/StaticGUI/Miscellaneous/FileProperties/TargetApp/Game9952/S01.99':
 -> Viewing table with 1 rows and 7 columns.
-'-rw-rw-r--' | '1' | '?' | '?' | '13' | 'Oct 05 21:56' | 'output.dip'
+'-rw-rw-r--' | '1' | '?' | '?' | '13' | 'Oct 07 15:20' | 'output.dip'
 ---------------
 Button 'gtk-close' (Stock image 'gtk-close')
 ----------------------------------------------------------------
@@ -234,7 +236,7 @@ Button 'gtk-close' (Stock image 'gtk-close')
 
 'set test selection to' event created with arguments 'A01'
 
-No longer greyed out : Move to first, Move up
+No longer greyed out : Move to first, Move up, Remove Tests...
 
 Updated : File Tree with columns: A01
 -> Standard Files (white,bold)
@@ -248,6 +250,8 @@ Description:
 ===============================
 
 'view actions for file' event created with arguments 'output.dip'
+
+Greyed out : Remove Tests...
 
 ---------- Popup Window ----------
 'View File' (Stock image 'gtk-open', accelerator 'Ctrl+O')
@@ -264,9 +268,9 @@ Changing GUI status to: 'Performed 'Show properties of selected files' on 1 file
 
 ---------- Dialog 'Show properties of selected files' ----------
 Default widget is 'gtk-close'
-Expander '/home/geoff/.texttest/tmp/texttest.06Oct214436.13911/texttest/GUI/StaticGUI/Miscellaneous/FileProperties/TargetApp/Game9952/A01':
+Expander '/carm/proj/texttest-tmp/geoff/texttest.08Oct151956.30386/texttest/GUI/StaticGUI/Miscellaneous/FileProperties/TargetApp/Game9952/A01':
 -> Viewing table with 1 rows and 7 columns.
-'-rw-rw-r--' | '1' | '?' | '?' | '13' | 'Oct 05 21:56' | 'output.dip'
+'-rw-rw-r--' | '1' | '?' | '?' | '13' | 'Oct 07 15:20' | 'output.dip'
 ---------------
 Button 'gtk-close' (Stock image 'gtk-close')
 ----------------------------------------------------------------
@@ -276,7 +280,7 @@ Button 'gtk-close' (Stock image 'gtk-close')
 'set test selection to' event created with arguments 'Game9952'
 
 Greyed out : Move to first, Move up
-No longer greyed out : Add Suite, Add Test, _Reversed Sort Test Suite File, _Sort Test Suite File
+No longer greyed out : Add Suite, Add Test, Remove Tests..., _Reversed Sort Test Suite File, _Sort Test Suite File
 
 Column titles changed in Test Tree with columns: Tests: 2 suites selected, 1 distinct
 
@@ -294,6 +298,8 @@ Description:
 
 'view actions for file' event created with arguments 'testsuite.dip'
 
+Greyed out : Remove Tests...
+
 ---------- Popup Window ----------
 'View File' (Stock image 'gtk-open', accelerator 'Ctrl+O')
 'File Properties' (Stock image 'gtk-properties')
@@ -309,9 +315,9 @@ Changing GUI status to: 'Performed 'Show properties of selected files' on 1 file
 
 ---------- Dialog 'Show properties of selected files' ----------
 Default widget is 'gtk-close'
-Expander '/home/geoff/.texttest/tmp/texttest.06Oct214436.13911/texttest/GUI/StaticGUI/Miscellaneous/FileProperties/TargetApp/Game9952':
+Expander '/carm/proj/texttest-tmp/geoff/texttest.08Oct151956.30386/texttest/GUI/StaticGUI/Miscellaneous/FileProperties/TargetApp/Game9952':
 -> Viewing table with 1 rows and 7 columns.
-'-rw-rw-r--' | '1' | '?' | '?' | '204' | 'Oct 05 21:56' | 'testsuite.dip'
+'-rw-rw-r--' | '1' | '?' | '?' | '204' | 'Oct 07 15:20' | 'testsuite.dip'
 ---------------
 Button 'gtk-close' (Stock image 'gtk-close')
 ----------------------------------------------------------------
@@ -337,10 +343,10 @@ Changing GUI status to: 'Performed 'Show properties of selected files' on 2 file
 
 ---------- Dialog 'Show properties of selected files' ----------
 Default widget is 'gtk-close'
-Expander '/home/geoff/.texttest/tmp/texttest.06Oct214436.13911/texttest/GUI/StaticGUI/Miscellaneous/FileProperties/TargetApp/Game9952':
+Expander '/carm/proj/texttest-tmp/geoff/texttest.08Oct151956.30386/texttest/GUI/StaticGUI/Miscellaneous/FileProperties/TargetApp/Game9952':
 -> Viewing table with 2 rows and 7 columns.
-'-rw-rw-r--' | '1' | '?' | '?' | '204' | 'Oct 05 21:56' | 'testsuite.dip'
-'-rw-rw-r--' | '1' | '?' | '?' | '19' | 'Oct 05 21:56' | 'testsuite.dip.small'
+'-rw-rw-r--' | '1' | '?' | '?' | '204' | 'Oct 07 15:20' | 'testsuite.dip'
+'-rw-rw-r--' | '1' | '?' | '?' | '19' | 'Oct 07 15:20' | 'testsuite.dip.small'
 ---------------
 Button 'gtk-close' (Stock image 'gtk-close')
 ----------------------------------------------------------------
@@ -350,6 +356,7 @@ Button 'gtk-close' (Stock image 'gtk-close')
 'set test selection to' event created with arguments 'S01.99,A01'
 
 Greyed out : Add Suite, Add Test, Enter Failure Information, Move down, Move to last, _Rename..., _Reversed Sort Test Suite File, _Sort Test Suite File
+No longer greyed out : Remove Tests...
 
 Column titles changed in Test Tree with columns: Tests: 4/22 selected, 2/11 distinct
 
@@ -374,11 +381,11 @@ Radio button 'Discard' (checked) (tooltip 'Show all tests which match the criter
 Button 'Filter' (Stock image 'gtk-find', accelerator 'Ctrl+F', tooltip 'filter tests to show only those indicated')
 
 'run selected tests' event created with arguments ''
-Starting dynamic run of TextTest with arguments ['-g', '-a', 'dip', '-m', 'localhost', '-cp', '1', '-xr', '/home/geoff/.texttest/tmp/texttest.06Oct214436.13911/texttest/GUI/StaticGUI/Miscellaneous/FileProperties/log/logging.debug', '-xw', '/home/geoff/.texttest/tmp/texttest.06Oct214436.13911/texttest/GUI/StaticGUI/Miscellaneous/FileProperties/log', '-vanilla', 'site', '-count', '4', '-f', '/home/geoff/.texttest/tmp/texttest.06Oct214436.13911/texttest/GUI/StaticGUI/Miscellaneous/FileProperties/texttesttmp/static_gui.06Oct215657.17054/dynamic_run1/gui_select', '-fd', '/home/geoff/.texttest/tmp/texttest.06Oct214436.13911/texttest/GUI/StaticGUI/Miscellaneous/FileProperties/texttesttmp/static_gui.06Oct215657.17054/temporary_filter_files']
+Starting dynamic run of TextTest with arguments ['-g', '-a', 'dip', '-m', 'localhost', '-cp', '1', '-xr', '/carm/proj/texttest-tmp/geoff/texttest.08Oct151956.30386/texttest/GUI/StaticGUI/Miscellaneous/FileProperties/log/logging.debug', '-xw', '/carm/proj/texttest-tmp/geoff/texttest.08Oct151956.30386/texttest/GUI/StaticGUI/Miscellaneous/FileProperties/log', '-vanilla', 'site', '-count', '4', '-f', '/carm/proj/texttest-tmp/geoff/texttest.08Oct151956.30386/texttest/GUI/StaticGUI/Miscellaneous/FileProperties/texttesttmp/static_gui.08Oct152041.17804/dynamic_run1/gui_select', '-fd', '/carm/proj/texttest-tmp/geoff/texttest.08Oct151956.30386/texttest/GUI/StaticGUI/Miscellaneous/FileProperties/texttesttmp/static_gui.08Oct152041.17804/temporary_filter_files']
 
 Waiting for application event 'dynamic GUI to be closed' to occur.
 
-Changing GUI status to: 'Started 4 tests at 06Oct21:56:59.'
+Changing GUI status to: 'Started 4 tests at 08Oct15:20:44.'
 
 Expected application event 'dynamic GUI to be closed' occurred, proceeding.
 
@@ -401,8 +408,8 @@ Button '_Run' (Stock image 'gtk-execute', accelerator 'Ctrl+R', tooltip 'Run sel
 Current page changed in Notebook with tabs: Basic , Advanced
 Viewing page 'Advanced'
 Viewing table with 5 rows and 2 columns.
-'Configure self-diagnostics from  ' | Text entry (set to '/home/geoff/.texttest/tmp/texttest.06Oct214436.13911/texttest/GUI/StaticGUI/Miscellaneous/FileProperties/log/logging.debug') (drop-down list containing ['/home/geoff/.texttest/tmp/texttest.06Oct214436.13911/texttest/GUI/StaticGUI/Miscellaneous/FileProperties/log/logging.debug', '/home/geoff/code/texttest/log/logging.debug'])
-'Write self-diagnostics to  ' | Text entry (set to '/home/geoff/.texttest/tmp/texttest.06Oct214436.13911/texttest/GUI/StaticGUI/Miscellaneous/FileProperties/log')
+'Configure self-diagnostics from  ' | Text entry (set to '/carm/proj/texttest-tmp/geoff/texttest.08Oct151956.30386/texttest/GUI/StaticGUI/Miscellaneous/FileProperties/log/logging.debug') (drop-down list containing ['/carm/proj/texttest-tmp/geoff/texttest.08Oct151956.30386/texttest/GUI/StaticGUI/Miscellaneous/FileProperties/log/logging.debug', '/users/geoff/work/master/Testing/TextTest/log/logging.debug'])
+'Write self-diagnostics to  ' | Text entry (set to '/carm/proj/texttest-tmp/geoff/texttest.08Oct151956.30386/texttest/GUI/StaticGUI/Miscellaneous/FileProperties/log')
 'Run batch mode session  ' | Text entry
 'Name this run  ' | Text entry
 'Ignore configuration files  ' | Text entry (set to 'site') (drop-down list containing ['', 'site', 'personal', 'all'])
