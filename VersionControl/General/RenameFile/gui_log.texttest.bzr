@@ -2,13 +2,11 @@
 Waiting for application event 'all tests to be read' to occur.
 Enabling entry completion, using matching 1
 Adding entry completion '<default>' ...
-Adding entry completion 'extra1' ...
-Adding entry completion 'extra2' ...
 Adding entry completion 'localhost' ...
 Adding entry completion '1' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.09Oct111624.13918/texttest/TestSelf/ExtraVersions/GUI/RemoveFileFromShared/log/logging.debug' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.09Oct110833.13733/texttest.bzr/VersionControl/General/RenameFile/log/logging.debug' ...
 Adding entry completion '/users/geoff/work/master/Testing/TextTest/log/logging.debug' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.09Oct111624.13918/texttest/TestSelf/ExtraVersions/GUI/RemoveFileFromShared/log' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.09Oct110833.13733/texttest.bzr/VersionControl/General/RenameFile/log' ...
 Adding entry completion 'site' ...
 Adding entry completion 'personal' ...
 Adding entry completion 'all' ...
@@ -64,6 +62,21 @@ Menu Bar :
       ----
     'Refresh' (Stock image 'gtk-refresh', accelerator 'F5')
     'Reset' (Stock image 'gtk-revert-to-saved', accelerator 'Ctrl+E')
+  'Bazaar' Menu :
+    'Log' (greyed out)
+    'Log Recursive' (greyed out)
+      ----
+    'Difference' (greyed out)
+    'Difference Recursive' (greyed out)
+      ----
+    'Status' (greyed out)
+    'Status Recursive' (greyed out)
+      ----
+    'Annotate' (greyed out)
+    'Annotate Recursive' (greyed out)
+      ----
+    'Add' (greyed out)
+    'Add Recursive' (greyed out)
   'Help' Menu :
     'Quick Start'
     'Migration Notes'
@@ -92,7 +105,7 @@ Showing Test Tree with columns: Tests: All 0 selected
 Showing Notebook with tabs: Selection , Config
 Viewing page 'Selection'
 Viewing table with 9 rows and 2 columns.
-'Tests for version  ' (tooltip 'Select tests for a specific version.') | Text entry (drop-down list containing ['', '<default>', 'extra1', 'extra2'])
+'Tests for version  ' (tooltip 'Select tests for a specific version.') | Text entry (drop-down list containing ['', '<default>'])
 'Test names containing  ' (tooltip 'Select tests for which the name matches the entered text. The text can be a regular expression.') | Text entry
 'Suite names containing  ' (tooltip 'Select tests for which at least one parent suite name matches the entered text. The text can be a regular expression.') | Text entry
 'App names containing  ' (tooltip 'Select tests for which the application name matches the entered text. The text can be a regular expression.') | Text entry
@@ -110,7 +123,7 @@ Radio button 'Discard' (checked) (tooltip 'Show all tests which match the criter
 Button 'Filter' (Stock image 'gtk-find', accelerator 'Ctrl+F', tooltip 'filter tests to show only those indicated')
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 09Oct11:17:04.' , Non-stock image
+'TextTest started at 09Oct11:08:37.' , Non-stock image
 ----------------------------------------------------------------------------------
 
 Changing GUI status to: 'Reading tests ...'
@@ -120,40 +133,39 @@ Updated : Test Tree with columns: Tests: 0/1 selected
 
 Column titles changed in Test Tree with columns: Tests: 0/2 selected
 
-Column titles changed in Test Tree with columns: Tests: 0/3 selected, 0/2 distinct
+Column titles changed in Test Tree with columns: Tests: 0/3 selected
 
-Column titles changed in Test Tree with columns: Tests: 0/4 selected, 0/3 distinct
+Column titles changed in Test Tree with columns: Tests: 0/4 selected
 
-Column titles changed in Test Tree with columns: Tests: 0/5 selected, 0/3 distinct
-
-Column titles changed in Test Tree with columns: Tests: 0/6 selected, 0/4 distinct
-
-Updated : Test Tree with columns: Tests: 0/6 selected, 0/4 distinct
+Updated : Test Tree with columns: Tests: 0/4 selected
 -> TargetApp (hello) (grey90,bold)
-->   Common (grey90)
-->   Base (grey90)
-->   Extra1 (grey90)
-->   Extra2 (grey90)
+->   Test1 (grey90)
+->   Test2 (grey90)
+->   Suite (grey90,bold)
+->     Subsuite (grey90,bold)
+->       Test3 (grey90)
+->       Test4 (grey90)
 Edited 'Test-file to search' Text entry (set to 'output')
 
-Changing GUI status to: 'Reading tests completed at 09Oct11:17:08.'
+Changing GUI status to: 'Reading tests completed at 09Oct11:08:37.'
 
 Expected application event 'all tests to be read' occurred, proceeding.
 
-'set test selection to' event created with arguments 'Common'
+'set test selection to' event created with arguments 'Test1'
 
-No longer greyed out : Enter Failure Information, Hide selected, Move down, Move to last, Re_connect, Remove Tests..., Replace Text in Files, S_ave Selection..., Show only selected, _Copy, _Cut, _Rename..., _Run
+No longer greyed out : A_dd, A_nnotate, Add Recursive, Annotate Recursive, Difference Recursive, Enter Failure Information, Hide selected, Log Recursive, Move down, Move to last, Re_connect, Remove Tests..., Replace Text in Files, S_ave Selection..., Show only selected, Status Recursive, _Copy, _Cut, _Difference, _Log, _Rename..., _Run, _Status
 
-Column titles changed in Test Tree with columns: Tests: 3/6 selected, 1/4 distinct
+Column titles changed in Test Tree with columns: Tests: 1/4 selected
 
 Current page changed in Notebook with tabs: Test , Selection , Running , Config
 Viewing page 'Test'
 ...........
 
-Showing File Tree with columns: Common
+Showing File Tree with columns: Test1
 -> Standard Files (white,bold)
 ->   errors.hello (grey90)
 ->   output.hello (grey90)
+->   output.hello.version (grey90)
 -> Definition Files (white)
 
 ------------------------------ (horizontal pane separator, 46% from the top)
@@ -165,9 +177,11 @@ Description:
 <No description provided>
 ===============================
 
-'view actions for file' event created with arguments 'output.hello'
+'set file selection to' event created with arguments 'output.hello'
 
 Greyed out : Remove Tests...
+
+'view actions for file' event created with arguments 'output.hello'
 
 ---------- Popup Window ----------
 'View File' (Stock image 'gtk-open', accelerator 'Ctrl+O')
@@ -177,28 +191,115 @@ Greyed out : Remove Tests...
   ----
 'Rename...' (Stock image 'gtk-italic')
 'Remove...' (Stock image 'gtk-delete', accelerator 'Ctrl+Delete')
+  ----
+'Bazaar' Menu :
+  'Log'
+  'Log Recursive'
+    ----
+  'Difference'
+  'Difference Recursive'
+    ----
+  'Status'
+  'Status Recursive'
+    ----
+  'Annotate'
+  'Annotate Recursive'
+    ----
+  'Add'
+  'Add Recursive'
 ----------------------------------
 
-'remove selected files' event created with arguments ''
+'rename selected file' event created with arguments ''
+Adding entry completion 'output.hello' ...
 
----------- Dialog 'TextTest Confirmation' ----------
-Focus widget is 'GtkTextView'
-Stock image 'gtk-dialog-warning' , ========== GtkTextView ==========
-
-You are about to remove 1 file from the test case 'Common'.
-
-Note: This will remove files from the file system and hence may not be reversible.
-
-Are you sure you wish to proceed?
-=================================
+---------- Dialog 'Rename selected file' ----------
+Default widget is 'gtk-ok'
+'
+New name for file:'
+Text entry (set to 'output.hello')
 ---------------
-Button 'gtk-yes' (Stock image 'gtk-yes')
-Button 'gtk-no' (Stock image 'gtk-no')
-----------------------------------------------------
+Button 'gtk-ok' (Stock image 'gtk-ok')
+Button 'gtk-cancel' (Stock image 'gtk-cancel')
+---------------------------------------------------
 
-'answer no to texttest confirmation' event created with arguments ''
+'enter new name for file =' event created with arguments 'output_renamed.hello'
+Edited 'New name for file' Text entry (set to 'output_renamed.hello')
+
+'press ok' event created with arguments ''
 Adding entry completion 'output' ...
+Adding entry completion 'output_renamed.hello' ...
 
-Changing GUI status to: 'Action cancelled.'
+No longer greyed out : Remove Tests...
+
+Updated : File Tree with columns: Test1
+-> Standard Files (white,bold)
+->   errors.hello (grey90)
+->   output.hello.version (grey90)
+->   output_renamed.hello (grey90)
+-> Definition Files (white)
+
+Changing GUI status to: 'Renamed file output.hello to output_renamed.hello. in Bazaar (using 'bzr mv')'
+
+'set file selection to' event created with arguments 'output.hello.version'
+
+Greyed out : Remove Tests...
+
+'view actions for file' event created with arguments 'output.hello.version'
+
+---------- Popup Window ----------
+'View File' (Stock image 'gtk-open', accelerator 'Ctrl+O')
+'File Properties' (Stock image 'gtk-properties')
+  ----
+'Create/Import' (Stock image 'gtk-new', accelerator 'Ctrl+N')
+  ----
+'Rename...' (Stock image 'gtk-italic')
+'Remove...' (Stock image 'gtk-delete', accelerator 'Ctrl+Delete')
+  ----
+'Bazaar' Menu :
+  'Log'
+  'Log Recursive'
+    ----
+  'Difference'
+  'Difference Recursive'
+    ----
+  'Status'
+  'Status Recursive'
+    ----
+  'Annotate'
+  'Annotate Recursive'
+    ----
+  'Add'
+  'Add Recursive'
+----------------------------------
+
+'rename selected file' event created with arguments ''
+Adding entry completion 'output.hello.version' ...
+
+---------- Dialog 'Rename selected file' ----------
+Default widget is 'gtk-ok'
+'
+New name for file:'
+Text entry (set to 'output.hello.version')
+---------------
+Button 'gtk-ok' (Stock image 'gtk-ok')
+Button 'gtk-cancel' (Stock image 'gtk-cancel')
+---------------------------------------------------
+
+'enter new name for file =' event created with arguments 'output_renamed.hello.version'
+Edited 'New name for file' Text entry (set to 'output_renamed.hello.version')
+
+'press ok' event created with arguments ''
+Adding entry completion 'output_renamed.hello.version' ...
+
+No longer greyed out : Remove Tests...
+
+Updated : File Tree with columns: Test1
+-> Standard Files (white,bold)
+->   errors.hello (grey90)
+->   output_renamed.hello (grey90)
+->   output_renamed.hello.version (grey90)
+-> Definition Files (white)
+
+Changing GUI status to: 'Renamed file output.hello.version to output_renamed.hello.version.'
 
 'quit' event created with arguments ''
