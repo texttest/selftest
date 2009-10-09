@@ -40,6 +40,9 @@ DontCollateInput
 # Test that we can use specified scripts in a pipeline to collate a file indirectly
 CollateScripts
 
+# If the collate script doesn't write anything, treat that as a rejection and don't produce an empty file
+CollateScriptRejectsInput
+
 # Test that we get sensible error messages if a non-existent collate script gets given
 BadCollateScript
 
