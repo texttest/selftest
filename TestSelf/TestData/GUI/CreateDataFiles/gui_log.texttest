@@ -4,9 +4,9 @@ Enabling entry completion, using matching 1
 Adding entry completion 'subdir' ...
 Adding entry completion 'localhost' ...
 Adding entry completion '1' ...
-Adding entry completion '/home/geoff/.texttest/tmp/texttest.11Oct215826.9000/texttest/TestSelf/TestData/GUI/CreateDataFiles/log/logging.debug' ...
-Adding entry completion '/home/geoff/code/texttest/log/logging.debug' ...
-Adding entry completion '/home/geoff/.texttest/tmp/texttest.11Oct215826.9000/texttest/TestSelf/TestData/GUI/CreateDataFiles/log' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.14Oct091832.21683/texttest/TestSelf/TestData/GUI/CreateDataFiles/log/logging.debug' ...
+Adding entry completion '/users/geoff/work/master/Testing/TextTest/log/logging.debug' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.14Oct091832.21683/texttest/TestSelf/TestData/GUI/CreateDataFiles/log' ...
 Adding entry completion 'site' ...
 Adding entry completion 'personal' ...
 Adding entry completion 'all' ...
@@ -56,7 +56,7 @@ Menu Bar :
     'Filter' (Stock image 'gtk-find', accelerator 'Ctrl+F')
       ----
     'Run' (Stock image 'gtk-execute', greyed out, accelerator 'Ctrl+R')
-    'Reconnect' (Stock image 'gtk-connect', greyed out, accelerator 'Shift+Ctrl+R')
+    'Reconnect...' (Stock image 'gtk-connect', greyed out, accelerator 'Shift+Ctrl+R')
     'Record Use-Case' (Stock image 'gtk-media-record', greyed out, accelerator 'F9')
     'Replace Text in Files' (greyed out)
       ----
@@ -77,9 +77,8 @@ Tool Bar :
   _Quit (Stock image 'gtk-quit', accelerator 'Ctrl+Q', tooltip 'Quit')
     ----
   _Select (Stock image 'gtk-find', accelerator 'Ctrl+S', tooltip 'Select indicated tests')
+  Refresh (Stock image 'gtk-refresh', accelerator 'F5', tooltip 'Refresh the whole test suite so that it reflects file changes')
   _Run (Stock image 'gtk-execute', greyed out, accelerator 'Ctrl+R', tooltip 'Run selected tests')
-    ----
-  Remove Tests... (Stock image 'gtk-delete', greyed out, accelerator 'Ctrl+Delete', tooltip 'Remove selected tests')
 ...........
 
 Showing Test Tree with columns: Tests: All 0 selected
@@ -108,7 +107,7 @@ Radio button 'Discard' (checked) (tooltip 'Show all tests which match the criter
 Button 'Filter' (Stock image 'gtk-find', accelerator 'Ctrl+F', tooltip 'filter tests to show only those indicated')
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 11Oct22:01:50.' , Image 'throbber_inactive.png'
+'TextTest started at 14Oct09:21:13.' , Image 'throbber_inactive.png'
 ----------------------------------------------------------------------------------------
 
 Changing GUI status to: 'Reading tests ...'
@@ -124,13 +123,13 @@ Updated : Test Tree with columns: Tests: 0/2 selected
 ->   Test2 (grey90)
 Edited 'Test-file to search' Text entry (set to 'output')
 
-Changing GUI status to: 'Reading tests completed at 11Oct22:01:50.'
+Changing GUI status to: 'Reading tests completed at 14Oct09:21:13.'
 
 Expected application event 'all tests to be read' occurred, proceeding.
 
 'set test selection to' event created with arguments 'Test1'
 
-No longer greyed out : Enter Failure Information, Hide selected, Move down, Move to last, Re_connect, Remove Tests..., Replace Text in Files, S_ave Selection..., Show only selected, _Copy, _Cut, _Rename..., _Run
+No longer greyed out : Enter Failure Information, Hide selected, Move down, Move to last, Re_connect..., Remove Tests..., Replace Text in Files, S_ave Selection..., Show only selected, _Copy, _Cut, _Rename..., _Run
 
 Column titles changed in Test Tree with columns: Tests: 1/2 selected
 
@@ -230,9 +229,9 @@ Radio button 'Create a new file'
 Radio button 'Create a new directory'
 .....Source to copy from:......
 
-Showing Source File Chooser (selected '/home/geoff/.texttest/tmp/texttest.11Oct215826.9000/texttest/TestSelf/TestData/GUI/CreateDataFiles/TargetApp/readonlyfile')
+Showing Source File Chooser (selected '/carm/proj/texttest-tmp/geoff/texttest.14Oct091832.21683/texttest/TestSelf/TestData/GUI/CreateDataFiles/TargetApp/readonlyfile')
 Shortcut folders (1) :
-- /home/geoff/.texttest/tmp/texttest.11Oct215826.9000/texttest/TestSelf/TestData/GUI/CreateDataFiles/TargetApp
+- /carm/proj/texttest-tmp/geoff/texttest.14Oct091832.21683/texttest/TestSelf/TestData/GUI/CreateDataFiles/TargetApp
 ---------------
 Button 'gtk-ok' (Stock image 'gtk-ok') , Button 'gtk-cancel' (Stock image 'gtk-cancel')
 ------------------------------------------------------------------
@@ -240,7 +239,7 @@ Button 'gtk-ok' (Stock image 'gtk-ok') , Button 'gtk-cancel' (Stock image 'gtk-c
 'enter type of file/directory to create =' event created with arguments 'somedir/readonlyfile2'
 Edited 'Type of file/directory to create' Text entry (set to 'somedir/readonlyfile2')
 
-Updated : Source File Chooser (selected '/home/geoff/.texttest/tmp/texttest.11Oct215826.9000/texttest/TestSelf/TestData/GUI/CreateDataFiles/TargetApp/Test1')
+Updated : Source File Chooser (selected '/carm/proj/texttest-tmp/geoff/texttest.14Oct091832.21683/texttest/TestSelf/TestData/GUI/CreateDataFiles/TargetApp/Test1')
 
 'choose create a new file' event created with arguments ''
 
@@ -250,7 +249,7 @@ Toggled Radio button 'Create a new file' (checked)
 
 'press create' event created with arguments ''
 Creating new empty file...
-Viewing file /home/geoff/.texttest/tmp/texttest.11Oct215826.9000/texttest/TestSelf/TestData/GUI/CreateDataFiles/TargetApp/Test1/somedir/readonlyfile2 using 'emacs', refresh set to False
+Viewing file /carm/proj/texttest-tmp/geoff/texttest.14Oct091832.21683/texttest/TestSelf/TestData/GUI/CreateDataFiles/TargetApp/Test1/somedir/readonlyfile2 using 'emacs', refresh set to False
 Adding entry completion 'output' ...
 
 Waiting for application event 'file editing operations to complete' to occur.
@@ -341,16 +340,16 @@ Radio button 'Create a new file'
 Radio button 'Create a new directory'
 .....Source to copy from:......
 
-Showing Source File Chooser (selected '/home/geoff/.texttest/tmp/texttest.11Oct215826.9000/texttest/TestSelf/TestData/GUI/CreateDataFiles/TargetApp/readonlyfile')
+Showing Source File Chooser (selected '/carm/proj/texttest-tmp/geoff/texttest.14Oct091832.21683/texttest/TestSelf/TestData/GUI/CreateDataFiles/TargetApp/readonlyfile')
 Shortcut folders (1) :
-- /home/geoff/.texttest/tmp/texttest.11Oct215826.9000/texttest/TestSelf/TestData/GUI/CreateDataFiles/TargetApp
+- /carm/proj/texttest-tmp/geoff/texttest.14Oct091832.21683/texttest/TestSelf/TestData/GUI/CreateDataFiles/TargetApp
 ---------------
 Button 'gtk-ok' (Stock image 'gtk-ok') , Button 'gtk-cancel' (Stock image 'gtk-cancel')
 ------------------------------------------------------------------
 
 'press create' event created with arguments ''
-Creating new path, copying /home/geoff/.texttest/tmp/texttest.11Oct215826.9000/texttest/TestSelf/TestData/GUI/CreateDataFiles/TargetApp/readonlyfile
-Viewing file /home/geoff/.texttest/tmp/texttest.11Oct215826.9000/texttest/TestSelf/TestData/GUI/CreateDataFiles/TargetApp/Test1/readonlyfile using 'emacs', refresh set to False
+Creating new path, copying /carm/proj/texttest-tmp/geoff/texttest.14Oct091832.21683/texttest/TestSelf/TestData/GUI/CreateDataFiles/TargetApp/readonlyfile
+Viewing file /carm/proj/texttest-tmp/geoff/texttest.14Oct091832.21683/texttest/TestSelf/TestData/GUI/CreateDataFiles/TargetApp/Test1/readonlyfile using 'emacs', refresh set to False
 
 Waiting for application event 'file editing operations to complete' to occur.
 
@@ -393,9 +392,9 @@ Radio button 'Create a new file' (checked)
 Radio button 'Create a new directory'
 .....Source to copy from:......
 
-Showing Source File Chooser (selected '/home/geoff/.texttest/tmp/texttest.11Oct215826.9000/texttest/TestSelf/TestData/GUI/CreateDataFiles/TargetApp/Test1') (greyed out)
+Showing Source File Chooser (selected '/carm/proj/texttest-tmp/geoff/texttest.14Oct091832.21683/texttest/TestSelf/TestData/GUI/CreateDataFiles/TargetApp/Test1') (greyed out)
 Shortcut folders (1) :
-- /home/geoff/.texttest/tmp/texttest.11Oct215826.9000/texttest/TestSelf/TestData/GUI/CreateDataFiles/TargetApp
+- /carm/proj/texttest-tmp/geoff/texttest.14Oct091832.21683/texttest/TestSelf/TestData/GUI/CreateDataFiles/TargetApp
 ---------------
 Button 'gtk-ok' (Stock image 'gtk-ok') , Button 'gtk-cancel' (Stock image 'gtk-cancel')
 ------------------------------------------------------------------
@@ -403,11 +402,11 @@ Button 'gtk-ok' (Stock image 'gtk-ok') , Button 'gtk-cancel' (Stock image 'gtk-c
 'enter type of file/directory to create =' event created with arguments 'input'
 Edited 'Type of file/directory to create' Text entry (set to 'input')
 
-Updated : Source File Chooser (selected '/home/geoff/.texttest/tmp/texttest.11Oct215826.9000/texttest/TestSelf/TestData/GUI/CreateDataFiles/TargetApp/Test1' (greyed out))
+Updated : Source File Chooser (selected '/carm/proj/texttest-tmp/geoff/texttest.14Oct091832.21683/texttest/TestSelf/TestData/GUI/CreateDataFiles/TargetApp/Test1' (greyed out))
 
 'press create' event created with arguments ''
 Creating new empty file...
-Viewing file /home/geoff/.texttest/tmp/texttest.11Oct215826.9000/texttest/TestSelf/TestData/GUI/CreateDataFiles/TargetApp/Test1/input.tdat using 'emacs', refresh set to False
+Viewing file /carm/proj/texttest-tmp/geoff/texttest.14Oct091832.21683/texttest/TestSelf/TestData/GUI/CreateDataFiles/TargetApp/Test1/input.tdat using 'emacs', refresh set to False
 
 Waiting for application event 'file editing operations to complete' to occur.
 
@@ -519,9 +518,9 @@ Radio button 'Create a new file'
 Radio button 'Create a new directory'
 .....Source to copy from:......
 
-Showing Source File Chooser (selected '/home/geoff/.texttest/tmp/texttest.11Oct215826.9000/texttest/TestSelf/TestData/GUI/CreateDataFiles/TargetApp/readonlyfile')
+Showing Source File Chooser (selected '/carm/proj/texttest-tmp/geoff/texttest.14Oct091832.21683/texttest/TestSelf/TestData/GUI/CreateDataFiles/TargetApp/readonlyfile')
 Shortcut folders (1) :
-- /home/geoff/.texttest/tmp/texttest.11Oct215826.9000/texttest/TestSelf/TestData/GUI/CreateDataFiles/TargetApp
+- /carm/proj/texttest-tmp/geoff/texttest.14Oct091832.21683/texttest/TestSelf/TestData/GUI/CreateDataFiles/TargetApp
 ---------------
 Button 'gtk-ok' (Stock image 'gtk-ok') , Button 'gtk-cancel' (Stock image 'gtk-cancel')
 ------------------------------------------------------------------
@@ -530,8 +529,8 @@ Button 'gtk-ok' (Stock image 'gtk-ok') , Button 'gtk-cancel' (Stock image 'gtk-c
 Edited 'Version identifier to use' Text entry (set to 'v1')
 
 'press create' event created with arguments ''
-Creating new path, copying /home/geoff/.texttest/tmp/texttest.11Oct215826.9000/texttest/TestSelf/TestData/GUI/CreateDataFiles/TargetApp/readonlyfile
-Viewing file /home/geoff/.texttest/tmp/texttest.11Oct215826.9000/texttest/TestSelf/TestData/GUI/CreateDataFiles/TargetApp/Test2/readonlyfile.v1 using 'emacs', refresh set to False
+Creating new path, copying /carm/proj/texttest-tmp/geoff/texttest.14Oct091832.21683/texttest/TestSelf/TestData/GUI/CreateDataFiles/TargetApp/readonlyfile
+Viewing file /carm/proj/texttest-tmp/geoff/texttest.14Oct091832.21683/texttest/TestSelf/TestData/GUI/CreateDataFiles/TargetApp/Test2/readonlyfile.v1 using 'emacs', refresh set to False
 Adding entry completion 'v1' ...
 
 Waiting for application event 'file editing operations to complete' to occur.

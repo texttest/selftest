@@ -6,9 +6,9 @@ Adding entry completion 'extra1' ...
 Adding entry completion 'extra2' ...
 Adding entry completion 'localhost' ...
 Adding entry completion '1' ...
-Adding entry completion '/home/geoff/.texttest/tmp/texttest.10Oct194838.7984/texttest/TestSelf/ExtraVersions/GUI/FilterExtraVersion/log/logging.debug' ...
-Adding entry completion '/home/geoff/code/texttest/log/logging.debug' ...
-Adding entry completion '/home/geoff/.texttest/tmp/texttest.10Oct194838.7984/texttest/TestSelf/ExtraVersions/GUI/FilterExtraVersion/log' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.14Oct091832.21683/texttest/TestSelf/ExtraVersions/GUI/FilterExtraVersion/log/logging.debug' ...
+Adding entry completion '/users/geoff/work/master/Testing/TextTest/log/logging.debug' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.14Oct091832.21683/texttest/TestSelf/ExtraVersions/GUI/FilterExtraVersion/log' ...
 Adding entry completion 'site' ...
 Adding entry completion 'personal' ...
 Adding entry completion 'all' ...
@@ -58,7 +58,7 @@ Menu Bar :
     'Filter' (Stock image 'gtk-find', accelerator 'Ctrl+F')
       ----
     'Run' (Stock image 'gtk-execute', greyed out, accelerator 'Ctrl+R')
-    'Reconnect' (Stock image 'gtk-connect', greyed out, accelerator 'Shift+Ctrl+R')
+    'Reconnect...' (Stock image 'gtk-connect', greyed out, accelerator 'Shift+Ctrl+R')
     'Record Use-Case' (Stock image 'gtk-media-record', greyed out, accelerator 'F9')
     'Replace Text in Files' (greyed out)
       ----
@@ -79,9 +79,8 @@ Tool Bar :
   _Quit (Stock image 'gtk-quit', accelerator 'Ctrl+Q', tooltip 'Quit')
     ----
   _Select (Stock image 'gtk-find', accelerator 'Ctrl+S', tooltip 'Select indicated tests')
+  Refresh (Stock image 'gtk-refresh', accelerator 'F5', tooltip 'Refresh the whole test suite so that it reflects file changes')
   _Run (Stock image 'gtk-execute', greyed out, accelerator 'Ctrl+R', tooltip 'Run selected tests')
-    ----
-  Remove Tests... (Stock image 'gtk-delete', greyed out, accelerator 'Ctrl+Delete', tooltip 'Remove selected tests')
 ...........
 
 Showing Test Tree with columns: Tests: All 0 selected
@@ -110,7 +109,7 @@ Radio button 'Discard' (checked) (tooltip 'Show all tests which match the criter
 Button 'Filter' (Stock image 'gtk-find', accelerator 'Ctrl+F', tooltip 'filter tests to show only those indicated')
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 10Oct19:56:23.' , Image 'throbber_inactive.png'
+'TextTest started at 14Oct09:24:12.' , Image 'throbber_inactive.png'
 ----------------------------------------------------------------------------------
 
 Changing GUI status to: 'Reading tests ...'
@@ -136,7 +135,7 @@ Updated : Test Tree with columns: Tests: 0/6 selected, 0/4 distinct
 ->   Extra2 (grey90)
 Edited 'Test-file to search' Text entry (set to 'output')
 
-Changing GUI status to: 'Reading tests completed at 10Oct19:56:24.'
+Changing GUI status to: 'Reading tests completed at 14Oct09:24:13.'
 
 Expected application event 'all tests to be read' occurred, proceeding.
 
@@ -159,7 +158,7 @@ Changing GUI status to: 'Changed filtering by showing 2 tests and hiding 4.'
 
 'set test selection to' event created with arguments 'Common,Extra1'
 
-No longer greyed out : Hide selected, Re_connect, Remove Tests..., Replace Text in Files, S_ave Selection..., Show only selected, _Copy, _Cut, _Run
+No longer greyed out : Hide selected, Re_connect..., Remove Tests..., Replace Text in Files, S_ave Selection..., Show only selected, _Copy, _Cut, _Run
 
 Column titles changed in Test Tree with columns: Tests: 2/6 selected, 2/4 distinct, 4 hidden
 
@@ -185,11 +184,11 @@ Button 'Filter' (Stock image 'gtk-find', accelerator 'Ctrl+F', tooltip 'filter t
 
 'run selected tests' event created with arguments ''
 Adding entry completion 'output' ...
-Starting dynamic run of TextTest with arguments ['-g', '-a', 'hello', '-m', 'localhost', '-cp', '1', '-xr', '/home/geoff/.texttest/tmp/texttest.10Oct194838.7984/texttest/TestSelf/ExtraVersions/GUI/FilterExtraVersion/log/logging.debug', '-xw', '/home/geoff/.texttest/tmp/texttest.10Oct194838.7984/texttest/TestSelf/ExtraVersions/GUI/FilterExtraVersion/log', '-vanilla', 'site', '-count', '2', '-f', '/home/geoff/.texttest/tmp/texttest.10Oct194838.7984/texttest/TestSelf/ExtraVersions/GUI/FilterExtraVersion/texttesttmp/static_gui.10Oct195623.10059/dynamic_run1/gui_select', '-fd', '/home/geoff/.texttest/tmp/texttest.10Oct194838.7984/texttest/TestSelf/ExtraVersions/GUI/FilterExtraVersion/texttesttmp/static_gui.10Oct195623.10059/temporary_filter_files']
+Starting dynamic run of TextTest with arguments ['-g', '-a', 'hello', '-m', 'localhost', '-cp', '1', '-xr', '/carm/proj/texttest-tmp/geoff/texttest.14Oct091832.21683/texttest/TestSelf/ExtraVersions/GUI/FilterExtraVersion/log/logging.debug', '-xw', '/carm/proj/texttest-tmp/geoff/texttest.14Oct091832.21683/texttest/TestSelf/ExtraVersions/GUI/FilterExtraVersion/log', '-vanilla', 'site', '-count', '2', '-f', '/carm/proj/texttest-tmp/geoff/texttest.14Oct091832.21683/texttest/TestSelf/ExtraVersions/GUI/FilterExtraVersion/texttesttmp/static_gui.14Oct092412.22915/dynamic_run1/gui_select', '-fd', '/carm/proj/texttest-tmp/geoff/texttest.14Oct091832.21683/texttest/TestSelf/ExtraVersions/GUI/FilterExtraVersion/texttesttmp/static_gui.14Oct092412.22915/temporary_filter_files']
 
 Waiting for application event 'dynamic GUI to be closed' to occur.
 
-Changing GUI status to: 'Started 2 tests at 10Oct19:56:24.'
+Changing GUI status to: 'Started 2 tests at 14Oct09:24:13.'
 
 Expected application event 'dynamic GUI to be closed' occurred, proceeding.
 
