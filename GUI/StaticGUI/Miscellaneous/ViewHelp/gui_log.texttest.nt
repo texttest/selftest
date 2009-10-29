@@ -4,9 +4,9 @@ Enabling entry completion, using matching 1
 Adding entry completion '<default>' ...
 Adding entry completion 'localhost' ...
 Adding entry completion '1' ...
-Adding entry completion 'T:/texttest/nightjob_tmp/texttest.windows.14Oct233107.428/texttest.windows/GUI/StaticGUI/Miscellaneous/ViewHelp/log/logging.debug' ...
+Adding entry completion 'C:/nightjob/tmp/texttest.windows.28Oct233039.1992/texttest.windows/GUI/StaticGUI/Miscellaneous/ViewHelp/log/logging.debug' ...
 Adding entry completion 'C:/nightjob/texttest-daily-release/source/log/logging.debug' ...
-Adding entry completion 'T:/texttest/nightjob_tmp/texttest.windows.14Oct233107.428/texttest.windows/GUI/StaticGUI/Miscellaneous/ViewHelp/log' ...
+Adding entry completion 'C:/nightjob/tmp/texttest.windows.28Oct233039.1992/texttest.windows/GUI/StaticGUI/Miscellaneous/ViewHelp/log' ...
 Adding entry completion 'site' ...
 Adding entry completion 'personal' ...
 Adding entry completion 'all' ...
@@ -107,7 +107,7 @@ Radio button 'Discard' (checked) (tooltip 'Show all tests which match the criter
 Button 'Filter' (Stock image 'gtk-find', accelerator 'Ctrl+F', tooltip 'filter tests to show only those indicated')
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 15Oct07:48:16.' , Image 'throbber_inactive.png'
+'TextTest started at 28Oct23:59:13.' , Image 'throbber_inactive.png'
 --------------------------------------------------------------------------------
 
 Changing GUI status to: 'Reading tests ...'
@@ -153,7 +153,7 @@ Updated : Test Tree with columns: Tests: 0/11 selected
 ->       S01 (grey90)
 Edited 'Test-file to search' Text entry (set to 'output')
 
-Changing GUI status to: 'Reading tests completed at 15Oct07:48:22.'
+Changing GUI status to: 'Reading tests completed at 28Oct23:59:14.'
 
 Expected application event 'all tests to be read' occurred, proceeding.
 
@@ -271,7 +271,7 @@ Button 'gtk-close' (Stock image 'gtk-close')
 
 'press close' event created with arguments ''
 
-'press close' event created with arguments ''
+'close about dialog' event created with arguments ''
 
 'show texttest migration notes' event created with arguments ''
 
@@ -333,7 +333,7 @@ CHANGES IN DEFAULT BEHAVIOUR (OR PROCEDURE)
 Button 'gtk-close' (Stock image 'gtk-close')
 -------------------------------------------------------
 
-'view migration notes in tab' event created with arguments 'from 3.4'
+'view tab' event created with arguments 'from 3.4'
 
 Current page changed in Notebook with tabs: from 3.15 , from 3.14 , from 3.13 , from 3.12 , from 3.11 , from 3.10 , from 3.9 , from 3.8 , from 3.7 , from 3.6 , from 3.5 , from 3.4 , from 3.3 , from 3.1 , from 2.x
 Viewing page 'from 3.4'
@@ -421,6 +421,9 @@ Viewing page 'trunk'
 ========== GtkTextView ==========
 General GUI Enhancements:
 Static GUI Enhancements:
+    - Can now rename files from the drop-down list in the file view (adminactions.py)
+    - "Refresh" replaces "Remove Tests" in the default toolbar, mostly for aesthetic reasons (default_gui-static.xml)
+	Toolbar contents can be configured/put back, see "personalising the UI" on the website
 Dynamic GUI Enhancements:
 Framework Enhancements:
     - Now integrates with Atlassian's Jira bugtracking system as well as Bugzilla (jira.py)
@@ -429,16 +432,28 @@ Framework Enhancements:
 	Patterns of the form "data*:data*.dump" should behave more intuitively, but may not be completely back-compatible.
 	Read the migration notes and the website for details.
 Historical HTML Batch Report Enhancements:
+    - Can now create separate report tables containing (e.g.) performance or memory information. (testoverview.py)
+	Use -coll web.performance: see website for details.
+    - Cells now have tooltips indicating which test and date they are, to avoid scrolling large tables (testoverview.py)
 Grid Engine (LSF/SGE) enhancements:
+    - Grid Engine command line now appears in the "Run Info" tab of the dynamic GUI. (textinfo.py)
 Self-test/Internal changes:
+    - Now automatically pick up a local PyUseCase repository called "pyusecase" (texttest.py)
 Bug Fixes:
+    - Accelerators for "Cut Test", "Copy Test" and "Paste Test" are disabled when a text widget is focussed (adminactions.py)
+	Means you can use Ctrl+X, Ctrl+V, Ctrl+C for text in TextTest windows.
+    - Worked around a Mercurial bug renaming files with symbolic links in the name (hg.py)
+    - "copy_test_path:$ENV_VAR" will now do nothing if ENV_VAR is empty (sandbox.py)
+	Previously set it to $TEXTTEST_SANDBOX/. which could cause problems.
+    - If a "collate_script" produces an empty file from non-empty input, don't write an empty file (sandbox.py)
+    - Don't stacktrace if a "collate_script" doesn't exist (sandbox.py)
 Grid Engine (LSF/SGE) Bug Fixes:
 =================================
 ---------------
 Button 'gtk-close' (Stock image 'gtk-close')
 ---------------------------------------------------
 
-'view change logs in tab' event created with arguments '3.7.1'
+'view tab' event created with arguments '3.7.1'
 
 Current page changed in Notebook with tabs: trunk , 3.15 , 3.14.1 , 3.14 , 3.13 , 3.12.1 , 3.12 , 3.11.1 , 3.11 , 3.10 , 3.9.1 , 3.9 , 3.8 , 3.7.1 , 3.7 , 3.6 , 3.5.3 , 3.5.2 , 3.5.1 , 3.5 , 3.4 , 3.3 , 3.2 , 3.1.1 , 3.1 , 3.0 , 2.1 , 2.0 , 1.0 , 0.2 , 0.1
 Viewing page '3.7.1'
