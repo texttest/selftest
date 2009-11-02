@@ -79,6 +79,9 @@ errors:RENDER
 errors:File .* line .* in
 errors:CountTest.__del__
 errors:TransSocketUNIX
+# PyGTK 2.10 bug, can't be bothered to work round it in the code as it's already fixed
+errors:IA__g_object_remove_toggle_ref: could{LINES 2}
+errors:^$
 errors:Warning: Tried to connect to session manager
 # shell errors from kill
 errors:root directory does not exist{WORD -1}
