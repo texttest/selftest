@@ -482,18 +482,6 @@ formatter=debug
 args=(os.devnull, 'a')
 #args=('guilog.texttest', 'a')
 
-# ======= Section for gui map ======
-[logger_gui map]
-handlers=gui map
-qualname=gui map
-#level=INFO
-
-[handler_gui map]
-class=FileHandler
-formatter=debug
-args=(os.devnull, 'a')
-#args=('guimap.texttest', 'a')
-
 # ======= Section for locks ======
 [logger_locks]
 handlers=locks
@@ -566,18 +554,6 @@ formatter=debug
 args=(os.devnull, 'a')
 #args=('testobjects.texttest', 'a')
 
-# ======= Section for usecase record ======
-[logger_usecase record]
-handlers=usecase record
-qualname=usecase record
-#level=INFO
-
-[handler_usecase record]
-class=FileHandler
-formatter=debug
-args=(os.devnull, 'a')
-#args=('usecaserecord.texttest', 'a')
-
 # ======= Section for virtual display ======
 [logger_virtual display]
 handlers=virtual display
@@ -590,12 +566,60 @@ formatter=debug
 args=(os.devnull, 'a')
 #args=('virtualdisplay.texttest', 'a')
 
+# ======= Section for TreeModelIndexer ======
+[logger_TreeModelIndexer]
+handlers=TreeModelIndexer
+qualname=TreeModelIndexer
+#level=DEBUG
+
+[handler_TreeModelIndexer]
+class=FileHandler
+formatter=debug
+args=(os.devnull, 'a')
+#args=('treemodelindexer.texttest', 'a')
+
+# ======= Section for TreeViewDescriber ======
+[logger_TreeViewDescriber]
+handlers=TreeViewDescriber
+qualname=TreeViewDescriber
+#level=DEBUG
+
+[handler_TreeViewDescriber]
+class=FileHandler
+formatter=debug
+args=(os.devnull, 'a')
+#args=('treeviewdescriber.texttest', 'a')
+
+# ======= Section for gui map ======
+[logger_gui map]
+handlers=gui map
+qualname=gui map
+#level=DEBUG
+
+[handler_gui map]
+class=FileHandler
+formatter=debug
+args=(os.devnull, 'a')
+#args=('guimap.texttest', 'a')
+
+# ======= Section for usecase record ======
+[logger_usecase record]
+handlers=usecase record
+qualname=usecase record
+#level=DEBUG
+
+[handler_usecase record]
+class=FileHandler
+formatter=debug
+args=(os.devnull, 'a')
+#args=('usecaserecord.texttest', 'a')
+
 # ====== Cruft that python logging module needs ======
 [loggers]
-keys=root,standard log,usecase replay log,kill processes,Action Runner,Activator,Check For Bugs,Collate Files,Environment Creator,File View GUI,FileComparison,Filter Actions,Find Applications,GUI notebook,GenerateWebPages,Idle Handlers,Interactive Actions,Mail Sender,Menu Bar,MultiEntryDictionary,Observable,Prepare Writedir,Progress Monitor,Queue System Submit,Reconnection,Run Dependent Text,Save Repository,Select Tests,Slave Server,Test Column GUI,Test Tree,TestComparison,TestPathFilter,Traffic Replay,Traffic Server,Unique Names,application,batch collect,catalogues,check for crashes,gui log,gui map,locks,makeperformance,option finder,read environment,run test,test objects,usecase record,virtual display
+keys=root,standard log,usecase replay log,kill processes,Action Runner,Activator,Check For Bugs,Collate Files,Environment Creator,File View GUI,FileComparison,Filter Actions,Find Applications,GUI notebook,GenerateWebPages,Idle Handlers,Interactive Actions,Mail Sender,Menu Bar,MultiEntryDictionary,Observable,Prepare Writedir,Progress Monitor,Queue System Submit,Reconnection,Run Dependent Text,Save Repository,Select Tests,Slave Server,Test Column GUI,Test Tree,TestComparison,TestPathFilter,Traffic Replay,Traffic Server,Unique Names,application,batch collect,catalogues,check for crashes,gui log,locks,makeperformance,option finder,read environment,run test,test objects,virtual display,TreeModelIndexer,TreeViewDescriber,gui map,usecase record
 
 [handlers]
-keys=root,Action Runner,Activator,Check For Bugs,Collate Files,Environment Creator,File View GUI,FileComparison,Filter Actions,Find Applications,GUI notebook,GenerateWebPages,Idle Handlers,Interactive Actions,Mail Sender,Menu Bar,MultiEntryDictionary,Observable,Prepare Writedir,Progress Monitor,Queue System Submit,Reconnection,Run Dependent Text,Save Repository,Select Tests,Slave Server,Test Column GUI,Test Tree,TestComparison,TestPathFilter,Traffic Replay,Traffic Server,Unique Names,application,batch collect,catalogues,check for crashes,gui log,gui map,locks,makeperformance,option finder,read environment,run test,stdout,test objects,usecase record,virtual display
+keys=root,Action Runner,Activator,Check For Bugs,Collate Files,Environment Creator,File View GUI,FileComparison,Filter Actions,Find Applications,GUI notebook,GenerateWebPages,Idle Handlers,Interactive Actions,Mail Sender,Menu Bar,MultiEntryDictionary,Observable,Prepare Writedir,Progress Monitor,Queue System Submit,Reconnection,Run Dependent Text,Save Repository,Select Tests,Slave Server,Test Column GUI,Test Tree,TestComparison,TestPathFilter,Traffic Replay,Traffic Server,TreeModelIndexer,TreeViewDescriber,Unique Names,application,batch collect,catalogues,check for crashes,gui log,gui map,locks,makeperformance,option finder,read environment,run test,stdout,test objects,usecase record,virtual display
 
 [formatters]
 keys=timed,debug
