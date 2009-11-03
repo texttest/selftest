@@ -1,0 +1,180 @@
+
+Waiting for application event 'completion of test actions' to occur.
+Enabling entry completion, using matching 1
+Setting window width to 60% of screen.
+Setting window height to 83% of screen.
+
+---------- Window 'TextTest dynamic GUI : testing HELLO (started at 03Nov10:45:06)' ----------
+Focus widget is 'Test Tree'
+
+Menu Bar :
+  'File' Menu :
+    'Save' (Stock image 'gtk-save', greyed out, accelerator 'Ctrl+S')
+    'Save As...' (Stock image 'gtk-save', greyed out, accelerator 'Ctrl+Alt+S')
+      ----
+    'Save Selection...' (Stock image 'gtk-save-as', greyed out, accelerator 'Ctrl+D')
+      ----
+    'Quit' (Stock image 'gtk-quit', accelerator 'Ctrl+Q')
+  'View' Menu :
+    'Set Run Name' (Stock image 'gtk-index')
+      ----
+    'Toolbar' (checked)
+    'Shortcut bar' (checked)
+    'Status bar' (checked)
+  'Actions' Menu :
+    'Kill' (Stock image 'gtk-stop', greyed out, accelerator 'Ctrl+Delete')
+    'Mark' (greyed out, accelerator 'Shift+Ctrl+M')
+    'Unmark' (greyed out, accelerator 'Shift+Ctrl+U')
+      ----
+    'Rerun' (Stock image 'gtk-execute', greyed out, accelerator 'Ctrl+R')
+    'Recompute Status' (Stock image 'gtk-refresh', greyed out, accelerator 'F5')
+  'Help' Menu :
+    'Quick Start'
+    'Migration Notes'
+    'Change Logs'
+      ----
+    'Component Versions'
+    'Credits'
+    'License'
+      ----
+    'About TextTest' (Stock image 'gtk-about')
+
+Tool Bar :
+  _Quit (Stock image 'gtk-quit', accelerator 'Ctrl+Q', tooltip 'Quit')
+  _Kill (Stock image 'gtk-stop', greyed out, accelerator 'Ctrl+Delete', tooltip 'Kill selected tests')
+  _Save (Stock image 'gtk-save', greyed out, accelerator 'Ctrl+S', tooltip 'Save results for selected tests')
+  Progress bar set to fraction 0.0, text 'All 0 tests completed at 03Nov10:45:08'
+...........
+
+Showing Test Tree with columns: Tests: All 0 selected , Details
+
+------------------------------ (vertical pane separator, 68% from the left edge)
+...........
+
+Showing Notebook with tabs: Status , Run Info
+Viewing page 'Status'
+
+Showing Test Status View with columns: Status , Number , Visible
+'Shortcuts:' , Button '_New'
+...........
+'TextTest started at 03Nov10:45:08.' , Image 'throbber_inactive.png'
+----------------------------------------------------------------------------------------------
+
+Progress bar set to fraction 0.0, text '0 of 1 tests completed'
+
+Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
+-> TargetApp (hello) (white,bold) | (white)
+->   Test (white) | (white)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white,bold) | 1 (white,bold) | Check box (checked)
+
+Progress bar set to fraction 0.0, text '0 of 1 tests completed'
+
+Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
+-> TargetApp (hello) (white,bold) | (white)
+->   Test (yellow) | (yellow)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white) | 0 (white) | Check box (checked)
+-> Running (yellow,bold) | 1 (yellow,bold) | Check box (checked)
+
+Progress bar set to fraction 1.0, text 'All 1 tests completed at 03Nov10:45:08'
+
+Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
+-> TargetApp (hello) (white,bold) | (white)
+->   Test (red) | output different (red)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white) | 0 (white) | Check box (checked)
+-> Running (white) | 0 (white) | Check box (checked)
+-> Failed (red,bold) | 1 (red,bold) | Check box (checked)
+->   Differences (red,bold) | 1 (red,bold) | Check box (checked)
+->     output different (red,bold) | 1 (red,bold) | Check box (checked)
+Only one test found, selecting Test
+
+No longer greyed out : Recompute Status, S_ave Selection..., Save _As..., _Mark, _Rerun, _Save
+
+Column titles changed in Test Tree with columns: Tests: All 1 selected, none hidden , Details
+
+Current page changed in Notebook with tabs: Test , Status , Run Info
+Viewing page 'Test'
+...........
+
+Showing File Tree with columns: Test , Details
+-> Comparison Files (bold)
+->   errors.hello (green) | (green)
+->   output.hello (red) | (red)
+
+------------------------------ (horizontal pane separator, 46% from the top)
+...........
+
+========== Text Info ==========
+Test FAILED :
+---------- Differences in output ----------
+1c1
+< Hello
+---
+> Hello World!
+===============================
+
+Expected application event 'completion of test actions' occurred, proceeding.
+
+'select file' event created with arguments 'output.hello'
+
+---------- Dialog 'TextTest Confirmation' ----------
+Focus widget is 'GtkTextView'
+Stock image 'gtk-dialog-warning' , ========== GtkTextView ==========
+You are trying to view a file of size 13 bytes, while a limit of 8.0 bytes is set for the tool 'tkdiff'. Are you sure you wish to continue?
+=================================
+---------------
+Button 'gtk-yes' (Stock image 'gtk-yes') , Button 'gtk-no' (Stock image 'gtk-no')
+----------------------------------------------------
+
+'answer yes to texttest confirmation' event created with arguments ''
+Starting graphical difference comparison using 'tkdiff':
+-- original file : /carm/proj/texttest-tmp/geoff/texttest.03Nov104459.4948/texttest/TestSelf/FileViewers/GUI/ViewFileAboveSizeLimit/texttesttmp/dynamic_gui.03Nov104506.4958/hello/Test/framework_tmp/output.helloorigcmp
+--  current file : /carm/proj/texttest-tmp/geoff/texttest.03Nov104459.4948/texttest/TestSelf/FileViewers/GUI/ViewFileAboveSizeLimit/texttesttmp/dynamic_gui.03Nov104506.4958/hello/Test/framework_tmp/output.hellocmp
+
+Waiting for application event 'the graphical diff program to terminate' to occur.
+
+Changing GUI status to: 'Started "tkdiff output.helloorigcmp output.hellocmp" in background (from test Test).'
+
+Expected application event 'the graphical diff program to terminate' occurred, proceeding.
+
+'view actions for file' event created with arguments 'output.hello'
+
+---------- Popup Window ----------
+'View File' (Stock image 'gtk-open', accelerator 'Ctrl+O')
+'View Filtered File'
+  ----
+'View Original File'
+'View Filtered Original File'
+  ----
+'View Differences'
+'View Raw Differences'
+  ----
+'Follow File Progress' (greyed out)
+  ----
+'File Properties' (Stock image 'gtk-properties')
+  ----
+'Save' (Stock image 'gtk-save', accelerator 'Ctrl+S')
+'Save As...' (Stock image 'gtk-save', accelerator 'Ctrl+Alt+S')
+----------------------------------
+
+'view file' event created with arguments ''
+
+---------- Dialog 'TextTest Confirmation' ----------
+Focus widget is 'GtkTextView'
+Stock image 'gtk-dialog-warning' , ========== GtkTextView ==========
+You are trying to view a file of size 13 bytes, while a limit of 2.0 bytes is set for the tool 'emacs'. Are you sure you wish to continue?
+=================================
+---------------
+Button 'gtk-yes' (Stock image 'gtk-yes') , Button 'gtk-no' (Stock image 'gtk-no')
+----------------------------------------------------
+
+'answer no to texttest confirmation' event created with arguments ''
+
+Changing GUI status to: 'Action cancelled.'
+
+'quit' event created with arguments ''
