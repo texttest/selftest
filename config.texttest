@@ -3,6 +3,8 @@
 # Path to the executable
 executable:${TEXTTEST_CHECKOUT}/bin/texttest.py
 
+extra_version:gui
+
 # Run-dependent smaller tests
 extra_version:rundep
 extra_version:fpdiff
@@ -14,6 +16,7 @@ extra_version:hg
 
 # Grid Engines!
 extra_version:sge
+extra_version:sge.gui
 extra_version:lsf
 
 # Need to load site-specific configuration in
@@ -280,6 +283,7 @@ remoteScript:texttesttmp/*/*/*/run_test.sh
 unsaveable_version:rundep
 unsaveable_version:fpdiff
 unsaveable_version:cover
+unsaveable_version:gui
 
 [definition_file_stems]
 regenerate:dynamic_usecase
