@@ -1,10 +1,8 @@
 # We run with command-line PyUseCase (no instrumentation assumed)
-interpreter:${TEXTTEST_CHECKOUT}/pyusecase/bin/pyusecase -l config -i gtk
+interpreter:pyusecase -l config -i gtk
 
 # Settings for creation of test cases
 use_case_record_mode:GUI
-
-import_config_file:site_configfile_for_gui
 
 [run_dependent_text]
 outputdyn2:process ID is{WORD -1}
