@@ -2,46 +2,16 @@ Enabling entry completion, using matching 1
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
 
----------- Window 'TextTest dynamic GUI : testing HELLO (started at 11Nov16:33:05)' ----------
+---------- Window 'TextTest dynamic GUI : testing HELLO (started at 16Nov16:07:13)' ----------
 Focus widget is 'Test Tree'
 
-Menu Bar :
-  'File' Menu :
-    'Save' (Stock image 'gtk-save', greyed out, accelerator 'Ctrl+S')
-    'Save As...' (Stock image 'gtk-save', greyed out, accelerator 'Ctrl+Alt+S')
-      ----
-    'Save Selection...' (Stock image 'gtk-save-as', greyed out, accelerator 'Ctrl+D')
-      ----
-    'Quit' (Stock image 'gtk-quit', accelerator 'Ctrl+Q')
-  'View' Menu :
-    'Set Run Name' (Stock image 'gtk-index')
-      ----
-    'Toolbar' (checked)
-    'Shortcut bar' (checked)
-    'Status bar' (checked)
-  'Actions' Menu :
-    'Kill' (Stock image 'gtk-stop', greyed out, accelerator 'Ctrl+Delete')
-    'Mark' (greyed out, accelerator 'Shift+Ctrl+M')
-    'Unmark' (greyed out, accelerator 'Shift+Ctrl+U')
-      ----
-    'Rerun' (Stock image 'gtk-execute', greyed out, accelerator 'Ctrl+R')
-    'Recompute Status' (Stock image 'gtk-refresh', greyed out, accelerator 'F5')
-  'Help' Menu :
-    'Quick Start'
-    'Migration Notes'
-    'Change Logs'
-      ----
-    'Component Versions'
-    'Credits'
-    'License'
-      ----
-    'About TextTest' (Stock image 'gtk-about')
+Menu Bar : 'File' (+) , 'View' (+) , 'Actions' (+) , 'Help' (+)
 
 Tool Bar :
   _Quit (Stock image 'gtk-quit', accelerator 'Ctrl+Q', tooltip 'Quit')
   _Kill (Stock image 'gtk-stop', greyed out, accelerator 'Ctrl+Delete', tooltip 'Kill selected tests')
   _Save (Stock image 'gtk-save', greyed out, accelerator 'Ctrl+S', tooltip 'Save results for selected tests')
-  Progress bar set to fraction 0.0, text 'All 0 tests completed at 11Nov16:33:06'
+  Progress bar set to fraction 0.0, text 'All 0 tests completed at 16Nov16:07:15'
 ...........
 
 Showing Test Tree with columns: Tests: All 0 selected , Details
@@ -55,7 +25,7 @@ Viewing page 'Status'
 Showing Test Status View with columns: Status , Number , Visible
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 11Nov16:33:06.' , Image 'throbber_inactive.png'
+'TextTest started at 16Nov16:07:15.' , Image 'throbber_inactive.png'
 ----------------------------------------------------------------------------------------------
 
 Progress bar set to fraction 0.0, text '0 of 1 tests completed'
@@ -291,7 +261,7 @@ Updated : Test Status View with columns: Status , Number , Visible
 ->     file2 different (red,bold) | 1 (red,bold) | Check box (checked)
 ->     file4 different (red,bold) | 1 (red,bold) | Check box (checked)
 
-Progress bar set to fraction 1.0, text 'All 5 tests completed at 11Nov16:33:09'
+Progress bar set to fraction 1.0, text 'All 5 tests completed at 16Nov16:07:22'
 
 Updated : Test Tree with columns: Tests: 0/5 selected, none hidden , Details
 -> TargetApp (hello) (white,bold) | (white)
@@ -321,7 +291,7 @@ Expected application event 'completion of test actions' occurred, proceeding.
 
 'set test selection to' event created with arguments 'simple_fail2,complex_fail1,complex_fail2'
 
-No longer greyed out : Recompute Status, S_ave Selection..., Save _As..., _Mark, _Rerun, _Save
+No longer greyed out : _Save
 
 Column titles changed in Test Tree with columns: Tests: 3/5 selected, none hidden , Details
 
@@ -347,23 +317,32 @@ Test FAILED :
 ---------- New result in errors ----------
 ===============================
 
+'show actions menu' event created with arguments ''
+
+---------- Popup Window ----------
+'Kill' (Stock image 'gtk-stop', greyed out, accelerator 'Ctrl+Delete')
+'Mark' (accelerator 'Shift+Ctrl+M')
+'Unmark' (greyed out, accelerator 'Shift+Ctrl+U')
+  ----
+'Rerun' (Stock image 'gtk-execute', accelerator 'Ctrl+R')
+'Recompute Status' (Stock image 'gtk-refresh', accelerator 'F5')
+----------------------------------
+
 'mark the selected tests' event created with arguments ''
 Adding entry completion 'Checked' ...
-Adding entry completion 'Checked at 11Nov16:33:05' ...
+Adding entry completion 'Checked at 16Nov16:07:14' ...
 
 ---------- Dialog 'Mark the selected tests' ----------
 Default widget is 'gtk-ok'
 'Brief text:'
 Text entry (set to 'Checked')
 'Free text:'
-Text entry (set to 'Checked at 11Nov16:33:05')
+Text entry (set to 'Checked at 16Nov16:07:14')
 ---------------
 Button 'gtk-ok' (Stock image 'gtk-ok') , Button 'gtk-cancel' (Stock image 'gtk-cancel')
 ------------------------------------------------------
 
 'press ok' event created with arguments ''
-
-No longer greyed out : _Unmark
 
 Updated : Test Tree with columns: Tests: 3/5 selected, none hidden , Details
 -> TargetApp (hello) (white,bold) | (white)
@@ -385,7 +364,7 @@ Updated : File Tree with columns: Sample from 3 tests , Details
 
 ========== Text Info ==========
 Test was marked by the user :
-Checked at 11Nov16:33:05
+Checked at 16Nov16:07:14
 
 ORIGINAL STATE:
 Test FAILED :
@@ -400,7 +379,7 @@ Updated : Test Tree with columns: Tests: 3/5 selected, none hidden , Details
 ->   complex_fail2 (red) | output different(+) (red)
 ->   suite (white,bold) | All 1 tests successful (green)
 
-Greyed out : Save _As..., _Save
+Greyed out : _Save
 
 Updated : Test Tree with columns: Tests: 3/5 selected, none hidden , Details
 -> TargetApp (hello) (white,bold) | (white)
@@ -428,7 +407,7 @@ Updated : File Tree with columns: complex__fail2 , Details
 
 ========== Text Info ==========
 Test was marked by the user :
-Checked at 11Nov16:33:05
+Checked at 16Nov16:07:14
 
 ORIGINAL STATE:
 Test FAILED :
@@ -461,8 +440,7 @@ Test FAILED :
 
 'unmark the selected tests' event created with arguments ''
 
-Greyed out : _Unmark
-No longer greyed out : Save _As..., _Save
+No longer greyed out : _Save
 
 Updated : Test Tree with columns: Tests: 1/5 selected, none hidden , Details
 -> TargetApp (hello) (white,bold) | (white)
@@ -538,8 +516,7 @@ Showing Test Status View with columns: Status , Number , Visible
 
 'set test selection to' event created with arguments 'simple_fail2,complex_fail1'
 
-Greyed out : Save _As..., _Save
-No longer greyed out : _Unmark
+Greyed out : _Save
 
 Column titles changed in Test Tree with columns: Tests: 2/5 selected, none hidden , Details
 
@@ -562,7 +539,7 @@ Showing File Tree with columns: Sample from 2 tests , Details
 
 ========== Text Info ==========
 Test was marked by the user :
-Checked at 11Nov16:33:05
+Checked at 16Nov16:07:14
 
 ORIGINAL STATE:
 Test FAILED :
@@ -571,7 +548,7 @@ Test FAILED :
 
 'unmark the selected tests' event created with arguments ''
 
-No longer greyed out : Save _As..., _Save
+No longer greyed out : _Save
 
 Updated : Test Tree with columns: Tests: 2/5 selected, none hidden , Details
 -> TargetApp (hello) (white,bold) | (white)
@@ -595,8 +572,6 @@ Updated : File Tree with columns: Sample from 2 tests , Details
 Test FAILED :
 ---------- New result in errors ----------
 ===============================
-
-Greyed out : _Unmark
 
 Updated : Test Tree with columns: Tests: 2/5 selected, none hidden , Details
 -> TargetApp (hello) (white,bold) | (white)
