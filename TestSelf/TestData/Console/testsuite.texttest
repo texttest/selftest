@@ -7,6 +7,9 @@ EditTestFile
 # Check we can refer to test data via environment variables
 CopyEnvironmentPath
 
+# Check we don't crash if referred variables aren't set
+CopyBadEnvironmentPath
+
 # Make sure we can get data from absolute paths, and that we don't destroy it with SGE
 AbsolutePathData
 
