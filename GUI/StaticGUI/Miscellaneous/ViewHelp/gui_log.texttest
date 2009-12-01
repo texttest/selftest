@@ -2,9 +2,9 @@ Enabling entry completion, using matching 1
 Adding entry completion '<default>' ...
 Adding entry completion 'localhost' ...
 Adding entry completion '1' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.16Nov161208.5447/texttest.gui/GUI/StaticGUI/Miscellaneous/ViewHelp/log/logging.debug' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.01Dec112031.15785/texttest.gui/GUI/StaticGUI/Miscellaneous/ViewHelp/log/logging.debug' ...
 Adding entry completion '/users/geoff/work/master/Testing/TextTest/log/logging.debug' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.16Nov161208.5447/texttest.gui/GUI/StaticGUI/Miscellaneous/ViewHelp/log' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.01Dec112031.15785/texttest.gui/GUI/StaticGUI/Miscellaneous/ViewHelp/log' ...
 Adding entry completion 'site' ...
 Adding entry completion 'personal' ...
 Adding entry completion 'all' ...
@@ -50,7 +50,7 @@ Radio button 'Discard' (checked) (tooltip 'Show all tests which match the criter
 Button 'Filter' (Stock image 'gtk-find', accelerator 'Ctrl+F', tooltip 'filter tests to show only those indicated')
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 16Nov16:12:16.' , Image 'throbber_inactive.png'
+'TextTest started at 01Dec11:20:36.' , Image 'throbber_inactive.png'
 --------------------------------------------------------------------------------
 
 Changing GUI status to: 'Reading tests ...'
@@ -96,7 +96,7 @@ Updated : Test Tree with columns: Tests: 0/11 selected
 ->       S01 (grey90)
 Edited 'Test-file to search' Text entry (set to 'output')
 
-Changing GUI status to: 'Reading tests completed at 16Nov16:12:16.'
+Changing GUI status to: 'Reading tests completed at 01Dec11:20:37.'
 
 Expected application event 'all tests to be read' occurred, proceeding.
 
@@ -298,6 +298,19 @@ See the website documentation of "collate_file" for full documentation of how th
 =========================================================
 CHANGES IN DEFAULT BEHAVIOUR (OR PROCEDURE)
 =========================================================
+
+(1) Default toolbar changed
+===========================
+"Remove Tests" and "Remove Files" are now separate actions, so it wasn't reckoned a good idea
+to keep "Remove" in the toolbar as it wasn't clear which it referred to. So "Refresh" now appears
+there and "Remove" needs to be done from the popup or top menus, or via the accelerator.
+Naturally you can configure this if you want, see the website on "Personalising the UI".
+
+(2) HTML batch report appearance changed
+========================================
+Most of the changes there will occur by default. For example, an "index.html" page will be
+generated at the top level providing an overview of the status. Rows or tables full of "N/A"
+will no longer be shown. There shouldn't be any surprises.
 =================================
 ---------------
 Button 'gtk-close' (Stock image 'gtk-close')
@@ -399,51 +412,16 @@ Changing GUI status to: ''
 ---------- Dialog 'TextTest Change Logs' ----------
 Default widget is 'gtk-close'
 
-Showing Notebook with tabs: trunk , 3.15 , 3.14.1 , 3.14 , 3.13 , 3.12.1 , 3.12 , 3.11.1 , 3.11 , 3.10 , 3.9.1 , 3.9 , 3.8 , 3.7.1 , 3.7 , 3.6 , 3.5.3 , 3.5.2 , 3.5.1 , 3.5 , 3.4 , 3.3 , 3.2 , 3.1.1 , 3.1 , 3.0 , 2.1 , 2.0 , 1.0 , 0.2 , 0.1
+Showing Notebook with tabs: trunk , 3.16 , 3.15 , 3.14.1 , 3.14 , 3.13 , 3.12.1 , 3.12 , 3.11.1 , 3.11 , 3.10 , 3.9.1 , 3.9 , 3.8 , 3.7.1 , 3.7 , 3.6 , 3.5.3 , 3.5.2 , 3.5.1 , 3.5 , 3.4 , 3.3 , 3.2 , 3.1.1 , 3.1 , 3.0 , 2.1 , 2.0 , 1.0 , 0.2 , 0.1
 Viewing page 'trunk'
 
 ========== GtkTextView ==========
-General GUI Enhancements:
 Static GUI Enhancements:
-    - Can now rename files from the drop-down list in the file view (adminactions.py)
-    - "Refresh" replaces "Remove Tests" in the default toolbar, mostly for aesthetic reasons (default_gui-static.xml)
-	Toolbar contents can be configured/put back, see "personalising the UI" on the website
-    - Error handling on initial "Add Application" dialog improved (adminactions.py)
-	Reject illegal characters in suffix and subdirectory names
-Dynamic GUI Enhancements:
 Framework Enhancements:
-    - Now integrates with Atlassian's Jira bugtracking system as well as Bugzilla (jira.py)
-	Works in broadly the same way as the bugzilla integration. See website for details.
-    - "collate_file" functionality for multiple files rewritten (sandbox.py)
-	Patterns of the form "data*:data*.dump" should behave more intuitively, but may not be completely back-compatible.
-	Read the migration notes and the website for details.
-    - "suppress_stderr_text" now supports the same syntax as "run_dependent_text" (default/__init__.py)
-	Allows e.g. multiline filtering
-    - "text_diff_program_max_file_size" setting now renamed to "max_file_size" and is now a dictionary (comparefile.py)
-	Keys are names of programs. Also get a warning dialog if you try to open a too-large file from the GUI.
-Historical HTML Batch Report Enhancements:
-    - Can now create separate report tables containing (e.g.) performance or memory information. (testoverview.py)
-	Use -coll web.performance: see website for details.
-    - Rows or tables containing only "N/A" will no longer be shown (testoverview.py)
-    - If source files are empty, it points this out and suggests the disk may be full (testoverview.py)
-    - Cells now have tooltips indicating which test and date they are, to avoid scrolling large tables (testoverview.py)
+Batch Report Enhancements:
 Grid Engine (LSF/SGE) enhancements:
-    - Grid Engine command line now appears in the "Run Info" tab of the dynamic GUI. (textinfo.py)
 Self-test/Internal changes:
-    - PyUseCase instrumentation removed, use PyUseCase 3.0 which doesn't need this. 
-	Uses UI map files (under etc) instead.
-    - Now automatically pick up a local PyUseCase repository called "pyusecase" (texttest.py)
 Bug Fixes:
-    - Accelerators for "Cut Test", "Copy Test" and "Paste Test" are disabled when a text widget is focussed (adminactions.py)
-	Means you can use Ctrl+X, Ctrl+V, Ctrl+C for text in TextTest windows.
-    - Newly created applications now work without restarting if version control is enabled (controller.py)
-    - Worked around a Mercurial bug renaming files with symbolic links in the name (hg.py)
-    - "copy_test_path:$ENV_VAR" will now do nothing if ENV_VAR is empty (sandbox.py)
-	Previously set it to $TEXTTEST_SANDBOX/. which could cause problems.
-    - If a "collate_script" produces an empty file from non-empty input, don't write an empty file (sandbox.py)
-    - Don't stacktrace if a "collate_script" doesn't exist (sandbox.py)
-    - Don't stacktrace if the argument to "-cp" (or Times to Run) is invalid (default/__init__.py)
-Grid Engine (LSF/SGE) Bug Fixes:
 =================================
 ---------------
 Button 'gtk-close' (Stock image 'gtk-close')
@@ -451,7 +429,7 @@ Button 'gtk-close' (Stock image 'gtk-close')
 
 'view tab' event created with arguments '3.7.1'
 
-Current page changed in Notebook with tabs: trunk , 3.15 , 3.14.1 , 3.14 , 3.13 , 3.12.1 , 3.12 , 3.11.1 , 3.11 , 3.10 , 3.9.1 , 3.9 , 3.8 , 3.7.1 , 3.7 , 3.6 , 3.5.3 , 3.5.2 , 3.5.1 , 3.5 , 3.4 , 3.3 , 3.2 , 3.1.1 , 3.1 , 3.0 , 2.1 , 2.0 , 1.0 , 0.2 , 0.1
+Current page changed in Notebook with tabs: trunk , 3.16 , 3.15 , 3.14.1 , 3.14 , 3.13 , 3.12.1 , 3.12 , 3.11.1 , 3.11 , 3.10 , 3.9.1 , 3.9 , 3.8 , 3.7.1 , 3.7 , 3.6 , 3.5.3 , 3.5.2 , 3.5.1 , 3.5 , 3.4 , 3.3 , 3.2 , 3.1.1 , 3.1 , 3.0 , 2.1 , 2.0 , 1.0 , 0.2 , 0.1
 Viewing page '3.7.1'
 
 ========== GtkTextView ==========
