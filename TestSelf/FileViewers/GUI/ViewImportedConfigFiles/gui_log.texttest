@@ -2,9 +2,9 @@ Enabling entry completion, using matching 1
 Adding entry completion '<default>' ...
 Adding entry completion 'localhost' ...
 Adding entry completion '1' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.16Nov161821.6062/texttest.gui/TestSelf/FileViewers/GUI/ViewImportedConfigFiles/log/logging.debug' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.01Dec104842.14031/texttest.gui/TestSelf/FileViewers/GUI/ViewImportedConfigFiles/log/logging.debug' ...
 Adding entry completion '/users/geoff/work/master/Testing/TextTest/log/logging.debug' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.16Nov161821.6062/texttest.gui/TestSelf/FileViewers/GUI/ViewImportedConfigFiles/log' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.01Dec104842.14031/texttest.gui/TestSelf/FileViewers/GUI/ViewImportedConfigFiles/log' ...
 Adding entry completion 'site' ...
 Adding entry completion 'personal' ...
 Adding entry completion 'all' ...
@@ -50,7 +50,7 @@ Radio button 'Discard' (checked) (tooltip 'Show all tests which match the criter
 Button 'Filter' (Stock image 'gtk-find', accelerator 'Ctrl+F', tooltip 'filter tests to show only those indicated')
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 16Nov16:18:42.' , Image 'throbber_inactive.png'
+'TextTest started at 01Dec10:48:49.' , Image 'throbber_inactive.png'
 -----------------------------------------------------------------------------------------
 
 Changing GUI status to: 'Reading tests ...'
@@ -67,7 +67,7 @@ Updated : Test Tree with columns: Tests: All 0 selected
 -> hello2 (grey90,bold)
 Edited 'Test-file to search' Text entry (set to 'output')
 
-Changing GUI status to: 'Reading tests completed at 16Nov16:18:42.'
+Changing GUI status to: 'Reading tests completed at 01Dec10:48:49.'
 
 Expected application event 'all tests to be read' occurred, proceeding.
 
@@ -79,6 +79,7 @@ Viewing page 'Config'
 Showing Application File Tree with columns: Configuration Files
 -> Files for HELLO (white,bold)
 ->   config.hello (grey90)
+->   config.hello.version (grey90)
 -> Files for HELLO2 (white,bold)
 ->   config.hello2 (grey90)
 -> Imported Files (bold)
@@ -86,11 +87,20 @@ Showing Application File Tree with columns: Configuration Files
 
 'select application file' event created with arguments 'shared'
 Adding entry completion 'output' ...
-Viewing file /carm/proj/texttest-tmp/geoff/texttest.16Nov161821.6062/texttest.gui/TestSelf/FileViewers/GUI/ViewImportedConfigFiles/TargetApp/shared using 'emacs', refresh set to True
+Viewing file /carm/proj/texttest-tmp/geoff/texttest.01Dec104842.14031/texttest.gui/TestSelf/FileViewers/GUI/ViewImportedConfigFiles/TargetApp/extradir/shared using 'emacs', refresh set to True
 
 Waiting for application event 'file editing operations to complete' to occur.
 
 Changing GUI status to: 'Started "emacs shared" in background.'
+
+Expected application event 'file editing operations to complete' occurred, proceeding.
+
+'select application file' event created with arguments 'config.hello.version'
+Viewing file /carm/proj/texttest-tmp/geoff/texttest.01Dec104842.14031/texttest.gui/TestSelf/FileViewers/GUI/ViewImportedConfigFiles/TargetApp/extradir/config.hello.version using 'emacs', refresh set to True
+
+Waiting for application event 'file editing operations to complete' to occur.
+
+Changing GUI status to: 'Started "emacs config.hello.version" in background.'
 
 Expected application event 'file editing operations to complete' occurred, proceeding.
 
