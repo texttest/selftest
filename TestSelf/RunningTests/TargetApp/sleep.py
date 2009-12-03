@@ -9,5 +9,5 @@ if os.name == "posix":
 
 print "Sleeping for 1000 seconds..."
 sys.stdout.flush()
-time.sleep(1000) # Until we get killed, basically
+time.sleep(int(os.getenv("SLEEP_TIME", 1000))) # Until we get killed, basically
 print "Done"
