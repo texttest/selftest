@@ -1,8 +1,11 @@
 Enabling entry completion, using matching 1
+Adding entry completion '<default>' ...
+Adding entry completion '10.2' ...
+Adding entry completion '10.4' ...
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
 
----------- Window 'TextTest dynamic GUI : testing HELLO,HELLO.10.2,HELLO.10.4 (started at 16Nov16:18:39)' ----------
+---------- Window 'TextTest dynamic GUI : testing HELLO,HELLO.10.2,HELLO.10.4 (started at 14Dec13:29:12)' ----------
 Focus widget is 'Test Tree'
 
 Menu Bar : 'File' (+) , 'View' (+) , 'Actions' (+) , 'Help' (+)
@@ -11,7 +14,7 @@ Tool Bar :
   _Quit (Stock image 'gtk-quit', accelerator 'Ctrl+Q', tooltip 'Quit')
   _Kill (Stock image 'gtk-stop', greyed out, accelerator 'Ctrl+Delete', tooltip 'Kill selected tests')
   _Save (Stock image 'gtk-save', greyed out, accelerator 'Ctrl+S', tooltip 'Save results for selected tests')
-  Progress bar set to fraction 0.0, text 'All 0 tests completed at 16Nov16:18:40'
+  Progress bar set to fraction 0.0, text 'All 0 tests completed at 14Dec13:29:13'
 ...........
 
 Showing Test Tree with columns: Tests: All 0 selected , Details
@@ -19,13 +22,13 @@ Showing Test Tree with columns: Tests: All 0 selected , Details
 ------------------------------ (vertical pane separator, 68% from the left edge)
 ...........
 
-Showing Notebook with tabs: Status , Run Info
+Showing Notebook with tabs: Status , Selection , Run Info
 Viewing page 'Status'
 
 Showing Test Status View with columns: Status , Number , Visible
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 16Nov16:18:40.' , Image 'throbber_inactive.png'
+'TextTest started at 14Dec13:29:13.' , Image 'throbber_inactive.png'
 ----------------------------------------------------------------------------------------------------
 
 Progress bar set to fraction 0.0, text '0 of 1 tests completed'
@@ -141,7 +144,7 @@ Updated : Test Status View with columns: Status , Number , Visible
 ->     output different (red,bold) | 2 (red,bold) | Check box (checked)
 ->       Group 1 (red,bold) | 2 (red,bold) | Check box (checked)
 
-Progress bar set to fraction 1.0, text 'All 3 tests completed at 16Nov16:18:41'
+Progress bar set to fraction 1.0, text 'All 3 tests completed at 14Dec13:29:15'
 
 Updated : Test Tree with columns: Tests: 0/3 selected, none hidden , Details
 -> TargetApp (hello) (white,bold) | (white)
@@ -167,7 +170,7 @@ No longer greyed out : _Save
 
 Column titles changed in Test Tree with columns: Tests: 1/3 selected, none hidden , Details
 
-Current page changed in Notebook with tabs: Test , Status , Run Info
+Current page changed in Notebook with tabs: Test , Status , Selection , Run Info
 Viewing page 'Test'
 ...........
 
@@ -187,7 +190,6 @@ Test FAILED :
 ===============================
 
 'save results with non-default settings' event created with arguments ''
-Adding entry completion '10.2' ...
 Adding entry completion '10' ...
 Adding entry completion '2' ...
 
@@ -208,6 +210,7 @@ Edited 'Version to save' Text entry (set to '10')
 'press ok' event created with arguments ''
 
 Changing GUI status to: 'Saving HELLO.10.2 test-case OutDiff : output, version 10'
+Adding entry completion 'output' ...
 
 Greyed out : _Save
 
@@ -218,7 +221,7 @@ Updated : Test Tree with columns: Tests: 0/3 selected, none hidden , Details
 -> TargetApp (hello.10.4) (white,bold) | (white)
 ->   OutDiff (red) | output different (red)
 
-Current page changed in Notebook with tabs: Status , Run Info
+Current page changed in Notebook with tabs: Status , Selection , Run Info
 Viewing page 'Status'
 
 Showing Test Status View with columns: Status , Number , Visible
@@ -239,7 +242,7 @@ No longer greyed out : _Save
 
 Column titles changed in Test Tree with columns: Tests: 1/3 selected, none hidden , Details
 
-Current page changed in Notebook with tabs: Test , Status , Run Info
+Current page changed in Notebook with tabs: Test , Status , Selection , Run Info
 Viewing page 'Test'
 ...........
 
@@ -283,7 +286,7 @@ Updated : Test Tree with columns: Tests: 0/3 selected, none hidden , Details
 -> TargetApp (hello.10.4) (white,bold) | (white)
 ->   OutDiff (red) | output different (red) | Stock image 'gtk-refresh'
 
-Current page changed in Notebook with tabs: Status , Run Info
+Current page changed in Notebook with tabs: Status , Selection , Run Info
 Viewing page 'Status'
 
 Showing Test Status View with columns: Status , Number , Visible
@@ -304,7 +307,7 @@ No longer greyed out : _Save
 
 Column titles changed in Test Tree with columns: Tests: 1/3 selected, none hidden , Details
 
-Current page changed in Notebook with tabs: Test , Status , Run Info
+Current page changed in Notebook with tabs: Test , Status , Selection , Run Info
 Viewing page 'Test'
 ...........
 
@@ -324,7 +327,6 @@ Test FAILED :
 ===============================
 
 'recompute test status, including progress information if appropriate' event created with arguments ''
-Adding entry completion '10.4' ...
 
 Changing GUI status to: 'Rereading configuration for HELLO.10.4 ...'
 
@@ -337,7 +339,7 @@ Updated : Test Tree with columns: Tests: 0/3 selected, none hidden , Details
 -> TargetApp (hello.10.2) (white,bold) | All 1 tests successful (green)
 -> TargetApp (hello.10.4) (white,bold) | All 1 tests successful (green)
 
-Current page changed in Notebook with tabs: Status , Run Info
+Current page changed in Notebook with tabs: Status , Selection , Run Info
 Viewing page 'Status'
 
 Showing Test Status View with columns: Status , Number , Visible
@@ -364,7 +366,7 @@ Expanded row in Test Tree with columns: Tests: 0/3 selected, none hidden , Detai
 
 Column titles changed in Test Tree with columns: Tests: 1/3 selected, none hidden , Details
 
-Current page changed in Notebook with tabs: Test , Status , Run Info
+Current page changed in Notebook with tabs: Test , Status , Selection , Run Info
 Viewing page 'Test'
 ...........
 
@@ -384,8 +386,8 @@ Test succeeded
 
 'view raw differences' event created with arguments ''
 Starting graphical difference comparison using 'tkdiff':
--- original file : /carm/proj/texttest-tmp/geoff/texttest.16Nov161821.6062/texttest.gui/TestSelf/ChangeTestResults/GUI/RecomputeStatus/SaveVersionNewFiles/TargetApp/OutDiff/output.hello.10
---  current file : /carm/proj/texttest-tmp/geoff/texttest.16Nov161821.6062/texttest.gui/TestSelf/ChangeTestResults/GUI/RecomputeStatus/SaveVersionNewFiles/texttesttmp/console.++10.2++10.4.16Nov161839.3248/hello.10.4/OutDiff/output.hello
+-- original file : /carm/proj/texttest-tmp/geoff/texttest.14Dec132853.32072/texttest.gui/TestSelf/ChangeTestResults/GUI/RecomputeStatus/SaveVersionNewFiles/TargetApp/OutDiff/output.hello.10
+--  current file : /carm/proj/texttest-tmp/geoff/texttest.14Dec132853.32072/texttest.gui/TestSelf/ChangeTestResults/GUI/RecomputeStatus/SaveVersionNewFiles/texttesttmp/console.++10.2++10.4.14Dec132912.22777/hello.10.4/OutDiff/output.hello
 
 Waiting for application event 'the graphical diff program to terminate' to occur.
 
