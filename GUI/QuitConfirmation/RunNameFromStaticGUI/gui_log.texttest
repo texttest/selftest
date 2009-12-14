@@ -2,9 +2,9 @@ Enabling entry completion, using matching 1
 Adding entry completion '<default>' ...
 Adding entry completion 'localhost' ...
 Adding entry completion '1' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.10Dec165112.8913/texttest.gui/GUI/QuitConfirmation/RunNameFromStaticGUI/log/logging.debug' ...
-Adding entry completion '/users/geoff/work/master/Testing/TextTest/log/logging.debug' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.10Dec165112.8913/texttest.gui/GUI/QuitConfirmation/RunNameFromStaticGUI/log' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.14Dec111512.27792/texttest.gui/GUI/QuitConfirmation/RunNameFromStaticGUI/log/logging.debug' ...
+Adding entry completion '/carm/proj/texttest/geoff/reserve/Testing/TextTest/log/logging.debug' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.14Dec111512.27792/texttest.gui/GUI/QuitConfirmation/RunNameFromStaticGUI/log' ...
 Adding entry completion 'My favourite run, ever!' ...
 Adding entry completion 'site' ...
 Adding entry completion 'personal' ...
@@ -20,7 +20,7 @@ Menu Bar : 'File' (+) , 'Edit' (+) , 'View' (+) , 'Actions' (+) , 'Help' (+)
 Tool Bar :
   _Quit (Stock image 'gtk-quit', accelerator 'Ctrl+Q', tooltip 'Quit')
     ----
-  _Select (Stock image 'gtk-find', accelerator 'Ctrl+S', tooltip 'Select indicated tests')
+  _Select (Stock image 'gtk-find', accelerator 'Ctrl+Alt+F', tooltip 'Select indicated tests')
   Refresh (Stock image 'gtk-refresh', accelerator 'F5', tooltip 'Refresh the whole test suite so that it reflects file changes')
   _Run (Stock image 'gtk-execute', greyed out, accelerator 'Ctrl+R', tooltip 'Run selected tests')
 ...........
@@ -45,13 +45,13 @@ Viewing table with 9 rows and 2 columns.
 .....Selection......
 Check button 'Select in collapsed suites' (tooltip 'Select in currently collapsed suites as well?')
 Radio button 'Discard' (checked) (tooltip 'Unselect all currently selected tests before applying the new selection criteria.') , Radio button 'Refine' (tooltip 'Apply the new selection criteria only to the currently selected tests, to obtain a subselection.') , Radio button 'Extend' (tooltip 'Keep the currently selected tests even if they do not match the new criteria, and extend the selection with all other tests which meet the new criteria.') , Radio button 'Exclude' (tooltip 'After applying the new selection criteria to all tests, unselect the currently selected tests, to exclude them from the new selection.')
-Button '_Select' (Stock image 'gtk-find', accelerator 'Ctrl+S', tooltip 'Select indicated tests')
+Button '_Select' (Stock image 'gtk-find', accelerator 'Ctrl+Alt+F', tooltip 'Select indicated tests')
 .....Filtering......
 Radio button 'Discard' (checked) (tooltip 'Show all tests which match the criteria, and hide all those that do not.') , Radio button 'Refine' (tooltip 'Hide all tests which do not match the criteria. Do not show any tests that aren't already shown.') , Radio button 'Extend' (tooltip 'Show all tests which match the criteria. Do not hide any tests that are currently shown.')
 Button 'Filter' (Stock image 'gtk-find', accelerator 'Ctrl+F', tooltip 'filter tests to show only those indicated')
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 10Dec16:52:29.' , Image 'throbber_inactive.png'
+'TextTest started at 14Dec11:16:05.' , Image 'throbber_inactive.png'
 ----------------------------------------------------------------------------------
 
 Changing GUI status to: 'Reading tests ...'
@@ -64,7 +64,7 @@ Updated : Test Tree with columns: Tests: 0/1 selected
 ->   Test (grey90)
 Edited 'Test-file to search' Text entry (set to 'output')
 
-Changing GUI status to: 'Reading tests completed at 10Dec16:52:31.'
+Changing GUI status to: 'Reading tests completed at 14Dec11:16:06.'
 
 Expected application event 'all tests to be read' occurred, proceeding.
 
@@ -112,8 +112,8 @@ Button '_Run' (Stock image 'gtk-execute', accelerator 'Ctrl+R', tooltip 'Run sel
 Current page changed in Notebook with tabs: Basic , Advanced
 Viewing page 'Advanced'
 Viewing table with 5 rows and 2 columns.
-'Configure self-diagnostics from  ' | Text entry (set to '/carm/proj/texttest-tmp/geoff/texttest.10Dec165112.8913/texttest.gui/GUI/QuitConfirmation/RunNameFromStaticGUI/log/logging.debug') (drop-down list containing ['/carm/proj/texttest-tmp/geoff/texttest.10Dec165112.8913/texttest.gui/GUI/QuitConfirmation/RunNameFromStaticGUI/log/logging.debug', '/users/geoff/work/master/Testing/TextTest/log/logging.debug'])
-'Write self-diagnostics to  ' | Text entry (set to '/carm/proj/texttest-tmp/geoff/texttest.10Dec165112.8913/texttest.gui/GUI/QuitConfirmation/RunNameFromStaticGUI/log')
+'Configure self-diagnostics from  ' | Text entry (set to '/carm/proj/texttest-tmp/geoff/texttest.14Dec111512.27792/texttest.gui/GUI/QuitConfirmation/RunNameFromStaticGUI/log/logging.debug') (drop-down list containing ['/carm/proj/texttest-tmp/geoff/texttest.14Dec111512.27792/texttest.gui/GUI/QuitConfirmation/RunNameFromStaticGUI/log/logging.debug', '/carm/proj/texttest/geoff/reserve/Testing/TextTest/log/logging.debug'])
+'Write self-diagnostics to  ' | Text entry (set to '/carm/proj/texttest-tmp/geoff/texttest.14Dec111512.27792/texttest.gui/GUI/QuitConfirmation/RunNameFromStaticGUI/log')
 'Run batch mode session  ' | Text entry
 'Name this run  ' | Text entry (set to 'My favourite run, ever!')
 'Ignore configuration files  ' | Text entry (set to 'site') (drop-down list containing ['', 'site', 'personal', 'all'])
@@ -125,11 +125,11 @@ Button '_Run' (Stock image 'gtk-execute', accelerator 'Ctrl+R', tooltip 'Run sel
 
 'run selected tests' event created with arguments ''
 Adding entry completion 'output' ...
-Starting dynamic run of TextTest with arguments ['-g', '-a', 'hello', '-m', 'localhost', '-cp', '1', '-xr', '/carm/proj/texttest-tmp/geoff/texttest.10Dec165112.8913/texttest.gui/GUI/QuitConfirmation/RunNameFromStaticGUI/log/logging.debug', '-xw', '/carm/proj/texttest-tmp/geoff/texttest.10Dec165112.8913/texttest.gui/GUI/QuitConfirmation/RunNameFromStaticGUI/log', '-name', 'My favourite run, ever!', '-vanilla', 'site', '-count', '1', '-f', '/carm/proj/texttest-tmp/geoff/texttest.10Dec165112.8913/texttest.gui/GUI/QuitConfirmation/RunNameFromStaticGUI/texttesttmp/static_gui.10Dec165226.22194/dynamic_run1/gui_select', '-fd', '/carm/proj/texttest-tmp/geoff/texttest.10Dec165112.8913/texttest.gui/GUI/QuitConfirmation/RunNameFromStaticGUI/texttesttmp/static_gui.10Dec165226.22194/temporary_filter_files']
+Starting dynamic run of TextTest with arguments ['-g', '-a', 'hello', '-m', 'localhost', '-cp', '1', '-xr', '/carm/proj/texttest-tmp/geoff/texttest.14Dec111512.27792/texttest.gui/GUI/QuitConfirmation/RunNameFromStaticGUI/log/logging.debug', '-xw', '/carm/proj/texttest-tmp/geoff/texttest.14Dec111512.27792/texttest.gui/GUI/QuitConfirmation/RunNameFromStaticGUI/log', '-name', 'My favourite run, ever!', '-vanilla', 'site', '-count', '1', '-f', '/carm/proj/texttest-tmp/geoff/texttest.14Dec111512.27792/texttest.gui/GUI/QuitConfirmation/RunNameFromStaticGUI/texttesttmp/static_gui.14Dec111604.21106/dynamic_run1/gui_select', '-fd', '/carm/proj/texttest-tmp/geoff/texttest.14Dec111512.27792/texttest.gui/GUI/QuitConfirmation/RunNameFromStaticGUI/texttesttmp/static_gui.14Dec111604.21106/temporary_filter_files']
 
 Waiting for application event 'dynamic GUI to be closed' to occur.
 
-Changing GUI status to: 'Started HELLO test-case Test at 10Dec16:52:31.'
+Changing GUI status to: 'Started HELLO test-case Test at 14Dec11:16:06.'
 
 Expected application event 'dynamic GUI to be closed' occurred, proceeding.
 

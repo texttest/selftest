@@ -2,9 +2,9 @@ Enabling entry completion, using matching 1
 Adding entry completion '<default>' ...
 Adding entry completion 'localhost' ...
 Adding entry completion '1' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.10Dec165112.8913/texttest.gui/TestSelf/ChangeTestResults/GUI/SaveMissingVersioned/log/logging.debug' ...
-Adding entry completion '/users/geoff/work/master/Testing/TextTest/log/logging.debug' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.10Dec165112.8913/texttest.gui/TestSelf/ChangeTestResults/GUI/SaveMissingVersioned/log' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.14Dec111512.27792/texttest.gui/TestSelf/ChangeTestResults/GUI/SaveMissingVersioned/log/logging.debug' ...
+Adding entry completion '/carm/proj/texttest/geoff/reserve/Testing/TextTest/log/logging.debug' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.14Dec111512.27792/texttest.gui/TestSelf/ChangeTestResults/GUI/SaveMissingVersioned/log' ...
 Adding entry completion 'site' ...
 Adding entry completion 'personal' ...
 Adding entry completion 'all' ...
@@ -19,7 +19,7 @@ Menu Bar : 'File' (+) , 'Edit' (+) , 'View' (+) , 'Actions' (+) , 'Help' (+)
 Tool Bar :
   _Quit (Stock image 'gtk-quit', accelerator 'Ctrl+Q', tooltip 'Quit')
     ----
-  _Select (Stock image 'gtk-find', accelerator 'Ctrl+S', tooltip 'Select indicated tests')
+  _Select (Stock image 'gtk-find', accelerator 'Ctrl+Alt+F', tooltip 'Select indicated tests')
   Refresh (Stock image 'gtk-refresh', accelerator 'F5', tooltip 'Refresh the whole test suite so that it reflects file changes')
   _Run (Stock image 'gtk-execute', greyed out, accelerator 'Ctrl+R', tooltip 'Run selected tests')
 ...........
@@ -44,13 +44,13 @@ Viewing table with 9 rows and 2 columns.
 .....Selection......
 Check button 'Select in collapsed suites' (tooltip 'Select in currently collapsed suites as well?')
 Radio button 'Discard' (checked) (tooltip 'Unselect all currently selected tests before applying the new selection criteria.') , Radio button 'Refine' (tooltip 'Apply the new selection criteria only to the currently selected tests, to obtain a subselection.') , Radio button 'Extend' (tooltip 'Keep the currently selected tests even if they do not match the new criteria, and extend the selection with all other tests which meet the new criteria.') , Radio button 'Exclude' (tooltip 'After applying the new selection criteria to all tests, unselect the currently selected tests, to exclude them from the new selection.')
-Button '_Select' (Stock image 'gtk-find', accelerator 'Ctrl+S', tooltip 'Select indicated tests')
+Button '_Select' (Stock image 'gtk-find', accelerator 'Ctrl+Alt+F', tooltip 'Select indicated tests')
 .....Filtering......
 Radio button 'Discard' (checked) (tooltip 'Show all tests which match the criteria, and hide all those that do not.') , Radio button 'Refine' (tooltip 'Hide all tests which do not match the criteria. Do not show any tests that aren't already shown.') , Radio button 'Extend' (tooltip 'Show all tests which match the criteria. Do not hide any tests that are currently shown.')
 Button 'Filter' (Stock image 'gtk-find', accelerator 'Ctrl+F', tooltip 'filter tests to show only those indicated')
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 10Dec16:51:57.' , Image 'throbber_inactive.png'
+'TextTest started at 14Dec11:17:08.' , Image 'throbber_inactive.png'
 ----------------------------------------------------------------------------------
 
 Changing GUI status to: 'Reading tests ...'
@@ -72,7 +72,7 @@ Updated : Test Tree with columns: Tests: 0/4 selected
 ->   ErrDiff (grey90)
 Edited 'Test-file to search' Text entry (set to 'output')
 
-Changing GUI status to: 'Reading tests completed at 10Dec16:51:57.'
+Changing GUI status to: 'Reading tests completed at 14Dec11:17:10.'
 
 Expected application event 'all tests to be read' occurred, proceeding.
 
@@ -123,8 +123,8 @@ Edited 'Run this version' Text entry (set to '2')
 Current page changed in Notebook with tabs: Basic , Advanced
 Viewing page 'Advanced'
 Viewing table with 5 rows and 2 columns.
-'Configure self-diagnostics from  ' | Text entry (set to '/carm/proj/texttest-tmp/geoff/texttest.10Dec165112.8913/texttest.gui/TestSelf/ChangeTestResults/GUI/SaveMissingVersioned/log/logging.debug') (drop-down list containing ['/carm/proj/texttest-tmp/geoff/texttest.10Dec165112.8913/texttest.gui/TestSelf/ChangeTestResults/GUI/SaveMissingVersioned/log/logging.debug', '/users/geoff/work/master/Testing/TextTest/log/logging.debug'])
-'Write self-diagnostics to  ' | Text entry (set to '/carm/proj/texttest-tmp/geoff/texttest.10Dec165112.8913/texttest.gui/TestSelf/ChangeTestResults/GUI/SaveMissingVersioned/log')
+'Configure self-diagnostics from  ' | Text entry (set to '/carm/proj/texttest-tmp/geoff/texttest.14Dec111512.27792/texttest.gui/TestSelf/ChangeTestResults/GUI/SaveMissingVersioned/log/logging.debug') (drop-down list containing ['/carm/proj/texttest-tmp/geoff/texttest.14Dec111512.27792/texttest.gui/TestSelf/ChangeTestResults/GUI/SaveMissingVersioned/log/logging.debug', '/carm/proj/texttest/geoff/reserve/Testing/TextTest/log/logging.debug'])
+'Write self-diagnostics to  ' | Text entry (set to '/carm/proj/texttest-tmp/geoff/texttest.14Dec111512.27792/texttest.gui/TestSelf/ChangeTestResults/GUI/SaveMissingVersioned/log')
 'Run batch mode session  ' | Text entry
 'Name this run  ' | Text entry
 'Ignore configuration files  ' | Text entry (set to 'site') (drop-down list containing ['', 'site', 'personal', 'all'])
@@ -140,11 +140,11 @@ Toggled Check button 'Keep temporary write-directories' (checked)
 'run selected tests' event created with arguments ''
 Adding entry completion 'output' ...
 Adding entry completion '2' ...
-Starting dynamic run of TextTest with arguments ['-g', '-a', 'hello', '-v', '2', '-m', 'localhost', '-cp', '1', '-xr', '/carm/proj/texttest-tmp/geoff/texttest.10Dec165112.8913/texttest.gui/TestSelf/ChangeTestResults/GUI/SaveMissingVersioned/log/logging.debug', '-xw', '/carm/proj/texttest-tmp/geoff/texttest.10Dec165112.8913/texttest.gui/TestSelf/ChangeTestResults/GUI/SaveMissingVersioned/log', '-keeptmp', '-vanilla', 'site', '-count', '1', '-f', '/carm/proj/texttest-tmp/geoff/texttest.10Dec165112.8913/texttest.gui/TestSelf/ChangeTestResults/GUI/SaveMissingVersioned/texttesttmp/static_gui.10Dec165156.7769/dynamic_run1/gui_select', '-fd', '/carm/proj/texttest-tmp/geoff/texttest.10Dec165112.8913/texttest.gui/TestSelf/ChangeTestResults/GUI/SaveMissingVersioned/texttesttmp/static_gui.10Dec165156.7769/temporary_filter_files']
+Starting dynamic run of TextTest with arguments ['-g', '-a', 'hello', '-v', '2', '-m', 'localhost', '-cp', '1', '-xr', '/carm/proj/texttest-tmp/geoff/texttest.14Dec111512.27792/texttest.gui/TestSelf/ChangeTestResults/GUI/SaveMissingVersioned/log/logging.debug', '-xw', '/carm/proj/texttest-tmp/geoff/texttest.14Dec111512.27792/texttest.gui/TestSelf/ChangeTestResults/GUI/SaveMissingVersioned/log', '-keeptmp', '-vanilla', 'site', '-count', '1', '-f', '/carm/proj/texttest-tmp/geoff/texttest.14Dec111512.27792/texttest.gui/TestSelf/ChangeTestResults/GUI/SaveMissingVersioned/texttesttmp/static_gui.14Dec111706.28336/dynamic_run1/gui_select', '-fd', '/carm/proj/texttest-tmp/geoff/texttest.14Dec111512.27792/texttest.gui/TestSelf/ChangeTestResults/GUI/SaveMissingVersioned/texttesttmp/static_gui.14Dec111706.28336/temporary_filter_files']
 
 Waiting for application event 'dynamic GUI to be closed' to occur.
 
-Changing GUI status to: 'Started HELLO test-case BothDiff at 10Dec16:51:57.'
+Changing GUI status to: 'Started HELLO test-case BothDiff at 14Dec11:17:11.'
 
 Expected application event 'dynamic GUI to be closed' occurred, proceeding.
 
@@ -156,9 +156,9 @@ Default widget is 'gtk-ok'
 Text entry
 .....Temporary result directory:......
 
-Showing File Chooser for 'Reconnect to previously run tests' (selected '/carm/proj/texttest-tmp/geoff/texttest.10Dec165112.8913/texttest.gui/TestSelf/ChangeTestResults/GUI/SaveMissingVersioned/texttesttmp')
+Showing File Chooser for 'Reconnect to previously run tests' (selected '/carm/proj/texttest-tmp/geoff/texttest.14Dec111512.27792/texttest.gui/TestSelf/ChangeTestResults/GUI/SaveMissingVersioned/texttesttmp')
 Shortcut folders (1) :
-- /carm/proj/texttest-tmp/geoff/texttest.10Dec165112.8913/texttest.gui/TestSelf/ChangeTestResults/GUI/SaveMissingVersioned/texttesttmp
+- /carm/proj/texttest-tmp/geoff/texttest.14Dec111512.27792/texttest.gui/TestSelf/ChangeTestResults/GUI/SaveMissingVersioned/texttesttmp
 .....Recomputation......
 Radio button 'Display results exactly as they were in the original run' (checked)
 Radio button 'Use raw data from the original run, but recompute run-dependent text, known bug information etc.'
@@ -174,11 +174,11 @@ Toggled Radio button 'Display results exactly as they were in the original run'
 Toggled Radio button 'Use raw data from the original run, but recompute run-dependent text, known bug information etc.' (checked)
 
 'press reconnect' event created with arguments ''
-Starting reconnect run of TextTest with arguments ['-g', '-vanilla', 'site', '-a', 'hello', '-v', '2', '-reconnect', '/carm/proj/texttest-tmp/geoff/texttest.10Dec165112.8913/texttest.gui/TestSelf/ChangeTestResults/GUI/SaveMissingVersioned/texttesttmp', '-reconnfull', '-count', '1', '-f', '/carm/proj/texttest-tmp/geoff/texttest.10Dec165112.8913/texttest.gui/TestSelf/ChangeTestResults/GUI/SaveMissingVersioned/texttesttmp/static_gui.10Dec165156.7769/dynamic_run2/gui_select', '-fd', '/carm/proj/texttest-tmp/geoff/texttest.10Dec165112.8913/texttest.gui/TestSelf/ChangeTestResults/GUI/SaveMissingVersioned/texttesttmp/static_gui.10Dec165156.7769/temporary_filter_files']
+Starting reconnect run of TextTest with arguments ['-g', '-vanilla', 'site', '-a', 'hello', '-v', '2', '-reconnect', '/carm/proj/texttest-tmp/geoff/texttest.14Dec111512.27792/texttest.gui/TestSelf/ChangeTestResults/GUI/SaveMissingVersioned/texttesttmp', '-reconnfull', '-count', '1', '-f', '/carm/proj/texttest-tmp/geoff/texttest.14Dec111512.27792/texttest.gui/TestSelf/ChangeTestResults/GUI/SaveMissingVersioned/texttesttmp/static_gui.14Dec111706.28336/dynamic_run2/gui_select', '-fd', '/carm/proj/texttest-tmp/geoff/texttest.14Dec111512.27792/texttest.gui/TestSelf/ChangeTestResults/GUI/SaveMissingVersioned/texttesttmp/static_gui.14Dec111706.28336/temporary_filter_files']
 
 Waiting for application event 'reconnect GUI to be closed' to occur.
 
-Changing GUI status to: 'Reconnected to HELLO test-case BothDiff at 10Dec16:51:59.'
+Changing GUI status to: 'Reconnected to HELLO test-case BothDiff at 14Dec11:17:13.'
 
 Expected application event 'reconnect GUI to be closed' occurred, proceeding.
 

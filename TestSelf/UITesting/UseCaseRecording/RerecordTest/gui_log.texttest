@@ -1,11 +1,11 @@
 Enabling entry completion, using matching 1
 Adding entry completion '<default>' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.16Nov161821.6062/texttest.gui/TestSelf/UITesting/UseCaseRecording/RerecordTest/TargetApp/source_with_pyc' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.14Dec111512.27792/texttest.gui/TestSelf/UITesting/UseCaseRecording/RerecordTest/TargetApp/source_with_pyc' ...
 Adding entry completion 'localhost' ...
 Adding entry completion '1' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.16Nov161821.6062/texttest.gui/TestSelf/UITesting/UseCaseRecording/RerecordTest/log/logging.debug' ...
-Adding entry completion '/users/geoff/work/master/Testing/TextTest/log/logging.debug' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.16Nov161821.6062/texttest.gui/TestSelf/UITesting/UseCaseRecording/RerecordTest/log' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.14Dec111512.27792/texttest.gui/TestSelf/UITesting/UseCaseRecording/RerecordTest/log/logging.debug' ...
+Adding entry completion '/carm/proj/texttest/geoff/reserve/Testing/TextTest/log/logging.debug' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.14Dec111512.27792/texttest.gui/TestSelf/UITesting/UseCaseRecording/RerecordTest/log' ...
 Adding entry completion 'site' ...
 Adding entry completion 'personal' ...
 Adding entry completion 'all' ...
@@ -20,7 +20,7 @@ Menu Bar : 'File' (+) , 'Edit' (+) , 'View' (+) , 'Actions' (+) , 'Help' (+)
 Tool Bar :
   _Quit (Stock image 'gtk-quit', accelerator 'Ctrl+Q', tooltip 'Quit')
     ----
-  _Select (Stock image 'gtk-find', accelerator 'Ctrl+S', tooltip 'Select indicated tests')
+  _Select (Stock image 'gtk-find', accelerator 'Ctrl+Alt+F', tooltip 'Select indicated tests')
   Refresh (Stock image 'gtk-refresh', accelerator 'F5', tooltip 'Refresh the whole test suite so that it reflects file changes')
   _Run (Stock image 'gtk-execute', greyed out, accelerator 'Ctrl+R', tooltip 'Run selected tests')
 ...........
@@ -45,13 +45,13 @@ Viewing table with 9 rows and 2 columns.
 .....Selection......
 Check button 'Select in collapsed suites' (tooltip 'Select in currently collapsed suites as well?')
 Radio button 'Discard' (checked) (tooltip 'Unselect all currently selected tests before applying the new selection criteria.') , Radio button 'Refine' (tooltip 'Apply the new selection criteria only to the currently selected tests, to obtain a subselection.') , Radio button 'Extend' (tooltip 'Keep the currently selected tests even if they do not match the new criteria, and extend the selection with all other tests which meet the new criteria.') , Radio button 'Exclude' (tooltip 'After applying the new selection criteria to all tests, unselect the currently selected tests, to exclude them from the new selection.')
-Button '_Select' (Stock image 'gtk-find', accelerator 'Ctrl+S', tooltip 'Select indicated tests')
+Button '_Select' (Stock image 'gtk-find', accelerator 'Ctrl+Alt+F', tooltip 'Select indicated tests')
 .....Filtering......
 Radio button 'Discard' (checked) (tooltip 'Show all tests which match the criteria, and hide all those that do not.') , Radio button 'Refine' (tooltip 'Hide all tests which do not match the criteria. Do not show any tests that aren't already shown.') , Radio button 'Extend' (tooltip 'Show all tests which match the criteria. Do not hide any tests that are currently shown.')
 Button 'Filter' (Stock image 'gtk-find', accelerator 'Ctrl+F', tooltip 'filter tests to show only those indicated')
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 16Nov16:18:54.' , Image 'throbber_inactive.png'
+'TextTest started at 14Dec11:15:46.' , Image 'throbber_inactive.png'
 ---------------------------------------------------------------------------------------
 
 Changing GUI status to: 'Reading tests ...'
@@ -68,7 +68,7 @@ Updated : Test Tree with columns: Tests: 0/2 selected
 ->     AddMovie (grey90)
 Edited 'Test-file to search' Text entry (set to 'output')
 
-Changing GUI status to: 'Reading tests completed at 16Nov16:18:55.'
+Changing GUI status to: 'Reading tests completed at 14Dec11:15:47.'
 
 Expected application event 'all tests to be read' occurred, proceeding.
 
@@ -108,7 +108,7 @@ Showing Notebook with tabs: Basic , Advanced , Recording
 Viewing page 'Basic'
 Viewing table with 4 rows and 2 columns.
 'Run this version  ' | Text entry
-'Use checkout  ' | Text entry (set to '/carm/proj/texttest-tmp/geoff/texttest.16Nov161821.6062/texttest.gui/TestSelf/UITesting/UseCaseRecording/RerecordTest/TargetApp/source_with_pyc')
+'Use checkout  ' | Text entry (set to '/carm/proj/texttest-tmp/geoff/texttest.14Dec111512.27792/texttest.gui/TestSelf/UITesting/UseCaseRecording/RerecordTest/TargetApp/source_with_pyc')
 'Run on machine  ' | Text entry (set to 'localhost')
 'Times to run  ' (tooltip 'Set this to some number larger than 1 to run the same test multiple times, for example to try to catch indeterminism in the system under test') | Text entry (set to '1')
 Check button 'Run with slow motion replay'
@@ -120,7 +120,7 @@ Current page changed in Notebook with tabs: Basic , Advanced , Recording
 Viewing page 'Recording'
 Viewing table with 2 rows and 2 columns.
 'Version to record  ' | Text entry
-'Checkout to use for recording  ' | Text entry (set to '/carm/proj/texttest-tmp/geoff/texttest.16Nov161821.6062/texttest.gui/TestSelf/UITesting/UseCaseRecording/RerecordTest/TargetApp/source_with_pyc')
+'Checkout to use for recording  ' | Text entry (set to '/carm/proj/texttest-tmp/geoff/texttest.14Dec111512.27792/texttest.gui/TestSelf/UITesting/UseCaseRecording/RerecordTest/TargetApp/source_with_pyc')
 Check button 'Also record command-line or client-server traffic' (checked)
 Check button 'Automatically replay test after recording it' (checked)
 Radio button 'Auto-replay invisible' (checked) , Radio button 'Auto-replay in dynamic GUI'
@@ -132,12 +132,12 @@ Toggled Radio button 'Auto-replay in dynamic GUI' (checked)
 
 'record use-case' event created with arguments ''
 Adding entry completion 'output' ...
-Starting record run of TextTest with arguments ['-g', '-record', '-vanilla', 'site', '-a', 'gui', '-c', '/carm/proj/texttest-tmp/geoff/texttest.16Nov161821.6062/texttest.gui/TestSelf/UITesting/UseCaseRecording/RerecordTest/TargetApp/source_with_pyc', '-rectraffic', '-count', '1', '-f', '/carm/proj/texttest-tmp/geoff/texttest.16Nov161821.6062/texttest.gui/TestSelf/UITesting/UseCaseRecording/RerecordTest/texttesttmp/static_gui.gui.16Nov161853.24431/dynamic_run1/gui_select', '-fd', '/carm/proj/texttest-tmp/geoff/texttest.16Nov161821.6062/texttest.gui/TestSelf/UITesting/UseCaseRecording/RerecordTest/texttesttmp/static_gui.gui.16Nov161853.24431/temporary_filter_files']
+Starting record run of TextTest with arguments ['-g', '-record', '-vanilla', 'site', '-a', 'gui', '-c', '/carm/proj/texttest-tmp/geoff/texttest.14Dec111512.27792/texttest.gui/TestSelf/UITesting/UseCaseRecording/RerecordTest/TargetApp/source_with_pyc', '-rectraffic', '-count', '1', '-f', '/carm/proj/texttest-tmp/geoff/texttest.14Dec111512.27792/texttest.gui/TestSelf/UITesting/UseCaseRecording/RerecordTest/texttesttmp/static_gui.gui.14Dec111545.29686/dynamic_run1/gui_select', '-fd', '/carm/proj/texttest-tmp/geoff/texttest.14Dec111512.27792/texttest.gui/TestSelf/UITesting/UseCaseRecording/RerecordTest/texttesttmp/static_gui.gui.14Dec111545.29686/temporary_filter_files']
 
 Waiting for application event 'replay GUI to be closed' to occur.
 
 Changing GUI status to: 'Started record session for VideoStore test-case AddMovie'
-Starting replay run of TextTest with arguments ['-vanilla', 'site', '-autoreplay', '-g', '-a', 'gui', '-c', '/carm/proj/texttest-tmp/geoff/texttest.16Nov161821.6062/texttest.gui/TestSelf/UITesting/UseCaseRecording/RerecordTest/TargetApp/source_with_pyc', '-count', '1', '-f', '/carm/proj/texttest-tmp/geoff/texttest.16Nov161821.6062/texttest.gui/TestSelf/UITesting/UseCaseRecording/RerecordTest/texttesttmp/static_gui.gui.16Nov161853.24431/dynamic_run1/gui_select', '-fd', '/carm/proj/texttest-tmp/geoff/texttest.16Nov161821.6062/texttest.gui/TestSelf/UITesting/UseCaseRecording/RerecordTest/texttesttmp/static_gui.gui.16Nov161853.24431/temporary_filter_files']
+Starting replay run of TextTest with arguments ['-vanilla', 'site', '-autoreplay', '-g', '-a', 'gui', '-c', '/carm/proj/texttest-tmp/geoff/texttest.14Dec111512.27792/texttest.gui/TestSelf/UITesting/UseCaseRecording/RerecordTest/TargetApp/source_with_pyc', '-count', '1', '-f', '/carm/proj/texttest-tmp/geoff/texttest.14Dec111512.27792/texttest.gui/TestSelf/UITesting/UseCaseRecording/RerecordTest/texttesttmp/static_gui.gui.14Dec111545.29686/dynamic_run1/gui_select', '-fd', '/carm/proj/texttest-tmp/geoff/texttest.14Dec111512.27792/texttest.gui/TestSelf/UITesting/UseCaseRecording/RerecordTest/texttesttmp/static_gui.gui.14Dec111545.29686/temporary_filter_files']
 
 Changing GUI status to: 'Recording completed for VideoStore test-case AddMovie. Auto-replay of test now started. Don't submit the test manually!'
 
