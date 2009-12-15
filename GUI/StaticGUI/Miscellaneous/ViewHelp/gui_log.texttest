@@ -2,9 +2,9 @@ Enabling entry completion, using matching 1
 Adding entry completion '<default>' ...
 Adding entry completion 'localhost' ...
 Adding entry completion '1' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.14Dec132853.32072/texttest.gui/GUI/StaticGUI/Miscellaneous/ViewHelp/log/logging.debug' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.15Dec135245.24417/texttest.gui/GUI/StaticGUI/Miscellaneous/ViewHelp/log/logging.debug' ...
 Adding entry completion '/users/geoff/work/master/Testing/TextTest/log/logging.debug' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.14Dec132853.32072/texttest.gui/GUI/StaticGUI/Miscellaneous/ViewHelp/log' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.15Dec135245.24417/texttest.gui/GUI/StaticGUI/Miscellaneous/ViewHelp/log' ...
 Adding entry completion 'site' ...
 Adding entry completion 'personal' ...
 Adding entry completion 'all' ...
@@ -50,7 +50,7 @@ Radio button 'Discard' (checked) (tooltip 'Show all tests which match the criter
 Button 'Filter' (Stock image 'gtk-find', accelerator 'Ctrl+F', tooltip 'filter tests to show only those indicated')
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 14Dec13:29:53.' , Image 'throbber_inactive.png'
+'TextTest started at 15Dec13:52:49.' , Image 'throbber_inactive.png'
 --------------------------------------------------------------------------------
 
 Changing GUI status to: 'Reading tests ...'
@@ -96,7 +96,7 @@ Updated : Test Tree with columns: Tests: 0/11 selected
 ->       S01 (grey90)
 Edited 'Test-file to search' Text entry (set to 'output')
 
-Changing GUI status to: 'Reading tests completed at 14Dec13:29:54.'
+Changing GUI status to: 'Reading tests completed at 15Dec13:52:49.'
 
 Expected application event 'all tests to be read' occurred, proceeding.
 
@@ -250,67 +250,22 @@ Changing GUI status to: ''
 ---------- Dialog 'TextTest Migration Notes' ----------
 Default widget is 'gtk-close'
 
-Showing Notebook with tabs: from 3.15 , from 3.14 , from 3.13 , from 3.12 , from 3.11 , from 3.10 , from 3.9 , from 3.8 , from 3.7 , from 3.6 , from 3.5 , from 3.4 , from 3.3 , from 3.1 , from 2.x
-Viewing page 'from 3.15'
+Showing Notebook with tabs: from 3.16 , from 3.15 , from 3.14 , from 3.13 , from 3.12 , from 3.11 , from 3.10 , from 3.9 , from 3.8 , from 3.7 , from 3.6 , from 3.5 , from 3.4 , from 3.3 , from 3.1 , from 2.x
+Viewing page 'from 3.16'
 
 ========== GtkTextView ==========
 
-The main things that need migrating are "collate_file" settings which collate multiple files simultaneously. 
-
-=========================================================
-COMPULSORY MIGRATION
-=========================================================
-
-(1) "collate_file" as applied to multiple files at once
-=======================================================
-
-For a long time it has been possible to write in your config file e.g.
-
-[collate_file]
-data*:data*.dump
-
-by which it is intended to collate all files that match the pattern on the right
-and produce corresponding files without the dump suffix. This functionality
-has been completely rewritten since the TextTest 3.15 release to remove
-its assumptions about the form of the files and make it work more generally.
-
-Also, the new version actually takes account of what is on the left-hand-side
-whereas the old version pretty much took the name of the source file and ignored
-what you put there. This is generally where the migration comes in.
-
-The worst that will happen is that a bunch of collated files will change name. For
-example if I instead had written
-
-[collate_file]
-dumped_data*:data*.dump
-
-the files would still have been called "data*" anyway. Now TextTest will replace
-the matched strings and make use of the name in a more predictable way, which may
-produce a different name than you had before. It's usually fairly easy to change the
-name in the config file if you prefer that over renaming lots of files.
-
-One additional restriction is that only "*" characters may be used in the left-hand-side
-patterns: they are effectively replacement markers for the matched values from the source file names. 
-Previously any UNIX-style file pattern would trigger this functionality.
-
-See the website documentation of "collate_file" for full documentation of how this now works.
+Nothing to migrate, but note the following behaviour changes:
 
 =========================================================
 CHANGES IN DEFAULT BEHAVIOUR (OR PROCEDURE)
 =========================================================
 
-(1) Default toolbar changed
-===========================
-"Remove Tests" and "Remove Files" are now separate actions, so it wasn't reckoned a good idea
-to keep "Remove" in the toolbar as it wasn't clear which it referred to. So "Refresh" now appears
-there and "Remove" needs to be done from the popup or top menus, or via the accelerator.
-Naturally you can configure this if you want, see the website on "Personalising the UI".
-
-(2) HTML batch report appearance changed
-========================================
-Most of the changes there will occur by default. For example, an "index.html" page will be
-generated at the top level providing an overview of the status. Rows or tables full of "N/A"
-will no longer be shown. There shouldn't be any surprises.
+(1) Accelerator for "Select"
+============================
+This used to be Ctrl+S but is now Ctrl+Alt+F. This is because it was added to the dynamic GUI
+where it would otherwise have clashed with the accelerator for "Save". Naturally you can reset
+it to whatever using the setting "gui_accelerators".
 =================================
 ---------------
 Button 'gtk-close' (Stock image 'gtk-close')
@@ -318,7 +273,7 @@ Button 'gtk-close' (Stock image 'gtk-close')
 
 'view tab' event created with arguments 'from 3.4'
 
-Current page changed in Notebook with tabs: from 3.15 , from 3.14 , from 3.13 , from 3.12 , from 3.11 , from 3.10 , from 3.9 , from 3.8 , from 3.7 , from 3.6 , from 3.5 , from 3.4 , from 3.3 , from 3.1 , from 2.x
+Current page changed in Notebook with tabs: from 3.16 , from 3.15 , from 3.14 , from 3.13 , from 3.12 , from 3.11 , from 3.10 , from 3.9 , from 3.8 , from 3.7 , from 3.6 , from 3.5 , from 3.4 , from 3.3 , from 3.1 , from 2.x
 Viewing page 'from 3.4'
 
 ========== GtkTextView ==========
@@ -417,11 +372,21 @@ Viewing page 'trunk'
 
 ========== GtkTextView ==========
 Static GUI Enhancements:
+Dynamic GUI Enhancements:
+    - Selection tab added
+	Can do all of the selecting from the static GUI in the dynamic GUI also. (selectandfilter.py)
+	Can also choose between the new and old results from the tests. Note accelerator for "select" changed.
+    - Status tab categories are now sorted alphabetically (statusviews.py)
 Framework Enhancements:
+    - Can now set a timeout after which tests will automatically be killed. (default/__init__.py)
+	See "kill_timeout" documentation on the website. Thanks to Michael Behrisch
 Batch Report Enhancements:
 Grid Engine (LSF/SGE) enhancements:
 Self-test/Internal changes:
 Bug Fixes:
+    - When searching with -grep ("test-files containing"), don't blindly include all versions of tests that match (testmodel.py)
+    - Worked around a Mercurial symbolic link bug: if the test path has a symbolic link, dereference it first (hg.py)
+    - Don't stacktrace on rename/move if VCS control directories are present but the VCS isn't installed (vcs_independent.py)
 =================================
 ---------------
 Button 'gtk-close' (Stock image 'gtk-close')
