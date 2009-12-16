@@ -2,9 +2,9 @@ Enabling entry completion, using matching 1
 Adding entry completion '<default>' ...
 Adding entry completion 'localhost' ...
 Adding entry completion '1' ...
-Adding entry completion 'C:/nightjob/tmp/texttest.windows.08Dec233120.3732/texttest.windows.gui/GUI/StaticGUI/Miscellaneous/ViewHelp/log/logging.debug' ...
+Adding entry completion 'C:/nightjob/tmp/texttest.windows.15Dec233044.3020/texttest.windows.gui/GUI/StaticGUI/Miscellaneous/ViewHelp/log/logging.debug' ...
 Adding entry completion 'C:/nightjob/texttest-daily-release/source/log/logging.debug' ...
-Adding entry completion 'C:/nightjob/tmp/texttest.windows.08Dec233120.3732/texttest.windows.gui/GUI/StaticGUI/Miscellaneous/ViewHelp/log' ...
+Adding entry completion 'C:/nightjob/tmp/texttest.windows.15Dec233044.3020/texttest.windows.gui/GUI/StaticGUI/Miscellaneous/ViewHelp/log' ...
 Adding entry completion 'site' ...
 Adding entry completion 'personal' ...
 Adding entry completion 'all' ...
@@ -19,7 +19,7 @@ Menu Bar : 'File' (+) , 'Edit' (+) , 'View' (+) , 'Actions' (+) , 'Help' (+)
 Tool Bar :
   _Quit (Stock image 'gtk-quit', accelerator 'Ctrl+Q', tooltip 'Quit')
     ----
-  _Select (Stock image 'gtk-find', accelerator 'Ctrl+S', tooltip 'Select indicated tests')
+  _Select (Stock image 'gtk-find', accelerator 'Ctrl+Alt+F', tooltip 'Select indicated tests')
   Refresh (Stock image 'gtk-refresh', accelerator 'F5', tooltip 'Refresh the whole test suite so that it reflects file changes')
   _Run (Stock image 'gtk-execute', greyed out, accelerator 'Ctrl+R', tooltip 'Run selected tests')
 ...........
@@ -38,19 +38,19 @@ Viewing table with 9 rows and 2 columns.
 'App names containing  ' (tooltip 'Select tests for which the application name matches the entered text. The text can be a regular expression.') | Text entry
 'Tests listed in file  ' | Text entry , Button '...'
 'Descriptions containing  ' (tooltip 'Select tests for which the description (comment) matches the entered text. The text can be a regular expression.') | Text entry
+'Execution time  ' (tooltip 'Specify execution time limits, either as '<min>,<max>', or as a list of comma-separated expressions, such as >=0:45,<=1:00. Digit-only numbers are interpreted as minutes, while colon-separated numbers are interpreted as hours:minutes:seconds.') | Text entry
 'Test-files containing  ' (tooltip 'Select tests which have a file containing the entered text. The text can be a regular expression : e.g. enter '.*' to only look for the file without checking the contents.') | Text entry
 'Test-file to search  ' (tooltip 'When the 'test-files containing' field is non-empty, apply the search in files with the given stem. Unix-style file expansion (note not regular expressions) may be used. For example '*' will look in any file.') | Text entry (drop-down list containing [''])
-'Execution time  ' (tooltip 'Specify execution time limits, either as '<min>,<max>', or as a list of comma-separated expressions, such as >=0:45,<=1:00. Digit-only numbers are interpreted as minutes, while colon-separated numbers are interpreted as hours:minutes:seconds.') | Text entry
 .....Selection......
 Check button 'Select in collapsed suites' (tooltip 'Select in currently collapsed suites as well?')
 Radio button 'Discard' (checked) (tooltip 'Unselect all currently selected tests before applying the new selection criteria.') , Radio button 'Refine' (tooltip 'Apply the new selection criteria only to the currently selected tests, to obtain a subselection.') , Radio button 'Extend' (tooltip 'Keep the currently selected tests even if they do not match the new criteria, and extend the selection with all other tests which meet the new criteria.') , Radio button 'Exclude' (tooltip 'After applying the new selection criteria to all tests, unselect the currently selected tests, to exclude them from the new selection.')
-Button '_Select' (Stock image 'gtk-find', accelerator 'Ctrl+S', tooltip 'Select indicated tests')
+Button '_Select' (Stock image 'gtk-find', accelerator 'Ctrl+Alt+F', tooltip 'Select indicated tests')
 .....Filtering......
 Radio button 'Discard' (checked) (tooltip 'Show all tests which match the criteria, and hide all those that do not.') , Radio button 'Refine' (tooltip 'Hide all tests which do not match the criteria. Do not show any tests that aren't already shown.') , Radio button 'Extend' (tooltip 'Show all tests which match the criteria. Do not hide any tests that are currently shown.')
 Button 'Filter' (Stock image 'gtk-find', accelerator 'Ctrl+F', tooltip 'filter tests to show only those indicated')
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 08Dec23:57:54.' , Image 'throbber_inactive.png'
+'TextTest started at 15Dec23:57:04.' , Image 'throbber_inactive.png'
 --------------------------------------------------------------------------------
 
 Changing GUI status to: 'Reading tests ...'
@@ -96,7 +96,7 @@ Updated : Test Tree with columns: Tests: 0/11 selected
 ->       S01 (grey90)
 Edited 'Test-file to search' Text entry (set to 'output')
 
-Changing GUI status to: 'Reading tests completed at 08Dec23:57:55.'
+Changing GUI status to: 'Reading tests completed at 15Dec23:57:05.'
 
 Expected application event 'all tests to be read' occurred, proceeding.
 
@@ -256,62 +256,17 @@ Viewing page 'from 3.16'
 
 ========== GtkTextView ==========
 
-The main things that need migrating are "collate_file" settings which collate multiple files simultaneously. 
-
-=========================================================
-COMPULSORY MIGRATION
-=========================================================
-
-(1) "collate_file" as applied to multiple files at once
-=======================================================
-
-For a long time it has been possible to write in your config file e.g.
-
-[collate_file]
-data*:data*.dump
-
-by which it is intended to collate all files that match the pattern on the right
-and produce corresponding files without the dump suffix. This functionality
-has been completely rewritten since the TextTest 3.15 release to remove
-its assumptions about the form of the files and make it work more generally.
-
-Also, the new version actually takes account of what is on the left-hand-side
-whereas the old version pretty much took the name of the source file and ignored
-what you put there. This is generally where the migration comes in.
-
-The worst that will happen is that a bunch of collated files will change name. For
-example if I instead had written
-
-[collate_file]
-dumped_data*:data*.dump
-
-the files would still have been called "data*" anyway. Now TextTest will replace
-the matched strings and make use of the name in a more predictable way, which may
-produce a different name than you had before. It's usually fairly easy to change the
-name in the config file if you prefer that over renaming lots of files.
-
-One additional restriction is that only "*" characters may be used in the left-hand-side
-patterns: they are effectively replacement markers for the matched values from the source file names. 
-Previously any UNIX-style file pattern would trigger this functionality.
-
-See the website documentation of "collate_file" for full documentation of how this now works.
+Nothing to migrate, but note the following behaviour changes:
 
 =========================================================
 CHANGES IN DEFAULT BEHAVIOUR (OR PROCEDURE)
 =========================================================
 
-(1) Default toolbar changed
-===========================
-"Remove Tests" and "Remove Files" are now separate actions, so it wasn't reckoned a good idea
-to keep "Remove" in the toolbar as it wasn't clear which it referred to. So "Refresh" now appears
-there and "Remove" needs to be done from the popup or top menus, or via the accelerator.
-Naturally you can configure this if you want, see the website on "Personalising the UI".
-
-(2) HTML batch report appearance changed
-========================================
-Most of the changes there will occur by default. For example, an "index.html" page will be
-generated at the top level providing an overview of the status. Rows or tables full of "N/A"
-will no longer be shown. There shouldn't be any surprises.
+(1) Accelerator for "Select"
+============================
+This used to be Ctrl+S but is now Ctrl+Alt+F. This is because it was added to the dynamic GUI
+where it would otherwise have clashed with the accelerator for "Save". Naturally you can reset
+it to whatever using the setting "gui_accelerators".
 =================================
 ---------------
 Button 'gtk-close' (Stock image 'gtk-close')
@@ -418,11 +373,21 @@ Viewing page 'trunk'
 
 ========== GtkTextView ==========
 Static GUI Enhancements:
+Dynamic GUI Enhancements:
+    - Selection tab added
+	Can do all of the selecting from the static GUI in the dynamic GUI also. (selectandfilter.py)
+	Can also choose between the new and old results from the tests. Note accelerator for "select" changed.
+    - Status tab categories are now sorted alphabetically (statusviews.py)
 Framework Enhancements:
+    - Can now set a timeout after which tests will automatically be killed. (default/__init__.py)
+	See "kill_timeout" documentation on the website. Thanks to Michael Behrisch
 Batch Report Enhancements:
 Grid Engine (LSF/SGE) enhancements:
 Self-test/Internal changes:
 Bug Fixes:
+    - When searching with -grep ("test-files containing"), don't blindly include all versions of tests that match (testmodel.py)
+    - Worked around a Mercurial symbolic link bug: if the test path has a symbolic link, dereference it first (hg.py)
+    - Don't stacktrace on rename/move if VCS control directories are present but the VCS isn't installed (vcs_independent.py)
 =================================
 ---------------
 Button 'gtk-close' (Stock image 'gtk-close')
