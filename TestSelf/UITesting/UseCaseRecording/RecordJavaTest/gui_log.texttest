@@ -1,11 +1,11 @@
 Enabling entry completion, using matching 1
 Adding entry completion '<default>' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.16Dec140225.8962/texttest.gui/TestSelf/UITesting/UseCaseRecording/RecordJavaTest/TargetApp/source_with_pyc' ...
+Adding entry completion '/home/geoff/.texttest/tmp/texttest.17Dec201934.9124/texttest.gui/TestSelf/UITesting/UseCaseRecording/RecordJavaTest/TargetApp/source_with_pyc' ...
 Adding entry completion 'localhost' ...
 Adding entry completion '1' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.16Dec140225.8962/texttest.gui/TestSelf/UITesting/UseCaseRecording/RecordJavaTest/log/logging.debug' ...
-Adding entry completion '/users/geoff/work/master/Testing/TextTest/log/logging.debug' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.16Dec140225.8962/texttest.gui/TestSelf/UITesting/UseCaseRecording/RecordJavaTest/log' ...
+Adding entry completion '/home/geoff/.texttest/tmp/texttest.17Dec201934.9124/texttest.gui/TestSelf/UITesting/UseCaseRecording/RecordJavaTest/log/logging.debug' ...
+Adding entry completion '/home/geoff/code/texttest/log/logging.debug' ...
+Adding entry completion '/home/geoff/.texttest/tmp/texttest.17Dec201934.9124/texttest.gui/TestSelf/UITesting/UseCaseRecording/RecordJavaTest/log' ...
 Adding entry completion 'site' ...
 Adding entry completion 'personal' ...
 Adding entry completion 'all' ...
@@ -42,16 +42,16 @@ Viewing table with 9 rows and 2 columns.
 'Execution time  ' (tooltip 'Specify execution time limits, either as '<min>,<max>', or as a list of comma-separated expressions, such as >=0:45,<=1:00. Digit-only numbers are interpreted as minutes, while colon-separated numbers are interpreted as hours:minutes:seconds.') | Text entry
 'Test-files containing  ' (tooltip 'Select tests which have a file containing the entered text. The text can be a regular expression : e.g. enter '.*' to only look for the file without checking the contents.') | Text entry
 'Test-file to search  ' (tooltip 'When the 'test-files containing' field is non-empty, apply the search in files with the given stem. Unix-style file expansion (note not regular expressions) may be used. For example '*' will look in any file.') | Text entry (drop-down list containing [''])
-.....Selection......
+.....'Selection'......
 Check button 'Select in collapsed suites' (tooltip 'Select in currently collapsed suites as well?')
 Radio button 'Discard' (checked) (tooltip 'Unselect all currently selected tests before applying the new selection criteria.') , Radio button 'Refine' (tooltip 'Apply the new selection criteria only to the currently selected tests, to obtain a subselection.') , Radio button 'Extend' (tooltip 'Keep the currently selected tests even if they do not match the new criteria, and extend the selection with all other tests which meet the new criteria.') , Radio button 'Exclude' (tooltip 'After applying the new selection criteria to all tests, unselect the currently selected tests, to exclude them from the new selection.')
 Button '_Select' (Stock image 'gtk-find', accelerator 'Ctrl+Alt+F', tooltip 'Select indicated tests')
-.....Filtering......
+.....'Filtering'......
 Radio button 'Discard' (checked) (tooltip 'Show all tests which match the criteria, and hide all those that do not.') , Radio button 'Refine' (tooltip 'Hide all tests which do not match the criteria. Do not show any tests that aren't already shown.') , Radio button 'Extend' (tooltip 'Show all tests which match the criteria. Do not hide any tests that are currently shown.')
 Button 'Filter' (Stock image 'gtk-find', accelerator 'Ctrl+F', tooltip 'filter tests to show only those indicated')
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 16Dec14:03:29.' , Image 'throbber_inactive.png'
+'TextTest started at 17Dec20:26:52.' , Image 'throbber_inactive.png'
 ---------------------------------------------------------------------------------------
 
 Changing GUI status to: 'Reading tests ...'
@@ -67,7 +67,7 @@ Updated : Test Tree with columns: Tests: 0/2 selected
 ->     AddMovie (grey90)
 Edited 'Test-file to search' Text entry (set to 'output')
 
-Changing GUI status to: 'Reading tests completed at 16Dec14:03:30.'
+Changing GUI status to: 'Reading tests completed at 17Dec20:26:53.'
 
 Expected application event 'all tests to be read' occurred, proceeding.
 
@@ -154,7 +154,7 @@ Showing Notebook with tabs: Basic , Advanced , Recording
 Viewing page 'Basic'
 Viewing table with 4 rows and 2 columns.
 'Run this version  ' | Text entry
-'Use checkout  ' | Text entry (set to '/carm/proj/texttest-tmp/geoff/texttest.16Dec140225.8962/texttest.gui/TestSelf/UITesting/UseCaseRecording/RecordJavaTest/TargetApp/source_with_pyc')
+'Use checkout  ' | Text entry (set to '/home/geoff/.texttest/tmp/texttest.17Dec201934.9124/texttest.gui/TestSelf/UITesting/UseCaseRecording/RecordJavaTest/TargetApp/source_with_pyc')
 'Run on machine  ' | Text entry (set to 'localhost')
 'Times to run  ' (tooltip 'Set this to some number larger than 1 to run the same test multiple times, for example to try to catch indeterminism in the system under test') | Text entry (set to '1')
 Check button 'Run with slow motion replay'
@@ -166,7 +166,7 @@ Current page changed in Notebook with tabs: Basic , Advanced , Recording
 Viewing page 'Recording'
 Viewing table with 2 rows and 2 columns.
 'Version to record  ' | Text entry
-'Checkout to use for recording  ' | Text entry (set to '/carm/proj/texttest-tmp/geoff/texttest.16Dec140225.8962/texttest.gui/TestSelf/UITesting/UseCaseRecording/RecordJavaTest/TargetApp/source_with_pyc')
+'Checkout to use for recording  ' | Text entry (set to '/home/geoff/.texttest/tmp/texttest.17Dec201934.9124/texttest.gui/TestSelf/UITesting/UseCaseRecording/RecordJavaTest/TargetApp/source_with_pyc')
 Check button 'Also record command-line or client-server traffic' (checked)
 Check button 'Automatically replay test after recording it' (checked)
 Radio button 'Auto-replay invisible' (checked) , Radio button 'Auto-replay in dynamic GUI'
@@ -180,12 +180,12 @@ Toggled Check button 'Also record command-line or client-server traffic'
 
 'record use-case' event created with arguments ''
 Adding entry completion 'java' ...
-Starting record run of TextTest with arguments ['-g', '-record', '-vanilla', 'site', '-a', 'gui', '-v', 'java', '-c', '/carm/proj/texttest-tmp/geoff/texttest.16Dec140225.8962/texttest.gui/TestSelf/UITesting/UseCaseRecording/RecordJavaTest/TargetApp/source_with_pyc', '-count', '1', '-f', '/carm/proj/texttest-tmp/geoff/texttest.16Dec140225.8962/texttest.gui/TestSelf/UITesting/UseCaseRecording/RecordJavaTest/texttesttmp/static_gui.gui.16Dec140328.22867/dynamic_run1/gui_select', '-fd', '/carm/proj/texttest-tmp/geoff/texttest.16Dec140225.8962/texttest.gui/TestSelf/UITesting/UseCaseRecording/RecordJavaTest/texttesttmp/static_gui.gui.16Dec140328.22867/temporary_filter_files']
+Starting record run of TextTest with arguments ['-g', '-record', '-vanilla', 'site', '-a', 'gui', '-v', 'java', '-c', '/home/geoff/.texttest/tmp/texttest.17Dec201934.9124/texttest.gui/TestSelf/UITesting/UseCaseRecording/RecordJavaTest/TargetApp/source_with_pyc', '-count', '1', '-f', '/home/geoff/.texttest/tmp/texttest.17Dec201934.9124/texttest.gui/TestSelf/UITesting/UseCaseRecording/RecordJavaTest/texttesttmp/static_gui.gui.17Dec202652.10791/dynamic_run1/gui_select', '-fd', '/home/geoff/.texttest/tmp/texttest.17Dec201934.9124/texttest.gui/TestSelf/UITesting/UseCaseRecording/RecordJavaTest/texttesttmp/static_gui.gui.17Dec202652.10791/temporary_filter_files']
 
 Waiting for application event 'replay GUI to be closed' to occur.
 
 Changing GUI status to: 'Started record session for VideoStore test-case t1'
-Starting replay run of TextTest with arguments ['-vanilla', 'site', '-autoreplay', '-o', '', '-a', 'gui', '-v', 'java', '-c', '/carm/proj/texttest-tmp/geoff/texttest.16Dec140225.8962/texttest.gui/TestSelf/UITesting/UseCaseRecording/RecordJavaTest/TargetApp/source_with_pyc', '-count', '1', '-f', '/carm/proj/texttest-tmp/geoff/texttest.16Dec140225.8962/texttest.gui/TestSelf/UITesting/UseCaseRecording/RecordJavaTest/texttesttmp/static_gui.gui.16Dec140328.22867/dynamic_run1/gui_select', '-fd', '/carm/proj/texttest-tmp/geoff/texttest.16Dec140225.8962/texttest.gui/TestSelf/UITesting/UseCaseRecording/RecordJavaTest/texttesttmp/static_gui.gui.16Dec140328.22867/temporary_filter_files']
+Starting replay run of TextTest with arguments ['-vanilla', 'site', '-autoreplay', '-o', '', '-a', 'gui', '-v', 'java', '-c', '/home/geoff/.texttest/tmp/texttest.17Dec201934.9124/texttest.gui/TestSelf/UITesting/UseCaseRecording/RecordJavaTest/TargetApp/source_with_pyc', '-count', '1', '-f', '/home/geoff/.texttest/tmp/texttest.17Dec201934.9124/texttest.gui/TestSelf/UITesting/UseCaseRecording/RecordJavaTest/texttesttmp/static_gui.gui.17Dec202652.10791/dynamic_run1/gui_select', '-fd', '/home/geoff/.texttest/tmp/texttest.17Dec201934.9124/texttest.gui/TestSelf/UITesting/UseCaseRecording/RecordJavaTest/texttesttmp/static_gui.gui.17Dec202652.10791/temporary_filter_files']
 
 Changing GUI status to: 'Recording completed for VideoStore test-case t1. Auto-replay of test now started. Don't submit the test manually!'
 
