@@ -2,9 +2,9 @@ Enabling entry completion, using matching 1
 Adding entry completion '<default>' ...
 Adding entry completion 'localhost' ...
 Adding entry completion '1' ...
-Adding entry completion '/home/geoff/.texttest/tmp/texttest.17Dec201934.9124/texttest.gui/TestSelf/TestSelection/GUI/Creation/SelectByVersion/log/logging.debug' ...
-Adding entry completion '/home/geoff/code/texttest/log/logging.debug' ...
-Adding entry completion '/home/geoff/.texttest/tmp/texttest.17Dec201934.9124/texttest.gui/TestSelf/TestSelection/GUI/Creation/SelectByVersion/log' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.04Jan155554.24643/texttest.gui/TestSelf/TestSelection/GUI/Creation/SelectByVersion/log/logging.debug' ...
+Adding entry completion '/users/geoff/work/master/Testing/TextTest/log/logging.debug' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.04Jan155554.24643/texttest.gui/TestSelf/TestSelection/GUI/Creation/SelectByVersion/log' ...
 Adding entry completion 'site' ...
 Adding entry completion 'personal' ...
 Adding entry completion 'all' ...
@@ -33,8 +33,8 @@ Showing Notebook with tabs: Selection , Config
 Viewing page 'Selection'
 Viewing table with 9 rows and 2 columns.
 'Tests for version  ' (tooltip 'Select tests for a specific version.') | Text entry (drop-down list containing ['', '<default>'])
-'Test names containing  ' (tooltip 'Select tests for which the name matches the entered text. The text can be a regular expression.') | Text entry
-'Suite names containing  ' (tooltip 'Select tests for which at least one parent suite name matches the entered text. The text can be a regular expression.') | Text entry
+'Test names containing  ' (tooltip 'Select tests for which the name contains the entered text. The text can be a regular expression.') | Text entry
+'Test paths containing  ' (tooltip 'Select tests for which the full path to the test (e.g. suite1/subsuite/testname) contains the entered text. The text can be a regular expression. You can select tests by suite name this way.') | Text entry
 'App names containing  ' (tooltip 'Select tests for which the application name matches the entered text. The text can be a regular expression.') | Text entry
 'Tests listed in file  ' | Text entry , Button '...'
 'Descriptions containing  ' (tooltip 'Select tests for which the description (comment) matches the entered text. The text can be a regular expression.') | Text entry
@@ -50,7 +50,7 @@ Radio button 'Discard' (checked) (tooltip 'Show all tests which match the criter
 Button 'Filter' (Stock image 'gtk-find', accelerator 'Ctrl+F', tooltip 'filter tests to show only those indicated')
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 17Dec20:20:00.' , Image 'throbber_inactive.png'
+'TextTest started at 04Jan15:56:34.' , Image 'throbber_inactive.png'
 ----------------------------------------------------------------------------------
 
 Changing GUI status to: 'Reading tests ...'
@@ -74,7 +74,7 @@ Updated : Test Tree with columns: Tests: 0/4 selected
 ->       One (grey90)
 Edited 'Test-file to search' Text entry (set to 'output')
 
-Changing GUI status to: 'Reading tests completed at 17Dec20:20:01.'
+Changing GUI status to: 'Reading tests completed at 04Jan15:56:35.'
 
 Expected application event 'all tests to be read' occurred, proceeding.
 
@@ -115,11 +115,11 @@ Button '_Run' (Stock image 'gtk-execute', accelerator 'Ctrl+R', tooltip 'Run sel
 Edited 'Run this version' Text entry (set to 'small')
 
 'run selected tests' event created with arguments ''
-Starting dynamic run of TextTest with arguments ['-g', '-a', 'hello', '-v', 'small', '-m', 'localhost', '-cp', '1', '-xr', '/home/geoff/.texttest/tmp/texttest.17Dec201934.9124/texttest.gui/TestSelf/TestSelection/GUI/Creation/SelectByVersion/log/logging.debug', '-xw', '/home/geoff/.texttest/tmp/texttest.17Dec201934.9124/texttest.gui/TestSelf/TestSelection/GUI/Creation/SelectByVersion/log', '-vanilla', 'site', '-count', '3', '-f', '/home/geoff/.texttest/tmp/texttest.17Dec201934.9124/texttest.gui/TestSelf/TestSelection/GUI/Creation/SelectByVersion/texttesttmp/static_gui.17Dec202000.9180/dynamic_run1/gui_select', '-fd', '/home/geoff/.texttest/tmp/texttest.17Dec201934.9124/texttest.gui/TestSelf/TestSelection/GUI/Creation/SelectByVersion/texttesttmp/static_gui.17Dec202000.9180/temporary_filter_files']
+Starting dynamic run of TextTest with arguments ['-g', '-a', 'hello', '-v', 'small', '-m', 'localhost', '-cp', '1', '-xr', '/carm/proj/texttest-tmp/geoff/texttest.04Jan155554.24643/texttest.gui/TestSelf/TestSelection/GUI/Creation/SelectByVersion/log/logging.debug', '-xw', '/carm/proj/texttest-tmp/geoff/texttest.04Jan155554.24643/texttest.gui/TestSelf/TestSelection/GUI/Creation/SelectByVersion/log', '-vanilla', 'site', '-count', '3', '-f', '/carm/proj/texttest-tmp/geoff/texttest.04Jan155554.24643/texttest.gui/TestSelf/TestSelection/GUI/Creation/SelectByVersion/texttesttmp/static_gui.04Jan155632.15726/dynamic_run1/gui_select', '-fd', '/carm/proj/texttest-tmp/geoff/texttest.04Jan155554.24643/texttest.gui/TestSelf/TestSelection/GUI/Creation/SelectByVersion/texttesttmp/static_gui.04Jan155632.15726/temporary_filter_files']
 
 Waiting for application event 'dynamic GUI to be closed' to occur.
 
-Changing GUI status to: 'Started 3 tests at 17Dec20:20:01.'
+Changing GUI status to: 'Started 3 tests at 04Jan15:56:35.'
 
 Expected application event 'dynamic GUI to be closed' occurred, proceeding.
 
