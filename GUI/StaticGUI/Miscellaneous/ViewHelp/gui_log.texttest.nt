@@ -2,9 +2,9 @@ Enabling entry completion, using matching 1
 Adding entry completion '<default>' ...
 Adding entry completion 'localhost' ...
 Adding entry completion '1' ...
-Adding entry completion 'C:/nightjob/tmp/texttest.windows.16Dec233048.2840/texttest.windows.gui/GUI/StaticGUI/Miscellaneous/ViewHelp/log/logging.debug' ...
+Adding entry completion 'C:/nightjob/tmp/texttest.windows.04Jan233121.4008/texttest.windows.gui/GUI/StaticGUI/Miscellaneous/ViewHelp/log/logging.debug' ...
 Adding entry completion 'C:/nightjob/texttest-daily-release/source/log/logging.debug' ...
-Adding entry completion 'C:/nightjob/tmp/texttest.windows.16Dec233048.2840/texttest.windows.gui/GUI/StaticGUI/Miscellaneous/ViewHelp/log' ...
+Adding entry completion 'C:/nightjob/tmp/texttest.windows.04Jan233121.4008/texttest.windows.gui/GUI/StaticGUI/Miscellaneous/ViewHelp/log' ...
 Adding entry completion 'site' ...
 Adding entry completion 'personal' ...
 Adding entry completion 'all' ...
@@ -33,8 +33,8 @@ Showing Notebook with tabs: Selection , Config
 Viewing page 'Selection'
 Viewing table with 9 rows and 2 columns.
 'Tests for version  ' (tooltip 'Select tests for a specific version.') | Text entry (drop-down list containing ['', '<default>'])
-'Test names containing  ' (tooltip 'Select tests for which the name matches the entered text. The text can be a regular expression.') | Text entry
-'Suite names containing  ' (tooltip 'Select tests for which at least one parent suite name matches the entered text. The text can be a regular expression.') | Text entry
+'Test names containing  ' (tooltip 'Select tests for which the name contains the entered text. The text can be a regular expression.') | Text entry
+'Test paths containing  ' (tooltip 'Select tests for which the full path to the test (e.g. suite1/subsuite/testname) contains the entered text. The text can be a regular expression. You can select tests by suite name this way.') | Text entry
 'App names containing  ' (tooltip 'Select tests for which the application name matches the entered text. The text can be a regular expression.') | Text entry
 'Tests listed in file  ' | Text entry , Button '...'
 'Descriptions containing  ' (tooltip 'Select tests for which the description (comment) matches the entered text. The text can be a regular expression.') | Text entry
@@ -50,7 +50,7 @@ Radio button 'Discard' (checked) (tooltip 'Show all tests which match the criter
 Button 'Filter' (Stock image 'gtk-find', accelerator 'Ctrl+F', tooltip 'filter tests to show only those indicated')
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 16Dec23:54:57.' , Image 'throbber_inactive.png'
+'TextTest started at 04Jan23:56:54.' , Image 'throbber_inactive.png'
 --------------------------------------------------------------------------------
 
 Changing GUI status to: 'Reading tests ...'
@@ -95,7 +95,7 @@ Updated : Test Tree with columns: Tests: 0/11 selected
 ->       S01 (grey90)
 Edited 'Test-file to search' Text entry (set to 'output')
 
-Changing GUI status to: 'Reading tests completed at 16Dec23:54:57.'
+Changing GUI status to: 'Reading tests completed at 04Jan23:56:54.'
 
 Expected application event 'all tests to be read' occurred, proceeding.
 
@@ -377,9 +377,12 @@ Dynamic GUI Enhancements:
 	Can do all of the selecting from the static GUI in the dynamic GUI also. (selectandfilter.py)
 	Can also choose between the new and old results from the tests. Note accelerator for "select" changed.
     - Status tab categories are now sorted alphabetically (statusviews.py)
+    - "Root suite" is no longer always shown in the test tree (testtree.py)
+	If it would otherwise be hidden, it's now hidden.
 Framework Enhancements:
     - Can now set a timeout after which tests will automatically be killed. (default/__init__.py)
 	See "kill_timeout" documentation on the website. Thanks to Michael Behrisch
+    - Options files now ignore comments and blank lines like other files (testmodel.py)
 Batch Report Enhancements:
 Grid Engine (LSF/SGE) enhancements:
 Self-test/Internal changes:
@@ -387,6 +390,7 @@ Bug Fixes:
     - When searching with -grep ("test-files containing"), don't blindly include all versions of tests that match (testmodel.py)
     - Worked around a Mercurial symbolic link bug: if the test path has a symbolic link, dereference it first (hg.py)
     - Don't stacktrace on rename/move if VCS control directories are present but the VCS isn't installed (vcs_independent.py)
+    - Don't bail out on absolute paths with arguments for "interpreter" (default/__init__.py)
 =================================
 ---------------
 Button 'gtk-close' (Stock image 'gtk-close')
