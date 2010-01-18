@@ -35,7 +35,7 @@ import_config_file:site_configfile
 
 [run_dependent_text]
 output*:{INTERNAL writedir}{REPLACE <test write dir>}
-output*:[^/]*[0-9]{2}[A-Z][a-z][a-z][0-9]{6}\.[0-9]*{REPLACE <target tmp dir>}
+output*:[^/]*[0-9]{2}[A-Za-z][a-z][a-z][0-9]{6}\.[0-9]*{REPLACE <target tmp dir>}
 output*:Killing.*Xvfb process{WORD -1}
 output*:second to retry
 output:test-case.* on .*new results.*missing results.*differences{WORD -13}
@@ -60,13 +60,13 @@ output:[0-9]* and [0-9]* bytes{REPLACE <file sizes>}
 targetReport:{INTERNAL writedir}{REPLACE <test write dir>}
 targetReport:[^ ]*@localhost{REPLACE <username>@localhost}
 targetReport: on .*test-case.*under{WORD -7}
-targetReport:[0-9][0-9][A-Z][a-z][a-z][0-9][0-9][0-9][0-9]{REPLACE <today's date>}
+targetReport:[0-9][0-9][A-Za-z][a-z][a-z][0-9][0-9][0-9][0-9]{REPLACE <today's date>}
 targetReport:seconds on{WORD -1}
 targetReport:TESTS FAILED{WORD -2}
 catalogue:.nfs
 catalogue:[0-9]{2}[A-Za-z][a-z][a-z][0-9]{6}\.[0-9]*{REPLACE <datetime>.<pid>}
-catalogue:[0-9]{2}[A-Z][a-z][a-z][0-9]{6}{REPLACE <datetime>}
-catalogue:[0-9]{2}[A-Z][a-z][a-z][0-9]{4}{REPLACE <date>}
+catalogue:[0-9]{2}[A-Za-z][a-z][a-z][0-9]{6}{REPLACE <datetime>}
+catalogue:[0-9]{2}[A-Za-z][a-z][a-z][0-9]{4}{REPLACE <date>}
 # Files that shouldn't mean anything...
 catalogue:cmd
 catalogue:unixperf
@@ -102,7 +102,7 @@ checkforbugs:[^/]*[0-9]{2}[A-Z][a-z][a-z][0-9]{6}\.[0-9]*{REPLACE <target tmp di
 filteractions:{INTERNAL writedir}{REPLACE <test write dir>}
 filteractions:[^/]*[0-9]{2}[A-Z][a-z][a-z][0-9]{6}\.[0-9]*{REPLACE <target tmp dir>}
 traffic:{INTERNAL writedir}{REPLACE <test write dir>}
-traffic:[^/]*[0-9]{2}[A-Z][a-z][a-z][0-9]{6}\.[0-9]*{REPLACE <target tmp dir>}
+traffic:[^/]*[0-9]{2}[A-Za-z][a-z][a-z][0-9]{6}\.[0-9]*{REPLACE <target tmp dir>}
 traffic:[^ ]*(/startXvfb.py){REPLACE <path>\1}
 traffic:startXvfb.py{WORD 3}{REPLACE <python>}
 collatefiles:{INTERNAL writedir}{REPLACE <test write dir>}
