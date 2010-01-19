@@ -2,9 +2,9 @@ Enabling entry completion, using matching 1
 Adding entry completion '<default>' ...
 Adding entry completion 'localhost' ...
 Adding entry completion '1' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.04Jan155554.24643/texttest.gui/GUI/StaticGUI/Miscellaneous/ViewHelp/log/logging.debug' ...
-Adding entry completion '/users/geoff/work/master/Testing/TextTest/log/logging.debug' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.04Jan155554.24643/texttest.gui/GUI/StaticGUI/Miscellaneous/ViewHelp/log' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.19Jan120304.3726/texttest.gui/GUI/StaticGUI/Miscellaneous/ViewHelp/log/logging.debug' ...
+Adding entry completion '/carm/proj/texttest/geoff/reserve/Testing/TextTest/log/logging.debug' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.19Jan120304.3726/texttest.gui/GUI/StaticGUI/Miscellaneous/ViewHelp/log' ...
 Adding entry completion 'site' ...
 Adding entry completion 'personal' ...
 Adding entry completion 'all' ...
@@ -50,7 +50,7 @@ Radio button 'Discard' (checked) (tooltip 'Show all tests which match the criter
 Button 'Filter' (Stock image 'gtk-find', accelerator 'Ctrl+F', tooltip 'filter tests to show only those indicated')
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 04Jan15:57:27.' , Image 'throbber_inactive.png'
+'TextTest started at 19Jan12:03:52.' , Image 'throbber_inactive.png'
 --------------------------------------------------------------------------------
 
 Changing GUI status to: 'Reading tests ...'
@@ -93,9 +93,9 @@ Updated : Test Tree with columns: Tests: 0/11 selected
 ->   npstIII (grey90,bold)
 ->     Game47 (grey90,bold)
 ->       S01 (grey90)
-Edited 'Test-file to search' Text entry (set to 'output')
+Updated drop-down list in 'Test-file to search' Text entry (set to 'output') (drop-down list containing ['output'])
 
-Changing GUI status to: 'Reading tests completed at 04Jan15:57:27.'
+Changing GUI status to: 'Reading tests completed at 19Jan12:03:52.'
 
 Expected application event 'all tests to be read' occurred, proceeding.
 
@@ -219,7 +219,7 @@ Viewing table with 6 rows and 2 columns.
 'GLib:' | '2.74.42'
 '
 TextTest source directory:'
-'/users/geoff/work/master/Testing/TextTest'
+'/carm/proj/texttest/geoff/reserve/Testing/TextTest'
 ---------------
 Button 'gtk-close' (Stock image 'gtk-close')
 --------------------------------------------------
@@ -265,6 +265,24 @@ CHANGES IN DEFAULT BEHAVIOUR (OR PROCEDURE)
 This used to be Ctrl+S but is now Ctrl+Alt+F. This is because it was added to the dynamic GUI
 where it would otherwise have clashed with the accelerator for "Save". Naturally you can reset
 it to whatever using the setting "gui_accelerators".
+
+(2) Selection tab: "Test paths containing" entry replaces "Test suites containing"
+==================================================================================
+(Also -ts flag on the command line)
+
+It basically works in the same way as before, but instead of searching the test suite path
+and selecting tests under it, it uses the whole test path. Also, it now supports separating
+the suite/test names with spaces as well as path separators. So before you could write
+
+suite/subsuite  (or ite/.*sui)
+
+which you still can, but you can also write
+
+suite/subsuite/test (or ite/.*sui.*/test)
+
+or 
+
+suite subsuite test
 =================================
 ---------------
 Button 'gtk-close' (Stock image 'gtk-close')
@@ -371,6 +389,9 @@ Viewing page 'trunk'
 
 ========== GtkTextView ==========
 Static GUI Enhancements:
+    - "Test paths containing" replaces "Test suites containing" box in Selection tab (default/__init__.py)
+	Generalised to allow any substring or regexp of the relative path to the test.
+	Also handles spaces as in the names on the webpage. See migration notes.
 Dynamic GUI Enhancements:
     - Selection tab added
 	Can do all of the selecting from the static GUI in the dynamic GUI also. (selectandfilter.py)
@@ -378,11 +399,20 @@ Dynamic GUI Enhancements:
     - Status tab categories are now sorted alphabetically (statusviews.py)
     - "Root suite" is no longer always shown in the test tree (testtree.py)
 	If it would otherwise be hidden, it's now hidden.
+    - Performances improvements to "saving" operation. (testtree.py)
+	Saving hundreds of tests should be noticeably faster now.
 Framework Enhancements:
     - Can now set a timeout after which tests will automatically be killed. (default/__init__.py)
 	See "kill_timeout" documentation on the website. Thanks to Michael Behrisch
     - Options files now ignore comments and blank lines like other files (testmodel.py)
+    - $TEXTTEST_ROOT variable added (sandbox.py)
+	Basically to avoid referring to TEXTTEST_HOME in config files
+    - Can now provide extra arguments to virtual display server (Xvfb on UNIX) (virtualdisplay.py)
+	New config setting "virtual_display_extra_args"
 Batch Report Enhancements:
+    - Fixed formatting problem when several tests had the same "known bug" from Bugzilla/Jira (testoverview.py)
+    - Category ordering (coloured tables) now constant in summary page (batch/__init__.py)
+    - Known bugs have their own colour in the pages, defaulting to orange (testoverview.py)
 Grid Engine (LSF/SGE) enhancements:
 Self-test/Internal changes:
 Bug Fixes:
@@ -390,6 +420,7 @@ Bug Fixes:
     - Worked around a Mercurial symbolic link bug: if the test path has a symbolic link, dereference it first (hg.py)
     - Don't stacktrace on rename/move if VCS control directories are present but the VCS isn't installed (vcs_independent.py)
     - Don't bail out on absolute paths with arguments for "interpreter" (default/__init__.py)
+    - Recomputing a test that has been saved now works properly (comparefile.py)
 =================================
 ---------------
 Button 'gtk-close' (Stock image 'gtk-close')
@@ -470,7 +501,7 @@ Viewing table with 6 rows and 2 columns.
 'GLib:' | '2.74.42'
 '
 TextTest source directory:'
-'/users/geoff/work/master/Testing/TextTest'
+'/carm/proj/texttest/geoff/reserve/Testing/TextTest'
 ---------------
 Button 'gtk-close' (Stock image 'gtk-close')
 --------------------------------------------------
