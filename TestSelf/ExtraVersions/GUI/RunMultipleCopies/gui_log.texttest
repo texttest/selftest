@@ -4,9 +4,9 @@ Adding entry completion 'extra1' ...
 Adding entry completion 'extra2' ...
 Adding entry completion 'localhost' ...
 Adding entry completion '1' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.19Jan120304.3726/texttest.gui/TestSelf/ExtraVersions/GUI/RunMultipleCopies/log/logging.debug' ...
-Adding entry completion '/carm/proj/texttest/geoff/reserve/Testing/TextTest/log/logging.debug' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.19Jan120304.3726/texttest.gui/TestSelf/ExtraVersions/GUI/RunMultipleCopies/log' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.20Jan120832.17655/texttest.gui/TestSelf/ExtraVersions/GUI/RunMultipleCopies/log/logging.debug' ...
+Adding entry completion '/users/geoff/work/master/Testing/TextTest/log/logging.debug' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.20Jan120832.17655/texttest.gui/TestSelf/ExtraVersions/GUI/RunMultipleCopies/log' ...
 Adding entry completion 'site' ...
 Adding entry completion 'personal' ...
 Adding entry completion 'all' ...
@@ -52,7 +52,7 @@ Radio button 'Discard' (checked) (tooltip 'Show all tests which match the criter
 Button 'Filter' (Stock image 'gtk-find', accelerator 'Ctrl+F', tooltip 'filter tests to show only those indicated')
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 19Jan12:03:38.' , Image 'throbber_inactive.png'
+'TextTest started at 20Jan12:09:55.' , Image 'throbber_inactive.png'
 ----------------------------------------------------------------------------------
 
 Changing GUI status to: 'Reading tests ...'
@@ -75,9 +75,9 @@ Updated : Test Tree with columns: Tests: 0/6 selected, 0/4 distinct
 ->   Base (grey90)
 ->   Extra1 (grey90)
 ->   Extra2 (grey90)
-Updated drop-down list in 'Test-file to search' Text entry (set to 'output') (drop-down list containing ['output', 'errors'])
+Updated drop-down list in 'Test-file to search' Text entry (set to 'errors') (drop-down list containing ['errors', 'output'])
 
-Changing GUI status to: 'Reading tests completed at 19Jan12:03:39.'
+Changing GUI status to: 'Reading tests completed at 20Jan12:09:56.'
 
 Expected application event 'all tests to be read' occurred, proceeding.
 
@@ -98,7 +98,7 @@ Viewing table with 9 rows and 2 columns.
 'Descriptions containing  ' (tooltip 'Select tests for which the description (comment) matches the entered text. The text can be a regular expression.') | Text entry
 'Execution time  ' (tooltip 'Specify execution time limits, either as '<min>,<max>', or as a list of comma-separated expressions, such as >=0:45,<=1:00. Digit-only numbers are interpreted as minutes, while colon-separated numbers are interpreted as hours:minutes:seconds.') | Text entry
 'Test-files containing  ' (tooltip 'Select tests which have a file containing the entered text. The text can be a regular expression : e.g. enter '.*' to only look for the file without checking the contents.') | Text entry
-'Test-file to search  ' (tooltip 'When the 'test-files containing' field is non-empty, apply the search in files with the given stem. Unix-style file expansion (note not regular expressions) may be used. For example '*' will look in any file.') | Text entry (set to 'output') (drop-down list containing ['output', 'errors'])
+'Test-file to search  ' (tooltip 'When the 'test-files containing' field is non-empty, apply the search in files with the given stem. Unix-style file expansion (note not regular expressions) may be used. For example '*' will look in any file.') | Text entry (set to 'errors') (drop-down list containing ['errors', 'output'])
 .....'Selection'......
 Check button 'Select in collapsed suites' (tooltip 'Select in currently collapsed suites as well?')
 Radio button 'Discard' (checked) (tooltip 'Unselect all currently selected tests before applying the new selection criteria.') , Radio button 'Refine' (tooltip 'Apply the new selection criteria only to the currently selected tests, to obtain a subselection.') , Radio button 'Extend' (tooltip 'Keep the currently selected tests even if they do not match the new criteria, and extend the selection with all other tests which meet the new criteria.') , Radio button 'Exclude' (tooltip 'After applying the new selection criteria to all tests, unselect the currently selected tests, to exclude them from the new selection.')
@@ -125,13 +125,13 @@ Button '_Run' (Stock image 'gtk-execute', accelerator 'Ctrl+R', tooltip 'Run sel
 Edited 'Times to run' Text entry (set to '2')
 
 'run selected tests' event created with arguments ''
-Adding entry completion 'output' ...
+Adding entry completion 'errors' ...
 Adding entry completion '2' ...
-Starting dynamic run of TextTest with arguments ['-g', '-a', 'hello', '-m', 'localhost', '-cp', '2', '-xr', '/carm/proj/texttest-tmp/geoff/texttest.19Jan120304.3726/texttest.gui/TestSelf/ExtraVersions/GUI/RunMultipleCopies/log/logging.debug', '-xw', '/carm/proj/texttest-tmp/geoff/texttest.19Jan120304.3726/texttest.gui/TestSelf/ExtraVersions/GUI/RunMultipleCopies/log', '-vanilla', 'site', '-count', '4', '-f', '/carm/proj/texttest-tmp/geoff/texttest.19Jan120304.3726/texttest.gui/TestSelf/ExtraVersions/GUI/RunMultipleCopies/texttesttmp/static_gui.19Jan120337.29977/dynamic_run1/gui_select', '-fd', '/carm/proj/texttest-tmp/geoff/texttest.19Jan120304.3726/texttest.gui/TestSelf/ExtraVersions/GUI/RunMultipleCopies/texttesttmp/static_gui.19Jan120337.29977/temporary_filter_files']
+Starting dynamic run of TextTest with arguments ['-g', '-a', 'hello', '-m', 'localhost', '-cp', '2', '-xr', '/carm/proj/texttest-tmp/geoff/texttest.20Jan120832.17655/texttest.gui/TestSelf/ExtraVersions/GUI/RunMultipleCopies/log/logging.debug', '-xw', '/carm/proj/texttest-tmp/geoff/texttest.20Jan120832.17655/texttest.gui/TestSelf/ExtraVersions/GUI/RunMultipleCopies/log', '-vanilla', 'site', '-count', '4', '-f', '/carm/proj/texttest-tmp/geoff/texttest.20Jan120832.17655/texttest.gui/TestSelf/ExtraVersions/GUI/RunMultipleCopies/texttesttmp/static_gui.20Jan120953.22644/dynamic_run1/gui_select', '-fd', '/carm/proj/texttest-tmp/geoff/texttest.20Jan120832.17655/texttest.gui/TestSelf/ExtraVersions/GUI/RunMultipleCopies/texttesttmp/static_gui.20Jan120953.22644/temporary_filter_files']
 
 Waiting for application event 'dynamic GUI to be closed' to occur.
 
-Changing GUI status to: 'Started 2 copies each of 2 tests at 19Jan12:03:39.'
+Changing GUI status to: 'Started 2 copies each of 2 tests at 20Jan12:09:56.'
 
 Expected application event 'dynamic GUI to be closed' occurred, proceeding.
 
