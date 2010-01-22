@@ -17,8 +17,7 @@ def default_locale():
 locale.getdefaultlocale = default_locale
 
 def my_startfile(fileName):
-    log = logging.getLogger("gui log")
-    log.info("Called startfile on " + fileName)
+    print "Called startfile on", fileName
     sys.stdout.flush()
 
 os.startfile = my_startfile
