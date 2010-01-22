@@ -1,5 +1,5 @@
 known bugs=1
-13Aug2008
+22Jan2010
 HELLO : 1 tests : 1 known bugs
 
 Summary of all Unsuccessful tests follows...
@@ -14,8 +14,13 @@ Details of all Unsuccessful tests follows...
 
 Detailed information for the tests that had known bugs follows...
 --------------------------------------------------------
-TEST had known bugs (bug 42 (BAD SCRIPT)) on graceville : HELLO test-case Test (under Test)
+TEST had known bugs (bug 42 (BAD SCRIPT)) on arusha : HELLO test-case Test (under Test)
 Failed to communicate with 'http://bugzilla.mysite.com/xmlrpc.cgi': <ProtocolError for <ProtocolError: 404 Not Found>: None None>.
 
 Please make sure that the configuration entry 'bug_system_location' points to a correct location of a Bugzilla version 3.x installation. The current value is 'http://bugzilla.mysite.com'.
+---------- Differences in output ----------
+1c1
+< Hello world
+---
+> Hello after 5 seconds
 
