@@ -3,7 +3,7 @@ Adding entry completion '<default>' ...
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
 
----------- Window 'TextTest dynamic GUI : testing HELLO (started at 27Jan14:54:14)' ----------
+---------- Window 'TextTest dynamic GUI : testing HELLO (started at 28Jan13:37:31)' ----------
 Focus widget is 'Test Tree'
 
 Menu Bar : 'File' (+) , 'View' (+) , 'Actions' (+) , 'Help' (+)
@@ -12,7 +12,7 @@ Tool Bar :
   _Quit (Stock image 'gtk-quit', accelerator 'Ctrl+Q', tooltip 'Quit')
   _Kill (Stock image 'gtk-stop', greyed out, accelerator 'Ctrl+Delete', tooltip 'Kill selected tests')
   _Save (Stock image 'gtk-save', greyed out, accelerator 'Ctrl+S', tooltip 'Save results for selected tests')
-  Progress bar set to fraction 0.0, text 'All 0 tests completed at 27Jan14:54:14'
+  Progress bar set to fraction 0.0, text 'All 0 tests completed at 28Jan13:37:33'
 ...........
 
 Showing Test Tree with columns: Tests: All 0 selected , Details
@@ -26,7 +26,7 @@ Viewing page 'Status'
 Showing Test Status View with columns: Status , Number , Visible
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 27Jan14:54:14.' , Image 'throbber_inactive.png'
+'TextTest started at 28Jan13:37:33.' , Image 'throbber_inactive.png'
 ----------------------------------------------------------------------------------------------
 
 Progress bar set to fraction 0.0, text '0 of 1 tests completed'
@@ -73,6 +73,19 @@ Updated : Test Tree with columns: Tests: 0/3 selected, none hidden , Details
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 2 (white,bold) | Check box (checked)
+-> Initial filter (yellow,bold) | 1 (yellow,bold) | Check box (checked)
+
+Updated : Test Tree with columns: Tests: 0/3 selected, none hidden , Details
+-> TargetApp (hello) (white,bold) | (white)
+->   Suite1 (white,bold) | (white)
+->     Basic (yellow) | (yellow)
+->     Basic2 (white) | (white)
+->   Suite (white,bold) | (white)
+->     Basic3 (white) | (white)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white,bold) | 2 (white,bold) | Check box (checked)
+-> Initial filter (white) | 0 (white) | Check box (checked)
 -> Running (yellow,bold) | 1 (yellow,bold) | Check box (checked)
 
 Expected application event 'all tests to be read' occurred, proceeding.
@@ -100,7 +113,26 @@ Showing File Tree with columns: Basic , Details
 ...........
 
 ========== Text Info ==========
-Running on arusha
+Running on khoy
+
+To obtain the latest progress information and an up-to-date comparison of the files above, perform 'recompute status' (press 'F5')
+===============================
+
+Updated : Test Tree with columns: Tests: 1/3 selected, none hidden , Details
+-> TargetApp (hello) (white,bold) | (white)
+->   Suite1 (white,bold) | (white)
+->     Basic (yellow) | (yellow)
+->     Basic2 (white) | (white)
+->   Suite (white,bold) | (white)
+->     Basic3 (white) | (white)
+
+Updated : File Tree with columns: Basic , Details
+-> Temporary Files (bold)
+->   errors.hello (yellow) | (yellow)
+->   output.hello (yellow) | (yellow)
+
+========== Text Info ==========
+Filtering and comparing newly generated result files on khoy
 
 To obtain the latest progress information and an up-to-date comparison of the files above, perform 'recompute status' (press 'F5')
 ===============================
@@ -140,6 +172,14 @@ Updated : Test Tree with columns: Tests: 1/3 selected, none hidden , Details
 ->   Suite (white,bold) | (white)
 ->     Basic3 (white) | (white)
 
+Updated : Test Tree with columns: Tests: 1/3 selected, none hidden , Details
+-> TargetApp (hello) (white,bold) | (white)
+->   Suite1 (white,bold) | (white)
+->     Basic (red) | output different (red)
+->     Basic2 (yellow) | (yellow)
+->   Suite (white,bold) | (white)
+->     Basic3 (white) | (white)
+
 Expected application event 'test Basic to complete' occurred, proceeding.
 Expected application event 'test Basic2 to start' occurred, proceeding.
 
@@ -147,6 +187,14 @@ Expected application event 'test Basic2 to start' occurred, proceeding.
 
 Waiting for application event 'test Basic2 to complete' to occur.
 Waiting for application event 'test Basic3 to start' to occur.
+
+Updated : Test Tree with columns: Tests: 1/3 selected, none hidden , Details
+-> TargetApp (hello) (white,bold) | (white)
+->   Suite1 (white,bold) | (white)
+->     Basic (red) | output different (red)
+->     Basic2 (yellow) | (yellow)
+->   Suite (white,bold) | (white)
+->     Basic3 (white) | (white)
 
 Progress bar set to fraction 0.666666666667, text '2 of 3 tests completed'
 
@@ -156,6 +204,13 @@ Updated : Test Tree with columns: Tests: 1/3 selected, 1 hidden , Details
 ->     Basic (red) | output different (red)
 ->   Suite (white,bold) | (white)
 ->     Basic3 (white) | (white)
+
+Updated : Test Tree with columns: Tests: 1/3 selected, 1 hidden , Details
+-> TargetApp (hello) (white,bold) | (white)
+->   Suite1 (white,bold) | (white)
+->     Basic (red) | output different (red)
+->   Suite (white,bold) | (white)
+->     Basic3 (yellow) | (yellow)
 
 Updated : Test Tree with columns: Tests: 1/3 selected, 1 hidden , Details
 -> TargetApp (hello) (white,bold) | (white)
@@ -194,7 +249,14 @@ Test FAILED :
 
 Changing GUI status to: 'Saved 1 tests.'
 
-Progress bar set to fraction 1.0, text 'All 3 tests completed at 27Jan14:54:18'
+Updated : Test Tree with columns: Tests: 1/3 selected, 1 hidden , Details
+-> TargetApp (hello) (white,bold) | (white)
+->   Suite1 (white,bold) | (white)
+->     Basic (red) | output different (red)
+->   Suite (white,bold) | (white)
+->     Basic3 (yellow) | (yellow)
+
+Progress bar set to fraction 1.0, text 'All 3 tests completed at 28Jan13:37:37'
 
 Updated : Test Tree with columns: Tests: 1/3 selected, 1 hidden , Details
 -> TargetApp (hello) (white,bold) | (white)

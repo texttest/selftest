@@ -27,6 +27,7 @@ traffic:[^ ]*/texttest[\.py]* {REPLACE <path_to_texttest> }
 traffic:<-CLI:[0-9]*{REPLACE <-CLI:<pid>}
 traffic:'pid'${LINES 3}
 traffic:S'Running on{WORD 3}{REPLACE <host>'}
+traffic:S'.*result files on{WORD -1}{REPLACE <host>'}
 traffic:S'RUN (.*)'{WORD 2}{REPLACE (<host>)}
 traffic:executionHosts{->}observers
 traffic:at [0-3][0-9]:[0-6][0-9]{REPLACE at <time of day>}

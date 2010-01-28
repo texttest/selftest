@@ -4,7 +4,7 @@ Adding entry completion 'withdiag' ...
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
 
----------- Window 'TextTest dynamic GUI : testing DIAG.nodiag,DIAG.withdiag (started at 27Jan14:54:12)' ----------
+---------- Window 'TextTest dynamic GUI : testing DIAG.nodiag,DIAG.withdiag (started at 28Jan12:07:34)' ----------
 Focus widget is 'Test Tree'
 
 Menu Bar : 'File' (+) , 'View' (+) , 'Actions' (+) , 'Help' (+)
@@ -13,7 +13,7 @@ Tool Bar :
   _Quit (Stock image 'gtk-quit', accelerator 'Ctrl+Q', tooltip 'Quit')
   _Kill (Stock image 'gtk-stop', greyed out, accelerator 'Ctrl+Delete', tooltip 'Kill selected tests')
   _Save (Stock image 'gtk-save', greyed out, accelerator 'Ctrl+S', tooltip 'Save results for selected tests')
-  Progress bar set to fraction 0.0, text 'All 0 tests completed at 27Jan14:54:13'
+  Progress bar set to fraction 0.0, text 'All 0 tests completed at 28Jan12:07:34'
 ...........
 
 Showing Test Tree with columns: Tests: All 0 selected , Details
@@ -27,7 +27,7 @@ Viewing page 'Status'
 Showing Test Status View with columns: Status , Number , Visible
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 27Jan14:54:13.' , Image 'throbber_inactive.png'
+'TextTest started at 28Jan12:07:34.' , Image 'throbber_inactive.png'
 ----------------------------------------------------------------------------------------------------
 
 Progress bar set to fraction 0.0, text '0 of 1 tests completed'
@@ -58,7 +58,30 @@ Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 1 (white,bold) | Check box (checked)
+-> Initial filter (yellow,bold) | 1 (yellow,bold) | Check box (checked)
+
+Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
+-> TargetApp (diag.nodiag) (white,bold) | (white)
+->   TestAlwaysDiag (yellow) | (yellow)
+-> TargetApp (diag.withdiag) (white,bold) | (white)
+->   TestAlwaysDiag (white) | (white)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white,bold) | 1 (white,bold) | Check box (checked)
+-> Initial filter (white) | 0 (white) | Check box (checked)
 -> Running (yellow,bold) | 1 (yellow,bold) | Check box (checked)
+
+Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
+-> TargetApp (diag.nodiag) (white,bold) | (white)
+->   TestAlwaysDiag (yellow) | (yellow)
+-> TargetApp (diag.withdiag) (white,bold) | (white)
+->   TestAlwaysDiag (white) | (white)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white,bold) | 1 (white,bold) | Check box (checked)
+-> Initial filter (white) | 0 (white) | Check box (checked)
+-> Running (white) | 0 (white) | Check box (checked)
+-> Final filter (yellow,bold) | 1 (yellow,bold) | Check box (checked)
 
 Progress bar set to fraction 0.5, text '1 of 2 tests completed'
 
@@ -70,7 +93,9 @@ Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 1 (white,bold) | Check box (checked)
+-> Initial filter (white) | 0 (white) | Check box (checked)
 -> Running (white) | 0 (white) | Check box (checked)
+-> Final filter (white) | 0 (white) | Check box (checked)
 -> Failed (red,bold) | 1 (red,bold) | Check box (checked)
 ->   Differences (red,bold) | 1 (red,bold) | Check box (checked)
 ->     first missing (red,bold) | 1 (red,bold) | Check box (checked)
@@ -85,7 +110,26 @@ Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white) | 0 (white) | Check box (checked)
+-> Initial filter (yellow,bold) | 1 (yellow,bold) | Check box (checked)
+-> Running (white) | 0 (white) | Check box (checked)
+-> Final filter (white) | 0 (white) | Check box (checked)
+-> Failed (red,bold) | 1 (red,bold) | Check box (checked)
+->   Differences (red,bold) | 1 (red,bold) | Check box (checked)
+->     first missing (red,bold) | 1 (red,bold) | Check box (checked)
+->     second missing (red,bold) | 1 (red,bold) | Check box (checked)
+->     third missing (red,bold) | 1 (red,bold) | Check box (checked)
+
+Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
+-> TargetApp (diag.nodiag) (white,bold) | (white)
+->   TestAlwaysDiag (green) | first missing(+) (red)
+-> TargetApp (diag.withdiag) (white,bold) | (white)
+->   TestAlwaysDiag (yellow) | (yellow)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white) | 0 (white) | Check box (checked)
+-> Initial filter (white) | 0 (white) | Check box (checked)
 -> Running (yellow,bold) | 1 (yellow,bold) | Check box (checked)
+-> Final filter (white) | 0 (white) | Check box (checked)
 -> Failed (red,bold) | 1 (red,bold) | Check box (checked)
 ->   Differences (red,bold) | 1 (red,bold) | Check box (checked)
 ->     first missing (red,bold) | 1 (red,bold) | Check box (checked)
@@ -154,12 +198,18 @@ Updated : File Tree with columns: TestAlwaysDiag , Details
 
 ========== Text Info ==========
 Test succeeded
-(Saved at 14:54)
+(Saved at 12:07)
 ===============================
 
 Changing GUI status to: 'Saved 1 tests.'
 
-Progress bar set to fraction 1.0, text 'All 2 tests completed at 27Jan14:54:21'
+Updated : Test Tree with columns: Tests: 1/2 selected, none hidden , Details
+-> TargetApp (diag.nodiag) (white,bold) | All 1 tests successful (green)
+->   TestAlwaysDiag (green) | (green)
+-> TargetApp (diag.withdiag) (white,bold) | (white)
+->   TestAlwaysDiag (yellow) | (yellow)
+
+Progress bar set to fraction 1.0, text 'All 2 tests completed at 28Jan12:07:41'
 
 Updated : Test Tree with columns: Tests: 1/2 selected, none hidden , Details
 -> TargetApp (diag.nodiag) (white,bold) | All 1 tests successful (green)

@@ -3,7 +3,7 @@ Adding entry completion '<default>' ...
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
 
----------- Window 'TextTest dynamic GUI : testing HELLO (started at 27Jan14:54:23)' ----------
+---------- Window 'TextTest dynamic GUI : testing HELLO (started at 28Jan12:07:46)' ----------
 Focus widget is 'Test Tree'
 
 Menu Bar : 'File' (+) , 'View' (+) , 'Actions' (+) , 'Help' (+)
@@ -12,7 +12,7 @@ Tool Bar :
   _Quit (Stock image 'gtk-quit', accelerator 'Ctrl+Q', tooltip 'Quit')
   _Kill (Stock image 'gtk-stop', greyed out, accelerator 'Ctrl+Delete', tooltip 'Kill selected tests')
   _Save (Stock image 'gtk-save', greyed out, accelerator 'Ctrl+S', tooltip 'Save results for selected tests')
-  Progress bar set to fraction 0.0, text 'All 0 tests completed at 27Jan14:54:23'
+  Progress bar set to fraction 0.0, text 'All 0 tests completed at 28Jan12:07:47'
 ...........
 
 Showing Test Tree with columns: Tests: All 0 selected , Details
@@ -26,7 +26,7 @@ Viewing page 'Status'
 Showing Test Status View with columns: Status , Number , Visible
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 27Jan14:54:23.' , Image 'throbber_inactive.png'
+'TextTest started at 28Jan12:07:47.' , Image 'throbber_inactive.png'
 ----------------------------------------------------------------------------------------------
 
 Progress bar set to fraction 0.0, text '0 of 1 tests completed'
@@ -44,9 +44,28 @@ Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white) | 0 (white) | Check box (checked)
+-> Initial filter (yellow,bold) | 1 (yellow,bold) | Check box (checked)
+
+Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
+-> TargetApp (hello) (white,bold) | (white)
+->   Test (yellow) | (yellow)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white) | 0 (white) | Check box (checked)
+-> Initial filter (white) | 0 (white) | Check box (checked)
 -> Running (yellow,bold) | 1 (yellow,bold) | Check box (checked)
 
-Progress bar set to fraction 1.0, text 'All 1 tests completed at 27Jan14:54:24'
+Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
+-> TargetApp (hello) (white,bold) | (white)
+->   Test (yellow) | (yellow)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white) | 0 (white) | Check box (checked)
+-> Initial filter (white) | 0 (white) | Check box (checked)
+-> Running (white) | 0 (white) | Check box (checked)
+-> Final filter (yellow,bold) | 1 (yellow,bold) | Check box (checked)
+
+Progress bar set to fraction 1.0, text 'All 1 tests completed at 28Jan12:07:48'
 
 Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
 -> TargetApp (hello) (white,bold) | (white)
@@ -54,7 +73,9 @@ Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white) | 0 (white) | Check box (checked)
+-> Initial filter (white) | 0 (white) | Check box (checked)
 -> Running (white) | 0 (white) | Check box (checked)
+-> Final filter (white) | 0 (white) | Check box (checked)
 -> Failed (red,bold) | 1 (red,bold) | Check box (checked)
 ->   Differences (red,bold) | 1 (red,bold) | Check box (checked)
 ->     output different (red,bold) | 1 (red,bold) | Check box (checked)
@@ -90,8 +111,8 @@ Expected application event 'completion of test actions' occurred, proceeding.
 'select file' event created with arguments 'output.hello'
 Adding entry completion 'free_text' ...
 Starting graphical difference comparison using 'tkdiff':
--- original file : /carm/proj/texttest-tmp/geoff/texttest.27Jan145350.3201/texttest.gui/GUI/QuitConfirmation/MultipleDynamic/texttesttmp/dynamic_gui.27Jan145423.22249/hello/Test/framework_tmp/output.helloorigcmp
---  current file : /carm/proj/texttest-tmp/geoff/texttest.27Jan145350.3201/texttest.gui/GUI/QuitConfirmation/MultipleDynamic/texttesttmp/dynamic_gui.27Jan145423.22249/hello/Test/framework_tmp/output.hellocmp
+-- original file : /carm/proj/texttest-tmp/geoff/texttest.28Jan120647.30066/texttest.gui/GUI/QuitConfirmation/MultipleDynamic/texttesttmp/dynamic_gui.28Jan120746.2146/hello/Test/framework_tmp/output.helloorigcmp
+--  current file : /carm/proj/texttest-tmp/geoff/texttest.28Jan120647.30066/texttest.gui/GUI/QuitConfirmation/MultipleDynamic/texttesttmp/dynamic_gui.28Jan120746.2146/hello/Test/framework_tmp/output.hellocmp
 
 Changing GUI status to: 'Started "tkdiff output.helloorigcmp output.hellocmp" in background (from test Test).'
 
@@ -103,7 +124,7 @@ Stock image 'gtk-dialog-warning' , ========== GtkTextView ==========
 
 These processes are still running, and will be terminated when quitting: 
 
-   + PID 22256 : tkdiff output.helloorigcmp output.hellocmp (from test Test)
+   + PID 2162 : tkdiff output.helloorigcmp output.hellocmp (from test Test)
 
 Quit anyway?
 =================================
@@ -118,7 +139,7 @@ Changing GUI status to: 'Action cancelled.'
 'set file selection to' event created with arguments 'output.hello'
 
 'view filtered file' event created with arguments ''
-Viewing file /carm/proj/texttest-tmp/geoff/texttest.27Jan145350.3201/texttest.gui/GUI/QuitConfirmation/MultipleDynamic/texttesttmp/dynamic_gui.27Jan145423.22249/hello/Test/framework_tmp/output.hellocmp using 'emacs', refresh set to False
+Viewing file /carm/proj/texttest-tmp/geoff/texttest.28Jan120647.30066/texttest.gui/GUI/QuitConfirmation/MultipleDynamic/texttesttmp/dynamic_gui.28Jan120746.2146/hello/Test/framework_tmp/output.hellocmp using 'emacs', refresh set to False
 
 Waiting for application event 'the viewer process to start' to occur.
 
@@ -134,8 +155,8 @@ Stock image 'gtk-dialog-warning' , ========== GtkTextView ==========
 
 These processes are still running, and will be terminated when quitting: 
 
-   + PID 22256 : tkdiff output.helloorigcmp output.hellocmp (from test Test)
-   + PID 22257 : emacs output.hellocmp (from test Test)
+   + PID 2162 : tkdiff output.helloorigcmp output.hellocmp (from test Test)
+   + PID 2165 : emacs output.hellocmp (from test Test)
 
 Quit anyway?
 =================================

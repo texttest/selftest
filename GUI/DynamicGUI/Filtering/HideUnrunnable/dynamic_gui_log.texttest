@@ -3,7 +3,7 @@ Adding entry completion 'custom' ...
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
 
----------- Window 'TextTest dynamic GUI : testing HELLO.custom (started at 27Jan14:54:25)' ----------
+---------- Window 'TextTest dynamic GUI : testing HELLO.custom (started at 28Jan13:37:29)' ----------
 Focus widget is 'Test Tree'
 
 Menu Bar : 'File' (+) , 'View' (+) , 'Actions' (+) , 'Help' (+)
@@ -12,7 +12,7 @@ Tool Bar :
   _Quit (Stock image 'gtk-quit', accelerator 'Ctrl+Q', tooltip 'Quit')
   _Kill (Stock image 'gtk-stop', greyed out, accelerator 'Ctrl+Delete', tooltip 'Kill selected tests')
   _Save (Stock image 'gtk-save', greyed out, accelerator 'Ctrl+S', tooltip 'Save results for selected tests')
-  Progress bar set to fraction 0.0, text 'All 0 tests completed at 27Jan14:54:26'
+  Progress bar set to fraction 0.0, text 'All 0 tests completed at 28Jan13:37:30'
 ...........
 
 Showing Test Tree with columns: Tests: All 0 selected , Details
@@ -26,7 +26,7 @@ Viewing page 'Status'
 Showing Test Status View with columns: Status , Number , Visible
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 27Jan14:54:26.' , Image 'throbber_inactive.png'
+'TextTest started at 28Jan13:37:30.' , Image 'throbber_inactive.png'
 ----------------------------------------------------------------------------------------------------
 
 Progress bar set to fraction 0.0, text '0 of 1 tests completed'
@@ -85,6 +85,19 @@ Updated : Test Tree with columns: Tests: 0/5 selected, none hidden , Details
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 5 (white,bold) | Check box (checked)
 
+Updated : Test Tree with columns: Tests: 0/5 selected, none hidden , Details
+-> TargetApp (hello.custom) (white,bold) | (white)
+->   simple_fail1 (yellow) | (yellow)
+->   simple_fail2 (white) | (white)
+->   complex_fail1 (white) | (white)
+->   complex_fail2 (white) | (white)
+->   suite (white,bold) | (white)
+->     success (white) | (white)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white,bold) | 4 (white,bold) | Check box (checked)
+-> Initial filter (yellow,bold) | 1 (yellow,bold) | Check box (checked)
+
 Progress bar set to fraction 0.2, text '1 of 5 tests completed'
 
 Updated : Test Tree with columns: Tests: 0/5 selected, 1 hidden , Details
@@ -97,6 +110,22 @@ Updated : Test Tree with columns: Tests: 0/5 selected, 1 hidden , Details
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 4 (white,bold) | Check box (checked)
+-> Initial filter (white) | 0 (white) | Check box (checked)
+-> Failed (red,bold) | 1 (red,bold) | Check box (checked)
+->   Unrunnable (red,bold) | 1 (red,bold) | Check box
+->     TEXTTEST EXCEPTION (red,bold) | 1 (red,bold) | Check box
+
+Updated : Test Tree with columns: Tests: 0/5 selected, 1 hidden , Details
+-> TargetApp (hello.custom) (white,bold) | (white)
+->   simple_fail2 (yellow) | (yellow)
+->   complex_fail1 (white) | (white)
+->   complex_fail2 (white) | (white)
+->   suite (white,bold) | (white)
+->     success (white) | (white)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white,bold) | 3 (white,bold) | Check box (checked)
+-> Initial filter (yellow,bold) | 1 (yellow,bold) | Check box (checked)
 -> Failed (red,bold) | 1 (red,bold) | Check box (checked)
 ->   Unrunnable (red,bold) | 1 (red,bold) | Check box
 ->     TEXTTEST EXCEPTION (red,bold) | 1 (red,bold) | Check box
@@ -112,6 +141,7 @@ Updated : Test Tree with columns: Tests: 0/5 selected, 2 hidden , Details
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 3 (white,bold) | Check box (checked)
+-> Initial filter (white) | 0 (white) | Check box (checked)
 -> Failed (red,bold) | 2 (red,bold) | Check box (checked)
 ->   Unrunnable (red,bold) | 2 (red,bold) | Check box
 ->     TEXTTEST EXCEPTION (red,bold) | 2 (red,bold) | Check box
@@ -125,10 +155,41 @@ Updated : Test Tree with columns: Tests: 0/5 selected, 2 hidden , Details
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 2 (white,bold) | Check box (checked)
+-> Initial filter (yellow,bold) | 1 (yellow,bold) | Check box (checked)
+-> Failed (red,bold) | 2 (red,bold) | Check box (checked)
+->   Unrunnable (red,bold) | 2 (red,bold) | Check box
+->     TEXTTEST EXCEPTION (red,bold) | 2 (red,bold) | Check box
+
+Updated : Test Tree with columns: Tests: 0/5 selected, 2 hidden , Details
+-> TargetApp (hello.custom) (white,bold) | (white)
+->   complex_fail1 (yellow) | (yellow)
+->   complex_fail2 (white) | (white)
+->   suite (white,bold) | (white)
+->     success (white) | (white)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white,bold) | 2 (white,bold) | Check box (checked)
+-> Initial filter (white) | 0 (white) | Check box (checked)
 -> Failed (red,bold) | 2 (red,bold) | Check box (checked)
 ->   Unrunnable (red,bold) | 2 (red,bold) | Check box
 ->     TEXTTEST EXCEPTION (red,bold) | 2 (red,bold) | Check box
 -> Running (yellow,bold) | 1 (yellow,bold) | Check box (checked)
+
+Updated : Test Tree with columns: Tests: 0/5 selected, 2 hidden , Details
+-> TargetApp (hello.custom) (white,bold) | (white)
+->   complex_fail1 (yellow) | (yellow)
+->   complex_fail2 (white) | (white)
+->   suite (white,bold) | (white)
+->     success (white) | (white)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white,bold) | 2 (white,bold) | Check box (checked)
+-> Initial filter (white) | 0 (white) | Check box (checked)
+-> Failed (red,bold) | 2 (red,bold) | Check box (checked)
+->   Unrunnable (red,bold) | 2 (red,bold) | Check box
+->     TEXTTEST EXCEPTION (red,bold) | 2 (red,bold) | Check box
+-> Running (white) | 0 (white) | Check box (checked)
+-> Final filter (yellow,bold) | 1 (yellow,bold) | Check box (checked)
 
 Progress bar set to fraction 0.6, text '3 of 5 tests completed'
 
@@ -141,6 +202,7 @@ Updated : Test Tree with columns: Tests: 0/5 selected, 2 hidden , Details
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 2 (white,bold) | Check box (checked)
+-> Initial filter (white) | 0 (white) | Check box (checked)
 -> Failed (red,bold) | 3 (red,bold) | Check box (checked)
 ->   Differences (red,bold) | 1 (red,bold) | Check box (checked)
 ->     errors new (red,bold) | 1 (red,bold) | Check box (checked)
@@ -149,6 +211,7 @@ Updated : Test Status View with columns: Status , Number , Visible
 ->   Unrunnable (red,bold) | 2 (red,bold) | Check box
 ->     TEXTTEST EXCEPTION (red,bold) | 2 (red,bold) | Check box
 -> Running (white) | 0 (white) | Check box (checked)
+-> Final filter (white) | 0 (white) | Check box (checked)
 
 Updated : Test Tree with columns: Tests: 0/5 selected, 2 hidden , Details
 -> TargetApp (hello.custom) (white,bold) | (white)
@@ -159,6 +222,27 @@ Updated : Test Tree with columns: Tests: 0/5 selected, 2 hidden , Details
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 1 (white,bold) | Check box (checked)
+-> Initial filter (yellow,bold) | 1 (yellow,bold) | Check box (checked)
+-> Failed (red,bold) | 3 (red,bold) | Check box (checked)
+->   Differences (red,bold) | 1 (red,bold) | Check box (checked)
+->     errors new (red,bold) | 1 (red,bold) | Check box (checked)
+->     file3 different (red,bold) | 1 (red,bold) | Check box (checked)
+->     output different (red,bold) | 1 (red,bold) | Check box (checked)
+->   Unrunnable (red,bold) | 2 (red,bold) | Check box
+->     TEXTTEST EXCEPTION (red,bold) | 2 (red,bold) | Check box
+-> Running (white) | 0 (white) | Check box (checked)
+-> Final filter (white) | 0 (white) | Check box (checked)
+
+Updated : Test Tree with columns: Tests: 0/5 selected, 2 hidden , Details
+-> TargetApp (hello.custom) (white,bold) | (white)
+->   complex_fail1 (red) | output different(+) (red)
+->   complex_fail2 (yellow) | (yellow)
+->   suite (white,bold) | (white)
+->     success (white) | (white)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white,bold) | 1 (white,bold) | Check box (checked)
+-> Initial filter (white) | 0 (white) | Check box (checked)
 -> Failed (red,bold) | 3 (red,bold) | Check box (checked)
 ->   Differences (red,bold) | 1 (red,bold) | Check box (checked)
 ->     errors new (red,bold) | 1 (red,bold) | Check box (checked)
@@ -167,6 +251,27 @@ Updated : Test Status View with columns: Status , Number , Visible
 ->   Unrunnable (red,bold) | 2 (red,bold) | Check box
 ->     TEXTTEST EXCEPTION (red,bold) | 2 (red,bold) | Check box
 -> Running (yellow,bold) | 1 (yellow,bold) | Check box (checked)
+-> Final filter (white) | 0 (white) | Check box (checked)
+
+Updated : Test Tree with columns: Tests: 0/5 selected, 2 hidden , Details
+-> TargetApp (hello.custom) (white,bold) | (white)
+->   complex_fail1 (red) | output different(+) (red)
+->   complex_fail2 (yellow) | (yellow)
+->   suite (white,bold) | (white)
+->     success (white) | (white)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white,bold) | 1 (white,bold) | Check box (checked)
+-> Initial filter (white) | 0 (white) | Check box (checked)
+-> Failed (red,bold) | 3 (red,bold) | Check box (checked)
+->   Differences (red,bold) | 1 (red,bold) | Check box (checked)
+->     errors new (red,bold) | 1 (red,bold) | Check box (checked)
+->     file3 different (red,bold) | 1 (red,bold) | Check box (checked)
+->     output different (red,bold) | 1 (red,bold) | Check box (checked)
+->   Unrunnable (red,bold) | 2 (red,bold) | Check box
+->     TEXTTEST EXCEPTION (red,bold) | 2 (red,bold) | Check box
+-> Running (white) | 0 (white) | Check box (checked)
+-> Final filter (yellow,bold) | 1 (yellow,bold) | Check box (checked)
 
 Progress bar set to fraction 0.8, text '4 of 5 tests completed'
 
@@ -179,6 +284,7 @@ Updated : Test Tree with columns: Tests: 0/5 selected, 2 hidden , Details
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 1 (white,bold) | Check box (checked)
+-> Initial filter (white) | 0 (white) | Check box (checked)
 -> Failed (red,bold) | 4 (red,bold) | Check box (checked)
 ->   Differences (red,bold) | 2 (red,bold) | Check box (checked)
 ->     errors new (red,bold) | 2 (red,bold) | Check box (checked)
@@ -193,6 +299,7 @@ Updated : Test Status View with columns: Status , Number , Visible
 ->   Unrunnable (red,bold) | 2 (red,bold) | Check box
 ->     TEXTTEST EXCEPTION (red,bold) | 2 (red,bold) | Check box
 -> Running (white) | 0 (white) | Check box (checked)
+-> Final filter (white) | 0 (white) | Check box (checked)
 
 Updated : Test Tree with columns: Tests: 0/5 selected, 2 hidden , Details
 -> TargetApp (hello.custom) (white,bold) | (white)
@@ -203,6 +310,33 @@ Updated : Test Tree with columns: Tests: 0/5 selected, 2 hidden , Details
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white) | 0 (white) | Check box (checked)
+-> Initial filter (yellow,bold) | 1 (yellow,bold) | Check box (checked)
+-> Failed (red,bold) | 4 (red,bold) | Check box (checked)
+->   Differences (red,bold) | 2 (red,bold) | Check box (checked)
+->     errors new (red,bold) | 2 (red,bold) | Check box (checked)
+->       Group 1 (red,bold) | 2 (red,bold) | Check box (checked)
+->     file1 different (red,bold) | 1 (red,bold) | Check box (checked)
+->     file2 different (red,bold) | 1 (red,bold) | Check box (checked)
+->     file3 different (red,bold) | 2 (red,bold) | Check box (checked)
+->       Group 1 (red,bold) | 2 (red,bold) | Check box (checked)
+->     file4 different (red,bold) | 1 (red,bold) | Check box (checked)
+->     output different (red,bold) | 2 (red,bold) | Check box (checked)
+->       Group 1 (red,bold) | 2 (red,bold) | Check box (checked)
+->   Unrunnable (red,bold) | 2 (red,bold) | Check box
+->     TEXTTEST EXCEPTION (red,bold) | 2 (red,bold) | Check box
+-> Running (white) | 0 (white) | Check box (checked)
+-> Final filter (white) | 0 (white) | Check box (checked)
+
+Updated : Test Tree with columns: Tests: 0/5 selected, 2 hidden , Details
+-> TargetApp (hello.custom) (white,bold) | (white)
+->   complex_fail1 (red) | output different(+) (red)
+->   complex_fail2 (red) | output different(+) (red)
+->   suite (white,bold) | (white)
+->     success (yellow) | (yellow)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white) | 0 (white) | Check box (checked)
+-> Initial filter (white) | 0 (white) | Check box (checked)
 -> Failed (red,bold) | 4 (red,bold) | Check box (checked)
 ->   Differences (red,bold) | 2 (red,bold) | Check box (checked)
 ->     errors new (red,bold) | 2 (red,bold) | Check box (checked)
@@ -217,17 +351,18 @@ Updated : Test Status View with columns: Status , Number , Visible
 ->   Unrunnable (red,bold) | 2 (red,bold) | Check box
 ->     TEXTTEST EXCEPTION (red,bold) | 2 (red,bold) | Check box
 -> Running (yellow,bold) | 1 (yellow,bold) | Check box (checked)
-
-Progress bar set to fraction 1.0, text 'All 5 tests completed at 27Jan14:54:28'
+-> Final filter (white) | 0 (white) | Check box (checked)
 
 Updated : Test Tree with columns: Tests: 0/5 selected, 2 hidden , Details
 -> TargetApp (hello.custom) (white,bold) | (white)
 ->   complex_fail1 (red) | output different(+) (red)
 ->   complex_fail2 (red) | output different(+) (red)
-->   suite (white,bold) | All 1 tests successful (green)
+->   suite (white,bold) | (white)
+->     success (yellow) | (yellow)
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white) | 0 (white) | Check box (checked)
+-> Initial filter (white) | 0 (white) | Check box (checked)
 -> Failed (red,bold) | 4 (red,bold) | Check box (checked)
 ->   Differences (red,bold) | 2 (red,bold) | Check box (checked)
 ->     errors new (red,bold) | 2 (red,bold) | Check box (checked)
@@ -242,6 +377,34 @@ Updated : Test Status View with columns: Status , Number , Visible
 ->   Unrunnable (red,bold) | 2 (red,bold) | Check box
 ->     TEXTTEST EXCEPTION (red,bold) | 2 (red,bold) | Check box
 -> Running (white) | 0 (white) | Check box (checked)
+-> Final filter (yellow,bold) | 1 (yellow,bold) | Check box (checked)
+
+Progress bar set to fraction 1.0, text 'All 5 tests completed at 28Jan13:37:31'
+
+Updated : Test Tree with columns: Tests: 0/5 selected, 2 hidden , Details
+-> TargetApp (hello.custom) (white,bold) | (white)
+->   complex_fail1 (red) | output different(+) (red)
+->   complex_fail2 (red) | output different(+) (red)
+->   suite (white,bold) | All 1 tests successful (green)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white) | 0 (white) | Check box (checked)
+-> Initial filter (white) | 0 (white) | Check box (checked)
+-> Failed (red,bold) | 4 (red,bold) | Check box (checked)
+->   Differences (red,bold) | 2 (red,bold) | Check box (checked)
+->     errors new (red,bold) | 2 (red,bold) | Check box (checked)
+->       Group 1 (red,bold) | 2 (red,bold) | Check box (checked)
+->     file1 different (red,bold) | 1 (red,bold) | Check box (checked)
+->     file2 different (red,bold) | 1 (red,bold) | Check box (checked)
+->     file3 different (red,bold) | 2 (red,bold) | Check box (checked)
+->       Group 1 (red,bold) | 2 (red,bold) | Check box (checked)
+->     file4 different (red,bold) | 1 (red,bold) | Check box (checked)
+->     output different (red,bold) | 2 (red,bold) | Check box (checked)
+->       Group 1 (red,bold) | 2 (red,bold) | Check box (checked)
+->   Unrunnable (red,bold) | 2 (red,bold) | Check box
+->     TEXTTEST EXCEPTION (red,bold) | 2 (red,bold) | Check box
+-> Running (white) | 0 (white) | Check box (checked)
+-> Final filter (white) | 0 (white) | Check box (checked)
 -> Succeeded (green,bold) | 1 (green,bold) | Check box (checked)
 
 Expected application event 'completion of test actions' occurred, proceeding.

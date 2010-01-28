@@ -3,7 +3,7 @@ Adding entry completion '<default>' ...
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
 
----------- Window 'TextTest dynamic GUI : testing HELLO (started at 15Dec11:11:32)' ----------
+---------- Window 'TextTest dynamic GUI : testing HELLO (started at 28Jan12:07:29)' ----------
 Focus widget is 'Test Tree'
 
 Menu Bar : 'File' (+) , 'View' (+) , 'Actions' (+) , 'Help' (+)
@@ -12,7 +12,7 @@ Tool Bar :
   _Quit (Stock image 'gtk-quit', accelerator 'Ctrl+Q', tooltip 'Quit')
   _Kill (Stock image 'gtk-stop', greyed out, accelerator 'Ctrl+Delete', tooltip 'Kill selected tests')
   _Save (Stock image 'gtk-save', greyed out, accelerator 'Ctrl+S', tooltip 'Save results for selected tests')
-  Progress bar set to fraction 0.0, text 'All 0 tests completed at 15Dec11:11:32'
+  Progress bar set to fraction 0.0, text 'All 0 tests completed at 28Jan12:07:29'
 ...........
 
 Showing Test Tree with columns: Tests: All 0 selected , Details
@@ -26,7 +26,7 @@ Viewing page 'Status'
 Showing Test Status View with columns: Status , Number , Visible
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 15Dec11:11:32.' , Image 'throbber_inactive.png'
+'TextTest started at 28Jan12:07:29.' , Image 'throbber_inactive.png'
 ----------------------------------------------------------------------------------------------
 
 Progress bar set to fraction 0.0, text '0 of 1 tests completed'
@@ -44,9 +44,28 @@ Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white) | 0 (white) | Check box (checked)
+-> Initial filter (yellow,bold) | 1 (yellow,bold) | Check box (checked)
+
+Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
+-> TargetApp (hello) (white,bold) | (white)
+->   test1 (yellow) | (yellow)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white) | 0 (white) | Check box (checked)
+-> Initial filter (white) | 0 (white) | Check box (checked)
 -> Running (yellow,bold) | 1 (yellow,bold) | Check box (checked)
 
-Progress bar set to fraction 1.0, text 'All 1 tests completed at 15Dec11:11:33'
+Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
+-> TargetApp (hello) (white,bold) | (white)
+->   test1 (yellow) | (yellow)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white) | 0 (white) | Check box (checked)
+-> Initial filter (white) | 0 (white) | Check box (checked)
+-> Running (white) | 0 (white) | Check box (checked)
+-> Final filter (yellow,bold) | 1 (yellow,bold) | Check box (checked)
+
+Progress bar set to fraction 1.0, text 'All 1 tests completed at 28Jan12:07:29'
 
 Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
 -> TargetApp (hello) (white,bold) | (white)
@@ -54,7 +73,9 @@ Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white) | 0 (white) | Check box (checked)
+-> Initial filter (white) | 0 (white) | Check box (checked)
 -> Running (white) | 0 (white) | Check box (checked)
+-> Final filter (white) | 0 (white) | Check box (checked)
 -> Failed (red,bold) | 1 (red,bold) | Check box (checked)
 ->   Differences (red,bold) | 1 (red,bold) | Check box (checked)
 ->     another file different (red,bold) | 1 (red,bold) | Check box (checked)
@@ -97,8 +118,8 @@ Expected application event 'completion of test actions' occurred, proceeding.
 'select file' event created with arguments 'another file.hello'
 Adding entry completion 'output' ...
 Starting graphical difference comparison using 'tkdiff':
--- original file : /carm/proj/texttest-tmp/geoff/texttest.15Dec111019.17916/texttest.gui/TestSelf/FileViewers/GUI/SpacesInFileNames/TargetApp/test1/another file.hello
---  current file : /carm/proj/texttest-tmp/geoff/texttest.15Dec111019.17916/texttest.gui/TestSelf/FileViewers/GUI/SpacesInFileNames/texttesttmp/dynamic_gui.15Dec111132.421/hello/test1/another file.hello
+-- original file : /carm/proj/texttest-tmp/geoff/texttest.28Jan120647.30066/texttest.gui/TestSelf/FileViewers/GUI/SpacesInFileNames/TargetApp/test1/another file.hello
+--  current file : /carm/proj/texttest-tmp/geoff/texttest.28Jan120647.30066/texttest.gui/TestSelf/FileViewers/GUI/SpacesInFileNames/texttesttmp/dynamic_gui.28Jan120729.712/hello/test1/another file.hello
 
 Waiting for application event 'the graphical diff program to terminate' to occur.
 

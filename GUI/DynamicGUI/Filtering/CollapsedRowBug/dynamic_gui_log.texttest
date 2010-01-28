@@ -3,7 +3,7 @@ Adding entry completion '<default>' ...
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
 
----------- Window 'TextTest dynamic GUI : testing HELLO (started at 27Jan14:54:24)' ----------
+---------- Window 'TextTest dynamic GUI : testing HELLO (started at 28Jan13:37:30)' ----------
 Focus widget is 'Test Tree'
 
 Menu Bar : 'File' (+) , 'View' (+) , 'Actions' (+) , 'Help' (+)
@@ -12,7 +12,7 @@ Tool Bar :
   _Quit (Stock image 'gtk-quit', accelerator 'Ctrl+Q', tooltip 'Quit')
   _Kill (Stock image 'gtk-stop', greyed out, accelerator 'Ctrl+Delete', tooltip 'Kill selected tests')
   _Save (Stock image 'gtk-save', greyed out, accelerator 'Ctrl+S', tooltip 'Save results for selected tests')
-  Progress bar set to fraction 0.0, text 'All 0 tests completed at 27Jan14:54:24'
+  Progress bar set to fraction 0.0, text 'All 0 tests completed at 28Jan13:37:30'
 ...........
 
 Showing Test Tree with columns: Tests: All 0 selected , Details
@@ -26,7 +26,7 @@ Viewing page 'Status'
 Showing Test Status View with columns: Status , Number , Visible
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 27Jan14:54:24.' , Image 'throbber_inactive.png'
+'TextTest started at 28Jan13:37:31.' , Image 'throbber_inactive.png'
 ----------------------------------------------------------------------------------------------
 
 Progress bar set to fraction 0.0, text '0 of 1 tests completed'
@@ -60,7 +60,32 @@ Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 1 (white,bold) | Check box (checked)
+-> Initial filter (yellow,bold) | 1 (yellow,bold) | Check box (checked)
+
+Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
+-> TargetApp (hello) (white,bold) | (white)
+->   suite1 (white,bold) | (white)
+->     Test (yellow) | (yellow)
+->   suite2 (white,bold) | (white)
+->     Test (white) | (white)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white,bold) | 1 (white,bold) | Check box (checked)
+-> Initial filter (white) | 0 (white) | Check box (checked)
 -> Running (yellow,bold) | 1 (yellow,bold) | Check box (checked)
+
+Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
+-> TargetApp (hello) (white,bold) | (white)
+->   suite1 (white,bold) | (white)
+->     Test (yellow) | (yellow)
+->   suite2 (white,bold) | (white)
+->     Test (white) | (white)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white,bold) | 1 (white,bold) | Check box (checked)
+-> Initial filter (white) | 0 (white) | Check box (checked)
+-> Running (white) | 0 (white) | Check box (checked)
+-> Final filter (yellow,bold) | 1 (yellow,bold) | Check box (checked)
 
 Progress bar set to fraction 0.5, text '1 of 2 tests completed'
 
@@ -71,7 +96,9 @@ Updated : Test Tree with columns: Tests: 0/2 selected, 1 hidden , Details
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 1 (white,bold) | Check box (checked)
+-> Initial filter (white) | 0 (white) | Check box (checked)
 -> Running (white) | 0 (white) | Check box (checked)
+-> Final filter (white) | 0 (white) | Check box (checked)
 -> Succeeded (green,bold) | 1 (green,bold) | Check box
 
 Updated : Test Tree with columns: Tests: 0/2 selected, 1 hidden , Details
@@ -81,10 +108,36 @@ Updated : Test Tree with columns: Tests: 0/2 selected, 1 hidden , Details
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white) | 0 (white) | Check box (checked)
--> Running (yellow,bold) | 1 (yellow,bold) | Check box (checked)
+-> Initial filter (yellow,bold) | 1 (yellow,bold) | Check box (checked)
+-> Running (white) | 0 (white) | Check box (checked)
+-> Final filter (white) | 0 (white) | Check box (checked)
 -> Succeeded (green,bold) | 1 (green,bold) | Check box
 
-Progress bar set to fraction 1.0, text 'All 2 tests completed at 27Jan14:54:25'
+Updated : Test Tree with columns: Tests: 0/2 selected, 1 hidden , Details
+-> TargetApp (hello) (white,bold) | (white)
+->   suite2 (white,bold) | (white)
+->     Test (yellow) | (yellow)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white) | 0 (white) | Check box (checked)
+-> Initial filter (white) | 0 (white) | Check box (checked)
+-> Running (yellow,bold) | 1 (yellow,bold) | Check box (checked)
+-> Final filter (white) | 0 (white) | Check box (checked)
+-> Succeeded (green,bold) | 1 (green,bold) | Check box
+
+Updated : Test Tree with columns: Tests: 0/2 selected, 1 hidden , Details
+-> TargetApp (hello) (white,bold) | (white)
+->   suite2 (white,bold) | (white)
+->     Test (yellow) | (yellow)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white) | 0 (white) | Check box (checked)
+-> Initial filter (white) | 0 (white) | Check box (checked)
+-> Running (white) | 0 (white) | Check box (checked)
+-> Final filter (yellow,bold) | 1 (yellow,bold) | Check box (checked)
+-> Succeeded (green,bold) | 1 (green,bold) | Check box
+
+Progress bar set to fraction 1.0, text 'All 2 tests completed at 28Jan13:37:31'
 
 Updated : Test Tree with columns: Tests: 0/2 selected, 1 hidden , Details
 -> TargetApp (hello) (white,bold) | (white)
@@ -93,7 +146,9 @@ Updated : Test Tree with columns: Tests: 0/2 selected, 1 hidden , Details
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white) | 0 (white) | Check box (checked)
+-> Initial filter (white) | 0 (white) | Check box (checked)
 -> Running (white) | 0 (white) | Check box (checked)
+-> Final filter (white) | 0 (white) | Check box (checked)
 -> Succeeded (green,bold) | 1 (green,bold) | Check box
 -> Failed (red,bold) | 1 (red,bold) | Check box (checked)
 ->   Differences (red,bold) | 1 (red,bold) | Check box (checked)
@@ -133,8 +188,8 @@ Default widget is 'gtk-save'
 
 Showing File Chooser for 'Save selected tests in file'
 Shortcut folders (2) :
-- /carm/proj/texttest-tmp/geoff/texttest.27Jan145350.3201/texttest.gui/GUI/DynamicGUI/Filtering/CollapsedRowBug/texttesttmp/console.27Jan145424.18557/temporary_filter_files
-- /carm/proj/texttest-tmp/geoff/texttest.27Jan145350.3201/texttest.gui/GUI/DynamicGUI/Filtering/CollapsedRowBug/TargetApp/filter_files
+- /carm/proj/texttest-tmp/geoff/texttest.28Jan133716.2284/texttest.gui/GUI/DynamicGUI/Filtering/CollapsedRowBug/texttesttmp/console.28Jan133730.19862/temporary_filter_files
+- /carm/proj/texttest-tmp/geoff/texttest.28Jan133716.2284/texttest.gui/GUI/DynamicGUI/Filtering/CollapsedRowBug/TargetApp/filter_files
 ---------------
 Button 'gtk-save' (Stock image 'gtk-save') , Button 'gtk-cancel' (Stock image 'gtk-cancel')
 ----------------------------------------------------------
@@ -146,6 +201,6 @@ Button 'gtk-save' (Stock image 'gtk-save') , Button 'gtk-cancel' (Stock image 'g
 'press save' event created with arguments ''
 Adding entry completion 'free_text' ...
 
-Changing GUI status to: 'Saved HELLO test-case Test in file '/carm/proj/texttest-tmp/geoff/texttest.27Jan145350.3201/texttest.gui/GUI/DynamicGUI/Filtering/CollapsedRowBug/TargetApp/filter_files/filter1'.'
+Changing GUI status to: 'Saved HELLO test-case Test in file '/carm/proj/texttest-tmp/geoff/texttest.28Jan133716.2284/texttest.gui/GUI/DynamicGUI/Filtering/CollapsedRowBug/TargetApp/filter_files/filter1'.'
 
 'quit' event created with arguments ''

@@ -3,7 +3,7 @@ Adding entry completion 'cmdvar' ...
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
 
----------- Window 'TextTest dynamic GUI : testing BADBINARY.cmdvar,Env Variables.cmdvar (started at 27Jan14:54:09)' ----------
+---------- Window 'TextTest dynamic GUI : testing BADBINARY.cmdvar,Env Variables.cmdvar (started at 28Jan12:07:30)' ----------
 Focus widget is 'Test Tree'
 
 Menu Bar : 'File' (+) , 'View' (+) , 'Actions' (+) , 'Help' (+)
@@ -12,7 +12,7 @@ Tool Bar :
   _Quit (Stock image 'gtk-quit', accelerator 'Ctrl+Q', tooltip 'Quit')
   _Kill (Stock image 'gtk-stop', greyed out, accelerator 'Ctrl+Delete', tooltip 'Kill selected tests')
   _Save (Stock image 'gtk-save', greyed out, accelerator 'Ctrl+S', tooltip 'Save results for selected tests')
-  Progress bar set to fraction 0.0, text 'All 0 tests completed at 27Jan14:54:10'
+  Progress bar set to fraction 0.0, text 'All 0 tests completed at 28Jan12:07:31'
 ...........
 
 Showing Test Tree with columns: Tests: All 0 selected , Details
@@ -26,7 +26,7 @@ Viewing page 'Status'
 Showing Test Status View with columns: Status , Number , Visible
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 27Jan14:54:10.' , Image 'throbber_inactive.png'
+'TextTest started at 28Jan12:07:31.' , Image 'throbber_inactive.png'
 ----------------------------------------------------------------------------------------------------
 
 Progress bar set to fraction 0.0, text '0 of 1 tests completed'
@@ -58,7 +58,30 @@ Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 1 (white,bold) | Check box (checked)
+-> Initial filter (yellow,bold) | 1 (yellow,bold) | Check box (checked)
+
+Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
+-> TargetApp (env.cmdvar) (white,bold) | (white)
+->   Suite1 (white,bold) | (white)
+->     Test1 (yellow) | (yellow)
+->   Test2 (white) | (white)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white,bold) | 1 (white,bold) | Check box (checked)
+-> Initial filter (white) | 0 (white) | Check box (checked)
 -> Running (yellow,bold) | 1 (yellow,bold) | Check box (checked)
+
+Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
+-> TargetApp (env.cmdvar) (white,bold) | (white)
+->   Suite1 (white,bold) | (white)
+->     Test1 (yellow) | (yellow)
+->   Test2 (white) | (white)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white,bold) | 1 (white,bold) | Check box (checked)
+-> Initial filter (white) | 0 (white) | Check box (checked)
+-> Running (white) | 0 (white) | Check box (checked)
+-> Final filter (yellow,bold) | 1 (yellow,bold) | Check box (checked)
 
 Progress bar set to fraction 0.5, text '1 of 2 tests completed'
 
@@ -70,7 +93,9 @@ Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 1 (white,bold) | Check box (checked)
+-> Initial filter (white) | 0 (white) | Check box (checked)
 -> Running (white) | 0 (white) | Check box (checked)
+-> Final filter (white) | 0 (white) | Check box (checked)
 -> Failed (red,bold) | 1 (red,bold) | Check box (checked)
 ->   Differences (red,bold) | 1 (red,bold) | Check box (checked)
 ->     output different (red,bold) | 1 (red,bold) | Check box (checked)
@@ -83,12 +108,44 @@ Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white) | 0 (white) | Check box (checked)
--> Running (yellow,bold) | 1 (yellow,bold) | Check box (checked)
+-> Initial filter (yellow,bold) | 1 (yellow,bold) | Check box (checked)
+-> Running (white) | 0 (white) | Check box (checked)
+-> Final filter (white) | 0 (white) | Check box (checked)
 -> Failed (red,bold) | 1 (red,bold) | Check box (checked)
 ->   Differences (red,bold) | 1 (red,bold) | Check box (checked)
 ->     output different (red,bold) | 1 (red,bold) | Check box (checked)
 
-Progress bar set to fraction 1.0, text 'All 2 tests completed at 27Jan14:54:11'
+Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
+-> TargetApp (env.cmdvar) (white,bold) | (white)
+->   Suite1 (white,bold) | (white)
+->     Test1 (red) | output different (red)
+->   Test2 (yellow) | (yellow)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white) | 0 (white) | Check box (checked)
+-> Initial filter (white) | 0 (white) | Check box (checked)
+-> Running (yellow,bold) | 1 (yellow,bold) | Check box (checked)
+-> Final filter (white) | 0 (white) | Check box (checked)
+-> Failed (red,bold) | 1 (red,bold) | Check box (checked)
+->   Differences (red,bold) | 1 (red,bold) | Check box (checked)
+->     output different (red,bold) | 1 (red,bold) | Check box (checked)
+
+Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
+-> TargetApp (env.cmdvar) (white,bold) | (white)
+->   Suite1 (white,bold) | (white)
+->     Test1 (red) | output different (red)
+->   Test2 (yellow) | (yellow)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white) | 0 (white) | Check box (checked)
+-> Initial filter (white) | 0 (white) | Check box (checked)
+-> Running (white) | 0 (white) | Check box (checked)
+-> Final filter (yellow,bold) | 1 (yellow,bold) | Check box (checked)
+-> Failed (red,bold) | 1 (red,bold) | Check box (checked)
+->   Differences (red,bold) | 1 (red,bold) | Check box (checked)
+->     output different (red,bold) | 1 (red,bold) | Check box (checked)
+
+Progress bar set to fraction 1.0, text 'All 2 tests completed at 28Jan12:07:32'
 
 Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
 -> TargetApp (env.cmdvar) (white,bold) | (white)
@@ -98,7 +155,9 @@ Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white) | 0 (white) | Check box (checked)
+-> Initial filter (white) | 0 (white) | Check box (checked)
 -> Running (white) | 0 (white) | Check box (checked)
+-> Final filter (white) | 0 (white) | Check box (checked)
 -> Failed (red,bold) | 1 (red,bold) | Check box (checked)
 ->   Differences (red,bold) | 1 (red,bold) | Check box (checked)
 ->     output different (red,bold) | 1 (red,bold) | Check box (checked)
@@ -144,12 +203,12 @@ Viewing page 'Run Info'
 Application name : Env Variables
 Version          : cmdvar
 Number of tests  : 2
-Executable       : /carm/proj/texttest-tmp/geoff/texttest.27Jan145350.3201/texttest.gui/TestSelf/EnvironmentFile/GUI/ShowEnvironment/TargetApp/printenv.py
+Executable       : /carm/proj/texttest-tmp/geoff/texttest.28Jan120647.30066/texttest.gui/TestSelf/EnvironmentFile/GUI/ShowEnvironment/TargetApp/printenv.py
 
 Command line     : /users/geoff/work/master/Testing/TextTest/bin/texttest.py --vanilla site -v cmdvar -g
 
-Start time       : 27Jan14:54:09
-End time         : 27Jan14:54:11
+Start time       : 28Jan12:07:30
+End time         : 28Jan12:07:32
 ==============================
 
 ------------------------------ (horizontal pane separator, 46% from the top)
@@ -161,13 +220,13 @@ Selected test  : Test1
 Description:
 The First Test
 
-Command Line   : python /carm/proj/texttest-tmp/geoff/texttest.27Jan145350.3201/texttest.gui/TestSelf/EnvironmentFile/GUI/ShowEnvironment/TargetApp/printenv.py the_right_value
+Command Line   : python /carm/proj/texttest-tmp/geoff/texttest.28Jan120647.30066/texttest.gui/TestSelf/EnvironmentFile/GUI/ShowEnvironment/TargetApp/printenv.py the_right_value
 
 Environment variables :
-PATH=/carm/proj/texttest-tmp/geoff/texttest.27Jan145350.3201/texttest.gui/TestSelf/EnvironmentFile/GUI/ShowEnvironment/texttesttmp/dynamic_gui.cmdvar.27Jan145409.4878/env.cmdvar/Suite1/Test1:/carm/proj/texttest-tmp/geoff/texttest.27Jan145350.3201/texttest.gui/TestSelf/EnvironmentFile/GUI/ShowEnvironment:/carm/proj/texttest/geoff/Testing/TextTest/pyusecase/bin:/users/geoff/bin:/carm/proj/texttest/release/current/site/bin:/usr/local/share/sge6.2/bin/lx24-amd64:/carm/proj/texttest/geoff/Testing/TextTest/pyusecase/bin:/users/geoff/bin:/carm/proj/texttest/release/current/site/bin:/tmp/487921.1.short:/carm/proj/texttest/geoff/Testing/TextTest/pyusecase/bin:/users/geoff/bin:/carm/proj/texttest/release/current/site/bin:/carm/proj/texttest/geoff/Testing/TextTest/pyusecase/bin:/users/geoff/bin:/carm/proj/texttest/release/current/site/bin:/carm/proj/texttest/geoff/Testing/TextTest/pyusecase/bin:/users/geoff/bin:/carm/proj/texttest/release/current/site/bin:/usr/local/share/sge6.2/bin/lx24-amd64:/carm/proj/texttest/geoff/Testing/TextTest/pyusecase/bin:/users/geoff/bin:/carm/proj/texttest/release/current/site/bin:/usr/local/share/sge6.2/bin/lx24-amd64:/usr/lib64/qt-3.3/bin:/carm/rational/releases/PurifyPlus.7.0.0.0-010/i386_linux2/bin:/usr/local/sbin:/usr/kerberos/bin:/usr/local/bin:/usr/bin:/bin:/usr/X11R6/bin:/usr/sbin:/sbin:/usr/local/share/texttest/site/bin:/usr/local/share/java/apache-maven-2.2.1/bin:.
-TEXTTEST_ROOT=/carm/proj/texttest-tmp/geoff/texttest.27Jan145350.3201/texttest.gui/TestSelf/EnvironmentFile/GUI/ShowEnvironment/TargetApp
-TEXTTEST_SANDBOX=/carm/proj/texttest-tmp/geoff/texttest.27Jan145350.3201/texttest.gui/TestSelf/EnvironmentFile/GUI/ShowEnvironment/texttesttmp/dynamic_gui.cmdvar.27Jan145409.4878/env.cmdvar/Suite1/Test1
-TEXTTEST_SANDBOX_ROOT=/carm/proj/texttest-tmp/geoff/texttest.27Jan145350.3201/texttest.gui/TestSelf/EnvironmentFile/GUI/ShowEnvironment/texttesttmp/dynamic_gui.cmdvar.27Jan145409.4878
+PATH=/carm/proj/texttest-tmp/geoff/texttest.28Jan120647.30066/texttest.gui/TestSelf/EnvironmentFile/GUI/ShowEnvironment/texttesttmp/dynamic_gui.cmdvar.28Jan120730.27921/env.cmdvar/Suite1/Test1:/carm/proj/texttest-tmp/geoff/texttest.28Jan120647.30066/texttest.gui/TestSelf/EnvironmentFile/GUI/ShowEnvironment:/carm/proj/texttest/geoff/Testing/TextTest/pyusecase/bin:/users/geoff/bin:/carm/proj/texttest/release/current/site/bin:/usr/local/share/sge6.2/bin/lx24-amd64:/carm/proj/texttest/geoff/Testing/TextTest/pyusecase/bin:/users/geoff/bin:/carm/proj/texttest/release/current/site/bin:/tmp/516762.1.short:/carm/proj/texttest/geoff/Testing/TextTest/pyusecase/bin:/users/geoff/bin:/carm/proj/texttest/release/current/site/bin:/carm/proj/texttest/geoff/Testing/TextTest/pyusecase/bin:/users/geoff/bin:/carm/proj/texttest/release/current/site/bin:/carm/proj/texttest/geoff/Testing/TextTest/pyusecase/bin:/users/geoff/bin:/carm/proj/texttest/release/current/site/bin:/usr/local/share/sge6.2/bin/lx24-amd64:/carm/proj/texttest/geoff/Testing/TextTest/pyusecase/bin:/users/geoff/bin:/carm/proj/texttest/release/current/site/bin:/usr/local/share/sge6.2/bin/lx24-amd64:/usr/lib64/qt-3.3/bin:/carm/rational/releases/PurifyPlus.7.0.0.0-010/i386_linux2/bin:/usr/local/sbin:/usr/kerberos/bin:/usr/local/bin:/usr/bin:/bin:/usr/X11R6/bin:/usr/sbin:/sbin:/usr/local/share/texttest/site/bin:/usr/local/share/java/apache-maven-2.2.1/bin:.
+TEXTTEST_ROOT=/carm/proj/texttest-tmp/geoff/texttest.28Jan120647.30066/texttest.gui/TestSelf/EnvironmentFile/GUI/ShowEnvironment/TargetApp
+TEXTTEST_SANDBOX=/carm/proj/texttest-tmp/geoff/texttest.28Jan120647.30066/texttest.gui/TestSelf/EnvironmentFile/GUI/ShowEnvironment/texttesttmp/dynamic_gui.cmdvar.28Jan120730.27921/env.cmdvar/Suite1/Test1
+TEXTTEST_SANDBOX_ROOT=/carm/proj/texttest-tmp/geoff/texttest.28Jan120647.30066/texttest.gui/TestSelf/EnvironmentFile/GUI/ShowEnvironment/texttesttmp/dynamic_gui.cmdvar.28Jan120730.27921
 USECASE_HOME=.
 USECASE_REPLAY_SCRIPT=
 VAR1=the_right_value

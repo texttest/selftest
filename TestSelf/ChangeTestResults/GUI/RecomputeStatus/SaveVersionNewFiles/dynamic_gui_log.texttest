@@ -5,7 +5,7 @@ Adding entry completion '10.4' ...
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
 
----------- Window 'TextTest dynamic GUI : testing HELLO,HELLO.10.2,HELLO.10.4 (started at 27Jan14:54:08)' ----------
+---------- Window 'TextTest dynamic GUI : testing HELLO,HELLO.10.2,HELLO.10.4 (started at 28Jan12:07:28)' ----------
 Focus widget is 'Test Tree'
 
 Menu Bar : 'File' (+) , 'View' (+) , 'Actions' (+) , 'Help' (+)
@@ -14,7 +14,7 @@ Tool Bar :
   _Quit (Stock image 'gtk-quit', accelerator 'Ctrl+Q', tooltip 'Quit')
   _Kill (Stock image 'gtk-stop', greyed out, accelerator 'Ctrl+Delete', tooltip 'Kill selected tests')
   _Save (Stock image 'gtk-save', greyed out, accelerator 'Ctrl+S', tooltip 'Save results for selected tests')
-  Progress bar set to fraction 0.0, text 'All 0 tests completed at 27Jan14:54:09'
+  Progress bar set to fraction 0.0, text 'All 0 tests completed at 28Jan12:07:30'
 ...........
 
 Showing Test Tree with columns: Tests: All 0 selected , Details
@@ -28,7 +28,7 @@ Viewing page 'Status'
 Showing Test Status View with columns: Status , Number , Visible
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 27Jan14:54:09.' , Image 'throbber_inactive.png'
+'TextTest started at 28Jan12:07:30.' , Image 'throbber_inactive.png'
 ----------------------------------------------------------------------------------------------------
 
 Progress bar set to fraction 0.0, text '0 of 1 tests completed'
@@ -74,7 +74,34 @@ Updated : Test Tree with columns: Tests: 0/3 selected, none hidden , Details
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 2 (white,bold) | Check box (checked)
+-> Initial filter (yellow,bold) | 1 (yellow,bold) | Check box (checked)
+
+Updated : Test Tree with columns: Tests: 0/3 selected, none hidden , Details
+-> TargetApp (hello) (white,bold) | (white)
+->   OutDiff (yellow) | (yellow)
+-> TargetApp (hello.10.2) (white,bold) | (white)
+->   OutDiff (white) | (white)
+-> TargetApp (hello.10.4) (white,bold) | (white)
+->   OutDiff (white) | (white)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white,bold) | 2 (white,bold) | Check box (checked)
+-> Initial filter (white) | 0 (white) | Check box (checked)
 -> Running (yellow,bold) | 1 (yellow,bold) | Check box (checked)
+
+Updated : Test Tree with columns: Tests: 0/3 selected, none hidden , Details
+-> TargetApp (hello) (white,bold) | (white)
+->   OutDiff (yellow) | (yellow)
+-> TargetApp (hello.10.2) (white,bold) | (white)
+->   OutDiff (white) | (white)
+-> TargetApp (hello.10.4) (white,bold) | (white)
+->   OutDiff (white) | (white)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white,bold) | 2 (white,bold) | Check box (checked)
+-> Initial filter (white) | 0 (white) | Check box (checked)
+-> Running (white) | 0 (white) | Check box (checked)
+-> Final filter (yellow,bold) | 1 (yellow,bold) | Check box (checked)
 
 Progress bar set to fraction 0.333333333333, text '1 of 3 tests completed'
 
@@ -88,7 +115,9 @@ Updated : Test Tree with columns: Tests: 0/3 selected, none hidden , Details
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 2 (white,bold) | Check box (checked)
+-> Initial filter (white) | 0 (white) | Check box (checked)
 -> Running (white) | 0 (white) | Check box (checked)
+-> Final filter (white) | 0 (white) | Check box (checked)
 -> Failed (red,bold) | 1 (red,bold) | Check box (checked)
 ->   Differences (red,bold) | 1 (red,bold) | Check box (checked)
 ->     output different (red,bold) | 1 (red,bold) | Check box (checked)
@@ -103,7 +132,43 @@ Updated : Test Tree with columns: Tests: 0/3 selected, none hidden , Details
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 1 (white,bold) | Check box (checked)
+-> Initial filter (yellow,bold) | 1 (yellow,bold) | Check box (checked)
+-> Running (white) | 0 (white) | Check box (checked)
+-> Final filter (white) | 0 (white) | Check box (checked)
+-> Failed (red,bold) | 1 (red,bold) | Check box (checked)
+->   Differences (red,bold) | 1 (red,bold) | Check box (checked)
+->     output different (red,bold) | 1 (red,bold) | Check box (checked)
+
+Updated : Test Tree with columns: Tests: 0/3 selected, none hidden , Details
+-> TargetApp (hello) (white,bold) | (white)
+->   OutDiff (red) | output different (red)
+-> TargetApp (hello.10.2) (white,bold) | (white)
+->   OutDiff (yellow) | (yellow)
+-> TargetApp (hello.10.4) (white,bold) | (white)
+->   OutDiff (white) | (white)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white,bold) | 1 (white,bold) | Check box (checked)
+-> Initial filter (white) | 0 (white) | Check box (checked)
 -> Running (yellow,bold) | 1 (yellow,bold) | Check box (checked)
+-> Final filter (white) | 0 (white) | Check box (checked)
+-> Failed (red,bold) | 1 (red,bold) | Check box (checked)
+->   Differences (red,bold) | 1 (red,bold) | Check box (checked)
+->     output different (red,bold) | 1 (red,bold) | Check box (checked)
+
+Updated : Test Tree with columns: Tests: 0/3 selected, none hidden , Details
+-> TargetApp (hello) (white,bold) | (white)
+->   OutDiff (red) | output different (red)
+-> TargetApp (hello.10.2) (white,bold) | (white)
+->   OutDiff (yellow) | (yellow)
+-> TargetApp (hello.10.4) (white,bold) | (white)
+->   OutDiff (white) | (white)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white,bold) | 1 (white,bold) | Check box (checked)
+-> Initial filter (white) | 0 (white) | Check box (checked)
+-> Running (white) | 0 (white) | Check box (checked)
+-> Final filter (yellow,bold) | 1 (yellow,bold) | Check box (checked)
 -> Failed (red,bold) | 1 (red,bold) | Check box (checked)
 ->   Differences (red,bold) | 1 (red,bold) | Check box (checked)
 ->     output different (red,bold) | 1 (red,bold) | Check box (checked)
@@ -120,7 +185,9 @@ Updated : Test Tree with columns: Tests: 0/3 selected, none hidden , Details
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 1 (white,bold) | Check box (checked)
+-> Initial filter (white) | 0 (white) | Check box (checked)
 -> Running (white) | 0 (white) | Check box (checked)
+-> Final filter (white) | 0 (white) | Check box (checked)
 -> Failed (red,bold) | 2 (red,bold) | Check box (checked)
 ->   Differences (red,bold) | 2 (red,bold) | Check box (checked)
 ->     output different (red,bold) | 2 (red,bold) | Check box (checked)
@@ -136,13 +203,51 @@ Updated : Test Tree with columns: Tests: 0/3 selected, none hidden , Details
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white) | 0 (white) | Check box (checked)
--> Running (yellow,bold) | 1 (yellow,bold) | Check box (checked)
+-> Initial filter (yellow,bold) | 1 (yellow,bold) | Check box (checked)
+-> Running (white) | 0 (white) | Check box (checked)
+-> Final filter (white) | 0 (white) | Check box (checked)
 -> Failed (red,bold) | 2 (red,bold) | Check box (checked)
 ->   Differences (red,bold) | 2 (red,bold) | Check box (checked)
 ->     output different (red,bold) | 2 (red,bold) | Check box (checked)
 ->       Group 1 (red,bold) | 2 (red,bold) | Check box (checked)
 
-Progress bar set to fraction 1.0, text 'All 3 tests completed at 27Jan14:54:10'
+Updated : Test Tree with columns: Tests: 0/3 selected, none hidden , Details
+-> TargetApp (hello) (white,bold) | (white)
+->   OutDiff (red) | output different (red)
+-> TargetApp (hello.10.2) (white,bold) | (white)
+->   OutDiff (red) | output different (red)
+-> TargetApp (hello.10.4) (white,bold) | (white)
+->   OutDiff (yellow) | (yellow)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white) | 0 (white) | Check box (checked)
+-> Initial filter (white) | 0 (white) | Check box (checked)
+-> Running (yellow,bold) | 1 (yellow,bold) | Check box (checked)
+-> Final filter (white) | 0 (white) | Check box (checked)
+-> Failed (red,bold) | 2 (red,bold) | Check box (checked)
+->   Differences (red,bold) | 2 (red,bold) | Check box (checked)
+->     output different (red,bold) | 2 (red,bold) | Check box (checked)
+->       Group 1 (red,bold) | 2 (red,bold) | Check box (checked)
+
+Updated : Test Tree with columns: Tests: 0/3 selected, none hidden , Details
+-> TargetApp (hello) (white,bold) | (white)
+->   OutDiff (red) | output different (red)
+-> TargetApp (hello.10.2) (white,bold) | (white)
+->   OutDiff (red) | output different (red)
+-> TargetApp (hello.10.4) (white,bold) | (white)
+->   OutDiff (yellow) | (yellow)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white) | 0 (white) | Check box (checked)
+-> Initial filter (white) | 0 (white) | Check box (checked)
+-> Running (white) | 0 (white) | Check box (checked)
+-> Final filter (yellow,bold) | 1 (yellow,bold) | Check box (checked)
+-> Failed (red,bold) | 2 (red,bold) | Check box (checked)
+->   Differences (red,bold) | 2 (red,bold) | Check box (checked)
+->     output different (red,bold) | 2 (red,bold) | Check box (checked)
+->       Group 1 (red,bold) | 2 (red,bold) | Check box (checked)
+
+Progress bar set to fraction 1.0, text 'All 3 tests completed at 28Jan12:07:32'
 
 Updated : Test Tree with columns: Tests: 0/3 selected, none hidden , Details
 -> TargetApp (hello) (white,bold) | (white)
@@ -154,7 +259,9 @@ Updated : Test Tree with columns: Tests: 0/3 selected, none hidden , Details
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white) | 0 (white) | Check box (checked)
+-> Initial filter (white) | 0 (white) | Check box (checked)
 -> Running (white) | 0 (white) | Check box (checked)
+-> Final filter (white) | 0 (white) | Check box (checked)
 -> Failed (red,bold) | 3 (red,bold) | Check box (checked)
 ->   Differences (red,bold) | 3 (red,bold) | Check box (checked)
 ->     output different (red,bold) | 3 (red,bold) | Check box (checked)
@@ -224,7 +331,9 @@ Viewing page 'Status'
 
 Showing Test Status View with columns: Status , Number , Visible
 -> Not started (white) | 0 (white) | Check box (checked)
+-> Initial filter (white) | 0 (white) | Check box (checked)
 -> Running (white) | 0 (white) | Check box (checked)
+-> Final filter (white) | 0 (white) | Check box (checked)
 -> Failed (red,bold) | 2 (red,bold) | Check box (checked)
 ->   Differences (red,bold) | 2 (red,bold) | Check box (checked)
 ->     output different (red,bold) | 2 (red,bold) | Check box (checked)
@@ -289,7 +398,9 @@ Viewing page 'Status'
 
 Showing Test Status View with columns: Status , Number , Visible
 -> Not started (white) | 0 (white) | Check box (checked)
+-> Initial filter (white) | 0 (white) | Check box (checked)
 -> Running (white) | 0 (white) | Check box (checked)
+-> Final filter (white) | 0 (white) | Check box (checked)
 -> Failed (red,bold) | 1 (red,bold) | Check box (checked)
 ->   Differences (red,bold) | 1 (red,bold) | Check box (checked)
 ->     output different (red,bold) | 1 (red,bold) | Check box (checked)
@@ -342,7 +453,9 @@ Viewing page 'Status'
 
 Showing Test Status View with columns: Status , Number , Visible
 -> Not started (white) | 0 (white) | Check box (checked)
+-> Initial filter (white) | 0 (white) | Check box (checked)
 -> Running (white) | 0 (white) | Check box (checked)
+-> Final filter (white) | 0 (white) | Check box (checked)
 -> Failed (white) | 0 (white) | Check box (checked)
 ->   Differences (white) | 0 (white) | Check box (checked)
 ->     output different (white) | 0 (white) | Check box (checked)
@@ -384,8 +497,8 @@ Test succeeded
 
 'view raw differences' event created with arguments ''
 Starting graphical difference comparison using 'tkdiff':
--- original file : /carm/proj/texttest-tmp/geoff/texttest.27Jan145350.3201/texttest.gui/TestSelf/ChangeTestResults/GUI/RecomputeStatus/SaveVersionNewFiles/TargetApp/OutDiff/output.hello.10
---  current file : /carm/proj/texttest-tmp/geoff/texttest.27Jan145350.3201/texttest.gui/TestSelf/ChangeTestResults/GUI/RecomputeStatus/SaveVersionNewFiles/texttesttmp/console.++10.2++10.4.27Jan145408.16568/hello.10.4/OutDiff/output.hello
+-- original file : /carm/proj/texttest-tmp/geoff/texttest.28Jan120647.30066/texttest.gui/TestSelf/ChangeTestResults/GUI/RecomputeStatus/SaveVersionNewFiles/TargetApp/OutDiff/output.hello.10
+--  current file : /carm/proj/texttest-tmp/geoff/texttest.28Jan120647.30066/texttest.gui/TestSelf/ChangeTestResults/GUI/RecomputeStatus/SaveVersionNewFiles/texttesttmp/console.++10.2++10.4.28Jan120728.20561/hello.10.4/OutDiff/output.hello
 
 Waiting for application event 'the graphical diff program to terminate' to occur.
 

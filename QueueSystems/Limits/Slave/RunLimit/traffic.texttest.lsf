@@ -1,4 +1,43 @@
-<-CLI:18796
+<-CLI:764
+sleep.killing:Basic
+(idefault.rundependent
+Filtering
+p1
+(dp2
+S'category'
+p3
+S'initial_filter'
+p4
+sS'freeText'
+p5
+S'Filtering stored result files on redenaco'
+p6
+sS'started'
+p7
+I0
+sS'completed'
+p8
+I0
+sS'briefText'
+p9
+S''
+sS'executionHosts'
+p10
+(lp11
+S'redenaco'
+p12
+asS'observers'
+p13
+(lp14
+sS'passSelf'
+p15
+I00
+sS'lifecycleChange'
+p16
+S'start initial filtering'
+p17
+sb.
+<-CLI:764
 sleep.killing:Basic
 (idefault
 Running
@@ -10,7 +49,7 @@ S'running'
 p4
 sS'freeText'
 p5
-S'Running on novyy'
+S'Running on redenaco'
 p6
 sS'started'
 p7
@@ -20,12 +59,12 @@ p8
 I0
 sS'briefText'
 p9
-S'RUN (novyy)'
+S'RUN (redenaco)'
 p10
 sS'executionHosts'
 p11
 (lp12
-S'novyy'
+S'redenaco'
 p13
 asS'observers'
 p14
@@ -38,7 +77,103 @@ p17
 S'start'
 p18
 sb.
-<-CLI:18796.NO_REUSE
+<-CLI:764.NO_REUSE
+sleep.killing:Basic
+(idefault.rundependent
+Filtering
+p1
+(dp2
+S'category'
+p3
+S'final_filter'
+p4
+sS'freeText'
+p5
+S'Filtering and comparing newly generated result files on redenaco'
+p6
+sS'started'
+p7
+I1
+sS'completed'
+p8
+I0
+sS'briefText'
+p9
+S''
+sS'executionHosts'
+p10
+(lp11
+S'redenaco'
+p12
+asS'observers'
+p13
+(lp14
+sS'passSelf'
+p15
+I00
+sS'lifecycleChange'
+p16
+S'start final filtering and comparison'
+p17
+sS'failedPrediction'
+p18
+(idefault
+Killed
+p19
+(dp20
+g3
+S'killed'
+p21
+sS'prevState'
+p22
+(idefault
+Running
+p23
+(dp24
+g3
+S'running'
+p25
+sg5
+S'Running on redenaco'
+p26
+sg7
+I1
+sg8
+I0
+sg9
+S'RUN (redenaco)'
+p27
+sg10
+g11
+sg13
+(lp28
+sg15
+I00
+sg16
+S'start'
+p29
+sbsg5
+S'Test exceeded maximum wallclock time allowed by LSF (RUNLIMIT parameter)\n'
+p30
+sg7
+I1
+sg8
+I1
+sg9
+S'RUNLIMIT'
+p31
+sg10
+g11
+sg13
+(lp32
+sg15
+I00
+sg16
+S''
+sg18
+g19
+sbsb.
+<-CLI:764.NO_REUSE
 sleep.killing:Basic
 (idefault.comparetest
 TestComparison
@@ -61,7 +196,7 @@ S'1,2c1\n< Sleeping for 5 seconds...\n< Done\n---\n> Sleeping for 1000 seconds..
 p10
 sS'tmpFile'
 p11
-S'/carm/proj/texttest-tmp/geoff/texttest.18Dec174014.24720/texttest.lsf/QueueSystems/Limits/Slave/RunLimit/texttesttmp/console.killing.18Dec174200.18796/sleep.killing/Basic/output.sleep'
+S'/carm/proj/texttest-tmp/geoff/texttest.28Jan143325.10089/texttest.lsf/QueueSystems/Limits/Slave/RunLimit/texttesttmp/console.killing.28Jan143456.764/sleep.killing/Basic/output.sleep'
 p12
 sS'severity'
 p13
@@ -71,7 +206,7 @@ p14
 I1
 sS'stdFile'
 p15
-S'/carm/proj/texttest-tmp/geoff/texttest.18Dec174014.24720/texttest.lsf/QueueSystems/Limits/Slave/RunLimit/TargetApp/Basic/output.sleep'
+S'/carm/proj/texttest-tmp/geoff/texttest.28Jan143325.10089/texttest.lsf/QueueSystems/Limits/Slave/RunLimit/TargetApp/Basic/output.sleep'
 p16
 sS'stdCmpFile'
 p17
@@ -136,7 +271,7 @@ g3
 S'running'
 p42
 sg33
-S'Running on novyy'
+S'Running on redenaco'
 p43
 sg35
 I1
@@ -145,12 +280,12 @@ p44
 I0
 sS'briefText'
 p45
-S'RUN (novyy)'
+S'RUN (redenaco)'
 p46
 sS'executionHosts'
 p47
 (lp48
-S'novyy'
+S'redenaco'
 p49
 asS'observers'
 p50
@@ -180,6 +315,8 @@ sg52
 I00
 sg53
 S''
+sg36
+g37
 sbsg44
 I1
 sg45
@@ -190,7 +327,7 @@ sg50
 (lp58
 sS'appAbsPath'
 p59
-S'/carm/proj/texttest-tmp/geoff/texttest.18Dec174014.24720/texttest.lsf/QueueSystems/Limits/Slave/RunLimit/TargetApp'
+S'/carm/proj/texttest-tmp/geoff/texttest.28Jan143325.10089/texttest.lsf/QueueSystems/Limits/Slave/RunLimit/TargetApp'
 p60
 sS'allResults'
 p61
@@ -201,17 +338,17 @@ p63
 (dp64
 g9
 Nsg11
-S'/carm/proj/texttest-tmp/geoff/texttest.18Dec174014.24720/texttest.lsf/QueueSystems/Limits/Slave/RunLimit/texttesttmp/console.killing.18Dec174200.18796/sleep.killing/Basic/errors.sleep'
+S'/carm/proj/texttest-tmp/geoff/texttest.28Jan143325.10089/texttest.lsf/QueueSystems/Limits/Slave/RunLimit/texttesttmp/console.killing.28Jan143456.764/sleep.killing/Basic/errors.sleep'
 p65
 sg13
 I1
 sg14
 I0
 sg15
-S'/carm/proj/texttest-tmp/geoff/texttest.18Dec174014.24720/texttest.lsf/QueueSystems/Limits/Slave/RunLimit/TargetApp/Basic/errors.sleep'
+S'/carm/proj/texttest-tmp/geoff/texttest.28Jan143325.10089/texttest.lsf/QueueSystems/Limits/Slave/RunLimit/TargetApp/Basic/errors.sleep'
 p66
 sg17
-S'/carm/proj/texttest-tmp/geoff/texttest.18Dec174014.24720/texttest.lsf/QueueSystems/Limits/Slave/RunLimit/texttesttmp/console.killing.18Dec174200.18796/sleep.killing/Basic/framework_tmp/errors.sleeporigcmp'
+S'/carm/proj/texttest-tmp/geoff/texttest.28Jan143325.10089/texttest.lsf/QueueSystems/Limits/Slave/RunLimit/texttesttmp/console.killing.28Jan143456.764/sleep.killing/Basic/framework_tmp/errors.sleeporigcmp'
 p67
 sg18
 F-1
@@ -225,7 +362,7 @@ I500
 sg23
 I30
 sbsg24
-S'/carm/proj/texttest-tmp/geoff/texttest.18Dec174014.24720/texttest.lsf/QueueSystems/Limits/Slave/RunLimit/texttesttmp/console.killing.18Dec174200.18796/sleep.killing/Basic/framework_tmp/errors.sleepcmp'
+S'/carm/proj/texttest-tmp/geoff/texttest.28Jan143325.10089/texttest.lsf/QueueSystems/Limits/Slave/RunLimit/texttesttmp/console.killing.28Jan143456.764/sleep.killing/Basic/framework_tmp/errors.sleepcmp'
 p70
 sg25
 g26
@@ -248,7 +385,7 @@ S'complete'
 p74
 sS'appWriteDir'
 p75
-S'/carm/proj/texttest-tmp/geoff/texttest.18Dec174014.24720/texttest.lsf/QueueSystems/Limits/Slave/RunLimit/texttesttmp/console.killing.18Dec174200.18796'
+S'/carm/proj/texttest-tmp/geoff/texttest.28Jan143325.10089/texttest.lsf/QueueSystems/Limits/Slave/RunLimit/texttesttmp/console.killing.28Jan143456.764'
 p76
 sS'newResults'
 p77
