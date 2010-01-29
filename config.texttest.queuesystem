@@ -14,6 +14,7 @@ output:Cancellation in progress
 dynamic_gui_log:File .* line .* in
 dynamic_gui_log:Adding file .*.sleep under heading '.*Files', coloured yellow
 dynamic_gui_log:terminated before completion.*on{WORD -2}{REPLACE <machine>}
+dynamic_gui_log:-servaddr [0-9\.:]*{REPLACE -servaddr <host:port>}
 #catalogue:sleep.killing{LINES 20}
 catalogue:-core.[0-9]*$
 catalogue:-core$
