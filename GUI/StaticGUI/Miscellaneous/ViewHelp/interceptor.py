@@ -6,13 +6,11 @@ gtk.gtk_version = 2, 58, 42
 gobject.pygobject_version = 2, 61, 42
 gobject.glib_version = 2, 74, 42
 
-# Make sure the tests with Swedish chars work correctly
-# on systems with other default locales than ISO8859-1 ...
-
+# Credits have Swedish names, fix the locale to UTF-8
 import locale
 
 def default_locale():
-    return "en_US", "ISO8859-1"
+    return "en_US", "utf"
 
 locale.getdefaultlocale = default_locale
 
