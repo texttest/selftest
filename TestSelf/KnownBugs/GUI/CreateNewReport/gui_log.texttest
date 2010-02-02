@@ -2,9 +2,9 @@ Enabling entry completion, using matching 1
 Adding entry completion '<default>' ...
 Adding entry completion 'localhost' ...
 Adding entry completion '1' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.02Feb135225.9557/texttest.gui/TestSelf/KnownBugs/GUI/CreateNewReport/log/logging.debug' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.02Feb145647.12841/texttest.gui/TestSelf/KnownBugs/GUI/CreateNewReport/log/logging.debug' ...
 Adding entry completion '/users/geoff/work/master/Testing/TextTest/log/logging.debug' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.02Feb135225.9557/texttest.gui/TestSelf/KnownBugs/GUI/CreateNewReport/log' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.02Feb145647.12841/texttest.gui/TestSelf/KnownBugs/GUI/CreateNewReport/log' ...
 Adding entry completion 'site' ...
 Adding entry completion 'personal' ...
 Adding entry completion 'all' ...
@@ -51,7 +51,7 @@ Button 'Filter' (Stock image 'gtk-find', accelerator 'Ctrl+F', tooltip 'filter t
 Button 'Reset Tab' (tooltip 'Reset all the settings in the current tab to their default values')
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 02Feb13:52:51.' , Image 'throbber_inactive.png'
+'TextTest started at 02Feb14:56:51.' , Image 'throbber_inactive.png'
 ----------------------------------------------------------------------------------
 
 Changing GUI status to: 'Reading tests ...'
@@ -63,7 +63,7 @@ Updated : Test Tree with columns: Tests: 0/1 selected
 ->   Test (grey90)
 Updated drop-down list in 'Test-file to search' Text entry (set to 'output') (drop-down list containing ['knownbugs', '----------', 'errors', 'output'])
 
-Changing GUI status to: 'Reading tests completed at 02Feb13:52:51.'
+Changing GUI status to: 'Reading tests completed at 02Feb14:56:51.'
 
 Expected application event 'all tests to be read' occurred, proceeding.
 
@@ -101,27 +101,32 @@ Adding entry completion 'bugzilla' ...
 Default widget is 'gtk-ok'
 'Text or regexp to match:'
 Text entry
-'File to search in:'
+'File to search in:' (tooltip 'TextTest will search in the newly generated file (not the diff) with the stem you provide here. The exception is if you choose 'free_text', when it will search in the whole difference report as it appears in the lower right window in the dynamic GUI.')
 Text entry (set to 'output') (drop-down list containing ['errors', 'output', 'free_text'])
 '
 Version to report for:'
 Text entry
 'Trigger only when run on machine(s):'
 Text entry
+Check button 'Trigger if given text is NOT present'
+Check button 'Trigger even if other files differ' (tooltip 'By default, this bug is only enabled if only the provided file is different. Check this box to enable it irrespective of what other difference exist. Note this increases the chances of it being reported erroneously and should be used carefully.')
+Check button 'Trigger even if file to search would otherwise compare as equal' (tooltip 'By default, this bug is only enabled if a difference is detected in the provided file to search. Check this box to search for it even if the file compares as equal.')
+---------------
+'Fill in exactly one of the sections below
+'
+.....'Link failure to a reported bug'......
 '
 Extract info from bug system:'
 Text entry (set to '<none>') (drop-down list containing ['<none>', 'bugzilla'])
-'Bug ID (only if bug system given):'
+'Bug ID:'
 Text entry
+.....'Link failure to a textual description'......
 '
-Full description (no bug system):'
+Full description:'
 Text entry
-'Few-word summary (no bug system):'
+'Few-word summary:'
 Text entry
-Check button 'Trigger if given text is NOT present'
-Check button 'Trigger even if other files differ'
-Check button 'Trigger even if file to search would otherwise compare as equal'
-Check button 'Report as 'internal error' rather than 'known bug' (no bug system)'
+Check button 'Report as 'internal error' rather than 'known bug''
 ---------------
 Button 'gtk-ok' (Stock image 'gtk-ok') , Button 'gtk-cancel' (Stock image 'gtk-cancel')
 ----------------------------------------------------------------------------------------------
@@ -135,11 +140,11 @@ Edited 'Version to report for' Text entry (set to 'new')
 'enter extract info from bug system =' event created with arguments 'bugzilla'
 Edited 'Extract info from bug system' Text entry (set to 'bugzilla')
 
-'enter bug id (only if bug system given) =' event created with arguments '1831'
-Edited 'Bug ID (only if bug system given)' Text entry (set to '1831')
+'enter bug id =' event created with arguments '1831'
+Edited 'Bug ID' Text entry (set to '1831')
 
 'check trigger even if other files differ' event created with arguments ''
-Toggled Check button 'Trigger even if other files differ' (checked)
+Toggled Check button 'Trigger even if other files differ' (checked) (tooltip 'By default, this bug is only enabled if only the provided file is different. Check this box to enable it irrespective of what other difference exist. Note this increases the chances of it being reported erroneously and should be used carefully.')
 
 'press ok' event created with arguments ''
 Adding entry completion 'Harald' ...
