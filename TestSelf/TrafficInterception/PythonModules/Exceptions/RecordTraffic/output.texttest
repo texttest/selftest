@@ -1,0 +1,18 @@
+Using Application TRAFFIC
+Running TRAFFIC test-suite TargetApp
+  Running TRAFFIC test-case Test
+Comparing differences for TRAFFIC test-suite TargetApp
+  Comparing differences for TRAFFIC test-case Test (on errors.traffic,output.traffic,traffic.traffic)
+  TRAFFIC test-case Test FAILED : differences in output,traffic
+  View details(v), Save Version rectraffic(1), Save(s) or continue(any other key)?
+---------- Differences in output ----------
+1c1
+< Caught exception: 'module' object doesn't REALLY have an attribute 'no_such_method', stupid!
+---
+> Caught exception: 'module' object has no attribute 'no_such_method'
+---------- Differences in traffic ----------
+2c2
+< ->RET:Exception AttributeError("'module' object doesn't REALLY have an attribute 'no_such_method', stupid!")
+---
+> ->RET:Exception AttributeError("'module' object has no attribute 'no_such_method'")
+  Save Version rectraffic(1), Save(s) or continue(any other key)?
