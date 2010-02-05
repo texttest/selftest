@@ -12,7 +12,7 @@ Comparing differences for TRAFFIC test-suite TargetApp
 > Caught exception: 'module' object has no attribute 'no_such_method'
 ---------- Differences in traffic ----------
 2c2
-< ->RET:Exception AttributeError("'module' object doesn't REALLY have an attribute 'no_such_method', stupid!")
+< ->RET:Exception exceptions.AttributeError("'module' object doesn't REALLY have an attribute 'no_such_method', stupid!")
 ---
-> ->RET:Exception AttributeError("'module' object has no attribute 'no_such_method'")
+> ->RET:Exception exceptions.AttributeError("'module' object has no attribute 'no_such_method'")
   Save Version rectraffic(1), Save(s) or continue(any other key)?
