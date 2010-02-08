@@ -16,9 +16,9 @@ Comparing differences for TRAFFIC test-suite TargetApp
 > Caught exception: <urlopen error unknown url type: foo>
 ---------- Differences in traffic ----------
 2c2
-< ->RET:Exception: AttributeError("'module' object doesn't REALLY have an attribute 'no_such_method', stupid!")
+< ->RET:raise AttributeError("'module' object doesn't REALLY have an attribute 'no_such_method', stupid!")
 ---
-> ->RET:Exception: AttributeError("'module' object has no attribute 'no_such_method'")
+> ->RET:raise AttributeError("'module' object has no attribute 'no_such_method'")
 6c6
 < ->RET:"<urlopen error (-2, 'No such site, you wally!')>"
 ---
