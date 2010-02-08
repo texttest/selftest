@@ -12,8 +12,8 @@ Comparing differences for TRAFFIC test-suite TargetApp
 < Caught exception: <urlopen error (-2, 'Now you're really getting on my nerves!')>
 ---
 > Caught exception: 'module' object has no attribute 'no_such_method'
-> Caught exception: <urlopen error (-2, 'Name or service not known')>
-> Caught exception: <urlopen error (-2, 'Name or service not known')>
+> Caught exception: <urlopen error unknown url type: foo>
+> Caught exception: <urlopen error unknown url type: foo>
 ---------- Differences in traffic ----------
 2c2
 < ->RET:Exception: AttributeError("'module' object doesn't REALLY have an attribute 'no_such_method', stupid!")
@@ -22,9 +22,9 @@ Comparing differences for TRAFFIC test-suite TargetApp
 6c6
 < ->RET:"<urlopen error (-2, 'No such site, you wally!')>"
 ---
-> ->RET:"<urlopen error (-2, 'Name or service not known')>"
+> ->RET:'<urlopen error unknown url type: foo>'
 10c10
 < ->RET:"<urlopen error (-2, 'Now you're really getting on my nerves!')>"
 ---
-> ->RET:"<urlopen error (-2, 'Name or service not known')>"
+> ->RET:'<urlopen error unknown url type: foo>'
   Save Version rectraffic(1), Save(s) or continue(any other key)?
