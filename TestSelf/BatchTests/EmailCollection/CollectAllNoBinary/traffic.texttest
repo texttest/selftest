@@ -1,10 +1,15 @@
-From: geoff@localhost
-To: harry
-Subject: 040908 FAKE : 25 tests ran : 3 unrunnable, 6 FAILED, 5 internal errors
+<-PYT:smtplib.SMTP()
+->RET:Instance('SMTP', 'smtp1')
+<-PYT:smtp1.connect('localhost')
+->RET:(220, 'khwai.got.jeppesensystems.com ESMTP Sendmail 8.13.8/8.13.8; Tue, 9 Feb 2010 15:20:28 +0100')
+<-PYT:smtp1.sendmail('geoff@localhost', ['tom'], '''From: geoff@localhost
+To: tom
+Subject: 040907 FAKE : 26 tests ran : 3 unrunnable, 6 FAILED, 5 internal errors, 1 CRASHED
 
 040908 Matador badrule.extraversion : 3 tests : 3 unrunnable
 040909 DIP unix : 11 tests : 5 FAILED
 040908 DIP unix : 11 tests : 5 internal errors, 1 FAILED
+040907 CORE : 1 tests : 1 CRASHED
 
 Summary of all Unsuccessful tests follows...
 =================================================================================
@@ -44,14 +49,20 @@ In DIP test-suite TargetApp:
   In DIP test-suite Game9952:
     - DIP test-case S02    : Aeg SUPPORT
     - DIP test-case A03    : Aeg SUPPORT
-    - DIP test-case A04    : missing 'Spa'
-    - DIP test-case S05    : missing 'Spa'
-    - DIP test-case A05    : missing 'Spa'
+    - DIP test-case A04    : missing \'Spa\'
+    - DIP test-case S05    : missing \'Spa\'
+    - DIP test-case A05    : missing \'Spa\'
 
 The following tests FAILED : 
 In DIP test-suite TargetApp:
   In DIP test-suite Game9952:
     - DIP test-case A02    : output different
+
+040907 CORE : 1 tests : 1 CRASHED
+
+The following tests CRASHED : 
+In CORE test-suite TargetApp:
+  - CORE test-case DumpCore
 
 Details of all Unsuccessful tests follows...
 =================================================================================
@@ -78,7 +89,7 @@ Generating code...
 
 --------------------------------------------------------
 TEST could not be run : Matador test-case generate_in_subperiod (under ArtificialUser/generate_in_subperiod)
-Trying to use ruleset 'Matador_5_bad' that failed to build.
+Trying to use ruleset \'Matador_5_bad\' that failed to build.
 
 ---------------------------------------------------------------------------------
 Matador badrule.extraversion.parallel : 1 tests : 1 unrunnable
@@ -87,7 +98,7 @@ Matador badrule.extraversion.parallel : 1 tests : 1 unrunnable
 Detailed information for the tests that could not be run follows...
 --------------------------------------------------------
 TEST could not be run : Matador test-case generate_in_subperiod (under ArtificialUser/generate_in_subperiod)
-Trying to use ruleset 'Matador_5_bad' that failed to build.
+Trying to use ruleset \'Matador_5_bad\' that failed to build.
 
 =================================================================================
 040909 DIP unix : 11 tests : 5 FAILED
@@ -171,6 +182,27 @@ TEST FAILED on fougamou : DIP test-case A02    (under Game9952/A02)
 ---
 > Germany: Hol HOLD                  (*was dislodged*)
 
+=================================================================================
+040907 CORE : 1 tests : 1 CRASHED
+
+Detailed information for the tests that CRASHED follows...
+--------------------------------------------------------
+TEST CRASHED on severodoneck : CORE test-case DumpCore (under DumpCore)
+Program terminated with signal 11, Segmentation fault.
+Stack trace from gdb :
+___newselect_nocancel 
+floatsleep 
+time_sleep 
+PyCFunction_Call 
+PyEval_EvalCode 
+PyEval_EvalCodeEx 
+PyEval_EvalCode 
+PyRun_FileExFlags 
+PyRun_SimpleFileExFlags 
+PyRun_AnyFileExFlags 
+Py_Main 
+main
+
 Summary of all Successful tests follows...
 =================================================================================
 040909 DIP unix : 11 tests : 5 FAILED
@@ -200,3 +232,7 @@ In DIP test-suite TargetApp:
     In DIP test-suite Game47:
       - DIP test-case S01
 
+''')
+->RET:{}
+<-PYT:smtp1.quit()
+->RET:None

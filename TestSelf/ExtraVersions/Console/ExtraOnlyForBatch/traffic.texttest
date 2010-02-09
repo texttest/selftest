@@ -1,6 +1,10 @@
-From: geoff@localhost
+<-PYT:smtplib.SMTP()
+->RET:Instance('SMTP', 'smtp1')
+<-PYT:smtp1.connect('localhost')
+->RET:(220, 'painesville.carmen.se ESMTP Sendmail 8.13.8/8.13.8; Tue, 9 Feb 2010 15:20:28 +0100')
+<-PYT:smtp1.sendmail('geoff@localhost', ['santa.claus@northpole.com'], '''From: geoff@localhost
 To: santa.claus@northpole.com
-Subject: 05Nov2007 HELLO : 10 tests, all successful
+Subject: 09Feb2010 HELLO : 10 tests, all successful
 
 HELLO : 2 tests, all successful
 HELLO extra1 : 2 tests, all successful
@@ -50,3 +54,7 @@ In HELLO.batch_extra2 test-suite TargetApp:
   - HELLO.batch_extra2 test-case Base
 
 
+''')
+->RET:{}
+<-PYT:smtp1.quit()
+->RET:None

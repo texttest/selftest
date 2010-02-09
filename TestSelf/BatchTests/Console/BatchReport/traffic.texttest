@@ -1,6 +1,10 @@
-From: geoff@localhost
+<-PYT:smtplib.SMTP()
+->RET:Instance('SMTP', 'smtp1')
+<-PYT:smtp1.connect('localhost')
+->RET:(220, 'gewoia.jeppesensystems.com ESMTP Sendmail 8.13.8/8.13.8; Tue, 9 Feb 2010 14:32:54 +0100')
+<-PYT:smtp1.sendmail('me@localhost', ['tom', 'dick', 'harry'], '''From: me@localhost
 To: tom,dick,harry
-Subject: 26Sep2007 HELLO : 3 tests : 3 FAILED
+Subject: 02Jan2009 HELLO : 4 tests : 3 FAILED
 
 Summary of all Unsuccessful tests follows...
 ---------------------------------------------------------------------------------
@@ -17,7 +21,7 @@ Details of all Unsuccessful tests follows...
 
 Detailed information for the tests that FAILED follows...
 --------------------------------------------------------
-2 TESTS FAILED on severodoneck :
+2 TESTS FAILED on gewoia :
 ---------- Differences in output ----------
 0a1
 > Hello World!
@@ -25,7 +29,7 @@ Detailed information for the tests that FAILED follows...
 -- HELLO test-case OutDiff (under OutDiff)
 -- HELLO test-case OutDiff2 (under suite/OutDiff2)
 --------------------------------------------------------
-TEST FAILED on severodoneck : HELLO test-case BothDiff (under BothDiff)
+TEST FAILED on gewoia : HELLO test-case BothDiff (under BothDiff)
 ---------- Differences in errors ----------
 0a1
 > Error text
@@ -33,3 +37,14 @@ TEST FAILED on severodoneck : HELLO test-case BothDiff (under BothDiff)
 0a1
 > Hello World!
 
+Summary of all Successful tests follows...
+---------------------------------------------------------------------------------
+The following tests succeeded : 
+In HELLO test-suite TargetApp:
+  - HELLO test-case Success
+
+
+''')
+->RET:{}
+<-PYT:smtp1.quit()
+->RET:None

@@ -1,6 +1,10 @@
-From: geoff@localhost
+<-PYT:smtplib.SMTP()
+->RET:Instance('SMTP', 'smtp1')
+<-PYT:smtp1.connect('localhost')
+->RET:(220, 'juliaca.got.jeppesensystems.com ESMTP Sendmail 8.13.8/8.13.8; Tue, 9 Feb 2010 15:20:32 +0100')
+<-PYT:smtp1.sendmail('geoff@localhost', ['tom', 'dick', 'harry'], '''From: geoff@localhost
 To: tom,dick,harry
-Subject: 20May2009 HELLO : 8 tests : 6 FAILED
+Subject: 09Feb2010 HELLO : 8 tests : 6 FAILED
 
 HELLO : 4 tests : 3 FAILED
 HELLO extra : 4 tests : 3 FAILED
@@ -34,7 +38,7 @@ HELLO : 4 tests : 3 FAILED
 
 Detailed information for the tests that FAILED follows...
 --------------------------------------------------------
-2 TESTS FAILED on gewoia :
+2 TESTS FAILED on juliaca :
 ---------- Differences in output ----------
 0a1
 > Hello World!
@@ -42,7 +46,7 @@ Detailed information for the tests that FAILED follows...
 -- HELLO test-case OutDiff (under OutDiff)
 -- HELLO test-case OutDiff2 (under suite/OutDiff2)
 --------------------------------------------------------
-TEST FAILED on gewoia : HELLO test-case BothDiff (under BothDiff)
+TEST FAILED on juliaca : HELLO test-case BothDiff (under BothDiff)
 ---------- Differences in errors ----------
 0a1
 > Error text
@@ -56,7 +60,7 @@ HELLO extra : 4 tests : 3 FAILED
 
 Detailed information for the tests that FAILED follows...
 --------------------------------------------------------
-2 TESTS FAILED on gewoia :
+2 TESTS FAILED on juliaca :
 ---------- Differences in output ----------
 0a1
 > Hello World!
@@ -64,7 +68,7 @@ Detailed information for the tests that FAILED follows...
 -- HELLO.extra test-case OutDiff (under OutDiff)
 -- HELLO.extra test-case OutDiff2 (under suite/OutDiff2)
 --------------------------------------------------------
-TEST FAILED on gewoia : HELLO.extra test-case BothDiff (under BothDiff)
+TEST FAILED on juliaca : HELLO.extra test-case BothDiff (under BothDiff)
 ---------- Differences in errors ----------
 0a1
 > Error text
@@ -88,3 +92,7 @@ In HELLO.extra test-suite TargetApp:
   - HELLO.extra test-case Success
 
 
+''')
+->RET:{}
+<-PYT:smtp1.quit()
+->RET:None
