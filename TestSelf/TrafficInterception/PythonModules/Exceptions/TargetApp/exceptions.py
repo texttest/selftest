@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-import logging
+import logging, sys
 try:
     print logging.no_such_method("argument", faking=True)
 except Exception, e:
@@ -14,6 +14,7 @@ except urllib2.URLError, e:
 
 try:
     print urllib2.urlopen("foo://another.no.such.site")
-except Exception, e:
-    print "Caught exception:", e
-
+except Exception:
+    from traceback import format_exception_only
+    exc_type, exc_value = sys.exc_info()[:2]
+    print "".join(format_exception_only(exc_type, exc_value))
