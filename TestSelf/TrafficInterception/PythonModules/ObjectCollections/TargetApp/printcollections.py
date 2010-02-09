@@ -8,6 +8,6 @@ for name, animal in collectionfinder.get_named_animals().items():
 try:
     for animal in collectionfinder.get_animals():
         print animal.milk()
-except Exception, e:
-    print "Caught exception", e
+except collectionfinder.BadAnimal, e:
+    print "BadAnimal Exception:", e
 
