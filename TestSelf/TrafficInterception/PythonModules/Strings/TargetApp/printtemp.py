@@ -2,4 +2,4 @@
 
 import tempfile
 
-print tempfile.gettempdir(), tempfile.tempdir
+print tempfile.gettempdir() + " " + tempfile.tempdir
