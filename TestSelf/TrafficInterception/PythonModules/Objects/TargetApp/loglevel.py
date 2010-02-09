@@ -2,7 +2,8 @@
 
 import logging
 
-logger = logging.getLogger("Some Logger")
+logger = logging.getLogger("""Some Multiline
+Logger""")
 if isinstance(logger, logging.Logger):
     print logger.getEffectiveLevel() / 10
 else:
