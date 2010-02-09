@@ -1,5 +1,5 @@
 <-PYT:logging.no_such_method('argument', faking=True)
-->RET:raise AttributeError("'module' object doesn't REALLY have an attribute 'no_such_method', stupid!")
+->RET:raise exceptions.AttributeError("'module' object doesn't REALLY have an attribute 'no_such_method', stupid!")
 <-PYT:urllib2.urlopen('foo://no.such.site')
 ->RET:raise Instance('URLError', 'urlerror1')
 <-PYT:urlerror1.__str__()
