@@ -51,24 +51,24 @@ Updated : Test Status View with columns: Status , Number , Visible
 
 Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
 -> TargetApp (hello) (white,bold) | (white)
-->   Test (white) | PEND (white)
+->   Test (grey80) | PEND (grey80)
 ->   Suite (white,bold) | (white)
 ->     Test (white) | (white)
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 1 (white,bold) | Check box (checked)
--> Pending (white,bold) | 1 (white,bold) | Check box (checked)
+-> Pending (grey80,bold) | 1 (grey80,bold) | Check box (checked)
 
 Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
 -> TargetApp (hello) (white,bold) | (white)
-->   Test (yellow) | RUN (withamfield) (yellow)
+->   Test (LightGoldenrod1) | RUN (withamfield) (LightGoldenrod1)
 ->   Suite (white,bold) | (white)
 ->     Test (white) | (white)
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 1 (white,bold) | Check box (checked)
 -> Pending (white) | 0 (white) | Check box (checked)
--> Running (yellow,bold) | 1 (yellow,bold) | Check box (checked)
+-> Running (LightGoldenrod1,bold) | 1 (LightGoldenrod1,bold) | Check box (checked)
 
 Expected application event 'all tests to be read' occurred, proceeding.
 Expected application event 'test Test under TargetApp to start' occurred, proceeding.
@@ -112,14 +112,14 @@ Progress bar set to fraction 0.5, text '1 of 2 tests completed'
 
 Updated : Test Tree with columns: Tests: 1/2 selected, none hidden , Details
 -> TargetApp (hello) (white,bold) | (white)
-->   Test (red) | output different (red)
+->   Test (salmon) | output different (salmon)
 ->   Suite (white,bold) | (white)
 ->     Test (white) | (white)
 
 Updated : File Tree with columns: Test , Details
 -> Comparison Files (bold)
-->   errors.hello (green) | (green)
-->   output.hello (red) | (red)
+->   errors.hello (DarkSeaGreen2) | (DarkSeaGreen2)
+->   output.hello (salmon) | (salmon)
 
 ========== Text Info ==========
 Test FAILED on withamfield :
@@ -132,22 +132,22 @@ Test FAILED on withamfield :
 
 Updated : Test Tree with columns: Tests: 1/2 selected, none hidden , Details
 -> TargetApp (hello) (white,bold) | (white)
-->   Test (red) | output different (red)
+->   Test (salmon) | output different (salmon)
 ->   Suite (white,bold) | (white)
-->     Test (white) | PEND (white)
+->     Test (grey80) | PEND (grey80)
 
 Updated : Test Tree with columns: Tests: 1/2 selected, none hidden , Details
 -> TargetApp (hello) (white,bold) | (white)
-->   Test (red) | output different (red)
+->   Test (salmon) | output different (salmon)
 ->   Suite (white,bold) | (white)
-->     Test (yellow) | RUN (withamfield) (yellow)
+->     Test (LightGoldenrod1) | RUN (withamfield) (LightGoldenrod1)
 
 Progress bar set to fraction 1.0, text 'All 2 tests completed at 27Jan14:54:46'
 
 Updated : Test Tree with columns: Tests: 1/2 selected, none hidden , Details
 -> TargetApp (hello) (white,bold) | (white)
-->   Test (red) | output different (red)
-->   Suite (white,bold) | All 1 tests successful (green)
+->   Test (salmon) | output different (salmon)
+->   Suite (white,bold) | All 1 tests successful (DarkSeaGreen2)
 
 Expected application event 'completion of test actions' occurred, proceeding.
 

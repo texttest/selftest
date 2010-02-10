@@ -40,11 +40,11 @@ Updated : Test Status View with columns: Status , Number , Visible
 
 Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
 -> TargetApp (sleep) (white,bold) | (white)
-->   Basic (white) | PEND (white)
+->   Basic (grey80) | PEND (grey80)
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white) | 0 (white) | Check box (checked)
--> Pending (white,bold) | 1 (white,bold) | Check box (checked)
+-> Pending (grey80,bold) | 1 (grey80,bold) | Check box (checked)
 
 Expected application event 'test Basic to become pending' occurred, proceeding.
 Expected application event 'test configuration to be read' occurred, proceeding.
@@ -57,40 +57,40 @@ Progress bar set to fraction 1.0, text 'All 1 tests completed at 15Dec11:11:07'
 
 Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
 -> TargetApp (sleep) (white,bold) | (white)
-->   Basic (red) | cancelled pending job at 11:11 (red)
+->   Basic (salmon) | cancelled pending job at 11:11 (salmon)
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white) | 0 (white) | Check box (checked)
 -> Pending (white) | 0 (white) | Check box (checked)
--> Failed (red,bold) | 1 (red,bold) | Check box (checked)
-->   Cancelled (red,bold) | 1 (red,bold) | Check box (checked)
-->     cancelled pending job at 11:11 (red,bold) | 1 (red,bold) | Check box (checked)
+-> Failed (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->   Cancelled (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->     cancelled pending job at 11:11 (salmon,bold) | 1 (salmon,bold) | Check box (checked)
 
 Progress bar set to fraction 0.5, text '1 of 2 tests completed'
 
 Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
 -> TargetApp (sleep) (white,bold) | (white)
-->   Basic (red) | cancelled pending job at 11:11 (red)
+->   Basic (salmon) | cancelled pending job at 11:11 (salmon)
 ->   Basic2 (white) | (white)
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 1 (white,bold) | Check box (checked)
 -> Pending (white) | 0 (white) | Check box (checked)
--> Failed (red,bold) | 1 (red,bold) | Check box (checked)
-->   Cancelled (red,bold) | 1 (red,bold) | Check box (checked)
-->     cancelled pending job at 11:11 (red,bold) | 1 (red,bold) | Check box (checked)
+-> Failed (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->   Cancelled (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->     cancelled pending job at 11:11 (salmon,bold) | 1 (salmon,bold) | Check box (checked)
 
 Progress bar set to fraction 1.0, text 'All 2 tests completed at 15Dec11:11:09'
 
 Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
 -> TargetApp (sleep) (white,bold) | (white)
-->   Basic (red) | cancelled pending job at 11:11 (red)
-->   Basic2 (red) | cancelled (red)
+->   Basic (salmon) | cancelled pending job at 11:11 (salmon)
+->   Basic2 (salmon) | cancelled (salmon)
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white) | 0 (white) | Check box (checked)
 -> Pending (white) | 0 (white) | Check box (checked)
--> Failed (red,bold) | 2 (red,bold) | Check box (checked)
-->   Cancelled (red,bold) | 2 (red,bold) | Check box (checked)
-->     cancelled (red,bold) | 1 (red,bold) | Check box (checked)
-->     cancelled pending job at 11:11 (red,bold) | 1 (red,bold) | Check box (checked)
+-> Failed (salmon,bold) | 2 (salmon,bold) | Check box (checked)
+->   Cancelled (salmon,bold) | 2 (salmon,bold) | Check box (checked)
+->     cancelled (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->     cancelled pending job at 11:11 (salmon,bold) | 1 (salmon,bold) | Check box (checked)
