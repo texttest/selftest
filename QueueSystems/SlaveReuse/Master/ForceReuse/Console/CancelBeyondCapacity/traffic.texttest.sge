@@ -1,23 +1,22 @@
-<-SRV:TextTest slave server started on 10.67.7.83:52922
-<-CMD:cd /nfs/vm/texttest-tmp/geoff/texttest.09Feb152002.2960/texttest.sge/QueueSystems/SlaveReuse/Master/ForceReuse/Console/CancelBeyondCapacity/texttesttmp/self_test.09Feb152026.11876/slavelogs; env 'USECASE_RECORD_SCRIPT=' 'USECASE_REPLAY_SCRIPT=' qsub -N Test-Test-HELLO -w e -notify -m n -cwd -b y -V -o Test-Test-HELLO.log -e Test-Test-HELLO.errors 'exec $SHELL -c "exec /carm/proj/texttest/geoff/reserve/Testing/TextTest/bin/texttest.py -d /carm/proj/texttest-tmp/geoff/texttest.09Feb152002.2960/texttest.sge/QueueSystems/SlaveReuse/Master/ForceReuse/Console/CancelBeyondCapacity/TargetApp -a hello -l -tp Test -slave /carm/proj/texttest-tmp/geoff/texttest.09Feb152002.2960/texttest.sge/QueueSystems/SlaveReuse/Master/ForceReuse/Console/CancelBeyondCapacity/texttesttmp/self_test.09Feb152026.11876 -servaddr 10.67.7.83:44841 -b self_test"'
+<-SRV:TextTest slave server started on 10.67.20.109:49044
+<-CMD:cd /nfs/vm/texttest-tmp/geoff/texttest.10Feb092246.16659/texttest.sge/QueueSystems/SlaveReuse/Master/ForceReuse/Console/CancelBeyondCapacity/texttesttmp/self_test.10Feb092249.16665/slavelogs; env 'USECASE_RECORD_SCRIPT=' 'USECASE_REPLAY_SCRIPT=' qsub -N Test-Test-HELLO -w e -notify -m n -cwd -b y -V -o Test-Test-HELLO.log -e Test-Test-HELLO.errors 'exec $SHELL -c "exec /carm/proj/texttest/geoff/reserve/Testing/TextTest/bin/texttest.py -d /carm/proj/texttest-tmp/geoff/texttest.10Feb092246.16659/texttest.sge/QueueSystems/SlaveReuse/Master/ForceReuse/Console/CancelBeyondCapacity/TargetApp -a hello -l -tp Test -slave /carm/proj/texttest-tmp/geoff/texttest.10Feb092246.16659/texttest.sge/QueueSystems/SlaveReuse/Master/ForceReuse/Console/CancelBeyondCapacity/texttesttmp/self_test.10Feb092249.16665 -servaddr 10.67.20.109:52307 -b self_test"'
 ->OUT:Your job 121427 ("Test-Test-HELLO") has been submitted
 <-SRV:Completed submission of tests up to capacity
 <-CMD:qdel 121427
 ->OUT:geoff has deleted job 121427
-->FIL:self_test.09Feb152026.11876
 <-PYT:smtplib.SMTP()
 ->RET:Instance('SMTP', 'smtp1')
 <-PYT:smtp1.connect('localhost')
 ->RET:(220, 'painesville.carmen.se ESMTP Sendmail 8.13.8/8.13.8; Tue, 9 Feb 2010 15:20:28 +0100')
 <-PYT:smtp1.sendmail('geoff@localhost', ['tom', 'dick', 'harry'], '''From: geoff@localhost
 To: tom,dick,harry
-Subject: 09Feb2010 HELLO : 2 tests : 2 cancelled
+Subject: 10Feb2010 HELLO : 2 tests : 2 cancelled
 
 Summary of all Unsuccessful tests follows...
 ---------------------------------------------------------------------------------
 The following tests were cancelled before starting : 
 In HELLO test-suite TargetApp:
-  - HELLO test-case Test  : cancelled pending job at 15:20
+  - HELLO test-case Test  : cancelled pending job at 09:22
   In HELLO test-suite Suite:
     - HELLO test-case Test : cancelled
 
@@ -28,7 +27,7 @@ Details of all Unsuccessful tests follows...
 Detailed information for the tests that were cancelled before starting follows...
 --------------------------------------------------------
 TEST were cancelled before starting : HELLO test-case Test (under Test)
-Test job was cancelled (while still pending in SGE) at 15:20
+Test job was cancelled (while still pending in SGE) at 09:22
 --------------------------------------------------------
 TEST were cancelled before starting : HELLO test-case Test (under Suite/Test)
 Test run was cancelled before it had started
