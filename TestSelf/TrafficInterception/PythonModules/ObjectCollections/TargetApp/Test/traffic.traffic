@@ -4,11 +4,13 @@
 ->RET:'Woof Woof!'
 <-PYT:cow1.speak()
 ->RET:'Moo!'
+<-PYT:collectionfinder.get_animal_tuple()
+->RET:(Instance('Cow', 'cow2'), Instance('Dog', 'dog2'))
 <-PYT:collectionfinder.get_animals()
-->RET:[Instance('Cow', 'cow2'), Instance('Dog', 'dog2')]
-<-PYT:cow2.milk()
+->RET:[Instance('Cow', 'cow3'), Instance('Dog', 'dog3')]
+<-PYT:cow3.milk()
 ->RET:'Milking the cow...'
-<-PYT:dog2.milk()
+<-PYT:dog3.milk()
 ->RET:raise Instance('BadAnimal', 'badanimal1')
 <-PYT:badanimal1.__str__()
 ->RET:"Don't milk the dog, silly!"

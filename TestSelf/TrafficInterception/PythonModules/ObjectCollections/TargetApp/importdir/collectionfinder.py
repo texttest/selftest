@@ -10,7 +10,7 @@ class Dog:
     def milk(self):
         raise BadAnimal, "Don't milk the dog!"
 
-class Cow:
+class Cow(object):
     def speak(self):
         return "Moo!"
 
@@ -23,3 +23,5 @@ def get_animals():
 def get_named_animals():
     return { "Daisy" : Cow(), "Rover" : Dog() }
 
+def get_animal_tuple():
+    return ( Cow(), Dog() )
