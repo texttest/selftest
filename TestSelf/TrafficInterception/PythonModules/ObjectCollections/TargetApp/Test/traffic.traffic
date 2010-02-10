@@ -6,6 +6,8 @@
 ->RET:'Moo!'
 <-PYT:collectionfinder.get_animal_tuple()
 ->RET:(Instance('Cow', 'cow2'), Instance('Dog', 'dog2'))
+<-PYT:cow2.sizeCompare(dog2)
+->RET:'Cows are bigger than Dogs'
 <-PYT:collectionfinder.get_animals()
 ->RET:[Instance('Cow', 'cow3'), Instance('Dog', 'dog3')]
 <-PYT:cow3.milk()

@@ -17,6 +17,9 @@ class Cow(object):
     def milk(self):
         return "Milking the cow..."
 
+    def sizeCompare(self, other):
+        return "Cows are bigger than " + other.__class__.__name__ + "s"
+
 def get_animals():
     return [ Cow(), Dog() ]
 
