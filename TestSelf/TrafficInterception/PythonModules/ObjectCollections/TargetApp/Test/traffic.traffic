@@ -10,8 +10,8 @@
 ->RET:'Cows are bigger than Dogs'
 <-PYT:collectionfinder.Dog()
 ->RET:Instance('Dog', 'dog3')
-<-PYT:dog3.inPack([cow2, dog2])
-->RET:False
+<-PYT:dog3.inPack([cow2, dog2, dog3])
+->RET:True
 <-PYT:collectionfinder.get_animals()
 ->RET:[Instance('Cow', 'cow3'), Instance('Dog', 'dog4')]
 <-PYT:cow3.milk()

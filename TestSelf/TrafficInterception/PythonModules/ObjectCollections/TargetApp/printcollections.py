@@ -9,8 +9,8 @@ animal1, animal2 = collectionfinder.get_animal_tuple()
 print animal1.sizeCompare(animal2)
 
 myDog = collectionfinder.Dog()
-if not myDog.inPack([ animal1, animal2 ]):
-    print "My dog is not in a pack"
+if myDog.inPack([ animal1, animal2, myDog ]):
+    print "My dog is in the pack"
 
 try:
     for animal in collectionfinder.get_animals():
