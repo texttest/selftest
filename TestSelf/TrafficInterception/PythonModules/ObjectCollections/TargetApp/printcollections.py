@@ -5,6 +5,9 @@ import collectionfinder
 for name, animal in collectionfinder.get_named_animals().items():
     print name, "says", animal.speak()
 
+myDog = collectionfinder.Dog()
+print "My dog says", myDog.speak()
+
 animal1, animal2 = collectionfinder.get_animal_tuple()
 print animal1.sizeCompare(animal2)
 
