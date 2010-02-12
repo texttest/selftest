@@ -4,14 +4,14 @@
 ->RET:'Woof Woof!'
 <-PYT:cow1.speak()
 ->RET:'Moo!'
-<-PYT:collectionfinder.Dog()
-->RET:Instance('Dog', 'dog2')
-<-PYT:dog2.speak()
-->RET:'Woof!'
 <-PYT:collectionfinder.get_animal_tuple()
-->RET:(Instance('Cow', 'cow2'), Instance('Dog', 'dog3'))
-<-PYT:cow2.sizeCompare(dog3)
+->RET:(Instance('Cow', 'cow2'), Instance('Dog', 'dog2'))
+<-PYT:cow2.sizeCompare(dog2)
 ->RET:'Cows are bigger than Dogs'
+<-PYT:collectionfinder.Dog()
+->RET:Instance('Dog', 'dog3')
+<-PYT:dog3.inPack([cow2, dog2])
+->RET:False
 <-PYT:collectionfinder.get_animals()
 ->RET:[Instance('Cow', 'cow3'), Instance('Dog', 'dog4')]
 <-PYT:cow3.milk()

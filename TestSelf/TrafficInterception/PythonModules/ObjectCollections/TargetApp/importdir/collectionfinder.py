@@ -7,6 +7,9 @@ class Dog:
     def speak(self):
         return "Woof!"
 
+    def inPack(self, animals):
+        return self in animals
+
     def milk(self):
         raise BadAnimal, "Don't milk the dog!"
 
