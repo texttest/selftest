@@ -1,3 +1,4 @@
+<-PYT:import urllib2
 <-PYT:urllib2.urlopen('http://bugzilla.myveryoldsite.com/cli.cgi?bug=42')
 ->RET:raise Instance('URLError', 'urlerror1')
 <-PYT:urlerror1.__str__()

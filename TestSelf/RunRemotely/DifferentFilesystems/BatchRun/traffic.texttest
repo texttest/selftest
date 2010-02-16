@@ -7,6 +7,7 @@
 ->OUT:Hello World!
 <-CMD:scp -Crp -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 'testnet-s16:~/".texttest/tmp/self_test.09Feb153557.3266/hello/Test"/*' /carm/proj/texttest-tmp/geoff/texttest.09Feb153552.3260/texttest/TestSelf/RunRemotely/DifferentFilesystems/BatchRun/texttesttmp/self_test.09Feb153557.3266/hello/Test
 ->FIL:Test
+<-PYT:import smtplib
 <-PYT:smtplib.SMTP()
 ->RET:Instance('SMTP', 'smtp1')
 <-PYT:smtp1.connect('localhost')

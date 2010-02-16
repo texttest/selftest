@@ -2,6 +2,11 @@
 
 import logging, sys
 try:
+    import no_such_module
+except ImportError, e:
+    print "Caught exception:", e
+
+try:
     print logging.no_such_method("argument", faking=True)
 except Exception, e:
     print "Caught exception:", e
