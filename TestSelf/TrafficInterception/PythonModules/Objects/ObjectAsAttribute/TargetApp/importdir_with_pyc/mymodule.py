@@ -1,6 +1,6 @@
 
 class MyObject:
     def getValue(self):
-        return "My Value"
+        pass
 
 object = MyObject()

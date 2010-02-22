@@ -2,52 +2,39 @@
 <-PYT:matplotlib.__path__
 ->RET:['/usr/lib64/python2.4/site-packages/matplotlib']
 <-PYT:matplotlib.use('Agg')
-->RET:None
 <-PYT:import pylab
 <-PYT:pylab.clf()
-->RET:None
 <-PYT:pylab.figure(1)
 ->RET:Instance('Figure', 'figure1')
 <-PYT:figure1.set_figwidth(9.4488188976377945)
-->RET:None
 <-PYT:figure1.set_figheight(7.8740157480314963)
-->RET:None
 <-PYT:pylab.subplot(111)
 ->RET:Instance('AxesSubplot', 'axessubplot1')
 <-PYT:pylab.title("Test results for Application: 'Application One'  Version: 'version2'", fontsize=10, family='monospace')
 ->RET:Instance('Text', 'text1')
 <-PYT:axessubplot1.set_autoscale_on(False)
-->RET:None
 <-PYT:axessubplot1.plot([0, 1, 2, 3, 4], [998, 998, 1000, 1002, 1002], color='#FF3118', linewidth=2, linestyle='-', label='Failed tests')
 ->RET:[Instance('Line2D', 'line2d1')]
 <-PYT:line2d1.set_visible(False)
-->RET:None
 <-PYT:axessubplot1.set_autoscale_on(True)
-->RET:None
 <-PYT:axessubplot1.fill_between([1, 2, 3, 4], [998, 998, 1000, 999], [998, 1000, 1002, 1002], color='#FF3118', linewidth=2, linestyle='-')
 ->RET:Instance('PolyCollection', 'polycollection1')
 <-PYT:pylab.Rectangle((0, 0), 1, 1, fc='#FF3118')
 ->RET:Instance('Rectangle', 'rectangle1')
 <-PYT:axessubplot1.set_autoscale_on(False)
-->RET:None
 <-PYT:axessubplot1.plot([0, 1, 2, 3, 4], [998, 998, 998, 1000, 999], color='#FFC6A5', linewidth=2, linestyle='-', label='Performance difference')
 ->RET:[Instance('Line2D', 'line2d2')]
 <-PYT:line2d2.set_visible(False)
-->RET:None
 <-PYT:axessubplot1.set_autoscale_on(True)
-->RET:None
 <-PYT:axessubplot1.fill_between([2, 3, 4], [998, 995, 994], [998, 1000, 999], color='#FFC6A5', linewidth=2, linestyle='-')
 ->RET:Instance('PolyCollection', 'polycollection2')
 <-PYT:pylab.Rectangle((0, 0), 1, 1, fc='#FFC6A5')
 ->RET:Instance('Rectangle', 'rectangle2')
 <-PYT:axessubplot1.set_autoscale_on(False)
-->RET:None
 <-PYT:axessubplot1.plot([0, 1, 2, 3, 4], [998, 998, 998, 995, 994], color='#CEEFBD', linewidth=2, linestyle='-', label='Succeeded tests')
 ->RET:[Instance('Line2D', 'line2d3')]
 <-PYT:line2d3.set_visible(False)
-->RET:None
 <-PYT:axessubplot1.set_autoscale_on(True)
-->RET:None
 <-PYT:axessubplot1.fill_between([0, 1, 2, 3, 4], [970, 970, 970, 970, 970], [998, 998, 998, 995, 994], color='#CEEFBD', linewidth=2, linestyle='-')
 ->RET:Instance('PolyCollection', 'polycollection3')
 <-PYT:pylab.Rectangle((0, 0), 1, 1, fc='#CEEFBD')
@@ -63,6 +50,4 @@
 <-PYT:legend1.get_frame()
 ->RET:Instance('FancyBboxPatch', 'fancybboxpatch1')
 <-PYT:fancybboxpatch1.set_alpha(0.5)
-->RET:None
 <-PYT:figure1.savefig('/nfs/vm/texttest-tmp/geoff/texttest.17Feb122249.32090/texttest/TestSelf/BatchTests/HistoricalReport/GenerateGraphs/ManyTestsMostSucceed/report/app1/images/GenerateGraphs_version2.png', dpi=100)
-->RET:None
