@@ -36,9 +36,10 @@
 ->RET:Instance('silent_list', 'silent_list2')
 <-PYT:pylab.setp(silent_list2, 'rotation', 90, fontsize=7)
 ->RET:[None, None, None, None]
+<-PYT:axessubplot1.autoscale_view(tight=True, scaley=False)
 <-PYT:axessubplot1.legend([rectangle1, rectangle2], ('Failed tests', 'Succeeded tests'), 'best', shadow=False)
 ->RET:Instance('Legend', 'legend1')
 <-PYT:legend1.get_frame()
 ->RET:Instance('FancyBboxPatch', 'fancybboxpatch1')
 <-PYT:fancybboxpatch1.set_alpha(0.5)
-<-PYT:figure1.savefig('/nfs/vm/texttest-tmp/geoff/texttest.22Feb150828.27207/texttest/TestSelf/BatchTests/HistoricalReport/VersionHasOlderMonth/report/hello/images/test_default.normal.png', dpi=100)
+<-PYT:figure1.savefig('/nfs/vm/texttest-tmp/geoff/texttest.24Feb103529.31539/texttest/TestSelf/BatchTests/HistoricalReport/VersionHasOlderMonth/report/hello/images/test_default.normal.png', dpi=100)
