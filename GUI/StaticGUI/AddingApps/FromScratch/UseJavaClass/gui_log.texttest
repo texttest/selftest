@@ -1,8 +1,8 @@
 Enabling entry completion, using matching 1
 Adding entry completion '1' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.26Feb115904.13975/texttest.gui/GUI/StaticGUI/AddingApps/FromScratch/ImportFile/log/logging.debug' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.26Feb115800.13944/texttest.gui/GUI/StaticGUI/AddingApps/FromScratch/UseJavaClass/log/logging.debug' ...
 Adding entry completion '/users/geoff/work/master/Testing/TextTest/log/logging.debug' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.26Feb115904.13975/texttest.gui/GUI/StaticGUI/AddingApps/FromScratch/ImportFile/log' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.26Feb115800.13944/texttest.gui/GUI/StaticGUI/AddingApps/FromScratch/UseJavaClass/log' ...
 Adding entry completion 'site' ...
 Adding entry completion 'personal' ...
 Adding entry completion 'all' ...
@@ -49,13 +49,13 @@ Button 'Filter' (Stock image 'gtk-find', accelerator 'Ctrl+F', tooltip 'filter t
 Button 'Reset Tab' (tooltip 'Reset all the settings in the current tab to their default values')
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 26Feb11:59:18.' , Image 'throbber_inactive.png'
+'TextTest started at 26Feb11:58:05.' , Image 'throbber_inactive.png'
 ------------------------------------------------------------------------
 
 Changing GUI status to: 'Reading tests ...'
 Updated drop-down list in 'Test-file to search' Text entry (set to 'output') (drop-down list containing ['output'])
 
-Changing GUI status to: 'Reading tests completed at 26Feb11:59:19.'
+Changing GUI status to: 'Reading tests completed at 26Feb11:58:05.'
 
 ---------- Dialog 'Define a new tested application' ----------
 Default widget is 'gtk-ok'
@@ -75,9 +75,9 @@ Combo Box (selected 'Disable GUI testing options') (drop-down list containing ['
 .....'
 Select executable program to test:' (tooltip 'The full path to the program you want to test')......
 
-Showing File Chooser for 'Define a new tested application' (selected '/carm/proj/texttest-tmp/geoff/texttest.26Feb115904.13975/texttest.gui/GUI/StaticGUI/AddingApps/FromScratch/ImportFile/TargetApp/hello.py')
+Showing File Chooser for 'Define a new tested application' (selected '/carm/proj/texttest-tmp/geoff/texttest.26Feb115800.13944/texttest.gui/GUI/StaticGUI/AddingApps/FromScratch/UseJavaClass/TargetApp/hello.py')
 Shortcut folders (1) :
-- /carm/proj/texttest-tmp/geoff/texttest.26Feb115904.13975/texttest.gui/GUI/StaticGUI/AddingApps/FromScratch/ImportFile/TargetApp
+- /carm/proj/texttest-tmp/geoff/texttest.26Feb115800.13944/texttest.gui/GUI/StaticGUI/AddingApps/FromScratch/UseJavaClass/TargetApp
 ---------------
 Button 'gtk-ok' (Stock image 'gtk-ok') , Button 'gtk-cancel' (Stock image 'gtk-cancel')
 --------------------------------------------------------------
@@ -87,9 +87,15 @@ Expected application event 'all tests to be read' occurred, proceeding.
 'enter file extension to use for texttest files associated with this application =' event created with arguments 'hello'
 Edited 'File extension to use for TextTest files associated with this application' Text entry (set to 'hello')
 
+'set java class to' event created with arguments 'com.company.MyClass'
+
+Greyed out : File Chooser for 'Define a new tested application'
+Edited 'Java Class name (instead of executable program)' Text entry (set to 'com.company.MyClass')
+
 'press define' event created with arguments ''
 Adding entry completion 'output' ...
 Adding entry completion 'hello' ...
+Adding entry completion 'com.company.MyClass' ...
 
 Changing title for Window 'TextTest static GUI : management of tests for HELLO'
 
@@ -99,74 +105,5 @@ Hiding the 'Run with slow motion replay' widget
 Hiding the 'Recording Tab' widget
 
 Changing GUI status to: 'Created new application with extension 'hello'.'
-
-'set test selection to' event created with arguments 'TargetApp (hello)'
-
-No longer greyed out : _Run
-
-Column titles changed in Test Tree with columns: Tests: 1 suite selected
-
-Current page changed in Notebook with tabs: Test , Selection , Running , Config
-Viewing page 'Test'
-...........
-
-Showing File Tree with columns: TargetApp
--> Definition Files (white,bold)
-->   testsuite.hello (grey90)
-
------------------------------- (horizontal pane separator, 46% from the top)
-...........
-
-========== Text Info ==========
-
-Description:
-Root test suite
-===============================
-
-'set file selection to' event created with arguments 'Definition Files'
-
-'create a new file or directory, possibly by copying it' event created with arguments ''
-Adding text '<b><u>Create or import files in the test directory</u></b>'
-Adding text '<i>(Test is HELLO test-suite TargetApp)</i>'
-Adding entry completion 'environment' ...
-Adding entry completion 'options' ...
-
----------- Dialog 'Create/Import Files and Directories' ----------
-Default widget is 'gtk-ok'
-'Create or import files in the test directory
-'
-'(Test is HELLO test-suite TargetApp)
-'
-'Type of file/directory to create:'
-Text entry (set to 'environment') (drop-down list containing ['environment', 'options'])
-'Version identifier to use:'
-Text entry
-...........
-Radio button 'Import file/directory from source'
-Radio button 'Create a new file' (checked)
-Radio button 'Create a new directory'
-.....'Source to copy from:'......
-
-Showing Source File Chooser (selected '/carm/proj/texttest-tmp/geoff/texttest.26Feb115904.13975/texttest.gui/GUI/StaticGUI/AddingApps/FromScratch/ImportFile/TargetApp') (greyed out)
-Shortcut folders (1) :
-- /carm/proj/texttest-tmp/geoff/texttest.26Feb115904.13975/texttest.gui/GUI/StaticGUI/AddingApps/FromScratch/ImportFile/TargetApp
----------------
-Button 'gtk-ok' (Stock image 'gtk-ok') , Button 'gtk-cancel' (Stock image 'gtk-cancel')
-------------------------------------------------------------------
-
-'press create' event created with arguments ''
-Creating new empty file...
-Viewing file /carm/proj/texttest-tmp/geoff/texttest.26Feb115904.13975/texttest.gui/GUI/StaticGUI/AddingApps/FromScratch/ImportFile/TargetApp/environment.hello using 'emacs', refresh set to False
-
-Waiting for application event 'file editing operations to complete' to occur.
-
-Updated : File Tree with columns: TargetApp
--> Definition Files (white,bold)
-->   environment.hello (grey90)
-->   testsuite.hello (grey90)
-
-Changing GUI status to: 'Started "emacs environment.hello" in background (from test TargetApp).'
-
-Expected application event 'file editing operations to complete' occurred, proceeding.
 
 'quit' event created with arguments ''
