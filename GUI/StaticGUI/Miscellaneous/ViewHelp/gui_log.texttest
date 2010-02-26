@@ -2,9 +2,9 @@ Enabling entry completion, using matching 1
 Adding entry completion '<default>' ...
 Adding entry completion 'localhost' ...
 Adding entry completion '1' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.01Feb101049.17645/texttest.gui/GUI/StaticGUI/Miscellaneous/ViewHelp/log/logging.debug' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.26Feb170930.1846/texttest.gui/GUI/StaticGUI/Miscellaneous/ViewHelp/log/logging.debug' ...
 Adding entry completion '/users/geoff/work/master/Testing/TextTest/log/logging.debug' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.01Feb101049.17645/texttest.gui/GUI/StaticGUI/Miscellaneous/ViewHelp/log' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.26Feb170930.1846/texttest.gui/GUI/StaticGUI/Miscellaneous/ViewHelp/log' ...
 Adding entry completion 'site' ...
 Adding entry completion 'personal' ...
 Adding entry completion 'all' ...
@@ -51,7 +51,7 @@ Button 'Filter' (Stock image 'gtk-find', accelerator 'Ctrl+F', tooltip 'filter t
 Button 'Reset Tab' (tooltip 'Reset all the settings in the current tab to their default values')
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 01Feb10:12:34.' , Image 'throbber_inactive.png'
+'TextTest started at 26Feb17:11:06.' , Image 'throbber_inactive.png'
 --------------------------------------------------------------------------------
 
 Changing GUI status to: 'Reading tests ...'
@@ -96,7 +96,7 @@ Updated : Test Tree with columns: Tests: 0/11 selected
 ->       S01 (grey90)
 Updated drop-down list in 'Test-file to search' Text entry (set to 'output') (drop-down list containing ['output'])
 
-Changing GUI status to: 'Reading tests completed at 01Feb10:12:36.'
+Changing GUI status to: 'Reading tests completed at 26Feb17:11:06.'
 
 Expected application event 'all tests to be read' occurred, proceeding.
 
@@ -170,6 +170,7 @@ Contributors:
     Henning Thornblad
     Michael Behrisch
     Örjan Råberg
+    Matthew Baker
 =================================
 ---------------
 Button 'gtk-close' (Stock image 'gtk-close')
@@ -386,57 +387,17 @@ Changing GUI status to: ''
 ---------- Dialog 'TextTest Change Logs' ----------
 Default widget is 'gtk-close'
 
-Showing Notebook with tabs: trunk , 3.16.1 , 3.16 , 3.15 , 3.14.1 , 3.14 , 3.13 , 3.12.1 , 3.12 , 3.11.1 , 3.11 , 3.10 , 3.9.1 , 3.9 , 3.8 , 3.7.1 , 3.7 , 3.6 , 3.5.3 , 3.5.2 , 3.5.1 , 3.5 , 3.4 , 3.3 , 3.2 , 3.1.1 , 3.1 , 3.0 , 2.1 , 2.0 , 1.0 , 0.2 , 0.1
+Showing Notebook with tabs: trunk , 3.17 , 3.16.1 , 3.16 , 3.15 , 3.14.1 , 3.14 , 3.13 , 3.12.1 , 3.12 , 3.11.1 , 3.11 , 3.10 , 3.9.1 , 3.9 , 3.8 , 3.7.1 , 3.7 , 3.6 , 3.5.3 , 3.5.2 , 3.5.1 , 3.5 , 3.4 , 3.3 , 3.2 , 3.1.1 , 3.1 , 3.0 , 2.1 , 2.0 , 1.0 , 0.2 , 0.1
 Viewing page 'trunk'
 
 ========== GtkTextView ==========
+Installation and self-test changes:
 Static GUI Enhancements:
-    - "Test paths containing" replaces "Test suites containing" box in Selection tab (default/__init__.py)
-	Generalised to allow any substring or regexp of the relative path to the test.
-	Also handles spaces as in the names on the webpage. See migration notes.
-    - Added "Run" and "Record" to context menu (default_gui-static.xml)
-    - Drop-down entries for "Test-files to search" are now sorted in sections (selectandfilter.py)
-	Can configure via "gui_entry_options" also
 Dynamic GUI Enhancements:
-    - Selection tab added
-	Can do all of the selecting from the static GUI in the dynamic GUI also. (selectandfilter.py)
-	Can also choose between the new and old results from the tests. Note accelerator for "select" changed.
-    - Status tab categories are now sorted alphabetically (statusviews.py)
-    - "Root suite" is no longer always shown in the test tree (testtree.py)
-	If it would otherwise be hidden, it's now hidden.
-    - Performances improvements to "saving" operation. (testtree.py)
-	Saving hundreds of tests should be noticeably faster now.
 Framework Enhancements:
-    - Can now set a timeout after which tests will automatically be killed. (default/__init__.py)
-	See "kill_timeout" documentation on the website. Thanks to Michael Behrisch
-    - New flag "--ignorefilters" for disabling filtering for a test run (default/__init__.py)
-	Allows full examination of run-dependent text filters
-    - Options files now ignore comments and blank lines like other files (testmodel.py)
-    - Can now unset environment variables via environment files. (testmodel.py)
-	Use MY_ENV_VAR:{CLEAR} syntax
-    - $TEXTTEST_ROOT variable added (sandbox.py)
-	Basically to avoid referring to TEXTTEST_HOME in config files
-    - "definition_file_stems" now supports UNIX-style file expansions (testmodel.py)
-	As do many other file-related entries
-    - "Known bugs" now provide full diff in Text Info and in HTML reports (comparetest.py)
-	Additional to "bug" output
-    - Can now provide extra arguments to virtual display server (Xvfb on UNIX) (virtualdisplay.py)
-	New config setting "virtual_display_extra_args"
 Batch Report Enhancements:
-    - Fixed formatting problem when several tests had the same "known bug" from Bugzilla/Jira (testoverview.py)
-    - Category ordering (coloured tables) now constant in summary page (batch/__init__.py)
-    - Known bugs have their own colour in the pages, defaulting to orange (testoverview.py)
-    - Added information on how to start TextTest on the relevant tests (testoverview.py)
 Grid Engine (LSF/SGE) enhancements:
-Self-test/Internal changes:
 Bug Fixes:
-    - When searching with -grep ("test-files containing"), don't blindly include all versions of tests that match (testmodel.py)
-    - Worked around a Mercurial symbolic link bug: if the test path has a symbolic link, dereference it first (hg.py)
-    - Don't stacktrace on rename/move if VCS control directories are present but the VCS isn't installed (vcs_independent.py)
-    - Don't bail out on absolute paths with arguments for "interpreter" (default/__init__.py)
-    - Recomputing a test that has been saved now works properly (comparefile.py)
-    - Load File Selection greyed out when there are no tests (selectandfilter.py)
-    - Command-line traffic record mechanism now finds .exe files on Windows (traffic.py)
 =================================
 ---------------
 Button 'gtk-close' (Stock image 'gtk-close')
@@ -444,7 +405,7 @@ Button 'gtk-close' (Stock image 'gtk-close')
 
 'view tab' event created with arguments '3.7.1'
 
-Current page changed in Notebook with tabs: trunk , 3.16.1 , 3.16 , 3.15 , 3.14.1 , 3.14 , 3.13 , 3.12.1 , 3.12 , 3.11.1 , 3.11 , 3.10 , 3.9.1 , 3.9 , 3.8 , 3.7.1 , 3.7 , 3.6 , 3.5.3 , 3.5.2 , 3.5.1 , 3.5 , 3.4 , 3.3 , 3.2 , 3.1.1 , 3.1 , 3.0 , 2.1 , 2.0 , 1.0 , 0.2 , 0.1
+Current page changed in Notebook with tabs: trunk , 3.17 , 3.16.1 , 3.16 , 3.15 , 3.14.1 , 3.14 , 3.13 , 3.12.1 , 3.12 , 3.11.1 , 3.11 , 3.10 , 3.9.1 , 3.9 , 3.8 , 3.7.1 , 3.7 , 3.6 , 3.5.3 , 3.5.2 , 3.5.1 , 3.5 , 3.4 , 3.3 , 3.2 , 3.1.1 , 3.1 , 3.0 , 2.1 , 2.0 , 1.0 , 0.2 , 0.1
 Viewing page '3.7.1'
 
 ========== GtkTextView ==========
@@ -570,6 +531,7 @@ Contributors:
     Henning Thornblad
     Michael Behrisch
     Örjan Råberg
+    Matthew Baker
 =================================
 ---------------
 Button 'gtk-close' (Stock image 'gtk-close')
