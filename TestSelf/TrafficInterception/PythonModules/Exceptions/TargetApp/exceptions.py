@@ -15,7 +15,7 @@ import urllib2
 try:
     print urllib2.urlopen("foo://no.such.site")
 except urllib2.URLError, e:
-    print "Caught exception:", e
+    print "Caught exception:", e.args[0]
 
 try:
     print urllib2.urlopen("foo://another.no.such.site")

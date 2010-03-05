@@ -8,11 +8,11 @@ Comparing differences for TRAFFIC test-suite TargetApp
 ---------- Differences in output ----------
 2,4c2,4
 < Caught exception: 'module' object doesn't REALLY have an attribute 'no_such_method', stupid!
-< Caught exception: <urlopen error (-2, 'No such site, you wally!')>
+< Caught exception: No such site, you wally!
 < URLError: <urlopen error (-2, 'Now you're really getting on my nerves!')>
 ---
 > Caught exception: 'module' object has no attribute 'no_such_method'
-> Caught exception: <urlopen error unknown url type: foo>
+> Caught exception: unknown url type: foo
 > URLError: <urlopen error unknown url type: foo>
 ---------- Differences in traffic ----------
 5c5
@@ -20,9 +20,9 @@ Comparing differences for TRAFFIC test-suite TargetApp
 ---
 > ->RET:raise exceptions.AttributeError("'module' object has no attribute 'no_such_method'")
 10c10
-< ->RET:"<urlopen error (-2, 'No such site, you wally!')>"
+< ->RET:('No such site, you wally!',)
 ---
-> ->RET:'<urlopen error unknown url type: foo>'
+> ->RET:('unknown url type: foo',)
 14c14
 < ->RET:"<urlopen error (-2, 'Now you're really getting on my nerves!')>"
 ---
