@@ -3,7 +3,7 @@
 ->RET:Instance('SMTP', 'smtp1')
 <-PYT:smtp1.connect('localhost')
 ->RET:(220, 'novyy.got.jeppesensystems.com ESMTP Sendmail 8.13.8/8.13.8; Tue, 9 Feb 2010 15:20:28 +0100')
-<-PYT:smtp1.sendmail('geoff@localhost', ['tom'], ''"From: geoff@localhost
+<-PYT:smtp1.sendmail('geoff@localhost', ['tom'], """From: geoff@localhost
 To: tom
 Subject: 040908 FAKE dip : 22 tests ran : 6 FAILED, 5 internal errors
 
@@ -151,6 +151,6 @@ In DIP test-suite TargetApp:
     In DIP test-suite Game47:
       - DIP test-case S01
 
-"'')
+""")
 ->RET:{}
 <-PYT:smtp1.quit()
