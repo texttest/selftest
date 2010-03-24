@@ -1,6 +1,7 @@
 
 [logger_root]
 handlers=root
+level=WARNING
 
 [handler_root]
 class=StreamHandler
@@ -34,6 +35,7 @@ level=INFO
 [handler_gui log]
 class=FileHandler
 #formatter=timed
+#args=(os.devnull, 'a')
 args=('dynamic_gui_log.texttest', 'a')
 
 # ======= Section for usecase replay log ======
