@@ -29,7 +29,7 @@ level=INFO
 class=FileHandler
 formatter=debug
 args=(os.devnull, 'a')
-args=('%(TEXTTEST_CWD)s/trafficreplay.texttest', 'a')
+args=('trafficreplay.texttest', 'a')
 
 # ======= Section for Traffic Server ======
 [logger_Traffic Server]
@@ -41,7 +41,7 @@ qualname=Traffic Server
 class=FileHandler
 formatter=debug
 args=(os.devnull, 'a')
-#args=('%(TEXTTEST_CWD)s/trafficserver.texttest', 'a')
+#args=('trafficserver.texttest', 'a')
 
 # ====== Cruft that python logging module needs ======
 [loggers]
