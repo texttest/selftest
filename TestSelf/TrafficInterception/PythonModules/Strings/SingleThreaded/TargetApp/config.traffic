@@ -4,11 +4,9 @@ default_interface:console
 
 executable:$TEXTTEST_ROOT/printthread.py
 
-collect_traffic_py_module:threading
+# Don't intercept threading itself, it's used by the traffic server
+# and can cause weird effects
+collect_traffic_py_module:threadinfo
 
 # Force it all into one thread
 collect_traffic_use_threads:false
-
-[run_dependent_text]
-# Error produced on Windows, don't worry about it for now
-errors:cannot join current thread

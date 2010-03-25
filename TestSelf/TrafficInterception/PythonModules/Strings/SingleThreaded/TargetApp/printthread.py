@@ -1,9 +1,5 @@
 #!/usr/bin/env python
 
-import threading
+import threadinfo
 
-threadsUsed = set()
-for i in range(3):
-    threadsUsed.add(threading.currentThread().getName())
-
-print "We used", len(threadsUsed), "threads in this program"
+print "We used", threadinfo.threadCount(), "threads in this program"
