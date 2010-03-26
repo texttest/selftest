@@ -3,7 +3,7 @@ Running TRAFFIC test-suite TargetApp
   Running TRAFFIC test-case Test
 Comparing differences for TRAFFIC test-suite TargetApp
   Comparing differences for TRAFFIC test-case Test (on errors.traffic,output.traffic,traffic.traffic)
-  TRAFFIC test-case Test FAILED : missing results for traffic, differences in errors,output
+  TRAFFIC test-case Test FAILED : differences in errors,output,traffic
   View details(v), Save Version rectraffic(1), Save(s) or continue(any other key)?
 ---------- Differences in errors ----------
 1,2d0
@@ -23,18 +23,24 @@ Comparing differences for TRAFFIC test-suite TargetApp
 > firstcall exited with status 0
 > Called fake firstcall.py
 > Called fake secondcall.py
----------- Missing result in traffic ----------
-<-CMD:firstcall.py -a -b -c "hello | goodbye"
-->OUT:firstcall.py called with 5 arguments
-The time is now Tue Jun 10 11:54:09 2008
-->EXC:1
-<-CMD:firstcall.py -a -b -c "hello | goodbye"
-->OUT:firstcall.py called with 5 arguments
-The time is now Tue Jun 10 11:54:09 2008
-->EXC:1
-<-CMD:cd <texttest write dir>/tmpdir; env 'MY_ENV_VAR=value' secondcall.py -c -x
-->OUT:The current working directory is tmpdir
-The process ID is 14735
-->ERR:secondcall.py called with ['-c', '-x'] as arguments
-MY_ENV_VAR = 'value'
+---------- Differences in traffic ----------
+2,4c2
+< ->OUT:firstcall.py called with 5 arguments
+< The time is now Tue Jun 10 11:54:09 2008
+< ->EXC:1
+---
+> ->OUT:Called fake firstcall.py
+6,8c4
+< ->OUT:firstcall.py called with 5 arguments
+< The time is now Tue Jun 10 11:54:09 2008
+< ->EXC:1
+---
+> ->OUT:Called fake firstcall.py
+10,13c6
+< ->OUT:The current working directory is tmpdir
+< The process ID is 14735
+< ->ERR:secondcall.py called with ['-c', '-x'] as arguments
+< MY_ENV_VAR = 'value'
+---
+> ->OUT:Called fake secondcall.py
   Save Version rectraffic(1), Save(s) or continue(any other key)?
