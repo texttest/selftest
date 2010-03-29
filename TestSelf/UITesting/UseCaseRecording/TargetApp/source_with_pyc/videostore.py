@@ -2,18 +2,15 @@
 # Test GUI for 'PyUseCase'
 
 import gtk, gobject, time, sys
-from gtkusecase import ScriptEngine
 
 class VideoStore:
     def __init__(self):
-        self.scriptEngine = ScriptEngine()
         self.model = gtk.ListStore(gobject.TYPE_STRING)
     def createTopWindow(self):
         # Create toplevel window to show it all.
         win = gtk.Window(gtk.WINDOW_TOPLEVEL)
         win.set_title("The Video Store")
-        #win.connect("delete_event", self.quit)
-        self.scriptEngine.connect("close", "delete_event", win, self.quit)
+        win.connect("delete_event", self.quit)
         vbox = self.createWindowContents()
         win.add(vbox)
         win.show()
@@ -29,11 +26,9 @@ class VideoStore:
         taskBar = gtk.HBox()
         label = gtk.Label("New Movie Name  ")
         nameEntry = gtk.Entry()
-        self.scriptEngine.registerEntry(nameEntry, "set new movie name to")
         button = gtk.Button()
         button.set_label("Add")
-        # button.connect("clicked", self.addMovie, nameEntry)
-        self.scriptEngine.connect("add movie", "clicked", button, self.addMovie, None, nameEntry)
+        button.connect("clicked", self.addMovie, nameEntry)
         taskBar.pack_start(label, expand=False, fill=True)
         taskBar.pack_start(nameEntry, expand=True, fill=True)
         taskBar.pack_start(button, expand=False, fill=False)
