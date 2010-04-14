@@ -13,7 +13,9 @@ if myDog.inPack([ animal1, animal2, myDog ]):
     print "My dog is in the pack"
 
 try:
-    for animal in collectionfinder.get_animals():
+    animalList = collectionfinder.get_animals()
+    print animalList
+    for animal in animalList:
         print animal.milk()
 except collectionfinder.BadAnimal, e:
     print "BadAnimal Exception:", e

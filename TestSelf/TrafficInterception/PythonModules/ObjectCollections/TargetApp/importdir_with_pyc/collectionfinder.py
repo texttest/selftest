@@ -4,6 +4,9 @@ class BadAnimal(Exception):
     pass
 
 class Dog:
+    def __repr__(self):
+        return "A dog"
+    
     def speak(self):
         return "Woof!"
 

@@ -15,6 +15,10 @@
 ->RET:True
 <-PYT:collectionfinder.get_animals()
 ->RET:[Instance('Cow', 'cow3'), Instance('Dog', 'dog4')]
+<-PYT:cow3.__repr__()
+->RET:'<collectionfinder.Cow object at 0x2b9d51228790>'
+<-PYT:dog4.__repr__()
+->RET:'A dog'
 <-PYT:cow3.milk()
 ->RET:'Milking the cow...'
 <-PYT:dog4.milk()
