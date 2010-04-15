@@ -57,6 +57,7 @@ output:Sending mail from{WORD 5}
 output:batch_recipients{WORD 2}
 output:batch_sender{WORD 2}
 output:[0-9]* and [0-9]* bytes{REPLACE <file sizes>}
+output:File .* line .* in
 targetReport:{INTERNAL writedir}{REPLACE <test write dir>}
 targetReport:[^ ]*@localhost{REPLACE <username>@localhost}
 targetReport: on .*test-case.*under{WORD -7}
