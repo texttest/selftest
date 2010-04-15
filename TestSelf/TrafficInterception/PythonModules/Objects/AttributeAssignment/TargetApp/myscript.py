@@ -4,4 +4,5 @@ import mymodule
 
 theObject = mymodule.MyObject()
 theObject.value = "My Value"
-print theObject.getValue()
+theObject.itself = theObject
+print theObject.itself.getValue()
