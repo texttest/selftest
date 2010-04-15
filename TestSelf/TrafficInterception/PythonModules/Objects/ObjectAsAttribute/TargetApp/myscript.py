@@ -2,4 +2,6 @@
 
 import mymodule
 
-print mymodule.object.getValue()
+o = mymodule.object
+print o.getValue()
+print mymodule.callFunction(o)
