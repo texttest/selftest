@@ -7,7 +7,9 @@ Comparing differences for TRAFFIC test-suite TargetApp
   View details(v), Save Version rectraffic(1), Save(s) or continue(any other key)?
 ---------- New result in traffic ----------
 <-PYT:import mymodule
-<-PYT:mymodule.object.getValue()
-<-PYT:mymodule.callFunction(mymodule.object)
+<-PYT:mymodule.object
+->RET:Instance('MyObject', 'myobject1')
+<-PYT:myobject1.getValue()
+<-PYT:mymodule.callFunction(myobject1)
 ->RET:'Answer'
   Save Version rectraffic(1), Save(s) or continue(any other key)?
