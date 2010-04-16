@@ -9,6 +9,6 @@ withQuote = """This one
 has a ' in it"""
 
 try:
-    print tempfile.no_such_method({ "string" : strVal, "quotestring": withQuote })
+    print tempfile.gettempprefix({ "string" : strVal, "quotestring": withQuote })
 except Exception, e:
     pass

@@ -9,8 +9,8 @@ Comparing differences for TRAFFIC test-suite TargetApp
 ---------- New result in output ----------
 ---------- New result in traffic ----------
 <-PYT:import tempfile
-<-PYT:tempfile.no_such_method({'quotestring': """This one
+<-PYT:tempfile.gettempprefix({'quotestring': """This one
 has a ' in it""", 'string': u'''This
 is a large unicode string'''})
-->RET:raise exceptions.AttributeError("'module' object has no attribute 'no_such_method'")
+->RET:raise exceptions.TypeError('gettempprefix() takes no arguments (1 given)')
   Save Version rectraffic(1), Save(s) or continue(any other key)?

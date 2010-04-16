@@ -11,6 +11,12 @@ try:
 except Exception, e:
     print "Caught exception:", e
 
+try:
+    # invalid arguments
+    print logging.basicConfig("argument", faking=True)
+except Exception, e:
+    print "Caught exception:", e
+
 import urllib2
 try:
     print urllib2.urlopen("foo://no.such.site")

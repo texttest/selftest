@@ -6,12 +6,14 @@ Comparing differences for TRAFFIC test-suite TargetApp
   TRAFFIC test-case Test FAILED : differences in output,traffic
   View details(v), Save Version rectraffic(1), Save(s) or continue(any other key)?
 ---------- Differences in output ----------
-2,4c2,4
+2c2
 < Caught exception: 'module' object doesn't REALLY have an attribute 'no_such_method', stupid!
+---
+> Caught exception: 'module' object has no attribute 'no_such_method'
+4,5c4,5
 < Caught exception: No such site, you wally!
 < URLError: <urlopen error (-2, 'Now you're really getting on my nerves!')>
 ---
-> Caught exception: 'module' object has no attribute 'no_such_method'
 > Caught exception: unknown url type: foo
 > URLError: <urlopen error unknown url type: foo>
 ---------- Differences in traffic ----------
@@ -19,11 +21,11 @@ Comparing differences for TRAFFIC test-suite TargetApp
 < ->RET:raise exceptions.AttributeError("'module' object doesn't REALLY have an attribute 'no_such_method', stupid!")
 ---
 > ->RET:raise exceptions.AttributeError("'module' object has no attribute 'no_such_method'")
-10c10
+12c12
 < ->RET:('No such site, you wally!',)
 ---
 > ->RET:('unknown url type: foo',)
-14c14
+16c16
 < ->RET:"<urlopen error (-2, 'Now you're really getting on my nerves!')>"
 ---
 > ->RET:'<urlopen error unknown url type: foo>'
