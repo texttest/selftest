@@ -16,7 +16,7 @@ try:
     animalList = collectionfinder.get_animals()
     print animalList
     for animal in animalList:
-        print animal.milk()
+        print animal.milk() + " the " + type(animal).__name__ + "..."
 except collectionfinder.BadAnimal, e:
     print "BadAnimal Exception:", e
 
