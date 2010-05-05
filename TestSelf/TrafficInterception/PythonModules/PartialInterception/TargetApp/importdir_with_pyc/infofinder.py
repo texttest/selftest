@@ -17,3 +17,8 @@ class ClassName:
 
     def __repr__(self):
         return "infofinder.ClassName()"
+
+class OtherClassName:
+    def method(self):
+        return "Real Other Class method answer"
+

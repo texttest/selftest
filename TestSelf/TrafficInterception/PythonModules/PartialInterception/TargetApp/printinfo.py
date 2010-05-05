@@ -7,3 +7,8 @@ print infofinder.othermethod()
 print infofinder.ClassName.staticMethod()
 print infofinder.ClassName.otherStaticMethod()
 print infofinder.ClassName().otherStaticMethod()
+
+class MyClassName(infofinder.OtherClassName):
+    pass
+
+print MyClassName().method()
