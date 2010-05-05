@@ -14,3 +14,6 @@ class ClassName:
     @staticmethod
     def otherStaticMethod():
         return "Other Real static method answer"
+
+    def __repr__(self):
+        return "infofinder.ClassName()"
