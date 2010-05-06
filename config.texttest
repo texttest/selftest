@@ -192,6 +192,13 @@ collect_traffic_py_module:xmlrpclib
 collect_traffic_py_module:smtplib
 collect_traffic_py_module:matplotlib
 collect_traffic_py_module:pylab
+collect_traffic_py_module:datetime
+
+# Don't grab all of datetime, just these ones...
+[collect_traffic_py_attributes]
+datetime:date.today
+datetime:datetime.utcnow
+[end]
 
 # Tell it that we want to track what files are created
 create_catalogues:true

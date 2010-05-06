@@ -1,18 +1,26 @@
+<-PYT:datetime.date.today()
+->RET:datetime.date(2010, 5, 5)
+<-PYT:datetime.date.today()
+->RET:datetime.date(2010, 5, 5)
+<-PYT:datetime.date.today()
+->RET:datetime.date(2010, 5, 5)
 <-PYT:import smtplib
+<-PYT:smtplib.__path__
+->RET:raise exceptions.AttributeError("'module' object has no attribute '__path__'")
 <-PYT:smtplib.SMTP()
 ->RET:Instance('SMTP', 'smtp1')
 <-PYT:smtp1.connect('localhost')
-->RET:(220, 'novyy.got.jeppesensystems.com ESMTP Sendmail 8.13.8/8.13.8; Tue, 9 Feb 2010 15:20:28 +0100')
+->RET:(220, 'gewoia.jeppesensystems.com ESMTP Sendmail 8.13.8/8.13.8; Wed, 5 May 2010 15:24:57 +0200')
 <-PYT:smtp1.sendmail('geoff@localhost', ['tom'], '''From: geoff@localhost
 To: tom
-Subject: 10Sep2004 FAKE : 12 tests ran : 5 FAILED, 1 CRASHED
+Subject: 04May2010 FAKE : 12 tests ran : 5 FAILED, 1 CRASHED
 
-09Sep2004 DIP unix : 11 tests : 5 FAILED
-10Sep2004 CORE : 1 tests : 1 CRASHED
+03May2010 DIP unix : 11 tests : 5 FAILED
+04May2010 CORE : 1 tests : 1 CRASHED
 
 Summary of all Unsuccessful tests follows...
 =================================================================================
-09Sep2004 DIP unix : 11 tests : 5 FAILED
+03May2010 DIP unix : 11 tests : 5 FAILED
 
 The following tests FAILED : 
 In DIP test-suite TargetApp:
@@ -23,7 +31,7 @@ In DIP test-suite TargetApp:
     - DIP test-case A04    : output different
     - DIP test-case S05    : output different
 
-10Sep2004 CORE : 1 tests : 1 CRASHED
+04May2010 CORE : 1 tests : 1 CRASHED
 
 The following tests CRASHED : 
 In CORE test-suite TargetApp:
@@ -31,7 +39,7 @@ In CORE test-suite TargetApp:
 
 Details of all Unsuccessful tests follows...
 =================================================================================
-09Sep2004 DIP unix : 11 tests : 5 FAILED
+03May2010 DIP unix : 11 tests : 5 FAILED
 
 Detailed information for the tests that FAILED follows...
 --------------------------------------------------------
@@ -71,7 +79,7 @@ TEST FAILED on fougamou : DIP test-case S05    (under Game9952/S05)
 > France:  Ber SUPPORT Ruh -> Mun    (*was dislodged*)
 
 =================================================================================
-10Sep2004 CORE : 1 tests : 1 CRASHED
+04May2010 CORE : 1 tests : 1 CRASHED
 
 Detailed information for the tests that CRASHED follows...
 --------------------------------------------------------

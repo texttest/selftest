@@ -1,8 +1,14 @@
+<-PYT:datetime.date.today()
+->RET:datetime.date(2010, 5, 5)
+<-PYT:datetime.date.today()
+->RET:datetime.date(2010, 5, 5)
 <-PYT:import smtplib
+<-PYT:smtplib.__path__
+->RET:raise exceptions.AttributeError("'module' object has no attribute '__path__'")
 <-PYT:smtplib.SMTP()
 ->RET:Instance('SMTP', 'smtp1')
 <-PYT:smtp1.connect('localhost')
-->RET:(220, 'khwai.got.jeppesensystems.com ESMTP Sendmail 8.13.8/8.13.8; Tue, 9 Feb 2010 15:20:28 +0100')
+->RET:(220, 'gewoia.jeppesensystems.com ESMTP Sendmail 8.13.8/8.13.8; Wed, 5 May 2010 16:19:34 +0200')
 <-PYT:smtp1.sendmail('geoff@localhost', ['harry'], '''From: geoff@localhost
 To: harry
 Subject: 04Jun2008 FAKE : 6 tests ran : 3 FAILED
