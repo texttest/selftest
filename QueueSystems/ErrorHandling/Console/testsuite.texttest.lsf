@@ -25,6 +25,9 @@ SlaveCrash
 # What happens if the slave crashes before it has set up its communication to master?
 SlaveCrashNoReport
 
+# We should notice crashed slaves without waiting for the user to kill them
+PollSlaveCrash
+
 # we need to make sure we report queue system errors intelligently here.
 # Interactive queue system errors are not really handled right now.
 

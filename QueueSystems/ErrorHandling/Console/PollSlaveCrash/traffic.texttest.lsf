@@ -1,0 +1,8 @@
+<-SRV:TextTest slave server started on 10.67.20.109:49535
+<-CMD:cd /nfs/vm/texttest-tmp/geoff/texttest.14May163704.20669/texttest.lsf/QueueSystems/ErrorHandling/Console/PollSlaveCrash/texttesttmp/sleep.killing.14May163716.20692/slavelogs; bsub -J Test-Basic-SLEEP.killing -u nobody -o Test-Basic-SLEEP.killing.log -e Test-Basic-SLEEP.killing.errors "exec $SHELL -c "exec /users/geoff/work/master/Testing/TextTest/bin/texttest.py -d /carm/proj/texttest-tmp/geoff/texttest.14May163704.20669/texttest.lsf/QueueSystems/ErrorHandling/Console/PollSlaveCrash/TargetApp -a sleep.killing -l -tp 'Basic' -slave /carm/proj/texttest-tmp/geoff/texttest.14May163704.20669/texttest.lsf/QueueSystems/ErrorHandling/Console/PollSlaveCrash/texttesttmp/sleep.killing.14May163716.20692 -servaddr 10.67.20.109:39404 -b short_local""
+->FIL:sleep.killing.02Jun105522.29337
+->OUT:Job <1> is submitted to queue <bad_machine_queue>.
+<-SRV:Completed submission of all tests
+<-CMD:bjobs 
+<-CMD:bjobs -a -l 1
+->OUT:Some random accounting info
