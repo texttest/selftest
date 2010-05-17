@@ -2,9 +2,9 @@ Enabling entry completion, using matching 1
 Adding entry completion '<default>' ...
 Adding entry completion 'localhost' ...
 Adding entry completion '1' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.29Jan112047.15356/texttest.cvs/VersionControl/General/Admin/RenameTest/log/logging.debug' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.17May165227.3737/texttest.cvs/VersionControl/General/Admin/RenameTest/log/logging.debug' ...
 Adding entry completion '/users/geoff/work/master/Testing/TextTest/log/logging.debug' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.29Jan112047.15356/texttest.cvs/VersionControl/General/Admin/RenameTest/log' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.17May165227.3737/texttest.cvs/VersionControl/General/Admin/RenameTest/log' ...
 Adding entry completion 'site' ...
 Adding entry completion 'personal' ...
 Adding entry completion 'all' ...
@@ -51,7 +51,7 @@ Button 'Filter' (Stock image 'gtk-find', accelerator 'Ctrl+F', tooltip 'filter t
 Button 'Reset Tab' (tooltip 'Reset all the settings in the current tab to their default values')
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 29Jan11:23:33.' , Image 'throbber_inactive.png'
+'TextTest started at 17May16:53:24.' , Image 'throbber_inactive.png'
 ----------------------------------------------------------------------------------
 
 Changing GUI status to: 'Reading tests ...'
@@ -74,7 +74,7 @@ Updated : Test Tree with columns: Tests: 0/4 selected
 ->       Test4 (grey90)
 Updated drop-down list in 'Test-file to search' Text entry (set to 'errors') (drop-down list containing ['errors', 'output'])
 
-Changing GUI status to: 'Reading tests completed at 29Jan11:23:33.'
+Changing GUI status to: 'Reading tests completed at 17May16:53:24.'
 
 Expected application event 'all tests to be read' occurred, proceeding.
 
@@ -105,7 +105,6 @@ Description:
 ===============================
 
 'rename selected test' event created with arguments ''
-Adding entry completion 'Test1' ...
 
 ---------- Dialog 'Rename selected test' ----------
 Default widget is 'gtk-ok'
@@ -115,7 +114,11 @@ New name:'
 Text entry (set to 'Test1')
 '
 New description:'
-Text entry
+...........
+
+========== New description ==========
+
+=====================================
 ---------------
 Button 'gtk-ok' (Stock image 'gtk-ok') , Button 'gtk-cancel' (Stock image 'gtk-cancel')
 ---------------------------------------------------
@@ -124,12 +127,14 @@ Button 'gtk-ok' (Stock image 'gtk-ok') , Button 'gtk-cancel' (Stock image 'gtk-c
 Edited 'New name' Text entry (set to 'NewName')
 
 'enter new description =' event created with arguments 'New Description'
-Edited 'New description' Text entry (set to 'New Description')
+
+========== New description ==========
+New Description
+=====================================
 
 'press ok' event created with arguments ''
 Adding entry completion 'errors' ...
 Adding entry completion 'NewName' ...
-Adding entry completion 'New Description' ...
 
 Updated : Test Tree with columns: Tests: 1/4 selected
 -> TargetApp (hello) (grey90,bold)
@@ -194,8 +199,6 @@ Not in CVS
 ----------------------------------
 
 'rename selected test' event created with arguments ''
-Adding entry completion 'Test4' ...
-Adding entry completion 'Not in CVS' ...
 
 ---------- Dialog 'Rename selected test' ----------
 Default widget is 'gtk-ok'
@@ -205,7 +208,11 @@ New name:'
 Text entry (set to 'Test4')
 '
 New description:'
-Text entry (set to 'Not in CVS')
+...........
+
+========== New description ==========
+Not in CVS
+=====================================
 ---------------
 Button 'gtk-ok' (Stock image 'gtk-ok') , Button 'gtk-cancel' (Stock image 'gtk-cancel')
 ---------------------------------------------------
@@ -214,11 +221,14 @@ Button 'gtk-ok' (Stock image 'gtk-ok') , Button 'gtk-cancel' (Stock image 'gtk-c
 Edited 'New name' Text entry (set to 'TestNoVCS')
 
 'enter new description =' event created with arguments 'Not in version control'
-Edited 'New description' Text entry (set to 'Not in version control')
+
+========== New description ==========
+Not in version control
+=====================================
 
 'press ok' event created with arguments ''
+Adding entry completion 'Test4' ...
 Adding entry completion 'TestNoVCS' ...
-Adding entry completion 'Not in version control' ...
 
 Updated : Test Tree with columns: Tests: 1/4 selected
 -> TargetApp (hello) (grey90,bold)

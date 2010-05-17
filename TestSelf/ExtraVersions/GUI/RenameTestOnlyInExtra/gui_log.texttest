@@ -4,9 +4,9 @@ Adding entry completion 'extra1' ...
 Adding entry completion 'extra2' ...
 Adding entry completion 'localhost' ...
 Adding entry completion '1' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.29Jan112047.15356/texttest.gui/TestSelf/ExtraVersions/GUI/RenameTestOnlyInExtra/log/logging.debug' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.17May165227.3737/texttest.gui/TestSelf/ExtraVersions/GUI/RenameTestOnlyInExtra/log/logging.debug' ...
 Adding entry completion '/users/geoff/work/master/Testing/TextTest/log/logging.debug' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.29Jan112047.15356/texttest.gui/TestSelf/ExtraVersions/GUI/RenameTestOnlyInExtra/log' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.17May165227.3737/texttest.gui/TestSelf/ExtraVersions/GUI/RenameTestOnlyInExtra/log' ...
 Adding entry completion 'site' ...
 Adding entry completion 'personal' ...
 Adding entry completion 'all' ...
@@ -53,7 +53,7 @@ Button 'Filter' (Stock image 'gtk-find', accelerator 'Ctrl+F', tooltip 'filter t
 Button 'Reset Tab' (tooltip 'Reset all the settings in the current tab to their default values')
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 29Jan11:23:13.' , Image 'throbber_inactive.png'
+'TextTest started at 17May16:52:59.' , Image 'throbber_inactive.png'
 ----------------------------------------------------------------------------------
 
 Changing GUI status to: 'Reading tests ...'
@@ -78,7 +78,7 @@ Updated : Test Tree with columns: Tests: 0/6 selected, 0/4 distinct
 ->   Extra2 (grey90)
 Updated drop-down list in 'Test-file to search' Text entry (set to 'errors') (drop-down list containing ['errors', 'output'])
 
-Changing GUI status to: 'Reading tests completed at 29Jan11:23:14.'
+Changing GUI status to: 'Reading tests completed at 17May16:53:00.'
 
 Expected application event 'all tests to be read' occurred, proceeding.
 
@@ -108,7 +108,6 @@ Description:
 ===============================
 
 'rename selected test' event created with arguments ''
-Adding entry completion 'Common' ...
 
 ---------- Dialog 'Rename selected test' ----------
 Default widget is 'gtk-ok'
@@ -118,7 +117,11 @@ New name:'
 Text entry (set to 'Common')
 '
 New description:'
-Text entry
+...........
+
+========== New description ==========
+
+=====================================
 ---------------
 Button 'gtk-ok' (Stock image 'gtk-ok') , Button 'gtk-cancel' (Stock image 'gtk-cancel')
 ---------------------------------------------------
@@ -127,12 +130,14 @@ Button 'gtk-ok' (Stock image 'gtk-ok') , Button 'gtk-cancel' (Stock image 'gtk-c
 Edited 'New name' Text entry (set to 'Common_renamed')
 
 'enter new description =' event created with arguments 'This test was renamed'
-Edited 'New description' Text entry (set to 'This test was renamed')
+
+========== New description ==========
+This test was renamed
+=====================================
 
 'press ok' event created with arguments ''
 Adding entry completion 'errors' ...
 Adding entry completion 'Common_renamed' ...
-Adding entry completion 'This test was renamed' ...
 
 Updated : Test Tree with columns: Tests: 3/6 selected, 1/4 distinct
 -> TargetApp (hello) (grey90,bold)
@@ -172,8 +177,6 @@ Copy of Common
 ===============================
 
 'rename selected test' event created with arguments ''
-Adding entry completion 'Extra1' ...
-Adding entry completion 'Copy of Common' ...
 
 ---------- Dialog 'Rename selected test' ----------
 Default widget is 'gtk-ok'
@@ -183,7 +186,11 @@ New name:'
 Text entry (set to 'Extra1')
 '
 New description:'
-Text entry (set to 'Copy of Common')
+...........
+
+========== New description ==========
+Copy of Common
+=====================================
 ---------------
 Button 'gtk-ok' (Stock image 'gtk-ok') , Button 'gtk-cancel' (Stock image 'gtk-cancel')
 ---------------------------------------------------
@@ -192,11 +199,14 @@ Button 'gtk-ok' (Stock image 'gtk-ok') , Button 'gtk-cancel' (Stock image 'gtk-c
 Edited 'New name' Text entry (set to 'Extra1_renamed')
 
 'enter new description =' event created with arguments 'Copy of Common. Renamed.'
-Edited 'New description' Text entry (set to 'Copy of Common. Renamed.')
+
+========== New description ==========
+Copy of Common. Renamed.
+=====================================
 
 'press ok' event created with arguments ''
+Adding entry completion 'Extra1' ...
 Adding entry completion 'Extra1_renamed' ...
-Adding entry completion 'Copy of Common. Renamed.' ...
 
 Updated : Test Tree with columns: Tests: 1/6 selected, 1/4 distinct
 -> TargetApp (hello) (grey90,bold)
