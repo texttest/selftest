@@ -2,7 +2,8 @@
 
 import time, sys
 try:
-    sys.stderr.write("We went into an infinite loop!\n")
+    sys.stdout.write("We went into an infinite loop!\n")
+    sys.stdout.flush()	
     time.sleep(1000)
 except KeyboardInterrupt:
     pass
