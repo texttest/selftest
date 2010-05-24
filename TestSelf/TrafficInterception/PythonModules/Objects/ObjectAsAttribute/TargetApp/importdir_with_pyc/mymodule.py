@@ -3,7 +3,10 @@ class MyObject:
     def getValue(self):
         pass
 
-def callFunction(obj):
-    return "Answer"
+    def getFunctionAnswer(self):
+        return "Answer"
+    
+def callFunction(obj, param=None):
+    return param.getFunctionAnswer()
 
 object = MyObject()

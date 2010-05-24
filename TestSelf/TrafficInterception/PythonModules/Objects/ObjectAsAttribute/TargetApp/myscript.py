@@ -4,4 +4,4 @@ import mymodule
 
 o = mymodule.object
 print o.getValue()
-print mymodule.callFunction(o)
+print mymodule.callFunction(o, param=o)
