@@ -2,9 +2,9 @@ Enabling entry completion, using matching 1
 Adding entry completion '<default>' ...
 Adding entry completion 'localhost' ...
 Adding entry completion '1' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.14May114552.12931/texttest.gui/GUI/StaticGUI/Miscellaneous/ViewHelp/log/logging.debug' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.24May133056.9196/texttest.gui/GUI/StaticGUI/Miscellaneous/ViewHelp/log/logging.debug' ...
 Adding entry completion '/users/geoff/work/master/Testing/TextTest/log/logging.debug' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.14May114552.12931/texttest.gui/GUI/StaticGUI/Miscellaneous/ViewHelp/log' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.24May133056.9196/texttest.gui/GUI/StaticGUI/Miscellaneous/ViewHelp/log' ...
 Adding entry completion 'site' ...
 Adding entry completion 'personal' ...
 Adding entry completion 'all' ...
@@ -51,7 +51,7 @@ Button 'Filter' (Stock image 'gtk-find', accelerator 'Ctrl+F', tooltip 'filter t
 Button 'Reset Tab' (tooltip 'Reset all the settings in the current tab to their default values')
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 14May11:45:58.' , Image 'throbber_inactive.png'
+'TextTest started at 24May13:31:03.' , Image 'throbber_inactive.png'
 --------------------------------------------------------------------------------
 
 Changing GUI status to: 'Reading tests ...'
@@ -96,7 +96,7 @@ Updated : Test Tree with columns: Tests: 0/11 selected
 ->       S01 (grey90)
 Updated drop-down list in 'Test-file to search' Text entry (set to 'output') (drop-down list containing ['output'])
 
-Changing GUI status to: 'Reading tests completed at 14May11:45:59.'
+Changing GUI status to: 'Reading tests completed at 24May13:31:03.'
 
 Expected application event 'all tests to be read' occurred, proceeding.
 
@@ -252,8 +252,8 @@ Changing GUI status to: ''
 ---------- Dialog 'TextTest Migration Notes' ----------
 Default widget is 'gtk-close'
 
-Showing Notebook with tabs: from 3.17 , from 3.16 , from 3.15 , from 3.14 , from 3.13 , from 3.12 , from 3.11 , from 3.10 , from 3.9 , from 3.8 , from 3.7 , from 3.6 , from 3.5 , from 3.4 , from 3.3 , from 3.1 , from 2.x
-Viewing page 'from 3.17'
+Showing Notebook with tabs: from 3.18 , from 3.17 , from 3.16 , from 3.15 , from 3.14 , from 3.13 , from 3.12 , from 3.11 , from 3.10 , from 3.9 , from 3.8 , from 3.7 , from 3.6 , from 3.5 , from 3.4 , from 3.3 , from 3.1 , from 2.x
+Viewing page 'from 3.18'
 
 ========== GtkTextView ==========
 
@@ -263,13 +263,11 @@ Nothing to migrate, but note the following behaviour changes:
 CHANGES IN DEFAULT BEHAVIOUR (OR PROCEDURE)
 =========================================================
 
-(1) Process termination on Windows
-==================================
-The entire process tree will now be removed by default, as it is on POSIX systems.
-This is done using the Windows command-line program "taskkill" which is believed to
-exist on all Windows versions from XP and onwards. If killing tests stops working for you and
-your version of Windows doesn't have 'taskkill', you should set the new config file 
-setting "kill_command" appropriately.
+(1) Various warnings "upgraded"
+===============================
+Various errors and warnings that previously only got written in batch mode log files will now
+appears also when you run the UI. For example, if a "testsuite" file refers to a test that cannot
+be found. Basically you'll need to fix these things now whereas before they could largely be ignored.
 =================================
 ---------------
 Button 'gtk-close' (Stock image 'gtk-close')
@@ -277,7 +275,7 @@ Button 'gtk-close' (Stock image 'gtk-close')
 
 'view tab' event created with arguments 'from 3.4'
 
-Current page changed in Notebook with tabs: from 3.17 , from 3.16 , from 3.15 , from 3.14 , from 3.13 , from 3.12 , from 3.11 , from 3.10 , from 3.9 , from 3.8 , from 3.7 , from 3.6 , from 3.5 , from 3.4 , from 3.3 , from 3.1 , from 2.x
+Current page changed in Notebook with tabs: from 3.18 , from 3.17 , from 3.16 , from 3.15 , from 3.14 , from 3.13 , from 3.12 , from 3.11 , from 3.10 , from 3.9 , from 3.8 , from 3.7 , from 3.6 , from 3.5 , from 3.4 , from 3.3 , from 3.1 , from 2.x
 Viewing page 'from 3.4'
 
 ========== GtkTextView ==========
@@ -376,9 +374,35 @@ Viewing page 'trunk'
 
 ========== GtkTextView ==========
 Static GUI Enhancements:
+    - Description boxes are now much larger and easier to enter multiple lines (guiplugins.py)
+	For Add Test and Rename Test.
+    - Can now test your run_dependent_text filtering directly without running a test (runningactions.py)
+	Can be selected rom the file popup menu
+    - Text info field now shows the full path to the test underneath the description (textinfo.py)
+    - "Times to run" entry on Running tab is now a spin button, a bit nicer to handle and less error-prone (guiplugins.py)
+Dynamic GUI Enhancements:
+    - Can now select all tests with the same diff as the currently selected one (statusviews.py)
+	New action in file popup menu
+    - Run Info tab now shows times at which individual tests started and ended (textinfo.py)
+    - Run Info tab now shows full path to the test instead of just the name (textinfo.py)
+    - When running tests are viewed, completion percentage is estimated from stored CPU time as well as file sizes (textinfo.py)
 Framework Enhancements:
+    - System warnings reviewed (plugins.py)
+	Many that were previously largely invisible when running the GUI will now turn up as GUI popup windows. 
+	Others will also appear on the console. One example is when a test is referred to but cannot be found.
 Batch Report Enhancements:
+    - Cell text generator rewritten (testoverview.py)
+	More closely based on text that appears in the UI. Less prone to being horribly long.
+Grid Engine (LSF/SGE) enhancements:
+    - We now poll the grid engine every 15 seconds for job information (masterprocess.py)
+	Means that the GUI shows if a test job is suspended or in some other internal grid states
+	Also means that crashed jobs (e.g. on bad hardware) are picked up automatically rather than remaining pending.
 Bug Fixes:
+    - File previews in bottom-right Text Info window no longer get confused by files with "---" separators in them (textinfo.py)
+    - If a collate_script hangs, killing the test /terminating TextTest now works smoothely (sandbox.py)
+    - Traffic server no longer relies on centrally installed PyUseCase. (traffic_server.py)
+    - slow_motion_replay_speed now allows floating-point values. (default/__init__.py)
+    - Recording no longer eliminates unsaveable versions from the default version used (runningactions.py)
 =================================
 ---------------
 Button 'gtk-close' (Stock image 'gtk-close')
