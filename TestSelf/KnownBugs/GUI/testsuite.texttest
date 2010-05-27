@@ -10,6 +10,11 @@ ViewInStaticGUI
 # Check that trying to save a test with a known bug generates a warning, but lets us do it if we persist.
 SaveKnownBug
 
+# If we save some files this can cause the number of differing files to drop to 1. We should handle this 
+# and trigger bugs if appropriate.
+# 
+PartialSaveTriggersBug
+
 # Make sure we can correctly report bugs from the GUI
 CreateNewReport
 
