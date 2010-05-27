@@ -2,9 +2,9 @@ Enabling entry completion, using matching 1
 Adding entry completion '<default>' ...
 Adding entry completion 'localhost' ...
 Adding entry completion '1' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.26May154020.15279/texttest.gui/TestSelf/KnownBugs/GUI/CreateNewReport/log/logging.debug' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.27May162955.12274/texttest.gui/TestSelf/KnownBugs/GUI/CreateNewReport/log/logging.debug' ...
 Adding entry completion '/users/geoff/work/master/Testing/TextTest/log/logging.debug' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.26May154020.15279/texttest.gui/TestSelf/KnownBugs/GUI/CreateNewReport/log' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.27May162955.12274/texttest.gui/TestSelf/KnownBugs/GUI/CreateNewReport/log' ...
 Adding entry completion 'site' ...
 Adding entry completion 'personal' ...
 Adding entry completion 'all' ...
@@ -51,7 +51,7 @@ Button 'Filter' (Stock image 'gtk-find', accelerator 'Ctrl+F', tooltip 'filter t
 Button 'Reset Tab' (tooltip 'Reset all the settings in the current tab to their default values')
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 26May15:41:03.' , Image 'throbber_inactive.png'
+'TextTest started at 27May16:29:59.' , Image 'throbber_inactive.png'
 ----------------------------------------------------------------------------------
 
 Changing GUI status to: 'Reading tests ...'
@@ -63,7 +63,7 @@ Updated : Test Tree with columns: Tests: 0/1 selected
 ->   Test (black/grey90)
 Updated drop-down list in 'Test-file to search' Text entry (set to 'output') (drop-down list containing ['knownbugs', '----------', 'errors', 'output'])
 
-Changing GUI status to: 'Reading tests completed at 26May15:41:05.'
+Changing GUI status to: 'Reading tests completed at 27May16:29:59.'
 
 Expected application event 'all tests to be read' occurred, proceeding.
 
@@ -93,24 +93,27 @@ Root test suite
 'enter failure information' event created with arguments ''
 Adding entry completion 'errors' ...
 Adding entry completion 'output' ...
-Adding entry completion 'free_text' ...
 Adding entry completion '<none>' ...
 Adding entry completion 'bugzilla' ...
 
 ---------- Dialog 'Enter information for automatic interpretation of test failures' ----------
 Default widget is 'gtk-ok'
+.....'Search for'......
 'Text or regexp to match:'
 Text entry
-'File to search in:' (tooltip 'TextTest will search in the newly generated file (not the diff) with the stem you provide here. The exception is if you choose 'free_text', when it will search in the whole difference report as it appears in the lower right window in the dynamic GUI.')
-Text entry (set to 'output') (drop-down list containing ['errors', 'output', 'free_text'])
-'
+Check button 'Trigger if given text is NOT present'
+.....'Search in'......
+Radio button 'Specific file' (checked) (tooltip 'Search in a newly generated file (not its diff)') , Radio button 'Full difference report' (tooltip 'Search in the whole difference report as it appears in the lower right window in the dynamic GUI')
+'File to search in:'
+Text entry (set to 'output') (drop-down list containing ['errors', 'output'])
+Check button 'Trigger even if other files differ' (tooltip 'By default, this bug is only enabled if only the provided file is different. Check this box to enable it irrespective of what other difference exist. Note this increases the chances of it being reported erroneously and should be used carefully.')
+Check button 'Trigger even if file to search would otherwise compare as equal' (tooltip 'By default, this bug is only enabled if a difference is detected in the provided file to search. Check this box to search for it even if the file compares as equal.')
+Expander: 'Additional options to only apply to certain runs'
+-> '
 Version to report for:'
 Text entry
 'Trigger only when run on machine(s):'
 Text entry
-Check button 'Trigger if given text is NOT present'
-Check button 'Trigger even if other files differ' (tooltip 'By default, this bug is only enabled if only the provided file is different. Check this box to enable it irrespective of what other difference exist. Note this increases the chances of it being reported erroneously and should be used carefully.')
-Check button 'Trigger even if file to search would otherwise compare as equal' (tooltip 'By default, this bug is only enabled if a difference is detected in the provided file to search. Check this box to search for it even if the file compares as equal.')
 ---------------
 'Fill in exactly one of the sections below
 '

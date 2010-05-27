@@ -2,9 +2,9 @@ Enabling entry completion, using matching 1
 Adding entry completion '<default>' ...
 Adding entry completion 'localhost' ...
 Adding entry completion '1' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.27May163204.12300/texttest.gui/TestSelf/KnownBugs/GUI/CreateNewDescription/log/logging.debug' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.27May165446.12917/texttest.gui/TestSelf/KnownBugs/GUI/FreeTextReport/log/logging.debug' ...
 Adding entry completion '/users/geoff/work/master/Testing/TextTest/log/logging.debug' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.27May163204.12300/texttest.gui/TestSelf/KnownBugs/GUI/CreateNewDescription/log' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.27May165446.12917/texttest.gui/TestSelf/KnownBugs/GUI/FreeTextReport/log' ...
 Adding entry completion 'site' ...
 Adding entry completion 'personal' ...
 Adding entry completion 'all' ...
@@ -51,7 +51,7 @@ Button 'Filter' (Stock image 'gtk-find', accelerator 'Ctrl+F', tooltip 'filter t
 Button 'Reset Tab' (tooltip 'Reset all the settings in the current tab to their default values')
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 27May16:32:10.' , Image 'throbber_inactive.png'
+'TextTest started at 27May16:54:50.' , Image 'throbber_inactive.png'
 ----------------------------------------------------------------------------------
 
 Changing GUI status to: 'Reading tests ...'
@@ -63,7 +63,7 @@ Updated : Test Tree with columns: Tests: 0/1 selected
 ->   Test (black/grey90)
 Updated drop-down list in 'Test-file to search' Text entry (set to 'knownbugs') (drop-down list containing ['knownbugs', '----------', 'errors', 'output'])
 
-Changing GUI status to: 'Reading tests completed at 27May16:32:11.'
+Changing GUI status to: 'Reading tests completed at 27May16:54:51.'
 
 Expected application event 'all tests to be read' occurred, proceeding.
 
@@ -101,6 +101,29 @@ Description:
 Full path:
 Test
 ===============================
+
+'view actions for test' event created with arguments 'Test'
+
+---------- Popup Window ----------
+'Add Test' (Stock image 'gtk-add', greyed out, accelerator 'Ctrl+N')
+'Add Suite' (Stock image 'gtk-add', greyed out)
+  ----
+'Cut' (Stock image 'gtk-cut', accelerator 'Ctrl+X')
+'Copy' (Stock image 'gtk-copy', accelerator 'Ctrl+C')
+'Paste' (Stock image 'gtk-paste', greyed out, accelerator 'Ctrl+V')
+'Rename...' (Stock image 'gtk-italic', accelerator 'Ctrl+M')
+'Remove...' (Stock image 'gtk-delete')
+  ----
+'Enter Failure Information' (Stock image 'gtk-info', accelerator 'Ctrl+I')
+  ----
+'Show only selected'
+'Hide selected'
+  ----
+'Run' (Stock image 'gtk-execute', accelerator 'Ctrl+R')
+'Record Use-Case' (Stock image 'gtk-media-record', greyed out, accelerator 'F9')
+  ----
+'Reorder' (+)
+----------------------------------
 
 'enter failure information' event created with arguments ''
 Adding entry completion 'none' ...
@@ -147,33 +170,29 @@ Check button 'Report as 'internal error' rather than 'known bug''
 Button 'gtk-ok' (Stock image 'gtk-ok') , Button 'gtk-cancel' (Stock image 'gtk-cancel')
 ----------------------------------------------------------------------------------------------
 
-'enter text or regexp to match =' event created with arguments 'geoff'
-Edited 'Text or regexp to match' Text entry (set to 'geoff')
-
-'enter file to search in =' event created with arguments 'errors'
-Edited 'File to search in' Text entry (set to 'errors')
-
-'enter full description =' event created with arguments 'Not mentioning geoff enough'
-Edited 'Full description' Text entry (set to 'Not mentioning geoff enough')
-
-'enter few-word summary =' event created with arguments 'No geoff'
-Edited 'Few-word summary' Text entry (set to 'No geoff')
-
-'enter trigger only when run on machine(s) =' event created with arguments 'fake_machine1'
-Edited 'Trigger only when run on machine(s)' Text entry (set to 'fake_machine1')
-
-'check trigger if given text is not present' event created with arguments ''
-Toggled Check button 'Trigger if given text is NOT present' (checked)
+'enter text or regexp to match =' event created with arguments 'foobar'
+Edited 'Text or regexp to match' Text entry (set to 'foobar')
 
 'enable option for checking equal files' event created with arguments ''
 Toggled Check button 'Trigger even if file to search would otherwise compare as equal' (checked) (tooltip 'By default, this bug is only enabled if a difference is detected in the provided file to search. Check this box to search for it even if the file compares as equal.')
 
+'search in the full difference report' event created with arguments ''
+
+Greyed out : File to search in, Trigger even if file to search would otherwise compare as equal, Trigger even if other files differ
+Toggled Radio button 'Specific file' (tooltip 'Search in a newly generated file (not its diff)')
+Toggled Radio button 'Full difference report' (checked) (tooltip 'Search in the whole difference report as it appears in the lower right window in the dynamic GUI')
+
+'enter full description =' event created with arguments 'A long description'
+Edited 'Full description' Text entry (set to 'A long description')
+
+'enter few-word summary =' event created with arguments 'Short stuff'
+Edited 'Few-word summary' Text entry (set to 'Short stuff')
+
 'press ok' event created with arguments ''
 Adding entry completion 'knownbugs' ...
-Adding entry completion 'geoff' ...
-Adding entry completion 'fake_machine1' ...
-Adding entry completion 'Not mentioning geoff enough' ...
-Adding entry completion 'No geoff' ...
+Adding entry completion 'foobar' ...
+Adding entry completion 'A long description' ...
+Adding entry completion 'Short stuff' ...
 
 Updated : File Tree with columns: Test
 -> Standard Files (white,bold)
@@ -190,72 +209,5 @@ Updated : File Tree with columns: Test
 ->   knownbugs.hello.unchanged (grey90)
 
 Changing GUI status to: 'Performed 'Enter Failure Information' on test Test.'
-
-'select file' event created with arguments 'knownbugs.hello'
-Viewing file /carm/proj/texttest-tmp/geoff/texttest.27May163204.12300/texttest.gui/TestSelf/KnownBugs/GUI/CreateNewDescription/TargetApp/Test/knownbugs.hello using 'emacs', refresh set to False
-
-Waiting for application event 'file editing operations to complete' to occur.
-
-Changing GUI status to: 'Started "emacs knownbugs.hello" in background (from test Test).'
-
-Expected application event 'file editing operations to complete' occurred, proceeding.
-
-'set test selection to' event created with arguments 'TargetApp (hello)'
-
-Column titles changed in Test Tree with columns: Tests: 1 suite selected
-
-Updated : File Tree with columns: TargetApp
--> Definition Files (white,bold)
-->   testsuite.hello (grey90)
-
-========== Text Info ==========
-
-Description:
-Root test suite
-===============================
-
-'enter failure information' event created with arguments ''
-
----------- Dialog 'Enter information for automatic interpretation of test failures' ----------
-Default widget is 'gtk-ok'
-.....'Search for'......
-'Text or regexp to match:'
-Text entry (set to 'geoff')
-Check button 'Trigger if given text is NOT present' (checked)
-.....'Search in'......
-Radio button 'Specific file' (checked) (tooltip 'Search in a newly generated file (not its diff)') , Radio button 'Full difference report' (tooltip 'Search in the whole difference report as it appears in the lower right window in the dynamic GUI')
-'File to search in:'
-Text entry (set to 'errors') (drop-down list containing ['none', 'errors', 'output'])
-Check button 'Trigger even if other files differ' (tooltip 'By default, this bug is only enabled if only the provided file is different. Check this box to enable it irrespective of what other difference exist. Note this increases the chances of it being reported erroneously and should be used carefully.')
-Check button 'Trigger even if file to search would otherwise compare as equal' (checked) (tooltip 'By default, this bug is only enabled if a difference is detected in the provided file to search. Check this box to search for it even if the file compares as equal.')
-Expander: 'Additional options to only apply to certain runs'
--> '
-Version to report for:'
-Text entry
-'Trigger only when run on machine(s):'
-Text entry (set to 'fake_machine1')
----------------
-'Fill in exactly one of the sections below
-'
-.....'Link failure to a reported bug'......
-'
-Extract info from bug system:'
-Text entry (set to '<none>') (drop-down list containing ['<none>', 'bugzilla'])
-'Bug ID:'
-Text entry
-.....'Link failure to a textual description'......
-'
-Full description:'
-Text entry (set to 'Not mentioning geoff enough')
-'Few-word summary:'
-Text entry (set to 'No geoff')
-Check button 'Report as 'internal error' rather than 'known bug''
----------------
-Button 'gtk-ok' (Stock image 'gtk-ok') , Button 'gtk-cancel' (Stock image 'gtk-cancel')
-----------------------------------------------------------------------------------------------
-
-'press cancel' event created with arguments ''
-
-Changing GUI status to: 'Action cancelled.'
 
 'quit' event created with arguments ''
