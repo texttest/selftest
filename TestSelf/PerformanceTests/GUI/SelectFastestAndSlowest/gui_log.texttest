@@ -3,9 +3,9 @@ Adding entry completion '<default>' ...
 Adding entry completion '0' ...
 Adding entry completion 'localhost' ...
 Adding entry completion '1' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.31May122048.20729/texttest.gui/TestSelf/PerformanceTests/GUI/SelectOnPerformance3/log/logging.debug' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.31May115940.13949/texttest.gui/TestSelf/PerformanceTests/GUI/SelectFastestAndSlowest/log/logging.debug' ...
 Adding entry completion '/users/geoff/work/master/Testing/TextTest/log/logging.debug' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.31May122048.20729/texttest.gui/TestSelf/PerformanceTests/GUI/SelectOnPerformance3/log' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.31May115940.13949/texttest.gui/TestSelf/PerformanceTests/GUI/SelectFastestAndSlowest/log' ...
 Adding entry completion 'site' ...
 Adding entry completion 'personal' ...
 Adding entry completion 'all' ...
@@ -54,7 +54,7 @@ Button 'Filter' (Stock image 'gtk-find', accelerator 'Ctrl+F', tooltip 'filter t
 Button 'Reset Tab' (tooltip 'Reset all the settings in the current tab to their default values')
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 31May12:20:58.' , Image 'throbber_inactive.png'
+'TextTest started at 31May11:59:44.' , Image 'throbber_inactive.png'
 ---------------------------------------------------------------------------------
 
 Changing GUI status to: 'Reading tests ...'
@@ -75,27 +75,49 @@ Updated : Test Tree with columns: Tests: 0/4 selected
 ->   FailuresZeroTime (black/grey90)
 Updated drop-down list in 'Test-file to search' Text entry (set to 'environment') (drop-down list containing ['environment', 'input', '----------', 'errors', 'output', 'performance'])
 
-Changing GUI status to: 'Reading tests completed at 31May12:20:58.'
+Changing GUI status to: 'Reading tests completed at 31May11:59:44.'
 
 Expected application event 'all tests to be read' occurred, proceeding.
 
-'enter execution time =' event created with arguments ',>0:05'
-Edited 'Execution time' Text entry (set to ',>0:05')
+'set number of slowest tests to select =' event created with arguments '3'
+Edited 'Only slowest tests' Spin button entry (set to '3')
 
 'select indicated tests' event created with arguments ''
-Adding entry completion ',>0:05' ...
+Adding entry completion '3' ...
 Adding entry completion 'environment' ...
+
+Changing GUI status to: 'Selecting tests ...'
+Selected 3 out of a possible 4
+Marking 3 tests as selected
+
+No longer greyed out : _Run
+
+Column titles changed in Test Tree with columns: Tests: 3/4 selected
+
+Child visibility changed in Notebook with tabs: Selection , Running , Config
+
+Changing GUI status to: 'Selected 3 tests.'
+
+'choose refine for current selection' event created with arguments ''
+Toggled Radio button 'Discard' (tooltip 'Unselect all currently selected tests before applying the new selection criteria.')
+Toggled Radio button 'Refine' (checked) (tooltip 'Apply the new selection criteria only to the currently selected tests, to obtain a subselection.')
+
+'set number of slowest tests to select =' event created with arguments '0'
+Edited 'Only slowest tests' Spin button entry (set to '0')
+
+'set number of fastest tests to select =' event created with arguments '1'
+Edited 'Only fastest tests' Spin button entry (set to '1')
+
+'select indicated tests' event created with arguments ''
 
 Changing GUI status to: 'Selecting tests ...'
 Selected 1 out of a possible 4
 Marking 1 tests as selected
 
-No longer greyed out : _Run
-
 Column titles changed in Test Tree with columns: Tests: 1/4 selected
 
 Child visibility changed in Notebook with tabs: Test , Selection , Running , Config
 
-Changing GUI status to: 'Selected test Failures.'
+Changing GUI status to: 'Selected test FailuresCurrBelowLimit.'
 
 'quit' event created with arguments ''

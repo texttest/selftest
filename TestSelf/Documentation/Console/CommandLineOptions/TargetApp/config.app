@@ -5,3 +5,4 @@ create_catalogues:true
 partial_copy_test_path:nonsense
 
 collect_traffic:dummy
+performance_test_machine:any
