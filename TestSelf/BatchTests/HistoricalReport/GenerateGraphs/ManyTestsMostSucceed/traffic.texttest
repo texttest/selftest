@@ -1,6 +1,6 @@
 <-PYT:import matplotlib
 <-PYT:matplotlib.__version__
-->RET:'0.98.5.2'
+->RET:'0.99.1.1'
 <-PYT:matplotlib.use('Agg')
 <-PYT:import pylab
 <-PYT:pylab.clf()
@@ -45,10 +45,12 @@
 ->RET:NewStyleInstance('silent_list', 'silent_list2')
 <-PYT:pylab.setp(silent_list2, 'rotation', 90, fontsize=7)
 ->RET:[None, None, None, None, None, None, None, None, None, None]
+<-PYT:axessubplot1.get_ylim()
+->RET:(970.0, 1005.0)
 <-PYT:axessubplot1.autoscale_view(scaley=False, tight=True)
 <-PYT:axessubplot1.legend([rectangle1, rectangle2, rectangle3], ('Failed tests', 'Performance difference', 'Succeeded tests'), 'best', shadow=False)
 ->RET:NewStyleInstance('Legend', 'legend1')
 <-PYT:legend1.get_frame()
 ->RET:NewStyleInstance('FancyBboxPatch', 'fancybboxpatch1')
 <-PYT:fancybboxpatch1.set_alpha(0.5)
-<-PYT:figure1.savefig('/nfs/vm/texttest-tmp/geoff/texttest.25May144322.22536/texttest/TestSelf/BatchTests/HistoricalReport/GenerateGraphs/ManyTestsMostSucceed/report/app1/images/GenerateGraphs_version2.png', dpi=100)
+<-PYT:figure1.savefig('/home/geoff/.texttest/tmp/texttest.07Jun161719.21373/texttest/TestSelf/BatchTests/HistoricalReport/GenerateGraphs/ManyTestsMostSucceed/report/app1/images/GenerateGraphs_version2.png', dpi=100)

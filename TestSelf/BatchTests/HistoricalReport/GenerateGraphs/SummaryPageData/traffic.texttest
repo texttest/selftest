@@ -1,6 +1,6 @@
 <-PYT:import matplotlib
 <-PYT:matplotlib.__version__
-->RET:'0.98.5.2'
+->RET:'0.99.1.1'
 <-PYT:matplotlib.use('Agg')
 <-PYT:import pylab
 <-PYT:pylab.clf()
@@ -45,13 +45,15 @@
 ->RET:NewStyleInstance('silent_list', 'silent_list2')
 <-PYT:pylab.setp(silent_list2, 'rotation', 90, fontsize=7)
 ->RET:[None, None, None, None]
+<-PYT:axessubplot1.get_ylim()
+->RET:(0.0, 14.0)
 <-PYT:axessubplot1.autoscale_view(scaley=False, tight=True)
 <-PYT:axessubplot1.legend([rectangle1, rectangle2, rectangle3], ('Not completed', 'Failed tests', 'Succeeded tests'), 'best', shadow=False)
 ->RET:NewStyleInstance('Legend', 'legend1')
 <-PYT:legend1.get_frame()
 ->RET:NewStyleInstance('FancyBboxPatch', 'fancybboxpatch1')
 <-PYT:fancybboxpatch1.set_alpha(0.5)
-<-PYT:figure1.savefig('/nfs/vm/texttest-tmp/geoff/texttest.25May144322.22536/texttest/TestSelf/BatchTests/HistoricalReport/GenerateGraphs/SummaryPageData/report/app1/images/GenerateGraphs_default.png', dpi=100)
+<-PYT:figure1.savefig('/home/geoff/.texttest/tmp/texttest.07Jun162244.22213/texttest/TestSelf/BatchTests/HistoricalReport/GenerateGraphs/SummaryPageData/report/app1/images/GenerateGraphs_default.png', dpi=100)
 <-PYT:pylab.clf()
 <-PYT:pylab.figure(1)
 ->RET:NewStyleInstance('Figure', 'figure2')
@@ -94,10 +96,12 @@
 ->RET:NewStyleInstance('silent_list', 'silent_list4')
 <-PYT:pylab.setp(silent_list4, 'rotation', 90, fontsize=7)
 ->RET:[None, None, None, None, None, None, None, None, None, None]
+<-PYT:axessubplot2.get_ylim()
+->RET:(0.0, 18.0)
 <-PYT:axessubplot2.autoscale_view(scaley=False, tight=True)
 <-PYT:axessubplot2.legend([rectangle4, rectangle5, rectangle6], ('Failed tests', 'Performance difference', 'Succeeded tests'), 'best', shadow=False)
 ->RET:NewStyleInstance('Legend', 'legend2')
 <-PYT:legend2.get_frame()
 ->RET:NewStyleInstance('FancyBboxPatch', 'fancybboxpatch2')
 <-PYT:fancybboxpatch2.set_alpha(0.5)
-<-PYT:figure2.savefig('/nfs/vm/texttest-tmp/geoff/texttest.25May144322.22536/texttest/TestSelf/BatchTests/HistoricalReport/GenerateGraphs/SummaryPageData/report/app1/images/GenerateGraphs_version2.png', dpi=100)
+<-PYT:figure2.savefig('/home/geoff/.texttest/tmp/texttest.07Jun162244.22213/texttest/TestSelf/BatchTests/HistoricalReport/GenerateGraphs/SummaryPageData/report/app1/images/GenerateGraphs_version2.png', dpi=100)
