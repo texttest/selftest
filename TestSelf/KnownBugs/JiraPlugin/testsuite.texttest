@@ -4,14 +4,17 @@ OpenBug
 # Sometimes fields returned are not strings
 BugWithListValues
 
-# Should report internal error if the bug is reckoned to be closed
-ClosedBug
+# Sometimes custom fields are included without defined values
+BugWithUndefinedValues
 
 # Make sure we can handle unicode characters in the bug text
 BugWithUnicode
 
 # Make sure we can handle unprintable characters in the bug text
 BugWithUnprintable
+
+# Should report internal error if the bug is reckoned to be closed
+ClosedBug
 
 # Make sure bug numbers that don't exist don't fool us
 UnknownBug
