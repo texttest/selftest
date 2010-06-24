@@ -1,9 +1,10 @@
 Enabling entry completion, using matching 1
-Adding entry completion '<default>' ...
+Adding entry completion '2' ...
+Adding entry completion '4' ...
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
 
----------- Window 'TextTest dynamic GUI : testing HELLO (started at 26May15:40:48)' ----------
+---------- Window 'TextTest dynamic GUI : testing HELLO (started at 24Jun14:55:23)' ----------
 Focus widget is 'Test Tree'
 
 Menu Bar : 'File' (+) , 'View' (+) , 'Actions' (+) , 'Help' (+)
@@ -12,7 +13,7 @@ Tool Bar :
   _Quit (Stock image 'gtk-quit', accelerator 'Ctrl+Q', tooltip 'Quit')
   _Kill (Stock image 'gtk-stop', greyed out, accelerator 'Ctrl+Delete', tooltip 'Kill selected tests')
   _Save (Stock image 'gtk-save', greyed out, accelerator 'Ctrl+S', tooltip 'Save results for selected tests')
-  Progress bar set to fraction 0.0, text 'All 0 tests completed at 26May15:40:49'
+  Progress bar set to fraction 0.0, text 'All 0 tests completed at 24Jun14:55:24'
 ...........
 
 Showing Test Tree with columns: Tests: All 0 selected , Details
@@ -26,73 +27,157 @@ Viewing page 'Status'
 Showing Test Status View with columns: Status , Number , Visible
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 26May15:40:49.' , Image 'throbber_inactive.png'
+'TextTest started at 24Jun14:55:24.' , Image 'throbber_inactive.png'
 ----------------------------------------------------------------------------------------------
 
 Progress bar set to fraction 0.0, text '0 of 1 tests completed'
 
 Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
--> TargetApp (hello) (black/white,bold) | (white)
-->   BothDiff (black/white) | (white)
+-> TargetApp (hello.2) (black/white,bold) | (white)
+->   OutDiff (black/white) | (white)
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 1 (white,bold) | Check box (checked)
 
-Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
--> TargetApp (hello) (black/white,bold) | (white)
-->   BothDiff (black/LightGoldenrod1) | (LightGoldenrod1)
+Progress bar set to fraction 0.0, text '0 of 2 tests completed'
+
+Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
+-> TargetApp (hello.2) (black/white,bold) | (white)
+->   OutDiff (black/white) | (white)
+-> TargetApp (hello.4) (black/white,bold) | (white)
+->   OutDiff (black/white) | (white)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white,bold) | 2 (white,bold) | Check box (checked)
+
+Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
+-> TargetApp (hello.2) (black/white,bold) | (white)
+->   OutDiff (black/LightGoldenrod1) | (LightGoldenrod1)
+-> TargetApp (hello.4) (black/white,bold) | (white)
+->   OutDiff (black/white) | (white)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white,bold) | 1 (white,bold) | Check box (checked)
+-> Initial filter (LightGoldenrod1,bold) | 1 (LightGoldenrod1,bold) | Check box (checked)
+
+Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
+-> TargetApp (hello.2) (black/white,bold) | (white)
+->   OutDiff (black/LightGoldenrod1) | (LightGoldenrod1)
+-> TargetApp (hello.4) (black/white,bold) | (white)
+->   OutDiff (black/white) | (white)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white,bold) | 1 (white,bold) | Check box (checked)
+-> Initial filter (white) | 0 (white) | Check box (checked)
+-> Running (LightGoldenrod1,bold) | 1 (LightGoldenrod1,bold) | Check box (checked)
+
+Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
+-> TargetApp (hello.2) (black/white,bold) | (white)
+->   OutDiff (black/LightGoldenrod1) | (LightGoldenrod1)
+-> TargetApp (hello.4) (black/white,bold) | (white)
+->   OutDiff (black/white) | (white)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white,bold) | 1 (white,bold) | Check box (checked)
+-> Initial filter (white) | 0 (white) | Check box (checked)
+-> Running (white) | 0 (white) | Check box (checked)
+-> Final filter (LightGoldenrod1,bold) | 1 (LightGoldenrod1,bold) | Check box (checked)
+
+Progress bar set to fraction 0.5, text '1 of 2 tests completed'
+
+Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
+-> TargetApp (hello.2) (black/white,bold) | (white)
+->   OutDiff (black/salmon) | output different (salmon)
+-> TargetApp (hello.4) (black/white,bold) | (white)
+->   OutDiff (black/white) | (white)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white,bold) | 1 (white,bold) | Check box (checked)
+-> Initial filter (white) | 0 (white) | Check box (checked)
+-> Running (white) | 0 (white) | Check box (checked)
+-> Final filter (white) | 0 (white) | Check box (checked)
+-> Failed (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->   Differences (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->     output different (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+
+Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
+-> TargetApp (hello.2) (black/white,bold) | (white)
+->   OutDiff (black/salmon) | output different (salmon)
+-> TargetApp (hello.4) (black/white,bold) | (white)
+->   OutDiff (black/LightGoldenrod1) | (LightGoldenrod1)
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white) | 0 (white) | Check box (checked)
 -> Initial filter (LightGoldenrod1,bold) | 1 (LightGoldenrod1,bold) | Check box (checked)
+-> Running (white) | 0 (white) | Check box (checked)
+-> Final filter (white) | 0 (white) | Check box (checked)
+-> Failed (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->   Differences (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->     output different (salmon,bold) | 1 (salmon,bold) | Check box (checked)
 
-Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
--> TargetApp (hello) (black/white,bold) | (white)
-->   BothDiff (black/LightGoldenrod1) | (LightGoldenrod1)
+Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
+-> TargetApp (hello.2) (black/white,bold) | (white)
+->   OutDiff (black/salmon) | output different (salmon)
+-> TargetApp (hello.4) (black/white,bold) | (white)
+->   OutDiff (black/LightGoldenrod1) | (LightGoldenrod1)
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white) | 0 (white) | Check box (checked)
 -> Initial filter (white) | 0 (white) | Check box (checked)
 -> Running (LightGoldenrod1,bold) | 1 (LightGoldenrod1,bold) | Check box (checked)
+-> Final filter (white) | 0 (white) | Check box (checked)
+-> Failed (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->   Differences (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->     output different (salmon,bold) | 1 (salmon,bold) | Check box (checked)
 
-Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
--> TargetApp (hello) (black/white,bold) | (white)
-->   BothDiff (black/LightGoldenrod1) | (LightGoldenrod1)
+Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
+-> TargetApp (hello.2) (black/white,bold) | (white)
+->   OutDiff (black/salmon) | output different (salmon)
+-> TargetApp (hello.4) (black/white,bold) | (white)
+->   OutDiff (black/LightGoldenrod1) | (LightGoldenrod1)
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white) | 0 (white) | Check box (checked)
 -> Initial filter (white) | 0 (white) | Check box (checked)
 -> Running (white) | 0 (white) | Check box (checked)
 -> Final filter (LightGoldenrod1,bold) | 1 (LightGoldenrod1,bold) | Check box (checked)
+-> Failed (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->   Differences (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->     output different (salmon,bold) | 1 (salmon,bold) | Check box (checked)
 
-Progress bar set to fraction 1.0, text 'All 1 tests completed at 26May15:40:50'
+Progress bar set to fraction 1.0, text 'All 2 tests completed at 24Jun14:55:24'
 
-Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
--> TargetApp (hello) (black/white,bold) | (white)
-->   BothDiff (black/salmon) | errors different(+) (salmon)
+Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
+-> TargetApp (hello.2) (black/white,bold) | (white)
+->   OutDiff (black/salmon) | output different (salmon)
+-> TargetApp (hello.4) (black/white,bold) | (white)
+->   OutDiff (black/salmon) | output different (salmon)
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white) | 0 (white) | Check box (checked)
 -> Initial filter (white) | 0 (white) | Check box (checked)
 -> Running (white) | 0 (white) | Check box (checked)
 -> Final filter (white) | 0 (white) | Check box (checked)
--> Failed (salmon,bold) | 1 (salmon,bold) | Check box (checked)
-->   Differences (salmon,bold) | 1 (salmon,bold) | Check box (checked)
-->     errors different (salmon,bold) | 1 (salmon,bold) | Check box (checked)
-->     output different (salmon,bold) | 1 (salmon,bold) | Check box (checked)
-Only one test found, selecting BothDiff
+-> Failed (salmon,bold) | 2 (salmon,bold) | Check box (checked)
+->   Differences (salmon,bold) | 2 (salmon,bold) | Check box (checked)
+->     output different (salmon,bold) | 2 (salmon,bold) | Check box (checked)
+->       Group 1 (salmon,bold) | 2 (salmon,bold) | Check box (checked)
+
+Expected application event 'completion of test actions' occurred, proceeding.
+
+'view actions for test' event created with arguments 'OutDiff under TargetApp (hello.4)'
 
 No longer greyed out : _Save
 
-Column titles changed in Test Tree with columns: Tests: All 1 selected, none hidden , Details
+Column titles changed in Test Tree with columns: Tests: 1/2 selected, none hidden , Details
 
 Current page changed in Notebook with tabs: Test , Status , Selection , Run Info
 Viewing page 'Test'
 ...........
 
-Showing File Tree with columns: BothDiff , Details
+Showing File Tree with columns: OutDiff , Details
 -> Comparison Files (bold)
-->   errors.hello (salmon) | (salmon)
+->   errors.hello (DarkSeaGreen2) | (DarkSeaGreen2)
 ->   output.hello (salmon) | (salmon)
 
 ------------------------------ (horizontal pane separator, 46% from the top)
@@ -100,26 +185,33 @@ Showing File Tree with columns: BothDiff , Details
 
 ========== Text Info ==========
 Test FAILED :
----------- Differences in errors ----------
-0a1
-> Error text
 ---------- Differences in output ----------
 0a1
 > Hello World!
 ===============================
 
-Expected application event 'completion of test actions' occurred, proceeding.
+---------- Popup Window ----------
+'Save' (Stock image 'gtk-save', accelerator 'Ctrl+S')
+'Save As...' (Stock image 'gtk-save', accelerator 'Ctrl+Alt+S')
+  ----
+'Kill' (Stock image 'gtk-stop', greyed out, accelerator 'Ctrl+Delete')
+'Mark' (accelerator 'Shift+Ctrl+M')
+'Unmark' (greyed out, accelerator 'Shift+Ctrl+U')
+  ----
+'Rerun' (Stock image 'gtk-execute', accelerator 'Ctrl+R')
+'Recompute Status' (Stock image 'gtk-refresh', accelerator 'F5')
+----------------------------------
 
 'mark the selected tests' event created with arguments ''
 Adding entry completion 'Checked' ...
-Adding entry completion 'Checked at 26May15:40:49' ...
+Adding entry completion 'Checked at 24Jun14:55:24' ...
 
 ---------- Dialog 'Mark the selected tests' ----------
 Default widget is 'gtk-ok'
 'Brief text:'
 Text entry (set to 'Checked')
 'Free text:'
-Text entry (set to 'Checked at 26May15:40:49')
+Text entry (set to 'Checked at 24Jun14:55:24')
 ---------------
 Button 'gtk-ok' (Stock image 'gtk-ok') , Button 'gtk-cancel' (Stock image 'gtk-cancel')
 ------------------------------------------------------
@@ -128,38 +220,188 @@ Button 'gtk-ok' (Stock image 'gtk-ok') , Button 'gtk-cancel' (Stock image 'gtk-c
 
 Greyed out : _Save
 
-Updated : Test Tree with columns: Tests: All 1 selected, none hidden , Details
--> TargetApp (hello) (black/white,bold) | (white)
-->   BothDiff (black/orange) | Checked (orange)
+Updated : Test Tree with columns: Tests: 1/2 selected, none hidden , Details
+-> TargetApp (hello.2) (black/white,bold) | (white)
+->   OutDiff (black/salmon) | output different (salmon)
+-> TargetApp (hello.4) (black/white,bold) | (white)
+->   OutDiff (black/orange) | Checked (orange)
 
-Updated : File Tree with columns: BothDiff , Details
+Updated : File Tree with columns: OutDiff , Details
 -> Comparison Files (bold)
-->   errors.hello (salmon) | (salmon)
+->   errors.hello (DarkSeaGreen2) | (DarkSeaGreen2)
 ->   output.hello (salmon) | (salmon)
 
 ========== Text Info ==========
 Test was marked by the user :
-Checked at 26May15:40:49
+Checked at 24Jun14:55:24
 
 ORIGINAL STATE:
 Test FAILED :
- ---------- Differences in errors ----------
-0a1
-> Error text
----------- Differences in output ----------
+ ---------- Differences in output ----------
 0a1
 > Hello World!
 ===============================
 Adding entry completion 'free_text' ...
 
-Changing GUI status to: 'Performed 'Mark the selected tests' on test BothDiff.'
+Changing GUI status to: 'Performed 'Mark the selected tests' on test OutDiff.'
+
+'view actions for test' event created with arguments 'OutDiff under TargetApp (hello.2)'
+
+No longer greyed out : _Save
+
+Column titles changed in Test Tree with columns: Tests: 1/2 selected, none hidden , Details
+
+Updated : File Tree with columns: OutDiff , Details
+-> Comparison Files (bold)
+->   errors.hello (DarkSeaGreen2) | (DarkSeaGreen2)
+->   output.hello (salmon) | (salmon)
+
+========== Text Info ==========
+Test FAILED :
+---------- Differences in output ----------
+0a1
+> Hello World!
+===============================
+
+---------- Popup Window ----------
+'Save' (Stock image 'gtk-save', accelerator 'Ctrl+S')
+'Save As...' (Stock image 'gtk-save', accelerator 'Ctrl+Alt+S')
+  ----
+'Kill' (Stock image 'gtk-stop', greyed out, accelerator 'Ctrl+Delete')
+'Mark' (accelerator 'Shift+Ctrl+M')
+'Unmark' (greyed out, accelerator 'Shift+Ctrl+U')
+  ----
+'Rerun' (Stock image 'gtk-execute', accelerator 'Ctrl+R')
+'Recompute Status' (Stock image 'gtk-refresh', accelerator 'F5')
+----------------------------------
+
+'save results with non-default settings' event created with arguments ''
+
+---------- Dialog 'Saving 1 tests' ----------
+Default widget is 'gtk-save'
+'Version to save:'
+Text entry (set to '2') (drop-down list containing ['2', ''])
+'Version(s) to save previous results as:'
+Text entry
+Check button 'Replace successfully compared files also'
+---------------
+Button 'gtk-save' (Stock image 'gtk-save') , Button 'gtk-cancel' (Stock image 'gtk-cancel')
+---------------------------------------------
+
+'enter version to save =' event created with arguments ''
+Edited 'Version to save' Text entry
+
+'press ok' event created with arguments ''
+
+Changing GUI status to: 'Saving HELLO.2 test-case OutDiff : output, no version'
+
+Greyed out : _Save
+
+Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
+-> TargetApp (hello.2) (black/white,bold) | All 1 tests successful (DarkSeaGreen2)
+-> TargetApp (hello.4) (black/white,bold) | (white)
+->   OutDiff (black/orange) | Checked (orange) | Stock image 'gtk-refresh'
+
+Current page changed in Notebook with tabs: Status , Selection , Run Info
+Viewing page 'Status'
+
+Showing Test Status View with columns: Status , Number , Visible
+-> Not started (white) | 0 (white) | Check box (checked)
+-> Initial filter (white) | 0 (white) | Check box (checked)
+-> Running (white) | 0 (white) | Check box (checked)
+-> Final filter (white) | 0 (white) | Check box (checked)
+-> Failed (white) | 0 (white) | Check box (checked)
+->   Differences (white) | 0 (white) | Check box (checked)
+->     output different (white) | 0 (white) | Check box (checked)
+->       Group 1 (white) | 0 (white) | Check box (checked)
+-> Marked (orange,bold) | 1 (orange,bold) | Check box (checked)
+->   Checked (orange,bold) | 1 (orange,bold) | Check box (checked)
+-> Succeeded (DarkSeaGreen2,bold) | 1 (DarkSeaGreen2,bold) | Check box (checked)
+->   Saved (DarkSeaGreen2,bold) | 1 (DarkSeaGreen2,bold) | Check box (checked)
+
+Changing GUI status to: 'Saved 1 tests.'
+
+'view actions for test' event created with arguments 'OutDiff under TargetApp (hello.4)'
+
+Column titles changed in Test Tree with columns: Tests: 1/2 selected, none hidden , Details
+
+Current page changed in Notebook with tabs: Test , Status , Selection , Run Info
+Viewing page 'Test'
+...........
+
+Showing File Tree with columns: OutDiff , Details
+-> Comparison Files (bold)
+->   errors.hello (DarkSeaGreen2) | (DarkSeaGreen2)
+->   output.hello (salmon) | (salmon) | Stock image 'gtk-refresh'
+
+------------------------------ (horizontal pane separator, 46% from the top)
+...........
+
+========== Text Info ==========
+Test was marked by the user :
+Checked at 24Jun14:55:24
+
+ORIGINAL STATE:
+Test FAILED :
+ ---------- Differences in output ----------
+0a1
+> Hello World!
+===============================
+
+---------- Popup Window ----------
+'Save' (Stock image 'gtk-save', greyed out, accelerator 'Ctrl+S')
+'Save As...' (Stock image 'gtk-save', greyed out, accelerator 'Ctrl+Alt+S')
+  ----
+'Kill' (Stock image 'gtk-stop', greyed out, accelerator 'Ctrl+Delete')
+'Mark' (accelerator 'Shift+Ctrl+M')
+'Unmark' (accelerator 'Shift+Ctrl+U')
+  ----
+'Rerun' (Stock image 'gtk-execute', accelerator 'Ctrl+R')
+'Recompute Status' (Stock image 'gtk-refresh', accelerator 'F5')
+----------------------------------
 
 'recompute test status, including progress information if appropriate' event created with arguments ''
 
-Changing GUI status to: 'Rereading configuration for HELLO ...'
+Changing GUI status to: 'Rereading configuration for HELLO.4 ...'
 
-Changing GUI status to: 'Recomputing status of HELLO test-case BothDiff ...'
+Changing GUI status to: 'Recomputing status of HELLO.4 test-case OutDiff ...'
+
+Updated : Test Tree with columns: Tests: 1/2 selected, none hidden , Details
+-> TargetApp (hello.2) (black/white,bold) | All 1 tests successful (DarkSeaGreen2)
+-> TargetApp (hello.4) (black/white,bold) | (white)
+->   OutDiff (black/orange) | Checked (orange)
+
+Updated : File Tree with columns: OutDiff , Details
+-> Comparison Files (bold)
+->   errors.hello (DarkSeaGreen2) | (DarkSeaGreen2)
+->   output.hello (DarkSeaGreen2) | (DarkSeaGreen2)
+
+========== Text Info ==========
+Test was marked by the user :
+Checked at 24Jun14:55:24
+
+ORIGINAL STATE:
+Test succeeded
+===============================
 
 Changing GUI status to: 'Recomputed status of 1 test.'
+
+'unmark the selected tests' event created with arguments ''
+
+Updated : Test Tree with columns: Tests: 1/2 selected, none hidden , Details
+-> TargetApp (hello.2) (black/white,bold) | All 1 tests successful (DarkSeaGreen2)
+-> TargetApp (hello.4) (black/white,bold) | (white)
+->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)
+
+Updated : File Tree with columns: OutDiff , Details
+-> Comparison Files (bold)
+->   errors.hello (DarkSeaGreen2) | (DarkSeaGreen2)
+->   output.hello (DarkSeaGreen2) | (DarkSeaGreen2)
+
+========== Text Info ==========
+Test succeeded
+===============================
+
+Changing GUI status to: 'Performed 'Unmark the selected tests' on test OutDiff.'
 
 'quit' event created with arguments ''
