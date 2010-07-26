@@ -34,6 +34,9 @@ VersionInApp
 # Check that -a <app>.<version1> -v <version2> works
 CombineVersionInApp
 
+# Check that -a <app>.<version1> -v <version1>.<version2> works without duplication
+DuplicateVersionInApp
+
 # Check that we can find and clean up processes if the SUT leaks them but logs the process ID
 TrackProcesses
 
