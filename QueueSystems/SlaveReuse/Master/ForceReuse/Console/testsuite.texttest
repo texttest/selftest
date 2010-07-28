@@ -4,6 +4,9 @@ ReuseOnlyBeyondCapacity
 # We should fulfil resource requirements before respecting capacity...
 ResourcesOverReuse
 
+# The resources aren't important when reconnecting, so we should reuse where we can
+ReconnectIgnoreResources
+
 # Make sure we don't submit slaves so they can't clear their environment, otherwise reuse suffers
 ClearEnvironment
 
