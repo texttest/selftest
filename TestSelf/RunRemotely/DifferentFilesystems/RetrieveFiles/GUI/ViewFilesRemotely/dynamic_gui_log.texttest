@@ -3,7 +3,7 @@ Adding entry completion '<default>' ...
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
 
----------- Window 'TextTest dynamic GUI : testing HELLO (started at 26May13:50:48)' ----------
+---------- Window 'TextTest dynamic GUI : testing HELLO (started at 02Aug15:21:21)' ----------
 Focus widget is 'Test Tree'
 
 Menu Bar : 'File' (+) , 'View' (+) , 'Actions' (+) , 'Help' (+)
@@ -12,7 +12,7 @@ Tool Bar :
   _Quit (Stock image 'gtk-quit', accelerator 'Ctrl+Q', tooltip 'Quit')
   _Kill (Stock image 'gtk-stop', greyed out, accelerator 'Ctrl+Delete', tooltip 'Kill selected tests')
   _Save (Stock image 'gtk-save', greyed out, accelerator 'Ctrl+S', tooltip 'Save results for selected tests')
-  Progress bar set to fraction 0.0, text 'All 0 tests completed at 26May13:50:50'
+  Progress bar set to fraction 0.0, text 'All 0 tests completed at 02Aug15:21:24'
 ...........
 
 Showing Test Tree with columns: Tests: All 0 selected , Details
@@ -26,7 +26,7 @@ Viewing page 'Status'
 Showing Test Status View with columns: Status , Number , Visible
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 26May13:50:50.' , Image 'throbber_inactive.png'
+'TextTest started at 02Aug15:21:24.' , Image 'throbber_inactive.png'
 ----------------------------------------------------------------------------------------------
 
 Progress bar set to fraction 0.0, text '0 of 1 tests completed'
@@ -65,11 +65,11 @@ Updated : Test Status View with columns: Status , Number , Visible
 -> Running (white) | 0 (white) | Check box (checked)
 -> Final filter (LightGoldenrod1,bold) | 1 (LightGoldenrod1,bold) | Check box (checked)
 
-Progress bar set to fraction 1.0, text 'All 1 tests completed at 26May13:50:51'
+Progress bar set to fraction 1.0, text 'All 1 tests completed at 02Aug15:21:25'
 
 Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
 -> TargetApp (hello) (black/white,bold) | (white)
-->   Test (black/salmon) | output different (salmon)
+->   Test (black/salmon) | output different(+) (salmon)
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white) | 0 (white) | Check box (checked)
@@ -79,6 +79,9 @@ Updated : Test Status View with columns: Status , Number , Visible
 -> Failed (salmon,bold) | 1 (salmon,bold) | Check box (checked)
 ->   Differences (salmon,bold) | 1 (salmon,bold) | Check box (checked)
 ->     output different (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->   New (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->     extra new (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->     localfile new (salmon,bold) | 1 (salmon,bold) | Check box (checked)
 Only one test found, selecting Test
 
 No longer greyed out : _Save
@@ -93,6 +96,9 @@ Showing File Tree with columns: Test , Details
 -> Comparison Files (bold)
 ->   errors.hello (DarkSeaGreen2) | (DarkSeaGreen2)
 ->   output.hello (salmon) | (salmon)
+-> New Files (bold)
+->   extra.hello (salmon) | (salmon)
+->   localfile.hello (salmon) | (salmon)
 
 ------------------------------ (horizontal pane separator, 46% from the top)
 ...........
@@ -104,49 +110,22 @@ Test FAILED on testnet-s16 :
 < Hello
 ---
 > Hello World!
+---------- New result in extra ----------
+extra
+---------- New result in localfile ----------
+local
 ===============================
 
 Expected application event 'completion of test actions' occurred, proceeding.
 
-'view options for' event created with arguments 'Run Info'
+'select file' event created with arguments 'extra.hello'
+Adding entry completion 'free_text' ...
+Viewing file /carm/proj/texttest-tmp/geoff/texttest.gui.02Aug152114.23173/texttest.gui/TestSelf/RunRemotely/DifferentFilesystems/RetrieveFiles/GUI/ViewFilesRemotely/texttesttmp/dynamic_gui.02Aug152121.23182/hello/Test/extra.hello using 'emacs', refresh set to False
 
-Current page changed in Notebook with tabs: Test , Status , Selection , Run Info
-Viewing page 'Run Info'
-...........
+Waiting for application event 'file editing operations to complete' to occur.
 
-========== Run Info ==========
-Application name : HELLO
-Version          : 
-Number of tests  : 1
-Executable       : /carm/proj/texttest-tmp/geoff/texttest.26May134951.24999/texttest.gui/TestSelf/RunRemotely/DifferentFilesystems/GUI/ShowArguments/TargetApp/hello.py
+Changing GUI status to: 'Started "emacs extra.hello" in background (from test Test).'
 
-Command line     : /users/geoff/work/master/Testing/TextTest/bin/texttest.py --vanilla site -g
-
-Start time       : 26May13:50:48
-End time         : 26May13:50:51
-==============================
-
------------------------------- (horizontal pane separator, 46% from the top)
-...........
-
-========== Test Run Info ==========
-Selected test  : Test
-
-Start time       : 26May13:50:51
-End time         : 26May13:50:51
-
-Description:
-<No description provided>
-
-Command Line   : python ~/.texttest/tmp/dynamic_gui.26May135048.964/system_under_test/hello.py
-
-Environment variables :
-PATH=/carm/proj/texttest-tmp/geoff/texttest.26May134951.24999/texttest.gui/TestSelf/RunRemotely/DifferentFilesystems/GUI/ShowArguments/texttesttmp/dynamic_gui.26May135048.964/hello/Test:/carm/proj/texttest-tmp/geoff/texttest.26May134951.24999/texttest.gui/TestSelf/RunRemotely/DifferentFilesystems/GUI/ShowArguments/traffic_intercepts:/carm/proj/texttest-tmp/geoff/texttest.26May134951.24999/texttest.gui/TestSelf/RunRemotely/DifferentFilesystems/GUI/ShowArguments:/users/geoff/bin/coverage.latest/usr/bin:/carm/proj/texttest/geoff/Testing/TextTest/pyusecase/bin:/users/geoff/bin:/carm/proj/texttest/release/current/site/bin:/usr/local/share/sge6.2/bin/lx24-amd64:/users/geoff/bin/coverage.latest/usr/bin:/carm/proj/texttest/geoff/Testing/TextTest/pyusecase/bin:/users/geoff/bin:/carm/proj/texttest/release/current/site/bin:/tmp/974060.1.short:/users/geoff/bin/coverage.latest/usr/bin:/carm/proj/texttest/geoff/Testing/TextTest/pyusecase/bin:/users/geoff/bin:/carm/proj/texttest/release/current/site/bin:/users/geoff/bin/coverage.latest/usr/bin:/carm/proj/texttest/geoff/Testing/TextTest/pyusecase/bin:/users/geoff/bin:/carm/proj/texttest/release/current/site/bin:/users/geoff/bin/coverage.latest/usr/bin:/carm/proj/texttest/geoff/Testing/TextTest/pyusecase/bin:/users/geoff/bin:/carm/proj/texttest/release/current/site/bin:/users/geoff/bin/coverage.latest/usr/bin:/carm/proj/texttest/geoff/Testing/TextTest/pyusecase/bin:/users/geoff/bin:/carm/proj/texttest/release/current/site/bin:/users/geoff/bin/coverage.latest/usr/bin:/carm/proj/texttest/geoff/Testing/TextTest/pyusecase/bin:/users/geoff/bin:/carm/proj/texttest/release/current/site/bin:/usr/local/share/sge6.2/bin/lx24-amd64:/usr/lib64/qt-3.3/bin:/carm/rational/releases/PurifyPlus.7.0.0.0-010/i386_linux2/bin:/usr/local/sbin:/usr/kerberos/bin:/usr/local/bin:/usr/bin:/bin:/usr/X11R6/bin:/usr/sbin:/sbin:/usr/local/share/texttest/site/bin:/usr/local/share/java/apache-maven-2.2.1/bin:.
-TEXTTEST_ROOT=/carm/proj/texttest-tmp/geoff/texttest.26May134951.24999/texttest.gui/TestSelf/RunRemotely/DifferentFilesystems/GUI/ShowArguments/TargetApp
-TEXTTEST_SANDBOX=/carm/proj/texttest-tmp/geoff/texttest.26May134951.24999/texttest.gui/TestSelf/RunRemotely/DifferentFilesystems/GUI/ShowArguments/texttesttmp/dynamic_gui.26May135048.964/hello/Test
-TEXTTEST_SANDBOX_ROOT=/carm/proj/texttest-tmp/geoff/texttest.26May134951.24999/texttest.gui/TestSelf/RunRemotely/DifferentFilesystems/GUI/ShowArguments/texttesttmp/dynamic_gui.26May135048.964
-USECASE_REPLAY_SCRIPT=
-===================================
+Expected application event 'file editing operations to complete' occurred, proceeding.
 
 'quit' event created with arguments ''
-Adding entry completion 'free_text' ...

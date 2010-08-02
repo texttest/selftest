@@ -3,7 +3,7 @@ Adding entry completion '<default>' ...
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
 
----------- Window 'TextTest dynamic GUI : testing HELLO (started at 02Aug16:01:00)' ----------
+---------- Window 'TextTest dynamic GUI : testing HELLO (started at 02Aug15:48:46)' ----------
 Focus widget is 'Test Tree'
 
 Menu Bar : 'File' (+) , 'View' (+) , 'Actions' (+) , 'Help' (+)
@@ -12,7 +12,7 @@ Tool Bar :
   _Quit (Stock image 'gtk-quit', accelerator 'Ctrl+Q', tooltip 'Quit')
   _Kill (Stock image 'gtk-stop', greyed out, accelerator 'Ctrl+Delete', tooltip 'Kill selected tests')
   _Save (Stock image 'gtk-save', greyed out, accelerator 'Ctrl+S', tooltip 'Save results for selected tests')
-  Progress bar set to fraction 0.0, text 'All 0 tests completed at 02Aug16:01:05'
+  Progress bar set to fraction 0.0, text 'All 0 tests completed at 02Aug15:48:49'
 ...........
 
 Showing Test Tree with columns: Tests: All 0 selected , Details
@@ -26,23 +26,21 @@ Viewing page 'Status'
 Showing Test Status View with columns: Status , Number , Visible
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 02Aug16:01:05.' , Image 'throbber_inactive.png'
+'TextTest started at 02Aug15:48:49.' , Image 'throbber_inactive.png'
 ----------------------------------------------------------------------------------------------
 
 Progress bar set to fraction 0.0, text '0 of 1 tests completed'
 
 Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
 -> TargetApp (hello) (black/white,bold) | (white)
-->   Suite1 (black/white,bold) | (white)
-->     Basic (black/white) | (white)
+->   Test (black/white) | (white)
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 1 (white,bold) | Check box (checked)
 
 Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
 -> TargetApp (hello) (black/white,bold) | (white)
-->   Suite1 (black/white,bold) | (white)
-->     Basic (black/LightGoldenrod1) | (LightGoldenrod1)
+->   Test (black/LightGoldenrod1) | (LightGoldenrod1)
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white) | 0 (white) | Check box (checked)
@@ -50,8 +48,7 @@ Updated : Test Status View with columns: Status , Number , Visible
 
 Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
 -> TargetApp (hello) (black/white,bold) | (white)
-->   Suite1 (black/white,bold) | (white)
-->     Basic (black/LightGoldenrod1) | (LightGoldenrod1)
+->   Test (black/LightGoldenrod1) | (LightGoldenrod1)
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white) | 0 (white) | Check box (checked)
@@ -59,9 +56,9 @@ Updated : Test Status View with columns: Status , Number , Visible
 -> Running (LightGoldenrod1,bold) | 1 (LightGoldenrod1,bold) | Check box (checked)
 
 Expected application event 'all tests to be read' occurred, proceeding.
-Expected application event 'test Basic to start' occurred, proceeding.
+Expected application event 'test Test to start' occurred, proceeding.
 
-'set test selection to' event created with arguments 'Basic'
+'view actions for test' event created with arguments 'Test'
 
 No longer greyed out : _Kill
 
@@ -71,7 +68,7 @@ Current page changed in Notebook with tabs: Test , Status , Selection , Run Info
 Viewing page 'Test'
 ...........
 
-Showing File Tree with columns: Basic , Details
+Showing File Tree with columns: Test , Details
 -> Temporary Files (bold)
 ->   errors.hello (LightGoldenrod1) | (LightGoldenrod1)
 ->   output.hello (LightGoldenrod1) | (LightGoldenrod1)
@@ -80,72 +77,99 @@ Showing File Tree with columns: Basic , Details
 ...........
 
 ========== Text Info ==========
-Running on juliaca
-Reckoned to be 0% complete comparing elapsed time with expected performance.
-(1 second of 16 minutes and 40 seconds)
+Running on testnet-s16
 
 To obtain the latest progress information and an up-to-date comparison of the files above, perform 'recompute status' (press 'F5')
 ===============================
+
+---------- Popup Window ----------
+'Save' (Stock image 'gtk-save', greyed out, accelerator 'Ctrl+S')
+'Save As...' (Stock image 'gtk-save', greyed out, accelerator 'Ctrl+Alt+S')
+  ----
+'Kill' (Stock image 'gtk-stop', accelerator 'Ctrl+Delete')
+'Mark' (greyed out, accelerator 'Shift+Ctrl+M')
+'Unmark' (greyed out, accelerator 'Shift+Ctrl+U')
+  ----
+'Rerun' (Stock image 'gtk-execute', accelerator 'Ctrl+R')
+'Recompute Status' (Stock image 'gtk-refresh', accelerator 'F5')
+----------------------------------
 
 'recompute test status, including progress information if appropriate' event created with arguments ''
 Adding entry completion 'free_text' ...
 
 Changing GUI status to: 'Rereading configuration for HELLO ...'
 
-Changing GUI status to: 'Recomputing status of HELLO test-case Basic ...'
+Changing GUI status to: 'Recomputing status of HELLO test-case Test ...'
 
 Updated : Test Tree with columns: Tests: All 1 selected, none hidden , Details
 -> TargetApp (hello) (black/white,bold) | (white)
-->   Suite1 (black/white,bold) | (white)
-->     Basic (black/LightGoldenrod1) | (LightGoldenrod1)
+->   Test (black/LightGoldenrod1) | (LightGoldenrod1)
 
-Updated : File Tree with columns: Basic , Details
+Updated : File Tree with columns: Test , Details
 -> Comparison Files (bold)
 ->   errors.hello (LightGoldenrod1) | (LightGoldenrod1)
 ->   output.hello (LightGoldenrod1) | (LightGoldenrod1)
+-> New Files (bold)
+->   extra.hello (LightGoldenrod1) | (LightGoldenrod1)
 
 ========== Text Info ==========
-Running on juliaca
-Reckoned to be 108% complete by comparing total file sizes at 02Aug16:01:07.
-Reckoned to be 0% complete comparing elapsed time with expected performance.
-(1 second of 16 minutes and 40 seconds)
+Running on testnet-s16
+Reckoned to be 183% complete by comparing total file sizes at 02Aug15:48:50.
 
 To obtain the latest progress information and an up-to-date comparison of the files above, perform 'recompute status' (press 'F5')
 ===============================
 
 Changing GUI status to: 'Recomputed status of 1 test.'
 
-'select file' event created with arguments 'output.hello'
-Starting graphical difference comparison using 'tkdiff':
--- original file : /carm/proj/texttest-tmp/geoff/dynamic_gui.02Aug155909.24591/texttest.gui/TestSelf/RunningTests/GUI/OtherOperations/CompareWhileRunning/texttesttmp/console.02Aug160100.7484/hello/Suite1/Basic/framework_tmp/output.helloorigcmp
---  current file : /carm/proj/texttest-tmp/geoff/dynamic_gui.02Aug155909.24591/texttest.gui/TestSelf/RunningTests/GUI/OtherOperations/CompareWhileRunning/texttesttmp/console.02Aug160100.7484/hello/Suite1/Basic/framework_tmp/output.hellopartcmp
+'view actions for file' event created with arguments 'extra.hello'
 
-Changing GUI status to: 'Started "tkdiff output.helloorigcmp output.hellopartcmp" in background (from test Basic).'
-
-'set file selection to' event created with arguments 'output.hello'
+---------- Popup Window ----------
+'View File' (Stock image 'gtk-open', accelerator 'Ctrl+O')
+'View Filtered File'
+  ----
+'View Original File' (greyed out)
+'View Filtered Original File' (greyed out)
+  ----
+'View Differences' (greyed out)
+'View Raw Differences' (greyed out)
+  ----
+'Follow File Progress'
+  ----
+'File Properties' (Stock image 'gtk-properties')
+  ----
+'Select Tests With Same Diff'
+  ----
+'Save' (Stock image 'gtk-save', greyed out, accelerator 'Ctrl+S')
+'Save As...' (Stock image 'gtk-save', greyed out, accelerator 'Ctrl+Alt+S')
+----------------------------------
 
 'follow file progress' event created with arguments ''
-Following file /carm/proj/texttest-tmp/geoff/dynamic_gui.02Aug155909.24591/texttest.gui/TestSelf/RunningTests/GUI/OtherOperations/CompareWhileRunning/texttesttmp/console.02Aug160100.7484/hello/Suite1/Basic/output.hello using 'xterm -bg black -fg white -T "File output.hello from test Basic" -e tail -f'
+Following file /carm/proj/texttest-tmp/geoff/texttest.gui.02Aug154841.24014/texttest.gui/TestSelf/RunRemotely/DifferentFilesystems/RetrieveFiles/GUI/FollowFilesRemotely/texttesttmp/dynamic_gui.02Aug154846.24024/hello/Test/extra.hello using 'xterm -bg white -T "File extra.hello from test Test" -e tail -f'
 
-Waiting for application event 'completion of test actions' to occur.
 Waiting for application event 'the file-following program to terminate' to occur.
 
-Changing GUI status to: 'Started "xterm -bg black -fg white -T "File output.hello from test Basic" -e tail -f output.hello" in background (from test Basic).'
+Changing GUI status to: 'Started "xterm -bg white -T "File extra.hello from test Test" -e tail -f extra.hello" in background (from test Test).'
+
+Expected application event 'the file-following program to terminate' occurred, proceeding.
+
+'quit' event created with arguments ''
+Killing running test (process id 24041)
+
+Changing GUI status to: 'Waiting for all tests to terminate ...'
 
 Updated : Test Tree with columns: Tests: All 1 selected, none hidden , Details
 -> TargetApp (hello) (black/white,bold) | (white)
-->   Suite1 (black/white,bold) | (white)
-->     Basic (black/LightGoldenrod1) | (LightGoldenrod1)
+->   Test (black/LightGoldenrod1) | (LightGoldenrod1)
 
-Updated : File Tree with columns: Basic , Details
+Updated : File Tree with columns: Test , Details
 -> Temporary Files (bold)
 ->   errors.hello (LightGoldenrod1) | (LightGoldenrod1)
+->   extra.hello (LightGoldenrod1) | (LightGoldenrod1)
+->   localfile.hello (LightGoldenrod1) | (LightGoldenrod1)
 ->   output.hello (LightGoldenrod1) | (LightGoldenrod1)
 
 ========== Text Info ==========
-Filtering and comparing newly generated result files on juliaca
-Reckoned to be 0% complete comparing elapsed time with expected performance.
-(1 second of 16 minutes and 40 seconds)
+Filtering and comparing newly generated result files on testnet-s16
 
 To obtain the latest progress information and an up-to-date comparison of the files above, perform 'recompute status' (press 'F5')
 ===============================
@@ -153,37 +177,31 @@ To obtain the latest progress information and an up-to-date comparison of the fi
 Greyed out : _Kill
 No longer greyed out : _Save
 
-Progress bar set to fraction 1.0, text 'All 1 tests completed at 02Aug16:01:07'
+Progress bar set to fraction 1.0, text 'All 1 tests completed at 02Aug15:48:51'
 
 Updated : Test Tree with columns: Tests: All 1 selected, none hidden , Details
 -> TargetApp (hello) (black/white,bold) | (white)
-->   Suite1 (black/white,bold) | (white)
-->     Basic (black/salmon) | output different (salmon)
+->   Test (black/salmon) | KILLED (salmon)
 
-Updated : File Tree with columns: Basic , Details
+Updated : File Tree with columns: Test , Details
 -> Comparison Files (bold)
 ->   errors.hello (DarkSeaGreen2) | (DarkSeaGreen2)
 ->   output.hello (salmon) | (salmon)
+-> New Files (bold)
+->   extra.hello (salmon) | (salmon)
+->   localfile.hello (salmon) | (salmon)
 
 ========== Text Info ==========
-Test FAILED :
+Test were terminated before completion (KILLED) on testnet-s16 :
+Test killed explicitly at 15:48
 ---------- Differences in output ----------
 1c1
-< Hello Baby!
+< Hello
 ---
-> Hello World!
+> Terminated
+---------- New result in extra ----------
+extra
+---------- New result in localfile ----------
+local
 ===============================
-Only one test found, selecting Basic
-
-Updated : File Tree with columns: Basic , Details
--> Comparison Files (bold)
-->   errors.hello (DarkSeaGreen2) | (DarkSeaGreen2)
-->   output.hello (salmon) | (salmon)
-
-Expected application event 'completion of test actions' occurred, proceeding.
-Expected application event 'the file-following program to terminate' occurred, proceeding.
-
-'quit' event created with arguments ''
-
-Changing GUI status to: 'Terminating all external viewers ...'
-Killing 'tkdiff output.helloorigcmp output.hellopartcmp (from test Basic)' interactive process
+Only one test found, selecting Test
