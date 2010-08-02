@@ -2,4 +2,7 @@
 
 if __name__ == "__main__":
     import sys
-    sys.stdout.write("Converted " + sys.argv[1])
+    if "Started" in sys.argv[1]:
+        sys.stderr.write("Not converted " + sys.argv[1])
+    else:
+        sys.stdout.write("Converted " + sys.argv[1])
