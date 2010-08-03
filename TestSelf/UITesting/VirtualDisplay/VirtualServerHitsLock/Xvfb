@@ -4,6 +4,8 @@ import os, time, signal, sys
 
 print "Started Xvfb with args", sys.argv
 if ":3" in sys.argv:
+    # Leak a lock file and check TextTest cleans it for us
+    open("/tmp/.X3-lock", "w").close()
     os.kill(os.getppid(), signal.SIGUSR1)
     signal.pause()
 else:
