@@ -1,7 +1,5 @@
 
-import os, stat, time
-
-onceAndForAllNow = time.time()
+import os, stat
 
 class MyStat:
     def __init__(self, origStat):
@@ -10,7 +8,7 @@ class MyStat:
         return getattr(self.origStat, name)
     def __getitem__(self, item):
         if item == stat.ST_MTIME:
-            return onceAndForAllNow - 24 * 60 * 60 # Not exactly now, that makes properties output strange ...
+            return 1249461723
         elif item == stat.ST_MODE:
             return 33204
         elif item == stat.ST_UID:
