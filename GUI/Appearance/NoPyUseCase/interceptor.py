@@ -3,7 +3,7 @@ import __builtin__, sys
 
 origImport = __builtin__.__import__
 def myImport(name, *args, **kwargs):
-    if name == "gtkusecase":
+    if name in [ "usecase", "gtkusecase" ]:
         raise ImportError, "No module named gtkusecase"
     else:
         return origImport(name, *args, **kwargs)
