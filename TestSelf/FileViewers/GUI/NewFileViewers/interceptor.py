@@ -9,6 +9,8 @@ class MyStat:
     def __getitem__(self, item):
         if item == stat.ST_MTIME:
             return 1249461723
+        elif item == stat.ST_SIZE:
+            return 13 # Differs on Windows because of line endings otherwise
         elif item == stat.ST_MODE:
             return 33204
         elif item == stat.ST_UID:
