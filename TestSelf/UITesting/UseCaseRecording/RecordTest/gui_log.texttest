@@ -1,11 +1,11 @@
 Enabling entry completion, using matching 1
 Adding entry completion '<default>' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.31May141619.29411/texttest.gui/TestSelf/UITesting/UseCaseRecording/RecordTest/TargetApp/source_with_pyc' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.gui.gui.09Aug141812.20285/texttest.gui/TestSelf/UITesting/UseCaseRecording/RecordTest/TargetApp/source_with_pyc' ...
 Adding entry completion 'localhost' ...
 Adding entry completion '1' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.31May141619.29411/texttest.gui/TestSelf/UITesting/UseCaseRecording/RecordTest/log/logging.debug' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.gui.gui.09Aug141812.20285/texttest.gui/TestSelf/UITesting/UseCaseRecording/RecordTest/log/logging.debug' ...
 Adding entry completion '/users/geoff/work/master/Testing/TextTest/log/logging.debug' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.31May141619.29411/texttest.gui/TestSelf/UITesting/UseCaseRecording/RecordTest/log' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.gui.gui.09Aug141812.20285/texttest.gui/TestSelf/UITesting/UseCaseRecording/RecordTest/log' ...
 Adding entry completion 'site' ...
 Adding entry completion 'personal' ...
 Adding entry completion 'all' ...
@@ -50,7 +50,7 @@ Button 'Filter' (Stock image 'gtk-find', accelerator 'Ctrl+F', tooltip 'filter t
 Button 'Reset Tab' (tooltip 'Reset all the settings in the current tab to their default values')
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 31May14:17:23.' , Image 'throbber_inactive.png'
+'TextTest started at 09Aug14:18:21.' , Image 'throbber_inactive.png'
 ---------------------------------------------------------------------------------------
 
 Changing GUI status to: 'Reading tests ...'
@@ -66,7 +66,7 @@ Updated : Test Tree with columns: Tests: 0/2 selected
 ->     AddMovie (black/grey90)
 Updated drop-down list in 'Test-file to search' Text entry (set to 'options') (drop-down list containing ['options', 'usecase', '----------', 'errors', 'output'])
 
-Changing GUI status to: 'Reading tests completed at 31May14:17:23.'
+Changing GUI status to: 'Reading tests completed at 09Aug14:18:21.'
 
 Expected application event 'all tests to be read' occurred, proceeding.
 
@@ -94,6 +94,29 @@ Showing File Tree with columns: TargetApp
 Description:
 Root test suite
 ===============================
+
+'view actions for test' event created with arguments 'TargetApp (gui)'
+
+---------- Popup Window ----------
+'Add Test' (Stock image 'gtk-add', accelerator 'Ctrl+N')
+'Add Suite' (Stock image 'gtk-add')
+  ----
+'Cut' (Stock image 'gtk-cut', greyed out, accelerator 'Ctrl+X')
+'Copy' (Stock image 'gtk-copy', greyed out, accelerator 'Ctrl+C')
+'Paste' (Stock image 'gtk-paste', greyed out, accelerator 'Ctrl+V')
+'Rename...' (Stock image 'gtk-italic', greyed out, accelerator 'Ctrl+M')
+'Remove...' (Stock image 'gtk-delete', greyed out)
+  ----
+'Enter Failure Information' (Stock image 'gtk-info', accelerator 'Ctrl+I')
+  ----
+'Show only selected'
+'Hide selected'
+  ----
+'Run' (Stock image 'gtk-execute', accelerator 'Ctrl+R')
+'Record Use-Case' (Stock image 'gtk-media-record', greyed out, accelerator 'F9')
+  ----
+'Reorder' (+)
+----------------------------------
 
 'add test' event created with arguments ''
 Adding entry completion 'first in suite' ...
@@ -128,8 +151,6 @@ Marking 1 tests as selected
 Adding entry completion 'options' ...
 Adding entry completion 't1' ...
 
-No longer greyed out : Record _Use-Case
-
 Updated : Test Tree with columns: Tests: 1/3 selected
 -> TargetApp (gui) (black/grey90,bold)
 ->   AddMovie (black/grey90)
@@ -152,13 +173,53 @@ t1
 
 Changing GUI status to: 'Added new VideoStore test-case t1'
 
+'view actions for test' event created with arguments 't1'
+
+---------- Popup Window ----------
+'Add Test' (Stock image 'gtk-add', greyed out, accelerator 'Ctrl+N')
+'Add Suite' (Stock image 'gtk-add', greyed out)
+  ----
+'Cut' (Stock image 'gtk-cut', accelerator 'Ctrl+X')
+'Copy' (Stock image 'gtk-copy', accelerator 'Ctrl+C')
+'Paste' (Stock image 'gtk-paste', greyed out, accelerator 'Ctrl+V')
+'Rename...' (Stock image 'gtk-italic', accelerator 'Ctrl+M')
+'Remove...' (Stock image 'gtk-delete')
+  ----
+'Enter Failure Information' (Stock image 'gtk-info', accelerator 'Ctrl+I')
+  ----
+'Show only selected'
+'Hide selected'
+  ----
+'Run' (Stock image 'gtk-execute', accelerator 'Ctrl+R')
+'Record Use-Case' (Stock image 'gtk-media-record', accelerator 'F9')
+  ----
+'Reorder' (+)
+----------------------------------
+
 'record use-case' event created with arguments ''
-Starting record run of TextTest with arguments ['-g', '-record', '-vanilla', 'site', '-a', 'gui', '-c', '/carm/proj/texttest-tmp/geoff/texttest.31May141619.29411/texttest.gui/TestSelf/UITesting/UseCaseRecording/RecordTest/TargetApp/source_with_pyc', '-rectraffic', '-count', '1', '-f', '/carm/proj/texttest-tmp/geoff/texttest.31May141619.29411/texttest.gui/TestSelf/UITesting/UseCaseRecording/RecordTest/texttesttmp/static_gui.gui.31May141721.28214/dynamic_run1/gui_select', '-fd', '/carm/proj/texttest-tmp/geoff/texttest.31May141619.29411/texttest.gui/TestSelf/UITesting/UseCaseRecording/RecordTest/texttesttmp/static_gui.gui.31May141721.28214/temporary_filter_files']
+
+---------- Dialog 'Record Use-Case' ----------
+Default widget is 'gtk-ok'
+'Version to record:'
+Text entry
+'Checkout to use for recording:'
+Text entry (set to '/carm/proj/texttest-tmp/geoff/texttest.gui.gui.09Aug141812.20285/texttest.gui/TestSelf/UITesting/UseCaseRecording/RecordTest/TargetApp/source_with_pyc')
+Check button 'Also record command-line or client-server traffic' (checked)
+.....'Automatically replay test after recording it'......
+Radio button 'Disabled'
+Radio button 'In background' (checked)
+Radio button 'Using dynamic GUI'
+---------------
+Button 'gtk-ok' (Stock image 'gtk-ok') , Button 'gtk-cancel' (Stock image 'gtk-cancel')
+----------------------------------------------
+
+'press record' event created with arguments ''
+Starting record run of TextTest with arguments ['-g', '-record', '-vanilla', 'site', '-a', 'gui', '-c', '/carm/proj/texttest-tmp/geoff/texttest.gui.gui.09Aug141812.20285/texttest.gui/TestSelf/UITesting/UseCaseRecording/RecordTest/TargetApp/source_with_pyc', '-rectraffic', '-count', '1', '-f', '/carm/proj/texttest-tmp/geoff/texttest.gui.gui.09Aug141812.20285/texttest.gui/TestSelf/UITesting/UseCaseRecording/RecordTest/texttesttmp/static_gui.gui.09Aug141818.20290/dynamic_run1/gui_select', '-fd', '/carm/proj/texttest-tmp/geoff/texttest.gui.gui.09Aug141812.20285/texttest.gui/TestSelf/UITesting/UseCaseRecording/RecordTest/texttesttmp/static_gui.gui.09Aug141818.20290/temporary_filter_files']
 
 Waiting for application event 'replay GUI to be closed' to occur.
 
 Changing GUI status to: 'Started record session for test t1'
-Starting replay run of TextTest with arguments ['-vanilla', 'site', '-autoreplay', '-o', '', '-a', 'gui', '-c', '/carm/proj/texttest-tmp/geoff/texttest.31May141619.29411/texttest.gui/TestSelf/UITesting/UseCaseRecording/RecordTest/TargetApp/source_with_pyc', '-count', '1', '-f', '/carm/proj/texttest-tmp/geoff/texttest.31May141619.29411/texttest.gui/TestSelf/UITesting/UseCaseRecording/RecordTest/texttesttmp/static_gui.gui.31May141721.28214/dynamic_run1/gui_select', '-fd', '/carm/proj/texttest-tmp/geoff/texttest.31May141619.29411/texttest.gui/TestSelf/UITesting/UseCaseRecording/RecordTest/texttesttmp/static_gui.gui.31May141721.28214/temporary_filter_files']
+Starting replay run of TextTest with arguments ['-vanilla', 'site', '-autoreplay', '-o', '', '-a', 'gui', '-c', '/carm/proj/texttest-tmp/geoff/texttest.gui.gui.09Aug141812.20285/texttest.gui/TestSelf/UITesting/UseCaseRecording/RecordTest/TargetApp/source_with_pyc', '-count', '1', '-f', '/carm/proj/texttest-tmp/geoff/texttest.gui.gui.09Aug141812.20285/texttest.gui/TestSelf/UITesting/UseCaseRecording/RecordTest/texttesttmp/static_gui.gui.09Aug141818.20290/dynamic_run1/gui_select', '-fd', '/carm/proj/texttest-tmp/geoff/texttest.gui.gui.09Aug141812.20285/texttest.gui/TestSelf/UITesting/UseCaseRecording/RecordTest/texttesttmp/static_gui.gui.09Aug141818.20290/temporary_filter_files']
 
 Updated : File Tree with columns: t1
 -> Standard Files (white,bold)
