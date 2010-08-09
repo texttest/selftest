@@ -1,3 +1,8 @@
+# We run with console PyUseCase from the command line
+# so we can receive signals. Do this so often here
+# that we may as well make it default
+interpreter:pyusecase -l config -i console
+
 # Checkout depends on the local machine, and the architecture
 [run_dependent_text]
 errors:Unexpected TextTest slave{WORD -3}{REPLACE <machine>}

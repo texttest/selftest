@@ -6,11 +6,9 @@
 KillTest
 
 # Check messages when using some non-standard signal
-# 
 KillTestOtherSignal
 
 # If the test process is killed externally, wait a while to see if we also get a kill notification
-# 
 KillTestExternal
 
 # Check we can kill a running test, and that extra versions get cleared properly
@@ -30,3 +28,6 @@ ShowStackTrace
 
 # Set a timeout so the test is terminated after a while
 KillViaTimeout
+
+# Ssh doesn't kill things remotely : need to help it out
+KillSshTest

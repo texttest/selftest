@@ -1,4 +1,6 @@
 # don't run the SGE/LSF tests for now : they don't work on Windows...
+# don't run the tests that receive signals either
+extra_version:{CLEAR signals}
 extra_version:{CLEAR sge}
 extra_version:{CLEAR sge.gui}
 extra_version:{CLEAR lsf}

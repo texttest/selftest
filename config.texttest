@@ -3,9 +3,9 @@
 # Path to the executable
 executable:${TEXTTEST_CHECKOUT}/bin/texttest.py
 
-# We run with console PyUseCase from the command line
-interpreter:pyusecase -l config -i console
+interpreter:ttpython
 
+extra_version:signals
 extra_version:gui
 
 # Run-dependent smaller tests
@@ -244,6 +244,7 @@ xvfblog:texttesttmp/*/Xvfb/Xvfb.*
 
 binary_file:overview_graph*
 
+unsaveable_version:signals
 unsaveable_version:rundep
 unsaveable_version:fpdiff
 unsaveable_version:cover
