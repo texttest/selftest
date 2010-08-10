@@ -3,7 +3,7 @@ Adding entry completion '<default>' ...
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
 
----------- Window 'TextTest dynamic GUI : testing HELLO under /carm/proj/texttest-tmp/geoff/texttest.26May154020.15279/texttest.sge.gui/QueueSystems/SlaveReuse/Master/ForceReuse/GUI/JobKillBeforeReuse/TargetApp/ (started at 26May15:41:47)' ----------
+---------- Window 'TextTest dynamic GUI : testing HELLO under /carm/proj/texttest-tmp/geoff/dynamic_gui.10Aug163734.12802/texttest.sge.gui/QueueSystems/SlaveReuse/Master/ForceReuse/GUI/JobKillBeforeReuse/TargetApp/ (started at 10Aug16:40:56)' ----------
 Focus widget is 'Test Tree'
 
 Menu Bar : 'File' (+) , 'View' (+) , 'Actions' (+) , 'Help' (+)
@@ -12,7 +12,7 @@ Tool Bar :
   _Quit (Stock image 'gtk-quit', accelerator 'Ctrl+Q', tooltip 'Quit')
   _Kill (Stock image 'gtk-stop', greyed out, accelerator 'Ctrl+Delete', tooltip 'Kill selected tests')
   _Save (Stock image 'gtk-save', greyed out, accelerator 'Ctrl+S', tooltip 'Save results for selected tests')
-  Progress bar set to fraction 0.0, text 'All 0 tests completed at 26May15:41:48'
+  Progress bar set to fraction 0.0, text 'All 0 tests completed at 10Aug16:41:00'
 ...........
 
 Showing Test Tree with columns: Tests: All 0 selected , Details
@@ -26,7 +26,7 @@ Viewing page 'Status'
 Showing Test Status View with columns: Status , Number , Visible
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 26May15:41:48.' , Image 'throbber_inactive.png'
+'TextTest started at 10Aug16:41:00.' , Image 'throbber_inactive.png'
 ----------------------------------------------------------------------------------------------------
 
 Progress bar set to fraction 0.0, text '0 of 1 tests completed'
@@ -77,7 +77,11 @@ Expected application event 'test Test under TargetApp to start' occurred, procee
 
 No longer greyed out : _Kill
 
-Column titles changed in Test Tree with columns: Tests: 1/2 selected, none hidden , Details
+Changed selection in Test Tree with columns: Tests: 1/2 selected, none hidden , Details
+-> TargetApp (hello) (black/white,bold) | (white)
+->   Test (black/LightGoldenrod1) | RUN (withamfield) (LightGoldenrod1)   ***
+->   Suite (black/white,bold) | (white)
+->     Test (black/white) | (white)
 
 Current page changed in Notebook with tabs: Test , Status , Selection , Run Info
 Viewing page 'Test'
@@ -99,7 +103,6 @@ To obtain the latest progress information and an up-to-date comparison of the fi
 Adding entry completion 'free_text' ...
 
 Changing GUI status to: 'Killing 1 tests ...'
-Killing HELLO test-case Test
 
 Waiting for application event 'completion of test actions' to occur.
 
@@ -112,7 +115,7 @@ Progress bar set to fraction 0.5, text '1 of 2 tests completed'
 
 Updated : Test Tree with columns: Tests: 1/2 selected, none hidden , Details
 -> TargetApp (hello) (black/white,bold) | (white)
-->   Test (black/salmon) | output different (salmon)
+->   Test (black/salmon) | output different (salmon)   ***
 ->   Suite (black/white,bold) | (white)
 ->     Test (black/white) | (white)
 
@@ -132,21 +135,21 @@ Test FAILED on withamfield :
 
 Updated : Test Tree with columns: Tests: 1/2 selected, none hidden , Details
 -> TargetApp (hello) (black/white,bold) | (white)
-->   Test (black/salmon) | output different (salmon)
+->   Test (black/salmon) | output different (salmon)   ***
 ->   Suite (black/white,bold) | (white)
 ->     Test (black/grey80) | PEND (grey80)
 
 Updated : Test Tree with columns: Tests: 1/2 selected, none hidden , Details
 -> TargetApp (hello) (black/white,bold) | (white)
-->   Test (black/salmon) | output different (salmon)
+->   Test (black/salmon) | output different (salmon)   ***
 ->   Suite (black/white,bold) | (white)
 ->     Test (black/LightGoldenrod1) | RUN (withamfield) (LightGoldenrod1)
 
-Progress bar set to fraction 1.0, text 'All 2 tests completed at 26May15:41:51'
+Progress bar set to fraction 1.0, text 'All 2 tests completed at 10Aug16:41:04'
 
 Updated : Test Tree with columns: Tests: 1/2 selected, none hidden , Details
 -> TargetApp (hello) (black/white,bold) | (white)
-->   Test (black/salmon) | output different (salmon)
+->   Test (black/salmon) | output different (salmon)   ***
 ->   Suite (black/white,bold) | All 1 tests successful (DarkSeaGreen2)
 
 Expected application event 'completion of test actions' occurred, proceeding.

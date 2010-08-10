@@ -2,9 +2,9 @@ Enabling entry completion, using matching 1
 Adding entry completion '<default>' ...
 Adding entry completion 'localhost' ...
 Adding entry completion '1' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.31May155741.17172/texttest.gui/GUI/StaticGUI/StartFromScratch/TreeModelFilterBug/log/logging.debug' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/dynamic_gui.10Aug145655.4770/texttest.gui/GUI/StaticGUI/StartFromScratch/TreeModelFilterBug/log/logging.debug' ...
 Adding entry completion '/users/geoff/work/master/Testing/TextTest/log/logging.debug' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.31May155741.17172/texttest.gui/GUI/StaticGUI/StartFromScratch/TreeModelFilterBug/log' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/dynamic_gui.10Aug145655.4770/texttest.gui/GUI/StaticGUI/StartFromScratch/TreeModelFilterBug/log' ...
 Adding entry completion 'site' ...
 Adding entry completion 'personal' ...
 Adding entry completion 'all' ...
@@ -49,7 +49,7 @@ Button 'Filter' (Stock image 'gtk-find', accelerator 'Ctrl+F', tooltip 'filter t
 Button 'Reset Tab' (tooltip 'Reset all the settings in the current tab to their default values')
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 31May15:58:12.' , Image 'throbber_inactive.png'
+'TextTest started at 10Aug14:58:44.' , Image 'throbber_inactive.png'
 ----------------------------------------------------------------------------------
 
 Changing GUI status to: 'Reading tests ...'
@@ -58,7 +58,7 @@ Updated : Test Tree with columns: Tests: All 0 selected
 -> TargetApp (hello) (black/grey90,bold)
 Updated drop-down list in 'Test-file to search' Text entry (set to 'none') (drop-down list containing ['none'])
 
-Changing GUI status to: 'Reading tests completed at 31May15:58:13.'
+Changing GUI status to: 'Reading tests completed at 10Aug14:58:45.'
 
 Expected application event 'all tests to be read' occurred, proceeding.
 
@@ -66,7 +66,8 @@ Expected application event 'all tests to be read' occurred, proceeding.
 
 No longer greyed out : _Run
 
-Column titles changed in Test Tree with columns: Tests: 1 suite selected
+Changed selection in Test Tree with columns: Tests: 1 suite selected
+-> TargetApp (hello) (black/grey90,bold)   ***
 
 Current page changed in Notebook with tabs: Test , Selection , Running , Config
 Viewing page 'Test'
@@ -111,12 +112,11 @@ Button 'gtk-ok' (Stock image 'gtk-ok') , Button 'gtk-cancel' (Stock image 'gtk-c
 Edited 'Suite Name' Text entry (set to 's')
 
 'press ok' event created with arguments ''
-Marking 1 tests as selected
 Adding entry completion 'none' ...
 
 Updated : Test Tree with columns: Tests: 1 suite selected
 -> TargetApp (hello) (black/grey90,bold)
-->   s (black/grey90,bold)
+->   s (black/grey90,bold)   ***
 
 Updated : File Tree with columns: s
 -> Definition Files (white,bold)
@@ -158,13 +158,12 @@ Button 'gtk-ok' (Stock image 'gtk-ok') , Button 'gtk-cancel' (Stock image 'gtk-c
 Edited 'Test Name' Text entry (set to 't')
 
 'press ok' event created with arguments ''
-Marking 1 tests as selected
 Adding entry completion 't' ...
 
 Updated : Test Tree with columns: Tests: All 1 selected
 -> TargetApp (hello) (black/grey90,bold)
 ->   s (black/grey90,bold)
-->     t (black/grey90)
+->     t (black/grey90)   ***
 
 Updated : File Tree with columns: t
 -> Standard Files (white)
@@ -183,7 +182,10 @@ Changing GUI status to: 'Added new HELLO test-case t'
 
 'set test selection to' event created with arguments 'TargetApp (hello)'
 
-Column titles changed in Test Tree with columns: Tests: 1 suite selected
+Changed selection in Test Tree with columns: Tests: 1 suite selected
+-> TargetApp (hello) (black/grey90,bold)   ***
+->   s (black/grey90,bold)
+->     t (black/grey90)
 
 Updated : File Tree with columns: TargetApp
 -> Definition Files (white,bold)
@@ -221,14 +223,13 @@ Button 'gtk-ok' (Stock image 'gtk-ok') , Button 'gtk-cancel' (Stock image 'gtk-c
 Edited 'Test Name' Text entry (set to 't1')
 
 'press ok' event created with arguments ''
-Marking 1 tests as selected
 Adding entry completion 't1' ...
 
 Updated : Test Tree with columns: Tests: 1/2 selected
 -> TargetApp (hello) (black/grey90,bold)
 ->   s (black/grey90,bold)
 ->     t (black/grey90)
-->   t1 (black/grey90)
+->   t1 (black/grey90)   ***
 
 Updated : File Tree with columns: t1
 -> Standard Files (white)
@@ -247,7 +248,11 @@ Changing GUI status to: 'Added new HELLO test-case t1'
 
 'set test selection to' event created with arguments 'TargetApp (hello)'
 
-Column titles changed in Test Tree with columns: Tests: 1 suite selected
+Changed selection in Test Tree with columns: Tests: 1 suite selected
+-> TargetApp (hello) (black/grey90,bold)   ***
+->   s (black/grey90,bold)
+->     t (black/grey90)
+->   t1 (black/grey90)
 
 Updated : File Tree with columns: TargetApp
 -> Definition Files (white,bold)
@@ -285,7 +290,6 @@ Button 'gtk-ok' (Stock image 'gtk-ok') , Button 'gtk-cancel' (Stock image 'gtk-c
 Edited 'Test Name' Text entry (set to 't2')
 
 'press ok' event created with arguments ''
-Marking 1 tests as selected
 Adding entry completion 't2' ...
 
 Updated : Test Tree with columns: Tests: 1/3 selected
@@ -293,7 +297,7 @@ Updated : Test Tree with columns: Tests: 1/3 selected
 ->   s (black/grey90,bold)
 ->     t (black/grey90)
 ->   t1 (black/grey90)
-->   t2 (black/grey90)
+->   t2 (black/grey90)   ***
 
 Updated : File Tree with columns: t2
 -> Standard Files (white)
@@ -312,7 +316,12 @@ Changing GUI status to: 'Added new HELLO test-case t2'
 
 'set test selection to' event created with arguments 'TargetApp (hello)'
 
-Column titles changed in Test Tree with columns: Tests: 1 suite selected
+Changed selection in Test Tree with columns: Tests: 1 suite selected
+-> TargetApp (hello) (black/grey90,bold)   ***
+->   s (black/grey90,bold)
+->     t (black/grey90)
+->   t1 (black/grey90)
+->   t2 (black/grey90)
 
 Updated : File Tree with columns: TargetApp
 -> Definition Files (white,bold)
@@ -350,7 +359,6 @@ Button 'gtk-ok' (Stock image 'gtk-ok') , Button 'gtk-cancel' (Stock image 'gtk-c
 Edited 'Test Name' Text entry (set to 't3')
 
 'press ok' event created with arguments ''
-Marking 1 tests as selected
 Adding entry completion 't3' ...
 
 Updated : Test Tree with columns: Tests: 1/4 selected
@@ -359,7 +367,7 @@ Updated : Test Tree with columns: Tests: 1/4 selected
 ->     t (black/grey90)
 ->   t1 (black/grey90)
 ->   t2 (black/grey90)
-->   t3 (black/grey90)
+->   t3 (black/grey90)   ***
 
 Updated : File Tree with columns: t3
 -> Standard Files (white)

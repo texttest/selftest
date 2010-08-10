@@ -3,7 +3,7 @@ Adding entry completion '<default>' ...
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
 
----------- Window 'TextTest dynamic GUI : testing HELLO (started at 26May13:51:36)' ----------
+---------- Window 'TextTest dynamic GUI : testing HELLO (started at 10Aug14:58:56)' ----------
 Focus widget is 'Test Tree'
 
 Menu Bar : 'File' (+) , 'View' (+) , 'Actions' (+) , 'Mercurial' (+) , 'Help' (+)
@@ -27,7 +27,7 @@ Showing Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 4 (white,bold) | Check box (checked)
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 26May13:51:37.' , Image 'throbber_inactive.png'
+'TextTest started at 10Aug14:59:01.' , Image 'throbber_inactive.png'
 ----------------------------------------------------------------------------------------------
 
 Updated : Test Tree with columns: Tests: 0/4 selected, 3 hidden , Details
@@ -320,7 +320,7 @@ Updated : Test Status View with columns: Status , Number , Visible
 ->   Differences (salmon,bold) | 3 (salmon,bold) | Check box (checked)
 ->     output different (salmon,bold) | 3 (salmon,bold) | Check box (checked)
 
-Progress bar set to fraction 1.0, text 'All 4 tests completed at 26May13:51:39'
+Progress bar set to fraction 1.0, text 'All 4 tests completed at 10Aug14:59:04'
 
 Updated : Test Tree with columns: Tests: 0/4 selected, none hidden , Details
 -> TargetApp (hello) (black/white,bold) | (white)
@@ -347,7 +347,14 @@ Expected application event 'completion of test actions' occurred, proceeding.
 
 No longer greyed out : _Save
 
-Column titles changed in Test Tree with columns: Tests: 1/4 selected, none hidden , Details
+Changed selection in Test Tree with columns: Tests: 1/4 selected, none hidden , Details
+-> TargetApp (hello) (black/white,bold) | (white)
+->   Test1 (black/salmon) | output different (salmon)   ***
+->   Test2 (black/salmon) | output different (salmon)
+->   Suite (black/white,bold) | (white)
+->     Subsuite (black/white,bold) | (white)
+->       Test3 (black/salmon) | output different (salmon)
+->       Test4 (black/DarkSeaGreen2) | (DarkSeaGreen2)
 
 Current page changed in Notebook with tabs: Test , Status , Selection , Run Info
 Viewing page 'Test'
@@ -388,7 +395,7 @@ Subdirectories were ignored, use Mercurial Log Recursive to get the logs for all
 Showing VCS log info tree with columns: File , Last revision committed (UTC)
 -> <span weight='bold'>TargetApp</span>
 ->   <span weight='bold'>Test1</span>
-->     errors.hello | <span weight='bold'>Yesterday at 15:05:09</span>
+->     errors.hello | <span weight='bold'>Yesterday at 15:05:09</span>   ***
 ->     output.hello | <span weight='bold'>Yesterday at 15:05:09</span>
 
 ------------------------------ (vertical VCS dialog separator, 51% from the left edge)
@@ -420,6 +427,11 @@ Adding entry completion 'tip' ...
 
 'set file selection to' event created with arguments 'output.hello'
 
+Changed selection in File Tree with columns: Test1 , Details
+-> Comparison Files (bold)
+->   errors.hello (DarkSeaGreen2) | (DarkSeaGreen2)
+->   output.hello (salmon) | (salmon)   ***
+
 'version control log for the selected files' event created with arguments ''
 
 Changing GUI status to: 'Analyzing logs for output.hello in test Test1'
@@ -435,7 +447,7 @@ Subdirectories were ignored, use Mercurial Log Recursive to get the logs for all
 Showing VCS log info tree with columns: File , Last revision committed (UTC)
 -> <span weight='bold'>TargetApp</span>
 ->   <span weight='bold'>Test1</span>
-->     output.hello | <span weight='bold'>Yesterday at 15:05:09</span>
+->     output.hello | <span weight='bold'>Yesterday at 15:05:09</span>   ***
 
 ------------------------------ (vertical VCS dialog separator, 51% from the left edge)
 
@@ -460,7 +472,14 @@ Button 'gtk-close' (Stock image 'gtk-close')
 
 'set test selection to' event created with arguments 'Test2,Test1'
 
-Column titles changed in Test Tree with columns: Tests: 2/4 selected, none hidden , Details
+Changed selection in Test Tree with columns: Tests: 2/4 selected, none hidden , Details
+-> TargetApp (hello) (black/white,bold) | (white)
+->   Test1 (black/salmon) | output different (salmon)   ***
+->   Test2 (black/salmon) | output different (salmon)   ***
+->   Suite (black/white,bold) | (white)
+->     Subsuite (black/white,bold) | (white)
+->       Test3 (black/salmon) | output different (salmon)
+->       Test4 (black/DarkSeaGreen2) | (DarkSeaGreen2)
 
 Updated : File Tree with columns: Sample from 2 tests , Details
 -> Comparison Files (bold)
@@ -497,7 +516,7 @@ Subdirectories were ignored, use Mercurial Log Recursive to get the logs for all
 Showing VCS log info tree with columns: File , Last revision committed (UTC)
 -> <span weight='bold'>TargetApp</span>
 ->   <span weight='bold'>Test1</span>
-->     errors.hello | <span weight='bold'>Yesterday at 15:05:09</span>
+->     errors.hello | <span weight='bold'>Yesterday at 15:05:09</span>   ***
 ->     output.hello | <span weight='bold'>Yesterday at 15:05:09</span>
 ->   <span weight='bold'>Test2</span>
 ->     errors.hello | <span weight='bold'>Yesterday at 15:05:09</span>
@@ -531,6 +550,11 @@ Button 'gtk-close' (Stock image 'gtk-close')
 
 'set file selection to' event created with arguments 'output.hello'
 
+Changed selection in File Tree with columns: Sample from 2 tests , Details
+-> Comparison Files (bold)
+->   errors.hello (DarkSeaGreen2) | (DarkSeaGreen2)
+->   output.hello (salmon) | (salmon)   ***
+
 'version control log for the selected files' event created with arguments ''
 
 Changing GUI status to: 'Analyzing logs for output.hello in test Test2'
@@ -548,7 +572,7 @@ Subdirectories were ignored, use Mercurial Log Recursive to get the logs for all
 Showing VCS log info tree with columns: File , Last revision committed (UTC)
 -> <span weight='bold'>TargetApp</span>
 ->   <span weight='bold'>Test2</span>
-->     output.hello | <span weight='bold'>Yesterday at 15:05:09</span>
+->     output.hello | <span weight='bold'>Yesterday at 15:05:09</span>   ***
 
 ------------------------------ (vertical VCS dialog separator, 51% from the left edge)
 

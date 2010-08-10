@@ -2,9 +2,9 @@ Enabling entry completion, using matching 1
 Adding entry completion 'subdir' ...
 Adding entry completion 'localhost' ...
 Adding entry completion '1' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.31May141619.29411/texttest.gui/TestSelf/TestData/GUI/CreateDataFiles/log/logging.debug' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/dynamic_gui.10Aug163734.12802/texttest.gui/TestSelf/TestData/GUI/CreateDataFiles/log/logging.debug' ...
 Adding entry completion '/users/geoff/work/master/Testing/TextTest/log/logging.debug' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.31May141619.29411/texttest.gui/TestSelf/TestData/GUI/CreateDataFiles/log' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/dynamic_gui.10Aug163734.12802/texttest.gui/TestSelf/TestData/GUI/CreateDataFiles/log' ...
 Adding entry completion 'site' ...
 Adding entry completion 'personal' ...
 Adding entry completion 'all' ...
@@ -49,7 +49,7 @@ Button 'Filter' (Stock image 'gtk-find', accelerator 'Ctrl+F', tooltip 'filter t
 Button 'Reset Tab' (tooltip 'Reset all the settings in the current tab to their default values')
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 31May14:17:16.' , Image 'throbber_inactive.png'
+'TextTest started at 10Aug16:39:38.' , Image 'throbber_inactive.png'
 ----------------------------------------------------------------------------------------
 
 Changing GUI status to: 'Reading tests ...'
@@ -64,7 +64,7 @@ Updated : Test Tree with columns: Tests: 0/2 selected
 ->   Test2 (black/grey90)
 Updated drop-down list in 'Test-file to search' Text entry (set to 'environment') (drop-down list containing ['environment', 'options', '----------', 'catalogue', 'errors', 'output'])
 
-Changing GUI status to: 'Reading tests completed at 31May14:17:16.'
+Changing GUI status to: 'Reading tests completed at 10Aug16:39:39.'
 
 Expected application event 'all tests to be read' occurred, proceeding.
 
@@ -72,7 +72,10 @@ Expected application event 'all tests to be read' occurred, proceeding.
 
 No longer greyed out : _Run
 
-Column titles changed in Test Tree with columns: Tests: 1/2 selected
+Changed selection in Test Tree with columns: Tests: 1/2 selected
+-> TargetApp (tdat.subdir) (black/grey90,bold)
+->   Test1 (black/grey90)   ***
+->   Test2 (black/grey90)
 
 Current page changed in Notebook with tabs: Test , Selection , Running , Config
 Viewing page 'Test'
@@ -138,6 +141,52 @@ Test1
 
 'view actions for file' event created with arguments 'readonlyfile'
 
+Changed selection in File Tree with columns: Test1
+-> Standard Files (white,bold)
+->   catalogue.tdat (grey90)
+->   errors.tdat (grey90)
+->   output.tdat (grey90)
+-> Definition Files (white,bold)
+->   options.tdat (grey90)
+-> Data Files (white,bold)
+->   readonlyfile (grey90)   ***
+->   writeabledirs (grey90,bold)
+->     otherreadfile (grey90)
+->     readfile (grey90)
+->     toRemove (grey90)
+->     otherdir (grey90,bold)
+->       toRemove (grey90)
+->       writehere (grey90,bold)
+->         readfile (grey90)
+->     readdir (grey90,bold)
+->       otherdir (grey90,bold)
+->         readfile (grey90)
+->       somedir (grey90,bold)
+->         readfile (grey90)
+->     somedir (grey90,bold)
+->       toEdit (grey90)
+->     writehere (grey90,bold)
+->       readfile (grey90)
+->       writeandremovehere (grey90,bold)
+->         readfile (grey90)
+->   writeabledirs.version (grey90,bold)
+->     otherreadfile (grey90)
+->     readfile (grey90)
+->     toRemove (grey90)
+->     otherdir (grey90,bold)
+->       toRemove (grey90)
+->       writehere (grey90,bold)
+->         readfile (grey90)
+->     readdir (grey90,bold)
+->       otherdir (grey90,bold)
+->         readfile (grey90)
+->       somedir (grey90,bold)
+->         readfile (grey90)
+->     writehere (grey90,bold)
+->       readfile (grey90)
+->       writeandremovehere (grey90,bold)
+->         readfile (grey90)
+
 ========== Text Info ==========
 
 Description:
@@ -184,9 +233,9 @@ Radio button 'Create a new file'
 Radio button 'Create a new directory'
 .....'Source to copy from:'......
 
-Showing Source File Chooser (selected '/carm/proj/texttest-tmp/geoff/texttest.31May141619.29411/texttest.gui/TestSelf/TestData/GUI/CreateDataFiles/TargetApp/readonlyfile')
+Showing Source File Chooser (selected '/carm/proj/texttest-tmp/geoff/dynamic_gui.10Aug163734.12802/texttest.gui/TestSelf/TestData/GUI/CreateDataFiles/TargetApp/readonlyfile')
 Shortcut folders (1) :
-- /carm/proj/texttest-tmp/geoff/texttest.31May141619.29411/texttest.gui/TestSelf/TestData/GUI/CreateDataFiles/TargetApp
+- /carm/proj/texttest-tmp/geoff/dynamic_gui.10Aug163734.12802/texttest.gui/TestSelf/TestData/GUI/CreateDataFiles/TargetApp
 ---------------
 Button 'gtk-ok' (Stock image 'gtk-ok') , Button 'gtk-cancel' (Stock image 'gtk-cancel')
 ------------------------------------------------------------------
@@ -194,7 +243,7 @@ Button 'gtk-ok' (Stock image 'gtk-ok') , Button 'gtk-cancel' (Stock image 'gtk-c
 'enter type of file/directory to create =' event created with arguments 'somedir/readonlyfile2'
 Edited 'Type of file/directory to create' Text entry (set to 'somedir/readonlyfile2')
 
-Updated : Source File Chooser (selected '/carm/proj/texttest-tmp/geoff/texttest.31May141619.29411/texttest.gui/TestSelf/TestData/GUI/CreateDataFiles/TargetApp/Test1')
+Updated : Source File Chooser (selected '/carm/proj/texttest-tmp/geoff/dynamic_gui.10Aug163734.12802/texttest.gui/TestSelf/TestData/GUI/CreateDataFiles/TargetApp/Test1')
 
 'choose create a new file' event created with arguments ''
 
@@ -203,9 +252,7 @@ Toggled Radio button 'Import file/directory from source'
 Toggled Radio button 'Create a new file' (checked)
 
 'press create' event created with arguments ''
-Creating new empty file...
 Adding entry completion 'environment' ...
-Viewing file /carm/proj/texttest-tmp/geoff/texttest.31May141619.29411/texttest.gui/TestSelf/TestData/GUI/CreateDataFiles/TargetApp/Test1/somedir/readonlyfile2 using 'emacs', refresh set to False
 
 Waiting for application event 'file editing operations to complete' to occur.
 
@@ -217,7 +264,7 @@ Updated : File Tree with columns: Test1
 -> Definition Files (white,bold)
 ->   options.tdat (grey90)
 -> Data Files (white,bold)
-->   readonlyfile (grey90)
+->   readonlyfile (grey90)   ***
 ->   somedir (grey90,bold)
 ->     readonlyfile2 (grey90)
 ->   writeabledirs (grey90,bold)
@@ -275,6 +322,54 @@ Expected application event 'file editing operations to complete' occurred, proce
 
 'view actions for file' event created with arguments 'Data Files'
 
+Changed selection in File Tree with columns: Test1
+-> Standard Files (white,bold)
+->   catalogue.tdat (grey90)
+->   errors.tdat (grey90)
+->   output.tdat (grey90)
+-> Definition Files (white,bold)
+->   options.tdat (grey90)
+-> Data Files (white,bold)   ***
+->   readonlyfile (grey90)
+->   somedir (grey90,bold)
+->     readonlyfile2 (grey90)
+->   writeabledirs (grey90,bold)
+->     otherreadfile (grey90)
+->     readfile (grey90)
+->     toRemove (grey90)
+->     otherdir (grey90,bold)
+->       toRemove (grey90)
+->       writehere (grey90,bold)
+->         readfile (grey90)
+->     readdir (grey90,bold)
+->       otherdir (grey90,bold)
+->         readfile (grey90)
+->       somedir (grey90,bold)
+->         readfile (grey90)
+->     somedir (grey90,bold)
+->       toEdit (grey90)
+->     writehere (grey90,bold)
+->       readfile (grey90)
+->       writeandremovehere (grey90,bold)
+->         readfile (grey90)
+->   writeabledirs.version (grey90,bold)
+->     otherreadfile (grey90)
+->     readfile (grey90)
+->     toRemove (grey90)
+->     otherdir (grey90,bold)
+->       toRemove (grey90)
+->       writehere (grey90,bold)
+->         readfile (grey90)
+->     readdir (grey90,bold)
+->       otherdir (grey90,bold)
+->         readfile (grey90)
+->       somedir (grey90,bold)
+->         readfile (grey90)
+->     writehere (grey90,bold)
+->       readfile (grey90)
+->       writeandremovehere (grey90,bold)
+->         readfile (grey90)
+
 ========== Text Info ==========
 
 Description:
@@ -315,16 +410,14 @@ Radio button 'Create a new file'
 Radio button 'Create a new directory'
 .....'Source to copy from:'......
 
-Showing Source File Chooser (selected '/carm/proj/texttest-tmp/geoff/texttest.31May141619.29411/texttest.gui/TestSelf/TestData/GUI/CreateDataFiles/TargetApp/readonlyfile')
+Showing Source File Chooser (selected '/carm/proj/texttest-tmp/geoff/dynamic_gui.10Aug163734.12802/texttest.gui/TestSelf/TestData/GUI/CreateDataFiles/TargetApp/readonlyfile')
 Shortcut folders (1) :
-- /carm/proj/texttest-tmp/geoff/texttest.31May141619.29411/texttest.gui/TestSelf/TestData/GUI/CreateDataFiles/TargetApp
+- /carm/proj/texttest-tmp/geoff/dynamic_gui.10Aug163734.12802/texttest.gui/TestSelf/TestData/GUI/CreateDataFiles/TargetApp
 ---------------
 Button 'gtk-ok' (Stock image 'gtk-ok') , Button 'gtk-cancel' (Stock image 'gtk-cancel')
 ------------------------------------------------------------------
 
 'press create' event created with arguments ''
-Creating new path, copying /carm/proj/texttest-tmp/geoff/texttest.31May141619.29411/texttest.gui/TestSelf/TestData/GUI/CreateDataFiles/TargetApp/readonlyfile
-Viewing file /carm/proj/texttest-tmp/geoff/texttest.31May141619.29411/texttest.gui/TestSelf/TestData/GUI/CreateDataFiles/TargetApp/Test1/readonlyfile using 'emacs', refresh set to False
 
 Waiting for application event 'file editing operations to complete' to occur.
 
@@ -333,6 +426,54 @@ Changing GUI status to: 'Started "emacs readonlyfile" in background (from test T
 Expected application event 'file editing operations to complete' occurred, proceeding.
 
 'view actions for file' event created with arguments 'Definition Files'
+
+Changed selection in File Tree with columns: Test1
+-> Standard Files (white,bold)
+->   catalogue.tdat (grey90)
+->   errors.tdat (grey90)
+->   output.tdat (grey90)
+-> Definition Files (white,bold)   ***
+->   options.tdat (grey90)
+-> Data Files (white,bold)
+->   readonlyfile (grey90)
+->   somedir (grey90,bold)
+->     readonlyfile2 (grey90)
+->   writeabledirs (grey90,bold)
+->     otherreadfile (grey90)
+->     readfile (grey90)
+->     toRemove (grey90)
+->     otherdir (grey90,bold)
+->       toRemove (grey90)
+->       writehere (grey90,bold)
+->         readfile (grey90)
+->     readdir (grey90,bold)
+->       otherdir (grey90,bold)
+->         readfile (grey90)
+->       somedir (grey90,bold)
+->         readfile (grey90)
+->     somedir (grey90,bold)
+->       toEdit (grey90)
+->     writehere (grey90,bold)
+->       readfile (grey90)
+->       writeandremovehere (grey90,bold)
+->         readfile (grey90)
+->   writeabledirs.version (grey90,bold)
+->     otherreadfile (grey90)
+->     readfile (grey90)
+->     toRemove (grey90)
+->     otherdir (grey90,bold)
+->       toRemove (grey90)
+->       writehere (grey90,bold)
+->         readfile (grey90)
+->     readdir (grey90,bold)
+->       otherdir (grey90,bold)
+->         readfile (grey90)
+->       somedir (grey90,bold)
+->         readfile (grey90)
+->     writehere (grey90,bold)
+->       readfile (grey90)
+->       writeandremovehere (grey90,bold)
+->         readfile (grey90)
 
 ---------- Popup Window ----------
 'View File' (Stock image 'gtk-open', greyed out, accelerator 'Ctrl+O')
@@ -368,9 +509,9 @@ Radio button 'Create a new file' (checked)
 Radio button 'Create a new directory'
 .....'Source to copy from:'......
 
-Showing Source File Chooser (selected '/carm/proj/texttest-tmp/geoff/texttest.31May141619.29411/texttest.gui/TestSelf/TestData/GUI/CreateDataFiles/TargetApp/Test1') (greyed out)
+Showing Source File Chooser (selected '/carm/proj/texttest-tmp/geoff/dynamic_gui.10Aug163734.12802/texttest.gui/TestSelf/TestData/GUI/CreateDataFiles/TargetApp/Test1') (greyed out)
 Shortcut folders (1) :
-- /carm/proj/texttest-tmp/geoff/texttest.31May141619.29411/texttest.gui/TestSelf/TestData/GUI/CreateDataFiles/TargetApp
+- /carm/proj/texttest-tmp/geoff/dynamic_gui.10Aug163734.12802/texttest.gui/TestSelf/TestData/GUI/CreateDataFiles/TargetApp
 ---------------
 Button 'gtk-ok' (Stock image 'gtk-ok') , Button 'gtk-cancel' (Stock image 'gtk-cancel')
 ------------------------------------------------------------------
@@ -378,11 +519,9 @@ Button 'gtk-ok' (Stock image 'gtk-ok') , Button 'gtk-cancel' (Stock image 'gtk-c
 'enter type of file/directory to create =' event created with arguments 'input'
 Edited 'Type of file/directory to create' Text entry (set to 'input')
 
-Updated : Source File Chooser (selected '/carm/proj/texttest-tmp/geoff/texttest.31May141619.29411/texttest.gui/TestSelf/TestData/GUI/CreateDataFiles/TargetApp/Test1') (greyed out)
+Updated : Source File Chooser (selected '/carm/proj/texttest-tmp/geoff/dynamic_gui.10Aug163734.12802/texttest.gui/TestSelf/TestData/GUI/CreateDataFiles/TargetApp/Test1') (greyed out)
 
 'press create' event created with arguments ''
-Creating new empty file...
-Viewing file /carm/proj/texttest-tmp/geoff/texttest.31May141619.29411/texttest.gui/TestSelf/TestData/GUI/CreateDataFiles/TargetApp/Test1/input.tdat using 'emacs', refresh set to False
 
 Waiting for application event 'file editing operations to complete' to occur.
 
@@ -391,7 +530,7 @@ Updated : File Tree with columns: Test1
 ->   catalogue.tdat (grey90)
 ->   errors.tdat (grey90)
 ->   output.tdat (grey90)
--> Definition Files (white,bold)
+-> Definition Files (white,bold)   ***
 ->   options.tdat (grey90)
 ->   input.tdat (grey90)
 -> Data Files (white,bold)
@@ -441,6 +580,11 @@ Expected application event 'file editing operations to complete' occurred, proce
 
 'set test selection to' event created with arguments 'Test2'
 
+Changed selection in Test Tree with columns: Tests: 1/2 selected
+-> TargetApp (tdat.subdir) (black/grey90,bold)
+->   Test1 (black/grey90)
+->   Test2 (black/grey90)   ***
+
 Updated : File Tree with columns: Test2
 -> Standard Files (white,bold)
 ->   catalogue.tdat (grey90)
@@ -463,6 +607,18 @@ Test2
 ===============================
 
 'view actions for file' event created with arguments 'Data Files'
+
+Changed selection in File Tree with columns: Test2
+-> Standard Files (white,bold)
+->   catalogue.tdat (grey90)
+->   errors.tdat (grey90)
+->   output.tdat (grey90)
+-> Definition Files (white,bold)
+->   environment.tdat.env (grey90)
+->   options.tdat (grey90)
+-> Data Files (white,bold)   ***
+->   somedir (grey90,bold)
+->     readonlyfile2 (grey90)
 
 ---------- Popup Window ----------
 'View File' (Stock image 'gtk-open', greyed out, accelerator 'Ctrl+O')
@@ -495,9 +651,9 @@ Radio button 'Create a new file'
 Radio button 'Create a new directory'
 .....'Source to copy from:'......
 
-Showing Source File Chooser (selected '/carm/proj/texttest-tmp/geoff/texttest.31May141619.29411/texttest.gui/TestSelf/TestData/GUI/CreateDataFiles/TargetApp/readonlyfile')
+Showing Source File Chooser (selected '/carm/proj/texttest-tmp/geoff/dynamic_gui.10Aug163734.12802/texttest.gui/TestSelf/TestData/GUI/CreateDataFiles/TargetApp/readonlyfile')
 Shortcut folders (1) :
-- /carm/proj/texttest-tmp/geoff/texttest.31May141619.29411/texttest.gui/TestSelf/TestData/GUI/CreateDataFiles/TargetApp
+- /carm/proj/texttest-tmp/geoff/dynamic_gui.10Aug163734.12802/texttest.gui/TestSelf/TestData/GUI/CreateDataFiles/TargetApp
 ---------------
 Button 'gtk-ok' (Stock image 'gtk-ok') , Button 'gtk-cancel' (Stock image 'gtk-cancel')
 ------------------------------------------------------------------
@@ -506,9 +662,7 @@ Button 'gtk-ok' (Stock image 'gtk-ok') , Button 'gtk-cancel' (Stock image 'gtk-c
 Edited 'Version identifier to use' Text entry (set to 'v1')
 
 'press create' event created with arguments ''
-Creating new path, copying /carm/proj/texttest-tmp/geoff/texttest.31May141619.29411/texttest.gui/TestSelf/TestData/GUI/CreateDataFiles/TargetApp/readonlyfile
 Adding entry completion 'v1' ...
-Viewing file /carm/proj/texttest-tmp/geoff/texttest.31May141619.29411/texttest.gui/TestSelf/TestData/GUI/CreateDataFiles/TargetApp/Test2/readonlyfile.v1 using 'emacs', refresh set to False
 
 Waiting for application event 'file editing operations to complete' to occur.
 
@@ -520,7 +674,7 @@ Updated : File Tree with columns: Test2
 -> Definition Files (white,bold)
 ->   environment.tdat.env (grey90)
 ->   options.tdat (grey90)
--> Data Files (white,bold)
+-> Data Files (white,bold)   ***
 ->   readonlyfile.v1 (grey90)
 ->   somedir (grey90,bold)
 ->     readonlyfile2 (grey90)

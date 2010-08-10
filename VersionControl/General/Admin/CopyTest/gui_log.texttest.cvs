@@ -2,9 +2,9 @@ Enabling entry completion, using matching 1
 Adding entry completion '<default>' ...
 Adding entry completion 'localhost' ...
 Adding entry completion '1' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.31May141619.29411/texttest.cvs/VersionControl/General/Admin/CopyTest/log/logging.debug' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/dynamic_gui.10Aug163734.12802/texttest.cvs/VersionControl/General/Admin/CopyTest/log/logging.debug' ...
 Adding entry completion '/users/geoff/work/master/Testing/TextTest/log/logging.debug' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.31May141619.29411/texttest.cvs/VersionControl/General/Admin/CopyTest/log' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/dynamic_gui.10Aug163734.12802/texttest.cvs/VersionControl/General/Admin/CopyTest/log' ...
 Adding entry completion 'site' ...
 Adding entry completion 'personal' ...
 Adding entry completion 'all' ...
@@ -49,7 +49,7 @@ Button 'Filter' (Stock image 'gtk-find', accelerator 'Ctrl+F', tooltip 'filter t
 Button 'Reset Tab' (tooltip 'Reset all the settings in the current tab to their default values')
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 31May14:17:48.' , Image 'throbber_inactive.png'
+'TextTest started at 10Aug16:39:17.' , Image 'throbber_inactive.png'
 ----------------------------------------------------------------------------------
 
 Changing GUI status to: 'Reading tests ...'
@@ -72,7 +72,7 @@ Updated : Test Tree with columns: Tests: 0/4 selected
 ->       Test4 (black/grey90)
 Updated drop-down list in 'Test-file to search' Text entry (set to 'errors') (drop-down list containing ['errors', 'output'])
 
-Changing GUI status to: 'Reading tests completed at 31May14:17:48.'
+Changing GUI status to: 'Reading tests completed at 10Aug16:39:17.'
 
 Expected application event 'all tests to be read' occurred, proceeding.
 
@@ -80,7 +80,14 @@ Expected application event 'all tests to be read' occurred, proceeding.
 
 No longer greyed out : _Run
 
-Column titles changed in Test Tree with columns: Tests: 1/4 selected
+Changed selection in Test Tree with columns: Tests: 1/4 selected
+-> TargetApp (hello) (black/grey90,bold)
+->   Test1 (black/grey90)   ***
+->   Test2 (black/grey90)
+->   Suite (black/grey90,bold)
+->     Subsuite (black/grey90,bold)
+->       Test3 (black/grey90)
+->       Test4 (black/grey90)
 
 Current page changed in Notebook with tabs: Test , Selection , Running , Config
 Viewing page 'Test'
@@ -110,7 +117,7 @@ Adding entry completion 'errors' ...
 
 Updated : Test Tree with columns: Tests: 1/4 selected
 -> TargetApp (hello) (black/grey90,bold)
-->   Test1 (grey60/grey90)
+->   Test1 (grey60/grey90)   ***
 ->   Test2 (black/grey90)
 ->   Suite (black/grey90,bold)
 ->     Subsuite (black/grey90,bold)
@@ -120,14 +127,11 @@ Updated : Test Tree with columns: Tests: 1/4 selected
 Changing GUI status to: 'Performed 'Copy selected tests' on test Test1.'
 
 'paste tests from clipboard' event created with arguments ''
-Pasting test Test1_copy under test suite HELLO test-suite TargetApp, in position 1
-Selecting new tests : [HELLO test-case Test1_copy]
-Marking 1 tests as selected
 
 Updated : Test Tree with columns: Tests: 1/5 selected
 -> TargetApp (hello) (black/grey90,bold)
 ->   Test1 (grey60/grey90)
-->   Test1_copy (black/grey90)
+->   Test1_copy (black/grey90)   ***
 ->   Test2 (black/grey90)
 ->   Suite (black/grey90,bold)
 ->     Subsuite (black/grey90,bold)
@@ -154,7 +158,15 @@ Changing GUI status to: 'Pasted test Test1_copy to suite 'TargetApp''
 
 'set test selection to' event created with arguments 'Test1,Test1_copy'
 
-Column titles changed in Test Tree with columns: Tests: 2/5 selected
+Changed selection in Test Tree with columns: Tests: 2/5 selected
+-> TargetApp (hello) (black/grey90,bold)
+->   Test1 (grey60/grey90)   ***
+->   Test1_copy (black/grey90)   ***
+->   Test2 (black/grey90)
+->   Suite (black/grey90,bold)
+->     Subsuite (black/grey90,bold)
+->       Test3 (black/grey90)
+->       Test4 (black/grey90)
 
 Current page changed in Notebook with tabs: Selection , Running , Config
 Viewing page 'Selection'
@@ -202,7 +214,7 @@ Subdirectories were ignored, use CVS Status Recursive to get the status for all 
 Showing VCS status info tree with columns: File , Information
 -> <span weight='bold'>TargetApp</span>
 ->   <span weight='bold'>Test1</span>
-->     errors.hello | <span weight='bold' foreground='red'>Needs Patch</span>
+->     errors.hello | <span weight='bold' foreground='red'>Needs Patch</span>   ***
 ->     output.hello | Up-to-date
 ->     output.hello.version | <span weight='bold' foreground='red'>Unknown</span>
 ->   <span weight='bold'>Test1_copy</span>

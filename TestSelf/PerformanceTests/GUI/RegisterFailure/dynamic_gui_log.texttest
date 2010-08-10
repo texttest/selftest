@@ -4,7 +4,7 @@ Adding entry completion '0' ...
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
 
----------- Window 'TextTest dynamic GUI : testing PERF (started at 30Jul18:03:21)' ----------
+---------- Window 'TextTest dynamic GUI : testing PERF (started at 10Aug16:39:40)' ----------
 Focus widget is 'Test Tree'
 
 Menu Bar : 'File' (+) , 'View' (+) , 'Actions' (+) , 'Help' (+)
@@ -13,7 +13,7 @@ Tool Bar :
   _Quit (Stock image 'gtk-quit', accelerator 'Ctrl+Q', tooltip 'Quit')
   _Kill (Stock image 'gtk-stop', greyed out, accelerator 'Ctrl+Delete', tooltip 'Kill selected tests')
   _Save (Stock image 'gtk-save', greyed out, accelerator 'Ctrl+S', tooltip 'Save results for selected tests')
-  Progress bar set to fraction 0.0, text 'All 0 tests completed at 30Jul18:03:25'
+  Progress bar set to fraction 0.0, text 'All 0 tests completed at 10Aug16:39:44'
 ...........
 
 Showing Test Tree with columns: Tests: All 0 selected , Details
@@ -27,7 +27,7 @@ Viewing page 'Status'
 Showing Test Status View with columns: Status , Number , Visible
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 30Jul18:03:25.' , Image 'throbber_inactive.png'
+'TextTest started at 10Aug16:39:44.' , Image 'throbber_inactive.png'
 ---------------------------------------------------------------------------------------------
 
 Progress bar set to fraction 0.0, text '0 of 1 tests completed'
@@ -310,7 +310,7 @@ Updated : Test Status View with columns: Status , Number , Visible
 ->     Faster (salmon,bold) | 1 (salmon,bold) | Check box (checked)
 ->     Slower (salmon,bold) | 1 (salmon,bold) | Check box (checked)
 
-Progress bar set to fraction 1.0, text 'All 4 tests completed at 30Jul18:03:28'
+Progress bar set to fraction 1.0, text 'All 4 tests completed at 10Aug16:39:47'
 
 Updated : Test Tree with columns: Tests: 0/4 selected, none hidden , Details
 -> TargetApp (perf) (black/white,bold) | (white)
@@ -337,7 +337,12 @@ Expected application event 'completion of test actions' occurred, proceeding.
 
 No longer greyed out : _Save
 
-Column titles changed in Test Tree with columns: Tests: 1/4 selected, none hidden , Details
+Changed selection in Test Tree with columns: Tests: 1/4 selected, none hidden , Details
+-> TargetApp (perf) (black/white,bold) | (white)
+->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)
+->   Failures (black/DarkSeaGreen2) | 100% faster (salmon)   ***
+->   FailuresCurrBelowLimit (black/DarkSeaGreen2) | 150% slower (salmon)
+->   FailuresZeroTime (black/DarkSeaGreen2) | infinitely slower (salmon)
 
 Current page changed in Notebook with tabs: Test , Status , Selection , Run Info
 Viewing page 'Test'
@@ -364,9 +369,6 @@ Test ran faster :
 
 'select file' event created with arguments 'performance.perf'
 Adding entry completion 'free_text' ...
-Starting graphical difference comparison using 'tkdiff':
--- original file : /carm/proj/texttest-tmp/geoff/texttest.gui.30Jul180310.25389/texttest.gui/TestSelf/PerformanceTests/GUI/RegisterFailure/TargetApp/Failures/performance.perf
---  current file : /carm/proj/texttest-tmp/geoff/texttest.gui.30Jul180310.25389/texttest.gui/TestSelf/PerformanceTests/GUI/RegisterFailure/texttesttmp/dynamic_gui.30Jul180321.32576/perf/Failures/performance.perf
 
 Waiting for application event 'the graphical difference program to terminate' to occur.
 
@@ -407,7 +409,7 @@ Greyed out : _Save
 Updated : Test Tree with columns: Tests: 1/4 selected, none hidden , Details
 -> TargetApp (perf) (black/white,bold) | (white)
 ->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   Failures (black/DarkSeaGreen2) | (DarkSeaGreen2)
+->   Failures (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
 ->   FailuresCurrBelowLimit (black/DarkSeaGreen2) | 150% slower (salmon)
 ->   FailuresZeroTime (black/DarkSeaGreen2) | infinitely slower (salmon)
 
@@ -419,7 +421,7 @@ Updated : File Tree with columns: Failures , Details
 
 ========== Text Info ==========
 Test succeeded
-(Saved at 18:03)
+(Saved at 16:39)
 ===============================
 
 Changing GUI status to: 'Saved 1 tests.'

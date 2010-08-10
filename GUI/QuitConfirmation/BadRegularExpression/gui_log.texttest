@@ -2,9 +2,9 @@ Enabling entry completion, using matching 1
 Adding entry completion '<default>' ...
 Adding entry completion 'localhost' ...
 Adding entry completion '1' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.31May141619.29411/texttest.gui/GUI/QuitConfirmation/BadRegularExpression/log/logging.debug' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/dynamic_gui.10Aug163734.12802/texttest.gui/GUI/QuitConfirmation/BadRegularExpression/log/logging.debug' ...
 Adding entry completion '/users/geoff/work/master/Testing/TextTest/log/logging.debug' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.31May141619.29411/texttest.gui/GUI/QuitConfirmation/BadRegularExpression/log' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/dynamic_gui.10Aug163734.12802/texttest.gui/GUI/QuitConfirmation/BadRegularExpression/log' ...
 Adding entry completion 'site' ...
 Adding entry completion 'personal' ...
 Adding entry completion 'all' ...
@@ -49,7 +49,7 @@ Button 'Filter' (Stock image 'gtk-find', accelerator 'Ctrl+F', tooltip 'filter t
 Button 'Reset Tab' (tooltip 'Reset all the settings in the current tab to their default values')
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 31May14:17:38.' , Image 'throbber_inactive.png'
+'TextTest started at 10Aug16:40:07.' , Image 'throbber_inactive.png'
 ----------------------------------------------------------------------------------
 
 Changing GUI status to: 'Reading tests ...'
@@ -61,7 +61,7 @@ Updated : Test Tree with columns: Tests: 0/1 selected
 ->   Test (black/grey90)
 Updated drop-down list in 'Test-file to search' Text entry (set to 'errors') (drop-down list containing ['errors', 'output'])
 
-Changing GUI status to: 'Reading tests completed at 31May14:17:38.'
+Changing GUI status to: 'Reading tests completed at 10Aug16:40:07.'
 
 Expected application event 'all tests to be read' occurred, proceeding.
 
@@ -69,7 +69,9 @@ Expected application event 'all tests to be read' occurred, proceeding.
 
 No longer greyed out : _Run
 
-Column titles changed in Test Tree with columns: Tests: All 1 selected
+Changed selection in Test Tree with columns: Tests: All 1 selected
+-> TargetApp (hello) (black/grey90,bold)
+->   Test (black/grey90)   ***
 
 Current page changed in Notebook with tabs: Test , Selection , Running , Config
 Viewing page 'Test'
@@ -95,7 +97,6 @@ Test
 
 'select file' event created with arguments 'output.hello'
 Adding entry completion 'errors' ...
-Viewing file /carm/proj/texttest-tmp/geoff/texttest.31May141619.29411/texttest.gui/GUI/QuitConfirmation/BadRegularExpression/TargetApp/Test/output.hello using 'emacs', refresh set to False
 
 Waiting for application event 'the viewer process to start' to occur.
 
@@ -111,7 +112,7 @@ Stock image 'gtk-dialog-warning' , ========== GtkTextView ==========
 
 These processes are still running, and will be terminated when quitting: 
 
-   + PID 19205 : emacs output.hello (from test Test)
+   + PID 18123 : emacs output.hello (from test Test)
 
 Quit anyway?
 =================================

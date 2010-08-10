@@ -4,7 +4,7 @@ Adding entry completion '0' ...
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
 
----------- Window 'TextTest dynamic GUI : testing PERF (started at 31May12:20:58)' ----------
+---------- Window 'TextTest dynamic GUI : testing PERF (started at 10Aug14:57:52)' ----------
 Focus widget is 'Test Tree'
 
 Menu Bar : 'File' (+) , 'View' (+) , 'Actions' (+) , 'Help' (+)
@@ -13,7 +13,7 @@ Tool Bar :
   _Quit (Stock image 'gtk-quit', accelerator 'Ctrl+Q', tooltip 'Quit')
   _Kill (Stock image 'gtk-stop', greyed out, accelerator 'Ctrl+Delete', tooltip 'Kill selected tests')
   _Save (Stock image 'gtk-save', greyed out, accelerator 'Ctrl+S', tooltip 'Save results for selected tests')
-  Progress bar set to fraction 0.0, text 'All 0 tests completed at 31May12:21:00'
+  Progress bar set to fraction 0.0, text 'All 0 tests completed at 10Aug14:57:57'
 ...........
 
 Showing Test Tree with columns: Tests: All 0 selected , Details
@@ -27,7 +27,7 @@ Viewing page 'Status'
 Showing Test Status View with columns: Status , Number , Visible
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 31May12:21:00.' , Image 'throbber_inactive.png'
+'TextTest started at 10Aug14:57:57.' , Image 'throbber_inactive.png'
 ---------------------------------------------------------------------------------------------
 
 Progress bar set to fraction 0.0, text '0 of 1 tests completed'
@@ -119,7 +119,7 @@ Updated : Test Status View with columns: Status , Number , Visible
 ->   Unrunnable (salmon,bold) | 1 (salmon,bold) | Check box (checked)
 ->     no results (salmon,bold) | 1 (salmon,bold) | Check box (checked)
 
-Progress bar set to fraction 1.0, text 'All 4 tests completed at 31May12:21:01'
+Progress bar set to fraction 1.0, text 'All 4 tests completed at 10Aug14:57:57'
 
 Updated : Test Tree with columns: Tests: 0/4 selected, none hidden , Details
 -> TargetApp (perf) (black/white,bold) | (white)
@@ -143,7 +143,12 @@ Expected application event 'completion of test actions' occurred, proceeding.
 
 No longer greyed out : _Save
 
-Column titles changed in Test Tree with columns: Tests: 1/4 selected, none hidden , Details
+Changed selection in Test Tree with columns: Tests: 1/4 selected, none hidden , Details
+-> TargetApp (perf) (black/white,bold) | (white)
+->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)
+->   Failures (black/DarkSeaGreen2) | 96% faster (salmon)   ***
+->   FailuresCurrBelowLimit (black/salmon) | no results (salmon)
+->   FailuresZeroTime (black/salmon) | no results (salmon)
 
 Current page changed in Notebook with tabs: Test , Status , Selection , Run Info
 Viewing page 'Test'
@@ -203,7 +208,7 @@ Greyed out : _Save
 Updated : Test Tree with columns: Tests: 1/4 selected, none hidden , Details
 -> TargetApp (perf) (black/white,bold) | (white)
 ->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   Failures (black/DarkSeaGreen2) | (DarkSeaGreen2)
+->   Failures (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
 ->   FailuresCurrBelowLimit (black/salmon) | no results (salmon)
 ->   FailuresZeroTime (black/salmon) | no results (salmon)
 
@@ -215,7 +220,7 @@ Updated : File Tree with columns: Failures , Details
 
 ========== Text Info ==========
 Test succeeded
-(Saved at 12:21)
+(Saved at 14:57)
 ===============================
 
 Changing GUI status to: 'Saved 1 tests.'

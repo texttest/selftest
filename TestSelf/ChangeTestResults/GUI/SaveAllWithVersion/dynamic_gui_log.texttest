@@ -3,7 +3,7 @@ Adding entry completion '<default>' ...
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
 
----------- Window 'TextTest dynamic GUI : testing HELLO (started at 26May13:50:33)' ----------
+---------- Window 'TextTest dynamic GUI : testing HELLO (started at 10Aug14:57:35)' ----------
 Focus widget is 'Test Tree'
 
 Menu Bar : 'File' (+) , 'View' (+) , 'Actions' (+) , 'Help' (+)
@@ -12,7 +12,7 @@ Tool Bar :
   _Quit (Stock image 'gtk-quit', accelerator 'Ctrl+Q', tooltip 'Quit')
   _Kill (Stock image 'gtk-stop', greyed out, accelerator 'Ctrl+Delete', tooltip 'Kill selected tests')
   _Save (Stock image 'gtk-save', greyed out, accelerator 'Ctrl+S', tooltip 'Save results for selected tests')
-  Progress bar set to fraction 0.0, text 'All 0 tests completed at 26May13:50:37'
+  Progress bar set to fraction 0.0, text 'All 0 tests completed at 10Aug14:57:40'
 ...........
 
 Showing Test Tree with columns: Tests: All 0 selected , Details
@@ -26,7 +26,7 @@ Viewing page 'Status'
 Showing Test Status View with columns: Status , Number , Visible
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 26May13:50:37.' , Image 'throbber_inactive.png'
+'TextTest started at 10Aug14:57:40.' , Image 'throbber_inactive.png'
 ----------------------------------------------------------------------------------------------
 
 Progress bar set to fraction 0.0, text '0 of 1 tests completed'
@@ -321,7 +321,7 @@ Updated : Test Status View with columns: Status , Number , Visible
 ->       Group 1 (salmon,bold) | 2 (salmon,bold) | Check box (checked)
 -> Succeeded (DarkSeaGreen2,bold) | 1 (DarkSeaGreen2,bold) | Check box (checked)
 
-Progress bar set to fraction 1.0, text 'All 4 tests completed at 26May13:50:39'
+Progress bar set to fraction 1.0, text 'All 4 tests completed at 10Aug14:57:42'
 
 Updated : Test Tree with columns: Tests: 0/4 selected, none hidden , Details
 -> TargetApp (hello) (black/white,bold) | (white)
@@ -349,7 +349,12 @@ Expected application event 'completion of test actions' occurred, proceeding.
 
 No longer greyed out : _Save
 
-Column titles changed in Test Tree with columns: Tests: All 4 selected, none hidden , Details
+Changed selection in Test Tree with columns: Tests: All 4 selected, none hidden , Details
+-> TargetApp (hello) (black/white,bold) | (white)
+->   OutDiff (black/salmon) | output different (salmon)   ***
+->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   BothDiff (black/salmon) | errors different(+) (salmon)   ***
+->   ErrDiff (black/salmon) | errors different (salmon)   ***
 
 Current page changed in Notebook with tabs: Test , Status , Selection , Run Info
 Viewing page 'Test'
@@ -392,10 +397,10 @@ Changing GUI status to: 'Saving HELLO test-case OutDiff : output, version 2'
 
 Updated : Test Tree with columns: Tests: All 4 selected, none hidden , Details
 -> TargetApp (hello) (black/white,bold) | (white)
-->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   BothDiff (black/salmon) | errors different(+) (salmon)
-->   ErrDiff (black/salmon) | errors different (salmon)
+->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   BothDiff (black/salmon) | errors different(+) (salmon)   ***
+->   ErrDiff (black/salmon) | errors different (salmon)   ***
 
 Changing GUI status to: 'Saving HELLO test-case BothDiff : errors, version 2'
 
@@ -403,10 +408,10 @@ Changing GUI status to: 'Saving HELLO test-case BothDiff : output, version 2'
 
 Updated : Test Tree with columns: Tests: All 4 selected, none hidden , Details
 -> TargetApp (hello) (black/white,bold) | (white)
-->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   BothDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   ErrDiff (black/salmon) | errors different (salmon)
+->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   BothDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   ErrDiff (black/salmon) | errors different (salmon)   ***
 
 Changing GUI status to: 'Saving HELLO test-case ErrDiff : errors, version 2'
 Adding entry completion 'free_text' ...

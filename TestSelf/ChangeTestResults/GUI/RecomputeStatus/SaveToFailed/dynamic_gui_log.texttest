@@ -4,7 +4,7 @@ Adding entry completion 'extra' ...
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
 
----------- Window 'TextTest dynamic GUI : testing HELLO (started at 26May13:50:32)' ----------
+---------- Window 'TextTest dynamic GUI : testing HELLO (started at 10Aug14:57:42)' ----------
 Focus widget is 'Test Tree'
 
 Menu Bar : 'File' (+) , 'View' (+) , 'Actions' (+) , 'Help' (+)
@@ -13,7 +13,7 @@ Tool Bar :
   _Quit (Stock image 'gtk-quit', accelerator 'Ctrl+Q', tooltip 'Quit')
   _Kill (Stock image 'gtk-stop', greyed out, accelerator 'Ctrl+Delete', tooltip 'Kill selected tests')
   _Save (Stock image 'gtk-save', greyed out, accelerator 'Ctrl+S', tooltip 'Save results for selected tests')
-  Progress bar set to fraction 0.0, text 'All 0 tests completed at 26May13:50:34'
+  Progress bar set to fraction 0.0, text 'All 0 tests completed at 10Aug14:57:44'
 ...........
 
 Showing Test Tree with columns: Tests: All 0 selected , Details
@@ -27,7 +27,7 @@ Viewing page 'Status'
 Showing Test Status View with columns: Status , Number , Visible
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 26May13:50:34.' , Image 'throbber_inactive.png'
+'TextTest started at 10Aug14:57:44.' , Image 'throbber_inactive.png'
 ----------------------------------------------------------------------------------------------
 
 Progress bar set to fraction 0.0, text '0 of 1 tests completed'
@@ -145,7 +145,7 @@ Updated : Test Status View with columns: Status , Number , Visible
 ->   Differences (salmon,bold) | 1 (salmon,bold) | Check box (checked)
 ->     output different (salmon,bold) | 1 (salmon,bold) | Check box (checked)
 
-Progress bar set to fraction 1.0, text 'All 2 tests completed at 26May13:50:36'
+Progress bar set to fraction 1.0, text 'All 2 tests completed at 10Aug14:57:45'
 
 Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
 -> TargetApp (hello) (black/white,bold) | (white)
@@ -168,7 +168,11 @@ Expected application event 'completion of test actions' occurred, proceeding.
 
 No longer greyed out : _Save
 
-Column titles changed in Test Tree with columns: Tests: 1/2 selected, none hidden , Details
+Changed selection in Test Tree with columns: Tests: 1/2 selected, none hidden , Details
+-> TargetApp (hello) (black/white,bold) | (white)
+->   Test (black/salmon) | output different (salmon)   ***
+-> TargetApp (hello.extra) (black/white,bold) | (white)
+->   Test (black/salmon) | output different (salmon)
 
 Current page changed in Notebook with tabs: Test , Status , Selection , Run Info
 Viewing page 'Test'
@@ -222,7 +226,10 @@ Changing GUI status to: 'Saved 1 tests.'
 
 No longer greyed out : _Save
 
-Column titles changed in Test Tree with columns: Tests: 1/2 selected, none hidden , Details
+Changed selection in Test Tree with columns: Tests: 1/2 selected, none hidden , Details
+-> TargetApp (hello) (black/white,bold) | All 1 tests successful (DarkSeaGreen2)
+-> TargetApp (hello.extra) (black/white,bold) | (white)
+->   Test (black/salmon) | output different (salmon) | Stock image 'gtk-refresh'   ***
 
 Current page changed in Notebook with tabs: Test , Status , Selection , Run Info
 Viewing page 'Test'
@@ -280,7 +287,10 @@ Expanded row in Test Tree with columns: Tests: 0/2 selected, none hidden , Detai
 
 'set test selection to' event created with arguments 'Test under TargetApp (hello)'
 
-Column titles changed in Test Tree with columns: Tests: 1/2 selected, none hidden , Details
+Changed selection in Test Tree with columns: Tests: 1/2 selected, none hidden , Details
+-> TargetApp (hello) (black/white,bold) | All 1 tests successful (DarkSeaGreen2)
+->   Test (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+-> TargetApp (hello.extra) (black/white,bold) | All 1 tests successful (DarkSeaGreen2)
 
 Current page changed in Notebook with tabs: Test , Status , Selection , Run Info
 Viewing page 'Test'
@@ -296,7 +306,7 @@ Showing File Tree with columns: Test , Details
 
 ========== Text Info ==========
 Test succeeded
-(Saved at 13:50)
+(Saved at 14:57)
 ===============================
 
 'show actions menu' event created with arguments ''
@@ -321,7 +331,7 @@ No longer greyed out : _Save
 
 Updated : Test Tree with columns: Tests: 1/2 selected, none hidden , Details
 -> TargetApp (hello) (black/white,bold) | All 1 tests successful (DarkSeaGreen2)
-->   Test (black/salmon) | output different (salmon)
+->   Test (black/salmon) | output different (salmon)   ***
 -> TargetApp (hello.extra) (black/white,bold) | All 1 tests successful (DarkSeaGreen2)
 
 Updated : File Tree with columns: Test , Details

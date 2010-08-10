@@ -3,9 +3,9 @@ Adding entry completion '<default>' ...
 Adding entry completion 'extra' ...
 Adding entry completion 'localhost' ...
 Adding entry completion '1' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/dynamic_gui.09Aug145438.21770/texttest.gui/TestSelf/ExtraVersions/GUI/DifferentRecordModes/log/logging.debug' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/dynamic_gui.10Aug163734.12802/texttest.gui/TestSelf/ExtraVersions/GUI/DifferentRecordModes/log/logging.debug' ...
 Adding entry completion '/users/geoff/work/master/Testing/TextTest/log/logging.debug' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/dynamic_gui.09Aug145438.21770/texttest.gui/TestSelf/ExtraVersions/GUI/DifferentRecordModes/log' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/dynamic_gui.10Aug163734.12802/texttest.gui/TestSelf/ExtraVersions/GUI/DifferentRecordModes/log' ...
 Adding entry completion 'site' ...
 Adding entry completion 'personal' ...
 Adding entry completion 'all' ...
@@ -50,7 +50,7 @@ Button 'Filter' (Stock image 'gtk-find', accelerator 'Ctrl+F', tooltip 'filter t
 Button 'Reset Tab' (tooltip 'Reset all the settings in the current tab to their default values')
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 09Aug14:55:42.' , Image 'throbber_inactive.png'
+'TextTest started at 10Aug16:39:58.' , Image 'throbber_inactive.png'
 ----------------------------------------------------------------------------------
 
 Changing GUI status to: 'Reading tests ...'
@@ -64,7 +64,7 @@ Updated : Test Tree with columns: Tests: 0/2 selected, 0/1 distinct
 ->   Test (black/grey90)
 Updated drop-down list in 'Test-file to search' Text entry (set to 'errors') (drop-down list containing ['errors', 'output'])
 
-Changing GUI status to: 'Reading tests completed at 09Aug14:55:42.'
+Changing GUI status to: 'Reading tests completed at 10Aug16:39:59.'
 
 Expected application event 'all tests to be read' occurred, proceeding.
 
@@ -75,13 +75,12 @@ Edited 'Tests for version' Text entry (set to 'extra')
 Adding entry completion 'errors' ...
 
 Changing GUI status to: 'Selecting tests ...'
-Selected 0 out of a possible 1
-Selected 1 out of a possible 1
-Marking 1 tests as selected
 
 No longer greyed out : _Run
 
-Column titles changed in Test Tree with columns: Tests: 1/2 selected, all 1 distinct
+Changed selection in Test Tree with columns: Tests: 1/2 selected, all 1 distinct
+-> TargetApp (hello) (black/grey90,bold)
+->   Test (black/grey90)   ***
 
 Child visibility changed in Notebook with tabs: Test , Selection , Running , Config
 
@@ -135,9 +134,10 @@ Edited 'Tests for version' Text entry (set to '<default>')
 'select indicated tests' event created with arguments ''
 
 Changing GUI status to: 'Selecting tests ...'
-Selected 1 out of a possible 1
-Selected 0 out of a possible 1
-Marking 1 tests as selected
+
+Changed selection in Test Tree with columns: Tests: 1/2 selected, all 1 distinct
+-> TargetApp (hello) (black/grey90,bold)
+->   Test (black/grey90)   ***
 
 Changing GUI status to: 'Selected test Test.'
 
@@ -166,6 +166,12 @@ Test
 ===============================
 
 'set file selection to' event created with arguments 'output.hello'
+
+Changed selection in File Tree with columns: Test
+-> Standard Files (white,bold)
+->   errors.hello (grey90)
+->   output.hello (grey90)   ***
+-> Definition Files (white)
 
 ========== Text Info ==========
 

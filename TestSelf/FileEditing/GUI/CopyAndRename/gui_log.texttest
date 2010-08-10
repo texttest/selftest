@@ -2,9 +2,9 @@ Enabling entry completion, using matching 1
 Adding entry completion '<default>' ...
 Adding entry completion 'localhost' ...
 Adding entry completion '1' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.gui.22Jun134320.12652/texttest.gui/TestSelf/FileEditing/GUI/CopyAndRename/log/logging.debug' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/dynamic_gui.10Aug163734.12802/texttest.gui/TestSelf/FileEditing/GUI/CopyAndRename/log/logging.debug' ...
 Adding entry completion '/users/geoff/work/master/Testing/TextTest/log/logging.debug' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.gui.22Jun134320.12652/texttest.gui/TestSelf/FileEditing/GUI/CopyAndRename/log' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/dynamic_gui.10Aug163734.12802/texttest.gui/TestSelf/FileEditing/GUI/CopyAndRename/log' ...
 Adding entry completion 'site' ...
 Adding entry completion 'personal' ...
 Adding entry completion 'all' ...
@@ -48,7 +48,7 @@ Button 'Filter' (Stock image 'gtk-find', accelerator 'Ctrl+F', tooltip 'filter t
 Button 'Reset Tab' (tooltip 'Reset all the settings in the current tab to their default values')
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 22Jun13:43:35.' , Image 'throbber_inactive.png'
+'TextTest started at 10Aug16:39:57.' , Image 'throbber_inactive.png'
 ---------------------------------------------------------------------------------
 
 Changing GUI status to: 'Reading tests ...'
@@ -66,7 +66,7 @@ Updated : Test Tree with columns: Tests: 0/3 selected
 ->   NoFiles (black/grey90)
 Updated drop-down list in 'Test-file to search' Text entry (set to 'traffic') (drop-down list containing ['traffic', '----------', 'catalogue', 'editedfile', 'editedfile2', 'editedfile3', 'errors', 'output'])
 
-Changing GUI status to: 'Reading tests completed at 22Jun13:43:36.'
+Changing GUI status to: 'Reading tests completed at 10Aug16:39:58.'
 
 Expected application event 'all tests to be read' occurred, proceeding.
 
@@ -74,7 +74,11 @@ Expected application event 'all tests to be read' occurred, proceeding.
 
 No longer greyed out : _Run
 
-Column titles changed in Test Tree with columns: Tests: 1/3 selected
+Changed selection in Test Tree with columns: Tests: 1/3 selected
+-> TargetApp (edit) (black/grey90,bold)
+->   Test (black/grey90)   ***
+->   NameMismatch (black/grey90)
+->   NoFiles (black/grey90)
 
 Current page changed in Notebook with tabs: Test , Selection , Running , Config
 Viewing page 'Test'
@@ -116,21 +120,18 @@ Adding entry completion 'traffic' ...
 
 Updated : Test Tree with columns: Tests: 1/3 selected
 -> TargetApp (edit) (black/grey90,bold)
-->   Test (grey60/grey90)
+->   Test (grey60/grey90)   ***
 ->   NameMismatch (black/grey90)
 ->   NoFiles (black/grey90)
 
 Changing GUI status to: 'Performed 'Copy selected tests' on test Test.'
 
 'paste tests from clipboard' event created with arguments ''
-Pasting test Test_copy under test suite EDIT test-suite TargetApp, in position 1
-Selecting new tests : [EDIT test-case Test_copy]
-Marking 1 tests as selected
 
 Updated : Test Tree with columns: Tests: 1/4 selected
 -> TargetApp (edit) (black/grey90,bold)
 ->   Test (grey60/grey90)
-->   Test_copy (black/grey90)
+->   Test_copy (black/grey90)   ***
 ->   NameMismatch (black/grey90)
 ->   NoFiles (black/grey90)
 
@@ -192,7 +193,7 @@ Adding entry completion 'newname' ...
 Updated : Test Tree with columns: Tests: 1/4 selected
 -> TargetApp (edit) (black/grey90,bold)
 ->   Test (grey60/grey90)
-->   newname (black/grey90)
+->   newname (black/grey90)   ***
 ->   NameMismatch (black/grey90)
 ->   NoFiles (black/grey90)
 

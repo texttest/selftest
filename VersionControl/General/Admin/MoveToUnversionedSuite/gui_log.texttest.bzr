@@ -2,9 +2,9 @@ Enabling entry completion, using matching 1
 Adding entry completion '<default>' ...
 Adding entry completion 'localhost' ...
 Adding entry completion '1' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.31May141619.29411/texttest.bzr/VersionControl/General/Admin/MoveToUnversionedSuite/log/logging.debug' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/dynamic_gui.10Aug163734.12802/texttest.bzr/VersionControl/General/Admin/MoveToUnversionedSuite/log/logging.debug' ...
 Adding entry completion '/users/geoff/work/master/Testing/TextTest/log/logging.debug' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.31May141619.29411/texttest.bzr/VersionControl/General/Admin/MoveToUnversionedSuite/log' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/dynamic_gui.10Aug163734.12802/texttest.bzr/VersionControl/General/Admin/MoveToUnversionedSuite/log' ...
 Adding entry completion 'site' ...
 Adding entry completion 'personal' ...
 Adding entry completion 'all' ...
@@ -49,7 +49,7 @@ Button 'Filter' (Stock image 'gtk-find', accelerator 'Ctrl+F', tooltip 'filter t
 Button 'Reset Tab' (tooltip 'Reset all the settings in the current tab to their default values')
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 31May14:17:50.' , Image 'throbber_inactive.png'
+'TextTest started at 10Aug16:39:07.' , Image 'throbber_inactive.png'
 ----------------------------------------------------------------------------------
 
 Changing GUI status to: 'Reading tests ...'
@@ -72,7 +72,7 @@ Updated : Test Tree with columns: Tests: 0/4 selected
 ->       Test4 (black/grey90)
 Updated drop-down list in 'Test-file to search' Text entry (set to 'errors') (drop-down list containing ['errors', 'output'])
 
-Changing GUI status to: 'Reading tests completed at 31May14:17:51.'
+Changing GUI status to: 'Reading tests completed at 10Aug16:39:08.'
 
 Expected application event 'all tests to be read' occurred, proceeding.
 
@@ -80,7 +80,14 @@ Expected application event 'all tests to be read' occurred, proceeding.
 
 No longer greyed out : _Run
 
-Column titles changed in Test Tree with columns: Tests: 1 suite selected
+Changed selection in Test Tree with columns: Tests: 1 suite selected
+-> TargetApp (hello) (black/grey90,bold)   ***
+->   Test1 (black/grey90)
+->   Test2 (black/grey90)
+->   Suite (black/grey90,bold)
+->     Subsuite (black/grey90,bold)
+->       Test3 (black/grey90)
+->       Test4 (black/grey90)
 
 Current page changed in Notebook with tabs: Test , Selection , Running , Config
 Viewing page 'Test'
@@ -128,7 +135,6 @@ Button 'gtk-ok' (Stock image 'gtk-ok') , Button 'gtk-cancel' (Stock image 'gtk-c
 Edited 'Suite Name' Text entry (set to 'NewSuite')
 
 'press ok' event created with arguments ''
-Marking 1 tests as selected
 Adding entry completion 'errors' ...
 
 Updated : Test Tree with columns: Tests: 1 suite selected
@@ -139,7 +145,7 @@ Updated : Test Tree with columns: Tests: 1 suite selected
 ->     Subsuite (black/grey90,bold)
 ->       Test3 (black/grey90)
 ->       Test4 (black/grey90)
-->   NewSuite (black/grey90,bold)
+->   NewSuite (black/grey90,bold)   ***
 
 Updated : File Tree with columns: NewSuite
 -> Definition Files (white,bold)
@@ -158,7 +164,15 @@ Changing GUI status to: 'Added new HELLO test-suite NewSuite'
 
 'set test selection to' event created with arguments 'Test3'
 
-Column titles changed in Test Tree with columns: Tests: 1/4 selected
+Changed selection in Test Tree with columns: Tests: 1/4 selected
+-> TargetApp (hello) (black/grey90,bold)
+->   Test1 (black/grey90)
+->   Test2 (black/grey90)
+->   Suite (black/grey90,bold)
+->     Subsuite (black/grey90,bold)
+->       Test3 (black/grey90)   ***
+->       Test4 (black/grey90)
+->   NewSuite (black/grey90,bold)
 
 Updated : File Tree with columns: Test3
 -> Standard Files (white,bold)
@@ -183,7 +197,7 @@ Updated : Test Tree with columns: Tests: 1/4 selected
 ->   Test2 (black/grey90)
 ->   Suite (black/grey90,bold)
 ->     Subsuite (black/grey90,bold)
-->       Test3 (red/grey90)
+->       Test3 (red/grey90)   ***
 ->       Test4 (black/grey90)
 ->   NewSuite (black/grey90,bold)
 
@@ -191,7 +205,15 @@ Changing GUI status to: 'Performed 'Cut selected tests' on test Suite/Subsuite/T
 
 'set test selection to' event created with arguments 'NewSuite'
 
-Column titles changed in Test Tree with columns: Tests: 1 suite selected
+Changed selection in Test Tree with columns: Tests: 1 suite selected
+-> TargetApp (hello) (black/grey90,bold)
+->   Test1 (black/grey90)
+->   Test2 (black/grey90)
+->   Suite (black/grey90,bold)
+->     Subsuite (black/grey90,bold)
+->       Test3 (red/grey90)
+->       Test4 (black/grey90)
+->   NewSuite (black/grey90,bold)   ***
 
 Updated : File Tree with columns: NewSuite
 -> Definition Files (white,bold)
@@ -207,9 +229,6 @@ NewSuite
 ===============================
 
 'paste tests from clipboard' event created with arguments ''
-Pasting test Test3 under test suite HELLO test-suite NewSuite, in position 0
-Selecting new tests : [HELLO test-case Test3]
-Marking 1 tests as selected
 
 Updated : Test Tree with columns: Tests: 1/4 selected
 -> TargetApp (hello) (black/grey90,bold)
@@ -219,7 +238,7 @@ Updated : Test Tree with columns: Tests: 1/4 selected
 ->     Subsuite (black/grey90,bold)
 ->       Test4 (black/grey90)
 ->   NewSuite (black/grey90,bold)
-->     Test3 (grey60/grey90)
+->     Test3 (grey60/grey90)   ***
 
 Updated : File Tree with columns: Test3
 -> Standard Files (white,bold)
@@ -240,7 +259,15 @@ Changing GUI status to: 'Moved test NewSuite/Test3 to suite 'NewSuite' in Bazaar
 
 'set test selection to' event created with arguments 'NewSuite'
 
-Column titles changed in Test Tree with columns: Tests: 1 suite selected
+Changed selection in Test Tree with columns: Tests: 1 suite selected
+-> TargetApp (hello) (black/grey90,bold)
+->   Test1 (black/grey90)
+->   Test2 (black/grey90)
+->   Suite (black/grey90,bold)
+->     Subsuite (black/grey90,bold)
+->       Test4 (black/grey90)
+->   NewSuite (black/grey90,bold)   ***
+->     Test3 (grey60/grey90)
 
 Updated : File Tree with columns: NewSuite
 -> Definition Files (white,bold)
@@ -274,7 +301,7 @@ Showing VCS status info tree with columns: File , Information
 -> <span weight='bold'>TargetApp</span>
 ->   <span weight='bold'>NewSuite</span>
 ->     <span weight='bold'>Test3</span>
-->       errors.hello | Unchanged
+->       errors.hello | Unchanged   ***
 ->       output.hello | <span weight='bold'>Modified</span>
 ->     testsuite.hello | <span weight='bold'>Added</span>
 

@@ -3,7 +3,7 @@ Adding entry completion '<default>' ...
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
 
----------- Window 'TextTest dynamic GUI : testing HELLO (started at 26May13:51:16)' ----------
+---------- Window 'TextTest dynamic GUI : testing HELLO (started at 10Aug14:58:25)' ----------
 Focus widget is 'Test Tree'
 
 Menu Bar : 'File' (+) , 'View' (+) , 'Actions' (+) , 'Help' (+)
@@ -12,7 +12,7 @@ Tool Bar :
   _Quit (Stock image 'gtk-quit', accelerator 'Ctrl+Q', tooltip 'Quit')
   _Kill (Stock image 'gtk-stop', greyed out, accelerator 'Ctrl+Delete', tooltip 'Kill selected tests')
   _Save (Stock image 'gtk-save', greyed out, accelerator 'Ctrl+S', tooltip 'Save results for selected tests')
-  Progress bar set to fraction 0.0, text 'All 0 tests completed at 26May13:51:20'
+  Progress bar set to fraction 0.0, text 'All 0 tests completed at 10Aug14:58:27'
 ...........
 
 Showing Test Tree with columns: Tests: All 0 selected , Details
@@ -26,7 +26,7 @@ Viewing page 'Status'
 Showing Test Status View with columns: Status , Number , Visible
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 26May13:51:20.' , Image 'throbber_inactive.png'
+'TextTest started at 10Aug14:58:27.' , Image 'throbber_inactive.png'
 ----------------------------------------------------------------------------------------------
 
 Progress bar set to fraction 0.0, text '0 of 1 tests completed'
@@ -220,7 +220,7 @@ Updated : Test Status View with columns: Status , Number , Visible
 ->     output different (salmon,bold) | 2 (salmon,bold) | Check box (checked)
 ->       Group 1 (salmon,bold) | 2 (salmon,bold) | Check box (checked)
 
-Progress bar set to fraction 1.0, text 'All 3 tests completed at 26May13:51:25'
+Progress bar set to fraction 1.0, text 'All 3 tests completed at 10Aug14:58:30'
 
 Updated : Test Tree with columns: Tests: 0/3 selected, none hidden , Details
 -> TargetApp (hello) (black/white,bold) | (white)
@@ -244,7 +244,11 @@ Expected application event 'completion of test actions' occurred, proceeding.
 
 No longer greyed out : _Save
 
-Column titles changed in Test Tree with columns: Tests: 1/3 selected, none hidden , Details
+Changed selection in Test Tree with columns: Tests: 1/3 selected, none hidden , Details
+-> TargetApp (hello) (black/white,bold) | (white)
+->   Test1 (black/salmon) | output different (salmon)   ***
+->   Test1_copy (black/salmon) | output different (salmon)
+->   Test2 (black/salmon) | output different (salmon)
 
 Current page changed in Notebook with tabs: Test , Status , Selection , Run Info
 Viewing page 'Test'
@@ -269,6 +273,11 @@ Test FAILED :
 
 'view actions for file' event created with arguments 'output.hello'
 
+Changed selection in File Tree with columns: Test1 , Details
+-> Comparison Files (bold)
+->   errors.hello (DarkSeaGreen2) | (DarkSeaGreen2)
+->   output.hello (salmon) | (salmon)   ***
+
 ---------- Popup Window ----------
 'View File' (Stock image 'gtk-open', accelerator 'Ctrl+O')
 'View Filtered File'
@@ -291,9 +300,12 @@ Test FAILED :
 
 'select tests with same diff' event created with arguments ''
 Adding entry completion 'output' ...
-Marking 2 tests as selected
 
-Column titles changed in Test Tree with columns: Tests: 2/3 selected, none hidden , Details
+Changed selection in Test Tree with columns: Tests: 2/3 selected, none hidden , Details
+-> TargetApp (hello) (black/white,bold) | (white)
+->   Test1 (black/salmon) | output different (salmon)   ***
+->   Test1_copy (black/salmon) | output different (salmon)   ***
+->   Test2 (black/salmon) | output different (salmon)
 
 Column titles changed in File Tree with columns: Sample from 2 tests , Details
 

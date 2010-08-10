@@ -3,7 +3,7 @@ Adding entry completion '<default>' ...
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
 
----------- Window 'TextTest dynamic GUI : testing HELLO (started at 26May13:51:11)' ----------
+---------- Window 'TextTest dynamic GUI : testing HELLO (started at 10Aug16:40:05)' ----------
 Focus widget is 'Test Tree'
 
 Menu Bar : 'File' (+) , 'View' (+) , 'Actions' (+) , 'Help' (+)
@@ -12,7 +12,7 @@ Tool Bar :
   _Quit (Stock image 'gtk-quit', accelerator 'Ctrl+Q', tooltip 'Quit')
   _Kill (Stock image 'gtk-stop', greyed out, accelerator 'Ctrl+Delete', tooltip 'Kill selected tests')
   _Save (Stock image 'gtk-save', greyed out, accelerator 'Ctrl+S', tooltip 'Save results for selected tests')
-  Progress bar set to fraction 0.0, text 'All 0 tests completed at 26May13:51:12'
+  Progress bar set to fraction 0.0, text 'All 0 tests completed at 10Aug16:40:10'
 ...........
 
 Showing Test Tree with columns: Tests: All 0 selected , Details
@@ -26,7 +26,7 @@ Viewing page 'Status'
 Showing Test Status View with columns: Status , Number , Visible
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 26May13:51:12.' , Image 'throbber_inactive.png'
+'TextTest started at 10Aug16:40:10.' , Image 'throbber_inactive.png'
 ----------------------------------------------------------------------------------------------
 
 Progress bar set to fraction 0.0, text '0 of 1 tests completed'
@@ -65,7 +65,7 @@ Updated : Test Status View with columns: Status , Number , Visible
 -> Running (white) | 0 (white) | Check box (checked)
 -> Final filter (LightGoldenrod1,bold) | 1 (LightGoldenrod1,bold) | Check box (checked)
 
-Progress bar set to fraction 1.0, text 'All 1 tests completed at 26May13:51:13'
+Progress bar set to fraction 1.0, text 'All 1 tests completed at 10Aug16:40:11'
 
 Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
 -> TargetApp (hello) (black/white,bold) | (white)
@@ -79,11 +79,12 @@ Updated : Test Status View with columns: Status , Number , Visible
 -> Failed (salmon,bold) | 1 (salmon,bold) | Check box (checked)
 ->   Differences (salmon,bold) | 1 (salmon,bold) | Check box (checked)
 ->     output different (salmon,bold) | 1 (salmon,bold) | Check box (checked)
-Only one test found, selecting Test
 
 No longer greyed out : _Save
 
-Column titles changed in Test Tree with columns: Tests: All 1 selected, none hidden , Details
+Changed selection in Test Tree with columns: Tests: All 1 selected, none hidden , Details
+-> TargetApp (hello) (black/white,bold) | (white)
+->   Test (black/salmon) | output different (salmon)   ***
 
 Current page changed in Notebook with tabs: Test , Status , Selection , Run Info
 Viewing page 'Test'
@@ -110,9 +111,6 @@ Expected application event 'completion of test actions' occurred, proceeding.
 
 'select file' event created with arguments 'output.hello'
 Adding entry completion 'free_text' ...
-Starting graphical difference comparison using 'tkdiff':
--- original file : /carm/proj/texttest-tmp/geoff/texttest.26May134951.24999/texttest.gui/GUI/QuitConfirmation/MultipleDynamic/texttesttmp/dynamic_gui.26May135111.1161/hello/Test/framework_tmp/output.helloorigcmp
---  current file : /carm/proj/texttest-tmp/geoff/texttest.26May134951.24999/texttest.gui/GUI/QuitConfirmation/MultipleDynamic/texttesttmp/dynamic_gui.26May135111.1161/hello/Test/framework_tmp/output.hellocmp
 
 Changing GUI status to: 'Started "tkdiff output.helloorigcmp output.hellocmp" in background (from test Test).'
 
@@ -124,7 +122,7 @@ Stock image 'gtk-dialog-warning' , ========== GtkTextView ==========
 
 These processes are still running, and will be terminated when quitting: 
 
-   + PID 1211 : tkdiff output.helloorigcmp output.hellocmp (from test Test)
+   + PID 6669 : tkdiff output.helloorigcmp output.hellocmp (from test Test)
 
 Quit anyway?
 =================================
@@ -138,12 +136,21 @@ Changing GUI status to: 'Action cancelled.'
 
 'set file selection to' event created with arguments 'output.hello'
 
+Changed selection in File Tree with columns: Test , Details
+-> Comparison Files (bold)
+->   errors.hello (DarkSeaGreen2) | (DarkSeaGreen2)
+->   output.hello (salmon) | (salmon)   ***
+
 'view filtered file' event created with arguments ''
-Viewing file /carm/proj/texttest-tmp/geoff/texttest.26May134951.24999/texttest.gui/GUI/QuitConfirmation/MultipleDynamic/texttesttmp/dynamic_gui.26May135111.1161/hello/Test/framework_tmp/output.hellocmp using 'emacs', refresh set to False
 
 Waiting for application event 'the viewer process to start' to occur.
 
 Changing GUI status to: 'Started "emacs output.hellocmp" in background (from test Test).'
+
+Changed selection in File Tree with columns: Test , Details
+-> Comparison Files (bold)
+->   errors.hello (DarkSeaGreen2) | (DarkSeaGreen2)
+->   output.hello (salmon) | (salmon)
 
 Expected application event 'the viewer process to start' occurred, proceeding.
 
@@ -155,8 +162,8 @@ Stock image 'gtk-dialog-warning' , ========== GtkTextView ==========
 
 These processes are still running, and will be terminated when quitting: 
 
-   + PID 1211 : tkdiff output.helloorigcmp output.hellocmp (from test Test)
-   + PID 1216 : emacs output.hellocmp (from test Test)
+   + PID 6669 : tkdiff output.helloorigcmp output.hellocmp (from test Test)
+   + PID 6676 : emacs output.hellocmp (from test Test)
 
 Quit anyway?
 =================================

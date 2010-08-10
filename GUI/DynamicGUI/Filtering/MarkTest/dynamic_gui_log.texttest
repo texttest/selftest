@@ -3,7 +3,7 @@ Adding entry completion '<default>' ...
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
 
----------- Window 'TextTest dynamic GUI : testing HELLO (started at 31May16:26:55)' ----------
+---------- Window 'TextTest dynamic GUI : testing HELLO (started at 10Aug14:58:24)' ----------
 Focus widget is 'Test Tree'
 
 Menu Bar : 'File' (+) , 'View' (+) , 'Actions' (+) , 'Help' (+)
@@ -12,7 +12,7 @@ Tool Bar :
   _Quit (Stock image 'gtk-quit', accelerator 'Ctrl+Q', tooltip 'Quit')
   _Kill (Stock image 'gtk-stop', greyed out, accelerator 'Ctrl+Delete', tooltip 'Kill selected tests')
   _Save (Stock image 'gtk-save', greyed out, accelerator 'Ctrl+S', tooltip 'Save results for selected tests')
-  Progress bar set to fraction 0.0, text 'All 0 tests completed at 31May16:26:56'
+  Progress bar set to fraction 0.0, text 'All 0 tests completed at 10Aug14:58:26'
 ...........
 
 Showing Test Tree with columns: Tests: All 0 selected , Details
@@ -26,7 +26,7 @@ Viewing page 'Status'
 Showing Test Status View with columns: Status , Number , Visible
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 31May16:26:56.' , Image 'throbber_inactive.png'
+'TextTest started at 10Aug14:58:26.' , Image 'throbber_inactive.png'
 ----------------------------------------------------------------------------------------------
 
 Progress bar set to fraction 0.0, text '0 of 1 tests completed'
@@ -487,7 +487,7 @@ Updated : Test Status View with columns: Status , Number , Visible
 ->     errors new (salmon,bold) | 3 (salmon,bold) | Check box (checked)
 ->       Group 1 (salmon,bold) | 3 (salmon,bold) | Check box (checked)
 
-Progress bar set to fraction 1.0, text 'All 5 tests completed at 31May16:26:57'
+Progress bar set to fraction 1.0, text 'All 5 tests completed at 10Aug14:58:30'
 
 Updated : Test Tree with columns: Tests: 0/5 selected, none hidden , Details
 -> TargetApp (hello) (black/white,bold) | (white)
@@ -531,7 +531,14 @@ Expanded row in Test Tree with columns: Tests: 0/5 selected, none hidden , Detai
 
 'view actions for test' event created with arguments 'success'
 
-Column titles changed in Test Tree with columns: Tests: 1/5 selected, none hidden , Details
+Changed selection in Test Tree with columns: Tests: 1/5 selected, none hidden , Details
+-> TargetApp (hello) (black/white,bold) | (white)
+->   simple_fail1 (black/DarkSeaGreen2) | file3 different (salmon)
+->   simple_fail2 (black/salmon) | errors new (salmon)
+->   complex_fail1 (black/salmon) | output different(+) (salmon)
+->   complex_fail2 (black/salmon) | output different(+) (salmon)
+->   suite (black/white,bold) | All 1 tests successful (DarkSeaGreen2)
+->     success (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
 
 Current page changed in Notebook with tabs: Test , Status , Selection , Run Info
 Viewing page 'Test'
@@ -567,14 +574,14 @@ Test succeeded
 
 'mark the selected tests' event created with arguments ''
 Adding entry completion 'Checked' ...
-Adding entry completion 'Checked at 31May16:26:55' ...
+Adding entry completion 'Checked at 10Aug14:58:26' ...
 
 ---------- Dialog 'Mark the selected tests' ----------
 Default widget is 'gtk-ok'
 'Brief text:'
 Text entry (set to 'Checked')
 'Free text:'
-Text entry (set to 'Checked at 31May16:26:55')
+Text entry (set to 'Checked at 10Aug14:58:26')
 ---------------
 Button 'gtk-ok' (Stock image 'gtk-ok') , Button 'gtk-cancel' (Stock image 'gtk-cancel')
 ------------------------------------------------------
@@ -591,7 +598,7 @@ Updated : Test Tree with columns: Tests: 1/5 selected, none hidden , Details
 ->   complex_fail1 (black/salmon) | output different(+) (salmon)
 ->   complex_fail2 (black/salmon) | output different(+) (salmon)
 ->   suite (black/white,bold) | All 1 tests successful (DarkSeaGreen2)
-->     success (black/orange) | Checked (orange)
+->     success (black/orange) | Checked (orange)   ***
 
 Updated : File Tree with columns: success , Details
 -> Comparison Files (bold)
@@ -618,7 +625,14 @@ Changing GUI status to: 'Performed 'Mark the selected tests' on test suite/succe
 
 No longer greyed out : _Save
 
-Column titles changed in Test Tree with columns: Tests: 1/5 selected, none hidden , Details
+Changed selection in Test Tree with columns: Tests: 1/5 selected, none hidden , Details
+-> TargetApp (hello) (black/white,bold) | (white)
+->   simple_fail1 (black/DarkSeaGreen2) | file3 different (salmon)
+->   simple_fail2 (black/salmon) | errors new (salmon)
+->   complex_fail1 (black/salmon) | output different(+) (salmon)
+->   complex_fail2 (black/salmon) | output different(+) (salmon)   ***
+->   suite (black/white,bold) | All 1 tests successful (DarkSeaGreen2)
+->     success (black/orange) | Checked (orange)
 
 Updated : File Tree with columns: complex__fail2 , Details
 -> Comparison Files (bold)
@@ -695,7 +709,7 @@ Updated : Test Tree with columns: Tests: 1/5 selected, none hidden , Details
 ->   simple_fail1 (black/DarkSeaGreen2) | file3 different (salmon)
 ->   simple_fail2 (black/salmon) | errors new (salmon)
 ->   complex_fail1 (black/salmon) | output different(+) (salmon)
-->   complex_fail2 (black/orange) | ignored (orange)
+->   complex_fail2 (black/orange) | ignored (orange)   ***
 ->   suite (black/white,bold) | All 1 tests successful (DarkSeaGreen2)
 ->     success (black/orange) | Checked (orange)
 
@@ -749,7 +763,14 @@ Changing GUI status to: 'Performed 'Mark the selected tests' on test complex_fai
 
 No longer greyed out : _Save
 
-Column titles changed in Test Tree with columns: Tests: 1/5 selected, none hidden , Details
+Changed selection in Test Tree with columns: Tests: 1/5 selected, none hidden , Details
+-> TargetApp (hello) (black/white,bold) | (white)
+->   simple_fail1 (black/DarkSeaGreen2) | file3 different (salmon)
+->   simple_fail2 (black/salmon) | errors new (salmon)   ***
+->   complex_fail1 (black/salmon) | output different(+) (salmon)
+->   complex_fail2 (black/orange) | ignored (orange)
+->   suite (black/white,bold) | All 1 tests successful (DarkSeaGreen2)
+->     success (black/orange) | Checked (orange)
 
 Updated : File Tree with columns: simple__fail2 , Details
 -> Comparison Files (bold)
@@ -797,7 +818,7 @@ Greyed out : _Save
 Updated : Test Tree with columns: Tests: 1/5 selected, none hidden , Details
 -> TargetApp (hello) (black/white,bold) | (white)
 ->   simple_fail1 (black/DarkSeaGreen2) | file3 different (salmon)
-->   simple_fail2 (black/orange) | ignored (orange)
+->   simple_fail2 (black/orange) | ignored (orange)   ***
 ->   complex_fail1 (black/salmon) | output different(+) (salmon)
 ->   complex_fail2 (black/orange) | ignored (orange)
 ->   suite (black/white,bold) | All 1 tests successful (DarkSeaGreen2)
@@ -828,7 +849,14 @@ Changing GUI status to: 'Performed 'Mark the selected tests' on test simple_fail
 
 No longer greyed out : _Save
 
-Column titles changed in Test Tree with columns: Tests: 3/5 selected, none hidden , Details
+Changed selection in Test Tree with columns: Tests: 3/5 selected, none hidden , Details
+-> TargetApp (hello) (black/white,bold) | (white)
+->   simple_fail1 (black/DarkSeaGreen2) | file3 different (salmon)   ***
+->   simple_fail2 (black/orange) | ignored (orange)   ***
+->   complex_fail1 (black/salmon) | output different(+) (salmon)   ***
+->   complex_fail2 (black/orange) | ignored (orange)
+->   suite (black/white,bold) | All 1 tests successful (DarkSeaGreen2)
+->     success (black/orange) | Checked (orange)
 
 Updated : File Tree with columns: Sample from 3 tests , Details
 -> Comparison Files (bold)
@@ -887,18 +915,18 @@ Edited 'Brief text' Text entry (set to 'Multimarked')
 
 Updated : Test Tree with columns: Tests: 3/5 selected, none hidden , Details
 -> TargetApp (hello) (black/white,bold) | (white)
-->   simple_fail1 (black/orange) | Multimarked (orange)
-->   simple_fail2 (black/orange) | ignored (orange)
-->   complex_fail1 (black/salmon) | output different(+) (salmon)
+->   simple_fail1 (black/orange) | Multimarked (orange)   ***
+->   simple_fail2 (black/orange) | ignored (orange)   ***
+->   complex_fail1 (black/salmon) | output different(+) (salmon)   ***
 ->   complex_fail2 (black/orange) | ignored (orange)
 ->   suite (black/white,bold) | All 1 tests successful (DarkSeaGreen2)
 ->     success (black/orange) | Checked (orange)
 
 Updated : Test Tree with columns: Tests: 3/5 selected, none hidden , Details
 -> TargetApp (hello) (black/white,bold) | (white)
-->   simple_fail1 (black/orange) | Multimarked (orange)
-->   simple_fail2 (black/orange) | Multimarked (orange)
-->   complex_fail1 (black/salmon) | output different(+) (salmon)
+->   simple_fail1 (black/orange) | Multimarked (orange)   ***
+->   simple_fail2 (black/orange) | Multimarked (orange)   ***
+->   complex_fail1 (black/salmon) | output different(+) (salmon)   ***
 ->   complex_fail2 (black/orange) | ignored (orange)
 ->   suite (black/white,bold) | All 1 tests successful (DarkSeaGreen2)
 ->     success (black/orange) | Checked (orange)
@@ -907,9 +935,9 @@ Greyed out : _Save
 
 Updated : Test Tree with columns: Tests: 3/5 selected, none hidden , Details
 -> TargetApp (hello) (black/white,bold) | (white)
-->   simple_fail1 (black/orange) | Multimarked (orange)
-->   simple_fail2 (black/orange) | Multimarked (orange)
-->   complex_fail1 (black/orange) | Multimarked (orange)
+->   simple_fail1 (black/orange) | Multimarked (orange)   ***
+->   simple_fail2 (black/orange) | Multimarked (orange)   ***
+->   complex_fail1 (black/orange) | Multimarked (orange)   ***
 ->   complex_fail2 (black/orange) | ignored (orange)
 ->   suite (black/white,bold) | All 1 tests successful (DarkSeaGreen2)
 ->     success (black/orange) | Checked (orange)

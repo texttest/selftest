@@ -3,7 +3,7 @@ Adding entry completion '<default>' ...
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
 
----------- Window 'TextTest dynamic GUI : testing HELLO (started at 26May13:50:48)' ----------
+---------- Window 'TextTest dynamic GUI : testing HELLO (started at 10Aug14:57:55)' ----------
 Focus widget is 'Test Tree'
 
 Menu Bar : 'File' (+) , 'View' (+) , 'Actions' (+) , 'Help' (+)
@@ -12,7 +12,7 @@ Tool Bar :
   _Quit (Stock image 'gtk-quit', accelerator 'Ctrl+Q', tooltip 'Quit')
   _Kill (Stock image 'gtk-stop', greyed out, accelerator 'Ctrl+Delete', tooltip 'Kill selected tests')
   _Save (Stock image 'gtk-save', greyed out, accelerator 'Ctrl+S', tooltip 'Save results for selected tests')
-  Progress bar set to fraction 0.0, text 'All 0 tests completed at 26May13:50:49'
+  Progress bar set to fraction 0.0, text 'All 0 tests completed at 10Aug14:58:00'
 ...........
 
 Showing Test Tree with columns: Tests: All 0 selected , Details
@@ -26,7 +26,7 @@ Viewing page 'Status'
 Showing Test Status View with columns: Status , Number , Visible
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 26May13:50:49.' , Image 'throbber_inactive.png'
+'TextTest started at 10Aug14:58:00.' , Image 'throbber_inactive.png'
 ----------------------------------------------------------------------------------------------
 
 Progress bar set to fraction 0.0, text '0 of 1 tests completed'
@@ -130,7 +130,10 @@ Expected application event 'test Basic2 to start' occurred, proceeding.
 
 No longer greyed out : _Save
 
-Column titles changed in Test Tree with columns: Tests: 1/3 selected, 2 hidden , Details
+Changed selection in Test Tree with columns: Tests: 1/3 selected, 2 hidden , Details
+-> TargetApp (hello) (black/white,bold) | (white)
+->   Suite1 (black/white,bold) | (white)
+->     Basic (black/salmon) | output different (salmon)   ***
 
 Current page changed in Notebook with tabs: Test , Status , Selection , Run Info
 Viewing page 'Test'
@@ -157,10 +160,15 @@ Test FAILED :
 
 Waiting for application event 'completion of test actions' to occur.
 
+Changed selection in File Tree with columns: Basic , Details
+-> Comparison Files (bold)
+->   errors.hello (DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   output.hello (salmon) | (salmon)
+
 Updated : Test Tree with columns: Tests: 1/3 selected, 1 hidden , Details
 -> TargetApp (hello) (black/white,bold) | (white)
 ->   Suite1 (black/white,bold) | (white)
-->     Basic (black/salmon) | output different (salmon)
+->     Basic (black/salmon) | output different (salmon)   ***
 ->     Basic2 (black/LightGoldenrod1) | (LightGoldenrod1)
 
 Progress bar set to fraction 0.666666666667, text '2 of 3 tests completed'
@@ -168,13 +176,13 @@ Progress bar set to fraction 0.666666666667, text '2 of 3 tests completed'
 Updated : Test Tree with columns: Tests: 1/3 selected, 1 hidden , Details
 -> TargetApp (hello) (black/white,bold) | (white)
 ->   Suite1 (black/white,bold) | (white)
-->     Basic (black/salmon) | output different (salmon)
+->     Basic (black/salmon) | output different (salmon)   ***
 ->     Basic2 (black/DarkSeaGreen2) | (DarkSeaGreen2)
 
 Updated : Test Tree with columns: Tests: 1/3 selected, none hidden , Details
 -> TargetApp (hello) (black/white,bold) | (white)
 ->   Suite1 (black/white,bold) | (white)
-->     Basic (black/salmon) | output different (salmon)
+->     Basic (black/salmon) | output different (salmon)   ***
 ->     Basic2 (black/DarkSeaGreen2) | (DarkSeaGreen2)
 ->   Suite (black/white,bold) | (white)
 ->     Basic3 (black/LightGoldenrod1) | (LightGoldenrod1)
@@ -182,23 +190,23 @@ Updated : Test Tree with columns: Tests: 1/3 selected, none hidden , Details
 Updated : Test Tree with columns: Tests: 1/3 selected, 1 hidden , Details
 -> TargetApp (hello) (black/white,bold) | (white)
 ->   Suite1 (black/white,bold) | (white)
-->     Basic (black/salmon) | output different (salmon)
+->     Basic (black/salmon) | output different (salmon)   ***
 ->     Basic2 (black/DarkSeaGreen2) | (DarkSeaGreen2)
 
 Updated : Test Tree with columns: Tests: 1/3 selected, none hidden , Details
 -> TargetApp (hello) (black/white,bold) | (white)
 ->   Suite1 (black/white,bold) | (white)
-->     Basic (black/salmon) | output different (salmon)
+->     Basic (black/salmon) | output different (salmon)   ***
 ->     Basic2 (black/DarkSeaGreen2) | (DarkSeaGreen2)
 ->   Suite (black/white,bold) | (white)
 ->     Basic3 (black/LightGoldenrod1) | (LightGoldenrod1)
 
-Progress bar set to fraction 1.0, text 'All 3 tests completed at 26May13:50:52'
+Progress bar set to fraction 1.0, text 'All 3 tests completed at 10Aug14:58:02'
 
 Updated : Test Tree with columns: Tests: 1/3 selected, none hidden , Details
 -> TargetApp (hello) (black/white,bold) | (white)
 ->   Suite1 (black/white,bold) | (white)
-->     Basic (black/salmon) | output different (salmon)
+->     Basic (black/salmon) | output different (salmon)   ***
 ->     Basic2 (black/DarkSeaGreen2) | (DarkSeaGreen2)
 ->   Suite (black/white,bold) | (white)
 ->     Basic3 (black/salmon) | errors new(+) (salmon)

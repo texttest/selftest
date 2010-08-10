@@ -2,9 +2,9 @@ Enabling entry completion, using matching 1
 Adding entry completion '<default>' ...
 Adding entry completion 'localhost' ...
 Adding entry completion '1' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.31May141619.29411/texttest.hg/VersionControl/General/Miscellaneous/Annotate/log/logging.debug' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/dynamic_gui.10Aug145655.4770/texttest.hg/VersionControl/General/Miscellaneous/Annotate/log/logging.debug' ...
 Adding entry completion '/users/geoff/work/master/Testing/TextTest/log/logging.debug' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.31May141619.29411/texttest.hg/VersionControl/General/Miscellaneous/Annotate/log' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/dynamic_gui.10Aug145655.4770/texttest.hg/VersionControl/General/Miscellaneous/Annotate/log' ...
 Adding entry completion 'site' ...
 Adding entry completion 'personal' ...
 Adding entry completion 'all' ...
@@ -49,7 +49,7 @@ Button 'Filter' (Stock image 'gtk-find', accelerator 'Ctrl+F', tooltip 'filter t
 Button 'Reset Tab' (tooltip 'Reset all the settings in the current tab to their default values')
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 31May14:17:52.' , Image 'throbber_inactive.png'
+'TextTest started at 10Aug14:58:57.' , Image 'throbber_inactive.png'
 ----------------------------------------------------------------------------------
 
 Changing GUI status to: 'Reading tests ...'
@@ -72,7 +72,7 @@ Updated : Test Tree with columns: Tests: 0/4 selected
 ->       Test4 (black/grey90)
 Updated drop-down list in 'Test-file to search' Text entry (set to 'errors') (drop-down list containing ['errors', 'output'])
 
-Changing GUI status to: 'Reading tests completed at 31May14:17:53.'
+Changing GUI status to: 'Reading tests completed at 10Aug14:58:58.'
 
 Expected application event 'all tests to be read' occurred, proceeding.
 
@@ -80,7 +80,14 @@ Expected application event 'all tests to be read' occurred, proceeding.
 
 No longer greyed out : _Run
 
-Column titles changed in Test Tree with columns: Tests: 1/4 selected
+Changed selection in Test Tree with columns: Tests: 1/4 selected
+-> TargetApp (hello) (black/grey90,bold)
+->   Test1 (black/grey90)   ***
+->   Test2 (black/grey90)
+->   Suite (black/grey90,bold)
+->     Subsuite (black/grey90,bold)
+->       Test3 (black/grey90)
+->       Test4 (black/grey90)
 
 Current page changed in Notebook with tabs: Test , Selection , Running , Config
 Viewing page 'Test'
@@ -126,7 +133,7 @@ Subdirectories were ignored, use Mercurial Annotate Recursive to get the annotat
 Showing VCS annotate info tree with columns: File
 -> <span weight='bold'>TargetApp</span>
 ->   <span weight='bold'>Test1</span>
-->     errors.hello
+->     errors.hello   ***
 ->     output.hello
 ->     output.hello.version
 
@@ -145,7 +152,14 @@ Adding entry completion 'tip' ...
 
 'set test selection to' event created with arguments 'Suite'
 
-Column titles changed in Test Tree with columns: Tests: 1 suite selected
+Changed selection in Test Tree with columns: Tests: 1 suite selected
+-> TargetApp (hello) (black/grey90,bold)
+->   Test1 (black/grey90)
+->   Test2 (black/grey90)
+->   Suite (black/grey90,bold)   ***
+->     Subsuite (black/grey90,bold)
+->       Test3 (black/grey90)
+->       Test4 (black/grey90)
 
 Updated : File Tree with columns: Suite
 -> Definition Files (white,bold)
@@ -189,7 +203,7 @@ Showing VCS annotate info tree with columns: File
 ->   <span weight='bold'>Suite</span>
 ->     <span weight='bold'>Subsuite</span>
 ->       <span weight='bold'>Test3</span>
-->         errors.hello
+->         errors.hello   ***
 ->         output.hello
 ->       <span weight='bold'>Test4</span>
 ->         errors.hello
@@ -210,6 +224,20 @@ Button 'gtk-close' (Stock image 'gtk-close')
 
 'select' event created with arguments 'testsuite.hello under Subsuite'
 
+Changed selection in VCS annotate info tree with columns: File
+-> <span weight='bold'>TargetApp</span>
+->   <span weight='bold'>Suite</span>
+->     <span weight='bold'>Subsuite</span>
+->       <span weight='bold'>Test3</span>
+->         errors.hello
+->         output.hello
+->       <span weight='bold'>Test4</span>
+->         errors.hello
+->         errors.hello.ignored_by_vcs
+->         output.hello
+->       testsuite.hello   ***
+->     testsuite.hello
+
 ========== VCS Output View ==========
 6 Suite/Subsuite/testsuite.hello: # In a subsuite - other tests not added in CVS
 0 Suite/Subsuite/testsuite.hello: Test3
@@ -217,12 +245,40 @@ Button 'gtk-close' (Stock image 'gtk-close')
 
 'select' event created with arguments 'output.hello under Test3'
 
+Changed selection in VCS annotate info tree with columns: File
+-> <span weight='bold'>TargetApp</span>
+->   <span weight='bold'>Suite</span>
+->     <span weight='bold'>Subsuite</span>
+->       <span weight='bold'>Test3</span>
+->         errors.hello
+->         output.hello   ***
+->       <span weight='bold'>Test4</span>
+->         errors.hello
+->         errors.hello.ignored_by_vcs
+->         output.hello
+->       testsuite.hello
+->     testsuite.hello
+
 ========== VCS Output View ==========
 5 Suite/Subsuite/Test3/output.hello: Failure checked in!
 5 Suite/Subsuite/Test3/output.hello:
 =====================================
 
 'select' event created with arguments 'errors.hello under Test4'
+
+Changed selection in VCS annotate info tree with columns: File
+-> <span weight='bold'>TargetApp</span>
+->   <span weight='bold'>Suite</span>
+->     <span weight='bold'>Subsuite</span>
+->       <span weight='bold'>Test3</span>
+->         errors.hello
+->         output.hello
+->       <span weight='bold'>Test4</span>
+->         errors.hello   ***
+->         errors.hello.ignored_by_vcs
+->         output.hello
+->       testsuite.hello
+->     testsuite.hello
 
 ========== VCS Output View ==========
 TargetApp/Suite/Subsuite/Test4/errors.hello: No such file in rev c57d2c6473b1

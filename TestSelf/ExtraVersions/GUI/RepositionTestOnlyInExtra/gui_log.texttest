@@ -4,9 +4,9 @@ Adding entry completion 'extra1' ...
 Adding entry completion 'extra2' ...
 Adding entry completion 'localhost' ...
 Adding entry completion '1' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.31May141619.29411/texttest.gui/TestSelf/ExtraVersions/GUI/RepositionTestOnlyInExtra/log/logging.debug' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/dynamic_gui.10Aug145655.4770/texttest.gui/TestSelf/ExtraVersions/GUI/RepositionTestOnlyInExtra/log/logging.debug' ...
 Adding entry completion '/users/geoff/work/master/Testing/TextTest/log/logging.debug' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.31May141619.29411/texttest.gui/TestSelf/ExtraVersions/GUI/RepositionTestOnlyInExtra/log' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/dynamic_gui.10Aug145655.4770/texttest.gui/TestSelf/ExtraVersions/GUI/RepositionTestOnlyInExtra/log' ...
 Adding entry completion 'site' ...
 Adding entry completion 'personal' ...
 Adding entry completion 'all' ...
@@ -51,7 +51,7 @@ Button 'Filter' (Stock image 'gtk-find', accelerator 'Ctrl+F', tooltip 'filter t
 Button 'Reset Tab' (tooltip 'Reset all the settings in the current tab to their default values')
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 31May14:17:26.' , Image 'throbber_inactive.png'
+'TextTest started at 10Aug14:58:07.' , Image 'throbber_inactive.png'
 ----------------------------------------------------------------------------------
 
 Changing GUI status to: 'Reading tests ...'
@@ -76,7 +76,7 @@ Updated : Test Tree with columns: Tests: 0/6 selected, 0/4 distinct
 ->   Extra2 (black/grey90)
 Updated drop-down list in 'Test-file to search' Text entry (set to 'errors') (drop-down list containing ['errors', 'output'])
 
-Changing GUI status to: 'Reading tests completed at 31May14:17:28.'
+Changing GUI status to: 'Reading tests completed at 10Aug14:58:08.'
 
 Expected application event 'all tests to be read' occurred, proceeding.
 
@@ -84,7 +84,12 @@ Expected application event 'all tests to be read' occurred, proceeding.
 
 No longer greyed out : _Run
 
-Column titles changed in Test Tree with columns: Tests: 3/6 selected, 1/4 distinct
+Changed selection in Test Tree with columns: Tests: 3/6 selected, 1/4 distinct
+-> TargetApp (hello) (black/grey90,bold)
+->   Common (black/grey90)   ***
+->   Base (black/grey90)
+->   Extra1 (black/grey90)
+->   Extra2 (black/grey90)
 
 Current page changed in Notebook with tabs: Test , Selection , Running , Config
 Viewing page 'Test'
@@ -114,7 +119,7 @@ Adding entry completion 'errors' ...
 Updated : Test Tree with columns: Tests: 3/6 selected, 1/4 distinct
 -> TargetApp (hello) (black/grey90,bold)
 ->   Base (black/grey90)
-->   Common (black/grey90)
+->   Common (black/grey90)   ***
 ->   Extra1 (black/grey90)
 ->   Extra2 (black/grey90)
 
@@ -124,7 +129,7 @@ Changing GUI status to: 'Moved 3 tests one step down in suite.'
 
 Updated : Test Tree with columns: Tests: 3/6 selected, 1/4 distinct
 -> TargetApp (hello) (black/grey90,bold)
-->   Common (black/grey90)
+->   Common (black/grey90)   ***
 ->   Base (black/grey90)
 ->   Extra1 (black/grey90)
 ->   Extra2 (black/grey90)
@@ -136,7 +141,7 @@ Changing GUI status to: 'Moved 3 tests one step up in suite.'
 Updated : Test Tree with columns: Tests: 3/6 selected, 1/4 distinct
 -> TargetApp (hello) (black/grey90,bold)
 ->   Base (black/grey90)
-->   Common (black/grey90)
+->   Common (black/grey90)   ***
 ->   Extra1 (black/grey90)
 ->   Extra2 (black/grey90)
 
@@ -144,7 +149,12 @@ Changing GUI status to: 'Moved HELLO test-case Common to last in suite.'
 
 'set test selection to' event created with arguments 'Base'
 
-Column titles changed in Test Tree with columns: Tests: 1/6 selected, 1/4 distinct
+Changed selection in Test Tree with columns: Tests: 1/6 selected, 1/4 distinct
+-> TargetApp (hello) (black/grey90,bold)
+->   Base (black/grey90)   ***
+->   Common (black/grey90)
+->   Extra1 (black/grey90)
+->   Extra2 (black/grey90)
 
 Updated : File Tree with columns: Base
 -> Standard Files (white,bold)
@@ -166,7 +176,7 @@ Base
 Updated : Test Tree with columns: Tests: 1/6 selected, 1/4 distinct
 -> TargetApp (hello) (black/grey90,bold)
 ->   Common (black/grey90)
-->   Base (black/grey90)
+->   Base (black/grey90)   ***
 ->   Extra1 (black/grey90)
 ->   Extra2 (black/grey90)
 
@@ -179,6 +189,13 @@ Updated : File Tree with columns: Base
 Changing GUI status to: 'Moved HELLO test-case Base to last in suite.'
 
 'set test selection to' event created with arguments 'Extra1'
+
+Changed selection in Test Tree with columns: Tests: 1/6 selected, 1/4 distinct
+-> TargetApp (hello) (black/grey90,bold)
+->   Common (black/grey90)
+->   Base (black/grey90)
+->   Extra1 (black/grey90)   ***
+->   Extra2 (black/grey90)
 
 Updated : File Tree with columns: Extra1
 -> Standard Files (white,bold)
@@ -201,7 +218,7 @@ Updated : Test Tree with columns: Tests: 1/6 selected, 1/4 distinct
 -> TargetApp (hello) (black/grey90,bold)
 ->   Common (black/grey90)
 ->   Base (black/grey90)
-->   Extra1 (black/grey90)
+->   Extra1 (black/grey90)   ***
 ->   Extra2 (black/grey90)
 
 Updated : File Tree with columns: Extra1
@@ -213,6 +230,13 @@ Updated : File Tree with columns: Extra1
 Changing GUI status to: 'Moved test Extra1 one step up in suite.'
 
 'set test selection to' event created with arguments 'Extra2'
+
+Changed selection in Test Tree with columns: Tests: 1/6 selected, 1/4 distinct
+-> TargetApp (hello) (black/grey90,bold)
+->   Common (black/grey90)
+->   Base (black/grey90)
+->   Extra1 (black/grey90)
+->   Extra2 (black/grey90)   ***
 
 Updated : File Tree with columns: Extra2
 -> Standard Files (white,bold)
@@ -236,7 +260,7 @@ Updated : Test Tree with columns: Tests: 1/6 selected, 1/4 distinct
 ->   Common (black/grey90)
 ->   Base (black/grey90)
 ->   Extra1 (black/grey90)
-->   Extra2 (black/grey90)
+->   Extra2 (black/grey90)   ***
 
 Updated : File Tree with columns: Extra2
 -> Standard Files (white,bold)

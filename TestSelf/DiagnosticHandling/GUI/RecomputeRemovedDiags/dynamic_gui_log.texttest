@@ -4,7 +4,7 @@ Adding entry completion 'withdiag' ...
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
 
----------- Window 'TextTest dynamic GUI : testing DIAG (started at 18Jun16:26:52)' ----------
+---------- Window 'TextTest dynamic GUI : testing DIAG (started at 10Aug14:57:51)' ----------
 Focus widget is 'Test Tree'
 
 Menu Bar : 'File' (+) , 'View' (+) , 'Actions' (+) , 'Help' (+)
@@ -13,7 +13,7 @@ Tool Bar :
   _Quit (Stock image 'gtk-quit', accelerator 'Ctrl+Q', tooltip 'Quit')
   _Kill (Stock image 'gtk-stop', greyed out, accelerator 'Ctrl+Delete', tooltip 'Kill selected tests')
   _Save (Stock image 'gtk-save', greyed out, accelerator 'Ctrl+S', tooltip 'Save results for selected tests')
-  Progress bar set to fraction 0.0, text 'All 0 tests completed at 18Jun16:26:53'
+  Progress bar set to fraction 0.0, text 'All 0 tests completed at 10Aug14:57:54'
 ...........
 
 Showing Test Tree with columns: Tests: All 0 selected , Details
@@ -27,7 +27,7 @@ Viewing page 'Status'
 Showing Test Status View with columns: Status , Number , Visible
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 18Jun16:26:53.' , Image 'throbber_inactive.png'
+'TextTest started at 10Aug14:57:54.' , Image 'throbber_inactive.png'
 ---------------------------------------------------------------------------------------------
 
 Progress bar set to fraction 0.0, text '0 of 1 tests completed'
@@ -153,7 +153,7 @@ Updated : Test Status View with columns: Status , Number , Visible
 ->     second missing (salmon,bold) | 1 (salmon,bold) | Check box (checked)
 ->     third missing (salmon,bold) | 1 (salmon,bold) | Check box (checked)
 
-Progress bar set to fraction 1.0, text 'All 2 tests completed at 18Jun16:26:54'
+Progress bar set to fraction 1.0, text 'All 2 tests completed at 10Aug14:58:01'
 
 Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
 -> TargetApp (diag.nodiag) (black/white,bold) | (white)
@@ -179,7 +179,11 @@ Expected application event 'completion of test actions' occurred, proceeding.
 
 No longer greyed out : _Save
 
-Column titles changed in Test Tree with columns: Tests: 1/2 selected, none hidden , Details
+Changed selection in Test Tree with columns: Tests: 1/2 selected, none hidden , Details
+-> TargetApp (diag.nodiag) (black/white,bold) | (white)
+->   TestAlwaysDiag (black/DarkSeaGreen2) | first missing(+) (salmon)   ***
+-> TargetApp (diag.withdiag) (black/white,bold) | All 1 tests successful (DarkSeaGreen2)
+->   TestAlwaysDiag (black/DarkSeaGreen2) | (DarkSeaGreen2)
 
 Current page changed in Notebook with tabs: Test , Status , Selection , Run Info
 Viewing page 'Test'
@@ -237,7 +241,7 @@ Greyed out : _Save
 
 Updated : Test Tree with columns: Tests: 1/2 selected, none hidden , Details
 -> TargetApp (diag.nodiag) (black/white,bold) | All 1 tests successful (DarkSeaGreen2)
-->   TestAlwaysDiag (black/DarkSeaGreen2) | (DarkSeaGreen2)
+->   TestAlwaysDiag (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
 -> TargetApp (diag.withdiag) (black/white,bold) | All 1 tests successful (DarkSeaGreen2)
 ->   TestAlwaysDiag (black/DarkSeaGreen2) | (DarkSeaGreen2)
 
@@ -248,14 +252,18 @@ Updated : File Tree with columns: TestAlwaysDiag , Details
 
 ========== Text Info ==========
 Test succeeded
-(Saved at 16:26)
+(Saved at 14:58)
 ===============================
 
 Changing GUI status to: 'Saved 1 tests.'
 
 'set test selection to' event created with arguments 'TestAlwaysDiag under TargetApp (diag.nodiag),TestAlwaysDiag under TargetApp (diag.withdiag)'
 
-Column titles changed in Test Tree with columns: Tests: All 2 selected, none hidden , Details
+Changed selection in Test Tree with columns: Tests: All 2 selected, none hidden , Details
+-> TargetApp (diag.nodiag) (black/white,bold) | All 1 tests successful (DarkSeaGreen2)
+->   TestAlwaysDiag (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+-> TargetApp (diag.withdiag) (black/white,bold) | All 1 tests successful (DarkSeaGreen2)
+->   TestAlwaysDiag (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
 
 Column titles changed in File Tree with columns: Sample from 2 tests , Details
 
@@ -269,9 +277,9 @@ Changing GUI status to: 'Recomputing status of DIAG.nodiag test-case TestAlwaysD
 
 Updated : Test Tree with columns: Tests: All 2 selected, none hidden , Details
 -> TargetApp (diag.nodiag) (black/white,bold) | All 1 tests successful (DarkSeaGreen2)
-->   TestAlwaysDiag (black/DarkSeaGreen2) | (DarkSeaGreen2)
+->   TestAlwaysDiag (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
 -> TargetApp (diag.withdiag) (black/white,bold) | All 1 tests successful (DarkSeaGreen2)
-->   TestAlwaysDiag (black/DarkSeaGreen2) | (DarkSeaGreen2)
+->   TestAlwaysDiag (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
 
 Updated : File Tree with columns: Sample from 2 tests , Details
 -> Comparison Files (bold)
@@ -288,9 +296,9 @@ No longer greyed out : _Save
 
 Updated : Test Tree with columns: Tests: All 2 selected, none hidden , Details
 -> TargetApp (diag.nodiag) (black/white,bold) | All 1 tests successful (DarkSeaGreen2)
-->   TestAlwaysDiag (black/DarkSeaGreen2) | (DarkSeaGreen2)
+->   TestAlwaysDiag (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
 -> TargetApp (diag.withdiag) (black/white,bold) | All 1 tests successful (DarkSeaGreen2)
-->   TestAlwaysDiag (black/DarkSeaGreen2) | first new(+) (salmon)
+->   TestAlwaysDiag (black/DarkSeaGreen2) | first new(+) (salmon)   ***
 
 Changing GUI status to: 'Recomputed status of 2 tests.'
 

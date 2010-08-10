@@ -3,7 +3,7 @@ Adding entry completion '<default>' ...
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
 
----------- Window 'TextTest dynamic GUI : testing HELLO (started at 02Aug15:48:46)' ----------
+---------- Window 'TextTest dynamic GUI : testing HELLO (started at 10Aug16:39:41)' ----------
 Focus widget is 'Test Tree'
 
 Menu Bar : 'File' (+) , 'View' (+) , 'Actions' (+) , 'Help' (+)
@@ -12,7 +12,7 @@ Tool Bar :
   _Quit (Stock image 'gtk-quit', accelerator 'Ctrl+Q', tooltip 'Quit')
   _Kill (Stock image 'gtk-stop', greyed out, accelerator 'Ctrl+Delete', tooltip 'Kill selected tests')
   _Save (Stock image 'gtk-save', greyed out, accelerator 'Ctrl+S', tooltip 'Save results for selected tests')
-  Progress bar set to fraction 0.0, text 'All 0 tests completed at 02Aug15:48:49'
+  Progress bar set to fraction 0.0, text 'All 0 tests completed at 10Aug16:39:45'
 ...........
 
 Showing Test Tree with columns: Tests: All 0 selected , Details
@@ -26,7 +26,7 @@ Viewing page 'Status'
 Showing Test Status View with columns: Status , Number , Visible
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 02Aug15:48:49.' , Image 'throbber_inactive.png'
+'TextTest started at 10Aug16:39:45.' , Image 'throbber_inactive.png'
 ----------------------------------------------------------------------------------------------
 
 Progress bar set to fraction 0.0, text '0 of 1 tests completed'
@@ -62,7 +62,9 @@ Expected application event 'test Test to start' occurred, proceeding.
 
 No longer greyed out : _Kill
 
-Column titles changed in Test Tree with columns: Tests: All 1 selected, none hidden , Details
+Changed selection in Test Tree with columns: Tests: All 1 selected, none hidden , Details
+-> TargetApp (hello) (black/white,bold) | (white)
+->   Test (black/LightGoldenrod1) | (LightGoldenrod1)   ***
 
 Current page changed in Notebook with tabs: Test , Status , Selection , Run Info
 Viewing page 'Test'
@@ -103,7 +105,7 @@ Changing GUI status to: 'Recomputing status of HELLO test-case Test ...'
 
 Updated : Test Tree with columns: Tests: All 1 selected, none hidden , Details
 -> TargetApp (hello) (black/white,bold) | (white)
-->   Test (black/LightGoldenrod1) | (LightGoldenrod1)
+->   Test (black/LightGoldenrod1) | (LightGoldenrod1)   ***
 
 Updated : File Tree with columns: Test , Details
 -> Comparison Files (bold)
@@ -114,7 +116,7 @@ Updated : File Tree with columns: Test , Details
 
 ========== Text Info ==========
 Running on testnet-s16
-Reckoned to be 183% complete by comparing total file sizes at 02Aug15:48:50.
+Reckoned to be 183% complete by comparing total file sizes at 10Aug16:39:49.
 
 To obtain the latest progress information and an up-to-date comparison of the files above, perform 'recompute status' (press 'F5')
 ===============================
@@ -122,6 +124,13 @@ To obtain the latest progress information and an up-to-date comparison of the fi
 Changing GUI status to: 'Recomputed status of 1 test.'
 
 'view actions for file' event created with arguments 'extra.hello'
+
+Changed selection in File Tree with columns: Test , Details
+-> Comparison Files (bold)
+->   errors.hello (LightGoldenrod1) | (LightGoldenrod1)
+->   output.hello (LightGoldenrod1) | (LightGoldenrod1)
+-> New Files (bold)
+->   extra.hello (LightGoldenrod1) | (LightGoldenrod1)   ***
 
 ---------- Popup Window ----------
 'View File' (Stock image 'gtk-open', accelerator 'Ctrl+O')
@@ -144,22 +153,28 @@ Changing GUI status to: 'Recomputed status of 1 test.'
 ----------------------------------
 
 'follow file progress' event created with arguments ''
-Following file /carm/proj/texttest-tmp/geoff/texttest.gui.02Aug154841.24014/texttest.gui/TestSelf/RunRemotely/DifferentFilesystems/RetrieveFiles/GUI/FollowFilesRemotely/texttesttmp/dynamic_gui.02Aug154846.24024/hello/Test/extra.hello using 'xterm -bg white -T "File extra.hello from test Test" -e tail -f'
 
 Waiting for application event 'the file-following program to terminate' to occur.
 
 Changing GUI status to: 'Started "xterm -bg white -T "File extra.hello from test Test" -e tail -f extra.hello" in background (from test Test).'
 
+Changed selection in File Tree with columns: Test , Details
+-> Comparison Files (bold)
+->   errors.hello (LightGoldenrod1) | (LightGoldenrod1)
+->   output.hello (LightGoldenrod1) | (LightGoldenrod1)
+-> New Files (bold)
+->   extra.hello (LightGoldenrod1) | (LightGoldenrod1)
+
 Expected application event 'the file-following program to terminate' occurred, proceeding.
 
 'quit' event created with arguments ''
-Killing running test (process id 24041)
+Killing running test (process id 18289)
 
 Changing GUI status to: 'Waiting for all tests to terminate ...'
 
 Updated : Test Tree with columns: Tests: All 1 selected, none hidden , Details
 -> TargetApp (hello) (black/white,bold) | (white)
-->   Test (black/LightGoldenrod1) | (LightGoldenrod1)
+->   Test (black/LightGoldenrod1) | (LightGoldenrod1)   ***
 
 Updated : File Tree with columns: Test , Details
 -> Temporary Files (bold)
@@ -177,11 +192,11 @@ To obtain the latest progress information and an up-to-date comparison of the fi
 Greyed out : _Kill
 No longer greyed out : _Save
 
-Progress bar set to fraction 1.0, text 'All 1 tests completed at 02Aug15:48:51'
+Progress bar set to fraction 1.0, text 'All 1 tests completed at 10Aug16:39:50'
 
 Updated : Test Tree with columns: Tests: All 1 selected, none hidden , Details
 -> TargetApp (hello) (black/white,bold) | (white)
-->   Test (black/salmon) | KILLED (salmon)
+->   Test (black/salmon) | KILLED (salmon)   ***
 
 Updated : File Tree with columns: Test , Details
 -> Comparison Files (bold)
@@ -193,7 +208,7 @@ Updated : File Tree with columns: Test , Details
 
 ========== Text Info ==========
 Test were terminated before completion (KILLED) on testnet-s16 :
-Test killed explicitly at 15:48
+Test killed explicitly at 16:39
 ---------- Differences in output ----------
 1c1
 < Hello
@@ -204,4 +219,3 @@ extra
 ---------- New result in localfile ----------
 local
 ===============================
-Only one test found, selecting Test

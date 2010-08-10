@@ -4,7 +4,7 @@ Adding entry completion '4' ...
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
 
----------- Window 'TextTest dynamic GUI : testing HELLO (started at 18Jun16:26:46)' ----------
+---------- Window 'TextTest dynamic GUI : testing HELLO (started at 10Aug14:57:35)' ----------
 Focus widget is 'Test Tree'
 
 Menu Bar : 'File' (+) , 'View' (+) , 'Actions' (+) , 'Help' (+)
@@ -13,7 +13,7 @@ Tool Bar :
   _Quit (Stock image 'gtk-quit', accelerator 'Ctrl+Q', tooltip 'Quit')
   _Kill (Stock image 'gtk-stop', greyed out, accelerator 'Ctrl+Delete', tooltip 'Kill selected tests')
   _Save (Stock image 'gtk-save', greyed out, accelerator 'Ctrl+S', tooltip 'Save results for selected tests')
-  Progress bar set to fraction 0.0, text 'All 0 tests completed at 18Jun16:26:47'
+  Progress bar set to fraction 0.0, text 'All 0 tests completed at 10Aug14:57:39'
 ...........
 
 Showing Test Tree with columns: Tests: All 0 selected , Details
@@ -27,7 +27,7 @@ Viewing page 'Status'
 Showing Test Status View with columns: Status , Number , Visible
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 18Jun16:26:47.' , Image 'throbber_inactive.png'
+'TextTest started at 10Aug14:57:39.' , Image 'throbber_inactive.png'
 ----------------------------------------------------------------------------------------------
 
 Progress bar set to fraction 0.0, text '0 of 1 tests completed'
@@ -145,7 +145,7 @@ Updated : Test Status View with columns: Status , Number , Visible
 ->   Differences (salmon,bold) | 1 (salmon,bold) | Check box (checked)
 ->     output different (salmon,bold) | 1 (salmon,bold) | Check box (checked)
 
-Progress bar set to fraction 1.0, text 'All 2 tests completed at 18Jun16:26:47'
+Progress bar set to fraction 1.0, text 'All 2 tests completed at 10Aug14:57:40'
 
 Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
 -> TargetApp (hello.2) (black/white,bold) | (white)
@@ -169,7 +169,11 @@ Expected application event 'completion of test actions' occurred, proceeding.
 
 No longer greyed out : _Save
 
-Column titles changed in Test Tree with columns: Tests: All 2 selected, none hidden , Details
+Changed selection in Test Tree with columns: Tests: All 2 selected, none hidden , Details
+-> TargetApp (hello.2) (black/white,bold) | (white)
+->   OutDiff (black/salmon) | output different (salmon)   ***
+-> TargetApp (hello.4) (black/white,bold) | (white)
+->   OutDiff (black/salmon) | output different (salmon)   ***
 
 Current page changed in Notebook with tabs: Test , Status , Selection , Run Info
 Viewing page 'Test'
@@ -196,9 +200,9 @@ Changing GUI status to: 'Saving HELLO.2 test-case OutDiff : output, version 2'
 
 Updated : Test Tree with columns: Tests: All 2 selected, none hidden , Details
 -> TargetApp (hello.2) (black/white,bold) | All 1 tests successful (DarkSeaGreen2)
-->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)
+->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
 -> TargetApp (hello.4) (black/white,bold) | (white)
-->   OutDiff (black/salmon) | output different (salmon)
+->   OutDiff (black/salmon) | output different (salmon)   ***
 
 Updated : File Tree with columns: Sample from 2 tests , Details
 -> Comparison Files (bold)
@@ -207,7 +211,7 @@ Updated : File Tree with columns: Sample from 2 tests , Details
 
 ========== Text Info ==========
 Test succeeded
-(Saved at 16:26)
+(Saved at 14:57)
 ===============================
 
 Changing GUI status to: 'Saving HELLO.4 test-case OutDiff : output, version 4'
@@ -216,15 +220,19 @@ Greyed out : _Save
 
 Updated : Test Tree with columns: Tests: All 2 selected, none hidden , Details
 -> TargetApp (hello.2) (black/white,bold) | All 1 tests successful (DarkSeaGreen2)
-->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)
+->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
 -> TargetApp (hello.4) (black/white,bold) | All 1 tests successful (DarkSeaGreen2)
-->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)
+->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
 
 Changing GUI status to: 'Saved 2 tests.'
 
 'set test selection to' event created with arguments 'OutDiff under TargetApp (hello.4)'
 
-Column titles changed in Test Tree with columns: Tests: 1/2 selected, none hidden , Details
+Changed selection in Test Tree with columns: Tests: 1/2 selected, none hidden , Details
+-> TargetApp (hello.2) (black/white,bold) | All 1 tests successful (DarkSeaGreen2)
+->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)
+-> TargetApp (hello.4) (black/white,bold) | All 1 tests successful (DarkSeaGreen2)
+->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
 
 Updated : File Tree with columns: OutDiff , Details
 -> Comparison Files (bold)
@@ -233,7 +241,7 @@ Updated : File Tree with columns: OutDiff , Details
 
 ========== Text Info ==========
 Test succeeded
-(Saved at 16:26)
+(Saved at 14:57)
 ===============================
 
 'quit' event created with arguments ''

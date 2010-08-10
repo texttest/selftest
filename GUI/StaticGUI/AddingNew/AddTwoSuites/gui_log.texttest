@@ -2,9 +2,9 @@ Enabling entry completion, using matching 1
 Adding entry completion '<default>' ...
 Adding entry completion 'localhost' ...
 Adding entry completion '1' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.31May141619.29411/texttest.gui/GUI/StaticGUI/AddingNew/AddTwoSuites/log/logging.debug' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/dynamic_gui.10Aug163734.12802/texttest.gui/GUI/StaticGUI/AddingNew/AddTwoSuites/log/logging.debug' ...
 Adding entry completion '/users/geoff/work/master/Testing/TextTest/log/logging.debug' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.31May141619.29411/texttest.gui/GUI/StaticGUI/AddingNew/AddTwoSuites/log' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/dynamic_gui.10Aug163734.12802/texttest.gui/GUI/StaticGUI/AddingNew/AddTwoSuites/log' ...
 Adding entry completion 'site' ...
 Adding entry completion 'personal' ...
 Adding entry completion 'all' ...
@@ -49,7 +49,7 @@ Button 'Filter' (Stock image 'gtk-find', accelerator 'Ctrl+F', tooltip 'filter t
 Button 'Reset Tab' (tooltip 'Reset all the settings in the current tab to their default values')
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 31May14:17:39.' , Image 'throbber_inactive.png'
+'TextTest started at 10Aug16:40:17.' , Image 'throbber_inactive.png'
 --------------------------------------------------------------------------------
 
 Changing GUI status to: 'Reading tests ...'
@@ -94,7 +94,7 @@ Updated : Test Tree with columns: Tests: 0/11 selected
 ->       S01 (black/grey90)
 Updated drop-down list in 'Test-file to search' Text entry (set to 'output') (drop-down list containing ['output'])
 
-Changing GUI status to: 'Reading tests completed at 31May14:17:40.'
+Changing GUI status to: 'Reading tests completed at 10Aug16:40:18.'
 
 Expected application event 'all tests to be read' occurred, proceeding.
 
@@ -102,7 +102,22 @@ Expected application event 'all tests to be read' occurred, proceeding.
 
 No longer greyed out : _Run
 
-Column titles changed in Test Tree with columns: Tests: 1 suite selected
+Changed selection in Test Tree with columns: Tests: 1 suite selected
+-> TargetApp (dip) (black/grey90,bold)
+->   Game9952 (black/grey90,bold)
+->     S01.99 (black/grey90)
+->     A01 (black/grey90)
+->     S02 (black/grey90)
+->     A02 (black/grey90)
+->     S03 (black/grey90)
+->     A03 (black/grey90)
+->     S04 (black/grey90)
+->     A04 (black/grey90)
+->     S05 (black/grey90)
+->     A05 (black/grey90)
+->   npstIII (black/grey90,bold)   ***
+->     Game47 (black/grey90,bold)
+->       S01 (black/grey90)
 
 Current page changed in Notebook with tabs: Test , Selection , Running , Config
 Viewing page 'Test'
@@ -157,7 +172,6 @@ Fake, really
 =======================================
 
 'press ok' event created with arguments ''
-Marking 1 tests as selected
 Adding entry completion 'output' ...
 
 Updated : Test Tree with columns: Tests: 1 suite selected
@@ -176,7 +190,7 @@ Updated : Test Tree with columns: Tests: 1 suite selected
 ->   npstIII (black/grey90,bold)
 ->     Game47 (black/grey90,bold)
 ->       S01 (black/grey90)
-->     Game106 (black/grey90,bold)
+->     Game106 (black/grey90,bold)   ***
 
 Updated : File Tree with columns: Game106
 -> Definition Files (white,bold)
@@ -194,7 +208,6 @@ npstIII/Game106
 Changing GUI status to: 'Added new DIP test-suite Game106'
 
 'select file' event created with arguments 'testsuite.dip'
-Viewing file /carm/proj/texttest-tmp/geoff/texttest.31May141619.29411/texttest.gui/GUI/StaticGUI/AddingNew/AddTwoSuites/TargetApp/npstIII/Game106/testsuite.dip using 'emacs', refresh set to True
 
 Waiting for application event 'file editing operations to complete' to occur.
 
@@ -237,7 +250,6 @@ Start
 ======================================
 
 'press ok' event created with arguments ''
-Marking 1 tests as selected
 Adding entry completion 'S01new' ...
 
 Updated : Test Tree with columns: Tests: 1/12 selected
@@ -257,7 +269,7 @@ Updated : Test Tree with columns: Tests: 1/12 selected
 ->     Game47 (black/grey90,bold)
 ->       S01 (black/grey90)
 ->     Game106 (black/grey90,bold)
-->       S01new (black/grey90)
+->       S01new (black/grey90)   ***
 
 Updated : File Tree with columns: S01new
 -> Standard Files (white)
@@ -276,7 +288,24 @@ Changing GUI status to: 'Added new DIP test-case S01new'
 
 'set test selection to' event created with arguments 'npstIII'
 
-Column titles changed in Test Tree with columns: Tests: 1 suite selected
+Changed selection in Test Tree with columns: Tests: 1 suite selected
+-> TargetApp (dip) (black/grey90,bold)
+->   Game9952 (black/grey90,bold)
+->     S01.99 (black/grey90)
+->     A01 (black/grey90)
+->     S02 (black/grey90)
+->     A02 (black/grey90)
+->     S03 (black/grey90)
+->     A03 (black/grey90)
+->     S04 (black/grey90)
+->     A04 (black/grey90)
+->     S05 (black/grey90)
+->     A05 (black/grey90)
+->   npstIII (black/grey90,bold)   ***
+->     Game47 (black/grey90,bold)
+->       S01 (black/grey90)
+->     Game106 (black/grey90,bold)
+->       S01new (black/grey90)
 
 Updated : File Tree with columns: npstIII
 -> Definition Files (white,bold)
@@ -322,7 +351,6 @@ Fake, really
 =======================================
 
 'press ok' event created with arguments ''
-Marking 1 tests as selected
 
 Updated : Test Tree with columns: Tests: 1 suite selected
 -> TargetApp (dip) (black/grey90,bold)
@@ -342,7 +370,7 @@ Updated : Test Tree with columns: Tests: 1 suite selected
 ->       S01 (black/grey90)
 ->     Game106 (black/grey90,bold)
 ->       S01new (black/grey90)
-->     Game107 (black/grey90,bold)
+->     Game107 (black/grey90,bold)   ***
 
 Updated : File Tree with columns: Game107
 -> Definition Files (white,bold)

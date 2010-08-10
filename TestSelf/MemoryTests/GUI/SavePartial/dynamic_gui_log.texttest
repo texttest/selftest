@@ -3,7 +3,7 @@ Adding entry completion 'nomemfile' ...
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
 
----------- Window 'TextTest dynamic GUI : testing MEM.nomemfile (started at 31May16:33:16)' ----------
+---------- Window 'TextTest dynamic GUI : testing MEM.nomemfile (started at 10Aug14:57:51)' ----------
 Focus widget is 'Test Tree'
 
 Menu Bar : 'File' (+) , 'View' (+) , 'Actions' (+) , 'Help' (+)
@@ -12,7 +12,7 @@ Tool Bar :
   _Quit (Stock image 'gtk-quit', accelerator 'Ctrl+Q', tooltip 'Quit')
   _Kill (Stock image 'gtk-stop', greyed out, accelerator 'Ctrl+Delete', tooltip 'Kill selected tests')
   _Save (Stock image 'gtk-save', greyed out, accelerator 'Ctrl+S', tooltip 'Save results for selected tests')
-  Progress bar set to fraction 0.0, text 'All 0 tests completed at 31May16:33:18'
+  Progress bar set to fraction 0.0, text 'All 0 tests completed at 10Aug14:57:55'
 ...........
 
 Showing Test Tree with columns: Tests: All 0 selected , Details
@@ -26,7 +26,7 @@ Viewing page 'Status'
 Showing Test Status View with columns: Status , Number , Visible
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 31May16:33:18.' , Image 'throbber_inactive.png'
+'TextTest started at 10Aug14:57:55.' , Image 'throbber_inactive.png'
 ----------------------------------------------------------------------------------------------------
 
 Progress bar set to fraction 0.0, text '0 of 1 tests completed'
@@ -65,7 +65,7 @@ Updated : Test Status View with columns: Status , Number , Visible
 -> Running (white) | 0 (white) | Check box (checked)
 -> Final filter (LightGoldenrod1,bold) | 1 (LightGoldenrod1,bold) | Check box (checked)
 
-Progress bar set to fraction 1.0, text 'All 1 tests completed at 31May16:33:19'
+Progress bar set to fraction 1.0, text 'All 1 tests completed at 10Aug14:57:56'
 
 Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
 -> TargetApp (mem.nomemfile) (black/white,bold) | (white)
@@ -81,11 +81,12 @@ Updated : Test Status View with columns: Status , Number , Visible
 ->     output new (salmon,bold) | 1 (salmon,bold) | Check box (checked)
 ->   Performance differences (salmon,bold) | 1 (salmon,bold) | Check box (checked)
 ->     Memory+ (salmon,bold) | 1 (salmon,bold) | Check box (checked)
-Only one test found, selecting NoOutputFile
 
 No longer greyed out : _Save
 
-Column titles changed in Test Tree with columns: Tests: All 1 selected, none hidden , Details
+Changed selection in Test Tree with columns: Tests: All 1 selected, none hidden , Details
+-> TargetApp (mem.nomemfile) (black/white,bold) | (white)
+->   NoOutputFile (black/salmon) | output new(+) (salmon)   ***
 
 Current page changed in Notebook with tabs: Test , Status , Selection , Run Info
 Viewing page 'Test'
@@ -115,6 +116,12 @@ Expected application event 'completion of test actions' occurred, proceeding.
 
 'set file selection to' event created with arguments 'memory.mem'
 
+Changed selection in File Tree with columns: NoOutputFile , Details
+-> Comparison Files (bold)
+->   memory.mem (salmon) | 13% larger (salmon)   ***
+-> New Files (bold)
+->   output.mem (salmon) | (salmon)
+
 ========== Text Info ==========
 Test FAILED :
 ---------- Differences in memory(larger) ----------
@@ -130,7 +137,7 @@ Changing GUI status to: 'Saving MEM.nomemfile test-case NoOutputFile : memory(la
 
 Updated : Test Tree with columns: Tests: All 1 selected, none hidden , Details
 -> TargetApp (mem.nomemfile) (black/white,bold) | (white)
-->   NoOutputFile (black/salmon) | output new (salmon)
+->   NoOutputFile (black/salmon) | output new (salmon)   ***
 
 Updated : File Tree with columns: NoOutputFile , Details
 -> Comparison Files (bold)

@@ -3,7 +3,7 @@ Adding entry completion '<default>' ...
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
 
----------- Window 'TextTest dynamic GUI : testing HELLO (started at 31May14:17:07)' ----------
+---------- Window 'TextTest dynamic GUI : testing HELLO (started at 10Aug16:39:17)' ----------
 Focus widget is 'Test Tree'
 
 Menu Bar : 'File' (+) , 'View' (+) , 'Actions' (+) , 'Help' (+)
@@ -12,7 +12,7 @@ Tool Bar :
   _Quit (Stock image 'gtk-quit', accelerator 'Ctrl+Q', tooltip 'Quit')
   _Kill (Stock image 'gtk-stop', greyed out, accelerator 'Ctrl+Delete', tooltip 'Kill selected tests')
   _Save (Stock image 'gtk-save', greyed out, accelerator 'Ctrl+S', tooltip 'Save results for selected tests')
-  Progress bar set to fraction 0.0, text 'All 0 tests completed at 31May14:17:09'
+  Progress bar set to fraction 0.0, text 'All 0 tests completed at 10Aug16:39:20'
 ...........
 
 Showing Test Tree with columns: Tests: All 0 selected , Details
@@ -26,7 +26,7 @@ Viewing page 'Status'
 Showing Test Status View with columns: Status , Number , Visible
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 31May14:17:09.' , Image 'throbber_inactive.png'
+'TextTest started at 10Aug16:39:20.' , Image 'throbber_inactive.png'
 ----------------------------------------------------------------------------------------------
 
 Progress bar set to fraction 0.0, text '0 of 1 tests completed'
@@ -360,7 +360,7 @@ Updated : Test Status View with columns: Status , Number , Visible
 ->     errors different (salmon,bold) | 1 (salmon,bold) | Check box (checked)
 ->     output different (salmon,bold) | 1 (salmon,bold) | Check box (checked)
 
-Progress bar set to fraction 1.0, text 'All 4 tests completed at 31May14:17:11'
+Progress bar set to fraction 1.0, text 'All 4 tests completed at 10Aug16:39:22'
 
 Updated : Test Tree with columns: Tests: 0/4 selected, none hidden , Details
 -> TargetApp (hello) (black/white,bold) | (white)
@@ -416,12 +416,16 @@ Adding entry completion 'Differences in' ...
 Adding entry completion 'free_text' ...
 
 Changing GUI status to: 'Selecting tests ...'
-Selected 2 out of a possible 4
-Marking 2 tests as selected
 
 No longer greyed out : _Save
 
-Column titles changed in Test Tree with columns: Tests: 2/4 selected, none hidden , Details
+Changed selection in Test Tree with columns: Tests: 2/4 selected, none hidden , Details
+-> TargetApp (hello) (black/white,bold) | (white)
+->   Suite1 (black/white,bold) | (white)
+->     One1 (black/DarkSeaGreen2) | (DarkSeaGreen2)
+->     Two (black/salmon) | output different (salmon)   ***
+->     Three (black/salmon) | errors different (salmon)   ***
+->   Super (black/white,bold) | All 1 tests successful (DarkSeaGreen2)
 
 Child visibility changed in Notebook with tabs: Test , Status , Selection , Run Info
 

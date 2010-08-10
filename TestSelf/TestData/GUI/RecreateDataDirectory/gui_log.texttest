@@ -2,9 +2,9 @@ Enabling entry completion, using matching 1
 Adding entry completion '<default>' ...
 Adding entry completion 'localhost' ...
 Adding entry completion '1' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.31May141619.29411/texttest.gui/TestSelf/TestData/GUI/RecreateDataDirectory/log/logging.debug' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/dynamic_gui.10Aug163734.12802/texttest.gui/TestSelf/TestData/GUI/RecreateDataDirectory/log/logging.debug' ...
 Adding entry completion '/users/geoff/work/master/Testing/TextTest/log/logging.debug' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.31May141619.29411/texttest.gui/TestSelf/TestData/GUI/RecreateDataDirectory/log' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/dynamic_gui.10Aug163734.12802/texttest.gui/TestSelf/TestData/GUI/RecreateDataDirectory/log' ...
 Adding entry completion 'site' ...
 Adding entry completion 'personal' ...
 Adding entry completion 'all' ...
@@ -49,7 +49,7 @@ Button 'Filter' (Stock image 'gtk-find', accelerator 'Ctrl+F', tooltip 'filter t
 Button 'Reset Tab' (tooltip 'Reset all the settings in the current tab to their default values')
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 31May14:17:15.' , Image 'throbber_inactive.png'
+'TextTest started at 10Aug16:39:36.' , Image 'throbber_inactive.png'
 ---------------------------------------------------------------------------------
 
 Changing GUI status to: 'Reading tests ...'
@@ -64,7 +64,7 @@ Updated : Test Tree with columns: Tests: 0/2 selected
 ->   Test2 (black/grey90)
 Updated drop-down list in 'Test-file to search' Text entry (set to 'environment') (drop-down list containing ['environment', 'options', '----------', 'catalogue', 'errors', 'output'])
 
-Changing GUI status to: 'Reading tests completed at 31May14:17:16.'
+Changing GUI status to: 'Reading tests completed at 10Aug16:39:36.'
 
 Expected application event 'all tests to be read' occurred, proceeding.
 
@@ -72,7 +72,10 @@ Expected application event 'all tests to be read' occurred, proceeding.
 
 No longer greyed out : _Run
 
-Column titles changed in Test Tree with columns: Tests: 1/2 selected
+Changed selection in Test Tree with columns: Tests: 1/2 selected
+-> TargetApp (tdat) (black/grey90,bold)
+->   Test1 (black/grey90)   ***
+->   Test2 (black/grey90)
 
 Current page changed in Notebook with tabs: Test , Selection , Running , Config
 Viewing page 'Test'
@@ -138,6 +141,52 @@ Test1
 
 'set file selection to' event created with arguments 'Data Files'
 
+Changed selection in File Tree with columns: Test1
+-> Standard Files (white,bold)
+->   catalogue.tdat (grey90)
+->   errors.tdat (grey90)
+->   output.tdat (grey90)
+-> Definition Files (white,bold)
+->   options.tdat (grey90)
+-> Data Files (white,bold)   ***
+->   readonlyfile (grey90)
+->   writeabledirs (grey90,bold)
+->     otherreadfile (grey90)
+->     readfile (grey90)
+->     toRemove (grey90)
+->     otherdir (grey90,bold)
+->       toRemove (grey90)
+->       writehere (grey90,bold)
+->         readfile (grey90)
+->     readdir (grey90,bold)
+->       otherdir (grey90,bold)
+->         readfile (grey90)
+->       somedir (grey90,bold)
+->         readfile (grey90)
+->     somedir (grey90,bold)
+->       toEdit (grey90)
+->     writehere (grey90,bold)
+->       readfile (grey90)
+->       writeandremovehere (grey90,bold)
+->         readfile (grey90)
+->   writeabledirs.version (grey90,bold)
+->     otherreadfile (grey90)
+->     readfile (grey90)
+->     toRemove (grey90)
+->     otherdir (grey90,bold)
+->       toRemove (grey90)
+->       writehere (grey90,bold)
+->         readfile (grey90)
+->     readdir (grey90,bold)
+->       otherdir (grey90,bold)
+->         readfile (grey90)
+->       somedir (grey90,bold)
+->         readfile (grey90)
+->     writehere (grey90,bold)
+->       readfile (grey90)
+->       writeandremovehere (grey90,bold)
+->         readfile (grey90)
+
 'create a new file or directory, possibly by copying it' event created with arguments ''
 Adding text '<b><u>Create or import files in the test directory</u></b>'
 Adding text '<i>(Test is TDAT test-case Test1)</i>'
@@ -160,9 +209,9 @@ Radio button 'Create a new file'
 Radio button 'Create a new directory'
 .....'Source to copy from:'......
 
-Showing Source File Chooser (selected '/carm/proj/texttest-tmp/geoff/texttest.31May141619.29411/texttest.gui/TestSelf/TestData/GUI/RecreateDataDirectory/TargetApp/readonlyfile')
+Showing Source File Chooser (selected '/carm/proj/texttest-tmp/geoff/dynamic_gui.10Aug163734.12802/texttest.gui/TestSelf/TestData/GUI/RecreateDataDirectory/TargetApp/readonlyfile')
 Shortcut folders (1) :
-- /carm/proj/texttest-tmp/geoff/texttest.31May141619.29411/texttest.gui/TestSelf/TestData/GUI/RecreateDataDirectory/TargetApp
+- /carm/proj/texttest-tmp/geoff/dynamic_gui.10Aug163734.12802/texttest.gui/TestSelf/TestData/GUI/RecreateDataDirectory/TargetApp
 ---------------
 Button 'gtk-ok' (Stock image 'gtk-ok') , Button 'gtk-cancel' (Stock image 'gtk-cancel')
 ------------------------------------------------------------------
@@ -170,14 +219,13 @@ Button 'gtk-ok' (Stock image 'gtk-ok') , Button 'gtk-cancel' (Stock image 'gtk-c
 'enter type of file/directory to create =' event created with arguments 'writeabledirs'
 Edited 'Type of file/directory to create' Text entry (set to 'writeabledirs')
 
-Updated : Source File Chooser (selected '/carm/proj/texttest-tmp/geoff/texttest.31May141619.29411/texttest.gui/TestSelf/TestData/GUI/RecreateDataDirectory/TargetApp/Test1')
+Updated : Source File Chooser (selected '/carm/proj/texttest-tmp/geoff/dynamic_gui.10Aug163734.12802/texttest.gui/TestSelf/TestData/GUI/RecreateDataDirectory/TargetApp/Test1')
 
 'select source to copy from =' event created with arguments 'Test2'
 
-Updated : Source File Chooser (selected '/carm/proj/texttest-tmp/geoff/texttest.31May141619.29411/texttest.gui/TestSelf/TestData/GUI/RecreateDataDirectory/TargetApp/Test2')
+Updated : Source File Chooser (selected '/carm/proj/texttest-tmp/geoff/dynamic_gui.10Aug163734.12802/texttest.gui/TestSelf/TestData/GUI/RecreateDataDirectory/TargetApp/Test2')
 
 'press create' event created with arguments ''
-Creating new path, copying /carm/proj/texttest-tmp/geoff/texttest.31May141619.29411/texttest.gui/TestSelf/TestData/GUI/RecreateDataDirectory/TargetApp/Test2
 Adding entry completion 'environment' ...
 
 Updated : File Tree with columns: Test1
@@ -187,7 +235,7 @@ Updated : File Tree with columns: Test1
 ->   output.tdat (grey90)
 -> Definition Files (white,bold)
 ->   options.tdat (grey90)
--> Data Files (white,bold)
+-> Data Files (white,bold)   ***
 ->   readonlyfile (grey90)
 ->   writeabledirs (grey90,bold)
 ->     catalogue.tdat (grey90)

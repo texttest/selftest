@@ -3,7 +3,7 @@ Adding entry completion '<default>' ...
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
 
----------- Window 'TextTest dynamic GUI : testing HELLO (started at 26May13:51:29)' ----------
+---------- Window 'TextTest dynamic GUI : testing HELLO (started at 10Aug14:57:25)' ----------
 Focus widget is 'Test Tree'
 
 Menu Bar : 'File' (+) , 'View' (+) , 'Actions' (+) , 'CVS' (+) , 'Help' (+)
@@ -12,7 +12,7 @@ Tool Bar :
   _Quit (Stock image 'gtk-quit', accelerator 'Ctrl+Q', tooltip 'Quit')
   _Kill (Stock image 'gtk-stop', greyed out, accelerator 'Ctrl+Delete', tooltip 'Kill selected tests')
   _Save (Stock image 'gtk-save', greyed out, accelerator 'Ctrl+S', tooltip 'Save results for selected tests')
-  Progress bar set to fraction 0.0, text 'All 0 tests completed at 26May13:51:30'
+  Progress bar set to fraction 0.0, text 'All 0 tests completed at 10Aug14:57:29'
 ...........
 
 Showing Test Tree with columns: Tests: All 0 selected , Details
@@ -26,7 +26,7 @@ Viewing page 'Status'
 Showing Test Status View with columns: Status , Number , Visible
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 26May13:51:30.' , Image 'throbber_inactive.png'
+'TextTest started at 10Aug14:57:29.' , Image 'throbber_inactive.png'
 ----------------------------------------------------------------------------------------------
 
 Progress bar set to fraction 0.0, text '0 of 1 tests completed'
@@ -62,7 +62,9 @@ Expected application event 'test Test1 to start' occurred, proceeding.
 
 No longer greyed out : _Kill
 
-Column titles changed in Test Tree with columns: Tests: All 1 selected, none hidden , Details
+Changed selection in Test Tree with columns: Tests: All 1 selected, none hidden , Details
+-> TargetApp (hello) (black/white,bold) | (white)
+->   Test1 (black/LightGoldenrod1) | (LightGoldenrod1)   ***
 
 Current page changed in Notebook with tabs: Test , Status , Selection , Run Info
 Viewing page 'Test'
@@ -77,7 +79,7 @@ Showing File Tree with columns: Test1 , Details
 ...........
 
 ========== Text Info ==========
-Running on novyy
+Running on kisaumi
 
 To obtain the latest progress information and an up-to-date comparison of the files above, perform 'recompute status' (press 'F5')
 ===============================
@@ -105,7 +107,7 @@ Changing GUI status to: 'Recomputing status of HELLO test-case Test1 ...'
 
 Updated : Test Tree with columns: Tests: All 1 selected, none hidden , Details
 -> TargetApp (hello) (black/white,bold) | (white)
-->   Test1 (black/LightGoldenrod1) | (LightGoldenrod1)
+->   Test1 (black/LightGoldenrod1) | (LightGoldenrod1)   ***
 
 Updated : File Tree with columns: Test1 , Details
 -> Comparison Files (bold)
@@ -113,8 +115,8 @@ Updated : File Tree with columns: Test1 , Details
 ->   output.hello (LightGoldenrod1) | (LightGoldenrod1)
 
 ========== Text Info ==========
-Running on novyy
-Reckoned to be 0% complete by comparing total file sizes at 26May13:51:32.
+Running on kisaumi
+Reckoned to be 0% complete by comparing total file sizes at 10Aug14:57:30.
 
 To obtain the latest progress information and an up-to-date comparison of the files above, perform 'recompute status' (press 'F5')
 ===============================
@@ -139,7 +141,7 @@ Subdirectories were ignored, use CVS Status Recursive to get the status for all 
 Showing VCS status info tree with columns: File , Information
 -> <span weight='bold'>TargetApp</span>
 ->   <span weight='bold'>Test1</span>
-->     errors.hello | <span weight='bold' foreground='red'>Needs Patch</span>
+->     errors.hello | <span weight='bold' foreground='red'>Needs Patch</span>   ***
 ->     output.hello | Up-to-date
 
 ------------------------------ (vertical VCS dialog separator, 36% from the left edge)
@@ -163,13 +165,13 @@ Button 'gtk-close' (Stock image 'gtk-close')
 Adding entry completion 'HEAD' ...
 
 'quit' event created with arguments ''
-Killing running test (process id 28919)
+Killing running test (process id 19060)
 
 Changing GUI status to: 'Waiting for all tests to terminate ...'
 
 Updated : Test Tree with columns: Tests: All 1 selected, none hidden , Details
 -> TargetApp (hello) (black/white,bold) | (white)
-->   Test1 (black/LightGoldenrod1) | (LightGoldenrod1)
+->   Test1 (black/LightGoldenrod1) | (LightGoldenrod1)   ***
 
 Updated : File Tree with columns: Test1 , Details
 -> Temporary Files (bold)
@@ -177,7 +179,7 @@ Updated : File Tree with columns: Test1 , Details
 ->   output.hello (LightGoldenrod1) | (LightGoldenrod1)
 
 ========== Text Info ==========
-Filtering and comparing newly generated result files on novyy
+Filtering and comparing newly generated result files on kisaumi
 
 To obtain the latest progress information and an up-to-date comparison of the files above, perform 'recompute status' (press 'F5')
 ===============================
@@ -185,11 +187,11 @@ To obtain the latest progress information and an up-to-date comparison of the fi
 Greyed out : _Kill
 No longer greyed out : _Save
 
-Progress bar set to fraction 1.0, text 'All 1 tests completed at 26May13:51:32'
+Progress bar set to fraction 1.0, text 'All 1 tests completed at 10Aug14:57:31'
 
 Updated : Test Tree with columns: Tests: All 1 selected, none hidden , Details
 -> TargetApp (hello) (black/white,bold) | (white)
-->   Test1 (black/salmon) | KILLED (salmon)
+->   Test1 (black/salmon) | KILLED (salmon)   ***
 
 Updated : File Tree with columns: Test1 , Details
 -> Comparison Files (bold)
@@ -198,9 +200,8 @@ Updated : File Tree with columns: Test1 , Details
 
 ========== Text Info ==========
 Test were terminated before completion (KILLED) :
-Test killed explicitly at 13:51
+Test killed explicitly at 14:57
 ---------- Differences in output ----------
 1d0
 < Hello
 ===============================
-Only one test found, selecting Test1

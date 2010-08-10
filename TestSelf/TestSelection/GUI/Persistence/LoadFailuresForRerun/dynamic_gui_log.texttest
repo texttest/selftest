@@ -3,7 +3,7 @@ Adding entry completion '<default>' ...
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
 
----------- Window 'TextTest dynamic GUI : testing HELLO (started at 26May13:50:34)' ----------
+---------- Window 'TextTest dynamic GUI : testing HELLO (started at 10Aug14:57:40)' ----------
 Focus widget is 'Test Tree'
 
 Menu Bar : 'File' (+) , 'View' (+) , 'Actions' (+) , 'Help' (+)
@@ -27,7 +27,7 @@ Showing Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 4 (white,bold) | Check box (checked)
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 26May13:50:37.' , Image 'throbber_inactive.png'
+'TextTest started at 10Aug14:57:44.' , Image 'throbber_inactive.png'
 ----------------------------------------------------------------------------------------------
 
 Updated : Test Tree with columns: Tests: 0/4 selected, 3 hidden , Details
@@ -341,7 +341,7 @@ Updated : Test Status View with columns: Status , Number , Visible
 ->     errors different (salmon,bold) | 1 (salmon,bold) | Check box (checked)
 ->     output different (salmon,bold) | 1 (salmon,bold) | Check box (checked)
 
-Progress bar set to fraction 1.0, text 'All 4 tests completed at 26May13:50:39'
+Progress bar set to fraction 1.0, text 'All 4 tests completed at 10Aug14:57:45'
 
 Updated : Test Tree with columns: Tests: 0/4 selected, none hidden , Details
 -> TargetApp (hello) (black/white,bold) | (white)
@@ -365,14 +365,29 @@ Updated : Test Status View with columns: Status , Number , Visible
 Expected application event 'completion of test actions' occurred, proceeding.
 
 'select tests in category' event created with arguments 'Failed'
-Selecting all 2 tests in category Failed
-Marking 2 tests as selected
 
 No longer greyed out : _Save
 
-Column titles changed in Test Tree with columns: Tests: 2/4 selected, none hidden , Details
+Changed selection in Test Tree with columns: Tests: 2/4 selected, none hidden , Details
+-> TargetApp (hello) (black/white,bold) | (white)
+->   Suite1 (black/white,bold) | (white)
+->     One1 (black/DarkSeaGreen2) | (DarkSeaGreen2)
+->     Two (black/salmon) | output different (salmon)   ***
+->     Three (black/salmon) | errors different (salmon)   ***
+->   Super (black/white,bold) | All 1 tests successful (DarkSeaGreen2)
 
 Child visibility changed in Notebook with tabs: Test , Status , Selection , Run Info
+
+Changed selection in Test Status View with columns: Status , Number , Visible
+-> Not started (white) | 0 (white) | Check box (checked)
+-> Initial filter (white) | 0 (white) | Check box (checked)
+-> Running (white) | 0 (white) | Check box (checked)
+-> Final filter (white) | 0 (white) | Check box (checked)
+-> Succeeded (DarkSeaGreen2,bold) | 2 (DarkSeaGreen2,bold) | Check box (checked)
+-> Failed (salmon,bold) | 2 (salmon,bold) | Check box (checked)   ***
+->   Differences (salmon,bold) | 2 (salmon,bold) | Check box (checked)
+->     errors different (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->     output different (salmon,bold) | 1 (salmon,bold) | Check box (checked)
 
 'save selected tests in file' event created with arguments ''
 
@@ -381,8 +396,8 @@ Default widget is 'gtk-save'
 
 Showing File Chooser for 'Save selected tests in file'
 Shortcut folders (2) :
-- /carm/proj/texttest-tmp/geoff/texttest.26May134951.24999/texttest.gui/TestSelf/TestSelection/GUI/Persistence/LoadFailuresForRerun/texttesttmp/static_gui.26May135022.6211/temporary_filter_files
-- /carm/proj/texttest-tmp/geoff/texttest.26May134951.24999/texttest.gui/TestSelf/TestSelection/GUI/Persistence/LoadFailuresForRerun/TargetApp/filter_files
+- /carm/proj/texttest-tmp/geoff/dynamic_gui.10Aug145655.4770/texttest.gui/TestSelf/TestSelection/GUI/Persistence/LoadFailuresForRerun/texttesttmp/static_gui.10Aug145733.19095/temporary_filter_files
+- /carm/proj/texttest-tmp/geoff/dynamic_gui.10Aug145655.4770/texttest.gui/TestSelf/TestSelection/GUI/Persistence/LoadFailuresForRerun/TargetApp/filter_files
 ---------------
 Button 'gtk-save' (Stock image 'gtk-save') , Button 'gtk-cancel' (Stock image 'gtk-cancel')
 ----------------------------------------------------------
@@ -392,6 +407,6 @@ Button 'gtk-save' (Stock image 'gtk-save') , Button 'gtk-cancel' (Stock image 'g
 'press save' event created with arguments ''
 Adding entry completion 'output' ...
 
-Changing GUI status to: 'Saved 2 tests in file '/carm/proj/texttest-tmp/geoff/texttest.26May134951.24999/texttest.gui/TestSelf/TestSelection/GUI/Persistence/LoadFailuresForRerun/texttesttmp/static_gui.26May135022.6211/temporary_filter_files/failures_from_dynamic'.'
+Changing GUI status to: 'Saved 2 tests in file '/carm/proj/texttest-tmp/geoff/dynamic_gui.10Aug145655.4770/texttest.gui/TestSelf/TestSelection/GUI/Persistence/LoadFailuresForRerun/texttesttmp/static_gui.10Aug145733.19095/temporary_filter_files/failures_from_dynamic'.'
 
 'quit' event created with arguments ''

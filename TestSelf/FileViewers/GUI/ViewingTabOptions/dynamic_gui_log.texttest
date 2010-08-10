@@ -3,7 +3,7 @@ Adding entry completion '<default>' ...
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
 
----------- Window 'TextTest dynamic GUI : testing HELLO (started at 26May13:50:34)' ----------
+---------- Window 'TextTest dynamic GUI : testing HELLO (started at 10Aug16:39:31)' ----------
 Focus widget is 'Test Tree'
 
 Menu Bar : 'File' (+) , 'View' (+) , 'Actions' (+) , 'Help' (+)
@@ -12,7 +12,7 @@ Tool Bar :
   _Quit (Stock image 'gtk-quit', accelerator 'Ctrl+Q', tooltip 'Quit')
   _Kill (Stock image 'gtk-stop', greyed out, accelerator 'Ctrl+Delete', tooltip 'Kill selected tests')
   _Save (Stock image 'gtk-save', greyed out, accelerator 'Ctrl+S', tooltip 'Save results for selected tests')
-  Progress bar set to fraction 0.0, text 'All 0 tests completed at 26May13:50:37'
+  Progress bar set to fraction 0.0, text 'All 0 tests completed at 10Aug16:39:35'
 ...........
 
 Showing Test Tree with columns: Tests: All 0 selected , Details
@@ -26,7 +26,7 @@ Viewing page 'Status'
 Showing Test Status View with columns: Status , Number , Visible
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 26May13:50:37.' , Image 'throbber_inactive.png'
+'TextTest started at 10Aug16:39:35.' , Image 'throbber_inactive.png'
 ----------------------------------------------------------------------------------------------
 
 Progress bar set to fraction 0.0, text '0 of 1 tests completed'
@@ -65,7 +65,7 @@ Updated : Test Status View with columns: Status , Number , Visible
 -> Running (white) | 0 (white) | Check box (checked)
 -> Final filter (LightGoldenrod1,bold) | 1 (LightGoldenrod1,bold) | Check box (checked)
 
-Progress bar set to fraction 1.0, text 'All 1 tests completed at 26May13:50:38'
+Progress bar set to fraction 1.0, text 'All 1 tests completed at 10Aug16:39:35'
 
 Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
 -> TargetApp (hello) (black/white,bold) | (white)
@@ -79,11 +79,12 @@ Updated : Test Status View with columns: Status , Number , Visible
 -> Failed (salmon,bold) | 1 (salmon,bold) | Check box (checked)
 ->   Differences (salmon,bold) | 1 (salmon,bold) | Check box (checked)
 ->     output different (salmon,bold) | 1 (salmon,bold) | Check box (checked)
-Only one test found, selecting Test
 
 No longer greyed out : _Save
 
-Column titles changed in Test Tree with columns: Tests: All 1 selected, none hidden , Details
+Changed selection in Test Tree with columns: Tests: All 1 selected, none hidden , Details
+-> TargetApp (hello) (black/white,bold) | (white)
+->   Test (black/salmon) | output different (salmon)   ***
 
 Current page changed in Notebook with tabs: Test , Status , Selection , Run Info
 Viewing page 'Test'
@@ -110,9 +111,6 @@ Expected application event 'completion of test actions' occurred, proceeding.
 
 'select file' event created with arguments 'output.hello'
 Adding entry completion 'free_text' ...
-Starting graphical difference comparison using 'tkdiff':
--- original file : /carm/proj/texttest-tmp/geoff/texttest.26May134951.24999/texttest.gui/TestSelf/FileViewers/GUI/ViewingTabOptions/texttesttmp/dynamic_gui.26May135034.20242/hello/Test/framework_tmp/output.helloorigcmp
---  current file : /carm/proj/texttest-tmp/geoff/texttest.26May134951.24999/texttest.gui/TestSelf/FileViewers/GUI/ViewingTabOptions/texttesttmp/dynamic_gui.26May135034.20242/hello/Test/framework_tmp/output.hellocmp
 
 Waiting for application event 'the viewer process to start' to occur.
 
@@ -121,7 +119,6 @@ Changing GUI status to: 'Started "tkdiff output.helloorigcmp output.hellocmp" in
 Expected application event 'the viewer process to start' occurred, proceeding.
 
 'select file' event created with arguments 'errors.hello'
-Viewing file /carm/proj/texttest-tmp/geoff/texttest.26May134951.24999/texttest.gui/TestSelf/FileViewers/GUI/ViewingTabOptions/texttesttmp/dynamic_gui.26May135034.20242/hello/Test/errors.hello using 'emacs', refresh set to False
 
 Waiting for application event 'the viewer process to start' to occur.
 
@@ -130,6 +127,11 @@ Changing GUI status to: 'Started "emacs errors.hello" in background (from test T
 Expected application event 'the viewer process to start' occurred, proceeding.
 
 'set file selection to' event created with arguments 'output.hello'
+
+Changed selection in File Tree with columns: Test , Details
+-> Comparison Files (bold)
+->   errors.hello (DarkSeaGreen2) | (DarkSeaGreen2)
+->   output.hello (salmon) | (salmon)   ***
 
 'view actions for file' event created with arguments 'output.hello'
 
@@ -154,15 +156,24 @@ Expected application event 'the viewer process to start' occurred, proceeding.
 ----------------------------------
 
 'view filtered file' event created with arguments ''
-Viewing file /carm/proj/texttest-tmp/geoff/texttest.26May134951.24999/texttest.gui/TestSelf/FileViewers/GUI/ViewingTabOptions/texttesttmp/dynamic_gui.26May135034.20242/hello/Test/framework_tmp/output.hellocmp using 'emacs', refresh set to False
 
 Waiting for application event 'the viewer process to start' to occur.
 
 Changing GUI status to: 'Started "emacs output.hellocmp" in background (from test Test).'
 
+Changed selection in File Tree with columns: Test , Details
+-> Comparison Files (bold)
+->   errors.hello (DarkSeaGreen2) | (DarkSeaGreen2)
+->   output.hello (salmon) | (salmon)
+
 Expected application event 'the viewer process to start' occurred, proceeding.
 
 'set file selection to' event created with arguments 'output.hello'
+
+Changed selection in File Tree with columns: Test , Details
+-> Comparison Files (bold)
+->   errors.hello (DarkSeaGreen2) | (DarkSeaGreen2)
+->   output.hello (salmon) | (salmon)   ***
 
 'view actions for file' event created with arguments 'output.hello'
 
@@ -187,17 +198,24 @@ Expected application event 'the viewer process to start' occurred, proceeding.
 ----------------------------------
 
 'view raw differences' event created with arguments ''
-Starting graphical difference comparison using 'tkdiff':
--- original file : /carm/proj/texttest-tmp/geoff/texttest.26May134951.24999/texttest.gui/TestSelf/FileViewers/GUI/ViewingTabOptions/TargetApp/Test/output.hello
---  current file : /carm/proj/texttest-tmp/geoff/texttest.26May134951.24999/texttest.gui/TestSelf/FileViewers/GUI/ViewingTabOptions/texttesttmp/dynamic_gui.26May135034.20242/hello/Test/output.hello
 
 Waiting for application event 'the viewer process to start' to occur.
 
 Changing GUI status to: 'Started "tkdiff output.hello output.hello" in background (from test Test).'
 
+Changed selection in File Tree with columns: Test , Details
+-> Comparison Files (bold)
+->   errors.hello (DarkSeaGreen2) | (DarkSeaGreen2)
+->   output.hello (salmon) | (salmon)
+
 Expected application event 'the viewer process to start' occurred, proceeding.
 
 'set file selection to' event created with arguments 'errors.hello'
+
+Changed selection in File Tree with columns: Test , Details
+-> Comparison Files (bold)
+->   errors.hello (DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   output.hello (salmon) | (salmon)
 
 'view actions for file' event created with arguments 'errors.hello'
 
@@ -222,17 +240,24 @@ Expected application event 'the viewer process to start' occurred, proceeding.
 ----------------------------------
 
 'view raw differences' event created with arguments ''
-Starting graphical difference comparison using 'tkdiff':
--- original file : /carm/proj/texttest-tmp/geoff/texttest.26May134951.24999/texttest.gui/TestSelf/FileViewers/GUI/ViewingTabOptions/TargetApp/Test/errors.hello
---  current file : /carm/proj/texttest-tmp/geoff/texttest.26May134951.24999/texttest.gui/TestSelf/FileViewers/GUI/ViewingTabOptions/texttesttmp/dynamic_gui.26May135034.20242/hello/Test/errors.hello
 
 Waiting for application event 'the viewer process to start' to occur.
 
 Changing GUI status to: 'Started "tkdiff errors.hello errors.hello" in background (from test Test).'
 
+Changed selection in File Tree with columns: Test , Details
+-> Comparison Files (bold)
+->   errors.hello (DarkSeaGreen2) | (DarkSeaGreen2)
+->   output.hello (salmon) | (salmon)
+
 Expected application event 'the viewer process to start' occurred, proceeding.
 
 'set file selection to' event created with arguments 'output.hello'
+
+Changed selection in File Tree with columns: Test , Details
+-> Comparison Files (bold)
+->   errors.hello (DarkSeaGreen2) | (DarkSeaGreen2)
+->   output.hello (salmon) | (salmon)   ***
 
 'view actions for file' event created with arguments 'output.hello'
 
@@ -257,11 +282,15 @@ Expected application event 'the viewer process to start' occurred, proceeding.
 ----------------------------------
 
 'view file' event created with arguments ''
-Viewing file /carm/proj/texttest-tmp/geoff/texttest.26May134951.24999/texttest.gui/TestSelf/FileViewers/GUI/ViewingTabOptions/texttesttmp/dynamic_gui.26May135034.20242/hello/Test/output.hello using 'emacs', refresh set to False
 
 Waiting for application event 'the viewer process to start' to occur.
 
 Changing GUI status to: 'Started "emacs output.hello" in background (from test Test).'
+
+Changed selection in File Tree with columns: Test , Details
+-> Comparison Files (bold)
+->   errors.hello (DarkSeaGreen2) | (DarkSeaGreen2)
+->   output.hello (salmon) | (salmon)
 
 Expected application event 'the viewer process to start' occurred, proceeding.
 

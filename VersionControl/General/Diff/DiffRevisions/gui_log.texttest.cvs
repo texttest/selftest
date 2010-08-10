@@ -2,9 +2,9 @@ Enabling entry completion, using matching 1
 Adding entry completion '<default>' ...
 Adding entry completion 'localhost' ...
 Adding entry completion '1' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.31May141619.29411/texttest.cvs/VersionControl/General/Diff/DiffRevisions/log/logging.debug' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/dynamic_gui.10Aug145655.4770/texttest.cvs/VersionControl/General/Diff/DiffRevisions/log/logging.debug' ...
 Adding entry completion '/users/geoff/work/master/Testing/TextTest/log/logging.debug' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.31May141619.29411/texttest.cvs/VersionControl/General/Diff/DiffRevisions/log' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/dynamic_gui.10Aug145655.4770/texttest.cvs/VersionControl/General/Diff/DiffRevisions/log' ...
 Adding entry completion 'site' ...
 Adding entry completion 'personal' ...
 Adding entry completion 'all' ...
@@ -49,7 +49,7 @@ Button 'Filter' (Stock image 'gtk-find', accelerator 'Ctrl+F', tooltip 'filter t
 Button 'Reset Tab' (tooltip 'Reset all the settings in the current tab to their default values')
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 31May14:17:47.' , Image 'throbber_inactive.png'
+'TextTest started at 10Aug14:57:28.' , Image 'throbber_inactive.png'
 ----------------------------------------------------------------------------------
 
 Changing GUI status to: 'Reading tests ...'
@@ -72,7 +72,7 @@ Updated : Test Tree with columns: Tests: 0/4 selected
 ->       Test4 (black/grey90)
 Updated drop-down list in 'Test-file to search' Text entry (set to 'errors') (drop-down list containing ['errors', 'output'])
 
-Changing GUI status to: 'Reading tests completed at 31May14:17:47.'
+Changing GUI status to: 'Reading tests completed at 10Aug14:57:28.'
 
 Expected application event 'all tests to be read' occurred, proceeding.
 
@@ -80,7 +80,14 @@ Expected application event 'all tests to be read' occurred, proceeding.
 
 No longer greyed out : _Run
 
-Column titles changed in Test Tree with columns: Tests: 1/4 selected
+Changed selection in Test Tree with columns: Tests: 1/4 selected
+-> TargetApp (hello) (black/grey90,bold)
+->   Test1 (black/grey90)
+->   Test2 (black/grey90)   ***
+->   Suite (black/grey90,bold)
+->     Subsuite (black/grey90,bold)
+->       Test3 (black/grey90)
+->       Test4 (black/grey90)
 
 Current page changed in Notebook with tabs: Test , Selection , Running , Config
 Viewing page 'Test'
@@ -122,7 +129,7 @@ Subdirectories were ignored, use CVS Status Recursive to get the status for all 
 Showing VCS status info tree with columns: File , Information
 -> <span weight='bold'>TargetApp</span>
 ->   <span weight='bold'>Test2</span>
-->     errors.hello | Up-to-date
+->     errors.hello | Up-to-date   ***
 ->     output.hello | <span weight='bold'>Locally Modified</span>
 
 ------------------------------ (vertical VCS dialog separator, 40% from the left edge)
@@ -143,6 +150,12 @@ Button 'gtk-close' (Stock image 'gtk-close')
 ----------------------------------------------------------------
 
 'select' event created with arguments 'output.hello'
+
+Changed selection in VCS status info tree with columns: File , Information
+-> <span weight='bold'>TargetApp</span>
+->   <span weight='bold'>Test2</span>
+->     errors.hello | Up-to-date
+->     output.hello | <span weight='bold'>Locally Modified</span>   ***
 
 ========== VCS Output View ==========
 ===================================================================
@@ -169,7 +182,7 @@ Subdirectories were ignored, use CVS Difference Recursive to get the differences
 Showing VCS diff info tree with columns: File
 -> <span weight='bold'>TargetApp</span>
 ->   <span weight='bold'>Test2</span>
-->     output.hello
+->     output.hello   ***
 
 ------------------------------ (vertical VCS dialog separator, 21% from the left edge)
 
@@ -209,7 +222,7 @@ Subdirectories were ignored, use CVS Difference Recursive to get the differences
 Showing VCS diff info tree with columns: File
 -> <span weight='bold'>TargetApp</span>
 ->   <span weight='bold'>Test2</span>
-->     output.hello
+->     output.hello   ***
 
 ------------------------------ (vertical VCS dialog separator, 21% from the left edge)
 
@@ -245,7 +258,7 @@ Subdirectories were ignored, use CVS Difference Recursive to get the differences
 Showing VCS diff info tree with columns: File
 -> <span weight='bold'>TargetApp</span>
 ->   <span weight='bold'>Test2</span>
-->     output.hello
+->     output.hello   ***
 
 ------------------------------ (vertical VCS dialog separator, 21% from the left edge)
 

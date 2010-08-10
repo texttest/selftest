@@ -3,7 +3,7 @@ Adding entry completion '<default>' ...
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
 
----------- Window 'TextTest dynamic GUI : testing HELLO (started at 26May13:50:48)' ----------
+---------- Window 'TextTest dynamic GUI : testing HELLO (started at 10Aug14:57:56)' ----------
 Focus widget is 'Test Tree'
 
 Menu Bar : 'File' (+) , 'View' (+) , 'Actions' (+) , 'Help' (+)
@@ -12,7 +12,7 @@ Tool Bar :
   _Quit (Stock image 'gtk-quit', accelerator 'Ctrl+Q', tooltip 'Quit')
   _Kill (Stock image 'gtk-stop', greyed out, accelerator 'Ctrl+Delete', tooltip 'Kill selected tests')
   _Save (Stock image 'gtk-save', greyed out, accelerator 'Ctrl+S', tooltip 'Save results for selected tests')
-  Progress bar set to fraction 0.0, text 'All 0 tests completed at 26May13:50:51'
+  Progress bar set to fraction 0.0, text 'All 0 tests completed at 10Aug14:58:00'
 ...........
 
 Showing Test Tree with columns: Tests: All 0 selected , Details
@@ -26,7 +26,7 @@ Viewing page 'Status'
 Showing Test Status View with columns: Status , Number , Visible
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 26May13:50:51.' , Image 'throbber_inactive.png'
+'TextTest started at 10Aug14:58:00.' , Image 'throbber_inactive.png'
 ----------------------------------------------------------------------------------------------
 
 Progress bar set to fraction 0.0, text '0 of 1 tests completed'
@@ -138,7 +138,11 @@ Expected application event 'test Basic2 to start' occurred, proceeding.
 
 No longer greyed out : _Kill, _Save
 
-Column titles changed in Test Tree with columns: Tests: All 2 selected, none hidden , Details
+Changed selection in Test Tree with columns: Tests: All 2 selected, none hidden , Details
+-> TargetApp (hello) (black/white,bold) | (white)
+->   Suite1 (black/white,bold) | (white)
+->     Basic (black/salmon) | output different (salmon)   ***
+->     Basic2 (black/LightGoldenrod1) | (LightGoldenrod1)   ***
 
 Current page changed in Notebook with tabs: Test , Status , Selection , Run Info
 Viewing page 'Test'
@@ -163,14 +167,14 @@ Test FAILED :
 
 'mark the selected tests' event created with arguments ''
 Adding entry completion 'Checked' ...
-Adding entry completion 'Checked at 26May13:50:49' ...
+Adding entry completion 'Checked at 10Aug14:57:57' ...
 
 ---------- Dialog 'Mark the selected tests' ----------
 Default widget is 'gtk-ok'
 'Brief text:'
 Text entry (set to 'Checked')
 'Free text:'
-Text entry (set to 'Checked at 26May13:50:49')
+Text entry (set to 'Checked at 10Aug14:57:57')
 ---------------
 Button 'gtk-ok' (Stock image 'gtk-ok') , Button 'gtk-cancel' (Stock image 'gtk-cancel')
 ------------------------------------------------------
@@ -182,8 +186,8 @@ Greyed out : _Save
 Updated : Test Tree with columns: Tests: All 2 selected, none hidden , Details
 -> TargetApp (hello) (black/white,bold) | (white)
 ->   Suite1 (black/white,bold) | (white)
-->     Basic (black/orange) | Checked (orange)
-->     Basic2 (black/LightGoldenrod1) | (LightGoldenrod1)
+->     Basic (black/orange) | Checked (orange)   ***
+->     Basic2 (black/LightGoldenrod1) | (LightGoldenrod1)   ***
 
 Updated : File Tree with columns: Sample from 2 tests , Details
 -> Comparison Files (bold)
@@ -192,7 +196,7 @@ Updated : File Tree with columns: Sample from 2 tests , Details
 
 ========== Text Info ==========
 Test was marked by the user :
-Checked at 26May13:50:49
+Checked at 10Aug14:57:57
 
 ORIGINAL STATE:
 Test FAILED :
@@ -211,18 +215,18 @@ Changing GUI status to: 'Performed 'Mark the selected tests' on 2 tests.'
 Updated : Test Tree with columns: Tests: All 2 selected, none hidden , Details
 -> TargetApp (hello) (black/white,bold) | (white)
 ->   Suite1 (black/white,bold) | (white)
-->     Basic (black/orange) | Checked (orange)
-->     Basic2 (black/LightGoldenrod1) | (LightGoldenrod1)
+->     Basic (black/orange) | Checked (orange)   ***
+->     Basic2 (black/LightGoldenrod1) | (LightGoldenrod1)   ***
 
 Greyed out : _Kill
 
-Progress bar set to fraction 1.0, text 'All 2 tests completed at 26May13:50:54'
+Progress bar set to fraction 1.0, text 'All 2 tests completed at 10Aug14:58:02'
 
 Updated : Test Tree with columns: Tests: All 2 selected, none hidden , Details
 -> TargetApp (hello) (black/white,bold) | (white)
 ->   Suite1 (black/white,bold) | (white)
-->     Basic (black/orange) | Checked (orange)
-->     Basic2 (black/DarkSeaGreen2) | (DarkSeaGreen2)
+->     Basic (black/orange) | Checked (orange)   ***
+->     Basic2 (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
 
 Expected application event 'completion of test actions' occurred, proceeding.
 

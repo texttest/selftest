@@ -3,7 +3,7 @@ Adding entry completion '<default>' ...
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
 
----------- Window 'TextTest dynamic GUI : testing HELLO (started at 31May16:26:55)' ----------
+---------- Window 'TextTest dynamic GUI : testing HELLO (started at 10Aug14:58:24)' ----------
 Focus widget is 'Test Tree'
 
 Menu Bar : 'File' (+) , 'View' (+) , 'Actions' (+) , 'Help' (+)
@@ -12,7 +12,7 @@ Tool Bar :
   _Quit (Stock image 'gtk-quit', accelerator 'Ctrl+Q', tooltip 'Quit')
   _Kill (Stock image 'gtk-stop', greyed out, accelerator 'Ctrl+Delete', tooltip 'Kill selected tests')
   _Save (Stock image 'gtk-save', greyed out, accelerator 'Ctrl+S', tooltip 'Save results for selected tests')
-  Progress bar set to fraction 0.0, text 'All 0 tests completed at 31May16:26:56'
+  Progress bar set to fraction 0.0, text 'All 0 tests completed at 10Aug14:58:29'
 ...........
 
 Showing Test Tree with columns: Tests: All 0 selected , Details
@@ -26,7 +26,7 @@ Viewing page 'Status'
 Showing Test Status View with columns: Status , Number , Visible
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 31May16:26:56.' , Image 'throbber_inactive.png'
+'TextTest started at 10Aug14:58:29.' , Image 'throbber_inactive.png'
 ----------------------------------------------------------------------------------------------
 
 Progress bar set to fraction 0.0, text '0 of 1 tests completed'
@@ -487,7 +487,7 @@ Updated : Test Status View with columns: Status , Number , Visible
 ->     errors new (salmon,bold) | 3 (salmon,bold) | Check box (checked)
 ->       Group 1 (salmon,bold) | 3 (salmon,bold) | Check box (checked)
 
-Progress bar set to fraction 1.0, text 'All 5 tests completed at 31May16:26:57'
+Progress bar set to fraction 1.0, text 'All 5 tests completed at 10Aug14:58:32'
 
 Updated : Test Tree with columns: Tests: 0/5 selected, none hidden , Details
 -> TargetApp (hello) (black/white,bold) | (white)
@@ -519,17 +519,37 @@ Updated : Test Status View with columns: Status , Number , Visible
 Expected application event 'completion of test actions' occurred, proceeding.
 
 'select tests in category' event created with arguments 'file1 different,Group 1 under file3 different'
-Selecting all 1 tests in category file1 different
-Marking 1 tests as selected
-Selecting all 1 tests in category file1 different
-Selecting all 3 tests in category Group 1
-Marking 3 tests as selected
 
 No longer greyed out : _Save
 
-Column titles changed in Test Tree with columns: Tests: 3/5 selected, none hidden , Details
+Changed selection in Test Tree with columns: Tests: 3/5 selected, none hidden , Details
+-> TargetApp (hello) (black/white,bold) | (white)
+->   simple_fail1 (black/DarkSeaGreen2) | file3 different (salmon)   ***
+->   simple_fail2 (black/salmon) | errors new (salmon)
+->   complex_fail1 (black/salmon) | output different(+) (salmon)   ***
+->   complex_fail2 (black/salmon) | output different(+) (salmon)   ***
+->   suite (black/white,bold) | All 1 tests successful (DarkSeaGreen2)
 
 Child visibility changed in Notebook with tabs: Test , Status , Selection , Run Info
+
+Changed selection in Test Status View with columns: Status , Number , Visible
+-> Not started (white) | 0 (white) | Check box (checked)
+-> Initial filter (white) | 0 (white) | Check box (checked)
+-> Running (white) | 0 (white) | Check box (checked)
+-> Final filter (white) | 0 (white) | Check box (checked)
+-> Failed (salmon,bold) | 4 (salmon,bold) | Check box (checked)
+->   Differences (salmon,bold) | 3 (salmon,bold) | Check box (checked)
+->     file1 different (salmon,bold) | 1 (salmon,bold) | Check box (checked)   ***
+->     file2 different (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->     file3 different (salmon,bold) | 3 (salmon,bold) | Check box (checked)
+->       Group 1 (salmon,bold) | 3 (salmon,bold) | Check box (checked)   ***
+->     file4 different (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->     output different (salmon,bold) | 2 (salmon,bold) | Check box (checked)
+->       Group 1 (salmon,bold) | 2 (salmon,bold) | Check box (checked)
+->   New (salmon,bold) | 3 (salmon,bold) | Check box (checked)
+->     errors new (salmon,bold) | 3 (salmon,bold) | Check box (checked)
+->       Group 1 (salmon,bold) | 3 (salmon,bold) | Check box (checked)
+-> Succeeded (DarkSeaGreen2,bold) | 1 (DarkSeaGreen2,bold) | Check box (checked)
 
 'quit' event created with arguments ''
 Adding entry completion 'free_text' ...

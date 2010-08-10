@@ -2,9 +2,9 @@ Enabling entry completion, using matching 1
 Adding entry completion '<default>' ...
 Adding entry completion 'localhost' ...
 Adding entry completion '1' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.31May141619.29411/texttest.bzr/VersionControl/General/Diff/ShowDiff/log/logging.debug' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/dynamic_gui.10Aug145655.4770/texttest.bzr/VersionControl/General/Diff/ShowDiff/log/logging.debug' ...
 Adding entry completion '/users/geoff/work/master/Testing/TextTest/log/logging.debug' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.31May141619.29411/texttest.bzr/VersionControl/General/Diff/ShowDiff/log' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/dynamic_gui.10Aug145655.4770/texttest.bzr/VersionControl/General/Diff/ShowDiff/log' ...
 Adding entry completion 'site' ...
 Adding entry completion 'personal' ...
 Adding entry completion 'all' ...
@@ -49,7 +49,7 @@ Button 'Filter' (Stock image 'gtk-find', accelerator 'Ctrl+F', tooltip 'filter t
 Button 'Reset Tab' (tooltip 'Reset all the settings in the current tab to their default values')
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 31May14:17:50.' , Image 'throbber_inactive.png'
+'TextTest started at 10Aug14:57:30.' , Image 'throbber_inactive.png'
 ----------------------------------------------------------------------------------
 
 Changing GUI status to: 'Reading tests ...'
@@ -72,7 +72,7 @@ Updated : Test Tree with columns: Tests: 0/4 selected
 ->       Test4 (black/grey90)
 Updated drop-down list in 'Test-file to search' Text entry (set to 'errors') (drop-down list containing ['errors', 'output'])
 
-Changing GUI status to: 'Reading tests completed at 31May14:17:50.'
+Changing GUI status to: 'Reading tests completed at 10Aug14:57:30.'
 
 Expected application event 'all tests to be read' occurred, proceeding.
 
@@ -80,7 +80,14 @@ Expected application event 'all tests to be read' occurred, proceeding.
 
 No longer greyed out : _Run
 
-Column titles changed in Test Tree with columns: Tests: 1/4 selected
+Changed selection in Test Tree with columns: Tests: 1/4 selected
+-> TargetApp (hello) (black/grey90,bold)
+->   Test1 (black/grey90)   ***
+->   Test2 (black/grey90)
+->   Suite (black/grey90,bold)
+->     Subsuite (black/grey90,bold)
+->       Test3 (black/grey90)
+->       Test4 (black/grey90)
 
 Current page changed in Notebook with tabs: Test , Selection , Running , Config
 Viewing page 'Test'
@@ -124,7 +131,7 @@ Subdirectories were ignored, use Bazaar Difference Recursive to get the differen
 Showing VCS diff info tree with columns: File
 -> <span weight='bold'>TargetApp</span>
 ->   <span weight='bold'>Test1</span>
-->     errors.hello
+->     errors.hello   ***
 ->     output.hello.version
 
 ------------------------------ (vertical VCS dialog separator, 28% from the left edge)
@@ -142,6 +149,13 @@ Button 'gtk-close' (Stock image 'gtk-close')
 'close difference window' event created with arguments ''
 
 'set file selection to' event created with arguments 'output.hello'
+
+Changed selection in File Tree with columns: Test1
+-> Standard Files (white,bold)
+->   errors.hello (grey90)
+->   output.hello (grey90)   ***
+->   output.hello.version (grey90)
+-> Definition Files (white)
 
 ========== Text Info ==========
 
@@ -170,7 +184,14 @@ Button 'gtk-close' (Stock image 'gtk-close')
 
 'set test selection to' event created with arguments 'Test1,Test2,Test3'
 
-Column titles changed in Test Tree with columns: Tests: 3/4 selected
+Changed selection in Test Tree with columns: Tests: 3/4 selected
+-> TargetApp (hello) (black/grey90,bold)
+->   Test1 (black/grey90)   ***
+->   Test2 (black/grey90)   ***
+->   Suite (black/grey90,bold)
+->     Subsuite (black/grey90,bold)
+->       Test3 (black/grey90)   ***
+->       Test4 (black/grey90)
 
 Current page changed in Notebook with tabs: Selection , Running , Config
 Viewing page 'Selection'
@@ -213,7 +234,7 @@ Subdirectories were ignored, use Bazaar Difference Recursive to get the differen
 Showing VCS diff info tree with columns: File
 -> <span weight='bold'>TargetApp</span>
 ->   <span weight='bold'>Test1</span>
-->     errors.hello
+->     errors.hello   ***
 ->     output.hello.version
 ->   <span weight='bold'>Test2</span>
 ->     output.hello
@@ -222,7 +243,7 @@ Showing VCS diff info tree with columns: File
 ->       <span weight='bold'>Test3</span>
 ->         output.hello
 
------------------------------- (vertical VCS dialog separator, 32% from the left edge)
+------------------------------ (vertical VCS dialog separator, 33% from the left edge)
 
 ========== VCS Output View ==========
 === modified file 'TargetApp/Test1/errors.hello'
@@ -235,6 +256,18 @@ Button 'gtk-close' (Stock image 'gtk-close')
 -----------------------------------------------------------------------
 
 'select' event created with arguments 'output.hello under Test2'
+
+Changed selection in VCS diff info tree with columns: File
+-> <span weight='bold'>TargetApp</span>
+->   <span weight='bold'>Test1</span>
+->     errors.hello
+->     output.hello.version
+->   <span weight='bold'>Test2</span>
+->     output.hello   ***
+->   <span weight='bold'>Suite</span>
+->     <span weight='bold'>Subsuite</span>
+->       <span weight='bold'>Test3</span>
+->         output.hello
 
 ========== VCS Output View ==========
 === modified file 'TargetApp/Test2/output.hello'

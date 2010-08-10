@@ -2,9 +2,9 @@ Enabling entry completion, using matching 1
 Adding entry completion '<default>' ...
 Adding entry completion 'localhost' ...
 Adding entry completion '1' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.gui.22Jun134320.12652/texttest.gui/TestSelf/FileEditing/GUI/RecordAndSave/log/logging.debug' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/dynamic_gui.10Aug145655.4770/texttest.gui/TestSelf/FileEditing/GUI/RecordAndSave/log/logging.debug' ...
 Adding entry completion '/users/geoff/work/master/Testing/TextTest/log/logging.debug' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.gui.22Jun134320.12652/texttest.gui/TestSelf/FileEditing/GUI/RecordAndSave/log' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/dynamic_gui.10Aug145655.4770/texttest.gui/TestSelf/FileEditing/GUI/RecordAndSave/log' ...
 Adding entry completion 'site' ...
 Adding entry completion 'personal' ...
 Adding entry completion 'all' ...
@@ -48,7 +48,7 @@ Button 'Filter' (Stock image 'gtk-find', accelerator 'Ctrl+F', tooltip 'filter t
 Button 'Reset Tab' (tooltip 'Reset all the settings in the current tab to their default values')
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 22Jun13:43:36.' , Image 'throbber_inactive.png'
+'TextTest started at 10Aug14:58:12.' , Image 'throbber_inactive.png'
 ---------------------------------------------------------------------------------
 
 Changing GUI status to: 'Reading tests ...'
@@ -66,7 +66,7 @@ Updated : Test Tree with columns: Tests: 0/3 selected
 ->   NoFiles (black/grey90)
 Updated drop-down list in 'Test-file to search' Text entry (set to 'traffic') (drop-down list containing ['traffic', '----------', 'catalogue', 'editedfile', 'editedfile2', 'editedfile3', 'errors', 'output'])
 
-Changing GUI status to: 'Reading tests completed at 22Jun13:43:36.'
+Changing GUI status to: 'Reading tests completed at 10Aug14:58:13.'
 
 Expected application event 'all tests to be read' occurred, proceeding.
 
@@ -74,7 +74,11 @@ Expected application event 'all tests to be read' occurred, proceeding.
 
 No longer greyed out : _Run
 
-Column titles changed in Test Tree with columns: Tests: 1 suite selected
+Changed selection in Test Tree with columns: Tests: 1 suite selected
+-> TargetApp (edit) (black/grey90,bold)   ***
+->   Test (black/grey90)
+->   NameMismatch (black/grey90)
+->   NoFiles (black/grey90)
 
 Current page changed in Notebook with tabs: Test , Selection , Running , Config
 Viewing page 'Test'
@@ -132,7 +136,6 @@ Button 'gtk-ok' (Stock image 'gtk-ok') , Button 'gtk-cancel' (Stock image 'gtk-c
 Edited 'Test Name' Text entry (set to 'new')
 
 'press ok' event created with arguments ''
-Marking 1 tests as selected
 Adding entry completion 'traffic' ...
 Adding entry completion 'new' ...
 
@@ -141,7 +144,7 @@ Updated : Test Tree with columns: Tests: 1/4 selected
 ->   Test (black/grey90)
 ->   NameMismatch (black/grey90)
 ->   NoFiles (black/grey90)
-->   new (black/grey90)
+->   new (black/grey90)   ***
 
 Updated : File Tree with columns: new
 -> Standard Files (white)
@@ -180,8 +183,8 @@ Button 'Reset Tab' (tooltip 'Reset all the settings in the current tab to their 
 Current page changed in Notebook with tabs: Basic , Advanced
 Viewing page 'Advanced'
 Viewing table with 5 rows and 2 columns.
-'Configure self-diagnostics from  ' | Text entry (set to '/carm/proj/texttest-tmp/geoff/texttest.gui.22Jun134320.12652/texttest.gui/TestSelf/FileEditing/GUI/RecordAndSave/log/logging.debug') (drop-down list containing ['/carm/proj/texttest-tmp/geoff/texttest.gui.22Jun134320.12652/texttest.gui/TestSelf/FileEditing/GUI/RecordAndSave/log/logging.debug', '/users/geoff/work/master/Testing/TextTest/log/logging.debug'])
-'Write self-diagnostics to  ' | Text entry (set to '/carm/proj/texttest-tmp/geoff/texttest.gui.22Jun134320.12652/texttest.gui/TestSelf/FileEditing/GUI/RecordAndSave/log')
+'Configure self-diagnostics from  ' | Text entry (set to '/carm/proj/texttest-tmp/geoff/dynamic_gui.10Aug145655.4770/texttest.gui/TestSelf/FileEditing/GUI/RecordAndSave/log/logging.debug') (drop-down list containing ['/carm/proj/texttest-tmp/geoff/dynamic_gui.10Aug145655.4770/texttest.gui/TestSelf/FileEditing/GUI/RecordAndSave/log/logging.debug', '/users/geoff/work/master/Testing/TextTest/log/logging.debug'])
+'Write self-diagnostics to  ' | Text entry (set to '/carm/proj/texttest-tmp/geoff/dynamic_gui.10Aug145655.4770/texttest.gui/TestSelf/FileEditing/GUI/RecordAndSave/log')
 'Run batch mode session  ' | Text entry
 'Name this run  ' | Text entry
 'Ignore configuration files  ' | Text entry (set to 'site') (drop-down list containing ['', 'site', 'personal', 'all'])
@@ -196,11 +199,11 @@ Button 'Reset Tab' (tooltip 'Reset all the settings in the current tab to their 
 Toggled Check button '(Re-)record command-line or client-server traffic' (checked)
 
 'run selected tests' event created with arguments ''
-Starting dynamic run of TextTest with arguments ['-g', '-a', 'edit', '-m', 'localhost', '-cp', '1', '-xr', '/carm/proj/texttest-tmp/geoff/texttest.gui.22Jun134320.12652/texttest.gui/TestSelf/FileEditing/GUI/RecordAndSave/log/logging.debug', '-xw', '/carm/proj/texttest-tmp/geoff/texttest.gui.22Jun134320.12652/texttest.gui/TestSelf/FileEditing/GUI/RecordAndSave/log', '-rectraffic', '-vanilla', 'site', '-count', '1', '-f', '/carm/proj/texttest-tmp/geoff/texttest.gui.22Jun134320.12652/texttest.gui/TestSelf/FileEditing/GUI/RecordAndSave/texttesttmp/static_gui.22Jun134332.23429/dynamic_run1/gui_select', '-fd', '/carm/proj/texttest-tmp/geoff/texttest.gui.22Jun134320.12652/texttest.gui/TestSelf/FileEditing/GUI/RecordAndSave/texttesttmp/static_gui.22Jun134332.23429/temporary_filter_files']
+Starting dynamic run of TextTest with arguments ['-g', '-a', 'edit', '-m', 'localhost', '-cp', '1', '-xr', '/carm/proj/texttest-tmp/geoff/dynamic_gui.10Aug145655.4770/texttest.gui/TestSelf/FileEditing/GUI/RecordAndSave/log/logging.debug', '-xw', '/carm/proj/texttest-tmp/geoff/dynamic_gui.10Aug145655.4770/texttest.gui/TestSelf/FileEditing/GUI/RecordAndSave/log', '-rectraffic', '-vanilla', 'site', '-count', '1', '-f', '/carm/proj/texttest-tmp/geoff/dynamic_gui.10Aug145655.4770/texttest.gui/TestSelf/FileEditing/GUI/RecordAndSave/texttesttmp/static_gui.10Aug145809.14091/dynamic_run1/gui_select', '-fd', '/carm/proj/texttest-tmp/geoff/dynamic_gui.10Aug145655.4770/texttest.gui/TestSelf/FileEditing/GUI/RecordAndSave/texttesttmp/static_gui.10Aug145809.14091/temporary_filter_files']
 
 Waiting for application event 'dynamic GUI to be closed' to occur.
 
-Changing GUI status to: 'Started test new at 22Jun13:43:36.'
+Changing GUI status to: 'Started test new at 10Aug14:58:13.'
 
 Expected application event 'dynamic GUI to be closed' occurred, proceeding.
 

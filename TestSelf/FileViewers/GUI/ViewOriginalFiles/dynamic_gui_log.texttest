@@ -3,7 +3,7 @@ Adding entry completion '<default>' ...
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
 
----------- Window 'TextTest dynamic GUI : testing HELLO (started at 26May13:50:34)' ----------
+---------- Window 'TextTest dynamic GUI : testing HELLO (started at 10Aug16:39:31)' ----------
 Focus widget is 'Test Tree'
 
 Menu Bar : 'File' (+) , 'View' (+) , 'Actions' (+) , 'Help' (+)
@@ -12,7 +12,7 @@ Tool Bar :
   _Quit (Stock image 'gtk-quit', accelerator 'Ctrl+Q', tooltip 'Quit')
   _Kill (Stock image 'gtk-stop', greyed out, accelerator 'Ctrl+Delete', tooltip 'Kill selected tests')
   _Save (Stock image 'gtk-save', greyed out, accelerator 'Ctrl+S', tooltip 'Save results for selected tests')
-  Progress bar set to fraction 0.0, text 'All 0 tests completed at 26May13:50:37'
+  Progress bar set to fraction 0.0, text 'All 0 tests completed at 10Aug16:39:35'
 ...........
 
 Showing Test Tree with columns: Tests: All 0 selected , Details
@@ -26,7 +26,7 @@ Viewing page 'Status'
 Showing Test Status View with columns: Status , Number , Visible
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 26May13:50:37.' , Image 'throbber_inactive.png'
+'TextTest started at 10Aug16:39:35.' , Image 'throbber_inactive.png'
 ----------------------------------------------------------------------------------------------
 
 Progress bar set to fraction 0.0, text '0 of 1 tests completed'
@@ -65,7 +65,7 @@ Updated : Test Status View with columns: Status , Number , Visible
 -> Running (white) | 0 (white) | Check box (checked)
 -> Final filter (LightGoldenrod1,bold) | 1 (LightGoldenrod1,bold) | Check box (checked)
 
-Progress bar set to fraction 1.0, text 'All 1 tests completed at 26May13:50:38'
+Progress bar set to fraction 1.0, text 'All 1 tests completed at 10Aug16:39:35'
 
 Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
 -> TargetApp (hello) (black/white,bold) | (white)
@@ -79,11 +79,12 @@ Updated : Test Status View with columns: Status , Number , Visible
 -> Failed (salmon,bold) | 1 (salmon,bold) | Check box (checked)
 ->   Differences (salmon,bold) | 1 (salmon,bold) | Check box (checked)
 ->     output different (salmon,bold) | 1 (salmon,bold) | Check box (checked)
-Only one test found, selecting Test
 
 No longer greyed out : _Save
 
-Column titles changed in Test Tree with columns: Tests: All 1 selected, none hidden , Details
+Changed selection in Test Tree with columns: Tests: All 1 selected, none hidden , Details
+-> TargetApp (hello) (black/white,bold) | (white)
+->   Test (black/salmon) | output different (salmon)   ***
 
 Current page changed in Notebook with tabs: Test , Status , Selection , Run Info
 Viewing page 'Test'
@@ -110,6 +111,11 @@ Expected application event 'completion of test actions' occurred, proceeding.
 
 'view actions for file' event created with arguments 'output.hello'
 
+Changed selection in File Tree with columns: Test , Details
+-> Comparison Files (bold)
+->   errors.hello (DarkSeaGreen2) | (DarkSeaGreen2)
+->   output.hello (salmon) | (salmon)   ***
+
 ---------- Popup Window ----------
 'View File' (Stock image 'gtk-open', accelerator 'Ctrl+O')
 'View Filtered File'
@@ -132,15 +138,24 @@ Expected application event 'completion of test actions' occurred, proceeding.
 
 'view original file' event created with arguments ''
 Adding entry completion 'free_text' ...
-Viewing file /carm/proj/texttest-tmp/geoff/texttest.26May134951.24999/texttest.gui/TestSelf/FileViewers/GUI/ViewOriginalFiles/TargetApp/Test/output.hello using 'emacs', refresh set to False
 
 Waiting for application event 'file editing operations to complete' to occur.
 
 Changing GUI status to: 'Started "emacs output.hello" in background (from test Test).'
 
+Changed selection in File Tree with columns: Test , Details
+-> Comparison Files (bold)
+->   errors.hello (DarkSeaGreen2) | (DarkSeaGreen2)
+->   output.hello (salmon) | (salmon)
+
 Expected application event 'file editing operations to complete' occurred, proceeding.
 
 'view actions for file' event created with arguments 'output.hello'
+
+Changed selection in File Tree with columns: Test , Details
+-> Comparison Files (bold)
+->   errors.hello (DarkSeaGreen2) | (DarkSeaGreen2)
+->   output.hello (salmon) | (salmon)   ***
 
 ---------- Popup Window ----------
 'View File' (Stock image 'gtk-open', accelerator 'Ctrl+O')
@@ -163,11 +178,15 @@ Expected application event 'file editing operations to complete' occurred, proce
 ----------------------------------
 
 'view filtered original file' event created with arguments ''
-Viewing file /carm/proj/texttest-tmp/geoff/texttest.26May134951.24999/texttest.gui/TestSelf/FileViewers/GUI/ViewOriginalFiles/texttesttmp/dynamic_gui.26May135034.20240/hello/Test/framework_tmp/output.helloorigcmp using 'emacs', refresh set to False
 
 Waiting for application event 'file editing operations to complete' to occur.
 
 Changing GUI status to: 'Started "emacs output.helloorigcmp" in background (from test Test).'
+
+Changed selection in File Tree with columns: Test , Details
+-> Comparison Files (bold)
+->   errors.hello (DarkSeaGreen2) | (DarkSeaGreen2)
+->   output.hello (salmon) | (salmon)
 
 Expected application event 'file editing operations to complete' occurred, proceeding.
 

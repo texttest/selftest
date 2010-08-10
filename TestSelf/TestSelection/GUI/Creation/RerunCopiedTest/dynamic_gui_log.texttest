@@ -4,7 +4,7 @@ Adding entry completion 'copy_1' ...
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
 
----------- Window 'TextTest dynamic GUI : testing HELLO (started at 26May15:40:45)' ----------
+---------- Window 'TextTest dynamic GUI : testing HELLO (started at 10Aug14:57:34)' ----------
 Focus widget is 'Test Tree'
 
 Menu Bar : 'File' (+) , 'View' (+) , 'Actions' (+) , 'Help' (+)
@@ -28,7 +28,7 @@ Showing Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 4 (white,bold) | Check box (checked)
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 26May15:40:48.' , Image 'throbber_inactive.png'
+'TextTest started at 10Aug14:57:36.' , Image 'throbber_inactive.png'
 ----------------------------------------------------------------------------------------------
 
 Updated : Test Tree with columns: Tests: 0/4 selected, 3 hidden , Details
@@ -340,7 +340,7 @@ Updated : Test Status View with columns: Status , Number , Visible
 ->   Differences (salmon,bold) | 1 (salmon,bold) | Check box (checked)
 ->     output different (salmon,bold) | 1 (salmon,bold) | Check box (checked)
 
-Progress bar set to fraction 1.0, text 'All 4 tests completed at 26May15:40:50'
+Progress bar set to fraction 1.0, text 'All 4 tests completed at 10Aug14:57:37'
 
 Updated : Test Tree with columns: Tests: 0/4 selected, none hidden , Details
 -> TargetApp (hello) (black/white,bold) | (white)
@@ -369,7 +369,15 @@ Expected application event 'completion of test actions' occurred, proceeding.
 
 No longer greyed out : _Save
 
-Column titles changed in Test Tree with columns: Tests: 1/4 selected, none hidden , Details
+Changed selection in Test Tree with columns: Tests: 1/4 selected, none hidden , Details
+-> TargetApp (hello) (black/white,bold) | (white)
+->   Suite1 (black/white,bold) | (white)
+->     One1 (black/DarkSeaGreen2) | (DarkSeaGreen2)
+->     Two (black/salmon) | output different (salmon)
+-> TargetApp (hello.copy_1) (black/white,bold) | (white)
+->   Suite1 (black/white,bold) | (white)
+->     One1 (black/DarkSeaGreen2) | (DarkSeaGreen2)
+->     Two (black/salmon) | output different (salmon)   ***
 
 Current page changed in Notebook with tabs: Test , Status , Selection , Run Info
 Viewing page 'Test'
@@ -406,17 +414,17 @@ Test FAILED :
 
 'rerun selected tests' event created with arguments ''
 Adding entry completion 'output' ...
-Starting rerun run of TextTest with arguments ['-g', '-a', 'hello', '-count', '1', '-f', '/carm/proj/texttest-tmp/geoff/texttest.26May154020.15279/texttest.gui/TestSelf/TestSelection/GUI/Creation/RerunCopiedTest/texttesttmp/static_gui.26May154037.29566/dynamic_run1/dynamic_run1/gui_select', '-m', 'localhost', '-xr', '/carm/proj/texttest-tmp/geoff/texttest.26May154020.15279/texttest.gui/TestSelf/TestSelection/GUI/Creation/RerunCopiedTest/log/logging.debug', '-xw', '/carm/proj/texttest-tmp/geoff/texttest.26May154020.15279/texttest.gui/TestSelf/TestSelection/GUI/Creation/RerunCopiedTest/log', '-vanilla', 'site', '-fd', '/carm/proj/texttest-tmp/geoff/texttest.26May154020.15279/texttest.gui/TestSelf/TestSelection/GUI/Creation/RerunCopiedTest/texttesttmp/static_gui.26May154037.29566/temporary_filter_files']
+Starting rerun run of TextTest with arguments ['-g', '-a', 'hello', '-count', '1', '-f', '/carm/proj/texttest-tmp/geoff/dynamic_gui.10Aug145655.4770/texttest.gui/TestSelf/TestSelection/GUI/Creation/RerunCopiedTest/texttesttmp/static_gui.10Aug145729.5019/dynamic_run1/dynamic_run1/gui_select', '-m', 'localhost', '-xr', '/carm/proj/texttest-tmp/geoff/dynamic_gui.10Aug145655.4770/texttest.gui/TestSelf/TestSelection/GUI/Creation/RerunCopiedTest/log/logging.debug', '-xw', '/carm/proj/texttest-tmp/geoff/dynamic_gui.10Aug145655.4770/texttest.gui/TestSelf/TestSelection/GUI/Creation/RerunCopiedTest/log', '-vanilla', 'site', '-fd', '/carm/proj/texttest-tmp/geoff/dynamic_gui.10Aug145655.4770/texttest.gui/TestSelf/TestSelection/GUI/Creation/RerunCopiedTest/texttesttmp/static_gui.10Aug145729.5019/temporary_filter_files']
 
 Waiting for application event 'rerun GUI to be closed' to occur.
 
-Changing GUI status to: 'Started test Suite1/Two at 26May15:40:50.'
+Changing GUI status to: 'Started test Suite1/Two at 10Aug14:57:37.'
 Enabling entry completion, using matching 1
 Adding entry completion '<default>' ...
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
 
----------- Window 'TextTest dynamic GUI : testing HELLO (started at 26May15:40:50)' ----------
+---------- Window 'TextTest dynamic GUI : testing HELLO (started at 10Aug14:57:41)' ----------
 Focus widget is 'Test Tree'
 
 Menu Bar : 'File' (+) , 'View' (+) , 'Actions' (+) , 'Help' (+)
@@ -440,7 +448,7 @@ Showing Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 1 (white,bold) | Check box (checked)
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 26May15:40:52.' , Image 'throbber_inactive.png'
+'TextTest started at 10Aug14:57:42.' , Image 'throbber_inactive.png'
 ----------------------------------------------------------------------------------------------
 
 Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
@@ -478,7 +486,7 @@ Updated : Test Status View with columns: Status , Number , Visible
 -> Running (white) | 0 (white) | Check box (checked)
 -> Final filter (LightGoldenrod1,bold) | 1 (LightGoldenrod1,bold) | Check box (checked)
 
-Progress bar set to fraction 1.0, text 'All 1 tests completed at 26May15:40:53'
+Progress bar set to fraction 1.0, text 'All 1 tests completed at 10Aug14:57:43'
 
 Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
 -> TargetApp (hello) (black/white,bold) | (white)
@@ -493,11 +501,13 @@ Updated : Test Status View with columns: Status , Number , Visible
 -> Failed (salmon,bold) | 1 (salmon,bold) | Check box (checked)
 ->   Differences (salmon,bold) | 1 (salmon,bold) | Check box (checked)
 ->     output different (salmon,bold) | 1 (salmon,bold) | Check box (checked)
-Only one test found, selecting Two
 
 No longer greyed out : _Save
 
-Column titles changed in Test Tree with columns: Tests: All 1 selected, none hidden , Details
+Changed selection in Test Tree with columns: Tests: All 1 selected, none hidden , Details
+-> TargetApp (hello) (black/white,bold) | (white)
+->   Suite1 (black/white,bold) | (white)
+->     Two (black/salmon) | output different (salmon)   ***
 
 Current page changed in Notebook with tabs: Test , Status , Selection , Run Info
 Viewing page 'Test'

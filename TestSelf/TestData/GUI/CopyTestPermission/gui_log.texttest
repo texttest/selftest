@@ -2,9 +2,9 @@ Enabling entry completion, using matching 1
 Adding entry completion '<default>' ...
 Adding entry completion 'localhost' ...
 Adding entry completion '1' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.31May141619.29411/texttest.gui/TestSelf/TestData/GUI/CopyTestPermission/log/logging.debug' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/dynamic_gui.10Aug163734.12802/texttest.gui/TestSelf/TestData/GUI/CopyTestPermission/log/logging.debug' ...
 Adding entry completion '/users/geoff/work/master/Testing/TextTest/log/logging.debug' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.31May141619.29411/texttest.gui/TestSelf/TestData/GUI/CopyTestPermission/log' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/dynamic_gui.10Aug163734.12802/texttest.gui/TestSelf/TestData/GUI/CopyTestPermission/log' ...
 Adding entry completion 'site' ...
 Adding entry completion 'personal' ...
 Adding entry completion 'all' ...
@@ -49,7 +49,7 @@ Button 'Filter' (Stock image 'gtk-find', accelerator 'Ctrl+F', tooltip 'filter t
 Button 'Reset Tab' (tooltip 'Reset all the settings in the current tab to their default values')
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 31May14:17:14.' , Image 'throbber_inactive.png'
+'TextTest started at 10Aug16:39:35.' , Image 'throbber_inactive.png'
 --------------------------------------------------------------------------------------
 
 Changing GUI status to: 'Reading tests ...'
@@ -61,7 +61,7 @@ Updated : Test Tree with columns: Tests: 0/1 selected
 ->   PrintPermissions (black/grey90)
 Updated drop-down list in 'Test-file to search' Text entry (set to 'errors') (drop-down list containing ['errors', 'fake_executable', 'output'])
 
-Changing GUI status to: 'Reading tests completed at 31May14:17:15.'
+Changing GUI status to: 'Reading tests completed at 10Aug16:39:35.'
 
 Expected application event 'all tests to be read' occurred, proceeding.
 
@@ -69,7 +69,9 @@ Expected application event 'all tests to be read' occurred, proceeding.
 
 No longer greyed out : _Run
 
-Column titles changed in Test Tree with columns: Tests: All 1 selected
+Changed selection in Test Tree with columns: Tests: All 1 selected
+-> TargetApp (printperm) (black/grey90,bold)
+->   PrintPermissions (black/grey90)   ***
 
 Current page changed in Notebook with tabs: Test , Selection , Running , Config
 Viewing page 'Test'
@@ -100,19 +102,16 @@ Adding entry completion 'errors' ...
 
 Updated : Test Tree with columns: Tests: All 1 selected
 -> TargetApp (printperm) (black/grey90,bold)
-->   PrintPermissions (grey60/grey90)
+->   PrintPermissions (grey60/grey90)   ***
 
 Changing GUI status to: 'Performed 'Copy selected tests' on test PrintPermissions.'
 
 'paste tests from clipboard' event created with arguments ''
-Pasting test PrintPermissions_copy under test suite PRINTPERM test-suite TargetApp, in position 1
-Selecting new tests : [PRINTPERM test-case PrintPermissions_copy]
-Marking 1 tests as selected
 
 Updated : Test Tree with columns: Tests: 1/2 selected
 -> TargetApp (printperm) (black/grey90,bold)
 ->   PrintPermissions (grey60/grey90)
-->   PrintPermissions_copy (black/grey90)
+->   PrintPermissions_copy (black/grey90)   ***
 
 Updated : File Tree with columns: PrintPermissions__copy
 -> Standard Files (white,bold)
@@ -135,7 +134,10 @@ Changing GUI status to: 'Pasted test PrintPermissions_copy to suite 'TargetApp''
 
 'set test selection to' event created with arguments 'PrintPermissions,PrintPermissions_copy'
 
-Column titles changed in Test Tree with columns: Tests: All 2 selected
+Changed selection in Test Tree with columns: Tests: All 2 selected
+-> TargetApp (printperm) (black/grey90,bold)
+->   PrintPermissions (grey60/grey90)   ***
+->   PrintPermissions_copy (black/grey90)   ***
 
 Current page changed in Notebook with tabs: Selection , Running , Config
 Viewing page 'Selection'
@@ -157,11 +159,11 @@ Button 'Filter' (Stock image 'gtk-find', accelerator 'Ctrl+F', tooltip 'filter t
 Button 'Reset Tab' (tooltip 'Reset all the settings in the current tab to their default values')
 
 'run selected tests' event created with arguments ''
-Starting dynamic run of TextTest with arguments ['-g', '-a', 'printperm', '-m', 'localhost', '-cp', '1', '-xr', '/carm/proj/texttest-tmp/geoff/texttest.31May141619.29411/texttest.gui/TestSelf/TestData/GUI/CopyTestPermission/log/logging.debug', '-xw', '/carm/proj/texttest-tmp/geoff/texttest.31May141619.29411/texttest.gui/TestSelf/TestData/GUI/CopyTestPermission/log', '-vanilla', 'site', '-count', '2', '-f', '/carm/proj/texttest-tmp/geoff/texttest.31May141619.29411/texttest.gui/TestSelf/TestData/GUI/CopyTestPermission/texttesttmp/static_gui.31May141713.28099/dynamic_run1/gui_select', '-fd', '/carm/proj/texttest-tmp/geoff/texttest.31May141619.29411/texttest.gui/TestSelf/TestData/GUI/CopyTestPermission/texttesttmp/static_gui.31May141713.28099/temporary_filter_files']
+Starting dynamic run of TextTest with arguments ['-g', '-a', 'printperm', '-m', 'localhost', '-cp', '1', '-xr', '/carm/proj/texttest-tmp/geoff/dynamic_gui.10Aug163734.12802/texttest.gui/TestSelf/TestData/GUI/CopyTestPermission/log/logging.debug', '-xw', '/carm/proj/texttest-tmp/geoff/dynamic_gui.10Aug163734.12802/texttest.gui/TestSelf/TestData/GUI/CopyTestPermission/log', '-vanilla', 'site', '-count', '2', '-f', '/carm/proj/texttest-tmp/geoff/dynamic_gui.10Aug163734.12802/texttest.gui/TestSelf/TestData/GUI/CopyTestPermission/texttesttmp/static_gui.10Aug163930.18089/dynamic_run1/gui_select', '-fd', '/carm/proj/texttest-tmp/geoff/dynamic_gui.10Aug163734.12802/texttest.gui/TestSelf/TestData/GUI/CopyTestPermission/texttesttmp/static_gui.10Aug163930.18089/temporary_filter_files']
 
 Waiting for application event 'dynamic GUI to be closed' to occur.
 
-Changing GUI status to: 'Started 2 tests at 31May14:17:15.'
+Changing GUI status to: 'Started 2 tests at 10Aug16:39:36.'
 
 Expected application event 'dynamic GUI to be closed' occurred, proceeding.
 

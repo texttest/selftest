@@ -3,7 +3,7 @@ Adding entry completion '<default>' ...
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
 
----------- Window 'TextTest dynamic GUI : testing GEN (started at 26May15:41:00)' ----------
+---------- Window 'TextTest dynamic GUI : testing GEN (started at 10Aug16:39:43)' ----------
 Focus widget is 'Test Tree'
 
 Menu Bar : 'File' (+) , 'View' (+) , 'Actions' (+) , 'Help' (+)
@@ -12,7 +12,7 @@ Tool Bar :
   _Quit (Stock image 'gtk-quit', accelerator 'Ctrl+Q', tooltip 'Quit')
   _Kill (Stock image 'gtk-stop', greyed out, accelerator 'Ctrl+Delete', tooltip 'Kill selected tests')
   _Save (Stock image 'gtk-save', greyed out, accelerator 'Ctrl+S', tooltip 'Save results for selected tests')
-  Progress bar set to fraction 0.0, text 'All 0 tests completed at 26May15:41:03'
+  Progress bar set to fraction 0.0, text 'All 0 tests completed at 10Aug16:39:44'
 ...........
 
 Showing Test Tree with columns: Tests: All 0 selected , Details
@@ -26,7 +26,7 @@ Viewing page 'Status'
 Showing Test Status View with columns: Status , Number , Visible
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 26May15:41:03.' , Image 'throbber_inactive.png'
+'TextTest started at 10Aug16:39:44.' , Image 'throbber_inactive.png'
 --------------------------------------------------------------------------------------------
 
 Progress bar set to fraction 0.0, text '0 of 1 tests completed'
@@ -62,7 +62,9 @@ Expected application event 'test Generate to start' occurred, proceeding.
 
 No longer greyed out : _Kill
 
-Column titles changed in Test Tree with columns: Tests: All 1 selected, none hidden , Details
+Changed selection in Test Tree with columns: Tests: All 1 selected, none hidden , Details
+-> TargetApp (gen) (black/white,bold) | (white)
+->   Generate (black/LightGoldenrod1) | (LightGoldenrod1)   ***
 
 Current page changed in Notebook with tabs: Test , Status , Selection , Run Info
 Viewing page 'Test'
@@ -82,7 +84,7 @@ Showing File Tree with columns: Generate , Details
 ...........
 
 ========== Text Info ==========
-Running on kikweto
+Running on geita
 
 To obtain the latest progress information and an up-to-date comparison of the files above, perform 'recompute status' (press 'F5')
 ===============================
@@ -91,7 +93,6 @@ To obtain the latest progress information and an up-to-date comparison of the fi
 Adding entry completion 'free_text' ...
 
 Changing GUI status to: 'Killing 1 tests ...'
-Killing GEN test-case Generate
 
 Waiting for application event 'completion of test actions' to occur.
 
@@ -99,7 +100,7 @@ Changing GUI status to: 'Performed 'Kill selected tests' on test Generate.'
 
 Updated : Test Tree with columns: Tests: All 1 selected, none hidden , Details
 -> TargetApp (gen) (black/white,bold) | (white)
-->   Generate (black/LightGoldenrod1) | (LightGoldenrod1)
+->   Generate (black/LightGoldenrod1) | (LightGoldenrod1)   ***
 
 Updated : File Tree with columns: Generate , Details
 -> Temporary Files (bold)
@@ -111,7 +112,7 @@ Updated : File Tree with columns: Generate , Details
 ->   generated_third.gen (LightGoldenrod1) | (LightGoldenrod1)
 
 ========== Text Info ==========
-Filtering and comparing newly generated result files on kikweto
+Filtering and comparing newly generated result files on geita
 
 To obtain the latest progress information and an up-to-date comparison of the files above, perform 'recompute status' (press 'F5')
 ===============================
@@ -119,11 +120,11 @@ To obtain the latest progress information and an up-to-date comparison of the fi
 Greyed out : _Kill
 No longer greyed out : _Save
 
-Progress bar set to fraction 1.0, text 'All 1 tests completed at 26May15:41:05'
+Progress bar set to fraction 1.0, text 'All 1 tests completed at 10Aug16:39:47'
 
 Updated : Test Tree with columns: Tests: All 1 selected, none hidden , Details
 -> TargetApp (gen) (black/white,bold) | (white)
-->   Generate (black/salmon) | KILLED (collhang.py) (salmon)
+->   Generate (black/salmon) | KILLED (collhang.py) (salmon)   ***
 
 Updated : File Tree with columns: Generate , Details
 -> Comparison Files (bold)
@@ -138,8 +139,8 @@ Updated : File Tree with columns: Generate , Details
 
 ========== Text Info ==========
 Test were terminated before completion (KILLED (collhang.py)) :
-Killed collation script '/carm/proj/texttest-tmp/geoff/texttest.26May154020.15279/texttest.gui/TestSelf/CollateFiles/PatternMatching/GUI/CollateScriptHangs/TargetApp/source/collhang.py'
- while collating file at /carm/proj/texttest-tmp/geoff/texttest.26May154020.15279/texttest.gui/TestSelf/CollateFiles/PatternMatching/GUI/CollateScriptHangs/texttesttmp/gen.26May154100.29932/gen/Generate/created_1.dump
+Killed collation script '/carm/proj/texttest-tmp/geoff/dynamic_gui.10Aug163734.12802/texttest.gui/TestSelf/CollateFiles/PatternMatching/GUI/CollateScriptHangs/TargetApp/source/collhang.py'
+ while collating file at /carm/proj/texttest-tmp/geoff/dynamic_gui.10Aug163734.12802/texttest.gui/TestSelf/CollateFiles/PatternMatching/GUI/CollateScriptHangs/texttesttmp/gen.10Aug163943.25283/gen/Generate/created_1.dump
 ---------- Differences in created_1 ----------
 1c1
 < created_1.dump
@@ -152,7 +153,10 @@ Generating generated_third.dump
 Generating created_1.dump
 Generating created_2.dump
 ===============================
-Only one test found, selecting Generate
+
+Changed selection in Test Tree with columns: Tests: All 1 selected, none hidden , Details
+-> TargetApp (gen) (black/white,bold) | (white)
+->   Generate (black/salmon) | KILLED (collhang.py) (salmon)   ***
 
 Updated : File Tree with columns: Generate , Details
 -> Comparison Files (bold)

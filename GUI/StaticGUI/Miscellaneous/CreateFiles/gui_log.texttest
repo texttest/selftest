@@ -2,9 +2,9 @@ Enabling entry completion, using matching 1
 Adding entry completion '<default>' ...
 Adding entry completion 'localhost' ...
 Adding entry completion '1' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.31May141619.29411/texttest.gui/GUI/StaticGUI/Miscellaneous/CreateFiles/log/logging.debug' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/dynamic_gui.10Aug163734.12802/texttest.gui/GUI/StaticGUI/Miscellaneous/CreateFiles/log/logging.debug' ...
 Adding entry completion '/users/geoff/work/master/Testing/TextTest/log/logging.debug' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.31May141619.29411/texttest.gui/GUI/StaticGUI/Miscellaneous/CreateFiles/log' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/dynamic_gui.10Aug163734.12802/texttest.gui/GUI/StaticGUI/Miscellaneous/CreateFiles/log' ...
 Adding entry completion 'site' ...
 Adding entry completion 'personal' ...
 Adding entry completion 'all' ...
@@ -49,7 +49,7 @@ Button 'Filter' (Stock image 'gtk-find', accelerator 'Ctrl+F', tooltip 'filter t
 Button 'Reset Tab' (tooltip 'Reset all the settings in the current tab to their default values')
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 31May14:17:46.' , Image 'throbber_inactive.png'
+'TextTest started at 10Aug16:40:23.' , Image 'throbber_inactive.png'
 --------------------------------------------------------------------------------
 
 Changing GUI status to: 'Reading tests ...'
@@ -94,7 +94,7 @@ Updated : Test Tree with columns: Tests: 0/11 selected
 ->       S01 (black/grey90)
 Updated drop-down list in 'Test-file to search' Text entry (set to 'output') (drop-down list containing ['output'])
 
-Changing GUI status to: 'Reading tests completed at 31May14:17:46.'
+Changing GUI status to: 'Reading tests completed at 10Aug16:40:23.'
 
 Expected application event 'all tests to be read' occurred, proceeding.
 
@@ -102,7 +102,22 @@ Expected application event 'all tests to be read' occurred, proceeding.
 
 No longer greyed out : _Run
 
-Column titles changed in Test Tree with columns: Tests: 1 suite selected
+Changed selection in Test Tree with columns: Tests: 1 suite selected
+-> TargetApp (dip) (black/grey90,bold)
+->   Game9952 (black/grey90,bold)
+->     S01.99 (black/grey90)
+->     A01 (black/grey90)
+->     S02 (black/grey90)
+->     A02 (black/grey90)
+->     S03 (black/grey90)
+->     A03 (black/grey90)
+->     S04 (black/grey90)
+->     A04 (black/grey90)
+->     S05 (black/grey90)
+->     A05 (black/grey90)
+->   npstIII (black/grey90,bold)   ***
+->     Game47 (black/grey90,bold)
+->       S01 (black/grey90)
 
 Current page changed in Notebook with tabs: Test , Selection , Running , Config
 Viewing page 'Test'
@@ -125,6 +140,10 @@ npstIII
 ===============================
 
 'set file selection to' event created with arguments 'Definition Files'
+
+Changed selection in File Tree with columns: npstIII
+-> Definition Files (white,bold)   ***
+->   testsuite.dip (grey90)
 
 'create a new file or directory, possibly by copying it' event created with arguments ''
 Adding text '<b><u>Create or import files in the test directory</u></b>'
@@ -149,22 +168,20 @@ Radio button 'Create a new file' (checked)
 Radio button 'Create a new directory'
 .....'Source to copy from:'......
 
-Showing Source File Chooser (selected '/carm/proj/texttest-tmp/geoff/texttest.31May141619.29411/texttest.gui/GUI/StaticGUI/Miscellaneous/CreateFiles/TargetApp/npstIII') (greyed out)
+Showing Source File Chooser (selected '/carm/proj/texttest-tmp/geoff/dynamic_gui.10Aug163734.12802/texttest.gui/GUI/StaticGUI/Miscellaneous/CreateFiles/TargetApp/npstIII') (greyed out)
 Shortcut folders (1) :
-- /carm/proj/texttest-tmp/geoff/texttest.31May141619.29411/texttest.gui/GUI/StaticGUI/Miscellaneous/CreateFiles/TargetApp
+- /carm/proj/texttest-tmp/geoff/dynamic_gui.10Aug163734.12802/texttest.gui/GUI/StaticGUI/Miscellaneous/CreateFiles/TargetApp
 ---------------
 Button 'gtk-ok' (Stock image 'gtk-ok') , Button 'gtk-cancel' (Stock image 'gtk-cancel')
 ------------------------------------------------------------------
 
 'press create' event created with arguments ''
-Creating new empty file...
 Adding entry completion 'output' ...
-Viewing file /carm/proj/texttest-tmp/geoff/texttest.31May141619.29411/texttest.gui/GUI/StaticGUI/Miscellaneous/CreateFiles/TargetApp/npstIII/environment.dip using 'emacs', refresh set to False
 
 Waiting for application event 'file editing operations to complete' to occur.
 
 Updated : File Tree with columns: npstIII
--> Definition Files (white,bold)
+-> Definition Files (white,bold)   ***
 ->   environment.dip (grey90)
 ->   testsuite.dip (grey90)
 
@@ -173,6 +190,23 @@ Changing GUI status to: 'Started "emacs environment.dip" in background (from tes
 Expected application event 'file editing operations to complete' occurred, proceeding.
 
 'set test selection to' event created with arguments 'Game47'
+
+Changed selection in Test Tree with columns: Tests: 1 suite selected
+-> TargetApp (dip) (black/grey90,bold)
+->   Game9952 (black/grey90,bold)
+->     S01.99 (black/grey90)
+->     A01 (black/grey90)
+->     S02 (black/grey90)
+->     A02 (black/grey90)
+->     S03 (black/grey90)
+->     A03 (black/grey90)
+->     S04 (black/grey90)
+->     A04 (black/grey90)
+->     S05 (black/grey90)
+->     A05 (black/grey90)
+->   npstIII (black/grey90,bold)
+->     Game47 (black/grey90,bold)   ***
+->       S01 (black/grey90)
 
 Updated : File Tree with columns: Game47
 -> Definition Files (white,bold)
@@ -188,6 +222,10 @@ npstIII/Game47
 ===============================
 
 'set file selection to' event created with arguments 'Definition Files'
+
+Changed selection in File Tree with columns: Game47
+-> Definition Files (white,bold)   ***
+->   testsuite.dip (grey90)
 
 'create a new file or directory, possibly by copying it' event created with arguments ''
 Adding text '<b><u>Create or import files in the test directory</u></b>'
@@ -209,9 +247,9 @@ Radio button 'Create a new file' (checked)
 Radio button 'Create a new directory'
 .....'Source to copy from:'......
 
-Showing Source File Chooser (selected '/carm/proj/texttest-tmp/geoff/texttest.31May141619.29411/texttest.gui/GUI/StaticGUI/Miscellaneous/CreateFiles/TargetApp/npstIII/environment.dip') (greyed out)
+Showing Source File Chooser (selected '/carm/proj/texttest-tmp/geoff/dynamic_gui.10Aug163734.12802/texttest.gui/GUI/StaticGUI/Miscellaneous/CreateFiles/TargetApp/npstIII/environment.dip') (greyed out)
 Shortcut folders (1) :
-- /carm/proj/texttest-tmp/geoff/texttest.31May141619.29411/texttest.gui/GUI/StaticGUI/Miscellaneous/CreateFiles/TargetApp
+- /carm/proj/texttest-tmp/geoff/dynamic_gui.10Aug163734.12802/texttest.gui/GUI/StaticGUI/Miscellaneous/CreateFiles/TargetApp
 ---------------
 Button 'gtk-ok' (Stock image 'gtk-ok') , Button 'gtk-cancel' (Stock image 'gtk-cancel')
 ------------------------------------------------------------------
@@ -226,14 +264,12 @@ Toggled Radio button 'Import file/directory from source' (checked)
 Toggled Radio button 'Create a new file'
 
 'press create' event created with arguments ''
-Creating new path, copying /carm/proj/texttest-tmp/geoff/texttest.31May141619.29411/texttest.gui/GUI/StaticGUI/Miscellaneous/CreateFiles/TargetApp/npstIII/environment.dip
 Adding entry completion 'ver' ...
-Viewing file /carm/proj/texttest-tmp/geoff/texttest.31May141619.29411/texttest.gui/GUI/StaticGUI/Miscellaneous/CreateFiles/TargetApp/npstIII/Game47/environment.dip.ver using 'emacs', refresh set to False
 
 Waiting for application event 'file editing operations to complete' to occur.
 
 Updated : File Tree with columns: Game47
--> Definition Files (white,bold)
+-> Definition Files (white,bold)   ***
 ->   environment.dip.ver (grey90)
 ->   testsuite.dip (grey90)
 
@@ -243,7 +279,22 @@ Expected application event 'file editing operations to complete' occurred, proce
 
 'set test selection to' event created with arguments 'S01'
 
-Column titles changed in Test Tree with columns: Tests: 1/11 selected
+Changed selection in Test Tree with columns: Tests: 1/11 selected
+-> TargetApp (dip) (black/grey90,bold)
+->   Game9952 (black/grey90,bold)
+->     S01.99 (black/grey90)
+->     A01 (black/grey90)
+->     S02 (black/grey90)
+->     A02 (black/grey90)
+->     S03 (black/grey90)
+->     A03 (black/grey90)
+->     S04 (black/grey90)
+->     A04 (black/grey90)
+->     S05 (black/grey90)
+->     A05 (black/grey90)
+->   npstIII (black/grey90,bold)
+->     Game47 (black/grey90,bold)
+->       S01 (black/grey90)   ***
 
 Updated : File Tree with columns: S01
 -> Standard Files (white,bold)
@@ -260,6 +311,11 @@ npstIII/Game47/S01
 ===============================
 
 'set file selection to' event created with arguments 'Definition Files'
+
+Changed selection in File Tree with columns: S01
+-> Standard Files (white,bold)
+->   output.dip (grey90)
+-> Definition Files (white)   ***
 
 'create a new file or directory, possibly by copying it' event created with arguments ''
 Adding text '<b><u>Create or import files in the test directory</u></b>'
@@ -282,9 +338,9 @@ Radio button 'Create a new file' (checked)
 Radio button 'Create a new directory'
 .....'Source to copy from:'......
 
-Showing Source File Chooser (selected '/carm/proj/texttest-tmp/geoff/texttest.31May141619.29411/texttest.gui/GUI/StaticGUI/Miscellaneous/CreateFiles/TargetApp/npstIII/Game47/environment.dip.ver') (greyed out)
+Showing Source File Chooser (selected '/carm/proj/texttest-tmp/geoff/dynamic_gui.10Aug163734.12802/texttest.gui/GUI/StaticGUI/Miscellaneous/CreateFiles/TargetApp/npstIII/Game47/environment.dip.ver') (greyed out)
 Shortcut folders (1) :
-- /carm/proj/texttest-tmp/geoff/texttest.31May141619.29411/texttest.gui/GUI/StaticGUI/Miscellaneous/CreateFiles/TargetApp
+- /carm/proj/texttest-tmp/geoff/dynamic_gui.10Aug163734.12802/texttest.gui/GUI/StaticGUI/Miscellaneous/CreateFiles/TargetApp
 ---------------
 Button 'gtk-ok' (Stock image 'gtk-ok') , Button 'gtk-cancel' (Stock image 'gtk-cancel')
 ------------------------------------------------------------------
@@ -292,18 +348,16 @@ Button 'gtk-ok' (Stock image 'gtk-ok') , Button 'gtk-cancel' (Stock image 'gtk-c
 'enter type of file/directory to create =' event created with arguments 'options'
 Edited 'Type of file/directory to create' Text entry (set to 'options')
 
-Updated : Source File Chooser (selected '/carm/proj/texttest-tmp/geoff/texttest.31May141619.29411/texttest.gui/GUI/StaticGUI/Miscellaneous/CreateFiles/TargetApp/npstIII/Game47/S01') (greyed out)
+Updated : Source File Chooser (selected '/carm/proj/texttest-tmp/geoff/dynamic_gui.10Aug163734.12802/texttest.gui/GUI/StaticGUI/Miscellaneous/CreateFiles/TargetApp/npstIII/Game47/S01') (greyed out)
 
 'press create' event created with arguments ''
-Creating new empty file...
-Viewing file /carm/proj/texttest-tmp/geoff/texttest.31May141619.29411/texttest.gui/GUI/StaticGUI/Miscellaneous/CreateFiles/TargetApp/npstIII/Game47/S01/options.dip.ver using 'emacs', refresh set to False
 
 Waiting for application event 'file editing operations to complete' to occur.
 
 Updated : File Tree with columns: S01
 -> Standard Files (white,bold)
 ->   output.dip (grey90)
--> Definition Files (white,bold)
+-> Definition Files (white,bold)   ***
 ->   options.dip.ver (grey90)
 
 Changing GUI status to: 'Started "emacs options.dip.ver" in background (from test S01).'
@@ -311,6 +365,12 @@ Changing GUI status to: 'Started "emacs options.dip.ver" in background (from tes
 Expected application event 'file editing operations to complete' occurred, proceeding.
 
 'set file selection to' event created with arguments 'Standard Files'
+
+Changed selection in File Tree with columns: S01
+-> Standard Files (white,bold)   ***
+->   output.dip (grey90)
+-> Definition Files (white,bold)
+->   options.dip.ver (grey90)
 
 'create a new file or directory, possibly by copying it' event created with arguments ''
 Adding text '<b><u>Create or import files in the test directory</u></b>'
@@ -332,9 +392,9 @@ Radio button 'Create a new file' (checked)
 Radio button 'Create a new directory'
 .....'Source to copy from:'......
 
-Showing Source File Chooser (selected '/carm/proj/texttest-tmp/geoff/texttest.31May141619.29411/texttest.gui/GUI/StaticGUI/Miscellaneous/CreateFiles/TargetApp/npstIII/Game47/S01/output.dip') (greyed out)
+Showing Source File Chooser (selected '/carm/proj/texttest-tmp/geoff/dynamic_gui.10Aug163734.12802/texttest.gui/GUI/StaticGUI/Miscellaneous/CreateFiles/TargetApp/npstIII/Game47/S01/output.dip') (greyed out)
 Shortcut folders (1) :
-- /carm/proj/texttest-tmp/geoff/texttest.31May141619.29411/texttest.gui/GUI/StaticGUI/Miscellaneous/CreateFiles/TargetApp
+- /carm/proj/texttest-tmp/geoff/dynamic_gui.10Aug163734.12802/texttest.gui/GUI/StaticGUI/Miscellaneous/CreateFiles/TargetApp
 ---------------
 Button 'gtk-ok' (Stock image 'gtk-ok') , Button 'gtk-cancel' (Stock image 'gtk-cancel')
 ------------------------------------------------------------------
@@ -346,13 +406,11 @@ Toggled Radio button 'Import file/directory from source' (checked)
 Toggled Radio button 'Create a new file'
 
 'press create' event created with arguments ''
-Creating new path, copying /carm/proj/texttest-tmp/geoff/texttest.31May141619.29411/texttest.gui/GUI/StaticGUI/Miscellaneous/CreateFiles/TargetApp/npstIII/Game47/S01/output.dip
-Viewing file /carm/proj/texttest-tmp/geoff/texttest.31May141619.29411/texttest.gui/GUI/StaticGUI/Miscellaneous/CreateFiles/TargetApp/npstIII/Game47/S01/output.dip.ver using 'emacs', refresh set to False
 
 Waiting for application event 'file editing operations to complete' to occur.
 
 Updated : File Tree with columns: S01
--> Standard Files (white,bold)
+-> Standard Files (white,bold)   ***
 ->   output.dip (grey90)
 ->   output.dip.ver (grey90)
 -> Definition Files (white,bold)

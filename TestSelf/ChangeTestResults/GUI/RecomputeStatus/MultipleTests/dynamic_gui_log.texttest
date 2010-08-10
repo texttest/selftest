@@ -5,7 +5,7 @@ Adding entry completion '4' ...
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
 
----------- Window 'TextTest dynamic GUI : testing HELLO (started at 18Jun16:26:48)' ----------
+---------- Window 'TextTest dynamic GUI : testing HELLO (started at 10Aug14:57:41)' ----------
 Focus widget is 'Test Tree'
 
 Menu Bar : 'File' (+) , 'View' (+) , 'Actions' (+) , 'Help' (+)
@@ -14,7 +14,7 @@ Tool Bar :
   _Quit (Stock image 'gtk-quit', accelerator 'Ctrl+Q', tooltip 'Quit')
   _Kill (Stock image 'gtk-stop', greyed out, accelerator 'Ctrl+Delete', tooltip 'Kill selected tests')
   _Save (Stock image 'gtk-save', greyed out, accelerator 'Ctrl+S', tooltip 'Save results for selected tests')
-  Progress bar set to fraction 0.0, text 'All 0 tests completed at 18Jun16:26:49'
+  Progress bar set to fraction 0.0, text 'All 0 tests completed at 10Aug14:57:45'
 ...........
 
 Showing Test Tree with columns: Tests: All 0 selected , Details
@@ -28,7 +28,7 @@ Viewing page 'Status'
 Showing Test Status View with columns: Status , Number , Visible
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 18Jun16:26:49.' , Image 'throbber_inactive.png'
+'TextTest started at 10Aug14:57:45.' , Image 'throbber_inactive.png'
 ----------------------------------------------------------------------------------------------
 
 Progress bar set to fraction 0.0, text '0 of 1 tests completed'
@@ -1593,7 +1593,7 @@ Updated : Test Status View with columns: Status , Number , Visible
 ->       Group 1 (salmon,bold) | 6 (salmon,bold) | Check box (checked)
 -> Succeeded (DarkSeaGreen2,bold) | 3 (DarkSeaGreen2,bold) | Check box (checked)
 
-Progress bar set to fraction 1.0, text 'All 12 tests completed at 18Jun16:26:50'
+Progress bar set to fraction 1.0, text 'All 12 tests completed at 10Aug14:57:49'
 
 Updated : Test Tree with columns: Tests: 0/12 selected, none hidden , Details
 -> TargetApp (hello.2) (black/white,bold) | (white)
@@ -1631,7 +1631,22 @@ Expected application event 'completion of test actions' occurred, proceeding.
 
 No longer greyed out : _Save
 
-Column titles changed in Test Tree with columns: Tests: 1/12 selected, none hidden , Details
+Changed selection in Test Tree with columns: Tests: 1/12 selected, none hidden , Details
+-> TargetApp (hello.2) (black/white,bold) | (white)
+->   OutDiff (black/salmon) | output different (salmon)   ***
+->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)
+->   BothDiff (black/salmon) | errors different(+) (salmon)
+->   ErrDiff (black/salmon) | errors different (salmon)
+-> TargetApp (hello.3) (black/white,bold) | (white)
+->   OutDiff (black/salmon) | output different (salmon)
+->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)
+->   BothDiff (black/salmon) | errors different(+) (salmon)
+->   ErrDiff (black/salmon) | errors different (salmon)
+-> TargetApp (hello.4) (black/white,bold) | (white)
+->   OutDiff (black/salmon) | output different (salmon)
+->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)
+->   BothDiff (black/salmon) | errors different(+) (salmon)
+->   ErrDiff (black/salmon) | errors different (salmon)
 
 Current page changed in Notebook with tabs: Test , Status , Selection , Run Info
 Viewing page 'Test'
@@ -1677,7 +1692,7 @@ Greyed out : _Save
 
 Updated : Test Tree with columns: Tests: 1/12 selected, none hidden , Details
 -> TargetApp (hello.2) (black/white,bold) | (white)
-->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)
+->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
 ->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)
 ->   BothDiff (black/salmon) | errors different(+) (salmon)
 ->   ErrDiff (black/salmon) | errors different (salmon)
@@ -1699,7 +1714,7 @@ Updated : File Tree with columns: OutDiff , Details
 
 ========== Text Info ==========
 Test succeeded
-(Saved at 16:26)
+(Saved at 14:57)
 ===============================
 
 Changing GUI status to: 'Saved 1 tests.'
@@ -1708,7 +1723,22 @@ Changing GUI status to: 'Saved 1 tests.'
 
 No longer greyed out : _Save
 
-Column titles changed in Test Tree with columns: Tests: All 12 selected, none hidden , Details
+Changed selection in Test Tree with columns: Tests: All 12 selected, none hidden , Details
+-> TargetApp (hello.2) (black/white,bold) | (white)
+->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   BothDiff (black/salmon) | errors different(+) (salmon)   ***
+->   ErrDiff (black/salmon) | errors different (salmon)   ***
+-> TargetApp (hello.3) (black/white,bold) | (white)
+->   OutDiff (black/salmon) | output different (salmon) | Stock image 'gtk-refresh'   ***
+->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   BothDiff (black/salmon) | errors different(+) (salmon)   ***
+->   ErrDiff (black/salmon) | errors different (salmon)   ***
+-> TargetApp (hello.4) (black/white,bold) | (white)
+->   OutDiff (black/salmon) | output different (salmon) | Stock image 'gtk-refresh'   ***
+->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   BothDiff (black/salmon) | errors different(+) (salmon)   ***
+->   ErrDiff (black/salmon) | errors different (salmon)   ***
 
 Column titles changed in File Tree with columns: Sample from 12 tests , Details
 
@@ -1725,20 +1755,20 @@ Changing GUI status to: 'Recomputing status of HELLO.2 test-case OutDiff ...'
 
 Updated : Test Tree with columns: Tests: All 12 selected, none hidden , Details
 -> TargetApp (hello.2) (black/white,bold) | (white)
-->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   BothDiff (black/salmon) | errors different(+) (salmon)
-->   ErrDiff (black/salmon) | errors different (salmon)
+->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   BothDiff (black/salmon) | errors different(+) (salmon)   ***
+->   ErrDiff (black/salmon) | errors different (salmon)   ***
 -> TargetApp (hello.3) (black/white,bold) | (white)
-->   OutDiff (black/salmon) | output different (salmon) | Stock image 'gtk-refresh'
-->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   BothDiff (black/salmon) | errors different(+) (salmon)
-->   ErrDiff (black/salmon) | errors different (salmon)
+->   OutDiff (black/salmon) | output different (salmon) | Stock image 'gtk-refresh'   ***
+->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   BothDiff (black/salmon) | errors different(+) (salmon)   ***
+->   ErrDiff (black/salmon) | errors different (salmon)   ***
 -> TargetApp (hello.4) (black/white,bold) | (white)
-->   OutDiff (black/salmon) | output different (salmon) | Stock image 'gtk-refresh'
-->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   BothDiff (black/salmon) | errors different(+) (salmon)
-->   ErrDiff (black/salmon) | errors different (salmon)
+->   OutDiff (black/salmon) | output different (salmon) | Stock image 'gtk-refresh'   ***
+->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   BothDiff (black/salmon) | errors different(+) (salmon)   ***
+->   ErrDiff (black/salmon) | errors different (salmon)   ***
 
 Updated : File Tree with columns: Sample from 12 tests , Details
 -> Comparison Files (bold)
@@ -1753,195 +1783,216 @@ Changing GUI status to: 'Recomputing status of HELLO.2 test-case Success ...'
 
 Updated : Test Tree with columns: Tests: All 12 selected, none hidden , Details
 -> TargetApp (hello.2) (black/white,bold) | (white)
-->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   BothDiff (black/salmon) | errors different(+) (salmon)
-->   ErrDiff (black/salmon) | errors different (salmon)
+->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   BothDiff (black/salmon) | errors different(+) (salmon)   ***
+->   ErrDiff (black/salmon) | errors different (salmon)   ***
 -> TargetApp (hello.3) (black/white,bold) | (white)
-->   OutDiff (black/salmon) | output different (salmon) | Stock image 'gtk-refresh'
-->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   BothDiff (black/salmon) | errors different(+) (salmon)
-->   ErrDiff (black/salmon) | errors different (salmon)
+->   OutDiff (black/salmon) | output different (salmon) | Stock image 'gtk-refresh'   ***
+->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   BothDiff (black/salmon) | errors different(+) (salmon)   ***
+->   ErrDiff (black/salmon) | errors different (salmon)   ***
 -> TargetApp (hello.4) (black/white,bold) | (white)
-->   OutDiff (black/salmon) | output different (salmon) | Stock image 'gtk-refresh'
-->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   BothDiff (black/salmon) | errors different(+) (salmon)
-->   ErrDiff (black/salmon) | errors different (salmon)
+->   OutDiff (black/salmon) | output different (salmon) | Stock image 'gtk-refresh'   ***
+->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   BothDiff (black/salmon) | errors different(+) (salmon)   ***
+->   ErrDiff (black/salmon) | errors different (salmon)   ***
 
 Changing GUI status to: 'Recomputing status of HELLO.2 test-case BothDiff ...'
 
 Updated : Test Tree with columns: Tests: All 12 selected, none hidden , Details
 -> TargetApp (hello.2) (black/white,bold) | (white)
-->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   BothDiff (black/salmon) | errors different(+) (salmon)
-->   ErrDiff (black/salmon) | errors different (salmon)
+->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   BothDiff (black/salmon) | errors different(+) (salmon)   ***
+->   ErrDiff (black/salmon) | errors different (salmon)   ***
 -> TargetApp (hello.3) (black/white,bold) | (white)
-->   OutDiff (black/salmon) | output different (salmon) | Stock image 'gtk-refresh'
-->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   BothDiff (black/salmon) | errors different(+) (salmon)
-->   ErrDiff (black/salmon) | errors different (salmon)
+->   OutDiff (black/salmon) | output different (salmon) | Stock image 'gtk-refresh'   ***
+->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   BothDiff (black/salmon) | errors different(+) (salmon)   ***
+->   ErrDiff (black/salmon) | errors different (salmon)   ***
 -> TargetApp (hello.4) (black/white,bold) | (white)
-->   OutDiff (black/salmon) | output different (salmon) | Stock image 'gtk-refresh'
-->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   BothDiff (black/salmon) | errors different(+) (salmon)
-->   ErrDiff (black/salmon) | errors different (salmon)
+->   OutDiff (black/salmon) | output different (salmon) | Stock image 'gtk-refresh'   ***
+->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   BothDiff (black/salmon) | errors different(+) (salmon)   ***
+->   ErrDiff (black/salmon) | errors different (salmon)   ***
 
 Changing GUI status to: 'Recomputing status of HELLO.2 test-case ErrDiff ...'
 
 Updated : Test Tree with columns: Tests: All 12 selected, none hidden , Details
 -> TargetApp (hello.2) (black/white,bold) | (white)
-->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   BothDiff (black/salmon) | errors different(+) (salmon)
-->   ErrDiff (black/salmon) | errors different (salmon)
+->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   BothDiff (black/salmon) | errors different(+) (salmon)   ***
+->   ErrDiff (black/salmon) | errors different (salmon)   ***
 -> TargetApp (hello.3) (black/white,bold) | (white)
-->   OutDiff (black/salmon) | output different (salmon) | Stock image 'gtk-refresh'
-->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   BothDiff (black/salmon) | errors different(+) (salmon)
-->   ErrDiff (black/salmon) | errors different (salmon)
+->   OutDiff (black/salmon) | output different (salmon) | Stock image 'gtk-refresh'   ***
+->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   BothDiff (black/salmon) | errors different(+) (salmon)   ***
+->   ErrDiff (black/salmon) | errors different (salmon)   ***
 -> TargetApp (hello.4) (black/white,bold) | (white)
-->   OutDiff (black/salmon) | output different (salmon) | Stock image 'gtk-refresh'
-->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   BothDiff (black/salmon) | errors different(+) (salmon)
-->   ErrDiff (black/salmon) | errors different (salmon)
+->   OutDiff (black/salmon) | output different (salmon) | Stock image 'gtk-refresh'   ***
+->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   BothDiff (black/salmon) | errors different(+) (salmon)   ***
+->   ErrDiff (black/salmon) | errors different (salmon)   ***
 
 Changing GUI status to: 'Recomputing status of HELLO.3 test-case OutDiff ...'
 
 Updated : Test Tree with columns: Tests: All 12 selected, none hidden , Details
 -> TargetApp (hello.2) (black/white,bold) | (white)
-->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   BothDiff (black/salmon) | errors different(+) (salmon)
-->   ErrDiff (black/salmon) | errors different (salmon)
+->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   BothDiff (black/salmon) | errors different(+) (salmon)   ***
+->   ErrDiff (black/salmon) | errors different (salmon)   ***
 -> TargetApp (hello.3) (black/white,bold) | (white)
-->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   BothDiff (black/salmon) | errors different(+) (salmon)
-->   ErrDiff (black/salmon) | errors different (salmon)
+->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   BothDiff (black/salmon) | errors different(+) (salmon)   ***
+->   ErrDiff (black/salmon) | errors different (salmon)   ***
 -> TargetApp (hello.4) (black/white,bold) | (white)
-->   OutDiff (black/salmon) | output different (salmon) | Stock image 'gtk-refresh'
-->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   BothDiff (black/salmon) | errors different(+) (salmon)
-->   ErrDiff (black/salmon) | errors different (salmon)
+->   OutDiff (black/salmon) | output different (salmon) | Stock image 'gtk-refresh'   ***
+->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   BothDiff (black/salmon) | errors different(+) (salmon)   ***
+->   ErrDiff (black/salmon) | errors different (salmon)   ***
 
 Changing GUI status to: 'Recomputing status of HELLO.3 test-case Success ...'
 
 Updated : Test Tree with columns: Tests: All 12 selected, none hidden , Details
 -> TargetApp (hello.2) (black/white,bold) | (white)
-->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   BothDiff (black/salmon) | errors different(+) (salmon)
-->   ErrDiff (black/salmon) | errors different (salmon)
+->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   BothDiff (black/salmon) | errors different(+) (salmon)   ***
+->   ErrDiff (black/salmon) | errors different (salmon)   ***
 -> TargetApp (hello.3) (black/white,bold) | (white)
-->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   BothDiff (black/salmon) | errors different(+) (salmon)
-->   ErrDiff (black/salmon) | errors different (salmon)
+->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   BothDiff (black/salmon) | errors different(+) (salmon)   ***
+->   ErrDiff (black/salmon) | errors different (salmon)   ***
 -> TargetApp (hello.4) (black/white,bold) | (white)
-->   OutDiff (black/salmon) | output different (salmon) | Stock image 'gtk-refresh'
-->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   BothDiff (black/salmon) | errors different(+) (salmon)
-->   ErrDiff (black/salmon) | errors different (salmon)
+->   OutDiff (black/salmon) | output different (salmon) | Stock image 'gtk-refresh'   ***
+->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   BothDiff (black/salmon) | errors different(+) (salmon)   ***
+->   ErrDiff (black/salmon) | errors different (salmon)   ***
 
 Changing GUI status to: 'Recomputing status of HELLO.3 test-case BothDiff ...'
 
 Updated : Test Tree with columns: Tests: All 12 selected, none hidden , Details
 -> TargetApp (hello.2) (black/white,bold) | (white)
-->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   BothDiff (black/salmon) | errors different(+) (salmon)
-->   ErrDiff (black/salmon) | errors different (salmon)
+->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   BothDiff (black/salmon) | errors different(+) (salmon)   ***
+->   ErrDiff (black/salmon) | errors different (salmon)   ***
 -> TargetApp (hello.3) (black/white,bold) | (white)
-->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   BothDiff (black/salmon) | errors different(+) (salmon)
-->   ErrDiff (black/salmon) | errors different (salmon)
+->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   BothDiff (black/salmon) | errors different(+) (salmon)   ***
+->   ErrDiff (black/salmon) | errors different (salmon)   ***
 -> TargetApp (hello.4) (black/white,bold) | (white)
-->   OutDiff (black/salmon) | output different (salmon) | Stock image 'gtk-refresh'
-->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   BothDiff (black/salmon) | errors different(+) (salmon)
-->   ErrDiff (black/salmon) | errors different (salmon)
+->   OutDiff (black/salmon) | output different (salmon) | Stock image 'gtk-refresh'   ***
+->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   BothDiff (black/salmon) | errors different(+) (salmon)   ***
+->   ErrDiff (black/salmon) | errors different (salmon)   ***
 
 Changing GUI status to: 'Recomputing status of HELLO.3 test-case ErrDiff ...'
 
 Updated : Test Tree with columns: Tests: All 12 selected, none hidden , Details
 -> TargetApp (hello.2) (black/white,bold) | (white)
-->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   BothDiff (black/salmon) | errors different(+) (salmon)
-->   ErrDiff (black/salmon) | errors different (salmon)
+->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   BothDiff (black/salmon) | errors different(+) (salmon)   ***
+->   ErrDiff (black/salmon) | errors different (salmon)   ***
 -> TargetApp (hello.3) (black/white,bold) | (white)
-->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   BothDiff (black/salmon) | errors different(+) (salmon)
-->   ErrDiff (black/salmon) | errors different (salmon)
+->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   BothDiff (black/salmon) | errors different(+) (salmon)   ***
+->   ErrDiff (black/salmon) | errors different (salmon)   ***
 -> TargetApp (hello.4) (black/white,bold) | (white)
-->   OutDiff (black/salmon) | output different (salmon) | Stock image 'gtk-refresh'
-->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   BothDiff (black/salmon) | errors different(+) (salmon)
-->   ErrDiff (black/salmon) | errors different (salmon)
+->   OutDiff (black/salmon) | output different (salmon) | Stock image 'gtk-refresh'   ***
+->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   BothDiff (black/salmon) | errors different(+) (salmon)   ***
+->   ErrDiff (black/salmon) | errors different (salmon)   ***
 
 Changing GUI status to: 'Recomputing status of HELLO.4 test-case OutDiff ...'
 
 Updated : Test Tree with columns: Tests: All 12 selected, none hidden , Details
 -> TargetApp (hello.2) (black/white,bold) | (white)
-->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   BothDiff (black/salmon) | errors different(+) (salmon)
-->   ErrDiff (black/salmon) | errors different (salmon)
+->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   BothDiff (black/salmon) | errors different(+) (salmon)   ***
+->   ErrDiff (black/salmon) | errors different (salmon)   ***
 -> TargetApp (hello.3) (black/white,bold) | (white)
-->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   BothDiff (black/salmon) | errors different(+) (salmon)
-->   ErrDiff (black/salmon) | errors different (salmon)
+->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   BothDiff (black/salmon) | errors different(+) (salmon)   ***
+->   ErrDiff (black/salmon) | errors different (salmon)   ***
 -> TargetApp (hello.4) (black/white,bold) | (white)
-->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   BothDiff (black/salmon) | errors different(+) (salmon)
-->   ErrDiff (black/salmon) | errors different (salmon)
+->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   BothDiff (black/salmon) | errors different(+) (salmon)   ***
+->   ErrDiff (black/salmon) | errors different (salmon)   ***
 
 Changing GUI status to: 'Recomputing status of HELLO.4 test-case Success ...'
 
 Updated : Test Tree with columns: Tests: All 12 selected, none hidden , Details
 -> TargetApp (hello.2) (black/white,bold) | (white)
-->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   BothDiff (black/salmon) | errors different(+) (salmon)
-->   ErrDiff (black/salmon) | errors different (salmon)
+->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   BothDiff (black/salmon) | errors different(+) (salmon)   ***
+->   ErrDiff (black/salmon) | errors different (salmon)   ***
 -> TargetApp (hello.3) (black/white,bold) | (white)
-->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   BothDiff (black/salmon) | errors different(+) (salmon)
-->   ErrDiff (black/salmon) | errors different (salmon)
+->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   BothDiff (black/salmon) | errors different(+) (salmon)   ***
+->   ErrDiff (black/salmon) | errors different (salmon)   ***
 -> TargetApp (hello.4) (black/white,bold) | (white)
-->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   BothDiff (black/salmon) | errors different(+) (salmon)
-->   ErrDiff (black/salmon) | errors different (salmon)
+->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   BothDiff (black/salmon) | errors different(+) (salmon)   ***
+->   ErrDiff (black/salmon) | errors different (salmon)   ***
 
 Changing GUI status to: 'Recomputing status of HELLO.4 test-case BothDiff ...'
 
 Updated : Test Tree with columns: Tests: All 12 selected, none hidden , Details
 -> TargetApp (hello.2) (black/white,bold) | (white)
-->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   BothDiff (black/salmon) | errors different(+) (salmon)
-->   ErrDiff (black/salmon) | errors different (salmon)
+->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   BothDiff (black/salmon) | errors different(+) (salmon)   ***
+->   ErrDiff (black/salmon) | errors different (salmon)   ***
 -> TargetApp (hello.3) (black/white,bold) | (white)
-->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   BothDiff (black/salmon) | errors different(+) (salmon)
-->   ErrDiff (black/salmon) | errors different (salmon)
+->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   BothDiff (black/salmon) | errors different(+) (salmon)   ***
+->   ErrDiff (black/salmon) | errors different (salmon)   ***
 -> TargetApp (hello.4) (black/white,bold) | (white)
-->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   BothDiff (black/salmon) | errors different(+) (salmon)
-->   ErrDiff (black/salmon) | errors different (salmon)
+->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   BothDiff (black/salmon) | errors different(+) (salmon)   ***
+->   ErrDiff (black/salmon) | errors different (salmon)   ***
 
 Changing GUI status to: 'Recomputing status of HELLO.4 test-case ErrDiff ...'
 
 Updated : Test Tree with columns: Tests: All 12 selected, none hidden , Details
+-> TargetApp (hello.2) (black/white,bold) | (white)
+->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   BothDiff (black/salmon) | errors different(+) (salmon)   ***
+->   ErrDiff (black/salmon) | errors different (salmon)   ***
+-> TargetApp (hello.3) (black/white,bold) | (white)
+->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   BothDiff (black/salmon) | errors different(+) (salmon)   ***
+->   ErrDiff (black/salmon) | errors different (salmon)   ***
+-> TargetApp (hello.4) (black/white,bold) | (white)
+->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   BothDiff (black/salmon) | errors different(+) (salmon)   ***
+->   ErrDiff (black/salmon) | errors different (salmon)   ***
+
+Changing GUI status to: 'Recomputed status of 12 tests.'
+
+'set test selection to' event created with arguments 'ErrDiff under TargetApp (hello.3)'
+
+Changed selection in Test Tree with columns: Tests: 1/12 selected, none hidden , Details
 -> TargetApp (hello.2) (black/white,bold) | (white)
 ->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)
 ->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)
@@ -1951,18 +2002,12 @@ Updated : Test Tree with columns: Tests: All 12 selected, none hidden , Details
 ->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)
 ->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)
 ->   BothDiff (black/salmon) | errors different(+) (salmon)
-->   ErrDiff (black/salmon) | errors different (salmon)
+->   ErrDiff (black/salmon) | errors different (salmon)   ***
 -> TargetApp (hello.4) (black/white,bold) | (white)
 ->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)
 ->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)
 ->   BothDiff (black/salmon) | errors different(+) (salmon)
 ->   ErrDiff (black/salmon) | errors different (salmon)
-
-Changing GUI status to: 'Recomputed status of 12 tests.'
-
-'set test selection to' event created with arguments 'ErrDiff under TargetApp (hello.3)'
-
-Column titles changed in Test Tree with columns: Tests: 1/12 selected, none hidden , Details
 
 Updated : File Tree with columns: ErrDiff , Details
 -> Comparison Files (bold)
@@ -2008,7 +2053,7 @@ Updated : Test Tree with columns: Tests: 1/12 selected, none hidden , Details
 ->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)
 ->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)
 ->   BothDiff (black/salmon) | errors different(+) (salmon)
-->   ErrDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)
+->   ErrDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
 -> TargetApp (hello.4) (black/white,bold) | (white)
 ->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)
 ->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)
@@ -2022,7 +2067,7 @@ Updated : File Tree with columns: ErrDiff , Details
 
 ========== Text Info ==========
 Test succeeded
-(Saved at 16:26)
+(Saved at 14:57)
 ===============================
 
 Changing GUI status to: 'Saved 1 tests.'
@@ -2031,7 +2076,22 @@ Changing GUI status to: 'Saved 1 tests.'
 
 No longer greyed out : _Save
 
-Column titles changed in Test Tree with columns: Tests: All 12 selected, none hidden , Details
+Changed selection in Test Tree with columns: Tests: All 12 selected, none hidden , Details
+-> TargetApp (hello.2) (black/white,bold) | (white)
+->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   BothDiff (black/salmon) | errors different(+) (salmon)   ***
+->   ErrDiff (black/salmon) | errors different (salmon) | Stock image 'gtk-refresh'   ***
+-> TargetApp (hello.3) (black/white,bold) | (white)
+->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   BothDiff (black/salmon) | errors different(+) (salmon)   ***
+->   ErrDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+-> TargetApp (hello.4) (black/white,bold) | (white)
+->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   BothDiff (black/salmon) | errors different(+) (salmon)   ***
+->   ErrDiff (black/salmon) | errors different (salmon) | Stock image 'gtk-refresh'   ***
 
 Updated : File Tree with columns: Sample from 12 tests , Details
 -> Comparison Files (bold)
@@ -2057,77 +2117,77 @@ Changing GUI status to: 'Recomputing status of HELLO.2 test-case OutDiff ...'
 
 Updated : Test Tree with columns: Tests: All 12 selected, none hidden , Details
 -> TargetApp (hello.2) (black/white,bold) | (white)
-->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   BothDiff (black/salmon) | errors different(+) (salmon)
-->   ErrDiff (black/salmon) | errors different (salmon) | Stock image 'gtk-refresh'
+->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   BothDiff (black/salmon) | errors different(+) (salmon)   ***
+->   ErrDiff (black/salmon) | errors different (salmon) | Stock image 'gtk-refresh'   ***
 -> TargetApp (hello.3) (black/white,bold) | (white)
-->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   BothDiff (black/salmon) | errors different(+) (salmon)
-->   ErrDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)
+->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   BothDiff (black/salmon) | errors different(+) (salmon)   ***
+->   ErrDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
 -> TargetApp (hello.4) (black/white,bold) | (white)
-->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   BothDiff (black/salmon) | errors different(+) (salmon)
-->   ErrDiff (black/salmon) | errors different (salmon) | Stock image 'gtk-refresh'
+->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   BothDiff (black/salmon) | errors different(+) (salmon)   ***
+->   ErrDiff (black/salmon) | errors different (salmon) | Stock image 'gtk-refresh'   ***
 
 Changing GUI status to: 'Recomputing status of HELLO.2 test-case Success ...'
 
 Updated : Test Tree with columns: Tests: All 12 selected, none hidden , Details
 -> TargetApp (hello.2) (black/white,bold) | (white)
-->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   BothDiff (black/salmon) | errors different(+) (salmon)
-->   ErrDiff (black/salmon) | errors different (salmon) | Stock image 'gtk-refresh'
+->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   BothDiff (black/salmon) | errors different(+) (salmon)   ***
+->   ErrDiff (black/salmon) | errors different (salmon) | Stock image 'gtk-refresh'   ***
 -> TargetApp (hello.3) (black/white,bold) | (white)
-->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   BothDiff (black/salmon) | errors different(+) (salmon)
-->   ErrDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)
+->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   BothDiff (black/salmon) | errors different(+) (salmon)   ***
+->   ErrDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
 -> TargetApp (hello.4) (black/white,bold) | (white)
-->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   BothDiff (black/salmon) | errors different(+) (salmon)
-->   ErrDiff (black/salmon) | errors different (salmon) | Stock image 'gtk-refresh'
+->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   BothDiff (black/salmon) | errors different(+) (salmon)   ***
+->   ErrDiff (black/salmon) | errors different (salmon) | Stock image 'gtk-refresh'   ***
 
 Changing GUI status to: 'Recomputing status of HELLO.2 test-case BothDiff ...'
 
 Updated : Test Tree with columns: Tests: All 12 selected, none hidden , Details
 -> TargetApp (hello.2) (black/white,bold) | (white)
-->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   BothDiff (black/salmon) | errors different(+) (salmon)
-->   ErrDiff (black/salmon) | errors different (salmon) | Stock image 'gtk-refresh'
+->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   BothDiff (black/salmon) | errors different(+) (salmon)   ***
+->   ErrDiff (black/salmon) | errors different (salmon) | Stock image 'gtk-refresh'   ***
 -> TargetApp (hello.3) (black/white,bold) | (white)
-->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   BothDiff (black/salmon) | errors different(+) (salmon)
-->   ErrDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)
+->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   BothDiff (black/salmon) | errors different(+) (salmon)   ***
+->   ErrDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
 -> TargetApp (hello.4) (black/white,bold) | (white)
-->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   BothDiff (black/salmon) | errors different(+) (salmon)
-->   ErrDiff (black/salmon) | errors different (salmon) | Stock image 'gtk-refresh'
+->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   BothDiff (black/salmon) | errors different(+) (salmon)   ***
+->   ErrDiff (black/salmon) | errors different (salmon) | Stock image 'gtk-refresh'   ***
 
 Changing GUI status to: 'Recomputing status of HELLO.2 test-case ErrDiff ...'
 
 Updated : Test Tree with columns: Tests: All 12 selected, none hidden , Details
 -> TargetApp (hello.2) (black/white,bold) | (white)
-->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   BothDiff (black/salmon) | errors different(+) (salmon)
-->   ErrDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)
+->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   BothDiff (black/salmon) | errors different(+) (salmon)   ***
+->   ErrDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
 -> TargetApp (hello.3) (black/white,bold) | (white)
-->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   BothDiff (black/salmon) | errors different(+) (salmon)
-->   ErrDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)
+->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   BothDiff (black/salmon) | errors different(+) (salmon)   ***
+->   ErrDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
 -> TargetApp (hello.4) (black/white,bold) | (white)
-->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   BothDiff (black/salmon) | errors different(+) (salmon)
-->   ErrDiff (black/salmon) | errors different (salmon) | Stock image 'gtk-refresh'
+->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   BothDiff (black/salmon) | errors different(+) (salmon)   ***
+->   ErrDiff (black/salmon) | errors different (salmon) | Stock image 'gtk-refresh'   ***
 
 Updated : File Tree with columns: Sample from 12 tests , Details
 -> Comparison Files (bold)
@@ -2142,153 +2202,153 @@ Changing GUI status to: 'Recomputing status of HELLO.3 test-case OutDiff ...'
 
 Updated : Test Tree with columns: Tests: All 12 selected, none hidden , Details
 -> TargetApp (hello.2) (black/white,bold) | (white)
-->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   BothDiff (black/salmon) | errors different(+) (salmon)
-->   ErrDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)
+->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   BothDiff (black/salmon) | errors different(+) (salmon)   ***
+->   ErrDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
 -> TargetApp (hello.3) (black/white,bold) | (white)
-->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   BothDiff (black/salmon) | errors different(+) (salmon)
-->   ErrDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)
+->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   BothDiff (black/salmon) | errors different(+) (salmon)   ***
+->   ErrDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
 -> TargetApp (hello.4) (black/white,bold) | (white)
-->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   BothDiff (black/salmon) | errors different(+) (salmon)
-->   ErrDiff (black/salmon) | errors different (salmon) | Stock image 'gtk-refresh'
+->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   BothDiff (black/salmon) | errors different(+) (salmon)   ***
+->   ErrDiff (black/salmon) | errors different (salmon) | Stock image 'gtk-refresh'   ***
 
 Changing GUI status to: 'Recomputing status of HELLO.3 test-case Success ...'
 
 Updated : Test Tree with columns: Tests: All 12 selected, none hidden , Details
 -> TargetApp (hello.2) (black/white,bold) | (white)
-->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   BothDiff (black/salmon) | errors different(+) (salmon)
-->   ErrDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)
+->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   BothDiff (black/salmon) | errors different(+) (salmon)   ***
+->   ErrDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
 -> TargetApp (hello.3) (black/white,bold) | (white)
-->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   BothDiff (black/salmon) | errors different(+) (salmon)
-->   ErrDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)
+->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   BothDiff (black/salmon) | errors different(+) (salmon)   ***
+->   ErrDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
 -> TargetApp (hello.4) (black/white,bold) | (white)
-->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   BothDiff (black/salmon) | errors different(+) (salmon)
-->   ErrDiff (black/salmon) | errors different (salmon) | Stock image 'gtk-refresh'
+->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   BothDiff (black/salmon) | errors different(+) (salmon)   ***
+->   ErrDiff (black/salmon) | errors different (salmon) | Stock image 'gtk-refresh'   ***
 
 Changing GUI status to: 'Recomputing status of HELLO.3 test-case BothDiff ...'
 
 Updated : Test Tree with columns: Tests: All 12 selected, none hidden , Details
 -> TargetApp (hello.2) (black/white,bold) | (white)
-->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   BothDiff (black/salmon) | errors different(+) (salmon)
-->   ErrDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)
+->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   BothDiff (black/salmon) | errors different(+) (salmon)   ***
+->   ErrDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
 -> TargetApp (hello.3) (black/white,bold) | (white)
-->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   BothDiff (black/salmon) | errors different(+) (salmon)
-->   ErrDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)
+->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   BothDiff (black/salmon) | errors different(+) (salmon)   ***
+->   ErrDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
 -> TargetApp (hello.4) (black/white,bold) | (white)
-->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   BothDiff (black/salmon) | errors different(+) (salmon)
-->   ErrDiff (black/salmon) | errors different (salmon) | Stock image 'gtk-refresh'
+->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   BothDiff (black/salmon) | errors different(+) (salmon)   ***
+->   ErrDiff (black/salmon) | errors different (salmon) | Stock image 'gtk-refresh'   ***
 
 Changing GUI status to: 'Recomputing status of HELLO.3 test-case ErrDiff ...'
 
 Updated : Test Tree with columns: Tests: All 12 selected, none hidden , Details
 -> TargetApp (hello.2) (black/white,bold) | (white)
-->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   BothDiff (black/salmon) | errors different(+) (salmon)
-->   ErrDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)
+->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   BothDiff (black/salmon) | errors different(+) (salmon)   ***
+->   ErrDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
 -> TargetApp (hello.3) (black/white,bold) | (white)
-->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   BothDiff (black/salmon) | errors different(+) (salmon)
-->   ErrDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)
+->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   BothDiff (black/salmon) | errors different(+) (salmon)   ***
+->   ErrDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
 -> TargetApp (hello.4) (black/white,bold) | (white)
-->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   BothDiff (black/salmon) | errors different(+) (salmon)
-->   ErrDiff (black/salmon) | errors different (salmon) | Stock image 'gtk-refresh'
+->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   BothDiff (black/salmon) | errors different(+) (salmon)   ***
+->   ErrDiff (black/salmon) | errors different (salmon) | Stock image 'gtk-refresh'   ***
 
 Changing GUI status to: 'Recomputing status of HELLO.4 test-case OutDiff ...'
 
 Updated : Test Tree with columns: Tests: All 12 selected, none hidden , Details
 -> TargetApp (hello.2) (black/white,bold) | (white)
-->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   BothDiff (black/salmon) | errors different(+) (salmon)
-->   ErrDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)
+->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   BothDiff (black/salmon) | errors different(+) (salmon)   ***
+->   ErrDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
 -> TargetApp (hello.3) (black/white,bold) | (white)
-->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   BothDiff (black/salmon) | errors different(+) (salmon)
-->   ErrDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)
+->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   BothDiff (black/salmon) | errors different(+) (salmon)   ***
+->   ErrDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
 -> TargetApp (hello.4) (black/white,bold) | (white)
-->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   BothDiff (black/salmon) | errors different(+) (salmon)
-->   ErrDiff (black/salmon) | errors different (salmon) | Stock image 'gtk-refresh'
+->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   BothDiff (black/salmon) | errors different(+) (salmon)   ***
+->   ErrDiff (black/salmon) | errors different (salmon) | Stock image 'gtk-refresh'   ***
 
 Changing GUI status to: 'Recomputing status of HELLO.4 test-case Success ...'
 
 Updated : Test Tree with columns: Tests: All 12 selected, none hidden , Details
 -> TargetApp (hello.2) (black/white,bold) | (white)
-->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   BothDiff (black/salmon) | errors different(+) (salmon)
-->   ErrDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)
+->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   BothDiff (black/salmon) | errors different(+) (salmon)   ***
+->   ErrDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
 -> TargetApp (hello.3) (black/white,bold) | (white)
-->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   BothDiff (black/salmon) | errors different(+) (salmon)
-->   ErrDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)
+->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   BothDiff (black/salmon) | errors different(+) (salmon)   ***
+->   ErrDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
 -> TargetApp (hello.4) (black/white,bold) | (white)
-->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   BothDiff (black/salmon) | errors different(+) (salmon)
-->   ErrDiff (black/salmon) | errors different (salmon) | Stock image 'gtk-refresh'
+->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   BothDiff (black/salmon) | errors different(+) (salmon)   ***
+->   ErrDiff (black/salmon) | errors different (salmon) | Stock image 'gtk-refresh'   ***
 
 Changing GUI status to: 'Recomputing status of HELLO.4 test-case BothDiff ...'
 
 Updated : Test Tree with columns: Tests: All 12 selected, none hidden , Details
 -> TargetApp (hello.2) (black/white,bold) | (white)
-->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   BothDiff (black/salmon) | errors different(+) (salmon)
-->   ErrDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)
+->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   BothDiff (black/salmon) | errors different(+) (salmon)   ***
+->   ErrDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
 -> TargetApp (hello.3) (black/white,bold) | (white)
-->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   BothDiff (black/salmon) | errors different(+) (salmon)
-->   ErrDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)
+->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   BothDiff (black/salmon) | errors different(+) (salmon)   ***
+->   ErrDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
 -> TargetApp (hello.4) (black/white,bold) | (white)
-->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   BothDiff (black/salmon) | errors different(+) (salmon)
-->   ErrDiff (black/salmon) | errors different (salmon) | Stock image 'gtk-refresh'
+->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   BothDiff (black/salmon) | errors different(+) (salmon)   ***
+->   ErrDiff (black/salmon) | errors different (salmon) | Stock image 'gtk-refresh'   ***
 
 Changing GUI status to: 'Recomputing status of HELLO.4 test-case ErrDiff ...'
 
 Updated : Test Tree with columns: Tests: All 12 selected, none hidden , Details
 -> TargetApp (hello.2) (black/white,bold) | (white)
-->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   BothDiff (black/salmon) | errors different(+) (salmon)
-->   ErrDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)
+->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   BothDiff (black/salmon) | errors different(+) (salmon)   ***
+->   ErrDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
 -> TargetApp (hello.3) (black/white,bold) | (white)
-->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   BothDiff (black/salmon) | errors different(+) (salmon)
-->   ErrDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)
+->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   BothDiff (black/salmon) | errors different(+) (salmon)   ***
+->   ErrDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
 -> TargetApp (hello.4) (black/white,bold) | (white)
-->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)
-->   BothDiff (black/salmon) | errors different(+) (salmon)
-->   ErrDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)
+->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   Success (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   BothDiff (black/salmon) | errors different(+) (salmon)   ***
+->   ErrDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
 
 Changing GUI status to: 'Recomputed status of 12 tests.'
 

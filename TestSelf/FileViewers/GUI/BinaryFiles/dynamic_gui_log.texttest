@@ -3,7 +3,7 @@ Adding entry completion '<default>' ...
 Setting window width to 60% of screen.
 Setting window height to 83% of screen.
 
----------- Window 'TextTest dynamic GUI : testing HELLO (started at 31May16:33:10)' ----------
+---------- Window 'TextTest dynamic GUI : testing HELLO (started at 10Aug14:57:43)' ----------
 Focus widget is 'Test Tree'
 
 Menu Bar : 'File' (+) , 'View' (+) , 'Actions' (+) , 'Help' (+)
@@ -12,7 +12,7 @@ Tool Bar :
   _Quit (Stock image 'gtk-quit', accelerator 'Ctrl+Q', tooltip 'Quit')
   _Kill (Stock image 'gtk-stop', greyed out, accelerator 'Ctrl+Delete', tooltip 'Kill selected tests')
   _Save (Stock image 'gtk-save', greyed out, accelerator 'Ctrl+S', tooltip 'Save results for selected tests')
-  Progress bar set to fraction 0.0, text 'All 0 tests completed at 31May16:33:14'
+  Progress bar set to fraction 0.0, text 'All 0 tests completed at 10Aug14:57:47'
 ...........
 
 Showing Test Tree with columns: Tests: All 0 selected , Details
@@ -26,7 +26,7 @@ Viewing page 'Status'
 Showing Test Status View with columns: Status , Number , Visible
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 31May16:33:14.' , Image 'throbber_inactive.png'
+'TextTest started at 10Aug14:57:47.' , Image 'throbber_inactive.png'
 ----------------------------------------------------------------------------------------------
 
 Progress bar set to fraction 0.0, text '0 of 1 tests completed'
@@ -65,7 +65,7 @@ Updated : Test Status View with columns: Status , Number , Visible
 -> Running (white) | 0 (white) | Check box (checked)
 -> Final filter (LightGoldenrod1,bold) | 1 (LightGoldenrod1,bold) | Check box (checked)
 
-Progress bar set to fraction 1.0, text 'All 1 tests completed at 31May16:33:15'
+Progress bar set to fraction 1.0, text 'All 1 tests completed at 10Aug14:57:47'
 
 Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
 -> TargetApp (hello) (black/white,bold) | (white)
@@ -82,11 +82,12 @@ Updated : Test Status View with columns: Status , Number , Visible
 ->   New (salmon,bold) | 1 (salmon,bold) | Check box (checked)
 ->     binary_output new (salmon,bold) | 1 (salmon,bold) | Check box (checked)
 ->     errors new (salmon,bold) | 1 (salmon,bold) | Check box (checked)
-Only one test found, selecting test1
 
 No longer greyed out : _Save
 
-Column titles changed in Test Tree with columns: Tests: All 1 selected, none hidden , Details
+Changed selection in Test Tree with columns: Tests: All 1 selected, none hidden , Details
+-> TargetApp (hello) (black/white,bold) | (white)
+->   test1 (black/salmon) | output different(+) (salmon)   ***
 
 Current page changed in Notebook with tabs: Test , Status , Selection , Run Info
 Viewing page 'Test'
@@ -121,6 +122,13 @@ Expected application event 'completion of test actions' occurred, proceeding.
 
 'set file selection to' event created with arguments 'output.hello'
 
+Changed selection in File Tree with columns: test1 , Details
+-> Comparison Files (bold)
+->   output.hello (salmon) | (salmon)   ***
+-> New Files (bold)
+->   binary_output.hello (salmon) | (salmon)
+->   errors.hello (salmon) | (salmon)
+
 ========== Text Info ==========
 Test FAILED :
 ---------- Differences in output ----------
@@ -135,6 +143,13 @@ Test FAILED :
 
 'set file selection to' event created with arguments 'binary_output.hello'
 
+Changed selection in File Tree with columns: test1 , Details
+-> Comparison Files (bold)
+->   output.hello (salmon) | (salmon)
+-> New Files (bold)
+->   binary_output.hello (salmon) | (salmon)   ***
+->   errors.hello (salmon) | (salmon)
+
 ========== Text Info ==========
 Test FAILED :
 ---------- New result in binary_output ----------
@@ -142,6 +157,13 @@ Binary file, not showing any preview. Edit the configuration entry 'binary_file'
 ===============================
 
 'set file selection to' event created with arguments 'errors.hello'
+
+Changed selection in File Tree with columns: test1 , Details
+-> Comparison Files (bold)
+->   output.hello (salmon) | (salmon)
+-> New Files (bold)
+->   binary_output.hello (salmon) | (salmon)
+->   errors.hello (salmon) | (salmon)   ***
 
 ========== Text Info ==========
 Test FAILED :
