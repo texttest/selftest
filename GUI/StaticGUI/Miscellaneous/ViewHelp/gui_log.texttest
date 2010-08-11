@@ -2,9 +2,9 @@ Enabling entry completion, using matching 1
 Adding entry completion '<default>' ...
 Adding entry completion 'localhost' ...
 Adding entry completion '1' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.gui.28Jun103442.13797/texttest.gui/GUI/StaticGUI/Miscellaneous/ViewHelp/log/logging.debug' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/dynamic_gui.11Aug152931.3342/texttest.gui/GUI/StaticGUI/Miscellaneous/ViewHelp/log/logging.debug' ...
 Adding entry completion '/users/geoff/work/master/Testing/TextTest/log/logging.debug' ...
-Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.gui.28Jun103442.13797/texttest.gui/GUI/StaticGUI/Miscellaneous/ViewHelp/log' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/dynamic_gui.11Aug152931.3342/texttest.gui/GUI/StaticGUI/Miscellaneous/ViewHelp/log' ...
 Adding entry completion 'site' ...
 Adding entry completion 'personal' ...
 Adding entry completion 'all' ...
@@ -14,7 +14,7 @@ Setting window height to 83% of screen.
 ---------- Window 'TextTest static GUI : management of tests for DIP' ----------
 Focus widget is 'Test Tree'
 
-Menu Bar : 'File' (+) , 'Edit' (+) , 'View' (+) , 'Actions' (+) , 'Help' (+)
+Menu Bar : '_File' (+) , '_Edit' (+) , '_View' (+) , '_Actions' (+) , '_Help' (+)
 
 Tool Bar :
   _Quit (Stock image 'gtk-quit', accelerator 'Ctrl+Q', tooltip 'Quit')
@@ -49,7 +49,7 @@ Button 'Filter' (Stock image 'gtk-find', accelerator 'Ctrl+F', tooltip 'filter t
 Button 'Reset Tab' (tooltip 'Reset all the settings in the current tab to their default values')
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 28Jun10:35:00.' , Image 'throbber_inactive.png'
+'TextTest started at 11Aug15:32:44.' , Image 'throbber_inactive.png'
 --------------------------------------------------------------------------------
 
 Changing GUI status to: 'Reading tests ...'
@@ -94,7 +94,7 @@ Updated : Test Tree with columns: Tests: 0/11 selected
 ->       S01 (black/grey90)
 Updated drop-down list in 'Test-file to search' Text entry (set to 'output') (drop-down list containing ['output'])
 
-Changing GUI status to: 'Reading tests completed at 28Jun10:35:00.'
+Changing GUI status to: 'Reading tests completed at 11Aug15:32:45.'
 
 Expected application event 'all tests to be read' occurred, proceeding.
 
@@ -102,14 +102,14 @@ Expected application event 'all tests to be read' occurred, proceeding.
 
 ---------- Popup Window ----------
 'Quick Start'
-'Migration Notes'
-'Change Logs'
+'_Migration Notes'
+'_Change Logs'
   ----
-'Component Versions'
+'Component _Versions'
 'Credits'
 'License'
   ----
-'About TextTest' (Stock image 'gtk-about')
+'_About TextTest' (Stock image 'gtk-about')
 ----------------------------------
 
 'show information about texttest' event created with arguments ''
@@ -120,15 +120,15 @@ Changing GUI status to: ''
 ---------- Dialog 'About TextTest' ----------
 Default widget is 'gtk-close'
 Image 'texttest-logo.gif'
-'TextTest trunk
+'<span size='xx-large'>TextTest trunk</span>
 '
-'TextTest is an application-independent tool for text-based
+'<i>TextTest is an application-independent tool for text-based
 functional testing. This means running a batch-mode program
 in lots of different ways, and using the text output produced
-as a means of controlling the behaviour of that application.
+as a means of controlling the behaviour of that application.</i>
 '
 Link button 'http://www.texttest.org'
-'Copyright © The authors
+'<span size='small'>Copyright © The authors</span>
 '
 ---------------
 Button 'gtk-close' (Stock image 'gtk-close') , Button '_Versions' , Button '_License' , Button 'texttest-stock-credits' (Stock image 'texttest-stock-credits')
@@ -209,8 +209,8 @@ Button 'gtk-close' (Stock image 'gtk-close')
 
 ---------- Dialog 'Version Information' ----------
 Default widget is 'gtk-close'
-'You are using these versions:
-'
+'<b>You are using these versions:
+</b>'
 Viewing table with 6 rows and 2 columns.
 'TextTest:' | 'trunk'
 'Python:' | '2.9.42.final.0'
@@ -219,7 +219,7 @@ Viewing table with 6 rows and 2 columns.
 'PyGObject:' | '2.61.42'
 'GLib:' | '2.74.42'
 '
-TextTest source directory:'
+<b>TextTest source directory:</b>'
 '/users/geoff/work/master/Testing/TextTest'
 ---------------
 Button 'gtk-close' (Stock image 'gtk-close')
@@ -233,14 +233,14 @@ Button 'gtk-close' (Stock image 'gtk-close')
 
 ---------- Popup Window ----------
 'Quick Start'
-'Migration Notes'
-'Change Logs'
+'_Migration Notes'
+'_Change Logs'
   ----
-'Component Versions'
+'Component _Versions'
 'Credits'
 'License'
   ----
-'About TextTest' (Stock image 'gtk-about')
+'_About TextTest' (Stock image 'gtk-about')
 ----------------------------------
 
 'show texttest migration notes' event created with arguments ''
@@ -367,14 +367,14 @@ config_module:default
 
 ---------- Popup Window ----------
 'Quick Start'
-'Migration Notes'
-'Change Logs'
+'_Migration Notes'
+'_Change Logs'
   ----
-'Component Versions'
+'Component _Versions'
 'Credits'
 'License'
   ----
-'About TextTest' (Stock image 'gtk-about')
+'_About TextTest' (Stock image 'gtk-about')
 ----------------------------------
 
 'show texttest change logs' event created with arguments ''
@@ -392,15 +392,57 @@ General GUI Enhancements:
 Static GUI Enhancements:
     - Selecting for a version picks up versions where the given one is a base_version (selectandfilter.py)
 	Version matching is now the same as that used for other purposes
+    - Selecting for a version works correctly when the given one resets "extra_version" (selectandfilter.py)
+	Picks up the reset correctly.
+    - Now warns you if you load tests of one version and try to run tests of an unrelated one (runningactions.py)
+	Previously just tried to silently amalgamate them.
+    - Old "Recording" tab is now a dialog (runningactions.py)
+	Hopefully less easy to get ignored now
+    - Shortcut bar setting now greyed out if PyUseCase cannot be found (actionholders.py)
 Dynamic GUI Enhancements:
     - Recomputing marked tests now works correctly (plugins.py)
 	Icons also displayed when appropriate, irrespective of test marking
+    - Recomputing running tests on remote file systems now works (sandbox.py)
+	Also allows following files remotely on such tests.
 Framework Enhancements:
+    - Autogenerated version names when running multiple checkouts are shorter (default/__init__.py)
+	Leads to less wide windows being created
+    - Autogenerated version names from multiple checkouts are automatically made unsaveable (testmodel.py)
+	i.e. behave as if they were in the config setting "unsaveable_version"
+    - "Traffic interception" is no longer enabled by default (traffic.py)
+	New setting "collect_traffic_client_server" which enables it for client server testing.
+	Relevant options will only be available if that, "collect_traffic" or "collect_traffic_py_module" are set.
+    - New hook for custom config modules to set up config file variables that depend on other ones (testmodel.py)
+	setDependentConfigDefaults is now called as it is in the core. Does nothing by default.
 Batch Report Enhancements:
     - HTML report now shows file diffs as well as bug information when tests have "known bugs" (testoverview.py)
 	Makes it consistent with GUI and email report
+    - "-bx" flag will now find the exact tests run by a particular batch session (default/__init__.py)
+	Previously just picked up "batch_extra_version". See migration notes.
 Grid Engine (LSF/SGE) enhancements:
+    - Reconnecting using the grid no longer insists on using the resources etc. from the test itself (masterprocess.py)
+	Means it should be faster and make better use of available machines
+    - Parallel job machine name formatting improved
+	Should make for less wide boxes in HTML report
 Bug Fixes:
+    - Fixed Mac OS-specific bug that made traffic server fail (and by extension, recording with default settings) (traffic_server.py)
+    - Various fixes for issues to do with handling extra_versions when reconnecting via a grid (queuesystem/__init__.py)
+    - Reconnecting now works if an extra_version is provided explicitly (reconnect.py)
+    - Reconnecting and then recomputing a test with a known bug now works properly (knownbugs/__init__.py)
+    - Workaround for GTK+ 2.20 bug around RC file handling in .gtkrc-2.0 files (controller.py)
+    - Fixed race condition when recomputing a running test just as it completes (controller.py)
+    - traffic.ModifyTraffic script doesn't leak temporary files if it fails (traffic.py)
+    - Viewing files on remote machines now works together with ssh, instead of just with rsh (fileviewers.py)
+    - Fixed stacktrace when viewing Jira issue with unicode characters with no encoding, i.e. LANG=C (jira.py)
+    - Code to clean up leaked Xvfb lock files now actually works (startXvfb.py)
+    - Fixed stacktrace on extracting GUI config entry documentation on Windows when GTK not installed (!) (guiutils.py)
+    - Fixed bug where failure to clean previous batch temp directories was not reported properly (plugins.py)
+    - Fixed race condition in traffic server where shutdown could complete before all requests were handled (traffic_server.py)
+    - Traffic mechanism now handles SUT changes to PATH correctly (traffic_server.py)
+    - Dynamic GUI window title now reports correctly when more than one checkout is being used (controller.py)
+    - default.ReplaceText now works without an explicitly provided file, as it once did (scripts.py)
+    - default.DocumentEnvironment now works with an explicitly provided variable name (scripts.py)
+    - Fixed stack trace on trying to view file properties on a file that has been removed (fileproperties.py)
 =================================
 ---------------
 Button 'gtk-close' (Stock image 'gtk-close')
@@ -454,14 +496,14 @@ Test Fixes:
 
 ---------- Popup Window ----------
 'Quick Start'
-'Migration Notes'
-'Change Logs'
+'_Migration Notes'
+'_Change Logs'
   ----
-'Component Versions'
+'Component _Versions'
 'Credits'
 'License'
   ----
-'About TextTest' (Stock image 'gtk-about')
+'_About TextTest' (Stock image 'gtk-about')
 ----------------------------------
 
 'show component version information' event created with arguments ''
@@ -470,8 +512,8 @@ Changing GUI status to: ''
 
 ---------- Dialog 'Version Information' ----------
 Default widget is 'gtk-close'
-'You are using these versions:
-'
+'<b>You are using these versions:
+</b>'
 Viewing table with 6 rows and 2 columns.
 'TextTest:' | 'trunk'
 'Python:' | '2.9.42.final.0'
@@ -480,7 +522,7 @@ Viewing table with 6 rows and 2 columns.
 'PyGObject:' | '2.61.42'
 'GLib:' | '2.74.42'
 '
-TextTest source directory:'
+<b>TextTest source directory:</b>'
 '/users/geoff/work/master/Testing/TextTest'
 ---------------
 Button 'gtk-close' (Stock image 'gtk-close')
@@ -492,14 +534,14 @@ Button 'gtk-close' (Stock image 'gtk-close')
 
 ---------- Popup Window ----------
 'Quick Start'
-'Migration Notes'
-'Change Logs'
+'_Migration Notes'
+'_Change Logs'
   ----
-'Component Versions'
+'Component _Versions'
 'Credits'
 'License'
   ----
-'About TextTest' (Stock image 'gtk-about')
+'_About TextTest' (Stock image 'gtk-about')
 ----------------------------------
 
 'show texttest credits' event created with arguments ''
@@ -546,14 +588,14 @@ Button 'gtk-close' (Stock image 'gtk-close')
 
 ---------- Popup Window ----------
 'Quick Start'
-'Migration Notes'
-'Change Logs'
+'_Migration Notes'
+'_Change Logs'
   ----
-'Component Versions'
+'Component _Versions'
 'Credits'
 'License'
   ----
-'About TextTest' (Stock image 'gtk-about')
+'_About TextTest' (Stock image 'gtk-about')
 ----------------------------------
 
 'show texttest quick start' event created with arguments ''
