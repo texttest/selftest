@@ -7,6 +7,9 @@ AddTestEnvRefUp
 # Make sure references work the other way, i.e. when the already present suite refers to variables present in the new test
 AddTestEnvRefDown
 
+# After rerunning we might get the same test back again. Handle this gracefully...
+ReaddTest
+
 # Make sure it works if we add a new application also
 AddApplication
 
