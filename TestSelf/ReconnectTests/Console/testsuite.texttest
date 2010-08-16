@@ -28,9 +28,6 @@ MultipleVersionsOneRun
 # If the original run had extra versions we don't have (usually via batch_extra_version) we should pick them up
 InferExtraVersion
 
-# Make sure we get the order of compound versions right...
-InferCompoundVersion
-
 # Check we can provide the actual directory name of the run
 ExplicitDirectory
 
@@ -42,6 +39,9 @@ ExplicitDirectoryTrailingSlash
 
 # Complications arise when reconnecting with test data sometimes...
 TestData
+
+# Tests requiring a compound version
+CompoundVersion
 
 # Suite for some common errors
 ErrorHandling
