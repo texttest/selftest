@@ -1,21 +1,6 @@
 # Make sure we flag the right files as missing
 MissingFiles
 
-# Make sure we can combine options correctly from test suites and test cases
-OptionsInTestSuites
-
-# Make sure we can clear out previously defined options
-ClearAllOptions
-
-# Make sure the arguments end up in the right places with a simple combination
-CombineWithArguments
-
-# Check we can spot arguments like -a ''
-EmptyArgument
-
-# Check we can spot arguments like -a ''
-MultilineOptions
-
 # Provide arguments to the interpreter with interpreter_options files
 InterpreterOptions
 
@@ -54,6 +39,9 @@ InterpreterWithArgs
 
 # Check we can tell the system under test to use TextTest's Python version, in case it relies on that
 TextTestPython
+
+# Tests to do with the various things that go in options files
+OptionsFile
 
 # Test the script that finds obsolete versions
 PrintObsoleteVersions
