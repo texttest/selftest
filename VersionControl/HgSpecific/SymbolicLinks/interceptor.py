@@ -8,7 +8,10 @@ def islink(filename):
     return orig_islink(filename) or filename.endswith("output.hello")
 
 def realpath(filename):
-    return "/a/dereferenced/path/to/" + os.path.basename(filename)
+    if filename.endswith("errors.hello"):
+        return "/a/dereferenced/path/to/" + os.path.basename(filename)
+    else:
+        return orig_realpath(filename)
 
 os.path.islink = islink
 os.path.realpath = realpath
