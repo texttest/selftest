@@ -22,14 +22,14 @@ class MyStat:
         else:
             return self.origStat[item]
         
-origStat = os.stat
+origStat = os.lstat
 def myStat(filename):
     info = origStat(filename)
     basename = os.path.basename(filename)
     if basename.startswith("newout.hello"):
-        print "Faking os.stat(" + filename.replace("\\", "/") + ") ..."
+        print "Faking os.lstat(" + filename.replace("\\", "/") + ") ..."
         return MyStat(info)
     else:
         return info
 
-os.stat = myStat
+os.lstat = myStat
