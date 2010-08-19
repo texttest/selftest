@@ -27,7 +27,6 @@ def myStat(filename):
     info = origStat(filename)
     basename = os.path.basename(filename)
     if basename.startswith("newout.hello"):
-        print "Faking os.lstat(" + filename.replace("\\", "/") + ") ..."
         return MyStat(info)
     else:
         return info
