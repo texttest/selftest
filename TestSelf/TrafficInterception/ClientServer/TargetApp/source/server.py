@@ -29,7 +29,7 @@ class MyRequestHandler(StreamRequestHandler):
             self.wfile.write("Exiting...")
             global gotExit
             gotExit = True
-        else:
+        elif not clientData.startswith("Don't answer"):
             self.wfile.write("Length was " + str(len(clientData)))
 
 server = TCPServer((socket.gethostname(), 0), MyRequestHandler)
