@@ -7,7 +7,7 @@ class ResettingSocket(origSocket):
     callCount = 0
     def sendall(self, *args, **kwargs):
         ResettingSocket.callCount += 1
-        if ResettingSocket.callCount >= 3:
+        if ResettingSocket.callCount >= 2:
             raise socket.error, "Connection reset by peer"
         else:
             return origSocket.sendall(self, *args, **kwargs)
