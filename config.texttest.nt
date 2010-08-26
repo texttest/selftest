@@ -6,6 +6,12 @@ extra_version:{CLEAR sge.gui}
 extra_version:{CLEAR lsf}
 extra_version:{CLEAR lsf.gui}
 
+collect_traffic_py_module:os
+
+[collect_traffic_py_attributes]
+os:startfile
+
 [run_dependent_text]
 # Save us having to maintain a separate .nt GUI log which is updated too often for this to be convenient
 gui_log:&lt;default browser&gt;{REPLACE firefox}
+

@@ -13,9 +13,3 @@ def default_locale():
     return "en_US", "utf"
 
 locale.getdefaultlocale = default_locale
-
-def my_startfile(fileName):
-    print "Called startfile on", fileName
-    sys.stdout.flush()
-
-os.startfile = my_startfile
