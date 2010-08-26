@@ -20,6 +20,9 @@ UpdateReferenceVars
 # Check we can unset previously set environment variables
 UnsetVariable
 
+# Check we can unset variables from the external environment and that they don't also get unset in unrelated tests.
+UnsetExternalVariable
+
 # Make sure that checkout expansions are only used with real relative paths
 CheckoutExpansionNoPath
 
