@@ -4,6 +4,9 @@ ReplayTraffic
 # Check we can replay a recorded response from a Python module
 RecordTraffic
 
+# If we add extra things to record, don't try to do this unless recording of them is requested
+DontRecordAdditional
+
 # Check we can record also when python importable data files are present
 RecordWithPythonData
 
@@ -19,7 +22,7 @@ ArgumentTransfer
 # Send it a dictionary with unicode multiline strings in...
 ComplexArguments
 
-# Don't store floating points to arbitrary precision, makes for very unwieldy traffic files 
+# Don't store floating points to arbitrary precision, makes for very unwieldy traffic files
 FloatingPointArgs
 
 # Record when we have "from x import *"
