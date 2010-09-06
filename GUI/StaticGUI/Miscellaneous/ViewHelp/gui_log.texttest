@@ -37,7 +37,7 @@ Button 'Filter' (Stock image 'gtk-find', accelerator 'Ctrl+F', tooltip 'filter t
 Button 'Reset Tab' (tooltip 'Reset all the settings in the current tab to their default values')
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 12Aug15:07:55.' , Image 'throbber_inactive.png'
+'TextTest started at 06Sep16:19:53.' , Image 'throbber_inactive.png'
 --------------------------------------------------------------------------------
 
 Changing GUI status to: 'Reading tests ...'
@@ -82,7 +82,7 @@ Updated : Test Tree with columns: Tests: 0/11 selected
 ->       S01 (black/grey90)
 Updated drop-down list in 'Test-file to search' Text entry (set to 'output') (drop-down list containing ['output'])
 
-Changing GUI status to: 'Reading tests completed at 12Aug15:07:55.'
+Changing GUI status to: 'Reading tests completed at 06Sep16:19:53.'
 
 Expected application event 'all tests to be read' occurred, proceeding.
 
@@ -107,7 +107,7 @@ Changing GUI status to: ''
 ---------- Dialog 'About TextTest' ----------
 Default widget is 'gtk-close'
 Image 'texttest-logo.gif'
-'<span size='xx-large'>TextTest daily-release</span>
+'<span size='xx-large'>TextTest trunk</span>
 '
 '<i>TextTest is an application-independent tool for text-based
 functional testing. This means running a batch-mode program
@@ -199,7 +199,7 @@ Default widget is 'gtk-close'
 '<b>You are using these versions:
 </b>'
 Viewing table with 6 rows and 2 columns.
-'TextTest:' | 'daily-release'
+'TextTest:' | 'trunk'
 'Python:' | '2.9.42.final.0'
 'GTK:' | '2.58.42'
 'PyGTK:' | '2.42.0'
@@ -237,39 +237,33 @@ Changing GUI status to: ''
 ---------- Dialog 'TextTest Migration Notes' ----------
 Default widget is 'gtk-close'
 
-Showing Notebook with tabs: from 3.18 , from 3.17 , from 3.16 , from 3.15 , from 3.14 , from 3.13 , from 3.12 , from 3.11 , from 3.10 , from 3.9 , from 3.8 , from 3.7 , from 3.6 , from 3.5 , from 3.4 , from 3.3 , from 3.1 , from 2.x
-Viewing page 'from 3.18'
+Showing Notebook with tabs: from 3.19 , from 3.18 , from 3.17 , from 3.16 , from 3.15 , from 3.14 , from 3.13 , from 3.12 , from 3.11 , from 3.10 , from 3.9 , from 3.8 , from 3.7 , from 3.6 , from 3.5 , from 3.4 , from 3.3 , from 3.1 , from 2.x
+Viewing page 'from 3.19'
 
 ========== GtkTextView ==========
 
-Nothing to migrate as such, but note the following behaviour changes:
+
+The main things that need migrating are "collect_traffic_py_attributes" settings.
 
 =========================================================
-CHANGES IN DEFAULT BEHAVIOUR (OR PROCEDURE)
+COMPULSORY MIGRATION
 =========================================================
 
-(1) Naming scheme for new test suites
-=====================================
-If you create a new test suite with TextTest 3.19 or later you'll find it has different
-naming conventions for the standard streams. Files that were called "input.<app>", "output.<app>"
-and "errors.<app>" will now get called "stdin.<app>", "stdout.<app>" and "stderr.<app>". This is
-because the old naming scheme was deemed confusing to newbies and the hope is the newer names
-make it easier to infer what the file is.
+(1) collect_traffic_py_attributes
+===================================
 
-You can convert to the new naming scheme by setting
+This was only introduced in 3.19 so it didn't seem worth preserving the old format.
 
-filename_convention_scheme:standard
+To intercept the python function datetime.datetime.now, it previously worked like this
 
-after which you'll of course have to rename your files. To suppress this for new test suites,
-delete the line from the generated config file that looks like the one above.
+collect_traffic_py_module:datetime
 
-It would basically have introduced too much migration to have just removed the old naming scheme.
+[collect_traffic_py_attributes]
+datetime:datetime.now
 
-(2) Various warnings "upgraded"
-===============================
-Various errors and warnings that previously only got written in batch mode log files will now
-appears also when you run the UI. For example, if a "testsuite" file refers to a test that cannot
-be found. Basically you'll need to fix these things now whereas before they could largely be ignored.
+This was deemed unnecessarily wordy. It should now be done simply via
+
+collect_traffic_py_attributes:datetime.datetime.now
 =================================
 ---------------
 Button 'gtk-close' (Stock image 'gtk-close')
@@ -277,7 +271,7 @@ Button 'gtk-close' (Stock image 'gtk-close')
 
 'view tab' event created with arguments 'from 3.4'
 
-Current page changed in Notebook with tabs: from 3.18 , from 3.17 , from 3.16 , from 3.15 , from 3.14 , from 3.13 , from 3.12 , from 3.11 , from 3.10 , from 3.9 , from 3.8 , from 3.7 , from 3.6 , from 3.5 , from 3.4 , from 3.3 , from 3.1 , from 2.x
+Current page changed in Notebook with tabs: from 3.19 , from 3.18 , from 3.17 , from 3.16 , from 3.15 , from 3.14 , from 3.13 , from 3.12 , from 3.11 , from 3.10 , from 3.9 , from 3.8 , from 3.7 , from 3.6 , from 3.5 , from 3.4 , from 3.3 , from 3.1 , from 2.x
 Viewing page 'from 3.4'
 
 ========== GtkTextView ==========
@@ -385,6 +379,9 @@ Static GUI Enhancements:
 	Previously just tried to silently amalgamate them.
     - Old "Recording" tab is now a dialog (runningactions.py)
 	Hopefully less easy to get ignored now
+    - Running/Advanced tab better organised (runningactions.py)
+	Now has frames and various things get greyed out when not appropriate
+    - Traffic interception record checkbutton moved to Basic tab (when enabled)
     - Shortcut bar setting now greyed out if PyUseCase cannot be found (actionholders.py)
 Dynamic GUI Enhancements:
     - Recomputing marked tests now works correctly (plugins.py)
@@ -392,13 +389,23 @@ Dynamic GUI Enhancements:
     - Recomputing running tests on remote file systems now works (sandbox.py)
 	Also allows following files remotely on such tests.
 Framework Enhancements:
+    - Can now get known bugs to automatically trigger a rerun of the test (default/knownbugs/__init__.py)
+	Useful for example when environment failures are periodically present.
     - Autogenerated version names when running multiple checkouts are shorter (default/__init__.py)
 	Leads to less wide windows being created
     - Autogenerated version names from multiple checkouts are automatically made unsaveable (testmodel.py)
 	i.e. behave as if they were in the config setting "unsaveable_version"
+    - "collate_file" can now reference environment variables (sandbox.py)
+	including those set in specific tests
     - "Traffic interception" is no longer enabled by default (traffic.py)
 	New setting "collect_traffic_client_server" which enables it for client server testing.
 	Relevant options will only be available if that, "collect_traffic" or "collect_traffic_py_module" are set.
+    - Traffic interception no longer records for new modules just because old modules exist (traffic.py)
+	Need to explicitly request recording for new items
+    - collect_traffic_py_attributes now works on builtin modules (traffic.py)
+	Changed how it operates. Also config form of it has changed, see migration notes.
+    - collect_traffic now handles environment variables being unset (traffic.py)
+	Previously only recorded them being set to something else.
     - New hook for custom config modules to set up config file variables that depend on other ones (testmodel.py)
 	setDependentConfigDefaults is now called as it is in the core. Does nothing by default.
 Batch Report Enhancements:
@@ -411,25 +418,36 @@ Grid Engine (LSF/SGE) enhancements:
 	Means it should be faster and make better use of available machines
     - Parallel job machine name formatting improved
 	Should make for less wide boxes in HTML report
+    - Don't leak SSH_TTY to SGE jobs (masterprocess.py)
+	Seems to cause trouble on SuSE 11.
 Bug Fixes:
     - Fixed Mac OS-specific bug that made traffic server fail (and by extension, recording with default settings) (traffic_server.py)
+    - When recomputing, don't reload the configuration while tests are still running (changeteststate.py)
+	Can lead to indeterministic errors
+    - Fixed bug around selecting a particular version from a filter file containing tests for many versions (plugins.py)
     - Various fixes for issues to do with handling extra_versions when reconnecting via a grid (queuesystem/__init__.py)
+    - If externally set environment variable is reset in one test, don't leak this fact to other tests (testmodel.py)
     - Reconnecting now works if an extra_version is provided explicitly (reconnect.py)
     - Reconnecting and then recomputing a test with a known bug now works properly (knownbugs/__init__.py)
+    - Removed incorrect warning when "unordered_text" differed between several applications run (guiutils.py)
     - Workaround for GTK+ 2.20 bug around RC file handling in .gtkrc-2.0 files (controller.py)
     - Fixed race condition when recomputing a running test just as it completes (controller.py)
+    - Fixed race condition when recomputing a running test simultaneous to a grid engine poll (changeteststate.py)
     - traffic.ModifyTraffic script doesn't leak temporary files if it fails (traffic.py)
     - Viewing files on remote machines now works together with ssh, instead of just with rsh (fileviewers.py)
     - Fixed stacktrace when viewing Jira issue with unicode characters with no encoding, i.e. LANG=C (jira.py)
     - Code to clean up leaked Xvfb lock files now actually works (startXvfb.py)
+    - Fixed stacktrace on shortcut folders when e.g. starting from scratch in your home directory (guiplugins.py)
     - Fixed stacktrace on extracting GUI config entry documentation on Windows when GTK not installed (!) (guiutils.py)
     - Fixed bug where failure to clean previous batch temp directories was not reported properly (plugins.py)
     - Fixed race condition in traffic server where shutdown could complete before all requests were handled (traffic_server.py)
     - Traffic mechanism now handles SUT changes to PATH correctly (traffic_server.py)
     - Dynamic GUI window title now reports correctly when more than one checkout is being used (controller.py)
     - default.ReplaceText now works without an explicitly provided file, as it once did (scripts.py)
+    - default.ReplaceText now works with text containing "=" characters (scripts.py)
     - default.DocumentEnvironment now works with an explicitly provided variable name (scripts.py)
     - Fixed stack trace on trying to view file properties on a file that has been removed (fileproperties.py)
+    - Various error messages tidied up (e.g. filetrees.py)
 =================================
 ---------------
 Button 'gtk-close' (Stock image 'gtk-close')
