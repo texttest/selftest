@@ -1,7 +1,3 @@
-<-PYT:import package
-<-PYT:import package.sub
-<-PYT:import package.sub.tempfile
-<-PYT:package.sub.tempfile.gettempdir()
-->RET:'/users/geoff/tmp'
-<-PYT:package.sub.tempfile.tempdir
-->RET:'/users/other/tmp'
+<-PYT:import logging.config
+<-PYT:logging.config.fileConfig('/no/such/file')
+->RET:'Fake that it works'
