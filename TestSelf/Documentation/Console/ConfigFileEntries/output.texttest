@@ -27,8 +27,9 @@ collate_script|{'default': [], 'stacktrace': ['interpretcore.py']}|Mapping of re
 collect_traffic|{'default': [], 'asynchronous': []}|List of command-line programs to intercept
 collect_traffic_client_server|false|Whether to intercept client-server traffic sent by the SUT
 collect_traffic_environment|{'default': []}|Mapping of collected programs to environment variables they care about
-collect_traffic_py_attributes|[]|List of Python attributes to intercept
-collect_traffic_py_module|[]|List of Python modules to intercept
+collect_traffic_py_attributes|[]|Alias. See entry for 'collect_traffic_python'
+collect_traffic_py_module|[]|Alias. See entry for 'collect_traffic_python'
+collect_traffic_python|[]|List of Python modules and attributes to intercept
 collect_traffic_use_threads|true|Whether to enable threading, and hence concurrent requests, in traffic mechanism
 config_module|default|Configuration module to use
 copy_test_path|[]|Paths to be copied to the sandbox when running tests
