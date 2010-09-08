@@ -37,7 +37,7 @@ Button 'Filter' (Stock image 'gtk-find', accelerator 'Ctrl+F', tooltip 'filter t
 Button 'Reset Tab' (tooltip 'Reset all the settings in the current tab to their default values')
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 08Sep10:57:02.' , Image 'throbber_inactive.png'
+'TextTest started at 08Sep10:56:04.' , Image 'throbber_inactive.png'
 ----------------------------------------------------------------------------------
 
 Changing GUI status to: 'Reading tests ...'
@@ -61,60 +61,105 @@ Updated : Test Tree with columns: Tests: 0/4 selected
 ->       One (black/grey90)
 Updated drop-down list in 'Test-file to search' Text entry (set to 'output') (drop-down list containing ['errors', 'output'])
 
-Changing GUI status to: 'Reading tests completed at 08Sep10:57:02.'
+Changing GUI status to: 'Reading tests completed at 08Sep10:56:04.'
 
 Expected application event 'all tests to be read' occurred, proceeding.
 
-'load test selection from file' event created with arguments ''
+'set test selection to' event created with arguments 'One1'
 
----------- Dialog 'Load test selection from file' ----------
-Default widget is 'texttest-stock-load'
+No longer greyed out : _Run
 
-Showing File Chooser for 'Load test selection from file' (selected '/carm/proj/texttest-tmp/geoff/dynamic_gui.08Sep105639.20794/texttest.gui/TestSelf/TestSelection/GUI/Persistence/DefaultLoadDirectory/TargetApp/filter_files/andfilter.hello')
-Shortcut folders (3) :
-- /carm/proj/texttest-tmp/geoff/dynamic_gui.08Sep105639.20794/texttest.gui/TestSelf/TestSelection/GUI/Persistence/DefaultLoadDirectory/texttesttmp/static_gui.08Sep105656.11101/temporary_filter_files
-- /carm/proj/texttest-tmp/geoff/dynamic_gui.08Sep105639.20794/texttest.gui/TestSelf/TestSelection/GUI/Persistence/DefaultLoadDirectory/TargetApp/filter_files
-- /carm/proj/texttest-tmp/geoff/dynamic_gui.08Sep105639.20794/texttest.gui/TestSelf/TestSelection/GUI/Persistence/DefaultLoadDirectory/TargetApp/strange_filter_files
+Changed selection in Test Tree with columns: Tests: 1/4 selected
+-> TargetApp (hello) (black/grey90,bold)
+->   Suite1 (black/grey90,bold)
+->     One1 (black/grey90)   ***
+->     Two (black/grey90)
+->     Three (black/grey90)
+->   Super (black/grey90,bold)
+->     Suite2 (black/grey90,bold)
+->       One (black/grey90)
+
+Current page changed in Notebook with tabs: Test , Selection , Running , Config
+Viewing page 'Test'
+...........
+
+Showing File Tree with columns: One1
+-> Standard Files (white,bold)
+->   errors.hello (grey90)
+->   output.hello (grey90)
+-> Definition Files (white)
+
+------------------------------ (horizontal pane separator, 46% from the top)
+...........
+
+========== Text Info ==========
+
+Description:
+<No description provided>
+
+Full path:
+Suite1/One1
+===============================
+
+'show file menu' event created with arguments ''
+
+---------- Popup Window ----------
+'_Load Selection...' (Stock image 'gtk-open', accelerator 'Shift+Ctrl+O')
+  ----
+'S_ave Selection...' (Stock image 'gtk-save-as', accelerator 'Ctrl+D')
+  ----
+'_Quit' (Stock image 'gtk-quit', accelerator 'Ctrl+Q')
+----------------------------------
+
+'save selected tests in file' event created with arguments ''
+
+---------- Dialog 'Save selected tests in file' ----------
+Default widget is 'gtk-save'
+
+Showing File Chooser for 'Save selected tests in file'
+Shortcut folders (2) :
+- /carm/proj/texttest-tmp/geoff/texttest.gui.gui.08Sep105557.20773/texttest.gui/TestSelf/TestSelection/GUI/Persistence/SaveBadSelection/TargetApp/filter_files
+- /carm/proj/texttest-tmp/geoff/texttest.gui.gui.08Sep105557.20773/texttest.gui/TestSelf/TestSelection/GUI/Persistence/SaveBadSelection/TargetApp/strange_filter_files
+.....'Save'......
+Radio button '_List of selected tests' (checked)
+Radio button 'C_riteria entered in the Selection tab
+(Might not match current selection, if it has been modified)'
 ---------------
-Button 'texttest-stock-load' (Stock image 'texttest-stock-load') , Button 'gtk-cancel' (Stock image 'gtk-cancel')
-------------------------------------------------------------
+Button 'gtk-save' (Stock image 'gtk-save') , Button 'gtk-cancel' (Stock image 'gtk-cancel')
+----------------------------------------------------------
 
-'look in folder' event created with arguments 'strange_filter_files'
+'press save' event created with arguments ''
 
-Updated : File Chooser for 'Load test selection from file' (selected '/carm/proj/texttest-tmp/geoff/dynamic_gui.08Sep105639.20794/texttest.gui/TestSelf/TestSelection/GUI/Persistence/DefaultLoadDirectory/TargetApp/strange_filter_files/directory')
-
-'select filter-file' event created with arguments 'word_document.doc'
-
-Updated : File Chooser for 'Load test selection from file' (selected '/carm/proj/texttest-tmp/geoff/dynamic_gui.08Sep105639.20794/texttest.gui/TestSelf/TestSelection/GUI/Persistence/DefaultLoadDirectory/TargetApp/strange_filter_files/word_document.doc')
-
-'press load' event created with arguments ''
-
-Changing GUI status to: 'Loading test selection ...'
-
-Changing GUI status to: 'Loaded test selection from file '/carm/proj/texttest-tmp/geoff/dynamic_gui.08Sep105639.20794/texttest.gui/TestSelf/TestSelection/GUI/Persistence/DefaultLoadDirectory/TargetApp/strange_filter_files/word_document.doc'.'
-
-'load test selection from file' event created with arguments ''
-
----------- Dialog 'Load test selection from file' ----------
-Default widget is 'texttest-stock-load'
-
-Showing File Chooser for 'Load test selection from file' (selected '/carm/proj/texttest-tmp/geoff/dynamic_gui.08Sep105639.20794/texttest.gui/TestSelf/TestSelection/GUI/Persistence/DefaultLoadDirectory/TargetApp/strange_filter_files/directory')
-Shortcut folders (3) :
-- /carm/proj/texttest-tmp/geoff/dynamic_gui.08Sep105639.20794/texttest.gui/TestSelf/TestSelection/GUI/Persistence/DefaultLoadDirectory/texttesttmp/static_gui.08Sep105656.11101/temporary_filter_files
-- /carm/proj/texttest-tmp/geoff/dynamic_gui.08Sep105639.20794/texttest.gui/TestSelf/TestSelection/GUI/Persistence/DefaultLoadDirectory/TargetApp/filter_files
-- /carm/proj/texttest-tmp/geoff/dynamic_gui.08Sep105639.20794/texttest.gui/TestSelf/TestSelection/GUI/Persistence/DefaultLoadDirectory/TargetApp/strange_filter_files
+---------- Dialog 'TextTest Error' ----------
+Default widget is 'gtk-ok'
+Stock image 'gtk-dialog-error' , ========== GtkTextView ==========
+Cannot save selection - no file name specified
+=================================
 ---------------
-Button 'texttest-stock-load' (Stock image 'texttest-stock-load') , Button 'gtk-cancel' (Stock image 'gtk-cancel')
-------------------------------------------------------------
+Button 'gtk-ok' (Stock image 'gtk-ok')
+---------------------------------------------
 
-'select filter-file' event created with arguments 'word_document.doc'
+'agree to texttest message' event created with arguments ''
 
-Updated : File Chooser for 'Load test selection from file' (selected '/carm/proj/texttest-tmp/geoff/dynamic_gui.08Sep105639.20794/texttest.gui/TestSelf/TestSelection/GUI/Persistence/DefaultLoadDirectory/TargetApp/strange_filter_files/word_document.doc')
+'choose folder' event created with arguments 'strange_filter_files'
 
-'press load' event created with arguments ''
+'enter filter-file name =' event created with arguments 'directory'
 
-Changing GUI status to: 'Loading test selection ...'
+'press save' event created with arguments ''
 
-Changing GUI status to: 'Loaded test selection from file '/carm/proj/texttest-tmp/geoff/dynamic_gui.08Sep105639.20794/texttest.gui/TestSelf/TestSelection/GUI/Persistence/DefaultLoadDirectory/TargetApp/strange_filter_files/word_document.doc'.'
+---------- Dialog 'TextTest Error' ----------
+Default widget is 'gtk-ok'
+Stock image 'gtk-dialog-error' , ========== GtkTextView ==========
+Cannot save selection - existing directory specified
+=================================
+---------------
+Button 'gtk-ok' (Stock image 'gtk-ok')
+---------------------------------------------
+
+'agree to texttest message' event created with arguments ''
+
+'press cancel' event created with arguments ''
+
+Changing GUI status to: 'Action cancelled.'
 
 'quit' event created with arguments ''
