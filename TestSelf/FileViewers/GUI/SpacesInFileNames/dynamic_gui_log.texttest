@@ -1,5 +1,5 @@
 
----------- Window 'TextTest dynamic GUI : testing HELLO (started at 12Aug15:03:14)' ----------
+---------- Window 'TextTest dynamic GUI : testing HELLO (started at 08Sep11:27:04)' ----------
 Focus widget is 'Test Tree'
 
 Menu Bar : '_File' (+) , '_View' (+) , '_Actions' (+) , '_Help' (+)
@@ -8,7 +8,7 @@ Tool Bar :
   _Quit (Stock image 'gtk-quit', accelerator 'Ctrl+Q', tooltip 'Quit')
   _Kill (Stock image 'gtk-stop', greyed out, accelerator 'Ctrl+Delete', tooltip 'Kill selected tests')
   _Save (Stock image 'gtk-save', greyed out, accelerator 'Ctrl+S', tooltip 'Save results for selected tests')
-  Progress bar set to fraction 0.0, text 'All 0 tests completed at 12Aug15:03:21'
+  Progress bar set to fraction 0.0, text 'All 0 tests completed at 08Sep11:27:06'
 ...........
 
 Showing Test Tree with columns: Tests: All 0 selected , Details
@@ -22,7 +22,7 @@ Viewing page 'Status'
 Showing Test Status View with columns: Status , Number , Visible
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 12Aug15:03:21.' , Image 'throbber_inactive.png'
+'TextTest started at 08Sep11:27:06.' , Image 'throbber_inactive.png'
 ----------------------------------------------------------------------------------------------
 
 Progress bar set to fraction 0.0, text '0 of 1 tests completed'
@@ -61,11 +61,11 @@ Updated : Test Status View with columns: Status , Number , Visible
 -> Running (white) | 0 (white) | Check box (checked)
 -> Final filter (LightGoldenrod1,bold) | 1 (LightGoldenrod1,bold) | Check box (checked)
 
-Progress bar set to fraction 1.0, text 'All 1 tests completed at 12Aug15:03:23'
+Progress bar set to fraction 1.0, text 'All 1 tests completed at 08Sep11:27:07'
 
 Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
 -> TargetApp (hello) (black/white,bold) | (white)
-->   test1 (black/salmon) | output different(+) (salmon)
+->   test1 (black/salmon) | errors new(+) (salmon)
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white) | 0 (white) | Check box (checked)
@@ -75,7 +75,6 @@ Updated : Test Status View with columns: Status , Number , Visible
 -> Failed (salmon,bold) | 1 (salmon,bold) | Check box (checked)
 ->   Differences (salmon,bold) | 1 (salmon,bold) | Check box (checked)
 ->     another file different (salmon,bold) | 1 (salmon,bold) | Check box (checked)
-->     output different (salmon,bold) | 1 (salmon,bold) | Check box (checked)
 ->   New (salmon,bold) | 1 (salmon,bold) | Check box (checked)
 ->     errors new (salmon,bold) | 1 (salmon,bold) | Check box (checked)
 
@@ -83,7 +82,7 @@ No longer greyed out : _Save
 
 Changed selection in Test Tree with columns: Tests: All 1 selected, none hidden , Details
 -> TargetApp (hello) (black/white,bold) | (white)
-->   test1 (black/salmon) | output different(+) (salmon)   ***
+->   test1 (black/salmon) | errors new(+) (salmon)   ***
 
 Current page changed in Notebook with tabs: Test , Status , Selection , Run Info
 Viewing page 'Test'
@@ -92,7 +91,7 @@ Viewing page 'Test'
 Showing File Tree with columns: test1 , Details
 -> Comparison Files (bold)
 ->   another file.hello (salmon) | (salmon)
-->   output.hello (salmon) | (salmon)
+->   output.hello (DarkSeaGreen2) | (DarkSeaGreen2)
 -> New Files (bold)
 ->   errors.hello (salmon) | (salmon)
 
@@ -104,10 +103,6 @@ Test FAILED :
 ---------- Differences in another file ----------
 0a1
 > I can write to annoying files too ...
----------- Differences in output ----------
-2,3d1
-< 
-< By the way, åäöÅÄÖ.
 ---------- New result in errors ----------
 ===============================
 
