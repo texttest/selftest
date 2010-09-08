@@ -1,3 +1,5 @@
+import_config_file:$STANDARD
+
 config_module:queuesystem
 
 slow_motion_replay_speed:3

@@ -15,7 +15,7 @@ batch_timelimit|{'default': ''}|Maximum length of test to include in batch mode 
 batch_use_collection|{'default': 'false'}|Do we collect multiple mails into one in batch mode
 batch_use_version_filtering|{'default': 'false'}|Which batch sessions use the version filtering mechanism
 batch_version|{'default': []}|List of versions to allow if batch_use_version_filtering enabled
-binary||Alias. See entry for 'executable'
+binary|None|Alias. See entry for 'executable'
 binary_file|[]|Which output files are known to be binary, and hence should not be shown/diffed?
 bug_system_location|{}|The location of the bug system we wish to extract failure information from.
 bug_system_password|{}|Password to use when logging in to bug systems defined in bug_system_location
@@ -44,7 +44,7 @@ default_texttest_tmp|$TEXTTEST_PERSONAL_CONFIG/tmp|Default value for $TEXTTEST_T
 definition_file_stems|{'default': [], 'regenerate': ['usecase', 'traffic'], 'builtin': ['environment', 'properties', 'testsuite', 'options', 'interpreter_options', 'input', 'knownbugs']}|files to be shown as definition files by the static GUI
 diff_program|{'default': 'tkdiff'}|External program to use for graphical file comparison
 discard_file|[]|List of generated result files which should not be compared
-executable||Full path to the System Under Test
+executable|None|Full path to the System Under Test
 extra_config_directory|{'default': []}|Alias. See entry for 'extra_search_directory'
 extra_search_directory|{'default': []}|Additional directories to search for TextTest files
 extra_version|[]|Versions to be run in addition to the one specified
