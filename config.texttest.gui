@@ -78,6 +78,10 @@ test_data_ignore:xdg_config_home
 collect_traffic:xterm
 collect_traffic:firefox
 
+# Obviously GUI version shouldn't intercept these...
+collect_traffic_py_module:{CLEAR gtk}
+collect_traffic_py_module:{CLEAR gobject}
+
 link_test_path:usecase_for_targetapp
 link_test_path:usecases
 
