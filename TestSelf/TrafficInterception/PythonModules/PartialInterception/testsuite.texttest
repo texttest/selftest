@@ -8,11 +8,10 @@ RecordTraffic
 ImportFails
 
 # If we can't find the listed attribute, don't throw an exception in startup
-# 
 BadAttribute
 
 # Just because we introduced a new thing to record doesn't mean we should automatically record it when replaying
 DontRecordAdditional
 
-# Check we can handle builtins, like the classic date.today
-BuiltinModule
+# Test we can handle builtin modules. datetime is only builtin on Windows but it's a very common usage.
+BuiltinModules
