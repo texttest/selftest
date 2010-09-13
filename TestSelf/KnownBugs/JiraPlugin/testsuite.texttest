@@ -7,16 +7,6 @@ BugWithListValues
 # Sometimes custom fields are included without defined values
 BugWithUndefinedValues
 
-# Make sure we can handle unicode characters in the bug text
-BugWithUnicode
-
-# If we don't have an encoding and the bug has unicode in it, do something sensible...
-BugWithUnicodeNoEncoding
-
-# Make sure we can handle unprintable characters in the bug text. Bug contains characters that 
-# cannot be rendered in latin-1.
-BugWithUnprintable
-
 # Should report internal error if the bug is reckoned to be closed
 ClosedBug
 
@@ -31,3 +21,6 @@ BadLogin
 
 # Make sure we get a sensible message when the bug_system_script is incorrectly set.
 BadScript
+
+# Tests for various issues around unicode in bug data
+Unicode
