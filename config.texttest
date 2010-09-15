@@ -179,6 +179,7 @@ link_test_path:startxvfb_interceptor.py
 link_test_path:sgehostfile
 link_test_path:sge
 
+# Command line programs to intercept
 collect_traffic:rsh
 collect_traffic:ssh
 collect_traffic:scp
@@ -190,19 +191,18 @@ collect_traffic:tkdiff
 collect_traffic:emacs
 collect_traffic:time
 
-# Python modules to intercept
-collect_traffic_py_module:urllib2
-collect_traffic_py_module:xmlrpclib
-collect_traffic_py_module:smtplib
-collect_traffic_py_module:matplotlib
-collect_traffic_py_module:pylab
+# Python stuff to intercept
+collect_traffic_python:urllib2
+collect_traffic_python:xmlrpclib
+collect_traffic_python:smtplib
+collect_traffic_python:matplotlib
+collect_traffic_python:pylab
+collect_traffic_python:datetime.date.today
+collect_traffic_python:datetime.datetime.utcnow
+collect_traffic_python:datetime.datetime.now
 # Console version, should capture all attempts to deal with GTK and friends
-collect_traffic_py_module:gtk
-collect_traffic_py_module:gobject
-
-collect_traffic_py_attributes:datetime.date.today
-collect_traffic_py_attributes:datetime.datetime.utcnow
-collect_traffic_py_attributes:datetime.datetime.now
+collect_traffic_python:gtk
+collect_traffic_python:gobject
 
 # Tell it that we want to track what files are created
 create_catalogues:true
