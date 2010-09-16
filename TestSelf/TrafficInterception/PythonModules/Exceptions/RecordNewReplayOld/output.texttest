@@ -1,0 +1,22 @@
+Using Application TRAFFIC, version partial
+Running TRAFFIC.partial test-suite TargetApp
+  Running TRAFFIC.partial test-case Test
+Comparing differences for TRAFFIC.partial test-suite TargetApp
+  Comparing differences for TRAFFIC.partial test-case Test (on errors.traffic,output.traffic,traffic.traffic.partial)
+  TRAFFIC.partial test-case Test FAILED : differences in output,traffic
+  View details(v), Save Version partial(1), Save(s) or continue(any other key)?
+---------- Differences in output ----------
+2c2
+< Caught exception: 'module' object doesn't REALLY have an attribute 'no_such_method', stupid!
+---
+> Caught exception: 'module' object has no attribute 'no_such_method'
+---------- Differences in traffic ----------
+0a1,7
+> <-PYT:import logging
+> <-PYT:import no_such_module
+> ->RET:raise exceptions.ImportError('No module named no_such_module')
+> <-PYT:logging.no_such_method
+> ->RET:raise exceptions.AttributeError("'module' object has no attribute 'no_such_method'")
+> <-PYT:logging.basicConfig('argument', faking=True)
+> ->RET:raise exceptions.TypeError('basicConfig() takes exactly 0 non-keyword arguments (1 given)')
+  Save Version partial(1), Save(s) or continue(any other key)?
