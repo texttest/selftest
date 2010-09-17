@@ -8,4 +8,4 @@ link_test_path:{CLEAR .bzr}
 
 [run_dependent_text]
 # Because of the softlink workaround...
-traffic:(hg(., .)?status(., .)?-A(., .)?).*/TargetApp{REPLACE \1<test write dir>/TargetApp}
+traffic:hg status -A .*/TargetApp{REPLACE hg status -A <test write dir>/TargetApp}
