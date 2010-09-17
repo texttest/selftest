@@ -1,5 +1,8 @@
 #!/usr/bin/env python
 
+attribute = "Real attribute"
+otherattribute = "Other Real attribute"
+
 def method():
     return "Real method answer"
 

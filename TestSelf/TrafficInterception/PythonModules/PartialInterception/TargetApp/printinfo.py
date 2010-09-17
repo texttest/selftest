@@ -2,6 +2,8 @@
 
 import infofinder
 
+print infofinder.attribute
+print infofinder.otherattribute
 print infofinder.method()
 print infofinder.othermethod()
 print infofinder.ClassName.staticMethod()
