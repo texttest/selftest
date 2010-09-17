@@ -10,3 +10,5 @@ cvsroot:CVSROOT
 [run_dependent_text]
 # sometimes caused by symbolic links...
 traffic:cd .*/TargetApp.cvs{REPLACE cd <test write dir>/TargetApp}
+# file references
+traffic:at 0x[0-9a-f]*{REPLACE at <pointer>}
