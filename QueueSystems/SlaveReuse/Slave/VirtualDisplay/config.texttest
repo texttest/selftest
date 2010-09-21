@@ -1,1 +1,7 @@
 collect_traffic_python:os.getpid
+
+# Don't pick up calls from PyUseCase, or from TextTest itself
+# Aim is to intercept only Xvfb starter
+collect_traffic_python_ignore_callers:default
+collect_traffic_python_ignore_callers:usecase
+collect_traffic_python_ignore_callers:queuesystem
