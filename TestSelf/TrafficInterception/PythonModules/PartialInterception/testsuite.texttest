@@ -20,5 +20,8 @@ RecordNewReplayOld
 # For example os.getpid being called from 'logging'
 IgnoreCallsFromStdLib
 
+# Check we can name and exclude certain calling modules
+IgnoreCallsFromNamed
+
 # Test we can handle builtin modules. datetime is only builtin on Windows but it's a very common usage.
 BuiltinModules
