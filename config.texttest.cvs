@@ -11,4 +11,5 @@ cvsroot:CVSROOT
 # sometimes caused by symbolic links...
 traffic:cd .*/TargetApp.cvs{REPLACE cd <test write dir>/TargetApp}
 # file references
-traffic:at 0x[0-9a-f]*{REPLACE at <pointer>}
+traffic:at 0x[0-9a-fA-F]*{REPLACE at <pointer>}
+traffic:/dev/null{REPLACE nul}
