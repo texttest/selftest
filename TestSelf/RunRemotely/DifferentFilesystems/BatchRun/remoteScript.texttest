@@ -1,9 +1,13 @@
 #!/bin/sh
 
-cd ~/'.texttest/tmp/self_test.04Jan174745.19206/hello/Test'
-export PATH=~/".texttest/tmp/self_test.04Jan174745.19206/hello/Test:${PATH}"
-export TEXTTEST_ROOT='/carm/proj/texttest-tmp/geoff/texttest.04Jan174723.29651/texttest/TestSelf/RunRemotely/DifferentFilesystems/BatchRun/TargetApp'
-export TEXTTEST_SANDBOX=~/'.texttest/tmp/self_test.04Jan174745.19206/hello/Test'
-export TEXTTEST_SANDBOX_ROOT=~/'.texttest/tmp/self_test.04Jan174745.19206'
+cd ~/'.texttest/tmp/self_test.22Sep142955.3125/hello/Test'
+PATH=~/".texttest/tmp/self_test.22Sep142955.3125/hello/Test:${PATH}"
+export PATH
+TEXTTEST_ROOT='/carm/proj/texttest-tmp/geoff/texttest.22Sep142950.3122/texttest/TestSelf/RunRemotely/DifferentFilesystems/BatchRun/TargetApp'
+export TEXTTEST_ROOT
+TEXTTEST_SANDBOX=~/'.texttest/tmp/self_test.22Sep142955.3125/hello/Test'
+export TEXTTEST_SANDBOX
+TEXTTEST_SANDBOX_ROOT=~/'.texttest/tmp/self_test.22Sep142955.3125'
+export TEXTTEST_SANDBOX_ROOT
 echo "kill $$" > kill_test.sh
-exec python ~/.texttest/tmp/self_test.04Jan174745.19206/system_under_test/hello.py
+exec python ~/.texttest/tmp/self_test.22Sep142955.3125/system_under_test/hello.py

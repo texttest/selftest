@@ -1,10 +1,16 @@
 #!/bin/sh
 
-cd '/carm/proj/texttest-tmp/geoff/texttest.04Jan174723.29651/texttest/TestSelf/RunRemotely/SharedFilesystem/EnvironmentVariables/texttesttmp/console.04Jan174744.29986/hello/Test'
-export FUNNY_SHELL_SYNTAX='test $(BAD_VARIABLE)'
-export MY_ENV_VAR='test data'
-export PATH="/carm/proj/texttest-tmp/geoff/texttest.04Jan174723.29651/texttest/TestSelf/RunRemotely/SharedFilesystem/EnvironmentVariables/texttesttmp/console.04Jan174744.29986/hello/Test:${PATH}"
-export TEXTTEST_ROOT='/carm/proj/texttest-tmp/geoff/texttest.04Jan174723.29651/texttest/TestSelf/RunRemotely/SharedFilesystem/EnvironmentVariables/TargetApp'
-export TEXTTEST_SANDBOX='/carm/proj/texttest-tmp/geoff/texttest.04Jan174723.29651/texttest/TestSelf/RunRemotely/SharedFilesystem/EnvironmentVariables/texttesttmp/console.04Jan174744.29986/hello/Test'
-export TEXTTEST_SANDBOX_ROOT='/carm/proj/texttest-tmp/geoff/texttest.04Jan174723.29651/texttest/TestSelf/RunRemotely/SharedFilesystem/EnvironmentVariables/texttesttmp/console.04Jan174744.29986'
-exec python /carm/proj/texttest-tmp/geoff/texttest.04Jan174723.29651/texttest/TestSelf/RunRemotely/SharedFilesystem/EnvironmentVariables/TargetApp/hello.py
+cd '/carm/proj/texttest-tmp/geoff/dynamic_gui.22Sep143119.3223/texttest/TestSelf/RunRemotely/SharedFilesystem/EnvironmentVariables/texttesttmp/console.22Sep143132.885/hello/Test'
+FUNNY_SHELL_SYNTAX='test $(BAD_VARIABLE)'
+export FUNNY_SHELL_SYNTAX
+MY_ENV_VAR='test data'
+export MY_ENV_VAR
+PATH="/carm/proj/texttest-tmp/geoff/dynamic_gui.22Sep143119.3223/texttest/TestSelf/RunRemotely/SharedFilesystem/EnvironmentVariables/texttesttmp/console.22Sep143132.885/hello/Test:${PATH}"
+export PATH
+TEXTTEST_ROOT='/carm/proj/texttest-tmp/geoff/dynamic_gui.22Sep143119.3223/texttest/TestSelf/RunRemotely/SharedFilesystem/EnvironmentVariables/TargetApp'
+export TEXTTEST_ROOT
+TEXTTEST_SANDBOX='/carm/proj/texttest-tmp/geoff/dynamic_gui.22Sep143119.3223/texttest/TestSelf/RunRemotely/SharedFilesystem/EnvironmentVariables/texttesttmp/console.22Sep143132.885/hello/Test'
+export TEXTTEST_SANDBOX
+TEXTTEST_SANDBOX_ROOT='/carm/proj/texttest-tmp/geoff/dynamic_gui.22Sep143119.3223/texttest/TestSelf/RunRemotely/SharedFilesystem/EnvironmentVariables/texttesttmp/console.22Sep143132.885'
+export TEXTTEST_SANDBOX_ROOT
+exec python /carm/proj/texttest-tmp/geoff/dynamic_gui.22Sep143119.3223/texttest/TestSelf/RunRemotely/SharedFilesystem/EnvironmentVariables/TargetApp/hello.py
