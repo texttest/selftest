@@ -9,7 +9,7 @@ Comparing differences for TRAFFIC test-suite TargetApp
 ---------- New result in output ----------
 ---------- New result in traffic ----------
 <-PYT:import tempfile
-<-PYT:tempfile.gettempprefix({'quotestring': """This one
+<-PYT:tempfile.gettempprefix({'windows_path': 'C:\\no_such_directory', 'quotestring': """This one
 has a ' in it""", 'string': u'''This
 is a large unicode string'''})
 ->RET:raise exceptions.TypeError('gettempprefix() takes no arguments (1 given)')
