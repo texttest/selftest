@@ -1,5 +1,5 @@
 
----------- Window 'TextTest dynamic GUI : testing HELLO (started at 12Aug15:04:40)' ----------
+---------- Window 'TextTest dynamic GUI : testing HELLO (started at 22Sep17:13:35)' ----------
 Focus widget is 'Test Tree'
 
 Menu Bar : '_File' (+) , '_View' (+) , '_Actions' (+) , '_Help' (+)
@@ -8,7 +8,7 @@ Tool Bar :
   _Quit (Stock image 'gtk-quit', accelerator 'Ctrl+Q', tooltip 'Quit')
   _Kill (Stock image 'gtk-stop', greyed out, accelerator 'Ctrl+Delete', tooltip 'Kill selected tests')
   _Save (Stock image 'gtk-save', greyed out, accelerator 'Ctrl+S', tooltip 'Save results for selected tests')
-  Progress bar set to fraction 0.0, text 'All 0 tests completed at 12Aug15:04:53'
+  Progress bar set to fraction 0.0, text 'All 0 tests completed at 22Sep17:13:38'
 ...........
 
 Showing Test Tree with columns: Tests: All 0 selected , Details
@@ -22,7 +22,7 @@ Viewing page 'Status'
 Showing Test Status View with columns: Status , Number , Visible
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 12Aug15:04:53.' , Image 'throbber_inactive.png'
+'TextTest started at 22Sep17:13:38.' , Image 'throbber_inactive.png'
 ----------------------------------------------------------------------------------------------
 
 Progress bar set to fraction 0.0, text '0 of 1 tests completed'
@@ -61,11 +61,11 @@ Updated : Test Status View with columns: Status , Number , Visible
 -> Running (white) | 0 (white) | Check box (checked)
 -> Final filter (LightGoldenrod1,bold) | 1 (LightGoldenrod1,bold) | Check box (checked)
 
-Progress bar set to fraction 1.0, text 'All 1 tests completed at 12Aug15:05:13'
+Progress bar set to fraction 1.0, text 'All 1 tests completed at 22Sep17:13:39'
 
 Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
 -> TargetApp (hello) (black/white,bold) | (white)
-->   Test (black/salmon) | output different (salmon)
+->   Test (black/salmon) | output different(+) (salmon)
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white) | 0 (white) | Check box (checked)
@@ -75,12 +75,15 @@ Updated : Test Status View with columns: Status , Number , Visible
 -> Failed (salmon,bold) | 1 (salmon,bold) | Check box (checked)
 ->   Differences (salmon,bold) | 1 (salmon,bold) | Check box (checked)
 ->     output different (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->   New (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->     extra new (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->     localfile new (salmon,bold) | 1 (salmon,bold) | Check box (checked)
 
 No longer greyed out : _Save
 
 Changed selection in Test Tree with columns: Tests: All 1 selected, none hidden , Details
 -> TargetApp (hello) (black/white,bold) | (white)
-->   Test (black/salmon) | output different (salmon)   ***
+->   Test (black/salmon) | output different(+) (salmon)   ***
 
 Current page changed in Notebook with tabs: Test , Status , Selection , Run Info
 Viewing page 'Test'
@@ -90,6 +93,9 @@ Showing File Tree with columns: Test , Details
 -> Comparison Files (bold)
 ->   errors.hello (DarkSeaGreen2) | (DarkSeaGreen2)
 ->   output.hello (salmon) | (salmon)
+-> New Files (bold)
+->   extra.hello (salmon) | (salmon)
+->   localfile.hello (salmon) | (salmon)
 
 ------------------------------ (horizontal pane separator, 46% from the top)
 ...........
@@ -101,6 +107,10 @@ Test FAILED on testnet-s16 :
 < Hello
 ---
 > Hello World!
+---------- New result in extra ----------
+extra
+---------- New result in localfile ----------
+local
 ===============================
 
 Expected application event 'completion of test actions' occurred, proceeding.
@@ -115,12 +125,12 @@ Viewing page 'Run Info'
 Application name : HELLO
 Version          : 
 Number of tests  : 1
-Executable       : /carm/proj/texttest-tmp/geoff/dynamic_gui.12Aug150010.11916/texttest.gui/TestSelf/RunRemotely/DifferentFilesystems/RetrieveFiles/GUI/ShowArguments/TargetApp/hello.py
+Executable       : /carm/proj/texttest-tmp/geoff/texttest.gui.22Sep171331.21102/texttest.gui/TestSelf/RunRemotely/DifferentFilesystems/RetrieveFiles/GUI/ShowArguments/TargetApp/hello.py
 
 Command line     : /users/geoff/work/master/Testing/TextTest/bin/texttest.py --vanilla site -g
 
-Start time       : 12Aug15:04:40
-End time         : 12Aug15:05:13
+Start time       : 22Sep17:13:35
+End time         : 22Sep17:13:39
 ==============================
 
 ------------------------------ (horizontal pane separator, 46% from the top)
@@ -129,19 +139,19 @@ End time         : 12Aug15:05:13
 ========== Test Run Info ==========
 Selected test  : Test
 
-Start time       : 12Aug15:05:12
-End time         : 12Aug15:05:13
+Start time       : 22Sep17:13:39
+End time         : 22Sep17:13:39
 
 Description:
 <No description provided>
 
-Command Line   : python ~/.texttest/tmp/dynamic_gui.12Aug150440.9272/system_under_test/hello.py
+Command Line   : python ${HOME}/.texttest/tmp/dynamic_gui.22Sep171335.21108/system_under_test/hello.py
 
 Environment variables :
-PATH=/carm/proj/texttest-tmp/geoff/dynamic_gui.12Aug150010.11916/texttest.gui/TestSelf/RunRemotely/DifferentFilesystems/RetrieveFiles/GUI/ShowArguments/texttesttmp/dynamic_gui.12Aug150440.9272/hello/Test:/carm/proj/texttest-tmp/geoff/dynamic_gui.12Aug150010.11916/texttest.gui/TestSelf/RunRemotely/DifferentFilesystems/RetrieveFiles/GUI/ShowArguments/traffic_intercepts:/carm/proj/texttest-tmp/geoff/dynamic_gui.12Aug150010.11916/texttest.gui/TestSelf/RunRemotely/DifferentFilesystems/RetrieveFiles/GUI/ShowArguments:/users/geoff/bin:/carm/proj/texttest/release/current/site/bin:/usr/local/share/sge6.2/bin/lx24-amd64:/users/geoff/bin:/carm/proj/texttest/release/current/site/bin:/tmp/2552753.1.short:/users/geoff/.local/bin:/usr/local/tt-env/gtk2.18/bin:/users/geoff/bin:/carm/proj/texttest/release/current/site/bin:/users/geoff/bin:/carm/proj/texttest/release/current/site/bin:/usr/local/share/sge6.2/bin/lx24-amd64:/usr/lib64/qt-3.3/bin:/carm/rational/releases/PurifyPlus.7.0.0.0-010/i386_linux2/bin:/usr/local/sbin:/usr/kerberos/bin:/usr/local/bin:/usr/bin:/bin:/usr/X11R6/bin:/usr/sbin:/sbin:/usr/local/share/texttest/site/bin:/usr/local/share/java/apache-maven-2.2.1/bin
-TEXTTEST_ROOT=/carm/proj/texttest-tmp/geoff/dynamic_gui.12Aug150010.11916/texttest.gui/TestSelf/RunRemotely/DifferentFilesystems/RetrieveFiles/GUI/ShowArguments/TargetApp
-TEXTTEST_SANDBOX=/carm/proj/texttest-tmp/geoff/dynamic_gui.12Aug150010.11916/texttest.gui/TestSelf/RunRemotely/DifferentFilesystems/RetrieveFiles/GUI/ShowArguments/texttesttmp/dynamic_gui.12Aug150440.9272/hello/Test
-TEXTTEST_SANDBOX_ROOT=/carm/proj/texttest-tmp/geoff/dynamic_gui.12Aug150010.11916/texttest.gui/TestSelf/RunRemotely/DifferentFilesystems/RetrieveFiles/GUI/ShowArguments/texttesttmp/dynamic_gui.12Aug150440.9272
+PATH=/carm/proj/texttest-tmp/geoff/texttest.gui.22Sep171331.21102/texttest.gui/TestSelf/RunRemotely/DifferentFilesystems/RetrieveFiles/GUI/ShowArguments/texttesttmp/dynamic_gui.22Sep171335.21108/hello/Test:/carm/proj/texttest-tmp/geoff/texttest.gui.22Sep171331.21102/texttest.gui/TestSelf/RunRemotely/DifferentFilesystems/RetrieveFiles/GUI/ShowArguments/traffic_intercepts:/carm/proj/texttest-tmp/geoff/texttest.gui.22Sep171331.21102/texttest.gui/TestSelf/RunRemotely/DifferentFilesystems/RetrieveFiles/GUI/ShowArguments:/users/geoff/.local/bin:/usr/local/tt-env/gtk2.18/bin:/users/geoff/bin:/carm/proj/texttest/release/current/site/bin:/usr/local/share/sge6.2/bin/lx24-amd64:/users/geoff/bin:/carm/proj/texttest/release/current/site/bin:/usr/local/share/sge6.2/bin/lx24-amd64:/usr/lib64/qt-3.3/bin:/carm/rational/releases/PurifyPlus.7.0.0.0-010/i386_linux2/bin:/usr/local/sbin:/usr/kerberos/bin:/usr/local/bin:/usr/bin:/bin:/usr/X11R6/bin:/usr/sbin:/sbin:/usr/local/share/texttest/site/bin:/usr/local/share/java/apache-maven-2.2.1/bin
+TEXTTEST_ROOT=/carm/proj/texttest-tmp/geoff/texttest.gui.22Sep171331.21102/texttest.gui/TestSelf/RunRemotely/DifferentFilesystems/RetrieveFiles/GUI/ShowArguments/TargetApp
+TEXTTEST_SANDBOX=/carm/proj/texttest-tmp/geoff/texttest.gui.22Sep171331.21102/texttest.gui/TestSelf/RunRemotely/DifferentFilesystems/RetrieveFiles/GUI/ShowArguments/texttesttmp/dynamic_gui.22Sep171335.21108/hello/Test
+TEXTTEST_SANDBOX_ROOT=/carm/proj/texttest-tmp/geoff/texttest.gui.22Sep171331.21102/texttest.gui/TestSelf/RunRemotely/DifferentFilesystems/RetrieveFiles/GUI/ShowArguments/texttesttmp/dynamic_gui.22Sep171335.21108
 USECASE_REPLAY_SCRIPT=
 ===================================
 

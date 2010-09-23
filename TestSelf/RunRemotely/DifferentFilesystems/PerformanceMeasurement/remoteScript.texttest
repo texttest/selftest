@@ -1,13 +1,7 @@
 #!/bin/sh
 
-cd ~/'.texttest/tmp/console.22Sep143133.11239/hello/Test'
-PATH=~/".texttest/tmp/console.22Sep143133.11239/hello/Test:${PATH}"
+cd ${HOME}'/.texttest/tmp/console.22Sep170054.19383/hello/Test'
+PATH=${HOME}'/.texttest/tmp/console.22Sep170054.19383/hello/Test:'${PATH}
 export PATH
-TEXTTEST_ROOT='/carm/proj/texttest-tmp/geoff/dynamic_gui.22Sep143119.3223/texttest/TestSelf/RunRemotely/DifferentFilesystems/PerformanceMeasurement/TargetApp'
-export TEXTTEST_ROOT
-TEXTTEST_SANDBOX=~/'.texttest/tmp/console.22Sep143133.11239/hello/Test'
-export TEXTTEST_SANDBOX
-TEXTTEST_SANDBOX_ROOT=~/'.texttest/tmp/console.22Sep143133.11239'
-export TEXTTEST_SANDBOX_ROOT
 echo "kill $$" > kill_test.sh
-exec time -p -o ~/.texttest/tmp/console.22Sep143133.11239/hello/Test/framework_tmp/unixperf python ~/.texttest/tmp/console.22Sep143133.11239/system_under_test/hello.py
+exec time -p -o ${HOME}/.texttest/tmp/console.22Sep170054.19383/hello/Test/framework_tmp/unixperf python ${HOME}/.texttest/tmp/console.22Sep170054.19383/system_under_test/hello.py
