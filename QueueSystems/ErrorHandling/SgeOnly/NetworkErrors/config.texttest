@@ -1,0 +1,9 @@
+collect_traffic_python:socket
+collect_traffic_python:time.sleep
+
+# Our target app also sleeps, unfortunately...
+collect_traffic_python_ignore_callers:sleep
+
+[run_dependent_text]
+traffic:(socketobject[0-9]\.connect)\(\(.*\)\){REPLACE \1((<machine>, <port>))}
+traffic:(socketobject[0-9]\.sendall[^0-9]*)[0-9]*{REPLACE \1<pid>}
