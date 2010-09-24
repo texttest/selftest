@@ -37,7 +37,7 @@ Button 'Filter' (Stock image 'gtk-find', accelerator 'Ctrl+F', tooltip 'filter t
 Button 'Reset Tab' (tooltip 'Reset all the settings in the current tab to their default values')
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 12Aug15:07:47.' , Image 'throbber_inactive.png'
+'TextTest started at 24Sep14:26:51.' , Image 'throbber_inactive.png'
 --------------------------------------------------------------------------------
 
 Changing GUI status to: 'Reading tests ...'
@@ -82,7 +82,7 @@ Updated : Test Tree with columns: Tests: 0/11 selected
 ->       S01 (black/grey90)
 Updated drop-down list in 'Test-file to search' Text entry (set to 'output') (drop-down list containing ['output'])
 
-Changing GUI status to: 'Reading tests completed at 12Aug15:07:48.'
+Changing GUI status to: 'Reading tests completed at 24Sep14:26:51.'
 
 Expected application event 'all tests to be read' occurred, proceeding.
 
@@ -129,7 +129,58 @@ Full path:
 Game9952
 ===============================
 
-'select file' event created with arguments 'testsuite.dip'
+'set file selection to' event created with arguments 'testsuite.dip'
+
+Changed selection in File Tree with columns: Game9952
+-> Definition Files (white,bold)
+->   environment (grey90)
+->   testsuite.dip (grey90)   ***
+->   testsuite.dip.small (grey90)
+
+========== Text Info ==========
+
+Description:
+<No description provided>
+
+Full path:
+Game9952
+
+Preview of testsuite.dip:
+# S01.99's comment
+S01.99
+A01
+S02
+
+# Comment for A02
+A02
+S03
+
+# Extra comment without a test , to make sure it doesn't 
+# get thrown away. See also bugzilla 13073.
+
+# A03 description
+A03
+S04
+A04
+
+S05
+A05
+===============================
+
+'view actions for file' event created with arguments 'testsuite.dip'
+
+---------- Popup Window ----------
+'View File' (Stock image 'gtk-open', accelerator 'Ctrl+O')
+'Test Filtering'
+'_File Properties' (Stock image 'gtk-properties')
+  ----
+'Create/_Import' (Stock image 'gtk-new', accelerator 'Ctrl+N')
+  ----
+'_Rename...' (Stock image 'gtk-italic')
+'Remove...' (Stock image 'gtk-delete', accelerator 'Ctrl+Delete')
+----------------------------------
+
+'view file' event created with arguments ''
 
 Waiting for application event 'file editing operations to complete' to occur.
 
@@ -155,8 +206,29 @@ Updated : Test Tree with columns: Tests: 1 suite selected
 Updated : File Tree with columns: Game9952
 -> Definition Files (white,bold)
 ->   environment (grey90)
-->   testsuite.dip (grey90)
+->   testsuite.dip (grey90)   ***
 ->   testsuite.dip.small (grey90)
+
+========== Text Info ==========
+
+Description:
+<No description provided>
+
+Full path:
+Game9952
+
+Preview of testsuite.dip:
+S01.99
+S02
+S03
+S04
+S05
+A01
+A02
+A03
+A04
+A05
+===============================
 
 Expected application event 'file editing operations to complete' occurred, proceeding.
 
