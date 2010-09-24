@@ -1,7 +1,8 @@
-<-SRV:TextTest slave server started on 10.67.7.13:50320
-<-CMD:cd /nfs/vm/texttest-tmp/geoff/dynamic_gui.19Aug112801.5006/texttest.lsf/QueueSystems/ErrorHandling/Console/JobDisappears/texttesttmp/sleep.killing.19Aug112832.14945/slavelogs; env --unset=USECASE_RECORD_SCRIPT --unset=USECASE_REPLAY_SCRIPT bsub -J Test-Basic-SLEEP.killing -u nobody -o Test-Basic-SLEEP.killing.log -e Test-Basic-SLEEP.killing.errors "exec $SHELL -c "exec /users/geoff/work/master/Testing/TextTest/bin/texttest.py -d /carm/proj/texttest-tmp/geoff/dynamic_gui.19Aug112801.5006/texttest.lsf/QueueSystems/ErrorHandling/Console/JobDisappears/TargetApp -a sleep.killing -l -tp 'Basic' -slave /carm/proj/texttest-tmp/geoff/dynamic_gui.19Aug112801.5006/texttest.lsf/QueueSystems/ErrorHandling/Console/JobDisappears/texttesttmp/sleep.killing.19Aug112832.14945 -servaddr 10.67.7.13:58103 -b short_local""
+<-SRV:TextTest slave server started on 10.67.20.109:41420
+<-CMD:cd /nfs/vm/texttest-tmp/geoff/dynamic_gui.24Sep171539.4237/texttest.lsf/QueueSystems/ErrorHandling/Console/JobDisappears/texttesttmp/sleep.killing.24Sep171638.4371/slavelogs; env --unset=USECASE_RECORD_SCRIPT --unset=USECASE_REPLAY_SCRIPT bsub -J Test-Basic-SLEEP.killing -u nobody -o Test-Basic-SLEEP.killing.log -e Test-Basic-SLEEP.killing.errors "exec $SHELL -c "exec /users/geoff/work/master/Testing/TextTest/bin/texttest.py -d /carm/proj/texttest-tmp/geoff/dynamic_gui.24Sep171539.4237/texttest.lsf/QueueSystems/ErrorHandling/Console/JobDisappears/TargetApp -a sleep.killing -l -tp 'Basic' -slave /carm/proj/texttest-tmp/geoff/dynamic_gui.24Sep171539.4237/texttest.lsf/QueueSystems/ErrorHandling/Console/JobDisappears/texttesttmp/sleep.killing.24Sep171638.4371 -servaddr 10.67.20.109:42615 -b short_local""
 ->OUT:Job <1> is submitted to queue <bad_machine_queue>.
 <-SRV:Completed submission of all tests
+<-PYT:time.sleep(1)
 <-CMD:bkill -s USR1 1
 ->ERR:Job <1>: No matching job found
 <-CMD:bjobs -a -l 1
