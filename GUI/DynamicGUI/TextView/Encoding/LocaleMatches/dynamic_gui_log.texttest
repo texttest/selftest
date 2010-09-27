@@ -1,5 +1,5 @@
 
----------- Window 'TextTest dynamic GUI : testing HELLO (started at 12Aug15:06:40)' ----------
+---------- Window 'TextTest dynamic GUI : testing HELLO (started at 27Sep14:06:55)' ----------
 Focus widget is 'Test Tree'
 
 Menu Bar : '_File' (+) , '_View' (+) , '_Actions' (+) , '_Help' (+)
@@ -8,7 +8,7 @@ Tool Bar :
   _Quit (Stock image 'gtk-quit', accelerator 'Ctrl+Q', tooltip 'Quit')
   _Kill (Stock image 'gtk-stop', greyed out, accelerator 'Ctrl+Delete', tooltip 'Kill selected tests')
   _Save (Stock image 'gtk-save', greyed out, accelerator 'Ctrl+S', tooltip 'Save results for selected tests')
-  Progress bar set to fraction 0.0, text 'All 0 tests completed at 12Aug15:06:55'
+  Progress bar set to fraction 0.0, text 'All 0 tests completed at 27Sep14:06:59'
 ...........
 
 Showing Test Tree with columns: Tests: All 0 selected , Details
@@ -22,7 +22,7 @@ Viewing page 'Status'
 Showing Test Status View with columns: Status , Number , Visible
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 12Aug15:06:55.' , Image 'throbber_inactive.png'
+'TextTest started at 27Sep14:06:59.' , Image 'throbber_inactive.png'
 ----------------------------------------------------------------------------------------------
 
 Progress bar set to fraction 0.0, text '0 of 1 tests completed'
@@ -61,11 +61,11 @@ Updated : Test Status View with columns: Status , Number , Visible
 -> Running (white) | 0 (white) | Check box (checked)
 -> Final filter (LightGoldenrod1,bold) | 1 (LightGoldenrod1,bold) | Check box (checked)
 
-Progress bar set to fraction 1.0, text 'All 1 tests completed at 12Aug15:06:58'
+Progress bar set to fraction 1.0, text 'All 1 tests completed at 27Sep14:07:00'
 
 Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
 -> TargetApp (hello) (black/white,bold) | (white)
-->   test1 (black/salmon) | output different(+) (salmon)
+->   test1 (black/salmon) | output different (salmon)
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white) | 0 (white) | Check box (checked)
@@ -75,14 +75,12 @@ Updated : Test Status View with columns: Status , Number , Visible
 -> Failed (salmon,bold) | 1 (salmon,bold) | Check box (checked)
 ->   Differences (salmon,bold) | 1 (salmon,bold) | Check box (checked)
 ->     output different (salmon,bold) | 1 (salmon,bold) | Check box (checked)
-->   New (salmon,bold) | 1 (salmon,bold) | Check box (checked)
-->     errors new (salmon,bold) | 1 (salmon,bold) | Check box (checked)
 
 No longer greyed out : _Save
 
 Changed selection in Test Tree with columns: Tests: All 1 selected, none hidden , Details
 -> TargetApp (hello) (black/white,bold) | (white)
-->   test1 (black/salmon) | output different(+) (salmon)   ***
+->   test1 (black/salmon) | output different (salmon)   ***
 
 Current page changed in Notebook with tabs: Test , Status , Selection , Run Info
 Viewing page 'Test'
@@ -91,8 +89,6 @@ Viewing page 'Test'
 Showing File Tree with columns: test1 , Details
 -> Comparison Files (bold)
 ->   output.hello (salmon) | (salmon)
--> New Files (bold)
-->   errors.hello (salmon) | (salmon)
 
 ------------------------------ (horizontal pane separator, 46% from the top)
 ...........
@@ -102,18 +98,9 @@ Test FAILED :
 ---------- Differences in output ----------
 2,3d1
 < 
-< Here are some "Latin-1" characters, åäöÅÄÖ.
----------- New result in errors ----------
+< Here is a "Latin-1" character, å
 ===============================
 
 Expected application event 'completion of test actions' occurred, proceeding.
-
-'select file' event created with arguments 'errors.hello'
-
-Waiting for application event 'file editing operations to complete' to occur.
-
-Changing GUI status to: 'Started "emacs errors.hello" in background (from test test1).'
-
-Expected application event 'file editing operations to complete' occurred, proceeding.
 
 'quit' event created with arguments ''
