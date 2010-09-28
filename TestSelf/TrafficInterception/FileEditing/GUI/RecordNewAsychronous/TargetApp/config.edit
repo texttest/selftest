@@ -1,0 +1,14 @@
+import_config_file:$STANDARD
+ 
+executable:${TEXTTEST_HOME}/writewitheditor.py
+
+create_catalogues:true
+
+copy_test_path:file
+
+[collect_traffic]
+default:editor.py
+asynchronous:noneditor.py
+
+[collate_file]
+editedfile:file
