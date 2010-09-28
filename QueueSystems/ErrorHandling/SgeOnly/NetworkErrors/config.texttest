@@ -1,10 +1,4 @@
-collect_traffic_python:time.sleep
 collect_traffic_python:socket
-
-# Our target app also sleeps, unfortunately...
-collect_traffic_python_ignore_callers:sleep
-# Don't pick it up from thread polling
-collect_traffic_python_ignore_callers:engine
 
 [run_dependent_text]
 traffic:(socketobject[0-9]\.connect)\(\(.*\)\){REPLACE \1((<machine>, <port>))}
