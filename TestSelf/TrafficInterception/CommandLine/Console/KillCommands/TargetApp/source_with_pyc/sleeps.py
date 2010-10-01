@@ -12,7 +12,7 @@ def showExitCode(exitCode):
         return -15
 
 proc = subprocess.Popen([ "sleep", "100" ])
-time.sleep(2)
+time.sleep(3)
 if proc.poll():
     print "Process terminated already."
 else:
