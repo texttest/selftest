@@ -37,7 +37,7 @@ Button 'Filter' (Stock image 'gtk-find', accelerator 'Ctrl+F', tooltip 'filter t
 Button 'Reset Tab' (tooltip 'Reset all the settings in the current tab to their default values')
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 13Sep12:31:19.' , Image 'throbber_inactive.png'
+'TextTest started at 08Oct12:08:09.' , Image 'throbber_inactive.png'
 --------------------------------------------------------------------------------
 
 Changing GUI status to: 'Reading tests ...'
@@ -82,7 +82,7 @@ Updated : Test Tree with columns: Tests: 0/11 selected
 ->       S01 (black/grey90)
 Updated drop-down list in 'Test-file to search' Text entry (set to 'output') (drop-down list containing ['output'])
 
-Changing GUI status to: 'Reading tests completed at 13Sep12:31:19.'
+Changing GUI status to: 'Reading tests completed at 08Oct12:08:09.'
 
 Expected application event 'all tests to be read' occurred, proceeding.
 
@@ -249,8 +249,13 @@ The main things that need migrating are "collect_traffic_py_attributes" settings
 COMPULSORY MIGRATION
 =========================================================
 
-(1) collect_traffic_py_attributes
-===================================
+(1) Python version and PyGTK version
+====================================
+TextTest 3.20 now requires at least Python 2.6 and at least PyGTK 2.16 and an 
+equivalent GTK+ installation. 3.19 supported Python back to 2.4 and PyGTK back to 2.10.
+
+(2) collect_traffic_py_attributes -> collect_traffic_python
+===========================================================
 
 This was only introduced in 3.19 so it didn't seem worth preserving the old format.
 
@@ -263,7 +268,51 @@ datetime:datetime.now
 
 This was deemed unnecessarily wordy. It should now be done simply via
 
-collect_traffic_py_attributes:datetime.datetime.now
+collect_traffic_python:datetime.datetime.now
+
+It is also integrated with the old "collect_traffic_py_module" setting which is
+now an alias for "collect_traffic_python". To intercept a whole module you can do
+
+collect_traffic_python:smtplib
+
+The old form "collect_traffic_py_module" will still work, but "collect_traffic_py_attributes"
+is removed.
+
+=========================================================
+CHANGES IN DEFAULT BEHAVIOUR (OR PROCEDURE)
+=========================================================
+
+(1) -bx flag
+============
+In TextTest 3.19 and earlier this was purely a way of starting with the "batch_extra_version"s
+defined for a particular session.
+
+Its behaviour is now changed such that it will try to select exactly the tests provided by
+the batch version provided. That means it will now look up not only "batch_extra_version",
+but also "batch_filter_file", "batch_version" and "batch_timelimit" for the session that you
+provide.
+
+(2) "Re-record" control for traffic files becomes a radio button
+================================================================
+"Replay All" and "Record All" are the equivalent of the old check button being unchecked and 
+checked respectively. "Record New Only" instructs TextTest to replay from the traffic file 
+everything stored there, while recording any traffic programs/python attributes for which 
+it does not yet have information. See the tooltips for more info.
+
+(3) Traffic files with Python interception no longer repeat attributes
+======================================================================
+This may cause your traffic files to get shorter. But they'll hopefully be easier to read also.
+
+=========================================================
+NEW STUFF THAT WILL REQUIRE MIGRATION IN FUTURE VERSIONS
+=========================================================
+
+(1) QUEUE_SYSTEM* environment variables for grid engine integration
+===================================================================
+
+Now that you can provide config files per test in 3.20, these settings have been superceded by
+equivalently named config values "queue_system_resource", "queue_system_processes" and 
+"queue_system_submit_args". The environment variables still work but will be deprecated in 3.21.
 =================================
 ---------------
 Button 'gtk-close' (Stock image 'gtk-close')
@@ -365,90 +414,26 @@ Changing GUI status to: ''
 ---------- Dialog 'TextTest Change Logs' ----------
 Default widget is 'gtk-close'
 
-Showing Notebook with tabs: trunk , 3.19 , 3.18 , 3.17 , 3.16.1 , 3.16 , 3.15 , 3.14.1 , 3.14 , 3.13 , 3.12.1 , 3.12 , 3.11.1 , 3.11 , 3.10 , 3.9.1 , 3.9 , 3.8 , 3.7.1 , 3.7 , 3.6 , 3.5.3 , 3.5.2 , 3.5.1 , 3.5 , 3.4 , 3.3 , 3.2 , 3.1.1 , 3.1 , 3.0 , 2.1 , 2.0 , 1.0 , 0.2 , 0.1
+Showing Notebook with tabs: trunk , 3.20 , 3.19 , 3.18 , 3.17 , 3.16.1 , 3.16 , 3.15 , 3.14.1 , 3.14 , 3.13 , 3.12.1 , 3.12 , 3.11.1 , 3.11 , 3.10 , 3.9.1 , 3.9 , 3.8 , 3.7.1 , 3.7 , 3.6 , 3.5.3 , 3.5.2 , 3.5.1 , 3.5 , 3.4 , 3.3 , 3.2 , 3.1.1 , 3.1 , 3.0 , 2.1 , 2.0 , 1.0 , 0.2 , 0.1
 Viewing page 'trunk'
 
 ========== GtkTextView ==========
+System requirements (see Migration Notes):
 General GUI Enhancements:
+    - GUI now cleans up appropriately on receiving SIGINT on UNIX (engine.py)
+	Means dynamic GUIs can be closed from static GUI without leaking files.
 Static GUI Enhancements:
-    - Selecting for a version picks up versions where the given one is a base_version (selectandfilter.py)
-	Version matching is now the same as that used for other purposes
-    - Selecting for a version works correctly when the given one resets "extra_version" (selectandfilter.py)
-	Picks up the reset correctly.
-    - Now warns you if you load tests of one version and try to run tests of an unrelated one (runningactions.py)
-	Previously just tried to silently amalgamate them.
-    - Old "Recording" tab is now a dialog (runningactions.py)
-	Hopefully less easy to get ignored now
-    - Running/Advanced tab better organised (runningactions.py)
-	Now has frames and various things get greyed out when not appropriate
-    - Traffic interception record checkbutton moved to Basic tab (when enabled)
-    - Shortcut bar setting now greyed out if PyUseCase cannot be found (actionholders.py)
 Dynamic GUI Enhancements:
-    - Recomputing marked tests now works correctly (plugins.py)
-	Icons also displayed when appropriate, irrespective of test marking
-    - Recomputing running tests on remote file systems now works (sandbox.py)
-	Also allows following files remotely on such tests.
 Framework Enhancements:
-    - Can now get known bugs to automatically trigger a rerun of the test (default/knownbugs/__init__.py)
-	Useful for example when environment failures are periodically present.
-    - Autogenerated version names when running multiple checkouts are shorter (default/__init__.py)
-	Leads to less wide windows being created
-    - Autogenerated version names from multiple checkouts are automatically made unsaveable (testmodel.py)
-	i.e. behave as if they were in the config setting "unsaveable_version"
-    - "collate_file" can now reference environment variables (sandbox.py)
-	including those set in specific tests
-    - "Traffic interception" is no longer enabled by default (traffic.py)
-	New setting "collect_traffic_client_server" which enables it for client server testing.
-	Relevant options will only be available if that, "collect_traffic" or "collect_traffic_py_module" are set.
-    - Traffic interception no longer records for new modules just because old modules exist (traffic.py)
-	Need to explicitly request recording for new items
-    - collect_traffic_py_attributes now works on builtin modules (traffic.py)
-	Changed how it operates. Also config form of it has changed, see migration notes.
-    - collect_traffic now handles environment variables being unset (traffic.py)
-	Previously only recorded them being set to something else.
-    - New hook for custom config modules to set up config file variables that depend on other ones (testmodel.py)
-	setDependentConfigDefaults is now called as it is in the core. Does nothing by default.
+    - Jira plugin now highlights 'resolution' field if it is set, instead of 'status' (jira.py)
+	This information is usually more interesting.
 Batch Report Enhancements:
-    - HTML report now shows file diffs as well as bug information when tests have "known bugs" (testoverview.py)
-	Makes it consistent with GUI and email report
-    - "-bx" flag will now find the exact tests run by a particular batch session (default/__init__.py)
-	Previously just picked up "batch_extra_version". See migration notes.
 Grid Engine (LSF/SGE) enhancements:
-    - Reconnecting using the grid no longer insists on using the resources etc. from the test itself (masterprocess.py)
-	Means it should be faster and make better use of available machines
-    - Parallel job machine name formatting improved
-	Should make for less wide boxes in HTML report
-    - Don't leak SSH_TTY to SGE jobs (masterprocess.py)
-	Seems to cause trouble on SuSE 11.
+    - Ignore order of lists of resources when deciding about reuse (masterprocess.py)
+	Previously started new jobs if one test required resources a,b and the other required b,a.
 Bug Fixes:
-    - Fixed Mac OS-specific bug that made traffic server fail (and by extension, recording with default settings) (traffic_server.py)
-    - When recomputing, don't reload the configuration while tests are still running (changeteststate.py)
-	Can lead to indeterministic errors
-    - Fixed bug around selecting a particular version from a filter file containing tests for many versions (plugins.py)
-    - Various fixes for issues to do with handling extra_versions when reconnecting via a grid (queuesystem/__init__.py)
-    - If externally set environment variable is reset in one test, don't leak this fact to other tests (testmodel.py)
-    - Reconnecting now works if an extra_version is provided explicitly (reconnect.py)
-    - Reconnecting and then recomputing a test with a known bug now works properly (knownbugs/__init__.py)
-    - Removed incorrect warning when "unordered_text" differed between several applications run (guiutils.py)
-    - Workaround for GTK+ 2.20 bug around RC file handling in .gtkrc-2.0 files (controller.py)
-    - Fixed race condition when recomputing a running test just as it completes (controller.py)
-    - Fixed race condition when recomputing a running test simultaneous to a grid engine poll (changeteststate.py)
-    - traffic.ModifyTraffic script doesn't leak temporary files if it fails (traffic.py)
-    - Viewing files on remote machines now works together with ssh, instead of just with rsh (fileviewers.py)
-    - Fixed stacktrace when viewing Jira issue with unicode characters with no encoding, i.e. LANG=C (jira.py)
-    - Code to clean up leaked Xvfb lock files now actually works (startXvfb.py)
-    - Fixed stacktrace on shortcut folders when e.g. starting from scratch in your home directory (guiplugins.py)
-    - Fixed stacktrace on extracting GUI config entry documentation on Windows when GTK not installed (!) (guiutils.py)
-    - Fixed bug where failure to clean previous batch temp directories was not reported properly (plugins.py)
-    - Fixed stacktrace when Dictionary config file entries used as basic types (plugins.py)
-    - Fixed race condition in traffic server where shutdown could complete before all requests were handled (traffic_server.py)
-    - Traffic mechanism now handles SUT changes to PATH correctly (traffic_server.py)
-    - Dynamic GUI window title now reports correctly when more than one checkout is being used (controller.py)
-    - default.ReplaceText now works without an explicitly provided file, as it once did (scripts.py)
-    - default.ReplaceText now works with text containing "=" characters (scripts.py)
-    - default.DocumentEnvironment now works with an explicitly provided variable name (scripts.py)
-    - Fixed stack trace on trying to view file properties on a file that has been removed (fileproperties.py)
-    - Various error messages tidied up (e.g. filetrees.py)
+    - Running extra versions with an explicit version from the static GUI does not flip version order any more (testmodel.py)
+    - TextTest no longer allows data file names to clash with its own pre-defined definition file names (testmodel.py)
 =================================
 ---------------
 Button 'gtk-close' (Stock image 'gtk-close')
@@ -456,7 +441,7 @@ Button 'gtk-close' (Stock image 'gtk-close')
 
 'view tab' event created with arguments '3.7.1'
 
-Current page changed in Notebook with tabs: trunk , 3.19 , 3.18 , 3.17 , 3.16.1 , 3.16 , 3.15 , 3.14.1 , 3.14 , 3.13 , 3.12.1 , 3.12 , 3.11.1 , 3.11 , 3.10 , 3.9.1 , 3.9 , 3.8 , 3.7.1 , 3.7 , 3.6 , 3.5.3 , 3.5.2 , 3.5.1 , 3.5 , 3.4 , 3.3 , 3.2 , 3.1.1 , 3.1 , 3.0 , 2.1 , 2.0 , 1.0 , 0.2 , 0.1
+Current page changed in Notebook with tabs: trunk , 3.20 , 3.19 , 3.18 , 3.17 , 3.16.1 , 3.16 , 3.15 , 3.14.1 , 3.14 , 3.13 , 3.12.1 , 3.12 , 3.11.1 , 3.11 , 3.10 , 3.9.1 , 3.9 , 3.8 , 3.7.1 , 3.7 , 3.6 , 3.5.3 , 3.5.2 , 3.5.1 , 3.5 , 3.4 , 3.3 , 3.2 , 3.1.1 , 3.1 , 3.0 , 2.1 , 2.0 , 1.0 , 0.2 , 0.1
 Viewing page '3.7.1'
 
 ========== GtkTextView ==========
@@ -615,32 +600,24 @@ Showing Notebook with tabs: Quick Start
 Viewing page 'Quick Start'
 
 ========== GtkTextView ==========
-To get started quickly, take a look in the self-tests. There are various "TargetApp" directories
-to be found. Each of these contains a test-suite for a simple program (which are in turn part
-of the larger test suite for TextTest, as it tests itself testing these programs)
+Some features are easiest to understand by example. For complete newcomers to TextTest it's recommended
+to follow the "Getting Started" tutorial and then possibly the "Course Material" which can be seen at
+http://www.texttest.org/index.php?page=documentation_trunk. For those who basically know the tool but
+want to explore features they haven't used, the self-tests provide a wealth of working examples.
 
-To run these apps by hand, go to the TargetApp directory in question and call it, via
+These can be found in the download, or the latest version of them can be had from source control.
+See http://www.texttest.org/index.php?page=download.
 
-texttest -gx  (static GUI - allows management of tests and starting dynamic GUI)
-texttest -g   (dynamic GUI - runs tests and shows results in GUI)
-texttest -con (console interface)
+There are various "TargetApp" directories to be found under it. Each of these contains a test-suite 
+for a simple program (which are in turn part of the larger test suite for TextTest, as it tests 
+itself testing these programs)
 
-To understand the test suite, there is always a file called config.<app> (and maybe a few more for 
-versions). This tells texttest about the application in question. If nothing else it will have an 
-entry called "executable" (or "binary", which is a back-compatibility alias) to tell you what 
-executable is being tested.
+To run these apps by hand, you can view and run them in TextTest:
 
-There will also be a file called testsuite.<app>. This lists subdirectories to be considered either 
-as test cases or test suites themselves. Applies recursively you can find the directories which 
-represent tests.
+1) Set the environment variable STANDARD to point at the "standard" file at the top level of the self-tests
+2) texttest -d <path to TargetApp> -gx  
 
-A test can define command-line options via the options.<app> file, and also standard input contents 
-via the input.<app> file. For GUIs it can define use-case style actions to be performed on the GUI via
-the usecase.<app> file. Anything else under the test is "standard results", for example output.<app> 
-for the standard output and errors.<app> for the standard error. When the test is run these will be 
-compared with the actual results from running the program with the input as defined.
-
-What there is to find:
+What there is to find (below is just a selection):
 
 TargetApp                                  : used by default as it's very basic, this test suite has
                                                one test (that fails) on a "Hello World" program.
@@ -727,7 +704,7 @@ QueueSystems/TargetApp                     : useful for understanding the queues
                                                the associated plugin for LSF and Sun Grid Engine
 
 
-Once you've browsed these a bit and can read them, you might start using the actual self-tests to see how 
+Once you've browsed these a bit and can read them, you can also use the actual self-tests to see how 
 TextTest itself works and what features it has...
 =================================
 ---------------
