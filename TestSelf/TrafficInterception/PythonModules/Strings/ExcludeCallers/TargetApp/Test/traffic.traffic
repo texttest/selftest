@@ -4,4 +4,4 @@
 <-PYT:directmodule.getValue(3)
 ->RET:'Fake'
 <-PYT:import badmodule
-->RET:raise ImportError('No imports allowed from here')
+->RET:raise exceptions.ImportError('No imports allowed from here')
