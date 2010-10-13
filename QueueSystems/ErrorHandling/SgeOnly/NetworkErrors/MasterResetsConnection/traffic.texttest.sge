@@ -6,7 +6,7 @@
 <-PYT:socket.SOCK_STREAM
 ->RET:1
 <-PYT:socket.socket(2, 1)
-->RET:NewStyleInstance('_socketobject', '_socketobject1')
+->RET:Instance('_socketobject(object)', '_socketobject1')
 <-PYT:_socketobject1.connect(('10.67.7.144', 37678))
 <-PYT:_socketobject1.sendall("""11748
 sleep.startdigit:123Test
@@ -51,12 +51,12 @@ sb.""")
 ->RET:1
 <-PYT:_socketobject1.shutdown(1)
 <-PYT:_socketobject1.makefile()
-->RET:NewStyleInstance('_fileobject', '_fileobject1')
+->RET:Instance('_fileobject(object)', '_fileobject1')
 <-PYT:_fileobject1.read()
 ->RET:''
 <-PYT:_socketobject1.close()
 <-PYT:socket.socket(2, 1)
-->RET:NewStyleInstance('_socketobject', '_socketobject2')
+->RET:Instance('_socketobject(object)', '_socketobject2')
 <-PYT:_socketobject2.connect(('10.67.7.144', 37678))
 <-PYT:_socketobject2.sendall("""11748
 sleep.startdigit:123Test
@@ -101,7 +101,7 @@ sb.""")
 ->RET:raise Instance('error', 'error1')
 <-PYT:time.sleep(1)
 <-PYT:socket.socket(2, 1)
-->RET:NewStyleInstance('_socketobject', '_socketobject3')
+->RET:Instance('_socketobject(object)', '_socketobject3')
 <-PYT:_socketobject3.connect(('10.67.7.144', 37678))
 <-PYT:_socketobject3.sendall("""11748
 sleep.startdigit:123Test
@@ -146,7 +146,7 @@ sb.""")
 ->RET:raise Instance('error', 'error2')
 <-PYT:time.sleep(2)
 <-PYT:socket.socket(2, 1)
-->RET:NewStyleInstance('_socketobject', '_socketobject4')
+->RET:Instance('_socketobject(object)', '_socketobject4')
 <-PYT:_socketobject4.connect(('10.67.7.144', 37678))
 <-PYT:_socketobject4.sendall("""11748
 sleep.startdigit:123Test
@@ -191,7 +191,7 @@ sb.""")
 ->RET:raise Instance('error', 'error3')
 <-PYT:time.sleep(4)
 <-PYT:socket.socket(2, 1)
-->RET:NewStyleInstance('_socketobject', '_socketobject1')
+->RET:Instance('_socketobject(object)', '_socketobject1')
 <-PYT:_socketobject1.connect(('10.67.7.144', 37678))
 <-PYT:_socketobject1.sendall("""11748
 sleep.startdigit:123Test
@@ -236,7 +236,7 @@ sb.""")
 ->RET:raise Instance('error', 'error4')
 <-PYT:time.sleep(8)
 <-PYT:socket.socket(2, 1)
-->RET:NewStyleInstance('_socketobject', '_socketobject1')
+->RET:Instance('_socketobject(object)', '_socketobject1')
 <-PYT:_socketobject1.connect(('10.67.7.144', 37678))
 <-PYT:_socketobject1.sendall("""11748
 sleep.startdigit:123Test
@@ -281,7 +281,7 @@ sb.""")
 ->RET:raise Instance('error', 'error5')
 <-PYT:time.sleep(16)
 <-PYT:socket.socket(2, 1)
-->RET:NewStyleInstance('_socketobject', '_socketobject1')
+->RET:Instance('_socketobject(object)', '_socketobject1')
 <-PYT:_socketobject1.connect(('10.67.7.144', 37678))
 <-PYT:_socketobject1.sendall("""11748
 sleep.startdigit:123Test
@@ -326,7 +326,7 @@ sb.""")
 ->RET:raise Instance('error', 'error6')
 <-PYT:time.sleep(32)
 <-PYT:socket.socket(2, 1)
-->RET:NewStyleInstance('_socketobject', '_socketobject1')
+->RET:Instance('_socketobject(object)', '_socketobject1')
 <-PYT:_socketobject1.connect(('10.67.7.144', 37678))
 <-PYT:_socketobject1.sendall("""11748
 sleep.startdigit:123Test
@@ -371,7 +371,7 @@ sb.""")
 ->RET:raise Instance('error', 'error7')
 <-PYT:time.sleep(64)
 <-PYT:socket.socket(2, 1)
-->RET:NewStyleInstance('_socketobject', '_socketobject1')
+->RET:Instance('_socketobject(object)', '_socketobject1')
 <-PYT:_socketobject1.connect(('10.67.7.144', 37678))
 <-PYT:_socketobject1.sendall("""11748
 sleep.startdigit:123Test
@@ -416,7 +416,7 @@ sb.""")
 ->RET:raise Instance('error', 'error8')
 <-PYT:time.sleep(128)
 <-PYT:socket.socket(2, 1)
-->RET:NewStyleInstance('_socketobject', '_socketobject1')
+->RET:Instance('_socketobject(object)', '_socketobject1')
 <-PYT:_socketobject1.connect(('10.67.7.144', 37678))
 <-PYT:_socketobject1.sendall("""11748
 sleep.startdigit:123Test
@@ -463,7 +463,7 @@ sb.""")
 <-PYT:error9.__str__()
 ->RET:'Connection reset by peer'
 <-PYT:socket.socket(2, 1)
-->RET:NewStyleInstance('_socketobject', '_socketobject1')
+->RET:Instance('_socketobject(object)', '_socketobject1')
 <-PYT:_socketobject1.connect(('10.67.7.144', 37678))
 <-PYT:_socketobject1.sendall("""11748
 sleep.startdigit:123Test
@@ -506,12 +506,12 @@ p17
 sb.""")
 <-PYT:_socketobject1.shutdown(1)
 <-PYT:_socketobject1.makefile()
-->RET:NewStyleInstance('_fileobject', '_fileobject1')
+->RET:Instance('_fileobject(object)', '_fileobject1')
 <-PYT:_fileobject1.read()
 ->RET:''
 <-PYT:_socketobject1.close()
 <-PYT:socket.socket(2, 1)
-->RET:NewStyleInstance('_socketobject', '_socketobject1')
+->RET:Instance('_socketobject(object)', '_socketobject1')
 <-PYT:_socketobject1.connect(('10.67.7.144', 37678))
 <-PYT:_socketobject1.sendall("""11748
 sleep.startdigit:123Test
@@ -676,7 +676,7 @@ p62
 sb.""")
 <-PYT:_socketobject1.shutdown(1)
 <-PYT:_socketobject1.makefile()
-->RET:NewStyleInstance('_fileobject', '_fileobject1')
+->RET:Instance('_fileobject(object)', '_fileobject1')
 <-PYT:_fileobject1.read()
 ->RET:''
 <-PYT:_socketobject1.close()

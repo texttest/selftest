@@ -1,11 +1,13 @@
 <-PYT:import smtplib
+<-PYT:smtplib.__path__
+->RET:raise exceptions.AttributeError("'module' object has no attribute '__path__'")
 <-PYT:smtplib.SMTP()
 ->RET:Instance('SMTP', 'smtp1')
 <-PYT:smtp1.connect('localhost')
-->RET:(220, 'gewoia.jeppesensystems.com ESMTP Sendmail 8.13.8/8.13.8; Tue, 9 Feb 2010 15:15:50 +0100')
+->RET:(220, 'gewoia.jeppesensystems.com ESMTP Sendmail 8.13.8/8.13.8; Tue, 12 Oct 2010 15:25:37 +0200')
 <-PYT:smtp1.sendmail('fakeuser', ['tom', 'dick', 'harry'], '''From: fakeuser
 To: tom,dick,harry
-Subject: 09Feb2010 HELLO : 4 tests : 3 FAILED
+Subject: 12Oct2010 HELLO : 4 tests : 3 FAILED
 
 Summary of all Unsuccessful tests follows...
 ---------------------------------------------------------------------------------
@@ -46,6 +48,6 @@ In HELLO test-suite TargetApp:
 
 
 ''')
-->RET:raise Instance('SMTPSenderRefused', 'smtpsenderrefused1')
+->RET:raise Instance('SMTPSenderRefused(SMTPResponseException, SMTPException, exceptions.Exception)', 'smtpsenderrefused1')
 <-PYT:smtpsenderrefused1.__str__()
 ->RET:"(553, '5.5.4 <fakeuser>... Domain name required for sender address fakeuser', 'fakeuser')"
