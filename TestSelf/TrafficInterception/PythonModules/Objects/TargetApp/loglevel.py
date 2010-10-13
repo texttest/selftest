@@ -4,7 +4,7 @@ import logging
 
 logger = logging.getLogger("""Some Multiline
 Logger""")
-if isinstance(logger, logging.Logger):
+if isinstance(logger, logging.Logger) and isinstance(logger, logging.Filterer):
     print logger.getEffectiveLevel() / 10
     print "Nonsense attributes = " + repr(hasattr(logger, "nonsense"))
 else:
