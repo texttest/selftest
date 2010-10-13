@@ -25,7 +25,7 @@ except urllib2.URLError, e:
 
 try:
     print urllib2.urlopen("foo://another.no.such.site")
-except Exception:
+except EnvironmentError:
     from traceback import format_exception_only
     exc_type, exc_value = sys.exc_info()[:2]
     print "".join(format_exception_only(exc_type, exc_value))
