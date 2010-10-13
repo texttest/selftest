@@ -1,4 +1,6 @@
 
-class BadCallException(Exception):
+class MyException(Exception):
     pass
 
+class BadCallException(MyException):
+    pass

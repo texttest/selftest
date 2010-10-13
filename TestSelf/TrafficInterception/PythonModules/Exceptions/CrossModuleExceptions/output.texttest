@@ -8,7 +8,7 @@ Comparing differences for TRAFFIC test-suite TargetApp
 ---------- New result in traffic ----------
 <-PYT:import mymodule
 <-PYT:mymodule.callFunction()
-->RET:raise Instance('BadCallException', 'badcallexception1')
+->RET:raise Instance('BadCallException(MyException, exceptions.Exception)', 'badcallexception1')
 <-PYT:badcallexception1.__str__()
 ->RET:'Bad Call!'
   Save Version rectraffic(1), Save(s) or continue(any other key)?
