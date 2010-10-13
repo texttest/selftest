@@ -1,13 +1,11 @@
 <-PYT:import smtplib
-<-PYT:smtplib.__path__
-->RET:raise exceptions.AttributeError("'module' object has no attribute '__path__'")
 <-PYT:smtplib.SMTP()
 ->RET:Instance('SMTP', 'smtp1')
 <-PYT:smtp1.connect('localhost')
 ->RET:(220, 'gewoia.jeppesensystems.com ESMTP Sendmail 8.13.8/8.13.8; Tue, 12 Oct 2010 15:25:37 +0200')
 <-PYT:smtp1.sendmail('fakeuser', ['tom', 'dick', 'harry'], '''From: fakeuser
 To: tom,dick,harry
-Subject: 12Oct2010 HELLO : 4 tests : 3 FAILED
+Subject: 13Oct2010 HELLO : 4 tests : 3 FAILED
 
 Summary of all Unsuccessful tests follows...
 ---------------------------------------------------------------------------------
@@ -24,7 +22,7 @@ Details of all Unsuccessful tests follows...
 
 Detailed information for the tests that FAILED follows...
 --------------------------------------------------------
-2 TESTS FAILED on gewoia :
+2 TESTS FAILED on kilimanjaro :
 ---------- Differences in output ----------
 0a1
 > Hello World!
@@ -32,7 +30,7 @@ Detailed information for the tests that FAILED follows...
 -- HELLO test-case OutDiff (under OutDiff)
 -- HELLO test-case OutDiff2 (under suite/OutDiff2)
 --------------------------------------------------------
-TEST FAILED on gewoia : HELLO test-case BothDiff (under BothDiff)
+TEST FAILED on kilimanjaro : HELLO test-case BothDiff (under BothDiff)
 ---------- Differences in errors ----------
 0a1
 > Error text

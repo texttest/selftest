@@ -3,8 +3,6 @@
 <-PYT:datetime.date.today()
 ->RET:datetime.date(2010, 5, 5)
 <-PYT:import smtplib
-<-PYT:smtplib.__path__
-->RET:raise exceptions.AttributeError("'module' object has no attribute '__path__'")
 <-PYT:smtplib.SMTP()
 ->RET:Instance('SMTP', 'smtp1')
 <-PYT:smtp1.connect('localhost')
