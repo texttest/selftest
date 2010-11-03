@@ -1,5 +1,5 @@
 <-SRV:TextTest slave server started on 10.67.7.143:34562
-<-CMD:cd /nfs/vm/texttest-tmp/geoff/dynamic_gui.19Aug112801.5006/texttest.sge.gui/QueueSystems/NormalOperation/GUI/ShowSuspend/texttesttmp/sleep.killing.19Aug112828.7800/slavelogs; env --unset=USECASE_RECORD_SCRIPT --unset=USECASE_REPLAY_SCRIPT qsub -N Test-Basic-SLEEP.killing -w e -notify -m n -cwd -b y -V -o Test-Basic-SLEEP.killing.log -e Test-Basic-SLEEP.killing.errors "exec $SHELL -c "exec /users/geoff/work/master/Testing/TextTest/bin/texttest.py -d /carm/proj/texttest-tmp/geoff/dynamic_gui.19Aug112801.5006/texttest.sge.gui/QueueSystems/NormalOperation/GUI/ShowSuspend/TargetApp -a sleep.killing -l -tp 'Basic' -slave /carm/proj/texttest-tmp/geoff/dynamic_gui.19Aug112801.5006/texttest.sge.gui/QueueSystems/NormalOperation/GUI/ShowSuspend/texttesttmp/sleep.killing.19Aug112828.7800 -servaddr 10.67.7.143:37110""
+<-CMD:cd /nfs/vm/texttest-tmp/geoff/dynamic_gui.19Aug112801.5006/texttest.sge.gui/QueueSystems/NormalOperation/GUI/ShowSuspendInTest/texttesttmp/sleep.killing.19Aug112828.7800/slavelogs; env --unset=USECASE_RECORD_SCRIPT --unset=USECASE_REPLAY_SCRIPT qsub -N Test-Basic-SLEEP.killing -w e -notify -m n -cwd -b y -V -o Test-Basic-SLEEP.killing.log -e Test-Basic-SLEEP.killing.errors "exec $SHELL -c "exec /users/geoff/work/master/Testing/TextTest/bin/texttest.py -d /carm/proj/texttest-tmp/geoff/dynamic_gui.19Aug112801.5006/texttest.sge.gui/QueueSystems/NormalOperation/GUI/ShowSuspendInTest/TargetApp -a sleep.killing -l -tp 'Basic' -slave /carm/proj/texttest-tmp/geoff/dynamic_gui.19Aug112801.5006/texttest.sge.gui/QueueSystems/NormalOperation/GUI/ShowSuspendInTest/texttesttmp/sleep.killing.19Aug112828.7800 -servaddr 10.67.7.143:37110""
 ->OUT:Your job 758748 ("Test-Basic-SLEEP.killing") has been submitted
 <-SRV:Completed submission of all tests
 ->FIL:sleep.killing.17May110537.17627
@@ -237,7 +237,7 @@ S'1,2c1\n< Sleeping for 5 seconds...\n< Done\n---\n> Sleeping for 1000 seconds..
 p10
 sS'tmpFile'
 p11
-S'/carm/proj/texttest-tmp/geoff/texttest.sge.gui.17May110511.17618/texttest.sge.gui/QueueSystems/NormalOperation/GUI/ShowSuspend/texttesttmp/sleep.killing.17May110537.17627/sleep.killing/Basic/output.sleep'
+S'/carm/proj/texttest-tmp/geoff/texttest.sge.gui.17May110511.17618/texttest.sge.gui/QueueSystems/NormalOperation/GUI/ShowSuspendInTest/texttesttmp/sleep.killing.17May110537.17627/sleep.killing/Basic/output.sleep'
 p12
 sS'severity'
 p13
@@ -247,7 +247,7 @@ p14
 I1
 sS'stdFile'
 p15
-S'/carm/proj/texttest-tmp/geoff/texttest.sge.gui.17May110511.17618/texttest.sge.gui/QueueSystems/NormalOperation/GUI/ShowSuspend/TargetApp/Basic/output.sleep'
+S'/carm/proj/texttest-tmp/geoff/texttest.sge.gui.17May110511.17618/texttest.sge.gui/QueueSystems/NormalOperation/GUI/ShowSuspendInTest/TargetApp/Basic/output.sleep'
 p16
 sS'stdCmpFile'
 p17
@@ -368,7 +368,7 @@ sg50
 (lp58
 sS'appAbsPath'
 p59
-S'/carm/proj/texttest-tmp/geoff/texttest.sge.gui.17May110511.17618/texttest.sge.gui/QueueSystems/NormalOperation/GUI/ShowSuspend/TargetApp'
+S'/carm/proj/texttest-tmp/geoff/texttest.sge.gui.17May110511.17618/texttest.sge.gui/QueueSystems/NormalOperation/GUI/ShowSuspendInTest/TargetApp'
 p60
 sS'allResults'
 p61
@@ -379,17 +379,17 @@ p63
 (dp64
 g9
 Nsg11
-S'/carm/proj/texttest-tmp/geoff/texttest.sge.gui.17May110511.17618/texttest.sge.gui/QueueSystems/NormalOperation/GUI/ShowSuspend/texttesttmp/sleep.killing.17May110537.17627/sleep.killing/Basic/errors.sleep'
+S'/carm/proj/texttest-tmp/geoff/texttest.sge.gui.17May110511.17618/texttest.sge.gui/QueueSystems/NormalOperation/GUI/ShowSuspendInTest/texttesttmp/sleep.killing.17May110537.17627/sleep.killing/Basic/errors.sleep'
 p65
 sg13
 I1
 sg14
 I0
 sg15
-S'/carm/proj/texttest-tmp/geoff/texttest.sge.gui.17May110511.17618/texttest.sge.gui/QueueSystems/NormalOperation/GUI/ShowSuspend/TargetApp/Basic/errors.sleep'
+S'/carm/proj/texttest-tmp/geoff/texttest.sge.gui.17May110511.17618/texttest.sge.gui/QueueSystems/NormalOperation/GUI/ShowSuspendInTest/TargetApp/Basic/errors.sleep'
 p66
 sg17
-S'/carm/proj/texttest-tmp/geoff/texttest.sge.gui.17May110511.17618/texttest.sge.gui/QueueSystems/NormalOperation/GUI/ShowSuspend/texttesttmp/sleep.killing.17May110537.17627/sleep.killing/Basic/framework_tmp/errors.sleeporigcmp'
+S'/carm/proj/texttest-tmp/geoff/texttest.sge.gui.17May110511.17618/texttest.sge.gui/QueueSystems/NormalOperation/GUI/ShowSuspendInTest/texttesttmp/sleep.killing.17May110537.17627/sleep.killing/Basic/framework_tmp/errors.sleeporigcmp'
 p67
 sg18
 F-1
@@ -403,7 +403,7 @@ I500
 sg23
 I30
 sbsg24
-S'/carm/proj/texttest-tmp/geoff/texttest.sge.gui.17May110511.17618/texttest.sge.gui/QueueSystems/NormalOperation/GUI/ShowSuspend/texttesttmp/sleep.killing.17May110537.17627/sleep.killing/Basic/framework_tmp/errors.sleepcmp'
+S'/carm/proj/texttest-tmp/geoff/texttest.sge.gui.17May110511.17618/texttest.sge.gui/QueueSystems/NormalOperation/GUI/ShowSuspendInTest/texttesttmp/sleep.killing.17May110537.17627/sleep.killing/Basic/framework_tmp/errors.sleepcmp'
 p70
 sg25
 g26
@@ -426,7 +426,7 @@ S'complete'
 p74
 sS'appWriteDir'
 p75
-S'/carm/proj/texttest-tmp/geoff/texttest.sge.gui.17May110511.17618/texttest.sge.gui/QueueSystems/NormalOperation/GUI/ShowSuspend/texttesttmp/sleep.killing.17May110537.17627'
+S'/carm/proj/texttest-tmp/geoff/texttest.sge.gui.17May110511.17618/texttest.sge.gui/QueueSystems/NormalOperation/GUI/ShowSuspendInTest/texttesttmp/sleep.killing.17May110537.17627'
 p76
 sS'newResults'
 p77
