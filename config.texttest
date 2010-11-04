@@ -198,6 +198,11 @@ collect_traffic_python:datetime.date.today
 collect_traffic_python:gtk
 collect_traffic_python:gobject
 
+# Various tests need to intercept stat operations
+# which aren't repr-eval friendly out of the box, see Python bug 1820
+collect_traffic_alter_response:^posix\.stat_result\((.*)\){REPLACE os.stat_result((\1))}
+collect_traffic_alter_response:st_[a-z]*={REPLACE }
+
 # Tell it that we want to track what files are created
 create_catalogues:true
 

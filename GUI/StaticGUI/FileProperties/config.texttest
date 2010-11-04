@@ -1,6 +1,3 @@
 collect_traffic_python:os.lstat
 collect_traffic_python:pwd
 collect_traffic_python:grp
-
-collect_traffic_alter_response:^posix\.stat_result\((.*)\){REPLACE os.stat_result((\1))}
-collect_traffic_alter_response:st_[a-z]*={REPLACE }
