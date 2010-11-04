@@ -1,5 +1,5 @@
 
----------- Window 'TextTest static GUI : management of tests for DIP' ----------
+---------- Window 'TextTest static GUI : management of tests for HELLO' ----------
 Focus widget is 'Test Tree'
 
 Menu Bar : '_File' (+) , '_Edit' (+) , '_View' (+) , '_Actions' (+) , '_Help' (+)
@@ -20,7 +20,7 @@ Showing Test Tree with columns: Tests: All 0 selected
 Showing Notebook with tabs: Selection , Config
 Viewing page 'Selection'
 Viewing table with 7 rows and 2 columns.
-'Tests for version  ' (tooltip 'Select tests for a specific version.') | Text entry (drop-down list containing ['', '<default>'])
+'Tests for version  ' (tooltip 'Select tests for a specific version.') | Text entry (drop-down list containing ['', '<default>', 'extra'])
 'Test names containing  ' (tooltip 'Select tests for which the name contains the entered text. The text can be a regular expression.') | Text entry
 'Test paths containing  ' (tooltip 'Select tests for which the full path to the test (e.g. suite1/subsuite/testname) contains the entered text. The text can be a regular expression. You can select tests by suite name this way.') | Text entry
 'Tests listed in file  ' | Text entry , Button '...'
@@ -37,84 +37,43 @@ Button 'Filter' (Stock image 'gtk-find', accelerator 'Ctrl+F', tooltip 'filter t
 Button 'Reset Tab' (tooltip 'Reset all the settings in the current tab to their default values')
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 08Oct16:00:29.' , Image 'throbber_inactive.png'
---------------------------------------------------------------------------------
+'TextTest started at 04Nov11:04:32.' , Image 'throbber_inactive.png'
+----------------------------------------------------------------------------------
 
 Changing GUI status to: 'Reading tests ...'
 
 Column titles changed in Test Tree with columns: Tests: 0/1 selected
 
-Column titles changed in Test Tree with columns: Tests: 0/2 selected
+Column titles changed in Test Tree with columns: Tests: 0/2 selected, 0/1 distinct
 
-Column titles changed in Test Tree with columns: Tests: 0/3 selected
+Updated : Test Tree with columns: Tests: 0/2 selected, 0/1 distinct
+-> TargetApp (hello) (black/grey90,bold)
+->   Test (black/grey90)
+Updated drop-down list in 'Test-file to search' Text entry (set to 'errors') (drop-down list containing ['errors', 'output'])
 
-Column titles changed in Test Tree with columns: Tests: 0/4 selected
-
-Column titles changed in Test Tree with columns: Tests: 0/5 selected
-
-Column titles changed in Test Tree with columns: Tests: 0/6 selected
-
-Column titles changed in Test Tree with columns: Tests: 0/7 selected
-
-Column titles changed in Test Tree with columns: Tests: 0/8 selected
-
-Column titles changed in Test Tree with columns: Tests: 0/9 selected
-
-Column titles changed in Test Tree with columns: Tests: 0/10 selected
-
-Column titles changed in Test Tree with columns: Tests: 0/11 selected
-
-Updated : Test Tree with columns: Tests: 0/11 selected
--> TargetApp (dip) (black/grey90,bold)
-->   Game9952 (black/grey90,bold)
-->     S01.99 (black/grey90)
-->     A01 (black/grey90)
-->     S02 (black/grey90)
-->     A02 (black/grey90)
-->     S03 (black/grey90)
-->     A03 (black/grey90)
-->     S04 (black/grey90)
-->     A04 (black/grey90)
-->     S05 (black/grey90)
-->     A05 (black/grey90)
-->   npstIII (black/grey90,bold)
-->     Game47 (black/grey90,bold)
-->       S01 (black/grey90)
-Updated drop-down list in 'Test-file to search' Text entry (set to 'output') (drop-down list containing ['output'])
-
-Changing GUI status to: 'Reading tests completed at 08Oct16:00:29.'
+Changing GUI status to: 'Reading tests completed at 04Nov11:04:32.'
 
 Expected application event 'all tests to be read' occurred, proceeding.
 
-'set test selection to' event created with arguments 'A01'
+'set test selection to' event created with arguments 'Test'
 
 No longer greyed out : _Run
 
-Changed selection in Test Tree with columns: Tests: 1/11 selected
--> TargetApp (dip) (black/grey90,bold)
-->   Game9952 (black/grey90,bold)
-->     S01.99 (black/grey90)
-->     A01 (black/grey90)   ***
-->     S02 (black/grey90)
-->     A02 (black/grey90)
-->     S03 (black/grey90)
-->     A03 (black/grey90)
-->     S04 (black/grey90)
-->     A04 (black/grey90)
-->     S05 (black/grey90)
-->     A05 (black/grey90)
-->   npstIII (black/grey90,bold)
-->     Game47 (black/grey90,bold)
-->       S01 (black/grey90)
+Changed selection in Test Tree with columns: Tests: All 2 selected, all 1 distinct
+-> TargetApp (hello) (black/grey90,bold)
+->   Test (black/grey90)   ***
 
 Current page changed in Notebook with tabs: Test , Selection , Running , Config
 Viewing page 'Test'
 ...........
 
-Showing File Tree with columns: A01
+Showing File Tree with columns: Test
 -> Standard Files (white,bold)
-->   output.dip (grey90)
+->   errors.hello (grey90)
+->   output.hello (grey90)
 -> Definition Files (white)
+-> Data Files (white,bold)
+->   datadir (grey90)
 
 ------------------------------ (horizontal pane separator)
 ...........
@@ -125,15 +84,18 @@ Description:
 <No description provided>
 
 Full path:
-Game9952/A01
+Test
 ===============================
 
-'view actions for file' event created with arguments 'output.dip'
+'view actions for file' event created with arguments 'output.hello'
 
-Changed selection in File Tree with columns: A01
+Changed selection in File Tree with columns: Test
 -> Standard Files (white,bold)
-->   output.dip (grey90)   ***
+->   errors.hello (grey90)
+->   output.hello (grey90)   ***
 -> Definition Files (white)
+-> Data Files (white,bold)
+->   datadir (grey90)
 
 ========== Text Info ==========
 
@@ -141,10 +103,10 @@ Description:
 <No description provided>
 
 Full path:
-Game9952/A01
+Test
 
-Preview of output.dip:
-Hello World!
+Preview of output.hello:
+Hello
 ===============================
 
 ---------- Popup Window ----------
@@ -164,7 +126,7 @@ Hello World!
 Default widget is 'gtk-ok'
 Stock image 'gtk-dialog-error' , ========== GtkTextView ==========
 Failed to get file properties:
-No such file or directory: '/carm/proj/texttest-tmp/geoff/dynamic_gui.08Oct155914.3762/texttest.gui/GUI/StaticGUI/Miscellaneous/RemovedFileProperties/TargetApp/Game9952/A01/output.dip'
+[Errno 2] No such file or directory: '/carm/proj/texttest-tmp/geoff/texttest.gui.04Nov110231.8382/texttest.gui/GUI/StaticGUI/FileProperties/RemovedFiles/TargetApp/Test/output.hello'
 =================================
 ---------------
 Button 'gtk-ok' (Stock image 'gtk-ok')

@@ -1,5 +1,5 @@
 
----------- Window 'TextTest dynamic GUI : testing HELLO (started at 08Oct15:59:40)' ----------
+---------- Window 'TextTest dynamic GUI : testing HELLO (started at 04Nov11:11:20)' ----------
 Focus widget is 'Test Tree'
 
 Menu Bar : '_File' (+) , '_View' (+) , '_Actions' (+) , '_Help' (+)
@@ -8,7 +8,7 @@ Tool Bar :
   _Quit (Stock image 'gtk-quit', accelerator 'Ctrl+Q', tooltip 'Quit')
   _Kill (Stock image 'gtk-stop', greyed out, accelerator 'Ctrl+Delete', tooltip 'Kill selected tests')
   _Save (Stock image 'gtk-save', greyed out, accelerator 'Ctrl+S', tooltip 'Save results for selected tests')
-  Progress bar set to fraction 0.0, text 'All 0 tests completed at 08Oct15:59:44'
+  Progress bar set to fraction 0.0, text 'All 0 tests completed at 04Nov11:11:23'
 ...........
 
 Showing Test Tree with columns: Tests: All 0 selected , Details
@@ -22,7 +22,7 @@ Viewing page 'Status'
 Showing Test Status View with columns: Status , Number , Visible
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 08Oct15:59:44.' , Image 'throbber_inactive.png'
+'TextTest started at 04Nov11:11:23.' , Image 'throbber_inactive.png'
 ----------------------------------------------------------------------------------------------
 
 Progress bar set to fraction 0.0, text '0 of 1 tests completed'
@@ -61,7 +61,7 @@ Updated : Test Status View with columns: Status , Number , Visible
 -> Running (white) | 0 (white) | Check box (checked)
 -> Final filter (LightGoldenrod1,bold) | 1 (LightGoldenrod1,bold) | Check box (checked)
 
-Progress bar set to fraction 1.0, text 'All 1 tests completed at 08Oct15:59:44'
+Progress bar set to fraction 1.0, text 'All 1 tests completed at 04Nov11:11:24'
 
 Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
 -> TargetApp (hello) (black/white,bold) | (white)
@@ -111,7 +111,7 @@ Hello World!
 
 Expected application event 'completion of test actions' occurred, proceeding.
 
-'set file selection to' event created with arguments 'newout.hello'
+'view actions for file' event created with arguments 'newout.hello'
 
 Changed selection in File Tree with columns: Test , Details
 -> Comparison Files (bold)
@@ -125,8 +125,6 @@ Test FAILED :
 ---------- New result in newout ----------
 Hello World!
 ===============================
-
-'view actions for file' event created with arguments 'newout.hello'
 
 ---------- Popup Window ----------
 'View File' (Stock image 'gtk-open', accelerator 'Ctrl+O')
@@ -148,22 +146,33 @@ Hello World!
 'Save _As...' (Stock image 'gtk-save', accelerator 'Ctrl+Alt+S')
 ----------------------------------
 
-'show properties of selected files' event created with arguments ''
+'view filtered file' event created with arguments ''
 
-Changing GUI status to: 'Performed 'Show properties of selected files' on 1 files.'
+Waiting for application event 'file editing operations to complete' to occur.
 
----------- Dialog 'Show properties of selected files' ----------
-Default widget is 'gtk-close'
-Expander: '/carm/proj/texttest-tmp/geoff/dynamic_gui.08Oct155914.3762/texttest.gui/TestSelf/FileViewers/GUI/NewFileViewers/texttesttmp/dynamic_gui.08Oct155940.21168/hello/Test'
--> Viewing table with 1 rows and 7 columns.
-'-rw-rw-r--' | '1' | '?' | '?' | '13' | 'Aug 05  2009' | 'newout.hello'
----------------
-Button 'gtk-close' (Stock image 'gtk-close')
-----------------------------------------------------------------
+Changing GUI status to: 'Started "emacs newout.hellocmp" in background (from test Test).'
 
-'press close' event created with arguments ''
+Changed selection in File Tree with columns: Test , Details
+-> Comparison Files (bold)
+->   errors.hello (DarkSeaGreen2) | (DarkSeaGreen2)
+->   output.hello (salmon) | (salmon)
+-> New Files (bold)
+->   newout.hello (salmon) | (salmon)
 
-'set file selection to' event created with arguments 'output.hello'
+========== Text Info ==========
+Test FAILED :
+---------- Differences in output ----------
+1c1
+< Hello
+---
+> Hello World!
+---------- New result in newout ----------
+Hello World!
+===============================
+
+Expected application event 'file editing operations to complete' occurred, proceeding.
+
+'view actions for file' event created with arguments 'output.hello'
 
 Changed selection in File Tree with columns: Test , Details
 -> Comparison Files (bold)
@@ -180,8 +189,6 @@ Test FAILED :
 ---
 > Hello World!
 ===============================
-
-'view actions for file' event created with arguments 'output.hello'
 
 ---------- Popup Window ----------
 'View File' (Stock image 'gtk-open', accelerator 'Ctrl+O')
