@@ -1,10 +1,54 @@
-<-PYT:os.lstat('/carm/proj/texttest-tmp/geoff/texttest.03Nov173841.19206/texttest.gui/GUI/StaticGUI/Miscellaneous/FileProperties/TargetApp/testsuite.hello')
+<-PYT:import pwd
+<-PYT:import grp
+<-PYT:os.lstat('/carm/proj/texttest-tmp/geoff/texttest.04Nov101444.6333/texttest.gui/GUI/StaticGUI/Miscellaneous/FileProperties/TargetApp/testsuite.hello')
 ->RET:os.stat_result((33204, 28811213, 41L, 1, 364, 13, 5, 1288795720, 1234726735, 1285667050))
-<-PYT:os.lstat('/carm/proj/texttest-tmp/geoff/texttest.03Nov173841.19206/texttest.gui/GUI/StaticGUI/Miscellaneous/FileProperties/TargetApp/Test/output.hello')
+<-PYT:pwd.getpwuid(364)
+->RET:Instance('struct_passwd(object)', 'struct_passwd1')
+<-PYT:struct_passwd1.__getitem__(0)
+->RET:'geoff'
+<-PYT:grp.getgrgid(13)
+->RET:Instance('struct_group(object)', 'struct_group1')
+<-PYT:struct_group1.__getitem__(0)
+->RET:'carm'
+<-PYT:os.lstat('/carm/proj/texttest-tmp/geoff/texttest.04Nov101444.6333/texttest.gui/GUI/StaticGUI/Miscellaneous/FileProperties/TargetApp/Test/output.hello')
 ->RET:os.stat_result((41471, 28811205, 41L, 1, 364, 13, 4, 1288795811, 1288795811, 1288795811))
-<-PYT:os.lstat('/carm/proj/texttest-tmp/geoff/texttest.03Nov173841.19206/texttest.gui/GUI/StaticGUI/Miscellaneous/FileProperties/TargetApp/Test/datadir')
+<-PYT:os.lstat('/carm/proj/texttest-tmp/geoff/texttest.04Nov101444.6333/texttest.gui/GUI/StaticGUI/Miscellaneous/FileProperties/TargetApp/Test/datadir')
 ->RET:os.stat_result((16893, 10469050, 41L, 2, 364, 13, 4096, 1288795549, 1282120992, 1285667050))
-<-PYT:os.lstat('/carm/proj/texttest-tmp/geoff/texttest.03Nov173841.19206/texttest.gui/GUI/StaticGUI/Miscellaneous/FileProperties/texttesttmp/dynamic_gui.03Nov173856.19244/hello/Test/errors.hello')
+<-PYT:pwd.getpwuid(364)
+->RET:Instance('struct_passwd(object)', 'struct_passwd2')
+<-PYT:struct_passwd2.__getitem__(0)
+->RET:'geoff'
+<-PYT:grp.getgrgid(13)
+->RET:Instance('struct_group(object)', 'struct_group2')
+<-PYT:struct_group2.__getitem__(0)
+->RET:'carm'
+<-PYT:pwd.getpwuid(364)
+->RET:Instance('struct_passwd(object)', 'struct_passwd3')
+<-PYT:struct_passwd3.__getitem__(0)
+->RET:'geoff'
+<-PYT:grp.getgrgid(13)
+->RET:Instance('struct_group(object)', 'struct_group3')
+<-PYT:struct_group3.__getitem__(0)
+->RET:'carm'
+<-PYT:import pwd
+<-PYT:import grp
+<-PYT:os.lstat('/carm/proj/texttest-tmp/geoff/texttest.04Nov101444.6333/texttest.gui/GUI/StaticGUI/Miscellaneous/FileProperties/texttesttmp/dynamic_gui.04Nov101503.6390/hello/Test/errors.hello')
 ->RET:os.stat_result((33204, 25166450, 42L, 1, 364, 13, 0, 1288802339, 1288802339, 1288802339))
-<-PYT:os.lstat('/carm/proj/texttest-tmp/geoff/texttest.03Nov173841.19206/texttest.gui/GUI/StaticGUI/Miscellaneous/FileProperties/TargetApp/Test/errors.hello')
+<-PYT:os.lstat('/carm/proj/texttest-tmp/geoff/texttest.04Nov101444.6333/texttest.gui/GUI/StaticGUI/Miscellaneous/FileProperties/TargetApp/Test/errors.hello')
 ->RET:os.stat_result((33204, 28811204, 41L, 1, 364, 13, 0, 1234726735, 1234726735, 1285667050))
+<-PYT:pwd.getpwuid(364)
+->RET:Instance('struct_passwd(object)', 'struct_passwd4')
+<-PYT:struct_passwd4.__getitem__(0)
+->RET:'geoff'
+<-PYT:grp.getgrgid(13)
+->RET:Instance('struct_group(object)', 'struct_group4')
+<-PYT:struct_group4.__getitem__(0)
+->RET:'carm'
+<-PYT:pwd.getpwuid(364)
+->RET:Instance('struct_passwd(object)', 'struct_passwd5')
+<-PYT:struct_passwd5.__getitem__(0)
+->RET:'geoff'
+<-PYT:grp.getgrgid(13)
+->RET:Instance('struct_group(object)', 'struct_group5')
+<-PYT:struct_group5.__getitem__(0)
+->RET:'carm'
