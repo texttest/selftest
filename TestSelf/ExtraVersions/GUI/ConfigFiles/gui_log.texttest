@@ -20,7 +20,7 @@ Showing Test Tree with columns: Tests: All 0 selected
 Showing Notebook with tabs: Selection , Config
 Viewing page 'Selection'
 Viewing table with 7 rows and 2 columns.
-'Tests for version  ' (tooltip 'Select tests for a specific version.') | Text entry (drop-down list containing ['', '<default>', 'extra1', 'extra2'])
+'Tests for version  ' (tooltip 'Select tests for a specific version.') | Text entry (drop-down list containing ['', '<default>', 'extra1', 'extra2', 'otherexec'])
 'Test names containing  ' (tooltip 'Select tests for which the name contains the entered text. The text can be a regular expression.') | Text entry
 'Test paths containing  ' (tooltip 'Select tests for which the full path to the test (e.g. suite1/subsuite/testname) contains the entered text. The text can be a regular expression. You can select tests by suite name this way.') | Text entry
 'Tests listed in file  ' | Text entry , Button '...'
@@ -37,7 +37,7 @@ Button 'Filter' (Stock image 'gtk-find', accelerator 'Ctrl+F', tooltip 'filter t
 Button 'Reset Tab' (tooltip 'Reset all the settings in the current tab to their default values')
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 08Oct16:00:01.' , Image 'throbber_inactive.png'
+'TextTest started at 04Nov14:42:17.' , Image 'throbber_inactive.png'
 ----------------------------------------------------------------------------------
 
 Changing GUI status to: 'Reading tests ...'
@@ -54,7 +54,11 @@ Column titles changed in Test Tree with columns: Tests: 0/5 selected, 0/3 distin
 
 Column titles changed in Test Tree with columns: Tests: 0/6 selected, 0/4 distinct
 
-Updated : Test Tree with columns: Tests: 0/6 selected, 0/4 distinct
+Column titles changed in Test Tree with columns: Tests: 0/7 selected, 0/4 distinct
+
+Column titles changed in Test Tree with columns: Tests: 0/8 selected, 0/4 distinct
+
+Updated : Test Tree with columns: Tests: 0/8 selected, 0/4 distinct
 -> TargetApp (hello) (black/grey90,bold)
 ->   Common (black/grey90)
 ->   Base (black/grey90)
@@ -62,7 +66,7 @@ Updated : Test Tree with columns: Tests: 0/6 selected, 0/4 distinct
 ->   Extra2 (black/grey90)
 Updated drop-down list in 'Test-file to search' Text entry (set to 'errors') (drop-down list containing ['errors', 'output'])
 
-Changing GUI status to: 'Reading tests completed at 08Oct16:00:02.'
+Changing GUI status to: 'Reading tests completed at 04Nov14:42:18.'
 
 Expected application event 'all tests to be read' occurred, proceeding.
 
@@ -74,10 +78,16 @@ Viewing page 'Config'
 Showing Application File Tree with columns: Configuration Files
 -> Files for HELLO (white,bold)
 ->   config.hello (grey90)
+->   config.hello.otherexec (grey90)
 ->   config.hello.badbinary (grey90)
 ->   config.hello.badbinextra (grey90)
 ->   config.hello.block1extra (grey90)
 ->   config.hello.blockextra (grey90)
 ->   config.hello.extra3 (grey90)
+-> Scripts for HELLO (white,bold)
+->   hello.py (grey90)
+->   hello2.py (grey90)
+-> Personal Files (white,bold)
+->   config (grey90)
 
 'quit' event created with arguments ''
