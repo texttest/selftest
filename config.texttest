@@ -203,6 +203,9 @@ collect_traffic_python:gobject
 collect_traffic_alter_response:^posix\.stat_result\((.*)\){REPLACE os.stat_result((\1))}
 collect_traffic_alter_response:st_[a-z]*={REPLACE }
 
+# Don't intercept anything called from PyUseCase
+collect_traffic_python_ignore_callers:usecase
+
 # Tell it that we want to track what files are created
 create_catalogues:true
 

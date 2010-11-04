@@ -1,15 +1,14 @@
-<-SRV:TextTest slave server started on 10.67.20.109:38588
-<-CMD:cd /nfs/vm/texttest-tmp/geoff/dynamic_gui.24Sep172706.4822/texttest.sge/QueueSystems/ErrorHandling/Console/JobDisappears/texttesttmp/sleep.killing.24Sep172713.4828/slavelogs; env --unset=USECASE_RECORD_SCRIPT --unset=USECASE_REPLAY_SCRIPT qsub -N Test-Basic-SLEEP.killing -w e -notify -m n -cwd -b y -V -o Test-Basic-SLEEP.killing.log -e Test-Basic-SLEEP.killing.errors "exec $SHELL -c "exec /users/geoff/work/master/Testing/TextTest/bin/texttest.py -d /carm/proj/texttest-tmp/geoff/dynamic_gui.24Sep172706.4822/texttest.sge/QueueSystems/ErrorHandling/Console/JobDisappears/TargetApp -a sleep.killing -l -tp 'Basic' -slave /carm/proj/texttest-tmp/geoff/dynamic_gui.24Sep172706.4822/texttest.sge/QueueSystems/ErrorHandling/Console/JobDisappears/texttesttmp/sleep.killing.24Sep172713.4828 -servaddr 10.67.20.109:43269 -b short_local""
+<-SRV:TextTest slave server started on 10.67.7.145:44873
+<-CMD:cd /nfs/vm/texttest-tmp/geoff/dynamic_gui.04Nov121510.21228/texttest.sge/QueueSystems/ErrorHandling/Console/JobDisappears/texttesttmp/sleep.killing.04Nov121743.18031/slavelogs; env --unset=USECASE_RECORD_SCRIPT --unset=USECASE_REPLAY_SCRIPT qsub -N Test-Basic-SLEEP.killing -w e -notify -m n -cwd -b y -V -o Test-Basic-SLEEP.killing.log -e Test-Basic-SLEEP.killing.errors "exec $SHELL -c "exec /users/geoff/work/master/Testing/TextTest/bin/texttest.py -d /carm/proj/texttest-tmp/geoff/dynamic_gui.04Nov121510.21228/texttest.sge/QueueSystems/ErrorHandling/Console/JobDisappears/TargetApp -a sleep.killing -l -tp 'Basic' -slave /carm/proj/texttest-tmp/geoff/dynamic_gui.04Nov121510.21228/texttest.sge/QueueSystems/ErrorHandling/Console/JobDisappears/texttesttmp/sleep.killing.04Nov121743.18031 -servaddr 10.67.7.145:35357 -b short_local""
 ->OUT:Your job 1 (stupid) has been submitted.
 <-SRV:Completed submission of all tests
-<-PYT:time.sleep(1)
 <-CMD:qdel 1
 ->OUT:denied: job 1 does not exist
 <-CMD:qacct -j 1
 ->ERR:error: job id 1 not found
-<-CMD:qacct -j 1 -f /carm/proj/texttest-tmp/geoff/dynamic_gui.24Sep172706.4822/texttest.sge/QueueSystems/ErrorHandling/Console/JobDisappears/sge/default/common/accounting.0
+<-CMD:qacct -j 1 -f /carm/proj/texttest-tmp/geoff/dynamic_gui.04Nov121510.21228/texttest.sge/QueueSystems/ErrorHandling/Console/JobDisappears/sge/default/common/accounting.0
 ->ERR:error: job id 1 not found
-<-CMD:qacct -j 1 -f /carm/proj/texttest-tmp/geoff/dynamic_gui.24Sep172706.4822/texttest.sge/QueueSystems/ErrorHandling/Console/JobDisappears/sge/default/common/accounting.1
+<-CMD:qacct -j 1 -f /carm/proj/texttest-tmp/geoff/dynamic_gui.04Nov121510.21228/texttest.sge/QueueSystems/ErrorHandling/Console/JobDisappears/sge/default/common/accounting.1
 ->ERR:error: job id 1 not found
 <-PYT:time.sleep(0.5)
 <-CMD:qacct -j 1
