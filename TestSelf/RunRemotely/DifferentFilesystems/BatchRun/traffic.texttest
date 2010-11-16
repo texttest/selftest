@@ -1,11 +1,11 @@
-<-CMD:ssh -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 testnet-s16 rm -rf "${HOME}/.texttest/tmp/self_test.*"
-<-CMD:ssh -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 testnet-s16 mkdir -p "${HOME}'/.texttest/tmp/self_test.13Oct115937.14125/system_under_test'"
-<-CMD:scp -Crp -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 /carm/proj/texttest-tmp/geoff/texttest.13Oct115933.14122/texttest/TestSelf/RunRemotely/DifferentFilesystems/BatchRun/TargetApp/hello.py "testnet-s16:${HOME}'/.texttest/tmp/self_test.13Oct115937.14125/system_under_test/hello.py'"
-<-CMD:ssh -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 testnet-s16 mkdir -p "${HOME}'/.texttest/tmp/self_test.13Oct115937.14125/hello/Test'"
-<-CMD:scp -Crp -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 /carm/proj/texttest-tmp/geoff/texttest.13Oct115933.14122/texttest/TestSelf/RunRemotely/DifferentFilesystems/BatchRun/texttesttmp/self_test.13Oct115937.14125/hello/Test/run_test.sh "testnet-s16:${HOME}'/.texttest/tmp/self_test.13Oct115937.14125/hello/Test'"
-<-CMD:cd /nfs/vm/texttest-tmp/geoff/texttest.13Oct115933.14122/texttest/TestSelf/RunRemotely/DifferentFilesystems/BatchRun/texttesttmp/self_test.13Oct115937.14125/hello/Test; ssh -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 testnet-s16 "${HOME}'/.texttest/tmp/self_test.13Oct115937.14125/hello/Test/run_test.sh'"
+<-CMD:ssh -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 testnet-s16 rm -rf ${HOME}/.texttest/tmp/self_test.*
+<-CMD:ssh -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 testnet-s16 mkdir -p ${HOME}'/.texttest/tmp/self_test.15Nov170758.31445/system_under_test'
+<-CMD:scp -Crp -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 /carm/proj/texttest-tmp/geoff/texttest.15Nov170737.31294/texttest/TestSelf/RunRemotely/DifferentFilesystems/BatchRun/TargetApp/hello.py testnet-s16:${HOME}'/.texttest/tmp/self_test.15Nov170758.31445/system_under_test/hello.py'
+<-CMD:ssh -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 testnet-s16 mkdir -p ${HOME}'/.texttest/tmp/self_test.15Nov170758.31445/hello/Test'
+<-CMD:scp -Crp -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 /carm/proj/texttest-tmp/geoff/texttest.15Nov170737.31294/texttest/TestSelf/RunRemotely/DifferentFilesystems/BatchRun/texttesttmp/self_test.15Nov170758.31445/hello/Test/run_test.sh testnet-s16:${HOME}'/.texttest/tmp/self_test.15Nov170758.31445/hello/Test'
+<-CMD:cd /nfs/vm/texttest-tmp/geoff/texttest.15Nov170737.31294/texttest/TestSelf/RunRemotely/DifferentFilesystems/BatchRun/texttesttmp/self_test.15Nov170758.31445/hello/Test; ssh -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 testnet-s16 ${HOME}'/.texttest/tmp/self_test.15Nov170758.31445/hello/Test/run_test.sh'
 ->OUT:Hello World!
-<-CMD:scp -Crp -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 "testnet-s16:${HOME}'/.texttest/tmp/self_test.13Oct115937.14125/hello/Test'/*" /carm/proj/texttest-tmp/geoff/texttest.13Oct115933.14122/texttest/TestSelf/RunRemotely/DifferentFilesystems/BatchRun/texttesttmp/self_test.13Oct115937.14125/hello/Test
+<-CMD:scp -Crp -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 testnet-s16:${HOME}'/.texttest/tmp/self_test.15Nov170758.31445/hello/Test'/* /carm/proj/texttest-tmp/geoff/texttest.15Nov170737.31294/texttest/TestSelf/RunRemotely/DifferentFilesystems/BatchRun/texttesttmp/self_test.15Nov170758.31445/hello/Test
 ->FIL:Test
 <-PYT:import smtplib
 <-PYT:smtplib.SMTP()
@@ -14,7 +14,7 @@
 ->RET:(220, 'gewoia.jeppesensystems.com ESMTP Sendmail 8.13.8/8.13.8; Wed, 22 Sep 2010 16:25:03 +0200')
 <-PYT:smtp1.sendmail('geoff@localhost', ['tom'], '''From: geoff@localhost
 To: tom
-Subject: 13Oct2010 HELLO : 1 tests : 1 FAILED
+Subject: 15Nov2010 HELLO : 1 tests : 1 FAILED
 
 Summary of all Unsuccessful tests follows...
 ---------------------------------------------------------------------------------
