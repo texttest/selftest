@@ -2,7 +2,7 @@
 
 import os
 
-os.system("editor.py file")
-os.system("editor.py file2")
-os.system("editor.py writedir")
-os.system("editor.py file")
+os.system("editor file")
+os.system("editor file2")
+os.system("editor writedir")
+os.system("editor file")
