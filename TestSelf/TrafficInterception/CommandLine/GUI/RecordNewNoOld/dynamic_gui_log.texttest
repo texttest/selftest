@@ -1,5 +1,5 @@
 
----------- Window 'TextTest dynamic GUI : testing TRAFFIC (started at 08Oct15:59:59)' ----------
+---------- Window 'TextTest dynamic GUI : testing TRAFFIC (started at 17Nov21:35:09)' ----------
 Focus widget is 'Test Tree'
 
 Menu Bar : '_File' (+) , '_View' (+) , '_Actions' (+) , '_Help' (+)
@@ -8,7 +8,7 @@ Tool Bar :
   _Quit (Stock image 'gtk-quit', accelerator 'Ctrl+Q', tooltip 'Quit')
   _Kill (Stock image 'gtk-stop', greyed out, accelerator 'Ctrl+Delete', tooltip 'Kill selected tests')
   _Save (Stock image 'gtk-save', greyed out, accelerator 'Ctrl+S', tooltip 'Save results for selected tests')
-  Progress bar set to fraction 0.0, text 'All 0 tests completed at 08Oct16:00:01'
+  Progress bar set to fraction 0.0, text 'All 0 tests completed at 17Nov21:35:10'
 ...........
 
 Showing Test Tree with columns: Tests: All 0 selected , Details
@@ -22,7 +22,7 @@ Viewing page 'Status'
 Showing Test Status View with columns: Status , Number , Visible
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 08Oct16:00:01.' , Image 'throbber_inactive.png'
+'TextTest started at 17Nov21:35:10.' , Image 'throbber_inactive.png'
 ------------------------------------------------------------------------------------------------
 
 Progress bar set to fraction 0.0, text '0 of 1 tests completed'
@@ -61,7 +61,7 @@ Updated : Test Status View with columns: Status , Number , Visible
 -> Running (white) | 0 (white) | Check box (checked)
 -> Final filter (LightGoldenrod1,bold) | 1 (LightGoldenrod1,bold) | Check box (checked)
 
-Progress bar set to fraction 1.0, text 'All 1 tests completed at 08Oct16:00:04'
+Progress bar set to fraction 1.0, text 'All 1 tests completed at 17Nov21:35:11'
 
 Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
 -> TargetApp (traffic) (black/white,bold) | (white)
@@ -104,27 +104,27 @@ Test FAILED :
 3c3
 < The time is now Wed Apr 11 13:54:00 2007
 ---
-> The time is now Fri Oct  8 16:00:03 2010
+> The time is now Wed Nov 17 21:35:10 2010
 6,7c6,8
 < The time is now Wed Apr 11 13:54:00 2007
 < The process ID is 25023
 ---
-> The time is now Fri Oct  8 16:00:04 2010
+> The time is now Wed Nov 17 21:35:10 2010
 > The current working directory is tmpdir
-> The process ID is 31591
+> The process ID is 7000
 ---------- New result in traffic ----------
-<-CMD:firstcall.py -a -b -c "hello | goodbye"
-->OUT:firstcall.py called with 5 arguments
-The time is now Fri Oct  8 16:00:03 2010
+<-CMD:firstcall -a -b -c "hello | goodbye"
+->OUT:firstcall called with 5 arguments
+The time is now Wed Nov 17 21:35:10 2010
 ->EXC:1
-<-CMD:firstcall.py -a -b -c "hello | goodbye"
-->OUT:firstcall.py called with 5 arguments
-The time is now Fri Oct  8 16:00:04 2010
+<-CMD:firstcall -a -b -c "hello | goodbye"
+->OUT:firstcall called with 5 arguments
+The time is now Wed Nov 17 21:35:10 2010
 ->EXC:1
-<-CMD:cd <texttest write dir>/tmpdir; env --unset=MY_ENV_FOR_UNSET 'MY_ENV_VAR=value' 'PATH=/some/extra/path:$PATH' secondcall.py -c -x
+<-CMD:cd <texttest write dir>/tmpdir; env --unset=MY_ENV_FOR_UNSET 'MY_ENV_VAR=value' 'PATH=/some/extra/path:$PATH' secondcall -c -x
 ->OUT:The current working directory is tmpdir
-The process ID is 31591
-->ERR:secondcall.py called with ['-c', '-x'] as arguments
+The process ID is 7000
+->ERR:secondcall called with ['-c', '-x'] as arguments
 MY_ENV_VAR = 'value'
 ===============================
 

@@ -1,5 +1,5 @@
 
----------- Window 'TextTest dynamic GUI : testing TRAFFIC (started at 08Oct15:59:59)' ----------
+---------- Window 'TextTest dynamic GUI : testing TRAFFIC (started at 17Nov21:35:11)' ----------
 Focus widget is 'Test Tree'
 
 Menu Bar : '_File' (+) , '_View' (+) , '_Actions' (+) , '_Help' (+)
@@ -8,7 +8,7 @@ Tool Bar :
   _Quit (Stock image 'gtk-quit', accelerator 'Ctrl+Q', tooltip 'Quit')
   _Kill (Stock image 'gtk-stop', greyed out, accelerator 'Ctrl+Delete', tooltip 'Kill selected tests')
   _Save (Stock image 'gtk-save', greyed out, accelerator 'Ctrl+S', tooltip 'Save results for selected tests')
-  Progress bar set to fraction 0.0, text 'All 0 tests completed at 08Oct16:00:02'
+  Progress bar set to fraction 0.0, text 'All 0 tests completed at 17Nov21:35:12'
 ...........
 
 Showing Test Tree with columns: Tests: All 0 selected , Details
@@ -22,7 +22,7 @@ Viewing page 'Status'
 Showing Test Status View with columns: Status , Number , Visible
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 08Oct16:00:02.' , Image 'throbber_inactive.png'
+'TextTest started at 17Nov21:35:12.' , Image 'throbber_inactive.png'
 ------------------------------------------------------------------------------------------------
 
 Progress bar set to fraction 0.0, text '0 of 1 tests completed'
@@ -61,7 +61,7 @@ Updated : Test Status View with columns: Status , Number , Visible
 -> Running (white) | 0 (white) | Check box (checked)
 -> Final filter (LightGoldenrod1,bold) | 1 (LightGoldenrod1,bold) | Check box (checked)
 
-Progress bar set to fraction 1.0, text 'All 1 tests completed at 08Oct16:00:06'
+Progress bar set to fraction 1.0, text 'All 1 tests completed at 17Nov21:35:13'
 
 Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
 -> TargetApp (traffic) (black/white,bold) | (white)
@@ -101,17 +101,17 @@ Test FAILED :
 1,3c1
 < <-CMD:some_nonsense
 < ->ERR:don't be silly
-< <-CMD:firstcall.py -a -b -c "hello | goodbye" and some other arguments
+< <-CMD:firstcall -a -b -c "hello | goodbye" and some other arguments
 ---
-> <-CMD:firstcall.py -a -b -c "hello | goodbye"
+> <-CMD:firstcall -a -b -c "hello | goodbye"
 7c5
-< <-CMD:firstcall.py -a -b -c "hello | goodbye" and some different arguments
+< <-CMD:firstcall -a -b -c "hello | goodbye" and some different arguments
 ---
-> <-CMD:firstcall.py -a -b -c "hello | goodbye"
+> <-CMD:firstcall -a -b -c "hello | goodbye"
 11c9
-< <-CMD:secondcall.py -c -x -and some other arguments
+< <-CMD:secondcall -c -x -and some other arguments
 ---
-> <-CMD:cd <texttest write dir>/tmpdir; env --unset=MY_ENV_FOR_UNSET 'MY_ENV_VAR=value' 'PATH=/some/extra/path:$PATH' secondcall.py -c -x
+> <-CMD:cd <texttest write dir>/tmpdir; env --unset=MY_ENV_FOR_UNSET 'MY_ENV_VAR=value' 'PATH=/some/extra/path:$PATH' secondcall -c -x
 ===============================
 
 Expected application event 'completion of test actions' occurred, proceeding.
