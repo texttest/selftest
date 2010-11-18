@@ -1,37 +1,5 @@
-# Test suite
-
-# Make sure we can replay some matching traffic and it can work...
-ReplayTraffic
-
-# If no traffic file present and recording not requested, ignore traffic functionality
-RunWithoutTraffic
-
-# Make sure missing files work OK with traffic files
-MissingTrafficFileMarker
-
-# Check for repeated traffic where we don't get a response second time around
-NoResponseOnRepeat
-
-# Check the best-match approach can handle repeated but equal differences
-RepeatWithDifferences
-
-# We should prefer an argument to change than for it to disappear entirely
-DifferentOverMissing
-
-# Allow several different traffic programs at the same time, make sure we record them in the right order...
-ConcurrentTraffic
-
-# Make sure we can identify different sandboxes as the same, so we don't get confused
-MatchSandbox
-
-# Make sure we correctly replay traffic when no arguments are provided in the traffic file
-NoArgs
-
-# Make sure we can replay some matching traffic and it can work...
-DontRecordAdditional
-
-# Check sensible things happen if record can't find what it's supposed to record
-CommandNotFound
+# Ordinary command line interception, without trying to kill things...
+Normal
 UnixOnly
 
 # Tests for third-party programs that also get killed by the SUT
