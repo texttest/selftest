@@ -1,10 +1,11 @@
 
 [logger_root]
 handlers=root
+level=ERROR
 
 [handler_root]
 class=StreamHandler
-level=WARNING
+level=ERROR
 args=(sys.stdout,)
 
 [handler_stdout]
@@ -29,7 +30,7 @@ level=INFO
 class=FileHandler
 formatter=debug
 args=(os.devnull, 'a')
-args=('trafficreplay.texttest', 'a')
+args=('%(TEXTTEST_CWD)s/trafficreplay.texttest', 'a')
 
 # ======= Section for Traffic Server ======
 [logger_Traffic Server]
@@ -41,7 +42,7 @@ qualname=Traffic Server
 class=FileHandler
 formatter=debug
 args=(os.devnull, 'a')
-#args=('trafficserver.texttest', 'a')
+#args=('%(TEXTTEST_CWD)s/trafficserver.texttest', 'a')
 
 # ====== Cruft that python logging module needs ======
 [loggers]
