@@ -4,4 +4,4 @@ import os
 
 os.mkdir("tmpdir")
 os.chdir("tmpdir")
-os.system("editor.py " + os.path.abspath("file"))
+os.system("editor " + os.path.abspath("file"))

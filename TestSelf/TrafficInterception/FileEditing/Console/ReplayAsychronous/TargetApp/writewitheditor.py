@@ -2,6 +2,6 @@
 
 import os
 
-os.system("editor.py " + os.path.abspath("file"))
-os.system("editor.py otherfile")
-os.system("editor.py otherfile2")
+os.system("editor " + os.path.abspath("file"))
+os.system("editor otherfile")
+os.system("editor otherfile2")

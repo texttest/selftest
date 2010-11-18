@@ -2,5 +2,5 @@
 
 import os
 
-os.system("noneditor.py file")
-os.system("editor.py file")
+os.system("noneditor file")
+os.system("editor file")
