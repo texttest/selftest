@@ -10,7 +10,7 @@ HighlightWeekdays
 # Don't generate the web page if we reject the batch version
 RejectVersion
 
-# We should still build the summary page even for rejected applications
+# Don't build the summary page if all versions are rejected
 RejectAllVersions
 
 # Check we create the page as normal without graphs if matplotlib isn't installed
@@ -18,6 +18,9 @@ NoMatplotlib
 
 # Check matplotlib version before trying to build graphs
 OldMatplotlib
+
+# Don't refer to the application directory but to the actual root directory
+GenerateAppInSubDir
 
 # Same only use extra versions...
 ExtraVersions
