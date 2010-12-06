@@ -12,10 +12,10 @@ def null():
 
 def runClientThread():
     sleep(4) # give the server chance to start
-    os.system("client.py " + os.getenv("TEXTTEST_MIM_SERVER") + " > " + null())
+    os.system("client.py " + os.getenv("CAPTUREMOCK_SERVER") + " > " + null())
 
 if len(sys.argv) > 1:
-    os.system("client.py " + os.getenv("TEXTTEST_MIM_SERVER"))
+    os.system("client.py " + os.getenv("CAPTUREMOCK_SERVER"))
 else:
     if os.getenv("TEXTTEST_RECORDING_TRAFFIC"):
         clientThread = Thread(target=runClientThread)

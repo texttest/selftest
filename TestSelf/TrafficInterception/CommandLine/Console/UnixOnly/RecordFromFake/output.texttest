@@ -24,16 +24,19 @@ Comparing differences for TRAFFIC test-suite TargetApp
 > Called fake firstcall
 > Called fake secondcall
 ---------- Differences in traffic ----------
-1,8d0
-< <-CMD:firstcall -a -b -c "hello | goodbye"
+2,4c2
 < ->OUT:firstcall called with 5 arguments
 < The time is now Tue Jun 10 11:54:09 2008
 < ->EXC:1
-< <-CMD:firstcall -a -b -c "hello | goodbye"
+---
+> ->OUT:Called fake firstcall
+6,8c4
 < ->OUT:firstcall called with 5 arguments
 < The time is now Tue Jun 10 11:54:09 2008
 < ->EXC:1
-10,13c2
+---
+> ->OUT:Called fake firstcall
+10,13c6
 < ->OUT:The current working directory is tmpdir
 < The process ID is 14735
 < ->ERR:secondcall called with ['-c', '-x'] as arguments

@@ -71,14 +71,6 @@ traffic:CMD:xterm
 test_data_ignore:gtk_recently_used
 test_data_ignore:xdg_config_home
 
-# These programs are only started from the GUI
-collect_traffic:xterm
-collect_traffic:firefox
-
-# Obviously GUI version shouldn't intercept these...
-collect_traffic_python:{CLEAR gtk}
-collect_traffic_python:{CLEAR gobject}
-
 link_test_path:usecase_for_targetapp
 link_test_path:usecases
 
