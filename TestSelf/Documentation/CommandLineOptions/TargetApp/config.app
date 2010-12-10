@@ -6,5 +6,4 @@ slow_motion_replay_speed:3
 create_catalogues:true
 partial_copy_test_path:nonsense
 
-collect_traffic:dummy
 performance_test_machine:any

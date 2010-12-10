@@ -1,5 +1,5 @@
 
----------- Window 'TextTest static GUI : management of tests for VideoStore' ----------
+---------- Window 'TextTest static GUI : management of tests for VideoStore.cpmock' ----------
 Focus widget is 'Test Tree'
 
 Menu Bar : '_File' (+) , '_Edit' (+) , '_View' (+) , '_Actions' (+) , '_Help' (+)
@@ -20,7 +20,7 @@ Showing Test Tree with columns: Tests: All 0 selected
 Showing Notebook with tabs: Selection , Config
 Viewing page 'Selection'
 Viewing table with 7 rows and 2 columns.
-'Tests for version  ' (tooltip 'Select tests for a specific version.') | Text entry (drop-down list containing ['', '<default>'])
+'Tests for version  ' (tooltip 'Select tests for a specific version.') | Text entry (drop-down list containing ['', 'cpmock'])
 'Test names containing  ' (tooltip 'Select tests for which the name contains the entered text. The text can be a regular expression.') | Text entry
 'Test paths containing  ' (tooltip 'Select tests for which the full path to the test (e.g. suite1/subsuite/testname) contains the entered text. The text can be a regular expression. You can select tests by suite name this way.') | Text entry
 'Tests listed in file  ' | Text entry , Button '...'
@@ -37,8 +37,8 @@ Button 'Filter' (Stock image 'gtk-find', accelerator 'Ctrl+F', tooltip 'filter t
 Button 'Reset Tab' (tooltip 'Reset all the settings in the current tab to their default values')
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 08Oct15:59:56.' , Image 'throbber_inactive.png'
----------------------------------------------------------------------------------------
+'TextTest started at 10Dec20:57:51.' , Image 'throbber_inactive.png'
+----------------------------------------------------------------------------------------------
 
 Changing GUI status to: 'Reading tests ...'
 
@@ -47,22 +47,22 @@ Column titles changed in Test Tree with columns: Tests: 0/1 selected
 Column titles changed in Test Tree with columns: Tests: 0/2 selected
 
 Updated : Test Tree with columns: Tests: 0/2 selected
--> TargetApp (gui) (black/grey90,bold)
+-> TargetApp (gui.cpmock) (black/grey90,bold)
 ->   AddMovie (black/grey90)
 ->   suite (black/grey90,bold)
 ->     AddMovie (black/grey90)
 Updated drop-down list in 'Test-file to search' Text entry (set to 'options') (drop-down list containing ['options', 'usecase', '----------', 'errors', 'output'])
 
-Changing GUI status to: 'Reading tests completed at 08Oct15:59:56.'
+Changing GUI status to: 'Reading tests completed at 10Dec20:57:51.'
 
 Expected application event 'all tests to be read' occurred, proceeding.
 
-'set test selection to' event created with arguments 'AddMovie under TargetApp (gui)'
+'set test selection to' event created with arguments 'AddMovie under TargetApp (gui.cpmock)'
 
 No longer greyed out : _Run
 
 Changed selection in Test Tree with columns: Tests: 1/2 selected
--> TargetApp (gui) (black/grey90,bold)
+-> TargetApp (gui.cpmock) (black/grey90,bold)
 ->   AddMovie (black/grey90)   ***
 ->   suite (black/grey90,bold)
 ->     AddMovie (black/grey90)
@@ -96,9 +96,9 @@ AddMovie
 ---------- Dialog 'Record Use-Case' ----------
 Default widget is 'gtk-ok'
 'Version to record:'
-Text entry
+Text entry (set to 'cpmock')
 'Checkout to use for recording:'
-Text entry (set to '/carm/proj/texttest-tmp/geoff/dynamic_gui.08Oct155914.3762/texttest.gui/TestSelf/UITesting/UseCaseRecording/RerecordTestAndTraffic/TargetApp/source_with_pyc')
+Text entry (set to '/home/geoff/.texttest/tmp/texttest.gui.10Dec205748.12036/texttest.gui/TestSelf/UITesting/UseCaseRecording/RerecordTestAndTraffic/TargetApp/source_with_pyc')
 .....'Traffic Files'......
 Radio button 'Replay All' (tooltip 'Replay all existing interactions from the information in the traffic files. Do not record anything new.')
 Radio button 'Record All' (checked) (tooltip 'Ignore any existing traffic files and record all the interactions afresh.')
@@ -125,7 +125,7 @@ Updated : File Tree with columns: AddMovie
 ->   options.gui (grey90)
 ->   usecase.gui (grey90)
 
-Changing GUI status to: 'Recording completed for VideoStore test-case AddMovie. Auto-replay of test now started. Don't submit the test manually!'
+Changing GUI status to: 'Recording completed for VideoStore.cpmock test-case AddMovie. Auto-replay of test now started. Don't submit the test manually!'
 
 Updated : File Tree with columns: AddMovie
 -> Standard Files (white,bold)
@@ -135,7 +135,7 @@ Updated : File Tree with columns: AddMovie
 ->   options.gui (grey90)
 ->   usecase.gui (grey90)
 
-Changing GUI status to: 'Recording and auto-replay completed for VideoStore test-case AddMovie'
+Changing GUI status to: 'Recording and auto-replay completed for VideoStore.cpmock test-case AddMovie'
 
 Expected application event 'replay GUI to be closed' occurred, proceeding.
 
