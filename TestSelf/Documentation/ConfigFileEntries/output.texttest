@@ -24,14 +24,13 @@ catalogue_process_string||String for catalogue functionality to identify process
 checkout_location|{'default': []}|Absolute paths to look for checkouts under
 collate_file|{'stacktrace': ['core*']}|Mapping of result file names to paths to collect them from
 collate_script|{'default': [], 'stacktrace': ['interpretcore.py']}|Mapping of result file names to scripts which turn them into suitable text
-collect_traffic|{'default': [], 'asynchronous': []}|List of command-line programs to intercept
-collect_traffic_alter_response|[]|List of textual transformations to perform on response traffic
-collect_traffic_client_server|false|Whether to intercept client-server traffic sent by the SUT
-collect_traffic_environment|{'default': []}|Mapping of collected programs to environment variables they care about
+collect_traffic|{'default': [], 'asynchronous': []}|Deprecated. Use CaptureMock.
+collect_traffic_client_server|false|Deprecated. Use CaptureMock.
+collect_traffic_environment|{'default': []}|Deprecated. Use CaptureMock.
 collect_traffic_py_module|[]|Alias. See entry for 'collect_traffic_python'
-collect_traffic_python|[]|List of Python modules and attributes to intercept
-collect_traffic_python_ignore_callers|[]|List of Python modules from where calls to intercepted items should be ignored
-collect_traffic_use_threads|true|Whether to enable threading, and hence concurrent requests, in traffic mechanism
+collect_traffic_python|[]|Deprecated. Use CaptureMock.
+collect_traffic_python_ignore_callers|[]|Deprecated. Use CaptureMock.
+collect_traffic_use_threads|true|Deprecated. Use CaptureMock.
 config_module|default|Configuration module to use
 copy_test_path|[]|Paths to be copied to the sandbox when running tests
 copy_test_path_merge|[]|Directories to be copied to the sandbox, and merged together
