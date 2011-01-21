@@ -32,6 +32,7 @@ extra_search_directory:siteconfig
 extra_search_directory:default_site
 
 import_config_file:site_configfile
+import_config_file:capturemock_config
 
 [run_dependent_text]
 output*:{INTERNAL writedir}{REPLACE <test write dir>}
@@ -171,7 +172,6 @@ test_data_ignore:*pyc
 
 # pick a name for any config modules we might write...
 link_test_path:standard
-link_test_path:capturemockrc
 link_test_path:customconfig.py
 link_test_path:Xvfb
 # performance testing

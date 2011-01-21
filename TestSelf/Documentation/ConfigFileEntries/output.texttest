@@ -42,7 +42,7 @@ default_filter_file|[]|Filter file to use by default, generally only useful for 
 default_interface|static_gui|Which interface to start if none of -con, -g and -gx are provided
 default_machine|localhost|Default machine to run tests on
 default_texttest_tmp|$TEXTTEST_PERSONAL_CONFIG/tmp|Default value for $TEXTTEST_TMP, if it is not set
-definition_file_stems|{'default': [], 'regenerate': ['usecase', 'traffic'], 'builtin': ['config', 'environment', 'properties', 'testsuite', 'options', 'interpreter_options', 'input', 'knownbugs']}|files to be shown as definition files by the static GUI
+definition_file_stems|{'default': [], 'regenerate': ['usecase'], 'builtin': ['config', 'environment', 'properties', 'testsuite', 'options', 'interpreter_options', 'input', 'knownbugs']}|files to be shown as definition files by the static GUI
 diff_program|{'default': 'tkdiff'}|External program to use for graphical file comparison
 discard_file|[]|List of generated result files which should not be compared
 executable|None|Full path to the System Under Test
@@ -50,7 +50,7 @@ extra_config_directory|{'default': []}|Alias. See entry for 'extra_search_direct
 extra_search_directory|{'default': []}|Additional directories to search for TextTest files
 extra_version|[]|Versions to be run in addition to the one specified
 failure_display_priority|{'default': 99}|Mapping of result files to which order they should be shown in the text info window.
-failure_severity|{'errors': 1, 'stdout': 1, 'default': 99, 'catalogue': 2, 'usecase': 1, 'traffic': 1, 'stderr': 1, 'performance': 2, 'output': 1}|Mapping of result files to how serious diffs in them are
+failure_severity|{'errors': 1, 'stdout': 1, 'default': 99, 'catalogue': 2, 'usecase': 1, 'stderr': 1, 'output': 1, 'performance': 2}|Mapping of result files to how serious diffs in them are
 filename_convention_scheme|classic|Naming scheme to use for files for stdin,stdout and stderr
 filter_file_directory|['filter_files']|Default directories for test filter files, relative to an application directory.
 floating_point_tolerance|{'default': 0.0}|Which tolerance to apply when comparing floating point values in output

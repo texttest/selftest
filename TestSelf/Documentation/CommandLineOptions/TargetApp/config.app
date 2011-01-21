@@ -1,4 +1,5 @@
 import_config_file:$STANDARD
+import_config_file:capturemock_config
 
 config_module:queuesystem
 
