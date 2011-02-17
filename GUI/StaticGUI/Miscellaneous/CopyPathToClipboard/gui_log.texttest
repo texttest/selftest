@@ -37,7 +37,7 @@ Button 'Filter' (Stock image 'gtk-find', accelerator 'Ctrl+F', tooltip 'filter t
 Button 'Reset Tab' (tooltip 'Reset all the settings in the current tab to their default values')
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 17Feb12:33:24.' , Image 'throbber_inactive.png'
+'TextTest started at 17Feb12:30:51.' , Image 'throbber_inactive.png'
 --------------------------------------------------------------------------------
 
 Changing GUI status to: 'Reading tests ...'
@@ -82,23 +82,23 @@ Updated : Test Tree with columns: Tests: 0/11 selected
 ->       S01 (black/grey90)
 Updated drop-down list in 'Test-file to search' Text entry (set to 'output') (drop-down list containing ['output'])
 
-Changing GUI status to: 'Reading tests completed at 17Feb12:33:25.'
+Changing GUI status to: 'Reading tests completed at 17Feb12:30:51.'
 
 Expected application event 'all tests to be read' occurred, proceeding.
 
-'set test selection to' event created with arguments 'Game9952'
+'set test selection to' event created with arguments 'A03'
 
 No longer greyed out : _Run
 
-Changed selection in Test Tree with columns: Tests: 1 suite selected
+Changed selection in Test Tree with columns: Tests: 1/11 selected
 -> TargetApp (dip) (black/grey90,bold)
-->   Game9952 (black/grey90,bold)   ***
+->   Game9952 (black/grey90,bold)
 ->     S01.99 (black/grey90)
 ->     A01 (black/grey90)
 ->     S02 (black/grey90)
 ->     A02 (black/grey90)
 ->     S03 (black/grey90)
-->     A03 (black/grey90)
+->     A03 (black/grey90)   ***
 ->     S04 (black/grey90)
 ->     A04 (black/grey90)
 ->     S05 (black/grey90)
@@ -111,11 +111,10 @@ Current page changed in Notebook with tabs: Test , Selection , Running , Config
 Viewing page 'Test'
 ...........
 
-Showing File Tree with columns: Game9952
--> Definition Files (white,bold)
-->   environment (grey90)
-->   testsuite.dip (grey90)
-->   testsuite.dip.small (grey90)
+Showing File Tree with columns: A03
+-> Standard Files (white,bold)
+->   output.dip (grey90)
+-> Definition Files (white)
 
 ------------------------------ (horizontal pane separator)
 ...........
@@ -123,51 +122,30 @@ Showing File Tree with columns: Game9952
 ========== Text Info ==========
 
 Description:
-<No description provided>
+A03 description
 
 Full path:
-Game9952
+Game9952/A03
 ===============================
 
-'set file selection to' event created with arguments 'testsuite.dip'
+'view actions for file' event created with arguments 'output.dip'
 
-Changed selection in File Tree with columns: Game9952
--> Definition Files (white,bold)
-->   environment (grey90)
-->   testsuite.dip (grey90)   ***
-->   testsuite.dip.small (grey90)
+Changed selection in File Tree with columns: A03
+-> Standard Files (white,bold)
+->   output.dip (grey90)   ***
+-> Definition Files (white)
 
 ========== Text Info ==========
 
 Description:
-<No description provided>
+A03 description
 
 Full path:
-Game9952
+Game9952/A03
 
-Preview of testsuite.dip:
-# S01.99's comment
-S01.99
-A01
-S02
-
-# Comment for A02
-A02
-S03
-
-# Extra comment without a test , to make sure it doesn't 
-# get thrown away. See also bugzilla 13073.
-
-# A03 description
-A03
-S04
-A04
-
-S05
-A05
+Preview of output.dip:
+Hello World!
 ===============================
-
-'view actions for file' event created with arguments 'testsuite.dip'
 
 ---------- Popup Window ----------
 'View File' (Stock image 'gtk-open', accelerator 'Ctrl+O')
@@ -181,56 +159,35 @@ A05
 'Remove...' (Stock image 'gtk-delete', accelerator 'Ctrl+Delete')
 ----------------------------------
 
-'view file' event created with arguments ''
+'copy path to clipboard' event created with arguments ''
+Set CLIPBOARD text to '/carm/proj/texttest-tmp/geoff/texttest.gui.17Feb123043.5863/texttest.gui/GUI/StaticGUI/Miscellaneous/CopyPathToClipboard/TargetApp/Game9952/A03/output.dip'
+Set PRIMARY text to '/carm/proj/texttest-tmp/geoff/texttest.gui.17Feb123043.5863/texttest.gui/GUI/StaticGUI/Miscellaneous/CopyPathToClipboard/TargetApp/Game9952/A03/output.dip'
 
-Waiting for application event 'file editing operations to complete' to occur.
+Changing GUI status to: 'Copied full path of selected file to clipboard.'
 
-Changing GUI status to: 'Started "emacs testsuite.dip" in background (from test Game9952).'
+'run selected tests' event created with arguments ''
 
-Updated : Test Tree with columns: Tests: 1 suite selected
--> TargetApp (dip) (black/grey90,bold)
-->   Game9952 (black/grey90,bold)   ***
-->     S01.99 (black/grey90)
-->     S02 (black/grey90)
-->     S03 (black/grey90)
-->     S04 (black/grey90)
-->     S05 (black/grey90)
-->     A01 (black/grey90)
-->     A02 (black/grey90)
-->     A03 (black/grey90)
-->     A04 (black/grey90)
-->     A05 (black/grey90)
-->   npstIII (black/grey90,bold)
-->     Game47 (black/grey90,bold)
-->       S01 (black/grey90)
+Waiting for application event 'dynamic GUI to be closed' to occur.
 
-Updated : File Tree with columns: Game9952
--> Definition Files (white,bold)
-->   environment (grey90)
-->   testsuite.dip (grey90)   ***
-->   testsuite.dip.small (grey90)
+Changing GUI status to: 'Started test Game9952/A03 at 17Feb12:30:51.'
+
+Updated : File Tree with columns: A03
+-> Standard Files (white,bold)
+->   output.dip (grey90)   ***
+-> Definition Files (white)
 
 ========== Text Info ==========
 
 Description:
-<No description provided>
+A03 description
 
 Full path:
-Game9952
+Game9952/A03
 
-Preview of testsuite.dip:
-S01.99
-S02
-S03
-S04
-S05
-A01
-A02
-A03
-A04
-A05
+Preview of output.dip:
+Hello World!
 ===============================
 
-Expected application event 'file editing operations to complete' occurred, proceeding.
+Expected application event 'dynamic GUI to be closed' occurred, proceeding.
 
 'quit' event created with arguments ''
