@@ -1,5 +1,5 @@
 
----------- Window 'TextTest dynamic GUI : testing DIAG.tmp (started at 08Oct15:59:45)' ----------
+---------- Window 'TextTest dynamic GUI : testing DIAG.tmp (started at 23Feb15:29:25)' ----------
 Focus widget is 'Test Tree'
 
 Menu Bar : '_File' (+) , '_View' (+) , '_Actions' (+) , '_Help' (+)
@@ -8,7 +8,7 @@ Tool Bar :
   _Quit (Stock image 'gtk-quit', accelerator 'Ctrl+Q', tooltip 'Quit')
   _Kill (Stock image 'gtk-stop', greyed out, accelerator 'Ctrl+Delete', tooltip 'Kill selected tests')
   _Save (Stock image 'gtk-save', greyed out, accelerator 'Ctrl+S', tooltip 'Save results for selected tests')
-  Progress bar set to fraction 0.0, text 'All 0 tests completed at 08Oct15:59:48'
+  Progress bar set to fraction 0.0, text 'All 0 tests completed at 23Feb15:29:27'
 ...........
 
 Showing Test Tree with columns: Tests: All 0 selected , Details
@@ -22,7 +22,7 @@ Viewing page 'Status'
 Showing Test Status View with columns: Status , Number , Visible
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 08Oct15:59:48.' , Image 'throbber_inactive.png'
+'TextTest started at 23Feb15:29:27.' , Image 'throbber_inactive.png'
 -------------------------------------------------------------------------------------------------
 
 Progress bar set to fraction 0.0, text '0 of 1 tests completed'
@@ -61,7 +61,7 @@ Updated : Test Status View with columns: Status , Number , Visible
 -> Running (white) | 0 (white) | Check box (checked)
 -> Final filter (LightGoldenrod1,bold) | 1 (LightGoldenrod1,bold) | Check box (checked)
 
-Progress bar set to fraction 1.0, text 'All 1 tests completed at 08Oct15:59:49'
+Progress bar set to fraction 1.0, text 'All 1 tests completed at 23Feb15:29:28'
 
 Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
 -> TargetApp (diag.tmp) (black/white,bold) | (white)
@@ -132,9 +132,25 @@ Test FAILED :
 [ thirddiag ] INFO: Some information
 ===============================
 
-'save results for selected tests' event created with arguments ''
+'save results with non-default settings' event created with arguments ''
 
-Changing GUI status to: 'Saving DIAG.tmp test-case TestWithDiag : third, version tmp'
+---------- Dialog 'Saving 1 tests, only files third' ----------
+Default widget is 'gtk-save'
+'Version to save:'
+Text entry (set to '<existing version>') (drop-down list containing ['<existing version>', 'tmp', ''])
+'Version(s) to save previous results as:'
+Text entry
+Check button 'Replace successfully compared files also'
+---------------
+Button 'gtk-save' (Stock image 'gtk-save') , Button 'gtk-cancel' (Stock image 'gtk-cancel')
+---------------------------------------------------------------
+
+'enter version to save =' event created with arguments 'tmp'
+Edited 'Version to save' Text entry (set to 'tmp') (completions ['tmp'])
+
+'press ok' event created with arguments ''
+
+Changing GUI status to: 'Saving DIAG.tmp test-case TestWithDiag : third, version 'tmp''
 
 Updated : Test Tree with columns: Tests: All 1 selected, none hidden , Details
 -> TargetApp (diag.tmp) (black/white,bold) | (white)
@@ -163,7 +179,7 @@ Changing GUI status to: 'Saved 1 tests.'
 
 'save results for selected tests' event created with arguments ''
 
-Changing GUI status to: 'Saving DIAG.tmp test-case TestWithDiag : first, version tmp'
+Changing GUI status to: 'Saving DIAG.tmp test-case TestWithDiag : first, version 'tmp''
 
 Greyed out : _Save
 

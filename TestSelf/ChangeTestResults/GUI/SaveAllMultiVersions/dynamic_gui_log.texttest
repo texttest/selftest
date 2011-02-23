@@ -1,5 +1,5 @@
 
----------- Window 'TextTest dynamic GUI : testing HELLO (started at 08Oct15:59:35)' ----------
+---------- Window 'TextTest dynamic GUI : testing HELLO (started at 23Feb15:37:41)' ----------
 Focus widget is 'Test Tree'
 
 Menu Bar : '_File' (+) , '_View' (+) , '_Actions' (+) , '_Help' (+)
@@ -8,7 +8,7 @@ Tool Bar :
   _Quit (Stock image 'gtk-quit', accelerator 'Ctrl+Q', tooltip 'Quit')
   _Kill (Stock image 'gtk-stop', greyed out, accelerator 'Ctrl+Delete', tooltip 'Kill selected tests')
   _Save (Stock image 'gtk-save', greyed out, accelerator 'Ctrl+S', tooltip 'Save results for selected tests')
-  Progress bar set to fraction 0.0, text 'All 0 tests completed at 08Oct15:59:38'
+  Progress bar set to fraction 0.0, text 'All 0 tests completed at 23Feb15:37:41'
 ...........
 
 Showing Test Tree with columns: Tests: All 0 selected , Details
@@ -22,7 +22,7 @@ Viewing page 'Status'
 Showing Test Status View with columns: Status , Number , Visible
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 08Oct15:59:38.' , Image 'throbber_inactive.png'
+'TextTest started at 23Feb15:37:41.' , Image 'throbber_inactive.png'
 ----------------------------------------------------------------------------------------------
 
 Progress bar set to fraction 0.0, text '0 of 1 tests completed'
@@ -140,7 +140,7 @@ Updated : Test Status View with columns: Status , Number , Visible
 ->   Differences (salmon,bold) | 1 (salmon,bold) | Check box (checked)
 ->     output different (salmon,bold) | 1 (salmon,bold) | Check box (checked)
 
-Progress bar set to fraction 1.0, text 'All 2 tests completed at 08Oct15:59:39'
+Progress bar set to fraction 1.0, text 'All 2 tests completed at 23Feb15:37:42'
 
 Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
 -> TargetApp (hello.2) (black/white,bold) | (white)
@@ -160,21 +160,21 @@ Updated : Test Status View with columns: Status , Number , Visible
 
 Expected application event 'completion of test actions' occurred, proceeding.
 
-'set test selection to' event created with arguments 'OutDiff under TargetApp (hello.2),OutDiff under TargetApp (hello.4)'
+'view actions for test' event created with arguments 'OutDiff under TargetApp (hello.2)'
 
 No longer greyed out : _Save
 
-Changed selection in Test Tree with columns: Tests: All 2 selected, none hidden , Details
+Changed selection in Test Tree with columns: Tests: 1/2 selected, none hidden , Details
 -> TargetApp (hello.2) (black/white,bold) | (white)
 ->   OutDiff (black/salmon) | output different (salmon)   ***
 -> TargetApp (hello.4) (black/white,bold) | (white)
-->   OutDiff (black/salmon) | output different (salmon)   ***
+->   OutDiff (black/salmon) | output different (salmon)
 
 Current page changed in Notebook with tabs: Test , Status , Selection , Run Info
 Viewing page 'Test'
 ...........
 
-Showing File Tree with columns: Sample from 2 tests , Details
+Showing File Tree with columns: OutDiff , Details
 -> Comparison Files (bold)
 ->   errors.hello (DarkSeaGreen2) | (DarkSeaGreen2)
 ->   output.hello (salmon) | (salmon)
@@ -189,41 +189,115 @@ Test FAILED :
 > Hello World!
 ===============================
 
-'save results for selected tests' event created with arguments ''
+---------- Popup Window ----------
+'_Save' (Stock image 'gtk-save', accelerator 'Ctrl+S')
+'Save _As...' (Stock image 'gtk-save', accelerator 'Ctrl+Alt+S')
+  ----
+'_Kill' (Stock image 'gtk-stop', greyed out, accelerator 'Ctrl+Delete')
+'_Mark' (accelerator 'Shift+Ctrl+M')
+'_Unmark' (greyed out, accelerator 'Shift+Ctrl+U')
+  ----
+'_Rerun' (Stock image 'gtk-execute', accelerator 'Ctrl+R')
+'Recompute Status' (Stock image 'gtk-refresh', accelerator 'F5')
+----------------------------------
 
-Changing GUI status to: 'Saving HELLO.2 test-case OutDiff : output, version 2'
+'save results with non-default settings' event created with arguments ''
 
-Updated : Test Tree with columns: Tests: All 2 selected, none hidden , Details
+---------- Dialog 'Saving 1 tests' ----------
+Default widget is 'gtk-save'
+'Version to save:'
+Text entry (set to '<existing version>') (drop-down list containing ['<existing version>', '2', ''])
+'Version(s) to save previous results as:'
+Text entry
+Check button 'Replace successfully compared files also'
+---------------
+Button 'gtk-save' (Stock image 'gtk-save') , Button 'gtk-cancel' (Stock image 'gtk-cancel')
+---------------------------------------------
+
+'enter version to save =' event created with arguments '2'
+Edited 'Version to save' Text entry (set to '2') (completions ['2'])
+
+'press ok' event created with arguments ''
+
+Changing GUI status to: 'Saving HELLO.2 test-case OutDiff : output, version '2''
+
+Greyed out : _Save
+
+Updated : Test Tree with columns: Tests: 1/2 selected, none hidden , Details
 -> TargetApp (hello.2) (black/white,bold) | All 1 tests successful (DarkSeaGreen2)
 ->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
 -> TargetApp (hello.4) (black/white,bold) | (white)
-->   OutDiff (black/salmon) | output different (salmon)   ***
+->   OutDiff (black/salmon) | output different (salmon)
 
-Updated : File Tree with columns: Sample from 2 tests , Details
+Updated : File Tree with columns: OutDiff , Details
 -> Comparison Files (bold)
 ->   errors.hello (DarkSeaGreen2) | (DarkSeaGreen2)
 ->   output.hello.2 (DarkSeaGreen2) | (DarkSeaGreen2)
 
 ========== Text Info ==========
 Test succeeded
-(Saved at 15:59)
+(Saved at 15:37)
 ===============================
 
-Changing GUI status to: 'Saving HELLO.4 test-case OutDiff : output, version 4'
+Changing GUI status to: 'Saved 1 tests.'
+
+'view actions for test' event created with arguments 'OutDiff under TargetApp (hello.4)'
+
+No longer greyed out : _Save
+
+Changed selection in Test Tree with columns: Tests: 1/2 selected, none hidden , Details
+-> TargetApp (hello.2) (black/white,bold) | All 1 tests successful (DarkSeaGreen2)
+->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)
+-> TargetApp (hello.4) (black/white,bold) | (white)
+->   OutDiff (black/salmon) | output different (salmon)   ***
+
+Updated : File Tree with columns: OutDiff , Details
+-> Comparison Files (bold)
+->   errors.hello (DarkSeaGreen2) | (DarkSeaGreen2)
+->   output.hello (salmon) | (salmon)
+
+========== Text Info ==========
+Test FAILED :
+---------- Differences in output ----------
+0a1
+> Hello World!
+===============================
+
+---------- Popup Window ----------
+'_Save' (Stock image 'gtk-save', accelerator 'Ctrl+S')
+'Save _As...' (Stock image 'gtk-save', accelerator 'Ctrl+Alt+S')
+  ----
+'_Kill' (Stock image 'gtk-stop', greyed out, accelerator 'Ctrl+Delete')
+'_Mark' (accelerator 'Shift+Ctrl+M')
+'_Unmark' (greyed out, accelerator 'Shift+Ctrl+U')
+  ----
+'_Rerun' (Stock image 'gtk-execute', accelerator 'Ctrl+R')
+'Recompute Status' (Stock image 'gtk-refresh', accelerator 'F5')
+----------------------------------
+
+'save results with non-default settings' event created with arguments ''
+
+---------- Dialog 'Saving 1 tests' ----------
+Default widget is 'gtk-save'
+'Version to save:'
+Text entry (set to '<existing version>') (drop-down list containing ['<existing version>', '4', ''])
+'Version(s) to save previous results as:'
+Text entry
+Check button 'Replace successfully compared files also'
+---------------
+Button 'gtk-save' (Stock image 'gtk-save') , Button 'gtk-cancel' (Stock image 'gtk-cancel')
+---------------------------------------------
+
+'enter version to save =' event created with arguments '4'
+Edited 'Version to save' Text entry (set to '4') (completions ['4'])
+
+'press ok' event created with arguments ''
+
+Changing GUI status to: 'Saving HELLO.4 test-case OutDiff : output, version '4''
 
 Greyed out : _Save
 
-Updated : Test Tree with columns: Tests: All 2 selected, none hidden , Details
--> TargetApp (hello.2) (black/white,bold) | All 1 tests successful (DarkSeaGreen2)
-->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
--> TargetApp (hello.4) (black/white,bold) | All 1 tests successful (DarkSeaGreen2)
-->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
-
-Changing GUI status to: 'Saved 2 tests.'
-
-'set test selection to' event created with arguments 'OutDiff under TargetApp (hello.4)'
-
-Changed selection in Test Tree with columns: Tests: 1/2 selected, none hidden , Details
+Updated : Test Tree with columns: Tests: 1/2 selected, none hidden , Details
 -> TargetApp (hello.2) (black/white,bold) | All 1 tests successful (DarkSeaGreen2)
 ->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)
 -> TargetApp (hello.4) (black/white,bold) | All 1 tests successful (DarkSeaGreen2)
@@ -236,7 +310,9 @@ Updated : File Tree with columns: OutDiff , Details
 
 ========== Text Info ==========
 Test succeeded
-(Saved at 15:59)
+(Saved at 15:37)
 ===============================
+
+Changing GUI status to: 'Saved 1 tests.'
 
 'quit' event created with arguments ''
