@@ -1,18 +1,9 @@
 #!/usr/bin/env python
 
-import os, sys
+import sys, shutil
 
-if ":2" in sys.argv:
-    # Leak a lock file and check TextTest cleans it for us
-    try:
-        open("/tmp/.X2-lock", "w").close()
-    except EnvironmentError:
-        pass # If we get permission error, that's just tough...
-    import signal
-    os.kill(os.getppid(), signal.SIGUSR1)
-    signal.pause()
-else:
-    sys.stderr.write("""
+sys.stderr.write("""
 Fatal server error:
 Could not create server lock file: /tmp/.X1-lock
 """)
+shutil.copyfile("Xvfb2", "Xvfb")
