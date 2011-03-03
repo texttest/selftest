@@ -112,8 +112,8 @@ pythonmocks:{INTERNAL writedir}{REPLACE <test write dir>}
 pythonmocks:[^/]*[0-9]{2}[A-Za-z][a-z][a-z][0-9]{6}\.[0-9]*{REPLACE <target tmp dir>}
 externalmocks:{INTERNAL writedir}{REPLACE <test write dir>}
 externalmocks:[^/]*[0-9]{2}[A-Za-z][a-z][a-z][0-9]{6}\.[0-9]*{REPLACE <target tmp dir>}
-traffic:[^ ]*(/startXvfb.py){REPLACE <path>\1}
-traffic:startXvfb.py{WORD 3}{REPLACE <python>}
+externalmocks:[^ ]*(/startXvfb.py){REPLACE <path>\1}
+externalmocks:startXvfb.py{WORD 3}{REPLACE <python>}
 pythonmocks:[^ \']*@localhost{REPLACE <username>@localhost}
 pythonmocks:[0-9][0-9][A-Za-z][a-z][a-z][0-9][0-9][0-9][0-9]{REPLACE <today's date>}
 pythonmocks: on .*test-case.*under{WORD -7}
