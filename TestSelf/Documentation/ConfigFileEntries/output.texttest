@@ -41,7 +41,7 @@ default_filter_file|[]|Filter file to use by default, generally only useful for 
 default_interface|static_gui|Which interface to start if none of -con, -g and -gx are provided
 default_machine|localhost|Default machine to run tests on
 default_texttest_tmp|$TEXTTEST_PERSONAL_CONFIG/tmp|Default value for $TEXTTEST_TMP, if it is not set
-definition_file_stems|{'default': [], 'regenerate': ['usecase'], 'builtin': ['config', 'environment', 'properties', 'testsuite', 'options', 'interpreter_options', 'input', 'knownbugs']}|files to be shown as definition files by the static GUI
+definition_file_stems|{'default': [], 'regenerate': ['usecase'], 'builtin': ['config', 'environment', 'testsuite', 'options', 'interpreter_options', 'input', 'knownbugs']}|files to be shown as definition files by the static GUI
 diff_program|{'default': 'tkdiff'}|External program to use for graphical file comparison
 discard_file|[]|List of generated result files which should not be compared
 executable|None|Full path to the System Under Test
@@ -104,7 +104,6 @@ suppress_stderr_popup|[]|Alias. See entry for 'suppress_stderr_text'
 suppress_stderr_text|[]|List of patterns which, if written on TextTest's own stderr, should not be propagated to popups and further logfiles
 test_data_environment|{}|Environment variables to be redirected for linked/copied test data
 test_data_ignore|{'default': []}|Elements under test data structures which should not be viewed or change-monitored
-test_data_properties|{'default': ''}|Write the contents of test_data_environment to the given Java properties file
 test_data_searchpath|{'default': []}|Alias. See entry for 'extra_search_directory'
 test_list_files_directory|['filter_files']|Alias. See entry for 'filter_file_directory'
 testoverview_colours|{'run_tuesday_fg': 'black', 'performance_bg': '#FFC6A5', 'row_header_bg': '#FFFFCC', 'run_wednesday_fg': 'black', 'test_default_fg': 'black', 'incomplete_bg': '#8B1A1A', 'column_header_bg': 'gray1', 'no_results_bg': 'gray2', 'success_bg': '#CEEFBD', 'failure_bg': '#FF3118', 'run_monday_fg': 'black', 'knownbug_bg': '#FF9900', 'run_sunday_fg': 'black', 'run_saturday_fg': 'black', 'run_thursday_fg': 'black', 'run_friday_fg': 'black', 'memory_bg': 'pink', 'performance_fg': 'red6'}|Alias. See entry for 'historical_report_colours'
