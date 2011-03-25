@@ -37,7 +37,7 @@ Button 'Filter' (Stock image 'gtk-find', accelerator 'Ctrl+F', tooltip 'filter t
 Button 'Reset Tab' (tooltip 'Reset all the settings in the current tab to their default values')
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 15Nov16:12:04.' , Image 'throbber_inactive.png'
+'TextTest started at 25Mar15:02:45.' , Image 'throbber_inactive.png'
 --------------------------------------------------------------------------------
 
 Changing GUI status to: 'Reading tests ...'
@@ -82,7 +82,7 @@ Updated : Test Tree with columns: Tests: 0/11 selected
 ->       S01 (black/grey90)
 Updated drop-down list in 'Test-file to search' Text entry (set to 'output') (drop-down list containing ['output'])
 
-Changing GUI status to: 'Reading tests completed at 15Nov16:12:05.'
+Changing GUI status to: 'Reading tests completed at 25Mar15:02:45.'
 
 Expected application event 'all tests to be read' occurred, proceeding.
 
@@ -208,9 +208,9 @@ Viewing table with 6 rows and 2 columns.
 '<b>You are using these installations:
 </b>'
 Viewing table with 3 rows and 2 columns.
-'Test Suite:' | '/carm/proj/texttest-tmp/geoff/texttest.gui.cover.15Nov161152.28741/texttest.cover.gui/GUI/StaticGUI/Miscellaneous/ViewHelp/TargetApp'
+'Test Suite:' | '/carm/proj/texttest-tmp/geoff/texttest.gui.25Mar150235.8075/texttest.gui/GUI/StaticGUI/Miscellaneous/ViewHelp/TargetApp'
 'TextTest:' | '/users/geoff/work/master/Testing/TextTest'
-'Python:' | '/usr/local/tt-env/python2.6/bin/python'
+'Python:' | '/usr/local/tt-env/python2.6.current/bin/python'
 ---------------
 Button 'gtk-close' (Stock image 'gtk-close')
 --------------------------------------------------
@@ -245,17 +245,44 @@ Viewing page 'from 3.20'
 
 ========== GtkTextView ==========
 
-
-More migration (potentially) in the Python traffic interception mechanism.
+The main migration concerns users of TextTest's traffic interception mechanism, now CaptureMock.
 
 =========================================================
 COMPULSORY MIGRATION
 =========================================================
 
-(1) Base classes in intercepted Python traffic
+(1) "Traffic Mechanism" is now a separate project called CaptureMock
+====================================================================
+If you were using this, you will now need to also install the CaptureMock program.
+You will also need to create files of the format it now expects. This will ordinarily consist
+of two parts:
+
+a) Generate capturemockrc files
+
+   The way to do that is to run the conversion script as follows
+
+   texttest.py -s traffic.ConvertToCaptureMock
+
+   This will automatically create capturemockrc.<app> files as appropiate based on your collect_traffic* 
+   settings in the config files. It may in some cases create more files than necessary so some duplicates
+   for versions may be able to be deleted.
+
+b) Adjust your config files
+
+   All collect_traffic settings should be removed from the config files after doing (a). TextTest will
+   refuse to start until they have been. In addition, you should enable capturemock by adding
+
+   import_config_file:capturemock_config
+
+   to your config file. 
+
+(2) Base classes in intercepted Python traffic
 ==============================================
 
-These are now handled correctly, i.e. listed explicitly in the traffic files. This means
+Once you've done that, if you have moderately complicated Python interception you may need some
+CaptureMock migration.
+
+Base classes are now handled correctly, i.e. listed explicitly in the traffic files. This means
 that two previous conventions in the traffic files are now obsolete.
 
 NewStyleInstance('Blah', 'blah1')
@@ -301,6 +328,28 @@ and then run
 
 texttest.py -s "traffic.ModifyTraffic types=RET script=migrate_traffic_from_3.20.py"
 
+(3) Python interception and command line/client-server interception cannot write to the same file
+=================================================================================================
+This is only an issue if you are using both these functionalities.
+
+TextTest will in future write python interception from CaptureMock to "pythonmocks.<app>" and other 
+interception to "externalmocks.<app>". There is no need to rename if you are only using one of these,
+as it will still find the "traffic.<app>" files for backwards compatibility. Files recorded in future
+will have the new names, however, so you may wish to rename for consistency.
+
+If you are using both, however, it will be necessary to separate this out via a simple script into 
+the two new files as appropriate.
+
+(4) Java Properties files and test_data_properties
+==================================================
+The ability to create and amalgamate specific properties files for Java programs seems to have been little used.
+In practice people seem to use system properties most of the time, and ordinary properties files can of course use
+the ordinary data file mechanism which is simpler than learning another format.
+
+For simplicity this functionality is therefore gone. Usage can be replaced by either "interpreter_options" files to
+provide properties via -D arguments to Java, or by simply adding the files via link_test_path. If you *really* miss
+this functionality, drop me a line and I'll think about restoring it.
+
 =========================================================
 CHANGES IN DEFAULT BEHAVIOUR (OR PROCEDURE)
 =========================================================
@@ -310,6 +359,21 @@ CHANGES IN DEFAULT BEHAVIOUR (OR PROCEDURE)
 Previously TextTest has always sent batch emails to $USER unless this was explicitly disabled.
 As more and more people rely on the HTML reports alone and don't read the emails this was becoming
 a pain. So no "batch_receipients" entry now means no email.
+
+(2) Default behaviour of "Save" and "Save As" in the dynamic GUI with versions
+==============================================================================
+Previously, the default operation of "Save" has been to save the results with the version specified when running.
+This has proved to be a bit unexpected in some cases, and hence the default behaviour is changed.
+
+"Save" will always overwrite the file it has compared with, no matter what. If it is a new file, it will be saved
+ without version identifiers.
+
+"Save As" allows you to specify a version. The default version value is however "<existing version>" which will behave
+like "Save". Selecting a version explicitly should behave as it does today.
+
+(3) CaptureMock no longer produces trailing spaces
+==================================================
+This should be easy to just save, really a bugfix.
 =================================
 ---------------
 Button 'gtk-close' (Stock image 'gtk-close')
@@ -411,56 +475,18 @@ Changing GUI status to: ''
 ---------- Dialog 'TextTest Change Logs' ----------
 Default widget is 'gtk-close'
 
-Showing Notebook with tabs: trunk , 3.20 , 3.19 , 3.18 , 3.17 , 3.16.1 , 3.16 , 3.15 , 3.14.1 , 3.14 , 3.13 , 3.12.1 , 3.12 , 3.11.1 , 3.11 , 3.10 , 3.9.1 , 3.9 , 3.8 , 3.7.1 , 3.7 , 3.6 , 3.5.3 , 3.5.2 , 3.5.1 , 3.5 , 3.4 , 3.3 , 3.2 , 3.1.1 , 3.1 , 3.0 , 2.1 , 2.0 , 1.0 , 0.2 , 0.1
+Showing Notebook with tabs: trunk , 3.21 , 3.20 , 3.19 , 3.18 , 3.17 , 3.16.1 , 3.16 , 3.15 , 3.14.1 , 3.14 , 3.13 , 3.12.1 , 3.12 , 3.11.1 , 3.11 , 3.10 , 3.9.1 , 3.9 , 3.8 , 3.7.1 , 3.7 , 3.6 , 3.5.3 , 3.5.2 , 3.5.1 , 3.5 , 3.4 , 3.3 , 3.2 , 3.1.1 , 3.1 , 3.0 , 2.1 , 2.0 , 1.0 , 0.2 , 0.1
 Viewing page 'trunk'
 
 ========== GtkTextView ==========
 System requirements (see Migration Notes):
 General GUI Enhancements:
-    - GUI now cleans up appropriately on receiving SIGINT on UNIX (engine.py)
-	Means dynamic GUIs can be closed from static GUI without leaking files.
 Static GUI Enhancements:
-    - Local "wrapper" scripts now appear in static GUI config tab (filetrees.py)
-	Any "executable" or "interpreter" that depends on "TEXTTEST_ROOT" will be shown.
-    - Creating an application for testing PyGTK will now generate a repoint of XDG_CONFIG_HOME
-	This is basically always needed in theory and quite a gotcha if you aren't familiar with it.
 Dynamic GUI Enhancements:
 Framework Enhancements:
-    - Jira plugin now highlights 'resolution' field if it is set, instead of 'status' (jira.py)
-	This information is usually more interesting.
-    - Python interception of classes now handles base classes correctly (traffic_server.py)
-	Base classes now listed explicitly. Some recorded traffic may not work. See migration notes.
-    - Python interception: can now "fix up" objects which aren't repr-eval compatible (traffic_server.py)
-	New setting "collect_traffic_alter_response". See website for details.
 Batch Report Enhancements:
-    - Can now get green/red colourings from the batch console output (colorer.py)
-	Use the new -zen option. Thanks to Matt Baker for this.
-    - Email-sending in batch mode is no longer enabled by default (batch/__init__.py)
-	Previously automatically sent mail to $USER: now many only use the HTML reports.
-    - Allow setting the date for a date-based batch job (batch/__init__.py)
-	Using e.g. -name 04Nov2010 will now achieve this. Useful for very long continuous integration jobs,
-	e.g. running over a weekend.
-    - Old results are now shown in a light-grey foregound colour on the HTML report summary pages (summarypages.py)
-	This to prevent confusion when several processes update the same table in sequence.
-Grid Engine (LSF/SGE) enhancements:
-    - Status tab now shows grid engine status (e.g. suspension) also (statusview.py)
-	Previously only visible in the test tree view.
-    - Ignore order of lists of resources when deciding about reuse (masterprocess.py)
-	Previously started new jobs if one test required resources a,b and the other required b,a.
+Grid Engine (LSF/SGE) enhancements/bug fixes:
 Bug Fixes:
-    - Running extra versions with an explicit version from the static GUI does not flip version order any more (testmodel.py)
-    - TextTest no longer allows data file names to clash with its own pre-defined definition file names (testmodel.py)
-    - "Run Info" information when reconnecting is heavily reduced (textinfo.py)
-	This to avoid the impression it's describing the environment where the original test ran
-    - Python interception: __getitem__ now intercepted correctly for new-style classes (traffic_pymodule.py)
-    - Python interception: fixed infinite recusion bug if something used by inspect.getstack is intercepted (traffic_pymodule.py)
-    - Disabled "regeneration" warning when recording UI tests (comparetest.py)
-    - If unexpected things get regenerated, compare them as well as producing a warning (comparetest.py)
-    - Fixed spurious warnings in the dynamic GUI if "<default>" setting is deleted when rerunning tests (runningactions.py)
-    - Performance-related config settings can now depend on tests and suites (sandbox.py)
-    - Filtering for a version and then selecting a suite no longer selects versions that should be filtered away (testtree.py)
-    - Selecting from the static GUI now handles empty suites correctly (selectandfilter.py)
-    - Python interception mechanism no longer stacktraces if called on Python earlier than 2.4 (sitecustomize.py)
 =================================
 ---------------
 Button 'gtk-close' (Stock image 'gtk-close')
@@ -468,7 +494,7 @@ Button 'gtk-close' (Stock image 'gtk-close')
 
 'view tab' event created with arguments '3.7.1'
 
-Current page changed in Notebook with tabs: trunk , 3.20 , 3.19 , 3.18 , 3.17 , 3.16.1 , 3.16 , 3.15 , 3.14.1 , 3.14 , 3.13 , 3.12.1 , 3.12 , 3.11.1 , 3.11 , 3.10 , 3.9.1 , 3.9 , 3.8 , 3.7.1 , 3.7 , 3.6 , 3.5.3 , 3.5.2 , 3.5.1 , 3.5 , 3.4 , 3.3 , 3.2 , 3.1.1 , 3.1 , 3.0 , 2.1 , 2.0 , 1.0 , 0.2 , 0.1
+Current page changed in Notebook with tabs: trunk , 3.21 , 3.20 , 3.19 , 3.18 , 3.17 , 3.16.1 , 3.16 , 3.15 , 3.14.1 , 3.14 , 3.13 , 3.12.1 , 3.12 , 3.11.1 , 3.11 , 3.10 , 3.9.1 , 3.9 , 3.8 , 3.7.1 , 3.7 , 3.6 , 3.5.3 , 3.5.2 , 3.5.1 , 3.5 , 3.4 , 3.3 , 3.2 , 3.1.1 , 3.1 , 3.0 , 2.1 , 2.0 , 1.0 , 0.2 , 0.1
 Viewing page '3.7.1'
 
 ========== GtkTextView ==========
@@ -542,9 +568,9 @@ Viewing table with 6 rows and 2 columns.
 '<b>You are using these installations:
 </b>'
 Viewing table with 3 rows and 2 columns.
-'Test Suite:' | '/carm/proj/texttest-tmp/geoff/texttest.gui.cover.15Nov161152.28741/texttest.cover.gui/GUI/StaticGUI/Miscellaneous/ViewHelp/TargetApp'
+'Test Suite:' | '/carm/proj/texttest-tmp/geoff/texttest.gui.25Mar150235.8075/texttest.gui/GUI/StaticGUI/Miscellaneous/ViewHelp/TargetApp'
 'TextTest:' | '/users/geoff/work/master/Testing/TextTest'
-'Python:' | '/usr/local/tt-env/python2.6/bin/python'
+'Python:' | '/usr/local/tt-env/python2.6.current/bin/python'
 ---------------
 Button 'gtk-close' (Stock image 'gtk-close')
 --------------------------------------------------
