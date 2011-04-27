@@ -28,6 +28,9 @@ SlaveCrashNoReport
 # We should notice crashed slaves without waiting for the user to kill them
 PollSlaveCrash
 
+# We should notice if SGE itself goes down, and report this nicely...
+PollSgeCrash
+
 # we need to make sure we report queue system errors intelligently here.
 # Interactive queue system errors are not really handled right now.
 
