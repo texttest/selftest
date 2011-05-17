@@ -1,5 +1,5 @@
 
----------- Window 'TextTest dynamic GUI : testing HELLO (started at 08Oct16:00:46)' ----------
+---------- Window 'TextTest dynamic GUI : testing HELLO (started at 17May16:24:54)' ----------
 Focus widget is 'Test Tree'
 
 Menu Bar : '_File' (+) , '_View' (+) , '_Actions' (+) , '_Mercurial' (+) , '_Help' (+)
@@ -23,7 +23,7 @@ Showing Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 4 (white,bold) | Check box (checked)
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 08Oct16:00:49.' , Image 'throbber_inactive.png'
+'TextTest started at 17May16:25:02.' , Image 'throbber_inactive.png'
 ----------------------------------------------------------------------------------------------
 
 Updated : Test Tree with columns: Tests: 0/4 selected, 3 hidden , Details
@@ -316,7 +316,7 @@ Updated : Test Status View with columns: Status , Number , Visible
 ->   Differences (salmon,bold) | 3 (salmon,bold) | Check box (checked)
 ->     output different (salmon,bold) | 3 (salmon,bold) | Check box (checked)
 
-Progress bar set to fraction 1.0, text 'All 4 tests completed at 08Oct16:00:51'
+Progress bar set to fraction 1.0, text 'All 4 tests completed at 17May16:25:04'
 
 Updated : Test Tree with columns: Tests: 0/4 selected, none hidden , Details
 -> TargetApp (hello) (black/white,bold) | (white)
@@ -478,6 +478,22 @@ Changed selection in Test Tree with columns: Tests: 2/4 selected, none hidden , 
 Updated : File Tree with columns: Sample from 2 tests , Details
 -> Comparison Files (bold)
 ->   errors.hello (DarkSeaGreen2) | (DarkSeaGreen2)
+->   output.hello (salmon) | (salmon)   ***
+
+========== Text Info ==========
+Test FAILED :
+---------- Differences in output ----------
+1c1
+< Hello uncommitted update!
+---
+> Hello World!
+===============================
+
+'set file selection to' event created with arguments ''
+
+Changed selection in File Tree with columns: Sample from 2 tests , Details
+-> Comparison Files (bold)
+->   errors.hello (DarkSeaGreen2) | (DarkSeaGreen2)
 ->   output.hello (salmon) | (salmon)
 
 ========== Text Info ==========
@@ -550,8 +566,6 @@ Changed selection in File Tree with columns: Sample from 2 tests , Details
 ->   output.hello (salmon) | (salmon)   ***
 
 'version control log for the selected files' event created with arguments ''
-
-Changing GUI status to: 'Analyzing logs for output.hello in test Test2'
 
 Changing GUI status to: 'Analyzing logs for output.hello in test Test2'
 
