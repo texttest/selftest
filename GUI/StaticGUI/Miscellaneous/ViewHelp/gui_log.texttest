@@ -1,5 +1,5 @@
 
----------- Window 'TextTest static GUI : management of tests for DIP' ----------
+---------- Window 'DIP test management - TextTest static GUI' ----------
 Focus widget is 'Test Tree'
 
 Menu Bar : '_File' (+) , '_Edit' (+) , '_View' (+) , '_Actions' (+) , '_Help' (+)
@@ -37,8 +37,8 @@ Button 'Filter' (Stock image 'gtk-find', accelerator 'Ctrl+F', tooltip 'filter t
 Button 'Reset Tab' (tooltip 'Reset all the settings in the current tab to their default values')
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 25Mar15:02:45.' , Image 'throbber_inactive.png'
---------------------------------------------------------------------------------
+'TextTest started at 09Jun14:04:05.' , Image 'throbber_inactive.png'
+------------------------------------------------------------------------
 
 Changing GUI status to: 'Reading tests ...'
 
@@ -82,7 +82,7 @@ Updated : Test Tree with columns: Tests: 0/11 selected
 ->       S01 (black/grey90)
 Updated drop-down list in 'Test-file to search' Text entry (set to 'output') (drop-down list containing ['output'])
 
-Changing GUI status to: 'Reading tests completed at 25Mar15:02:45.'
+Changing GUI status to: 'Reading tests completed at 09Jun14:04:06.'
 
 Expected application event 'all tests to be read' occurred, proceeding.
 
@@ -208,8 +208,8 @@ Viewing table with 6 rows and 2 columns.
 '<b>You are using these installations:
 </b>'
 Viewing table with 3 rows and 2 columns.
-'Test Suite:' | '/carm/proj/texttest-tmp/geoff/texttest.gui.25Mar150235.8075/texttest.gui/GUI/StaticGUI/Miscellaneous/ViewHelp/TargetApp'
-'TextTest:' | '/users/geoff/work/master/Testing/TextTest'
+'Test Suite:' | '/carm/proj/texttest-tmp/geoff/dynamic_gui.09Jun140245.14502/texttest.gui/GUI/StaticGUI/Miscellaneous/ViewHelp/TargetApp'
+'TextTest:' | '/nfs/vm/texttest/geoff/Testing/TextTest'
 'Python:' | '/usr/local/tt-env/python2.6.current/bin/python'
 ---------------
 Button 'gtk-close' (Stock image 'gtk-close')
@@ -481,12 +481,39 @@ Viewing page 'trunk'
 ========== GtkTextView ==========
 System requirements (see Migration Notes):
 General GUI Enhancements:
+    - File selection is now preserved when a new test is selected
+	Makes it easier to compare previews of different test results
 Static GUI Enhancements:
+    - Version information now shown when a single test/suite with extra versions selected
+	Previously hard to tell which was selected
 Dynamic GUI Enhancements:
+    - New option "<full version>" in "version to save" in Save As dialog
+	Basically save with the full version you ran with, as was default behaviour in TextTest 3.20
+	Particularly helpful when running multiple versions
+    - Recomputed completed tests always reloads config file, even if other tests still running
+	Threading-related issues fixed.
 Framework Enhancements:
+    - Added possibility to configure copying procedure for test data files
+	See docs for "copy_test_path_script".
+    - Now support GUI testing on separate networks
+	Both virtual display and accessibility of usecase and UI map files fixed
 Batch Report Enhancements:
 Grid Engine (LSF/SGE) enhancements/bug fixes:
+    - Fixed stacktrace when normal polling cannot find a job, e.g. if SGE master goes down
+    - Fixed stacktrace in slave when test names contain colons
+    - Recomputing after a status update in SGE no longer duplicates progress information
+    - Now handles hold state (hqw) correctly
 Bug Fixes:
+    - Fixed stacktrace trying to build piecharts when matplotlib not installed
+    - Make sure options after positional arguments get treated as arguments to the new program
+    - Allow linking of executable, which is done in the new rpm (thanks Michael Behrisch)
+    - Record/Add dialog sizes improved
+    - Focus in dialogs with file choosers (like the application creation one) now starts at the top
+    - Command lines with empty string arguments now shown correctly in Run Info
+    - On POSIX platforms, tests that set LANG and change encoding will no longer cause errors from TextTest previews
+    - Fixed occasional stacktraces when viewing files in tests exactly as the test in question completes
+    - Tried to improve handling of errors from "ps" on POSIX systems
+    - Fixed bug where invalid names of saved selections persist even after being changed
 =================================
 ---------------
 Button 'gtk-close' (Stock image 'gtk-close')
@@ -568,8 +595,8 @@ Viewing table with 6 rows and 2 columns.
 '<b>You are using these installations:
 </b>'
 Viewing table with 3 rows and 2 columns.
-'Test Suite:' | '/carm/proj/texttest-tmp/geoff/texttest.gui.25Mar150235.8075/texttest.gui/GUI/StaticGUI/Miscellaneous/ViewHelp/TargetApp'
-'TextTest:' | '/users/geoff/work/master/Testing/TextTest'
+'Test Suite:' | '/carm/proj/texttest-tmp/geoff/dynamic_gui.09Jun140245.14502/texttest.gui/GUI/StaticGUI/Miscellaneous/ViewHelp/TargetApp'
+'TextTest:' | '/nfs/vm/texttest/geoff/Testing/TextTest'
 'Python:' | '/usr/local/tt-env/python2.6.current/bin/python'
 ---------------
 Button 'gtk-close' (Stock image 'gtk-close')
