@@ -37,7 +37,7 @@ Button 'Filter' (Stock image 'gtk-find', accelerator 'Ctrl+F', tooltip 'filter t
 Button 'Reset Tab' (tooltip 'Reset all the settings in the current tab to their default values')
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 09Jun14:04:05.' , Image 'throbber_inactive.png'
+'TextTest started at 01Jul14:37:52.' , Image 'throbber_inactive.png'
 ------------------------------------------------------------------------
 
 Changing GUI status to: 'Reading tests ...'
@@ -82,7 +82,7 @@ Updated : Test Tree with columns: Tests: 0/11 selected
 ->       S01 (black/grey90)
 Updated drop-down list in 'Test-file to search' Text entry (set to 'output') (drop-down list containing ['output'])
 
-Changing GUI status to: 'Reading tests completed at 09Jun14:04:06.'
+Changing GUI status to: 'Reading tests completed at 01Jul14:37:53.'
 
 Expected application event 'all tests to be read' occurred, proceeding.
 
@@ -208,7 +208,7 @@ Viewing table with 6 rows and 2 columns.
 '<b>You are using these installations:
 </b>'
 Viewing table with 3 rows and 2 columns.
-'Test Suite:' | '/carm/proj/texttest-tmp/geoff/dynamic_gui.09Jun140245.14502/texttest.gui/GUI/StaticGUI/Miscellaneous/ViewHelp/TargetApp'
+'Test Suite:' | '/carm/proj/texttest-tmp/geoff/dynamic_gui.01Jul143736.5780/texttest.gui/GUI/StaticGUI/Miscellaneous/ViewHelp/TargetApp'
 'TextTest:' | '/nfs/vm/texttest/geoff/Testing/TextTest'
 'Python:' | '/usr/local/tt-env/python2.6.current/bin/python'
 ---------------
@@ -240,140 +240,32 @@ Changing GUI status to: ''
 ---------- Dialog 'TextTest Migration Notes' ----------
 Default widget is 'gtk-close'
 
-Showing Notebook with tabs: from 3.20 , from 3.19 , from 3.18 , from 3.17 , from 3.16 , from 3.15 , from 3.14 , from 3.13 , from 3.12 , from 3.11 , from 3.10 , from 3.9 , from 3.8 , from 3.7 , from 3.6 , from 3.5 , from 3.4 , from 3.3 , from 3.1 , from 2.x
-Viewing page 'from 3.20'
+Showing Notebook with tabs: from 3.21 , from 3.20 , from 3.19 , from 3.18 , from 3.17 , from 3.16 , from 3.15 , from 3.14 , from 3.13 , from 3.12 , from 3.11 , from 3.10 , from 3.9 , from 3.8 , from 3.7 , from 3.6 , from 3.5 , from 3.4 , from 3.3 , from 3.1 , from 2.x
+Viewing page 'from 3.21'
 
 ========== GtkTextView ==========
 
-The main migration concerns users of TextTest's traffic interception mechanism, now CaptureMock.
-
-=========================================================
-COMPULSORY MIGRATION
-=========================================================
-
-(1) "Traffic Mechanism" is now a separate project called CaptureMock
-====================================================================
-If you were using this, you will now need to also install the CaptureMock program.
-You will also need to create files of the format it now expects. This will ordinarily consist
-of two parts:
-
-a) Generate capturemockrc files
-
-   The way to do that is to run the conversion script as follows
-
-   texttest.py -s traffic.ConvertToCaptureMock
-
-   This will automatically create capturemockrc.<app> files as appropiate based on your collect_traffic* 
-   settings in the config files. It may in some cases create more files than necessary so some duplicates
-   for versions may be able to be deleted.
-
-b) Adjust your config files
-
-   All collect_traffic settings should be removed from the config files after doing (a). TextTest will
-   refuse to start until they have been. In addition, you should enable capturemock by adding
-
-   import_config_file:capturemock_config
-
-   to your config file. 
-
-(2) Base classes in intercepted Python traffic
-==============================================
-
-Once you've done that, if you have moderately complicated Python interception you may need some
-CaptureMock migration.
-
-Base classes are now handled correctly, i.e. listed explicitly in the traffic files. This means
-that two previous conventions in the traffic files are now obsolete.
-
-NewStyleInstance('Blah', 'blah1')
-
-becomes 
-
-Instance('Blah(object)', 'blah1')
-
-while
-
-raise Instance('MyException', 'myexception1')
-
-will no longer assume MyException derives from Exception, this must be written/recorded explicitly:
-
-raise Instance('MyException(exceptions.Exception)', 'myexception1')
-
-There are two ways to fix this. The first, and most obvious, is to simply re-record the 
-traffic files, when this will happen automatically. If that isn't possible, the next best option is
-to modify them via the ModifyTraffic script. Paste the following onto your PATH somewhere
-
-#!/usr/bin/env python
-
-### migrate_traffic_from_3.20.py
-
-import sys
-
-lineIn = sys.argv[1]
-pos = lineIn.find("NewStyle")
-while pos != -1:
-    parts = lineIn[pos + 8:].split("'")
-    parts[1] = parts[1] + "(object)"
-    lineIn = lineIn[:pos] + "'".join(parts)
-    pos = lineIn.find("NewStyle")
-
-if lineIn.startswith("raise Instance"):
-    parts = lineIn.split("'")
-    if "(" not in parts[1]:
-        parts[1] += "(exceptions.Exception)"
-    lineIn = "'".join(parts)
-sys.stdout.write(lineIn)
-
-and then run
-
-texttest.py -s "traffic.ModifyTraffic types=RET script=migrate_traffic_from_3.20.py"
-
-(3) Python interception and command line/client-server interception cannot write to the same file
-=================================================================================================
-This is only an issue if you are using both these functionalities.
-
-TextTest will in future write python interception from CaptureMock to "pythonmocks.<app>" and other 
-interception to "externalmocks.<app>". There is no need to rename if you are only using one of these,
-as it will still find the "traffic.<app>" files for backwards compatibility. Files recorded in future
-will have the new names, however, so you may wish to rename for consistency.
-
-If you are using both, however, it will be necessary to separate this out via a simple script into 
-the two new files as appropriate.
-
-(4) Java Properties files and test_data_properties
-==================================================
-The ability to create and amalgamate specific properties files for Java programs seems to have been little used.
-In practice people seem to use system properties most of the time, and ordinary properties files can of course use
-the ordinary data file mechanism which is simpler than learning another format.
-
-For simplicity this functionality is therefore gone. Usage can be replaced by either "interpreter_options" files to
-provide properties via -D arguments to Java, or by simply adding the files via link_test_path. If you *really* miss
-this functionality, drop me a line and I'll think about restoring it.
 
 =========================================================
 CHANGES IN DEFAULT BEHAVIOUR (OR PROCEDURE)
 =========================================================
 
-(1) Default value of batch_recipients
-=====================================
-Previously TextTest has always sent batch emails to $USER unless this was explicitly disabled.
-As more and more people rely on the HTML reports alone and don't read the emails this was becoming
-a pain. So no "batch_receipients" entry now means no email.
+(1) Scripts that use batch session parameters
+=============================================
+There are several scripts which apply to batch mode data. These are
 
-(2) Default behaviour of "Save" and "Save As" in the dynamic GUI with versions
-==============================================================================
-Previously, the default operation of "Save" has been to save the results with the version specified when running.
-This has proved to be a bit unexpected in some cases, and hence the default behaviour is changed.
+batch.ArchiveRepository
+batch.CollectFiles (deprecated)
+batch.GenerateGraphs
+batch.GenerateSummaryPage
 
-"Save" will always overwrite the file it has compared with, no matter what. If it is a new file, it will be saved
- without version identifiers.
+All of these have had some way of referring to the batch session, usually as a script parameter (with different names for each). These are now removed. To supply the batch session for all of these, do it in the normal way, i.e. with the -b parameter. So for example
 
-"Save As" allows you to specify a version. The default version value is however "<existing version>" which will behave
-like "Save". Selecting a version explicitly should behave as it does today.
+texttest -s "batch.CollectFiles session=nightjob"
 
-(3) CaptureMock no longer produces trailing spaces
-==================================================
-This should be easy to just save, really a bugfix.
+will no longer work, and should now be done via
+
+texttest -s batch.CollectFiles -b nightjob
 =================================
 ---------------
 Button 'gtk-close' (Stock image 'gtk-close')
@@ -381,7 +273,7 @@ Button 'gtk-close' (Stock image 'gtk-close')
 
 'view tab' event created with arguments 'from 3.4'
 
-Current page changed in Notebook with tabs: from 3.20 , from 3.19 , from 3.18 , from 3.17 , from 3.16 , from 3.15 , from 3.14 , from 3.13 , from 3.12 , from 3.11 , from 3.10 , from 3.9 , from 3.8 , from 3.7 , from 3.6 , from 3.5 , from 3.4 , from 3.3 , from 3.1 , from 2.x
+Current page changed in Notebook with tabs: from 3.21 , from 3.20 , from 3.19 , from 3.18 , from 3.17 , from 3.16 , from 3.15 , from 3.14 , from 3.13 , from 3.12 , from 3.11 , from 3.10 , from 3.9 , from 3.8 , from 3.7 , from 3.6 , from 3.5 , from 3.4 , from 3.3 , from 3.1 , from 2.x
 Viewing page 'from 3.4'
 
 ========== GtkTextView ==========
@@ -483,27 +375,42 @@ System requirements (see Migration Notes):
 General GUI Enhancements:
     - File selection is now preserved when a new test is selected
 	Makes it easier to compare previews of different test results
+    - Window naming changed
+	Main aim is to put differentiating info at the start to aid finding in window managers
 Static GUI Enhancements:
     - Version information now shown when a single test/suite with extra versions selected
 	Previously hard to tell which was selected
+    - GUI testing for Swing - PyUseCase 3.6 replaces defunct JUseCase in application creation dialog
 Dynamic GUI Enhancements:
     - New option "<full version>" in "version to save" in Save As dialog
 	Basically save with the full version you ran with, as was default behaviour in TextTest 3.20
 	Particularly helpful when running multiple versions
     - Recomputed completed tests always reloads config file, even if other tests still running
 	Threading-related issues fixed.
+    - When a file-related row is selected in the status view, select equivalent files in the test file view
+	Note changes behaviour of "Save" in this situation
+    - Settings of $TEXTTEST_CHECKOUT and $TEXTTEST_CHECKOUT_NAME now listed in Run Info tab
+	Also made it easier for configurations to configure what appears there
 Framework Enhancements:
     - Added possibility to configure copying procedure for test data files
 	See docs for "copy_test_path_script".
     - Now support GUI testing on separate networks
 	Both virtual display and accessibility of usecase and UI map files fixed
 Batch Report Enhancements:
+    - If a date is used as the name, use that throughout instead of the actual date to identify the run
+    - Junit format report now assumes locale encoding instead of hardcoding UTF-8
+    - Junit format includes times when performance enabled
+    - HTML pages link all graphs at the top so they can be seen at once, if there is more than one graph on the page
+    - Made it easier for configurations to override how batch sessions are defined - single API function for it
+	Caused some backwards compatibility changes for scripts - see migration notes
 Grid Engine (LSF/SGE) enhancements/bug fixes:
     - Fixed stacktrace when normal polling cannot find a job, e.g. if SGE master goes down
     - Fixed stacktrace in slave when test names contain colons
     - Recomputing after a status update in SGE no longer duplicates progress information
     - Now handles hold state (hqw) correctly
+    - Fixed hang if slave gets an invalid test for any reason
 Bug Fixes:
+    - Fixed inconsistencies in dynamic GUI with test suite "all succeeded" status when tests are recomputed and then fail.
     - Fixed stacktrace trying to build piecharts when matplotlib not installed
     - Make sure options after positional arguments get treated as arguments to the new program
     - Allow linking of executable, which is done in the new rpm (thanks Michael Behrisch)
@@ -514,6 +421,7 @@ Bug Fixes:
     - Fixed occasional stacktraces when viewing files in tests exactly as the test in question completes
     - Tried to improve handling of errors from "ps" on POSIX systems
     - Fixed bug where invalid names of saved selections persist even after being changed
+    - Fixed stacktrace replacing text in files if the pattern matches a directory
 =================================
 ---------------
 Button 'gtk-close' (Stock image 'gtk-close')
@@ -595,7 +503,7 @@ Viewing table with 6 rows and 2 columns.
 '<b>You are using these installations:
 </b>'
 Viewing table with 3 rows and 2 columns.
-'Test Suite:' | '/carm/proj/texttest-tmp/geoff/dynamic_gui.09Jun140245.14502/texttest.gui/GUI/StaticGUI/Miscellaneous/ViewHelp/TargetApp'
+'Test Suite:' | '/carm/proj/texttest-tmp/geoff/dynamic_gui.01Jul143736.5780/texttest.gui/GUI/StaticGUI/Miscellaneous/ViewHelp/TargetApp'
 'TextTest:' | '/nfs/vm/texttest/geoff/Testing/TextTest'
 'Python:' | '/usr/local/tt-env/python2.6.current/bin/python'
 ---------------
