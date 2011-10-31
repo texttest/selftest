@@ -98,7 +98,7 @@ p17
 S'start'
 p18
 sb.""")
-->RET:raise Instance('error', 'error1')
+->RET:raise Instance('error(exceptions.IOError)', 'error1')
 <-PYT:time.sleep(1)
 <-PYT:socket.socket(2, 1)
 ->RET:Instance('_socketobject(object)', '_socketobject3')
@@ -143,7 +143,7 @@ p17
 S'start'
 p18
 sb.""")
-->RET:raise Instance('error', 'error2')
+->RET:raise Instance('error(exceptions.IOError)', 'error2')
 <-PYT:time.sleep(2)
 <-PYT:socket.socket(2, 1)
 ->RET:Instance('_socketobject(object)', '_socketobject4')
@@ -188,7 +188,7 @@ p17
 S'start'
 p18
 sb.""")
-->RET:raise Instance('error', 'error3')
+->RET:raise Instance('error(exceptions.IOError)', 'error3')
 <-PYT:time.sleep(4)
 <-PYT:socket.socket(2, 1)
 ->RET:Instance('_socketobject(object)', '_socketobject1')
@@ -233,7 +233,7 @@ p17
 S'start'
 p18
 sb.""")
-->RET:raise Instance('error', 'error4')
+->RET:raise Instance('error(exceptions.IOError)', 'error4')
 <-PYT:time.sleep(8)
 <-PYT:socket.socket(2, 1)
 ->RET:Instance('_socketobject(object)', '_socketobject1')
@@ -278,7 +278,7 @@ p17
 S'start'
 p18
 sb.""")
-->RET:raise Instance('error', 'error5')
+->RET:raise Instance('error(exceptions.IOError)', 'error5')
 <-PYT:time.sleep(16)
 <-PYT:socket.socket(2, 1)
 ->RET:Instance('_socketobject(object)', '_socketobject1')
@@ -323,7 +323,7 @@ p17
 S'start'
 p18
 sb.""")
-->RET:raise Instance('error', 'error6')
+->RET:raise Instance('error(exceptions.IOError)', 'error6')
 <-PYT:time.sleep(32)
 <-PYT:socket.socket(2, 1)
 ->RET:Instance('_socketobject(object)', '_socketobject1')
@@ -368,7 +368,7 @@ p17
 S'start'
 p18
 sb.""")
-->RET:raise Instance('error', 'error7')
+->RET:raise Instance('error(exceptions.IOError)', 'error7')
 <-PYT:time.sleep(64)
 <-PYT:socket.socket(2, 1)
 ->RET:Instance('_socketobject(object)', '_socketobject1')
@@ -413,7 +413,7 @@ p17
 S'start'
 p18
 sb.""")
-->RET:raise Instance('error', 'error8')
+->RET:raise Instance('error(exceptions.IOError)', 'error8')
 <-PYT:time.sleep(128)
 <-PYT:socket.socket(2, 1)
 ->RET:Instance('_socketobject(object)', '_socketobject1')
@@ -458,7 +458,7 @@ p17
 S'start'
 p18
 sb.""")
-->RET:raise Instance('error', 'error9')
+->RET:raise Instance('error(exceptions.IOError)', 'error9')
 <-PYT:time.sleep(256)
 <-PYT:error9.__str__()
 ->RET:'Connection reset by peer'
