@@ -1,5 +1,5 @@
 # We run with command-line PyUseCase (no instrumentation assumed)
-interpreter:pyusecase -l config -i gtk
+interpreter:storytext -l config -i gtk
 
 # Settings for creation of test cases
 use_case_record_mode:GUI
@@ -72,11 +72,11 @@ test_data_ignore:gtk_recently_used
 test_data_ignore:xdg_config_home
 
 link_test_path:usecase_for_targetapp
-link_test_path:usecases
+link_test_path:storytext
 
 [test_data_environment]
 usecase_for_targetapp:USECASE_FAKE_REPLAY_SCRIPT
-usecases:USECASE_HOME
+storytext:STORYTEXT_HOME
 
 [collate_file]
 targetConfig:TargetApp/config.*

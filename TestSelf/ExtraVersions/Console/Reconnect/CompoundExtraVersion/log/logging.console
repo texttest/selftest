@@ -26,10 +26,10 @@ handlers=stdout
 qualname=standard log
 level=INFO
 
-# ======= Section for usecase replay log ======
-[logger_usecase replay log]
+# ======= Section for storytext replay log ======
+[logger_storytext replay log]
 handlers=stdout
-qualname=usecase replay log
+qualname=storytext replay log
 level=INFO
 
 # ======= Section for kill processes ======
@@ -591,24 +591,24 @@ formatter=debug
 args=(os.devnull, 'a')
 #args=('guimap.texttest', 'a')
 
-# ======= Section for usecase record ======
-[logger_usecase record]
-handlers=usecase record
-qualname=usecase record
+# ======= Section for storytext record ======
+[logger_storytext record]
+handlers=storytext record
+qualname=storytext record
 #level=DEBUG
 
-[handler_usecase record]
+[handler_storytext record]
 class=FileHandler
 formatter=debug
 args=(os.devnull, 'a')
-#args=('usecaserecord.texttest', 'a')
+#args=('storytextrecord.texttest', 'a')
 
 # ====== Cruft that python logging module needs ======
 [loggers]
-keys=root,standard log,usecase replay log,kill processes,Action Runner,Activator,Check For Bugs,Collate Files,Environment Creator,File View GUI,FileComparison,Filter Actions,Find Applications,GUI notebook,GenerateWebPages,Idle Handlers,Interactive Actions,JUnit Report Writer,Mail Sender,Menu Bar,MultiEntryDictionary,Observable,Prepare Writedir,Progress Monitor,Queue System Submit,Reconnection,Run Dependent Text,Save Repository,Select Tests,Slave Server,Test Column GUI,Test Tree,TestComparison,TestSelectionFilter,Unique Names,application,batch collect,catalogues,check for crashes,gui log,locks,makeperformance,option finder,read environment,run test,test objects,virtual display,TreeModelIndexer,TreeViewDescriber,gui map,usecase record
+keys=root,standard log,storytext replay log,kill processes,Action Runner,Activator,Check For Bugs,Collate Files,Environment Creator,File View GUI,FileComparison,Filter Actions,Find Applications,GUI notebook,GenerateWebPages,Idle Handlers,Interactive Actions,JUnit Report Writer,Mail Sender,Menu Bar,MultiEntryDictionary,Observable,Prepare Writedir,Progress Monitor,Queue System Submit,Reconnection,Run Dependent Text,Save Repository,Select Tests,Slave Server,Test Column GUI,Test Tree,TestComparison,TestSelectionFilter,Unique Names,application,batch collect,catalogues,check for crashes,gui log,locks,makeperformance,option finder,read environment,run test,test objects,virtual display,TreeModelIndexer,TreeViewDescriber,gui map,storytext record
 
 [handlers]
-keys=root,Action Runner,Activator,Check For Bugs,Collate Files,Environment Creator,File View GUI,FileComparison,Filter Actions,Find Applications,GUI notebook,GenerateWebPages,Idle Handlers,Interactive Actions,JUnit Report Writer,Mail Sender,Menu Bar,MultiEntryDictionary,Observable,Prepare Writedir,Progress Monitor,Queue System Submit,Reconnection,Run Dependent Text,Save Repository,Select Tests,Slave Server,Test Column GUI,Test Tree,TestComparison,TestSelectionFilter,TreeModelIndexer,TreeViewDescriber,Unique Names,application,batch collect,catalogues,check for crashes,gui log,gui map,locks,makeperformance,option finder,read environment,run test,stdout,test objects,usecase record,virtual display
+keys=root,Action Runner,Activator,Check For Bugs,Collate Files,Environment Creator,File View GUI,FileComparison,Filter Actions,Find Applications,GUI notebook,GenerateWebPages,Idle Handlers,Interactive Actions,JUnit Report Writer,Mail Sender,Menu Bar,MultiEntryDictionary,Observable,Prepare Writedir,Progress Monitor,Queue System Submit,Reconnection,Run Dependent Text,Save Repository,Select Tests,Slave Server,Test Column GUI,Test Tree,TestComparison,TestSelectionFilter,TreeModelIndexer,TreeViewDescriber,Unique Names,application,batch collect,catalogues,check for crashes,gui log,gui map,locks,makeperformance,option finder,read environment,run test,stdout,test objects,storytext record,virtual display
 
 [formatters]
 keys=timed,debug

@@ -1,6 +1,6 @@
 <-PYT:import matplotlib
 <-PYT:matplotlib.__version__
-->RET:'0.99.1.1'
+->RET:'0.99.3'
 <-PYT:matplotlib.use('Agg')
 <-PYT:import pylab
 <-PYT:pylab.clf()
@@ -46,16 +46,14 @@
 <-PYT:pylab.setp(silent_list2, 'rotation', 90, fontsize=7)
 ->RET:[None, None, None, None, None, None, None, None, None, None, None, None]
 <-PYT:axessubplot1.get_ylim()
-->RET:(-2.0, 14.0)
-<-PYT:axessubplot1.set_ylim(ymin=0)
-->RET:(0, 14.0)
+->RET:(0.0, 14.0)
 <-PYT:axessubplot1.autoscale_view(scaley=False, tight=True)
 <-PYT:axessubplot1.legend([rectangle1, rectangle2, rectangle3], ('Not completed', 'Failed tests', 'Succeeded tests'), 'best', shadow=False)
 ->RET:Instance('Legend(Artist, object)', 'legend1')
 <-PYT:legend1.get_frame()
 ->RET:Instance('FancyBboxPatch(Patch, Artist, object)', 'fancybboxpatch1')
 <-PYT:fancybboxpatch1.set_alpha(0.5)
-<-PYT:figure1.savefig('/home/geoff/.texttest/tmp/texttest.30Oct195120.12238/texttest/TestSelf/BatchTests/HistoricalReport/ExtraVersions/report/hello/images/test_normal.png', dpi=100)
+<-PYT:figure1.savefig('/nfs/vm/texttest-tmp/geoff/texttest.01Nov114754.11550/texttest/TestSelf/BatchTests/HistoricalReport/ExtraVersions/report/hello/images/test_normal.png', dpi=100)
 <-PYT:pylab.clf()
 <-PYT:pylab.figure(1)
 ->RET:Instance('Figure(Artist, object)', 'figure1')
@@ -110,4 +108,4 @@
 <-PYT:legend2.get_frame()
 ->RET:Instance('FancyBboxPatch(Patch, Artist, object)', 'fancybboxpatch2')
 <-PYT:fancybboxpatch2.set_alpha(0.5)
-<-PYT:figure1.savefig('/home/geoff/.texttest/tmp/texttest.30Oct195120.12238/texttest/TestSelf/BatchTests/HistoricalReport/ExtraVersions/report/hello/images/test_normal_all_Jan2006.png', dpi=100)
+<-PYT:figure1.savefig('/nfs/vm/texttest-tmp/geoff/texttest.01Nov114754.11550/texttest/TestSelf/BatchTests/HistoricalReport/ExtraVersions/report/hello/images/test_normal_all_Jan2006.png', dpi=100)

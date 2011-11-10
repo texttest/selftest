@@ -1,3 +1,3 @@
 #!/usr/bin/env python
 import os
-print 'Hello', os.getenv("USECASE_HOME")
+print 'Hello', os.getenv("STORYTEXT_HOME")
