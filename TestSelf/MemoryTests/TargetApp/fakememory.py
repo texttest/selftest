@@ -11,4 +11,3 @@ writeMemory(47.8)
 writeMemory(42.3)
 writeMemory(38.4)
 print "Improving memory usage now!" # make sure we don't fall over here...
-writeMemory(800.0, "kb")
