@@ -1,5 +1,5 @@
 killed=1
-01Oct2007
+15Dec2011
 SLEEP killing3.cpulimit : 1 tests : 1 killed
 
 Summary of all Unsuccessful tests follows...
@@ -14,9 +14,15 @@ Details of all Unsuccessful tests follows...
 
 Detailed information for the tests that were terminated before completion follows...
 --------------------------------------------------------
-TEST were terminated before completion (CPULIMIT) on forestville : SLEEP.killing3.cpulimit test-case Basic (under Basic)
+TEST were terminated before completion (CPULIMIT) on kilimanjaro : SLEEP.killing3.cpulimit test-case Basic (under Basic)
 Test exceeded maximum cpu time allowed
------------------- Differences in output --------------------
+---------- Differences in errors ----------
+0a1,4
+> Traceback (most recent call last):
+>   File "/carm/proj/texttest-tmp/geoff/dynamic_gui.15Dec120236.858/texttest.sge/QueueSystems/Limits/Reporting/CpuLimit/TargetApp/busywait.py", line 9, in ?
+>     if time.clock() >= fullTime:
+> KeyboardInterrupt
+---------- Differences in output ----------
 2d1
 < Done.
 
