@@ -37,7 +37,7 @@ Button 'Filter' (Stock image 'gtk-find', accelerator 'Ctrl+F', tooltip 'filter t
 Button 'Reset Tab' (tooltip 'Reset all the settings in the current tab to their default values')
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 18Nov15:58:26.' , Image 'throbber_inactive.png'
+'TextTest started at 15Dec14:41:21.' , Image 'throbber_inactive.png'
 ------------------------------------------------------------------------
 
 Changing GUI status to: 'Reading tests ...'
@@ -82,7 +82,7 @@ Updated : Test Tree with columns: Tests: 0/11 selected
 ->       S01 (black/grey90)
 Updated drop-down list in 'Test-file to search' Text entry (set to 'output') (drop-down list containing ['output'])
 
-Changing GUI status to: 'Reading tests completed at 18Nov15:58:27.'
+Changing GUI status to: 'Reading tests completed at 15Dec14:41:22.'
 
 Expected application event 'all tests to be read' occurred, proceeding.
 
@@ -208,7 +208,7 @@ Viewing table with 6 rows and 2 columns.
 '<b>You are using these installations:
 </b>'
 Viewing table with 3 rows and 2 columns.
-'Test Suite:' | '/carm/proj/texttest-tmp/geoff/texttest.gui.18Nov155809.13172/texttest.gui/GUI/StaticGUI/Miscellaneous/ViewHelp/TargetApp'
+'Test Suite:' | '/carm/proj/texttest-tmp/geoff/texttest.gui.15Dec144108.14327/texttest.gui/GUI/StaticGUI/Miscellaneous/ViewHelp/TargetApp'
 'TextTest:' | '/nfs/vm/texttest/geoff/Testing/TextTest'
 'Python:' | '/usr/local/tt-env/python2.6.current/bin/python'
 ---------------
@@ -240,8 +240,8 @@ Changing GUI status to: ''
 ---------- Dialog 'TextTest Migration Notes' ----------
 Default widget is 'gtk-close'
 
-Showing Notebook with tabs: from 3.21 , from 3.20 , from 3.19 , from 3.18 , from 3.17 , from 3.16 , from 3.15 , from 3.14 , from 3.13 , from 3.12 , from 3.11 , from 3.10 , from 3.9 , from 3.8 , from 3.7 , from 3.6 , from 3.5 , from 3.4 , from 3.3 , from 3.1 , from 2.x
-Viewing page 'from 3.21'
+Showing Notebook with tabs: from 3.22 , from 3.21 , from 3.20 , from 3.19 , from 3.18 , from 3.17 , from 3.16 , from 3.15 , from 3.14 , from 3.13 , from 3.12 , from 3.11 , from 3.10 , from 3.9 , from 3.8 , from 3.7 , from 3.6 , from 3.5 , from 3.4 , from 3.3 , from 3.1 , from 2.x
+Viewing page 'from 3.22'
 
 ========== GtkTextView ==========
 
@@ -250,32 +250,10 @@ Viewing page 'from 3.21'
 CHANGES IN DEFAULT BEHAVIOUR (OR PROCEDURE)
 =========================================================
 
-(1) Scripts that use batch session parameters
+(1) Known bugs no longer "fail the whole run"
 =============================================
-There are several scripts which apply to batch mode data. These are
-
-batch.ArchiveRepository
-batch.CollectFiles (deprecated)
-batch.GenerateGraphs
-batch.GenerateSummaryPage
-
-All of these have had some way of referring to the batch session, usually as a script parameter (with different names for each). These are now removed. To supply the batch session for all of these, do it in the normal way, i.e. with the -b parameter. So for example
-
-texttest -s "batch.CollectFiles session=nightjob"
-
-will no longer work, and should now be done via
-
-texttest -s batch.CollectFiles -b nightjob
-
-(2) Default accelerator for "Remove Files" removed
-==================================================
-Up to 3.21, Ctrl+Delete has removed files, if any were selected, and tests if they were not. This was deemed confusing and had the side effect of preventing removal of tests if any files were selected.
-
-Ctrl+Delete will therefore now always try to remove the tests. This can be done also when files are selected. There is no longer any default accelerator for removing files, it has to be done with the popup menu.
-
-(3) performance_variation_% and performance_test_minimum when using SGE parallel environments
-=============================================================================================
-In the distant past it was decided that when a test ran in several processes (using SGE) performance measurement was less reliable and hence it was a good idea to multiply the limits by the number of processes run before comparing. This now seems arbitrary and confusing, so it is removed. It's obviously easy to recreate this for a specific test suite if desired.
+TextTest returns an exit code of 1 if any tests fail. It no longer does this for "known bugs": it reckons they
+are under control and not a reason to fail things.
 =================================
 ---------------
 Button 'gtk-close' (Stock image 'gtk-close')
@@ -283,7 +261,7 @@ Button 'gtk-close' (Stock image 'gtk-close')
 
 'view tab' event created with arguments 'from 3.4'
 
-Current page changed in Notebook with tabs: from 3.21 , from 3.20 , from 3.19 , from 3.18 , from 3.17 , from 3.16 , from 3.15 , from 3.14 , from 3.13 , from 3.12 , from 3.11 , from 3.10 , from 3.9 , from 3.8 , from 3.7 , from 3.6 , from 3.5 , from 3.4 , from 3.3 , from 3.1 , from 2.x
+Current page changed in Notebook with tabs: from 3.22 , from 3.21 , from 3.20 , from 3.19 , from 3.18 , from 3.17 , from 3.16 , from 3.15 , from 3.14 , from 3.13 , from 3.12 , from 3.11 , from 3.10 , from 3.9 , from 3.8 , from 3.7 , from 3.6 , from 3.5 , from 3.4 , from 3.3 , from 3.1 , from 2.x
 Viewing page 'from 3.4'
 
 ========== GtkTextView ==========
@@ -384,11 +362,21 @@ Viewing page 'trunk'
 Installation:
 General GUI Enhancements:
 Static GUI Enhancements:
+    - Record dialog now allows recording on a different machine via SSH
 Dynamic GUI Enhancements:
 Framework Enhancements:
+    - "Known bugs" no longer cause TextTest to exit with exit code 1
+	It's reckoned they are under control and hence not a reason to fail anything, e.g. a Jenkins build.
+    - "performance_logfile_extractor" format is more general
+	Can now use regular expression groups to specify any format at all
 Batch Report Enhancements:
+    - Now allow different colours for performance and memory changes in HTML report
+	Use e.g. larger_bg, faster_bg in [historical_report_colours]
 Grid Engine (LSF/SGE) enhancements/bug fixes:
 Bug Fixes:
+    - "gui_entry_override" now works with spin buttons (e.g. "times_to_run", for the Running tab)
+    - Fixed infinite recursion in static GUI if "interpreter" or "executable" took a script as an argument
+    - Now display correct error message if a proxy job cannot be submitted to SGE
 =================================
 ---------------
 Button 'gtk-close' (Stock image 'gtk-close')
@@ -470,7 +458,7 @@ Viewing table with 6 rows and 2 columns.
 '<b>You are using these installations:
 </b>'
 Viewing table with 3 rows and 2 columns.
-'Test Suite:' | '/carm/proj/texttest-tmp/geoff/texttest.gui.18Nov155809.13172/texttest.gui/GUI/StaticGUI/Miscellaneous/ViewHelp/TargetApp'
+'Test Suite:' | '/carm/proj/texttest-tmp/geoff/texttest.gui.15Dec144108.14327/texttest.gui/GUI/StaticGUI/Miscellaneous/ViewHelp/TargetApp'
 'TextTest:' | '/nfs/vm/texttest/geoff/Testing/TextTest'
 'Python:' | '/usr/local/tt-env/python2.6.current/bin/python'
 ---------------
