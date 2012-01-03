@@ -42,7 +42,7 @@ default_filter_file|[]|Filter file to use by default, generally only useful for 
 default_interface|static_gui|Which interface to start if none of -con, -g and -gx are provided
 default_machine|localhost|Default machine to run tests on
 default_texttest_tmp|$TEXTTEST_PERSONAL_CONFIG/tmp|Default value for $TEXTTEST_TMP, if it is not set
-definition_file_stems|{'default': [], 'regenerate': ['usecase'], 'builtin': ['config', 'environment', 'testsuite', 'options', 'interpreter_options', 'input', 'knownbugs']}|files to be shown as definition files by the static GUI
+definition_file_stems|{'default': [], 'regenerate': ['usecase'], 'builtin': ['config', 'environment', 'testsuite', 'options', 'input', 'knownbugs']}|files to be shown as definition files by the static GUI
 diff_program|{'default': 'tkdiff'}|External program to use for graphical file comparison
 discard_file|[]|List of generated result files which should not be compared
 executable|None|Full path to the System Under Test
@@ -71,7 +71,8 @@ historical_report_subpages|{'default': ['Last six runs']}|Names of subselection 
 home_operating_system|any|Which OS the test results were originally collected on
 import_config_file|[]|Extra config files to use
 interactive_action_module|default_gui|Module to search for InteractiveActions for the GUI
-interpreter||Program to use as interpreter for the SUT
+interpreter||Single program to use as interpreter for the SUT
+interpreters|OrderedDict()|Programs to use, in order, as interpreters for the SUT
 kill_command|taskkill /F /T /PID|Kill command to use on non-posix machines
 kill_timeout|0.0|Number of (wall clock) seconds to wait before killing the test
 lines_of_text_difference|30|How many lines to present in textual previews of file diffs
