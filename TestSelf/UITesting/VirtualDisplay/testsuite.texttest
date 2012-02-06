@@ -34,6 +34,10 @@ ExtraVersion
 # If the virtual server crashes, we should restart it before running new tests
 VirtualServerCrashes
 
+# If the virtual server crashes between two test processes, we should also restart it.
+# 
+ServerCrashBetweenProcesses
+
 # See what happens if Xvfb hits a lock file and refuses to start
 VirtualServerHitsLock
 
