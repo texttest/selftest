@@ -10,6 +10,11 @@ ViewInStaticGUI
 # Check that trying to save a test with a known bug generates a warning, but lets us do it if we persist.
 SaveKnownBug
 
+# Check that trying to save a test with a known bug generates a warning, but lets us do it if we persist.
+# Also that the known bug status is preserved after the save, given the trigger success flag is set.
+# 
+SaveKnownBugTriggerSuccess
+
 # If we save some files this can cause the number of differing files to drop to 1. We should handle this 
 # and trigger bugs if appropriate.
 PartialSaveTriggersBug
