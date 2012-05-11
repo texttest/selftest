@@ -1,6 +1,12 @@
 # Test for GUI
 ReportBug
 
+# Check we can report a bug on this run and see it immediately
+ReportBugThisRun
+
+# Check that the "ignore other errors" gets set by default when doing this
+ReportBugThisRunMultiDiffs
+
 # Make sure we can change the bug colour by changing the "failure" entry
 ChangeBugColour
 
@@ -12,7 +18,6 @@ SaveKnownBug
 
 # Check that trying to save a test with a known bug generates a warning, but lets us do it if we persist.
 # Also that the known bug status is preserved after the save, given the trigger success flag is set.
-# 
 SaveKnownBugTriggerSuccess
 
 # If we save some files this can cause the number of differing files to drop to 1. We should handle this 
