@@ -7,9 +7,6 @@ ReportBugThisRun
 # Check that the "ignore other errors" gets set by default when doing this
 ReportBugThisRunMultiDiffs
 
-# Check we can report bugs on many tests at once
-ReportBugThisRunMultiTests
-
 # Make sure we can change the bug colour by changing the "failure" entry
 ChangeBugColour
 
@@ -50,6 +47,10 @@ DestroyDialog
 
 # Check we can rerun tests if they run into known bugs, and that they are reported nicely if they subseuqently work
 SucceedAfterRerun
+
+# Tests that require multiple target tests
+# 
+MultipleTests
 
 # Tests that reconnect
 Reconnect
