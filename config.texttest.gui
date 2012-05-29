@@ -10,6 +10,8 @@ targetConfig:{INTERNAL writedir}{REPLACE <test write dir>}
 # PyGTK 2.10 bug, can't be bothered to work round it in the code as it's already fixed
 errors:IA__g_object_remove_toggle_ref: could{LINES 2}
 errors:^$
+# Common problem with Xvfb
+errors:RANDR
 # Don't show the entire path!
 dynamic_gui_log:^PATH=.*{REPLACE PATH=<path>}
 dynamic_gui_log:{INTERNAL writedir}{REPLACE <test write dir>}
