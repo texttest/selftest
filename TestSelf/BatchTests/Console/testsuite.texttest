@@ -61,6 +61,9 @@ RemovePreviousDirs
 # Don't delete things with -keeptmp
 KeeptmpPreviousDirs
 
+# Use -keeptmp 0 to delete our own temp files in batch mode, and not clean others
+RemoveTmpDirsAsNormal
+
 # We might not be able to clean up previous dirs if they were run by someone else
 PreviousDirNoPermission
 
