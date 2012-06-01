@@ -2,4 +2,5 @@
 BadServerAddress
 
 # Check slave handles master dropping connection without leaking lots of stuff
-MasterResetsConnection
+# Commented as does not work on RHEL6 - socket module is imported on startup and cannot be intercepted any more
+#MasterResetsConnection
