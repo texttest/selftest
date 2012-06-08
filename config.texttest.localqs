@@ -1,0 +1,8 @@
+base_version:queuesystem
+
+[run_dependent_text]
+pythonmocks:env=\{[^}]*{REPLACE env=<something>}
+pythonmocks:\'[^ \']*/texttest[\.py]*\'{REPLACE <path_to_texttest>}
+pythonmocks:0x[0-9a-f]*{REPLACE <pointer>}
+output:[^ ]*/texttest[\.py]* {REPLACE <path_to_texttest> }
+output:-servaddr [^ ]*{REPLACE -servaddr <address>}
