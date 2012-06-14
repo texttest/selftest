@@ -12,6 +12,8 @@ errors:IA__g_object_remove_toggle_ref: could{LINES 2}
 errors:^$
 # Common problem with Xvfb
 errors:RANDR
+# Written to a global location in GTK < 2.20, can cause clashes if tests run in parallel
+errors:recently-used.xbel{LINES 2}
 # Don't show the entire path!
 dynamic_gui_log:^PATH=.*{REPLACE PATH=<path>}
 dynamic_gui_log:{INTERNAL writedir}{REPLACE <test write dir>}
