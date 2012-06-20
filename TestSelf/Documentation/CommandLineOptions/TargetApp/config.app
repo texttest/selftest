@@ -3,6 +3,8 @@ import_config_file:capturemock_config
 
 config_module:queuesystem
 
+queue_system_module:SGE
+
 slow_motion_replay_speed:3
 create_catalogues:true
 partial_copy_test_path:nonsense
