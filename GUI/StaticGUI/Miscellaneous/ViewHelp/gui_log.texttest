@@ -37,7 +37,7 @@ Button 'Filter' (Stock image 'gtk-find', accelerator 'Ctrl+F', tooltip 'filter t
 Button 'Reset Tab' (tooltip 'Reset all the settings in the current tab to their default values')
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 21Jun10:35:22.' , Image 'throbber_inactive.png'
+'TextTest started at 10Jul11:06:36.' , Image 'throbber_inactive.png'
 ------------------------------------------------------------------------
 
 Changing GUI status to: 'Reading tests ...'
@@ -82,7 +82,7 @@ Updated : Test Tree with columns: Tests: 0/11 selected
 ->       S01 (black/grey90)
 Updated drop-down list in 'Test-file to search' Text entry (set to 'output') (drop-down list containing ['output'])
 
-Changing GUI status to: 'Reading tests completed at 21Jun10:35:22.'
+Changing GUI status to: 'Reading tests completed at 10Jul11:06:37.'
 
 Expected application event 'all tests to be read' occurred, proceeding.
 
@@ -208,7 +208,7 @@ Viewing table with 6 rows and 2 columns.
 '<b>You are using these installations:
 </b>'
 Viewing table with 3 rows and 2 columns.
-'Test Suite:' | '/carm/proj/texttest-tmp/geoff/texttest.gui.21Jun103502.15958/texttest.gui/GUI/StaticGUI/Miscellaneous/ViewHelp/TargetApp'
+'Test Suite:' | '/carm/proj/texttest-tmp/geoff/texttest.gui.10Jul110628.653/texttest.gui/GUI/StaticGUI/Miscellaneous/ViewHelp/TargetApp'
 'TextTest:' | '/users/geoff/work/master/Testing/TextTest'
 'Python:' | '/usr/local/tt-env/python2.6.current/bin/python'
 ---------------
@@ -240,8 +240,8 @@ Changing GUI status to: ''
 ---------- Dialog 'TextTest Migration Notes' ----------
 Default widget is 'gtk-close'
 
-Showing Notebook with tabs: from 3.22 , from 3.21 , from 3.20 , from 3.19 , from 3.18 , from 3.17 , from 3.16 , from 3.15 , from 3.14 , from 3.13 , from 3.12 , from 3.11 , from 3.10 , from 3.9 , from 3.8 , from 3.7 , from 3.6 , from 3.5 , from 3.4 , from 3.3 , from 3.1 , from 2.x
-Viewing page 'from 3.22'
+Showing Notebook with tabs: from 3.23 , from 3.22 , from 3.21 , from 3.20 , from 3.19 , from 3.18 , from 3.17 , from 3.16 , from 3.15 , from 3.14 , from 3.13 , from 3.12 , from 3.11 , from 3.10 , from 3.9 , from 3.8 , from 3.7 , from 3.6 , from 3.5 , from 3.4 , from 3.3 , from 3.1 , from 2.x
+Viewing page 'from 3.23'
 
 ========== GtkTextView ==========
 
@@ -250,42 +250,16 @@ Viewing page 'from 3.22'
 CHANGES IN DEFAULT BEHAVIOUR (OR PROCEDURE)
 =========================================================
 
-(1) If no "config_module" is specified, TextTest will now run as many tests simultaneously as the local machine has CPUs
-========================================================================================================================
-If you want to run one at a time, set config_module:default explicitly in your config file. If you want to change the
-number of jobs to run at once, set e.g. queue_system_max_capacity:4.
+(1) run_dependent_text with sections will not filter anything if the end marker is never found
+==============================================================================================
+If you have a run_dependent_text filter of the form
 
-(2) "queue_system_module" now defaults to "local"
-=================================================
-If you use SGE you will now have to set it explicitly to "SGE", which used to be the default.
+[run_dependent_text]
+stdout:text1{->}text2
+[end]
 
-(3) "remote_shell_program" now defaults to "ssh"
-================================================
-"rsh", the old default, is dying.
-
-(4) Known bugs no longer "fail the whole run"
-=============================================
-TextTest returns an exit code of 1 if any tests fail. It no longer does this for "known bugs": it reckons they
-are under control and not a reason to fail things.
-
-(5) copy_test_path_merge on files now appends them to each other
-================================================================
-Previously it was just an alias for copy_test_path, only behaving differently with directories. See documentation for
-more details.
-
-(6) Requesting self-diagnostics in grid engine slave processes requires a separate flag
-=======================================================================================
-When running tests via a grid engine, in the past "-x" has enabled self-diagnostics in both master and slave processes. This was 
-reckoned unwieldy in some cases, as enabling diagnostics in the slaves can create a very large number of directories. So there is
-now a separate flag "-xs" if you want slave diagnostics - "-x" will only request diagnostics from the master process.
-
-(7) "Replace Text" In Files now handles multiline input and output.
-===================================================================
-For those of you who like to migrate your saved results in predictable ways, its now possible to do so 
-with multiple line chunks of text. Simple use the updated dialog where you'll notice the text fields 
-have got bigger, or provide a string including "\n" to the "old" argument to "default.ReplaceText" 
-if doing it from the command line. Note that regular expressions are supported in this case, for example two lines
-with regular expressions imply searching for a line matching the first expression followed by a line matching the second.
+and the file you are filtering contains text1 but not text2, nothing will be filtered any more.
+In TextTest 3.23 and earlier, the whole file from the text1 marker onwards would be removed.
 =================================
 ---------------
 Stock Button 'gtk-close'
@@ -293,7 +267,7 @@ Stock Button 'gtk-close'
 
 'view tab' event created with arguments 'from 3.4'
 
-Current page changed in Notebook with tabs: from 3.22 , from 3.21 , from 3.20 , from 3.19 , from 3.18 , from 3.17 , from 3.16 , from 3.15 , from 3.14 , from 3.13 , from 3.12 , from 3.11 , from 3.10 , from 3.9 , from 3.8 , from 3.7 , from 3.6 , from 3.5 , from 3.4 , from 3.3 , from 3.1 , from 2.x
+Current page changed in Notebook with tabs: from 3.23 , from 3.22 , from 3.21 , from 3.20 , from 3.19 , from 3.18 , from 3.17 , from 3.16 , from 3.15 , from 3.14 , from 3.13 , from 3.12 , from 3.11 , from 3.10 , from 3.9 , from 3.8 , from 3.7 , from 3.6 , from 3.5 , from 3.4 , from 3.3 , from 3.1 , from 2.x
 Viewing page 'from 3.4'
 
 ========== GtkTextView ==========
@@ -396,6 +370,8 @@ General GUI Enhancements:
 Static GUI Enhancements:
 Dynamic GUI Enhancements:
 Framework Enhancements:
+    - run_dependent_text now does not apply the filter in the case where the end marker is never found for a section filtering
+	See migration notes for details
 Batch Report Enhancements:
 Grid Engine (LSF/SGE) enhancements/bug fixes:
 Bug Fixes:
@@ -480,7 +456,7 @@ Viewing table with 6 rows and 2 columns.
 '<b>You are using these installations:
 </b>'
 Viewing table with 3 rows and 2 columns.
-'Test Suite:' | '/carm/proj/texttest-tmp/geoff/texttest.gui.21Jun103502.15958/texttest.gui/GUI/StaticGUI/Miscellaneous/ViewHelp/TargetApp'
+'Test Suite:' | '/carm/proj/texttest-tmp/geoff/texttest.gui.10Jul110628.653/texttest.gui/GUI/StaticGUI/Miscellaneous/ViewHelp/TargetApp'
 'TextTest:' | '/users/geoff/work/master/Testing/TextTest'
 'Python:' | '/usr/local/tt-env/python2.6.current/bin/python'
 ---------------
