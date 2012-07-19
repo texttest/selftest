@@ -1,6 +1,9 @@
 # Make sure we aren't reliant on rsh for things to work, if we use localhost, just start things locally
 DisplayOnLocalHost
 
+# Have 2 virtual servers running, for example when running multiple GUIs simultaneously
+MultipleServers
+
 # Check we can connect to and run an Xvfb server...
 RemoteDisplay
 
@@ -35,7 +38,6 @@ ExtraVersion
 VirtualServerCrashes
 
 # If the virtual server crashes between two test processes, we should also restart it.
-# 
 ServerCrashBetweenProcesses
 
 # See what happens if Xvfb hits a lock file and refuses to start
