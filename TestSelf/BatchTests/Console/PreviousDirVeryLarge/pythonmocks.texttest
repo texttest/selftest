@@ -5,21 +5,49 @@
 ->RET:(220, 'khwai.got.jeppesensystems.com ESMTP Sendmail 8.13.8/8.13.8; Tue, 9 Feb 2010 15:20:28 +0100')
 <-PYT:smtp1.sendmail('geoff@localhost', ['tom', 'dick', 'harry'], '''From: geoff@localhost
 To: tom,dick,harry
-Subject: 09Feb2010 HELLO batch : 1 tests : 1 FAILED
+Subject: 09Aug2012 HELLO batch : 2 tests : 2 FAILED
+
+HELLO batch : 1 tests : 1 FAILED
+HELLO batch.copy_1 : 1 tests : 1 FAILED
 
 Summary of all Unsuccessful tests follows...
 ---------------------------------------------------------------------------------
+HELLO batch : 1 tests : 1 FAILED
+
 The following tests FAILED : 
 In HELLO.batch test-suite TargetApp:
   - HELLO.batch test-case BothDiff : errors different(+)
 
 
+HELLO batch.copy_1 : 1 tests : 1 FAILED
+
+The following tests FAILED : 
+In HELLO.batch.copy_1 test-suite TargetApp:
+  - HELLO.batch.copy_1 test-case BothDiff : errors different(+)
+
+
 Details of all Unsuccessful tests follows...
 ---------------------------------------------------------------------------------
+HELLO batch : 1 tests : 1 FAILED
+
 
 Detailed information for the tests that FAILED follows...
 --------------------------------------------------------
-TEST FAILED on khwai : HELLO.batch test-case BothDiff (under BothDiff)
+TEST FAILED on tabora : HELLO.batch test-case BothDiff (under BothDiff)
+---------- Differences in errors ----------
+0a1
+> Error text
+---------- Differences in output ----------
+0a1
+> Hello World!
+
+---------------------------------------------------------------------------------
+HELLO batch.copy_1 : 1 tests : 1 FAILED
+
+
+Detailed information for the tests that FAILED follows...
+--------------------------------------------------------
+TEST FAILED on tabora : HELLO.batch.copy_1 test-case BothDiff (under BothDiff)
 ---------- Differences in errors ----------
 0a1
 > Error text
