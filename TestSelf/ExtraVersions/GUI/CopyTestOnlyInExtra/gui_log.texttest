@@ -37,7 +37,7 @@ Button 'Filter' (Stock image 'gtk-find', accelerator 'Ctrl+F', tooltip 'filter t
 Button 'Reset Tab' (tooltip 'Reset all the settings in the current tab to their default values')
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 31May16:52:31.' , Image 'throbber_inactive.png'
+'TextTest started at 17Aug11:02:02.' , Image 'throbber_inactive.png'
 --------------------------------------------------------------------------
 
 Changing GUI status to: 'Reading tests ...'
@@ -62,7 +62,7 @@ Updated : Test Tree with columns: Tests: 0/6 selected, 0/4 distinct
 ->   Extra2 (black/grey90)
 Updated drop-down list in 'Test-file to search' Text entry (set to 'errors') (drop-down list containing ['errors', 'output'])
 
-Changing GUI status to: 'Reading tests completed at 31May16:52:32.'
+Changing GUI status to: 'Reading tests completed at 17Aug11:02:02.'
 
 Expected application event 'all tests to be read' occurred, proceeding.
 
@@ -229,26 +229,42 @@ Base
 
 'paste tests from clipboard' event created with arguments ''
 
----------- Dialog 'TextTest Error' ----------
-Default widget is 'gtk-ok'
-Stock image 'gtk-dialog-error' , ========== GtkTextView ==========
-Cannot paste test there, as the copied test and currently selected test have no application/version in common
-=================================
----------------
-Stock Button 'gtk-ok'
----------------------------------------------
+Updated : Test Tree with columns: Tests: 1/10 selected, version <default>
+-> TargetApp (hello) (black/grey90,bold)
+->   Common_copy (black/grey90)
+->   Common (black/grey90)
+->   Base (black/grey90)
+->   Extra1 (grey60/grey90)
+->   Extra2 (black/grey90)
+->   Extra1_copy (black/grey90)   ***
 
-'agree to texttest message' event created with arguments ''
+Updated : File Tree with columns: Extra1__copy
+-> Standard Files (white,bold)
+->   errors.hello (grey90)
+->   output.hello.extra1 (grey90)
+-> Definition Files (white)
+
+========== Text Info ==========
+
+Description:
+Copy of Common
+
+Full path:
+Extra1_copy
+===============================
+
+Changing GUI status to: 'Pasted test Extra1_copy to suite 'TargetApp''
 
 'set test selection to' event created with arguments 'Common_copy'
 
-Changed selection in Test Tree with columns: Tests: 3/9 selected, versions <default>,extra1,extra2
+Changed selection in Test Tree with columns: Tests: 3/10 selected, versions <default>,extra1,extra2
 -> TargetApp (hello) (black/grey90,bold)
 ->   Common_copy (black/grey90)   ***
 ->   Common (black/grey90)
 ->   Base (black/grey90)
 ->   Extra1 (grey60/grey90)
 ->   Extra2 (black/grey90)
+->   Extra1_copy (black/grey90)
 
 Updated : File Tree with columns: Common__copy
 -> Standard Files (white,bold)
@@ -267,16 +283,17 @@ Common_copy
 
 'paste tests from clipboard' event created with arguments ''
 
-Updated : Test Tree with columns: Tests: 1/10 selected, version extra1
+Updated : Test Tree with columns: Tests: 1/11 selected, version extra1
 -> TargetApp (hello) (black/grey90,bold)
 ->   Common_copy (black/grey90)
-->   Extra1_copy (black/grey90)   ***
+->   Extra1_copy_2 (black/grey90)   ***
 ->   Common (black/grey90)
 ->   Base (black/grey90)
 ->   Extra1 (grey60/grey90)
 ->   Extra2 (black/grey90)
+->   Extra1_copy (black/grey90)
 
-Updated : File Tree with columns: Extra1__copy
+Updated : File Tree with columns: Extra1__copy__2
 -> Standard Files (white,bold)
 ->   errors.hello (grey90)
 ->   output.hello.extra1 (grey90)
@@ -288,9 +305,9 @@ Description:
 Copy of Common
 
 Full path:
-Extra1_copy
+Extra1_copy_2
 ===============================
 
-Changing GUI status to: 'Pasted test Extra1_copy to suite 'TargetApp''
+Changing GUI status to: 'Pasted test Extra1_copy_2 to suite 'TargetApp''
 
 'quit' event created with arguments ''
