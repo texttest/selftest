@@ -1,13 +1,17 @@
 Using SGE queues for Application SLEEP, version kb
 Q: Submitting SLEEP.kb test-case Basic to SGE queue non_existent
-S: SLEEP.kb test-case Basic not compared:  Test was trying to use a non-existent queue
+S: SLEEP.kb test-case Basic not compared:
+Test was trying to use a non-existent queue
+(This bug was triggered by text found in the full difference report matching 'non_existent')
 Q: Submitting SLEEP.kb test-case Basic2 to SGE queue non_existent
-S: SLEEP.kb test-case Basic2 not compared:  Test was trying to use a non-existent queue
+S: SLEEP.kb test-case Basic2 not compared:
+Test was trying to use a non-existent queue
+(This bug was triggered by text found in the full difference report matching 'non_existent')
 Results:
 
 Tests that did not succeed:
-  SLEEP.kb test-case Basic not compared:  Test was trying to use a non-existent queue
-  SLEEP.kb test-case Basic2 not compared:  Test was trying to use a non-existent queue
+  SLEEP.kb test-case Basic not compared: Test was trying to use a non-existent queue
+  SLEEP.kb test-case Basic2 not compared: Test was trying to use a non-existent queue
 
 Tests Run: 2, Failures: 2
 Creating batch report for application SLEEP ...
