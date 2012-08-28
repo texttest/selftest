@@ -37,7 +37,7 @@ Button 'Filter' (Stock image 'gtk-find', accelerator 'Ctrl+F', tooltip 'filter t
 Button 'Reset Tab' (tooltip 'Reset all the settings in the current tab to their default values')
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 31May16:52:04.' , Image 'throbber_inactive.png'
+'TextTest started at 27Aug17:06:34.' , Image 'throbber_inactive.png'
 --------------------------------------------------------------------------
 
 Changing GUI status to: 'Reading tests ...'
@@ -49,7 +49,7 @@ Updated : Test Tree with columns: Tests: 0/1 selected
 ->   Test (black/grey90)
 Updated drop-down list in 'Test-file to search' Text entry (set to 'knownbugs') (drop-down list containing ['knownbugs', '----------', 'errors', 'output'])
 
-Changing GUI status to: 'Reading tests completed at 31May16:52:04.'
+Changing GUI status to: 'Reading tests completed at 27Aug17:06:34.'
 
 Expected application event 'all tests to be read' occurred, proceeding.
 
@@ -70,6 +70,7 @@ Showing File Tree with columns: Test
 ->   errors.hello (grey90)
 ->   errors.hello.baderr (grey90)
 ->   output.hello (grey90)
+->   output.hello.regexp (grey90)
 ->   output.hello.success (grey90)
 -> Definition Files (white,bold)
 ->   knownbugs.hello.missing (grey90)
@@ -96,7 +97,12 @@ Test
 Default widget is 'gtk-ok'
 .....'Search for'......
 'Text or regexp to match:'
-Text entry
+...........
+
+========== Text or regexp to match ==========
+
+=============================================
+Check button 'Enable regular expressions' (checked)
 Check button 'Trigger if given text is NOT present'
 .....'Search in'......
 Radio button 'Specific file' (checked) (tooltip 'Search in a newly generated file (not its diff)') , Radio button 'Brief text/details' (tooltip 'Search in the brief text describing the test result as it appears in the Details column in the dynamic GUI test view') , Radio button 'Full difference report' (tooltip 'Search in the whole difference report as it appears in the lower right window in the dynamic GUI')
@@ -133,7 +139,10 @@ Stock Button 'gtk-ok' , Stock Button 'gtk-cancel'
 ----------------------------------------------------------------------------------------------
 
 'enter text or regexp to match =' event created with arguments 'geoff'
-Edited 'Text or regexp to match' Text entry (set to 'geoff')
+
+========== Text or regexp to match ==========
+geoff
+=============================================
 
 'enter full description =' event created with arguments 'Not mentioning geoff enough'
 Edited 'Full description' Text entry (set to 'Not mentioning geoff enough')
@@ -157,6 +166,7 @@ Updated : File Tree with columns: Test
 ->   errors.hello (grey90)
 ->   errors.hello.baderr (grey90)
 ->   output.hello (grey90)
+->   output.hello.regexp (grey90)
 ->   output.hello.success (grey90)
 -> Definition Files (white,bold)
 ->   knownbugs.hello (grey90)
@@ -199,7 +209,12 @@ Root test suite
 Default widget is 'gtk-ok'
 .....'Search for'......
 'Text or regexp to match:'
-Text entry (set to 'geoff')
+...........
+
+========== Text or regexp to match ==========
+geoff
+=============================================
+Check button 'Enable regular expressions' (checked)
 Check button 'Trigger if given text is NOT present' (checked)
 .....'Search in'......
 Radio button 'Specific file' (checked) (tooltip 'Search in a newly generated file (not its diff)') , Radio button 'Brief text/details' (tooltip 'Search in the brief text describing the test result as it appears in the Details column in the dynamic GUI test view') , Radio button 'Full difference report' (tooltip 'Search in the whole difference report as it appears in the lower right window in the dynamic GUI')

@@ -1,5 +1,5 @@
 
----------- Window 'HELLO.baderr tests (started at 27Aug17:06:33) - TextTest dynamic GUI' ----------
+---------- Window 'HELLO tests (started at 27Aug17:05:25) - TextTest dynamic GUI' ----------
 Focus widget is 'Test Tree'
 
 Menu Bar : '_File' (+) , '_View' (+) , '_Actions' (+) , '_Help' (+)
@@ -8,7 +8,7 @@ Tool Bar :
   _Quit (Stock image 'gtk-quit', accelerator 'Ctrl+Q', tooltip 'Quit')
   _Kill (Stock image 'gtk-stop', greyed out, accelerator 'Ctrl+Delete', tooltip 'Kill selected tests')
   _Save (Stock image 'gtk-save', greyed out, accelerator 'Ctrl+S', tooltip 'Save results for selected tests')
-  Progress bar set to fraction 0.0, text 'All 0 tests completed at 27Aug17:06:33'
+  Progress bar set to fraction 0.0, text 'All 0 tests completed at 27Aug17:05:25'
 ...........
 
 Showing Test Tree with columns: Tests: All 0 selected , Details
@@ -22,20 +22,20 @@ Viewing page 'Status'
 Showing Test Status View with columns: Status , Number , Visible
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 27Aug17:06:33.' , Image 'throbber_inactive.png'
----------------------------------------------------------------------------------------------------
+'TextTest started at 27Aug17:05:25.' , Image 'throbber_inactive.png'
+--------------------------------------------------------------------------------------------
 
 Progress bar set to fraction 0.0, text '0 of 1 tests completed'
 
 Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
--> TargetApp (hello.baderr) (black/white,bold) | (white)
+-> TargetApp (hello) (black/white,bold) | (white)
 ->   Test (black/white) | (white)
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 1 (white,bold) | Check box (checked)
 
 Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
--> TargetApp (hello.baderr) (black/white,bold) | (white)
+-> TargetApp (hello) (black/white,bold) | (white)
 ->   Test (black/LightGoldenrod1) | (LightGoldenrod1)
 
 Updated : Test Status View with columns: Status , Number , Visible
@@ -43,7 +43,7 @@ Updated : Test Status View with columns: Status , Number , Visible
 -> Initial filter (LightGoldenrod1,bold) | 1 (LightGoldenrod1,bold) | Check box (checked)
 
 Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
--> TargetApp (hello.baderr) (black/white,bold) | (white)
+-> TargetApp (hello) (black/white,bold) | (white)
 ->   Test (black/LightGoldenrod1) | (LightGoldenrod1)
 
 Updated : Test Status View with columns: Status , Number , Visible
@@ -52,7 +52,7 @@ Updated : Test Status View with columns: Status , Number , Visible
 -> Running (LightGoldenrod1,bold) | 1 (LightGoldenrod1,bold) | Check box (checked)
 
 Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
--> TargetApp (hello.baderr) (black/white,bold) | (white)
+-> TargetApp (hello) (black/white,bold) | (white)
 ->   Test (black/LightGoldenrod1) | (LightGoldenrod1)
 
 Updated : Test Status View with columns: Status , Number , Visible
@@ -61,11 +61,11 @@ Updated : Test Status View with columns: Status , Number , Visible
 -> Running (white) | 0 (white) | Check box (checked)
 -> Final filter (LightGoldenrod1,bold) | 1 (LightGoldenrod1,bold) | Check box (checked)
 
-Progress bar set to fraction 1.0, text 'All 1 tests completed at 27Aug17:06:34'
+Progress bar set to fraction 1.0, text 'All 1 tests completed at 27Aug17:05:25'
 
 Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
--> TargetApp (hello.baderr) (black/white,bold) | (white)
-->   Test (black/salmon) | errors different(+) (salmon)
+-> TargetApp (hello) (black/white,bold) | (white)
+->   Test (black/salmon) | output different (salmon)
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white) | 0 (white) | Check box (checked)
@@ -74,14 +74,13 @@ Updated : Test Status View with columns: Status , Number , Visible
 -> Final filter (white) | 0 (white) | Check box (checked)
 -> Failed (salmon,bold) | 1 (salmon,bold) | Check box (checked)
 ->   Differences (salmon,bold) | 1 (salmon,bold) | Check box (checked)
-->     errors different (salmon,bold) | 1 (salmon,bold) | Check box (checked)
 ->     output different (salmon,bold) | 1 (salmon,bold) | Check box (checked)
 
 No longer greyed out : _Save
 
 Changed selection in Test Tree with columns: Tests: All 1 selected, none hidden , Details
--> TargetApp (hello.baderr) (black/white,bold) | (white)
-->   Test (black/salmon) | errors different(+) (salmon)   ***
+-> TargetApp (hello) (black/white,bold) | (white)
+->   Test (black/salmon) | output different (salmon)   ***
 
 Current page changed in Notebook with tabs: Test , Status , Selection , Run Info
 Viewing page 'Test'
@@ -89,7 +88,7 @@ Viewing page 'Test'
 
 Showing File Tree with columns: Test , Details
 -> Comparison Files (bold)
-->   errors.hello.baderr (salmon) | (salmon)
+->   errors.hello (DarkSeaGreen2) | (DarkSeaGreen2)
 ->   output.hello (salmon) | (salmon)
 
 ------------------------------ (horizontal pane separator)
@@ -97,9 +96,6 @@ Showing File Tree with columns: Test , Details
 
 ========== Text Info ==========
 Test FAILED :
----------- Differences in errors ----------
-1d0
-< Some nonsense to trigger failure...
 ---------- Differences in output ----------
 1c1
 < Hello world
@@ -145,8 +141,8 @@ Check button 'Trigger if given text is NOT present'
 .....'Search in'......
 Radio button 'Specific file' (checked) (tooltip 'Search in a newly generated file (not its diff)') , Radio button 'Brief text/details' (tooltip 'Search in the brief text describing the test result as it appears in the Details column in the dynamic GUI test view') , Radio button 'Full difference report' (tooltip 'Search in the whole difference report as it appears in the lower right window in the dynamic GUI')
 'File to search in:'
-Text entry (set to 'output') (drop-down list containing ['errors', 'output'])
-Check button 'Trigger even if other files differ' (checked) (tooltip 'By default, this bug is only enabled if only the provided file is different. Check this box to enable it irrespective of what other difference exist. Note this increases the chances of it being reported erroneously and should be used carefully.')
+Text entry (set to 'output')
+Check button 'Trigger even if other files differ' (tooltip 'By default, this bug is only enabled if only the provided file is different. Check this box to enable it irrespective of what other difference exist. Note this increases the chances of it being reported erroneously and should be used carefully.')
 Check button 'Trigger even if file to search would otherwise compare as equal' (tooltip 'By default, this bug is only enabled if a difference is detected in the provided file to search. Check this box to search for it even if the file compares as equal.')
 Expander: 'Additional options to only apply to certain runs'
 -> '
@@ -176,36 +172,48 @@ Spin button entry (set to '0') (min=0.0, max=1000.0, step=1.0)
 Stock Button 'gtk-ok' , Stock Button 'gtk-cancel'
 ----------------------------------------------------------------------------------------------
 
-'enter text or regexp to match =' event created with arguments 'after 5 seconds'
+'enter text or regexp to match =' event created with arguments '< Hello world\n---\n> Hello after 5 seconds'
 
 ========== Text or regexp to match ==========
-after 5 seconds
+< Hello world
+---
+> Hello after 5 seconds
 =============================================
 
-'enter full description =' event created with arguments 'Delay bug'
-Edited 'Full description' Text entry (set to 'Delay bug')
+'disable regular expressions' event created with arguments ''
+Toggled Check button 'Enable regular expressions'
 
-'enter few-word summary =' event created with arguments 'Delay'
-Edited 'Few-word summary' Text entry (set to 'Delay')
+'search in the full difference report' event created with arguments ''
+
+Greyed out : File to search in, Trigger even if file to search would otherwise compare as equal, Trigger even if other files differ
+Toggled Radio button 'Specific file' (tooltip 'Search in a newly generated file (not its diff)')
+Toggled Radio button 'Full difference report' (checked) (tooltip 'Search in the whole difference report as it appears in the lower right window in the dynamic GUI')
+
+'enter full description =' event created with arguments 'We got the same diff!'
+Edited 'Full description' Text entry (set to 'We got the same diff!')
+
+'enter few-word summary =' event created with arguments 'same diff'
+Edited 'Few-word summary' Text entry (set to 'same diff')
 
 'press ok' event created with arguments ''
 
 Updated : Test Tree with columns: Tests: All 1 selected, none hidden , Details
--> TargetApp (hello.baderr) (black/white,bold) | (white)
-->   Test (black/DarkSeaGreen2) | Delay (salmon)   ***
+-> TargetApp (hello) (black/white,bold) | (white)
+->   Test (black/DarkSeaGreen2) | same diff (salmon)   ***
 
 Updated : File Tree with columns: Test , Details
 -> Comparison Files (bold)
-->   errors.hello.baderr (salmon) | (salmon)
+->   errors.hello (DarkSeaGreen2) | (DarkSeaGreen2)
 ->   output.hello (salmon) | (salmon)
 
 ========== Text Info ==========
-Test had known bugs (Delay) :
-Delay bug
-(This bug was triggered by text found in file 'output' matching 'after 5 seconds')
----------- Differences in errors ----------
-1d0
-< Some nonsense to trigger failure...
+Test had known bugs (same diff) :
+We got the same diff!
+(This bug was triggered by text found in the full difference report matching '''
+< Hello world
+---
+> Hello after 5 seconds
+''')
 ---------- Differences in output ----------
 1c1
 < Hello world
