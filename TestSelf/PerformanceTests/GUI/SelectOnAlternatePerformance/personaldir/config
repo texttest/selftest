@@ -1,0 +1,17 @@
+
+default_performance_stem:my_perf
+
+[batch_junit_format]
+local:true
+
+[performance_logfile]
+my_perf:output
+my_perf:erro*
+
+[performance_logfile_extractor]
+my_perf:cpu time:
+performance:
+
+# Which machine to check performance on
+[performance_test_machine]
+my_perf:any
