@@ -1,0 +1,175 @@
+
+---------- Window 'HELLO.predef tests (started at 03Sep18:35:43) - TextTest dynamic GUI' ----------
+Focus widget is 'Test Tree'
+
+Menu Bar : '_File' (+) , '_View' (+) , '_Actions' (+) , '_Help' (+)
+
+Tool Bar :
+  _Quit (Stock image 'gtk-quit', accelerator 'Ctrl+Q', tooltip 'Quit')
+  _Kill (Stock image 'gtk-stop', greyed out, accelerator 'Ctrl+Delete', tooltip 'Kill selected tests')
+  _Save (Stock image 'gtk-save', greyed out, accelerator 'Ctrl+S', tooltip 'Save results for selected tests')
+  Progress bar set to fraction 0.0, text 'All 0 tests completed at 03Sep18:35:44'
+...........
+
+Showing Test Tree with columns: Tests: All 0 selected , Details
+
+------------------------------ (vertical pane separator)
+...........
+
+Showing Notebook with tabs: Status , Selection , Run Info
+Viewing page 'Status'
+
+Showing Test Status View with columns: Status , Number , Visible
+'Shortcuts:' , Button '_New'
+...........
+'TextTest started at 03Sep18:35:44.' , Image 'throbber_inactive.png'
+---------------------------------------------------------------------------------------------------
+
+Progress bar set to fraction 0.0, text '0 of 1 tests completed'
+
+Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
+-> TargetApp (hello.predef) (black/white,bold) | (white)
+->   suite (black/white,bold) | (white)
+->     Test1 (black/white) | (white)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white,bold) | 1 (white,bold) | Check box (checked)
+
+Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
+-> TargetApp (hello.predef) (black/white,bold) | (white)
+->   suite (black/white,bold) | (white)
+->     Test1 (black/LightGoldenrod1) | (LightGoldenrod1)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white) | 0 (white) | Check box (checked)
+-> Initial filter (LightGoldenrod1,bold) | 1 (LightGoldenrod1,bold) | Check box (checked)
+
+Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
+-> TargetApp (hello.predef) (black/white,bold) | (white)
+->   suite (black/white,bold) | (white)
+->     Test1 (black/LightGoldenrod1) | (LightGoldenrod1)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white) | 0 (white) | Check box (checked)
+-> Initial filter (white) | 0 (white) | Check box (checked)
+-> Running (LightGoldenrod1,bold) | 1 (LightGoldenrod1,bold) | Check box (checked)
+
+Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
+-> TargetApp (hello.predef) (black/white,bold) | (white)
+->   suite (black/white,bold) | (white)
+->     Test1 (black/LightGoldenrod1) | (LightGoldenrod1)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white) | 0 (white) | Check box (checked)
+-> Initial filter (white) | 0 (white) | Check box (checked)
+-> Running (white) | 0 (white) | Check box (checked)
+-> Final filter (LightGoldenrod1,bold) | 1 (LightGoldenrod1,bold) | Check box (checked)
+
+Progress bar set to fraction 1.0, text 'All 1 tests completed at 03Sep18:35:44'
+
+Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
+-> TargetApp (hello.predef) (black/white,bold) | (white)
+->   suite (black/white,bold) | (white)
+->     Test1 (black/salmon) | output different (salmon)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white) | 0 (white) | Check box (checked)
+-> Initial filter (white) | 0 (white) | Check box (checked)
+-> Running (white) | 0 (white) | Check box (checked)
+-> Final filter (white) | 0 (white) | Check box (checked)
+-> Failed (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->   Differences (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->     output different (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+
+No longer greyed out : _Save
+
+Changed selection in Test Tree with columns: Tests: All 1 selected, none hidden , Details
+-> TargetApp (hello.predef) (black/white,bold) | (white)
+->   suite (black/white,bold) | (white)
+->     Test1 (black/salmon) | output different (salmon)   ***
+
+Current page changed in Notebook with tabs: Test , Status , Selection , Run Info
+Viewing page 'Test'
+...........
+
+Showing File Tree with columns: Test1 , Details
+-> Comparison Files (bold)
+->   errors.hello (DarkSeaGreen2) | (DarkSeaGreen2)
+->   output.hello (salmon) | (salmon)
+
+------------------------------ (horizontal pane separator)
+...........
+
+========== Text Info ==========
+Test FAILED :
+---------- Differences in output ----------
+1c1,2
+< Hello world
+---
+> Hello after 5 seconds
+> And again after 5 seconds
+===============================
+
+Expected application event 'completion of test actions' occurred, proceeding.
+
+'view actions for test' event created with arguments 'Test1'
+
+---------- Popup Window ----------
+'_Save' (Stock image 'gtk-save', accelerator 'Ctrl+S')
+'Save _As...' (Stock image 'gtk-save', accelerator 'Ctrl+Alt+S')
+  ----
+'Enter Failure Information' (Stock image 'gtk-info', accelerator 'Ctrl+I')
+'Find Failure Information' (Stock image 'gtk-find', accelerator 'Ctrl+F')
+  ----
+'_Kill' (Stock image 'gtk-stop', greyed out, accelerator 'Ctrl+Delete')
+'_Mark' (accelerator 'Shift+Ctrl+M')
+'_Unmark' (greyed out, accelerator 'Shift+Ctrl+U')
+  ----
+'_Rerun' (Stock image 'gtk-execute', accelerator 'Ctrl+R')
+'Recompute Status' (Stock image 'gtk-refresh', accelerator 'F5')
+'Re_load tests...' (Stock image 'gtk-connect')
+  ----
+'Split result files' (Stock image 'gtk-convert', greyed out)
+----------------------------------
+
+'find failure information' event created with arguments ''
+
+---------- Dialog 'Find, copy and move information for automatic interpretation of test failures' ----------
+Default widget is 'gtk-ok'
+'Bug or Brief Text:'
+Text entry (set to 'Other Delay') (drop-down list containing ['', 'Other Delay', 'Delay'])
+...........
+Radio button 'Apply to whole suite' (checked) (tooltip 'Move the reported failure information to the root suite where it will apply to all tests')
+Radio button 'Apply to common parent suite' (tooltip 'Move the reported failure information to the suite where it will apply to all selected tests')
+Radio button 'Copy info into test(s)' (tooltip 'Copy the reported failure information to the selected tests')
+---------------
+Stock Button 'gtk-ok' , Stock Button 'gtk-cancel'
+----------------------------------------------------------------------------------------------------
+
+'apply failure information to selected tests' event created with arguments ''
+
+Updated : Test Tree with columns: Tests: All 1 selected, none hidden , Details
+-> TargetApp (hello.predef) (black/white,bold) | (white)
+->   suite (black/white,bold) | (white)
+->     Test1 (black/DarkSeaGreen2) | Other Delay (salmon)   ***
+
+Updated : File Tree with columns: Test1 , Details
+-> Comparison Files (bold)
+->   errors.hello (DarkSeaGreen2) | (DarkSeaGreen2)
+->   output.hello (salmon) | (salmon)
+
+========== Text Info ==========
+Test had known bugs (Other Delay) :
+Other Delay bug
+(This bug was triggered by text found in file 'output' matching 'after .* seconds')
+---------- Differences in output ----------
+1c1,2
+< Hello world
+---
+> Hello after 5 seconds
+> And again after 5 seconds
+===============================
+
+Changing GUI status to: 'Performed 'Find Failure Information' on test suite/Test1.'
+
+'quit' event created with arguments ''
