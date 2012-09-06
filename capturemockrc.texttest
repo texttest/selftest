@@ -1,6 +1,9 @@
 # Only include basic stuff that we'll always want to intercept here
 [command line]
-intercepts = tkdiff,emacs,xterm,time
+intercepts = tkdiff,emacs,xterm,time,storytext_editor
+
+[storytext_editor]
+environment = STORYTEXT_HOME
 
 [python]
 intercepts = smtplib,matplotlib,pylab
