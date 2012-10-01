@@ -13,6 +13,8 @@ slow_motion_replay_speed:3.0
 # Which Use-case recorder is being used
 use_case_recorder:storytext
 
-# Single program to use as interpreter for the SUT
-interpreter:storytext -i javaswing
-
+# Programs to use, in order, as interpreters for the SUT
+[interpreters]
+jython:/carm/proj/texttest-tmp/geoff/texttest.gui.01Oct151118.29196/texttest.gui/GUI/StaticGUI/AddingApps/FromScratch/JavaGuis/UseStoryTextSwing/fake_storytext/bin/jython
+storytext:/carm/proj/texttest-tmp/geoff/texttest.gui.01Oct151118.29196/texttest.gui/GUI/StaticGUI/AddingApps/FromScratch/JavaGuis/UseStoryTextSwing/fake_storytext/bin/storytext
+[end]

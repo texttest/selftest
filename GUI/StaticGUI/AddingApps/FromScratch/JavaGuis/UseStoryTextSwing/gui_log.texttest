@@ -37,13 +37,13 @@ Button 'Filter' (Stock image 'gtk-find', accelerator 'Ctrl+F', tooltip 'filter t
 Button 'Reset Tab' (tooltip 'Reset all the settings in the current tab to their default values')
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 31May16:53:31.' , Image 'throbber_inactive.png'
+'TextTest started at 01Oct16:19:18.' , Image 'throbber_inactive.png'
 --------------------------------------------------------------------
 
 Changing GUI status to: 'Reading tests ...'
 Updated drop-down list in 'Test-file to search' Text entry (set to 'none') (drop-down list containing ['none'])
 
-Changing GUI status to: 'Reading tests completed at 31May16:53:31.'
+Changing GUI status to: 'Reading tests completed at 01Oct16:19:18.'
 
 ---------- Dialog 'Define a new tested application' ----------
 Default widget is 'gtk-ok'
@@ -59,13 +59,13 @@ Text entry
 Java Class name (instead of executable program):'
 Text entry
 ''
-Combo Box (selected 'Disable GUI testing options') (drop-down list containing ['Disable GUI testing options', 'PyGTK GUI with StoryText', 'Tkinter GUI with StoryText', 'wxPython GUI with StoryText', 'SWT GUI with StoryText', 'Eclipse RCP GUI with StoryText', 'Java Swing GUI with StoryText', 'Other embedded Use-case Recorder (e.g. NUseCase)', 'Other GUI-test tool (enable virtual display only)'])
+Combo Box (selected 'Disable GUI testing options') (drop-down list containing ['Disable GUI testing options', 'PyGTK GUI with StoryText', 'Tkinter GUI with StoryText', 'wxPython GUI with StoryText', 'SWT GUI with StoryText', 'Eclipse RCP GUI with StoryText', 'Eclipse GEF GUI with StoryText', 'Java Swing GUI with StoryText', 'Other embedded Use-case Recorder (e.g. NUseCase)', 'Other GUI-test tool (enable virtual display only)'])
 .....'
 Select executable program to test:' (tooltip 'The full path to the program you want to test')......
 
-Showing File Chooser for 'Define a new tested application' (selected '/carm/proj/texttest-tmp/geoff/dynamic_gui.31May165025.21186/texttest.gui/GUI/StaticGUI/AddingApps/FromScratch/UseStoryTextRCP/TargetApp/hello.py')
+Showing File Chooser for 'Define a new tested application' (selected '/carm/proj/texttest-tmp/geoff/texttest.gui.01Oct161916.6920/texttest.gui/GUI/StaticGUI/AddingApps/FromScratch/JavaGuis/UseStoryTextSwing/TargetApp/fake.jar')
 Shortcut folders (1) :
-- /carm/proj/texttest-tmp/geoff/dynamic_gui.31May165025.21186/texttest.gui/GUI/StaticGUI/AddingApps/FromScratch/UseStoryTextRCP/TargetApp
+- /carm/proj/texttest-tmp/geoff/texttest.gui.01Oct161916.6920/texttest.gui/GUI/StaticGUI/AddingApps/FromScratch/JavaGuis/UseStoryTextSwing/TargetApp
 ---------------
 Stock Button 'gtk-ok' , Stock Button 'gtk-cancel'
 --------------------------------------------------------------
@@ -75,8 +75,29 @@ Expected application event 'all tests to be read' occurred, proceeding.
 'enter file extension to use for texttest files associated with this application =' event created with arguments 'hello'
 Edited 'File extension to use for TextTest files associated with this application' Text entry (set to 'hello')
 
-'select gui-testing option named' event created with arguments 'Eclipse RCP GUI with StoryText'
-Changed selection in 'GUI testing option chooser' Combo Box (selected 'Eclipse RCP GUI with StoryText')
+'select gui-testing option named' event created with arguments 'Java Swing GUI with StoryText'
+Changed selection in 'GUI testing option chooser' Combo Box (selected 'Java Swing GUI with StoryText')
+
+'select executable program to test' event created with arguments 'nomain.jar'
+
+Updated : File Chooser for 'Define a new tested application' (selected '/carm/proj/texttest-tmp/geoff/texttest.gui.01Oct161916.6920/texttest.gui/GUI/StaticGUI/AddingApps/FromScratch/JavaGuis/UseStoryTextSwing/TargetApp/nomain.jar')
+
+'press define' event created with arguments ''
+
+---------- Dialog 'TextTest Error' ----------
+Default widget is 'gtk-ok'
+Stock image 'gtk-dialog-error' , ========== GtkTextView ==========
+Jar file provided has no main class specified, cannot use it as an executable
+=================================
+---------------
+Stock Button 'gtk-ok'
+---------------------------------------------
+
+'agree to texttest message' event created with arguments ''
+
+'select executable program to test' event created with arguments 'fake.jar'
+
+Updated : File Chooser for 'Define a new tested application' (selected '/carm/proj/texttest-tmp/geoff/texttest.gui.01Oct161916.6920/texttest.gui/GUI/StaticGUI/AddingApps/FromScratch/JavaGuis/UseStoryTextSwing/TargetApp/fake.jar')
 
 'press define' event created with arguments ''
 
@@ -94,7 +115,11 @@ Viewing page 'Test'
 Showing File Tree with columns: TargetApp
 -> Definition Files (white,bold)
 ->   config.hello (grey90)
+->   environment.hello (grey90)
 ->   testsuite.hello (grey90)
+->   jython_options.hello (grey90)
+->   storytext_options.hello (grey90)
+->   storytext_options.hello.debug (grey90)
 
 ------------------------------ (horizontal pane separator)
 ...........
@@ -106,16 +131,5 @@ Root test suite
 ===============================
 
 Changing GUI status to: 'Created new application with extension 'hello'.'
-
-'view options for' event created with arguments 'Config'
-
-Current page changed in Notebook with tabs: Test , Selection , Running , Config
-Viewing page 'Config'
-
-Showing Application File Tree with columns: Configuration Files
--> Files for HELLO (white,bold)
-->   config.hello (grey90)
-->   storytext_files (grey90,bold)
-->     ui_map.conf (grey90)
 
 'quit' event created with arguments ''
