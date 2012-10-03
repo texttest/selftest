@@ -1,5 +1,5 @@
 # Full path to the System Under Test (or Java Main Class name)
-executable:E:/nightjob/tmp/texttest.windows.02Oct013203.988/texttest.windows.gui/GUI/StaticGUI/AddingApps/FromScratch/JavaGuis/UseStoryTextSWT/TargetApp/hello.py
+executable:E:/nightjob/tmp/texttest.windows.03Oct013217.2800/texttest.windows.gui/GUI/StaticGUI/AddingApps/FromScratch/JavaGuis/UseStoryTextSWT/TargetApp/hello.py
 
 # Naming scheme to use for files for stdin,stdout and stderr
 filename_convention_scheme:standard
@@ -15,6 +15,12 @@ use_case_recorder:storytext
 
 # Programs to use, in order, as interpreters for the SUT
 [interpreters]
-jython:E:/nightjob/tmp/texttest.windows.02Oct013203.988/texttest.windows.gui/GUI/StaticGUI/AddingApps/FromScratch/JavaGuis/UseStoryTextSWT/fake_storytext/bin/jython.bat
-storytext:E:/nightjob/tmp/texttest.windows.02Oct013203.988/texttest.windows.gui/GUI/StaticGUI/AddingApps/FromScratch/JavaGuis/UseStoryTextSWT/fake_storytext/bin/storytext
+jython:E:/nightjob/tmp/texttest.windows.03Oct013217.2800/texttest.windows.gui/GUI/StaticGUI/AddingApps/FromScratch/JavaGuis/UseStoryTextSWT/fake_storytext/bin/jython.bat
+storytext:E:/nightjob/tmp/texttest.windows.03Oct013217.2800/texttest.windows.gui/GUI/StaticGUI/AddingApps/FromScratch/JavaGuis/UseStoryTextSWT/fake_storytext/bin/storytext
 [end]
+
+# Mapping of patterns to remove from result files
+[run_dependent_text]
+stderr*:\*sys-package-mgr\*
+[end]
+
