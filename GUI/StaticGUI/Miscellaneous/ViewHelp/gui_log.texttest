@@ -37,7 +37,7 @@ Button 'Filter' (Stock image 'gtk-find', accelerator 'Ctrl+F', tooltip 'filter t
 Button 'Reset Tab' (tooltip 'Reset all the settings in the current tab to their default values')
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 10Jul11:06:36.' , Image 'throbber_inactive.png'
+'TextTest started at 05Oct17:48:32.' , Image 'throbber_inactive.png'
 ------------------------------------------------------------------------
 
 Changing GUI status to: 'Reading tests ...'
@@ -82,7 +82,7 @@ Updated : Test Tree with columns: Tests: 0/11 selected
 ->       S01 (black/grey90)
 Updated drop-down list in 'Test-file to search' Text entry (set to 'output') (drop-down list containing ['output'])
 
-Changing GUI status to: 'Reading tests completed at 10Jul11:06:37.'
+Changing GUI status to: 'Reading tests completed at 05Oct17:48:33.'
 
 Expected application event 'all tests to be read' occurred, proceeding.
 
@@ -134,13 +134,15 @@ Showing Notebook with tabs: Written by
 Viewing page 'Written by'
 
 ========== GtkTextView ==========
-Code Maintainer:                                        
+Code Maintainers:                                        
 
     Geoff Bache
+    Daniel Galdames
 
 Developers:
 
     Geoff Bache
+    Daniel Galdames
     Mattias Grönkvist
     Johan Ivarsson
     Johan Andersson
@@ -208,7 +210,7 @@ Viewing table with 6 rows and 2 columns.
 '<b>You are using these installations:
 </b>'
 Viewing table with 3 rows and 2 columns.
-'Test Suite:' | '/carm/proj/texttest-tmp/geoff/texttest.gui.10Jul110628.653/texttest.gui/GUI/StaticGUI/Miscellaneous/ViewHelp/TargetApp'
+'Test Suite:' | '/carm/proj/texttest-tmp/geoff/texttest.gui.05Oct174823.23763/texttest.gui/GUI/StaticGUI/Miscellaneous/ViewHelp/TargetApp'
 'TextTest:' | '/users/geoff/work/master/Testing/TextTest'
 'Python:' | '/usr/local/tt-env/python2.6.current/bin/python'
 ---------------
@@ -244,6 +246,25 @@ Showing Notebook with tabs: from 3.23 , from 3.22 , from 3.21 , from 3.20 , from
 Viewing page 'from 3.23'
 
 ========== GtkTextView ==========
+
+=========================================================
+COMPULSORY MIGRATION
+=========================================================
+
+(1) "batch_junit_performance" replaced by "default_performance_stem"
+====================================================================
+The ability to identify the "main performance measure being used" has been generalised so it can apply to more situations.
+
+The basic difference is that it will no longer work to configure it differently per batch session. If you have set "batch_junit_performance", you will need to replace it as follows
+
+from
+
+[batch_junit_performance]
+my_session:my_performance
+
+to
+
+default_performance_stem:my_performance
 
 
 =========================================================
@@ -361,19 +382,15 @@ Changing GUI status to: ''
 ---------- Dialog 'TextTest Change Logs' ----------
 Default widget is 'gtk-close'
 
-Showing Notebook with tabs: trunk , 3.23 , 3.22 , 3.21 , 3.20 , 3.19 , 3.18 , 3.17 , 3.16.1 , 3.16 , 3.15 , 3.14.1 , 3.14 , 3.13 , 3.12.1 , 3.12 , 3.11.1 , 3.11 , 3.10 , 3.9.1 , 3.9 , 3.8 , 3.7.1 , 3.7 , 3.6 , 3.5.3 , 3.5.2 , 3.5.1 , 3.5 , 3.4 , 3.3 , 3.2 , 3.1.1 , 3.1 , 3.0 , 2.1 , 2.0 , 1.0 , 0.2 , 0.1
+Showing Notebook with tabs: trunk , 3.24 , 3.23 , 3.22 , 3.21 , 3.20 , 3.19 , 3.18 , 3.17 , 3.16.1 , 3.16 , 3.15 , 3.14.1 , 3.14 , 3.13 , 3.12.1 , 3.12 , 3.11.1 , 3.11 , 3.10 , 3.9.1 , 3.9 , 3.8 , 3.7.1 , 3.7 , 3.6 , 3.5.3 , 3.5.2 , 3.5.1 , 3.5 , 3.4 , 3.3 , 3.2 , 3.1.1 , 3.1 , 3.0 , 2.1 , 2.0 , 1.0 , 0.2 , 0.1
 Viewing page 'trunk'
 
 ========== GtkTextView ==========
-Installation:
 General GUI Enhancements:
 Static GUI Enhancements:
-Dynamic GUI Enhancements:
 Framework Enhancements:
-    - run_dependent_text now does not apply the filter in the case where the end marker is never found for a section filtering
-	See migration notes for details
 Batch Report Enhancements:
-Grid Engine (LSF/SGE) enhancements/bug fixes:
+Grid Engine (LSF/SGE/Condor) enhancements/bug fixes:
 Bug Fixes:
 =================================
 ---------------
@@ -382,7 +399,7 @@ Stock Button 'gtk-close'
 
 'view tab' event created with arguments '3.7.1'
 
-Current page changed in Notebook with tabs: trunk , 3.23 , 3.22 , 3.21 , 3.20 , 3.19 , 3.18 , 3.17 , 3.16.1 , 3.16 , 3.15 , 3.14.1 , 3.14 , 3.13 , 3.12.1 , 3.12 , 3.11.1 , 3.11 , 3.10 , 3.9.1 , 3.9 , 3.8 , 3.7.1 , 3.7 , 3.6 , 3.5.3 , 3.5.2 , 3.5.1 , 3.5 , 3.4 , 3.3 , 3.2 , 3.1.1 , 3.1 , 3.0 , 2.1 , 2.0 , 1.0 , 0.2 , 0.1
+Current page changed in Notebook with tabs: trunk , 3.24 , 3.23 , 3.22 , 3.21 , 3.20 , 3.19 , 3.18 , 3.17 , 3.16.1 , 3.16 , 3.15 , 3.14.1 , 3.14 , 3.13 , 3.12.1 , 3.12 , 3.11.1 , 3.11 , 3.10 , 3.9.1 , 3.9 , 3.8 , 3.7.1 , 3.7 , 3.6 , 3.5.3 , 3.5.2 , 3.5.1 , 3.5 , 3.4 , 3.3 , 3.2 , 3.1.1 , 3.1 , 3.0 , 2.1 , 2.0 , 1.0 , 0.2 , 0.1
 Viewing page '3.7.1'
 
 ========== GtkTextView ==========
@@ -456,7 +473,7 @@ Viewing table with 6 rows and 2 columns.
 '<b>You are using these installations:
 </b>'
 Viewing table with 3 rows and 2 columns.
-'Test Suite:' | '/carm/proj/texttest-tmp/geoff/texttest.gui.10Jul110628.653/texttest.gui/GUI/StaticGUI/Miscellaneous/ViewHelp/TargetApp'
+'Test Suite:' | '/carm/proj/texttest-tmp/geoff/texttest.gui.05Oct174823.23763/texttest.gui/GUI/StaticGUI/Miscellaneous/ViewHelp/TargetApp'
 'TextTest:' | '/users/geoff/work/master/Testing/TextTest'
 'Python:' | '/usr/local/tt-env/python2.6.current/bin/python'
 ---------------
@@ -490,13 +507,15 @@ Showing Notebook with tabs: Written by
 Viewing page 'Written by'
 
 ========== GtkTextView ==========
-Code Maintainer:                                        
+Code Maintainers:                                        
 
     Geoff Bache
+    Daniel Galdames
 
 Developers:
 
     Geoff Bache
+    Daniel Galdames
     Mattias Grönkvist
     Johan Ivarsson
     Johan Andersson
