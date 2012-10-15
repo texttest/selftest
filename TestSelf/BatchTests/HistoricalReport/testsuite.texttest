@@ -66,6 +66,11 @@ VersionHasOlderMonth
 
 # If a version has the most recent results in an older month, don't regenerate it
 MultiVersionsWithGraphs
+
+# If we have many applications from different projects, we should generate for the one with least tests first,
+# this is likely to take less time.
+# 
+BuildSmallestFirst
 Jenkins
 
 # Tests for different applications writing to the same page
