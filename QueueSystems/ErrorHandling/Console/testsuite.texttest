@@ -25,6 +25,9 @@ SlaveCrash
 # We should notice crashed slaves without waiting for the user to kill them
 PollSlaveCrash
 
+# If a test is running but then gets killed with SIGKILL (e.g.) give up on it if it's no longer present in UGE
+PollJobLost
+
 # We should notice if SGE itself goes down, and report this nicely...
 PollSgeCrash
 

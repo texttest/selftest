@@ -1,0 +1,47 @@
+<-SRV:TextTest slave server started on 10.67.18.24:36392
+<-CMD:cd /nfs/vm/texttest-tmp/geoff/texttest.sge.10Nov171702.26873/texttest.sge/QueueSystems/ErrorHandling/Console/PollJobLost/texttesttmp/sleep.killing.10Nov171707.26890/slavelogs; qsub -N Test-Basic-SLEEP.killing -w e -notify -m n -cwd -b y -V -o Test-Basic-SLEEP.killing.log -e Test-Basic-SLEEP.killing.errors "exec $SHELL -c "exec /users/geoff/work/master/Testing/TextTest/bin/texttest.py -d /carm/proj/texttest-tmp/geoff/texttest.sge.10Nov171702.26873/texttest.sge/QueueSystems/ErrorHandling/Console/PollJobLost/TargetApp -a sleep.killing -l -tp Basic -slave /carm/proj/texttest-tmp/geoff/texttest.sge.10Nov171702.26873/texttest.sge/QueueSystems/ErrorHandling/Console/PollJobLost/texttesttmp/sleep.killing.10Nov171707.26890 -servaddr 10.67.18.24:33721 -b short_local""
+->OUT:Your job 1 (stupid) has been submitted.
+<-SRV:Completed submission of all tests
+->CLI:6035
+sleep.killing:Basic
+(idefault
+Running
+p1
+(dp2
+S'category'
+p3
+S'running'
+p4
+sS'freeText'
+p5
+S'Running on abbeville'
+p6
+sS'started'
+p7
+I1
+sS'completed'
+p8
+I0
+sS'briefText'
+p9
+S'RUN (abbeville)'
+p10
+sS'executionHosts'
+p11
+(lp12
+S'abbeville'
+p13
+asS'observers'
+p14
+(lp15
+sS'passSelf'
+p16
+I00
+sS'lifecycleChange'
+p17
+S'start'
+p18
+sb.
+<-CMD:qstat
+<-CMD:qacct -j 1
+->OUT:Some random accounting info
