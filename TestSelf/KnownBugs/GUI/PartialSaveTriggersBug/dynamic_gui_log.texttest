@@ -1,5 +1,5 @@
 
----------- Window 'HELLO.textinfile.baderr tests (started at 27Aug13:57:12) - TextTest dynamic GUI' ----------
+---------- Window 'HELLO.textinfile.baderr tests (started at 19Oct15:24:31) - TextTest dynamic GUI' ----------
 Focus widget is 'Test Tree'
 
 Menu Bar : '_File' (+) , '_View' (+) , '_Actions' (+) , '_Help' (+)
@@ -8,7 +8,7 @@ Tool Bar :
   _Quit (Stock image 'gtk-quit', accelerator 'Ctrl+Q', tooltip 'Quit')
   _Kill (Stock image 'gtk-stop', greyed out, accelerator 'Ctrl+Delete', tooltip 'Kill selected tests')
   _Save (Stock image 'gtk-save', greyed out, accelerator 'Ctrl+S', tooltip 'Save results for selected tests')
-  Progress bar set to fraction 0.0, text 'All 0 tests completed at 27Aug13:57:12'
+  Progress bar set to fraction 0.0, text 'All 0 tests completed at 19Oct15:24:33'
 ...........
 
 Showing Test Tree with columns: Tests: All 0 selected , Details
@@ -22,7 +22,7 @@ Viewing page 'Status'
 Showing Test Status View with columns: Status , Number , Visible
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 27Aug13:57:12.' , Image 'throbber_inactive.png'
+'TextTest started at 19Oct15:24:33.' , Image 'throbber_inactive.png'
 ----------------------------------------------------------------------------------------------------
 
 Progress bar set to fraction 0.0, text '0 of 1 tests completed'
@@ -144,7 +144,7 @@ Updated : Test Status View with columns: Status , Number , Visible
 ->     errors different (salmon,bold) | 1 (salmon,bold) | Check box (checked)
 ->     output different (salmon,bold) | 1 (salmon,bold) | Check box (checked)
 
-Progress bar set to fraction 1.0, text 'All 2 tests completed at 27Aug13:57:13'
+Progress bar set to fraction 1.0, text 'All 2 tests completed at 19Oct15:24:34'
 
 Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
 -> TargetApp (hello.textinfile.baderr) (black/white,bold) | (white)
@@ -287,13 +287,15 @@ Changing GUI status to: 'Rereading configuration for HELLO.textinfile.baderr.cop
 
 Changing GUI status to: 'Rereading configuration for HELLO.textinfile.baderr.copy_1 test-case Test ...'
 
+Waiting for application event 'completion of recomputation' to occur.
+
 Changing GUI status to: 'Recomputing status of HELLO.textinfile.baderr.copy_1 test-case Test ...'
 
 Updated : Test Tree with columns: Tests: 1/2 selected, none hidden , Details
 -> TargetApp (hello.textinfile.baderr) (black/white,bold) | (white)
 ->   Test (black/DarkSeaGreen2) | Delay bug (salmon)
 -> TargetApp (hello.textinfile.baderr.copy_1) (black/white,bold) | (white)
-->   Test (black/DarkSeaGreen2) | Delay bug (salmon)   ***
+->   Test (black/DarkSeaGreen2) | Delay bug (salmon) | Stock image 'gtk-refresh'   ***
 
 Updated : File Tree with columns: Test , Details
 -> Comparison Files (bold)
@@ -311,6 +313,14 @@ Known problem with delay
 > Hello after 5 seconds
 ===============================
 
+Updated : Test Tree with columns: Tests: 1/2 selected, none hidden , Details
+-> TargetApp (hello.textinfile.baderr) (black/white,bold) | (white)
+->   Test (black/DarkSeaGreen2) | Delay bug (salmon)
+-> TargetApp (hello.textinfile.baderr.copy_1) (black/white,bold) | (white)
+->   Test (black/DarkSeaGreen2) | Delay bug (salmon)   ***
+
 Changing GUI status to: 'Recomputed status of 1 test.'
+
+Expected application event 'completion of recomputation' occurred, proceeding.
 
 'quit' event created with arguments ''

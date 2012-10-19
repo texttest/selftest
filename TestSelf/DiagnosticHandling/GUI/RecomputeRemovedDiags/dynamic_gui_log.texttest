@@ -1,5 +1,5 @@
 
----------- Window 'DIAG tests (started at 31May16:51:37) - TextTest dynamic GUI' ----------
+---------- Window 'DIAG tests (started at 19Oct15:24:33) - TextTest dynamic GUI' ----------
 Focus widget is 'Test Tree'
 
 Menu Bar : '_File' (+) , '_View' (+) , '_Actions' (+) , '_Help' (+)
@@ -8,7 +8,7 @@ Tool Bar :
   _Quit (Stock image 'gtk-quit', accelerator 'Ctrl+Q', tooltip 'Quit')
   _Kill (Stock image 'gtk-stop', greyed out, accelerator 'Ctrl+Delete', tooltip 'Kill selected tests')
   _Save (Stock image 'gtk-save', greyed out, accelerator 'Ctrl+S', tooltip 'Save results for selected tests')
-  Progress bar set to fraction 0.0, text 'All 0 tests completed at 31May16:51:42'
+  Progress bar set to fraction 0.0, text 'All 0 tests completed at 19Oct15:24:34'
 ...........
 
 Showing Test Tree with columns: Tests: All 0 selected , Details
@@ -22,7 +22,7 @@ Viewing page 'Status'
 Showing Test Status View with columns: Status , Number , Visible
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 31May16:51:42.' , Image 'throbber_inactive.png'
+'TextTest started at 19Oct15:24:34.' , Image 'throbber_inactive.png'
 -------------------------------------------------------------------------------------------
 
 Progress bar set to fraction 0.0, text '0 of 1 tests completed'
@@ -148,7 +148,7 @@ Updated : Test Status View with columns: Status , Number , Visible
 ->     second missing (salmon,bold) | 1 (salmon,bold) | Check box (checked)
 ->     third missing (salmon,bold) | 1 (salmon,bold) | Check box (checked)
 
-Progress bar set to fraction 1.0, text 'All 2 tests completed at 31May16:51:42'
+Progress bar set to fraction 1.0, text 'All 2 tests completed at 19Oct15:24:35'
 
 Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
 -> TargetApp (diag.nodiag) (black/white,bold) | (white)
@@ -246,7 +246,7 @@ Updated : File Tree with columns: TestAlwaysDiag , Details
 
 ========== Text Info ==========
 Test succeeded
-(Saved at 16:51)
+(Saved at 15:24)
 ===============================
 
 Changing GUI status to: 'Saved 1 tests.'
@@ -270,6 +270,8 @@ Changing GUI status to: 'Rereading configuration for DIAG.withdiag ...'
 Changing GUI status to: 'Rereading configuration for DIAG.nodiag test-case TestAlwaysDiag ...'
 
 Changing GUI status to: 'Rereading configuration for DIAG.withdiag test-case TestAlwaysDiag ...'
+
+Waiting for application event 'completion of recomputation' to occur.
 
 Changing GUI status to: 'Recomputing status of DIAG.nodiag test-case TestAlwaysDiag ...'
 
@@ -295,9 +297,17 @@ No longer greyed out : _Save
 Updated : Test Tree with columns: Tests: All 2 selected, none hidden , Details
 -> TargetApp (diag.nodiag) (black/white,bold) | All 1 tests successful (DarkSeaGreen2)
 ->   TestAlwaysDiag (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+-> TargetApp (diag.withdiag) (black/white,bold) | All 1 tests successful (DarkSeaGreen2)
+->   TestAlwaysDiag (black/DarkSeaGreen2) | first new(+) (salmon)   ***
+
+Updated : Test Tree with columns: Tests: All 2 selected, none hidden , Details
+-> TargetApp (diag.nodiag) (black/white,bold) | All 1 tests successful (DarkSeaGreen2)
+->   TestAlwaysDiag (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
 -> TargetApp (diag.withdiag) (black/white,bold) | (white)
 ->   TestAlwaysDiag (black/DarkSeaGreen2) | first new(+) (salmon)   ***
 
 Changing GUI status to: 'Recomputed status of 2 tests.'
+
+Expected application event 'completion of recomputation' occurred, proceeding.
 
 'quit' event created with arguments ''

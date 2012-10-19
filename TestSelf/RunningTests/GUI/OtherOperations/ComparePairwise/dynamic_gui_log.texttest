@@ -1,5 +1,5 @@
 
----------- Window 'HELLO tests (started at 14May16:41:59) - TextTest dynamic GUI' ----------
+---------- Window 'HELLO tests (started at 19Oct16:11:52) - TextTest dynamic GUI' ----------
 Focus widget is 'Test Tree'
 
 Menu Bar : '_File' (+) , '_View' (+) , '_Actions' (+) , '_Help' (+)
@@ -8,7 +8,7 @@ Tool Bar :
   _Quit (Stock image 'gtk-quit', accelerator 'Ctrl+Q', tooltip 'Quit')
   _Kill (Stock image 'gtk-stop', greyed out, accelerator 'Ctrl+Delete', tooltip 'Kill selected tests')
   _Save (Stock image 'gtk-save', greyed out, accelerator 'Ctrl+S', tooltip 'Save results for selected tests')
-  Progress bar set to fraction 0.0, text 'All 0 tests completed at 14May16:42:02'
+  Progress bar set to fraction 0.0, text 'All 0 tests completed at 19Oct16:11:52'
 ...........
 
 Showing Test Tree with columns: Tests: All 0 selected , Details
@@ -22,7 +22,7 @@ Viewing page 'Status'
 Showing Test Status View with columns: Status , Number , Visible
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 14May16:42:02.' , Image 'throbber_inactive.png'
+'TextTest started at 19Oct16:11:52.' , Image 'throbber_inactive.png'
 --------------------------------------------------------------------------------------------
 
 Progress bar set to fraction 0.0, text '0 of 1 tests completed'
@@ -189,6 +189,8 @@ Changing GUI status to: 'Rereading configuration for HELLO test-case Basic ...'
 
 Changing GUI status to: 'Rereading configuration for HELLO test-case Basic2 ...'
 
+Waiting for application event 'completion of recomputation' to occur.
+
 Changing GUI status to: 'Recomputing status of HELLO test-case Basic ...'
 
 Updated : Test Tree with columns: Tests: All 2 selected, none hidden , Details
@@ -220,6 +222,8 @@ Updated : Test Tree with columns: Tests: All 2 selected, none hidden , Details
 ->     Basic2 (black/LightGoldenrod1) | (LightGoldenrod1)   ***
 
 Changing GUI status to: 'Recomputed status of 2 tests.'
+
+Expected application event 'completion of recomputation' occurred, proceeding.
 
 'view actions for file' event created with arguments 'output.hello'
 
@@ -259,6 +263,11 @@ Waiting for application event 'the graphical difference program to terminate' to
 
 Changing GUI status to: 'Started "tkdiff output.hellocmp output.hellopartcmp" in background (from test Basic).'
 
+Changed selection in File Tree with columns: Sample from 2 tests , Details
+-> Comparison Files (bold)
+->   errors.hello (DarkSeaGreen2) | (DarkSeaGreen2)
+->   output.hello (salmon) | (salmon)
+
 Updated : Test Tree with columns: Tests: All 2 selected, none hidden , Details
 -> TargetApp (hello) (black/white,bold) | (white)
 ->   Suite1 (black/white,bold) | (white)
@@ -267,18 +276,13 @@ Updated : Test Tree with columns: Tests: All 2 selected, none hidden , Details
 
 Greyed out : _Kill
 
-Progress bar set to fraction 1.0, text 'All 2 tests completed at 14May16:42:04'
+Progress bar set to fraction 1.0, text 'All 2 tests completed at 19Oct16:11:59'
 
 Updated : Test Tree with columns: Tests: All 2 selected, none hidden , Details
 -> TargetApp (hello) (black/white,bold) | (white)
 ->   Suite1 (black/white,bold) | (white)
 ->     Basic (black/salmon) | output different (salmon)   ***
 ->     Basic2 (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
-
-Changed selection in File Tree with columns: Sample from 2 tests , Details
--> Comparison Files (bold)
-->   errors.hello (DarkSeaGreen2) | (DarkSeaGreen2)
-->   output.hello (salmon) | (salmon)
 
 Expected application event 'completion of test actions' occurred, proceeding.
 Expected application event 'the graphical difference program to terminate' occurred, proceeding.

@@ -1,5 +1,5 @@
 
----------- Window 'SLEEP.killing2 tests (started at 07Jun15:02:01) - TextTest dynamic GUI' ----------
+---------- Window 'SLEEP.killing2 tests (started at 19Oct16:40:45) - TextTest dynamic GUI' ----------
 Focus widget is 'Test Tree'
 
 Menu Bar : '_File' (+) , '_View' (+) , '_Actions' (+) , '_Help' (+)
@@ -8,7 +8,7 @@ Tool Bar :
   _Quit (Stock image 'gtk-quit', accelerator 'Ctrl+Q', tooltip 'Quit')
   _Kill (Stock image 'gtk-stop', greyed out, accelerator 'Ctrl+Delete', tooltip 'Kill selected tests')
   _Save (Stock image 'gtk-save', greyed out, accelerator 'Ctrl+S', tooltip 'Save results for selected tests')
-  Progress bar set to fraction 0.0, text 'All 0 tests completed at 07Jun15:02:04'
+  Progress bar set to fraction 0.0, text 'All 0 tests completed at 19Oct16:40:45'
 ...........
 
 Showing Test Tree with columns: Tests: All 0 selected , Details
@@ -22,7 +22,7 @@ Viewing page 'Status'
 Showing Test Status View with columns: Status , Number , Visible
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 07Jun15:02:04.' , Image 'throbber_inactive.png'
+'TextTest started at 19Oct16:40:45.' , Image 'throbber_inactive.png'
 ----------------------------------------------------------------------------------------------------
 
 Progress bar set to fraction 0.0, text '0 of 1 tests completed'
@@ -90,6 +90,8 @@ To obtain the latest progress information and an up-to-date comparison of the fi
 
 'recompute test status, including progress information if appropriate' event created with arguments ''
 
+Waiting for application event 'completion of recomputation' to occur.
+
 Changing GUI status to: 'Recomputing status of SLEEP.killing2 test-case Basic ...'
 
 Updated : Test Tree with columns: Tests: All 1 selected, none hidden , Details
@@ -106,44 +108,31 @@ To obtain the latest progress information and an up-to-date comparison of the fi
 
 Changing GUI status to: 'Recomputed status of 1 test.'
 
+Expected application event 'completion of recomputation' occurred, proceeding.
+
+'kill selected tests' event created with arguments ''
+
+Changing GUI status to: 'Killing 1 tests ...'
+
+Changing GUI status to: 'Performed 'Kill selected tests' on test Basic.'
+
 'quit' event created with arguments ''
 
 Changing GUI status to: 'Waiting for all tests to terminate ...'
 
+Greyed out : _Kill
+
+Progress bar set to fraction 1.0, text 'All 1 tests completed at 19Oct16:40:47'
+
 Updated : Test Tree with columns: Tests: All 1 selected, none hidden , Details
 -> TargetApp (sleep.killing2) (black/white,bold) | (white)
-->   Basic (black/LightGoldenrod1) | (LightGoldenrod1)   ***
+->   Basic (black/salmon) | no report, possibly killed with SIGKILL (salmon)   ***
 
 Updated : File Tree with columns: Basic , Details
 -> Temporary Files
 
 ========== Text Info ==========
-Filtering and comparing newly generated result files on gewoia
-
-To obtain the latest progress information and an up-to-date comparison of the files above, perform 'recompute status' (press 'F5')
-===============================
-
-Greyed out : _Kill
-No longer greyed out : _Save
-
-Progress bar set to fraction 1.0, text 'All 1 tests completed at 07Jun15:02:05'
-
-Updated : Test Tree with columns: Tests: All 1 selected, none hidden , Details
--> TargetApp (sleep.killing2) (black/white,bold) | (white)
-->   Basic (black/salmon) | KILLED (salmon)   ***
-
-Updated : File Tree with columns: Basic , Details
--> Comparison Files (bold)
-->   errors.sleep (DarkSeaGreen2) | (DarkSeaGreen2)
-->   output.sleep (salmon) | (salmon)
-
-========== Text Info ==========
-Test were terminated before completion (KILLED) on gewoia :
-Test killed explicitly at 15:00
----------- Differences in output ----------
-1,2c1
-< Sleeping for 5 seconds...
-< Done
----
-> Sleeping for 1000 seconds...
+Test were terminated before completion :
+no report, possibly killed with SIGKILL
+No accounting info found as quitting...
 ===============================
