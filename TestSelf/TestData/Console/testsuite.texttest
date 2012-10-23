@@ -1,6 +1,9 @@
 # Check we can copy a writeable directory structure. Also run queuesystem slave in that configuration, to check data file handling on termination.
 CopyTestPath
 
+# Check where the files end up if we have a separate local sandbox
+LocalTmpDir
+
 # Make sure we can copy a lone test file, edit it, and notice the edit
 EditTestFile
 

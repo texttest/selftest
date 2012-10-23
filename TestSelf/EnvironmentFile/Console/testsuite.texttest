@@ -38,11 +38,11 @@ MultipassEnvFile
 # Testing using environment files in the environment_directory
 ExtraEnvironmentDirectory
 
-# Check we can refer to the sandbox variable in appropriate ways
-SandboxVariable
-
 # Shouldn't crash if somewhat creates a file with a section name
 SectionNames
 
 # Check we correctly expand variables that refer to themselves and to others
 SelfReference
+
+# Tests for the various sandbox variables references
+SandboxVariables
