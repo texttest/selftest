@@ -1,5 +1,5 @@
 
----------- Window 'HELLO test management - TextTest static GUI' ----------
+---------- Window 'VideoStore test management - TextTest static GUI' ----------
 Focus widget is 'Test Tree'
 
 Menu Bar : '_File' (+) , '_Edit' (+) , '_View' (+) , '_Actions' (+) , '_Help' (+)
@@ -37,39 +37,48 @@ Button 'Filter' (Stock image 'gtk-find', accelerator 'Ctrl+F', tooltip 'filter t
 Button 'Reset Tab' (tooltip 'Reset all the settings in the current tab to their default values')
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 23Oct16:25:47.' , Image 'throbber_inactive.png'
---------------------------------------------------------------------------
+'TextTest started at 23Oct15:59:46.' , Image 'throbber_inactive.png'
+-------------------------------------------------------------------------------
 
 Changing GUI status to: 'Reading tests ...'
 
 Column titles changed in Test Tree with columns: Tests: 0/1 selected
 
-Updated : Test Tree with columns: Tests: 0/1 selected
--> TargetApp (hello) (black/grey90,bold)
-->   Test (black/grey90)
-Updated drop-down list in 'Test-file to search' Text entry (set to 'errors') (drop-down list containing ['errors', 'output'])
+Column titles changed in Test Tree with columns: Tests: 0/2 selected
 
-Changing GUI status to: 'Reading tests completed at 23Oct16:25:47.'
+Updated : Test Tree with columns: Tests: 0/2 selected
+-> TargetApp (gui) (black/grey90,bold)
+->   AddMovies (black/grey90)
+->   suite (black/grey90,bold)
+->     AddMovie (black/grey90)
+Updated drop-down list in 'Test-file to search' Text entry (set to 'fake_usecase_file') (drop-down list containing ['fake_usecase_file', 'options', 'usecase', '----------', 'errors', 'output'])
+
+Changing GUI status to: 'Reading tests completed at 23Oct15:59:46.'
 
 Expected application event 'all tests to be read' occurred, proceeding.
 
-'set test selection to' event created with arguments 'Test'
+'set test selection to' event created with arguments 'AddMovie'
 
 No longer greyed out : _Run
 
-Changed selection in Test Tree with columns: Tests: All 1 selected
--> TargetApp (hello) (black/grey90,bold)
-->   Test (black/grey90)   ***
+Changed selection in Test Tree with columns: Tests: 1/2 selected
+-> TargetApp (gui) (black/grey90,bold)
+->   AddMovies (black/grey90)
+->   suite (black/grey90,bold)
+->     AddMovie (black/grey90)   ***
 
 Current page changed in Notebook with tabs: Test , Selection , Running , Config
 Viewing page 'Test'
 ...........
 
-Showing File Tree with columns: Test
+Showing File Tree with columns: AddMovie
 -> Standard Files (white,bold)
-->   errors.hello (grey90)
-->   output.hello (grey90)
--> Definition Files (white)
+->   errors.gui (grey90)
+->   output.gui (grey90)
+-> Definition Files (white,bold)
+->   options.gui (grey90)
+->   usecase.gui (grey90)
+->   fake_usecase_file.gui (grey90)
 
 ------------------------------ (horizontal pane separator)
 ...........
@@ -80,72 +89,8 @@ Description:
 <No description provided>
 
 Full path:
-Test
+suite/AddMovie
 ===============================
-
-'run selected tests' event created with arguments ''
-
-Waiting for application event 'dynamic GUI to be closed' to occur.
-
-Changing GUI status to: 'Started test Test at 23Oct16:25:47.'
-
-Updated : File Tree with columns: Test
--> Standard Files (white,bold)
-->   errors.hello (grey90)
-->   output.hello (grey90)
--> Definition Files (white,bold)
-->   config.hello (grey90)
-
-Expected application event 'dynamic GUI to be closed' occurred, proceeding.
-
-'view actions for file' event created with arguments 'output.hello'
-
-Changed selection in File Tree with columns: Test
--> Standard Files (white,bold)
-->   errors.hello (grey90)
-->   output.hello (grey90)   ***
--> Definition Files (white,bold)
-->   config.hello (grey90)
-
-========== Text Info ==========
-
-Description:
-<No description provided>
-
-Full path:
-Test
-
-Preview of output.hello:
-Hello
-===============================
-
----------- Popup Window ----------
-'View File' (Stock image 'gtk-open', accelerator 'Ctrl+O')
-'Test Filtering'
-'_File Properties' (Stock image 'gtk-properties')
-'Copy Path To Clipboard'
-  ----
-'Create/_Import' (Stock image 'gtk-new', accelerator 'Ctrl+N')
-  ----
-'_Rename...' (Stock image 'gtk-italic')
-'Remove...' (Stock image 'gtk-delete')
-----------------------------------
-
-'test the run-dependent text filtering' event created with arguments ''
-
-Changing GUI status to: 'Performed 'Test Filtering' on test Test.'
-
----------- Dialog 'Filtered contents of output.hello' ----------
-Default widget is 'gtk-close'
-
-========== GtkTextView ==========
-Hello
-=================================
----------------
-Stock Button 'gtk-close'
-----------------------------------------------------------------
-
-'close file-viewing window' event created with arguments ''
 
 'show actions menu' event created with arguments ''
 
@@ -155,67 +100,29 @@ Stock Button 'gtk-close'
   ----
 '_Run' (Stock image 'gtk-execute', accelerator 'Ctrl+R')
 'Re_connect...' (Stock image 'gtk-connect', accelerator 'Shift+Ctrl+R')
-'Record _Use-Case' (Stock image 'gtk-media-record', greyed out, accelerator 'F9')
+'Record _Use-Case' (Stock image 'gtk-media-record', accelerator 'F9')
 'Replace Text in Files'
-'Insert Shortcuts into Usecases' (greyed out)
+'Insert Shortcuts into Usecases'
   ----
 'Refresh' (Stock image 'gtk-refresh', accelerator 'F5')
 'R_eset' (Stock image 'gtk-revert-to-saved', accelerator 'Ctrl+E')
 ----------------------------------
 
-'refresh the whole test suite so that it reflects file changes' event created with arguments ''
+'insert shortcuts into usecases' event created with arguments ''
 
-Changing GUI status to: 'Refreshing the whole test suite...'
+Waiting for application event 'script GUI to be closed' to occur.
 
-Updated : File Tree with columns: Test
+Changing GUI status to: 'Inserted shortcuts into usecases for test suite/AddMovie at 23Oct15:59:46.'
+
+Updated : File Tree with columns: AddMovie
 -> Standard Files (white,bold)
-->   errors.hello (grey90)
-->   output.hello (grey90)   ***
+->   errors.gui (grey90)
+->   output.gui (grey90)
 -> Definition Files (white,bold)
-->   config.hello (grey90)
+->   options.gui (grey90)
+->   usecase.gui (grey90)
+->   fake_usecase_file.gui (grey90)
 
-========== Text Info ==========
+Expected application event 'script GUI to be closed' occurred, proceeding.
 
-Description:
-<No description provided>
-
-Full path:
-Test
-
-Preview of output.hello:
-Hello
-===============================
-
-Changing GUI status to: 'Refreshed the test suite from the files'
-
-'view actions for file' event created with arguments 'output.hello'
-
----------- Popup Window ----------
-'View File' (Stock image 'gtk-open', accelerator 'Ctrl+O')
-'Test Filtering'
-'_File Properties' (Stock image 'gtk-properties')
-'Copy Path To Clipboard'
-  ----
-'Create/_Import' (Stock image 'gtk-new', accelerator 'Ctrl+N')
-  ----
-'_Rename...' (Stock image 'gtk-italic')
-'Remove...' (Stock image 'gtk-delete')
-----------------------------------
-
-'test the run-dependent text filtering' event created with arguments ''
-
-Changing GUI status to: 'Performed 'Test Filtering' on test Test.'
-
----------- Dialog 'Filtered contents of output.hello' ----------
-Default widget is 'gtk-close'
-
-========== GtkTextView ==========
-
-=================================
----------------
-Stock Button 'gtk-close'
-----------------------------------------------------------------
-
-'close file-viewing window' event created with arguments ''
-
-'quit' event created with arguments ''
+'close window' event created with arguments ''
