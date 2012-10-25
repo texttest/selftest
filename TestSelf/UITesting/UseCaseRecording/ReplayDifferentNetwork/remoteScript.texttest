@@ -1,13 +1,15 @@
 #!/bin/sh
 
-cd ${HOME}'/.texttest/tmp/dynamic_gui.10Nov214820.28694/gui/suite/AddMovie'
-PATH=${HOME}'/.texttest/tmp/dynamic_gui.10Nov214820.28694/gui/suite/AddMovie:'${PATH}
+cd ${HOME}'/.texttest/tmp/dynamic_gui.25Oct134639.25303/gui/suite/AddMovie'
+PATH=${HOME}'/.texttest/tmp/dynamic_gui.25Oct134639.25303/gui/suite/AddMovie:'${PATH}
 export PATH
-STORYTEXT_HOME=${HOME}'/.texttest/tmp/dynamic_gui.10Nov214820.28694/storytext_files'
+STORYTEXT_HOME=${HOME}'/.texttest/tmp/dynamic_gui.25Oct134639.25303/storytext_files'
 export STORYTEXT_HOME
-USECASE_RECORD_SCRIPT=${HOME}'/.texttest/tmp/dynamic_gui.10Nov214820.28694/gui/suite/AddMovie/usecase.gui'
+TEXTTEST_LOG_DIR=${HOME}'/.texttest/tmp/dynamic_gui.25Oct134639.25303/gui/suite/AddMovie'
+export TEXTTEST_LOG_DIR
+USECASE_RECORD_SCRIPT=${HOME}'/.texttest/tmp/dynamic_gui.25Oct134639.25303/gui/suite/AddMovie/usecase.gui'
 export USECASE_RECORD_SCRIPT
-USECASE_REPLAY_SCRIPT=${HOME}'/.texttest/tmp/dynamic_gui.10Nov214820.28694/gui/suite/AddMovie/replay_usecase'
+USECASE_REPLAY_SCRIPT=${HOME}'/.texttest/tmp/dynamic_gui.25Oct134639.25303/gui/suite/AddMovie/replay_usecase'
 export USECASE_REPLAY_SCRIPT
 echo "kill $$" > kill_test.sh
-exec storytext ${HOME}/.texttest/tmp/dynamic_gui.10Nov214820.28694/system_under_test/source_with_pyc/videostore.py
+exec storytext ${HOME}/.texttest/tmp/dynamic_gui.25Oct134639.25303/system_under_test/source_with_pyc/videostore.py

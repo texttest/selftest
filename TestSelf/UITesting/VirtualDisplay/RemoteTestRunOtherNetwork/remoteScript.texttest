@@ -1,11 +1,13 @@
 #!/bin/sh
 
-cd ${HOME}'/.texttest/tmp/console.10Nov213828.20379/disp/Test'
+cd ${HOME}'/.texttest/tmp/console.25Oct121745.8775/disp/Test'
 DISPLAY='fake_machine1:3979.0'
 export DISPLAY
-PATH=${HOME}'/.texttest/tmp/console.10Nov213828.20379/disp/Test:'${PATH}
+PATH=${HOME}'/.texttest/tmp/console.25Oct121745.8775/disp/Test:'${PATH}
 export PATH
-STORYTEXT_HOME=${HOME}'/.texttest/tmp/console.10Nov213828.20379/ui_simulation_files'
+STORYTEXT_HOME=${HOME}'/.texttest/tmp/console.25Oct121745.8775/ui_simulation_files'
 export STORYTEXT_HOME
+TEXTTEST_LOG_DIR=${HOME}'/.texttest/tmp/console.25Oct121745.8775/disp/Test'
+export TEXTTEST_LOG_DIR
 echo "kill $$" > kill_test.sh
-exec python ${HOME}/.texttest/tmp/console.10Nov213828.20379/system_under_test/display.py
+exec python ${HOME}/.texttest/tmp/console.25Oct121745.8775/system_under_test/display.py

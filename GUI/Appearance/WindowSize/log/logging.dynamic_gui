@@ -36,7 +36,7 @@ level=INFO
 class=FileHandler
 #formatter=timed
 #args=(os.devnull, 'a')
-args=('dynamic_gui_log.texttest', 'a')
+args=('%(TEXTTEST_LOG_DIR)s/dynamic_gui_log.texttest', 'a')
 
 # ======= Section for storytext replay log ======
 [logger_storytext replay log]
@@ -61,7 +61,7 @@ qualname=Action Runner
 class=FileHandler
 formatter=debug
 args=(os.devnull, 'a')
-#args=('actionrunner.texttest', 'a')
+#args=('%(TEXTTEST_LOG_DIR)s/actionrunner.texttest', 'a')
 
 # ======= Section for Activator ======
 [logger_Activator]
@@ -73,7 +73,7 @@ qualname=Activator
 class=FileHandler
 formatter=debug
 args=(os.devnull, 'a')
-#args=('activator.texttest', 'a')
+#args=('%(TEXTTEST_LOG_DIR)s/activator.texttest', 'a')
 
 # ======= Section for Check For Bugs ======
 [logger_Check For Bugs]
@@ -85,7 +85,7 @@ qualname=Check For Bugs
 class=FileHandler
 formatter=debug
 args=(os.devnull, 'a')
-#args=('checkforbugs.texttest', 'a')
+#args=('%(TEXTTEST_LOG_DIR)s/checkforbugs.texttest', 'a')
 
 # ======= Section for Collate Files ======
 [logger_Collate Files]
@@ -97,7 +97,7 @@ qualname=Collate Files
 class=FileHandler
 formatter=debug
 args=(os.devnull, 'a')
-#args=('collatefiles.texttest', 'a')
+#args=('%(TEXTTEST_LOG_DIR)s/collatefiles.texttest', 'a')
 
 # ======= Section for Environment Creator ======
 [logger_Environment Creator]
@@ -109,7 +109,7 @@ qualname=Environment Creator
 class=FileHandler
 formatter=debug
 args=(os.devnull, 'a')
-#args=('environmentcreator.texttest', 'a')
+#args=('%(TEXTTEST_LOG_DIR)s/environmentcreator.texttest', 'a')
 
 # ======= Section for File View GUI ======
 [logger_File View GUI]
@@ -121,7 +121,7 @@ qualname=File View GUI
 class=FileHandler
 formatter=debug
 args=(os.devnull, 'a')
-#args=('fileviewgui.texttest', 'a')
+#args=('%(TEXTTEST_LOG_DIR)s/fileviewgui.texttest', 'a')
 
 # ======= Section for FileComparison ======
 [logger_FileComparison]
@@ -133,7 +133,7 @@ qualname=FileComparison
 class=FileHandler
 formatter=debug
 args=(os.devnull, 'a')
-#args=('filecomparison.texttest', 'a')
+#args=('%(TEXTTEST_LOG_DIR)s/filecomparison.texttest', 'a')
 
 # ======= Section for Filter Actions ======
 [logger_Filter Actions]
@@ -145,7 +145,7 @@ qualname=Filter Actions
 class=FileHandler
 formatter=debug
 args=(os.devnull, 'a')
-#args=('filteractions.texttest', 'a')
+#args=('%(TEXTTEST_LOG_DIR)s/filteractions.texttest', 'a')
 
 # ======= Section for Find Applications ======
 [logger_Find Applications]
@@ -157,7 +157,7 @@ qualname=Find Applications
 class=FileHandler
 formatter=debug
 args=(os.devnull, 'a')
-#args=('findapplications.texttest', 'a')
+#args=('%(TEXTTEST_LOG_DIR)s/findapplications.texttest', 'a')
 
 # ======= Section for GUI notebook ======
 [logger_GUI notebook]
@@ -169,7 +169,7 @@ qualname=GUI notebook
 class=FileHandler
 formatter=debug
 args=(os.devnull, 'a')
-#args=('guinotebook.texttest', 'a')
+#args=('%(TEXTTEST_LOG_DIR)s/guinotebook.texttest', 'a')
 
 # ======= Section for GenerateWebPages ======
 [logger_GenerateWebPages]
@@ -181,7 +181,7 @@ qualname=GenerateWebPages
 class=FileHandler
 formatter=debug
 args=(os.devnull, 'a')
-#args=('generatewebpages.texttest', 'a')
+#args=('%(TEXTTEST_LOG_DIR)s/generatewebpages.texttest', 'a')
 
 # ======= Section for Idle Handlers ======
 [logger_Idle Handlers]
@@ -193,7 +193,7 @@ qualname=Idle Handlers
 class=FileHandler
 formatter=debug
 args=(os.devnull, 'a')
-#args=('idlehandlers.texttest', 'a')
+#args=('%(TEXTTEST_LOG_DIR)s/idlehandlers.texttest', 'a')
 
 # ======= Section for Interactive Actions ======
 [logger_Interactive Actions]
@@ -205,7 +205,7 @@ qualname=Interactive Actions
 class=FileHandler
 formatter=debug
 args=(os.devnull, 'a')
-#args=('interactiveactions.texttest', 'a')
+#args=('%(TEXTTEST_LOG_DIR)s/interactiveactions.texttest', 'a')
 
 # ======= Section for JUnit Report Writer ======
 [logger_JUnit Report Writer]
@@ -217,7 +217,7 @@ qualname=JUnit Report Writer
 class=FileHandler
 formatter=debug
 args=(os.devnull, 'a')
-#args=('junitreportwriter.texttest', 'a')
+#args=('%(TEXTTEST_LOG_DIR)s/junitreportwriter.texttest', 'a')
 
 # ======= Section for Mail Sender ======
 [logger_Mail Sender]
@@ -229,7 +229,7 @@ qualname=Mail Sender
 class=FileHandler
 formatter=debug
 args=(os.devnull, 'a')
-#args=('mailsender.texttest', 'a')
+#args=('%(TEXTTEST_LOG_DIR)s/mailsender.texttest', 'a')
 
 # ======= Section for Menu Bar ======
 [logger_Menu Bar]
@@ -241,7 +241,7 @@ qualname=Menu Bar
 class=FileHandler
 formatter=debug
 args=(os.devnull, 'a')
-#args=('menubar.texttest', 'a')
+#args=('%(TEXTTEST_LOG_DIR)s/menubar.texttest', 'a')
 
 # ======= Section for MultiEntryDictionary ======
 [logger_MultiEntryDictionary]
@@ -253,7 +253,7 @@ qualname=MultiEntryDictionary
 class=FileHandler
 formatter=debug
 args=(os.devnull, 'a')
-#args=('multientrydictionary.texttest', 'a')
+#args=('%(TEXTTEST_LOG_DIR)s/multientrydictionary.texttest', 'a')
 
 # ======= Section for Observable ======
 [logger_Observable]
@@ -265,7 +265,7 @@ qualname=Observable
 class=FileHandler
 formatter=debug
 args=(os.devnull, 'a')
-#args=('observable.texttest', 'a')
+#args=('%(TEXTTEST_LOG_DIR)s/observable.texttest', 'a')
 
 # ======= Section for Prepare Writedir ======
 [logger_Prepare Writedir]
@@ -277,7 +277,7 @@ qualname=Prepare Writedir
 class=FileHandler
 formatter=debug
 args=(os.devnull, 'a')
-#args=('preparewritedir.texttest', 'a')
+#args=('%(TEXTTEST_LOG_DIR)s/preparewritedir.texttest', 'a')
 
 # ======= Section for Progress Monitor ======
 [logger_Progress Monitor]
@@ -289,7 +289,7 @@ qualname=Progress Monitor
 class=FileHandler
 formatter=debug
 args=(os.devnull, 'a')
-#args=('progressmonitor.texttest', 'a')
+#args=('%(TEXTTEST_LOG_DIR)s/progressmonitor.texttest', 'a')
 
 # ======= Section for Queue System Submit ======
 [logger_Queue System Submit]
@@ -301,7 +301,7 @@ qualname=Queue System Submit
 class=FileHandler
 formatter=debug
 args=(os.devnull, 'a')
-#args=('queuesystemsubmit.texttest', 'a')
+#args=('%(TEXTTEST_LOG_DIR)s/queuesystemsubmit.texttest', 'a')
 
 # ======= Section for Reconnection ======
 [logger_Reconnection]
@@ -313,7 +313,7 @@ qualname=Reconnection
 class=FileHandler
 formatter=debug
 args=(os.devnull, 'a')
-#args=('reconnection.texttest', 'a')
+#args=('%(TEXTTEST_LOG_DIR)s/reconnection.texttest', 'a')
 
 # ======= Section for Run Dependent Text ======
 [logger_Run Dependent Text]
@@ -325,7 +325,7 @@ qualname=Run Dependent Text
 class=FileHandler
 formatter=debug
 args=(os.devnull, 'a')
-#args=('rundependenttext.texttest', 'a')
+#args=('%(TEXTTEST_LOG_DIR)s/rundependenttext.texttest', 'a')
 
 # ======= Section for Save Repository ======
 [logger_Save Repository]
@@ -337,7 +337,7 @@ qualname=Save Repository
 class=FileHandler
 formatter=debug
 args=(os.devnull, 'a')
-#args=('saverepository.texttest', 'a')
+#args=('%(TEXTTEST_LOG_DIR)s/saverepository.texttest', 'a')
 
 # ======= Section for Select Tests ======
 [logger_Select Tests]
@@ -349,7 +349,7 @@ qualname=Select Tests
 class=FileHandler
 formatter=debug
 args=(os.devnull, 'a')
-#args=('selecttests.texttest', 'a')
+#args=('%(TEXTTEST_LOG_DIR)s/selecttests.texttest', 'a')
 
 # ======= Section for Slave Server ======
 [logger_Slave Server]
@@ -361,7 +361,7 @@ qualname=Slave Server
 class=FileHandler
 formatter=debug
 args=(os.devnull, 'a')
-#args=('slaveserver.texttest', 'a')
+#args=('%(TEXTTEST_LOG_DIR)s/slaveserver.texttest', 'a')
 
 # ======= Section for Test Column GUI ======
 [logger_Test Column GUI]
@@ -373,7 +373,7 @@ qualname=Test Column GUI
 class=FileHandler
 formatter=debug
 args=(os.devnull, 'a')
-#args=('testcolumngui.texttest', 'a')
+#args=('%(TEXTTEST_LOG_DIR)s/testcolumngui.texttest', 'a')
 
 # ======= Section for Test Tree ======
 [logger_Test Tree]
@@ -385,7 +385,7 @@ qualname=Test Tree
 class=FileHandler
 formatter=debug
 args=(os.devnull, 'a')
-#args=('testtree.texttest', 'a')
+#args=('%(TEXTTEST_LOG_DIR)s/testtree.texttest', 'a')
 
 # ======= Section for TestComparison ======
 [logger_TestComparison]
@@ -397,7 +397,7 @@ qualname=TestComparison
 class=FileHandler
 formatter=debug
 args=(os.devnull, 'a')
-#args=('testcomparison.texttest', 'a')
+#args=('%(TEXTTEST_LOG_DIR)s/testcomparison.texttest', 'a')
 
 # ======= Section for TestSelectionFilter ======
 [logger_TestSelectionFilter]
@@ -409,19 +409,19 @@ qualname=TestSelectionFilter
 class=FileHandler
 formatter=debug
 args=(os.devnull, 'a')
-#args=('testselectionfilter.texttest', 'a')
+#args=('%(TEXTTEST_LOG_DIR)s/testselectionfilter.texttest', 'a')
 
 # ======= Section for Top Window ======
 [logger_Top Window]
-handlers=gui log
+handlers=Top Window
 qualname=Top Window
-level=INFO
+#level=INFO
 
 [handler_Top Window]
 class=FileHandler
 formatter=debug
 args=(os.devnull, 'a')
-#args=('topwindow.texttest', 'a')
+#args=('%(TEXTTEST_LOG_DIR)s/topwindow.texttest', 'a')
 
 # ======= Section for Unique Names ======
 [logger_Unique Names]
@@ -433,7 +433,7 @@ qualname=Unique Names
 class=FileHandler
 formatter=debug
 args=(os.devnull, 'a')
-#args=('uniquenames.texttest', 'a')
+#args=('%(TEXTTEST_LOG_DIR)s/uniquenames.texttest', 'a')
 
 # ======= Section for application ======
 [logger_application]
@@ -445,7 +445,7 @@ qualname=application
 class=FileHandler
 formatter=debug
 args=(os.devnull, 'a')
-#args=('application.texttest', 'a')
+#args=('%(TEXTTEST_LOG_DIR)s/application.texttest', 'a')
 
 # ======= Section for batch collect ======
 [logger_batch collect]
@@ -457,7 +457,7 @@ qualname=batch collect
 class=FileHandler
 formatter=debug
 args=(os.devnull, 'a')
-#args=('batchcollect.texttest', 'a')
+#args=('%(TEXTTEST_LOG_DIR)s/batchcollect.texttest', 'a')
 
 # ======= Section for catalogues ======
 [logger_catalogues]
@@ -469,7 +469,7 @@ qualname=catalogues
 class=FileHandler
 formatter=debug
 args=(os.devnull, 'a')
-#args=('catalogues.texttest', 'a')
+#args=('%(TEXTTEST_LOG_DIR)s/catalogues.texttest', 'a')
 
 # ======= Section for check for crashes ======
 [logger_check for crashes]
@@ -481,7 +481,7 @@ qualname=check for crashes
 class=FileHandler
 formatter=debug
 args=(os.devnull, 'a')
-#args=('checkforcrashes.texttest', 'a')
+#args=('%(TEXTTEST_LOG_DIR)s/checkforcrashes.texttest', 'a')
 
 # ======= Section for locks ======
 [logger_locks]
@@ -493,7 +493,7 @@ qualname=locks
 class=FileHandler
 formatter=debug
 args=(os.devnull, 'a')
-#args=('locks.texttest', 'a')
+#args=('%(TEXTTEST_LOG_DIR)s/locks.texttest', 'a')
 
 # ======= Section for makeperformance ======
 [logger_makeperformance]
@@ -505,7 +505,7 @@ qualname=makeperformance
 class=FileHandler
 formatter=debug
 args=(os.devnull, 'a')
-#args=('makeperformance.texttest', 'a')
+#args=('%(TEXTTEST_LOG_DIR)s/makeperformance.texttest', 'a')
 
 # ======= Section for option finder ======
 [logger_option finder]
@@ -517,7 +517,7 @@ qualname=option finder
 class=FileHandler
 formatter=debug
 args=(os.devnull, 'a')
-#args=('optionfinder.texttest', 'a')
+#args=('%(TEXTTEST_LOG_DIR)s/optionfinder.texttest', 'a')
 
 # ======= Section for read environment ======
 [logger_read environment]
@@ -529,7 +529,7 @@ qualname=read environment
 class=FileHandler
 formatter=debug
 args=(os.devnull, 'a')
-#args=('readenvironment.texttest', 'a')
+#args=('%(TEXTTEST_LOG_DIR)s/readenvironment.texttest', 'a')
 
 # ======= Section for remote commands ======
 [logger_remote commands]
@@ -541,7 +541,7 @@ qualname=remote commands
 class=FileHandler
 formatter=debug
 args=(os.devnull, 'a')
-#args=('remotecommands.texttest', 'a')
+#args=('%(TEXTTEST_LOG_DIR)s/remotecommands.texttest', 'a')
 
 # ======= Section for run test ======
 [logger_run test]
@@ -553,7 +553,7 @@ qualname=run test
 class=FileHandler
 formatter=debug
 args=(os.devnull, 'a')
-#args=('runtest.texttest', 'a')
+#args=('%(TEXTTEST_LOG_DIR)s/runtest.texttest', 'a')
 
 # ======= Section for test objects ======
 [logger_test objects]
@@ -565,7 +565,7 @@ qualname=test objects
 class=FileHandler
 formatter=debug
 args=(os.devnull, 'a')
-#args=('testobjects.texttest', 'a')
+#args=('%(TEXTTEST_LOG_DIR)s/testobjects.texttest', 'a')
 
 # ======= Section for virtual display ======
 [logger_virtual display]
@@ -577,7 +577,55 @@ qualname=virtual display
 class=FileHandler
 formatter=debug
 args=(os.devnull, 'a')
-#args=('virtualdisplay.texttest', 'a')
+#args=('%(TEXTTEST_LOG_DIR)s/virtualdisplay.texttest', 'a')
+
+# ======= Section for Centre finding ======
+[logger_Centre finding]
+handlers=Centre finding
+qualname=Centre finding
+#level=DEBUG
+
+[handler_Centre finding]
+class=FileHandler
+formatter=debug
+args=(os.devnull, 'a')
+#args=('%(TEXTTEST_LOG_DIR)s/centrefinding.texttest', 'a')
+
+# ======= Section for Eclipse RCP jobs ======
+[logger_Eclipse RCP jobs]
+handlers=Eclipse RCP jobs
+qualname=Eclipse RCP jobs
+#level=DEBUG
+
+[handler_Eclipse RCP jobs]
+class=FileHandler
+formatter=debug
+args=(os.devnull, 'a')
+#args=('%(TEXTTEST_LOG_DIR)s/eclipsercpjobs.texttest', 'a')
+
+# ======= Section for Shortcut Tracker ======
+[logger_Shortcut Tracker]
+handlers=Shortcut Tracker
+qualname=Shortcut Tracker
+#level=DEBUG
+
+[handler_Shortcut Tracker]
+class=FileHandler
+formatter=debug
+args=(os.devnull, 'a')
+#args=('%(TEXTTEST_LOG_DIR)s/shortcuttracker.texttest', 'a')
+
+# ======= Section for TableIndexer ======
+[logger_TableIndexer]
+handlers=TableIndexer
+qualname=TableIndexer
+#level=DEBUG
+
+[handler_TableIndexer]
+class=FileHandler
+formatter=debug
+args=(os.devnull, 'a')
+#args=('%(TEXTTEST_LOG_DIR)s/tableindexer.texttest', 'a')
 
 # ======= Section for TreeModelIndexer ======
 [logger_TreeModelIndexer]
@@ -589,7 +637,7 @@ qualname=TreeModelIndexer
 class=FileHandler
 formatter=debug
 args=(os.devnull, 'a')
-#args=('treemodelindexer.texttest', 'a')
+#args=('%(TEXTTEST_LOG_DIR)s/treemodelindexer.texttest', 'a')
 
 # ======= Section for TreeViewDescriber ======
 [logger_TreeViewDescriber]
@@ -601,7 +649,7 @@ qualname=TreeViewDescriber
 class=FileHandler
 formatter=debug
 args=(os.devnull, 'a')
-#args=('treeviewdescriber.texttest', 'a')
+#args=('%(TEXTTEST_LOG_DIR)s/treeviewdescriber.texttest', 'a')
 
 # ======= Section for gui map ======
 [logger_gui map]
@@ -613,7 +661,7 @@ qualname=gui map
 class=FileHandler
 formatter=debug
 args=(os.devnull, 'a')
-#args=('guimap.texttest', 'a')
+#args=('%(TEXTTEST_LOG_DIR)s/guimap.texttest', 'a')
 
 # ======= Section for storytext record ======
 [logger_storytext record]
@@ -625,14 +673,26 @@ qualname=storytext record
 class=FileHandler
 formatter=debug
 args=(os.devnull, 'a')
-#args=('storytextrecord.texttest', 'a')
+#args=('%(TEXTTEST_LOG_DIR)s/storytextrecord.texttest', 'a')
+
+# ======= Section for widget structure ======
+[logger_widget structure]
+handlers=widget structure
+qualname=widget structure
+#level=DEBUG
+
+[handler_widget structure]
+class=FileHandler
+formatter=debug
+args=(os.devnull, 'a')
+#args=('%(TEXTTEST_LOG_DIR)s/widgetstructure.texttest', 'a')
 
 # ====== Cruft that python logging module needs ======
 [loggers]
-keys=root,standard log,gui log,storytext replay log,kill processes,Action Runner,Activator,Check For Bugs,Collate Files,Environment Creator,File View GUI,FileComparison,Filter Actions,Find Applications,GUI notebook,GenerateWebPages,Idle Handlers,Interactive Actions,JUnit Report Writer,Mail Sender,Menu Bar,MultiEntryDictionary,Observable,Prepare Writedir,Progress Monitor,Queue System Submit,Reconnection,Run Dependent Text,Save Repository,Select Tests,Slave Server,Test Column GUI,Test Tree,TestComparison,TestSelectionFilter,Top Window,Unique Names,application,batch collect,catalogues,check for crashes,locks,makeperformance,option finder,read environment,remote commands,run test,test objects,virtual display,TreeModelIndexer,TreeViewDescriber,gui map,storytext record
+keys=root,standard log,gui log,storytext replay log,kill processes,Action Runner,Activator,Check For Bugs,Collate Files,Environment Creator,File View GUI,FileComparison,Filter Actions,Find Applications,GUI notebook,GenerateWebPages,Idle Handlers,Interactive Actions,JUnit Report Writer,Mail Sender,Menu Bar,MultiEntryDictionary,Observable,Prepare Writedir,Progress Monitor,Queue System Submit,Reconnection,Run Dependent Text,Save Repository,Select Tests,Slave Server,Test Column GUI,Test Tree,TestComparison,TestSelectionFilter,Top Window,Unique Names,application,batch collect,catalogues,check for crashes,locks,makeperformance,option finder,read environment,remote commands,run test,test objects,virtual display,Centre finding,Eclipse RCP jobs,Shortcut Tracker,TableIndexer,TreeModelIndexer,TreeViewDescriber,gui map,storytext record,widget structure
 
 [handlers]
-keys=root,Action Runner,Activator,Check For Bugs,Collate Files,Environment Creator,File View GUI,FileComparison,Filter Actions,Find Applications,GUI notebook,GenerateWebPages,Idle Handlers,Interactive Actions,JUnit Report Writer,Mail Sender,Menu Bar,MultiEntryDictionary,Observable,Prepare Writedir,Progress Monitor,Queue System Submit,Reconnection,Run Dependent Text,Save Repository,Select Tests,Slave Server,Test Column GUI,Test Tree,TestComparison,TestSelectionFilter,Top Window,TreeModelIndexer,TreeViewDescriber,Unique Names,application,batch collect,catalogues,check for crashes,gui log,gui map,locks,makeperformance,option finder,read environment,remote commands,run test,stdout,test objects,storytext record,virtual display
+keys=root,Action Runner,Activator,Centre finding,Check For Bugs,Collate Files,Eclipse RCP jobs,Environment Creator,File View GUI,FileComparison,Filter Actions,Find Applications,GUI notebook,GenerateWebPages,Idle Handlers,Interactive Actions,JUnit Report Writer,Mail Sender,Menu Bar,MultiEntryDictionary,Observable,Prepare Writedir,Progress Monitor,Queue System Submit,Reconnection,Run Dependent Text,Save Repository,Select Tests,Shortcut Tracker,Slave Server,TableIndexer,Test Column GUI,Test Tree,TestComparison,TestSelectionFilter,Top Window,TreeModelIndexer,TreeViewDescriber,Unique Names,application,batch collect,catalogues,check for crashes,gui log,gui map,locks,makeperformance,option finder,read environment,remote commands,run test,stdout,storytext record,test objects,virtual display,widget structure
 
 [formatters]
 keys=timed,debug
