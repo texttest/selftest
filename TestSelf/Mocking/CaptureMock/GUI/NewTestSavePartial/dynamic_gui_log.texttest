@@ -1,0 +1,557 @@
+
+---------- Window 'EDIT tests (started at 29Oct16:21:36) - TextTest dynamic GUI' ----------
+Focus widget is 'Test Tree'
+
+Menu Bar : '_File' (+) , '_View' (+) , '_Actions' (+) , '_Help' (+)
+
+Tool Bar :
+  _Quit (Stock image 'gtk-quit', accelerator 'Ctrl+Q', tooltip 'Quit')
+  _Kill (Stock image 'gtk-stop', greyed out, accelerator 'Ctrl+Delete', tooltip 'Kill selected tests')
+  _Save (Stock image 'gtk-save', greyed out, accelerator 'Ctrl+S', tooltip 'Save results for selected tests')
+  Progress bar set to fraction 0.0, text '0 of 1 tests completed'
+...........
+
+Showing Test Tree with columns: Tests: 0/1 selected, all hidden , Details
+
+------------------------------ (vertical pane separator)
+...........
+
+Showing Notebook with tabs: Status , Selection , Run Info
+Viewing page 'Status'
+
+Showing Test Status View with columns: Status , Number , Visible
+-> Not started (white,bold) | 1 (white,bold) | Check box (checked)
+'Shortcuts:' , Button '_New'
+...........
+'TextTest started at 29Oct16:21:36.' , Image 'throbber_inactive.png'
+-------------------------------------------------------------------------------------------
+
+Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
+-> TargetApp (edit) (black/white,bold) | (white)
+->   New (black/white) | (white)
+
+Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
+-> TargetApp (edit) (black/white,bold) | (white)
+->   New (black/LightGoldenrod1) | (LightGoldenrod1)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white) | 0 (white) | Check box (checked)
+-> Initial filter (LightGoldenrod1,bold) | 1 (LightGoldenrod1,bold) | Check box (checked)
+
+Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
+-> TargetApp (edit) (black/white,bold) | (white)
+->   New (black/LightGoldenrod1) | (LightGoldenrod1)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white) | 0 (white) | Check box (checked)
+-> Initial filter (white) | 0 (white) | Check box (checked)
+-> Running (LightGoldenrod1,bold) | 1 (LightGoldenrod1,bold) | Check box (checked)
+
+Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
+-> TargetApp (edit) (black/white,bold) | (white)
+->   New (black/LightGoldenrod1) | (LightGoldenrod1)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white) | 0 (white) | Check box (checked)
+-> Initial filter (white) | 0 (white) | Check box (checked)
+-> Running (white) | 0 (white) | Check box (checked)
+-> Final filter (LightGoldenrod1,bold) | 1 (LightGoldenrod1,bold) | Check box (checked)
+
+Progress bar set to fraction 1.0, text 'All 1 tests completed at 29Oct16:21:38'
+
+Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
+-> TargetApp (edit) (black/white,bold) | (white)
+->   New (black/salmon) | errors new(+) (salmon)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white) | 0 (white) | Check box (checked)
+-> Initial filter (white) | 0 (white) | Check box (checked)
+-> Running (white) | 0 (white) | Check box (checked)
+-> Final filter (white) | 0 (white) | Check box (checked)
+-> Failed (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->   New (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->     catalogue new (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->     editedfile new (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->     editedfile2 new (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->     editedfile3 new (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->     errors new (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->     externalmocks new (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->     output new (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+
+No longer greyed out : _Save
+
+Changed selection in Test Tree with columns: Tests: All 1 selected, none hidden , Details
+-> TargetApp (edit) (black/white,bold) | (white)
+->   New (black/salmon) | errors new(+) (salmon)   ***
+
+Current page changed in Notebook with tabs: Test , Status , Selection , Run Info
+Viewing page 'Test'
+...........
+
+Showing File Tree with columns: New , Details
+-> New Files (bold)
+->   catalogue.edit (salmon) | (salmon)
+->   editedfile.edit (salmon) | (salmon)
+->   editedfile2.edit (salmon) | (salmon)
+->   editedfile3.edit (salmon) | (salmon)
+->   errors.edit (salmon) | (salmon)
+->   externalmocks.edit (salmon) | (salmon)
+->   output.edit (salmon) | (salmon)
+
+------------------------------ (horizontal pane separator)
+...........
+
+========== Text Info ==========
+Test FAILED :
+---------- New result in catalogue ----------
+
+The following existing files/directories changed their contents:
+<Test Directory>
+----file
+----file2
+----writedir
+--------subdir
+------------file
+---------- New result in editedfile ----------
+dummy
+The Editor has made its mark
+The Editor has made its mark
+---------- New result in editedfile2 ----------
+dummy
+The Editor has made its mark
+---------- New result in editedfile3 ----------
+dummy
+The Editor has made its mark
+---------- New result in errors ----------
+---------- New result in externalmocks ----------
+<-CMD:editor file
+->FIL:file
+->OUT:Editing file file
+<-CMD:editor file2
+->FIL:file2
+->OUT:Editing file file2
+<-CMD:editor writedir
+->FIL:writedir
+->OUT:Editing file writedir/subdir/file
+<-CMD:editor file
+->FIL:file.edit_2
+->OUT:Editing file file
+---------- New result in output ----------
+Editing file file
+Editing file file2
+Editing file writedir/subdir/file
+Editing file file
+===============================
+
+Expected application event 'completion of test actions' occurred, proceeding.
+
+'set file selection to' event created with arguments 'externalmocks.edit'
+
+Changed selection in File Tree with columns: New , Details
+-> New Files (bold)
+->   catalogue.edit (salmon) | (salmon)
+->   editedfile.edit (salmon) | (salmon)
+->   editedfile2.edit (salmon) | (salmon)
+->   editedfile3.edit (salmon) | (salmon)
+->   errors.edit (salmon) | (salmon)
+->   externalmocks.edit (salmon) | (salmon)   ***
+->   output.edit (salmon) | (salmon)
+
+========== Text Info ==========
+Test FAILED :
+---------- New result in externalmocks ----------
+<-CMD:editor file
+->FIL:file
+->OUT:Editing file file
+<-CMD:editor file2
+->FIL:file2
+->OUT:Editing file file2
+<-CMD:editor writedir
+->FIL:writedir
+->OUT:Editing file writedir/subdir/file
+<-CMD:editor file
+->FIL:file.edit_2
+->OUT:Editing file file
+===============================
+
+'save results for selected tests' event created with arguments ''
+
+Changing GUI status to: 'Saving EDIT test-case New : externalmocks, existing version'
+
+Changing GUI status to: 'Saving EDIT test-case New : edited file file, existing version'
+
+Changing GUI status to: 'Saving EDIT test-case New : edited file file.edit_2, existing version'
+
+Changing GUI status to: 'Saving EDIT test-case New : edited file file2, existing version'
+
+Changing GUI status to: 'Saving EDIT test-case New : edited file file, existing version'
+
+Updated : Test Tree with columns: Tests: All 1 selected, none hidden , Details
+-> TargetApp (edit) (black/white,bold) | (white)
+->   New (black/salmon) | errors new(+) (salmon)   ***
+
+Updated : File Tree with columns: New , Details
+-> Comparison Files (bold)
+->   externalmocks.edit (DarkSeaGreen2) | (DarkSeaGreen2)
+-> New Files (bold)
+->   catalogue.edit (salmon) | (salmon)
+->   editedfile.edit (salmon) | (salmon)
+->   editedfile2.edit (salmon) | (salmon)
+->   editedfile3.edit (salmon) | (salmon)
+->   errors.edit (salmon) | (salmon)
+->   output.edit (salmon) | (salmon)
+
+========== Text Info ==========
+Test FAILED :
+---------- New result in catalogue ----------
+
+The following existing files/directories changed their contents:
+<Test Directory>
+----file
+----file2
+----writedir
+--------subdir
+------------file
+---------- New result in editedfile ----------
+dummy
+The Editor has made its mark
+The Editor has made its mark
+---------- New result in editedfile2 ----------
+dummy
+The Editor has made its mark
+---------- New result in editedfile3 ----------
+dummy
+The Editor has made its mark
+---------- New result in errors ----------
+---------- New result in output ----------
+Editing file file
+Editing file file2
+Editing file writedir/subdir/file
+Editing file file
+===============================
+
+Changing GUI status to: 'Saved 1 tests.'
+
+'set file selection to' event created with arguments 'catalogue.edit'
+
+Changed selection in File Tree with columns: New , Details
+-> Comparison Files (bold)
+->   externalmocks.edit (DarkSeaGreen2) | (DarkSeaGreen2)
+-> New Files (bold)
+->   catalogue.edit (salmon) | (salmon)   ***
+->   editedfile.edit (salmon) | (salmon)
+->   editedfile2.edit (salmon) | (salmon)
+->   editedfile3.edit (salmon) | (salmon)
+->   errors.edit (salmon) | (salmon)
+->   output.edit (salmon) | (salmon)
+
+========== Text Info ==========
+Test FAILED :
+---------- New result in catalogue ----------
+
+The following existing files/directories changed their contents:
+<Test Directory>
+----file
+----file2
+----writedir
+--------subdir
+------------file
+===============================
+
+'save results for selected tests' event created with arguments ''
+
+Changing GUI status to: 'Saving EDIT test-case New : catalogue, existing version'
+
+Updated : Test Tree with columns: Tests: All 1 selected, none hidden , Details
+-> TargetApp (edit) (black/white,bold) | (white)
+->   New (black/salmon) | errors new(+) (salmon)   ***
+
+Updated : File Tree with columns: New , Details
+-> Comparison Files (bold)
+->   catalogue.edit (DarkSeaGreen2) | (DarkSeaGreen2)
+->   externalmocks.edit (DarkSeaGreen2) | (DarkSeaGreen2)
+-> New Files (bold)
+->   editedfile.edit (salmon) | (salmon)
+->   editedfile2.edit (salmon) | (salmon)
+->   editedfile3.edit (salmon) | (salmon)
+->   errors.edit (salmon) | (salmon)
+->   output.edit (salmon) | (salmon)
+
+========== Text Info ==========
+Test FAILED :
+---------- New result in editedfile ----------
+dummy
+The Editor has made its mark
+The Editor has made its mark
+---------- New result in editedfile2 ----------
+dummy
+The Editor has made its mark
+---------- New result in editedfile3 ----------
+dummy
+The Editor has made its mark
+---------- New result in errors ----------
+---------- New result in output ----------
+Editing file file
+Editing file file2
+Editing file writedir/subdir/file
+Editing file file
+===============================
+
+Changing GUI status to: 'Saved 1 tests.'
+
+'set file selection to' event created with arguments 'editedfile.edit'
+
+Changed selection in File Tree with columns: New , Details
+-> Comparison Files (bold)
+->   catalogue.edit (DarkSeaGreen2) | (DarkSeaGreen2)
+->   externalmocks.edit (DarkSeaGreen2) | (DarkSeaGreen2)
+-> New Files (bold)
+->   editedfile.edit (salmon) | (salmon)   ***
+->   editedfile2.edit (salmon) | (salmon)
+->   editedfile3.edit (salmon) | (salmon)
+->   errors.edit (salmon) | (salmon)
+->   output.edit (salmon) | (salmon)
+
+========== Text Info ==========
+Test FAILED :
+---------- New result in editedfile ----------
+dummy
+The Editor has made its mark
+The Editor has made its mark
+===============================
+
+'save results for selected tests' event created with arguments ''
+
+Changing GUI status to: 'Saving EDIT test-case New : editedfile, existing version'
+
+Updated : Test Tree with columns: Tests: All 1 selected, none hidden , Details
+-> TargetApp (edit) (black/white,bold) | (white)
+->   New (black/salmon) | errors new(+) (salmon)   ***
+
+Updated : File Tree with columns: New , Details
+-> Comparison Files (bold)
+->   catalogue.edit (DarkSeaGreen2) | (DarkSeaGreen2)
+->   editedfile.edit (DarkSeaGreen2) | (DarkSeaGreen2)
+->   externalmocks.edit (DarkSeaGreen2) | (DarkSeaGreen2)
+-> New Files (bold)
+->   editedfile2.edit (salmon) | (salmon)
+->   editedfile3.edit (salmon) | (salmon)
+->   errors.edit (salmon) | (salmon)
+->   output.edit (salmon) | (salmon)
+
+========== Text Info ==========
+Test FAILED :
+---------- New result in editedfile2 ----------
+dummy
+The Editor has made its mark
+---------- New result in editedfile3 ----------
+dummy
+The Editor has made its mark
+---------- New result in errors ----------
+---------- New result in output ----------
+Editing file file
+Editing file file2
+Editing file writedir/subdir/file
+Editing file file
+===============================
+
+Changing GUI status to: 'Saved 1 tests.'
+
+'set file selection to' event created with arguments 'editedfile2.edit'
+
+Changed selection in File Tree with columns: New , Details
+-> Comparison Files (bold)
+->   catalogue.edit (DarkSeaGreen2) | (DarkSeaGreen2)
+->   editedfile.edit (DarkSeaGreen2) | (DarkSeaGreen2)
+->   externalmocks.edit (DarkSeaGreen2) | (DarkSeaGreen2)
+-> New Files (bold)
+->   editedfile2.edit (salmon) | (salmon)   ***
+->   editedfile3.edit (salmon) | (salmon)
+->   errors.edit (salmon) | (salmon)
+->   output.edit (salmon) | (salmon)
+
+========== Text Info ==========
+Test FAILED :
+---------- New result in editedfile2 ----------
+dummy
+The Editor has made its mark
+===============================
+
+'save results for selected tests' event created with arguments ''
+
+Changing GUI status to: 'Saving EDIT test-case New : editedfile2, existing version'
+
+Updated : Test Tree with columns: Tests: All 1 selected, none hidden , Details
+-> TargetApp (edit) (black/white,bold) | (white)
+->   New (black/salmon) | errors new(+) (salmon)   ***
+
+Updated : File Tree with columns: New , Details
+-> Comparison Files (bold)
+->   catalogue.edit (DarkSeaGreen2) | (DarkSeaGreen2)
+->   editedfile.edit (DarkSeaGreen2) | (DarkSeaGreen2)
+->   editedfile2.edit (DarkSeaGreen2) | (DarkSeaGreen2)
+->   externalmocks.edit (DarkSeaGreen2) | (DarkSeaGreen2)
+-> New Files (bold)
+->   editedfile3.edit (salmon) | (salmon)
+->   errors.edit (salmon) | (salmon)
+->   output.edit (salmon) | (salmon)
+
+========== Text Info ==========
+Test FAILED :
+---------- New result in editedfile3 ----------
+dummy
+The Editor has made its mark
+---------- New result in errors ----------
+---------- New result in output ----------
+Editing file file
+Editing file file2
+Editing file writedir/subdir/file
+Editing file file
+===============================
+
+Changing GUI status to: 'Saved 1 tests.'
+
+'set file selection to' event created with arguments 'editedfile3.edit'
+
+Changed selection in File Tree with columns: New , Details
+-> Comparison Files (bold)
+->   catalogue.edit (DarkSeaGreen2) | (DarkSeaGreen2)
+->   editedfile.edit (DarkSeaGreen2) | (DarkSeaGreen2)
+->   editedfile2.edit (DarkSeaGreen2) | (DarkSeaGreen2)
+->   externalmocks.edit (DarkSeaGreen2) | (DarkSeaGreen2)
+-> New Files (bold)
+->   editedfile3.edit (salmon) | (salmon)   ***
+->   errors.edit (salmon) | (salmon)
+->   output.edit (salmon) | (salmon)
+
+========== Text Info ==========
+Test FAILED :
+---------- New result in editedfile3 ----------
+dummy
+The Editor has made its mark
+===============================
+
+'save results for selected tests' event created with arguments ''
+
+Changing GUI status to: 'Saving EDIT test-case New : editedfile3, existing version'
+
+Updated : Test Tree with columns: Tests: All 1 selected, none hidden , Details
+-> TargetApp (edit) (black/white,bold) | (white)
+->   New (black/salmon) | errors new(+) (salmon)   ***
+
+Updated : File Tree with columns: New , Details
+-> Comparison Files (bold)
+->   catalogue.edit (DarkSeaGreen2) | (DarkSeaGreen2)
+->   editedfile.edit (DarkSeaGreen2) | (DarkSeaGreen2)
+->   editedfile2.edit (DarkSeaGreen2) | (DarkSeaGreen2)
+->   editedfile3.edit (DarkSeaGreen2) | (DarkSeaGreen2)
+->   externalmocks.edit (DarkSeaGreen2) | (DarkSeaGreen2)
+-> New Files (bold)
+->   errors.edit (salmon) | (salmon)
+->   output.edit (salmon) | (salmon)
+
+========== Text Info ==========
+Test FAILED :
+---------- New result in errors ----------
+---------- New result in output ----------
+Editing file file
+Editing file file2
+Editing file writedir/subdir/file
+Editing file file
+===============================
+
+Changing GUI status to: 'Saved 1 tests.'
+
+'set file selection to' event created with arguments 'errors.edit'
+
+Changed selection in File Tree with columns: New , Details
+-> Comparison Files (bold)
+->   catalogue.edit (DarkSeaGreen2) | (DarkSeaGreen2)
+->   editedfile.edit (DarkSeaGreen2) | (DarkSeaGreen2)
+->   editedfile2.edit (DarkSeaGreen2) | (DarkSeaGreen2)
+->   editedfile3.edit (DarkSeaGreen2) | (DarkSeaGreen2)
+->   externalmocks.edit (DarkSeaGreen2) | (DarkSeaGreen2)
+-> New Files (bold)
+->   errors.edit (salmon) | (salmon)   ***
+->   output.edit (salmon) | (salmon)
+
+========== Text Info ==========
+Test FAILED :
+---------- New result in errors ----------
+===============================
+
+'save results for selected tests' event created with arguments ''
+
+Changing GUI status to: 'Saving EDIT test-case New : errors, existing version'
+
+Updated : Test Tree with columns: Tests: All 1 selected, none hidden , Details
+-> TargetApp (edit) (black/white,bold) | (white)
+->   New (black/salmon) | output new (salmon)   ***
+
+Updated : File Tree with columns: New , Details
+-> Comparison Files (bold)
+->   catalogue.edit (DarkSeaGreen2) | (DarkSeaGreen2)
+->   editedfile.edit (DarkSeaGreen2) | (DarkSeaGreen2)
+->   editedfile2.edit (DarkSeaGreen2) | (DarkSeaGreen2)
+->   editedfile3.edit (DarkSeaGreen2) | (DarkSeaGreen2)
+->   errors.edit (DarkSeaGreen2) | (DarkSeaGreen2)
+->   externalmocks.edit (DarkSeaGreen2) | (DarkSeaGreen2)
+-> New Files (bold)
+->   output.edit (salmon) | (salmon)
+
+========== Text Info ==========
+Test FAILED :
+---------- New result in output ----------
+Editing file file
+Editing file file2
+Editing file writedir/subdir/file
+Editing file file
+===============================
+
+Changing GUI status to: 'Saved 1 tests.'
+
+'set file selection to' event created with arguments 'output.edit'
+
+Changed selection in File Tree with columns: New , Details
+-> Comparison Files (bold)
+->   catalogue.edit (DarkSeaGreen2) | (DarkSeaGreen2)
+->   editedfile.edit (DarkSeaGreen2) | (DarkSeaGreen2)
+->   editedfile2.edit (DarkSeaGreen2) | (DarkSeaGreen2)
+->   editedfile3.edit (DarkSeaGreen2) | (DarkSeaGreen2)
+->   errors.edit (DarkSeaGreen2) | (DarkSeaGreen2)
+->   externalmocks.edit (DarkSeaGreen2) | (DarkSeaGreen2)
+-> New Files (bold)
+->   output.edit (salmon) | (salmon)   ***
+
+'save results for selected tests' event created with arguments ''
+
+Changing GUI status to: 'Saving EDIT test-case New : output, existing version'
+
+Greyed out : _Save
+
+Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
+-> TargetApp (edit) (black/white,bold) | All 1 tests successful (DarkSeaGreen2)
+
+Current page changed in Notebook with tabs: Status , Selection , Run Info
+Viewing page 'Status'
+
+Showing Test Status View with columns: Status , Number , Visible
+-> Not started (white) | 0 (white) | Check box (checked)
+-> Initial filter (white) | 0 (white) | Check box (checked)
+-> Running (white) | 0 (white) | Check box (checked)
+-> Final filter (white) | 0 (white) | Check box (checked)
+-> Failed (white) | 0 (white) | Check box (checked)
+->   New (white) | 0 (white) | Check box (checked)
+->     catalogue new (white) | 0 (white) | Check box (checked)
+->     editedfile new (white) | 0 (white) | Check box (checked)
+->     editedfile2 new (white) | 0 (white) | Check box (checked)
+->     editedfile3 new (white) | 0 (white) | Check box (checked)
+->     errors new (white) | 0 (white) | Check box (checked)
+->     externalmocks new (white) | 0 (white) | Check box (checked)
+->     output new (white) | 0 (white) | Check box (checked)
+-> Succeeded (DarkSeaGreen2,bold) | 1 (DarkSeaGreen2,bold) | Check box (checked)
+->   Saved (DarkSeaGreen2,bold) | 1 (DarkSeaGreen2,bold) | Check box (checked)
+
+Changing GUI status to: 'Saved 1 tests.'
+
+'quit' event created with arguments ''
