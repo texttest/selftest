@@ -1,5 +1,5 @@
 
----------- Window 'HELLO tests (started at 31May16:53:06) - TextTest dynamic GUI' ----------
+---------- Window 'HELLO tests (started at 01Nov15:53:29) - TextTest dynamic GUI' ----------
 Focus widget is 'Test Tree'
 
 Menu Bar : '_File' (+) , '_View' (+) , '_Actions' (+) , '_Help' (+)
@@ -8,7 +8,7 @@ Tool Bar :
   _Quit (Stock image 'gtk-quit', accelerator 'Ctrl+Q', tooltip 'Quit')
   _Kill (Stock image 'gtk-stop', greyed out, accelerator 'Ctrl+Delete', tooltip 'Kill selected tests')
   _Save (Stock image 'gtk-save', greyed out, accelerator 'Ctrl+S', tooltip 'Save results for selected tests')
-  Progress bar set to fraction 0.0, text 'All 0 tests completed at 31May16:53:09'
+  Progress bar set to fraction 0.0, text 'All 0 tests completed at 01Nov15:53:29'
 ...........
 
 Showing Test Tree with columns: Tests: All 0 selected , Details
@@ -22,7 +22,7 @@ Viewing page 'Status'
 Showing Test Status View with columns: Status , Number , Visible
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 31May16:53:09.' , Image 'throbber_inactive.png'
+'TextTest started at 01Nov15:53:29.' , Image 'throbber_inactive.png'
 --------------------------------------------------------------------------------------------
 
 Progress bar set to fraction 0.0, text '0 of 1 tests completed'
@@ -483,7 +483,7 @@ Updated : Test Status View with columns: Status , Number , Visible
 ->     errors new (salmon,bold) | 3 (salmon,bold) | Check box (checked)
 ->       Group 1 (salmon,bold) | 3 (salmon,bold) | Check box (checked)
 
-Progress bar set to fraction 1.0, text 'All 5 tests completed at 31May16:53:11'
+Progress bar set to fraction 1.0, text 'All 5 tests completed at 01Nov15:53:30'
 
 Updated : Test Tree with columns: Tests: 0/5 selected, none hidden , Details
 -> TargetApp (hello) (black/white,bold) | (white)
@@ -566,7 +566,7 @@ Default widget is 'gtk-ok'
 'Brief text:'
 Text entry (set to 'Checked')
 'Free text:'
-Text entry (set to 'Checked at 31May16:53:06')
+Text entry (set to 'Checked at 01Nov15:53:29')
 ---------------
 Stock Button 'gtk-ok' , Stock Button 'gtk-cancel'
 ------------------------------------------------------
@@ -701,6 +701,26 @@ Updated : File Tree with columns: Sample from 3 tests , Details
 
 ========== Text Info ==========
 Test FAILED :
+
+
+Preview of output.hello:
+Hello world!
+===============================
+
+'set file selection to' event created with arguments ''
+
+Changed selection in File Tree with columns: Sample from 3 tests , Details
+-> Comparison Files (bold)
+->   file1.hello (DarkSeaGreen2) | (DarkSeaGreen2)
+->   file2.hello (DarkSeaGreen2) | (DarkSeaGreen2)
+->   file3.hello (DarkSeaGreen2) | (DarkSeaGreen2)
+->   file4.hello (DarkSeaGreen2) | (DarkSeaGreen2)
+->   output.hello (DarkSeaGreen2) | (DarkSeaGreen2)
+-> New Files (bold)
+->   errors.hello (salmon) | (salmon)
+
+========== Text Info ==========
+Test FAILED :
 ---------- New result in errors ----------
 ===============================
 
@@ -738,7 +758,7 @@ Updated : File Tree with columns: Sample from 3 tests , Details
 ->   file2.hello (DarkSeaGreen2) | (DarkSeaGreen2)
 ->   file3.hello (DarkSeaGreen2) | (DarkSeaGreen2)
 ->   file4.hello (DarkSeaGreen2) | (DarkSeaGreen2)
-->   output.hello (DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   output.hello (DarkSeaGreen2) | (DarkSeaGreen2)
 -> New Files (bold)
 ->   errors.hello (salmon) | (salmon)
 
@@ -788,16 +808,26 @@ Updated : File Tree with columns: complex__fail1 , Details
 ->   file2.hello (DarkSeaGreen2) | (DarkSeaGreen2)
 ->   file3.hello (salmon) | (salmon)
 ->   file4.hello (DarkSeaGreen2) | (DarkSeaGreen2)
-->   output.hello (salmon) | (salmon)   ***
+->   output.hello (salmon) | (salmon)
 -> New Files (bold)
 ->   errors.hello (salmon) | (salmon)
 
 ========== Text Info ==========
 Test was marked by the user :
+Nothing that needs filtering
+
+ORIGINAL STATE:
+Test FAILED :
+ ---------- Differences in file3 ----------
+1c1
+< Something in file3: Whitespace
+---
+> Nothing in file3 ...
 ---------- Differences in output ----------
 2,3d1
 < 
 < By the way.
+---------- New result in errors ----------
 ===============================
 
 'set test selection to' event created with arguments 'complex_fail2'
@@ -817,16 +847,41 @@ Updated : File Tree with columns: complex__fail2 , Details
 ->   file2.hello (salmon) | (salmon)
 ->   file3.hello (salmon) | (salmon)
 ->   file4.hello (salmon) | (salmon)
-->   output.hello (salmon) | (salmon)   ***
+->   output.hello (salmon) | (salmon)
 -> New Files (bold)
 ->   errors.hello (salmon) | (salmon)
 
 ========== Text Info ==========
 Test was marked by the user :
+Nothing that needs filtering
+
+ORIGINAL STATE:
+Test FAILED :
+ ---------- Differences in file1 ----------
+1c1
+< Nothing in file1 ... or
+---
+> Nothing in file1 ...
+---------- Differences in file2 ----------
+1c1
+< Nothing in file2 ... indeed!
+---
+> Nothing in file2 ...
+---------- Differences in file3 ----------
+1c1
+< Something in file3: Whitespace
+---
+> Nothing in file3 ...
+---------- Differences in file4 ----------
+1c1
+< Nothing in file4 ... yet ...
+---
+> Nothing in file4 ...
 ---------- Differences in output ----------
 2,3d1
 < 
 < By the way.
+---------- New result in errors ----------
 ===============================
 
 'unmark the selected tests' event created with arguments ''
@@ -848,16 +903,37 @@ Updated : File Tree with columns: complex__fail2 , Details
 ->   file2.hello (salmon) | (salmon)
 ->   file3.hello (salmon) | (salmon)
 ->   file4.hello (salmon) | (salmon)
-->   output.hello (salmon) | (salmon)   ***
+->   output.hello (salmon) | (salmon)
 -> New Files (bold)
 ->   errors.hello (salmon) | (salmon)
 
 ========== Text Info ==========
 Test FAILED :
+---------- Differences in file1 ----------
+1c1
+< Nothing in file1 ... or
+---
+> Nothing in file1 ...
+---------- Differences in file2 ----------
+1c1
+< Nothing in file2 ... indeed!
+---
+> Nothing in file2 ...
+---------- Differences in file3 ----------
+1c1
+< Something in file3: Whitespace
+---
+> Nothing in file3 ...
+---------- Differences in file4 ----------
+1c1
+< Nothing in file4 ... yet ...
+---
+> Nothing in file4 ...
 ---------- Differences in output ----------
 2,3d1
 < 
 < By the way.
+---------- New result in errors ----------
 ===============================
 
 Changing GUI status to: 'Performed 'Unmark the selected tests' on test complex_fail2.'
@@ -880,7 +956,7 @@ Updated : File Tree with columns: simple__fail1 , Details
 ->   file2.hello (DarkSeaGreen2) | (DarkSeaGreen2)
 ->   file3.hello (salmon) | (salmon)
 ->   file4.hello (DarkSeaGreen2) | (DarkSeaGreen2)
-->   output.hello (DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   output.hello (DarkSeaGreen2) | (DarkSeaGreen2)
 
 ========== Text Info ==========
 Test FAILED :
@@ -926,7 +1002,7 @@ Updated : File Tree with columns: simple__fail1 , Details
 ->   file2.hello (DarkSeaGreen2) | (DarkSeaGreen2)
 ->   file3.hello (salmon) | (salmon)
 ->   file4.hello (DarkSeaGreen2) | (DarkSeaGreen2)
-->   output.hello (DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   output.hello (DarkSeaGreen2) | (DarkSeaGreen2)
 
 ========== Text Info ==========
 Test was marked by the user :
@@ -960,7 +1036,7 @@ Updated : File Tree with columns: Sample from 2 tests , Details
 ->   file2.hello (DarkSeaGreen2) | (DarkSeaGreen2)
 ->   file3.hello (DarkSeaGreen2) | (DarkSeaGreen2)
 ->   file4.hello (DarkSeaGreen2) | (DarkSeaGreen2)
-->   output.hello (DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   output.hello (DarkSeaGreen2) | (DarkSeaGreen2)
 -> New Files (bold)
 ->   errors.hello (salmon) | (salmon)
 
@@ -992,7 +1068,7 @@ Updated : File Tree with columns: Sample from 2 tests , Details
 ->   file2.hello (DarkSeaGreen2) | (DarkSeaGreen2)
 ->   file3.hello (DarkSeaGreen2) | (DarkSeaGreen2)
 ->   file4.hello (DarkSeaGreen2) | (DarkSeaGreen2)
-->   output.hello (DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   output.hello (DarkSeaGreen2) | (DarkSeaGreen2)
 -> New Files (bold)
 ->   errors.hello (salmon) | (salmon)
 
