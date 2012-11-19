@@ -31,6 +31,9 @@ PollJobLost
 # We should notice if SGE itself goes down, and report this nicely...
 PollSgeCrash
 
+# If a job goes into error state, kill it and report the reason, don't hang around forever.
+PollSgeErrorState
+
 # Make sure we clean previous write directories here also
 PreviousWriteDir
 
