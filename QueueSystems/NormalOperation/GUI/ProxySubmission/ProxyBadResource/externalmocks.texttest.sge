@@ -1,5 +1,5 @@
-<-SRV:TextTest slave server started on 10.67.20.37:50598
-<-CMD:cd /nfs/vm/texttest-tmp/geoff/texttest.sge.gui.26Apr154742.10565/texttest.sge.gui/QueueSystems/NormalOperation/GUI/ProxySubmission/ProxyBadResource/texttesttmp/console.26Apr154746.10571/slavelogs; env --unset=USECASE_RECORD_SCRIPT --unset=USECASE_REPLAY_SCRIPT qsub -N Proxy-Test-SLEEP -l short,osversion=RHEL4 -w e -notify -m n -cwd -b y -V -o Proxy-Test-SLEEP.log -e Proxy-Test-SLEEP.errors "exec $SHELL -c "exec /carm/proj/texttest-tmp/geoff/texttest.sge.gui.26Apr154742.10565/texttest.sge.gui/QueueSystems/NormalOperation/GUI/ProxySubmission/ProxyBadResource/TargetApp/proxy.py -proxyarg""
+<-SRV:TextTest slave server started on 10.67.19.44:42566
+<-CMD:cd /tmp/geoff/texttest.sge.gui.20Nov134746.27395/texttest.sge.gui/QueueSystems/NormalOperation/GUI/ProxySubmission/ProxyBadResource/texttesttmp/console.20Nov134749.27420/slavelogs; qsub -N Proxy-Test-SLEEP -l short,osversion=RHEL4 -w e -notify -m n -cwd -b y -v DISPLAY,TEXTTEST_SUBMIT_COMMAND_ARGS -o Proxy-Test-SLEEP.log -e Proxy-Test-SLEEP.errors "exec $SHELL -c "exec /tmp/geoff/texttest.sge.gui.20Nov134746.27395/texttest.sge.gui/QueueSystems/NormalOperation/GUI/ProxySubmission/ProxyBadResource/TargetApp/proxy.py -proxyarg""
 ->OUT:Your job 6264977 ("Proxy-Test-SLEEP") has been submitted
 <-SRV:Completed submission of all tests
 <-CMD:qstat
