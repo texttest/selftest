@@ -37,7 +37,7 @@ Button 'Filter' (Stock image 'gtk-find', accelerator 'Ctrl+F', tooltip 'filter t
 Button 'Reset Tab' (tooltip 'Reset all the settings in the current tab to their default values')
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 05Oct17:48:32.' , Image 'throbber_inactive.png'
+'TextTest started at 10Dec11:14:48.' , Image 'throbber_inactive.png'
 ------------------------------------------------------------------------
 
 Changing GUI status to: 'Reading tests ...'
@@ -82,7 +82,7 @@ Updated : Test Tree with columns: Tests: 0/11 selected
 ->       S01 (black/grey90)
 Updated drop-down list in 'Test-file to search' Text entry (set to 'output') (drop-down list containing ['output'])
 
-Changing GUI status to: 'Reading tests completed at 05Oct17:48:33.'
+Changing GUI status to: 'Reading tests completed at 10Dec11:14:52.'
 
 Expected application event 'all tests to be read' occurred, proceeding.
 
@@ -210,7 +210,7 @@ Viewing table with 6 rows and 2 columns.
 '<b>You are using these installations:
 </b>'
 Viewing table with 3 rows and 2 columns.
-'Test Suite:' | '/carm/proj/texttest-tmp/geoff/texttest.gui.05Oct174823.23763/texttest.gui/GUI/StaticGUI/Miscellaneous/ViewHelp/TargetApp'
+'Test Suite:' | '/tmp/geoff/texttest.gui.10Dec111441.14836/texttest.gui/GUI/StaticGUI/Miscellaneous/ViewHelp/TargetApp'
 'TextTest:' | '/users/geoff/work/master/Testing/TextTest'
 'Python:' | '/usr/local/tt-env/python2.6.current/bin/python'
 ---------------
@@ -242,8 +242,8 @@ Changing GUI status to: ''
 ---------- Dialog 'TextTest Migration Notes' ----------
 Default widget is 'gtk-close'
 
-Showing Notebook with tabs: from 3.23 , from 3.22 , from 3.21 , from 3.20 , from 3.19 , from 3.18 , from 3.17 , from 3.16 , from 3.15 , from 3.14 , from 3.13 , from 3.12 , from 3.11 , from 3.10 , from 3.9 , from 3.8 , from 3.7 , from 3.6 , from 3.5 , from 3.4 , from 3.3 , from 3.1 , from 2.x
-Viewing page 'from 3.23'
+Showing Notebook with tabs: from 3.24 , from 3.23 , from 3.22 , from 3.21 , from 3.20 , from 3.19 , from 3.18 , from 3.17 , from 3.16 , from 3.15 , from 3.14 , from 3.13 , from 3.12 , from 3.11 , from 3.10 , from 3.9 , from 3.8 , from 3.7 , from 3.6 , from 3.5 , from 3.4 , from 3.3 , from 3.1 , from 2.x
+Viewing page 'from 3.24'
 
 ========== GtkTextView ==========
 
@@ -251,36 +251,24 @@ Viewing page 'from 3.23'
 COMPULSORY MIGRATION
 =========================================================
 
-(1) "batch_junit_performance" replaced by "default_performance_stem"
+(1) Grid Engine submission no longer forwards the entire environment
 ====================================================================
-The ability to identify the "main performance measure being used" has been generalised so it can apply to more situations.
+Anyone using Grid Engine (UGE/SGE) should note that the setup no longer tells UGE to copy the entire environment when submitting jobs.
 
-The basic difference is that it will no longer work to configure it differently per batch session. If you have set "batch_junit_performance", you will need to replace it as follows
+This could lead to some very strange errors, such as when display/shell related variables were forwarded to machines where they didn't make sense.
 
-from
+It has previous worked to set environment variables outside of TextTest, e.g. via a starter script, and then just start TextTest. This will not work
+any more with UGE/SGE, you will need to set them via TextTest's own environment file mechanism.
 
-[batch_junit_performance]
-my_session:my_performance
+Alternaitvely, to restore the previous behaviour, you can add
 
-to
+queue_system_submit_args:-V 
 
-default_performance_stem:my_performance
-
+to your config file, which will once again forward your entire environment to the remote job.
 
 =========================================================
 CHANGES IN DEFAULT BEHAVIOUR (OR PROCEDURE)
 =========================================================
-
-(1) run_dependent_text with sections will not filter anything if the end marker is never found
-==============================================================================================
-If you have a run_dependent_text filter of the form
-
-[run_dependent_text]
-stdout:text1{->}text2
-[end]
-
-and the file you are filtering contains text1 but not text2, nothing will be filtered any more.
-In TextTest 3.23 and earlier, the whole file from the text1 marker onwards would be removed.
 =================================
 ---------------
 Stock Button 'gtk-close'
@@ -288,7 +276,7 @@ Stock Button 'gtk-close'
 
 'view tab' event created with arguments 'from 3.4'
 
-Current page changed in Notebook with tabs: from 3.23 , from 3.22 , from 3.21 , from 3.20 , from 3.19 , from 3.18 , from 3.17 , from 3.16 , from 3.15 , from 3.14 , from 3.13 , from 3.12 , from 3.11 , from 3.10 , from 3.9 , from 3.8 , from 3.7 , from 3.6 , from 3.5 , from 3.4 , from 3.3 , from 3.1 , from 2.x
+Current page changed in Notebook with tabs: from 3.24 , from 3.23 , from 3.22 , from 3.21 , from 3.20 , from 3.19 , from 3.18 , from 3.17 , from 3.16 , from 3.15 , from 3.14 , from 3.13 , from 3.12 , from 3.11 , from 3.10 , from 3.9 , from 3.8 , from 3.7 , from 3.6 , from 3.5 , from 3.4 , from 3.3 , from 3.1 , from 2.x
 Viewing page 'from 3.4'
 
 ========== GtkTextView ==========
@@ -388,10 +376,52 @@ Viewing page 'trunk'
 ========== GtkTextView ==========
 General GUI Enhancements:
 Static GUI Enhancements:
+    - Refresh now reloads all test-specific config files
+	Previously only reloaded the main application config files
+    - (GUI testing) Can now automatically insert StoryText shortcuts into all tests without running them
+	New script "default.InsertShortcuts" and item in Actions menu. Auto-detected when shortcuts are added via StoryText Editor.
+Dynamic GUI Enhancements:
+    - "Recompute Status" now runs in the background and doesn't lock the GUI
+    - Showing now previews of succeeded files
+    - Adding ability to edit the original file also, when we have a different viewer added.
 Framework Enhancements:
+    - Can now make use of separate sandbox locations for running the test itself and for collecting logfiles / results
+	Set default_texttest_local_tmp in your config file, or TEXTTEST_LOCAL_TMP in your environment. See website.
+	(Usual setup is to run the test on a local disk and write its logfiles to a shared disk.)
+    - Scripts used 'copy_test_path_script' can now use the environment variables set for the test run.
+	Particularly useful if they need to refer to the logging location in a setup using the above default_texttest_local_tmp.
 Batch Report Enhancements:
+    - Now sort the applications in order of number of tests before generating HTML report
+	If there are many large slow-to-generate test suites it's best they don't hold up small fast ones.
+    - Applications whose test suite is removed but where old results still exist are still linked from the main index page
+	Can be important, especially when live versions exist of older versions of the same apps.
+    - Jenkins change handling deals with the new directory structure in Jenkins as well as the "legacy" one.
+    - Jenkins change handling deals with aborted runs in a better way
 Grid Engine (LSF/SGE/Condor) enhancements/bug fixes:
+    - Grid Engine submission no longer forwards the entire environment by default
+	See migration notes
+    - SGE errors handled in a better way, warn when we get a job status we don't expect
+    - Don't lose track of SGE jobs that end up in "St" state
+    - If SGE jobs start but then terminate without reporting in (e.g. by getting SIGKILL) react and report this.
+    - Better handling of Eqw jobs in UGE. We grab now the error reason and kill them.
 Bug Fixes:
+    - Fixed stacktrace for HTML report generation when the location doesn't exist yet
+    - "Replace Text in Files" handles removing and inserting lines in a more consistent way
+    - Fixed stacktrace when pressing recompute and temporary files have been externally removed
+    - "Find Failure Information" now shows a progress indicator instead of just leaving the menu item present
+    - Ignore kill signals after the first one has arrived, so we show the correct reason for being killed
+    - Fixed Jira plugin problem: stacktrace when Jira bug has no description
+    - Fixed Jira plugin problem: wrong prio in jira info
+    - Fixed Windows installer: failed when only TextTest and StoryText selected
+    - Fixed Windows installer: get rid of the command window
+    - Fixed occasional "TEXTTEST EXCEPTION" due to temporary file collisions when rerunning test after knownbug
+    - Fixed bug where Jenkins change handling was fooled by artefacts whose names extend each other
+    - Fixed problem with CaptureMock tests that capture files: save them when the files that refer to them are saved.
+    - Fixed stacktrace when getting non-xmlrpc errors from Jira
+    - Fixed "Split Files" followed by "Recompute" does not work properly. "Recompute" removes now all split information if it's present.
+    - Fixed knownbugs mechanism drops leading spaces from regular expressions. We don't accept leading spaces and show now an error message
+    - Fixed problem where leading spaces got removing when matching run_dependent_text
+    - Removed restrictions around rerunning tests with a version not included in the original run
 =================================
 ---------------
 Stock Button 'gtk-close'
@@ -473,7 +503,7 @@ Viewing table with 6 rows and 2 columns.
 '<b>You are using these installations:
 </b>'
 Viewing table with 3 rows and 2 columns.
-'Test Suite:' | '/carm/proj/texttest-tmp/geoff/texttest.gui.05Oct174823.23763/texttest.gui/GUI/StaticGUI/Miscellaneous/ViewHelp/TargetApp'
+'Test Suite:' | '/tmp/geoff/texttest.gui.10Dec111441.14836/texttest.gui/GUI/StaticGUI/Miscellaneous/ViewHelp/TargetApp'
 'TextTest:' | '/users/geoff/work/master/Testing/TextTest'
 'Python:' | '/usr/local/tt-env/python2.6.current/bin/python'
 ---------------
