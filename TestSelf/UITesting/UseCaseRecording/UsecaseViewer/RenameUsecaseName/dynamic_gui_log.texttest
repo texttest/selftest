@@ -1,0 +1,178 @@
+
+---------- Window 'VideoStore tests under /tmp/dgalda/texttest.gui.12Dec115511.17332/texttest.gui/TestSelf/UITesting/UseCaseRecording/UsecaseViewer/RenameUsecaseName/TargetApp/source_with_pyc (started at 12Dec11:55:13) - TextTest dynamic GUI' ----------
+Focus widget is 'Test Tree'
+
+Menu Bar : '_File' (+) , '_View' (+) , '_Actions' (+) , '_Help' (+)
+
+Tool Bar :
+  _Quit (Stock image 'gtk-quit', accelerator 'Ctrl+Q', tooltip 'Quit')
+  _Kill (Stock image 'gtk-stop', greyed out, accelerator 'Ctrl+Delete', tooltip 'Kill selected tests')
+  _Save (Stock image 'gtk-save', greyed out, accelerator 'Ctrl+S', tooltip 'Save results for selected tests')
+  Progress bar set to fraction 0.0, text '0 of 1 tests completed'
+...........
+
+Showing Test Tree with columns: Tests: 0/1 selected, all hidden , Details
+
+------------------------------ (vertical pane separator)
+...........
+
+Showing Notebook with tabs: Status , Selection , Run Info
+Viewing page 'Status'
+
+Showing Test Status View with columns: Status , Number , Visible
+-> Not started (white,bold) | 1 (white,bold) | Check box (checked)
+'Shortcuts:' , Button '_New'
+...........
+'TextTest started at 12Dec11:55:13.' , Image 'throbber_inactive.png'
+----------------------------------------------------------------------------------------------------
+
+Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
+-> TargetApp (gui) (black/white,bold) | (white)
+->   AddMovie (black/white) | (white)
+
+Progress bar set to fraction 0.0, text '0 of 2 tests completed'
+
+Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
+-> TargetApp (gui) (black/white,bold) | (white)
+->   AddMovie (black/white) | (white)
+->   suite (black/white,bold) | (white)
+->     AddMovie (black/white) | (white)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white,bold) | 2 (white,bold) | Check box (checked)
+
+Progress bar set to fraction 0.5, text '1 of 2 tests completed'
+
+Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
+-> TargetApp (gui) (black/white,bold) | (white)
+->   AddMovie (black/salmon) | usecase different (salmon)
+->   suite (black/white,bold) | (white)
+->     AddMovie (black/white) | (white)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white,bold) | 1 (white,bold) | Check box (checked)
+-> Failed (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->   Differences (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->     usecase different (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+
+Progress bar set to fraction 1.0, text 'All 2 tests completed at 12Dec11:55:14'
+
+Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
+-> TargetApp (gui) (black/white,bold) | (white)
+->   AddMovie (black/salmon) | usecase different (salmon)
+->   suite (black/white,bold) | (white)
+->     AddMovie (black/DarkSeaGreen2) | fake_usecase_file different (salmon)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white) | 0 (white) | Check box (checked)
+-> Failed (salmon,bold) | 2 (salmon,bold) | Check box (checked)
+->   Differences (salmon,bold) | 2 (salmon,bold) | Check box (checked)
+->     fake_usecase_file different (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->     usecase different (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+
+Expected application event 'completion of test actions' occurred, proceeding.
+
+'set test selection to' event created with arguments 'AddMovie under TargetApp (gui)'
+
+No longer greyed out : _Save
+
+Changed selection in Test Tree with columns: Tests: 1/2 selected, none hidden , Details
+-> TargetApp (gui) (black/white,bold) | (white)
+->   AddMovie (black/salmon) | usecase different (salmon)   ***
+->   suite (black/white,bold) | (white)
+->     AddMovie (black/DarkSeaGreen2) | fake_usecase_file different (salmon)
+
+Current page changed in Notebook with tabs: Test , Status , Selection , Run Info
+Viewing page 'Test'
+...........
+
+Showing File Tree with columns: AddMovie , Details
+-> Comparison Files (bold)
+->   usecase.gui (salmon) | (salmon)
+
+------------------------------ (horizontal pane separator)
+...........
+
+========== Text Info ==========
+Test FAILED :
+---------- Differences in usecase ----------
+1c1
+< set new movie name to Star Wars
+---
+> set new film name to Star Wars
+===============================
+
+'set test selection to' event created with arguments 'AddMovie under suite,AddMovie under TargetApp (gui)'
+
+Changed selection in Test Tree with columns: Tests: All 2 selected, none hidden , Details
+-> TargetApp (gui) (black/white,bold) | (white)
+->   AddMovie (black/salmon) | usecase different (salmon)   ***
+->   suite (black/white,bold) | (white)
+->     AddMovie (black/DarkSeaGreen2) | fake_usecase_file different (salmon)   ***
+
+Updated : File Tree with columns: Sample from 2 tests , Details
+-> Comparison Files (bold)
+->   fake_usecase_file.gui (salmon) | (salmon)
+->   usecase.gui (DarkSeaGreen2) | (DarkSeaGreen2)
+
+========== Text Info ==========
+Test FAILED :
+---------- Differences in fake_usecase_file ----------
+1c1
+< set new movie name to Die Hard
+---
+> set new film name to Die Hard
+===============================
+
+'view actions for test' event created with arguments 'AddMovie under TargetApp (gui)'
+
+---------- Popup Window ----------
+'_Save' (Stock image 'gtk-save', accelerator 'Ctrl+S')
+'Save _As...' (Stock image 'gtk-save', accelerator 'Ctrl+Alt+S')
+  ----
+'Enter Failure Information' (Stock image 'gtk-info', accelerator 'Ctrl+I')
+'Find Failure Information' (Stock image 'gtk-find', accelerator 'Ctrl+F')
+  ----
+'_Kill' (Stock image 'gtk-stop', greyed out, accelerator 'Ctrl+Delete')
+'_Mark' (accelerator 'Shift+Ctrl+M')
+'_Unmark' (greyed out, accelerator 'Shift+Ctrl+U')
+  ----
+'_Rerun' (Stock image 'gtk-execute', accelerator 'Ctrl+R')
+'Recompute Status' (Stock image 'gtk-refresh', accelerator 'F5')
+'Re_load tests...' (Stock image 'gtk-connect')
+  ----
+'Split result files' (Stock image 'gtk-convert', greyed out)
+----------------------------------
+
+'save results for selected tests' event created with arguments ''
+
+Changing GUI status to: 'Saving VideoStore test-case AddMovie : usecase, existing version'
+
+Updated : Test Tree with columns: Tests: All 2 selected, none hidden , Details
+-> TargetApp (gui) (black/white,bold) | (white)
+->   AddMovie (black/DarkSeaGreen2) | (DarkSeaGreen2)   ***
+->   suite (black/white,bold) | (white)
+->     AddMovie (black/DarkSeaGreen2) | fake_usecase_file different (salmon)   ***
+
+Changing GUI status to: 'Saving VideoStore test-case AddMovie : fake_usecase_file, existing version'
+
+Greyed out : _Save
+
+Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
+-> TargetApp (gui) (black/white,bold) | All 2 tests successful (DarkSeaGreen2)
+
+Current page changed in Notebook with tabs: Status , Selection , Run Info
+Viewing page 'Status'
+
+Showing Test Status View with columns: Status , Number , Visible
+-> Not started (white) | 0 (white) | Check box (checked)
+-> Failed (white) | 0 (white) | Check box (checked)
+->   Differences (white) | 0 (white) | Check box (checked)
+->     fake_usecase_file different (white) | 0 (white) | Check box (checked)
+->     usecase different (white) | 0 (white) | Check box (checked)
+-> Succeeded (DarkSeaGreen2,bold) | 2 (DarkSeaGreen2,bold) | Check box (checked)
+->   Saved (DarkSeaGreen2,bold) | 2 (DarkSeaGreen2,bold) | Check box (checked)
+
+Changing GUI status to: 'Saved 2 tests.'
+
+'close window' event created with arguments ''
