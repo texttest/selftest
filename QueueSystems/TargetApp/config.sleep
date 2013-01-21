@@ -1,6 +1,4 @@
 
-import_config_file:$STANDARD
-
 # Path to the executable
 executable:${TEXTTEST_HOME}/sleep.py
 
@@ -11,6 +9,13 @@ home_operating_system:posix
 config_module:queuesystem
 
 default_interface:console
+
+# Copied from 'standard'
+suppress_stderr_text:RANDR
+
+[run_dependent_text]
+errors*:RANDR
+[end]
 
 [batch_use_collection]
 default:true
