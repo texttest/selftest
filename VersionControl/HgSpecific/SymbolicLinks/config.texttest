@@ -1,2 +1,6 @@
 partial_copy_test_path:TargetApp
 copy_test_path:{CLEAR TargetApp}
+
+[run_dependent_text]
+# Because of the softlink workaround...
+externalmocks:hg status -A .*/TargetApp{REPLACE hg status -A <test write dir>/TargetApp}
