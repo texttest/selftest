@@ -1,7 +1,6 @@
 Using Application APP
 -R <value>;Advanced;Request grid resource <value>
 -a <value>,...;N/A;Load test applications named <value>,...
--actrep;N/A;Run with slow motion replay
 -b <value>;Advanced;Run batch mode session <value>
 -bx <value>;N/A;Select tests exactly as for batch mode session <value>
 -c <value>,...;Basic;Use checkout <value>,...
@@ -10,6 +9,7 @@ Using Application APP
 -con;N/A;use console interface
 -cp <value>;Basic;Times to run <value>
 -d <value>;N/A;Look for test files under <value>
+-delay <value>;N/A;Replay pause (sec) <value>
 -desc <value>;Selection;Select descriptions containing <value>
 -f <value>,...;Selection;Select tests listed in file <value>,...
 -fintersect <value>,...;N/A;Tests in all files <value>,...
@@ -18,6 +18,7 @@ Using Application APP
 -g;N/A;use dynamic GUI
 -grep <value>;Selection;Select test-files containing <value>
 -grepfile <value>;Selection;Select test-file to search <value>
+-gui;N/A;Show GUI and record any extra actions
 -gx;N/A;use static GUI
 -help;N/A;Print configuration help text on stdout
 -ignorecat;Basic;Ignore catalogue file when isolating data
