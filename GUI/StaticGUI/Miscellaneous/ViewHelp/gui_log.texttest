@@ -37,7 +37,7 @@ Button 'Filter' (Stock image 'gtk-find', accelerator 'Ctrl+F', tooltip 'filter t
 Button 'Reset Tab' (tooltip 'Reset all the settings in the current tab to their default values')
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 23Jan10:53:57.' , Image 'throbber_inactive.png'
+'TextTest started at 04Feb17:33:13.' , Image 'throbber_inactive.png'
 ------------------------------------------------------------------------
 
 Changing GUI status to: 'Reading tests ...'
@@ -82,7 +82,7 @@ Updated : Test Tree with columns: Tests: 0/11 selected
 ->       S01 (black/grey90)
 Updated drop-down list in 'Test-file to search' Text entry (set to 'output') (drop-down list containing ['output'])
 
-Changing GUI status to: 'Reading tests completed at 23Jan10:53:57.'
+Changing GUI status to: 'Reading tests completed at 04Feb17:33:14.'
 
 Expected application event 'all tests to be read' occurred, proceeding.
 
@@ -210,9 +210,9 @@ Viewing table with 6 rows and 2 columns.
 '<b>You are using these installations:
 </b>'
 Viewing table with 3 rows and 2 columns.
-'Test Suite:' | '/tmp/geoff/texttest.gui.23Jan105351.2394/texttest.gui/GUI/StaticGUI/Miscellaneous/ViewHelp/TargetApp'
-'TextTest:' | '/users/geoff/work/master/Testing/TextTest'
-'Python:' | '/usr/local/tt-env/python2.6.current/bin/python'
+'Test Suite:' | '/tmp/dgalda/texttest.04Feb173212.31854/texttest.gui/GUI/StaticGUI/Miscellaneous/ViewHelp/TargetApp'
+'TextTest:' | '/users/dgalda/work/master/Testing/TextTest'
+'Python:' | '/users/dgalda/.local/python2.6.current/bin/python'
 ---------------
 Stock Button 'gtk-close'
 --------------------------------------------------
@@ -242,32 +242,17 @@ Changing GUI status to: ''
 ---------- Dialog 'TextTest Migration Notes' ----------
 Default widget is 'gtk-close'
 
-Showing Notebook with tabs: from 3.24 , from 3.23 , from 3.22 , from 3.21 , from 3.20 , from 3.19 , from 3.18 , from 3.17 , from 3.16 , from 3.15 , from 3.14 , from 3.13 , from 3.12 , from 3.11 , from 3.10 , from 3.9 , from 3.8 , from 3.7 , from 3.6 , from 3.5 , from 3.4 , from 3.3 , from 3.1 , from 2.x
-Viewing page 'from 3.24'
+Showing Notebook with tabs: from 3.25 , from 3.24 , from 3.23 , from 3.22 , from 3.21 , from 3.20 , from 3.19 , from 3.18 , from 3.17 , from 3.16 , from 3.15 , from 3.14 , from 3.13 , from 3.12 , from 3.11 , from 3.10 , from 3.9 , from 3.8 , from 3.7 , from 3.6 , from 3.5 , from 3.4 , from 3.3 , from 3.1 , from 2.x
+Viewing page 'from 3.25'
 
 ========== GtkTextView ==========
-
 =========================================================
-COMPULSORY MIGRATION
+CHANGES IN DEFAULT BEHAVIOUR (OR PROCEDURE)
 =========================================================
 
-(1) Grid Engine submission no longer forwards the entire environment
-====================================================================
-Anyone using Grid Engine (UGE/SGE) should note that the setup no longer tells UGE to copy the 
-entire environment when submitting jobs. (In detail, it does not send the -V flag to the qsub program)
-
-The previous behaviour could lead to some very strange errors, such as when display/shell related 
-variables were forwarded to machines with a different OS where they didn't make sense.
-
-It has previously worked to set environment variables outside of TextTest, e.g. via a starter 
-script, and then just start TextTest. This will not work any more with UGE/SGE, you will need 
-to set them via TextTest's own environment file mechanism.
-
-Alternatively, to restore the previous behaviour, you can add
-
-queue_system_submit_args:-V 
-
-to your config file, which will once again forward your entire environment to the remote job.
+(1) "slow_motion_replay_speed" config file setting is not longer used
+=====================================================================
+It can be configured now on the running tab of the static GUI. You should just remove it.
 =================================
 ---------------
 Stock Button 'gtk-close'
@@ -275,7 +260,7 @@ Stock Button 'gtk-close'
 
 'view tab' event created with arguments 'from 3.4'
 
-Current page changed in Notebook with tabs: from 3.24 , from 3.23 , from 3.22 , from 3.21 , from 3.20 , from 3.19 , from 3.18 , from 3.17 , from 3.16 , from 3.15 , from 3.14 , from 3.13 , from 3.12 , from 3.11 , from 3.10 , from 3.9 , from 3.8 , from 3.7 , from 3.6 , from 3.5 , from 3.4 , from 3.3 , from 3.1 , from 2.x
+Current page changed in Notebook with tabs: from 3.25 , from 3.24 , from 3.23 , from 3.22 , from 3.21 , from 3.20 , from 3.19 , from 3.18 , from 3.17 , from 3.16 , from 3.15 , from 3.14 , from 3.13 , from 3.12 , from 3.11 , from 3.10 , from 3.9 , from 3.8 , from 3.7 , from 3.6 , from 3.5 , from 3.4 , from 3.3 , from 3.1 , from 2.x
 Viewing page 'from 3.4'
 
 ========== GtkTextView ==========
@@ -374,11 +359,19 @@ Viewing page 'trunk'
 
 ========== GtkTextView ==========
 Static GUI Enhancements:
+    - (GUI testing) "run in slow motion replay" checkbox removed. It has been replaced with a spinner for adding a pause after each event and
+	a new check box "Show GUI and record any extra actions".
 Dynamic GUI Enhancements:
 Framework Enhancements:
 Batch Report Enhancements:
+    - Index page now notes which run the information there is based on
 Grid Engine (LSF/SGE/Condor) enhancements/bug fixes:
+    - Default_queue setting should also apply to the proxy job
 Bug Fixes:
+    - Correctly find version control when TextTest files are only some part of the substructure
+    - Workaround Mercurial bug for symbolically linked repository when removing or moving
+    - Don't bail out if a testsuite file is missing and we don't have permission to create a new one
+    - Allways disable storytext editor when using a virtual display
 =================================
 ---------------
 Stock Button 'gtk-close'
@@ -460,9 +453,9 @@ Viewing table with 6 rows and 2 columns.
 '<b>You are using these installations:
 </b>'
 Viewing table with 3 rows and 2 columns.
-'Test Suite:' | '/tmp/geoff/texttest.gui.23Jan105351.2394/texttest.gui/GUI/StaticGUI/Miscellaneous/ViewHelp/TargetApp'
-'TextTest:' | '/users/geoff/work/master/Testing/TextTest'
-'Python:' | '/usr/local/tt-env/python2.6.current/bin/python'
+'Test Suite:' | '/tmp/dgalda/texttest.04Feb173212.31854/texttest.gui/GUI/StaticGUI/Miscellaneous/ViewHelp/TargetApp'
+'TextTest:' | '/users/dgalda/work/master/Testing/TextTest'
+'Python:' | '/users/dgalda/.local/python2.6.current/bin/python'
 ---------------
 Stock Button 'gtk-close'
 --------------------------------------------------
