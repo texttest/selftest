@@ -1,5 +1,5 @@
 
----------- Window 'VideoStore tests under /carm/proj/texttest-tmp/dgalda/texttest.gui.25Oct112129.23796/texttest.gui/TestSelf/UITesting/UseCaseRecording/Shortcuts/GUI/Insert_one/TargetApp/source_with_pyc (started at 25Oct11:21:33) - TextTest dynamic GUI' ----------
+---------- Window 'VideoStore tests under /tmp/dgalda/texttest.gui.26Feb104432.31954/texttest.gui/TestSelf/UITesting/UseCaseRecording/Shortcuts/GUI/Insert_one/TargetApp/source_with_pyc (started at 26Feb10:44:34) - TextTest dynamic GUI' ----------
 Focus widget is 'Test Tree'
 
 Menu Bar : '_File' (+) , '_View' (+) , '_Actions' (+) , '_Help' (+)
@@ -23,7 +23,7 @@ Showing Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 1 (white,bold) | Check box (checked)
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 25Oct11:21:33.' , Image 'throbber_inactive.png'
+'TextTest started at 26Feb10:44:35.' , Image 'throbber_inactive.png'
 ----------------------------------------------------------------------------------------------------
 
 Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
@@ -31,25 +31,26 @@ Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
 ->   suite (black/white,bold) | (white)
 ->     AddMovie (black/white) | (white)
 
-Progress bar set to fraction 1.0, text 'All 1 tests completed at 25Oct11:21:34'
+Progress bar set to fraction 1.0, text 'All 1 tests completed at 26Feb10:44:35'
 
 Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
 -> TargetApp (gui) (black/white,bold) | (white)
 ->   suite (black/white,bold) | (white)
-->     AddMovie (black/DarkSeaGreen2) | fake_usecase_file different (salmon)
+->     AddMovie (black/salmon) | usecase different(+) (salmon)
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white) | 0 (white) | Check box (checked)
 -> Failed (salmon,bold) | 1 (salmon,bold) | Check box (checked)
 ->   Differences (salmon,bold) | 1 (salmon,bold) | Check box (checked)
 ->     fake_usecase_file different (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->     usecase different (salmon,bold) | 1 (salmon,bold) | Check box (checked)
 
 No longer greyed out : _Save
 
 Changed selection in Test Tree with columns: Tests: All 1 selected, none hidden , Details
 -> TargetApp (gui) (black/white,bold) | (white)
 ->   suite (black/white,bold) | (white)
-->     AddMovie (black/DarkSeaGreen2) | fake_usecase_file different (salmon)   ***
+->     AddMovie (black/salmon) | usecase different(+) (salmon)   ***
 
 Current page changed in Notebook with tabs: Test , Status , Selection , Run Info
 Viewing page 'Test'
@@ -58,7 +59,7 @@ Viewing page 'Test'
 Showing File Tree with columns: AddMovie , Details
 -> Comparison Files (bold)
 ->   fake_usecase_file.gui (salmon) | (salmon)
-->   usecase.gui (DarkSeaGreen2) | (DarkSeaGreen2)
+->   usecase.gui (salmon) | (salmon)
 
 ------------------------------ (horizontal pane separator)
 ...........
@@ -71,6 +72,12 @@ Test FAILED :
 < add movie
 ---
 > add one
+---------- Differences in usecase ----------
+1,2c1
+< set new movie name to Die Hard
+< add movie
+---
+> add movie named Die Hard
 ===============================
 
 Expected application event 'completion of test actions' occurred, proceeding.
@@ -123,6 +130,8 @@ Expected application event 'completion of test actions' occurred, proceeding.
 
 Changing GUI status to: 'Saving VideoStore test-case AddMovie : fake_usecase_file, existing version'
 
+Changing GUI status to: 'Saving VideoStore test-case AddMovie : usecase, existing version'
+
 Greyed out : _Save
 
 Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
@@ -136,6 +145,7 @@ Showing Test Status View with columns: Status , Number , Visible
 -> Failed (white) | 0 (white) | Check box (checked)
 ->   Differences (white) | 0 (white) | Check box (checked)
 ->     fake_usecase_file different (white) | 0 (white) | Check box (checked)
+->     usecase different (white) | 0 (white) | Check box (checked)
 -> Succeeded (DarkSeaGreen2,bold) | 1 (DarkSeaGreen2,bold) | Check box (checked)
 ->   Saved (DarkSeaGreen2,bold) | 1 (DarkSeaGreen2,bold) | Check box (checked)
 
