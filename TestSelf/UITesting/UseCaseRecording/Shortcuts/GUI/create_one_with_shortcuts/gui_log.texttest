@@ -37,7 +37,7 @@ Button 'Filter' (Stock image 'gtk-find', accelerator 'Ctrl+F', tooltip 'filter t
 Button 'Reset Tab' (tooltip 'Reset all the settings in the current tab to their default values')
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 11Apr10:25:24.' , Image 'throbber_inactive.png'
+'TextTest started at 09Apr15:30:55.' , Image 'throbber_inactive.png'
 -------------------------------------------------------------------------------
 
 Changing GUI status to: 'Reading tests ...'
@@ -69,11 +69,11 @@ Updated : Test Tree with columns: Tests: 0/7 selected
 ->     AddSomeMovies (black/grey90)
 Updated drop-down list in 'Test-file to search' Text entry (set to 'fake_usecase_file') (drop-down list containing ['fake_usecase_file', 'options', 'usecase', '----------', 'output'])
 
-Changing GUI status to: 'Reading tests completed at 11Apr10:25:24.'
+Changing GUI status to: 'Reading tests completed at 09Apr15:30:56.'
 
 Expected application event 'all tests to be read' occurred, proceeding.
 
-'set test selection to' event created with arguments 'AddMovie'
+'set test selection to' event created with arguments 'AddSomeMovies'
 
 No longer greyed out : _Run
 
@@ -81,26 +81,25 @@ Changed selection in Test Tree with columns: Tests: 1/7 selected
 -> TargetApp (gui) (black/grey90,bold)
 ->   AddMovies (black/grey90)
 ->   suite (black/grey90,bold)
-->     AddMovie (black/grey90)   ***
+->     AddMovie (black/grey90)
 ->   using_shortcuts (black/grey90,bold)
 ->     AddOneNoArguments (black/grey90)
 ->     AddOneMovie (black/grey90)
 ->     AddTwoMovies (black/grey90)
 ->     AddThreeMovies (black/grey90)
-->     AddSomeMovies (black/grey90)
+->     AddSomeMovies (black/grey90)   ***
 
 Current page changed in Notebook with tabs: Test , Selection , Running , Config
 Viewing page 'Test'
 ...........
 
-Showing File Tree with columns: AddMovie
+Showing File Tree with columns: AddSomeMovies
 -> Standard Files (white,bold)
 ->   output.gui (grey90)
 -> Definition Files (white,bold)
 ->   options.gui (grey90)
 ->   usecase.gui (grey90)
 ->   usecase.gui.nt (grey90)
-->   fake_usecase_file.gui (grey90)
 
 ------------------------------ (horizontal pane separator)
 ...........
@@ -111,39 +110,37 @@ Description:
 <No description provided>
 
 Full path:
-suite/AddMovie
+using_shortcuts/AddSomeMovies
 ===============================
 
-'show actions menu' event created with arguments ''
+'select file' event created with arguments 'usecase.gui'
 
----------- Popup Window ----------
-'_Select' (Stock image 'gtk-find', accelerator 'Ctrl+Alt+F')
-'Filter' (Stock image 'gtk-find', accelerator 'Ctrl+F')
-  ----
-'_Run' (Stock image 'gtk-execute', accelerator 'Ctrl+R')
-'Re_connect...' (Stock image 'gtk-connect', accelerator 'Shift+Ctrl+R')
-'Record _Use-Case' (Stock image 'gtk-media-record', accelerator 'F9')
-'Replace Text in Files'
-'Insert Shortcuts into Usecases'
-  ----
-'Refresh' (Stock image 'gtk-refresh', accelerator 'F5')
-'R_eset' (Stock image 'gtk-revert-to-saved', accelerator 'Ctrl+E')
-----------------------------------
+Waiting for application event 'file editing operations to complete' to occur.
 
-'insert shortcuts into usecases' event created with arguments ''
+Changing GUI status to: 'Started "storytext_editor usecase.gui" in background (from test AddSomeMovies).'
+
+---------- Dialog 'TextTest Confirmation' ----------
+Focus widget is 'GtkTextView'
+Stock image 'gtk-dialog-warning' , ========== GtkTextView ==========
+New shortcuts were created. Would you like to insert them into all usecases now?
+=================================
+---------------
+Stock Button 'gtk-yes' , Stock Button 'gtk-no'
+----------------------------------------------------
+
+Expected application event 'file editing operations to complete' occurred, proceeding.
+
+'answer yes to texttest confirmation' event created with arguments ''
 
 Waiting for application event 'script GUI to be closed' to occur.
 
-Changing GUI status to: 'Inserted shortcuts into usecases for test suite/AddMovie at 11Apr10:25:25.'
-
-Updated : File Tree with columns: AddMovie
+Updated : File Tree with columns: AddSomeMovies
 -> Standard Files (white,bold)
 ->   output.gui (grey90)
 -> Definition Files (white,bold)
 ->   options.gui (grey90)
 ->   usecase.gui (grey90)
 ->   usecase.gui.nt (grey90)
-->   fake_usecase_file.gui (grey90)
 
 Expected application event 'script GUI to be closed' occurred, proceeding.
 
