@@ -1,0 +1,11 @@
+#!/bin/sh
+
+cd ${HOME}'/.texttest/tmp/dynamic_gui.2tests.26Apr094601.36555/hello.2tests/Test2'
+PATH=${HOME}'/.texttest/tmp/dynamic_gui.2tests.26Apr094601.36555/hello.2tests/Test2:'${PATH}
+export PATH
+TEXTTEST_LOG_DIR=${HOME}'/.texttest/tmp/dynamic_gui.2tests.26Apr094601.36555/hello.2tests/Test2'
+export TEXTTEST_LOG_DIR
+USECASE_REPLAY_SCRIPT=
+export USECASE_REPLAY_SCRIPT
+echo "kill $$" > kill_test.sh
+exec ${HOME}/.texttest/tmp/dynamic_gui.2tests.26Apr094601.36555/system_under_test/do_nothing.py ${HOME}/.texttest/tmp/dynamic_gui.2tests.26Apr094601.36555/system_under_test/hello.py
