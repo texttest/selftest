@@ -1,3 +1,13 @@
+<-PYT:os.readlink('jenkinsdata/jobs/test/builds/1')
+->RET:'Faked timestamp 1'
+<-PYT:os.readlink('jenkinsdata/jobs/test/builds/3')
+->RET:'Faked timestamp 3'
+<-PYT:os.readlink('jenkinsdata/jobs/test/builds/4')
+->RET:'Faked timestamp 4'
+<-PYT:os.readlink('jenkinsdata/jobs/test/builds/5')
+->RET:'Faked timestamp 5'
+<-PYT:os.readlink('jenkinsdata/jobs/test/builds/6')
+->RET:'Faked timestamp 6'
 <-PYT:import matplotlib
 <-PYT:matplotlib.__version__
 ->RET:'0.99.3'
@@ -30,7 +40,7 @@
 ->RET:Instance('PolyCollection(Collection, Artist, object)', 'polycollection3')
 <-PYT:pylab.Rectangle((0, 0), 1, 1, fc='#CEEFBD')
 ->RET:Instance('Rectangle(Patch, Artist, object)', 'rectangle3')
-<-PYT:pylab.xticks([0, 1, 2, 3, 4], ['23Jan2006.1', '24Jan2006.3', '25Jan2006.4', '26Jan2006.5', '26Jan2006.6'])
+<-PYT:pylab.xticks([0, 1, 2, 3, 4], ['23Jan2006.1', '24Jan2006.3', '25Jan2006.4', '25Jan2006.5', '26Jan2006.6'])
 ->RET:([Instance('XTick(Tick, Artist, object)', 'xtick1'), Instance('XTick(Tick, Artist, object)', 'xtick2'), Instance('XTick(Tick, Artist, object)', 'xtick3'), Instance('XTick(Tick, Artist, object)', 'xtick4'), Instance('XTick(Tick, Artist, object)', 'xtick5'), Instance('XTick(Tick, Artist, object)', 'xtick6')], Instance('silent_list(list)', 'silent_list1'))
 <-PYT:axessubplot1.get_xticklabels()
 ->RET:Instance('silent_list(list)', 'silent_list2')
@@ -44,7 +54,17 @@
 <-PYT:legend1.get_frame()
 ->RET:Instance('FancyBboxPatch(Patch, Artist, object)', 'fancybboxpatch1')
 <-PYT:fancybboxpatch1.set_alpha(0.5)
-<-PYT:figure1.savefig('/tmp/geoff/texttest.30Oct114051.1215/texttest/TestSelf/BatchTests/HistoricalReport/Jenkins/ReportJenkinsChanges/report/hello/images/test_normal.png', dpi=100)
+<-PYT:figure1.savefig('/tmp/geoff/texttest.16May154509.10449/texttest/TestSelf/BatchTests/HistoricalReport/Jenkins/ReportJenkinsChanges/report/hello/images/test_normal.png', dpi=100)
+<-PYT:os.readlink('jenkinsdata/jobs/test/builds/1')
+->RET:'Faked timestamp 1'
+<-PYT:os.readlink('jenkinsdata/jobs/test/builds/3')
+->RET:'Faked timestamp 3'
+<-PYT:os.readlink('jenkinsdata/jobs/test/builds/4')
+->RET:'Faked timestamp 4'
+<-PYT:os.readlink('jenkinsdata/jobs/test/builds/5')
+->RET:'Faked timestamp 5'
+<-PYT:os.readlink('jenkinsdata/jobs/test/builds/6')
+->RET:'Faked timestamp 6'
 <-PYT:pylab.clf()
 <-PYT:pylab.figure(1)
 ->RET:Instance('Figure(Artist, object)', 'figure1')
@@ -72,7 +92,7 @@
 ->RET:Instance('PolyCollection(Collection, Artist, object)', 'polycollection8')
 <-PYT:pylab.Rectangle((0, 0), 1, 1, fc='#CEEFBD')
 ->RET:Instance('Rectangle(Patch, Artist, object)', 'rectangle6')
-<-PYT:pylab.xticks([0, 1, 2, 3, 4], ['23Jan2006.1', '24Jan2006.3', '25Jan2006.4', '26Jan2006.5', '26Jan2006.6'])
+<-PYT:pylab.xticks([0, 1, 2, 3, 4], ['23Jan2006.1', '24Jan2006.3', '25Jan2006.4', '25Jan2006.5', '26Jan2006.6'])
 ->RET:([Instance('XTick(Tick, Artist, object)', 'xtick7'), Instance('XTick(Tick, Artist, object)', 'xtick8'), Instance('XTick(Tick, Artist, object)', 'xtick9'), Instance('XTick(Tick, Artist, object)', 'xtick10'), Instance('XTick(Tick, Artist, object)', 'xtick11'), Instance('XTick(Tick, Artist, object)', 'xtick12'), Instance('XTick(Tick, Artist, object)', 'xtick13')], Instance('silent_list(list)', 'silent_list3'))
 <-PYT:axessubplot2.get_xticklabels()
 ->RET:Instance('silent_list(list)', 'silent_list4')
@@ -86,4 +106,4 @@
 <-PYT:legend2.get_frame()
 ->RET:Instance('FancyBboxPatch(Patch, Artist, object)', 'fancybboxpatch2')
 <-PYT:fancybboxpatch2.set_alpha(0.5)
-<-PYT:figure1.savefig('/tmp/geoff/texttest.30Oct114051.1215/texttest/TestSelf/BatchTests/HistoricalReport/Jenkins/ReportJenkinsChanges/report/hello/images/test_normal_all_Jan2006.png', dpi=100)
+<-PYT:figure1.savefig('/tmp/geoff/texttest.16May154509.10449/texttest/TestSelf/BatchTests/HistoricalReport/Jenkins/ReportJenkinsChanges/report/hello/images/test_normal_all_Jan2006.png', dpi=100)
