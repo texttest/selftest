@@ -1,5 +1,37 @@
 
----------- Window 'Test management - TextTest static GUI' ----------
+---------- Dialog 'Define a new tested application' ----------
+Default widget is 'gtk-ok'
+'Full name of application:' (tooltip 'Name of application to use in reports etc.')
+Text entry
+'
+File extension to use for TextTest files associated with this application:' (tooltip 'Short space-free extension, to identify all TextTest's files associated with this application')
+Text entry
+'
+Subdirectory name to store the above application files under (leave blank for local storage):'
+Text entry
+'
+Java Class name (instead of executable program):'
+Text entry
+''
+Combo Box (selected 'Disable GUI testing options') (drop-down list containing ['Disable GUI testing options', 'PyGTK GUI with StoryText', 'Tkinter GUI with StoryText', 'wxPython GUI with StoryText', 'SWT GUI with StoryText', 'Eclipse RCP GUI with StoryText', 'Eclipse GEF GUI with StoryText', 'Java Swing GUI with StoryText', 'Other embedded Use-case Recorder (e.g. NUseCase)', 'Other GUI-test tool (enable virtual display only)'])
+.....'
+Select executable program to test:' (tooltip 'The full path to the program you want to test')......
+
+Showing File Chooser for 'Define a new tested application' (selected '/tmp/dgalda/texttest.gui.23May170812.19762/texttest.gui/GUI/StaticGUI/AddingApps/FromScratch/ImportFile/TargetApp/hello.py')
+Shortcut folders (1) :
+- /tmp/dgalda/texttest.gui.23May170812.19762/texttest.gui/GUI/StaticGUI/AddingApps/FromScratch/ImportFile/TargetApp
+---------------
+Stock Button 'gtk-ok' , Stock Button 'gtk-cancel'
+--------------------------------------------------------------
+
+'enter file extension to use for texttest files associated with this application =' event created with arguments 'hello'
+Edited 'File extension to use for TextTest files associated with this application' Text entry (set to 'hello')
+
+'press define' event created with arguments ''
+
+Waiting for application event 'all tests to be read' to occur.
+
+---------- Window 'HELLO test management - TextTest static GUI' ----------
 Focus widget is 'Test Tree'
 
 Menu Bar : '_File' (+) , '_Edit' (+) , '_View' (+) , '_Actions' (+) , '_Help' (+)
@@ -20,7 +52,7 @@ Showing Test Tree with columns: Tests: All 0 selected
 Showing Notebook with tabs: Selection , Config
 Viewing page 'Selection'
 Viewing table with 7 rows and 2 columns.
-'Tests for version  ' (tooltip 'Select tests for a specific version.') | Text entry
+'Tests for version  ' (tooltip 'Select tests for a specific version.') | Text entry (drop-down list containing ['', '<default>'])
 'Test names containing  ' (tooltip 'Select tests for which the name contains the entered text. The text can be a regular expression.') | Text entry
 'Test paths containing  ' (tooltip 'Select tests for which the full path to the test (e.g. suite1/subsuite/testname) contains the entered text. The text can be a regular expression. You can select tests by suite name this way.') | Text entry
 'Tests listed in file  ' | Text entry , Button '...'
@@ -37,49 +69,10 @@ Button 'Filter' (Stock image 'gtk-find', accelerator 'Ctrl+F', tooltip 'filter t
 Button 'Reset Tab' (tooltip 'Reset all the settings in the current tab to their default values')
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 31Jan11:40:03.' , Image 'throbber_inactive.png'
---------------------------------------------------------------------
-
-Changing GUI status to: 'Reading tests ...'
-Updated drop-down list in 'Test-file to search' Text entry (set to 'none') (drop-down list containing ['none'])
-
-Changing GUI status to: 'Reading tests completed at 31Jan11:40:03.'
-
----------- Dialog 'Define a new tested application' ----------
-Default widget is 'gtk-ok'
-'Full name of application:' (tooltip 'Name of application to use in reports etc.')
-Text entry
-'
-File extension to use for TextTest files associated with this application:' (tooltip 'Short space-free extension, to identify all TextTest's files associated with this application')
-Text entry
-'
-Subdirectory name to store the above application files under (leave blank for local storage):'
-Text entry
-'
-Java Class name (instead of executable program):'
-Text entry
-''
-Combo Box (selected 'Disable GUI testing options') (drop-down list containing ['Disable GUI testing options', 'PyGTK GUI with StoryText', 'Tkinter GUI with StoryText', 'wxPython GUI with StoryText', 'SWT GUI with StoryText', 'Eclipse RCP GUI with StoryText', 'Eclipse GEF GUI with StoryText', 'Java Swing GUI with StoryText', 'Other embedded Use-case Recorder (e.g. NUseCase)', 'Other GUI-test tool (enable virtual display only)'])
-.....'
-Select executable program to test:' (tooltip 'The full path to the program you want to test')......
-
-Showing File Chooser for 'Define a new tested application' (selected '/tmp/geoff/texttest.gui.31Jan114000.1803/texttest.gui/GUI/StaticGUI/AddingApps/FromScratch/ImportFile/TargetApp/hello.py')
-Shortcut folders (1) :
-- /tmp/geoff/texttest.gui.31Jan114000.1803/texttest.gui/GUI/StaticGUI/AddingApps/FromScratch/ImportFile/TargetApp
----------------
-Stock Button 'gtk-ok' , Stock Button 'gtk-cancel'
---------------------------------------------------------------
-
-Expected application event 'all tests to be read' occurred, proceeding.
-
-'enter file extension to use for texttest files associated with this application =' event created with arguments 'hello'
-Edited 'File extension to use for TextTest files associated with this application' Text entry (set to 'hello')
-
-'press define' event created with arguments ''
+'Created new application 'HELLO'.' , Image 'throbber_inactive.png'
+--------------------------------------------------------------------------
 
 No longer greyed out : _Run
-
-Changing title for Window 'HELLO test management - TextTest static GUI'
 
 Updated : Test Tree with columns: Tests: 1 suite selected
 -> TargetApp (hello) (black/grey90,bold)   ***
@@ -101,11 +94,8 @@ Showing File Tree with columns: TargetApp
 Description:
 Root test suite
 ===============================
-Hiding the 'Replay pause (sec)' widget
-Hiding the 'Replay pause (sec)  ' widget
-Hiding the 'Show GUI and record any extra actions' widget
 
-Changing GUI status to: 'Created new application with extension 'hello'.'
+Expected application event 'all tests to be read' occurred, proceeding.
 
 'set file selection to' event created with arguments 'Definition Files'
 
@@ -132,9 +122,9 @@ Radio button 'Create a new file' (checked)
 Radio button 'Create a new directory'
 .....'Source to copy from:'......
 
-Showing Source File Chooser (selected '/tmp/geoff/texttest.gui.31Jan114000.1803/texttest.gui/GUI/StaticGUI/AddingApps/FromScratch/ImportFile/TargetApp') (greyed out)
+Showing Source File Chooser (selected '/tmp/dgalda/texttest.gui.23May170812.19762/texttest.gui/GUI/StaticGUI/AddingApps/FromScratch/ImportFile/TargetApp') (greyed out)
 Shortcut folders (1) :
-- /tmp/geoff/texttest.gui.31Jan114000.1803/texttest.gui/GUI/StaticGUI/AddingApps/FromScratch/ImportFile/TargetApp
+- /tmp/dgalda/texttest.gui.23May170812.19762/texttest.gui/GUI/StaticGUI/AddingApps/FromScratch/ImportFile/TargetApp
 ---------------
 Stock Button 'gtk-ok' , Stock Button 'gtk-cancel'
 ------------------------------------------------------------------
