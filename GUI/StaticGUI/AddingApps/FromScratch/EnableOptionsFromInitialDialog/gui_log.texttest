@@ -17,9 +17,9 @@ Combo Box (selected 'Disable GUI testing options') (drop-down list containing ['
 .....'
 Select executable program to test:' (tooltip 'The full path to the program you want to test')......
 
-Showing File Chooser for 'Define a new tested application' (selected '/tmp/dgalda/texttest.gui.23May170812.19764/texttest.gui/GUI/StaticGUI/AddingApps/FromScratch/EnableUIOption/TargetApp/environment.recusecase')
+Showing File Chooser for 'Define a new tested application' (selected '/tmp/dgalda/texttest.gui.24May113933.23837/texttest.gui/GUI/StaticGUI/AddingApps/FromScratch/EnableOptionsFromInitialDialog/TargetApp/environment.recusecase')
 Shortcut folders (1) :
-- /tmp/dgalda/texttest.gui.23May170812.19764/texttest.gui/GUI/StaticGUI/AddingApps/FromScratch/EnableUIOption/TargetApp
+- /tmp/dgalda/texttest.gui.24May113933.23837/texttest.gui/GUI/StaticGUI/AddingApps/FromScratch/EnableOptionsFromInitialDialog/TargetApp
 ---------------
 Stock Button 'gtk-ok' , Stock Button 'gtk-cancel'
 --------------------------------------------------------------
@@ -32,7 +32,7 @@ Changed selection in 'GUI testing option chooser' Combo Box (selected 'Other emb
 
 'select executable program to test' event created with arguments 'hello.py'
 
-Updated : File Chooser for 'Define a new tested application' (selected '/tmp/dgalda/texttest.gui.23May170812.19764/texttest.gui/GUI/StaticGUI/AddingApps/FromScratch/EnableUIOption/TargetApp/hello.py')
+Updated : File Chooser for 'Define a new tested application' (selected '/tmp/dgalda/texttest.gui.24May113933.23837/texttest.gui/GUI/StaticGUI/AddingApps/FromScratch/EnableOptionsFromInitialDialog/TargetApp/hello.py')
 
 'press define' event created with arguments ''
 
@@ -173,6 +173,48 @@ Test
 
 Changing GUI status to: 'Added new HELLO test-case Test'
 
+'view options for' event created with arguments 'Running'
+
+Current page changed in Notebook with tabs: Test , Selection , Running , Config
+Viewing page 'Running'
+
+Showing Notebook with tabs: Basic , Advanced
+Viewing page 'Basic'
+Viewing table with 5 rows and 2 columns.
+'Run this version  ' | Text entry
+'Use checkout  ' | Text entry
+'Run on machine  ' | Text entry
+'Times to run  ' (tooltip 'Set this to some number larger than 1 to run the same test multiple times, for example to try to catch indeterminism in the system under test') | Spin button entry (set to '1') (min=1.0, max=1000.0, step=1.0)
+'Replay pause (sec)  ' (tooltip 'How long to wait, in seconds, between replaying each GUI action in the usecase file') | Spin button entry (set to '0.0') (min=0.0, max=1000.0, step=1.0)
+Check button 'Show GUI and record any extra actions' (tooltip 'Disable virtual display usage if any. Replay whatever is in the usecase file and enabled recording when done')
+Check button 'Stop after first failure'
+Check button 'Run tests sequentially'
+Button '_Run' (Stock image 'gtk-execute', accelerator 'Ctrl+R', tooltip 'Run selected tests')
+Button 'Reset Tab' (tooltip 'Reset all the settings in the current tab to their default values')
+
+'view actions for test' event created with arguments 'Test'
+
+---------- Popup Window ----------
+'Add Test' (Stock image 'gtk-add', greyed out, accelerator 'Ctrl+N')
+'Add Suite' (Stock image 'gtk-add', greyed out)
+  ----
+'_Cut' (Stock image 'gtk-cut', accelerator 'Ctrl+X')
+'_Copy' (Stock image 'gtk-copy', accelerator 'Ctrl+C')
+'_Paste' (Stock image 'gtk-paste', greyed out, accelerator 'Ctrl+V')
+'_Rename...' (Stock image 'gtk-italic', accelerator 'Ctrl+M')
+'Remove...' (Stock image 'gtk-delete')
+  ----
+'Enter Failure Information' (Stock image 'gtk-info', accelerator 'Ctrl+I')
+  ----
+'Show only selected'
+'Hide selected'
+  ----
+'_Run' (Stock image 'gtk-execute', accelerator 'Ctrl+R')
+'Record _Use-Case' (Stock image 'gtk-media-record', accelerator 'F9')
+  ----
+'_Reorder' (+)
+----------------------------------
+
 'record use-case' event created with arguments ''
 
 ---------- Dialog 'Record Use-Case' ----------
@@ -197,12 +239,65 @@ Waiting for application event 'record GUI to be closed' to occur.
 
 Changing GUI status to: 'Started record session for test Test'
 
-Updated : File Tree with columns: Test
--> Standard Files (white)
--> Definition Files (white)
-
 Changing GUI status to: 'Recording completed for HELLO test-case Test, not auto-replaying'
 
 Expected application event 'record GUI to be closed' occurred, proceeding.
+
+'view options for' event created with arguments 'Test'
+
+Current page changed in Notebook with tabs: Test , Selection , Running , Config
+Viewing page 'Test'
+...........
+
+Showing File Tree with columns: Test
+-> Standard Files (white,bold)
+->   stderr.hello (grey90)
+->   stdout.hello (grey90)
+-> Definition Files (white)
+
+------------------------------ (horizontal pane separator)
+...........
+
+========== Text Info ==========
+
+Description:
+<No description provided>
+
+Full path:
+Test
+===============================
+
+'view actions for file' event created with arguments 'stdout.hello'
+
+Changed selection in File Tree with columns: Test
+-> Standard Files (white,bold)
+->   stderr.hello (grey90)
+->   stdout.hello (grey90)   ***
+-> Definition Files (white)
+
+========== Text Info ==========
+
+Description:
+<No description provided>
+
+Full path:
+Test
+
+Preview of stdout.hello:
+Hello /tmp/dgalda/texttest.gui.24May113933.23837/texttest.gui/GUI/StaticGUI/AddingApps/FromScratch/EnableOptionsFromInitialDialog/TargetApp/ui_simulation_files
+===============================
+
+---------- Popup Window ----------
+'View File' (Stock image 'gtk-open', accelerator 'Ctrl+O')
+'Edit File'
+'Test Filtering'
+'_File Properties' (Stock image 'gtk-properties')
+'Copy Path To Clipboard'
+  ----
+'Create/_Import' (Stock image 'gtk-new', accelerator 'Ctrl+N')
+  ----
+'_Rename...' (Stock image 'gtk-italic')
+'Remove...' (Stock image 'gtk-delete')
+----------------------------------
 
 'quit' event created with arguments ''
