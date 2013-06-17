@@ -1,0 +1,52 @@
+known bugs=1,FAILED=1
+17Jun2013
+HELLO : 2 tests : 1 known bugs, 1 FAILED
+
+HELLO : 1 tests : 1 known bugs
+HELLO copy_1 : 1 tests : 1 FAILED
+
+Summary of all Unsuccessful tests follows...
+---------------------------------------------------------------------------------
+HELLO : 1 tests : 1 known bugs
+
+The following tests had known bugs : 
+In HELLO test-suite TargetApp:
+  - HELLO test-case Test : Delay Bug
+
+
+HELLO copy_1 : 1 tests : 1 FAILED
+
+The following tests FAILED : 
+In HELLO.copy_1 test-suite TargetApp:
+  - HELLO.copy_1 test-case Test : output different
+
+
+Details of all Unsuccessful tests follows...
+---------------------------------------------------------------------------------
+HELLO : 1 tests : 1 known bugs
+
+
+Detailed information for the tests that had known bugs follows...
+--------------------------------------------------------
+TEST had known bugs (Delay Bug) on tabora : HELLO test-case Test (under Test)
+Known problem with delay
+(This bug was triggered by text found in the full difference report matching 'after [0-9]* seconds')
+---------- Differences in output ----------
+1c1
+< Hello world
+---
+> Hello after 5 seconds
+
+---------------------------------------------------------------------------------
+HELLO copy_1 : 1 tests : 1 FAILED
+
+
+Detailed information for the tests that FAILED follows...
+--------------------------------------------------------
+TEST FAILED on tabora : HELLO.copy_1 test-case Test (under Test)
+---------- Differences in output ----------
+1c1
+< Hello world
+---
+> Hello after 5 seconds
+
