@@ -7,6 +7,9 @@ SelectExtraTests
 # Select tests from different applications, make sure they can be selected
 SelectAcrossVersions
 
+# If there are no tests for some version and we select the root suite, don't produce spurious warnings
+SelectRootNoTests
+
 # Check we can find tests via result file search if the results are in the extra version file
 SearchExtraResultFile
 
@@ -113,5 +116,4 @@ RerunExtra
 
 # Make sure we can rerun extra version tests that don't exist in the base version, when we haven't
 # run any tests from the base version (get version argument right)
-# 
 RerunExtraBaseNotRun
