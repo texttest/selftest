@@ -1,0 +1,26 @@
+<-CMD:hg log -f /tmp/geoff/texttest.hg.09Aug140757.29193/texttest.hg/VersionControl/General/Log/ShowConfigLog/TargetApp/config.hello
+->OUT:changeset:   8:c57d2c6473b1
+tag:         tip
+user:        geoff@gewoia.jeppesensystems.com
+date:        Thu Apr 02 15:05:09 2009 +0200
+summary:     Moving under TargetApp
+
+changeset:   2:756e81460d10
+parent:      0:44876aa2023b
+user:        geoff
+date:        Thu Feb 19 21:37:42 2009 +0100
+summary:     Don't forget CVS!
+
+changeset:   0:44876aa2023b
+user:        geoff
+date:        Thu Feb 19 21:26:26 2009 +0100
+summary:     Initial revision
+
+<-CMD:hg diff -g -r tip /tmp/geoff/texttest.hg.09Aug140757.29193/texttest.hg/VersionControl/General/Log/ShowConfigLog/TargetApp/config.hello
+->OUT:diff --git a/TargetApp/config.hello b/TargetApp/config.hello
+--- a/TargetApp/config.hello
++++ b/TargetApp/config.hello
+@@ -1,3 +1,1 @@
+ import_config_file:$STANDARD
+-
+-interactive_action_module:cvs

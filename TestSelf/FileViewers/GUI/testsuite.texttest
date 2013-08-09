@@ -55,9 +55,6 @@ NewFileViewers
 # See what happens if the file we try to view isn't there
 ViewRemovedFile
 
-# Check we can view imported files, and that they appear exactly once if included by several apps. Also check that versioned config files that aren't colocated with the parent config file get shown.
-ViewImportedConfigFiles
-
 # Make sure setting follow file by default doesn't stop viewing from working in the static GUI
 FollowByDefault
 
@@ -72,3 +69,7 @@ ViewPairwiseDiffs
 
 # Make sure pairwise viewer works on new files
 NewFilesPairwise
+
+# View a file in the Config tab and then one in the Test tab, they shouldn't be confused with each other
+FileMenusIndependent
+ImportedConfigFiles
