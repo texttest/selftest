@@ -40,6 +40,9 @@ ExtraVersionSpecificTests
 # Check we can archive some parts of the repository away
 ArchiveRepository
 
+# Check we can archive so that weekday specific pages keep more data
+ArchiveWithWeekdays
+
 # If nothing is archived, nothing should be tarred
 ArchiveNothing
 
@@ -69,7 +72,6 @@ MultiVersionsWithGraphs
 
 # If we have many applications from different projects, we should generate for the one with least tests first,
 # this is likely to take less time.
-# 
 BuildSmallestFirst
 Jenkins
 
