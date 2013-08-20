@@ -79,6 +79,11 @@ MultiVersionsWithGraphs
 # If we have many applications from different projects, we should generate for the one with least tests first,
 # this is likely to take less time.
 BuildSmallestFirst
+
+# We rely on test columns having build numbers in the name in order to generate Jenkins data: don't fail if we have Jenkins
+# but not this.
+# 
+JenkinsNoBuildNumbers
 Jenkins
 
 # Tests for different applications writing to the same page
