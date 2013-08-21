@@ -3,3 +3,8 @@ ReportJenkinsChanges
 
 # If builds are allowed to run simultaneously the fingerprint data may be wrong. Check it.
 FingerprintsWrong
+
+# If we don't get results, make sure we distinguish between aborted jobs and currently running jobs.
+# Don't write to cache in currently running case.
+# 
+AbortedAndRunning
