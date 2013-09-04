@@ -37,7 +37,7 @@ Button 'Filter' (Stock image 'gtk-find', accelerator 'Ctrl+F', tooltip 'filter t
 Button 'Reset Tab' (tooltip 'Reset all the settings in the current tab to their default values')
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 04Sep14:05:23.' , Image 'throbber_inactive.png'
+'TextTest started at 04Sep14:48:17.' , Image 'throbber_inactive.png'
 --------------------------------------------------------------------------
 
 Changing GUI status to: 'Reading tests ...'
@@ -49,7 +49,7 @@ Updated : Test Tree with columns: Tests: 0/1 selected
 ->   Test (black/grey90)
 Updated drop-down list in 'Test-file to search' Text entry (set to 'knownbugs') (drop-down list containing ['knownbugs', '----------', 'errors', 'output'])
 
-Changing GUI status to: 'Reading tests completed at 04Sep14:05:24.'
+Changing GUI status to: 'Reading tests completed at 04Sep14:48:17.'
 
 Expected application event 'all tests to be read' occurred, proceeding.
 
@@ -90,28 +90,6 @@ Description:
 Full path:
 Test
 ===============================
-
-'view actions for test' event created with arguments 'Test'
-
----------- Popup Window ----------
-'Add Test' (Stock image 'gtk-add', greyed out, accelerator 'Ctrl+N')
-'Add Suite' (Stock image 'gtk-add', greyed out)
-  ----
-'_Cut' (Stock image 'gtk-cut', accelerator 'Ctrl+X')
-'_Copy' (Stock image 'gtk-copy', accelerator 'Ctrl+C')
-'_Paste' (Stock image 'gtk-paste', greyed out, accelerator 'Ctrl+V')
-'_Rename...' (Stock image 'gtk-italic', accelerator 'Ctrl+M')
-'Remove...' (Stock image 'gtk-delete')
-  ----
-'Enter Failure Information' (Stock image 'gtk-info', accelerator 'Ctrl+I')
-  ----
-'Show only selected'
-'Hide selected'
-  ----
-'_Run' (Stock image 'gtk-execute', accelerator 'Ctrl+R')
-  ----
-'_Reorder' (+)
-----------------------------------
 
 'enter failure information' event created with arguments ''
 
@@ -160,26 +138,27 @@ Spin button entry (set to '0') (min=0.0, max=1000.0, step=1.0)
 Stock Button 'gtk-ok' , Stock Button 'gtk-cancel'
 ----------------------------------------------------------------------------------------------
 
-'enter text or regexp to match =' event created with arguments 'foobar'
+'enter text or regexp to match =' event created with arguments 'geoff'
 
 ========== Text or regexp to match ==========
-foobar
+geoff
 =============================================
+
+'trigger if the text is exactly as given' event created with arguments ''
+Toggled Radio button 'Present'
+Toggled Radio button 'Exactly as given' (checked)
+
+'enter full description =' event created with arguments 'Not mentioning geoff enough'
+Edited 'Full description' Text entry (set to 'Not mentioning geoff enough')
+
+'enter few-word summary =' event created with arguments 'No geoff'
+Edited 'Few-word summary' Text entry (set to 'No geoff')
+
+'enter trigger only when run on machine(s) =' event created with arguments 'fake_machine1'
+Edited 'Trigger only when run on machine(s)' Text entry (set to 'fake_machine1')
 
 'enable option for checking equal files' event created with arguments ''
 Toggled Check button 'Trigger even if file to search would otherwise compare as equal' (checked) (tooltip 'By default, this bug is only enabled if a difference is detected in the provided file to search. Check this box to search for it even if the file compares as equal.')
-
-'search in the full difference report' event created with arguments ''
-
-Greyed out : File to search in (Combo Box), Trigger even if file to search would otherwise compare as equal, Trigger even if other files differ
-Toggled Radio button 'Specific file' (tooltip 'Search in a newly generated file (not its diff)')
-Toggled Radio button 'Full difference report' (checked) (tooltip 'Search in the whole difference report as it appears in the lower right window in the dynamic GUI')
-
-'enter full description =' event created with arguments 'A long description'
-Edited 'Full description' Text entry (set to 'A long description')
-
-'enter few-word summary =' event created with arguments 'Short stuff'
-Edited 'Few-word summary' Text entry (set to 'Short stuff')
 
 'press ok' event created with arguments ''
 
@@ -199,5 +178,82 @@ Updated : File Tree with columns: Test
 ->   knownbugs.hello.unchanged (grey90)
 
 Changing GUI status to: 'Performed 'Enter Failure Information' on test Test.'
+
+'select file' event created with arguments 'knownbugs.hello'
+
+Waiting for application event 'file editing operations to complete' to occur.
+
+Changing GUI status to: 'Started "emacs knownbugs.hello" in background (from test Test).'
+
+Expected application event 'file editing operations to complete' occurred, proceeding.
+
+'set test selection to' event created with arguments 'TargetApp (hello)'
+
+Changed selection in Test Tree with columns: Tests: 1 suite selected
+-> TargetApp (hello) (black/grey90,bold)   ***
+->   Test (black/grey90)
+
+Updated : File Tree with columns: TargetApp
+-> Definition Files (white,bold)
+->   config.hello (grey90)
+->   config.hello.localtmp (grey90)
+->   testsuite.hello (grey90)
+
+========== Text Info ==========
+
+Description:
+Root test suite
+===============================
+
+'enter failure information' event created with arguments ''
+
+---------- Dialog 'Enter information for automatic interpretation of test failures' ----------
+Default widget is 'gtk-ok'
+.....'Search for'......
+'Text or regexp to match:'
+...........
+
+========== Text or regexp to match ==========
+geoff
+=============================================
+Check button 'Enable regular expressions' (checked)
+'Trigger if:' , Radio button 'Present' , Radio button 'NOT present' , Radio button 'Exactly as given' (checked)
+.....'Search in'......
+Radio button 'Specific file' (checked) (tooltip 'Search in a newly generated file (not its diff)') , Radio button 'Brief text/details' (tooltip 'Search in the brief text describing the test result as it appears in the Details column in the dynamic GUI test view') , Radio button 'Full difference report' (tooltip 'Search in the whole difference report as it appears in the lower right window in the dynamic GUI')
+'File to search in:'
+Text entry (set to 'errors') (drop-down list containing ['errors', 'output'])
+Check button 'Trigger even if other files differ' (tooltip 'By default, this bug is only enabled if only the provided file is different. Check this box to enable it irrespective of what other difference exist. Note this increases the chances of it being reported erroneously and should be used carefully.')
+Check button 'Trigger even if file to search would otherwise compare as equal' (checked) (tooltip 'By default, this bug is only enabled if a difference is detected in the provided file to search. Check this box to search for it even if the file compares as equal.')
+Expander: 'Additional options to only apply to certain runs'
+-> '
+Version to report for:'
+Text entry
+'Trigger only when run on machine(s):'
+Text entry (set to 'fake_machine1')
+---------------
+'<u>Fill in exactly <i>one</i> of the sections below</u>
+'
+.....'Link failure to a reported bug'......
+'
+Extract info from bug system:'
+Text entry (set to '<none>') (drop-down list containing ['<none>', 'bugzilla'])
+'Bug ID:'
+Text entry
+.....'Link failure to a textual description'......
+'
+Full description:'
+Text entry (set to 'Not mentioning geoff enough')
+'Few-word summary:'
+Text entry (set to 'No geoff')
+Check button 'Report as 'internal error' rather than 'known bug''
+'Number of times to try to rerun the test if the issue is triggered:'
+Spin button entry (set to '0') (min=0.0, max=1000.0, step=1.0)
+---------------
+Stock Button 'gtk-ok' , Stock Button 'gtk-cancel'
+----------------------------------------------------------------------------------------------
+
+'press cancel' event created with arguments ''
+
+Changing GUI status to: 'Action cancelled.'
 
 'quit' event created with arguments ''

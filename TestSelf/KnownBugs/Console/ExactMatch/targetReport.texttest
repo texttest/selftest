@@ -1,0 +1,40 @@
+known bugs=1,FAILED=1
+04Sep2013
+HELLO : 2 tests : 1 known bugs, 1 FAILED
+
+Summary of all Unsuccessful tests follows...
+---------------------------------------------------------------------------------
+The following tests had known bugs : 
+In HELLO test-suite TargetApp:
+  - HELLO test-case Test  : No extra line
+
+The following tests FAILED : 
+In HELLO test-suite TargetApp:
+  - HELLO test-case Test2 : output different
+
+
+Details of all Unsuccessful tests follows...
+---------------------------------------------------------------------------------
+
+Detailed information for the tests that had known bugs follows...
+--------------------------------------------------------
+TEST had known bugs (No extra line) on geita : HELLO test-case Test (under Test)
+The extra line wasn't there!
+(This bug was triggered by text found in the full difference report matching '''
+---------- Differences in output ----------
+.*
+< Stupid Extra Line
+''')
+---------- Differences in output ----------
+1d0
+< Stupid Extra Line
+
+Detailed information for the tests that FAILED follows...
+--------------------------------------------------------
+TEST FAILED on geita : HELLO test-case Test2 (under Test2)
+---------- Differences in output ----------
+1d0
+< Stupid Extra Line
+3d1
+< Other Stupid Line
+

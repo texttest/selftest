@@ -37,7 +37,7 @@ Button 'Filter' (Stock image 'gtk-find', accelerator 'Ctrl+F', tooltip 'filter t
 Button 'Reset Tab' (tooltip 'Reset all the settings in the current tab to their default values')
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 26Oct16:36:53.' , Image 'throbber_inactive.png'
+'TextTest started at 04Sep14:30:43.' , Image 'throbber_inactive.png'
 --------------------------------------------------------------------------
 
 Changing GUI status to: 'Reading tests ...'
@@ -49,7 +49,7 @@ Updated : Test Tree with columns: Tests: 0/1 selected
 ->   Test (black/grey90)
 Updated drop-down list in 'Test-file to search' Text entry (set to 'knownbugs') (drop-down list containing ['knownbugs', '----------', 'errors', 'output'])
 
-Changing GUI status to: 'Reading tests completed at 26Oct16:36:54.'
+Changing GUI status to: 'Reading tests completed at 04Sep14:30:44.'
 
 Expected application event 'all tests to be read' occurred, proceeding.
 
@@ -103,7 +103,7 @@ Default widget is 'gtk-ok'
 
 =============================================
 Check button 'Enable regular expressions' (checked)
-Check button 'Trigger if given text is NOT present'
+'Trigger if:' , Radio button 'Present' (checked) , Radio button 'NOT present' , Radio button 'Exactly as given'
 .....'Search in'......
 Radio button 'Specific file' (checked) (tooltip 'Search in a newly generated file (not its diff)') , Radio button 'Brief text/details' (tooltip 'Search in the brief text describing the test result as it appears in the Details column in the dynamic GUI test view') , Radio button 'Full difference report' (tooltip 'Search in the whole difference report as it appears in the lower right window in the dynamic GUI')
 'File to search in:'
@@ -144,6 +144,10 @@ Stock Button 'gtk-ok' , Stock Button 'gtk-cancel'
 geoff
 =============================================
 
+'trigger if given text is not present' event created with arguments ''
+Toggled Radio button 'Present'
+Toggled Radio button 'NOT present' (checked)
+
 'enter full description =' event created with arguments 'Not mentioning geoff enough'
 Edited 'Full description' Text entry (set to 'Not mentioning geoff enough')
 
@@ -152,9 +156,6 @@ Edited 'Few-word summary' Text entry (set to 'No geoff')
 
 'enter trigger only when run on machine(s) =' event created with arguments 'fake_machine1'
 Edited 'Trigger only when run on machine(s)' Text entry (set to 'fake_machine1')
-
-'check trigger if given text is not present' event created with arguments ''
-Toggled Check button 'Trigger if given text is NOT present' (checked)
 
 'enable option for checking equal files' event created with arguments ''
 Toggled Check button 'Trigger even if file to search would otherwise compare as equal' (checked) (tooltip 'By default, this bug is only enabled if a difference is detected in the provided file to search. Check this box to search for it even if the file compares as equal.')
@@ -216,7 +217,7 @@ Default widget is 'gtk-ok'
 geoff
 =============================================
 Check button 'Enable regular expressions' (checked)
-Check button 'Trigger if given text is NOT present' (checked)
+'Trigger if:' , Radio button 'Present' , Radio button 'NOT present' (checked) , Radio button 'Exactly as given'
 .....'Search in'......
 Radio button 'Specific file' (checked) (tooltip 'Search in a newly generated file (not its diff)') , Radio button 'Brief text/details' (tooltip 'Search in the brief text describing the test result as it appears in the Details column in the dynamic GUI test view') , Radio button 'Full difference report' (tooltip 'Search in the whole difference report as it appears in the lower right window in the dynamic GUI')
 'File to search in:'
