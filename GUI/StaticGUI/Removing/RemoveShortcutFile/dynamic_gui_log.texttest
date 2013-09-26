@@ -1,5 +1,5 @@
 
----------- Window 'VideoStore tests under /tmp/dgalda/texttest.gui.25Sep115943.126224/texttest.gui/GUI/StaticGUI/Removing/RemoveShortcutFile/TargetApp/source_with_pyc (started at 25Sep11:59:46) - TextTest dynamic GUI' ----------
+---------- Window 'VideoStore tests under /tmp/dgalda/texttest.gui.26Sep140429.70057/texttest.gui/GUI/StaticGUI/Removing/RemoveShortcutFile/TargetApp/source_with_pyc (started at 26Sep14:04:32) - TextTest dynamic GUI' ----------
 Focus widget is 'Test Tree'
 
 Menu Bar : '_File' (+) , '_View' (+) , '_Actions' (+) , '_Help' (+)
@@ -23,7 +23,7 @@ Showing Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 7 (white,bold) | Check box (checked)
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 25Sep11:59:46.' , Image 'throbber_inactive.png'
+'TextTest started at 26Sep14:04:32.' , Image 'throbber_inactive.png'
 ----------------------------------------------------------------------------------------------------
 
 Updated : Test Tree with columns: Tests: 0/7 selected, 6 hidden , Details
@@ -198,7 +198,7 @@ Updated : Test Status View with columns: Status , Number , Visible
 ->   Differences (salmon,bold) | 2 (salmon,bold) | Check box (checked)
 ->     usecase different (salmon,bold) | 2 (salmon,bold) | Check box (checked)
 
-Progress bar set to fraction 1.0, text 'All 7 tests completed at 25Sep11:59:46'
+Progress bar set to fraction 1.0, text 'All 7 tests completed at 26Sep14:04:32'
 
 Updated : Test Tree with columns: Tests: 0/7 selected, none hidden , Details
 -> TargetApp (gui) (black/white,bold) | (white)
@@ -250,8 +250,11 @@ Showing File Tree with columns: AddOneMovie , Details
 ========== Text Info ==========
 Test FAILED :
 ---------- Differences in usecase ----------
-1d0
+1c1,2
 < add movie named Star Wars
+---
+> set new movie name to Star Wars
+> add movie
 ===============================
 
 'save results for selected tests' event created with arguments ''
@@ -278,7 +281,7 @@ Updated : File Tree with columns: AddOneMovie , Details
 
 ========== Text Info ==========
 Test succeeded
-(Saved at 11:59)
+(Saved at 14:04)
 ===============================
 
 Changing GUI status to: 'Saved 1 tests.'
@@ -305,8 +308,11 @@ Updated : File Tree with columns: AddThreeMovies , Details
 ========== Text Info ==========
 Test FAILED :
 ---------- Differences in usecase ----------
-3d2
+3c3,4
 < add movie named Matrix
+---
+> set new movie name to Matrix
+> add movie
 ===============================
 
 'save results for selected tests' event created with arguments ''
@@ -332,7 +338,7 @@ Updated : File Tree with columns: AddThreeMovies , Details
 
 ========== Text Info ==========
 Test succeeded
-(Saved at 11:59)
+(Saved at 14:04)
 ===============================
 
 Changing GUI status to: 'Saved 1 tests.'
@@ -359,10 +365,16 @@ Updated : File Tree with columns: AddSomeMovies , Details
 ========== Text Info ==========
 Test FAILED :
 ---------- Differences in usecase ----------
-1d0
+1c1,2
 < add movie named Matrix
-3d1
+---
+> set new movie name to Matrix
+> add movie
+3c4,5
 < add movie named Star Trek
+---
+> set new movie name to Star Trek
+> add movie
 ===============================
 
 'save results for selected tests' event created with arguments ''
