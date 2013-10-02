@@ -37,7 +37,7 @@ Button 'Filter' (Stock image 'gtk-find', accelerator 'Ctrl+F', tooltip 'filter t
 Button 'Reset Tab' (tooltip 'Reset all the settings in the current tab to their default values')
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 02Oct14:11:48.' , Image 'throbber_inactive.png'
+'TextTest started at 02Oct14:04:53.' , Image 'throbber_inactive.png'
 -------------------------------------------------------------------------------
 
 Changing GUI status to: 'Reading tests ...'
@@ -69,16 +69,16 @@ Updated : Test Tree with columns: Tests: 0/7 selected
 ->     AddSomeMovies (black/grey90)
 Updated drop-down list in 'Test-file to search' Text entry (set to 'fake_usecase_file') (drop-down list containing ['fake_usecase_file', 'options', 'usecase', '----------', 'output'])
 
-Changing GUI status to: 'Reading tests completed at 02Oct14:11:48.'
+Changing GUI status to: 'Reading tests completed at 02Oct14:04:54.'
 
 Expected application event 'all tests to be read' occurred, proceeding.
 
-'set test selection to' event created with arguments 'TargetApp (gui)'
+'set test selection to' event created with arguments 'AddThreeMovies'
 
 No longer greyed out : _Run
 
-Changed selection in Test Tree with columns: Tests: 1 suite selected
--> TargetApp (gui) (black/grey90,bold)   ***
+Changed selection in Test Tree with columns: Tests: 1/7 selected
+-> TargetApp (gui) (black/grey90,bold)
 ->   AddMovies (black/grey90)
 ->   suite (black/grey90,bold)
 ->     AddMovie (black/grey90)
@@ -86,17 +86,20 @@ Changed selection in Test Tree with columns: Tests: 1 suite selected
 ->     AddOneNoArguments (black/grey90)
 ->     AddOneMovie (black/grey90)
 ->     AddTwoMovies (black/grey90)
-->     AddThreeMovies (black/grey90)
+->     AddThreeMovies (black/grey90)   ***
 ->     AddSomeMovies (black/grey90)
 
 Current page changed in Notebook with tabs: Test , Selection , Running , Config
 Viewing page 'Test'
 ...........
 
-Showing File Tree with columns: TargetApp
+Showing File Tree with columns: AddThreeMovies
+-> Standard Files (white,bold)
+->   output.gui (grey90)
 -> Definition Files (white,bold)
-->   config.gui (grey90)
-->   testsuite.gui (grey90)
+->   options.gui (grey90)
+->   usecase.gui (grey90)
+->   usecase.gui.nt (grey90)
 
 ------------------------------ (horizontal pane separator)
 ...........
@@ -104,88 +107,41 @@ Showing File Tree with columns: TargetApp
 ========== Text Info ==========
 
 Description:
-Root test suite
+<No description provided>
+
+Full path:
+using_shortcuts/AddThreeMovies
 ===============================
 
-'view options for' event created with arguments 'Config'
+'select file' event created with arguments 'usecase.gui'
 
-Current page changed in Notebook with tabs: Test , Selection , Running , Config
-Viewing page 'Config'
+Waiting for application event 'file editing operations to complete' to occur.
 
-Showing Application File Tree with columns: Configuration Files
--> Files for VideoStore (white,bold)
-->   config.gui (grey90)
-->   storytext_files (grey90,bold)
-->     Add_Several.shortcut (grey90)
-->     Add_one.shortcut (grey90)
-->     add_$_named_$.shortcut (grey90)
-->     add_$s_$_and_$.shortcut (grey90)
-->     ui_map.conf (grey90)
-
-'set config file selection to' event created with arguments 'add_$_named_$.shortcut'
-
-Changed selection in Application File Tree with columns: Configuration Files
--> Files for VideoStore (white,bold)
-->   config.gui (grey90)
-->   storytext_files (grey90,bold)
-->     Add_Several.shortcut (grey90)
-->     Add_one.shortcut (grey90)
-->     add_$_named_$.shortcut (grey90)   ***
-->     add_$s_$_and_$.shortcut (grey90)
-->     ui_map.conf (grey90)
-
-'view actions for config file' event created with arguments 'add_$_named_$.shortcut'
-
----------- Popup Window ----------
-'View In Editor' (Stock image 'gtk-open', accelerator 'Ctrl+O')
-'_File Properties' (Stock image 'gtk-properties')
-'Copy Path To Clipboard'
-  ----
-'_Rename...' (Stock image 'gtk-italic')
-'Remove...' (Stock image 'gtk-delete')
-----------------------------------
-
-'rename selected file' event created with arguments ''
-
----------- Dialog 'Rename selected file' ----------
-Default widget is 'gtk-ok'
-'
-New name for file:'
-Text entry (set to 'add_$_named_$.shortcut')
----------------
-Stock Button 'gtk-ok' , Stock Button 'gtk-cancel'
----------------------------------------------------
-
-'enter new name for file =' event created with arguments 'add_$_called_$.shortcut'
-Edited 'New name for file' Text entry (set to 'add_$_called_$.shortcut')
-
-'press ok' event created with arguments ''
-
-Updated : Application File Tree with columns: Configuration Files
--> Files for VideoStore (white,bold)
-->   config.gui (grey90)
-->   storytext_files (grey90,bold)
-->     Add_Several.shortcut (grey90)
-->     Add_one.shortcut (grey90)
-->     add_$_called_$.shortcut (grey90)
-->     add_$s_$_and_$.shortcut (grey90)
-->     ui_map.conf (grey90)
-
-Changing GUI status to: 'Renamed file add_$_named_$.shortcut to add_$_called_$.shortcut.'
+Changing GUI status to: 'Started "storytext_editor usecase.gui" in background (from test AddThreeMovies).'
 
 ---------- Dialog 'TextTest Confirmation' ----------
 Focus widget is 'GtkTextView'
 Stock image 'gtk-dialog-warning' , ========== GtkTextView ==========
-Shortcuts were renamed. Would you like to update all usecases now?
+Shortcuts were removed. Would you like to update all usecases now?
 =================================
 ---------------
 Stock Button 'gtk-yes' , Stock Button 'gtk-no'
 ----------------------------------------------------
 
+Expected application event 'file editing operations to complete' occurred, proceeding.
+
 'answer yes to texttest confirmation' event created with arguments ''
 
 Waiting for application event 'script GUI to be closed' to occur.
 
+Updated : File Tree with columns: AddThreeMovies
+-> Standard Files (white,bold)
+->   output.gui (grey90)
+-> Definition Files (white,bold)
+->   options.gui (grey90)
+->   usecase.gui (grey90)
+->   usecase.gui.nt (grey90)
+
 Expected application event 'script GUI to be closed' occurred, proceeding.
 
-'close window' event created with arguments ''
+'quit' event created with arguments ''
