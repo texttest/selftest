@@ -18,9 +18,9 @@ Check button 'Enable CaptureMock for record/playback mocking'
 .....'
 Select executable program to test:' (tooltip 'The full path to the program you want to test')......
 
-Showing File Chooser for 'Define a new tested application' (selected '/tmp/geoff/texttest.gui.03Oct151620.28085/texttest.gui/GUI/StaticGUI/AddingApps/FromScratch/VirtualDisplayOnly/TargetApp/hello.py')
+Showing File Chooser for 'Define a new tested application' (selected '/tmp/geoff/texttest.gui.03Oct151446.23507/texttest.gui/GUI/StaticGUI/AddingApps/FromScratch/UseCaptureMock/TargetApp/hello.py')
 Shortcut folders (1) :
-- /tmp/geoff/texttest.gui.03Oct151620.28085/texttest.gui/GUI/StaticGUI/AddingApps/FromScratch/VirtualDisplayOnly/TargetApp
+- /tmp/geoff/texttest.gui.03Oct151446.23507/texttest.gui/GUI/StaticGUI/AddingApps/FromScratch/UseCaptureMock/TargetApp
 ---------------
 Stock Button 'gtk-ok' , Stock Button 'gtk-cancel'
 --------------------------------------------------------------
@@ -28,8 +28,8 @@ Stock Button 'gtk-ok' , Stock Button 'gtk-cancel'
 'enter file extension to use for texttest files associated with this application =' event created with arguments 'hello'
 Edited 'File extension to use for TextTest files associated with this application' Text entry (set to 'hello')
 
-'select gui-testing option named' event created with arguments 'Other GUI-test tool (enable virtual display only)'
-Changed selection in 'GUI testing option chooser' Combo Box (selected 'Other GUI-test tool (enable virtual display only)')
+'enable capturemock' event created with arguments ''
+Toggled Check button 'Enable CaptureMock for record/playback mocking' (checked)
 
 'press define' event created with arguments ''
 
@@ -100,5 +100,71 @@ Root test suite
 ===============================
 
 Expected application event 'all tests to be read' occurred, proceeding.
+
+'view actions for file' event created with arguments 'Definition Files'
+
+Changed selection in File Tree with columns: TargetApp
+-> Definition Files (white,bold)   ***
+->   config.hello (grey90)
+->   testsuite.hello (grey90)
+
+---------- Popup Window ----------
+'View File' (Stock image 'gtk-open', greyed out, accelerator 'Ctrl+O')
+'Test Filtering' (greyed out)
+'_File Properties' (Stock image 'gtk-properties', greyed out)
+'Copy Path To Clipboard' (greyed out)
+  ----
+'Create/_Import' (Stock image 'gtk-new', accelerator 'Ctrl+N')
+  ----
+'_Rename...' (Stock image 'gtk-italic', greyed out)
+'Remove...' (Stock image 'gtk-delete', greyed out)
+----------------------------------
+
+'create a new file or directory, possibly by copying it' event created with arguments ''
+
+---------- Dialog 'Create/Import Files and Directories' ----------
+Default widget is 'gtk-ok'
+'<b><u>Create or import files in the test directory</u></b>
+'
+'<i>(Test is HELLO test-suite TargetApp)</i>
+'
+'Type of file/directory to create:'
+Text entry (set to 'environment') (drop-down list containing ['environment', 'config', 'options', 'interpreter_options', 'capturemockrc'])
+'Version identifier to use:'
+Text entry
+...........
+Radio button 'Import file/directory from source'
+Radio button 'Create a new file' (checked)
+Radio button 'Create a new directory'
+.....'Source to copy from:'......
+
+Showing Source File Chooser (selected '/tmp/geoff/texttest.gui.03Oct151446.23507/texttest.gui/GUI/StaticGUI/AddingApps/FromScratch/UseCaptureMock/TargetApp') (greyed out)
+Shortcut folders (1) :
+- /tmp/geoff/texttest.gui.03Oct151446.23507/texttest.gui/GUI/StaticGUI/AddingApps/FromScratch/UseCaptureMock/TargetApp
+---------------
+Stock Button 'gtk-ok' , Stock Button 'gtk-cancel'
+------------------------------------------------------------------
+
+'press cancel' event created with arguments ''
+
+Changing GUI status to: 'Action cancelled.'
+
+'view options for' event created with arguments 'Running'
+
+Current page changed in Notebook with tabs: Test , Selection , Running , Config
+Viewing page 'Running'
+
+Showing Notebook with tabs: Basic , Advanced
+Viewing page 'Basic'
+Viewing table with 4 rows and 2 columns.
+'Run this version  ' | Text entry
+'Use checkout  ' | Text entry
+'Run on machine  ' | Text entry
+'Times to run  ' (tooltip 'Set this to some number larger than 1 to run the same test multiple times, for example to try to catch indeterminism in the system under test') | Spin button entry (set to '1') (min=1.0, max=1000.0, step=1.0)
+Check button 'Stop after first failure'
+'CaptureMock:' , Radio button 'Replay' (checked) (tooltip 'Replay all existing interactions from the information in CaptureMock's mock files. Do not record anything new.') , Radio button 'Record' (tooltip 'Ignore any existing CaptureMock files and record all the interactions afresh.') , Radio button 'Mixed Mode' (tooltip 'Replay all existing interactions from the information in the CaptureMock mock files. Record any other interactions that occur.') , Radio button 'Disabled' (tooltip 'Disable CaptureMock')
+Check button 'Run tests sequentially'
+Button '_Run' (Stock image 'gtk-execute', accelerator 'Ctrl+R', tooltip 'Run selected tests')
+Button 'Reset Tab' (tooltip 'Reset all the settings in the current tab to their default values')
 
 'quit' event created with arguments ''
