@@ -1,0 +1,172 @@
+
+---------- Window 'HELLO.laterref.sge tests (started at 04Oct15:00:23) - TextTest dynamic GUI' ----------
+Focus widget is 'Test Tree'
+
+Menu Bar : '_File' (+) , '_View' (+) , '_Actions' (+) , '_Help' (+)
+
+Tool Bar :
+  _Quit (Stock image 'gtk-quit', accelerator 'Ctrl+Q', tooltip 'Quit')
+  _Kill (Stock image 'gtk-stop', greyed out, accelerator 'Ctrl+Delete', tooltip 'Kill selected tests')
+  _Save (Stock image 'gtk-save', greyed out, accelerator 'Ctrl+S', tooltip 'Save results for selected tests')
+  Progress bar set to fraction 0.0, text 'All 0 tests completed at 04Oct15:00:24'
+...........
+
+Showing Test Tree with columns: Tests: All 0 selected , Details
+
+------------------------------ (vertical pane separator)
+...........
+
+Showing Notebook with tabs: Status , Selection , Run Info
+Viewing page 'Status'
+
+Showing Test Status View with columns: Status , Number , Visible
+'Shortcuts:' , Button '_New'
+...........
+'TextTest started at 04Oct15:00:24.' , Image 'throbber_inactive.png'
+----------------------------------------------------------------------------------------------------
+
+Progress bar set to fraction 0.0, text '0 of 1 tests completed'
+
+Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
+-> TargetApp (hello.laterref.sge) (black/white,bold) | (white)
+->   Test (black/white) | (white)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white,bold) | 1 (white,bold) | Check box (checked)
+
+Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
+-> TargetApp (hello.laterref.sge) (black/white,bold) | (white)
+->   Test (black/grey80) | PEND (grey80)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white) | 0 (white) | Check box (checked)
+-> Pending (grey80,bold) | 1 (grey80,bold) | Check box (checked)
+
+Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
+-> TargetApp (hello.laterref.sge) (black/white,bold) | (white)
+->   Test (black/LightGoldenrod1) | (LightGoldenrod1)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white) | 0 (white) | Check box (checked)
+-> Pending (white) | 0 (white) | Check box (checked)
+-> Initial filter (LightGoldenrod1,bold) | 1 (LightGoldenrod1,bold) | Check box (checked)
+
+Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
+-> TargetApp (hello.laterref.sge) (black/white,bold) | (white)
+->   Test (black/LightGoldenrod1) | RUN (geita) (LightGoldenrod1)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white) | 0 (white) | Check box (checked)
+-> Pending (white) | 0 (white) | Check box (checked)
+-> Initial filter (white) | 0 (white) | Check box (checked)
+-> Running (LightGoldenrod1,bold) | 1 (LightGoldenrod1,bold) | Check box (checked)
+
+Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
+-> TargetApp (hello.laterref.sge) (black/white,bold) | (white)
+->   Test (black/LightGoldenrod1) | (LightGoldenrod1)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white) | 0 (white) | Check box (checked)
+-> Pending (white) | 0 (white) | Check box (checked)
+-> Initial filter (white) | 0 (white) | Check box (checked)
+-> Running (white) | 0 (white) | Check box (checked)
+-> Final filter (LightGoldenrod1,bold) | 1 (LightGoldenrod1,bold) | Check box (checked)
+
+Progress bar set to fraction 1.0, text 'All 1 tests completed at 04Oct15:00:25'
+
+Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
+-> TargetApp (hello.laterref.sge) (black/white,bold) | (white)
+->   Test (black/salmon) | output different (salmon)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white) | 0 (white) | Check box (checked)
+-> Pending (white) | 0 (white) | Check box (checked)
+-> Initial filter (white) | 0 (white) | Check box (checked)
+-> Running (white) | 0 (white) | Check box (checked)
+-> Final filter (white) | 0 (white) | Check box (checked)
+-> Failed (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->   Differences (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->     output different (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+
+No longer greyed out : _Save
+
+Changed selection in Test Tree with columns: Tests: All 1 selected, none hidden , Details
+-> TargetApp (hello.laterref.sge) (black/white,bold) | (white)
+->   Test (black/salmon) | output different (salmon)   ***
+
+Current page changed in Notebook with tabs: Test , Status , Selection , Run Info
+Viewing page 'Test'
+...........
+
+Showing File Tree with columns: Test , Details
+-> Comparison Files (bold)
+->   errors.hello (DarkSeaGreen2) | (DarkSeaGreen2)
+->   output.hello (salmon) | (salmon)
+
+------------------------------ (horizontal pane separator)
+...........
+
+========== Text Info ==========
+Test FAILED on geita :
+---------- Differences in output ----------
+1c1
+< Hello All The People
+---
+> Hello All The Variables From Outside
+===============================
+
+Expected application event 'completion of test actions' occurred, proceeding.
+
+'set test selection to' event created with arguments 'Test'
+
+Changed selection in Test Tree with columns: Tests: All 1 selected, none hidden , Details
+-> TargetApp (hello.laterref.sge) (black/white,bold) | (white)
+->   Test (black/salmon) | output different (salmon)   ***
+
+'view options for' event created with arguments 'Run Info'
+
+Current page changed in Notebook with tabs: Test , Status , Selection , Run Info
+Viewing page 'Run Info'
+...........
+
+========== Run Info ==========
+Application name : HELLO
+Version          : laterref.sge
+Number of tests  : 1
+Executable       : /tmp/geoff/texttest.sge.gui.04Oct150021.17084/texttest.sge.gui/TestSelf/EnvironmentFile/SelfReference/GUI/ShowEnvironment/TargetApp/hello.py
+
+Command line     : /users/geoff/work/master/Testing/TextTest/bin/texttest.py -v laterref.sge -g
+
+Start time       : 04Oct15:00:23
+End time         : 04Oct15:00:25
+==============================
+
+------------------------------ (horizontal pane separator)
+...........
+
+========== Test Run Info ==========
+Selected test  : Test
+
+Start time       : 04Oct15:00:24
+End time         : 04Oct15:00:25
+
+Description:
+<No description provided>
+
+Command Line   : python /tmp/geoff/texttest.sge.gui.04Oct150021.17084/texttest.sge.gui/TestSelf/EnvironmentFile/SelfReference/GUI/ShowEnvironment/TargetApp/hello.py
+
+Environment variables :
+PATH=/tmp/geoff/texttest.sge.gui.04Oct150021.17084/texttest.sge.gui/TestSelf/EnvironmentFile/SelfReference/GUI/ShowEnvironment/texttesttmp/dynamic_gui.laterref.sge.04Oct150023.19020/hello.laterref.sge/Test:$PATH
+QUALIFIER=All The
+TEXTTEST_LOG_DIR=/tmp/geoff/texttest.sge.gui.04Oct150021.17084/texttest.sge.gui/TestSelf/EnvironmentFile/SelfReference/GUI/ShowEnvironment/texttesttmp/dynamic_gui.laterref.sge.04Oct150023.19020/hello.laterref.sge/Test
+TEXTTEST_ROOT=/tmp/geoff/texttest.sge.gui.04Oct150021.17084/texttest.sge.gui/TestSelf/EnvironmentFile/SelfReference/GUI/ShowEnvironment/TargetApp
+TEXTTEST_SANDBOX=/tmp/geoff/texttest.sge.gui.04Oct150021.17084/texttest.sge.gui/TestSelf/EnvironmentFile/SelfReference/GUI/ShowEnvironment/texttesttmp/dynamic_gui.laterref.sge.04Oct150023.19020/hello.laterref.sge/Test
+TEXTTEST_SANDBOX_ROOT=/tmp/geoff/texttest.sge.gui.04Oct150021.17084/texttest.sge.gui/TestSelf/EnvironmentFile/SelfReference/GUI/ShowEnvironment/texttesttmp/dynamic_gui.laterref.sge.04Oct150023.19020
+TO_GREET=All The ${TO_GREET}
+USECASE_REPLAY_SCRIPT=
+
+SGE Command   : qsub -N Test-Test-HELLO.laterref.sge -w e -notify -m n -cwd -b y -o Test-Test-HELLO.laterref.sge.log -e Test-Test-HELLO.laterref.sge.errors -v STANDARD,TO_GREET ...
+Slave Command : /users/geoff/work/master/Testing/TextTest/bin/texttest.py -d /tmp/geoff/texttest.sge.gui.04Oct150021.17084/texttest.sge.gui/TestSelf/EnvironmentFile/SelfReference/GUI/ShowEnvironment/TargetApp -a hello.laterref.sge -l -tp Test -slave /tmp/geoff/texttest.sge.gui.04Oct150021.17084/texttest.sge.gui/TestSelf/EnvironmentFile/SelfReference/GUI/ShowEnvironment/texttesttmp/dynamic_gui.laterref.sge.04Oct150023.19020 -servaddr 10.67.7.145:37639
+===================================
+
+'quit' event created with arguments ''
