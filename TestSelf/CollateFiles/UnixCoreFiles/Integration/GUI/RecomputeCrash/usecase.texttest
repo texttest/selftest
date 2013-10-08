@@ -4,7 +4,8 @@ save results for selected tests
 answer no to texttest confirmation
 set test selection to Test under TargetApp (hello)
 save results for selected tests
+wait for completion of background actions
 set test selection to Test under TargetApp (hello.core)
 recompute test status, including progress information if appropriate
-wait for completion of recomputation
+wait for completion of background actions
 quit

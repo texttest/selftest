@@ -3,7 +3,8 @@ set test selection to TestAlwaysDiag under TargetApp (diag.nodiag)
 save results with non-default settings
 enter version to save = 
 press ok
+wait for completion of background actions
 set test selection to TestAlwaysDiag under TargetApp (diag.nodiag),TestAlwaysDiag under TargetApp (diag.withdiag)
 recompute test status, including progress information if appropriate
-wait for completion of recomputation
+wait for completion of background actions
 quit

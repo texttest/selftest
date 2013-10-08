@@ -1,5 +1,5 @@
 
----------- Window 'HELLO tests (started at 09Jun14:04:58) - TextTest dynamic GUI' ----------
+---------- Window 'HELLO tests (started at 07Oct17:08:52) - TextTest dynamic GUI' ----------
 Focus widget is 'Test Tree'
 
 Menu Bar : '_File' (+) , '_View' (+) , '_Actions' (+) , '_Help' (+)
@@ -8,7 +8,7 @@ Tool Bar :
   _Quit (Stock image 'gtk-quit', accelerator 'Ctrl+Q', tooltip 'Quit')
   _Kill (Stock image 'gtk-stop', greyed out, accelerator 'Ctrl+Delete', tooltip 'Kill selected tests')
   _Save (Stock image 'gtk-save', greyed out, accelerator 'Ctrl+S', tooltip 'Save results for selected tests')
-  Progress bar set to fraction 0.0, text 'All 0 tests completed at 09Jun14:05:01'
+  Progress bar set to fraction 0.0, text 'All 0 tests completed at 07Oct17:08:53'
 ...........
 
 Showing Test Tree with columns: Tests: All 0 selected , Details
@@ -22,7 +22,7 @@ Viewing page 'Status'
 Showing Test Status View with columns: Status , Number , Visible
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 09Jun14:05:01.' , Image 'throbber_inactive.png'
+'TextTest started at 07Oct17:08:52.' , Image 'throbber_inactive.png'
 --------------------------------------------------------------------------------------------
 
 Progress bar set to fraction 0.0, text '0 of 1 tests completed'
@@ -317,7 +317,7 @@ Updated : Test Status View with columns: Status , Number , Visible
 ->       Group 1 (salmon,bold) | 2 (salmon,bold) | Check box (checked)
 -> Succeeded (DarkSeaGreen2,bold) | 1 (DarkSeaGreen2,bold) | Check box (checked)
 
-Progress bar set to fraction 1.0, text 'All 4 tests completed at 09Jun14:05:02'
+Progress bar set to fraction 1.0, text 'All 4 tests completed at 07Oct17:08:53'
 
 Updated : Test Tree with columns: Tests: 0/4 selected, none hidden , Details
 -> TargetApp (hello) (black/white,bold) | (white)
@@ -373,6 +373,10 @@ Test FAILED :
 
 'save results for selected tests' event created with arguments ''
 
+Waiting for application event 'completion of background actions' to occur.
+
+Changing GUI status to: 'Saving 2 tests ...'
+
 Changing GUI status to: 'Saving HELLO test-case OutDiff : output, existing version'
 
 Updated : Test Tree with columns: Tests: 2/4 selected, none hidden , Details
@@ -389,7 +393,7 @@ Updated : File Tree with columns: Sample from 2 tests , Details
 
 ========== Text Info ==========
 Test succeeded
-(Saved at 14:05)
+(Saved at 17:08)
 ===============================
 
 Changing GUI status to: 'Saving HELLO test-case BothDiff : errors, existing version'
@@ -406,5 +410,7 @@ Updated : Test Tree with columns: Tests: 2/4 selected, none hidden , Details
 ->   ErrDiff (black/salmon) | errors different (salmon)
 
 Changing GUI status to: 'Saved 2 tests.'
+
+Expected application event 'completion of background actions' occurred, proceeding.
 
 'quit' event created with arguments ''
