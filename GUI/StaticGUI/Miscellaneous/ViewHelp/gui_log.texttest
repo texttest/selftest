@@ -37,7 +37,7 @@ Button 'Filter' (Stock image 'gtk-find', accelerator 'Ctrl+F', tooltip 'filter t
 Button 'Reset Tab' (tooltip 'Reset all the settings in the current tab to their default values')
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 04Feb17:33:13.' , Image 'throbber_inactive.png'
+'TextTest started at 04Nov10:40:03.' , Image 'throbber_inactive.png'
 ------------------------------------------------------------------------
 
 Changing GUI status to: 'Reading tests ...'
@@ -82,7 +82,7 @@ Updated : Test Tree with columns: Tests: 0/11 selected
 ->       S01 (black/grey90)
 Updated drop-down list in 'Test-file to search' Text entry (set to 'output') (drop-down list containing ['output'])
 
-Changing GUI status to: 'Reading tests completed at 04Feb17:33:14.'
+Changing GUI status to: 'Reading tests completed at 04Nov10:40:03.'
 
 Expected application event 'all tests to be read' occurred, proceeding.
 
@@ -210,9 +210,9 @@ Viewing table with 6 rows and 2 columns.
 '<b>You are using these installations:
 </b>'
 Viewing table with 3 rows and 2 columns.
-'Test Suite:' | '/tmp/dgalda/texttest.04Feb173212.31854/texttest.gui/GUI/StaticGUI/Miscellaneous/ViewHelp/TargetApp'
-'TextTest:' | '/users/dgalda/work/master/Testing/TextTest'
-'Python:' | '/users/dgalda/.local/python2.6.current/bin/python'
+'Test Suite:' | '/tmp/geoff/texttest.gui.04Nov104001.25528/texttest.gui/GUI/StaticGUI/Miscellaneous/ViewHelp/TargetApp'
+'TextTest:' | '/users/geoff/work/master/Testing/TextTest'
+'Python:' | '/usr/local/tt-env/python2.6.current/bin/python'
 ---------------
 Stock Button 'gtk-close'
 --------------------------------------------------
@@ -247,12 +247,72 @@ Viewing page 'from 3.25'
 
 ========== GtkTextView ==========
 =========================================================
+COMPULSORY MIGRATION
+=========================================================
+
+(1) "slow_motion_replay_speed" config file setting is no longer used
+====================================================================
+It can be configured now on the running tab of the static GUI. You should just remove it.
+
+(2) Deprecated script batch.CollectFiles is removed
+===================================================
+use "-coll mail" instead to send mails alone. "-coll" will send mails and build the HTML report.
+
+=========================================================
 CHANGES IN DEFAULT BEHAVIOUR (OR PROCEDURE)
 =========================================================
 
-(1) "slow_motion_replay_speed" config file setting is not longer used
-=====================================================================
-It can be configured now on the running tab of the static GUI. You should just remove it.
+(1) "run_dependent_text": overlapping filters now behave as expected
+====================================================================
+
+If you have a file
+
+A
+B
+C
+D
+E
+F
+G
+
+and you filter it with two filters
+
+[run_dependent_text]
+stdout:C{->}F
+stdout:B{->}E
+
+this will now as expected remove all the lines between B and F. Previously it would remove the entire file
+after B. This was a bug, but is included here as it may change the behaviour of long-established filters.
+
+(2) Running "-coll", with both HTML report and email enabled
+============================================================
+The email will now just contain links to the HTML report instead of complete plain-text information.
+Also, it will be generated after the HTML report, in 3.25 it was generated first.
+ 
+(3) "Replace Text in Files" now treats replacement string as a single whole instead of as separate parts
+========================================================================================================
+So if you have a file
+
+Apples
+Bananas
+
+and you replace using search expression
+
+(Apples)
+(Bananas)
+
+and replacement
+
+\2
+\1
+
+you will now as expected get
+
+Bananas
+Apples
+
+There was no way to do this before. Though of course this change can change the behaviour on some setups also: the
+back references have to be numbered correctly.
 =================================
 ---------------
 Stock Button 'gtk-close'
@@ -354,24 +414,11 @@ Changing GUI status to: ''
 ---------- Dialog 'TextTest Change Logs' ----------
 Default widget is 'gtk-close'
 
-Showing Notebook with tabs: trunk , 3.25 , 3.24 , 3.23 , 3.22 , 3.21 , 3.20 , 3.19 , 3.18 , 3.17 , 3.16.1 , 3.16 , 3.15 , 3.14.1 , 3.14 , 3.13 , 3.12.1 , 3.12 , 3.11.1 , 3.11 , 3.10 , 3.9.1 , 3.9 , 3.8 , 3.7.1 , 3.7 , 3.6 , 3.5.3 , 3.5.2 , 3.5.1 , 3.5 , 3.4 , 3.3 , 3.2 , 3.1.1 , 3.1 , 3.0 , 2.1 , 2.0 , 1.0 , 0.2 , 0.1
+Showing Notebook with tabs: trunk , 3.26 , 3.25 , 3.24 , 3.23 , 3.22 , 3.21 , 3.20 , 3.19 , 3.18 , 3.17 , 3.16.1 , 3.16 , 3.15 , 3.14.1 , 3.14 , 3.13 , 3.12.1 , 3.12 , 3.11.1 , 3.11 , 3.10 , 3.9.1 , 3.9 , 3.8 , 3.7.1 , 3.7 , 3.6 , 3.5.3 , 3.5.2 , 3.5.1 , 3.5 , 3.4 , 3.3 , 3.2 , 3.1.1 , 3.1 , 3.0 , 2.1 , 2.0 , 1.0 , 0.2 , 0.1
 Viewing page 'trunk'
 
 ========== GtkTextView ==========
-Static GUI Enhancements:
-    - (GUI testing) "run in slow motion replay" checkbox removed. It has been replaced with a spinner for adding a pause after each event and
-	a new check box "Show GUI and record any extra actions".
-Dynamic GUI Enhancements:
-Framework Enhancements:
-Batch Report Enhancements:
-    - Index page now notes which run the information there is based on
-Grid Engine (LSF/SGE/Condor) enhancements/bug fixes:
-    - Default_queue setting should also apply to the proxy job
-Bug Fixes:
-    - Correctly find version control when TextTest files are only some part of the substructure
-    - Workaround Mercurial bug for symbolically linked repository when removing or moving
-    - Don't bail out if a testsuite file is missing and we don't have permission to create a new one
-    - Allways disable storytext editor when using a virtual display
+
 =================================
 ---------------
 Stock Button 'gtk-close'
@@ -379,7 +426,7 @@ Stock Button 'gtk-close'
 
 'view tab' event created with arguments '3.7.1'
 
-Current page changed in Notebook with tabs: trunk , 3.25 , 3.24 , 3.23 , 3.22 , 3.21 , 3.20 , 3.19 , 3.18 , 3.17 , 3.16.1 , 3.16 , 3.15 , 3.14.1 , 3.14 , 3.13 , 3.12.1 , 3.12 , 3.11.1 , 3.11 , 3.10 , 3.9.1 , 3.9 , 3.8 , 3.7.1 , 3.7 , 3.6 , 3.5.3 , 3.5.2 , 3.5.1 , 3.5 , 3.4 , 3.3 , 3.2 , 3.1.1 , 3.1 , 3.0 , 2.1 , 2.0 , 1.0 , 0.2 , 0.1
+Current page changed in Notebook with tabs: trunk , 3.26 , 3.25 , 3.24 , 3.23 , 3.22 , 3.21 , 3.20 , 3.19 , 3.18 , 3.17 , 3.16.1 , 3.16 , 3.15 , 3.14.1 , 3.14 , 3.13 , 3.12.1 , 3.12 , 3.11.1 , 3.11 , 3.10 , 3.9.1 , 3.9 , 3.8 , 3.7.1 , 3.7 , 3.6 , 3.5.3 , 3.5.2 , 3.5.1 , 3.5 , 3.4 , 3.3 , 3.2 , 3.1.1 , 3.1 , 3.0 , 2.1 , 2.0 , 1.0 , 0.2 , 0.1
 Viewing page '3.7.1'
 
 ========== GtkTextView ==========
@@ -453,9 +500,9 @@ Viewing table with 6 rows and 2 columns.
 '<b>You are using these installations:
 </b>'
 Viewing table with 3 rows and 2 columns.
-'Test Suite:' | '/tmp/dgalda/texttest.04Feb173212.31854/texttest.gui/GUI/StaticGUI/Miscellaneous/ViewHelp/TargetApp'
-'TextTest:' | '/users/dgalda/work/master/Testing/TextTest'
-'Python:' | '/users/dgalda/.local/python2.6.current/bin/python'
+'Test Suite:' | '/tmp/geoff/texttest.gui.04Nov104001.25528/texttest.gui/GUI/StaticGUI/Miscellaneous/ViewHelp/TargetApp'
+'TextTest:' | '/users/geoff/work/master/Testing/TextTest'
+'Python:' | '/usr/local/tt-env/python2.6.current/bin/python'
 ---------------
 Stock Button 'gtk-close'
 --------------------------------------------------
