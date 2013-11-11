@@ -1,0 +1,66 @@
+<-CMD:git diff /tmp/dgalda/texttest.git.04Nov173440.14335/texttest.git/VersionControl/General/Diff/ShowDiff/TargetApp/Test1/errors.hello
+->OUT:diff --git a/TargetApp/Test1/errors.hello b/TargetApp/Test1/errors.hello
+index 2fc5908..e69de29 100644
+--- a/TargetApp/Test1/errors.hello
++++ b/TargetApp/Test1/errors.hello
+@@ -1 +0,0 @@
+-Added an extra line
+<-CMD:git diff /tmp/dgalda/texttest.git.04Nov173440.14335/texttest.git/VersionControl/General/Diff/ShowDiff/TargetApp/Test1/output.hello
+<-CMD:git diff /tmp/dgalda/texttest.git.04Nov173440.14335/texttest.git/VersionControl/General/Diff/ShowDiff/TargetApp/Test1/output.hello.version
+<-CMD:git diff /tmp/dgalda/texttest.git.04Nov173440.14335/texttest.git/VersionControl/General/Diff/ShowDiff/TargetApp/Test1/output.hello
+<-CMD:git diff /tmp/dgalda/texttest.git.04Nov173440.14335/texttest.git/VersionControl/General/Diff/ShowDiff/TargetApp/Test1/errors.hello
+->OUT:diff --git a/TargetApp/Test1/errors.hello b/TargetApp/Test1/errors.hello
+index 2fc5908..e69de29 100644
+--- a/TargetApp/Test1/errors.hello
++++ b/TargetApp/Test1/errors.hello
+@@ -1 +0,0 @@
+-Added an extra line
+<-CMD:git diff /tmp/dgalda/texttest.git.04Nov173440.14335/texttest.git/VersionControl/General/Diff/ShowDiff/TargetApp/Test1/output.hello
+<-CMD:git diff /tmp/dgalda/texttest.git.04Nov173440.14335/texttest.git/VersionControl/General/Diff/ShowDiff/TargetApp/Test1/output.hello.version
+<-CMD:git diff /tmp/dgalda/texttest.git.04Nov173440.14335/texttest.git/VersionControl/General/Diff/ShowDiff/TargetApp/Test2/errors.hello
+<-CMD:git diff /tmp/dgalda/texttest.git.04Nov173440.14335/texttest.git/VersionControl/General/Diff/ShowDiff/TargetApp/Test2/output.hello
+->OUT:diff --git a/TargetApp/Test2/output.hello b/TargetApp/Test2/output.hello
+index 21c4b44..e1d8d1e 100644
+--- a/TargetApp/Test2/output.hello
++++ b/TargetApp/Test2/output.hello
+@@ -1 +1 @@
+-Hello current version!
++Hello uncommitted update!
+<-CMD:git diff /tmp/dgalda/texttest.git.04Nov173440.14335/texttest.git/VersionControl/General/Diff/ShowDiff/TargetApp/Suite/Subsuite/Test3/errors.hello
+<-CMD:git diff /tmp/dgalda/texttest.git.04Nov173440.14335/texttest.git/VersionControl/General/Diff/ShowDiff/TargetApp/Suite/Subsuite/Test3/output.hello
+->OUT:diff --git a/TargetApp/Suite/Subsuite/Test3/output.hello b/TargetApp/Suite/Subsuite/Test3/output.hello
+index 774f5ab..98063d8 100644
+--- a/TargetApp/Suite/Subsuite/Test3/output.hello
++++ b/TargetApp/Suite/Subsuite/Test3/output.hello
+@@ -1,2 +1 @@
+-Failure checked in!
+-
++Failure created locally!
+<-CMD:tkdiff --help
+->OUT: actual font: -family {DejaVu Sans Mono} -size -12 -weight normal -slant roman -underline 0 -overstrike 0
+
+    TkDiff may be started in any of the following ways:
+
+    Interactive selection of files to compare:
+     	tkdiff
+
+    Plain files:
+     	tkdiff FILE1 FILE2
+
+    Plain file with conflict markers:
+     	tkdiff -conflict FILE
+
+    Source control (AccuRev, BitKeeper, CVS, Subversion, Perforce, PVCS,
+      RCS, SCCS, ClearCase)
+     	tkdiff FILE
+	tkdiff -rREV FILE
+	tkdiff -rREV1 -rREV2 FILE
+        tkdiff OLD-URL[@OLDREV] NEW-URL[@NEWREV] (Subversion)
+
+    Additional optional parameters:
+	-a ANCESTORFILE 
+	-o MERGEOUTPUTFILE 
+	-L LEFT_FILE_LABEL [-L RIGHT_FILE_LABEL]
+    
+<-CMD:git difftool -t tkdiff -y /tmp/dgalda/texttest.git.04Nov173440.14335/texttest.git/VersionControl/General/Diff/ShowDiff/TargetApp/Test2/output.hello
+->OUT: actual font: -family {DejaVu Sans Mono} -size -12 -weight normal -slant roman -underline 0 -overstrike 0
