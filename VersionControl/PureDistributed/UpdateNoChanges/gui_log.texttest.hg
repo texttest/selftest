@@ -2,7 +2,7 @@
 ---------- Window 'HELLO test management - TextTest static GUI' ----------
 Focus widget is 'Test Tree'
 
-Menu Bar : '_File' (+) , '_Edit' (+) , '_View' (+) , '_Actions' (+) , '_Git' (+) , '_Help' (+)
+Menu Bar : '_File' (+) , '_Edit' (+) , '_View' (+) , '_Actions' (+) , '_Mercurial' (+) , '_Help' (+)
 
 Tool Bar :
   _Quit (Stock image 'gtk-quit', accelerator 'Ctrl+Q', tooltip 'Quit')
@@ -37,7 +37,7 @@ Button 'Filter' (Stock image 'gtk-find', accelerator 'Ctrl+F', tooltip 'filter t
 Button 'Reset Tab' (tooltip 'Reset all the settings in the current tab to their default values')
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 20Nov16:07:16.' , Image 'throbber_inactive.png'
+'TextTest started at 20Nov16:11:23.' , Image 'throbber_inactive.png'
 --------------------------------------------------------------------------
 
 Changing GUI status to: 'Reading tests ...'
@@ -60,11 +60,11 @@ Updated : Test Tree with columns: Tests: 0/4 selected
 ->       Test4 (black/grey90)
 Updated drop-down list in 'Test-file to search' Text entry (set to 'errors') (drop-down list containing ['errors', 'output'])
 
-Changing GUI status to: 'Reading tests completed at 20Nov16:07:17.'
+Changing GUI status to: 'Reading tests completed at 20Nov16:11:24.'
 
 Expected application event 'all tests to be read' occurred, proceeding.
 
-'set test selection to' event created with arguments 'Test1'
+'view actions for test' event created with arguments 'Test1'
 
 No longer greyed out : _Run
 
@@ -100,6 +100,27 @@ Full path:
 Test1
 ===============================
 
+---------- Popup Window ----------
+'Add Test' (Stock image 'gtk-add', greyed out, accelerator 'Ctrl+N')
+'Add Suite' (Stock image 'gtk-add', greyed out)
+  ----
+'_Cut' (Stock image 'gtk-cut', accelerator 'Ctrl+X')
+'_Copy' (Stock image 'gtk-copy', accelerator 'Ctrl+C')
+'_Paste' (Stock image 'gtk-paste', greyed out, accelerator 'Ctrl+V')
+'_Rename...' (Stock image 'gtk-italic', accelerator 'Ctrl+M')
+'Remove...' (Stock image 'gtk-delete')
+  ----
+'Enter Failure Information' (Stock image 'gtk-info', accelerator 'Ctrl+I')
+  ----
+'Show only selected'
+'Hide selected'
+  ----
+'_Run' (Stock image 'gtk-execute', accelerator 'Ctrl+R')
+  ----
+'_Reorder' (+)
+'_Mercurial' (+)
+----------------------------------
+
 'show vcs top menu' event created with arguments ''
 
 ---------- Popup Window ----------
@@ -118,7 +139,7 @@ Test1
 'A_dd'
 'Add Recursive'
   ----
-'Pull'
+'Pull/Update'
 ----------------------------------
 
 'update from vcs' event created with arguments ''
@@ -128,49 +149,22 @@ Updated : File Tree with columns: Test1
 ->   errors.hello (grey90)
 ->   output.hello (grey90)
 ->   output.hello.version (grey90)
-->   result.hello (grey90)
 -> Definition Files (white)
 
-Changing GUI status to: 'Performed 'version control pull for the selected files' on test Test1.'
+Changing GUI status to: 'Performed 'version control pull/update for the selected files' on test Test1.'
 
----------- Dialog 'Git Pull for the selected files' ----------
+---------- Dialog 'Mercurial Pull/Update for the selected files' ----------
 Default widget is 'gtk-close'
 
 ========== GtkTextView ==========
-Updating 4b18919..ecefa65
-Fast-forward
- TargetApp/Test1/result.hello |    1 +
- 1 files changed, 1 insertions(+), 0 deletions(-)
- create mode 100644 TargetApp/Test1/result.hello
-From /tmp/geoff/git
- * branch            HEAD       -> FETCH_HEAD
+pulling from /tmp/geoff/hg
+searching for changes
+no changes found
 =================================
 ---------------
 Stock Button 'gtk-close'
---------------------------------------------------------------
+---------------------------------------------------------------------------
 
 'close vcs update window' event created with arguments ''
-
-'set file selection to' event created with arguments 'result.hello'
-
-Changed selection in File Tree with columns: Test1
--> Standard Files (white,bold)
-->   errors.hello (grey90)
-->   output.hello (grey90)
-->   output.hello.version (grey90)
-->   result.hello (grey90)   ***
--> Definition Files (white)
-
-========== Text Info ==========
-
-Description:
-<No description provided>
-
-Full path:
-Test1
-
-Preview of result.hello:
-dummy
-===============================
 
 'quit' event created with arguments ''

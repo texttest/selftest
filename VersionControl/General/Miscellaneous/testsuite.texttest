@@ -9,5 +9,35 @@ Annotate
 # What happens if we perform actions on a test that isn't yet in version control?
 NoVersionControl
 
-# Check we can update from version control and see the changes
+# Check we can update from version control and see the changes.
+# Regenerating is tricky, need to create a second location by hand.
+# Bazaar:
+# $ cd /tmp/geoff/
+# $ bzr branch $TEXTTEST_HOME/texttest/VersionControl/ bzr
+# $ cd $TEXTTEST_HOME/texttest/VersionControl/
+# $ mv .bzr.texttest .bzr
+# $ bzr bind /tmp/geoff/bzr/
+# $ cd /tmp/geoff/bzr/TargetApp/Test1/
+# $ echo "dummy" > result.hello
+# $ bzr add result.hello
+# $ bzr ci -m "New Result"
+# Mercurial:
+# $ cd /tmp/geoff/
+# $ hg clone $TEXTTEST_HOME/texttest/VersionControl/ hg
+# $ cd $TEXTTEST_HOME/texttest/VersionControl/
+# $ Edit .hg/hgrc to match your location (/tmp/geoff/hg here)
+# $ cd /tmp/geoff/hg/TargetApp/Test1/
+# $ echo "dummy" > result.hello
+# $ hg add result.hello
+# $ hg ci -m "New Result"
+# Git:
+# $ cd /tmp/geoff/
+# $ git clone $TEXTTEST_HOME/texttest/VersionControl/ git
+# $ cd $TEXTTEST_HOME/texttest/VersionControl/
+# $ Edit .git/config to match your location (/tmp/geoff/git here)
+# $ cd /tmp/geoff/git/TargetApp/Test1/
+# $ echo "dummy" > result.hello
+# $ git add result.hello
+# $ git commit -m "New Result"
+# and then rerecord.
 UpdateSuite

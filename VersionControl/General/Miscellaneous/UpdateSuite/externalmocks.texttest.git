@@ -1,6 +1,17 @@
-<-CMD:cd /tmp/dgalda/texttest.git.11Nov122412.8982/texttest.git/VersionControl/General/Miscellaneous/UpdateSuite/TargetApp; git merge FETCH_HEAD
+<-CMD:cd /tmp/geoff/texttest.git.20Nov160714.26698/texttest.git/VersionControl/General/Miscellaneous/UpdateSuite/TargetApp; git push -n
+->ERR:To /tmp/geoff/git
+ ! [rejected]        master -> master (non-fast-forward)
+error: failed to push some refs to '/tmp/geoff/git'
+To prevent you from losing history, non-fast-forward updates were rejected
+Merge the remote changes before pushing again.  See the 'Note about
+fast-forwards' section of 'git push --help' for details.
+->EXC:1
+<-CMD:cd /tmp/geoff/texttest.git.20Nov160714.26698/texttest.git/VersionControl/General/Miscellaneous/UpdateSuite/TargetApp; git pull
 ->FIL:TargetApp
-->OUT:Updating 854319c..a3dee4d
+->OUT:Updating 4b18919..ecefa65
 Fast-forward
- 0 files changed, 0 insertions(+), 0 deletions(-)
- create mode 100644 TargetApp/Test/result.hello
+ TargetApp/Test1/result.hello |    1 +
+ 1 files changed, 1 insertions(+), 0 deletions(-)
+ create mode 100644 TargetApp/Test1/result.hello
+->ERR:From /tmp/geoff/git
+ * branch            HEAD       -> FETCH_HEAD
