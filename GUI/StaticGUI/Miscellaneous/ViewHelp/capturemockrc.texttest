@@ -4,3 +4,5 @@ intercepts = firefox
 [python]
 intercepts = sys.version_info,locale.getdefaultlocale,gtk.pygtk_version,gtk.gtk_version,gobject.pygobject_version,gobject.glib_version,os.startfile
 
+[locale.getdefaultlocale]
+check_repeated_calls = False

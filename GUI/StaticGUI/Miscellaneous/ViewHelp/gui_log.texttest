@@ -37,7 +37,7 @@ Button 'Filter' (Stock image 'gtk-find', accelerator 'Ctrl+F', tooltip 'filter t
 Button 'Reset Tab' (tooltip 'Reset all the settings in the current tab to their default values')
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 04Nov10:40:03.' , Image 'throbber_inactive.png'
+'TextTest started at 09Dec16:15:06.' , Image 'throbber_inactive.png'
 ------------------------------------------------------------------------
 
 Changing GUI status to: 'Reading tests ...'
@@ -82,7 +82,7 @@ Updated : Test Tree with columns: Tests: 0/11 selected
 ->       S01 (black/grey90)
 Updated drop-down list in 'Test-file to search' Text entry (set to 'output') (drop-down list containing ['output'])
 
-Changing GUI status to: 'Reading tests completed at 04Nov10:40:03.'
+Changing GUI status to: 'Reading tests completed at 09Dec16:15:07.'
 
 Expected application event 'all tests to be read' occurred, proceeding.
 
@@ -123,7 +123,11 @@ Stock Button 'gtk-close' , Button '_Versions' , Button '_License' , Stock Button
 
 'go to website' event created with arguments ''
 
+Waiting for application event 'the browser to be closed' to occur.
+
 Changing GUI status to: 'Started "firefox http://www.texttest.org" in background.'
+
+Expected application event 'the browser to be closed' occurred, proceeding.
 
 'press credits' event created with arguments ''
 
@@ -210,9 +214,9 @@ Viewing table with 6 rows and 2 columns.
 '<b>You are using these installations:
 </b>'
 Viewing table with 3 rows and 2 columns.
-'Test Suite:' | '/tmp/geoff/texttest.gui.04Nov104001.25528/texttest.gui/GUI/StaticGUI/Miscellaneous/ViewHelp/TargetApp'
-'TextTest:' | '/users/geoff/work/master/Testing/TextTest'
-'Python:' | '/usr/local/tt-env/python2.6.current/bin/python'
+'Test Suite:' | '/tmp/dgalda/texttest.gui.09Dec161501.121541/texttest.gui/GUI/StaticGUI/Miscellaneous/ViewHelp/TargetApp'
+'TextTest:' | '/users/dgalda/work/master/Testing/TextTest'
+'Python:' | '/users/dgalda/.local/python2.6.current/bin/python'
 ---------------
 Stock Button 'gtk-close'
 --------------------------------------------------
@@ -418,7 +422,29 @@ Showing Notebook with tabs: trunk , 3.26 , 3.25 , 3.24 , 3.23 , 3.22 , 3.21 , 3.
 Viewing page 'trunk'
 
 ========== GtkTextView ==========
-
+Dynamic GUI Enhancements:
+    - New "Generate test summary" in Actions menu
+	Essentially generates the batch report for the selected tests, writing to a user-selected file
+Framework Enhancements:
+    - "collate_file" now also finds files in $TEXTTEST_LOG_DIR if local sandbox is used
+	i.e. if "default_texttest_local_tmp" is set
+Version Control Browser Enhancements:
+    - Now supports Git
+    - "Update" operation is now always a "centralised-style" update
+	i.e. Mercurial does "hg pull -u" instead of "hg update", Git does "git pull"
+    - Keyboard accelerator Ctrl+U added for "update"
+Batch Report Enhancements:
+    - If "file_to_url" is set, now list URLs in the log file, of table pages and index pages
+	For example Jenkins will turn these into links directly.
+Windows installer Enhancements:
+    - All files now end up under chosen location, removed hardcoded C:\virtualenv and C:\jython2.5.1
+    - StoryText is now upgraded properly when the installer is run for a second time after a new release
+Bug Fixes:
+    - Fixed wildcards for stems in "file_split_pattern" list. Using fnmatch module instead of a hacked pattern matching.
+    - Fixed wildcards for stems in knownbugs "search_file", now works also with new files
+    - Fixed taking long time to start a huge amount of test copies.
+    - VCS update enabled when no tests are selected
+    - Exit code of 1 now returned when initial test suite cannot be created
 =================================
 ---------------
 Stock Button 'gtk-close'
@@ -500,9 +526,9 @@ Viewing table with 6 rows and 2 columns.
 '<b>You are using these installations:
 </b>'
 Viewing table with 3 rows and 2 columns.
-'Test Suite:' | '/tmp/geoff/texttest.gui.04Nov104001.25528/texttest.gui/GUI/StaticGUI/Miscellaneous/ViewHelp/TargetApp'
-'TextTest:' | '/users/geoff/work/master/Testing/TextTest'
-'Python:' | '/usr/local/tt-env/python2.6.current/bin/python'
+'Test Suite:' | '/tmp/dgalda/texttest.gui.09Dec161501.121541/texttest.gui/GUI/StaticGUI/Miscellaneous/ViewHelp/TargetApp'
+'TextTest:' | '/users/dgalda/work/master/Testing/TextTest'
+'Python:' | '/users/dgalda/.local/python2.6.current/bin/python'
 ---------------
 Stock Button 'gtk-close'
 --------------------------------------------------
