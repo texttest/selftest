@@ -1,0 +1,53 @@
+<-SRV:TextTest slave server started on 10.67.6.208:58756
+<-CMD:ssh -q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 ec2-user@10.80.17.112 mkdir -p '/carm/proj/texttest/geoff/Testing' '/tmp/geoff/texttest.ec2cloud.10Dec165642.60509/texttest.ec2cloud/QueueSystems/ErrorHandling/Console/PollSlaveCrash'
+<-CMD:rsync -av --copy-unsafe-links --exclude-from=/carm/proj/texttest/geoff/Testing/TextTest/etc/rsync_exclude_patterns /carm/proj/texttest/geoff/Testing/TextTest ec2-user@10.80.17.112:'/carm/proj/texttest/geoff/Testing'
+->OUT:sending incremental file list
+TextTest/lib/queuesystem/
+TextTest/lib/queuesystem/ec2cloud.py
+
+sent 10192 bytes  received 117 bytes  6872.67 bytes/sec
+total size is 6146792  speedup is 596.25
+<-CMD:rsync -av --copy-unsafe-links --exclude-from=/carm/proj/texttest/geoff/Testing/TextTest/etc/rsync_exclude_patterns /tmp/geoff/texttest.ec2cloud.10Dec165642.60509/texttest.ec2cloud/QueueSystems/ErrorHandling/Console/PollSlaveCrash/TargetApp ec2-user@10.80.17.112:'/tmp/geoff/texttest.ec2cloud.10Dec165642.60509/texttest.ec2cloud/QueueSystems/ErrorHandling/Console/PollSlaveCrash'
+->OUT:sending incremental file list
+TargetApp/
+TargetApp/busywait.py
+TargetApp/config.sleep
+TargetApp/config.sleep.badperfarch
+TargetApp/config.sleep.badperfmachine
+TargetApp/config.sleep.badperfmodel
+TargetApp/config.sleep.badqueue
+TargetApp/config.sleep.badresource
+TargetApp/config.sleep.badresusage
+TargetApp/config.sleep.cpulimit
+TargetApp/config.sleep.gui
+TargetApp/config.sleep.localtmp
+TargetApp/config.sleep.parallel
+TargetApp/config.sleep.parallel.oneperf
+TargetApp/config.sleep.screenshots
+TargetApp/knownbugs.sleep.kb
+TargetApp/screenshots.py
+TargetApp/sleep.py
+TargetApp/testsuite.sleep
+TargetApp/testsuite.sleep.startdigit
+TargetApp/123Test/
+TargetApp/123Test/errors.sleep
+TargetApp/123Test/knownbugs.sleep.kbrerun
+TargetApp/123Test/options.sleep
+TargetApp/123Test/output.sleep
+TargetApp/Basic/
+TargetApp/Basic/errors.sleep
+TargetApp/Basic/options.sleep
+TargetApp/Basic/options.sleep.killing
+TargetApp/Basic/options.sleep.killing2
+TargetApp/Basic/options.sleep.killing3
+TargetApp/Basic/output.sleep
+TargetApp/Basic/output.sleep.cpulimit
+TargetApp/Basic2/
+TargetApp/Basic2/options.sleep
+
+sent 4889 bytes  received 617 bytes  2202.40 bytes/sec
+total size is 2827  speedup is 0.51
+<-SRV:Completed submission of all tests
+<-CMD:cd /tmp/geoff/texttest.ec2cloud.10Dec165642.60509/texttest.ec2cloud/QueueSystems/ErrorHandling/Console/PollSlaveCrash/texttesttmp/sleep.killing.10Dec165645.60654/slavelogs; ssh -q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 ec2-user@10.80.17.112 /carm/proj/texttest/geoff/Testing/TextTest/bin/texttest.py -d /tmp/geoff/texttest.ec2cloud.10Dec165642.60509/texttest.ec2cloud/QueueSystems/ErrorHandling/Console/PollSlaveCrash/TargetApp -a sleep.killing -l -tp Basic -slave /tmp/geoff/texttest.ec2cloud.10Dec165642.60509/texttest.ec2cloud/QueueSystems/ErrorHandling/Console/PollSlaveCrash/texttesttmp/sleep.killing.10Dec165645.60654 -servaddr 10.67.6.208:36868 -b short_local
+->ERR:Not tonight, Josephine!
+->EXC:1

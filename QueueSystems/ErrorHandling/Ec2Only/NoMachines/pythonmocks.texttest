@@ -1,0 +1,60 @@
+<-PYT:import boto
+<-PYT:boto.__path__
+->RET:['Fake value just to mark that it exists']
+<-PYT:import boto.ec2
+<-PYT:boto.ec2.connect_to_region('eu-west-1')
+->RET:Instance('EC2Connection(AWSQueryConnection, AWSAuthConnection, object)', 'ec2connection_eu_west_1')
+<-PYT:ec2connection_eu_west_1.get_only_instances()
+->RET:[Instance('Instance(TaggedEC2Object, EC2Object, object)', 'instance1'), Instance('Instance', 'instance2'), Instance('Instance', 'instance3'), Instance('Instance', 'instance4'), Instance('Instance', 'instance5'), Instance('Instance', 'instance6'), Instance('Instance', 'instance7'), Instance('Instance', 'instance8'), Instance('Instance', 'instance9'), Instance('Instance', 'instance10'), Instance('Instance', 'instance11'), Instance('Instance', 'instance12'), Instance('Instance', 'instance13')]
+<-PYT:instance1.tags
+->RET:Instance('TagSet(dict)', 'tagset1')
+<-PYT:tagset1.get('Name', '')
+->RET:u'cucumber-dgalda-new'
+<-PYT:instance2.tags
+->RET:Instance('TagSet', 'tagset2')
+<-PYT:tagset2.get('Name', '')
+->RET:u'johani_cucumber'
+<-PYT:instance3.tags
+->RET:Instance('TagSet', 'tagset3')
+<-PYT:tagset3.get('Name', '')
+->RET:u'testing again'
+<-PYT:instance4.tags
+->RET:Instance('TagSet', 'tagset4')
+<-PYT:tagset4.get('Name', '')
+->RET:u'cucumber-5-new'
+<-PYT:instance5.tags
+->RET:Instance('TagSet', 'tagset5')
+<-PYT:tagset5.get('Name', '')
+->RET:u'cucumber-5-new'
+<-PYT:instance6.tags
+->RET:Instance('TagSet', 'tagset6')
+<-PYT:tagset6.get('Name', '')
+->RET:u'test_ag_01'
+<-PYT:instance7.tags
+->RET:Instance('TagSet', 'tagset7')
+<-PYT:tagset7.get('Name', '')
+->RET:u'ag-test5'
+<-PYT:instance8.tags
+->RET:Instance('TagSet', 'tagset8')
+<-PYT:tagset8.get('Name', '')
+->RET:u'nat-appliance'
+<-PYT:instance9.tags
+->RET:Instance('TagSet', 'tagset9')
+<-PYT:tagset9.get('Name', '')
+->RET:u'ag-test2'
+<-PYT:instance10.tags
+->RET:Instance('TagSet', 'tagset10')
+<-PYT:tagset10.get('Name', '')
+->RET:u'aws-spacewalk-proxy'
+<-PYT:instance11.tags
+->RET:Instance('TagSet', 'tagset11')
+<-PYT:tagset11.get('Name', '')
+->RET:u'test_ag_03'
+<-PYT:instance12.tags
+->RET:Instance('TagSet', 'tagset12')
+<-PYT:tagset12.get('Name', '')
+->RET:u'geoff_cucumber'
+<-PYT:instance13.tags
+->RET:Instance('TagSet', 'tagset13')
+<-PYT:tagset13.get('Name', '')
+->RET:u'cucumber-5-new'
