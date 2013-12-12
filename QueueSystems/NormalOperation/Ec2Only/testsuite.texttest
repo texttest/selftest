@@ -2,3 +2,10 @@
 # Also save changes and make sure this works.
 # 
 ExternalCheckoutSave
+
+# Ec2 slaves run on a different file system, need to transfer files back and remove everything
+# at the end
+RemoteSlave
+
+# Multicore EC2 instances might have to ignore some files from another slave...
+RemoteSlaveFilesFromOtherSlave
