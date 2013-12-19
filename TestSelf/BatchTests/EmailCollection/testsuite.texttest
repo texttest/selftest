@@ -25,6 +25,9 @@ MailOnFailureOnly
 # Check we send mail if some tests fail
 SendMailOnFailure
 
+# Don't pick up versions when we request a substring of some files that exist, see TTT-3351
+IgnoreSubstrings
+
 # We don't want to include runs older than batch_collect_max_age_days
 IgnoreOldRuns
 
