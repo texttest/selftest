@@ -5,6 +5,8 @@ externalmocks:(mkdir -p )[^ ]*{REPLACE \1<texttest_installation_parent>}
 externalmocks:(-slavefilesynch) [A-Za-z]*@[0-9\.]*{REPLACE \1 <user@host>}
 externalmocks:(rsync.*) [^<][^ ]* [^ ]*${REPLACE \1 <texttest_installation> <texttest_remote_installation>\n}
 errors:(mkdir -p )[^ ]*{REPLACE \1<texttest_installation_parent>}
+targetReport:(mkdir -p )[^ ]*{REPLACE \1<texttest_installation_parent>}
+output:(mkdir -p )[^ ]*{REPLACE \1<texttest_installation_parent>}
 
 [unordered_text]
 externalmocks:-slave{[->}^(<-|->CLI)
