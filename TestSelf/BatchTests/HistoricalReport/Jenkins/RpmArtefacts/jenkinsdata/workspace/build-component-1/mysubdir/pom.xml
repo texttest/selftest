@@ -1,0 +1,56 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>the.group</groupId>
+  <artifactId>build-component.someotherartefact</artifactId>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>buildnumber-maven-plugin</artifactId>
+        <executions>
+          <execution>
+            <phase>validate</phase>
+            <goals>
+              <goal>create</goal>
+            </goals>
+          </execution>
+        </executions>
+        <configuration>
+          <doCheck>false</doCheck>
+          <doUpdate>false</doUpdate>
+        </configuration>
+      </plugin>
+      <!-- Package as an RPM -->
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>rpm-maven-plugin</artifactId>
+        <executions>
+          <execution>
+            <goals>
+              <goal>attached-rpm</goal>
+            </goals>
+          </execution>
+        </executions>
+        <configuration>
+          <name>build-component.artefact</name>
+        
+          <mappings>
+            <mapping>
+              <directory>${rpm.directory}</directory>
+              <filemode>775</filemode>
+              <sources>
+                <source>
+                  <location>${build.dir}/run</location>
+                </source>
+              </sources>
+            </mapping>
+          </mappings>
+        </configuration>
+      </plugin>
+
+    </plugins>
+  </build>
+</project>
