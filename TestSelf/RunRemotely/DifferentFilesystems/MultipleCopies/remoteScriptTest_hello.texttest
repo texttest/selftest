@@ -1,0 +1,9 @@
+#!/bin/sh
+
+cd ${HOME}'/.texttest/tmp/self_test.23Jan094145.13528/hello/Test'
+PATH=${HOME}'/.texttest/tmp/self_test.23Jan094145.13528/hello/Test:'${PATH}
+export PATH
+TEXTTEST_LOG_DIR=${HOME}'/.texttest/tmp/self_test.23Jan094145.13528/hello/Test'
+export TEXTTEST_LOG_DIR
+echo "kill $$" > kill_test.sh
+exec python ${HOME}/.texttest/tmp/self_test.23Jan094145.13528/system_under_test/hello.py

@@ -1,0 +1,23 @@
+Using Application HELLO
+Removing previous remote write directories on lxfarm07.academy matching ${HOME}/.texttest/tmp/self_test.*
+Using Application HELLO, version copy_1
+Removing previous remote write directories on lxfarm07.academy matching ${HOME}/.texttest/tmp/self_test.*
+Running HELLO test-suite TargetApp
+  Running HELLO test-case Test
+Comparing differences for HELLO test-suite TargetApp
+  Comparing differences for HELLO test-case Test (on errors.hello,output.hello)
+  HELLO test-case Test FAILED on lxfarm07.academy : differences in output
+Running HELLO.copy_1 test-suite TargetApp
+  Running HELLO.copy_1 test-case Test
+Comparing differences for HELLO.copy_1 test-suite TargetApp
+  Comparing differences for HELLO.copy_1 test-case Test (on errors.hello,output.hello)
+  HELLO.copy_1 test-case Test FAILED on lxfarm07.academy : differences in output
+Results:
+
+Tests that did not succeed:
+  HELLO test-case Test FAILED on lxfarm07.academy : differences in output
+  HELLO.copy_1 test-case Test FAILED on lxfarm07.academy : differences in output
+
+Tests Run: 2, Failures: 2
+Creating batch report for application HELLO ...
+done.

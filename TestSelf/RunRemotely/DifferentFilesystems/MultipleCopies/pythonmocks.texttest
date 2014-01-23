@@ -1,0 +1,59 @@
+<-PYT:import smtplib
+<-PYT:smtplib.SMTP()
+->RET:Instance('SMTP', 'smtp1')
+<-PYT:smtp1.connect('localhost')
+->RET:(220, 'got001865.jeppesensystems.com ESMTP Sendmail 8.14.4/8.14.4; Thu, 23 Jan 2014 09:07:01 +0100')
+<-PYT:smtp1.sendmail('geoff@localhost', ['tom'], '''From: geoff@localhost
+To: tom
+Subject: 23Jan2014 HELLO : 2 tests : 2 FAILED
+
+HELLO : 1 tests : 1 FAILED
+HELLO copy_1 : 1 tests : 1 FAILED
+
+Summary of all Unsuccessful tests follows...
+---------------------------------------------------------------------------------
+HELLO : 1 tests : 1 FAILED
+
+The following tests FAILED : 
+In HELLO test-suite TargetApp:
+  - HELLO test-case Test : output different
+
+
+HELLO copy_1 : 1 tests : 1 FAILED
+
+The following tests FAILED : 
+In HELLO.copy_1 test-suite TargetApp:
+  - HELLO.copy_1 test-case Test : output different
+
+
+Details of all Unsuccessful tests follows...
+---------------------------------------------------------------------------------
+HELLO : 1 tests : 1 FAILED
+
+
+Detailed information for the tests that FAILED follows...
+--------------------------------------------------------
+TEST FAILED on lxfarm07.academy : HELLO test-case Test (under Test)
+---------- Differences in output ----------
+1c1
+< Hello
+---
+> Hello World!
+
+---------------------------------------------------------------------------------
+HELLO copy_1 : 1 tests : 1 FAILED
+
+
+Detailed information for the tests that FAILED follows...
+--------------------------------------------------------
+TEST FAILED on lxfarm07.academy : HELLO.copy_1 test-case Test (under Test)
+---------- Differences in output ----------
+1c1
+< Hello
+---
+> Hello World!
+
+''')
+->RET:{}
+<-PYT:smtp1.quit()
+->RET:(221, '2.0.0 got001865.jeppesensystems.com closing connection')
