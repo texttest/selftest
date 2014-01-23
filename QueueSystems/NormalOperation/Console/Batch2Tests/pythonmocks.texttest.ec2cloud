@@ -5,55 +5,51 @@
 <-PYT:boto.ec2.connect_to_region('eu-west-1')
 ->RET:Instance('EC2Connection(AWSQueryConnection, AWSAuthConnection, object)', 'ec2connection_eu_west_1')
 <-PYT:ec2connection_eu_west_1.get_only_instances()
-->RET:[Instance('Instance(TaggedEC2Object, EC2Object, object)', 'instance1'), Instance('Instance', 'instance2'), Instance('Instance', 'instance3'), Instance('Instance', 'instance4'), Instance('Instance', 'instance5'), Instance('Instance', 'instance6'), Instance('Instance', 'instance7'), Instance('Instance', 'instance8'), Instance('Instance', 'instance9'), Instance('Instance', 'instance10'), Instance('Instance', 'instance11'), Instance('Instance', 'instance12'), Instance('Instance', 'instance13')]
+->RET:[Instance('Instance(TaggedEC2Object, EC2Object, object)', 'instance1'), Instance('Instance', 'instance2'), Instance('Instance', 'instance3'), Instance('Instance', 'instance4'), Instance('Instance', 'instance5'), Instance('Instance', 'instance6'), Instance('Instance', 'instance7'), Instance('Instance', 'instance8'), Instance('Instance', 'instance9'), Instance('Instance', 'instance10'), Instance('Instance', 'instance11'), Instance('Instance', 'instance12'), Instance('Instance', 'instance13'), Instance('Instance', 'instance14')]
 <-PYT:instance1.tags
 ->RET:Instance('TagSet(dict)', 'tagset1')
 <-PYT:tagset1.get('Name', '')
-->RET:u'texttest-dgalda-new'
+->RET:u'johani_texttest'
 <-PYT:instance1.private_ip_address
-->RET:u'10.80.17.209'
+->RET:u'10.80.17.112'
 <-PYT:instance1.id
-->RET:u'i-41a4bc0e'
+->RET:u'i-fb3c43b4'
 <-PYT:instance2.tags
 ->RET:Instance('TagSet', 'tagset2')
 <-PYT:tagset2.get('Name', '')
-->RET:u'johani_texttest'
-<-PYT:instance2.private_ip_address
-->RET:u'10.80.17.112'
-<-PYT:instance2.id
-->RET:u'i-fb3c43b4'
+->RET:u'testing again'
 <-PYT:instance3.tags
 ->RET:Instance('TagSet', 'tagset3')
 <-PYT:tagset3.get('Name', '')
-->RET:u'testing again'
+->RET:u'texttest-5-new'
+<-PYT:instance3.private_ip_address
+->RET:u'10.80.17.249'
+<-PYT:instance3.id
+->RET:u'i-07b7cc48'
 <-PYT:instance4.tags
 ->RET:Instance('TagSet', 'tagset4')
 <-PYT:tagset4.get('Name', '')
 ->RET:u'texttest-5-new'
 <-PYT:instance4.private_ip_address
-->RET:u'10.80.17.249'
+->RET:u'10.80.17.96'
 <-PYT:instance4.id
-->RET:u'i-07b7cc48'
+->RET:u'i-dcb7cc93'
 <-PYT:instance5.tags
 ->RET:Instance('TagSet', 'tagset5')
 <-PYT:tagset5.get('Name', '')
-->RET:u'texttest-5-new'
-<-PYT:instance5.private_ip_address
-->RET:u'10.80.17.96'
-<-PYT:instance5.id
-->RET:u'i-dcb7cc93'
+->RET:u'test_ag_01'
 <-PYT:instance6.tags
 ->RET:Instance('TagSet', 'tagset6')
 <-PYT:tagset6.get('Name', '')
-->RET:u'test_ag_01'
+->RET:u'ag-test5'
 <-PYT:instance7.tags
 ->RET:Instance('TagSet', 'tagset7')
 <-PYT:tagset7.get('Name', '')
-->RET:u'ag-test5'
+->RET:u'nat-appliance'
 <-PYT:instance8.tags
 ->RET:Instance('TagSet', 'tagset8')
 <-PYT:tagset8.get('Name', '')
-->RET:u'nat-appliance'
+->RET:u'chadneal-test-status-checks'
 <-PYT:instance9.tags
 ->RET:Instance('TagSet', 'tagset9')
 <-PYT:tagset9.get('Name', '')
@@ -82,7 +78,15 @@
 ->RET:u'10.80.17.37'
 <-PYT:instance13.id
 ->RET:u'i-ae8dd0e2'
-<-PYT:ec2connection_eu_west_1.get_all_instance_status([u'i-dcb7cc93', u'i-fb3c43b4', u'i-8d480fc1', u'i-41a4bc0e', u'i-07b7cc48', u'i-ae8dd0e2'])
+<-PYT:instance14.tags
+->RET:Instance('TagSet', 'tagset14')
+<-PYT:tagset14.get('Name', '')
+->RET:u'texttest-geoff-new'
+<-PYT:instance14.private_ip_address
+->RET:u'10.80.17.21'
+<-PYT:instance14.id
+->RET:u'i-38077c74'
+<-PYT:ec2connection_eu_west_1.get_all_instance_status([u'i-dcb7cc93', u'i-fb3c43b4', u'i-8d480fc1', u'i-07b7cc48', u'i-ae8dd0e2', u'i-38077c74'])
 ->RET:Instance('InstanceStatusSet(list)', 'instancestatusset1')
 <-PYT:instancestatusset1.__iter__()
 ->RET:Instance('listiterator(object)', 'listiterator1')
@@ -93,7 +97,7 @@
 <-PYT:status1.status
 ->RET:u'ok'
 <-PYT:instancestatus1.id
-->RET:u'i-8d480fc1'
+->RET:u'i-38077c74'
 <-PYT:listiterator1.next()
 ->RET:Instance('InstanceStatus', 'instancestatus2')
 <-PYT:instancestatus2.instance_status
@@ -101,7 +105,7 @@
 <-PYT:status2.status
 ->RET:u'ok'
 <-PYT:instancestatus2.id
-->RET:u'i-ae8dd0e2'
+->RET:u'i-8d480fc1'
 <-PYT:listiterator1.next()
 ->RET:Instance('InstanceStatus', 'instancestatus3')
 <-PYT:instancestatus3.instance_status
@@ -109,26 +113,28 @@
 <-PYT:status3.status
 ->RET:u'ok'
 <-PYT:instancestatus3.id
-->RET:u'i-fb3c43b4'
+->RET:u'i-ae8dd0e2'
 <-PYT:listiterator1.next()
 ->RET:Instance('InstanceStatus', 'instancestatus4')
 <-PYT:instancestatus4.instance_status
 ->RET:Instance('Status', 'status4')
 <-PYT:status4.status
-->RET:u'impaired'
+->RET:u'ok'
+<-PYT:instancestatus4.id
+->RET:u'i-fb3c43b4'
 <-PYT:listiterator1.next()
 ->RET:Instance('InstanceStatus', 'instancestatus5')
 <-PYT:instancestatus5.instance_status
 ->RET:Instance('Status', 'status5')
 <-PYT:status5.status
-->RET:u'ok'
-<-PYT:instancestatus5.id
-->RET:u'i-dcb7cc93'
+->RET:u'impaired'
 <-PYT:listiterator1.next()
 ->RET:Instance('InstanceStatus', 'instancestatus6')
 <-PYT:instancestatus6.instance_status
 ->RET:Instance('Status', 'status6')
 <-PYT:status6.status
-->RET:u'impaired'
+->RET:u'ok'
+<-PYT:instancestatus6.id
+->RET:u'i-dcb7cc93'
 <-PYT:listiterator1.next()
 ->RET:raise exceptions.StopIteration('')
