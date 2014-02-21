@@ -37,7 +37,7 @@ Button 'Filter' (Stock image 'gtk-find', accelerator 'Ctrl+F', tooltip 'filter t
 Button 'Reset Tab' (tooltip 'Reset all the settings in the current tab to their default values')
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 09Dec16:15:06.' , Image 'throbber_inactive.png'
+'TextTest started at 19Feb16:22:38.' , Image 'throbber_inactive.png'
 ------------------------------------------------------------------------
 
 Changing GUI status to: 'Reading tests ...'
@@ -82,7 +82,7 @@ Updated : Test Tree with columns: Tests: 0/11 selected
 ->       S01 (black/grey90)
 Updated drop-down list in 'Test-file to search' Text entry (set to 'output') (drop-down list containing ['output'])
 
-Changing GUI status to: 'Reading tests completed at 09Dec16:15:07.'
+Changing GUI status to: 'Reading tests completed at 19Feb16:22:39.'
 
 Expected application event 'all tests to be read' occurred, proceeding.
 
@@ -214,9 +214,9 @@ Viewing table with 6 rows and 2 columns.
 '<b>You are using these installations:
 </b>'
 Viewing table with 3 rows and 2 columns.
-'Test Suite:' | '/tmp/dgalda/texttest.gui.09Dec161501.121541/texttest.gui/GUI/StaticGUI/Miscellaneous/ViewHelp/TargetApp'
-'TextTest:' | '/users/dgalda/work/master/Testing/TextTest'
-'Python:' | '/users/dgalda/.local/python2.6.current/bin/python'
+'Test Suite:' | '/tmp/geoff/texttest.gui.19Feb162231.768/texttest.gui/GUI/StaticGUI/Miscellaneous/ViewHelp/TargetApp'
+'TextTest:' | '/users/geoff/work/master/Testing/TextTest'
+'Python:' | '/usr/local/tt-env/python2.6.current/bin/python'
 ---------------
 Stock Button 'gtk-close'
 --------------------------------------------------
@@ -246,77 +246,51 @@ Changing GUI status to: ''
 ---------- Dialog 'TextTest Migration Notes' ----------
 Default widget is 'gtk-close'
 
-Showing Notebook with tabs: from 3.25 , from 3.24 , from 3.23 , from 3.22 , from 3.21 , from 3.20 , from 3.19 , from 3.18 , from 3.17 , from 3.16 , from 3.15 , from 3.14 , from 3.13 , from 3.12 , from 3.11 , from 3.10 , from 3.9 , from 3.8 , from 3.7 , from 3.6 , from 3.5 , from 3.4 , from 3.3 , from 3.1 , from 2.x
-Viewing page 'from 3.25'
+Showing Notebook with tabs: from 3.26 , from 3.25 , from 3.24 , from 3.23 , from 3.22 , from 3.21 , from 3.20 , from 3.19 , from 3.18 , from 3.17 , from 3.16 , from 3.15 , from 3.14 , from 3.13 , from 3.12 , from 3.11 , from 3.10 , from 3.9 , from 3.8 , from 3.7 , from 3.6 , from 3.5 , from 3.4 , from 3.3 , from 3.1 , from 2.x
+Viewing page 'from 3.26'
 
 ========== GtkTextView ==========
-=========================================================
-COMPULSORY MIGRATION
-=========================================================
-
-(1) "slow_motion_replay_speed" config file setting is no longer used
-====================================================================
-It can be configured now on the running tab of the static GUI. You should just remove it.
-
-(2) Deprecated script batch.CollectFiles is removed
-===================================================
-use "-coll mail" instead to send mails alone. "-coll" will send mails and build the HTML report.
-
 =========================================================
 CHANGES IN DEFAULT BEHAVIOUR (OR PROCEDURE)
 =========================================================
 
-(1) "run_dependent_text": overlapping filters now behave as expected
-====================================================================
+(1) "run_dependent_text": section filters now ignore lines which match both start and end marker
+================================================================================================
 
 If you have a file
 
 A
 B
 C
-D
-E
-F
-G
+A
+B
+C
 
-and you filter it with two filters
+and you filter it with a filter
 
 [run_dependent_text]
-stdout:C{->}F
-stdout:B{->}E
+stdout:A{->}A
 
-this will now as expected remove all the lines between B and F. Previously it would remove the entire file
-after B. This was a bug, but is included here as it may change the behaviour of long-established filters.
+or even a filter
 
-(2) Running "-coll", with both HTML report and email enabled
-============================================================
-The email will now just contain links to the HTML report instead of complete plain-text information.
-Also, it will be generated after the HTML report, in 3.25 it was generated first.
- 
-(3) "Replace Text in Files" now treats replacement string as a single whole instead of as separate parts
-========================================================================================================
-So if you have a file
+[run_dependent_text]
+stdout:{LINE 1}{->}A
 
-Apples
-Bananas
+this would previously remove everything between the first two "A" lines. It will now simply be ignored.
+Probably any filter where the end marker also matches the start line has not been very well-defined, and will need fixing up.
 
-and you replace using search expression
+(What is meant by a filter where the start and end markers match the same line is open to interpretation, but this behaviour 
+seemed most practical in the situation where you have filters like 
 
-(Apples)
-(Bananas)
+[run_dependent_text]
+stdout:{LINE 1}{->}something
 
-and replacement
+and have set
 
-\2
-\1
+save_filtered_file_stems:stdout
 
-you will now as expected get
-
-Bananas
-Apples
-
-There was no way to do this before. Though of course this change can change the behaviour on some setups also: the
-back references have to be numbered correctly.
+If "something" appears more than once in the file, the filtering behaviour will behave differently on the stored file and the 
+new file, which is very confusing for users.
 =================================
 ---------------
 Stock Button 'gtk-close'
@@ -324,7 +298,7 @@ Stock Button 'gtk-close'
 
 'view tab' event created with arguments 'from 3.4'
 
-Current page changed in Notebook with tabs: from 3.25 , from 3.24 , from 3.23 , from 3.22 , from 3.21 , from 3.20 , from 3.19 , from 3.18 , from 3.17 , from 3.16 , from 3.15 , from 3.14 , from 3.13 , from 3.12 , from 3.11 , from 3.10 , from 3.9 , from 3.8 , from 3.7 , from 3.6 , from 3.5 , from 3.4 , from 3.3 , from 3.1 , from 2.x
+Current page changed in Notebook with tabs: from 3.26 , from 3.25 , from 3.24 , from 3.23 , from 3.22 , from 3.21 , from 3.20 , from 3.19 , from 3.18 , from 3.17 , from 3.16 , from 3.15 , from 3.14 , from 3.13 , from 3.12 , from 3.11 , from 3.10 , from 3.9 , from 3.8 , from 3.7 , from 3.6 , from 3.5 , from 3.4 , from 3.3 , from 3.1 , from 2.x
 Viewing page 'from 3.4'
 
 ========== GtkTextView ==========
@@ -428,6 +402,12 @@ Dynamic GUI Enhancements:
 Framework Enhancements:
     - "collate_file" now also finds files in $TEXTTEST_LOG_DIR if local sandbox is used
 	i.e. if "default_texttest_local_tmp" is set
+    - New option for discarding files, "discard_file_text"
+	Allows files to be discarded conditional on their contents. Useful e.g. for intermittent exceptions. See website.
+    - When sending SIGQUIT to TextTest if it's hanging, now print a stacktrace of all threads instead of just the main one
+	(UNIX only, naturally)
+    - Section filters will not trigger on lines which match both the start and end lines now.
+	This is a backwards-incompatible change, see migration notes.
 Version Control Browser Enhancements:
     - Now supports Git
     - "Update" operation is now always a "centralised-style" update
@@ -436,15 +416,33 @@ Version Control Browser Enhancements:
 Batch Report Enhancements:
     - If "file_to_url" is set, now list URLs in the log file, of table pages and index pages
 	For example Jenkins will turn these into links directly.
+    - Many improvements to Jenkins Changes functionality
+	Handles attached RPMs via Maven, separate "build" structure from "jobs", workspace subdirectories amongst other things
+Grid Engine enhancements/bug fixes:
+    - New experimental status support for EC2 Virtual Private Cloud added
+	Tests run parallel on any available cloud machines. Requires Python tool "boto". See website.
+    - Fixed race condition which could lead to hanging on shutdown
 Windows installer Enhancements:
     - All files now end up under chosen location, removed hardcoded C:\virtualenv and C:\jython2.5.1
     - StoryText is now upgraded properly when the installer is run for a second time after a new release
+    - Should now work for wxPython applications without needing to hack by hand afterwards
 Bug Fixes:
     - Fixed wildcards for stems in "file_split_pattern" list. Using fnmatch module instead of a hacked pattern matching.
     - Fixed wildcards for stems in knownbugs "search_file", now works also with new files
     - Fixed taking long time to start a huge amount of test copies.
     - VCS update enabled when no tests are selected
     - Exit code of 1 now returned when initial test suite cannot be created
+    - Fixed problem when running multiple usecases if test has "usecase" in the name
+    - Fixed Exception when closing dynamic GUI after reconnecting.
+    - Handle now executables inside remote checkouts
+    - Fixed unresponsive dynamic GUI after viewing screenshots in a browser
+    - Fixed stack trace generating batch report in Jenkins when Jenkins jobs have a nested module structure
+    - Fixed bug where batch reports were collected for e.g. version abc when version ab was requested
+    - Fixed inconsistency between pressing "Quit" and closing the window, in the last case warnings correctly produced now
+    - Disabled VCS actions on New Files in the dynamic GUI (stacktraced before)
+    - Fixed stacktrace interpreting core files when GDB fails to handle them and DBX not installed
+    - If performance_test_machine is set and test is not running there, don't attempt to use "time" program
+    - Fixed problems with {INTERNAL writedir} filtering when test names contain a '+'
 =================================
 ---------------
 Stock Button 'gtk-close'
@@ -526,9 +524,9 @@ Viewing table with 6 rows and 2 columns.
 '<b>You are using these installations:
 </b>'
 Viewing table with 3 rows and 2 columns.
-'Test Suite:' | '/tmp/dgalda/texttest.gui.09Dec161501.121541/texttest.gui/GUI/StaticGUI/Miscellaneous/ViewHelp/TargetApp'
-'TextTest:' | '/users/dgalda/work/master/Testing/TextTest'
-'Python:' | '/users/dgalda/.local/python2.6.current/bin/python'
+'Test Suite:' | '/tmp/geoff/texttest.gui.19Feb162231.768/texttest.gui/GUI/StaticGUI/Miscellaneous/ViewHelp/TargetApp'
+'TextTest:' | '/users/geoff/work/master/Testing/TextTest'
+'Python:' | '/usr/local/tt-env/python2.6.current/bin/python'
 ---------------
 Stock Button 'gtk-close'
 --------------------------------------------------
