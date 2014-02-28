@@ -1,1 +1,0 @@
-CLASSPATH:${ECLIPSE_HOME}/plugins/*
