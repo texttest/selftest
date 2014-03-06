@@ -1,5 +1,5 @@
-<-SRV:TextTest slave server started on 10.67.6.216:56368
-<-CMD:ssh -q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 ec2-user@10.80.17.112 mkdir -p '/users/geoff/work/master/Testing' '/tmp/geoff/texttest.ec2cloud.gui.24Jan154337.23565/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/KillTests'
+<-SRV:TextTest slave server started on 10.67.7.142:55484
+<-CMD:ssh -q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 ec2-user@10.80.17.112 mkdir -p '/users/geoff/work/master/Testing' '/tmp/geoff/texttest.06Mar152618.32544/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/KillTests'
 <-CMD:rsync -e "ssh -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10" -av --copy-unsafe-links --exclude-from=/users/geoff/work/master/Testing/TextTest/etc/rsync_exclude_patterns /users/geoff/work/master/Testing/TextTest ec2-user@10.80.17.112:'/users/geoff/work/master/Testing'
 ->OUT:sending incremental file list
 TextTest/lib/default/
@@ -9,7 +9,7 @@ TextTest/lib/queuesystem/ec2cloud.py
 
 sent 11584 bytes  received 879 bytes  8308.67 bytes/sec
 total size is 6178035  speedup is 495.71
-<-CMD:rsync -e "ssh -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10" -av --copy-unsafe-links --exclude-from=/users/geoff/work/master/Testing/TextTest/etc/rsync_exclude_patterns /tmp/geoff/texttest.ec2cloud.gui.24Jan154337.23565/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/KillTests/TargetApp ec2-user@10.80.17.112:'/tmp/geoff/texttest.ec2cloud.gui.24Jan154337.23565/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/KillTests'
+<-CMD:rsync -e "ssh -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10" -av --copy-unsafe-links --exclude-from=/users/geoff/work/master/Testing/TextTest/etc/rsync_exclude_patterns /tmp/geoff/texttest.06Mar152618.32544/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/KillTests/TargetApp ec2-user@10.80.17.112:'/tmp/geoff/texttest.06Mar152618.32544/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/KillTests'
 ->OUT:sending incremental file list
 TargetApp/
 TargetApp/busywait.py
@@ -50,7 +50,8 @@ TargetApp/Basic2/options.sleep
 
 sent 5160 bytes  received 636 bytes  3864.00 bytes/sec
 total size is 3025  speedup is 0.52
-<-CMD:cd /tmp/geoff/texttest.ec2cloud.gui.24Jan154337.23565/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/KillTests/texttesttmp/dynamic_gui.24Jan154340.23664/slavelogs; ssh -q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 -A ec2-user@10.80.17.112 /users/geoff/work/master/Testing/TextTest/site/bin/texttest -d /tmp/geoff/texttest.ec2cloud.gui.24Jan154337.23565/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/KillTests/TargetApp -a sleep -l -tp Basic -slave /tmp/geoff/texttest.ec2cloud.gui.24Jan154337.23565/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/KillTests/texttesttmp/dynamic_gui.24Jan154340.23664 -servaddr 10.67.6.216:45226 -slavefilesynch geoff@10.67.6.216
+<-CMD:ssh -q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 ec2-user@10.80.17.126 mkdir -p '/users/geoff/work/master/Testing' '/tmp/geoff/texttest.06Mar152618.32544/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/KillTests'
+<-CMD:cd /tmp/geoff/texttest.06Mar152618.32544/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/KillTests/texttesttmp/dynamic_gui.06Mar152724.5447/slavelogs; ssh -q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 -A ec2-user@10.80.17.112 /users/geoff/work/master/Testing/TextTest/bin/texttest.py -d /tmp/geoff/texttest.06Mar152618.32544/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/KillTests/TargetApp -a sleep -l -tp Basic -slave /tmp/geoff/texttest.06Mar152618.32544/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/KillTests/texttesttmp/dynamic_gui.06Mar152724.5447 -servaddr 10.67.7.142:40916 -slavefilesynch geoff@10.67.7.142
 ->OUT:Using Application SLEEP
 Running SLEEP test-suite TargetApp
   Running SLEEP test-case Basic
@@ -59,7 +60,6 @@ Killing running test (process id 2797)
 Comparing differences for SLEEP test-suite TargetApp
   Comparing differences for SLEEP test-case Basic (on errors.sleep,output.sleep)
 ->EXC:-12
-<-CMD:ssh -q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 ec2-user@10.80.17.126 mkdir -p '/users/geoff/work/master/Testing' '/tmp/geoff/texttest.ec2cloud.gui.24Jan154337.23565/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/KillTests'
 <-CMD:rsync -e "ssh -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10" -av --copy-unsafe-links --exclude-from=/users/geoff/work/master/Testing/TextTest/etc/rsync_exclude_patterns /users/geoff/work/master/Testing/TextTest ec2-user@10.80.17.126:'/users/geoff/work/master/Testing'
 ->OUT:sending incremental file list
 TextTest/lib/default/
@@ -148,7 +148,7 @@ p17
 S'start'
 p18
 sb.
-<-CMD:rsync -e "ssh -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10" -av --copy-unsafe-links --exclude-from=/users/geoff/work/master/Testing/TextTest/etc/rsync_exclude_patterns /tmp/geoff/texttest.ec2cloud.gui.24Jan154337.23565/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/KillTests/TargetApp ec2-user@10.80.17.126:'/tmp/geoff/texttest.ec2cloud.gui.24Jan154337.23565/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/KillTests'
+<-CMD:rsync -e "ssh -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10" -av --copy-unsafe-links --exclude-from=/users/geoff/work/master/Testing/TextTest/etc/rsync_exclude_patterns /tmp/geoff/texttest.06Mar152618.32544/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/KillTests/TargetApp ec2-user@10.80.17.126:'/tmp/geoff/texttest.06Mar152618.32544/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/KillTests'
 ->OUT:sending incremental file list
 TargetApp/
 TargetApp/busywait.py
@@ -190,7 +190,7 @@ TargetApp/Basic2/options.sleep
 sent 5160 bytes  received 636 bytes  2318.40 bytes/sec
 total size is 3025  speedup is 0.52
 <-SRV:Completed submission of all tests
-<-CMD:cd /tmp/geoff/texttest.ec2cloud.gui.24Jan154337.23565/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/KillTests/texttesttmp/dynamic_gui.24Jan154340.23664/slavelogs; ssh -q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 -A ec2-user@10.80.17.126 /users/geoff/work/master/Testing/TextTest/site/bin/texttest -d /tmp/geoff/texttest.ec2cloud.gui.24Jan154337.23565/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/KillTests/TargetApp -a sleep -l -tp Basic2 -slave /tmp/geoff/texttest.ec2cloud.gui.24Jan154337.23565/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/KillTests/texttesttmp/dynamic_gui.24Jan154340.23664 -servaddr 10.67.6.216:45226 -slavefilesynch geoff@10.67.6.216
+<-CMD:cd /tmp/geoff/texttest.06Mar152618.32544/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/KillTests/texttesttmp/dynamic_gui.06Mar152724.5447/slavelogs; ssh -q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 -A ec2-user@10.80.17.126 /users/geoff/work/master/Testing/TextTest/bin/texttest.py -d /tmp/geoff/texttest.06Mar152618.32544/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/KillTests/TargetApp -a sleep -l -tp Basic2 -slave /tmp/geoff/texttest.06Mar152618.32544/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/KillTests/texttesttmp/dynamic_gui.06Mar152724.5447 -servaddr 10.67.7.142:40916 -slavefilesynch geoff@10.67.7.142
 ->OUT:Using Application SLEEP
 Running SLEEP test-suite TargetApp
   Running SLEEP test-case Basic2

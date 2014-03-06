@@ -1,5 +1,5 @@
 
----------- Window 'SLEEP tests (started at 26Apr16:44:16) - TextTest dynamic GUI' ----------
+---------- Window 'SLEEP tests (started at 05Mar14:40:06) - TextTest dynamic GUI' ----------
 Focus widget is 'Test Tree'
 
 Menu Bar : '_File' (+) , '_View' (+) , '_Actions' (+) , '_Help' (+)
@@ -8,7 +8,7 @@ Tool Bar :
   _Quit (Stock image 'gtk-quit', accelerator 'Ctrl+Q', tooltip 'Quit')
   _Kill (Stock image 'gtk-stop', greyed out, accelerator 'Ctrl+Delete', tooltip 'Kill selected tests')
   _Save (Stock image 'gtk-save', greyed out, accelerator 'Ctrl+S', tooltip 'Save results for selected tests')
-  Progress bar set to fraction 0.0, text 'All 0 tests completed at 26Apr16:44:19'
+  Progress bar set to fraction 0.0, text 'All 0 tests completed at 05Mar14:40:06'
 ...........
 
 Showing Test Tree with columns: Tests: All 0 selected , Details
@@ -22,7 +22,7 @@ Viewing page 'Status'
 Showing Test Status View with columns: Status , Number , Visible
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 26Apr16:44:19.' , Image 'throbber_inactive.png'
+'TextTest started at 05Mar14:40:06.' , Image 'throbber_inactive.png'
 --------------------------------------------------------------------------------------------
 
 Progress bar set to fraction 0.0, text '0 of 1 tests completed'
@@ -34,30 +34,21 @@ Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 1 (white,bold) | Check box (checked)
 
-Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
--> TargetApp (sleep) (black/white,bold) | (white)
-->   Test (black/grey80) | PEND (grey80)
-
-Updated : Test Status View with columns: Status , Number , Visible
--> Not started (white) | 0 (white) | Check box (checked)
--> Pending (grey80,bold) | 1 (grey80,bold) | Check box (checked)
-
-Progress bar set to fraction 1.0, text 'All 1 tests completed at 26Apr16:44:37'
+Progress bar set to fraction 1.0, text 'All 1 tests completed at 05Mar14:40:06'
 
 Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
 -> TargetApp (sleep) (black/white,bold) | (white)
-->   Test (black/salmon) | SGE job exited (salmon)
+->   Test (black/salmon) | NOT SUBMITTED (salmon)
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white) | 0 (white) | Check box (checked)
--> Pending (white) | 0 (white) | Check box (checked)
 -> Failed (salmon,bold) | 1 (salmon,bold) | Check box (checked)
 ->   Unrunnable (salmon,bold) | 1 (salmon,bold) | Check box (checked)
-->     SGE job exited (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->     NOT SUBMITTED (salmon,bold) | 1 (salmon,bold) | Check box (checked)
 
 Changed selection in Test Tree with columns: Tests: All 1 selected, none hidden , Details
 -> TargetApp (sleep) (black/white,bold) | (white)
-->   Test (black/salmon) | SGE job exited (salmon)   ***
+->   Test (black/salmon) | NOT SUBMITTED (salmon)   ***
 
 Current page changed in Notebook with tabs: Test , Status , Selection , Run Info
 Viewing page 'Test'
@@ -71,54 +62,8 @@ Showing File Tree with columns: Test , Details
 
 ========== Text Info ==========
 Test could not be run :
-SGE job exited
----------- Error messages written by SGE Proxy job ----------
-Unable to run job: unknown resource "no_such_resource".
-Exiting.
----------- Full accounting info from SGE ----------
-==============================================================
-qname        short               
-hostname     lissadell.got.jeppesensystems.com
-group        carm                
-owner        geoff               
-project      NONE                
-department   defaultdepartment   
-jobname      Proxy-Test-SLEEP    
-jobnumber    6264977             
-taskid       undefined
-account      sge                 
-priority     0                   
-qsub_time    Thu Apr 26 15:46:10 2012
-start_time   Thu Apr 26 15:46:12 2012
-end_time     Thu Apr 26 15:46:14 2012
-granted_pe   NONE                
-slots        1                   
-failed       0    
-exit_status  0                   
-ru_wallclock 2            
-ru_utime     0.348        
-ru_stime     0.334        
-ru_maxrss    0                   
-ru_ixrss     0                   
-ru_ismrss    0                   
-ru_idrss     0                   
-ru_isrss     0                   
-ru_minflt    93239               
-ru_majflt    11                  
-ru_nswap     0                   
-ru_inblock   1208                
-ru_oublock   0                   
-ru_msgsnd    0                   
-ru_msgrcv    0                   
-ru_nsignals  0                   
-ru_nvcsw     3341                
-ru_nivcsw    562                 
-cpu          0.682        
-mem          0.005             
-io           0.000             
-iow          0.000             
-maxvmem      257.512M
-arid         undefined
+Failed to submit to SGE (Unable to run job: Job was rejected because job requests unknown queue "normal".)
+Submission command was 'qsub -N Proxy-Test-SLEEP -q normal -l short,osversion=RHEL4 -w e -notify -m n -cwd -b y -v DISPLAY,TEXTTEST_SUBMIT_COMMAND_ARGS -o /dev/null -e /dev/null ... '
 ===============================
 
 Expected application event 'completion of test actions' occurred, proceeding.

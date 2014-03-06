@@ -1,5 +1,5 @@
 
----------- Window 'SLEEP tests (started at 09Jun14:04:19) - TextTest dynamic GUI' ----------
+---------- Window 'SLEEP tests (started at 05Mar12:17:07) - TextTest dynamic GUI' ----------
 Focus widget is 'Test Tree'
 
 Menu Bar : '_File' (+) , '_View' (+) , '_Actions' (+) , '_Help' (+)
@@ -8,7 +8,7 @@ Tool Bar :
   _Quit (Stock image 'gtk-quit', accelerator 'Ctrl+Q', tooltip 'Quit')
   _Kill (Stock image 'gtk-stop', greyed out, accelerator 'Ctrl+Delete', tooltip 'Kill selected tests')
   _Save (Stock image 'gtk-save', greyed out, accelerator 'Ctrl+S', tooltip 'Save results for selected tests')
-  Progress bar set to fraction 0.0, text 'All 0 tests completed at 09Jun14:04:24'
+  Progress bar set to fraction 0.0, text 'All 0 tests completed at 05Mar12:17:07'
 ...........
 
 Showing Test Tree with columns: Tests: All 0 selected , Details
@@ -22,7 +22,7 @@ Viewing page 'Status'
 Showing Test Status View with columns: Status , Number , Visible
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 09Jun14:04:24.' , Image 'throbber_inactive.png'
+'TextTest started at 05Mar12:17:07.' , Image 'throbber_inactive.png'
 --------------------------------------------------------------------------------------------
 
 Progress bar set to fraction 0.0, text '0 of 1 tests completed'
@@ -53,7 +53,7 @@ Updated : Test Status View with columns: Status , Number , Visible
 
 Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
 -> TargetApp (sleep) (black/white,bold) | (white)
-->   Test (black/LightGoldenrod1) | RUN (geita) (LightGoldenrod1)
+->   Test (black/LightGoldenrod1) | RUN (gotpopt47) (LightGoldenrod1)
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white) | 0 (white) | Check box (checked)
@@ -72,10 +72,11 @@ Updated : Test Status View with columns: Status , Number , Visible
 -> Running (white) | 0 (white) | Check box (checked)
 -> Final filter (LightGoldenrod1,bold) | 1 (LightGoldenrod1,bold) | Check box (checked)
 
-Progress bar set to fraction 1.0, text 'All 1 tests completed at 09Jun14:04:26'
+Progress bar set to fraction 1.0, text 'All 1 tests completed at 05Mar12:17:07'
 
 Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
--> TargetApp (sleep) (black/white,bold) | All 1 tests successful (DarkSeaGreen2)
+-> TargetApp (sleep) (black/white,bold) | (white)
+->   Test (black/salmon) | output different (salmon)
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white) | 0 (white) | Check box (checked)
@@ -83,13 +84,44 @@ Updated : Test Status View with columns: Status , Number , Visible
 -> Initial filter (white) | 0 (white) | Check box (checked)
 -> Running (white) | 0 (white) | Check box (checked)
 -> Final filter (white) | 0 (white) | Check box (checked)
--> Succeeded (DarkSeaGreen2,bold) | 1 (DarkSeaGreen2,bold) | Check box (checked)
+-> Failed (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->   Differences (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->     output different (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+
+No longer greyed out : _Save
+
+Changed selection in Test Tree with columns: Tests: All 1 selected, none hidden , Details
+-> TargetApp (sleep) (black/white,bold) | (white)
+->   Test (black/salmon) | output different (salmon)   ***
+
+Current page changed in Notebook with tabs: Test , Status , Selection , Run Info
+Viewing page 'Test'
+...........
+
+Showing File Tree with columns: Test , Details
+-> Comparison Files (bold)
+->   errors.sleep (DarkSeaGreen2) | (DarkSeaGreen2)
+->   output.sleep (salmon) | (salmon)
+
+------------------------------ (horizontal pane separator)
+...........
+
+========== Text Info ==========
+Test FAILED on gotpopt47 :
+---------- Differences in output ----------
+1,2c1,2
+< Test on geita with arg -testarg
+< Proxy on lissadell with arg -proxyarg
+---
+> Test on gotpopt47 with arg -testarg
+> Proxy on cascavel with arg -proxyarg
+===============================
 
 Expected application event 'completion of test actions' occurred, proceeding.
 
 'view options for' event created with arguments 'Run Info'
 
-Current page changed in Notebook with tabs: Status , Selection , Run Info
+Current page changed in Notebook with tabs: Test , Status , Selection , Run Info
 Viewing page 'Run Info'
 ...........
 
@@ -97,19 +129,39 @@ Viewing page 'Run Info'
 Application name : SLEEP
 Version          : 
 Number of tests  : 1
-Executable       : /carm/proj/texttest-tmp/geoff/dynamic_gui.09Jun140245.14502/texttest.sge.gui/QueueSystems/NormalOperation/GUI/ProxySubmission/UseProxy/TargetApp/writehosts.py
+Executable       : /tmp/geoff/texttest.sge.gui.05Mar121705.17219/texttest.sge.gui/QueueSystems/NormalOperation/GUI/ProxySubmission/UseProxy/TargetApp/writehosts.py
 
-Command line     : /users/geoff/work/master/Testing/TextTest/bin/texttest.py --vanilla site
+Command line     : /users/geoff/work/master/Testing/TextTest/bin/texttest.py --vanilla site -keeptmp
 
-Start time       : 09Jun14:04:19
-End time         : 09Jun14:04:26
+Start time       : 05Mar12:17:07
+End time         : 05Mar12:17:07
 ==============================
 
 ------------------------------ (horizontal pane separator)
 ...........
 
 ========== Test Run Info ==========
-Selected test  : none
+Selected test  : Test
+
+Start time       : 05Mar12:17:07
+End time         : 05Mar12:17:07
+
+Description:
+<No description provided>
+
+Command Line   : python /tmp/geoff/texttest.sge.gui.05Mar121705.17219/texttest.sge.gui/QueueSystems/NormalOperation/GUI/ProxySubmission/UseProxy/TargetApp/writehosts.py -testarg
+
+Environment variables :
+PATH=/tmp/geoff/texttest.sge.gui.05Mar121705.17219/texttest.sge.gui/QueueSystems/NormalOperation/GUI/ProxySubmission/UseProxy/texttesttmp/console.05Mar121707.17226/sleep/Test:/tmp/geoff/texttest.sge.gui.05Mar121705.17219/texttest.sge.gui/QueueSystems/NormalOperation/GUI/ProxySubmission/UseProxy/traffic_intercepts:/tmp/geoff/texttest.sge.gui.05Mar121705.17219/texttest.sge.gui/QueueSystems/NormalOperation/GUI/ProxySubmission/UseProxy:/users/geoff/bin:/carm/proj/texttest/release/current/site/bin:/usr/local/share/uge8.1.4/bin/lx-amd64:/users/geoff/bin:/carm/proj/texttest/release/current/site/bin:/usr/lib64/qt-3.3/bin:/carm/rational/releases/PurifyPlus.7.0.1.0-002/i386_linux2/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/texttest/site/bin:/usr/local/share/java/apache-maven-3.0.5/bin:/usr/X11R6/bin
+TEXTTEST_LOG_DIR=/tmp/geoff/texttest.sge.gui.05Mar121705.17219/texttest.sge.gui/QueueSystems/NormalOperation/GUI/ProxySubmission/UseProxy/texttesttmp/console.05Mar121707.17226/sleep/Test
+TEXTTEST_ROOT=/tmp/geoff/texttest.sge.gui.05Mar121705.17219/texttest.sge.gui/QueueSystems/NormalOperation/GUI/ProxySubmission/UseProxy/TargetApp
+TEXTTEST_SANDBOX=/tmp/geoff/texttest.sge.gui.05Mar121705.17219/texttest.sge.gui/QueueSystems/NormalOperation/GUI/ProxySubmission/UseProxy/texttesttmp/console.05Mar121707.17226/sleep/Test
+TEXTTEST_SANDBOX_ROOT=/tmp/geoff/texttest.sge.gui.05Mar121705.17219/texttest.sge.gui/QueueSystems/NormalOperation/GUI/ProxySubmission/UseProxy/texttesttmp/console.05Mar121707.17226
+USECASE_REPLAY_SCRIPT=
+
+SGE Proxy Command   : qsub -N Proxy-Test-SLEEP -l short,osversion=RHEL4 -w e -notify -m n -cwd -b y -o /dev/null -e /dev/null exec '$SHELL -c "exec /tmp/geoff/texttest.sge.gui.05Mar121705.17219/texttest.sge.gui/QueueSystems/NormalOperation/GUI/ProxySubmission/UseProxy/TargetApp/proxy.py -proxyarg"'
+SGE Command   : qsub -N Test-Test-SLEEP -l short,osversion=RHEL5 -w e -notify -m n -cwd -b y -o /dev/null -e /dev/null ...
+Slave Command : /users/geoff/work/master/Testing/TextTest/bin/texttest.py -d /tmp/geoff/texttest.sge.gui.05Mar121705.17219/texttest.sge.gui/QueueSystems/NormalOperation/GUI/ProxySubmission/UseProxy/TargetApp -a sleep -l -tp Test -slave /tmp/geoff/texttest.sge.gui.05Mar121705.17219/texttest.sge.gui/QueueSystems/NormalOperation/GUI/ProxySubmission/UseProxy/texttesttmp/console.05Mar121707.17226 -servaddr 10.67.19.44:44195 -keeptmp
 ===================================
 
 'quit' event created with arguments ''

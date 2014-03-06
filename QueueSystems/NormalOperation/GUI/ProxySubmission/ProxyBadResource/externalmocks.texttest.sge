@@ -1,54 +1,61 @@
-<-SRV:TextTest slave server started on 10.67.7.145:35676
-<-CMD:cd /tmp/geoff/texttest.sge.gui.20Dec105156.19982/texttest.sge.gui/QueueSystems/NormalOperation/GUI/ProxySubmission/ProxyBadResource/texttesttmp/console.20Dec105158.21902/slavelogs; qsub -N Proxy-Test-SLEEP -l short,osversion=RHEL4 -w e -notify -m n -cwd -b y -v DISPLAY,TEXTTEST_SUBMIT_COMMAND_ARGS -o Proxy-Test-SLEEP.log -e Proxy-Test-SLEEP.errors exec "$SHELL -c "exec /tmp/geoff/texttest.sge.gui.20Dec105156.19982/texttest.sge.gui/QueueSystems/NormalOperation/GUI/ProxySubmission/ProxyBadResource/TargetApp/proxy.py -proxyarg""
-->OUT:Your job 6264977 ("Proxy-Test-SLEEP") has been submitted
+<-SRV:TextTest slave server started on 10.67.19.44:47567
+<-CMD:cd /tmp/geoff/texttest.sge.gui.05Mar154655.30850/texttest.sge.gui/QueueSystems/NormalOperation/GUI/ProxySubmission/ProxyBadResource/texttesttmp/grid_core_files; env 'TEXTTEST_SUBMIT_COMMAND_ARGS=['qsub', '-sync', 'y', '-V', '-N', 'Test-Test-SLEEP', '-l', 'short,osversion=RHEL5,no_such_resource', '-w', 'e', '-notify', '-m', 'n', '-cwd', '-b', 'y', '-v', 'DISPLAY,TEXTTEST_SUBMIT_COMMAND_ARGS', '-o', '/dev/null', '-e', '/dev/null', 'exec', '$SHELL -c "exec /users/geoff/work/master/Testing/TextTest/bin/texttest.py -d /tmp/geoff/texttest.sge.gui.05Mar154655.30850/texttest.sge.gui/QueueSystems/NormalOperation/GUI/ProxySubmission/ProxyBadResource/TargetApp -a sleep -l -tp Test -slave /tmp/geoff/texttest.sge.gui.05Mar154655.30850/texttest.sge.gui/QueueSystems/NormalOperation/GUI/ProxySubmission/ProxyBadResource/texttesttmp/console.05Mar154657.30860 -servaddr 10.67.19.44:56697"']' qsub -N Proxy-Test-SLEEP -l short,osversion=RHEL4 -w e -notify -m n -cwd -b y -v DISPLAY,TEXTTEST_SUBMIT_COMMAND_ARGS -o /dev/null -e /dev/null exec "$SHELL -c "exec /tmp/geoff/texttest.sge.gui.05Mar154655.30850/texttest.sge.gui/QueueSystems/NormalOperation/GUI/ProxySubmission/ProxyBadResource/TargetApp/proxy.py -proxyarg""
+->OUT:Your job 3483100 ("Proxy-Test-SLEEP") has been submitted
 <-SRV:Completed submission of all tests
 <-CMD:qstat
-->OUT:job-ID  prior   name       user         state submit/start at     queue                          slots ja-task-ID 
------------------------------------------------------------------------------------------------------------------
-6264977 0.00000 Proxy-Test geoff        qw    04/26/2012 15:46:10                                    1        
-->FIL:slavelogs
+->OUT:job-ID  prior   name       user         state submit/start at     queue                          jclass                         slots ja-task-ID 
+------------------------------------------------------------------------------------------------------------------------------------------------
+3483100 0.00000 Proxy-Test geoff        qw    03/05/2014 15:44:51                                                                   1        
 <-CMD:qstat
-<-CMD:qacct -j 6264977
+->OUT:job-ID  prior   name       user         state submit/start at     queue                          jclass                         slots ja-task-ID 
+------------------------------------------------------------------------------------------------------------------------------------------------
+3483100 0.00000 Proxy-Test geoff        qw    03/05/2014 15:44:51                                                                   1        
+->FIL:console.05Mar154450.30690
+<-CMD:qstat
+->FIL:console.05Mar154450.30690.edit_2
+<-CMD:qacct -j 3483100
 ->OUT:==============================================================
 qname        short               
-hostname     lissadell.got.jeppesensystems.com
+hostname     cairo.got.jeppesensystems.com
 group        carm                
 owner        geoff               
 project      NONE                
 department   defaultdepartment   
 jobname      Proxy-Test-SLEEP    
-jobnumber    6264977             
+jobnumber    3483100             
 taskid       undefined
 account      sge                 
 priority     0                   
-qsub_time    Thu Apr 26 15:46:10 2012
-start_time   Thu Apr 26 15:46:12 2012
-end_time     Thu Apr 26 15:46:14 2012
+qsub_time    Wed Mar  5 15:44:51 2014
+start_time   Wed Mar  5 15:44:54 2014
+end_time     Wed Mar  5 15:44:56 2014
 granted_pe   NONE                
 slots        1                   
 failed       0    
 exit_status  0                   
 ru_wallclock 2            
-ru_utime     0.348        
-ru_stime     0.334        
+ru_utime     0.315        
+ru_stime     0.254        
 ru_maxrss    0                   
 ru_ixrss     0                   
 ru_ismrss    0                   
 ru_idrss     0                   
 ru_isrss     0                   
-ru_minflt    93239               
-ru_majflt    11                  
+ru_minflt    75811               
+ru_majflt    0                   
 ru_nswap     0                   
-ru_inblock   1208                
+ru_inblock   64                  
 ru_oublock   0                   
 ru_msgsnd    0                   
 ru_msgrcv    0                   
 ru_nsignals  0                   
-ru_nvcsw     3341                
-ru_nivcsw    562                 
-cpu          0.682        
-mem          0.005             
+ru_nvcsw     1989                
+ru_nivcsw    390                 
+cpu          0.569        
+mem          0.004             
 io           0.000             
 iow          0.000             
-maxvmem      257.512M
+maxvmem      94.625M
 arid         undefined
+jc_name      NONE
+
