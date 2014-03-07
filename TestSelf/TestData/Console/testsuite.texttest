@@ -29,7 +29,6 @@ TestPathInSubDir
 IgnoreDataChanges
 
 # Check we can ignore certain changes in the data, even if it involves new tmp directories being created
-# 
 IgnoreDataCreation
 
 # Check we pick up the right versions of the test data when appropriate
@@ -46,6 +45,9 @@ UseCopyScript
 
 # Check we can use copy_test_path_merge to form a combined list of setting by amalgamating files
 MergeDataFile
+
+# Check we can reference variables set by test_data_environment
+ReferenceDataEnvironment
 
 # Tests for different ways of handling directories
 DataDirectories
