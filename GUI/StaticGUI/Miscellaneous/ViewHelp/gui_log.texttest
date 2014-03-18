@@ -37,7 +37,7 @@ Button 'Filter' (Stock image 'gtk-find', accelerator 'Ctrl+F', tooltip 'filter t
 Button 'Reset Tab' (tooltip 'Reset all the settings in the current tab to their default values')
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 19Feb16:22:38.' , Image 'throbber_inactive.png'
+'TextTest started at 18Mar08:54:24.' , Image 'throbber_inactive.png'
 ------------------------------------------------------------------------
 
 Changing GUI status to: 'Reading tests ...'
@@ -82,7 +82,7 @@ Updated : Test Tree with columns: Tests: 0/11 selected
 ->       S01 (black/grey90)
 Updated drop-down list in 'Test-file to search' Text entry (set to 'output') (drop-down list containing ['output'])
 
-Changing GUI status to: 'Reading tests completed at 19Feb16:22:39.'
+Changing GUI status to: 'Reading tests completed at 18Mar08:54:25.'
 
 Expected application event 'all tests to be read' occurred, proceeding.
 
@@ -117,7 +117,6 @@ as a means of controlling the behaviour of that application.</i>
 Link button 'http://www.texttest.org'
 '<span size='small'>Copyright © The authors</span>
 '
----------------
 Stock Button 'gtk-close' , Button '_Versions' , Button '_License' , Stock Button 'texttest-stock-credits'
 ---------------------------------------------
 
@@ -163,7 +162,6 @@ Contributors:
     Örjan Råberg
     Matthew Baker
 =================================
----------------
 Stock Button 'gtk-close'
 -----------------------------------------------
 
@@ -192,7 +190,6 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
 Lesser General Public License for more details. This can be found
 online at http://www.opensource.org/licenses/lgpl-license.php
 =================================
----------------
 Stock Button 'gtk-close'
 -----------------------------------------------
 
@@ -214,10 +211,9 @@ Viewing table with 6 rows and 2 columns.
 '<b>You are using these installations:
 </b>'
 Viewing table with 3 rows and 2 columns.
-'Test Suite:' | '/tmp/geoff/texttest.gui.19Feb162231.768/texttest.gui/GUI/StaticGUI/Miscellaneous/ViewHelp/TargetApp'
+'Test Suite:' | '/tmp/geoff/texttest.gui.18Mar085359.79533/texttest.gui/GUI/StaticGUI/Miscellaneous/ViewHelp/TargetApp'
 'TextTest:' | '/users/geoff/work/master/Testing/TextTest'
 'Python:' | '/usr/local/tt-env/python2.6.current/bin/python'
----------------
 Stock Button 'gtk-close'
 --------------------------------------------------
 
@@ -292,7 +288,6 @@ save_filtered_file_stems:stdout
 If "something" appears more than once in the file, the filtering behaviour will behave differently on the stored file and the 
 new file, which is very confusing for users.
 =================================
----------------
 Stock Button 'gtk-close'
 -------------------------------------------------------
 
@@ -408,6 +403,8 @@ Framework Enhancements:
 	(UNIX only, naturally)
     - Section filters will not trigger on lines which match both the start and end lines now.
 	This is a backwards-incompatible change, see migration notes.
+    - Autogenerates CLASSPATH for StoryText/Eclipse applications
+	mirroring changes in latest StoryText
 Version Control Browser Enhancements:
     - Now supports Git
     - "Update" operation is now always a "centralised-style" update
@@ -421,6 +418,7 @@ Batch Report Enhancements:
 Grid Engine enhancements/bug fixes:
     - New experimental status support for EC2 Virtual Private Cloud added
 	Tests run parallel on any available cloud machines. Requires Python tool "boto". See website.
+    - Fixed race conditions on NFS-systems between grid engines and the file server
     - Fixed race condition which could lead to hanging on shutdown
 Windows installer Enhancements:
     - All files now end up under chosen location, removed hardcoded C:\virtualenv and C:\jython2.5.1
@@ -443,8 +441,11 @@ Bug Fixes:
     - Fixed stacktrace interpreting core files when GDB fails to handle them and DBX not installed
     - If performance_test_machine is set and test is not running there, don't attempt to use "time" program
     - Fixed problems with {INTERNAL writedir} filtering when test names contain a '+'
+    - Fixed java classpath for eclipse rcp applications
+    - Don't start subsequent processes if a test has been killed.
+    - Failure information dialog has scrollbars if needed
+    - Fixed bug with {CLEAR x} in options files clearing parts of what is matched
 =================================
----------------
 Stock Button 'gtk-close'
 ---------------------------------------------------
 
@@ -524,10 +525,9 @@ Viewing table with 6 rows and 2 columns.
 '<b>You are using these installations:
 </b>'
 Viewing table with 3 rows and 2 columns.
-'Test Suite:' | '/tmp/geoff/texttest.gui.19Feb162231.768/texttest.gui/GUI/StaticGUI/Miscellaneous/ViewHelp/TargetApp'
+'Test Suite:' | '/tmp/geoff/texttest.gui.18Mar085359.79533/texttest.gui/GUI/StaticGUI/Miscellaneous/ViewHelp/TargetApp'
 'TextTest:' | '/users/geoff/work/master/Testing/TextTest'
 'Python:' | '/usr/local/tt-env/python2.6.current/bin/python'
----------------
 Stock Button 'gtk-close'
 --------------------------------------------------
 
@@ -583,7 +583,6 @@ Contributors:
     Örjan Råberg
     Matthew Baker
 =================================
----------------
 Stock Button 'gtk-close'
 -----------------------------------------------
 
@@ -721,7 +720,6 @@ QueueSystems/TargetApp                     : useful for understanding the queues
 Once you've browsed these a bit and can read them, you can also use the actual self-tests to see how 
 TextTest itself works and what features it has...
 =================================
----------------
 Stock Button 'gtk-close'
 ---------------------------------------------------
 
