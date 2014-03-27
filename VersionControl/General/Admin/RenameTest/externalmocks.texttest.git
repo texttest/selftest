@@ -1,11 +1,12 @@
-<-CMD:git status --porcelain /tmp/dgalda/texttest.cvs.06Nov150258.41621/texttest.git/VersionControl/General/Admin/RenameTest/TargetApp/Test1/errors.hello
+<-CMD:git ls-files --other -i --exclude-standard /tmp/dgalda/texttest.git.27Mar093048.7735/texttest.git/VersionControl/General/Admin/RenameTest/TargetApp/Test1
+<-CMD:git status --porcelain /tmp/dgalda/texttest.git.27Mar093048.7735/texttest.git/VersionControl/General/Admin/RenameTest/TargetApp/Test1/errors.hello
 ->OUT: M TargetApp/Test1/errors.hello
-<-CMD:git mv /tmp/dgalda/texttest.cvs.06Nov150258.41621/texttest.git/VersionControl/General/Admin/RenameTest/TargetApp/Test1 /tmp/dgalda/texttest.cvs.06Nov150258.41621/texttest.git/VersionControl/General/Admin/RenameTest/TargetApp/NewName
+<-CMD:git mv /tmp/dgalda/texttest.git.27Mar093048.7735/texttest.git/VersionControl/General/Admin/RenameTest/TargetApp/Test1 /tmp/dgalda/texttest.git.27Mar093048.7735/texttest.git/VersionControl/General/Admin/RenameTest/TargetApp/NewName
 ->FIL:NewName
 ->FIL:Test1
-<-CMD:git status --porcelain /tmp/dgalda/texttest.cvs.06Nov150258.41621/texttest.git/VersionControl/General/Admin/RenameTest/TargetApp/Suite/Subsuite/Test4/errors.hello
+<-CMD:git ls-files --other -i --exclude-standard /tmp/dgalda/texttest.git.27Mar093048.7735/texttest.git/VersionControl/General/Admin/RenameTest/TargetApp/Suite/Subsuite/Test4
+->OUT:TargetApp/Suite/Subsuite/Test4/errors.hello.ignored_by_vcs
+<-CMD:git status --porcelain /tmp/dgalda/texttest.git.27Mar093048.7735/texttest.git/VersionControl/General/Admin/RenameTest/TargetApp/Suite/Subsuite/Test4/errors.hello
 ->OUT:?? TargetApp/Suite/Subsuite/Test4/errors.hello
-<-CMD:git status --porcelain /tmp/dgalda/texttest.cvs.06Nov150258.41621/texttest.git/VersionControl/General/Admin/RenameTest/TargetApp/Suite/Subsuite/Test4/errors.hello.ignored_by_vcs
-->OUT:?? TargetApp/Suite/Subsuite/Test4/errors.hello.ignored_by_vcs
-<-CMD:git status --porcelain /tmp/dgalda/texttest.cvs.06Nov150258.41621/texttest.git/VersionControl/General/Admin/RenameTest/TargetApp/Suite/Subsuite/Test4/output.hello
+<-CMD:git status --porcelain /tmp/dgalda/texttest.git.27Mar093048.7735/texttest.git/VersionControl/General/Admin/RenameTest/TargetApp/Suite/Subsuite/Test4/output.hello
 ->OUT:?? TargetApp/Suite/Subsuite/Test4/output.hello
