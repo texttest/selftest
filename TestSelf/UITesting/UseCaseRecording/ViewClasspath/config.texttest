@@ -1,6 +1,6 @@
 link_test_path:home
 link_test_path:home2
 
-#[test_data_environment]
-#home:ECLIPSE_HOME
-#[end]
+# For Windows, but can't be bothered with separate file
+[run_dependent_text]
+dynamic_gui_log:(CLASSPATH.*);{REPLACE \1:}
