@@ -1,0 +1,41 @@
+<-PYT:import xmlrpclib
+<-PYT:import urllib
+<-PYT:xmlrpclib.ServerProxy('http://www.myjirasite.com/rpc/xmlrpc')
+->RET:Instance('ServerProxy', 'serverproxy1')
+<-PYT:serverproxy1.jira1.login('texttest', 'password')
+->RET:'73b53f015e251b669a1a56a62158a83522f971b8'
+<-PYT:serverproxy1.jira1.getIssue('73b53f015e251b669a1a56a62158a83522f971b8', 'CPL-1406')
+->RET:raise Instance('Fault(Error, exceptions.Exception)', 'fault_cpl_1406')
+<-PYT:urllib.urlopen('http://www.myjirasite.com/browse/CPL-1406')
+->RET:Instance('addinfourl(addbase)', 'addinfourl1')
+<-PYT:addinfourl1.geturl()
+->RET:'https://jira.jeppesensystems.com/login.jsp?permissionViolation=true&os_destination=%2Fbrowse%2FPDTUC-367'
+<-PYT:urllib.url2pathname('https://jira.jeppesensystems.com/login.jsp?permissionViolation=true&os_destination=%2Fbrowse%2FPDTUC-367')
+->RET:'https://jira.jeppesensystems.com/login.jsp?permissionViolation=true&os_destination=/browse/PDTUC-367'
+<-PYT:xmlrpclib.ServerProxy('http://www.myjirasite.com/rpc/xmlrpc')
+->RET:Instance('ServerProxy', 'serverproxy2')
+<-PYT:serverproxy2.jira1.login('texttest', 'password')
+->RET:'24857839aee30417ad0abb97a418c590ef1cd158'
+<-PYT:serverproxy2.jira1.getIssue('24857839aee30417ad0abb97a418c590ef1cd158', 'PDTUC-367')
+->RET:{'status': '1', 'project': 'PDTUC', 'updated': '2014-03-26 13:03:32.0', 'components': [{'name': 'Default', 'id': '13235'}], 'reporter': 'geoff', 'customFieldValues': [{'values': '15/Nov/13', 'customfieldId': 'customfield_10431'}, {'values': 'System Test', 'customfieldId': 'customfield_10522'}, {'values': 'CMS', 'customfieldId': 'customfield_10381'}, {'values': '159194', 'customfieldId': 'customfield_10654'}, {'values': 'geoff', 'customfieldId': 'customfield_10560'}], 'created': '2013-11-15 08:44:50.0', 'votes': '0', 'fixVersions': [], 'priority': '4', 'assignee': 'geoff', 'key': 'PDTUC-367', 'affectsVersions': [], 'summary': 'Sample issue', 'type': '1', 'id': '220086', 'description': 'The description is a long string\nwith lots of linebreaks.\n'}
+<-PYT:serverproxy2.jira1.getStatuses('24857839aee30417ad0abb97a418c590ef1cd158')
+->RET:[{'description': 'The issue is open and ready for the assignee to start work on it.',
+  'icon': 'http://jira.atlassian.com/images/icons/status_open.gif',
+  'id': '1',
+  'name': 'Open'},
+ {'description': 'This issue is being actively worked on at the moment by the assignee.',
+  'icon': 'http://jira.atlassian.com/images/icons/status_inprogress.gif',
+  'id': '3',
+  'name': 'In Progress'},
+ {'description': 'This issue was once resolved, but the resolution was deemed incorrect. From here issues are either marked assigned or resolved.',
+  'icon': 'http://jira.atlassian.com/images/icons/status_reopened.gif',
+  'id': '4',
+  'name': 'Reopened'},
+ {'description': 'A resolution has been taken, and it is awaiting verification by reporter. From here issues are either reopened, or are closed.',
+  'icon': 'http://jira.atlassian.com/images/icons/status_resolved.gif',
+  'id': '5',
+  'name': 'Resolved'},
+ {'description': 'The issue is considered finished, the resolution is correct. Issues which are not closed can be reopened.',
+  'icon': 'http://jira.atlassian.com/images/icons/status_closed.gif',
+  'id': '6',
+  'name': 'Closed'}]
