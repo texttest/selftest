@@ -1,16 +1,6 @@
-# Testing the 'verify quit' dialog, asking about all child processes
-AllStatic
-
-# Verify quitting when xemacs and tkdiff running, close one at a time and check dialog updates
-MultipleDynamic
-
-# As MultipleDynamic but close the window instead of pressing Quit...
-# 
-MultipleDynamicCloseWindow
-
-# Verify quit, but only for texttest
-DynamicFromStatic
-
-# Use bad regular expressions as strings
-BadRegularExpression
+Basic
 RunNames
+
+# Tests that only work on Unix/Linux. In this case it's a limitation of StoryText, see TTT-3357.
+# 
+UnixOnly
