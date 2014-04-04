@@ -1,7 +1,9 @@
 # If there is a checkout not under TEXTTEST_HOME, it needs to be synchronised also. 
 # Also save changes and make sure this works.
-# 
 ExternalCheckoutSave
+
+# Make sure we can send multiple jobs to a multicore machine without re-synching
+MulticoreMachines
 
 # Ec2 slaves run on a different file system, need to transfer files back and remove everything
 # at the end
