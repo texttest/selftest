@@ -1,7 +1,7 @@
-<-CMD:ssh -q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 fake_machine1 which Xvfb
+<-CMD:ssh -q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 -x fake_machine1 which Xvfb
 ->OUT:/usr/X11R6/bin/Xvfb
 remote cmd succeeded
-<-CMD:ssh -q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 fake_machine1 /users/geoff/work/master/Testing/TextTest/site/bin/ttpython -u /users/geoff/work/master/Testing/TextTest/libexec/startXvfb.py /tmp/geoff/texttest.signals.23Apr103523.6529/texttest.signals/TestSelf/UITesting/VirtualDisplay/JobControlRemoteDisplay/texttesttmp/console.23Apr103527.6540/Xvfb
+<-CMD:ssh -q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 -x fake_machine1 /users/geoff/work/master/Testing/TextTest/site/bin/ttpython -u /users/geoff/work/master/Testing/TextTest/libexec/startXvfb.py /tmp/geoff/texttest.signals.23Apr103523.6529/texttest.signals/TestSelf/UITesting/VirtualDisplay/JobControlRemoteDisplay/texttesttmp/console.23Apr103527.6540/Xvfb
 ->OUT:3979,11907
 ->EXC:-2
-<-CMD:ssh -q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 fake_machine1 kill 11907
+<-CMD:ssh -q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 -x fake_machine1 kill 11907

@@ -1,12 +1,12 @@
-<-CMD:ssh -q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 lxfarm07.academy test -e /home/geoff/dont_remove_exists_for_selftests
-<-CMD:ssh -q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 lxfarm07.academy mkdir -p ${HOME}'/.texttest/tmp/console.19Apr165503.25419/system_under_test'
-<-CMD:ssh -q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 lxfarm07.academy test -e /tmp/geoff/texttest.19Apr165502.23502/texttest/TestSelf/RunRemotely/DifferentFilesystems/RemoteCheckout/TargetApp/hello.py
+<-CMD:ssh -q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 -x lxfarm07.academy test -e /home/geoff/dont_remove_exists_for_selftests
+<-CMD:ssh -q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 -x lxfarm07.academy mkdir -p ${HOME}'/.texttest/tmp/console.07Apr143602.18092/system_under_test'
+<-CMD:ssh -q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 -x lxfarm07.academy test -e /tmp/geoff/texttest.07Apr143555.12733/texttest/TestSelf/RunRemotely/DifferentFilesystems/RemoteCheckout/TargetApp/hello.py
 ->EXC:1
-<-CMD:scp -Crp -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 /tmp/geoff/texttest.19Apr165502.23502/texttest/TestSelf/RunRemotely/DifferentFilesystems/RemoteCheckout/TargetApp/hello.py lxfarm07.academy:${HOME}'/.texttest/tmp/console.19Apr165503.25419/system_under_test/hello.py'
-<-CMD:ssh -q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 lxfarm07.academy mkdir -p ${HOME}'/.texttest/tmp/console.19Apr165503.25419/hello/Test'
-<-CMD:scp -Crp -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 /tmp/geoff/texttest.19Apr165502.23502/texttest/TestSelf/RunRemotely/DifferentFilesystems/RemoteCheckout/texttesttmp/console.19Apr165503.25419/hello/Test/run_test.sh lxfarm07.academy:${HOME}'/.texttest/tmp/console.19Apr165503.25419/hello/Test'
-<-CMD:cd /tmp/geoff/texttest.19Apr165502.23502/texttest/TestSelf/RunRemotely/DifferentFilesystems/RemoteCheckout/texttesttmp/console.19Apr165503.25419/hello/Test; ssh -q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 lxfarm07.academy ${HOME}'/.texttest/tmp/console.19Apr165503.25419/hello/Test/run_test.sh'
+<-CMD:scp -Crp -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 /tmp/geoff/texttest.07Apr143555.12733/texttest/TestSelf/RunRemotely/DifferentFilesystems/RemoteCheckout/TargetApp/hello.py lxfarm07.academy:${HOME}'/.texttest/tmp/console.07Apr143602.18092/system_under_test/hello.py'
+<-CMD:ssh -q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 -x lxfarm07.academy mkdir -p ${HOME}'/.texttest/tmp/console.07Apr143602.18092/hello/Test'
+<-CMD:scp -Crp -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 /tmp/geoff/texttest.07Apr143555.12733/texttest/TestSelf/RunRemotely/DifferentFilesystems/RemoteCheckout/texttesttmp/console.07Apr143602.18092/hello/Test/run_test.sh lxfarm07.academy:${HOME}'/.texttest/tmp/console.07Apr143602.18092/hello/Test'
+<-CMD:cd /tmp/geoff/texttest.07Apr143555.12733/texttest/TestSelf/RunRemotely/DifferentFilesystems/RemoteCheckout/texttesttmp/console.07Apr143602.18092/hello/Test; ssh -q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 -x lxfarm07.academy ${HOME}'/.texttest/tmp/console.07Apr143602.18092/hello/Test/run_test.sh'
 ->OUT:Hello World!
-<-CMD:scp -Crp -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 lxfarm07.academy:${HOME}'/.texttest/tmp/console.19Apr165503.25419/hello/Test'/* /tmp/geoff/texttest.19Apr165502.23502/texttest/TestSelf/RunRemotely/DifferentFilesystems/RemoteCheckout/texttesttmp/console.19Apr165503.25419/hello/Test
+<-CMD:scp -Crp -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 lxfarm07.academy:${HOME}'/.texttest/tmp/console.07Apr143602.18092/hello/Test'/* /tmp/geoff/texttest.07Apr143555.12733/texttest/TestSelf/RunRemotely/DifferentFilesystems/RemoteCheckout/texttesttmp/console.07Apr143602.18092/hello/Test
 ->FIL:Test
-<-CMD:ssh -q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 lxfarm07.academy rm -rf ${HOME}/.texttest/tmp/console.19Apr165503.25419
+<-CMD:ssh -q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 -x lxfarm07.academy rm -rf ${HOME}/.texttest/tmp/console.07Apr143602.18092

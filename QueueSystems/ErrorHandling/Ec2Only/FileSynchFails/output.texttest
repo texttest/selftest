@@ -4,7 +4,7 @@ S: SLEEP test-case Basic not compared:
 Failed to synchronise files with EC2 instance with private IP address '10.80.17.112'
 Unable to contact machine 'ec2-user@10.80.17.112'.
 Make sure you have passwordless access set up correctly. The failing command was:
-ssh -q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 ec2-user@10.80.17.112 mkdir -p '/users/geoff/work/master/Testing' '/tmp/geoff/texttest.ec2cloud.11Dec164442.24427/texttest.ec2cloud/QueueSystems/ErrorHandling/Ec2Only/FileSynchFails'
+ssh -q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 -x ec2-user@10.80.17.112 mkdir -p '/users/geoff/work/master/Testing' '/tmp/geoff/texttest.ec2cloud.07Apr142111.88756/texttest.ec2cloud/QueueSystems/ErrorHandling/Ec2Only/FileSynchFails'
 
 The command produced the following output:
 mkdir: cannot create directory `/carm': Permission denied

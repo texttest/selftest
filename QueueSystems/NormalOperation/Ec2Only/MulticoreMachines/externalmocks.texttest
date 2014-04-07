@@ -1,5 +1,5 @@
 <-SRV:TextTest slave server started on 10.67.6.155:37200
-<-CMD:ssh -q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 ec2-user@10.80.17.225 mkdir -p '/users/geoff/work/master/Testing' '/tmp/geoff/texttest.ec2cloud.04Apr103535.70447/texttest.ec2cloud/QueueSystems/NormalOperation/Ec2Only/MulticoreMachines'
+<-CMD:ssh -q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 -x ec2-user@10.80.17.225 mkdir -p '/users/geoff/work/master/Testing' '/tmp/geoff/texttest.ec2cloud.04Apr103535.70447/texttest.ec2cloud/QueueSystems/NormalOperation/Ec2Only/MulticoreMachines'
 <-CMD:rsync -e "ssh -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10" -av --copy-unsafe-links --exclude-from=/users/geoff/work/master/Testing/TextTest/etc/rsync_exclude_patterns /users/geoff/work/master/Testing/TextTest ec2-user@10.80.17.225:'/users/geoff/work/master/Testing'
 ->OUT:sending incremental file list
 TextTest/
@@ -447,19 +447,19 @@ TargetApp/Basic2/options.sleep
 
 sent 5296 bytes  received 636 bytes  2372.80 bytes/sec
 total size is 3024  speedup is 0.51
-<-CMD:cd /tmp/geoff/texttest.ec2cloud.04Apr103535.70447/texttest.ec2cloud/QueueSystems/NormalOperation/Ec2Only/MulticoreMachines/texttesttmp/console.04Apr103536.70450/slavelogs; ssh -q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 -A ec2-user@10.80.17.225 /users/geoff/work/master/Testing/TextTest/bin/texttest.py -d /tmp/geoff/texttest.ec2cloud.04Apr103535.70447/texttest.ec2cloud/QueueSystems/NormalOperation/Ec2Only/MulticoreMachines/TargetApp -a sleep -l -tp Basic -slave /tmp/geoff/texttest.ec2cloud.04Apr103535.70447/texttest.ec2cloud/QueueSystems/NormalOperation/Ec2Only/MulticoreMachines/texttesttmp/console.04Apr103536.70450 -servaddr 10.67.6.155:41969 -slavefilesynch geoff@10.67.6.155
+<-CMD:cd /tmp/geoff/texttest.ec2cloud.04Apr103535.70447/texttest.ec2cloud/QueueSystems/NormalOperation/Ec2Only/MulticoreMachines/texttesttmp/console.04Apr103536.70450/slavelogs; ssh -q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 -x -A ec2-user@10.80.17.225 /users/geoff/work/master/Testing/TextTest/bin/texttest.py -d /tmp/geoff/texttest.ec2cloud.04Apr103535.70447/texttest.ec2cloud/QueueSystems/NormalOperation/Ec2Only/MulticoreMachines/TargetApp -a sleep -l -tp Basic -slave /tmp/geoff/texttest.ec2cloud.04Apr103535.70447/texttest.ec2cloud/QueueSystems/NormalOperation/Ec2Only/MulticoreMachines/texttesttmp/console.04Apr103536.70450 -servaddr 10.67.6.155:41969 -slavefilesynch geoff@10.67.6.155
 ->OUT:Using Application SLEEP
 Running SLEEP test-suite TargetApp
   Running SLEEP test-case Basic
 Comparing differences for SLEEP test-suite TargetApp
   Comparing differences for SLEEP test-case Basic - SUCCESS! (on errors.sleep,output.sleep)
-<-CMD:cd /tmp/geoff/texttest.ec2cloud.04Apr103535.70447/texttest.ec2cloud/QueueSystems/NormalOperation/Ec2Only/MulticoreMachines/texttesttmp/console.04Apr103536.70450/slavelogs; ssh -q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 -A ec2-user@10.80.17.225 /users/geoff/work/master/Testing/TextTest/bin/texttest.py -d /tmp/geoff/texttest.ec2cloud.04Apr103535.70447/texttest.ec2cloud/QueueSystems/NormalOperation/Ec2Only/MulticoreMachines/TargetApp -a sleep.copy_1 -l -tp Basic -slave /tmp/geoff/texttest.ec2cloud.04Apr103535.70447/texttest.ec2cloud/QueueSystems/NormalOperation/Ec2Only/MulticoreMachines/texttesttmp/console.04Apr103536.70450 -servaddr 10.67.6.155:41969 -slavefilesynch geoff@10.67.6.155
+<-CMD:cd /tmp/geoff/texttest.ec2cloud.04Apr103535.70447/texttest.ec2cloud/QueueSystems/NormalOperation/Ec2Only/MulticoreMachines/texttesttmp/console.04Apr103536.70450/slavelogs; ssh -q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 -x -A ec2-user@10.80.17.225 /users/geoff/work/master/Testing/TextTest/bin/texttest.py -d /tmp/geoff/texttest.ec2cloud.04Apr103535.70447/texttest.ec2cloud/QueueSystems/NormalOperation/Ec2Only/MulticoreMachines/TargetApp -a sleep.copy_1 -l -tp Basic -slave /tmp/geoff/texttest.ec2cloud.04Apr103535.70447/texttest.ec2cloud/QueueSystems/NormalOperation/Ec2Only/MulticoreMachines/texttesttmp/console.04Apr103536.70450 -servaddr 10.67.6.155:41969 -slavefilesynch geoff@10.67.6.155
 ->OUT:Using Application SLEEP, version copy_1
 Running SLEEP.copy_1 test-suite TargetApp
   Running SLEEP.copy_1 test-case Basic
 Comparing differences for SLEEP.copy_1 test-suite TargetApp
   Comparing differences for SLEEP.copy_1 test-case Basic - SUCCESS! (on errors.sleep,output.sleep)
-<-CMD:ssh -q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 ec2-user@10.80.17.161 mkdir -p '/users/geoff/work/master/Testing' '/tmp/geoff/texttest.ec2cloud.04Apr103535.70447/texttest.ec2cloud/QueueSystems/NormalOperation/Ec2Only/MulticoreMachines'
+<-CMD:ssh -q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 -x ec2-user@10.80.17.161 mkdir -p '/users/geoff/work/master/Testing' '/tmp/geoff/texttest.ec2cloud.04Apr103535.70447/texttest.ec2cloud/QueueSystems/NormalOperation/Ec2Only/MulticoreMachines'
 ->CLI:1625
 sleep:Basic
 (idefault.rundependent
@@ -1466,7 +1466,7 @@ TargetApp/Basic2/options.sleep
 sent 5296 bytes  received 636 bytes  2372.80 bytes/sec
 total size is 3024  speedup is 0.51
 <-SRV:Completed submission of all tests
-<-CMD:cd /tmp/geoff/texttest.ec2cloud.04Apr103535.70447/texttest.ec2cloud/QueueSystems/NormalOperation/Ec2Only/MulticoreMachines/texttesttmp/console.04Apr103536.70450/slavelogs; ssh -q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 -A ec2-user@10.80.17.161 /users/geoff/work/master/Testing/TextTest/bin/texttest.py -d /tmp/geoff/texttest.ec2cloud.04Apr103535.70447/texttest.ec2cloud/QueueSystems/NormalOperation/Ec2Only/MulticoreMachines/TargetApp -a sleep.copy_2 -l -tp Basic -slave /tmp/geoff/texttest.ec2cloud.04Apr103535.70447/texttest.ec2cloud/QueueSystems/NormalOperation/Ec2Only/MulticoreMachines/texttesttmp/console.04Apr103536.70450 -servaddr 10.67.6.155:41969 -slavefilesynch geoff@10.67.6.155
+<-CMD:cd /tmp/geoff/texttest.ec2cloud.04Apr103535.70447/texttest.ec2cloud/QueueSystems/NormalOperation/Ec2Only/MulticoreMachines/texttesttmp/console.04Apr103536.70450/slavelogs; ssh -q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 -x -A ec2-user@10.80.17.161 /users/geoff/work/master/Testing/TextTest/bin/texttest.py -d /tmp/geoff/texttest.ec2cloud.04Apr103535.70447/texttest.ec2cloud/QueueSystems/NormalOperation/Ec2Only/MulticoreMachines/TargetApp -a sleep.copy_2 -l -tp Basic -slave /tmp/geoff/texttest.ec2cloud.04Apr103535.70447/texttest.ec2cloud/QueueSystems/NormalOperation/Ec2Only/MulticoreMachines/texttesttmp/console.04Apr103536.70450 -servaddr 10.67.6.155:41969 -slavefilesynch geoff@10.67.6.155
 ->OUT:Using Application SLEEP, version copy_2
 Running SLEEP.copy_2 test-suite TargetApp
   Running SLEEP.copy_2 test-case Basic

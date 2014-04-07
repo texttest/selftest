@@ -1,6 +1,6 @@
 Rejected Application HELLO - Unable to contact machine 'lxfarm07.academy'.
 Make sure you have passwordless access set up correctly. The failing command was:
-ssh -q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 lxfarm07.academy echo hello
+ssh -q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 -x lxfarm07.academy echo hello
 
 The command produced the following output:
 Permission denied (publickey,gssapi-with-mic,password).
