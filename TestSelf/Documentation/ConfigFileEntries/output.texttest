@@ -103,7 +103,7 @@ performance_variation_%|{'default': 10.0}|How much variation in performance is a
 performance_variation_serious_%|{'default': 0.0}|Additional cutoff to performance_variation_% for extra highlighting
 relative_float_tolerance|{'default': 0.0}|Which relative tolerance to apply when comparing floating point values
 remote_copy_program||(UNIX) Program to use for copying files remotely, in case of non-shared file systems
-remote_program_options|{'default': '', 'rsync': "-e 'ssh -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10' -av --copy-unsafe-links --exclude-from=/users/geoff/work/master/Testing/TextTest/etc/rsync_exclude_patterns", 'ssh': '-q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10', 'scp': '-Crp -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10'}|Default options to use for particular remote shell programs
+remote_program_options|{'default': '', 'rsync': "-e 'ssh -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10' -av --copy-unsafe-links --delete --exclude-from=/users/geoff/work/master/Testing/TextTest/etc/rsync_exclude_patterns", 'ssh': '-q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10', 'scp': '-Crp -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10'}|Default options to use for particular remote shell programs
 remote_shell_program|ssh|Program to use for running commands remotely
 run_dependent_text|{'default': []}|Mapping of patterns to remove from result files
 save_filtered_file_stems|[]|Files where the filtered version should be saved rather than the SUT output

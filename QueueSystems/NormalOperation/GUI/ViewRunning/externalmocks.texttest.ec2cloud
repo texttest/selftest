@@ -1,6 +1,6 @@
-<-SRV:TextTest slave server started on 10.67.6.208:36131
-<-CMD:ssh -q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 -x ec2-user@10.80.17.112 mkdir -p '/users/geoff/work/master/Testing' '/tmp/geoff/texttest.ec2cloud.gui.28Jan165556.28102/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/ViewRunning'
-<-CMD:rsync -e "ssh -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10" -av --copy-unsafe-links --exclude-from=/users/geoff/work/master/Testing/TextTest/etc/rsync_exclude_patterns /users/geoff/work/master/Testing/TextTest ec2-user@10.80.17.112:'/users/geoff/work/master/Testing'
+<-SRV:TextTest slave server started on 10.67.7.38:56356
+<-CMD:ssh -q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 -x ec2-user@10.80.17.112 mkdir -p '/users/geoff/work/master/Testing' '/tmp/geoff/texttest.ec2cloud.gui.07Apr162429.21077/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/ViewRunning'
+<-CMD:rsync -e "ssh -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10" -av --copy-unsafe-links --delete --exclude-from=/users/geoff/work/master/Testing/TextTest/etc/rsync_exclude_patterns /users/geoff/work/master/Testing/TextTest ec2-user@10.80.17.112:'/users/geoff/work/master/Testing'
 ->OUT:sending incremental file list
 TextTest/lib/default/
 TextTest/lib/default/__init__.py
@@ -8,7 +8,7 @@ TextTest/lib/default/__init__.py
 sent 11375 bytes  received 819 bytes  8129.33 bytes/sec
 total size is 6291244  speedup is 515.93
 ->ERR:Warning: No xauth data; using fake authentication data for X11 forwarding.
-<-CMD:rsync -e "ssh -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10" -av --copy-unsafe-links --exclude-from=/users/geoff/work/master/Testing/TextTest/etc/rsync_exclude_patterns /tmp/geoff/texttest.ec2cloud.gui.28Jan165556.28102/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/ViewRunning/TargetApp ec2-user@10.80.17.112:'/tmp/geoff/texttest.ec2cloud.gui.28Jan165556.28102/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/ViewRunning'
+<-CMD:rsync -e "ssh -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10" -av --copy-unsafe-links --delete --exclude-from=/users/geoff/work/master/Testing/TextTest/etc/rsync_exclude_patterns /tmp/geoff/texttest.ec2cloud.gui.07Apr162429.21077/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/ViewRunning/TargetApp ec2-user@10.80.17.112:'/tmp/geoff/texttest.ec2cloud.gui.07Apr162429.21077/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/ViewRunning'
 ->OUT:sending incremental file list
 TargetApp/
 TargetApp/busywait.py
@@ -51,7 +51,7 @@ sent 5158 bytes  received 636 bytes  3862.67 bytes/sec
 total size is 3023  speedup is 0.52
 ->ERR:Warning: No xauth data; using fake authentication data for X11 forwarding.
 <-SRV:Completed submission of all tests
-<-CMD:cd /tmp/geoff/texttest.ec2cloud.gui.28Jan165556.28102/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/ViewRunning/texttesttmp/sleep.killing2.28Jan165559.28132/slavelogs; ssh -q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 -x -A ec2-user@10.80.17.112 /users/geoff/work/master/Testing/TextTest/site/bin/texttest -d /tmp/geoff/texttest.ec2cloud.gui.28Jan165556.28102/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/ViewRunning/TargetApp -a sleep.killing2 -l -tp Basic -slave /tmp/geoff/texttest.ec2cloud.gui.28Jan165556.28102/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/ViewRunning/texttesttmp/sleep.killing2.28Jan165559.28132 -servaddr 10.67.6.208:49747 -slavefilesynch geoff@10.67.6.208
+<-CMD:cd /tmp/geoff/texttest.ec2cloud.gui.07Apr162429.21077/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/ViewRunning/texttesttmp/sleep.killing2.07Apr162433.26202/slavelogs; ssh -q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 -x -A ec2-user@10.80.17.112 /users/geoff/work/master/Testing/TextTest/bin/texttest.py -d /tmp/geoff/texttest.ec2cloud.gui.07Apr162429.21077/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/ViewRunning/TargetApp -a sleep.killing2 -l -tp Basic -slave /tmp/geoff/texttest.ec2cloud.gui.07Apr162429.21077/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/ViewRunning/texttesttmp/sleep.killing2.07Apr162433.26202 -servaddr 10.67.7.38:33273 -slavefilesynch geoff@10.67.7.38
 ->OUT:Using Application SLEEP, version killing2
 Running SLEEP.killing2 test-suite TargetApp
   Running SLEEP.killing2 test-case Basic
@@ -139,7 +139,7 @@ p17
 S'start'
 p18
 sb.
-<-CMD:rsync -e "ssh -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10" -av --copy-unsafe-links --exclude-from=/users/geoff/work/master/Testing/TextTest/etc/rsync_exclude_patterns ec2-user@10.80.17.112:'/tmp/geoff/texttest.ec2cloud.gui.28Jan165556.28102/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/ViewRunning/texttesttmp/sleep.killing2.28Jan165559.28132/sleep.killing2/Basic'/* /tmp/geoff/texttest.ec2cloud.gui.28Jan165556.28102/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/ViewRunning/texttesttmp/sleep.killing2.28Jan165559.28132/sleep.killing2/Basic
+<-CMD:rsync -e "ssh -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10" -av --copy-unsafe-links --delete --exclude-from=/users/geoff/work/master/Testing/TextTest/etc/rsync_exclude_patterns ec2-user@10.80.17.112:'/tmp/geoff/texttest.ec2cloud.gui.07Apr162429.21077/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/ViewRunning/texttesttmp/sleep.killing2.07Apr162433.26202/sleep.killing2/Basic'/* /tmp/geoff/texttest.ec2cloud.gui.07Apr162429.21077/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/ViewRunning/texttesttmp/sleep.killing2.07Apr162433.26202/sleep.killing2/Basic
 ->FIL:Basic
 ->OUT:receiving incremental file list
 errors.sleep

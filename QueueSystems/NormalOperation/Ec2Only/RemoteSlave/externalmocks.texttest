@@ -1,4 +1,4 @@
-<-CLI:121499
+<-CLI:26193
 sleep:Basic2
 (idefault.rundependent
 Filtering
@@ -10,7 +10,7 @@ S'initial_filter'
 p4
 sS'freeText'
 p5
-S'Filtering stored result files on lushoto'
+S'Filtering stored result files on seronera'
 p6
 sS'started'
 p7
@@ -24,7 +24,7 @@ S''
 sS'executionHosts'
 p10
 (lp11
-S'lushoto'
+S'seronera'
 p12
 asS'observers'
 p13
@@ -37,7 +37,7 @@ p16
 S'start initial filtering'
 p17
 sb.
-<-CLI:121499
+<-CLI:26193
 sleep:Basic2
 (idefault.runtest
 Running
@@ -49,7 +49,7 @@ S'running'
 p4
 sS'freeText'
 p5
-S'Running on lushoto'
+S'Running on seronera'
 p6
 sS'started'
 p7
@@ -59,12 +59,12 @@ p8
 I0
 sS'briefText'
 p9
-S'RUN (lushoto)'
+S'RUN (seronera)'
 p10
 sS'executionHosts'
 p11
 (lp12
-S'lushoto'
+S'seronera'
 p13
 asS'observers'
 p14
@@ -77,7 +77,7 @@ p17
 S'start'
 p18
 sb.
-<-CLI:121499
+<-CLI:26193
 sleep:Basic2
 (idefault.rundependent
 Filtering
@@ -89,7 +89,7 @@ S'final_filter'
 p4
 sS'freeText'
 p5
-S'Filtering and comparing newly generated result files on lushoto'
+S'Filtering and comparing newly generated result files on seronera'
 p6
 sS'started'
 p7
@@ -103,7 +103,7 @@ S''
 sS'executionHosts'
 p10
 (lp11
-S'lushoto'
+S'seronera'
 p12
 asS'observers'
 p13
@@ -116,9 +116,9 @@ p16
 S'start final filtering and comparison'
 p17
 sb.
-<-CMD:cd /tmp/geoff/texttest.sge.05Mar103723.117773/texttest.ec2cloud/QueueSystems/NormalOperation/Ec2Only/RemoteSlave/texttesttmp/console.05Mar103732.121499/slavelogs; rsync -e "ssh -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10" -av --copy-unsafe-links --exclude-from=/users/geoff/work/master/Testing/TextTest/etc/rsync_exclude_patterns /tmp/geoff/texttest.sge.05Mar103723.117773/texttest.ec2cloud/QueueSystems/NormalOperation/Ec2Only/RemoteSlave/texttesttmp/console.05Mar103732.121499/sleep/Basic2 ec2-user@10.80.17.112:'/tmp/geoff/texttest.sge.05Mar103723.117773/texttest.ec2cloud/QueueSystems/NormalOperation/Ec2Only/RemoteSlave/texttesttmp/console.05Mar103732.121499/sleep'
+<-CMD:cd /tmp/geoff/texttest.ec2cloud.07Apr162429.20998/texttest.ec2cloud/QueueSystems/NormalOperation/Ec2Only/RemoteSlave/texttesttmp/console.07Apr162432.26193/slavelogs; rsync -e "ssh -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10" -av --copy-unsafe-links --delete --exclude-from=/users/geoff/work/master/Testing/TextTest/etc/rsync_exclude_patterns /tmp/geoff/texttest.ec2cloud.07Apr162429.20998/texttest.ec2cloud/QueueSystems/NormalOperation/Ec2Only/RemoteSlave/texttesttmp/console.07Apr162432.26193/sleep/Basic2 ec2-user@10.80.17.112:'/tmp/geoff/texttest.ec2cloud.07Apr162429.20998/texttest.ec2cloud/QueueSystems/NormalOperation/Ec2Only/RemoteSlave/texttesttmp/console.07Apr162432.26193/sleep'
 ->OUT:sending incremental file list
-<-CLI:121499
+<-CLI:26193
 sleep:Basic2
 (idefault.comparetest
 TestComparison
@@ -152,14 +152,14 @@ S''
 sS'executionHosts'
 p15
 (lp16
-S'lushoto'
+S'seronera'
 p17
 asS'observers'
 p18
 (lp19
 sS'appAbsPath'
 p20
-S'/tmp/geoff/texttest.sge.05Mar103723.117773/texttest.ec2cloud/QueueSystems/NormalOperation/Ec2Only/RemoteSlave/TargetApp'
+S'/tmp/geoff/texttest.ec2cloud.07Apr162429.20998/texttest.ec2cloud/QueueSystems/NormalOperation/Ec2Only/RemoteSlave/TargetApp'
 p21
 sS'allResults'
 p22
@@ -173,7 +173,7 @@ p26
 S''
 sS'tmpFile'
 p27
-S'/tmp/geoff/texttest.sge.05Mar103723.117773/texttest.ec2cloud/QueueSystems/NormalOperation/Ec2Only/RemoteSlave/texttesttmp/console.05Mar103732.121499/sleep/Basic2/errors.sleep'
+S'/tmp/geoff/texttest.ec2cloud.07Apr162429.20998/texttest.ec2cloud/QueueSystems/NormalOperation/Ec2Only/RemoteSlave/texttesttmp/console.07Apr162432.26193/sleep/Basic2/errors.sleep'
 p28
 sS'severity'
 p29
@@ -202,7 +202,7 @@ p38
 I30
 sbsS'tmpCmpFile'
 p39
-S'/tmp/geoff/texttest.sge.05Mar103723.117773/texttest.ec2cloud/QueueSystems/NormalOperation/Ec2Only/RemoteSlave/texttesttmp/console.05Mar103732.121499/sleep/Basic2/framework_tmp/errors.sleepcmp'
+S'/tmp/geoff/texttest.ec2cloud.07Apr162429.20998/texttest.ec2cloud/QueueSystems/NormalOperation/Ec2Only/RemoteSlave/texttesttmp/console.07Apr162432.26193/sleep/Basic2/framework_tmp/errors.sleepcmp'
 p40
 sS'textDiffTool'
 p41
@@ -226,7 +226,7 @@ g26
 S'Sleeping for 5 seconds...\nDone\n'
 p49
 sg27
-S'/tmp/geoff/texttest.sge.05Mar103723.117773/texttest.ec2cloud/QueueSystems/NormalOperation/Ec2Only/RemoteSlave/texttesttmp/console.05Mar103732.121499/sleep/Basic2/output.sleep'
+S'/tmp/geoff/texttest.ec2cloud.07Apr162429.20998/texttest.ec2cloud/QueueSystems/NormalOperation/Ec2Only/RemoteSlave/texttesttmp/console.07Apr162432.26193/sleep/Basic2/output.sleep'
 p50
 sg29
 I1
@@ -268,7 +268,7 @@ S'complete'
 p58
 sS'appWriteDir'
 p59
-S'/tmp/geoff/texttest.sge.05Mar103723.117773/texttest.ec2cloud/QueueSystems/NormalOperation/Ec2Only/RemoteSlave/texttesttmp/console.05Mar103732.121499'
+S'/tmp/geoff/texttest.ec2cloud.07Apr162429.20998/texttest.ec2cloud/QueueSystems/NormalOperation/Ec2Only/RemoteSlave/texttesttmp/console.07Apr162432.26193'
 p60
 sS'newResults'
 p61
