@@ -9,5 +9,8 @@ MulticoreMachines
 # at the end
 RemoteSlave
 
+# Ec2 slaves run on a different file system, need to try to fetch required file data if it can't be found
+RemoteSlaveFetchRequiredData
+
 # Multicore EC2 instances might have to ignore some files from another slave...
 RemoteSlaveFilesFromOtherSlave
