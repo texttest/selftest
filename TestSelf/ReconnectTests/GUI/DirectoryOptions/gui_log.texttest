@@ -37,7 +37,7 @@ Button 'Filter' (Stock image 'gtk-find', accelerator 'Ctrl+F', tooltip 'filter t
 Button 'Reset Tab' (tooltip 'Reset all the settings in the current tab to their default values')
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 18Mar08:54:06.' , Image 'throbber_inactive.png'
+'TextTest started at 29Apr09:24:22.' , Image 'throbber_inactive.png'
 --------------------------------------------------------------------------
 
 Changing GUI status to: 'Reading tests ...'
@@ -49,7 +49,7 @@ Updated : Test Tree with columns: Tests: 0/1 selected
 ->   Test (black/grey90)
 Updated drop-down list in 'Test-file to search' Text entry (set to 'errors') (drop-down list containing ['errors', 'output'])
 
-Changing GUI status to: 'Reading tests completed at 18Mar08:54:06.'
+Changing GUI status to: 'Reading tests completed at 29Apr09:24:23.'
 
 Expected application event 'all tests to be read' occurred, proceeding.
 
@@ -85,22 +85,26 @@ Test
 
 'reconnect to previously run tests' event created with arguments ''
 
+Waiting for application event 'file chooser to read file system' to occur.
+
 ---------- Dialog 'Reconnect to previously run tests' ----------
 Default widget is 'gtk-ok'
 'Version to reconnect to:'
 Text entry
 .....'Temporary result directory:' (tooltip 'Specify a directory containing temporary texttest results. The reconnection will use a random subdirectory matching the version used.')......
 
-Showing File Chooser for 'Reconnect to previously run tests' (selected '/tmp/geoff/texttest.gui.18Mar085359.79666/texttest.gui/TestSelf/ReconnectTests/GUI/DirectoryOptions/TargetApp')
+Showing File Chooser for 'Reconnect to previously run tests' (selected '/tmp/geoff/texttest.gui.29Apr092420.114075/texttest.gui/TestSelf/ReconnectTests/GUI/DirectoryOptions/TargetApp')
 Shortcut folders (3) :
-- /tmp/geoff/texttest.gui.18Mar085359.79666/texttest.gui/TestSelf/ReconnectTests/GUI/DirectoryOptions/TargetApp
-- /tmp/geoff/texttest.gui.18Mar085359.79666/texttest.gui/TestSelf/ReconnectTests/GUI/DirectoryOptions/texttesttmp
-- /tmp/geoff/texttest.gui.18Mar085359.79666/texttest.gui/TestSelf/ReconnectTests/GUI/DirectoryOptions/personaldir
+- /tmp/geoff/texttest.gui.29Apr092420.114075/texttest.gui/TestSelf/ReconnectTests/GUI/DirectoryOptions/TargetApp
+- /tmp/geoff/texttest.gui.29Apr092420.114075/texttest.gui/TestSelf/ReconnectTests/GUI/DirectoryOptions/personaldir
+- /tmp/geoff/texttest.gui.29Apr092420.114075/texttest.gui/TestSelf/ReconnectTests/GUI/DirectoryOptions/texttesttmp
 .....'Recomputation'......
 Radio button 'Display results exactly as they were in the original run' (checked)
 Radio button 'Use raw data from the original run, but recompute run-dependent text, known bug information etc.'
 Stock Button 'gtk-ok' , Stock Button 'gtk-cancel'
 ----------------------------------------------------------------
+
+Expected application event 'file chooser to read file system' occurred, proceeding.
 
 'press cancel' event created with arguments ''
 

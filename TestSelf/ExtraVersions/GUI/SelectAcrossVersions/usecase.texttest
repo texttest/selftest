@@ -3,8 +3,10 @@ set test selection to Common,Base,Extra1
 run selected tests
 wait for dynamic GUI to be closed
 load test selection from file
+wait for file chooser to read file system
 press load
 save selected tests in file
+wait for file chooser to read file system
 enter filter-file name = filter1
 press save
 quit

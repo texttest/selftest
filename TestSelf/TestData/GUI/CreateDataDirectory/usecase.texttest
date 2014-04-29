@@ -3,12 +3,14 @@ set test selection to Test2
 set file selection to Data Files
 view actions for file Data Files
 create a new file or directory, possibly by copying it
+wait for file chooser to read file system
 enter type of file/directory to create = datadir
 choose create a new directory
 press create
 set file selection to datadir
 view actions for file datadir
 create a new file or directory, possibly by copying it
+wait for file chooser to read file system
 press create
 wait for file editing operations to complete
 quit

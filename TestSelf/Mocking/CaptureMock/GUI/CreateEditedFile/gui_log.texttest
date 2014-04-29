@@ -37,7 +37,7 @@ Button 'Filter' (Stock image 'gtk-find', accelerator 'Ctrl+F', tooltip 'filter t
 Button 'Reset Tab' (tooltip 'Reset all the settings in the current tab to their default values')
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 18Mar08:54:16.' , Image 'throbber_inactive.png'
+'TextTest started at 29Apr09:24:24.' , Image 'throbber_inactive.png'
 -------------------------------------------------------------------------
 
 Changing GUI status to: 'Reading tests ...'
@@ -52,7 +52,7 @@ Updated : Test Tree with columns: Tests: 0/2 selected
 ->   NameMismatch (black/grey90)
 Updated drop-down list in 'Test-file to search' Text entry (set to 'traffic') (drop-down list containing ['traffic', '----------', 'catalogue', 'editedfile', 'editedfile2', 'editedfile3', 'errors', 'output'])
 
-Changing GUI status to: 'Reading tests completed at 18Mar08:54:16.'
+Changing GUI status to: 'Reading tests completed at 29Apr09:24:24.'
 
 Expected application event 'all tests to be read' occurred, proceeding.
 
@@ -123,6 +123,8 @@ Changed selection in File Tree with columns: Test
 
 'create a new file or directory, possibly by copying it' event created with arguments ''
 
+Waiting for application event 'file chooser to read file system' to occur.
+
 ---------- Dialog 'Create/Import Files and Directories' ----------
 Default widget is 'gtk-ok'
 '<b><u>Create or import files in test subdirectory 'file_edits'</u></b>
@@ -139,11 +141,13 @@ Radio button 'Create a new file'
 Radio button 'Create a new directory'
 .....'Source to copy from:'......
 
-Showing Source File Chooser (selected '/tmp/geoff/texttest.gui.18Mar085359.80432/texttest.gui/TestSelf/Mocking/CaptureMock/GUI/CreateEditedFile/TargetApp/NameMismatch')
+Showing Source File Chooser (selected '/tmp/geoff/texttest.gui.29Apr092421.22839/texttest.gui/TestSelf/Mocking/CaptureMock/GUI/CreateEditedFile/TargetApp/NameMismatch')
 Shortcut folders (1) :
-- /tmp/geoff/texttest.gui.18Mar085359.80432/texttest.gui/TestSelf/Mocking/CaptureMock/GUI/CreateEditedFile/TargetApp
+- /tmp/geoff/texttest.gui.29Apr092421.22839/texttest.gui/TestSelf/Mocking/CaptureMock/GUI/CreateEditedFile/TargetApp
 Stock Button 'gtk-ok' , Stock Button 'gtk-cancel'
 ------------------------------------------------------------------
+
+Expected application event 'file chooser to read file system' occurred, proceeding.
 
 'enter type of file/directory to create =' event created with arguments 'foobar'
 Edited 'Type of file/directory to create' Text entry (set to 'foobar')
