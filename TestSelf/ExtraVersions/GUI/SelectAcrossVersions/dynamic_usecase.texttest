@@ -4,6 +4,7 @@ set test selection to Common under TargetApp (hello.extra2)
 show test suite TargetApp (hello.extra1)
 set test selection to Common under TargetApp (hello.extra2),Extra1
 save selected tests in file
+wait for file chooser to read file system
 enter filter-file name = two
 press save
 quit
