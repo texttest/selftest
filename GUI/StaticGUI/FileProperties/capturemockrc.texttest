@@ -1,4 +1,14 @@
 [python]
-intercepts = os.lstat,pwd,grp,time.time
+intercepts = os.lstat,pwd,grp,time.time,time.localtime
 # For windows, because datetime is a builtin module and hence it doesn't handle indirect usage via 'datetime' properly
 ignore_callers = plugins,textinfo
+alterations = posixmodule,pythonbug1820,doublebrackets,pythonbug1820_time
+
+[doublebrackets]
+match_pattern = time.struct_time\((.*)\)
+replacement = time.struct_time((\1))
+
+# Return values from os.stat and os.lstat aren't repr-eval friendly, see Python bug 1820
+[pythonbug1820_time]
+match_pattern = tm_[a-z]*=
+replacement =
