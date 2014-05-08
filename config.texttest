@@ -203,6 +203,11 @@ kill_timeout:300
 overview*:firefox
 [end]
 
+# Necessary for version control tests on ec2 cloud
+[remote_program_options]
+rsync: -e 'ssh -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10' -av --copy-unsafe-links --delete --exclude ".bzr/" --exclude "*.pyc" --exclude ".nfs*" --exclude "core.[0-9]*" 
+[end]
+
 # Things to collate
 [collate_file]
 targetMem:TargetApp/*/memory.mem*
