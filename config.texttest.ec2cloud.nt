@@ -1,3 +1,4 @@
 [run_dependent_text]
 externalmocks: [^ ]*python.exe{REPLACE }
 externalmocks:(os.kill\([0-9]*,) 12\){REPLACE \1 15)}
+externalmocks:^$
