@@ -1,10 +1,11 @@
 Using ec2cloud queues for Application SLEEP
 Q: Submitting SLEEP test-case Basic to default ec2cloud queue
 S: SLEEP test-case Basic not compared:
+ec2cloud job exited
 Failed to synchronise files with EC2 instance with private IP address '10.80.17.112'
 Unable to contact machine 'ec2-user@10.80.17.112'.
 Make sure you have passwordless access set up correctly. The failing command was:
-ssh -q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 -x ec2-user@10.80.17.112 mkdir -p '/users/geoff/work/master/Testing' '/tmp/geoff/texttest.ec2cloud.07Apr142111.88756/texttest.ec2cloud/QueueSystems/ErrorHandling/Ec2Only/FileSynchFails'
+ssh -q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 -x ec2-user@10.80.17.112 mkdir -p '/users/geoff/work/master/Testing' '/tmp/geoff/texttest.ec2cloud.15May102308.9856/texttest.ec2cloud/QueueSystems/ErrorHandling/Ec2Only/FileSynchFails'
 
 The command produced the following output:
 mkdir: cannot create directory `/carm': Permission denied
@@ -12,7 +13,7 @@ mkdir: cannot create directory `/carm': Permission denied
 Results:
 
 Tests that did not succeed:
-  SLEEP test-case Basic not compared: Failed to synchronise files with EC2 instance with private IP address '10.80.17.112'
+  SLEEP test-case Basic not compared: ec2cloud job exited
 
 Tests Run: 1, Incomplete: 1
 Creating batch report for application SLEEP ...

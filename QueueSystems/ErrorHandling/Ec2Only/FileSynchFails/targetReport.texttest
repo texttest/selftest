@@ -1,12 +1,12 @@
 unrunnable=1
-11Dec2013
+15May2014
 SLEEP : 1 tests : 1 unrunnable
 
 Summary of all Unsuccessful tests follows...
 ---------------------------------------------------------------------------------
 The following tests could not be run : 
 In SLEEP test-suite TargetApp:
-  - SLEEP test-case Basic : NOT SUBMITTED
+  - SLEEP test-case Basic : ec2cloud job exited
 
 
 Details of all Unsuccessful tests follows...
@@ -15,10 +15,11 @@ Details of all Unsuccessful tests follows...
 Detailed information for the tests that could not be run follows...
 --------------------------------------------------------
 TEST could not be run : SLEEP test-case Basic (under Basic)
+ec2cloud job exited
 Failed to synchronise files with EC2 instance with private IP address '10.80.17.112'
 Unable to contact machine 'ec2-user@10.80.17.112'.
 Make sure you have passwordless access set up correctly. The failing command was:
-ssh -q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 -x ec2-user@10.80.17.112 mkdir -p '/users/geoff/work/master/Testing' '/tmp/geoff/texttest.ec2cloud.11Dec164442.24427/texttest.ec2cloud/QueueSystems/ErrorHandling/Ec2Only/FileSynchFails'
+ssh -q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 -x ec2-user@10.80.17.112 mkdir -p '/users/geoff/work/master/Testing' '/tmp/geoff/texttest.ec2cloud.15May102308.9856/texttest.ec2cloud/QueueSystems/ErrorHandling/Ec2Only/FileSynchFails'
 
 The command produced the following output:
 mkdir: cannot create directory `/carm': Permission denied
