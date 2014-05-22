@@ -1,5 +1,5 @@
 
----------- Window 'HELLO tests (started at 18Mar08:54:01) - TextTest dynamic GUI' ----------
+---------- Window 'HELLO tests (started at 22May09:58:32) - TextTest dynamic GUI' ----------
 Focus widget is 'Test Tree'
 
 Menu Bar : '_File' (+) , '_View' (+) , '_Actions' (+) , '_Help' (+)
@@ -8,7 +8,7 @@ Tool Bar :
   _Quit (Stock image 'gtk-quit', accelerator 'Ctrl+Q', tooltip 'Quit')
   _Kill (Stock image 'gtk-stop', greyed out, accelerator 'Ctrl+Delete', tooltip 'Kill selected tests')
   _Save (Stock image 'gtk-save', greyed out, accelerator 'Ctrl+S', tooltip 'Save results for selected tests')
-  Progress bar set to fraction 0.0, text 'All 0 tests completed at 18Mar08:54:02'
+  Progress bar set to fraction 0.0, text 'All 0 tests completed at 22May09:58:32'
 ...........
 
 Showing Test Tree with columns: Tests: All 0 selected , Details
@@ -22,7 +22,7 @@ Viewing page 'Status'
 Showing Test Status View with columns: Status , Number , Visible
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 18Mar08:54:01.' , Image 'throbber_inactive.png'
+'TextTest started at 22May09:58:32.' , Image 'throbber_inactive.png'
 --------------------------------------------------------------------------------------------
 
 Progress bar set to fraction 0.0, text '0 of 1 tests completed'
@@ -140,7 +140,7 @@ Updated : Test Status View with columns: Status , Number , Visible
 ->   Differences (salmon,bold) | 1 (salmon,bold) | Check box (checked)
 ->     output different (salmon,bold) | 1 (salmon,bold) | Check box (checked)
 
-Progress bar set to fraction 1.0, text 'All 2 tests completed at 18Mar08:54:03'
+Progress bar set to fraction 1.0, text 'All 2 tests completed at 22May09:58:33'
 
 Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
 -> TargetApp (hello.2) (black/white,bold) | (white)
@@ -189,28 +189,13 @@ Test FAILED :
 > Hello World!
 ===============================
 
-'save results with non-default settings' event created with arguments ''
-
----------- Dialog 'Saving 1 tests' ----------
-Default widget is 'gtk-save'
-'Version to save:'
-Text entry (set to '<existing version>') (drop-down list containing ['<existing version>', '<full version>', '2', ''])
-'Version(s) to save previous results as:'
-Text entry
-Check button 'Replace successfully compared files also'
-Stock Button 'gtk-save' , Stock Button 'gtk-cancel'
----------------------------------------------
-
-'enter version to save =' event created with arguments ''
-Edited 'Version to save' Text entry
-
-'press ok' event created with arguments ''
+'save results for selected tests' event created with arguments ''
 
 Waiting for application event 'completion of background actions' to occur.
 
 Changing GUI status to: 'Saving 1 tests ...'
 
-Changing GUI status to: 'Saving HELLO.2 test-case OutDiff : output, version '''
+Changing GUI status to: 'Saving HELLO.2 test-case OutDiff : output, existing version'
 
 Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
 -> TargetApp (hello.2) (black/white,bold) | All 1 tests successful (DarkSeaGreen2)
@@ -291,7 +276,7 @@ Updated : File Tree with columns: OutDiff , Details
 
 ========== Text Info ==========
 Test succeeded
-(Saved at 08:54)
+(Saved at 09:58)
 ===============================
 
 'set test selection to' event created with arguments 'OutDiff under TargetApp (hello.4)'
@@ -308,6 +293,64 @@ Updated : File Tree with columns: OutDiff , Details
 -> Comparison Files (bold)
 ->   errors.hello (DarkSeaGreen2) | (DarkSeaGreen2)
 ->   output.hello (salmon) | (salmon) | Stock image 'gtk-refresh'
+
+========== Text Info ==========
+Test FAILED :
+---------- Differences in output ----------
+0a1
+> Hello World!
+===============================
+
+'view options for' event created with arguments 'Selection'
+
+Current page changed in Notebook with tabs: Test , Status , Selection , Run Info
+Viewing page 'Selection'
+Viewing table with 7 rows and 2 columns.
+'Tests for version  ' (tooltip 'Select tests for a specific version.') | Text entry (drop-down list containing ['', '2', '4'])
+'Test names containing  ' (tooltip 'Select tests for which the name contains the entered text. The text can be a regular expression.') | Text entry
+'Test paths containing  ' (tooltip 'Select tests for which the full path to the test (e.g. suite1/subsuite/testname) contains the entered text. The text can be a regular expression. You can select tests by suite name this way.') | Text entry
+'Tests listed in file  ' | Text entry , Button '...'
+'Descriptions containing  ' (tooltip 'Select tests for which the description (comment) matches the entered text. The text can be a regular expression.') | Text entry
+'Test-files containing  ' (tooltip 'Select tests which have a file containing the entered text. The text can be a regular expression : e.g. enter '.*' to only look for the file without checking the contents.') | Text entry
+'Test-file to search  ' (tooltip 'When the 'test-files containing' field is non-empty, apply the search in files with the given stem. Unix-style file expansion (note not regular expressions) may be used. For example '*' will look in any file.') | Text entry (set to 'free_text') (drop-down list containing ['free_text', '----------', 'errors', 'output'])
+Radio button 'Use test-files from current run' (checked) (tooltip 'When searching using 'test-files containing', look in the results of tests in the current run') , Radio button 'Use stored test-files' (tooltip 'When searching using 'test-files containing', look in the stored results, i.e. the same search as would be done in the static GUI')
+.....'Selection'......
+Check button 'Select in collapsed suites' (tooltip 'Select in currently collapsed suites as well?')
+Radio button 'Discard' (checked) (tooltip 'Unselect all currently selected tests before applying the new selection criteria.') , Radio button 'Refine' (tooltip 'Apply the new selection criteria only to the currently selected tests, to obtain a subselection.') , Radio button 'Extend' (tooltip 'Keep the currently selected tests even if they do not match the new criteria, and extend the selection with all other tests which meet the new criteria.') , Radio button 'Exclude' (tooltip 'After applying the new selection criteria to all tests, unselect the currently selected tests, to exclude them from the new selection.')
+Button '_Select' (Stock image 'gtk-find', accelerator 'Ctrl+Alt+F', tooltip 'Select indicated tests')
+.....'Filtering'......
+Radio button 'Discard' (checked) (tooltip 'Show all tests which match the criteria, and hide all those that do not.') , Radio button 'Refine' (tooltip 'Hide all tests which do not match the criteria. Do not show any tests that aren't already shown.') , Radio button 'Extend' (tooltip 'Show all tests which match the criteria. Do not hide any tests that are currently shown.')
+Button 'Filter' (Stock image 'gtk-find', accelerator 'Ctrl+F', tooltip 'filter tests to show only those indicated')
+Button 'Reset Tab' (tooltip 'Reset all the settings in the current tab to their default values')
+
+'enter tests for version =' event created with arguments '4'
+Edited 'Tests for version' Text entry (set to '4') (completions ['4'])
+
+'select indicated tests' event created with arguments ''
+
+Changing GUI status to: 'Selecting tests ...'
+
+Changed selection in Test Tree with columns: Tests: 1/2 selected, none hidden , Details
+-> TargetApp (hello.2) (black/white,bold) | All 1 tests successful (DarkSeaGreen2)
+->   OutDiff (black/DarkSeaGreen2) | (DarkSeaGreen2)
+-> TargetApp (hello.4) (black/white,bold) | (white)
+->   OutDiff (black/salmon) | output different (salmon) | Stock image 'gtk-refresh'   ***
+
+Changing GUI status to: 'Selected test OutDiff.'
+
+'view options for' event created with arguments 'Test'
+
+Current page changed in Notebook with tabs: Test , Status , Selection , Run Info
+Viewing page 'Test'
+...........
+
+Showing File Tree with columns: OutDiff , Details
+-> Comparison Files (bold)
+->   errors.hello (DarkSeaGreen2) | (DarkSeaGreen2)
+->   output.hello (salmon) | (salmon) | Stock image 'gtk-refresh'
+
+------------------------------ (horizontal pane separator)
+...........
 
 ========== Text Info ==========
 Test FAILED :
