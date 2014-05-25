@@ -7,7 +7,7 @@ Menu Bar : '_File' (+) , '_View' (+) , '_Actions' (+) , '_Help' (+)
 Tool Bar :
   _Quit (Stock image 'gtk-quit', accelerator 'Ctrl+Q', tooltip 'Quit')
   _Kill (Stock image 'gtk-stop', greyed out, accelerator 'Ctrl+Delete', tooltip 'Kill selected tests')
-  _Save (Stock image 'gtk-save', greyed out, accelerator 'Ctrl+S', tooltip 'Save results for selected tests')
+  _Approve (Stock image 'gtk-apply', greyed out, accelerator 'Ctrl+S', tooltip 'Approve results for selected tests')
   Progress bar set to fraction 0.0, text 'All 0 tests completed at 10May13:52:47'
 ...........
 
@@ -177,7 +177,7 @@ Expected application event 'completion of test actions' occurred, proceeding.
 
 'view actions for test' event created with arguments 'Test under TargetApp (hello.v1.v2.14Jul104621)'
 
-No longer greyed out : _Save
+No longer greyed out : _Approve
 
 Changed selection in Test Tree with columns: Tests: 1/5 selected, none hidden , Details
 -> TargetApp (hello.v1) (black/white,bold) | All 1 tests successful (DarkSeaGreen2)
@@ -212,8 +212,8 @@ Test FAILED :
 'Enter Failure Information' (Stock image 'gtk-info', accelerator 'Ctrl+I')
 'Find Failure Information' (Stock image 'gtk-find', accelerator 'Ctrl+F')
   ----
-'_Save' (Stock image 'gtk-save', accelerator 'Ctrl+S')
-'Save _As...' (Stock image 'gtk-save', accelerator 'Ctrl+Alt+S')
+'_Approve' (Stock image 'gtk-apply', accelerator 'Ctrl+S')
+'Approve _As...' (Stock image 'gtk-apply', accelerator 'Ctrl+Alt+S')
   ----
 '_Kill' (Stock image 'gtk-stop', greyed out, accelerator 'Ctrl+Delete')
   ----
@@ -231,15 +231,15 @@ Test FAILED :
 
 'approve results with non-default settings' event created with arguments ''
 
----------- Dialog 'Saving 1 tests' ----------
-Default widget is 'gtk-save'
+---------- Dialog 'Approving 1 tests' ----------
+Default widget is 'gtk-ok'
 'Version to approve:'
 Text entry (set to '<existing version>') (drop-down list containing ['<existing version>', '<full version>', 'v1.v2', 'v1', 'v2', ''])
 'Version(s) to store previous results as:'
 Text entry
 Check button 'Replace successfully compared files also'
-Stock Button 'gtk-save' , Stock Button 'gtk-cancel'
----------------------------------------------
+Stock Button 'gtk-ok' , Stock Button 'gtk-cancel'
+------------------------------------------------
 
 'press cancel' event created with arguments ''
 

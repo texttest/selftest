@@ -1,5 +1,5 @@
 
----------- Window 'VideoStore,SHORTCUT tests (started at 16Oct17:13:37) - TextTest dynamic GUI' ----------
+---------- Window 'VideoStore,SHORTCUT tests (started at 25May17:26:51) - TextTest dynamic GUI' ----------
 Focus widget is 'Test Tree'
 
 Menu Bar : '_File' (+) , '_View' (+) , '_Actions' (+) , '_Help' (+)
@@ -7,7 +7,7 @@ Menu Bar : '_File' (+) , '_View' (+) , '_Actions' (+) , '_Help' (+)
 Tool Bar :
   _Quit (Stock image 'gtk-quit', accelerator 'Ctrl+Q', tooltip 'Quit')
   _Kill (Stock image 'gtk-stop', greyed out, accelerator 'Ctrl+Delete', tooltip 'Kill selected tests')
-  _Save (Stock image 'gtk-save', greyed out, accelerator 'Ctrl+S', tooltip 'Save results for selected tests')
+  _Approve (Stock image 'gtk-apply', greyed out, accelerator 'Ctrl+S', tooltip 'Approve results for selected tests')
   Progress bar set to fraction 0.0, text '0 of 7 tests completed'
 ...........
 
@@ -23,7 +23,7 @@ Showing Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 7 (white,bold) | Check box (checked)
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 16Oct17:13:37.' , Image 'throbber_inactive.png'
+'TextTest started at 25May17:26:52.' , Image 'throbber_inactive.png'
 ----------------------------------------------------------------------------------------------------
 
 Updated : Test Tree with columns: Tests: 0/7 selected, 6 hidden , Details
@@ -268,7 +268,7 @@ Updated : Test Status View with columns: Status , Number , Visible
 ->     fake_usecase_file different (salmon,bold) | 3 (salmon,bold) | Check box (checked)
 ->       Group 1 (salmon,bold) | 3 (salmon,bold) | Check box (checked)
 
-Progress bar set to fraction 1.0, text 'All 8 tests completed at 16Oct17:13:39'
+Progress bar set to fraction 1.0, text 'All 8 tests completed at 25May17:26:53'
 
 Updated : Test Tree with columns: Tests: 0/8 selected, none hidden , Details
 -> TargetApp (gui) (black/white,bold) | (white)
@@ -300,7 +300,7 @@ Expected application event 'completion of test actions' occurred, proceeding.
 
 'set test selection to' event created with arguments 'storytext_files'
 
-No longer greyed out : _Save
+No longer greyed out : _Approve
 
 Changed selection in Test Tree with columns: Tests: 1/8 selected, none hidden , Details
 -> TargetApp (gui) (black/white,bold) | (white)
@@ -431,23 +431,23 @@ Test FAILED :
   ----
 'Select Tests With Same Diff' (greyed out)
   ----
-'_Save' (Stock image 'gtk-save', accelerator 'Ctrl+S')
-'Save _As...' (Stock image 'gtk-save', accelerator 'Ctrl+Alt+S')
+'_Approve' (Stock image 'gtk-apply', accelerator 'Ctrl+S')
+'Approve _As...' (Stock image 'gtk-apply', accelerator 'Ctrl+Alt+S')
 ----------------------------------
 
 'approve results for selected tests' event created with arguments ''
 
 Waiting for application event 'completion of background actions' to occur.
 
-Changing GUI status to: 'Saving 1 tests ...'
+Changing GUI status to: 'Approving 1 tests ...'
 
-Changing GUI status to: 'Saving SHORTCUT test-case storytext_files : Add_Several, existing version'
+Changing GUI status to: 'Approving SHORTCUT test-case storytext_files : Add_Several, existing version'
 
-Changing GUI status to: 'Saving SHORTCUT test-case storytext_files : Add_one, existing version'
+Changing GUI status to: 'Approving SHORTCUT test-case storytext_files : Add_one, existing version'
 
-Changing GUI status to: 'Saving SHORTCUT test-case storytext_files : add_$_named_$, existing version'
+Changing GUI status to: 'Approving SHORTCUT test-case storytext_files : add_$_named_$, existing version'
 
-Changing GUI status to: 'Saving SHORTCUT test-case storytext_files : add_$s_$_and_$, existing version'
+Changing GUI status to: 'Approving SHORTCUT test-case storytext_files : add_$s_$_and_$, existing version'
 
 Updated : Test Tree with columns: Tests: 0/8 selected, none hidden , Details
 -> TargetApp (gui) (black/white,bold) | (white)
@@ -462,9 +462,9 @@ Updated : Test Tree with columns: Tests: 0/8 selected, none hidden , Details
 ->     AddSomeMovies (black/DarkSeaGreen2) | (DarkSeaGreen2)
 -> dynamic_run1 (shortcut) (black/white,bold) | All 1 tests successful (DarkSeaGreen2)
 
-Changing GUI status to: 'Saved 1 tests.'
+Changing GUI status to: 'Approved 1 tests.'
 
-Greyed out : _Save
+Greyed out : _Approve
 
 Current page changed in Notebook with tabs: Status , Selection , Run Info
 Viewing page 'Status'
@@ -472,7 +472,7 @@ Viewing page 'Status'
 Showing Test Status View with columns: Status , Number , Visible
 -> Not started (white) | 0 (white) | Check box (checked)
 -> Succeeded (DarkSeaGreen2,bold) | 5 (DarkSeaGreen2,bold) | Check box (checked)
-->   Saved (DarkSeaGreen2,bold) | 1 (DarkSeaGreen2,bold) | Check box (checked)
+->   Approved (DarkSeaGreen2,bold) | 1 (DarkSeaGreen2,bold) | Check box (checked)
 -> Failed (salmon,bold) | 3 (salmon,bold) | Check box (checked)
 ->   Differences (salmon,bold) | 3 (salmon,bold) | Check box (checked)
 ->     Add_Several different (white) | 0 (white) | Check box (checked)
