@@ -1,5 +1,5 @@
 
----------- Window 'HELLO tests (started at 18Mar08:54:00) - TextTest dynamic GUI' ----------
+---------- Window 'HELLO tests (started at 25May16:30:56) - TextTest dynamic GUI' ----------
 Focus widget is 'Test Tree'
 
 Menu Bar : '_File' (+) , '_View' (+) , '_Actions' (+) , '_Help' (+)
@@ -7,7 +7,7 @@ Menu Bar : '_File' (+) , '_View' (+) , '_Actions' (+) , '_Help' (+)
 Tool Bar :
   _Quit (Stock image 'gtk-quit', accelerator 'Ctrl+Q', tooltip 'Quit')
   _Kill (Stock image 'gtk-stop', greyed out, accelerator 'Ctrl+Delete', tooltip 'Kill selected tests')
-  _Save (Stock image 'gtk-save', greyed out, accelerator 'Ctrl+S', tooltip 'Save results for selected tests')
+  _Approve (Stock image 'gtk-apply', greyed out, accelerator 'Ctrl+S', tooltip 'Approve results for selected tests')
   Progress bar set to fraction 0.0, text '0 of 2 tests completed'
 ...........
 
@@ -23,7 +23,7 @@ Showing Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 2 (white,bold) | Check box (checked)
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 18Mar08:54:01.' , Image 'throbber_inactive.png'
+'TextTest started at 25May16:30:57.' , Image 'throbber_inactive.png'
 --------------------------------------------------------------------------------------------
 
 Updated : Test Tree with columns: Tests: 0/2 selected, 1 hidden , Details
@@ -131,7 +131,7 @@ Updated : Test Status View with columns: Status , Number , Visible
 ->   Differences (salmon,bold) | 1 (salmon,bold) | Check box (checked)
 ->     output different (salmon,bold) | 1 (salmon,bold) | Check box (checked)
 
-Progress bar set to fraction 1.0, text 'All 2 tests completed at 18Mar08:54:01'
+Progress bar set to fraction 1.0, text 'All 2 tests completed at 25May16:30:57'
 
 Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
 -> TargetApp (hello) (black/white,bold) | (white)
@@ -153,7 +153,7 @@ Expected application event 'completion of test actions' occurred, proceeding.
 
 'set test selection to' event created with arguments 'OutDiff under TargetApp (hello.copy_1)'
 
-No longer greyed out : _Save
+No longer greyed out : _Approve
 
 Changed selection in Test Tree with columns: Tests: 1/2 selected, none hidden , Details
 -> TargetApp (hello) (black/white,bold) | (white)
@@ -180,17 +180,17 @@ Test FAILED :
 > Hello World!
 ===============================
 
-'save results with non-default settings' event created with arguments ''
+'approve results with non-default settings' event created with arguments ''
 
----------- Dialog 'Saving 1 tests' ----------
-Default widget is 'gtk-save'
-'Version to save:'
+---------- Dialog 'Approving 1 tests' ----------
+Default widget is 'gtk-ok'
+'Version to approve:'
 Text entry (set to '<existing version>') (drop-down list containing ['<existing version>', '<full version>', ''])
-'Version(s) to save previous results as:'
+'Version(s) to store previous results as:'
 Text entry
 Check button 'Replace successfully compared files also'
-Stock Button 'gtk-save' , Stock Button 'gtk-cancel'
----------------------------------------------
+Stock Button 'gtk-ok' , Stock Button 'gtk-cancel'
+------------------------------------------------
 
 'press cancel' event created with arguments ''
 
