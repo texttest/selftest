@@ -38,30 +38,18 @@
 ->RET:Instance('TagSet', 'tagset8')
 <-PYT:tagset8.get('Name', '')
 ->RET:u'texttest-geoff-69'
-<-PYT:instance8.private_ip_address
-->RET:u'10.80.17.69'
-<-PYT:instance8.instance_type
-->RET:u't1.micro'
 <-PYT:instance8.id
 ->RET:u'i-b29a8af2'
 <-PYT:instance9.tags
 ->RET:Instance('TagSet', 'tagset9')
 <-PYT:tagset9.get('Name', '')
 ->RET:u'texttest-geoff-161'
-<-PYT:instance9.private_ip_address
-->RET:u'10.80.17.161'
-<-PYT:instance9.instance_type
-->RET:u'm1.medium'
 <-PYT:instance9.id
 ->RET:u'i-059e8e45'
 <-PYT:instance10.tags
 ->RET:Instance('TagSet', 'tagset10')
 <-PYT:tagset10.get('Name', '')
 ->RET:u'texttest-geoff-73'
-<-PYT:instance10.private_ip_address
-->RET:u'10.80.17.73'
-<-PYT:instance10.instance_type
-->RET:u'm1.xlarge'
 <-PYT:instance10.id
 ->RET:u'i-439d8d03'
 <-PYT:instance11.tags
@@ -72,18 +60,12 @@
 ->RET:Instance('TagSet', 'tagset12')
 <-PYT:tagset12.get('Name', '')
 ->RET:u'texttest-geoff-125'
-<-PYT:instance12.instance_type
-->RET:u'm1.large'
 <-PYT:instance12.id
 ->RET:u'i-11889b51'
 <-PYT:instance13.tags
 ->RET:Instance('TagSet', 'tagset13')
 <-PYT:tagset13.get('Name', '')
 ->RET:u'texttest-geoff-225'
-<-PYT:instance13.private_ip_address
-->RET:u'10.80.17.225'
-<-PYT:instance13.instance_type
-->RET:u'm1.large'
 <-PYT:instance13.id
 ->RET:u'i-078d9e47'
 <-PYT:ec2connection_eu_west_1.get_all_instance_status([u'i-11889b51', u'i-059e8e45', u'i-b29a8af2', u'i-078d9e47', u'i-439d8d03'])
@@ -116,3 +98,15 @@
 ->RET:u'i-078d9e47'
 <-PYT:listiterator1.next()
 ->RET:raise exceptions.StopIteration('')
+<-PYT:instance8.instance_type
+->RET:u't1.micro'
+<-PYT:instance8.private_ip_address
+->RET:u'10.80.17.69'
+<-PYT:instance9.instance_type
+->RET:u'm1.medium'
+<-PYT:instance9.private_ip_address
+->RET:u'10.80.17.161'
+<-PYT:instance13.instance_type
+->RET:u'm1.large'
+<-PYT:instance13.private_ip_address
+->RET:u'10.80.17.225'
