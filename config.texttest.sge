@@ -6,4 +6,6 @@ link_test_path:sgehostfile
 sgehostfile:PE_HOSTFILE
 
 [run_dependent_text]
-externalmocks:(slave_start_errors\.)[^ ]*{REPLACE \1<user>}
+*mocks:(slave_start_errors\.)[^ ]*{REPLACE \1<user>}
+output:(slave_start_errors\.)[^ ]*{REPLACE \1<user>}
+dynamic_gui_log:(slave_start_errors\.)[^ ]*{REPLACE \1<user>}
