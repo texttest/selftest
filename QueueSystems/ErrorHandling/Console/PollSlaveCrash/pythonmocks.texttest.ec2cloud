@@ -1,3 +1,5 @@
+<-PYT:datetime.datetime.now()
+->RET:datetime.datetime(2014, 6, 12, 11, 53, 26, 245338)
 <-PYT:import boto
 <-PYT:boto.__path__
 ->RET:['Fake value just to mark that it exists']
@@ -120,19 +122,69 @@
 ->RET:u'impaired'
 <-PYT:listiterator1.next()
 ->RET:raise exceptions.StopIteration('')
-<-PYT:instance12.instance_type
+<-PYT:tagset12.get('TextTest user', '')
+->RET:''
+<-PYT:instance12.add_tag('TextTest user', 'geoff_12Jun11:53:26')
+<-PYT:tagset13.get('TextTest user', '')
+->RET:''
+<-PYT:instance13.add_tag('TextTest user', 'geoff_12Jun11:53:26')
+<-PYT:tagset2.get('TextTest user', '')
+->RET:''
+<-PYT:instance2.add_tag('TextTest user', 'geoff_12Jun11:53:26')
+<-PYT:tagset5.get('TextTest user', '')
+->RET:''
+<-PYT:instance5.add_tag('TextTest user', 'geoff_12Jun11:53:26')
+<-PYT:ec2connection_eu_west_1.get_only_instances(instance_ids=[u'i-8d480fc1', u'i-ae8dd0e2', u'i-fb3c43b4', u'i-dcb7cc93'])
+->RET:[Instance('Instance', 'instance19'), Instance('Instance', 'instance20'), Instance('Instance', 'instance21'), Instance('Instance', 'instance22')]
+<-PYT:instance19.tags
+->RET:Instance('TagSet', 'tagset19')
+<-PYT:tagset19.get('TextTest user', '')
+->RET:u'geoff_12Jun11:53:26'
+<-PYT:instance20.tags
+->RET:Instance('TagSet', 'tagset20')
+<-PYT:tagset20.get('TextTest user', '')
+->RET:u'geoff_12Jun11:53:26'
+<-PYT:instance21.tags
+->RET:Instance('TagSet', 'tagset21')
+<-PYT:tagset21.get('TextTest user', '')
+->RET:u'geoff_12Jun11:53:26'
+<-PYT:instance22.tags
+->RET:Instance('TagSet', 'tagset22')
+<-PYT:tagset22.get('TextTest user', '')
+->RET:u'geoff_12Jun11:53:26'
+<-PYT:instance19.instance_type
 ->RET:u't1.micro'
-<-PYT:instance12.private_ip_address
-->RET:u'10.80.17.126'
-<-PYT:instance13.instance_type
+<-PYT:instance19.private_ip_address
+->RET:u'10.80.17.21'
+<-PYT:instance20.instance_type
 ->RET:u't1.micro'
-<-PYT:instance13.private_ip_address
+<-PYT:instance20.private_ip_address
 ->RET:u'10.80.17.37'
-<-PYT:instance2.instance_type
+<-PYT:instance21.instance_type
 ->RET:u't1.micro'
-<-PYT:instance2.private_ip_address
-->RET:u'10.80.17.112'
-<-PYT:instance5.instance_type
-->RET:u't1.micro'
-<-PYT:instance5.private_ip_address
+<-PYT:instance21.private_ip_address
 ->RET:u'10.80.17.96'
+<-PYT:instance22.instance_type
+->RET:u't1.micro'
+<-PYT:instance22.private_ip_address
+->RET:u'10.80.17.112'
+<-PYT:instance22.id
+->RET:u'i-fb3c43b4'
+<-PYT:instance19.id
+->RET:u'i-8d480fc1'
+<-PYT:instance20.id
+->RET:u'i-ae8dd0e2'
+<-PYT:instance21.id
+->RET:u'i-dcb7cc93'
+<-PYT:boto.ec2.connect_to_region('eu-west-1')
+->RET:Instance('EC2Connection', 'ec2connection_eu_west_11')
+<-PYT:ec2connection_eu_west_11.get_only_instances(instance_ids=[u'i-8d480fc1', u'i-ae8dd0e2', u'i-dcb7cc93'])
+->RET:[Instance('Instance', 'instance19'), Instance('Instance', 'instance20'), Instance('Instance', 'instance21')]
+<-PYT:instance19.remove_tag('TextTest user')
+<-PYT:instance20.remove_tag('TextTest user')
+<-PYT:instance21.remove_tag('TextTest user')
+<-PYT:boto.ec2.connect_to_region('eu-west-1')
+->RET:Instance('EC2Connection', 'ec2connection_eu_west_12')
+<-PYT:ec2connection_eu_west_12.get_only_instances(instance_ids=[u'i-fb3c43b4'])
+->RET:[Instance('Instance', 'instance28')]
+<-PYT:instance28.remove_tag('TextTest user')

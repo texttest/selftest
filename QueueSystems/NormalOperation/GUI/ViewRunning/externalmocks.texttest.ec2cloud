@@ -1,14 +1,18 @@
-<-SRV:TextTest slave server started on 10.67.7.38:56356
-<-CMD:ssh -q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 -x ec2-user@10.80.17.112 mkdir -p '/users/geoff/work/master/Testing' '/tmp/geoff/texttest.ec2cloud.gui.07Apr162429.21077/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/ViewRunning'
-<-CMD:rsync -e "ssh -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10" -av --copy-unsafe-links --delete --exclude-from=/users/geoff/work/master/Testing/TextTest/etc/rsync_exclude_patterns /users/geoff/work/master/Testing/TextTest ec2-user@10.80.17.112:'/users/geoff/work/master/Testing'
+<-SRV:TextTest slave server started on 10.67.6.156:39796
+<-CMD:ssh -q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 -x ec2-user@10.80.17.105 mkdir -p '/users/geoff/work/master/Testing' '/tmp/geoff/texttest.ec2cloud.gui.12Jun135929.113487/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/ViewRunning'
+<-CMD:rsync -e "ssh -x -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10" -av --copy-unsafe-links --delete --exclude-from=/users/geoff/work/master/Testing/TextTest/etc/rsync_exclude_patterns /users/geoff/work/master/Testing/TextTest ec2-user@10.80.17.105:'/users/geoff/work/master/Testing'
 ->OUT:sending incremental file list
+TextTest/lib/
 TextTest/lib/default/
-TextTest/lib/default/__init__.py
+TextTest/lib/default/batch/
+TextTest/lib/default/knownbugs/
+TextTest/lib/queuesystem/
+TextTest/storytext/lib/
+TextTest/storytext/lib/storytext/
 
-sent 11375 bytes  received 819 bytes  8129.33 bytes/sec
-total size is 6291244  speedup is 515.93
-->ERR:Warning: No xauth data; using fake authentication data for X11 forwarding.
-<-CMD:rsync -e "ssh -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10" -av --copy-unsafe-links --delete --exclude-from=/users/geoff/work/master/Testing/TextTest/etc/rsync_exclude_patterns /tmp/geoff/texttest.ec2cloud.gui.07Apr162429.21077/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/ViewRunning/TargetApp ec2-user@10.80.17.112:'/tmp/geoff/texttest.ec2cloud.gui.07Apr162429.21077/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/ViewRunning'
+sent 9584 bytes  received 104 bytes  6458.67 bytes/sec
+total size is 6257363  speedup is 645.89
+<-CMD:rsync -e "ssh -x -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10" -av --copy-unsafe-links --delete --exclude-from=/users/geoff/work/master/Testing/TextTest/etc/rsync_exclude_patterns /tmp/geoff/texttest.ec2cloud.gui.12Jun135929.113487/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/ViewRunning/TargetApp ec2-user@10.80.17.105:'/tmp/geoff/texttest.ec2cloud.gui.12Jun135929.113487/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/ViewRunning'
 ->OUT:sending incremental file list
 TargetApp/
 TargetApp/busywait.py
@@ -25,6 +29,7 @@ TargetApp/config.sleep.gui
 TargetApp/config.sleep.localtmp
 TargetApp/config.sleep.parallel
 TargetApp/config.sleep.parallel.oneperf
+TargetApp/config.sleep.reqdata
 TargetApp/config.sleep.screenshots
 TargetApp/knownbugs.sleep.kb
 TargetApp/screenshots.py
@@ -47,19 +52,18 @@ TargetApp/Basic/output.sleep.cpulimit
 TargetApp/Basic2/
 TargetApp/Basic2/options.sleep
 
-sent 5158 bytes  received 636 bytes  3862.67 bytes/sec
-total size is 3023  speedup is 0.52
-->ERR:Warning: No xauth data; using fake authentication data for X11 forwarding.
-<-CMD:cd /tmp/geoff/texttest.ec2cloud.gui.07Apr162429.21077/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/ViewRunning/texttesttmp/sleep.killing2.07Apr162433.26202/slavelogs; ssh -q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 -x -A ec2-user@10.80.17.112 /users/geoff/work/master/Testing/TextTest/bin/texttest.py -d /tmp/geoff/texttest.ec2cloud.gui.07Apr162429.21077/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/ViewRunning/TargetApp -a sleep.killing2 -l -tp Basic -slave /tmp/geoff/texttest.ec2cloud.gui.07Apr162429.21077/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/ViewRunning/texttesttmp/sleep.killing2.07Apr162433.26202 -servaddr 10.67.7.38:33273 -slavefilesynch geoff@10.67.7.38
+sent 5360 bytes  received 655 bytes  4010.00 bytes/sec
+total size is 3054  speedup is 0.51
+<-CMD:cd /tmp/geoff/texttest.ec2cloud.gui.12Jun135929.113487/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/ViewRunning/texttesttmp/sleep.killing2.12Jun135740.113504/slavelogs; ssh -q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 -x -A ec2-user@10.80.17.105 /users/geoff/work/master/Testing/TextTest/bin/texttest.py -d /tmp/geoff/texttest.ec2cloud.gui.12Jun135929.113487/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/ViewRunning/TargetApp -a sleep.killing2 -l -tp Basic -slave /tmp/geoff/texttest.ec2cloud.gui.12Jun135929.113487/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/ViewRunning/texttesttmp/sleep.killing2.12Jun135740.113504 -servaddr 10.67.6.156:45651 -slavefilesynch geoff@10.67.6.156
 ->OUT:Using Application SLEEP, version killing2
 Running SLEEP.killing2 test-suite TargetApp
   Running SLEEP.killing2 test-case Basic
 Terminating testing due to external interruption (RUNLIMIT2)
-Killing running test (process id 23974)
+Killing running test (process id 2404)
 Comparing differences for SLEEP.killing2 test-suite TargetApp
   Comparing differences for SLEEP.killing2 test-case Basic (on errors.sleep,output.sleep)
 ->EXC:-12
-->CLI:23958
+->CLI:2388
 sleep.killing2:Basic
 (idefault.rundependent
 Filtering
@@ -71,7 +75,7 @@ S'initial_filter'
 p4
 sS'freeText'
 p5
-S'Filtering stored result files on ip-10-80-17-112'
+S'Filtering stored result files on ip-10-80-17-105'
 p6
 sS'started'
 p7
@@ -85,7 +89,7 @@ S''
 sS'executionHosts'
 p10
 (lp11
-S'ip-10-80-17-112'
+S'ip-10-80-17-105'
 p12
 asS'observers'
 p13
@@ -98,7 +102,7 @@ p16
 S'start initial filtering'
 p17
 sb.
-->CLI:23958
+->CLI:2388
 sleep.killing2:Basic
 (idefault.runtest
 Running
@@ -110,7 +114,7 @@ S'running'
 p4
 sS'freeText'
 p5
-S'Running on ip-10-80-17-112'
+S'Running on ip-10-80-17-105'
 p6
 sS'started'
 p7
@@ -120,12 +124,12 @@ p8
 I0
 sS'briefText'
 p9
-S'RUN (ip-10-80-17-112)'
+S'RUN (ip-10-80-17-105)'
 p10
 sS'executionHosts'
 p11
 (lp12
-S'ip-10-80-17-112'
+S'ip-10-80-17-105'
 p13
 asS'observers'
 p14
@@ -138,7 +142,7 @@ p17
 S'start'
 p18
 sb.
-<-CMD:rsync -e "ssh -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10" -av --copy-unsafe-links --delete --exclude-from=/users/geoff/work/master/Testing/TextTest/etc/rsync_exclude_patterns ec2-user@10.80.17.112:'/tmp/geoff/texttest.ec2cloud.gui.07Apr162429.21077/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/ViewRunning/texttesttmp/sleep.killing2.07Apr162433.26202/sleep.killing2/Basic'/* /tmp/geoff/texttest.ec2cloud.gui.07Apr162429.21077/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/ViewRunning/texttesttmp/sleep.killing2.07Apr162433.26202/sleep.killing2/Basic
+<-CMD:rsync -e "ssh -x -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10" -av --copy-unsafe-links --delete --exclude-from=/users/geoff/work/master/Testing/TextTest/etc/rsync_exclude_patterns ec2-user@10.80.17.105:'/tmp/geoff/texttest.ec2cloud.gui.12Jun135929.113487/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/ViewRunning/texttesttmp/sleep.killing2.12Jun135740.113504/sleep.killing2/Basic'/* /tmp/geoff/texttest.ec2cloud.gui.12Jun135929.113487/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/ViewRunning/texttesttmp/sleep.killing2.12Jun135740.113504/sleep.killing2/Basic
 ->FIL:Basic
 ->OUT:receiving incremental file list
 errors.sleep
@@ -146,11 +150,10 @@ output.sleep
 framework_tmp/
 framework_tmp/errors.sleeporigcmp
 
-sent 179 bytes  received 317 bytes  330.67 bytes/sec
+sent 179 bytes  received 305 bytes  322.67 bytes/sec
 total size is 29  speedup is 0.06
-->ERR:Warning: No xauth data; using fake authentication data for X11 forwarding.
-<-CMD:ssh -q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 -x ec2-user@10.80.17.112 python -c ""import os; os.kill(23958, 12)""
-->CLI:23958.NO_REUSE
+<-CMD:ssh -q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 -x ec2-user@10.80.17.105 python -c ""import os; os.kill(2388, 12)""
+->CLI:2388.NO_REUSE
 sleep.killing2:Basic
 (idefault.rundependent
 Filtering
@@ -162,7 +165,7 @@ S'final_filter'
 p4
 sS'freeText'
 p5
-S'Filtering and comparing newly generated result files on ip-10-80-17-112'
+S'Filtering and comparing newly generated result files on ip-10-80-17-105'
 p6
 sS'started'
 p7
@@ -176,7 +179,7 @@ S''
 sS'executionHosts'
 p10
 (lp11
-S'ip-10-80-17-112'
+S'ip-10-80-17-105'
 p12
 asS'observers'
 p13
@@ -207,14 +210,14 @@ g3
 S'running'
 p25
 sg5
-S'Running on ip-10-80-17-112'
+S'Running on ip-10-80-17-105'
 p26
 sg7
 I1
 sg8
 I0
 sg9
-S'RUN (ip-10-80-17-112)'
+S'RUN (ip-10-80-17-105)'
 p27
 sg10
 g11
@@ -226,7 +229,7 @@ sg16
 S'start'
 p29
 sbsg5
-S'Test killed explicitly at 10:58\n'
+S'Test killed explicitly at 07:57\n'
 p30
 sg7
 I1
@@ -246,7 +249,7 @@ S''
 sg18
 g19
 sbsb.
-->CLI:23958.NO_REUSE
+->CLI:2388.NO_REUSE
 sleep.killing2:Basic
 (idefault.comparetest
 TestComparison
@@ -269,7 +272,7 @@ S'1,2c1\n< Sleeping for 5 seconds...\n< Done\n---\n> Sleeping for 1000 seconds..
 p10
 sS'tmpFile'
 p11
-S'/tmp/geoff/texttest.ec2cloud.gui.28Jan165556.28102/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/ViewRunning/texttesttmp/sleep.killing2.28Jan165559.28132/sleep.killing2/Basic/output.sleep'
+S'/tmp/geoff/texttest.ec2cloud.gui.12Jun135738.112852/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/ViewRunning/texttesttmp/sleep.killing2.12Jun135740.112862/sleep.killing2/Basic/output.sleep'
 p12
 sS'severity'
 p13
@@ -279,7 +282,7 @@ p14
 I1
 sS'stdFile'
 p15
-S'/tmp/geoff/texttest.ec2cloud.gui.28Jan165556.28102/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/ViewRunning/TargetApp/Basic/output.sleep'
+S'/tmp/geoff/texttest.ec2cloud.gui.12Jun135738.112852/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/ViewRunning/TargetApp/Basic/output.sleep'
 p16
 sS'stdCmpFile'
 p17
@@ -321,7 +324,7 @@ p31
 (lp32
 sS'freeText'
 p33
-S'Test killed explicitly at 10:58\n---------- Differences in output ----------\n1,2c1\n< Sleeping for 5 seconds...\n< Done\n---\n> Sleeping for 1000 seconds...\n'
+S'Test killed explicitly at 07:57\n---------- Differences in output ----------\n1,2c1\n< Sleeping for 5 seconds...\n< Done\n---\n> Sleeping for 1000 seconds...\n'
 p34
 sS'started'
 p35
@@ -344,7 +347,7 @@ g3
 S'running'
 p42
 sg33
-S'Running on ip-10-80-17-112'
+S'Running on ip-10-80-17-105'
 p43
 sg35
 I1
@@ -353,12 +356,12 @@ p44
 I0
 sS'briefText'
 p45
-S'RUN (ip-10-80-17-112)'
+S'RUN (ip-10-80-17-105)'
 p46
 sS'executionHosts'
 p47
 (lp48
-S'ip-10-80-17-112'
+S'ip-10-80-17-105'
 p49
 asS'observers'
 p50
@@ -371,7 +374,7 @@ p53
 S'start'
 p54
 sbsg33
-S'Test killed explicitly at 10:58\n'
+S'Test killed explicitly at 07:57\n'
 p55
 sg35
 I1
@@ -400,7 +403,7 @@ sg50
 (lp58
 sS'appAbsPath'
 p59
-S'/tmp/geoff/texttest.ec2cloud.gui.28Jan165556.28102/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/ViewRunning/TargetApp'
+S'/tmp/geoff/texttest.ec2cloud.gui.12Jun135738.112852/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/ViewRunning/TargetApp'
 p60
 sS'allResults'
 p61
@@ -411,17 +414,17 @@ p63
 (dp64
 g9
 Nsg11
-S'/tmp/geoff/texttest.ec2cloud.gui.28Jan165556.28102/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/ViewRunning/texttesttmp/sleep.killing2.28Jan165559.28132/sleep.killing2/Basic/errors.sleep'
+S'/tmp/geoff/texttest.ec2cloud.gui.12Jun135738.112852/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/ViewRunning/texttesttmp/sleep.killing2.12Jun135740.112862/sleep.killing2/Basic/errors.sleep'
 p65
 sg13
 I1
 sg14
 I0
 sg15
-S'/tmp/geoff/texttest.ec2cloud.gui.28Jan165556.28102/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/ViewRunning/TargetApp/Basic/errors.sleep'
+S'/tmp/geoff/texttest.ec2cloud.gui.12Jun135738.112852/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/ViewRunning/TargetApp/Basic/errors.sleep'
 p66
 sg17
-S'/tmp/geoff/texttest.ec2cloud.gui.28Jan165556.28102/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/ViewRunning/texttesttmp/sleep.killing2.28Jan165559.28132/sleep.killing2/Basic/framework_tmp/errors.sleeporigcmp'
+S'/tmp/geoff/texttest.ec2cloud.gui.12Jun135738.112852/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/ViewRunning/texttesttmp/sleep.killing2.12Jun135740.112862/sleep.killing2/Basic/framework_tmp/errors.sleeporigcmp'
 p67
 sg18
 F-1
@@ -435,7 +438,7 @@ I500
 sg23
 I30
 sbsg24
-S'/tmp/geoff/texttest.ec2cloud.gui.28Jan165556.28102/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/ViewRunning/texttesttmp/sleep.killing2.28Jan165559.28132/sleep.killing2/Basic/framework_tmp/errors.sleepcmp'
+S'/tmp/geoff/texttest.ec2cloud.gui.12Jun135738.112852/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/ViewRunning/texttesttmp/sleep.killing2.12Jun135740.112862/sleep.killing2/Basic/framework_tmp/errors.sleepcmp'
 p70
 sg25
 g26
@@ -458,7 +461,7 @@ S'complete'
 p74
 sS'appWriteDir'
 p75
-S'/tmp/geoff/texttest.ec2cloud.gui.28Jan165556.28102/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/ViewRunning/texttesttmp/sleep.killing2.28Jan165559.28132'
+S'/tmp/geoff/texttest.ec2cloud.gui.12Jun135738.112852/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/ViewRunning/texttesttmp/sleep.killing2.12Jun135740.112862'
 p76
 sS'newResults'
 p77

@@ -1,5 +1,5 @@
 <-PYT:datetime.datetime.now()
-->RET:datetime.datetime(2014, 6, 12, 14, 0, 41, 901549)
+->RET:datetime.datetime(2014, 6, 12, 13, 55, 10, 770780)
 <-PYT:import boto
 <-PYT:boto.__path__
 ->RET:['Fake value just to mark that it exists']
@@ -150,41 +150,36 @@
 ->RET:raise exceptions.StopIteration('')
 <-PYT:tagset8.get('TextTest user', '')
 ->RET:''
-<-PYT:instance8.add_tag('TextTest user', 'geoff_12Jun14:00:41')
+<-PYT:instance8.add_tag('TextTest user', 'geoff_12Jun13:55:10')
 <-PYT:tagset10.get('TextTest user', '')
 ->RET:''
-<-PYT:instance10.add_tag('TextTest user', 'geoff_12Jun14:00:41')
+<-PYT:instance10.add_tag('TextTest user', 'geoff_12Jun13:55:10')
 <-PYT:tagset11.get('TextTest user', '')
 ->RET:''
-<-PYT:instance11.add_tag('TextTest user', 'geoff_12Jun14:00:41')
+<-PYT:instance11.add_tag('TextTest user', 'geoff_12Jun13:55:10')
 <-PYT:tagset13.get('TextTest user', '')
 ->RET:''
-<-PYT:instance13.add_tag('TextTest user', 'geoff_12Jun14:00:41')
+<-PYT:instance13.add_tag('TextTest user', 'geoff_12Jun13:55:10')
 <-PYT:tagset18.get('TextTest user', '')
-->RET:''
-<-PYT:instance18.add_tag('TextTest user', 'geoff_12Jun14:00:41')
-<-PYT:ec2connection_eu_west_1.get_only_instances(instance_ids=[u'i-059e8e45', u'i-8a9e80ca', u'i-1a011a5a', u'i-5e17ea1d', u'i-0da45f4e'])
-->RET:[Instance('Instance', 'instance19'), Instance('Instance', 'instance20'), Instance('Instance', 'instance21'), Instance('Instance', 'instance22'), Instance('Instance', 'instance23')]
+->RET:'alice_timestamp'
+<-PYT:ec2connection_eu_west_1.get_only_instances(instance_ids=[u'i-059e8e45', u'i-8a9e80ca', u'i-1a011a5a', u'i-5e17ea1d'])
+->RET:[Instance('Instance', 'instance19'), Instance('Instance', 'instance20'), Instance('Instance', 'instance21'), Instance('Instance', 'instance22')]
 <-PYT:instance19.tags
 ->RET:Instance('TagSet', 'tagset19')
 <-PYT:tagset19.get('TextTest user', '')
-->RET:u'geoff_12Jun14:00:41'
+->RET:u'geoff_12Jun13:55:10'
 <-PYT:instance20.tags
 ->RET:Instance('TagSet', 'tagset20')
 <-PYT:tagset20.get('TextTest user', '')
-->RET:u'geoff_12Jun14:00:41'
+->RET:u'geoff_12Jun13:55:10'
 <-PYT:instance21.tags
 ->RET:Instance('TagSet', 'tagset21')
 <-PYT:tagset21.get('TextTest user', '')
-->RET:u'geoff_12Jun14:00:41'
+->RET:u'geoff_12Jun13:55:10'
 <-PYT:instance22.tags
 ->RET:Instance('TagSet', 'tagset22')
 <-PYT:tagset22.get('TextTest user', '')
-->RET:u'geoff_12Jun14:00:41'
-<-PYT:instance23.tags
-->RET:Instance('TagSet', 'tagset23')
-<-PYT:tagset23.get('TextTest user', '')
-->RET:u'geoff_12Jun14:00:41'
+->RET:u'bob_old_timestamp'
 <-PYT:instance19.instance_type
 ->RET:u't1.micro'
 <-PYT:instance19.private_ip_address
@@ -197,18 +192,6 @@
 ->RET:u't1.micro'
 <-PYT:instance21.private_ip_address
 ->RET:u'10.80.17.235'
-<-PYT:instance22.instance_type
-->RET:u't1.micro'
-<-PYT:instance22.private_ip_address
-->RET:u'10.80.17.153'
-<-PYT:instance23.instance_type
-->RET:u't1.micro'
-<-PYT:instance23.private_ip_address
-->RET:u'10.80.17.105'
-<-PYT:instance23.id
-->RET:u'i-0da45f4e'
-<-PYT:instance22.id
-->RET:u'i-5e17ea1d'
 <-PYT:instance20.id
 ->RET:u'i-8a9e80ca'
 <-PYT:instance19.id
@@ -217,14 +200,12 @@
 ->RET:u'i-1a011a5a'
 <-PYT:boto.ec2.connect_to_region('eu-west-1')
 ->RET:Instance('EC2Connection', 'ec2connection_eu_west_11')
-<-PYT:ec2connection_eu_west_11.get_only_instances(instance_ids=[u'i-8a9e80ca', u'i-059e8e45', u'i-1a011a5a'])
-->RET:[Instance('Instance', 'instance24'), Instance('Instance', 'instance25'), Instance('Instance', 'instance26')]
+<-PYT:ec2connection_eu_west_11.get_only_instances(instance_ids=[u'i-1a011a5a'])
+->RET:[Instance('Instance', 'instance24')]
 <-PYT:instance24.remove_tag('TextTest user')
-<-PYT:instance25.remove_tag('TextTest user')
-<-PYT:instance26.remove_tag('TextTest user')
 <-PYT:boto.ec2.connect_to_region('eu-west-1')
 ->RET:Instance('EC2Connection', 'ec2connection_eu_west_12')
-<-PYT:ec2connection_eu_west_12.get_only_instances(instance_ids=[u'i-0da45f4e', u'i-5e17ea1d'])
-->RET:[Instance('Instance', 'instance27'), Instance('Instance', 'instance28')]
-<-PYT:instance27.remove_tag('TextTest user')
-<-PYT:instance28.remove_tag('TextTest user')
+<-PYT:ec2connection_eu_west_12.get_only_instances(instance_ids=[u'i-8a9e80ca', u'i-059e8e45'])
+->RET:[Instance('Instance', 'instance25'), Instance('Instance', 'instance26')]
+<-PYT:instance25.remove_tag('TextTest user')
+<-PYT:instance26.remove_tag('TextTest user')

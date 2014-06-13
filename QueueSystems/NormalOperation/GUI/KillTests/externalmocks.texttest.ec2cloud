@@ -1,25 +1,21 @@
-<-SRV:TextTest slave server started on 10.67.19.36:38767
-<-CMD:ssh -q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 -x ec2-user@10.80.17.112 mkdir -p '/users/geoff/work/master/Testing' '/tmp/geoff/texttest.ec2cloud.gui.15May101224.18159/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/KillTests'
-<-CMD:ssh -q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 -x ec2-user@10.80.17.126 mkdir -p '/users/geoff/work/master/Testing' '/tmp/geoff/texttest.ec2cloud.gui.15May101224.18159/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/KillTests'
-<-CMD:rsync -e "ssh -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10" -av --copy-unsafe-links --delete --exclude-from=/users/geoff/work/master/Testing/TextTest/etc/rsync_exclude_patterns /users/geoff/work/master/Testing/TextTest ec2-user@10.80.17.112:'/users/geoff/work/master/Testing'
+<-SRV:TextTest slave server started on 10.67.6.156:37247
+<-CMD:ssh -q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 -x ec2-user@10.80.17.153 mkdir -p '/users/geoff/work/master/Testing' '/tmp/geoff/texttest.ec2cloud.gui.12Jun140158.114458/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/KillTests'
+<-CMD:ssh -q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 -x ec2-user@10.80.17.105 mkdir -p '/users/geoff/work/master/Testing' '/tmp/geoff/texttest.ec2cloud.gui.12Jun140158.114458/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/KillTests'
+<-CMD:rsync -e "ssh -x -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10" -av --copy-unsafe-links --delete --exclude-from=/users/geoff/work/master/Testing/TextTest/etc/rsync_exclude_patterns /users/geoff/work/master/Testing/TextTest ec2-user@10.80.17.105:'/users/geoff/work/master/Testing'
 ->OUT:sending incremental file list
-TextTest/lib/default/
-TextTest/lib/default/__init__.py
-TextTest/lib/queuesystem/
-TextTest/lib/queuesystem/ec2cloud.py
 
-sent 11584 bytes  received 879 bytes  8308.67 bytes/sec
-total size is 6178035  speedup is 495.71
-<-CMD:rsync -e "ssh -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10" -av --copy-unsafe-links --delete --exclude-from=/users/geoff/work/master/Testing/TextTest/etc/rsync_exclude_patterns /users/geoff/work/master/Testing/TextTest ec2-user@10.80.17.126:'/users/geoff/work/master/Testing'
+sent 9563 bytes  received 83 bytes  3858.40 bytes/sec
+total size is 6257363  speedup is 648.70
+<-CMD:rsync -e "ssh -x -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10" -av --copy-unsafe-links --delete --exclude-from=/users/geoff/work/master/Testing/TextTest/etc/rsync_exclude_patterns /users/geoff/work/master/Testing/TextTest ec2-user@10.80.17.153:'/users/geoff/work/master/Testing'
 ->OUT:sending incremental file list
+TextTest/lib/
 TextTest/lib/default/
-TextTest/lib/default/__init__.py
+TextTest/lib/default/batch/
 TextTest/lib/queuesystem/
-TextTest/lib/queuesystem/ec2cloud.py
 
-sent 11584 bytes  received 879 bytes  4985.20 bytes/sec
-total size is 6178035  speedup is 495.71
-<-CMD:rsync -e "ssh -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10" -av --copy-unsafe-links --delete --exclude-from=/users/geoff/work/master/Testing/TextTest/etc/rsync_exclude_patterns /tmp/geoff/texttest.ec2cloud.gui.15May101224.18159/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/KillTests/TargetApp ec2-user@10.80.17.112:'/tmp/geoff/texttest.ec2cloud.gui.15May101224.18159/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/KillTests'
+sent 9575 bytes  received 95 bytes  3868.00 bytes/sec
+total size is 6257363  speedup is 647.09
+<-CMD:rsync -e "ssh -x -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10" -av --copy-unsafe-links --delete --exclude-from=/users/geoff/work/master/Testing/TextTest/etc/rsync_exclude_patterns /tmp/geoff/texttest.ec2cloud.gui.12Jun140158.114458/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/KillTests/TargetApp ec2-user@10.80.17.153:'/tmp/geoff/texttest.ec2cloud.gui.12Jun140158.114458/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/KillTests'
 ->OUT:sending incremental file list
 TargetApp/
 TargetApp/busywait.py
@@ -36,6 +32,7 @@ TargetApp/config.sleep.gui
 TargetApp/config.sleep.localtmp
 TargetApp/config.sleep.parallel
 TargetApp/config.sleep.parallel.oneperf
+TargetApp/config.sleep.reqdata
 TargetApp/config.sleep.screenshots
 TargetApp/knownbugs.sleep.kb
 TargetApp/screenshots.py
@@ -58,9 +55,9 @@ TargetApp/Basic/output.sleep.cpulimit
 TargetApp/Basic2/
 TargetApp/Basic2/options.sleep
 
-sent 5160 bytes  received 636 bytes  3864.00 bytes/sec
-total size is 3025  speedup is 0.52
-<-CMD:rsync -e "ssh -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10" -av --copy-unsafe-links --delete --exclude-from=/users/geoff/work/master/Testing/TextTest/etc/rsync_exclude_patterns /tmp/geoff/texttest.ec2cloud.gui.15May101224.18159/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/KillTests/TargetApp ec2-user@10.80.17.126:'/tmp/geoff/texttest.ec2cloud.gui.15May101224.18159/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/KillTests'
+sent 5360 bytes  received 655 bytes  4010.00 bytes/sec
+total size is 3054  speedup is 0.51
+<-CMD:rsync -e "ssh -x -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10" -av --copy-unsafe-links --delete --exclude-from=/users/geoff/work/master/Testing/TextTest/etc/rsync_exclude_patterns /tmp/geoff/texttest.ec2cloud.gui.12Jun140158.114458/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/KillTests/TargetApp ec2-user@10.80.17.105:'/tmp/geoff/texttest.ec2cloud.gui.12Jun140158.114458/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/KillTests'
 ->OUT:sending incremental file list
 TargetApp/
 TargetApp/busywait.py
@@ -77,6 +74,7 @@ TargetApp/config.sleep.gui
 TargetApp/config.sleep.localtmp
 TargetApp/config.sleep.parallel
 TargetApp/config.sleep.parallel.oneperf
+TargetApp/config.sleep.reqdata
 TargetApp/config.sleep.screenshots
 TargetApp/knownbugs.sleep.kb
 TargetApp/screenshots.py
@@ -99,187 +97,187 @@ TargetApp/Basic/output.sleep.cpulimit
 TargetApp/Basic2/
 TargetApp/Basic2/options.sleep
 
-sent 5160 bytes  received 636 bytes  2318.40 bytes/sec
-total size is 3025  speedup is 0.52
-->CLI:2781
-sleep:Basic
-(idefault.rundependent
-Filtering
-p1
-(dp2
-S'category'
-p3
-S'initial_filter'
-p4
-sS'freeText'
-p5
-S'Filtering stored result files on ip-10-80-17-112'
-p6
-sS'started'
-p7
-I0
-sS'completed'
-p8
-I0
-sS'briefText'
-p9
-S''
-sS'executionHosts'
-p10
-(lp11
-S'ip-10-80-17-112'
-p12
-asS'observers'
-p13
-(lp14
-sS'passSelf'
-p15
-I00
-sS'lifecycleChange'
-p16
-S'start initial filtering'
-p17
-sb.
-->CLI:2781
-sleep:Basic
-(idefault.runtest
-Running
-p1
-(dp2
-S'category'
-p3
-S'running'
-p4
-sS'freeText'
-p5
-S'Running on ip-10-80-17-112'
-p6
-sS'started'
-p7
-I1
-sS'completed'
-p8
-I0
-sS'briefText'
-p9
-S'RUN (ip-10-80-17-112)'
-p10
-sS'executionHosts'
-p11
-(lp12
-S'ip-10-80-17-112'
-p13
-asS'observers'
-p14
-(lp15
-sS'passSelf'
-p16
-I00
-sS'lifecycleChange'
-p17
-S'start'
-p18
-sb.
-->CLI:31421
-sleep:Basic2
-(idefault.rundependent
-Filtering
-p1
-(dp2
-S'category'
-p3
-S'initial_filter'
-p4
-sS'freeText'
-p5
-S'Filtering stored result files on ip-10-80-17-126'
-p6
-sS'started'
-p7
-I0
-sS'completed'
-p8
-I0
-sS'briefText'
-p9
-S''
-sS'executionHosts'
-p10
-(lp11
-S'ip-10-80-17-126'
-p12
-asS'observers'
-p13
-(lp14
-sS'passSelf'
-p15
-I00
-sS'lifecycleChange'
-p16
-S'start initial filtering'
-p17
-sb.
-->CLI:31421
-sleep:Basic2
-(idefault.runtest
-Running
-p1
-(dp2
-S'category'
-p3
-S'running'
-p4
-sS'freeText'
-p5
-S'Running on ip-10-80-17-126'
-p6
-sS'started'
-p7
-I1
-sS'completed'
-p8
-I0
-sS'briefText'
-p9
-S'RUN (ip-10-80-17-126)'
-p10
-sS'executionHosts'
-p11
-(lp12
-S'ip-10-80-17-126'
-p13
-asS'observers'
-p14
-(lp15
-sS'passSelf'
-p16
-I00
-sS'lifecycleChange'
-p17
-S'start'
-p18
-sb.
-<-CMD:cd /tmp/geoff/texttest.ec2cloud.gui.15May101224.18159/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/KillTests/texttesttmp/dynamic_gui.15May101226.18169/slavelogs; ssh -q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 -x -A ec2-user@10.80.17.112 /users/geoff/work/master/Testing/TextTest/bin/texttest.py -d /tmp/geoff/texttest.ec2cloud.gui.15May101224.18159/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/KillTests/TargetApp -a sleep -l -tp Basic -slave /tmp/geoff/texttest.ec2cloud.gui.15May101224.18159/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/KillTests/texttesttmp/dynamic_gui.15May101226.18169 -servaddr 127.0.0.1:44882 -slavefilesynch geoff@127.0.0.1
-->OUT:Using Application SLEEP
-Running SLEEP test-suite TargetApp
-  Running SLEEP test-case Basic
-Terminating testing due to external interruption (RUNLIMIT2)
-Killing running test (process id 2797)
-Comparing differences for SLEEP test-suite TargetApp
-  Comparing differences for SLEEP test-case Basic (on errors.sleep,output.sleep)
-->EXC:-12
-<-CMD:cd /tmp/geoff/texttest.ec2cloud.gui.15May101224.18159/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/KillTests/texttesttmp/dynamic_gui.15May101226.18169/slavelogs; ssh -q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 -x -A ec2-user@10.80.17.126 /users/geoff/work/master/Testing/TextTest/bin/texttest.py -d /tmp/geoff/texttest.ec2cloud.gui.15May101224.18159/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/KillTests/TargetApp -a sleep -l -tp Basic2 -slave /tmp/geoff/texttest.ec2cloud.gui.15May101224.18159/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/KillTests/texttesttmp/dynamic_gui.15May101226.18169 -servaddr 127.0.0.1:44882 -slavefilesynch geoff@127.0.0.1
+sent 5360 bytes  received 655 bytes  4010.00 bytes/sec
+total size is 3054  speedup is 0.51
+<-CMD:cd /tmp/geoff/texttest.ec2cloud.gui.12Jun140158.114458/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/KillTests/texttesttmp/dynamic_gui.12Jun140041.114486/slavelogs; ssh -q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 -x -A ec2-user@10.80.17.153 /users/geoff/work/master/Testing/TextTest/bin/texttest.py -d /tmp/geoff/texttest.ec2cloud.gui.12Jun140158.114458/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/KillTests/TargetApp -a sleep -l -tp Basic2 -slave /tmp/geoff/texttest.ec2cloud.gui.12Jun140158.114458/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/KillTests/texttesttmp/dynamic_gui.12Jun140041.114486 -servaddr 10.67.6.156:60912 -slavefilesynch geoff@10.67.6.156
 ->OUT:Using Application SLEEP
 Running SLEEP test-suite TargetApp
   Running SLEEP test-case Basic2
 Terminating testing due to external interruption (RUNLIMIT2)
-Killing running test (process id 31438)
+Killing running test (process id 2393)
 Comparing differences for SLEEP test-suite TargetApp
   Comparing differences for SLEEP test-case Basic2 (on errors.sleep,output.sleep)
 ->EXC:-12
-<-CMD:ssh -q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 -x ec2-user@10.80.17.126 python -c ""import os; os.kill(31421, 12)""
-<-CMD:ssh -q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 -x ec2-user@10.80.17.112 python -c ""import os; os.kill(2781, 12)""
-->CLI:31421.NO_REUSE
+->CLI:2508
+sleep:Basic
+(idefault.rundependent
+Filtering
+p1
+(dp2
+S'category'
+p3
+S'initial_filter'
+p4
+sS'freeText'
+p5
+S'Filtering stored result files on ip-10-80-17-105'
+p6
+sS'started'
+p7
+I0
+sS'completed'
+p8
+I0
+sS'briefText'
+p9
+S''
+sS'executionHosts'
+p10
+(lp11
+S'ip-10-80-17-105'
+p12
+asS'observers'
+p13
+(lp14
+sS'passSelf'
+p15
+I00
+sS'lifecycleChange'
+p16
+S'start initial filtering'
+p17
+sb.
+->CLI:2377
+sleep:Basic2
+(idefault.rundependent
+Filtering
+p1
+(dp2
+S'category'
+p3
+S'initial_filter'
+p4
+sS'freeText'
+p5
+S'Filtering stored result files on ip-10-80-17-153'
+p6
+sS'started'
+p7
+I0
+sS'completed'
+p8
+I0
+sS'briefText'
+p9
+S''
+sS'executionHosts'
+p10
+(lp11
+S'ip-10-80-17-153'
+p12
+asS'observers'
+p13
+(lp14
+sS'passSelf'
+p15
+I00
+sS'lifecycleChange'
+p16
+S'start initial filtering'
+p17
+sb.
+->CLI:2508
+sleep:Basic
+(idefault.runtest
+Running
+p1
+(dp2
+S'category'
+p3
+S'running'
+p4
+sS'freeText'
+p5
+S'Running on ip-10-80-17-105'
+p6
+sS'started'
+p7
+I1
+sS'completed'
+p8
+I0
+sS'briefText'
+p9
+S'RUN (ip-10-80-17-105)'
+p10
+sS'executionHosts'
+p11
+(lp12
+S'ip-10-80-17-105'
+p13
+asS'observers'
+p14
+(lp15
+sS'passSelf'
+p16
+I00
+sS'lifecycleChange'
+p17
+S'start'
+p18
+sb.
+->CLI:2377
+sleep:Basic2
+(idefault.runtest
+Running
+p1
+(dp2
+S'category'
+p3
+S'running'
+p4
+sS'freeText'
+p5
+S'Running on ip-10-80-17-153'
+p6
+sS'started'
+p7
+I1
+sS'completed'
+p8
+I0
+sS'briefText'
+p9
+S'RUN (ip-10-80-17-153)'
+p10
+sS'executionHosts'
+p11
+(lp12
+S'ip-10-80-17-153'
+p13
+asS'observers'
+p14
+(lp15
+sS'passSelf'
+p16
+I00
+sS'lifecycleChange'
+p17
+S'start'
+p18
+sb.
+<-CMD:cd /tmp/geoff/texttest.ec2cloud.gui.12Jun140158.114458/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/KillTests/texttesttmp/dynamic_gui.12Jun140041.114486/slavelogs; ssh -q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 -x -A ec2-user@10.80.17.105 /users/geoff/work/master/Testing/TextTest/bin/texttest.py -d /tmp/geoff/texttest.ec2cloud.gui.12Jun140158.114458/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/KillTests/TargetApp -a sleep -l -tp Basic -slave /tmp/geoff/texttest.ec2cloud.gui.12Jun140158.114458/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/KillTests/texttesttmp/dynamic_gui.12Jun140041.114486 -servaddr 10.67.6.156:60912 -slavefilesynch geoff@10.67.6.156
+->OUT:Using Application SLEEP
+Running SLEEP test-suite TargetApp
+  Running SLEEP test-case Basic
+Terminating testing due to external interruption (RUNLIMIT2)
+Killing running test (process id 2524)
+Comparing differences for SLEEP test-suite TargetApp
+  Comparing differences for SLEEP test-case Basic (on errors.sleep,output.sleep)
+->EXC:-12
+<-CMD:ssh -q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 -x ec2-user@10.80.17.153 python -c ""import os; os.kill(2377, 12)""
+<-CMD:ssh -q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 -x ec2-user@10.80.17.105 python -c ""import os; os.kill(2508, 12)""
+->CLI:2377.NO_REUSE
 sleep:Basic2
 (idefault.rundependent
 Filtering
@@ -291,7 +289,7 @@ S'final_filter'
 p4
 sS'freeText'
 p5
-S'Filtering and comparing newly generated result files on ip-10-80-17-126'
+S'Filtering and comparing newly generated result files on ip-10-80-17-153'
 p6
 sS'started'
 p7
@@ -305,7 +303,7 @@ S''
 sS'executionHosts'
 p10
 (lp11
-S'ip-10-80-17-126'
+S'ip-10-80-17-153'
 p12
 asS'observers'
 p13
@@ -336,14 +334,14 @@ g3
 S'running'
 p25
 sg5
-S'Running on ip-10-80-17-126'
+S'Running on ip-10-80-17-153'
 p26
 sg7
 I1
 sg8
 I0
 sg9
-S'RUN (ip-10-80-17-126)'
+S'RUN (ip-10-80-17-153)'
 p27
 sg10
 g11
@@ -355,7 +353,7 @@ sg16
 S'start'
 p29
 sbsg5
-S'Test killed explicitly at 09:44\n'
+S'Test killed explicitly at 08:00\n'
 p30
 sg7
 I1
@@ -375,7 +373,7 @@ S''
 sg18
 g19
 sbsb.
-->CLI:2781.NO_REUSE
+->CLI:2508.NO_REUSE
 sleep:Basic
 (idefault.rundependent
 Filtering
@@ -387,7 +385,7 @@ S'final_filter'
 p4
 sS'freeText'
 p5
-S'Filtering and comparing newly generated result files on ip-10-80-17-112'
+S'Filtering and comparing newly generated result files on ip-10-80-17-105'
 p6
 sS'started'
 p7
@@ -401,7 +399,7 @@ S''
 sS'executionHosts'
 p10
 (lp11
-S'ip-10-80-17-112'
+S'ip-10-80-17-105'
 p12
 asS'observers'
 p13
@@ -432,14 +430,14 @@ g3
 S'running'
 p25
 sg5
-S'Running on ip-10-80-17-112'
+S'Running on ip-10-80-17-105'
 p26
 sg7
 I1
 sg8
 I0
 sg9
-S'RUN (ip-10-80-17-112)'
+S'RUN (ip-10-80-17-105)'
 p27
 sg10
 g11
@@ -451,7 +449,7 @@ sg16
 S'start'
 p29
 sbsg5
-S'Test killed explicitly at 09:45\n'
+S'Test killed explicitly at 08:00\n'
 p30
 sg7
 I1
@@ -471,7 +469,7 @@ S''
 sg18
 g19
 sbsb.
-->CLI:31421.NO_REUSE
+->CLI:2377.NO_REUSE
 sleep:Basic2
 (idefault.comparetest
 TestComparison
@@ -489,7 +487,7 @@ p7
 (lp8
 sS'freeText'
 p9
-S'Test killed explicitly at 09:44\n---------- New result in errors ----------\n---------- New result in output ----------\nSleeping for 20 seconds...\n'
+S'Test killed explicitly at 08:00\n---------- New result in errors ----------\n---------- New result in output ----------\nSleeping for 5 seconds...\n'
 p10
 sS'started'
 p11
@@ -512,7 +510,7 @@ g3
 S'running'
 p18
 sg9
-S'Running on ip-10-80-17-126'
+S'Running on ip-10-80-17-153'
 p19
 sg11
 I1
@@ -521,12 +519,12 @@ p20
 I0
 sS'briefText'
 p21
-S'RUN (ip-10-80-17-126)'
+S'RUN (ip-10-80-17-153)'
 p22
 sS'executionHosts'
 p23
 (lp24
-S'ip-10-80-17-126'
+S'ip-10-80-17-153'
 p25
 asS'observers'
 p26
@@ -539,7 +537,7 @@ p29
 S'start'
 p30
 sbsg9
-S'Test killed explicitly at 09:44\n'
+S'Test killed explicitly at 08:00\n'
 p31
 sg11
 I1
@@ -568,7 +566,7 @@ sg26
 (lp34
 sS'appAbsPath'
 p35
-S'/tmp/geoff/texttest.ec2cloud.gui.24Jan154337.23565/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/KillTests/TargetApp'
+S'/tmp/geoff/texttest.ec2cloud.gui.12Jun140040.113671/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/KillTests/TargetApp'
 p36
 sS'allResults'
 p37
@@ -582,7 +580,7 @@ p41
 S''
 sS'tmpFile'
 p42
-S'/tmp/geoff/texttest.ec2cloud.gui.24Jan154337.23565/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/KillTests/texttesttmp/dynamic_gui.24Jan154340.23664/sleep/Basic2/errors.sleep'
+S'/tmp/geoff/texttest.ec2cloud.gui.12Jun140040.113671/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/KillTests/texttesttmp/dynamic_gui.12Jun140041.113681/sleep/Basic2/errors.sleep'
 p43
 sS'severity'
 p44
@@ -611,7 +609,7 @@ p53
 I30
 sbsS'tmpCmpFile'
 p54
-S'/tmp/geoff/texttest.ec2cloud.gui.24Jan154337.23565/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/KillTests/texttesttmp/dynamic_gui.24Jan154340.23664/sleep/Basic2/framework_tmp/errors.sleepcmp'
+S'/tmp/geoff/texttest.ec2cloud.gui.12Jun140040.113671/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/KillTests/texttesttmp/dynamic_gui.12Jun140041.113681/sleep/Basic2/framework_tmp/errors.sleepcmp'
 p55
 sS'textDiffTool'
 p56
@@ -632,10 +630,10 @@ FileComparison
 p62
 (dp63
 g41
-S'Sleeping for 20 seconds...\n'
+S'Sleeping for 5 seconds...\n'
 p64
 sg42
-S'/tmp/geoff/texttest.ec2cloud.gui.24Jan154337.23565/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/KillTests/texttesttmp/dynamic_gui.24Jan154340.23664/sleep/Basic2/output.sleep'
+S'/tmp/geoff/texttest.ec2cloud.gui.12Jun140040.113671/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/KillTests/texttesttmp/dynamic_gui.12Jun140041.113681/sleep/Basic2/output.sleep'
 p65
 sg44
 I1
@@ -655,7 +653,8 @@ I500
 sg53
 I30
 sbsg54
-g65
+S'/tmp/geoff/texttest.ec2cloud.gui.12Jun140040.113671/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/KillTests/texttesttmp/dynamic_gui.12Jun140041.113681/sleep/Basic2/framework_tmp/output.sleepcmp'
+p68
 sg56
 g57
 sg58
@@ -664,26 +663,26 @@ sg59
 I00
 sg60
 S'output'
-p68
+p69
 sbasg28
 I00
 sS'correctResults'
-p69
-(lp70
+p70
+(lp71
 sg29
 S'complete'
-p71
-sS'appWriteDir'
 p72
-S'/tmp/geoff/texttest.ec2cloud.gui.24Jan154337.23565/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/KillTests/texttesttmp/dynamic_gui.24Jan154340.23664'
+sS'appWriteDir'
 p73
-sS'newResults'
+S'/tmp/geoff/texttest.ec2cloud.gui.12Jun140040.113671/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/KillTests/texttesttmp/dynamic_gui.12Jun140041.113681'
 p74
-(lp75
+sS'newResults'
+p75
+(lp76
 g39
 ag62
 asb.
-->CLI:2781.NO_REUSE
+->CLI:2508.NO_REUSE
 sleep:Basic
 (idefault.comparetest
 TestComparison
@@ -702,11 +701,11 @@ p7
 (dp8
 S'freeTextBody'
 p9
-S'1,2c1\n< Sleeping for 5 seconds...\n< Done\n---\n> Sleeping for 20 seconds...\n'
+S'2d1\n< Done\n'
 p10
 sS'tmpFile'
 p11
-S'/tmp/geoff/texttest.ec2cloud.gui.24Jan154337.23565/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/KillTests/texttesttmp/dynamic_gui.24Jan154340.23664/sleep/Basic/output.sleep'
+S'/tmp/geoff/texttest.ec2cloud.gui.12Jun140040.113671/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/KillTests/texttesttmp/dynamic_gui.12Jun140041.113681/sleep/Basic/output.sleep'
 p12
 sS'severity'
 p13
@@ -716,7 +715,7 @@ p14
 I1
 sS'stdFile'
 p15
-S'/tmp/geoff/texttest.ec2cloud.gui.24Jan154337.23565/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/KillTests/TargetApp/Basic/output.sleep'
+S'/tmp/geoff/texttest.ec2cloud.gui.12Jun140040.113671/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/KillTests/TargetApp/Basic/output.sleep'
 p16
 sS'stdCmpFile'
 p17
@@ -758,7 +757,7 @@ p31
 (lp32
 sS'freeText'
 p33
-S'Test killed explicitly at 09:45\n---------- Differences in output ----------\n1,2c1\n< Sleeping for 5 seconds...\n< Done\n---\n> Sleeping for 20 seconds...\n'
+S'Test killed explicitly at 08:00\n---------- Differences in output ----------\n2d1\n< Done\n'
 p34
 sS'started'
 p35
@@ -781,7 +780,7 @@ g3
 S'running'
 p42
 sg33
-S'Running on ip-10-80-17-112'
+S'Running on ip-10-80-17-105'
 p43
 sg35
 I1
@@ -790,12 +789,12 @@ p44
 I0
 sS'briefText'
 p45
-S'RUN (ip-10-80-17-112)'
+S'RUN (ip-10-80-17-105)'
 p46
 sS'executionHosts'
 p47
 (lp48
-S'ip-10-80-17-112'
+S'ip-10-80-17-105'
 p49
 asS'observers'
 p50
@@ -808,7 +807,7 @@ p53
 S'start'
 p54
 sbsg33
-S'Test killed explicitly at 09:45\n'
+S'Test killed explicitly at 08:00\n'
 p55
 sg35
 I1
@@ -837,7 +836,7 @@ sg50
 (lp58
 sS'appAbsPath'
 p59
-S'/tmp/geoff/texttest.ec2cloud.gui.24Jan154337.23565/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/KillTests/TargetApp'
+S'/tmp/geoff/texttest.ec2cloud.gui.12Jun140040.113671/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/KillTests/TargetApp'
 p60
 sS'allResults'
 p61
@@ -848,17 +847,17 @@ p63
 (dp64
 g9
 Nsg11
-S'/tmp/geoff/texttest.ec2cloud.gui.24Jan154337.23565/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/KillTests/texttesttmp/dynamic_gui.24Jan154340.23664/sleep/Basic/errors.sleep'
+S'/tmp/geoff/texttest.ec2cloud.gui.12Jun140040.113671/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/KillTests/texttesttmp/dynamic_gui.12Jun140041.113681/sleep/Basic/errors.sleep'
 p65
 sg13
 I1
 sg14
 I0
 sg15
-S'/tmp/geoff/texttest.ec2cloud.gui.24Jan154337.23565/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/KillTests/TargetApp/Basic/errors.sleep'
+S'/tmp/geoff/texttest.ec2cloud.gui.12Jun140040.113671/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/KillTests/TargetApp/Basic/errors.sleep'
 p66
 sg17
-S'/tmp/geoff/texttest.ec2cloud.gui.24Jan154337.23565/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/KillTests/texttesttmp/dynamic_gui.24Jan154340.23664/sleep/Basic/framework_tmp/errors.sleeporigcmp'
+S'/tmp/geoff/texttest.ec2cloud.gui.12Jun140040.113671/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/KillTests/texttesttmp/dynamic_gui.12Jun140041.113681/sleep/Basic/framework_tmp/errors.sleeporigcmp'
 p67
 sg18
 F-1
@@ -872,7 +871,7 @@ I500
 sg23
 I30
 sbsg24
-S'/tmp/geoff/texttest.ec2cloud.gui.24Jan154337.23565/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/KillTests/texttesttmp/dynamic_gui.24Jan154340.23664/sleep/Basic/framework_tmp/errors.sleepcmp'
+S'/tmp/geoff/texttest.ec2cloud.gui.12Jun140040.113671/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/KillTests/texttesttmp/dynamic_gui.12Jun140041.113681/sleep/Basic/framework_tmp/errors.sleepcmp'
 p70
 sg25
 g26
@@ -895,7 +894,7 @@ S'complete'
 p74
 sS'appWriteDir'
 p75
-S'/tmp/geoff/texttest.ec2cloud.gui.24Jan154337.23565/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/KillTests/texttesttmp/dynamic_gui.24Jan154340.23664'
+S'/tmp/geoff/texttest.ec2cloud.gui.12Jun140040.113671/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/KillTests/texttesttmp/dynamic_gui.12Jun140041.113681'
 p76
 sS'newResults'
 p77

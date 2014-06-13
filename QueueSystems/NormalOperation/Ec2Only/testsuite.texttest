@@ -5,6 +5,9 @@ ExternalCheckoutSave
 # Make sure we can send multiple jobs to a multicore machine without re-synching
 MulticoreMachines
 
+# If some of the machines are unavailable, ignore them
+FindAvailableMachines
+
 # Ec2 slaves run on a different file system, need to transfer files back and remove everything
 # at the end
 RemoteSlave
