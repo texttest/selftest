@@ -57,7 +57,7 @@
 <-PYT:instance11.tags
 ->RET:Instance('TagSet', 'tagset11')
 <-PYT:tagset11.get('Name', '')
-->RET:u'geoff_texttest'
+->RET:u'fakeuser_texttest'
 <-PYT:instance11.id
 ->RET:u'i-8d480fc1'
 <-PYT:instance12.tags
@@ -69,7 +69,7 @@
 <-PYT:instance13.tags
 ->RET:Instance('TagSet', 'tagset13')
 <-PYT:tagset13.get('Name', '')
-->RET:u'texttest-geoff-new'
+->RET:u'texttest-fakeuser-new'
 <-PYT:instance13.id
 ->RET:u'i-38077c74'
 <-PYT:ec2connection_eu_west_1.get_all_instance_status([u'i-dcb7cc93', u'i-fb3c43b4', u'i-8d480fc1', u'i-07b7cc48', u'i-ae8dd0e2', u'i-38077c74'])
@@ -126,41 +126,41 @@
 ->RET:raise exceptions.StopIteration('')
 <-PYT:tagset13.get('TextTest user', '')
 ->RET:''
-<-PYT:instance13.add_tag('TextTest user', 'geoff_12Jun11:53:26')
+<-PYT:instance13.add_tag('TextTest user', 'fakeuser_12Jun11:53:26')
 <-PYT:tagset11.get('TextTest user', '')
 ->RET:''
-<-PYT:instance11.add_tag('TextTest user', 'geoff_12Jun11:53:26')
+<-PYT:instance11.add_tag('TextTest user', 'fakeuser_12Jun11:53:26')
 <-PYT:tagset12.get('TextTest user', '')
 ->RET:''
-<-PYT:instance12.add_tag('TextTest user', 'geoff_12Jun11:53:26')
+<-PYT:instance12.add_tag('TextTest user', 'fakeuser_12Jun11:53:26')
 <-PYT:tagset1.get('TextTest user', '')
 ->RET:''
-<-PYT:instance1.add_tag('TextTest user', 'geoff_12Jun11:53:26')
+<-PYT:instance1.add_tag('TextTest user', 'fakeuser_12Jun11:53:26')
 <-PYT:tagset4.get('TextTest user', '')
 ->RET:''
-<-PYT:instance4.add_tag('TextTest user', 'geoff_12Jun11:53:26')
+<-PYT:instance4.add_tag('TextTest user', 'fakeuser_12Jun11:53:26')
 <-PYT:ec2connection_eu_west_1.get_only_instances(instance_ids=[u'i-38077c74', u'i-8d480fc1', u'i-ae8dd0e2', u'i-fb3c43b4', u'i-dcb7cc93'])
 ->RET:[Instance('Instance', 'instance19'), Instance('Instance', 'instance20'), Instance('Instance', 'instance21'), Instance('Instance', 'instance22'), Instance('Instance', 'instance23')]
 <-PYT:instance19.tags
 ->RET:Instance('TagSet', 'tagset19')
 <-PYT:tagset19.get('TextTest user', '')
-->RET:u'geoff_12Jun11:53:26'
+->RET:u'fakeuser_12Jun11:53:26'
 <-PYT:instance20.tags
 ->RET:Instance('TagSet', 'tagset20')
 <-PYT:tagset20.get('TextTest user', '')
-->RET:u'geoff_12Jun11:53:26'
+->RET:u'fakeuser_12Jun11:53:26'
 <-PYT:instance21.tags
 ->RET:Instance('TagSet', 'tagset21')
 <-PYT:tagset21.get('TextTest user', '')
-->RET:u'geoff_12Jun11:53:26'
+->RET:u'fakeuser_12Jun11:53:26'
 <-PYT:instance22.tags
 ->RET:Instance('TagSet', 'tagset22')
 <-PYT:tagset22.get('TextTest user', '')
-->RET:u'geoff_12Jun11:53:26'
+->RET:u'fakeuser_12Jun11:53:26'
 <-PYT:instance23.tags
 ->RET:Instance('TagSet', 'tagset23')
 <-PYT:tagset23.get('TextTest user', '')
-->RET:u'geoff_12Jun11:53:26'
+->RET:u'fakeuser_12Jun11:53:26'
 <-PYT:instance19.instance_type
 ->RET:u't1.micro'
 <-PYT:instance19.private_ip_address
