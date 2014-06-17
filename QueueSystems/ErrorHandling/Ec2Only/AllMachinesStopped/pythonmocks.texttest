@@ -2,6 +2,8 @@
 <-PYT:boto.__path__
 ->RET:['Fake value just to mark that it exists']
 <-PYT:import boto.ec2
+<-PYT:boto.ec2.connection.EC2Connection.DefaultRegionName
+->RET:'eu-west-1'
 <-PYT:boto.ec2.connect_to_region('eu-west-1')
 ->RET:Instance('EC2Connection(AWSQueryConnection, AWSAuthConnection, object)', 'ec2connection_eu_west_1')
 <-PYT:ec2connection_eu_west_1.get_only_instances()
