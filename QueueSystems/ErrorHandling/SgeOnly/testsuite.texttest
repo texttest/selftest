@@ -23,5 +23,9 @@ BadTest
 # Make sure we can ignore unexpected printouts
 UnexpectedOutput
 
+# We should notice crashed slaves without waiting for the user to kill them. If they write an error
+# before starting TextTest, we should find that too...
+ShowSlaveStartErrors
+
 # Error handling to do with network trouble
 NetworkErrors

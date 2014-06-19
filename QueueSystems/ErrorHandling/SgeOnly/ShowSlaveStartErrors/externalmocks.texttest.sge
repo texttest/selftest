@@ -1,0 +1,8 @@
+<-SRV:TextTest slave server started on 10.67.7.36:34108
+<-CMD:cd /tmp/geoff/texttest.sge.19Jun122415.29985/texttest.sge/QueueSystems/ErrorHandling/SgeOnly/ShowSlaveStartErrors/texttesttmp/grid_core_files; qsub -N Test-Basic-SLEEP.killing -w e -notify -m n -cwd -b y -o /dev/null -e /tmp/geoff/texttest.sge.19Jun122415.29985/texttest.sge/QueueSystems/ErrorHandling/SgeOnly/ShowSlaveStartErrors/texttesttmp/grid_core_files/slave_start_errors.fakeuser exec "$SHELL -c "exec /users/geoff/work/master/Testing/TextTest/bin/texttest.py -d /tmp/geoff/texttest.sge.19Jun122415.29985/texttest.sge/QueueSystems/ErrorHandling/SgeOnly/ShowSlaveStartErrors/TargetApp -a sleep.killing -l -tp Basic -slave /tmp/geoff/texttest.sge.19Jun122415.29985/texttest.sge/QueueSystems/ErrorHandling/SgeOnly/ShowSlaveStartErrors/texttesttmp/sleep.killing.19Jun122422.30307 -servaddr 10.67.7.36:52541 -b short_local""
+->OUT:Your job 1 (stupid) has been submitted.
+<-SRV:Completed submission of all tests
+->FIL:grid_core_files
+<-CMD:qstat
+<-CMD:qacct -j 1
+->OUT:Some random accounting info
