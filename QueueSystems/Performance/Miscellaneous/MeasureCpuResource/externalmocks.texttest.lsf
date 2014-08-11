@@ -1,4 +1,4 @@
-<-CLI:17652
+<-CLI:7252
 perf:Failures
 (idefault.rundependent
 Filtering
@@ -37,7 +37,14 @@ p16
 S'start initial filtering'
 p17
 sb.
-<-CLI:17652
+<-CMD:cd /tmp/geoff/texttest.lsf.11Aug110805.1770/texttest.lsf/QueueSystems/Performance/Miscellaneous/MeasureCpuResource/texttesttmp/console.11Aug110808.7252/slavelogs; bhosts -w -R performance_resource
+->OUT:HOST_NAME          STATUS          JL/U    MAX  NJOBS    RUN  SSUSP  USUSP    RSV 
+perf_machine1.carmen.se ok                 -      2      0      0      0      0      0
+perf_machine2.carmen.se ok                 -      2      0      0      0      0      0
+bagotville.carmen.se    ok                 -      2      0      0      0      0      0
+batesville.carmen.se    ok                 -      2      0      0      0      0      0
+bellville.carmen.se     ok                 -      2      0      0      0      0      0
+<-CLI:7252
 perf:Failures
 (idefault.runtest
 Running
@@ -77,20 +84,13 @@ p17
 S'start'
 p18
 sb.
-<-CMD:cd /tmp/geoff/texttest.sge.05Mar103723.39264/texttest.sge/QueueSystems/Performance/Miscellaneous/MeasureCpuResource/texttesttmp/console.05Mar103726.44349/slavelogs; bhosts -w -R performance_resource
-->OUT:HOST_NAME          STATUS          JL/U    MAX  NJOBS    RUN  SSUSP  USUSP    RSV 
-perf_machine1.carmen.se ok                 -      2      0      0      0      0      0
-perf_machine2.carmen.se ok                 -      2      0      0      0      0      0
-bagotville.carmen.se    ok                 -      2      0      0      0      0      0
-batesville.carmen.se    ok                 -      2      0      0      0      0      0
-bellville.carmen.se     ok                 -      2      0      0      0      0      0
-<-CMD:cd /home/geoff/.texttest/tmp/dynamic_gui.27Jan222940.17262/texttest.lsf/QueueSystems/Performance/Miscellaneous/MeasureCpuResource/texttesttmp/console.27Jan222959.17652/perf/Failures; time -p -o /home/geoff/.texttest/tmp/dynamic_gui.27Jan222940.17262/texttest.lsf/QueueSystems/Performance/Miscellaneous/MeasureCpuResource/texttesttmp/console.27Jan222959.17652/perf/Failures/framework_tmp/unixperf python /home/geoff/.texttest/tmp/dynamic_gui.27Jan222940.17262/texttest.lsf/QueueSystems/Performance/Miscellaneous/MeasureCpuResource/TargetApp/writeperfnumbers.py
+<-CMD:cd /tmp/geoff/texttest.lsf.11Aug110805.1770/texttest.lsf/QueueSystems/Performance/Miscellaneous/MeasureCpuResource/texttesttmp/console.11Aug110808.7252/perf/Failures; time -p -o /tmp/geoff/texttest.lsf.11Aug110805.1770/texttest.lsf/QueueSystems/Performance/Miscellaneous/MeasureCpuResource/texttesttmp/console.11Aug110808.7252/perf/Failures/framework_tmp/unixperf python /tmp/geoff/texttest.lsf.11Aug110805.1770/texttest.lsf/QueueSystems/Performance/Miscellaneous/MeasureCpuResource/TargetApp/writeperfnumbers.py
 ->FIL:Failures
 ->OUT:cpu time: 2.5 seconds
 ->ERR:cpu time: 2.5 seconds
-<-CMD:cd /tmp/geoff/texttest.sge.05Mar103723.39264/texttest.sge/QueueSystems/Performance/Miscellaneous/MeasureCpuResource/texttesttmp/console.05Mar103726.44349/slavelogs; bjobs -m perf_machine1 -u all -w
+<-CMD:cd /tmp/geoff/texttest.lsf.11Aug110805.1770/texttest.lsf/QueueSystems/Performance/Miscellaneous/MeasureCpuResource/texttesttmp/console.11Aug110808.7252/slavelogs; bjobs -m perf_machine1 -u all -w
 ->ERR:No unfinished job found on host/group <perf_machine1>
-<-CLI:17652
+<-CLI:7252
 perf:Failures
 (idefault.rundependent
 Filtering
@@ -129,7 +129,7 @@ p16
 S'start final filtering and comparison'
 p17
 sb.
-<-CLI:17652
+<-CLI:7252
 perf:Failures
 (idefault.comparetest
 TestComparison
@@ -170,7 +170,7 @@ p18
 (lp19
 sS'appAbsPath'
 p20
-S'/home/geoff/.texttest/tmp/dynamic_gui.27Jan222940.17262/texttest.lsf/QueueSystems/Performance/Miscellaneous/MeasureCpuResource/TargetApp'
+S'/tmp/geoff/texttest.lsf.11Aug110805.1770/texttest.lsf/QueueSystems/Performance/Miscellaneous/MeasureCpuResource/TargetApp'
 p21
 sS'allResults'
 p22
@@ -183,7 +183,7 @@ S'freeTextBody'
 p26
 NsS'tmpFile'
 p27
-S'/home/geoff/.texttest/tmp/dynamic_gui.27Jan222940.17262/texttest.lsf/QueueSystems/Performance/Miscellaneous/MeasureCpuResource/texttesttmp/console.27Jan222959.17652/perf/Failures/errors.perf'
+S'/tmp/geoff/texttest.lsf.11Aug110805.1770/texttest.lsf/QueueSystems/Performance/Miscellaneous/MeasureCpuResource/texttesttmp/console.11Aug110808.7252/perf/Failures/errors.perf'
 p28
 sS'severity'
 p29
@@ -193,11 +193,11 @@ p30
 I0
 sS'stdFile'
 p31
-S'/home/geoff/.texttest/tmp/dynamic_gui.27Jan222940.17262/texttest.lsf/QueueSystems/Performance/Miscellaneous/MeasureCpuResource/TargetApp/Failures/errors.perf'
+S'/tmp/geoff/texttest.lsf.11Aug110805.1770/texttest.lsf/QueueSystems/Performance/Miscellaneous/MeasureCpuResource/TargetApp/Failures/errors.perf'
 p32
 sS'stdCmpFile'
 p33
-S'/home/geoff/.texttest/tmp/dynamic_gui.27Jan222940.17262/texttest.lsf/QueueSystems/Performance/Miscellaneous/MeasureCpuResource/texttesttmp/console.27Jan222959.17652/perf/Failures/framework_tmp/errors.perforigcmp'
+S'/tmp/geoff/texttest.lsf.11Aug110805.1770/texttest.lsf/QueueSystems/Performance/Miscellaneous/MeasureCpuResource/texttesttmp/console.11Aug110808.7252/perf/Failures/framework_tmp/errors.perforigcmp'
 p34
 sS'textDiffToolMaxSize'
 p35
@@ -216,7 +216,7 @@ p40
 I30
 sbsS'tmpCmpFile'
 p41
-S'/home/geoff/.texttest/tmp/dynamic_gui.27Jan222940.17262/texttest.lsf/QueueSystems/Performance/Miscellaneous/MeasureCpuResource/texttesttmp/console.27Jan222959.17652/perf/Failures/framework_tmp/errors.perfcmp'
+S'/tmp/geoff/texttest.lsf.11Aug110805.1770/texttest.lsf/QueueSystems/Performance/Miscellaneous/MeasureCpuResource/texttesttmp/console.11Aug110808.7252/perf/Failures/framework_tmp/errors.perfcmp'
 p42
 sS'textDiffTool'
 p43
@@ -238,17 +238,17 @@ p49
 (dp50
 g26
 Nsg27
-S'/home/geoff/.texttest/tmp/dynamic_gui.27Jan222940.17262/texttest.lsf/QueueSystems/Performance/Miscellaneous/MeasureCpuResource/texttesttmp/console.27Jan222959.17652/perf/Failures/output.perf'
+S'/tmp/geoff/texttest.lsf.11Aug110805.1770/texttest.lsf/QueueSystems/Performance/Miscellaneous/MeasureCpuResource/texttesttmp/console.11Aug110808.7252/perf/Failures/output.perf'
 p51
 sg29
 I1
 sg30
 I0
 sg31
-S'/home/geoff/.texttest/tmp/dynamic_gui.27Jan222940.17262/texttest.lsf/QueueSystems/Performance/Miscellaneous/MeasureCpuResource/TargetApp/Failures/output.perf'
+S'/tmp/geoff/texttest.lsf.11Aug110805.1770/texttest.lsf/QueueSystems/Performance/Miscellaneous/MeasureCpuResource/TargetApp/Failures/output.perf'
 p52
 sg33
-S'/home/geoff/.texttest/tmp/dynamic_gui.27Jan222940.17262/texttest.lsf/QueueSystems/Performance/Miscellaneous/MeasureCpuResource/texttesttmp/console.27Jan222959.17652/perf/Failures/framework_tmp/output.perforigcmp'
+S'/tmp/geoff/texttest.lsf.11Aug110805.1770/texttest.lsf/QueueSystems/Performance/Miscellaneous/MeasureCpuResource/texttesttmp/console.11Aug110808.7252/perf/Failures/framework_tmp/output.perforigcmp'
 p53
 sg35
 F-1
@@ -262,7 +262,7 @@ I500
 sg40
 I30
 sbsg41
-S'/home/geoff/.texttest/tmp/dynamic_gui.27Jan222940.17262/texttest.lsf/QueueSystems/Performance/Miscellaneous/MeasureCpuResource/texttesttmp/console.27Jan222959.17652/perf/Failures/framework_tmp/output.perfcmp'
+S'/tmp/geoff/texttest.lsf.11Aug110805.1770/texttest.lsf/QueueSystems/Performance/Miscellaneous/MeasureCpuResource/texttesttmp/console.11Aug110808.7252/perf/Failures/framework_tmp/output.perfcmp'
 p56
 sg43
 g44
@@ -281,7 +281,7 @@ g26
 S'CPU time   :       3.5 sec. on perf_machine1\nReal time  :       7.0 sec.\n'
 p60
 sg27
-S'/home/geoff/.texttest/tmp/dynamic_gui.27Jan222940.17262/texttest.lsf/QueueSystems/Performance/Miscellaneous/MeasureCpuResource/texttesttmp/console.27Jan222959.17652/perf/Failures/performance.perf'
+S'/tmp/geoff/texttest.lsf.11Aug110805.1770/texttest.lsf/QueueSystems/Performance/Miscellaneous/MeasureCpuResource/texttesttmp/console.11Aug110808.7252/perf/Failures/performance.perf'
 p61
 sg29
 I2
@@ -327,7 +327,7 @@ S'complete'
 p70
 sS'appWriteDir'
 p71
-S'/home/geoff/.texttest/tmp/dynamic_gui.27Jan222940.17262/texttest.lsf/QueueSystems/Performance/Miscellaneous/MeasureCpuResource/texttesttmp/console.27Jan222959.17652'
+S'/tmp/geoff/texttest.lsf.11Aug110805.1770/texttest.lsf/QueueSystems/Performance/Miscellaneous/MeasureCpuResource/texttesttmp/console.11Aug110808.7252'
 p72
 sS'newResults'
 p73
