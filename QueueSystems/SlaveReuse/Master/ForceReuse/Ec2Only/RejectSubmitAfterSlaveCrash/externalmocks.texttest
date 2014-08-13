@@ -1,0 +1,45 @@
+<-SRV:TextTest slave server started on 10.67.6.53:53344
+<-SRV:Completed submission of tests up to capacity
+<-CMD:ssh -q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 -x ec2-user@10.80.17.105 mkdir -p '/users/geoff/work/master/Testing' '/tmp/geoff/texttest.ec2cloud.07Aug161511.41704/texttest.ec2cloud/QueueSystems/SlaveReuse/Master/ForceReuse/Ec2Only/RejectSubmitAfterSlaveCrash'
+<-CMD:rsync -e "ssh -x -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10" -av --copy-unsafe-links --delete --exclude-from=/users/geoff/work/master/Testing/TextTest/etc/rsync_exclude_patterns /users/geoff/work/master/Testing/TextTest ec2-user@10.80.17.105:'/users/geoff/work/master/Testing'
+->OUT:sending incremental file list
+TextTest/lib/queuesystem/
+TextTest/lib/queuesystem/ec2cloud.py
+
+sent 14252 bytes  received 255 bytes  5802.80 bytes/sec
+total size is 6264584  speedup is 431.83
+<-CMD:rsync -e "ssh -x -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10" -av --copy-unsafe-links --delete --exclude-from=/users/geoff/work/master/Testing/TextTest/etc/rsync_exclude_patterns /tmp/geoff/texttest.ec2cloud.07Aug161511.41704/texttest.ec2cloud/QueueSystems/SlaveReuse/Master/ForceReuse/Ec2Only/RejectSubmitAfterSlaveCrash/TargetApp ec2-user@10.80.17.105:'/tmp/geoff/texttest.ec2cloud.07Aug161511.41704/texttest.ec2cloud/QueueSystems/SlaveReuse/Master/ForceReuse/Ec2Only/RejectSubmitAfterSlaveCrash'
+->OUT:sending incremental file list
+TargetApp/
+TargetApp/config.hello
+TargetApp/config.hello.altcheckout
+TargetApp/config.hello.gui
+TargetApp/config.hello.virtdisp
+TargetApp/environment.refvar.down
+TargetApp/environment.refvar.up
+TargetApp/hello.py
+TargetApp/testsuite.hello
+TargetApp/writedisplay.py
+TargetApp/Suite/
+TargetApp/Suite/config.hello.multiresource
+TargetApp/Suite/config.hello.parallel
+TargetApp/Suite/config.hello.resource
+TargetApp/Suite/environment.refvar.down
+TargetApp/Suite/environment.refvar.up
+TargetApp/Suite/testsuite.hello
+TargetApp/Suite/Test/
+TargetApp/Suite/Test/errors.hello
+TargetApp/Suite/Test/output.hello
+TargetApp/Suite/Test/output.hello.gui
+TargetApp/Suite/Test/output.hello.refvar
+TargetApp/Test/
+TargetApp/Test/config.hello.multiresource
+TargetApp/Test/environment.changeenv
+TargetApp/Test/errors.hello
+TargetApp/Test/output.hello
+
+sent 3182 bytes  received 465 bytes  2431.33 bytes/sec
+total size is 1443  speedup is 0.40
+<-CMD:cd /tmp/geoff/texttest.ec2cloud.07Aug161511.41704/texttest.ec2cloud/QueueSystems/SlaveReuse/Master/ForceReuse/Ec2Only/RejectSubmitAfterSlaveCrash/texttesttmp/console.07Aug161158.41709/slavelogs; ssh -q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 -x -A ec2-user@10.80.17.105 /users/geoff/work/master/Testing/TextTest/bin/texttest.py -d /tmp/geoff/texttest.ec2cloud.07Aug161511.41704/texttest.ec2cloud/QueueSystems/SlaveReuse/Master/ForceReuse/Ec2Only/RejectSubmitAfterSlaveCrash/TargetApp -a hello -l -tp Test -slave /tmp/geoff/texttest.ec2cloud.07Aug161511.41704/texttest.ec2cloud/QueueSystems/SlaveReuse/Master/ForceReuse/Ec2Only/RejectSubmitAfterSlaveCrash/texttesttmp/console.07Aug161158.41709 -servaddr 10.67.6.53:49302 -slavefilesynch fakeuser@10.67.6.53
+->ERR:Slave crashed!
+->EXC:1

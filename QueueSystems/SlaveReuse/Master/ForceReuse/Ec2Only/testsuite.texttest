@@ -1,2 +1,5 @@
 # If we have a race condition we need to try and grab some other instance to replace the one we missed
 RequestExtraCapacity
+
+# If the slaves crash, don't try to submit new ones. It's difficult, and chances are there is some problem with the node
+RejectSubmitAfterSlaveCrash
