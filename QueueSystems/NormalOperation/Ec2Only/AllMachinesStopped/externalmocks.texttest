@@ -1,13 +1,13 @@
 <-SRV:TextTest slave server started on 10.67.6.53:57214
 <-CMD:ssh -q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 -x ec2-user@10.80.17.102 mkdir -p '/users/geoff/work/master/Testing' '/tmp/geoff/texttest.ec2cloud.11Aug113638.30385/texttest.ec2cloud/QueueSystems/NormalOperation/Ec2Only/AllMachinesStopped'
-<-CMD:rsync -e "ssh -x -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10" -av --copy-unsafe-links --delete --exclude-from=/users/geoff/work/master/Testing/TextTest/etc/rsync_exclude_patterns /users/geoff/work/master/Testing/TextTest ec2-user@10.80.17.102:'/users/geoff/work/master/Testing'
+<-CMD:rsync -e "ssh -x -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10" -av --copy-unsafe-links --delete --delete-excluded --exclude-from=/users/geoff/work/master/Testing/TextTest/etc/rsync_exclude_patterns /users/geoff/work/master/Testing/TextTest ec2-user@10.80.17.102:'/users/geoff/work/master/Testing'
 ->OUT:sending incremental file list
 TextTest/lib/
 TextTest/lib/queuesystem/
 
 sent 9592 bytes  received 89 bytes  6454.00 bytes/sec
 total size is 6265827  speedup is 647.23
-<-CMD:rsync -e "ssh -x -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10" -av --copy-unsafe-links --delete --exclude-from=/users/geoff/work/master/Testing/TextTest/etc/rsync_exclude_patterns /tmp/geoff/texttest.ec2cloud.11Aug113638.30385/texttest.ec2cloud/QueueSystems/NormalOperation/Ec2Only/AllMachinesStopped/TargetApp ec2-user@10.80.17.102:'/tmp/geoff/texttest.ec2cloud.11Aug113638.30385/texttest.ec2cloud/QueueSystems/NormalOperation/Ec2Only/AllMachinesStopped'
+<-CMD:rsync -e "ssh -x -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10" -av --copy-unsafe-links --delete --delete-excluded --exclude-from=/users/geoff/work/master/Testing/TextTest/etc/rsync_exclude_patterns /tmp/geoff/texttest.ec2cloud.11Aug113638.30385/texttest.ec2cloud/QueueSystems/NormalOperation/Ec2Only/AllMachinesStopped/TargetApp ec2-user@10.80.17.102:'/tmp/geoff/texttest.ec2cloud.11Aug113638.30385/texttest.ec2cloud/QueueSystems/NormalOperation/Ec2Only/AllMachinesStopped'
 ->OUT:sending incremental file list
 TargetApp/
 TargetApp/busywait.py

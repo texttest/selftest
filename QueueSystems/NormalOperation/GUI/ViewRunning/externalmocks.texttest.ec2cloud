@@ -1,6 +1,6 @@
 <-SRV:TextTest slave server started on 10.67.6.156:39796
 <-CMD:ssh -q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 -x ec2-user@10.80.17.105 mkdir -p '/users/geoff/work/master/Testing' '/tmp/geoff/texttest.ec2cloud.gui.12Jun135929.113487/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/ViewRunning'
-<-CMD:rsync -e "ssh -x -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10" -av --copy-unsafe-links --delete --exclude-from=/users/geoff/work/master/Testing/TextTest/etc/rsync_exclude_patterns /users/geoff/work/master/Testing/TextTest ec2-user@10.80.17.105:'/users/geoff/work/master/Testing'
+<-CMD:rsync -e "ssh -x -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10" -av --copy-unsafe-links --delete --delete-excluded --exclude-from=/users/geoff/work/master/Testing/TextTest/etc/rsync_exclude_patterns /users/geoff/work/master/Testing/TextTest ec2-user@10.80.17.105:'/users/geoff/work/master/Testing'
 ->OUT:sending incremental file list
 TextTest/lib/
 TextTest/lib/default/
@@ -12,7 +12,7 @@ TextTest/storytext/lib/storytext/
 
 sent 9584 bytes  received 104 bytes  6458.67 bytes/sec
 total size is 6257363  speedup is 645.89
-<-CMD:rsync -e "ssh -x -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10" -av --copy-unsafe-links --delete --exclude-from=/users/geoff/work/master/Testing/TextTest/etc/rsync_exclude_patterns /tmp/geoff/texttest.ec2cloud.gui.12Jun135929.113487/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/ViewRunning/TargetApp ec2-user@10.80.17.105:'/tmp/geoff/texttest.ec2cloud.gui.12Jun135929.113487/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/ViewRunning'
+<-CMD:rsync -e "ssh -x -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10" -av --copy-unsafe-links --delete --delete-excluded --exclude-from=/users/geoff/work/master/Testing/TextTest/etc/rsync_exclude_patterns /tmp/geoff/texttest.ec2cloud.gui.12Jun135929.113487/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/ViewRunning/TargetApp ec2-user@10.80.17.105:'/tmp/geoff/texttest.ec2cloud.gui.12Jun135929.113487/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/ViewRunning'
 ->OUT:sending incremental file list
 TargetApp/
 TargetApp/busywait.py
@@ -142,7 +142,7 @@ p17
 S'start'
 p18
 sb.
-<-CMD:rsync -e "ssh -x -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10" -av --copy-unsafe-links --delete --exclude-from=/users/geoff/work/master/Testing/TextTest/etc/rsync_exclude_patterns ec2-user@10.80.17.105:'/tmp/geoff/texttest.ec2cloud.gui.12Jun135929.113487/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/ViewRunning/texttesttmp/sleep.killing2.12Jun135740.113504/sleep.killing2/Basic'/* /tmp/geoff/texttest.ec2cloud.gui.12Jun135929.113487/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/ViewRunning/texttesttmp/sleep.killing2.12Jun135740.113504/sleep.killing2/Basic
+<-CMD:rsync -e "ssh -x -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10" -av --copy-unsafe-links --delete --delete-excluded --exclude-from=/users/geoff/work/master/Testing/TextTest/etc/rsync_exclude_patterns ec2-user@10.80.17.105:'/tmp/geoff/texttest.ec2cloud.gui.12Jun135929.113487/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/ViewRunning/texttesttmp/sleep.killing2.12Jun135740.113504/sleep.killing2/Basic'/* /tmp/geoff/texttest.ec2cloud.gui.12Jun135929.113487/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/ViewRunning/texttesttmp/sleep.killing2.12Jun135740.113504/sleep.killing2/Basic
 ->FIL:Basic
 ->OUT:receiving incremental file list
 errors.sleep

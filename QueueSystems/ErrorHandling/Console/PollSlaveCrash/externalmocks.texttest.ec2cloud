@@ -1,13 +1,13 @@
 <-SRV:TextTest slave server started on 10.67.6.53:40592
 <-CMD:ssh -q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 -x ec2-user@10.80.17.105 mkdir -p '/users/geoff/work/master/Testing' '/tmp/geoff/texttest.ec2cloud.08Aug101036.88204/texttest.ec2cloud/QueueSystems/ErrorHandling/Console/PollSlaveCrash'
-<-CMD:rsync -e "ssh -x -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10" -av --copy-unsafe-links --delete --exclude-from=/users/geoff/work/master/Testing/TextTest/etc/rsync_exclude_patterns /users/geoff/work/master/Testing/TextTest ec2-user@10.80.17.105:'/users/geoff/work/master/Testing'
+<-CMD:rsync -e "ssh -x -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10" -av --copy-unsafe-links --delete --delete-excluded --exclude-from=/users/geoff/work/master/Testing/TextTest/etc/rsync_exclude_patterns /users/geoff/work/master/Testing/TextTest ec2-user@10.80.17.105:'/users/geoff/work/master/Testing'
 ->OUT:sending incremental file list
 TextTest/lib/queuesystem/
 TextTest/lib/queuesystem/ec2cloud.py
 
 sent 10192 bytes  received 117 bytes  6872.67 bytes/sec
 total size is 6146792  speedup is 596.25
-<-CMD:rsync -e "ssh -x -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10" -av --copy-unsafe-links --delete --exclude-from=/users/geoff/work/master/Testing/TextTest/etc/rsync_exclude_patterns /tmp/geoff/texttest.ec2cloud.08Aug101036.88204/texttest.ec2cloud/QueueSystems/ErrorHandling/Console/PollSlaveCrash/TargetApp ec2-user@10.80.17.105:'/tmp/geoff/texttest.ec2cloud.08Aug101036.88204/texttest.ec2cloud/QueueSystems/ErrorHandling/Console/PollSlaveCrash'
+<-CMD:rsync -e "ssh -x -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10" -av --copy-unsafe-links --delete --delete-excluded --exclude-from=/users/geoff/work/master/Testing/TextTest/etc/rsync_exclude_patterns /tmp/geoff/texttest.ec2cloud.08Aug101036.88204/texttest.ec2cloud/QueueSystems/ErrorHandling/Console/PollSlaveCrash/TargetApp ec2-user@10.80.17.105:'/tmp/geoff/texttest.ec2cloud.08Aug101036.88204/texttest.ec2cloud/QueueSystems/ErrorHandling/Console/PollSlaveCrash'
 ->OUT:sending incremental file list
 TargetApp/
 TargetApp/busywait.py

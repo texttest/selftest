@@ -1,14 +1,14 @@
 <-SRV:TextTest slave server started on 10.67.6.53:33571
 <-SRV:Completed submission of tests up to capacity
 <-CMD:ssh -q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 -x ec2-user@10.80.17.153 mkdir -p '/users/geoff/work/master/Testing' '/tmp/geoff/texttest.ec2cloud.08Aug154626.92512/texttest.ec2cloud/QueueSystems/SlaveReuse/Master/ForceReuse/Ec2Only/RequestExtraCapacity'
-<-CMD:rsync -e "ssh -x -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10" -av --copy-unsafe-links --delete --exclude-from=/users/geoff/work/master/Testing/TextTest/etc/rsync_exclude_patterns /users/geoff/work/master/Testing/TextTest ec2-user@10.80.17.153:'/users/geoff/work/master/Testing'
+<-CMD:rsync -e "ssh -x -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10" -av --copy-unsafe-links --delete --delete-excluded --exclude-from=/users/geoff/work/master/Testing/TextTest/etc/rsync_exclude_patterns /users/geoff/work/master/Testing/TextTest ec2-user@10.80.17.153:'/users/geoff/work/master/Testing'
 ->OUT:sending incremental file list
 TextTest/lib/queuesystem/
 TextTest/lib/queuesystem/ec2cloud.py
 
 sent 14252 bytes  received 255 bytes  5802.80 bytes/sec
 total size is 6264584  speedup is 431.83
-<-CMD:rsync -e "ssh -x -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10" -av --copy-unsafe-links --delete --exclude-from=/users/geoff/work/master/Testing/TextTest/etc/rsync_exclude_patterns /tmp/geoff/texttest.ec2cloud.08Aug154626.92512/texttest.ec2cloud/QueueSystems/SlaveReuse/Master/ForceReuse/Ec2Only/RequestExtraCapacity/TargetApp ec2-user@10.80.17.153:'/tmp/geoff/texttest.ec2cloud.08Aug154626.92512/texttest.ec2cloud/QueueSystems/SlaveReuse/Master/ForceReuse/Ec2Only/RequestExtraCapacity'
+<-CMD:rsync -e "ssh -x -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10" -av --copy-unsafe-links --delete --delete-excluded --exclude-from=/users/geoff/work/master/Testing/TextTest/etc/rsync_exclude_patterns /tmp/geoff/texttest.ec2cloud.08Aug154626.92512/texttest.ec2cloud/QueueSystems/SlaveReuse/Master/ForceReuse/Ec2Only/RequestExtraCapacity/TargetApp ec2-user@10.80.17.153:'/tmp/geoff/texttest.ec2cloud.08Aug154626.92512/texttest.ec2cloud/QueueSystems/SlaveReuse/Master/ForceReuse/Ec2Only/RequestExtraCapacity'
 ->OUT:sending incremental file list
 TargetApp/
 TargetApp/config.hello
