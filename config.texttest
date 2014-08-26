@@ -202,7 +202,7 @@ overview*:firefox
 
 # Necessary for version control tests on ec2 cloud
 [remote_program_options]
-rsync: -e 'ssh -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10' -av --copy-unsafe-links --delete --exclude ".bzr/" --exclude "*.pyc" --exclude ".nfs*" --exclude "core.[0-9]*" 
+rsync: -e 'ssh -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10' -av --copy-unsafe-links --delete --delete-excluded --exclude ".bzr/" --exclude "*.pyc" --exclude ".nfs*" --exclude "core.[0-9]*" 
 [end]
 
 # Things to collate
