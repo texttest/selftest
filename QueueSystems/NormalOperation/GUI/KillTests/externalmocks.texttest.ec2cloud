@@ -1,12 +1,12 @@
 <-SRV:TextTest slave server started on 10.67.6.156:37247
 <-CMD:ssh -q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 -x ec2-user@10.80.17.153 mkdir -p '/users/geoff/work/master/Testing' '/tmp/geoff/texttest.ec2cloud.gui.12Jun140158.114458/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/KillTests'
 <-CMD:ssh -q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 -x ec2-user@10.80.17.105 mkdir -p '/users/geoff/work/master/Testing' '/tmp/geoff/texttest.ec2cloud.gui.12Jun140158.114458/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/KillTests'
-<-CMD:rsync -e "ssh -x -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10" -av --copy-unsafe-links --delete --delete-excluded --exclude-from=/users/geoff/work/master/Testing/TextTest/etc/rsync_exclude_patterns /users/geoff/work/master/Testing/TextTest ec2-user@10.80.17.105:'/users/geoff/work/master/Testing'
+<-CMD:rsync -e "ssh -x -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10" -av --copy-unsafe-links --delete --exclude-from=/users/geoff/work/master/Testing/TextTest/etc/rsync_exclude_patterns /users/geoff/work/master/Testing/TextTest ec2-user@10.80.17.105:'/users/geoff/work/master/Testing'
 ->OUT:sending incremental file list
 
 sent 9563 bytes  received 83 bytes  3858.40 bytes/sec
 total size is 6257363  speedup is 648.70
-<-CMD:rsync -e "ssh -x -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10" -av --copy-unsafe-links --delete --delete-excluded --exclude-from=/users/geoff/work/master/Testing/TextTest/etc/rsync_exclude_patterns /users/geoff/work/master/Testing/TextTest ec2-user@10.80.17.153:'/users/geoff/work/master/Testing'
+<-CMD:rsync -e "ssh -x -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10" -av --copy-unsafe-links --delete --exclude-from=/users/geoff/work/master/Testing/TextTest/etc/rsync_exclude_patterns /users/geoff/work/master/Testing/TextTest ec2-user@10.80.17.153:'/users/geoff/work/master/Testing'
 ->OUT:sending incremental file list
 TextTest/lib/
 TextTest/lib/default/
@@ -15,7 +15,7 @@ TextTest/lib/queuesystem/
 
 sent 9575 bytes  received 95 bytes  3868.00 bytes/sec
 total size is 6257363  speedup is 647.09
-<-CMD:rsync -e "ssh -x -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10" -av --copy-unsafe-links --delete --delete-excluded --exclude-from=/users/geoff/work/master/Testing/TextTest/etc/rsync_exclude_patterns /tmp/geoff/texttest.ec2cloud.gui.12Jun140158.114458/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/KillTests/TargetApp ec2-user@10.80.17.153:'/tmp/geoff/texttest.ec2cloud.gui.12Jun140158.114458/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/KillTests'
+<-CMD:rsync -e "ssh -x -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10" -av --copy-unsafe-links --delete --exclude-from=/users/geoff/work/master/Testing/TextTest/etc/rsync_exclude_patterns /tmp/geoff/texttest.ec2cloud.gui.12Jun140158.114458/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/KillTests/TargetApp ec2-user@10.80.17.153:'/tmp/geoff/texttest.ec2cloud.gui.12Jun140158.114458/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/KillTests'
 ->OUT:sending incremental file list
 TargetApp/
 TargetApp/busywait.py
@@ -57,7 +57,7 @@ TargetApp/Basic2/options.sleep
 
 sent 5360 bytes  received 655 bytes  4010.00 bytes/sec
 total size is 3054  speedup is 0.51
-<-CMD:rsync -e "ssh -x -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10" -av --copy-unsafe-links --delete --delete-excluded --exclude-from=/users/geoff/work/master/Testing/TextTest/etc/rsync_exclude_patterns /tmp/geoff/texttest.ec2cloud.gui.12Jun140158.114458/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/KillTests/TargetApp ec2-user@10.80.17.105:'/tmp/geoff/texttest.ec2cloud.gui.12Jun140158.114458/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/KillTests'
+<-CMD:rsync -e "ssh -x -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10" -av --copy-unsafe-links --delete --exclude-from=/users/geoff/work/master/Testing/TextTest/etc/rsync_exclude_patterns /tmp/geoff/texttest.ec2cloud.gui.12Jun140158.114458/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/KillTests/TargetApp ec2-user@10.80.17.105:'/tmp/geoff/texttest.ec2cloud.gui.12Jun140158.114458/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/KillTests'
 ->OUT:sending incremental file list
 TargetApp/
 TargetApp/busywait.py
