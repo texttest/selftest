@@ -1,7 +1,7 @@
 #!/usr/local/bin/python
 
-from queuesystem import QueueSystemConfig
-import plugins
+from texttestlib import plugins
+from texttestlib.queuesystem import QueueSystemConfig
 
 def getConfig(optionMap):
     return Config(optionMap)

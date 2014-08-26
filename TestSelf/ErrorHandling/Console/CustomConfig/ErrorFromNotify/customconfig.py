@@ -1,5 +1,5 @@
 
-import default, plugins
+from texttestlib import default, plugins
 
 def getConfig(optionMap):
     return Config(optionMap)

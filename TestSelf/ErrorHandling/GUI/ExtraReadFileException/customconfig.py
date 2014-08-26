@@ -1,5 +1,6 @@
 
-import default, os
+import os
+from texttestlib import default
 
 def getConfig(*args):
     return Config(*args)

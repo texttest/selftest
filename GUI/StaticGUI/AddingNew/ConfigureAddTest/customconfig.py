@@ -1,5 +1,5 @@
 
-from default.gtkgui import default_gui
+from texttestlib.default.gtkgui import default_gui
 
 # Graphical import test
 class ImportTestCase(default_gui.ImportTestCase):

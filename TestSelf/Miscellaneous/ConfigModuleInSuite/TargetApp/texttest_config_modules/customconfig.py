@@ -1,4 +1,4 @@
-import default
+from texttestlib import default
 
 def getConfig(optionMap):
     return Config(optionMap)
