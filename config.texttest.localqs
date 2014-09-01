@@ -4,11 +4,11 @@ base_version:queuesystem
 pythonmocks:env=\{.*{REPLACE env=<something>}
 pythonmocks:env={->} .*:.*\}
 pythonmocks:^ .*:.*\},{REPLACE <something>,}
-pythonmocks:\'[^ \']*/texttest[\.py]*\'{REPLACE <path_to_texttest>}
+pythonmocks:\'[^ \']*/texttestc?[\.py]*\'{REPLACE <path_to_texttest>}
 pythonmocks:\'[^ \']*python\.exe*\'{REPLACE <path_to_python>}
 pythonmocks:<path_to_python>, <path_to_texttest>{REPLACE <path_to_texttest>}
 pythonmocks:0x[0-9a-fA-F]*{REPLACE <pointer>}
-output:[^ ]*/texttest[\.py]* {REPLACE <path_to_texttest> }
+output:[^ ]*/texttestc?[\.py]* {REPLACE <path_to_texttest> }
 output:[^ ]*python.exe {REPLACE <path_to_python> }
 output:<path_to_python> <path_to_texttest>{REPLACE <path_to_texttest>}
 output:-servaddr [^ ]*{REPLACE -servaddr <address>}

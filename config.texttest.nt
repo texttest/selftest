@@ -1,3 +1,6 @@
+# Path to the executable
+executable:${TEXTTEST_CHECKOUT}/Scripts/texttestc.py
+
 # don't run the SGE/LSF tests for now : they don't work on Windows...
 # don't run the tests that receive signals either
 extra_version:{CLEAR intcore}
@@ -13,3 +16,5 @@ extra_version:{CLEAR lsf.gui}
 # Save us having to maintain a separate .nt GUI log which is updated too often for this to be convenient
 gui_log:&lt;default browser&gt;{REPLACE firefox}
 pythonmocks:send_signal(15){REPLACE send_signal(12)}
+overview*:texttestc.py{REPLACE texttest}
+dynamic_gui_log:([^ ]*)/Scripts/texttestc.py{REPLACE \1/bin/texttest}
