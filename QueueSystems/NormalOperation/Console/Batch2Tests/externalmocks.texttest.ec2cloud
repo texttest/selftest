@@ -1,22 +1,7 @@
-<-SRV:TextTest slave server started on 10.67.6.53:55296
-<-CMD:ssh -q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 -x ec2-user@10.80.17.105 mkdir -p '/users/geoff/work/master/Testing' '/tmp/geoff/texttest.ec2cloud.08Aug101502.93351/texttest.ec2cloud/QueueSystems/NormalOperation/Console/Batch2Tests'
-<-CMD:ssh -q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 -x ec2-user@10.80.17.153 mkdir -p '/users/geoff/work/master/Testing' '/tmp/geoff/texttest.ec2cloud.08Aug101502.93351/texttest.ec2cloud/QueueSystems/NormalOperation/Console/Batch2Tests'
-<-CMD:rsync -e "ssh -x -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10" -av --copy-unsafe-links --delete --exclude-from=/users/geoff/work/master/Testing/TextTest/etc/rsync_exclude_patterns /users/geoff/work/master/Testing/TextTest ec2-user@10.80.17.153:'/users/geoff/work/master/Testing'
-->OUT:sending incremental file list
-TextTest/lib/default/batch/
-TextTest/lib/queuesystem/
-TextTest/lib/queuesystem/ec2cloud.py
-
-sent 12647 bytes  received 258 bytes  3687.14 bytes/sec
-total size is 6263525  speedup is 485.36
-<-CMD:rsync -e "ssh -x -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10" -av --copy-unsafe-links --delete --exclude-from=/users/geoff/work/master/Testing/TextTest/etc/rsync_exclude_patterns /users/geoff/work/master/Testing/TextTest ec2-user@10.80.17.105:'/users/geoff/work/master/Testing'
-->OUT:sending incremental file list
-TextTest/lib/queuesystem/
-TextTest/lib/queuesystem/ec2cloud.py
-
-sent 11256 bytes  received 255 bytes  3288.86 bytes/sec
-total size is 6263525  speedup is 544.13
-<-CMD:rsync -e "ssh -x -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10" -av --copy-unsafe-links --delete --exclude-from=/users/geoff/work/master/Testing/TextTest/etc/rsync_exclude_patterns /tmp/geoff/texttest.ec2cloud.08Aug101502.93351/texttest.ec2cloud/QueueSystems/NormalOperation/Console/Batch2Tests/TargetApp ec2-user@10.80.17.105:'/tmp/geoff/texttest.ec2cloud.08Aug101502.93351/texttest.ec2cloud/QueueSystems/NormalOperation/Console/Batch2Tests'
+<-SRV:TextTest slave server started on 10.67.7.175:49442
+<-CMD:ssh -q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 -x ec2-user@10.80.17.105 mkdir -p '/carm/proj/texttest-tmp/geoff/texttest.ec2cloud.02Sep110213.13757/texttest.ec2cloud/QueueSystems/NormalOperation/Console/Batch2Tests'
+<-CMD:ssh -q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 -x ec2-user@10.80.17.153 mkdir -p '/carm/proj/texttest-tmp/geoff/texttest.ec2cloud.02Sep110213.13757/texttest.ec2cloud/QueueSystems/NormalOperation/Console/Batch2Tests'
+<-CMD:rsync -e "ssh -x -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10" -av --copy-unsafe-links --delete --exclude-from=/users/geoff/work/master/Testing/TextTest/texttestlib/etc/rsync_exclude_patterns /carm/proj/texttest-tmp/geoff/texttest.ec2cloud.02Sep110213.13757/texttest.ec2cloud/QueueSystems/NormalOperation/Console/Batch2Tests/TargetApp ec2-user@10.80.17.153:'/carm/proj/texttest-tmp/geoff/texttest.ec2cloud.02Sep110213.13757/texttest.ec2cloud/QueueSystems/NormalOperation/Console/Batch2Tests'
 ->OUT:sending incremental file list
 TargetApp/
 TargetApp/busywait.py
@@ -58,7 +43,7 @@ TargetApp/Basic2/options.sleep
 
 sent 5603 bytes  received 655 bytes  4172.00 bytes/sec
 total size is 3297  speedup is 0.53
-<-CMD:rsync -e "ssh -x -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10" -av --copy-unsafe-links --delete --exclude-from=/users/geoff/work/master/Testing/TextTest/etc/rsync_exclude_patterns /tmp/geoff/texttest.ec2cloud.08Aug101502.93351/texttest.ec2cloud/QueueSystems/NormalOperation/Console/Batch2Tests/TargetApp ec2-user@10.80.17.153:'/tmp/geoff/texttest.ec2cloud.08Aug101502.93351/texttest.ec2cloud/QueueSystems/NormalOperation/Console/Batch2Tests'
+<-CMD:rsync -e "ssh -x -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10" -av --copy-unsafe-links --delete --exclude-from=/users/geoff/work/master/Testing/TextTest/texttestlib/etc/rsync_exclude_patterns /carm/proj/texttest-tmp/geoff/texttest.ec2cloud.02Sep110213.13757/texttest.ec2cloud/QueueSystems/NormalOperation/Console/Batch2Tests/TargetApp ec2-user@10.80.17.105:'/carm/proj/texttest-tmp/geoff/texttest.ec2cloud.02Sep110213.13757/texttest.ec2cloud/QueueSystems/NormalOperation/Console/Batch2Tests'
 ->OUT:sending incremental file list
 TargetApp/
 TargetApp/busywait.py
@@ -100,13 +85,13 @@ TargetApp/Basic2/options.sleep
 
 sent 5603 bytes  received 655 bytes  4172.00 bytes/sec
 total size is 3297  speedup is 0.53
-<-CMD:cd /tmp/geoff/texttest.ec2cloud.08Aug101502.93351/texttest.ec2cloud/QueueSystems/NormalOperation/Console/Batch2Tests/texttesttmp/local.07Aug150207.93360/slavelogs; ssh -q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 -x -A ec2-user@10.80.17.105 /users/geoff/work/master/Testing/TextTest/bin/texttest.py -d /tmp/geoff/texttest.ec2cloud.08Aug101502.93351/texttest.ec2cloud/QueueSystems/NormalOperation/Console/Batch2Tests/TargetApp -a sleep -l -tp Basic -slave /tmp/geoff/texttest.ec2cloud.08Aug101502.93351/texttest.ec2cloud/QueueSystems/NormalOperation/Console/Batch2Tests/texttesttmp/local.07Aug150207.93360 -servaddr 10.67.6.53:51557 -b local -slavefilesynch fakeuser@10.67.6.53
+<-CMD:cd /nfs/vm/texttest-tmp/geoff/texttest.ec2cloud.02Sep110213.13757/texttest.ec2cloud/QueueSystems/NormalOperation/Console/Batch2Tests/texttesttmp/local.07Aug150207.13779/slavelogs; ssh -q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 -x -A ec2-user@10.80.17.105 texttest -d /carm/proj/texttest-tmp/geoff/texttest.ec2cloud.02Sep110213.13757/texttest.ec2cloud/QueueSystems/NormalOperation/Console/Batch2Tests/TargetApp -a sleep -l -tp Basic -slave /carm/proj/texttest-tmp/geoff/texttest.ec2cloud.02Sep110213.13757/texttest.ec2cloud/QueueSystems/NormalOperation/Console/Batch2Tests/texttesttmp/local.07Aug150207.13779 -servaddr 10.67.7.175:60397 -b local -slavefilesynch fakeuser@10.67.7.175
 ->OUT:2014-08-07 09:02:21,276 - Using Application SLEEP
 2014-08-07 09:02:21,297 - Running SLEEP test-suite TargetApp
 2014-08-07 09:02:21,298 -   Running SLEEP test-case Basic
 2014-08-07 09:02:26,488 - Comparing differences for SLEEP test-suite TargetApp
 2014-08-07 09:02:26,493 -   Comparing differences for SLEEP test-case Basic - SUCCESS! (on errors.sleep,output.sleep)
-<-CMD:cd /tmp/geoff/texttest.ec2cloud.08Aug101502.93351/texttest.ec2cloud/QueueSystems/NormalOperation/Console/Batch2Tests/texttesttmp/local.07Aug150207.93360/slavelogs; ssh -q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 -x -A ec2-user@10.80.17.153 /users/geoff/work/master/Testing/TextTest/bin/texttest.py -d /tmp/geoff/texttest.ec2cloud.08Aug101502.93351/texttest.ec2cloud/QueueSystems/NormalOperation/Console/Batch2Tests/TargetApp -a sleep -l -tp Basic2 -slave /tmp/geoff/texttest.ec2cloud.08Aug101502.93351/texttest.ec2cloud/QueueSystems/NormalOperation/Console/Batch2Tests/texttesttmp/local.07Aug150207.93360 -servaddr 10.67.6.53:51557 -b local -slavefilesynch fakeuser@10.67.6.53
+<-CMD:cd /nfs/vm/texttest-tmp/geoff/texttest.ec2cloud.02Sep110213.13757/texttest.ec2cloud/QueueSystems/NormalOperation/Console/Batch2Tests/texttesttmp/local.07Aug150207.13779/slavelogs; ssh -q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 -x -A ec2-user@10.80.17.153 texttest -d /carm/proj/texttest-tmp/geoff/texttest.ec2cloud.02Sep110213.13757/texttest.ec2cloud/QueueSystems/NormalOperation/Console/Batch2Tests/TargetApp -a sleep -l -tp Basic2 -slave /carm/proj/texttest-tmp/geoff/texttest.ec2cloud.02Sep110213.13757/texttest.ec2cloud/QueueSystems/NormalOperation/Console/Batch2Tests/texttesttmp/local.07Aug150207.13779 -servaddr 10.67.7.175:60397 -b local -slavefilesynch fakeuser@10.67.7.175
 ->OUT:2014-08-07 09:02:21,535 - Using Application SLEEP
 2014-08-07 09:02:21,556 - Running SLEEP test-suite TargetApp
 2014-08-07 09:02:21,557 -   Running SLEEP test-case Basic2
