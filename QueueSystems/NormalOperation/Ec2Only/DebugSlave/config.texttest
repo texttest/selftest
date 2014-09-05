@@ -1,0 +1,4 @@
+[run_dependent_text]
+externalmocks:mkdir -p{WORD -1}{REPLACE <texttest_installation_parent>}
+externalmocks:(-slavefilesynch) [A-Za-z0-9\.-]*@[0-9\.]*{REPLACE \1 <user@host>}
+externalmocks:(rsync.*) [^<][^ ]* [^ ]*${REPLACE \1 <texttest_installation> <texttest_remote_installation>\n}

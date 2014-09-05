@@ -11,6 +11,9 @@ FindAvailableMachines
 # See what happens if we discover no machines available with the correct tag
 AllMachinesStopped
 
+# If we're debugging the slave, we should synch our own code across and run that: otherwise we need to release to try stuff out
+DebugSlave
+
 # Ec2 slaves run on a different file system, need to transfer files back and remove everything
 # at the end
 RemoteSlave
