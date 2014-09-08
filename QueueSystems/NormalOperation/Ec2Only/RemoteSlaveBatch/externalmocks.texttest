@@ -1,4 +1,4 @@
-<-CLI:8200
+<-CLI:6332
 sleep:Basic2
 (itexttestlib.default.runtest
 Running
@@ -10,7 +10,7 @@ S'running'
 p4
 sS'freeText'
 p5
-S'Running on seletar'
+S'Running on ip-10-80-17-102'
 p6
 sS'started'
 p7
@@ -20,12 +20,12 @@ p8
 I0
 sS'briefText'
 p9
-S'RUN (seletar)'
+S'RUN (ip-10-80-17-102)'
 p10
 sS'executionHosts'
 p11
 (lp12
-S'seletar'
+S'ip-10-80-17-102'
 p13
 asS'observers'
 p14
@@ -38,9 +38,9 @@ p17
 S'start'
 p18
 sb.
-<-CMD:cd /nfs/vm/texttest-tmp/geoff/texttest.ec2cloud.05Sep100133.8054/texttest.ec2cloud/QueueSystems/NormalOperation/Ec2Only/RemoteSlaveBatch/texttesttmp/default.05Sep100148.8200/slavelogs; rsync -e "ssh -x -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10" -av --exclude-from=/nfs/vm/texttest/geoff/Testing/TextTest/texttestlib/etc/rsync_exclude_patterns /carm/proj/texttest-tmp/geoff/texttest.ec2cloud.05Sep100133.8054/texttest.ec2cloud/QueueSystems/NormalOperation/Ec2Only/RemoteSlaveBatch/texttesttmp/default.05Sep100148.8200/sleep/Basic2 ec2-user@10.80.17.112:'/carm/proj/texttest-tmp/geoff/texttest.ec2cloud.05Sep100133.8054/texttest.ec2cloud/QueueSystems/NormalOperation/Ec2Only/RemoteSlaveBatch/texttesttmp/default.05Sep100148.8200/sleep'
+<-CMD:rsync -e "ssh -x -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10" -av --exclude-from=/nfs/vm/texttest/geoff/Testing/TextTest/texttestlib/etc/rsync_exclude_patterns /carm/proj/texttest-tmp/geoff/dynamic_gui.08Sep104111.59071/texttest.ec2cloud/QueueSystems/NormalOperation/Ec2Only/RemoteSlaveBatch/texttesttmp/default.08Sep044158.6332/sleep/Basic2 ec2-user@10.80.17.112:'/carm/proj/texttest-tmp/geoff/dynamic_gui.08Sep104111.59071/texttest.ec2cloud/QueueSystems/NormalOperation/Ec2Only/RemoteSlaveBatch/texttesttmp/default.08Sep044158.6332/sleep'
 ->OUT:sending incremental file list
-<-CLI:8200
+<-CLI:6332
 sleep:Basic2
 (itexttestlib.default.comparetest
 TestComparison
@@ -74,14 +74,14 @@ S''
 sS'executionHosts'
 p15
 (lp16
-S'seletar'
+S'ip-10-80-17-102'
 p17
 asS'observers'
 p18
 (lp19
 sS'appAbsPath'
 p20
-S'/carm/proj/texttest-tmp/geoff/texttest.ec2cloud.05Sep100133.8054/texttest.ec2cloud/QueueSystems/NormalOperation/Ec2Only/RemoteSlaveBatch/TargetApp'
+S'/carm/proj/texttest-tmp/geoff/dynamic_gui.08Sep104111.59071/texttest.ec2cloud/QueueSystems/NormalOperation/Ec2Only/RemoteSlaveBatch/TargetApp'
 p21
 sS'allResults'
 p22
@@ -95,7 +95,7 @@ p26
 S''
 sS'tmpFile'
 p27
-S'/carm/proj/texttest-tmp/geoff/texttest.ec2cloud.05Sep100133.8054/texttest.ec2cloud/QueueSystems/NormalOperation/Ec2Only/RemoteSlaveBatch/texttesttmp/default.05Sep100148.8200/sleep/Basic2/errors.sleep'
+S'/carm/proj/texttest-tmp/geoff/dynamic_gui.08Sep104111.59071/texttest.ec2cloud/QueueSystems/NormalOperation/Ec2Only/RemoteSlaveBatch/texttesttmp/default.08Sep044158.6332/sleep/Basic2/errors.sleep'
 p28
 sS'severity'
 p29
@@ -124,7 +124,7 @@ p38
 I30
 sbsS'tmpCmpFile'
 p39
-S'/carm/proj/texttest-tmp/geoff/texttest.ec2cloud.05Sep100133.8054/texttest.ec2cloud/QueueSystems/NormalOperation/Ec2Only/RemoteSlaveBatch/texttesttmp/default.05Sep100148.8200/sleep/Basic2/framework_tmp/errors.sleepcmp'
+S'/carm/proj/texttest-tmp/geoff/dynamic_gui.08Sep104111.59071/texttest.ec2cloud/QueueSystems/NormalOperation/Ec2Only/RemoteSlaveBatch/texttesttmp/default.08Sep044158.6332/sleep/Basic2/framework_tmp/errors.sleepcmp'
 p40
 sS'textDiffTool'
 p41
@@ -148,7 +148,7 @@ g26
 S'Sleeping for 5 seconds...\nDone\n'
 p49
 sg27
-S'/carm/proj/texttest-tmp/geoff/texttest.ec2cloud.05Sep100133.8054/texttest.ec2cloud/QueueSystems/NormalOperation/Ec2Only/RemoteSlaveBatch/texttesttmp/default.05Sep100148.8200/sleep/Basic2/output.sleep'
+S'/carm/proj/texttest-tmp/geoff/dynamic_gui.08Sep104111.59071/texttest.ec2cloud/QueueSystems/NormalOperation/Ec2Only/RemoteSlaveBatch/texttesttmp/default.08Sep044158.6332/sleep/Basic2/output.sleep'
 p50
 sg29
 I1
@@ -168,7 +168,7 @@ I500
 sg38
 I30
 sbsg39
-S'/carm/proj/texttest-tmp/geoff/texttest.ec2cloud.05Sep100133.8054/texttest.ec2cloud/QueueSystems/NormalOperation/Ec2Only/RemoteSlaveBatch/texttesttmp/default.05Sep100148.8200/sleep/Basic2/framework_tmp/output.sleepcmp'
+S'/carm/proj/texttest-tmp/geoff/dynamic_gui.08Sep104111.59071/texttest.ec2cloud/QueueSystems/NormalOperation/Ec2Only/RemoteSlaveBatch/texttesttmp/default.08Sep044158.6332/sleep/Basic2/framework_tmp/output.sleepcmp'
 p53
 sg41
 g42
@@ -191,7 +191,7 @@ S'complete'
 p59
 sS'appWriteDir'
 p60
-S'/carm/proj/texttest-tmp/geoff/texttest.ec2cloud.05Sep100133.8054/texttest.ec2cloud/QueueSystems/NormalOperation/Ec2Only/RemoteSlaveBatch/texttesttmp/default.05Sep100148.8200'
+S'/carm/proj/texttest-tmp/geoff/dynamic_gui.08Sep104111.59071/texttest.ec2cloud/QueueSystems/NormalOperation/Ec2Only/RemoteSlaveBatch/texttesttmp/default.08Sep044158.6332'
 p61
 sS'newResults'
 p62
