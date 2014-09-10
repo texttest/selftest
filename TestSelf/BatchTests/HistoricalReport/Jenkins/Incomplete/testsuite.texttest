@@ -1,8 +1,9 @@
 # If we don't get results, make sure we distinguish between aborted jobs and currently running jobs.
 # Don't write to cache in currently running case.
-# 
 AbortedAndRunning
 
 # If the fingerprint isn't ready on the current run, wait a bit before giving up
-# 
 WaitForFingerprint
+
+# If the build.xml file doesn't exist yet, wait a bit before giving up
+WaitForFingerprintNoFile
