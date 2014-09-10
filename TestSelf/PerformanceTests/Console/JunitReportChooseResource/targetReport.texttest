@@ -1,15 +1,15 @@
 FAILED=4
-29Feb2012
+10Sep2014
 PERF : 4 tests : 4 FAILED
 
 Summary of all Unsuccessful tests follows...
 ---------------------------------------------------------------------------------
 The following tests FAILED : 
 In PERF test-suite TargetApp:
-  - PERF test-case Success                : my_perf new
-  - PERF test-case Failures               : my_perf new
-  - PERF test-case FailuresCurrBelowLimit : my_perf new
-  - PERF test-case FailuresZeroTime       : my_perf new
+  - PERF test-case Success                : performance missing(+)
+  - PERF test-case Failures               : performance missing(+)
+  - PERF test-case FailuresCurrBelowLimit : performance missing(+)
+  - PERF test-case FailuresZeroTime       : performance missing(+)
 
 
 Details of all Unsuccessful tests follows...
@@ -17,12 +17,31 @@ Details of all Unsuccessful tests follows...
 
 Detailed information for the tests that FAILED follows...
 --------------------------------------------------------
-4 TESTS FAILED on gewoia :
+TEST FAILED on seletar : PERF test-case Success (under Success)
 ---------- New result in my_perf ----------
-Total My_perf  :      5.0 seconds on gewoia
-
--- PERF test-case Success (under Success)
--- PERF test-case Failures (under Failures)
--- PERF test-case FailuresCurrBelowLimit (under FailuresCurrBelowLimit)
--- PERF test-case FailuresZeroTime (under FailuresZeroTime)
+Total My_perf  :      5.0 seconds on seletar
+---------- Missing result in performance ----------
+CPU time   :      5.01 sec. on sedom
+Real time  :      8.24 sec.
+--------------------------------------------------------
+TEST FAILED on seletar : PERF test-case Failures (under Failures)
+---------- New result in my_perf ----------
+Total My_perf  :      5.0 seconds on seletar
+---------- Missing result in performance ----------
+CPU time   :       10.0 sec. on sedom
+Real time  :       18.2 sec.
+--------------------------------------------------------
+TEST FAILED on seletar : PERF test-case FailuresCurrBelowLimit (under FailuresCurrBelowLimit)
+---------- New result in my_perf ----------
+Total My_perf  :      5.0 seconds on seletar
+---------- Missing result in performance ----------
+CPU time   :       2.0 sec. on sedom
+Real time  :       18.2 sec.
+--------------------------------------------------------
+TEST FAILED on seletar : PERF test-case FailuresZeroTime (under FailuresZeroTime)
+---------- New result in my_perf ----------
+Total My_perf  :      5.0 seconds on seletar
+---------- Missing result in performance ----------
+CPU time   :       0.0 sec. on sedom
+Real time  :       18.2 sec.
 

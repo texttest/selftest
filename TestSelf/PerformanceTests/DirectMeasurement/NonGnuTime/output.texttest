@@ -2,8 +2,8 @@ Using Application CPU
 Running CPU test-suite TargetApp
   Running CPU test-case Test
 Comparing differences for CPU test-suite TargetApp
-  Comparing differences for CPU test-case Test (on errors.cpu,output.cpu)
-  CPU test-case Test FAILED : differences in errors,output
+  Comparing differences for CPU test-case Test (on errors.cpu,output.cpu,performance.cpu)
+  CPU test-case Test FAILED : missing results for performance, differences in errors,output
   View details(v), Approve(a) or continue(any other key)?
 ---------- Differences in errors ----------
 0a1,2
@@ -12,4 +12,7 @@ Comparing differences for CPU test-suite TargetApp
 ---------- Differences in output ----------
 1d0
 < Hello
+---------- Missing result in performance ----------
+CPU time   :       10.0 sec. on sedom
+Real time  :       18.2 sec.
   Approve(a) or continue(any other key)?
