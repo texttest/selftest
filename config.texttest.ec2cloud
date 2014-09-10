@@ -6,6 +6,8 @@ externalmocks:(-slavefilesynch) [A-Za-z0-9\.-]*@[0-9\.]*{REPLACE \1 <user@host>}
 [unordered_text]
 externalmocks:-slave{[->}^(<-|->CLI)
 externalmocks:SLEEP
+externalmocks:HELLO
+externalmocks:^->FIL:<target tmp dir>
 externalmocks:slavelogs
 externalmocks:Terminating testing
 externalmocks:Killing running test
