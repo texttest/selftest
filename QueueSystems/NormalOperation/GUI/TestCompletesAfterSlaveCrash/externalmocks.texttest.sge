@@ -1,0 +1,619 @@
+<-SRV:TextTest slave server started on 10.67.7.174:53648
+<-CMD:cd /nfs/vm/texttest-tmp/geoff/texttest.sge.gui.12Sep160543.115636/texttest.sge.gui/QueueSystems/NormalOperation/GUI/TestCompletesAfterSlaveCrash/texttesttmp/grid_core_files; qsub -N Test-Basic-SLEEP -w e -notify -m n -cwd -b y -v DISPLAY -o /dev/null -e /carm/proj/texttest-tmp/geoff/texttest.sge.gui.12Sep160543.115636/texttest.sge.gui/QueueSystems/NormalOperation/GUI/TestCompletesAfterSlaveCrash/texttesttmp/grid_core_files/slave_start_errors.geoff exec "$SHELL -c "exec /users/geoff/.local/texttest_test/bin/texttest -d /carm/proj/texttest-tmp/geoff/texttest.sge.gui.12Sep160543.115636/texttest.sge.gui/QueueSystems/NormalOperation/GUI/TestCompletesAfterSlaveCrash/TargetApp -a sleep -l -tp Basic -slave /carm/proj/texttest-tmp/geoff/texttest.sge.gui.12Sep160543.115636/texttest.sge.gui/QueueSystems/NormalOperation/GUI/TestCompletesAfterSlaveCrash/texttesttmp/sleep.12Sep160546.115647 -servaddr 10.67.7.174:54038 -keeptmp""
+->OUT:Your job 78093 ("Test-Basic-SLEEP") has been submitted
+<-CMD:cd /nfs/vm/texttest-tmp/geoff/texttest.sge.gui.12Sep160543.115636/texttest.sge.gui/QueueSystems/NormalOperation/GUI/TestCompletesAfterSlaveCrash/texttesttmp/grid_core_files; qsub -N Test-Basic2-SLEEP -w e -notify -m n -cwd -b y -v DISPLAY -o /dev/null -e /carm/proj/texttest-tmp/geoff/texttest.sge.gui.12Sep160543.115636/texttest.sge.gui/QueueSystems/NormalOperation/GUI/TestCompletesAfterSlaveCrash/texttesttmp/grid_core_files/slave_start_errors.geoff exec "$SHELL -c "exec /users/geoff/.local/texttest_test/bin/texttest -d /carm/proj/texttest-tmp/geoff/texttest.sge.gui.12Sep160543.115636/texttest.sge.gui/QueueSystems/NormalOperation/GUI/TestCompletesAfterSlaveCrash/TargetApp -a sleep -l -tp Basic2 -slave /carm/proj/texttest-tmp/geoff/texttest.sge.gui.12Sep160543.115636/texttest.sge.gui/QueueSystems/NormalOperation/GUI/TestCompletesAfterSlaveCrash/texttesttmp/sleep.12Sep160546.115647 -servaddr 10.67.7.174:54038 -keeptmp""
+->OUT:Your job 78094 ("Test-Basic2-SLEEP") has been submitted
+<-SRV:Completed submission of all tests
+<-CMD:qstat
+->OUT:job-ID  prior   name       user         state submit/start at     queue                          jclass                         slots ja-task-ID 
+------------------------------------------------------------------------------------------------------------------------------------------------
+9808013 0.50000 run master geoff        r     09/08/2014 08:48:53 login@seletar.got.jeppesensyst                                    1        
+  78094 0.50000 Test-Basic geoff        r     09/12/2014 15:44:15 opt@seronera.got.jeppesensyste                                    1        
+<-CMD:qacct -j 78093
+->OUT:==============================================================
+qname        opt                 
+hostname     seronera.got.jeppesensystems.com
+group        carm                
+owner        geoff               
+project      NONE                
+department   defaultdepartment   
+jobname      Test-Basic-SLEEP    
+jobnumber    78093               
+taskid       undefined
+account      sge                 
+priority     10                  
+qsub_time    Fri Sep 12 15:44:10 2014
+start_time   Fri Sep 12 15:44:15 2014
+end_time     Fri Sep 12 15:44:26 2014
+granted_pe   NONE                
+slots        1                   
+failed       0    
+exit_status  0                   
+ru_wallclock 11           
+ru_utime     0.691        
+ru_stime     0.341        
+ru_maxrss    15080               
+ru_ixrss     0                   
+ru_ismrss    0                   
+ru_idrss     0                   
+ru_isrss     0                   
+ru_minflt    95206               
+ru_majflt    0                   
+ru_nswap     0                   
+ru_inblock   928                 
+ru_oublock   224                 
+ru_msgsnd    0                   
+ru_msgrcv    0                   
+ru_nsignals  0                   
+ru_nvcsw     3115                
+ru_nivcsw    269                 
+cpu          1.032        
+mem          0.081             
+io           0.020             
+iow          0.000             
+maxvmem      529.695M
+arid         undefined
+jc_name      NONE
+<-CMD:qstat
+->OUT:job-ID  prior   name       user         state submit/start at     queue                          jclass                         slots ja-task-ID 
+------------------------------------------------------------------------------------------------------------------------------------------------
+9808013 0.50000 run master geoff        r     09/08/2014 08:48:53 login@seletar.got.jeppesensyst                                    1        
+  78094 0.50000 Test-Basic geoff        r     09/12/2014 15:44:15 opt@seronera.got.jeppesensyste                                    1        
+->CLI:27235
+sleep:Basic
+(itexttestlib.default.rundependent
+Filtering
+p1
+(dp2
+S'category'
+p3
+S'initial_filter'
+p4
+sS'freeText'
+p5
+S'Filtering stored result files on seronera'
+p6
+sS'started'
+p7
+I0
+sS'completed'
+p8
+I0
+sS'briefText'
+p9
+S''
+sS'executionHosts'
+p10
+(lp11
+S'seronera'
+p12
+asS'observers'
+p13
+(lp14
+sS'passSelf'
+p15
+I00
+sS'lifecycleChange'
+p16
+S'start initial filtering'
+p17
+sb.
+->CLI:27236
+sleep:Basic2
+(itexttestlib.default.rundependent
+Filtering
+p1
+(dp2
+S'category'
+p3
+S'initial_filter'
+p4
+sS'freeText'
+p5
+S'Filtering stored result files on seronera'
+p6
+sS'started'
+p7
+I0
+sS'completed'
+p8
+I0
+sS'briefText'
+p9
+S''
+sS'executionHosts'
+p10
+(lp11
+S'seronera'
+p12
+asS'observers'
+p13
+(lp14
+sS'passSelf'
+p15
+I00
+sS'lifecycleChange'
+p16
+S'start initial filtering'
+p17
+sb.
+->CLI:27236
+sleep:Basic2
+(itexttestlib.default.runtest
+Running
+p1
+(dp2
+S'category'
+p3
+S'running'
+p4
+sS'freeText'
+p5
+S'Running on seronera'
+p6
+sS'started'
+p7
+I1
+sS'completed'
+p8
+I0
+sS'briefText'
+p9
+S'RUN (seronera)'
+p10
+sS'executionHosts'
+p11
+(lp12
+S'seronera'
+p13
+asS'observers'
+p14
+(lp15
+sS'passSelf'
+p16
+I00
+sS'lifecycleChange'
+p17
+S'start'
+p18
+sb.
+->CLI:27235
+sleep:Basic
+(itexttestlib.default.runtest
+Running
+p1
+(dp2
+S'category'
+p3
+S'running'
+p4
+sS'freeText'
+p5
+S'Running on seronera'
+p6
+sS'started'
+p7
+I1
+sS'completed'
+p8
+I0
+sS'briefText'
+p9
+S'RUN (seronera)'
+p10
+sS'executionHosts'
+p11
+(lp12
+S'seronera'
+p13
+asS'observers'
+p14
+(lp15
+sS'passSelf'
+p16
+I00
+sS'lifecycleChange'
+p17
+S'start'
+p18
+sb.
+->CLI:27235
+sleep:Basic
+(itexttestlib.default.rundependent
+Filtering
+p1
+(dp2
+S'category'
+p3
+S'final_filter'
+p4
+sS'freeText'
+p5
+S'Filtering and comparing newly generated result files on seronera'
+p6
+sS'started'
+p7
+I1
+sS'completed'
+p8
+I0
+sS'briefText'
+p9
+S''
+sS'executionHosts'
+p10
+(lp11
+S'seronera'
+p12
+asS'observers'
+p13
+(lp14
+sS'passSelf'
+p15
+I00
+sS'lifecycleChange'
+p16
+S'start final filtering and comparison'
+p17
+sb.
+->CLI:27236
+sleep:Basic2
+(itexttestlib.default.rundependent
+Filtering
+p1
+(dp2
+S'category'
+p3
+S'final_filter'
+p4
+sS'freeText'
+p5
+S'Filtering and comparing newly generated result files on seronera'
+p6
+sS'started'
+p7
+I1
+sS'completed'
+p8
+I0
+sS'briefText'
+p9
+S''
+sS'executionHosts'
+p10
+(lp11
+S'seronera'
+p12
+asS'observers'
+p13
+(lp14
+sS'passSelf'
+p15
+I00
+sS'lifecycleChange'
+p16
+S'start final filtering and comparison'
+p17
+sb.
+->CLI:27235
+sleep:Basic
+(itexttestlib.default.comparetest
+TestComparison
+p1
+(dp2
+S'category'
+p3
+S'success'
+p4
+sS'changedResults'
+p5
+(lp6
+sS'missingResults'
+p7
+(lp8
+sS'freeText'
+p9
+S''
+sS'started'
+p10
+I1
+sS'failedPrediction'
+p11
+NsS'completed'
+p12
+I1
+sS'briefText'
+p13
+S''
+sS'executionHosts'
+p14
+(lp15
+S'seronera'
+p16
+asS'observers'
+p17
+(lp18
+sS'appAbsPath'
+p19
+S'/carm/proj/texttest-tmp/geoff/texttest.sge.gui.12Sep154311.122841/texttest.sge.gui/QueueSystems/NormalOperation/GUI/TestCompletesAfterSlaveCrash/TargetApp'
+p20
+sS'allResults'
+p21
+(lp22
+(itexttestlib.default.comparefile
+FileComparison
+p23
+(dp24
+S'freeTextBody'
+p25
+NsS'tmpFile'
+p26
+S'/carm/proj/texttest-tmp/geoff/texttest.sge.gui.12Sep154311.122841/texttest.sge.gui/QueueSystems/NormalOperation/GUI/TestCompletesAfterSlaveCrash/texttesttmp/sleep.12Sep154334.560/sleep/Basic/errors.sleep'
+p27
+sS'severity'
+p28
+I1
+sS'differenceCache'
+p29
+I0
+sS'stdFile'
+p30
+S'/carm/proj/texttest-tmp/geoff/texttest.sge.gui.12Sep154311.122841/texttest.sge.gui/QueueSystems/NormalOperation/GUI/TestCompletesAfterSlaveCrash/TargetApp/Basic/errors.sleep'
+p31
+sS'stdCmpFile'
+p32
+S'/carm/proj/texttest-tmp/geoff/texttest.sge.gui.12Sep154311.122841/texttest.sge.gui/QueueSystems/NormalOperation/GUI/TestCompletesAfterSlaveCrash/texttesttmp/sleep.12Sep154334.560/sleep/Basic/framework_tmp/errors.sleeporigcmp'
+p33
+sS'textDiffToolMaxSize'
+p34
+F-1
+sS'previewGenerator'
+p35
+(itexttestlib.plugins
+PreviewGenerator
+p36
+(dp37
+S'maxWidth'
+p38
+I500
+sS'maxLength'
+p39
+I30
+sbsS'tmpCmpFile'
+p40
+S'/carm/proj/texttest-tmp/geoff/texttest.sge.gui.12Sep154311.122841/texttest.sge.gui/QueueSystems/NormalOperation/GUI/TestCompletesAfterSlaveCrash/texttesttmp/sleep.12Sep154334.560/sleep/Basic/framework_tmp/errors.sleepcmp'
+p41
+sS'textDiffTool'
+p42
+S'diff'
+p43
+sS'displayPriority'
+p44
+I99
+sS'binaryFile'
+p45
+I00
+sS'stem'
+p46
+S'errors'
+p47
+sba(itexttestlib.default.comparefile
+FileComparison
+p48
+(dp49
+g25
+Nsg26
+S'/carm/proj/texttest-tmp/geoff/texttest.sge.gui.12Sep154311.122841/texttest.sge.gui/QueueSystems/NormalOperation/GUI/TestCompletesAfterSlaveCrash/texttesttmp/sleep.12Sep154334.560/sleep/Basic/output.sleep'
+p50
+sg28
+I1
+sg29
+I0
+sg30
+S'/carm/proj/texttest-tmp/geoff/texttest.sge.gui.12Sep154311.122841/texttest.sge.gui/QueueSystems/NormalOperation/GUI/TestCompletesAfterSlaveCrash/TargetApp/Basic/output.sleep'
+p51
+sg32
+S'/carm/proj/texttest-tmp/geoff/texttest.sge.gui.12Sep154311.122841/texttest.sge.gui/QueueSystems/NormalOperation/GUI/TestCompletesAfterSlaveCrash/texttesttmp/sleep.12Sep154334.560/sleep/Basic/framework_tmp/output.sleeporigcmp'
+p52
+sg34
+F-1
+sg35
+(itexttestlib.plugins
+PreviewGenerator
+p53
+(dp54
+g38
+I500
+sg39
+I30
+sbsg40
+S'/carm/proj/texttest-tmp/geoff/texttest.sge.gui.12Sep154311.122841/texttest.sge.gui/QueueSystems/NormalOperation/GUI/TestCompletesAfterSlaveCrash/texttesttmp/sleep.12Sep154334.560/sleep/Basic/framework_tmp/output.sleepcmp'
+p55
+sg42
+g43
+sg44
+I99
+sg45
+I00
+sg46
+S'output'
+p56
+sbasS'passSelf'
+p57
+I00
+sS'correctResults'
+p58
+(lp59
+g23
+ag48
+asS'lifecycleChange'
+p60
+S'complete'
+p61
+sS'appWriteDir'
+p62
+S'/carm/proj/texttest-tmp/geoff/texttest.sge.gui.12Sep154311.122841/texttest.sge.gui/QueueSystems/NormalOperation/GUI/TestCompletesAfterSlaveCrash/texttesttmp/sleep.12Sep154334.560'
+p63
+sS'newResults'
+p64
+(lp65
+sb.
+->CLI:27236
+sleep:Basic2
+(itexttestlib.default.comparetest
+TestComparison
+p1
+(dp2
+S'category'
+p3
+S'failure'
+p4
+sS'changedResults'
+p5
+(lp6
+sS'missingResults'
+p7
+(lp8
+sS'freeText'
+p9
+S'---------- New result in errors ----------\n---------- New result in output ----------\nSleeping for 5 seconds...\nDone\n'
+p10
+sS'started'
+p11
+I1
+sS'failedPrediction'
+p12
+NsS'completed'
+p13
+I1
+sS'briefText'
+p14
+S''
+sS'executionHosts'
+p15
+(lp16
+S'seronera'
+p17
+asS'observers'
+p18
+(lp19
+sS'appAbsPath'
+p20
+S'/carm/proj/texttest-tmp/geoff/texttest.sge.gui.12Sep154311.122841/texttest.sge.gui/QueueSystems/NormalOperation/GUI/TestCompletesAfterSlaveCrash/TargetApp'
+p21
+sS'allResults'
+p22
+(lp23
+(itexttestlib.default.comparefile
+FileComparison
+p24
+(dp25
+S'freeTextBody'
+p26
+S''
+sS'tmpFile'
+p27
+S'/carm/proj/texttest-tmp/geoff/texttest.sge.gui.12Sep154311.122841/texttest.sge.gui/QueueSystems/NormalOperation/GUI/TestCompletesAfterSlaveCrash/texttesttmp/sleep.12Sep154334.560/sleep/Basic2/errors.sleep'
+p28
+sS'severity'
+p29
+I1
+sS'differenceCache'
+p30
+I0
+sS'stdFile'
+p31
+NsS'stdCmpFile'
+p32
+NsS'textDiffToolMaxSize'
+p33
+F-1
+sS'previewGenerator'
+p34
+(itexttestlib.plugins
+PreviewGenerator
+p35
+(dp36
+S'maxWidth'
+p37
+I500
+sS'maxLength'
+p38
+I30
+sbsS'tmpCmpFile'
+p39
+S'/carm/proj/texttest-tmp/geoff/texttest.sge.gui.12Sep154311.122841/texttest.sge.gui/QueueSystems/NormalOperation/GUI/TestCompletesAfterSlaveCrash/texttesttmp/sleep.12Sep154334.560/sleep/Basic2/framework_tmp/errors.sleepcmp'
+p40
+sS'textDiffTool'
+p41
+S'diff'
+p42
+sS'displayPriority'
+p43
+I99
+sS'binaryFile'
+p44
+I00
+sS'stem'
+p45
+S'errors'
+p46
+sba(itexttestlib.default.comparefile
+FileComparison
+p47
+(dp48
+g26
+S'Sleeping for 5 seconds...\nDone\n'
+p49
+sg27
+S'/carm/proj/texttest-tmp/geoff/texttest.sge.gui.12Sep154311.122841/texttest.sge.gui/QueueSystems/NormalOperation/GUI/TestCompletesAfterSlaveCrash/texttesttmp/sleep.12Sep154334.560/sleep/Basic2/output.sleep'
+p50
+sg29
+I1
+sg30
+I0
+sg31
+Nsg32
+Nsg33
+F-1
+sg34
+(itexttestlib.plugins
+PreviewGenerator
+p51
+(dp52
+g37
+I500
+sg38
+I30
+sbsg39
+S'/carm/proj/texttest-tmp/geoff/texttest.sge.gui.12Sep154311.122841/texttest.sge.gui/QueueSystems/NormalOperation/GUI/TestCompletesAfterSlaveCrash/texttesttmp/sleep.12Sep154334.560/sleep/Basic2/framework_tmp/output.sleepcmp'
+p53
+sg41
+g42
+sg43
+I99
+sg44
+I00
+sg45
+S'output'
+p54
+sbasS'passSelf'
+p55
+I00
+sS'correctResults'
+p56
+(lp57
+sS'lifecycleChange'
+p58
+S'complete'
+p59
+sS'appWriteDir'
+p60
+S'/carm/proj/texttest-tmp/geoff/texttest.sge.gui.12Sep154311.122841/texttest.sge.gui/QueueSystems/NormalOperation/GUI/TestCompletesAfterSlaveCrash/texttesttmp/sleep.12Sep154334.560'
+p61
+sS'newResults'
+p62
+(lp63
+g24
+ag47
+asb.
