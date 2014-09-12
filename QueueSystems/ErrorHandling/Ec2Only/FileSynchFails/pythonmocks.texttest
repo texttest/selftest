@@ -314,6 +314,11 @@
 ->RET:u'i-8a9e80ca'
 <-PYT:instance31.id
 ->RET:u'i-059e8e45'
+<-PYT:import boto.ec2.cloudwatch
+<-PYT:boto.ec2.cloudwatch.connect_to_region('eu-west-1')
+->RET:Instance('CloudWatchConnection(AWSQueryConnection, AWSAuthConnection, object)', 'cloudwatchconnection_eu_west_1')
+<-PYT:cloudwatchconnection_eu_west_1.disable_alarm_actions([u'stop-i-0da45f4e', u'stop-i-5e17ea1d', u'stop-i-8a9e80ca', u'stop-i-059e8e45', u'stop-i-1a011a5a', u'stop-i-006ffd43', u'stop-i-0e24db4d', u'stop-i-be7788fd', u'stop-i-1222dd51', u'stop-i-078d9e47', u'stop-i-4122dc02', u'stop-i-e9011ba9'])
+->RET:True
 <-PYT:instance20.private_ip_address
 ->RET:u'10.80.17.105'
 <-PYT:instance20.instance_type
@@ -377,8 +382,16 @@
 <-PYT:instance58.remove_tag('TextTest user')
 <-PYT:instance59.remove_tag('TextTest user')
 <-PYT:instance60.remove_tag('TextTest user')
+<-PYT:boto.ec2.cloudwatch.connect_to_region('eu-west-1')
+->RET:Instance('CloudWatchConnection', 'cloudwatchconnection_eu_west_11')
+<-PYT:cloudwatchconnection_eu_west_11.enable_alarm_actions([u'stop-i-5e17ea1d', u'stop-i-8a9e80ca', u'stop-i-059e8e45', u'stop-i-1a011a5a', u'stop-i-006ffd43', u'stop-i-0e24db4d', u'stop-i-be7788fd', u'stop-i-1222dd51', u'stop-i-078d9e47', u'stop-i-4122dc02', u'stop-i-e9011ba9'])
+->RET:True
 <-PYT:boto.ec2.connect_to_region('eu-west-1')
 ->RET:Instance('EC2Connection', 'ec2connection_eu_west_12')
 <-PYT:ec2connection_eu_west_12.get_only_instances(instance_ids=[u'i-0da45f4e'])
 ->RET:[Instance('Instance', 'instance61')]
 <-PYT:instance61.remove_tag('TextTest user')
+<-PYT:boto.ec2.cloudwatch.connect_to_region('eu-west-1')
+->RET:Instance('CloudWatchConnection', 'cloudwatchconnection_eu_west_12')
+<-PYT:cloudwatchconnection_eu_west_12.enable_alarm_actions([u'stop-i-0da45f4e'])
+->RET:True

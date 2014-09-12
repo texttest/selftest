@@ -268,6 +268,11 @@
 ->RET:'fakeuser_07Aug16:11:58'
 <-PYT:instance21.id
 ->RET:u'i-5e17ea1d'
+<-PYT:import boto.ec2.cloudwatch
+<-PYT:boto.ec2.cloudwatch.connect_to_region('eu-west-1')
+->RET:Instance('CloudWatchConnection(AWSQueryConnection, AWSAuthConnection, object)', 'cloudwatchconnection_eu_west_1')
+<-PYT:cloudwatchconnection_eu_west_1.disable_alarm_actions([u'stop-i-5e17ea1d'])
+->RET:True
 <-PYT:instance21.private_ip_address
 ->RET:u'10.80.17.153'
 <-PYT:instance21.instance_type
@@ -277,3 +282,7 @@
 <-PYT:ec2connection_eu_west_11.get_only_instances(instance_ids=[u'i-5e17ea1d'])
 ->RET:[Instance('Instance', 'instance22')]
 <-PYT:instance22.remove_tag('TextTest user')
+<-PYT:boto.ec2.cloudwatch.connect_to_region('eu-west-1')
+->RET:Instance('CloudWatchConnection', 'cloudwatchconnection_eu_west_11')
+<-PYT:cloudwatchconnection_eu_west_11.enable_alarm_actions([u'stop-i-5e17ea1d'])
+->RET:True
