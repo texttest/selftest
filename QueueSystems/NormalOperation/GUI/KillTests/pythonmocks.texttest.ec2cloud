@@ -204,41 +204,67 @@
 ->RET:u't1.micro'
 <-PYT:instance17.private_ip_address
 ->RET:u'10.80.17.77'
-<-PYT:tagset1.get('TextTest user', '')
+<-PYT:ec2connection_eu_west_1.get_only_instances(instance_ids=[u'i-0da45f4e', u'i-5e17ea1d', u'i-8a9e80ca', u'i-059e8e45', u'i-1a011a5a', u'i-006ffd43', u'i-0e24db4d', u'i-be7788fd', u'i-1222dd51', u'i-078d9e47', u'i-4122dc02', u'i-e9011ba9'])
+->RET:[Instance('Instance', 'instance101'), Instance('Instance', 'instance116'), Instance('Instance', 'instance111'), Instance('Instance', 'instance110'), Instance('Instance', 'instance102'), Instance('Instance', 'instance107'), Instance('Instance', 'instance104'), Instance('Instance', 'instance112'), Instance('Instance', 'instance113'), Instance('Instance', 'instance103'), Instance('Instance', 'instance114'), Instance('Instance', 'instance117')]
+<-PYT:instance101.tags
+->RET:Instance('TagSet', 'tagset101')
+<-PYT:tagset101.get('TextTest user', '')
+->RET:''
+<-PYT:instance116.tags
+->RET:Instance('TagSet', 'tagset116')
+<-PYT:tagset116.get('TextTest user', '')
+->RET:''
+<-PYT:instance111.tags
+->RET:Instance('TagSet', 'tagset111')
+<-PYT:tagset111.get('TextTest user', '')
+->RET:''
+<-PYT:instance110.tags
+->RET:Instance('TagSet', 'tagset110')
+<-PYT:tagset110.get('TextTest user', '')
+->RET:''
+<-PYT:instance102.tags
+->RET:Instance('TagSet', 'tagset102')
+<-PYT:tagset102.get('TextTest user', '')
+->RET:''
+<-PYT:instance107.tags
+->RET:Instance('TagSet', 'tagset107')
+<-PYT:tagset107.get('TextTest user', '')
+->RET:''
+<-PYT:instance104.tags
+->RET:Instance('TagSet', 'tagset104')
+<-PYT:tagset104.get('TextTest user', '')
+->RET:''
+<-PYT:instance112.tags
+->RET:Instance('TagSet', 'tagset112')
+<-PYT:tagset112.get('TextTest user', '')
+->RET:''
+<-PYT:instance113.tags
+->RET:Instance('TagSet', 'tagset113')
+<-PYT:tagset113.get('TextTest user', '')
+->RET:''
+<-PYT:instance103.tags
+->RET:Instance('TagSet', 'tagset103')
+<-PYT:tagset103.get('TextTest user', '')
+->RET:''
+<-PYT:instance114.tags
+->RET:Instance('TagSet', 'tagset114')
+<-PYT:tagset114.get('TextTest user', '')
+->RET:''
+<-PYT:instance117.tags
+->RET:Instance('TagSet', 'tagset117')
+<-PYT:tagset117.get('TextTest user', '')
 ->RET:''
 <-PYT:instance1.add_tag('TextTest user', 'fakeuser_07Aug15:02:07')
-<-PYT:tagset16.get('TextTest user', '')
-->RET:''
 <-PYT:instance16.add_tag('TextTest user', 'fakeuser_07Aug15:02:07')
-<-PYT:tagset11.get('TextTest user', '')
-->RET:''
 <-PYT:instance11.add_tag('TextTest user', 'fakeuser_07Aug15:02:07')
-<-PYT:tagset10.get('TextTest user', '')
-->RET:''
 <-PYT:instance10.add_tag('TextTest user', 'fakeuser_07Aug15:02:07')
-<-PYT:tagset2.get('TextTest user', '')
-->RET:''
 <-PYT:instance2.add_tag('TextTest user', 'fakeuser_07Aug15:02:07')
-<-PYT:tagset7.get('TextTest user', '')
-->RET:''
 <-PYT:instance7.add_tag('TextTest user', 'fakeuser_07Aug15:02:07')
-<-PYT:tagset4.get('TextTest user', '')
-->RET:''
 <-PYT:instance4.add_tag('TextTest user', 'fakeuser_07Aug15:02:07')
-<-PYT:tagset12.get('TextTest user', '')
-->RET:''
 <-PYT:instance12.add_tag('TextTest user', 'fakeuser_07Aug15:02:07')
-<-PYT:tagset13.get('TextTest user', '')
-->RET:''
 <-PYT:instance13.add_tag('TextTest user', 'fakeuser_07Aug15:02:07')
-<-PYT:tagset3.get('TextTest user', '')
-->RET:''
 <-PYT:instance3.add_tag('TextTest user', 'fakeuser_07Aug15:02:07')
-<-PYT:tagset14.get('TextTest user', '')
-->RET:''
 <-PYT:instance14.add_tag('TextTest user', 'fakeuser_07Aug15:02:07')
-<-PYT:tagset17.get('TextTest user', '')
-->RET:''
 <-PYT:instance17.add_tag('TextTest user', 'fakeuser_07Aug15:02:07')
 <-PYT:ec2connection_eu_west_1.get_only_instances(instance_ids=[u'i-0da45f4e', u'i-5e17ea1d', u'i-8a9e80ca', u'i-059e8e45', u'i-1a011a5a', u'i-006ffd43', u'i-0e24db4d', u'i-be7788fd', u'i-1222dd51', u'i-078d9e47', u'i-4122dc02', u'i-e9011ba9'])
 ->RET:[Instance('Instance', 'instance20'), Instance('Instance', 'instance21'), Instance('Instance', 'instance22'), Instance('Instance', 'instance23'), Instance('Instance', 'instance24'), Instance('Instance', 'instance25'), Instance('Instance', 'instance26'), Instance('Instance', 'instance27'), Instance('Instance', 'instance28'), Instance('Instance', 'instance29'), Instance('Instance', 'instance30'), Instance('Instance', 'instance31')]
