@@ -1,5 +1,5 @@
 
----------- Window 'HELLO tests under /home/geoff/.texttest/tmp/dynamic_gui.25May163349.10420/texttest.sge.gui/QueueSystems/SlaveReuse/Master/ForceReuse/GUI/JobKillBeforeReuse/TargetApp/ (started at 25May16:41:21) - TextTest dynamic GUI' ----------
+---------- Window 'HELLO tests under /home/geoff/.texttest/tmp/dynamic_gui.25May163349.10420/texttest.sge.gui/QueueSystems/SlaveReuse/Master/ForceReuse/GUI/SgeOnly/KillBeforeReuse/TargetApp/ (started at 25May16:41:20) - TextTest dynamic GUI' ----------
 Focus widget is 'Test Tree'
 
 Menu Bar : '_File' (+) , '_View' (+) , '_Actions' (+) , '_Help' (+)
@@ -8,7 +8,7 @@ Tool Bar :
   _Quit (Stock image 'gtk-quit', accelerator 'Ctrl+Q', tooltip 'Quit')
   _Kill (Stock image 'gtk-stop', greyed out, accelerator 'Ctrl+Delete', tooltip 'Kill selected tests')
   _Approve (Stock image 'gtk-apply', greyed out, accelerator 'Ctrl+S', tooltip 'Approve results for selected tests. This will save the files produced by this run as the new approved files which future runs will be compared with. Used to be called Save.')
-  Progress bar set to fraction 0.0, text 'All 0 tests completed at 25May16:41:21'
+  Progress bar set to fraction 0.0, text 'All 0 tests completed at 25May16:41:20'
 ...........
 
 Showing Test Tree with columns: Tests: All 0 selected , Details
@@ -22,7 +22,7 @@ Viewing page 'Status'
 Showing Test Status View with columns: Status , Number , Visible
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 25May16:41:21.' , Image 'throbber_inactive.png'
+'TextTest started at 25May16:41:20.' , Image 'throbber_inactive.png'
 ----------------------------------------------------------------------------------------------------
 
 Progress bar set to fraction 0.0, text '0 of 1 tests completed'
@@ -57,7 +57,7 @@ Updated : Test Status View with columns: Status , Number , Visible
 
 Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
 -> TargetApp (hello) (black/white,bold) | (white)
-->   Test (black/LightGoldenrod1) | RUN (withamfield) (LightGoldenrod1)
+->   Test (black/LightGoldenrod1) | RUN (juliaca) (LightGoldenrod1)
 ->   Suite (black/white,bold) | (white)
 ->     Test (black/white) | (white)
 
@@ -75,7 +75,7 @@ No longer greyed out : _Kill
 
 Changed selection in Test Tree with columns: Tests: 1/2 selected, none hidden , Details
 -> TargetApp (hello) (black/white,bold) | (white)
-->   Test (black/LightGoldenrod1) | RUN (withamfield) (LightGoldenrod1)   ***
+->   Test (black/LightGoldenrod1) | RUN (juliaca) (LightGoldenrod1)   ***
 ->   Suite (black/white,bold) | (white)
 ->     Test (black/white) | (white)
 
@@ -90,7 +90,7 @@ Showing File Tree with columns: Test , Details
 ...........
 
 ========== Text Info ==========
-Running on withamfield
+Running on juliaca
 
 To obtain the latest progress information and an up-to-date comparison of the files above, perform 'recompute status' (press 'F5')
 ===============================
@@ -110,41 +110,46 @@ Progress bar set to fraction 0.5, text '1 of 2 tests completed'
 
 Updated : Test Tree with columns: Tests: 1/2 selected, none hidden , Details
 -> TargetApp (hello) (black/white,bold) | (white)
-->   Test (black/salmon) | output different (salmon)   ***
+->   Test (black/salmon) | KILLED (salmon)   ***
 ->   Suite (black/white,bold) | (white)
 ->     Test (black/white) | (white)
 
 Updated : File Tree with columns: Test , Details
 -> Comparison Files (bold)
-->   errors.hello (DarkSeaGreen2) | (DarkSeaGreen2)
+->   errors.hello (salmon) | (salmon)
 ->   output.hello (salmon) | (salmon)
 
 ========== Text Info ==========
-Test FAILED on withamfield :
+Test were terminated before completion (KILLED) on juliaca :
+Test killed explicitly at 11:41
+---------- Differences in errors ----------
+0a1,4
+> Traceback (most recent call last):
+>   File "/carm/proj/texttest-tmp/geoff/texttest.sge.29May114128.809/texttest.sge/QueueSystems/SlaveReuse/Master/ForceReuse/GUI/SgeOnly/KillBeforeReuse/TargetApp/hello.py", line 4, in ?
+>     sleep(10)
+> KeyboardInterrupt
 ---------- Differences in output ----------
-1c1
+1d0
 < Hello
----
-> Hello World!
 ===============================
 
 Updated : Test Tree with columns: Tests: 1/2 selected, none hidden , Details
 -> TargetApp (hello) (black/white,bold) | (white)
-->   Test (black/salmon) | output different (salmon)   ***
+->   Test (black/salmon) | KILLED (salmon)   ***
 ->   Suite (black/white,bold) | (white)
 ->     Test (black/grey80) | PEND (grey80)
 
 Updated : Test Tree with columns: Tests: 1/2 selected, none hidden , Details
 -> TargetApp (hello) (black/white,bold) | (white)
-->   Test (black/salmon) | output different (salmon)   ***
+->   Test (black/salmon) | KILLED (salmon)   ***
 ->   Suite (black/white,bold) | (white)
-->     Test (black/LightGoldenrod1) | RUN (withamfield) (LightGoldenrod1)
+->     Test (black/LightGoldenrod1) | RUN (juliaca) (LightGoldenrod1)
 
-Progress bar set to fraction 1.0, text 'All 2 tests completed at 25May16:41:24'
+Progress bar set to fraction 1.0, text 'All 2 tests completed at 25May16:41:23'
 
 Updated : Test Tree with columns: Tests: 1/2 selected, none hidden , Details
 -> TargetApp (hello) (black/white,bold) | (white)
-->   Test (black/salmon) | output different (salmon)   ***
+->   Test (black/salmon) | KILLED (salmon)   ***
 ->   Suite (black/white,bold) | All 1 tests successful (DarkSeaGreen2)
 
 Expected application event 'completion of test actions' occurred, proceeding.

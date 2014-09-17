@@ -1,5 +1,5 @@
 
----------- Window 'HELLO tests under /home/geoff/.texttest/tmp/dynamic_gui.25May163349.10420/texttest.sge.gui/QueueSystems/SlaveReuse/Master/ForceReuse/GUI/KillReusedTest/TargetApp/ (started at 25May16:41:24) - TextTest dynamic GUI' ----------
+---------- Window 'HELLO tests under /home/geoff/.texttest/tmp/dynamic_gui.25May163349.10420/texttest.sge.gui/QueueSystems/SlaveReuse/Master/ForceReuse/GUI/SgeOnly/QuitBeforeReuse/TargetApp/ (started at 25May16:41:23) - TextTest dynamic GUI' ----------
 Focus widget is 'Test Tree'
 
 Menu Bar : '_File' (+) , '_View' (+) , '_Actions' (+) , '_Help' (+)
@@ -57,7 +57,7 @@ Updated : Test Status View with columns: Status , Number , Visible
 
 Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
 -> TargetApp (hello) (black/white,bold) | (white)
-->   Test (black/LightGoldenrod1) | RUN (sunvalley) (LightGoldenrod1)
+->   Test (black/LightGoldenrod1) | RUN (sunriver) (LightGoldenrod1)
 ->   Suite (black/white,bold) | (white)
 ->     Test (black/white) | (white)
 
@@ -66,11 +66,18 @@ Updated : Test Status View with columns: Status , Number , Visible
 -> Pending (white) | 0 (white) | Check box (checked)
 -> Running (LightGoldenrod1,bold) | 1 (LightGoldenrod1,bold) | Check box (checked)
 
+Expected application event 'all tests to be read' occurred, proceeding.
+Expected application event 'test Test under TargetApp to start' occurred, proceeding.
+
+'quit' event created with arguments ''
+
+Changing GUI status to: 'Waiting for all tests to terminate ...'
+
 Progress bar set to fraction 0.5, text '1 of 2 tests completed'
 
 Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
 -> TargetApp (hello) (black/white,bold) | (white)
-->   Test (black/salmon) | output different (salmon)
+->   Test (black/salmon) | KILLED (salmon)
 ->   Suite (black/white,bold) | (white)
 ->     Test (black/white) | (white)
 
@@ -79,88 +86,23 @@ Updated : Test Status View with columns: Status , Number , Visible
 -> Pending (white) | 0 (white) | Check box (checked)
 -> Running (white) | 0 (white) | Check box (checked)
 -> Failed (salmon,bold) | 1 (salmon,bold) | Check box (checked)
-->   Differences (salmon,bold) | 1 (salmon,bold) | Check box (checked)
-->     output different (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->   Killed (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->     KILLED (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+
+Progress bar set to fraction 1.0, text 'All 2 tests completed at 25May16:41:26'
 
 Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
 -> TargetApp (hello) (black/white,bold) | (white)
-->   Test (black/salmon) | output different (salmon)
+->   Test (black/salmon) | KILLED (salmon)
 ->   Suite (black/white,bold) | (white)
-->     Test (black/LightGoldenrod1) | RUN (sunvalley) (LightGoldenrod1)
+->     Test (black/salmon) | cancelled (salmon)
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white) | 0 (white) | Check box (checked)
 -> Pending (white) | 0 (white) | Check box (checked)
--> Running (LightGoldenrod1,bold) | 1 (LightGoldenrod1,bold) | Check box (checked)
--> Failed (salmon,bold) | 1 (salmon,bold) | Check box (checked)
-->   Differences (salmon,bold) | 1 (salmon,bold) | Check box (checked)
-->     output different (salmon,bold) | 1 (salmon,bold) | Check box (checked)
-
-Expected application event 'all tests to be read' occurred, proceeding.
-Expected application event 'test Test under Suite to start' occurred, proceeding.
-Expected application event 'test Test under TargetApp to complete' occurred, proceeding.
-
-'set test selection to' event created with arguments 'Test under Suite'
-
-No longer greyed out : _Kill
-
-Changed selection in Test Tree with columns: Tests: 1/2 selected, none hidden , Details
--> TargetApp (hello) (black/white,bold) | (white)
-->   Test (black/salmon) | output different (salmon)
-->   Suite (black/white,bold) | (white)
-->     Test (black/LightGoldenrod1) | RUN (sunvalley) (LightGoldenrod1)   ***
-
-Current page changed in Notebook with tabs: Test , Status , Selection , Run Info
-Viewing page 'Test'
-...........
-
-Showing File Tree with columns: Test , Details
--> Temporary Files
-
------------------------------- (horizontal pane separator)
-...........
-
-========== Text Info ==========
-Running on sunvalley
-
-To obtain the latest progress information and an up-to-date comparison of the files above, perform 'recompute status' (press 'F5')
-===============================
-
-'kill selected tests' event created with arguments ''
-
-Changing GUI status to: 'Killing 1 tests ...'
-
-Waiting for application event 'completion of test actions' to occur.
-
-Changing GUI status to: 'Performed 'Kill selected tests' on test Suite/Test.'
-
-Greyed out : _Kill
-No longer greyed out : _Approve
-
-Progress bar set to fraction 1.0, text 'All 2 tests completed at 25May16:41:27'
-
-Updated : Test Tree with columns: Tests: 1/2 selected, none hidden , Details
--> TargetApp (hello) (black/white,bold) | (white)
-->   Test (black/salmon) | output different (salmon)
-->   Suite (black/white,bold) | (white)
-->     Test (black/salmon) | KILLED (salmon)   ***
-
-Updated : File Tree with columns: Test , Details
--> Comparison Files (bold)
-->   errors.hello (salmon) | (salmon)
-->   output.hello (DarkSeaGreen2) | (DarkSeaGreen2)
-
-========== Text Info ==========
-Test were terminated before completion (KILLED) on sunvalley :
-Test killed explicitly at 16:32
----------- Differences in errors ----------
-0a1,4
-> Traceback (most recent call last):
->   File "/carm/proj/texttest-tmp/geoff/texttest.sge.29Apr163219/texttest.sge/QueueSystems/SlaveReuse/Master/ForceReuse/GUI/KillReusedTest/TargetApp//hello.py", line 4, in ?
->     time.sleep(10)
-> KeyboardInterrupt
-===============================
-
-Expected application event 'completion of test actions' occurred, proceeding.
-
-'quit' event created with arguments ''
+-> Running (white) | 0 (white) | Check box (checked)
+-> Failed (salmon,bold) | 2 (salmon,bold) | Check box (checked)
+->   Cancelled (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->     cancelled (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->   Killed (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->     KILLED (salmon,bold) | 1 (salmon,bold) | Check box (checked)
