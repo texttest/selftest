@@ -1,5 +1,8 @@
 <-PYT:datetime.datetime.now()
 ->RET:datetime.datetime(2014, 9, 18, 10, 22, 26, 528676)
+<-PYT:import texttestlib.utils
+<-PYT:texttestlib.utils.__path__
+->RET:raise exceptions.AttributeError("'module' object has no attribute '__path__'")
 <-PYT:import boto
 <-PYT:boto.__path__
 ->RET:['Fake value just to mark that it exists']
@@ -242,6 +245,8 @@
 ->RET:u'c3.xlarge'
 <-PYT:instance18.private_ip_address
 ->RET:u'10.80.17.220'
+<-PYT:texttestlib.utils.getUserName()
+->RET:'fakeuser'
 <-PYT:ec2connection_eu_west_1.get_only_instances(instance_ids=[u'i-006ffd43', u'i-7b4b2838', u'i-5e17ea1d', u'i-059e8e45', u'i-5493e217', u'i-e9011ba9', u'i-bfdb9efc', u'i-be7916fd', u'i-2b533068', u'i-078d9e47', u'i-1a011a5a'])
 ->RET:[Instance('Instance', 'instance19'), Instance('Instance', 'instance20'), Instance('Instance', 'instance21'), Instance('Instance', 'instance22'), Instance('Instance', 'instance23'), Instance('Instance', 'instance24'), Instance('Instance', 'instance25'), Instance('Instance', 'instance26'), Instance('Instance', 'instance27'), Instance('Instance', 'instance28'), Instance('Instance', 'instance29')]
 <-PYT:instance19.tags
@@ -418,6 +423,8 @@
 ->RET:u'10.80.17.235'
 <-PYT:instance31.instance_type
 ->RET:u'c3.xlarge'
+<-PYT:texttestlib.utils.getUserName()
+->RET:'fakeuser'
 <-PYT:boto.ec2.connect_to_region('eu-west-1')
 ->RET:Instance('EC2Connection', 'ec2connection_eu_west_11')
 <-PYT:ec2connection_eu_west_11.get_only_instances(instance_ids=[u'i-7b4b2838', u'i-5e17ea1d', u'i-059e8e45', u'i-5493e217', u'i-e9011ba9', u'i-bfdb9efc', u'i-be7916fd', u'i-2b533068', u'i-078d9e47', u'i-1a011a5a'])

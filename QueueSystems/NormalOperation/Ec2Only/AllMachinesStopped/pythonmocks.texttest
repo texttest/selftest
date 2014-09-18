@@ -1,5 +1,8 @@
 <-PYT:datetime.datetime.now()
 ->RET:datetime.datetime(2014, 8, 8, 14, 47, 39, 56770)
+<-PYT:import texttestlib.utils
+<-PYT:texttestlib.utils.__path__
+->RET:raise exceptions.AttributeError("'module' object has no attribute '__path__'")
 <-PYT:import boto
 <-PYT:boto.__path__
 ->RET:['Fake value just to mark that it exists']
@@ -164,6 +167,8 @@
 ->RET:u't1.micro'
 <-PYT:instance17.private_ip_address
 ->RET:u'10.80.17.77'
+<-PYT:texttestlib.utils.getUserName()
+->RET:'fakeuser'
 <-PYT:ec2connection_eu_west_1.get_only_instances(instance_ids=[u'i-006ffd43', u'i-0e24db4d', u'i-be7788fd', u'i-1222dd51', u'i-078d9e47', u'i-4122dc02', u'i-059e8e45', u'i-0da45f4e', u'i-5e17ea1d', u'i-8a9e80ca', u'i-1a011a5a', u'i-e9011ba9'])
 ->RET:[Instance('Instance', 'instance107'), Instance('Instance', 'instance104'), Instance('Instance', 'instance112'), Instance('Instance', 'instance113'), Instance('Instance', 'instance103'), Instance('Instance', 'instance114'), Instance('Instance', 'instance110'), Instance('Instance', 'instance101'), Instance('Instance', 'instance116'), Instance('Instance', 'instance111'), Instance('Instance', 'instance102'), Instance('Instance', 'instance117')]
 <-PYT:instance107.tags
@@ -353,12 +358,14 @@
 ->RET:u'10.80.17.77'
 <-PYT:instance27.instance_type
 ->RET:u't1.micro'
+<-PYT:texttestlib.utils.getUserName()
+->RET:'fakeuser'
 <-PYT:instance29.start()
-<-PYT:texttestlib.portlisten.getPortListenErrorCode(u'10.80.17.102', 22)
+<-PYT:texttestlib.utils.getPortListenErrorCode(u'10.80.17.102', 22)
 ->RET:11
-<-PYT:texttestlib.portlisten.getPortListenErrorCode(u'10.80.17.102', 22)
+<-PYT:texttestlib.utils.getPortListenErrorCode(u'10.80.17.102', 22)
 ->RET:11
-<-PYT:texttestlib.portlisten.getPortListenErrorCode(u'10.80.17.102', 22)
+<-PYT:texttestlib.utils.getPortListenErrorCode(u'10.80.17.102', 22)
 ->RET:111
 <-PYT:boto.ec2.connect_to_region('eu-west-1')
 ->RET:Instance('EC2Connection', 'ec2connection_eu_west_11')
@@ -379,9 +386,9 @@
 ->RET:Instance('CloudWatchConnection', 'cloudwatchconnection_eu_west_11')
 <-PYT:cloudwatchconnection_eu_west_11.enable_alarm_actions([u'stop-i-0e24db4d', u'stop-i-be7788fd', u'stop-i-1222dd51', u'stop-i-078d9e47', u'stop-i-4122dc02', u'stop-i-059e8e45', u'stop-i-0da45f4e', u'stop-i-5e17ea1d', u'stop-i-8a9e80ca', u'stop-i-1a011a5a', u'stop-i-e9011ba9'])
 ->RET:True
-<-PYT:texttestlib.portlisten.getPortListenErrorCode(u'10.80.17.102', 22)
+<-PYT:texttestlib.utils.getPortListenErrorCode(u'10.80.17.102', 22)
 ->RET:111
-<-PYT:texttestlib.portlisten.getPortListenErrorCode(u'10.80.17.102', 22)
+<-PYT:texttestlib.utils.getPortListenErrorCode(u'10.80.17.102', 22)
 ->RET:0
 <-PYT:boto.ec2.connect_to_region('eu-west-1')
 ->RET:Instance('EC2Connection', 'ec2connection_eu_west_12')
