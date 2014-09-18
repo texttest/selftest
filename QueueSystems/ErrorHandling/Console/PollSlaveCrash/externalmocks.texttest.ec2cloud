@@ -1,6 +1,6 @@
-<-SRV:TextTest slave server started on 10.80.17.102:43961
-<-CMD:ssh -q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 -x ec2-user@10.80.17.105 mkdir -p '/carm/proj/texttest-tmp/geoff/dynamic_gui.02Sep110746.20031/texttest.ec2cloud/QueueSystems/ErrorHandling/Console/PollSlaveCrash'
-<-CMD:rsync -e "ssh -x -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10" -av --copy-unsafe-links --delete --exclude-from=/users/geoff/work/master/Testing/TextTest/texttestlib/etc/rsync_exclude_patterns /carm/proj/texttest-tmp/geoff/dynamic_gui.02Sep110746.20031/texttest.ec2cloud/QueueSystems/ErrorHandling/Console/PollSlaveCrash/TargetApp ec2-user@10.80.17.105:'/carm/proj/texttest-tmp/geoff/dynamic_gui.02Sep110746.20031/texttest.ec2cloud/QueueSystems/ErrorHandling/Console/PollSlaveCrash'
+<-SRV:TextTest slave server started on 10.67.7.174:43654
+<-CMD:ssh -q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 -x ec2-user@10.80.17.105 mkdir -p '/carm/proj/texttest-tmp/geoff/dynamic_gui.17Sep174148.81956/texttest.ec2cloud/QueueSystems/ErrorHandling/Console/PollSlaveCrash'
+<-CMD:rsync -e "ssh -x -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10" -av --copy-unsafe-links --delete --exclude-from=/nfs/vm/texttest/geoff/Testing/TextTest/texttestlib/etc/rsync_exclude_patterns /carm/proj/texttest-tmp/geoff/dynamic_gui.17Sep174148.81956/texttest.ec2cloud/QueueSystems/ErrorHandling/Console/PollSlaveCrash/TargetApp ec2-user@10.80.17.105:'/carm/proj/texttest-tmp/geoff/dynamic_gui.17Sep174148.81956/texttest.ec2cloud/QueueSystems/ErrorHandling/Console/PollSlaveCrash'
 ->OUT:sending incremental file list
 TargetApp/
 TargetApp/busywait.py
@@ -40,6 +40,6 @@ TargetApp/Basic2/options.sleep
 
 sent 4889 bytes  received 617 bytes  2202.40 bytes/sec
 total size is 2827  speedup is 0.51
-<-CMD:cd /carm/proj/texttest-tmp/geoff/dynamic_gui.02Sep110746.20031/texttest.ec2cloud/QueueSystems/ErrorHandling/Console/PollSlaveCrash/texttesttmp/sleep.killing.07Aug150207.1784/slavelogs; ssh -q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 -x -A ec2-user@10.80.17.105 texttest -d /carm/proj/texttest-tmp/geoff/dynamic_gui.02Sep110746.20031/texttest.ec2cloud/QueueSystems/ErrorHandling/Console/PollSlaveCrash/TargetApp -a sleep.killing -l -tp Basic -slave /carm/proj/texttest-tmp/geoff/dynamic_gui.02Sep110746.20031/texttest.ec2cloud/QueueSystems/ErrorHandling/Console/PollSlaveCrash/texttesttmp/sleep.killing.07Aug150207.1784 -servaddr 127.0.0.1:46312 -b short_local -slavefilesynch fakeuser@127.0.0.1
+<-CMD:cd /nfs/vm/texttest-tmp/geoff/dynamic_gui.17Sep174148.81956/texttest.ec2cloud/QueueSystems/ErrorHandling/Console/PollSlaveCrash/texttesttmp/sleep.killing.07Aug150207.82195/slavelogs; ssh -q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 -x -A ec2-user@10.80.17.105 STANDARD=/carm/proj/texttest-tmp/geoff/dynamic_gui.17Sep174148.81956/texttest.ec2cloud/QueueSystems/ErrorHandling/Console/PollSlaveCrash/standard texttest -d /carm/proj/texttest-tmp/geoff/dynamic_gui.17Sep174148.81956/texttest.ec2cloud/QueueSystems/ErrorHandling/Console/PollSlaveCrash/TargetApp -a sleep.killing -l -tp Basic -slave /carm/proj/texttest-tmp/geoff/dynamic_gui.17Sep174148.81956/texttest.ec2cloud/QueueSystems/ErrorHandling/Console/PollSlaveCrash/texttesttmp/sleep.killing.07Aug150207.82195 -servaddr 10.67.7.174:53847 -b short_local -slavefilesynch fakeuser@10.67.7.174
 ->ERR:Not tonight, Josephine!
 ->EXC:1

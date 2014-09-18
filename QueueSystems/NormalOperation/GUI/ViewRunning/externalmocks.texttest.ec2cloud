@@ -1,6 +1,6 @@
-<-SRV:TextTest slave server started on 10.80.17.105:54242
-<-CMD:ssh -q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 -x ec2-user@10.80.17.105 mkdir -p '/carm/proj/texttest-tmp/geoff/dynamic_gui.02Sep110746.20031/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/ViewRunning'
-<-CMD:rsync -e "ssh -x -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10" -av --copy-unsafe-links --delete --exclude-from=/users/geoff/work/master/Testing/TextTest/texttestlib/etc/rsync_exclude_patterns /carm/proj/texttest-tmp/geoff/dynamic_gui.02Sep110746.20031/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/ViewRunning/TargetApp ec2-user@10.80.17.105:'/carm/proj/texttest-tmp/geoff/dynamic_gui.02Sep110746.20031/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/ViewRunning'
+<-SRV:TextTest slave server started on 10.80.17.161:47514
+<-CMD:ssh -q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 -x ec2-user@10.80.17.105 mkdir -p '/carm/proj/texttest-tmp/geoff/dynamic_gui.17Sep172713.61893/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/ViewRunning'
+<-CMD:rsync -e "ssh -x -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10" -av --copy-unsafe-links --delete --exclude-from=/nfs/vm/texttest/geoff/Testing/TextTest/texttestlib/etc/rsync_exclude_patterns /carm/proj/texttest-tmp/geoff/dynamic_gui.17Sep172713.61893/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/ViewRunning/TargetApp ec2-user@10.80.17.105:'/carm/proj/texttest-tmp/geoff/dynamic_gui.17Sep172713.61893/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/ViewRunning'
 ->OUT:sending incremental file list
 TargetApp/
 TargetApp/busywait.py
@@ -42,7 +42,7 @@ TargetApp/Basic2/options.sleep
 
 sent 5360 bytes  received 655 bytes  4010.00 bytes/sec
 total size is 3054  speedup is 0.51
-<-CMD:cd /carm/proj/texttest-tmp/geoff/dynamic_gui.02Sep110746.20031/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/ViewRunning/texttesttmp/sleep.killing2.07Aug150207.1843/slavelogs; ssh -q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 -x -A ec2-user@10.80.17.105 texttest -d /carm/proj/texttest-tmp/geoff/dynamic_gui.02Sep110746.20031/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/ViewRunning/TargetApp -a sleep.killing2 -l -tp Basic -slave /carm/proj/texttest-tmp/geoff/dynamic_gui.02Sep110746.20031/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/ViewRunning/texttesttmp/sleep.killing2.07Aug150207.1843 -servaddr 127.0.0.1:44160 -slavefilesynch fakeuser@127.0.0.1
+<-CMD:cd /carm/proj/texttest-tmp/geoff/dynamic_gui.17Sep172713.61893/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/ViewRunning/texttesttmp/sleep.killing2.07Aug150207.2649/slavelogs; ssh -q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 -x -A ec2-user@10.80.17.105 DISPLAY=ip-10-80-17-161:2357.0 STANDARD=/carm/proj/texttest-tmp/geoff/dynamic_gui.17Sep172713.61893/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/ViewRunning/standard texttest -d /carm/proj/texttest-tmp/geoff/dynamic_gui.17Sep172713.61893/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/ViewRunning/TargetApp -a sleep.killing2 -l -tp Basic -slave /carm/proj/texttest-tmp/geoff/dynamic_gui.17Sep172713.61893/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/ViewRunning/texttesttmp/sleep.killing2.07Aug150207.2649 -servaddr 127.0.0.1:52730 -slavefilesynch fakeuser@127.0.0.1
 ->OUT:Using Application SLEEP, version killing2
 Running SLEEP.killing2 test-suite TargetApp
   Running SLEEP.killing2 test-case Basic
@@ -130,7 +130,7 @@ p17
 S'start'
 p18
 sb.
-<-CMD:rsync -e "ssh -x -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10" -av --copy-unsafe-links --delete --exclude-from=/users/geoff/work/master/Testing/TextTest/texttestlib/etc/rsync_exclude_patterns ec2-user@10.80.17.105:'/carm/proj/texttest-tmp/geoff/dynamic_gui.02Sep110746.20031/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/ViewRunning/texttesttmp/sleep.killing2.07Aug150207.1843/sleep.killing2/Basic'/* /carm/proj/texttest-tmp/geoff/dynamic_gui.02Sep110746.20031/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/ViewRunning/texttesttmp/sleep.killing2.07Aug150207.1843/sleep.killing2/Basic
+<-CMD:rsync -e "ssh -x -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10" -av --copy-unsafe-links --delete --exclude-from=/nfs/vm/texttest/geoff/Testing/TextTest/texttestlib/etc/rsync_exclude_patterns ec2-user@10.80.17.105:'/carm/proj/texttest-tmp/geoff/dynamic_gui.17Sep172713.61893/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/ViewRunning/texttesttmp/sleep.killing2.07Aug150207.2649/sleep.killing2/Basic'/* /carm/proj/texttest-tmp/geoff/dynamic_gui.17Sep172713.61893/texttest.ec2cloud.gui/QueueSystems/NormalOperation/GUI/ViewRunning/texttesttmp/sleep.killing2.07Aug150207.2649/sleep.killing2/Basic
 ->FIL:Basic
 ->OUT:receiving incremental file list
 errors.sleep
