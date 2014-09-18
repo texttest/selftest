@@ -1,5 +1,5 @@
 
----------- Window 'HELLO test management - TextTest static GUI' ----------
+---------- Window 'DIP test management - TextTest static GUI' ----------
 Focus widget is 'Test Tree'
 
 Menu Bar : '_File' (+) , '_Edit' (+) , '_View' (+) , '_Actions' (+) , '_Help' (+)
@@ -20,7 +20,7 @@ Showing Test Tree with columns: Tests: All 0 selected
 Showing Notebook with tabs: Selection , Config
 Viewing page 'Selection'
 Viewing table with 7 rows and 2 columns.
-'Tests for version  ' (tooltip 'Select tests for a specific version.') | Text entry (drop-down list containing ['', '<default>', 'extra1', 'extra2'])
+'Tests for version  ' (tooltip 'Select tests for a specific version.') | Text entry (drop-down list containing ['', '<default>'])
 'Test names containing  ' (tooltip 'Select tests for which the name contains the entered text. The text can be a regular expression.') | Text entry
 'Test paths containing  ' (tooltip 'Select tests for which the full path to the test (e.g. suite1/subsuite/testname) contains the entered text. The text can be a regular expression. You can select tests by suite name this way.') | Text entry
 'Tests listed in file  ' | Text entry , Button '...'
@@ -37,8 +37,8 @@ Button 'Filter' (Stock image 'gtk-find', accelerator 'Ctrl+F', tooltip 'filter t
 Button 'Reset Tab' (tooltip 'Reset all the settings in the current tab to their default values')
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 18Sep08:13:44.' , Image 'throbber_inactive.png'
---------------------------------------------------------------------------
+'TextTest started at 18Sep10:51:55.' , Image 'throbber_inactive.png'
+------------------------------------------------------------------------
 
 Changing GUI status to: 'Reading tests ...'
 
@@ -46,53 +46,75 @@ Column titles changed in Test Tree with columns: Tests: 0/1 selected
 
 Column titles changed in Test Tree with columns: Tests: 0/2 selected
 
-Column titles changed in Test Tree with columns: Tests: 0/3 selected, 0/2 distinct
+Column titles changed in Test Tree with columns: Tests: 0/3 selected
 
-Column titles changed in Test Tree with columns: Tests: 0/4 selected, 0/3 distinct
+Column titles changed in Test Tree with columns: Tests: 0/4 selected
 
-Column titles changed in Test Tree with columns: Tests: 0/5 selected, 0/3 distinct
+Column titles changed in Test Tree with columns: Tests: 0/5 selected
 
-Column titles changed in Test Tree with columns: Tests: 0/6 selected, 0/4 distinct
+Column titles changed in Test Tree with columns: Tests: 0/6 selected
 
-Updated : Test Tree with columns: Tests: 0/6 selected, 0/4 distinct
--> TargetApp (hello) (black/grey90,bold)
-->   Common (black/grey90)
-->   Base (black/grey90)
-->   Extra1 (black/grey90)
-->   Extra2 (black/grey90)
-Updated drop-down list in 'Test-file to search' Text entry (set to 'errors') (drop-down list containing ['errors', 'output'])
+Column titles changed in Test Tree with columns: Tests: 0/7 selected
 
-Changing GUI status to: 'Reading tests completed at 18Sep08:13:44.'
+Column titles changed in Test Tree with columns: Tests: 0/8 selected
+
+Column titles changed in Test Tree with columns: Tests: 0/9 selected
+
+Column titles changed in Test Tree with columns: Tests: 0/10 selected
+
+Column titles changed in Test Tree with columns: Tests: 0/11 selected
+
+Updated : Test Tree with columns: Tests: 0/11 selected
+-> TargetApp (dip) (black/grey90,bold)
+->   Game9952 (black/grey90,bold)
+->     S01.99 (black/grey90)
+->     A01 (black/grey90)
+->     S02 (black/grey90)
+->     A02 (black/grey90)
+->     S03 (black/grey90)
+->     A03 (black/grey90)
+->     S04 (black/grey90)
+->     A04 (black/grey90)
+->     S05 (black/grey90)
+->     A05 (black/grey90)
+->   npstIII (black/grey90,bold)
+->     Game47 (black/grey90,bold)
+->       S01 (black/grey90)
+Updated drop-down list in 'Test-file to search' Text entry (set to 'output') (drop-down list containing ['output'])
+
+Changing GUI status to: 'Reading tests completed at 18Sep10:51:56.'
 
 Expected application event 'all tests to be read' occurred, proceeding.
 
-'set test selection to' event created with arguments 'TargetApp (hello)'
+'set test selection to' event created with arguments 'S01.99'
 
 No longer greyed out : _Run
 
-Changed selection in Test Tree with columns: Tests: 3 suites selected, versions <default>,extra1,extra2
--> TargetApp (hello) (black/grey90,bold)   ***
-->   Common (black/grey90)
-->   Base (black/grey90)
-->   Extra1 (black/grey90)
-->   Extra2 (black/grey90)
+Changed selection in Test Tree with columns: Tests: 1/11 selected
+-> TargetApp (dip) (black/grey90,bold)
+->   Game9952 (black/grey90,bold)
+->     S01.99 (black/grey90)   ***
+->     A01 (black/grey90)
+->     S02 (black/grey90)
+->     A02 (black/grey90)
+->     S03 (black/grey90)
+->     A03 (black/grey90)
+->     S04 (black/grey90)
+->     A04 (black/grey90)
+->     S05 (black/grey90)
+->     A05 (black/grey90)
+->   npstIII (black/grey90,bold)
+->     Game47 (black/grey90,bold)
+->       S01 (black/grey90)
 
 Current page changed in Notebook with tabs: Test , Selection , Running , Config
 Viewing page 'Test'
 ...........
 
-Showing File Tree with columns: TargetApp
--> Definition Files (white,bold)
-->   config.hello (grey90)
-->   config.hello.badbinary (grey90)
-->   config.hello.badbinextra (grey90)
-->   config.hello.block1extra (grey90)
-->   config.hello.blockextra (grey90)
-->   config.hello.extra3 (grey90)
-->   config.hello.otherexec (grey90)
-->   testsuite.hello (grey90)
-->   testsuite.hello.extra1 (grey90)
-->   testsuite.hello.extra2 (grey90)
+Showing File Tree with columns: S01.99
+-> Approved Files (white,bold)
+->   output.dip (grey90)
+-> Definition Files (white)
 
 ------------------------------ (horizontal pane separator)
 ...........
@@ -100,21 +122,24 @@ Showing File Tree with columns: TargetApp
 ========== Text Info ==========
 
 Description:
-Root test suite
+S01.99's comment
+
+Full path:
+Game9952/S01.99
 ===============================
 
-'view actions for test' event created with arguments 'TargetApp (hello)'
+'view actions for test' event created with arguments 'S01.99'
 
 ---------- Popup Window ----------
-'Add Test' (Stock image 'gtk-add', accelerator 'Ctrl+N')
-'Add Suite' (Stock image 'gtk-add')
+'Add Test' (Stock image 'gtk-add', greyed out, accelerator 'Ctrl+N')
+'Add Suite' (Stock image 'gtk-add', greyed out)
   ----
-'_Cut' (Stock image 'gtk-cut', greyed out, accelerator 'Ctrl+X')
-'_Copy' (Stock image 'gtk-copy', greyed out, accelerator 'Ctrl+C')
+'_Cut' (Stock image 'gtk-cut', accelerator 'Ctrl+X')
+'_Copy' (Stock image 'gtk-copy', accelerator 'Ctrl+C')
 '_Paste' (Stock image 'gtk-paste', greyed out, accelerator 'Ctrl+V')
-'_Rename...' (Stock image 'gtk-italic', greyed out, accelerator 'Ctrl+M')
-'Edit Description' (greyed out)
-'Remove...' (Stock image 'gtk-delete', greyed out)
+'_Rename...' (Stock image 'gtk-italic', accelerator 'Ctrl+M')
+'Edit Description'
+'Remove...' (Stock image 'gtk-delete')
   ----
 'Enter Failure Information' (Stock image 'gtk-info', accelerator 'Ctrl+I')
   ----
@@ -126,52 +151,23 @@ Root test suite
 '_Reorder' (+)
 ----------------------------------
 
-'add test' event created with arguments ''
+'edit test description' event created with arguments ''
 
----------- Dialog 'Add Test' ----------
-Default widget is 'gtk-ok'
-'Test Name:'
-Text entry
-'Test Description:' (tooltip 'Enter a description of the new test which will be inserted as a comment in the testsuite file.')
-...........
+Waiting for application event 'file editing operations to complete' to occur.
 
-========== Test Description ==========
-
-======================================
-'
-Place Test:' (tooltip 'Where in the test suite should the test be placed?')
-Text entry (set to 'last in suite') (drop-down list containing ['first in suite', 'after Common', 'after Base', 'last in suite'])
-'Command line options:'
-Text entry
-Stock Button 'gtk-ok' , Stock Button 'gtk-cancel'
----------------------------------------
-
-'enter test name =' event created with arguments 'NewCommon'
-Edited 'Test Name' Text entry (set to 'NewCommon')
-
-'press ok' event created with arguments ''
-
-Updated : Test Tree with columns: Tests: 3/9 selected, versions <default>,extra1,extra2
--> TargetApp (hello) (black/grey90,bold)
-->   Common (black/grey90)
-->   Base (black/grey90)
-->   Extra1 (black/grey90)
-->   Extra2 (black/grey90)
-->   NewCommon (black/grey90)   ***
-
-Updated : File Tree with columns: NewCommon
--> Approved Files (white)
--> Definition Files (white)
+Changing GUI status to: 'Started "emacs tmpp2rS6H" in background (from test S01.99).'
 
 ========== Text Info ==========
 
 Description:
-<No description provided>
+S01.99's comment
+new comment line
+
 
 Full path:
-NewCommon
+Game9952/S01.99
 ===============================
 
-Changing GUI status to: 'Added new HELLO test-case NewCommon, HELLO.extra1 test-case NewCommon, HELLO.extra2 test-case NewCommon'
+Expected application event 'file editing operations to complete' occurred, proceeding.
 
-'quit' event created with arguments ''
+'close window' event created with arguments ''
