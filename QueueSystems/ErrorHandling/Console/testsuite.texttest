@@ -10,8 +10,11 @@ BadQueueCommandLine
 # Copy of BadQueue, but mark the text as known bug, to check we can do this from the master process
 BadQueueKnownBug
 
-# Check that we read LSF_RESOURCE environment variable
+# Check that we read queue_system_resource
 BadResource
+
+# Check that we get resources from -R
+BadResourceCommandLine
 
 # Basic test for specifying performance machines - that a non-existent pair of machines cause errors
 BadPerformanceMachine
