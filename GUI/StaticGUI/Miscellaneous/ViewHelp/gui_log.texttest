@@ -37,7 +37,7 @@ Button 'Filter' (Stock image 'gtk-find', accelerator 'Ctrl+F', tooltip 'filter t
 Button 'Reset Tab' (tooltip 'Reset all the settings in the current tab to their default values')
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 18Mar08:54:24.' , Image 'throbber_inactive.png'
+'TextTest started at 22Sep15:07:58.' , Image 'throbber_inactive.png'
 ------------------------------------------------------------------------
 
 Changing GUI status to: 'Reading tests ...'
@@ -82,7 +82,7 @@ Updated : Test Tree with columns: Tests: 0/11 selected
 ->       S01 (black/grey90)
 Updated drop-down list in 'Test-file to search' Text entry (set to 'output') (drop-down list containing ['output'])
 
-Changing GUI status to: 'Reading tests completed at 18Mar08:54:25.'
+Changing GUI status to: 'Reading tests completed at 22Sep15:08:01.'
 
 Expected application event 'all tests to be read' occurred, proceeding.
 
@@ -211,9 +211,9 @@ Viewing table with 6 rows and 2 columns.
 '<b>You are using these installations:
 </b>'
 Viewing table with 3 rows and 2 columns.
-'Test Suite:' | '/tmp/geoff/texttest.gui.18Mar085359.79533/texttest.gui/GUI/StaticGUI/Miscellaneous/ViewHelp/TargetApp'
-'TextTest:' | '/users/geoff/work/master/Testing/TextTest'
-'Python:' | '/usr/local/tt-env/python2.6.current/bin/python'
+'Test Suite:' | '/carm/proj/texttest-tmp/geoff/texttest.gui.22Sep150727.80740/texttest.gui/GUI/StaticGUI/Miscellaneous/ViewHelp/TargetApp'
+'TextTest:' | '/nfs/vm/texttest/geoff/Testing/TextTest/texttestlib'
+'Python:' | '/users/geoff/.local/texttest_test/bin/python'
 Stock Button 'gtk-close'
 --------------------------------------------------
 
@@ -246,6 +246,14 @@ Showing Notebook with tabs: from 3.26 , from 3.25 , from 3.24 , from 3.23 , from
 Viewing page 'from 3.26'
 
 ========== GtkTextView ==========
+
+========================================================
+CHANGE IN ENVIRONMENT
+========================================================
+The command is now "texttest" on UNIX. On Windows, there is now texttest.pyw for the GUI and texttestc.py for the console.
+TextTest can be run from the source tree on UNIX still, but on Windows you now need to install it. The easiest way being
+via the Windows installer, or via pip/easy_install.
+
 =========================================================
 CHANGES IN DEFAULT BEHAVIOUR (OR PROCEDURE)
 =========================================================
@@ -287,6 +295,41 @@ save_filtered_file_stems:stdout
 
 If "something" appears more than once in the file, the filtering behaviour will behave differently on the stored file and the 
 new file, which is very confusing for users.
+
+(2)options files: We allow now combining of comma separated lists of arguments
+==============================================================================
+Some examples:
+Ex1)
+top-level options file: -X 1,4
+test-level option file: -X 3,5
+Previous behaviour: ["-X", "1,4","-X", "3,5"] 
+we get now the list ["-X", "1,4,3,5"]
+
+Ex2)
+top-level options file: -X 1
+test-level option file: -X 2
+Previous behaviour: ["-X", "1","-X", "2"] 
+New behaviour: ["-X", "2"]
+
+Ex3)
+top-level options file: -X 1,2
+test-level option file: {CLEAR -X 2}
+Previous behaviour: ["-X", "1,2"] 
+New behaviour: ["-X", "1"] 
+
+(3) Performance-specific reporting has been simplified
+======================================================
+Instead of separate pages it now appears as additional rows in the normal overview.
+"historical_report_resource_pages" renamed to "historical_report_resources" - this indicates which resources to show.
+"historical_report_page_tables" is removed and has no effect any more.
+
+It seems not many people used this functionality in its old form: it is hoped that the new format will be more useful.
+See website for more details.
+
+(4) "Save" is renamed to "Approve" (and "Standard Files" to "Approved Files")
+=============================================================================
+There is no change in functionality, just a change of emphasis as we are now talking about Approval Testing a lot, in line with
+other tools that work in the same way.
 =================================
 Stock Button 'gtk-close'
 -------------------------------------------------------
@@ -387,71 +430,25 @@ Changing GUI status to: ''
 ---------- Dialog 'TextTest Change Logs' ----------
 Default widget is 'gtk-close'
 
-Showing Notebook with tabs: trunk , 3.26 , 3.25 , 3.24 , 3.23 , 3.22 , 3.21 , 3.20 , 3.19 , 3.18 , 3.17 , 3.16.1 , 3.16 , 3.15 , 3.14.1 , 3.14 , 3.13 , 3.12.1 , 3.12 , 3.11.1 , 3.11 , 3.10 , 3.9.1 , 3.9 , 3.8 , 3.7.1 , 3.7 , 3.6 , 3.5.3 , 3.5.2 , 3.5.1 , 3.5 , 3.4 , 3.3 , 3.2 , 3.1.1 , 3.1 , 3.0 , 2.1 , 2.0 , 1.0 , 0.2 , 0.1
+Showing Notebook with tabs: trunk , 3.27 , 3.26 , 3.25 , 3.24 , 3.23 , 3.22 , 3.21 , 3.20 , 3.19 , 3.18 , 3.17 , 3.16.1 , 3.16 , 3.15 , 3.14.1 , 3.14 , 3.13 , 3.12.1 , 3.12 , 3.11.1 , 3.11 , 3.10 , 3.9.1 , 3.9 , 3.8 , 3.7.1 , 3.7 , 3.6 , 3.5.3 , 3.5.2 , 3.5.1 , 3.5 , 3.4 , 3.3 , 3.2 , 3.1.1 , 3.1 , 3.0 , 2.1 , 2.0 , 1.0 , 0.2 , 0.1
 Viewing page 'trunk'
 
 ========== GtkTextView ==========
+Release Enhancements:
 Dynamic GUI Enhancements:
-    - New "Generate test summary" in Actions menu
-	Essentially generates the batch report for the selected tests, writing to a user-selected file
+General GUI Enhancements:
 Framework Enhancements:
-    - "collate_file" now also finds files in $TEXTTEST_LOG_DIR if local sandbox is used
-	i.e. if "default_texttest_local_tmp" is set
-    - New option for discarding files, "discard_file_text"
-	Allows files to be discarded conditional on their contents. Useful e.g. for intermittent exceptions. See website.
-    - When sending SIGQUIT to TextTest if it's hanging, now print a stacktrace of all threads instead of just the main one
-	(UNIX only, naturally)
-    - Section filters will not trigger on lines which match both the start and end lines now.
-	This is a backwards-incompatible change, see migration notes.
-    - Autogenerates CLASSPATH for StoryText/Eclipse applications
-	mirroring changes in latest StoryText
 Version Control Browser Enhancements:
-    - Now supports Git
-    - "Update" operation is now always a "centralised-style" update
-	i.e. Mercurial does "hg pull -u" instead of "hg update", Git does "git pull"
-    - Keyboard accelerator Ctrl+U added for "update"
 Batch Report Enhancements:
-    - If "file_to_url" is set, now list URLs in the log file, of table pages and index pages
-	For example Jenkins will turn these into links directly.
-    - Many improvements to Jenkins Changes functionality
-	Handles attached RPMs via Maven, separate "build" structure from "jobs", workspace subdirectories amongst other things
 Grid Engine enhancements/bug fixes:
-    - New experimental status support for EC2 Virtual Private Cloud added
-	Tests run parallel on any available cloud machines. Requires Python tool "boto". See website.
-    - Fixed race conditions on NFS-systems between grid engines and the file server
-    - Fixed race condition which could lead to hanging on shutdown
-Windows installer Enhancements:
-    - All files now end up under chosen location, removed hardcoded C:\virtualenv and C:\jython2.5.1
-    - StoryText is now upgraded properly when the installer is run for a second time after a new release
-    - Should now work for wxPython applications without needing to hack by hand afterwards
 Bug Fixes:
-    - Fixed wildcards for stems in "file_split_pattern" list. Using fnmatch module instead of a hacked pattern matching.
-    - Fixed wildcards for stems in knownbugs "search_file", now works also with new files
-    - Fixed taking long time to start a huge amount of test copies.
-    - VCS update enabled when no tests are selected
-    - Exit code of 1 now returned when initial test suite cannot be created
-    - Fixed problem when running multiple usecases if test has "usecase" in the name
-    - Fixed Exception when closing dynamic GUI after reconnecting.
-    - Handle now executables inside remote checkouts
-    - Fixed unresponsive dynamic GUI after viewing screenshots in a browser
-    - Fixed stack trace generating batch report in Jenkins when Jenkins jobs have a nested module structure
-    - Fixed bug where batch reports were collected for e.g. version abc when version ab was requested
-    - Fixed inconsistency between pressing "Quit" and closing the window, in the last case warnings correctly produced now
-    - Disabled VCS actions on New Files in the dynamic GUI (stacktraced before)
-    - Fixed stacktrace interpreting core files when GDB fails to handle them and DBX not installed
-    - If performance_test_machine is set and test is not running there, don't attempt to use "time" program
-    - Fixed problems with {INTERNAL writedir} filtering when test names contain a '+'
-    - Fixed java classpath for eclipse rcp applications
-    - Don't start subsequent processes if a test has been killed.
-    - Failure information dialog has scrollbars if needed
-    - Fixed bug with {CLEAR x} in options files clearing parts of what is matched
 =================================
 Stock Button 'gtk-close'
 ---------------------------------------------------
 
 'view tab' event created with arguments '3.7.1'
 
-Current page changed in Notebook with tabs: trunk , 3.26 , 3.25 , 3.24 , 3.23 , 3.22 , 3.21 , 3.20 , 3.19 , 3.18 , 3.17 , 3.16.1 , 3.16 , 3.15 , 3.14.1 , 3.14 , 3.13 , 3.12.1 , 3.12 , 3.11.1 , 3.11 , 3.10 , 3.9.1 , 3.9 , 3.8 , 3.7.1 , 3.7 , 3.6 , 3.5.3 , 3.5.2 , 3.5.1 , 3.5 , 3.4 , 3.3 , 3.2 , 3.1.1 , 3.1 , 3.0 , 2.1 , 2.0 , 1.0 , 0.2 , 0.1
+Current page changed in Notebook with tabs: trunk , 3.27 , 3.26 , 3.25 , 3.24 , 3.23 , 3.22 , 3.21 , 3.20 , 3.19 , 3.18 , 3.17 , 3.16.1 , 3.16 , 3.15 , 3.14.1 , 3.14 , 3.13 , 3.12.1 , 3.12 , 3.11.1 , 3.11 , 3.10 , 3.9.1 , 3.9 , 3.8 , 3.7.1 , 3.7 , 3.6 , 3.5.3 , 3.5.2 , 3.5.1 , 3.5 , 3.4 , 3.3 , 3.2 , 3.1.1 , 3.1 , 3.0 , 2.1 , 2.0 , 1.0 , 0.2 , 0.1
 Viewing page '3.7.1'
 
 ========== GtkTextView ==========
@@ -525,9 +522,9 @@ Viewing table with 6 rows and 2 columns.
 '<b>You are using these installations:
 </b>'
 Viewing table with 3 rows and 2 columns.
-'Test Suite:' | '/tmp/geoff/texttest.gui.18Mar085359.79533/texttest.gui/GUI/StaticGUI/Miscellaneous/ViewHelp/TargetApp'
-'TextTest:' | '/users/geoff/work/master/Testing/TextTest'
-'Python:' | '/usr/local/tt-env/python2.6.current/bin/python'
+'Test Suite:' | '/carm/proj/texttest-tmp/geoff/texttest.gui.22Sep150727.80740/texttest.gui/GUI/StaticGUI/Miscellaneous/ViewHelp/TargetApp'
+'TextTest:' | '/nfs/vm/texttest/geoff/Testing/TextTest/texttestlib'
+'Python:' | '/users/geoff/.local/texttest_test/bin/python'
 Stock Button 'gtk-close'
 --------------------------------------------------
 
@@ -618,8 +615,9 @@ to follow the "Getting Started" tutorial and then possibly the "Course Material"
 http://www.texttest.org/index.php?page=documentation_trunk. For those who basically know the tool but
 want to explore features they haven't used, the self-tests provide a wealth of working examples.
 
-These can be found in the download, or the latest version of them can be had from source control.
-See http://www.texttest.org/index.php?page=download.
+These can be downloaded from source control. Install the Bazaar source control tool and then do
+bzr branch lp:/~geoff.bache/texttest/selftest-trunk
+See http://www.texttest.org/index.php?page=download for more details.
 
 There are various "TargetApp" directories to be found under it. Each of these contains a test-suite 
 for a simple program (which are in turn part of the larger test suite for TextTest, as it tests 
