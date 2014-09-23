@@ -1,0 +1,92 @@
+
+---------- Window 'HELLO tests under /carm/proj/texttest-tmp/geoff/texttest.ec2cloud.gui.23Sep163523.100444/texttest.ec2cloud.gui/QueueSystems/SlaveReuse/Master/ForceReuse/GUI/Ec2Only/KillDuringMachineStart/TargetApp/ (started at 23Sep16:29:53) - TextTest dynamic GUI' ----------
+Focus widget is 'Test Tree'
+
+Menu Bar : '_File' (+) , '_View' (+) , '_Actions' (+) , '_Help' (+)
+
+Tool Bar :
+  _Quit (Stock image 'gtk-quit', accelerator 'Ctrl+Q', tooltip 'Quit')
+  _Kill (Stock image 'gtk-stop', greyed out, accelerator 'Ctrl+Delete', tooltip 'Kill selected tests')
+  _Approve (Stock image 'gtk-apply', greyed out, accelerator 'Ctrl+S', tooltip 'Approve results for selected tests. This will save the files produced by this run as the new approved files which future runs will be compared with. Used to be called Save.')
+  Progress bar set to fraction 0.0, text 'All 0 tests completed at 23Sep16:29:53'
+...........
+
+Showing Test Tree with columns: Tests: All 0 selected , Details
+
+------------------------------ (vertical pane separator)
+...........
+
+Showing Notebook with tabs: Status , Selection , Run Info
+Viewing page 'Status'
+
+Showing Test Status View with columns: Status , Number , Visible
+'Shortcuts:' , Button '_New'
+...........
+'TextTest started at 23Sep16:29:53.' , Image 'throbber_inactive.png'
+----------------------------------------------------------------------------------------------------
+
+Progress bar set to fraction 0.0, text '0 of 1 tests completed'
+
+Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
+-> TargetApp (hello) (black/white,bold) | (white)
+->   Suite (black/white,bold) | (white)
+->     Test (black/white) | (white)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white,bold) | 1 (white,bold) | Check box (checked)
+
+Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
+-> TargetApp (hello) (black/white,bold) | (white)
+->   Suite (black/white,bold) | (white)
+->     Test (black/grey80) | PEND (grey80)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white) | 0 (white) | Check box (checked)
+-> Pending (grey80,bold) | 1 (grey80,bold) | Check box (checked)
+
+Expected application event 'all tests to be read' occurred, proceeding.
+Expected application event 'test Test to become pending' occurred, proceeding.
+
+'set test selection to' event created with arguments 'Test'
+
+No longer greyed out : _Kill
+
+Changed selection in Test Tree with columns: Tests: All 1 selected, none hidden , Details
+-> TargetApp (hello) (black/white,bold) | (white)
+->   Suite (black/white,bold) | (white)
+->     Test (black/grey80) | PEND (grey80)   ***
+
+Current page changed in Notebook with tabs: Test , Status , Selection , Run Info
+Viewing page 'Test'
+...........
+
+Showing File Tree with columns: Test , Details
+-> Temporary Files
+
+------------------------------ (horizontal pane separator)
+...........
+
+========== Text Info ==========
+Job pending in ec2cloud
+===============================
+
+'quit' event created with arguments ''
+
+Changing GUI status to: 'Waiting for all tests to terminate ...'
+
+Greyed out : _Kill
+
+Progress bar set to fraction 1.0, text 'All 1 tests completed at 23Sep16:29:53'
+
+Updated : Test Tree with columns: Tests: All 1 selected, none hidden , Details
+-> TargetApp (hello) (black/white,bold) | (white)
+->   Suite (black/white,bold) | (white)
+->     Test (black/salmon) | cancelled pending job at 16:29 (salmon)   ***
+
+Updated : File Tree with columns: Test , Details
+-> Temporary Files
+
+========== Text Info ==========
+Test were cancelled before starting :
+Test job job0_10.80.17.102 was cancelled (while still pending in ec2cloud) at 16:29
+===============================
