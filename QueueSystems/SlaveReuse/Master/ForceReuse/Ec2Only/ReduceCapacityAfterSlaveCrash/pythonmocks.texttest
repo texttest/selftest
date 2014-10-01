@@ -13,14 +13,20 @@
 ->RET:Instance('EC2Connection(AWSQueryConnection, AWSAuthConnection, object)', 'ec2connection_eu_west_1')
 <-PYT:ec2connection_eu_west_1.get_only_instances()
 ->RET:[Instance('Instance(TaggedEC2Object, EC2Object, object)', 'instance1'), Instance('Instance', 'instance2'), Instance('Instance', 'instance3'), Instance('Instance', 'instance4'), Instance('Instance', 'instance5'), Instance('Instance', 'instance6'), Instance('Instance', 'instance7'), Instance('Instance', 'instance8'), Instance('Instance', 'instance9'), Instance('Instance', 'instance10'), Instance('Instance', 'instance11'), Instance('Instance', 'instance12'), Instance('Instance', 'instance13'), Instance('Instance', 'instance14'), Instance('Instance', 'instance15'), Instance('Instance', 'instance16'), Instance('Instance', 'instance17'), Instance('Instance', 'instance18')]
+<-PYT:instance1.private_ip_address
+->RET:u'10.80.17.235'
 <-PYT:instance1.tags
 ->RET:Instance('TagSet(dict)', 'tagset1')
 <-PYT:tagset1.get('Name', '')
 ->RET:u'texttest-geoff-235'
+<-PYT:instance2.private_ip_address
+->RET:u'10.80.17.25'
 <-PYT:instance2.tags
 ->RET:Instance('TagSet', 'tagset2')
 <-PYT:tagset2.get('Name', '')
 ->RET:u'texttest-geoff-25'
+<-PYT:instance3.private_ip_address
+->RET:u'10.80.17.225'
 <-PYT:instance3.tags
 ->RET:Instance('TagSet', 'tagset3')
 <-PYT:tagset3.get('Name', '')
@@ -29,6 +35,8 @@
 ->RET:Instance('TagSet', 'tagset4')
 <-PYT:tagset4.get('Name', '')
 ->RET:u'ag-test2'
+<-PYT:instance5.private_ip_address
+->RET:u'10.80.17.109'
 <-PYT:instance5.tags
 ->RET:Instance('TagSet', 'tagset5')
 <-PYT:tagset5.get('Name', '')
@@ -37,6 +45,8 @@
 ->RET:Instance('TagSet', 'tagset6')
 <-PYT:tagset6.get('Name', '')
 ->RET:u'nat-appliance'
+<-PYT:instance7.private_ip_address
+->RET:u'10.80.17.102'
 <-PYT:instance7.tags
 ->RET:Instance('TagSet', 'tagset7')
 <-PYT:tagset7.get('Name', '')
@@ -49,14 +59,20 @@
 ->RET:Instance('TagSet', 'tagset9')
 <-PYT:tagset9.get('Name', '')
 ->RET:u'chadneal-test-status-checks'
+<-PYT:instance10.private_ip_address
+->RET:u'10.80.17.161'
 <-PYT:instance10.tags
 ->RET:Instance('TagSet', 'tagset10')
 <-PYT:tagset10.get('Name', '')
 ->RET:u'texttest-geoff-161'
+<-PYT:instance11.private_ip_address
+->RET:u'10.80.17.157'
 <-PYT:instance11.tags
 ->RET:Instance('TagSet', 'tagset11')
 <-PYT:tagset11.get('Name', '')
 ->RET:u'texttest-geoff-157'
+<-PYT:instance12.private_ip_address
+->RET:u'10.80.17.10'
 <-PYT:instance12.tags
 ->RET:Instance('TagSet', 'tagset12')
 <-PYT:tagset12.get('Name', '')
@@ -65,10 +81,14 @@
 ->RET:Instance('TagSet', 'tagset13')
 <-PYT:tagset13.get('Name', '')
 ->RET:u'Monitoring'
+<-PYT:instance14.private_ip_address
+->RET:u'10.80.17.153'
 <-PYT:instance14.tags
 ->RET:Instance('TagSet', 'tagset14')
 <-PYT:tagset14.get('Name', '')
 ->RET:u'texttest-geoff-153'
+<-PYT:instance15.private_ip_address
+->RET:u'10.80.17.77'
 <-PYT:instance15.tags
 ->RET:Instance('TagSet', 'tagset15')
 <-PYT:tagset15.get('Name', '')
@@ -81,6 +101,8 @@
 ->RET:Instance('TagSet', 'tagset17')
 <-PYT:tagset17.get('Name', '')
 ->RET:u'test_ag_03'
+<-PYT:instance18.private_ip_address
+->RET:u'10.80.17.220'
 <-PYT:instance18.tags
 ->RET:Instance('TagSet', 'tagset18')
 <-PYT:tagset18.get('Name', '')
@@ -131,48 +153,26 @@
 ->RET:raise exceptions.StopIteration('')
 <-PYT:instance1.instance_type
 ->RET:u'c3.xlarge'
-<-PYT:instance1.private_ip_address
-->RET:u'10.80.17.235'
 <-PYT:instance2.instance_type
 ->RET:u'c3.2xlarge'
-<-PYT:instance2.private_ip_address
-->RET:u'10.80.17.25'
 <-PYT:instance3.instance_type
 ->RET:u'c3.xlarge'
-<-PYT:instance3.private_ip_address
-->RET:u'10.80.17.225'
 <-PYT:instance5.instance_type
 ->RET:u't1.micro'
-<-PYT:instance5.private_ip_address
-->RET:u'10.80.17.109'
 <-PYT:instance7.instance_type
 ->RET:u't1.micro'
-<-PYT:instance7.private_ip_address
-->RET:u'10.80.17.102'
 <-PYT:instance10.instance_type
 ->RET:u'c3.2xlarge'
-<-PYT:instance10.private_ip_address
-->RET:u'10.80.17.161'
 <-PYT:instance11.instance_type
 ->RET:u'c3.2xlarge'
-<-PYT:instance11.private_ip_address
-->RET:u'10.80.17.157'
 <-PYT:instance12.instance_type
 ->RET:u'c3.xlarge'
-<-PYT:instance12.private_ip_address
-->RET:u'10.80.17.10'
 <-PYT:instance14.instance_type
 ->RET:u't1.micro'
-<-PYT:instance14.private_ip_address
-->RET:u'10.80.17.153'
 <-PYT:instance15.instance_type
 ->RET:u'c3.2xlarge'
-<-PYT:instance15.private_ip_address
-->RET:u'10.80.17.77'
 <-PYT:instance18.instance_type
 ->RET:u'c3.xlarge'
-<-PYT:instance18.private_ip_address
-->RET:u'10.80.17.220'
 <-PYT:texttestlib.utils.getUserName()
 ->RET:'fakeuser'
 <-PYT:ec2connection_eu_west_1.get_only_instances(instance_ids=[u'i-006ffd43', u'i-7b4b2838', u'i-8a9e80ca', u'i-059e8e45', u'i-5493e217', u'i-e9011ba9', u'i-be7916fd', u'i-2b533068', u'i-078d9e47', u'i-1a011a5a', u'i-5e17ea1d'])
