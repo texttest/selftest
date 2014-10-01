@@ -11,6 +11,9 @@ FindAvailableMachines
 # See what happens if we discover no machines available with the correct tag
 AllMachinesStopped
 
+# Sometimes EC2 itself has no capacity to start stopped instances
+NoEC2Capacity
+
 # If we're debugging the slave, we should synch our own code across and run that: otherwise we need to release to try stuff out
 DebugSlave
 
