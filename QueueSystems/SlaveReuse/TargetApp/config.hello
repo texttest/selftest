@@ -1,4 +1,16 @@
-import_config_file:$STANDARD
+# Useful default test program
+executable:${TEXTTEST_ROOT}/hello.py
+
+# don't spew graphical viewers from console runs
+# unless requested
+log_file:none
+
+# get filter files everywhere, can be useful
+home_operating_system:none
+
+# But then need to make sure we don't get offered these as versions...
+unsaveable_version:posix
+unsaveable_version:nt
 
 queue_system_environment:STANDARD
 

@@ -367,6 +367,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Response><Errors><Error><Code>InsufficientInstanceCapacity</Code><Message>We currently do not have sufficient t1.micro capacity in the Availability Zone you requested (eu-west-1a). Our system will be working on provisioning additional capacity. You can currently get t1.micro capacity by not specifying an Availability Zone in your request or choosing eu-west-1b, eu-west-1c.</Message></Error></Errors><RequestID>e552dd8f-164c-443d-9c86-2ede1669c84d</RequestID></Response>
 '''
+<-PYT:boto.ec2.connect_to_region('eu-west-1')
+->RET:Instance('EC2Connection', 'ec2connection_eu_west_111')
+<-PYT:ec2connection_eu_west_111.get_only_instances(instance_ids=[u'i-006ffd43'])
+->RET:[Instance('Instance', 'instance132')]
+<-PYT:instance132.remove_tag('TextTest user')
+<-PYT:boto.ec2.cloudwatch.connect_to_region('eu-west-1')
+->RET:Instance('CloudWatchConnection', 'cloudwatchconnection_eu_west_111')
+<-PYT:cloudwatchconnection_eu_west_111.enable_alarm_actions([u'stop-i-006ffd43'])
+->RET:True
 <-PYT:instance28.start()
 <-PYT:texttestlib.utils.getPortListenErrorCode(u'10.80.17.30', 22)
 ->RET:11
@@ -376,8 +385,8 @@
 ->RET:111
 <-PYT:boto.ec2.connect_to_region('eu-west-1')
 ->RET:Instance('EC2Connection', 'ec2connection_eu_west_11')
-<-PYT:ec2connection_eu_west_11.get_only_instances(instance_ids=[u'i-006ffd43', u'i-be7788fd', u'i-1222dd51', u'i-078d9e47', u'i-4122dc02', u'i-059e8e45', u'i-0da45f4e', u'i-5e17ea1d', u'i-8a9e80ca', u'i-1a011a5a', u'i-e9011ba9'])
-->RET:[Instance('Instance', 'instance32'), Instance('Instance', 'instance33'), Instance('Instance', 'instance34'), Instance('Instance', 'instance35'), Instance('Instance', 'instance36'), Instance('Instance', 'instance37'), Instance('Instance', 'instance38'), Instance('Instance', 'instance39'), Instance('Instance', 'instance40'), Instance('Instance', 'instance41'), Instance('Instance', 'instance42')]
+<-PYT:ec2connection_eu_west_11.get_only_instances(instance_ids=[u'i-be7788fd', u'i-1222dd51', u'i-078d9e47', u'i-4122dc02', u'i-059e8e45', u'i-0da45f4e', u'i-5e17ea1d', u'i-8a9e80ca', u'i-1a011a5a', u'i-e9011ba9'])
+->RET:[Instance('Instance', 'instance32'), Instance('Instance', 'instance33'), Instance('Instance', 'instance34'), Instance('Instance', 'instance35'), Instance('Instance', 'instance36'), Instance('Instance', 'instance37'), Instance('Instance', 'instance38'), Instance('Instance', 'instance39'), Instance('Instance', 'instance40'), Instance('Instance', 'instance41')]
 <-PYT:instance32.remove_tag('TextTest user')
 <-PYT:instance33.remove_tag('TextTest user')
 <-PYT:instance34.remove_tag('TextTest user')
@@ -388,10 +397,9 @@
 <-PYT:instance39.remove_tag('TextTest user')
 <-PYT:instance40.remove_tag('TextTest user')
 <-PYT:instance41.remove_tag('TextTest user')
-<-PYT:instance42.remove_tag('TextTest user')
 <-PYT:boto.ec2.cloudwatch.connect_to_region('eu-west-1')
 ->RET:Instance('CloudWatchConnection', 'cloudwatchconnection_eu_west_11')
-<-PYT:cloudwatchconnection_eu_west_11.enable_alarm_actions([u'stop-i-006ffd43', u'stop-i-be7788fd', u'stop-i-1222dd51', u'stop-i-078d9e47', u'stop-i-4122dc02', u'stop-i-059e8e45', u'stop-i-0da45f4e', u'stop-i-5e17ea1d', u'stop-i-8a9e80ca', u'stop-i-1a011a5a', u'stop-i-e9011ba9'])
+<-PYT:cloudwatchconnection_eu_west_11.enable_alarm_actions([u'stop-i-be7788fd', u'stop-i-1222dd51', u'stop-i-078d9e47', u'stop-i-4122dc02', u'stop-i-059e8e45', u'stop-i-0da45f4e', u'stop-i-5e17ea1d', u'stop-i-8a9e80ca', u'stop-i-1a011a5a', u'stop-i-e9011ba9'])
 ->RET:True
 <-PYT:texttestlib.utils.getPortListenErrorCode(u'10.80.17.30', 22)
 ->RET:111

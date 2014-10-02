@@ -2,8 +2,10 @@
 RequestExtraCapacity
 
 # If the slaves crash, don't try to submit new ones if there is no capacity remaining, they will probably just fail for the same reason anyway
-# 
 RejectSubmitAfterSlaveCrash
 
 # If the slaves crash, count on having reduced capacity. Don't give up entirely after one slave crash!
 ReduceCapacityAfterSlaveCrash
+
+# If EC2 can't start the instances we want, start a different one and adjust the capacity
+ReflectEC2Capacity
