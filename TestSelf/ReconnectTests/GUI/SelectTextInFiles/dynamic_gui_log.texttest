@@ -27,23 +27,33 @@ Showing Test Status View with columns: Status , Number , Visible
 
 Progress bar set to fraction 0.0, text '0 of 1 tests completed'
 
-Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
--> TargetApp (hello) (black/white,bold) | (white)
-->   Test (black/white) | (white)
+Column titles changed in Test Tree with columns: Tests: 0/1 selected, all hidden , Details
 
 Updated : Test Status View with columns: Status , Number , Visible
--> Not started (white,bold) | 1 (white,bold) | Check box (checked)
+-> Not started (white,bold) | 1 (white,bold) | Check box
 
 Progress bar set to fraction 1.0, text 'All 1 tests completed at 22May09:51:17'
 
-Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
--> TargetApp (hello) (black/white,bold) | All 1 tests successful (DarkSeaGreen2)
-
 Updated : Test Status View with columns: Status , Number , Visible
--> Not started (white) | 0 (white) | Check box (checked)
--> Succeeded (DarkSeaGreen2,bold) | 1 (DarkSeaGreen2,bold) | Check box (checked)
+-> Not started (white) | 0 (white) | Check box
+-> Succeeded (DarkSeaGreen2,bold) | 1 (DarkSeaGreen2,bold) | Check box
 
 Expected application event 'completion of test actions' occurred, proceeding.
+
+'show tests in category' event created with arguments 'Succeeded'
+
+Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
+-> TargetApp (hello) (black/white,bold) | (white)
+->   Test (black/DarkSeaGreen2) | (DarkSeaGreen2)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white) | 0 (white) | Check box
+-> Succeeded (DarkSeaGreen2,bold) | 1 (DarkSeaGreen2,bold) | Check box (checked)
+
+'hide test suite' event created with arguments 'TargetApp (hello)'
+
+Collapsed row in Test Tree with columns: Tests: 0/1 selected, none hidden , Details
+-> TargetApp (hello) (black/white,bold) | (white)
 
 'view options for' event created with arguments 'Selection'
 
@@ -81,7 +91,7 @@ Toggled Check button 'Select in collapsed suites' (checked) (tooltip 'Select in 
 Changing GUI status to: 'Selecting tests ...'
 
 Updated : Test Tree with columns: Tests: All 1 selected, none hidden , Details
--> TargetApp (hello) (black/white,bold) | All 1 tests successful (DarkSeaGreen2)
+-> TargetApp (hello) (black/white,bold) | (white)
 ->   Test (black/DarkSeaGreen2) | (DarkSeaGreen2) | Stock image 'gtk-refresh'   ***
 
 Child visibility changed in Notebook with tabs: Test , Status , Selection , Run Info

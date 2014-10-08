@@ -1,5 +1,5 @@
 
----------- Window 'HELLO tests under /carm/proj/texttest-tmp/geoff/texttest.ec2cloud.gui.23Sep163523.100444/texttest.ec2cloud.gui/QueueSystems/SlaveReuse/Master/ForceReuse/GUI/Ec2Only/KillDuringMachineStart/TargetApp/ (started at 23Sep16:29:53) - TextTest dynamic GUI' ----------
+---------- Window 'HELLO tests under /carm/proj/texttest-tmp/dgalda/texttest.ec2cloud.gui.07Oct155339.30239/texttest.ec2cloud.gui/QueueSystems/SlaveReuse/Master/ForceReuse/GUI/Ec2Only/KillDuringMachineStart/TargetApp/ (started at 23Sep16:29:53) - TextTest dynamic GUI' ----------
 Focus widget is 'Test Tree'
 
 Menu Bar : '_File' (+) , '_View' (+) , '_Actions' (+) , '_Help' (+)
@@ -27,13 +27,19 @@ Showing Test Status View with columns: Status , Number , Visible
 
 Progress bar set to fraction 0.0, text '0 of 1 tests completed'
 
-Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
--> TargetApp (hello) (black/white,bold) | (white)
-->   Suite (black/white,bold) | (white)
-->     Test (black/white) | (white)
+Column titles changed in Test Tree with columns: Tests: 0/1 selected, all hidden , Details
 
 Updated : Test Status View with columns: Status , Number , Visible
--> Not started (white,bold) | 1 (white,bold) | Check box (checked)
+-> Not started (white,bold) | 1 (white,bold) | Check box
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white) | 0 (white) | Check box
+-> Pending (grey80,bold) | 1 (grey80,bold) | Check box
+
+Expected application event 'all tests to be read' occurred, proceeding.
+Expected application event 'test Test to become pending' occurred, proceeding.
+
+'show tests in category' event created with arguments 'Pending'
 
 Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
 -> TargetApp (hello) (black/white,bold) | (white)
@@ -41,11 +47,8 @@ Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
 ->     Test (black/grey80) | PEND (grey80)
 
 Updated : Test Status View with columns: Status , Number , Visible
--> Not started (white) | 0 (white) | Check box (checked)
+-> Not started (white) | 0 (white) | Check box
 -> Pending (grey80,bold) | 1 (grey80,bold) | Check box (checked)
-
-Expected application event 'all tests to be read' occurred, proceeding.
-Expected application event 'test Test to become pending' occurred, proceeding.
 
 'set test selection to' event created with arguments 'Test'
 
@@ -78,15 +81,14 @@ Greyed out : _Kill
 
 Progress bar set to fraction 1.0, text 'All 1 tests completed at 23Sep16:29:53'
 
-Updated : Test Tree with columns: Tests: All 1 selected, none hidden , Details
--> TargetApp (hello) (black/white,bold) | (white)
-->   Suite (black/white,bold) | (white)
-->     Test (black/salmon) | cancelled pending job at 16:29 (salmon)   ***
+Updated : Test Tree with columns: Tests: 0/1 selected, all hidden , Details
 
-Updated : File Tree with columns: Test , Details
--> Temporary Files
+Current page changed in Notebook with tabs: Status , Selection , Run Info
+Viewing page 'Status'
 
-========== Text Info ==========
-Test were cancelled before starting :
-Test job job0_10.80.17.102 was cancelled (while still pending in ec2cloud) at 16:29
-===============================
+Showing Test Status View with columns: Status , Number , Visible
+-> Not started (white) | 0 (white) | Check box
+-> Pending (white) | 0 (white) | Check box (checked)
+-> Failed (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->   Cancelled (salmon,bold) | 1 (salmon,bold) | Check box
+->     cancelled pending job at 16:29 (salmon,bold) | 1 (salmon,bold) | Check box
