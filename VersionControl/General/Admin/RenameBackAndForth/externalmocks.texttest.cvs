@@ -1,4 +1,4 @@
-<-CMD:cvs help
+<-CMD:cvs -q help
 ->OUT:Unknown command: `help'
 
 CVS commands are:
@@ -21,33 +21,33 @@ CVS commands are:
         pserver      Password server mode
         rannotate    Show last revision where each line of module was modified
         rdiff        Create 'patch' format diffs between releases
-<-CMD:cvs rm -f /carm/proj/texttest-tmp/geoff/texttest.05May155154.23228/texttest.cvs/VersionControl/General/Admin/RenameBackAndForth/TargetApp/Test1
+<-CMD:cvs -q rm -f /carm/proj/texttest-tmp/geoff/dynamic_gui.10Oct170231.42593/texttest.cvs/VersionControl/General/Admin/RenameBackAndForth/TargetApp/Test1
 ->FIL:Test1
 ->ERR:cvs remove: Removing /carm/proj/texttest-tmp/geoff/texttest.23Mar085401.6158/texttest.cvs/VersionControl/General/Admin/RenameBackAndForth/TargetApp/Test1
 cvs remove: scheduling `/carm/proj/texttest-tmp/geoff/texttest.23Mar085401.6158/texttest.cvs/VersionControl/General/Admin/RenameBackAndForth/TargetApp/Test1/errors.hello' for removal
 cvs remove: scheduling `/carm/proj/texttest-tmp/geoff/texttest.23Mar085401.6158/texttest.cvs/VersionControl/General/Admin/RenameBackAndForth/TargetApp/Test1/output.hello' for removal
 cvs remove: use 'cvs commit' to remove these files permanently
-<-CMD:cd /nfs/vm/texttest-tmp/geoff/texttest.05May155154.23228/texttest.cvs/VersionControl/General/Admin/RenameBackAndForth/TargetApp; cvs add /carm/proj/texttest-tmp/geoff/texttest.05May155154.23228/texttest.cvs/VersionControl/General/Admin/RenameBackAndForth/TargetApp/blah
+<-CMD:cd /carm/proj/texttest-tmp/geoff/dynamic_gui.10Oct170231.42593/texttest.cvs/VersionControl/General/Admin/RenameBackAndForth/TargetApp; cvs -q add /carm/proj/texttest-tmp/geoff/dynamic_gui.10Oct170231.42593/texttest.cvs/VersionControl/General/Admin/RenameBackAndForth/TargetApp/blah
 ->FIL:TargetApp
 ->OUT:Directory /carm/proj/texttest-tmp/geoff/texttest.23Mar085401.6158/texttest.cvs/VersionControl/General/Admin/RenameBackAndForth/cvsroot/TargetApp/blah added to the repository
-<-CMD:cd /nfs/vm/texttest-tmp/geoff/texttest.05May155154.23228/texttest.cvs/VersionControl/General/Admin/RenameBackAndForth/TargetApp/blah; cvs add /carm/proj/texttest-tmp/geoff/texttest.05May155154.23228/texttest.cvs/VersionControl/General/Admin/RenameBackAndForth/TargetApp/blah/errors.hello
+<-CMD:cd /carm/proj/texttest-tmp/geoff/dynamic_gui.10Oct170231.42593/texttest.cvs/VersionControl/General/Admin/RenameBackAndForth/TargetApp/blah; cvs -q add /carm/proj/texttest-tmp/geoff/dynamic_gui.10Oct170231.42593/texttest.cvs/VersionControl/General/Admin/RenameBackAndForth/TargetApp/blah/errors.hello
 ->FIL:blah
 ->ERR:cvs add: scheduling file `/carm/proj/texttest-tmp/geoff/texttest.23Mar085401.6158/texttest.cvs/VersionControl/General/Admin/RenameBackAndForth/TargetApp/blah/errors.hello' for addition
 cvs add: use 'cvs commit' to add this file permanently
-<-CMD:cd /nfs/vm/texttest-tmp/geoff/texttest.05May155154.23228/texttest.cvs/VersionControl/General/Admin/RenameBackAndForth/TargetApp/blah; cvs add /carm/proj/texttest-tmp/geoff/texttest.05May155154.23228/texttest.cvs/VersionControl/General/Admin/RenameBackAndForth/TargetApp/blah/output.hello
+<-CMD:cd /carm/proj/texttest-tmp/geoff/dynamic_gui.10Oct170231.42593/texttest.cvs/VersionControl/General/Admin/RenameBackAndForth/TargetApp/blah; cvs -q add /carm/proj/texttest-tmp/geoff/dynamic_gui.10Oct170231.42593/texttest.cvs/VersionControl/General/Admin/RenameBackAndForth/TargetApp/blah/output.hello
 ->FIL:blah.edit_2
 ->ERR:cvs add: scheduling file `/carm/proj/texttest-tmp/geoff/texttest.23Mar085401.6158/texttest.cvs/VersionControl/General/Admin/RenameBackAndForth/TargetApp/blah/output.hello' for addition
 cvs add: use 'cvs commit' to add this file permanently
-<-CMD:cd /nfs/vm/texttest-tmp/geoff/texttest.05May155154.23228/texttest.cvs/VersionControl/General/Admin/RenameBackAndForth/TargetApp/blah; cvs add /carm/proj/texttest-tmp/geoff/texttest.05May155154.23228/texttest.cvs/VersionControl/General/Admin/RenameBackAndForth/TargetApp/blah/output.hello.version
+<-CMD:cd /carm/proj/texttest-tmp/geoff/dynamic_gui.10Oct170231.42593/texttest.cvs/VersionControl/General/Admin/RenameBackAndForth/TargetApp/blah; cvs -q add /carm/proj/texttest-tmp/geoff/dynamic_gui.10Oct170231.42593/texttest.cvs/VersionControl/General/Admin/RenameBackAndForth/TargetApp/blah/output.hello.version
 ->FIL:blah.edit_3
 ->ERR:cvs add: scheduling file `/carm/proj/texttest-tmp/geoff/texttest.23Mar085401.6158/texttest.cvs/VersionControl/General/Admin/RenameBackAndForth/TargetApp/blah/output.hello.version' for addition
 cvs add: use 'cvs commit' to add this file permanently
-<-CMD:cd /nfs/vm/texttest-tmp/geoff/texttest.05May155154.23228/texttest.cvs/VersionControl/General/Admin/RenameBackAndForth/TargetApp; cvs update -dP Test1
+<-CMD:cd /carm/proj/texttest-tmp/geoff/dynamic_gui.10Oct170231.42593/texttest.cvs/VersionControl/General/Admin/RenameBackAndForth/TargetApp; cvs -q update -dP Test1
 ->FIL:TargetApp.edit_2
 ->OUT:U Test1/errors.hello
 U Test1/output.hello
 ->ERR:cvs update: Updating Test1
-<-CMD:cvs help
+<-CMD:cvs -q help
 ->OUT:Unknown command: `help'
 
 CVS commands are:
@@ -70,28 +70,28 @@ CVS commands are:
         pserver      Password server mode
         rannotate    Show last revision where each line of module was modified
         rdiff        Create 'patch' format diffs between releases
-<-CMD:cvs rm -f /carm/proj/texttest-tmp/geoff/texttest.05May155154.23228/texttest.cvs/VersionControl/General/Admin/RenameBackAndForth/TargetApp/blah
+<-CMD:cvs -q rm -f /carm/proj/texttest-tmp/geoff/dynamic_gui.10Oct170231.42593/texttest.cvs/VersionControl/General/Admin/RenameBackAndForth/TargetApp/blah
 ->FIL:blah.edit_4
 ->ERR:cvs remove: Removing /carm/proj/texttest-tmp/geoff/texttest.23Mar085401.6158/texttest.cvs/VersionControl/General/Admin/RenameBackAndForth/TargetApp/blah
 cvs remove: removed `/carm/proj/texttest-tmp/geoff/texttest.23Mar085401.6158/texttest.cvs/VersionControl/General/Admin/RenameBackAndForth/TargetApp/blah/errors.hello'
 cvs remove: removed `/carm/proj/texttest-tmp/geoff/texttest.23Mar085401.6158/texttest.cvs/VersionControl/General/Admin/RenameBackAndForth/TargetApp/blah/output.hello'
 cvs remove: removed `/carm/proj/texttest-tmp/geoff/texttest.23Mar085401.6158/texttest.cvs/VersionControl/General/Admin/RenameBackAndForth/TargetApp/blah/output.hello.version'
-<-CMD:cd /nfs/vm/texttest-tmp/geoff/texttest.05May155154.23228/texttest.cvs/VersionControl/General/Admin/RenameBackAndForth/TargetApp; cvs add /carm/proj/texttest-tmp/geoff/texttest.05May155154.23228/texttest.cvs/VersionControl/General/Admin/RenameBackAndForth/TargetApp/Test1
+<-CMD:cd /carm/proj/texttest-tmp/geoff/dynamic_gui.10Oct170231.42593/texttest.cvs/VersionControl/General/Admin/RenameBackAndForth/TargetApp; cvs -q add /carm/proj/texttest-tmp/geoff/dynamic_gui.10Oct170231.42593/texttest.cvs/VersionControl/General/Admin/RenameBackAndForth/TargetApp/Test1
 ->FIL:TargetApp.edit_3
 ->ERR:cvs add: /carm/proj/texttest-tmp/geoff/texttest.23Mar085401.6158/texttest.cvs/VersionControl/General/Admin/RenameBackAndForth/TargetApp/Test1/CVS already exists
-<-CMD:cd /nfs/vm/texttest-tmp/geoff/texttest.05May155154.23228/texttest.cvs/VersionControl/General/Admin/RenameBackAndForth/TargetApp/Test1; cvs add /carm/proj/texttest-tmp/geoff/texttest.05May155154.23228/texttest.cvs/VersionControl/General/Admin/RenameBackAndForth/TargetApp/Test1/errors.hello
+<-CMD:cd /carm/proj/texttest-tmp/geoff/dynamic_gui.10Oct170231.42593/texttest.cvs/VersionControl/General/Admin/RenameBackAndForth/TargetApp/Test1; cvs -q add /carm/proj/texttest-tmp/geoff/dynamic_gui.10Oct170231.42593/texttest.cvs/VersionControl/General/Admin/RenameBackAndForth/TargetApp/Test1/errors.hello
 ->ERR:cvs add: /carm/proj/texttest-tmp/geoff/texttest.23Mar085401.6158/texttest.cvs/VersionControl/General/Admin/RenameBackAndForth/TargetApp/Test1/errors.hello has already been entered
 ->EXC:1
-<-CMD:cd /nfs/vm/texttest-tmp/geoff/texttest.05May155154.23228/texttest.cvs/VersionControl/General/Admin/RenameBackAndForth/TargetApp/Test1; cvs add /carm/proj/texttest-tmp/geoff/texttest.05May155154.23228/texttest.cvs/VersionControl/General/Admin/RenameBackAndForth/TargetApp/Test1/output.hello
+<-CMD:cd /carm/proj/texttest-tmp/geoff/dynamic_gui.10Oct170231.42593/texttest.cvs/VersionControl/General/Admin/RenameBackAndForth/TargetApp/Test1; cvs -q add /carm/proj/texttest-tmp/geoff/dynamic_gui.10Oct170231.42593/texttest.cvs/VersionControl/General/Admin/RenameBackAndForth/TargetApp/Test1/output.hello
 ->ERR:cvs add: /carm/proj/texttest-tmp/geoff/texttest.23Mar085401.6158/texttest.cvs/VersionControl/General/Admin/RenameBackAndForth/TargetApp/Test1/output.hello has already been entered
 ->EXC:1
-<-CMD:cd /nfs/vm/texttest-tmp/geoff/texttest.05May155154.23228/texttest.cvs/VersionControl/General/Admin/RenameBackAndForth/TargetApp/Test1; cvs add /carm/proj/texttest-tmp/geoff/texttest.05May155154.23228/texttest.cvs/VersionControl/General/Admin/RenameBackAndForth/TargetApp/Test1/output.hello.version
+<-CMD:cd /carm/proj/texttest-tmp/geoff/dynamic_gui.10Oct170231.42593/texttest.cvs/VersionControl/General/Admin/RenameBackAndForth/TargetApp/Test1; cvs -q add /carm/proj/texttest-tmp/geoff/dynamic_gui.10Oct170231.42593/texttest.cvs/VersionControl/General/Admin/RenameBackAndForth/TargetApp/Test1/output.hello.version
 ->ERR:cvs add: /carm/proj/texttest-tmp/geoff/texttest.23Mar085401.6158/texttest.cvs/VersionControl/General/Admin/RenameBackAndForth/TargetApp/Test1/output.hello.version has already been entered
 ->EXC:1
-<-CMD:cd /nfs/vm/texttest-tmp/geoff/texttest.05May155154.23228/texttest.cvs/VersionControl/General/Admin/RenameBackAndForth/TargetApp; cvs update -dP blah
+<-CMD:cd /carm/proj/texttest-tmp/geoff/dynamic_gui.10Oct170231.42593/texttest.cvs/VersionControl/General/Admin/RenameBackAndForth/TargetApp; cvs -q update -dP blah
 ->FIL:TargetApp.edit_4
 ->ERR:cvs update: Updating blah
-<-CMD:cvs help
+<-CMD:cvs -q help
 ->OUT:Unknown command: `help'
 
 CVS commands are:
@@ -114,28 +114,28 @@ CVS commands are:
         pserver      Password server mode
         rannotate    Show last revision where each line of module was modified
         rdiff        Create 'patch' format diffs between releases
-<-CMD:cvs rm -f /carm/proj/texttest-tmp/geoff/texttest.05May155154.23228/texttest.cvs/VersionControl/General/Admin/RenameBackAndForth/TargetApp/Test1
+<-CMD:cvs -q rm -f /carm/proj/texttest-tmp/geoff/dynamic_gui.10Oct170231.42593/texttest.cvs/VersionControl/General/Admin/RenameBackAndForth/TargetApp/Test1
 ->FIL:Test1.edit_2
 ->ERR:cvs remove: Removing /carm/proj/texttest-tmp/geoff/texttest.23Mar085401.6158/texttest.cvs/VersionControl/General/Admin/RenameBackAndForth/TargetApp/Test1
 cvs remove: removed `/carm/proj/texttest-tmp/geoff/texttest.23Mar085401.6158/texttest.cvs/VersionControl/General/Admin/RenameBackAndForth/TargetApp/Test1/errors.hello'
 cvs remove: removed `/carm/proj/texttest-tmp/geoff/texttest.23Mar085401.6158/texttest.cvs/VersionControl/General/Admin/RenameBackAndForth/TargetApp/Test1/output.hello'
 cvs remove: removed `/carm/proj/texttest-tmp/geoff/texttest.23Mar085401.6158/texttest.cvs/VersionControl/General/Admin/RenameBackAndForth/TargetApp/Test1/output.hello.version'
-<-CMD:cd /nfs/vm/texttest-tmp/geoff/texttest.05May155154.23228/texttest.cvs/VersionControl/General/Admin/RenameBackAndForth/TargetApp; cvs add /carm/proj/texttest-tmp/geoff/texttest.05May155154.23228/texttest.cvs/VersionControl/General/Admin/RenameBackAndForth/TargetApp/blah
+<-CMD:cd /carm/proj/texttest-tmp/geoff/dynamic_gui.10Oct170231.42593/texttest.cvs/VersionControl/General/Admin/RenameBackAndForth/TargetApp; cvs -q add /carm/proj/texttest-tmp/geoff/dynamic_gui.10Oct170231.42593/texttest.cvs/VersionControl/General/Admin/RenameBackAndForth/TargetApp/blah
 ->FIL:TargetApp.edit_5
 ->OUT:Directory /carm/proj/texttest-tmp/geoff/texttest.23Mar085401.6158/texttest.cvs/VersionControl/General/Admin/RenameBackAndForth/cvsroot/TargetApp/blah added to the repository
-<-CMD:cd /nfs/vm/texttest-tmp/geoff/texttest.05May155154.23228/texttest.cvs/VersionControl/General/Admin/RenameBackAndForth/TargetApp/blah; cvs add /carm/proj/texttest-tmp/geoff/texttest.05May155154.23228/texttest.cvs/VersionControl/General/Admin/RenameBackAndForth/TargetApp/blah/errors.hello
+<-CMD:cd /carm/proj/texttest-tmp/geoff/dynamic_gui.10Oct170231.42593/texttest.cvs/VersionControl/General/Admin/RenameBackAndForth/TargetApp/blah; cvs -q add /carm/proj/texttest-tmp/geoff/dynamic_gui.10Oct170231.42593/texttest.cvs/VersionControl/General/Admin/RenameBackAndForth/TargetApp/blah/errors.hello
 ->FIL:blah.edit_5
 ->ERR:cvs add: scheduling file `/carm/proj/texttest-tmp/geoff/texttest.23Mar085401.6158/texttest.cvs/VersionControl/General/Admin/RenameBackAndForth/TargetApp/blah/errors.hello' for addition
 cvs add: use 'cvs commit' to add this file permanently
-<-CMD:cd /nfs/vm/texttest-tmp/geoff/texttest.05May155154.23228/texttest.cvs/VersionControl/General/Admin/RenameBackAndForth/TargetApp/blah; cvs add /carm/proj/texttest-tmp/geoff/texttest.05May155154.23228/texttest.cvs/VersionControl/General/Admin/RenameBackAndForth/TargetApp/blah/output.hello
+<-CMD:cd /carm/proj/texttest-tmp/geoff/dynamic_gui.10Oct170231.42593/texttest.cvs/VersionControl/General/Admin/RenameBackAndForth/TargetApp/blah; cvs -q add /carm/proj/texttest-tmp/geoff/dynamic_gui.10Oct170231.42593/texttest.cvs/VersionControl/General/Admin/RenameBackAndForth/TargetApp/blah/output.hello
 ->FIL:blah.edit_6
 ->ERR:cvs add: scheduling file `/carm/proj/texttest-tmp/geoff/texttest.23Mar085401.6158/texttest.cvs/VersionControl/General/Admin/RenameBackAndForth/TargetApp/blah/output.hello' for addition
 cvs add: use 'cvs commit' to add this file permanently
-<-CMD:cd /nfs/vm/texttest-tmp/geoff/texttest.05May155154.23228/texttest.cvs/VersionControl/General/Admin/RenameBackAndForth/TargetApp/blah; cvs add /carm/proj/texttest-tmp/geoff/texttest.05May155154.23228/texttest.cvs/VersionControl/General/Admin/RenameBackAndForth/TargetApp/blah/output.hello.version
+<-CMD:cd /carm/proj/texttest-tmp/geoff/dynamic_gui.10Oct170231.42593/texttest.cvs/VersionControl/General/Admin/RenameBackAndForth/TargetApp/blah; cvs -q add /carm/proj/texttest-tmp/geoff/dynamic_gui.10Oct170231.42593/texttest.cvs/VersionControl/General/Admin/RenameBackAndForth/TargetApp/blah/output.hello.version
 ->FIL:blah.edit_7
 ->ERR:cvs add: scheduling file `/carm/proj/texttest-tmp/geoff/texttest.23Mar085401.6158/texttest.cvs/VersionControl/General/Admin/RenameBackAndForth/TargetApp/blah/output.hello.version' for addition
 cvs add: use 'cvs commit' to add this file permanently
-<-CMD:cvs status /carm/proj/texttest-tmp/geoff/texttest.05May155154.23228/texttest.cvs/VersionControl/General/Admin/RenameBackAndForth/TargetApp/blah/errors.hello
+<-CMD:cvs -q status /carm/proj/texttest-tmp/geoff/dynamic_gui.10Oct170231.42593/texttest.cvs/VersionControl/General/Admin/RenameBackAndForth/TargetApp/blah/errors.hello
 ->OUT:===================================================================
 File: errors.hello     	Status: Locally Added
 
@@ -145,7 +145,7 @@ File: errors.hello     	Status: Locally Added
    Sticky Date:		(none)
    Sticky Options:	(none)
 
-<-CMD:cvs status /carm/proj/texttest-tmp/geoff/texttest.05May155154.23228/texttest.cvs/VersionControl/General/Admin/RenameBackAndForth/TargetApp/blah/output.hello
+<-CMD:cvs -q status /carm/proj/texttest-tmp/geoff/dynamic_gui.10Oct170231.42593/texttest.cvs/VersionControl/General/Admin/RenameBackAndForth/TargetApp/blah/output.hello
 ->OUT:===================================================================
 File: output.hello     	Status: Locally Added
 
@@ -155,7 +155,7 @@ File: output.hello     	Status: Locally Added
    Sticky Date:		(none)
    Sticky Options:	(none)
 
-<-CMD:cvs status /carm/proj/texttest-tmp/geoff/texttest.05May155154.23228/texttest.cvs/VersionControl/General/Admin/RenameBackAndForth/TargetApp/blah/output.hello.version
+<-CMD:cvs -q status /carm/proj/texttest-tmp/geoff/dynamic_gui.10Oct170231.42593/texttest.cvs/VersionControl/General/Admin/RenameBackAndForth/TargetApp/blah/output.hello.version
 ->OUT:===================================================================
 File: output.hello.version	Status: Locally Added
 

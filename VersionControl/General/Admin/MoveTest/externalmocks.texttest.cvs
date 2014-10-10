@@ -1,4 +1,4 @@
-<-CMD:cvs help
+<-CMD:cvs -q help
 ->OUT:Unknown command: `help'
 
 CVS commands are:
@@ -21,28 +21,28 @@ CVS commands are:
         pserver      Password server mode
         rannotate    Show last revision where each line of module was modified
         rdiff        Create 'patch' format diffs between releases
-<-CMD:cvs rm -f /carm/proj/texttest-tmp/geoff/texttest.05May155154.23228/texttest.cvs/VersionControl/General/Admin/MoveTest/TargetApp/Test1
+<-CMD:cvs -q rm -f /carm/proj/texttest-tmp/geoff/dynamic_gui.10Oct170231.42593/texttest.cvs/VersionControl/General/Admin/MoveTest/TargetApp/Test1
 ->FIL:Test1
 ->ERR:cvs remove: Removing /carm/proj/texttest-tmp/geoff/texttest.18Mar120729.2132/texttest.cvs/VersionControl/General/Admin/MoveTest/TargetApp/Test1
 cvs remove: scheduling `/carm/proj/texttest-tmp/geoff/texttest.18Mar120729.2132/texttest.cvs/VersionControl/General/Admin/MoveTest/TargetApp/Test1/errors.hello' for removal
 cvs remove: scheduling `/carm/proj/texttest-tmp/geoff/texttest.18Mar120729.2132/texttest.cvs/VersionControl/General/Admin/MoveTest/TargetApp/Test1/output.hello' for removal
 cvs remove: use 'cvs commit' to remove these files permanently
-<-CMD:cd /nfs/vm/texttest-tmp/geoff/texttest.05May155154.23228/texttest.cvs/VersionControl/General/Admin/MoveTest/TargetApp/Suite; cvs add /carm/proj/texttest-tmp/geoff/texttest.05May155154.23228/texttest.cvs/VersionControl/General/Admin/MoveTest/TargetApp/Suite/Test1
+<-CMD:cd /carm/proj/texttest-tmp/geoff/dynamic_gui.10Oct170231.42593/texttest.cvs/VersionControl/General/Admin/MoveTest/TargetApp/Suite; cvs -q add /carm/proj/texttest-tmp/geoff/dynamic_gui.10Oct170231.42593/texttest.cvs/VersionControl/General/Admin/MoveTest/TargetApp/Suite/Test1
 ->FIL:Suite
 ->OUT:Directory /carm/proj/texttest-tmp/geoff/texttest.18Mar120729.2132/texttest.cvs/VersionControl/General/Admin/MoveTest/cvsroot/TargetApp/Suite/Test1 added to the repository
-<-CMD:cd /nfs/vm/texttest-tmp/geoff/texttest.05May155154.23228/texttest.cvs/VersionControl/General/Admin/MoveTest/TargetApp/Suite/Test1; cvs add /carm/proj/texttest-tmp/geoff/texttest.05May155154.23228/texttest.cvs/VersionControl/General/Admin/MoveTest/TargetApp/Suite/Test1/errors.hello
+<-CMD:cd /carm/proj/texttest-tmp/geoff/dynamic_gui.10Oct170231.42593/texttest.cvs/VersionControl/General/Admin/MoveTest/TargetApp/Suite/Test1; cvs -q add /carm/proj/texttest-tmp/geoff/dynamic_gui.10Oct170231.42593/texttest.cvs/VersionControl/General/Admin/MoveTest/TargetApp/Suite/Test1/errors.hello
 ->FIL:Test1.edit_2
 ->ERR:cvs add: scheduling file `/carm/proj/texttest-tmp/geoff/texttest.18Mar120729.2132/texttest.cvs/VersionControl/General/Admin/MoveTest/TargetApp/Suite/Test1/errors.hello' for addition
 cvs add: use 'cvs commit' to add this file permanently
-<-CMD:cd /nfs/vm/texttest-tmp/geoff/texttest.05May155154.23228/texttest.cvs/VersionControl/General/Admin/MoveTest/TargetApp/Suite/Test1; cvs add /carm/proj/texttest-tmp/geoff/texttest.05May155154.23228/texttest.cvs/VersionControl/General/Admin/MoveTest/TargetApp/Suite/Test1/output.hello
+<-CMD:cd /carm/proj/texttest-tmp/geoff/dynamic_gui.10Oct170231.42593/texttest.cvs/VersionControl/General/Admin/MoveTest/TargetApp/Suite/Test1; cvs -q add /carm/proj/texttest-tmp/geoff/dynamic_gui.10Oct170231.42593/texttest.cvs/VersionControl/General/Admin/MoveTest/TargetApp/Suite/Test1/output.hello
 ->FIL:Test1.edit_3
 ->ERR:cvs add: scheduling file `/carm/proj/texttest-tmp/geoff/texttest.18Mar120729.2132/texttest.cvs/VersionControl/General/Admin/MoveTest/TargetApp/Suite/Test1/output.hello' for addition
 cvs add: use 'cvs commit' to add this file permanently
-<-CMD:cd /nfs/vm/texttest-tmp/geoff/texttest.05May155154.23228/texttest.cvs/VersionControl/General/Admin/MoveTest/TargetApp/Suite/Test1; cvs add /carm/proj/texttest-tmp/geoff/texttest.05May155154.23228/texttest.cvs/VersionControl/General/Admin/MoveTest/TargetApp/Suite/Test1/output.hello.version
+<-CMD:cd /carm/proj/texttest-tmp/geoff/dynamic_gui.10Oct170231.42593/texttest.cvs/VersionControl/General/Admin/MoveTest/TargetApp/Suite/Test1; cvs -q add /carm/proj/texttest-tmp/geoff/dynamic_gui.10Oct170231.42593/texttest.cvs/VersionControl/General/Admin/MoveTest/TargetApp/Suite/Test1/output.hello.version
 ->FIL:Test1.edit_4
 ->ERR:cvs add: scheduling file `/carm/proj/texttest-tmp/geoff/texttest.18Mar120729.2132/texttest.cvs/VersionControl/General/Admin/MoveTest/TargetApp/Suite/Test1/output.hello.version' for addition
 cvs add: use 'cvs commit' to add this file permanently
-<-CMD:cvs status /carm/proj/texttest-tmp/geoff/texttest.05May155154.23228/texttest.cvs/VersionControl/General/Admin/MoveTest/TargetApp/Suite/Test4/errors.hello
+<-CMD:cvs -q status /carm/proj/texttest-tmp/geoff/dynamic_gui.10Oct170231.42593/texttest.cvs/VersionControl/General/Admin/MoveTest/TargetApp/Suite/Test4/errors.hello
 ->OUT:===================================================================
 File: errors.hello     	Status: Unknown
 
@@ -51,7 +51,7 @@ File: errors.hello     	Status: Unknown
 
 ->ERR:cvs status: cannot open CVS/Entries for reading: No such file or directory
 cvs status: use `cvs add' to create an entry for /carm/proj/texttest-tmp/geoff/texttest.18Mar120729.2132/texttest.cvs/VersionControl/General/Admin/MoveTest/TargetApp/Suite/Test4/errors.hello
-<-CMD:cvs status /carm/proj/texttest-tmp/geoff/texttest.05May155154.23228/texttest.cvs/VersionControl/General/Admin/MoveTest/TargetApp/Suite/Test4/output.hello
+<-CMD:cvs -q status /carm/proj/texttest-tmp/geoff/dynamic_gui.10Oct170231.42593/texttest.cvs/VersionControl/General/Admin/MoveTest/TargetApp/Suite/Test4/output.hello
 ->OUT:===================================================================
 File: output.hello     	Status: Unknown
 
@@ -60,7 +60,7 @@ File: output.hello     	Status: Unknown
 
 ->ERR:cvs status: cannot open CVS/Entries for reading: No such file or directory
 cvs status: use `cvs add' to create an entry for /carm/proj/texttest-tmp/geoff/texttest.18Mar120729.2132/texttest.cvs/VersionControl/General/Admin/MoveTest/TargetApp/Suite/Test4/output.hello
-<-CMD:cvs status /carm/proj/texttest-tmp/geoff/texttest.05May155154.23228/texttest.cvs/VersionControl/General/Admin/MoveTest/TargetApp/Suite/Test1/errors.hello
+<-CMD:cvs -q status /carm/proj/texttest-tmp/geoff/dynamic_gui.10Oct170231.42593/texttest.cvs/VersionControl/General/Admin/MoveTest/TargetApp/Suite/Test1/errors.hello
 ->OUT:===================================================================
 File: errors.hello     	Status: Locally Added
 
@@ -70,7 +70,7 @@ File: errors.hello     	Status: Locally Added
    Sticky Date:		(none)
    Sticky Options:	(none)
 
-<-CMD:cvs status /carm/proj/texttest-tmp/geoff/texttest.05May155154.23228/texttest.cvs/VersionControl/General/Admin/MoveTest/TargetApp/Suite/Test1/output.hello
+<-CMD:cvs -q status /carm/proj/texttest-tmp/geoff/dynamic_gui.10Oct170231.42593/texttest.cvs/VersionControl/General/Admin/MoveTest/TargetApp/Suite/Test1/output.hello
 ->OUT:===================================================================
 File: output.hello     	Status: Locally Added
 
@@ -80,7 +80,7 @@ File: output.hello     	Status: Locally Added
    Sticky Date:		(none)
    Sticky Options:	(none)
 
-<-CMD:cvs status /carm/proj/texttest-tmp/geoff/texttest.05May155154.23228/texttest.cvs/VersionControl/General/Admin/MoveTest/TargetApp/Suite/Test1/output.hello.version
+<-CMD:cvs -q status /carm/proj/texttest-tmp/geoff/dynamic_gui.10Oct170231.42593/texttest.cvs/VersionControl/General/Admin/MoveTest/TargetApp/Suite/Test1/output.hello.version
 ->OUT:===================================================================
 File: output.hello.version	Status: Locally Added
 

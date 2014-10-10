@@ -1,0 +1,26 @@
+<-CMD:hg log -f /carm/proj/texttest-tmp/geoff/texttest.hg.09Oct161433.10027/texttest.hg/VersionControl/General/Diff/FilteredDiffRevisions/TargetApp/Test2/output.hello
+->OUT:changeset:   8:c57d2c6473b1
+tag:         tip
+user:        geoff@gewoia.jeppesensystems.com
+date:        Thu Apr 02 15:05:09 2009 +0200
+summary:     Moving under TargetApp
+
+changeset:   3:955b372ebf9f
+user:        geoff
+date:        Sun Feb 22 21:10:04 2009 +0100
+summary:     We made a change!
+
+changeset:   0:44876aa2023b
+user:        geoff
+date:        Thu Feb 19 21:26:26 2009 +0100
+summary:     Initial revision
+
+<-CMD:hg cat -r 2 /carm/proj/texttest-tmp/geoff/texttest.hg.09Oct161433.10027/texttest.hg/VersionControl/General/Diff/FilteredDiffRevisions/TargetApp/Test2/output.hello
+->OUT:Hello
+<-CMD:hg cat -r 4 /carm/proj/texttest-tmp/geoff/texttest.hg.09Oct161433.10027/texttest.hg/VersionControl/General/Diff/FilteredDiffRevisions/TargetApp/Test2/output.hello
+->OUT:Hello current version!
+<-CMD:hg cat -r 2 /carm/proj/texttest-tmp/geoff/texttest.hg.09Oct161433.10027/texttest.hg/VersionControl/General/Diff/FilteredDiffRevisions/TargetApp/Test2/output.hello
+->OUT:Hello
+<-CMD:hg cat -r 4 /carm/proj/texttest-tmp/geoff/texttest.hg.09Oct161433.10027/texttest.hg/VersionControl/General/Diff/FilteredDiffRevisions/TargetApp/Test2/output.hello
+->OUT:Hello current version!
+<-CMD:tkdiff /tmp/710862.1.login/tmpdlG79S/revision2/output.hello(FILTERED) /tmp/710862.1.login/tmpdlG79S/revision4/output.hello(FILTERED)

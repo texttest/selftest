@@ -1,24 +1,24 @@
-<-CMD:git diff /tmp/dgalda/texttest.git.04Nov173440.14335/texttest.git/VersionControl/General/Diff/ShowDiff/TargetApp/Test1/errors.hello
+<-CMD:git diff TargetApp/Test1/errors.hello
 ->OUT:diff --git a/TargetApp/Test1/errors.hello b/TargetApp/Test1/errors.hello
 index 2fc5908..e69de29 100644
 --- a/TargetApp/Test1/errors.hello
 +++ b/TargetApp/Test1/errors.hello
 @@ -1 +0,0 @@
 -Added an extra line
-<-CMD:git diff /tmp/dgalda/texttest.git.04Nov173440.14335/texttest.git/VersionControl/General/Diff/ShowDiff/TargetApp/Test1/output.hello
-<-CMD:git diff /tmp/dgalda/texttest.git.04Nov173440.14335/texttest.git/VersionControl/General/Diff/ShowDiff/TargetApp/Test1/output.hello.version
-<-CMD:git diff /tmp/dgalda/texttest.git.04Nov173440.14335/texttest.git/VersionControl/General/Diff/ShowDiff/TargetApp/Test1/output.hello
-<-CMD:git diff /tmp/dgalda/texttest.git.04Nov173440.14335/texttest.git/VersionControl/General/Diff/ShowDiff/TargetApp/Test1/errors.hello
+<-CMD:git diff TargetApp/Test1/output.hello
+<-CMD:git diff TargetApp/Test1/output.hello.version
+<-CMD:git diff TargetApp/Test1/output.hello
+<-CMD:git diff TargetApp/Test1/errors.hello
 ->OUT:diff --git a/TargetApp/Test1/errors.hello b/TargetApp/Test1/errors.hello
 index 2fc5908..e69de29 100644
 --- a/TargetApp/Test1/errors.hello
 +++ b/TargetApp/Test1/errors.hello
 @@ -1 +0,0 @@
 -Added an extra line
-<-CMD:git diff /tmp/dgalda/texttest.git.04Nov173440.14335/texttest.git/VersionControl/General/Diff/ShowDiff/TargetApp/Test1/output.hello
-<-CMD:git diff /tmp/dgalda/texttest.git.04Nov173440.14335/texttest.git/VersionControl/General/Diff/ShowDiff/TargetApp/Test1/output.hello.version
-<-CMD:git diff /tmp/dgalda/texttest.git.04Nov173440.14335/texttest.git/VersionControl/General/Diff/ShowDiff/TargetApp/Test2/errors.hello
-<-CMD:git diff /tmp/dgalda/texttest.git.04Nov173440.14335/texttest.git/VersionControl/General/Diff/ShowDiff/TargetApp/Test2/output.hello
+<-CMD:git diff TargetApp/Test1/output.hello
+<-CMD:git diff TargetApp/Test1/output.hello.version
+<-CMD:git diff TargetApp/Test2/errors.hello
+<-CMD:git diff TargetApp/Test2/output.hello
 ->OUT:diff --git a/TargetApp/Test2/output.hello b/TargetApp/Test2/output.hello
 index 21c4b44..e1d8d1e 100644
 --- a/TargetApp/Test2/output.hello
@@ -26,8 +26,8 @@ index 21c4b44..e1d8d1e 100644
 @@ -1 +1 @@
 -Hello current version!
 +Hello uncommitted update!
-<-CMD:git diff /tmp/dgalda/texttest.git.04Nov173440.14335/texttest.git/VersionControl/General/Diff/ShowDiff/TargetApp/Suite/Subsuite/Test3/errors.hello
-<-CMD:git diff /tmp/dgalda/texttest.git.04Nov173440.14335/texttest.git/VersionControl/General/Diff/ShowDiff/TargetApp/Suite/Subsuite/Test3/output.hello
+<-CMD:git diff TargetApp/Suite/Subsuite/Test3/errors.hello
+<-CMD:git diff TargetApp/Suite/Subsuite/Test3/output.hello
 ->OUT:diff --git a/TargetApp/Suite/Subsuite/Test3/output.hello b/TargetApp/Suite/Subsuite/Test3/output.hello
 index 774f5ab..98063d8 100644
 --- a/TargetApp/Suite/Subsuite/Test3/output.hello
@@ -37,8 +37,7 @@ index 774f5ab..98063d8 100644
 -
 +Failure created locally!
 <-CMD:tkdiff --help
-->OUT: actual font: -family {DejaVu Sans Mono} -size -12 -weight normal -slant roman -underline 0 -overstrike 0
-
+->OUT:
     TkDiff may be started in any of the following ways:
 
     Interactive selection of files to compare:
@@ -62,5 +61,4 @@ index 774f5ab..98063d8 100644
 	-o MERGEOUTPUTFILE 
 	-L LEFT_FILE_LABEL [-L RIGHT_FILE_LABEL]
     
-<-CMD:git difftool -t tkdiff -y /tmp/dgalda/texttest.git.04Nov173440.14335/texttest.git/VersionControl/General/Diff/ShowDiff/TargetApp/Test2/output.hello
-->OUT: actual font: -family {DejaVu Sans Mono} -size -12 -weight normal -slant roman -underline 0 -overstrike 0
+<-CMD:git difftool -t tkdiff -y TargetApp/Test2/output.hello

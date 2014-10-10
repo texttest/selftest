@@ -1,4 +1,4 @@
-<-CMD:cvs status /carm/proj/texttest-tmp/geoff/dynamic_gui.06Jul155548.13698/texttest.cvs/VersionControl/General/Admin/RenameFile/TargetApp/Test1/output.hello
+<-CMD:cvs -q status /carm/proj/texttest-tmp/geoff/dynamic_gui.10Oct170231.42593/texttest.cvs/VersionControl/General/Admin/RenameFile/TargetApp/Test1/output.hello
 ->OUT:===================================================================
 File: output.hello     	Status: Up-to-date
 
@@ -8,7 +8,7 @@ File: output.hello     	Status: Up-to-date
    Sticky Date:		(none)
    Sticky Options:	(none)
 
-<-CMD:cvs help
+<-CMD:cvs -q help
 ->OUT:Unknown command: `help'
 
 CVS commands are:
@@ -31,15 +31,15 @@ CVS commands are:
         pserver      Password server mode
         rannotate    Show last revision where each line of module was modified
         rdiff        Create 'patch' format diffs between releases
-<-CMD:cd /nfs/vm/texttest-tmp/geoff/dynamic_gui.06Jul155548.13698/texttest.cvs/VersionControl/General/Admin/RenameFile/TargetApp/Test1; cvs rm -f /carm/proj/texttest-tmp/geoff/dynamic_gui.06Jul155548.13698/texttest.cvs/VersionControl/General/Admin/RenameFile/TargetApp/Test1/output.hello
+<-CMD:cd /carm/proj/texttest-tmp/geoff/dynamic_gui.10Oct170231.42593/texttest.cvs/VersionControl/General/Admin/RenameFile/TargetApp/Test1; cvs -q rm -f /carm/proj/texttest-tmp/geoff/dynamic_gui.10Oct170231.42593/texttest.cvs/VersionControl/General/Admin/RenameFile/TargetApp/Test1/output.hello
 ->FIL:Test1
 ->ERR:cvs remove: scheduling `/carm/proj/texttest-tmp/geoff/texttest.09Oct111351.13855/texttest.cvs/VersionControl/General/Admin/RenameFile/TargetApp/Test1/output.hello' for removal
 cvs remove: use 'cvs commit' to remove this file permanently
-<-CMD:cd /nfs/vm/texttest-tmp/geoff/dynamic_gui.06Jul155548.13698/texttest.cvs/VersionControl/General/Admin/RenameFile/TargetApp/Test1; cvs add /carm/proj/texttest-tmp/geoff/dynamic_gui.06Jul155548.13698/texttest.cvs/VersionControl/General/Admin/RenameFile/TargetApp/Test1/output_renamed.hello
+<-CMD:cd /carm/proj/texttest-tmp/geoff/dynamic_gui.10Oct170231.42593/texttest.cvs/VersionControl/General/Admin/RenameFile/TargetApp/Test1; cvs -q add /carm/proj/texttest-tmp/geoff/dynamic_gui.10Oct170231.42593/texttest.cvs/VersionControl/General/Admin/RenameFile/TargetApp/Test1/output_renamed.hello
 ->FIL:Test1.edit_2
 ->ERR:cvs add: scheduling file `/carm/proj/texttest-tmp/geoff/texttest.09Oct111351.13855/texttest.cvs/VersionControl/General/Admin/RenameFile/TargetApp/Test1/output_renamed.hello' for addition
 cvs add: use 'cvs commit' to add this file permanently
-<-CMD:cvs status /carm/proj/texttest-tmp/geoff/dynamic_gui.06Jul155548.13698/texttest.cvs/VersionControl/General/Admin/RenameFile/TargetApp/Test1/output.hello.version
+<-CMD:cvs -q status /carm/proj/texttest-tmp/geoff/dynamic_gui.10Oct170231.42593/texttest.cvs/VersionControl/General/Admin/RenameFile/TargetApp/Test1/output.hello.version
 ->OUT:===================================================================
 File: output.hello.version	Status: Unknown
 

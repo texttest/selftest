@@ -1,0 +1,10 @@
+<-CMD:git show master:TargetApp/Test1/errors.hello
+->OUT:Added an extra line
+<-CMD:git show master:TargetApp/Test1/output.hello
+->OUT:Hello
+<-CMD:git show master:TargetApp/Test1/output.hello.version
+->ERR:fatal: Path 'TargetApp/Test1/output.hello.version' exists on disk, but not in 'master'.
+->EXC:128
+<-CMD:git show master:TargetApp/Test1/output.hello.version
+->ERR:fatal: Path 'TargetApp/Test1/output.hello.version' exists on disk, but not in 'master'.
+->EXC:128
