@@ -398,8 +398,6 @@
 ->RET:u'10.80.17.77'
 <-PYT:instance27.instance_type
 ->RET:u't1.micro'
-<-PYT:texttestlib.utils.getUserName()
-->RET:'fakeuser'
 <-PYT:boto.ec2.connect_to_region('eu-west-1')
 ->RET:Instance('EC2Connection', 'ec2connection_eu_west_11')
 <-PYT:ec2connection_eu_west_11.get_only_instances(instance_ids=[u'i-8a9e80ca', u'i-059e8e45', u'i-1a011a5a', u'i-006ffd43', u'i-0e24db4d', u'i-be7788fd', u'i-1222dd51', u'i-078d9e47', u'i-4122dc02', u'i-e9011ba9'])

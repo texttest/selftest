@@ -1,10 +1,14 @@
 [unordered_text]
-output:HELLO test-case Test succeeded on .*
+output:test-case Test [^ ]* on .*
 output:View details
 externalmocks:texttest: command not found
 externalmocks:EXC:127
+# Race at the end
+pythonmocks:connect_to_region{MATCH 3}{LINES 20}
 
 [run_dependent_text]
 # This appears most of the time, likely problem with CaptureMock buffering means it sometimes doesn't
 # Filter it rather than have test be indeterministic, as this isn't the purpose of this test.
 errors:error produced by slave job{LINES 2}
+output:Error messages written by ec2cloud job{LINES 2}
+pythonmocks:(connection_eu_west_)[0-9]*{REPLACE \1<num>}

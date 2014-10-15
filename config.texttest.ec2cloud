@@ -1,7 +1,6 @@
 base_version:localqs
 
 [run_dependent_text]
-externalmocks:(-slavefilesynch) [A-Za-z0-9\.-]*@[0-9\.]*{REPLACE \1 <user@host>}
 externalmocks:(ssh.*DISPLAY=)[^ ]*{REPLACE \1<display>}
 
 [unordered_text]

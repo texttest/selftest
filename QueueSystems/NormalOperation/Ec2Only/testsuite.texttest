@@ -14,6 +14,11 @@ AllMachinesStopped
 # Sometimes EC2 itself has no capacity to start stopped instances
 NoEC2Capacity
 
+# Ec2 slaves run on a different file system, need to try to fetch required file data if it can't be found
+# To rerecord this test, change the path from /some/path to any external location on your file system
+# and create an empty file there.
+FetchRequiredData
+
 # If we're debugging the slave, we should synch our own code across and run that: otherwise we need to release to try stuff out
 DebugSlave
 
@@ -21,14 +26,11 @@ DebugSlave
 # at the end
 RemoteSlave
 
-# Retry to transfer files when it has failed
-RemoteSlaveRetry
+# Try to ask the master process for required data if we can't find it.
+RemoteSlaveRequiredData
 
 # Don't keep slave tmp files in batch mode
 RemoteSlaveBatch
-
-# Ec2 slaves run on a different file system, need to try to fetch required file data if it can't be found
-RemoteSlaveFetchRequiredData
 
 # Multicore EC2 instances might have to ignore some files from another slave...
 RemoteSlaveFilesFromOtherSlave
