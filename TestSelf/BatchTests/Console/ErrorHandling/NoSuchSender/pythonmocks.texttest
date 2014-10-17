@@ -1,3 +1,5 @@
+<-PYT:datetime.datetime.now()
+->RET:datetime.datetime(2014, 10, 17, 8, 2, 53, 616311)
 <-PYT:import smtplib
 <-PYT:smtplib.SMTP()
 ->RET:Instance('SMTP', 'smtp1')
@@ -5,7 +7,7 @@
 ->RET:(220, 'gewoia.jeppesensystems.com ESMTP Sendmail 8.13.8/8.13.8; Tue, 12 Oct 2010 15:25:37 +0200')
 <-PYT:smtp1.sendmail('fakeuser', ['tom', 'dick', 'harry'], '''From: fakeuser
 To: tom,dick,harry
-Subject: 13Oct2010 HELLO : 4 tests : 3 FAILED
+Subject: 17Oct2014 HELLO : 4 tests : 3 FAILED
 
 Summary of all Unsuccessful tests follows...
 ---------------------------------------------------------------------------------
@@ -22,7 +24,7 @@ Details of all Unsuccessful tests follows...
 
 Detailed information for the tests that FAILED follows...
 --------------------------------------------------------
-2 TESTS FAILED on kilimanjaro :
+2 TESTS FAILED on ip-10-80-18-112 :
 ---------- Differences in output ----------
 0a1
 > Hello World!
@@ -30,7 +32,7 @@ Detailed information for the tests that FAILED follows...
 -- HELLO test-case OutDiff (under OutDiff)
 -- HELLO test-case OutDiff2 (under suite/OutDiff2)
 --------------------------------------------------------
-TEST FAILED on kilimanjaro : HELLO test-case BothDiff (under BothDiff)
+TEST FAILED on ip-10-80-18-112 : HELLO test-case BothDiff (under BothDiff)
 ---------- Differences in errors ----------
 0a1
 > Error text

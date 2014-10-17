@@ -43,18 +43,6 @@ OnlyExtraVersionHasInfo
 # If tests exist only for extra versions, don't lose their descriptions.
 ExtraVersionSpecificTests
 
-# Check we can archive some parts of the repository away
-ArchiveRepository
-
-# Check we can archive so that weekday specific pages keep more data
-ArchiveWithWeekdays
-
-# If nothing is archived, nothing should be tarred
-ArchiveNothing
-
-# Check we can archive some parts of the HTML store away, this grows without limit otherwise
-ArchiveHTML
-
 # Check we can generate using data in the archive, back to a certain date
 GenerateWithArchive
 
@@ -99,3 +87,6 @@ GenerateSummaryPage
 
 # Tests for pure graph generation using the graph script
 GenerateGraphs
+
+# Archiving, migrating etc
+RepositoryMaintenance
