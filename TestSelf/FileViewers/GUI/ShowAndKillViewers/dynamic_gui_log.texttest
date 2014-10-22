@@ -1,0 +1,195 @@
+
+---------- Window 'HELLO tests (started at 22Oct10:24:33) - TextTest dynamic GUI' ----------
+Focus widget is 'Test Tree'
+
+Menu Bar : '_File' (+) , '_View' (+) , '_Actions' (+) , '_Help' (+)
+
+Tool Bar :
+  _Quit (Stock image 'gtk-quit', accelerator 'Ctrl+Q', tooltip 'Quit')
+  _Kill (Stock image 'gtk-stop', greyed out, accelerator 'Ctrl+Delete', tooltip 'Kill selected tests')
+  _Approve (Stock image 'gtk-apply', greyed out, accelerator 'Ctrl+S', tooltip 'Approve results for selected tests. This will save the files produced by this run as the new approved files which future runs will be compared with. Used to be called Save.')
+  Progress bar set to fraction 0.0, text 'All 0 tests completed at 22Oct10:24:38'
+...........
+
+Showing Test Tree with columns: Tests: All 0 selected , Details
+
+------------------------------ (vertical pane separator)
+...........
+
+Showing Notebook with tabs: Status , Selection , Run Info
+Viewing page 'Status'
+
+Showing Test Status View with columns: Status , Number , Visible
+'Shortcuts:' , Button '_New'
+...........
+'TextTest started at 22Oct10:24:35.' , Image 'throbber_inactive.png'
+--------------------------------------------------------------------------------------------
+
+Progress bar set to fraction 0.0, text '0 of 1 tests completed'
+
+Column titles changed in Test Tree with columns: Tests: 0/1 selected, all hidden , Details
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white,bold) | 1 (white,bold) | Check box
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white) | 0 (white) | Check box
+-> Initial filter (LightGoldenrod1,bold) | 1 (LightGoldenrod1,bold) | Check box
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white) | 0 (white) | Check box
+-> Initial filter (white) | 0 (white) | Check box
+-> Running (LightGoldenrod1,bold) | 1 (LightGoldenrod1,bold) | Check box
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white) | 0 (white) | Check box
+-> Initial filter (white) | 0 (white) | Check box
+-> Running (white) | 0 (white) | Check box
+-> Final filter (LightGoldenrod1,bold) | 1 (LightGoldenrod1,bold) | Check box
+
+Progress bar set to fraction 1.0, text 'All 1 tests completed at 22Oct10:24:39'
+
+Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
+-> TargetApp (hello) (black/white,bold) | (white)
+->   Test (black/salmon) | output different (salmon)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white) | 0 (white) | Check box
+-> Initial filter (white) | 0 (white) | Check box
+-> Running (white) | 0 (white) | Check box
+-> Final filter (white) | 0 (white) | Check box
+-> Failed (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->   Differences (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->     output different (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+
+No longer greyed out : _Approve
+
+Changed selection in Test Tree with columns: Tests: All 1 selected, none hidden , Details
+-> TargetApp (hello) (black/white,bold) | (white)
+->   Test (black/salmon) | output different (salmon)   ***
+
+Current page changed in Notebook with tabs: Test , Status , Selection , Run Info
+Viewing page 'Test'
+...........
+
+Showing File Tree with columns: Test , Details
+-> Comparison Files (bold)
+->   errors.hello (DarkSeaGreen2) | (DarkSeaGreen2)
+->   output.hello (salmon) | (salmon)
+
+------------------------------ (horizontal pane separator)
+...........
+
+========== Text Info ==========
+Test FAILED :
+---------- Differences in output ----------
+1c1
+< Hello
+---
+> Hello World!
+===============================
+
+Expected application event 'completion of test actions' occurred, proceeding.
+
+'show processes' event created with arguments ''
+
+Changing GUI status to: 'Performed 'Show Processes' on test Test.'
+
+---------- Dialog 'Show Processes' ----------
+Default widget is 'gtk-close'
+Stock image 'gtk-dialog-info' , ========== GtkTextView ==========
+No external processes have been launched from this TextTest instance.
+=================================
+Stock Button 'gtk-close'
+---------------------------------------------
+
+'close process view' event created with arguments ''
+
+'select file' event created with arguments 'output.hello'
+
+Waiting for application event 'the viewer process to start' to occur.
+
+Changing GUI status to: 'Started "tkdiff output.helloorigcmp output.hellocmp" in background (from test Test).'
+
+Expected application event 'the viewer process to start' occurred, proceeding.
+
+'select file' event created with arguments 'errors.hello'
+
+Waiting for application event 'the viewer process to start' to occur.
+
+Changing GUI status to: 'Started "emacs errors.hello" in background (from test Test).'
+
+Expected application event 'the viewer process to start' occurred, proceeding.
+
+'show view menu' event created with arguments ''
+
+---------- Popup Window ----------
+'Set Run Name' (Stock image 'gtk-index')
+  ----
+'Show Processes'
+  ----
+'Show only selected'
+'Hide selected'
+'Show all'
+  ----
+'_Toolbar' (checked)
+'_Shortcut bar' (checked)
+'_Status bar' (checked)
+----------------------------------
+
+'show processes' event created with arguments ''
+
+Changing GUI status to: 'Performed 'Show Processes' on test Test.'
+
+---------- Dialog 'Show Processes' ----------
+Default widget is 'gtk-close'
+
+Showing Process Tree View with columns: PID , Description
+-> 43088 | tkdiff output.helloorigcmp output.hellocmp (from test Test)
+-> 43151 | emacs errors.hello (from test Test)
+Stock Button 'gtk-close'
+---------------------------------------------
+
+'select process' event created with arguments 'tkdiff output.helloorigcmp output.hellocmp (from test Test)'
+
+Changed selection in Process Tree View with columns: PID , Description
+-> 43088 | tkdiff output.helloorigcmp output.hellocmp (from test Test)   ***
+-> 43151 | emacs errors.hello (from test Test)
+
+'view actions for process' event created with arguments 'tkdiff output.helloorigcmp output.hellocmp (from test Test)'
+
+---------- Popup Window ----------
+'Kill Process'
+----------------------------------
+
+'kill selected process' event created with arguments ''
+
+Waiting for application event 'the graphical difference program to terminate' to occur.
+
+Updated : Process Tree View with columns: PID , Description
+-> 43151 | emacs errors.hello (from test Test)
+
+Expected application event 'the graphical difference program to terminate' occurred, proceeding.
+
+'select process' event created with arguments 'emacs errors.hello (from test Test)'
+
+Changed selection in Process Tree View with columns: PID , Description
+-> 43151 | emacs errors.hello (from test Test)   ***
+
+'view actions for process' event created with arguments 'emacs errors.hello (from test Test)'
+
+---------- Popup Window ----------
+'Kill Process'
+----------------------------------
+
+'kill selected process' event created with arguments ''
+
+Waiting for application event 'file editing operations to complete' to occur.
+
+Updated : Process Tree View with columns: PID , Description
+
+Expected application event 'file editing operations to complete' occurred, proceeding.
+
+'close process view' event created with arguments ''
+
+'quit' event created with arguments ''

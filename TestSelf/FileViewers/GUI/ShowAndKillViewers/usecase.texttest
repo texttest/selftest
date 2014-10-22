@@ -1,0 +1,19 @@
+wait for completion of test actions
+show processes
+close process view
+select file output.hello
+wait for the viewer process to start
+select file errors.hello
+wait for the viewer process to start
+show view menu
+show processes
+select process tkdiff output.helloorigcmp output.hellocmp (from test Test)
+view actions for process tkdiff output.helloorigcmp output.hellocmp (from test Test)
+kill selected process
+wait for the graphical difference program to terminate
+select process emacs errors.hello (from test Test)
+view actions for process emacs errors.hello (from test Test)
+kill selected process
+wait for file editing operations to complete
+close process view
+quit
