@@ -1,23 +1,23 @@
-<-CMD:ssh -q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 -x lxfarm07.academy mkdir -p ${HOME}'/.texttest/tmp/dynamic_gui.07Apr143616.25206/system_under_test'
-<-CMD:ssh -q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 -x lxfarm07.academy test -e /tmp/geoff/texttest.07Apr143558.19352/texttest.gui/TestSelf/RunRemotely/DifferentFilesystems/RetrieveFiles/GUI/FailingToFollowFilesRemotely/TargetApp/do_nothing.py
+<-CMD:ssh -q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=30 -x lxfarm07.academy mkdir -p ${HOME}'/.texttest/tmp/dynamic_gui.07Apr143616.25206/system_under_test'
+<-CMD:ssh -q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=30 -x lxfarm07.academy test -e /tmp/geoff/texttest.07Apr143558.19352/texttest.gui/TestSelf/RunRemotely/DifferentFilesystems/RetrieveFiles/GUI/FailingToFollowFilesRemotely/TargetApp/do_nothing.py
 ->EXC:1
-<-CMD:scp -Crp -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 /tmp/geoff/texttest.07Apr143558.19352/texttest.gui/TestSelf/RunRemotely/DifferentFilesystems/RetrieveFiles/GUI/FailingToFollowFilesRemotely/TargetApp/do_nothing.py lxfarm07.academy:${HOME}'/.texttest/tmp/dynamic_gui.07Apr143616.25206/system_under_test/do_nothing.py'
-<-CMD:ssh -q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 -x lxfarm07.academy test -e /tmp/geoff/texttest.07Apr143558.19352/texttest.gui/TestSelf/RunRemotely/DifferentFilesystems/RetrieveFiles/GUI/FailingToFollowFilesRemotely/TargetApp/hello.py
+<-CMD:scp -Crp -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=30 /tmp/geoff/texttest.07Apr143558.19352/texttest.gui/TestSelf/RunRemotely/DifferentFilesystems/RetrieveFiles/GUI/FailingToFollowFilesRemotely/TargetApp/do_nothing.py lxfarm07.academy:${HOME}'/.texttest/tmp/dynamic_gui.07Apr143616.25206/system_under_test/do_nothing.py'
+<-CMD:ssh -q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=30 -x lxfarm07.academy test -e /tmp/geoff/texttest.07Apr143558.19352/texttest.gui/TestSelf/RunRemotely/DifferentFilesystems/RetrieveFiles/GUI/FailingToFollowFilesRemotely/TargetApp/hello.py
 ->EXC:1
-<-CMD:scp -Crp -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 /tmp/geoff/texttest.07Apr143558.19352/texttest.gui/TestSelf/RunRemotely/DifferentFilesystems/RetrieveFiles/GUI/FailingToFollowFilesRemotely/TargetApp/hello.py lxfarm07.academy:${HOME}'/.texttest/tmp/dynamic_gui.07Apr143616.25206/system_under_test/hello.py'
-<-CMD:ssh -q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 -x lxfarm07.academy mkdir -p ${HOME}'/.texttest/tmp/dynamic_gui.07Apr143616.25206/hello/Test'
-<-CMD:scp -Crp -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 /tmp/geoff/texttest.07Apr143558.19352/texttest.gui/TestSelf/RunRemotely/DifferentFilesystems/RetrieveFiles/GUI/FailingToFollowFilesRemotely/texttesttmp/dynamic_gui.07Apr143616.25206/hello/Test/run_test.sh lxfarm07.academy:${HOME}'/.texttest/tmp/dynamic_gui.07Apr143616.25206/hello/Test'
-<-CMD:cd /tmp/geoff/texttest.07Apr143558.19352/texttest.gui/TestSelf/RunRemotely/DifferentFilesystems/RetrieveFiles/GUI/FailingToFollowFilesRemotely/texttesttmp/dynamic_gui.07Apr143616.25206/hello/Test; ssh -q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 -x lxfarm07.academy ${HOME}'/.texttest/tmp/dynamic_gui.07Apr143616.25206/hello/Test/run_test.sh'
+<-CMD:scp -Crp -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=30 /tmp/geoff/texttest.07Apr143558.19352/texttest.gui/TestSelf/RunRemotely/DifferentFilesystems/RetrieveFiles/GUI/FailingToFollowFilesRemotely/TargetApp/hello.py lxfarm07.academy:${HOME}'/.texttest/tmp/dynamic_gui.07Apr143616.25206/system_under_test/hello.py'
+<-CMD:ssh -q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=30 -x lxfarm07.academy mkdir -p ${HOME}'/.texttest/tmp/dynamic_gui.07Apr143616.25206/hello/Test'
+<-CMD:scp -Crp -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=30 /tmp/geoff/texttest.07Apr143558.19352/texttest.gui/TestSelf/RunRemotely/DifferentFilesystems/RetrieveFiles/GUI/FailingToFollowFilesRemotely/texttesttmp/dynamic_gui.07Apr143616.25206/hello/Test/run_test.sh lxfarm07.academy:${HOME}'/.texttest/tmp/dynamic_gui.07Apr143616.25206/hello/Test'
+<-CMD:cd /tmp/geoff/texttest.07Apr143558.19352/texttest.gui/TestSelf/RunRemotely/DifferentFilesystems/RetrieveFiles/GUI/FailingToFollowFilesRemotely/texttesttmp/dynamic_gui.07Apr143616.25206/hello/Test; ssh -q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=30 -x lxfarm07.academy ${HOME}'/.texttest/tmp/dynamic_gui.07Apr143616.25206/hello/Test/run_test.sh'
 ->OUT:Terminated
 ->EXC:-15
-<-CMD:scp -Crp -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 lxfarm07.academy:${HOME}'/.texttest/tmp/dynamic_gui.07Apr143616.25206/hello/Test'/* /tmp/geoff/texttest.07Apr143558.19352/texttest.gui/TestSelf/RunRemotely/DifferentFilesystems/RetrieveFiles/GUI/FailingToFollowFilesRemotely/texttesttmp/dynamic_gui.07Apr143616.25206/hello/Test
+<-CMD:scp -Crp -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=30 lxfarm07.academy:${HOME}'/.texttest/tmp/dynamic_gui.07Apr143616.25206/hello/Test'/* /tmp/geoff/texttest.07Apr143558.19352/texttest.gui/TestSelf/RunRemotely/DifferentFilesystems/RetrieveFiles/GUI/FailingToFollowFilesRemotely/texttesttmp/dynamic_gui.07Apr143616.25206/hello/Test
 ->FIL:Test
 ->FIL:Test.edit_2
-<-CMD:ssh -q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 -x lxfarm07.academy which xterm
+<-CMD:ssh -q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=30 -x lxfarm07.academy which xterm
 ->ERR:We failed!
 ->EXC:1
-<-CMD:ssh -q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 -x lxfarm07.academy sh ${HOME}'/.texttest/tmp/dynamic_gui.07Apr143616.25206/hello/Test/kill_test.sh'
-<-CMD:scp -Crp -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 lxfarm07.academy:${HOME}'/.texttest/tmp/dynamic_gui.07Apr143616.25206/hello/Test'/* /tmp/geoff/texttest.07Apr143558.19352/texttest.gui/TestSelf/RunRemotely/DifferentFilesystems/RetrieveFiles/GUI/FailingToFollowFilesRemotely/texttesttmp/dynamic_gui.07Apr143616.25206/hello/Test
+<-CMD:ssh -q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=30 -x lxfarm07.academy sh ${HOME}'/.texttest/tmp/dynamic_gui.07Apr143616.25206/hello/Test/kill_test.sh'
+<-CMD:scp -Crp -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=30 lxfarm07.academy:${HOME}'/.texttest/tmp/dynamic_gui.07Apr143616.25206/hello/Test'/* /tmp/geoff/texttest.07Apr143558.19352/texttest.gui/TestSelf/RunRemotely/DifferentFilesystems/RetrieveFiles/GUI/FailingToFollowFilesRemotely/texttesttmp/dynamic_gui.07Apr143616.25206/hello/Test
 ->FIL:Test
 ->FIL:Test.edit_2
-<-CMD:ssh -q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 -x lxfarm07.academy rm -rf ${HOME}/.texttest/tmp/dynamic_gui.07Apr143616.25206
+<-CMD:ssh -q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=30 -x lxfarm07.academy rm -rf ${HOME}/.texttest/tmp/dynamic_gui.07Apr143616.25206
