@@ -37,7 +37,7 @@ Button 'Filter' (Stock image 'gtk-find', accelerator 'Ctrl+F', tooltip 'filter t
 Button 'Reset Tab' (tooltip 'Reset all the settings in the current tab to their default values')
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 05Nov15:23:36.' , Image 'throbber_inactive.png'
+'TextTest started at 05Nov17:24:34.' , Image 'throbber_inactive.png'
 ------------------------------------------------------------------------
 
 Changing GUI status to: 'Reading tests ...'
@@ -49,7 +49,7 @@ Updated : Test Tree with columns: Tests: 0/1 selected
 ->   Test (black/grey90)
 Updated drop-down list in 'Test-file to search' Text entry (set to 'errors') (drop-down list containing ['errors', 'output'])
 
-Changing GUI status to: 'Reading tests completed at 05Nov15:23:37.'
+Changing GUI status to: 'Reading tests completed at 05Nov17:24:35.'
 
 Expected application event 'all tests to be read' occurred, proceeding.
 
@@ -127,10 +127,13 @@ Versioned Output
 
 'show filters' event created with arguments ''
 
+Changing GUI status to: 'Rereading configuration for RDT ...'
+
 Changing GUI status to: 'Performed 'Show Filters' on test Test.'
 
 ---------- Dialog 'Show Filters' ----------
 Default widget is 'gtk-close'
+.....'Filters to apply'......
 ...........
 
 Showing run_dependent_text Tree View with columns: run__dependent__text
@@ -140,53 +143,35 @@ Showing run_dependent_text Tree View with columns: run__dependent__text
 
 Showing unordered_text Tree View with columns: unordered__text
 -> Versioned
-Stock Button 'gtk-close'
--------------------------------------------
+---------------
+.....'Text to filter (copied from output.rdt.version)'......
 
-'accept shown filters' event created with arguments ''
-
-'view actions for file' event created with arguments 'output.rdt.version'
-
-========== Text Info ==========
-
-Description:
-<No description provided>
-
-Full path:
-Test
-
-Preview of output.rdt.version:
+========== Filter Text View ==========
 Remove this Remove this
 Standard output
 Remove this
 But not this
 Remove this
 Versioned Output
-===============================
+======================================
+Stock Button 'gtk-close' , Button 'Test Filtering'
+-------------------------------------------
 
----------- Popup Window ----------
-'View File' (Stock image 'gtk-open', accelerator 'Ctrl+O')
-  ----
-'Test Filtering'
-'Show Filters'
-  ----
-'_File Properties' (Stock image 'gtk-properties')
-'Copy Path To Clipboard'
-  ----
-'Create/_Import' (Stock image 'gtk-new', accelerator 'Ctrl+N')
-  ----
-'_Rename...' (Stock image 'gtk-italic')
-'Remove...' (Stock image 'gtk-delete')
-----------------------------------
+'set text for filtering to' event created with arguments 'Remove this Remove this\nVersioned Output\n'
 
-'test the run-dependent text filtering' event created with arguments ''
+========== Filter Text View ==========
+Remove this Remove this
+Versioned Output
+======================================
 
-Changing GUI status to: 'Rereading configuration for RDT ...'
+'test filtering from filter view' event created with arguments ''
 
 Waiting for application event 'the readonly file viewer to be closed' to occur.
 
-Changing GUI status to: 'Performed 'Test Filtering' on test Test.'
+Changing GUI status to: 'Started "emacs output.rdt.version (FILTERED)" in background (from test Test).'
 
 Expected application event 'the readonly file viewer to be closed' occurred, proceeding.
+
+'accept shown filters' event created with arguments ''
 
 'quit' event created with arguments ''
