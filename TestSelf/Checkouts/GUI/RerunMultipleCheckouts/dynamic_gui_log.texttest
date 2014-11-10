@@ -1,5 +1,5 @@
 
----------- Window 'HELLO tests from various checkouts (started at 08Oct03:26:09) - TextTest dynamic GUI' ----------
+---------- Window 'HELLO tests from various checkouts (started at 10Nov07:33:42) - TextTest dynamic GUI' ----------
 Focus widget is 'Test Tree'
 
 Menu Bar : '_File' (+) , '_View' (+) , '_Actions' (+) , '_Help' (+)
@@ -8,7 +8,7 @@ Tool Bar :
   _Quit (Stock image 'gtk-quit', accelerator 'Ctrl+Q', tooltip 'Quit')
   _Kill (Stock image 'gtk-stop', greyed out, accelerator 'Ctrl+Delete', tooltip 'Kill selected tests')
   _Approve (Stock image 'gtk-apply', greyed out, accelerator 'Ctrl+S', tooltip 'Approve results for selected tests. This will save the files produced by this run as the new approved files which future runs will be compared with. Used to be called Save.')
-  Progress bar set to fraction 0.0, text 'All 0 tests completed at 08Oct03:26:10'
+  Progress bar set to fraction 0.0, text 'All 0 tests completed at 10Nov07:33:42'
 ...........
 
 Showing Test Tree with columns: Tests: All 0 selected , Details
@@ -22,7 +22,7 @@ Viewing page 'Status'
 Showing Test Status View with columns: Status , Number , Visible
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 08Oct03:26:10.' , Image 'throbber_inactive.png'
+'TextTest started at 10Nov07:33:42.' , Image 'throbber_inactive.png'
 ----------------------------------------------------------------------------------------------------
 
 Progress bar set to fraction 0.0, text '0 of 1 tests completed'
@@ -84,7 +84,7 @@ Updated : Test Status View with columns: Status , Number , Visible
 -> Final filter (LightGoldenrod1,bold) | 1 (LightGoldenrod1,bold) | Check box
 -> Succeeded (DarkSeaGreen2,bold) | 1 (DarkSeaGreen2,bold) | Check box
 
-Progress bar set to fraction 1.0, text 'All 2 tests completed at 08Oct03:26:10'
+Progress bar set to fraction 1.0, text 'All 2 tests completed at 10Nov07:33:42'
 
 Updated : Test Tree with columns: Tests: 0/2 selected, 1 hidden , Details
 -> TargetApp (hello.checkout2) (black/white,bold) | (white)
@@ -185,22 +185,49 @@ Viewing page 'Basic'
 'Run this version:'
 Text entry
 'Use checkout:'
-Text entry (set to '/carm/proj/texttest-tmp/dgalda/dynamic_gui.08Oct092500.103242/texttest.gui/TestSelf/Checkouts/GUI/RerunMultipleCheckouts/TargetApp/checkout1/source,/carm/proj/texttest-tmp/dgalda/dynamic_gui.08Oct092500.103242/texttest.gui/TestSelf/Checkouts/GUI/RerunMultipleCheckouts/TargetApp/checkout2/source')
+Text entry (set to '/carm/proj/texttest-tmp/geoff/dynamic_gui.10Nov133315.113722/texttest.gui/TestSelf/Checkouts/GUI/RerunMultipleCheckouts/TargetApp/checkout1/source,/carm/proj/texttest-tmp/geoff/dynamic_gui.10Nov133315.113722/texttest.gui/TestSelf/Checkouts/GUI/RerunMultipleCheckouts/TargetApp/checkout2/source')
 'Run on machine:'
 Text entry (set to 'localhost')
 'Times to run:' (tooltip 'Set this to some number larger than 1 to run the same test multiple times, for example to try to catch indeterminism in the system under test')
 Spin button entry (set to '1') (min=1.0, max=1000.0, step=1.0)
 Check button 'Stop after first failure'
+Check button 'Mark test as rerun in current window' (checked) (tooltip 'Test will be automatically marked as having a newer result elsewhere.It will also be possible to import this result here in future.')
 Stock Button 'gtk-ok' , Stock Button 'gtk-cancel'
 ---------------------------------------------------
 
 'perform rerun' event created with arguments ''
 
+Updated : Test Tree with columns: Tests: All 2 selected, none hidden , Details
+-> TargetApp (hello) (black/white,bold) | (white)
+->   Test (black/lightblue) | Rerun 1 (lightblue)   ***
+-> TargetApp (hello.checkout2) (black/white,bold) | (white)
+->   Test (black/salmon) | output different (salmon)   ***
+
+Updated : File Tree with columns: Sample from 2 tests , Details
+-> Comparison Files (bold)
+->   output.hello (DarkSeaGreen2) | (DarkSeaGreen2)
+
+========== Text Info ==========
+Test was marked by the user :
+Test is being rerun in another window, numbered 1
+
+ORIGINAL STATE:
+Test succeeded
+===============================
+
+Greyed out : _Approve
+
+Updated : Test Tree with columns: Tests: All 2 selected, none hidden , Details
+-> TargetApp (hello) (black/white,bold) | (white)
+->   Test (black/lightblue) | Rerun 1 (lightblue)   ***
+-> TargetApp (hello.checkout2) (black/white,bold) | (white)
+->   Test (black/lightblue) | Rerun 1 (lightblue)   ***
+
 Waiting for application event 'rerun GUI to be closed' to occur.
 
-Changing GUI status to: 'Started 2 tests at 08Oct03:26:11.'
+Changing GUI status to: 'Started 2 tests at 10Nov07:33:43.'
 
----------- Window 'HELLO tests from various checkouts (started at 08Oct03:26:11) - TextTest dynamic GUI' ----------
+---------- Window 'HELLO tests from various checkouts (rerun 1 from 10Nov07:33:42) - TextTest dynamic GUI' ----------
 Focus widget is 'Test Tree'
 
 Menu Bar : '_File' (+) , '_View' (+) , '_Actions' (+) , '_Help' (+)
@@ -224,7 +251,7 @@ Showing Test Status View with columns: Status , Number , Visible
 -> Not started (white,bold) | 2 (white,bold) | Check box
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 08Oct03:26:11.' , Image 'throbber_inactive.png'
+'TextTest started at 10Nov07:33:43.' , Image 'throbber_inactive.png'
 ----------------------------------------------------------------------------------------------------
 
 Column titles changed in Test Tree with columns: Tests: 0/2 selected, all hidden , Details
@@ -276,7 +303,7 @@ Updated : Test Status View with columns: Status , Number , Visible
 -> Final filter (LightGoldenrod1,bold) | 1 (LightGoldenrod1,bold) | Check box
 -> Succeeded (DarkSeaGreen2,bold) | 1 (DarkSeaGreen2,bold) | Check box
 
-Progress bar set to fraction 1.0, text 'All 2 tests completed at 08Oct03:26:11'
+Progress bar set to fraction 1.0, text 'All 2 tests completed at 10Nov07:33:44'
 
 Updated : Test Tree with columns: Tests: 0/2 selected, 1 hidden , Details
 -> TargetApp (hello.checkout2) (black/white,bold) | (white)
@@ -353,20 +380,22 @@ Viewing page 'Run Info'
 ...........
 
 ========== Run Info ==========
+Run Name         : HELLO tests from various checkouts (rerun 1 from 10Nov07:33:42)
+
 Application name : HELLO
 Version          : 
 Number of tests  : 1
-Executable       : /carm/proj/texttest-tmp/dgalda/dynamic_gui.08Oct092500.103242/texttest.gui/TestSelf/Checkouts/GUI/RerunMultipleCheckouts/TargetApp/checkout1/source/hello.py
+Executable       : /carm/proj/texttest-tmp/geoff/dynamic_gui.10Nov133315.113722/texttest.gui/TestSelf/Checkouts/GUI/RerunMultipleCheckouts/TargetApp/checkout1/source/hello.py
 
 Application name : HELLO
 Version          : checkout2
 Number of tests  : 1
-Executable       : /carm/proj/texttest-tmp/dgalda/dynamic_gui.08Oct092500.103242/texttest.gui/TestSelf/Checkouts/GUI/RerunMultipleCheckouts/TargetApp/checkout2/source/hello.py
+Executable       : /carm/proj/texttest-tmp/geoff/dynamic_gui.10Nov133315.113722/texttest.gui/TestSelf/Checkouts/GUI/RerunMultipleCheckouts/TargetApp/checkout2/source/hello.py
 
-Command line     : /users/dgalda/.local/texttest_test/bin/texttest -g -a hello,hello.checkout2 -c /carm/proj/texttest-tmp/dgalda/dynamic_gui.08Oct092500.103242/texttest.gui/TestSelf/Checkouts/GUI/RerunMultipleCheckouts/TargetApp/checkout1/source,/carm/proj/texttest-tmp/dgalda/dynamic_gui.08Oct092500.103242/texttest.gui/TestSelf/Checkouts/GUI/RerunMultipleCheckouts/TargetApp/checkout2/source -m localhost -cp 1 -xr /carm/proj/texttest-tmp/dgalda/dynamic_gui.08Oct092500.103242/texttest.gui/TestSelf/Checkouts/GUI/RerunMultipleCheckouts/log/logging.debug -xw /carm/proj/texttest-tmp/dgalda/dynamic_gui.08Oct092500.103242/texttest.gui/TestSelf/Checkouts/GUI/RerunMultipleCheckouts/log -vanilla site -count 2 -f /carm/proj/texttest-tmp/dgalda/dynamic_gui.08Oct092500.103242/texttest.gui/TestSelf/Checkouts/GUI/RerunMultipleCheckouts/texttesttmp/dynamic_run1_08Oct032609/gui_select
+Command line     : /users/geoff/.local/texttest_test/bin/texttest -g -a hello,hello.checkout2 -c /carm/proj/texttest-tmp/geoff/dynamic_gui.10Nov133315.113722/texttest.gui/TestSelf/Checkouts/GUI/RerunMultipleCheckouts/TargetApp/checkout1/source,/carm/proj/texttest-tmp/geoff/dynamic_gui.10Nov133315.113722/texttest.gui/TestSelf/Checkouts/GUI/RerunMultipleCheckouts/TargetApp/checkout2/source -m localhost -cp 1 -xr /carm/proj/texttest-tmp/geoff/dynamic_gui.10Nov133315.113722/texttest.gui/TestSelf/Checkouts/GUI/RerunMultipleCheckouts/log/logging.debug -xw /carm/proj/texttest-tmp/geoff/dynamic_gui.10Nov133315.113722/texttest.gui/TestSelf/Checkouts/GUI/RerunMultipleCheckouts/log -name "HELLO tests from various checkouts (rerun 1 from 10Nov07:33:42)" -vanilla site -count 2 -f /carm/proj/texttest-tmp/geoff/dynamic_gui.10Nov133315.113722/texttest.gui/TestSelf/Checkouts/GUI/RerunMultipleCheckouts/texttesttmp/dynamic_run1_10Nov073342/gui_select
 
-Start time       : 08Oct03:26:11
-End time         : 08Oct03:26:11
+Start time       : 10Nov07:33:43
+End time         : 10Nov07:33:44
 ==============================
 
 ------------------------------ (horizontal pane separator)
@@ -375,21 +404,21 @@ End time         : 08Oct03:26:11
 ========== Test Run Info ==========
 Selected test  : Test
 
-Start time       : 08Oct03:26:11
-End time         : 08Oct03:26:11
+Start time       : 10Nov07:33:43
+End time         : 10Nov07:33:43
 
 Description:
 <No description provided>
 
-Command Line   : python /carm/proj/texttest-tmp/dgalda/dynamic_gui.08Oct092500.103242/texttest.gui/TestSelf/Checkouts/GUI/RerunMultipleCheckouts/TargetApp/checkout1/source/hello.py
+Command Line   : python /carm/proj/texttest-tmp/geoff/dynamic_gui.10Nov133315.113722/texttest.gui/TestSelf/Checkouts/GUI/RerunMultipleCheckouts/TargetApp/checkout1/source/hello.py
 
 Environment variables :
-PATH=/carm/proj/texttest-tmp/dgalda/dynamic_gui.08Oct092500.103242/texttest.gui/TestSelf/Checkouts/GUI/RerunMultipleCheckouts/texttesttmp/dynamic_gui.08Oct032611.1851/hello/Test:/carm/proj/texttest-tmp/dgalda/dynamic_gui.08Oct092500.103242/texttest.gui/TestSelf/Checkouts/GUI/RerunMultipleCheckouts:/users/dgalda/.local/texttest_test/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/bin:/usr/bin
-TEXTTEST_CHECKOUT=/carm/proj/texttest-tmp/dgalda/dynamic_gui.08Oct092500.103242/texttest.gui/TestSelf/Checkouts/GUI/RerunMultipleCheckouts/TargetApp/checkout1/source
-TEXTTEST_LOG_DIR=/carm/proj/texttest-tmp/dgalda/dynamic_gui.08Oct092500.103242/texttest.gui/TestSelf/Checkouts/GUI/RerunMultipleCheckouts/texttesttmp/dynamic_gui.08Oct032611.1851/hello/Test
-TEXTTEST_ROOT=/carm/proj/texttest-tmp/dgalda/dynamic_gui.08Oct092500.103242/texttest.gui/TestSelf/Checkouts/GUI/RerunMultipleCheckouts/TargetApp
-TEXTTEST_SANDBOX=/carm/proj/texttest-tmp/dgalda/dynamic_gui.08Oct092500.103242/texttest.gui/TestSelf/Checkouts/GUI/RerunMultipleCheckouts/texttesttmp/dynamic_gui.08Oct032611.1851/hello/Test
-TEXTTEST_SANDBOX_ROOT=/carm/proj/texttest-tmp/dgalda/dynamic_gui.08Oct092500.103242/texttest.gui/TestSelf/Checkouts/GUI/RerunMultipleCheckouts/texttesttmp/dynamic_gui.08Oct032611.1851
+PATH=/carm/proj/texttest-tmp/geoff/dynamic_gui.10Nov133315.113722/texttest.gui/TestSelf/Checkouts/GUI/RerunMultipleCheckouts/texttesttmp/dynamic_gui.10Nov073343.18790/hello/Test:/carm/proj/texttest-tmp/geoff/dynamic_gui.10Nov133315.113722/texttest.gui/TestSelf/Checkouts/GUI/RerunMultipleCheckouts:/users/geoff/.local/texttest_test/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/bin:/usr/bin
+TEXTTEST_CHECKOUT=/carm/proj/texttest-tmp/geoff/dynamic_gui.10Nov133315.113722/texttest.gui/TestSelf/Checkouts/GUI/RerunMultipleCheckouts/TargetApp/checkout1/source
+TEXTTEST_LOG_DIR=/carm/proj/texttest-tmp/geoff/dynamic_gui.10Nov133315.113722/texttest.gui/TestSelf/Checkouts/GUI/RerunMultipleCheckouts/texttesttmp/dynamic_gui.10Nov073343.18790/hello/Test
+TEXTTEST_ROOT=/carm/proj/texttest-tmp/geoff/dynamic_gui.10Nov133315.113722/texttest.gui/TestSelf/Checkouts/GUI/RerunMultipleCheckouts/TargetApp
+TEXTTEST_SANDBOX=/carm/proj/texttest-tmp/geoff/dynamic_gui.10Nov133315.113722/texttest.gui/TestSelf/Checkouts/GUI/RerunMultipleCheckouts/texttesttmp/dynamic_gui.10Nov073343.18790/hello/Test
+TEXTTEST_SANDBOX_ROOT=/carm/proj/texttest-tmp/geoff/dynamic_gui.10Nov133315.113722/texttest.gui/TestSelf/Checkouts/GUI/RerunMultipleCheckouts/texttesttmp/dynamic_gui.10Nov073343.18790
 USECASE_REPLAY_SCRIPT=
 ===================================
 
@@ -406,22 +435,22 @@ Changed selection in Test Tree with columns: Tests: 1/2 selected, none hidden , 
 ========== Test Run Info ==========
 Selected test  : Test
 
-Start time       : 08Oct03:26:11
-End time         : 08Oct03:26:11
+Start time       : 10Nov07:33:43
+End time         : 10Nov07:33:44
 
 Description:
 <No description provided>
 
-Command Line   : python /carm/proj/texttest-tmp/dgalda/dynamic_gui.08Oct092500.103242/texttest.gui/TestSelf/Checkouts/GUI/RerunMultipleCheckouts/TargetApp/checkout2/source/hello.py
+Command Line   : python /carm/proj/texttest-tmp/geoff/dynamic_gui.10Nov133315.113722/texttest.gui/TestSelf/Checkouts/GUI/RerunMultipleCheckouts/TargetApp/checkout2/source/hello.py
 
 Environment variables :
-PATH=/carm/proj/texttest-tmp/dgalda/dynamic_gui.08Oct092500.103242/texttest.gui/TestSelf/Checkouts/GUI/RerunMultipleCheckouts/texttesttmp/dynamic_gui.08Oct032611.1851/hello.checkout2/Test:/carm/proj/texttest-tmp/dgalda/dynamic_gui.08Oct092500.103242/texttest.gui/TestSelf/Checkouts/GUI/RerunMultipleCheckouts:/users/dgalda/.local/texttest_test/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/bin:/usr/bin
-TEXTTEST_CHECKOUT=/carm/proj/texttest-tmp/dgalda/dynamic_gui.08Oct092500.103242/texttest.gui/TestSelf/Checkouts/GUI/RerunMultipleCheckouts/TargetApp/checkout2/source
-TEXTTEST_CHECKOUT_NAME=/carm/proj/texttest-tmp/dgalda/dynamic_gui.08Oct092500.103242/texttest.gui/TestSelf/Checkouts/GUI/RerunMultipleCheckouts/TargetApp/checkout1/source
-TEXTTEST_LOG_DIR=/carm/proj/texttest-tmp/dgalda/dynamic_gui.08Oct092500.103242/texttest.gui/TestSelf/Checkouts/GUI/RerunMultipleCheckouts/texttesttmp/dynamic_gui.08Oct032611.1851/hello.checkout2/Test
-TEXTTEST_ROOT=/carm/proj/texttest-tmp/dgalda/dynamic_gui.08Oct092500.103242/texttest.gui/TestSelf/Checkouts/GUI/RerunMultipleCheckouts/TargetApp
-TEXTTEST_SANDBOX=/carm/proj/texttest-tmp/dgalda/dynamic_gui.08Oct092500.103242/texttest.gui/TestSelf/Checkouts/GUI/RerunMultipleCheckouts/texttesttmp/dynamic_gui.08Oct032611.1851/hello.checkout2/Test
-TEXTTEST_SANDBOX_ROOT=/carm/proj/texttest-tmp/dgalda/dynamic_gui.08Oct092500.103242/texttest.gui/TestSelf/Checkouts/GUI/RerunMultipleCheckouts/texttesttmp/dynamic_gui.08Oct032611.1851
+PATH=/carm/proj/texttest-tmp/geoff/dynamic_gui.10Nov133315.113722/texttest.gui/TestSelf/Checkouts/GUI/RerunMultipleCheckouts/texttesttmp/dynamic_gui.10Nov073343.18790/hello.checkout2/Test:/carm/proj/texttest-tmp/geoff/dynamic_gui.10Nov133315.113722/texttest.gui/TestSelf/Checkouts/GUI/RerunMultipleCheckouts:/users/geoff/.local/texttest_test/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/bin:/usr/bin
+TEXTTEST_CHECKOUT=/carm/proj/texttest-tmp/geoff/dynamic_gui.10Nov133315.113722/texttest.gui/TestSelf/Checkouts/GUI/RerunMultipleCheckouts/TargetApp/checkout2/source
+TEXTTEST_CHECKOUT_NAME=/carm/proj/texttest-tmp/geoff/dynamic_gui.10Nov133315.113722/texttest.gui/TestSelf/Checkouts/GUI/RerunMultipleCheckouts/TargetApp/checkout1/source
+TEXTTEST_LOG_DIR=/carm/proj/texttest-tmp/geoff/dynamic_gui.10Nov133315.113722/texttest.gui/TestSelf/Checkouts/GUI/RerunMultipleCheckouts/texttesttmp/dynamic_gui.10Nov073343.18790/hello.checkout2/Test
+TEXTTEST_ROOT=/carm/proj/texttest-tmp/geoff/dynamic_gui.10Nov133315.113722/texttest.gui/TestSelf/Checkouts/GUI/RerunMultipleCheckouts/TargetApp
+TEXTTEST_SANDBOX=/carm/proj/texttest-tmp/geoff/dynamic_gui.10Nov133315.113722/texttest.gui/TestSelf/Checkouts/GUI/RerunMultipleCheckouts/texttesttmp/dynamic_gui.10Nov073343.18790/hello.checkout2/Test
+TEXTTEST_SANDBOX_ROOT=/carm/proj/texttest-tmp/geoff/dynamic_gui.10Nov133315.113722/texttest.gui/TestSelf/Checkouts/GUI/RerunMultipleCheckouts/texttesttmp/dynamic_gui.10Nov073343.18790
 USECASE_REPLAY_SCRIPT=
 ===================================
 
