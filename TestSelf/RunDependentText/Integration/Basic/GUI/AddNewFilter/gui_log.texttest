@@ -37,7 +37,7 @@ Button 'Filter' (Stock image 'gtk-find', accelerator 'Ctrl+F', tooltip 'filter t
 Button 'Reset Tab' (tooltip 'Reset all the settings in the current tab to their default values')
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 13Nov13:56:12.' , Image 'throbber_inactive.png'
+'TextTest started at 13Nov13:54:27.' , Image 'throbber_inactive.png'
 ------------------------------------------------------------------------
 
 Changing GUI status to: 'Reading tests ...'
@@ -49,7 +49,7 @@ Updated : Test Tree with columns: Tests: 0/1 selected
 ->   Test (black/grey90)
 Updated drop-down list in 'Test-file to search' Text entry (set to 'errors') (drop-down list containing ['errors', 'output'])
 
-Changing GUI status to: 'Reading tests completed at 13Nov13:56:12.'
+Changing GUI status to: 'Reading tests completed at 13Nov13:54:27.'
 
 Expected application event 'all tests to be read' occurred, proceeding.
 
@@ -148,6 +148,11 @@ Remove this
 Button 'Apply and Close' , Stock Button 'gtk-cancel' , Button 'Test Filtering'
 -------------------------------------------
 
+'select filter for' event created with arguments 'Remove this'
+
+Changed selection in run_dependent_text Tree View with columns: run__dependent__text , Enabled , Config File
+-> Remove this | Check box (checked) | config.rdt   ***
+
 'show options for' event created with arguments 'Remove this'
 
 ---------- Popup Window ----------
@@ -155,14 +160,17 @@ Button 'Apply and Close' , Stock Button 'gtk-cancel' , Button 'Test Filtering'
 'Remove'
 ----------------------------------
 
-'select filter for' event created with arguments 'Remove this'
-
-Changed selection in run_dependent_text Tree View with columns: run__dependent__text , Enabled , Config File
--> Remove this | Check box (checked) | config.rdt   ***
-
-'remove selected filter row' event created with arguments ''
+'add new filter row' event created with arguments ''
 
 Updated : run_dependent_text Tree View with columns: run__dependent__text , Enabled , Config File
+-> Remove this | Check box (checked) | config.rdt
+->  | Check box (checked) | config.rdt   ***
+
+'edit filter' event created with arguments '<unnamed> = Standard'
+
+Updated : run_dependent_text Tree View with columns: run__dependent__text , Enabled , Config File
+-> Remove this | Check box (checked) | config.rdt
+-> Standard | Check box (checked) | config.rdt   ***
 
 'test filtering from filter view' event created with arguments ''
 
