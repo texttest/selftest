@@ -1,5 +1,5 @@
 
----------- Window 'EDIT test management - TextTest static GUI' ----------
+---------- Window 'TDAT test management - TextTest static GUI' ----------
 Focus widget is 'Test Tree'
 
 Menu Bar : '_File' (+) , '_Edit' (+) , '_View' (+) , '_Actions' (+) , '_Help' (+)
@@ -37,7 +37,7 @@ Button 'Filter' (Stock image 'gtk-find', accelerator 'Ctrl+F', tooltip 'filter t
 Button 'Reset Tab' (tooltip 'Reset all the settings in the current tab to their default values')
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 14Nov13:54:13.' , Image 'throbber_inactive.png'
+'TextTest started at 14Nov14:14:09.' , Image 'throbber_inactive.png'
 -------------------------------------------------------------------------
 
 Changing GUI status to: 'Reading tests ...'
@@ -47,53 +47,39 @@ Column titles changed in Test Tree with columns: Tests: 0/1 selected
 Column titles changed in Test Tree with columns: Tests: 0/2 selected
 
 Updated : Test Tree with columns: Tests: 0/2 selected
--> TargetApp (edit) (black/grey90,bold)
-->   Test (black/grey90)
-->   NameMismatch (black/grey90)
-Updated drop-down list in 'Test-file to search' Text entry (set to 'traffic') (drop-down list containing ['traffic', '----------', 'catalogue', 'editedfile', 'editedfile2', 'editedfile3', 'errors', 'output'])
+-> TargetApp (tdat) (black/grey90,bold)
+->   Test1 (black/grey90)
+->   Test2 (black/grey90)
+Updated drop-down list in 'Test-file to search' Text entry (set to 'config') (drop-down list containing ['config', 'environment', 'options', '----------', 'catalogue', 'errors', 'output', 'writeabledirs'])
 
-Changing GUI status to: 'Reading tests completed at 14Nov13:54:14.'
+Changing GUI status to: 'Reading tests completed at 14Nov14:14:10.'
 
 Expected application event 'all tests to be read' occurred, proceeding.
 
-'set test selection to' event created with arguments 'Test'
+'set test selection to' event created with arguments 'Test2'
 
 No longer greyed out : _Run
 
 Changed selection in Test Tree with columns: Tests: 1/2 selected
--> TargetApp (edit) (black/grey90,bold)
-->   Test (black/grey90)   ***
-->   NameMismatch (black/grey90)
+-> TargetApp (tdat) (black/grey90,bold)
+->   Test1 (black/grey90)
+->   Test2 (black/grey90)   ***
 
 Current page changed in Notebook with tabs: Test , Selection , Running , Config
 Viewing page 'Test'
 ...........
 
-Showing File Tree with columns: Test
+Showing File Tree with columns: Test2
 -> Approved Files (white,bold)
-->   catalogue.edit (grey90)
-->   editedfile.edit (grey90)
-->   editedfile2.edit (grey90)
-->   editedfile3.edit (grey90)
-->   errors.edit (grey90)
-->   output.edit (grey90)
+->   catalogue.tdat (grey90)
+->   errors.tdat (grey90)
+->   output.tdat (grey90)
 -> Definition Files (white,bold)
-->   traffic.edit (grey90)
+->   environment.tdat.env (grey90)
+->   options.tdat (grey90)
 -> Data Files (white,bold)
 ->   (Inherited from parent suites) (white,bold)
-->     file (grey90)
-->     file2 (grey90)
-->     writedir (grey90,bold)
-->       subdir (grey90,bold)
-->         file (grey90)
-->         unchanged (grey90)
--> Externally Edited Files (white,bold)
-->   file (grey90)
-->   file.edit_2 (grey90)
-->   file2 (grey90)
-->   writedir (grey90,bold)
-->     subdir (grey90,bold)
-->       file (grey90)
+->     readonlyfile (grey90)
 
 ------------------------------ (horizontal pane separator)
 ...........
@@ -101,17 +87,58 @@ Showing File Tree with columns: Test
 ========== Text Info ==========
 
 Description:
-<No description provided>
+While this one has readable data and some environment files...
 
 Full path:
-Test
+Test2
 ===============================
 
-'select file' event created with arguments 'file under subdir under Externally Edited Files'
+'view actions for file' event created with arguments '(Inherited from parent suites)'
+
+Changed selection in File Tree with columns: Test2
+-> Approved Files (white,bold)
+->   catalogue.tdat (grey90)
+->   errors.tdat (grey90)
+->   output.tdat (grey90)
+-> Definition Files (white,bold)
+->   environment.tdat.env (grey90)
+->   options.tdat (grey90)
+-> Data Files (white,bold)
+->   (Inherited from parent suites) (white,bold)   ***
+->     readonlyfile (grey90)
+
+---------- Popup Window ----------
+'View File' (Stock image 'gtk-open', greyed out, accelerator 'Ctrl+O')
+  ----
+'Test Filtering'
+'Show Filters'
+  ----
+'_File Properties' (Stock image 'gtk-properties')
+'Copy Path To Clipboard'
+  ----
+'Create/_Import' (Stock image 'gtk-new', greyed out, accelerator 'Ctrl+N')
+  ----
+'_Rename...' (Stock image 'gtk-italic', greyed out)
+'Remove...' (Stock image 'gtk-delete', greyed out)
+----------------------------------
+
+'select file' event created with arguments 'readonlyfile'
+
+Changed selection in File Tree with columns: Test2
+-> Approved Files (white,bold)
+->   catalogue.tdat (grey90)
+->   errors.tdat (grey90)
+->   output.tdat (grey90)
+-> Definition Files (white,bold)
+->   environment.tdat.env (grey90)
+->   options.tdat (grey90)
+-> Data Files (white,bold)
+->   (Inherited from parent suites) (white,bold)
+->     readonlyfile (grey90)
 
 Waiting for application event 'file editing operations to complete' to occur.
 
-Changing GUI status to: 'Started "emacs file" in background (from test Test).'
+Changing GUI status to: 'Started "emacs readonlyfile" in background (from test Test2).'
 
 Expected application event 'file editing operations to complete' occurred, proceeding.
 
