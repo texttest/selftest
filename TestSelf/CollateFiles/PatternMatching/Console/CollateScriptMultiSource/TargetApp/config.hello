@@ -1,0 +1,20 @@
+executable:${TEXTTEST_HOME}/partial_time.py
+
+config_module:default
+
+default_interface:console
+
+# get filter files everywhere, can be useful
+home_operating_system:none
+
+discard_file:errors
+discard_file:output
+
+create_catalogues:true
+
+[collate_file]
+time_total:partial*_time
+[end]
+
+[collate_script]
+time_total:${TEXTTEST_HOME}/source/multisource.py
