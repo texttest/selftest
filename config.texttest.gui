@@ -7,8 +7,8 @@ use_case_record_mode:GUI
 
 [run_dependent_text]
 outputdyn2:process ID is{WORD -1}
-targetConfig:{INTERNAL writedir}{REPLACE <test write dir>}
-targetEnv:{INTERNAL writedir}{REPLACE <test write dir>}
+*Config_*:{INTERNAL writedir}{REPLACE <test write dir>}
+*Env_*:{INTERNAL writedir}{REPLACE <test write dir>}
 # PyGTK 2.10 bug, can't be bothered to work round it in the code as it's already fixed
 errors:IA__g_object_remove_toggle_ref: could{LINES 2}
 errors:^$
@@ -89,10 +89,15 @@ usecase_for_targetapp:USECASE_FAKE_REPLAY_SCRIPT
 storytext:STORYTEXT_HOME
 
 [collate_file]
-targetConfig:TargetApp/config.*
-targetEnv:TargetApp/environment*
-targetEnv:TargetApp/*/environment*
-targetOptions:TargetApp/*/options*
+*Config_*:Target*/config.*
+*Config_*:Target*/*/config.*
+*Config_*:Target*/*/*/config.*
+*Env_*:Target*/environment*
+*Env_*:Target*/*/environment*
+*Env_*:Target*/*/*/environment*
+*Options_*:Target*/options.*
+*Options_*:Target*/*/options.*
+*Options_*:Target*/*/*/options.*
 outputdyn:texttesttmp/*/dynamic_run1/output.log
 outputdyn2:texttesttmp/*/dynamic_run2/output.log
 outputdyn3:texttesttmp/*/dynamic_run3/output.log
