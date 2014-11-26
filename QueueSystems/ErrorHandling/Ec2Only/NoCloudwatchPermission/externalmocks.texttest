@@ -1,6 +1,9 @@
 <-SRV:TextTest slave server started on 10.80.18.112:35355
 <-CMD:ssh -q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=30 -x ec2-user@10.80.17.102 mkdir -p '/carm/proj/texttest-tmp/geoff/dynamic_gui.15Oct131432.36209/texttest.ec2cloud/QueueSystems/ErrorHandling/Ec2Only/NoCloudwatchPermission'
 <-CMD:rsync -e "ssh -x -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=30" -av --copy-unsafe-links --delete --exclude-from=/nfs/vm/texttest/geoff/Testing/TextTest/texttestlib/etc/rsync_exclude_patterns /carm/proj/texttest-tmp/geoff/dynamic_gui.15Oct131432.36209/texttest.ec2cloud/QueueSystems/ErrorHandling/Ec2Only/NoCloudwatchPermission/TargetApp ec2-user@10.80.17.102:'/carm/proj/texttest-tmp/geoff/dynamic_gui.15Oct131432.36209/texttest.ec2cloud/QueueSystems/ErrorHandling/Ec2Only/NoCloudwatchPermission'
+->ERR:Amazon is behaving badly!
+->EXC:1
+<-CMD:rsync -e "ssh -x -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=30" -av --copy-unsafe-links --delete --exclude-from=/nfs/vm/texttest/geoff/Testing/TextTest/texttestlib/etc/rsync_exclude_patterns /carm/proj/texttest-tmp/geoff/dynamic_gui.15Oct131432.36209/texttest.ec2cloud/QueueSystems/ErrorHandling/Ec2Only/NoCloudwatchPermission/TargetApp ec2-user@10.80.17.102:'/carm/proj/texttest-tmp/geoff/dynamic_gui.15Oct131432.36209/texttest.ec2cloud/QueueSystems/ErrorHandling/Ec2Only/NoCloudwatchPermission'
 ->OUT:sending incremental file list
 TargetApp/
 TargetApp/busywait.py
