@@ -37,7 +37,7 @@ Button 'Filter' (Stock image 'gtk-find', accelerator 'Ctrl+F', tooltip 'filter t
 Button 'Reset Tab' (tooltip 'Reset all the settings in the current tab to their default values')
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 25May16:41:34.' , Image 'throbber_inactive.png'
+'TextTest started at 01Dec09:35:37.' , Image 'throbber_inactive.png'
 --------------------------------------------------------------------------
 
 Changing GUI status to: 'Reading tests ...'
@@ -52,7 +52,7 @@ Updated : Test Tree with columns: Tests: 0/2 selected
 ->   Basic2 (black/grey90)
 Updated drop-down list in 'Test-file to search' Text entry (set to 'output') (drop-down list containing ['options', '----------', 'errors', 'output'])
 
-Changing GUI status to: 'Reading tests completed at 25May16:41:35.'
+Changing GUI status to: 'Reading tests completed at 01Dec09:35:38.'
 
 Expected application event 'all tests to be read' occurred, proceeding.
 
@@ -103,7 +103,7 @@ Viewing table with 4 rows and 2 columns.
 'Run this version  ' | Text entry
 'Use checkout  ' | Text entry
 'Run on machine  ' | Text entry
-'Times to run  ' (tooltip 'Set this to some number larger than 1 to run the same test multiple times, for example to try to catch indeterminism in the system under test') | Spin button entry (set to '1') (min=1.0, max=1000.0, step=1.0)
+'Times to run  ' (tooltip 'Set this to some number larger than 1 to run the same test multiple times, for example to try to catch indeterminism in the system under test') | Spin button entry (set to '1') (min=1.0, max=10000.0, step=1.0)
 Check button 'Stop after first failure'
 'Use grid:' , Radio button 'Always' (checked) (tooltip 'Submit the tests to LSF') , Radio button 'Never' (tooltip 'Run the tests directly, not using LSF')
 Button '_Run' (Stock image 'gtk-execute', accelerator 'Ctrl+R', tooltip 'Run selected tests')
@@ -115,8 +115,8 @@ Current page changed in Notebook with tabs: Basic , Advanced
 Viewing page 'Advanced'
 .....'Self-diagnostics (internal logging)'......
 Viewing table with 2 rows and 2 columns.
-'Configure self-diagnostics from  ' | Text entry (set to '/home/geoff/.texttest/tmp/dynamic_gui.25May163349.10420/texttest.lsf.gui/QueueSystems/NormalOperation/GUI/StaticGUI/log/logging.debug') (drop-down list containing ['/home/geoff/.texttest/tmp/dynamic_gui.25May163349.10420/texttest.lsf.gui/QueueSystems/NormalOperation/GUI/StaticGUI/log/logging.debug', '/home/geoff/code/texttest/log/logging.debug']) (greyed out)
-'Write self-diagnostics to  ' | Text entry (set to '/home/geoff/.texttest/tmp/dynamic_gui.25May163349.10420/texttest.lsf.gui/QueueSystems/NormalOperation/GUI/StaticGUI/log') (greyed out)
+'Configure self-diagnostics from  ' | Text entry (set to '/carm/proj/texttest-tmp-mc/geoff/dynamic_gui.01Dec153429.39828/texttest.lsf.gui/QueueSystems/NormalOperation/GUI/StaticGUI/log/logging.debug') (drop-down list containing ['/carm/proj/texttest-tmp-mc/geoff/dynamic_gui.01Dec153429.39828/texttest.lsf.gui/QueueSystems/NormalOperation/GUI/StaticGUI/log/logging.debug', '/nfs/vm/texttest/geoff/Testing/TextTest/texttestlib/log/logging.debug']) (greyed out)
+'Write self-diagnostics to  ' | Text entry (set to '/carm/proj/texttest-tmp-mc/geoff/dynamic_gui.01Dec153429.39828/texttest.lsf.gui/QueueSystems/NormalOperation/GUI/StaticGUI/log') (greyed out)
 Check button 'Enable self-diagnostics'
 Check button 'Enable self-diagnostics in slave processes' (greyed out)
 .....'Grid'......
