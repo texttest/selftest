@@ -28,5 +28,8 @@ SlowReadBeyondCapacity
 # If the slave tells us to rerun a test, we should do so
 RerunTest
 
+# If the slave tells us to rerun a test, we should do so, unless we've already rerun too many times
+RespectRerunLimit
+
 # If the slave tells us to rerun a test, and we can't reuse somewhere, we should resubmit the job
 ResubmitTest
