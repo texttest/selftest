@@ -1,0 +1,331 @@
+
+---------- Window 'HELLO.2.4 tests (started at 03Dec09:17:05) - TextTest dynamic GUI' ----------
+Focus widget is 'Test Tree'
+
+Menu Bar : '_File' (+) , '_View' (+) , '_Actions' (+) , '_Help' (+)
+
+Tool Bar :
+  _Quit (Stock image 'gtk-quit', accelerator 'Ctrl+Q', tooltip 'Quit')
+  _Kill (Stock image 'gtk-stop', greyed out, accelerator 'Ctrl+Delete', tooltip 'Kill selected tests')
+  _Approve (Stock image 'gtk-apply', greyed out, accelerator 'Ctrl+S', tooltip 'Approve results for selected tests. This will save the files produced by this run as the new approved files which future runs will be compared with. Used to be called Save.')
+  Progress bar set to fraction 0.0, text 'All 0 tests completed at 03Dec09:17:06'
+...........
+
+Showing Test Tree with columns: Tests: All 0 selected , Details
+
+------------------------------ (vertical pane separator)
+...........
+
+Showing Notebook with tabs: Status , Selection , Run Info
+Viewing page 'Status'
+
+Showing Test Status View with columns: Status , Number , Visible
+'Shortcuts:' , Button '_New'
+...........
+'TextTest started at 03Dec09:17:05.' , Image 'throbber_inactive.png'
+------------------------------------------------------------------------------------------------
+
+Progress bar set to fraction 0.0, text '0 of 1 tests completed'
+
+Column titles changed in Test Tree with columns: Tests: 0/1 selected, all hidden , Details
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white,bold) | 1 (white,bold) | Check box
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white) | 0 (white) | Check box
+-> Initial filter (LightGoldenrod1,bold) | 1 (LightGoldenrod1,bold) | Check box
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white) | 0 (white) | Check box
+-> Initial filter (white) | 0 (white) | Check box
+-> Running (LightGoldenrod1,bold) | 1 (LightGoldenrod1,bold) | Check box
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white) | 0 (white) | Check box
+-> Initial filter (white) | 0 (white) | Check box
+-> Running (white) | 0 (white) | Check box
+-> Final filter (LightGoldenrod1,bold) | 1 (LightGoldenrod1,bold) | Check box
+
+Progress bar set to fraction 1.0, text 'All 1 tests completed at 03Dec09:17:06'
+
+Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
+-> TargetApp (hello.2.4) (black/white,bold) | (white)
+->   Test (black/salmon) | output different (salmon)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white) | 0 (white) | Check box
+-> Initial filter (white) | 0 (white) | Check box
+-> Running (white) | 0 (white) | Check box
+-> Final filter (white) | 0 (white) | Check box
+-> Failed (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->   Differences (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->     output different (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+
+No longer greyed out : _Approve
+
+Changed selection in Test Tree with columns: Tests: All 1 selected, none hidden , Details
+-> TargetApp (hello.2.4) (black/white,bold) | (white)
+->   Test (black/salmon) | output different (salmon)   ***
+
+Current page changed in Notebook with tabs: Test , Status , Selection , Run Info
+Viewing page 'Test'
+...........
+
+Showing File Tree with columns: Test , Details
+-> Comparison Files (bold)
+->   errors.hello (DarkSeaGreen2) | (DarkSeaGreen2)
+->   output.hello (salmon) | (salmon)
+
+------------------------------ (horizontal pane separator)
+...........
+
+========== Text Info ==========
+Test FAILED :
+---------- Differences in output ----------
+1c1
+< Hello
+---
+> Hello World!
+===============================
+
+Expected application event 'completion of test actions' occurred, proceeding.
+
+'view actions for test' event created with arguments 'Test'
+
+---------- Popup Window ----------
+'Enter Failure Information' (Stock image 'gtk-info', accelerator 'Ctrl+I')
+'Find Failure Information' (Stock image 'gtk-find', accelerator 'Ctrl+F')
+  ----
+'_Approve' (Stock image 'gtk-apply', accelerator 'Ctrl+S')
+'Approve _As...' (Stock image 'gtk-apply', accelerator 'Ctrl+Alt+S')
+  ----
+'_Kill' (Stock image 'gtk-stop', greyed out, accelerator 'Ctrl+Delete')
+  ----
+'Generate test summary'
+  ----
+'_Mark' (accelerator 'Shift+Ctrl+M')
+'_Unmark' (greyed out, accelerator 'Shift+Ctrl+U')
+'Load from Rerun' (greyed out)
+  ----
+'_Rerun' (Stock image 'gtk-execute', accelerator 'Ctrl+R')
+'Recompute Status' (Stock image 'gtk-refresh', accelerator 'F5')
+'Re_load tests...' (Stock image 'gtk-connect')
+  ----
+'Split result files' (Stock image 'gtk-convert', greyed out)
+----------------------------------
+
+'rerun selected tests' event created with arguments ''
+
+---------- Dialog 'Rerun selected tests' ----------
+Default widget is 'gtk-ok'
+
+Showing Notebook with tabs: Basic , Advanced
+Viewing page 'Basic'
+'Run this version:'
+Text entry (set to '2.4')
+'Use checkout:'
+Text entry
+'Run on machine:'
+Text entry (set to 'localhost')
+'Times to run:' (tooltip 'Set this to some number larger than 1 to run the same test multiple times, for example to try to catch indeterminism in the system under test')
+Spin button entry (set to '1') (min=1.0, max=10000.0, step=1.0)
+Check button 'Stop after first failure'
+Check button 'Mark test as rerun in current window' (checked) (tooltip 'Test will be automatically marked as having a newer result elsewhere.It will also be possible to import this result here in future.')
+Stock Button 'gtk-ok' , Stock Button 'gtk-cancel'
+---------------------------------------------------
+
+'enter run this version =' event created with arguments '2'
+Edited 'Run this version' Text entry (set to '2') (completions ['2.4'])
+
+'view sub-options for running :' event created with arguments 'Advanced'
+
+Current page changed in Notebook with tabs: Basic , Advanced
+Viewing page 'Advanced'
+.....'Self-diagnostics (internal logging)'......
+'Configure self-diagnostics from:'
+Text entry (set to '/carm/proj/texttest-tmp-mc/geoff/texttest.gui.03Dec091703.20648/texttest.gui/TestSelf/TestSelection/GUI/Creation/Rerun/LoadingBack/ChangeVersion/log/logging.debug') (drop-down list containing ['/carm/proj/texttest-tmp-mc/geoff/texttest.gui.03Dec091703.20648/texttest.gui/TestSelf/TestSelection/GUI/Creation/Rerun/LoadingBack/ChangeVersion/log/logging.debug', '/nfs/vm/texttest/geoff/Testing/TextTest/texttestlib/log/logging.debug']) (greyed out)
+'Write self-diagnostics to:'
+Text entry (set to '/carm/proj/texttest-tmp-mc/geoff/texttest.gui.03Dec091703.20648/texttest.gui/TestSelf/TestSelection/GUI/Creation/Rerun/LoadingBack/ChangeVersion/log') (greyed out)
+Check button 'Enable self-diagnostics'
+.....'Miscellaneous'......
+'Run batch mode session:'
+Text entry
+'Name this run:'
+Text entry
+'Ignore configuration files:'
+Text entry (set to 'site') (drop-down list containing ['', 'site', 'personal', 'all'])
+Check button 'Keep temporary write-directories'
+Check button 'Ignore all run-dependent text filtering'
+.....'Temporary Settings'......
+'File Type:'
+Text entry (set to 'environment') (drop-down list containing ['config', 'environment', 'options', 'interpreter_options'])
+'Contents:'
+...........
+
+========== Contents ==========
+
+==============================
+
+'check keep temporary write-directories' event created with arguments ''
+Toggled Check button 'Keep temporary write-directories' (checked)
+
+'perform rerun' event created with arguments ''
+
+Greyed out : _Approve
+
+Updated : Test Tree with columns: Tests: All 1 selected, none hidden , Details
+-> TargetApp (hello.2.4) (black/white,bold) | (white)
+->   Test (black/lightblue) | Rerun 1 (lightblue)   ***
+
+Updated : File Tree with columns: Test , Details
+-> Comparison Files (bold)
+->   errors.hello (DarkSeaGreen2) | (DarkSeaGreen2)
+->   output.hello (salmon) | (salmon)
+
+========== Text Info ==========
+Test was marked by the user :
+Test is being rerun in another window, numbered 1
+
+ORIGINAL STATE:
+Test FAILED :
+ ---------- Differences in output ----------
+1c1
+< Hello
+---
+> Hello World!
+===============================
+
+Waiting for application event 'rerun GUI to be closed' to occur.
+
+Changing GUI status to: 'Started test Test at 03Dec09:17:06.'
+
+---------- Window 'HELLO.2 tests (rerun 1 from 03Dec09:17:05) - TextTest dynamic GUI' ----------
+Focus widget is 'Test Tree'
+
+Menu Bar : '_File' (+) , '_View' (+) , '_Actions' (+) , '_Help' (+)
+
+Tool Bar :
+  _Quit (Stock image 'gtk-quit', accelerator 'Ctrl+Q', tooltip 'Quit')
+  _Kill (Stock image 'gtk-stop', greyed out, accelerator 'Ctrl+Delete', tooltip 'Kill selected tests')
+  _Approve (Stock image 'gtk-apply', greyed out, accelerator 'Ctrl+S', tooltip 'Approve results for selected tests. This will save the files produced by this run as the new approved files which future runs will be compared with. Used to be called Save.')
+  Progress bar set to fraction 0.0, text '0 of 1 tests completed'
+...........
+
+Showing Test Tree with columns: Tests: 0/1 selected, all hidden , Details
+
+------------------------------ (vertical pane separator)
+...........
+
+Showing Notebook with tabs: Status , Selection , Run Info
+Viewing page 'Status'
+
+Showing Test Status View with columns: Status , Number , Visible
+-> Not started (white,bold) | 1 (white,bold) | Check box
+'Shortcuts:' , Button '_New'
+...........
+'TextTest started at 03Dec09:17:07.' , Image 'throbber_inactive.png'
+------------------------------------------------------------------------------------------------
+
+Column titles changed in Test Tree with columns: Tests: 0/1 selected, all hidden , Details
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white) | 0 (white) | Check box
+-> Initial filter (LightGoldenrod1,bold) | 1 (LightGoldenrod1,bold) | Check box
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white) | 0 (white) | Check box
+-> Initial filter (white) | 0 (white) | Check box
+-> Running (LightGoldenrod1,bold) | 1 (LightGoldenrod1,bold) | Check box
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white) | 0 (white) | Check box
+-> Initial filter (white) | 0 (white) | Check box
+-> Running (white) | 0 (white) | Check box
+-> Final filter (LightGoldenrod1,bold) | 1 (LightGoldenrod1,bold) | Check box
+
+Progress bar set to fraction 1.0, text 'All 1 tests completed at 03Dec09:17:08'
+
+Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
+-> TargetApp (hello.2) (black/white,bold) | (white)
+->   Test (black/salmon) | output different (salmon)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white) | 0 (white) | Check box
+-> Initial filter (white) | 0 (white) | Check box
+-> Running (white) | 0 (white) | Check box
+-> Final filter (white) | 0 (white) | Check box
+-> Failed (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->   Differences (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->     output different (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+
+No longer greyed out : _Approve
+
+Changed selection in Test Tree with columns: Tests: All 1 selected, none hidden , Details
+-> TargetApp (hello.2) (black/white,bold) | (white)
+->   Test (black/salmon) | output different (salmon)   ***
+
+Current page changed in Notebook with tabs: Test , Status , Selection , Run Info
+Viewing page 'Test'
+...........
+
+Showing File Tree with columns: Test , Details
+-> Comparison Files (bold)
+->   errors.hello (DarkSeaGreen2) | (DarkSeaGreen2)
+->   output.hello (salmon) | (salmon)
+
+------------------------------ (horizontal pane separator)
+...........
+
+========== Text Info ==========
+Test FAILED :
+---------- Differences in output ----------
+1c1
+< Hello
+---
+> Hello World!
+===============================
+
+Expected application event 'completion of test actions' occurred, proceeding.
+
+'quit' event created with arguments ''
+
+Expected application event 'rerun GUI to be closed' occurred, proceeding.
+
+'view actions for test' event created with arguments 'Test'
+
+---------- Popup Window ----------
+'Enter Failure Information' (Stock image 'gtk-info', accelerator 'Ctrl+I')
+'Find Failure Information' (Stock image 'gtk-find', accelerator 'Ctrl+F')
+  ----
+'_Approve' (Stock image 'gtk-apply', greyed out, accelerator 'Ctrl+S')
+'Approve _As...' (Stock image 'gtk-apply', greyed out, accelerator 'Ctrl+Alt+S')
+  ----
+'_Kill' (Stock image 'gtk-stop', greyed out, accelerator 'Ctrl+Delete')
+  ----
+'Generate test summary'
+  ----
+'_Mark' (accelerator 'Shift+Ctrl+M')
+'_Unmark' (accelerator 'Shift+Ctrl+U')
+'Load from Rerun'
+  ----
+'_Rerun' (Stock image 'gtk-execute', accelerator 'Ctrl+R')
+'Recompute Status' (Stock image 'gtk-refresh', accelerator 'F5')
+'Re_load tests...' (Stock image 'gtk-connect')
+  ----
+'Split result files' (Stock image 'gtk-convert', greyed out)
+----------------------------------
+
+'load from rerun' event created with arguments ''
+
+---------- Dialog 'TextTest Error' ----------
+Default widget is 'gtk-ok'
+Stock image 'gtk-dialog-error' , ========== GtkTextView ==========
+Cannot load data for rerun, version '2.4' could not be found, only version(s) '2'
+=================================
+Stock Button 'gtk-ok'
+---------------------------------------------
+
+'agree to texttest message' event created with arguments ''
+
+'quit' event created with arguments ''
