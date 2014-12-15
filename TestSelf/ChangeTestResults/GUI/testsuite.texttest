@@ -50,10 +50,16 @@ SavePartialWithVersion
 # We shouldn't let a new test be saved with a version ID, that confuses things and is nearly always unintentional
 SaveNewTestVersioned
 
-# Check that if we view a file and then save we save the whole test
+# Check that if we view a file and then save we save the whole test.
+# Note this behaviour is controversial, see TTT-659 and TTT-2735.
+# Note also that this test doesn't really test it very well, as
+# double-clicking doesn't imply single-clicking first in StoryText...
+# 
 ViewAndSave
 
-# Check that if we view a file via the menu and then save we save the whole test
+# Check that if we view a file via the menu and then save we save only the selected file.
+# We used to save the whole test. Behaviour introduced in TTT-659 and removed again in TTT-2735.
+# 
 ViewFromMenuAndSave
 
 # Test that unsaveable versions don't end up as default

@@ -1,5 +1,5 @@
 
----------- Window 'HELLO tests (started at 07Oct09:55:29) - TextTest dynamic GUI' ----------
+---------- Window 'HELLO tests (started at 15Dec15:11:10) - TextTest dynamic GUI' ----------
 Focus widget is 'Test Tree'
 
 Menu Bar : '_File' (+) , '_View' (+) , '_Actions' (+) , '_Help' (+)
@@ -8,7 +8,7 @@ Tool Bar :
   _Quit (Stock image 'gtk-quit', accelerator 'Ctrl+Q', tooltip 'Quit')
   _Kill (Stock image 'gtk-stop', greyed out, accelerator 'Ctrl+Delete', tooltip 'Kill selected tests')
   _Approve (Stock image 'gtk-apply', greyed out, accelerator 'Ctrl+S', tooltip 'Approve results for selected tests. This will save the files produced by this run as the new approved files which future runs will be compared with. Used to be called Save.')
-  Progress bar set to fraction 0.0, text 'All 0 tests completed at 07Oct09:55:29'
+  Progress bar set to fraction 0.0, text 'All 0 tests completed at 15Dec15:11:10'
 ...........
 
 Showing Test Tree with columns: Tests: All 0 selected , Details
@@ -22,7 +22,7 @@ Viewing page 'Status'
 Showing Test Status View with columns: Status , Number , Visible
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 07Oct09:55:29.' , Image 'throbber_inactive.png'
+'TextTest started at 15Dec15:11:10.' , Image 'throbber_inactive.png'
 --------------------------------------------------------------------------------------------
 
 Progress bar set to fraction 0.0, text '0 of 1 tests completed'
@@ -47,7 +47,7 @@ Updated : Test Status View with columns: Status , Number , Visible
 -> Running (white) | 0 (white) | Check box
 -> Final filter (LightGoldenrod1,bold) | 1 (LightGoldenrod1,bold) | Check box
 
-Progress bar set to fraction 1.0, text 'All 1 tests completed at 07Oct09:55:29'
+Progress bar set to fraction 1.0, text 'All 1 tests completed at 15Dec15:11:11'
 
 Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
 -> TargetApp (hello) (black/white,bold) | (white)
@@ -113,21 +113,6 @@ Waiting for application event 'file editing operations to complete' to occur.
 
 Changing GUI status to: 'Started "emacs output.hello" in background (from test BothDiff).'
 
-Changed selection in File Tree with columns: BothDiff , Details
--> Comparison Files (bold)
-->   errors.hello (salmon) | (salmon)
-->   output.hello (salmon) | (salmon)
-
-========== Text Info ==========
-Test FAILED :
----------- Differences in errors ----------
-0a1
-> Error text
----------- Differences in output ----------
-0a1
-> Hello World!
-===============================
-
 Expected application event 'file editing operations to complete' occurred, proceeding.
 
 'approve results for selected tests' event created with arguments ''
@@ -136,9 +121,35 @@ Waiting for application event 'completion of background actions' to occur.
 
 Changing GUI status to: 'Approving 1 tests ...'
 
-Changing GUI status to: 'Approving HELLO test-case BothDiff : errors, existing version'
-
 Changing GUI status to: 'Approving HELLO test-case BothDiff : output, existing version'
+
+Updated : Test Tree with columns: Tests: All 1 selected, none hidden , Details
+-> TargetApp (hello) (black/white,bold) | (white)
+->   BothDiff (black/salmon) | errors different (salmon)   ***
+
+Updated : File Tree with columns: BothDiff , Details
+-> Comparison Files (bold)
+->   errors.hello (salmon) | (salmon)
+->   output.hello (DarkSeaGreen2) | (DarkSeaGreen2)
+
+========== Text Info ==========
+Test FAILED :
+---------- Differences in errors ----------
+0a1
+> Error text
+===============================
+
+Changing GUI status to: 'Approved 1 tests.'
+
+Expected application event 'completion of background actions' occurred, proceeding.
+
+'approve results for selected tests' event created with arguments ''
+
+Waiting for application event 'completion of background actions' to occur.
+
+Changing GUI status to: 'Approving 1 tests ...'
+
+Changing GUI status to: 'Approving HELLO test-case BothDiff : errors, existing version'
 
 Updated : Test Tree with columns: Tests: 0/1 selected, all hidden , Details
 
