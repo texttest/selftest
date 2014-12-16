@@ -1,0 +1,40 @@
+<-PYT:import smtplib
+<-PYT:smtplib.SMTP()
+->RET:Instance('SMTP', 'smtp1')
+<-PYT:smtp1.connect('localhost')
+->RET:(220, 'crownpoint.got.jeppesensystems.com ESMTP Sendmail 8.14.4/8.14.4; Tue, 16 Dec 2014 10:42:05 +0100')
+<-PYT:smtp1.sendmail('geoff@localhost', ['tom', 'dick', 'harry'], '''From: geoff@localhost
+To: tom,dick,harry
+Subject: 16Dec2014 HELLO : 2 tests : 1 FAILED
+
+Summary of all Unsuccessful tests follows...
+---------------------------------------------------------------------------------
+The following tests FAILED : 
+In HELLO test-suite TargetApp:
+  - HELLO test-case Test  : output different
+
+
+Details of all Unsuccessful tests follows...
+---------------------------------------------------------------------------------
+
+Detailed information for the tests that FAILED follows...
+--------------------------------------------------------
+TEST FAILED on centreville.carmen.se : HELLO test-case Test (under Test)
+---------- Differences in output ----------
+1c1
+< Hello
+---
+> Hello World!
+
+Summary of all Successful tests follows...
+---------------------------------------------------------------------------------
+The following tests succeeded : 
+In HELLO test-suite TargetApp:
+  In HELLO test-suite Suite:
+    - HELLO test-case Test
+
+
+''')
+->RET:{}
+<-PYT:smtp1.quit()
+->RET:(221, '2.0.0 crownpoint.got.jeppesensystems.com closing connection')
