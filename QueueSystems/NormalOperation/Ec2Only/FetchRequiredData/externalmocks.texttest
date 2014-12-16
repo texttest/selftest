@@ -52,6 +52,14 @@ ec2-user@10.80.17.78
 sleep.reqdata:Basic
 ec2-user@10.80.17.78
 /some/path/external_data
+->CLI:2879.GET_FILES
+sleep.reqdata:Basic2
+ec2-user@10.80.17.78
+/some/path/external_data
+->CLI:2879.GET_FILES
+sleep.reqdata:Basic2
+ec2-user@10.80.17.78
+/some/path/external_data
 <-CMD:cd /nfs/vm/texttest-tmp/geoff/texttest.ec2cloud.17Oct100547.1713/texttest.ec2cloud/QueueSystems/NormalOperation/Ec2Only/FetchRequiredData/texttesttmp/console.reqdata.15Oct112913.1728/slavelogs; ssh -q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=30 -x -A ec2-user@10.80.17.78 STANDARD=/carm/proj/texttest-tmp/geoff/texttest.ec2cloud.17Oct100547.1713/texttest.ec2cloud/QueueSystems/NormalOperation/Ec2Only/FetchRequiredData/standard EXTERNAL_DATA=/some/path/external_data texttest -d /carm/proj/texttest-tmp/geoff/texttest.ec2cloud.17Oct100547.1713/texttest.ec2cloud/QueueSystems/NormalOperation/Ec2Only/FetchRequiredData/TargetApp -a sleep.reqdata -l -tp Basic -slave /carm/proj/texttest-tmp/geoff/texttest.ec2cloud.17Oct100547.1713/texttest.ec2cloud/QueueSystems/NormalOperation/Ec2Only/FetchRequiredData/texttesttmp/console.reqdata.15Oct112913.1728 -servaddr 10.67.6.111:35389
 <-CMD:rsync -e "ssh -x -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=30" -av --copy-unsafe-links --delete --exclude-from=/nfs/vm/texttest/geoff/Testing/TextTest/texttestlib/etc/rsync_exclude_patterns /some/path/external_data ec2-user@10.80.17.78:'/some/path'
 ->OUT:sending incremental file list
