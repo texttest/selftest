@@ -33,3 +33,6 @@ RespectRerunLimit
 
 # If the slave tells us to rerun a test, and we can't reuse somewhere, we should resubmit the job
 ResubmitTest
+
+# Make sure we terminate if we fill capacity with jobs that never return while in batch mode... in the GUI we prioritise speed of response and let the user deal with the problem.
+BatchAvoidDeadlock

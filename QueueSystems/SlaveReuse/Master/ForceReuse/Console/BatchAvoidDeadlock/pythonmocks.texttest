@@ -1,0 +1,39 @@
+<-PYT:import smtplib
+<-PYT:smtplib.SMTP()
+->RET:Instance('SMTP', 'smtp1')
+<-PYT:smtp1.connect('localhost')
+->RET:(220, 'crownpoint.got.jeppesensystems.com ESMTP Sendmail 8.14.4/8.14.4; Wed, 17 Dec 2014 15:26:33 +0100')
+<-PYT:smtp1.sendmail('geoff@localhost', ['tom', 'dick', 'harry'], '''From: geoff@localhost
+To: tom,dick,harry
+Subject: 17Dec2014 HELLO : 2 tests : 2 unrunnable
+
+Summary of all Unsuccessful tests follows...
+---------------------------------------------------------------------------------
+The following tests could not be run : 
+In HELLO test-suite TargetApp:
+  - HELLO test-case Test  : SGE job exited
+  In HELLO test-suite Suite:
+    - HELLO test-case Test : SGE job exited
+
+
+Details of all Unsuccessful tests follows...
+---------------------------------------------------------------------------------
+
+Detailed information for the tests that could not be run follows...
+--------------------------------------------------------
+TEST could not be run : HELLO test-case Test (under Test)
+SGE job exited
+Job ID was 28856
+---------- Full accounting info from SGE ----------
+Some account info
+--------------------------------------------------------
+TEST could not be run : HELLO test-case Test (under Suite/Test)
+SGE job exited
+Job ID was 28857
+---------- Full accounting info from SGE ----------
+Other account info
+
+''')
+->RET:{}
+<-PYT:smtp1.quit()
+->RET:(221, '2.0.0 crownpoint.got.jeppesensystems.com closing connection')
