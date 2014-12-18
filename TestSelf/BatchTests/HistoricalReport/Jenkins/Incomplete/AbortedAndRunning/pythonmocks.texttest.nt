@@ -1,3 +1,9 @@
+<-PYT:os.readlink('jenkinsdata/jobs/test/builds/4')
+->RET:'Faked timestamp 4'
+<-PYT:os.readlink('jenkinsdata/jobs/test/builds/5')
+->RET:'Faked timestamp 5'
+<-PYT:os.readlink('jenkinsdata/jobs/test/builds/6')
+->RET:'Faked timestamp 6'
 <-PYT:import matplotlib
 <-PYT:matplotlib.__version__
 ->RET:'0.99.3'
@@ -44,7 +50,13 @@
 <-PYT:legend1.get_frame()
 ->RET:Instance('FancyBboxPatch(Patch, Artist, object)', 'fancybboxpatch1')
 <-PYT:fancybboxpatch1.set_alpha(0.5)
-<-PYT:figure1.savefig('E:/nightjob/tmp/texttest.windows.08Oct013240.3752/texttest.windows/TestSelf/BatchTests/HistoricalReport/Jenkins/Incomplete/AbortedAndRunning/report/hello/images/test_normal.png', dpi=100)
+<-PYT:figure1.savefig('/nfs/vm/texttest-tmp/geoff/texttest.10Sep122350.78854/texttest/TestSelf/BatchTests/HistoricalReport/Jenkins/Incomplete/AbortedAndRunning/report/hello/images/test_normal.png', dpi=100)
+<-PYT:os.readlink('jenkinsdata/jobs/test/builds/4')
+->RET:'Faked timestamp 4'
+<-PYT:os.readlink('jenkinsdata/jobs/test/builds/5')
+->RET:'Faked timestamp 5'
+<-PYT:os.readlink('jenkinsdata/jobs/test/builds/6')
+->RET:'Faked timestamp 6'
 <-PYT:pylab.clf()
 <-PYT:pylab.figure(1)
 ->RET:Instance('Figure(Artist, object)', 'figure1')
@@ -86,4 +98,4 @@
 <-PYT:legend2.get_frame()
 ->RET:Instance('FancyBboxPatch(Patch, Artist, object)', 'fancybboxpatch2')
 <-PYT:fancybboxpatch2.set_alpha(0.5)
-<-PYT:figure1.savefig('E:/nightjob/tmp/texttest.windows.08Oct013240.3752/texttest.windows/TestSelf/BatchTests/HistoricalReport/Jenkins/Incomplete/AbortedAndRunning/report/hello/images/test_normal_all_Jan2006.png', dpi=100)
+<-PYT:figure1.savefig('/nfs/vm/texttest-tmp/geoff/texttest.10Sep122350.78854/texttest/TestSelf/BatchTests/HistoricalReport/Jenkins/Incomplete/AbortedAndRunning/report/hello/images/test_normal_all_Jan2006.png', dpi=100)
