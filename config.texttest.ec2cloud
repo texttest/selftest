@@ -2,6 +2,7 @@ base_version:localqs
 
 [run_dependent_text]
 externalmocks:(ssh.*DISPLAY=)[^ ]*{REPLACE \1<display>}
+externalmocks:(-home )[^ ]*{REPLACE \1<homedir>} 
 
 [unordered_text]
 externalmocks:-slave{[->}^(<-|->CLI)
