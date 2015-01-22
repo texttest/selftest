@@ -1,7 +1,7 @@
-<-SRV:TextTest slave server started on 10.80.17.109:43979
-<-CMD:ssh -q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=30 -x ec2-user@10.80.17.109 mkdir -p '/carm/proj/texttest-tmp/geoff/dynamic_gui.15Oct131432.36209/texttest.ec2cloud/QueueSystems/NormalOperation/Console/Batch2Tests'
-<-CMD:ssh -q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=30 -x ec2-user@10.80.17.102 mkdir -p '/carm/proj/texttest-tmp/geoff/dynamic_gui.15Oct131432.36209/texttest.ec2cloud/QueueSystems/NormalOperation/Console/Batch2Tests'
-<-CMD:rsync -e "ssh -x -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=30" -av --copy-unsafe-links --delete --exclude-from=/nfs/vm/texttest/geoff/Testing/TextTest/texttestlib/etc/rsync_exclude_patterns /carm/proj/texttest-tmp/geoff/dynamic_gui.15Oct131432.36209/texttest.ec2cloud/QueueSystems/NormalOperation/Console/Batch2Tests/TargetApp ec2-user@10.80.17.109:'/carm/proj/texttest-tmp/geoff/dynamic_gui.15Oct131432.36209/texttest.ec2cloud/QueueSystems/NormalOperation/Console/Batch2Tests'
+<-SRV:TextTest slave server started on 10.67.6.156:41392
+<-CMD:ssh -q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=30 -x ec2-user@10.80.17.102 mkdir -p '/carm/proj/texttest-tmp-mc/geoff/texttest.ec2cloud.1_from_22Jan164503.110496/texttest.ec2cloud/QueueSystems/NormalOperation/Console/Batch2Tests'
+<-CMD:ssh -q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=30 -x ec2-user@10.80.17.109 mkdir -p '/carm/proj/texttest-tmp-mc/geoff/texttest.ec2cloud.1_from_22Jan164503.110496/texttest.ec2cloud/QueueSystems/NormalOperation/Console/Batch2Tests'
+<-CMD:rsync -e "ssh -x -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=30" -av --copy-unsafe-links --delete --exclude-from=/nfs/vm/texttest/geoff/Testing/TextTest/texttestlib/etc/rsync_exclude_patterns /carm/proj/texttest-tmp-mc/geoff/texttest.ec2cloud.1_from_22Jan164503.110496/texttest.ec2cloud/QueueSystems/NormalOperation/Console/Batch2Tests/TargetApp ec2-user@10.80.17.109:'/carm/proj/texttest-tmp-mc/geoff/texttest.ec2cloud.1_from_22Jan164503.110496/texttest.ec2cloud/QueueSystems/NormalOperation/Console/Batch2Tests'
 ->OUT:sending incremental file list
 TargetApp/
 TargetApp/busywait.py
@@ -43,7 +43,7 @@ TargetApp/Basic2/options.sleep
 
 sent 5603 bytes  received 655 bytes  4172.00 bytes/sec
 total size is 3297  speedup is 0.53
-<-CMD:rsync -e "ssh -x -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=30" -av --copy-unsafe-links --delete --exclude-from=/nfs/vm/texttest/geoff/Testing/TextTest/texttestlib/etc/rsync_exclude_patterns /carm/proj/texttest-tmp/geoff/dynamic_gui.15Oct131432.36209/texttest.ec2cloud/QueueSystems/NormalOperation/Console/Batch2Tests/TargetApp ec2-user@10.80.17.102:'/carm/proj/texttest-tmp/geoff/dynamic_gui.15Oct131432.36209/texttest.ec2cloud/QueueSystems/NormalOperation/Console/Batch2Tests'
+<-CMD:rsync -e "ssh -x -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=30" -av --copy-unsafe-links --delete --exclude-from=/nfs/vm/texttest/geoff/Testing/TextTest/texttestlib/etc/rsync_exclude_patterns /carm/proj/texttest-tmp-mc/geoff/texttest.ec2cloud.1_from_22Jan164503.110496/texttest.ec2cloud/QueueSystems/NormalOperation/Console/Batch2Tests/TargetApp ec2-user@10.80.17.102:'/carm/proj/texttest-tmp-mc/geoff/texttest.ec2cloud.1_from_22Jan164503.110496/texttest.ec2cloud/QueueSystems/NormalOperation/Console/Batch2Tests'
 ->OUT:sending incremental file list
 TargetApp/
 TargetApp/busywait.py
@@ -85,7 +85,7 @@ TargetApp/Basic2/options.sleep
 
 sent 5603 bytes  received 655 bytes  4172.00 bytes/sec
 total size is 3297  speedup is 0.53
-<-CMD:cd /carm/proj/texttest-tmp/geoff/dynamic_gui.15Oct131432.36209/texttest.ec2cloud/QueueSystems/NormalOperation/Console/Batch2Tests/texttesttmp/local.11Sep171014.1790/slavelogs; ssh -q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=30 -x -A ec2-user@10.80.17.109 STANDARD=/carm/proj/texttest-tmp/geoff/dynamic_gui.15Oct131432.36209/texttest.ec2cloud/QueueSystems/NormalOperation/Console/Batch2Tests/standard texttest -d /carm/proj/texttest-tmp/geoff/dynamic_gui.15Oct131432.36209/texttest.ec2cloud/QueueSystems/NormalOperation/Console/Batch2Tests/TargetApp -a sleep -l -tp Basic2 -slave /carm/proj/texttest-tmp/geoff/dynamic_gui.15Oct131432.36209/texttest.ec2cloud/QueueSystems/NormalOperation/Console/Batch2Tests/texttesttmp/local.11Sep171014.1790 -servaddr 127.0.0.1:46168 -b local
+<-CMD:cd /nfs/vm/texttest-tmp-mc/geoff/texttest.ec2cloud.1_from_22Jan164503.110496/texttest.ec2cloud/QueueSystems/NormalOperation/Console/Batch2Tests/texttesttmp/local.11Sep171014.110501/slavelogs; ssh -q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=30 -x -A ec2-user@10.80.17.109 STANDARD=/carm/proj/texttest-tmp-mc/geoff/texttest.ec2cloud.1_from_22Jan164503.110496/texttest.ec2cloud/QueueSystems/NormalOperation/Console/Batch2Tests/standard texttest -home /users/geoff -d /carm/proj/texttest-tmp-mc/geoff/texttest.ec2cloud.1_from_22Jan164503.110496/texttest.ec2cloud/QueueSystems/NormalOperation/Console/Batch2Tests/TargetApp -a sleep -l -tp Basic2 -slave /carm/proj/texttest-tmp-mc/geoff/texttest.ec2cloud.1_from_22Jan164503.110496/texttest.ec2cloud/QueueSystems/NormalOperation/Console/Batch2Tests/texttesttmp/local.11Sep171014.110501 -servaddr 10.67.6.156:49001 -b local
 ->OUT:2014-08-07 09:02:21,535 - Using Application SLEEP
 2014-08-07 09:02:21,556 - Running SLEEP test-suite TargetApp
 2014-08-07 09:02:21,557 -   Running SLEEP test-case Basic2
@@ -507,7 +507,7 @@ p62
 g24
 ag47
 asb.
-<-CMD:cd /carm/proj/texttest-tmp/geoff/dynamic_gui.15Oct131432.36209/texttest.ec2cloud/QueueSystems/NormalOperation/Console/Batch2Tests/texttesttmp/local.11Sep171014.1790/slavelogs; ssh -q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=30 -x -A ec2-user@10.80.17.102 STANDARD=/carm/proj/texttest-tmp/geoff/dynamic_gui.15Oct131432.36209/texttest.ec2cloud/QueueSystems/NormalOperation/Console/Batch2Tests/standard texttest -d /carm/proj/texttest-tmp/geoff/dynamic_gui.15Oct131432.36209/texttest.ec2cloud/QueueSystems/NormalOperation/Console/Batch2Tests/TargetApp -a sleep -l -tp Basic -slave /carm/proj/texttest-tmp/geoff/dynamic_gui.15Oct131432.36209/texttest.ec2cloud/QueueSystems/NormalOperation/Console/Batch2Tests/texttesttmp/local.11Sep171014.1790 -servaddr 127.0.0.1:46168 -b local
+<-CMD:cd /nfs/vm/texttest-tmp-mc/geoff/texttest.ec2cloud.1_from_22Jan164503.110496/texttest.ec2cloud/QueueSystems/NormalOperation/Console/Batch2Tests/texttesttmp/local.11Sep171014.110501/slavelogs; ssh -q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=30 -x -A ec2-user@10.80.17.102 STANDARD=/carm/proj/texttest-tmp-mc/geoff/texttest.ec2cloud.1_from_22Jan164503.110496/texttest.ec2cloud/QueueSystems/NormalOperation/Console/Batch2Tests/standard texttest -home /users/geoff -d /carm/proj/texttest-tmp-mc/geoff/texttest.ec2cloud.1_from_22Jan164503.110496/texttest.ec2cloud/QueueSystems/NormalOperation/Console/Batch2Tests/TargetApp -a sleep -l -tp Basic -slave /carm/proj/texttest-tmp-mc/geoff/texttest.ec2cloud.1_from_22Jan164503.110496/texttest.ec2cloud/QueueSystems/NormalOperation/Console/Batch2Tests/texttesttmp/local.11Sep171014.110501 -servaddr 10.67.6.156:49001 -b local
 ->OUT:2014-08-07 09:02:21,276 - Using Application SLEEP
 2014-08-07 09:02:21,297 - Running SLEEP test-suite TargetApp
 2014-08-07 09:02:21,298 -   Running SLEEP test-case Basic
