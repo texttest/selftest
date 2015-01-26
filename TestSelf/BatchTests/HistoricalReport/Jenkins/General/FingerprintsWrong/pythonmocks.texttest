@@ -1,11 +1,21 @@
+<-PYT:os.path.islink('jenkinsdata/jobs/test/builds/1')
+->RET:True
 <-PYT:os.readlink('jenkinsdata/jobs/test/builds/1')
 ->RET:'Faked timestamp 1'
+<-PYT:os.path.islink('jenkinsdata/jobs/test/builds/3')
+->RET:True
 <-PYT:os.readlink('jenkinsdata/jobs/test/builds/3')
 ->RET:'Faked timestamp 3'
+<-PYT:os.path.islink('jenkinsdata/jobs/test/builds/4')
+->RET:True
 <-PYT:os.readlink('jenkinsdata/jobs/test/builds/4')
 ->RET:'Faked timestamp 4'
+<-PYT:os.path.islink('jenkinsdata/jobs/test/builds/5')
+->RET:True
 <-PYT:os.readlink('jenkinsdata/jobs/test/builds/5')
 ->RET:'Faked timestamp 5'
+<-PYT:os.path.islink('jenkinsdata/jobs/test/builds/6')
+->RET:True
 <-PYT:os.readlink('jenkinsdata/jobs/test/builds/6')
 ->RET:'Faked timestamp 6'
 <-PYT:import matplotlib
@@ -54,15 +64,25 @@
 <-PYT:legend1.get_frame()
 ->RET:Instance('FancyBboxPatch(Patch, Artist, object)', 'fancybboxpatch1')
 <-PYT:fancybboxpatch1.set_alpha(0.5)
-<-PYT:figure1.savefig('/tmp/geoff/texttest.16May154738.10773/texttest/TestSelf/BatchTests/HistoricalReport/Jenkins/General/FingerprintsWrong/report/hello/images/test_normal.png', dpi=100)
+<-PYT:figure1.savefig('/nfs/vm/texttest-tmp-mc/riklun/texttest.26Jan114146.30544/texttest/TestSelf/BatchTests/HistoricalReport/Jenkins/General/FingerprintsWrong/report/hello/images/test_normal.png', dpi=100)
+<-PYT:os.path.islink('jenkinsdata/jobs/test/builds/1')
+->RET:True
 <-PYT:os.readlink('jenkinsdata/jobs/test/builds/1')
 ->RET:'Faked timestamp 1'
+<-PYT:os.path.islink('jenkinsdata/jobs/test/builds/3')
+->RET:True
 <-PYT:os.readlink('jenkinsdata/jobs/test/builds/3')
 ->RET:'Faked timestamp 3'
+<-PYT:os.path.islink('jenkinsdata/jobs/test/builds/4')
+->RET:True
 <-PYT:os.readlink('jenkinsdata/jobs/test/builds/4')
 ->RET:'Faked timestamp 4'
+<-PYT:os.path.islink('jenkinsdata/jobs/test/builds/5')
+->RET:True
 <-PYT:os.readlink('jenkinsdata/jobs/test/builds/5')
 ->RET:'Faked timestamp 5'
+<-PYT:os.path.islink('jenkinsdata/jobs/test/builds/6')
+->RET:True
 <-PYT:os.readlink('jenkinsdata/jobs/test/builds/6')
 ->RET:'Faked timestamp 6'
 <-PYT:pylab.clf()
@@ -106,4 +126,4 @@
 <-PYT:legend2.get_frame()
 ->RET:Instance('FancyBboxPatch(Patch, Artist, object)', 'fancybboxpatch2')
 <-PYT:fancybboxpatch2.set_alpha(0.5)
-<-PYT:figure1.savefig('/tmp/geoff/texttest.16May154738.10773/texttest/TestSelf/BatchTests/HistoricalReport/Jenkins/General/FingerprintsWrong/report/hello/images/test_normal_all_Jan2006.png', dpi=100)
+<-PYT:figure1.savefig('/nfs/vm/texttest-tmp-mc/riklun/texttest.26Jan114146.30544/texttest/TestSelf/BatchTests/HistoricalReport/Jenkins/General/FingerprintsWrong/report/hello/images/test_normal_all_Jan2006.png', dpi=100)
