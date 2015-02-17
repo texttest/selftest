@@ -1,0 +1,144 @@
+
+---------- Window 'FPDIFF tests (started at 17Feb13:41:16) - TextTest dynamic GUI' ----------
+Focus widget is 'Test Tree'
+
+Menu Bar : '_File' (+) , '_View' (+) , '_Actions' (+) , '_Help' (+)
+
+Tool Bar :
+  _Quit (Stock image 'gtk-quit', accelerator 'Ctrl+Q', tooltip 'Quit')
+  _Kill (Stock image 'gtk-stop', greyed out, accelerator 'Ctrl+Delete', tooltip 'Kill selected tests')
+  _Approve (Stock image 'gtk-apply', greyed out, accelerator 'Ctrl+S', tooltip 'Approve results for selected tests. This will save the files produced by this run as the new approved files which future runs will be compared with. Used to be called Save.')
+  Progress bar set to fraction 0.0, text 'All 0 tests completed at 17Feb13:41:18'
+...........
+
+Showing Test Tree with columns: Tests: All 0 selected , Details
+
+------------------------------ (vertical pane separator)
+...........
+
+Showing Notebook with tabs: Status , Selection , Run Info
+Viewing page 'Status'
+
+Showing Test Status View with columns: Status , Number , Visible
+'Shortcuts:' , Button '_New'
+...........
+'TextTest started at 17Feb13:41:16.' , Image 'throbber_inactive.png'
+---------------------------------------------------------------------------------------------
+
+Progress bar set to fraction 0.0, text '0 of 1 tests completed'
+
+Column titles changed in Test Tree with columns: Tests: 0/1 selected, all hidden , Details
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white,bold) | 1 (white,bold) | Check box
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white) | 0 (white) | Check box
+-> Initial filter (LightGoldenrod1,bold) | 1 (LightGoldenrod1,bold) | Check box
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white) | 0 (white) | Check box
+-> Initial filter (white) | 0 (white) | Check box
+-> Running (LightGoldenrod1,bold) | 1 (LightGoldenrod1,bold) | Check box
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white) | 0 (white) | Check box
+-> Initial filter (white) | 0 (white) | Check box
+-> Running (white) | 0 (white) | Check box
+-> Final filter (LightGoldenrod1,bold) | 1 (LightGoldenrod1,bold) | Check box
+
+Progress bar set to fraction 1.0, text 'All 1 tests completed at 17Feb13:41:18'
+
+Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
+-> TargetApp (fpdiff) (black/white,bold) | (white)
+->   Test (black/salmon) | errors different (salmon)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white) | 0 (white) | Check box
+-> Initial filter (white) | 0 (white) | Check box
+-> Running (white) | 0 (white) | Check box
+-> Final filter (white) | 0 (white) | Check box
+-> Failed (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->   Differences (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->     errors different (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+
+No longer greyed out : _Approve
+
+Changed selection in Test Tree with columns: Tests: All 1 selected, none hidden , Details
+-> TargetApp (fpdiff) (black/white,bold) | (white)
+->   Test (black/salmon) | errors different (salmon)   ***
+
+Current page changed in Notebook with tabs: Test , Status , Selection , Run Info
+Viewing page 'Test'
+...........
+
+Showing File Tree with columns: Test , Details
+-> Comparison Files (bold)
+->   errors.fpdiff (salmon) | (salmon)
+->   output.fpdiff (DarkSeaGreen2) | (DarkSeaGreen2)
+
+------------------------------ (horizontal pane separator)
+...........
+
+========== Text Info ==========
+Test FAILED :
+---------- Differences in errors ----------
+5c5
+< 0
+---
+> 1
+===============================
+
+Expected application event 'completion of test actions' occurred, proceeding.
+
+'show actions menu' event created with arguments ''
+
+---------- Popup Window ----------
+'_Select' (Stock image 'gtk-find', accelerator 'Ctrl+Alt+F')
+'Filter' (Stock image 'gtk-find', accelerator 'Ctrl+F')
+  ----
+'_Kill' (Stock image 'gtk-stop', greyed out, accelerator 'Ctrl+Delete')
+'_Mark' (accelerator 'Shift+Ctrl+M')
+'_Unmark' (greyed out, accelerator 'Shift+Ctrl+U')
+'Load from Rerun' (greyed out)
+  ----
+'_Rerun' (Stock image 'gtk-execute', accelerator 'Ctrl+R')
+'Recompute Status' (Stock image 'gtk-refresh', accelerator 'F5')
+'Re_load tests...' (Stock image 'gtk-connect')
+  ----
+'Split result files' (Stock image 'gtk-convert', greyed out)
+  ----
+'Generate test summary'
+----------------------------------
+
+'recompute test status, including progress information if appropriate' event created with arguments ''
+
+Changing GUI status to: 'Rereading configuration for FPDIFF ...'
+
+Waiting for application event 'completion of background actions' to occur.
+
+Changing GUI status to: 'Recomputing status of FPDIFF test-case Test ...'
+
+Updated : Test Tree with columns: Tests: All 1 selected, none hidden , Details
+-> TargetApp (fpdiff) (black/white,bold) | (white)
+->   Test (black/salmon) | errors different (salmon)   ***
+
+Updated : File Tree with columns: Test , Details
+-> Comparison Files (bold)
+->   errors.fpdiff (salmon) | (salmon)
+->   output.fpdiff (DarkSeaGreen2) | (DarkSeaGreen2)
+
+========== Text Info ==========
+Test FAILED :
+---------- Differences in errors ----------
+5c5
+< 0
+---
+> 1
+===============================
+
+Changing GUI status to: 'Recomputed status of 1 test.'
+
+Expected application event 'completion of background actions' occurred, proceeding.
+
+'quit' event created with arguments ''
