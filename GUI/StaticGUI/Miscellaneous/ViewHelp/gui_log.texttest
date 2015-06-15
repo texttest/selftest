@@ -37,7 +37,7 @@ Button 'Filter' (Stock image 'gtk-find', accelerator 'Ctrl+F', tooltip 'filter t
 Button 'Reset Tab' (tooltip 'Reset all the settings in the current tab to their default values')
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 05Mar15:43:24.' , Image 'throbber_inactive.png'
+'TextTest started at 15Jun14:13:52.' , Image 'throbber_inactive.png'
 ------------------------------------------------------------------------
 
 Changing GUI status to: 'Reading tests ...'
@@ -82,7 +82,7 @@ Updated : Test Tree with columns: Tests: 0/11 selected
 ->       S01 (black/grey90)
 Updated drop-down list in 'Test-file to search' Text entry (set to 'output') (drop-down list containing ['output'])
 
-Changing GUI status to: 'Reading tests completed at 05Mar15:43:25.'
+Changing GUI status to: 'Reading tests completed at 15Jun14:13:52.'
 
 Expected application event 'all tests to be read' occurred, proceeding.
 
@@ -124,7 +124,7 @@ Stock Button 'gtk-close' , Button '_Versions' , Button '_License' , Stock Button
 
 Waiting for application event 'the browser to be closed' to occur.
 
-Changing GUI status to: 'Started "firefox http://www.texttest.org" in background.'
+Changing GUI status to: 'Started "&lt;default browser&gt; http://www.texttest.org" in background.'
 
 Expected application event 'the browser to be closed' occurred, proceeding.
 
@@ -211,9 +211,9 @@ Viewing table with 6 rows and 2 columns.
 '<b>You are using these installations:
 </b>'
 Viewing table with 3 rows and 2 columns.
-'Test Suite:' | '/carm/proj/texttest-tmp-mc/geoff/texttest.gui.05Mar154310.104307/texttest.gui/GUI/StaticGUI/Miscellaneous/ViewHelp/TargetApp'
-'TextTest:' | '/nfs/vm/texttest/geoff/Testing/TextTest/texttestlib'
-'Python:' | '/users/geoff/.local/texttest_test/bin/python'
+'Test Suite:' | 'C:/Users/e601429/.texttest/tmp/texttest.gui.15Jun141350.7308/texttest.gui/GUI/StaticGUI/Miscellaneous/ViewHelp/TargetApp'
+'TextTest:' | 'c:/work/texttest/texttestlib'
+'Python:' | 'C:\TextTest\virtualenv\texttest_dev\Scripts\python.exe'
 Stock Button 'gtk-close'
 --------------------------------------------------
 
@@ -413,107 +413,25 @@ Changing GUI status to: ''
 ---------- Dialog 'TextTest Change Logs' ----------
 Default widget is 'gtk-close'
 
-Showing Notebook with tabs: trunk , 3.27 , 3.26 , 3.25 , 3.24 , 3.23 , 3.22 , 3.21 , 3.20 , 3.19 , 3.18 , 3.17 , 3.16.1 , 3.16 , 3.15 , 3.14.1 , 3.14 , 3.13 , 3.12.1 , 3.12 , 3.11.1 , 3.11 , 3.10 , 3.9.1 , 3.9 , 3.8 , 3.7.1 , 3.7 , 3.6 , 3.5.3 , 3.5.2 , 3.5.1 , 3.5 , 3.4 , 3.3 , 3.2 , 3.1.1 , 3.1 , 3.0 , 2.1 , 2.0 , 1.0 , 0.2 , 0.1
+Showing Notebook with tabs: trunk , 3.28.1 , 3.28 , 3.27 , 3.26 , 3.25 , 3.24 , 3.23 , 3.22 , 3.21 , 3.20 , 3.19 , 3.18 , 3.17 , 3.16.1 , 3.16 , 3.15 , 3.14.1 , 3.14 , 3.13 , 3.12.1 , 3.12 , 3.11.1 , 3.11 , 3.10 , 3.9.1 , 3.9 , 3.8 , 3.7.1 , 3.7 , 3.6 , 3.5.3 , 3.5.2 , 3.5.1 , 3.5 , 3.4 , 3.3 , 3.2 , 3.1.1 , 3.1 , 3.0 , 2.1 , 2.0 , 1.0 , 0.2 , 0.1
 Viewing page 'trunk'
 
 ========== GtkTextView ==========
 Release Enhancements:
-    - Spec file for RPM packaging added.
 Dynamic GUI Enhancements:
-    - Default colour for known bugs is now orange, as in HTML reports
-	"Marked" default colour changes to light blue accordingly
-    - Rerun now marks tests in the original run window
-	Also rerun windows are identified with numbers
-	There is also a new menu item "Load from rerun" in the test popup menu, to load the rerun result into the original window
-    - Rerun dialog now inherits all automatic setting updates from Run tab
-	for example disabling grid usage when requesting replay of GUI testing
-    - Additional "Ungrouped" row when many tests are grouped in the Status view
-    - All test categories except Failed are now invisible by default. New config entry 'show_test_category' to configure this.
-    - The old 'auto_collapse_successful' functionality is removed as no longer necessary.
-    - Selected files in the file view are no longer automatically deselected when a viewer is started.
-	See Migration notes
 Static GUI Enhancements:
-    - New "View / Show Processes" action
-	This allows you to view all processes (dynamic GUIs, file viewers) started from TextTest and to kill them individually
-    - New "Show Filters" dialog in File View
-	Allows viewing and experimenting with the filters for a given file, and also updating them.
-    - "Inherited" data files are now shown in the static GUI
-	Allows an overview of which data will be used for which test, and a convenient reference without having to walk up the hierarchy
-    - "Replace Text in Files" now works on files in test suites also
-	For example environment, options, config files
-    - Maximum copies of a test increased from 1000 to 10000
-    - Reenable the old texttest icons by adding the config entry 'retro_icons:1' to personal config file
 Framework Enhancements:
-    - "collate_script" now accepts all the files which match the pattern  in "collate_file"
-	This makes it easier to write a script to collate a summary of several related files.
-	There is also a warning now if multiple files match when no collate_script is provided. (see Migration Notes)
-    - "core file interpreting" script now shows a stack of all threads
-	Previously only showed main thread
-    - New checkbox in "Enter failure information" dialog
-	Allows you to just use this mechanism to trigger reruns without being required to report the result as a known bug.
-    - If known bugs trigger reruns and those reruns are killed, the original test result is now shown instead of the killed rerun.
-    - If checkout settings are not provided, TEXTTEST_CHECKOUT defaults to the current working directory
-	No more errors about failing to make an absolute path!
 Version Control Browser Enhancements:
-    - Added new feature "Difference with Filter" for all supported VCS
 Batch Report Enhancements:
-    - New Javascript "comment plugin" added
-	Adds the ability to comment individual test failures in the HTML report. See website.
-	Internal marker format in pages changed to be more friendly to this
-    - Succeeded tests now stored in a more compact way in batch_result_repository
-	New migration script to convert. Old format is still understood, so migration will happen naturally (but slowly) anyway
-    - Batch result repositories now automatically clean themselves
-	Any file not used by the HTML report generation is just removed
-	To disable this behaviour use the new --manualarchive flag, which will essentially restore the old behaviour
-    - Can now archive individual named runs
-	Using the new flag -s "batch.ArchiveRepository name=<run name>"
-    - Arrows showing trend have been added to the index page
-	Mostly for a quick overview comparing to the previous run. Can be disabled via CSS.
-    - Archiving now respects selected versions ("-v" argument)
-    - Batch runs from Jenkins now automatically add the Jenkins run number to their batch session, along with the date
-    - additional HTML classes added to generated summary tables, allows for more CSS possibilities
-	Can e.g. set colours in CSS as well as via the config file if desired.
-    - Adding new run-level data store to batch repositories
-    - Adding a page footer to sumary_template.html . It will show a link to the associated jenkins build when available
-    - Index page now stores the 5 latest versions of itself, to aid in debugging if it is regenerated many times a day
-    - Generation details are now in page footer rather than window title in index page
 Grid Engine/Cloud enhancements/bug fixes:
-    - New config parameter "queue_system_max_reruns".
-	Aims to limit amount of rerunning caused by knownbugs. Defaults to 100. See website.
-    - Reworked setup so that cloud instances don't flood master machine's SSH daemon with SSH requests
-    - Fixed incorrect display in Run Info of environment variables used directly in copy_test_path
-    - UGE Job ID now stored with test results, to make troubleshooting easier
-    - Cloud data synchronisation is now retried if it fails, e.g. if cloud drops connection
-    - Fixed bug with multiple checkouts being used by the same slave process.
-    - Fixed Jenkins-related crash if date links aren't present as expected.
 Bug Fixes:
-    - Filter behaviour is now consistent with View/Show All
-    - Fixed bug with HTML summary page reporting and specific memory failure tests (i.e. anything not called "memory") being counted incorrectly
-    - DocumentEnvironment script should always work, no longer depends on file sorting
-    - neatened up output for Jenkins runs when full paths to artefacts are needed, don't write it in the webpage
-    - Status view now shows repeat groups, even if there is only one test with exactly that number
-    - Fixed bug where Temporary Settings were not affected by the Reset button
-    - Fixed bug where duplicated known bugs triggering on absence meant they were always reported
-    - Updated log regeneration script and logging.* files, forgotten with 3.27
-    - HTML pages with a cutoff and a weekday apply the weekday first ("last 10 Fridays", instead of "the Fridays from the last 10 days" as before)
-    - Fixed word wrap in dialogs
-    - Fixed stacktrace when -name provided without arguments. Now ignore this.
-    - Fixed GUI's test description when the last test in a suite has been commented out
-    - Performance improvements for running many copies of a test
-    - Better handling of loose comments and disabled tests in testsuite files
-	Should be much less prone to getting lost or moved around now
-    - Multiple checkouts and multiple copies now work together
-    - Summary page generation with non-standard path now handles non-local paths properly
-    - Fixed bug where 0 error code could be received despite no executable being present
-    - Improved error message with batch_use_collection and no batch_recipients
-    - Fixed so that floating point calculations are included when recomputing
 =================================
 Stock Button 'gtk-close'
 ---------------------------------------------------
 
 'view tab' event created with arguments '3.7.1'
 
-Current page changed in Notebook with tabs: trunk , 3.27 , 3.26 , 3.25 , 3.24 , 3.23 , 3.22 , 3.21 , 3.20 , 3.19 , 3.18 , 3.17 , 3.16.1 , 3.16 , 3.15 , 3.14.1 , 3.14 , 3.13 , 3.12.1 , 3.12 , 3.11.1 , 3.11 , 3.10 , 3.9.1 , 3.9 , 3.8 , 3.7.1 , 3.7 , 3.6 , 3.5.3 , 3.5.2 , 3.5.1 , 3.5 , 3.4 , 3.3 , 3.2 , 3.1.1 , 3.1 , 3.0 , 2.1 , 2.0 , 1.0 , 0.2 , 0.1
+Current page changed in Notebook with tabs: trunk , 3.28.1 , 3.28 , 3.27 , 3.26 , 3.25 , 3.24 , 3.23 , 3.22 , 3.21 , 3.20 , 3.19 , 3.18 , 3.17 , 3.16.1 , 3.16 , 3.15 , 3.14.1 , 3.14 , 3.13 , 3.12.1 , 3.12 , 3.11.1 , 3.11 , 3.10 , 3.9.1 , 3.9 , 3.8 , 3.7.1 , 3.7 , 3.6 , 3.5.3 , 3.5.2 , 3.5.1 , 3.5 , 3.4 , 3.3 , 3.2 , 3.1.1 , 3.1 , 3.0 , 2.1 , 2.0 , 1.0 , 0.2 , 0.1
 Viewing page '3.7.1'
 
 ========== GtkTextView ==========
@@ -587,9 +505,9 @@ Viewing table with 6 rows and 2 columns.
 '<b>You are using these installations:
 </b>'
 Viewing table with 3 rows and 2 columns.
-'Test Suite:' | '/carm/proj/texttest-tmp-mc/geoff/texttest.gui.05Mar154310.104307/texttest.gui/GUI/StaticGUI/Miscellaneous/ViewHelp/TargetApp'
-'TextTest:' | '/nfs/vm/texttest/geoff/Testing/TextTest/texttestlib'
-'Python:' | '/users/geoff/.local/texttest_test/bin/python'
+'Test Suite:' | 'C:/Users/e601429/.texttest/tmp/texttest.gui.15Jun141350.7308/texttest.gui/GUI/StaticGUI/Miscellaneous/ViewHelp/TargetApp'
+'TextTest:' | 'c:/work/texttest/texttestlib'
+'Python:' | 'C:\TextTest\virtualenv\texttest_dev\Scripts\python.exe'
 Stock Button 'gtk-close'
 --------------------------------------------------
 
