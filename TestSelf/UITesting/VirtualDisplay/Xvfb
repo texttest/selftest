@@ -2,6 +2,8 @@
 
 import os, signal, sys
 
+open("Xvfbfake.texttest", "w").write(repr(sys.argv) + "\n")
+
 sys.stdout.write("Running with arguments " + repr(sys.argv[1:]) + "\n")
 sys.stdout.flush()
 os.kill(os.getppid(), signal.SIGUSR1)

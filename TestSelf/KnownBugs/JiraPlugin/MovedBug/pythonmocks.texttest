@@ -1,18 +1,22 @@
 <-PYT:import urllib
-<-PYT:import xmlrpclib
-<-PYT:xmlrpclib.ServerProxy('http://www.myjirasite.com/rpc/xmlrpc')
+<-PYT:import urllib.parse
+<-PYT:import xmlrpc
+<-PYT:import xmlrpc.client
+<-PYT:import urllib.request
+<-PYT:import urllib.error
+<-PYT:xmlrpc.client.ServerProxy('http://www.myjirasite.com/rpc/xmlrpc')
 ->RET:Instance('ServerProxy', 'serverproxy1')
 <-PYT:serverproxy1.jira1.login('texttest', 'password')
 ->RET:'73b53f015e251b669a1a56a62158a83522f971b8'
 <-PYT:serverproxy1.jira1.getIssue('73b53f015e251b669a1a56a62158a83522f971b8', 'CPL-1406')
-->RET:raise Instance('Fault(Error, exceptions.Exception)', 'fault_cpl_1406')
-<-PYT:urllib.urlopen('http://www.myjirasite.com/browse/CPL-1406')
+->RET:raise Instance('Fault(Error, Exception)', 'fault_cpl_1406')
+<-PYT:urllib.request.urlopen('http://www.myjirasite.com/browse/CPL-1406')
 ->RET:Instance('addinfourl(addbase)', 'addinfourl1')
 <-PYT:addinfourl1.geturl()
 ->RET:'https://jira.jeppesensystems.com/login.jsp?permissionViolation=true&os_destination=%2Fbrowse%2FPDTUC-367'
-<-PYT:urllib.url2pathname('https://jira.jeppesensystems.com/login.jsp?permissionViolation=true&os_destination=%2Fbrowse%2FPDTUC-367')
+<-PYT:urllib.request.url2pathname('https://jira.jeppesensystems.com/login.jsp?permissionViolation=true&os_destination=%2Fbrowse%2FPDTUC-367')
 ->RET:'https://jira.jeppesensystems.com/login.jsp?permissionViolation=true&os_destination=/browse/PDTUC-367'
-<-PYT:xmlrpclib.ServerProxy('http://www.myjirasite.com/rpc/xmlrpc')
+<-PYT:xmlrpc.client.ServerProxy('http://www.myjirasite.com/rpc/xmlrpc')
 ->RET:Instance('ServerProxy', 'serverproxy2')
 <-PYT:serverproxy2.jira1.login('texttest', 'password')
 ->RET:'24857839aee30417ad0abb97a418c590ef1cd158'

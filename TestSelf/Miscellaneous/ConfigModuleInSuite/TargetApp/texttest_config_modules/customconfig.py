@@ -9,5 +9,5 @@ class Config(default.Config):
 
 class MyTestRunner(default.RunTest):
     def __call__(self, test):
-        print "Look, we wrote a custom config!"
+        print("Look, we wrote a custom config!")
         default.RunTest.__call__(self, test)

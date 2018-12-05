@@ -5,7 +5,7 @@ origcopyfile = shutil.copyfile
 
 def copyfile(src, dst):
     if os.path.basename(src) == "core":
-        raise OSError, "Permission denied!"
+        raise OSError("Permission denied!")
     else:
         origcopyfile(src, dst)
 

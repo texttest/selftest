@@ -1,14 +1,14 @@
 
-import __builtin__, os
+import builtins, os
 
-origOpen = __builtin__.open
+origOpen = builtins.open
 
-def myOpen(fileName, mode="r"):
+def myOpen(fileName, mode="r", **kw):
     if "a" in mode or "w" in mode:
         dirname = os.path.basename(os.path.dirname(fileName))
         if dirname == "suite":
-            raise OSError, "Permission Denied: as decided by testcustomize.py"
-    return origOpen(fileName, mode)
+            raise OSError("Permission Denied: as decided by testcustomize.py")
+    return origOpen(fileName, mode, **kw)
 
-__builtin__.open = myOpen
+builtins.open = myOpen
 

@@ -37,7 +37,7 @@ level=INFO
 [handler_action runner]
 class=FileHandler
 #formatter=timed
-args=(os.devnull, 'w')
+#args=(os.devnull, 'w')
 args=('%(TEXTTEST_PERSONAL_LOG)s/actionrunner.diag', 'w')
 
 # ======= Section for activator ======
@@ -157,7 +157,7 @@ level=INFO
 [handler_filecomparison]
 class=FileHandler
 #formatter=timed
-args=(os.devnull, 'w')
+#args=(os.devnull, 'w')
 args=('%(TEXTTEST_PERSONAL_LOG)s/filecomparison.diag', 'w')
 
 # ======= Section for filter actions ======
@@ -183,18 +183,6 @@ class=FileHandler
 #formatter=timed
 args=(os.devnull, 'w')
 #args=('%(TEXTTEST_PERSONAL_LOG)s/findapplications.diag', 'w')
-
-# ======= Section for generatewebpages ======
-[logger_generatewebpages]
-handlers=generatewebpages
-qualname=generatewebpages
-#level=INFO
-
-[handler_generatewebpages]
-class=FileHandler
-#formatter=timed
-args=(os.devnull, 'w')
-#args=('%(TEXTTEST_PERSONAL_LOG)s/generatewebpages.diag', 'w')
 
 # ======= Section for generatewebpages ======
 [logger_generatewebpages]
@@ -409,7 +397,7 @@ level=INFO
 [handler_run dependent text]
 class=FileHandler
 #formatter=timed
-args=(os.devnull, 'w')
+#args=(os.devnull, 'w')
 args=('%(TEXTTEST_PERSONAL_LOG)s/rundependenttext.diag', 'w')
 
 # ======= Section for run test ======
@@ -517,7 +505,7 @@ level=INFO
 [handler_testcomparison]
 class=FileHandler
 #formatter=timed
-args=(os.devnull, 'w')
+#args=(os.devnull, 'w')
 args=('%(TEXTTEST_PERSONAL_LOG)s/testcomparison.diag', 'w')
 
 # ======= Section for testpathfilter ======
