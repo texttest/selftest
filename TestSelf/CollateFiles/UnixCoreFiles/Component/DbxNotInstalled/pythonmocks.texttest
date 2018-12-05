@@ -1,10 +1,10 @@
 <-PYT:import subprocess
-<-PYT:subprocess.Popen(['gdb', '-q', '-batch', '-x', '/tmp/tmpo26BS0coreCommands.gdb', '/bin/grep', 'fakecore'], stderr=subprocess.PIPE, stdout=subprocess.PIPE)
+<-PYT:subprocess.Popen(['gdb', '-q', '-batch', '-x', '/tmp/tmpvslrk3c5coreCommands.gdb', '/bin/grep', 'fakecore'], stderr=subprocess.PIPE, stdout=subprocess.PIPE)
 ->RET:Instance('Popen(object)', 'popen1')
 <-PYT:popen1.communicate()
-->RET:('''(no debugging symbols found)...#0  0x0000000000000000 in ?? ()
+->RET:(b'''(no debugging symbols found)...#0  0x0000000000000000 in ?? ()
 #0  0x0000000000000000 in ?? ()
-''', """
+''', b"""
 warning: Couldn't find general-purpose registers in core file.
 
 
@@ -33,5 +33,5 @@ warning: Couldn't find general-purpose registers in core file.
 
 warning: Wrong size fpregset in core file.
 """)
-<-PYT:subprocess.Popen(['dbx', '-f', '-q', '-c', 'where; quit', '/bin/grep', 'fakecore'], stderr=subprocess.PIPE, stdin=<open file '/dev/null', mode 'r' at 0x292c300>, stdout=subprocess.PIPE)
-->RET:raise exceptions.OSError('[Errno 2] No such file or directory')
+<-PYT:subprocess.Popen(['dbx', '-f', '-q', '-c', 'where; quit', '/bin/grep', 'fakecore'], stderr=subprocess.PIPE, stdin=<_io.TextIOWrapper name='/dev/null' mode='r' encoding='UTF-8'>, stdout=subprocess.PIPE)
+->RET:raise OSError('[Errno 2] No such file or directory')
