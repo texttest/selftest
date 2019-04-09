@@ -3,18 +3,17 @@
 ->RET:Instance('SMTP', 'smtp1')
 <-PYT:smtp1.connect('localhost')
 ->RET:(220, 'granville.carmen.se ESMTP Sendmail 8.13.8/8.13.8; Tue, 9 Feb 2010 15:20:27 +0100')
-<-PYT:smtp1.sendmail('geoff@localhost', ['fakeuser'], '''From: geoff@localhost
-To: fakeuser
-Subject: 09Feb2010 HELLO : 1 tests, all successful
-
-Summary of all Successful tests follows...
----------------------------------------------------------------------------------
-The following tests succeeded : 
-In HELLO test-suite TargetApp:
-  In HELLO test-suite SuiteWithTest:
-    - HELLO test-case Test
-
-
-''')
+<-PYT:smtp1.sendmail('jensk@localhost', ['fakeuser'], ('From: jensk@localhost\n'
+ 'To: fakeuser\n'
+ 'Subject: 09Apr2019 HELLO : 1 tests, all successful\n'
+ '\n'
+ 'Summary of all Successful tests follows...\n'
+ '---------------------------------------------------------------------------------\n'
+ 'The following tests succeeded : \n'
+ 'In HELLO test-suite TargetApp:\n'
+ '  In HELLO test-suite SuiteWithTest:\n'
+ '    - HELLO test-case Test\n'
+ '\n'
+ '\n'))
 ->RET:{}
 <-PYT:smtp1.quit()

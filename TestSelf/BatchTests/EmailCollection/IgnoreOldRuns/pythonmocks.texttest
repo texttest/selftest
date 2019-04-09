@@ -5,108 +5,107 @@
 ->RET:Instance('SMTP', 'smtp1')
 <-PYT:smtp1.connect('localhost')
 ->RET:(220, 'gewoia.jeppesensystems.com ESMTP Sendmail 8.13.8/8.13.8; Wed, 5 May 2010 15:24:57 +0200')
-<-PYT:smtp1.sendmail('geoff@localhost', ['tom'], '''From: geoff@localhost
-To: tom
-Subject: Rel1.2.3 FAKE : 12 tests ran : 5 FAILED, 1 CRASHED
-
-03May2010 DIP unix : 11 tests : 5 FAILED
-Rel1.2.3 CORE : 1 tests : 1 CRASHED
-
-Summary of all Unsuccessful tests follows...
-=================================================================================
-03May2010 DIP unix : 11 tests : 5 FAILED
-
-The following tests FAILED : 
-In DIP test-suite TargetApp:
-  In DIP test-suite Game9952:
-    - DIP test-case S02    : output different
-    - DIP test-case A02    : output different
-    - DIP test-case A03    : output different
-    - DIP test-case A04    : output different
-    - DIP test-case S05    : output different
-
-Rel1.2.3 CORE : 1 tests : 1 CRASHED
-
-The following tests CRASHED : 
-In CORE test-suite TargetApp:
-  - CORE test-case DumpCore
-
-Details of all Unsuccessful tests follows...
-=================================================================================
-03May2010 DIP unix : 11 tests : 5 FAILED
-
-Detailed information for the tests that FAILED follows...
---------------------------------------------------------
-TEST FAILED on fougamou : DIP test-case S02    (under Game9952/S02)
------------------- Differences in output --------------------
-35c35
-< Turkey:  Aeg SUPPORT Bul -> Gre    (*dislodged*)
----
-> Turkey:  Aeg SUPPORT Bul -> Gre    (*was dislodged*)
---------------------------------------------------------
-TEST FAILED on fougamou : DIP test-case A02    (under Game9952/A02)
------------------- Differences in output --------------------
-18c18
-< Germany: Hol HOLD                  (*dislodged*)
----
-> Germany: Hol HOLD                  (*was dislodged*)
---------------------------------------------------------
-TEST FAILED on fougamou : DIP test-case A03    (under Game9952/A03)
------------------- Differences in output --------------------
-28c28
-< Italy:   Tyn CONVOY Tun -> Rom     (*dislodged*)
----
-> Italy:   Tyn CONVOY Tun -> Rom     (*was dislodged*)
---------------------------------------------------------
-TEST FAILED on fougamou : DIP test-case A04    (under Game9952/A04)
------------------- Differences in output --------------------
-18c18
-< France:  Mun SUPPORT Ber HOLD      (*dislodged*)
----
-> France:  Mun SUPPORT Ber HOLD      (*was dislodged*)
---------------------------------------------------------
-TEST FAILED on fougamou : DIP test-case S05    (under Game9952/S05)
------------------- Differences in output --------------------
-21c21
-< France:  Ber SUPPORT Ruh -> Mun    (*dislodged*)
----
-> France:  Ber SUPPORT Ruh -> Mun    (*was dislodged*)
-
-=================================================================================
-Rel1.2.3 CORE : 1 tests : 1 CRASHED
-
-Detailed information for the tests that CRASHED follows...
---------------------------------------------------------
-TEST CRASHED on severodoneck : CORE test-case DumpCore (under DumpCore)
-Program terminated with signal 11, Segmentation fault.
-Stack trace from gdb :
-___newselect_nocancel 
-floatsleep 
-time_sleep 
-PyCFunction_Call 
-PyEval_EvalCode 
-PyEval_EvalCodeEx 
-PyEval_EvalCode 
-PyRun_FileExFlags 
-PyRun_SimpleFileExFlags 
-PyRun_AnyFileExFlags 
-Py_Main 
-main
-
-Summary of all Successful tests follows...
-=================================================================================
-The following tests succeeded : 
-In DIP test-suite TargetApp:
-  In DIP test-suite Game9952:
-    - DIP test-case S01.99
-    - DIP test-case A01   
-    - DIP test-case S03   
-    - DIP test-case S04   
-    - DIP test-case A05   
-  In DIP test-suite npstIII:
-    In DIP test-suite Game47:
-      - DIP test-case S01
-
-''')
+<-PYT:smtp1.sendmail('jensk@localhost', ['tom'], ('From: jensk@localhost\n'
+ 'To: tom\n'
+ 'Subject: Rel1.2.3 FAKE : 12 tests ran : 5 FAILED, 1 CRASHED\n'
+ '\n'
+ '03May2010 DIP unix : 11 tests : 5 FAILED\n'
+ 'Rel1.2.3 CORE : 1 tests : 1 CRASHED\n'
+ '\n'
+ 'Summary of all Unsuccessful tests follows...\n'
+ '=================================================================================\n'
+ '03May2010 DIP unix : 11 tests : 5 FAILED\n'
+ '\n'
+ 'The following tests FAILED : \n'
+ 'In DIP test-suite TargetApp:\n'
+ '  In DIP test-suite Game9952:\n'
+ '    - DIP test-case S02    : output different\n'
+ '    - DIP test-case A02    : output different\n'
+ '    - DIP test-case A03    : output different\n'
+ '    - DIP test-case A04    : output different\n'
+ '    - DIP test-case S05    : output different\n'
+ '\n'
+ 'Rel1.2.3 CORE : 1 tests : 1 CRASHED\n'
+ '\n'
+ 'The following tests CRASHED : \n'
+ 'In CORE test-suite TargetApp:\n'
+ '  - CORE test-case DumpCore\n'
+ '\n'
+ 'Details of all Unsuccessful tests follows...\n'
+ '=================================================================================\n'
+ '03May2010 DIP unix : 11 tests : 5 FAILED\n'
+ '\n'
+ 'Detailed information for the tests that FAILED follows...\n'
+ '--------------------------------------------------------\n'
+ 'TEST FAILED on fougamou : DIP test-case S02    (under Game9952/S02)\n'
+ '------------------ Differences in output --------------------\n'
+ '35c35\n'
+ '< Turkey:  Aeg SUPPORT Bul -> Gre    (*dislodged*)\n'
+ '---\n'
+ '> Turkey:  Aeg SUPPORT Bul -> Gre    (*was dislodged*)\n'
+ '--------------------------------------------------------\n'
+ 'TEST FAILED on fougamou : DIP test-case A02    (under Game9952/A02)\n'
+ '------------------ Differences in output --------------------\n'
+ '18c18\n'
+ '< Germany: Hol HOLD                  (*dislodged*)\n'
+ '---\n'
+ '> Germany: Hol HOLD                  (*was dislodged*)\n'
+ '--------------------------------------------------------\n'
+ 'TEST FAILED on fougamou : DIP test-case A03    (under Game9952/A03)\n'
+ '------------------ Differences in output --------------------\n'
+ '28c28\n'
+ '< Italy:   Tyn CONVOY Tun -> Rom     (*dislodged*)\n'
+ '---\n'
+ '> Italy:   Tyn CONVOY Tun -> Rom     (*was dislodged*)\n'
+ '--------------------------------------------------------\n'
+ 'TEST FAILED on fougamou : DIP test-case A04    (under Game9952/A04)\n'
+ '------------------ Differences in output --------------------\n'
+ '18c18\n'
+ '< France:  Mun SUPPORT Ber HOLD      (*dislodged*)\n'
+ '---\n'
+ '> France:  Mun SUPPORT Ber HOLD      (*was dislodged*)\n'
+ '--------------------------------------------------------\n'
+ 'TEST FAILED on fougamou : DIP test-case S05    (under Game9952/S05)\n'
+ '------------------ Differences in output --------------------\n'
+ '21c21\n'
+ '< France:  Ber SUPPORT Ruh -> Mun    (*dislodged*)\n'
+ '---\n'
+ '> France:  Ber SUPPORT Ruh -> Mun    (*was dislodged*)\n'
+ '\n'
+ '=================================================================================\n'
+ 'Rel1.2.3 CORE : 1 tests : 1 CRASHED\n'
+ '\n'
+ 'Detailed information for the tests that CRASHED follows...\n'
+ '--------------------------------------------------------\n'
+ 'TEST CRASHED on severodoneck : CORE test-case DumpCore (under DumpCore)\n'
+ 'Program terminated with signal 11, Segmentation fault.\n'
+ 'Stack trace from gdb :\n'
+ '___newselect_nocancel \n'
+ 'floatsleep \n'
+ 'time_sleep \n'
+ 'PyCFunction_Call \n'
+ 'PyEval_EvalCode \n'
+ 'PyEval_EvalCodeEx \n'
+ 'PyEval_EvalCode \n'
+ 'PyRun_FileExFlags \n'
+ 'PyRun_SimpleFileExFlags \n'
+ 'PyRun_AnyFileExFlags \n'
+ 'Py_Main \n'
+ 'main\n'
+ '\n'
+ 'Summary of all Successful tests follows...\n'
+ '=================================================================================\n'
+ 'The following tests succeeded : \n'
+ 'In DIP test-suite TargetApp:\n'
+ '  In DIP test-suite Game9952:\n'
+ '    - DIP test-case S01.99\n'
+ '    - DIP test-case A01   \n'
+ '    - DIP test-case S03   \n'
+ '    - DIP test-case S04   \n'
+ '    - DIP test-case A05   \n'
+ '  In DIP test-suite npstIII:\n'
+ '    In DIP test-suite Game47:\n'
+ '      - DIP test-case S01\n'
+ '\n'))
 ->RET:{}
 <-PYT:smtp1.quit()

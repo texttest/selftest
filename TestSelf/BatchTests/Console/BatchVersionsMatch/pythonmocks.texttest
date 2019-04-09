@@ -5,30 +5,29 @@
 ->RET:Instance('SMTP', 'smtp1')
 <-PYT:smtp1.connect('localhost')
 ->RET:(220, 'juliaca.got.jeppesensystems.com ESMTP Sendmail 8.13.8/8.13.8; Tue, 9 Feb 2010 15:20:31 +0100')
-<-PYT:smtp1.sendmail('ec2-user@localhost', ['tom', 'dick', 'harry'], '''From: ec2-user@localhost
-To: tom,dick,harry
-Subject: 17Oct2014 HELLO batch.defined : 1 tests : 1 FAILED
-
-Summary of all Unsuccessful tests follows...
----------------------------------------------------------------------------------
-The following tests FAILED : 
-In HELLO.batch.defined test-suite TargetApp:
-  - HELLO.batch.defined test-case BothDiff : errors different(+)
-
-
-Details of all Unsuccessful tests follows...
----------------------------------------------------------------------------------
-
-Detailed information for the tests that FAILED follows...
---------------------------------------------------------
-TEST FAILED on ip-10-80-17-78 : HELLO.batch.defined test-case BothDiff (under BothDiff)
----------- Differences in errors ----------
-0a1
-> Error text
----------- Differences in output ----------
-0a1
-> Hello World!
-
-''')
+<-PYT:smtp1.sendmail('jensk@localhost', ['tom', 'dick', 'harry'], ('From: jensk@localhost\n'
+ 'To: tom,dick,harry\n'
+ 'Subject: 17Oct2014 HELLO batch.defined : 1 tests : 1 FAILED\n'
+ '\n'
+ 'Summary of all Unsuccessful tests follows...\n'
+ '---------------------------------------------------------------------------------\n'
+ 'The following tests FAILED : \n'
+ 'In HELLO.batch.defined test-suite TargetApp:\n'
+ '  - HELLO.batch.defined test-case BothDiff : errors different(+)\n'
+ '\n'
+ '\n'
+ 'Details of all Unsuccessful tests follows...\n'
+ '---------------------------------------------------------------------------------\n'
+ '\n'
+ 'Detailed information for the tests that FAILED follows...\n'
+ '--------------------------------------------------------\n'
+ 'TEST FAILED on got003048 : HELLO.batch.defined test-case BothDiff (under BothDiff)\n'
+ '---------- Differences in errors ----------\n'
+ '0a1\n'
+ '> Error text\n'
+ '---------- Differences in output ----------\n'
+ '0a1\n'
+ '> Hello World!\n'
+ '\n'))
 ->RET:{}
 <-PYT:smtp1.quit()

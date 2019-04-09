@@ -5,48 +5,47 @@
 ->RET:Instance('SMTP', 'smtp1')
 <-PYT:smtp1.connect('localhost')
 ->RET:(220, 'khoy.got.jeppesensystems.com ESMTP Sendmail 8.13.8/8.13.8; Tue, 9 Feb 2010 15:20:29 +0100')
-<-PYT:smtp1.sendmail('ec2-user@localhost', ['tom', 'dick', 'harry'], '''From: ec2-user@localhost
-To: tom,dick,harry
-Subject: 17Oct2014 HELLO : 4 tests : 3 FAILED
-
-Summary of all Unsuccessful tests follows...
----------------------------------------------------------------------------------
-The following tests FAILED : 
-In HELLO test-suite TargetApp:
-  - HELLO test-case OutDiff  : output different
-  - HELLO test-case BothDiff : errors different(+)
-  In HELLO test-suite suite:
-    - HELLO test-case OutDiff2 : output different
-
-
-Details of all Unsuccessful tests follows...
----------------------------------------------------------------------------------
-
-Detailed information for the tests that FAILED follows...
---------------------------------------------------------
-2 TESTS FAILED on ip-10-80-17-78 :
----------- Differences in output ----------
-0a1
-> Hello World!
-
--- HELLO test-case OutDiff (under OutDiff)
--- HELLO test-case OutDiff2 (under suite/OutDiff2)
---------------------------------------------------------
-TEST FAILED on ip-10-80-17-78 : HELLO test-case BothDiff (under BothDiff)
----------- Differences in errors ----------
-0a1
-> Error text
----------- Differences in output ----------
-0a1
-> Hello World!
-
-Summary of all Successful tests follows...
----------------------------------------------------------------------------------
-The following tests succeeded : 
-In HELLO test-suite TargetApp:
-  - HELLO test-case Success
-
-
-''')
+<-PYT:smtp1.sendmail('jensk@localhost', ['tom', 'dick', 'harry'], ('From: jensk@localhost\n'
+ 'To: tom,dick,harry\n'
+ 'Subject: 17Oct2014 HELLO : 4 tests : 3 FAILED\n'
+ '\n'
+ 'Summary of all Unsuccessful tests follows...\n'
+ '---------------------------------------------------------------------------------\n'
+ 'The following tests FAILED : \n'
+ 'In HELLO test-suite TargetApp:\n'
+ '  - HELLO test-case OutDiff  : output different\n'
+ '  - HELLO test-case BothDiff : errors different(+)\n'
+ '  In HELLO test-suite suite:\n'
+ '    - HELLO test-case OutDiff2 : output different\n'
+ '\n'
+ '\n'
+ 'Details of all Unsuccessful tests follows...\n'
+ '---------------------------------------------------------------------------------\n'
+ '\n'
+ 'Detailed information for the tests that FAILED follows...\n'
+ '--------------------------------------------------------\n'
+ '2 TESTS FAILED on got003048 :\n'
+ '---------- Differences in output ----------\n'
+ '0a1\n'
+ '> Hello World!\n'
+ '\n'
+ '-- HELLO test-case OutDiff (under OutDiff)\n'
+ '-- HELLO test-case OutDiff2 (under suite/OutDiff2)\n'
+ '--------------------------------------------------------\n'
+ 'TEST FAILED on got003048 : HELLO test-case BothDiff (under BothDiff)\n'
+ '---------- Differences in errors ----------\n'
+ '0a1\n'
+ '> Error text\n'
+ '---------- Differences in output ----------\n'
+ '0a1\n'
+ '> Hello World!\n'
+ '\n'
+ 'Summary of all Successful tests follows...\n'
+ '---------------------------------------------------------------------------------\n'
+ 'The following tests succeeded : \n'
+ 'In HELLO test-suite TargetApp:\n'
+ '  - HELLO test-case Success\n'
+ '\n'
+ '\n'))
 ->RET:{}
 <-PYT:smtp1.quit()

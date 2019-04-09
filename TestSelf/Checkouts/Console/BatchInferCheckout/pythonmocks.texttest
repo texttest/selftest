@@ -3,29 +3,28 @@
 ->RET:Instance('SMTP', 'smtp1')
 <-PYT:smtp1.connect('localhost')
 ->RET:(220, 'juliaca.got.jeppesensystems.com ESMTP Sendmail 8.13.8/8.13.8; Tue, 9 Feb 2010 15:20:31 +0100')
-<-PYT:smtp1.sendmail('geoff@localhost', ['fakeuser'], '''From: geoff@localhost
-To: fakeuser
-Subject: 09Feb2010 HELLO : 1 tests : 1 FAILED
-
-Summary of all Unsuccessful tests follows...
----------------------------------------------------------------------------------
-The following tests FAILED : 
-In HELLO test-suite TargetApp:
-  - HELLO test-case Test : output different
-
-
-Details of all Unsuccessful tests follows...
----------------------------------------------------------------------------------
-
-Detailed information for the tests that FAILED follows...
---------------------------------------------------------
-TEST FAILED on juliaca : HELLO test-case Test (under Test)
----------- Differences in output ----------
-1c1
-< Hello
----
-> Hello from batch mode!
-
-''')
+<-PYT:smtp1.sendmail('jensk@localhost', ['fakeuser'], ('From: jensk@localhost\n'
+ 'To: fakeuser\n'
+ 'Subject: 09Apr2019 HELLO : 1 tests : 1 FAILED\n'
+ '\n'
+ 'Summary of all Unsuccessful tests follows...\n'
+ '---------------------------------------------------------------------------------\n'
+ 'The following tests FAILED : \n'
+ 'In HELLO test-suite TargetApp:\n'
+ '  - HELLO test-case Test : output different\n'
+ '\n'
+ '\n'
+ 'Details of all Unsuccessful tests follows...\n'
+ '---------------------------------------------------------------------------------\n'
+ '\n'
+ 'Detailed information for the tests that FAILED follows...\n'
+ '--------------------------------------------------------\n'
+ 'TEST FAILED on got003048 : HELLO test-case Test (under Test)\n'
+ '---------- Differences in output ----------\n'
+ '1c1\n'
+ '< Hello\n'
+ '---\n'
+ '> Hello from batch mode!\n'
+ '\n'))
 ->RET:{}
 <-PYT:smtp1.quit()

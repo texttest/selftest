@@ -5,58 +5,57 @@
 ->RET:Instance('SMTP', 'smtp1')
 <-PYT:smtp1.connect('localhost')
 ->RET:(220, 'khwai.got.jeppesensystems.com ESMTP Sendmail 8.13.8/8.13.8; Tue, 9 Feb 2010 15:20:28 +0100')
-<-PYT:smtp1.sendmail('ec2-user@localhost', ['tom', 'dick', 'harry'], '''From: ec2-user@localhost
-To: tom,dick,harry
-Subject: 17Oct2014 HELLO batch : 2 tests : 2 FAILED
-
-HELLO batch : 1 tests : 1 FAILED
-HELLO batch.copy_1 : 1 tests : 1 FAILED
-
-Summary of all Unsuccessful tests follows...
----------------------------------------------------------------------------------
-HELLO batch : 1 tests : 1 FAILED
-
-The following tests FAILED : 
-In HELLO.batch test-suite TargetApp:
-  - HELLO.batch test-case BothDiff : errors different(+)
-
-
-HELLO batch.copy_1 : 1 tests : 1 FAILED
-
-The following tests FAILED : 
-In HELLO.batch.copy_1 test-suite TargetApp:
-  - HELLO.batch.copy_1 test-case BothDiff : errors different(+)
-
-
-Details of all Unsuccessful tests follows...
----------------------------------------------------------------------------------
-HELLO batch : 1 tests : 1 FAILED
-
-
-Detailed information for the tests that FAILED follows...
---------------------------------------------------------
-TEST FAILED on ip-10-80-18-112 : HELLO.batch test-case BothDiff (under BothDiff)
----------- Differences in errors ----------
-0a1
-> Error text
----------- Differences in output ----------
-0a1
-> Hello World!
-
----------------------------------------------------------------------------------
-HELLO batch.copy_1 : 1 tests : 1 FAILED
-
-
-Detailed information for the tests that FAILED follows...
---------------------------------------------------------
-TEST FAILED on ip-10-80-18-112 : HELLO.batch.copy_1 test-case BothDiff (under BothDiff)
----------- Differences in errors ----------
-0a1
-> Error text
----------- Differences in output ----------
-0a1
-> Hello World!
-
-''')
+<-PYT:smtp1.sendmail('jensk@localhost', ['tom', 'dick', 'harry'], ('From: jensk@localhost\n'
+ 'To: tom,dick,harry\n'
+ 'Subject: 17Oct2014 HELLO batch : 2 tests : 2 FAILED\n'
+ '\n'
+ 'HELLO batch : 1 tests : 1 FAILED\n'
+ 'HELLO batch.copy_1 : 1 tests : 1 FAILED\n'
+ '\n'
+ 'Summary of all Unsuccessful tests follows...\n'
+ '---------------------------------------------------------------------------------\n'
+ 'HELLO batch : 1 tests : 1 FAILED\n'
+ '\n'
+ 'The following tests FAILED : \n'
+ 'In HELLO.batch test-suite TargetApp:\n'
+ '  - HELLO.batch test-case BothDiff : errors different(+)\n'
+ '\n'
+ '\n'
+ 'HELLO batch.copy_1 : 1 tests : 1 FAILED\n'
+ '\n'
+ 'The following tests FAILED : \n'
+ 'In HELLO.batch.copy_1 test-suite TargetApp:\n'
+ '  - HELLO.batch.copy_1 test-case BothDiff : errors different(+)\n'
+ '\n'
+ '\n'
+ 'Details of all Unsuccessful tests follows...\n'
+ '---------------------------------------------------------------------------------\n'
+ 'HELLO batch : 1 tests : 1 FAILED\n'
+ '\n'
+ '\n'
+ 'Detailed information for the tests that FAILED follows...\n'
+ '--------------------------------------------------------\n'
+ 'TEST FAILED on got003048 : HELLO.batch test-case BothDiff (under BothDiff)\n'
+ '---------- Differences in errors ----------\n'
+ '0a1\n'
+ '> Error text\n'
+ '---------- Differences in output ----------\n'
+ '0a1\n'
+ '> Hello World!\n'
+ '\n'
+ '---------------------------------------------------------------------------------\n'
+ 'HELLO batch.copy_1 : 1 tests : 1 FAILED\n'
+ '\n'
+ '\n'
+ 'Detailed information for the tests that FAILED follows...\n'
+ '--------------------------------------------------------\n'
+ 'TEST FAILED on got003048 : HELLO.batch.copy_1 test-case BothDiff (under BothDiff)\n'
+ '---------- Differences in errors ----------\n'
+ '0a1\n'
+ '> Error text\n'
+ '---------- Differences in output ----------\n'
+ '0a1\n'
+ '> Hello World!\n'
+ '\n'))
 ->RET:{}
 <-PYT:smtp1.quit()

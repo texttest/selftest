@@ -3,20 +3,19 @@
 ->RET:Instance('SMTP', 'smtp1')
 <-PYT:smtp1.connect('localhost')
 ->RET:(220, 'tanga.got.jeppesensystems.com ESMTP Sendmail 8.14.4/8.14.4; Thu, 19 Dec 2013 10:12:57 +0100')
-<-PYT:smtp1.sendmail('geoff@localhost', ['harry'], '''From: geoff@localhost
-To: harry
-Subject: 04Jun2008 FAKE v1.v2 : 1 tests ran, all succeeded
-
-04Jun2008 HELLO batch : 1 tests, all successful
-
-Summary of all Successful tests follows...
----------------------------------------------------------------------------------
-The following tests succeeded : 
-In HELLO.batch test-suite TargetApp:
-  - HELLO.batch test-case Success
-
-
-''')
+<-PYT:smtp1.sendmail('jensk@localhost', ['harry'], ('From: jensk@localhost\n'
+ 'To: harry\n'
+ 'Subject: 04Jun2008 FAKE v1.v2 : 1 tests ran, all succeeded\n'
+ '\n'
+ '04Jun2008 HELLO batch : 1 tests, all successful\n'
+ '\n'
+ 'Summary of all Successful tests follows...\n'
+ '---------------------------------------------------------------------------------\n'
+ 'The following tests succeeded : \n'
+ 'In HELLO.batch test-suite TargetApp:\n'
+ '  - HELLO.batch test-case Success\n'
+ '\n'
+ '\n'))
 ->RET:{}
 <-PYT:smtp1.quit()
 ->RET:(221, '2.0.0 tanga.got.jeppesensystems.com closing connection')

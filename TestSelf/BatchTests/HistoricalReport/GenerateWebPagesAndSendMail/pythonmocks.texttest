@@ -44,7 +44,7 @@
 <-PYT:legend_best.get_frame()
 ->RET:Instance('FancyBboxPatch(Patch, Artist, object)', 'fancybboxpatch1')
 <-PYT:fancybboxpatch1.set_alpha(0.5)
-<-PYT:figure1.savefig('/home/geoff/.texttest/tmp/texttest.02Feb212502.32660/texttest/TestSelf/BatchTests/HistoricalReport/GenerateWebPagesAndSendMail/report/hello/images/test_normal.png', dpi=100)
+<-PYT:figure1.savefig('/nfs/vm/texttest-tmp-mc/jensk/texttest.09Apr121738.15605/texttest/TestSelf/BatchTests/HistoricalReport/GenerateWebPagesAndSendMail/report/hello/images/test_normal.png', dpi=100)
 <-PYT:pylab.clf()
 <-PYT:pylab.figure(1)
 ->RET:figure1
@@ -97,20 +97,20 @@
 <-PYT:legend_best1.get_frame()
 ->RET:Instance('FancyBboxPatch', 'fancybboxpatch2')
 <-PYT:fancybboxpatch2.set_alpha(0.5)
-<-PYT:figure1.savefig('/home/geoff/.texttest/tmp/texttest.02Feb212502.32660/texttest/TestSelf/BatchTests/HistoricalReport/GenerateWebPagesAndSendMail/report/hello/images/test_normal_all_Jan2006.png', dpi=100)
+<-PYT:figure1.savefig('/nfs/vm/texttest-tmp-mc/jensk/texttest.09Apr121738.15605/texttest/TestSelf/BatchTests/HistoricalReport/GenerateWebPagesAndSendMail/report/hello/images/test_normal_all_Jan2006.png', dpi=100)
 <-PYT:import smtplib
 <-PYT:smtplib.SMTP()
 ->RET:Instance('SMTP', 'smtp1')
 <-PYT:smtp1.connect('localhost')
 ->RET:(220, 'got001865.jeppesensystems.com ESMTP Sendmail 8.14.4/8.14.4; Tue, 24 Sep 2013 11:15:58 +0200')
-<-PYT:smtp1.sendmail('geoff@localhost', ['tom', 'dick', 'harry'], '''From: geoff@localhost
-To: tom,dick,harry
-Subject: 01Oct2007 HELLO normal : 4 tests ran : 3 FAILED
-
-Please see detailed results at http://hello.server.com/test_normal_26Jan2006_Rel1.2.html
-
-The main index page can be found at file:///home/geoff/.texttest/tmp/texttest.02Feb212502.32660/texttest/TestSelf/BatchTests/HistoricalReport/GenerateWebPagesAndSendMail/report/index.html
-''')
+<-PYT:smtp1.sendmail('jensk@localhost', ['tom', 'dick', 'harry'], ('From: jensk@localhost\n'
+ 'To: tom,dick,harry\n'
+ 'Subject: 01Oct2007 HELLO normal : 4 tests ran : 3 FAILED\n'
+ '\n'
+ 'Please see detailed results at http://hello.server.com/test_normal_26Jan2006_Rel1.2.html\n'
+ '\n'
+ 'The main index page can be found at '
+ 'file:///nfs/vm/texttest-tmp-mc/jensk/texttest.09Apr121738.15605/texttest/TestSelf/BatchTests/HistoricalReport/GenerateWebPagesAndSendMail/report/index.html\n'))
 ->RET:{}
 <-PYT:smtp1.quit()
 ->RET:(221, '2.0.0 got001865.jeppesensystems.com closing connection')
