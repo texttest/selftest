@@ -27,17 +27,17 @@ def editFiles(dir):
             editFiles(fullPath)
 
 file = open("readonlyfile")
-print "Found and read my read-only file: ", file.read()
+print("Found and read my read-only file: ", file.read())
 if os.path.isfile("readonlyfile2"):
     file = open("readonlyfile2")
-    print "Found and read my second read-only file: ", file.read()
+    print("Found and read my second read-only file: ", file.read())
 
 envVar = os.getenv("MY_ENV_VAR")
 if envVar is not None:
-    print "Got environment variable", envVar
+    print("Got environment variable", envVar)
 
 writedirs = os.getenv("WRITEABLE_DIRS") 
 if writedirs and os.path.isdir(writedirs):
     editFiles(writedirs)
 else:
-    print "Didn't get given a directory structure to edit!"
+    print("Didn't get given a directory structure to edit!")
