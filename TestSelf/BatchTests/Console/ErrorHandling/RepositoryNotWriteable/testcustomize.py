@@ -1,5 +1,5 @@
 
-import shutil, __builtin__
+import shutil, builtins
 
 orig_copyfile = shutil.copyfile
 
@@ -13,9 +13,9 @@ shutil.copyfile = copyfile
 
 orig_open = open
 
-def my_open(fn, mode="r"):
+def my_open(fn, mode="r", **kw):
     if mode == "w" and fn.endswith("_therun"):
         raise IOError("Can't write there!")
     return orig_open(fn, mode)
 
-__builtin__.open = my_open
+builtins.open = my_open

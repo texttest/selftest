@@ -1,5 +1,5 @@
 #!/usr/bin/env python
 import sys
-print 'h' * sys.getrecursionlimit()
+print('h' * sys.getrecursionlimit())
 
 

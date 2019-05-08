@@ -1,5 +1,7 @@
 #!/bin/python -tt
 
+import sys
+
 def allowed(num):
     """
     See http://www.w3.org/TR/REC-xml/#NT-Char
@@ -20,9 +22,9 @@ def allowed(num):
 
 
 def print_char(num):
-    char_description = u"Char #x%04x (%r) <%s> is %s." % (
-        num, unichr(num), unichr(num), ['illegal', 'legal'][allowed(num)])
-    print char_description.encode('utf-8')
+    char_description = "Char #x%04x (%r) <%s> is %s." % (
+        num, chr(num), chr(num), ['illegal', 'legal'][allowed(num)])
+    sys.stdout.buffer.write(char_description.encode('utf-8', errors='ignore') + b"\n")
 
 
 def main():

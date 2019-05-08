@@ -16,5 +16,12 @@ extra_version:{CLEAR lsf.gui}
 # Save us having to maintain a separate .nt GUI log which is updated too often for this to be convenient
 gui_log:&lt;default browser&gt;{REPLACE firefox}
 pythonmocks:send_signal(15){REPLACE send_signal(12)}
+pythonmocks:(under [A-Za-z]*)\\\\{REPLACE \1/}
+targetReport:(under [A-Za-z]*)\\{REPLACE \1/}
 overview*:texttestc.py{REPLACE texttest}
 dynamic_gui_log:([^ ]*)/Scripts/texttestc.py{REPLACE \1/bin/texttest}
+output:\\\\{REPLACE /}
+output:\\{REPLACE /}
+errors:\\{REPLACE /}
+overview*:\\{REPLACE /}
+pythonmocks:\\\\{REPLACE /}
