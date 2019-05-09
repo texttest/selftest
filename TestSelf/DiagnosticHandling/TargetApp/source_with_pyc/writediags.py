@@ -2,10 +2,10 @@
 import os, log4py, time
 
 time.sleep(int(os.getenv("SLEEP_TIME", "0")))
-print "This is a simple diagnostic-writing program"
+print("This is a simple diagnostic-writing program")
 
 # Point log4py at the configuration file to read
-rootLogger = log4py.Logger(log4py.TRUE, os.getenv("TESTDIAG_READFILE"))
+rootLogger = log4py.create_logger(log4py.TRUE, os.getenv("TESTDIAG_READFILE"))
 
 logger1 = log4py.Logger().get_instance("firstdiag")
 logger1.info("Some information")

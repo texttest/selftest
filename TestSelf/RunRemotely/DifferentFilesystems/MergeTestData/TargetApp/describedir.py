@@ -6,4 +6,4 @@ for root, dirs, files in os.walk("datadir"):
     allFiles += [ os.path.join(root, file) for file in files ]
 
 for file in sorted(allFiles):
-    print file.replace("\\", "/"), ":", open(file).read().strip()
+    print(file.replace("\\", "/"), ":", open(file).read().strip())

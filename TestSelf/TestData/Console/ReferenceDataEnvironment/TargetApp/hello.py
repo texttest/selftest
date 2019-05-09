@@ -1,3 +1,3 @@
 #!/usr/bin/env python
 import os
-print 'Hello', os.path.basename(os.getenv("REFVAR"))
+print('Hello', os.path.basename(os.getenv("REFVAR")))

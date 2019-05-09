@@ -1,2 +1,2 @@
 
-print "Hello after 5 seconds"
+print("Hello after 5 seconds")

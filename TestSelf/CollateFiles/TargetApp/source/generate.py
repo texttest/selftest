@@ -3,8 +3,8 @@
 import os, sys
 
 def generateFile(name):
-    print "Generating", os.path.basename(name)
-    print >>file(name, "w"), os.path.basename(name) + "\nToday is Sunday"
+    print("Generating", os.path.basename(name))
+    print(os.path.basename(name) + "\nToday is Sunday", file=open(name, "w"))
 
 generateFile("generated.first.dump")
 generateFile("generated.second.dump")

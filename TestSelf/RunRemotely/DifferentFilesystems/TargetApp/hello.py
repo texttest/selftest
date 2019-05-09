@@ -2,6 +2,6 @@
 
 import os
 if os.path.isfile("testdata"):
-    print 'Hello ' + open("testdata").read().strip() + "!"
+    print('Hello ' + open("testdata").read().strip() + "!")
 else:
-    print 'Hello World!'
+    print('Hello World!')

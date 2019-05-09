@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 import os
-print 'Hello World!'
+print('Hello World!')
 # Should be able to collate this
 file = open("local", "w")
 file.write("local\n")

@@ -1,3 +1,3 @@
 #!/usr/bin/env python
 import sys
-print 'Hello', " ".join(sys.argv)
+print('Hello', " ".join(sys.argv))

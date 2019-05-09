@@ -1,5 +1,5 @@
 #!/usr/bin/env python
 
 import sys
-print 'Hello World!'
+print('Hello World!')
 sys.exit(42)

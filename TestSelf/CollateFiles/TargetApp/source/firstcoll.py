@@ -7,5 +7,5 @@ def get_input():
     else:
         return sys.stdin
 
-print get_input().read()
-print "An extra line from the first!"
+print(get_input().read())
+print("An extra line from the first!")

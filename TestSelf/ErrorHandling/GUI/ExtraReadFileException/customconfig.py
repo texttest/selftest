@@ -7,4 +7,4 @@ def getConfig(*args):
 
 class Config(default.Config):
     def extraReadFiles(self, test):
-        raise RuntimeError, "We don't know what we're doing!"
+        raise RuntimeError("We don't know what we're doing!")

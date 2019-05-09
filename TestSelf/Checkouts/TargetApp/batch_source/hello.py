@@ -1,3 +1,3 @@
 #!/usr/bin/env python
-print 'Hello from batch mode!'
+print('Hello from batch mode!')
 
