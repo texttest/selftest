@@ -1,9 +1,6 @@
-<-PYT:import urllib
-<-PYT:import urllib.parse
 <-PYT:import xmlrpc
 <-PYT:import xmlrpc.client
 <-PYT:import urllib.request
-<-PYT:import urllib.error
 <-PYT:xmlrpc.client.ServerProxy('http://www.myjirasite.com/rpc/xmlrpc')
 ->RET:Instance('ServerProxy', 'serverproxy1')
 <-PYT:serverproxy1.jira1.login('texttest', 'password')
