@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 import os
 
-print 'Sleeping for 1 seconds...'
-print 'Done'
+print('Sleeping for 1 seconds...')
+print('Done')
 
 os.mkdir("screenshots")
 open("screenshots/screenshot1.png", "w").close()

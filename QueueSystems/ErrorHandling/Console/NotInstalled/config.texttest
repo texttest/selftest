@@ -3,3 +3,4 @@ pythonmocks:env=\{.*{REPLACE env=<something>}
 pythonmocks:env={->} .*:.*\}
 pythonmocks:^ .*:.*\},{REPLACE <something>,}
 pythonmocks:[^ ]*/texttest[\.py]* {REPLACE <path_to_texttest> }
+pythonmocks:encoding=.*,{REPLACE encoding=<something>,}

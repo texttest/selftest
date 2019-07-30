@@ -10,9 +10,9 @@ try:
             return 5
 
     sleepLength = getSleepLength()
-    print "Sleeping for", sleepLength, "seconds..."
+    print("Sleeping for", sleepLength, "seconds...")
     sys.stdout.flush()
     time.sleep(sleepLength)
-    print "Done"
+    print("Done")
 except KeyboardInterrupt:
     pass

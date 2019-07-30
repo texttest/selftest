@@ -3,38 +3,37 @@
 ->RET:Instance('SMTP', 'smtp1')
 <-PYT:smtp1.connect('localhost')
 ->RET:(220, 'crownpoint.got.jeppesensystems.com ESMTP Sendmail 8.14.4/8.14.4; Tue, 16 Dec 2014 10:42:05 +0100')
-<-PYT:smtp1.sendmail('geoff@localhost', ['tom', 'dick', 'harry'], '''From: geoff@localhost
-To: tom,dick,harry
-Subject: 16Dec2014 HELLO : 2 tests : 1 FAILED
-
-Summary of all Unsuccessful tests follows...
----------------------------------------------------------------------------------
-The following tests FAILED : 
-In HELLO test-suite TargetApp:
-  - HELLO test-case Test  : output different
-
-
-Details of all Unsuccessful tests follows...
----------------------------------------------------------------------------------
-
-Detailed information for the tests that FAILED follows...
---------------------------------------------------------
-TEST FAILED on centreville.carmen.se : HELLO test-case Test (under Test)
----------- Differences in output ----------
-1c1
-< Hello
----
-> Hello World!
-
-Summary of all Successful tests follows...
----------------------------------------------------------------------------------
-The following tests succeeded : 
-In HELLO test-suite TargetApp:
-  In HELLO test-suite Suite:
-    - HELLO test-case Test
-
-
-''')
+<-PYT:smtp1.sendmail('geoff@localhost', ['tom', 'dick', 'harry'], ('From: geoff@localhost\n'
+ 'To: tom,dick,harry\n'
+ 'Subject: 30Jul2019 HELLO : 2 tests : 1 FAILED\n'
+ '\n'
+ 'Summary of all Unsuccessful tests follows...\n'
+ '---------------------------------------------------------------------------------\n'
+ 'The following tests FAILED : \n'
+ 'In HELLO test-suite TargetApp:\n'
+ '  - HELLO test-case Test  : output different\n'
+ '\n'
+ '\n'
+ 'Details of all Unsuccessful tests follows...\n'
+ '---------------------------------------------------------------------------------\n'
+ '\n'
+ 'Detailed information for the tests that FAILED follows...\n'
+ '--------------------------------------------------------\n'
+ 'TEST FAILED on centreville.carmen.se : HELLO test-case Test (under Test)\n'
+ '---------- Differences in output ----------\n'
+ '1c1\n'
+ '< Hello\n'
+ '---\n'
+ '> Hello World!\n'
+ '\n'
+ 'Summary of all Successful tests follows...\n'
+ '---------------------------------------------------------------------------------\n'
+ 'The following tests succeeded : \n'
+ 'In HELLO test-suite TargetApp:\n'
+ '  In HELLO test-suite Suite:\n'
+ '    - HELLO test-case Test\n'
+ '\n'
+ '\n'))
 ->RET:{}
 <-PYT:smtp1.quit()
 ->RET:(221, '2.0.0 crownpoint.got.jeppesensystems.com closing connection')

@@ -28,9 +28,9 @@ traffic:[^ ]*/(texttest/logging.texttest){REPLACE <texttest_home>/\1}
 externalmocks:[^ ]*/texttestc?[\.py]* {REPLACE <path_to_texttest> }
 externalmocks:<-CLI:[0-9]*{REPLACE <-CLI:<pid>}
 traffic:'pid'${LINES 3}
-externalmocks:S'Running on{WORD 3}{REPLACE <host>'}
-externalmocks:S'.*result files on{WORD -1}{REPLACE <host>'}
-externalmocks:S'RUN (.*)'{WORD 2}{REPLACE (<host>)}
+externalmocks:VRunning on{WORD 3}{REPLACE <host>}
+externalmocks:V.*result files on{WORD -1}{REPLACE <host>}
+externalmocks:VRUN (.*){WORD 2}{REPLACE (<host>)}
 externalmocks:executionHosts{LINES 4}
 *mocks:at [0-3][0-9]:[0-6][0-9]{REPLACE at <time of day>}
 traffic:S'returncode'{LINES 3}
