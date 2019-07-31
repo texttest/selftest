@@ -2,8 +2,8 @@ base_version:queuesystem
 
 [run_dependent_text]
 pythonmocks:env=\{.*{REPLACE env=<something>}
-pythonmocks:env={->} .*:.*\}
-pythonmocks:^ .*:.*\},{REPLACE <something>,}
+pythonmocks:env={->}}, startupinfo
+pythonmocks:.*}, startupinfo{REPLACE <something>,}
 pythonmocks:\'[^ \']*/texttestc?[\.py]*\'{REPLACE <path_to_texttest>}
 pythonmocks:\'[^ \']*python\.exe*\'{REPLACE <path_to_python>}
 pythonmocks:<path_to_python>, <path_to_texttest>{REPLACE <path_to_texttest>}
