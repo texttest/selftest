@@ -1,8 +1,5 @@
 <-PYT:datetime.datetime.now()
 ->RET:datetime.datetime(2014, 8, 7, 15, 2, 7, 638255)
-<-PYT:import texttestlib.utils
-<-PYT:texttestlib.utils.__path__
-->RET:raise exceptions.AttributeError("'module' object has no attribute '__path__'")
 <-PYT:import boto
 <-PYT:boto.__path__
 ->RET:['Fake value just to mark that it exists']
@@ -137,11 +134,11 @@
 ->RET:u'i-5e17ea1d'
 <-PYT:instance17.id
 ->RET:u'i-e9011ba9'
-<-PYT:ec2connection_eu_west_1.get_all_instance_status([u'i-0da45f4e', u'i-1a011a5a', u'i-078d9e47', u'i-0e24db4d', u'i-006ffd43', u'i-059e8e45', u'i-8a9e80ca', u'i-be7788fd', u'i-1222dd51', u'i-4122dc02', u'i-5e17ea1d', u'i-e9011ba9'])
+<-PYT:ec2connection_eu_west_1.get_all_instance_status(['i-0da45f4e', 'i-1a011a5a', 'i-078d9e47', 'i-0e24db4d', 'i-006ffd43', 'i-059e8e45', 'i-8a9e80ca', 'i-be7788fd', 'i-1222dd51', 'i-4122dc02', 'i-5e17ea1d', 'i-e9011ba9'])
 ->RET:Instance('InstanceStatusSet(list)', 'instancestatusset1')
 <-PYT:instancestatusset1.__iter__()
 ->RET:Instance('listiterator(object)', 'listiterator1')
-<-PYT:listiterator1.next()
+<-PYT:listiterator1.__next__()
 ->RET:Instance('InstanceStatus(object)', 'instancestatus1')
 <-PYT:instancestatus1.instance_status
 ->RET:Instance('Status(object)', 'status1')
@@ -149,7 +146,7 @@
 ->RET:u'ok'
 <-PYT:instancestatus1.id
 ->RET:u'i-059e8e45'
-<-PYT:listiterator1.next()
+<-PYT:listiterator1.__next__()
 ->RET:Instance('InstanceStatus', 'instancestatus2')
 <-PYT:instancestatus2.instance_status
 ->RET:Instance('Status', 'status2')
@@ -157,7 +154,7 @@
 ->RET:u'ok'
 <-PYT:instancestatus2.id
 ->RET:u'i-8a9e80ca'
-<-PYT:listiterator1.next()
+<-PYT:listiterator1.__next__()
 ->RET:Instance('InstanceStatus', 'instancestatus3')
 <-PYT:instancestatus3.instance_status
 ->RET:Instance('Status', 'status3')
@@ -165,7 +162,7 @@
 ->RET:u'ok'
 <-PYT:instancestatus3.id
 ->RET:u'i-1a011a5a'
-<-PYT:listiterator1.next()
+<-PYT:listiterator1.__next__()
 ->RET:Instance('InstanceStatus', 'instancestatus4')
 <-PYT:instancestatus4.instance_status
 ->RET:Instance('Status', 'status4')
@@ -173,7 +170,7 @@
 ->RET:u'ok'
 <-PYT:instancestatus4.id
 ->RET:u'i-5e17ea1d'
-<-PYT:listiterator1.next()
+<-PYT:listiterator1.__next__()
 ->RET:Instance('InstanceStatus', 'instancestatus5')
 <-PYT:instancestatus5.instance_status
 ->RET:Instance('Status', 'status5')
@@ -181,8 +178,8 @@
 ->RET:u'ok'
 <-PYT:instancestatus5.id
 ->RET:u'i-0da45f4e'
-<-PYT:listiterator1.next()
-->RET:raise exceptions.StopIteration('')
+<-PYT:listiterator1.__next__()
+->RET:raise StopIteration('')
 <-PYT:instance1.instance_type
 ->RET:u't1.micro'
 <-PYT:instance2.instance_type
@@ -207,9 +204,7 @@
 ->RET:u't1.micro'
 <-PYT:instance17.instance_type
 ->RET:u't1.micro'
-<-PYT:texttestlib.utils.getUserName()
-->RET:'fakeuser'
-<-PYT:ec2connection_eu_west_1.get_only_instances(instance_ids=[u'i-0da45f4e', u'i-5e17ea1d', u'i-8a9e80ca', u'i-059e8e45', u'i-1a011a5a', u'i-006ffd43', u'i-0e24db4d', u'i-be7788fd', u'i-1222dd51', u'i-078d9e47', u'i-4122dc02', u'i-e9011ba9'])
+<-PYT:ec2connection_eu_west_1.get_only_instances(instance_ids=['i-0da45f4e', 'i-5e17ea1d', 'i-8a9e80ca', 'i-059e8e45', 'i-1a011a5a', 'i-006ffd43', 'i-0e24db4d', 'i-be7788fd', 'i-1222dd51', 'i-078d9e47', 'i-4122dc02', 'i-e9011ba9'])
 ->RET:[Instance('Instance', 'instance107'), Instance('Instance', 'instance105'), Instance('Instance', 'instance114'), Instance('Instance', 'instance111'), Instance('Instance', 'instance110'), Instance('Instance', 'instance102'), Instance('Instance', 'instance115'), Instance('Instance', 'instance112'), Instance('Instance', 'instance118'), Instance('Instance', 'instance103'), Instance('Instance', 'instance101'), Instance('Instance', 'instance117')]
 <-PYT:instance107.tags
 ->RET:Instance('TagSet', 'tagset107')

@@ -2,7 +2,7 @@
 ->RET:datetime.datetime(2014, 10, 2, 17, 1, 44, 690842)
 <-PYT:import texttestlib.utils
 <-PYT:texttestlib.utils.__path__
-->RET:raise exceptions.AttributeError("'module' object has no attribute '__path__'")
+->RET:raise AttributeError("'module' object has no attribute '__path__'")
 <-PYT:import boto
 <-PYT:boto.__path__
 ->RET:['Fake value just to mark that it exists']
@@ -185,7 +185,7 @@
 ->RET:Instance('InstanceStatusSet(list)', 'instancestatusset1')
 <-PYT:instancestatusset1.__iter__()
 ->RET:Instance('listiterator(object)', 'listiterator1')
-<-PYT:listiterator1.next()
+<-PYT:listiterator1.__next__()
 ->RET:Instance('InstanceStatus(object)', 'instancestatus1')
 <-PYT:instancestatus1.instance_status
 ->RET:Instance('Status(object)', 'status1')
@@ -193,7 +193,7 @@
 ->RET:u'ok'
 <-PYT:instancestatus1.id
 ->RET:u'i-7b4b2838'
-<-PYT:listiterator1.next()
+<-PYT:listiterator1.__next__()
 ->RET:Instance('InstanceStatus', 'instancestatus2')
 <-PYT:instancestatus2.instance_status
 ->RET:Instance('Status', 'status2')
@@ -201,7 +201,7 @@
 ->RET:u'ok'
 <-PYT:instancestatus2.id
 ->RET:u'i-16a9f855'
-<-PYT:listiterator1.next()
+<-PYT:listiterator1.__next__()
 ->RET:Instance('InstanceStatus', 'instancestatus3')
 <-PYT:instancestatus3.instance_status
 ->RET:Instance('Status', 'status3')
@@ -209,7 +209,7 @@
 ->RET:u'ok'
 <-PYT:instancestatus3.id
 ->RET:u'i-395e747b'
-<-PYT:listiterator1.next()
+<-PYT:listiterator1.__next__()
 ->RET:Instance('InstanceStatus', 'instancestatus4')
 <-PYT:instancestatus4.instance_status
 ->RET:Instance('Status', 'status4')
@@ -217,7 +217,7 @@
 ->RET:u'ok'
 <-PYT:instancestatus4.id
 ->RET:u'i-373f1575'
-<-PYT:listiterator1.next()
+<-PYT:listiterator1.__next__()
 ->RET:Instance('InstanceStatus', 'instancestatus5')
 <-PYT:instancestatus5.instance_status
 ->RET:Instance('Status', 'status5')
@@ -225,7 +225,7 @@
 ->RET:u'ok'
 <-PYT:instancestatus5.id
 ->RET:u'i-5784ccb2'
-<-PYT:listiterator1.next()
+<-PYT:listiterator1.__next__()
 ->RET:Instance('InstanceStatus', 'instancestatus6')
 <-PYT:instancestatus6.instance_status
 ->RET:Instance('Status', 'status6')
@@ -233,8 +233,8 @@
 ->RET:u'ok'
 <-PYT:instancestatus6.id
 ->RET:u'i-7b92da9e'
-<-PYT:listiterator1.next()
-->RET:raise exceptions.StopIteration('')
+<-PYT:listiterator1.__next__()
+->RET:raise StopIteration('')
 <-PYT:instance2.instance_type
 ->RET:u'c3.2xlarge'
 <-PYT:instance3.instance_type
@@ -355,18 +355,18 @@
 ->RET:Instance('TagSet', 'tagset38')
 <-PYT:tagset38.get('TextTest user', '')
 ->RET:''
-<-PYT:instance23.add_tag('TextTest user', 'geoff_02Oct17:01:44')
-<-PYT:instance3.add_tag('TextTest user', 'geoff_02Oct17:01:44')
+<-PYT:instance23.add_tag('TextTest user', 'fakeuser_02Oct17:01:44')
+<-PYT:instance3.add_tag('TextTest user', 'fakeuser_02Oct17:01:44')
 <-PYT:ec2connection_eu_west_1.get_only_instances(instance_ids=[u'i-cdb1f928', u'i-2d90d8c8'])
 ->RET:[Instance('Instance', 'instance39'), Instance('Instance', 'instance139')]
 <-PYT:instance39.tags
 ->RET:Instance('TagSet', 'tagset39')
 <-PYT:tagset39.get('TextTest user', '')
-->RET:u'geoff_02Oct17:01:44'
+->RET:u'fakeuser_02Oct17:01:44'
 <-PYT:instance139.tags
 ->RET:Instance('TagSet', 'tagset139')
 <-PYT:tagset139.get('TextTest user', '')
-->RET:u'geoff_02Oct17:01:44'
+->RET:u'fakeuser_02Oct17:01:44'
 <-PYT:instance39.id
 ->RET:u'i-cdb1f928'
 <-PYT:instance139.id
@@ -387,7 +387,7 @@
 <-PYT:instance139.instance_type
 ->RET:u't2.small'
 <-PYT:instance39.start()
-->RET:raise Instance('BotoServerError(exceptions.StandardError)', 'botoservererror1')
+->RET:raise Instance('BotoServerError(StandardError)', 'botoservererror1')
 <-PYT:botoservererror1.__str__()
 ->RET:'''BotoServerError: 500 Internal Server Error
 <?xml version="1.0" encoding="UTF-8"?>

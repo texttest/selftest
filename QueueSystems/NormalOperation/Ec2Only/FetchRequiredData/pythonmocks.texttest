@@ -1,8 +1,5 @@
 <-PYT:datetime.datetime.now()
 ->RET:datetime.datetime(2014, 10, 15, 11, 29, 13, 640352)
-<-PYT:import texttestlib.utils
-<-PYT:texttestlib.utils.__path__
-->RET:raise exceptions.AttributeError("'module' object has no attribute '__path__'")
 <-PYT:import boto
 <-PYT:boto.__path__
 ->RET:['Fake value just to mark that it exists']
@@ -183,11 +180,11 @@
 ->RET:u'i-07d5e045'
 <-PYT:instance24.id
 ->RET:u'i-cdb1f928'
-<-PYT:ec2connection_eu_west_1.get_all_instance_status([u'i-4ca5f40f', u'i-2d90d8c8', u'i-5784ccb2', u'i-4c88c0a9', u'i-f1bdf614', u'i-395e747b', u'i-16a9f855', u'i-7b4b2838', u'i-373f1575', u'i-7b92da9e', u'i-3862347b', u'i-c6133984', u'i-545d7716', u'i-07d5e045', u'i-cdb1f928'])
+<-PYT:ec2connection_eu_west_1.get_all_instance_status(['i-4ca5f40f', 'i-2d90d8c8', 'i-5784ccb2', 'i-4c88c0a9', 'i-f1bdf614', 'i-395e747b', 'i-16a9f855', 'i-7b4b2838', 'i-373f1575', 'i-7b92da9e', 'i-3862347b', 'i-c6133984', 'i-545d7716', 'i-07d5e045', 'i-cdb1f928'])
 ->RET:Instance('InstanceStatusSet(list)', 'instancestatusset1')
 <-PYT:instancestatusset1.__iter__()
 ->RET:Instance('listiterator(object)', 'listiterator1')
-<-PYT:listiterator1.next()
+<-PYT:listiterator1.__next__()
 ->RET:Instance('InstanceStatus(object)', 'instancestatus1')
 <-PYT:instancestatus1.instance_status
 ->RET:Instance('Status(object)', 'status1')
@@ -195,8 +192,8 @@
 ->RET:u'ok'
 <-PYT:instancestatus1.id
 ->RET:u'i-16a9f855'
-<-PYT:listiterator1.next()
-->RET:raise exceptions.StopIteration('')
+<-PYT:listiterator1.__next__()
+->RET:raise StopIteration('')
 <-PYT:instance2.instance_type
 ->RET:u'c3.2xlarge'
 <-PYT:instance3.instance_type
@@ -227,9 +224,7 @@
 ->RET:u'c3.xlarge'
 <-PYT:instance24.instance_type
 ->RET:u'c3.xlarge'
-<-PYT:texttestlib.utils.getUserName()
-->RET:'geoff'
-<-PYT:ec2connection_eu_west_1.get_only_instances(instance_ids=[u'i-16a9f855', u'i-7b4b2838', u'i-4ca5f40f', u'i-395e747b', u'i-373f1575', u'i-5784ccb2', u'i-f1bdf614', u'i-7b92da9e', u'i-4c88c0a9', u'i-3862347b', u'i-c6133984', u'i-07d5e045', u'i-545d7716', u'i-cdb1f928', u'i-2d90d8c8'])
+<-PYT:ec2connection_eu_west_1.get_only_instances(instance_ids=['i-16a9f855', 'i-7b4b2838', 'i-4ca5f40f', 'i-395e747b', 'i-373f1575', 'i-5784ccb2', 'i-f1bdf614', 'i-7b92da9e', 'i-4c88c0a9', 'i-3862347b', 'i-c6133984', 'i-07d5e045', 'i-545d7716', 'i-cdb1f928', 'i-2d90d8c8'])
 ->RET:[Instance('Instance', 'instance25'), Instance('Instance', 'instance26'), Instance('Instance', 'instance27'), Instance('Instance', 'instance28'), Instance('Instance', 'instance29'), Instance('Instance', 'instance30'), Instance('Instance', 'instance31'), Instance('Instance', 'instance32'), Instance('Instance', 'instance33'), Instance('Instance', 'instance34'), Instance('Instance', 'instance35'), Instance('Instance', 'instance36'), Instance('Instance', 'instance37'), Instance('Instance', 'instance38'), Instance('Instance', 'instance39')]
 <-PYT:instance25.tags
 ->RET:Instance('TagSet', 'tagset24')
@@ -291,83 +286,83 @@
 ->RET:Instance('TagSet', 'tagset38')
 <-PYT:tagset38.get('TextTest user', '')
 ->RET:''
-<-PYT:instance8.add_tag('TextTest user', 'geoff_15Oct11:29:13')
-<-PYT:instance10.add_tag('TextTest user', 'geoff_15Oct11:29:13')
-<-PYT:instance2.add_tag('TextTest user', 'geoff_15Oct11:29:13')
-<-PYT:instance7.add_tag('TextTest user', 'geoff_15Oct11:29:13')
-<-PYT:instance14.add_tag('TextTest user', 'geoff_15Oct11:29:13')
-<-PYT:instance4.add_tag('TextTest user', 'geoff_15Oct11:29:13')
-<-PYT:instance6.add_tag('TextTest user', 'geoff_15Oct11:29:13')
-<-PYT:instance15.add_tag('TextTest user', 'geoff_15Oct11:29:13')
-<-PYT:instance5.add_tag('TextTest user', 'geoff_15Oct11:29:13')
-<-PYT:instance16.add_tag('TextTest user', 'geoff_15Oct11:29:13')
-<-PYT:instance19.add_tag('TextTest user', 'geoff_15Oct11:29:13')
-<-PYT:instance23.add_tag('TextTest user', 'geoff_15Oct11:29:13')
-<-PYT:instance21.add_tag('TextTest user', 'geoff_15Oct11:29:13')
-<-PYT:instance24.add_tag('TextTest user', 'geoff_15Oct11:29:13')
-<-PYT:instance3.add_tag('TextTest user', 'geoff_15Oct11:29:13')
-<-PYT:ec2connection_eu_west_1.get_only_instances(instance_ids=[u'i-16a9f855', u'i-7b4b2838', u'i-4ca5f40f', u'i-395e747b', u'i-373f1575', u'i-5784ccb2', u'i-f1bdf614', u'i-7b92da9e', u'i-4c88c0a9', u'i-3862347b', u'i-c6133984', u'i-07d5e045', u'i-545d7716', u'i-cdb1f928', u'i-2d90d8c8'])
+<-PYT:instance8.add_tag('TextTest user', 'fakeuser_15Oct11:29:13')
+<-PYT:instance10.add_tag('TextTest user', 'fakeuser_15Oct11:29:13')
+<-PYT:instance2.add_tag('TextTest user', 'fakeuser_15Oct11:29:13')
+<-PYT:instance7.add_tag('TextTest user', 'fakeuser_15Oct11:29:13')
+<-PYT:instance14.add_tag('TextTest user', 'fakeuser_15Oct11:29:13')
+<-PYT:instance4.add_tag('TextTest user', 'fakeuser_15Oct11:29:13')
+<-PYT:instance6.add_tag('TextTest user', 'fakeuser_15Oct11:29:13')
+<-PYT:instance15.add_tag('TextTest user', 'fakeuser_15Oct11:29:13')
+<-PYT:instance5.add_tag('TextTest user', 'fakeuser_15Oct11:29:13')
+<-PYT:instance16.add_tag('TextTest user', 'fakeuser_15Oct11:29:13')
+<-PYT:instance19.add_tag('TextTest user', 'fakeuser_15Oct11:29:13')
+<-PYT:instance23.add_tag('TextTest user', 'fakeuser_15Oct11:29:13')
+<-PYT:instance21.add_tag('TextTest user', 'fakeuser_15Oct11:29:13')
+<-PYT:instance24.add_tag('TextTest user', 'fakeuser_15Oct11:29:13')
+<-PYT:instance3.add_tag('TextTest user', 'fakeuser_15Oct11:29:13')
+<-PYT:ec2connection_eu_west_1.get_only_instances(instance_ids=['i-16a9f855', 'i-7b4b2838', 'i-4ca5f40f', 'i-395e747b', 'i-373f1575', 'i-5784ccb2', 'i-f1bdf614', 'i-7b92da9e', 'i-4c88c0a9', 'i-3862347b', 'i-c6133984', 'i-07d5e045', 'i-545d7716', 'i-cdb1f928', 'i-2d90d8c8'])
 ->RET:[Instance('Instance', 'instance40'), Instance('Instance', 'instance41'), Instance('Instance', 'instance42'), Instance('Instance', 'instance43'), Instance('Instance', 'instance44'), Instance('Instance', 'instance45'), Instance('Instance', 'instance46'), Instance('Instance', 'instance47'), Instance('Instance', 'instance48'), Instance('Instance', 'instance49'), Instance('Instance', 'instance50'), Instance('Instance', 'instance51'), Instance('Instance', 'instance52'), Instance('Instance', 'instance53'), Instance('Instance', 'instance54')]
 <-PYT:instance40.tags
 ->RET:Instance('TagSet', 'tagset39')
 <-PYT:tagset39.get('TextTest user', '')
-->RET:u'geoff_15Oct11:29:13'
+->RET:u'fakeuser_15Oct11:29:13'
 <-PYT:instance41.tags
 ->RET:Instance('TagSet', 'tagset40')
 <-PYT:tagset40.get('TextTest user', '')
-->RET:u'geoff_15Oct11:29:13'
+->RET:u'fakeuser_15Oct11:29:13'
 <-PYT:instance42.tags
 ->RET:Instance('TagSet', 'tagset41')
 <-PYT:tagset41.get('TextTest user', '')
-->RET:u'geoff_15Oct11:29:13'
+->RET:u'fakeuser_15Oct11:29:13'
 <-PYT:instance43.tags
 ->RET:Instance('TagSet', 'tagset42')
 <-PYT:tagset42.get('TextTest user', '')
-->RET:u'geoff_15Oct11:29:13'
+->RET:u'fakeuser_15Oct11:29:13'
 <-PYT:instance44.tags
 ->RET:Instance('TagSet', 'tagset43')
 <-PYT:tagset43.get('TextTest user', '')
-->RET:u'geoff_15Oct11:29:13'
+->RET:u'fakeuser_15Oct11:29:13'
 <-PYT:instance45.tags
 ->RET:Instance('TagSet', 'tagset44')
 <-PYT:tagset44.get('TextTest user', '')
-->RET:u'geoff_15Oct11:29:13'
+->RET:u'fakeuser_15Oct11:29:13'
 <-PYT:instance46.tags
 ->RET:Instance('TagSet', 'tagset45')
 <-PYT:tagset45.get('TextTest user', '')
-->RET:u'geoff_15Oct11:29:13'
+->RET:u'fakeuser_15Oct11:29:13'
 <-PYT:instance47.tags
 ->RET:Instance('TagSet', 'tagset46')
 <-PYT:tagset46.get('TextTest user', '')
-->RET:u'geoff_15Oct11:29:13'
+->RET:u'fakeuser_15Oct11:29:13'
 <-PYT:instance48.tags
 ->RET:Instance('TagSet', 'tagset47')
 <-PYT:tagset47.get('TextTest user', '')
-->RET:u'geoff_15Oct11:29:13'
+->RET:u'fakeuser_15Oct11:29:13'
 <-PYT:instance49.tags
 ->RET:Instance('TagSet', 'tagset48')
 <-PYT:tagset48.get('TextTest user', '')
-->RET:u'geoff_15Oct11:29:13'
+->RET:u'fakeuser_15Oct11:29:13'
 <-PYT:instance50.tags
 ->RET:Instance('TagSet', 'tagset49')
 <-PYT:tagset49.get('TextTest user', '')
-->RET:u'geoff_15Oct11:29:13'
+->RET:u'fakeuser_15Oct11:29:13'
 <-PYT:instance51.tags
 ->RET:Instance('TagSet', 'tagset50')
 <-PYT:tagset50.get('TextTest user', '')
-->RET:u'geoff_15Oct11:29:13'
+->RET:u'fakeuser_15Oct11:29:13'
 <-PYT:instance52.tags
 ->RET:Instance('TagSet', 'tagset51')
 <-PYT:tagset51.get('TextTest user', '')
-->RET:u'geoff_15Oct11:29:13'
+->RET:u'fakeuser_15Oct11:29:13'
 <-PYT:instance53.tags
 ->RET:Instance('TagSet', 'tagset52')
 <-PYT:tagset52.get('TextTest user', '')
-->RET:u'geoff_15Oct11:29:13'
+->RET:u'fakeuser_15Oct11:29:13'
 <-PYT:instance54.tags
 ->RET:Instance('TagSet', 'tagset53')
 <-PYT:tagset53.get('TextTest user', '')
-->RET:u'geoff_15Oct11:29:13'
+->RET:u'fakeuser_15Oct11:29:13'
 <-PYT:instance40.id
 ->RET:u'i-2d90d8c8'
 <-PYT:instance41.id
@@ -403,7 +398,7 @@
 <-PYT:import boto.ec2.cloudwatch
 <-PYT:boto.ec2.cloudwatch.connect_to_region('eu-west-1')
 ->RET:Instance('CloudWatchConnection(AWSQueryConnection, AWSAuthConnection, object)', 'cloudwatchconnection_eu_west_1')
-<-PYT:cloudwatchconnection_eu_west_1.disable_alarm_actions([u'stop-i-16a9f855', u'stop-i-7b4b2838', u'stop-i-4ca5f40f', u'stop-i-395e747b', u'stop-i-373f1575', u'stop-i-5784ccb2', u'stop-i-f1bdf614', u'stop-i-7b92da9e', u'stop-i-4c88c0a9', u'stop-i-3862347b', u'stop-i-c6133984', u'stop-i-07d5e045', u'stop-i-545d7716', u'stop-i-cdb1f928', u'stop-i-2d90d8c8'])
+<-PYT:cloudwatchconnection_eu_west_1.disable_alarm_actions(['stop-i-16a9f855', 'stop-i-7b4b2838', 'stop-i-4ca5f40f', 'stop-i-395e747b', 'stop-i-373f1575', 'stop-i-5784ccb2', 'stop-i-f1bdf614', 'stop-i-7b92da9e', 'stop-i-4c88c0a9', 'stop-i-3862347b', 'stop-i-c6133984', 'stop-i-07d5e045', 'stop-i-545d7716', 'stop-i-cdb1f928', 'stop-i-2d90d8c8'])
 ->RET:True
 <-PYT:instance45.private_ip_address
 ->RET:u'10.80.17.78'
@@ -467,7 +462,7 @@
 ->RET:u'c3.xlarge'
 <-PYT:boto.ec2.connect_to_region('eu-west-1')
 ->RET:Instance('EC2Connection', 'ec2connection_eu_west_11')
-<-PYT:ec2connection_eu_west_11.get_only_instances(instance_ids=[u'i-7b4b2838', u'i-4ca5f40f', u'i-395e747b', u'i-373f1575', u'i-5784ccb2', u'i-f1bdf614', u'i-7b92da9e', u'i-4c88c0a9', u'i-3862347b', u'i-c6133984', u'i-07d5e045', u'i-545d7716', u'i-cdb1f928', u'i-2d90d8c8'])
+<-PYT:ec2connection_eu_west_11.get_only_instances(instance_ids=['i-7b4b2838', 'i-4ca5f40f', 'i-395e747b', 'i-373f1575', 'i-5784ccb2', 'i-f1bdf614', 'i-7b92da9e', 'i-4c88c0a9', 'i-3862347b', 'i-c6133984', 'i-07d5e045', 'i-545d7716', 'i-cdb1f928', 'i-2d90d8c8'])
 ->RET:[Instance('Instance', 'instance55'), Instance('Instance', 'instance56'), Instance('Instance', 'instance57'), Instance('Instance', 'instance58'), Instance('Instance', 'instance59'), Instance('Instance', 'instance60'), Instance('Instance', 'instance61'), Instance('Instance', 'instance62'), Instance('Instance', 'instance63'), Instance('Instance', 'instance64'), Instance('Instance', 'instance65'), Instance('Instance', 'instance66'), Instance('Instance', 'instance67'), Instance('Instance', 'instance68')]
 <-PYT:instance55.remove_tag('TextTest user')
 <-PYT:instance56.remove_tag('TextTest user')
@@ -485,14 +480,14 @@
 <-PYT:instance68.remove_tag('TextTest user')
 <-PYT:boto.ec2.cloudwatch.connect_to_region('eu-west-1')
 ->RET:Instance('CloudWatchConnection', 'cloudwatchconnection_eu_west_11')
-<-PYT:cloudwatchconnection_eu_west_11.enable_alarm_actions([u'stop-i-7b4b2838', u'stop-i-4ca5f40f', u'stop-i-395e747b', u'stop-i-373f1575', u'stop-i-5784ccb2', u'stop-i-f1bdf614', u'stop-i-7b92da9e', u'stop-i-4c88c0a9', u'stop-i-3862347b', u'stop-i-c6133984', u'stop-i-07d5e045', u'stop-i-545d7716', u'stop-i-cdb1f928', u'stop-i-2d90d8c8'])
+<-PYT:cloudwatchconnection_eu_west_11.enable_alarm_actions(['stop-i-7b4b2838', 'stop-i-4ca5f40f', 'stop-i-395e747b', 'stop-i-373f1575', 'stop-i-5784ccb2', 'stop-i-f1bdf614', 'stop-i-7b92da9e', 'stop-i-4c88c0a9', 'stop-i-3862347b', 'stop-i-c6133984', 'stop-i-07d5e045', 'stop-i-545d7716', 'stop-i-cdb1f928', 'stop-i-2d90d8c8'])
 ->RET:True
 <-PYT:boto.ec2.connect_to_region('eu-west-1')
 ->RET:Instance('EC2Connection', 'ec2connection_eu_west_12')
-<-PYT:ec2connection_eu_west_12.get_only_instances(instance_ids=[u'i-16a9f855'])
+<-PYT:ec2connection_eu_west_12.get_only_instances(instance_ids=['i-16a9f855'])
 ->RET:[Instance('Instance', 'instance69')]
 <-PYT:instance69.remove_tag('TextTest user')
 <-PYT:boto.ec2.cloudwatch.connect_to_region('eu-west-1')
 ->RET:Instance('CloudWatchConnection', 'cloudwatchconnection_eu_west_12')
-<-PYT:cloudwatchconnection_eu_west_12.enable_alarm_actions([u'stop-i-16a9f855'])
+<-PYT:cloudwatchconnection_eu_west_12.enable_alarm_actions(['stop-i-16a9f855'])
 ->RET:True

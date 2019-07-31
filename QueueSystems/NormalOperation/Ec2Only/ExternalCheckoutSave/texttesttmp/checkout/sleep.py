@@ -2,8 +2,8 @@
 
 import sys
 try:
-    print "Different sleep.py from checkout!"
+    print("Different sleep.py from checkout!")
     sys.stdout.flush()
-    print "Done"
+    print("Done")
 except KeyboardInterrupt:
     pass

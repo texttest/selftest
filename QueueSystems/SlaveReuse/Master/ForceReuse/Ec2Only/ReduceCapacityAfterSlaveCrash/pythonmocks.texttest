@@ -1,8 +1,5 @@
 <-PYT:datetime.datetime.now()
 ->RET:datetime.datetime(2014, 9, 10, 10, 19, 41, 358330)
-<-PYT:import texttestlib.utils
-<-PYT:texttestlib.utils.__path__
-->RET:raise exceptions.AttributeError("'module' object has no attribute '__path__'")
 <-PYT:import boto
 <-PYT:boto.__path__
 ->RET:['Fake value just to mark that it exists']
@@ -129,11 +126,11 @@
 ->RET:u'i-e9011ba9'
 <-PYT:instance18.id
 ->RET:u'i-2b533068'
-<-PYT:ec2connection_eu_west_1.get_all_instance_status([u'i-1a011a5a', u'i-5493e217', u'i-078d9e47', u'i-7b4b2838', u'i-006ffd43', u'i-059e8e45', u'i-8a9e80ca', u'i-be7916fd', u'i-5e17ea1d', u'i-e9011ba9', u'i-2b533068'])
+<-PYT:ec2connection_eu_west_1.get_all_instance_status(['i-1a011a5a', 'i-5493e217', 'i-078d9e47', 'i-7b4b2838', 'i-006ffd43', 'i-059e8e45', 'i-8a9e80ca', 'i-be7916fd', 'i-5e17ea1d', 'i-e9011ba9', 'i-2b533068'])
 ->RET:Instance('InstanceStatusSet(list)', 'instancestatusset1')
 <-PYT:instancestatusset1.__iter__()
 ->RET:Instance('listiterator(object)', 'listiterator1')
-<-PYT:listiterator1.next()
+<-PYT:listiterator1.__next__()
 ->RET:Instance('InstanceStatus(object)', 'instancestatus1')
 <-PYT:instancestatus1.instance_status
 ->RET:Instance('Status(object)', 'status1')
@@ -141,7 +138,7 @@
 ->RET:u'ok'
 <-PYT:instancestatus1.id
 ->RET:u'i-006ffd43'
-<-PYT:listiterator1.next()
+<-PYT:listiterator1.__next__()
 ->RET:Instance('InstanceStatus', 'instancestatus2')
 <-PYT:instancestatus2.instance_status
 ->RET:Instance('Status', 'status2')
@@ -149,8 +146,8 @@
 ->RET:u'ok'
 <-PYT:instancestatus2.id
 ->RET:u'i-7b4b2838'
-<-PYT:listiterator1.next()
-->RET:raise exceptions.StopIteration('')
+<-PYT:listiterator1.__next__()
+->RET:raise StopIteration('')
 <-PYT:instance1.instance_type
 ->RET:u'c3.xlarge'
 <-PYT:instance2.instance_type
@@ -173,9 +170,7 @@
 ->RET:u'c3.2xlarge'
 <-PYT:instance18.instance_type
 ->RET:u'c3.xlarge'
-<-PYT:texttestlib.utils.getUserName()
-->RET:'fakeuser'
-<-PYT:ec2connection_eu_west_1.get_only_instances(instance_ids=[u'i-006ffd43', u'i-7b4b2838', u'i-8a9e80ca', u'i-059e8e45', u'i-5493e217', u'i-e9011ba9', u'i-be7916fd', u'i-2b533068', u'i-078d9e47', u'i-1a011a5a', u'i-5e17ea1d'])
+<-PYT:ec2connection_eu_west_1.get_only_instances(instance_ids=['i-006ffd43', 'i-7b4b2838', 'i-8a9e80ca', 'i-059e8e45', 'i-5493e217', 'i-e9011ba9', 'i-be7916fd', 'i-2b533068', 'i-078d9e47', 'i-1a011a5a', 'i-5e17ea1d'])
 ->RET:[Instance('Instance', 'instance107'), Instance('Instance', 'instance105'), Instance('Instance', 'instance111'), Instance('Instance', 'instance110'), Instance('Instance', 'instance102'), Instance('Instance', 'instance115'), Instance('Instance', 'instance112'), Instance('Instance', 'instance118'), Instance('Instance', 'instance103'), Instance('Instance', 'instance101'), Instance('Instance', 'instance114')]
 <-PYT:instance107.tags
 ->RET:Instance('TagSet', 'tagset107')
@@ -223,7 +218,7 @@
 ->RET:''
 <-PYT:instance7.add_tag('TextTest user', 'fakeuser_10Sep10:19:41')
 <-PYT:instance5.add_tag('TextTest user', 'fakeuser_10Sep10:19:41')
-<-PYT:ec2connection_eu_west_1.get_only_instances(instance_ids=[u'i-006ffd43', u'i-7b4b2838'])
+<-PYT:ec2connection_eu_west_1.get_only_instances(instance_ids=['i-006ffd43', 'i-7b4b2838'])
 ->RET:[Instance('Instance', 'instance19'), Instance('Instance', 'instance20')]
 <-PYT:instance19.tags
 ->RET:Instance('TagSet', 'tagset19')
@@ -240,7 +235,7 @@
 <-PYT:import boto.ec2.cloudwatch
 <-PYT:boto.ec2.cloudwatch.connect_to_region('eu-west-1')
 ->RET:Instance('CloudWatchConnection(AWSQueryConnection, AWSAuthConnection, object)', 'cloudwatchconnection_eu_west_1')
-<-PYT:cloudwatchconnection_eu_west_1.disable_alarm_actions([u'stop-i-006ffd43', u'stop-i-7b4b2838'])
+<-PYT:cloudwatchconnection_eu_west_1.disable_alarm_actions(['stop-i-006ffd43', 'stop-i-7b4b2838'])
 ->RET:True
 <-PYT:instance20.private_ip_address
 ->RET:u'10.80.17.102'
@@ -252,19 +247,19 @@
 ->RET:u't1.micro'
 <-PYT:boto.ec2.connect_to_region('eu-west-1')
 ->RET:Instance('EC2Connection', 'ec2connection_eu_west_11')
-<-PYT:ec2connection_eu_west_11.get_only_instances(instance_ids=[u'i-006ffd43'])
+<-PYT:ec2connection_eu_west_11.get_only_instances(instance_ids=['i-006ffd43'])
 ->RET:[Instance('Instance', 'instance21')]
 <-PYT:instance21.remove_tag('TextTest user')
 <-PYT:boto.ec2.cloudwatch.connect_to_region('eu-west-1')
 ->RET:Instance('CloudWatchConnection', 'cloudwatchconnection_eu_west_11')
-<-PYT:cloudwatchconnection_eu_west_11.enable_alarm_actions([u'stop-i-006ffd43'])
+<-PYT:cloudwatchconnection_eu_west_11.enable_alarm_actions(['stop-i-006ffd43'])
 ->RET:True
 <-PYT:boto.ec2.connect_to_region('eu-west-1')
 ->RET:Instance('EC2Connection', 'ec2connection_eu_west_12')
-<-PYT:ec2connection_eu_west_12.get_only_instances(instance_ids=[u'i-7b4b2838'])
+<-PYT:ec2connection_eu_west_12.get_only_instances(instance_ids=['i-7b4b2838'])
 ->RET:[Instance('Instance', 'instance22')]
 <-PYT:instance22.remove_tag('TextTest user')
 <-PYT:boto.ec2.cloudwatch.connect_to_region('eu-west-1')
 ->RET:Instance('CloudWatchConnection', 'cloudwatchconnection_eu_west_12')
-<-PYT:cloudwatchconnection_eu_west_12.enable_alarm_actions([u'stop-i-7b4b2838'])
+<-PYT:cloudwatchconnection_eu_west_12.enable_alarm_actions(['stop-i-7b4b2838'])
 ->RET:True

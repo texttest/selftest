@@ -2,7 +2,7 @@
 ->RET:datetime.datetime(2014, 8, 8, 14, 47, 39, 56770)
 <-PYT:import texttestlib.utils
 <-PYT:texttestlib.utils.__path__
-->RET:raise exceptions.AttributeError("'module' object has no attribute '__path__'")
+->RET:raise AttributeError("'module' object has no attribute '__path__'")
 <-PYT:import boto
 <-PYT:boto.__path__
 ->RET:['Fake value just to mark that it exists']
@@ -141,8 +141,8 @@
 ->RET:Instance('InstanceStatusSet(list)', 'instancestatusset1')
 <-PYT:instancestatusset1.__iter__()
 ->RET:Instance('listiterator(object)', 'listiterator1')
-<-PYT:listiterator1.next()
-->RET:raise exceptions.StopIteration('')
+<-PYT:listiterator1.__next__()
+->RET:raise StopIteration('')
 <-PYT:instance1.instance_type
 ->RET:u't1.micro'
 <-PYT:instance2.instance_type

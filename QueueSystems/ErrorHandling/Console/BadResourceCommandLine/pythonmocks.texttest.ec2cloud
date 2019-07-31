@@ -1,8 +1,5 @@
 <-PYT:datetime.datetime.now()
 ->RET:datetime.datetime(2014, 9, 19, 16, 37, 7, 450800)
-<-PYT:import texttestlib.utils
-<-PYT:texttestlib.utils.__path__
-->RET:raise exceptions.AttributeError("'module' object has no attribute '__path__'")
 <-PYT:import boto
 <-PYT:boto.__path__
 ->RET:['Fake value just to mark that it exists']
