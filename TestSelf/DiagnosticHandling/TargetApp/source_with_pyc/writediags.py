@@ -5,7 +5,8 @@ time.sleep(int(os.getenv("SLEEP_TIME", "0")))
 print("This is a simple diagnostic-writing program")
 
 logConfigFile = os.getenv("TESTDIAG_READFILE")
-defaults = { "LOCAL_DIR" : os.path.dirname(os.path.abspath(logConfigFile)) }            
+logDir = os.path.dirname(os.path.abspath(logConfigFile)).replace("\\", "\\\\")
+defaults = { "LOCAL_DIR" : logDir }            
 rootLogger = logging.config.fileConfig(logConfigFile, defaults)
 
 logger1 = logging.getLogger("firstdiag")
