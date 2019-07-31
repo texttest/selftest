@@ -1,6 +1,6 @@
-<-SRV:TextTest slave server started on 10.80.17.78:44855
-<-CMD:ssh -q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=30 -x ec2-user@10.80.17.105 mkdir -p '/carm/proj/texttest-tmp-mc/geoff/dynamic_gui.22Jan164503.104308/texttest.ec2cloud/QueueSystems/NormalOperation/Ec2Only/DebugSlave' '/nfs/vm/texttest/geoff/Testing/TextTest'
-<-CMD:rsync -e "ssh -x -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=30" -av --copy-unsafe-links --delete --exclude-from=/nfs/vm/texttest/geoff/Testing/TextTest/texttestlib/etc/rsync_exclude_patterns /carm/proj/texttest-tmp-mc/geoff/dynamic_gui.22Jan164503.104308/texttest.ec2cloud/QueueSystems/NormalOperation/Ec2Only/DebugSlave/TargetApp ec2-user@10.80.17.105:'/carm/proj/texttest-tmp-mc/geoff/dynamic_gui.22Jan164503.104308/texttest.ec2cloud/QueueSystems/NormalOperation/Ec2Only/DebugSlave'
+<-SRV:TextTest slave server started on 10.67.18.21:49006
+<-CMD:ssh -q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=30 -x ec2-user@10.80.17.105 mkdir -p '/carm/proj/texttest-tmp-mc/jensk/dynamic_gui.31Jul173904.468/texttest.ec2cloud/QueueSystems/NormalOperation/Ec2Only/DebugSlave' '/carm/softwaredevelopment/teams/fleetopt/user_area/jensk/texttest_github/python3/texttest'
+<-CMD:rsync -e "ssh -x -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=30" -av --copy-unsafe-links --delete --exclude-from=/carm/softwaredevelopment/teams/fleetopt/user_area/jensk/texttest_github/python3/texttest/texttestlib/etc/rsync_exclude_patterns /carm/proj/texttest-tmp-mc/jensk/dynamic_gui.31Jul173904.468/texttest.ec2cloud/QueueSystems/NormalOperation/Ec2Only/DebugSlave/TargetApp ec2-user@10.80.17.105:'/carm/proj/texttest-tmp-mc/jensk/dynamic_gui.31Jul173904.468/texttest.ec2cloud/QueueSystems/NormalOperation/Ec2Only/DebugSlave'
 ->OUT:sending incremental file list
 TargetApp/
 TargetApp/busywait.py
@@ -42,18 +42,17 @@ TargetApp/Basic2/options.sleep
 
 sent 5564 bytes  received 655 bytes  4146.00 bytes/sec
 total size is 3258  speedup is 0.52
-<-CMD:rsync -e "ssh -x -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=30" -av --copy-unsafe-links --delete --exclude-from=/nfs/vm/texttest/geoff/Testing/TextTest/texttestlib/etc/rsync_exclude_patterns /nfs/vm/texttest/geoff/Testing/TextTest/texttestlib ec2-user@10.80.17.105:'/nfs/vm/texttest/geoff/Testing/TextTest'
-->OUT:sending incremental file list
-some texttest files
-
-sent 5564 bytes  received 655 bytes  4146.00 bytes/sec
-total size is 3258  speedup is 0.52
-<-CMD:rsync -e "ssh -x -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=30" -av --copy-unsafe-links --delete --exclude-from=/nfs/vm/texttest/geoff/Testing/TextTest/texttestlib/etc/rsync_exclude_patterns /carm/proj/texttest-tmp-mc/geoff/dynamic_gui.22Jan164503.104308/texttest.ec2cloud/QueueSystems/NormalOperation/Ec2Only/DebugSlave/log ec2-user@10.80.17.105:'/carm/proj/texttest-tmp-mc/geoff/dynamic_gui.22Jan164503.104308/texttest.ec2cloud/QueueSystems/NormalOperation/Ec2Only/DebugSlave'
+<-CMD:rsync -e "ssh -x -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=30" -av --copy-unsafe-links --delete --exclude-from=/carm/softwaredevelopment/teams/fleetopt/user_area/jensk/texttest_github/python3/texttest/texttestlib/etc/rsync_exclude_patterns /carm/softwaredevelopment/teams/fleetopt/user_area/jensk/texttest_github/python3/texttest/texttestlib ec2-user@10.80.17.105:'/carm/softwaredevelopment/teams/fleetopt/user_area/jensk/texttest_github/python3/texttest'
 ->OUT:sending incremental file list
 log stuff
 sent 5564 bytes  received 655 bytes  4146.00 bytes/sec
 total size is 3258  speedup is 0.52
-<-CMD:cd /carm/proj/texttest-tmp-mc/geoff/dynamic_gui.22Jan164503.104308/texttest.ec2cloud/QueueSystems/NormalOperation/Ec2Only/DebugSlave/texttesttmp/console.07Aug150207.2318/slavelogs; ssh -q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=30 -x -A ec2-user@10.80.17.105 STANDARD=/carm/proj/texttest-tmp-mc/geoff/dynamic_gui.22Jan164503.104308/texttest.ec2cloud/QueueSystems/NormalOperation/Ec2Only/DebugSlave/standard /users/geoff/.local/texttest_test/bin/texttest -home /home/ec2-user -d /carm/proj/texttest-tmp-mc/geoff/dynamic_gui.22Jan164503.104308/texttest.ec2cloud/QueueSystems/NormalOperation/Ec2Only/DebugSlave/TargetApp -a sleep -l -tp Basic -slave /carm/proj/texttest-tmp-mc/geoff/dynamic_gui.22Jan164503.104308/texttest.ec2cloud/QueueSystems/NormalOperation/Ec2Only/DebugSlave/texttesttmp/console.07Aug150207.2318 -servaddr 127.0.0.1:38864 -x -xr /carm/proj/texttest-tmp-mc/geoff/dynamic_gui.22Jan164503.104308/texttest.ec2cloud/QueueSystems/NormalOperation/Ec2Only/DebugSlave/log/logging.debug -xw /carm/proj/texttest-tmp-mc/geoff/dynamic_gui.22Jan164503.104308/texttest.ec2cloud/QueueSystems/NormalOperation/Ec2Only/DebugSlave/log/Test-Basic-SLEEP
+<-CMD:rsync -e "ssh -x -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=30" -av --copy-unsafe-links --delete --exclude-from=/carm/softwaredevelopment/teams/fleetopt/user_area/jensk/texttest_github/python3/texttest/texttestlib/etc/rsync_exclude_patterns /carm/proj/texttest-tmp-mc/jensk/dynamic_gui.31Jul173904.468/texttest.ec2cloud/QueueSystems/NormalOperation/Ec2Only/DebugSlave/log ec2-user@10.80.17.105:'/carm/proj/texttest-tmp-mc/jensk/dynamic_gui.31Jul173904.468/texttest.ec2cloud/QueueSystems/NormalOperation/Ec2Only/DebugSlave'
+->OUT:sending incremental file list
+log stuff
+sent 5564 bytes  received 655 bytes  4146.00 bytes/sec
+total size is 3258  speedup is 0.52
+<-CMD:cd /nfs/vm/texttest-tmp-mc/jensk/dynamic_gui.31Jul173904.468/texttest.ec2cloud/QueueSystems/NormalOperation/Ec2Only/DebugSlave/texttesttmp/console.07Aug150207.9760/slavelogs; ssh -q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=30 -x -A ec2-user@10.80.17.105 STANDARD=/carm/proj/texttest-tmp-mc/jensk/dynamic_gui.31Jul173904.468/texttest.ec2cloud/QueueSystems/NormalOperation/Ec2Only/DebugSlave/standard /carm/softwaredevelopment/teams/fleetopt/user_area/jensk/texttest_github/python3/texttest/bin/texttest -home /users/jensk -d /carm/proj/texttest-tmp-mc/jensk/dynamic_gui.31Jul173904.468/texttest.ec2cloud/QueueSystems/NormalOperation/Ec2Only/DebugSlave/TargetApp -a sleep -l -tp Basic -slave /carm/proj/texttest-tmp-mc/jensk/dynamic_gui.31Jul173904.468/texttest.ec2cloud/QueueSystems/NormalOperation/Ec2Only/DebugSlave/texttesttmp/console.07Aug150207.9760 -servaddr 10.67.18.21:51855 -x -xr /carm/proj/texttest-tmp-mc/jensk/dynamic_gui.31Jul173904.468/texttest.ec2cloud/QueueSystems/NormalOperation/Ec2Only/DebugSlave/log/logging.debug -xw /carm/proj/texttest-tmp-mc/jensk/dynamic_gui.31Jul173904.468/texttest.ec2cloud/QueueSystems/NormalOperation/Ec2Only/DebugSlave/log/Test-Basic-SLEEP
 ->OUT:2014-08-08 04:06:12,783 - Using Application SLEEP
 2014-08-08 04:06:12,872 - Running SLEEP test-suite TargetApp
 2014-08-08 04:06:12,873 -   Running SLEEP test-case Basic
