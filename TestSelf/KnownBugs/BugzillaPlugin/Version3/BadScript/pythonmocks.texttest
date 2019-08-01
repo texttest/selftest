@@ -1,7 +1,8 @@
+<-PYT:import xmlrpc
 <-PYT:import xmlrpc.client
 <-PYT:xmlrpc.client.ServerProxy('http://bugzilla.mysite.com/xmlrpc.cgi')
 ->RET:Instance('ServerProxy', 'serverproxy1')
 <-PYT:serverproxy1.Bug.get_bugs({'ids': ['42']})
-->RET:raise Instance('ProtocolError(Error, Exception)', 'protocolerror1')
-<-PYT:protocolerror1.__str__()
+->RET:raise Instance('Fault(Exception)', 'fault1')
+<-PYT:fault1.faultString
 ->RET:'<ProtocolError for bugzilla.mysite.com/xmlrpc.cgi: 404 Not Found>'
