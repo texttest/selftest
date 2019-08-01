@@ -1,7 +1,7 @@
 # Path to the executable
 executable:${TEXTTEST_CHECKOUT}/Scripts/texttestc.py
 
-# don't run the SGE/LSF tests for now : they don't work on Windows...
+# don't run the SGE/LSF/ec2cloud tests for now : they don't work on Windows...
 # don't run the tests that receive signals either
 extra_version:{CLEAR intcore}
 extra_version:{CLEAR signals}
@@ -11,6 +11,7 @@ extra_version:{CLEAR sge.gui}
 extra_version:{CLEAR lsf}
 extra_version:{CLEAR lsf.signals}
 extra_version:{CLEAR lsf.gui}
+extra_version:{CLEAR ec2cloud}
 
 [run_dependent_text]
 # Save us having to maintain a separate .nt GUI log which is updated too often for this to be convenient
@@ -31,4 +32,5 @@ checkforbugs:\\{REPLACE /}
 reconnection:\\\\{REPLACE /}
 reconnection:\\{REPLACE /}
 remoteScript*:\\{REPLACE /}
-remoteScriptTest:(exec python .*)'(.*)'{REPLACE \1\2}
+remoteScript*:(exec python .*)'(.*)'{REPLACE \1\2}
+submitfile_*:\\{REPLACE /}
