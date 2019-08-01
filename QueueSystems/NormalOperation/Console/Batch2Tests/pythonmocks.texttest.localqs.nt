@@ -1,0 +1,233 @@
+<-PYT:import subprocess
+<-PYT:multiprocessing.cpu_count()
+->RET:2
+<-PYT:subprocess.STARTUPINFO()
+->RET:Instance('STARTUPINFO(object)', 'startupinfo1')
+<-PYT:subprocess.STARTF_USESHOWWINDOW
+->RET:1
+<-PYT:startupinfo1.dwFlags
+->RET:0
+<-PYT:startupinfo1.dwFlags = 1
+<-PYT:subprocess.SW_HIDE
+->RET:1
+<-PYT:startupinfo1.wShowWindow = 1
+<-PYT:subprocess.Popen(['c:\\python37\\python.exe', 'C:\\Python37\\Scripts\\texttestc.py', '-d', 'C:\\DevStuff\\TT\\texttest.localqs.01Aug101117.23828\\texttest.localqs\\QueueSystems\\NormalOperation\\Console\\Batch2Tests\\TargetApp', '-a', 'sleep', '-l', '-tp', 'Basic', '-slave', 'C:\\DevStuff\\TT\\texttest.localqs.01Aug101117.23828\\texttest.localqs\\QueueSystems\\NormalOperation\\Console\\Batch2Tests\\texttesttmp\\local.01Aug101119.18528', '-servaddr', '192.168.199.1:2087', '-b', 'local'], cwd='C:\\DevStuff\\TT\\texttest.localqs.01Aug101117.23828\\texttest.localqs\\QueueSystems\\NormalOperation\\Console\\Batch2Tests\\texttesttmp\\local.01Aug101119.18528\\slavelogs', env={'ALLUSERSPROFILE': 'C:\\ProgramData',
+ 'APPDATA': 'C:\\Users\\e601429\\AppData\\Roaming',
+ 'CAPTUREMOCK_MODE': '0',
+ 'CAPTUREMOCK_PROCESS_START': 'c:\\work\\testsuite-tt-selftest\\capturemockrc.texttest,c:\\work\\testsuite-tt-selftest\\capturemockrc.texttest.localqs',
+ 'CAPTUREMOCK_PYTHON': '',
+ 'CAPTUREMOCK_RECORD_FILE': 'C:\\DevStuff\\TT\\texttest.localqs.01Aug101117.23828\\texttest.localqs\\QueueSystems\\NormalOperation\\Console\\Batch2Tests\\pythonmocks.texttest',
+ 'CAPTUREMOCK_REPLAY_FILE': 'c:\\work\\testsuite-tt-selftest\\QueueSystems\\NormalOperation\\Console\\Batch2Tests\\pythonmocks.texttest.localqs.nt',
+ 'CAPTUREMOCK_SERVER': '192.168.199.1:2087',
+ 'CLASSPATH': 'C:\\sikuli\\sikulixapi.jar',
+ 'CM-CUSTOMERFULLNAME': 'EVRY Corporate IT',
+ 'CM-CUSTOMERID': 'CCD',
+ 'CM-CUSTOMERSHORTNAME': 'EVRY',
+ 'CM-OSROLES': 'CM-ClientType=Mobile Client',
+ 'CM-SKALASERVICE': 'Windows 10',
+ 'CM-SUBCUSTOMERID': 'CCD-SWE',
+ 'CM-TASKSEQUENCENAME': 'CCD - Windows 10 EE x64 1.0.0',
+ 'COLLATE_PYTHON': 'C:/python37/python.exe',
+ 'COMMONPROGRAMFILES': 'C:\\Program Files\\Common Files',
+ 'COMMONPROGRAMFILES(X86)': 'C:\\Program Files (x86)\\Common Files',
+ 'COMMONPROGRAMW6432': 'C:\\Program Files\\Common Files',
+ 'COMPUTERNAME': 'SE-R90TN6N0',
+ 'COMSPEC': 'C:\\WINDOWS\\system32\\cmd.exe',
+ 'DRIVERDATA': 'C:\\Windows\\System32\\Drivers\\DriverData',
+ 'FPS_BROWSER_APP_PROFILE_STRING': 'Internet Explorer',
+ 'FPS_BROWSER_USER_PROFILE_STRING': 'Default',
+ 'GTK_RECENTLY_USED_FILE': 'C:\\DevStuff\\TT\\texttest.localqs.01Aug101117.23828\\texttest.localqs\\QueueSystems\\NormalOperation\\Console\\Batch2Tests/gtk_recently_used',
+ 'HOMEDRIVE': 'C:',
+ 'HOMEPATH': '\\Users\\e601429',
+ 'JREX86INSTALLDIR': 'C:\\Program Files (x86)\\Java\\jre1.8.0_161',
+ 'JYTHON': 'C:\\Jython2.5.3\\jython.bat',
+ 'JYTHONPATH': 'C:\\DevStuff\\TT\\texttest.localqs.01Aug101117.23828\\texttest.localqs\\QueueSystems\\NormalOperation\\Console\\Batch2Tests\\traffic_intercepts;',
+ 'LOCALAPPDATA': 'C:\\Users\\e601429\\AppData\\Local',
+ 'LOGONSERVER': '\\\\CCDDC001',
+ 'LSB_DEFAULTQUEUE': 'normal',
+ 'NUMBER_OF_PROCESSORS': '12',
+ 'ONEDRIVE': 'C:\\Users\\e601429\\OneDrive - EVRY',
+ 'ONEDRIVECOMMERCIAL': 'C:\\Users\\e601429\\OneDrive - EVRY',
+ 'OS': 'Windows_NT',
+ 'PATH': ('C:\\DevStuff\\TT\\texttest.localqs.01Aug101117.23828\\texttest.localqs\\QueueSystems\\NormalOperation\\Console\\Batch2Tests;C:\\Python37/bin:C:\\Python34\\Lib\\site-packages\\gnome;C:\\Python34\\Lib\\site-packages\\gnome;C:\\Python34\\Lib\\site-packages\\gnome;C:\\ProgramData\\Oracle\\Java\\javapath\\;C:\\Program '
+ 'Files (x86)\\Common '
+ 'Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program '
+ 'Files\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL '
+ 'Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL '
+ 'Server\\140\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files '
+ '(x86)\\Microsoft SQL Server\\140\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL '
+ 'Server\\140\\Tools\\Binn\\ManagementStudio\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files '
+ '(x86)\\Java\\jre1.8.0_161\\bin\\client\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft '
+ 'SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common '
+ 'Files\\Intel\\WirelessCommon\\;C:\\Python37\\Scripts\\;C:\\Python37\\;C:\\TextTest\\virtualenv\\python2.7\\Scripts;C:\\Program '
+ 'Files '
+ '(x86)\\TkDiff;C:\\TextTest\\virtualenv\\python2.7\\bin;C:\\Users\\e601429\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\e601429\\AppData\\Roaming\\npm;c:\\chromium63;C:\\Users\\e601429\\.dotnet\\tools;c:\\python37\\lib\\site-packages\\pywin32_system32'),
+ 'PATHEXT': '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY',
+ 'PROCESSOR_ARCHITECTURE': 'AMD64',
+ 'PROCESSOR_IDENTIFIER': 'Intel64 Family 6 Model 158 Stepping 10, GenuineIntel',
+ 'PROCESSOR_LEVEL': '6',
+ 'PROCESSOR_REVISION': '9e0a',
+ 'PROGRAMDATA': 'C:\\ProgramData',
+ 'PROGRAMFILES': 'C:\\Program Files',
+ 'PROGRAMFILES(X86)': 'C:\\Program Files (x86)',
+ 'PROGRAMW6432': 'C:\\Program Files',
+ 'PROMPT': '$P$G',
+ 'PSMODULEPATH': ('C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules;C:\\Program Files '
+ '(x86)\\Microsoft SQL Server\\140\\Tools\\PowerShell\\Modules\\;C:\\Program Files (x86)\\Microsoft Azure Information '
+ 'Protection\\Powershell'),
+ 'PUBLIC': 'C:\\Users\\Public',
+ 'PYTHON6_START': 'C:\\Python26',
+ 'PYTHON7_START': 'C:\\Python27',
+ 'PYTHONPATH': 'C:\\DevStuff\\TT\\texttest.localqs.01Aug101117.23828\\texttest.localqs\\QueueSystems\\NormalOperation\\Console\\Batch2Tests\\traffic_intercepts;C:\\DevStuff\\TT\\texttest.localqs.01Aug101117.23828\\texttest.localqs\\QueueSystems\\NormalOperation\\Console\\Batch2Tests;;C:\\work\\testsuite-texttest\\\\..\\python-xi-client',
+ 'SESSIONNAME': 'Console',
+ 'SGE_ROOT': 'C:\\DevStuff\\TT\\texttest.localqs.01Aug101117.23828\\texttest.localqs\\QueueSystems\\NormalOperation\\Console\\Batch2Tests\\sge',
+ 'SNOW_AGENT': 'C:\\Program Files\\Snow Software\\Inventory\\Agent',
+ 'STANDARD': 'C:\\DevStuff\\TT\\texttest.localqs.01Aug101117.23828\\texttest.localqs\\QueueSystems\\NormalOperation\\Console\\Batch2Tests\\standard',
+ 'STANDARD_PERSONAL': 'C:\\DevStuff\\TT\\texttest.localqs.01Aug101117.23828\\texttest.localqs\\QueueSystems\\NormalOperation\\Console\\Batch2Tests\\standard_personal',
+ 'STORYTEXT_HOME': 'c:\\work\\testsuite-tt-selftest\\storytext',
+ 'SUBDIR_TEXTTEST': 'c:\\work\\testsuite-tt-selftest',
+ 'SYSTEMDRIVE': 'C:',
+ 'SYSTEMROOT': 'C:\\WINDOWS',
+ 'TEMP': 'C:\\Users\\e601429\\AppData\\Local\\Temp',
+ 'TEXTTEST_CHECKOUT': 'C:\\Python37',
+ 'TEXTTEST_DYNAMIC_GUI_INTERPRETER': 'storytext -l config',
+ 'TEXTTEST_HOME': 'C:\\DevStuff\\TT\\texttest.localqs.01Aug101117.23828\\texttest.localqs\\QueueSystems\\NormalOperation\\Console\\Batch2Tests\\TargetApp',
+ 'TEXTTEST_INSTALL': 'C:\\Python34',
+ 'TEXTTEST_LOG_DIR': 'C:\\DevStuff\\TT\\texttest.localqs.01Aug101117.23828\\texttest.localqs\\QueueSystems\\NormalOperation\\Console\\Batch2Tests',
+ 'TEXTTEST_PERSONAL_CONFIG': 'C:\\DevStuff\\TT\\texttest.localqs.01Aug101117.23828\\texttest.localqs\\QueueSystems\\NormalOperation\\Console\\Batch2Tests\\personaldir',
+ 'TEXTTEST_PERSONAL_LOG': 'C:\\DevStuff\\TT\\texttest.localqs.01Aug101117.23828\\texttest.localqs\\QueueSystems\\NormalOperation\\Console\\Batch2Tests\\log',
+ 'TEXTTEST_PICKLE_PROTOCOL': '0',
+ 'TEXTTEST_QS_POLL_WAIT': '-1',
+ 'TEXTTEST_ROOT': 'c:\\work\\testsuite-tt-selftest',
+ 'TEXTTEST_SANDBOX': 'C:\\DevStuff\\TT\\texttest.localqs.01Aug101117.23828\\texttest.localqs\\QueueSystems\\NormalOperation\\Console\\Batch2Tests',
+ 'TEXTTEST_SANDBOX_ROOT': 'C:\\DevStuff\\TT\\texttest.localqs.01Aug101117.23828',
+ 'TEXTTEST_SELFTEST_DIR_NAMES': 'TargetApp',
+ 'TEXTTEST_SLAVE_CMD': '',
+ 'TEXTTEST_TMP': 'C:\\DevStuff\\TT\\texttest.localqs.01Aug101117.23828\\texttest.localqs\\QueueSystems\\NormalOperation\\Console\\Batch2Tests\\texttesttmp',
+ 'TMP': 'C:\\Users\\e601429\\AppData\\Local\\Temp',
+ 'TTBIN_IISEXPRESS': 'C:/Program Files/iis express/iisexpress.exe',
+ 'TT_ROSSERVER_REPOS': 'ros-server',
+ 'UATDATA': 'C:\\WINDOWS\\CCM\\UATData\\D9F8C395-CAB8-491d-B8AC-179A1FE1BE77',
+ 'USERDNSDOMAIN': 'CORP.CORPCOMMON.COM',
+ 'USERDOMAIN': 'CORP',
+ 'USERDOMAIN_ROAMINGPROFILE': 'CORP',
+ 'USERNAME': 'E601429',
+ 'USERPROFILE': 'C:\\Users\\e601429',
+ 'WINDIR': 'C:\\WINDOWS',
+ 'XDG_CONFIG_HOME': 'C:\\DevStuff\\TT\\texttest.localqs.01Aug101117.23828\\texttest.localqs\\QueueSystems\\NormalOperation\\Console\\Batch2Tests/xdg_config_home'}, startupinfo=startupinfo1, stderr=<_io.TextIOWrapper name='C:\\DevStuff\\TT\\texttest.localqs.01Aug101117.23828\\texttest.localqs\\QueueSystems\\NormalOperation\\Console\\Batch2Tests\\texttesttmp\\local.01Aug101119.18528\\slavelogs\\Test-Basic-SLEEP.errors' mode='w' encoding='cp1252'>, stdout=<_io.TextIOWrapper name='C:\\DevStuff\\TT\\texttest.localqs.01Aug101117.23828\\texttest.localqs\\QueueSystems\\NormalOperation\\Console\\Batch2Tests\\texttesttmp\\local.01Aug101119.18528\\slavelogs\\Test-Basic-SLEEP.log' mode='w' encoding='cp1252'>)
+->RET:Instance('Popen(object)', 'popen1')
+<-PYT:popen1.pid
+->RET:7632
+<-PYT:subprocess.STARTUPINFO()
+->RET:Instance('STARTUPINFO(object)', 'startupinfo2')
+<-PYT:startupinfo2.dwFlags
+->RET:0
+<-PYT:startupinfo2.dwFlags = 1
+<-PYT:startupinfo2.wShowWindow = 1
+<-PYT:subprocess.Popen(['c:\\python37\\python.exe', 'C:\\Python37\\Scripts\\texttestc.py', '-d', 'C:\\DevStuff\\TT\\texttest.localqs.01Aug101117.23828\\texttest.localqs\\QueueSystems\\NormalOperation\\Console\\Batch2Tests\\TargetApp', '-a', 'sleep', '-l', '-tp', 'Basic2', '-slave', 'C:\\DevStuff\\TT\\texttest.localqs.01Aug101117.23828\\texttest.localqs\\QueueSystems\\NormalOperation\\Console\\Batch2Tests\\texttesttmp\\local.01Aug101119.18528', '-servaddr', '192.168.199.1:2087', '-b', 'local'], cwd='C:\\DevStuff\\TT\\texttest.localqs.01Aug101117.23828\\texttest.localqs\\QueueSystems\\NormalOperation\\Console\\Batch2Tests\\texttesttmp\\local.01Aug101119.18528\\slavelogs', env={'ALLUSERSPROFILE': 'C:\\ProgramData',
+ 'APPDATA': 'C:\\Users\\e601429\\AppData\\Roaming',
+ 'CAPTUREMOCK_MODE': '0',
+ 'CAPTUREMOCK_PROCESS_START': 'c:\\work\\testsuite-tt-selftest\\capturemockrc.texttest,c:\\work\\testsuite-tt-selftest\\capturemockrc.texttest.localqs',
+ 'CAPTUREMOCK_PYTHON': '',
+ 'CAPTUREMOCK_RECORD_FILE': 'C:\\DevStuff\\TT\\texttest.localqs.01Aug101117.23828\\texttest.localqs\\QueueSystems\\NormalOperation\\Console\\Batch2Tests\\pythonmocks.texttest',
+ 'CAPTUREMOCK_REPLAY_FILE': 'c:\\work\\testsuite-tt-selftest\\QueueSystems\\NormalOperation\\Console\\Batch2Tests\\pythonmocks.texttest.localqs.nt',
+ 'CAPTUREMOCK_SERVER': '192.168.199.1:2087',
+ 'CLASSPATH': 'C:\\sikuli\\sikulixapi.jar',
+ 'CM-CUSTOMERFULLNAME': 'EVRY Corporate IT',
+ 'CM-CUSTOMERID': 'CCD',
+ 'CM-CUSTOMERSHORTNAME': 'EVRY',
+ 'CM-OSROLES': 'CM-ClientType=Mobile Client',
+ 'CM-SKALASERVICE': 'Windows 10',
+ 'CM-SUBCUSTOMERID': 'CCD-SWE',
+ 'CM-TASKSEQUENCENAME': 'CCD - Windows 10 EE x64 1.0.0',
+ 'COLLATE_PYTHON': 'C:/python37/python.exe',
+ 'COMMONPROGRAMFILES': 'C:\\Program Files\\Common Files',
+ 'COMMONPROGRAMFILES(X86)': 'C:\\Program Files (x86)\\Common Files',
+ 'COMMONPROGRAMW6432': 'C:\\Program Files\\Common Files',
+ 'COMPUTERNAME': 'SE-R90TN6N0',
+ 'COMSPEC': 'C:\\WINDOWS\\system32\\cmd.exe',
+ 'DRIVERDATA': 'C:\\Windows\\System32\\Drivers\\DriverData',
+ 'FPS_BROWSER_APP_PROFILE_STRING': 'Internet Explorer',
+ 'FPS_BROWSER_USER_PROFILE_STRING': 'Default',
+ 'GTK_RECENTLY_USED_FILE': 'C:\\DevStuff\\TT\\texttest.localqs.01Aug101117.23828\\texttest.localqs\\QueueSystems\\NormalOperation\\Console\\Batch2Tests/gtk_recently_used',
+ 'HOMEDRIVE': 'C:',
+ 'HOMEPATH': '\\Users\\e601429',
+ 'JREX86INSTALLDIR': 'C:\\Program Files (x86)\\Java\\jre1.8.0_161',
+ 'JYTHON': 'C:\\Jython2.5.3\\jython.bat',
+ 'JYTHONPATH': 'C:\\DevStuff\\TT\\texttest.localqs.01Aug101117.23828\\texttest.localqs\\QueueSystems\\NormalOperation\\Console\\Batch2Tests\\traffic_intercepts;',
+ 'LOCALAPPDATA': 'C:\\Users\\e601429\\AppData\\Local',
+ 'LOGONSERVER': '\\\\CCDDC001',
+ 'LSB_DEFAULTQUEUE': 'normal',
+ 'NUMBER_OF_PROCESSORS': '12',
+ 'ONEDRIVE': 'C:\\Users\\e601429\\OneDrive - EVRY',
+ 'ONEDRIVECOMMERCIAL': 'C:\\Users\\e601429\\OneDrive - EVRY',
+ 'OS': 'Windows_NT',
+ 'PATH': ('C:\\DevStuff\\TT\\texttest.localqs.01Aug101117.23828\\texttest.localqs\\QueueSystems\\NormalOperation\\Console\\Batch2Tests;C:\\Python37/bin:C:\\Python34\\Lib\\site-packages\\gnome;C:\\Python34\\Lib\\site-packages\\gnome;C:\\Python34\\Lib\\site-packages\\gnome;C:\\ProgramData\\Oracle\\Java\\javapath\\;C:\\Program '
+ 'Files (x86)\\Common '
+ 'Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program '
+ 'Files\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL '
+ 'Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL '
+ 'Server\\140\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files '
+ '(x86)\\Microsoft SQL Server\\140\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL '
+ 'Server\\140\\Tools\\Binn\\ManagementStudio\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files '
+ '(x86)\\Java\\jre1.8.0_161\\bin\\client\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft '
+ 'SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common '
+ 'Files\\Intel\\WirelessCommon\\;C:\\Python37\\Scripts\\;C:\\Python37\\;C:\\TextTest\\virtualenv\\python2.7\\Scripts;C:\\Program '
+ 'Files '
+ '(x86)\\TkDiff;C:\\TextTest\\virtualenv\\python2.7\\bin;C:\\Users\\e601429\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\e601429\\AppData\\Roaming\\npm;c:\\chromium63;C:\\Users\\e601429\\.dotnet\\tools;c:\\python37\\lib\\site-packages\\pywin32_system32'),
+ 'PATHEXT': '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY',
+ 'PROCESSOR_ARCHITECTURE': 'AMD64',
+ 'PROCESSOR_IDENTIFIER': 'Intel64 Family 6 Model 158 Stepping 10, GenuineIntel',
+ 'PROCESSOR_LEVEL': '6',
+ 'PROCESSOR_REVISION': '9e0a',
+ 'PROGRAMDATA': 'C:\\ProgramData',
+ 'PROGRAMFILES': 'C:\\Program Files',
+ 'PROGRAMFILES(X86)': 'C:\\Program Files (x86)',
+ 'PROGRAMW6432': 'C:\\Program Files',
+ 'PROMPT': '$P$G',
+ 'PSMODULEPATH': ('C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules;C:\\Program Files '
+ '(x86)\\Microsoft SQL Server\\140\\Tools\\PowerShell\\Modules\\;C:\\Program Files (x86)\\Microsoft Azure Information '
+ 'Protection\\Powershell'),
+ 'PUBLIC': 'C:\\Users\\Public',
+ 'PYTHON6_START': 'C:\\Python26',
+ 'PYTHON7_START': 'C:\\Python27',
+ 'PYTHONPATH': 'C:\\DevStuff\\TT\\texttest.localqs.01Aug101117.23828\\texttest.localqs\\QueueSystems\\NormalOperation\\Console\\Batch2Tests\\traffic_intercepts;C:\\DevStuff\\TT\\texttest.localqs.01Aug101117.23828\\texttest.localqs\\QueueSystems\\NormalOperation\\Console\\Batch2Tests;;C:\\work\\testsuite-texttest\\\\..\\python-xi-client',
+ 'SESSIONNAME': 'Console',
+ 'SGE_ROOT': 'C:\\DevStuff\\TT\\texttest.localqs.01Aug101117.23828\\texttest.localqs\\QueueSystems\\NormalOperation\\Console\\Batch2Tests\\sge',
+ 'SNOW_AGENT': 'C:\\Program Files\\Snow Software\\Inventory\\Agent',
+ 'STANDARD': 'C:\\DevStuff\\TT\\texttest.localqs.01Aug101117.23828\\texttest.localqs\\QueueSystems\\NormalOperation\\Console\\Batch2Tests\\standard',
+ 'STANDARD_PERSONAL': 'C:\\DevStuff\\TT\\texttest.localqs.01Aug101117.23828\\texttest.localqs\\QueueSystems\\NormalOperation\\Console\\Batch2Tests\\standard_personal',
+ 'STORYTEXT_HOME': 'c:\\work\\testsuite-tt-selftest\\storytext',
+ 'SUBDIR_TEXTTEST': 'c:\\work\\testsuite-tt-selftest',
+ 'SYSTEMDRIVE': 'C:',
+ 'SYSTEMROOT': 'C:\\WINDOWS',
+ 'TEMP': 'C:\\Users\\e601429\\AppData\\Local\\Temp',
+ 'TEXTTEST_CHECKOUT': 'C:\\Python37',
+ 'TEXTTEST_DYNAMIC_GUI_INTERPRETER': 'storytext -l config',
+ 'TEXTTEST_HOME': 'C:\\DevStuff\\TT\\texttest.localqs.01Aug101117.23828\\texttest.localqs\\QueueSystems\\NormalOperation\\Console\\Batch2Tests\\TargetApp',
+ 'TEXTTEST_INSTALL': 'C:\\Python34',
+ 'TEXTTEST_LOG_DIR': 'C:\\DevStuff\\TT\\texttest.localqs.01Aug101117.23828\\texttest.localqs\\QueueSystems\\NormalOperation\\Console\\Batch2Tests',
+ 'TEXTTEST_PERSONAL_CONFIG': 'C:\\DevStuff\\TT\\texttest.localqs.01Aug101117.23828\\texttest.localqs\\QueueSystems\\NormalOperation\\Console\\Batch2Tests\\personaldir',
+ 'TEXTTEST_PERSONAL_LOG': 'C:\\DevStuff\\TT\\texttest.localqs.01Aug101117.23828\\texttest.localqs\\QueueSystems\\NormalOperation\\Console\\Batch2Tests\\log',
+ 'TEXTTEST_PICKLE_PROTOCOL': '0',
+ 'TEXTTEST_QS_POLL_WAIT': '-1',
+ 'TEXTTEST_ROOT': 'c:\\work\\testsuite-tt-selftest',
+ 'TEXTTEST_SANDBOX': 'C:\\DevStuff\\TT\\texttest.localqs.01Aug101117.23828\\texttest.localqs\\QueueSystems\\NormalOperation\\Console\\Batch2Tests',
+ 'TEXTTEST_SANDBOX_ROOT': 'C:\\DevStuff\\TT\\texttest.localqs.01Aug101117.23828',
+ 'TEXTTEST_SELFTEST_DIR_NAMES': 'TargetApp',
+ 'TEXTTEST_SLAVE_CMD': '',
+ 'TEXTTEST_TMP': 'C:\\DevStuff\\TT\\texttest.localqs.01Aug101117.23828\\texttest.localqs\\QueueSystems\\NormalOperation\\Console\\Batch2Tests\\texttesttmp',
+ 'TMP': 'C:\\Users\\e601429\\AppData\\Local\\Temp',
+ 'TTBIN_IISEXPRESS': 'C:/Program Files/iis express/iisexpress.exe',
+ 'TT_ROSSERVER_REPOS': 'ros-server',
+ 'UATDATA': 'C:\\WINDOWS\\CCM\\UATData\\D9F8C395-CAB8-491d-B8AC-179A1FE1BE77',
+ 'USERDNSDOMAIN': 'CORP.CORPCOMMON.COM',
+ 'USERDOMAIN': 'CORP',
+ 'USERDOMAIN_ROAMINGPROFILE': 'CORP',
+ 'USERNAME': 'E601429',
+ 'USERPROFILE': 'C:\\Users\\e601429',
+ 'WINDIR': 'C:\\WINDOWS',
+ 'XDG_CONFIG_HOME': 'C:\\DevStuff\\TT\\texttest.localqs.01Aug101117.23828\\texttest.localqs\\QueueSystems\\NormalOperation\\Console\\Batch2Tests/xdg_config_home'}, startupinfo=startupinfo2, stderr=<_io.TextIOWrapper name='C:\\DevStuff\\TT\\texttest.localqs.01Aug101117.23828\\texttest.localqs\\QueueSystems\\NormalOperation\\Console\\Batch2Tests\\texttesttmp\\local.01Aug101119.18528\\slavelogs\\Test-Basic2-SLEEP.errors' mode='w' encoding='cp1252'>, stdout=<_io.TextIOWrapper name='C:\\DevStuff\\TT\\texttest.localqs.01Aug101117.23828\\texttest.localqs\\QueueSystems\\NormalOperation\\Console\\Batch2Tests\\texttesttmp\\local.01Aug101119.18528\\slavelogs\\Test-Basic2-SLEEP.log' mode='w' encoding='cp1252'>)
+->RET:Instance('Popen(object)', 'popen2')
+<-PYT:popen2.pid
+->RET:7636
