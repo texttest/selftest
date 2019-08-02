@@ -1,5 +1,5 @@
 
----------- Window 'SLEEP.gui tests (started at 04dec09:49:20) - TextTest dynamic GUI' ----------
+---------- Window 'SLEEP.gui tests (started at 01Aug17:19:02) - TextTest dynamic GUI' ----------
 Focus widget is 'Test Tree'
 
 Menu Bar : '_File' (+) , '_View' (+) , '_Actions' (+) , '_Help' (+)
@@ -8,7 +8,7 @@ Tool Bar :
   _Quit (Stock image 'gtk-quit', accelerator 'Ctrl+Q', tooltip 'Quit')
   _Kill (Stock image 'gtk-stop', greyed out, accelerator 'Ctrl+Delete', tooltip 'Kill selected tests')
   _Approve (Stock image 'gtk-apply', greyed out, accelerator 'Ctrl+S', tooltip 'Approve results for selected tests. This will save the files produced by this run as the new approved files which future runs will be compared with. Used to be called Save.')
-  Progress bar set to fraction 0.0, text 'All 0 tests completed at 04dec09:49:21'
+  Progress bar set to fraction 0.0, text 'All 0 tests completed at 01Aug17:19:03'
 ...........
 
 Showing Test Tree with columns: Tests: All 0 selected , Details
@@ -22,7 +22,7 @@ Viewing page 'Status'
 Showing Test Status View with columns: Status , Number , Visible
 'Shortcuts:' , Button '_New'
 ...........
-'TextTest started at 04dec09:49:21.' , Image 'throbber_inactive.png'
+'TextTest started at 01Aug17:19:02.' , Image 'throbber_inactive.png'
 ------------------------------------------------------------------------------------------------
 
 Progress bar set to fraction 0.0, text '0 of 1 tests completed'
@@ -54,7 +54,7 @@ Updated : Test Status View with columns: Status , Number , Visible
 -> Running (white) | 0 (white) | Check box
 -> Final filter (LightGoldenrod1,bold) | 1 (LightGoldenrod1,bold) | Check box
 
-Progress bar set to fraction 1.0, text 'All 1 tests completed at 04dec09:49:21'
+Progress bar set to fraction 1.0, text 'All 1 tests completed at 01Aug17:19:03'
 
 Updated : Test Status View with columns: Status , Number , Visible
 -> Not started (white) | 0 (white) | Check box
@@ -99,13 +99,13 @@ Changed selection in Test Status View with columns: Status , Number , Visible
 'view actions for test' event created with arguments 'Basic'
 
 ---------- Popup Window ----------
-'Enter Failure Information' (Stock image 'gtk-info', accelerator 'Ctrl+I')
-'Find Failure Information' (Stock image 'gtk-find', accelerator 'Ctrl+F')
+'Enter Failure Information' (accelerator 'Ctrl+I')
+'Find Failure Information' (accelerator 'Ctrl+F')
   ----
-'_Approve' (Stock image 'gtk-apply', greyed out, accelerator 'Ctrl+S')
-'Approve _As...' (Stock image 'gtk-apply', greyed out, accelerator 'Ctrl+Alt+S')
+'_Approve' (greyed out, accelerator 'Ctrl+S')
+'Approve _As...' (greyed out, accelerator 'Ctrl+Alt+S')
   ----
-'_Kill' (Stock image 'gtk-stop', greyed out, accelerator 'Ctrl+Delete')
+'_Kill' (greyed out, accelerator 'Ctrl+Delete')
   ----
 'Generate test summary'
 'Suspend' (greyed out)
@@ -117,11 +117,11 @@ Changed selection in Test Status View with columns: Status , Number , Visible
 '_Unmark' (greyed out, accelerator 'Shift+Ctrl+U')
 'Load from Rerun' (greyed out)
   ----
-'_Rerun' (Stock image 'gtk-media-play', accelerator 'Ctrl+R')
-'Recompute Status' (Stock image 'gtk-refresh', accelerator 'F5')
-'Re_load tests...' (Stock image 'gtk-connect')
+'_Rerun' (accelerator 'Ctrl+R')
+'Recompute Status' (accelerator 'F5')
+'Re_load tests...'
   ----
-'Split result files' (Stock image 'gtk-convert', greyed out)
+'Split result files' (greyed out)
 ----------------------------------
 
 'rerun selected tests' event created with arguments ''
@@ -140,7 +140,7 @@ Text entry
 'Times to run:' (tooltip 'Set this to some number larger than 1 to run the same test multiple times, for example to try to catch indeterminism in the system under test')
 Spin button entry (set to '1') (min=1.0, max=10000.0, step=1.0)
 'Replay pause (sec):' (tooltip 'How long to wait, in seconds, between replaying each GUI action in the usecase file')
-Spin button entry (set to '0,0') (min=0.0, max=1000.0, step=1.0)
+Spin button entry (set to '0.0') (min=0.0, max=1000.0, step=1.0)
 Check button 'Show GUI and record any extra actions' (tooltip 'Disable virtual display usage if any. Replay whatever is in the usecase file and enabled recording when done')
 Check button 'Generate a screenshot after each replayed action' (tooltip 'The screenshots can be viewed via the 'View Screenshots' action in the test (left panel) context menu')
 Check button 'Stop after first failure'
