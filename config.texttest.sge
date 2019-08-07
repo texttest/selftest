@@ -9,3 +9,4 @@ sgehostfile:PE_HOSTFILE
 *mocks:(slave_start_errors\.)[^ ]*{REPLACE \1<user>}
 output:(slave_start_errors\.)[^ ]*{REPLACE \1<user>}
 dynamic_gui_log:(slave_start_errors\.)[^ ]*{REPLACE \1<user>}
+loggederrors:(Failed to connect to \('no_such_machine', 42\) : socket.gaierror:).*{REPLACE \1}
