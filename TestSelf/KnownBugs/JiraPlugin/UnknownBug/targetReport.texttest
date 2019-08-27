@@ -1,12 +1,12 @@
 internal errors=1
-01Apr2014
+05Apr2018
 HELLO : 1 tests : 1 internal errors
 
 Summary of all Unsuccessful tests follows...
 ---------------------------------------------------------------------------------
 The following tests had internal errors : 
 In HELLO test-suite TargetApp:
-  - HELLO test-case Test : bug FAK-42 (NONEXISTENT)
+  - HELLO test-case Test : bug BOGUS-2 (JIRA ERROR)
 
 
 Details of all Unsuccessful tests follows...
@@ -14,8 +14,9 @@ Details of all Unsuccessful tests follows...
 
 Detailed information for the tests that had internal errors follows...
 --------------------------------------------------------
-TEST had internal errors (bug FAK-42 (NONEXISTENT)) on yandina : HELLO test-case Test (under Test)
-java.lang.Exception: com.atlassian.jira.rpc.exception.RemotePermissionException: This issue does not exist or you don't have permission to view it.
+TEST had internal errors (bug BOGUS-2 (JIRA ERROR)) on concordia : HELLO test-case Test (under Test)
+Failed to access 'https://bogus.jirasite.com/rest/api/2/issue/BOGUS-2?fields=assignee,components,created,description,priority,reporter,resolution,status,updated,summary': 404 Client Error: 404 Issue Does Not Exist
+
 (This bug was triggered by text found in file 'output' matching 'after [0-9]* seconds')
 ---------- Differences in output ----------
 1c1

@@ -1,12 +1,12 @@
 known bugs=1
-27Aug2012
+05Apr2018
 HELLO : 1 tests : 1 known bugs
 
 Summary of all Unsuccessful tests follows...
 ---------------------------------------------------------------------------------
 The following tests had known bugs : 
 In HELLO test-suite TargetApp:
-  - HELLO test-case Test : bug FAK-42 (LOGIN FAILED)
+  - HELLO test-case Test : bug BOGUS-2 (JIRA ERROR)
 
 
 Details of all Unsuccessful tests follows...
@@ -14,8 +14,10 @@ Details of all Unsuccessful tests follows...
 
 Detailed information for the tests that had known bugs follows...
 --------------------------------------------------------
-TEST had known bugs (bug FAK-42 (LOGIN FAILED)) on wawi : HELLO test-case Test (under Test)
-java.lang.Exception: com.atlassian.jira.rpc.exception.RemoteAuthenticationException: Invalid username or password.
+TEST had known bugs (bug BOGUS-2 (JIRA ERROR)) on concordia : HELLO test-case Test (under Test)
+Failed to access 'https://bogus.jirasite.com/rest/api/2/issue/BOGUS-2?fields=assignee,components,created,description,priority,reporter,resolution,status,updated,summary': 401 Client Error: 401
+Unauthorized action, possibly issues with user name and/or password.
+
 (This bug was triggered by text found in file 'output' matching 'after [0-9]* seconds')
 ---------- Differences in output ----------
 1c1

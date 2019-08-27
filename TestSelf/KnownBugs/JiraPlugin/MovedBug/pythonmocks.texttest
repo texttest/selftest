@@ -1,41 +1,54 @@
 <-PYT:import urllib
-<-PYT:import xmlrpclib
-<-PYT:xmlrpclib.ServerProxy('http://www.myjirasite.com/rpc/xmlrpc')
-->RET:Instance('ServerProxy', 'serverproxy1')
-<-PYT:serverproxy1.jira1.login('texttest', 'password')
-->RET:'73b53f015e251b669a1a56a62158a83522f971b8'
-<-PYT:serverproxy1.jira1.getIssue('73b53f015e251b669a1a56a62158a83522f971b8', 'CPL-1406')
-->RET:raise Instance('Fault(Error, exceptions.Exception)', 'fault_cpl_1406')
-<-PYT:urllib.urlopen('http://www.myjirasite.com/browse/CPL-1406')
-->RET:Instance('addinfourl(addbase)', 'addinfourl1')
-<-PYT:addinfourl1.geturl()
-->RET:'https://jira.jeppesensystems.com/login.jsp?permissionViolation=true&os_destination=%2Fbrowse%2FPDTUC-367'
-<-PYT:urllib.url2pathname('https://jira.jeppesensystems.com/login.jsp?permissionViolation=true&os_destination=%2Fbrowse%2FPDTUC-367')
-->RET:'https://jira.jeppesensystems.com/login.jsp?permissionViolation=true&os_destination=/browse/PDTUC-367'
-<-PYT:xmlrpclib.ServerProxy('http://www.myjirasite.com/rpc/xmlrpc')
-->RET:Instance('ServerProxy', 'serverproxy2')
-<-PYT:serverproxy2.jira1.login('texttest', 'password')
-->RET:'24857839aee30417ad0abb97a418c590ef1cd158'
-<-PYT:serverproxy2.jira1.getIssue('24857839aee30417ad0abb97a418c590ef1cd158', 'PDTUC-367')
-->RET:{'status': '1', 'project': 'PDTUC', 'updated': '2014-03-26 13:03:32.0', 'components': [{'name': 'Default', 'id': '13235'}], 'reporter': 'geoff', 'customFieldValues': [{'values': '15/Nov/13', 'customfieldId': 'customfield_10431'}, {'values': 'System Test', 'customfieldId': 'customfield_10522'}, {'values': 'CMS', 'customfieldId': 'customfield_10381'}, {'values': '159194', 'customfieldId': 'customfield_10654'}, {'values': 'geoff', 'customfieldId': 'customfield_10560'}], 'created': '2013-11-15 08:44:50.0', 'votes': '0', 'fixVersions': [], 'priority': '4', 'assignee': 'geoff', 'key': 'PDTUC-367', 'affectsVersions': [], 'summary': 'Sample issue', 'type': '1', 'id': '220086', 'description': 'The description is a long string\nwith lots of linebreaks.\n'}
-<-PYT:serverproxy2.jira1.getStatuses('24857839aee30417ad0abb97a418c590ef1cd158')
-->RET:[{'description': 'The issue is open and ready for the assignee to start work on it.',
-  'icon': 'http://jira.atlassian.com/images/icons/status_open.gif',
-  'id': '1',
-  'name': 'Open'},
- {'description': 'This issue is being actively worked on at the moment by the assignee.',
-  'icon': 'http://jira.atlassian.com/images/icons/status_inprogress.gif',
-  'id': '3',
-  'name': 'In Progress'},
- {'description': 'This issue was once resolved, but the resolution was deemed incorrect. From here issues are either marked assigned or resolved.',
-  'icon': 'http://jira.atlassian.com/images/icons/status_reopened.gif',
-  'id': '4',
-  'name': 'Reopened'},
- {'description': 'A resolution has been taken, and it is awaiting verification by reporter. From here issues are either reopened, or are closed.',
-  'icon': 'http://jira.atlassian.com/images/icons/status_resolved.gif',
-  'id': '5',
-  'name': 'Resolved'},
- {'description': 'The issue is considered finished, the resolution is correct. Issues which are not closed can be reopened.',
-  'icon': 'http://jira.atlassian.com/images/icons/status_closed.gif',
-  'id': '6',
-  'name': 'Closed'}]
+<-PYT:import requests
+<-PYT:requests.get('https://bogus.jirasite.com/rest/api/2/issue/BOGUS-1?fields=assignee,components,created,description,priority,reporter,resolution,status,updated,summary', auth=('bogus_jira_user', 'bogus_password'))
+->RET:Instance('Response(object)', 'response1')
+<-PYT:response1.raise_for_status()
+<-PYT:response1.json()
+->RET:{u'expand': u'renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations',
+ u'fields': {u'assignee': {u'active': True,
+ u'avatarUrls': {u'16x16': u'https://bogus.jirasite.com/secure/useravatar?size=xsmall&ownerId=lombardo&avatarId=10280',
+ u'24x24': u'https://bogus.jirasite.com/secure/useravatar?size=small&ownerId=lombardo&avatarId=10280',
+ u'32x32': u'https://bogus.jirasite.com/secure/useravatar?size=medium&ownerId=lombardo&avatarId=10280',
+ u'48x48': u'https://bogus.jirasite.com/secure/useravatar?ownerId=lombardo&avatarId=10280'},
+ u'displayName': u'Dave Lombardo',
+ u'emailAddress': u'dave.lombardo@slayer.com',
+ u'key': u'lombardo',
+ u'name': u'lombardo',
+ u'self': u'https://bogus.jirasite.com/rest/api/2/user?username=lombardo',
+ u'timeZone': u'Europe/Stockholm'},
+ u'components': [],
+ u'created': u'2017-08-31T11:28:00.000+0200',
+ u'description': u'''We would like to add a possibility to start the tail assignment optimizer with a number of threads, similar to pairing and rostering. There is some (too much) information in STUDIO-16306. We want the "Use multi-slot parallel" version, which sets the NSLOTS environment variable.
+
+I refer the details to the above Jira for now, and we\'ll handle follow up questions in this Jira.''',
+ u'priority': {u'iconUrl': u'https://bogus.jirasite.com/images/icons/priorities/minor.svg',
+ u'id': u'4',
+ u'name': u'3',
+ u'self': u'https://bogus.jirasite.com/rest/api/2/priority/4'},
+ u'reporter': {u'active': True,
+ u'avatarUrls': {u'16x16': u'https://bogus.jirasite.com/secure/useravatar?size=xsmall&ownerId=lombardo&avatarId=10280',
+ u'24x24': u'https://bogus.jirasite.com/secure/useravatar?size=small&ownerId=lombardo&avatarId=10280',
+ u'32x32': u'https://bogus.jirasite.com/secure/useravatar?size=medium&ownerId=lombardo&avatarId=10280',
+ u'48x48': u'https://bogus.jirasite.com/secure/useravatar?ownerId=lombardo&avatarId=10280'},
+ u'displayName': u'Dave Lombardo',
+ u'emailAddress': u'dave.lombardo@slayer.com',
+ u'key': u'lombardo',
+ u'name': u'lombardo',
+ u'self': u'https://bogus.jirasite.com/rest/api/2/user?username=lombardo',
+ u'timeZone': u'Europe/Stockholm'},
+ u'resolution': None,
+ u'status': {u'description': u'The issue is acknowledged/open and ready for the assignee to start work on.',
+ u'iconUrl': u'https://bogus.jirasite.com/images/icons/statuses/assigned.png',
+ u'id': u'1',
+ u'name': u'Open',
+ u'self': u'https://bogus.jirasite.com/rest/api/2/status/1',
+ u'statusCategory': {u'colorName': u'blue-gray',
+ u'id': 2,
+ u'key': u'new',
+ u'name': u'To Do',
+ u'self': u'https://bogus.jirasite.com/rest/api/2/statuscategory/2'}},
+ u'summary': u'Enable running the tail assignment optimizer with threads',
+ u'updated': u'2017-10-04T13:57:33.000+0200'},
+ u'id': u'319096',
+ u'key': u'FMS-1823',
+ u'self': u'https://bogus.jirasite.com/rest/api/2/issue/319096'}

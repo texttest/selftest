@@ -1,7 +1,10 @@
-<-PYT:import xmlrpclib
-<-PYT:xmlrpclib.ServerProxy('http://www.myjirasite.com/rpc/xmlrpc')
-->RET:Instance('ServerProxy', 'serverproxy1')
-<-PYT:serverproxy1.jira1.login('texttest', 'password')
-->RET:raise Instance('Fault(Error, exceptions.Exception)', 'fault1')
-<-PYT:fault1.faultString
-->RET:'java.lang.Exception: com.atlassian.jira.rpc.exception.RemoteAuthenticationException: Invalid username or password.'
+<-PYT:import urllib
+<-PYT:import requests
+<-PYT:requests.get('https://bogus.jirasite.com/rest/api/2/issue/BOGUS-2?fields=assignee,components,created,description,priority,reporter,resolution,status,updated,summary', auth=('bogus_jira_user', 'bogus_password'))
+->RET:Instance('Response(object)', 'response1')
+<-PYT:response1.raise_for_status()
+->RET:raise Instance('HTTPError(RequestException, exceptions.IOError)', 'httperror1')
+<-PYT:httperror1.__str__()
+->RET:'401 Client Error: 401'
+<-PYT:response1.json()
+->RET:raise exceptions.ValueError('No JSON object could be decoded')

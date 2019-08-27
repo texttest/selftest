@@ -1,12 +1,12 @@
 known bugs=1
-01Apr2014
+05Apr2018
 HELLO : 1 tests : 1 known bugs
 
 Summary of all Unsuccessful tests follows...
 ---------------------------------------------------------------------------------
 The following tests had known bugs : 
 In HELLO test-suite TargetApp:
-  - HELLO test-case Test : bug PDTUC-367 (Open)
+  - HELLO test-case Test : bug FMS-1823 (Open)
 
 
 Details of all Unsuccessful tests follows...
@@ -14,25 +14,25 @@ Details of all Unsuccessful tests follows...
 
 Detailed information for the tests that had known bugs follows...
 --------------------------------------------------------
-TEST had known bugs (bug PDTUC-367 (Open)) on tabora : HELLO test-case Test (under Test)
+TEST had known bugs (bug FMS-1823 (Open)) on catriel : HELLO test-case Test (under Test)
+
 **************************************************
-Key: PDTUC-367
-Summary: Sample issue
+FMS-1823
+Summary: Enable running the tail assignment optimizer with threads
 Status: Open
-Assignee: geoff
-
-Components: Default
-Created: 2013-11-15 08:44:50.0
-Customfieldvalues: 15/Nov/13, System Test, CMS, 159194, geoff
+Assignee: lombardo
+Reporter: lombardo
+Components: N/A
+Created: 2017-08-31T11:28:00.000+0200
+Updated: 2017-10-04T13:57:33.000+0200
 Priority: 3
-Reporter: geoff
-Updated: 2014-03-26 13:03:32.0
 **************************************************
 
-View bug PDTUC-367 using Jira URL=http://www.myjirasite.com/browse/PDTUC-367
+View bug FMS-1823 using Jira URL=https://bogus.jirasite.com/browse/FMS-1823
 
-The description is a long string
-with lots of linebreaks.
+We would like to add a possibility to start the tail assignment optimizer with a number of threads, similar to pairing and rostering. There is some (too much) information in STUDIO-16306. We want the "Use multi-slot parallel" version, which sets the NSLOTS environment variable.
+
+I refer the details to the above Jira for now, and we'll handle follow up questions in this Jira.
 
 (This bug was triggered by text found in file 'output' matching 'after [0-9]* seconds')
 ---------- Differences in output ----------
