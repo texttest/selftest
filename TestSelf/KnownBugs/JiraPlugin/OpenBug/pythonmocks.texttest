@@ -1,46 +1,31 @@
-<-PYT:import xmlrpc
-<-PYT:import xmlrpc.client
-<-PYT:xmlrpc.client.ServerProxy('http://www.myjirasite.com/rpc/xmlrpc')
-->RET:Instance('ServerProxy', 'serverproxy1')
-<-PYT:serverproxy1.jira1.login('texttest', 'password')
-->RET:'4WaCz6nyC3'
-<-PYT:serverproxy1.jira1.getIssue('4WaCz6nyC3', 'FAK-42')
-->RET:{
- 'affectsVersions': [],
- 'assignee': 'geoff',
- 'components': [{'name': 'The Component Name', 'id': '10551'}],
- 'created': '2009-04-20 16:31:08.0',
- 'customFieldValues': [],
- 'description': 'The description is a long string\nwith lots of linebreaks.\n',
- 'fixVersions': [],
- 'id': '22693',
- 'key': 'FAK-42',
- 'priority': '3',
- 'project': 'FAK',
- 'reporter': 'geoff',
- 'status': '1',
- 'summary': 'Sample issue',
- 'type': '4',
- 'updated': '2009-09-25 13:16:21.0',
- 'votes': '0'}
-<-PYT:serverproxy1.jira1.getStatuses('4WaCz6nyC3')
-->RET:[{'description': 'The issue is open and ready for the assignee to start work on it.',
-  'icon': 'http://jira.atlassian.com/images/icons/status_open.gif',
-  'id': '1',
-  'name': 'Open'},
- {'description': 'This issue is being actively worked on at the moment by the assignee.',
-  'icon': 'http://jira.atlassian.com/images/icons/status_inprogress.gif',
-  'id': '3',
-  'name': 'In Progress'},
- {'description': 'This issue was once resolved, but the resolution was deemed incorrect. From here issues are either marked assigned or resolved.',
-  'icon': 'http://jira.atlassian.com/images/icons/status_reopened.gif',
-  'id': '4',
-  'name': 'Reopened'},
- {'description': 'A resolution has been taken, and it is awaiting verification by reporter. From here issues are either reopened, or are closed.',
-  'icon': 'http://jira.atlassian.com/images/icons/status_resolved.gif',
-  'id': '5',
-  'name': 'Resolved'},
- {'description': 'The issue is considered finished, the resolution is correct. Issues which are not closed can be reopened.',
-  'icon': 'http://jira.atlassian.com/images/icons/status_closed.gif',
-  'id': '6',
-  'name': 'Closed'}]
+<-PYT:import urllib
+<-PYT:urllib.__path__
+->RET:['Fake value just to mark that it exists']
+<-PYT:import urllib.parse
+<-PYT:import urllib.request
+<-PYT:urllib.request.Request('https://bogus.jirasite.com/rest/api/2/issue/BOGUS-2?fields=assignee,components,created,description,priority,reporter,resolution,status,updated,summary')
+->RET:Instance('Request', 'request1')
+<-PYT:request1.add_header('Authorization', 'Basic Ym9ndXNfamlyYV91c2VyOmJvZ3VzX3Bhc3N3b3Jk')
+<-PYT:urllib.request.urlopen(request1)
+->RET:Instance('HTTPResponse(io.BufferedIOBase)', 'httpresponse1')
+<-PYT:httpresponse1.read()
+->RET:(b'{"expand":"renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations","id":"322329","self":"https:/'
+ b'/bogus.jirasite.com/rest/api/2/issue/322329","key":"BOGUS-2","fields":{"summary":"Bogus summary'
+ b'","components":[],"created":"2017-10-11T14:00:47.000+0200","description":"Bogus description'
+ b'","reporter":{"self":"https://bogus.jirasite.com'
+ b'/rest/api/2/user?username=bogus_username","name":"jeff","key":"jeff","emailAddress":"jeff.hanneman@bogus.com","ava'
+ b'tarUrls":{"48x48":"https://bogus.jirasite.com/secure/useravatar?ownerId=bogus_username&avatarId=10464","24x24":"https://jira.j'
+ b'eppesensystems.com/secure/useravatar?size=small&ownerId=bogus_username&avatarId=10464","16x16":"https://bogus.jirasite.com/sec'
+ b'ure/useravatar?size=xsmall&ownerId=bogus_username&avatarId=10464","32x32":"https://bogus.jirasite.com/secure/useravatar?size=m'
+ b'edium&ownerId=bogus_username&avatarId=10464"},"displayName":"Jeff Hanneman","active":true,"timeZone":"Europe/Stockholm"},"assignee":'
+ b'{"self":"https://bogus.jirasite.com/rest/api/2/user?username=bogus_assigned_username","name":"bogus_assigned_username","key":"redacted","emailAddress":"'
+ b'bogus.assignee@megabugus.com","avatarUrls":{"48x48":"https://bogus.jirasite.com/secure/useravatar?ownerId=redacted&ava'
+ b'tarId=12722","24x24":"https://bogus.jirasite.com/secure/useravatar?size=small&ownerId=redacted&avatarId=12722","16x16":"'
+ b'https://bogus.jirasite.com/secure/useravatar?size=xsmall&ownerId=redacted&avatarId=12722","32x32":"https://bogus.jirasite'
+ b'/secure/useravatar?size=medium&ownerId=redacted&avatarId=12722"},"displayName":"ARA rat","active":true,"timeZone":"'
+ b'Europe/Stockholm"},"priority":{"self":"https://bogus.jirasite.com/rest/api/2/priority/4","iconUrl":"https://bogus'
+ b'.jirasite.com/images/icons/priorities/minor.svg","name":"3","id":"4"},"resolution":null,"updated":"2017-12-28T14:35:53.000+'
+ b'0100","status":{"self":"https://bogus.jirasite.com/rest/api/2/status/1","description":"The issue is acknowledged/open '
+ b'and ready for the assignee to start work on.","iconUrl":"https://bogus.jirasite.com/images/icons/statuses/assigned.png'
+ b'","name":"Open","id":"1","statusCategory":{"self":"https://bogus.jirasite.com/rest/api/2/statuscategory/2","id":2,"key'
+ b'":"new","colorName":"blue-gray","name":"To Do"}}}}')

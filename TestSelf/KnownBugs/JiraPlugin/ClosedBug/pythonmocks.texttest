@@ -1,62 +1,33 @@
-<-PYT:import xmlrpc
-<-PYT:import xmlrpc.client
-<-PYT:xmlrpc.client.ServerProxy('http://www.myjirasite.com/rpc/xmlrpc')
-->RET:Instance('ServerProxy', 'serverproxy1')
-<-PYT:serverproxy1.jira1.login('texttest', 'password')
-->RET:'37pIc4zep5'
-<-PYT:serverproxy1.jira1.getIssue('37pIc4zep5', 'FAK-42')
-->RET:{'affectsVersions': [],
- 'assignee': 'santaclaus',
- 'attachmentNames': 'rednose.mp3',
- 'components': [{'name': 'Medical', 'id': '10768'}],
- 'created': '2009-06-09 08:47:29.0',
- 'customFieldValues': [],
- 'description': 'Rudolf the red-nosed reindeer\r\nHad a very shiny nose\r\n',
- 'environment': 'Foo version 1.00 (40)\r\nBar version version 1.00 (20)',
- 'fixVersions': [],
- 'id': '25014',
- 'key': 'FAK-42',
- 'priority': '3',
- 'project': 'FAK',
- 'reporter': 'rudolf',
- 'resolution': '2',
- 'status': '6',
- 'summary': 'I have a red nose',
- 'type': '1', 
- 'updated': '2009-06-15 09:58:58.0',
- 'votes': '1'
-}
-<-PYT:serverproxy1.jira1.getStatuses('37pIc4zep5')
-->RET:[{'description': 'The issue is open and ready for the assignee to start work on it.',
-  'icon': 'http://jira.atlassian.com/images/icons/status_open.gif',
-  'id': '1',
-  'name': 'Open'},
- {'description': 'This issue is being actively worked on at the moment by the assignee.',
-  'icon': 'http://jira.atlassian.com/images/icons/status_inprogress.gif',
-  'id': '3',
-  'name': 'In Progress'},
- {'description': 'This issue was once resolved, but the resolution was deemed incorrect. From here issues are either marked assigned or resolved.',
-  'icon': 'http://jira.atlassian.com/images/icons/status_reopened.gif',
-  'id': '4',
-  'name': 'Reopened'},
- {'description': 'A resolution has been taken, and it is awaiting verification by reporter. From here issues are either reopened, or are closed.',
-  'icon': 'http://jira.atlassian.com/images/icons/status_resolved.gif',
-  'id': '5',
-  'name': 'Resolved'},
- {'description': 'The issue is considered finished, the resolution is correct. Issues which are not closed can be reopened.',
-  'icon': 'http://jira.atlassian.com/images/icons/status_closed.gif',
-  'id': '6',
-  'name': 'Closed'}]
-<-PYT:serverproxy1.jira1.getResolutions('37pIc4zep5')
-->RET:[{'description': 'A fix for this issue is checked into the tree and tested.',
-  'id': '1',
-  'name': 'Fixed'},
- {'description': 'The problem described is an issue which will never be fixed.',
-  'id': '2',
-  'name': "Won't Fix"},
- {'description': 'The problem is a duplicate of an existing issue.',
-  'id': '3',
-  'name': 'Duplicate'},
- {'description': 'The problem is not completely described.',
-  'id': '4',
-  'name': 'Incomplete'}]
+<-PYT:import urllib
+<-PYT:urllib.__path__
+->RET:['Fake value just to mark that it exists']
+<-PYT:import urllib.parse
+<-PYT:import urllib.request
+<-PYT:urllib.request.Request('https://bogus.jirasite.com/rest/api/2/issue/BOGUS-2?fields=assignee,components,created,description,priority,reporter,resolution,status,updated,summary')
+->RET:Instance('Request', 'request1')
+<-PYT:request1.add_header('Authorization', 'Basic Ym9ndXNfamlyYV91c2VyOmJvZ3VzX3Bhc3N3b3Jk')
+<-PYT:urllib.request.urlopen(request1)
+->RET:Instance('HTTPResponse(io.BufferedIOBase)', 'httpresponse1')
+<-PYT:httpresponse1.read()
+->RET:(b'{"expand":"renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations","id":"44476","self":"https://'
+ b'bogus.jirasite.com/rest/api/2/issue/44476","key":"BOGUS-1","fields":{"summary":"Test specific setting of CARMUSR doesn\'t'
+ b' seem to have any effect","components":[{"self":"https://bogus.jirasite.com/rest/api/2/component/11476","id":"11476","'
+ b'name":"Framework","description":"Bogus Jira project for texttest selftests."}],"created":"2003-04-11T17:18:57.0'
+ b'00+0200","description":"'
+ b'Descriptions can contain national characters: \xc3\xa5\xc3\xa4\xc3\xb6 (preceding three characters should be aring, auml, ouml).'
+ b'","reporter":{"self":"https://bogus.jirasite.com/rest/api/2/user?username=araya"'
+ b',"name":"araya","key":"araya","emailAddress":"some.dude@bogus.jirasite.com","avatarUrls":{"48x48":"https://bogus.jirasite.com/se'
+ b'cure/useravatar?avatarId=10532","24x24":"https://bogus.jirasite.com/secure/useravatar?size=small&avatarId=10532","16x1'
+ b'6":"https://bogus.jirasite.com/secure/useravatar?size=xsmall&avatarId=10532","32x32":"https://bogus.jirasite.com'
+ b'/secure/useravatar?size=medium&avatarId=10532"},"displayName":"Tom Araya","active":false,"timeZone":"Europe'
+ b'/Stockholm"},"assignee":{"self":"https://bogus.jirasite.com/rest/api/2/user?username=texttest","name":"texttest","key"'
+ b':"texttest","emailAddress":"bogus.dude@bogus.com","avatarUrls":{"48x48":"https://bogus.jirasite.com/secure/'
+ b'useravatar?avatarId=10532","24x24":"https://bogus.jirasite.com/secure/useravatar?size=small&avatarId=10532","16x16":"h'
+ b'ttps://bogus.jirasite.com/secure/useravatar?size=xsmall&avatarId=10532","32x32":"https://bogus.jirasite.com/secu'
+ b're/useravatar?size=medium&avatarId=10532"},"displayName":"TextTest Tool","active":true,"timeZone":"Europe/Stockholm"},"prior'
+ b'ity":{"self":"https://bogus.jirasite.com/rest/api/2/priority/4","iconUrl":"https://bogus.jirasite.com/images/ico'
+ b'ns/priorities/minor.svg","name":"3","id":"4"},"resolution":{"self":"https://bogus.jirasite.com/rest/api/2/resolution/6'
+ b'","id":"6","description":"The issue is not considered to be a defect.","name":"Not A Bug"},"updated":"2009-09-26T02:39:44.00'
+ b'0+0200","status":{"self":"https://bogus.jirasite.com/rest/api/2/status/6","description":"This issue is complete","icon'
+ b'Url":"https://bogus.jirasite.com/images/icons/statuses/closed.png","name":"Closed","id":"6","statusCategory":{"self":"'
+ b'https://bogus.jirasite.com/rest/api/2/statuscategory/3","id":3,"key":"done","colorName":"green","name":"Done"}}}}')

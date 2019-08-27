@@ -1,5 +1,36 @@
-<-PYT:import xmlrpclib
-<-PYT:xmlrpclib.ServerProxy('http://www.myjirasite.com/rpc/xmlrpc')
-->RET:Instance('ServerProxy', 'serverproxy1')
-<-PYT:serverproxy1.jira1.login('texttest', 'password')
-->RET:raise socket.gaierror('[Errno -2] Name or service not known')
+<-PYT:import urllib
+<-PYT:urllib.__path__
+->RET:['Fake value just to mark that it exists']
+<-PYT:import urllib.parse
+<-PYT:import urllib.request
+<-PYT:urllib.request.Request('https://bogus.jirasite.com/rest/api/2/issue/BOGUS-2?fields=assignee,components,created,description,priority,reporter,resolution,status,updated,summary')
+->RET:Instance('Request', 'request1')
+<-PYT:request1.add_header('Authorization', 'Basic Ym9ndXNfamlyYV91c2VyOmJvZ3VzX3Bhc3N3b3Jk')
+<-PYT:urllib.request.urlopen(request1)
+->RET:raise Instance('HTTPError(URLError, OSError)', 'httperror1')
+<-PYT:httperror1.getcode()
+->RET:404
+<-PYT:httperror1.getcode()
+->RET:404
+<-PYT:httperror1.read()
+->RET:(b'<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Oops,'
+ b' you&#39;ve found a dead link. - JIRA</title><script type="text/javascript">contextPath = "";</script><link type=\'text/css\' '
+ b"rel='stylesheet' href='/static-assets/metal-all.css' media='all'><script src='/static-assets/jquery-min.js'></script><script"
+ b' src=\'/static-assets/metal-all.js\'></script><meta name="decorator" content="none" /></head><body class=" error-page error404'
+ b'"><script type="text/javascript">document.body.className += " js-enabled";</script><div id="page"><header id="header" role="'
+ b'banner"></header><!-- #header --><section id="content" role="main"><div class="aui-page-panel"><div class="aui-page-panel-in'
+ b'ner"><section class="aui-page-panel-content lowerContent"><div id="error-state"><span class="error-type"></span><h1>Oops, yo'
+ b'u&#39;ve found a dead link.</h1><ul><li>Go back to the <a href="javascript:window.history.back()">previous page</a></li><li>'
+ b'Go to the <a href="/secure/MyJiraHome.jspa">Home Page</a></li></ul></div></section><!-- .aui-page-panel-content --></div><!-'
+ b'- .aui-page-panel-inner --></div><!-- .aui-page-panel --></section><!-- #content --><footer id="footer" role="contentinfo"><'
+ b'section class="footer-body"><ul class="atlassian-footer">\n    <li>\n        Atlassian Jira <a class="seo-link" rel="nofollow"'
+ b' href="https://www.atlassian.com/software/jira">Project Management Software</a>\n                                            '
+ b'<span id="footer-build-information">(v8.1.0#801000-<span title=\'2e1cd1bb771978cda2c5e8f3f10539ab180613f6\' data-commit-id'
+ b'=\'2e1cd1bb771978cda2c5e8f3f10539ab180613f6}\'>sha1:2e1cd1b</span>)</span>\n    </li>\n    <li>\n        <a id="about-link" r'
+ b'el="nofollow" href="/secure/AboutPage.jspa/secure/AboutPage.jspa">About Jira</a>\n    </li>\n    <li>\n        <a id="foote'
+ b'r-report-problem-link" rel="nofollow" href="/secure/CreateIssue!default.jspa">Report a problem</a>\n    </li>\n</ul>\n    <'
+ b'ul class="atlassian-footer">\n        <li class="licensemessage">\n            \n        </li>\n    </ul>\n<div id="footer-lo'
+ b'go"><a href="http://www.atlassian.com/" rel="nofollow">Atlassian</a></div></section></footer><!-- #footer --></div><!-- #pag'
+ b'e --></body></html>')
+<-PYT:httperror1.__str__()
+->RET:'HTTP Error 404: 404'
