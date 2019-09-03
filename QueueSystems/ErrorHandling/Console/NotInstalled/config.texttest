@@ -4,3 +4,8 @@ pythonmocks:env={->}}, startupinfo
 pythonmocks:.*}, startupinfo{REPLACE <something>,}
 pythonmocks:[^ ]*/texttest[\.py]* {REPLACE <path_to_texttest> }
 pythonmocks:encoding=.*,{REPLACE encoding=<something>,}
+
+# Line breaks differ depending on the length of the texttets-tmp path.
+pythonmocks:sleep
+pythonmocks:TargetApp
+pythonmocks:Basic
