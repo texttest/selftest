@@ -1,6 +1,10 @@
 # Path to the executable
 executable:${TEXTTEST_CHECKOUT}/Scripts/texttestc.py
 
+# Uncomment this to test the installed version.
+# Note that 8 or so tests rely on monkey-patching Python and hence won't work with this setup
+#executable:${TEXTTEST_CHECKOUT}/texttestc.exe
+
 # don't run the SGE/LSF/ec2cloud tests for now : they don't work on Windows...
 # don't run the tests that receive signals either
 extra_version:{CLEAR intcore}

@@ -1,0 +1,41 @@
+internal errors=1
+21Nov2019
+HELLO : 1 tests : 1 internal errors
+
+Summary of all Unsuccessful tests follows...
+---------------------------------------------------------------------------------
+The following tests had internal errors : 
+In HELLO test-suite TargetApp:
+  - HELLO test-case Test : bug BOGUS-1 (Closed)
+
+
+Details of all Unsuccessful tests follows...
+---------------------------------------------------------------------------------
+
+Detailed information for the tests that had internal errors follows...
+--------------------------------------------------------
+TEST had internal errors (bug BOGUS-1 (Closed)) on SE-R90TN6N0 : HELLO test-case Test (under Test)
+
+**************************************************
+BOGUS-1
+Summary: Test specific setting of CARMUSR doesn't seem to have any effect
+Status: Closed
+Assignee: texttest
+Reporter: araya
+Components: Framework
+Created: 2003-04-11T17:18:57.000+0200
+Updated: 2009-09-26T02:39:44.000+0200
+Priority: 3
+**************************************************
+
+View bug BOGUS-1 using Jira URL=https://bogus.jirasite.com/browse/BOGUS-1
+
+Descriptions can contain national characters: едц (preceding three characters should be aring, auml, ouml).
+
+(This bug was triggered by text found in file 'output' matching 'after [0-9]* seconds')
+---------- Differences in output ----------
+1c1
+< Hello world
+---
+> Hello after 5 seconds
+
