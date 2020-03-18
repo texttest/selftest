@@ -4,6 +4,8 @@
 <-PYT:boto.__path__
 ->RET:['Fake value just to mark that it exists']
 <-PYT:import boto.ec2
+<-PYT:boto.ec2.__path__
+->RET:['Fake value just to mark that it exists']
 <-PYT:boto.ec2.connection.EC2Connection.DefaultRegionName
 ->RET:'eu-west-1'
 <-PYT:boto.ec2.connect_to_region('eu-west-1')
@@ -295,8 +297,6 @@
 ->RET:u'i-8a9e80ca'
 <-PYT:instance29.id
 ->RET:u'i-059e8e45'
-<-PYT:boto.ec2.__path__
-->RET:['Fake value just to mark that it exists']
 <-PYT:import boto.ec2.cloudwatch
 <-PYT:boto.ec2.cloudwatch.connect_to_region('eu-west-1')
 ->RET:Instance('CloudWatchConnection(AWSQueryConnection, AWSAuthConnection, object)', 'cloudwatchconnection_eu_west_1')
