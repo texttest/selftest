@@ -39,9 +39,11 @@ errors:\\{REPLACE /}
 overview*:\\{REPLACE /}
 pythonmocks:\\\\{REPLACE /}
 pythonmocks:import matplotlib
+pythonmocks:->RET:raise ImportError('No module named matplotlib'){MATCH 2}
 pythonmocks:<-PYT:locale.getpreferredencoding(do_setlocale=False){REPLACE <-PYT:locale.getpreferredencoding()}
 pythonmocks:'C:/Program Files.*/TextTest/texttest.*.exe'{REPLACE <path_to_texttest>}
 externalmocks:\\{REPLACE /}
+externalmocks:"C:/.*/python.exe"{REPLACE python}
 checkforbugs:\\{REPLACE /}
 reconnection:\\\\{REPLACE /}
 reconnection:\\{REPLACE /}
