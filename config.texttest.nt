@@ -29,10 +29,16 @@ overview*:texttest.exe{REPLACE texttest}
 dynamic_gui_log:([^ ]*)/Scripts/texttestc.py{REPLACE \1/bin/texttest}
 output:\\\\{REPLACE /}
 output:\\{REPLACE /}
+output:Das System kann die angegebene Datei nicht finden{REPLACE The system cannot find the file specified}
+output:C:/Program Files.*/TextTest/Meld.exe{REPLACE /usr/bin/tkdiff}
+output:C:/Program Files.*/Notepad++/notepad++.exe{REPLACE notepad}
 errors:\\\\{REPLACE /}
 errors:\\{REPLACE /}
 overview*:\\{REPLACE /}
 pythonmocks:\\\\{REPLACE /}
+pythonmocks:import matplotlib
+pythonmocks:<-PYT:locale.getpreferredencoding(do_setlocale=False){REPLACE <-PYT:locale.getpreferredencoding()}
+pythonmocks:'C:/Program Files.*/TextTest/texttest.*.exe'{REPLACE <path_to_texttest>}
 externalmocks:\\{REPLACE /}
 checkforbugs:\\{REPLACE /}
 reconnection:\\\\{REPLACE /}
