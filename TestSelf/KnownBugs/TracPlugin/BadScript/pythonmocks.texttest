@@ -2,6 +2,8 @@
 <-PYT:import urllib.request
 <-PYT:urllib.request.urlopen('http://trac.edgewall.org/demo-0.13/ticket/42?format=tab')
 ->RET:Instance('addinfourl(addbase)', 'addinfourl1')
-<-PYT:addinfourl1.readlines()
-->RET:['''\xef\xbb\xbfid\tsummary\treporter\towner\tdescription\ttype\tstatus\tpriority\tmilestone\tcomponent\tversion\tresolution\tkeywords\tcc\tchangelog\tapichanges\r
-''']
+<-PYT:addinfourl1.read()
+->RET:b'''\xef\xbb\xbfid\tsummary\treporter\towner\tdescription\ttype\tstatus\tpriority\tmilestone\tcomponent\tversion\tresolution\tkeywords\tcc\tchangelog\tapichanges\r
+'''
+<-PYT:addinfourl1.headers.get_content_charset()
+->RET:'utf8'
