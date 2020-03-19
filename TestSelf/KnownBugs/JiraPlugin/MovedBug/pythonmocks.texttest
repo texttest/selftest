@@ -1,7 +1,3 @@
-<-PYT:import urllib
-<-PYT:urllib.__path__
-->RET:['Fake value just to mark that it exists']
-<-PYT:import urllib.parse
 <-PYT:import urllib.request
 <-PYT:urllib.request.Request('https://bogus.jirasite.com/rest/api/2/issue/BOGUS-1?fields=assignee,components,created,description,priority,reporter,resolution,status,updated,summary')
 ->RET:Instance('Request', 'request1')
