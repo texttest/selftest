@@ -1,206 +1,370 @@
-<-PYT:subprocess.Popen(['qsub', '-N', 'Test-Basic-SLEEP', '-w', 'e', '-notify', '-m', 'n', '-cwd', '-b', 'y', '-v', 'STANDARD', '-o', '/dev/null', '-e', '/home/geoff/.texttest/tmp/dynamic_gui.30Jul173910.19124/texttest.sge/QueueSystems/ErrorHandling/Console/NotInstalled/texttesttmp/grid_core_files/slave_start_errors.geoff', 'exec', ('$SHELL -c "exec /home/geoff/code/texttest/bin/texttest -d '
- '/home/geoff/.texttest/tmp/dynamic_gui.30Jul173910.19124/texttest.sge/QueueSystems/ErrorHandling/Console/NotInstalled/TargetApp '
+<-PYT:subprocess.Popen(['qsub', '-N', 'Test-Basic-SLEEP', '-w', 'e', '-notify', '-m', 'n', '-cwd', '-b', 'y', '-v', 'STANDARD', '-o', '/dev/null', '-e', '/carm/proj/texttest-tmp-mc/johgil/dynamic_gui.29Sep135050.3187888/texttest.sge/QueueSystems/ErrorHandling/Console/NotInstalled/texttesttmp/grid_core_files/slave_start_errors.johgil', 'exec', '$SHELL', '-c', ('exec /carm/proj/dave/workspace/johgil/texttest-tool/texttest/bin/texttest -d '
+ '/carm/proj/texttest-tmp-mc/johgil/dynamic_gui.29Sep135050.3187888/texttest.sge/QueueSystems/ErrorHandling/Console/NotInstalled/TargetApp '
  '-a sleep -l -tp Basic -slave '
- '/home/geoff/.texttest/tmp/dynamic_gui.30Jul173910.19124/texttest.sge/QueueSystems/ErrorHandling/Console/NotInstalled/texttesttmp/console.30Jul173912.19151 '
- '-servaddr 127.0.1.1:37911"')], cwd='/home/geoff/.texttest/tmp/dynamic_gui.30Jul173910.19124/texttest.sge/QueueSystems/ErrorHandling/Console/NotInstalled/texttesttmp/grid_core_files', encoding='UTF-8', env={'CAPTUREMOCK_MODE': '0',
- 'CAPTUREMOCK_PROCESS_START': '/home/geoff/tests/selftest/capturemockrc.texttest,/home/geoff/tests/selftest/QueueSystems/ErrorHandling/capturemockrc.texttest,/home/geoff/tests/selftest/QueueSystems/ErrorHandling/Console/NotInstalled/capturemockrc.texttest,/home/geoff/tests/selftest/capturemockrc.texttest.sge',
+ '/carm/proj/texttest-tmp-mc/johgil/dynamic_gui.29Sep135050.3187888/texttest.sge/QueueSystems/ErrorHandling/Console/NotInstalled/texttesttmp/console.29Sep135102.3200896 '
+ '-servaddr 127.0.0.1:58811')], cwd='/carm/proj/texttest-tmp-mc/johgil/dynamic_gui.29Sep135050.3187888/texttest.sge/QueueSystems/ErrorHandling/Console/NotInstalled/texttesttmp/grid_core_files', encoding='UTF-8', env={'ARC': 'lx-amd64',
+ 'BASH_ENV': '/usr/share/Modules/init/bash',
+ 'BASH_FUNC_module%%': ('() {  unset _mlre _mlIFS _mlshdbg;\n'
+ ' if [ "${MODULES_SILENT_SHELL_DEBUG:-0}" = \'1\' ]; then\n'
+ ' case "$-" in \n'
+ ' *v*x*)\n'
+ ' set +vx;\n'
+ " _mlshdbg='vx'\n"
+ ' ;;\n'
+ ' *v*)\n'
+ ' set +v;\n'
+ " _mlshdbg='v'\n"
+ ' ;;\n'
+ ' *x*)\n'
+ ' set +x;\n'
+ " _mlshdbg='x'\n"
+ ' ;;\n'
+ ' *)\n'
+ " _mlshdbg=''\n"
+ ' ;;\n'
+ ' esac;\n'
+ ' fi;\n'
+ ' if [ -n "${IFS+x}" ]; then\n'
+ ' _mlIFS=$IFS;\n'
+ ' fi;\n'
+ " IFS=' ';\n"
+ ' for _mlv in ${MODULES_RUN_QUARANTINE:-};\n'
+ ' do\n'
+ ' if [ "${_mlv}" = "${_mlv##*[!A-Za-z0-9_]}" -a "${_mlv}" = "${_mlv#[0-9]}" ]; then\n'
+ ' if [ -n "`eval \'echo ${\'$_mlv\'+x}\'`" ]; then\n'
+ ' _mlre="${_mlre:-}${_mlv}_modquar=\'`eval \'echo ${\'$_mlv\'}\'`\' ";\n'
+ ' fi;\n'
+ ' _mlrv="MODULES_RUNENV_${_mlv}";\n'
+ ' _mlre="${_mlre:-}${_mlv}=\'`eval \'echo ${\'$_mlrv\':-}\'`\' ";\n'
+ ' fi;\n'
+ ' done;\n'
+ ' if [ -n "${_mlre:-}" ]; then\n'
+ ' eval `eval ${_mlre}/usr/bin/tclsh /usr/share/Modules/libexec/modulecmd.tcl bash \'"$@"\'`;\n'
+ ' else\n'
+ ' eval `/usr/bin/tclsh /usr/share/Modules/libexec/modulecmd.tcl bash "$@"`;\n'
+ ' fi;\n'
+ ' _mlstatus=$?;\n'
+ ' if [ -n "${_mlIFS+x}" ]; then\n'
+ ' IFS=$_mlIFS;\n'
+ ' else\n'
+ ' unset IFS;\n'
+ ' fi;\n'
+ ' if [ -n "${_mlshdbg:-}" ]; then\n'
+ ' set -$_mlshdbg;\n'
+ ' fi;\n'
+ ' unset _mlre _mlv _mlrv _mlIFS _mlshdbg;\n'
+ ' return $_mlstatus\n'
+ '}'),
+ 'BASH_FUNC_scl%%': '() {  if [ "$1" = "load" -o "$1" = "unload" ]; then\n eval "module $@";\n else\n /usr/bin/scl "$@";\n fi\n}',
+ 'BASH_FUNC_switchml%%': ('() {  typeset swfound=1;\n'
+ ' if [ "${MODULES_USE_COMPAT_VERSION:-0}" = \'1\' ]; then\n'
+ " typeset swname='main';\n"
+ ' if [ -e /usr/share/Modules/libexec/modulecmd.tcl ]; then\n'
+ ' typeset swfound=0;\n'
+ ' unset MODULES_USE_COMPAT_VERSION;\n'
+ ' fi;\n'
+ ' else\n'
+ " typeset swname='compatibility';\n"
+ ' if [ -e /usr/share/Modules/libexec/modulecmd-compat ]; then\n'
+ ' typeset swfound=0;\n'
+ ' MODULES_USE_COMPAT_VERSION=1;\n'
+ ' export MODULES_USE_COMPAT_VERSION;\n'
+ ' fi;\n'
+ ' fi;\n'
+ ' if [ $swfound -eq 0 ]; then\n'
+ ' echo "Switching to Modules $swname version";\n'
+ ' source /usr/share/Modules/init/bash;\n'
+ ' else\n'
+ ' echo "Cannot switch to Modules $swname version, command not found";\n'
+ ' return 1;\n'
+ ' fi\n'
+ '}'),
+ 'CAPTUREMOCK_MODE': '0',
+ 'CAPTUREMOCK_PROCESS_START': '/carm/proj/dave/workspace/johgil/texttest-tool/texttest-selftest/capturemockrc.texttest,/carm/proj/dave/workspace/johgil/texttest-tool/texttest-selftest/QueueSystems/ErrorHandling/capturemockrc.texttest,/carm/proj/dave/workspace/johgil/texttest-tool/texttest-selftest/QueueSystems/ErrorHandling/Console/NotInstalled/capturemockrc.texttest,/carm/proj/dave/workspace/johgil/texttest-tool/texttest-selftest/capturemockrc.texttest.sge',
  'CAPTUREMOCK_PYTHON': '',
- 'CAPTUREMOCK_RECORD_FILE': '/home/geoff/.texttest/tmp/dynamic_gui.30Jul173910.19124/texttest.sge/QueueSystems/ErrorHandling/Console/NotInstalled/pythonmocks.texttest',
- 'CAPTUREMOCK_REPLAY_FILE': '/home/geoff/tests/selftest/QueueSystems/ErrorHandling/Console/NotInstalled/pythonmocks.texttest.sge',
- 'CAPTUREMOCK_SERVER': '127.0.1.1:37911',
- 'CLUTTER_IM_MODULE': 'xim',
- 'COLORTERM': 'truecolor',
- 'DEFAULTS_PATH': '/usr/share/gconf/ubuntu.default.path',
- 'DESKTOP_SESSION': 'ubuntu',
- 'DISPLAY': 'emily-N24-25JU:0',
- 'GDMSESSION': 'ubuntu',
- 'GJS_DEBUG_OUTPUT': 'stderr',
- 'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG',
- 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated',
- 'GNOME_SHELL_SESSION_MODE': 'ubuntu',
- 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/82956acd_2d98_4c29_84f5_b91ea205d2ab',
- 'GNOME_TERMINAL_SERVICE': ':1.105',
- 'GPG_AGENT_INFO': '/run/user/1003/gnupg/S.gpg-agent:0:1',
- 'GTK2_MODULES': 'overlay-scrollbar',
- 'GTK_IM_MODULE': 'ibus',
- 'GTK_MODULES': 'gail:atk-bridge',
- 'GTK_RECENTLY_USED_FILE': '/home/geoff/.texttest/tmp/dynamic_gui.30Jul173910.19124/texttest.sge/QueueSystems/ErrorHandling/Console/NotInstalled/gtk_recently_used',
- 'HOME': '/home/geoff',
- 'IM_CONFIG_PHASE': '2',
- 'JYTHONPATH': '/home/geoff/.texttest/tmp/dynamic_gui.30Jul173910.19124/texttest.sge/QueueSystems/ErrorHandling/Console/NotInstalled/traffic_intercepts:',
+ 'CAPTUREMOCK_RECORD_FILE': '/carm/proj/texttest-tmp-mc/johgil/dynamic_gui.29Sep135050.3187888/texttest.sge/QueueSystems/ErrorHandling/Console/NotInstalled/pythonmocks.texttest',
+ 'CAPTUREMOCK_REPLAY_FILE': '/carm/proj/dave/workspace/johgil/texttest-tool/texttest-selftest/QueueSystems/ErrorHandling/Console/NotInstalled/pythonmocks.texttest.sge',
+ 'CAPTUREMOCK_SERVER': '127.0.0.1:58811',
+ 'DOCKER_HOST': 'tcp://docker-slave.service.cloud.jeppesensystems.com:2375',
+ 'EDITOR': 'gvim',
+ 'ENV': '/usr/share/Modules/init/profile.sh',
+ 'ENVIRONMENT': 'BATCH',
+ 'GTK_RECENTLY_USED_FILE': '/carm/proj/texttest-tmp-mc/johgil/dynamic_gui.29Sep135050.3187888/texttest.sge/QueueSystems/ErrorHandling/Console/NotInstalled/gtk_recently_used',
+ 'GUESTFISH_INIT': '\\e[1;34m',
+ 'GUESTFISH_OUTPUT': '\\e[0m',
+ 'GUESTFISH_PS1': '\\[\\e[1;32m\\]><fs>\\[\\e[0;31m\\] ',
+ 'GUESTFISH_RESTORE': '\\e[0m',
+ 'HISTCONTROL': 'ignoredups',
+ 'HISTSIZE': '1000',
+ 'HOME': '/users/johgil',
+ 'HOST': 'gotids14p.got.jeppesensystems.com',
+ 'HOSTNAME': 'gotids14p.got.jeppesensystems.com',
+ 'INVOCATION_ID': 'e7ebbca79b214ae6a67e6967f83b8015',
+ 'JOB_ID': '959',
+ 'JOB_NAME': 'Test-Basic.JunitReport.Console.BatchTests.TestSelf-TextTest',
+ 'JOB_SCRIPT': 'exec',
+ 'JOURNAL_STREAM': '9:179841921',
+ 'JYTHONPATH': '/carm/proj/texttest-tmp-mc/johgil/dynamic_gui.29Sep135050.3187888/texttest.sge/QueueSystems/ErrorHandling/Console/NotInstalled/traffic_intercepts:',
  'LANG': 'en_US.UTF-8',
- 'LANGUAGE': 'en',
- 'LC_ADDRESS': 'sv_SE.UTF-8',
- 'LC_IDENTIFICATION': 'sv_SE.UTF-8',
- 'LC_MEASUREMENT': 'sv_SE.UTF-8',
- 'LC_MONETARY': 'sv_SE.UTF-8',
- 'LC_NAME': 'sv_SE.UTF-8',
- 'LC_NUMERIC': 'sv_SE.UTF-8',
- 'LC_PAPER': 'sv_SE.UTF-8',
- 'LC_TELEPHONE': 'sv_SE.UTF-8',
- 'LC_TIME': 'sv_SE.UTF-8',
- 'LESSCLOSE': '/usr/bin/lesspipe %s %s',
- 'LESSOPEN': '| /usr/bin/lesspipe %s',
- 'LOGNAME': 'geoff',
+ 'LD_LIBRARY_PATH': '/users/johgil/stuff/tmux30vim82/lib:',
+ 'LESSOPEN': '||/usr/bin/lesspipe.sh %s',
+ 'LOADEDMODULES': '',
+ 'LOGNAME': 'johgil',
  'LSB_DEFAULTQUEUE': 'normal',
- 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:',
- 'MANDATORY_PATH': '/usr/share/gconf/ubuntu.mandatory.path',
- 'OLDPWD': '/home/geoff/.capturemock',
- 'PATH': '/home/geoff/.texttest/tmp/dynamic_gui.30Jul173910.19124/texttest.sge/QueueSystems/ErrorHandling/Console/NotInstalled:/home/geoff/code/texttest/bin:/home/geoff/bin:/home/geoff/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin',
- 'PE_HOSTFILE': '/home/geoff/.texttest/tmp/dynamic_gui.30Jul173910.19124/texttest.sge/QueueSystems/ErrorHandling/Console/NotInstalled/sgehostfile',
- 'PWD': '/home/geoff',
- 'PYTHONPATH': '/home/geoff/.texttest/tmp/dynamic_gui.30Jul173910.19124/texttest.sge/QueueSystems/ErrorHandling/Console/NotInstalled/traffic_intercepts:/home/geoff/.texttest/tmp/dynamic_gui.30Jul173910.19124/texttest.sge/QueueSystems/ErrorHandling/Console/NotInstalled:$PYTHONPATH',
- 'QT4_IM_MODULE': 'xim',
- 'QT_ACCESSIBILITY': '1',
- 'QT_IM_MODULE': 'ibus',
- 'QT_QPA_PLATFORMTHEME': 'appmenu-qt5',
- 'SESSION_MANAGER': 'local/emily-N24-25JU:@/tmp/.ICE-unix/1607,unix/emily-N24-25JU:/tmp/.ICE-unix/1607',
+ 'M2_HOME': '/usr/share/maven',
+ 'MAIL': '/var/spool/mail/johgil',
+ 'MANPATH': '/opt/uge/default/man:/usr/share/man:/usr/local/share/man',
+ 'MODULEPATH': '/etc/scl/modulefiles:/usr/share/Modules/modulefiles:/etc/modulefiles:/usr/share/modulefiles',
+ 'MODULEPATH_modshare': '/usr/share/modulefiles:1:/etc/modulefiles:1:/usr/share/Modules/modulefiles:1',
+ 'MODULESHOME': '/usr/share/Modules',
+ 'MODULES_CMD': '/usr/share/Modules/libexec/modulecmd.tcl',
+ 'MODULES_RUN_QUARANTINE': 'LD_LIBRARY_PATH',
+ 'NHOSTS': '1',
+ 'NQUEUES': '1',
+ 'NSLOTS': '1',
+ 'PATH': '/carm/proj/texttest-tmp-mc/johgil/dynamic_gui.29Sep135050.3187888/texttest.sge/QueueSystems/ErrorHandling/Console/NotInstalled:/carm/proj/dave/workspace/johgil/texttest-tool/texttest/bin:/nfs/vm/dave/workspace/johgil/texttest-tool/texttest/bin:/nfs/vm/dave/workspace/johgil/texttest-tool/capturemock/bin:/users/johgil/bin:/users/johgil/stuff/tmux30vim82/bin/:/users/johgil/stuff/node/bin:/users/johgil/bin:/carm/proj/dave/workspace/johgil/development_utils:/users/johgil/.local/bin:/opt/uge/default/bin/lx-amd64:/usr/share/Modules/bin:/usr/lib64/ccache:/tmp/959.1.all.q:/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin',
+ 'PE_HOSTFILE': '/carm/proj/texttest-tmp-mc/johgil/dynamic_gui.29Sep135050.3187888/texttest.sge/QueueSystems/ErrorHandling/Console/NotInstalled/sgehostfile',
+ 'PWD': '/nfs/vm/texttest-tmp-mc/grid_core_files',
+ 'PYTHONPATH': '/carm/proj/texttest-tmp-mc/johgil/dynamic_gui.29Sep135050.3187888/texttest.sge/QueueSystems/ErrorHandling/Console/NotInstalled/traffic_intercepts:/nfs/vm/dave/workspace/johgil/texttest-tool/capturemock:',
+ 'QUEUE': 'all.q',
+ 'REQNAME': 'Test-Basic.JunitReport.Console.BatchTests.TestSelf-TextTest',
+ 'REQUEST': 'Test-Basic.JunitReport.Console.BatchTests.TestSelf-TextTest',
+ 'RESTARTED': '0',
+ 'SGE_ACCOUNT': 'sge',
+ 'SGE_ARCH': 'lx-amd64',
+ 'SGE_BINARY_PATH': '/opt/uge/default/bin/lx-amd64',
  'SGE_CELL': 'default',
- 'SGE_ROOT': '/home/geoff/.texttest/tmp/dynamic_gui.30Jul173910.19124/texttest.sge/QueueSystems/ErrorHandling/Console/NotInstalled/sge',
+ 'SGE_CLUSTER_NAME': 'p6444',
+ 'SGE_CWD_PATH': '/nfs/vm/texttest-tmp-mc/grid_core_files',
+ 'SGE_JOB_SPOOL_DIR': '/var/spool/uge/gotids14p/active_jobs/959.1',
+ 'SGE_O_HOME': '/users/johgil',
+ 'SGE_O_HOST': 'gotids14p.got.jeppesensystems.com',
+ 'SGE_O_LOGNAME': 'johgil',
+ 'SGE_O_MAIL': '/var/spool/mail/johgil',
+ 'SGE_O_PATH': '/nfs/vm/dave/workspace/johgil/texttest-tool/texttest/bin:/nfs/vm/dave/workspace/johgil/texttest-tool/capturemock/bin:/users/johgil/bin:/users/johgil/stuff/tmux30vim82/bin/:/users/johgil/stuff/node/bin:/users/johgil/bin:/carm/proj/dave/workspace/johgil/development_utils:/users/johgil/.local/bin:/opt/uge/default/bin/lx-amd64:/users/johgil/bin:/users/johgil/stuff/tmux30vim82/bin/:/users/johgil/stuff/node/bin:/users/johgil/bin:/carm/proj/dave/workspace/johgil/development_utils:/users/johgil/.local/bin:/opt/uge/default/bin/lx-amd64:/usr/share/Modules/bin:/usr/lib64/ccache:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin',
+ 'SGE_O_SHELL': '/bin/bash',
+ 'SGE_O_WORKDIR': '/nfs/vm/texttest-tmp-mc/grid_core_files',
+ 'SGE_RERUN_JOB': '0',
+ 'SGE_RERUN_REQUESTED': '0',
+ 'SGE_ROOT': '/carm/proj/texttest-tmp-mc/johgil/dynamic_gui.29Sep135050.3187888/texttest.sge/QueueSystems/ErrorHandling/Console/NotInstalled/sge',
+ 'SGE_STDERR_PATH': '/carm/proj/texttest-tmp-mc/grid_core_files/slave_start_errors.johgil',
+ 'SGE_STDIN_PATH': '/dev/null',
+ 'SGE_STDOUT_PATH': '/dev/null',
+ 'SGE_SUP_GRP_EVAL': '0',
+ 'SGE_SUP_GRP_EVAL_RANGE': '20008',
+ 'SGE_TASK_FIRST': 'undefined',
+ 'SGE_TASK_ID': 'undefined',
+ 'SGE_TASK_LAST': 'undefined',
+ 'SGE_TASK_STEPSIZE': 'undefined',
  'SHELL': '/bin/bash',
  'SHLVL': '1',
- 'SSH_AGENT_PID': '1712',
- 'SSH_AUTH_SOCK': '/run/user/1003/keyring/ssh',
- 'STANDARD': '/home/geoff/.texttest/tmp/dynamic_gui.30Jul173910.19124/texttest.sge/QueueSystems/ErrorHandling/Console/NotInstalled/standard',
- 'STANDARD_PERSONAL': '/home/geoff/.texttest/tmp/dynamic_gui.30Jul173910.19124/texttest.sge/QueueSystems/ErrorHandling/Console/NotInstalled/standard_personal',
- 'STORYTEXT_HOME': '/home/geoff/tests/storytext',
- 'TERM': 'xterm-256color',
- 'TEXTDOMAIN': 'im-config',
- 'TEXTDOMAINDIR': '/usr/share/locale/',
- 'TEXTTEST_CHECKOUT': '/home/geoff/code/texttest',
- 'TEXTTEST_CHECKOUT_NAME': '/home/geoff/code/texttest/',
+ 'STANDARD': '/carm/proj/texttest-tmp-mc/johgil/dynamic_gui.29Sep135050.3187888/texttest.sge/QueueSystems/ErrorHandling/Console/NotInstalled/standard',
+ 'STANDARD_PERSONAL': '/carm/proj/texttest-tmp-mc/johgil/dynamic_gui.29Sep135050.3187888/texttest.sge/QueueSystems/ErrorHandling/Console/NotInstalled/standard_personal',
+ 'STORYTEXT_HOME': '/carm/proj/dave/workspace/johgil/texttest-tool/texttest-selftest/storytext',
+ 'TERM': 'screen-256color',
+ 'TEXTTEST_CHECKOUT': '/carm/proj/dave/workspace/johgil/texttest-tool/texttest',
  'TEXTTEST_DYNAMIC_GUI_INTERPRETER': 'storytext -l config',
- 'TEXTTEST_HOME': '/home/geoff/.texttest/tmp/dynamic_gui.30Jul173910.19124/texttest.sge/QueueSystems/ErrorHandling/Console/NotInstalled/TargetApp',
- 'TEXTTEST_LOG_DIR': '/home/geoff/.texttest/tmp/dynamic_gui.30Jul173910.19124/texttest.sge/QueueSystems/ErrorHandling/Console/NotInstalled',
- 'TEXTTEST_PERSONAL_CONFIG': '/home/geoff/.texttest/tmp/dynamic_gui.30Jul173910.19124/texttest.sge/QueueSystems/ErrorHandling/Console/NotInstalled/personaldir',
- 'TEXTTEST_PERSONAL_LOG': '/home/geoff/.texttest/tmp/dynamic_gui.30Jul173910.19124/texttest.sge/QueueSystems/ErrorHandling/Console/NotInstalled/log',
+ 'TEXTTEST_HOME': '/carm/proj/texttest-tmp-mc/johgil/dynamic_gui.29Sep135050.3187888/texttest.sge/QueueSystems/ErrorHandling/Console/NotInstalled/TargetApp',
+ 'TEXTTEST_LOG_DIR': '/carm/proj/texttest-tmp-mc/johgil/dynamic_gui.29Sep135050.3187888/texttest.sge/QueueSystems/ErrorHandling/Console/NotInstalled',
+ 'TEXTTEST_PERSONAL_CONFIG': '/carm/proj/texttest-tmp-mc/johgil/dynamic_gui.29Sep135050.3187888/texttest.sge/QueueSystems/ErrorHandling/Console/NotInstalled/personaldir',
+ 'TEXTTEST_PERSONAL_LOG': '/carm/proj/texttest-tmp-mc/johgil/dynamic_gui.29Sep135050.3187888/texttest.sge/QueueSystems/ErrorHandling/Console/NotInstalled/log',
  'TEXTTEST_PICKLE_PROTOCOL': '0',
  'TEXTTEST_QS_POLL_WAIT': '-1',
- 'TEXTTEST_ROOT': '/home/geoff/tests/selftest',
- 'TEXTTEST_SANDBOX': '/home/geoff/.texttest/tmp/dynamic_gui.30Jul173910.19124/texttest.sge/QueueSystems/ErrorHandling/Console/NotInstalled',
- 'TEXTTEST_SANDBOX_ROOT': '/home/geoff/.texttest/tmp/dynamic_gui.30Jul173910.19124',
+ 'TEXTTEST_ROOT': '/carm/proj/dave/workspace/johgil/texttest-tool/texttest-selftest',
+ 'TEXTTEST_SANDBOX': '/carm/proj/texttest-tmp-mc/johgil/dynamic_gui.29Sep135050.3187888/texttest.sge/QueueSystems/ErrorHandling/Console/NotInstalled',
+ 'TEXTTEST_SANDBOX_ROOT': '/carm/proj/texttest-tmp-mc/johgil/dynamic_gui.29Sep135050.3187888',
  'TEXTTEST_SELFTEST_DIR_NAMES': 'TargetApp',
  'TEXTTEST_SLAVE_CMD': '',
- 'TEXTTEST_TMP': '/home/geoff/.texttest/tmp/dynamic_gui.30Jul173910.19124/texttest.sge/QueueSystems/ErrorHandling/Console/NotInstalled/texttesttmp',
- 'USER': 'geoff',
- 'USERNAME': 'geoff',
- 'VTE_VERSION': '5202',
- 'WINDOWPATH': '2',
- 'XAUTHORITY': '/run/user/1003/gdm/Xauthority',
- 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg',
- 'XDG_CONFIG_HOME': '/home/geoff/.texttest/tmp/dynamic_gui.30Jul173910.19124/texttest.sge/QueueSystems/ErrorHandling/Console/NotInstalled/xdg_config_home',
- 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME',
- 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share:/usr/share:/var/lib/snapd/desktop:/var/lib/snapd/desktop',
- 'XDG_MENU_PREFIX': 'gnome-',
- 'XDG_RUNTIME_DIR': '/run/user/1003',
- 'XDG_SEAT': 'seat0',
- 'XDG_SESSION_DESKTOP': 'ubuntu',
- 'XDG_SESSION_ID': '2',
- 'XDG_SESSION_TYPE': 'x11',
- 'XDG_VTNR': '2',
- 'XMODIFIERS': '@im=ibus',
- '_': '/home/geoff/code/texttest/bin/texttest'}, startupinfo=None, stderr=-1, stdout=-1)
+ 'TEXTTEST_TMP': '/carm/proj/texttest-tmp-mc/johgil/dynamic_gui.29Sep135050.3187888/texttest.sge/QueueSystems/ErrorHandling/Console/NotInstalled/texttesttmp',
+ 'TMP': '/tmp/959.1.all.q',
+ 'TMPDIR': '/tmp/959.1.all.q',
+ 'USER': 'johgil',
+ 'USE_SYSTEMD': 'false',
+ 'XDG_CONFIG_HOME': '/carm/proj/texttest-tmp-mc/johgil/dynamic_gui.29Sep135050.3187888/texttest.sge/QueueSystems/ErrorHandling/Console/NotInstalled/xdg_config_home',
+ 'XDG_DATA_DIRS': '/users/johgil/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share'}, startupinfo=None, stderr=-1, stdout=-1)
 ->RET:raise OSError('[Errno 2] No such file or directory')
-<-PYT:subprocess.Popen(['qsub', '-N', 'Test-Basic2-SLEEP', '-w', 'e', '-notify', '-m', 'n', '-cwd', '-b', 'y', '-v', 'STANDARD', '-o', '/dev/null', '-e', '/home/geoff/.texttest/tmp/dynamic_gui.30Jul173910.19124/texttest.sge/QueueSystems/ErrorHandling/Console/NotInstalled/texttesttmp/grid_core_files/slave_start_errors.geoff', 'exec', ('$SHELL -c "exec /home/geoff/code/texttest/bin/texttest -d '
- '/home/geoff/.texttest/tmp/dynamic_gui.30Jul173910.19124/texttest.sge/QueueSystems/ErrorHandling/Console/NotInstalled/TargetApp '
+<-PYT:subprocess.Popen(['qsub', '-N', 'Test-Basic2-SLEEP', '-w', 'e', '-notify', '-m', 'n', '-cwd', '-b', 'y', '-v', 'STANDARD', '-o', '/dev/null', '-e', '/carm/proj/texttest-tmp-mc/johgil/dynamic_gui.29Sep135050.3187888/texttest.sge/QueueSystems/ErrorHandling/Console/NotInstalled/texttesttmp/grid_core_files/slave_start_errors.johgil', 'exec', '$SHELL', '-c', ('exec /carm/proj/dave/workspace/johgil/texttest-tool/texttest/bin/texttest -d '
+ '/carm/proj/texttest-tmp-mc/johgil/dynamic_gui.29Sep135050.3187888/texttest.sge/QueueSystems/ErrorHandling/Console/NotInstalled/TargetApp '
  '-a sleep -l -tp Basic2 -slave '
- '/home/geoff/.texttest/tmp/dynamic_gui.30Jul173910.19124/texttest.sge/QueueSystems/ErrorHandling/Console/NotInstalled/texttesttmp/console.30Jul173912.19151 '
- '-servaddr 127.0.1.1:37911"')], cwd='/home/geoff/.texttest/tmp/dynamic_gui.30Jul173910.19124/texttest.sge/QueueSystems/ErrorHandling/Console/NotInstalled/texttesttmp/grid_core_files', encoding='UTF-8', env={'CAPTUREMOCK_MODE': '0',
- 'CAPTUREMOCK_PROCESS_START': '/home/geoff/tests/selftest/capturemockrc.texttest,/home/geoff/tests/selftest/QueueSystems/ErrorHandling/capturemockrc.texttest,/home/geoff/tests/selftest/QueueSystems/ErrorHandling/Console/NotInstalled/capturemockrc.texttest,/home/geoff/tests/selftest/capturemockrc.texttest.sge',
+ '/carm/proj/texttest-tmp-mc/johgil/dynamic_gui.29Sep135050.3187888/texttest.sge/QueueSystems/ErrorHandling/Console/NotInstalled/texttesttmp/console.29Sep135102.3200896 '
+ '-servaddr 127.0.0.1:58811')], cwd='/carm/proj/texttest-tmp-mc/johgil/dynamic_gui.29Sep135050.3187888/texttest.sge/QueueSystems/ErrorHandling/Console/NotInstalled/texttesttmp/grid_core_files', encoding='UTF-8', env={'ARC': 'lx-amd64',
+ 'BASH_ENV': '/usr/share/Modules/init/bash',
+ 'BASH_FUNC_module%%': ('() {  unset _mlre _mlIFS _mlshdbg;\n'
+ ' if [ "${MODULES_SILENT_SHELL_DEBUG:-0}" = \'1\' ]; then\n'
+ ' case "$-" in \n'
+ ' *v*x*)\n'
+ ' set +vx;\n'
+ " _mlshdbg='vx'\n"
+ ' ;;\n'
+ ' *v*)\n'
+ ' set +v;\n'
+ " _mlshdbg='v'\n"
+ ' ;;\n'
+ ' *x*)\n'
+ ' set +x;\n'
+ " _mlshdbg='x'\n"
+ ' ;;\n'
+ ' *)\n'
+ " _mlshdbg=''\n"
+ ' ;;\n'
+ ' esac;\n'
+ ' fi;\n'
+ ' if [ -n "${IFS+x}" ]; then\n'
+ ' _mlIFS=$IFS;\n'
+ ' fi;\n'
+ " IFS=' ';\n"
+ ' for _mlv in ${MODULES_RUN_QUARANTINE:-};\n'
+ ' do\n'
+ ' if [ "${_mlv}" = "${_mlv##*[!A-Za-z0-9_]}" -a "${_mlv}" = "${_mlv#[0-9]}" ]; then\n'
+ ' if [ -n "`eval \'echo ${\'$_mlv\'+x}\'`" ]; then\n'
+ ' _mlre="${_mlre:-}${_mlv}_modquar=\'`eval \'echo ${\'$_mlv\'}\'`\' ";\n'
+ ' fi;\n'
+ ' _mlrv="MODULES_RUNENV_${_mlv}";\n'
+ ' _mlre="${_mlre:-}${_mlv}=\'`eval \'echo ${\'$_mlrv\':-}\'`\' ";\n'
+ ' fi;\n'
+ ' done;\n'
+ ' if [ -n "${_mlre:-}" ]; then\n'
+ ' eval `eval ${_mlre}/usr/bin/tclsh /usr/share/Modules/libexec/modulecmd.tcl bash \'"$@"\'`;\n'
+ ' else\n'
+ ' eval `/usr/bin/tclsh /usr/share/Modules/libexec/modulecmd.tcl bash "$@"`;\n'
+ ' fi;\n'
+ ' _mlstatus=$?;\n'
+ ' if [ -n "${_mlIFS+x}" ]; then\n'
+ ' IFS=$_mlIFS;\n'
+ ' else\n'
+ ' unset IFS;\n'
+ ' fi;\n'
+ ' if [ -n "${_mlshdbg:-}" ]; then\n'
+ ' set -$_mlshdbg;\n'
+ ' fi;\n'
+ ' unset _mlre _mlv _mlrv _mlIFS _mlshdbg;\n'
+ ' return $_mlstatus\n'
+ '}'),
+ 'BASH_FUNC_scl%%': '() {  if [ "$1" = "load" -o "$1" = "unload" ]; then\n eval "module $@";\n else\n /usr/bin/scl "$@";\n fi\n}',
+ 'BASH_FUNC_switchml%%': ('() {  typeset swfound=1;\n'
+ ' if [ "${MODULES_USE_COMPAT_VERSION:-0}" = \'1\' ]; then\n'
+ " typeset swname='main';\n"
+ ' if [ -e /usr/share/Modules/libexec/modulecmd.tcl ]; then\n'
+ ' typeset swfound=0;\n'
+ ' unset MODULES_USE_COMPAT_VERSION;\n'
+ ' fi;\n'
+ ' else\n'
+ " typeset swname='compatibility';\n"
+ ' if [ -e /usr/share/Modules/libexec/modulecmd-compat ]; then\n'
+ ' typeset swfound=0;\n'
+ ' MODULES_USE_COMPAT_VERSION=1;\n'
+ ' export MODULES_USE_COMPAT_VERSION;\n'
+ ' fi;\n'
+ ' fi;\n'
+ ' if [ $swfound -eq 0 ]; then\n'
+ ' echo "Switching to Modules $swname version";\n'
+ ' source /usr/share/Modules/init/bash;\n'
+ ' else\n'
+ ' echo "Cannot switch to Modules $swname version, command not found";\n'
+ ' return 1;\n'
+ ' fi\n'
+ '}'),
+ 'CAPTUREMOCK_MODE': '0',
+ 'CAPTUREMOCK_PROCESS_START': '/carm/proj/dave/workspace/johgil/texttest-tool/texttest-selftest/capturemockrc.texttest,/carm/proj/dave/workspace/johgil/texttest-tool/texttest-selftest/QueueSystems/ErrorHandling/capturemockrc.texttest,/carm/proj/dave/workspace/johgil/texttest-tool/texttest-selftest/QueueSystems/ErrorHandling/Console/NotInstalled/capturemockrc.texttest,/carm/proj/dave/workspace/johgil/texttest-tool/texttest-selftest/capturemockrc.texttest.sge',
  'CAPTUREMOCK_PYTHON': '',
- 'CAPTUREMOCK_RECORD_FILE': '/home/geoff/.texttest/tmp/dynamic_gui.30Jul173910.19124/texttest.sge/QueueSystems/ErrorHandling/Console/NotInstalled/pythonmocks.texttest',
- 'CAPTUREMOCK_REPLAY_FILE': '/home/geoff/tests/selftest/QueueSystems/ErrorHandling/Console/NotInstalled/pythonmocks.texttest.sge',
- 'CAPTUREMOCK_SERVER': '127.0.1.1:37911',
- 'CLUTTER_IM_MODULE': 'xim',
- 'COLORTERM': 'truecolor',
- 'DEFAULTS_PATH': '/usr/share/gconf/ubuntu.default.path',
- 'DESKTOP_SESSION': 'ubuntu',
- 'DISPLAY': 'emily-N24-25JU:0',
- 'GDMSESSION': 'ubuntu',
- 'GJS_DEBUG_OUTPUT': 'stderr',
- 'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG',
- 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated',
- 'GNOME_SHELL_SESSION_MODE': 'ubuntu',
- 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/82956acd_2d98_4c29_84f5_b91ea205d2ab',
- 'GNOME_TERMINAL_SERVICE': ':1.105',
- 'GPG_AGENT_INFO': '/run/user/1003/gnupg/S.gpg-agent:0:1',
- 'GTK2_MODULES': 'overlay-scrollbar',
- 'GTK_IM_MODULE': 'ibus',
- 'GTK_MODULES': 'gail:atk-bridge',
- 'GTK_RECENTLY_USED_FILE': '/home/geoff/.texttest/tmp/dynamic_gui.30Jul173910.19124/texttest.sge/QueueSystems/ErrorHandling/Console/NotInstalled/gtk_recently_used',
- 'HOME': '/home/geoff',
- 'IM_CONFIG_PHASE': '2',
- 'JYTHONPATH': '/home/geoff/.texttest/tmp/dynamic_gui.30Jul173910.19124/texttest.sge/QueueSystems/ErrorHandling/Console/NotInstalled/traffic_intercepts:',
+ 'CAPTUREMOCK_RECORD_FILE': '/carm/proj/texttest-tmp-mc/johgil/dynamic_gui.29Sep135050.3187888/texttest.sge/QueueSystems/ErrorHandling/Console/NotInstalled/pythonmocks.texttest',
+ 'CAPTUREMOCK_REPLAY_FILE': '/carm/proj/dave/workspace/johgil/texttest-tool/texttest-selftest/QueueSystems/ErrorHandling/Console/NotInstalled/pythonmocks.texttest.sge',
+ 'CAPTUREMOCK_SERVER': '127.0.0.1:58811',
+ 'DOCKER_HOST': 'tcp://docker-slave.service.cloud.jeppesensystems.com:2375',
+ 'EDITOR': 'gvim',
+ 'ENV': '/usr/share/Modules/init/profile.sh',
+ 'ENVIRONMENT': 'BATCH',
+ 'GTK_RECENTLY_USED_FILE': '/carm/proj/texttest-tmp-mc/johgil/dynamic_gui.29Sep135050.3187888/texttest.sge/QueueSystems/ErrorHandling/Console/NotInstalled/gtk_recently_used',
+ 'GUESTFISH_INIT': '\\e[1;34m',
+ 'GUESTFISH_OUTPUT': '\\e[0m',
+ 'GUESTFISH_PS1': '\\[\\e[1;32m\\]><fs>\\[\\e[0;31m\\] ',
+ 'GUESTFISH_RESTORE': '\\e[0m',
+ 'HISTCONTROL': 'ignoredups',
+ 'HISTSIZE': '1000',
+ 'HOME': '/users/johgil',
+ 'HOST': 'gotids14p.got.jeppesensystems.com',
+ 'HOSTNAME': 'gotids14p.got.jeppesensystems.com',
+ 'INVOCATION_ID': 'e7ebbca79b214ae6a67e6967f83b8015',
+ 'JOB_ID': '959',
+ 'JOB_NAME': 'Test-Basic.JunitReport.Console.BatchTests.TestSelf-TextTest',
+ 'JOB_SCRIPT': 'exec',
+ 'JOURNAL_STREAM': '9:179841921',
+ 'JYTHONPATH': '/carm/proj/texttest-tmp-mc/johgil/dynamic_gui.29Sep135050.3187888/texttest.sge/QueueSystems/ErrorHandling/Console/NotInstalled/traffic_intercepts:',
  'LANG': 'en_US.UTF-8',
- 'LANGUAGE': 'en',
- 'LC_ADDRESS': 'sv_SE.UTF-8',
- 'LC_IDENTIFICATION': 'sv_SE.UTF-8',
- 'LC_MEASUREMENT': 'sv_SE.UTF-8',
- 'LC_MONETARY': 'sv_SE.UTF-8',
- 'LC_NAME': 'sv_SE.UTF-8',
- 'LC_NUMERIC': 'sv_SE.UTF-8',
- 'LC_PAPER': 'sv_SE.UTF-8',
- 'LC_TELEPHONE': 'sv_SE.UTF-8',
- 'LC_TIME': 'sv_SE.UTF-8',
- 'LESSCLOSE': '/usr/bin/lesspipe %s %s',
- 'LESSOPEN': '| /usr/bin/lesspipe %s',
- 'LOGNAME': 'geoff',
+ 'LD_LIBRARY_PATH': '/users/johgil/stuff/tmux30vim82/lib:',
+ 'LESSOPEN': '||/usr/bin/lesspipe.sh %s',
+ 'LOADEDMODULES': '',
+ 'LOGNAME': 'johgil',
  'LSB_DEFAULTQUEUE': 'normal',
- 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:',
- 'MANDATORY_PATH': '/usr/share/gconf/ubuntu.mandatory.path',
- 'OLDPWD': '/home/geoff/.capturemock',
- 'PATH': '/home/geoff/.texttest/tmp/dynamic_gui.30Jul173910.19124/texttest.sge/QueueSystems/ErrorHandling/Console/NotInstalled:/home/geoff/code/texttest/bin:/home/geoff/bin:/home/geoff/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin',
- 'PE_HOSTFILE': '/home/geoff/.texttest/tmp/dynamic_gui.30Jul173910.19124/texttest.sge/QueueSystems/ErrorHandling/Console/NotInstalled/sgehostfile',
- 'PWD': '/home/geoff',
- 'PYTHONPATH': '/home/geoff/.texttest/tmp/dynamic_gui.30Jul173910.19124/texttest.sge/QueueSystems/ErrorHandling/Console/NotInstalled/traffic_intercepts:/home/geoff/.texttest/tmp/dynamic_gui.30Jul173910.19124/texttest.sge/QueueSystems/ErrorHandling/Console/NotInstalled:$PYTHONPATH',
- 'QT4_IM_MODULE': 'xim',
- 'QT_ACCESSIBILITY': '1',
- 'QT_IM_MODULE': 'ibus',
- 'QT_QPA_PLATFORMTHEME': 'appmenu-qt5',
- 'SESSION_MANAGER': 'local/emily-N24-25JU:@/tmp/.ICE-unix/1607,unix/emily-N24-25JU:/tmp/.ICE-unix/1607',
+ 'M2_HOME': '/usr/share/maven',
+ 'MAIL': '/var/spool/mail/johgil',
+ 'MANPATH': '/opt/uge/default/man:/usr/share/man:/usr/local/share/man',
+ 'MODULEPATH': '/etc/scl/modulefiles:/usr/share/Modules/modulefiles:/etc/modulefiles:/usr/share/modulefiles',
+ 'MODULEPATH_modshare': '/usr/share/modulefiles:1:/etc/modulefiles:1:/usr/share/Modules/modulefiles:1',
+ 'MODULESHOME': '/usr/share/Modules',
+ 'MODULES_CMD': '/usr/share/Modules/libexec/modulecmd.tcl',
+ 'MODULES_RUN_QUARANTINE': 'LD_LIBRARY_PATH',
+ 'NHOSTS': '1',
+ 'NQUEUES': '1',
+ 'NSLOTS': '1',
+ 'PATH': '/carm/proj/texttest-tmp-mc/johgil/dynamic_gui.29Sep135050.3187888/texttest.sge/QueueSystems/ErrorHandling/Console/NotInstalled:/carm/proj/dave/workspace/johgil/texttest-tool/texttest/bin:/nfs/vm/dave/workspace/johgil/texttest-tool/texttest/bin:/nfs/vm/dave/workspace/johgil/texttest-tool/capturemock/bin:/users/johgil/bin:/users/johgil/stuff/tmux30vim82/bin/:/users/johgil/stuff/node/bin:/users/johgil/bin:/carm/proj/dave/workspace/johgil/development_utils:/users/johgil/.local/bin:/opt/uge/default/bin/lx-amd64:/usr/share/Modules/bin:/usr/lib64/ccache:/tmp/959.1.all.q:/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin',
+ 'PE_HOSTFILE': '/carm/proj/texttest-tmp-mc/johgil/dynamic_gui.29Sep135050.3187888/texttest.sge/QueueSystems/ErrorHandling/Console/NotInstalled/sgehostfile',
+ 'PWD': '/nfs/vm/texttest-tmp-mc/grid_core_files',
+ 'PYTHONPATH': '/carm/proj/texttest-tmp-mc/johgil/dynamic_gui.29Sep135050.3187888/texttest.sge/QueueSystems/ErrorHandling/Console/NotInstalled/traffic_intercepts:/nfs/vm/dave/workspace/johgil/texttest-tool/capturemock:',
+ 'QUEUE': 'all.q',
+ 'REQNAME': 'Test-Basic.JunitReport.Console.BatchTests.TestSelf-TextTest',
+ 'REQUEST': 'Test-Basic.JunitReport.Console.BatchTests.TestSelf-TextTest',
+ 'RESTARTED': '0',
+ 'SGE_ACCOUNT': 'sge',
+ 'SGE_ARCH': 'lx-amd64',
+ 'SGE_BINARY_PATH': '/opt/uge/default/bin/lx-amd64',
  'SGE_CELL': 'default',
- 'SGE_ROOT': '/home/geoff/.texttest/tmp/dynamic_gui.30Jul173910.19124/texttest.sge/QueueSystems/ErrorHandling/Console/NotInstalled/sge',
+ 'SGE_CLUSTER_NAME': 'p6444',
+ 'SGE_CWD_PATH': '/nfs/vm/texttest-tmp-mc/grid_core_files',
+ 'SGE_JOB_SPOOL_DIR': '/var/spool/uge/gotids14p/active_jobs/959.1',
+ 'SGE_O_HOME': '/users/johgil',
+ 'SGE_O_HOST': 'gotids14p.got.jeppesensystems.com',
+ 'SGE_O_LOGNAME': 'johgil',
+ 'SGE_O_MAIL': '/var/spool/mail/johgil',
+ 'SGE_O_PATH': '/nfs/vm/dave/workspace/johgil/texttest-tool/texttest/bin:/nfs/vm/dave/workspace/johgil/texttest-tool/capturemock/bin:/users/johgil/bin:/users/johgil/stuff/tmux30vim82/bin/:/users/johgil/stuff/node/bin:/users/johgil/bin:/carm/proj/dave/workspace/johgil/development_utils:/users/johgil/.local/bin:/opt/uge/default/bin/lx-amd64:/users/johgil/bin:/users/johgil/stuff/tmux30vim82/bin/:/users/johgil/stuff/node/bin:/users/johgil/bin:/carm/proj/dave/workspace/johgil/development_utils:/users/johgil/.local/bin:/opt/uge/default/bin/lx-amd64:/usr/share/Modules/bin:/usr/lib64/ccache:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin',
+ 'SGE_O_SHELL': '/bin/bash',
+ 'SGE_O_WORKDIR': '/nfs/vm/texttest-tmp-mc/grid_core_files',
+ 'SGE_RERUN_JOB': '0',
+ 'SGE_RERUN_REQUESTED': '0',
+ 'SGE_ROOT': '/carm/proj/texttest-tmp-mc/johgil/dynamic_gui.29Sep135050.3187888/texttest.sge/QueueSystems/ErrorHandling/Console/NotInstalled/sge',
+ 'SGE_STDERR_PATH': '/carm/proj/texttest-tmp-mc/grid_core_files/slave_start_errors.johgil',
+ 'SGE_STDIN_PATH': '/dev/null',
+ 'SGE_STDOUT_PATH': '/dev/null',
+ 'SGE_SUP_GRP_EVAL': '0',
+ 'SGE_SUP_GRP_EVAL_RANGE': '20008',
+ 'SGE_TASK_FIRST': 'undefined',
+ 'SGE_TASK_ID': 'undefined',
+ 'SGE_TASK_LAST': 'undefined',
+ 'SGE_TASK_STEPSIZE': 'undefined',
  'SHELL': '/bin/bash',
  'SHLVL': '1',
- 'SSH_AGENT_PID': '1712',
- 'SSH_AUTH_SOCK': '/run/user/1003/keyring/ssh',
- 'STANDARD': '/home/geoff/.texttest/tmp/dynamic_gui.30Jul173910.19124/texttest.sge/QueueSystems/ErrorHandling/Console/NotInstalled/standard',
- 'STANDARD_PERSONAL': '/home/geoff/.texttest/tmp/dynamic_gui.30Jul173910.19124/texttest.sge/QueueSystems/ErrorHandling/Console/NotInstalled/standard_personal',
- 'STORYTEXT_HOME': '/home/geoff/tests/storytext',
- 'TERM': 'xterm-256color',
- 'TEXTDOMAIN': 'im-config',
- 'TEXTDOMAINDIR': '/usr/share/locale/',
- 'TEXTTEST_CHECKOUT': '/home/geoff/code/texttest',
- 'TEXTTEST_CHECKOUT_NAME': '/home/geoff/code/texttest/',
+ 'STANDARD': '/carm/proj/texttest-tmp-mc/johgil/dynamic_gui.29Sep135050.3187888/texttest.sge/QueueSystems/ErrorHandling/Console/NotInstalled/standard',
+ 'STANDARD_PERSONAL': '/carm/proj/texttest-tmp-mc/johgil/dynamic_gui.29Sep135050.3187888/texttest.sge/QueueSystems/ErrorHandling/Console/NotInstalled/standard_personal',
+ 'STORYTEXT_HOME': '/carm/proj/dave/workspace/johgil/texttest-tool/texttest-selftest/storytext',
+ 'TERM': 'screen-256color',
+ 'TEXTTEST_CHECKOUT': '/carm/proj/dave/workspace/johgil/texttest-tool/texttest',
  'TEXTTEST_DYNAMIC_GUI_INTERPRETER': 'storytext -l config',
- 'TEXTTEST_HOME': '/home/geoff/.texttest/tmp/dynamic_gui.30Jul173910.19124/texttest.sge/QueueSystems/ErrorHandling/Console/NotInstalled/TargetApp',
- 'TEXTTEST_LOG_DIR': '/home/geoff/.texttest/tmp/dynamic_gui.30Jul173910.19124/texttest.sge/QueueSystems/ErrorHandling/Console/NotInstalled',
- 'TEXTTEST_PERSONAL_CONFIG': '/home/geoff/.texttest/tmp/dynamic_gui.30Jul173910.19124/texttest.sge/QueueSystems/ErrorHandling/Console/NotInstalled/personaldir',
- 'TEXTTEST_PERSONAL_LOG': '/home/geoff/.texttest/tmp/dynamic_gui.30Jul173910.19124/texttest.sge/QueueSystems/ErrorHandling/Console/NotInstalled/log',
+ 'TEXTTEST_HOME': '/carm/proj/texttest-tmp-mc/johgil/dynamic_gui.29Sep135050.3187888/texttest.sge/QueueSystems/ErrorHandling/Console/NotInstalled/TargetApp',
+ 'TEXTTEST_LOG_DIR': '/carm/proj/texttest-tmp-mc/johgil/dynamic_gui.29Sep135050.3187888/texttest.sge/QueueSystems/ErrorHandling/Console/NotInstalled',
+ 'TEXTTEST_PERSONAL_CONFIG': '/carm/proj/texttest-tmp-mc/johgil/dynamic_gui.29Sep135050.3187888/texttest.sge/QueueSystems/ErrorHandling/Console/NotInstalled/personaldir',
+ 'TEXTTEST_PERSONAL_LOG': '/carm/proj/texttest-tmp-mc/johgil/dynamic_gui.29Sep135050.3187888/texttest.sge/QueueSystems/ErrorHandling/Console/NotInstalled/log',
  'TEXTTEST_PICKLE_PROTOCOL': '0',
  'TEXTTEST_QS_POLL_WAIT': '-1',
- 'TEXTTEST_ROOT': '/home/geoff/tests/selftest',
- 'TEXTTEST_SANDBOX': '/home/geoff/.texttest/tmp/dynamic_gui.30Jul173910.19124/texttest.sge/QueueSystems/ErrorHandling/Console/NotInstalled',
- 'TEXTTEST_SANDBOX_ROOT': '/home/geoff/.texttest/tmp/dynamic_gui.30Jul173910.19124',
+ 'TEXTTEST_ROOT': '/carm/proj/dave/workspace/johgil/texttest-tool/texttest-selftest',
+ 'TEXTTEST_SANDBOX': '/carm/proj/texttest-tmp-mc/johgil/dynamic_gui.29Sep135050.3187888/texttest.sge/QueueSystems/ErrorHandling/Console/NotInstalled',
+ 'TEXTTEST_SANDBOX_ROOT': '/carm/proj/texttest-tmp-mc/johgil/dynamic_gui.29Sep135050.3187888',
  'TEXTTEST_SELFTEST_DIR_NAMES': 'TargetApp',
  'TEXTTEST_SLAVE_CMD': '',
- 'TEXTTEST_TMP': '/home/geoff/.texttest/tmp/dynamic_gui.30Jul173910.19124/texttest.sge/QueueSystems/ErrorHandling/Console/NotInstalled/texttesttmp',
- 'USER': 'geoff',
- 'USERNAME': 'geoff',
- 'VTE_VERSION': '5202',
- 'WINDOWPATH': '2',
- 'XAUTHORITY': '/run/user/1003/gdm/Xauthority',
- 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg',
- 'XDG_CONFIG_HOME': '/home/geoff/.texttest/tmp/dynamic_gui.30Jul173910.19124/texttest.sge/QueueSystems/ErrorHandling/Console/NotInstalled/xdg_config_home',
- 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME',
- 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share:/usr/share:/var/lib/snapd/desktop:/var/lib/snapd/desktop',
- 'XDG_MENU_PREFIX': 'gnome-',
- 'XDG_RUNTIME_DIR': '/run/user/1003',
- 'XDG_SEAT': 'seat0',
- 'XDG_SESSION_DESKTOP': 'ubuntu',
- 'XDG_SESSION_ID': '2',
- 'XDG_SESSION_TYPE': 'x11',
- 'XDG_VTNR': '2',
- 'XMODIFIERS': '@im=ibus',
- '_': '/home/geoff/code/texttest/bin/texttest'}, startupinfo=None, stderr=-1, stdout=-1)
+ 'TEXTTEST_TMP': '/carm/proj/texttest-tmp-mc/johgil/dynamic_gui.29Sep135050.3187888/texttest.sge/QueueSystems/ErrorHandling/Console/NotInstalled/texttesttmp',
+ 'TMP': '/tmp/959.1.all.q',
+ 'TMPDIR': '/tmp/959.1.all.q',
+ 'USER': 'johgil',
+ 'USE_SYSTEMD': 'false',
+ 'XDG_CONFIG_HOME': '/carm/proj/texttest-tmp-mc/johgil/dynamic_gui.29Sep135050.3187888/texttest.sge/QueueSystems/ErrorHandling/Console/NotInstalled/xdg_config_home',
+ 'XDG_DATA_DIRS': '/users/johgil/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share'}, startupinfo=None, stderr=-1, stdout=-1)
 ->RET:raise OSError('[Errno 2] No such file or directory')
