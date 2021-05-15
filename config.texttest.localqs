@@ -1,14 +1,12 @@
 base_version:queuesystem
 
 [run_dependent_text]
-pythonmocks:env=\{.*{REPLACE env=<something>}
-pythonmocks:env={->}}, startupinfo
-pythonmocks:.*}, startupinfo{REPLACE <something>,}
-pythonmocks:\'[^ \']*/texttestc?[\.py]*\'{REPLACE <path_to_texttest>}
-pythonmocks:\'[^ \']*python\.exe*\'{REPLACE <path_to_python>}
-pythonmocks:<path_to_python>, <path_to_texttest>{REPLACE <path_to_texttest>}
-pythonmocks:0x[0-9a-fA-F]*{REPLACE <pointer>}
 output:[^ ]*/texttestc?[\.py]* {REPLACE <path_to_texttest> }
 output:[^ ]*python.exe {REPLACE <path_to_python> }
 output:<path_to_python> <path_to_texttest>{REPLACE <path_to_texttest>}
 output:-servaddr [^ ]*{REPLACE -servaddr <address>}
+*:Job ID was{WORD -1}
+*:__main__{WORD 1}
+
+[unordered_text]
+output:succeeded on
