@@ -5,6 +5,7 @@ batch_collect_compulsory_version|{'default': []}|When collecting multiple messag
 batch_collect_max_age_days|{'default': 100000}|When collecting multiple messages, what is the maximum age of run that we should accept?
 batch_extra_version|{'default': []}|Versions to be run in addition to the one specified, for particular batch sessions
 batch_filter_file|{'default': []}|Generic filter for batch session, more flexible than timelimit
+batch_include_comment_plugin|{'default': 'true'}|Do we include the comment plugin in the HTML report (requires PHP)
 batch_jenkins_archive_file_pattern|{'default': ''}|Path to the built files in the archive, in case Jenkins fingerprints need double-checking
 batch_jenkins_marked_artefacts|{'default': []}|Artefacts to highlight in the report when they are updated
 batch_junit_folder|{'default': ''}|Which folder to write test results in junit format in batch mode. Only useful together with batch_junit_format
@@ -13,7 +14,7 @@ batch_junit_performance|performance|Alias. See entry for 'default_performance_st
 batch_mail_on_failure_only|{'default': 'false'}|Send mails only if at least one test fails
 batch_recipients|{'default': ''}|Comma-separated addresses to send mail to in batch mode
 batch_result_repository|{'default': ''}|Directory to store historical batch results under
-batch_sender|{'default': 'geoff@localhost'}|Sender address to use sending mail in batch mode
+batch_sender|{'default': '$USER@localhost'}|Sender address to use sending mail in batch mode
 batch_timelimit|{'default': ''}|Maximum length of test to include in batch mode runs
 batch_use_collection|{'default': 'false'}|Do we collect multiple mails into one in batch mode
 batch_use_version_filtering|{'default': 'false'}|Which batch sessions use the version filtering mechanism
@@ -49,7 +50,7 @@ default_performance_stem|performance|Which performance statistic to use when sel
 default_texttest_local_tmp||Default value for $TEXTTEST_LOCAL_TMP, if it is not set
 default_texttest_tmp|$TEXTTEST_PERSONAL_CONFIG/tmp|Default value for $TEXTTEST_TMP, if it is not set
 definition_file_stems|{'builtin': ['config', 'environment', 'testsuite', 'options', 'input', 'knownbugs'], 'default': [], 'regenerate': ['usecase']}|files to be shown as definition files by the static GUI
-diff_program|{'default': '/usr/bin/tkdiff'}|External program to use for graphical file comparison
+diff_program|{'default': 'tkdiff'}|External program to use for graphical file comparison
 discard_file|[]|List of generated result files which should not be compared
 discard_file_text|{'default': []}|List of generated result files which should not be compared if they contain the given patterns
 executable|None|Full path to the System Under Test (or Java Main Class name)
@@ -105,7 +106,7 @@ performance_variation_%|{'default': 10.0}|How much variation in performance is a
 performance_variation_serious_%|{'default': 0.0}|Additional cutoff to performance_variation_% for extra highlighting
 relative_float_tolerance|{'default': 0.0}|Which relative tolerance to apply when comparing floating point values
 remote_copy_program||(UNIX) Program to use for copying files remotely, in case of non-shared file systems
-remote_program_options|{'default': '', 'rsync': "-e 'ssh -x -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=30' -av --copy-unsafe-links --delete --exclude-from=<source library>/etc/rsync_exclude_patterns", 'scp': '-Crp -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=30', 'ssh': '-q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=30'}|Default options to use for particular remote shell programs
+remote_program_options|{'default': '', 'rsync': "-e 'ssh -x -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=30' -av --copy-unsafe-links --delete --exclude-from=<source library>\\etc\\rsync_exclude_patterns", 'scp': '-Crp -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=30', 'ssh': '-q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=30'}|Default options to use for particular remote shell programs
 remote_shell_program|ssh|Program to use for running commands remotely
 run_dependent_text|{'default': []}|Mapping of patterns to remove from result files
 save_filtered_file_stems|[]|Files where the filtered version should be saved rather than the SUT output
