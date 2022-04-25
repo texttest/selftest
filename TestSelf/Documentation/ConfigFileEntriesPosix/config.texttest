@@ -1,4 +1,5 @@
 [run_dependent_text]
 output:(<source library>).*(rsync_exclude_patterns){REPLACE \1<etc filtered>\2}
 output:/usr/bin/tkdiff{REPLACE tkdiff}
+output:(diff_program|{'default': )('/usr/bin/meld'|'tkdiff')}(|External program to use for graphical file comparison){REPLACE \1<filtered>\3}
 [end]
