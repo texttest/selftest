@@ -14,9 +14,9 @@ Details of all Unsuccessful tests follows...
 
 Detailed information for the tests that FAILED follows...
 --------------------------------------------------------
-TEST FAILED on SE-R90TN6N0 : HELLO test-case Test (under Test)
+TEST FAILED on SE-R90THDWB : HELLO test-case Test (under Test)
 ---------- Differences in output ----------
-1c1,28
+1c1,39
 < Hello Cruel World!
 ---
 > Char #x0001 ('\x01') <> is illegal.
@@ -46,6 +46,16 @@ TEST FAILED on SE-R90TN6N0 : HELLO test-case Test (under Test)
 > Char #x0017 ('\x17') <> is illegal.
 > Char #x0018 ('\x18') <> is illegal.
 > Char #x0019 ('\x19') <> is illegal.
-> Char #x001a ('\x1a') <
-\ No newline at end of file
+> Char #x001b ('\x1b') <> is illegal.
+> Char #x001c ('\x1c') <> is illegal.
+> Char #x001d ('\x1d') <> is illegal.
+> Char #x001e ('\x1e') <> is illegal.
+> Char #x001f ('\x1f') <> is illegal.
+> Char #x0020 (' ') < > is legal.
+> Char #x0021 ('!') <!> is legal.
+> Char #x0129 ('Ä©') <Ä©> is legal.
+> Char #xd8ff ('\ud8ff') <> is illegal.
+> Char #xfff0 ('\ufff0') <ï¿°> is legal.
+> Char #xffff ('\uffff') <ï¿¿> is illegal.
+> Char #x10fff0 ('\U0010fff0') <ô¿°> is legal.
 

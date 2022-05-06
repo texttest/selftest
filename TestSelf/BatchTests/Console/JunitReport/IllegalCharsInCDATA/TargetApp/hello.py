@@ -28,7 +28,9 @@ def print_char(num):
 
 
 def main():
-    for i in range(1, 34):
+    for i in range(1, 26):
+        print_char(i)
+    for i in range(27, 34):
         print_char(i)
     print_char(297)  # i with tilde
     print_char(0xD8FF)  # illegal
