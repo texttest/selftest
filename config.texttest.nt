@@ -21,6 +21,9 @@ gui_log:&lt;default browser&gt;{REPLACE firefox}
 pythonmocks:send_signal(15){REPLACE send_signal(12)}
 pythonmocks:(under [A-Za-z]*)\\\\{REPLACE \1/}
 targetReport:(under [A-Za-z]*)\\{REPLACE \1/}
+targetReport:\\\\{REPLACE /}
+targetReport:\\{REPLACE /}
+targetReport:C:/.*/python.exe{REPLACE python}
 overview*:texttestc.(py|exe){REPLACE texttest}
 overview*:texttest.exe{REPLACE texttest}
 dynamic_gui_log:([^ ]*)/Scripts/texttestc.py{REPLACE \1/bin/texttest}
