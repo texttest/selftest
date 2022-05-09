@@ -24,6 +24,7 @@ targetReport:(under [A-Za-z]*)\\{REPLACE \1/}
 targetReport:\\\\{REPLACE /}
 targetReport:\\{REPLACE /}
 targetReport:C:/.*/python.exe{REPLACE python}
+targetReport:(open file ')[^']*python{REPLACE \1python}
 overview*:texttestc.(py|exe){REPLACE texttest}
 overview*:texttest.exe{REPLACE texttest}
 dynamic_gui_log:([^ ]*)/Scripts/texttestc.py{REPLACE \1/bin/texttest}
@@ -35,9 +36,11 @@ output:C:/Program Files.*/notepad\+\+.exe{REPLACE notepad}
 output:C:/Program Files.*/wordpad.exe{REPLACE notepad}
 output:/usr/bin/tkdiff{REPLACE tkdiff}
 output:C:/.*/python.exe{REPLACE python}
+output:(open file ')[^']*python{REPLACE \1python}
 errors:\\\\{REPLACE /}
 errors:\\{REPLACE /}
 errors:C:/.*/python.exe{REPLACE python}
+errors:(open file ')[^']*python{REPLACE \1python}
 overview*:\\{REPLACE /}
 pythonmocks:\\\\{REPLACE /}
 pythonmocks:import matplotlib
