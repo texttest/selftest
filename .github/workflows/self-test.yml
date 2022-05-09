@@ -3,8 +3,6 @@ name: self-tests
 on: 
   push:            # run on push events
   pull_request:    # run on pull requests
-  schedule:        # check once a week, maybe the dependencies are broken
-    - cron:  '25 1 * * 1'
 
 jobs:
   run-tests:
