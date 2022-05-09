@@ -34,8 +34,10 @@ output:C:/.*/Meld.exe{REPLACE tkdiff}
 output:C:/Program Files.*/notepad\+\+.exe{REPLACE notepad}
 output:C:/Program Files.*/wordpad.exe{REPLACE notepad}
 output:/usr/bin/tkdiff{REPLACE tkdiff}
+output:C:/.*/python.exe{REPLACE python}
 errors:\\\\{REPLACE /}
 errors:\\{REPLACE /}
+errors:C:/.*/python.exe{REPLACE python}
 overview*:\\{REPLACE /}
 pythonmocks:\\\\{REPLACE /}
 pythonmocks:import matplotlib
