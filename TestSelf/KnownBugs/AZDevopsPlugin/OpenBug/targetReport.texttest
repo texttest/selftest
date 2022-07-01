@@ -1,0 +1,39 @@
+known bugs=1
+01Jul2022
+HELLO : 1 tests : 1 known bugs
+
+Summary of all Unsuccessful tests follows...
+---------------------------------------------------------------------------------
+The following tests had known bugs : 
+In HELLO test-suite TargetApp:
+  - HELLO test-case Test : bug 42 (New)
+
+
+Details of all Unsuccessful tests follows...
+---------------------------------------------------------------------------------
+
+Detailed information for the tests that had known bugs follows...
+--------------------------------------------------------
+TEST had known bugs (bug 42 (New)) on SE-R90THDWB : HELLO test-case Test (under Test)
+
+**************************************************
+Id: 42
+Title: Stuff is not working 
+State: New
+AssignedTo: Unassigned
+CreatedBy: Santa Claus
+AreaPath: Bogus\Weird
+CreatedDate: 2022-05-23T08:38:53.533Z
+ChangedDate: 2022-05-23T12:38:56.927Z
+Severity: 3 - Medium
+**************************************************
+
+View bug 42 using AZ Devops URL=https://dev.azure.com/fake/bogus/_workitems/edit/42
+
+(This bug was triggered by text found in file 'output' matching 'after [0-9]* seconds')
+---------- Differences in output ----------
+1c1
+< Hello world
+---
+> Hello after 5 seconds
+

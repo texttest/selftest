@@ -1,0 +1,27 @@
+known bugs=1
+01Jul2022
+HELLO : 1 tests : 1 known bugs
+
+Summary of all Unsuccessful tests follows...
+---------------------------------------------------------------------------------
+The following tests had known bugs : 
+In HELLO test-suite TargetApp:
+  - HELLO test-case Test : bug 42 (AZURE DEVOPS ERROR)
+
+
+Details of all Unsuccessful tests follows...
+---------------------------------------------------------------------------------
+
+Detailed information for the tests that had known bugs follows...
+--------------------------------------------------------
+TEST had known bugs (bug 42 (AZURE DEVOPS ERROR)) on SE-R90THDWB : HELLO test-case Test (under Test)
+Failure while accessing 'https://dev.azure.com/fake/bogus/_apis/wit/workitems?ids=42&api-version=7.1-preview.3&fields=System.AssignedTo,System.AreaPath,System.CreatedDate,Microsoft.VSTS.Common.Severity,System.CreatedBy,System.State,System.ChangedDate,System.Title': 
+HTTP Error 400: Bad Request
+
+(This bug was triggered by text found in file 'output' matching 'after [0-9]* seconds')
+---------- Differences in output ----------
+1c1
+< Hello world
+---
+> Hello after 5 seconds
+

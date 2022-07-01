@@ -1,0 +1,16 @@
+<-PYT:import urllib.request
+<-PYT:urllib.request.__name__
+->RET:'urllib.request'
+<-PYT:urllib.request.__path__
+->RET:raise AttributeError("module 'urllib.request' has no attribute '__path__'")
+<-PYT:urllib.request.Request('https://dev.azure.com/fake/bogus/_apis/wit/workitems?ids=42&api-version=7.1-preview.3&fields=System.AssignedTo,System.AreaPath,System.CreatedDate,Microsoft.VSTS.Common.Severity,System.CreatedBy,System.State,System.ChangedDate,System.Title')
+->RET:Instance('Request', 'request1')
+<-PYT:request1.add_header('Authorization', 'Basic OmZha2VfcGF0')
+<-PYT:urllib.request.urlopen(request1)
+->RET:raise Instance('HTTPError(URLError, OSError)', 'httperror1')
+<-PYT:httperror1.getcode()
+->RET:400
+<-PYT:httperror1.getcode()
+->RET:400
+<-PYT:httperror1.__str__()
+->RET:'HTTP Error 400: Bad Request'

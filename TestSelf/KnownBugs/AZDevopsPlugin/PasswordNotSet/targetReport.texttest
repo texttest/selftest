@@ -1,0 +1,32 @@
+known bugs=1
+01Jul2022
+HELLO : 1 tests : 1 known bugs
+
+Summary of all Unsuccessful tests follows...
+---------------------------------------------------------------------------------
+The following tests had known bugs : 
+In HELLO test-suite TargetApp:
+  - HELLO test-case Test : bug 130105 (PAT not set)
+
+
+Details of all Unsuccessful tests follows...
+---------------------------------------------------------------------------------
+
+Detailed information for the tests that had known bugs follows...
+--------------------------------------------------------
+TEST had known bugs (bug 130105 (PAT not set)) on SE-R90THDWB : HELLO test-case Test (under Test)
+
+**************************************************
+Id: 130105
+State: PAT not set
+**************************************************
+
+View bug 130105 using AZ Devops URL=https://dev.azure.com/tmhe/TMHLS%20Automation/_workitems/edit/130105
+
+(This bug was triggered by text found in file 'output' matching 'after [0-9]* seconds')
+---------- Differences in output ----------
+1c1
+< Hello world
+---
+> Hello after 5 seconds
+
