@@ -1,0 +1,39 @@
+# If there is a checkout not under TEXTTEST_HOME, it needs to be synchronised also. 
+# Also save changes and make sure this works.
+ExternalCheckoutSave
+
+# Make sure we can send multiple jobs to a multicore machine without re-synching
+MulticoreMachines
+
+# If some of the machines are unavailable, ignore them
+#FindAvailableMachines
+
+# See what happens if we discover no machines available with the correct tag
+AllMachinesStopped
+
+# Sometimes EC2 itself has no capacity to start stopped instances
+NoEC2Capacity
+
+# Ec2 slaves run on a different file system, need to try to fetch required file data if it can't be found
+# To rerecord this test, change the path from /some/path to any external location on your file system
+# and create an empty file there.
+FetchRequiredData
+
+# If we're debugging the slave, we should synch our own code across and run that: otherwise we need to release to try stuff out
+DebugSlave
+
+# Ec2 slaves run on a different file system, need to transfer files back and remove everything
+# at the end
+RemoteSlave
+
+# Ec2 slaves run with different user, make sure we expand ~ correctly
+RemoteSlaveCheckout
+
+# Try to ask the master process for required data if we can't find it.
+RemoteSlaveRequiredData
+
+# Don't keep slave tmp files in batch mode
+RemoteSlaveBatch
+
+# Multicore EC2 instances might have to ignore some files from another slave...
+RemoteSlaveFilesFromOtherSlave
