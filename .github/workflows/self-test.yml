@@ -1,8 +1,9 @@
 name: self-tests
 
 on: 
-  push:            # run on push events
-  pull_request:    # run on pull requests
+  workflow_dispatch:  # run on manual trigger
+  push:               # run on push events
+  pull_request:       # run on pull requests
 
 jobs:
   run-tests:
