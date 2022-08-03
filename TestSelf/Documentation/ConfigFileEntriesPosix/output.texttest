@@ -28,7 +28,9 @@ capturemock_path||Path to local CaptureMock installation, in case newer one is r
 catalogue_process_string||String for catalogue functionality to identify processes created
 checkout_location|{'default': []}|Absolute paths to look for checkouts under
 collate_file|{'stacktrace': ['core*']}|Mapping of result file names to paths to collect them from
+collate_file_changes|false|Alias. See entry for 'create_catalogues'
 collate_script|{'default': [], 'stacktrace': ['interpretcore']}|Mapping of result file names to scripts which turn them into suitable text
+collect_file_changes|false|Alias. See entry for 'create_catalogues'
 collect_traffic|{'asynchronous': [], 'default': []}|Deprecated. Use CaptureMock.
 collect_traffic_client_server|false|Deprecated. Use CaptureMock.
 collect_traffic_environment|{'default': []}|Deprecated. Use CaptureMock.
@@ -111,6 +113,7 @@ remote_program_options|{'default': '', 'rsync': "-e 'ssh -x -o StrictHostKeyChec
 remote_shell_program|ssh|Program to use for running commands remotely
 run_dependent_text|{'default': []}|Mapping of patterns to remove from result files
 save_filtered_file_stems|[]|Files where the filtered version should be saved rather than the SUT output
+scrubbers|{'default': []}|Alias. See entry for 'run_dependent_text'
 smtp_server|localhost|Server to use for sending mail in batch mode
 smtp_server_password||Password for SMTP authentication when sending mail in batch mode
 smtp_server_username||Username for SMTP authentication when sending mail in batch mode
