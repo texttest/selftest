@@ -9,3 +9,5 @@ create_catalogues:true
 partial_copy_test_path:nonsense
 
 performance_test_machine:any
+
+dbtext_database_path:mongodata
