@@ -6,7 +6,7 @@
 <-PYT:urllib.request.Request('https://dev.azure.com/fake/bogus/_apis/wit/workitems?ids=42&api-version=7.1-preview.3&fields=System.AssignedTo,System.AreaPath,System.CreatedDate,Microsoft.VSTS.Common.Severity,System.CreatedBy,System.State,System.ChangedDate,System.Title')
 ->RET:Instance('Request', 'request1')
 <-PYT:request1.add_header('Authorization', 'Basic OmZha2VfcGF0')
-<-PYT:urllib.request.urlopen(request1)
+<-PYT:urllib.request.urlopen(request1, context=None)
 ->RET:Instance('HTTPResponse(io.BufferedIOBase)', 'httpresponse1')
 <-PYT:httpresponse1.read()
 ->RET:(b'{"count":1,"value":[{"id":42,"rev":3,"fields":{"System.AreaPath":"Bogus\\\\Weird","System.State":"New","System.'
