@@ -3,13 +3,15 @@ auto_sort_test_suites|0|Automatically sort test suites in alphabetical order. 1 
 base_version|{'default': []}|Versions to inherit settings from
 batch_collect_compulsory_version|{'default': []}|When collecting multiple messages, which versions should be expected and give an error if not present?
 batch_collect_max_age_days|{'default': 100000}|When collecting multiple messages, what is the maximum age of run that we should accept?
+batch_external_folder|{'default': ''}|Which folder to write test results in external format in batch mode. Only useful together with batch_external_format
+batch_external_format|{'default': 'false'}|Do we write out results in external format in batch mode. Supports junit, trx
 batch_extra_version|{'default': []}|Versions to be run in addition to the one specified, for particular batch sessions
 batch_filter_file|{'default': []}|Generic filter for batch session, more flexible than timelimit
 batch_include_comment_plugin|{'default': 'true'}|Do we include the comment plugin in the HTML report (requires PHP)
 batch_jenkins_archive_file_pattern|{'default': ''}|Path to the built files in the archive, in case Jenkins fingerprints need double-checking
 batch_jenkins_marked_artefacts|{'default': []}|Artefacts to highlight in the report when they are updated
-batch_junit_folder|{'default': ''}|Which folder to write test results in junit format in batch mode. Only useful together with batch_junit_format
-batch_junit_format|{'default': 'false'}|Do we write out results in junit format in batch mode
+batch_junit_folder|{'default': ''}|Alias. See entry for 'batch_external_folder'
+batch_junit_format|{'default': 'false'}|Alias. See entry for 'batch_external_format'
 batch_junit_performance|performance|Alias. See entry for 'default_performance_stem'
 batch_mail_on_failure_only|{'default': 'false'}|Send mails only if at least one test fails
 batch_recipients|{'default': ''}|Comma-separated addresses to send mail to in batch mode
