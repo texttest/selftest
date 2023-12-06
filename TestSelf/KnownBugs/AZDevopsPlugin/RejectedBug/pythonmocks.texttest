@@ -1,0 +1,23 @@
+<-PYT:import urllib.request
+<-PYT:urllib.request.__name__
+->RET:'urllib.request'
+<-PYT:urllib.request.__path__
+->RET:raise AttributeError("module 'urllib.request' has no attribute '__path__'")
+<-PYT:urllib.request.Request('https://dev.azure.com/fake/bogus/_apis/wit/workitems?ids=42&api-version=7.1-preview.3&fields=System.AssignedTo,System.AreaPath,System.CreatedDate,Microsoft.VSTS.Common.Severity,System.CreatedBy,System.State,System.ChangedDate,System.Title')
+->RET:Instance('Request', 'request1')
+<-PYT:request1.add_header('Authorization', 'Basic OmZha2VfcGF0')
+<-PYT:urllib.request.urlopen(request1, context=None)
+->RET:Instance('HTTPResponse(io.BufferedIOBase)', 'httpresponse1')
+<-PYT:httpresponse1.read()
+->RET:(b'{"count":1,"value":[{"id":130882,"rev":5,"fields":{"System.AreaPath":"SomeArea\\\\Path","System.State":"Rejected","System.'
+ b'CreatedDate":"2022-05-31T14:54:57.387Z","System.CreatedBy":{"displayName":"Rudolf Rednose","url":"https://url","_links":{"avatar'
+ b'":{"href":"https://avatarlink"'
+ b'}},"id":"f40e6d75-640f-6647-b583-7077c5a8b0e8","uniqueName":"Rudolf.Rednose@northpole.com","imageUrl":"https://dev.azure'
+ b'.com/fake/_apis/GraphProfile/MemberAvatars/avatar","descriptor":"aad.ZjQ'
+ b'z"},"System.AssignedTo":{"displayName":"Santa Claus","url":"https://url","_links":{"avatar'
+ b'":{"href":"https://avatarlink"'
+ b'}},"id":"f40e6d75-640f-6647-b583-7077c5a8b0e8","uniqueName":"Santa.Claus@northpole.com","imageUrl":"https://dev.azure'
+ b'.com/fake/_apis/GraphProfile/MemberAvatars/avatar","descriptor":"aad.ZjQ'
+ b'z"},"System.ChangedDate":"2022-06-01T08:10:03.067Z","System.Title":"Stuff is still not working '
+ b'"},"url":"https://d'
+ b'ev.azure.com/fake/_apis/wit/workItems/42"}]}')
