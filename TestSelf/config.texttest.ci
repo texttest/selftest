@@ -1,0 +1,9 @@
+[run_dependent_text]
+externalmocks:(qsub.*)(-v DISPLAY ){REPLACE \1}
+externalmocks:(qsub.*-v )([^, ]*)((,(?!DISPLAY)[^, ]*)*)(,DISPLAY){REPLACE \1\2\3}
+externalmocks:TEXTTEST_SUBMIT_COMMAND_ARGS,DISPLAY{REPLACE TEXTTEST_SUBMIT_COMMAND_ARGS}
+output:(qsub.*)(-v DISPLAY ){REPLACE \1}
+output:(qsub.*-v )([^, ]*)((,(?!DISPLAY)[^, ]*)*)(,DISPLAY){REPLACE \1\2\3}
+output:TEXTTEST_SUBMIT_COMMAND_ARGS,DISPLAY{REPLACE TEXTTEST_SUBMIT_COMMAND_ARGS}
+[end]
+
