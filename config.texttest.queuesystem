@@ -4,6 +4,8 @@ errors:Unexpected TextTest slave{WORD -3}{REPLACE <machine>}
 errors:WARNING: Received request{WORD -3}{REPLACE <machine>}
 errors:already registered from{WORD -3}{REPLACE <machine>}
 output:File .* line .* in
+# Markers introduced in Python 3.13 for exceptions
+output:~+\^+
 output:lost the job{WORD -1}
 output:executing on
 output:Time.*real{LINES 9}
