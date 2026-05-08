@@ -6,7 +6,7 @@
 <-CMD:rsh fake_machine2 which Xvfb && echo "remote cmd succeeded"
 ->OUT:/usr/X11R6/bin/Xvfb
 remote cmd succeeded
-<-CMD:rsh fake_machine2 /nfs/vm/texttest/geoff/Testing/TextTest/site/bin/ttpython -u /nfs/vm/texttest/geoff/Testing/TextTest/texttestlib/libexec/startXvfb.py /dev/null
+<-CMD:rsh fake_machine2 python -u /home/geoff/code/texttest/texttestlib/libexec/startXvfb.py.in /dev/null
 ->OUT:3979,11907
 ->EXC:-2
 <-CMD:rsh fake_machine2 kill 11907

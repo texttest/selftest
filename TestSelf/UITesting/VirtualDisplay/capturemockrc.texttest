@@ -4,3 +4,6 @@ intercepts = which,rsh,ssh
 [python]
 intercepts = os.getpid
 ignore_callers = storytext,default,coverage
+
+[os.getpid]
+check_repeated_calls = False

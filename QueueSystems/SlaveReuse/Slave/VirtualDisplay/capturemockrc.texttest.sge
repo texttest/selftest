@@ -4,3 +4,6 @@ intercepts = which,rsh
 [python]
 intercepts = os.getpid
 ignore_callers = usecase,default,queuesystem,coverage
+
+[os.getpid]
+check_repeated_calls = False
