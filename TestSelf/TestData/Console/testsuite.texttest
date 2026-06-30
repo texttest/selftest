@@ -7,6 +7,9 @@ LocalTmpDir
 # Make sure we can copy a lone test file, edit it, and notice the edit
 EditTestFile
 
+# Make sure we notice content edits even when the program preserves the modified time, using create_catalogues_use_checksum
+EditFilePreserveModTime
+
 # Check we can refer to test data via environment variables
 CopyEnvironmentPath
 
