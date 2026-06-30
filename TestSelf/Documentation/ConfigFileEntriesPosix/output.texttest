@@ -59,6 +59,7 @@ definition_file_stems|{'builtin': ['config', 'environment', 'testsuite', 'option
 detect_file_changes_by_checksum|false|Identify edited files (for catalogues and collation) by content checksum (SHA256) rather than modification time
 diff_program|{'default': 'tkdiff'}|External program to use for graphical file comparison
 discard_file|[]|List of generated result files which should not be compared
+discard_file_if_empty|[]|List of generated result files which should not be compared if they are empty (contain no non-whitespace text)
 discard_file_text|{'default': []}|List of generated result files which should not be compared if they contain the given patterns
 executable|None|Full path to the System Under Test (or Java Main Class name)
 extra_config_directory|{'default': []}|Alias. See entry for 'extra_search_directory'

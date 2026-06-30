@@ -1,0 +1,12 @@
+import_config_file:${STANDARD}
+
+# Path to the executable
+executable:${TEXTTEST_HOME}/produce.py
+
+default_interface:console
+
+# Throw away standard output and standard error, but only when they are empty.
+# A non-empty file (e.g. a stack trace on standard error) is kept so it can't
+# hide a real problem.
+discard_file_if_empty:output
+discard_file_if_empty:errors
