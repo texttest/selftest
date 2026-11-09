@@ -1,0 +1,5 @@
+# TextTest runs .py test apps with no "interpreter" setting via a bare "python"
+# from PATH on POSIX, so put the venv first to make that the venv's python.
+# Not set on Windows: .py apps run via the "py" launcher there, and ":" would
+# corrupt the first Windows PATH entry.
+PATH:$TEXTTEST_CHECKOUT/bin:$PATH

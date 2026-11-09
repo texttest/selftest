@@ -171,8 +171,10 @@ target*:1
 errors:1
 [end]
 
-# Force recomputation of files on non-UNIX archs
-home_operating_system:posix
+# Not a real OS: makes TextTest add the current OS (posix or nt) as an implied
+# version on every platform, so environment.texttest.posix is read on Linux/macOS.
+# This also forces recomputation of files on all platforms.
+home_operating_system:none
 
 # Official name of the application
 full_name:TextTest
