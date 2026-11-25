@@ -1,0 +1,10 @@
+queue_system_module:nomad
+
+queue_system_max_capacity:10
+
+# Nomad jobs only get the environment variables we send, and the test's standard config needs this too
+queue_system_environment:STANDARD_PERSONAL
+# When recording, the slaves send their traffic via CaptureMock and need to know that,
+# and must use the same readable pickle protocol as the master
+queue_system_environment:CAPTUREMOCK_SERVER
+queue_system_environment:TEXTTEST_PICKLE_PROTOCOL
